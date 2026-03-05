@@ -1,0 +1,24 @@
+# requirements.txt — List of Python packages this project needs
+#
+# HOW TO INSTALL:
+#   Run this command in your terminal (inside the daily-curator folder):
+#   pip install -r requirements.txt
+#
+# WHAT THIS MEANS:
+#   "pip" is Python's package manager — like an app store for Python libraries.
+#   The -r flag means "install everything listed in this requirements file".
+#   Each line below is one package to install.
+#
+# ─────────────────────────────────────────────────────────────────────────────
+
+# anthropic — The official Python library for talking to Claude AI
+# This lets us send requests to Claude and receive responses
+anthropic>=0.40.0
+
+# requests — A simple library for making web requests (like visiting a URL)
+# We use this to call the Inoreader API
+requests>=2.31.0
+
+# python-dotenv — Reads .env files and loads them into Python's environment
+# This lets us store API keys in a .env file instead of hardcoding them
+python-dotenv>=1.0.0

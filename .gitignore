@@ -1,0 +1,39 @@
+# .gitignore — Files that should NEVER be committed to GitHub
+#
+# WHY THIS FILE EXISTS:
+#   Git (the version control system) normally tracks every file in your folder.
+#   But some files should stay private or don't need to be shared.
+#   Lines in this file tell Git: "ignore these files completely."
+#
+# ⚠️  THE MOST IMPORTANT LINE IS .env — it contains your API keys!
+#    If you accidentally push .env to GitHub, your keys could be stolen.
+#    Always make sure .env is in this file.
+#
+
+# ── SECRET FILES ────────────────────────────────────────────────────────────
+.env                   # Your API keys — NEVER commit this!
+
+# ── OUTPUT FILES ────────────────────────────────────────────────────────────
+picks-*.md             # The daily output files (optional — remove if you want to track them)
+
+# ── PYTHON INTERNALS ────────────────────────────────────────────────────────
+__pycache__/           # Python's compiled bytecode cache — not needed in git
+*.py[cod]              # Compiled Python files
+*.pyo
+.Python
+
+# ── VIRTUAL ENVIRONMENTS ────────────────────────────────────────────────────
+# If you use a "virtual environment" (a way to isolate Python packages),
+# these folders should not be committed
+venv/
+env/
+.venv/
+.env/
+
+# ── MACOS SYSTEM FILES ──────────────────────────────────────────────────────
+.DS_Store              # macOS creates these automatically — not needed
+
+# ── EDITOR FILES ────────────────────────────────────────────────────────────
+.vscode/               # VS Code editor settings
+.idea/                 # JetBrains/PyCharm settings
+*.swp                  # Vim swap files
