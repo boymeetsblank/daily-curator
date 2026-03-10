@@ -131,7 +131,7 @@ def fetch_articles_from_inoreader() -> list[dict]:
     # Headers are metadata that tell the server who we are and how we're
     # authorized to access the data.
     headers = {
-        "Authorization": f"GoogleLogin auth={INOREADER_TOKEN}",
+        "Authorization": f"Bearer {INOREADER_TOKEN}",
         "AppId": INOREADER_APP_ID,
         "AppKey": INOREADER_APP_KEY,
         "Accept": "application/json",

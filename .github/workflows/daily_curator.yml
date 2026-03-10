@@ -1,0 +1,40 @@
+name: Daily Curator
+
+on:
+  schedule:
+    - cron: '0 14 * * *'   # 8:00 AM CT
+    - cron: '0 21 * * *'   # 3:00 PM CT
+    - cron: '0 3 * * *'    # 9:00 PM CT
+  workflow_dispatch:         # Allows manual trigger from GitHub
+
+jobs:
+  run-curator:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Daily Curator
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INOREADER_APP_ID: ${{ secrets.INOREADER_APP_ID }}
+          INOREADER_APP_KEY: ${{ secrets.INOREADER_APP_KEY }}
+          INOREADER_TOKEN: ${{ secrets.INOREADER_TOKEN }}
+        run: python3 daily_curator.py
+
+      - name: Save picks file to repo
+        run: |
+          git config user.name "Daily Curator Bot"
+          git config user.email "bot@daily-curator"
+          git add picks-*.md
+          git diff --staged --quiet || git commit -m "Daily picks $(date +'%Y-%m-%d %H:%M')"
+          git push
