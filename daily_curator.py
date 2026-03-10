@@ -1,52 +1,17 @@
 """
 daily_curator.py — Daily Content Curator for Instagram, TikTok, and Substack
-
-WHAT THIS SCRIPT DOES:
-  1. Connects to your Inoreader account and pulls articles from the last 24–48 hours
-  2. Sends those articles to Claude (AI) to score on 4 criteria:
-       - Is it trending right now?
-       - Is it timely (last 24–48 hours)?
-       - Does it connect to something cultural or viral?
-       - Could it work as a culturally significant carousel?
-  3. Surfaces only the top 5 picks (only if they score above 7/10)
-  4. Saves a markdown file named picks-YYYY-MM-DD.md
-
-HOW TO RUN:
-  1. Set up your .env file (see .env.example)
-  2. Install dependencies: pip install -r requirements.txt
-  3. Run: python3 daily_curator.py
-
-UNDERSTANDING THE CODE:
-  - Lines starting with # are comments — notes for humans, ignored by the computer
-  - Lines starting with \"\"\" are docstrings — descriptions of functions
-  - Everything else is actual code
-
-LEARNING TIP:
-  Don't try to understand every line at once. Read the comments to follow the
-  overall flow, and look up anything you're curious about as you go.
 """
 
-# ─────────────────────────────────────────────────────────────────────────────
-# IMPORTS — Loading the tools we need (like loading apps on your phone)
-# ─────────────────────────────────────────────────────────────────────────────
+import os
+import sys
+import json
+import time
+import base64
+from datetime import datetime, timezone, timedelta
 
-import os           # Lets Python talk to your operating system (read env vars)
-import sys          # Lets us exit the program cleanly if something goes wrong
-import json         # Lets Python read and write JSON (a common data format)
-import time         # Gives us access to the current time and date
-import base64       # Lets us encode credentials for API authentication
-from datetime import datetime, timezone, timedelta  # More precise date/time tools
-
-import requests     # Lets Python make web requests (like a browser, but in code)
-import anthropic    # Lets Python talk to Claude AI
-
-# python-dotenv lets us read API keys from a .env file instead of hardcoding them
+import requests
+import anthropic
 from dotenv import load_dotenv
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# SETUP — Load secrets and configure settings
-# ─────────────────────────────────────────────────────────────────────────────
 
 load_dotenv()
 
@@ -65,17 +30,8 @@ MAX_PICKS            = 5
 INOREADER_BASE_URL   = "https://www.inoreader.com/reader/api/0"
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# STEP 1: CHECK SETUP
-# ─────────────────────────────────────────────────────────────────────────────
-
 def check_setup():
-    """
-    Checks that all required API keys are present before we do anything else.
-    If anything is missing, it tells the user exactly what to fix and exits.
-    """
     missing = []
-
     if not ANTHROPIC_API_KEY:
         missing.append("ANTHROPIC_API_KEY")
     if not INOREADER_APP_ID:
@@ -84,31 +40,19 @@ def check_setup():
         missing.append("INOREADER_APP_KEY")
     if not INOREADER_REFRESH_TOKEN:
         missing.append("INOREADER_REFRESH_TOKEN")
-
     if missing:
         print("\n❌ Missing required credentials in your .env file:\n")
         for key in missing:
             print(f"   • {key}")
         print("\nPlease add these to your .env file and try again.")
-        print("See .env.example for the format.\n")
         sys.exit(1)
-
     print("✅ Credentials loaded successfully.")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# STEP 2: GET FRESH ACCESS TOKEN
-# ─────────────────────────────────────────────────────────────────────────────
-
 def get_fresh_token() -> str:
-    """
-    Uses the refresh token to get a fresh access token automatically.
-    This way we never have to manually refresh the token again.
-    """
     credentials = base64.b64encode(
         f"{INOREADER_APP_ID}:{INOREADER_APP_KEY}".encode()
     ).decode()
-
     response = requests.post(
         INOREADER_TOKEN_URL,
         data={
@@ -120,101 +64,69 @@ def get_fresh_token() -> str:
             "Content-Type": "application/x-www-form-urlencoded",
         }
     )
-
     if response.status_code != 200:
         print("❌ Could not refresh Inoreader token.")
         print("Your INOREADER_REFRESH_TOKEN may be expired.")
         sys.exit(1)
-
     return response.json()["access_token"]
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# STEP 3: FETCH ARTICLES FROM INOREADER
-# ─────────────────────────────────────────────────────────────────────────────
-
 def fetch_articles_from_inoreader() -> list[dict]:
-    """
-    Connects to Inoreader and retrieves articles published in the last
-    HOURS_BACK hours (default: 48 hours).
-    """
-
     token = get_fresh_token()
-
     print(f"\n📡 Fetching articles from the last {HOURS_BACK} hours...")
-
     cutoff_timestamp = int(time.time() - (HOURS_BACK * 3600))
-
     headers = {
         "Authorization": f"Bearer {token}",
         "AppId": INOREADER_APP_ID,
         "AppKey": INOREADER_APP_KEY,
         "Accept": "application/json",
     }
-
     params = {
         "n":  MAX_ARTICLES_TO_SEND,
         "ot": cutoff_timestamp,
         "output": "json",
     }
-
     url = f"{INOREADER_BASE_URL}/stream/contents/user/-/state/com.google/reading-list"
-
     try:
         response = requests.get(url, headers=headers, params=params, timeout=30)
         response.raise_for_status()
-
     except requests.exceptions.HTTPError as e:
         if response.status_code == 401:
             print("\n❌ Inoreader authentication failed.")
             print("Your INOREADER_REFRESH_TOKEN may be expired.")
-            print("Please generate a new refresh token (see README for instructions).")
         else:
             print(f"\n❌ Inoreader API error: {e}")
         sys.exit(1)
-
     except requests.exceptions.ConnectionError:
         print("\n❌ Could not connect to Inoreader. Check your internet connection.")
         sys.exit(1)
-
     except requests.exceptions.Timeout:
         print("\n❌ Inoreader took too long to respond. Try again in a moment.")
         sys.exit(1)
 
     data = response.json()
     items = data.get("items", [])
-
     if not items:
         print(f"   No articles found in the last {HOURS_BACK} hours.")
         return []
-
     print(f"   Found {len(items)} articles.")
 
     articles = []
-
     for item in items:
         title = item.get("title", "Untitled")
-
         canonical = item.get("canonical", [])
         link = canonical[0].get("href", "") if canonical else ""
-
         if not link:
             alternate = item.get("alternate", [])
             link = alternate[0].get("href", "") if alternate else ""
-
         summary_obj = item.get("summary") or item.get("content", {})
         raw_summary = summary_obj.get("content", "") if summary_obj else ""
-
-        summary = strip_html(raw_summary)
-        summary = summary[:500]
-
+        summary = strip_html(raw_summary)[:500]
         origin = item.get("origin", {})
         source = origin.get("title", "Unknown Source")
-
         published_timestamp = item.get("published", 0)
         published_dt = datetime.fromtimestamp(published_timestamp, tz=timezone.utc)
         published_str = published_dt.strftime("%Y-%m-%d %H:%M UTC")
-
         if title and link:
             articles.append({
                 "title":     title,
@@ -229,24 +141,13 @@ def fetch_articles_from_inoreader() -> list[dict]:
 
 
 def strip_html(text: str) -> str:
-    """
-    Removes HTML tags from text.
-    """
     import re
     clean = re.sub(r'<[^>]+>', ' ', text)
     clean = re.sub(r'\s+', ' ', clean)
     return clean.strip()
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# STEP 4: EVALUATE ARTICLES WITH CLAUDE
-# ─────────────────────────────────────────────────────────────────────────────
-
 def evaluate_articles_with_claude(articles: list[dict]) -> list[dict]:
-    """
-    Sends all articles to Claude and asks it to score each one on 4 criteria.
-    """
-
     print(f"\n🤖 Sending {len(articles)} articles to Claude for evaluation...")
     print("   (This may take 15–30 seconds...)\n")
 
@@ -265,10 +166,10 @@ ARTICLE {i}:
 
 I'll give you a list of recent articles. Evaluate EACH article on these 4 criteria:
 
-1. TRENDING: Is this something a lot of people are actively discussing right now? (Not just newsworthy — actively viral or buzzy)
+1. TRENDING: Is this something a lot of people are actively discussing right now?
 2. TIMELY: Did this happen or break in the last 24–48 hours? Is it fresh?
 3. CULTURAL: Does it connect to a broader cultural moment, meme, movement, or viral conversation?
-4. CAROUSEL: Could this become a carousel post that feels like something a culture-forward media account (like The Cut, Diet Prada, GQ, Vox, or a savvy creator) would post? Avoid generic listicles, corporate press releases, or niche-only stories. Think: would a smart, culture-aware person share this to their 100k+ followers?
+4. CAROUSEL: Could this become a carousel post that a culture-forward media account would post?
 
 Score each article from 1–10 overall. Be ruthlessly selective. A 7+ means this is genuinely strong. Most articles should score 4–6.
 
@@ -283,8 +184,8 @@ IMPORTANT: Return your response as valid JSON in EXACTLY this format, with no ot
     {{
       "article_number": 1,
       "score": 8,
-      "why": "This story is being widely shared and connects to the ongoing conversation about...",
-      "angle": "Hook: 'Everyone is talking about X, but here's what they're missing...'"
+      "why": "This story is being widely shared...",
+      "angle": "Hook: 'Everyone is talking about X...'"
     }},
     {{
       "article_number": 2,
@@ -301,17 +202,11 @@ Here are the articles to evaluate:
 Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown code blocks."""
 
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-
     try:
         response = client.messages.create(
             model="claude-opus-4-6",
             max_tokens=4096,
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt
-                }
-            ]
+            messages=[{"role": "user", "content": prompt}]
         )
     except anthropic.AuthenticationError:
         print("❌ Claude API key is invalid. Please check your ANTHROPIC_API_KEY.")
@@ -324,7 +219,6 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
         sys.exit(1)
 
     response_text = response.content[0].text.strip()
-
     try:
         result = json.loads(response_text)
     except json.JSONDecodeError:
@@ -334,8 +228,7 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
             try:
                 result = json.loads(json_match.group())
             except json.JSONDecodeError:
-                print("❌ Claude returned an unexpected format. Please try again.")
-                print(f"   Raw response: {response_text[:300]}")
+                print("❌ Claude returned an unexpected format.")
                 sys.exit(1)
         else:
             print("❌ Could not parse Claude's response as JSON.")
@@ -343,7 +236,6 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
 
     evaluations = result.get("evaluations", [])
     eval_by_number = {e["article_number"]: e for e in evaluations}
-
     enriched_articles = []
     for i, article in enumerate(articles, start=1):
         eval_data = eval_by_number.get(i, {})
@@ -356,30 +248,16 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
     return enriched_articles
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# STEP 5: SELECT TOP PICKS
-# ─────────────────────────────────────────────────────────────────────────────
-
 def select_top_picks(articles: list[dict]) -> list[dict]:
-    """
-    Filters articles to only those scoring MIN_SCORE (7) or above,
-    then returns up to MAX_PICKS (5) of the highest-scoring ones.
-    """
     strong_picks = [a for a in articles if a["score"] >= MIN_SCORE]
     strong_picks.sort(key=lambda a: a["score"], reverse=True)
     return strong_picks[:MAX_PICKS]
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# STEP 6: WRITE THE MARKDOWN OUTPUT FILE
-# ─────────────────────────────────────────────────────────────────────────────
-
 def write_markdown_output(picks: list[dict], all_articles_count: int) -> str:
-    """
-    Creates a markdown file named picks-YYYY-MM-DD.md with today's top picks.
-    """
     today_str = datetime.now().strftime("%Y-%m-%d")
-    filename = f"picks-{today_str}.md"
+    os.makedirs("picks", exist_ok=True)
+    filename = f"picks/picks-{today_str}.md"
 
     content = f"""# Daily Content Picks — {today_str}
 
@@ -390,15 +268,12 @@ def write_markdown_output(picks: list[dict], all_articles_count: int) -> str:
 ---
 
 """
-
     if not picks:
         content += f"""## No Strong Picks Today
 
 None of today's {all_articles_count} articles scored {MIN_SCORE} or above.
 
 This is normal — not every day has carousel-worthy content. Check back tomorrow!
-
-*Tip: If you want to lower the bar, change MIN_SCORE in daily_curator.py.*
 """
     else:
         for i, pick in enumerate(picks, start=1):
@@ -417,40 +292,26 @@ This is normal — not every day has carousel-worthy content. Check back tomorro
 ---
 
 """
-
     content += f"""*Generated by Daily Curator on {datetime.now().strftime("%Y-%m-%d at %H:%M")}*
 """
-
     with open(filename, "w", encoding="utf-8") as f:
         f.write(content)
-
     return filename
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# MAIN
-# ─────────────────────────────────────────────────────────────────────────────
-
 def main():
-    """
-    The main function — the starting point of the script.
-    """
-
     print("\n" + "=" * 55)
     print("  📰 Daily Curator — Content Scouting with Claude AI")
     print("=" * 55)
 
     check_setup()
-
     articles = fetch_articles_from_inoreader()
 
     if not articles:
         print(f"\n⚠️  No articles found from the last {HOURS_BACK} hours.")
-        print("Try increasing HOURS_BACK in the script, or check your Inoreader feeds.")
         sys.exit(0)
 
     evaluated_articles = evaluate_articles_with_claude(articles)
-
     top_picks = select_top_picks(evaluated_articles)
 
     print(f"\n📝 Writing output file...")
@@ -467,10 +328,6 @@ def main():
         print(f"  📄 Report saved to: {output_file}")
     print(f"{'=' * 55}\n")
 
-
-# ─────────────────────────────────────────────────────────────────────────────
-# ENTRY POINT
-# ─────────────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     main()
