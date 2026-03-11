@@ -17,8 +17,10 @@ name: Daily Content Curator
 
 on:
   schedule:
-    # Runs at 8:00 AM UTC daily. Use https://crontab.guru to adjust.
-    - cron: "0 8 * * *"
+    # All times in UTC (CST = UTC-6)
+    - cron: "30 14 * * *"  # 8:30 AM CST
+    - cron: "30 21 * * *"  # 3:30 PM CST
+    - cron: "30 2 * * *"   # 8:30 PM CST (previous UTC day)
   workflow_dispatch: # Allows manual runs from the GitHub Actions tab
 
 jobs:
