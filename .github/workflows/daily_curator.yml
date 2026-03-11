@@ -29,6 +29,7 @@ jobs:
           INOREADER_APP_ID: ${{ secrets.INOREADER_APP_ID }}
           INOREADER_APP_KEY: ${{ secrets.INOREADER_APP_KEY }}
           INOREADER_TOKEN: ${{ secrets.INOREADER_TOKEN }}
+          INOREADER_REFRESH_TOKEN: ${{ secrets.INOREADER_REFRESH_TOKEN }}
         run: python3 daily_curator.py
 
       - name: Save picks file to repo
