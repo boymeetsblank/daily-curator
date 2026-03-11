@@ -187,6 +187,8 @@ I'll give you a list of recent articles. Evaluate EACH article on these 4 criter
 
 Score each article from 1–10 overall. Be ruthlessly selective. A 7+ means this is genuinely strong. Most articles should score 4–6.
 
+POLITICS RULE: Automatically score any article a 1 if it is primarily about elections, political parties, politicians, legislation, government policy, or partisan issues. This account does not cover politics.
+
 For articles that score 7 or above, also provide:
 - WHY: 1–2 sentences explaining why it scored high
 - ANGLE: A specific carousel hook or angle that would perform well
