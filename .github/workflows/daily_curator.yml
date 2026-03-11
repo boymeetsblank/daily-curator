@@ -36,6 +36,6 @@ jobs:
         run: |
           git config user.name "Daily Curator Bot"
           git config user.email "bot@daily-curator"
-          git add picks-*.md
+          git add picks/
           git diff --staged --quiet || git commit -m "Daily picks $(date +'%Y-%m-%d %H:%M')"
           git push
