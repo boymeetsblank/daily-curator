@@ -10,13 +10,25 @@ surface the best content for your Instagram, TikTok, and Substack accounts.
 Every time you run this script, it:
 
 1. **Connects to your Inoreader account** and pulls articles published in the last 48 hours
-2. **Sends those articles to Claude** (the AI from Anthropic) for evaluation on 4 criteria:
+2. **Caps articles per source** to 5 maximum — so no single outlet dominates the results
+3. **Sends those articles to Claude** (the AI from Anthropic) for evaluation on 4 criteria:
    - Is it **trending** — are a lot of people talking about it right now?
    - Is it **timely** — did it happen in the last 24–48 hours?
    - Does it connect to something **cultural** or viral?
    - Could it make a **carousel** that a culture-forward media account would post?
-3. **Scores each article 1–10** and surfaces only the top 5 picks (nothing below a 7)
-4. **Saves a markdown file** named `picks-YYYY-MM-DD.md` with your picks, explanations, and carousel angles
+4. **Scores each article 1–10** and surfaces only the top 5 picks (nothing below a 7)
+5. **Saves a markdown file** named `picks/picks-YYYY-MM-DD-HHMM.md` with your picks, explanations, and carousel angles
+
+> **⚠️ Politics-free by design:** This tool intentionally avoids political content.
+> Articles about elections, political figures, legislation, or partisan issues will
+> not be surfaced as picks regardless of how much traction they get.
+
+The script runs automatically 3x per day via GitHub Actions:
+- 8:30 AM CT
+- 3:30 PM CT
+- 8:30 PM CT
+
+Each run creates a new timestamped file so no picks are overwritten.
 
 ---
 
@@ -50,7 +62,7 @@ download Python from https://python.org/downloads/ and install it.
 
 If you got here from GitHub, clone the project:
 ```
-git clone https://github.com/YOUR-USERNAME/daily-curator.git
+git clone https://github.com/boymeetsblank/daily-curator.git
 cd daily-curator
 ```
 
@@ -58,8 +70,6 @@ Or if you already have the folder, just navigate into it:
 ```
 cd daily-curator
 ```
-
-(Replace `daily-curator` with the actual path to your folder if needed.)
 
 ---
 
@@ -92,7 +102,7 @@ This installs:
 
 ### Step 5: Get Your Inoreader API Credentials
 
-You need 3 things from Inoreader: an **App ID**, an **App Key**, and an **Access Token**.
+You need 4 things from Inoreader: an **App ID**, an **App Key**, an **Access Token**, and a **Refresh Token**.
 
 #### Getting App ID and App Key:
 
@@ -105,116 +115,118 @@ You need 3 things from Inoreader: an **App ID**, an **App Key**, and an **Access
    - **OAuth2 Redirect URI:** `https://localhost`
 5. After creating, you'll see your **App ID** and **App Key** — copy both
 
-#### Getting Your Access Token:
+#### Getting Your Access Token and Refresh Token:
 
 1. Open this URL in your browser (replace `YOUR_APP_ID` with your actual App ID):
-   ```
-   https://www.inoreader.com/oauth2/auth?client_id=YOUR_APP_ID&redirect_uri=https://localhost&response_type=code&scope=read
-   ```
+```
+   https://www.inoreader.com/oauth2/auth?client_id=YOUR_APP_ID&redirect_uri=https://localhost&response_type=code&scope=read&state=xyz
+```
 2. Log in and click **"Allow"** to authorize the app
 3. Your browser will redirect to a URL that starts with `https://localhost?code=`
-   — copy the code after `code=` (it's a long string of letters and numbers)
-4. Now run this in your terminal (replace the 3 placeholders):
-   ```
-   curl -X POST https://www.inoreader.com/oauth2/token \
-     -d "code=PASTE_CODE_HERE&redirect_uri=https://localhost&grant_type=authorization_code" \
-     -u "YOUR_APP_ID:YOUR_APP_KEY"
-   ```
-5. You'll get a JSON response. Copy the value after `"access_token":` — that's your token!
+   — copy the code after `code=`
+4. In PowerShell, run this (replace the placeholders):
+```
+   Invoke-RestMethod -Method Post -Uri "https://www.inoreader.com/oauth2/token" -Body "code=PASTE_CODE_HERE&redirect_uri=https://localhost&grant_type=authorization_code" -Headers @{Authorization = "Basic " + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("YOUR_APP_ID:YOUR_APP_KEY"))}
+```
+5. Copy both the `access_token` and `refresh_token` from the response.
 
-> **⚠️ Token expiry:** Inoreader tokens expire after ~30 days. If the script stops
-> working, you'll need to repeat this process to get a fresh token.
+> **⚠️ Token expiry:** The access token expires every 24 hours but the script
+> auto-refreshes it using the refresh token. The refresh token itself lasts ~30 days.
+> When it expires, repeat this process.
 
 ---
 
 ### Step 6: Create Your `.env` File
 
-This file stores your secret credentials safely.
-
-1. In your `daily-curator` folder, copy the example file:
-   ```
-   cp .env.example .env
-   ```
-   On Windows PowerShell:
-   ```
+1. In your `daily-curator` folder, run:
+```
    copy .env.example .env
-   ```
+```
 
-2. Open `.env` in any text editor (Notepad, TextEdit, VS Code, etc.)
-
-3. Replace the placeholder values with your real credentials:
-   ```
+2. Open `.env` in Notepad and fill in your credentials:
+```
    ANTHROPIC_API_KEY=sk-ant-your-actual-key-here
    INOREADER_APP_ID=your-actual-app-id
    INOREADER_APP_KEY=your-actual-app-key
    INOREADER_TOKEN=your-actual-access-token
-   ```
+   INOREADER_REFRESH_TOKEN=your-actual-refresh-token
+```
 
-4. Save the file.
+3. Save the file.
 
 > **⚠️ Important:** Never share your `.env` file or put it on GitHub.
 > It's listed in `.gitignore` so Git will ignore it automatically.
 
 ---
 
-### Step 7: Run the Script!
+### Step 7: Add Secrets to GitHub Actions
 
+For the automated runs to work, add all 5 credentials as GitHub Secrets:
+
+1. Go to your repo on GitHub → **Settings** → **Secrets and variables** → **Actions**
+2. Click **"New repository secret"** for each:
+   - `ANTHROPIC_API_KEY`
+   - `INOREADER_APP_ID`
+   - `INOREADER_APP_KEY`
+   - `INOREADER_TOKEN`
+   - `INOREADER_REFRESH_TOKEN`
+
+Also make sure Actions has write permissions:
+- **Settings** → **Actions** → **General** → **Workflow permissions** → select **Read and write permissions**
+
+---
+
+### Step 8: Run the Script!
 ```
 python3 daily_curator.py
 ```
 
-The script will:
-1. Check your credentials
-2. Fetch articles from Inoreader (may take a moment)
-3. Send them to Claude for evaluation (may take 15–30 seconds)
-4. Save a file like `picks-2026-03-05.md` in your folder
-5. Print a summary in the terminal
+Or trigger a manual run anytime via GitHub Actions → **Daily Curator** → **Run workflow**.
 
 ---
 
 ## Reading Your Output
 
-After running, open the `picks-YYYY-MM-DD.md` file in any text editor or Markdown viewer.
+Picks are saved to the `picks/` folder as `picks-YYYY-MM-DD-HHMM.md`.
 
 Each pick includes:
 - The headline, source, and link
 - Why Claude scored it high (1–2 sentences)
 - A suggested carousel angle or hook
 
-If nothing scored 7+, the file will say **"No Strong Picks Today"** instead of
-forcing weak results.
+If nothing scored 7+, the file will say **"No Strong Picks Today"**.
 
 ---
 
 ## Customizing the Script
 
 Open `daily_curator.py` in a text editor. Near the top, you'll see these settings:
-
 ```python
-HOURS_BACK           = 48    # Look back this many hours (try 24 or 72)
-MAX_ARTICLES_TO_SEND = 60    # Max articles to evaluate (more = slower + costs more)
-MIN_SCORE            = 7     # Minimum score to show (lower = more results)
-MAX_PICKS            = 5     # Max number of picks to show
+HOURS_BACK              = 48   # Look back this many hours
+MAX_ARTICLES_TO_SEND    = 60   # Max articles to fetch from Inoreader
+MAX_ARTICLES_PER_SOURCE = 5    # Max articles allowed per source (prevents one outlet dominating)
+MIN_SCORE               = 7    # Minimum score to surface a pick
+MAX_PICKS               = 5    # Max number of picks per run
 ```
-
-Change any of these numbers to adjust the script's behavior. Save the file and run again.
 
 ---
 
 ## Troubleshooting
 
 **"No articles found"**
-→ Your Inoreader feeds may not have published anything in the time window.
-  Try increasing `HOURS_BACK` from 48 to 72 or 96.
+→ Try increasing `HOURS_BACK` to 72 or 96.
 
 **"Inoreader authentication failed"**
-→ Your `INOREADER_TOKEN` has likely expired. Follow Step 5 again to get a new token.
+→ Your refresh token has expired (~30 days). Follow Step 5 to get new tokens.
 
 **"Invalid API key" from Claude**
-→ Check that `ANTHROPIC_API_KEY` in your `.env` file is correct (no extra spaces).
+→ Check `ANTHROPIC_API_KEY` in your `.env` file.
 
 **"No module named 'anthropic'"**
-→ Dependencies aren't installed. Run: `pip install -r requirements.txt`
+→ Run: `pip install -r requirements.txt`
+
+**GitHub Actions push rejected**
+→ Run `git pull --rebase` then `git push`
 
 ---
 
@@ -222,23 +234,10 @@ Change any of these numbers to adjust the script's behavior. Save the file and r
 
 | File | What It Is |
 |------|-----------|
-| `daily_curator.py` | The main script — all the logic lives here |
-| `requirements.txt` | List of Python packages to install |
-| `.env.example` | Template for your API keys (copy this to `.env`) |
+| `daily_curator.py` | The main script |
+| `requirements.txt` | Python packages to install |
+| `.env.example` | Template for your API keys |
 | `.env` | Your actual secrets — **never share this!** |
-| `.gitignore` | Tells Git which files to ignore (protects your `.env`) |
-| `picks-YYYY-MM-DD.md` | Output file — created each time you run the script |
-
----
-
-## What Is a Terminal?
-
-A terminal (also called a command line, console, or shell) is a text-based way
-to give instructions to your computer — instead of clicking icons, you type commands.
-
-- **Mac:** Press `Cmd + Space`, type `Terminal`, press Enter
-- **Windows:** Press the Windows key, type `PowerShell`, press Enter
-- **Linux:** Press `Ctrl + Alt + T`
-
-Don't worry if it feels unfamiliar — you only need a few commands for this project,
-and they're all written out for you above.
+| `.gitignore` | Protects your `.env` from being uploaded |
+| `picks/picks-YYYY-MM-DD-HHMM.md` | Output files — one per run |
+| `.github/workflows/daily_curator.yml` | GitHub Actions automation |
