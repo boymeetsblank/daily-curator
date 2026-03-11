@@ -205,7 +205,7 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
     try:
         response = client.messages.create(
             model="claude-opus-4-6",
-            max_tokens=4096,
+            max_tokens=8192,
             messages=[{"role": "user", "content": prompt}]
         )
     except anthropic.AuthenticationError:
