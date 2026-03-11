@@ -22,10 +22,11 @@ INOREADER_TOKEN         = os.environ.get("INOREADER_TOKEN")
 INOREADER_REFRESH_TOKEN = os.environ.get("INOREADER_REFRESH_TOKEN")
 INOREADER_TOKEN_URL     = "https://www.inoreader.com/oauth2/token"
 
-HOURS_BACK           = 48
-MAX_ARTICLES_TO_SEND = 60
-MIN_SCORE            = 7
-MAX_PICKS            = 5
+HOURS_BACK              = 48
+MAX_ARTICLES_TO_SEND    = 60
+MAX_ARTICLES_PER_SOURCE = 5
+MIN_SCORE               = 7
+MAX_PICKS               = 5
 
 INOREADER_BASE_URL   = "https://www.inoreader.com/reader/api/0"
 
@@ -138,6 +139,19 @@ def fetch_articles_from_inoreader() -> list[dict]:
 
     print(f"   Processed {len(articles)} articles with valid titles and links.")
     return articles
+
+
+def apply_source_cap(articles: list[dict]) -> list[dict]:
+    source_counts = {}
+    capped = []
+    for article in articles:
+        source = article["source"]
+        count = source_counts.get(source, 0)
+        if count < MAX_ARTICLES_PER_SOURCE:
+            capped.append(article)
+            source_counts[source] = count + 1
+    print(f"   After source cap ({MAX_ARTICLES_PER_SOURCE}/source): {len(capped)} articles remaining.")
+    return capped
 
 
 def strip_html(text: str) -> str:
@@ -312,6 +326,7 @@ def main():
         print(f"\n⚠️  No articles found from the last {HOURS_BACK} hours.")
         sys.exit(0)
 
+    articles = apply_source_cap(articles)
     evaluated_articles = evaluate_articles_with_claude(articles)
     top_picks = select_top_picks(evaluated_articles)
 
