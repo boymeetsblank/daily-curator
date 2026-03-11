@@ -256,10 +256,11 @@ def select_top_picks(articles: list[dict]) -> list[dict]:
 
 def write_markdown_output(picks: list[dict], all_articles_count: int) -> str:
     today_str = datetime.now().strftime("%Y-%m-%d")
+    time_str = datetime.now().strftime("%H%M")
     os.makedirs("picks", exist_ok=True)
-    filename = f"picks/picks-{today_str}.md"
+    filename = f"picks/picks-{today_str}-{time_str}.md"
 
-    content = f"""# Daily Content Picks — {today_str}
+    content = f"""# Daily Content Picks — {today_str} at {datetime.now().strftime("%I:%M %p")}
 
 > **Source:** Inoreader feeds from the last {HOURS_BACK} hours
 > **Articles reviewed:** {all_articles_count}
@@ -331,3 +332,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+
+Save, then push it up:
+```
+git add .
+git commit -m "Add time to picks filename to preserve all daily runs"
+git push
