@@ -205,7 +205,7 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
     try:
         response = client.messages.create(
             model="claude-opus-4-6",
-            max_tokens=8192,
+            max_tokens=4096,
             messages=[{"role": "user", "content": prompt}]
         )
     except anthropic.AuthenticationError:
@@ -332,10 +332,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
-
-Save, then push it up:
-```
-git add .
-git commit -m "Add time to picks filename to preserve all daily runs"
-git push
