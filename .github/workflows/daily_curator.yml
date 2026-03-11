@@ -2,9 +2,9 @@ name: Daily Curator
 
 on:
   schedule:
-    - cron: '0 14 * * *'   # 8:00 AM CT
-    - cron: '0 21 * * *'   # 3:00 PM CT
-    - cron: '0 3 * * *'    # 9:00 PM CT
+    - cron: '30 14 * * *'  # 8:30 AM CT
+    - cron: '30 21 * * *'  # 3:30 PM CT
+    - cron: '30 2 * * *'   # 8:30 PM CT
   workflow_dispatch:         # Allows manual trigger from GitHub
 
 jobs:
