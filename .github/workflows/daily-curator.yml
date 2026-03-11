@@ -1,0 +1,63 @@
+name: Daily Content Curator
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WHEN THIS RUNS:
+#   - Automatically every day at 8:00 AM UTC (adjust the time below if needed)
+#   - Manually anytime via the "Run workflow" button on GitHub Actions tab
+#
+# BEFORE THIS WILL WORK, you need to add these secrets to your GitHub repo:
+#   1. Go to your repo on GitHub
+#   2. Click Settings → Secrets and variables → Actions
+#   3. Click "New repository secret" for each of these:
+#      - ANTHROPIC_API_KEY
+#      - INOREADER_APP_ID
+#      - INOREADER_APP_KEY
+#      - INOREADER_TOKEN
+# ─────────────────────────────────────────────────────────────────────────────
+
+on:
+  schedule:
+    # Runs at 8:00 AM UTC daily. Use https://crontab.guru to adjust.
+    - cron: "0 8 * * *"
+  workflow_dispatch: # Allows manual runs from the GitHub Actions tab
+
+jobs:
+  curate:
+    name: Run Daily Curator
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repo so the workflow can access your files
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Step 3: Install Python dependencies from requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Step 4: Run the curator script
+      # Secrets are injected as environment variables here — never hardcoded
+      - name: Run daily_curator.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INOREADER_APP_ID: ${{ secrets.INOREADER_APP_ID }}
+          INOREADER_APP_KEY: ${{ secrets.INOREADER_APP_KEY }}
+          INOREADER_TOKEN: ${{ secrets.INOREADER_TOKEN }}
+        run: python daily_curator.py
+
+      # Step 5: Commit and push the generated picks file back to the repo
+      # This saves your daily picks-YYYY-MM-DD.md file automatically
+      - name: Commit and push picks file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "picks-*.md"
+          # Only commit if there's something new to save
+          git diff --cached --quiet || git commit -m "chore: add daily picks for $(date +%Y-%m-%d)"
+          git push
