@@ -26,7 +26,7 @@ HOURS_BACK              = 48
 MAX_ARTICLES_TO_SEND    = 60
 MAX_ARTICLES_PER_SOURCE = 5
 MIN_SCORE               = 7
-MAX_PICKS               = 5
+MAX_PICKS               = 10
 
 INOREADER_BASE_URL   = "https://www.inoreader.com/reader/api/0"
 
