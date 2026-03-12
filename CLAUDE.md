@@ -12,7 +12,7 @@ Each run:
 1. Fetches articles from Inoreader RSS feeds (last 48 hours)
 2. Caps articles at 5 per source to ensure diversity
 3. Sends articles to Claude AI for scoring (1–10)
-4. Saves the top 5 picks (minimum score 7) to picks/picks-YYYY-MM-DD-HHMM.md
+4. Saves the top 10 picks (minimum score 7) to picks/picks-YYYY-MM-DD-HHMM.md
 
 ---
 
@@ -35,7 +35,7 @@ HOURS_BACK              = 48   # How far back to fetch articles
 MAX_ARTICLES_TO_SEND    = 60   # Max articles fetched from Inoreader
 MAX_ARTICLES_PER_SOURCE = 5    # Per-source cap for diversity
 MIN_SCORE               = 7    # Minimum score to surface a pick
-MAX_PICKS               = 5    # Max picks per run
+MAX_PICKS               = 10   # Max picks per run
 ```
 
 ---
