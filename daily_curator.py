@@ -189,6 +189,8 @@ Score each article from 1–10 overall. Be ruthlessly selective. A 7+ means this
 
 POLITICS RULE: Automatically score any article a 1 if it is primarily about elections, political parties, politicians, legislation, government policy, or partisan issues. This account does not cover politics.
 
+CELEBRITY GOSSIP RULE: Automatically score any article a 1 if it is purely about celebrity rumors, relationships, dating, breakups, paparazzi stories, or celebrity gossip. This account does not cover celebrity gossip.
+
 For articles that score 7 or above, also provide:
 - WHY: 1–2 sentences explaining why it scored high
 - ANGLE: A specific carousel hook or angle that would perform well
