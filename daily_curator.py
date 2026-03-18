@@ -161,14 +161,116 @@ def strip_html(text: str) -> str:
     return clean.strip()
 
 
+def detect_cross_source_trends(articles: list[dict]) -> list[dict]:
+    """
+    Identify articles covering the same story across 3+ different sources.
+    Adds 'trending_across_sources' and 'trending_source_count' flags.
+    """
+    if len(articles) < 3:
+        for article in articles:
+            article["trending_across_sources"] = False
+        return articles
+
+    print(f"\n🔍 Detecting cross-source trends...")
+
+    articles_text = ""
+    for i, article in enumerate(articles, start=1):
+        articles_text += f"""
+ARTICLE {i} ({article['source']}):
+  Title: {article['title']}
+  Summary: {article['summary'][:250] if article['summary'] else '(no summary)'}
+---"""
+
+    prompt = f"""Analyze these articles and identify which ones are covering the same story or event.
+
+Group articles by topic/story. For each group, list the article numbers and the sources covering them.
+
+Return ONLY valid JSON in this exact format, with no other text:
+
+{{
+  "topic_clusters": [
+    {{
+      "topic": "Brief description of the story",
+      "article_numbers": [1, 3, 5],
+      "sources": ["Source A", "Source B", "Source C"]
+    }}
+  ]
+}}
+
+If no articles group together, return:
+{{
+  "topic_clusters": []
+}}
+
+Articles to analyze:
+{articles_text}"""
+
+    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+    try:
+        response = client.messages.create(
+            model="claude-opus-4-6",
+            max_tokens=2048,
+            messages=[{"role": "user", "content": prompt}]
+        )
+    except Exception as e:
+        print(f"   ⚠️  Could not detect trends (continuing without): {e}")
+        for article in articles:
+            article["trending_across_sources"] = False
+        return articles
+
+    response_text = response.content[0].text.strip()
+    try:
+        result = json.loads(response_text)
+    except json.JSONDecodeError:
+        import re
+        json_match = re.search(r'\{[\s\S]*\}', response_text)
+        if json_match:
+            try:
+                result = json.loads(json_match.group())
+            except json.JSONDecodeError:
+                print("   ⚠️  Could not parse trend response (continuing without).")
+                for article in articles:
+                    article["trending_across_sources"] = False
+                return articles
+        else:
+            for article in articles:
+                article["trending_across_sources"] = False
+            return articles
+
+    # Initialize all articles as not trending
+    for article in articles:
+        article["trending_across_sources"] = False
+
+    # Mark articles in clusters with 3+ sources
+    trending_count = 0
+    for cluster in result.get("topic_clusters", []):
+        article_nums = cluster.get("article_numbers", [])
+        sources = cluster.get("sources", [])
+        num_sources = len(sources)
+
+        if num_sources >= 3:
+            for article_num in article_nums:
+                if 1 <= article_num <= len(articles):
+                    articles[article_num - 1]["trending_across_sources"] = True
+                    articles[article_num - 1]["trending_source_count"] = num_sources
+                    trending_count += 1
+
+    print(f"   ✅ Found {trending_count} articles trending across 3+ sources.")
+    return articles
+
+
 def evaluate_articles_with_claude(articles: list[dict]) -> list[dict]:
     print(f"\n🤖 Sending {len(articles)} articles to Claude for evaluation...")
     print("   (This may take 15–30 seconds...)\n")
 
     articles_text = ""
     for i, article in enumerate(articles, start=1):
+        trending_flag = ""
+        if article.get("trending_across_sources"):
+            source_count = article.get("trending_source_count", 3)
+            trending_flag = f"\n  🔥 TRENDING: Covered by {source_count} sources"
         articles_text += f"""
-ARTICLE {i}:
+ARTICLE {i}:{trending_flag}
   Title:     {article['title']}
   Source:    {article['source']}
   Published: {article['published']}
@@ -190,6 +292,8 @@ Score each article from 1–10 overall. Be ruthlessly selective. A 7+ means this
 POLITICS RULE: Automatically score any article a 1 if it is primarily about elections, political parties, politicians, legislation, government policy, or partisan issues. This account does not cover politics.
 
 CELEBRITY GOSSIP RULE: Automatically score any article a 1 if it is purely about celebrity rumors, relationships, dating, breakups, paparazzi stories, or celebrity gossip. This account does not cover celebrity gossip.
+
+CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 3+ sources, treat this as strong evidence of cultural relevance. Add 1–2 points to the score (if it's already strong across other criteria).
 
 For articles that score 7 or above, also provide:
 - WHY: 1–2 sentences explaining why it scored high
@@ -272,6 +376,80 @@ def select_top_picks(articles: list[dict]) -> list[dict]:
     return strong_picks[:MAX_PICKS]
 
 
+def deduplicate_within_run(picks: list[dict]) -> list[dict]:
+    """
+    Drop lower-scoring picks that cover the same story as a higher-scoring pick.
+    Uses simple word-overlap on titles. Picks must already be sorted by score descending.
+    """
+    import re
+
+    def title_words(title: str) -> set:
+        stopwords = {"the", "a", "an", "of", "in", "on", "at", "to", "for",
+                     "is", "are", "was", "were", "and", "or", "but", "with",
+                     "how", "why", "what", "who", "as", "by", "its", "it"}
+        words = re.findall(r"[a-z]+", title.lower())
+        return {w for w in words if w not in stopwords and len(w) > 2}
+
+    kept = []
+    for pick in picks:
+        words = title_words(pick["title"])
+        duplicate = False
+        for existing in kept:
+            existing_words = title_words(existing["title"])
+            if not words or not existing_words:
+                continue
+            overlap = len(words & existing_words) / min(len(words), len(existing_words))
+            if overlap >= 0.6:
+                duplicate = True
+                print(f"   ↩️  Deduped (same story): \"{pick['title'][:60]}\"")
+                break
+        if not duplicate:
+            kept.append(pick)
+
+    removed = len(picks) - len(kept)
+    if removed:
+        print(f"   Within-run dedup: removed {removed} duplicate(s).")
+    return kept
+
+
+def filter_already_picked_today(picks: list[dict]) -> list[dict]:
+    """
+    Remove picks whose URLs already appear in any picks file saved today.
+    """
+    import glob as glob_module
+
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    pattern = f"picks/picks-{today_str}-*.md"
+    existing_files = glob_module.glob(pattern)
+
+    if not existing_files:
+        return picks
+
+    already_picked_urls = set()
+    url_pattern = r"\[Read the full article →\]\((https?://[^\)]+)\)"
+    import re
+    for filepath in existing_files:
+        with open(filepath, encoding="utf-8") as f:
+            content = f.read()
+        for url in re.findall(url_pattern, content):
+            already_picked_urls.add(url)
+
+    if not already_picked_urls:
+        return picks
+
+    filtered = []
+    for pick in picks:
+        if pick["link"] in already_picked_urls:
+            print(f"   ↩️  Already picked today: \"{pick['title'][:60]}\"")
+        else:
+            filtered.append(pick)
+
+    removed = len(picks) - len(filtered)
+    if removed:
+        print(f"   Cross-run dedup: removed {removed} already-picked article(s).")
+    return filtered
+
+
 def write_markdown_output(picks: list[dict], all_articles_count: int) -> str:
     today_str = datetime.now().strftime("%Y-%m-%d")
     time_str = datetime.now().strftime("%H%M")
@@ -331,8 +509,13 @@ def main():
         sys.exit(0)
 
     articles = apply_source_cap(articles)
+    articles = detect_cross_source_trends(articles)
     evaluated_articles = evaluate_articles_with_claude(articles)
     top_picks = select_top_picks(evaluated_articles)
+
+    print(f"\n🔎 Deduplicating picks...")
+    top_picks = deduplicate_within_run(top_picks)
+    top_picks = filter_already_picked_today(top_picks)
 
     print(f"\n📝 Writing output file...")
     output_file = write_markdown_output(top_picks, len(articles))
