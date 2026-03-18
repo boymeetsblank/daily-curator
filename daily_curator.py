@@ -259,7 +259,28 @@ Articles to analyze:
     return articles
 
 
-def evaluate_articles_with_claude(articles: list[dict]) -> list[dict]:
+def fetch_google_trends() -> list[str]:
+    """
+    Fetch the top trending searches in the US from Google Trends.
+    Returns a list of trending topic strings, or an empty list if unavailable.
+    """
+    print(f"\n📈 Fetching Google Trends...")
+    try:
+        from pytrends.request import TrendReq
+        pytrends = TrendReq(hl="en-US", tz=360, timeout=(10, 25))
+        df = pytrends.trending_searches(pn="united_states")
+        topics = df[0].tolist()[:20]
+        print(f"   ✅ Got {len(topics)} trending topics from Google.")
+        return topics
+    except ImportError:
+        print("   ⚠️  pytrends not installed — skipping Google Trends.")
+        return []
+    except Exception as e:
+        print(f"   ⚠️  Google Trends unavailable (continuing without): {e}")
+        return []
+
+
+def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[str] = None) -> list[dict]:
     print(f"\n🤖 Sending {len(articles)} articles to Claude for evaluation...")
     print("   (This may take 15–30 seconds...)\n")
 
@@ -278,6 +299,17 @@ ARTICLE {i}:{trending_flag}
   Summary:   {article['summary'] or '(no summary available)'}
 ---"""
 
+    google_trends_section = ""
+    if trending_topics:
+        topics_list = "\n".join(f"- {t}" for t in trending_topics)
+        google_trends_section = f"""
+GOOGLE TRENDS CONTEXT: These are the top trending searches in the US right now:
+{topics_list}
+
+GOOGLE TRENDS BONUS: If an article's topic closely matches one of these trending searches, treat it as additional evidence that people are actively searching for this right now. Add 1–2 points to the score (only if the article is already strong on other criteria).
+
+"""
+
     prompt = f"""You are a content strategist for culture-forward media accounts on Instagram, TikTok, and Substack.
 
 I'll give you a list of recent articles. Evaluate EACH article on these 4 criteria:
@@ -294,7 +326,7 @@ POLITICS RULE: Automatically score any article a 1 if it is primarily about elec
 CELEBRITY GOSSIP RULE: Automatically score any article a 1 if it is purely about celebrity rumors, relationships, dating, breakups, paparazzi stories, or celebrity gossip. This account does not cover celebrity gossip.
 
 CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 3+ sources, treat this as strong evidence of cultural relevance. Add 1–2 points to the score (if it's already strong across other criteria).
-
+{google_trends_section}
 For articles that score 7 or above, also provide:
 - WHY: 1–2 sentences explaining why it scored high
 - ANGLE: A specific carousel hook or angle that would perform well
@@ -510,7 +542,8 @@ def main():
 
     articles = apply_source_cap(articles)
     articles = detect_cross_source_trends(articles)
-    evaluated_articles = evaluate_articles_with_claude(articles)
+    google_trends = fetch_google_trends()
+    evaluated_articles = evaluate_articles_with_claude(articles, trending_topics=google_trends)
     top_picks = select_top_picks(evaluated_articles)
 
     print(f"\n🔎 Deduplicating picks...")

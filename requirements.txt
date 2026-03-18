@@ -22,3 +22,7 @@ requests>=2.31.0
 # python-dotenv — Reads .env files and loads them into Python's environment
 # This lets us store API keys in a .env file instead of hardcoding them
 python-dotenv>=1.0.0
+
+# pytrends — Unofficial Google Trends API for Python
+# We use this to fetch what people are actively searching for in the US right now
+pytrends>=4.9.0
