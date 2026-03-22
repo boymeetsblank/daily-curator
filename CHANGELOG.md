@@ -4,6 +4,9 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-22] Removed Google Trends Integration
+Removed `fetch_google_trends()`, the `pytrends` import, and all `trending_topics` references from `evaluate_articles_with_claude()`. Removed `pytrends` from `requirements.txt`. The script runs exactly as before the feature was added.
+
 ## [2026-03-22] Smarter Within-Run Deduplication (Claude Topic Clustering)
 Replaced the word-overlap heuristic for within-run deduplication with a Claude-based topic clustering approach. After scoring, Claude receives the full list of picks and groups them into same-story clusters. Only the single best pick per cluster survives — highest score wins; ties go to the more culturally relevant source (Claude decides). This ensures a day like a Luka 60-point game produces one pick, not six.
 
