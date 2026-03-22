@@ -410,37 +410,96 @@ def select_top_picks(articles: list[dict]) -> list[dict]:
 
 def deduplicate_within_run(picks: list[dict]) -> list[dict]:
     """
-    Drop lower-scoring picks that cover the same story as a higher-scoring pick.
-    Uses simple word-overlap on titles. Picks must already be sorted by score descending.
+    Use Claude to group picks covering the same story into clusters, then keep
+    only the single best pick from each cluster — highest score wins; ties go
+    to the more culturally relevant source (Claude decides).
     """
-    import re
+    if len(picks) <= 1:
+        return picks
 
-    def title_words(title: str) -> set:
-        stopwords = {"the", "a", "an", "of", "in", "on", "at", "to", "for",
-                     "is", "are", "was", "were", "and", "or", "but", "with",
-                     "how", "why", "what", "who", "as", "by", "its", "it"}
-        words = re.findall(r"[a-z]+", title.lower())
-        return {w for w in words if w not in stopwords and len(w) > 2}
+    print(f"\n🔍 Clustering picks by topic...")
 
-    kept = []
-    for pick in picks:
-        words = title_words(pick["title"])
-        duplicate = False
-        for existing in kept:
-            existing_words = title_words(existing["title"])
-            if not words or not existing_words:
-                continue
-            overlap = len(words & existing_words) / min(len(words), len(existing_words))
-            if overlap >= 0.6:
-                duplicate = True
-                print(f"   ↩️  Deduped (same story): \"{pick['title'][:60]}\"")
-                break
-        if not duplicate:
-            kept.append(pick)
+    picks_text = ""
+    for i, pick in enumerate(picks, start=1):
+        picks_text += f"{i}. [Score: {pick['score']}/10] \"{pick['title']}\" ({pick['source']})\n"
 
+    prompt = f"""Here are the top-scoring articles from a content curation run. Some may cover the exact same underlying story or event from different outlets.
+
+{picks_text}
+
+Your job:
+1. Identify any groups of articles that are all about the same story or event.
+2. For each group (cluster), pick ONE article to keep — the highest-scoring one. If two articles in a cluster have the same score, pick the one from the most culturally relevant source (e.g. prefer The Ringer over a generic news wire, prefer a culture-forward outlet over a sports stats site).
+3. Articles that are NOT part of any cluster should be left alone — do not list them.
+
+Return ONLY valid JSON in this exact format, with no other text:
+
+{{
+  "clusters": [
+    {{
+      "story": "Brief description of the shared story",
+      "article_numbers": [1, 3, 5],
+      "keep": 3
+    }}
+  ]
+}}
+
+If no articles share the same story, return:
+{{
+  "clusters": []
+}}"""
+
+    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+    try:
+        response = client.messages.create(
+            model="claude-opus-4-6",
+            max_tokens=1024,
+            messages=[{"role": "user", "content": prompt}]
+        )
+    except Exception as e:
+        print(f"   ⚠️  Could not cluster picks (keeping all): {e}")
+        return picks
+
+    response_text = response.content[0].text.strip()
+    try:
+        result = json.loads(response_text)
+    except json.JSONDecodeError:
+        import re
+        json_match = re.search(r'\{[\s\S]*\}', response_text)
+        if json_match:
+            try:
+                result = json.loads(json_match.group())
+            except json.JSONDecodeError:
+                print("   ⚠️  Could not parse cluster response (keeping all).")
+                return picks
+        else:
+            print("   ⚠️  Could not parse cluster response (keeping all).")
+            return picks
+
+    clusters = result.get("clusters", [])
+    if not clusters:
+        print("   ✅ No duplicate stories detected.")
+        return picks
+
+    # Build set of 0-based indices to drop
+    to_drop = set()
+    for cluster in clusters:
+        article_nums = cluster.get("article_numbers", [])
+        keep_num = cluster.get("keep")
+        story = cluster.get("story", "unknown story")
+        if keep_num not in article_nums:
+            continue  # malformed cluster, skip
+        for num in article_nums:
+            if num != keep_num and 1 <= num <= len(picks):
+                to_drop.add(num - 1)
+                print(f"   ↩️  Deduped ({story}): \"{picks[num - 1]['title'][:60]}\"")
+
+    kept = [pick for i, pick in enumerate(picks) if i not in to_drop]
     removed = len(picks) - len(kept)
     if removed:
         print(f"   Within-run dedup: removed {removed} duplicate(s).")
+    else:
+        print("   ✅ No duplicate stories detected.")
     return kept
 
 

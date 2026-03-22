@@ -99,4 +99,9 @@ git push                     # Push (if rejected, run git pull --rebase first)
 - `.env` — contains real credentials, never commit this
 - `picks/` folder contents — these are outputs, not source files
 - GitHub Secrets — set in GitHub UI, not in code
-```
+
+---
+
+## Maintaining the Changelog
+
+**Every time you add, modify, or remove a feature, you must update `CHANGELOG.md`** with the date and a brief description of what changed. Always add the new entry at the **top** of the file (just below the `---` divider), under a `## [YYYY-MM-DD] Feature Name` heading. Never append to the bottom.
