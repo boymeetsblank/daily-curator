@@ -329,7 +329,17 @@ CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered
 {google_trends_section}
 For articles that score 7 or above, also provide:
 - WHY: 1–2 sentences explaining why it scored high
-- ANGLE: A specific carousel hook or angle that would perform well
+- ANGLE: A carousel hook following these rules:
+
+CAROUSEL HOOK RULES:
+- Identify which psychological trigger the hook uses: Curiosity, FOMO, Disbelief, Defensiveness, Relief, or Greed
+- Write the hook with intentional line breaks using "/" to show where each break goes
+- Each line must be 7 words or fewer
+- Maximum 3 lines total
+- The hook must stop the scroll — it should feel punchy, not like a headline
+
+Format the ANGLE field like this:
+"[TRIGGER: Disbelief] The last Laker to score 60 / was Kobe. / In his final game."
 
 IMPORTANT: Return your response as valid JSON in EXACTLY this format, with no other text before or after:
 
