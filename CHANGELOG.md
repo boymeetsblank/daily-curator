@@ -4,6 +4,15 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-23] Improved Carousel Hook Quality in Claude Scoring Prompt
+
+Updated the `ANGLE` instruction in the Claude evaluation prompt to produce structured, scroll-stopping hooks instead of generic angles.
+
+- The ANGLE field now requires Claude to identify the psychological trigger driving the hook (Curiosity, FOMO, Disbelief, Defensiveness, Relief, or Greed)
+- Hooks must be written with intentional line breaks using "/" to indicate slide breaks
+- Each line is capped at 7 words; maximum 3 lines total
+- Output format: `"[TRIGGER: Disbelief] The last Laker to score 60 / was Kobe. / In his final game."`
+
 ## [2026-03-22] Removed Google Trends Integration
 Removed `fetch_google_trends()`, the `pytrends` import, and all `trending_topics` references from `evaluate_articles_with_claude()`. Removed `pytrends` from `requirements.txt`. The script runs exactly as before the feature was added.
 
