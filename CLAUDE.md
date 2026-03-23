@@ -44,9 +44,9 @@ MAX_PICKS               = 10   # Max picks per run
 
 - **Per-source cap:** Max 5 articles per source so ESPN and Complex don't dominate
 - **Politics filter:** Claude prompt explicitly scores political articles a 1 — this account is politics-free
-- **Celebrity filter:** Pure celebrity gossip is not relevant — content focus is cultural impact only
 - **Timestamped filenames:** picks-YYYY-MM-DD-HHMM.md so all 3 daily runs are preserved
 - **Auto token refresh:** Script uses INOREADER_REFRESH_TOKEN to get a fresh access token every run — no manual token management needed
+- **No celebrity gossip:** Content focus is cultural impact, not celebrity news for its own sake
 
 ---
 
@@ -59,7 +59,6 @@ The Claude scoring prompt evaluates articles on 4 criteria:
 4. Carousel — could this become a carousel post?
 
 Political content is automatically scored 1 regardless of traction.
-Pure celebrity gossip is automatically scored 1 regardless of traction.
 
 ---
 
@@ -103,36 +102,6 @@ git push                     # Push (if rejected, run git pull --rebase first)
 
 ---
 
-## Feature Roadmap
+## Maintaining the Changelog
 
-**Already Built ✅**
-1. Core script — fetches Inoreader articles, scores with Claude, saves picks as markdown
-2. GitHub Actions automation — runs 3x per day automatically
-3. Timestamped filenames — preserves all 3 daily runs
-4. Per-source article cap — max 5 articles per source for diversity
-5. Politics filter — auto-scores political content a 1
-6. README — full setup and project documentation
-7. CLAUDE.md — project briefing for Claude Code on iPad
-
-**Phase 1 — Fix Discovery**
-8. Reddit trend detection — catches breaking stories before publications write about them
-9. Google Trends integration — real time signal of what people are actively searching
-10. Cross-source trend detection — flag when multiple sources cover the same story
-11. YouTube trending integration — viral videos as an early cultural signal
-12. Celebrity filter — auto-score pure celebrity gossip a 1 to reduce noise
-
-**Phase 2 — Make It a Real Product**
-13. Custom scrollable feed — beautifully designed webpage on GitHub Pages, updates 3x/day
-14. Deduplication — prevent the same story appearing across multiple daily runs
-15. Feedback loop / taste training — thumbs up/down that calibrates Claude's scoring to your taste over time
-16. iMessage or email notification — ping you the moment a 9+ story is found
-
-**Phase 3 — Content Creation**
-17. Draft carousel generator — turns picks into actual content drafts automatically
-18. Platform fit scoring — rate each story for Instagram vs TikTok vs Substack
-19. Best time to post suggestion — based on story type suggest optimal posting time
-20. Content categories — tag each pick by type (music, sports, fashion, tech)
-
-**Phase 4 — Reporting**
-21. Score history — track which story types score highest over time to tune the prompt
-22. Weekly digest — every Sunday summarize the week's best picks and dominant themes
+**Every time you add, modify, or remove a feature, you must update `CHANGELOG.md`** with the date and a brief description of what changed. Always add the new entry at the **top** of the file (just below the `---` divider), under a `## [YYYY-MM-DD] Feature Name` heading. Never append to the bottom.
