@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@boymeetsblank_ — Daily Picks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #0a0a0a;
+      color: #e8e8e8;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10, 10, 10, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid #1a1a1a;
+      padding: 14px 24px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .brand {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      color: #fff;
+    }
+
+    .tagline {
+      font-size: 13px;
+      color: #444;
+      font-weight: 400;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 100px;
+    }
+
+    /* ── Section headers ── */
+    .section-header {
+      margin-bottom: 24px;
+    }
+
+    .section-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #444;
+      margin-bottom: 4px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.6px;
+    }
+
+    /* ── Run group ── */
+    .run-group {
+      margin-bottom: 8px;
+    }
+
+    .run-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 28px 0 14px;
+    }
+
+    .run-time-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #555;
+    }
+
+    .run-meta {
+      font-size: 11px;
+      color: #2e2e2e;
+      background: #161616;
+      padding: 2px 9px;
+      border-radius: 100px;
+    }
+
+    /* ── Full pick card ── */
+    .pick-card {
+      background: #111;
+      border: 1px solid #1e1e1e;
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-bottom: 10px;
+      transition: border-color 0.15s;
+    }
+
+    .pick-card:hover {
+      border-color: #2c2c2c;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 11px;
+      flex-wrap: wrap;
+    }
+
+    .score-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 100px;
+      line-height: 1.4;
+      flex-shrink: 0;
+    }
+
+    .score-badge.green  { background: rgba(16, 185, 129, 0.14); color: #10b981; }
+    .score-badge.amber  { background: rgba(245, 158, 11, 0.14);  color: #f59e0b; }
+
+    .card-source {
+      font-size: 12px;
+      color: #555;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 340px;
+    }
+
+    .card-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: #f0f0f0;
+      line-height: 1.35;
+      letter-spacing: -0.3px;
+      margin-bottom: 10px;
+    }
+
+    .card-why {
+      font-size: 14px;
+      color: #777;
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+
+    /* ── Angle box ── */
+    .angle-box {
+      background: #0d0d0d;
+      border-left: 2px solid #252525;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 15px;
+      margin-bottom: 16px;
+    }
+
+    .angle-trigger {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7c5af2;
+      margin-bottom: 7px;
+    }
+
+    .angle-lines {
+      font-size: 15px;
+      font-weight: 600;
+      color: #ccc;
+      line-height: 1.55;
+    }
+
+    .angle-line { display: block; }
+
+    .angle-plain {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* ── Trend label ── */
+    .trend-label {
+      display: inline-block;
+      font-size: 12px;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 0;
+    }
+
+    /* ── Article link button ── */
+    .article-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #60a5fa;
+      text-decoration: none;
+      padding: 6px 12px;
+      background: rgba(96, 165, 250, 0.07);
+      border-radius: 7px;
+      transition: background 0.15s;
+    }
+
+    .article-link:hover { background: rgba(96, 165, 250, 0.14); }
+
+    /* ── Archive divider ── */
+    .archive-divider {
+      border: none;
+      border-top: 1px solid #161616;
+      margin: 48px 0 32px;
+    }
+
+    /* ── Archive day group ── */
+    .archive-day-group {
+      margin-bottom: 28px;
+    }
+
+    .archive-day-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .archive-day-date {
+      font-size: 14px;
+      font-weight: 700;
+      color: #555;
+    }
+
+    .archive-day-count {
+      font-size: 11px;
+      color: #333;
+    }
+
+    .archive-pick-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 0;
+      border-bottom: 1px solid #141414;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .archive-pick-row:last-child { border-bottom: none; }
+
+    a.archive-pick-row:hover .archive-title { color: #ccc; }
+
+    .archive-score {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 100px;
+      flex-shrink: 0;
+      line-height: 1.5;
+    }
+
+    .archive-score.green { background: rgba(16, 185, 129, 0.12); color: #10b981; }
+    .archive-score.amber { background: rgba(245, 158, 11, 0.12);  color: #f59e0b; }
+
+    .archive-title {
+      font-size: 13px;
+      font-weight: 500;
+      color: #777;
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: color 0.1s;
+    }
+
+    .archive-source {
+      font-size: 11px;
+      color: #333;
+      flex-shrink: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 130px;
+    }
+
+    /* ── States ── */
+    .state-msg {
+      text-align: center;
+      color: #444;
+      padding: 80px 0;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      main { padding: 24px 16px 80px; }
+      header { padding: 12px 16px; }
+      .card-title { font-size: 17px; }
+      .section-title { font-size: 22px; }
+      .archive-source { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">@boymeetsblank_</div>
+    <div class="tagline">Daily culture picks</div>
+  </div>
+</header>
+
+<main>
+  <div id="feed-container">
+    <div class="state-msg">Loading picks…</div>
+  </div>
+</main>
+
+<script>
+  function esc(str) {
+    if (!str) return '';
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function scoreClass(score) {
+    return score >= 9 ? 'green' : 'amber';
+  }
+
+  function formatAngle(angle) {
+    if (!angle) return '';
+    // New format: [TRIGGER: Type] Hook line / line two / line three
+    const m = angle.match(/^\[TRIGGER:\s*([^\]]+)\]\s*([\s\S]*)/);
+    if (m) {
+      const trigger = m[1].trim();
+      const lines = m[2].split('/').map(l => l.trim()).filter(Boolean);
+      return `<div class="angle-box">
+        <div class="angle-trigger">${esc(trigger)}</div>
+        <div class="angle-lines">${lines.map(l => `<span class="angle-line">${esc(l)}</span>`).join('')}</div>
+      </div>`;
+    }
+    // Old format: plain text
+    return `<div class="angle-box"><div class="angle-plain">${esc(angle)}</div></div>`;
+  }
+
+  function renderPickCard(pick) {
+    const cls = scoreClass(pick.score);
+    const linkHtml = pick.link
+      ? `<a class="article-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer">Read the full article →</a>`
+      : pick.trend_label
+        ? `<span class="trend-label">${esc(pick.trend_label)}</span>`
+        : '';
+
+    return `<div class="pick-card">
+      <div class="card-meta">
+        <span class="score-badge ${cls}">${pick.score}/10</span>
+        <span class="card-source">${esc(pick.source)}</span>
+      </div>
+      <div class="card-title">${esc(pick.title)}</div>
+      ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
+      ${formatAngle(pick.angle)}
+      ${linkHtml}
+    </div>`;
+  }
+
+  function renderRunGroup(run) {
+    const pickCount = run.picks.length;
+    const countLabel = `${pickCount} pick${pickCount !== 1 ? 's' : ''} · ${run.display_time}`;
+    let html = `<div class="run-group">
+      <div class="run-header">
+        <span class="run-time-label">${esc(run.label)}</span>
+        <span class="run-meta">${esc(countLabel)}</span>
+      </div>`;
+    for (const pick of run.picks) html += renderPickCard(pick);
+    html += `</div>`;
+    return html;
+  }
+
+  function renderArchiveDayGroup(displayDate, runs) {
+    const allPicks = runs.flatMap(r => r.picks);
+    const pickCount = allPicks.length;
+
+    let rows = '';
+    for (const pick of allPicks) {
+      const cls = scoreClass(pick.score);
+      const tag = pick.link ? 'a' : 'div';
+      const href = pick.link ? ` href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer"` : '';
+      rows += `<${tag} class="archive-pick-row"${href}>
+        <span class="archive-score ${cls}">${pick.score}</span>
+        <span class="archive-title">${esc(pick.title)}</span>
+        <span class="archive-source">${esc(pick.source)}</span>
+      </${tag}>`;
+    }
+
+    return `<div class="archive-day-group">
+      <div class="archive-day-header">
+        <span class="archive-day-date">${esc(displayDate)}</span>
+        <span class="archive-day-count">${pickCount} pick${pickCount !== 1 ? 's' : ''}</span>
+      </div>
+      ${rows}
+    </div>`;
+  }
+
+  function render(runs) {
+    if (!runs || runs.length === 0) {
+      document.getElementById('feed-container').innerHTML =
+        '<div class="state-msg">No picks yet.</div>';
+      return;
+    }
+
+    const latestDate = runs[0].date;
+    const latestRuns = runs.filter(r => r.date === latestDate);
+    const olderRuns  = runs.filter(r => r.date !== latestDate);
+
+    let html = '';
+
+    // ── Latest section ──
+    html += `<div class="section-header">
+      <div class="section-eyebrow">Latest</div>
+      <div class="section-title">${esc(latestRuns[0].display_date)}</div>
+    </div>`;
+    for (const run of latestRuns) html += renderRunGroup(run);
+
+    // ── Archive section ──
+    if (olderRuns.length > 0) {
+      // Group by date
+      const byDate = {};
+      for (const run of olderRuns) {
+        if (!byDate[run.date]) byDate[run.date] = [];
+        byDate[run.date].push(run);
+      }
+      const sortedDates = Object.keys(byDate).sort().reverse();
+
+      html += `<hr class="archive-divider">
+        <div class="section-header">
+          <div class="section-eyebrow">Archive</div>
+        </div>`;
+
+      for (const date of sortedDates) {
+        const dateRuns = byDate[date];
+        html += renderArchiveDayGroup(dateRuns[0].display_date, dateRuns);
+      }
+    }
+
+    document.getElementById('feed-container').innerHTML = html;
+  }
+
+  async function loadFeed() {
+    try {
+      const res = await fetch('picks_data.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      render(data.runs);
+    } catch (e) {
+      document.getElementById('feed-container').innerHTML =
+        `<div class="state-msg">Could not load picks.<br>
+        <small style="color:#333">If testing locally, serve with a web server (not file://).</small></div>`;
+    }
+  }
+
+  loadFeed();
+</script>
+
+</body>
+</html>

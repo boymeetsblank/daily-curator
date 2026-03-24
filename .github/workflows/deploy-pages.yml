@@ -1,0 +1,139 @@
+name: Deploy Feed to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deploy runs at a time; don't cancel in-progress deploys
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Build picks_data.json
+        run: |
+          mkdir -p site
+          cp index.html site/index.html
+          python3 - << 'PYEOF'
+          import os, re, json
+          from datetime import datetime
+
+          def parse_file(path):
+              name = os.path.basename(path)
+              m = re.match(r'picks-(\d{4}-\d{2}-\d{2})-(\d{4})\.md', name)
+              if not m:
+                  return None
+              date_str, time_str = m.group(1), m.group(2)
+              hour = int(time_str[:2])
+              if hour < 12:
+                  label = 'Morning'
+              elif hour < 18:
+                  label = 'Afternoon'
+              else:
+                  label = 'Evening'
+              dt = datetime.strptime(f'{date_str} {time_str}', '%Y-%m-%d %H%M')
+              # Format without leading-zero dependencies
+              month = dt.strftime('%B')
+              day   = str(dt.day)
+              year  = str(dt.year)
+              hour12 = dt.hour % 12 or 12
+              minute = dt.strftime('%M')
+              ampm   = 'AM' if dt.hour < 12 else 'PM'
+              display_date = f'{month} {day}, {year}'
+              display_time = f'{hour12}:{minute} {ampm}'
+
+              with open(path, encoding='utf-8') as f:
+                  content = f.read()
+
+              picks = []
+              for block in re.split(r'\n## Pick #\d+', content)[1:]:
+                  sm = re.match(r' — Score: (\d+)/10', block)
+                  score = int(sm.group(1)) if sm else 0
+
+                  tm = re.search(r'\*\*([^*\n]+)\*\*\n\*([^*\n]+)\*', block)
+                  title  = tm.group(1) if tm else ''
+                  source = tm.group(2) if tm else ''
+
+                  lm = re.search(r'\[Read the full article →\]\(([^)]+)\)', block)
+                  link = lm.group(1) if lm else None
+
+                  trend_label = None
+                  if '*Trending on X right now*' in block:
+                      trend_label = 'Trending on X right now'
+                  elif '*Trending on Google right now*' in block:
+                      trend_label = 'Trending on Google right now'
+
+                  wm = re.search(
+                      r'\*\*Why it scored high:\*\*\n(.*?)(?=\n\n\*\*Suggested|\n\n---|\Z)',
+                      block, re.DOTALL
+                  )
+                  why = wm.group(1).strip() if wm else ''
+
+                  am = re.search(
+                      r'\*\*Suggested carousel angle / hook:\*\*\n(.*?)(?=\n\n---|\n---|\Z)',
+                      block, re.DOTALL
+                  )
+                  angle = am.group(1).strip() if am else ''
+
+                  if title:
+                      picks.append({
+                          'score': score,
+                          'title': title,
+                          'source': source,
+                          'link': link,
+                          'trend_label': trend_label,
+                          'why': why,
+                          'angle': angle,
+                      })
+
+              return {
+                  'date': date_str,
+                  'time': time_str,
+                  'label': label,
+                  'display_date': display_date,
+                  'display_time': display_time,
+                  'picks': picks,
+              }
+
+          runs = []
+          for name in sorted(os.listdir('picks'), reverse=True):
+              if name.startswith('picks-') and name.endswith('.md'):
+                  r = parse_file(os.path.join('picks', name))
+                  if r and r['picks']:
+                      runs.append(r)
+
+          os.makedirs('site', exist_ok=True)
+          out = {'runs': runs, 'generated_at': datetime.utcnow().isoformat() + 'Z'}
+          with open('site/picks_data.json', 'w', encoding='utf-8') as f:
+              json.dump(out, f, ensure_ascii=False, indent=2)
+          print(f'Built picks_data.json — {len(runs)} runs, '
+                f'{sum(len(r["picks"]) for r in runs)} total picks')
+          PYEOF
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

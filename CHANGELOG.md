@@ -4,6 +4,11 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-23] GitHub Pages feed — index.html + deploy-pages.yml
+Added a dark-mode editorial web feed hosted on GitHub Pages:
+- **`index.html`** — fetches `picks_data.json` and renders a scrollable feed. Today's (most recent date's) picks appear as full cards with score badge, source, headline, why it scored, carousel angle, and article link. Older picks are grouped by date in a condensed archive list. Score badges are green for 9–10, amber for 7–8. The new `[TRIGGER: X]` angle format renders as stacked hook lines; old angle format renders as plain text.
+- **`.github/workflows/deploy-pages.yml`** — triggers on every push to `main`. Inline Python parses all `picks/*.md` files into `picks_data.json`, copies both files to a `site/` folder, then deploys to GitHub Pages using `actions/upload-pages-artifact` and `actions/deploy-pages`. The feed auto-updates after every curation run.
+
 ## [2026-03-23] Improved Carousel Hook Quality in Claude Scoring Prompt
 
 Updated the `ANGLE` instruction in the Claude evaluation prompt to produce structured, scroll-stopping hooks instead of generic angles.
