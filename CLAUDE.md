@@ -122,12 +122,21 @@ All 6 must be set in repo Settings → Secrets → Actions:
 
 ---
 
+## Working Branch
+
+**Always develop and push on `main`.** Never use feature branches unless explicitly asked.
+
+Before starting any session, run:
+```
+git fetch origin main && git pull origin main
+```
+
 ## Common Commands
 ```
 python3 daily_curator.py     # Run locally
 git add .                    # Stage changes
 git commit -m "message"      # Commit
-git push                     # Push (if rejected, run git pull --rebase first)
+git push origin main         # Push
 ```
 
 ---
@@ -143,3 +152,5 @@ git push                     # Push (if rejected, run git pull --rebase first)
 ## Maintaining the Changelog
 
 **Every time you add, modify, or remove a feature, you must update `CHANGELOG.md`** with the date and a brief description of what changed. Always add the new entry at the **top** of the file (just below the `---` divider), under a `## [YYYY-MM-DD] Feature Name` heading. Never append to the bottom.
+
+**At the start of every session, fetch and read the latest `CHANGELOG.md` from the remote** (`git fetch origin main && git pull origin main`) before doing anything else. This ensures you have the full picture including any changes made outside of the current session.
