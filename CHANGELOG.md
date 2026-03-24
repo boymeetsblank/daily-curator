@@ -4,6 +4,17 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-23] Fix X (Twitter) trends — country must be numeric ID
+The `karamelo/twitter-trends-scraper` actor's `country` field takes a numeric string ID, not a name. Changed input to `{"country": "2", "live": true}` (`"2"` = United States). This resolved the 400 Bad Request errors.
+
+## [2026-03-23] Sidebar navigation and filtering for the web feed
+Added a sticky sidebar to `index.html` with five controls:
+- **Jump to Today / Yesterday** — smooth-scrolls to the latest section or the most recent archived date
+- **Time of Day filter** — toggles to show only Morning, Afternoon, or Evening runs (across both the latest and archive sections)
+- **Score filter** — toggles to show only 9+ or 7+ picks
+- **Show All** — resets all active filters
+On desktop (>820px) the sidebar sits to the left of the feed as a sticky column. On mobile it collapses into a horizontally-scrollable filter bar pinned below the header. Filtering works by tagging rendered elements with `data-label` and `data-score` attributes and toggling a `filter-hidden` class.
+
 ## [2026-03-23] GitHub Pages feed — index.html + deploy-pages.yml
 Added a dark-mode editorial web feed hosted on GitHub Pages:
 - **`index.html`** — fetches `picks_data.json` and renders a scrollable feed. Today's (most recent date's) picks appear as full cards with score badge, source, headline, why it scored, carousel angle, and article link. Older picks are grouped by date in a condensed archive list. Score badges are green for 9–10, amber for 7–8. The new `[TRIGGER: X]` angle format renders as stacked hook lines; old angle format renders as plain text.
@@ -17,6 +28,12 @@ Updated the `ANGLE` instruction in the Claude evaluation prompt to produce struc
 - Hooks must be written with intentional line breaks using "/" to indicate slide breaks
 - Each line is capped at 7 words; maximum 3 lines total
 - Output format: `"[TRIGGER: Disbelief] The last Laker to score 60 / was Kobe. / In his final game."`
+
+## [2026-03-22] Apify integrations — X (Twitter) Trends and Google Trends
+Added two new content streams that are scored by Claude alongside Inoreader articles:
+- **`fetch_twitter_trends()`** — calls Apify actor `karamelo/twitter-trends-scraper` for live US trending topics. Source: "X (Twitter) Trending".
+- **`fetch_google_trends()`** — calls Apify actor `apify/google-trends-scraper` for US trending searches. Source: "Google Trends".
+Both use a two-step Apify pattern (start run → poll until done → fetch dataset). Both fail gracefully if Apify is unavailable. Added `APIFY_API_TOKEN` to required credentials. In the picks file, trend items display "Trending on X right now" or "Trending on Google right now" instead of an article link.
 
 ## [2026-03-22] Removed Google Trends Integration
 Removed `fetch_google_trends()`, the `pytrends` import, and all `trending_topics` references from `evaluate_articles_with_claude()`. Removed `pytrends` from `requirements.txt`. The script runs exactly as before the feature was added.

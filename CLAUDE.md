@@ -11,8 +11,14 @@ daily_curator.py is an automated content scouting tool for the Instagram/TikTok/
 Each run:
 1. Fetches articles from Inoreader RSS feeds (last 48 hours)
 2. Caps articles at 5 per source to ensure diversity
-3. Sends articles to Claude AI for scoring (1–10)
-4. Saves the top 10 picks (minimum score 7) to picks/picks-YYYY-MM-DD-HHMM.md
+3. Detects stories covered by 3+ sources (cross-source trend signal)
+4. Fetches live trending topics from X (Twitter) and Google Trends via Apify
+5. Sends everything to Claude AI for scoring (1–10)
+6. Deduplicates same-story picks using Claude topic clustering
+7. Saves the top 10 picks (minimum score 7) to picks/picks-YYYY-MM-DD-HHMM.md
+
+The picks are also published to a live web feed at:
+**https://boymeetsblank.github.io/daily-curator**
 
 ---
 
@@ -24,7 +30,10 @@ Each run:
 | `requirements.txt` | Python dependencies |
 | `.env` | Local credentials — never edit, never commit |
 | `.github/workflows/daily_curator.yml` | GitHub Actions automation (runs 3x/day) |
+| `.github/workflows/deploy-pages.yml` | Deploys the web feed to GitHub Pages on every push to main |
+| `index.html` | GitHub Pages web feed — fetches picks_data.json and renders the feed |
 | `picks/` | Output folder — one markdown file per run |
+| `CHANGELOG.md` | Feature history — must be updated with every change |
 | `README.md` | Full setup guide for humans |
 
 ---
@@ -44,43 +53,72 @@ MAX_PICKS               = 10   # Max picks per run
 
 - **Per-source cap:** Max 5 articles per source so ESPN and Complex don't dominate
 - **Politics filter:** Claude prompt explicitly scores political articles a 1 — this account is politics-free
+- **Celebrity gossip filter:** Claude prompt scores pure celebrity gossip a 1 — focus is cultural impact, not tabloid news
 - **Timestamped filenames:** picks-YYYY-MM-DD-HHMM.md so all 3 daily runs are preserved
 - **Auto token refresh:** Script uses INOREADER_REFRESH_TOKEN to get a fresh access token every run — no manual token management needed
-- **No celebrity gossip:** Content focus is cultural impact, not celebrity news for its own sake
+- **Cross-source trend detection:** Articles covered by 3+ sources get a score bonus as evidence of real cultural momentum
+- **Apify trends:** X (Twitter) and Google Trends trending topics are fetched via Apify on each run and mixed in with Inoreader articles as standalone "trend items" for Claude to score
+- **Claude topic clustering:** After scoring, picks are sent back to Claude to group same-story duplicates into clusters. Only the highest-scoring pick per cluster survives
+- **Cross-run URL dedup:** URLs from earlier runs today are excluded so the same article never surfaces twice in one day
+- **Claude eval retry:** If Claude returns unparseable JSON, the scoring call is retried once before failing
 
 ---
 
 ## Claude Prompt Philosophy
 
-The Claude scoring prompt evaluates articles on 4 criteria:
+The Claude scoring prompt evaluates articles and trend items on 4 criteria:
 1. Trending — are people actively discussing this?
 2. Timely — did it break in the last 24–48 hours?
 3. Cultural — does it connect to a broader cultural moment?
 4. Carousel — could this become a carousel post?
 
-Political content is automatically scored 1 regardless of traction.
+**Automatic score of 1:** political content, pure celebrity gossip.
+
+**Score bonus:** articles flagged as trending across 3+ sources get +1–2 points.
+
+**Trend items:** items from "X (Twitter) Trending" or "Google Trends" are evaluated on whether the topic itself is culturally interesting and carousel-worthy.
+
+### Carousel Hook Format
+
+The ANGLE field uses a structured format with a psychological trigger label:
+
+```
+[TRIGGER: Disbelief] The last Laker to score 60 / was Kobe. / In his final game.
+```
+
+Rules:
+- Trigger must be one of: Curiosity, FOMO, Disbelief, Defensiveness, Relief, Greed
+- Lines separated by `/` indicate carousel slide breaks
+- Each line is 7 words or fewer; maximum 3 lines
 
 ---
 
-## GitHub Actions Schedule
+## GitHub Actions Workflows
 
+### daily_curator.yml — Content scouting (3x/day)
 Runs automatically at:
 - 8:30 AM CT (14:30 UTC)
 - 3:30 PM CT (21:30 UTC)
 - 8:30 PM CT (02:30 UTC next day)
 
-Each run commits the picks file back to the repo.
+Each run commits the picks file back to the repo, which then triggers deploy-pages.yml.
+
+### deploy-pages.yml — Web feed deployment
+Triggers on every push to `main`. Parses all picks/*.md files into picks_data.json and deploys index.html + picks_data.json to GitHub Pages.
+
+**One-time setup:** In repo Settings → Pages, set source to "GitHub Actions".
 
 ---
 
 ## Required GitHub Secrets
 
-All 5 must be set in repo Settings → Secrets → Actions:
+All 6 must be set in repo Settings → Secrets → Actions:
 - ANTHROPIC_API_KEY
 - INOREADER_APP_ID
 - INOREADER_APP_KEY
 - INOREADER_TOKEN
 - INOREADER_REFRESH_TOKEN
+- APIFY_API_TOKEN
 
 ---
 
