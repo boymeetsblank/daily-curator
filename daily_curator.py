@@ -21,6 +21,7 @@ INOREADER_APP_KEY       = os.environ.get("INOREADER_APP_KEY")
 INOREADER_TOKEN         = os.environ.get("INOREADER_TOKEN")
 INOREADER_REFRESH_TOKEN = os.environ.get("INOREADER_REFRESH_TOKEN")
 INOREADER_TOKEN_URL     = "https://www.inoreader.com/oauth2/token"
+APIFY_API_TOKEN         = os.environ.get("APIFY_API_TOKEN")
 
 HOURS_BACK              = 48
 MAX_ARTICLES_TO_SEND    = 60
@@ -41,6 +42,8 @@ def check_setup():
         missing.append("INOREADER_APP_KEY")
     if not INOREADER_REFRESH_TOKEN:
         missing.append("INOREADER_REFRESH_TOKEN")
+    if not APIFY_API_TOKEN:
+        missing.append("APIFY_API_TOKEN")
     if missing:
         print("\n❌ Missing required credentials in your .env file:\n")
         for key in missing:
@@ -161,6 +164,117 @@ def strip_html(text: str) -> str:
     return clean.strip()
 
 
+def _run_apify_actor(actor_id: str, input_data: dict) -> list[dict]:
+    """
+    Start an Apify actor run, poll until it finishes (up to 60 seconds),
+    then return the dataset items.
+    Raises on HTTP errors, actor failure, or timeout.
+    """
+    # Step 1: start the run
+    run_resp = requests.post(
+        f"https://api.apify.com/v2/acts/{actor_id}/runs",
+        json=input_data,
+        params={"token": APIFY_API_TOKEN},
+        timeout=30,
+    )
+    run_resp.raise_for_status()
+    run_data = run_resp.json()["data"]
+    run_id = run_data["id"]
+    dataset_id = run_data["defaultDatasetId"]
+
+    # Step 2: poll until finished or 60-second timeout
+    deadline = time.time() + 60
+    while time.time() < deadline:
+        status_resp = requests.get(
+            f"https://api.apify.com/v2/acts/{actor_id}/runs/{run_id}",
+            params={"token": APIFY_API_TOKEN},
+            timeout=10,
+        )
+        status_resp.raise_for_status()
+        status = status_resp.json()["data"]["status"]
+        if status == "SUCCEEDED":
+            break
+        if status in ("FAILED", "ABORTED", "TIMED-OUT"):
+            raise RuntimeError(f"Apify actor run {status.lower()}")
+        time.sleep(3)
+    else:
+        raise TimeoutError("Apify actor run did not finish within 60 seconds")
+
+    # Step 3: fetch dataset items
+    items_resp = requests.get(
+        f"https://api.apify.com/v2/datasets/{dataset_id}/items",
+        params={"token": APIFY_API_TOKEN},
+        timeout=30,
+    )
+    items_resp.raise_for_status()
+    return items_resp.json()
+
+
+def fetch_twitter_trends() -> list[dict]:
+    """
+    Fetch top trending topics in the US from X (Twitter) via Apify.
+    Returns a list of trend items ready for Claude scoring, or [] if unavailable.
+    """
+    print(f"\n🐦 Fetching X (Twitter) trends via Apify...")
+    try:
+        items = _run_apify_actor(
+            "karamelo~twitter-trends-scraper",
+            {"country": "2", "live": True},  # "2" = United States
+        )
+        now_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        trends = []
+        for item in items[:20]:
+            name = (item.get("name") or item.get("trend") or
+                    item.get("title") or item.get("keyword") or "").strip()
+            if not name:
+                continue
+            trends.append({
+                "title":     name,
+                "link":      None,
+                "summary":   "",
+                "source":    "X (Twitter) Trending",
+                "published": now_str,
+            })
+        print(f"   ✅ Got {len(trends)} trending topics from X.")
+        return trends
+    except Exception as e:
+        print(f"   ⚠️  X trends unavailable (continuing without): {e}")
+        return []
+
+
+def fetch_google_trends() -> list[dict]:
+    """
+    Fetch top trending search terms in the US from Google Trends via Apify.
+    Returns a list of trend items ready for Claude scoring, or [] if unavailable.
+    """
+    print(f"\n📈 Fetching Google Trends via Apify...")
+    try:
+        items = _run_apify_actor(
+            "apify~google-trends-scraper",
+            {"searchTerms": [""], "geo": "US"},
+        )
+        now_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        trends = []
+        for item in items[:20]:
+            name = (item.get("title") or item.get("keyword") or
+                    item.get("query") or item.get("topic") or
+                    item.get("name") or "").strip()
+            if not name:
+                continue
+            trends.append({
+                "title":     name,
+                "link":      None,
+                "summary":   "",
+                "source":    "Google Trends",
+                "published": now_str,
+            })
+        print(f"   ✅ Got {len(trends)} trending topics from Google.")
+        return trends
+    except Exception as e:
+        print(f"   ⚠️  Google Trends unavailable (continuing without): {e}")
+        return []
+
+
 def detect_cross_source_trends(articles: list[dict]) -> list[dict]:
     """
     Identify articles covering the same story across 3+ different sources.
@@ -274,8 +388,8 @@ ARTICLE {i}:{trending_flag}
   Title:     {article['title']}
   Source:    {article['source']}
   Published: {article['published']}
-  Link:      {article['link']}
-  Summary:   {article['summary'] or '(no summary available)'}
+  Link:      {article['link'] or '(trending topic — no article link)'}
+  Summary:   {article['summary'] or '(no summary — evaluate based on the topic name alone)'}
 ---"""
 
     prompt = f"""You are a content strategist for culture-forward media accounts on Instagram, TikTok, and Substack.
@@ -292,6 +406,8 @@ Score each article from 1–10 overall. Be ruthlessly selective. A 7+ means this
 POLITICS RULE: Automatically score any article a 1 if it is primarily about elections, political parties, politicians, legislation, government policy, or partisan issues. This account does not cover politics.
 
 CELEBRITY GOSSIP RULE: Automatically score any article a 1 if it is purely about celebrity rumors, relationships, dating, breakups, paparazzi stories, or celebrity gossip. This account does not cover celebrity gossip.
+
+TREND ITEMS: Some items have Source "X (Twitter) Trending" or "Google Trends" — these are raw trending topics, not articles. Evaluate them on whether the topic itself is culturally interesting and carousel-worthy. Score them as you would any other item.
 
 CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 3+ sources, treat this as strong evidence of cultural relevance. Add 1–2 points to the score (if it's already strong across other criteria).
 
@@ -324,37 +440,45 @@ Here are the articles to evaluate:
 Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown code blocks."""
 
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-    try:
-        response = client.messages.create(
-            model="claude-opus-4-6",
-            max_tokens=4096,
-            messages=[{"role": "user", "content": prompt}]
-        )
-    except anthropic.AuthenticationError:
-        print("❌ Claude API key is invalid. Please check your ANTHROPIC_API_KEY.")
-        sys.exit(1)
-    except anthropic.RateLimitError:
-        print("❌ Claude rate limit hit. Please wait a minute and try again.")
-        sys.exit(1)
-    except Exception as e:
-        print(f"❌ Claude error: {e}")
-        sys.exit(1)
 
-    response_text = response.content[0].text.strip()
-    try:
-        result = json.loads(response_text)
-    except json.JSONDecodeError:
-        import re
-        json_match = re.search(r'\{[\s\S]*\}', response_text)
-        if json_match:
-            try:
-                result = json.loads(json_match.group())
-            except json.JSONDecodeError:
-                print("❌ Claude returned an unexpected format.")
-                sys.exit(1)
-        else:
-            print("❌ Could not parse Claude's response as JSON.")
+    def call_claude():
+        try:
+            return client.messages.create(
+                model="claude-opus-4-6",
+                max_tokens=4096,
+                messages=[{"role": "user", "content": prompt}]
+            )
+        except anthropic.AuthenticationError:
+            print("❌ Claude API key is invalid. Please check your ANTHROPIC_API_KEY.")
             sys.exit(1)
+        except anthropic.RateLimitError:
+            print("❌ Claude rate limit hit. Please wait a minute and try again.")
+            sys.exit(1)
+        except Exception as e:
+            print(f"❌ Claude error: {e}")
+            sys.exit(1)
+
+    def parse_response(response):
+        import re
+        response_text = response.content[0].text.strip()
+        try:
+            return json.loads(response_text)
+        except json.JSONDecodeError:
+            json_match = re.search(r'\{[\s\S]*\}', response_text)
+            if json_match:
+                try:
+                    return json.loads(json_match.group())
+                except json.JSONDecodeError:
+                    return None
+            return None
+
+    result = parse_response(call_claude())
+    if result is None:
+        print("   ⚠️  Claude returned an unexpected format — retrying once...")
+        result = parse_response(call_claude())
+    if result is None:
+        print("❌ Claude returned an unexpected format on both attempts.")
+        sys.exit(1)
 
     evaluations = result.get("evaluations", [])
     eval_by_number = {e["article_number"]: e for e in evaluations}
@@ -533,11 +657,19 @@ This is normal — not every day has carousel-worthy content. Check back tomorro
 """
     else:
         for i, pick in enumerate(picks, start=1):
+            if pick['link']:
+                link_line = f"[Read the full article →]({pick['link']})"
+            elif pick['source'] == "X (Twitter) Trending":
+                link_line = "*Trending on X right now*"
+            elif pick['source'] == "Google Trends":
+                link_line = "*Trending on Google right now*"
+            else:
+                link_line = ""
             content += f"""## Pick #{i} — Score: {pick['score']}/10
 
 **{pick['title']}**
 *{pick['source']}*
-[Read the full article →]({pick['link']})
+{link_line}
 
 **Why it scored high:**
 {pick.get('why', 'N/A')}
@@ -569,7 +701,10 @@ def main():
 
     articles = apply_source_cap(articles)
     articles = detect_cross_source_trends(articles)
-    evaluated_articles = evaluate_articles_with_claude(articles)
+    twitter_trends = fetch_twitter_trends()
+    google_trends = fetch_google_trends()
+    all_items = articles + twitter_trends + google_trends
+    evaluated_articles = evaluate_articles_with_claude(all_items)
     top_picks = select_top_picks(evaluated_articles)
 
     print(f"\n🔎 Deduplicating picks...")
@@ -577,7 +712,7 @@ def main():
     top_picks = filter_already_picked_today(top_picks)
 
     print(f"\n📝 Writing output file...")
-    output_file = write_markdown_output(top_picks, len(articles))
+    output_file = write_markdown_output(top_picks, len(all_items))
 
     print(f"\n{'=' * 55}")
     if top_picks:
