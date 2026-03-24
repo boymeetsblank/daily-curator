@@ -4,26 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
-## [2026-03-22] Claude evaluation retry on unexpected format; verify Apify URL
-Added retry logic to `evaluate_articles_with_claude()`: if Claude returns a response that can't be parsed as JSON, the call is retried once before the script exits. Verified all Apify base URLs — "appi.apify.com" typo was not present in the committed code.
+## [2026-03-23] Improved Carousel Hook Quality in Claude Scoring Prompt
 
-## [2026-03-22] Fix Google Trends actor input; verify Apify base URL
-Google Trends: changed input to `{"searchTerms": [""], "geo": "US"}` to fetch general US trending topics. Verified all Apify base URLs are correct (`api.apify.com`) — no typo was present in the committed code.
+Updated the `ANGLE` instruction in the Claude evaluation prompt to produce structured, scroll-stopping hooks instead of generic angles.
 
-## [2026-03-23] Fix Twitter trends actor input — country must be numeric ID
-The `karamelo/twitter-trends-scraper` actor's `country` field takes a numeric string ID, not a country name. Changed input from `{"country": "United States"}` to `{"country": "2", "live": true}` (`"2"` is the actor's internal ID for United States). This was the cause of the 400 Bad Request errors.
-
-## [2026-03-22] Fix Apify actor inputs — Twitter 400 error and Google 0 results
-Twitter trends: removed `timeOptions` parameter (was causing 400); input is now just `{"country": "United States"}`. Google Trends: replaced `searchTerms`/`timeRange` input with `{"geo": "US", "outputType": "trending-now"}` to fetch currently trending searches rather than analyzing a specific term.
-
-## [2026-03-22] Fix Apify API calls — two-step run/poll/fetch pattern
-Replaced the failing `run-sync-get-dataset-items` calls with the correct two-step Apify pattern: POST to `/runs` to start the actor, poll until `SUCCEEDED` (up to 60 seconds), then GET `/datasets/{id}/items`. Extracted shared `_run_apify_actor()` helper used by both trend functions. Updated inputs: Twitter uses `{"country": "United States", "timeOptions": ["0"]}`, Google uses `{"searchTerms": ["trending"], "geo": "US", "timeRange": "now 1-d"}`.
-
-## [2026-03-22] Apify Integrations — Twitter Trends and Google Trends
-Added two new content streams via Apify that are scored by Claude alongside Inoreader articles:
-- **`fetch_twitter_trends()`** — calls Apify actor `karamelo/twitter-trends-scraper` to fetch top US trending topics from X (Twitter). Each trend appears as a standalone item with source "X (Twitter) Trending".
-- **`fetch_google_trends()`** — calls Apify actor `apify/google-trends-scraper` to fetch top US trending search terms. Each trend appears as a standalone item with source "Google Trends".
-Both functions fail gracefully — if Apify is unavailable the run continues without them. Added `APIFY_API_TOKEN` to the required credentials. In the picks file, trend items display "Trending on X right now" or "Trending on Google right now" instead of an article link.
+- The ANGLE field now requires Claude to identify the psychological trigger driving the hook (Curiosity, FOMO, Disbelief, Defensiveness, Relief, or Greed)
+- Hooks must be written with intentional line breaks using "/" to indicate slide breaks
+- Each line is capped at 7 words; maximum 3 lines total
+- Output format: `"[TRIGGER: Disbelief] The last Laker to score 60 / was Kobe. / In his final game."`
 
 ## [2026-03-22] Removed Google Trends Integration
 Removed `fetch_google_trends()`, the `pytrends` import, and all `trending_topics` references from `evaluate_articles_with_claude()`. Removed `pytrends` from `requirements.txt`. The script runs exactly as before the feature was added.
