@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-24] Fixed right sidebar on wide screens
+Added a sticky 240px sidebar to `index.html` that appears on screens ≥ 1100px. The page layout becomes a flex row (944px max-width) so the main feed and sidebar sit side by side. The header and filter bar inner containers expand to match. Sidebar sections populated from picks data via JS:
+- **Today's stats** — total picks, top score, and run count for the day
+- **Quick jump** — Morning / Afternoon / Evening scroll buttons (grayed out if that run hasn't happened yet)
+- **Trending now** — X and Google trending topics from today's picks, grouped by platform
+- **Top pick of the week** — highest-scored pick from the last 7 days with headline, score, and date
+- **Source breakdown** — per-source pick counts for today, sorted by volume
+
 ## [2026-03-24] Dark mode + countdown timer
 Reverted the web feed to a dark color scheme (#0a0a0a background, light text) while keeping the new clean layout. Also added a next-run countdown timer in the header showing hours and minutes until the next scheduled curation run (8:30 AM, 3:30 PM, 8:30 PM CT). The countdown updates every minute and is hidden on small screens.
 

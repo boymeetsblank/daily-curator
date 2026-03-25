@@ -133,8 +133,8 @@
       flex-shrink: 0;
     }
 
-    /* ── Main content ── */
-    .content {
+    /* ── Page wrapper: narrow default, flex on wide ── */
+    .page-wrapper {
       max-width: 680px;
       margin: 0 auto;
       padding: 20px 20px 80px;
@@ -321,6 +321,199 @@
       white-space: nowrap;
     }
 
+    /* ── Sidebar (hidden on narrow screens) ── */
+    .sidebar {
+      display: none;
+      width: 240px;
+      flex-shrink: 0;
+    }
+
+    .sb-section {
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      border-bottom: 0.5px solid #161616;
+    }
+
+    .sb-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .sb-title {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #333;
+      margin-bottom: 11px;
+    }
+
+    /* Stats row */
+    .sb-stats {
+      display: flex;
+      gap: 16px;
+    }
+
+    .sb-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .sb-stat-value {
+      font-size: 22px;
+      font-weight: 600;
+      color: #e8e8e8;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sb-stat-label {
+      font-size: 10px;
+      color: #333;
+    }
+
+    /* Quick jump buttons */
+    .sb-jump-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 6px 0;
+      font-size: 12px;
+      color: #555;
+      background: transparent;
+      border: none;
+      border-bottom: 0.5px solid #161616;
+      cursor: pointer;
+      font-family: inherit;
+      text-align: left;
+      transition: color 0.1s;
+    }
+
+    .sb-jump-btn:last-child { border-bottom: none; }
+    .sb-jump-btn:hover { color: #bbb; }
+    .sb-jump-btn.unavailable { opacity: 0.22; cursor: default; pointer-events: none; }
+
+    .sb-jump-arrow { color: #2e2e2e; font-size: 11px; }
+
+    /* Trending items */
+    .sb-trend-item {
+      padding: 6px 0;
+      border-bottom: 0.5px solid #161616;
+    }
+
+    .sb-trend-item:last-child { border-bottom: none; }
+
+    .sb-trend-platform {
+      font-size: 10px;
+      color: #2e2e2e;
+      margin-bottom: 2px;
+    }
+
+    .sb-trend-topic {
+      font-size: 12px;
+      color: #555;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Top pick of the week */
+    .sb-top-pick {
+      background: #111;
+      border: 0.5px solid #1e1e1e;
+      border-radius: 8px;
+      padding: 11px 13px;
+    }
+
+    .sb-top-pick-score {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 1px 7px;
+      border-radius: 100px;
+      background: #e8e8e8;
+      color: #111;
+      line-height: 1.6;
+      margin-bottom: 7px;
+    }
+
+    .sb-top-pick-title {
+      font-size: 12px;
+      color: #bbb;
+      line-height: 1.45;
+    }
+
+    .sb-top-pick-meta {
+      font-size: 10px;
+      color: #2e2e2e;
+      margin-top: 7px;
+    }
+
+    /* Source breakdown */
+    .sb-source-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 5px 0;
+      border-bottom: 0.5px solid #161616;
+    }
+
+    .sb-source-row:last-child { border-bottom: none; }
+
+    .sb-source-name {
+      font-size: 12px;
+      color: #555;
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sb-source-count {
+      font-size: 11px;
+      color: #2e2e2e;
+      flex-shrink: 0;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sb-empty {
+      font-size: 12px;
+      color: #2e2e2e;
+      font-style: italic;
+    }
+
+    /* ── Wide layout: sidebar visible ── */
+    @media (min-width: 1100px) {
+      .header-inner,
+      .filter-bar-inner {
+        max-width: 944px;
+      }
+
+      .page-wrapper {
+        max-width: 944px;
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+      }
+
+      .content {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .sidebar {
+        display: block;
+        width: 240px;
+        position: sticky;
+        /* top set by JS */
+      }
+    }
+
     /* ── Filter hidden ── */
     .filter-hidden { display: none !important; }
 
@@ -337,7 +530,7 @@
     @media (max-width: 520px) {
       header { padding: 10px 16px; }
       .filter-bar { padding: 7px 16px; }
-      .content { padding: 16px 16px 80px; }
+      .page-wrapper { padding: 16px 16px 80px; }
       .card-title { font-size: 15px; }
       .filter-pills .pill-btn { padding: 3px 8px; font-size: 11px; }
       .next-run { display: none; }
@@ -372,15 +565,17 @@
   </div>
 </div>
 
-<div class="content">
-  <div id="feed-container">
-    <div class="state-msg">Loading picks…</div>
+<div class="page-wrapper">
+  <div class="content">
+    <div id="feed-container">
+      <div class="state-msg">Loading picks…</div>
+    </div>
   </div>
+  <aside class="sidebar" id="sidebar"></aside>
 </div>
 
 <script>
   let filterLabel = null;
-  let allRunsData  = [];
 
   // ── HTML escaping ──────────────────────────────────────────
   function esc(str) {
@@ -416,6 +611,17 @@
     }
     if (src.includes('google')) return 'Trending on Google right now';
     return 'Trending right now';
+  }
+
+  function isTrendPick(pick) {
+    return !pick.link;
+  }
+
+  function trendPlatform(pick) {
+    const src = (pick.source || '').toLowerCase();
+    if (src.includes('twitter') || src.includes('x (twitter)') || src === 'x (twitter) trending') return 'X';
+    if (src.includes('google')) return 'Google';
+    return null;
   }
 
   // ── Feedback vote toggle ───────────────────────────────────
@@ -464,7 +670,7 @@
     </div>`;
   }
 
-  // ── Render a run group (Morning / Afternoon / Evening) ────
+  // ── Render a run group ─────────────────────────────────────
   function renderRunGroup(run) {
     let html = `<div class="run-group" data-label="${esc(run.label)}" data-date="${esc(run.date)}">`;
     for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
@@ -472,17 +678,147 @@
     return html;
   }
 
-  // ── Update the pick count in the filter bar ───────────────
+  // ── Update pick count ─────────────────────────────────────
   function updateCount() {
     const visible = document.querySelectorAll('.run-group:not(.filter-hidden) .pick-card').length;
     document.getElementById('filter-count').textContent =
       visible ? `${visible} pick${visible !== 1 ? 's' : ''}` : '';
   }
 
+  // ── Sidebar rendering ─────────────────────────────────────
+  function renderSidebar(latestRuns, allRuns) {
+    const todayPicks = latestRuns.flatMap(r => r.picks);
+
+    // ── 1. Today's stats ──
+    const picksCount = todayPicks.length;
+    const topScore   = todayPicks.length ? Math.max(...todayPicks.map(p => p.score)) : '—';
+    const runsCount  = latestRuns.length;
+
+    const statsHtml = `
+      <div class="sb-section">
+        <div class="sb-title">Today's stats</div>
+        <div class="sb-stats">
+          <div class="sb-stat">
+            <span class="sb-stat-value">${picksCount}</span>
+            <span class="sb-stat-label">picks</span>
+          </div>
+          <div class="sb-stat">
+            <span class="sb-stat-value">${topScore}</span>
+            <span class="sb-stat-label">top score</span>
+          </div>
+          <div class="sb-stat">
+            <span class="sb-stat-value">${runsCount}</span>
+            <span class="sb-stat-label">runs</span>
+          </div>
+        </div>
+      </div>`;
+
+    // ── 2. Quick jump ──
+    const labels = ['Morning', 'Afternoon', 'Evening'];
+    const existingLabels = new Set(latestRuns.map(r => r.label));
+    const jumpBtns = labels.map(label => {
+      const available = existingLabels.has(label);
+      return `<button class="sb-jump-btn${available ? '' : ' unavailable'}"
+        onclick="jumpToLabel('${label}')">${label}<span class="sb-jump-arrow">↓</span></button>`;
+    }).join('');
+
+    const jumpHtml = `
+      <div class="sb-section">
+        <div class="sb-title">Quick jump</div>
+        ${jumpBtns}
+      </div>`;
+
+    // ── 3. Trending now ──
+    const trendingPicks = todayPicks.filter(p => isTrendPick(p));
+    let trendingHtml = '<div class="sb-section"><div class="sb-title">Trending now</div>';
+    if (trendingPicks.length === 0) {
+      trendingHtml += '<div class="sb-empty">No trend items today</div>';
+    } else {
+      // Group by platform, show up to 3 per platform
+      const byPlatform = {};
+      for (const p of trendingPicks) {
+        const platform = trendPlatform(p) || 'Other';
+        if (!byPlatform[platform]) byPlatform[platform] = [];
+        byPlatform[platform].push(p);
+      }
+      for (const [platform, picks] of Object.entries(byPlatform)) {
+        for (const p of picks.slice(0, 3)) {
+          trendingHtml += `<div class="sb-trend-item">
+            <div class="sb-trend-platform">${esc(platform)}</div>
+            <div class="sb-trend-topic">${esc(p.title)}</div>
+          </div>`;
+        }
+      }
+    }
+    trendingHtml += '</div>';
+
+    // ── 4. Top pick of the week ──
+    const now = new Date();
+    const cutoff = new Date(now);
+    cutoff.setDate(cutoff.getDate() - 7);
+
+    let topWeekPick = null;
+    let topWeekMeta = '';
+    for (const run of allRuns) {
+      const runDate = new Date(run.date + 'T00:00:00');
+      if (runDate < cutoff) continue;
+      for (const pick of run.picks) {
+        if (!topWeekPick || pick.score > topWeekPick.score) {
+          topWeekPick = pick;
+          topWeekMeta = run.display_date || run.date;
+        }
+      }
+    }
+
+    let topPickHtml = '<div class="sb-section"><div class="sb-title">Top pick of the week</div>';
+    if (!topWeekPick) {
+      topPickHtml += '<div class="sb-empty">No picks yet</div>';
+    } else {
+      const linkAttr = topWeekPick.link
+        ? ` href="${esc(topWeekPick.link)}" target="_blank" rel="noopener noreferrer"`
+        : '';
+      const tag = topWeekPick.link ? 'a' : 'div';
+      topPickHtml += `<${tag} class="sb-top-pick" style="text-decoration:none"${linkAttr}>
+        <div class="sb-top-pick-score">${topWeekPick.score}</div>
+        <div class="sb-top-pick-title">${esc(topWeekPick.title)}</div>
+        <div class="sb-top-pick-meta">${esc(topWeekMeta)}</div>
+      </${tag}>`;
+    }
+    topPickHtml += '</div>';
+
+    // ── 5. Source breakdown ──
+    const sourceCounts = {};
+    for (const pick of todayPicks) {
+      if (isTrendPick(pick)) continue; // exclude trend-only items
+      sourceCounts[pick.source] = (sourceCounts[pick.source] || 0) + 1;
+    }
+    const sourcesArr = Object.entries(sourceCounts).sort((a, b) => b[1] - a[1]);
+
+    let sourcesHtml = '<div class="sb-section"><div class="sb-title">Source breakdown</div>';
+    if (sourcesArr.length === 0) {
+      sourcesHtml += '<div class="sb-empty">No sources yet</div>';
+    } else {
+      for (const [source, count] of sourcesArr) {
+        sourcesHtml += `<div class="sb-source-row">
+          <span class="sb-source-name">${esc(source)}</span>
+          <span class="sb-source-count">${count}</span>
+        </div>`;
+      }
+    }
+    sourcesHtml += '</div>';
+
+    document.getElementById('sidebar').innerHTML =
+      statsHtml + jumpHtml + trendingHtml + topPickHtml + sourcesHtml;
+  }
+
+  // ── Jump to run label ──────────────────────────────────────
+  function jumpToLabel(label) {
+    const group = document.querySelector(`.run-group[data-label="${label}"]`);
+    if (group) group.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   // ── Main render ───────────────────────────────────────────
   function render(runs) {
-    allRunsData = runs;
-
     if (!runs || runs.length === 0) {
       document.getElementById('feed-container').innerHTML = '<div class="state-msg">No picks yet.</div>';
       return;
@@ -528,6 +864,7 @@
 
     document.getElementById('feed-container').innerHTML = html;
     updateCount();
+    renderSidebar(latestRuns, runs);
   }
 
   // ── Apply time-of-day filter ──────────────────────────────
@@ -568,14 +905,18 @@
     });
   }
 
-  // ── Position filter bar below sticky header ───────────────
-  function positionFilterBar() {
-    const h = document.querySelector('header').offsetHeight;
-    document.getElementById('filter-bar').style.top = h + 'px';
+  // ── Position sticky elements ──────────────────────────────
+  function positionSticky() {
+    const headerH = document.querySelector('header').offsetHeight;
+    const filterBar = document.getElementById('filter-bar');
+    filterBar.style.top = headerH + 'px';
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar) {
+      sidebar.style.top = (headerH + filterBar.offsetHeight + 16) + 'px';
+    }
   }
 
   // ── Next-run countdown ────────────────────────────────────
-  // Scheduled runs: 8:30 AM, 3:30 PM, 8:30 PM CT (CST = UTC-6)
   const RUN_TIMES_UTC = [[14, 30], [21, 30], [2, 30]];
 
   function getNextRunMs() {
@@ -613,6 +954,7 @@
       const data = await res.json();
       render(data.runs);
       wireButtons();
+      positionSticky(); // re-run after render in case heights changed
     } catch (e) {
       document.getElementById('feed-container').innerHTML =
         `<div class="state-msg">Could not load picks.<br>
@@ -620,8 +962,8 @@
     }
   }
 
-  positionFilterBar();
-  window.addEventListener('resize', positionFilterBar);
+  positionSticky();
+  window.addEventListener('resize', positionSticky);
   loadFeed();
   tickCountdown();
   setInterval(tickCountdown, 60000);
