@@ -4,6 +4,9 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-24] Update header tagline
+Changed the web feed header tagline from "Daily culture picks" to "intentionally finite, culturally relevant".
+
 ## [2026-03-23] Fix X (Twitter) trends — country must be numeric ID
 The `karamelo/twitter-trends-scraper` actor's `country` field takes a numeric string ID, not a name. Changed input to `{"country": "2", "live": true}` (`"2"` = United States). This resolved the 400 Bad Request errors.
 
