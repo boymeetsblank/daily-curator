@@ -4,8 +4,8 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
-## [2026-03-24] Update header tagline
-Changed the web feed header tagline from "Daily culture picks" to "intentionally finite, culturally relevant".
+## [2026-03-24] Next-run countdown timer in header
+Added a live countdown to the header showing time until the next scheduled curation run. Counts down to the nearest of the three daily UTC run times (14:30, 21:30, 02:30). Displays as `Xh XXm` when hours remain, `Xm XXs` when under an hour. The dot pulses green when under 5 minutes. On small screens the "Next run" label is hidden to save space, leaving just the dot and time.
 
 ## [2026-03-23] Fix X (Twitter) trends — country must be numeric ID
 The `karamelo/twitter-trends-scraper` actor's `country` field takes a numeric string ID, not a name. Changed input to `{"country": "2", "live": true}` (`"2"` = United States). This resolved the 400 Bad Request errors.

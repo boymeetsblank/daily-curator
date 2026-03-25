@@ -51,6 +51,48 @@
       font-weight: 400;
     }
 
+    .next-run {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: #333;
+      flex-shrink: 0;
+    }
+
+    .next-run-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #2a2a2a;
+      flex-shrink: 0;
+      transition: background 0.4s;
+    }
+
+    .next-run-dot.pulse {
+      background: #10b981;
+      animation: dot-pulse 1.2s ease-in-out infinite;
+    }
+
+    @keyframes dot-pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .next-run-label { color: #333; }
+
+    .next-run-time {
+      font-weight: 600;
+      color: #555;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 520px) {
+      .next-run-label { display: none; }
+    }
+
     /* ── Page layout (sidebar + feed) ── */
     .page-layout {
       display: flex;
@@ -434,7 +476,12 @@
 <header>
   <div class="header-inner">
     <div class="brand">@boymeetsblank_</div>
-    <div class="tagline">intentionally finite, culturally relevant</div>
+    <div class="tagline">Daily culture picks</div>
+    <div class="next-run" id="next-run-widget">
+      <span class="next-run-dot" id="next-run-dot"></span>
+      <span class="next-run-label">Next run</span>
+      <span class="next-run-time" id="next-run-time">–</span>
+    </div>
   </div>
 </header>
 
@@ -721,6 +768,46 @@
   }
 
   loadFeed();
+
+  // ── Next-run countdown ────────────────────────────────────
+  // Scheduled UTC run times (hour, minute)
+  const RUN_TIMES_UTC = [[14, 30], [21, 30], [2, 30]];
+
+  function getNextRunMs() {
+    const now = new Date();
+    const candidates = RUN_TIMES_UTC.map(([h, m]) => {
+      const t = new Date(Date.UTC(
+        now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m, 0, 0
+      ));
+      if (t <= now) t.setUTCDate(t.getUTCDate() + 1);
+      return t;
+    });
+    return Math.min(...candidates.map(t => t.getTime())) - now.getTime();
+  }
+
+  function formatCountdown(ms) {
+    if (ms <= 0) return 'running now';
+    const totalSec = Math.floor(ms / 1000);
+    const h = Math.floor(totalSec / 3600);
+    const m = Math.floor((totalSec % 3600) / 60);
+    const s = totalSec % 60;
+    if (h > 0) return `${h}h ${String(m).padStart(2,'0')}m`;
+    if (m > 0) return `${m}m ${String(s).padStart(2,'0')}s`;
+    return `${s}s`;
+  }
+
+  function tickCountdown() {
+    const ms = getNextRunMs();
+    const el = document.getElementById('next-run-time');
+    const dot = document.getElementById('next-run-dot');
+    if (!el) return;
+    el.textContent = formatCountdown(ms);
+    // Pulse the dot green when under 5 minutes
+    dot.classList.toggle('pulse', ms < 5 * 60 * 1000);
+  }
+
+  tickCountdown();
+  setInterval(tickCountdown, 1000);
 </script>
 
 </body>
