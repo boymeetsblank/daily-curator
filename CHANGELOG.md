@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-24] Fix countdown timer visibility on mobile
+Moved the next-run countdown from the header (where it was hidden on mobile via `display: none` to prevent overflow) into the filter bar right side. It now sits in a `.filter-right` flex group alongside the pick count, visible at all screen sizes. On mobile (≤520px) the pick count is hidden to save space, keeping the countdown readable. The header-actions now contains only the Today/Archive pill buttons.
+
+## [2026-03-24] Fix sidebar "Top pick of the week" rendering
+Fixed two visual bugs in the sidebar top pick card: (1) the `<a>` wrapper tag defaulted to `display: inline`, causing a stray left-border artifact below the date — fixed by adding `display: block` to `.sb-top-pick`; (2) the score badge was a block-level `div` — replaced with an inline `<span class="score-badge">` matching the card badges exactly. Also added `overflow-wrap: break-word` to the title and removed the redundant `style="text-decoration:none"` inline attribute.
+
 ## [2026-03-24] Fixed right sidebar on wide screens
 Added a sticky 240px sidebar to `index.html` that appears on screens ≥ 1100px. The page layout becomes a flex row (944px max-width) so the main feed and sidebar sit side by side. The header and filter bar inner containers expand to match. Sidebar sections populated from picks data via JS:
 - **Today's stats** — total picks, top score, and run count for the day

@@ -60,11 +60,20 @@
       flex-shrink: 0;
     }
 
+    .filter-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
     .next-run {
       font-size: 11px;
-      color: #383838;
+      color: #444;
       font-variant-numeric: tabular-nums;
       letter-spacing: 0.01em;
+      white-space: nowrap;
     }
 
     /* ── Pill buttons (shared) ── */
@@ -127,7 +136,6 @@
     }
 
     .filter-count {
-      margin-left: auto;
       font-size: 12px;
       color: #333;
       flex-shrink: 0;
@@ -423,21 +431,18 @@
 
     /* Top pick of the week */
     .sb-top-pick {
+      display: block;
       background: #111;
       border: 0.5px solid #1e1e1e;
       border-radius: 8px;
       padding: 11px 13px;
+      text-decoration: none;
     }
 
-    .sb-top-pick-score {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 600;
-      padding: 1px 7px;
-      border-radius: 100px;
-      background: #e8e8e8;
-      color: #111;
-      line-height: 1.6;
+    .sb-top-pick-header {
+      display: flex;
+      align-items: center;
+      gap: 7px;
       margin-bottom: 7px;
     }
 
@@ -445,12 +450,13 @@
       font-size: 12px;
       color: #bbb;
       line-height: 1.45;
+      overflow-wrap: break-word;
     }
 
     .sb-top-pick-meta {
       font-size: 10px;
       color: #2e2e2e;
-      margin-top: 7px;
+      margin-top: 6px;
     }
 
     /* Source breakdown */
@@ -533,7 +539,7 @@
       .page-wrapper { padding: 16px 16px 80px; }
       .card-title { font-size: 15px; }
       .filter-pills .pill-btn { padding: 3px 8px; font-size: 11px; }
-      .next-run { display: none; }
+      .filter-count { display: none; }
     }
   </style>
 </head>
@@ -546,7 +552,6 @@
       <div class="tagline">intentionally finite, culturally relevant</div>
     </div>
     <div class="header-actions">
-      <span class="next-run" id="next-run">—</span>
       <button class="pill-btn active" id="btn-today">Today</button>
       <button class="pill-btn" id="btn-archive">Archive</button>
     </div>
@@ -561,7 +566,10 @@
       <button class="pill-btn filter-btn" data-value="Afternoon">Afternoon</button>
       <button class="pill-btn filter-btn" data-value="Evening">Evening</button>
     </div>
-    <span class="filter-count" id="filter-count"></span>
+    <div class="filter-right">
+      <span class="filter-count" id="filter-count"></span>
+      <span class="next-run" id="next-run">—</span>
+    </div>
   </div>
 </div>
 
@@ -778,8 +786,10 @@
         ? ` href="${esc(topWeekPick.link)}" target="_blank" rel="noopener noreferrer"`
         : '';
       const tag = topWeekPick.link ? 'a' : 'div';
-      topPickHtml += `<${tag} class="sb-top-pick" style="text-decoration:none"${linkAttr}>
-        <div class="sb-top-pick-score">${topWeekPick.score}</div>
+      topPickHtml += `<${tag} class="sb-top-pick"${linkAttr}>
+        <div class="sb-top-pick-header">
+          <span class="score-badge">${topWeekPick.score}</span>
+        </div>
         <div class="sb-top-pick-title">${esc(topWeekPick.title)}</div>
         <div class="sb-top-pick-meta">${esc(topWeekMeta)}</div>
       </${tag}>`;
