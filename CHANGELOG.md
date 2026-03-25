@@ -4,6 +4,9 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-24] Dark mode + countdown timer
+Reverted the web feed to a dark color scheme (#0a0a0a background, light text) while keeping the new clean layout. Also added a next-run countdown timer in the header showing hours and minutes until the next scheduled curation run (8:30 AM, 3:30 PM, 8:30 PM CT). The countdown updates every minute and is hidden on small screens.
+
 ## [2026-03-24] White canvas redesign of index.html
 Complete visual redesign of the web feed. Key changes:
 - White background, light mode only (no dark mode)

@@ -9,8 +9,8 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      background: #fff;
-      color: #111;
+      background: #0a0a0a;
+      color: #e8e8e8;
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
     }
@@ -20,8 +20,8 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: #fff;
-      border-bottom: 0.5px solid #e0e0e0;
+      background: #0a0a0a;
+      border-bottom: 0.5px solid #1a1a1a;
       padding: 12px 20px;
     }
 
@@ -31,6 +31,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 12px;
     }
 
     .header-brand-group {
@@ -42,19 +43,28 @@
     .brand {
       font-size: 15px;
       font-weight: 500;
-      color: #111;
+      color: #fff;
       letter-spacing: -0.2px;
     }
 
     .tagline {
       font-size: 11px;
-      color: #aaa;
+      color: #3a3a3a;
       font-weight: 400;
     }
 
     .header-actions {
       display: flex;
-      gap: 6px;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .next-run {
+      font-size: 11px;
+      color: #383838;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.01em;
     }
 
     /* ── Pill buttons (shared) ── */
@@ -64,29 +74,29 @@
       font-weight: 500;
       padding: 5px 12px;
       border-radius: 100px;
-      border: 0.5px solid #ddd;
+      border: 0.5px solid #272727;
       background: transparent;
-      color: #777;
+      color: #555;
       cursor: pointer;
       transition: background 0.1s, color 0.1s, border-color 0.1s;
       line-height: 1.4;
       white-space: nowrap;
     }
 
-    .pill-btn:hover { background: #f5f5f5; color: #111; }
+    .pill-btn:hover { background: #141414; color: #bbb; border-color: #333; }
 
     .pill-btn.active {
-      background: #111;
-      color: #fff;
-      border-color: #111;
+      background: #e8e8e8;
+      color: #111;
+      border-color: #e8e8e8;
     }
 
     /* ── Filter bar ── */
     .filter-bar {
       position: sticky;
       z-index: 90;
-      background: #fff;
-      border-bottom: 0.5px solid #e0e0e0;
+      background: #0a0a0a;
+      border-bottom: 0.5px solid #1a1a1a;
       padding: 8px 20px;
     }
 
@@ -101,7 +111,7 @@
     .filter-date {
       font-size: 13px;
       font-weight: 500;
-      color: #111;
+      color: #e8e8e8;
       flex-shrink: 0;
     }
 
@@ -119,7 +129,7 @@
     .filter-count {
       margin-left: auto;
       font-size: 12px;
-      color: #bbb;
+      color: #333;
       flex-shrink: 0;
     }
 
@@ -132,8 +142,8 @@
 
     /* ── Pick card ── */
     .pick-card {
-      background: #fff;
-      border: 0.5px solid #e0e0e0;
+      background: #111;
+      border: 0.5px solid #1e1e1e;
       border-radius: 10px;
       padding: 16px 18px;
       margin-bottom: 8px;
@@ -152,15 +162,15 @@
       font-weight: 600;
       padding: 2px 8px;
       border-radius: 100px;
-      background: #111;
-      color: #fff;
+      background: #e8e8e8;
+      color: #111;
       line-height: 1.5;
       flex-shrink: 0;
     }
 
     .card-source {
       font-size: 12px;
-      color: #aaa;
+      color: #444;
       font-weight: 400;
     }
 
@@ -169,8 +179,8 @@
       font-weight: 500;
       padding: 1px 7px;
       border-radius: 100px;
-      border: 0.5px solid #ddd;
-      color: #999;
+      border: 0.5px solid #252525;
+      color: #444;
       line-height: 1.6;
       flex-shrink: 0;
     }
@@ -178,14 +188,14 @@
     .card-timestamp {
       margin-left: auto;
       font-size: 11px;
-      color: #ccc;
+      color: #2e2e2e;
       flex-shrink: 0;
     }
 
     .card-title {
       font-size: 16px;
       font-weight: 500;
-      color: #111;
+      color: #f0f0f0;
       line-height: 1.4;
       letter-spacing: -0.2px;
       margin-bottom: 8px;
@@ -193,14 +203,14 @@
 
     .card-why {
       font-size: 13px;
-      color: #999;
+      color: #555;
       line-height: 1.6;
       margin-bottom: 12px;
     }
 
     /* ── Angle / carousel hook box ── */
     .angle-box {
-      border-left: 2px solid #111;
+      border-left: 2px solid #252525;
       padding: 8px 12px;
       margin-bottom: 14px;
     }
@@ -210,13 +220,13 @@
       font-weight: 500;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #bbb;
+      color: #383838;
       margin-bottom: 5px;
     }
 
     .angle-text {
       font-size: 13px;
-      color: #111;
+      color: #bbb;
       line-height: 1.65;
     }
 
@@ -230,7 +240,7 @@
 
     .read-link {
       font-size: 13px;
-      color: #111;
+      color: #e8e8e8;
       text-decoration: none;
     }
 
@@ -238,7 +248,7 @@
 
     .trend-source-label {
       font-size: 13px;
-      color: #bbb;
+      color: #3a3a3a;
       font-style: italic;
     }
 
@@ -252,21 +262,21 @@
       font-family: inherit;
       font-size: 13px;
       background: transparent;
-      border: 0.5px solid #e0e0e0;
+      border: 0.5px solid #222;
       border-radius: 6px;
       width: 28px;
       height: 26px;
       cursor: pointer;
-      color: #ccc;
+      color: #333;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: background 0.1s, color 0.1s;
     }
 
-    .feedback-btn:hover { background: #f5f5f5; color: #111; }
-    .feedback-btn.voted-up   { background: #f0fdf4; color: #16a34a; border-color: #bbf7d0; }
-    .feedback-btn.voted-down { background: #fef2f2; color: #dc2626; border-color: #fecaca; }
+    .feedback-btn:hover { background: #181818; color: #aaa; }
+    .feedback-btn.voted-up   { background: #0d2118; color: #16a34a; border-color: #1a4a2e; }
+    .feedback-btn.voted-down { background: #200d0d; color: #dc2626; border-color: #4a1a1a; }
 
     /* ── Archive section ── */
     .archive-section { margin-top: 40px; }
@@ -276,27 +286,27 @@
       font-weight: 500;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #bbb;
+      color: #333;
       margin-bottom: 12px;
     }
 
-    .archive-list { border-top: 0.5px solid #e8e8e8; }
+    .archive-list { border-top: 0.5px solid #1a1a1a; }
 
     .archive-row {
       display: flex;
       align-items: center;
       gap: 10px;
       padding: 10px 0;
-      border-bottom: 0.5px solid #e8e8e8;
+      border-bottom: 0.5px solid #1a1a1a;
       text-decoration: none;
       color: inherit;
     }
 
-    a.archive-row:hover .archive-row-title { color: #111; }
+    a.archive-row:hover .archive-row-title { color: #aaa; }
 
     .archive-row-title {
       font-size: 13px;
-      color: #aaa;
+      color: #444;
       flex: 1;
       white-space: nowrap;
       overflow: hidden;
@@ -306,7 +316,7 @@
 
     .archive-row-meta {
       font-size: 12px;
-      color: #ccc;
+      color: #2e2e2e;
       flex-shrink: 0;
       white-space: nowrap;
     }
@@ -317,7 +327,7 @@
     /* ── States ── */
     .state-msg {
       text-align: center;
-      color: #bbb;
+      color: #333;
       padding: 80px 0;
       font-size: 14px;
       line-height: 1.8;
@@ -330,6 +340,7 @@
       .content { padding: 16px 16px 80px; }
       .card-title { font-size: 15px; }
       .filter-pills .pill-btn { padding: 3px 8px; font-size: 11px; }
+      .next-run { display: none; }
     }
   </style>
 </head>
@@ -342,6 +353,7 @@
       <div class="tagline">intentionally finite, culturally relevant</div>
     </div>
     <div class="header-actions">
+      <span class="next-run" id="next-run">—</span>
       <button class="pill-btn active" id="btn-today">Today</button>
       <button class="pill-btn" id="btn-archive">Archive</button>
     </div>
@@ -480,15 +492,12 @@
     const latestRuns = runs.filter(r => r.date === latestDate);
     const olderRuns  = runs.filter(r => r.date !== latestDate);
 
-    // Filter bar: show the latest date label
     document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
-    // Latest section
     let html = `<div id="section-latest">`;
     for (const run of latestRuns) html += renderRunGroup(run);
     html += `</div>`;
 
-    // Archive section
     if (olderRuns.length > 0) {
       const byDate = {};
       for (const run of olderRuns) {
@@ -565,6 +574,37 @@
     document.getElementById('filter-bar').style.top = h + 'px';
   }
 
+  // ── Next-run countdown ────────────────────────────────────
+  // Scheduled runs: 8:30 AM, 3:30 PM, 8:30 PM CT (CST = UTC-6)
+  const RUN_TIMES_UTC = [[14, 30], [21, 30], [2, 30]];
+
+  function getNextRunMs() {
+    const now = new Date();
+    const candidates = RUN_TIMES_UTC.map(([h, m]) => {
+      const t = new Date(Date.UTC(
+        now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m, 0, 0
+      ));
+      if (t <= now) t.setUTCDate(t.getUTCDate() + 1);
+      return t;
+    });
+    return Math.min(...candidates.map(t => t.getTime())) - now.getTime();
+  }
+
+  function formatCountdown(ms) {
+    const totalMin = Math.ceil(ms / 60000);
+    const h = Math.floor(totalMin / 60);
+    const m = totalMin % 60;
+    if (h > 0) return `${h}h ${m}m`;
+    return `${m}m`;
+  }
+
+  function tickCountdown() {
+    const ms = getNextRunMs();
+    const el = document.getElementById('next-run');
+    if (!el) return;
+    el.textContent = ms <= 0 ? 'running now' : formatCountdown(ms);
+  }
+
   // ── Bootstrap ─────────────────────────────────────────────
   async function loadFeed() {
     try {
@@ -576,13 +616,15 @@
     } catch (e) {
       document.getElementById('feed-container').innerHTML =
         `<div class="state-msg">Could not load picks.<br>
-        <small style="color:#ccc">If testing locally, serve with a web server (not file://).</small></div>`;
+        <small style="color:#2a2a2a">If testing locally, serve with a web server (not file://).</small></div>`;
     }
   }
 
   positionFilterBar();
   window.addEventListener('resize', positionFilterBar);
   loadFeed();
+  tickCountdown();
+  setInterval(tickCountdown, 60000);
 </script>
 
 </body>
