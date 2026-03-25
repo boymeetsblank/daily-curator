@@ -4,6 +4,18 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-24] White canvas redesign of index.html
+Complete visual redesign of the web feed. Key changes:
+- White background, light mode only (no dark mode)
+- System sans-serif font replacing Inter from Google Fonts
+- Max-width narrowed to 680px centered
+- Sticky header with brand + tagline stacked on left, Today/Archive pill buttons on right
+- Filter bar (sticky below header): date label, Morning/Afternoon/Evening pills, pick count
+- Pick cards: 0.5px border, score badge (black pill, number only), source + optional "3+ sources" badge, timestamp, 2px black left-border angle box, "Read article →" link, up/down feedback buttons
+- Trending items show "Trending on X right now" or "Trending on Google right now" instead of a link
+- Archive section replaced with a simple "Earlier" list of rows (title, score + date)
+- Removed sidebar, next-run countdown widget, and dark color scheme entirely
+
 ## [2026-03-24] Next-run countdown timer in header
 Added a live countdown to the header showing time until the next scheduled curation run. Counts down to the nearest of the three daily UTC run times (14:30, 21:30, 02:30). Displays as `Xh XXm` when hours remain, `Xm XXs` when under an hour. The dot pulses green when under 5 minutes. On small screens the "Next run" label is hidden to save space, leaving just the dot and time.
 

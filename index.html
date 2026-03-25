@@ -4,17 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@boymeetsblank_ — Daily Picks</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: #0a0a0a;
-      color: #e8e8e8;
-      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: #fff;
+      color: #111;
+      line-height: 1.5;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -23,366 +20,283 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(10, 10, 10, 0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid #1a1a1a;
-      padding: 14px 24px;
+      background: #fff;
+      border-bottom: 0.5px solid #e0e0e0;
+      padding: 12px 20px;
     }
 
     .header-inner {
-      max-width: 960px;
+      max-width: 680px;
       margin: 0 auto;
       display: flex;
-      align-items: baseline;
-      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-brand-group {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
     }
 
     .brand {
-      font-size: 17px;
-      font-weight: 800;
-      letter-spacing: -0.4px;
-      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      color: #111;
+      letter-spacing: -0.2px;
     }
 
     .tagline {
-      font-size: 13px;
-      color: #444;
+      font-size: 11px;
+      color: #aaa;
       font-weight: 400;
     }
 
-    .next-run {
-      margin-left: auto;
+    .header-actions {
+      display: flex;
+      gap: 6px;
+    }
+
+    /* ── Pill buttons (shared) ── */
+    .pill-btn {
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 100px;
+      border: 0.5px solid #ddd;
+      background: transparent;
+      color: #777;
+      cursor: pointer;
+      transition: background 0.1s, color 0.1s, border-color 0.1s;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+
+    .pill-btn:hover { background: #f5f5f5; color: #111; }
+
+    .pill-btn.active {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    /* ── Filter bar ── */
+    .filter-bar {
+      position: sticky;
+      z-index: 90;
+      background: #fff;
+      border-bottom: 0.5px solid #e0e0e0;
+      padding: 8px 20px;
+    }
+
+    .filter-bar-inner {
+      max-width: 680px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
-      gap: 7px;
-      font-size: 12px;
-      color: #333;
-      flex-shrink: 0;
+      gap: 8px;
     }
 
-    .next-run-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #2a2a2a;
-      flex-shrink: 0;
-      transition: background 0.4s;
-    }
-
-    .next-run-dot.pulse {
-      background: #10b981;
-      animation: dot-pulse 1.2s ease-in-out infinite;
-    }
-
-    @keyframes dot-pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
-
-    .next-run-label { color: #333; }
-
-    .next-run-time {
-      font-weight: 600;
-      color: #555;
-      font-variant-numeric: tabular-nums;
-      letter-spacing: 0.02em;
-    }
-
-    @media (max-width: 520px) {
-      .next-run-label { display: none; }
-    }
-
-    /* ── Page layout (sidebar + feed) ── */
-    .page-layout {
-      display: flex;
-      gap: 32px;
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 32px 24px 100px;
-      align-items: flex-start;
-    }
-
-    /* ── Sidebar ── */
-    aside.sidebar {
-      width: 152px;
-      flex-shrink: 0;
-      position: sticky;
-      top: 68px;
-    }
-
-    .sidebar-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #333;
-      padding: 2px 10px 6px;
-      display: block;
-    }
-
-    .sidebar-label:not(:first-child) {
-      margin-top: 6px;
-    }
-
-    .sidebar-divider {
-      border: none;
-      border-top: 1px solid #1a1a1a;
-      margin: 10px 0;
-    }
-
-    .nav-btn {
-      display: block;
-      width: 100%;
-      text-align: left;
-      padding: 7px 10px;
-      border-radius: 7px;
+    .filter-date {
       font-size: 13px;
       font-weight: 500;
-      color: #555;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      transition: background 0.12s, color 0.12s;
-      font-family: inherit;
-      line-height: 1.4;
+      color: #111;
+      flex-shrink: 0;
     }
 
-    .nav-btn:hover { background: #161616; color: #bbb; }
-    .nav-btn:disabled { opacity: 0.25; cursor: default; }
-    .nav-btn:disabled:hover { background: transparent; color: #555; }
-
-    .nav-btn.active {
-      background: #1c1c1c;
-      color: #e8e8e8;
+    .filter-pills {
+      display: flex;
+      gap: 5px;
+      margin-left: 2px;
     }
 
-    .show-all-btn {
-      color: #7c5af2;
-      margin-top: 2px;
+    .filter-pills .pill-btn {
+      font-size: 11px;
+      padding: 3px 10px;
     }
 
-    .show-all-btn:hover { background: rgba(124, 90, 242, 0.1); color: #9d7ff5; }
-
-    /* ── Main feed ── */
-    main {
-      flex: 1;
-      min-width: 0;
+    .filter-count {
+      margin-left: auto;
+      font-size: 12px;
+      color: #bbb;
+      flex-shrink: 0;
     }
 
-    /* ── Section headers ── */
-    .section-header {
-      margin-bottom: 24px;
+    /* ── Main content ── */
+    .content {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 20px 20px 80px;
     }
 
-    .section-eyebrow {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #444;
-      margin-bottom: 4px;
-    }
-
-    .section-title {
-      font-size: 26px;
-      font-weight: 800;
-      color: #fff;
-      letter-spacing: -0.6px;
-    }
-
-    /* ── Run group ── */
-    .run-group {
+    /* ── Pick card ── */
+    .pick-card {
+      background: #fff;
+      border: 0.5px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 16px 18px;
       margin-bottom: 8px;
     }
 
-    .run-header {
+    .card-top {
       display: flex;
       align-items: center;
-      gap: 8px;
-      margin: 28px 0 14px;
-    }
-
-    .run-time-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #555;
-    }
-
-    .run-meta {
-      font-size: 11px;
-      color: #2e2e2e;
-      background: #161616;
-      padding: 2px 9px;
-      border-radius: 100px;
-    }
-
-    /* ── Full pick card ── */
-    .pick-card {
-      background: #111;
-      border: 1px solid #1e1e1e;
-      border-radius: 12px;
-      padding: 20px 22px;
+      gap: 7px;
       margin-bottom: 10px;
-      transition: border-color 0.15s;
-    }
-
-    .pick-card:hover { border-color: #2c2c2c; }
-
-    .card-meta {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 11px;
       flex-wrap: wrap;
     }
 
     .score-badge {
       font-size: 11px;
-      font-weight: 700;
-      padding: 3px 9px;
+      font-weight: 600;
+      padding: 2px 8px;
       border-radius: 100px;
-      line-height: 1.4;
+      background: #111;
+      color: #fff;
+      line-height: 1.5;
       flex-shrink: 0;
     }
 
-    .score-badge.green { background: rgba(16, 185, 129, 0.14); color: #10b981; }
-    .score-badge.amber { background: rgba(245, 158, 11, 0.14);  color: #f59e0b; }
-
     .card-source {
       font-size: 12px;
-      color: #555;
+      color: #aaa;
+      font-weight: 400;
+    }
+
+    .trend-sources-badge {
+      font-size: 10px;
       font-weight: 500;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 340px;
+      padding: 1px 7px;
+      border-radius: 100px;
+      border: 0.5px solid #ddd;
+      color: #999;
+      line-height: 1.6;
+      flex-shrink: 0;
+    }
+
+    .card-timestamp {
+      margin-left: auto;
+      font-size: 11px;
+      color: #ccc;
+      flex-shrink: 0;
     }
 
     .card-title {
-      font-size: 19px;
-      font-weight: 700;
-      color: #f0f0f0;
-      line-height: 1.35;
-      letter-spacing: -0.3px;
-      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #111;
+      line-height: 1.4;
+      letter-spacing: -0.2px;
+      margin-bottom: 8px;
     }
 
     .card-why {
-      font-size: 14px;
-      color: #777;
-      line-height: 1.65;
-      margin-bottom: 14px;
+      font-size: 13px;
+      color: #999;
+      line-height: 1.6;
+      margin-bottom: 12px;
     }
 
-    /* ── Angle box ── */
+    /* ── Angle / carousel hook box ── */
     .angle-box {
-      background: #0d0d0d;
-      border-left: 2px solid #252525;
-      border-radius: 0 8px 8px 0;
-      padding: 12px 15px;
-      margin-bottom: 16px;
+      border-left: 2px solid #111;
+      padding: 8px 12px;
+      margin-bottom: 14px;
     }
 
     .angle-trigger {
       font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
+      font-weight: 500;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #7c5af2;
-      margin-bottom: 7px;
+      color: #bbb;
+      margin-bottom: 5px;
     }
 
-    .angle-lines {
-      font-size: 15px;
-      font-weight: 600;
-      color: #ccc;
-      line-height: 1.55;
+    .angle-text {
+      font-size: 13px;
+      color: #111;
+      line-height: 1.65;
     }
 
-    .angle-line { display: block; }
-
-    .angle-plain {
-      font-size: 14px;
-      color: #666;
-      line-height: 1.6;
+    /* ── Card bottom row ── */
+    .card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
     }
 
-    /* ── Trend label ── */
-    .trend-label {
-      display: inline-block;
-      font-size: 12px;
-      color: #555;
+    .read-link {
+      font-size: 13px;
+      color: #111;
+      text-decoration: none;
+    }
+
+    .read-link:hover { text-decoration: underline; }
+
+    .trend-source-label {
+      font-size: 13px;
+      color: #bbb;
       font-style: italic;
     }
 
-    /* ── Article link ── */
-    .article-link {
-      display: inline-flex;
-      align-items: center;
+    .feedback-btns {
+      display: flex;
       gap: 4px;
+      flex-shrink: 0;
+    }
+
+    .feedback-btn {
+      font-family: inherit;
       font-size: 13px;
-      font-weight: 600;
-      color: #60a5fa;
-      text-decoration: none;
-      padding: 6px 12px;
-      background: rgba(96, 165, 250, 0.07);
-      border-radius: 7px;
-      transition: background 0.15s;
-    }
-
-    .article-link:hover { background: rgba(96, 165, 250, 0.14); }
-
-    /* ── Archive ── */
-    .archive-divider {
-      border: none;
-      border-top: 1px solid #161616;
-      margin: 48px 0 32px;
-    }
-
-    .archive-day-group { margin-bottom: 28px; }
-
-    .archive-day-header {
+      background: transparent;
+      border: 0.5px solid #e0e0e0;
+      border-radius: 6px;
+      width: 28px;
+      height: 26px;
+      cursor: pointer;
+      color: #ccc;
       display: flex;
-      align-items: baseline;
-      gap: 10px;
-      margin-bottom: 10px;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.1s, color 0.1s;
     }
 
-    .archive-day-date { font-size: 14px; font-weight: 700; color: #555; }
-    .archive-day-count { font-size: 11px; color: #333; }
+    .feedback-btn:hover { background: #f5f5f5; color: #111; }
+    .feedback-btn.voted-up   { background: #f0fdf4; color: #16a34a; border-color: #bbf7d0; }
+    .feedback-btn.voted-down { background: #fef2f2; color: #dc2626; border-color: #fecaca; }
 
-    .archive-pick-row {
+    /* ── Archive section ── */
+    .archive-section { margin-top: 40px; }
+
+    .archive-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #bbb;
+      margin-bottom: 12px;
+    }
+
+    .archive-list { border-top: 0.5px solid #e8e8e8; }
+
+    .archive-row {
       display: flex;
       align-items: center;
       gap: 10px;
-      padding: 7px 0;
-      border-bottom: 1px solid #141414;
+      padding: 10px 0;
+      border-bottom: 0.5px solid #e8e8e8;
       text-decoration: none;
       color: inherit;
     }
 
-    .archive-pick-row:last-child { border-bottom: none; }
-    a.archive-pick-row:hover .archive-title { color: #ccc; }
+    a.archive-row:hover .archive-row-title { color: #111; }
 
-    .archive-score {
-      font-size: 10px;
-      font-weight: 700;
-      padding: 2px 7px;
-      border-radius: 100px;
-      flex-shrink: 0;
-      line-height: 1.5;
-    }
-
-    .archive-score.green { background: rgba(16, 185, 129, 0.12); color: #10b981; }
-    .archive-score.amber { background: rgba(245, 158, 11, 0.12);  color: #f59e0b; }
-
-    .archive-title {
+    .archive-row-title {
       font-size: 13px;
-      font-weight: 500;
-      color: #777;
+      color: #aaa;
       flex: 1;
       white-space: nowrap;
       overflow: hidden;
@@ -390,84 +304,32 @@
       transition: color 0.1s;
     }
 
-    .archive-source {
-      font-size: 11px;
-      color: #333;
+    .archive-row-meta {
+      font-size: 12px;
+      color: #ccc;
       flex-shrink: 0;
       white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 130px;
     }
 
-    /* ── Filter hidden state ── */
+    /* ── Filter hidden ── */
     .filter-hidden { display: none !important; }
 
     /* ── States ── */
     .state-msg {
       text-align: center;
-      color: #444;
+      color: #bbb;
       padding: 80px 0;
       font-size: 14px;
       line-height: 1.8;
     }
 
-    /* ── Mobile: sidebar becomes sticky horizontal bar ── */
-    @media (max-width: 820px) {
-      .page-layout {
-        display: block;
-        padding: 0 0 80px;
-      }
-
-      aside.sidebar {
-        width: 100%;
-        position: sticky;
-        top: 53px;
-        z-index: 90;
-        background: rgba(10, 10, 10, 0.96);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border-bottom: 1px solid #1a1a1a;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 3px;
-        padding: 8px 16px;
-        overflow-x: auto;
-        scrollbar-width: none;
-      }
-
-      aside.sidebar::-webkit-scrollbar { display: none; }
-
-      /* Flatten section wrappers into the flex row */
-      .sidebar-section { display: contents; }
-
-      .sidebar-label { display: none; }
-
-      .sidebar-divider {
-        width: 1px;
-        height: 18px;
-        background: #222;
-        border: none;
-        margin: 0 4px;
-        flex-shrink: 0;
-      }
-
-      .nav-btn {
-        white-space: nowrap;
-        flex-shrink: 0;
-        width: auto;
-        padding: 5px 10px;
-        font-size: 12px;
-      }
-
-      main { padding: 20px 16px 80px; }
-    }
-
+    /* ── Mobile ── */
     @media (max-width: 520px) {
-      .card-title { font-size: 17px; }
-      .section-title { font-size: 22px; }
-      .archive-source { display: none; }
+      header { padding: 10px 16px; }
+      .filter-bar { padding: 7px 16px; }
+      .content { padding: 16px 16px 80px; }
+      .card-title { font-size: 15px; }
+      .filter-pills .pill-btn { padding: 3px 8px; font-size: 11px; }
     }
   </style>
 </head>
@@ -475,58 +337,40 @@
 
 <header>
   <div class="header-inner">
-    <div class="brand">@boymeetsblank_</div>
-    <div class="tagline">intentionally finite, culturally relevant</div>
-    <div class="next-run" id="next-run-widget">
-      <span class="next-run-dot" id="next-run-dot"></span>
-      <span class="next-run-label">Next run</span>
-      <span class="next-run-time" id="next-run-time">–</span>
+    <div class="header-brand-group">
+      <div class="brand">@boymeetsblank_</div>
+      <div class="tagline">intentionally finite, culturally relevant</div>
+    </div>
+    <div class="header-actions">
+      <button class="pill-btn active" id="btn-today">Today</button>
+      <button class="pill-btn" id="btn-archive">Archive</button>
     </div>
   </div>
 </header>
 
-<div class="page-layout">
+<div class="filter-bar" id="filter-bar">
+  <div class="filter-bar-inner">
+    <span class="filter-date" id="filter-date">—</span>
+    <div class="filter-pills">
+      <button class="pill-btn filter-btn" data-value="Morning">Morning</button>
+      <button class="pill-btn filter-btn" data-value="Afternoon">Afternoon</button>
+      <button class="pill-btn filter-btn" data-value="Evening">Evening</button>
+    </div>
+    <span class="filter-count" id="filter-count"></span>
+  </div>
+</div>
 
-  <aside class="sidebar">
-    <div class="sidebar-section">
-      <span class="sidebar-label">Navigate</span>
-      <button class="nav-btn" id="btn-today">↑ Today</button>
-      <button class="nav-btn" id="btn-yesterday" disabled>Yesterday</button>
-    </div>
-    <hr class="sidebar-divider">
-    <div class="sidebar-section">
-      <span class="sidebar-label">Time of Day</span>
-      <button class="nav-btn filter-btn" data-filter="label" data-value="Morning"   id="btn-morning">Morning</button>
-      <button class="nav-btn filter-btn" data-filter="label" data-value="Afternoon" id="btn-afternoon">Afternoon</button>
-      <button class="nav-btn filter-btn" data-filter="label" data-value="Evening"   id="btn-evening">Evening</button>
-    </div>
-    <hr class="sidebar-divider">
-    <div class="sidebar-section">
-      <span class="sidebar-label">Score</span>
-      <button class="nav-btn filter-btn" data-filter="score" data-value="9" id="btn-9plus">9+ only</button>
-      <button class="nav-btn filter-btn" data-filter="score" data-value="7" id="btn-7plus">7+ only</button>
-    </div>
-    <hr class="sidebar-divider">
-    <div class="sidebar-section">
-      <button class="nav-btn show-all-btn" id="btn-show-all">Show All</button>
-    </div>
-  </aside>
-
-  <main>
-    <div id="feed-container">
-      <div class="state-msg">Loading picks…</div>
-    </div>
-  </main>
-
+<div class="content">
+  <div id="feed-container">
+    <div class="state-msg">Loading picks…</div>
+  </div>
 </div>
 
 <script>
-  // ── Filter state ──────────────────────────────────────────
-  let filterLabel = null;  // null | 'Morning' | 'Afternoon' | 'Evening'
-  let filterScore = null;  // null | 7 | 9
-  let secondDate  = null;  // date string for the "Yesterday" jump target
+  let filterLabel = null;
+  let allRunsData  = [];
 
-  // ── Helpers ───────────────────────────────────────────────
+  // ── HTML escaping ──────────────────────────────────────────
   function esc(str) {
     if (!str) return '';
     return str
@@ -537,82 +381,96 @@
       .replace(/'/g, '&#039;');
   }
 
-  function scoreClass(score) { return score >= 9 ? 'green' : 'amber'; }
-
-  // ── Angle formatting ──────────────────────────────────────
+  // ── Angle / carousel hook formatting ──────────────────────
   function formatAngle(angle) {
     if (!angle) return '';
     const m = angle.match(/^\[TRIGGER:\s*([^\]]+)\]\s*([\s\S]*)/);
     if (m) {
-      const trigger = m[1].trim();
-      const lines = m[2].split('/').map(l => l.trim()).filter(Boolean);
+      const trigger = esc(m[1].trim());
+      const lines   = m[2].split('/').map(l => l.trim()).filter(Boolean);
       return `<div class="angle-box">
-        <div class="angle-trigger">${esc(trigger)}</div>
-        <div class="angle-lines">${lines.map(l => `<span class="angle-line">${esc(l)}</span>`).join('')}</div>
+        <div class="angle-trigger">${trigger}</div>
+        <div class="angle-text">${lines.map(l => esc(l)).join('<br>')}</div>
       </div>`;
     }
-    return `<div class="angle-box"><div class="angle-plain">${esc(angle)}</div></div>`;
+    return `<div class="angle-box"><div class="angle-text">${esc(angle)}</div></div>`;
   }
 
-  // ── Card rendering ────────────────────────────────────────
-  function renderPickCard(pick) {
-    const cls = scoreClass(pick.score);
-    const linkHtml = pick.link
-      ? `<a class="article-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer">Read the full article →</a>`
-      : pick.trend_label
-        ? `<span class="trend-label">${esc(pick.trend_label)}</span>`
-        : '';
+  // ── Trending source label ──────────────────────────────────
+  function trendLabel(pick) {
+    const src = (pick.source || '').toLowerCase();
+    if (src.includes('twitter') || src.includes(' x ') || src.endsWith(' x') || src.startsWith('x ')) {
+      return 'Trending on X right now';
+    }
+    if (src.includes('google')) return 'Trending on Google right now';
+    return 'Trending right now';
+  }
+
+  // ── Feedback vote toggle ───────────────────────────────────
+  function vote(btn, dir) {
+    const btns = btn.parentElement;
+    const up   = btns.querySelector(':first-child');
+    const dn   = btns.querySelector(':last-child');
+    if (dir === 'up') {
+      const was = up.classList.contains('voted-up');
+      up.classList.remove('voted-up'); dn.classList.remove('voted-down');
+      if (!was) up.classList.add('voted-up');
+    } else {
+      const was = dn.classList.contains('voted-down');
+      up.classList.remove('voted-up'); dn.classList.remove('voted-down');
+      if (!was) dn.classList.add('voted-down');
+    }
+  }
+
+  // ── Render a single pick card ──────────────────────────────
+  function renderPickCard(pick, runDisplayTime) {
+    const sourceBadge = pick.trending_across_sources
+      ? `<span class="trend-sources-badge">3+ sources</span>`
+      : '';
+
+    const bottomLeft = pick.link
+      ? `<a class="read-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer">Read article →</a>`
+      : `<span class="trend-source-label">${esc(trendLabel(pick))}</span>`;
 
     return `<div class="pick-card" data-score="${pick.score}">
-      <div class="card-meta">
-        <span class="score-badge ${cls}">${pick.score}/10</span>
+      <div class="card-top">
+        <span class="score-badge">${pick.score}</span>
         <span class="card-source">${esc(pick.source)}</span>
+        ${sourceBadge}
+        <span class="card-timestamp">${esc(runDisplayTime)}</span>
       </div>
       <div class="card-title">${esc(pick.title)}</div>
-      ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
+      ${pick.why    ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
       ${formatAngle(pick.angle)}
-      ${linkHtml}
+      <div class="card-bottom">
+        ${bottomLeft}
+        <div class="feedback-btns">
+          <button class="feedback-btn" onclick="vote(this,'up')" title="Good pick">↑</button>
+          <button class="feedback-btn" onclick="vote(this,'down')" title="Not for me">↓</button>
+        </div>
+      </div>
     </div>`;
   }
 
+  // ── Render a run group (Morning / Afternoon / Evening) ────
   function renderRunGroup(run) {
-    const pickCount = run.picks.length;
-    const countLabel = `${pickCount} pick${pickCount !== 1 ? 's' : ''} · ${run.display_time}`;
-    let html = `<div class="run-group" data-label="${esc(run.label)}" data-date="${esc(run.date)}">
-      <div class="run-header">
-        <span class="run-time-label">${esc(run.label)}</span>
-        <span class="run-meta">${esc(countLabel)}</span>
-      </div>`;
-    for (const pick of run.picks) html += renderPickCard(pick);
+    let html = `<div class="run-group" data-label="${esc(run.label)}" data-date="${esc(run.date)}">`;
+    for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
     html += `</div>`;
     return html;
   }
 
-  function renderArchiveDayGroup(date, displayDate, runs) {
-    const allPicks = runs.flatMap(r => r.picks.map(p => ({ ...p, runLabel: r.label })));
-    let rows = '';
-    for (const pick of allPicks) {
-      const cls = scoreClass(pick.score);
-      const tag  = pick.link ? 'a' : 'div';
-      const href = pick.link ? ` href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer"` : '';
-      rows += `<${tag} class="archive-pick-row" data-score="${pick.score}" data-label="${esc(pick.runLabel)}"${href}>
-        <span class="archive-score ${cls}">${pick.score}</span>
-        <span class="archive-title">${esc(pick.title)}</span>
-        <span class="archive-source">${esc(pick.source)}</span>
-      </${tag}>`;
-    }
-    const total = allPicks.length;
-    return `<div class="archive-day-group" id="section-${esc(date)}" data-date="${esc(date)}">
-      <div class="archive-day-header">
-        <span class="archive-day-date">${esc(displayDate)}</span>
-        <span class="archive-day-count">${total} pick${total !== 1 ? 's' : ''}</span>
-      </div>
-      ${rows}
-    </div>`;
+  // ── Update the pick count in the filter bar ───────────────
+  function updateCount() {
+    const visible = document.querySelectorAll('.run-group:not(.filter-hidden) .pick-card').length;
+    document.getElementById('filter-count').textContent =
+      visible ? `${visible} pick${visible !== 1 ? 's' : ''}` : '';
   }
 
   // ── Main render ───────────────────────────────────────────
   function render(runs) {
+    allRunsData = runs;
+
     if (!runs || runs.length === 0) {
       document.getElementById('feed-container').innerHTML = '<div class="state-msg">No picks yet.</div>';
       return;
@@ -622,25 +480,15 @@
     const latestRuns = runs.filter(r => r.date === latestDate);
     const olderRuns  = runs.filter(r => r.date !== latestDate);
 
-    // Identify the second most-recent date for the "Yesterday" jump button
-    if (olderRuns.length > 0) {
-      secondDate = olderRuns[0].date;
-      const btn = document.getElementById('btn-yesterday');
-      btn.disabled = false;
-    }
+    // Filter bar: show the latest date label
+    document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
-    let html = '';
-
-    // ── Latest section ──
-    html += `<div id="section-latest">
-      <div class="section-header">
-        <div class="section-eyebrow">Latest</div>
-        <div class="section-title">${esc(latestRuns[0].display_date)}</div>
-      </div>`;
+    // Latest section
+    let html = `<div id="section-latest">`;
     for (const run of latestRuns) html += renderRunGroup(run);
     html += `</div>`;
 
-    // ── Archive section ──
+    // Archive section
     if (olderRuns.length > 0) {
       const byDate = {};
       for (const run of olderRuns) {
@@ -649,107 +497,72 @@
       }
       const sortedDates = Object.keys(byDate).sort().reverse();
 
-      html += `<hr class="archive-divider" id="archive-divider">
-        <div id="archive-section-header" class="section-header">
-          <div class="section-eyebrow">Archive</div>
-        </div>`;
+      html += `<div class="archive-section" id="archive-section">
+        <div class="archive-label">Earlier</div>
+        <div class="archive-list">`;
 
       for (const date of sortedDates) {
-        const dateRuns = byDate[date];
-        html += renderArchiveDayGroup(date, dateRuns[0].display_date, dateRuns);
+        for (const run of byDate[date]) {
+          for (const pick of run.picks) {
+            const tag  = pick.link ? 'a' : 'div';
+            const href = pick.link ? ` href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer"` : '';
+            html += `<${tag} class="archive-row" data-label="${esc(run.label)}"${href}>
+              <span class="archive-row-title">${esc(pick.title)}</span>
+              <span class="archive-row-meta">${pick.score} · ${esc(run.display_date)}</span>
+            </${tag}>`;
+          }
+        }
       }
+
+      html += `</div></div>`;
     }
 
     document.getElementById('feed-container').innerHTML = html;
+    updateCount();
   }
 
-  // ── Filtering ─────────────────────────────────────────────
+  // ── Apply time-of-day filter ──────────────────────────────
   function applyFilters() {
-    // Run groups in the latest section
     document.querySelectorAll('.run-group').forEach(group => {
-      const labelOk = !filterLabel || group.dataset.label === filterLabel;
-      group.classList.toggle('filter-hidden', !labelOk);
-
-      if (labelOk) {
-        // Score-filter individual cards within this run group
-        let visibleCards = 0;
-        group.querySelectorAll('.pick-card').forEach(card => {
-          const scoreOk = !filterScore || parseInt(card.dataset.score) >= filterScore;
-          card.classList.toggle('filter-hidden', !scoreOk);
-          if (scoreOk) visibleCards++;
-        });
-        // Hide the whole run group if score filter removed all its cards
-        if (filterScore && visibleCards === 0) group.classList.add('filter-hidden');
-      }
+      const ok = !filterLabel || group.dataset.label === filterLabel;
+      group.classList.toggle('filter-hidden', !ok);
     });
-
-    // Archive pick rows
-    document.querySelectorAll('.archive-pick-row').forEach(row => {
-      const labelOk = !filterLabel || row.dataset.label === filterLabel;
-      const scoreOk = !filterScore || parseInt(row.dataset.score) >= filterScore;
-      row.classList.toggle('filter-hidden', !labelOk || !scoreOk);
+    document.querySelectorAll('.archive-row').forEach(row => {
+      const ok = !filterLabel || row.dataset.label === filterLabel;
+      row.classList.toggle('filter-hidden', !ok);
     });
-
-    // Hide archive day groups where every row is now hidden
-    document.querySelectorAll('.archive-day-group').forEach(group => {
-      const visible = group.querySelectorAll('.archive-pick-row:not(.filter-hidden)').length;
-      group.classList.toggle('filter-hidden', visible === 0);
-    });
-
-    // Hide archive divider + header if every day group is hidden
-    const visibleDayGroups = document.querySelectorAll('.archive-day-group:not(.filter-hidden)').length;
-    document.getElementById('archive-divider')?.classList.toggle('filter-hidden', visibleDayGroups === 0);
-    document.getElementById('archive-section-header')?.classList.toggle('filter-hidden', visibleDayGroups === 0);
+    updateCount();
   }
 
-  function updateActiveButtons() {
-    document.querySelectorAll('[data-filter="label"]').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.value === filterLabel);
-    });
-    document.querySelectorAll('[data-filter="score"]').forEach(btn => {
-      btn.classList.toggle('active', parseInt(btn.dataset.value) === filterScore);
-    });
-  }
-
-  // ── Button wiring (runs after render populates the DOM) ───
+  // ── Wire interactive controls ─────────────────────────────
   function wireButtons() {
-    // Jump: Today
     document.getElementById('btn-today').addEventListener('click', () => {
       document.getElementById('section-latest')?.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('btn-today').classList.add('active');
+      document.getElementById('btn-archive').classList.remove('active');
     });
 
-    // Jump: Yesterday (second most-recent date)
-    document.getElementById('btn-yesterday').addEventListener('click', () => {
-      if (secondDate) {
-        document.getElementById(`section-${secondDate}`)?.scrollIntoView({ behavior: 'smooth' });
-      }
+    document.getElementById('btn-archive').addEventListener('click', () => {
+      document.getElementById('archive-section')?.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('btn-archive').classList.add('active');
+      document.getElementById('btn-today').classList.remove('active');
     });
 
-    // Filter buttons (toggle within their group; clicking active = deactivate)
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const filter = btn.dataset.filter;
-        const value  = btn.dataset.value;
-
-        if (filter === 'label') {
-          filterLabel = (filterLabel === value) ? null : value;
-        } else if (filter === 'score') {
-          const num = parseInt(value);
-          filterScore = (filterScore === num) ? null : num;
-        }
-
-        updateActiveButtons();
+        const value = btn.dataset.value;
+        filterLabel = (filterLabel === value) ? null : value;
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        if (filterLabel) btn.classList.add('active');
         applyFilters();
       });
     });
+  }
 
-    // Show All
-    document.getElementById('btn-show-all').addEventListener('click', () => {
-      filterLabel = null;
-      filterScore = null;
-      updateActiveButtons();
-      applyFilters();
-    });
+  // ── Position filter bar below sticky header ───────────────
+  function positionFilterBar() {
+    const h = document.querySelector('header').offsetHeight;
+    document.getElementById('filter-bar').style.top = h + 'px';
   }
 
   // ── Bootstrap ─────────────────────────────────────────────
@@ -763,51 +576,13 @@
     } catch (e) {
       document.getElementById('feed-container').innerHTML =
         `<div class="state-msg">Could not load picks.<br>
-        <small style="color:#333">If testing locally, serve with a web server (not file://).</small></div>`;
+        <small style="color:#ccc">If testing locally, serve with a web server (not file://).</small></div>`;
     }
   }
 
+  positionFilterBar();
+  window.addEventListener('resize', positionFilterBar);
   loadFeed();
-
-  // ── Next-run countdown ────────────────────────────────────
-  // Scheduled UTC run times (hour, minute)
-  const RUN_TIMES_UTC = [[14, 30], [21, 30], [2, 30]];
-
-  function getNextRunMs() {
-    const now = new Date();
-    const candidates = RUN_TIMES_UTC.map(([h, m]) => {
-      const t = new Date(Date.UTC(
-        now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m, 0, 0
-      ));
-      if (t <= now) t.setUTCDate(t.getUTCDate() + 1);
-      return t;
-    });
-    return Math.min(...candidates.map(t => t.getTime())) - now.getTime();
-  }
-
-  function formatCountdown(ms) {
-    if (ms <= 0) return 'running now';
-    const totalSec = Math.floor(ms / 1000);
-    const h = Math.floor(totalSec / 3600);
-    const m = Math.floor((totalSec % 3600) / 60);
-    const s = totalSec % 60;
-    if (h > 0) return `${h}h ${String(m).padStart(2,'0')}m`;
-    if (m > 0) return `${m}m ${String(s).padStart(2,'0')}s`;
-    return `${s}s`;
-  }
-
-  function tickCountdown() {
-    const ms = getNextRunMs();
-    const el = document.getElementById('next-run-time');
-    const dot = document.getElementById('next-run-dot');
-    if (!el) return;
-    el.textContent = formatCountdown(ms);
-    // Pulse the dot green when under 5 minutes
-    dot.classList.toggle('pulse', ms < 5 * 60 * 1000);
-  }
-
-  tickCountdown();
-  setInterval(tickCountdown, 1000);
 </script>
 
 </body>
