@@ -124,9 +124,9 @@ def fetch_articles_from_inoreader() -> list[dict]:
             alternate = item.get("alternate", [])
             link = alternate[0].get("href", "") if alternate else ""
         summary_obj = item.get("summary") or item.get("content", {})
-        raw_summary = summary_obj.get("content", "") if summary_obj else ""
+        raw_summary = summary_obj.get("content", "") if isinstance(summary_obj, dict) else ""
         summary = strip_html(raw_summary)[:500]
-        origin = item.get("origin", {})
+        origin = item.get("origin") or {}
         source = origin.get("title", "Unknown Source")
         published_timestamp = item.get("published", 0)
         published_dt = datetime.fromtimestamp(published_timestamp, tz=timezone.utc)
@@ -518,7 +518,7 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
         sys.exit(1)
 
     evaluations = result.get("evaluations", [])
-    eval_by_number = {e["article_number"]: e for e in evaluations}
+    eval_by_number = {e["article_number"]: e for e in evaluations if e.get("article_number") is not None}
     enriched_articles = []
     for i, article in enumerate(articles, start=1):
         eval_data = eval_by_number.get(i, {})
