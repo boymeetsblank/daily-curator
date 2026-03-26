@@ -4,6 +4,9 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-26] Fix duplicate timer on mobile
+`#next-run` was not included in the mobile hide rule, so the countdown appeared twice — once in the filter bar and once in the compact mobile row. Added `#next-run` to the `display: none` rule at ≤520px so only the `.mobile-timer-row` shows on mobile.
+
 ## [2026-03-25] Show timer on mobile
 Added a compact `.mobile-timer-row` div inside the sticky filter-bar that shows only on screens ≤520px. It displays "Updated Xm ago · Next in Xh Xm" on a single line in small muted text, populated by the same `tickCountdown` function that drives the desktop timer. The desktop filter-bar elements (`#last-updated`, `.run-meta-sep`) remain hidden on mobile as before.
 
