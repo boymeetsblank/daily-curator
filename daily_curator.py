@@ -144,8 +144,13 @@ def fetch_articles_from_inoreader() -> list[dict]:
             if img_m:
                 image_url = img_m.group(1)
         if not image_url:
-            enclosure = item.get("enclosure") or {}
-            enc_href = enclosure.get("href")
+            enclosure = item.get("enclosure")
+            if isinstance(enclosure, list):
+                enclosure = enclosure[0] if enclosure else None
+            if isinstance(enclosure, dict):
+                enc_href = enclosure.get("href")
+            else:
+                enc_href = None
             if enc_href:
                 image_url = enc_href
 

@@ -4,6 +4,9 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-26] Fix enclosure AttributeError in fetch_articles_from_inoreader
+Inoreader's `enclosure` field can be a list instead of a dict. Calling `.get("href")` on a list throws an `AttributeError`. Fixed to handle all cases: if enclosure is a list, take the first item; if it's a dict, call `.get("href")` directly; otherwise set image to `None`.
+
 ## [2026-03-26] Fix duplicate timer on mobile
 `#next-run` was not included in the mobile hide rule, so the countdown appeared twice — once in the filter bar and once in the compact mobile row. Added `#next-run` to the `display: none` rule at ≤520px so only the `.mobile-timer-row` shows on mobile.
 
