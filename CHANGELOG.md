@@ -4,6 +4,9 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-25] Fix deploy-pages not triggering after Daily Curator runs
+Added a `workflow_run` trigger to `deploy-pages.yml` so the feed deploys automatically whenever the "Daily Curator" workflow completes successfully on `main`. The job is conditional (`conclusion == 'success'`) so failed curator runs don't trigger a deploy. Push and `workflow_dispatch` triggers are preserved.
+
 ## [2026-03-24] Fix countdown timer visibility on mobile
 Moved the next-run countdown from the header (where it was hidden on mobile via `display: none` to prevent overflow) into the filter bar right side. It now sits in a `.filter-right` flex group alongside the pick count, visible at all screen sizes. On mobile (≤520px) the pick count is hidden to save space, keeping the countdown readable. The header-actions now contains only the Today/Archive pill buttons.
 
