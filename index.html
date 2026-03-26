@@ -68,12 +68,17 @@
       flex-shrink: 0;
     }
 
-    .next-run {
+    .run-meta {
       font-size: 11px;
       color: #444;
       font-variant-numeric: tabular-nums;
       letter-spacing: 0.01em;
       white-space: nowrap;
+    }
+
+    .run-meta-sep {
+      font-size: 11px;
+      color: #2a2a2a;
     }
 
     /* ── Pill buttons (shared) ── */
@@ -542,6 +547,14 @@
       line-height: 1.8;
     }
 
+    .mobile-timer-row {
+      display: none;
+      font-size: 11px;
+      color: #333;
+      letter-spacing: 0.01em;
+      padding: 5px 0 1px;
+    }
+
     /* ── Mobile ── */
     @media (max-width: 520px) {
       header { padding: 10px 16px; }
@@ -550,6 +563,8 @@
       .card-title { font-size: 15px; }
       .filter-pills .pill-btn { padding: 3px 8px; font-size: 11px; }
       .filter-count { display: none; }
+      #last-updated, .run-meta-sep { display: none; }
+      .mobile-timer-row { display: block; }
     }
   </style>
 </head>
@@ -578,9 +593,12 @@
     </div>
     <div class="filter-right">
       <span class="filter-count" id="filter-count"></span>
-      <span class="next-run" id="next-run">—</span>
+      <span class="run-meta" id="last-updated"></span>
+      <span class="run-meta-sep">·</span>
+      <span class="run-meta" id="next-run">—</span>
     </div>
   </div>
+  <div class="mobile-timer-row" id="mobile-timer-row"></div>
 </div>
 
 <div class="page-wrapper">
@@ -941,8 +959,17 @@
     }
   }
 
-  // ── Next-run countdown ────────────────────────────────────
-  const RUN_TIMES_UTC = [[14, 30], [21, 30], [2, 30]];
+  // ── Run timing ────────────────────────────────────────────
+  const RUN_TIMES_UTC = [[13, 0], [18, 0], [2, 0]];
+
+  let lastRunTime = null;
+
+  function parseRunTime(run) {
+    if (!run) return null;
+    const d = run.date;                   // "YYYY-MM-DD"
+    const t = run.time;                   // "HHMM" in UTC (Actions runner)
+    return new Date(`${d}T${t.slice(0, 2)}:${t.slice(2, 4)}:00Z`);
+  }
 
   function getNextRunMs() {
     const now = new Date();
@@ -956,19 +983,32 @@
     return Math.min(...candidates.map(t => t.getTime())) - now.getTime();
   }
 
-  function formatCountdown(ms) {
+  function formatNextRun(ms) {
+    if (ms <= 0) return 'updating now';
     const totalMin = Math.ceil(ms / 60000);
     const h = Math.floor(totalMin / 60);
     const m = totalMin % 60;
-    if (h > 0) return `${h}h ${m}m`;
-    return `${m}m`;
+    return h > 0 ? `Next in ${h}h ${m}m` : `Next in ${m}m`;
+  }
+
+  function formatLastUpdated(ms) {
+    const totalMin = Math.floor(ms / 60000);
+    if (totalMin < 1)  return 'Updated just now';
+    if (totalMin < 60) return `Updated ${totalMin}m ago`;
+    const h = Math.floor(totalMin / 60);
+    const m = totalMin % 60;
+    return m > 0 ? `Updated ${h}h ${m}m ago` : `Updated ${h}h ago`;
   }
 
   function tickCountdown() {
-    const ms = getNextRunMs();
-    const el = document.getElementById('next-run');
-    if (!el) return;
-    el.textContent = ms <= 0 ? 'running now' : formatCountdown(ms);
+    const nextEl   = document.getElementById('next-run');
+    const lastEl   = document.getElementById('last-updated');
+    const mobileEl = document.getElementById('mobile-timer-row');
+    const nextStr  = formatNextRun(getNextRunMs());
+    const lastStr  = lastRunTime ? formatLastUpdated(Date.now() - lastRunTime.getTime()) : null;
+    if (nextEl) nextEl.textContent = nextStr;
+    if (lastEl && lastStr) lastEl.textContent = lastStr;
+    if (mobileEl) mobileEl.textContent = lastStr ? `${lastStr} · ${nextStr}` : nextStr;
   }
 
   // ── Bootstrap ─────────────────────────────────────────────
@@ -977,8 +1017,10 @@
       const res = await fetch('picks_data.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
+      if (data.runs && data.runs.length > 0) lastRunTime = parseRunTime(data.runs[0]);
       render(data.runs);
       wireButtons();
+      tickCountdown(); // refresh immediately with real last-run time
       positionSticky(); // re-run after render in case heights changed
     } catch (e) {
       document.getElementById('feed-container').innerHTML =

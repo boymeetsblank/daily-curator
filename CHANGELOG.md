@@ -4,6 +4,17 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-25] Show timer on mobile
+Added a compact `.mobile-timer-row` div inside the sticky filter-bar that shows only on screens ≤520px. It displays "Updated Xm ago · Next in Xh Xm" on a single line in small muted text, populated by the same `tickCountdown` function that drives the desktop timer. The desktop filter-bar elements (`#last-updated`, `.run-meta-sep`) remain hidden on mobile as before.
+
+## [2026-03-25] Update cron schedule to correct run times
+Updated `.github/workflows/daily_curator.yml` and `RUN_TIMES_UTC` in `index.html` to the correct schedule: 13:00 UTC (8:00 AM CT), 18:00 UTC (1:00 PM CT), 02:00 UTC (9:00 PM CT). The "Next in Xh Xm" countdown in the feed header now counts to these times.
+
+## [2026-03-25] Fix cron schedule and improve header timer display
+**Cron fix:** Updated `.github/workflows/daily_curator.yml` run times to match actual schedule — 11:30 UTC (6:30 AM CT), 21:30 UTC (4:30 PM CT), 03:30 UTC (10:30 PM CT). Previous times were wrong.
+
+**Timer redesign:** Replaced the single next-run countdown in the filter bar with two pieces of information shown side by side: "Updated Xm ago" (derived from the most recent run's timestamp in `picks_data.json`) and "Next in Xh Xm" (countdown to the next scheduled run using the corrected UTC times). Both hide on mobile (≤520px) to preserve space. The `lastRunTime` is parsed from `runs[0].date` + `runs[0].time` (UTC) after the feed loads and refreshes every minute alongside the countdown.
+
 ## [2026-03-25] Recency boost in Claude scoring prompt
 Updated the TIMELY criterion in `evaluate_articles_with_claude()` to instruct Claude to apply explicit recency weighting using the Published timestamp already included in each article: articles published within the last 12 hours get a +1 boost; articles 12–24 hours old score normally; articles 24–48 hours old get a -1 penalty unless the story is still actively developing or trending.
 
