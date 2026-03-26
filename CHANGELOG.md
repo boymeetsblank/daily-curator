@@ -4,6 +4,9 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-25] Recency boost in Claude scoring prompt
+Updated the TIMELY criterion in `evaluate_articles_with_claude()` to instruct Claude to apply explicit recency weighting using the Published timestamp already included in each article: articles published within the last 12 hours get a +1 boost; articles 12–24 hours old score normally; articles 24–48 hours old get a -1 penalty unless the story is still actively developing or trending.
+
 ## [2026-03-25] Pre-scoring topic deduplication
 Moved same-topic deduplication from after Claude scoring to before it. New `deduplicate_articles_pre_scoring()` runs after the source cap and before `detect_cross_source_trends()`. Claude clusters the full article list by topic and keeps the single most culturally relevant representative per cluster (chosen by source quality, not score, since no scores exist yet). Removed the post-scoring `deduplicate_within_run()` step — it's no longer needed since topics are already unique before scoring. Cross-run URL filtering (`filter_already_picked_today()`) is unchanged. Net effect: Claude always receives the maximum number of unique topics to evaluate, which produces more diverse picks.
 

@@ -416,7 +416,10 @@ ARTICLE {i}:{trending_flag}
 I'll give you a list of recent articles. Evaluate EACH article on these 4 criteria:
 
 1. TRENDING: Is this something a lot of people are actively discussing right now?
-2. TIMELY: Did this happen or break in the last 24–48 hours? Is it fresh?
+2. TIMELY: Use the Published timestamp to apply recency weighting:
+   - Published within the last 12 hours → +1 to the final score (very fresh)
+   - Published 12–24 hours ago → score normally (still timely)
+   - Published 24–48 hours ago → -1 to the final score, UNLESS the story is still actively developing, trending, or unresolved (in which case score normally)
 3. CULTURAL: Does it connect to a broader cultural moment, meme, movement, or viral conversation?
 4. CAROUSEL: Could this become a carousel post that a culture-forward media account would post?
 
