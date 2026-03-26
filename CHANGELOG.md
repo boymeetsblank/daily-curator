@@ -4,6 +4,9 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-25] Pre-scoring topic deduplication
+Moved same-topic deduplication from after Claude scoring to before it. New `deduplicate_articles_pre_scoring()` runs after the source cap and before `detect_cross_source_trends()`. Claude clusters the full article list by topic and keeps the single most culturally relevant representative per cluster (chosen by source quality, not score, since no scores exist yet). Removed the post-scoring `deduplicate_within_run()` step — it's no longer needed since topics are already unique before scoring. Cross-run URL filtering (`filter_already_picked_today()`) is unchanged. Net effect: Claude always receives the maximum number of unique topics to evaluate, which produces more diverse picks.
+
 ## [2026-03-25] Article thumbnail images on pick cards
 Extracts a thumbnail image URL from each Inoreader article and displays it at the top of pick cards in the web feed. Extraction checks three sources in order: (1) Inoreader's `visual.url` field, (2) the first `<img>` src tag in the summary HTML, (3) the RSS `enclosure.href`. The URL is saved to the picks markdown file as `**Image:** url`. `deploy-pages.yml` parses the field into `picks_data.json`. In the feed, cards with an image show a full-width thumbnail (max 200px tall, `object-fit: cover`, rounded top corners) that bleeds to the card edges. Trend items (X/Google) have no image and render unchanged. Images that fail to load are hidden silently.
 

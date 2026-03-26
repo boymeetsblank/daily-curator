@@ -523,35 +523,30 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
     return enriched_articles
 
 
-def select_top_picks(articles: list[dict]) -> list[dict]:
-    strong_picks = [a for a in articles if a["score"] >= MIN_SCORE]
-    strong_picks.sort(key=lambda a: a["score"], reverse=True)
-    return strong_picks[:MAX_PICKS]
-
-
-def deduplicate_within_run(picks: list[dict]) -> list[dict]:
+def deduplicate_articles_pre_scoring(articles: list[dict]) -> list[dict]:
     """
-    Use Claude to group picks covering the same story into clusters, then keep
-    only the single best pick from each cluster — highest score wins; ties go
-    to the more culturally relevant source (Claude decides).
+    Before sending to Claude for scoring, cluster same-topic articles and keep
+    only the most culturally relevant representative from each cluster.
+    This maximises the number of unique topics Claude evaluates per run.
     """
-    if len(picks) <= 1:
-        return picks
+    if len(articles) <= 1:
+        return articles
 
-    print(f"\n🔍 Clustering picks by topic...")
+    print(f"\n🔍 Pre-scoring dedup: clustering {len(articles)} articles by topic...")
 
-    picks_text = ""
-    for i, pick in enumerate(picks, start=1):
-        picks_text += f"{i}. [Score: {pick['score']}/10] \"{pick['title']}\" ({pick['source']})\n"
+    articles_text = ""
+    for i, article in enumerate(articles, start=1):
+        snippet = article['summary'][:120] if article['summary'] else '(no summary)'
+        articles_text += f"{i}. \"{article['title']}\" ({article['source']})\n   {snippet}\n"
 
-    prompt = f"""Here are the top-scoring articles from a content curation run. Some may cover the exact same underlying story or event from different outlets.
+    prompt = f"""Here are {len(articles)} articles from various sources. Some may cover the exact same story or event.
 
-{picks_text}
+{articles_text}
 
 Your job:
-1. Identify any groups of articles that are all about the same story or event.
-2. For each group (cluster), pick ONE article to keep — the highest-scoring one. If two articles in a cluster have the same score, pick the one from the most culturally relevant source (e.g. prefer The Ringer over a generic news wire, prefer a culture-forward outlet over a sports stats site).
-3. Articles that are NOT part of any cluster should be left alone — do not list them.
+1. Identify groups of articles that are all about the same story or event.
+2. For each group (cluster), pick ONE article to keep — choose the one from the most culturally relevant source (e.g. prefer The Ringer over a generic news wire, prefer a culture-forward outlet over a sports stats site, prefer a primary source over an aggregator).
+3. Articles that are NOT part of any cluster (unique stories) should not be listed.
 
 Return ONLY valid JSON in this exact format, with no other text:
 
@@ -574,12 +569,12 @@ If no articles share the same story, return:
     try:
         response = client.messages.create(
             model="claude-opus-4-6",
-            max_tokens=1024,
+            max_tokens=2048,
             messages=[{"role": "user", "content": prompt}]
         )
     except Exception as e:
-        print(f"   ⚠️  Could not cluster picks (keeping all): {e}")
-        return picks
+        print(f"   ⚠️  Pre-scoring dedup failed (continuing with all articles): {e}")
+        return articles
 
     response_text = response.content[0].text.strip()
     try:
@@ -591,18 +586,17 @@ If no articles share the same story, return:
             try:
                 result = json.loads(json_match.group())
             except json.JSONDecodeError:
-                print("   ⚠️  Could not parse cluster response (keeping all).")
-                return picks
+                print("   ⚠️  Could not parse pre-scoring dedup response (continuing with all).")
+                return articles
         else:
-            print("   ⚠️  Could not parse cluster response (keeping all).")
-            return picks
+            print("   ⚠️  Could not parse pre-scoring dedup response (continuing with all).")
+            return articles
 
     clusters = result.get("clusters", [])
     if not clusters:
-        print("   ✅ No duplicate stories detected.")
-        return picks
+        print("   ✅ No duplicate topics found.")
+        return articles
 
-    # Build set of 0-based indices to drop
     to_drop = set()
     for cluster in clusters:
         article_nums = cluster.get("article_numbers", [])
@@ -611,17 +605,23 @@ If no articles share the same story, return:
         if keep_num not in article_nums:
             continue  # malformed cluster, skip
         for num in article_nums:
-            if num != keep_num and 1 <= num <= len(picks):
+            if num != keep_num and 1 <= num <= len(articles):
                 to_drop.add(num - 1)
-                print(f"   ↩️  Deduped ({story}): \"{picks[num - 1]['title'][:60]}\"")
+                print(f"   ↩️  Deduped ({story}): \"{articles[num - 1]['title'][:60]}\"")
 
-    kept = [pick for i, pick in enumerate(picks) if i not in to_drop]
-    removed = len(picks) - len(kept)
+    kept = [a for i, a in enumerate(articles) if i not in to_drop]
+    removed = len(articles) - len(kept)
     if removed:
-        print(f"   Within-run dedup: removed {removed} duplicate(s).")
+        print(f"   Pre-scoring dedup: removed {removed} duplicate(s), {len(kept)} unique topics remain.")
     else:
-        print("   ✅ No duplicate stories detected.")
+        print("   ✅ No duplicate topics found.")
     return kept
+
+
+def select_top_picks(articles: list[dict]) -> list[dict]:
+    strong_picks = [a for a in articles if a["score"] >= MIN_SCORE]
+    strong_picks.sort(key=lambda a: a["score"], reverse=True)
+    return strong_picks[:MAX_PICKS]
 
 
 def filter_already_picked_today(picks: list[dict]) -> list[dict]:
@@ -730,6 +730,7 @@ def main():
         sys.exit(0)
 
     articles = apply_source_cap(articles)
+    articles = deduplicate_articles_pre_scoring(articles)
     articles = detect_cross_source_trends(articles)
     twitter_trends = fetch_twitter_trends()
     google_trends = fetch_google_trends()
@@ -737,8 +738,7 @@ def main():
     evaluated_articles = evaluate_articles_with_claude(all_items)
     top_picks = select_top_picks(evaluated_articles)
 
-    print(f"\n🔎 Deduplicating picks...")
-    top_picks = deduplicate_within_run(top_picks)
+    print(f"\n🔎 Filtering already-picked URLs...")
     top_picks = filter_already_picked_today(top_picks)
 
     print(f"\n📝 Writing output file...")
