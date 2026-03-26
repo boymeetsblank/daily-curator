@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-26] Fix three crash bugs in fetch_articles_from_inoreader and evaluate_articles_with_claude
+
+Three AttributeError/KeyError bugs found and fixed during end-to-end code review:
+
+1. **`origin` None crash** — `item.get("origin", {})` returns `None` when the key exists but its value is null (the default only fires for absent keys). Changed to `item.get("origin") or {}` so a null origin safely falls back to an empty dict.
+2. **`summary_obj` type crash** — `summary_obj.get("content", "")` assumed the field is always a dict, but Inoreader can return it as a plain string. Changed the guard from `if summary_obj` to `if isinstance(summary_obj, dict)` to prevent AttributeError on string values.
+3. **`eval_by_number` KeyError** — The dict comprehension `{e["article_number"]: e for e in evaluations}` would crash if Claude returned an evaluation missing the `article_number` key. Added a `.get()` check to skip malformed entries.
+
 ## [2026-03-26] Fix enclosure AttributeError in fetch_articles_from_inoreader
 Inoreader's `enclosure` field can be a list instead of a dict. Calling `.get("href")` on a list throws an `AttributeError`. Fixed to handle all cases: if enclosure is a list, take the first item; if it's a dict, call `.get("href")` directly; otherwise set image to `None`.
 
