@@ -131,6 +131,24 @@ def fetch_articles_from_inoreader() -> list[dict]:
         published_timestamp = item.get("published", 0)
         published_dt = datetime.fromtimestamp(published_timestamp, tz=timezone.utc)
         published_str = published_dt.strftime("%Y-%m-%d %H:%M UTC")
+
+        # Extract thumbnail image URL
+        import re as _re
+        image_url = None
+        visual = item.get("visual") or {}
+        v_url = visual.get("url")
+        if v_url:
+            image_url = v_url
+        if not image_url and raw_summary:
+            img_m = _re.search(r'<img[^>]+src=["\']([^"\']+)["\']', raw_summary, _re.IGNORECASE)
+            if img_m:
+                image_url = img_m.group(1)
+        if not image_url:
+            enclosure = item.get("enclosure") or {}
+            enc_href = enclosure.get("href")
+            if enc_href:
+                image_url = enc_href
+
         if title and link:
             articles.append({
                 "title":     title,
@@ -138,6 +156,7 @@ def fetch_articles_from_inoreader() -> list[dict]:
                 "summary":   summary,
                 "source":    source,
                 "published": published_str,
+                "image":     image_url,
             })
 
     print(f"   Processed {len(articles)} articles with valid titles and links.")
@@ -675,11 +694,12 @@ This is normal — not every day has carousel-worthy content. Check back tomorro
                 link_line = "*Trending on Google right now*"
             else:
                 link_line = ""
+            image_line = f"\n**Image:** {pick['image']}" if pick.get('image') else ""
             content += f"""## Pick #{i} — Score: {pick['score']}/10
 
 **{pick['title']}**
 *{pick['source']}*
-{link_line}
+{link_line}{image_line}
 
 **Why it scored high:**
 {pick.get('why', 'N/A')}

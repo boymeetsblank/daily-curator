@@ -78,6 +78,9 @@ jobs:
                   lm = re.search(r'\[Read the full article →\]\(([^)]+)\)', block)
                   link = lm.group(1) if lm else None
 
+                  im = re.search(r'\*\*Image:\*\*\s*(\S+)', block)
+                  image = im.group(1) if im else None
+
                   trend_label = None
                   if '*Trending on X right now*' in block:
                       trend_label = 'Trending on X right now'
@@ -102,6 +105,7 @@ jobs:
                           'title': title,
                           'source': source,
                           'link': link,
+                          'image': image,
                           'trend_label': trend_label,
                           'why': why,
                           'angle': angle,

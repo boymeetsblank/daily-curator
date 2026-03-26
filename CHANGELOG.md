@@ -4,6 +4,9 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-25] Article thumbnail images on pick cards
+Extracts a thumbnail image URL from each Inoreader article and displays it at the top of pick cards in the web feed. Extraction checks three sources in order: (1) Inoreader's `visual.url` field, (2) the first `<img>` src tag in the summary HTML, (3) the RSS `enclosure.href`. The URL is saved to the picks markdown file as `**Image:** url`. `deploy-pages.yml` parses the field into `picks_data.json`. In the feed, cards with an image show a full-width thumbnail (max 200px tall, `object-fit: cover`, rounded top corners) that bleeds to the card edges. Trend items (X/Google) have no image and render unchanged. Images that fail to load are hidden silently.
+
 ## [2026-03-25] Fix deploy-pages not triggering after Daily Curator runs
 Added a `workflow_run` trigger to `deploy-pages.yml` so the feed deploys automatically whenever the "Daily Curator" workflow completes successfully on `main`. The job is conditional (`conclusion == 'success'`) so failed curator runs don't trigger a deploy. Push and `workflow_dispatch` triggers are preserved.
 

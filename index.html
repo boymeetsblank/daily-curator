@@ -155,6 +155,16 @@
       border-radius: 10px;
       padding: 16px 18px;
       margin-bottom: 8px;
+      overflow: hidden;
+    }
+
+    .card-thumbnail {
+      display: block;
+      width: calc(100% + 36px);
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 9px 9px 0 0;
+      margin: -16px -18px 14px -18px;
     }
 
     .card-top {
@@ -658,7 +668,12 @@
       ? `<a class="read-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer">Read article →</a>`
       : `<span class="trend-source-label">${esc(trendLabel(pick))}</span>`;
 
+    const thumbnail = pick.image
+      ? `<img class="card-thumbnail" src="${esc(pick.image)}" alt="" loading="lazy" onerror="this.style.display='none'">`
+      : '';
+
     return `<div class="pick-card" data-score="${pick.score}">
+      ${thumbnail}
       <div class="card-top">
         <span class="score-badge">${pick.score}</span>
         <span class="card-source">${esc(pick.source)}</span>
