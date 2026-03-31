@@ -4,6 +4,15 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-30] Introduce "Blank" wordmark in header
+
+Replaced `@boymeetsblank_` handle with the product name **Blank** and redesigned the wordmark typographically:
+
+- **Wordmark**: `Blank` rendered in all-caps via `text-transform: uppercase`, `letter-spacing: 0.22em`, `font-weight: 400`, `font-size: 13px` — tracked sans-serif in regular weight. The architectural spacing makes five letters feel like a designed mark rather than typed text. Regular (not bold) weight is intentional: confidence through restraint.
+- **Tagline**: Retained as italic Georgia `font-size: 10.5px`, `color: var(--ink-4)` — the warm humanist serif beneath the cold geometric wordmark creates deliberate typographic contrast that mirrors the product's identity (sharp curation + cultural depth)
+- **Brand-block gap**: increased from `3px` to `5px` to give the tracked wordmark proper breathing room above the tagline
+- **`<title>`** and **`og:title`** updated to `Blank — Daily Picks`
+
 ## [2026-03-30] Remove time-of-day filter pills — flat reverse-chronological feed
 
 Replaced the Morning/Afternoon/Evening filter system with a simple reverse-chronological stream:
