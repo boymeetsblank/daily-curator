@@ -314,7 +314,9 @@
     ───────────────────────────────────────── */
     .card-image-wrap {
       width: 100%;
-      height: 220px;
+      /* No fixed height — image sets its own height at natural aspect ratio.
+         max-height caps portrait images; overflow:hidden clips any excess. */
+      max-height: 360px;
       overflow: hidden;
       background: #e8e3dc;
       position: relative;
@@ -322,7 +324,7 @@
 
     .card-image-wrap.hidden { display: none; }
 
-    /* Subtle bottom fade — softens the hard image/body edge cut */
+    /* Subtle bottom fade — softens the transition to card body */
     .card-image-wrap::after {
       content: '';
       position: absolute;
@@ -335,9 +337,9 @@
 
     .card-thumbnail {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      /* Anchor crop to upper portion — faces and subjects live here, not dead center */
+      height: auto;           /* natural aspect ratio — no forced crop */
+      max-height: 360px;      /* matches container; object-fit only fires here */
+      object-fit: cover;      /* fallback for tall images that hit the cap */
       object-position: center 25%;
       display: block;
       transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -705,7 +707,6 @@
       .filter-bar { padding: 7px 16px; }
       .page-wrapper { padding: 14px 14px 80px; }
       .pick-card { border-radius: 10px; }
-      .card-image-wrap { height: 185px; }
       .card-title { font-size: 16.5px; }
       .filter-pills .pill-btn { padding: 3px 8px; }
       .filter-count { display: none; }

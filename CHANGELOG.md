@@ -4,6 +4,16 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-30] Fix thumbnail cropping permanently — variable height at natural aspect ratio
+
+Replaced the fixed-height `object-fit: cover` image container with a variable-height approach that displays images at their natural aspect ratio:
+
+- **`.card-image-wrap`**: Removed `height: 220px`. Now uses `max-height: 360px` + `overflow: hidden` as the only size constraint. The container grows to fit the image rather than forcing the image to fill a fixed box.
+- **`.card-thumbnail`**: Changed `height: 100%` → `height: auto` so images render at natural proportions. `max-height: 360px` matches the container cap; `object-fit: cover` + `object-position: center 25%` only activates as a fallback when a portrait image exceeds the cap.
+- **Reasoning**: 360px was chosen because the most common og:image format (1200×628, ≈1.91:1) renders at ~366px at 700px container width — meaning standard article images display completely uncropped. Wide images display shorter; portrait images are capped and covered from the top 25%.
+- **`object-fit: contain` rejected**: Creates letterboxing bars of varying widths depending on image aspect ratio — inconsistent and harder to make look intentional than variable-height natural display.
+- Removed mobile `height: 185px` override — no longer needed since there is no fixed height to override.
+
 ## [2026-03-30] Fix article thumbnail image cropping
 
 Two targeted CSS fixes to make card images look editorial rather than awkwardly cropped:
