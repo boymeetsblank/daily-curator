@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-30] Add APIFY_API_TOKEN to daily_curator.yml env
+
+Added `APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}` to the "Run Daily Curator" step env block so Apify trend fetching works in GitHub Actions.
+
 ## [2026-03-30] Update CLAUDE.md with Platform Vision, Git Workflow, and Feature Roadmap
 
 Added three new sections to CLAUDE.md:
