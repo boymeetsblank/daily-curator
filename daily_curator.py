@@ -9,9 +9,11 @@ import time
 import base64
 from datetime import datetime, timezone, timedelta
 
+import re
 import requests
 import anthropic
 from dotenv import load_dotenv
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 load_dotenv()
 
@@ -165,6 +167,73 @@ def fetch_articles_from_inoreader() -> list[dict]:
             })
 
     print(f"   Processed {len(articles)} articles with valid titles and links.")
+    return articles
+
+
+def _fetch_og_image(url: str) -> str | None:
+    """
+    Fetch a single article URL and extract its og:image meta tag.
+    Returns the image URL string, or None if not found or on any error.
+    Hard timeout of 5 seconds.
+    """
+    try:
+        response = requests.get(
+            url,
+            timeout=5,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; DailyCurator/1.0)"},
+            allow_redirects=True,
+        )
+        if not response.ok:
+            return None
+        if "html" not in response.headers.get("content-type", ""):
+            return None
+        # Read only the first 50 KB — <head> is always near the top
+        html = response.text[:50000]
+        # Match either attribute order: property then content, or content then property
+        match = re.search(
+            r'<meta[^>]+(?:'
+            r'property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']'
+            r'|content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']'
+            r')',
+            html, re.IGNORECASE
+        )
+        if match:
+            return (match.group(1) or match.group(2)).strip() or None
+        return None
+    except Exception:
+        return None
+
+
+def enrich_articles_with_og_images(articles: list[dict]) -> list[dict]:
+    """
+    For articles that have no image URL from the RSS feed, fetch the article
+    page and extract the og:image meta tag as a fallback.
+    Requests run concurrently (up to 10 workers) with a 5-second per-request
+    timeout so this step adds minimal time to the overall run.
+    """
+    needs_og = [a for a in articles if not a.get("image") and a.get("link")]
+    if not needs_og:
+        return articles
+
+    print(f"\n🖼️  Fetching OG images for {len(needs_og)} articles without thumbnails...")
+
+    found = 0
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        future_to_article = {
+            executor.submit(_fetch_og_image, article["link"]): article
+            for article in needs_og
+        }
+        for future in as_completed(future_to_article):
+            article = future_to_article[future]
+            try:
+                og_url = future.result()
+                if og_url:
+                    article["image"] = og_url
+                    found += 1
+            except Exception:
+                pass
+
+    print(f"   ✅ Found OG images for {found}/{len(needs_og)} articles.")
     return articles
 
 
@@ -732,6 +801,7 @@ def main():
 
     check_setup()
     articles = fetch_articles_from_inoreader()
+    articles = enrich_articles_with_og_images(articles)
 
     if not articles:
         print(f"\n⚠️  No articles found from the last {HOURS_BACK} hours.")

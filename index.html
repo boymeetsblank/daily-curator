@@ -3,119 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@boymeetsblank_ — Daily Picks</title>
+  <title>Blank — Daily Picks</title>
+  <meta name="description" content="Intentionally finite. Culturally relevant.">
+  <meta property="og:title" content="Blank — Daily Picks">
+  <meta property="og:description" content="Intentionally finite. Culturally relevant.">
+  <meta property="og:type" content="website">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      background: #0a0a0a;
-      color: #e8e8e8;
-      line-height: 1.5;
-      -webkit-font-smoothing: antialiased;
+    :root {
+      --bg:       #fafaf8;
+      --surface:  #ffffff;
+      --ink:      #1c1917;
+      --ink-2:    #44403c;
+      --ink-3:    #78716c;
+      --ink-4:    #a8a29e;
+      --border:   rgba(0,0,0,0.07);
+      --border-s: rgba(0,0,0,0.05);
+      --amber:    #d97706;
+      --serif:    Georgia, 'Times New Roman', serif;
+      --sans:     -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     }
 
-    /* ── Header ── */
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ─────────────────────────────────────────
+       HEADER
+    ───────────────────────────────────────── */
     header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: #0a0a0a;
-      border-bottom: 0.5px solid #1a1a1a;
-      padding: 12px 20px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
     }
 
     .header-inner {
-      max-width: 680px;
+      max-width: 700px;
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
+      gap: 16px;
     }
 
-    .header-brand-group {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
+    .brand-block { display: flex; flex-direction: column; gap: 5px; }
 
     .brand {
-      font-size: 15px;
-      font-weight: 500;
-      color: #fff;
-      letter-spacing: -0.2px;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink);
+      line-height: 1;
     }
 
     .tagline {
-      font-size: 11px;
-      color: #3a3a3a;
-      font-weight: 400;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 10.5px;
+      color: var(--ink-4);
+      letter-spacing: 0.01em;
     }
 
     .header-actions {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       flex-shrink: 0;
     }
 
-    .filter-right {
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-shrink: 0;
-    }
-
-    .run-meta {
-      font-size: 11px;
-      color: #444;
-      font-variant-numeric: tabular-nums;
-      letter-spacing: 0.01em;
-      white-space: nowrap;
-    }
-
-    .run-meta-sep {
-      font-size: 11px;
-      color: #2a2a2a;
-    }
-
-    /* ── Pill buttons (shared) ── */
+    /* ─────────────────────────────────────────
+       PILL BUTTONS
+    ───────────────────────────────────────── */
     .pill-btn {
-      font-family: inherit;
+      font-family: var(--sans);
       font-size: 12px;
       font-weight: 500;
-      padding: 5px 12px;
+      padding: 5px 14px;
       border-radius: 100px;
-      border: 0.5px solid #272727;
+      border: 1px solid rgba(0,0,0,0.12);
       background: transparent;
-      color: #555;
+      color: var(--ink-3);
       cursor: pointer;
-      transition: background 0.1s, color 0.1s, border-color 0.1s;
+      transition: background 0.12s, color 0.12s, border-color 0.12s;
       line-height: 1.4;
       white-space: nowrap;
     }
 
-    .pill-btn:hover { background: #141414; color: #bbb; border-color: #333; }
+    .pill-btn:hover  { background: var(--bg); color: var(--ink); border-color: rgba(0,0,0,0.22); }
+    .pill-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
 
-    .pill-btn.active {
-      background: #e8e8e8;
-      color: #111;
-      border-color: #e8e8e8;
+    /* ─────────────────────────────────────────
+       X TRENDING TICKER
+    ───────────────────────────────────────── */
+    .ticker-wrap {
+      position: sticky;
+      z-index: 95;
+      background: var(--ink);
+      height: 36px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      top: 57px; /* CSS fallback */
     }
 
-    /* ── Filter bar ── */
+    .ticker-label {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 0 14px 0 20px;
+      white-space: nowrap;
+      position: relative;
+      z-index: 2;
+    }
+
+    .ticker-x-logo {
+      width: 13px;
+      height: 13px;
+      flex-shrink: 0;
+      color: #fff;
+      display: block;
+    }
+
+    .ticker-label-text {
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .ticker-sep {
+      width: 1px;
+      height: 15px;
+      background: rgba(255,255,255,0.12);
+      flex-shrink: 0;
+    }
+
+    .ticker-fade-l {
+      position: absolute;
+      left: 118px; top: 0; height: 100%; width: 30px;
+      background: linear-gradient(to right, var(--ink), transparent);
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .ticker-fade-r {
+      position: absolute;
+      right: 0; top: 0; height: 100%; width: 40px;
+      background: linear-gradient(to left, var(--ink), transparent);
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .ticker-track { flex: 1; overflow: hidden; }
+
+    .ticker-inner {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0 10px;
+      animation: ticker-scroll 40s linear infinite;
+      white-space: nowrap;
+    }
+
+    .ticker-inner:hover { animation-play-state: paused; }
+
+    @keyframes ticker-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .ticker-pill {
+      display: inline-flex;
+      align-items: center;
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.5);
+      padding: 3px 10px;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.05);
+      white-space: nowrap;
+      flex-shrink: 0;
+      cursor: default;
+      transition: color 0.12s, background 0.12s;
+    }
+
+    .ticker-pill::before {
+      content: '#';
+      margin-right: 3px;
+      font-size: 9.5px;
+      opacity: 0.35;
+    }
+
+    .ticker-pill:hover { color: #fff; background: rgba(255,255,255,0.1); }
+
+    /* ─────────────────────────────────────────
+       FILTER BAR
+    ───────────────────────────────────────── */
     .filter-bar {
       position: sticky;
       z-index: 90;
-      background: #0a0a0a;
-      border-bottom: 0.5px solid #1a1a1a;
-      padding: 8px 20px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 24px;
+      top: 93px; /* CSS fallback */
     }
 
     .filter-bar-inner {
-      max-width: 680px;
+      max-width: 700px;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -125,76 +233,153 @@
     .filter-date {
       font-size: 13px;
       font-weight: 500;
-      color: #e8e8e8;
+      color: var(--ink);
       flex-shrink: 0;
     }
 
-    .filter-pills {
-      display: flex;
-      gap: 5px;
-      margin-left: 2px;
-    }
-
-    .filter-pills .pill-btn {
-      font-size: 11px;
-      padding: 3px 10px;
-    }
-
-    .filter-count {
-      font-size: 12px;
-      color: #333;
-      flex-shrink: 0;
-    }
-
-    /* ── Page wrapper: narrow default, flex on wide ── */
-    .page-wrapper {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 20px 20px 80px;
-    }
-
-    /* ── Pick card ── */
-    .pick-card {
-      background: #111;
-      border: 0.5px solid #1e1e1e;
-      border-radius: 10px;
-      padding: 16px 18px;
-      margin-bottom: 8px;
-      overflow: hidden;
-    }
-
-    .card-thumbnail {
-      display: block;
-      width: calc(100% + 36px);
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 9px 9px 0 0;
-      margin: -16px -18px 14px -18px;
-    }
-
-    .card-top {
+    .filter-right {
+      margin-left: auto;
       display: flex;
       align-items: center;
       gap: 7px;
+      flex-shrink: 0;
+    }
+
+    .filter-count { font-size: 11px; color: var(--ink-4); }
+
+    .run-meta {
+      font-size: 10.5px;
+      color: var(--ink-4);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .run-meta-sep { font-size: 11px; color: rgba(0,0,0,0.15); }
+
+    .mobile-timer-row {
+      display: none;
+      font-size: 10.5px;
+      color: var(--ink-4);
+      padding: 4px 0 1px;
+    }
+
+    /* ─────────────────────────────────────────
+       PAGE LAYOUT
+    ───────────────────────────────────────── */
+    .page-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 28px 24px 100px;
+    }
+
+    /* ─────────────────────────────────────────
+       PICK CARD — Entry animation
+    ───────────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .pick-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
       margin-bottom: 10px;
+      overflow: hidden;
+      animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+      will-change: transform;
+      transition: box-shadow 0.22s ease, transform 0.22s ease;
+    }
+
+    /* Staggered entry delays */
+    #section-latest .pick-card:nth-child(1)  { animation-delay: 0.00s; }
+    #section-latest .pick-card:nth-child(2)  { animation-delay: 0.06s; }
+    #section-latest .pick-card:nth-child(3)  { animation-delay: 0.12s; }
+    #section-latest .pick-card:nth-child(4)  { animation-delay: 0.18s; }
+    #section-latest .pick-card:nth-child(5)  { animation-delay: 0.24s; }
+    #section-latest .pick-card:nth-child(6)  { animation-delay: 0.30s; }
+    #section-latest .pick-card:nth-child(7)  { animation-delay: 0.36s; }
+    #section-latest .pick-card:nth-child(8)  { animation-delay: 0.42s; }
+    #section-latest .pick-card:nth-child(9)  { animation-delay: 0.48s; }
+    #section-latest .pick-card:nth-child(10) { animation-delay: 0.54s; }
+
+    .pick-card:hover {
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+
+    /* ─────────────────────────────────────────
+       CARD IMAGE
+    ───────────────────────────────────────── */
+    .card-image-wrap {
+      width: 100%;
+      /* No fixed height — image sets its own height at natural aspect ratio.
+         max-height caps portrait images; overflow:hidden clips any excess. */
+      max-height: 360px;
+      overflow: hidden;
+      background: #e8e3dc;
+      position: relative;
+    }
+
+    .card-image-wrap.hidden { display: none; }
+
+    /* Subtle bottom fade — softens the transition to card body */
+    .card-image-wrap::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 52px;
+      background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.18));
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .card-thumbnail {
+      width: 100%;
+      height: auto;           /* natural aspect ratio — no forced crop */
+      max-height: 360px;      /* matches container; object-fit only fires here */
+      object-fit: cover;      /* fallback for tall images that hit the cap */
+      object-position: center 25%;
+      display: block;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .pick-card:hover .card-thumbnail { transform: scale(1.04); }
+
+    /* ─────────────────────────────────────────
+       CARD BODY
+    ───────────────────────────────────────── */
+    .card-body { padding: 15px 18px 14px; }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 9px;
       flex-wrap: wrap;
     }
 
     .score-badge {
-      font-size: 11px;
-      font-weight: 600;
-      padding: 2px 8px;
+      font-family: var(--sans);
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 2px 9px;
       border-radius: 100px;
-      background: #e8e8e8;
-      color: #111;
-      line-height: 1.5;
+      background: var(--ink);
+      color: #fff;
+      line-height: 1.55;
       flex-shrink: 0;
+      letter-spacing: 0.03em;
     }
 
+    .score-badge.score-high { background: var(--amber); }
+
     .card-source {
-      font-size: 12px;
-      color: #444;
-      font-weight: 400;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--ink-4);
     }
 
     .trend-sources-badge {
@@ -202,77 +387,84 @@
       font-weight: 500;
       padding: 1px 7px;
       border-radius: 100px;
-      border: 0.5px solid #252525;
-      color: #444;
-      line-height: 1.6;
+      border: 1px solid rgba(0,0,0,0.1);
+      color: var(--ink-4);
+      line-height: 1.65;
       flex-shrink: 0;
     }
 
     .card-timestamp {
       margin-left: auto;
-      font-size: 11px;
-      color: #2e2e2e;
+      font-size: 10.5px;
+      color: var(--ink-4);
       flex-shrink: 0;
     }
 
+    /* The key typographic choice: Georgia for headlines */
     .card-title {
-      font-size: 16px;
-      font-weight: 500;
-      color: #f0f0f0;
-      line-height: 1.4;
-      letter-spacing: -0.2px;
-      margin-bottom: 8px;
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.42;
+      letter-spacing: -0.1px;
+      margin-bottom: 10px;
     }
 
     .card-why {
       font-size: 13px;
-      color: #555;
-      line-height: 1.6;
-      margin-bottom: 12px;
-    }
-
-    /* ── Angle / carousel hook box ── */
-    .angle-box {
-      border-left: 2px solid #252525;
-      padding: 8px 12px;
+      color: var(--ink-3);
+      line-height: 1.68;
       margin-bottom: 14px;
     }
 
-    .angle-trigger {
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #383838;
-      margin-bottom: 5px;
-    }
-
-    .angle-text {
-      font-size: 13px;
-      color: #bbb;
-      line-height: 1.65;
-    }
-
-    /* ── Card bottom row ── */
-    .card-bottom {
+    /* ─────────────────────────────────────────
+       CARD FOOTER
+    ───────────────────────────────────────── */
+    .card-footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 10px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-s);
     }
 
+    /* Growing underline on hover — print-native feel */
     .read-link {
-      font-size: 13px;
-      color: #e8e8e8;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--ink);
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      position: relative;
     }
 
-    .read-link:hover { text-decoration: underline; }
+    .read-link::after {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0;
+      width: 0; height: 1px;
+      background: var(--ink);
+      transition: width 0.22s ease;
+    }
+
+    .read-link:hover::after { width: 100%; }
+
+    .read-arrow {
+      display: inline-block;
+      transition: transform 0.15s ease;
+    }
+
+    .read-link:hover .read-arrow { transform: translateX(3px); }
 
     .trend-source-label {
-      font-size: 13px;
-      color: #3a3a3a;
+      font-family: var(--serif);
       font-style: italic;
+      font-size: 12px;
+      color: var(--ink-4);
     }
 
     .feedback-btns {
@@ -282,54 +474,58 @@
     }
 
     .feedback-btn {
-      font-family: inherit;
-      font-size: 13px;
+      font-family: var(--sans);
+      font-size: 12px;
       background: transparent;
-      border: 0.5px solid #222;
-      border-radius: 6px;
-      width: 28px;
-      height: 26px;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 7px;
+      width: 30px;
+      height: 28px;
       cursor: pointer;
-      color: #333;
+      color: var(--ink-4);
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background 0.1s, color 0.1s;
+      transition: background 0.12s, color 0.12s, border-color 0.12s;
     }
 
-    .feedback-btn:hover { background: #181818; color: #aaa; }
-    .feedback-btn.voted-up   { background: #0d2118; color: #16a34a; border-color: #1a4a2e; }
-    .feedback-btn.voted-down { background: #200d0d; color: #dc2626; border-color: #4a1a1a; }
+    .feedback-btn:hover      { background: var(--bg); color: var(--ink-2); border-color: rgba(0,0,0,0.18); }
+    .feedback-btn.voted-up   { background: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
+    .feedback-btn.voted-down { background: #fef2f2; color: #dc2626; border-color: #fecaca; }
 
-    /* ── Archive section ── */
-    .archive-section { margin-top: 40px; }
+    /* ─────────────────────────────────────────
+       ARCHIVE
+    ───────────────────────────────────────── */
+    .archive-section { margin-top: 56px; }
 
     .archive-label {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #333;
-      margin-bottom: 12px;
+      color: var(--ink-4);
+      margin-bottom: 14px;
     }
 
-    .archive-list { border-top: 0.5px solid #1a1a1a; }
+    .archive-list { border-top: 1px solid var(--border); }
 
     .archive-row {
       display: flex;
-      align-items: center;
+      align-items: baseline;
       gap: 10px;
-      padding: 10px 0;
-      border-bottom: 0.5px solid #1a1a1a;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--border-s);
       text-decoration: none;
       color: inherit;
     }
 
-    a.archive-row:hover .archive-row-title { color: #aaa; }
+    a.archive-row:hover .archive-row-title { color: var(--ink); }
 
+    /* Georgia in the archive too — unified reading surface */
     .archive-row-title {
-      font-size: 13px;
-      color: #444;
+      font-family: var(--serif);
+      font-size: 13.5px;
+      color: var(--ink-3);
       flex: 1;
       white-space: nowrap;
       overflow: hidden;
@@ -338,157 +534,89 @@
     }
 
     .archive-row-meta {
-      font-size: 12px;
-      color: #2e2e2e;
+      font-size: 11px;
+      color: var(--ink-4);
       flex-shrink: 0;
       white-space: nowrap;
     }
 
-    /* ── Sidebar (hidden on narrow screens) ── */
-    .sidebar {
-      display: none;
-      width: 240px;
-      flex-shrink: 0;
-    }
+    /* ─────────────────────────────────────────
+       SIDEBAR (hidden on narrow screens)
+    ───────────────────────────────────────── */
+    .sidebar { display: none; }
 
     .sb-section {
-      padding-bottom: 18px;
-      margin-bottom: 18px;
-      border-bottom: 0.5px solid #161616;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-s);
     }
 
-    .sb-section:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
+    .sb-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 
     .sb-title {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.09em;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #333;
-      margin-bottom: 11px;
+      color: var(--ink-4);
+      margin-bottom: 12px;
     }
 
-    /* Stats row */
-    .sb-stats {
-      display: flex;
-      gap: 16px;
-    }
+    .sb-stats { display: flex; gap: 20px; }
 
-    .sb-stat {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-    }
+    .sb-stat { display: flex; flex-direction: column; gap: 2px; }
 
+    /* Georgia numerals in sidebar — editorial stats feel */
     .sb-stat-value {
-      font-size: 22px;
-      font-weight: 600;
-      color: #e8e8e8;
-      line-height: 1.1;
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.05;
       letter-spacing: -0.5px;
       font-variant-numeric: tabular-nums;
     }
 
-    .sb-stat-label {
-      font-size: 10px;
-      color: #333;
-    }
+    .sb-stat-label { font-size: 10px; color: var(--ink-4); }
 
-    /* Quick jump buttons */
-    .sb-jump-btn {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      padding: 6px 0;
-      font-size: 12px;
-      color: #555;
-      background: transparent;
-      border: none;
-      border-bottom: 0.5px solid #161616;
-      cursor: pointer;
-      font-family: inherit;
-      text-align: left;
-      transition: color 0.1s;
-    }
-
-    .sb-jump-btn:last-child { border-bottom: none; }
-    .sb-jump-btn:hover { color: #bbb; }
-    .sb-jump-btn.unavailable { opacity: 0.22; cursor: default; pointer-events: none; }
-
-    .sb-jump-arrow { color: #2e2e2e; font-size: 11px; }
-
-    /* Trending items */
-    .sb-trend-item {
-      padding: 6px 0;
-      border-bottom: 0.5px solid #161616;
-    }
-
-    .sb-trend-item:last-child { border-bottom: none; }
-
-    .sb-trend-platform {
-      font-size: 10px;
-      color: #2e2e2e;
-      margin-bottom: 2px;
-    }
-
-    .sb-trend-topic {
-      font-size: 12px;
-      color: #555;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    /* Top pick of the week */
     .sb-top-pick {
       display: block;
-      background: #111;
-      border: 0.5px solid #1e1e1e;
-      border-radius: 8px;
-      padding: 11px 13px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 13px 14px;
       text-decoration: none;
+      transition: box-shadow 0.15s;
     }
 
-    .sb-top-pick-header {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      margin-bottom: 7px;
-    }
+    .sb-top-pick:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+
+    .sb-top-pick-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
 
     .sb-top-pick-title {
-      font-size: 12px;
-      color: #bbb;
+      font-family: var(--serif);
+      font-size: 12.5px;
+      color: var(--ink-2);
       line-height: 1.45;
       overflow-wrap: break-word;
     }
 
-    .sb-top-pick-meta {
-      font-size: 10px;
-      color: #2e2e2e;
-      margin-top: 6px;
-    }
+    .sb-top-pick-meta { font-size: 10px; color: var(--ink-4); margin-top: 7px; }
 
-    /* Source breakdown */
     .sb-source-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 8px;
       padding: 5px 0;
-      border-bottom: 0.5px solid #161616;
+      border-bottom: 1px solid var(--border-s);
     }
 
     .sb-source-row:last-child { border-bottom: none; }
 
     .sb-source-name {
       font-size: 12px;
-      color: #555;
+      color: var(--ink-3);
       flex: 1;
       white-space: nowrap;
       overflow: hidden;
@@ -497,71 +625,65 @@
 
     .sb-source-count {
       font-size: 11px;
-      color: #2e2e2e;
+      color: var(--ink-4);
       flex-shrink: 0;
       font-variant-numeric: tabular-nums;
     }
 
     .sb-empty {
-      font-size: 12px;
-      color: #2e2e2e;
+      font-family: var(--serif);
       font-style: italic;
+      font-size: 12px;
+      color: var(--ink-4);
     }
 
-    /* ── Wide layout: sidebar visible ── */
+    /* ─────────────────────────────────────────
+       WIDE LAYOUT (≥1100px)
+    ───────────────────────────────────────── */
     @media (min-width: 1100px) {
       .header-inner,
-      .filter-bar-inner {
-        max-width: 944px;
-      }
+      .filter-bar-inner { max-width: 972px; }
 
       .page-wrapper {
-        max-width: 944px;
+        max-width: 972px;
         display: flex;
         align-items: flex-start;
-        gap: 24px;
+        gap: 32px;
       }
 
-      .content {
-        flex: 1;
-        min-width: 0;
-      }
+      .content { flex: 1; min-width: 0; }
 
       .sidebar {
         display: block;
-        width: 240px;
+        width: 244px;
+        flex-shrink: 0;
         position: sticky;
-        /* top set by JS */
       }
     }
 
-    /* ── Filter hidden ── */
-    .filter-hidden { display: none !important; }
-
-    /* ── States ── */
+    /* ─────────────────────────────────────────
+       UTILITIES
+    ───────────────────────────────────────── */
     .state-msg {
       text-align: center;
-      color: #333;
+      color: var(--ink-4);
       padding: 80px 0;
-      font-size: 14px;
-      line-height: 1.8;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 15px;
+      line-height: 1.9;
     }
 
-    .mobile-timer-row {
-      display: none;
-      font-size: 11px;
-      color: #333;
-      letter-spacing: 0.01em;
-      padding: 5px 0 1px;
-    }
-
-    /* ── Mobile ── */
+    /* ─────────────────────────────────────────
+       MOBILE (≤520px)
+    ───────────────────────────────────────── */
     @media (max-width: 520px) {
       header { padding: 10px 16px; }
       .filter-bar { padding: 7px 16px; }
-      .page-wrapper { padding: 16px 16px 80px; }
-      .card-title { font-size: 15px; }
-      .filter-pills .pill-btn { padding: 3px 8px; font-size: 11px; }
+      .page-wrapper { padding: 14px 14px 80px; }
+      .pick-card { border-radius: 10px; }
+      .card-title { font-size: 16.5px; }
+      .filter-pills .pill-btn { padding: 3px 8px; }
       .filter-count { display: none; }
       #last-updated, .run-meta-sep, #next-run { display: none; }
       .mobile-timer-row { display: block; }
@@ -570,10 +692,11 @@
 </head>
 <body>
 
+<!-- ── Header ── -->
 <header>
   <div class="header-inner">
-    <div class="header-brand-group">
-      <div class="brand">@boymeetsblank_</div>
+    <div class="brand-block">
+      <div class="brand">Blank</div>
       <div class="tagline">intentionally finite, culturally relevant</div>
     </div>
     <div class="header-actions">
@@ -583,14 +706,24 @@
   </div>
 </header>
 
+<!-- ── X Trending Ticker ── -->
+<div class="ticker-wrap" id="ticker-wrap">
+  <div class="ticker-label">
+    <svg class="ticker-x-logo" viewBox="0 0 24 24" fill="currentColor" aria-label="X" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    <span class="ticker-label-text">Trending</span>
+  </div>
+  <div class="ticker-sep"></div>
+  <div class="ticker-fade-l"></div>
+  <div class="ticker-track">
+    <div class="ticker-inner" id="ticker-inner"></div>
+  </div>
+  <div class="ticker-fade-r"></div>
+</div>
+
+<!-- ── Filter bar ── -->
 <div class="filter-bar" id="filter-bar">
   <div class="filter-bar-inner">
     <span class="filter-date" id="filter-date">—</span>
-    <div class="filter-pills">
-      <button class="pill-btn filter-btn" data-value="Morning">Morning</button>
-      <button class="pill-btn filter-btn" data-value="Afternoon">Afternoon</button>
-      <button class="pill-btn filter-btn" data-value="Evening">Evening</button>
-    </div>
     <div class="filter-right">
       <span class="filter-count" id="filter-count"></span>
       <span class="run-meta" id="last-updated"></span>
@@ -601,66 +734,46 @@
   <div class="mobile-timer-row" id="mobile-timer-row"></div>
 </div>
 
+<!-- ── Page ── -->
 <div class="page-wrapper">
   <div class="content">
     <div id="feed-container">
-      <div class="state-msg">Loading picks…</div>
+      <div class="state-msg">Loading…</div>
     </div>
   </div>
   <aside class="sidebar" id="sidebar"></aside>
 </div>
 
 <script>
-  let filterLabel = null;
-
-  // ── HTML escaping ──────────────────────────────────────────
+  // ── HTML escaping ────────────────────────────────────────────
   function esc(str) {
     if (!str) return '';
     return str
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#039;');
+      .replace(/&/g,  '&amp;')
+      .replace(/</g,  '&lt;')
+      .replace(/>/g,  '&gt;')
+      .replace(/"/g,  '&quot;')
+      .replace(/'/g,  '&#039;');
   }
 
-  // ── Angle / carousel hook formatting ──────────────────────
-  function formatAngle(angle) {
-    if (!angle) return '';
-    const m = angle.match(/^\[TRIGGER:\s*([^\]]+)\]\s*([\s\S]*)/);
-    if (m) {
-      const trigger = esc(m[1].trim());
-      const lines   = m[2].split('/').map(l => l.trim()).filter(Boolean);
-      return `<div class="angle-box">
-        <div class="angle-trigger">${trigger}</div>
-        <div class="angle-text">${lines.map(l => esc(l)).join('<br>')}</div>
-      </div>`;
-    }
-    return `<div class="angle-box"><div class="angle-text">${esc(angle)}</div></div>`;
-  }
-
-  // ── Trending source label ──────────────────────────────────
-  function trendLabel(pick) {
-    const src = (pick.source || '').toLowerCase();
-    if (src.includes('twitter') || src.includes(' x ') || src.endsWith(' x') || src.startsWith('x ')) {
-      return 'Trending on X right now';
-    }
-    if (src.includes('google')) return 'Trending on Google right now';
-    return 'Trending right now';
-  }
-
-  function isTrendPick(pick) {
-    return !pick.link;
-  }
+  // ── Trend helpers ────────────────────────────────────────────
+  function isTrendPick(pick) { return !pick.link; }
 
   function trendPlatform(pick) {
-    const src = (pick.source || '').toLowerCase();
-    if (src.includes('twitter') || src.includes('x (twitter)') || src === 'x (twitter) trending') return 'X';
-    if (src.includes('google')) return 'Google';
+    const s = (pick.source || '').toLowerCase();
+    if (s.includes('twitter') || s.includes('x (twitter)') || s === 'x (twitter) trending') return 'X';
+    if (s.includes('google')) return 'Google';
     return null;
   }
 
-  // ── Feedback vote toggle ───────────────────────────────────
+  function trendLabel(pick) {
+    const s = (pick.source || '').toLowerCase();
+    if (s.includes('twitter') || s.includes(' x ') || s.endsWith(' x') || s.startsWith('x ')) return 'Trending on X right now';
+    if (s.includes('google')) return 'Trending on Google right now';
+    return 'Trending right now';
+  }
+
+  // ── Feedback votes ───────────────────────────────────────────
   function vote(btn, dir) {
     const btns = btn.parentElement;
     const up   = btns.querySelector(':first-child');
@@ -676,193 +789,131 @@
     }
   }
 
-  // ── Render a single pick card ──────────────────────────────
+  // ── Render a single pick card ────────────────────────────────
   function renderPickCard(pick, runDisplayTime) {
-    const sourceBadge = pick.trending_across_sources
-      ? `<span class="trend-sources-badge">3+ sources</span>`
-      : '';
+    const isHigh     = pick.score >= 9;
+    const scoreBadge = `<span class="score-badge${isHigh ? ' score-high' : ''}">${pick.score}</span>`;
+    const srcBadge   = pick.trending_across_sources
+      ? `<span class="trend-sources-badge">3+ sources</span>` : '';
 
-    const bottomLeft = pick.link
-      ? `<a class="read-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer">Read article →</a>`
+    const imageWrap  = pick.image
+      ? `<div class="card-image-wrap">
+           <img class="card-thumbnail" src="${esc(pick.image)}" alt="" loading="lazy"
+                onerror="this.closest('.card-image-wrap').classList.add('hidden')">
+         </div>` : '';
+
+    const footerLeft = pick.link
+      ? `<a class="read-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer">
+           Read article <span class="read-arrow">→</span>
+         </a>`
       : `<span class="trend-source-label">${esc(trendLabel(pick))}</span>`;
 
-    const thumbnail = pick.image
-      ? `<img class="card-thumbnail" src="${esc(pick.image)}" alt="" loading="lazy" onerror="this.style.display='none'">`
-      : '';
-
     return `<div class="pick-card" data-score="${pick.score}">
-      ${thumbnail}
-      <div class="card-top">
-        <span class="score-badge">${pick.score}</span>
-        <span class="card-source">${esc(pick.source)}</span>
-        ${sourceBadge}
-        <span class="card-timestamp">${esc(runDisplayTime)}</span>
-      </div>
-      <div class="card-title">${esc(pick.title)}</div>
-      ${pick.why    ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
-      ${formatAngle(pick.angle)}
-      <div class="card-bottom">
-        ${bottomLeft}
-        <div class="feedback-btns">
-          <button class="feedback-btn" onclick="vote(this,'up')" title="Good pick">↑</button>
-          <button class="feedback-btn" onclick="vote(this,'down')" title="Not for me">↓</button>
+      ${imageWrap}
+      <div class="card-body">
+        <div class="card-meta">
+          ${scoreBadge}
+          <span class="card-source">${esc(pick.source)}</span>
+          ${srcBadge}
+          <span class="card-timestamp">${esc(runDisplayTime)}</span>
+        </div>
+        <div class="card-title">${esc(pick.title)}</div>
+        ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
+        <div class="card-footer">
+          ${footerLeft}
+          <div class="feedback-btns">
+            <button class="feedback-btn" onclick="vote(this,'up')"   title="Good pick">↑</button>
+            <button class="feedback-btn" onclick="vote(this,'down')" title="Not for me">↓</button>
+          </div>
         </div>
       </div>
     </div>`;
   }
 
-  // ── Render a run group ─────────────────────────────────────
-  function renderRunGroup(run) {
-    let html = `<div class="run-group" data-label="${esc(run.label)}" data-date="${esc(run.ct_date || run.date)}">`;
-    for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
-    html += `</div>`;
-    return html;
-  }
-
-  // ── Update pick count ─────────────────────────────────────
+  // ── Pick count display ───────────────────────────────────────
   function updateCount() {
-    const visible = document.querySelectorAll('.run-group:not(.filter-hidden) .pick-card').length;
-    document.getElementById('filter-count').textContent =
-      visible ? `${visible} pick${visible !== 1 ? 's' : ''}` : '';
+    const n = document.querySelectorAll('#section-latest .pick-card').length;
+    document.getElementById('filter-count').textContent = n ? `${n} pick${n !== 1 ? 's' : ''}` : '';
   }
 
-  // ── Sidebar rendering ─────────────────────────────────────
+  // ── X Trending ticker ────────────────────────────────────────
+  function buildTicker(latestRuns) {
+    const wrap  = document.getElementById('ticker-wrap');
+    const inner = document.getElementById('ticker-inner');
+    if (!wrap || !inner) return;
+
+    const topics = latestRuns
+      .flatMap(r => r.picks)
+      .filter(p => isTrendPick(p) && trendPlatform(p) === 'X')
+      .map(p => p.title)
+      .filter(Boolean);
+
+    if (!topics.length) { wrap.style.display = 'none'; return; }
+
+    inner.innerHTML = [...topics, ...topics]
+      .map(t => `<span class="ticker-pill">${esc(t)}</span>`).join('');
+    inner.style.animationDuration = Math.max(20, topics.length * 5) + 's';
+  }
+
+  // ── Sidebar ──────────────────────────────────────────────────
   function renderSidebar(latestRuns, allRuns) {
-    const todayPicks = latestRuns.flatMap(r => r.picks);
+    const today = latestRuns.flatMap(r => r.picks);
+    const picks = today.length;
+    const top   = picks ? Math.max(...today.map(p => p.score)) : '—';
+    const runs  = latestRuns.length;
 
-    // ── 1. Today's stats ──
-    const picksCount = todayPicks.length;
-    const topScore   = todayPicks.length ? Math.max(...todayPicks.map(p => p.score)) : '—';
-    const runsCount  = latestRuns.length;
+    const statsHtml = `<div class="sb-section">
+      <div class="sb-title">Today</div>
+      <div class="sb-stats">
+        <div class="sb-stat"><span class="sb-stat-value">${picks}</span><span class="sb-stat-label">picks</span></div>
+        <div class="sb-stat"><span class="sb-stat-value">${top}</span><span class="sb-stat-label">top score</span></div>
+        <div class="sb-stat"><span class="sb-stat-value">${runs}</span><span class="sb-stat-label">runs</span></div>
+      </div>
+    </div>`;
 
-    const statsHtml = `
-      <div class="sb-section">
-        <div class="sb-title">Today's stats</div>
-        <div class="sb-stats">
-          <div class="sb-stat">
-            <span class="sb-stat-value">${picksCount}</span>
-            <span class="sb-stat-label">picks</span>
-          </div>
-          <div class="sb-stat">
-            <span class="sb-stat-value">${topScore}</span>
-            <span class="sb-stat-label">top score</span>
-          </div>
-          <div class="sb-stat">
-            <span class="sb-stat-value">${runsCount}</span>
-            <span class="sb-stat-label">runs</span>
-          </div>
-        </div>
-      </div>`;
-
-    // ── 2. Quick jump ──
-    const labels = ['Morning', 'Afternoon', 'Evening'];
-    const existingLabels = new Set(latestRuns.map(r => r.label));
-    const jumpBtns = labels.map(label => {
-      const available = existingLabels.has(label);
-      return `<button class="sb-jump-btn${available ? '' : ' unavailable'}"
-        onclick="jumpToLabel('${label}')">${label}<span class="sb-jump-arrow">↓</span></button>`;
-    }).join('');
-
-    const jumpHtml = `
-      <div class="sb-section">
-        <div class="sb-title">Quick jump</div>
-        ${jumpBtns}
-      </div>`;
-
-    // ── 3. Trending now ──
-    const trendingPicks = todayPicks.filter(p => isTrendPick(p));
-    let trendingHtml = '<div class="sb-section"><div class="sb-title">Trending now</div>';
-    if (trendingPicks.length === 0) {
-      trendingHtml += '<div class="sb-empty">No trend items today</div>';
-    } else {
-      // Group by platform, show up to 3 per platform
-      const byPlatform = {};
-      for (const p of trendingPicks) {
-        const platform = trendPlatform(p) || 'Other';
-        if (!byPlatform[platform]) byPlatform[platform] = [];
-        byPlatform[platform].push(p);
-      }
-      for (const [platform, picks] of Object.entries(byPlatform)) {
-        for (const p of picks.slice(0, 3)) {
-          trendingHtml += `<div class="sb-trend-item">
-            <div class="sb-trend-platform">${esc(platform)}</div>
-            <div class="sb-trend-topic">${esc(p.title)}</div>
-          </div>`;
-        }
-      }
-    }
-    trendingHtml += '</div>';
-
-    // ── 4. Top pick of the week ──
-    const now = new Date();
-    const cutoff = new Date(now);
+    const now = new Date(), cutoff = new Date(now);
     cutoff.setDate(cutoff.getDate() - 7);
-
-    let topWeekPick = null;
-    let topWeekMeta = '';
+    let topPick = null, topMeta = '';
     for (const run of allRuns) {
-      const runDate = new Date((run.ct_date || run.date) + 'T00:00:00');
-      if (runDate < cutoff) continue;
-      for (const pick of run.picks) {
-        if (!topWeekPick || pick.score > topWeekPick.score) {
-          topWeekPick = pick;
-          topWeekMeta = run.display_date || run.date;
-        }
+      if (new Date((run.ct_date || run.date) + 'T00:00:00') < cutoff) continue;
+      for (const p of run.picks) {
+        if (!topPick || p.score > topPick.score) { topPick = p; topMeta = run.display_date || run.date; }
       }
     }
 
-    let topPickHtml = '<div class="sb-section"><div class="sb-title">Top pick of the week</div>';
-    if (!topWeekPick) {
-      topPickHtml += '<div class="sb-empty">No picks yet</div>';
+    let topHtml = `<div class="sb-section"><div class="sb-title">Best this week</div>`;
+    if (!topPick) {
+      topHtml += '<div class="sb-empty">No picks yet</div>';
     } else {
-      const linkAttr = topWeekPick.link
-        ? ` href="${esc(topWeekPick.link)}" target="_blank" rel="noopener noreferrer"`
-        : '';
-      const tag = topWeekPick.link ? 'a' : 'div';
-      topPickHtml += `<${tag} class="sb-top-pick"${linkAttr}>
-        <div class="sb-top-pick-header">
-          <span class="score-badge">${topWeekPick.score}</span>
-        </div>
-        <div class="sb-top-pick-title">${esc(topWeekPick.title)}</div>
-        <div class="sb-top-pick-meta">${esc(topWeekMeta)}</div>
+      const tag  = topPick.link ? 'a' : 'div';
+      const href = topPick.link ? ` href="${esc(topPick.link)}" target="_blank" rel="noopener noreferrer"` : '';
+      topHtml += `<${tag} class="sb-top-pick"${href}>
+        <div class="sb-top-pick-header"><span class="score-badge${topPick.score >= 9 ? ' score-high' : ''}">${topPick.score}</span></div>
+        <div class="sb-top-pick-title">${esc(topPick.title)}</div>
+        <div class="sb-top-pick-meta">${esc(topMeta)}</div>
       </${tag}>`;
     }
-    topPickHtml += '</div>';
+    topHtml += '</div>';
 
-    // ── 5. Source breakdown ──
-    const sourceCounts = {};
-    for (const pick of todayPicks) {
-      if (isTrendPick(pick)) continue; // exclude trend-only items
-      sourceCounts[pick.source] = (sourceCounts[pick.source] || 0) + 1;
-    }
-    const sourcesArr = Object.entries(sourceCounts).sort((a, b) => b[1] - a[1]);
-
-    let sourcesHtml = '<div class="sb-section"><div class="sb-title">Source breakdown</div>';
-    if (sourcesArr.length === 0) {
-      sourcesHtml += '<div class="sb-empty">No sources yet</div>';
+    const counts = {};
+    today.filter(p => !isTrendPick(p)).forEach(p => { counts[p.source] = (counts[p.source] || 0) + 1; });
+    const sources = Object.entries(counts).sort((a,b) => b[1]-a[1]);
+    let srcHtml = `<div class="sb-section"><div class="sb-title">Sources today</div>`;
+    if (!sources.length) {
+      srcHtml += '<div class="sb-empty">No sources yet</div>';
     } else {
-      for (const [source, count] of sourcesArr) {
-        sourcesHtml += `<div class="sb-source-row">
-          <span class="sb-source-name">${esc(source)}</span>
-          <span class="sb-source-count">${count}</span>
-        </div>`;
-      }
+      sources.forEach(([s, c]) => {
+        srcHtml += `<div class="sb-source-row"><span class="sb-source-name">${esc(s)}</span><span class="sb-source-count">${c}</span></div>`;
+      });
     }
-    sourcesHtml += '</div>';
+    srcHtml += '</div>';
 
-    document.getElementById('sidebar').innerHTML =
-      statsHtml + jumpHtml + trendingHtml + topPickHtml + sourcesHtml;
+    document.getElementById('sidebar').innerHTML = statsHtml + topHtml + srcHtml;
   }
 
-  // ── Jump to run label ──────────────────────────────────────
-  function jumpToLabel(label) {
-    const group = document.querySelector(`.run-group[data-label="${label}"]`);
-    if (group) group.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  // ── Main render ───────────────────────────────────────────
+  // ── Main render ──────────────────────────────────────────────
   function render(runs) {
-    if (!runs || runs.length === 0) {
+    if (!runs || !runs.length) {
       document.getElementById('feed-container').innerHTML = '<div class="state-msg">No picks yet.</div>';
       return;
     }
@@ -873,58 +924,47 @@
 
     document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
-    let html = `<div id="section-latest">`;
-    for (const run of latestRuns) html += renderRunGroup(run);
-    html += `</div>`;
+    // Flatten today's picks in reverse-chronological order (latestRuns is already newest-first)
+    let html = '<div id="section-latest">';
+    for (const run of latestRuns) {
+      for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
+    }
+    html += '</div>';
 
-    if (olderRuns.length > 0) {
+    if (olderRuns.length) {
       const byDate = {};
       for (const run of olderRuns) {
         const rDate = run.ct_date || run.date;
-        if (!byDate[rDate]) byDate[rDate] = [];
-        byDate[rDate].push(run);
+        (byDate[rDate] = byDate[rDate] || []).push(run);
       }
-      const sortedDates = Object.keys(byDate).sort().reverse();
 
       html += `<div class="archive-section" id="archive-section">
         <div class="archive-label">Earlier</div>
         <div class="archive-list">`;
 
-      for (const date of sortedDates) {
-        for (const run of byDate[date]) {
-          for (const pick of run.picks) {
+      Object.keys(byDate).sort().reverse().forEach(date => {
+        byDate[date].forEach(run => {
+          run.picks.forEach(pick => {
             const tag  = pick.link ? 'a' : 'div';
             const href = pick.link ? ` href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer"` : '';
             html += `<${tag} class="archive-row" data-label="${esc(run.label)}"${href}>
               <span class="archive-row-title">${esc(pick.title)}</span>
               <span class="archive-row-meta">${pick.score} · ${esc(run.display_date)}</span>
             </${tag}>`;
-          }
-        }
-      }
+          });
+        });
+      });
 
-      html += `</div></div>`;
+      html += '</div></div>';
     }
 
     document.getElementById('feed-container').innerHTML = html;
     updateCount();
+    buildTicker(latestRuns);
     renderSidebar(latestRuns, runs);
   }
 
-  // ── Apply time-of-day filter ──────────────────────────────
-  function applyFilters() {
-    document.querySelectorAll('.run-group').forEach(group => {
-      const ok = !filterLabel || group.dataset.label === filterLabel;
-      group.classList.toggle('filter-hidden', !ok);
-    });
-    document.querySelectorAll('.archive-row').forEach(row => {
-      const ok = !filterLabel || row.dataset.label === filterLabel;
-      row.classList.toggle('filter-hidden', !ok);
-    });
-    updateCount();
-  }
-
-  // ── Wire interactive controls ─────────────────────────────
+  // ── Wire buttons ─────────────────────────────────────────────
   function wireButtons() {
     document.getElementById('btn-today').addEventListener('click', () => {
       document.getElementById('section-latest')?.scrollIntoView({ behavior: 'smooth' });
@@ -937,96 +977,79 @@
       document.getElementById('btn-archive').classList.add('active');
       document.getElementById('btn-today').classList.remove('active');
     });
-
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const value = btn.dataset.value;
-        filterLabel = (filterLabel === value) ? null : value;
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        if (filterLabel) btn.classList.add('active');
-        applyFilters();
-      });
-    });
   }
 
-  // ── Position sticky elements ──────────────────────────────
+  // ── Sticky positioning ───────────────────────────────────────
   function positionSticky() {
     const headerH = document.querySelector('header').offsetHeight;
-    const filterBar = document.getElementById('filter-bar');
-    filterBar.style.top = headerH + 'px';
-    const sidebar = document.getElementById('sidebar');
-    if (sidebar) {
-      sidebar.style.top = (headerH + filterBar.offsetHeight + 16) + 'px';
-    }
+    const tw      = document.getElementById('ticker-wrap');
+    const fb      = document.getElementById('filter-bar');
+    const sb      = document.getElementById('sidebar');
+
+    const twH = (tw && tw.style.display !== 'none') ? tw.offsetHeight : 0;
+    if (tw && tw.style.display !== 'none') tw.style.top = headerH + 'px';
+    fb.style.top = (headerH + twH) + 'px';
+    if (sb) sb.style.top = (headerH + twH + fb.offsetHeight + 16) + 'px';
   }
 
-  // ── Run timing ────────────────────────────────────────────
+  // ── Countdown timer ──────────────────────────────────────────
   const RUN_TIMES_UTC = [[13, 0], [18, 0], [2, 0]];
-
   let lastRunTime = null;
 
   function parseRunTime(run) {
     if (!run) return null;
-    const d = run.date;                   // "YYYY-MM-DD"
-    const t = run.time;                   // "HHMM" in UTC (Actions runner)
-    return new Date(`${d}T${t.slice(0, 2)}:${t.slice(2, 4)}:00Z`);
+    return new Date(`${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z`);
   }
 
   function getNextRunMs() {
     const now = new Date();
-    const candidates = RUN_TIMES_UTC.map(([h, m]) => {
-      const t = new Date(Date.UTC(
-        now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m, 0, 0
-      ));
+    return Math.min(...RUN_TIMES_UTC.map(([h,m]) => {
+      const t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m));
       if (t <= now) t.setUTCDate(t.getUTCDate() + 1);
-      return t;
-    });
-    return Math.min(...candidates.map(t => t.getTime())) - now.getTime();
+      return t.getTime();
+    })) - now.getTime();
   }
 
-  function formatNextRun(ms) {
+  function fmtNext(ms) {
     if (ms <= 0) return 'updating now';
-    const totalMin = Math.ceil(ms / 60000);
-    const h = Math.floor(totalMin / 60);
-    const m = totalMin % 60;
-    return h > 0 ? `Next in ${h}h ${m}m` : `Next in ${m}m`;
+    const m = Math.ceil(ms / 60000), h = Math.floor(m / 60);
+    return h > 0 ? `Next in ${h}h ${m % 60}m` : `Next in ${m}m`;
   }
 
-  function formatLastUpdated(ms) {
-    const totalMin = Math.floor(ms / 60000);
-    if (totalMin < 1)  return 'Updated just now';
-    if (totalMin < 60) return `Updated ${totalMin}m ago`;
-    const h = Math.floor(totalMin / 60);
-    const m = totalMin % 60;
-    return m > 0 ? `Updated ${h}h ${m}m ago` : `Updated ${h}h ago`;
+  function fmtLast(ms) {
+    const m = Math.floor(ms / 60000);
+    if (m < 1)  return 'Updated just now';
+    if (m < 60) return `Updated ${m}m ago`;
+    const h = Math.floor(m / 60), rm = m % 60;
+    return rm > 0 ? `Updated ${h}h ${rm}m ago` : `Updated ${h}h ago`;
   }
 
   function tickCountdown() {
     const nextEl   = document.getElementById('next-run');
     const lastEl   = document.getElementById('last-updated');
     const mobileEl = document.getElementById('mobile-timer-row');
-    const nextStr  = formatNextRun(getNextRunMs());
-    const lastStr  = lastRunTime ? formatLastUpdated(Date.now() - lastRunTime.getTime()) : null;
+    const nextStr  = fmtNext(getNextRunMs());
+    const lastStr  = lastRunTime ? fmtLast(Date.now() - lastRunTime.getTime()) : null;
     if (nextEl) nextEl.textContent = nextStr;
     if (lastEl && lastStr) lastEl.textContent = lastStr;
     if (mobileEl) mobileEl.textContent = lastStr ? `${lastStr} · ${nextStr}` : nextStr;
   }
 
-  // ── Bootstrap ─────────────────────────────────────────────
+  // ── Bootstrap ────────────────────────────────────────────────
   async function loadFeed() {
     try {
-      const res = await fetch('picks_data.json');
+      const res  = await fetch('picks_data.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      if (data.runs && data.runs.length > 0) lastRunTime = parseRunTime(data.runs[0]);
+      if (data.runs?.length) lastRunTime = parseRunTime(data.runs[0]);
       render(data.runs);
       wireButtons();
-      tickCountdown(); // refresh immediately with real last-run time
-      positionSticky(); // re-run after render in case heights changed
-    } catch (e) {
+      tickCountdown();
+      positionSticky();
+    } catch {
       document.getElementById('feed-container').innerHTML =
         `<div class="state-msg">Could not load picks.<br>
-        <small style="color:#2a2a2a">If testing locally, serve with a web server (not file://).</small></div>`;
+        <small style="font-family:var(--sans);font-size:11px">If testing locally, serve with a web server.</small></div>`;
     }
   }
 
@@ -1036,6 +1059,5 @@
   tickCountdown();
   setInterval(tickCountdown, 60000);
 </script>
-
 </body>
 </html>

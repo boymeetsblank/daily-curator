@@ -122,6 +122,33 @@ All 6 must be set in repo Settings → Secrets → Actions:
 
 ---
 
+## Platform Vision
+
+daily-curator started as a personal content scouting tool but the long-term vision is bigger:
+
+**Core mission:** A daily briefing tool that keeps people informed about what matters in their niche worlds. Not a content creator tool — a signal-over-noise intelligence layer for anyone who wants to stay sharp in a specific domain.
+
+**Unique angle:**
+- Natural language setup — describe your interests in plain English, the tool figures out the sources
+- AI editorial judgment — not just aggregation, but curation with transparent reasoning (why this story matters, why now)
+- Cross-platform signals — RSS feeds, X trends, Google trends, and more converge into one ranked briefing
+- Intentionally finite — 10 picks max per run, so every item earns its place
+
+**Long term:** A no-code AI curation platform open to the public. Anyone should be able to spin up their own daily briefing — sports, finance, tech, fashion, whatever their niche — without writing a line of code.
+
+**Planned phases:**
+- Phase 5 — Platform: natural language feed controls (describe what you want, AI updates your sources), dynamic source library (suggest + validate new RSS feeds on demand), public platform for anyone to create their own briefing
+- Breaking News Mode: a lightweight watchdog that runs every 30–60 minutes, surfaces ONE breaking pick per check, estimated cost $15–30/month — for users who can't wait for 3x/day
+- Always show X trending topics on feed: a dedicated section in the web feed showing the top 10–20 X trending topics from the latest run, always visible regardless of score filter
+
+---
+
+## Git Workflow
+
+**Always commit and push changes to the `main` branch.** Never push to any other branch unless explicitly instructed by the user.
+
+---
+
 ## Working Branch
 
 **Always develop and push on `main`.** Never use feature branches unless explicitly asked.

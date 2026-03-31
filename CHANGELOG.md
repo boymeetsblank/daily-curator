@@ -10,6 +10,111 @@ Pick card timestamps were showing raw UTC times, making them appear several hour
 
 - **`deploy-pages.yml`**: Switched from naive UTC datetime to `zoneinfo.ZoneInfo('America/Chicago')` conversion. `display_time` now shows CT time with a "CT" suffix (e.g. "8:00 AM CT"). `display_date` and `label` (Morning/Afternoon/Evening) are also derived from the CT hour, so the 9 PM CT run (02:00 UTC next day) now correctly shows as Evening, not Morning. Added `ct_date` field to each run (the CT calendar date) for grouping.
 - **`index.html`**: Run grouping logic ("today vs. earlier") now uses `run.ct_date` instead of `run.date` (UTC filename date), so the 9 PM CT run groups with the correct CT day rather than the next UTC day.
+## [2026-03-30] Fix X logo in trending ticker
+
+Replaced the styled `<span>` letter "X" in the ticker strip with the official X (Twitter) inline SVG mark (`viewBox="0 0 24 24"`). Updated CSS class from `.ticker-x` to `.ticker-x-logo` with proper `width`/`height`/`color` sizing.
+
+## [2026-03-30] Introduce "Blank" wordmark in header
+
+Replaced `@boymeetsblank_` handle with the product name **Blank** and redesigned the wordmark typographically:
+
+- **Wordmark**: `Blank` rendered in all-caps via `text-transform: uppercase`, `letter-spacing: 0.22em`, `font-weight: 400`, `font-size: 13px` — tracked sans-serif in regular weight. The architectural spacing makes five letters feel like a designed mark rather than typed text. Regular (not bold) weight is intentional: confidence through restraint.
+- **Tagline**: Retained as italic Georgia `font-size: 10.5px`, `color: var(--ink-4)` — the warm humanist serif beneath the cold geometric wordmark creates deliberate typographic contrast that mirrors the product's identity (sharp curation + cultural depth)
+- **Brand-block gap**: increased from `3px` to `5px` to give the tracked wordmark proper breathing room above the tagline
+- **`<title>`** and **`og:title`** updated to `Blank — Daily Picks`
+
+## [2026-03-30] Remove time-of-day filter pills — flat reverse-chronological feed
+
+Replaced the Morning/Afternoon/Evening filter system with a simple reverse-chronological stream:
+
+- **Removed from HTML**: the three `.filter-btn` pill buttons (`Morning`, `Afternoon`, `Evening`) from the filter bar
+- **Removed from CSS**: `.filter-pills` and `.filter-pills .pill-btn` rules; `.filter-hidden` utility class; `.sb-jump-btn` / `.sb-jump-arrow` sidebar styles
+- **Removed from JS**: `filterLabel` variable; `applyFilters()` function; filter-btn click listeners; `renderRunGroup()` function; `jumpToLabel()` function; sidebar Jump-to section
+- **Updated `render()`**: today's picks are now flattened into a single `#section-latest` container — runs iterate newest-first (already sorted that way), picks within each run render in order, producing a reverse-chronological stream with no grouping dividers
+- **Updated `updateCount()`**: now queries `#section-latest .pick-card` directly (no filter-hidden logic needed)
+- **Updated stagger selectors**: `#section-latest .pick-card:nth-child(n)` replaces the old `.run-group .pick-card:nth-child(n)` — stagger now applies across the full flat stream
+- **Kept**: date label, pick count, Today/Archive scroll buttons, timer, all card rendering logic
+
+## [2026-03-30] Fix thumbnail cropping permanently — variable height at natural aspect ratio
+
+Replaced the fixed-height `object-fit: cover` image container with a variable-height approach that displays images at their natural aspect ratio:
+
+- **`.card-image-wrap`**: Removed `height: 220px`. Now uses `max-height: 360px` + `overflow: hidden` as the only size constraint. The container grows to fit the image rather than forcing the image to fill a fixed box.
+- **`.card-thumbnail`**: Changed `height: 100%` → `height: auto` so images render at natural proportions. `max-height: 360px` matches the container cap; `object-fit: cover` + `object-position: center 25%` only activates as a fallback when a portrait image exceeds the cap.
+- **Reasoning**: 360px was chosen because the most common og:image format (1200×628, ≈1.91:1) renders at ~366px at 700px container width — meaning standard article images display completely uncropped. Wide images display shorter; portrait images are capped and covered from the top 25%.
+- **`object-fit: contain` rejected**: Creates letterboxing bars of varying widths depending on image aspect ratio — inconsistent and harder to make look intentional than variable-height natural display.
+- Removed mobile `height: 185px` override — no longer needed since there is no fixed height to override.
+
+## [2026-03-30] Fix article thumbnail image cropping
+
+Two targeted CSS fixes to make card images look editorial rather than awkwardly cropped:
+
+- **`object-position: center 25%`** on `.card-thumbnail` — anchors the visible crop to the upper portion of the image rather than the default `center center`. Editorial article photography places subjects, faces, and action in the upper half of frame; `25%` vertical position captures them without risk of clipping header text that sometimes sits at the very top edge of og:images
+- **Bottom-fade gradient overlay** via `.card-image-wrap::after` — a `transparent → rgba(255,255,255,0.18)` gradient over the bottom 52px of the image eliminates the harsh hard-cut between image and card body. Requires `position: relative` on `.card-image-wrap`, which was added
+
+## [2026-03-30] Redesign index.html — Contemporary Editorial aesthetic (frontend-design skill)
+
+Full redesign using the frontend-design skill with a committed aesthetic direction: **Contemporary Print Editorial** — the visual language of a premium culture magazine's digital presence, not a social app.
+
+**Aesthetic decisions:**
+- **Georgia serif for all article headlines** — the single most distinctive choice; gives editorial authority without importing any external font; also applied to archive titles, trend source labels, tagline, sidebar stats, and the loading state — creating a unified reading surface throughout
+- **CSS custom properties** (`--serif`, `--sans`, `--ink`, `--amber`, etc.) as the design system backbone
+- **Warm off-white page** (`#fafaf8`), pure white cards, near-black ink (`#1c1917`), amber `#d97706` for high scores (9–10)
+- **Tagline set in italic Georgia** — small, understated, but immediately signals editorial intent
+- **Sidebar stats in Georgia numerals** — large, quiet 26px figures that feel like a masthead rather than a dashboard
+
+**Motion:**
+- Staggered `fadeUp` entry animation on all cards: 60ms offset per child, `cubic-bezier(0.16, 1, 0.3, 1)` spring curve — cards populate with rhythm
+- Card hover: `translateY(-2px)` lift + soft shadow + image scales 1.04×
+- Read link uses a growing `::after` underline on hover (width 0→100%) — print-native feel, not a color change
+- Arrow on read link translates right 3px on hover
+
+**Ticker:** Dark `#1c1917` strip with italic serif `X` label, scrolling pills, fade gradients at both edges, animation pauses on hover
+
+**Removed:** Carousel hook / angle / psychological trigger labels entirely
+
+**Preserved:** Score badge, source (small-caps), headline, why it matters, read link, feedback arrows, sidebar, filter bar, mobile timer, all filtering logic
+
+## [2026-03-30] OG image fallback via concurrent HTTP fetch
+
+Added `enrich_articles_with_og_images()` as a post-processing step after `fetch_articles_from_inoreader()`. For any article that has no image URL from the three existing RSS sources (Inoreader `visual.url`, first `<img>` in summary HTML, `enclosure.href`), the function fetches the article's URL and parses the `<meta property="og:image">` tag as a fallback.
+
+Implementation details:
+- **Concurrent:** uses `ThreadPoolExecutor` (up to 10 workers) so all missing-image articles are fetched in parallel — wall-clock cost is approximately one 5-second timeout, not N×5 seconds
+- **Timeout:** hard 5-second timeout per request via `requests.get(..., timeout=5)`; any slow or unresponsive site is simply skipped
+- **Graceful failure:** all exceptions are caught and suppressed; on failure the article's `image` field stays `None`
+- **Attribute-order safe:** regex matches `og:image` meta tags with either attribute order (`property` before `content` or vice versa), handles both single and double quotes
+- **Efficient:** reads only the first 50 KB of each response since `<meta>` tags are always in `<head>`
+- **Fallback only:** skips articles that already have an image from the RSS feed, so existing image sources are unaffected
+- Added `import re` and `from concurrent.futures import ThreadPoolExecutor, as_completed` to top-level imports
+
+## [2026-03-30] Redesign index.html — light editorial theme with X trending ticker
+
+Complete visual redesign of the web feed:
+
+- **Color scheme:** Warm off-white page background (#f5f4f0), clean white cards and header — replaces dark theme
+- **Prominent images:** Card-image-wrap (216px desktop / 180px mobile) is the first element on each card; images scale subtly on card hover; broken images hide gracefully via onerror handler
+- **X Trending ticker:** Dark (#111) sticky strip pinned below the header shows today's X trending topics as scrolling pills with a CSS `@keyframes` animation. Animation pauses on hover. Duration scales with topic count. Strip auto-hides if no X trends are available
+- **Removed:** Carousel hook angle box and psychological trigger label entirely from all card displays
+- **Kept:** Score badge (amber tint for 9–10), source in small-caps, headline, "why it matters", read link with animated arrow gap, up/down feedback buttons
+- **Score badge:** `#1a1a1a` default; `#c2410c` amber-orange for scores 9–10
+- **Card hover:** Subtle lift (`translateY(-2px)`) and soft shadow; thumbnail scales 1.025x
+- **Sidebar (≥1100px):** Updated to match new palette — Today stats, Jump to, Top pick this week, Sources today
+- **Typography:** System font stack throughout, tighter letter-spacing on titles, muted gray secondary text
+- **Mobile:** 520px breakpoint, reduced image height, mobile-timer-row preserved
+- **OG meta tags:** Added `og:title`, `og:description`, `og:type` for clean social sharing
+- **positionSticky():** Now accounts for optional ticker height when positioning filter bar and sidebar
+
+## [2026-03-30] Add APIFY_API_TOKEN to daily_curator.yml env
+
+Added `APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}` to the "Run Daily Curator" step env block so Apify trend fetching works in GitHub Actions.
+
+## [2026-03-30] Update CLAUDE.md with Platform Vision, Git Workflow, and Feature Roadmap
+
+Added three new sections to CLAUDE.md:
+- **Platform Vision** — documents the core mission (daily briefing tool, not a content creator tool), unique angle (natural language setup, AI editorial judgment, cross-platform signals, intentionally finite), and long-term goal of a no-code public curation platform
+- **Git Workflow** — explicit rule to always commit and push to `main`, never to other branches unless instructed
+- **Planned phases** — Phase 5 Platform (natural language feed controls, dynamic source library, public platform), Breaking News Mode (30–60 min watchdog, one pick, $15–30/month), and always-show X trending topics section in the feed
 
 ## [2026-03-26] Fix three crash bugs in fetch_articles_from_inoreader and evaluate_articles_with_claude
 
