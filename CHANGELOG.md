@@ -4,6 +4,23 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-30] Redesign index.html — light editorial theme with X trending ticker
+
+Complete visual redesign of the web feed:
+
+- **Color scheme:** Warm off-white page background (#f5f4f0), clean white cards and header — replaces dark theme
+- **Prominent images:** Card-image-wrap (216px desktop / 180px mobile) is the first element on each card; images scale subtly on card hover; broken images hide gracefully via onerror handler
+- **X Trending ticker:** Dark (#111) sticky strip pinned below the header shows today's X trending topics as scrolling pills with a CSS `@keyframes` animation. Animation pauses on hover. Duration scales with topic count. Strip auto-hides if no X trends are available
+- **Removed:** Carousel hook angle box and psychological trigger label entirely from all card displays
+- **Kept:** Score badge (amber tint for 9–10), source in small-caps, headline, "why it matters", read link with animated arrow gap, up/down feedback buttons
+- **Score badge:** `#1a1a1a` default; `#c2410c` amber-orange for scores 9–10
+- **Card hover:** Subtle lift (`translateY(-2px)`) and soft shadow; thumbnail scales 1.025x
+- **Sidebar (≥1100px):** Updated to match new palette — Today stats, Jump to, Top pick this week, Sources today
+- **Typography:** System font stack throughout, tighter letter-spacing on titles, muted gray secondary text
+- **Mobile:** 520px breakpoint, reduced image height, mobile-timer-row preserved
+- **OG meta tags:** Added `og:title`, `og:description`, `og:type` for clean social sharing
+- **positionSticky():** Now accounts for optional ticker height when positioning filter bar and sidebar
+
 ## [2026-03-30] Add APIFY_API_TOKEN to daily_curator.yml env
 
 Added `APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}` to the "Run Daily Curator" step env block so Apify trend fetching works in GitHub Actions.
