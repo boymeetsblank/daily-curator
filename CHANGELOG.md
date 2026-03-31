@@ -4,6 +4,29 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-30] Redesign index.html — Contemporary Editorial aesthetic (frontend-design skill)
+
+Full redesign using the frontend-design skill with a committed aesthetic direction: **Contemporary Print Editorial** — the visual language of a premium culture magazine's digital presence, not a social app.
+
+**Aesthetic decisions:**
+- **Georgia serif for all article headlines** — the single most distinctive choice; gives editorial authority without importing any external font; also applied to archive titles, trend source labels, tagline, sidebar stats, and the loading state — creating a unified reading surface throughout
+- **CSS custom properties** (`--serif`, `--sans`, `--ink`, `--amber`, etc.) as the design system backbone
+- **Warm off-white page** (`#fafaf8`), pure white cards, near-black ink (`#1c1917`), amber `#d97706` for high scores (9–10)
+- **Tagline set in italic Georgia** — small, understated, but immediately signals editorial intent
+- **Sidebar stats in Georgia numerals** — large, quiet 26px figures that feel like a masthead rather than a dashboard
+
+**Motion:**
+- Staggered `fadeUp` entry animation on all cards: 60ms offset per child, `cubic-bezier(0.16, 1, 0.3, 1)` spring curve — cards populate with rhythm
+- Card hover: `translateY(-2px)` lift + soft shadow + image scales 1.04×
+- Read link uses a growing `::after` underline on hover (width 0→100%) — print-native feel, not a color change
+- Arrow on read link translates right 3px on hover
+
+**Ticker:** Dark `#1c1917` strip with italic serif `X` label, scrolling pills, fade gradients at both edges, animation pauses on hover
+
+**Removed:** Carousel hook / angle / psychological trigger labels entirely
+
+**Preserved:** Score badge, source (small-caps), headline, why it matters, read link, feedback arrows, sidebar, filter bar, mobile timer, all filtering logic
+
 ## [2026-03-30] OG image fallback via concurrent HTTP fetch
 
 Added `enrich_articles_with_og_images()` as a post-processing step after `fetch_articles_from_inoreader()`. For any article that has no image URL from the three existing RSS sources (Inoreader `visual.url`, first `<img>` in summary HTML, `enclosure.href`), the function fetches the article's URL and parses the `<meta property="og:image">` tag as a fallback.

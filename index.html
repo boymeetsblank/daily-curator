@@ -4,19 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@boymeetsblank_ — Daily Picks</title>
-  <meta name="description" content="Daily culturally relevant picks for @boymeetsblank_">
+  <meta name="description" content="Intentionally finite. Culturally relevant.">
   <meta property="og:title" content="@boymeetsblank_ — Daily Picks">
   <meta property="og:description" content="Intentionally finite. Culturally relevant.">
   <meta property="og:type" content="website">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    :root {
+      --bg:       #fafaf8;
+      --surface:  #ffffff;
+      --ink:      #1c1917;
+      --ink-2:    #44403c;
+      --ink-3:    #78716c;
+      --ink-4:    #a8a29e;
+      --border:   rgba(0,0,0,0.07);
+      --border-s: rgba(0,0,0,0.05);
+      --amber:    #d97706;
+      --serif:    Georgia, 'Times New Roman', serif;
+      --sans:     -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      background: #f5f4f0;
-      color: #1a1a1a;
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     /* ─────────────────────────────────────────
@@ -26,9 +41,9 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: #fff;
-      border-bottom: 1px solid rgba(0,0,0,0.07);
-      padding: 13px 20px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
     }
 
     .header-inner {
@@ -37,28 +52,29 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
+      gap: 16px;
     }
+
+    .brand-block { display: flex; flex-direction: column; gap: 3px; }
 
     .brand {
       font-size: 14px;
-      font-weight: 650;
-      color: #1a1a1a;
+      font-weight: 600;
+      color: var(--ink);
       letter-spacing: -0.3px;
     }
 
     .tagline {
-      font-size: 10.5px;
-      color: #b5b3ae;
-      font-weight: 400;
-      margin-top: 1px;
-      letter-spacing: 0.01em;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 11px;
+      color: var(--ink-4);
     }
 
     .header-actions {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 6px;
       flex-shrink: 0;
     }
 
@@ -66,27 +82,22 @@
        PILL BUTTONS
     ───────────────────────────────────────── */
     .pill-btn {
-      font-family: inherit;
+      font-family: var(--sans);
       font-size: 12px;
       font-weight: 500;
-      padding: 5px 13px;
+      padding: 5px 14px;
       border-radius: 100px;
-      border: 1px solid #e8e6e1;
+      border: 1px solid rgba(0,0,0,0.12);
       background: transparent;
-      color: #999;
+      color: var(--ink-3);
       cursor: pointer;
       transition: background 0.12s, color 0.12s, border-color 0.12s;
       line-height: 1.4;
       white-space: nowrap;
     }
 
-    .pill-btn:hover { background: #f5f4f0; color: #555; border-color: #d8d6d0; }
-
-    .pill-btn.active {
-      background: #1a1a1a;
-      color: #fff;
-      border-color: #1a1a1a;
-    }
+    .pill-btn:hover  { background: var(--bg); color: var(--ink); border-color: rgba(0,0,0,0.22); }
+    .pill-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
 
     /* ─────────────────────────────────────────
        X TRENDING TICKER
@@ -94,78 +105,74 @@
     .ticker-wrap {
       position: sticky;
       z-index: 95;
-      background: #111;
-      height: 38px;
+      background: var(--ink);
+      height: 36px;
       display: flex;
       align-items: center;
       overflow: hidden;
-      top: 56px; /* CSS fallback */
+      top: 57px; /* CSS fallback */
     }
 
     .ticker-label {
       flex-shrink: 0;
       display: flex;
       align-items: center;
-      gap: 6px;
-      padding: 0 12px 0 18px;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #fff;
+      gap: 7px;
+      padding: 0 14px 0 20px;
       white-space: nowrap;
       position: relative;
       z-index: 2;
     }
 
-    .ticker-x-icon {
-      font-size: 11px;
-      font-weight: 800;
+    .ticker-x {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
       line-height: 1;
     }
 
-    .ticker-label-sep {
+    .ticker-label-text {
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .ticker-sep {
       width: 1px;
-      height: 14px;
-      background: #333;
+      height: 15px;
+      background: rgba(255,255,255,0.12);
       flex-shrink: 0;
     }
 
-    .ticker-fade-left {
+    .ticker-fade-l {
       position: absolute;
-      left: 110px;
-      top: 0;
-      height: 100%;
-      width: 32px;
-      background: linear-gradient(to right, #111, transparent);
-      z-index: 2;
+      left: 118px; top: 0; height: 100%; width: 30px;
+      background: linear-gradient(to right, var(--ink), transparent);
+      z-index: 3;
       pointer-events: none;
     }
 
-    .ticker-fade-right {
+    .ticker-fade-r {
       position: absolute;
-      right: 0;
-      top: 0;
-      height: 100%;
-      width: 48px;
-      background: linear-gradient(to left, #111, transparent);
-      z-index: 2;
+      right: 0; top: 0; height: 100%; width: 40px;
+      background: linear-gradient(to left, var(--ink), transparent);
+      z-index: 3;
       pointer-events: none;
     }
 
-    .ticker-track {
-      flex: 1;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-    }
+    .ticker-track { flex: 1; overflow: hidden; }
 
     .ticker-inner {
       display: flex;
       align-items: center;
-      gap: 7px;
-      animation: ticker-scroll 36s linear infinite;
-      padding-left: 8px;
+      gap: 6px;
+      padding: 0 10px;
+      animation: ticker-scroll 40s linear infinite;
+      white-space: nowrap;
     }
 
     .ticker-inner:hover { animation-play-state: paused; }
@@ -180,26 +187,25 @@
       align-items: center;
       font-size: 11px;
       font-weight: 500;
-      color: #aaa;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.09);
+      color: rgba(255,255,255,0.5);
+      padding: 3px 10px;
       border-radius: 100px;
-      padding: 3px 11px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.05);
       white-space: nowrap;
       flex-shrink: 0;
       cursor: default;
       transition: color 0.12s, background 0.12s;
-      letter-spacing: 0.01em;
     }
 
     .ticker-pill::before {
       content: '#';
       margin-right: 3px;
-      opacity: 0.35;
       font-size: 9.5px;
+      opacity: 0.35;
     }
 
-    .ticker-pill:hover { color: #fff; background: rgba(255,255,255,0.11); }
+    .ticker-pill:hover { color: #fff; background: rgba(255,255,255,0.1); }
 
     /* ─────────────────────────────────────────
        FILTER BAR
@@ -207,10 +213,10 @@
     .filter-bar {
       position: sticky;
       z-index: 90;
-      background: #fff;
-      border-bottom: 1px solid rgba(0,0,0,0.07);
-      padding: 8px 20px;
-      top: 94px; /* CSS fallback */
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 24px;
+      top: 93px; /* CSS fallback */
     }
 
     .filter-bar-inner {
@@ -224,19 +230,13 @@
     .filter-date {
       font-size: 13px;
       font-weight: 500;
-      color: #1a1a1a;
+      color: var(--ink);
       flex-shrink: 0;
     }
 
-    .filter-pills {
-      display: flex;
-      gap: 4px;
-    }
+    .filter-pills { display: flex; gap: 4px; }
 
-    .filter-pills .pill-btn {
-      font-size: 11px;
-      padding: 3px 10px;
-    }
+    .filter-pills .pill-btn { font-size: 10.5px; padding: 3px 10px; }
 
     .filter-right {
       margin-left: auto;
@@ -246,24 +246,21 @@
       flex-shrink: 0;
     }
 
-    .filter-count {
-      font-size: 11.5px;
-      color: #c0bdb7;
-    }
+    .filter-count { font-size: 11px; color: var(--ink-4); }
 
     .run-meta {
-      font-size: 11px;
-      color: #c0bdb7;
+      font-size: 10.5px;
+      color: var(--ink-4);
       font-variant-numeric: tabular-nums;
       white-space: nowrap;
     }
 
-    .run-meta-sep { font-size: 11px; color: #ddd; }
+    .run-meta-sep { font-size: 11px; color: rgba(0,0,0,0.15); }
 
     .mobile-timer-row {
       display: none;
-      font-size: 11px;
-      color: #b0aead;
+      font-size: 10.5px;
+      color: var(--ink-4);
       padding: 4px 0 1px;
     }
 
@@ -273,34 +270,53 @@
     .page-wrapper {
       max-width: 700px;
       margin: 0 auto;
-      padding: 24px 20px 100px;
+      padding: 28px 24px 100px;
     }
 
     /* ─────────────────────────────────────────
-       PICK CARD
+       PICK CARD — Entry animation
     ───────────────────────────────────────── */
-    .pick-card {
-      background: #fff;
-      border: 1px solid rgba(0,0,0,0.07);
-      border-radius: 14px;
-      margin-bottom: 12px;
-      overflow: hidden;
-      transition: box-shadow 0.2s ease, transform 0.2s ease;
-      will-change: transform;
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
 
+    .pick-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+      will-change: transform;
+      transition: box-shadow 0.22s ease, transform 0.22s ease;
+    }
+
+    /* Staggered entry delays */
+    .run-group .pick-card:nth-child(1)  { animation-delay: 0.00s; }
+    .run-group .pick-card:nth-child(2)  { animation-delay: 0.06s; }
+    .run-group .pick-card:nth-child(3)  { animation-delay: 0.12s; }
+    .run-group .pick-card:nth-child(4)  { animation-delay: 0.18s; }
+    .run-group .pick-card:nth-child(5)  { animation-delay: 0.24s; }
+    .run-group .pick-card:nth-child(6)  { animation-delay: 0.30s; }
+    .run-group .pick-card:nth-child(7)  { animation-delay: 0.36s; }
+    .run-group .pick-card:nth-child(8)  { animation-delay: 0.42s; }
+    .run-group .pick-card:nth-child(9)  { animation-delay: 0.48s; }
+    .run-group .pick-card:nth-child(10) { animation-delay: 0.54s; }
+
     .pick-card:hover {
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.07);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
       transform: translateY(-2px);
     }
 
-    /* Image wrapper — maintains aspect ratio via fixed height */
+    /* ─────────────────────────────────────────
+       CARD IMAGE
+    ───────────────────────────────────────── */
     .card-image-wrap {
       width: 100%;
-      height: 216px;
+      height: 220px;
       overflow: hidden;
-      background: #ece9e3;
-      position: relative;
+      background: #e8e3dc;
     }
 
     .card-image-wrap.hidden { display: none; }
@@ -310,44 +326,45 @@
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.45s ease;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .pick-card:hover .card-thumbnail { transform: scale(1.025); }
+    .pick-card:hover .card-thumbnail { transform: scale(1.04); }
 
-    /* Card body */
-    .card-body {
-      padding: 16px 18px 15px;
-    }
+    /* ─────────────────────────────────────────
+       CARD BODY
+    ───────────────────────────────────────── */
+    .card-body { padding: 15px 18px 14px; }
 
     .card-meta {
       display: flex;
       align-items: center;
-      gap: 7px;
-      margin-bottom: 10px;
+      gap: 8px;
+      margin-bottom: 9px;
       flex-wrap: wrap;
     }
 
     .score-badge {
-      font-size: 11px;
+      font-family: var(--sans);
+      font-size: 10.5px;
       font-weight: 700;
       padding: 2px 9px;
       border-radius: 100px;
-      background: #1a1a1a;
+      background: var(--ink);
       color: #fff;
       line-height: 1.55;
       flex-shrink: 0;
       letter-spacing: 0.03em;
     }
 
-    .score-badge.score-high { background: #c2410c; } /* 9–10 */
+    .score-badge.score-high { background: var(--amber); }
 
     .card-source {
       font-size: 10px;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: #b0aead;
+      letter-spacing: 0.09em;
+      color: var(--ink-4);
     }
 
     .trend-sources-badge {
@@ -355,63 +372,84 @@
       font-weight: 500;
       padding: 1px 7px;
       border-radius: 100px;
-      border: 1px solid #ece9e3;
-      color: #b0aead;
+      border: 1px solid rgba(0,0,0,0.1);
+      color: var(--ink-4);
       line-height: 1.65;
       flex-shrink: 0;
     }
 
     .card-timestamp {
       margin-left: auto;
-      font-size: 11px;
-      color: #ccc;
+      font-size: 10.5px;
+      color: var(--ink-4);
       flex-shrink: 0;
     }
 
+    /* The key typographic choice: Georgia for headlines */
     .card-title {
-      font-size: 17px;
-      font-weight: 500;
-      color: #1a1a1a;
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--ink);
       line-height: 1.42;
-      letter-spacing: -0.25px;
-      margin-bottom: 9px;
+      letter-spacing: -0.1px;
+      margin-bottom: 10px;
     }
 
     .card-why {
-      font-size: 13.5px;
-      color: #6b7280;
+      font-size: 13px;
+      color: var(--ink-3);
       line-height: 1.68;
       margin-bottom: 14px;
     }
 
-    /* Card footer */
+    /* ─────────────────────────────────────────
+       CARD FOOTER
+    ───────────────────────────────────────── */
     .card-footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 10px;
       padding-top: 12px;
-      border-top: 1px solid rgba(0,0,0,0.06);
+      border-top: 1px solid var(--border-s);
     }
 
+    /* Growing underline on hover — print-native feel */
     .read-link {
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 500;
-      color: #1a1a1a;
+      color: var(--ink);
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      letter-spacing: -0.1px;
-      transition: gap 0.15s ease, opacity 0.15s;
+      position: relative;
     }
 
-    .read-link:hover { opacity: 0.65; gap: 8px; }
+    .read-link::after {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0;
+      width: 0; height: 1px;
+      background: var(--ink);
+      transition: width 0.22s ease;
+    }
+
+    .read-link:hover::after { width: 100%; }
+
+    .read-arrow {
+      display: inline-block;
+      transition: transform 0.15s ease;
+    }
+
+    .read-link:hover .read-arrow { transform: translateX(3px); }
 
     .trend-source-label {
-      font-size: 12px;
-      color: #b0aead;
+      font-family: var(--serif);
       font-style: italic;
+      font-size: 12px;
+      color: var(--ink-4);
     }
 
     .feedback-btns {
@@ -421,56 +459,58 @@
     }
 
     .feedback-btn {
-      font-family: inherit;
-      font-size: 13px;
+      font-family: var(--sans);
+      font-size: 12px;
       background: transparent;
-      border: 1px solid #ebe8e3;
-      border-radius: 8px;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 7px;
       width: 30px;
       height: 28px;
       cursor: pointer;
-      color: #ccc;
+      color: var(--ink-4);
       display: flex;
       align-items: center;
       justify-content: center;
       transition: background 0.12s, color 0.12s, border-color 0.12s;
     }
 
-    .feedback-btn:hover  { background: #f5f4f0; color: #888; border-color: #ddd; }
-    .feedback-btn.voted-up   { background: #f0fdf4; color: #16a34a; border-color: #bbf7d0; }
+    .feedback-btn:hover      { background: var(--bg); color: var(--ink-2); border-color: rgba(0,0,0,0.18); }
+    .feedback-btn.voted-up   { background: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
     .feedback-btn.voted-down { background: #fef2f2; color: #dc2626; border-color: #fecaca; }
 
     /* ─────────────────────────────────────────
        ARCHIVE
     ───────────────────────────────────────── */
-    .archive-section { margin-top: 52px; }
+    .archive-section { margin-top: 56px; }
 
     .archive-label {
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #c0bdb7;
+      color: var(--ink-4);
       margin-bottom: 14px;
     }
 
-    .archive-list { border-top: 1px solid rgba(0,0,0,0.07); }
+    .archive-list { border-top: 1px solid var(--border); }
 
     .archive-row {
       display: flex;
-      align-items: center;
+      align-items: baseline;
       gap: 10px;
       padding: 11px 0;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
+      border-bottom: 1px solid var(--border-s);
       text-decoration: none;
       color: inherit;
     }
 
-    a.archive-row:hover .archive-row-title { color: #1a1a1a; }
+    a.archive-row:hover .archive-row-title { color: var(--ink); }
 
+    /* Georgia in the archive too — unified reading surface */
     .archive-row-title {
-      font-size: 13px;
-      color: #999;
+      font-family: var(--serif);
+      font-size: 13.5px;
+      color: var(--ink-3);
       flex: 1;
       white-space: nowrap;
       overflow: hidden;
@@ -479,8 +519,8 @@
     }
 
     .archive-row-meta {
-      font-size: 11.5px;
-      color: #c0bdb7;
+      font-size: 11px;
+      color: var(--ink-4);
       flex-shrink: 0;
       white-space: nowrap;
     }
@@ -491,81 +531,84 @@
     .sidebar { display: none; }
 
     .sb-section {
-      padding-bottom: 18px;
-      margin-bottom: 18px;
-      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-s);
     }
 
     .sb-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 
     .sb-title {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.09em;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #c0bdb7;
-      margin-bottom: 11px;
+      color: var(--ink-4);
+      margin-bottom: 12px;
     }
 
-    .sb-stats { display: flex; gap: 18px; }
+    .sb-stats { display: flex; gap: 20px; }
 
-    .sb-stat { display: flex; flex-direction: column; gap: 1px; }
+    .sb-stat { display: flex; flex-direction: column; gap: 2px; }
 
+    /* Georgia numerals in sidebar — editorial stats feel */
     .sb-stat-value {
-      font-size: 22px;
-      font-weight: 600;
-      color: #1a1a1a;
-      line-height: 1.1;
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.05;
       letter-spacing: -0.5px;
       font-variant-numeric: tabular-nums;
     }
 
-    .sb-stat-label { font-size: 10px; color: #c0bdb7; }
+    .sb-stat-label { font-size: 10px; color: var(--ink-4); }
 
     .sb-jump-btn {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      padding: 7px 0;
+      padding: 8px 0;
+      font-family: var(--sans);
       font-size: 12px;
-      color: #999;
+      color: var(--ink-3);
       background: transparent;
       border: none;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
+      border-bottom: 1px solid var(--border-s);
       cursor: pointer;
-      font-family: inherit;
       text-align: left;
       transition: color 0.1s;
     }
 
     .sb-jump-btn:last-child { border-bottom: none; }
-    .sb-jump-btn:hover { color: #1a1a1a; }
-    .sb-jump-btn.unavailable { opacity: 0.28; cursor: default; pointer-events: none; }
-    .sb-jump-arrow { color: #d0cdc8; font-size: 11px; }
+    .sb-jump-btn:hover { color: var(--ink); }
+    .sb-jump-btn.unavailable { opacity: 0.25; cursor: default; pointer-events: none; }
+    .sb-jump-arrow { color: rgba(0,0,0,0.2); font-size: 11px; }
 
     .sb-top-pick {
       display: block;
-      background: #f9f7f4;
-      border: 1px solid rgba(0,0,0,0.07);
+      background: var(--bg);
+      border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 12px 13px;
+      padding: 13px 14px;
       text-decoration: none;
       transition: box-shadow 0.15s;
     }
 
-    .sb-top-pick:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+    .sb-top-pick:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
 
-    .sb-top-pick-header { display: flex; align-items: center; gap: 7px; margin-bottom: 7px; }
+    .sb-top-pick-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
 
     .sb-top-pick-title {
-      font-size: 12px;
-      color: #555;
+      font-family: var(--serif);
+      font-size: 12.5px;
+      color: var(--ink-2);
       line-height: 1.45;
       overflow-wrap: break-word;
     }
 
-    .sb-top-pick-meta { font-size: 10px; color: #c0bdb7; margin-top: 6px; }
+    .sb-top-pick-meta { font-size: 10px; color: var(--ink-4); margin-top: 7px; }
 
     .sb-source-row {
       display: flex;
@@ -573,14 +616,14 @@
       justify-content: space-between;
       gap: 8px;
       padding: 5px 0;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
+      border-bottom: 1px solid var(--border-s);
     }
 
     .sb-source-row:last-child { border-bottom: none; }
 
     .sb-source-name {
       font-size: 12px;
-      color: #888;
+      color: var(--ink-3);
       flex: 1;
       white-space: nowrap;
       overflow: hidden;
@@ -589,27 +632,30 @@
 
     .sb-source-count {
       font-size: 11px;
-      color: #c0bdb7;
+      color: var(--ink-4);
       flex-shrink: 0;
       font-variant-numeric: tabular-nums;
     }
 
-    .sb-empty { font-size: 12px; color: #ccc; font-style: italic; }
+    .sb-empty {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 12px;
+      color: var(--ink-4);
+    }
 
     /* ─────────────────────────────────────────
-       WIDE LAYOUT (≥1100px) — sidebar visible
+       WIDE LAYOUT (≥1100px)
     ───────────────────────────────────────── */
     @media (min-width: 1100px) {
       .header-inner,
-      .filter-bar-inner {
-        max-width: 972px;
-      }
+      .filter-bar-inner { max-width: 972px; }
 
       .page-wrapper {
         max-width: 972px;
         display: flex;
         align-items: flex-start;
-        gap: 28px;
+        gap: 32px;
       }
 
       .content { flex: 1; min-width: 0; }
@@ -619,7 +665,6 @@
         width: 244px;
         flex-shrink: 0;
         position: sticky;
-        /* top set by JS */
       }
     }
 
@@ -630,23 +675,25 @@
 
     .state-msg {
       text-align: center;
-      color: #c0bdb7;
+      color: var(--ink-4);
       padding: 80px 0;
-      font-size: 14px;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 15px;
       line-height: 1.9;
     }
 
     /* ─────────────────────────────────────────
-       MOBILE  (≤520px)
+       MOBILE (≤520px)
     ───────────────────────────────────────── */
     @media (max-width: 520px) {
       header { padding: 10px 16px; }
       .filter-bar { padding: 7px 16px; }
       .page-wrapper { padding: 14px 14px 80px; }
-      .pick-card { border-radius: 11px; }
-      .card-image-wrap { height: 180px; }
-      .card-title { font-size: 16px; }
-      .filter-pills .pill-btn { padding: 3px 9px; }
+      .pick-card { border-radius: 10px; }
+      .card-image-wrap { height: 185px; }
+      .card-title { font-size: 16.5px; }
+      .filter-pills .pill-btn { padding: 3px 8px; }
       .filter-count { display: none; }
       #last-updated, .run-meta-sep, #next-run { display: none; }
       .mobile-timer-row { display: block; }
@@ -658,9 +705,9 @@
 <!-- ── Header ── -->
 <header>
   <div class="header-inner">
-    <div>
+    <div class="brand-block">
       <div class="brand">@boymeetsblank_</div>
-      <div class="tagline">intentionally finite · culturally relevant</div>
+      <div class="tagline">intentionally finite, culturally relevant</div>
     </div>
     <div class="header-actions">
       <button class="pill-btn active" id="btn-today">Today</button>
@@ -672,15 +719,15 @@
 <!-- ── X Trending Ticker ── -->
 <div class="ticker-wrap" id="ticker-wrap">
   <div class="ticker-label">
-    <span class="ticker-x-icon">𝕏</span>
-    Trending
+    <span class="ticker-x">X</span>
+    <span class="ticker-label-text">Trending</span>
   </div>
-  <div class="ticker-label-sep"></div>
-  <div class="ticker-fade-left"></div>
+  <div class="ticker-sep"></div>
+  <div class="ticker-fade-l"></div>
   <div class="ticker-track">
     <div class="ticker-inner" id="ticker-inner"></div>
   </div>
-  <div class="ticker-fade-right"></div>
+  <div class="ticker-fade-r"></div>
 </div>
 
 <!-- ── Filter bar ── -->
@@ -706,7 +753,7 @@
 <div class="page-wrapper">
   <div class="content">
     <div id="feed-container">
-      <div class="state-msg">Loading picks…</div>
+      <div class="state-msg">Loading…</div>
     </div>
   </div>
   <aside class="sidebar" id="sidebar"></aside>
@@ -715,35 +762,35 @@
 <script>
   let filterLabel = null;
 
-  // ── HTML escaping ────────────────────────────────────────
+  // ── HTML escaping ────────────────────────────────────────────
   function esc(str) {
     if (!str) return '';
     return str
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#039;');
+      .replace(/&/g,  '&amp;')
+      .replace(/</g,  '&lt;')
+      .replace(/>/g,  '&gt;')
+      .replace(/"/g,  '&quot;')
+      .replace(/'/g,  '&#039;');
   }
 
-  // ── Source / trend helpers ───────────────────────────────
+  // ── Trend helpers ────────────────────────────────────────────
   function isTrendPick(pick) { return !pick.link; }
 
   function trendPlatform(pick) {
-    const src = (pick.source || '').toLowerCase();
-    if (src.includes('twitter') || src.includes('x (twitter)') || src === 'x (twitter) trending') return 'X';
-    if (src.includes('google')) return 'Google';
+    const s = (pick.source || '').toLowerCase();
+    if (s.includes('twitter') || s.includes('x (twitter)') || s === 'x (twitter) trending') return 'X';
+    if (s.includes('google')) return 'Google';
     return null;
   }
 
   function trendLabel(pick) {
-    const src = (pick.source || '').toLowerCase();
-    if (src.includes('twitter') || src.includes(' x ') || src.endsWith(' x') || src.startsWith('x ')) return 'Trending on X right now';
-    if (src.includes('google')) return 'Trending on Google right now';
+    const s = (pick.source || '').toLowerCase();
+    if (s.includes('twitter') || s.includes(' x ') || s.endsWith(' x') || s.startsWith('x ')) return 'Trending on X right now';
+    if (s.includes('google')) return 'Trending on Google right now';
     return 'Trending right now';
   }
 
-  // ── Feedback vote toggle ─────────────────────────────────
+  // ── Feedback votes ───────────────────────────────────────────
   function vote(btn, dir) {
     const btns = btn.parentElement;
     const up   = btns.querySelector(':first-child');
@@ -759,23 +806,20 @@
     }
   }
 
-  // ── Render a single pick card ────────────────────────────
+  // ── Render a single pick card ────────────────────────────────
   function renderPickCard(pick, runDisplayTime) {
-    const isHigh = pick.score >= 9;
+    const isHigh     = pick.score >= 9;
     const scoreBadge = `<span class="score-badge${isHigh ? ' score-high' : ''}">${pick.score}</span>`;
+    const srcBadge   = pick.trending_across_sources
+      ? `<span class="trend-sources-badge">3+ sources</span>` : '';
 
-    const sourceBadge = pick.trending_across_sources
-      ? `<span class="trend-sources-badge">3+ sources</span>`
-      : '';
-
-    const imageWrap = pick.image
+    const imageWrap  = pick.image
       ? `<div class="card-image-wrap">
            <img class="card-thumbnail" src="${esc(pick.image)}" alt="" loading="lazy"
                 onerror="this.closest('.card-image-wrap').classList.add('hidden')">
-         </div>`
-      : '';
+         </div>` : '';
 
-    const bottomLeft = pick.link
+    const footerLeft = pick.link
       ? `<a class="read-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer">
            Read article <span class="read-arrow">→</span>
          </a>`
@@ -787,15 +831,15 @@
         <div class="card-meta">
           ${scoreBadge}
           <span class="card-source">${esc(pick.source)}</span>
-          ${sourceBadge}
+          ${srcBadge}
           <span class="card-timestamp">${esc(runDisplayTime)}</span>
         </div>
         <div class="card-title">${esc(pick.title)}</div>
         ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
         <div class="card-footer">
-          ${bottomLeft}
+          ${footerLeft}
           <div class="feedback-btns">
-            <button class="feedback-btn" onclick="vote(this,'up')" title="Good pick">↑</button>
+            <button class="feedback-btn" onclick="vote(this,'up')"   title="Good pick">↑</button>
             <button class="feedback-btn" onclick="vote(this,'down')" title="Not for me">↓</button>
           </div>
         </div>
@@ -803,150 +847,111 @@
     </div>`;
   }
 
-  // ── Render a run group ───────────────────────────────────
+  // ── Render a run group ───────────────────────────────────────
   function renderRunGroup(run) {
     let html = `<div class="run-group" data-label="${esc(run.label)}" data-date="${esc(run.date)}">`;
     for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
-    html += '</div>';
-    return html;
+    return html + '</div>';
   }
 
-  // ── Update pick count ────────────────────────────────────
+  // ── Pick count display ───────────────────────────────────────
   function updateCount() {
-    const visible = document.querySelectorAll('.run-group:not(.filter-hidden) .pick-card').length;
-    document.getElementById('filter-count').textContent =
-      visible ? `${visible} pick${visible !== 1 ? 's' : ''}` : '';
+    const n = document.querySelectorAll('.run-group:not(.filter-hidden) .pick-card').length;
+    document.getElementById('filter-count').textContent = n ? `${n} pick${n !== 1 ? 's' : ''}` : '';
   }
 
-  // ── Build X trending ticker ──────────────────────────────
+  // ── X Trending ticker ────────────────────────────────────────
   function buildTicker(latestRuns) {
-    const tickerWrap  = document.getElementById('ticker-wrap');
-    const tickerInner = document.getElementById('ticker-inner');
-    if (!tickerWrap || !tickerInner) return;
+    const wrap  = document.getElementById('ticker-wrap');
+    const inner = document.getElementById('ticker-inner');
+    if (!wrap || !inner) return;
 
-    const xTopics = latestRuns
+    const topics = latestRuns
       .flatMap(r => r.picks)
       .filter(p => isTrendPick(p) && trendPlatform(p) === 'X')
       .map(p => p.title)
       .filter(Boolean);
 
-    if (xTopics.length === 0) {
-      tickerWrap.style.display = 'none';
-      return;
-    }
+    if (!topics.length) { wrap.style.display = 'none'; return; }
 
-    // Double the topics for seamless CSS loop
-    const doubled = [...xTopics, ...xTopics];
-    tickerInner.innerHTML = doubled.map(t => `<span class="ticker-pill">${esc(t)}</span>`).join('');
-
-    // Scale duration to topic count so scroll speed stays consistent
-    const dur = Math.max(20, xTopics.length * 5);
-    tickerInner.style.animationDuration = dur + 's';
+    inner.innerHTML = [...topics, ...topics]
+      .map(t => `<span class="ticker-pill">${esc(t)}</span>`).join('');
+    inner.style.animationDuration = Math.max(20, topics.length * 5) + 's';
   }
 
-  // ── Sidebar rendering ────────────────────────────────────
+  // ── Sidebar ──────────────────────────────────────────────────
   function renderSidebar(latestRuns, allRuns) {
-    const todayPicks = latestRuns.flatMap(r => r.picks);
-
-    // 1. Stats
-    const picksCount = todayPicks.length;
-    const topScore   = todayPicks.length ? Math.max(...todayPicks.map(p => p.score)) : '—';
-    const runsCount  = latestRuns.length;
+    const today = latestRuns.flatMap(r => r.picks);
+    const picks = today.length;
+    const top   = picks ? Math.max(...today.map(p => p.score)) : '—';
+    const runs  = latestRuns.length;
 
     const statsHtml = `<div class="sb-section">
       <div class="sb-title">Today</div>
       <div class="sb-stats">
-        <div class="sb-stat">
-          <span class="sb-stat-value">${picksCount}</span>
-          <span class="sb-stat-label">picks</span>
-        </div>
-        <div class="sb-stat">
-          <span class="sb-stat-value">${topScore}</span>
-          <span class="sb-stat-label">top score</span>
-        </div>
-        <div class="sb-stat">
-          <span class="sb-stat-value">${runsCount}</span>
-          <span class="sb-stat-label">runs</span>
-        </div>
+        <div class="sb-stat"><span class="sb-stat-value">${picks}</span><span class="sb-stat-label">picks</span></div>
+        <div class="sb-stat"><span class="sb-stat-value">${top}</span><span class="sb-stat-label">top score</span></div>
+        <div class="sb-stat"><span class="sb-stat-value">${runs}</span><span class="sb-stat-label">runs</span></div>
       </div>
     </div>`;
 
-    // 2. Quick jump
-    const labels = ['Morning', 'Afternoon', 'Evening'];
     const existing = new Set(latestRuns.map(r => r.label));
     const jumpHtml = `<div class="sb-section">
       <div class="sb-title">Jump to</div>
-      ${labels.map(label => `<button class="sb-jump-btn${existing.has(label) ? '' : ' unavailable'}"
-        onclick="jumpToLabel('${label}')">${label}<span class="sb-jump-arrow">↓</span></button>`).join('')}
+      ${['Morning','Afternoon','Evening'].map(l =>
+        `<button class="sb-jump-btn${existing.has(l) ? '' : ' unavailable'}" onclick="jumpToLabel('${l}')">${l}<span class="sb-jump-arrow">↓</span></button>`
+      ).join('')}
     </div>`;
 
-    // 3. Top pick of the week
-    const now    = new Date();
-    const cutoff = new Date(now);
+    const now = new Date(), cutoff = new Date(now);
     cutoff.setDate(cutoff.getDate() - 7);
-
-    let topWeekPick = null;
-    let topWeekMeta = '';
+    let topPick = null, topMeta = '';
     for (const run of allRuns) {
       if (new Date(run.date + 'T00:00:00') < cutoff) continue;
-      for (const pick of run.picks) {
-        if (!topWeekPick || pick.score > topWeekPick.score) {
-          topWeekPick = pick;
-          topWeekMeta = run.display_date || run.date;
-        }
+      for (const p of run.picks) {
+        if (!topPick || p.score > topPick.score) { topPick = p; topMeta = run.display_date || run.date; }
       }
     }
 
-    let topPickHtml = `<div class="sb-section"><div class="sb-title">Top pick this week</div>`;
-    if (!topWeekPick) {
-      topPickHtml += '<div class="sb-empty">No picks yet</div>';
+    let topHtml = `<div class="sb-section"><div class="sb-title">Best this week</div>`;
+    if (!topPick) {
+      topHtml += '<div class="sb-empty">No picks yet</div>';
     } else {
-      const tag      = topWeekPick.link ? 'a' : 'div';
-      const linkAttr = topWeekPick.link
-        ? ` href="${esc(topWeekPick.link)}" target="_blank" rel="noopener noreferrer"` : '';
-      topPickHtml += `<${tag} class="sb-top-pick"${linkAttr}>
-        <div class="sb-top-pick-header">
-          <span class="score-badge${topWeekPick.score >= 9 ? ' score-high' : ''}">${topWeekPick.score}</span>
-        </div>
-        <div class="sb-top-pick-title">${esc(topWeekPick.title)}</div>
-        <div class="sb-top-pick-meta">${esc(topWeekMeta)}</div>
+      const tag  = topPick.link ? 'a' : 'div';
+      const href = topPick.link ? ` href="${esc(topPick.link)}" target="_blank" rel="noopener noreferrer"` : '';
+      topHtml += `<${tag} class="sb-top-pick"${href}>
+        <div class="sb-top-pick-header"><span class="score-badge${topPick.score >= 9 ? ' score-high' : ''}">${topPick.score}</span></div>
+        <div class="sb-top-pick-title">${esc(topPick.title)}</div>
+        <div class="sb-top-pick-meta">${esc(topMeta)}</div>
       </${tag}>`;
     }
-    topPickHtml += '</div>';
+    topHtml += '</div>';
 
-    // 4. Source breakdown
-    const sourceCounts = {};
-    for (const pick of todayPicks) {
-      if (isTrendPick(pick)) continue;
-      sourceCounts[pick.source] = (sourceCounts[pick.source] || 0) + 1;
-    }
-    const sourcesArr = Object.entries(sourceCounts).sort((a, b) => b[1] - a[1]);
-
-    let sourcesHtml = `<div class="sb-section"><div class="sb-title">Sources today</div>`;
-    if (sourcesArr.length === 0) {
-      sourcesHtml += '<div class="sb-empty">No sources yet</div>';
+    const counts = {};
+    today.filter(p => !isTrendPick(p)).forEach(p => { counts[p.source] = (counts[p.source] || 0) + 1; });
+    const sources = Object.entries(counts).sort((a,b) => b[1]-a[1]);
+    let srcHtml = `<div class="sb-section"><div class="sb-title">Sources today</div>`;
+    if (!sources.length) {
+      srcHtml += '<div class="sb-empty">No sources yet</div>';
     } else {
-      sourcesArr.forEach(([source, count]) => {
-        sourcesHtml += `<div class="sb-source-row">
-          <span class="sb-source-name">${esc(source)}</span>
-          <span class="sb-source-count">${count}</span>
-        </div>`;
+      sources.forEach(([s, c]) => {
+        srcHtml += `<div class="sb-source-row"><span class="sb-source-name">${esc(s)}</span><span class="sb-source-count">${c}</span></div>`;
       });
     }
-    sourcesHtml += '</div>';
+    srcHtml += '</div>';
 
-    document.getElementById('sidebar').innerHTML = statsHtml + jumpHtml + topPickHtml + sourcesHtml;
+    document.getElementById('sidebar').innerHTML = statsHtml + jumpHtml + topHtml + srcHtml;
   }
 
-  // ── Jump to run label ────────────────────────────────────
+  // ── Jump to time-of-day group ────────────────────────────────
   function jumpToLabel(label) {
-    const group = document.querySelector(`.run-group[data-label="${label}"]`);
-    if (group) group.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const el = document.querySelector(`.run-group[data-label="${label}"]`);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  // ── Main render ──────────────────────────────────────────
+  // ── Main render ──────────────────────────────────────────────
   function render(runs) {
-    if (!runs || runs.length === 0) {
+    if (!runs || !runs.length) {
       document.getElementById('feed-container').innerHTML = '<div class="state-msg">No picks yet.</div>';
       return;
     }
@@ -957,16 +962,13 @@
 
     document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
-    let html = `<div id="section-latest">`;
+    let html = '<div id="section-latest">';
     for (const run of latestRuns) html += renderRunGroup(run);
     html += '</div>';
 
-    if (olderRuns.length > 0) {
+    if (olderRuns.length) {
       const byDate = {};
-      for (const run of olderRuns) {
-        if (!byDate[run.date]) byDate[run.date] = [];
-        byDate[run.date].push(run);
-      }
+      for (const run of olderRuns) (byDate[run.date] = byDate[run.date] || []).push(run);
 
       html += `<div class="archive-section" id="archive-section">
         <div class="archive-label">Earlier</div>
@@ -994,18 +996,18 @@
     renderSidebar(latestRuns, runs);
   }
 
-  // ── Apply time-of-day filter ─────────────────────────────
+  // ── Filters ──────────────────────────────────────────────────
   function applyFilters() {
-    document.querySelectorAll('.run-group').forEach(group => {
-      group.classList.toggle('filter-hidden', !(!filterLabel || group.dataset.label === filterLabel));
+    document.querySelectorAll('.run-group').forEach(g => {
+      g.classList.toggle('filter-hidden', !(!filterLabel || g.dataset.label === filterLabel));
     });
-    document.querySelectorAll('.archive-row').forEach(row => {
-      row.classList.toggle('filter-hidden', !(!filterLabel || row.dataset.label === filterLabel));
+    document.querySelectorAll('.archive-row').forEach(r => {
+      r.classList.toggle('filter-hidden', !(!filterLabel || r.dataset.label === filterLabel));
     });
     updateCount();
   }
 
-  // ── Wire interactive controls ────────────────────────────
+  // ── Wire buttons ─────────────────────────────────────────────
   function wireButtons() {
     document.getElementById('btn-today').addEventListener('click', () => {
       document.getElementById('section-latest')?.scrollIntoView({ behavior: 'smooth' });
@@ -1021,8 +1023,8 @@
 
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const value = btn.dataset.value;
-        filterLabel = (filterLabel === value) ? null : value;
+        const v = btn.dataset.value;
+        filterLabel = (filterLabel === v) ? null : v;
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
         if (filterLabel) btn.classList.add('active');
         applyFilters();
@@ -1030,88 +1032,77 @@
     });
   }
 
-  // ── Position sticky elements ─────────────────────────────
+  // ── Sticky positioning ───────────────────────────────────────
   function positionSticky() {
-    const headerH   = document.querySelector('header').offsetHeight;
-    const tickerWrap = document.getElementById('ticker-wrap');
-    const filterBar  = document.getElementById('filter-bar');
-    const sidebar    = document.getElementById('sidebar');
+    const headerH = document.querySelector('header').offsetHeight;
+    const tw      = document.getElementById('ticker-wrap');
+    const fb      = document.getElementById('filter-bar');
+    const sb      = document.getElementById('sidebar');
 
-    const tickerVisible = tickerWrap && tickerWrap.style.display !== 'none';
-    const tickerH = tickerVisible ? tickerWrap.offsetHeight : 0;
-
-    if (tickerVisible) tickerWrap.style.top = headerH + 'px';
-    filterBar.style.top = (headerH + tickerH) + 'px';
-
-    if (sidebar) {
-      sidebar.style.top = (headerH + tickerH + filterBar.offsetHeight + 16) + 'px';
-    }
+    const twH = (tw && tw.style.display !== 'none') ? tw.offsetHeight : 0;
+    if (tw && tw.style.display !== 'none') tw.style.top = headerH + 'px';
+    fb.style.top = (headerH + twH) + 'px';
+    if (sb) sb.style.top = (headerH + twH + fb.offsetHeight + 16) + 'px';
   }
 
-  // ── Run timing ───────────────────────────────────────────
+  // ── Countdown timer ──────────────────────────────────────────
   const RUN_TIMES_UTC = [[13, 0], [18, 0], [2, 0]];
   let lastRunTime = null;
 
   function parseRunTime(run) {
     if (!run) return null;
-    const d = run.date;
-    const t = run.time;
-    return new Date(`${d}T${t.slice(0, 2)}:${t.slice(2, 4)}:00Z`);
+    return new Date(`${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z`);
   }
 
   function getNextRunMs() {
     const now = new Date();
-    const candidates = RUN_TIMES_UTC.map(([h, m]) => {
-      const t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m, 0, 0));
+    return Math.min(...RUN_TIMES_UTC.map(([h,m]) => {
+      const t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m));
       if (t <= now) t.setUTCDate(t.getUTCDate() + 1);
-      return t;
-    });
-    return Math.min(...candidates.map(t => t.getTime())) - now.getTime();
+      return t.getTime();
+    })) - now.getTime();
   }
 
-  function formatNextRun(ms) {
+  function fmtNext(ms) {
     if (ms <= 0) return 'updating now';
-    const totalMin = Math.ceil(ms / 60000);
-    const h = Math.floor(totalMin / 60);
-    const m = totalMin % 60;
-    return h > 0 ? `Next in ${h}h ${m}m` : `Next in ${m}m`;
+    const m = Math.ceil(ms / 60000), h = Math.floor(m / 60);
+    return h > 0 ? `Next in ${h}h ${m % 60}m` : `Next in ${m}m`;
   }
 
-  function formatLastUpdated(ms) {
-    const totalMin = Math.floor(ms / 60000);
-    if (totalMin < 1)  return 'Updated just now';
-    if (totalMin < 60) return `Updated ${totalMin}m ago`;
-    const h = Math.floor(totalMin / 60);
-    const m = totalMin % 60;
-    return m > 0 ? `Updated ${h}h ${m}m ago` : `Updated ${h}h ago`;
+  function fmtLast(ms) {
+    const m = Math.floor(ms / 60000);
+    if (m < 1)  return 'Updated just now';
+    if (m < 60) return `Updated ${m}m ago`;
+    const h = Math.floor(m / 60), rm = m % 60;
+    return rm > 0 ? `Updated ${h}h ${rm}m ago` : `Updated ${h}h ago`;
   }
 
   function tickCountdown() {
     const nextEl   = document.getElementById('next-run');
     const lastEl   = document.getElementById('last-updated');
     const mobileEl = document.getElementById('mobile-timer-row');
-    const nextStr  = formatNextRun(getNextRunMs());
-    const lastStr  = lastRunTime ? formatLastUpdated(Date.now() - lastRunTime.getTime()) : null;
+    const nextStr  = fmtNext(getNextRunMs());
+    const lastStr  = lastRunTime ? fmtLast(Date.now() - lastRunTime.getTime()) : null;
     if (nextEl) nextEl.textContent = nextStr;
     if (lastEl && lastStr) lastEl.textContent = lastStr;
     if (mobileEl) mobileEl.textContent = lastStr ? `${lastStr} · ${nextStr}` : nextStr;
   }
 
-  // ── Bootstrap ────────────────────────────────────────────
+  // ── Bootstrap ────────────────────────────────────────────────
   async function loadFeed() {
     try {
-      const res = await fetch('picks_data.json');
+      const res  = await fetch('picks_data.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      if (data.runs && data.runs.length > 0) lastRunTime = parseRunTime(data.runs[0]);
+      if (data.runs?.length) lastRunTime = parseRunTime(data.runs[0]);
       render(data.runs);
       wireButtons();
       tickCountdown();
       positionSticky();
-    } catch (e) {
+    } catch {
       document.getElementById('feed-container').innerHTML =
         `<div class="state-msg">Could not load picks.<br>
-        <small style="color:#c8c5bf">If testing locally, serve with a web server (not file://).</small></div>`;
+        <small style="font-family:var(--sans);font-size:11px">If testing locally, serve with a web server.</small></div>`;
     }
   }
 
@@ -1121,6 +1112,5 @@
   tickCountdown();
   setInterval(tickCountdown, 60000);
 </script>
-
 </body>
 </html>
