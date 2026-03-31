@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-31] Convert timestamps to CT in web feed
+
+Pick card timestamps were showing raw UTC times, making them appear several hours in the future for CT users.
+
+- **`deploy-pages.yml`**: Switched from naive UTC datetime to `zoneinfo.ZoneInfo('America/Chicago')` conversion. `display_time` now shows CT time with a "CT" suffix (e.g. "8:00 AM CT"). `display_date` and `label` (Morning/Afternoon/Evening) are also derived from the CT hour, so the 9 PM CT run (02:00 UTC next day) now correctly shows as Evening, not Morning. Added `ct_date` field to each run (the CT calendar date) for grouping.
+- **`index.html`**: Run grouping logic ("today vs. earlier") now uses `run.ct_date` instead of `run.date` (UTC filename date), so the 9 PM CT run groups with the correct CT day rather than the next UTC day.
 ## [2026-03-30] Fix X logo in trending ticker
 
 Replaced the styled `<span>` letter "X" in the ticker strip with the official X (Twitter) inline SVG mark (`viewBox="0 0 24 24"`). Updated CSS class from `.ticker-x` to `.ticker-x-logo` with proper `width`/`height`/`color` sizing.

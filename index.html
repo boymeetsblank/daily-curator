@@ -875,7 +875,7 @@
     cutoff.setDate(cutoff.getDate() - 7);
     let topPick = null, topMeta = '';
     for (const run of allRuns) {
-      if (new Date(run.date + 'T00:00:00') < cutoff) continue;
+      if (new Date((run.ct_date || run.date) + 'T00:00:00') < cutoff) continue;
       for (const p of run.picks) {
         if (!topPick || p.score > topPick.score) { topPick = p; topMeta = run.display_date || run.date; }
       }
@@ -918,9 +918,9 @@
       return;
     }
 
-    const latestDate = runs[0].date;
-    const latestRuns = runs.filter(r => r.date === latestDate);
-    const olderRuns  = runs.filter(r => r.date !== latestDate);
+    const latestDate = runs[0].ct_date || runs[0].date;
+    const latestRuns = runs.filter(r => (r.ct_date || r.date) === latestDate);
+    const olderRuns  = runs.filter(r => (r.ct_date || r.date) !== latestDate);
 
     document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
@@ -933,7 +933,10 @@
 
     if (olderRuns.length) {
       const byDate = {};
-      for (const run of olderRuns) (byDate[run.date] = byDate[run.date] || []).push(run);
+      for (const run of olderRuns) {
+        const rDate = run.ct_date || run.date;
+        (byDate[rDate] = byDate[rDate] || []).push(run);
+      }
 
       html += `<div class="archive-section" id="archive-section">
         <div class="archive-label">Earlier</div>
