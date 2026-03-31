@@ -234,10 +234,6 @@
       flex-shrink: 0;
     }
 
-    .filter-pills { display: flex; gap: 4px; }
-
-    .filter-pills .pill-btn { font-size: 10.5px; padding: 3px 10px; }
-
     .filter-right {
       margin-left: auto;
       display: flex;
@@ -293,16 +289,16 @@
     }
 
     /* Staggered entry delays */
-    .run-group .pick-card:nth-child(1)  { animation-delay: 0.00s; }
-    .run-group .pick-card:nth-child(2)  { animation-delay: 0.06s; }
-    .run-group .pick-card:nth-child(3)  { animation-delay: 0.12s; }
-    .run-group .pick-card:nth-child(4)  { animation-delay: 0.18s; }
-    .run-group .pick-card:nth-child(5)  { animation-delay: 0.24s; }
-    .run-group .pick-card:nth-child(6)  { animation-delay: 0.30s; }
-    .run-group .pick-card:nth-child(7)  { animation-delay: 0.36s; }
-    .run-group .pick-card:nth-child(8)  { animation-delay: 0.42s; }
-    .run-group .pick-card:nth-child(9)  { animation-delay: 0.48s; }
-    .run-group .pick-card:nth-child(10) { animation-delay: 0.54s; }
+    #section-latest .pick-card:nth-child(1)  { animation-delay: 0.00s; }
+    #section-latest .pick-card:nth-child(2)  { animation-delay: 0.06s; }
+    #section-latest .pick-card:nth-child(3)  { animation-delay: 0.12s; }
+    #section-latest .pick-card:nth-child(4)  { animation-delay: 0.18s; }
+    #section-latest .pick-card:nth-child(5)  { animation-delay: 0.24s; }
+    #section-latest .pick-card:nth-child(6)  { animation-delay: 0.30s; }
+    #section-latest .pick-card:nth-child(7)  { animation-delay: 0.36s; }
+    #section-latest .pick-card:nth-child(8)  { animation-delay: 0.42s; }
+    #section-latest .pick-card:nth-child(9)  { animation-delay: 0.48s; }
+    #section-latest .pick-card:nth-child(10) { animation-delay: 0.54s; }
 
     .pick-card:hover {
       box-shadow: 0 4px 24px rgba(0,0,0,0.08);
@@ -580,28 +576,6 @@
 
     .sb-stat-label { font-size: 10px; color: var(--ink-4); }
 
-    .sb-jump-btn {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      padding: 8px 0;
-      font-family: var(--sans);
-      font-size: 12px;
-      color: var(--ink-3);
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid var(--border-s);
-      cursor: pointer;
-      text-align: left;
-      transition: color 0.1s;
-    }
-
-    .sb-jump-btn:last-child { border-bottom: none; }
-    .sb-jump-btn:hover { color: var(--ink); }
-    .sb-jump-btn.unavailable { opacity: 0.25; cursor: default; pointer-events: none; }
-    .sb-jump-arrow { color: rgba(0,0,0,0.2); font-size: 11px; }
-
     .sb-top-pick {
       display: block;
       background: var(--bg);
@@ -687,8 +661,6 @@
     /* ─────────────────────────────────────────
        UTILITIES
     ───────────────────────────────────────── */
-    .filter-hidden { display: none !important; }
-
     .state-msg {
       text-align: center;
       color: var(--ink-4);
@@ -749,11 +721,6 @@
 <div class="filter-bar" id="filter-bar">
   <div class="filter-bar-inner">
     <span class="filter-date" id="filter-date">—</span>
-    <div class="filter-pills">
-      <button class="pill-btn filter-btn" data-value="Morning">Morning</button>
-      <button class="pill-btn filter-btn" data-value="Afternoon">Afternoon</button>
-      <button class="pill-btn filter-btn" data-value="Evening">Evening</button>
-    </div>
     <div class="filter-right">
       <span class="filter-count" id="filter-count"></span>
       <span class="run-meta" id="last-updated"></span>
@@ -775,8 +742,6 @@
 </div>
 
 <script>
-  let filterLabel = null;
-
   // ── HTML escaping ────────────────────────────────────────────
   function esc(str) {
     if (!str) return '';
@@ -862,16 +827,9 @@
     </div>`;
   }
 
-  // ── Render a run group ───────────────────────────────────────
-  function renderRunGroup(run) {
-    let html = `<div class="run-group" data-label="${esc(run.label)}" data-date="${esc(run.date)}">`;
-    for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
-    return html + '</div>';
-  }
-
   // ── Pick count display ───────────────────────────────────────
   function updateCount() {
-    const n = document.querySelectorAll('.run-group:not(.filter-hidden) .pick-card').length;
+    const n = document.querySelectorAll('#section-latest .pick-card').length;
     document.getElementById('filter-count').textContent = n ? `${n} pick${n !== 1 ? 's' : ''}` : '';
   }
 
@@ -908,14 +866,6 @@
         <div class="sb-stat"><span class="sb-stat-value">${top}</span><span class="sb-stat-label">top score</span></div>
         <div class="sb-stat"><span class="sb-stat-value">${runs}</span><span class="sb-stat-label">runs</span></div>
       </div>
-    </div>`;
-
-    const existing = new Set(latestRuns.map(r => r.label));
-    const jumpHtml = `<div class="sb-section">
-      <div class="sb-title">Jump to</div>
-      ${['Morning','Afternoon','Evening'].map(l =>
-        `<button class="sb-jump-btn${existing.has(l) ? '' : ' unavailable'}" onclick="jumpToLabel('${l}')">${l}<span class="sb-jump-arrow">↓</span></button>`
-      ).join('')}
     </div>`;
 
     const now = new Date(), cutoff = new Date(now);
@@ -955,13 +905,7 @@
     }
     srcHtml += '</div>';
 
-    document.getElementById('sidebar').innerHTML = statsHtml + jumpHtml + topHtml + srcHtml;
-  }
-
-  // ── Jump to time-of-day group ────────────────────────────────
-  function jumpToLabel(label) {
-    const el = document.querySelector(`.run-group[data-label="${label}"]`);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.getElementById('sidebar').innerHTML = statsHtml + topHtml + srcHtml;
   }
 
   // ── Main render ──────────────────────────────────────────────
@@ -977,8 +921,11 @@
 
     document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
+    // Flatten today's picks in reverse-chronological order (latestRuns is already newest-first)
     let html = '<div id="section-latest">';
-    for (const run of latestRuns) html += renderRunGroup(run);
+    for (const run of latestRuns) {
+      for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
+    }
     html += '</div>';
 
     if (olderRuns.length) {
@@ -1011,17 +958,6 @@
     renderSidebar(latestRuns, runs);
   }
 
-  // ── Filters ──────────────────────────────────────────────────
-  function applyFilters() {
-    document.querySelectorAll('.run-group').forEach(g => {
-      g.classList.toggle('filter-hidden', !(!filterLabel || g.dataset.label === filterLabel));
-    });
-    document.querySelectorAll('.archive-row').forEach(r => {
-      r.classList.toggle('filter-hidden', !(!filterLabel || r.dataset.label === filterLabel));
-    });
-    updateCount();
-  }
-
   // ── Wire buttons ─────────────────────────────────────────────
   function wireButtons() {
     document.getElementById('btn-today').addEventListener('click', () => {
@@ -1034,16 +970,6 @@
       document.getElementById('archive-section')?.scrollIntoView({ behavior: 'smooth' });
       document.getElementById('btn-archive').classList.add('active');
       document.getElementById('btn-today').classList.remove('active');
-    });
-
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const v = btn.dataset.value;
-        filterLabel = (filterLabel === v) ? null : v;
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        if (filterLabel) btn.classList.add('active');
-        applyFilters();
-      });
     });
   }
 

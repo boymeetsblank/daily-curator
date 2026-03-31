@@ -4,6 +4,18 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-30] Remove time-of-day filter pills — flat reverse-chronological feed
+
+Replaced the Morning/Afternoon/Evening filter system with a simple reverse-chronological stream:
+
+- **Removed from HTML**: the three `.filter-btn` pill buttons (`Morning`, `Afternoon`, `Evening`) from the filter bar
+- **Removed from CSS**: `.filter-pills` and `.filter-pills .pill-btn` rules; `.filter-hidden` utility class; `.sb-jump-btn` / `.sb-jump-arrow` sidebar styles
+- **Removed from JS**: `filterLabel` variable; `applyFilters()` function; filter-btn click listeners; `renderRunGroup()` function; `jumpToLabel()` function; sidebar Jump-to section
+- **Updated `render()`**: today's picks are now flattened into a single `#section-latest` container — runs iterate newest-first (already sorted that way), picks within each run render in order, producing a reverse-chronological stream with no grouping dividers
+- **Updated `updateCount()`**: now queries `#section-latest .pick-card` directly (no filter-hidden logic needed)
+- **Updated stagger selectors**: `#section-latest .pick-card:nth-child(n)` replaces the old `.run-group .pick-card:nth-child(n)` — stagger now applies across the full flat stream
+- **Kept**: date label, pick count, Today/Archive scroll buttons, timer, all card rendering logic
+
 ## [2026-03-30] Fix thumbnail cropping permanently — variable height at natural aspect ratio
 
 Replaced the fixed-height `object-fit: cover` image container with a variable-height approach that displays images at their natural aspect ratio:
