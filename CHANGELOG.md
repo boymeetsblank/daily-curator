@@ -4,6 +4,19 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-30] OG image fallback via concurrent HTTP fetch
+
+Added `enrich_articles_with_og_images()` as a post-processing step after `fetch_articles_from_inoreader()`. For any article that has no image URL from the three existing RSS sources (Inoreader `visual.url`, first `<img>` in summary HTML, `enclosure.href`), the function fetches the article's URL and parses the `<meta property="og:image">` tag as a fallback.
+
+Implementation details:
+- **Concurrent:** uses `ThreadPoolExecutor` (up to 10 workers) so all missing-image articles are fetched in parallel — wall-clock cost is approximately one 5-second timeout, not N×5 seconds
+- **Timeout:** hard 5-second timeout per request via `requests.get(..., timeout=5)`; any slow or unresponsive site is simply skipped
+- **Graceful failure:** all exceptions are caught and suppressed; on failure the article's `image` field stays `None`
+- **Attribute-order safe:** regex matches `og:image` meta tags with either attribute order (`property` before `content` or vice versa), handles both single and double quotes
+- **Efficient:** reads only the first 50 KB of each response since `<meta>` tags are always in `<head>`
+- **Fallback only:** skips articles that already have an image from the RSS feed, so existing image sources are unaffected
+- Added `import re` and `from concurrent.futures import ThreadPoolExecutor, as_completed` to top-level imports
+
 ## [2026-03-30] Redesign index.html — light editorial theme with X trending ticker
 
 Complete visual redesign of the web feed:
