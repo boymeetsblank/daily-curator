@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-30] Fix X logo in trending ticker
+
+Replaced the styled `<span>` letter "X" in the ticker strip with the official X (Twitter) inline SVG mark (`viewBox="0 0 24 24"`). Updated CSS class from `.ticker-x` to `.ticker-x-logo` with proper `width`/`height`/`color` sizing.
+
 ## [2026-03-30] Introduce "Blank" wordmark in header
 
 Replaced `@boymeetsblank_` handle with the product name **Blank** and redesigned the wordmark typographically:
