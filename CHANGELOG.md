@@ -4,6 +4,13 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-30] Fix article thumbnail image cropping
+
+Two targeted CSS fixes to make card images look editorial rather than awkwardly cropped:
+
+- **`object-position: center 25%`** on `.card-thumbnail` — anchors the visible crop to the upper portion of the image rather than the default `center center`. Editorial article photography places subjects, faces, and action in the upper half of frame; `25%` vertical position captures them without risk of clipping header text that sometimes sits at the very top edge of og:images
+- **Bottom-fade gradient overlay** via `.card-image-wrap::after` — a `transparent → rgba(255,255,255,0.18)` gradient over the bottom 52px of the image eliminates the harsh hard-cut between image and card body. Requires `position: relative` on `.card-image-wrap`, which was added
+
 ## [2026-03-30] Redesign index.html — Contemporary Editorial aesthetic (frontend-design skill)
 
 Full redesign using the frontend-design skill with a committed aesthetic direction: **Contemporary Print Editorial** — the visual language of a premium culture magazine's digital presence, not a social app.
