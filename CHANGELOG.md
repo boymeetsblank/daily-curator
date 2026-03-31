@@ -4,6 +4,13 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-03-30] Update CLAUDE.md with Platform Vision, Git Workflow, and Feature Roadmap
+
+Added three new sections to CLAUDE.md:
+- **Platform Vision** — documents the core mission (daily briefing tool, not a content creator tool), unique angle (natural language setup, AI editorial judgment, cross-platform signals, intentionally finite), and long-term goal of a no-code public curation platform
+- **Git Workflow** — explicit rule to always commit and push to `main`, never to other branches unless instructed
+- **Planned phases** — Phase 5 Platform (natural language feed controls, dynamic source library, public platform), Breaking News Mode (30–60 min watchdog, one pick, $15–30/month), and always-show X trending topics section in the feed
+
 ## [2026-03-26] Fix three crash bugs in fetch_articles_from_inoreader and evaluate_articles_with_claude
 
 Three AttributeError/KeyError bugs found and fixed during end-to-end code review:
