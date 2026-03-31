@@ -37,7 +37,9 @@ jobs:
           cp index.html site/index.html
           python3 - << 'PYEOF'
           import os, re, json
-          from datetime import datetime
+          from datetime import datetime, timezone
+          from zoneinfo import ZoneInfo
+          CT = ZoneInfo('America/Chicago')
 
           def parse_file(path):
               name = os.path.basename(path)
@@ -52,16 +54,19 @@ jobs:
                   label = 'Afternoon'
               else:
                   label = 'Evening'
-              dt = datetime.strptime(f'{date_str} {time_str}', '%Y-%m-%d %H%M')
-              # Format without leading-zero dependencies
-              month = dt.strftime('%B')
-              day   = str(dt.day)
-              year  = str(dt.year)
-              hour12 = dt.hour % 12 or 12
-              minute = dt.strftime('%M')
-              ampm   = 'AM' if dt.hour < 12 else 'PM'
+              dt_utc = datetime.strptime(f'{date_str} {time_str}', '%Y-%m-%d %H%M').replace(tzinfo=timezone.utc)
+              dt_ct  = dt_utc.astimezone(CT)
+              hour   = dt_ct.hour
+              # Format without leading-zero dependencies (all values from CT datetime)
+              month  = dt_ct.strftime('%B')
+              day    = str(dt_ct.day)
+              year   = str(dt_ct.year)
+              hour12 = dt_ct.hour % 12 or 12
+              minute = dt_ct.strftime('%M')
+              ampm   = 'AM' if dt_ct.hour < 12 else 'PM'
+              ct_date      = dt_ct.strftime('%Y-%m-%d')
               display_date = f'{month} {day}, {year}'
-              display_time = f'{hour12}:{minute} {ampm}'
+              display_time = f'{hour12}:{minute} {ampm} CT'
 
               with open(path, encoding='utf-8') as f:
                   content = f.read()
@@ -114,6 +119,7 @@ jobs:
               return {
                   'date': date_str,
                   'time': time_str,
+                  'ct_date': ct_date,
                   'label': label,
                   'display_date': display_date,
                   'display_time': display_time,

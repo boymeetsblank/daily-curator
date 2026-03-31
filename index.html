@@ -713,7 +713,7 @@
 
   // ── Render a run group ─────────────────────────────────────
   function renderRunGroup(run) {
-    let html = `<div class="run-group" data-label="${esc(run.label)}" data-date="${esc(run.date)}">`;
+    let html = `<div class="run-group" data-label="${esc(run.label)}" data-date="${esc(run.ct_date || run.date)}">`;
     for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
     html += `</div>`;
     return html;
@@ -801,7 +801,7 @@
     let topWeekPick = null;
     let topWeekMeta = '';
     for (const run of allRuns) {
-      const runDate = new Date(run.date + 'T00:00:00');
+      const runDate = new Date((run.ct_date || run.date) + 'T00:00:00');
       if (runDate < cutoff) continue;
       for (const pick of run.picks) {
         if (!topWeekPick || pick.score > topWeekPick.score) {
@@ -867,9 +867,9 @@
       return;
     }
 
-    const latestDate = runs[0].date;
-    const latestRuns = runs.filter(r => r.date === latestDate);
-    const olderRuns  = runs.filter(r => r.date !== latestDate);
+    const latestDate = runs[0].ct_date || runs[0].date;
+    const latestRuns = runs.filter(r => (r.ct_date || r.date) === latestDate);
+    const olderRuns  = runs.filter(r => (r.ct_date || r.date) !== latestDate);
 
     document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
@@ -880,8 +880,9 @@
     if (olderRuns.length > 0) {
       const byDate = {};
       for (const run of olderRuns) {
-        if (!byDate[run.date]) byDate[run.date] = [];
-        byDate[run.date].push(run);
+        const rDate = run.ct_date || run.date;
+        if (!byDate[rDate]) byDate[rDate] = [];
+        byDate[rDate].push(run);
       }
       const sortedDates = Object.keys(byDate).sort().reverse();
 
