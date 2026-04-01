@@ -201,11 +201,13 @@
       transition: color 0.12s, background 0.12s;
     }
 
-    .ticker-pill::before {
-      content: '#';
-      margin-right: 3px;
-      font-size: 9.5px;
-      opacity: 0.35;
+    .ticker-pill-rank {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 9px;
+      opacity: 0.4;
+      margin-right: 4px;
+      flex-shrink: 0;
     }
 
     .ticker-pill:hover { color: #fff; background: rgba(255,255,255,0.1); }
@@ -541,9 +543,31 @@
     }
 
     /* ─────────────────────────────────────────
-       SIDEBAR (hidden on narrow screens)
+       SIDEBAR — mobile-first collapsible
     ───────────────────────────────────────── */
-    .sidebar { display: none; }
+    .sidebar {
+      margin-top: 40px;
+      padding-top: 0;
+    }
+
+    /* Collapse/expand body */
+    .sidebar-body {
+      display: none;
+      overflow: hidden;
+    }
+
+    .sidebar-body.open { display: block; }
+
+    /* At medium widths: 2-column grid for sections */
+    @media (min-width: 521px) and (max-width: 1099px) {
+      .sidebar-body.open {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+      }
+
+      .sidebar-body .sb-section { break-inside: avoid; }
+    }
 
     .sb-section {
       padding-bottom: 20px;
@@ -654,12 +678,143 @@
       .content { flex: 1; min-width: 0; }
 
       .sidebar {
-        display: block;
         width: 244px;
         flex-shrink: 0;
         position: sticky;
+        margin-top: 0;
       }
+
     }
+
+    /* ─────────────────────────────────────────
+       X TRENDING MODULE (inline feed panel)
+    ───────────────────────────────────────── */
+    .trends-module {
+      background: var(--ink);
+      border-radius: 12px;
+      margin-bottom: 10px;
+      padding: 16px 18px 18px;
+      animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .trends-module-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .tm-x-logo {
+      width: 11px; height: 11px;
+      color: rgba(255,255,255,0.45);
+      flex-shrink: 0;
+      display: block;
+    }
+
+    .trends-module-title {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .trends-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+    }
+
+    .trend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      min-width: 0;
+    }
+
+    .trend-item:last-child,
+    .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+
+    .trend-item-rank {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 10px;
+      color: rgba(255,255,255,0.18);
+      width: 18px;
+      flex-shrink: 0;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+
+    .trend-item.rank-hot  .trend-item-rank { color: var(--amber); }
+    .trend-item.rank-warm .trend-item-rank { color: rgba(255,255,255,0.32); }
+
+    .trend-item-name {
+      font-size: 12px;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .trend-item.rank-hot  .trend-item-name { color: rgba(255,255,255,0.88); font-weight: 500; }
+    .trend-item.rank-warm .trend-item-name { color: rgba(255,255,255,0.62); }
+
+    @media (max-width: 520px) {
+      .trends-grid { grid-template-columns: 1fr; }
+      .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid rgba(255,255,255,0.04); }
+    }
+
+    /* ─────────────────────────────────────────
+       X TRENDING — SIDEBAR SECTION
+    ───────────────────────────────────────── */
+    .sb-trend-list { margin-top: 2px; }
+
+    .sb-trend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4.5px 0;
+      border-bottom: 1px solid var(--border-s);
+      min-width: 0;
+    }
+
+    .sb-trend-row:last-child { border-bottom: none; }
+
+    .sb-trend-rank {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 10px;
+      color: var(--ink-4);
+      width: 16px;
+      flex-shrink: 0;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sb-trend-row.rank-hot  .sb-trend-rank { color: var(--amber); }
+    .sb-trend-row.rank-warm .sb-trend-rank { color: var(--ink-3); }
+
+    .sb-trend-name {
+      font-size: 11.5px;
+      color: var(--ink-4);
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
+    }
+
+    .sb-trend-row.rank-hot  .sb-trend-name { color: var(--ink-2); font-weight: 500; }
+    .sb-trend-row.rank-warm .sb-trend-name { color: var(--ink-3); }
 
     /* ─────────────────────────────────────────
        UTILITIES
@@ -702,6 +857,7 @@
     <div class="header-actions">
       <button class="pill-btn active" id="btn-today">Today</button>
       <button class="pill-btn" id="btn-archive">Archive</button>
+      <button class="pill-btn" id="btn-intel" aria-expanded="false" aria-controls="sidebar-body">Intel</button>
     </div>
   </div>
 </header>
@@ -741,7 +897,9 @@
       <div class="state-msg">Loading…</div>
     </div>
   </div>
-  <aside class="sidebar" id="sidebar"></aside>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-body" id="sidebar-body"></div>
+  </aside>
 </div>
 
 <script>
@@ -774,18 +932,106 @@
   }
 
   // ── Feedback votes ───────────────────────────────────────────
-  function vote(btn, dir) {
+  const VOTE_TOKEN = '__VOTE_TOKEN__';
+  const VOTE_REPO  = 'boymeetsblank/daily-curator';
+
+  async function vote(btn, dir) {
     const btns = btn.parentElement;
     const up   = btns.querySelector(':first-child');
     const dn   = btns.querySelector(':last-child');
+    let isVoting = false;
+
     if (dir === 'up') {
       const was = up.classList.contains('voted-up');
       up.classList.remove('voted-up'); dn.classList.remove('voted-down');
-      if (!was) up.classList.add('voted-up');
+      if (!was) { up.classList.add('voted-up');   isVoting = true; }
     } else {
       const was = dn.classList.contains('voted-down');
       up.classList.remove('voted-up'); dn.classList.remove('voted-down');
-      if (!was) dn.classList.add('voted-down');
+      if (!was) { dn.classList.add('voted-down'); isVoting = true; }
+    }
+
+    if (!isVoting) return;
+
+    if (!VOTE_TOKEN) {
+      console.error('[vote] VOTE_TOKEN is empty — secret not set or injection failed');
+      return;
+    }
+
+    console.log('[vote] direction:', dir, '| token length:', VOTE_TOKEN.length,
+                '| starts with:', VOTE_TOKEN.slice(0, 10));
+
+    const ct = new Date().toLocaleString('sv-SE', {
+      timeZone: 'America/Chicago',
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', second: '2-digit',
+      hour12: false,
+    }).replace(' ', 'T') + ' CT';
+
+    const record = {
+      timestamp: ct,
+      direction: dir,
+      title:     btns.dataset.title  || '',
+      source:    btns.dataset.source || '',
+      score:     parseInt(btns.dataset.score) || 0,
+      url:       btns.dataset.url    || null,
+    };
+
+    console.log('[vote] record:', record);
+
+    const apiUrl = `https://api.github.com/repos/${VOTE_REPO}/contents/votes.json`;
+    const headers = {
+      'Authorization':        `Bearer ${VOTE_TOKEN}`,
+      'Accept':               'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+    };
+
+    let sha   = null;
+    let votes = [];
+    console.log('[vote] GET', apiUrl);
+    try {
+      const res = await fetch(apiUrl, { headers });
+      console.log('[vote] GET status:', res.status);
+      if (res.ok) {
+        const data = await res.json();
+        sha   = data.sha;
+        votes = JSON.parse(new TextDecoder().decode(
+          Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0))
+        ));
+        console.log('[vote] existing votes:', votes.length, '| sha:', sha);
+      } else {
+        const errText = await res.text();
+        console.error('[vote] GET failed:', res.status, errText);
+      }
+    } catch (e) {
+      console.error('[vote] GET exception:', e);
+    }
+
+    votes.push(record);
+
+    const enc = new TextEncoder().encode(JSON.stringify(votes, null, 2) + '\n');
+    const binary = Array.from(enc, b => String.fromCharCode(b)).join('');
+
+    const body = { message: `vote: ${dir} — ${record.title.slice(0, 50)}`,
+                   content: btoa(binary), branch: 'main' };
+    if (sha) body.sha = sha;
+
+    console.log('[vote] PUT', apiUrl, '| sha:', sha || '(creating new)');
+    try {
+      const putRes = await fetch(apiUrl, {
+        method:  'PUT',
+        headers: { ...headers, 'Content-Type': 'application/json' },
+        body:    JSON.stringify(body),
+      });
+      console.log('[vote] PUT status:', putRes.status);
+      if (!putRes.ok) {
+        const errText = await putRes.text();
+        console.error('[vote] PUT failed:', putRes.status, errText);
+      } else {
+        console.log('[vote] vote saved successfully');
+      }
+    } catch (e) {
+      console.error('[vote] PUT exception:', e);
     }
   }
 
@@ -821,7 +1067,11 @@
         ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
         <div class="card-footer">
           ${footerLeft}
-          <div class="feedback-btns">
+          <div class="feedback-btns"
+               data-title="${esc(pick.title)}"
+               data-source="${esc(pick.source)}"
+               data-score="${pick.score}"
+               data-url="${esc(pick.link || '')}">
             <button class="feedback-btn" onclick="vote(this,'up')"   title="Good pick">↑</button>
             <button class="feedback-btn" onclick="vote(this,'down')" title="Not for me">↓</button>
           </div>
@@ -836,22 +1086,53 @@
     document.getElementById('filter-count').textContent = n ? `${n} pick${n !== 1 ? 's' : ''}` : '';
   }
 
+  // ── X Trending full list (inline module + sidebar) ──────────
+  function trendRankClass(i) {
+    return i < 3 ? 'rank-hot' : i < 7 ? 'rank-warm' : '';
+  }
+
+  function buildTrendsModule(topics) {
+    if (!topics || !topics.length) return '';
+    const rows = topics.map((name, i) => {
+      const cls     = trendRankClass(i);
+      const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
+      return `<div class="trend-item${cls ? ' ' + cls : ''}">
+        <span class="trend-item-rank">${rankStr}</span>
+        <span class="trend-item-name">${esc(name)}</span>
+      </div>`;
+    }).join('');
+    return `<div class="trends-module">
+      <div class="trends-module-header">
+        <svg class="tm-x-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <span class="trends-module-title">Now Trending</span>
+      </div>
+      <div class="trends-grid">${rows}</div>
+    </div>`;
+  }
+
   // ── X Trending ticker ────────────────────────────────────────
   function buildTicker(latestRuns) {
     const wrap  = document.getElementById('ticker-wrap');
     const inner = document.getElementById('ticker-inner');
     if (!wrap || !inner) return;
 
-    const topics = latestRuns
-      .flatMap(r => r.picks)
-      .filter(p => isTrendPick(p) && trendPlatform(p) === 'X')
-      .map(p => p.title)
-      .filter(Boolean);
+    // Prefer raw x_trends (full list); fall back to X-source scored picks for older runs
+    let topics = (latestRuns[0]?.x_trends || []).filter(Boolean);
+    if (!topics.length) {
+      topics = latestRuns
+        .flatMap(r => r.picks)
+        .filter(p => isTrendPick(p) && trendPlatform(p) === 'X')
+        .map(p => p.title)
+        .filter(Boolean);
+    }
 
     if (!topics.length) { wrap.style.display = 'none'; return; }
 
     inner.innerHTML = [...topics, ...topics]
-      .map(t => `<span class="ticker-pill">${esc(t)}</span>`).join('');
+      .map((t, i) => {
+        const rank = (i % topics.length) + 1;
+        return `<span class="ticker-pill"><span class="ticker-pill-rank">${rank}.</span>${esc(t)}</span>`;
+      }).join('');
     inner.style.animationDuration = Math.max(20, topics.length * 5) + 's';
   }
 
@@ -908,7 +1189,24 @@
     }
     srcHtml += '</div>';
 
-    document.getElementById('sidebar').innerHTML = statsHtml + topHtml + srcHtml;
+    const xTrends = latestRuns[0]?.x_trends || [];
+    let xTrendsHtml = '';
+    if (xTrends.length) {
+      const rows = xTrends.map((name, i) => {
+        const cls     = trendRankClass(i);
+        const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
+        return `<div class="sb-trend-row${cls ? ' ' + cls : ''}">
+          <span class="sb-trend-rank">${rankStr}</span>
+          <span class="sb-trend-name">${esc(name)}</span>
+        </div>`;
+      }).join('');
+      xTrendsHtml = `<div class="sb-section">
+        <div class="sb-title">X Trending</div>
+        <div class="sb-trend-list">${rows}</div>
+      </div>`;
+    }
+
+    document.getElementById('sidebar-body').innerHTML = statsHtml + topHtml + srcHtml + xTrendsHtml;
   }
 
   // ── Main render ──────────────────────────────────────────────
@@ -925,7 +1223,8 @@
     document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
     // Flatten today's picks in reverse-chronological order (latestRuns is already newest-first)
-    let html = '<div id="section-latest">';
+    let html = buildTrendsModule(latestRuns[0]?.x_trends || []);
+    html += '<div id="section-latest">';
     for (const run of latestRuns) {
       for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
     }
@@ -977,6 +1276,16 @@
       document.getElementById('btn-archive').classList.add('active');
       document.getElementById('btn-today').classList.remove('active');
     });
+
+    const intelBtn = document.getElementById('btn-intel');
+    const body     = document.getElementById('sidebar-body');
+    if (intelBtn && body) {
+      intelBtn.addEventListener('click', () => {
+        const open = body.classList.toggle('open');
+        intelBtn.setAttribute('aria-expanded', open);
+        intelBtn.classList.toggle('active', open);
+      });
+    }
   }
 
   // ── Sticky positioning ───────────────────────────────────────
@@ -993,7 +1302,11 @@
   }
 
   // ── Countdown timer ──────────────────────────────────────────
-  const RUN_TIMES_UTC = [[14, 30], [19, 30], [1, 30]];
+  // Run times in CT so DST transitions are handled automatically.
+  const RUN_TIMES_CT   = [[8, 30], [13, 30], [19, 30]];
+  const CT_HM_FORMAT   = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Chicago', hour: '2-digit', minute: '2-digit', hour12: false
+  });
   let lastRunTime = null;
 
   function parseRunTime(run) {
@@ -1002,12 +1315,18 @@
   }
 
   function getNextRunMs() {
-    const now = new Date();
-    return Math.min(...RUN_TIMES_UTC.map(([h,m]) => {
-      const t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m));
-      if (t <= now) t.setUTCDate(t.getUTCDate() + 1);
-      return t.getTime();
-    })) - now.getTime();
+    const now   = new Date();
+    const parts = CT_HM_FORMAT.formatToParts(now);
+    const ctH   = parseInt(parts.find(p => p.type === 'hour').value);
+    const ctM   = parseInt(parts.find(p => p.type === 'minute').value);
+    const nowCtMin = ctH * 60 + ctM;
+    let minDelta = Infinity;
+    for (const [h, m] of RUN_TIMES_CT) {
+      let delta = h * 60 + m - nowCtMin;
+      if (delta <= 0) delta += 24 * 60;
+      minDelta = Math.min(minDelta, delta);
+    }
+    return minDelta * 60 * 1000;
   }
 
   function fmtNext(ms) {
