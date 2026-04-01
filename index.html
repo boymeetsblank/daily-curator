@@ -1088,7 +1088,15 @@
     const inner = document.getElementById('ticker-inner');
     if (!wrap || !inner) return;
 
-    const topics = (latestRuns[0]?.x_trends || []).filter(Boolean);
+    // Prefer raw x_trends (full list); fall back to X-source scored picks for older runs
+    let topics = (latestRuns[0]?.x_trends || []).filter(Boolean);
+    if (!topics.length) {
+      topics = latestRuns
+        .flatMap(r => r.picks)
+        .filter(p => isTrendPick(p) && trendPlatform(p) === 'X')
+        .map(p => p.title)
+        .filter(Boolean);
+    }
 
     if (!topics.length) { wrap.style.display = 'none'; return; }
 
@@ -1167,7 +1175,7 @@
       </div>`;
     }
 
-    document.getElementById('sidebar').innerHTML = statsHtml + xTrendsHtml + topHtml + srcHtml;
+    document.getElementById('sidebar').innerHTML = statsHtml + topHtml + srcHtml + xTrendsHtml;
   }
 
   // ── Main render ──────────────────────────────────────────────
