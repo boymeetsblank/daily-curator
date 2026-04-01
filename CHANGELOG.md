@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Fix X trends ticker — write all trends to picks file
+
+The ticker was only showing X trending topics that scored 7+ and made it into the top picks (usually just 1). The web feed's `buildTicker` and `deploy-pages.yml` were already wired to read a `**X Trends:**` field from the picks file, but `daily_curator.py` was never writing it. Added the `**X Trends:** topic1 · topic2 · ...` line to `write_markdown_output()` so all fetched X trending topics (up to 20) are saved to the picks file and shown in the ticker regardless of score.
+
 ## [2026-04-01] Fix cron schedule to correct CST run times
 
 Updated cron times in `daily_curator.yml` to run at 8:30 AM, 1:30 PM, and 7:30 PM CST (UTC-6): `30 14`, `30 19`, `30 1`. Also updated `RUN_TIMES_UTC` in `index.html` to match so the countdown timer counts down to the correct times.
