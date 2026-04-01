@@ -774,18 +774,108 @@
   }
 
   // ── Feedback votes ───────────────────────────────────────────
-  function vote(btn, dir) {
+  const VOTE_TOKEN = '__VOTE_TOKEN__';
+  const VOTE_REPO  = 'boymeetsblank/daily-curator';
+
+  async function vote(btn, dir) {
     const btns = btn.parentElement;
     const up   = btns.querySelector(':first-child');
     const dn   = btns.querySelector(':last-child');
+    let isVoting = false;
+
     if (dir === 'up') {
       const was = up.classList.contains('voted-up');
       up.classList.remove('voted-up'); dn.classList.remove('voted-down');
-      if (!was) up.classList.add('voted-up');
+      if (!was) { up.classList.add('voted-up');   isVoting = true; }
     } else {
       const was = dn.classList.contains('voted-down');
       up.classList.remove('voted-up'); dn.classList.remove('voted-down');
-      if (!was) dn.classList.add('voted-down');
+      if (!was) { dn.classList.add('voted-down'); isVoting = true; }
+    }
+
+    if (!isVoting) return;
+
+    console.log('[vote] direction:', dir);
+    console.log('[vote] VOTE_TOKEN set:', VOTE_TOKEN !== '__VOTE_TOKEN__' && VOTE_TOKEN.length > 0,
+                '| length:', VOTE_TOKEN.length, '| starts with:', VOTE_TOKEN.slice(0, 10));
+
+    if (!VOTE_TOKEN || VOTE_TOKEN === '__VOTE_TOKEN__') {
+      console.error('[vote] VOTE_TOKEN placeholder was not replaced at deploy time — aborting');
+      return;
+    }
+
+    const ct = new Date().toLocaleString('sv-SE', {
+      timeZone: 'America/Chicago',
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', second: '2-digit',
+      hour12: false,
+    }).replace(' ', 'T') + ' CT';
+
+    const record = {
+      timestamp: ct,
+      direction: dir,
+      title:     btns.dataset.title  || '',
+      source:    btns.dataset.source || '',
+      score:     parseInt(btns.dataset.score) || 0,
+      url:       btns.dataset.url    || null,
+    };
+
+    console.log('[vote] record:', record);
+
+    const apiUrl = `https://api.github.com/repos/${VOTE_REPO}/contents/votes.json`;
+    const headers = {
+      'Authorization':        `Bearer ${VOTE_TOKEN}`,
+      'Accept':               'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+    };
+
+    let sha   = null;
+    let votes = [];
+    console.log('[vote] GET', apiUrl);
+    try {
+      const res = await fetch(apiUrl, { headers });
+      console.log('[vote] GET status:', res.status);
+      if (res.ok) {
+        const data = await res.json();
+        sha   = data.sha;
+        votes = JSON.parse(new TextDecoder().decode(
+          Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0))
+        ));
+        console.log('[vote] existing votes:', votes.length, '| sha:', sha);
+      } else {
+        const errText = await res.text();
+        console.error('[vote] GET failed:', res.status, errText);
+      }
+    } catch (e) {
+      console.error('[vote] GET exception:', e);
+    }
+
+    votes.push(record);
+
+    const enc = new TextEncoder().encode(JSON.stringify(votes, null, 2) + '\n');
+    let binary = '';
+    enc.forEach(b => { binary += String.fromCharCode(b); });
+
+    const body = { message: `vote: ${dir} — ${record.title.slice(0, 50)}`,
+                   content: btoa(binary), branch: 'main' };
+    if (sha) body.sha = sha;
+
+    console.log('[vote] PUT', apiUrl, '| sha:', sha || '(creating new)');
+    try {
+      const putRes = await fetch(apiUrl, {
+        method:  'PUT',
+        headers: { ...headers, 'Content-Type': 'application/json' },
+        body:    JSON.stringify(body),
+      });
+      console.log('[vote] PUT status:', putRes.status);
+      if (!putRes.ok) {
+        const errText = await putRes.text();
+        console.error('[vote] PUT failed:', putRes.status, errText);
+      } else {
+        console.log('[vote] vote saved successfully');
+      }
+    } catch (e) {
+      console.error('[vote] PUT exception:', e);
     }
   }
 
@@ -821,7 +911,11 @@
         ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
         <div class="card-footer">
           ${footerLeft}
-          <div class="feedback-btns">
+          <div class="feedback-btns"
+               data-title="${esc(pick.title)}"
+               data-source="${esc(pick.source)}"
+               data-score="${pick.score}"
+               data-url="${esc(pick.link || '')}">
             <button class="feedback-btn" onclick="vote(this,'up')"   title="Good pick">↑</button>
             <button class="feedback-btn" onclick="vote(this,'down')" title="Not for me">↓</button>
           </div>
@@ -842,11 +936,8 @@
     const inner = document.getElementById('ticker-inner');
     if (!wrap || !inner) return;
 
-    const topics = latestRuns
-      .flatMap(r => r.picks)
-      .filter(p => isTrendPick(p) && trendPlatform(p) === 'X')
-      .map(p => p.title)
-      .filter(Boolean);
+    // Use the raw X trends from the most recent run (stored before scoring cuts them)
+    const topics = (latestRuns[0]?.x_trends || []).filter(Boolean);
 
     if (!topics.length) { wrap.style.display = 'none'; return; }
 
@@ -993,7 +1084,8 @@
   }
 
   // ── Countdown timer ──────────────────────────────────────────
-  const RUN_TIMES_UTC = [[13, 0], [18, 0], [2, 0]];
+  // Run times defined in CT (8 AM, 1 PM, 9 PM) so DST transitions are handled automatically.
+  const RUN_TIMES_CT = [[8, 0], [13, 0], [21, 0]];
   let lastRunTime = null;
 
   function parseRunTime(run) {
@@ -1003,11 +1095,19 @@
 
   function getNextRunMs() {
     const now = new Date();
-    return Math.min(...RUN_TIMES_UTC.map(([h,m]) => {
-      const t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m));
-      if (t <= now) t.setUTCDate(t.getUTCDate() + 1);
-      return t.getTime();
-    })) - now.getTime();
+    const parts = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/Chicago', hour: '2-digit', minute: '2-digit', hour12: false
+    }).formatToParts(now);
+    const ctH = parseInt(parts.find(p => p.type === 'hour').value);
+    const ctM = parseInt(parts.find(p => p.type === 'minute').value);
+    const nowCtMin = ctH * 60 + ctM;
+    let minDelta = Infinity;
+    for (const [h, m] of RUN_TIMES_CT) {
+      let delta = h * 60 + m - nowCtMin;
+      if (delta <= 0) delta += 24 * 60;
+      minDelta = Math.min(minDelta, delta);
+    }
+    return minDelta * 60 * 1000;
   }
 
   function fmtNext(ms) {
