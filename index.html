@@ -662,6 +662,136 @@
     }
 
     /* ─────────────────────────────────────────
+       X TRENDING MODULE (inline feed panel)
+    ───────────────────────────────────────── */
+    .trends-module {
+      background: var(--ink);
+      border-radius: 12px;
+      margin-bottom: 10px;
+      padding: 16px 18px 18px;
+      animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .trends-module-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .tm-x-logo {
+      width: 11px; height: 11px;
+      color: rgba(255,255,255,0.45);
+      flex-shrink: 0;
+      display: block;
+    }
+
+    .trends-module-title {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .trends-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+    }
+
+    .trend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      min-width: 0;
+    }
+
+    .trend-item:last-child,
+    .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+
+    .trend-item-rank {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 10px;
+      color: rgba(255,255,255,0.18);
+      width: 18px;
+      flex-shrink: 0;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+
+    .trend-item.rank-hot  .trend-item-rank { color: var(--amber); }
+    .trend-item.rank-warm .trend-item-rank { color: rgba(255,255,255,0.32); }
+
+    .trend-item-name {
+      font-size: 12px;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .trend-item.rank-hot  .trend-item-name { color: rgba(255,255,255,0.88); font-weight: 500; }
+    .trend-item.rank-warm .trend-item-name { color: rgba(255,255,255,0.62); }
+
+    @media (max-width: 520px) {
+      .trends-grid { grid-template-columns: 1fr; }
+      .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid rgba(255,255,255,0.04); }
+    }
+
+    /* ─────────────────────────────────────────
+       X TRENDING — SIDEBAR SECTION
+    ───────────────────────────────────────── */
+    .sb-trend-list { margin-top: 2px; }
+
+    .sb-trend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4.5px 0;
+      border-bottom: 1px solid var(--border-s);
+      min-width: 0;
+    }
+
+    .sb-trend-row:last-child { border-bottom: none; }
+
+    .sb-trend-rank {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 10px;
+      color: var(--ink-4);
+      width: 16px;
+      flex-shrink: 0;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sb-trend-row.rank-hot  .sb-trend-rank { color: var(--amber); }
+    .sb-trend-row.rank-warm .sb-trend-rank { color: var(--ink-3); }
+
+    .sb-trend-name {
+      font-size: 11.5px;
+      color: var(--ink-4);
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
+    }
+
+    .sb-trend-row.rank-hot  .sb-trend-name { color: var(--ink-2); font-weight: 500; }
+    .sb-trend-row.rank-warm .sb-trend-name { color: var(--ink-3); }
+
+    /* ─────────────────────────────────────────
        UTILITIES
     ───────────────────────────────────────── */
     .state-msg {
@@ -928,6 +1058,30 @@
     document.getElementById('filter-count').textContent = n ? `${n} pick${n !== 1 ? 's' : ''}` : '';
   }
 
+  // ── X Trending full list (inline module + sidebar) ──────────
+  function trendRankClass(i) {
+    return i < 3 ? 'rank-hot' : i < 7 ? 'rank-warm' : '';
+  }
+
+  function buildTrendsModule(topics) {
+    if (!topics || !topics.length) return '';
+    const rows = topics.map((name, i) => {
+      const cls     = trendRankClass(i);
+      const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
+      return `<div class="trend-item${cls ? ' ' + cls : ''}">
+        <span class="trend-item-rank">${rankStr}</span>
+        <span class="trend-item-name">${esc(name)}</span>
+      </div>`;
+    }).join('');
+    return `<div class="trends-module">
+      <div class="trends-module-header">
+        <svg class="tm-x-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <span class="trends-module-title">Now Trending</span>
+      </div>
+      <div class="trends-grid">${rows}</div>
+    </div>`;
+  }
+
   // ── X Trending ticker ────────────────────────────────────────
   function buildTicker(latestRuns) {
     const wrap  = document.getElementById('ticker-wrap');
@@ -996,7 +1150,24 @@
     }
     srcHtml += '</div>';
 
-    document.getElementById('sidebar').innerHTML = statsHtml + topHtml + srcHtml;
+    const xTrends = latestRuns[0]?.x_trends || [];
+    let xTrendsHtml = '';
+    if (xTrends.length) {
+      const rows = xTrends.map((name, i) => {
+        const cls     = trendRankClass(i);
+        const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
+        return `<div class="sb-trend-row${cls ? ' ' + cls : ''}">
+          <span class="sb-trend-rank">${rankStr}</span>
+          <span class="sb-trend-name">${esc(name)}</span>
+        </div>`;
+      }).join('');
+      xTrendsHtml = `<div class="sb-section">
+        <div class="sb-title">X Trending</div>
+        <div class="sb-trend-list">${rows}</div>
+      </div>`;
+    }
+
+    document.getElementById('sidebar').innerHTML = statsHtml + xTrendsHtml + topHtml + srcHtml;
   }
 
   // ── Main render ──────────────────────────────────────────────
@@ -1013,7 +1184,8 @@
     document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
     // Flatten today's picks in reverse-chronological order (latestRuns is already newest-first)
-    let html = '<div id="section-latest">';
+    let html = buildTrendsModule(latestRuns[0]?.x_trends || []);
+    html += '<div id="section-latest">';
     for (const run of latestRuns) {
       for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
     }
