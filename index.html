@@ -795,12 +795,11 @@
 
     if (!isVoting) return;
 
-    console.log('[vote] direction:', dir);
-    console.log('[vote] VOTE_TOKEN set:', VOTE_TOKEN !== '__VOTE_TOKEN__' && VOTE_TOKEN.length > 0,
-                '| length:', VOTE_TOKEN.length, '| starts with:', VOTE_TOKEN.slice(0, 10));
+    console.log('[vote] direction:', dir, '| token length:', VOTE_TOKEN.length,
+                '| starts with:', VOTE_TOKEN.slice(0, 10));
 
-    if (!VOTE_TOKEN || VOTE_TOKEN === '__VOTE_TOKEN__') {
-      console.error('[vote] VOTE_TOKEN placeholder was not replaced at deploy time — aborting');
+    if (!VOTE_TOKEN) {
+      console.error('[vote] VOTE_TOKEN is empty — secret not set or injection failed');
       return;
     }
 
