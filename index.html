@@ -795,13 +795,13 @@
 
     if (!isVoting) return;
 
-    console.log('[vote] direction:', dir, '| token length:', VOTE_TOKEN.length,
-                '| starts with:', VOTE_TOKEN.slice(0, 10));
-
     if (!VOTE_TOKEN) {
       console.error('[vote] VOTE_TOKEN is empty — secret not set or injection failed');
       return;
     }
+
+    console.log('[vote] direction:', dir, '| token length:', VOTE_TOKEN.length,
+                '| starts with:', VOTE_TOKEN.slice(0, 10));
 
     const ct = new Date().toLocaleString('sv-SE', {
       timeZone: 'America/Chicago',
@@ -852,8 +852,7 @@
     votes.push(record);
 
     const enc = new TextEncoder().encode(JSON.stringify(votes, null, 2) + '\n');
-    let binary = '';
-    enc.forEach(b => { binary += String.fromCharCode(b); });
+    const binary = Array.from(enc, b => String.fromCharCode(b)).join('');
 
     const body = { message: `vote: ${dir} — ${record.title.slice(0, 50)}`,
                    content: btoa(binary), branch: 'main' };
@@ -935,7 +934,6 @@
     const inner = document.getElementById('ticker-inner');
     if (!wrap || !inner) return;
 
-    // Use the raw X trends from the most recent run (stored before scoring cuts them)
     const topics = (latestRuns[0]?.x_trends || []).filter(Boolean);
 
     if (!topics.length) { wrap.style.display = 'none'; return; }
@@ -1083,8 +1081,11 @@
   }
 
   // ── Countdown timer ──────────────────────────────────────────
-  // Run times defined in CT (8 AM, 1 PM, 9 PM) so DST transitions are handled automatically.
-  const RUN_TIMES_CT = [[8, 0], [13, 0], [21, 0]];
+  // Run times in CT so DST transitions are handled automatically.
+  const RUN_TIMES_CT   = [[8, 0], [13, 0], [21, 0]];
+  const CT_HM_FORMAT   = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Chicago', hour: '2-digit', minute: '2-digit', hour12: false
+  });
   let lastRunTime = null;
 
   function parseRunTime(run) {
@@ -1093,12 +1094,10 @@
   }
 
   function getNextRunMs() {
-    const now = new Date();
-    const parts = new Intl.DateTimeFormat('en-US', {
-      timeZone: 'America/Chicago', hour: '2-digit', minute: '2-digit', hour12: false
-    }).formatToParts(now);
-    const ctH = parseInt(parts.find(p => p.type === 'hour').value);
-    const ctM = parseInt(parts.find(p => p.type === 'minute').value);
+    const now   = new Date();
+    const parts = CT_HM_FORMAT.formatToParts(now);
+    const ctH   = parseInt(parts.find(p => p.type === 'hour').value);
+    const ctM   = parseInt(parts.find(p => p.type === 'minute').value);
     const nowCtMin = ctH * 60 + ctM;
     let minDelta = Infinity;
     for (const [h, m] of RUN_TIMES_CT) {
