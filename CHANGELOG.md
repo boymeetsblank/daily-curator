@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Fix cron schedule to correct CST run times
+
+Updated cron times in `daily_curator.yml` to run at 8:30 AM, 1:30 PM, and 7:30 PM CST (UTC-6): `30 14`, `30 19`, `30 1`. Also updated `RUN_TIMES_UTC` in `index.html` to match so the countdown timer counts down to the correct times.
+
 ## [2026-03-31] Convert timestamps to CT in web feed
 
 Pick card timestamps were showing raw UTC times, making them appear several hours in the future for CT users.
