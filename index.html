@@ -548,51 +548,6 @@
       padding-top: 0;
     }
 
-    /* Editorial section-divider toggle */
-    .sidebar-toggle {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0 0 18px;
-      color: var(--ink-4);
-    }
-
-    .sidebar-toggle::before,
-    .sidebar-toggle::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-
-    .sidebar-toggle-label {
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      flex-shrink: 0;
-      transition: color 0.15s;
-    }
-
-    .sidebar-toggle:hover .sidebar-toggle-label { color: var(--ink-3); }
-
-    .sidebar-toggle-chevron {
-      width: 11px;
-      height: 11px;
-      flex-shrink: 0;
-      transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-      color: var(--ink-4);
-    }
-
-    .sidebar-toggle[aria-expanded="true"] .sidebar-toggle-chevron {
-      transform: rotate(180deg);
-    }
-
     /* Collapse/expand body */
     .sidebar-body {
       display: none;
@@ -900,6 +855,7 @@
     <div class="header-actions">
       <button class="pill-btn active" id="btn-today">Today</button>
       <button class="pill-btn" id="btn-archive">Archive</button>
+      <button class="pill-btn" id="btn-intel" aria-expanded="false" aria-controls="sidebar-body">Intel</button>
     </div>
   </div>
 </header>
@@ -940,10 +896,6 @@
     </div>
   </div>
   <aside class="sidebar" id="sidebar">
-    <button class="sidebar-toggle" id="sidebar-toggle" aria-expanded="false" aria-controls="sidebar-body">
-      <span class="sidebar-toggle-label">Intel</span>
-      <svg class="sidebar-toggle-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-    </button>
     <div class="sidebar-body" id="sidebar-body"></div>
   </aside>
 </div>
@@ -1320,12 +1272,13 @@
       document.getElementById('btn-today').classList.remove('active');
     });
 
-    const toggle = document.getElementById('sidebar-toggle');
-    const body   = document.getElementById('sidebar-body');
-    if (toggle && body) {
-      toggle.addEventListener('click', () => {
+    const intelBtn = document.getElementById('btn-intel');
+    const body     = document.getElementById('sidebar-body');
+    if (intelBtn && body) {
+      intelBtn.addEventListener('click', () => {
         const open = body.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', open);
+        intelBtn.setAttribute('aria-expanded', open);
+        intelBtn.classList.toggle('active', open);
       });
     }
   }
