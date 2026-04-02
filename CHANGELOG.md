@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Rename Intel to Stats, sidebar open by default
+
+Renamed the "Intel" header button to "Stats". Sidebar now opens by default on all screen sizes. The Stats button toggles it closed and open. Cleaned up dead ticker reference in `positionSticky`.
+
 ## [2026-04-01] Remove X trending ticker, restyle trends card, make trends clickable
 
 Removed the scrolling X trending ticker strip from the top of the feed. Restyled the X trends card to match Blank's editorial design system — white background, light borders, ink-based text colors, consistent with article cards. Made all X trending topics (feed card and sidebar) clickable links to `x.com/search?q=` in a new tab.

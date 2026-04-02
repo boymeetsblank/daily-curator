@@ -442,22 +442,23 @@
       padding-top: 0;
     }
 
-    /* Collapse/expand body */
+    /* Collapse/expand body — open by default */
     .sidebar-body {
-      display: none;
+      display: block;
       overflow: hidden;
     }
 
-    .sidebar-body.open { display: block; }
+    .sidebar-body.closed { display: none; }
 
     /* At medium widths: 2-column grid for sections */
     @media (min-width: 521px) and (max-width: 1099px) {
-      .sidebar-body.open {
+      .sidebar-body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 40px;
       }
 
+      .sidebar-body.closed { display: none; }
       .sidebar-body .sb-section { break-inside: avoid; }
     }
 
@@ -760,7 +761,7 @@
     <div class="header-actions">
       <button class="pill-btn active" id="btn-today">Today</button>
       <button class="pill-btn" id="btn-archive">Archive</button>
-      <button class="pill-btn" id="btn-intel" aria-expanded="false" aria-controls="sidebar-body">Intel</button>
+      <button class="pill-btn active" id="btn-stats" aria-expanded="true" aria-controls="sidebar-body">Stats</button>
     </div>
   </div>
 </header>
@@ -1143,13 +1144,13 @@
       document.getElementById('btn-today').classList.remove('active');
     });
 
-    const intelBtn = document.getElementById('btn-intel');
+    const statsBtn = document.getElementById('btn-stats');
     const body     = document.getElementById('sidebar-body');
-    if (intelBtn && body) {
-      intelBtn.addEventListener('click', () => {
-        const open = body.classList.toggle('open');
-        intelBtn.setAttribute('aria-expanded', open);
-        intelBtn.classList.toggle('active', open);
+    if (statsBtn && body) {
+      statsBtn.addEventListener('click', () => {
+        const closed = body.classList.toggle('closed');
+        statsBtn.setAttribute('aria-expanded', !closed);
+        statsBtn.classList.toggle('active', !closed);
       });
     }
   }
@@ -1157,14 +1158,11 @@
   // ── Sticky positioning ───────────────────────────────────────
   function positionSticky() {
     const headerH = document.querySelector('header').offsetHeight;
-    const tw      = document.getElementById('ticker-wrap');
     const fb      = document.getElementById('filter-bar');
     const sb      = document.getElementById('sidebar');
 
-    const twH = (tw && tw.style.display !== 'none') ? tw.offsetHeight : 0;
-    if (tw && tw.style.display !== 'none') tw.style.top = headerH + 'px';
-    fb.style.top = (headerH + twH) + 'px';
-    if (sb) sb.style.top = (headerH + twH + fb.offsetHeight + 16) + 'px';
+    fb.style.top = headerH + 'px';
+    if (sb) sb.style.top = (headerH + fb.offsetHeight + 16) + 'px';
   }
 
   // ── Countdown timer ──────────────────────────────────────────
