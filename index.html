@@ -701,7 +701,7 @@
     .trend-item.rank-warm .trend-item-name { color: var(--ink-2); }
 
     @media (max-width: 520px) {
-      .trends-grid { grid-template-columns: 1fr; }
+      /* Keep two columns on mobile — 1-10 left, 11-20 right */
       .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--border-s); }
     }
 
