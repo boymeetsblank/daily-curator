@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Split 7 and 8 scoring anchors for better score separation
+
+Updated scoring anchors in the Claude prompt to give 7 and 8 distinct definitions: 9–10 = "you have to tell someone about this today", 8 = "you'd bring this up in conversation today", 7 = "worth your time", 5–6 = forgettable, 1–4 = noise. Previously 7 and 8 shared the same anchor, causing most qualifying articles to cluster at 7.
+
 ## [2026-04-02] Tighten scoring logic, add category diversity, fix "why" display
 
 **Scoring prompt overhaul (`daily_curator.py`):**

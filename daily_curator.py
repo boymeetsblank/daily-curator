@@ -502,9 +502,10 @@ Score each article from 1–10 overall. Be ruthlessly selective. Most articles s
 
 Scoring anchors:
 - 9–10: You have to tell someone about this today.
-- 7–8: You'd be glad you saw it. It says something real about where culture is right now.
+- 8: You'd bring this up in conversation today.
+- 7: Worth your time.
 - 5–6: Interesting enough, but you'd forget it by tomorrow.
-- 1–4: Noise — too niche, too dry, too predictable, or an auto-1.
+- 1–4: Noise — too niche, too dry, too predictable, or irrelevant.
 
 When in doubt between a 6 and a 7, score it a 6.
 
