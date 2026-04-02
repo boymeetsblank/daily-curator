@@ -146,6 +146,19 @@ jobs:
 
           PYEOF
 
+      - name: Copy static PWA and breaking news files
+        run: |
+          cp sw.js site/sw.js
+          cp manifest.json site/manifest.json
+          # breaking_news.json may not exist on first deploy — create an empty one
+          if [ -f breaking_news.json ]; then
+            cp breaking_news.json site/breaking_news.json
+          else
+            echo '{"items":[],"last_checked":null}' > site/breaking_news.json
+          fi
+          # breaking_news_state.json is internal — never deployed to Pages
+          echo "Static files copied."
+
       - name: Inject VOTE_TOKEN into site/index.html
         env:
           VOTE_TOKEN: ${{ secrets.VOTE_TOKEN }}

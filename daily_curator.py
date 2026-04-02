@@ -467,7 +467,7 @@ Articles to analyze:
     return articles
 
 
-def evaluate_articles_with_claude(articles: list[dict]) -> list[dict]:
+def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[str] | None = None) -> list[dict]:
     print(f"\n🤖 Sending {len(articles)} articles to Claude for evaluation...")
     print("   (This may take 15–30 seconds...)\n")
 
@@ -485,6 +485,14 @@ ARTICLE {i}:{trending_flag}
   Link:      {article['link'] or '(trending topic — no article link)'}
   Summary:   {article['summary'] or '(no summary — evaluate based on the topic name alone)'}
 ---"""
+
+    # Build the live trending context block to inject into the prompt
+    if trending_topics:
+        topics_list = "\n".join(f"  • {t}" for t in trending_topics[:30])
+        trending_context_block = f"Live trending topics right now:\n{topics_list}"
+        print(f"   📊 Injecting {len(trending_topics[:30])} live trending topics into scoring prompt.")
+    else:
+        trending_context_block = "(No live trending data available for this run.)"
 
     prompt = f"""You are a senior editor curating a daily intelligence briefing for readers who want to stay sharp on culture, business, and ideas.
 
@@ -518,6 +526,9 @@ CATEGORY DIVERSITY RULE: Aim to surface picks from a variety of categories (musi
 TREND ITEMS: Some items have Source "X (Twitter) Trending" or "Google Trends" — these are raw trending topics, not articles. Evaluate them on whether the topic itself is culturally significant and worth a reader's attention. Score them as you would any other item.
 
 CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 3+ sources, treat this as evidence of cultural relevance. Add 1 point to the score (if it's already strong across other criteria).
+
+CULTURAL VELOCITY SIGNALS: The following topics are currently trending live on X (Twitter) and Google Trends. If an article's subject directly intersects with one of these topics, that's a signal of real-time cultural momentum — treat it as additional evidence for the TRENDING and CULTURAL criteria. Do not add points mechanically; use this to inform your editorial judgment about whether the story is landing in the cultural conversation right now.
+{trending_context_block}
 
 For articles that score 7 or above, also provide:
 - WHY: 1–2 sentences written as a brief editor's note — explain why this story is significant and why it matters to the reader right now. Write in clear, direct editorial prose. No references to social media, posting, or content.
@@ -814,7 +825,11 @@ def main():
     twitter_trends = fetch_twitter_trends()
     google_trends = fetch_google_trends()
     all_items = articles + twitter_trends + google_trends
-    evaluated_articles = evaluate_articles_with_claude(all_items)
+
+    # Extract plain topic names from trend items for the velocity signal prompt
+    trending_topics = [t["title"] for t in twitter_trends + google_trends if t.get("title")]
+
+    evaluated_articles = evaluate_articles_with_claude(all_items, trending_topics=trending_topics)
     top_picks = select_top_picks(evaluated_articles)
 
     print(f"\n🔎 Filtering already-picked URLs...")

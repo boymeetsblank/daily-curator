@@ -4,6 +4,30 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Score rarity tiers, Breaking News Mode, trend velocity scoring
+
+**Score-based rarity tiers (`index.html`):**
+- Three visual card tiers based on article score: Common (7, default treatment), Rare (8, steel/slate left-edge accent bar), Legendary (9–10, amber left-edge accent with warm pulse glow)
+- Score badge color shifts to match tier: dark pill for Common, steel `#64748b` for Rare, amber for Legendary
+- The amber pulse animation for Legendary cards is upgraded to preserve the inset left bar during the keyframe animation
+- Sidebar "Best this week" badge also respects the new tier system
+- Design language: editorial left-rule accent (newspaper column marker style), not gamey/chromatic
+
+**Breaking News Mode:**
+- New `breaking_news_check.py` script — fetches Google Trends RSS directly every 15 minutes (no Apify). Detects velocity spikes: topics newly entering the top 5 that were not in the previous check's known set. Qualifying topics bypass Claude scoring entirely — velocity is the qualification.
+- New `.github/workflows/breaking_news.yml` — cron `*/15 * * * *`. Commits `breaking_news.json` and `breaking_news_state.json` to main on each spike; push triggers the existing deploy-pages workflow.
+- `breaking_news.json` items expire after 6 hours (TTL pruned each run).
+- New `sw.js` service worker and `manifest.json` web manifest added for PWA support (iOS 16.4+ home-screen Add to Home Screen).
+- Feed polls `breaking_news.json` every 2 minutes. When a new spike is detected: renders a "Breaking now" section at the top of the feed with red left-accent cards and a pulsing BREAKING badge, shows a browser push notification via the service worker (works on iOS PWA), logs an activity feed event.
+- Notification permission requested on user gesture (🔔 button in header) — shown only when breaking news exists. Compatible with iOS PWA and desktop browsers.
+- `deploy-pages.yml` updated to copy `sw.js`, `manifest.json`, and `breaking_news.json` into the deployed site on every build.
+
+**Trend velocity as scoring signal (`daily_curator.py`):**
+- `evaluate_articles_with_claude()` accepts a new `trending_topics` list parameter.
+- Up to 30 live topic names (combined from X Trending + Google Trends) are injected into the Claude scoring prompt as a "CULTURAL VELOCITY SIGNALS" block.
+- Prompt instructs Claude to use topic matches as additional evidence for TRENDING and CULTURAL criteria — explicitly framed as editorial judgment, not mechanical score addition.
+- `main()` extracts topic names from the already-fetched `twitter_trends` + `google_trends` lists and passes them to the scoring call (no extra API calls).
+
 ## [2026-04-02] Split 7 and 8 scoring anchors for better score separation
 
 Updated scoring anchors in the Claude prompt to give 7 and 8 distinct definitions: 9–10 = "you have to tell someone about this today", 8 = "you'd bring this up in conversation today", 7 = "worth your time", 5–6 = forgettable, 1–4 = noise. Previously 7 and 8 shared the same anchor, causing most qualifying articles to cluster at 7.

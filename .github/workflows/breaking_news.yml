@@ -1,0 +1,41 @@
+name: Breaking News Monitor
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # Every 15 minutes
+  workflow_dispatch:           # Manual trigger for testing
+
+jobs:
+  check-breaking-news:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          # Pull latest so state file is current (avoids overwriting concurrent commits)
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Check for velocity spikes
+        run: python3 breaking_news_check.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Breaking News Bot"
+          git config user.email "bot@daily-curator"
+          git add breaking_news.json breaking_news_state.json
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git pull --rebase origin main
+          git commit -m "Breaking news update $(date +'%Y-%m-%d %H:%M UTC')"
+          git push origin main

@@ -8,6 +8,10 @@
   <meta property="og:title" content="Blank — Daily Picks">
   <meta property="og:description" content="Intentionally finite. Culturally relevant.">
   <meta property="og:type" content="website">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1c1917">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -286,7 +290,7 @@
       letter-spacing: 0.03em;
     }
 
-    .score-badge.score-high { background: var(--amber); }
+    /* .score-badge.score-high is replaced by .score-badge.badge-legendary (see RARITY TIERS) */
 
     .card-source {
       font-size: 10px;
@@ -822,11 +826,56 @@
     }
 
     /* ─────────────────────────────────────────
-       SCORE PULSE (score >= 9)
+       RARITY TIERS
+       Score 7 = Common (default)
+       Score 8 = Rare (steel/slate left accent)
+       Score 9-10 = Legendary (amber left accent)
+    ───────────────────────────────────────── */
+
+    /* Rare — editorial steel rule on left edge */
+    .pick-card.card-rare {
+      border-color: rgba(100, 116, 139, 0.22);
+      box-shadow: inset 3px 0 0 0 rgba(100, 116, 139, 0.48),
+                  0 1px 10px rgba(100, 116, 139, 0.06);
+    }
+    .pick-card.card-rare:hover {
+      box-shadow: inset 3px 0 0 0 rgba(100, 116, 139, 0.58),
+                  0 4px 20px rgba(100, 116, 139, 0.10);
+      transform: translateY(-2px);
+    }
+
+    /* Legendary — amber rule, warm ambient glow */
+    .pick-card.card-legendary {
+      border-color: rgba(217, 119, 6, 0.18);
+      box-shadow: inset 3px 0 0 0 var(--amber),
+                  0 2px 16px rgba(217, 119, 6, 0.09),
+                  0 0 0 1px rgba(217, 119, 6, 0.07);
+    }
+    .pick-card.card-legendary:hover {
+      box-shadow: inset 3px 0 0 0 var(--amber),
+                  0 4px 24px rgba(217, 119, 6, 0.14),
+                  0 0 0 1px rgba(217, 119, 6, 0.12);
+      transform: translateY(-2px);
+    }
+
+    /* Rarity-aware score badges */
+    .score-badge.badge-rare      { background: #64748b; }
+    .score-badge.badge-legendary { background: var(--amber); }
+
+    /* ─────────────────────────────────────────
+       SCORE PULSE (legendary cards, score 9-10)
+       Includes base inset shadow so it stays visible during pulse
     ───────────────────────────────────────── */
     @keyframes scorePulse {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0); }
-      50%       { box-shadow: 0 0 20px rgba(217, 119, 6, 0.13), 0 2px 16px rgba(0,0,0,0.06); }
+      0%, 100% {
+        box-shadow: inset 3px 0 0 0 var(--amber),
+                    0 0 0 1px rgba(217, 119, 6, 0.07);
+      }
+      50% {
+        box-shadow: inset 3px 0 0 0 var(--amber),
+                    0 0 26px rgba(217, 119, 6, 0.20),
+                    0 0 0 1px rgba(217, 119, 6, 0.16);
+      }
     }
 
     .pick-card.pulsing {
@@ -896,6 +945,73 @@
     .pick-card {
       transition: box-shadow 0.22s ease, transform 0.22s ease, opacity 0.35s ease;
     }
+
+    /* ─────────────────────────────────────────
+       BREAKING NEWS CARD
+    ───────────────────────────────────────── */
+    .pick-card.card-breaking {
+      background: rgba(254, 242, 242, 0.55);
+      border-color: rgba(220, 38, 38, 0.2);
+      box-shadow: inset 3px 0 0 0 #dc2626,
+                  0 2px 16px rgba(220, 38, 38, 0.08);
+    }
+
+    .pick-card.card-breaking:hover {
+      box-shadow: inset 3px 0 0 0 #dc2626,
+                  0 4px 24px rgba(220, 38, 38, 0.12);
+      transform: translateY(-2px);
+    }
+
+    .breaking-badge {
+      font-family: var(--sans);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 100px;
+      background: #dc2626;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    @keyframes breakingPulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.65; }
+    }
+
+    .breaking-badge { animation: breakingPulse 2s ease-in-out infinite; }
+
+    /* ─────────────────────────────────────────
+       BREAKING NEWS SECTION HEADER
+    ───────────────────────────────────────── */
+    .breaking-section-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #dc2626;
+      margin-bottom: 10px;
+    }
+
+    .breaking-section-label::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #dc2626;
+      flex-shrink: 0;
+      animation: breakingPulse 2s ease-in-out infinite;
+    }
+
+    /* ─────────────────────────────────────────
+       NOTIFICATION PERMISSION BUTTON
+    ───────────────────────────────────────── */
+    #notif-btn {
+      display: none; /* shown only when breaking news exists */
+    }
   </style>
 </head>
 <body>
@@ -919,6 +1035,7 @@
       <button class="pill-btn active" id="btn-today">Today</button>
       <button class="pill-btn" id="btn-archive">Archive</button>
       <button class="pill-btn active" id="btn-stats" aria-expanded="true" aria-controls="sidebar-body">Stats</button>
+      <button class="pill-btn" id="notif-btn" title="Enable breaking news notifications" onclick="enableNotifications()">🔔</button>
     </div>
   </div>
 </header>
@@ -1092,8 +1209,9 @@
 
   // ── Render a single pick card ────────────────────────────────
   function renderPickCard(pick, runDisplayTime, runIsoTs) {
-    const isHigh     = pick.score >= 9;
-    const scoreBadge = `<span class="score-badge${isHigh ? ' score-high' : ''}">${pick.score}</span>`;
+    const tier       = pick.score >= 9 ? 'legendary' : pick.score >= 8 ? 'rare' : 'common';
+    const badgeClass = tier !== 'common' ? ` badge-${tier}` : '';
+    const scoreBadge = `<span class="score-badge${badgeClass}">${pick.score}</span>`;
     const srcBadge   = pick.trending_across_sources
       ? `<span class="trend-sources-badge">3+ sources</span>` : '';
 
@@ -1111,7 +1229,8 @@
 
     const tsAttr    = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
     const tsDisplay = runIsoTs ? timeAgo(runIsoTs) : esc(runDisplayTime);
-    return `<div class="pick-card${isHigh ? ' score-elite' : ''}" data-score="${pick.score}" data-url="${esc(pick.link || "")}">
+    const cardClass  = (tier !== 'common' ? ` card-${tier}` : '') + (tier === 'legendary' ? ' score-elite' : '');
+    return `<div class="pick-card${cardClass}" data-score="${pick.score}" data-url="${esc(pick.link || "")}">
       ${imageWrap}
       <div class="card-body">
         <div class="card-meta">
@@ -1310,8 +1429,9 @@
     } else {
       const tag  = topPick.link ? 'a' : 'div';
       const href = topPick.link ? ` href="${esc(topPick.link)}" target="_blank" rel="noopener noreferrer"` : '';
+      const topTier = topPick.score >= 9 ? ' badge-legendary' : topPick.score >= 8 ? ' badge-rare' : '';
       topHtml += `<${tag} class="sb-top-pick"${href}>
-        <div class="sb-top-pick-header"><span class="score-badge${topPick.score >= 9 ? ' score-high' : ''}">${topPick.score}</span></div>
+        <div class="sb-top-pick-header"><span class="score-badge${topTier}">${topPick.score}</span></div>
         <div class="sb-top-pick-title">${esc(topPick.title)}</div>
         <div class="sb-top-pick-meta">${esc(topMeta)}</div>
       </${tag}>`;
@@ -1530,8 +1650,16 @@
     const bar = document.getElementById('progress-bar');
     if (!bar) return;
     function update() {
-      const total = document.documentElement.scrollHeight - window.innerHeight;
-      const pct   = total > 0 ? Math.min(100, (window.scrollY / total) * 100) : 0;
+      const latest = document.getElementById('section-latest');
+      const archive = document.getElementById('archive-section');
+      // Measure progress only through today's picks (section-latest).
+      // Use the top of archive-section as the endpoint, or bottom of section-latest if no archive.
+      const endpoint = archive
+        ? archive.getBoundingClientRect().top + window.scrollY
+        : (latest ? latest.getBoundingClientRect().bottom + window.scrollY : document.documentElement.scrollHeight);
+      const pct = endpoint > window.innerHeight
+        ? Math.min(100, (window.scrollY / (endpoint - window.innerHeight)) * 100)
+        : 100;
       bar.style.width = pct + '%';
     }
     window.addEventListener('scroll', update, { passive: true });
@@ -1685,6 +1813,115 @@
   setInterval(tickCountdown, 60_000);
   // Poll every 5 min — checks for new picks AND refreshes trends
   setInterval(checkForNewPicksAndTrends, 5 * 60_000);
+
+  // ── Service Worker ────────────────────────────────────────────
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
+
+  // ── Breaking news: render cards ──────────────────────────────
+  function renderBreakingCard(item) {
+    const searchUrl = esc(item.search_url || `https://www.google.com/search?q=${encodeURIComponent(item.topic)}`);
+    const traffic   = item.traffic ? ` <span style="font-size:10px;color:var(--ink-4);font-weight:400">${esc(item.traffic)} searches</span>` : '';
+    const detected  = item.detected_at ? timeAgo(item.detected_at) : '';
+    return `<div class="pick-card card-breaking" data-breaking-id="${esc(item.id)}">
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="breaking-badge">Breaking</span>${traffic}
+          <span class="card-timestamp">${esc(detected)}</span>
+        </div>
+        <a class="card-title" href="${searchUrl}" target="_blank" rel="noopener noreferrer">${esc(item.topic)}</a>
+        <div class="card-why" style="font-size:12px;color:var(--ink-4);margin-bottom:8px">
+          Velocity spike detected — newly trending in the US
+        </div>
+        <div class="card-footer">
+          <a class="read-link" href="${searchUrl}" target="_blank" rel="noopener noreferrer">
+            Search Google <span class="read-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  function renderBreakingSection(items) {
+    if (!items || !items.length) return;
+    const container = document.getElementById('feed-container');
+    if (!container) return;
+
+    let existing = document.getElementById('breaking-section');
+    if (!existing) {
+      existing = document.createElement('div');
+      existing.id = 'breaking-section';
+      container.prepend(existing);
+    }
+
+    existing.innerHTML = `<div class="breaking-section-label">Breaking now</div>` +
+      items.map(renderBreakingCard).join('');
+  }
+
+  // ── Breaking news: polling ───────────────────────────────────
+  let lastBreakingId = null;
+
+  async function checkBreakingNews() {
+    try {
+      const res = await fetch('breaking_news.json?_=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) return;
+      const data = await res.json();
+      const items = data.items || [];
+      if (!items.length) return;
+
+      // Show the notification bell once we know breaking news exists
+      const notifBtn = document.getElementById('notif-btn');
+      if (notifBtn && Notification.permission !== 'granted') notifBtn.style.display = '';
+
+      const latestId = items[0].id;
+      if (latestId !== lastBreakingId && lastBreakingId !== null) {
+        // New spike since our last check
+        showBreakingNotification(items[0]);
+        addActivity('drop', `⚡ Breaking: ${items[0].topic}`);
+      }
+      lastBreakingId = latestId;
+      renderBreakingSection(items);
+    } catch {}
+  }
+
+  // ── Push notifications ───────────────────────────────────────
+  async function showBreakingNotification(item) {
+    if (!('Notification' in window)) return;
+    if (Notification.permission !== 'granted') return;
+    const opts = {
+      body: `${item.traffic ? item.traffic + ' searches · ' : ''}Velocity spike detected`,
+      tag:       'breaking-news',
+      renotify:  true,
+      icon:      'icon-192.png',
+    };
+    try {
+      if ('serviceWorker' in navigator) {
+        const reg = await navigator.serviceWorker.ready;
+        reg.showNotification(`⚡ ${item.topic}`, opts);
+      } else {
+        new Notification(`⚡ ${item.topic}`, opts);
+      }
+    } catch {}
+  }
+
+  async function enableNotifications() {
+    if (!('Notification' in window)) {
+      alert('This browser does not support notifications.');
+      return;
+    }
+    const perm = await Notification.requestPermission();
+    const btn  = document.getElementById('notif-btn');
+    if (perm === 'granted') {
+      if (btn) { btn.textContent = '🔔'; btn.title = 'Notifications enabled'; }
+    } else {
+      if (btn) { btn.textContent = '🔕'; btn.title = 'Notifications blocked'; }
+    }
+  }
+
+  // Poll breaking news every 2 minutes (more frequent than picks poll)
+  checkBreakingNews();
+  setInterval(checkBreakingNews, 2 * 60_000);
 </script>
 </body>
 </html>
