@@ -103,7 +103,7 @@ def main():
                 subscription_info=sub,
                 data=payload,
                 vapid_private_key=VAPID_PRIVATE_KEY,
-                vapid_claims={**VAPID_CLAIMS, "aud": sub["endpoint"].split("/")[2]},
+                vapid_claims=VAPID_CLAIMS,
             )
             sent += 1
             print(f"   ✅ Subscriber {i + 1} notified.")
