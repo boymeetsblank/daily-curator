@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Raise MAX_PICKS from 10 to 30
+
+Increased the maximum picks per run from 10 to 30. The scoring call already evaluates ~125 articles per run — this change simply surfaces more of the qualifying results (score ≥ 7) instead of capping at 10.
+
 ## [2026-04-02] Raise max_tokens for all Claude calls to handle larger article pools
 
 After raising article caps to 150/15, the scoring call was crashing because `max_tokens=4096` was too small to fit JSON evaluations for 125 articles. Also raised the other two calls for the same reason.
