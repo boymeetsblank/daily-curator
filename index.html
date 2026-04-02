@@ -203,6 +203,26 @@
     }
 
     /* ─────────────────────────────────────────
+       CARD — Read state
+    ───────────────────────────────────────── */
+    .pick-card.read {
+      opacity: 0.55;
+      transition: opacity 0.3s ease;
+    }
+
+    .pick-card.read:hover {
+      opacity: 0.8;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    .pick-card.read .read-link {
+      color: var(--ink-4);
+      font-weight: 400;
+    }
+
+    .pick-card.read .read-link::after { display: none; }
+
+    /* ─────────────────────────────────────────
        CARD IMAGE
     ───────────────────────────────────────── */
     .card-image-wrap {
@@ -940,12 +960,12 @@
          </div>` : '';
 
     const footerLeft = pick.link
-      ? `<a class="read-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer">
+      ? `<a class="read-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer" onclick="markRead(this)">
            Read article <span class="read-arrow">→</span>
          </a>`
       : `<span class="trend-source-label">${esc(trendLabel(pick))}</span>`;
 
-    return `<div class="pick-card" data-score="${pick.score}">
+    return `<div class="pick-card" data-score="${pick.score}" data-url="${esc(pick.link || "")}">
       ${imageWrap}
       <div class="card-body">
         <div class="card-meta">
@@ -969,6 +989,36 @@
         </div>
       </div>
     </div>`;
+  }
+
+  // ── Read state (localStorage) ────────────────────────────────
+  function getReadUrls() {
+    try { return new Set(JSON.parse(localStorage.getItem('blank_read') || '[]')); }
+    catch { return new Set(); }
+  }
+
+  function setReadUI(card) {
+    card.classList.add('read');
+    const link = card.querySelector('.read-link');
+    if (link) link.innerHTML = '✓ Read';
+  }
+
+  function markRead(linkEl) {
+    const card = linkEl.closest('.pick-card');
+    if (!card) return;
+    const url = linkEl.href;
+    setReadUI(card);
+    const urls = getReadUrls();
+    urls.add(url);
+    localStorage.setItem('blank_read', JSON.stringify([...urls]));
+  }
+
+  function applyReadState() {
+    const urls = getReadUrls();
+    if (!urls.size) return;
+    document.querySelectorAll('.pick-card[data-url]').forEach(card => {
+      if (urls.has(card.dataset.url)) setReadUI(card);
+    });
   }
 
   // ── Pick count display ───────────────────────────────────────
@@ -1126,6 +1176,7 @@
     }
 
     document.getElementById('feed-container').innerHTML = html;
+    applyReadState();
     updateCount();
     renderSidebar(latestRuns, runs);
   }

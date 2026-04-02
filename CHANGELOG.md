@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Read state persistence on pick cards
+
+Clicking "Read article" on a pick card now marks it as read: opacity drops to 0.55, the link label changes to "✓ Read". Read state is stored in `localStorage` under `blank_read` (keyed by article URL) so the treatment persists across page refreshes. Hovering a read card partially restores opacity for easy re-reading.
+
 ## [2026-04-01] Rename Intel to Stats, sidebar open by default
 
 Renamed the "Intel" header button to "Stats". Sidebar now opens by default on all screen sizes. The Stats button toggles it closed and open. Cleaned up dead ticker reference in `positionSticky`.
