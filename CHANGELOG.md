@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Raise max_tokens for all Claude calls to handle larger article pools
+
+After raising article caps to 150/15, the scoring call was crashing because `max_tokens=4096` was too small to fit JSON evaluations for 125 articles. Also raised the other two calls for the same reason.
+
+- `evaluate_articles_with_claude`: 4096 → 8192
+- `detect_cross_source_trends`: 2048 → 4096
+- `deduplicate_articles_pre_scoring`: 2048 → 4096
+
 ## [2026-04-02] Switch Claude model to Sonnet; raise article caps
 
 Switched all three Claude API calls (cross-source trend detection, scoring, pre-scoring dedup) from `claude-opus-4-6` to `claude-sonnet-4-6` for faster, cheaper runs. Also raised `MAX_ARTICLES_TO_SEND` from 60 → 150 and `MAX_ARTICLES_PER_SOURCE` from 5 → 15 to significantly increase the candidate pool per run and surface more diverse picks.

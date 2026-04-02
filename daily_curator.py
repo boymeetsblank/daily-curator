@@ -417,7 +417,7 @@ Articles to analyze:
     try:
         response = client.messages.create(
             model="claude-sonnet-4-6",
-            max_tokens=2048,
+            max_tokens=4096,
             messages=[{"role": "user", "content": prompt}]
         )
     except Exception as e:
@@ -539,7 +539,7 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
         try:
             return client.messages.create(
                 model="claude-sonnet-4-6",
-                max_tokens=4096,
+                max_tokens=8192,
                 messages=[{"role": "user", "content": prompt}]
             )
         except anthropic.AuthenticationError:
@@ -633,7 +633,7 @@ If no articles share the same story, return:
     try:
         response = client.messages.create(
             model="claude-sonnet-4-6",
-            max_tokens=2048,
+            max_tokens=4096,
             messages=[{"role": "user", "content": prompt}]
         )
     except Exception as e:
