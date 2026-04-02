@@ -325,6 +325,13 @@
       margin-bottom: 10px;
     }
 
+    a.card-title {
+      text-decoration: none;
+      display: block;
+    }
+
+    a.card-title:hover { text-decoration: underline; text-underline-offset: 3px; }
+
     .card-why {
       font-size: 13px;
       color: var(--ink-3);
@@ -835,6 +842,13 @@
     return null;
   }
 
+  function trendSearchUrl(pick) {
+    const q = encodeURIComponent(pick.title || '');
+    const platform = trendPlatform(pick);
+    if (platform === 'Google') return `https://www.google.com/search?q=${q}`;
+    return `https://x.com/search?q=${q}`;
+  }
+
   function trendLabel(pick) {
     const s = (pick.source || '').toLowerCase();
     if (s.includes('twitter') || s.includes(' x ') || s.endsWith(' x') || s.startsWith('x ')) return 'Trending on X right now';
@@ -974,7 +988,7 @@
           ${srcBadge}
           <span class="card-timestamp">${esc(runDisplayTime)}</span>
         </div>
-        <div class="card-title">${esc(pick.title)}</div>
+        <a class="card-title" href="${esc(pick.link || trendSearchUrl(pick))}" target="_blank" rel="noopener noreferrer"${pick.link ? ' onclick="markRead(this.closest(\'.pick-card\').querySelector(\'.read-link\'))"' : ''}>${esc(pick.title)}</a>
         ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
         <div class="card-footer">
           ${footerLeft}

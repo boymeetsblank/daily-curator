@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Article title is now a clickable link
+
+The card title on each pick card is now an `<a>` tag opening in a new tab. Article cards link to the full article (same URL as "Read article") and clicking also triggers the read-state treatment. Trend items link to the relevant X or Google search page, matching the behavior of the X Trending card.
+
 ## [2026-04-01] Read state persistence on pick cards
 
 Clicking "Read article" on a pick card now marks it as read: opacity drops to 0.55, the link label changes to "✓ Read". Read state is stored in `localStorage` under `blank_read` (keyed by article URL) so the treatment persists across page refreshes. Hovering a read card partially restores opacity for easy re-reading.
