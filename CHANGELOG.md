@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Fix VAPID sub claim to real admin email for Apple APNs
+
+Updated `VAPID_CLAIMS` in `send_push.py` — `sub` was a placeholder (`mailto:bot@daily-curator`), now set to `mailto:mjaffry1@gmail.com`. Apple's push server requires a valid `mailto:` or `https:` contact URI in the VAPID JWT `sub` claim.
+
 ## [2026-04-02] Silent push re-subscribe on load + full console logging for push flow
 
 Refactored the Web Push subscription flow in `index.html` for resilience and debuggability.

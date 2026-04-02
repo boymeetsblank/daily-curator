@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 
 VAPID_PRIVATE_KEY = os.environ.get("VAPID_PRIVATE_KEY", "")
 VAPID_PUBLIC_KEY  = os.environ.get("VAPID_PUBLIC_KEY", "")
-VAPID_CLAIMS      = {"sub": "mailto:bot@daily-curator"}
+VAPID_CLAIMS      = {"sub": "mailto:mjaffry1@gmail.com"}
 FEED_URL          = "https://boymeetsblank.github.io/daily-curator/"
 
 SUBSCRIPTIONS_FILE = "subscriptions.json"
