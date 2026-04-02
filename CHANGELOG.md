@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Always-visible notification button with live permission state
+
+The 🔔 button in the header now renders unconditionally on page load instead of only appearing when breaking news content is detected. `initNotifBtn()` reads `Notification.permission` on load and sets the button label/title accordingly: 🔔 "Enable breaking news notifications" (default), 🔔 "Notifications enabled" (granted), 🔕 "Notifications blocked" (denied). Browsers that don't support the Notification API hide the button entirely. The `checkBreakingNews()` poller no longer controls button visibility.
+
 ## [2026-04-02] Score rarity tiers, Breaking News Mode, trend velocity scoring
 
 **Score-based rarity tiers (`index.html`):**

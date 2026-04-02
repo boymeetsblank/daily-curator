@@ -1012,9 +1012,7 @@
     /* ─────────────────────────────────────────
        NOTIFICATION PERMISSION BUTTON
     ───────────────────────────────────────── */
-    #notif-btn {
-      display: none; /* shown only when breaking news exists */
-    }
+    /* #notif-btn is always visible; initNotifBtn() sets label/title on load */
   </style>
 </head>
 <body>
@@ -1817,6 +1815,8 @@
   // Poll every 5 min — checks for new picks AND refreshes trends
   setInterval(checkForNewPicksAndTrends, 5 * 60_000);
 
+  initNotifBtn();
+
   // ── Service Worker ────────────────────────────────────────────
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(() => {});
@@ -1873,10 +1873,6 @@
       const items = data.items || [];
       if (!items.length) return;
 
-      // Show the notification bell once we know breaking news exists
-      const notifBtn = document.getElementById('notif-btn');
-      if (notifBtn && Notification.permission !== 'granted') notifBtn.style.display = '';
-
       const latestId = items[0].id;
       if (latestId !== lastBreakingId && lastBreakingId !== null) {
         // New spike since our last check
@@ -1906,6 +1902,19 @@
         new Notification(`⚡ ${item.topic}`, opts);
       }
     } catch {}
+  }
+
+  function initNotifBtn() {
+    const btn = document.getElementById('notif-btn');
+    if (!btn) return;
+    if (!('Notification' in window)) { btn.style.display = 'none'; return; }
+    if (Notification.permission === 'granted') {
+      btn.textContent = '🔔'; btn.title = 'Notifications enabled';
+    } else if (Notification.permission === 'denied') {
+      btn.textContent = '🔕'; btn.title = 'Notifications blocked';
+    } else {
+      btn.textContent = '🔔'; btn.title = 'Enable breaking news notifications';
+    }
   }
 
   async function enableNotifications() {
