@@ -103,114 +103,6 @@
     .pill-btn:hover  { background: var(--bg); color: var(--ink); border-color: rgba(0,0,0,0.22); }
     .pill-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
 
-    /* ─────────────────────────────────────────
-       X TRENDING TICKER
-    ───────────────────────────────────────── */
-    .ticker-wrap {
-      position: sticky;
-      z-index: 95;
-      background: var(--ink);
-      height: 36px;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      top: 57px; /* CSS fallback */
-    }
-
-    .ticker-label {
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      padding: 0 14px 0 20px;
-      white-space: nowrap;
-      position: relative;
-      z-index: 2;
-    }
-
-    .ticker-x-logo {
-      width: 13px;
-      height: 13px;
-      flex-shrink: 0;
-      color: #fff;
-      display: block;
-    }
-
-    .ticker-label-text {
-      font-size: 9.5px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.4);
-    }
-
-    .ticker-sep {
-      width: 1px;
-      height: 15px;
-      background: rgba(255,255,255,0.12);
-      flex-shrink: 0;
-    }
-
-    .ticker-fade-l {
-      position: absolute;
-      left: 118px; top: 0; height: 100%; width: 30px;
-      background: linear-gradient(to right, var(--ink), transparent);
-      z-index: 3;
-      pointer-events: none;
-    }
-
-    .ticker-fade-r {
-      position: absolute;
-      right: 0; top: 0; height: 100%; width: 40px;
-      background: linear-gradient(to left, var(--ink), transparent);
-      z-index: 3;
-      pointer-events: none;
-    }
-
-    .ticker-track { flex: 1; overflow: hidden; }
-
-    .ticker-inner {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 0 10px;
-      animation: ticker-scroll 40s linear infinite;
-      white-space: nowrap;
-    }
-
-    .ticker-inner:hover { animation-play-state: paused; }
-
-    @keyframes ticker-scroll {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    .ticker-pill {
-      display: inline-flex;
-      align-items: center;
-      font-size: 11px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.5);
-      padding: 3px 10px;
-      border-radius: 100px;
-      border: 1px solid rgba(255,255,255,0.1);
-      background: rgba(255,255,255,0.05);
-      white-space: nowrap;
-      flex-shrink: 0;
-      cursor: default;
-      transition: color 0.12s, background 0.12s;
-    }
-
-    .ticker-pill-rank {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 9px;
-      opacity: 0.4;
-      margin-right: 4px;
-      flex-shrink: 0;
-    }
-
-    .ticker-pill:hover { color: #fff; background: rgba(255,255,255,0.1); }
 
     /* ─────────────────────────────────────────
        FILTER BAR
@@ -690,7 +582,8 @@
        X TRENDING MODULE (inline feed panel)
     ───────────────────────────────────────── */
     .trends-module {
-      background: var(--ink);
+      background: var(--surface);
+      border: 1px solid var(--border);
       border-radius: 12px;
       margin-bottom: 10px;
       padding: 16px 18px 18px;
@@ -703,12 +596,12 @@
       gap: 8px;
       margin-bottom: 14px;
       padding-bottom: 11px;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
+      border-bottom: 1px solid var(--border);
     }
 
     .tm-x-logo {
       width: 11px; height: 11px;
-      color: rgba(255,255,255,0.45);
+      color: var(--ink-4);
       flex-shrink: 0;
       display: block;
     }
@@ -718,7 +611,7 @@
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
+      color: var(--ink-4);
     }
 
     .trends-grid {
@@ -727,12 +620,19 @@
       column-gap: 20px;
     }
 
+    a.trend-item {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a.trend-item:hover .trend-item-name { color: var(--ink); text-decoration: underline; }
+
     .trend-item {
       display: flex;
       align-items: center;
       gap: 8px;
       padding: 5px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.04);
+      border-bottom: 1px solid var(--border-s);
       min-width: 0;
     }
 
@@ -743,7 +643,7 @@
       font-family: var(--serif);
       font-style: italic;
       font-size: 10px;
-      color: rgba(255,255,255,0.18);
+      color: var(--ink-4);
       width: 18px;
       flex-shrink: 0;
       text-align: right;
@@ -752,11 +652,11 @@
     }
 
     .trend-item.rank-hot  .trend-item-rank { color: var(--amber); }
-    .trend-item.rank-warm .trend-item-rank { color: rgba(255,255,255,0.32); }
+    .trend-item.rank-warm .trend-item-rank { color: var(--ink-3); }
 
     .trend-item-name {
       font-size: 12px;
-      color: rgba(255,255,255,0.42);
+      color: var(--ink-3);
       line-height: 1.3;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -765,12 +665,12 @@
       min-width: 0;
     }
 
-    .trend-item.rank-hot  .trend-item-name { color: rgba(255,255,255,0.88); font-weight: 500; }
-    .trend-item.rank-warm .trend-item-name { color: rgba(255,255,255,0.62); }
+    .trend-item.rank-hot  .trend-item-name { color: var(--ink); font-weight: 500; }
+    .trend-item.rank-warm .trend-item-name { color: var(--ink-2); }
 
     @media (max-width: 520px) {
       .trends-grid { grid-template-columns: 1fr; }
-      .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--border-s); }
     }
 
     /* ─────────────────────────────────────────
@@ -815,6 +715,9 @@
 
     .sb-trend-row.rank-hot  .sb-trend-name { color: var(--ink-2); font-weight: 500; }
     .sb-trend-row.rank-warm .sb-trend-name { color: var(--ink-3); }
+
+    a.sb-trend-row { text-decoration: none; cursor: pointer; }
+    a.sb-trend-row:hover .sb-trend-name { color: var(--ink); text-decoration: underline; }
 
     /* ─────────────────────────────────────────
        UTILITIES
@@ -862,19 +765,6 @@
   </div>
 </header>
 
-<!-- ── X Trending Ticker ── -->
-<div class="ticker-wrap" id="ticker-wrap">
-  <div class="ticker-label">
-    <svg class="ticker-x-logo" viewBox="0 0 24 24" fill="currentColor" aria-label="X" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-    <span class="ticker-label-text">Trending</span>
-  </div>
-  <div class="ticker-sep"></div>
-  <div class="ticker-fade-l"></div>
-  <div class="ticker-track">
-    <div class="ticker-inner" id="ticker-inner"></div>
-  </div>
-  <div class="ticker-fade-r"></div>
-</div>
 
 <!-- ── Filter bar ── -->
 <div class="filter-bar" id="filter-bar">
@@ -1096,10 +986,11 @@
     const rows = topics.map((name, i) => {
       const cls     = trendRankClass(i);
       const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
-      return `<div class="trend-item${cls ? ' ' + cls : ''}">
+      const encoded = encodeURIComponent(name);
+      return `<a class="trend-item${cls ? ' ' + cls : ''}" href="https://x.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">
         <span class="trend-item-rank">${rankStr}</span>
         <span class="trend-item-name">${esc(name)}</span>
-      </div>`;
+      </a>`;
     }).join('');
     return `<div class="trends-module">
       <div class="trends-module-header">
@@ -1110,31 +1001,6 @@
     </div>`;
   }
 
-  // ── X Trending ticker ────────────────────────────────────────
-  function buildTicker(latestRuns) {
-    const wrap  = document.getElementById('ticker-wrap');
-    const inner = document.getElementById('ticker-inner');
-    if (!wrap || !inner) return;
-
-    // Prefer raw x_trends (full list); fall back to X-source scored picks for older runs
-    let topics = (latestRuns[0]?.x_trends || []).filter(Boolean);
-    if (!topics.length) {
-      topics = latestRuns
-        .flatMap(r => r.picks)
-        .filter(p => isTrendPick(p) && trendPlatform(p) === 'X')
-        .map(p => p.title)
-        .filter(Boolean);
-    }
-
-    if (!topics.length) { wrap.style.display = 'none'; return; }
-
-    inner.innerHTML = [...topics, ...topics]
-      .map((t, i) => {
-        const rank = (i % topics.length) + 1;
-        return `<span class="ticker-pill"><span class="ticker-pill-rank">${rank}.</span>${esc(t)}</span>`;
-      }).join('');
-    inner.style.animationDuration = Math.max(20, topics.length * 5) + 's';
-  }
 
   // ── Sidebar ──────────────────────────────────────────────────
   function renderSidebar(latestRuns, allRuns) {
@@ -1195,10 +1061,11 @@
       const rows = xTrends.map((name, i) => {
         const cls     = trendRankClass(i);
         const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
-        return `<div class="sb-trend-row${cls ? ' ' + cls : ''}">
+        const encoded = encodeURIComponent(name);
+        return `<a class="sb-trend-row${cls ? ' ' + cls : ''}" href="https://x.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">
           <span class="sb-trend-rank">${rankStr}</span>
           <span class="sb-trend-name">${esc(name)}</span>
-        </div>`;
+        </a>`;
       }).join('');
       xTrendsHtml = `<div class="sb-section">
         <div class="sb-title">X Trending</div>
@@ -1259,7 +1126,6 @@
 
     document.getElementById('feed-container').innerHTML = html;
     updateCount();
-    buildTicker(latestRuns);
     renderSidebar(latestRuns, runs);
   }
 

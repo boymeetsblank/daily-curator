@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Remove X trending ticker, restyle trends card, make trends clickable
+
+Removed the scrolling X trending ticker strip from the top of the feed. Restyled the X trends card to match Blank's editorial design system — white background, light borders, ink-based text colors, consistent with article cards. Made all X trending topics (feed card and sidebar) clickable links to `x.com/search?q=` in a new tab.
+
 ## [2026-04-01] Fix HTML entities in article titles
 
 Applied `html.unescape()` to Inoreader article titles at the point of extraction in `daily_curator.py`. Prevents encoded entities like `&amp;`, `&#8217;`, and `&ldquo;` from appearing literally in feed cards and pick files.
