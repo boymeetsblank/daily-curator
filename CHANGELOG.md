@@ -4,6 +4,17 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Tighten scoring logic, add category diversity, fix "why" display
+
+**Scoring prompt overhaul (`daily_curator.py`):**
+- Replaced vague "be ruthlessly selective" guidance with concrete score anchors: 9–10 = "you have to tell someone about this today", 7–8 = "you'd be glad you saw it — it says something real about where culture is right now", 5–6 = forgettable, 1–4 = noise
+- Added "when in doubt between 6 and 7, score it 6" tiebreaker to reduce score inflation
+- Added CATEGORY DIVERSITY RULE: Claude now caps high scores within any single category unless the news genuinely warrants it, preventing one topic from flooding the picks
+- Reduced cross-source bonus from "+1–2 points" to "+1 point only" to stop borderline articles being pushed over the 7 threshold purely by repetition
+
+**"Why it matters" fix (`deploy-pages.yml`):**
+- The picks markdown was writing `**Why it matters:**` but the parser was looking for `**Why it scored high:**` — a mismatch from an earlier prompt rewrite. Updated regex to match both headings so the editorial note now shows correctly on pick cards in the web feed.
+
 ## [2026-04-02] Raise MAX_PICKS from 10 to 30
 
 Increased the maximum picks per run from 10 to 30. The scoring call already evaluates ~125 articles per run — this change simply surfaces more of the qualifying results (score ≥ 7) instead of capping at 10.
