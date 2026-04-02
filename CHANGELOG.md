@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Switch Claude model to Sonnet; raise article caps
+
+Switched all three Claude API calls (cross-source trend detection, scoring, pre-scoring dedup) from `claude-opus-4-6` to `claude-sonnet-4-6` for faster, cheaper runs. Also raised `MAX_ARTICLES_TO_SEND` from 60 → 150 and `MAX_ARTICLES_PER_SOURCE` from 5 → 15 to significantly increase the candidate pool per run and surface more diverse picks.
+
+## [2026-04-01] Fix X trends ticker — write all trends to picks file
+
 ## [2026-04-01] Live feed enhancements — timestamps, animations, polling, activity
 
 Seven enhancements to index.html making the feed feel alive:
