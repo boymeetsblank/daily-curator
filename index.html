@@ -103,114 +103,6 @@
     .pill-btn:hover  { background: var(--bg); color: var(--ink); border-color: rgba(0,0,0,0.22); }
     .pill-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
 
-    /* ─────────────────────────────────────────
-       X TRENDING TICKER
-    ───────────────────────────────────────── */
-    .ticker-wrap {
-      position: sticky;
-      z-index: 95;
-      background: var(--ink);
-      height: 36px;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      top: 57px; /* CSS fallback */
-    }
-
-    .ticker-label {
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      padding: 0 14px 0 20px;
-      white-space: nowrap;
-      position: relative;
-      z-index: 2;
-    }
-
-    .ticker-x-logo {
-      width: 13px;
-      height: 13px;
-      flex-shrink: 0;
-      color: #fff;
-      display: block;
-    }
-
-    .ticker-label-text {
-      font-size: 9.5px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.4);
-    }
-
-    .ticker-sep {
-      width: 1px;
-      height: 15px;
-      background: rgba(255,255,255,0.12);
-      flex-shrink: 0;
-    }
-
-    .ticker-fade-l {
-      position: absolute;
-      left: 118px; top: 0; height: 100%; width: 30px;
-      background: linear-gradient(to right, var(--ink), transparent);
-      z-index: 3;
-      pointer-events: none;
-    }
-
-    .ticker-fade-r {
-      position: absolute;
-      right: 0; top: 0; height: 100%; width: 40px;
-      background: linear-gradient(to left, var(--ink), transparent);
-      z-index: 3;
-      pointer-events: none;
-    }
-
-    .ticker-track { flex: 1; overflow: hidden; }
-
-    .ticker-inner {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 0 10px;
-      animation: ticker-scroll 40s linear infinite;
-      white-space: nowrap;
-    }
-
-    .ticker-inner:hover { animation-play-state: paused; }
-
-    @keyframes ticker-scroll {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    .ticker-pill {
-      display: inline-flex;
-      align-items: center;
-      font-size: 11px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.5);
-      padding: 3px 10px;
-      border-radius: 100px;
-      border: 1px solid rgba(255,255,255,0.1);
-      background: rgba(255,255,255,0.05);
-      white-space: nowrap;
-      flex-shrink: 0;
-      cursor: default;
-      transition: color 0.12s, background 0.12s;
-    }
-
-    .ticker-pill-rank {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 9px;
-      opacity: 0.4;
-      margin-right: 4px;
-      flex-shrink: 0;
-    }
-
-    .ticker-pill:hover { color: #fff; background: rgba(255,255,255,0.1); }
 
     /* ─────────────────────────────────────────
        FILTER BAR
@@ -309,6 +201,26 @@
       box-shadow: 0 4px 24px rgba(0,0,0,0.08);
       transform: translateY(-2px);
     }
+
+    /* ─────────────────────────────────────────
+       CARD — Read state
+    ───────────────────────────────────────── */
+    .pick-card.read {
+      opacity: 0.55;
+      transition: opacity 0.3s ease;
+    }
+
+    .pick-card.read:hover {
+      opacity: 0.8;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    .pick-card.read .read-link {
+      color: var(--ink-4);
+      font-weight: 400;
+    }
+
+    .pick-card.read .read-link::after { display: none; }
 
     /* ─────────────────────────────────────────
        CARD IMAGE
@@ -412,6 +324,13 @@
       letter-spacing: -0.1px;
       margin-bottom: 10px;
     }
+
+    a.card-title {
+      text-decoration: none;
+      display: block;
+    }
+
+    a.card-title:hover { text-decoration: underline; text-underline-offset: 3px; }
 
     .card-why {
       font-size: 13px;
@@ -550,22 +469,23 @@
       padding-top: 0;
     }
 
-    /* Collapse/expand body */
+    /* Collapse/expand body — open by default */
     .sidebar-body {
-      display: none;
+      display: block;
       overflow: hidden;
     }
 
-    .sidebar-body.open { display: block; }
+    .sidebar-body.closed { display: none; }
 
     /* At medium widths: 2-column grid for sections */
     @media (min-width: 521px) and (max-width: 1099px) {
-      .sidebar-body.open {
+      .sidebar-body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 40px;
       }
 
+      .sidebar-body.closed { display: none; }
       .sidebar-body .sb-section { break-inside: avoid; }
     }
 
@@ -690,7 +610,8 @@
        X TRENDING MODULE (inline feed panel)
     ───────────────────────────────────────── */
     .trends-module {
-      background: var(--ink);
+      background: var(--surface);
+      border: 1px solid var(--border);
       border-radius: 12px;
       margin-bottom: 10px;
       padding: 16px 18px 18px;
@@ -703,12 +624,12 @@
       gap: 8px;
       margin-bottom: 14px;
       padding-bottom: 11px;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
+      border-bottom: 1px solid var(--border);
     }
 
     .tm-x-logo {
       width: 11px; height: 11px;
-      color: rgba(255,255,255,0.45);
+      color: var(--ink-4);
       flex-shrink: 0;
       display: block;
     }
@@ -718,7 +639,7 @@
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
+      color: var(--ink-4);
     }
 
     .trends-grid {
@@ -727,12 +648,19 @@
       column-gap: 20px;
     }
 
+    a.trend-item {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a.trend-item:hover .trend-item-name { color: var(--ink); text-decoration: underline; }
+
     .trend-item {
       display: flex;
       align-items: center;
       gap: 8px;
       padding: 5px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.04);
+      border-bottom: 1px solid var(--border-s);
       min-width: 0;
     }
 
@@ -743,7 +671,7 @@
       font-family: var(--serif);
       font-style: italic;
       font-size: 10px;
-      color: rgba(255,255,255,0.18);
+      color: var(--ink-4);
       width: 18px;
       flex-shrink: 0;
       text-align: right;
@@ -752,11 +680,11 @@
     }
 
     .trend-item.rank-hot  .trend-item-rank { color: var(--amber); }
-    .trend-item.rank-warm .trend-item-rank { color: rgba(255,255,255,0.32); }
+    .trend-item.rank-warm .trend-item-rank { color: var(--ink-3); }
 
     .trend-item-name {
       font-size: 12px;
-      color: rgba(255,255,255,0.42);
+      color: var(--ink-3);
       line-height: 1.3;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -765,12 +693,12 @@
       min-width: 0;
     }
 
-    .trend-item.rank-hot  .trend-item-name { color: rgba(255,255,255,0.88); font-weight: 500; }
-    .trend-item.rank-warm .trend-item-name { color: rgba(255,255,255,0.62); }
+    .trend-item.rank-hot  .trend-item-name { color: var(--ink); font-weight: 500; }
+    .trend-item.rank-warm .trend-item-name { color: var(--ink-2); }
 
     @media (max-width: 520px) {
       .trends-grid { grid-template-columns: 1fr; }
-      .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--border-s); }
     }
 
     /* ─────────────────────────────────────────
@@ -816,6 +744,9 @@
     .sb-trend-row.rank-hot  .sb-trend-name { color: var(--ink-2); font-weight: 500; }
     .sb-trend-row.rank-warm .sb-trend-name { color: var(--ink-3); }
 
+    a.sb-trend-row { text-decoration: none; cursor: pointer; }
+    a.sb-trend-row:hover .sb-trend-name { color: var(--ink); text-decoration: underline; }
+
     /* ─────────────────────────────────────────
        UTILITIES
     ───────────────────────────────────────── */
@@ -843,9 +774,139 @@
       #last-updated, .run-meta-sep, #next-run { display: none; }
       .mobile-timer-row { display: block; }
     }
+
+    /* ─────────────────────────────────────────
+       READING PROGRESS BAR
+    ───────────────────────────────────────── */
+    #progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      width: 0%;
+      background: var(--amber);
+      z-index: 9999;
+      transition: width 0.08s linear;
+      pointer-events: none;
+      border-radius: 0 1px 1px 0;
+    }
+
+    /* ─────────────────────────────────────────
+       NEW PICKS BANNER
+    ───────────────────────────────────────── */
+    #new-picks-banner {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      background: var(--ink);
+      color: #fff;
+      padding: 11px 24px;
+      text-align: center;
+      font-size: 12.5px;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      animation: bannerSlideDown 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    #new-picks-banner:hover { background: #2c2c2c; }
+
+    #new-picks-banner .banner-dismiss {
+      margin-left: 10px;
+      opacity: 0.45;
+      font-size: 11px;
+    }
+
+    @keyframes bannerSlideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to   { transform: translateY(0);     opacity: 1; }
+    }
+
+    /* ─────────────────────────────────────────
+       SCORE PULSE (score >= 9)
+    ───────────────────────────────────────── */
+    @keyframes scorePulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0); }
+      50%       { box-shadow: 0 0 20px rgba(217, 119, 6, 0.13), 0 2px 16px rgba(0,0,0,0.06); }
+    }
+
+    .pick-card.pulsing {
+      animation: scorePulse 4s ease-in-out infinite;
+    }
+
+    /* ─────────────────────────────────────────
+       TRENDS UPDATE INDICATOR
+    ───────────────────────────────────────── */
+    .trends-updated {
+      font-size: 9.5px;
+      color: var(--ink-4);
+      margin-left: auto;
+      font-variant-numeric: tabular-nums;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .trends-updated.visible { opacity: 1; }
+
+    /* ─────────────────────────────────────────
+       ACTIVITY FEED
+    ───────────────────────────────────────── */
+    .activity-feed { margin-top: 2px; }
+
+    .activity-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 5px 0;
+      border-bottom: 1px solid var(--border-s);
+      animation: fadeUp 0.35s ease both;
+    }
+
+    .activity-item:last-child { border-bottom: none; }
+
+    .activity-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--ink-4);
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    .activity-dot.dot-drop { background: var(--amber); }
+    .activity-dot.dot-read { background: #a8c5a0; }
+
+    .activity-text {
+      font-size: 11px;
+      color: var(--ink-4);
+      line-height: 1.4;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .activity-time {
+      font-size: 10px;
+      color: var(--ink-4);
+      flex-shrink: 0;
+      opacity: 0.6;
+      white-space: nowrap;
+    }
+
+    /* ─────────────────────────────────────────
+       READ STATE — smoother transition
+    ───────────────────────────────────────── */
+    .pick-card {
+      transition: box-shadow 0.22s ease, transform 0.22s ease, opacity 0.35s ease;
+    }
   </style>
 </head>
 <body>
+
+<!-- ── Reading Progress Bar ── -->
+<div id="progress-bar"></div>
+
+<!-- ── New Picks Banner ── -->
+<div id="new-picks-banner" role="status" onclick="dismissBanner()">
+  New picks available — click to refresh <span class="banner-dismiss">✕</span>
+</div>
 
 <!-- ── Header ── -->
 <header>
@@ -857,24 +918,11 @@
     <div class="header-actions">
       <button class="pill-btn active" id="btn-today">Today</button>
       <button class="pill-btn" id="btn-archive">Archive</button>
-      <button class="pill-btn" id="btn-intel" aria-expanded="false" aria-controls="sidebar-body">Intel</button>
+      <button class="pill-btn active" id="btn-stats" aria-expanded="true" aria-controls="sidebar-body">Stats</button>
     </div>
   </div>
 </header>
 
-<!-- ── X Trending Ticker ── -->
-<div class="ticker-wrap" id="ticker-wrap">
-  <div class="ticker-label">
-    <svg class="ticker-x-logo" viewBox="0 0 24 24" fill="currentColor" aria-label="X" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-    <span class="ticker-label-text">Trending</span>
-  </div>
-  <div class="ticker-sep"></div>
-  <div class="ticker-fade-l"></div>
-  <div class="ticker-track">
-    <div class="ticker-inner" id="ticker-inner"></div>
-  </div>
-  <div class="ticker-fade-r"></div>
-</div>
 
 <!-- ── Filter bar ── -->
 <div class="filter-bar" id="filter-bar">
@@ -922,6 +970,13 @@
     if (s.includes('twitter') || s.includes('x (twitter)') || s === 'x (twitter) trending') return 'X';
     if (s.includes('google')) return 'Google';
     return null;
+  }
+
+  function trendSearchUrl(pick) {
+    const q = encodeURIComponent(pick.title || '');
+    const platform = trendPlatform(pick);
+    if (platform === 'Google') return `https://www.google.com/search?q=${q}`;
+    return `https://x.com/search?q=${q}`;
   }
 
   function trendLabel(pick) {
@@ -1036,7 +1091,7 @@
   }
 
   // ── Render a single pick card ────────────────────────────────
-  function renderPickCard(pick, runDisplayTime) {
+  function renderPickCard(pick, runDisplayTime, runIsoTs) {
     const isHigh     = pick.score >= 9;
     const scoreBadge = `<span class="score-badge${isHigh ? ' score-high' : ''}">${pick.score}</span>`;
     const srcBadge   = pick.trending_across_sources
@@ -1049,21 +1104,23 @@
          </div>` : '';
 
     const footerLeft = pick.link
-      ? `<a class="read-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer">
+      ? `<a class="read-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer" onclick="markRead(this)">
            Read article <span class="read-arrow">→</span>
          </a>`
       : `<span class="trend-source-label">${esc(trendLabel(pick))}</span>`;
 
-    return `<div class="pick-card" data-score="${pick.score}">
+    const tsAttr    = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
+    const tsDisplay = runIsoTs ? timeAgo(runIsoTs) : esc(runDisplayTime);
+    return `<div class="pick-card${isHigh ? ' score-elite' : ''}" data-score="${pick.score}" data-url="${esc(pick.link || "")}">
       ${imageWrap}
       <div class="card-body">
         <div class="card-meta">
           ${scoreBadge}
           <span class="card-source">${esc(pick.source)}</span>
           ${srcBadge}
-          <span class="card-timestamp">${esc(runDisplayTime)}</span>
+          <span class="card-timestamp"${tsAttr}>${tsDisplay}</span>
         </div>
-        <div class="card-title">${esc(pick.title)}</div>
+        <a class="card-title" href="${esc(pick.link || trendSearchUrl(pick))}" target="_blank" rel="noopener noreferrer"${pick.link ? ' onclick="markRead(this.closest(\'.pick-card\').querySelector(\'.read-link\'))"' : ''}>${esc(pick.title)}</a>
         ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
         <div class="card-footer">
           ${footerLeft}
@@ -1078,6 +1135,104 @@
         </div>
       </div>
     </div>`;
+  }
+
+  // ── Read state (localStorage) ────────────────────────────────
+  function getReadUrls() {
+    try { return new Set(JSON.parse(localStorage.getItem('blank_read') || '[]')); }
+    catch { return new Set(); }
+  }
+
+  function setReadUI(card) {
+    card.classList.add('read');
+    const link = card.querySelector('.read-link');
+    if (link) link.innerHTML = '✓ Read';
+  }
+
+  // Returns today's date in CT as YYYY-MM-DD
+  function ctDateStr() {
+    return new Date().toLocaleDateString('sv-SE', { timeZone: 'America/Chicago' });
+  }
+
+  function getReadStats() {
+    const today = ctDateStr();
+    let todayData = { date: '', count: 0 };
+    try { todayData = JSON.parse(localStorage.getItem('blank_read_today') || '{}'); } catch {}
+    const readToday = todayData.date === today ? (todayData.count || 0) : 0;
+
+    let total = 0;
+    try { total = parseInt(localStorage.getItem('blank_read_total') || '0', 10) || 0; } catch {}
+
+    let streakData = { lastDate: '', streak: 0 };
+    try { streakData = JSON.parse(localStorage.getItem('blank_read_streak') || '{}'); } catch {}
+    const streak = streakData.streak || 0;
+
+    return { readToday, total, streak };
+  }
+
+  function incrementReadStats() {
+    const today = ctDateStr();
+
+    // Read Today
+    let todayData = { date: '', count: 0 };
+    try { todayData = JSON.parse(localStorage.getItem('blank_read_today') || '{}'); } catch {}
+    if (todayData.date !== today) todayData = { date: today, count: 0 };
+    todayData.count++;
+    localStorage.setItem('blank_read_today', JSON.stringify(todayData));
+
+    // Total Read
+    let total = 0;
+    try { total = parseInt(localStorage.getItem('blank_read_total') || '0', 10) || 0; } catch {}
+    localStorage.setItem('blank_read_total', String(total + 1));
+
+    // Daily Streak — advance only on the first read of a new day
+    let streakData = { lastDate: '', streak: 0 };
+    try { streakData = JSON.parse(localStorage.getItem('blank_read_streak') || '{}'); } catch {}
+    if (streakData.lastDate !== today) {
+      const prev = new Date(today + 'T12:00:00Z');
+      prev.setUTCDate(prev.getUTCDate() - 1);
+      const yesterday = prev.toISOString().slice(0, 10);
+      if (streakData.lastDate === yesterday) {
+        streakData.streak = (streakData.streak || 0) + 1;
+      } else {
+        streakData.streak = 1;
+      }
+      streakData.lastDate = today;
+      localStorage.setItem('blank_read_streak', JSON.stringify(streakData));
+    }
+
+    updateReadStatUI();
+  }
+
+  function updateReadStatUI() {
+    const { readToday, total, streak } = getReadStats();
+    const elToday  = document.getElementById('sb-read-today');
+    const elTotal  = document.getElementById('sb-read-total');
+    const elStreak = document.getElementById('sb-read-streak');
+    if (elToday)  elToday.textContent  = readToday;
+    if (elTotal)  elTotal.textContent  = total;
+    if (elStreak) elStreak.textContent = streak;
+  }
+
+  function markRead(linkEl) {
+    const card = linkEl.closest('.pick-card');
+    if (!card) return;
+    const url = linkEl.href;
+    const urls = getReadUrls();
+    if (urls.has(url)) return;
+    setReadUI(card);
+    urls.add(url);
+    localStorage.setItem('blank_read', JSON.stringify([...urls]));
+    incrementReadStats();
+    addActivity('read', 'Mo read an article');
+  }
+
+  function applyReadState() {
+    const urls = getReadUrls();
+    if (!urls.size) return;
+    document.querySelectorAll('.pick-card[data-url]').forEach(card => {
+      if (urls.has(card.dataset.url)) setReadUI(card);
+    });
   }
 
   // ── Pick count display ───────────────────────────────────────
@@ -1096,45 +1251,22 @@
     const rows = topics.map((name, i) => {
       const cls     = trendRankClass(i);
       const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
-      return `<div class="trend-item${cls ? ' ' + cls : ''}">
+      const encoded = encodeURIComponent(name);
+      return `<a class="trend-item${cls ? ' ' + cls : ''}" href="https://x.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">
         <span class="trend-item-rank">${rankStr}</span>
         <span class="trend-item-name">${esc(name)}</span>
-      </div>`;
+      </a>`;
     }).join('');
-    return `<div class="trends-module">
+    return `<div class="trends-module" id="trends-module">
       <div class="trends-module-header">
         <svg class="tm-x-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         <span class="trends-module-title">Now Trending</span>
+        <span id="trends-updated-at" class="trends-updated"></span>
       </div>
-      <div class="trends-grid">${rows}</div>
+      <div class="trends-grid" id="trends-grid">${rows}</div>
     </div>`;
   }
 
-  // ── X Trending ticker ────────────────────────────────────────
-  function buildTicker(latestRuns) {
-    const wrap  = document.getElementById('ticker-wrap');
-    const inner = document.getElementById('ticker-inner');
-    if (!wrap || !inner) return;
-
-    // Prefer raw x_trends (full list); fall back to X-source scored picks for older runs
-    let topics = (latestRuns[0]?.x_trends || []).filter(Boolean);
-    if (!topics.length) {
-      topics = latestRuns
-        .flatMap(r => r.picks)
-        .filter(p => isTrendPick(p) && trendPlatform(p) === 'X')
-        .map(p => p.title)
-        .filter(Boolean);
-    }
-
-    if (!topics.length) { wrap.style.display = 'none'; return; }
-
-    inner.innerHTML = [...topics, ...topics]
-      .map((t, i) => {
-        const rank = (i % topics.length) + 1;
-        return `<span class="ticker-pill"><span class="ticker-pill-rank">${rank}.</span>${esc(t)}</span>`;
-      }).join('');
-    inner.style.animationDuration = Math.max(20, topics.length * 5) + 's';
-  }
 
   // ── Sidebar ──────────────────────────────────────────────────
   function renderSidebar(latestRuns, allRuns) {
@@ -1149,6 +1281,16 @@
         <div class="sb-stat"><span class="sb-stat-value">${picks}</span><span class="sb-stat-label">picks</span></div>
         <div class="sb-stat"><span class="sb-stat-value">${top}</span><span class="sb-stat-label">top score</span></div>
         <div class="sb-stat"><span class="sb-stat-value">${runs}</span><span class="sb-stat-label">runs</span></div>
+      </div>
+    </div>`;
+
+    const { readToday, total, streak } = getReadStats();
+    const readHtml = `<div class="sb-section">
+      <div class="sb-title">Reading</div>
+      <div class="sb-stats">
+        <div class="sb-stat"><span class="sb-stat-value" id="sb-read-today">${readToday}</span><span class="sb-stat-label">read today</span></div>
+        <div class="sb-stat"><span class="sb-stat-value" id="sb-read-total">${total}</span><span class="sb-stat-label">all time</span></div>
+        <div class="sb-stat"><span class="sb-stat-value" id="sb-read-streak">${streak}</span><span class="sb-stat-label">day streak</span></div>
       </div>
     </div>`;
 
@@ -1189,24 +1331,12 @@
     }
     srcHtml += '</div>';
 
-    const xTrends = latestRuns[0]?.x_trends || [];
-    let xTrendsHtml = '';
-    if (xTrends.length) {
-      const rows = xTrends.map((name, i) => {
-        const cls     = trendRankClass(i);
-        const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
-        return `<div class="sb-trend-row${cls ? ' ' + cls : ''}">
-          <span class="sb-trend-rank">${rankStr}</span>
-          <span class="sb-trend-name">${esc(name)}</span>
-        </div>`;
-      }).join('');
-      xTrendsHtml = `<div class="sb-section">
-        <div class="sb-title">X Trending</div>
-        <div class="sb-trend-list">${rows}</div>
-      </div>`;
-    }
-
-    document.getElementById('sidebar-body').innerHTML = statsHtml + topHtml + srcHtml + xTrendsHtml;
+    const activityHtml = `<div class="sb-section">
+      <div class="sb-title">Live</div>
+      <div class="activity-feed" id="sb-activity"></div>
+    </div>`;
+    document.getElementById('sidebar-body').innerHTML = statsHtml + readHtml + topHtml + srcHtml + activityHtml;
+    renderActivitySection();
   }
 
   // ── Main render ──────────────────────────────────────────────
@@ -1218,7 +1348,13 @@
 
     const latestDate = runs[0].ct_date || runs[0].date;
     const latestRuns = runs.filter(r => (r.ct_date || r.date) === latestDate);
-    const olderRuns  = runs.filter(r => (r.ct_date || r.date) !== latestDate);
+    const cutoff     = new Date(latestDate + 'T12:00:00Z');
+    cutoff.setUTCDate(cutoff.getUTCDate() - 7);
+    const cutoffStr  = cutoff.toISOString().slice(0, 10);
+    const olderRuns  = runs.filter(r => {
+      const d = r.ct_date || r.date;
+      return d !== latestDate && d > cutoffStr;
+    });
 
     document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
@@ -1226,7 +1362,10 @@
     let html = buildTrendsModule(latestRuns[0]?.x_trends || []);
     html += '<div id="section-latest">';
     for (const run of latestRuns) {
-      for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
+      const runIsoTs = (run.date && run.time)
+        ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z`
+        : null;
+      for (const pick of run.picks) html += renderPickCard(pick, run.display_time, runIsoTs);
     }
     html += '</div>';
 
@@ -1258,8 +1397,8 @@
     }
 
     document.getElementById('feed-container').innerHTML = html;
+    applyReadState();
     updateCount();
-    buildTicker(latestRuns);
     renderSidebar(latestRuns, runs);
   }
 
@@ -1277,13 +1416,13 @@
       document.getElementById('btn-today').classList.remove('active');
     });
 
-    const intelBtn = document.getElementById('btn-intel');
+    const statsBtn = document.getElementById('btn-stats');
     const body     = document.getElementById('sidebar-body');
-    if (intelBtn && body) {
-      intelBtn.addEventListener('click', () => {
-        const open = body.classList.toggle('open');
-        intelBtn.setAttribute('aria-expanded', open);
-        intelBtn.classList.toggle('active', open);
+    if (statsBtn && body) {
+      statsBtn.addEventListener('click', () => {
+        const closed = body.classList.toggle('closed');
+        statsBtn.setAttribute('aria-expanded', !closed);
+        statsBtn.classList.toggle('active', !closed);
       });
     }
   }
@@ -1291,14 +1430,11 @@
   // ── Sticky positioning ───────────────────────────────────────
   function positionSticky() {
     const headerH = document.querySelector('header').offsetHeight;
-    const tw      = document.getElementById('ticker-wrap');
     const fb      = document.getElementById('filter-bar');
     const sb      = document.getElementById('sidebar');
 
-    const twH = (tw && tw.style.display !== 'none') ? tw.offsetHeight : 0;
-    if (tw && tw.style.display !== 'none') tw.style.top = headerH + 'px';
-    fb.style.top = (headerH + twH) + 'px';
-    if (sb) sb.style.top = (headerH + twH + fb.offsetHeight + 16) + 'px';
+    fb.style.top = headerH + 'px';
+    if (sb) sb.style.top = (headerH + fb.offsetHeight + 16) + 'px';
   }
 
   // ── Countdown timer ──────────────────────────────────────────
@@ -1352,6 +1488,154 @@
     if (nextEl) nextEl.textContent = nextStr;
     if (lastEl && lastStr) lastEl.textContent = lastStr;
     if (mobileEl) mobileEl.textContent = lastStr ? `${lastStr} · ${nextStr}` : nextStr;
+    refreshTimestamps();
+    updateTrendsTimestamp();
+    refreshActivityTimes();
+  }
+
+  // ── Time ago ─────────────────────────────────────────────────
+  function timeAgo(isoTs) {
+    if (!isoTs) return '';
+    const diff = Math.floor((Date.now() - new Date(isoTs).getTime()) / 1000);
+    if (diff < 45)   return 'just now';
+    if (diff < 90)   return '1 min ago';
+    if (diff < 3600) return `${Math.floor(diff / 60)} mins ago`;
+    if (diff < 7200) return '1 hour ago';
+    if (diff < 86400) return `${Math.floor(diff / 3600)} hours ago`;
+    return `${Math.floor(diff / 86400)} days ago`;
+  }
+
+  // ── Live timestamp refresh ────────────────────────────────────
+  function refreshTimestamps() {
+    document.querySelectorAll('.card-timestamp[data-run-ts]').forEach(el => {
+      const ts = el.dataset.runTs;
+      if (ts) el.textContent = timeAgo(ts);
+    });
+  }
+
+  // ── Score pulse ───────────────────────────────────────────────
+  function initScorePulse() {
+    document.querySelectorAll('.pick-card.score-elite').forEach(card => {
+      card.addEventListener('animationend', function onEnd(e) {
+        if (e.animationName === 'fadeUp') {
+          card.removeEventListener('animationend', onEnd);
+          card.classList.add('pulsing');
+        }
+      });
+    });
+  }
+
+  // ── Reading progress bar ──────────────────────────────────────
+  function initProgressBar() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    function update() {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      const pct   = total > 0 ? Math.min(100, (window.scrollY / total) * 100) : 0;
+      bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+  }
+
+  // ── Activity feed ─────────────────────────────────────────────
+  const MAX_ACTIVITY = 20;
+
+  function getActivity() {
+    try { return JSON.parse(localStorage.getItem('blank_activity') || '[]'); } catch { return []; }
+  }
+
+  function addActivity(type, text) {
+    const events = getActivity();
+    events.unshift({ type, text, ts: Date.now() });
+    if (events.length > MAX_ACTIVITY) events.length = MAX_ACTIVITY;
+    localStorage.setItem('blank_activity', JSON.stringify(events));
+    renderActivitySection();
+  }
+
+  function renderActivitySection() {
+    const el = document.getElementById('sb-activity');
+    if (!el) return;
+    const events = getActivity();
+    if (!events.length) {
+      el.innerHTML = '<div class="sb-empty">No activity yet</div>';
+      return;
+    }
+    el.innerHTML = events.slice(0, 8).map(e => `
+      <div class="activity-item">
+        <div class="activity-dot dot-${esc(e.type)}"></div>
+        <span class="activity-text">${esc(e.text)}</span>
+        <span class="activity-time" data-ts="${e.ts}">${timeAgo(new Date(e.ts).toISOString())}</span>
+      </div>`).join('');
+  }
+
+  function refreshActivityTimes() {
+    document.querySelectorAll('#sb-activity .activity-time[data-ts]').forEach(el => {
+      const ts = parseInt(el.dataset.ts, 10);
+      if (ts) el.textContent = timeAgo(new Date(ts).toISOString());
+    });
+  }
+
+  // ── New picks banner ──────────────────────────────────────────
+  let picksFingerprint = null;
+  let bannerDismissed  = false;
+
+  function dismissBanner() {
+    bannerDismissed = true;
+    const banner = document.getElementById('new-picks-banner');
+    if (banner) banner.style.display = 'none';
+  }
+
+  async function checkForNewPicksAndTrends() {
+    try {
+      const res  = await fetch('picks_data.json?_=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (!data.runs?.length) return;
+
+      // Banner check — compare run fingerprint
+      const latest     = data.runs[0];
+      const fingerprint = (latest.date || '') + (latest.time || '');
+      if (!picksFingerprint) {
+        picksFingerprint = fingerprint;
+      } else if (fingerprint !== picksFingerprint && !bannerDismissed) {
+        picksFingerprint = fingerprint;
+        const banner = document.getElementById('new-picks-banner');
+        if (banner) { banner.style.display = 'block'; }
+        const timeStr = new Date().toLocaleTimeString('en-US', {
+          hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'America/Chicago'
+        });
+        addActivity('drop', `New picks dropped at ${timeStr}`);
+      }
+
+      // Trends refresh — update grid every call
+      const latestDate = latest.ct_date || latest.date;
+      const latestRun  = data.runs.find(r => (r.ct_date || r.date) === latestDate);
+      const topics = latestRun?.x_trends || [];
+      const grid   = document.getElementById('trends-grid');
+      if (grid && topics.length) {
+        grid.innerHTML = topics.map((name, i) => {
+          const cls     = trendRankClass(i);
+          const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
+          const encoded = encodeURIComponent(name);
+          return `<a class="trend-item${cls ? ' ' + cls : ''}" href="https://x.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">
+            <span class="trend-item-rank">${rankStr}</span>
+            <span class="trend-item-name">${esc(name)}</span>
+          </a>`;
+        }).join('');
+        trendsUpdatedAt = new Date();
+        updateTrendsTimestamp();
+      }
+    } catch {}
+  }
+
+  // ── Trends updated indicator ──────────────────────────────────
+  let trendsUpdatedAt = null;
+
+  function updateTrendsTimestamp() {
+    const el = document.getElementById('trends-updated-at');
+    if (!el || !trendsUpdatedAt) return;
+    el.textContent = `updated ${timeAgo(trendsUpdatedAt.toISOString())}`;
+    el.classList.add('visible');
   }
 
   // ── Bootstrap ────────────────────────────────────────────────
@@ -1360,11 +1644,32 @@
       const res  = await fetch('picks_data.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      if (data.runs?.length) lastRunTime = parseRunTime(data.runs[0]);
+      if (data.runs?.length) {
+        lastRunTime  = parseRunTime(data.runs[0]);
+        const latest = data.runs[0];
+        picksFingerprint = (latest.date || '') + (latest.time || '');
+        trendsUpdatedAt  = lastRunTime || new Date();
+      }
       render(data.runs);
       wireButtons();
       tickCountdown();
       positionSticky();
+      initScorePulse();
+      updateTrendsTimestamp();
+
+      // Log initial activity event (once per run fingerprint)
+      if (data.runs?.length) {
+        const latest   = data.runs[0];
+        const existing = getActivity();
+        const recentDrop = existing[0]?.type === 'drop' &&
+          (Date.now() - (existing[0]?.ts || 0)) < 5 * 60 * 1000;
+        if (!recentDrop) {
+          const timeStr = (latest.display_time || '').trim();
+          addActivity('drop', timeStr ? `Latest picks: ${timeStr}` : 'Picks loaded');
+        } else {
+          renderActivitySection();
+        }
+      }
     } catch {
       document.getElementById('feed-container').innerHTML =
         `<div class="state-msg">Could not load picks.<br>
@@ -1374,9 +1679,12 @@
 
   positionSticky();
   window.addEventListener('resize', positionSticky);
+  initProgressBar();
   loadFeed();
   tickCountdown();
-  setInterval(tickCountdown, 60000);
+  setInterval(tickCountdown, 60_000);
+  // Poll every 5 min — checks for new picks AND refreshes trends
+  setInterval(checkForNewPicksAndTrends, 5 * 60_000);
 </script>
 </body>
 </html>

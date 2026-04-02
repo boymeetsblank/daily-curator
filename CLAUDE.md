@@ -6,7 +6,7 @@ This file briefs Claude Code on the daily-curator project. Read this before maki
 
 ## What This Project Does
 
-daily_curator.py is an automated content scouting tool for the Instagram/TikTok/Substack account @boymeetsblank_. It runs 3x per day via GitHub Actions and surfaces the most culturally relevant articles for carousel content creation.
+daily_curator.py is an automated content scouting tool for **Blank** (formerly @boymeetsblank_), a culture intelligence platform. It runs 3x per day via GitHub Actions and surfaces the most culturally relevant articles for carousel content creation.
 
 Each run:
 1. Fetches articles from Inoreader RSS feeds (last 48 hours)
@@ -19,6 +19,12 @@ Each run:
 
 The picks are also published to a live web feed at:
 **https://boymeetsblank.github.io/daily-curator**
+
+---
+
+## Product Identity
+
+The product is called **Blank**. This name appears in the web feed header wordmark and all public-facing surfaces. The previous handle (@boymeetsblank_) is no longer used in the UI. The brand aesthetic is editorial, premium, and culture-forward.
 
 ---
 
@@ -61,6 +67,9 @@ MAX_PICKS               = 10   # Max picks per run
 - **Claude topic clustering:** After scoring, picks are sent back to Claude to group same-story duplicates into clusters. Only the highest-scoring pick per cluster survives
 - **Cross-run URL dedup:** URLs from earlier runs today are excluded so the same article never surfaces twice in one day
 - **Claude eval retry:** If Claude returns unparseable JSON, the scoring call is retried once before failing
+- **OG image fallback:** After Inoreader fetch, articles missing images are enriched by concurrently fetching their `og:image` meta tag (10 workers, 5s timeout each) so cards in the feed always have a thumbnail when available
+- **Flat reverse-chron feed:** The web feed displays all picks newest-first as a single stream — no Morning/Afternoon/Evening grouping or time-of-day filter pills
+- **Blank wordmark:** Header uses "BLANK" in spaced uppercase sans-serif with an italic serif tagline — no @handle or social branding
 
 ---
 
@@ -97,9 +106,9 @@ Rules:
 
 ### daily_curator.yml — Content scouting (3x/day)
 Runs automatically at:
-- 8:30 AM CT (14:30 UTC)
-- 3:30 PM CT (21:30 UTC)
-- 8:30 PM CT (02:30 UTC next day)
+- 8:00 AM CT (13:00 UTC)
+- 1:00 PM CT (18:00 UTC)
+- 9:00 PM CT (02:00 UTC next day)
 
 Each run commits the picks file back to the repo, which then triggers deploy-pages.yml.
 
@@ -124,7 +133,7 @@ All 6 must be set in repo Settings → Secrets → Actions:
 
 ## Platform Vision
 
-daily-curator started as a personal content scouting tool but the long-term vision is bigger:
+Blank started as a personal content scouting tool but the long-term vision is bigger:
 
 **Core mission:** A daily briefing tool that keeps people informed about what matters in their niche worlds. Not a content creator tool — a signal-over-noise intelligence layer for anyone who wants to stay sharp in a specific domain.
 
@@ -137,9 +146,28 @@ daily-curator started as a personal content scouting tool but the long-term visi
 **Long term:** A no-code AI curation platform open to the public. Anyone should be able to spin up their own daily briefing — sports, finance, tech, fashion, whatever their niche — without writing a line of code.
 
 **Planned phases:**
-- Phase 5 — Platform: natural language feed controls (describe what you want, AI updates your sources), dynamic source library (suggest + validate new RSS feeds on demand), public platform for anyone to create their own briefing
+- Phase 5 — Platform: natural language feed controls (describe what you want, AI updates your sources), dynamic source library (suggest + validate new RSS feeds on demand), public platform for anyone to create their own briefing, direct RSS feed ingestion
 - Breaking News Mode: a lightweight watchdog that runs every 30–60 minutes, surfaces ONE breaking pick per check, estimated cost $15–30/month — for users who can't wait for 3x/day
 - Always show X trending topics on feed: a dedicated section in the web feed showing the top 10–20 X trending topics from the latest run, always visible regardless of score filter
+
+---
+
+## Current To-Do List
+
+Items are not in priority order. Each is a discrete project.
+
+- **Feedback loop** — wire up ↑ ↓ vote arrows on pick cards via GitHub API so user reactions are stored and can inform future scoring
+- **Category-aware scoring** — ensure diverse picks across music, sports, fashion, tech etc. so no single category dominates a run
+- **Breaking News Mode** — lightweight real-time watchdog that runs every 30–60 min and surfaces one breaking story per check
+- **Always show full X trending topics** — dedicated always-visible section in the web feed showing the full top 10–20 X trending topics from the latest run
+- **Code review with Simplify skill** — run `/simplify` on daily_curator.py and index.html for a quality pass
+- **Web app testing setup** — add automated tests (Playwright or similar) for the index.html feed
+- **MCP Builder exploration** — evaluate whether MCP servers could replace or augment Apify for trend fetching
+- **9+ score tuning** — monitor current scoring output before adjusting; no changes yet
+- **Reddit trend detection** — still blocked pending Reddit API access; revisit when credentials are available
+- **YouTube trending integration** — add YouTube trending videos as a signal source alongside X and Google Trends
+- **Email/notification system** — token expiry alert + high score alert (score 9+) via email or webhook
+- **Weekly digest** — automated weekly rollup of the top picks across all runs
 
 ---
 
