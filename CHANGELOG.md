@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Add "Direct RSS feed ingestion" to Phase 5 roadmap
+
+Added direct RSS feed ingestion as a planned feature item under the Phase 5 platform section in CLAUDE.md.
+
 ## [2026-04-01] Limit archive to last 7 days
 
 The "Earlier" archive section now only displays picks from the previous 7 days. Older picks files remain in the repo unchanged — this is a display-only filter.
