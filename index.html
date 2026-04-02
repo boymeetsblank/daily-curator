@@ -1017,14 +1017,81 @@
     if (link) link.innerHTML = '✓ Read';
   }
 
+  // Returns today's date in CT as YYYY-MM-DD
+  function ctDateStr() {
+    return new Date().toLocaleDateString('sv-SE', { timeZone: 'America/Chicago' });
+  }
+
+  function getReadStats() {
+    const today = ctDateStr();
+    let todayData = { date: '', count: 0 };
+    try { todayData = JSON.parse(localStorage.getItem('blank_read_today') || '{}'); } catch {}
+    const readToday = todayData.date === today ? (todayData.count || 0) : 0;
+
+    let total = 0;
+    try { total = parseInt(localStorage.getItem('blank_read_total') || '0', 10) || 0; } catch {}
+
+    let streakData = { lastDate: '', streak: 0 };
+    try { streakData = JSON.parse(localStorage.getItem('blank_read_streak') || '{}'); } catch {}
+    const streak = streakData.streak || 0;
+
+    return { readToday, total, streak };
+  }
+
+  function incrementReadStats() {
+    const today = ctDateStr();
+
+    // Read Today
+    let todayData = { date: '', count: 0 };
+    try { todayData = JSON.parse(localStorage.getItem('blank_read_today') || '{}'); } catch {}
+    if (todayData.date !== today) todayData = { date: today, count: 0 };
+    todayData.count++;
+    localStorage.setItem('blank_read_today', JSON.stringify(todayData));
+
+    // Total Read
+    let total = 0;
+    try { total = parseInt(localStorage.getItem('blank_read_total') || '0', 10) || 0; } catch {}
+    localStorage.setItem('blank_read_total', String(total + 1));
+
+    // Daily Streak — advance only on the first read of a new day
+    let streakData = { lastDate: '', streak: 0 };
+    try { streakData = JSON.parse(localStorage.getItem('blank_read_streak') || '{}'); } catch {}
+    if (streakData.lastDate !== today) {
+      const prev = new Date(today + 'T12:00:00Z');
+      prev.setUTCDate(prev.getUTCDate() - 1);
+      const yesterday = prev.toISOString().slice(0, 10);
+      if (streakData.lastDate === yesterday) {
+        streakData.streak = (streakData.streak || 0) + 1;
+      } else {
+        streakData.streak = 1;
+      }
+      streakData.lastDate = today;
+      localStorage.setItem('blank_read_streak', JSON.stringify(streakData));
+    }
+
+    updateReadStatUI();
+  }
+
+  function updateReadStatUI() {
+    const { readToday, total, streak } = getReadStats();
+    const elToday  = document.getElementById('sb-read-today');
+    const elTotal  = document.getElementById('sb-read-total');
+    const elStreak = document.getElementById('sb-read-streak');
+    if (elToday)  elToday.textContent  = readToday;
+    if (elTotal)  elTotal.textContent  = total;
+    if (elStreak) elStreak.textContent = streak;
+  }
+
   function markRead(linkEl) {
     const card = linkEl.closest('.pick-card');
     if (!card) return;
     const url = linkEl.href;
-    setReadUI(card);
     const urls = getReadUrls();
+    if (urls.has(url)) return;
+    setReadUI(card);
     urls.add(url);
     localStorage.setItem('blank_read', JSON.stringify([...urls]));
+    incrementReadStats();
   }
 
   function applyReadState() {
@@ -1083,6 +1150,16 @@
       </div>
     </div>`;
 
+    const { readToday, total, streak } = getReadStats();
+    const readHtml = `<div class="sb-section">
+      <div class="sb-title">Reading</div>
+      <div class="sb-stats">
+        <div class="sb-stat"><span class="sb-stat-value" id="sb-read-today">${readToday}</span><span class="sb-stat-label">read today</span></div>
+        <div class="sb-stat"><span class="sb-stat-value" id="sb-read-total">${total}</span><span class="sb-stat-label">all time</span></div>
+        <div class="sb-stat"><span class="sb-stat-value" id="sb-read-streak">${streak}</span><span class="sb-stat-label">day streak</span></div>
+      </div>
+    </div>`;
+
     const now = new Date(), cutoff = new Date(now);
     cutoff.setDate(cutoff.getDate() - 7);
     let topPick = null, topMeta = '';
@@ -1138,7 +1215,7 @@
       </div>`;
     }
 
-    document.getElementById('sidebar-body').innerHTML = statsHtml + topHtml + srcHtml + xTrendsHtml;
+    document.getElementById('sidebar-body').innerHTML = statsHtml + readHtml + topHtml + srcHtml + xTrendsHtml;
   }
 
   // ── Main render ──────────────────────────────────────────────
