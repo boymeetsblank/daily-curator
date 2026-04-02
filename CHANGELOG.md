@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Switch Claude model to Sonnet; raise article caps
+
+Switched all three Claude API calls (cross-source trend detection, scoring, pre-scoring dedup) from `claude-opus-4-6` to `claude-sonnet-4-6` for faster, cheaper runs. Also raised `MAX_ARTICLES_TO_SEND` from 60 → 150 and `MAX_ARTICLES_PER_SOURCE` from 5 → 15 to significantly increase the candidate pool per run and surface more diverse picks.
+
 ## [2026-04-01] Fix X trends ticker — write all trends to picks file
 
 The ticker was only showing X trending topics that scored 7+ and made it into the top picks (usually just 1). The web feed's `buildTicker` and `deploy-pages.yml` were already wired to read a `**X Trends:**` field from the picks file, but `daily_curator.py` was never writing it. Added the `**X Trends:** topic1 · topic2 · ...` line to `write_markdown_output()` so all fetched X trending topics (up to 20) are saved to the picks file and shown in the ticker regardless of score.

@@ -26,8 +26,8 @@ INOREADER_TOKEN_URL     = "https://www.inoreader.com/oauth2/token"
 APIFY_API_TOKEN         = os.environ.get("APIFY_API_TOKEN")
 
 HOURS_BACK              = 48
-MAX_ARTICLES_TO_SEND    = 60
-MAX_ARTICLES_PER_SOURCE = 5
+MAX_ARTICLES_TO_SEND    = 150
+MAX_ARTICLES_PER_SOURCE = 15
 MIN_SCORE               = 7
 MAX_PICKS               = 10
 
@@ -415,7 +415,7 @@ Articles to analyze:
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
     try:
         response = client.messages.create(
-            model="claude-opus-4-6",
+            model="claude-sonnet-4-6",
             max_tokens=2048,
             messages=[{"role": "user", "content": prompt}]
         )
@@ -550,7 +550,7 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
     def call_claude():
         try:
             return client.messages.create(
-                model="claude-opus-4-6",
+                model="claude-sonnet-4-6",
                 max_tokens=4096,
                 messages=[{"role": "user", "content": prompt}]
             )
@@ -645,7 +645,7 @@ If no articles share the same story, return:
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
     try:
         response = client.messages.create(
-            model="claude-opus-4-6",
+            model="claude-sonnet-4-6",
             max_tokens=2048,
             messages=[{"role": "user", "content": prompt}]
         )
