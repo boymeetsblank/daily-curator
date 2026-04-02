@@ -1197,25 +1197,7 @@
     }
     srcHtml += '</div>';
 
-    const xTrends = latestRuns[0]?.x_trends || [];
-    let xTrendsHtml = '';
-    if (xTrends.length) {
-      const rows = xTrends.map((name, i) => {
-        const cls     = trendRankClass(i);
-        const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
-        const encoded = encodeURIComponent(name);
-        return `<a class="sb-trend-row${cls ? ' ' + cls : ''}" href="https://x.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">
-          <span class="sb-trend-rank">${rankStr}</span>
-          <span class="sb-trend-name">${esc(name)}</span>
-        </a>`;
-      }).join('');
-      xTrendsHtml = `<div class="sb-section">
-        <div class="sb-title">X Trending</div>
-        <div class="sb-trend-list">${rows}</div>
-      </div>`;
-    }
-
-    document.getElementById('sidebar-body').innerHTML = statsHtml + readHtml + topHtml + srcHtml + xTrendsHtml;
+    document.getElementById('sidebar-body').innerHTML = statsHtml + readHtml + topHtml + srcHtml;
   }
 
   // ── Main render ──────────────────────────────────────────────

@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Remove X Trending from sidebar
+
+Removed the X Trending list from the right sidebar — it duplicated the X Trending card already visible in the main feed.
+
 ## [2026-04-01] Reading stats in sidebar
 
 Added a "Reading" section to the right sidebar with three persistent counters stored in `localStorage`: **Read Today** (resets at midnight CT), **All Time** (never resets), and **Day Streak** (consecutive days with at least one article read). All three update live when a card is marked read. Duplicate clicks on an already-read card are ignored so counts stay accurate.
