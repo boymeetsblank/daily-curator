@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Limit archive to last 7 days
+
+The "Earlier" archive section now only displays picks from the previous 7 days. Older picks files remain in the repo unchanged — this is a display-only filter.
+
 ## [2026-04-01] Remove X Trending from sidebar
 
 Removed the X Trending list from the right sidebar — it duplicated the X Trending card already visible in the main feed.

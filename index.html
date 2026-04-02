@@ -1209,7 +1209,13 @@
 
     const latestDate = runs[0].ct_date || runs[0].date;
     const latestRuns = runs.filter(r => (r.ct_date || r.date) === latestDate);
-    const olderRuns  = runs.filter(r => (r.ct_date || r.date) !== latestDate);
+    const cutoff     = new Date(latestDate + 'T12:00:00Z');
+    cutoff.setUTCDate(cutoff.getUTCDate() - 7);
+    const cutoffStr  = cutoff.toISOString().slice(0, 10);
+    const olderRuns  = runs.filter(r => {
+      const d = r.ct_date || r.date;
+      return d !== latestDate && d > cutoffStr;
+    });
 
     document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
 
