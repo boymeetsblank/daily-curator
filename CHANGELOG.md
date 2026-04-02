@@ -4,13 +4,132 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
-## [2026-04-01] Fix X trends ticker — write all trends to picks file
+## [2026-04-01] Fix HTML entities in article titles
 
-The ticker was only showing X trending topics that scored 7+ and made it into the top picks (usually just 1). The web feed's `buildTicker` and `deploy-pages.yml` were already wired to read a `**X Trends:**` field from the picks file, but `daily_curator.py` was never writing it. Added the `**X Trends:** topic1 · topic2 · ...` line to `write_markdown_output()` so all fetched X trending topics (up to 20) are saved to the picks file and shown in the ticker regardless of score.
+Applied `html.unescape()` to Inoreader article titles at the point of extraction in `daily_curator.py`. Prevents encoded entities like `&amp;`, `&#8217;`, and `&ldquo;` from appearing literally in feed cards and pick files.
 
-## [2026-04-01] Fix cron schedule to correct CST run times
+## [2026-03-31] Add rank numbers to X trending ticker
 
-Updated cron times in `daily_curator.yml` to run at 8:30 AM, 1:30 PM, and 7:30 PM CST (UTC-6): `30 14`, `30 19`, `30 1`. Also updated `RUN_TIMES_UTC` in `index.html` to match so the countdown timer counts down to the correct times.
+Each pill in the scrolling ticker now shows the trend's rank number before the name (e.g. `1. Virgil Abloh · 2. NBA Playoffs`). The doubled array for seamless looping keeps rank numbers correct by using `i % topics.length + 1`.
+
+- Replaced `.ticker-pill::before { content: '#' }` with a `.ticker-pill-rank` inline span — italic Georgia, 9px, 40% opacity, matching the editorial rank treatment in the full trending module
+- The `#` pseudo-element is removed; rank numbers are data, not decoration
+
+## [2026-03-31] Move INTEL toggle into header nav — always accessible at top of page
+
+The INTEL section-divider toggle was inside `<aside class="sidebar">` at the bottom of the DOM, so on mobile it appeared after all the article cards — nowhere near reachable without scrolling.
+
+**Fix:** Moved INTEL into the sticky header alongside Today and Archive as a third navigation pill. The sidebar section-divider toggle and its CSS are removed entirely.
+
+- **`index.html` header**: Added `<button class="pill-btn" id="btn-intel">Intel</button>` to `.header-actions`
+- **`wireButtons()`**: Now wires `#btn-intel` to toggle `.open` on `#sidebar-body` and the `.active` class on the button itself
+- **Removed**: `.sidebar-toggle`, `.sidebar-toggle::before/after`, `.sidebar-toggle-label`, `.sidebar-toggle-chevron` CSS rules and the corresponding `<button>` in the HTML
+- The sidebar body (`#sidebar-body`) remains collapsed by default and revealed on click, at all screen sizes
+
+## [2026-03-31] INTEL toggle visible and active on all screen sizes
+
+Removed the two desktop overrides that were hiding the toggle and force-expanding the sidebar body at ≥1100px. The INTEL toggle and collapsed-by-default behavior now apply universally — click to reveal on all screen sizes.
+
+## [2026-03-31] Make sidebar accessible on mobile and narrow screens — collapsible Intel panel
+
+The sidebar was `display: none` below 1100px, making all its content (Today stats, Best this week, Sources, X Trending) invisible on mobile and tablet.
+
+**Solution:** Mobile-first collapsible panel with an editorial section-divider toggle.
+
+- **Toggle button** — a full-width `<button>` with hairline rules extending left and right and "INTEL" in 9px tracked uppercase centered between them. The same typographic register as `.archive-label`. A small chevron rotates 180° when expanded. No button chrome — just the editorial section break.
+- **Collapse/expand** — `sidebar-body` gets `display: none` by default; `display: block` (or `grid`) when `.open` class is toggled. `aria-expanded` updates on each click.
+- **2-column grid at 521–1099px** — when open, `.sidebar-body` uses `grid-template-columns: 1fr 1fr; column-gap: 40px` so the four sections pair side-by-side rather than stacking vertically on medium screens.
+- **Desktop (≥1100px)** — toggle is hidden, body is always visible (`display: block !important`). Existing sticky sidebar layout unchanged.
+- **HTML** — `<aside id="sidebar">` now contains the toggle button and `<div id="sidebar-body">`. `renderSidebar()` targets `#sidebar-body`. `positionSticky()` still references `#sidebar` (the outer element) — no change needed.
+
+## [2026-03-31] Restore ticker + fix sidebar X Trending placement
+
+- **Ticker fallback**: `buildTicker()` was hiding the strip for all existing picks files because they pre-date the `x_trends` field. Added a fallback: if `x_trends` is empty, extract topics from X-source scored picks (the original behavior). Ticker is now always visible when X trend data is available in either form.
+- **Sidebar order**: X Trending section moved to after "Sources Today" as intended.
+
+## [2026-03-31] Add full X trending topics list to feed — inline module + sidebar section
+
+Two persistent surfaces for the full ranked trending list (all 10–20 topics from the latest run):
+
+**Inline dark module** — appears at the top of the feed (all screen sizes), before the pick cards. Uses the same `var(--ink)` dark background as the ticker strip, creating a visual bracket: ticker scrolls at the top, full ranked list anchors the feed entry. Layout is a 2-column grid of ranked topics; collapses to 1 column on mobile (≤520px).
+
+**Right sidebar section** — "X Trending" section at ≥1100px, rendered between "Today" stats and "Best this week". Uses the existing sidebar row pattern.
+
+**Rank heat system** applied to both surfaces:
+- Ranks 1–3 (`rank-hot`): amber rank number + near-white bold topic name — peak cultural heat
+- Ranks 4–7 (`rank-warm`): softened rank number + mid-brightness name
+- Ranks 8+: default dim treatment
+
+**Rank numbers** rendered as zero-padded italic Georgia (01, 02 … 20) — the same typeface used for editorial headlines. Small and quiet beside the topic name, but unmistakably intentional.
+
+**Implementation:**
+- New `buildTrendsModule(topics)` helper renders the dark inline panel
+- New `trendRankClass(i)` helper returns the appropriate CSS class for a given rank
+- `renderSidebar()` now reads `latestRuns[0].x_trends` to render the sidebar section
+- `render()` prepends the trends module before `#section-latest`
+
+## [2026-03-31] Fix VOTE_TOKEN guard check — sed was replacing comparison string too
+
+`sed -i "s|__VOTE_TOKEN__|...|g"` replaces every occurrence of `__VOTE_TOKEN__` in the file, including the comparison strings in the guard check and console.log. After injection, the check became `VOTE_TOKEN === 'github_pat_...'` which was always `true`, causing the function to abort every time.
+
+- Removed `VOTE_TOKEN === '__VOTE_TOKEN__'` from the if-guard — the only check needed is `!VOTE_TOKEN` (empty string is falsy when the secret isn't set; a real token is truthy)
+- Removed `VOTE_TOKEN !== '__VOTE_TOKEN__'` from the console.log for the same reason
+- The declaration `const VOTE_TOKEN = '__VOTE_TOKEN__'` remains as the sole placeholder; sed replaces just that one occurrence with the real token at deploy time
+
+## [2026-03-31] Fix VOTE_TOKEN injection — dedicated sed step instead of Python heredoc
+
+The token was not being injected because the replacement ran inside `python3 - << 'PYEOF'`, where `os.environ.get('VOTE_TOKEN')` doesn't reliably see the step-level `env:` in all GitHub Actions runner environments.
+
+- **Removed** the `vote_token` injection code from the Python build heredoc
+- **Removed** `env: VOTE_TOKEN` from the "Build picks_data.json" step
+- **Added** a new dedicated step "Inject VOTE_TOKEN into site/index.html" that runs after the Python build:
+  ```yaml
+  env:
+    VOTE_TOKEN: ${{ secrets.VOTE_TOKEN }}
+  run: sed -i "s|__VOTE_TOKEN__|${VOTE_TOKEN}|g" site/index.html
+  ```
+  The shell expands `${VOTE_TOKEN}` directly before passing to `sed`, which is simple and reliable.
+
+## [2026-03-31] Add console logging to vote function for debugging
+
+Silent `catch {}` blocks were hiding all errors from the GET and PUT calls, making it impossible to diagnose why votes weren't being written.
+
+- Split each `catch {}` into `catch (e) { console.error(...) }` with the step name, HTTP status, and response body
+- Added `console.log` at entry showing `dir`, token length/prefix, and the full record being written
+- Added explicit guard log when `VOTE_TOKEN` placeholder was not replaced at deploy time
+
+## [2026-03-31] Wire up ↑ ↓ vote buttons — write to votes.json via GitHub API
+
+Clicking a vote arrow now records the vote to `votes.json` in the repo via the GitHub Contents API. No user authentication required.
+
+**How it works:**
+- `vote()` in `index.html` is now `async`. On a new vote it GETs `votes.json`, appends the record, and PUTs the updated file back via the GitHub Contents API.
+- Each record includes: `timestamp` (CT, ISO-format), `direction` (`up`/`down`), `title`, `source`, `score`, and `url`.
+- Un-votes (clicking the same arrow again to deselect) only toggle the visual state — they don't write to the repo.
+- `VOTE_TOKEN` (a fine-grained PAT with `Contents: write` on this repo) is injected into `site/index.html` at deploy time by `deploy-pages.yml`. The placeholder `__VOTE_TOKEN__` in source is never a real token, so the repo is safe.
+
+**Files changed:**
+- **`votes.json`** — created with `[]` as the initial state.
+- **`index.html`** — `vote()` rewritten to async; `.feedback-btns` now carries `data-title`, `data-source`, `data-score`, `data-url` attributes so vote records have full context.
+- **`deploy-pages.yml`** — added `VOTE_TOKEN: ${{ secrets.VOTE_TOKEN }}` env to the build step; Python block replaces `__VOTE_TOKEN__` in `site/index.html` before deploy.
+
+**Setup required:** Create a fine-grained GitHub PAT (Settings → Developer settings → Fine-grained tokens) with **Contents: Read and Write** scoped to only this repo. Add it as secret `VOTE_TOKEN` in repo Settings → Secrets → Actions.
+
+## [2026-03-31] Fix X trending ticker — show all raw trends, not just scored picks
+
+The ticker was sourcing topics from picks that survived Claude scoring and the top-10 cut. Since X trends compete with articles for the MAX_PICKS=10 slots, usually only 1–2 trend topics made it through — giving the ticker almost nothing to scroll.
+
+- **`daily_curator.py`** — `write_markdown_output()` now accepts a `twitter_trends` argument. If trends are present, it appends a `> **X Trends:** Topic1 · Topic2 · …` line to the picks file header, storing all raw trend names before scoring discards them.
+- **`deploy-pages.yml`** — parses the `**X Trends:**` line via regex and adds an `x_trends: [...]` array to each run object in `picks_data.json`.
+- **`index.html`** — `buildTicker()` now reads `latestRuns[0].x_trends` (the full raw list from the most recent run) instead of filtering scored picks. Ticker now shows the full 10–20 X trending topics every run.
+
+## [2026-03-31] Fix "Next in" countdown to use CT run times — DST-safe
+
+`getNextRunMs()` was using hardcoded UTC times `[[13,0],[18,0],[2,0]]` (correct only during CDT). During CST (UTC-6, Nov–Mar), the real UTC run times are 14:00, 19:00, 03:00 — causing the countdown to be off by one hour half the year.
+
+- **Replaced** `RUN_TIMES_UTC` with `RUN_TIMES_CT = [[8,0],[13,0],[21,0]]` (8 AM, 1 PM, 9 PM CT)
+- **Rewrote** `getNextRunMs()` to get the current CT hour/minute via `Intl.DateTimeFormat('en-US', { timeZone: 'America/Chicago' })`, then compute the delta to the next CT run time in local minutes. Since this is a time-delta calculation, it is inherently DST-safe — no UTC offset arithmetic needed.
+- **"Updated X ago"** was already correct (both sides are epoch ms, so timezone is irrelevant).
 
 ## [2026-03-31] Convert timestamps to CT in web feed
 

@@ -7,6 +7,7 @@ import sys
 import json
 import time
 import base64
+import html
 from datetime import datetime, timezone, timedelta
 
 import re
@@ -119,7 +120,7 @@ def fetch_articles_from_inoreader() -> list[dict]:
 
     articles = []
     for item in items:
-        title = item.get("title", "Untitled")
+        title = html.unescape(item.get("title", "Untitled"))
         canonical = item.get("canonical", [])
         link = canonical[0].get("href", "") if canonical else ""
         if not link:
@@ -745,11 +746,17 @@ def write_markdown_output(picks: list[dict], all_articles_count: int, twitter_tr
     os.makedirs("picks", exist_ok=True)
     filename = f"picks/picks-{today_str}-{time_str}.md"
 
+    x_trends_line = ""
+    if twitter_trends:
+        names = [t["title"] for t in twitter_trends if t.get("title")]
+        if names:
+            x_trends_line = f"\n> **X Trends:** {' · '.join(names)}"
+
     content = f"""# Daily Content Picks — {today_str} at {datetime.now().strftime("%I:%M %p")}
 
 > **Source:** Inoreader feeds from the last {HOURS_BACK} hours
 > **Articles reviewed:** {all_articles_count}
-> **Picks surfaced:** {len(picks)} (minimum score: {MIN_SCORE}/10)
+> **Picks surfaced:** {len(picks)} (minimum score: {MIN_SCORE}/10){x_trends_line}
 
 ---
 
