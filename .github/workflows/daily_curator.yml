@@ -40,3 +40,16 @@ jobs:
           git add picks/
           git diff --staged --quiet || git commit -m "Daily picks $(date +'%Y-%m-%d %H:%M')"
           git push
+
+      - name: Send push notifications to subscribers
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_PUBLIC_KEY:  ${{ secrets.VAPID_PUBLIC_KEY }}
+        run: python3 send_push.py
+
+      - name: Commit pruned subscriptions if any expired
+        run: |
+          git add subscriptions.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Prune expired push subscriptions $(date +'%Y-%m-%d %H:%M')"
+          git push

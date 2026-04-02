@@ -4,6 +4,38 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Browser push notifications on run completion via VAPID Web Push
+
+Added end-to-end Web Push notification delivery triggered by GitHub Actions after each daily curator run.
+
+**New files:**
+- `generate_vapid_keys.py` — one-time local script to generate a VAPID EC P-256 key pair. Outputs `VAPID_PUBLIC_KEY` and `VAPID_PRIVATE_KEY` values to add as GitHub Actions secrets.
+- `send_push.py` — called by the workflow after each run. Detects which scheduled run it is from the UTC hour, picks the appropriate message, and sends a Web Push to all entries in `subscriptions.json`. Prunes expired/unsubscribed endpoints (HTTP 404/410) automatically.
+- `subscriptions.json` — initial empty array; populated by the frontend when a user enables notifications.
+
+**Notification messages by run:**
+- 8:30 AM CT: "Your morning briefing is ready. See what's worth your time today."
+- 1:30 PM CT: "Your afternoon picks are in. Take a break and catch up."
+- 7:30 PM CT: "Your evening briefing is ready. End the day informed."
+
+Push is skipped silently if secrets are missing, there are no picks today, or there are no subscribers.
+
+**`daily_curator.yml`:** Two steps added after the picks commit — `send_push.py` runs, then a second commit prunes any expired subscriptions from `subscriptions.json` if any were removed.
+
+**`index.html`:**
+- `const VAPID_PUBLIC_KEY = '__VAPID_PUBLIC_KEY__'` constant added (injected at build time).
+- `urlBase64ToUint8Array()` helper added for converting the VAPID public key to the format required by `pushManager.subscribe()`.
+- `saveSubscription()` added — uses the same GitHub API pattern as vote saving to append the browser's push subscription object to `subscriptions.json` in the repo.
+- `enableNotifications()` expanded: after permission is granted, calls `pushManager.subscribe()` with the VAPID key and saves the resulting subscription. Skips subscription if VAPID key isn't injected (local dev).
+
+**`deploy-pages.yml`:** `__VAPID_PUBLIC_KEY__` placeholder injected into `site/index.html` alongside the existing `VOTE_TOKEN` injection step.
+
+**`sw.js`:** Notification `tag` is now read from the push payload (`data.tag`) instead of hardcoded to `'breaking-news'`, allowing briefing and breaking news notifications to coexist with distinct tags.
+
+**`requirements.txt`:** Added `pywebpush>=2.0.0`.
+
+**Setup required:** Run `generate_vapid_keys.py` locally and add `VAPID_PUBLIC_KEY` and `VAPID_PRIVATE_KEY` as GitHub Actions secrets. VSCode GitHub Actions extension will show warnings for these secrets until they exist in the repo.
+
 ## [2026-04-02] Always-visible notification button with live permission state
 
 The 🔔 button in the header now renders unconditionally on page load instead of only appearing when breaking news content is detected. `initNotifBtn()` reads `Notification.permission` on load and sets the button label/title accordingly: 🔔 "Enable breaking news notifications" (default), 🔔 "Notifications enabled" (granted), 🔕 "Notifications blocked" (denied). Browsers that don't support the Notification API hide the button entirely. The `checkBreakingNews()` poller no longer controls button visibility.

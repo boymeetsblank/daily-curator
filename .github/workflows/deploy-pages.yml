@@ -159,10 +159,13 @@ jobs:
           # breaking_news_state.json is internal — never deployed to Pages
           echo "Static files copied."
 
-      - name: Inject VOTE_TOKEN into site/index.html
+      - name: Inject VOTE_TOKEN and VAPID_PUBLIC_KEY into site/index.html
         env:
-          VOTE_TOKEN: ${{ secrets.VOTE_TOKEN }}
-        run: sed -i "s|__VOTE_TOKEN__|${VOTE_TOKEN}|g" site/index.html
+          VOTE_TOKEN:      ${{ secrets.VOTE_TOKEN }}
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+        run: |
+          sed -i "s|__VOTE_TOKEN__|${VOTE_TOKEN}|g" site/index.html
+          sed -i "s|__VAPID_PUBLIC_KEY__|${VAPID_PUBLIC_KEY}|g" site/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

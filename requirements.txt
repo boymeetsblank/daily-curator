@@ -23,3 +23,7 @@ requests>=2.31.0
 # This lets us store API keys in a .env file instead of hardcoding them
 python-dotenv>=1.0.0
 
+# pywebpush — Sends Web Push notifications to subscribed browsers using VAPID keys
+# Used by send_push.py to deliver briefing notifications after each curator run
+pywebpush>=2.0.0
+
