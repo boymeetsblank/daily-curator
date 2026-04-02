@@ -1,5 +1,5 @@
 """
-daily_curator.py — Daily Content Curator for Instagram, TikTok, and Substack
+daily_curator.py — Daily Intelligence Briefing Curator
 """
 
 import os
@@ -486,7 +486,7 @@ ARTICLE {i}:{trending_flag}
   Summary:   {article['summary'] or '(no summary — evaluate based on the topic name alone)'}
 ---"""
 
-    prompt = f"""You are a content strategist for culture-forward media accounts on Instagram, TikTok, and Substack.
+    prompt = f"""You are a senior editor curating a daily intelligence briefing for readers who want to stay sharp on culture, business, and ideas.
 
 I'll give you a list of recent articles. Evaluate EACH article on these 4 criteria:
 
@@ -495,32 +495,21 @@ I'll give you a list of recent articles. Evaluate EACH article on these 4 criter
    - Published within the last 12 hours → +1 to the final score (very fresh)
    - Published 12–24 hours ago → score normally (still timely)
    - Published 24–48 hours ago → -1 to the final score, UNLESS the story is still actively developing, trending, or unresolved (in which case score normally)
-3. CULTURAL: Does it connect to a broader cultural moment, meme, movement, or viral conversation?
-4. CAROUSEL: Could this become a carousel post that a culture-forward media account would post?
+3. CULTURAL: Does it connect to a broader cultural moment, movement, or shift in how people think or behave?
+4. SIGNIFICANCE: Is this a story that a well-informed reader would genuinely want to know about today?
 
 Score each article from 1–10 overall. Be ruthlessly selective. A 7+ means this is genuinely strong. Most articles should score 4–6.
 
-POLITICS RULE: Automatically score any article a 1 if it is primarily about elections, political parties, politicians, legislation, government policy, or partisan issues. This account does not cover politics.
+POLITICS RULE: Automatically score any article a 1 if it is primarily about elections, political parties, politicians, legislation, government policy, or partisan issues. This briefing does not cover politics.
 
-CELEBRITY GOSSIP RULE: Automatically score any article a 1 if it is purely about celebrity rumors, relationships, dating, breakups, paparazzi stories, or celebrity gossip. This account does not cover celebrity gossip.
+CELEBRITY GOSSIP RULE: Automatically score any article a 1 if it is purely about celebrity rumors, relationships, dating, breakups, paparazzi stories, or celebrity gossip. This briefing does not cover celebrity gossip.
 
-TREND ITEMS: Some items have Source "X (Twitter) Trending" or "Google Trends" — these are raw trending topics, not articles. Evaluate them on whether the topic itself is culturally interesting and carousel-worthy. Score them as you would any other item.
+TREND ITEMS: Some items have Source "X (Twitter) Trending" or "Google Trends" — these are raw trending topics, not articles. Evaluate them on whether the topic itself is culturally significant and worth a reader's attention. Score them as you would any other item.
 
 CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 3+ sources, treat this as strong evidence of cultural relevance. Add 1–2 points to the score (if it's already strong across other criteria).
 
 For articles that score 7 or above, also provide:
-- WHY: 1–2 sentences explaining why it scored high
-- ANGLE: A carousel hook following these rules:
-
-CAROUSEL HOOK RULES:
-- Identify which psychological trigger the hook uses: Curiosity, FOMO, Disbelief, Defensiveness, Relief, or Greed
-- Write the hook with intentional line breaks using "/" to show where each break goes
-- Each line must be 7 words or fewer
-- Maximum 3 lines total
-- The hook must stop the scroll — it should feel punchy, not like a headline
-
-Format the ANGLE field like this:
-"[TRIGGER: Disbelief] The last Laker to score 60 / was Kobe. / In his final game."
+- WHY: 1–2 sentences written as a brief editor's note — explain why this story is significant and why it matters to the reader right now. Write in clear, direct editorial prose. No references to social media, posting, or content.
 
 IMPORTANT: Return your response as valid JSON in EXACTLY this format, with no other text before or after:
 
@@ -529,14 +518,12 @@ IMPORTANT: Return your response as valid JSON in EXACTLY this format, with no ot
     {{
       "article_number": 1,
       "score": 8,
-      "why": "This story is being widely shared...",
-      "angle": "Hook: 'Everyone is talking about X...'"
+      "why": "This story marks a turning point in how the industry..."
     }},
     {{
       "article_number": 2,
       "score": 4,
-      "why": null,
-      "angle": null
+      "why": null
     }}
   ]
 }}
@@ -594,7 +581,6 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
         eval_data = eval_by_number.get(i, {})
         article["score"] = eval_data.get("score", 0)
         article["why"]   = eval_data.get("why")
-        article["angle"] = eval_data.get("angle")
         enriched_articles.append(article)
 
     print(f"✅ Claude evaluated all {len(enriched_articles)} articles.")
@@ -766,7 +752,7 @@ def write_markdown_output(picks: list[dict], all_articles_count: int, twitter_tr
 
 None of today's {all_articles_count} articles scored {MIN_SCORE} or above.
 
-This is normal — not every day has carousel-worthy content. Check back tomorrow!
+This is normal — not every day has strong enough signal. Check back tomorrow!
 """
     else:
         for i, pick in enumerate(picks, start=1):
@@ -785,11 +771,8 @@ This is normal — not every day has carousel-worthy content. Check back tomorro
 *{pick['source']}*
 {link_line}{image_line}
 
-**Why it scored high:**
+**Why it matters:**
 {pick.get('why', 'N/A')}
-
-**Suggested carousel angle / hook:**
-{pick.get('angle', 'N/A')}
 
 ---
 

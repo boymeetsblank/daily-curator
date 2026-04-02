@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Reframe Claude scoring prompt to editorial language
+
+Removed all social media, carousel, and content creation framing from the Claude scoring prompt. The AI persona is now a senior editor curating an intelligence briefing. Criterion 4 changed from "CAROUSEL" to "SIGNIFICANCE". The WHY field is now written as a brief editor's note explaining why the story matters to the reader. The ANGLE/carousel hook field has been removed entirely from the prompt, the JSON schema, and the picks markdown output.
+
 ## [2026-04-01] Add "Direct RSS feed ingestion" to Phase 5 roadmap
 
 Added direct RSS feed ingestion as a planned feature item under the Phase 5 platform section in CLAUDE.md.
