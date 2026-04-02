@@ -4,6 +4,18 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-01] Live feed enhancements — timestamps, animations, polling, activity
+
+Seven enhancements to index.html making the feed feel alive:
+
+1. **Live relative timestamps** — card timestamps now show "2 hours ago" / "just now" computed from the run's UTC time, refreshing every 60 seconds via the existing countdown tick without page reload.
+2. **Staggered fade-in already present; read-state transition** — improved `opacity` transition on the `.pick-card` base rule to include opacity for smoother mark-as-read fade.
+3. **Score pulse** — cards with score ≥ 9 get class `score-elite`. After their entry `fadeUp` animation completes (detected via `animationend`), a `.pulsing` class applies a subtle amber glow heartbeat (`scorePulse` keyframe, 4s loop). Clean separation avoids animation-delay conflicts.
+4. **Real-time X trend updates** — `checkForNewPicksAndTrends()` runs every 5 minutes, silently refetches `picks_data.json`, and patches the trends grid in-place. A "updated X mins ago" label appears on the trends card header.
+5. **New picks available banner** — polls every 5 minutes using a run fingerprint (`date + time`). If a new run has dropped since page load, a fixed banner slides in at the top: "New picks available — click to refresh." Dismissible.
+6. **Reading progress bar** — 2px amber bar fixed at the very top of the viewport, fills as the user scrolls, updates on every scroll event (passive listener).
+7. **Live activity feed** — "Live" section added to sidebar. Logs `localStorage`-persisted events: "Mo read an article" on each mark-read, "New picks dropped at X" on polling detection, "Latest picks: X" on initial load (guarded to avoid duplication on rapid refreshes). Shows last 8 events with live relative timestamps.
+
 ## [2026-04-01] Reframe Claude scoring prompt to editorial language
 
 Removed all social media, carousel, and content creation framing from the Claude scoring prompt. The AI persona is now a senior editor curating an intelligence briefing. Criterion 4 changed from "CAROUSEL" to "SIGNIFICANCE". The WHY field is now written as a brief editor's note explaining why the story matters to the reader. The ANGLE/carousel hook field has been removed entirely from the prompt, the JSON schema, and the picks markdown output.

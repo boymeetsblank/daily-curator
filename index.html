@@ -774,9 +774,139 @@
       #last-updated, .run-meta-sep, #next-run { display: none; }
       .mobile-timer-row { display: block; }
     }
+
+    /* ─────────────────────────────────────────
+       READING PROGRESS BAR
+    ───────────────────────────────────────── */
+    #progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      width: 0%;
+      background: var(--amber);
+      z-index: 9999;
+      transition: width 0.08s linear;
+      pointer-events: none;
+      border-radius: 0 1px 1px 0;
+    }
+
+    /* ─────────────────────────────────────────
+       NEW PICKS BANNER
+    ───────────────────────────────────────── */
+    #new-picks-banner {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      background: var(--ink);
+      color: #fff;
+      padding: 11px 24px;
+      text-align: center;
+      font-size: 12.5px;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      animation: bannerSlideDown 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    #new-picks-banner:hover { background: #2c2c2c; }
+
+    #new-picks-banner .banner-dismiss {
+      margin-left: 10px;
+      opacity: 0.45;
+      font-size: 11px;
+    }
+
+    @keyframes bannerSlideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to   { transform: translateY(0);     opacity: 1; }
+    }
+
+    /* ─────────────────────────────────────────
+       SCORE PULSE (score >= 9)
+    ───────────────────────────────────────── */
+    @keyframes scorePulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0); }
+      50%       { box-shadow: 0 0 20px rgba(217, 119, 6, 0.13), 0 2px 16px rgba(0,0,0,0.06); }
+    }
+
+    .pick-card.pulsing {
+      animation: scorePulse 4s ease-in-out infinite;
+    }
+
+    /* ─────────────────────────────────────────
+       TRENDS UPDATE INDICATOR
+    ───────────────────────────────────────── */
+    .trends-updated {
+      font-size: 9.5px;
+      color: var(--ink-4);
+      margin-left: auto;
+      font-variant-numeric: tabular-nums;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .trends-updated.visible { opacity: 1; }
+
+    /* ─────────────────────────────────────────
+       ACTIVITY FEED
+    ───────────────────────────────────────── */
+    .activity-feed { margin-top: 2px; }
+
+    .activity-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 5px 0;
+      border-bottom: 1px solid var(--border-s);
+      animation: fadeUp 0.35s ease both;
+    }
+
+    .activity-item:last-child { border-bottom: none; }
+
+    .activity-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--ink-4);
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    .activity-dot.dot-drop { background: var(--amber); }
+    .activity-dot.dot-read { background: #a8c5a0; }
+
+    .activity-text {
+      font-size: 11px;
+      color: var(--ink-4);
+      line-height: 1.4;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .activity-time {
+      font-size: 10px;
+      color: var(--ink-4);
+      flex-shrink: 0;
+      opacity: 0.6;
+      white-space: nowrap;
+    }
+
+    /* ─────────────────────────────────────────
+       READ STATE — smoother transition
+    ───────────────────────────────────────── */
+    .pick-card {
+      transition: box-shadow 0.22s ease, transform 0.22s ease, opacity 0.35s ease;
+    }
   </style>
 </head>
 <body>
+
+<!-- ── Reading Progress Bar ── -->
+<div id="progress-bar"></div>
+
+<!-- ── New Picks Banner ── -->
+<div id="new-picks-banner" role="status" onclick="dismissBanner()">
+  New picks available — click to refresh <span class="banner-dismiss">✕</span>
+</div>
 
 <!-- ── Header ── -->
 <header>
@@ -961,7 +1091,7 @@
   }
 
   // ── Render a single pick card ────────────────────────────────
-  function renderPickCard(pick, runDisplayTime) {
+  function renderPickCard(pick, runDisplayTime, runIsoTs) {
     const isHigh     = pick.score >= 9;
     const scoreBadge = `<span class="score-badge${isHigh ? ' score-high' : ''}">${pick.score}</span>`;
     const srcBadge   = pick.trending_across_sources
@@ -979,14 +1109,16 @@
          </a>`
       : `<span class="trend-source-label">${esc(trendLabel(pick))}</span>`;
 
-    return `<div class="pick-card" data-score="${pick.score}" data-url="${esc(pick.link || "")}">
+    const tsAttr    = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
+    const tsDisplay = runIsoTs ? timeAgo(runIsoTs) : esc(runDisplayTime);
+    return `<div class="pick-card${isHigh ? ' score-elite' : ''}" data-score="${pick.score}" data-url="${esc(pick.link || "")}">
       ${imageWrap}
       <div class="card-body">
         <div class="card-meta">
           ${scoreBadge}
           <span class="card-source">${esc(pick.source)}</span>
           ${srcBadge}
-          <span class="card-timestamp">${esc(runDisplayTime)}</span>
+          <span class="card-timestamp"${tsAttr}>${tsDisplay}</span>
         </div>
         <a class="card-title" href="${esc(pick.link || trendSearchUrl(pick))}" target="_blank" rel="noopener noreferrer"${pick.link ? ' onclick="markRead(this.closest(\'.pick-card\').querySelector(\'.read-link\'))"' : ''}>${esc(pick.title)}</a>
         ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
@@ -1092,6 +1224,7 @@
     urls.add(url);
     localStorage.setItem('blank_read', JSON.stringify([...urls]));
     incrementReadStats();
+    addActivity('read', 'Mo read an article');
   }
 
   function applyReadState() {
@@ -1124,12 +1257,13 @@
         <span class="trend-item-name">${esc(name)}</span>
       </a>`;
     }).join('');
-    return `<div class="trends-module">
+    return `<div class="trends-module" id="trends-module">
       <div class="trends-module-header">
         <svg class="tm-x-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         <span class="trends-module-title">Now Trending</span>
+        <span id="trends-updated-at" class="trends-updated"></span>
       </div>
-      <div class="trends-grid">${rows}</div>
+      <div class="trends-grid" id="trends-grid">${rows}</div>
     </div>`;
   }
 
@@ -1197,7 +1331,12 @@
     }
     srcHtml += '</div>';
 
-    document.getElementById('sidebar-body').innerHTML = statsHtml + readHtml + topHtml + srcHtml;
+    const activityHtml = `<div class="sb-section">
+      <div class="sb-title">Live</div>
+      <div class="activity-feed" id="sb-activity"></div>
+    </div>`;
+    document.getElementById('sidebar-body').innerHTML = statsHtml + readHtml + topHtml + srcHtml + activityHtml;
+    renderActivitySection();
   }
 
   // ── Main render ──────────────────────────────────────────────
@@ -1223,7 +1362,10 @@
     let html = buildTrendsModule(latestRuns[0]?.x_trends || []);
     html += '<div id="section-latest">';
     for (const run of latestRuns) {
-      for (const pick of run.picks) html += renderPickCard(pick, run.display_time);
+      const runIsoTs = (run.date && run.time)
+        ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z`
+        : null;
+      for (const pick of run.picks) html += renderPickCard(pick, run.display_time, runIsoTs);
     }
     html += '</div>';
 
@@ -1346,6 +1488,154 @@
     if (nextEl) nextEl.textContent = nextStr;
     if (lastEl && lastStr) lastEl.textContent = lastStr;
     if (mobileEl) mobileEl.textContent = lastStr ? `${lastStr} · ${nextStr}` : nextStr;
+    refreshTimestamps();
+    updateTrendsTimestamp();
+    refreshActivityTimes();
+  }
+
+  // ── Time ago ─────────────────────────────────────────────────
+  function timeAgo(isoTs) {
+    if (!isoTs) return '';
+    const diff = Math.floor((Date.now() - new Date(isoTs).getTime()) / 1000);
+    if (diff < 45)   return 'just now';
+    if (diff < 90)   return '1 min ago';
+    if (diff < 3600) return `${Math.floor(diff / 60)} mins ago`;
+    if (diff < 7200) return '1 hour ago';
+    if (diff < 86400) return `${Math.floor(diff / 3600)} hours ago`;
+    return `${Math.floor(diff / 86400)} days ago`;
+  }
+
+  // ── Live timestamp refresh ────────────────────────────────────
+  function refreshTimestamps() {
+    document.querySelectorAll('.card-timestamp[data-run-ts]').forEach(el => {
+      const ts = el.dataset.runTs;
+      if (ts) el.textContent = timeAgo(ts);
+    });
+  }
+
+  // ── Score pulse ───────────────────────────────────────────────
+  function initScorePulse() {
+    document.querySelectorAll('.pick-card.score-elite').forEach(card => {
+      card.addEventListener('animationend', function onEnd(e) {
+        if (e.animationName === 'fadeUp') {
+          card.removeEventListener('animationend', onEnd);
+          card.classList.add('pulsing');
+        }
+      });
+    });
+  }
+
+  // ── Reading progress bar ──────────────────────────────────────
+  function initProgressBar() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    function update() {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      const pct   = total > 0 ? Math.min(100, (window.scrollY / total) * 100) : 0;
+      bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+  }
+
+  // ── Activity feed ─────────────────────────────────────────────
+  const MAX_ACTIVITY = 20;
+
+  function getActivity() {
+    try { return JSON.parse(localStorage.getItem('blank_activity') || '[]'); } catch { return []; }
+  }
+
+  function addActivity(type, text) {
+    const events = getActivity();
+    events.unshift({ type, text, ts: Date.now() });
+    if (events.length > MAX_ACTIVITY) events.length = MAX_ACTIVITY;
+    localStorage.setItem('blank_activity', JSON.stringify(events));
+    renderActivitySection();
+  }
+
+  function renderActivitySection() {
+    const el = document.getElementById('sb-activity');
+    if (!el) return;
+    const events = getActivity();
+    if (!events.length) {
+      el.innerHTML = '<div class="sb-empty">No activity yet</div>';
+      return;
+    }
+    el.innerHTML = events.slice(0, 8).map(e => `
+      <div class="activity-item">
+        <div class="activity-dot dot-${esc(e.type)}"></div>
+        <span class="activity-text">${esc(e.text)}</span>
+        <span class="activity-time" data-ts="${e.ts}">${timeAgo(new Date(e.ts).toISOString())}</span>
+      </div>`).join('');
+  }
+
+  function refreshActivityTimes() {
+    document.querySelectorAll('#sb-activity .activity-time[data-ts]').forEach(el => {
+      const ts = parseInt(el.dataset.ts, 10);
+      if (ts) el.textContent = timeAgo(new Date(ts).toISOString());
+    });
+  }
+
+  // ── New picks banner ──────────────────────────────────────────
+  let picksFingerprint = null;
+  let bannerDismissed  = false;
+
+  function dismissBanner() {
+    bannerDismissed = true;
+    const banner = document.getElementById('new-picks-banner');
+    if (banner) banner.style.display = 'none';
+  }
+
+  async function checkForNewPicksAndTrends() {
+    try {
+      const res  = await fetch('picks_data.json?_=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (!data.runs?.length) return;
+
+      // Banner check — compare run fingerprint
+      const latest     = data.runs[0];
+      const fingerprint = (latest.date || '') + (latest.time || '');
+      if (!picksFingerprint) {
+        picksFingerprint = fingerprint;
+      } else if (fingerprint !== picksFingerprint && !bannerDismissed) {
+        picksFingerprint = fingerprint;
+        const banner = document.getElementById('new-picks-banner');
+        if (banner) { banner.style.display = 'block'; }
+        const timeStr = new Date().toLocaleTimeString('en-US', {
+          hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'America/Chicago'
+        });
+        addActivity('drop', `New picks dropped at ${timeStr}`);
+      }
+
+      // Trends refresh — update grid every call
+      const latestDate = latest.ct_date || latest.date;
+      const latestRun  = data.runs.find(r => (r.ct_date || r.date) === latestDate);
+      const topics = latestRun?.x_trends || [];
+      const grid   = document.getElementById('trends-grid');
+      if (grid && topics.length) {
+        grid.innerHTML = topics.map((name, i) => {
+          const cls     = trendRankClass(i);
+          const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
+          const encoded = encodeURIComponent(name);
+          return `<a class="trend-item${cls ? ' ' + cls : ''}" href="https://x.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">
+            <span class="trend-item-rank">${rankStr}</span>
+            <span class="trend-item-name">${esc(name)}</span>
+          </a>`;
+        }).join('');
+        trendsUpdatedAt = new Date();
+        updateTrendsTimestamp();
+      }
+    } catch {}
+  }
+
+  // ── Trends updated indicator ──────────────────────────────────
+  let trendsUpdatedAt = null;
+
+  function updateTrendsTimestamp() {
+    const el = document.getElementById('trends-updated-at');
+    if (!el || !trendsUpdatedAt) return;
+    el.textContent = `updated ${timeAgo(trendsUpdatedAt.toISOString())}`;
+    el.classList.add('visible');
   }
 
   // ── Bootstrap ────────────────────────────────────────────────
@@ -1354,11 +1644,32 @@
       const res  = await fetch('picks_data.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      if (data.runs?.length) lastRunTime = parseRunTime(data.runs[0]);
+      if (data.runs?.length) {
+        lastRunTime  = parseRunTime(data.runs[0]);
+        const latest = data.runs[0];
+        picksFingerprint = (latest.date || '') + (latest.time || '');
+        trendsUpdatedAt  = lastRunTime || new Date();
+      }
       render(data.runs);
       wireButtons();
       tickCountdown();
       positionSticky();
+      initScorePulse();
+      updateTrendsTimestamp();
+
+      // Log initial activity event (once per run fingerprint)
+      if (data.runs?.length) {
+        const latest   = data.runs[0];
+        const existing = getActivity();
+        const recentDrop = existing[0]?.type === 'drop' &&
+          (Date.now() - (existing[0]?.ts || 0)) < 5 * 60 * 1000;
+        if (!recentDrop) {
+          const timeStr = (latest.display_time || '').trim();
+          addActivity('drop', timeStr ? `Latest picks: ${timeStr}` : 'Picks loaded');
+        } else {
+          renderActivitySection();
+        }
+      }
     } catch {
       document.getElementById('feed-container').innerHTML =
         `<div class="state-msg">Could not load picks.<br>
@@ -1368,9 +1679,12 @@
 
   positionSticky();
   window.addEventListener('resize', positionSticky);
+  initProgressBar();
   loadFeed();
   tickCountdown();
-  setInterval(tickCountdown, 60000);
+  setInterval(tickCountdown, 60_000);
+  // Poll every 5 min — checks for new picks AND refreshes trends
+  setInterval(checkForNewPicksAndTrends, 5 * 60_000);
 </script>
 </body>
 </html>
