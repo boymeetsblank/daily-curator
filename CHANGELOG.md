@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-02] Silent push re-subscribe on load + full console logging for push flow
+
+Refactored the Web Push subscription flow in `index.html` for resilience and debuggability.
+
+- Extracted shared subscription logic into `subscribeToPush()` — used by both `enableNotifications()` (user-initiated) and the new `ensurePushSubscription()` (automatic on load).
+- `ensurePushSubscription()` runs on every page load: if `Notification.permission` is already `'granted'` but the browser's `pushManager` has no active subscription (e.g. after clearing site data), it silently re-subscribes and saves to `subscriptions.json`.
+- Added `console.log` statements throughout the full subscription flow: permission check, VAPID key injection status (first 12 chars), SW scope, existing subscription check, `pushManager.subscribe()` call, and all GitHub API GET/PUT steps in `saveSubscription()` including response status codes and error bodies.
+
 ## [2026-04-02] Browser push notifications on run completion via VAPID Web Push
 
 Added end-to-end Web Push notification delivery triggered by GitHub Actions after each daily curator run.

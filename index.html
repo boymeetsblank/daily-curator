@@ -1817,6 +1817,7 @@
   setInterval(checkForNewPicksAndTrends, 5 * 60_000);
 
   initNotifBtn();
+  ensurePushSubscription();
 
   // ── Service Worker ────────────────────────────────────────────
   if ('serviceWorker' in navigator) {
@@ -1929,7 +1930,12 @@
   }
 
   async function saveSubscription(sub) {
-    if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) return;
+    console.log('[push] saveSubscription: start');
+    if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) {
+      console.warn('[push] saveSubscription: VOTE_TOKEN not injected — cannot write to repo');
+      return;
+    }
+    console.log('[push] saveSubscription: VOTE_TOKEN present, length', VOTE_TOKEN.length);
     const apiUrl  = `https://api.github.com/repos/${VOTE_REPO}/contents/subscriptions.json`;
     const headers = {
       'Authorization':        `Bearer ${VOTE_TOKEN}`,
@@ -1939,27 +1945,84 @@
     let sha = null, subs = [];
     try {
       const res = await fetch(apiUrl, { headers });
+      console.log('[push] saveSubscription: GET subscriptions.json →', res.status);
       if (res.ok) {
         const data = await res.json();
         sha  = data.sha;
         subs = JSON.parse(new TextDecoder().decode(
           Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0))
         ));
+        console.log('[push] saveSubscription: existing entries:', subs.length, '| sha:', sha);
       }
-    } catch {}
-    if (subs.some(s => s.endpoint === sub.endpoint)) return; // already saved
+    } catch (e) {
+      console.warn('[push] saveSubscription: GET failed:', e);
+    }
+    if (subs.some(s => s.endpoint === sub.endpoint)) {
+      console.log('[push] saveSubscription: endpoint already saved — skipping PUT');
+      return;
+    }
     subs.push(sub);
     const enc    = new TextEncoder().encode(JSON.stringify(subs, null, 2) + '\n');
     const binary = Array.from(enc, b => String.fromCharCode(b)).join('');
     const body   = { message: 'Add push subscription', content: btoa(binary), branch: 'main' };
     if (sha) body.sha = sha;
     try {
-      await fetch(apiUrl, {
+      const putRes = await fetch(apiUrl, {
         method: 'PUT',
         headers: { ...headers, 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
       });
-    } catch {}
+      console.log('[push] saveSubscription: PUT →', putRes.status, putRes.ok ? '✅ saved' : '❌ failed');
+      if (!putRes.ok) console.warn('[push] saveSubscription: PUT body:', await putRes.text());
+    } catch (e) {
+      console.warn('[push] saveSubscription: PUT exception:', e);
+    }
+  }
+
+  async function subscribeToPush() {
+    // Core subscription logic — shared by enableNotifications() and ensurePushSubscription()
+    console.log('[push] subscribeToPush: start');
+    console.log('[push] subscribeToPush: serviceWorker supported?', 'serviceWorker' in navigator);
+    console.log('[push] subscribeToPush: PushManager supported?', 'PushManager' in window);
+    console.log('[push] subscribeToPush: VAPID_PUBLIC_KEY injected?',
+      VAPID_PUBLIC_KEY && !VAPID_PUBLIC_KEY.startsWith('__'),
+      '| starts with:', (VAPID_PUBLIC_KEY || '').slice(0, 12) + '…');
+
+    if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
+      console.warn('[push] subscribeToPush: push not supported in this browser — aborting');
+      return;
+    }
+    if (!VAPID_PUBLIC_KEY || VAPID_PUBLIC_KEY.startsWith('__')) {
+      console.warn('[push] subscribeToPush: VAPID_PUBLIC_KEY not injected — aborting');
+      return;
+    }
+    const reg = await navigator.serviceWorker.ready;
+    console.log('[push] subscribeToPush: SW ready, scope:', reg.scope);
+
+    let sub = await reg.pushManager.getSubscription();
+    console.log('[push] subscribeToPush: existing pushManager subscription?', sub ? 'yes — ' + sub.endpoint.slice(0, 40) + '…' : 'none');
+
+    if (!sub) {
+      console.log('[push] subscribeToPush: calling pushManager.subscribe()…');
+      sub = await reg.pushManager.subscribe({
+        userVisibleOnly:      true,
+        applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
+      });
+      console.log('[push] subscribeToPush: subscribe() succeeded, endpoint:', sub.endpoint.slice(0, 40) + '…');
+    }
+    await saveSubscription(sub.toJSON());
+  }
+
+  async function ensurePushSubscription() {
+    // On page load: if permission already granted but no browser subscription exists, re-subscribe silently.
+    if (!('Notification' in window)) return;
+    if (Notification.permission !== 'granted') return;
+    console.log('[push] ensurePushSubscription: permission already granted — checking subscription…');
+    try {
+      await subscribeToPush();
+    } catch (e) {
+      console.warn('[push] ensurePushSubscription failed:', e);
+    }
   }
 
   async function enableNotifications() {
@@ -1967,25 +2030,16 @@
       alert('This browser does not support notifications.');
       return;
     }
+    console.log('[push] enableNotifications: current permission:', Notification.permission);
     const perm = await Notification.requestPermission();
+    console.log('[push] enableNotifications: permission result:', perm);
     const btn  = document.getElementById('notif-btn');
     if (perm === 'granted') {
       if (btn) { btn.textContent = '🔔'; btn.title = 'Notifications enabled'; }
-      // Subscribe to Web Push and save the subscription
       try {
-        if ('serviceWorker' in navigator && VAPID_PUBLIC_KEY && !VAPID_PUBLIC_KEY.startsWith('__')) {
-          const reg = await navigator.serviceWorker.ready;
-          let sub   = await reg.pushManager.getSubscription();
-          if (!sub) {
-            sub = await reg.pushManager.subscribe({
-              userVisibleOnly:      true,
-              applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
-            });
-          }
-          await saveSubscription(sub.toJSON());
-        }
+        await subscribeToPush();
       } catch (e) {
-        console.warn('[push] Web Push subscription failed:', e);
+        console.warn('[push] enableNotifications: subscribeToPush failed:', e);
       }
     } else {
       if (btn) { btn.textContent = '🔕'; btn.title = 'Notifications blocked'; }
