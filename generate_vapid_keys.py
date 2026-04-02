@@ -21,12 +21,10 @@ def generate():
     private_key = ec.generate_private_key(ec.SECP256R1())
     public_key  = private_key.public_key()
 
-    # Private key — raw 32-byte scalar, base64url-encoded (no padding)
-    private_bytes = private_key.private_bytes(
-        encoding=serialization.Encoding.Raw,
-        format=serialization.PrivateFormat.Raw,
-        encryption_algorithm=serialization.NoEncryption(),
-    )
+    # Private key — extract the raw 32-byte scalar via private_numbers().
+    # (serialization.Encoding.Raw is only valid for Ed/X keys, not EC P-256.)
+    private_int   = private_key.private_numbers().private_value
+    private_bytes = private_int.to_bytes(32, "big")
     vapid_private = base64.urlsafe_b64encode(private_bytes).decode().rstrip("=")
 
     # Public key — uncompressed EC point (65 bytes: 0x04 + X + Y), base64url-encoded
