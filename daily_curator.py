@@ -498,15 +498,25 @@ I'll give you a list of recent articles. Evaluate EACH article on these 4 criter
 3. CULTURAL: Does it connect to a broader cultural moment, movement, or shift in how people think or behave?
 4. SIGNIFICANCE: Is this a story that a well-informed reader would genuinely want to know about today?
 
-Score each article from 1–10 overall. Be ruthlessly selective. A 7+ means this is genuinely strong. Most articles should score 4–6.
+Score each article from 1–10 overall. Be ruthlessly selective. Most articles should score 4–6.
+
+Scoring anchors:
+- 9–10: You have to tell someone about this today.
+- 7–8: You'd be glad you saw it. It says something real about where culture is right now.
+- 5–6: Interesting enough, but you'd forget it by tomorrow.
+- 1–4: Noise — too niche, too dry, too predictable, or an auto-1.
+
+When in doubt between a 6 and a 7, score it a 6.
 
 POLITICS RULE: Automatically score any article a 1 if it is primarily about elections, political parties, politicians, legislation, government policy, or partisan issues. This briefing does not cover politics.
 
 CELEBRITY GOSSIP RULE: Automatically score any article a 1 if it is purely about celebrity rumors, relationships, dating, breakups, paparazzi stories, or celebrity gossip. This briefing does not cover celebrity gossip.
 
+CATEGORY DIVERSITY RULE: Aim to surface picks from a variety of categories (music, sports, fashion, tech, business, film/TV, culture, science). If multiple articles cover the same category and topic area, only the single most compelling one should score 7+. Do not let any one category dominate the high scores unless the news genuinely warrants it.
+
 TREND ITEMS: Some items have Source "X (Twitter) Trending" or "Google Trends" — these are raw trending topics, not articles. Evaluate them on whether the topic itself is culturally significant and worth a reader's attention. Score them as you would any other item.
 
-CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 3+ sources, treat this as strong evidence of cultural relevance. Add 1–2 points to the score (if it's already strong across other criteria).
+CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 3+ sources, treat this as evidence of cultural relevance. Add 1 point to the score (if it's already strong across other criteria).
 
 For articles that score 7 or above, also provide:
 - WHY: 1–2 sentences written as a brief editor's note — explain why this story is significant and why it matters to the reader right now. Write in clear, direct editorial prose. No references to social media, posting, or content.
