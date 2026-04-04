@@ -106,9 +106,9 @@ Rules:
 
 ### daily_curator.yml — Content scouting (3x/day)
 Runs automatically at:
-- 8:00 AM CT (13:00 UTC)
-- 1:00 PM CT (18:00 UTC)
-- 9:00 PM CT (02:00 UTC next day)
+- 7:30 AM CT (12:30 UTC / CDT) — 6:30 AM CST in winter
+- 1:30 PM CT (18:30 UTC / CDT) — 12:30 PM CST in winter
+- 7:30 PM CT (00:30 UTC / CDT) — 6:30 PM CST in winter
 
 Each run commits the picks file back to the repo, which then triggers deploy-pages.yml.
 
