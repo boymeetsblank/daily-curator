@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-04] Fix all three GitHub Actions cron schedules for correct Central Time
+
+All three crons were firing 1–2 hours late. The workflow comments referenced CST (UTC-6) but DST (CDT, UTC-5) has been active since March. Updated all three crons to CDT-correct UTC times: `30 12 * * *`, `30 18 * * *`, `30 0 * * *` = 7:30 AM / 1:30 PM / 7:30 PM CDT. During winter (CST), runs will fire at 6:30 AM / 12:30 PM / 6:30 PM. Also updated CLAUDE.md to document accurate run times.
+
 ## [2026-04-02] Fix VAPID sub claim to real admin email for Apple APNs
 
 Updated `VAPID_CLAIMS` in `send_push.py` — `sub` was a placeholder (`mailto:bot@daily-curator`), now set to `mailto:mjaffry1@gmail.com`. Apple's push server requires a valid `mailto:` or `https:` contact URI in the VAPID JWT `sub` claim.
