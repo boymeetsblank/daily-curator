@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-04] Add light/dark mode toggle to feed header
+
+Added a ☀/☽ toggle button to the feed header. Dark mode is the default. Theme preference persists in `localStorage` under `blank_theme`. Uses a `[data-theme="dark"]` CSS override block with an inline IIFE before `</head>` to prevent flash of wrong theme on load.
+
 ## [2026-04-04] Fix all three GitHub Actions cron schedules for correct Central Time
 
 All three crons were firing 1–2 hours late. The workflow comments referenced CST (UTC-6) but DST (CDT, UTC-5) has been active since March. Updated all three crons to CDT-correct UTC times: `30 12 * * *`, `30 18 * * *`, `30 0 * * *` = 7:30 AM / 1:30 PM / 7:30 PM CDT. During winter (CST), runs will fire at 6:30 AM / 12:30 PM / 6:30 PM. Also updated CLAUDE.md to document accurate run times.

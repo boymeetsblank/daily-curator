@@ -27,7 +27,29 @@
       --amber:    #d97706;
       --serif:    Georgia, 'Times New Roman', serif;
       --sans:     -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      --badge-bg: #1c1917;
+      --badge-fg: #ffffff;
     }
+
+    [data-theme="dark"] {
+      --bg:       #0f0e0d;
+      --surface:  #1c1917;
+      --ink:      #fafaf8;
+      --ink-2:    #d6d3d1;
+      --ink-3:    #a8a29e;
+      --ink-4:    #78716c;
+      --border:   rgba(255,255,255,0.08);
+      --border-s: rgba(255,255,255,0.05);
+      --badge-bg: #e7e5e4;
+      --badge-fg: #1c1917;
+      color-scheme: dark;
+    }
+
+    [data-theme="dark"] .card-image-wrap        { background: #292524; }
+    [data-theme="dark"] .card-image-wrap::after { background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.2)); }
+    [data-theme="dark"] .run-meta-sep           { color: rgba(255,255,255,0.15); }
+    [data-theme="dark"] .pill-btn               { border-color: rgba(255,255,255,0.12); }
+    [data-theme="dark"] .pill-btn:hover         { border-color: rgba(255,255,255,0.25); }
 
     body {
       font-family: var(--sans);
@@ -105,7 +127,9 @@
     }
 
     .pill-btn:hover  { background: var(--bg); color: var(--ink); border-color: rgba(0,0,0,0.22); }
-    .pill-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+    .pill-btn.active { background: var(--badge-bg); color: var(--badge-fg); border-color: var(--badge-bg); }
+
+    .theme-toggle { padding: 5px 10px; font-size: 14px; }
 
 
     /* ─────────────────────────────────────────
@@ -283,8 +307,8 @@
       font-weight: 700;
       padding: 2px 9px;
       border-radius: 100px;
-      background: var(--ink);
-      color: #fff;
+      background: var(--badge-bg);
+      color: var(--badge-fg);
       line-height: 1.55;
       flex-shrink: 0;
       letter-spacing: 0.03em;
@@ -1014,6 +1038,13 @@
     ───────────────────────────────────────── */
     /* #notif-btn is always visible; initNotifBtn() sets label/title on load */
   </style>
+  <script>
+    /* Anti-flash theme init — runs before first paint */
+    (function(){
+      var t = localStorage.getItem('blank_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
 </head>
 <body>
 
@@ -1037,6 +1068,7 @@
       <button class="pill-btn" id="btn-archive">Archive</button>
       <button class="pill-btn active" id="btn-stats" aria-expanded="true" aria-controls="sidebar-body">Stats</button>
       <button class="pill-btn" id="notif-btn" title="Enable breaking news notifications" onclick="enableNotifications()">🔔</button>
+      <button class="pill-btn theme-toggle" id="theme-toggle" title="Toggle light/dark mode" aria-label="Toggle light/dark mode" onclick="toggleTheme()"></button>
     </div>
   </div>
 </header>
@@ -1069,6 +1101,20 @@
 </div>
 
 <script>
+  // ── Theme ────────────────────────────────────────────────────
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    const btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'dark' ? '☀' : '☽';
+  }
+
+  function toggleTheme() {
+    const current = localStorage.getItem('blank_theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('blank_theme', next);
+    applyTheme(next);
+  }
+
   // ── HTML escaping ────────────────────────────────────────────
   function esc(str) {
     if (!str) return '';
@@ -1816,6 +1862,7 @@
   // Poll every 5 min — checks for new picks AND refreshes trends
   setInterval(checkForNewPicksAndTrends, 5 * 60_000);
 
+  applyTheme(localStorage.getItem('blank_theme') || 'dark');
   initNotifBtn();
   ensurePushSubscription();
 
