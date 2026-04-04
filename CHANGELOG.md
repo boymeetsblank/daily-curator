@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-04] Fix Breaking News Monitor git add crash
+
+Changed `git add` to `git add --ignore-missing` in `breaking_news.yml`. Previously, if `breaking_news_check.py` exited early (network error, parse failure, etc.) without writing its output files, the subsequent `git add` would fatal-error with exit code 128. With `--ignore-missing`, absent files are silently skipped and the workflow exits cleanly with "No changes to commit".
+
 ## [2026-04-04] Add light/dark mode toggle to feed header
 
 Added a ☀/☽ toggle button to the feed header. Dark mode is the default. Theme preference persists in `localStorage` under `blank_theme`. Uses a `[data-theme="dark"]` CSS override block with an inline IIFE before `</head>` to prevent flash of wrong theme on load.
