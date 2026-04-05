@@ -4,9 +4,9 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
-## [2026-04-04] Fix Breaking News Monitor git add crash
+## [2026-04-04] Fix Breaking News Monitor git add crash (v2)
 
-Changed `git add` to `git add --ignore-missing` in `breaking_news.yml`. Previously, if `breaking_news_check.py` exited early (network error, parse failure, etc.) without writing its output files, the subsequent `git add` would fatal-error with exit code 128. With `--ignore-missing`, absent files are silently skipped and the workflow exits cleanly with "No changes to commit".
+Replaced incorrect `git add --ignore-missing` (that flag requires `--dry-run`) with a shell conditional: `if [ -f breaking_news.json ]; then git add ...; fi`. If the Python script exits early without writing its output files, the block is skipped and the workflow exits cleanly with no changes to commit.
 
 ## [2026-04-04] Add light/dark mode toggle to feed header
 

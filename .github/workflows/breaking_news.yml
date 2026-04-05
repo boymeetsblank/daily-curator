@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "Breaking News Bot"
           git config user.email "bot@daily-curator"
-          git add --ignore-missing breaking_news.json breaking_news_state.json
+          if [ -f breaking_news.json ]; then git add breaking_news.json breaking_news_state.json; fi
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git pull --rebase origin main
           git commit -m "Breaking news update $(date +'%Y-%m-%d %H:%M UTC')"
