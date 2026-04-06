@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-06] Lower MIN_SCORE to 6 + add scroll-stopping hook to picks
+
+- Lowered `MIN_SCORE` from 7 to 6 so more picks surface per run
+- Claude now generates a scroll-stopping `HOOK` field for each qualifying pick (score ≥ 6), formatted as `[TRIGGER: X] Line / Line / Line` using one of six psychological triggers (Curiosity, FOMO, Disbelief, Defensiveness, Relief, Greed)
+- Hook appears in `picks/*.md` files only — not rendered on the website
+
 ## [2026-04-04] Fix Breaking News Monitor git add crash (v2)
 
 Replaced incorrect `git add --ignore-missing` (that flag requires `--dry-run`) with a shell conditional: `if [ -f breaking_news.json ]; then git add ...; fi`. If the Python script exits early without writing its output files, the block is skipped and the workflow exits cleanly with no changes to commit.

@@ -29,7 +29,7 @@ APIFY_API_TOKEN         = os.environ.get("APIFY_API_TOKEN")
 HOURS_BACK              = 48
 MAX_ARTICLES_TO_SEND    = 150
 MAX_ARTICLES_PER_SOURCE = 15
-MIN_SCORE               = 7
+MIN_SCORE               = 6
 MAX_PICKS               = 30
 
 INOREADER_BASE_URL   = "https://www.inoreader.com/reader/api/0"
@@ -73,6 +73,7 @@ def get_fresh_token() -> str:
     )
     if response.status_code != 200:
         print("❌ Could not refresh Inoreader token.")
+        print(f"   HTTP {response.status_code}: {response.text}")
         print("Your INOREADER_REFRESH_TOKEN may be expired.")
         sys.exit(1)
     return response.json()["access_token"]
@@ -530,8 +531,17 @@ CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered
 CULTURAL VELOCITY SIGNALS: The following topics are currently trending live on X (Twitter) and Google Trends. If an article's subject directly intersects with one of these topics, that's a signal of real-time cultural momentum — treat it as additional evidence for the TRENDING and CULTURAL criteria. Do not add points mechanically; use this to inform your editorial judgment about whether the story is landing in the cultural conversation right now.
 {trending_context_block}
 
-For articles that score 7 or above, also provide:
+For articles that score 6 or above, also provide:
 - WHY: 1–2 sentences written as a brief editor's note — explain why this story is significant and why it matters to the reader right now. Write in clear, direct editorial prose. No references to social media, posting, or content.
+- HOOK: A scroll-stopping hook for a social media hook slide. Use this exact format:
+
+  [TRIGGER: X] Line one / Line two / Line three
+
+  Rules:
+  - TRIGGER must be one of: Curiosity, FOMO, Disbelief, Defensiveness, Relief, Greed
+  - Lines separated by /
+  - Each line is 7 words or fewer; maximum 3 lines
+  - Write it like you're stopping a thumb mid-scroll — visceral, punchy, surprising
 
 IMPORTANT: Return your response as valid JSON in EXACTLY this format, with no other text before or after:
 
@@ -540,12 +550,14 @@ IMPORTANT: Return your response as valid JSON in EXACTLY this format, with no ot
     {{
       "article_number": 1,
       "score": 8,
-      "why": "This story marks a turning point in how the industry..."
+      "why": "This story marks a turning point in how the industry...",
+      "hook": "[TRIGGER: Disbelief] Nobody saw this coming. / Not even the insiders. / It changes everything."
     }},
     {{
       "article_number": 2,
       "score": 4,
-      "why": null
+      "why": null,
+      "hook": null
     }}
   ]
 }}
@@ -603,6 +615,7 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
         eval_data = eval_by_number.get(i, {})
         article["score"] = eval_data.get("score", 0)
         article["why"]   = eval_data.get("why")
+        article["hook"]  = eval_data.get("hook")
         enriched_articles.append(article)
 
     print(f"✅ Claude evaluated all {len(enriched_articles)} articles.")
@@ -787,6 +800,7 @@ This is normal — not every day has strong enough signal. Check back tomorrow!
             else:
                 link_line = ""
             image_line = f"\n**Image:** {pick['image']}" if pick.get('image') else ""
+            hook_section = f"\n**Hook:**\n{pick['hook']}\n" if pick.get('hook') else ""
             content += f"""## Pick #{i} — Score: {pick['score']}/10
 
 **{pick['title']}**
@@ -795,7 +809,7 @@ This is normal — not every day has strong enough signal. Check back tomorrow!
 
 **Why it matters:**
 {pick.get('why', 'N/A')}
-
+{hook_section}
 ---
 
 """
