@@ -96,7 +96,7 @@ jobs:
                       trend_label = 'Trending on Google right now'
 
                   wm = re.search(
-                      r'\*\*Why it (?:scored high|matters):\*\*\n(.*?)(?=\n\n\*\*Suggested|\n\n---|\Z)',
+                      r'\*\*Why it (?:scored high|matters):\*\*\n(.*?)(?=\n\n\*\*Hook|\n\n\*\*Suggested|\n\n---|\Z)',
                       block, re.DOTALL
                   )
                   why = wm.group(1).strip() if wm else ''

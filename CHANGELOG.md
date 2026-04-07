@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-07] Fix HOOK bleeding into website "Why" field
+
+The `why` regex in `deploy-pages.yml` didn't know to stop at `**Hook:**`, so the hook text was being captured as part of the `why` value and rendered on the site. Added `\n\n\*\*Hook` as a stop condition in the regex.
+
 ## [2026-04-07] Fix daily curator push rejection from race condition
 
 Added `git pull --rebase origin main` before both push steps in `daily_curator.yml`. The breaking news monitor commits every 15 minutes, so it frequently lands between the curator's commit and push, causing a rejected push. The rebase pulls in any new commits before pushing.
