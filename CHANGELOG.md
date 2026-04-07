@@ -4,6 +4,16 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-06] List mode redesign — glowing borders, always-visible why, clickable rows
+
+- Removed font glow from list mode titles
+- Added glowing left-border accent to rare (blue) and legendary (amber) rows, mirroring card view rarity tiers
+- Legendary rows get a subtle amber background tint
+- "Why" text is now always visible (2-line clamp) — no more hover-to-expand
+- Entire row is now an `<a>` tag — click anywhere to open the article (works on mobile)
+- Score displayed as pill badge (matching card view) instead of bare number
+- Subtle hover background on rows for clear affordance
+
 ## [2026-04-06] Lower MIN_SCORE to 6 + add scroll-stopping hook to picks
 
 - Lowered `MIN_SCORE` from 7 to 6 so more picks surface per run

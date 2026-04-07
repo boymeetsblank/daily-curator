@@ -1044,40 +1044,82 @@
     .pick-row {
       display: flex;
       align-items: flex-start;
-      gap: 20px;
-      padding: 22px 0;
+      gap: 14px;
+      padding: 20px 10px 20px 22px;
+      margin: 0 -10px;
       border-bottom: 1px solid var(--border-s);
       position: relative;
+      border-radius: 8px;
+      cursor: pointer;
       animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
-      transition: opacity 0.3s ease;
+      transition: background 0.15s ease, opacity 0.3s ease;
+      text-decoration: none;
+      color: inherit;
     }
 
     .pick-row:last-child { border-bottom: none; }
 
+    .pick-row:hover { background: var(--surface); }
+    [data-theme="light"] .pick-row:hover { background: rgba(0,0,0,0.025); }
+
     .pick-row.read       { opacity: 0.4; }
     .pick-row.read:hover { opacity: 0.7; }
 
-    /* Score number — left gutter */
-    .row-score {
-      font-family: var(--serif);
-      font-size: 12px;
-      font-variant-numeric: tabular-nums;
-      color: var(--ink-4);
-      width: 18px;
-      flex-shrink: 0;
-      text-align: right;
-      padding-top: 2px;
-      line-height: 1;
-      user-select: none;
+    /* Glowing left-border accent */
+    .pick-row::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 22%;
+      bottom: 22%;
+      width: 2px;
+      border-radius: 2px;
+      background: transparent;
     }
 
-    .pick-row.row-legendary .row-score { color: var(--amber); }
-    .pick-row.row-rare      .row-score { color: #3b82f6; }
+    .pick-row.row-legendary::before {
+      background: var(--amber);
+      box-shadow: 0 0 8px rgba(217,119,6,0.9), 0 0 22px rgba(217,119,6,0.55);
+    }
+
+    .pick-row.row-rare::before {
+      background: #3b82f6;
+      box-shadow: 0 0 8px rgba(59,130,246,0.8), 0 0 22px rgba(59,130,246,0.45);
+    }
+
+    /* Subtle tint on legendary rows */
+    .pick-row.row-legendary {
+      background: rgba(217,119,6,0.04);
+    }
+    [data-theme="dark"] .pick-row.row-legendary {
+      background: rgba(217,119,6,0.06);
+    }
+    .pick-row.row-legendary:hover {
+      background: rgba(217,119,6,0.08);
+    }
+
+    /* Score badge */
+    .row-score-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 100px;
+      background: var(--badge-bg);
+      color: var(--badge-fg);
+      flex-shrink: 0;
+      align-self: flex-start;
+      margin-top: 3px;
+      letter-spacing: 0.03em;
+      line-height: 1.55;
+    }
+
+    .row-score-badge.badge-legendary { background: var(--amber); color: #fff; }
+    .row-score-badge.badge-rare      { background: #2563eb;      color: #fff; }
 
     /* Main body */
     .row-body { flex: 1; min-width: 0; }
 
-    /* Title — the typographic centerpiece */
+    /* Title */
     .row-title {
       font-family: var(--serif);
       font-size: 17px;
@@ -1085,65 +1127,20 @@
       color: var(--ink);
       line-height: 1.42;
       letter-spacing: -0.1px;
-      text-decoration: none;
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
-    .row-title:hover { text-decoration: underline; text-underline-offset: 3px; }
-
-    /* ── GLOW: actual luminance radiating from the letterforms ── */
-
-    /* Dark mode — dramatic */
-    [data-theme="dark"] .row-title.title-legendary {
-      color: #fcd34d;
-      text-shadow:
-        0 0 8px  rgba(251, 191, 36, 0.95),
-        0 0 20px rgba(217, 119, 6,  0.82),
-        0 0 48px rgba(217, 119, 6,  0.58),
-        0 0 96px rgba(180, 83,  9,  0.32);
-    }
-
-    [data-theme="dark"] .row-title.title-rare {
-      color: #93c5fd;
-      text-shadow:
-        0 0 6px  rgba(147, 197, 253, 0.95),
-        0 0 16px rgba(59,  130, 246, 0.64),
-        0 0 36px rgba(59,  130, 246, 0.36);
-    }
-
-    /* Light mode — colour-forward, subtler spread */
-    [data-theme="light"] .row-title.title-legendary {
-      color: #b45309;
-      text-shadow:
-        0 0 12px rgba(217, 119, 6, 0.45),
-        0 0 30px rgba(217, 119, 6, 0.20),
-        0 0 60px rgba(217, 119, 6, 0.10);
-    }
-
-    [data-theme="light"] .row-title.title-rare {
-      color: #1d4ed8;
-      text-shadow:
-        0 0 8px  rgba(59, 130, 246, 0.42),
-        0 0 22px rgba(59, 130, 246, 0.18);
-    }
-
-    /* Editor's note — revealed on hover */
+    /* Editor's note — always visible, 2-line cap */
     .row-why {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
       font-size: 12.5px;
       color: var(--ink-3);
-      line-height: 1.65;
-      transition: max-height 0.30s ease, opacity 0.25s ease, margin-bottom 0.25s ease;
-      margin-bottom: 0;
-    }
-
-    .pick-row:hover .row-why {
-      max-height: 140px;
-      opacity: 1;
+      line-height: 1.6;
       margin-bottom: 9px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     /* Footer: source · timestamp */
@@ -1187,7 +1184,7 @@
       color: var(--ink-4);
     }
 
-    /* Staggered entry animations (mirrors card delays) */
+    /* Staggered entry animations */
     #section-latest .pick-row:nth-child(1)  { animation-delay: 0.00s; }
     #section-latest .pick-row:nth-child(2)  { animation-delay: 0.06s; }
     #section-latest .pick-row:nth-child(3)  { animation-delay: 0.12s; }
@@ -1203,9 +1200,8 @@
     .view-toggle-btn { padding: 5px 10px; font-size: 15px; letter-spacing: 0; }
 
     @media (max-width: 520px) {
-      .pick-row  { gap: 14px; padding: 20px 0; }
+      .pick-row  { gap: 10px; padding: 18px 8px 18px 20px; margin: 0 -8px; }
       .row-title { font-size: 15.5px; }
-      .row-score { width: 14px; font-size: 11px; }
     }
   </style>
   <script>
@@ -1480,33 +1476,32 @@
 
   // ── Render a single pick row (list mode) ────────────────────
   function renderPickRow(pick, runDisplayTime, runIsoTs) {
-    const tier      = pick.score >= 9 ? 'legendary' : pick.score >= 8 ? 'rare' : 'common';
-    const glowClass = tier !== 'common' ? ` title-${tier}` : '';
-    const rowClass  = tier !== 'common' ? ` row-${tier}` : '';
+    const tier       = pick.score >= 9 ? 'legendary' : pick.score >= 8 ? 'rare' : 'common';
+    const badgeClass = tier !== 'common' ? ` badge-${tier}` : '';
+    const rowClass   = tier !== 'common' ? ` row-${tier}` : '';
 
-    const href     = esc(pick.link || trendSearchUrl(pick));
-    const onclk    = pick.link ? ' onclick="markRead(this)"' : '';
-    const tsAttr   = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
+    const href      = esc(pick.link || trendSearchUrl(pick));
+    const tsAttr    = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
     const tsDisplay = runIsoTs ? timeAgo(runIsoTs) : esc(runDisplayTime);
 
     const srcBadge  = pick.trending_across_sources
-      ? `<span class="row-src-badge">3+</span>` : '';
+      ? `<span class="row-src-badge">3+ sources</span>` : '';
     const trendHint = !pick.link
       ? `<span class="row-trend-hint">${esc(trendLabel(pick))}</span>` : '';
     const whyHtml   = pick.why
       ? `<div class="row-why">${esc(pick.why)}</div>` : '';
 
-    return `<div class="pick-row${rowClass}" data-score="${pick.score}" data-url="${esc(pick.link || '')}">
-      <div class="row-score">${pick.score}</div>
+    return `<a class="pick-row${rowClass}" href="${href}" target="_blank" rel="noopener noreferrer" data-score="${pick.score}" data-url="${esc(pick.link || '')}"${pick.link ? ' onclick="markRead(this)"' : ''}>
+      <span class="row-score-badge${badgeClass}">${pick.score}</span>
       <div class="row-body">
-        <a class="row-title${glowClass}" href="${href}" target="_blank" rel="noopener noreferrer"${onclk}>${esc(pick.title)}</a>
+        <span class="row-title">${esc(pick.title)}</span>
         ${whyHtml}
         <div class="row-footer">
           <span class="row-source">${esc(pick.source)}</span>${srcBadge}${trendHint}
           <span class="row-ts"${tsAttr}>${tsDisplay}</span>
         </div>
       </div>
-    </div>`;
+    </a>`;
   }
 
   // ── View management ──────────────────────────────────────────
@@ -1609,7 +1604,7 @@
   }
 
   function markRead(linkEl) {
-    const card = linkEl.closest('.pick-card') || linkEl.closest('.pick-row');
+    const card = linkEl.classList.contains('pick-row') ? linkEl : (linkEl.closest('.pick-card') || linkEl.closest('.pick-row'));
     if (!card) return;
     const url = linkEl.href;
     const urls = getReadUrls();
