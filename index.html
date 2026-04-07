@@ -1037,6 +1037,176 @@
        NOTIFICATION PERMISSION BUTTON
     ───────────────────────────────────────── */
     /* #notif-btn is always visible; initNotifBtn() sets label/title on load */
+
+    /* ─────────────────────────────────────────
+       LIST MODE
+    ───────────────────────────────────────── */
+    .pick-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border-s);
+      position: relative;
+      animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+      transition: opacity 0.3s ease;
+    }
+
+    .pick-row:last-child { border-bottom: none; }
+
+    .pick-row.read       { opacity: 0.4; }
+    .pick-row.read:hover { opacity: 0.7; }
+
+    /* Score number — left gutter */
+    .row-score {
+      font-family: var(--serif);
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+      color: var(--ink-4);
+      width: 18px;
+      flex-shrink: 0;
+      text-align: right;
+      padding-top: 2px;
+      line-height: 1;
+      user-select: none;
+    }
+
+    .pick-row.row-legendary .row-score { color: var(--amber); }
+    .pick-row.row-rare      .row-score { color: #3b82f6; }
+
+    /* Main body */
+    .row-body { flex: 1; min-width: 0; }
+
+    /* Title — the typographic centerpiece */
+    .row-title {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.42;
+      letter-spacing: -0.1px;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .row-title:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* ── GLOW: actual luminance radiating from the letterforms ── */
+
+    /* Dark mode — dramatic */
+    [data-theme="dark"] .row-title.title-legendary {
+      color: #fcd34d;
+      text-shadow:
+        0 0 8px  rgba(251, 191, 36, 0.95),
+        0 0 20px rgba(217, 119, 6,  0.82),
+        0 0 48px rgba(217, 119, 6,  0.58),
+        0 0 96px rgba(180, 83,  9,  0.32);
+    }
+
+    [data-theme="dark"] .row-title.title-rare {
+      color: #93c5fd;
+      text-shadow:
+        0 0 6px  rgba(147, 197, 253, 0.95),
+        0 0 16px rgba(59,  130, 246, 0.64),
+        0 0 36px rgba(59,  130, 246, 0.36);
+    }
+
+    /* Light mode — colour-forward, subtler spread */
+    [data-theme="light"] .row-title.title-legendary {
+      color: #b45309;
+      text-shadow:
+        0 0 12px rgba(217, 119, 6, 0.45),
+        0 0 30px rgba(217, 119, 6, 0.20),
+        0 0 60px rgba(217, 119, 6, 0.10);
+    }
+
+    [data-theme="light"] .row-title.title-rare {
+      color: #1d4ed8;
+      text-shadow:
+        0 0 8px  rgba(59, 130, 246, 0.42),
+        0 0 22px rgba(59, 130, 246, 0.18);
+    }
+
+    /* Editor's note — revealed on hover */
+    .row-why {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      font-size: 12.5px;
+      color: var(--ink-3);
+      line-height: 1.65;
+      transition: max-height 0.30s ease, opacity 0.25s ease, margin-bottom 0.25s ease;
+      margin-bottom: 0;
+    }
+
+    .pick-row:hover .row-why {
+      max-height: 140px;
+      opacity: 1;
+      margin-bottom: 9px;
+    }
+
+    /* Footer: source · timestamp */
+    .row-footer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .row-source {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--ink-4);
+    }
+
+    .row-ts {
+      font-size: 10.5px;
+      color: var(--ink-4);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .row-src-badge {
+      font-size: 9.5px;
+      font-weight: 500;
+      padding: 1px 6px;
+      border-radius: 100px;
+      border: 1px solid rgba(0,0,0,0.10);
+      color: var(--ink-4);
+      line-height: 1.6;
+    }
+
+    [data-theme="dark"] .row-src-badge { border-color: rgba(255,255,255,0.12); }
+
+    .row-trend-hint {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 10.5px;
+      color: var(--ink-4);
+    }
+
+    /* Staggered entry animations (mirrors card delays) */
+    #section-latest .pick-row:nth-child(1)  { animation-delay: 0.00s; }
+    #section-latest .pick-row:nth-child(2)  { animation-delay: 0.06s; }
+    #section-latest .pick-row:nth-child(3)  { animation-delay: 0.12s; }
+    #section-latest .pick-row:nth-child(4)  { animation-delay: 0.18s; }
+    #section-latest .pick-row:nth-child(5)  { animation-delay: 0.24s; }
+    #section-latest .pick-row:nth-child(6)  { animation-delay: 0.30s; }
+    #section-latest .pick-row:nth-child(7)  { animation-delay: 0.36s; }
+    #section-latest .pick-row:nth-child(8)  { animation-delay: 0.42s; }
+    #section-latest .pick-row:nth-child(9)  { animation-delay: 0.48s; }
+    #section-latest .pick-row:nth-child(10) { animation-delay: 0.54s; }
+
+    /* View toggle button */
+    .view-toggle-btn { padding: 5px 10px; font-size: 15px; letter-spacing: 0; }
+
+    @media (max-width: 520px) {
+      .pick-row  { gap: 14px; padding: 20px 0; }
+      .row-title { font-size: 15.5px; }
+      .row-score { width: 14px; font-size: 11px; }
+    }
   </style>
   <script>
     /* Anti-flash theme init — runs before first paint */
@@ -1067,6 +1237,7 @@
       <button class="pill-btn active" id="btn-today">Today</button>
       <button class="pill-btn" id="btn-archive">Archive</button>
       <button class="pill-btn active" id="btn-stats" aria-expanded="true" aria-controls="sidebar-body">Stats</button>
+      <button class="pill-btn view-toggle-btn" id="btn-view" title="Switch to list view" onclick="toggleView()">≡</button>
       <button class="pill-btn" id="notif-btn" title="Enable breaking news notifications" onclick="enableNotifications()">🔔</button>
       <button class="pill-btn theme-toggle" id="theme-toggle" title="Toggle light/dark mode" aria-label="Toggle light/dark mode" onclick="toggleTheme()"></button>
     </div>
@@ -1154,6 +1325,9 @@
   const VOTE_TOKEN      = '__VOTE_TOKEN__';
   const VOTE_REPO       = 'boymeetsblank/daily-curator';
   const VAPID_PUBLIC_KEY = '__VAPID_PUBLIC_KEY__';
+
+  let currentView = localStorage.getItem('blank_view') || 'cards';
+  let cachedRuns  = null;
 
   async function vote(btn, dir) {
     const btns = btn.parentElement;
@@ -1304,6 +1478,59 @@
     </div>`;
   }
 
+  // ── Render a single pick row (list mode) ────────────────────
+  function renderPickRow(pick, runDisplayTime, runIsoTs) {
+    const tier      = pick.score >= 9 ? 'legendary' : pick.score >= 8 ? 'rare' : 'common';
+    const glowClass = tier !== 'common' ? ` title-${tier}` : '';
+    const rowClass  = tier !== 'common' ? ` row-${tier}` : '';
+
+    const href     = esc(pick.link || trendSearchUrl(pick));
+    const onclk    = pick.link ? ' onclick="markRead(this)"' : '';
+    const tsAttr   = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
+    const tsDisplay = runIsoTs ? timeAgo(runIsoTs) : esc(runDisplayTime);
+
+    const srcBadge  = pick.trending_across_sources
+      ? `<span class="row-src-badge">3+</span>` : '';
+    const trendHint = !pick.link
+      ? `<span class="row-trend-hint">${esc(trendLabel(pick))}</span>` : '';
+    const whyHtml   = pick.why
+      ? `<div class="row-why">${esc(pick.why)}</div>` : '';
+
+    return `<div class="pick-row${rowClass}" data-score="${pick.score}" data-url="${esc(pick.link || '')}">
+      <div class="row-score">${pick.score}</div>
+      <div class="row-body">
+        <a class="row-title${glowClass}" href="${href}" target="_blank" rel="noopener noreferrer"${onclk}>${esc(pick.title)}</a>
+        ${whyHtml}
+        <div class="row-footer">
+          <span class="row-source">${esc(pick.source)}</span>${srcBadge}${trendHint}
+          <span class="row-ts"${tsAttr}>${tsDisplay}</span>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  // ── View management ──────────────────────────────────────────
+  function updateViewBtn() {
+    const btn = document.getElementById('btn-view');
+    if (!btn) return;
+    btn.classList.toggle('active', currentView === 'list');
+    btn.title = currentView === 'list' ? 'Switch to card view' : 'Switch to list view';
+  }
+
+  function setView(v) {
+    currentView = v;
+    localStorage.setItem('blank_view', v);
+    updateViewBtn();
+    if (cachedRuns) {
+      render(cachedRuns);
+      if (v === 'cards') initScorePulse();
+    }
+  }
+
+  function toggleView() {
+    setView(currentView === 'list' ? 'cards' : 'list');
+  }
+
   // ── Read state (localStorage) ────────────────────────────────
   function getReadUrls() {
     try { return new Set(JSON.parse(localStorage.getItem('blank_read') || '[]')); }
@@ -1382,7 +1609,7 @@
   }
 
   function markRead(linkEl) {
-    const card = linkEl.closest('.pick-card');
+    const card = linkEl.closest('.pick-card') || linkEl.closest('.pick-row');
     if (!card) return;
     const url = linkEl.href;
     const urls = getReadUrls();
@@ -1397,14 +1624,14 @@
   function applyReadState() {
     const urls = getReadUrls();
     if (!urls.size) return;
-    document.querySelectorAll('.pick-card[data-url]').forEach(card => {
+    document.querySelectorAll('.pick-card[data-url], .pick-row[data-url]').forEach(card => {
       if (urls.has(card.dataset.url)) setReadUI(card);
     });
   }
 
   // ── Pick count display ───────────────────────────────────────
   function updateCount() {
-    const n = document.querySelectorAll('#section-latest .pick-card').length;
+    const n = document.querySelectorAll('#section-latest .pick-card, #section-latest .pick-row').length;
     document.getElementById('filter-count').textContent = n ? `${n} pick${n !== 1 ? 's' : ''}` : '';
   }
 
@@ -1514,6 +1741,7 @@
       return;
     }
 
+    cachedRuns = runs;
     const latestDate = runs[0].ct_date || runs[0].date;
     const latestRuns = runs.filter(r => (r.ct_date || r.date) === latestDate);
     const cutoff     = new Date(latestDate + 'T12:00:00Z');
@@ -1533,7 +1761,11 @@
       const runIsoTs = (run.date && run.time)
         ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z`
         : null;
-      for (const pick of run.picks) html += renderPickCard(pick, run.display_time, runIsoTs);
+      for (const pick of run.picks) {
+        html += currentView === 'list'
+          ? renderPickRow(pick, run.display_time, runIsoTs)
+          : renderPickCard(pick, run.display_time, runIsoTs);
+      }
     }
     html += '</div>';
 
@@ -1675,7 +1907,7 @@
 
   // ── Live timestamp refresh ────────────────────────────────────
   function refreshTimestamps() {
-    document.querySelectorAll('.card-timestamp[data-run-ts]').forEach(el => {
+    document.querySelectorAll('.card-timestamp[data-run-ts], .row-ts[data-run-ts]').forEach(el => {
       const ts = el.dataset.runTs;
       if (ts) el.textContent = timeAgo(ts);
     });
@@ -1828,6 +2060,7 @@
       }
       render(data.runs);
       wireButtons();
+      updateViewBtn();
       tickCountdown();
       positionSticky();
       initScorePulse();
