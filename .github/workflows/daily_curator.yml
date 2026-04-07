@@ -39,6 +39,7 @@ jobs:
           git config user.email "bot@daily-curator"
           git add picks/
           git diff --staged --quiet || git commit -m "Daily picks $(date +'%Y-%m-%d %H:%M')"
+          git pull --rebase origin main
           git push
 
       - name: Send push notifications to subscribers
@@ -52,4 +53,5 @@ jobs:
           git add subscriptions.json
           git diff --staged --quiet && exit 0
           git commit -m "Prune expired push subscriptions $(date +'%Y-%m-%d %H:%M')"
+          git pull --rebase origin main
           git push

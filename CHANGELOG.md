@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-07] Fix daily curator push rejection from race condition
+
+Added `git pull --rebase origin main` before both push steps in `daily_curator.yml`. The breaking news monitor commits every 15 minutes, so it frequently lands between the curator's commit and push, causing a rejected push. The rebase pulls in any new commits before pushing.
+
 ## [2026-04-06] List mode: terminal/editorial aesthetic + hook removed from web views
 
 - Monospace font stack (SF Mono / JetBrains Mono / Consolas) for all metadata in list mode
