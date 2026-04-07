@@ -4,6 +4,16 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-06] List mode: terminal/editorial aesthetic + hook removed from web views
+
+- Monospace font stack (SF Mono / JetBrains Mono / Consolas) for all metadata in list mode
+- Score displayed as zero-padded `09` in mono, color-coded by tier
+- `›` arrow indicator animates in on hover (mono, tier-colored)
+- Source line above title in all-caps tight mono
+- Editor's note always visible in italic serif, 2-line clamp
+- Glow on left-border intensifies on hover
+- Hook field confirmed absent from card and list views (only in picks/*.md files)
+
 ## [2026-04-06] List mode redesign — glowing borders, always-visible why, clickable rows
 
 - Removed font glow from list mode titles
