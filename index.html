@@ -310,12 +310,12 @@
 
     .art-row[data-score="9"],
     .art-row[data-score="10"] {
-      border-left: 2px solid rgba(217, 119, 6, 0.45);
-      background: rgba(217, 119, 6, 0.03);
+      border-left: 3px solid rgba(245, 158, 11, 0.85);
+      background: rgba(245, 158, 11, 0.05);
     }
     .art-row[data-score="8"] {
-      border-left: 2px solid rgba(37, 99, 235, 0.35);
-      background: rgba(37, 99, 235, 0.03);
+      border-left: 3px solid rgba(37, 99, 235, 0.75);
+      background: rgba(37, 99, 235, 0.05);
     }
 
     /* Date cell */
@@ -346,21 +346,41 @@
       width: fit-content;
     }
     .art-score.score-legendary {
-      color: #fff7ed;
-      background: rgba(217, 119, 6, 0.15);
-      border-color: rgba(217, 119, 6, 0.55);
-      box-shadow: 0 0 6px rgba(217, 119, 6, 0.45), 0 0 2px rgba(217, 119, 6, 0.3);
-      animation: glowPulse 3s ease-in-out infinite;
+      color: #1a0800;
+      background: #f59e0b;
+      border-color: #fbbf24;
+      box-shadow:
+        0 0 0 1px rgba(245, 158, 11, 0.7),
+        0 0 8px  rgba(245, 158, 11, 0.95),
+        0 0 18px rgba(245, 158, 11, 0.75),
+        0 0 36px rgba(245, 158, 11, 0.40);
+      animation: glowPulse 2.5s ease-in-out infinite;
     }
     .art-score.score-rare {
-      color: #eff6ff;
-      background: rgba(37, 99, 235, 0.15);
-      border-color: rgba(37, 99, 235, 0.55);
-      box-shadow: 0 0 6px rgba(37, 99, 235, 0.40), 0 0 2px rgba(37, 99, 235, 0.25);
+      color: #fff;
+      background: #2563eb;
+      border-color: #60a5fa;
+      box-shadow:
+        0 0 0 1px rgba(37, 99, 235, 0.7),
+        0 0 8px  rgba(37, 99, 235, 0.95),
+        0 0 18px rgba(37, 99, 235, 0.70),
+        0 0 36px rgba(37, 99, 235, 0.35);
     }
     @keyframes glowPulse {
-      0%, 100% { box-shadow: 0 0 6px rgba(217,119,6,0.45), 0 0 2px rgba(217,119,6,0.3); }
-      50%       { box-shadow: 0 0 12px rgba(217,119,6,0.70), 0 0 4px rgba(217,119,6,0.5); }
+      0%, 100% {
+        box-shadow:
+          0 0 0 1px rgba(245,158,11,0.7),
+          0 0 8px  rgba(245,158,11,0.95),
+          0 0 18px rgba(245,158,11,0.75),
+          0 0 36px rgba(245,158,11,0.40);
+      }
+      50% {
+        box-shadow:
+          0 0 0 1px rgba(245,158,11,0.9),
+          0 0 12px rgba(245,158,11,1),
+          0 0 28px rgba(245,158,11,0.90),
+          0 0 52px rgba(245,158,11,0.55);
+      }
     }
 
     /* Title cell */
@@ -505,8 +525,8 @@
       color: var(--ink);
     }
 
-    .exp-score-val.score-legendary { color: #fff7ed; background: rgba(217,119,6,0.15); border: 1px solid rgba(217,119,6,0.55); box-shadow: 0 0 6px rgba(217,119,6,0.4); display: inline-block; padding: 1px 8px; border-radius: 2px; }
-    .exp-score-val.score-rare      { color: #eff6ff; background: rgba(37,99,235,0.15); border: 1px solid rgba(37,99,235,0.55); box-shadow: 0 0 6px rgba(37,99,235,0.35); display: inline-block; padding: 1px 8px; border-radius: 2px; }
+    .exp-score-val.score-legendary { color: #1a0800; background: #f59e0b; border: 1px solid #fbbf24; box-shadow: 0 0 8px rgba(245,158,11,0.95), 0 0 20px rgba(245,158,11,0.6); display: inline-block; padding: 1px 8px; border-radius: 2px; }
+    .exp-score-val.score-rare      { color: #fff;    background: #2563eb; border: 1px solid #60a5fa; box-shadow: 0 0 8px rgba(37,99,235,0.95),  0 0 20px rgba(37,99,235,0.55);  display: inline-block; padding: 1px 8px; border-radius: 2px; }
 
     /* Footer row: vote + read */
     .exp-footer {
