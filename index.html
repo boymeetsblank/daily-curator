@@ -1117,31 +1117,39 @@
       dateMap.get(d).push(run);
     }
 
-    let html = '';
+    let todayHtml = '';
+    let archiveHtml = '';
     let isFirst = true;
 
     for (const [date, dateRuns] of dateMap) {
+      let chunk = '';
+
       if (!isFirst) {
-        // Archive date divider
-        html += `<div style="font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding:24px 0 10px;border-bottom:1px solid var(--border)" id="section-${esc(date)}">${esc(fmtDate(date))}</div>`;
+        chunk += `<div style="font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding:24px 0 10px;border-bottom:1px solid var(--border)" id="section-${esc(date)}">${esc(fmtDate(date))}</div>`;
       }
 
-      if (isFirst) html = `<div id="section-today">`;
-      else          html += `<div>`;
+      chunk += isFirst ? `<div id="section-today">` : `<div>`;
 
       for (const run of dateRuns) {
         const runIsoTs = (run.date && run.time)
           ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z` : null;
         for (const pick of run.picks) {
-          html += renderRow(pick, date, runIsoTs, '');
+          chunk += renderRow(pick, date, runIsoTs, '');
         }
       }
 
-      html += '</div>';
+      chunk += '</div>';
+
+      if (isFirst) todayHtml = chunk;
+      else         archiveHtml += chunk;
+
       isFirst = false;
     }
 
-    document.getElementById('feed-container').innerHTML = html;
+    const archiveWrapper = archiveHtml
+      ? `<div id="archive-section" style="display:none">${archiveHtml}</div>` : '';
+
+    document.getElementById('feed-container').innerHTML = todayHtml + archiveWrapper;
     applyReadState();
     buildSidebar(runs);
 
@@ -1212,9 +1220,17 @@
 
   function scrollToToday()   { document.getElementById('section-today')?.scrollIntoView({behavior:'smooth'}); setTbActive('tb-today'); }
   function scrollToArchive() {
-    const secs = document.querySelectorAll('[id^="section-"]');
-    if (secs.length > 1) secs[1].scrollIntoView({behavior:'smooth'});
-    setTbActive('tb-archive');
+    const sec = document.getElementById('archive-section');
+    if (!sec) return;
+    const isOpen = sec.style.display !== 'none';
+    if (isOpen) {
+      sec.style.display = 'none';
+      setTbActive('tb-today');
+    } else {
+      sec.style.display = 'block';
+      sec.scrollIntoView({behavior: 'smooth'});
+      setTbActive('tb-archive');
+    }
   }
   function scrollToTrends() {
     const mod = document.getElementById('trends-module');
