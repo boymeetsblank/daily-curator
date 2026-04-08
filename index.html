@@ -328,15 +328,15 @@
       font-size: 10px;
       font-weight: 700;
       letter-spacing: 0.06em;
-      color: var(--muted);
+      color: #888;
       display: inline-block;
       padding: 1px 5px;
       border-radius: 2px;
-      border: 1px solid var(--border);
+      border: 1px solid #2A2A2A;
       width: fit-content;
     }
-    .art-score.score-legendary { color: #1E1E1E; background: var(--accent); border-color: var(--accent); }
-    .art-score.score-rare      { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .art-score.score-legendary { color: #1E1E1E !important; background: #C4E817 !important; border-color: #C4E817 !important; }
+    .art-score.score-rare      { color: #141414 !important; background: #E8E8E8 !important; border-color: #E8E8E8 !important; }
 
     /* Title cell */
     .art-title-cell {
@@ -973,7 +973,7 @@
       : `onclick="event.stopPropagation()"`;
 
     return `<div class="art-row${extraClass||''}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}">
-      <div class="art-date">${esc(fmtDate(ctDate))}<span class="art-score ${scoreCls}">${score}</span></div>
+      <div class="art-date">${esc(fmtDate(ctDate))}<span class="art-score ${scoreCls}">${score}/10</span></div>
       <div class="art-title-cell">
         <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${titleClick}>${esc(pick.title)}</a>${trendBadge}${multiSrc}
       </div>
