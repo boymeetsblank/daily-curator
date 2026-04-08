@@ -308,6 +308,16 @@
 
     .art-row[data-hidden="1"] { display: none; }
 
+    .art-row[data-score="9"],
+    .art-row[data-score="10"] {
+      border-left: 2px solid rgba(217, 119, 6, 0.45);
+      background: rgba(217, 119, 6, 0.03);
+    }
+    .art-row[data-score="8"] {
+      border-left: 2px solid rgba(37, 99, 235, 0.35);
+      background: rgba(37, 99, 235, 0.03);
+    }
+
     /* Date cell */
     .art-date {
       grid-column: 1;
@@ -335,8 +345,23 @@
       border: 1px solid #2A2A2A;
       width: fit-content;
     }
-    .art-score.score-legendary { color: #1E1E1E !important; background: #C4E817 !important; border-color: #C4E817 !important; }
-    .art-score.score-rare      { color: #F0F0F0 !important; background: #1E1E1E !important; border-color: #1E1E1E !important; }
+    .art-score.score-legendary {
+      color: #fff7ed;
+      background: rgba(217, 119, 6, 0.15);
+      border-color: rgba(217, 119, 6, 0.55);
+      box-shadow: 0 0 6px rgba(217, 119, 6, 0.45), 0 0 2px rgba(217, 119, 6, 0.3);
+      animation: glowPulse 3s ease-in-out infinite;
+    }
+    .art-score.score-rare {
+      color: #eff6ff;
+      background: rgba(37, 99, 235, 0.15);
+      border-color: rgba(37, 99, 235, 0.55);
+      box-shadow: 0 0 6px rgba(37, 99, 235, 0.40), 0 0 2px rgba(37, 99, 235, 0.25);
+    }
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 6px rgba(217,119,6,0.45), 0 0 2px rgba(217,119,6,0.3); }
+      50%       { box-shadow: 0 0 12px rgba(217,119,6,0.70), 0 0 4px rgba(217,119,6,0.5); }
+    }
 
     /* Title cell */
     .art-title-cell {
@@ -480,8 +505,8 @@
       color: var(--ink);
     }
 
-    .exp-score-val.score-legendary { color: #1E1E1E; background: var(--accent); display: inline-block; padding: 1px 8px; border-radius: 2px; }
-    .exp-score-val.score-rare      { background: var(--ink); color: var(--bg); display: inline-block; padding: 1px 8px; border-radius: 2px; }
+    .exp-score-val.score-legendary { color: #fff7ed; background: rgba(217,119,6,0.15); border: 1px solid rgba(217,119,6,0.55); box-shadow: 0 0 6px rgba(217,119,6,0.4); display: inline-block; padding: 1px 8px; border-radius: 2px; }
+    .exp-score-val.score-rare      { color: #eff6ff; background: rgba(37,99,235,0.15); border: 1px solid rgba(37,99,235,0.55); box-shadow: 0 0 6px rgba(37,99,235,0.35); display: inline-block; padding: 1px 8px; border-radius: 2px; }
 
     /* Footer row: vote + read */
     .exp-footer {
