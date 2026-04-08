@@ -319,7 +319,24 @@
       padding: 13px 0;
       white-space: nowrap;
       align-self: start;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
     }
+
+    .art-score {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      display: inline-block;
+      padding: 1px 5px;
+      border-radius: 2px;
+      border: 1px solid var(--border);
+      width: fit-content;
+    }
+    .art-score.score-legendary { color: #1E1E1E; background: var(--accent); border-color: var(--accent); }
+    .art-score.score-rare      { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
     /* Title cell */
     .art-title-cell {
@@ -956,7 +973,7 @@
       : `onclick="event.stopPropagation()"`;
 
     return `<div class="art-row${extraClass||''}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}">
-      <div class="art-date">${esc(fmtDate(ctDate))}</div>
+      <div class="art-date">${esc(fmtDate(ctDate))}<span class="art-score ${scoreCls}">${score}/10</span></div>
       <div class="art-title-cell">
         <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${titleClick}>${esc(pick.title)}</a>${trendBadge}${multiSrc}
       </div>

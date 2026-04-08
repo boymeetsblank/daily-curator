@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-07] Score badge on article cards
+
+Added score badge to the date column of each article card (below the date, above the title area). Uses the same color coding as the expanded detail panel: lime/accent for 9+, dark ink for 8, bordered muted for 7.
+
 ## [2026-04-07] Stripe Dev Blog-style redesign v2 — true clone with expand/collapse
 
 Rebuilt index.html to faithfully replicate the Stripe Dev Blog layout:
