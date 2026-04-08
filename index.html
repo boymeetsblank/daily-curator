@@ -764,10 +764,7 @@
 <div class="page-outer">
 
   <!-- Big heading -->
-  <h1 class="page-heading">
-    Blank
-    <span class="heading-count" id="pick-total"></span>
-  </h1>
+  <h1 class="page-heading">Blank</h1>
 
   <!-- Two-column layout -->
   <div class="layout">
@@ -1062,9 +1059,6 @@
       ).join('') || '<div class="sb-item" style="cursor:default;color:var(--faint)">No sources yet</div>';
     }
 
-    // Total heading count
-    const totalEl = document.getElementById('pick-total');
-    if (totalEl) totalEl.textContent = `(${counts.all})`;
   }
 
   // ── Build sidebar trending list ───────────────────────────────
