@@ -712,6 +712,9 @@
 
       .exp-main-row  { grid-template-columns: 1fr; }
       .trends-cols   { grid-template-columns: 1fr; }
+
+      #trends-module { display: none; }
+      #trends-module.mobile-open { display: block; }
     }
 
     /* ─────────────────────────────────────────
@@ -1205,7 +1208,17 @@
     if (secs.length > 1) secs[1].scrollIntoView({behavior:'smooth'});
     setTbActive('tb-archive');
   }
-  function scrollToTrends()  { document.getElementById('trends-module')?.scrollIntoView({behavior:'smooth'}); setTbActive('tb-trends'); }
+  function scrollToTrends() {
+    const mod = document.getElementById('trends-module');
+    if (!mod) return;
+    if (window.innerWidth <= 680) {
+      const isOpen = mod.classList.toggle('mobile-open');
+      document.getElementById('tb-trends')?.classList.toggle('active', isOpen);
+    } else {
+      mod.scrollIntoView({behavior:'smooth'});
+      setTbActive('tb-trends');
+    }
+  }
 
   // ── Time ago ─────────────────────────────────────────────────
   function timeAgo(iso) {
