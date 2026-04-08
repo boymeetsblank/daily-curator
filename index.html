@@ -329,7 +329,20 @@
       align-self: start;
       display: flex;
       flex-direction: column;
+      gap: 5px;
+    }
+
+    .art-date-top {
+      display: flex;
+      align-items: center;
       gap: 6px;
+    }
+
+    .art-time {
+      font-size: 10px;
+      color: var(--faint);
+      letter-spacing: 0.03em;
+      font-variant-numeric: tabular-nums;
     }
 
     .art-score {
@@ -523,8 +536,8 @@
       color: var(--ink);
     }
 
-    .exp-score-val.score-legendary { color: #1a0800; background: #f59e0b; border: 1px solid #fbbf24; box-shadow: 0 0 8px rgba(245,158,11,0.95), 0 0 20px rgba(245,158,11,0.6); display: inline-block; padding: 1px 8px; border-radius: 2px; }
-    .exp-score-val.score-rare      { color: #fff;    background: #2563eb; border: 1px solid #60a5fa; box-shadow: 0 0 8px rgba(37,99,235,0.95),  0 0 20px rgba(37,99,235,0.55);  display: inline-block; padding: 1px 8px; border-radius: 2px; }
+    .exp-score-val.score-legendary { color: #1a0800; background: #f59e0b; border: 1px solid #fbbf24; display: inline-block; padding: 1px 8px; border-radius: 2px; }
+    .exp-score-val.score-rare      { color: #fff;    background: #2563eb; border: 1px solid #60a5fa; display: inline-block; padding: 1px 8px; border-radius: 2px; }
 
     /* Footer row: vote + read */
     .exp-footer {
@@ -573,6 +586,7 @@
 
     /* Read state */
     .art-row.read .art-date,
+    .art-row.read .art-time,
     .art-row.read .art-title-link { opacity: 0.38; }
 
     /* ─────────────────────────────────────────
@@ -937,11 +951,11 @@
     return m ? {trigger:m[1].trim(),text:m[2].trim()} : {trigger:null,text:s};
   }
 
-  // ── Date formatter  → "2026 · 04 · 07" ──────────────────────
+  // ── Date formatter  → "MM/DD/YYYY" ──────────────────────────
   function fmtDate(ctDate) {
     if (!ctDate) return '';
     const [y, m, d] = ctDate.split('-');
-    return `${y} · ${m} · ${d}`;
+    return `${m}/${d}/${y}`;
   }
 
   // ── Render a single article row ───────────────────────────────
@@ -996,10 +1010,9 @@
               ${angleHtml}
             </div>
             <div class="exp-field">
-              <span class="exp-label">Score</span>
-              <span class="exp-score-val ${scoreCls}"${tsAttr}>${scoreLabel}</span>
+              <span class="exp-score-val ${scoreCls}">${scoreLabel}</span>
             </div>
-          </div>` : `<div style="margin-bottom:10px"><span class="exp-label">Score</span> <span class="exp-score-val ${scoreCls}" style="margin-left:8px"${tsAttr}>${scoreLabel}</span></div>`}
+          </div>` : `<div style="margin-bottom:10px"><span class="exp-score-val ${scoreCls}">${scoreLabel}</span></div>`}
           <div class="exp-footer">
             ${readBtn}
             <div class="vote-btns"
@@ -1018,8 +1031,15 @@
       ? `onclick="markRead(this.closest('.art-row')); event.stopPropagation()"`
       : `onclick="event.stopPropagation()"`;
 
+    const timeSpan = runIsoTs
+      ? `<span class="art-time" data-run-ts="${esc(runIsoTs)}">${new Date(runIsoTs).toLocaleTimeString('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'2-digit'})}</span>`
+      : '';
+
     return `<div class="art-row${extraClass||''}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}">
-      <div class="art-date">${esc(fmtDate(ctDate))}<span class="art-score ${scoreCls}">${score}/10</span></div>
+      <div class="art-date">
+        <div class="art-date-top"><span>${esc(fmtDate(ctDate))}</span><span class="art-score ${scoreCls}">${score}/10</span></div>
+        ${timeSpan}
+      </div>
       <div class="art-title-cell">
         <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${titleClick}>${esc(pick.title)}</a>${trendBadge}${multiSrc}
       </div>
