@@ -11,7 +11,6 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#E8E8E8">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <style>
     @font-face {
       font-family: 'sohne-var';
@@ -23,33 +22,33 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:        #E8E8E8;
-      --surface:   #FFFFFF;
-      --ink:       #1E1E1E;
-      --ink-2:     #333333;
-      --ink-3:     #555555;
-      --ink-4:     #888888;
-      --border:    rgba(0,0,0,0.10);
-      --border-s:  rgba(0,0,0,0.06);
-      --accent:    #C4E817;
-      --sans:      'sohne-var', 'Helvetica Neue', Arial, sans-serif;
-      --header-h:  52px;
+      --bg:       #E8E8E8;
+      --ink:      #1E1E1E;
+      --muted:    #7A7A7A;
+      --faint:    #ABABAB;
+      --border:   #C8C8C8;
+      --surface:  #DCDCDC;
+      --accent:   #C4E817;
+      --red:      #dc2626;
+      --sans:     'sohne-var', 'Helvetica Neue', Arial, sans-serif;
+      --side-w:   210px;
+      --page-pad: 32px;
     }
 
     [data-theme="dark"] {
-      --bg:        #111111;
-      --surface:   #1A1A1A;
-      --ink:       #F0F0F0;
-      --ink-2:     #CCCCCC;
-      --ink-3:     #999999;
-      --ink-4:     #555555;
-      --border:    rgba(255,255,255,0.09);
-      --border-s:  rgba(255,255,255,0.05);
-      --accent:    #C4E817;
+      --bg:      #111111;
+      --ink:     #EBEBEB;
+      --muted:   #777777;
+      --faint:   #444444;
+      --border:  #2A2A2A;
+      --surface: #1A1A1A;
+      --accent:  #C4E817;
       color-scheme: dark;
     }
 
     ::selection { background: #C4E817; color: #1E1E1E; }
+
+    html, body { min-height: 100%; }
 
     body {
       font-family: var(--sans);
@@ -57,484 +56,579 @@
       color: var(--ink);
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
     /* ─────────────────────────────────────────
-       HEADER
+       TOPBAR  (very thin, stays out of the way)
     ───────────────────────────────────────── */
-    #site-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
+    #topbar {
+      height: 38px;
       border-bottom: 1px solid var(--border);
-      height: var(--header-h, 52px);
       display: flex;
       align-items: center;
-      padding: 0 24px;
+      padding: 0 var(--page-pad);
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: var(--bg);
     }
 
-    .header-inner {
-      max-width: 860px;
-      margin: 0 auto;
+    .tb-inner {
+      max-width: 1140px;
       width: 100%;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       gap: 0;
     }
 
-    .wordmark {
-      font-family: var(--sans);
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: -0.03em;
+    .tb-brand {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--ink);
-      flex-shrink: 0;
       margin-right: 24px;
-      line-height: 1;
-      user-select: none;
+      flex-shrink: 0;
     }
 
-    .header-nav {
+    .tb-nav {
       display: flex;
       align-items: center;
+      gap: 0;
       flex: 1;
     }
 
-    .nav-tab {
-      font-family: var(--sans);
-      font-size: 13px;
+    .tb-link {
+      font-size: 11px;
       font-weight: 500;
-      padding: 0 14px;
-      height: var(--header-h, 52px);
-      background: transparent;
+      color: var(--muted);
+      background: none;
       border: none;
-      border-bottom: 2px solid transparent;
-      color: var(--ink-4);
+      padding: 0 10px;
+      height: 38px;
       cursor: pointer;
-      transition: color 0.12s, border-color 0.12s;
+      letter-spacing: 0.04em;
+      transition: color 0.1s;
       white-space: nowrap;
-      line-height: 1;
     }
 
-    .nav-tab:hover  { color: var(--ink); }
-    .nav-tab.active { color: var(--ink); border-bottom-color: var(--ink); }
+    .tb-link:hover { color: var(--ink); }
+    .tb-link.active { color: var(--ink); }
 
-    .header-actions {
+    .tb-actions {
+      margin-left: auto;
       display: flex;
       align-items: center;
       gap: 6px;
-      flex-shrink: 0;
-      margin-left: auto;
     }
 
-    .header-btn {
+    .tb-btn {
       font-family: var(--sans);
-      font-size: 13px;
-      padding: 4px 10px;
-      background: transparent;
+      font-size: 11px;
+      color: var(--muted);
+      background: none;
       border: 1px solid var(--border);
-      border-radius: 4px;
-      color: var(--ink-4);
-      cursor: pointer;
-      transition: background 0.12s, color 0.12s, border-color 0.12s;
-      line-height: 1.5;
-    }
-
-    .header-btn:hover { background: var(--surface); color: var(--ink); border-color: rgba(0,0,0,0.18); }
-    [data-theme="dark"] .header-btn:hover { border-color: rgba(255,255,255,0.2); }
-
-    /* ─────────────────────────────────────────
-       PAGE LAYOUT
-    ───────────────────────────────────────── */
-    .page-wrapper {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 24px 100px;
-    }
-
-    /* ─────────────────────────────────────────
-       DATE GROUP SECTIONS
-    ───────────────────────────────────────── */
-    .date-group { }
-
-    .date-group + .date-group { margin-top: 24px; }
-
-    .group-header {
-      position: sticky;
-      top: var(--header-h, 52px);
-      z-index: 80;
-      background: var(--bg);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .group-date-label {
-      font-family: var(--sans);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--ink-4);
-    }
-
-    .group-meta {
-      font-family: var(--sans);
-      font-size: 11px;
-      color: var(--ink-4);
-    }
-
-    .picks-table { }
-
-    /* ─────────────────────────────────────────
-       PICK ROWS
-    ───────────────────────────────────────── */
-    .pick-row {
-      display: grid;
-      grid-template-columns: 52px 1fr 140px;
-      align-items: start;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border-s);
-      cursor: pointer;
-      transition: background 0.1s;
-      position: relative;
-    }
-
-    .pick-row:last-child { border-bottom: none; }
-    .pick-row:hover { background: rgba(0,0,0,0.025); }
-    [data-theme="dark"] .pick-row:hover { background: rgba(255,255,255,0.03); }
-
-    .pick-row.read       { opacity: 0.45; transition: opacity 0.3s ease; }
-    .pick-row.read:hover { opacity: 0.72; }
-
-    .pick-row.expanded { background: rgba(196,232,23,0.05); }
-    [data-theme="dark"] .pick-row.expanded { background: rgba(196,232,23,0.07); }
-
-    /* Score column */
-    .row-col-index {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-end;
-      padding-top: 2px;
-      padding-right: 14px;
-    }
-
-    .row-score {
-      font-family: var(--sans);
-      font-size: 10px;
-      font-weight: 700;
-      padding: 2px 7px;
       border-radius: 3px;
-      letter-spacing: 0.02em;
-      line-height: 1.6;
-      white-space: nowrap;
+      padding: 3px 8px;
+      cursor: pointer;
+      transition: color 0.1s, border-color 0.1s;
     }
 
-    .badge-common    { background: rgba(0,0,0,0.07); color: var(--ink-4); }
-    .badge-rare      { background: #1E1E1E; color: #FFFFFF; }
-    .badge-legendary { background: #C4E817; color: #1E1E1E; }
+    .tb-btn:hover { color: var(--ink); border-color: var(--muted); }
 
-    [data-theme="dark"] .badge-common    { background: rgba(255,255,255,0.1); color: var(--ink-4); }
-    [data-theme="dark"] .badge-rare      { background: #E0E0E0; color: #1A1A1A; }
-    [data-theme="dark"] .badge-legendary { background: #C4E817; color: #1E1E1E; }
-
-    /* Main column */
-    .row-col-main {
-      min-width: 0;
-      padding-right: 12px;
+    /* ─────────────────────────────────────────
+       PAGE OUTER WRAPPER
+    ───────────────────────────────────────── */
+    .page-outer {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 var(--page-pad) 120px;
     }
 
-    .row-title-link {
-      font-family: var(--sans);
-      font-size: 14px;
-      font-weight: 500;
+    /* ─────────────────────────────────────────
+       BIG HEADING  ("Blog" equivalent)
+    ───────────────────────────────────────── */
+    .page-heading {
+      font-size: 72px;
+      font-weight: 800;
+      letter-spacing: -0.045em;
+      line-height: 0.92;
       color: var(--ink);
-      text-decoration: none;
-      line-height: 1.45;
-      display: block;
-    }
-
-    .row-title-link:hover { text-decoration: underline; text-underline-offset: 3px; }
-
-    /* Meta column */
-    .row-col-meta {
+      padding: 44px 0 36px;
       display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 3px;
-      padding-top: 2px;
+      align-items: baseline;
+      gap: 10px;
     }
 
-    .row-source-badge {
-      font-family: var(--sans);
+    .heading-count {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+      color: var(--muted);
+      position: relative;
+      top: -2px;
+    }
+
+    /* ─────────────────────────────────────────
+       TWO-COLUMN LAYOUT
+    ───────────────────────────────────────── */
+    .layout {
+      display: grid;
+      grid-template-columns: var(--side-w) 1fr;
+      gap: 0 48px;
+      align-items: start;
+    }
+
+    /* ─────────────────────────────────────────
+       SIDEBAR
+    ───────────────────────────────────────── */
+    .sidebar {
+      position: sticky;
+      top: 38px;
+      padding-top: 4px;
+      max-height: calc(100vh - 38px);
+      overflow-y: auto;
+    }
+
+    .sb-label {
       font-size: 10px;
       font-weight: 600;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: var(--ink-4);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 130px;
+      color: var(--muted);
+      padding: 16px 0 10px;
+      display: block;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2px;
     }
 
-    .row-timestamp {
-      font-family: var(--sans);
-      font-size: 10px;
-      color: var(--ink-4);
-      white-space: nowrap;
+    .sb-label:first-child { padding-top: 0; }
+
+    .sb-item {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 6px 0 6px 8px;
+      font-size: 12.5px;
+      color: var(--muted);
+      cursor: pointer;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      border-radius: 3px;
+      transition: color 0.1s, background 0.1s;
+      gap: 8px;
+    }
+
+    .sb-item:hover { color: var(--ink); background: rgba(0,0,0,0.04); }
+    [data-theme="dark"] .sb-item:hover { background: rgba(255,255,255,0.05); }
+
+    .sb-item.active {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .sb-count {
+      font-size: 11px;
+      color: var(--faint);
+      flex-shrink: 0;
       font-variant-numeric: tabular-nums;
     }
 
-    /* ─────────────────────────────────────────
-       EXPAND PANEL
-    ───────────────────────────────────────── */
-    .row-expand {
-      margin-top: 10px;
-      padding-top: 10px;
-      border-top: 1px solid var(--border-s);
-      animation: expandIn 0.18s ease both;
-    }
+    .sb-item.active .sb-count { color: var(--muted); }
 
-    @keyframes expandIn {
-      from { opacity: 0; transform: translateY(-4px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    .row-why {
-      font-family: var(--sans);
-      font-size: 12.5px;
-      color: var(--ink-3);
-      line-height: 1.62;
-      margin-bottom: 8px;
-    }
-
-    .row-angle {
-      font-family: var(--sans);
-      font-size: 12px;
-      color: var(--ink-3);
-      line-height: 1.65;
-      margin-bottom: 12px;
-      font-style: italic;
-    }
-
-    .angle-trigger {
-      font-style: normal;
-      font-size: 9px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      background: #C4E817;
-      color: #1E1E1E;
-      padding: 1px 6px;
-      border-radius: 2px;
-      margin-right: 6px;
-      vertical-align: middle;
-      display: inline-block;
-      line-height: 1.7;
-    }
-
-    .row-expand-footer {
+    /* Trending in sidebar */
+    .sb-trend {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      padding-top: 2px;
+      align-items: baseline;
+      gap: 8px;
+      padding: 5px 0 5px 8px;
+      font-size: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.1s;
+      border-radius: 3px;
     }
 
-    .row-vote-btns { display: flex; gap: 4px; }
+    .sb-trend:hover { color: var(--ink); }
 
-    .vote-btn {
-      font-family: var(--sans);
-      font-size: 13px;
-      background: transparent;
+    .sb-trend-num {
+      font-size: 10px;
+      color: var(--faint);
+      width: 16px;
+      flex-shrink: 0;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sb-trend-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* ─────────────────────────────────────────
+       CONTENT AREA
+    ───────────────────────────────────────── */
+    .content { min-width: 0; }
+
+    /* Column header row */
+    .list-header {
+      display: grid;
+      grid-template-columns: 130px 1fr 32px;
+      gap: 0 20px;
+      padding: 0 0 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .lh-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ─────────────────────────────────────────
+       ARTICLE ROWS
+    ───────────────────────────────────────── */
+    .art-row {
+      display: grid;
+      grid-template-columns: 130px 1fr 32px;
+      grid-template-rows: auto auto;
+      gap: 0 20px;
+      border-bottom: 1px solid var(--border);
+      padding: 0;
+      position: relative;
+    }
+
+    .art-row[data-hidden="1"] { display: none; }
+
+    /* Date cell */
+    .art-date {
+      grid-column: 1;
+      grid-row: 1;
+      font-size: 11.5px;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      font-variant-numeric: tabular-nums;
+      padding: 13px 0;
+      white-space: nowrap;
+      align-self: start;
+    }
+
+    /* Title cell */
+    .art-title-cell {
+      grid-column: 2;
+      grid-row: 1;
+      padding: 13px 0;
+      min-width: 0;
+      align-self: start;
+    }
+
+    .art-title-link {
+      font-size: 14.5px;
+      font-weight: 400;
+      color: var(--ink);
+      text-decoration: none;
+      line-height: 1.4;
+    }
+
+    .art-title-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Trend badge inline */
+    .art-trend-tag {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted);
       border: 1px solid var(--border);
-      border-radius: 4px;
-      width: 28px;
-      height: 26px;
+      border-radius: 2px;
+      padding: 1px 5px;
+      margin-left: 7px;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+    }
+
+    /* Expand toggle button */
+    .expand-btn {
+      grid-column: 3;
+      grid-row: 1;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1;
       cursor: pointer;
-      color: var(--ink-4);
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background 0.12s, color 0.12s, border-color 0.12s;
-      padding: 0;
-    }
-
-    .vote-btn:hover      { background: var(--bg); color: var(--ink-2); border-color: rgba(0,0,0,0.2); }
-    .vote-btn.voted-up   { background: rgba(196,232,23,0.2); color: #3a6e00; border-color: #C4E817; }
-    .vote-btn.voted-down { background: rgba(220,38,38,0.07); color: #dc2626; border-color: rgba(220,38,38,0.25); }
-
-    [data-theme="dark"] .vote-btn:hover { border-color: rgba(255,255,255,0.25); }
-
-    .row-expand-meta {
+      align-self: center;
+      margin-top: 13px;
+      flex-shrink: 0;
+      transition: background 0.1s, color 0.1s, border-color 0.1s;
       font-family: var(--sans);
-      font-size: 10px;
-      color: var(--ink-4);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
+      padding: 0;
+      user-select: none;
     }
+
+    .expand-btn:hover { background: var(--surface); color: var(--ink); border-color: var(--muted); }
+    .art-row.expanded .expand-btn { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
     /* ─────────────────────────────────────────
-       X TRENDING MODULE
+       EXPAND DETAIL  (spans all 3 columns)
     ───────────────────────────────────────── */
-    .trends-module {
+    .art-expand {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      padding: 0 0 18px;
+      display: none;
+    }
+
+    .art-row.expanded .art-expand { display: block; }
+
+    .exp-inner {
       background: var(--surface);
       border: 1px solid var(--border);
-      margin: 12px 0;
-      padding: 14px 16px 16px;
+      padding: 20px 24px;
     }
 
-    .trends-module-header {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border-s);
+    /* Two-panel grid inside expand */
+    .exp-main-row {
+      display: grid;
+      grid-template-columns: 1fr 160px;
+      gap: 16px 32px;
+      margin-bottom: 16px;
     }
 
-    .tm-x-logo {
-      width: 11px; height: 11px;
-      color: var(--ink-4);
-      flex-shrink: 0;
-      display: block;
-    }
+    .exp-field { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
 
-    .trends-module-title {
-      font-family: var(--sans);
+    .exp-label {
       font-size: 9px;
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--ink-4);
+      color: var(--muted);
     }
 
-    .trends-updated {
-      font-size: 9.5px;
-      color: var(--ink-4);
-      margin-left: auto;
-      font-variant-numeric: tabular-nums;
-      opacity: 0;
-      transition: opacity 0.4s ease;
+    .exp-why {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.65;
     }
 
-    .trends-updated.visible { opacity: 1; }
-
-    .trends-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px;
+    .exp-angle {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.65;
+      font-style: italic;
     }
 
-    a.trend-item { text-decoration: none; color: inherit; cursor: pointer; }
-    a.trend-item:hover .trend-item-name { color: var(--ink); text-decoration: underline; }
+    .angle-trigger {
+      display: inline-block;
+      font-style: normal;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      background: var(--accent);
+      color: #1E1E1E;
+      padding: 1px 5px;
+      border-radius: 2px;
+      margin-right: 5px;
+      vertical-align: middle;
+      top: -1px;
+      position: relative;
+    }
 
-    .trend-item {
+    .exp-source-val {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .exp-score-val {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .exp-score-val.score-legendary { color: #1E1E1E; background: var(--accent); display: inline-block; padding: 1px 8px; border-radius: 2px; }
+    .exp-score-val.score-rare      { background: var(--ink); color: var(--bg); display: inline-block; padding: 1px 8px; border-radius: 2px; }
+
+    /* Footer row: vote + read */
+    .exp-footer {
       display: flex;
       align-items: center;
-      gap: 8px;
-      padding: 5px 0;
-      border-bottom: 1px solid var(--border-s);
-      min-width: 0;
+      gap: 10px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
     }
 
-    .trend-item:last-child,
-    .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
-
-    .trend-item-rank {
-      font-family: var(--sans);
-      font-size: 10px;
-      color: var(--ink-4);
-      width: 20px;
-      flex-shrink: 0;
-      text-align: right;
-      font-variant-numeric: tabular-nums;
-      line-height: 1;
-    }
-
-    .trend-item.rank-hot  .trend-item-rank { color: var(--accent); }
-    .trend-item.rank-warm .trend-item-rank { color: var(--ink-3); }
-
-    .trend-item-name {
-      font-family: var(--sans);
+    .exp-read-btn {
       font-size: 12px;
-      color: var(--ink-3);
-      overflow: hidden;
-      text-overflow: ellipsis;
+      font-weight: 600;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 5px 16px;
+      border-radius: 3px;
+      transition: background 0.1s, border-color 0.1s;
       white-space: nowrap;
-      flex: 1;
-      min-width: 0;
     }
 
-    .trend-item.rank-hot  .trend-item-name { color: var(--ink); font-weight: 500; }
-    .trend-item.rank-warm .trend-item-name { color: var(--ink-2); }
+    .exp-read-btn:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
-    @media (max-width: 479px) {
-      .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--border-s); }
+    .vote-btns { display: flex; gap: 4px; margin-left: auto; }
+
+    .vote-btn {
+      font-size: 13px;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      width: 30px;
+      height: 26px;
+      cursor: pointer;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.1s;
+      font-family: var(--sans);
     }
+
+    .vote-btn:hover      { border-color: var(--muted); color: var(--ink); }
+    .vote-btn.voted-up   { background: rgba(196,232,23,0.2); color: #3a6e00; border-color: #C4E817; }
+    .vote-btn.voted-down { background: rgba(220,38,38,0.07); color: #dc2626; border-color: rgba(220,38,38,0.3); }
+
+    /* Read state */
+    .art-row.read .art-date,
+    .art-row.read .art-title-link { opacity: 0.38; }
+
+    /* ─────────────────────────────────────────
+       X TRENDS MODULE  (above article list)
+    ───────────────────────────────────────── */
+    #trends-module { margin-bottom: 0; }
+
+    .trends-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 16px 20px 18px;
+      margin-bottom: 20px;
+      display: none;   /* shown when trends exist */
+    }
+
+    .trends-panel.has-trends { display: block; }
+
+    .trends-panel-header {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tp-x-logo { width: 10px; height: 10px; color: var(--muted); }
+
+    .tp-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .tp-updated {
+      font-size: 9.5px;
+      color: var(--faint);
+      margin-left: auto;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tp-updated.visible { opacity: 1; }
+
+    .trends-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 32px;
+    }
+
+    a.trend-item {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 0 8px;
+      align-items: baseline;
+      padding: 5px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    a.trend-item:last-child { border-bottom: none; }
+    a.trend-item:hover .ti-name { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+    .ti-num  { font-size: 10px; color: var(--faint); text-align: right; font-variant-numeric: tabular-nums; }
+    .ti-name { font-size: 13px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    a.trend-item:nth-child(-n+3) .ti-num  { color: var(--accent); }
+    a.trend-item:nth-child(-n+3) .ti-name { color: var(--ink); font-weight: 500; }
 
     /* ─────────────────────────────────────────
        BREAKING NEWS
     ───────────────────────────────────────── */
-    .breaking-row {
-      display: grid;
-      grid-template-columns: 52px 1fr 140px;
-      align-items: start;
-      padding: 14px 0 14px 10px;
-      border-bottom: 1px solid var(--border-s);
-      border-left: 2px solid #dc2626;
-      background: rgba(220,38,38,0.03);
-    }
+    #breaking-section { margin-bottom: 12px; }
 
-    .breaking-badge {
-      font-family: var(--sans);
-      font-size: 9px;
+    .breaking-label-row {
+      font-size: 9.5px;
       font-weight: 700;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: 2px 7px;
-      border-radius: 2px;
-      background: #dc2626;
-      color: #fff;
-      animation: breakingPulse 2s ease-in-out infinite;
-      flex-shrink: 0;
-    }
-
-    @keyframes breakingPulse {
-      0%, 100% { opacity: 1; }
-      50%       { opacity: 0.65; }
-    }
-
-    .breaking-section-label {
+      color: var(--red);
       display: flex;
       align-items: center;
       gap: 6px;
-      font-family: var(--sans);
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #dc2626;
-      padding: 12px 0 6px;
+      padding: 10px 0 6px;
     }
 
-    .breaking-section-label::before {
+    .breaking-label-row::before {
       content: '';
       width: 5px; height: 5px;
       border-radius: 50%;
-      background: #dc2626;
-      flex-shrink: 0;
-      animation: breakingPulse 2s ease-in-out infinite;
+      background: var(--red);
+      animation: blink 1.8s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.25; }
+    }
+
+    .breaking-art-row {
+      display: grid;
+      grid-template-columns: 130px 1fr 32px;
+      grid-template-rows: auto auto;
+      gap: 0 20px;
+      border-bottom: 1px solid rgba(220,38,38,0.2);
+      border-left: 2px solid var(--red);
+      padding-left: 10px;
+      background: rgba(220,38,38,0.025);
     }
 
     /* ─────────────────────────────────────────
-       READING PROGRESS BAR
+       PROGRESS BAR
     ───────────────────────────────────────── */
     #progress-bar {
       position: fixed;
@@ -545,7 +639,6 @@
       z-index: 9999;
       transition: width 0.08s linear;
       pointer-events: none;
-      border-radius: 0 1px 1px 0;
     }
 
     /* ─────────────────────────────────────────
@@ -555,85 +648,64 @@
       display: none;
       position: fixed;
       top: 0; left: 0; right: 0;
-      z-index: 200;
+      z-index: 500;
       background: var(--ink);
-      color: #fff;
-      padding: 11px 24px;
+      color: var(--bg);
+      padding: 10px 24px;
       text-align: center;
-      font-family: var(--sans);
-      font-size: 12.5px;
-      letter-spacing: 0.01em;
+      font-size: 12px;
       cursor: pointer;
-      animation: bannerSlideDown 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation: slideDown 0.22s ease both;
     }
 
-    #new-picks-banner:hover { background: #2c2c2c; }
+    #new-picks-banner:hover { opacity: 0.88; }
+    .banner-x { margin-left: 10px; opacity: 0.45; }
 
-    #new-picks-banner .banner-dismiss {
-      margin-left: 10px;
-      opacity: 0.45;
-      font-size: 11px;
-    }
-
-    @keyframes bannerSlideDown {
-      from { transform: translateY(-100%); opacity: 0; }
-      to   { transform: translateY(0);     opacity: 1; }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to   { transform: translateY(0); }
     }
 
     /* ─────────────────────────────────────────
        UTILITIES
     ───────────────────────────────────────── */
     .state-msg {
-      text-align: center;
-      color: var(--ink-4);
       padding: 80px 0;
-      font-family: var(--sans);
-      font-style: italic;
+      text-align: center;
+      color: var(--muted);
       font-size: 15px;
-      line-height: 1.9;
+      font-style: italic;
     }
 
     /* ─────────────────────────────────────────
-       FADE-IN ANIMATION
+       MOBILE  ≤ 680px
     ───────────────────────────────────────── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(10px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+    @media (max-width: 680px) {
+      :root { --page-pad: 16px; --side-w: 0px; }
 
-    .date-group { animation: fadeUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both; }
+      .layout        { grid-template-columns: 1fr; }
+      .sidebar       { display: none; }
+      .page-heading  { font-size: 48px; padding: 28px 0 24px; }
 
-    .date-group:nth-child(1) { animation-delay: 0.00s; }
-    .date-group:nth-child(2) { animation-delay: 0.06s; }
-    .date-group:nth-child(3) { animation-delay: 0.12s; }
-    .date-group:nth-child(4) { animation-delay: 0.18s; }
-    .date-group:nth-child(5) { animation-delay: 0.24s; }
+      .list-header   { grid-template-columns: 80px 1fr 32px; }
+      .art-row       { grid-template-columns: 80px 1fr 32px; }
+      .breaking-art-row { grid-template-columns: 80px 1fr 32px; }
+      .art-date      { font-size: 10.5px; }
+      .art-title-link { font-size: 13.5px; }
 
-    /* ─────────────────────────────────────────
-       MOBILE (≤479px)
-    ───────────────────────────────────────── */
-    @media (max-width: 479px) {
-      #site-header  { padding: 0 14px; }
-      .page-wrapper { padding: 0 14px 80px; }
-      .wordmark     { font-size: 15px; margin-right: 16px; }
-      .nav-tab      { padding: 0 10px; font-size: 12px; }
-      .pick-row     { grid-template-columns: 36px 1fr; }
-      .row-col-meta { display: none; }
-      .row-title-link { font-size: 13.5px; }
-      .breaking-row   { grid-template-columns: 36px 1fr; }
+      .exp-main-row  { grid-template-columns: 1fr; }
+      .trends-cols   { grid-template-columns: 1fr; }
     }
 
     /* ─────────────────────────────────────────
-       TABLET (480–859px)
+       TABLET  681px – 900px
     ───────────────────────────────────────── */
-    @media (min-width: 480px) and (max-width: 859px) {
-      .pick-row     { grid-template-columns: 36px 1fr 100px; }
-      .breaking-row { grid-template-columns: 36px 1fr 100px; }
-      .row-source-badge { max-width: 90px; }
+    @media (min-width: 681px) and (max-width: 900px) {
+      :root { --side-w: 160px; }
+      .page-heading { font-size: 56px; }
     }
   </style>
   <script>
-    /* Anti-flash theme init — runs before first paint */
     (function(){
       var t = localStorage.getItem('blank_theme') || 'light';
       document.documentElement.setAttribute('data-theme', t);
@@ -642,386 +714,374 @@
 </head>
 <body>
 
-<!-- ── Reading Progress Bar ── -->
 <div id="progress-bar"></div>
-
-<!-- ── New Picks Banner ── -->
 <div id="new-picks-banner" role="status" onclick="dismissBanner()">
-  New picks available — click to refresh <span class="banner-dismiss">✕</span>
+  New picks available — click to refresh <span class="banner-x">✕</span>
 </div>
 
-<!-- ── Header ── -->
-<header id="site-header">
-  <div class="header-inner">
-    <div class="wordmark">Blank</div>
-    <nav class="header-nav">
-      <button class="nav-tab active" id="btn-today">Today</button>
-      <button class="nav-tab" id="btn-archive">Archive</button>
-      <button class="nav-tab" id="btn-trends">Trends</button>
-    </nav>
-    <div class="header-actions">
-      <button class="header-btn" id="notif-btn" title="Enable breaking news notifications" onclick="enableNotifications()">🔔</button>
-      <button class="header-btn" id="theme-toggle" title="Toggle light/dark mode" aria-label="Toggle light/dark mode" onclick="toggleTheme()"></button>
+<!-- ── Topbar ── -->
+<div id="topbar">
+  <div class="tb-inner">
+    <span class="tb-brand">Blank</span>
+    <div class="tb-nav">
+      <button class="tb-link active" id="tb-today"   onclick="scrollToToday()">Today</button>
+      <button class="tb-link"        id="tb-archive" onclick="scrollToArchive()">Archive</button>
+      <button class="tb-link"        id="tb-trends"  onclick="scrollToTrends()">Trends</button>
+    </div>
+    <div class="tb-actions">
+      <button class="tb-btn" id="notif-btn" onclick="enableNotifications()">🔔</button>
+      <button class="tb-btn" id="theme-toggle" onclick="toggleTheme()"></button>
     </div>
   </div>
-</header>
+</div>
 
 <!-- ── Page ── -->
-<div class="page-wrapper">
-  <main id="feed-container">
-    <div class="state-msg">Loading…</div>
-  </main>
+<div class="page-outer">
+
+  <!-- Big heading -->
+  <h1 class="page-heading">
+    Blank
+    <span class="heading-count" id="pick-total"></span>
+  </h1>
+
+  <!-- Two-column layout -->
+  <div class="layout">
+
+    <!-- LEFT: Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <!-- Score filters (injected by JS) -->
+      <span class="sb-label">/ Scores</span>
+      <div id="sb-score-filters"></div>
+
+      <!-- Sources (injected by JS) -->
+      <span class="sb-label" style="margin-top:8px">/ Sources</span>
+      <div id="sb-sources"></div>
+
+      <!-- Trending topics -->
+      <span class="sb-label" style="margin-top:8px">/ Trending</span>
+      <div id="sb-trends"></div>
+    </aside>
+
+    <!-- RIGHT: Content -->
+    <div class="content">
+
+      <!-- Trends panel (inline, above list) -->
+      <div id="trends-module">
+        <div class="trends-panel" id="trends-panel">
+          <div class="trends-panel-header">
+            <svg class="tp-x-logo" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <span class="tp-label">Now Trending on X</span>
+            <span id="tp-updated" class="tp-updated"></span>
+          </div>
+          <div class="trends-cols" id="trends-grid"></div>
+        </div>
+      </div>
+
+      <!-- Breaking news (injected before list) -->
+      <div id="breaking-section"></div>
+
+      <!-- Column header -->
+      <div class="list-header">
+        <span class="lh-label">/ Date</span>
+        <span class="lh-label">/ Title</span>
+        <span></span>
+      </div>
+
+      <!-- Article list -->
+      <div id="feed-container">
+        <div class="state-msg">Loading…</div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <script>
   // ── Theme ────────────────────────────────────────────────────
-  function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    const btn = document.getElementById('theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀' : '☽';
+  function applyTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    const b = document.getElementById('theme-toggle');
+    if (b) b.textContent = t === 'dark' ? '☀' : '☽';
   }
-
   function toggleTheme() {
-    const current = localStorage.getItem('blank_theme') || 'light';
-    const next = current === 'dark' ? 'light' : 'dark';
-    localStorage.setItem('blank_theme', next);
-    applyTheme(next);
+    const cur = localStorage.getItem('blank_theme') || 'light';
+    const nxt = cur === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('blank_theme', nxt);
+    applyTheme(nxt);
   }
 
-  // ── HTML escaping ────────────────────────────────────────────
-  function esc(str) {
-    if (!str) return '';
-    return str
-      .replace(/&/g,  '&amp;')
-      .replace(/</g,  '&lt;')
-      .replace(/>/g,  '&gt;')
-      .replace(/"/g,  '&quot;')
-      .replace(/'/g,  '&#039;');
+  // ── Escape ───────────────────────────────────────────────────
+  function esc(s) {
+    if (!s) return '';
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+            .replace(/"/g,'&quot;').replace(/'/g,'&#039;');
   }
 
   // ── Trend helpers ────────────────────────────────────────────
-  function isTrendPick(pick) { return !pick.link; }
-
-  function trendPlatform(pick) {
-    const s = (pick.source || '').toLowerCase();
-    if (s.includes('twitter') || s.includes('x (twitter)') || s === 'x (twitter) trending') return 'X';
+  function isTrendPick(p) { return !p.link; }
+  function trendPlatform(p) {
+    const s = (p.source||'').toLowerCase();
+    if (s.includes('twitter') || s.includes('x (twitter)')) return 'X';
     if (s.includes('google')) return 'Google';
     return null;
   }
-
-  function trendSearchUrl(pick) {
-    const q = encodeURIComponent(pick.title || '');
-    const platform = trendPlatform(pick);
-    if (platform === 'Google') return `https://www.google.com/search?q=${q}`;
-    return `https://x.com/search?q=${q}`;
+  function trendSearchUrl(p) {
+    const q = encodeURIComponent(p.title||'');
+    return trendPlatform(p) === 'Google'
+      ? `https://www.google.com/search?q=${q}`
+      : `https://x.com/search?q=${q}`;
   }
 
-  function trendLabel(pick) {
-    const s = (pick.source || '').toLowerCase();
-    if (s.includes('twitter') || s.includes(' x ') || s.endsWith(' x') || s.startsWith('x ')) return 'Trending on X right now';
-    if (s.includes('google')) return 'Trending on Google right now';
-    return 'Trending right now';
-  }
-
-  // ── Feedback votes ───────────────────────────────────────────
-  const VOTE_TOKEN      = '__VOTE_TOKEN__';
-  const VOTE_REPO       = 'boymeetsblank/daily-curator';
+  // ── Vote ─────────────────────────────────────────────────────
+  const VOTE_TOKEN       = '__VOTE_TOKEN__';
+  const VOTE_REPO        = 'boymeetsblank/daily-curator';
   const VAPID_PUBLIC_KEY = '__VAPID_PUBLIC_KEY__';
-
-  let cachedRuns = null;
+  let   cachedRuns       = null;
 
   async function vote(btn, dir) {
     const btns = btn.parentElement;
     const up   = btns.querySelector(':first-child');
     const dn   = btns.querySelector(':last-child');
-    let isVoting = false;
-
+    let voting = false;
     if (dir === 'up') {
       const was = up.classList.contains('voted-up');
       up.classList.remove('voted-up'); dn.classList.remove('voted-down');
-      if (!was) { up.classList.add('voted-up');   isVoting = true; }
+      if (!was) { up.classList.add('voted-up'); voting = true; }
     } else {
       const was = dn.classList.contains('voted-down');
       up.classList.remove('voted-up'); dn.classList.remove('voted-down');
-      if (!was) { dn.classList.add('voted-down'); isVoting = true; }
+      if (!was) { dn.classList.add('voted-down'); voting = true; }
     }
-
-    if (!isVoting) return;
-
-    if (!VOTE_TOKEN) {
-      console.error('[vote] VOTE_TOKEN is empty — secret not set or injection failed');
-      return;
-    }
-
-    const ct = new Date().toLocaleString('sv-SE', {
-      timeZone: 'America/Chicago',
-      year: 'numeric', month: '2-digit', day: '2-digit',
-      hour: '2-digit', minute: '2-digit', second: '2-digit',
-      hour12: false,
-    }).replace(' ', 'T') + ' CT';
-
-    const record = {
-      timestamp: ct,
-      direction: dir,
-      title:     btns.dataset.title  || '',
-      source:    btns.dataset.source || '',
-      score:     parseInt(btns.dataset.score) || 0,
-      url:       btns.dataset.url    || null,
-    };
-
-    const apiUrl = `https://api.github.com/repos/${VOTE_REPO}/contents/votes.json`;
-    const headers = {
-      'Authorization':        `Bearer ${VOTE_TOKEN}`,
-      'Accept':               'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-    };
-
-    let sha = null, votes = [];
-    try {
-      const res = await fetch(apiUrl, { headers });
-      if (res.ok) {
-        const data = await res.json();
-        sha   = data.sha;
-        votes = JSON.parse(new TextDecoder().decode(
-          Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0))
-        ));
-      }
-    } catch (e) {
-      console.error('[vote] GET exception:', e);
-    }
-
+    if (!voting || !VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) return;
+    const ct = new Date().toLocaleString('sv-SE',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).replace(' ','T')+' CT';
+    const record = {timestamp:ct,direction:dir,title:btns.dataset.title||'',source:btns.dataset.source||'',score:parseInt(btns.dataset.score)||0,url:btns.dataset.url||null};
+    const api = `https://api.github.com/repos/${VOTE_REPO}/contents/votes.json`;
+    const hdr = {'Authorization':`Bearer ${VOTE_TOKEN}`,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+    let sha=null,votes=[];
+    try{const r=await fetch(api,{headers:hdr});if(r.ok){const d=await r.json();sha=d.sha;votes=JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(d.content.replace(/\n/g,'')),c=>c.charCodeAt(0))))}}catch{}
     votes.push(record);
-
-    const enc = new TextEncoder().encode(JSON.stringify(votes, null, 2) + '\n');
-    const binary = Array.from(enc, b => String.fromCharCode(b)).join('');
-    const body = { message: `vote: ${dir} — ${record.title.slice(0, 50)}`,
-                   content: btoa(binary), branch: 'main' };
-    if (sha) body.sha = sha;
-
-    try {
-      await fetch(apiUrl, {
-        method:  'PUT',
-        headers: { ...headers, 'Content-Type': 'application/json' },
-        body:    JSON.stringify(body),
-      });
-    } catch (e) {
-      console.error('[vote] PUT exception:', e);
-    }
+    const enc=new TextEncoder().encode(JSON.stringify(votes,null,2)+'\n');
+    const bin=Array.from(enc,b=>String.fromCharCode(b)).join('');
+    const body={message:`vote: ${dir} — ${record.title.slice(0,50)}`,content:btoa(bin),branch:'main'};
+    if(sha)body.sha=sha;
+    try{await fetch(api,{method:'PUT',headers:{...hdr,'Content-Type':'application/json'},body:JSON.stringify(body)})}catch{}
   }
 
   // ── Angle parser ─────────────────────────────────────────────
-  function parseAngle(angleStr) {
-    if (!angleStr) return null;
-    const m = angleStr.match(/^\[TRIGGER:\s*([^\]]+)\]\s*([\s\S]*)/);
-    if (m) return { trigger: m[1].trim(), text: m[2].trim() };
-    return { trigger: null, text: angleStr };
+  function parseAngle(s) {
+    if (!s) return null;
+    const m = s.match(/^\[TRIGGER:\s*([^\]]+)\]\s*([\s\S]*)/);
+    return m ? {trigger:m[1].trim(),text:m[2].trim()} : {trigger:null,text:s};
   }
 
-  // ── Render a single pick row ──────────────────────────────────
-  function renderPickRow(pick, runDisplayTime, runIsoTs) {
-    const tier       = pick.score >= 9 ? 'legendary' : pick.score >= 8 ? 'rare' : 'common';
-    const badgeClass = `badge-${tier}`;
+  // ── Date formatter  → "2026 · 04 · 07" ──────────────────────
+  function fmtDate(ctDate) {
+    if (!ctDate) return '';
+    const [y, m, d] = ctDate.split('-');
+    return `${y} · ${m} · ${d}`;
+  }
 
-    const href      = esc(pick.link || trendSearchUrl(pick));
-    const tsAttr    = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
-    const tsDisplay = runIsoTs ? timeAgo(runIsoTs) : esc(runDisplayTime);
+  // ── Render a single article row ───────────────────────────────
+  function renderRow(pick, ctDate, runIsoTs, extraClass) {
+    const href     = esc(pick.link || trendSearchUrl(pick));
+    const tsAttr   = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
+    const score    = pick.score;
+    const scoreCls = score >= 9 ? 'score-legendary' : score >= 8 ? 'score-rare' : '';
+    const scoreLabel = score >= 9 ? `${score}/10` : score >= 8 ? `${score}/10` : `${score}/10`;
 
-    const srcExtra = pick.trending_across_sources ? ' · 3+ src' : '';
-    const srcLabel = pick.link ? '' : ' · Trending';
+    const trendBadge = !pick.link
+      ? `<span class="art-trend-tag">${esc(trendPlatform(pick)||'Trending')}</span>` : '';
+    const multiSrc   = pick.trending_across_sources
+      ? `<span class="art-trend-tag" style="color:var(--accent);border-color:var(--accent)">3+ SRC</span>` : '';
 
+    // Build expand panel
     let whyHtml = '';
-    if (pick.why) {
-      whyHtml = `<p class="row-why">${esc(pick.why)}</p>`;
-    }
+    if (pick.why) whyHtml = `<p class="exp-why">${esc(pick.why)}</p>`;
 
     let angleHtml = '';
     if (pick.angle) {
-      const parsed = parseAngle(pick.angle);
-      if (parsed && parsed.text) {
-        const lines = parsed.text.split(' / ').map(l => esc(l.trim())).join('<br>');
-        const triggerBadge = parsed.trigger
-          ? `<span class="angle-trigger">${esc(parsed.trigger)}</span>` : '';
-        angleHtml = `<div class="row-angle">${triggerBadge}${lines}</div>`;
+      const pa = parseAngle(pick.angle);
+      if (pa && pa.text) {
+        const lines   = pa.text.split(' / ').map(l => esc(l.trim())).join('<br>');
+        const trigger = pa.trigger ? `<span class="angle-trigger">${esc(pa.trigger)}</span>` : '';
+        angleHtml = `<div class="exp-angle">${trigger}${lines}</div>`;
       }
     }
 
-    const expandHtml = (whyHtml || angleHtml) ? `
-      <div class="row-expand" hidden>
-        ${whyHtml}${angleHtml}
-        <div class="row-expand-footer">
-          <div class="row-vote-btns"
-               data-title="${esc(pick.title)}"
-               data-source="${esc(pick.source)}"
-               data-score="${pick.score}"
-               data-url="${esc(pick.link || '')}">
-            <button class="vote-btn" onclick="vote(this,'up'); event.stopPropagation()" title="Good pick">↑</button>
-            <button class="vote-btn" onclick="vote(this,'down'); event.stopPropagation()" title="Not for me">↓</button>
-          </div>
-          <span class="row-expand-meta">${esc(pick.source)} · ${pick.score}/10${srcExtra}${srcLabel}</span>
-        </div>
-      </div>` : '';
+    const readBtn = pick.link
+      ? `<a class="exp-read-btn" href="${href}" target="_blank" rel="noopener noreferrer"
+             onclick="markRead(this.closest('.art-row')); event.stopPropagation()">Read →</a>`
+      : `<a class="exp-read-btn" href="${href}" target="_blank" rel="noopener noreferrer"
+             onclick="event.stopPropagation()">Search →</a>`;
 
-    const clickAttr = pick.link
-      ? `onclick="markRead(this); event.stopPropagation()"`
+    const expandHtml = `
+      <div class="art-expand">
+        <div class="exp-inner">
+          <div class="exp-main-row">
+            <div class="exp-field">
+              <span class="exp-label">Summary</span>
+              ${whyHtml || '<p class="exp-why" style="color:var(--faint);font-style:italic">No summary available</p>'}
+            </div>
+            <div class="exp-field">
+              <span class="exp-label">Source</span>
+              <span class="exp-source-val">${esc(pick.source)}</span>
+            </div>
+          </div>
+          ${angleHtml ? `<div class="exp-main-row">
+            <div class="exp-field">
+              <span class="exp-label">Hook</span>
+              ${angleHtml}
+            </div>
+            <div class="exp-field">
+              <span class="exp-label">Score</span>
+              <span class="exp-score-val ${scoreCls}"${tsAttr}>${scoreLabel}</span>
+            </div>
+          </div>` : `<div style="margin-bottom:10px"><span class="exp-label">Score</span> <span class="exp-score-val ${scoreCls}" style="margin-left:8px"${tsAttr}>${scoreLabel}</span></div>`}
+          <div class="exp-footer">
+            ${readBtn}
+            <div class="vote-btns"
+                 data-title="${esc(pick.title)}"
+                 data-source="${esc(pick.source)}"
+                 data-score="${score}"
+                 data-url="${esc(pick.link||'')}">
+              <button class="vote-btn" onclick="vote(this,'up');   event.stopPropagation()" title="Good pick">↑</button>
+              <button class="vote-btn" onclick="vote(this,'down'); event.stopPropagation()" title="Not for me">↓</button>
+            </div>
+          </div>
+        </div>
+      </div>`;
+
+    const titleClick = pick.link
+      ? `onclick="markRead(this.closest('.art-row')); event.stopPropagation()"`
       : `onclick="event.stopPropagation()"`;
 
-    return `<div class="pick-row" data-score="${pick.score}" data-url="${esc(pick.link || '')}" onclick="expandRow(this)">
-      <div class="row-col-index">
-        <span class="row-score ${badgeClass}">${pick.score}</span>
+    return `<div class="art-row${extraClass||''}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}">
+      <div class="art-date">${esc(fmtDate(ctDate))}</div>
+      <div class="art-title-cell">
+        <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${titleClick}>${esc(pick.title)}</a>${trendBadge}${multiSrc}
       </div>
-      <div class="row-col-main">
-        <a class="row-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${clickAttr}>${esc(pick.title)} →</a>
-        ${expandHtml}
-      </div>
-      <div class="row-col-meta">
-        <span class="row-source-badge">${esc(pick.source)}</span>
-        <span class="row-timestamp"${tsAttr}>${tsDisplay}</span>
-      </div>
+      <button class="expand-btn" onclick="toggleExpand(this.closest('.art-row'))" aria-label="Expand">+</button>
+      ${expandHtml}
     </div>`;
   }
 
-  // ── Expand/collapse row ───────────────────────────────────────
-  function expandRow(el) {
-    const panel = el.querySelector('.row-expand');
-    if (!panel) return;
-    const isExpanded = !panel.hidden;
-    panel.hidden = isExpanded;
-    el.classList.toggle('expanded', !isExpanded);
+  // ── Toggle expand / collapse ──────────────────────────────────
+  function toggleExpand(row) {
+    if (!row) return;
+    const isOpen = row.classList.contains('expanded');
+    row.classList.toggle('expanded', !isOpen);
+    const btn = row.querySelector('.expand-btn');
+    if (btn) btn.textContent = isOpen ? '+' : '−';
   }
 
-  // ── Read state (localStorage) ────────────────────────────────
-  function getReadUrls() {
-    try { return new Set(JSON.parse(localStorage.getItem('blank_read') || '[]')); }
-    catch { return new Set(); }
-  }
+  // ── Active score filter ───────────────────────────────────────
+  let activeFilter = 'all';
 
-  function setReadUI(card) {
-    card.classList.add('read');
-  }
-
-  function ctDateStr() {
-    return new Date().toLocaleDateString('sv-SE', { timeZone: 'America/Chicago' });
-  }
-
-  function getReadStats() {
-    const today = ctDateStr();
-    let todayData = { date: '', count: 0 };
-    try { todayData = JSON.parse(localStorage.getItem('blank_read_today') || '{}'); } catch {}
-    const readToday = todayData.date === today ? (todayData.count || 0) : 0;
-
-    let total = 0;
-    try { total = parseInt(localStorage.getItem('blank_read_total') || '0', 10) || 0; } catch {}
-
-    let streakData = { lastDate: '', streak: 0 };
-    try { streakData = JSON.parse(localStorage.getItem('blank_read_streak') || '{}'); } catch {}
-    const streak = streakData.streak || 0;
-
-    return { readToday, total, streak };
-  }
-
-  function incrementReadStats() {
-    const today = ctDateStr();
-
-    let todayData = { date: '', count: 0 };
-    try { todayData = JSON.parse(localStorage.getItem('blank_read_today') || '{}'); } catch {}
-    if (todayData.date !== today) todayData = { date: today, count: 0 };
-    todayData.count++;
-    localStorage.setItem('blank_read_today', JSON.stringify(todayData));
-
-    let total = 0;
-    try { total = parseInt(localStorage.getItem('blank_read_total') || '0', 10) || 0; } catch {}
-    localStorage.setItem('blank_read_total', String(total + 1));
-
-    let streakData = { lastDate: '', streak: 0 };
-    try { streakData = JSON.parse(localStorage.getItem('blank_read_streak') || '{}'); } catch {}
-    if (streakData.lastDate !== today) {
-      const prev = new Date(today + 'T12:00:00Z');
-      prev.setUTCDate(prev.getUTCDate() - 1);
-      const yesterday = prev.toISOString().slice(0, 10);
-      if (streakData.lastDate === yesterday) {
-        streakData.streak = (streakData.streak || 0) + 1;
-      } else {
-        streakData.streak = 1;
-      }
-      streakData.lastDate = today;
-      localStorage.setItem('blank_read_streak', JSON.stringify(streakData));
-    }
-
-    updateReadStatUI();
-  }
-
-  function updateReadStatUI() {
-    const { readToday, total, streak } = getReadStats();
-    const elToday  = document.getElementById('sb-read-today');
-    const elTotal  = document.getElementById('sb-read-total');
-    const elStreak = document.getElementById('sb-read-streak');
-    if (elToday)  elToday.textContent  = readToday;
-    if (elTotal)  elTotal.textContent  = total;
-    if (elStreak) elStreak.textContent = streak;
-  }
-
-  function markRead(linkEl) {
-    const card = linkEl.closest('.pick-row') || linkEl.closest('.pick-card');
-    if (!card) return;
-    const url = linkEl.href;
-    const urls = getReadUrls();
-    if (urls.has(url)) return;
-    setReadUI(card);
-    urls.add(url);
-    localStorage.setItem('blank_read', JSON.stringify([...urls]));
-    incrementReadStats();
-    addActivity('read', 'Mo read an article');
-  }
-
-  function applyReadState() {
-    const urls = getReadUrls();
-    if (!urls.size) return;
-    document.querySelectorAll('.pick-row[data-url]').forEach(card => {
-      if (urls.has(card.dataset.url)) setReadUI(card);
+  function applyFilter(filter) {
+    activeFilter = filter;
+    document.querySelectorAll('.sb-item[data-filter]').forEach(el => {
+      el.classList.toggle('active', el.dataset.filter === filter);
+    });
+    document.querySelectorAll('.art-row[data-score]').forEach(row => {
+      let show = true;
+      if (filter === '9') show = parseInt(row.dataset.score) >= 9;
+      else if (filter === '8') show = parseInt(row.dataset.score) === 8;
+      else if (filter === '7') show = parseInt(row.dataset.score) === 7;
+      row.dataset.hidden = show ? '0' : '1';
     });
   }
 
-  // ── Pick count display ───────────────────────────────────────
-  function updateCount() {
-    // Count is shown in group headers; no separate counter element needed
+  // ── Build sidebar content ─────────────────────────────────────
+  function buildSidebar(runs) {
+    const allPicks = runs.flatMap(r => r.picks);
+    const counts   = { all:0, 9:0, 8:0, 7:0 };
+    const srcMap   = {};
+    allPicks.forEach(p => {
+      counts.all++;
+      const s = p.score;
+      if (s >= 9) counts[9]++;
+      else if (s === 8) counts[8]++;
+      else counts[7]++;
+      if (!isTrendPick(p)) srcMap[p.source] = (srcMap[p.source]||0)+1;
+    });
+
+    // Score filters
+    const filterEl = document.getElementById('sb-score-filters');
+    if (filterEl) {
+      const scoreItems = [
+        ['all', `All picks`, counts.all],
+        ['9',   `Score 9–10`,  counts[9]],
+        ['8',   `Score 8`,     counts[8]],
+        ['7',   `Score 7`,     counts[7]],
+      ];
+      filterEl.innerHTML = scoreItems.map(([f,label,cnt]) =>
+        `<button class="sb-item${f==='all'?' active':''}" data-filter="${f}" onclick="applyFilter('${f}')">
+          <span>${label}</span>
+          <span class="sb-count">(${cnt})</span>
+        </button>`
+      ).join('');
+    }
+
+    // Sources
+    const srcEl = document.getElementById('sb-sources');
+    if (srcEl) {
+      const sorted = Object.entries(srcMap).sort((a,b)=>b[1]-a[1]).slice(0,8);
+      srcEl.innerHTML = sorted.map(([src,cnt]) =>
+        `<div class="sb-item" style="cursor:default">
+          <span>${esc(src)}</span>
+          <span class="sb-count">(${cnt})</span>
+        </div>`
+      ).join('') || '<div class="sb-item" style="cursor:default;color:var(--faint)">No sources yet</div>';
+    }
+
+    // Total heading count
+    const totalEl = document.getElementById('pick-total');
+    if (totalEl) totalEl.textContent = `(${counts.all})`;
   }
 
-  // ── X Trending full list ─────────────────────────────────────
-  function trendRankClass(i) {
-    return i < 3 ? 'rank-hot' : i < 7 ? 'rank-warm' : '';
-  }
-
-  function buildTrendsModule(topics) {
-    if (!topics || !topics.length) return '';
-    const rows = topics.map((name, i) => {
-      const cls     = trendRankClass(i);
-      const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
-      const encoded = encodeURIComponent(name);
-      return `<a class="trend-item${cls ? ' ' + cls : ''}" href="https://x.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">
-        <span class="trend-item-rank">${rankStr}</span>
-        <span class="trend-item-name">${esc(name)}</span>
+  // ── Build sidebar trending list ───────────────────────────────
+  function buildSbTrends(topics) {
+    const el = document.getElementById('sb-trends');
+    if (!el || !topics?.length) return;
+    el.innerHTML = topics.slice(0, 12).map((name, i) => {
+      const enc = encodeURIComponent(name);
+      return `<a class="sb-trend" href="https://x.com/search?q=${enc}" target="_blank" rel="noopener noreferrer">
+        <span class="sb-trend-num">${String(i+1).padStart(2,'0')}</span>
+        <span class="sb-trend-name">${esc(name)}</span>
       </a>`;
     }).join('');
-    return `<div class="trends-module" id="trends-module">
-      <div class="trends-module-header">
-        <svg class="tm-x-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        <span class="trends-module-title">Now Trending</span>
-        <span id="trends-updated-at" class="trends-updated"></span>
-      </div>
-      <div class="trends-grid" id="trends-grid">${rows}</div>
-    </div>`;
+  }
+
+  // ── Build inline trends panel ─────────────────────────────────
+  function buildTrendsPanel(topics) {
+    const panel = document.getElementById('trends-panel');
+    const grid  = document.getElementById('trends-grid');
+    if (!panel || !grid || !topics?.length) return;
+
+    const half     = Math.ceil(topics.length / 2);
+    const mkCol    = (arr, offset) => arr.map((name, i) => {
+      const enc = encodeURIComponent(name);
+      return `<a class="trend-item" href="https://x.com/search?q=${enc}" target="_blank" rel="noopener noreferrer">
+        <span class="ti-num">${String(offset+i+1).padStart(2,'0')}</span>
+        <span class="ti-name">${esc(name)}</span>
+      </a>`;
+    }).join('');
+
+    grid.innerHTML = `<div>${mkCol(topics.slice(0,half),0)}</div><div>${mkCol(topics.slice(half),half)}</div>`;
+    panel.classList.add('has-trends');
+    buildSbTrends(topics);
   }
 
   // ── Main render ──────────────────────────────────────────────
   function render(runs) {
-    if (!runs || !runs.length) {
+    if (!runs?.length) {
       document.getElementById('feed-container').innerHTML = '<div class="state-msg">No picks yet.</div>';
       return;
     }
 
     cachedRuns = runs;
 
-    // Group runs by ct_date, preserving newest-first order
+    // Group by ct_date
     const dateMap = new Map();
     for (const run of runs) {
       const d = run.ct_date || run.date;
@@ -1033,84 +1093,184 @@
     let isFirst = true;
 
     for (const [date, dateRuns] of dateMap) {
-      const allPicks   = dateRuns.flatMap(r => r.picks);
-      const pickCount  = allPicks.length;
-      const latestRun  = dateRuns[0];
-      const latestIsoTs = (latestRun.date && latestRun.time)
-        ? `${latestRun.date}T${latestRun.time.slice(0,2)}:${latestRun.time.slice(2,4)}:00Z`
-        : null;
-      const metaStr    = `${pickCount} pick${pickCount !== 1 ? 's' : ''}${latestIsoTs ? ' · ' + timeAgo(latestIsoTs) : ''}`;
-      const sectionId  = isFirst ? 'group-today' : `group-${esc(date)}`;
-
-      html += `<section class="date-group" id="${sectionId}">`;
-      html += `<div class="group-header">
-        <span class="group-date-label">${esc(latestRun.display_date || date)}</span>
-        <span class="group-meta">${metaStr}</span>
-      </div>`;
-
-      // Trends module only in the latest date's section
-      if (isFirst) {
-        html += buildTrendsModule(latestRun.x_trends || []);
+      if (!isFirst) {
+        // Archive date divider
+        html += `<div style="font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding:24px 0 10px;border-bottom:1px solid var(--border)" id="section-${esc(date)}">${esc(fmtDate(date))}</div>`;
       }
 
-      html += '<div class="picks-table">';
+      if (isFirst) html = `<div id="section-today">`;
+      else          html += `<div>`;
+
       for (const run of dateRuns) {
         const runIsoTs = (run.date && run.time)
-          ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z`
-          : null;
+          ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z` : null;
         for (const pick of run.picks) {
-          html += renderPickRow(pick, run.display_time, runIsoTs);
+          html += renderRow(pick, date, runIsoTs, '');
         }
       }
-      html += '</div></section>';
 
+      html += '</div>';
       isFirst = false;
     }
 
     document.getElementById('feed-container').innerHTML = html;
     applyReadState();
-    updateCount();
+    buildSidebar(runs);
+
+    // Trends panel
+    const latestDate = runs[0].ct_date || runs[0].date;
+    const latestRun  = runs.find(r => (r.ct_date||r.date) === latestDate);
+    buildTrendsPanel(latestRun?.x_trends || []);
   }
 
-  // ── Wire nav buttons ─────────────────────────────────────────
-  function setActiveTab(activeId) {
-    ['btn-today', 'btn-archive', 'btn-trends'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.classList.toggle('active', id === activeId);
+  // ── Read state ───────────────────────────────────────────────
+  function getReadUrls() {
+    try { return new Set(JSON.parse(localStorage.getItem('blank_read')||'[]')); }
+    catch { return new Set(); }
+  }
+
+  function setReadUI(row) { if (row) row.classList.add('read'); }
+
+  function ctDateStr() {
+    return new Date().toLocaleDateString('sv-SE', { timeZone:'America/Chicago' });
+  }
+
+  function getReadStats() {
+    const today = ctDateStr();
+    let td={date:'',count:0}; try{td=JSON.parse(localStorage.getItem('blank_read_today')||'{}')}catch{}
+    const readToday = td.date===today ? (td.count||0) : 0;
+    let total=0; try{total=parseInt(localStorage.getItem('blank_read_total')||'0',10)||0}catch{}
+    return { readToday, total };
+  }
+
+  function incrementReadStats() {
+    const today = ctDateStr();
+    let td={date:'',count:0}; try{td=JSON.parse(localStorage.getItem('blank_read_today')||'{}')}catch{}
+    if(td.date!==today) td={date:today,count:0};
+    td.count++; localStorage.setItem('blank_read_today',JSON.stringify(td));
+    let total=0; try{total=parseInt(localStorage.getItem('blank_read_total')||'0',10)||0}catch{}
+    localStorage.setItem('blank_read_total',String(total+1));
+  }
+
+  function markRead(row) {
+    if (!row) return;
+    const link = row.querySelector('.art-title-link');
+    const url  = link ? link.href : '';
+    if (!url) return;
+    const urls = getReadUrls();
+    if (urls.has(url)) return;
+    setReadUI(row);
+    urls.add(url);
+    localStorage.setItem('blank_read', JSON.stringify([...urls]));
+    incrementReadStats();
+  }
+
+  function applyReadState() {
+    const urls = getReadUrls();
+    if (!urls.size) return;
+    document.querySelectorAll('.art-row').forEach(row => {
+      const link = row.querySelector('.art-title-link');
+      if (link && urls.has(link.href)) setReadUI(row);
     });
   }
 
-  function wireButtons() {
-    document.getElementById('btn-today')?.addEventListener('click', () => {
-      document.getElementById('group-today')?.scrollIntoView({ behavior: 'smooth' });
-      setActiveTab('btn-today');
-    });
-
-    document.getElementById('btn-archive')?.addEventListener('click', () => {
-      const groups = document.querySelectorAll('.date-group');
-      if (groups.length > 1) groups[1].scrollIntoView({ behavior: 'smooth' });
-      setActiveTab('btn-archive');
-    });
-
-    document.getElementById('btn-trends')?.addEventListener('click', () => {
-      document.getElementById('trends-module')?.scrollIntoView({ behavior: 'smooth' });
-      setActiveTab('btn-trends');
+  // ── Scroll helpers ───────────────────────────────────────────
+  function setTbActive(id) {
+    ['tb-today','tb-archive','tb-trends'].forEach(i => {
+      const el = document.getElementById(i);
+      if (el) el.classList.toggle('active', i === id);
     });
   }
 
-  // ── Sticky header height ─────────────────────────────────────
-  function positionSticky() {
-    const header = document.getElementById('site-header');
-    if (!header) return;
-    const h = header.offsetHeight;
-    document.documentElement.style.setProperty('--header-h', h + 'px');
+  function scrollToToday()   { document.getElementById('section-today')?.scrollIntoView({behavior:'smooth'}); setTbActive('tb-today'); }
+  function scrollToArchive() {
+    const secs = document.querySelectorAll('[id^="section-"]');
+    if (secs.length > 1) secs[1].scrollIntoView({behavior:'smooth'});
+    setTbActive('tb-archive');
+  }
+  function scrollToTrends()  { document.getElementById('trends-module')?.scrollIntoView({behavior:'smooth'}); setTbActive('tb-trends'); }
+
+  // ── Time ago ─────────────────────────────────────────────────
+  function timeAgo(iso) {
+    if (!iso) return '';
+    const d = Math.floor((Date.now()-new Date(iso).getTime())/1000);
+    if (d<45)    return 'just now';
+    if (d<3600)  return `${Math.floor(d/60)}m ago`;
+    if (d<86400) return `${Math.floor(d/3600)}h ago`;
+    return `${Math.floor(d/86400)}d ago`;
   }
 
-  // ── Countdown timer ──────────────────────────────────────────
-  const RUN_TIMES_CT   = [[8, 30], [13, 30], [19, 30]];
-  const CT_HM_FORMAT   = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'America/Chicago', hour: '2-digit', minute: '2-digit', hour12: false
-  });
+  function refreshTimestamps() {
+    document.querySelectorAll('[data-run-ts]').forEach(el => {
+      el.textContent = timeAgo(el.dataset.runTs) || el.textContent;
+    });
+  }
+
+  let trendsUpdatedAt = null;
+  function updateTrendsTs() {
+    const el = document.getElementById('tp-updated');
+    if (!el || !trendsUpdatedAt) return;
+    el.textContent = `updated ${timeAgo(trendsUpdatedAt.toISOString())}`;
+    el.classList.add('visible');
+  }
+
+  function tick() { refreshTimestamps(); updateTrendsTs(); }
+
+  // ── Progress bar ─────────────────────────────────────────────
+  function initProgressBar() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? Math.min(100,(window.scrollY/h)*100) : 100)+'%';
+    }, {passive:true});
+  }
+
+  // ── New picks banner ──────────────────────────────────────────
+  let picksFingerprint=null, bannerDismissed=false;
+
+  function dismissBanner() {
+    bannerDismissed = true;
+    document.getElementById('new-picks-banner').style.display='none';
+  }
+
+  async function checkForNewPicksAndTrends() {
+    try {
+      const res  = await fetch('picks_data.json?_='+Date.now(), {cache:'no-store'});
+      if (!res.ok) return;
+      const data = await res.json();
+      if (!data.runs?.length) return;
+
+      const latest = data.runs[0];
+      const fp     = (latest.date||'')+(latest.time||'');
+      if (!picksFingerprint) { picksFingerprint = fp; }
+      else if (fp !== picksFingerprint && !bannerDismissed) {
+        picksFingerprint = fp;
+        document.getElementById('new-picks-banner').style.display = 'block';
+      }
+
+      // Update trends
+      const latestDate = latest.ct_date||latest.date;
+      const latestRun  = data.runs.find(r=>(r.ct_date||r.date)===latestDate);
+      const topics     = latestRun?.x_trends||[];
+      const grid       = document.getElementById('trends-grid');
+      if (grid && topics.length) {
+        const half  = Math.ceil(topics.length/2);
+        const mkCol = (arr,off) => arr.map((n,i)=>{
+          const enc=encodeURIComponent(n);
+          return `<a class="trend-item" href="https://x.com/search?q=${enc}" target="_blank" rel="noopener noreferrer">
+            <span class="ti-num">${String(off+i+1).padStart(2,'0')}</span>
+            <span class="ti-name">${esc(n)}</span>
+          </a>`;
+        }).join('');
+        grid.innerHTML = `<div>${mkCol(topics.slice(0,half),0)}</div><div>${mkCol(topics.slice(half),half)}</div>`;
+        trendsUpdatedAt = new Date(); updateTrendsTs();
+        buildSbTrends(topics);
+      }
+    } catch {}
+  }
+
+  // ── Load ─────────────────────────────────────────────────────
   let lastRunTime = null;
 
   function parseRunTime(run) {
@@ -1118,409 +1278,139 @@
     return new Date(`${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z`);
   }
 
-  function getNextRunMs() {
-    const now   = new Date();
-    const parts = CT_HM_FORMAT.formatToParts(now);
-    const ctH   = parseInt(parts.find(p => p.type === 'hour').value);
-    const ctM   = parseInt(parts.find(p => p.type === 'minute').value);
-    const nowCtMin = ctH * 60 + ctM;
-    let minDelta = Infinity;
-    for (const [h, m] of RUN_TIMES_CT) {
-      let delta = h * 60 + m - nowCtMin;
-      if (delta <= 0) delta += 24 * 60;
-      minDelta = Math.min(minDelta, delta);
-    }
-    return minDelta * 60 * 1000;
-  }
-
-  function fmtNext(ms) {
-    if (ms <= 0) return 'updating now';
-    const m = Math.ceil(ms / 60000), h = Math.floor(m / 60);
-    return h > 0 ? `Next in ${h}h ${m % 60}m` : `Next in ${m}m`;
-  }
-
-  function fmtLast(ms) {
-    const m = Math.floor(ms / 60000);
-    if (m < 1)  return 'Updated just now';
-    if (m < 60) return `Updated ${m}m ago`;
-    const h = Math.floor(m / 60), rm = m % 60;
-    return rm > 0 ? `Updated ${h}h ${rm}m ago` : `Updated ${h}h ago`;
-  }
-
-  function tickCountdown() {
-    refreshTimestamps();
-    updateTrendsTimestamp();
-    refreshActivityTimes();
-  }
-
-  // ── Time ago ─────────────────────────────────────────────────
-  function timeAgo(isoTs) {
-    if (!isoTs) return '';
-    const diff = Math.floor((Date.now() - new Date(isoTs).getTime()) / 1000);
-    if (diff < 45)   return 'just now';
-    if (diff < 90)   return '1 min ago';
-    if (diff < 3600) return `${Math.floor(diff / 60)} mins ago`;
-    if (diff < 7200) return '1 hour ago';
-    if (diff < 86400) return `${Math.floor(diff / 3600)} hours ago`;
-    return `${Math.floor(diff / 86400)} days ago`;
-  }
-
-  // ── Live timestamp refresh ────────────────────────────────────
-  function refreshTimestamps() {
-    document.querySelectorAll('.row-timestamp[data-run-ts]').forEach(el => {
-      const ts = el.dataset.runTs;
-      if (ts) el.textContent = timeAgo(ts);
-    });
-  }
-
-  // ── Reading progress bar ──────────────────────────────────────
-  function initProgressBar() {
-    const bar = document.getElementById('progress-bar');
-    if (!bar) return;
-    function update() {
-      const total = document.documentElement.scrollHeight;
-      const pct = total > window.innerHeight
-        ? Math.min(100, (window.scrollY / (total - window.innerHeight)) * 100)
-        : 100;
-      bar.style.width = pct + '%';
-    }
-    window.addEventListener('scroll', update, { passive: true });
-  }
-
-  // ── Activity feed ─────────────────────────────────────────────
-  const MAX_ACTIVITY = 20;
-
-  function getActivity() {
-    try { return JSON.parse(localStorage.getItem('blank_activity') || '[]'); } catch { return []; }
-  }
-
-  function addActivity(type, text) {
-    const events = getActivity();
-    events.unshift({ type, text, ts: Date.now() });
-    if (events.length > MAX_ACTIVITY) events.length = MAX_ACTIVITY;
-    localStorage.setItem('blank_activity', JSON.stringify(events));
-    renderActivitySection();
-  }
-
-  function renderActivitySection() {
-    const el = document.getElementById('sb-activity');
-    if (!el) return;
-    const events = getActivity();
-    if (!events.length) { el.innerHTML = ''; return; }
-    el.innerHTML = events.slice(0, 8).map(e => `
-      <div class="activity-item">
-        <span class="activity-text">${esc(e.text)}</span>
-        <span class="activity-time" data-ts="${e.ts}">${timeAgo(new Date(e.ts).toISOString())}</span>
-      </div>`).join('');
-  }
-
-  function refreshActivityTimes() {
-    document.querySelectorAll('#sb-activity .activity-time[data-ts]').forEach(el => {
-      const ts = parseInt(el.dataset.ts, 10);
-      if (ts) el.textContent = timeAgo(new Date(ts).toISOString());
-    });
-  }
-
-  // ── New picks banner ──────────────────────────────────────────
-  let picksFingerprint = null;
-  let bannerDismissed  = false;
-
-  function dismissBanner() {
-    bannerDismissed = true;
-    const banner = document.getElementById('new-picks-banner');
-    if (banner) banner.style.display = 'none';
-  }
-
-  async function checkForNewPicksAndTrends() {
-    try {
-      const res  = await fetch('picks_data.json?_=' + Date.now(), { cache: 'no-store' });
-      if (!res.ok) return;
-      const data = await res.json();
-      if (!data.runs?.length) return;
-
-      const latest      = data.runs[0];
-      const fingerprint = (latest.date || '') + (latest.time || '');
-      if (!picksFingerprint) {
-        picksFingerprint = fingerprint;
-      } else if (fingerprint !== picksFingerprint && !bannerDismissed) {
-        picksFingerprint = fingerprint;
-        const banner = document.getElementById('new-picks-banner');
-        if (banner) { banner.style.display = 'block'; }
-        const timeStr = new Date().toLocaleTimeString('en-US', {
-          hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'America/Chicago'
-        });
-        addActivity('drop', `New picks dropped at ${timeStr}`);
-      }
-
-      // Trends refresh
-      const latestDate = latest.ct_date || latest.date;
-      const latestRun  = data.runs.find(r => (r.ct_date || r.date) === latestDate);
-      const topics = latestRun?.x_trends || [];
-      const grid   = document.getElementById('trends-grid');
-      if (grid && topics.length) {
-        grid.innerHTML = topics.map((name, i) => {
-          const cls     = trendRankClass(i);
-          const rankStr = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
-          const encoded = encodeURIComponent(name);
-          return `<a class="trend-item${cls ? ' ' + cls : ''}" href="https://x.com/search?q=${encoded}" target="_blank" rel="noopener noreferrer">
-            <span class="trend-item-rank">${rankStr}</span>
-            <span class="trend-item-name">${esc(name)}</span>
-          </a>`;
-        }).join('');
-        trendsUpdatedAt = new Date();
-        updateTrendsTimestamp();
-      }
-    } catch {}
-  }
-
-  // ── Trends updated indicator ──────────────────────────────────
-  let trendsUpdatedAt = null;
-
-  function updateTrendsTimestamp() {
-    const el = document.getElementById('trends-updated-at');
-    if (!el || !trendsUpdatedAt) return;
-    el.textContent = `updated ${timeAgo(trendsUpdatedAt.toISOString())}`;
-    el.classList.add('visible');
-  }
-
-  // ── Bootstrap ────────────────────────────────────────────────
   async function loadFeed() {
     try {
       const res  = await fetch('picks_data.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       if (data.runs?.length) {
-        lastRunTime  = parseRunTime(data.runs[0]);
-        const latest = data.runs[0];
-        picksFingerprint = (latest.date || '') + (latest.time || '');
-        trendsUpdatedAt  = lastRunTime || new Date();
+        lastRunTime      = parseRunTime(data.runs[0]);
+        picksFingerprint = (data.runs[0].date||'')+(data.runs[0].time||'');
+        trendsUpdatedAt  = lastRunTime||new Date();
       }
       render(data.runs);
-      wireButtons();
-      tickCountdown();
-      positionSticky();
-      updateTrendsTimestamp();
-
-      if (data.runs?.length) {
-        const latest   = data.runs[0];
-        const existing = getActivity();
-        const recentDrop = existing[0]?.type === 'drop' &&
-          (Date.now() - (existing[0]?.ts || 0)) < 5 * 60 * 1000;
-        if (!recentDrop) {
-          const timeStr = (latest.display_time || '').trim();
-          addActivity('drop', timeStr ? `Latest picks: ${timeStr}` : 'Picks loaded');
-        } else {
-          renderActivitySection();
-        }
-      }
+      tick();
+      updateTrendsTs();
     } catch {
       document.getElementById('feed-container').innerHTML =
-        `<div class="state-msg">Could not load picks.<br>
-        <small style="font-family:var(--sans);font-size:11px">If testing locally, serve with a web server.</small></div>`;
+        `<div class="state-msg">Could not load picks.<br><small style="font-size:11px">Serve with a web server for local testing.</small></div>`;
     }
   }
 
-  positionSticky();
-  window.addEventListener('resize', positionSticky);
   initProgressBar();
   loadFeed();
-  tickCountdown();
-  setInterval(tickCountdown, 60_000);
-  setInterval(checkForNewPicksAndTrends, 5 * 60_000);
-
-  applyTheme(localStorage.getItem('blank_theme') || 'light');
+  setInterval(tick, 60_000);
+  setInterval(checkForNewPicksAndTrends, 5*60_000);
+  applyTheme(localStorage.getItem('blank_theme')||'light');
   initNotifBtn();
   ensurePushSubscription();
 
-  // ── Service Worker ────────────────────────────────────────────
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(() => {});
-  }
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
 
-  // ── Breaking news: render rows ───────────────────────────────
+  // ── Breaking news ─────────────────────────────────────────────
   function renderBreakingCard(item) {
-    const searchUrl = esc(item.search_url || `https://www.google.com/search?q=${encodeURIComponent(item.topic)}`);
-    const traffic   = item.traffic ? `${esc(item.traffic)} searches` : '';
-    const detected  = item.detected_at ? timeAgo(item.detected_at) : '';
-
-    return `<div class="breaking-row" data-breaking-id="${esc(item.id)}">
-      <div class="row-col-index">
-        <span class="breaking-badge">!</span>
+    const url = esc(item.search_url||`https://www.google.com/search?q=${encodeURIComponent(item.topic)}`);
+    const det = item.detected_at ? timeAgo(item.detected_at) : '';
+    return `<div class="breaking-art-row">
+      <div class="art-date" style="color:var(--red)">${det}</div>
+      <div class="art-title-cell">
+        <a class="art-title-link" href="${url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${esc(item.topic)}</a>
+        <span class="art-trend-tag" style="color:var(--red);border-color:rgba(220,38,38,0.3)">Breaking</span>
       </div>
-      <div class="row-col-main">
-        <a class="row-title-link" href="${searchUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
-          ${esc(item.topic)} →
-        </a>
-        <div class="row-expand" hidden>
-          <p class="row-why">Velocity spike detected — newly trending in the US${traffic ? '. ' + traffic + '.' : ''}</p>
-          <div class="row-expand-footer">
-            <span class="row-expand-meta">BREAKING NEWS</span>
+      <button class="expand-btn" onclick="toggleExpand(this.closest('.breaking-art-row'))">+</button>
+      <div class="art-expand">
+        <div class="exp-inner">
+          <div class="exp-main-row">
+            <div class="exp-field">
+              <span class="exp-label">Summary</span>
+              <p class="exp-why">Velocity spike detected — newly trending in the US${item.traffic?'. '+esc(item.traffic)+' searches.':''}</p>
+            </div>
+          </div>
+          <div class="exp-footer">
+            <a class="exp-read-btn" href="${url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Search Google →</a>
           </div>
         </div>
-      </div>
-      <div class="row-col-meta">
-        <span class="row-source-badge">Breaking</span>
-        <span class="row-timestamp">${detected}</span>
       </div>
     </div>`;
   }
 
   function renderBreakingSection(items) {
-    if (!items || !items.length) return;
-    const container = document.getElementById('feed-container');
-    if (!container) return;
-
-    let existing = document.getElementById('breaking-section');
-    if (!existing) {
-      existing = document.createElement('div');
-      existing.id = 'breaking-section';
-      container.prepend(existing);
-    }
-
-    existing.innerHTML = `<div class="breaking-section-label">Breaking now</div>` +
-      items.map(item => {
-        const card = renderBreakingCard(item);
-        // Wrap each breaking row so expandRow() can be triggered
-        return `<div onclick="expandRow(this.querySelector('.breaking-row'))" style="cursor:pointer">${card}</div>`;
-      }).join('');
+    if (!items?.length) return;
+    const c = document.getElementById('breaking-section');
+    if (!c) return;
+    c.innerHTML = `<div class="breaking-label-row">Breaking now</div>`+items.map(renderBreakingCard).join('');
   }
 
-  // ── Breaking news: polling ───────────────────────────────────
   let lastBreakingId = null;
-
   async function checkBreakingNews() {
     try {
-      const res = await fetch('breaking_news.json?_=' + Date.now(), { cache: 'no-store' });
+      const res = await fetch('breaking_news.json?_='+Date.now(),{cache:'no-store'});
       if (!res.ok) return;
-      const data = await res.json();
-      const items = data.items || [];
+      const {items=[]} = await res.json();
       if (!items.length) return;
-
-      const latestId = items[0].id;
-      if (latestId !== lastBreakingId && lastBreakingId !== null) {
-        showBreakingNotification(items[0]);
-        addActivity('drop', `⚡ Breaking: ${items[0].topic}`);
-      }
-      lastBreakingId = latestId;
+      if (items[0].id!==lastBreakingId && lastBreakingId!==null) showBreakingNotif(items[0]);
+      lastBreakingId = items[0].id;
       renderBreakingSection(items);
     } catch {}
   }
 
-  // ── Push notifications ───────────────────────────────────────
-  async function showBreakingNotification(item) {
-    if (!('Notification' in window)) return;
-    if (Notification.permission !== 'granted') return;
-    const opts = {
-      body: `${item.traffic ? item.traffic + ' searches · ' : ''}Velocity spike detected`,
-      tag:       'breaking-news',
-      renotify:  true,
-      icon:      'icon-192.png',
-    };
+  async function showBreakingNotif(item) {
+    if (!('Notification' in window)||Notification.permission!=='granted') return;
     try {
-      if ('serviceWorker' in navigator) {
-        const reg = await navigator.serviceWorker.ready;
-        reg.showNotification(`⚡ ${item.topic}`, opts);
-      } else {
-        new Notification(`⚡ ${item.topic}`, opts);
-      }
+      const reg=await navigator.serviceWorker?.ready;
+      if(reg) reg.showNotification(`⚡ ${item.topic}`,{body:'Velocity spike detected',tag:'breaking',renotify:true});
     } catch {}
   }
 
   function initNotifBtn() {
-    const btn = document.getElementById('notif-btn');
-    if (!btn) return;
-    if (!('Notification' in window)) { btn.style.display = 'none'; return; }
-    if (Notification.permission === 'granted') {
-      btn.textContent = '🔔'; btn.title = 'Notifications enabled';
-    } else if (Notification.permission === 'denied') {
-      btn.textContent = '🔕'; btn.title = 'Notifications blocked';
-    } else {
-      btn.textContent = '🔔'; btn.title = 'Enable breaking news notifications';
-    }
+    const b=document.getElementById('notif-btn');
+    if(!b) return;
+    if(!('Notification' in window)){b.style.display='none';return;}
+    b.textContent=Notification.permission==='denied'?'🔕':'🔔';
+    b.title=Notification.permission==='granted'?'Notifications enabled':Notification.permission==='denied'?'Notifications blocked':'Enable breaking news notifications';
   }
 
-  // ── Web Push helpers ─────────────────────────────────────────
-  function urlBase64ToUint8Array(b64) {
-    const padding = '='.repeat((4 - b64.length % 4) % 4);
-    const base64  = (b64 + padding).replace(/-/g, '+').replace(/_/g, '/');
-    const raw     = atob(base64);
-    const out     = new Uint8Array(raw.length);
-    for (let i = 0; i < raw.length; i++) out[i] = raw.charCodeAt(i);
-    return out;
-  }
+  function urlBase64ToUint8Array(b64){const p='='.repeat((4-b64.length%4)%4);const r=atob((b64+p).replace(/-/g,'+').replace(/_/g,'/'));return Uint8Array.from(r,c=>c.charCodeAt(0));}
 
-  async function saveSubscription(sub) {
-    if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) return;
-    const apiUrl  = `https://api.github.com/repos/${VOTE_REPO}/contents/subscriptions.json`;
-    const headers = {
-      'Authorization':        `Bearer ${VOTE_TOKEN}`,
-      'Accept':               'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-    };
-    let sha = null, subs = [];
-    try {
-      const res = await fetch(apiUrl, { headers });
-      if (res.ok) {
-        const data = await res.json();
-        sha  = data.sha;
-        subs = JSON.parse(new TextDecoder().decode(
-          Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0))
-        ));
-      }
-    } catch {}
-    if (subs.some(s => s.endpoint === sub.endpoint)) return;
+  async function saveSubscription(sub){
+    if(!VOTE_TOKEN||VOTE_TOKEN.startsWith('__')) return;
+    const api=`https://api.github.com/repos/${VOTE_REPO}/contents/subscriptions.json`;
+    const hdr={'Authorization':`Bearer ${VOTE_TOKEN}`,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+    let sha=null,subs=[];
+    try{const r=await fetch(api,{headers:hdr});if(r.ok){const d=await r.json();sha=d.sha;subs=JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(d.content.replace(/\n/g,'')),c=>c.charCodeAt(0))))}}catch{}
+    if(subs.some(s=>s.endpoint===sub.endpoint))return;
     subs.push(sub);
-    const enc    = new TextEncoder().encode(JSON.stringify(subs, null, 2) + '\n');
-    const binary = Array.from(enc, b => String.fromCharCode(b)).join('');
-    const body   = { message: 'Add push subscription', content: btoa(binary), branch: 'main' };
-    if (sha) body.sha = sha;
-    try {
-      await fetch(apiUrl, {
-        method: 'PUT',
-        headers: { ...headers, 'Content-Type': 'application/json' },
-        body: JSON.stringify(body),
-      });
-    } catch {}
+    const enc=new TextEncoder().encode(JSON.stringify(subs,null,2)+'\n');
+    const bin=Array.from(enc,b=>String.fromCharCode(b)).join('');
+    const body={message:'Add push subscription',content:btoa(bin),branch:'main'};
+    if(sha)body.sha=sha;
+    try{await fetch(api,{method:'PUT',headers:{...hdr,'Content-Type':'application/json'},body:JSON.stringify(body)})}catch{}
   }
 
-  async function subscribeToPush() {
-    if (!('serviceWorker' in navigator) || !('PushManager' in window)) return;
-    if (!VAPID_PUBLIC_KEY || VAPID_PUBLIC_KEY.startsWith('__')) return;
-    const reg = await navigator.serviceWorker.ready;
-    let sub = await reg.pushManager.getSubscription();
-    if (!sub) {
-      sub = await reg.pushManager.subscribe({
-        userVisibleOnly:      true,
-        applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
-      });
-    }
+  async function subscribeToPush(){
+    if(!('serviceWorker'in navigator)||!('PushManager'in window))return;
+    if(!VAPID_PUBLIC_KEY||VAPID_PUBLIC_KEY.startsWith('__'))return;
+    const reg=await navigator.serviceWorker.ready;
+    let sub=await reg.pushManager.getSubscription();
+    if(!sub)sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:urlBase64ToUint8Array(VAPID_PUBLIC_KEY)});
     await saveSubscription(sub.toJSON());
   }
 
-  async function ensurePushSubscription() {
-    if (!('Notification' in window)) return;
-    if (Notification.permission !== 'granted') return;
-    try { await subscribeToPush(); } catch {}
+  async function ensurePushSubscription(){
+    if(!('Notification'in window)||Notification.permission!=='granted')return;
+    try{await subscribeToPush()}catch{}
   }
 
-  async function enableNotifications() {
-    if (!('Notification' in window)) {
-      alert('This browser does not support notifications.');
-      return;
-    }
-    const perm = await Notification.requestPermission();
-    const btn  = document.getElementById('notif-btn');
-    if (perm === 'granted') {
-      if (btn) { btn.textContent = '🔔'; btn.title = 'Notifications enabled'; }
-      try { await subscribeToPush(); } catch {}
-    } else {
-      if (btn) { btn.textContent = '🔕'; btn.title = 'Notifications blocked'; }
-    }
+  async function enableNotifications(){
+    if(!('Notification'in window)){alert('Notifications not supported.');return;}
+    const perm=await Notification.requestPermission();
+    const b=document.getElementById('notif-btn');
+    if(perm==='granted'){if(b){b.textContent='🔔';b.title='Notifications enabled';}try{await subscribeToPush()}catch{}}
+    else{if(b){b.textContent='🔕';b.title='Notifications blocked';}}
   }
 
-  // Poll breaking news every 2 minutes
   checkBreakingNews();
-  setInterval(checkBreakingNews, 2 * 60_000);
+  setInterval(checkBreakingNews, 2*60_000);
 </script>
 </body>
 </html>

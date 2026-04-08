@@ -4,6 +4,22 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-07] Stripe Dev Blog-style redesign v2 — true clone with expand/collapse
+
+Rebuilt index.html to faithfully replicate the Stripe Dev Blog layout:
+- Two-column layout: left sidebar (/ Scores filter + / Sources + / Trending) and right article list
+- Thin topbar with brand + nav links (Today / Archive / Trends) + action buttons
+- Large "Blank" page heading with total pick count as inline superscript
+- "/ Date" and "/ Title" column headers in Stripe's slash-prefix style
+- Date formatted as "YYYY · MM · DD" with middle-dot separators, shown per row
+- Clean collapsed rows: date | title | "+" circle expand button on far right
+- Expanded rows: Summary + Source (right), Hook + Score (right), footer with Read → and vote buttons
+- Carousel angle trigger shown as lime accent badge inside the expanded Hook field
+- Score filter sidebar: All / Score 9–10 / Score 8 / Score 7 with pick counts
+- Sources breakdown sidebar with per-source counts
+- X Trending in sidebar + inline panel above the article list
+- Dark mode, breaking news, push notifications all preserved
+
 ## [2026-04-07] Stripe Dev Blog-style redesign of web feed
 
 Complete visual redesign of `index.html` to match Stripe Dev Blog aesthetic:
