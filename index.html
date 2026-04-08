@@ -9,48 +9,47 @@
   <meta property="og:description" content="Intentionally finite. Culturally relevant.">
   <meta property="og:type" content="website">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1c1917">
+  <meta name="theme-color" content="#E8E8E8">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <style>
+    @font-face {
+      font-family: 'sohne-var';
+      src: url('/fonts/Sohne.woff2') format('woff2-variations');
+      font-weight: 1 10000;
+      font-display: swap;
+    }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:       #fafaf8;
-      --surface:  #ffffff;
-      --ink:      #1c1917;
-      --ink-2:    #44403c;
-      --ink-3:    #78716c;
-      --ink-4:    #a8a29e;
-      --border:   rgba(0,0,0,0.07);
-      --border-s: rgba(0,0,0,0.05);
-      --amber:    #d97706;
-      --serif:    Georgia, 'Times New Roman', serif;
-      --sans:     -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-      --mono:     'SF Mono', 'JetBrains Mono', Menlo, Consolas, 'Courier New', monospace;
-      --badge-bg: #1c1917;
-      --badge-fg: #ffffff;
+      --bg:        #E8E8E8;
+      --surface:   #FFFFFF;
+      --ink:       #1E1E1E;
+      --ink-2:     #333333;
+      --ink-3:     #555555;
+      --ink-4:     #888888;
+      --border:    rgba(0,0,0,0.10);
+      --border-s:  rgba(0,0,0,0.06);
+      --accent:    #C4E817;
+      --sans:      'sohne-var', 'Helvetica Neue', Arial, sans-serif;
+      --header-h:  52px;
     }
 
     [data-theme="dark"] {
-      --bg:       #0f0e0d;
-      --surface:  #1c1917;
-      --ink:      #fafaf8;
-      --ink-2:    #d6d3d1;
-      --ink-3:    #a8a29e;
-      --ink-4:    #78716c;
-      --border:   rgba(255,255,255,0.08);
-      --border-s: rgba(255,255,255,0.05);
-      --badge-bg: #e7e5e4;
-      --badge-fg: #1c1917;
+      --bg:        #111111;
+      --surface:   #1A1A1A;
+      --ink:       #F0F0F0;
+      --ink-2:     #CCCCCC;
+      --ink-3:     #999999;
+      --ink-4:     #555555;
+      --border:    rgba(255,255,255,0.09);
+      --border-s:  rgba(255,255,255,0.05);
+      --accent:    #C4E817;
       color-scheme: dark;
     }
 
-    [data-theme="dark"] .card-image-wrap        { background: #292524; }
-    [data-theme="dark"] .card-image-wrap::after { background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.2)); }
-    [data-theme="dark"] .run-meta-sep           { color: rgba(255,255,255,0.15); }
-    [data-theme="dark"] .pill-btn               { border-color: rgba(255,255,255,0.12); }
-    [data-theme="dark"] .pill-btn:hover         { border-color: rgba(255,255,255,0.25); }
+    ::selection { background: #C4E817; color: #1E1E1E; }
 
     body {
       font-family: var(--sans);
@@ -64,596 +63,340 @@
     /* ─────────────────────────────────────────
        HEADER
     ───────────────────────────────────────── */
-    header {
+    #site-header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: var(--surface);
+      background: var(--bg);
       border-bottom: 1px solid var(--border);
-      padding: 14px 24px;
+      height: var(--header-h, 52px);
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
     }
 
     .header-inner {
-      max-width: 700px;
+      max-width: 860px;
       margin: 0 auto;
+      width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 16px;
+      gap: 0;
     }
 
-    .brand-block { display: flex; flex-direction: column; gap: 5px; }
-
-    .brand {
+    .wordmark {
       font-family: var(--sans);
-      font-size: 13px;
-      font-weight: 400;
-      letter-spacing: 0.22em;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
       text-transform: uppercase;
       color: var(--ink);
+      flex-shrink: 0;
+      margin-right: 24px;
+      line-height: 1;
+      user-select: none;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+
+    .nav-tab {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 0 14px;
+      height: var(--header-h, 52px);
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--ink-4);
+      cursor: pointer;
+      transition: color 0.12s, border-color 0.12s;
+      white-space: nowrap;
       line-height: 1;
     }
 
-    .tagline {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 10.5px;
-      color: var(--ink-4);
-      letter-spacing: 0.01em;
-    }
+    .nav-tab:hover  { color: var(--ink); }
+    .nav-tab.active { color: var(--ink); border-bottom-color: var(--ink); }
 
     .header-actions {
       display: flex;
       align-items: center;
       gap: 6px;
       flex-shrink: 0;
+      margin-left: auto;
     }
 
-    /* ─────────────────────────────────────────
-       PILL BUTTONS
-    ───────────────────────────────────────── */
-    .pill-btn {
+    .header-btn {
       font-family: var(--sans);
-      font-size: 12px;
-      font-weight: 500;
-      padding: 5px 14px;
-      border-radius: 100px;
-      border: 1px solid rgba(0,0,0,0.12);
+      font-size: 13px;
+      padding: 4px 10px;
       background: transparent;
-      color: var(--ink-3);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--ink-4);
       cursor: pointer;
       transition: background 0.12s, color 0.12s, border-color 0.12s;
-      line-height: 1.4;
-      white-space: nowrap;
+      line-height: 1.5;
     }
 
-    .pill-btn:hover  { background: var(--bg); color: var(--ink); border-color: rgba(0,0,0,0.22); }
-    .pill-btn.active { background: var(--badge-bg); color: var(--badge-fg); border-color: var(--badge-bg); }
-
-    .theme-toggle { padding: 5px 10px; font-size: 14px; }
-
-
-    /* ─────────────────────────────────────────
-       FILTER BAR
-    ───────────────────────────────────────── */
-    .filter-bar {
-      position: sticky;
-      z-index: 90;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 8px 24px;
-      top: 93px; /* CSS fallback */
-    }
-
-    .filter-bar-inner {
-      max-width: 700px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .filter-date {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--ink);
-      flex-shrink: 0;
-    }
-
-    .filter-right {
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      flex-shrink: 0;
-    }
-
-    .filter-count { font-size: 11px; color: var(--ink-4); }
-
-    .run-meta {
-      font-size: 10.5px;
-      color: var(--ink-4);
-      font-variant-numeric: tabular-nums;
-      white-space: nowrap;
-    }
-
-    .run-meta-sep { font-size: 11px; color: rgba(0,0,0,0.15); }
-
-    .mobile-timer-row {
-      display: none;
-      font-size: 10.5px;
-      color: var(--ink-4);
-      padding: 4px 0 1px;
-    }
+    .header-btn:hover { background: var(--surface); color: var(--ink); border-color: rgba(0,0,0,0.18); }
+    [data-theme="dark"] .header-btn:hover { border-color: rgba(255,255,255,0.2); }
 
     /* ─────────────────────────────────────────
        PAGE LAYOUT
     ───────────────────────────────────────── */
     .page-wrapper {
-      max-width: 700px;
+      max-width: 860px;
       margin: 0 auto;
-      padding: 28px 24px 100px;
+      padding: 0 24px 100px;
     }
 
     /* ─────────────────────────────────────────
-       PICK CARD — Entry animation
+       DATE GROUP SECTIONS
     ───────────────────────────────────────── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(18px); }
-      to   { opacity: 1; transform: translateY(0); }
+    .date-group { }
+
+    .date-group + .date-group { margin-top: 24px; }
+
+    .group-header {
+      position: sticky;
+      top: var(--header-h, 52px);
+      z-index: 80;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
     }
 
-    .pick-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      margin-bottom: 10px;
-      overflow: hidden;
-      animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
-      will-change: transform;
-      transition: box-shadow 0.22s ease, transform 0.22s ease;
-    }
-
-    /* Staggered entry delays */
-    #section-latest .pick-card:nth-child(1)  { animation-delay: 0.00s; }
-    #section-latest .pick-card:nth-child(2)  { animation-delay: 0.06s; }
-    #section-latest .pick-card:nth-child(3)  { animation-delay: 0.12s; }
-    #section-latest .pick-card:nth-child(4)  { animation-delay: 0.18s; }
-    #section-latest .pick-card:nth-child(5)  { animation-delay: 0.24s; }
-    #section-latest .pick-card:nth-child(6)  { animation-delay: 0.30s; }
-    #section-latest .pick-card:nth-child(7)  { animation-delay: 0.36s; }
-    #section-latest .pick-card:nth-child(8)  { animation-delay: 0.42s; }
-    #section-latest .pick-card:nth-child(9)  { animation-delay: 0.48s; }
-    #section-latest .pick-card:nth-child(10) { animation-delay: 0.54s; }
-
-    .pick-card:hover {
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-      transform: translateY(-2px);
-    }
-
-    /* ─────────────────────────────────────────
-       CARD — Read state
-    ───────────────────────────────────────── */
-    .pick-card.read {
-      opacity: 0.55;
-      transition: opacity 0.3s ease;
-    }
-
-    .pick-card.read:hover {
-      opacity: 0.8;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    }
-
-    .pick-card.read .read-link {
+    .group-date-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: var(--ink-4);
-      font-weight: 400;
     }
 
-    .pick-card.read .read-link::after { display: none; }
+    .group-meta {
+      font-family: var(--sans);
+      font-size: 11px;
+      color: var(--ink-4);
+    }
+
+    .picks-table { }
 
     /* ─────────────────────────────────────────
-       CARD IMAGE
+       PICK ROWS
     ───────────────────────────────────────── */
-    .card-image-wrap {
-      width: 100%;
-      /* No fixed height — image sets its own height at natural aspect ratio.
-         max-height caps portrait images; overflow:hidden clips any excess. */
-      max-height: 360px;
-      overflow: hidden;
-      background: #e8e3dc;
+    .pick-row {
+      display: grid;
+      grid-template-columns: 52px 1fr 140px;
+      align-items: start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-s);
+      cursor: pointer;
+      transition: background 0.1s;
       position: relative;
     }
 
-    .card-image-wrap.hidden { display: none; }
+    .pick-row:last-child { border-bottom: none; }
+    .pick-row:hover { background: rgba(0,0,0,0.025); }
+    [data-theme="dark"] .pick-row:hover { background: rgba(255,255,255,0.03); }
 
-    /* Subtle bottom fade — softens the transition to card body */
-    .card-image-wrap::after {
-      content: '';
-      position: absolute;
-      inset: auto 0 0 0;
-      height: 52px;
-      background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.18));
-      pointer-events: none;
-      z-index: 1;
-    }
+    .pick-row.read       { opacity: 0.45; transition: opacity 0.3s ease; }
+    .pick-row.read:hover { opacity: 0.72; }
 
-    .card-thumbnail {
-      width: 100%;
-      height: auto;           /* natural aspect ratio — no forced crop */
-      max-height: 360px;      /* matches container; object-fit only fires here */
-      object-fit: cover;      /* fallback for tall images that hit the cap */
-      object-position: center 25%;
-      display: block;
-      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    }
+    .pick-row.expanded { background: rgba(196,232,23,0.05); }
+    [data-theme="dark"] .pick-row.expanded { background: rgba(196,232,23,0.07); }
 
-    .pick-card:hover .card-thumbnail { transform: scale(1.04); }
-
-    /* ─────────────────────────────────────────
-       CARD BODY
-    ───────────────────────────────────────── */
-    .card-body { padding: 15px 18px 14px; }
-
-    .card-meta {
+    /* Score column */
+    .row-col-index {
       display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 9px;
-      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding-top: 2px;
+      padding-right: 14px;
     }
 
-    .score-badge {
+    .row-score {
       font-family: var(--sans);
-      font-size: 10.5px;
+      font-size: 10px;
       font-weight: 700;
-      padding: 2px 9px;
-      border-radius: 100px;
-      background: var(--badge-bg);
-      color: var(--badge-fg);
-      line-height: 1.55;
-      flex-shrink: 0;
-      letter-spacing: 0.03em;
+      padding: 2px 7px;
+      border-radius: 3px;
+      letter-spacing: 0.02em;
+      line-height: 1.6;
+      white-space: nowrap;
     }
 
-    /* .score-badge.score-high is replaced by .score-badge.badge-legendary (see RARITY TIERS) */
+    .badge-common    { background: rgba(0,0,0,0.07); color: var(--ink-4); }
+    .badge-rare      { background: #1E1E1E; color: #FFFFFF; }
+    .badge-legendary { background: #C4E817; color: #1E1E1E; }
 
-    .card-source {
+    [data-theme="dark"] .badge-common    { background: rgba(255,255,255,0.1); color: var(--ink-4); }
+    [data-theme="dark"] .badge-rare      { background: #E0E0E0; color: #1A1A1A; }
+    [data-theme="dark"] .badge-legendary { background: #C4E817; color: #1E1E1E; }
+
+    /* Main column */
+    .row-col-main {
+      min-width: 0;
+      padding-right: 12px;
+    }
+
+    .row-title-link {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink);
+      text-decoration: none;
+      line-height: 1.45;
+      display: block;
+    }
+
+    .row-title-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Meta column */
+    .row-col-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+      padding-top: 2px;
+    }
+
+    .row-source-badge {
+      font-family: var(--sans);
       font-size: 10px;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.09em;
+      letter-spacing: 0.07em;
       color: var(--ink-4);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 130px;
     }
 
-    .trend-sources-badge {
+    .row-timestamp {
+      font-family: var(--sans);
       font-size: 10px;
-      font-weight: 500;
-      padding: 1px 7px;
-      border-radius: 100px;
-      border: 1px solid rgba(0,0,0,0.1);
       color: var(--ink-4);
-      line-height: 1.65;
-      flex-shrink: 0;
-    }
-
-    .card-timestamp {
-      margin-left: auto;
-      font-size: 10.5px;
-      color: var(--ink-4);
-      flex-shrink: 0;
-    }
-
-    /* The key typographic choice: Georgia for headlines */
-    .card-title {
-      font-family: var(--serif);
-      font-size: 18px;
-      font-weight: 400;
-      color: var(--ink);
-      line-height: 1.42;
-      letter-spacing: -0.1px;
-      margin-bottom: 10px;
-    }
-
-    a.card-title {
-      text-decoration: none;
-      display: block;
-    }
-
-    a.card-title:hover { text-decoration: underline; text-underline-offset: 3px; }
-
-    .card-why {
-      font-size: 13px;
-      color: var(--ink-3);
-      line-height: 1.68;
-      margin-bottom: 14px;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
     }
 
     /* ─────────────────────────────────────────
-       CARD FOOTER
+       EXPAND PANEL
     ───────────────────────────────────────── */
-    .card-footer {
+    .row-expand {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-s);
+      animation: expandIn 0.18s ease both;
+    }
+
+    @keyframes expandIn {
+      from { opacity: 0; transform: translateY(-4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .row-why {
+      font-family: var(--sans);
+      font-size: 12.5px;
+      color: var(--ink-3);
+      line-height: 1.62;
+      margin-bottom: 8px;
+    }
+
+    .row-angle {
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--ink-3);
+      line-height: 1.65;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+
+    .angle-trigger {
+      font-style: normal;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: #C4E817;
+      color: #1E1E1E;
+      padding: 1px 6px;
+      border-radius: 2px;
+      margin-right: 6px;
+      vertical-align: middle;
+      display: inline-block;
+      line-height: 1.7;
+    }
+
+    .row-expand-footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 10px;
-      padding-top: 12px;
-      border-top: 1px solid var(--border-s);
+      padding-top: 2px;
     }
 
-    /* Growing underline on hover — print-native feel */
-    .read-link {
-      font-size: 12.5px;
-      font-weight: 500;
-      color: var(--ink);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      position: relative;
-    }
+    .row-vote-btns { display: flex; gap: 4px; }
 
-    .read-link::after {
-      content: '';
-      position: absolute;
-      bottom: -1px; left: 0;
-      width: 0; height: 1px;
-      background: var(--ink);
-      transition: width 0.22s ease;
-    }
-
-    .read-link:hover::after { width: 100%; }
-
-    .read-arrow {
-      display: inline-block;
-      transition: transform 0.15s ease;
-    }
-
-    .read-link:hover .read-arrow { transform: translateX(3px); }
-
-    .trend-source-label {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 12px;
-      color: var(--ink-4);
-    }
-
-    .feedback-btns {
-      display: flex;
-      gap: 4px;
-      flex-shrink: 0;
-    }
-
-    .feedback-btn {
+    .vote-btn {
       font-family: var(--sans);
-      font-size: 12px;
+      font-size: 13px;
       background: transparent;
-      border: 1px solid rgba(0,0,0,0.1);
-      border-radius: 7px;
-      width: 30px;
-      height: 28px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      width: 28px;
+      height: 26px;
       cursor: pointer;
       color: var(--ink-4);
       display: flex;
       align-items: center;
       justify-content: center;
       transition: background 0.12s, color 0.12s, border-color 0.12s;
+      padding: 0;
     }
 
-    .feedback-btn:hover      { background: var(--bg); color: var(--ink-2); border-color: rgba(0,0,0,0.18); }
-    .feedback-btn.voted-up   { background: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
-    .feedback-btn.voted-down { background: #fef2f2; color: #dc2626; border-color: #fecaca; }
+    .vote-btn:hover      { background: var(--bg); color: var(--ink-2); border-color: rgba(0,0,0,0.2); }
+    .vote-btn.voted-up   { background: rgba(196,232,23,0.2); color: #3a6e00; border-color: #C4E817; }
+    .vote-btn.voted-down { background: rgba(220,38,38,0.07); color: #dc2626; border-color: rgba(220,38,38,0.25); }
 
-    /* ─────────────────────────────────────────
-       ARCHIVE
-    ───────────────────────────────────────── */
-    .archive-section { margin-top: 56px; }
+    [data-theme="dark"] .vote-btn:hover { border-color: rgba(255,255,255,0.25); }
 
-    .archive-label {
+    .row-expand-meta {
+      font-family: var(--sans);
       font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
+      color: var(--ink-4);
       text-transform: uppercase;
-      color: var(--ink-4);
-      margin-bottom: 14px;
-    }
-
-    .archive-list { border-top: 1px solid var(--border); }
-
-    .archive-row {
-      display: flex;
-      align-items: baseline;
-      gap: 10px;
-      padding: 11px 0;
-      border-bottom: 1px solid var(--border-s);
-      text-decoration: none;
-      color: inherit;
-    }
-
-    a.archive-row:hover .archive-row-title { color: var(--ink); }
-
-    /* Georgia in the archive too — unified reading surface */
-    .archive-row-title {
-      font-family: var(--serif);
-      font-size: 13.5px;
-      color: var(--ink-3);
-      flex: 1;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      transition: color 0.1s;
-    }
-
-    .archive-row-meta {
-      font-size: 11px;
-      color: var(--ink-4);
-      flex-shrink: 0;
-      white-space: nowrap;
+      letter-spacing: 0.06em;
     }
 
     /* ─────────────────────────────────────────
-       SIDEBAR — mobile-first collapsible
-    ───────────────────────────────────────── */
-    .sidebar {
-      margin-top: 40px;
-      padding-top: 0;
-    }
-
-    /* Collapse/expand body — open by default */
-    .sidebar-body {
-      display: block;
-      overflow: hidden;
-    }
-
-    .sidebar-body.closed { display: none; }
-
-    /* At medium widths: 2-column grid for sections */
-    @media (min-width: 521px) and (max-width: 1099px) {
-      .sidebar-body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 40px;
-      }
-
-      .sidebar-body.closed { display: none; }
-      .sidebar-body .sb-section { break-inside: avoid; }
-    }
-
-    .sb-section {
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-      border-bottom: 1px solid var(--border-s);
-    }
-
-    .sb-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-
-    .sb-title {
-      font-size: 9.5px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--ink-4);
-      margin-bottom: 12px;
-    }
-
-    .sb-stats { display: flex; gap: 20px; }
-
-    .sb-stat { display: flex; flex-direction: column; gap: 2px; }
-
-    /* Georgia numerals in sidebar — editorial stats feel */
-    .sb-stat-value {
-      font-family: var(--serif);
-      font-size: 26px;
-      font-weight: 400;
-      color: var(--ink);
-      line-height: 1.05;
-      letter-spacing: -0.5px;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .sb-stat-label { font-size: 10px; color: var(--ink-4); }
-
-    .sb-top-pick {
-      display: block;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 13px 14px;
-      text-decoration: none;
-      transition: box-shadow 0.15s;
-    }
-
-    .sb-top-pick:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
-
-    .sb-top-pick-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-
-    .sb-top-pick-title {
-      font-family: var(--serif);
-      font-size: 12.5px;
-      color: var(--ink-2);
-      line-height: 1.45;
-      overflow-wrap: break-word;
-    }
-
-    .sb-top-pick-meta { font-size: 10px; color: var(--ink-4); margin-top: 7px; }
-
-    .sb-source-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      padding: 5px 0;
-      border-bottom: 1px solid var(--border-s);
-    }
-
-    .sb-source-row:last-child { border-bottom: none; }
-
-    .sb-source-name {
-      font-size: 12px;
-      color: var(--ink-3);
-      flex: 1;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .sb-source-count {
-      font-size: 11px;
-      color: var(--ink-4);
-      flex-shrink: 0;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .sb-empty {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 12px;
-      color: var(--ink-4);
-    }
-
-    /* ─────────────────────────────────────────
-       WIDE LAYOUT (≥1100px)
-    ───────────────────────────────────────── */
-    @media (min-width: 1100px) {
-      .header-inner,
-      .filter-bar-inner { max-width: 972px; }
-
-      .page-wrapper {
-        max-width: 972px;
-        display: flex;
-        align-items: flex-start;
-        gap: 32px;
-      }
-
-      .content { flex: 1; min-width: 0; }
-
-      .sidebar {
-        width: 244px;
-        flex-shrink: 0;
-        position: sticky;
-        margin-top: 0;
-      }
-
-    }
-
-    /* ─────────────────────────────────────────
-       X TRENDING MODULE (inline feed panel)
+       X TRENDING MODULE
     ───────────────────────────────────────── */
     .trends-module {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      margin-bottom: 10px;
-      padding: 16px 18px 18px;
-      animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+      margin: 12px 0;
+      padding: 14px 16px 16px;
     }
 
     .trends-module-header {
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 14px;
-      padding-bottom: 11px;
-      border-bottom: 1px solid var(--border);
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-s);
     }
 
     .tm-x-logo {
@@ -664,12 +407,24 @@
     }
 
     .trends-module-title {
+      font-family: var(--sans);
       font-size: 9px;
       font-weight: 700;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--ink-4);
     }
+
+    .trends-updated {
+      font-size: 9.5px;
+      color: var(--ink-4);
+      margin-left: auto;
+      font-variant-numeric: tabular-nums;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .trends-updated.visible { opacity: 1; }
 
     .trends-grid {
       display: grid;
@@ -677,11 +432,7 @@
       column-gap: 20px;
     }
 
-    a.trend-item {
-      text-decoration: none;
-      cursor: pointer;
-    }
-
+    a.trend-item { text-decoration: none; color: inherit; cursor: pointer; }
     a.trend-item:hover .trend-item-name { color: var(--ink); text-decoration: underline; }
 
     .trend-item {
@@ -697,24 +448,23 @@
     .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
 
     .trend-item-rank {
-      font-family: var(--serif);
-      font-style: italic;
+      font-family: var(--sans);
       font-size: 10px;
       color: var(--ink-4);
-      width: 18px;
+      width: 20px;
       flex-shrink: 0;
       text-align: right;
       font-variant-numeric: tabular-nums;
       line-height: 1;
     }
 
-    .trend-item.rank-hot  .trend-item-rank { color: var(--amber); }
+    .trend-item.rank-hot  .trend-item-rank { color: var(--accent); }
     .trend-item.rank-warm .trend-item-rank { color: var(--ink-3); }
 
     .trend-item-name {
+      font-family: var(--sans);
       font-size: 12px;
       color: var(--ink-3);
-      line-height: 1.3;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -725,83 +475,62 @@
     .trend-item.rank-hot  .trend-item-name { color: var(--ink); font-weight: 500; }
     .trend-item.rank-warm .trend-item-name { color: var(--ink-2); }
 
-    @media (max-width: 520px) {
-      /* Keep two columns on mobile — 1-10 left, 11-20 right */
+    @media (max-width: 479px) {
       .trend-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--border-s); }
     }
 
     /* ─────────────────────────────────────────
-       X TRENDING — SIDEBAR SECTION
+       BREAKING NEWS
     ───────────────────────────────────────── */
-    .sb-trend-list { margin-top: 2px; }
+    .breaking-row {
+      display: grid;
+      grid-template-columns: 52px 1fr 140px;
+      align-items: start;
+      padding: 14px 0 14px 10px;
+      border-bottom: 1px solid var(--border-s);
+      border-left: 2px solid #dc2626;
+      background: rgba(220,38,38,0.03);
+    }
 
-    .sb-trend-row {
+    .breaking-badge {
+      font-family: var(--sans);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 2px;
+      background: #dc2626;
+      color: #fff;
+      animation: breakingPulse 2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes breakingPulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.65; }
+    }
+
+    .breaking-section-label {
       display: flex;
       align-items: center;
-      gap: 8px;
-      padding: 4.5px 0;
-      border-bottom: 1px solid var(--border-s);
-      min-width: 0;
+      gap: 6px;
+      font-family: var(--sans);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #dc2626;
+      padding: 12px 0 6px;
     }
 
-    .sb-trend-row:last-child { border-bottom: none; }
-
-    .sb-trend-rank {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 10px;
-      color: var(--ink-4);
-      width: 16px;
+    .breaking-section-label::before {
+      content: '';
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: #dc2626;
       flex-shrink: 0;
-      text-align: right;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .sb-trend-row.rank-hot  .sb-trend-rank { color: var(--amber); }
-    .sb-trend-row.rank-warm .sb-trend-rank { color: var(--ink-3); }
-
-    .sb-trend-name {
-      font-size: 11.5px;
-      color: var(--ink-4);
-      flex: 1;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      min-width: 0;
-    }
-
-    .sb-trend-row.rank-hot  .sb-trend-name { color: var(--ink-2); font-weight: 500; }
-    .sb-trend-row.rank-warm .sb-trend-name { color: var(--ink-3); }
-
-    a.sb-trend-row { text-decoration: none; cursor: pointer; }
-    a.sb-trend-row:hover .sb-trend-name { color: var(--ink); text-decoration: underline; }
-
-    /* ─────────────────────────────────────────
-       UTILITIES
-    ───────────────────────────────────────── */
-    .state-msg {
-      text-align: center;
-      color: var(--ink-4);
-      padding: 80px 0;
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 15px;
-      line-height: 1.9;
-    }
-
-    /* ─────────────────────────────────────────
-       MOBILE (≤520px)
-    ───────────────────────────────────────── */
-    @media (max-width: 520px) {
-      header { padding: 10px 16px; }
-      .filter-bar { padding: 7px 16px; }
-      .page-wrapper { padding: 14px 14px 80px; }
-      .pick-card { border-radius: 10px; }
-      .card-title { font-size: 16.5px; }
-      .filter-pills .pill-btn { padding: 3px 8px; }
-      .filter-count { display: none; }
-      #last-updated, .run-meta-sep, #next-run { display: none; }
-      .mobile-timer-row { display: block; }
+      animation: breakingPulse 2s ease-in-out infinite;
     }
 
     /* ─────────────────────────────────────────
@@ -812,7 +541,7 @@
       top: 0; left: 0;
       height: 2px;
       width: 0%;
-      background: var(--amber);
+      background: var(--accent);
       z-index: 9999;
       transition: width 0.08s linear;
       pointer-events: none;
@@ -831,6 +560,7 @@
       color: #fff;
       padding: 11px 24px;
       text-align: center;
+      font-family: var(--sans);
       font-size: 12.5px;
       letter-spacing: 0.01em;
       cursor: pointer;
@@ -851,395 +581,61 @@
     }
 
     /* ─────────────────────────────────────────
-       RARITY TIERS
-       Score 7 = Common (default)
-       Score 8 = Rare (cool blue/silver perimeter glow)
-       Score 9-10 = Legendary (amber perimeter glow)
+       UTILITIES
     ───────────────────────────────────────── */
-
-    /* Rare — cool silver-blue perimeter glow */
-    .pick-card.card-rare {
-      border-color: rgba(37, 99, 235, 0.35);
-      box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.25),
-                  0 0 16px rgba(37, 99, 235, 0.18),
-                  0 2px 8px rgba(37, 99, 235, 0.10);
-    }
-    .pick-card.card-rare:hover {
-      box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.35),
-                  0 0 24px rgba(37, 99, 235, 0.26),
-                  0 4px 16px rgba(37, 99, 235, 0.14);
-      transform: translateY(-2px);
-    }
-
-    /* Legendary — amber perimeter glow, elevated */
-    .pick-card.card-legendary {
-      border-color: rgba(217, 119, 6, 0.30);
-      box-shadow: 0 0 0 1px rgba(217, 119, 6, 0.20),
-                  0 0 20px rgba(217, 119, 6, 0.18),
-                  0 2px 12px rgba(217, 119, 6, 0.12);
-    }
-    .pick-card.card-legendary:hover {
-      box-shadow: 0 0 0 1px rgba(217, 119, 6, 0.30),
-                  0 0 32px rgba(217, 119, 6, 0.26),
-                  0 4px 20px rgba(217, 119, 6, 0.16);
-      transform: translateY(-2px);
-    }
-
-    /* Rarity-aware score badges */
-    .score-badge.badge-rare      { background: #2563eb; }
-    .score-badge.badge-legendary { background: var(--amber); }
-
-    /* ─────────────────────────────────────────
-       SCORE PULSE (legendary cards, score 9-10)
-       Pulses the full perimeter glow
-    ───────────────────────────────────────── */
-    @keyframes scorePulse {
-      0%, 100% {
-        box-shadow: 0 0 0 1px rgba(217, 119, 6, 0.20),
-                    0 0 20px rgba(217, 119, 6, 0.18),
-                    0 2px 12px rgba(217, 119, 6, 0.12);
-      }
-      50% {
-        box-shadow: 0 0 0 1.5px rgba(217, 119, 6, 0.36),
-                    0 0 36px rgba(217, 119, 6, 0.32),
-                    0 4px 24px rgba(217, 119, 6, 0.20);
-      }
-    }
-
-    .pick-card.pulsing {
-      animation: scorePulse 4s ease-in-out infinite;
-    }
-
-    /* ─────────────────────────────────────────
-       TRENDS UPDATE INDICATOR
-    ───────────────────────────────────────── */
-    .trends-updated {
-      font-size: 9.5px;
+    .state-msg {
+      text-align: center;
       color: var(--ink-4);
-      margin-left: auto;
-      font-variant-numeric: tabular-nums;
-      opacity: 0;
-      transition: opacity 0.4s ease;
-    }
-
-    .trends-updated.visible { opacity: 1; }
-
-    /* ─────────────────────────────────────────
-       ACTIVITY FEED
-    ───────────────────────────────────────── */
-    .activity-feed { margin-top: 2px; }
-
-    .activity-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      padding: 5px 0;
-      border-bottom: 1px solid var(--border-s);
-      animation: fadeUp 0.35s ease both;
-    }
-
-    .activity-item:last-child { border-bottom: none; }
-
-    .activity-dot {
-      width: 5px; height: 5px;
-      border-radius: 50%;
-      background: var(--ink-4);
-      flex-shrink: 0;
-      margin-top: 4px;
-    }
-
-    .activity-dot.dot-drop { background: var(--amber); }
-    .activity-dot.dot-read { background: #a8c5a0; }
-
-    .activity-text {
-      font-size: 11px;
-      color: var(--ink-4);
-      line-height: 1.4;
-      flex: 1;
-      min-width: 0;
-    }
-
-    .activity-time {
-      font-size: 10px;
-      color: var(--ink-4);
-      flex-shrink: 0;
-      opacity: 0.6;
-      white-space: nowrap;
-    }
-
-    /* ─────────────────────────────────────────
-       READ STATE — smoother transition
-    ───────────────────────────────────────── */
-    .pick-card {
-      transition: box-shadow 0.22s ease, transform 0.22s ease, opacity 0.35s ease;
-    }
-
-    /* ─────────────────────────────────────────
-       BREAKING NEWS CARD
-    ───────────────────────────────────────── */
-    .pick-card.card-breaking {
-      background: rgba(254, 242, 242, 0.55);
-      border-color: rgba(220, 38, 38, 0.2);
-      box-shadow: inset 3px 0 0 0 #dc2626,
-                  0 2px 16px rgba(220, 38, 38, 0.08);
-    }
-
-    .pick-card.card-breaking:hover {
-      box-shadow: inset 3px 0 0 0 #dc2626,
-                  0 4px 24px rgba(220, 38, 38, 0.12);
-      transform: translateY(-2px);
-    }
-
-    .breaking-badge {
+      padding: 80px 0;
       font-family: var(--sans);
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 2px 8px;
-      border-radius: 100px;
-      background: #dc2626;
-      color: #fff;
-      flex-shrink: 0;
-    }
-
-    @keyframes breakingPulse {
-      0%, 100% { opacity: 1; }
-      50%       { opacity: 0.65; }
-    }
-
-    .breaking-badge { animation: breakingPulse 2s ease-in-out infinite; }
-
-    /* ─────────────────────────────────────────
-       BREAKING NEWS SECTION HEADER
-    ───────────────────────────────────────── */
-    .breaking-section-label {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 9.5px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #dc2626;
-      margin-bottom: 10px;
-    }
-
-    .breaking-section-label::before {
-      content: '';
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: #dc2626;
-      flex-shrink: 0;
-      animation: breakingPulse 2s ease-in-out infinite;
-    }
-
-    /* ─────────────────────────────────────────
-       NOTIFICATION PERMISSION BUTTON
-    ───────────────────────────────────────── */
-    /* #notif-btn is always visible; initNotifBtn() sets label/title on load */
-
-    /* ─────────────────────────────────────────
-       LIST MODE — terminal/editorial
-    ───────────────────────────────────────── */
-    .pick-row {
-      display: grid;
-      grid-template-columns: 32px 1fr;
-      gap: 0 16px;
-      padding: 20px 10px 20px 20px;
-      margin: 0 -10px;
-      border-bottom: 1px solid var(--border-s);
-      position: relative;
-      border-radius: 4px;
-      cursor: pointer;
-      animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
-      transition: background 0.12s ease, opacity 0.3s ease;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .pick-row:last-child { border-bottom: none; }
-
-    .pick-row:hover       { background: var(--surface); }
-    [data-theme="dark"]  .pick-row:hover { background: rgba(255,255,255,0.035); }
-    [data-theme="light"] .pick-row:hover { background: rgba(0,0,0,0.025); }
-
-    .pick-row.read        { opacity: 0.38; }
-    .pick-row.read:hover  { opacity: 0.65; }
-
-    /* ── Glowing left-border accent ── */
-    .pick-row::before {
-      content: '';
-      position: absolute;
-      left: 0; top: 18%; bottom: 18%;
-      width: 2px;
-      border-radius: 2px;
-      background: transparent;
-      transition: box-shadow 0.2s ease;
-    }
-
-    .pick-row.row-legendary::before {
-      background: var(--amber);
-      box-shadow: 0 0 8px rgba(217,119,6,0.9), 0 0 24px rgba(217,119,6,0.5);
-    }
-    .pick-row.row-legendary:hover::before {
-      box-shadow: 0 0 12px rgba(217,119,6,1), 0 0 32px rgba(217,119,6,0.7);
-    }
-
-    .pick-row.row-rare::before {
-      background: #3b82f6;
-      box-shadow: 0 0 8px rgba(59,130,246,0.85), 0 0 24px rgba(59,130,246,0.45);
-    }
-    .pick-row.row-rare:hover::before {
-      box-shadow: 0 0 12px rgba(59,130,246,1), 0 0 32px rgba(59,130,246,0.65);
-    }
-
-    /* Legendary background tint */
-    .pick-row.row-legendary { background: rgba(217,119,6,0.035); }
-    [data-theme="dark"] .pick-row.row-legendary { background: rgba(217,119,6,0.055); }
-    .pick-row.row-legendary:hover { background: rgba(217,119,6,0.07); }
-
-    /* ── Score column — monospace indicator ── */
-    .row-score-col {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      padding-top: 3px;
-      gap: 4px;
-    }
-
-    /* The number itself */
-    .row-score-num {
-      font-family: var(--mono);
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--ink-4);
-      letter-spacing: 0;
-      line-height: 1;
-      font-variant-numeric: tabular-nums;
-      transition: color 0.12s;
-    }
-
-    .pick-row.row-legendary .row-score-num { color: var(--amber); }
-    .pick-row.row-rare      .row-score-num { color: #3b82f6; }
-
-    /* Arrow indicator — appears on hover */
-    .row-indicator {
-      font-family: var(--mono);
-      font-size: 9px;
-      color: var(--ink-4);
-      opacity: 0;
-      transform: translateX(-3px);
-      transition: opacity 0.15s ease, transform 0.15s ease;
-      line-height: 1;
-    }
-
-    .pick-row:hover .row-indicator { opacity: 1; transform: translateX(0); }
-    .pick-row.row-legendary .row-indicator { color: var(--amber); }
-    .pick-row.row-rare      .row-indicator { color: #3b82f6; }
-
-    /* ── Content body ── */
-    .row-body { min-width: 0; }
-
-    /* Source line — mono caps, above the title */
-    .row-source-line {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 5px;
-    }
-
-    .row-source {
-      font-family: var(--mono);
-      font-size: 9px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--ink-4);
-    }
-
-    .pick-row.row-legendary .row-source { color: rgba(217,119,6,0.7); }
-    .pick-row.row-rare      .row-source { color: rgba(59,130,246,0.7); }
-
-    .row-ts {
-      font-family: var(--mono);
-      font-size: 9px;
-      color: var(--ink-4);
-      font-variant-numeric: tabular-nums;
-      opacity: 0.7;
-    }
-
-    .row-src-badge {
-      font-family: var(--mono);
-      font-size: 8.5px;
-      letter-spacing: 0.06em;
-      color: var(--ink-4);
-      opacity: 0.8;
-    }
-
-    .row-trend-hint {
-      font-family: var(--mono);
-      font-size: 9px;
-      color: var(--ink-4);
-      letter-spacing: 0.06em;
-    }
-
-    /* Title — serif for editorial weight, stays editorial */
-    .row-title {
-      font-family: var(--serif);
-      font-size: 17px;
-      font-weight: 400;
-      color: var(--ink);
-      line-height: 1.42;
-      letter-spacing: -0.1px;
-      display: block;
-      margin-bottom: 7px;
-      transition: color 0.12s;
-    }
-
-    .pick-row:hover .row-title { color: var(--ink); }
-
-    /* Legendary titles get slightly bolder */
-    .pick-row.row-legendary .row-title { font-weight: 400; }
-
-    /* Editor's note — always visible, 2-line cap, italic serif */
-    .row-why {
-      font-family: var(--serif);
       font-style: italic;
-      font-size: 12px;
-      color: var(--ink-3);
-      line-height: 1.65;
-      margin-bottom: 0;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      font-size: 15px;
+      line-height: 1.9;
     }
 
-    /* Staggered entry animations */
-    #section-latest .pick-row:nth-child(1)  { animation-delay: 0.00s; }
-    #section-latest .pick-row:nth-child(2)  { animation-delay: 0.06s; }
-    #section-latest .pick-row:nth-child(3)  { animation-delay: 0.12s; }
-    #section-latest .pick-row:nth-child(4)  { animation-delay: 0.18s; }
-    #section-latest .pick-row:nth-child(5)  { animation-delay: 0.24s; }
-    #section-latest .pick-row:nth-child(6)  { animation-delay: 0.30s; }
-    #section-latest .pick-row:nth-child(7)  { animation-delay: 0.36s; }
-    #section-latest .pick-row:nth-child(8)  { animation-delay: 0.42s; }
-    #section-latest .pick-row:nth-child(9)  { animation-delay: 0.48s; }
-    #section-latest .pick-row:nth-child(10) { animation-delay: 0.54s; }
+    /* ─────────────────────────────────────────
+       FADE-IN ANIMATION
+    ───────────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
 
-    /* View toggle button */
-    .view-toggle-btn { padding: 5px 10px; font-size: 15px; letter-spacing: 0; }
+    .date-group { animation: fadeUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both; }
 
-    @media (max-width: 520px) {
-      .pick-row  { grid-template-columns: 28px 1fr; gap: 0 12px; padding: 18px 8px 18px 18px; margin: 0 -8px; }
-      .row-title { font-size: 15.5px; }
+    .date-group:nth-child(1) { animation-delay: 0.00s; }
+    .date-group:nth-child(2) { animation-delay: 0.06s; }
+    .date-group:nth-child(3) { animation-delay: 0.12s; }
+    .date-group:nth-child(4) { animation-delay: 0.18s; }
+    .date-group:nth-child(5) { animation-delay: 0.24s; }
+
+    /* ─────────────────────────────────────────
+       MOBILE (≤479px)
+    ───────────────────────────────────────── */
+    @media (max-width: 479px) {
+      #site-header  { padding: 0 14px; }
+      .page-wrapper { padding: 0 14px 80px; }
+      .wordmark     { font-size: 15px; margin-right: 16px; }
+      .nav-tab      { padding: 0 10px; font-size: 12px; }
+      .pick-row     { grid-template-columns: 36px 1fr; }
+      .row-col-meta { display: none; }
+      .row-title-link { font-size: 13.5px; }
+      .breaking-row   { grid-template-columns: 36px 1fr; }
+    }
+
+    /* ─────────────────────────────────────────
+       TABLET (480–859px)
+    ───────────────────────────────────────── */
+    @media (min-width: 480px) and (max-width: 859px) {
+      .pick-row     { grid-template-columns: 36px 1fr 100px; }
+      .breaking-row { grid-template-columns: 36px 1fr 100px; }
+      .row-source-badge { max-width: 90px; }
     }
   </style>
   <script>
     /* Anti-flash theme init — runs before first paint */
     (function(){
-      var t = localStorage.getItem('blank_theme') || 'dark';
+      var t = localStorage.getItem('blank_theme') || 'light';
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
@@ -1255,48 +651,26 @@
 </div>
 
 <!-- ── Header ── -->
-<header>
+<header id="site-header">
   <div class="header-inner">
-    <div class="brand-block">
-      <div class="brand">Blank</div>
-      <div class="tagline">intentionally finite, culturally relevant</div>
-    </div>
+    <div class="wordmark">Blank</div>
+    <nav class="header-nav">
+      <button class="nav-tab active" id="btn-today">Today</button>
+      <button class="nav-tab" id="btn-archive">Archive</button>
+      <button class="nav-tab" id="btn-trends">Trends</button>
+    </nav>
     <div class="header-actions">
-      <button class="pill-btn active" id="btn-today">Today</button>
-      <button class="pill-btn" id="btn-archive">Archive</button>
-      <button class="pill-btn active" id="btn-stats" aria-expanded="true" aria-controls="sidebar-body">Stats</button>
-      <button class="pill-btn view-toggle-btn" id="btn-view" title="Switch to list view" onclick="toggleView()">≡</button>
-      <button class="pill-btn" id="notif-btn" title="Enable breaking news notifications" onclick="enableNotifications()">🔔</button>
-      <button class="pill-btn theme-toggle" id="theme-toggle" title="Toggle light/dark mode" aria-label="Toggle light/dark mode" onclick="toggleTheme()"></button>
+      <button class="header-btn" id="notif-btn" title="Enable breaking news notifications" onclick="enableNotifications()">🔔</button>
+      <button class="header-btn" id="theme-toggle" title="Toggle light/dark mode" aria-label="Toggle light/dark mode" onclick="toggleTheme()"></button>
     </div>
   </div>
 </header>
 
-
-<!-- ── Filter bar ── -->
-<div class="filter-bar" id="filter-bar">
-  <div class="filter-bar-inner">
-    <span class="filter-date" id="filter-date">—</span>
-    <div class="filter-right">
-      <span class="filter-count" id="filter-count"></span>
-      <span class="run-meta" id="last-updated"></span>
-      <span class="run-meta-sep">·</span>
-      <span class="run-meta" id="next-run">—</span>
-    </div>
-  </div>
-  <div class="mobile-timer-row" id="mobile-timer-row"></div>
-</div>
-
 <!-- ── Page ── -->
 <div class="page-wrapper">
-  <div class="content">
-    <div id="feed-container">
-      <div class="state-msg">Loading…</div>
-    </div>
-  </div>
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-body" id="sidebar-body"></div>
-  </aside>
+  <main id="feed-container">
+    <div class="state-msg">Loading…</div>
+  </main>
 </div>
 
 <script>
@@ -1308,7 +682,7 @@
   }
 
   function toggleTheme() {
-    const current = localStorage.getItem('blank_theme') || 'dark';
+    const current = localStorage.getItem('blank_theme') || 'light';
     const next = current === 'dark' ? 'light' : 'dark';
     localStorage.setItem('blank_theme', next);
     applyTheme(next);
@@ -1354,8 +728,7 @@
   const VOTE_REPO       = 'boymeetsblank/daily-curator';
   const VAPID_PUBLIC_KEY = '__VAPID_PUBLIC_KEY__';
 
-  let currentView = localStorage.getItem('blank_view') || 'cards';
-  let cachedRuns  = null;
+  let cachedRuns = null;
 
   async function vote(btn, dir) {
     const btns = btn.parentElement;
@@ -1380,9 +753,6 @@
       return;
     }
 
-    console.log('[vote] direction:', dir, '| token length:', VOTE_TOKEN.length,
-                '| starts with:', VOTE_TOKEN.slice(0, 10));
-
     const ct = new Date().toLocaleString('sv-SE', {
       timeZone: 'America/Chicago',
       year: 'numeric', month: '2-digit', day: '2-digit',
@@ -1399,8 +769,6 @@
       url:       btns.dataset.url    || null,
     };
 
-    console.log('[vote] record:', record);
-
     const apiUrl = `https://api.github.com/repos/${VOTE_REPO}/contents/votes.json`;
     const headers = {
       'Authorization':        `Bearer ${VOTE_TOKEN}`,
@@ -1408,22 +776,15 @@
       'X-GitHub-Api-Version': '2022-11-28',
     };
 
-    let sha   = null;
-    let votes = [];
-    console.log('[vote] GET', apiUrl);
+    let sha = null, votes = [];
     try {
       const res = await fetch(apiUrl, { headers });
-      console.log('[vote] GET status:', res.status);
       if (res.ok) {
         const data = await res.json();
         sha   = data.sha;
         votes = JSON.parse(new TextDecoder().decode(
           Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0))
         ));
-        console.log('[vote] existing votes:', votes.length, '| sha:', sha);
-      } else {
-        const errText = await res.text();
-        console.error('[vote] GET failed:', res.status, errText);
       }
     } catch (e) {
       console.error('[vote] GET exception:', e);
@@ -1433,132 +794,99 @@
 
     const enc = new TextEncoder().encode(JSON.stringify(votes, null, 2) + '\n');
     const binary = Array.from(enc, b => String.fromCharCode(b)).join('');
-
     const body = { message: `vote: ${dir} — ${record.title.slice(0, 50)}`,
                    content: btoa(binary), branch: 'main' };
     if (sha) body.sha = sha;
 
-    console.log('[vote] PUT', apiUrl, '| sha:', sha || '(creating new)');
     try {
-      const putRes = await fetch(apiUrl, {
+      await fetch(apiUrl, {
         method:  'PUT',
         headers: { ...headers, 'Content-Type': 'application/json' },
         body:    JSON.stringify(body),
       });
-      console.log('[vote] PUT status:', putRes.status);
-      if (!putRes.ok) {
-        const errText = await putRes.text();
-        console.error('[vote] PUT failed:', putRes.status, errText);
-      } else {
-        console.log('[vote] vote saved successfully');
-      }
     } catch (e) {
       console.error('[vote] PUT exception:', e);
     }
   }
 
-  // ── Render a single pick card ────────────────────────────────
-  function renderPickCard(pick, runDisplayTime, runIsoTs) {
-    const tier       = pick.score >= 9 ? 'legendary' : pick.score >= 8 ? 'rare' : 'common';
-    const badgeClass = tier !== 'common' ? ` badge-${tier}` : '';
-    const scoreBadge = `<span class="score-badge${badgeClass}">${pick.score}</span>`;
-    const srcBadge   = pick.trending_across_sources
-      ? `<span class="trend-sources-badge">3+ sources</span>` : '';
-
-    const imageWrap  = pick.image
-      ? `<div class="card-image-wrap">
-           <img class="card-thumbnail" src="${esc(pick.image)}" alt="" loading="lazy"
-                onerror="this.closest('.card-image-wrap').classList.add('hidden')">
-         </div>` : '';
-
-    const footerLeft = pick.link
-      ? `<a class="read-link" href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer" onclick="markRead(this)">
-           Read article <span class="read-arrow">→</span>
-         </a>`
-      : `<span class="trend-source-label">${esc(trendLabel(pick))}</span>`;
-
-    const tsAttr    = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
-    const tsDisplay = runIsoTs ? timeAgo(runIsoTs) : esc(runDisplayTime);
-    const cardClass  = (tier !== 'common' ? ` card-${tier}` : '') + (tier === 'legendary' ? ' score-elite' : '');
-    return `<div class="pick-card${cardClass}" data-score="${pick.score}" data-url="${esc(pick.link || "")}">
-      ${imageWrap}
-      <div class="card-body">
-        <div class="card-meta">
-          ${scoreBadge}
-          <span class="card-source">${esc(pick.source)}</span>
-          ${srcBadge}
-          <span class="card-timestamp"${tsAttr}>${tsDisplay}</span>
-        </div>
-        <a class="card-title" href="${esc(pick.link || trendSearchUrl(pick))}" target="_blank" rel="noopener noreferrer"${pick.link ? ' onclick="markRead(this.closest(\'.pick-card\').querySelector(\'.read-link\'))"' : ''}>${esc(pick.title)}</a>
-        ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
-        <div class="card-footer">
-          ${footerLeft}
-          <div class="feedback-btns"
-               data-title="${esc(pick.title)}"
-               data-source="${esc(pick.source)}"
-               data-score="${pick.score}"
-               data-url="${esc(pick.link || '')}">
-            <button class="feedback-btn" onclick="vote(this,'up')"   title="Good pick">↑</button>
-            <button class="feedback-btn" onclick="vote(this,'down')" title="Not for me">↓</button>
-          </div>
-        </div>
-      </div>
-    </div>`;
+  // ── Angle parser ─────────────────────────────────────────────
+  function parseAngle(angleStr) {
+    if (!angleStr) return null;
+    const m = angleStr.match(/^\[TRIGGER:\s*([^\]]+)\]\s*([\s\S]*)/);
+    if (m) return { trigger: m[1].trim(), text: m[2].trim() };
+    return { trigger: null, text: angleStr };
   }
 
-  // ── Render a single pick row (list mode) ────────────────────
+  // ── Render a single pick row ──────────────────────────────────
   function renderPickRow(pick, runDisplayTime, runIsoTs) {
-    const tier     = pick.score >= 9 ? 'legendary' : pick.score >= 8 ? 'rare' : 'common';
-    const rowClass = tier !== 'common' ? ` row-${tier}` : '';
-    const scoreStr = pick.score < 10 ? `0${pick.score}` : `${pick.score}`;
+    const tier       = pick.score >= 9 ? 'legendary' : pick.score >= 8 ? 'rare' : 'common';
+    const badgeClass = `badge-${tier}`;
 
     const href      = esc(pick.link || trendSearchUrl(pick));
     const tsAttr    = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
     const tsDisplay = runIsoTs ? timeAgo(runIsoTs) : esc(runDisplayTime);
 
-    const srcBadge  = pick.trending_across_sources
-      ? `<span class="row-src-badge">· 3+ SRC</span>` : '';
-    const trendHint = !pick.link
-      ? `<span class="row-trend-hint">TRENDING</span>` : '';
-    const whyHtml   = pick.why
-      ? `<div class="row-why">${esc(pick.why)}</div>` : '';
+    const srcExtra = pick.trending_across_sources ? ' · 3+ src' : '';
+    const srcLabel = pick.link ? '' : ' · Trending';
 
-    return `<a class="pick-row${rowClass}" href="${href}" target="_blank" rel="noopener noreferrer" data-score="${pick.score}" data-url="${esc(pick.link || '')}"${pick.link ? ' onclick="markRead(this)"' : ''}>
-      <div class="row-score-col">
-        <span class="row-score-num">${scoreStr}</span>
-        <span class="row-indicator">›</span>
-      </div>
-      <div class="row-body">
-        <div class="row-source-line">
-          <span class="row-source">${esc(pick.source)}</span>${srcBadge}${trendHint}
-          <span class="row-ts"${tsAttr}>${tsDisplay}</span>
-        </div>
-        <span class="row-title">${esc(pick.title)}</span>
-        ${whyHtml}
-      </div>
-    </a>`;
-  }
-
-  // ── View management ──────────────────────────────────────────
-  function updateViewBtn() {
-    const btn = document.getElementById('btn-view');
-    if (!btn) return;
-    btn.classList.toggle('active', currentView === 'list');
-    btn.title = currentView === 'list' ? 'Switch to card view' : 'Switch to list view';
-  }
-
-  function setView(v) {
-    currentView = v;
-    localStorage.setItem('blank_view', v);
-    updateViewBtn();
-    if (cachedRuns) {
-      render(cachedRuns);
-      if (v === 'cards') initScorePulse();
+    let whyHtml = '';
+    if (pick.why) {
+      whyHtml = `<p class="row-why">${esc(pick.why)}</p>`;
     }
+
+    let angleHtml = '';
+    if (pick.angle) {
+      const parsed = parseAngle(pick.angle);
+      if (parsed && parsed.text) {
+        const lines = parsed.text.split(' / ').map(l => esc(l.trim())).join('<br>');
+        const triggerBadge = parsed.trigger
+          ? `<span class="angle-trigger">${esc(parsed.trigger)}</span>` : '';
+        angleHtml = `<div class="row-angle">${triggerBadge}${lines}</div>`;
+      }
+    }
+
+    const expandHtml = (whyHtml || angleHtml) ? `
+      <div class="row-expand" hidden>
+        ${whyHtml}${angleHtml}
+        <div class="row-expand-footer">
+          <div class="row-vote-btns"
+               data-title="${esc(pick.title)}"
+               data-source="${esc(pick.source)}"
+               data-score="${pick.score}"
+               data-url="${esc(pick.link || '')}">
+            <button class="vote-btn" onclick="vote(this,'up'); event.stopPropagation()" title="Good pick">↑</button>
+            <button class="vote-btn" onclick="vote(this,'down'); event.stopPropagation()" title="Not for me">↓</button>
+          </div>
+          <span class="row-expand-meta">${esc(pick.source)} · ${pick.score}/10${srcExtra}${srcLabel}</span>
+        </div>
+      </div>` : '';
+
+    const clickAttr = pick.link
+      ? `onclick="markRead(this); event.stopPropagation()"`
+      : `onclick="event.stopPropagation()"`;
+
+    return `<div class="pick-row" data-score="${pick.score}" data-url="${esc(pick.link || '')}" onclick="expandRow(this)">
+      <div class="row-col-index">
+        <span class="row-score ${badgeClass}">${pick.score}</span>
+      </div>
+      <div class="row-col-main">
+        <a class="row-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${clickAttr}>${esc(pick.title)} →</a>
+        ${expandHtml}
+      </div>
+      <div class="row-col-meta">
+        <span class="row-source-badge">${esc(pick.source)}</span>
+        <span class="row-timestamp"${tsAttr}>${tsDisplay}</span>
+      </div>
+    </div>`;
   }
 
-  function toggleView() {
-    setView(currentView === 'list' ? 'cards' : 'list');
+  // ── Expand/collapse row ───────────────────────────────────────
+  function expandRow(el) {
+    const panel = el.querySelector('.row-expand');
+    if (!panel) return;
+    const isExpanded = !panel.hidden;
+    panel.hidden = isExpanded;
+    el.classList.toggle('expanded', !isExpanded);
   }
 
   // ── Read state (localStorage) ────────────────────────────────
@@ -1569,11 +897,8 @@
 
   function setReadUI(card) {
     card.classList.add('read');
-    const link = card.querySelector('.read-link');
-    if (link) link.innerHTML = '✓ Read';
   }
 
-  // Returns today's date in CT as YYYY-MM-DD
   function ctDateStr() {
     return new Date().toLocaleDateString('sv-SE', { timeZone: 'America/Chicago' });
   }
@@ -1597,19 +922,16 @@
   function incrementReadStats() {
     const today = ctDateStr();
 
-    // Read Today
     let todayData = { date: '', count: 0 };
     try { todayData = JSON.parse(localStorage.getItem('blank_read_today') || '{}'); } catch {}
     if (todayData.date !== today) todayData = { date: today, count: 0 };
     todayData.count++;
     localStorage.setItem('blank_read_today', JSON.stringify(todayData));
 
-    // Total Read
     let total = 0;
     try { total = parseInt(localStorage.getItem('blank_read_total') || '0', 10) || 0; } catch {}
     localStorage.setItem('blank_read_total', String(total + 1));
 
-    // Daily Streak — advance only on the first read of a new day
     let streakData = { lastDate: '', streak: 0 };
     try { streakData = JSON.parse(localStorage.getItem('blank_read_streak') || '{}'); } catch {}
     if (streakData.lastDate !== today) {
@@ -1639,7 +961,7 @@
   }
 
   function markRead(linkEl) {
-    const card = linkEl.classList.contains('pick-row') ? linkEl : (linkEl.closest('.pick-card') || linkEl.closest('.pick-row'));
+    const card = linkEl.closest('.pick-row') || linkEl.closest('.pick-card');
     if (!card) return;
     const url = linkEl.href;
     const urls = getReadUrls();
@@ -1654,18 +976,17 @@
   function applyReadState() {
     const urls = getReadUrls();
     if (!urls.size) return;
-    document.querySelectorAll('.pick-card[data-url], .pick-row[data-url]').forEach(card => {
+    document.querySelectorAll('.pick-row[data-url]').forEach(card => {
       if (urls.has(card.dataset.url)) setReadUI(card);
     });
   }
 
   // ── Pick count display ───────────────────────────────────────
   function updateCount() {
-    const n = document.querySelectorAll('#section-latest .pick-card, #section-latest .pick-row').length;
-    document.getElementById('filter-count').textContent = n ? `${n} pick${n !== 1 ? 's' : ''}` : '';
+    // Count is shown in group headers; no separate counter element needed
   }
 
-  // ── X Trending full list (inline module + sidebar) ──────────
+  // ── X Trending full list ─────────────────────────────────────
   function trendRankClass(i) {
     return i < 3 ? 'rank-hot' : i < 7 ? 'rank-warm' : '';
   }
@@ -1691,79 +1012,6 @@
     </div>`;
   }
 
-
-  // ── Sidebar ──────────────────────────────────────────────────
-  function renderSidebar(latestRuns, allRuns) {
-    const today = latestRuns.flatMap(r => r.picks);
-    const picks = today.length;
-    const top   = picks ? Math.max(...today.map(p => p.score)) : '—';
-    const runs  = latestRuns.length;
-
-    const statsHtml = `<div class="sb-section">
-      <div class="sb-title">Today</div>
-      <div class="sb-stats">
-        <div class="sb-stat"><span class="sb-stat-value">${picks}</span><span class="sb-stat-label">picks</span></div>
-        <div class="sb-stat"><span class="sb-stat-value">${top}</span><span class="sb-stat-label">top score</span></div>
-        <div class="sb-stat"><span class="sb-stat-value">${runs}</span><span class="sb-stat-label">runs</span></div>
-      </div>
-    </div>`;
-
-    const { readToday, total, streak } = getReadStats();
-    const readHtml = `<div class="sb-section">
-      <div class="sb-title">Reading</div>
-      <div class="sb-stats">
-        <div class="sb-stat"><span class="sb-stat-value" id="sb-read-today">${readToday}</span><span class="sb-stat-label">read today</span></div>
-        <div class="sb-stat"><span class="sb-stat-value" id="sb-read-total">${total}</span><span class="sb-stat-label">all time</span></div>
-        <div class="sb-stat"><span class="sb-stat-value" id="sb-read-streak">${streak}</span><span class="sb-stat-label">day streak</span></div>
-      </div>
-    </div>`;
-
-    const now = new Date(), cutoff = new Date(now);
-    cutoff.setDate(cutoff.getDate() - 7);
-    let topPick = null, topMeta = '';
-    for (const run of allRuns) {
-      if (new Date((run.ct_date || run.date) + 'T00:00:00') < cutoff) continue;
-      for (const p of run.picks) {
-        if (!topPick || p.score > topPick.score) { topPick = p; topMeta = run.display_date || run.date; }
-      }
-    }
-
-    let topHtml = `<div class="sb-section"><div class="sb-title">Best this week</div>`;
-    if (!topPick) {
-      topHtml += '<div class="sb-empty">No picks yet</div>';
-    } else {
-      const tag  = topPick.link ? 'a' : 'div';
-      const href = topPick.link ? ` href="${esc(topPick.link)}" target="_blank" rel="noopener noreferrer"` : '';
-      const topTier = topPick.score >= 9 ? ' badge-legendary' : topPick.score >= 8 ? ' badge-rare' : '';
-      topHtml += `<${tag} class="sb-top-pick"${href}>
-        <div class="sb-top-pick-header"><span class="score-badge${topTier}">${topPick.score}</span></div>
-        <div class="sb-top-pick-title">${esc(topPick.title)}</div>
-        <div class="sb-top-pick-meta">${esc(topMeta)}</div>
-      </${tag}>`;
-    }
-    topHtml += '</div>';
-
-    const counts = {};
-    today.filter(p => !isTrendPick(p)).forEach(p => { counts[p.source] = (counts[p.source] || 0) + 1; });
-    const sources = Object.entries(counts).sort((a,b) => b[1]-a[1]);
-    let srcHtml = `<div class="sb-section"><div class="sb-title">Sources today</div>`;
-    if (!sources.length) {
-      srcHtml += '<div class="sb-empty">No sources yet</div>';
-    } else {
-      sources.forEach(([s, c]) => {
-        srcHtml += `<div class="sb-source-row"><span class="sb-source-name">${esc(s)}</span><span class="sb-source-count">${c}</span></div>`;
-      });
-    }
-    srcHtml += '</div>';
-
-    const activityHtml = `<div class="sb-section">
-      <div class="sb-title">Live</div>
-      <div class="activity-feed" id="sb-activity"></div>
-    </div>`;
-    document.getElementById('sidebar-body').innerHTML = statsHtml + readHtml + topHtml + srcHtml + activityHtml;
-    renderActivitySection();
-  }
-
   // ── Main render ──────────────────────────────────────────────
   function render(runs) {
     if (!runs || !runs.length) {
@@ -1772,103 +1020,93 @@
     }
 
     cachedRuns = runs;
-    const latestDate = runs[0].ct_date || runs[0].date;
-    const latestRuns = runs.filter(r => (r.ct_date || r.date) === latestDate);
-    const cutoff     = new Date(latestDate + 'T12:00:00Z');
-    cutoff.setUTCDate(cutoff.getUTCDate() - 7);
-    const cutoffStr  = cutoff.toISOString().slice(0, 10);
-    const olderRuns  = runs.filter(r => {
-      const d = r.ct_date || r.date;
-      return d !== latestDate && d > cutoffStr;
-    });
 
-    document.getElementById('filter-date').textContent = latestRuns[0].display_date || latestDate;
-
-    // Flatten today's picks in reverse-chronological order (latestRuns is already newest-first)
-    let html = buildTrendsModule(latestRuns[0]?.x_trends || []);
-    html += '<div id="section-latest">';
-    for (const run of latestRuns) {
-      const runIsoTs = (run.date && run.time)
-        ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z`
-        : null;
-      for (const pick of run.picks) {
-        html += currentView === 'list'
-          ? renderPickRow(pick, run.display_time, runIsoTs)
-          : renderPickCard(pick, run.display_time, runIsoTs);
-      }
+    // Group runs by ct_date, preserving newest-first order
+    const dateMap = new Map();
+    for (const run of runs) {
+      const d = run.ct_date || run.date;
+      if (!dateMap.has(d)) dateMap.set(d, []);
+      dateMap.get(d).push(run);
     }
-    html += '</div>';
 
-    if (olderRuns.length) {
-      const byDate = {};
-      for (const run of olderRuns) {
-        const rDate = run.ct_date || run.date;
-        (byDate[rDate] = byDate[rDate] || []).push(run);
+    let html = '';
+    let isFirst = true;
+
+    for (const [date, dateRuns] of dateMap) {
+      const allPicks   = dateRuns.flatMap(r => r.picks);
+      const pickCount  = allPicks.length;
+      const latestRun  = dateRuns[0];
+      const latestIsoTs = (latestRun.date && latestRun.time)
+        ? `${latestRun.date}T${latestRun.time.slice(0,2)}:${latestRun.time.slice(2,4)}:00Z`
+        : null;
+      const metaStr    = `${pickCount} pick${pickCount !== 1 ? 's' : ''}${latestIsoTs ? ' · ' + timeAgo(latestIsoTs) : ''}`;
+      const sectionId  = isFirst ? 'group-today' : `group-${esc(date)}`;
+
+      html += `<section class="date-group" id="${sectionId}">`;
+      html += `<div class="group-header">
+        <span class="group-date-label">${esc(latestRun.display_date || date)}</span>
+        <span class="group-meta">${metaStr}</span>
+      </div>`;
+
+      // Trends module only in the latest date's section
+      if (isFirst) {
+        html += buildTrendsModule(latestRun.x_trends || []);
       }
 
-      html += `<div class="archive-section" id="archive-section">
-        <div class="archive-label">Earlier</div>
-        <div class="archive-list">`;
+      html += '<div class="picks-table">';
+      for (const run of dateRuns) {
+        const runIsoTs = (run.date && run.time)
+          ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z`
+          : null;
+        for (const pick of run.picks) {
+          html += renderPickRow(pick, run.display_time, runIsoTs);
+        }
+      }
+      html += '</div></section>';
 
-      Object.keys(byDate).sort().reverse().forEach(date => {
-        byDate[date].forEach(run => {
-          run.picks.forEach(pick => {
-            const tag  = pick.link ? 'a' : 'div';
-            const href = pick.link ? ` href="${esc(pick.link)}" target="_blank" rel="noopener noreferrer"` : '';
-            html += `<${tag} class="archive-row" data-label="${esc(run.label)}"${href}>
-              <span class="archive-row-title">${esc(pick.title)}</span>
-              <span class="archive-row-meta">${pick.score} · ${esc(run.display_date)}</span>
-            </${tag}>`;
-          });
-        });
-      });
-
-      html += '</div></div>';
+      isFirst = false;
     }
 
     document.getElementById('feed-container').innerHTML = html;
     applyReadState();
     updateCount();
-    renderSidebar(latestRuns, runs);
   }
 
-  // ── Wire buttons ─────────────────────────────────────────────
+  // ── Wire nav buttons ─────────────────────────────────────────
+  function setActiveTab(activeId) {
+    ['btn-today', 'btn-archive', 'btn-trends'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.classList.toggle('active', id === activeId);
+    });
+  }
+
   function wireButtons() {
-    document.getElementById('btn-today').addEventListener('click', () => {
-      document.getElementById('section-latest')?.scrollIntoView({ behavior: 'smooth' });
-      document.getElementById('btn-today').classList.add('active');
-      document.getElementById('btn-archive').classList.remove('active');
+    document.getElementById('btn-today')?.addEventListener('click', () => {
+      document.getElementById('group-today')?.scrollIntoView({ behavior: 'smooth' });
+      setActiveTab('btn-today');
     });
 
-    document.getElementById('btn-archive').addEventListener('click', () => {
-      document.getElementById('archive-section')?.scrollIntoView({ behavior: 'smooth' });
-      document.getElementById('btn-archive').classList.add('active');
-      document.getElementById('btn-today').classList.remove('active');
+    document.getElementById('btn-archive')?.addEventListener('click', () => {
+      const groups = document.querySelectorAll('.date-group');
+      if (groups.length > 1) groups[1].scrollIntoView({ behavior: 'smooth' });
+      setActiveTab('btn-archive');
     });
 
-    const statsBtn = document.getElementById('btn-stats');
-    const body     = document.getElementById('sidebar-body');
-    if (statsBtn && body) {
-      statsBtn.addEventListener('click', () => {
-        const closed = body.classList.toggle('closed');
-        statsBtn.setAttribute('aria-expanded', !closed);
-        statsBtn.classList.toggle('active', !closed);
-      });
-    }
+    document.getElementById('btn-trends')?.addEventListener('click', () => {
+      document.getElementById('trends-module')?.scrollIntoView({ behavior: 'smooth' });
+      setActiveTab('btn-trends');
+    });
   }
 
-  // ── Sticky positioning ───────────────────────────────────────
+  // ── Sticky header height ─────────────────────────────────────
   function positionSticky() {
-    const headerH = document.querySelector('header').offsetHeight;
-    const fb      = document.getElementById('filter-bar');
-    const sb      = document.getElementById('sidebar');
-
-    fb.style.top = headerH + 'px';
-    if (sb) sb.style.top = (headerH + fb.offsetHeight + 16) + 'px';
+    const header = document.getElementById('site-header');
+    if (!header) return;
+    const h = header.offsetHeight;
+    document.documentElement.style.setProperty('--header-h', h + 'px');
   }
 
   // ── Countdown timer ──────────────────────────────────────────
-  // Run times in CT so DST transitions are handled automatically.
   const RUN_TIMES_CT   = [[8, 30], [13, 30], [19, 30]];
   const CT_HM_FORMAT   = new Intl.DateTimeFormat('en-US', {
     timeZone: 'America/Chicago', hour: '2-digit', minute: '2-digit', hour12: false
@@ -1910,14 +1148,6 @@
   }
 
   function tickCountdown() {
-    const nextEl   = document.getElementById('next-run');
-    const lastEl   = document.getElementById('last-updated');
-    const mobileEl = document.getElementById('mobile-timer-row');
-    const nextStr  = fmtNext(getNextRunMs());
-    const lastStr  = lastRunTime ? fmtLast(Date.now() - lastRunTime.getTime()) : null;
-    if (nextEl) nextEl.textContent = nextStr;
-    if (lastEl && lastStr) lastEl.textContent = lastStr;
-    if (mobileEl) mobileEl.textContent = lastStr ? `${lastStr} · ${nextStr}` : nextStr;
     refreshTimestamps();
     updateTrendsTimestamp();
     refreshActivityTimes();
@@ -1937,21 +1167,9 @@
 
   // ── Live timestamp refresh ────────────────────────────────────
   function refreshTimestamps() {
-    document.querySelectorAll('.card-timestamp[data-run-ts], .row-ts[data-run-ts]').forEach(el => {
+    document.querySelectorAll('.row-timestamp[data-run-ts]').forEach(el => {
       const ts = el.dataset.runTs;
       if (ts) el.textContent = timeAgo(ts);
-    });
-  }
-
-  // ── Score pulse ───────────────────────────────────────────────
-  function initScorePulse() {
-    document.querySelectorAll('.pick-card.score-elite').forEach(card => {
-      card.addEventListener('animationend', function onEnd(e) {
-        if (e.animationName === 'fadeUp') {
-          card.removeEventListener('animationend', onEnd);
-          card.classList.add('pulsing');
-        }
-      });
     });
   }
 
@@ -1960,15 +1178,9 @@
     const bar = document.getElementById('progress-bar');
     if (!bar) return;
     function update() {
-      const latest = document.getElementById('section-latest');
-      const archive = document.getElementById('archive-section');
-      // Measure progress only through today's picks (section-latest).
-      // Use the top of archive-section as the endpoint, or bottom of section-latest if no archive.
-      const endpoint = archive
-        ? archive.getBoundingClientRect().top + window.scrollY
-        : (latest ? latest.getBoundingClientRect().bottom + window.scrollY : document.documentElement.scrollHeight);
-      const pct = endpoint > window.innerHeight
-        ? Math.min(100, (window.scrollY / (endpoint - window.innerHeight)) * 100)
+      const total = document.documentElement.scrollHeight;
+      const pct = total > window.innerHeight
+        ? Math.min(100, (window.scrollY / (total - window.innerHeight)) * 100)
         : 100;
       bar.style.width = pct + '%';
     }
@@ -1994,13 +1206,9 @@
     const el = document.getElementById('sb-activity');
     if (!el) return;
     const events = getActivity();
-    if (!events.length) {
-      el.innerHTML = '<div class="sb-empty">No activity yet</div>';
-      return;
-    }
+    if (!events.length) { el.innerHTML = ''; return; }
     el.innerHTML = events.slice(0, 8).map(e => `
       <div class="activity-item">
-        <div class="activity-dot dot-${esc(e.type)}"></div>
         <span class="activity-text">${esc(e.text)}</span>
         <span class="activity-time" data-ts="${e.ts}">${timeAgo(new Date(e.ts).toISOString())}</span>
       </div>`).join('');
@@ -2030,8 +1238,7 @@
       const data = await res.json();
       if (!data.runs?.length) return;
 
-      // Banner check — compare run fingerprint
-      const latest     = data.runs[0];
+      const latest      = data.runs[0];
       const fingerprint = (latest.date || '') + (latest.time || '');
       if (!picksFingerprint) {
         picksFingerprint = fingerprint;
@@ -2045,7 +1252,7 @@
         addActivity('drop', `New picks dropped at ${timeStr}`);
       }
 
-      // Trends refresh — update grid every call
+      // Trends refresh
       const latestDate = latest.ct_date || latest.date;
       const latestRun  = data.runs.find(r => (r.ct_date || r.date) === latestDate);
       const topics = latestRun?.x_trends || [];
@@ -2090,13 +1297,10 @@
       }
       render(data.runs);
       wireButtons();
-      updateViewBtn();
       tickCountdown();
       positionSticky();
-      initScorePulse();
       updateTrendsTimestamp();
 
-      // Log initial activity event (once per run fingerprint)
       if (data.runs?.length) {
         const latest   = data.runs[0];
         const existing = getActivity();
@@ -2122,10 +1326,9 @@
   loadFeed();
   tickCountdown();
   setInterval(tickCountdown, 60_000);
-  // Poll every 5 min — checks for new picks AND refreshes trends
   setInterval(checkForNewPicksAndTrends, 5 * 60_000);
 
-  applyTheme(localStorage.getItem('blank_theme') || 'dark');
+  applyTheme(localStorage.getItem('blank_theme') || 'light');
   initNotifBtn();
   ensurePushSubscription();
 
@@ -2134,26 +1337,30 @@
     navigator.serviceWorker.register('sw.js').catch(() => {});
   }
 
-  // ── Breaking news: render cards ──────────────────────────────
+  // ── Breaking news: render rows ───────────────────────────────
   function renderBreakingCard(item) {
     const searchUrl = esc(item.search_url || `https://www.google.com/search?q=${encodeURIComponent(item.topic)}`);
-    const traffic   = item.traffic ? ` <span style="font-size:10px;color:var(--ink-4);font-weight:400">${esc(item.traffic)} searches</span>` : '';
+    const traffic   = item.traffic ? `${esc(item.traffic)} searches` : '';
     const detected  = item.detected_at ? timeAgo(item.detected_at) : '';
-    return `<div class="pick-card card-breaking" data-breaking-id="${esc(item.id)}">
-      <div class="card-body">
-        <div class="card-meta">
-          <span class="breaking-badge">Breaking</span>${traffic}
-          <span class="card-timestamp">${esc(detected)}</span>
+
+    return `<div class="breaking-row" data-breaking-id="${esc(item.id)}">
+      <div class="row-col-index">
+        <span class="breaking-badge">!</span>
+      </div>
+      <div class="row-col-main">
+        <a class="row-title-link" href="${searchUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+          ${esc(item.topic)} →
+        </a>
+        <div class="row-expand" hidden>
+          <p class="row-why">Velocity spike detected — newly trending in the US${traffic ? '. ' + traffic + '.' : ''}</p>
+          <div class="row-expand-footer">
+            <span class="row-expand-meta">BREAKING NEWS</span>
+          </div>
         </div>
-        <a class="card-title" href="${searchUrl}" target="_blank" rel="noopener noreferrer">${esc(item.topic)}</a>
-        <div class="card-why" style="font-size:12px;color:var(--ink-4);margin-bottom:8px">
-          Velocity spike detected — newly trending in the US
-        </div>
-        <div class="card-footer">
-          <a class="read-link" href="${searchUrl}" target="_blank" rel="noopener noreferrer">
-            Search Google <span class="read-arrow">→</span>
-          </a>
-        </div>
+      </div>
+      <div class="row-col-meta">
+        <span class="row-source-badge">Breaking</span>
+        <span class="row-timestamp">${detected}</span>
       </div>
     </div>`;
   }
@@ -2171,7 +1378,11 @@
     }
 
     existing.innerHTML = `<div class="breaking-section-label">Breaking now</div>` +
-      items.map(renderBreakingCard).join('');
+      items.map(item => {
+        const card = renderBreakingCard(item);
+        // Wrap each breaking row so expandRow() can be triggered
+        return `<div onclick="expandRow(this.querySelector('.breaking-row'))" style="cursor:pointer">${card}</div>`;
+      }).join('');
   }
 
   // ── Breaking news: polling ───────────────────────────────────
@@ -2187,7 +1398,6 @@
 
       const latestId = items[0].id;
       if (latestId !== lastBreakingId && lastBreakingId !== null) {
-        // New spike since our last check
         showBreakingNotification(items[0]);
         addActivity('drop', `⚡ Breaking: ${items[0].topic}`);
       }
@@ -2240,12 +1450,7 @@
   }
 
   async function saveSubscription(sub) {
-    console.log('[push] saveSubscription: start');
-    if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) {
-      console.warn('[push] saveSubscription: VOTE_TOKEN not injected — cannot write to repo');
-      return;
-    }
-    console.log('[push] saveSubscription: VOTE_TOKEN present, length', VOTE_TOKEN.length);
+    if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) return;
     const apiUrl  = `https://api.github.com/repos/${VOTE_REPO}/contents/subscriptions.json`;
     const headers = {
       'Authorization':        `Bearer ${VOTE_TOKEN}`,
@@ -2255,84 +1460,47 @@
     let sha = null, subs = [];
     try {
       const res = await fetch(apiUrl, { headers });
-      console.log('[push] saveSubscription: GET subscriptions.json →', res.status);
       if (res.ok) {
         const data = await res.json();
         sha  = data.sha;
         subs = JSON.parse(new TextDecoder().decode(
           Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0))
         ));
-        console.log('[push] saveSubscription: existing entries:', subs.length, '| sha:', sha);
       }
-    } catch (e) {
-      console.warn('[push] saveSubscription: GET failed:', e);
-    }
-    if (subs.some(s => s.endpoint === sub.endpoint)) {
-      console.log('[push] saveSubscription: endpoint already saved — skipping PUT');
-      return;
-    }
+    } catch {}
+    if (subs.some(s => s.endpoint === sub.endpoint)) return;
     subs.push(sub);
     const enc    = new TextEncoder().encode(JSON.stringify(subs, null, 2) + '\n');
     const binary = Array.from(enc, b => String.fromCharCode(b)).join('');
     const body   = { message: 'Add push subscription', content: btoa(binary), branch: 'main' };
     if (sha) body.sha = sha;
     try {
-      const putRes = await fetch(apiUrl, {
+      await fetch(apiUrl, {
         method: 'PUT',
         headers: { ...headers, 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
       });
-      console.log('[push] saveSubscription: PUT →', putRes.status, putRes.ok ? '✅ saved' : '❌ failed');
-      if (!putRes.ok) console.warn('[push] saveSubscription: PUT body:', await putRes.text());
-    } catch (e) {
-      console.warn('[push] saveSubscription: PUT exception:', e);
-    }
+    } catch {}
   }
 
   async function subscribeToPush() {
-    // Core subscription logic — shared by enableNotifications() and ensurePushSubscription()
-    console.log('[push] subscribeToPush: start');
-    console.log('[push] subscribeToPush: serviceWorker supported?', 'serviceWorker' in navigator);
-    console.log('[push] subscribeToPush: PushManager supported?', 'PushManager' in window);
-    console.log('[push] subscribeToPush: VAPID_PUBLIC_KEY injected?',
-      VAPID_PUBLIC_KEY && !VAPID_PUBLIC_KEY.startsWith('__'),
-      '| starts with:', (VAPID_PUBLIC_KEY || '').slice(0, 12) + '…');
-
-    if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
-      console.warn('[push] subscribeToPush: push not supported in this browser — aborting');
-      return;
-    }
-    if (!VAPID_PUBLIC_KEY || VAPID_PUBLIC_KEY.startsWith('__')) {
-      console.warn('[push] subscribeToPush: VAPID_PUBLIC_KEY not injected — aborting');
-      return;
-    }
+    if (!('serviceWorker' in navigator) || !('PushManager' in window)) return;
+    if (!VAPID_PUBLIC_KEY || VAPID_PUBLIC_KEY.startsWith('__')) return;
     const reg = await navigator.serviceWorker.ready;
-    console.log('[push] subscribeToPush: SW ready, scope:', reg.scope);
-
     let sub = await reg.pushManager.getSubscription();
-    console.log('[push] subscribeToPush: existing pushManager subscription?', sub ? 'yes — ' + sub.endpoint.slice(0, 40) + '…' : 'none');
-
     if (!sub) {
-      console.log('[push] subscribeToPush: calling pushManager.subscribe()…');
       sub = await reg.pushManager.subscribe({
         userVisibleOnly:      true,
         applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
       });
-      console.log('[push] subscribeToPush: subscribe() succeeded, endpoint:', sub.endpoint.slice(0, 40) + '…');
     }
     await saveSubscription(sub.toJSON());
   }
 
   async function ensurePushSubscription() {
-    // On page load: if permission already granted but no browser subscription exists, re-subscribe silently.
     if (!('Notification' in window)) return;
     if (Notification.permission !== 'granted') return;
-    console.log('[push] ensurePushSubscription: permission already granted — checking subscription…');
-    try {
-      await subscribeToPush();
-    } catch (e) {
-      console.warn('[push] ensurePushSubscription failed:', e);
-    }
+    try { await subscribeToPush(); } catch {}
   }
 
   async function enableNotifications() {
@@ -2340,23 +1508,17 @@
       alert('This browser does not support notifications.');
       return;
     }
-    console.log('[push] enableNotifications: current permission:', Notification.permission);
     const perm = await Notification.requestPermission();
-    console.log('[push] enableNotifications: permission result:', perm);
     const btn  = document.getElementById('notif-btn');
     if (perm === 'granted') {
       if (btn) { btn.textContent = '🔔'; btn.title = 'Notifications enabled'; }
-      try {
-        await subscribeToPush();
-      } catch (e) {
-        console.warn('[push] enableNotifications: subscribeToPush failed:', e);
-      }
+      try { await subscribeToPush(); } catch {}
     } else {
       if (btn) { btn.textContent = '🔕'; btn.title = 'Notifications blocked'; }
     }
   }
 
-  // Poll breaking news every 2 minutes (more frequent than picks poll)
+  // Poll breaking news every 2 minutes
   checkBreakingNews();
   setInterval(checkBreakingNews, 2 * 60_000);
 </script>

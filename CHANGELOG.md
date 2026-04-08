@@ -4,6 +4,24 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-07] Stripe Dev Blog-style redesign of web feed
+
+Complete visual redesign of `index.html` to match Stripe Dev Blog aesthetic:
+- Light gray background (#E8E8E8), lime green accent (#C4E817), near-black text (#1E1E1E)
+- sohne-var / Helvetica Neue / Arial sans-serif font stack throughout (no more Georgia/serif)
+- New sticky header: BLANK wordmark + Today/Archive/Trends nav tabs + action buttons
+- Full-width single-column layout (max 860px, no sidebar)
+- Picks rendered as a three-column grid table (score | title | source/time)
+- Date-grouped sections with sticky headers and pick counts
+- Expandable rows: click any row to reveal "Why it matters" + carousel hook angle
+- Carousel angle parsed into trigger label badge + formatted hook lines
+- Flat score badges: grey (7), dark (8), lime accent (9–10) — no glows
+- Vote buttons moved inside the expand panel
+- X Trends module kept as a flat card at the top of today's section
+- Dark mode preserved with same lime accent
+- Mobile: two-column at ≤479px (meta column hidden), tablet at 480–859px
+- Removed: card view, sidebar, filter bar, rarity glows, serif headlines
+
 ## [2026-04-07] Fix HOOK bleeding into website "Why" field
 
 The `why` regex in `deploy-pages.yml` didn't know to stop at `**Hook:**`, so the hook text was being captured as part of the `why` value and rendered on the site. Added `\n\n\*\*Hook` as a stop condition in the regex.
