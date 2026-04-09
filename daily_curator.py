@@ -35,6 +35,7 @@ MIN_SCORE               = 6
 MAX_PICKS               = 30
 DIRECT_RSS_TIMEOUT      = 10   # seconds per feed fetch
 SOURCES_JSON_PATH       = "sources.json"
+CLAUDE_SCORING_BATCH_SIZE = 50  # max articles per Claude scoring call
 
 INOREADER_BASE_URL   = "https://www.inoreader.com/reader/api/0"
 
@@ -612,10 +613,8 @@ Articles to analyze:
     return articles
 
 
-def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[str] | None = None) -> list[dict]:
-    print(f"\n🤖 Sending {len(articles)} articles to Claude for evaluation...")
-    print("   (This may take 15–30 seconds...)\n")
-
+def _build_scoring_prompt(articles: list[dict], trending_context_block: str) -> str:
+    """Build the Claude scoring prompt for a batch of articles (numbered 1..N)."""
     articles_text = ""
     for i, article in enumerate(articles, start=1):
         trending_flag = ""
@@ -631,15 +630,7 @@ ARTICLE {i}:{trending_flag}
   Summary:   {(article['summary'] or '(no summary — evaluate based on the topic name alone)')[:300]}
 ---"""
 
-    # Build the live trending context block to inject into the prompt
-    if trending_topics:
-        topics_list = "\n".join(f"  • {t}" for t in trending_topics[:30])
-        trending_context_block = f"Live trending topics right now:\n{topics_list}"
-        print(f"   📊 Injecting {len(trending_topics[:30])} live trending topics into scoring prompt.")
-    else:
-        trending_context_block = "(No live trending data available for this run.)"
-
-    prompt = f"""You are a senior editor curating a daily intelligence briefing for readers who want to stay sharp on culture, business, and ideas.
+    return f"""You are a senior editor curating a daily intelligence briefing for readers who want to stay sharp on culture, business, and ideas.
 
 I'll give you a list of recent articles. Evaluate EACH article on these 4 criteria:
 
@@ -713,6 +704,15 @@ Here are the articles to evaluate:
 
 Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown code blocks."""
 
+
+def _score_batch(batch: list[dict], trending_context_block: str, label: str) -> list[dict]:
+    """
+    Score a single batch of articles via Claude.
+    Articles are numbered 1..N locally within the batch.
+    On parse failure after one retry, logs a warning and returns the batch
+    with score=0 rather than terminating the pipeline.
+    """
+    prompt = _build_scoring_prompt(batch, trending_context_block)
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
     def call_claude():
@@ -733,11 +733,14 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
             sys.exit(1)
 
     def parse_response(response):
-        import re
         response_text = response.content[0].text.strip()
+        # Strip markdown code fences if present
+        response_text = re.sub(r'^```(?:json)?\s*', '', response_text, flags=re.MULTILINE)
+        response_text = re.sub(r'\s*```$', '', response_text, flags=re.MULTILINE)
         try:
             return json.loads(response_text)
         except json.JSONDecodeError:
+            # Fall back to extracting the outermost JSON object
             json_match = re.search(r'\{[\s\S]*\}', response_text)
             if json_match:
                 try:
@@ -748,24 +751,59 @@ Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown 
 
     result = parse_response(call_claude())
     if result is None:
-        print("   ⚠️  Claude returned an unexpected format — retrying once...")
+        print(f"   ⚠️  Claude returned unexpected format for {label} — retrying once...")
         result = parse_response(call_claude())
+
     if result is None:
-        print("❌ Claude returned an unexpected format on both attempts.")
-        sys.exit(1)
+        print(f"   ❌ Claude returned unexpected format for {label} on both attempts — assigning score 0 to this batch.")
+        for article in batch:
+            article.setdefault("score", 0)
+            article.setdefault("why", None)
+            article.setdefault("hook", None)
+        return batch
 
     evaluations = result.get("evaluations", [])
     eval_by_number = {e["article_number"]: e for e in evaluations if e.get("article_number") is not None}
-    enriched_articles = []
-    for i, article in enumerate(articles, start=1):
+    enriched = []
+    for i, article in enumerate(batch, start=1):
         eval_data = eval_by_number.get(i, {})
         article["score"] = eval_data.get("score", 0)
         article["why"]   = eval_data.get("why")
         article["hook"]  = eval_data.get("hook")
-        enriched_articles.append(article)
+        enriched.append(article)
 
-    print(f"✅ Claude evaluated all {len(enriched_articles)} articles.")
-    return enriched_articles
+    return enriched
+
+
+def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[str] | None = None) -> list[dict]:
+    if not articles:
+        return []
+
+    # Build the trending context block once — shared across all batches
+    if trending_topics:
+        topics_list = "\n".join(f"  • {t}" for t in trending_topics[:30])
+        trending_context_block = f"Live trending topics right now:\n{topics_list}"
+        print(f"   📊 Injecting {len(trending_topics[:30])} live trending topics into scoring prompt.")
+    else:
+        trending_context_block = "(No live trending data available for this run.)"
+
+    total = len(articles)
+    batches = [articles[i:i + CLAUDE_SCORING_BATCH_SIZE] for i in range(0, total, CLAUDE_SCORING_BATCH_SIZE)]
+    n_batches = len(batches)
+
+    if n_batches == 1:
+        print(f"\n🤖 Sending {total} articles to Claude for evaluation...")
+    else:
+        print(f"\n🤖 Scoring {total} articles in {n_batches} batches of up to {CLAUDE_SCORING_BATCH_SIZE}...")
+
+    enriched = []
+    for n, batch in enumerate(batches, 1):
+        label = f"batch {n}/{n_batches}" if n_batches > 1 else "batch"
+        print(f"   Scoring {label} ({len(batch)} items)...")
+        enriched.extend(_score_batch(batch, trending_context_block, label))
+
+    print(f"✅ Claude evaluated all {len(enriched)} articles.")
+    return enriched
 
 
 def deduplicate_articles_pre_scoring(articles: list[dict]) -> list[dict]:

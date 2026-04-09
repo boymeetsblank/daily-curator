@@ -4,6 +4,13 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-09] Fix Claude scoring failure on large article pools
+
+- **Root cause:** With Inoreader + Direct RSS combined, pools of 200+ articles require ~20k output tokens — more than double the 8,192 `max_tokens` limit. Claude's response was truncated mid-JSON, causing the parse failure.
+- **Chunked scoring:** `evaluate_articles_with_claude()` now splits large pools into batches of 50 (`CLAUDE_SCORING_BATCH_SIZE`) via a private `_score_batch()` helper. Each batch is scored independently and results are reassembled in order.
+- **Graceful batch failure:** If a batch fails to parse after one retry, it logs a warning and assigns score 0 to that batch — the pipeline continues rather than terminating.
+- **Improved JSON parsing:** Strip markdown code fences (` ```json `) before parsing, catching another common edge case.
+
 ## [2026-04-09] Direct RSS parallel fetch + vote persistence
 
 - **Direct RSS (sources.json):** Added `fetch_articles_from_direct_rss()` which reads `sources.json` and fetches all feeds in parallel (10 workers, 10s timeout per feed). Failed fetches are logged and skipped — the pipeline continues.
