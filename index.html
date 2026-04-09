@@ -141,6 +141,211 @@
     body.card-view .list-header { display: none; }
 
     /* ─────────────────────────────────────────
+       SETTINGS PANEL
+    ───────────────────────────────────────── */
+    #settings-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.2);
+      z-index: 299;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    #settings-backdrop.open { opacity: 1; pointer-events: auto; }
+
+    #settings-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 340px;
+      height: 100vh;
+      background: var(--bg);
+      border-left: 1px solid var(--border);
+      z-index: 300;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.22s cubic-bezier(0.4,0,0.2,1);
+      overflow: hidden;
+    }
+    #settings-panel.open { transform: translateX(0); }
+
+    .sp-head {
+      height: 38px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      flex-shrink: 0;
+    }
+    .sp-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      flex: 1;
+    }
+    .sp-close {
+      background: none;
+      border: none;
+      font-size: 18px;
+      line-height: 1;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 4px 0 4px 8px;
+      transition: color 0.1s;
+    }
+    .sp-close:hover { color: var(--ink); }
+
+    .sp-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 0 16px 40px;
+    }
+
+    .sp-section { padding-top: 18px; }
+
+    .sp-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding-bottom: 10px;
+      display: block;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 12px;
+    }
+
+    .sp-view-toggle { display: flex; gap: 6px; }
+
+    .sp-field { margin-bottom: 10px; }
+    .sp-field-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .sp-input {
+      width: 100%;
+      box-sizing: border-box;
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--ink);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0;
+      padding: 7px 10px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .sp-input:focus { border-color: var(--muted); }
+    .sp-input::placeholder { color: var(--faint); }
+
+    .sp-select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%237A7A7A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 28px;
+      cursor: pointer;
+    }
+
+    .sp-url-row { display: flex; gap: 6px; }
+    .sp-url-row .sp-input { flex: 1; min-width: 0; }
+
+    .sp-btn {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: none;
+      border: 1px solid var(--border);
+      padding: 7px 12px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color 0.1s, border-color 0.1s;
+      border-radius: 0;
+    }
+    .sp-btn:hover { color: var(--ink); border-color: var(--muted); }
+    .sp-btn.primary {
+      width: 100%;
+      margin-top: 4px;
+      color: var(--bg);
+      background: var(--ink);
+      border-color: var(--ink);
+    }
+    .sp-btn.primary:hover { opacity: 0.8; }
+    .sp-btn.primary:disabled { opacity: 0.35; cursor: default; }
+
+    .sp-status { font-size: 11px; color: var(--muted); margin-top: 7px; min-height: 16px; }
+    .sp-status.ok  { color: #3a6e00; }
+    [data-theme="dark"] .sp-status.ok { color: #a3e635; }
+    .sp-status.err { color: var(--red); }
+
+    .sp-sources { display: flex; flex-direction: column; }
+    .sp-source-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .sp-source-item.paused { opacity: 0.4; }
+    .sp-source-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--muted);
+      flex-shrink: 0;
+    }
+    .sp-source-item.paused .sp-source-dot { background: var(--faint); }
+    .sp-source-info { flex: 1; min-width: 0; }
+    .sp-source-name {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .sp-source-cat {
+      font-size: 10px;
+      color: var(--faint);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .sp-source-actions { display: flex; gap: 4px; flex-shrink: 0; }
+    .sp-source-btn {
+      font-family: var(--sans);
+      font-size: 10px;
+      color: var(--muted);
+      background: none;
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: color 0.1s, border-color 0.1s;
+    }
+    .sp-source-btn:hover { color: var(--ink); border-color: var(--muted); }
+    .sp-source-btn.remove:hover { color: var(--red); border-color: var(--red); }
+
+    .sp-msg { font-size: 12px; color: var(--faint); padding: 12px 0; }
+
+    #settings-btn { padding: 3px 6px; }
+
+    @media (max-width: 680px) {
+      #settings-panel { width: 100vw; border-left: none; }
+    }
+
+    /* ─────────────────────────────────────────
        CARD VIEW
     ───────────────────────────────────────── */
     .pick-card {
@@ -891,11 +1096,78 @@
       <button class="tb-link"        id="tb-trends"  onclick="scrollToTrends()">Trends</button>
     </div>
     <div class="tb-actions">
-      <button class="tb-btn vt-btn" data-view="list" onclick="setView('list')" title="List view">≡ List</button>
-      <button class="tb-btn vt-btn" data-view="card" onclick="setView('card')" title="Card view">⊞ Cards</button>
       <button class="tb-btn" id="notif-btn" onclick="enableNotifications()">🔔</button>
       <button class="tb-btn" id="theme-toggle" onclick="toggleTheme()"></button>
+      <button class="tb-btn" id="settings-btn" onclick="openSettings()" title="Settings" aria-label="Open settings">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </button>
     </div>
+  </div>
+</div>
+
+<!-- ── Settings backdrop ── -->
+<div id="settings-backdrop" onclick="closeSettings()"></div>
+
+<!-- ── Settings panel ── -->
+<div id="settings-panel" role="dialog" aria-label="Settings" aria-modal="true">
+  <div class="sp-head">
+    <span class="sp-title">Settings</span>
+    <button class="sp-close" onclick="closeSettings()" aria-label="Close settings">×</button>
+  </div>
+  <div class="sp-body">
+
+    <!-- FEED VIEW -->
+    <div class="sp-section">
+      <span class="sp-label">/ Feed View</span>
+      <div class="sp-view-toggle">
+        <button class="tb-btn vt-btn" data-view="list" onclick="setView('list')" title="List view">≡ List</button>
+        <button class="tb-btn vt-btn" data-view="card" onclick="setView('card')" title="Card view">⊞ Cards</button>
+      </div>
+    </div>
+
+    <!-- ADD SOURCE -->
+    <div class="sp-section">
+      <span class="sp-label">/ Sources</span>
+
+      <div class="sp-field">
+        <label class="sp-field-label" for="sp-url-input">URL</label>
+        <div class="sp-url-row">
+          <input id="sp-url-input" class="sp-input" type="url" placeholder="Paste article, site, or feed URL…" oninput="spClearStatus('sp-add-status')"/>
+          <button class="sp-btn" id="sp-detect-btn" onclick="spDetectRss()">Detect</button>
+        </div>
+      </div>
+
+      <div class="sp-field">
+        <label class="sp-field-label" for="sp-name-input">Name</label>
+        <input id="sp-name-input" class="sp-input" type="text" placeholder="Source name"/>
+      </div>
+
+      <div class="sp-field">
+        <label class="sp-field-label" for="sp-cat-select">Category</label>
+        <select id="sp-cat-select" class="sp-input sp-select">
+          <option value="culture">Culture</option>
+          <option value="tech">Tech</option>
+          <option value="sports">Sports</option>
+          <option value="fashion">Fashion</option>
+          <option value="sneakers">Sneakers</option>
+          <option value="watches">Watches</option>
+          <option value="other" selected>Other</option>
+        </select>
+      </div>
+
+      <button class="sp-btn primary" id="sp-add-btn" onclick="spAddSource()">Add Source</button>
+      <div class="sp-status" id="sp-add-status"></div>
+    </div>
+
+    <!-- CURRENT SOURCES -->
+    <div class="sp-section">
+      <span class="sp-label">/ Current Sources</span>
+      <div id="sp-sources-list" class="sp-sources">
+        <div class="sp-msg">Loading…</div>
+      </div>
+      <div class="sp-status" id="sp-sources-status"></div>
+    </div>
+
   </div>
 </div>
 
@@ -1193,6 +1465,208 @@
       btn.classList.toggle('active', btn.dataset.view === v)
     );
     if (cachedRuns) render(cachedRuns);
+  }
+
+  // ── Settings panel ───────────────────────────────────────────
+  function openSettings() {
+    document.getElementById('settings-panel').classList.add('open');
+    document.getElementById('settings-backdrop').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    spLoadSources();
+  }
+
+  function closeSettings() {
+    document.getElementById('settings-panel').classList.remove('open');
+    document.getElementById('settings-backdrop').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // GitHub API helpers for sources.json
+  async function spGetSources() {
+    if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) return { sources: [], sha: null };
+    const api = `https://api.github.com/repos/${VOTE_REPO}/contents/sources.json`;
+    const hdr = {'Authorization':`Bearer ${VOTE_TOKEN}`,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+    try {
+      const r = await fetch(api, { headers: hdr });
+      if (!r.ok) return { sources: [], sha: null };
+      const d = await r.json();
+      const sources = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(d.content.replace(/\n/g,'')), c => c.charCodeAt(0))));
+      return { sources: Array.isArray(sources) ? sources : [], sha: d.sha };
+    } catch { return { sources: [], sha: null }; }
+  }
+
+  async function spPutSources(sources, sha, message) {
+    const api = `https://api.github.com/repos/${VOTE_REPO}/contents/sources.json`;
+    const hdr = {'Authorization':`Bearer ${VOTE_TOKEN}`,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+    const enc = new TextEncoder().encode(JSON.stringify(sources, null, 2) + '\n');
+    const bin = Array.from(enc, b => String.fromCharCode(b)).join('');
+    const body = { message, content: btoa(bin), branch: 'main' };
+    if (sha) body.sha = sha;
+    try {
+      const r = await fetch(api, { method: 'PUT', headers: { ...hdr, 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      return r.ok;
+    } catch { return false; }
+  }
+
+  async function spLoadSources() {
+    const listEl = document.getElementById('sp-sources-list');
+    listEl.innerHTML = '<div class="sp-msg">Loading…</div>';
+    if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) {
+      listEl.innerHTML = '<div class="sp-msg">Configure a GitHub token to manage sources.</div>';
+      return;
+    }
+    const { sources } = await spGetSources();
+    spRenderSources(sources);
+  }
+
+  function spRenderSources(sources) {
+    const listEl = document.getElementById('sp-sources-list');
+    if (!sources.length) {
+      listEl.innerHTML = '<div class="sp-msg">No sources yet.</div>';
+      return;
+    }
+    listEl.innerHTML = sources.map((s, i) => {
+      const paused = s.enabled === false;
+      const cat = s.category || 'other';
+      return `<div class="sp-source-item${paused ? ' paused' : ''}">
+        <div class="sp-source-dot"></div>
+        <div class="sp-source-info">
+          <div class="sp-source-name" title="${esc(s.rss||'')}">${esc(s.name || s.rss || '')}</div>
+          <div class="sp-source-cat">${esc(cat)}</div>
+        </div>
+        <div class="sp-source-actions">
+          <button class="sp-source-btn" onclick="spToggleSource(${i})">${paused ? 'Resume' : 'Pause'}</button>
+          <button class="sp-source-btn remove" onclick="spRemoveSource(${i})">×</button>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  function spSetStatus(id, msg, type) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.textContent = msg;
+    el.className = 'sp-status' + (type ? ' ' + type : '');
+  }
+
+  function spClearStatus(id) {
+    const el = document.getElementById(id);
+    if (el) { el.textContent = ''; el.className = 'sp-status'; }
+  }
+
+  async function spDetectRss() {
+    const urlInput  = document.getElementById('sp-url-input');
+    const nameInput = document.getElementById('sp-name-input');
+    const btn       = document.getElementById('sp-detect-btn');
+    let url = urlInput.value.trim();
+    if (!url) return;
+    if (!url.startsWith('http')) url = 'https://' + url;
+    urlInput.value = url;
+
+    btn.textContent = '…';
+    btn.disabled = true;
+    spClearStatus('sp-add-status');
+
+    try {
+      const proxy = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+      const resp  = await fetch(proxy, { signal: AbortSignal.timeout(9000) });
+      const data  = await resp.json();
+      const content = data.contents || '';
+
+      // Decode HTML entities in title
+      function decodeHtml(h) {
+        return h.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'");
+      }
+
+      const titleMatch = content.match(/<title[^>]*>([^<]{1,120})<\/title>/i);
+      const detectedName = titleMatch ? decodeHtml(titleMatch[1].trim()) : '';
+
+      const isFeed = /<rss[\s>]|<feed[\s>]|<channel[\s>]/i.test(content);
+      if (isFeed) {
+        if (detectedName && !nameInput.value) nameInput.value = detectedName;
+        spSetStatus('sp-add-status', '✓ RSS feed detected', 'ok');
+      } else {
+        const rssMatch =
+          content.match(/<link[^>]+type=["']application\/rss\+xml["'][^>]*href=["']([^"']+)["']/i) ||
+          content.match(/<link[^>]+href=["']([^"']+)["'][^>]*type=["']application\/rss\+xml["']/i) ||
+          content.match(/<link[^>]+type=["']application\/atom\+xml["'][^>]*href=["']([^"']+)["']/i);
+        if (rssMatch) {
+          let rssUrl = rssMatch[1];
+          if (rssUrl.startsWith('//')) rssUrl = 'https:' + rssUrl;
+          else if (rssUrl.startsWith('/')) rssUrl = new URL(url).origin + rssUrl;
+          else if (!rssUrl.startsWith('http')) rssUrl = new URL(url).origin + '/' + rssUrl;
+          urlInput.value = rssUrl;
+          if (detectedName && !nameInput.value) nameInput.value = detectedName;
+          spSetStatus('sp-add-status', '✓ RSS feed found', 'ok');
+        } else {
+          if (detectedName && !nameInput.value) nameInput.value = detectedName;
+          spSetStatus('sp-add-status', 'No RSS auto-detected — enter feed URL directly', '');
+        }
+      }
+    } catch {
+      spSetStatus('sp-add-status', 'Could not fetch URL — enter feed URL directly', '');
+    }
+
+    btn.textContent = 'Detect';
+    btn.disabled = false;
+  }
+
+  async function spAddSource() {
+    const rss      = document.getElementById('sp-url-input').value.trim();
+    const name     = document.getElementById('sp-name-input').value.trim();
+    const category = document.getElementById('sp-cat-select').value;
+    const btn      = document.getElementById('sp-add-btn');
+
+    if (!rss)  { spSetStatus('sp-add-status', 'Enter a URL first', 'err'); return; }
+    if (!name) { spSetStatus('sp-add-status', 'Enter a source name', 'err'); return; }
+    if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) {
+      spSetStatus('sp-add-status', 'GitHub token required to save sources', 'err'); return;
+    }
+
+    btn.disabled = true; btn.textContent = 'Adding…';
+    try {
+      const { sources, sha } = await spGetSources();
+      if (sources.some(s => s.rss === rss)) {
+        spSetStatus('sp-add-status', 'This source already exists', 'err');
+        btn.disabled = false; btn.textContent = 'Add Source'; return;
+      }
+      sources.push({ name, rss, category, enabled: true });
+      const ok = await spPutSources(sources, sha, `sources: add ${name}`);
+      if (ok) {
+        spSetStatus('sp-add-status', `✓ ${name} added — takes effect next scheduled run`, 'ok');
+        document.getElementById('sp-url-input').value  = '';
+        document.getElementById('sp-name-input').value = '';
+        document.getElementById('sp-cat-select').value = 'other';
+        spRenderSources(sources);
+      } else {
+        spSetStatus('sp-add-status', 'Save failed — check token has repo write access', 'err');
+      }
+    } catch { spSetStatus('sp-add-status', 'Error saving source', 'err'); }
+    btn.disabled = false; btn.textContent = 'Add Source';
+  }
+
+  async function spRemoveSource(idx) {
+    spSetStatus('sp-sources-status', 'Removing…', '');
+    try {
+      const { sources, sha } = await spGetSources();
+      const [removed] = sources.splice(idx, 1);
+      const ok = await spPutSources(sources, sha, `sources: remove ${removed?.name || idx}`);
+      if (ok) { spSetStatus('sp-sources-status', '✓ Removed', 'ok'); spRenderSources(sources); }
+      else       spSetStatus('sp-sources-status', 'Failed to remove', 'err');
+    } catch { spSetStatus('sp-sources-status', 'Error', 'err'); }
+  }
+
+  async function spToggleSource(idx) {
+    spSetStatus('sp-sources-status', 'Saving…', '');
+    try {
+      const { sources, sha } = await spGetSources();
+      const s = sources[idx];
+      s.enabled = s.enabled === false;  // false → true, true/undefined → false
+      const action = s.enabled ? 'resume' : 'pause';
+      const ok = await spPutSources(sources, sha, `sources: ${action} ${s.name}`);
+      if (ok) { spSetStatus('sp-sources-status', `✓ ${s.enabled ? 'Resumed' : 'Paused'}`, 'ok'); spRenderSources(sources); }
+      else       spSetStatus('sp-sources-status', 'Failed to save', 'err');
+    } catch { spSetStatus('sp-sources-status', 'Error', 'err'); }
   }
 
   // ── Toggle expand / collapse ──────────────────────────────────

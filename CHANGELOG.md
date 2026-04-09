@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-09] Settings panel — gear icon, feed view toggle, source management
+
+- **Gear icon** added to right side of topbar (SVG, consistent with existing button style). List/Cards toggle removed from topbar — it now lives inside the settings panel.
+- **Settings panel** slides in from the right (340px desktop, full-width mobile). Sections: Feed View and Sources. Matches Blank editorial aesthetic — same border, type, and surface variables throughout.
+- **Feed View section** — List / Cards toggle moved here from the topbar. Existing `setView()` logic and localStorage persistence unchanged.
+- **Sources section** — URL input with auto-detect RSS (fetches via allorigins.win CORS proxy, parses RSS link tags and feed content); name field (auto-populated from page `<title>`); category dropdown (culture, tech, sports, fashion, sneakers, watches, other); Add Source button writes to `sources.json` via GitHub API (same pattern as `votes.json`). Duplicate URL check before writing.
+- **Current Sources list** — shows all sources from `sources.json` with Pause/Resume and Remove buttons, each writing back to GitHub. Paused sources render at reduced opacity. Changes take effect on the next scheduled pipeline run.
+
 ## [2026-04-09] Fix Claude scoring failure on large article pools
 
 - **Root cause:** With Inoreader + Direct RSS combined, pools of 200+ articles require ~20k output tokens — more than double the 8,192 `max_tokens` limit. Claude's response was truncated mid-JSON, causing the parse failure.
