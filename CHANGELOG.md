@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-08] Add ROADMAP.md
+
+- Created ROADMAP.md in project root with full product roadmap organized by category (In Progress, Visual/Frontend, Scoring, Feedback Loop, Major Features, Parked).
+
 ## [2026-04-08] List view: rarity left border + remove date column
 
 - **Permanent rarity left border on rows:** Score 8 gets a 2px blue (`#3b82f6`) left border, score 9 gets purple (`#a855f7`), score 10 gets orange (`#f59e0b`). Score 7 has no border. Border is always visible (not only on expand).
