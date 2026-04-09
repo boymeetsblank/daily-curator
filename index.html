@@ -1482,6 +1482,18 @@
   }
 
   // GitHub API helpers for sources.json
+  // Read-only: fetches sources via raw GitHub URL — no token required for public repos
+  async function spFetchSources() {
+    const raw = `https://raw.githubusercontent.com/${VOTE_REPO}/main/sources.json`;
+    try {
+      const r = await fetch(raw + '?cb=' + Date.now());
+      if (!r.ok) return [];
+      const data = await r.json();
+      return Array.isArray(data) ? data : [];
+    } catch { return []; }
+  }
+
+  // Write-only helper: fetches SHA via GitHub API (token required) before a write
   async function spGetSources() {
     if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) return { sources: [], sha: null };
     const api = `https://api.github.com/repos/${VOTE_REPO}/contents/sources.json`;
@@ -1511,11 +1523,7 @@
   async function spLoadSources() {
     const listEl = document.getElementById('sp-sources-list');
     listEl.innerHTML = '<div class="sp-msg">Loading…</div>';
-    if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) {
-      listEl.innerHTML = '<div class="sp-msg">Configure a GitHub token to manage sources.</div>';
-      return;
-    }
-    const { sources } = await spGetSources();
+    const sources = await spFetchSources();
     spRenderSources(sources);
   }
 

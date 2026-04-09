@@ -4,6 +4,11 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-09] Fix: settings panel sources list now loads full sources.json on open
+
+- **Root cause:** `spLoadSources()` guarded on `VOTE_TOKEN` and called `spGetSources()` (GitHub API, auth required) for the read path. When the token was absent or unsubstituted, it returned an empty list — and any subsequent add overwrote `sources.json` with a single entry.
+- **Fix:** Added `spFetchSources()` which reads `sources.json` via the raw GitHub URL (no token required for public repos). `spLoadSources()` now calls this unconditionally, so the full source list always renders on panel open. Authenticated `spGetSources()` is retained for write operations (add/pause/remove) where the GitHub API SHA is required.
+
 ## [2026-04-09] Settings panel — gear icon, feed view toggle, source management
 
 - **Gear icon** added to right side of topbar (SVG, consistent with existing button style). List/Cards toggle removed from topbar — it now lives inside the settings panel.
