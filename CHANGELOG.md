@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-09] List view: right border on content area
+
+- Added `border-right: 1px solid var(--border)` to `.content` — closes the list container on the right side with the same neutral 1px divider used for row borders. Rarity color remains exclusive to the left border.
+
 ## [2026-04-08] Add ROADMAP.md
 
 - Created ROADMAP.md in project root with full product roadmap organized by category (In Progress, Visual/Frontend, Scoring, Feedback Loop, Major Features, Parked).
