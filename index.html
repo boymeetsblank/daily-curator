@@ -1013,6 +1013,12 @@
       up.classList.remove('voted-up'); dn.classList.remove('voted-down');
       if (!was) { dn.classList.add('voted-down'); voting = true; }
     }
+    // Persist vote state to localStorage so it survives page refresh
+    const voteUrl = btns.dataset.url;
+    if (voteUrl) {
+      const currentDir = up.classList.contains('voted-up') ? 'up' : dn.classList.contains('voted-down') ? 'down' : null;
+      saveVote(voteUrl, currentDir);
+    }
     if (!voting || !VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) return;
     const ct = new Date().toLocaleString('sv-SE',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).replace(' ','T')+' CT';
     const record = {timestamp:ct,direction:dir,title:btns.dataset.title||'',source:btns.dataset.source||'',score:parseInt(btns.dataset.score)||0,url:btns.dataset.url||null};
@@ -1346,12 +1352,40 @@
 
     document.getElementById('feed-container').innerHTML = todayHtml + archiveWrapper;
     applyReadState();
+    applyVoteState();
     buildSidebar(runs);
 
     // Trends panel
     const latestDate = runs[0].ct_date || runs[0].date;
     const latestRun  = runs.find(r => (r.ct_date||r.date) === latestDate);
     buildTrendsPanel(latestRun?.x_trends || []);
+  }
+
+  // ── Vote persistence ─────────────────────────────────────────
+  function getVotes() {
+    try { return JSON.parse(localStorage.getItem('blank_votes') || '{}'); } catch { return {}; }
+  }
+
+  function saveVote(url, direction) {
+    if (!url) return;
+    const votes = getVotes();
+    if (direction) votes[url] = direction;
+    else delete votes[url];
+    localStorage.setItem('blank_votes', JSON.stringify(votes));
+  }
+
+  function applyVoteState() {
+    const votes = getVotes();
+    if (!Object.keys(votes).length) return;
+    document.querySelectorAll('.vote-btns').forEach(btns => {
+      const url = btns.dataset.url;
+      if (!url || !votes[url]) return;
+      const up = btns.querySelector(':first-child');
+      const dn = btns.querySelector(':last-child');
+      up.classList.remove('voted-up'); dn.classList.remove('voted-down');
+      if (votes[url] === 'up')   up.classList.add('voted-up');
+      else if (votes[url] === 'down') dn.classList.add('voted-down');
+    });
   }
 
   // ── Read state ───────────────────────────────────────────────

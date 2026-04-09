@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-09] Direct RSS parallel fetch + vote persistence
+
+- **Direct RSS (sources.json):** Added `fetch_articles_from_direct_rss()` which reads `sources.json` and fetches all feeds in parallel (10 workers, 10s timeout per feed). Failed fetches are logged and skipped — the pipeline continues.
+- **Auto-generate sources.json:** On first run, if `sources.json` is absent, `generate_sources_json()` fetches the Inoreader subscription list and writes the file automatically.
+- **Parallel fetch in main():** Inoreader and Direct RSS now run concurrently via `ThreadPoolExecutor(max_workers=2)`. Article pools are combined before deduplication, OG enrichment, and Claude scoring.
+- **`feedparser>=6.0.0`** added to `requirements.txt`.
+- **Vote persistence:** Vote state (up/down) is now saved to `localStorage` under key `blank_votes` (keyed by article URL). `applyVoteState()` restores classes after every render — votes survive page refresh.
+
 ## [2026-04-09] List view: fix right border start position
 
 - Moved `border-right` off `.content` onto `.list-header` + `#feed-container` — border now starts at the column header row instead of the top of the full content column.

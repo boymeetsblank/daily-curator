@@ -8,10 +8,12 @@ import json
 import time
 import base64
 import html
+import calendar
 from datetime import datetime, timezone, timedelta
 
 import re
 import requests
+import feedparser
 import anthropic
 from dotenv import load_dotenv
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -31,6 +33,8 @@ MAX_ARTICLES_TO_SEND    = 150
 MAX_ARTICLES_PER_SOURCE = 15
 MIN_SCORE               = 6
 MAX_PICKS               = 30
+DIRECT_RSS_TIMEOUT      = 10   # seconds per feed fetch
+SOURCES_JSON_PATH       = "sources.json"
 
 INOREADER_BASE_URL   = "https://www.inoreader.com/reader/api/0"
 
@@ -77,6 +81,146 @@ def get_fresh_token() -> str:
         print("Your INOREADER_REFRESH_TOKEN may be expired.")
         sys.exit(1)
     return response.json()["access_token"]
+
+
+def generate_sources_json():
+    """Fetch Inoreader subscription list and write sources.json."""
+    token = get_fresh_token()
+    url = f"{INOREADER_BASE_URL}/subscription/list"
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "AppId": INOREADER_APP_ID,
+        "AppKey": INOREADER_APP_KEY,
+        "Accept": "application/json",
+    }
+    try:
+        resp = requests.get(url, headers=headers, params={"output": "json"}, timeout=30)
+        resp.raise_for_status()
+        subs = resp.json().get("subscriptions", [])
+        sources = []
+        for s in subs:
+            rss_url = s.get("url", "")
+            title = s.get("title", "Unknown Source")
+            if rss_url:
+                sources.append({"name": title, "rss": rss_url})
+        with open(SOURCES_JSON_PATH, "w", encoding="utf-8") as f:
+            json.dump(sources, f, indent=2, ensure_ascii=False)
+        print(f"   ✅ Wrote {len(sources)} sources to {SOURCES_JSON_PATH}")
+    except Exception as e:
+        print(f"   ⚠️  Could not generate sources.json: {e}")
+
+
+def _fetch_single_rss_feed(source: dict, cutoff_ts: int) -> list[dict]:
+    """Fetch and parse one RSS feed. Returns list of article dicts, or [] on failure."""
+    name = source.get("name", "Unknown")
+    rss_url = source.get("rss", "")
+    if not rss_url:
+        return []
+    try:
+        resp = requests.get(
+            rss_url,
+            timeout=DIRECT_RSS_TIMEOUT,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; DailyCurator/1.0)"},
+        )
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"   ⚠️  Direct RSS fetch failed [{name}]: {e}")
+        return []
+
+    feed = feedparser.parse(resp.content)
+    articles = []
+    for entry in feed.entries:
+        # Resolve published timestamp (UTC)
+        published_ts = None
+        for attr in ("published_parsed", "updated_parsed"):
+            t = getattr(entry, attr, None)
+            if t:
+                try:
+                    published_ts = calendar.timegm(t)
+                except Exception:
+                    pass
+                break
+
+        if published_ts and published_ts < cutoff_ts:
+            continue  # Too old
+
+        title = (entry.get("title") or "").strip()
+        link  = (entry.get("link")  or "").strip()
+        if not title or not link:
+            continue
+
+        # Summary
+        summary = ""
+        content_list = entry.get("content")
+        if content_list:
+            summary = strip_html(content_list[0].get("value", ""))[:500]
+        elif entry.get("summary"):
+            summary = strip_html(entry.summary)[:500]
+
+        # Published string
+        if published_ts:
+            published_str = datetime.fromtimestamp(published_ts, tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        else:
+            published_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+        # Image — check media_content then enclosures
+        image_url = None
+        media = getattr(entry, "media_content", [])
+        if media and isinstance(media, list):
+            image_url = media[0].get("url")
+        if not image_url:
+            for enc in getattr(entry, "enclosures", []):
+                if enc.get("type", "").startswith("image/"):
+                    image_url = enc.get("href")
+                    break
+
+        articles.append({
+            "title":     html.unescape(title),
+            "link":      link,
+            "summary":   summary,
+            "source":    name,
+            "published": published_str,
+            "image":     image_url,
+        })
+
+    return articles
+
+
+def fetch_articles_from_direct_rss() -> list[dict]:
+    """Fetch articles from all sources in sources.json in parallel (10 workers, 10s timeout each)."""
+    if not os.path.exists(SOURCES_JSON_PATH):
+        print(f"   ⚠️  {SOURCES_JSON_PATH} not found — skipping Direct RSS fetch.")
+        return []
+
+    try:
+        with open(SOURCES_JSON_PATH, encoding="utf-8") as f:
+            sources = json.load(f)
+    except Exception as e:
+        print(f"   ⚠️  Could not read {SOURCES_JSON_PATH}: {e}")
+        return []
+
+    if not sources:
+        print(f"   ⚠️  {SOURCES_JSON_PATH} is empty — no direct RSS sources to fetch.")
+        return []
+
+    print(f"\n📡 Fetching {len(sources)} direct RSS sources (parallel, {DIRECT_RSS_TIMEOUT}s timeout each)...")
+    cutoff_ts = int(time.time() - (HOURS_BACK * 3600))
+    articles = []
+    succeeded = 0
+
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        futures = {ex.submit(_fetch_single_rss_feed, src, cutoff_ts): src for src in sources}
+        for future in as_completed(futures):
+            result = future.result()
+            if result:
+                articles.extend(result)
+                succeeded += 1
+            else:
+                # result is [] — either empty feed or logged failure
+                pass
+
+    print(f"   Direct RSS: {len(articles)} articles collected.")
+    return articles
 
 
 def fetch_articles_from_inoreader() -> list[dict]:
@@ -828,7 +972,22 @@ def main():
     print("=" * 55)
 
     check_setup()
-    articles = fetch_articles_from_inoreader()
+
+    # Auto-generate sources.json from Inoreader subscriptions on first run
+    if not os.path.exists(SOURCES_JSON_PATH):
+        print("\n📋 sources.json not found — generating from Inoreader subscriptions...")
+        generate_sources_json()
+
+    # Fetch Inoreader and Direct RSS in parallel, then combine
+    print("\n🔀 Fetching Inoreader and Direct RSS in parallel...")
+    with ThreadPoolExecutor(max_workers=2) as ex:
+        ino_future = ex.submit(fetch_articles_from_inoreader)
+        rss_future = ex.submit(fetch_articles_from_direct_rss)
+        inoreader_articles = ino_future.result()
+        direct_rss_articles = rss_future.result()
+
+    print(f"   Inoreader: {len(inoreader_articles)} articles | Direct RSS: {len(direct_rss_articles)} articles")
+    articles = inoreader_articles + direct_rss_articles
     articles = enrich_articles_with_og_images(articles)
 
     if not articles:
