@@ -4,6 +4,11 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-08] List view: rarity left border + remove date column
+
+- **Permanent rarity left border on rows:** Score 8 gets a 2px blue (`#3b82f6`) left border, score 9 gets purple (`#a855f7`), score 10 gets orange (`#f59e0b`). Score 7 has no border. Border is always visible (not only on expand).
+- **Date column removed from list view:** The `/ Date` header and per-row date text are gone. The relative timestamp ("6h ago") beneath the score badge is preserved as-is.
+
 ## [2026-04-08] Rarity tier overhaul, font glow, accordion + trends UX
 
 - **Scoring tiers split to 4 levels:** 7 = outlined badge only (no fill), 8 = blue filled badge, 9 = purple filled badge (`score-epic`), 10 = orange filled badge. Previously 9 and 10 were both "legendary" orange.
