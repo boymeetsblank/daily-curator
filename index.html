@@ -398,7 +398,7 @@
     /* ─────────────────────────────────────────
        CONTENT AREA
     ───────────────────────────────────────── */
-    .content { min-width: 0; border-right: 1px solid var(--border); }
+    .content { min-width: 0; }
 
     /* Column header row */
     .list-header {
@@ -407,7 +407,10 @@
       gap: 0 14px;
       padding: 0 0 10px;
       border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
     }
+
+    #feed-container { border-right: 1px solid var(--border); }
 
     .lh-label {
       font-size: 10px;

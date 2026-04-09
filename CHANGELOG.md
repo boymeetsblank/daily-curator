@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-09] List view: fix right border start position
+
+- Moved `border-right` off `.content` onto `.list-header` + `#feed-container` — border now starts at the column header row instead of the top of the full content column.
+
 ## [2026-04-09] List view: right border on content area
 
 - Added `border-right: 1px solid var(--border)` to `.content` — closes the list container on the right side with the same neutral 1px divider used for row borders. Rarity color remains exclusive to the left border.
