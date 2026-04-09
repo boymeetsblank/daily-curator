@@ -44,17 +44,6 @@ The product is called **Blank**. This name appears in the web feed header wordma
 
 ---
 
-## Settings (top of daily_curator.py)
-```python
-HOURS_BACK              = 48   # How far back to fetch articles
-MAX_ARTICLES_TO_SEND    = 60   # Max articles fetched from Inoreader
-MAX_ARTICLES_PER_SOURCE = 5    # Per-source cap for diversity
-MIN_SCORE               = 7    # Minimum score to surface a pick
-MAX_PICKS               = 10   # Max picks per run
-```
-
----
-
 ## Key Decisions Already Made
 
 - **Per-source cap:** Max 5 articles per source so ESPN and Complex don't dominate
@@ -87,19 +76,6 @@ The Claude scoring prompt evaluates articles and trend items on 4 criteria:
 
 **Trend items:** items from "X (Twitter) Trending" or "Google Trends" are evaluated on whether the topic itself is culturally interesting and carousel-worthy.
 
-### Carousel Hook Format
-
-The ANGLE field uses a structured format with a psychological trigger label:
-
-```
-[TRIGGER: Disbelief] The last Laker to score 60 / was Kobe. / In his final game.
-```
-
-Rules:
-- Trigger must be one of: Curiosity, FOMO, Disbelief, Defensiveness, Relief, Greed
-- Lines separated by `/` indicate carousel slide breaks
-- Each line is 7 words or fewer; maximum 3 lines
-
 ---
 
 ## GitHub Actions Workflows
@@ -131,44 +107,6 @@ All 6 must be set in repo Settings → Secrets → Actions:
 
 ---
 
-## Platform Vision
-
-Blank started as a personal content scouting tool but the long-term vision is bigger:
-
-**Core mission:** A daily briefing tool that keeps people informed about what matters in their niche worlds. Not a content creator tool — a signal-over-noise intelligence layer for anyone who wants to stay sharp in a specific domain.
-
-**Unique angle:**
-- Natural language setup — describe your interests in plain English, the tool figures out the sources
-- AI editorial judgment — not just aggregation, but curation with transparent reasoning (why this story matters, why now)
-- Cross-platform signals — RSS feeds, X trends, Google trends, and more converge into one ranked briefing
-- Intentionally finite — 10 picks max per run, so every item earns its place
-
-**Long term:** A no-code AI curation platform open to the public. Anyone should be able to spin up their own daily briefing — sports, finance, tech, fashion, whatever their niche — without writing a line of code.
-
-**Planned phases:**
-- Phase 5 — Platform: natural language feed controls (describe what you want, AI updates your sources), dynamic source library (suggest + validate new RSS feeds on demand), public platform for anyone to create their own briefing, direct RSS feed ingestion
-- Breaking News Mode: a lightweight watchdog that runs every 30–60 minutes, surfaces ONE breaking pick per check, estimated cost $15–30/month — for users who can't wait for 3x/day
-- Always show X trending topics on feed: a dedicated section in the web feed showing the top 10–20 X trending topics from the latest run, always visible regardless of score filter
-
----
-
-## Current To-Do List
-
-Items are not in priority order. Each is a discrete project.
-
-- **Feedback loop** — wire up ↑ ↓ vote arrows on pick cards via GitHub API so user reactions are stored and can inform future scoring
-- **Category-aware scoring** — ensure diverse picks across music, sports, fashion, tech etc. so no single category dominates a run
-- **Breaking News Mode** — lightweight real-time watchdog that runs every 30–60 min and surfaces one breaking story per check
-- **Always show full X trending topics** — dedicated always-visible section in the web feed showing the full top 10–20 X trending topics from the latest run
-- **Code review with Simplify skill** — run `/simplify` on daily_curator.py and index.html for a quality pass
-- **Web app testing setup** — add automated tests (Playwright or similar) for the index.html feed
-- **MCP Builder exploration** — evaluate whether MCP servers could replace or augment Apify for trend fetching
-- **9+ score tuning** — monitor current scoring output before adjusting; no changes yet
-- **Reddit trend detection** — still blocked pending Reddit API access; revisit when credentials are available
-- **YouTube trending integration** — add YouTube trending videos as a signal source alongside X and Google Trends
-- **Email/notification system** — token expiry alert + high score alert (score 9+) via email or webhook
-- **Weekly digest** — automated weekly rollup of the top picks across all runs
-
 ---
 
 ## Git Workflow
@@ -186,14 +124,6 @@ Before starting any session, run:
 git fetch origin main && git pull origin main
 ```
 
-## Common Commands
-```
-python3 daily_curator.py     # Run locally
-git add .                    # Stage changes
-git commit -m "message"      # Commit
-git push origin main         # Push
-```
-
 ---
 
 ## Things to Never Touch
@@ -204,8 +134,14 @@ git push origin main         # Push
 
 ---
 
+## Frontend Design
+
+For any UI or frontend changes, always read and apply the frontend design skill at ~/.claude/skills/frontend-design/SKILL.md before writing any code.
+
+---
+
 ## Maintaining the Changelog
 
 **Every time you add, modify, or remove a feature, you must update `CHANGELOG.md`** with the date and a brief description of what changed. Always add the new entry at the **top** of the file (just below the `---` divider), under a `## [YYYY-MM-DD] Feature Name` heading. Never append to the bottom.
 
-**At the start of every session, fetch and read the latest `CHANGELOG.md` from the remote** (`git fetch origin main && git pull origin main`) before doing anything else. This ensures you have the full picture including any changes made outside of the current session.
+**Keep CHANGELOG.md to the 20 most recent entries.** When adding a new entry would push the total past 20, delete the oldest entry at the bottom.

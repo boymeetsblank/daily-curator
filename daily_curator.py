@@ -484,7 +484,7 @@ ARTICLE {i}:{trending_flag}
   Source:    {article['source']}
   Published: {article['published']}
   Link:      {article['link'] or '(trending topic — no article link)'}
-  Summary:   {article['summary'] or '(no summary — evaluate based on the topic name alone)'}
+  Summary:   {(article['summary'] or '(no summary — evaluate based on the topic name alone)')[:300]}
 ---"""
 
     # Build the live trending context block to inject into the prompt
@@ -517,6 +517,8 @@ Scoring anchors:
 - 1–4: Noise — too niche, too dry, too predictable, or irrelevant.
 
 When in doubt between a 6 and a 7, score it a 6.
+
+10/10 RARITY RULE: A 10/10 story should feel genuinely rare — roughly once every 1–3 runs, but only when truly earned. Never award 10 just to fill the tier. If nothing clears the bar today, that's correct.
 
 POLITICS RULE: Automatically score any article a 1 if it is primarily about elections, political parties, politicians, legislation, government policy, or partisan issues. This briefing does not cover politics.
 

@@ -158,6 +158,7 @@
     [data-theme="dark"] .pick-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.35); }
 
     .pick-card.card-legendary { border-color: rgba(245,158,11,0.55); }
+    .pick-card.card-epic      { border-color: rgba(124,58,237,0.5); }
     .pick-card.card-rare      { border-color: rgba(37,99,235,0.45); }
     .pick-card[data-hidden="1"] { display: none; }
     .pick-card.read { opacity: 0.42; transition: opacity 0.25s ease; }
@@ -460,6 +461,7 @@
       white-space: nowrap;
     }
     .art-score.score-legendary { color: #1a0800; background: #f59e0b; border-color: #fbbf24; }
+    .art-score.score-epic      { color: #fff;    background: #7c3aed; border-color: #a78bfa; }
     .art-score.score-rare      { color: #fff;    background: #2563eb; border-color: #60a5fa; }
 
     /* Title cell — col 3, row 1 */
@@ -480,6 +482,16 @@
     }
 
     .art-title-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Rarity font glow — list view */
+    .art-row[data-score="8"]  .art-title-link { text-shadow: 0 0 10px rgba(37,99,235,0.35); }
+    .art-row[data-score="9"]  .art-title-link { text-shadow: 0 0 14px rgba(124,58,237,0.5); }
+    .art-row[data-score="10"] .art-title-link { text-shadow: 0 0 20px rgba(245,158,11,0.65); }
+
+    /* Rarity font glow — card view */
+    .pick-card[data-score="8"]  .card-headline { text-shadow: 0 0 10px rgba(37,99,235,0.35); }
+    .pick-card[data-score="9"]  .card-headline { text-shadow: 0 0 14px rgba(124,58,237,0.5); }
+    .pick-card[data-score="10"] .card-headline { text-shadow: 0 0 20px rgba(245,158,11,0.65); }
 
     /* Trend badge inline */
     .art-trend-tag {
@@ -538,10 +550,16 @@
     .art-row.expanded .art-expand { display: block; }
 
     .exp-inner {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      padding: 20px 24px;
+      background: transparent;
+      border: none;
+      border-left: 2px solid var(--border);
+      padding: 12px 0 12px 20px;
     }
+
+    /* Rarity left border color on expand panel */
+    .art-row[data-score="8"]  .exp-inner { border-left-color: #2563eb; }
+    .art-row[data-score="9"]  .exp-inner { border-left-color: #7c3aed; }
+    .art-row[data-score="10"] .exp-inner { border-left-color: #f59e0b; }
 
     /* Two-panel grid inside expand */
     .exp-main-row {
@@ -651,7 +669,8 @@
     /* ─────────────────────────────────────────
        X TRENDS MODULE  (above article list)
     ───────────────────────────────────────── */
-    #trends-module { margin-bottom: 0; }
+    #trends-module { margin-bottom: 0; display: none; }
+    #trends-module.trends-visible { display: block; }
 
     .trends-panel {
       background: var(--surface);
@@ -829,8 +848,6 @@
       .exp-main-row  { grid-template-columns: 1fr; }
       .trends-cols   { grid-template-columns: 1fr; }
 
-      #trends-module { display: none; }
-      #trends-module.mobile-open { display: block; }
     }
 
     /* ─────────────────────────────────────────
@@ -1022,8 +1039,8 @@
     const href     = esc(pick.link || trendSearchUrl(pick));
     const tsAttr   = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
     const score    = pick.score;
-    const scoreCls = score >= 9 ? 'score-legendary' : score >= 8 ? 'score-rare' : '';
-    const scoreLabel = score >= 9 ? `${score}/10` : score >= 8 ? `${score}/10` : `${score}/10`;
+    const scoreCls = score >= 10 ? 'score-legendary' : score >= 9 ? 'score-epic' : score >= 8 ? 'score-rare' : '';
+    const scoreLabel = `${score}/10`;
 
     const trendBadge = !pick.link
       ? `<span class="art-trend-tag">${esc(trendPlatform(pick)||'Trending')}</span>` : '';
@@ -1055,7 +1072,7 @@
         <div class="exp-inner">
           <div class="exp-main-row">
             <div class="exp-field">
-              <span class="exp-label">Summary</span>
+              <span class="exp-label">Why it matters</span>
               ${whyHtml || '<p class="exp-why" style="color:var(--faint);font-style:italic">No summary available</p>'}
             </div>
             <div class="exp-field">
@@ -1107,8 +1124,8 @@
   function renderCard(pick, ctDate, runIsoTs) {
     const href     = esc(pick.link || trendSearchUrl(pick));
     const score    = pick.score;
-    const scoreCls = score >= 9 ? 'score-legendary' : score >= 8 ? 'score-rare' : '';
-    const cardCls  = score >= 9 ? ' card-legendary' : score >= 8 ? ' card-rare' : '';
+    const scoreCls = score >= 10 ? 'score-legendary' : score >= 9 ? 'score-epic' : score >= 8 ? 'score-rare' : '';
+    const cardCls  = score >= 10 ? ' card-legendary' : score >= 9 ? ' card-epic' : score >= 8 ? ' card-rare' : '';
 
     const tsDisplay = runIsoTs
       ? new Date(runIsoTs).toLocaleTimeString('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'2-digit'})
@@ -1406,13 +1423,9 @@
   function scrollToTrends() {
     const mod = document.getElementById('trends-module');
     if (!mod) return;
-    if (window.innerWidth <= 680) {
-      const isOpen = mod.classList.toggle('mobile-open');
-      document.getElementById('tb-trends')?.classList.toggle('active', isOpen);
-    } else {
-      mod.scrollIntoView({behavior:'smooth'});
-      setTbActive('tb-trends');
-    }
+    const isOpen = mod.classList.toggle('trends-visible');
+    document.getElementById('tb-trends')?.classList.toggle('active', isOpen);
+    if (isOpen) mod.scrollIntoView({behavior: 'smooth'});
   }
 
   // ── Time ago ─────────────────────────────────────────────────
@@ -1551,7 +1564,7 @@
         <div class="exp-inner">
           <div class="exp-main-row">
             <div class="exp-field">
-              <span class="exp-label">Summary</span>
+              <span class="exp-label">Why it matters</span>
               <p class="exp-why">Velocity spike detected — newly trending in the US${item.traffic?'. '+esc(item.traffic)+' searches.':''}</p>
             </div>
           </div>
