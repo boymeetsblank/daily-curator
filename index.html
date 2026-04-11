@@ -213,6 +213,78 @@
     .feed-date-divider:first-child { padding-top: 4px; }
 
     /* ─────────────────────────────────────────
+       NL FILTER BAR
+    ───────────────────────────────────────── */
+    .nl-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 0;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.18s;
+    }
+
+    .nl-bar:focus-within { border-bottom-color: var(--border); }
+
+    .nl-prefix {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--faint);
+      flex-shrink: 0;
+      user-select: none;
+      transition: color 0.18s;
+    }
+
+    .nl-bar:focus-within .nl-prefix { color: var(--muted); }
+
+    .nl-input {
+      flex: 1;
+      min-width: 0;
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--ink);
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 0;
+      caret-color: var(--accent);
+    }
+
+    .nl-input::placeholder { color: var(--faint); font-style: italic; }
+
+    .nl-status {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: transparent;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: color 0.15s;
+    }
+
+    .nl-status.err    { color: var(--red); opacity: 0.65; }
+    .nl-status.active { color: var(--muted); }
+
+    .nl-clear {
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1;
+      color: var(--faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0 2px;
+      flex-shrink: 0;
+      visibility: hidden;
+      transition: color 0.1s;
+    }
+
+    .nl-clear.visible { visibility: visible; }
+    .nl-clear:hover   { color: var(--ink); }
+
+    /* ─────────────────────────────────────────
        SETTINGS PANEL
     ───────────────────────────────────────── */
     #settings-backdrop {
@@ -719,7 +791,8 @@
       position: relative;
     }
 
-    .art-row[data-hidden="1"] { display: none; }
+    .art-row[data-hidden="1"]    { display: none; }
+    [data-nl-hidden="1"]         { display: none; }
 
 
     /* Date cell — hidden in article rows (kept for breaking-art-row) */
@@ -1195,6 +1268,14 @@
 
       <!-- RIGHT: Chronological article list -->
       <div class="content">
+        <!-- NL filter bar -->
+        <div class="nl-bar" id="nl-bar-feed">
+          <span class="nl-prefix">/</span>
+          <input class="nl-input" type="text" placeholder="filter by source or category…" autocomplete="off" spellcheck="false" onkeydown="nlKeydown(event,'feed')">
+          <span class="nl-status"></span>
+          <button class="nl-clear" onclick="nlReset(this.closest('.nl-bar'),'feed')" aria-label="Clear filter">×</button>
+        </div>
+
         <div class="list-header" style="grid-template-columns:100px 1fr 32px">
           <span class="lh-label">/ Source</span>
           <span class="lh-label">/ Title</span>
@@ -1334,6 +1415,14 @@
 
       <!-- Breaking news (injected before list) -->
       <div id="breaking-section"></div>
+
+      <!-- NL filter bar -->
+      <div class="nl-bar" id="nl-bar-edit">
+        <span class="nl-prefix">/</span>
+        <input class="nl-input" type="text" placeholder="filter by source, score, or category…" autocomplete="off" spellcheck="false" onkeydown="nlKeydown(event,'edit')">
+        <span class="nl-status"></span>
+        <button class="nl-clear" onclick="nlReset(this.closest('.nl-bar'),'edit')" aria-label="Clear filter">×</button>
+      </div>
 
       <!-- Column header -->
       <div class="list-header">
@@ -1516,7 +1605,7 @@
       ? `<span class="art-time" data-run-ts="${esc(runIsoTs)}">${new Date(runIsoTs).toLocaleTimeString('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'2-digit'})}</span>`
       : '';
 
-    return `<div class="art-row${extraClass||''}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}">
+    return `<div class="art-row${extraClass||''}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}" data-source="${esc(pick.source||'')}">
       <span class="art-score ${scoreCls}">${score}/10</span>
       <div class="art-title-cell">
         <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${titleClick}>${esc(pick.title)}</a>${trendBadge}${multiSrc}
@@ -1550,7 +1639,7 @@
       ? `<a class="card-read-btn" href="${href}" target="_blank" rel="noopener noreferrer" onclick="markRead(this.closest('.pick-card'))">Read →</a>`
       : `<a class="card-read-btn" href="${href}" target="_blank" rel="noopener noreferrer">Search →</a>`;
 
-    return `<div class="pick-card${cardCls}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}">
+    return `<div class="pick-card${cardCls}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}" data-source="${esc(pick.source||'')}">`
       ${imgWrap}
       <div class="card-body">
         <div class="card-meta">
@@ -2426,6 +2515,148 @@
     refreshTimestamps();
     buildFeedSidebar(entries.map(e => e.pick));
     activeFeedSource = 'all';
+  }
+
+  // ── NL Filter Bar ────────────────────────────────────────────
+  const NL_RULES = [
+    // Reset
+    { test: q => /^(clear|reset|show[\s-]?all|all)$/i.test(q.trim()),
+      run:  (bar, mode) => { nlDoReset(bar, mode); return ''; } },
+
+    // Score: 9 AND 10 (must precede single-score rules)
+    { test: q => /\b(9s?\s*(and|&|or)\s*10s?|9\s*&\s*10|high[\s-]?score|top[\s-]?pick)/i.test(q),
+      run:  (bar, mode) => { nlApplyScoreFilter(mode, ['9','10']); return '9s & 10s'; } },
+
+    // Score: 10 / Legendary
+    { test: q => /\b(legendary|10s?\s+only|only\s+10s?|just\s+10s?)\b/i.test(q),
+      run:  (bar, mode) => { nlApplyScoreFilter(mode, ['10']); return 'Legendary'; } },
+
+    // Score: 9 / Epic
+    { test: q => /\b(epic|9s?\s+only|only\s+9s?|just\s+9s?)\b/i.test(q),
+      run:  (bar, mode) => { nlApplyScoreFilter(mode, ['9']); return 'Epic'; } },
+
+    // Source: sneakers
+    { test: q => /\bsneaker|snkrs?|kicks?\b/i.test(q),
+      run:  (bar, mode) => nlApplySourceKw(mode, ['sneaker','snkr','kick','sole','hypebeast','highsnob']) },
+
+    // Source: watches
+    { test: q => /\bwatch(es)?\b/i.test(q),
+      run:  (bar, mode) => nlApplySourceKw(mode, ['watch','hodinkee','timepiece']) },
+
+    // Source: music
+    { test: q => /\bmusic\b/i.test(q),
+      run:  (bar, mode) => nlApplySourceKw(mode, ['music','pitchfork','billboard','rolling stone','spotify']) },
+
+    // Source: fashion / style
+    { test: q => /\b(fashion|style)\b/i.test(q),
+      run:  (bar, mode) => nlApplySourceKw(mode, ['fashion','vogue','gq','complex','highsnob','elle']) },
+
+    // Source: sports
+    { test: q => /\b(sport|nba|nfl|nhl|espn)\b/i.test(q),
+      run:  (bar, mode) => nlApplySourceKw(mode, ['espn','sport','nba','nfl','athletic','bleacher']) },
+
+    // Source: tech
+    { test: q => /\b(tech(nology)?|gadget)\b/i.test(q),
+      run:  (bar, mode) => nlApplySourceKw(mode, ['tech','verge','wired','crunch','ars','engadget']) },
+
+    // Source: reddit
+    { test: q => /\breddit\b/i.test(q),
+      run:  (bar, mode) => nlApplySourceKw(mode, ['reddit']) },
+  ];
+
+  function nlKeydown(event, mode) {
+    const barEl = event.target.closest('.nl-bar');
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      const raw = event.target.value.trim();
+      if (raw) nlSubmit(barEl, mode, raw);
+      else     nlDoReset(barEl, mode);
+    } else if (event.key === 'Escape') {
+      event.preventDefault();
+      nlDoReset(barEl, mode);
+      event.target.blur();
+    } else {
+      nlSetClear(barEl, !!event.target.value);
+    }
+  }
+
+  function nlSubmit(barEl, mode, raw) {
+    for (const rule of NL_RULES) {
+      if (rule.test(raw)) {
+        const label = rule.run(barEl, mode);
+        if (label)              nlSetStatus(barEl, label, 'active');
+        else if (label === '')  nlSetStatus(barEl, '', '');
+        nlSetClear(barEl, true);
+        return;
+      }
+    }
+    nlSetStatus(barEl, 'no filters matched', 'err');
+    nlSetClear(barEl, true);
+  }
+
+  function nlSetStatus(barEl, msg, cls) {
+    const el = barEl?.querySelector('.nl-status');
+    if (!el) return;
+    el.textContent = msg;
+    el.className   = 'nl-status' + (cls ? ' ' + cls : '');
+  }
+
+  function nlSetClear(barEl, visible) {
+    barEl?.querySelector('.nl-clear')?.classList.toggle('visible', !!visible);
+  }
+
+  function nlDoReset(barEl, mode) {
+    const input = barEl?.querySelector('.nl-input');
+    if (input) input.value = '';
+    nlSetStatus(barEl, '', '');
+    nlSetClear(barEl, false);
+    if (mode === 'edit') {
+      applyFilter('all');
+      document.querySelectorAll('.art-row[data-nl-hidden], .pick-card[data-nl-hidden]').forEach(el =>
+        el.removeAttribute('data-nl-hidden')
+      );
+    } else {
+      filterFeed('all');
+      document.querySelectorAll('#feed-list .feed-row[data-nl-hidden]').forEach(el =>
+        el.removeAttribute('data-nl-hidden')
+      );
+    }
+  }
+
+  function nlReset(barEl, mode) { nlDoReset(barEl, mode); }
+
+  function nlApplyScoreFilter(mode, scores) {
+    if (mode === 'edit') {
+      activeFilters.clear();
+      scores.forEach(s => activeFilters.add(s));
+      document.querySelectorAll('.sb-item[data-filter]').forEach(el => {
+        const f = el.dataset.filter;
+        el.classList.toggle('active', f === 'all' ? false : activeFilters.has(f));
+      });
+      document.querySelectorAll('.art-row[data-score], .pick-card[data-score]').forEach(row => {
+        row.dataset.hidden = activeFilters.has(row.dataset.score) ? '0' : '1';
+      });
+    } else {
+      document.querySelectorAll('#feed-list .feed-row[data-score]').forEach(row => {
+        row.dataset.nlHidden = scores.includes(row.dataset.score) ? '0' : '1';
+      });
+    }
+    return scores.join(' & ');
+  }
+
+  function nlApplySourceKw(mode, keywords) {
+    const kw    = keywords.map(k => k.toLowerCase());
+    const match = src => kw.some(k => src.toLowerCase().includes(k));
+    let   n     = 0;
+    const rows  = mode === 'edit'
+      ? document.querySelectorAll('.art-row[data-source], .pick-card[data-source]')
+      : document.querySelectorAll('#feed-list .feed-row[data-source]');
+    rows.forEach(el => {
+      const show = match(el.dataset.source || '');
+      el.dataset.nlHidden = show ? '0' : '1';
+      if (show) n++;
+    });
+    return n > 0 ? `${n} articles` : 'no matches';
   }
 
   // ── Mode switcher (The Edit / The Feed) ──────────────────────

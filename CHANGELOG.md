@@ -4,6 +4,16 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-10] NL filter bar — natural language filtering in The Edit and The Feed
+
+- **Both modes** now have a subtle `/` filter bar above the article list, dormant by default (activates on `:focus-within` with a 1px border reveal).
+- **Natural language parsing** — pressing Enter on phrases like "only sneakers", "just 9s and 10s", "high scores", "reddit only", "tech", "watches" maps to existing filters. Clear-typed inputs ("clear", "reset") reset all filters.
+- **The Edit** — score phrases activate the sidebar score filter (`applyFilter`); source phrases set `data-nl-hidden` on matching rows. Both can coexist.
+- **The Feed** — source phrases filter by `data-nl-hidden`; score phrases filter feed rows by `data-score` attribute.
+- **Status chip** — shows active filter label (e.g. "9s & 10s", "42 articles") or "no filters matched" if no rule fires.
+- **× button** — appears on input and on status; clears input and resets all filters. Escape key also resets and blurs.
+- **Graceful fallback** — unrecognized queries show a subtle "no filters matched" message without affecting the current view.
+
 ## [2026-04-10] The Feed — wired to its own all_articles.json data source
 
 - **`daily_curator.py`** — new `write_all_articles_json()` saves every scored real article (before `MIN_SCORE` filter and `MAX_PICKS` cap) to `all_articles/all-YYYY-MM-DD-HHMM.json` after each run. Trend items (no URL) are excluded. Fields: title, source, link, score, why, hook, image, published.
