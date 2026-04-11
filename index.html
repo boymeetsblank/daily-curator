@@ -141,6 +141,65 @@
     body.card-view .list-header { display: none; }
 
     /* ─────────────────────────────────────────
+       MODE PILL TOGGLE  (The Edit | The Feed)
+    ───────────────────────────────────────── */
+    .tb-pill-group {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .tb-pill {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      background: none;
+      border: none;
+      padding: 4px 14px;
+      height: 24px;
+      cursor: pointer;
+      transition: color 0.1s, background 0.1s;
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    .tb-pill.active { color: var(--bg); background: var(--ink); }
+    .tb-pill:not(.active):hover { color: var(--ink); }
+
+    /* Feed mode placeholder */
+    #feed-mode-placeholder {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 120px 32px;
+      text-align: center;
+      gap: 12px;
+    }
+    .fmp-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+    .fmp-title {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+    .fmp-sub {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ─────────────────────────────────────────
        SETTINGS PANEL
     ───────────────────────────────────────── */
     #settings-backdrop {
@@ -567,6 +626,15 @@
     }
 
     .sb-item.active .sb-count { color: var(--muted); }
+
+    /* Rarity filter buttons */
+    .rarity-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 6px; flex-shrink: 0; vertical-align: middle; }
+    .sb-item[data-rarity="rare"]        .rarity-dot { background: #3b82f6; box-shadow: 0 0 5px rgba(59,130,246,0.55); }
+    .sb-item[data-rarity="epic"]        .rarity-dot { background: #a855f7; box-shadow: 0 0 5px rgba(168,85,247,0.55); }
+    .sb-item[data-rarity="legendary"]   .rarity-dot { background: #f59e0b; box-shadow: 0 0 6px rgba(245,158,11,0.6); }
+    .sb-item[data-rarity="rare"].active      { color: #3b82f6; text-shadow: 0 0 8px rgba(59,130,246,0.45); }
+    .sb-item[data-rarity="epic"].active      { color: #a855f7; text-shadow: 0 0 8px rgba(168,85,247,0.45); }
+    .sb-item[data-rarity="legendary"].active { color: #f59e0b; text-shadow: 0 0 10px rgba(245,158,11,0.55); }
 
     /* Trending in sidebar */
     .sb-trend {
@@ -1090,19 +1158,23 @@
 <div id="topbar">
   <div class="tb-inner">
     <span class="tb-brand">Blank</span>
-    <div class="tb-nav">
-      <button class="tb-link active" id="tb-today"   onclick="scrollToToday()">Today</button>
-      <button class="tb-link"        id="tb-archive" onclick="scrollToArchive()">Archive</button>
-      <button class="tb-link"        id="tb-trends"  onclick="scrollToTrends()">Trends</button>
+    <div class="tb-pill-group">
+      <button class="tb-pill active" id="pill-edit" onclick="switchMode('edit')">The Edit</button>
+      <button class="tb-pill"        id="pill-feed" onclick="switchMode('feed')">The Feed</button>
     </div>
     <div class="tb-actions">
-      <button class="tb-btn" id="notif-btn" onclick="enableNotifications()">🔔</button>
-      <button class="tb-btn" id="theme-toggle" onclick="toggleTheme()"></button>
       <button class="tb-btn" id="settings-btn" onclick="openSettings()" title="Settings" aria-label="Open settings">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
       </button>
     </div>
   </div>
+</div>
+
+<!-- ── Feed mode placeholder ── -->
+<div id="feed-mode-placeholder">
+  <span class="fmp-label">Coming Soon</span>
+  <span class="fmp-title">The Feed</span>
+  <span class="fmp-sub">Full chronological feed — in the works.</span>
 </div>
 
 <!-- ── Settings backdrop ── -->
@@ -1115,6 +1187,24 @@
     <button class="sp-close" onclick="closeSettings()" aria-label="Close settings">×</button>
   </div>
   <div class="sp-body">
+
+    <!-- APPEARANCE -->
+    <div class="sp-section">
+      <span class="sp-label">/ Appearance</span>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0">
+        <span style="font-size:12px;color:var(--muted)">Dark mode</span>
+        <button class="tb-btn" id="sp-theme-toggle" onclick="toggleTheme()" style="padding:3px 10px;min-width:56px"></button>
+      </div>
+    </div>
+
+    <!-- NOTIFICATIONS -->
+    <div class="sp-section">
+      <span class="sp-label">/ Notifications</span>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0">
+        <span style="font-size:12px;color:var(--muted)">Breaking news alerts</span>
+        <button class="tb-btn" id="sp-notif-btn" onclick="enableNotifications()" style="padding:3px 10px;min-width:56px">🔔</button>
+      </div>
+    </div>
 
     <!-- FEED VIEW -->
     <div class="sp-section">
@@ -1233,8 +1323,8 @@
   // ── Theme ────────────────────────────────────────────────────
   function applyTheme(t) {
     document.documentElement.setAttribute('data-theme', t);
-    const b = document.getElementById('theme-toggle');
-    if (b) b.textContent = t === 'dark' ? '☀' : '☽';
+    const b = document.getElementById('sp-theme-toggle');
+    if (b) b.textContent = t === 'dark' ? '☀ Light' : '☽ Dark';
   }
   function toggleTheme() {
     const cur = localStorage.getItem('blank_theme') || 'light';
@@ -1686,19 +1776,22 @@
     if (btn) btn.textContent = isOpen ? '+' : '−';
   }
 
-  // ── Active score filter ───────────────────────────────────────
-  let activeFilter = 'all';
+  // ── Active score filters (multi-select) ──────────────────────
+  let activeFilters = new Set();
 
   function applyFilter(filter) {
-    activeFilter = filter;
+    if (filter === 'all') {
+      activeFilters.clear();
+    } else {
+      if (activeFilters.has(filter)) activeFilters.delete(filter);
+      else activeFilters.add(filter);
+    }
     document.querySelectorAll('.sb-item[data-filter]').forEach(el => {
-      el.classList.toggle('active', el.dataset.filter === filter);
+      const f = el.dataset.filter;
+      el.classList.toggle('active', f === 'all' ? activeFilters.size === 0 : activeFilters.has(f));
     });
     document.querySelectorAll('.art-row[data-score], .pick-card[data-score]').forEach(row => {
-      let show = true;
-      if (filter === '9') show = parseInt(row.dataset.score) >= 9;
-      else if (filter === '8') show = parseInt(row.dataset.score) === 8;
-      else if (filter === '7') show = parseInt(row.dataset.score) === 7;
+      const show = activeFilters.size === 0 || activeFilters.has(row.dataset.score);
       row.dataset.hidden = show ? '0' : '1';
     });
   }
@@ -1706,12 +1799,13 @@
   // ── Build sidebar content ─────────────────────────────────────
   function buildSidebar(runs) {
     const allPicks = runs.flatMap(r => r.picks);
-    const counts   = { all:0, 9:0, 8:0, 7:0 };
+    const counts   = { all:0, 10:0, 9:0, 8:0, 7:0 };
     const srcMap   = {};
     allPicks.forEach(p => {
       counts.all++;
       const s = p.score;
-      if (s >= 9) counts[9]++;
+      if (s >= 10) counts[10]++;
+      else if (s === 9) counts[9]++;
       else if (s === 8) counts[8]++;
       else counts[7]++;
       if (!isTrendPick(p)) srcMap[p.source] = (srcMap[p.source]||0)+1;
@@ -1721,14 +1815,15 @@
     const filterEl = document.getElementById('sb-score-filters');
     if (filterEl) {
       const scoreItems = [
-        ['all', `All picks`, counts.all],
-        ['9',   `Score 9–10`,  counts[9]],
-        ['8',   `Score 8`,     counts[8]],
-        ['7',   `Score 7`,     counts[7]],
+        ['all', `All picks`,      counts.all,  null],
+        ['10',  `10 — Legendary`, counts[10],  'legendary'],
+        ['9',   `9 — Epic`,       counts[9],   'epic'],
+        ['8',   `8 — Rare`,       counts[8],   'rare'],
+        ['7',   `Score 7`,        counts[7],   null],
       ];
-      filterEl.innerHTML = scoreItems.map(([f,label,cnt]) =>
-        `<button class="sb-item${f==='all'?' active':''}" data-filter="${f}" onclick="applyFilter('${f}')">
-          <span>${label}</span>
+      filterEl.innerHTML = scoreItems.map(([f,label,cnt,rarity]) =>
+        `<button class="sb-item${f==='all'?' active':''}" data-filter="${f}"${rarity ? ` data-rarity="${rarity}"` : ''} onclick="applyFilter('${f}')">
+          <span>${rarity ? `<span class="rarity-dot"></span>` : ''}${label}</span>
           <span class="sb-count">(${cnt})</span>
         </button>`
       ).join('');
@@ -2128,10 +2223,10 @@
   }
 
   function initNotifBtn() {
-    const b=document.getElementById('notif-btn');
+    const b=document.getElementById('sp-notif-btn');
     if(!b) return;
     if(!('Notification' in window)){b.style.display='none';return;}
-    b.textContent=Notification.permission==='denied'?'🔕':'🔔';
+    b.textContent=Notification.permission==='denied'?'🔕 Off':Notification.permission==='granted'?'🔔 On':'🔔 Enable';
     b.title=Notification.permission==='granted'?'Notifications enabled':Notification.permission==='denied'?'Notifications blocked':'Enable breaking news notifications';
   }
 
@@ -2169,13 +2264,28 @@
   async function enableNotifications(){
     if(!('Notification'in window)){alert('Notifications not supported.');return;}
     const perm=await Notification.requestPermission();
-    const b=document.getElementById('notif-btn');
-    if(perm==='granted'){if(b){b.textContent='🔔';b.title='Notifications enabled';}try{await subscribeToPush()}catch{}}
-    else{if(b){b.textContent='🔕';b.title='Notifications blocked';}}
+    const b=document.getElementById('sp-notif-btn');
+    if(perm==='granted'){if(b){b.textContent='🔔 On';b.title='Notifications enabled';}try{await subscribeToPush()}catch{}}
+    else{if(b){b.textContent='🔕 Off';b.title='Notifications blocked';}}
   }
 
   checkBreakingNews();
   setInterval(checkBreakingNews, 2*60_000);
+
+  // ── Mode switcher (The Edit / The Feed) ──────────────────────
+  function switchMode(mode) {
+    document.getElementById('pill-edit').classList.toggle('active', mode === 'edit');
+    document.getElementById('pill-feed').classList.toggle('active', mode === 'feed');
+    const main        = document.querySelector('.page-outer');
+    const placeholder = document.getElementById('feed-mode-placeholder');
+    if (mode === 'feed') {
+      if (main)        main.style.display = 'none';
+      if (placeholder) placeholder.style.display = 'flex';
+    } else {
+      if (main)        main.style.display = '';
+      if (placeholder) placeholder.style.display = 'none';
+    }
+  }
 </script>
 </body>
 </html>

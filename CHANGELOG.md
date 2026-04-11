@@ -4,6 +4,27 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-10] Nav redesign — The Edit / The Feed pill + settings panel consolidation
+
+- **Top nav simplified** to: Logo wordmark | The Edit / The Feed pill toggle | Gear icon. Today/Archive/Trends nav links removed.
+- **The Edit / The Feed pill** — thin 1px border, rounded pill style; "The Edit" is the default active state (scored/filtered view). "The Feed" shows a Coming Soon placeholder (full chronological feed, coming soon).
+- **Light/dark mode toggle** moved from topbar into the settings panel under a new "/ Appearance" section. Button label reflects current state (☽ Dark / ☀ Light).
+- **Notification bell** moved from topbar into the settings panel under a new "/ Notifications" section. Button reflects permission state (🔔 On / 🔕 Off / 🔔 Enable).
+
+## [2026-04-09] Restore full source list in settings panel
+
+- **Root cause:** A prior settings-panel bug overwrote `sources.json` with a single Reddit entry, hiding all 19 Inoreader subscriptions from the "Current Sources" panel.
+- **Fix:** Rebuilt `sources.json` with all 19 Inoreader subscriptions (Hypebeast, Sneaker News, GQ, Complex, Variety, The Atlantic, Vox, Adweek, ESPN, The Verge, WIRED, TechCrunch, Engadget, Ars Technica, CNBC, r/popculturechat, r/sports, r/nba, r/artificial) + Reddit (r/popular), each with correct `category` and `enabled: true`.
+- **`fetch_articles_from_direct_rss()`** now filters out entries where `enabled` is `false` (previously fetched everything regardless of paused state).
+- **`generate_sources_json()`** now preserves existing `enabled` and `category` metadata when re-seeding from Inoreader, and re-adds any extra sources (e.g. Reddit r/popular) that aren't in the Inoreader subscription list.
+
+## [2026-04-09] Score filter sidebar — split into individual rarity tiers
+
+- Replaced combined "Score 9–10" filter with three independent toggle buttons: **10 — Legendary** (orange), **9 — Epic** (purple), **8 — Rare** (blue).
+- Filters now work as multi-select: each tier toggles independently; "All picks" clears all active filters.
+- Rarity dot indicators (colored circles) added to each tier button, matching the existing badge and card glow color system.
+- Active rarity filters glow in their tier color (blue/purple/orange) using `text-shadow`.
+
 ## [2026-04-09] Fix: settings panel sources list now loads full sources.json on open
 
 - **Root cause:** `spLoadSources()` guarded on `VOTE_TOKEN` and called `spGetSources()` (GitHub API, auth required) for the read path. When the token was absent or unsubstituted, it returned an empty list — and any subsequent add overwrote `sources.json` with a single entry.
