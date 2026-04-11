@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-11] Fix: JS syntax error in renderCard — stray backtick breaking all functionality
+
+- **Bug:** `renderCard()` had a stray backtick at the end of the `return` statement's first line (`...data-source="...">\``). This prematurely closed the template literal after just the opening `<div>` tag. The remaining 22 lines of HTML inside the template were left as raw invalid JavaScript, causing `Uncaught SyntaxError: Unexpected token '{'` on every page load.
+- **Impact:** The syntax error prevented the entire script block from executing, which is why both The Edit (no articles) and The Feed pill toggle (no mode switch) were completely broken.
+- **Fix:** Removed the stray closing backtick from line 1661 so the template literal correctly spans from the opening `<div>` to the closing `</div>` on line 1684 — matching the same pattern as `renderRow()`.
+
 ## [2026-04-11] Fix: The Feed pill still not switching — display override bug
 
 - **Root cause:** `feedPage.style.display = ''` clears the inline style, which lets the CSS rule `#feed-page { display: none }` win — so The Feed page was never actually becoming visible, even after the previous selector fix.

@@ -1658,7 +1658,7 @@
       ? `<a class="card-read-btn" href="${href}" target="_blank" rel="noopener noreferrer" onclick="markRead(this.closest('.pick-card'))">Read →</a>`
       : `<a class="card-read-btn" href="${href}" target="_blank" rel="noopener noreferrer">Search →</a>`;
 
-    return `<div class="pick-card${cardCls}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}" data-source="${esc(pick.source||'')}">`
+    return `<div class="pick-card${cardCls}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}" data-source="${esc(pick.source||'')}">
       ${imgWrap}
       <div class="card-body">
         <div class="card-meta">
