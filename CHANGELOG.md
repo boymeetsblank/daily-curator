@@ -4,6 +4,13 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-11] Fix: The Feed pill still not switching — display override bug
+
+- **Root cause:** `feedPage.style.display = ''` clears the inline style, which lets the CSS rule `#feed-page { display: none }` win — so The Feed page was never actually becoming visible, even after the previous selector fix.
+- **Fix:** Changed all visibility toggles to use explicit `'block'` / `'none'` values. `display = ''` is ambiguous when CSS has a `display: none` rule on the element.
+- **Session flag:** Added `feedLoaded` flag so `all_articles.json` is only fetched once per session. Repeat pill switches instantly restore the rendered view without a new network request.
+- **No-ops guarded:** Pill and page elements are null-checked before use so clicking a pill before the DOM is fully ready cannot throw.
+
 ## [2026-04-10] Fix: The Feed pill click handler and empty state
 
 - **Root cause:** `document.querySelector('.page-outer')` in `switchMode()` was selecting the first `.page-outer` in the DOM — the one inside `#feed-page` — instead of the edit page's wrapper. This meant clicking "The Feed" pill was hiding the feed's own container rather than the edit page.

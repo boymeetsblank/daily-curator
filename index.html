@@ -2680,25 +2680,40 @@
   }
 
   // ── Mode switcher (The Edit / The Feed) ──────────────────────
+  let feedLoaded = false;
+
   async function switchMode(mode) {
-    document.getElementById('pill-edit').classList.toggle('active', mode === 'edit');
-    document.getElementById('pill-feed').classList.toggle('active', mode === 'feed');
+    const pillEdit = document.getElementById('pill-edit');
+    const pillFeed = document.getElementById('pill-feed');
     const editPage = document.getElementById('edit-page');
     const feedPage = document.getElementById('feed-page');
+
+    // Update pill active state
+    if (pillEdit) pillEdit.classList.toggle('active', mode === 'edit');
+    if (pillFeed) pillFeed.classList.toggle('active', mode === 'feed');
+
     if (mode === 'feed') {
+      // Show feed, hide edit — use explicit 'block' so CSS display:none is overridden
       if (editPage) editPage.style.display = 'none';
-      if (feedPage) {
-        feedPage.style.display = '';
+      if (feedPage) feedPage.style.display = 'block';
+
+      // Only fetch and render once per session; rebuild view on repeat visits
+      if (!feedLoaded) {
         document.getElementById('feed-list').innerHTML =
-          '<div class="state-msg" style="font-style:normal;font-size:12px;letter-spacing:0.04em;color:var(--faint)">—</div>';
+          '<div class="state-msg" style="font-style:normal;font-size:13px;color:var(--faint)">—</div>';
         const data = await loadFeedData();
-        if (data) buildFeedView(data);
-        else document.getElementById('feed-list').innerHTML =
-          '<div class="feed-empty-state"><p class="fee-line">The Feed populates after the next scheduled run.</p><p class="fee-sub">Runs daily at 7:30 AM · 1:30 PM · 7:30 PM CT</p></div>';
+        if (data && data.runs?.length) {
+          buildFeedView(data);
+          feedLoaded = true;
+        } else {
+          document.getElementById('feed-list').innerHTML =
+            '<div class="feed-empty-state"><p class="fee-line">The Feed populates after the next scheduled run.</p><p class="fee-sub">Runs daily at 7:30 AM · 1:30 PM · 7:30 PM CT</p></div>';
+        }
       }
     } else {
-      if (editPage) editPage.style.display = '';
+      // Show edit, hide feed
       if (feedPage) feedPage.style.display = 'none';
+      if (editPage) editPage.style.display = 'block';
     }
   }
 </script>
