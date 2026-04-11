@@ -4,6 +4,13 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-10] The Feed — wired to its own all_articles.json data source
+
+- **`daily_curator.py`** — new `write_all_articles_json()` saves every scored real article (before `MIN_SCORE` filter and `MAX_PICKS` cap) to `all_articles/all-YYYY-MM-DD-HHMM.json` after each run. Trend items (no URL) are excluded. Fields: title, source, link, score, why, hook, image, published.
+- **`daily_curator.yml`** — added `all_articles/` to the `git add` step so each run's file is committed alongside its picks markdown.
+- **`deploy-pages.yml`** — build step now aggregates all `all_articles/*.json` files into `site/all_articles.json` (newest run first), mirroring how `picks_data.json` is built from markdown files.
+- **`index.html`** — The Feed now fetches `all_articles.json` directly (`loadFeedData()` with in-session cache) instead of reading from `cachedRuns`. `buildFeedView()` updated to consume the `runs[].articles[]` format. The Edit continues to use `picks_data.json` / `cachedRuns` unchanged. Graceful "feed populates after next run" message shown if `all_articles.json` is absent.
+
 ## [2026-04-10] The Feed mode — full chronological stream with source navigator
 
 - **The Feed** is now a fully functional view activated by the "The Feed" pill in the top nav.

@@ -976,6 +976,40 @@ def filter_already_picked_today(picks: list[dict]) -> list[dict]:
     return filtered
 
 
+def write_all_articles_json(evaluated_articles: list[dict]) -> str:
+    """Write all scored articles (before MIN_SCORE / MAX_PICKS filters) to all_articles/."""
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    time_str  = datetime.now().strftime("%H%M")
+    os.makedirs("all_articles", exist_ok=True)
+    filename = f"all_articles/all-{today_str}-{time_str}.json"
+
+    # Exclude trend items (those have no link), include every real article regardless of score
+    articles = [
+        {
+            "title":     a.get("title", ""),
+            "source":    a.get("source", ""),
+            "link":      a.get("link"),
+            "score":     a.get("score", 0),
+            "why":       a.get("why"),
+            "hook":      a.get("hook"),
+            "image":     a.get("image"),
+            "published": a.get("published"),
+        }
+        for a in evaluated_articles
+        if a.get("link")
+    ]
+
+    # Sort by score descending so highest-signal articles appear first within the run
+    articles.sort(key=lambda a: a["score"], reverse=True)
+
+    data = {"date": today_str, "time": time_str, "articles": articles}
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    print(f"   📁 Saved {len(articles)} scored articles → {filename}")
+    return filename
+
+
 def write_markdown_output(picks: list[dict], all_articles_count: int, twitter_trends: list[dict] = None) -> str:
     today_str = datetime.now().strftime("%Y-%m-%d")
     time_str = datetime.now().strftime("%H%M")
@@ -1074,6 +1108,10 @@ def main():
     trending_topics = [t["title"] for t in twitter_trends + google_trends if t.get("title")]
 
     evaluated_articles = evaluate_articles_with_claude(all_items, trending_topics=trending_topics)
+
+    print(f"\n📁 Saving all scored articles...")
+    write_all_articles_json(evaluated_articles)
+
     top_picks = select_top_picks(evaluated_articles)
 
     print(f"\n🔎 Filtering already-picked URLs...")

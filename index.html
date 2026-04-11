@@ -2306,6 +2306,17 @@
 
   // ── The Feed ─────────────────────────────────────────────────
   let activeFeedSource = 'all';
+  let cachedFeedData   = null;
+
+  async function loadFeedData() {
+    if (cachedFeedData) return cachedFeedData;
+    try {
+      const res = await fetch('all_articles.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      cachedFeedData = await res.json();
+      return cachedFeedData;
+    } catch { return null; }
+  }
 
   function renderFeedRow(pick, ctDate, runIsoTs) {
     const href    = esc(pick.link || trendSearchUrl(pick));
@@ -2316,8 +2327,9 @@
 
     let whyHtml = pick.why ? `<p class="exp-why">${esc(pick.why)}</p>` : '';
     let angleHtml = '';
-    if (pick.angle) {
-      const pa = parseAngle(pick.angle);
+    const hookRaw = pick.hook || pick.angle;
+    if (hookRaw) {
+      const pa = parseAngle(hookRaw);
       if (pa?.text) {
         const lines   = pa.text.split(' / ').map(l => esc(l.trim())).join('<br>');
         const trigger = pa.trigger ? `<span class="angle-trigger">${esc(pa.trigger)}</span>` : '';
@@ -2382,20 +2394,23 @@
     });
   }
 
-  function buildFeedView(runs) {
+  function buildFeedView(data) {
     const listEl = document.getElementById('feed-list');
+    const runs   = data?.runs;
     if (!runs?.length) { listEl.innerHTML = '<div class="state-msg">No articles yet.</div>'; return; }
 
-    // Flatten all non-trend picks across all runs, newest run first
+    // Flatten all articles from all_articles.json runs, newest run first
     const entries = [];
     for (const run of runs) {
       const runIsoTs = (run.date && run.time)
         ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z` : null;
-      const ctDate = run.ct_date || run.date;
-      for (const pick of run.picks) {
-        if (!isTrendPick(pick)) entries.push({ pick, ctDate, runIsoTs });
+      const ctDate = run.date;
+      for (const article of (run.articles || [])) {
+        entries.push({ pick: article, ctDate, runIsoTs });
       }
     }
+
+    if (!entries.length) { listEl.innerHTML = '<div class="state-msg">No articles yet.</div>'; return; }
 
     // Render with date dividers
     let html = '', lastDate = null;
@@ -2414,14 +2429,21 @@
   }
 
   // ── Mode switcher (The Edit / The Feed) ──────────────────────
-  function switchMode(mode) {
+  async function switchMode(mode) {
     document.getElementById('pill-edit').classList.toggle('active', mode === 'edit');
     document.getElementById('pill-feed').classList.toggle('active', mode === 'feed');
     const editPage = document.querySelector('.page-outer');
     const feedPage = document.getElementById('feed-page');
     if (mode === 'feed') {
       if (editPage) editPage.style.display = 'none';
-      if (feedPage) { feedPage.style.display = ''; if (cachedRuns) buildFeedView(cachedRuns); }
+      if (feedPage) {
+        feedPage.style.display = '';
+        document.getElementById('feed-list').innerHTML = '<div class="state-msg">Loading…</div>';
+        const data = await loadFeedData();
+        if (data) buildFeedView(data);
+        else document.getElementById('feed-list').innerHTML =
+          '<div class="state-msg">Could not load articles.<br><small style="font-size:11px">The feed populates after the next scheduled run.</small></div>';
+      }
     } else {
       if (editPage) editPage.style.display = '';
       if (feedPage) feedPage.style.display = 'none';

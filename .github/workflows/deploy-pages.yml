@@ -144,6 +144,25 @@ jobs:
           print(f'Built picks_data.json — {len(runs)} runs, '
                 f'{sum(len(r["picks"]) for r in runs)} total picks')
 
+          # ── Build all_articles.json from all_articles/*.json ──────────────
+          all_runs = []
+          if os.path.isdir('all_articles'):
+              for name in sorted(os.listdir('all_articles'), reverse=True):
+                  if name.startswith('all-') and name.endswith('.json'):
+                      try:
+                          with open(os.path.join('all_articles', name), encoding='utf-8') as f:
+                              run_data = json.load(f)
+                          if run_data.get('articles'):
+                              all_runs.append(run_data)
+                      except (json.JSONDecodeError, OSError):
+                          pass
+
+          all_articles_out = {'runs': all_runs, 'generated_at': datetime.utcnow().isoformat() + 'Z'}
+          with open('site/all_articles.json', 'w', encoding='utf-8') as f:
+              json.dump(all_articles_out, f, ensure_ascii=False, indent=2)
+          total_arts = sum(len(r.get('articles', [])) for r in all_runs)
+          print(f'Built all_articles.json — {len(all_runs)} runs, {total_arts} total articles')
+
           PYEOF
 
       - name: Copy static PWA and breaking news files
