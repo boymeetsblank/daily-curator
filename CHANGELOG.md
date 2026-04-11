@@ -4,6 +4,15 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-10] The Feed mode — full chronological stream with source navigator
+
+- **The Feed** is now a fully functional view activated by the "The Feed" pill in the top nav.
+- **Chronological stream** — all picks across all runs, newest first, grouped by date with date dividers. No score minimum, no score filtering.
+- **Clean rows** — source name replaces the score badge in col 1. No rarity badges, no font glow, no colored left-border effects. Score data exists on articles but is never displayed in this mode.
+- **Expand panel** — still available per-row (Why it matters, Hook, Read button) without score information.
+- **Source navigator sidebar** — lists every source with an article count badge (e.g. "Hypebeast · 4"). Clicking any source filters The Feed to that source only. "All Sources" resets the stream. Sidebar is exclusive to The Feed — The Edit sidebar is unchanged.
+- **The Edit unchanged** — all existing scored/filtered behavior, rarity system, sidebar filters, and trends panel remain exactly as they were.
+
 ## [2026-04-10] Nav redesign — The Edit / The Feed pill + settings panel consolidation
 
 - **Top nav simplified** to: Logo wordmark | The Edit / The Feed pill toggle | Gear icon. Today/Archive/Trends nav links removed.

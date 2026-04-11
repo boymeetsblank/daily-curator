@@ -170,33 +170,47 @@
     .tb-pill.active { color: var(--bg); background: var(--ink); }
     .tb-pill:not(.active):hover { color: var(--ink); }
 
-    /* Feed mode placeholder */
-    #feed-mode-placeholder {
-      display: none;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 120px 32px;
-      text-align: center;
-      gap: 12px;
+    /* ─────────────────────────────────────────
+       THE FEED — page, row, sidebar styles
+    ───────────────────────────────────────── */
+    #feed-page { display: none; }
+
+    #feed-list { border-right: 1px solid var(--border); }
+
+    /* Feed row: source name replaces score badge, no rarity decoration */
+    .feed-row {
+      grid-template-columns: 100px 1fr 32px;
+      border-left: none !important;
+      box-shadow: none !important;
+      padding-left: 0 !important;
     }
-    .fmp-label {
+    .feed-row .art-title-link { text-shadow: none !important; }
+    .feed-row .expand-btn     { grid-column: 3; }
+
+    .feed-source-cell {
+      grid-column: 1;
+      grid-row: 1;
       font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.16em;
+      font-weight: 600;
       text-transform: uppercase;
-      color: var(--faint);
-    }
-    .fmp-title {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      color: var(--ink);
-    }
-    .fmp-sub {
-      font-size: 13px;
+      letter-spacing: 0.08em;
       color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      align-self: center;
     }
+
+    .feed-date-divider {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 24px 0 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .feed-date-divider:first-child { padding-top: 4px; }
 
     /* ─────────────────────────────────────────
        SETTINGS PANEL
@@ -1169,11 +1183,30 @@
   </div>
 </div>
 
-<!-- ── Feed mode placeholder ── -->
-<div id="feed-mode-placeholder">
-  <span class="fmp-label">Coming Soon</span>
-  <span class="fmp-title">The Feed</span>
-  <span class="fmp-sub">Full chronological feed — in the works.</span>
+<!-- ── Feed page ── -->
+<div id="feed-page">
+  <div class="page-outer">
+    <div class="layout">
+
+      <!-- LEFT: Feed source navigator -->
+      <aside class="sidebar" id="feed-sidebar">
+        <!-- populated by buildFeedSidebar() -->
+      </aside>
+
+      <!-- RIGHT: Chronological article list -->
+      <div class="content">
+        <div class="list-header" style="grid-template-columns:100px 1fr 32px">
+          <span class="lh-label">/ Source</span>
+          <span class="lh-label">/ Title</span>
+          <span></span>
+        </div>
+        <div id="feed-list">
+          <div class="state-msg">Loading…</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <!-- ── Settings backdrop ── -->
@@ -2271,18 +2304,127 @@
   checkBreakingNews();
   setInterval(checkBreakingNews, 2*60_000);
 
+  // ── The Feed ─────────────────────────────────────────────────
+  let activeFeedSource = 'all';
+
+  function renderFeedRow(pick, ctDate, runIsoTs) {
+    const href    = esc(pick.link || trendSearchUrl(pick));
+    const src     = esc(pick.source || '');
+    const timeStr = runIsoTs
+      ? new Date(runIsoTs).toLocaleTimeString('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'2-digit'})
+      : '';
+
+    let whyHtml = pick.why ? `<p class="exp-why">${esc(pick.why)}</p>` : '';
+    let angleHtml = '';
+    if (pick.angle) {
+      const pa = parseAngle(pick.angle);
+      if (pa?.text) {
+        const lines   = pa.text.split(' / ').map(l => esc(l.trim())).join('<br>');
+        const trigger = pa.trigger ? `<span class="angle-trigger">${esc(pa.trigger)}</span>` : '';
+        angleHtml = `<div class="exp-angle">${trigger}${lines}</div>`;
+      }
+    }
+
+    const readBtn = pick.link
+      ? `<a class="exp-read-btn" href="${href}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Read →</a>`
+      : `<a class="exp-read-btn" href="${href}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Search →</a>`;
+
+    const tsSpan = runIsoTs
+      ? `<span class="art-time" data-run-ts="${esc(runIsoTs)}">${timeStr}</span>`
+      : '';
+
+    return `<div class="art-row feed-row" data-source="${src}" data-date="${esc(ctDate||'')}">
+      <span class="feed-source-cell">${src}</span>
+      <div class="art-title-cell">
+        <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${esc(pick.title)}</a>
+      </div>
+      <button class="expand-btn" onclick="toggleExpand(this.closest('.feed-row'))" aria-label="Expand">+</button>
+      ${tsSpan}
+      <div class="art-expand">
+        <div class="exp-inner">
+          ${whyHtml ? `<div class="exp-main-row">
+            <div class="exp-field"><span class="exp-label">Why it matters</span>${whyHtml}</div>
+            <div class="exp-field"><span class="exp-label">Source</span><span class="exp-source-val">${src}</span></div>
+          </div>` : ''}
+          ${angleHtml ? `<div class="exp-main-row"><div class="exp-field"><span class="exp-label">Hook</span>${angleHtml}</div></div>` : ''}
+          <div class="exp-footer">${readBtn}</div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  function buildFeedSidebar(allPicks) {
+    const sidebar = document.getElementById('feed-sidebar');
+    if (!sidebar) return;
+    const srcMap = {};
+    allPicks.forEach(p => { if (p.source) srcMap[p.source] = (srcMap[p.source]||0)+1; });
+    const total  = Object.values(srcMap).reduce((a,b)=>a+b,0);
+    const sorted = Object.entries(srcMap).sort((a,b)=>b[1]-a[1]);
+    sidebar.innerHTML =
+      `<span class="sb-label">/ Sources</span>
+       <button class="sb-item fs-item active" data-source="all" onclick="filterFeed(this.dataset.source)">
+         <span>All Sources</span><span class="sb-count">(${total})</span>
+       </button>` +
+      sorted.map(([src,cnt]) =>
+        `<button class="sb-item fs-item" data-source="${esc(src)}" onclick="filterFeed(this.dataset.source)">
+           <span>${esc(src)}</span><span class="sb-count">(${cnt})</span>
+         </button>`
+      ).join('');
+  }
+
+  function filterFeed(src) {
+    activeFeedSource = src;
+    document.querySelectorAll('.fs-item').forEach(el =>
+      el.classList.toggle('active', el.dataset.source === src)
+    );
+    document.querySelectorAll('#feed-list .feed-row').forEach(row => {
+      row.dataset.hidden = (src === 'all' || row.dataset.source === src) ? '0' : '1';
+    });
+  }
+
+  function buildFeedView(runs) {
+    const listEl = document.getElementById('feed-list');
+    if (!runs?.length) { listEl.innerHTML = '<div class="state-msg">No articles yet.</div>'; return; }
+
+    // Flatten all non-trend picks across all runs, newest run first
+    const entries = [];
+    for (const run of runs) {
+      const runIsoTs = (run.date && run.time)
+        ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z` : null;
+      const ctDate = run.ct_date || run.date;
+      for (const pick of run.picks) {
+        if (!isTrendPick(pick)) entries.push({ pick, ctDate, runIsoTs });
+      }
+    }
+
+    // Render with date dividers
+    let html = '', lastDate = null;
+    for (const { pick, ctDate, runIsoTs } of entries) {
+      if (ctDate !== lastDate) {
+        html += `<div class="feed-date-divider">${esc(fmtDate(ctDate))}</div>`;
+        lastDate = ctDate;
+      }
+      html += renderFeedRow(pick, ctDate, runIsoTs);
+    }
+
+    listEl.innerHTML = html || '<div class="state-msg">No articles.</div>';
+    refreshTimestamps();
+    buildFeedSidebar(entries.map(e => e.pick));
+    activeFeedSource = 'all';
+  }
+
   // ── Mode switcher (The Edit / The Feed) ──────────────────────
   function switchMode(mode) {
     document.getElementById('pill-edit').classList.toggle('active', mode === 'edit');
     document.getElementById('pill-feed').classList.toggle('active', mode === 'feed');
-    const main        = document.querySelector('.page-outer');
-    const placeholder = document.getElementById('feed-mode-placeholder');
+    const editPage = document.querySelector('.page-outer');
+    const feedPage = document.getElementById('feed-page');
     if (mode === 'feed') {
-      if (main)        main.style.display = 'none';
-      if (placeholder) placeholder.style.display = 'flex';
+      if (editPage) editPage.style.display = 'none';
+      if (feedPage) { feedPage.style.display = ''; if (cachedRuns) buildFeedView(cachedRuns); }
     } else {
-      if (main)        main.style.display = '';
-      if (placeholder) placeholder.style.display = 'none';
+      if (editPage) editPage.style.display = '';
+      if (feedPage) feedPage.style.display = 'none';
     }
   }
 </script>
