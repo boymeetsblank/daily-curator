@@ -1198,6 +1198,25 @@
       font-style: italic;
     }
 
+    .feed-empty-state {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+    .fee-line {
+      margin: 0 0 8px;
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.01em;
+    }
+    .fee-sub {
+      margin: 0;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+
     /* ─────────────────────────────────────────
        MOBILE  ≤ 680px
     ───────────────────────────────────────── */
@@ -1375,7 +1394,7 @@
 </div>
 
 <!-- ── Page ── -->
-<div class="page-outer">
+<div class="page-outer" id="edit-page">
 
   <!-- Big heading -->
   <h1 class="page-heading">Blank</h1>
@@ -2486,7 +2505,8 @@
   function buildFeedView(data) {
     const listEl = document.getElementById('feed-list');
     const runs   = data?.runs;
-    if (!runs?.length) { listEl.innerHTML = '<div class="state-msg">No articles yet.</div>'; return; }
+    const EMPTY = '<div class="feed-empty-state"><p class="fee-line">The Feed populates after the next scheduled run.</p><p class="fee-sub">Runs daily at 7:30 AM · 1:30 PM · 7:30 PM CT</p></div>';
+    if (!runs?.length) { listEl.innerHTML = EMPTY; return; }
 
     // Flatten all articles from all_articles.json runs, newest run first
     const entries = [];
@@ -2499,7 +2519,7 @@
       }
     }
 
-    if (!entries.length) { listEl.innerHTML = '<div class="state-msg">No articles yet.</div>'; return; }
+    if (!entries.length) { listEl.innerHTML = EMPTY; return; }
 
     // Render with date dividers
     let html = '', lastDate = null;
@@ -2663,17 +2683,18 @@
   async function switchMode(mode) {
     document.getElementById('pill-edit').classList.toggle('active', mode === 'edit');
     document.getElementById('pill-feed').classList.toggle('active', mode === 'feed');
-    const editPage = document.querySelector('.page-outer');
+    const editPage = document.getElementById('edit-page');
     const feedPage = document.getElementById('feed-page');
     if (mode === 'feed') {
       if (editPage) editPage.style.display = 'none';
       if (feedPage) {
         feedPage.style.display = '';
-        document.getElementById('feed-list').innerHTML = '<div class="state-msg">Loading…</div>';
+        document.getElementById('feed-list').innerHTML =
+          '<div class="state-msg" style="font-style:normal;font-size:12px;letter-spacing:0.04em;color:var(--faint)">—</div>';
         const data = await loadFeedData();
         if (data) buildFeedView(data);
         else document.getElementById('feed-list').innerHTML =
-          '<div class="state-msg">Could not load articles.<br><small style="font-size:11px">The feed populates after the next scheduled run.</small></div>';
+          '<div class="feed-empty-state"><p class="fee-line">The Feed populates after the next scheduled run.</p><p class="fee-sub">Runs daily at 7:30 AM · 1:30 PM · 7:30 PM CT</p></div>';
       }
     } else {
       if (editPage) editPage.style.display = '';

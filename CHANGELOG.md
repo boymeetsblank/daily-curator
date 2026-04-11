@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-10] Fix: The Feed pill click handler and empty state
+
+- **Root cause:** `document.querySelector('.page-outer')` in `switchMode()` was selecting the first `.page-outer` in the DOM — the one inside `#feed-page` — instead of the edit page's wrapper. This meant clicking "The Feed" pill was hiding the feed's own container rather than the edit page.
+- **Fix:** Added `id="edit-page"` to the edit page's `.page-outer` and updated `switchMode()` to reference both pages by ID (`getElementById`), not class selector.
+- **Empty state:** Replaced inline `<small>` loading/error text with a `.feed-empty-state` component — a centered editorial message ("The Feed populates after the next scheduled run.") with a small-caps schedule line ("Runs daily at 7:30 AM · 1:30 PM · 7:30 PM CT"). Applied consistently across all empty/error paths in `switchMode()` and `buildFeedView()`.
+
 ## [2026-04-10] NL filter bar — natural language filtering in The Edit and The Feed
 
 - **Both modes** now have a subtle `/` filter bar above the article list, dormant by default (activates on `:focus-within` with a 1px border reveal).
