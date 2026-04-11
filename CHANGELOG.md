@@ -4,6 +4,13 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-11] Polish: The Feed view — source labels, title wrapping, sidebar, NL bar
+
+- **Source label casing:** Removed `text-transform: uppercase` from `.feed-source-cell`. Sources now render in their native casing — "Hypebeast", "r/nba", "WIRED", "The Atlantic" — so Reddit subreddits (`r/nba`, `r/artificial`) are no longer rendered as `R/NBA`. Font adjusted to 11px / weight 500 / tight tracking for legibility at mixed case.
+- **Multi-line title wrapping:** Added `align-self: start` to `.feed-source-cell`, `.feed-row .art-title-cell`, and `.feed-row .expand-btn`. When a title wraps to 2+ lines the source name and expand button now pin to the top of the row instead of floating awkwardly to the vertical midpoint.
+- **Sidebar header:** Removed the redundant `/ SOURCES` section label from the Feed sidebar. "All Sources" as the first item is self-explanatory; the label added noise without adding meaning.
+- **NL filter placeholders:** Replaced wordy "filter by source or category…" / "filter by source, score, or category…" with example-driven copy: `e.g. sneakers, tech, reddit` (Feed) and `e.g. sneakers, 9s & 10s, tech` (Edit). The `/` prefix already implies filtering; the placeholder shows what to type, not how to use it.
+
 ## [2026-04-11] Fix: JS syntax error in renderCard — stray backtick breaking all functionality
 
 - **Bug:** `renderCard()` had a stray backtick at the end of the `return` statement's first line (`...data-source="...">\``). This prematurely closed the template literal after just the opening `<div>` tag. The remaining 22 lines of HTML inside the template were left as raw invalid JavaScript, causing `Uncaught SyntaxError: Unexpected token '{'` on every page load.

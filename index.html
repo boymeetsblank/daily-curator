@@ -185,20 +185,21 @@
       padding-left: 0 !important;
     }
     .feed-row .art-title-link { text-shadow: none !important; }
-    .feed-row .expand-btn     { grid-column: 3; }
+    .feed-row .expand-btn     { grid-column: 3; align-self: start; padding-top: 1px; }
+    .feed-row .art-title-cell { align-self: start; padding-top: 1px; }
 
     .feed-source-cell {
       grid-column: 1;
       grid-row: 1;
-      font-size: 10px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
       color: var(--muted);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      align-self: center;
+      align-self: start;
+      padding-top: 3px;
     }
 
     .feed-date-divider {
@@ -1290,7 +1291,7 @@
         <!-- NL filter bar -->
         <div class="nl-bar" id="nl-bar-feed">
           <span class="nl-prefix">/</span>
-          <input class="nl-input" type="text" placeholder="filter by source or category…" autocomplete="off" spellcheck="false" onkeydown="nlKeydown(event,'feed')">
+          <input class="nl-input" type="text" placeholder="e.g. sneakers, tech, reddit" autocomplete="off" spellcheck="false" onkeydown="nlKeydown(event,'feed')">
           <span class="nl-status"></span>
           <button class="nl-clear" onclick="nlReset(this.closest('.nl-bar'),'feed')" aria-label="Clear filter">×</button>
         </div>
@@ -1438,7 +1439,7 @@
       <!-- NL filter bar -->
       <div class="nl-bar" id="nl-bar-edit">
         <span class="nl-prefix">/</span>
-        <input class="nl-input" type="text" placeholder="filter by source, score, or category…" autocomplete="off" spellcheck="false" onkeydown="nlKeydown(event,'edit')">
+        <input class="nl-input" type="text" placeholder="e.g. sneakers, 9s &amp; 10s, tech" autocomplete="off" spellcheck="false" onkeydown="nlKeydown(event,'edit')">
         <span class="nl-status"></span>
         <button class="nl-clear" onclick="nlReset(this.closest('.nl-bar'),'edit')" aria-label="Clear filter">×</button>
       </div>
@@ -2481,8 +2482,7 @@
     const total  = Object.values(srcMap).reduce((a,b)=>a+b,0);
     const sorted = Object.entries(srcMap).sort((a,b)=>b[1]-a[1]);
     sidebar.innerHTML =
-      `<span class="sb-label">/ Sources</span>
-       <button class="sb-item fs-item active" data-source="all" onclick="filterFeed(this.dataset.source)">
+      `<button class="sb-item fs-item active" data-source="all" onclick="filterFeed(this.dataset.source)">
          <span>All Sources</span><span class="sb-count">(${total})</span>
        </button>` +
       sorted.map(([src,cnt]) =>
