@@ -179,7 +179,7 @@
 
     /* Feed row: source name replaces score badge, no rarity decoration */
     .feed-row {
-      grid-template-columns: 100px 1fr 32px;
+      grid-template-columns: 140px 1fr 32px;
       border-left: none !important;
       box-shadow: none !important;
       padding-left: 0 !important;
@@ -191,9 +191,13 @@
     .feed-source-cell {
       grid-column: 1;
       grid-row: 1;
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.01em;
+      width: 140px;
+      min-width: 140px;
+      max-width: 140px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
       color: var(--muted);
       white-space: nowrap;
       overflow: hidden;
@@ -1296,7 +1300,7 @@
           <button class="nl-clear" onclick="nlReset(this.closest('.nl-bar'),'feed')" aria-label="Clear filter">×</button>
         </div>
 
-        <div class="list-header" style="grid-template-columns:100px 1fr 32px">
+        <div class="list-header" style="grid-template-columns:140px 1fr 32px">
           <span class="lh-label">/ Source</span>
           <span class="lh-label">/ Title</span>
           <span></span>
@@ -1696,6 +1700,7 @@
       btn.classList.toggle('active', btn.dataset.view === v)
     );
     if (cachedRuns) render(cachedRuns);
+    if (feedLoaded && cachedFeedData) buildFeedView(cachedFeedData);
   }
 
   // ── Settings panel ───────────────────────────────────────────
@@ -2474,6 +2479,37 @@
     </div>`;
   }
 
+  // ── Feed card renderer (card view for The Feed) ──────────────
+  function renderFeedCard(pick, ctDate, runIsoTs) {
+    const href      = esc(pick.link || trendSearchUrl(pick));
+    const src       = esc(pick.source || '');
+    const tsAttr    = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
+    const tsDisplay = runIsoTs
+      ? new Date(runIsoTs).toLocaleTimeString('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'2-digit'})
+      : esc(fmtDate(ctDate));
+
+    const imgWrap = pick.image
+      ? `<div class="card-img-wrap"><img class="card-thumbnail" src="${esc(pick.image)}" alt="" loading="lazy" onerror="this.closest('.card-img-wrap').classList.add('hidden')"></div>`
+      : '';
+
+    const readBtn = pick.link
+      ? `<a class="card-read-btn" href="${href}" target="_blank" rel="noopener noreferrer">Read →</a>`
+      : `<a class="card-read-btn" href="${href}" target="_blank" rel="noopener noreferrer">Search →</a>`;
+
+    return `<div class="pick-card feed-card" data-source="${src}" data-date="${esc(ctDate||'')}">
+      ${imgWrap}
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-source">${src}</span>
+          <span class="card-ts"${tsAttr}>${tsDisplay}</span>
+        </div>
+        <a class="card-headline" href="${href}" target="_blank" rel="noopener noreferrer">${esc(pick.title)}</a>
+        ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
+        <div class="card-footer">${readBtn}</div>
+      </div>
+    </div>`;
+  }
+
   function buildFeedSidebar(allPicks) {
     const sidebar = document.getElementById('feed-sidebar');
     if (!sidebar) return;
@@ -2497,7 +2533,7 @@
     document.querySelectorAll('.fs-item').forEach(el =>
       el.classList.toggle('active', el.dataset.source === src)
     );
-    document.querySelectorAll('#feed-list .feed-row').forEach(row => {
+    document.querySelectorAll('#feed-list .feed-row, #feed-list .feed-card').forEach(row => {
       row.dataset.hidden = (src === 'all' || row.dataset.source === src) ? '0' : '1';
     });
   }
@@ -2528,7 +2564,9 @@
         html += `<div class="feed-date-divider">${esc(fmtDate(ctDate))}</div>`;
         lastDate = ctDate;
       }
-      html += renderFeedRow(pick, ctDate, runIsoTs);
+      html += currentView === 'card'
+        ? renderFeedCard(pick, ctDate, runIsoTs)
+        : renderFeedRow(pick, ctDate, runIsoTs);
     }
 
     listEl.innerHTML = html || '<div class="state-msg">No articles.</div>';
