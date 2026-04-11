@@ -118,5 +118,11 @@
     "rss": "https://www.reddit.com/r/popular/",
     "category": "other",
     "enabled": true
+  },
+  {
+    "name": "r/TodayILearned",
+    "rss": "https://www.reddit.com/r/todayilearned/.rss",
+    "category": "other",
+    "enabled": true
   }
 ]
