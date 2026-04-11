@@ -85,7 +85,11 @@ def get_fresh_token() -> str:
 
 
 def generate_sources_json():
-    """Fetch Inoreader subscription list and write sources.json."""
+    """Fetch Inoreader subscription list and write sources.json.
+
+    Preserves existing entries' 'enabled' and 'category' metadata so that
+    paused/categorised sources survive a re-seed.
+    """
     token = get_fresh_token()
     url = f"{INOREADER_BASE_URL}/subscription/list"
     headers = {
@@ -98,12 +102,38 @@ def generate_sources_json():
         resp = requests.get(url, headers=headers, params={"output": "json"}, timeout=30)
         resp.raise_for_status()
         subs = resp.json().get("subscriptions", [])
+
+        # Load existing sources so we can preserve metadata (enabled, category)
+        existing: dict[str, dict] = {}
+        if os.path.exists(SOURCES_JSON_PATH):
+            try:
+                with open(SOURCES_JSON_PATH, encoding="utf-8") as f:
+                    for entry in json.load(f):
+                        if entry.get("rss"):
+                            existing[entry["rss"]] = entry
+            except Exception:
+                pass
+
         sources = []
         for s in subs:
             rss_url = s.get("url", "")
-            title = s.get("title", "Unknown Source")
-            if rss_url:
-                sources.append({"name": title, "rss": rss_url})
+            title   = s.get("title", "Unknown Source")
+            if not rss_url:
+                continue
+            prev = existing.get(rss_url, {})
+            sources.append({
+                "name":     title,
+                "rss":      rss_url,
+                "category": prev.get("category", "other"),
+                "enabled":  prev.get("enabled", True),
+            })
+
+        # Re-add any existing entries whose URLs are not in Inoreader subscriptions
+        ino_urls = {s["rss"] for s in sources}
+        for rss_url, entry in existing.items():
+            if rss_url not in ino_urls:
+                sources.append(entry)
+
         with open(SOURCES_JSON_PATH, "w", encoding="utf-8") as f:
             json.dump(sources, f, indent=2, ensure_ascii=False)
         print(f"   ✅ Wrote {len(sources)} sources to {SOURCES_JSON_PATH}")
@@ -204,13 +234,14 @@ def fetch_articles_from_direct_rss() -> list[dict]:
         print(f"   ⚠️  {SOURCES_JSON_PATH} is empty — no direct RSS sources to fetch.")
         return []
 
-    print(f"\n📡 Fetching {len(sources)} direct RSS sources (parallel, {DIRECT_RSS_TIMEOUT}s timeout each)...")
+    active_sources = [s for s in sources if s.get("enabled", True)]
+    print(f"\n📡 Fetching {len(active_sources)} direct RSS sources (parallel, {DIRECT_RSS_TIMEOUT}s timeout each)...")
     cutoff_ts = int(time.time() - (HOURS_BACK * 3600))
     articles = []
     succeeded = 0
 
     with ThreadPoolExecutor(max_workers=10) as ex:
-        futures = {ex.submit(_fetch_single_rss_feed, src, cutoff_ts): src for src in sources}
+        futures = {ex.submit(_fetch_single_rss_feed, src, cutoff_ts): src for src in active_sources}
         for future in as_completed(futures):
             result = future.result()
             if result:

@@ -241,3 +241,24 @@ MAX_PICKS               = 5    # Max number of picks per run
 | `.gitignore` | Protects your `.env` from being uploaded |
 | `picks/picks-YYYY-MM-DD-HHMM.md` | Output files — one per run |
 | `.github/workflows/daily_curator.yml` | GitHub Actions automation |
+
+---
+
+## Platform Vision
+
+Blank started as a personal content scouting tool but the long-term vision is bigger.
+
+**Core mission:** A daily briefing tool that keeps people informed about what matters in their niche worlds. Not a content creator tool — a signal-over-noise intelligence layer for anyone who wants to stay sharp in a specific domain.
+
+**Unique angle:**
+- Natural language setup — describe your interests in plain English, the tool figures out the sources
+- AI editorial judgment — not just aggregation, but curation with transparent reasoning (why this story matters, why now)
+- Cross-platform signals — RSS feeds, X trends, Google trends, and more converge into one ranked briefing
+- Intentionally finite — 10 picks max per run, so every item earns its place
+
+**Long term:** A no-code AI curation platform open to the public. Anyone should be able to spin up their own daily briefing — sports, finance, tech, fashion, whatever their niche — without writing a line of code.
+
+**Planned phases:**
+- Phase 5 — Platform: natural language feed controls, dynamic source library, public platform for anyone to create their own briefing
+- Breaking News Mode: lightweight watchdog running every 30–60 minutes, surfaces one breaking pick per check
+- Always show X trending topics: dedicated always-visible section in the web feed showing the top 10–20 X trending topics from the latest run

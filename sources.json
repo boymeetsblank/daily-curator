@@ -1,26 +1,22 @@
 [
-  {
-    "name": "Reddit",
-    "rss": "https://www.reddit.com/r/popular/",
-    "category": "other",
-    "enabled": true
-  },
-  {
-    "name": "Today I Learned",
-    "rss": "https://www.reddit.com/r/todayilearned/",
-    "category": "other",
-    "enabled": true
-  },
-  {
-    "name": "Mildly Interesting",
-    "rss": "https://www.reddit.com/r/mildlyinteresting/",
-    "category": "other",
-    "enabled": true
-  },
-  {
-    "name": "r/News",
-    "rss": "https://www.reddit.com/r/news/",
-    "category": "other",
-    "enabled": true
-  }
+  { "name": "Hypebeast",        "rss": "https://hypebeast.com/feed/",                                          "category": "sneakers", "enabled": true },
+  { "name": "Sneaker News",     "rss": "https://sneakernews.com/feed/",                                        "category": "sneakers", "enabled": true },
+  { "name": "GQ",               "rss": "https://www.gq.com/feed/rss",                                          "category": "fashion",  "enabled": true },
+  { "name": "Complex",          "rss": "https://www.complex.com/index.xml",                                    "category": "culture",  "enabled": true },
+  { "name": "Variety",          "rss": "https://feeds.feedburner.com/variety/headlines",                       "category": "culture",  "enabled": true },
+  { "name": "The Atlantic",     "rss": "https://feeds.feedburner.com/TheAtlantic",                             "category": "culture",  "enabled": true },
+  { "name": "Vox",              "rss": "https://www.vox.com/rss/index.xml",                                    "category": "culture",  "enabled": true },
+  { "name": "Adweek",           "rss": "https://www.adweek.com/feed/",                                         "category": "culture",  "enabled": true },
+  { "name": "r/popculturechat", "rss": "https://www.reddit.com/r/popculturechat/.rss",                         "category": "culture",  "enabled": true },
+  { "name": "ESPN",             "rss": "https://sports.espn.go.com/espn/rss/news",                             "category": "sports",   "enabled": true },
+  { "name": "r/sports",         "rss": "https://www.reddit.com/r/sports/.rss",                                  "category": "sports",   "enabled": true },
+  { "name": "r/nba",            "rss": "https://www.reddit.com/r/nba/.rss",                                     "category": "sports",   "enabled": true },
+  { "name": "WIRED",            "rss": "https://www.wired.com/feed/rss",                                        "category": "tech",     "enabled": true },
+  { "name": "The Verge",        "rss": "https://www.theverge.com/rss/index.xml",                                "category": "tech",     "enabled": true },
+  { "name": "TechCrunch",       "rss": "https://techcrunch.com/feed/",                                          "category": "tech",     "enabled": true },
+  { "name": "Engadget",         "rss": "https://www.engadget.com/rss.xml",                                      "category": "tech",     "enabled": true },
+  { "name": "Ars Technica",     "rss": "https://feeds.arstechnica.com/arstechnica/index",                       "category": "tech",     "enabled": true },
+  { "name": "r/artificial",     "rss": "https://www.reddit.com/r/artificial/.rss",                              "category": "tech",     "enabled": true },
+  { "name": "CNBC",             "rss": "https://www.cnbc.com/id/100003114/device/rss/rss.html",                 "category": "other",    "enabled": true },
+  { "name": "Reddit",           "rss": "https://www.reddit.com/r/popular/",                                     "category": "other",    "enabled": true }
 ]
