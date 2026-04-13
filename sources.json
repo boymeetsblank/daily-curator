@@ -118,5 +118,11 @@
     "rss": "https://www.reddit.com/r/todayilearned/.rss",
     "category": "other",
     "enabled": true
+  },
+  {
+    "name": "Google News - Technology",
+    "rss": "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=Technology",
+    "category": "other",
+    "enabled": true
   }
 ]
