@@ -4,6 +4,55 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-12] Sources full-page overlay — dedicated source management experience
+
+- **Sources page** (`#sources-page`): full-screen overlay that slides up from the bottom, replacing the old sidebar-confined source management. Triggered by the gear icon via `openSettings()` → `openSources()`.
+- **Category grouping**: sources are organized into named sections — Sneakers, Watches, Streetwear, Culture, Wide Net, Other — matching the editorial aesthetic. Categories without sources are hidden.
+- **Per-source health stats**: each row shows a health dot (green = active last run, yellow = stale, grey = no data, red = failed manual check), last pull timestamp, and avg articles/run — computed from `all_articles.json` without any new backend.
+- **Manual ↻ Check button**: validates the source's RSS URL on demand via the existing `spTryFeed()` proxy chain. Dot turns green or red immediately.
+- **Search/filter bar**: live filter across name, URL, and category without re-fetching.
+- **Compact utility topbar**: Dark/Light mode, notifications, and List/Cards view toggles moved into the sources page header — gear now opens one destination.
+- **`applyTheme()`, `initNotifBtn()`, `enableNotifications()`** updated to keep the sources page utility buttons in sync with the sidebar equivalents.
+
+## [2026-04-12] Fix: Reddit RSS parsing — "reddit sub" and "reddit/sub" formats
+
+- **Root cause:** The `spParseInput` Reddit regex only matched `r/sub` and `reddit.com/r/sub`. The patterns `reddit/todayilearned` and `reddit todayilearned` (space-separated) fell through to the bare-domain handler, which produced an invalid URL.
+- **Fix:** Replaced the Reddit alternation with `reddit[\s/]+` which covers `reddit/sub` and `reddit sub` (any whitespace or slash after "reddit"). The alternation order ensures `reddit.com/r/sub` is still caught by the `.com/r/` pattern before `reddit[\s/]+` gets a chance to partially match it. All six variants now resolve to `https://www.reddit.com/r/[sub]/.rss`.
+
+## [2026-04-12] Smart RSS discovery + source health indicators
+
+- **Smart input parsing (`spParseInput`):** Detects input type before any network call and constructs the correct RSS URL automatically. Handles: `r/subreddit` or `reddit.com/r/sub` → Reddit JSON feed; `slug.substack.com` → Substack `/feed`; `youtube.com/channel/ID` or `youtube.com/@handle` → YouTube XML feed; bare domain (e.g. `hypebeast.com`) → tries `/feed`, `/rss`, `/rss.xml`, `/feed.xml`, `/atom.xml` in order; direct RSS/Atom URL → validated immediately; generic URL → autodiscovery.
+- **Validation chain (`spTryFeed`):** Each candidate URL is fetched via the allorigins.win proxy and tested for RSS/Atom markers. If none of the pattern candidates succeed, the last attempt falls back to HTML `<link rel="alternate">` autodiscovery. The resolved feed URL replaces the input field value. Feed title is auto-populated into the Name field.
+- **Real-time type hint (`spHintInput`):** As the user types (debounced 180ms), a small badge appears below the URL input showing the detected input type (e.g. `REDDIT · r/sneakers` or `DOMAIN · Will try /feed, /rss…`). Updates to a green ✓ confirmation or red error after the Detect call resolves.
+- **`decodeHtml()` extracted:** Previously defined inline inside `spDetectRss`, now a module-level utility shared across all discovery functions. Handles `&amp;`, `&lt;`, `&gt;`, `&quot;`, `&#39;`, `&apos;`.
+- **Source health indicators (`spLoadSourceHealth`):** On settings panel open, fetches `all_articles.json` in the background and builds a per-source article count from the most recent run. Each source row in the list now shows a colored dot: green (active — articles appeared in last run) or grey (inactive — source is configured but produced no articles). Tooltip shows exact count. Dots update in place without re-rendering the list.
+
+## [2026-04-12] ROADMAP.md — full rewrite to reflect current state
+
+- Retired all stale "In Progress" and "Major Features" entries — everything listed had already shipped.
+- Documented **Shipped** section covering all pipeline, scoring, and frontend work to date.
+- **Up Next** section restructured around the core principle: feed quality first, better inputs beat better technology. Aggressive source expansion (8 Reddit subreddits + 3 independent newsletters) listed as the immediate priority before any new infrastructure.
+- **Phase 2** section captures the real-time trend pipeline plan with explicit note to decide model via testing, not assumption.
+- **Product Decisions — Locked** table captures all resolved product questions: The Edit/Feed naming and roles, landing page headline, feedback loop trigger, story clustering threshold, Zeitgeist and multi-user unlock conditions.
+- Stale parked items trimmed.
+
+## [2026-04-12] Cross-run deduplication via persistent seen_urls.json
+
+- **`seen_urls.json`** — new persistent registry stored in the repo root. Tracks every article URL that has passed through the scoring pipeline, keyed by normalized URL with an ISO timestamp of when it was first seen.
+- **Rolling 7-day window** — `prune_seen_urls()` removes entries older than 7 days on every run. Prevents unbounded file growth; allows genuinely evergreen content to resurface after a week.
+- **Pre-scoring filter** — `filter_seen_urls()` runs after `dedup_articles_by_url()` and before both Claude calls (pre-scoring topic clustering and main scoring). Articles already in the registry are skipped entirely, saving API calls on already-seen stories.
+- **Registry update after scoring** — `update_seen_urls()` adds all scored article URLs (real articles only, no trend items) to the registry after each run. `save_seen_urls()` writes the updated file to disk.
+- **Workflow updated** — `daily_curator.yml` `git add` step now includes `seen_urls.json` so the registry persists across all 3 daily runs and across days.
+- **`filter_already_picked_today()` retained** — the existing same-day picks guard remains as a last-mile check specifically on top picks, complementing the broader seen registry.
+
+## [2026-04-12] Fix: deduplication hardening + The Feed excludes Edit stories
+
+- **`normalize_url()` helper:** Strips tracking parameters (UTM, fbclid, gclid, ref, mc_cid, and 15+ others) and URL fragments before any URL comparison. Prevents the same article with different tracking params from appearing twice.
+- **`dedup_articles_by_url()`:** New fast URL-normalization dedup runs immediately after the source cap, before Claude clustering. Removes articles whose normalized URLs are identical — catches exact duplicates and tracking-param variants at zero cost.
+- **`filter_already_picked_today()` upgraded:** Cross-run dedup now normalizes both stored URLs (from today's picks files) and candidate URLs before comparing. A story with `?utm_source=newsletter` no longer slips past an already-picked `?utm_source=twitter` variant.
+- **Claude pre-scoring dedup unchanged:** The existing `deduplicate_articles_pre_scoring()` Claude clustering already handles near-identical titles and same-story articles from different source URLs — no changes needed there.
+- **The Feed is now a true discovery layer:** `write_all_articles_json()` accepts an `exclude_urls` set. In `main()`, the set of normalized pick URLs is built after `filter_already_picked_today()`, then passed to `write_all_articles_json()` so any article that made The Edit is excluded from `all_articles/*.json`. The Feed (`all_articles.json`) now only contains stories that did not make the cut — not a superset of The Edit.
+
 ## [2026-04-11] Fix: The Feed — source label standardization, fixed column width, card view
 
 - **Source label standardization:** All source names in The Feed now render identically regardless of length or content — 10px / weight 600 / 0.09em tracking / uppercase. "Artificial Intelligence", "popculturechat", "The Atlantic" and "WIRED", "ESPN", "CNBC" are visually identical in format.
@@ -96,12 +145,6 @@ All notable changes to the daily-curator project are documented here. Newest ent
 - **Sources section** — URL input with auto-detect RSS (fetches via allorigins.win CORS proxy, parses RSS link tags and feed content); name field (auto-populated from page `<title>`); category dropdown (culture, tech, sports, fashion, sneakers, watches, other); Add Source button writes to `sources.json` via GitHub API (same pattern as `votes.json`). Duplicate URL check before writing.
 - **Current Sources list** — shows all sources from `sources.json` with Pause/Resume and Remove buttons, each writing back to GitHub. Paused sources render at reduced opacity. Changes take effect on the next scheduled pipeline run.
 
-## [2026-04-09] Fix Claude scoring failure on large article pools
-
-- **Root cause:** With Inoreader + Direct RSS combined, pools of 200+ articles require ~20k output tokens — more than double the 8,192 `max_tokens` limit. Claude's response was truncated mid-JSON, causing the parse failure.
-- **Chunked scoring:** `evaluate_articles_with_claude()` now splits large pools into batches of 50 (`CLAUDE_SCORING_BATCH_SIZE`) via a private `_score_batch()` helper. Each batch is scored independently and results are reassembled in order.
-- **Graceful batch failure:** If a batch fails to parse after one retry, it logs a warning and assigns score 0 to that batch — the pipeline continues rather than terminating.
-- **Improved JSON parsing:** Strip markdown code fences (` ```json `) before parsing, catching another common edge case.
 
 ## [2026-04-09] Direct RSS parallel fetch + vote persistence
 
@@ -111,29 +154,7 @@ All notable changes to the daily-curator project are documented here. Newest ent
 - **`feedparser>=6.0.0`** added to `requirements.txt`.
 - **Vote persistence:** Vote state (up/down) is now saved to `localStorage` under key `blank_votes` (keyed by article URL). `applyVoteState()` restores classes after every render — votes survive page refresh.
 
-## [2026-04-09] List view: fix right border start position
 
-- Moved `border-right` off `.content` onto `.list-header` + `#feed-container` — border now starts at the column header row instead of the top of the full content column.
 
-## [2026-04-09] List view: right border on content area
 
-- Added `border-right: 1px solid var(--border)` to `.content` — closes the list container on the right side with the same neutral 1px divider used for row borders. Rarity color remains exclusive to the left border.
 
-## [2026-04-08] Add ROADMAP.md
-
-- Created ROADMAP.md in project root with full product roadmap organized by category (In Progress, Visual/Frontend, Scoring, Feedback Loop, Major Features, Parked).
-
-## [2026-04-08] List view: rarity left border + remove date column
-
-- **Permanent rarity left border on rows:** Score 8 gets a 2px blue (`#3b82f6`) left border, score 9 gets purple (`#a855f7`), score 10 gets orange (`#f59e0b`). Score 7 has no border. Border is always visible (not only on expand).
-- **Date column removed from list view:** The `/ Date` header and per-row date text are gone. The relative timestamp ("6h ago") beneath the score badge is preserved as-is.
-
-## [2026-04-08] Rarity tier overhaul, font glow, accordion + trends UX
-
-- **Scoring tiers split to 4 levels:** 7 = outlined badge only (no fill), 8 = blue filled badge, 9 = purple filled badge (`score-epic`), 10 = orange filled badge. Previously 9 and 10 were both "legendary" orange.
-- **Font glow on title text:** Blue glow for score 8, medium purple glow for 9, strong orange glow for 10 — applied in both list and card view. Existing card box-shadow/border glow is preserved.
-- **10/10 rarity rule:** Added to Claude scoring prompt — a 10 should be genuinely rare (roughly once every 1–3 runs), never awarded just to fill the tier.
-- **Accordion "SUMMARY" → "WHY IT MATTERS":** Renamed the expand panel field label in list view.
-- **Accordion left border replaces grey box:** `exp-inner` background removed; replaced with a thin 2px vertical left border tinted to the story's rarity color (grey for 7, blue for 8, purple for 9, orange for 10).
-- **X Trends hidden by default on desktop:** Trends module is now `display: none` globally and only shown when the user clicks the "Trends" topbar button (unified with existing mobile behavior, using `trends-visible` class instead of `mobile-open`).
-- **CLAUDE.md:** Added instruction to always read the frontend design skill before writing UI code.

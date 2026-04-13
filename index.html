@@ -488,10 +488,277 @@
 
     .sp-msg { font-size: 12px; color: var(--faint); padding: 12px 0; }
 
+    /* Smart detect hint */
+    .sp-detect-hint {
+      font-size: 11px;
+      min-height: 18px;
+      padding: 5px 0 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--faint);
+      transition: color 0.15s;
+    }
+    .sp-detect-hint.detecting { color: var(--muted); }
+    .sp-detect-hint.valid     { color: #3a6e00; }
+    [data-theme="dark"] .sp-detect-hint.valid { color: #a3e635; }
+    .sp-detect-hint.invalid   { color: var(--red); opacity: 0.8; }
+
+    .sp-hint-type {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1px 5px;
+      border: 1px solid currentColor;
+      border-radius: 2px;
+      flex-shrink: 0;
+      opacity: 0.75;
+    }
+
+    /* Source health dot (replaces static .sp-source-dot) */
+    .sp-source-health {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--faint);
+      flex-shrink: 0;
+      cursor: help;
+      transition: background 0.25s;
+    }
+    .sp-source-health.active   { background: #22c55e; box-shadow: 0 0 5px rgba(34,197,94,0.45); }
+    .sp-source-health.inactive { background: var(--faint); }
+
     #settings-btn { padding: 3px 6px; }
 
     @media (max-width: 680px) {
       #settings-panel { width: 100vw; border-left: none; }
+    }
+
+    /* ─────────────────────────────────────────
+       SOURCES PAGE (full-page overlay)
+    ───────────────────────────────────────── */
+    #sources-page {
+      position: fixed;
+      inset: 0;
+      background: var(--bg);
+      z-index: 400;
+      display: flex;
+      flex-direction: column;
+      transform: translateY(100%);
+      transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+      overflow: hidden;
+    }
+    #sources-page.open { transform: translateY(0); }
+
+    .srcp-topbar {
+      height: 44px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .srcp-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      flex: 1;
+    }
+    .srcp-tb-utils { display: flex; align-items: center; gap: 6px; }
+    .srcp-close {
+      background: none;
+      border: none;
+      font-size: 18px;
+      line-height: 1;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 4px 0 4px 8px;
+      transition: color 0.1s;
+    }
+    .srcp-close:hover { color: var(--ink); }
+
+    .srcp-body {
+      flex: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Add form */
+    .srcp-add {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+      flex-shrink: 0;
+    }
+    .srcp-add-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 10px;
+    }
+    .srcp-add-row {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .srcp-add-url-wrap { flex: 2; min-width: 200px; display: flex; flex-direction: column; gap: 4px; }
+    .srcp-add-name-wrap { flex: 1; min-width: 120px; }
+    .srcp-add-cat-wrap  { flex: 0 0 120px; }
+    .srcp-add-btn-wrap  { flex: 0 0 auto; display: flex; align-items: flex-start; }
+    .srcp-add-status {
+      font-size: 11px;
+      color: var(--muted);
+      padding-top: 7px;
+      min-height: 18px;
+    }
+    .srcp-add-status.ok  { color: #3a6e00; }
+    [data-theme="dark"] .srcp-add-status.ok { color: #a3e635; }
+    .srcp-add-status.err { color: var(--red); }
+
+    /* Search bar */
+    .srcp-search-wrap {
+      padding: 10px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .srcp-search {
+      flex: 1;
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--ink);
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0;
+    }
+    .srcp-search::placeholder { color: var(--faint); }
+    .srcp-count {
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      color: var(--faint);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* Source list */
+    .srcp-list { flex: 1; padding: 0 20px 40px; overflow-y: auto; }
+    .srcp-cat-group { margin-top: 20px; }
+    .srcp-cat-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--faint);
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      display: block;
+    }
+    .srcp-row {
+      display: grid;
+      grid-template-columns: 16px 1fr auto auto;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      transition: opacity 0.15s;
+    }
+    .srcp-row.paused { opacity: 0.4; }
+    .srcp-health {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--faint);
+      cursor: help;
+      transition: background 0.25s, box-shadow 0.25s;
+      justify-self: center;
+      flex-shrink: 0;
+    }
+    .srcp-health.green  { background: #22c55e; box-shadow: 0 0 6px rgba(34,197,94,0.5); }
+    .srcp-health.yellow { background: #eab308; box-shadow: 0 0 6px rgba(234,179,8,0.4); }
+    .srcp-health.grey   { background: var(--faint); }
+    .srcp-health.red    { background: var(--red);   box-shadow: 0 0 6px rgba(220,38,38,0.4); }
+
+    .srcp-info { min-width: 0; }
+    .srcp-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 2px;
+    }
+    .srcp-meta {
+      font-size: 10px;
+      color: var(--faint);
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .srcp-check-btn {
+      font-family: var(--sans);
+      font-size: 10px;
+      color: var(--muted);
+      background: none;
+      border: 1px solid var(--border);
+      padding: 3px 8px;
+      cursor: pointer;
+      border-radius: 2px;
+      white-space: nowrap;
+      transition: color 0.1s, border-color 0.1s;
+      flex-shrink: 0;
+    }
+    .srcp-check-btn:hover { color: var(--ink); border-color: var(--muted); }
+    .srcp-check-btn:disabled { opacity: 0.4; cursor: default; }
+    .srcp-actions { display: flex; gap: 4px; flex-shrink: 0; }
+    .srcp-act {
+      font-family: var(--sans);
+      font-size: 10px;
+      color: var(--muted);
+      background: none;
+      border: 1px solid var(--border);
+      padding: 3px 8px;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: color 0.1s, border-color 0.1s;
+      white-space: nowrap;
+    }
+    .srcp-act:hover { color: var(--ink); border-color: var(--muted); }
+    .srcp-act.remove:hover { color: var(--red); border-color: var(--red); }
+    .srcp-empty {
+      font-size: 12px;
+      color: var(--faint);
+      padding: 32px 0;
+      text-align: center;
+    }
+    .srcp-list-status {
+      font-size: 11px;
+      color: var(--muted);
+      min-height: 20px;
+      padding: 8px 20px;
+      flex-shrink: 0;
+    }
+    .srcp-list-status.ok  { color: #3a6e00; }
+    [data-theme="dark"] .srcp-list-status.ok { color: #a3e635; }
+    .srcp-list-status.err { color: var(--red); }
+
+    @media (max-width: 680px) {
+      .srcp-add-row { flex-direction: column; }
+      .srcp-add-url-wrap, .srcp-add-name-wrap, .srcp-add-cat-wrap { min-width: 0; width: 100%; }
+      .srcp-add-btn-wrap { width: 100%; }
+      .srcp-add-btn-wrap .sp-btn.primary { width: 100%; }
     }
 
     /* ─────────────────────────────────────────
@@ -1314,6 +1581,73 @@
   </div>
 </div>
 
+<!-- ── Sources page (full-page overlay) ── -->
+<div id="sources-page" role="dialog" aria-label="Sources" aria-modal="true">
+
+  <div class="srcp-topbar">
+    <span class="srcp-title">/ Sources</span>
+    <div class="srcp-tb-utils">
+      <button class="tb-btn" id="srcp-theme-btn" onclick="toggleTheme()" style="padding:3px 10px;min-width:56px"></button>
+      <button class="tb-btn" id="srcp-notif-btn" onclick="enableNotifications()" style="padding:3px 10px" title="Notifications">🔔</button>
+      <button class="tb-btn vt-btn srcp-vt" data-view="list" onclick="setView('list')" title="List view">≡ List</button>
+      <button class="tb-btn vt-btn srcp-vt" data-view="card" onclick="setView('card')" title="Card view">⊞ Cards</button>
+    </div>
+    <button class="srcp-close" onclick="closeSources()" aria-label="Close sources">×</button>
+  </div>
+
+  <div class="srcp-body">
+
+    <div class="srcp-add">
+      <span class="srcp-add-label">/ Add source</span>
+      <div class="srcp-add-row">
+        <div class="srcp-add-url-wrap">
+          <input id="srcp-url" class="sp-input" type="text"
+            placeholder="r/sneakers, hypebeast.com, or paste a URL…"
+            autocomplete="off" spellcheck="false"
+            oninput="srcpHintInput(this)"
+            onkeydown="if(event.key==='Enter')srcpDetect()"/>
+          <div class="sp-detect-hint" id="srcp-hint"></div>
+        </div>
+        <div class="srcp-add-btn-wrap">
+          <button class="sp-btn" id="srcp-detect-btn" onclick="srcpDetect()">Detect</button>
+        </div>
+        <div class="srcp-add-name-wrap">
+          <input id="srcp-name" class="sp-input" type="text" placeholder="Name"/>
+        </div>
+        <div class="srcp-add-cat-wrap">
+          <select id="srcp-cat" class="sp-input sp-select">
+            <option value="sneakers">Sneakers</option>
+            <option value="watches">Watches</option>
+            <option value="streetwear">Streetwear</option>
+            <option value="culture" selected>Culture</option>
+            <option value="wide net">Wide Net</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="srcp-add-btn-wrap">
+          <button class="sp-btn primary" id="srcp-add-btn" onclick="srcpAddSource()" style="margin-top:0;width:auto">Add</button>
+        </div>
+      </div>
+      <div class="srcp-add-status" id="srcp-add-status"></div>
+    </div>
+
+    <div class="srcp-search-wrap">
+      <span style="font-size:10px;color:var(--faint);flex-shrink:0;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">/ Filter</span>
+      <input class="srcp-search" id="srcp-search" type="text"
+        placeholder="Search sources…"
+        oninput="srcpFilter()"
+        autocomplete="off" spellcheck="false"/>
+      <span class="srcp-count" id="srcp-count"></span>
+    </div>
+
+    <div class="srcp-list" id="srcp-list">
+      <div class="srcp-empty">Loading…</div>
+    </div>
+    <div class="srcp-list-status" id="srcp-list-status"></div>
+
+  </div>
+</div>
+
 <!-- ── Settings backdrop ── -->
 <div id="settings-backdrop" onclick="closeSettings()"></div>
 
@@ -1357,11 +1691,12 @@
       <span class="sp-label">/ Sources</span>
 
       <div class="sp-field">
-        <label class="sp-field-label" for="sp-url-input">URL</label>
+        <label class="sp-field-label" for="sp-url-input">Add source</label>
         <div class="sp-url-row">
-          <input id="sp-url-input" class="sp-input" type="url" placeholder="Paste article, site, or feed URL…" oninput="spClearStatus('sp-add-status')"/>
+          <input id="sp-url-input" class="sp-input" type="text" placeholder="r/sneakers, hypebeast.com, or paste a URL…" autocomplete="off" spellcheck="false" oninput="spHintInput(this)" onkeydown="if(event.key==='Enter')spDetectRss()"/>
           <button class="sp-btn" id="sp-detect-btn" onclick="spDetectRss()">Detect</button>
         </div>
+        <div class="sp-detect-hint" id="sp-detect-hint"></div>
       </div>
 
       <div class="sp-field">
@@ -1468,8 +1803,11 @@
   // ── Theme ────────────────────────────────────────────────────
   function applyTheme(t) {
     document.documentElement.setAttribute('data-theme', t);
+    const label = t === 'dark' ? '☀ Light' : '☽ Dark';
     const b = document.getElementById('sp-theme-toggle');
-    if (b) b.textContent = t === 'dark' ? '☀ Light' : '☽ Dark';
+    if (b) b.textContent = label;
+    const sb = document.getElementById('srcp-theme-btn');
+    if (sb) sb.textContent = label;
   }
   function toggleTheme() {
     const cur = localStorage.getItem('blank_theme') || 'light';
@@ -1705,16 +2043,14 @@
 
   // ── Settings panel ───────────────────────────────────────────
   function openSettings() {
-    document.getElementById('settings-panel').classList.add('open');
-    document.getElementById('settings-backdrop').classList.add('open');
-    document.body.style.overflow = 'hidden';
-    spLoadSources();
+    // Redirect gear icon to the full sources page
+    openSources();
   }
 
   function closeSettings() {
     document.getElementById('settings-panel').classList.remove('open');
     document.getElementById('settings-backdrop').classList.remove('open');
-    document.body.style.overflow = '';
+    closeSources();
   }
 
   // GitHub API helpers for sources.json
@@ -1763,6 +2099,33 @@
     spRenderSources(sources);
   }
 
+  // ── Source health (article count from latest run) ────────────
+  let spSourceHealth = null;  // null = not loaded yet, {} = loaded
+
+  async function spLoadSourceHealth() {
+    try {
+      const res = await fetch('all_articles.json?cb=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) { spSourceHealth = {}; return; }
+      const data  = await res.json();
+      const health = {};
+      const runs  = data.runs || [];
+      if (runs.length) {
+        for (const art of (runs[0].articles || [])) {
+          if (art.source) health[art.source] = (health[art.source] || 0) + 1;
+        }
+      }
+      spSourceHealth = health;
+      // Patch any already-rendered dots without a full re-render
+      document.querySelectorAll('#sp-sources-list .sp-source-health').forEach(dot => {
+        const name  = dot.dataset.source;
+        if (!name) return;
+        const count = spSourceHealth[name] || 0;
+        dot.className = 'sp-source-health ' + (count > 0 ? 'active' : 'inactive');
+        dot.title = count > 0 ? `${count} article${count > 1 ? 's' : ''} in last run` : 'No articles in last run';
+      });
+    } catch { spSourceHealth = {}; }
+  }
+
   function spRenderSources(sources) {
     const listEl = document.getElementById('sp-sources-list');
     if (!sources.length) {
@@ -1771,11 +2134,18 @@
     }
     listEl.innerHTML = sources.map((s, i) => {
       const paused = s.enabled === false;
-      const cat = s.category || 'other';
+      const cat    = s.category || 'other';
+      const name   = s.name || s.rss || '';
+      const count  = spSourceHealth ? (spSourceHealth[name] || 0) : -1;
+      const hClass = paused ? 'inactive' : (count < 0 ? '' : count > 0 ? 'active' : 'inactive');
+      const hTitle = paused
+        ? 'Paused' : (count < 0 ? 'Loading…'
+        : count > 0 ? `${count} article${count > 1 ? 's' : ''} in last run`
+        : 'No articles in last run');
       return `<div class="sp-source-item${paused ? ' paused' : ''}">
-        <div class="sp-source-dot"></div>
+        <div class="sp-source-health ${hClass}" data-source="${esc(name)}" title="${esc(hTitle)}"></div>
         <div class="sp-source-info">
-          <div class="sp-source-name" title="${esc(s.rss||'')}">${esc(s.name || s.rss || '')}</div>
+          <div class="sp-source-name" title="${esc(s.rss||'')}">${esc(name)}</div>
           <div class="sp-source-cat">${esc(cat)}</div>
         </div>
         <div class="sp-source-actions">
@@ -1798,61 +2168,185 @@
     if (el) { el.textContent = ''; el.className = 'sp-status'; }
   }
 
+  // ── Smart RSS discovery ──────────────────────────────────────
+
+  function decodeHtml(h) {
+    return String(h||'')
+      .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>')
+      .replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&apos;/g,"'");
+  }
+
+  // Parse raw input and return {type, label, candidates[], name, category, needsDiscovery?}
+  function spParseInput(raw) {
+    raw = (raw || '').trim();
+    if (!raw) return null;
+
+    // Reddit: r/sub · reddit/sub · "reddit sub" · reddit.com/r/sub · full URL
+    const redditM = raw.match(/^(?:https?:\/\/(?:www\.)?reddit\.com\/r\/|(?:www\.)?reddit\.com\/r\/|reddit[\s/]+|r\/)([A-Za-z0-9_]+)/i);
+    if (redditM) {
+      const sub = redditM[1];
+      return { type:'Reddit', label:`r/${sub}`,
+        candidates:[`https://www.reddit.com/r/${sub}/.rss`],
+        name:`r/${sub}`, category:'culture' };
+    }
+
+    // Substack: slug.substack.com
+    const substackM = raw.match(/^(?:https?:\/\/)?([a-z0-9-]+)\.substack\.com/i);
+    if (substackM) {
+      const slug = substackM[1];
+      return { type:'Substack', label:`${slug}.substack.com`,
+        candidates:[`https://${slug}.substack.com/feed`],
+        name: slug.charAt(0).toUpperCase()+slug.slice(1), category:'culture' };
+    }
+
+    // YouTube channel ID
+    const ytChanM = raw.match(/youtube\.com\/channel\/([A-Za-z0-9_-]+)/i);
+    if (ytChanM) {
+      return { type:'YouTube', label:'Channel feed',
+        candidates:[`https://www.youtube.com/feeds/videos.xml?channel_id=${ytChanM[1]}`],
+        name:'YouTube', category:'culture' };
+    }
+
+    // YouTube @handle
+    const ytHandleM = raw.match(/youtube\.com\/@([A-Za-z0-9_.-]+)/i);
+    if (ytHandleM) {
+      return { type:'YouTube', label:`@${ytHandleM[1]}`,
+        candidates:[`https://www.youtube.com/feeds/videos.xml?user=${ytHandleM[1]}`],
+        name:ytHandleM[1], category:'culture' };
+    }
+
+    // Full URL — check if it already looks like a feed
+    if (/^https?:\/\//i.test(raw)) {
+      if (/\/(feed|rss|atom)(\/|\.xml|\.rss|\.atom|\?|$)/i.test(raw)
+          || /\.(rss|xml|atom)$/i.test(raw)
+          || /feeds\.(feedburner|feedblitz)\./i.test(raw)) {
+        return { type:'Feed URL', label:'Direct RSS/Atom',
+          candidates:[raw], name:'', category:'other' };
+      }
+      // Generic URL — autodiscovery
+      return { type:'Website', label:'Will autodiscover feed',
+        candidates:[raw], name:'', category:'other', needsDiscovery:true };
+    }
+
+    // Bare domain / path (e.g. "hypebeast.com" or "hypebeast.com/sneakers")
+    const domainM = raw.match(/^([a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?(\.[a-zA-Z]{2,})+)(\/.*)?$/);
+    if (domainM) {
+      const domain = domainM[1];
+      const path   = domainM[4] || '';
+      const base   = `https://${domain}${path}`;
+      return { type:'Domain', label:'Will try /feed, /rss…',
+        candidates:[
+          `${base}/feed`, `${base}/rss`, `${base}/rss.xml`,
+          `${base}/feed.xml`, `${base}/atom.xml`,
+          base,  // last: autodiscover from homepage
+        ],
+        name: domain.replace(/^www\./,''), category:'other', needsDiscovery:true };
+    }
+
+    return null;
+  }
+
+  // Try to fetch and validate a single URL as an RSS/Atom feed.
+  // If tryDiscovery=true and the URL is HTML, scans for <link rel="alternate">.
+  // Returns { resolvedUrl, feedTitle } or null.
+  async function spTryFeed(url, tryDiscovery) {
+    try {
+      const proxy   = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+      const resp    = await fetch(proxy, { signal: AbortSignal.timeout(8000) });
+      if (!resp.ok) return null;
+      const data    = await resp.json();
+      const content = data.contents || '';
+      if (!content) return null;
+
+      if (/<rss[\s>]|<feed[\s>]|<channel[\s>]/i.test(content)) {
+        const tm = content.match(/<title[^>]*>(?:<!\[CDATA\[)?\s*(.*?)\s*(?:\]\]>)?<\/title>/is);
+        return { resolvedUrl: url, feedTitle: tm ? decodeHtml(tm[1].trim()).slice(0,80) : '' };
+      }
+
+      if (!tryDiscovery) return null;
+
+      // HTML — look for <link rel="alternate" type="application/rss+xml">
+      const m =
+        content.match(/<link[^>]+type=["']application\/(?:rss|atom)\+xml["'][^>]*href=["']([^"']+)["']/i) ||
+        content.match(/<link[^>]+href=["']([^"']+)["'][^>]*type=["']application\/(?:rss|atom)\+xml["']/i);
+      if (!m) return null;
+
+      let discovered = m[1];
+      try {
+        if (discovered.startsWith('//'))   discovered = 'https:' + discovered;
+        else if (discovered.startsWith('/')) discovered = new URL(url).origin + discovered;
+        else if (!discovered.startsWith('http')) discovered = new URL(url).origin + '/' + discovered;
+      } catch {}
+      return await spTryFeed(discovered, false);
+    } catch { return null; }
+  }
+
+  // Real-time input hint (no network — just pattern detection)
+  let _spHintTimer = null;
+  function spHintInput(input) {
+    clearTimeout(_spHintTimer);
+    const hint = document.getElementById('sp-detect-hint');
+    if (!hint) return;
+    spClearStatus('sp-add-status');
+    const raw = input.value.trim();
+    if (!raw) { hint.textContent = ''; hint.className = 'sp-detect-hint'; return; }
+    _spHintTimer = setTimeout(() => {
+      const parsed = spParseInput(raw);
+      if (!parsed) { hint.textContent = ''; hint.className = 'sp-detect-hint'; return; }
+      hint.innerHTML = `<span class="sp-hint-type">${esc(parsed.type)}</span>${esc(parsed.label)}`;
+      hint.className = 'sp-detect-hint detecting';
+    }, 180);
+  }
+
+  // Full detect: parse input → try candidates in order → validate
   async function spDetectRss() {
     const urlInput  = document.getElementById('sp-url-input');
     const nameInput = document.getElementById('sp-name-input');
     const btn       = document.getElementById('sp-detect-btn');
-    let url = urlInput.value.trim();
-    if (!url) return;
-    if (!url.startsWith('http')) url = 'https://' + url;
-    urlInput.value = url;
+    const hint      = document.getElementById('sp-detect-hint');
+    const raw = urlInput.value.trim();
+    if (!raw) return;
 
     btn.textContent = '…';
     btn.disabled = true;
+    if (hint) { hint.className = 'sp-detect-hint detecting'; hint.textContent = 'Checking…'; }
     spClearStatus('sp-add-status');
 
-    try {
-      const proxy = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
-      const resp  = await fetch(proxy, { signal: AbortSignal.timeout(9000) });
-      const data  = await resp.json();
-      const content = data.contents || '';
-
-      // Decode HTML entities in title
-      function decodeHtml(h) {
-        return h.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'");
-      }
-
-      const titleMatch = content.match(/<title[^>]*>([^<]{1,120})<\/title>/i);
-      const detectedName = titleMatch ? decodeHtml(titleMatch[1].trim()) : '';
-
-      const isFeed = /<rss[\s>]|<feed[\s>]|<channel[\s>]/i.test(content);
-      if (isFeed) {
-        if (detectedName && !nameInput.value) nameInput.value = detectedName;
-        spSetStatus('sp-add-status', '✓ RSS feed detected', 'ok');
-      } else {
-        const rssMatch =
-          content.match(/<link[^>]+type=["']application\/rss\+xml["'][^>]*href=["']([^"']+)["']/i) ||
-          content.match(/<link[^>]+href=["']([^"']+)["'][^>]*type=["']application\/rss\+xml["']/i) ||
-          content.match(/<link[^>]+type=["']application\/atom\+xml["'][^>]*href=["']([^"']+)["']/i);
-        if (rssMatch) {
-          let rssUrl = rssMatch[1];
-          if (rssUrl.startsWith('//')) rssUrl = 'https:' + rssUrl;
-          else if (rssUrl.startsWith('/')) rssUrl = new URL(url).origin + rssUrl;
-          else if (!rssUrl.startsWith('http')) rssUrl = new URL(url).origin + '/' + rssUrl;
-          urlInput.value = rssUrl;
-          if (detectedName && !nameInput.value) nameInput.value = detectedName;
-          spSetStatus('sp-add-status', '✓ RSS feed found', 'ok');
-        } else {
-          if (detectedName && !nameInput.value) nameInput.value = detectedName;
-          spSetStatus('sp-add-status', 'No RSS auto-detected — enter feed URL directly', '');
-        }
-      }
-    } catch {
-      spSetStatus('sp-add-status', 'Could not fetch URL — enter feed URL directly', '');
+    const parsed = spParseInput(raw);
+    if (!parsed) {
+      if (hint) { hint.className = 'sp-detect-hint invalid'; hint.textContent = 'Could not parse — paste a full URL'; }
+      btn.textContent = 'Detect'; btn.disabled = false;
+      return;
     }
 
-    btn.textContent = 'Detect';
-    btn.disabled = false;
+    if (hint) hint.innerHTML = `<span class="sp-hint-type">${esc(parsed.type)}</span>Validating…`;
+
+    let resolved = null;
+    const candidates = parsed.candidates;
+    for (let i = 0; i < candidates.length; i++) {
+      const isLast = i === candidates.length - 1;
+      resolved = await spTryFeed(candidates[i], !!(parsed.needsDiscovery && isLast));
+      if (resolved) break;
+    }
+
+    if (resolved) {
+      urlInput.value = resolved.resolvedUrl;
+      if (!nameInput.value) {
+        nameInput.value = (resolved.feedTitle || parsed.name || '').slice(0,60);
+      }
+      if (hint) {
+        const label = resolved.feedTitle || 'Valid feed';
+        hint.innerHTML = `<span class="sp-hint-type">${esc(parsed.type)}</span>✓ ${esc(label)}`;
+        hint.className = 'sp-detect-hint valid';
+      }
+    } else {
+      if (hint) {
+        hint.innerHTML = `<span class="sp-hint-type">${esc(parsed.type)}</span>No RSS feed found`;
+        hint.className = 'sp-detect-hint invalid';
+      }
+    }
+
+    btn.textContent = 'Detect'; btn.disabled = false;
   }
 
   async function spAddSource() {
@@ -1911,6 +2405,341 @@
       if (ok) { spSetStatus('sp-sources-status', `✓ ${s.enabled ? 'Resumed' : 'Paused'}`, 'ok'); spRenderSources(sources); }
       else       spSetStatus('sp-sources-status', 'Failed to save', 'err');
     } catch { spSetStatus('sp-sources-status', 'Error', 'err'); }
+  }
+
+  // ── Sources page ─────────────────────────────────────────────
+
+  const SRCP_CAT_ORDER = ['sneakers','watches','streetwear','culture','wide net','other'];
+
+  let srcpSources     = null;  // loaded sources array
+  let srcpHealthStats = null;  // {name: {lastCount, totalCount, runsSeen, avg, lastTs}}
+
+  function openSources() {
+    document.getElementById('sources-page').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    srcpSyncUtils();
+    srcpLoadData();
+  }
+
+  function closeSources() {
+    document.getElementById('sources-page').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function srcpSyncUtils() {
+    const theme = localStorage.getItem('blank_theme') || 'light';
+    const tb = document.getElementById('srcp-theme-btn');
+    if (tb) tb.textContent = theme === 'dark' ? '☀ Light' : '☽ Dark';
+    const nb = document.getElementById('srcp-notif-btn');
+    if (nb && 'Notification' in window) {
+      nb.textContent = Notification.permission === 'granted' ? '🔔 On' : Notification.permission === 'denied' ? '🔕 Off' : '🔔';
+      nb.title = Notification.permission === 'granted' ? 'Notifications enabled' : Notification.permission === 'denied' ? 'Notifications blocked' : 'Enable notifications';
+    }
+    document.querySelectorAll('.srcp-vt').forEach(btn =>
+      btn.classList.toggle('active', btn.dataset.view === currentView)
+    );
+  }
+
+  async function srcpLoadData() {
+    const listEl = document.getElementById('srcp-list');
+    listEl.innerHTML = '<div class="srcp-empty">Loading…</div>';
+
+    const [srcRes, healthRes] = await Promise.allSettled([
+      spFetchSources(),
+      srcpFetchHealthStats()
+    ]);
+    srcpSources     = srcRes.status     === 'fulfilled' ? srcRes.value     : [];
+    srcpHealthStats = healthRes.status  === 'fulfilled' ? healthRes.value  : {};
+    srcpRender();
+  }
+
+  async function srcpFetchHealthStats() {
+    try {
+      const res = await fetch('all_articles.json?cb=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) return {};
+      const data = await res.json();
+      const runs = data.runs || [];
+      const stats = {};
+      runs.slice(0, 5).forEach((run, ri) => {
+        const ts = run.date && run.time
+          ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00`
+          : null;
+        (run.articles || []).forEach(art => {
+          if (!art.source) return;
+          const n = art.source;
+          if (!stats[n]) stats[n] = { lastCount: 0, totalCount: 0, runsSeen: 0, lastTs: null };
+          if (ri === 0) {
+            stats[n].lastCount++;
+            if (!stats[n].lastTs && ts) stats[n].lastTs = ts;
+          }
+          if (ri < 3) { stats[n].runsSeen++; }
+          stats[n].totalCount++;
+        });
+      });
+      Object.values(stats).forEach(s => {
+        s.avg = s.runsSeen > 0 ? (s.totalCount / Math.min(s.runsSeen, 3)).toFixed(1) : '0';
+      });
+      return stats;
+    } catch { return {}; }
+  }
+
+  function srcpHealthClass(name, paused) {
+    if (paused) return 'grey';
+    if (!srcpHealthStats) return 'grey';
+    const s = srcpHealthStats[name];
+    if (!s) return 'grey';
+    if (s.lastCount > 0) return 'green';
+    if (s.totalCount > 0) return 'yellow';
+    return 'grey';
+  }
+
+  function srcpHealthTitle(name, paused) {
+    if (paused) return 'Paused';
+    if (!srcpHealthStats) return 'Loading…';
+    const s = srcpHealthStats[name];
+    if (!s) return 'No data yet';
+    const last = s.lastTs
+      ? new Date(s.lastTs).toLocaleString('en-US', { timeZone:'America/Chicago', month:'short', day:'numeric', hour:'numeric', minute:'2-digit' })
+      : '';
+    return `Last run: ${s.lastCount} article${s.lastCount !== 1 ? 's' : ''}${last ? ' · ' + last : ''} · Avg: ${s.avg}/run`;
+  }
+
+  function srcpMetaText(name, paused) {
+    if (paused) return 'paused';
+    if (!srcpHealthStats) return '';
+    const s = srcpHealthStats[name];
+    if (!s) return 'no data yet';
+    const parts = [];
+    if (s.lastTs) {
+      parts.push(new Date(s.lastTs).toLocaleString('en-US', { timeZone:'America/Chicago', month:'short', day:'numeric', hour:'numeric', minute:'2-digit' }));
+    }
+    parts.push(`${s.lastCount} last run · avg ${s.avg}/run`);
+    return parts.join(' · ');
+  }
+
+  function srcpRender() {
+    const listEl  = document.getElementById('srcp-list');
+    const countEl = document.getElementById('srcp-count');
+    const sources = srcpSources || [];
+    const query   = ((document.getElementById('srcp-search') || {}).value || '').toLowerCase().trim();
+
+    if (!sources.length) {
+      listEl.innerHTML = '<div class="srcp-empty">No sources yet. Add one above.</div>';
+      if (countEl) countEl.textContent = '0 sources';
+      return;
+    }
+
+    const grouped = {};
+    SRCP_CAT_ORDER.forEach(c => { grouped[c] = []; });
+    sources.forEach((s, i) => {
+      const cat = (s.category || 'other').toLowerCase();
+      const key = SRCP_CAT_ORDER.includes(cat) ? cat : 'other';
+      grouped[key].push({ ...s, _idx: i });
+    });
+
+    let visCount = 0;
+    let html = '';
+
+    SRCP_CAT_ORDER.forEach(cat => {
+      const items = grouped[cat];
+      if (!items.length) return;
+      const visible = query
+        ? items.filter(s =>
+            (s.name || '').toLowerCase().includes(query) ||
+            (s.rss  || '').toLowerCase().includes(query) ||
+            cat.includes(query))
+        : items;
+      if (!visible.length) return;
+      visCount += visible.length;
+
+      html += `<div class="srcp-cat-group">
+        <span class="srcp-cat-label">/ ${esc(cat.charAt(0).toUpperCase() + cat.slice(1))}</span>`;
+
+      visible.forEach(s => {
+        const paused = s.enabled === false;
+        const name   = s.name || s.rss || '';
+        const hClass = srcpHealthClass(name, paused);
+        const hTitle = srcpHealthTitle(name, paused);
+        const meta   = srcpMetaText(name, paused);
+        const idx    = s._idx;
+        html += `<div class="srcp-row${paused ? ' paused' : ''}" data-idx="${idx}">
+          <div class="srcp-health ${hClass}" id="srcp-dot-${idx}" data-source="${esc(name)}" title="${esc(hTitle)}"></div>
+          <div class="srcp-info">
+            <div class="srcp-name" title="${esc(s.rss || '')}">${esc(name)}</div>
+            <div class="srcp-meta" id="srcp-meta-${idx}">${esc(meta)}</div>
+          </div>
+          <button class="srcp-check-btn" id="srcp-chk-${idx}" onclick="srcpCheckHealth(${idx})" title="Validate RSS feed now">↻ Check</button>
+          <div class="srcp-actions">
+            <button class="srcp-act" onclick="srcpToggle(${idx})">${paused ? 'Resume' : 'Pause'}</button>
+            <button class="srcp-act remove" onclick="srcpRemove(${idx})">×</button>
+          </div>
+        </div>`;
+      });
+
+      html += `</div>`;
+    });
+
+    listEl.innerHTML = html || '<div class="srcp-empty">No sources match your search.</div>';
+    if (countEl) countEl.textContent = `${visCount} source${visCount !== 1 ? 's' : ''}`;
+  }
+
+  function srcpFilter() { srcpRender(); }
+
+  async function srcpCheckHealth(idx) {
+    const s   = (srcpSources || [])[idx];
+    if (!s) return;
+    const btn  = document.getElementById(`srcp-chk-${idx}`);
+    const dot  = document.getElementById(`srcp-dot-${idx}`);
+    const meta = document.getElementById(`srcp-meta-${idx}`);
+    if (btn) { btn.disabled = true; btn.textContent = '…'; }
+    const result = await spTryFeed(s.rss, false);
+    if (btn) { btn.disabled = false; btn.textContent = '↻ Check'; }
+    if (result) {
+      if (dot)  { dot.className = 'srcp-health green'; dot.title = `✓ Feed valid · ${result.feedTitle || s.rss}`; }
+      if (meta) meta.textContent = `✓ ${result.feedTitle || 'Feed valid'}`;
+    } else {
+      if (dot)  { dot.className = 'srcp-health red'; dot.title = 'Feed check failed — URL may be invalid or blocked'; }
+      if (meta) meta.textContent = 'Feed check failed';
+    }
+  }
+
+  async function srcpToggle(idx) {
+    srcpSetListStatus('Saving…', '');
+    try {
+      const { sources, sha } = await spGetSources();
+      if (!sha) { srcpSetListStatus('GitHub token required', 'err'); return; }
+      const s = sources[idx];
+      s.enabled = s.enabled === false;
+      const action = s.enabled ? 'resume' : 'pause';
+      const ok = await spPutSources(sources, sha, `sources: ${action} ${s.name}`);
+      if (ok) {
+        srcpSources = sources;
+        srcpSetListStatus(`✓ ${s.enabled ? 'Resumed' : 'Paused'}`, 'ok');
+        srcpRender();
+      } else { srcpSetListStatus('Failed to save', 'err'); }
+    } catch { srcpSetListStatus('Error saving', 'err'); }
+  }
+
+  async function srcpRemove(idx) {
+    const s = (srcpSources || [])[idx];
+    if (!s || !confirm(`Remove "${s.name || s.rss}"?`)) return;
+    srcpSetListStatus('Removing…', '');
+    try {
+      const { sources, sha } = await spGetSources();
+      if (!sha) { srcpSetListStatus('GitHub token required', 'err'); return; }
+      const [removed] = sources.splice(idx, 1);
+      const ok = await spPutSources(sources, sha, `sources: remove ${removed?.name || idx}`);
+      if (ok) {
+        srcpSources = sources;
+        srcpSetListStatus('✓ Removed', 'ok');
+        srcpRender();
+      } else { srcpSetListStatus('Failed to remove', 'err'); }
+    } catch { srcpSetListStatus('Error', 'err'); }
+  }
+
+  function srcpSetListStatus(msg, cls) {
+    const el = document.getElementById('srcp-list-status');
+    if (!el) return;
+    el.textContent = msg;
+    el.className = 'srcp-list-status' + (cls ? ' ' + cls : '');
+    if (msg && cls === 'ok') setTimeout(() => {
+      if (el.textContent === msg) { el.textContent = ''; el.className = 'srcp-list-status'; }
+    }, 3000);
+  }
+
+  // Add-form logic (sources page)
+  let _srcpHintTimer = null;
+  function srcpHintInput(input) {
+    clearTimeout(_srcpHintTimer);
+    const hint = document.getElementById('srcp-hint');
+    if (!hint) return;
+    const raw = input.value.trim();
+    if (!raw) { hint.textContent = ''; hint.className = 'sp-detect-hint'; return; }
+    _srcpHintTimer = setTimeout(() => {
+      const parsed = spParseInput(raw);
+      if (!parsed) { hint.textContent = ''; hint.className = 'sp-detect-hint'; return; }
+      hint.innerHTML = `<span class="sp-hint-type">${esc(parsed.type)}</span>${esc(parsed.label)}`;
+      hint.className = 'sp-detect-hint detecting';
+    }, 180);
+  }
+
+  async function srcpDetect() {
+    const urlInput  = document.getElementById('srcp-url');
+    const nameInput = document.getElementById('srcp-name');
+    const btn       = document.getElementById('srcp-detect-btn');
+    const hint      = document.getElementById('srcp-hint');
+    const raw = urlInput.value.trim();
+    if (!raw) return;
+    btn.textContent = '…'; btn.disabled = true;
+    if (hint) { hint.className = 'sp-detect-hint detecting'; hint.textContent = 'Checking…'; }
+    const parsed = spParseInput(raw);
+    if (!parsed) {
+      if (hint) { hint.className = 'sp-detect-hint invalid'; hint.textContent = 'Could not parse — paste a full URL'; }
+      btn.textContent = 'Detect'; btn.disabled = false; return;
+    }
+    if (hint) hint.innerHTML = `<span class="sp-hint-type">${esc(parsed.type)}</span>Validating…`;
+    let resolved = null;
+    for (let i = 0; i < parsed.candidates.length; i++) {
+      resolved = await spTryFeed(parsed.candidates[i], !!(parsed.needsDiscovery && i === parsed.candidates.length - 1));
+      if (resolved) break;
+    }
+    if (resolved) {
+      urlInput.value = resolved.resolvedUrl;
+      if (!nameInput.value) nameInput.value = (resolved.feedTitle || parsed.name || '').slice(0, 60);
+      if (hint) {
+        hint.innerHTML = `<span class="sp-hint-type">${esc(parsed.type)}</span>✓ ${esc(resolved.feedTitle || 'Valid feed')}`;
+        hint.className = 'sp-detect-hint valid';
+      }
+    } else {
+      if (hint) {
+        hint.innerHTML = `<span class="sp-hint-type">${esc(parsed.type)}</span>No RSS feed found`;
+        hint.className = 'sp-detect-hint invalid';
+      }
+    }
+    btn.textContent = 'Detect'; btn.disabled = false;
+  }
+
+  async function srcpAddSource() {
+    const rss      = (document.getElementById('srcp-url')  || {}).value?.trim() || '';
+    const name     = (document.getElementById('srcp-name') || {}).value?.trim() || '';
+    const category = (document.getElementById('srcp-cat')  || {}).value || 'other';
+    const btn      = document.getElementById('srcp-add-btn');
+    if (!rss)  { srcpSetAddStatus('Enter a URL first', 'err'); return; }
+    if (!name) { srcpSetAddStatus('Enter a source name', 'err'); return; }
+    if (!VOTE_TOKEN || VOTE_TOKEN.startsWith('__')) {
+      srcpSetAddStatus('GitHub token required to save sources', 'err'); return;
+    }
+    btn.disabled = true; btn.textContent = 'Adding…';
+    try {
+      const { sources, sha } = await spGetSources();
+      if (!sha) { srcpSetAddStatus('Could not reach GitHub — check token', 'err'); btn.disabled = false; btn.textContent = 'Add'; return; }
+      if (sources.some(s => s.rss === rss)) {
+        srcpSetAddStatus('This source already exists', 'err');
+        btn.disabled = false; btn.textContent = 'Add'; return;
+      }
+      sources.push({ name, rss, category, enabled: true });
+      const ok = await spPutSources(sources, sha, `sources: add ${name}`);
+      if (ok) {
+        srcpSetAddStatus(`✓ ${name} added — takes effect next run`, 'ok');
+        document.getElementById('srcp-url').value  = '';
+        document.getElementById('srcp-name').value = '';
+        const h = document.getElementById('srcp-hint');
+        if (h) { h.textContent = ''; h.className = 'sp-detect-hint'; }
+        srcpSources = sources;
+        srcpRender();
+      } else { srcpSetAddStatus('Save failed — check token has repo write access', 'err'); }
+    } catch { srcpSetAddStatus('Error saving source', 'err'); }
+    btn.disabled = false; btn.textContent = 'Add';
+  }
+
+  function srcpSetAddStatus(msg, cls) {
+    const el = document.getElementById('srcp-add-status');
+    if (!el) return;
+    el.textContent = msg;
+    el.className = 'srcp-add-status' + (cls ? ' ' + cls : '');
+    if (msg && cls === 'ok') setTimeout(() => {
+      if (el.textContent === msg) { el.textContent = ''; el.className = 'srcp-add-status'; }
+    }, 4000);
   }
 
   // ── Toggle expand / collapse ──────────────────────────────────
@@ -2370,10 +3199,12 @@
 
   function initNotifBtn() {
     const b=document.getElementById('sp-notif-btn');
-    if(!b) return;
-    if(!('Notification' in window)){b.style.display='none';return;}
-    b.textContent=Notification.permission==='denied'?'🔕 Off':Notification.permission==='granted'?'🔔 On':'🔔 Enable';
-    b.title=Notification.permission==='granted'?'Notifications enabled':Notification.permission==='denied'?'Notifications blocked':'Enable breaking news notifications';
+    const sb=document.getElementById('srcp-notif-btn');
+    if(!('Notification' in window)){if(b)b.style.display='none';if(sb)sb.style.display='none';return;}
+    const label=Notification.permission==='denied'?'🔕 Off':Notification.permission==='granted'?'🔔 On':'🔔 Enable';
+    const title=Notification.permission==='granted'?'Notifications enabled':Notification.permission==='denied'?'Notifications blocked':'Enable breaking news notifications';
+    if(b){b.textContent=label;b.title=title;}
+    if(sb){sb.textContent=label;sb.title=title;}
   }
 
   function urlBase64ToUint8Array(b64){const p='='.repeat((4-b64.length%4)%4);const r=atob((b64+p).replace(/-/g,'+').replace(/_/g,'/'));return Uint8Array.from(r,c=>c.charCodeAt(0));}
@@ -2411,8 +3242,15 @@
     if(!('Notification'in window)){alert('Notifications not supported.');return;}
     const perm=await Notification.requestPermission();
     const b=document.getElementById('sp-notif-btn');
-    if(perm==='granted'){if(b){b.textContent='🔔 On';b.title='Notifications enabled';}try{await subscribeToPush()}catch{}}
-    else{if(b){b.textContent='🔕 Off';b.title='Notifications blocked';}}
+    const sb=document.getElementById('srcp-notif-btn');
+    if(perm==='granted'){
+      if(b){b.textContent='🔔 On';b.title='Notifications enabled';}
+      if(sb){sb.textContent='🔔 On';sb.title='Notifications enabled';}
+      try{await subscribeToPush()}catch{}
+    }else{
+      if(b){b.textContent='🔕 Off';b.title='Notifications blocked';}
+      if(sb){sb.textContent='🔕 Off';sb.title='Notifications blocked';}
+    }
   }
 
   checkBreakingNews();
