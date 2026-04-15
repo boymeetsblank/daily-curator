@@ -4,6 +4,48 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-14] Phase 1 story clustering — multi-source grouping in The Edit
+
+**Backend (`daily_curator.py`)**
+- **`tag_story_clusters()`** — new pre-scoring function that groups articles by fuzzy title similarity (≥ 80% via `difflib.SequenceMatcher`) using union-find. Tags every article with `cluster_id`, `cluster_size`, and `cluster_sources`. Replaces the old `deduplicate_articles_pre_scoring()` Claude call — all cluster members are kept in the scoring batch rather than dropping duplicates.
+- **Coverage boost** — clusters with 3+ distinct sources automatically set `trending_across_sources=True` and `trending_source_count` so the scoring prompt's CROSS-SOURCE TREND BONUS applies without a separate Claude call.
+- **`mark_cluster_primaries()`** — called after Claude scoring; walks each cluster and marks the highest-scoring article as `cluster_primary=True`. Singletons are always primary.
+- **`write_markdown_output`** — picks now include `Cluster ID`, `Cluster Size`, `Cluster Primary`, and `Cluster Sources` metadata lines for persistence and frontend consumption.
+- **`write_all_articles_json`** — all_articles entries now carry the same cluster fields so The Feed data is consistent.
+
+**Deploy (`deploy-pages.yml`)**
+- `parse_file()` now extracts `cluster_id`, `cluster_size`, `cluster_primary`, `cluster_sources` from each pick block and includes them in `picks_data.json`. Old picks without these fields default to `cluster_primary: true` (backwards compatible).
+
+**Frontend (`index.html`)**
+- **`renderPicksGrouped()`** — new list-view renderer that groups picks by `cluster_id` before rendering. Primaries (and singletons) get a full `renderRow()` treatment; non-primaries are hidden from standalone view and attached as sub-rows.
+- **`renderSubRow()`** — compact sub-source row: source name (uppercase, muted) · truncated title link · timestamp. No score badge, no rarity glow — intentionally subdued.
+- **`toggleCluster()`** — collapses/expands a `.cluster-group` wrapper on the toggle-strip click.
+- **Cluster toggle strip** — a thin row below the primary article showing "↓ N sources covering this story" in spaced uppercase faint text. Collapses the sub-list; chevron rotates 180° when expanded.
+- **Cluster sub-list** — indented behind a 2px left border in the primary's rarity color (blue / purple / amber), carrying the rarity identity through the expanded list.
+- **Coverage badge** — primary rows in clusters of 3+ sources display an accent-colored `N src` badge inline after the title (replaces the old `3+ SRC` fallback badge).
+- **`buildSidebar()`** — score filter counts now reflect only primary/singleton picks, not hidden non-primary cluster members.
+- The Feed is unchanged — all cluster members render as individual rows without grouping.
+
+## [2026-04-14] Fix: Edit/Feed deduplication hardening — URL normalization and dual-source dedup
+
+- **`normalize_url` enhanced** — now also lowercases the hostname, strips the `www.` prefix, normalises `http://` → `https://`, and strips default ports (`:80`, `:443`). Previously only tracking params and fragments were stripped, meaning `http://example.com/a` and `https://www.example.com/a` were treated as different URLs.
+- **`dedup_articles_by_url` now prefers richer metadata** — when the same URL appears from both Inoreader and Direct RSS, the deduplication step now keeps the article version with the most metadata (image present → summary length → source name), rather than always keeping the first occurrence. This eliminates same-article duplicates between the two fetch paths and uses the best available thumbnail/summary.
+- **`_get_today_pick_urls()` added** — new helper that reads all normalized pick URLs from today's existing picks files. Called in `main()` before writing `all_articles.json`, so articles that scored highly but were removed by `filter_already_picked_today()` (already in The Edit from an earlier run) are correctly excluded from The Feed.
+- **`write_all_articles_json` exclusion count fixed** — now logs the actual number of articles excluded from the JSON file rather than the size of the exclusion URL set.
+- **`deploy-pages.yml` `normalize_for_dedup` rewritten** — updated to match the new normalization logic: strips query string, lowercases host, strips `www.`, normalises `http` → `https`. Previously only `split('?')[0]` was applied, leaving `www.` and scheme mismatches unresolved.
+
+## [2026-04-13] Scoring prompt rewrite — sharper criteria and anchors
+
+Replaced the Claude scoring prompt with a tightened editorial brief: cleaner criteria framing, revised scoring anchors with explicit tier descriptions (10 as a rare cultural moment, 6 as "made the cut"), a bidirectional 10/10 rarity rule that penalizes both false positives AND false negatives, and a reframed CATEGORY DIVERSITY RULE that emphasizes editorial breadth over category enumeration.
+
+## [2026-04-13] Fix: Edit picks no longer appear in The Feed
+
+In `deploy-pages.yml`, the `all_articles.json` build step now cross-references all pick URLs from `picks_data.json` and strips any matching articles before writing The Feed. This fixes historical `all_articles/*.json` files generated before the per-run exclusion existed, and acts as a permanent safety net going forward.
+
+## [2026-04-13] Cross-run & multi-day topic deduplication
+
+Added `load_recently_covered_topics()` which reads picks files from the last 3 days and injects the story titles into the Claude scoring prompt. Claude now scores a 1 for any article covering a story already featured recently — preventing same-story duplicates across runs and across days, even when the articles have different URLs and headlines. A nuanced exception allows genuinely significant new developments on an old story (e.g. an arrest, a verdict) to still surface.
+
 ## [2026-04-12] Sources full-page overlay — dedicated source management experience
 
 - **Sources page** (`#sources-page`): full-screen overlay that slides up from the bottom, replacing the old sidebar-confined source management. Triggered by the gear icon via `openSettings()` → `openSources()`.
@@ -102,14 +144,6 @@ All notable changes to the daily-curator project are documented here. Newest ent
 - **`deploy-pages.yml`** — build step now aggregates all `all_articles/*.json` files into `site/all_articles.json` (newest run first), mirroring how `picks_data.json` is built from markdown files.
 - **`index.html`** — The Feed now fetches `all_articles.json` directly (`loadFeedData()` with in-session cache) instead of reading from `cachedRuns`. `buildFeedView()` updated to consume the `runs[].articles[]` format. The Edit continues to use `picks_data.json` / `cachedRuns` unchanged. Graceful "feed populates after next run" message shown if `all_articles.json` is absent.
 
-## [2026-04-10] The Feed mode — full chronological stream with source navigator
-
-- **The Feed** is now a fully functional view activated by the "The Feed" pill in the top nav.
-- **Chronological stream** — all picks across all runs, newest first, grouped by date with date dividers. No score minimum, no score filtering.
-- **Clean rows** — source name replaces the score badge in col 1. No rarity badges, no font glow, no colored left-border effects. Score data exists on articles but is never displayed in this mode.
-- **Expand panel** — still available per-row (Why it matters, Hook, Read button) without score information.
-- **Source navigator sidebar** — lists every source with an article count badge (e.g. "Hypebeast · 4"). Clicking any source filters The Feed to that source only. "All Sources" resets the stream. Sidebar is exclusive to The Feed — The Edit sidebar is unchanged.
-- **The Edit unchanged** — all existing scored/filtered behavior, rarity system, sidebar filters, and trends panel remain exactly as they were.
 
 ## [2026-04-10] Nav redesign — The Edit / The Feed pill + settings panel consolidation
 
@@ -124,37 +158,6 @@ All notable changes to the daily-curator project are documented here. Newest ent
 - **Fix:** Rebuilt `sources.json` with all 19 Inoreader subscriptions (Hypebeast, Sneaker News, GQ, Complex, Variety, The Atlantic, Vox, Adweek, ESPN, The Verge, WIRED, TechCrunch, Engadget, Ars Technica, CNBC, r/popculturechat, r/sports, r/nba, r/artificial) + Reddit (r/popular), each with correct `category` and `enabled: true`.
 - **`fetch_articles_from_direct_rss()`** now filters out entries where `enabled` is `false` (previously fetched everything regardless of paused state).
 - **`generate_sources_json()`** now preserves existing `enabled` and `category` metadata when re-seeding from Inoreader, and re-adds any extra sources (e.g. Reddit r/popular) that aren't in the Inoreader subscription list.
-
-## [2026-04-09] Score filter sidebar — split into individual rarity tiers
-
-- Replaced combined "Score 9–10" filter with three independent toggle buttons: **10 — Legendary** (orange), **9 — Epic** (purple), **8 — Rare** (blue).
-- Filters now work as multi-select: each tier toggles independently; "All picks" clears all active filters.
-- Rarity dot indicators (colored circles) added to each tier button, matching the existing badge and card glow color system.
-- Active rarity filters glow in their tier color (blue/purple/orange) using `text-shadow`.
-
-## [2026-04-09] Fix: settings panel sources list now loads full sources.json on open
-
-- **Root cause:** `spLoadSources()` guarded on `VOTE_TOKEN` and called `spGetSources()` (GitHub API, auth required) for the read path. When the token was absent or unsubstituted, it returned an empty list — and any subsequent add overwrote `sources.json` with a single entry.
-- **Fix:** Added `spFetchSources()` which reads `sources.json` via the raw GitHub URL (no token required for public repos). `spLoadSources()` now calls this unconditionally, so the full source list always renders on panel open. Authenticated `spGetSources()` is retained for write operations (add/pause/remove) where the GitHub API SHA is required.
-
-## [2026-04-09] Settings panel — gear icon, feed view toggle, source management
-
-- **Gear icon** added to right side of topbar (SVG, consistent with existing button style). List/Cards toggle removed from topbar — it now lives inside the settings panel.
-- **Settings panel** slides in from the right (340px desktop, full-width mobile). Sections: Feed View and Sources. Matches Blank editorial aesthetic — same border, type, and surface variables throughout.
-- **Feed View section** — List / Cards toggle moved here from the topbar. Existing `setView()` logic and localStorage persistence unchanged.
-- **Sources section** — URL input with auto-detect RSS (fetches via allorigins.win CORS proxy, parses RSS link tags and feed content); name field (auto-populated from page `<title>`); category dropdown (culture, tech, sports, fashion, sneakers, watches, other); Add Source button writes to `sources.json` via GitHub API (same pattern as `votes.json`). Duplicate URL check before writing.
-- **Current Sources list** — shows all sources from `sources.json` with Pause/Resume and Remove buttons, each writing back to GitHub. Paused sources render at reduced opacity. Changes take effect on the next scheduled pipeline run.
-
-
-## [2026-04-09] Direct RSS parallel fetch + vote persistence
-
-- **Direct RSS (sources.json):** Added `fetch_articles_from_direct_rss()` which reads `sources.json` and fetches all feeds in parallel (10 workers, 10s timeout per feed). Failed fetches are logged and skipped — the pipeline continues.
-- **Auto-generate sources.json:** On first run, if `sources.json` is absent, `generate_sources_json()` fetches the Inoreader subscription list and writes the file automatically.
-- **Parallel fetch in main():** Inoreader and Direct RSS now run concurrently via `ThreadPoolExecutor(max_workers=2)`. Article pools are combined before deduplication, OG enrichment, and Claude scoring.
-- **`feedparser>=6.0.0`** added to `requirements.txt`.
-- **Vote persistence:** Vote state (up/down) is now saved to `localStorage` under key `blank_votes` (keyed by article URL). `applyVoteState()` restores classes after every render — votes survive page refresh.
-
-
 
 
 

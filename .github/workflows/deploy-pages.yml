@@ -89,6 +89,22 @@ jobs:
                   im = re.search(r'\*\*Image:\*\*\s*(\S+)', block)
                   image = im.group(1) if im else None
 
+                  # Cluster metadata (absent in older picks files → safe defaults)
+                  clm_id = re.search(r'\*\*Cluster ID:\*\*\s*(\S+)', block)
+                  cluster_id = clm_id.group(1) if clm_id else None
+
+                  clm_size = re.search(r'\*\*Cluster Size:\*\*\s*(\d+)', block)
+                  cluster_size = int(clm_size.group(1)) if clm_size else 1
+
+                  clm_primary = re.search(r'\*\*Cluster Primary:\*\*\s*(true|false)', block)
+                  cluster_primary = (clm_primary.group(1) == 'true') if clm_primary else True
+
+                  clm_sources = re.search(r'\*\*Cluster Sources:\*\*\s*(.*)', block)
+                  cluster_sources = (
+                      [s.strip() for s in clm_sources.group(1).split('·')]
+                      if clm_sources else None
+                  )
+
                   trend_label = None
                   if '*Trending on X right now*' in block:
                       trend_label = 'Trending on X right now'
@@ -117,6 +133,10 @@ jobs:
                           'trend_label': trend_label,
                           'why': why,
                           'angle': angle,
+                          'cluster_id': cluster_id,
+                          'cluster_size': cluster_size,
+                          'cluster_primary': cluster_primary,
+                          'cluster_sources': cluster_sources,
                       })
 
               return {
@@ -144,14 +164,55 @@ jobs:
           print(f'Built picks_data.json — {len(runs)} runs, '
                 f'{sum(len(r["picks"]) for r in runs)} total picks')
 
+          # ── Collect all pick URLs from picks_data so Feed never duplicates The Edit ──
+          def normalize_for_dedup(url):
+              """
+              Normalise a URL for cross-file dedup comparison.
+              Strips query string, fragment, and trailing slash.
+              Lowercases host, strips www., normalises http → https.
+              Mirrors the logic in daily_curator.py normalize_url().
+              """
+              if not url:
+                  return url
+              try:
+                  base = url.split('?')[0].split('#')[0].rstrip('/')
+                  if '://' in base:
+                      _, rest = base.split('://', 1)
+                      parts = rest.split('/', 1)
+                      host = parts[0].lower()
+                      path = ('/' + parts[1]) if len(parts) > 1 else ''
+                      if host.startswith('www.'):
+                          host = host[4:]
+                      if host.endswith(':80') or host.endswith(':443'):
+                          host = host.rsplit(':', 1)[0]
+                      return f'https://{host}{path}'
+                  return base.lower()
+              except Exception:
+                  return url.split('?')[0].rstrip('/').lower()
+
+          pick_urls = set()
+          for run in runs:
+              for pick in run.get('picks', []):
+                  link = pick.get('link')
+                  if link:
+                      pick_urls.add(normalize_for_dedup(link))
+
           # ── Build all_articles.json from all_articles/*.json ──────────────
           all_runs = []
+          excluded_total = 0
           if os.path.isdir('all_articles'):
               for name in sorted(os.listdir('all_articles'), reverse=True):
                   if name.startswith('all-') and name.endswith('.json'):
                       try:
                           with open(os.path.join('all_articles', name), encoding='utf-8') as f:
                               run_data = json.load(f)
+                          # Strip any articles whose URLs appear in The Edit
+                          before = len(run_data.get('articles', []))
+                          run_data['articles'] = [
+                              a for a in run_data.get('articles', [])
+                              if normalize_for_dedup(a.get('link')) not in pick_urls
+                          ]
+                          excluded_total += before - len(run_data['articles'])
                           if run_data.get('articles'):
                               all_runs.append(run_data)
                       except (json.JSONDecodeError, OSError):
@@ -161,7 +222,7 @@ jobs:
           with open('site/all_articles.json', 'w', encoding='utf-8') as f:
               json.dump(all_articles_out, f, ensure_ascii=False, indent=2)
           total_arts = sum(len(r.get('articles', [])) for r in all_runs)
-          print(f'Built all_articles.json — {len(all_runs)} runs, {total_arts} total articles')
+          print(f'Built all_articles.json — {len(all_runs)} runs, {total_arts} articles ({excluded_total} Edit picks excluded)')
 
           PYEOF
 

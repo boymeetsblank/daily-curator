@@ -35,6 +35,8 @@ MIN_SCORE               = 6
 MAX_PICKS               = 30
 DIRECT_RSS_TIMEOUT      = 10   # seconds per feed fetch
 SOURCES_JSON_PATH       = "sources.json"
+SEEN_URLS_PATH          = "seen_urls.json"
+SEEN_URLS_WINDOW_DAYS   = 7    # URLs older than this are pruned from the registry
 CLAUDE_SCORING_BATCH_SIZE = 50  # max articles per Claude scoring call
 
 INOREADER_BASE_URL   = "https://www.inoreader.com/reader/api/0"
@@ -435,6 +437,166 @@ def strip_html(text: str) -> str:
     return clean.strip()
 
 
+def normalize_url(url: str) -> str:
+    """
+    Strip tracking parameters, URL fragment, and trailing slashes for dedup comparison.
+    Also normalises scheme (http→https), hostname (lowercase, strip www.), and default ports.
+    Handles UTM params, fbclid, gclid, ref, and other common tracking tokens.
+    """
+    if not url:
+        return url
+    try:
+        from urllib.parse import urlparse, urlunparse, urlencode, parse_qs
+        TRACKING_PARAMS = {
+            'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
+            'utm_id', 'utm_source_platform', 'utm_creative_format', 'utm_marketing_tactic',
+            'ref', 'referer', 'referrer', 'fbclid', 'gclid', 'msclkid', 'dclid',
+            'mc_cid', 'mc_eid', 'mibextid', 'igshid', 'twclid', 'ncid', 'ocid',
+            'source', 'campaign', 'cmpid', 'cmp', 'cid', '_ga', 'sr_share',
+        }
+        parsed = urlparse(url)
+        # Normalise scheme: treat http and https as equivalent
+        scheme = 'https'
+        # Normalise host: lowercase, strip www., strip default ports
+        host = parsed.netloc.lower()
+        if host.startswith('www.'):
+            host = host[4:]
+        if host.endswith(':80') or host.endswith(':443'):
+            host = host.rsplit(':', 1)[0]
+        # Strip tracking params; preserve other query params
+        qs = parse_qs(parsed.query, keep_blank_values=True)
+        cleaned = {k: v for k, v in qs.items() if k.lower() not in TRACKING_PARAMS}
+        new_query = urlencode(cleaned, doseq=True)
+        # Lowercase path and strip trailing slash
+        path = parsed.path.rstrip('/')
+        normalized = urlunparse((scheme, host, path, '', new_query, ''))
+        return normalized
+    except Exception:
+        return url
+
+
+def dedup_articles_by_url(articles: list[dict]) -> list[dict]:
+    """
+    Remove articles whose normalized URLs have already been seen in this batch.
+    Handles exact URL duplicates, tracking-param variants, http/https, and www/non-www.
+    When the same URL appears from multiple sources (e.g. Inoreader + Direct RSS),
+    keeps the version with the richest metadata (image > summary length > source name).
+    """
+    seen: dict[str, int] = {}  # normalized url → index in deduped list
+    deduped: list[dict] = []
+    removed = 0
+
+    def _meta_score(a: dict) -> tuple:
+        return (
+            bool(a.get('image')),
+            len(a.get('summary') or ''),
+            bool(a.get('source')),
+        )
+
+    for article in articles:
+        link = article.get('link', '')
+        if not link:
+            deduped.append(article)
+            continue
+        key = normalize_url(link)
+        if key not in seen:
+            seen[key] = len(deduped)
+            deduped.append(article)
+        else:
+            # Keep the richer version in-place
+            existing_idx = seen[key]
+            if _meta_score(article) > _meta_score(deduped[existing_idx]):
+                deduped[existing_idx] = article
+            removed += 1
+
+    if removed:
+        print(f"   URL dedup: removed {removed} duplicate URL(s) (kept richer metadata version).")
+    return deduped
+
+
+# ── Persistent cross-run seen-URL registry ────────────────────────────────────
+
+def load_seen_urls() -> dict[str, str]:
+    """
+    Load seen_urls.json and return a dict of {normalized_url: iso_timestamp}.
+    Returns an empty dict if the file is missing or unreadable.
+    """
+    if not os.path.exists(SEEN_URLS_PATH):
+        return {}
+    try:
+        with open(SEEN_URLS_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("urls", {})
+    except Exception:
+        return {}
+
+
+def prune_seen_urls(urls: dict[str, str]) -> dict[str, str]:
+    """
+    Remove entries older than SEEN_URLS_WINDOW_DAYS days.
+    Malformed timestamp entries are also dropped.
+    """
+    cutoff = datetime.now(tz=timezone.utc) - timedelta(days=SEEN_URLS_WINDOW_DAYS)
+    pruned = {}
+    for url, ts_str in urls.items():
+        try:
+            ts = datetime.fromisoformat(ts_str)
+            if ts.tzinfo is None:
+                ts = ts.replace(tzinfo=timezone.utc)
+            if ts >= cutoff:
+                pruned[url] = ts_str
+        except Exception:
+            pass  # drop malformed entries
+    removed = len(urls) - len(pruned)
+    if removed:
+        print(f"   Pruned {removed} expired URL(s) from seen registry (>{SEEN_URLS_WINDOW_DAYS}d old).")
+    return pruned
+
+
+def filter_seen_urls(articles: list[dict], seen_urls: dict[str, str]) -> tuple[list[dict], list[dict]]:
+    """
+    Split articles into (unseen, already_seen) based on the seen registry.
+    Already-seen articles are returned separately so their URLs can still be
+    added to the registry (they were seen this run even if skipped for scoring).
+    """
+    if not seen_urls:
+        return articles, []
+    unseen = []
+    already_seen = []
+    for article in articles:
+        link = article.get("link", "")
+        if link and normalize_url(link) in seen_urls:
+            already_seen.append(article)
+        else:
+            unseen.append(article)
+    if already_seen:
+        print(f"   Cross-run dedup: skipping {len(already_seen)} already-seen article(s) (seen within {SEEN_URLS_WINDOW_DAYS} days).")
+    return unseen, already_seen
+
+
+def update_seen_urls(seen_urls: dict[str, str], articles: list[dict]) -> dict[str, str]:
+    """
+    Add normalized URLs from this batch of articles to the registry.
+    Only real articles (those with a link) are recorded. Trend items are skipped.
+    """
+    now_str = datetime.now(tz=timezone.utc).isoformat()
+    added = 0
+    for article in articles:
+        link = article.get("link", "")
+        if link:
+            key = normalize_url(link)
+            if key not in seen_urls:
+                seen_urls[key] = now_str
+                added += 1
+    return seen_urls, added
+
+
+def save_seen_urls(urls: dict[str, str]) -> None:
+    """Persist the seen-URL registry to disk."""
+    with open(SEEN_URLS_PATH, "w", encoding="utf-8") as f:
+        json.dump({"urls": urls}, f, ensure_ascii=False, indent=2)
+
+
 def _run_apify_actor(actor_id: str, input_data: dict) -> list[dict]:
     """
     Start an Apify actor run, poll until it finishes (up to 60 seconds),
@@ -644,7 +806,7 @@ Articles to analyze:
     return articles
 
 
-def _build_scoring_prompt(articles: list[dict], trending_context_block: str) -> str:
+def _build_scoring_prompt(articles: list[dict], trending_context_block: str, recently_covered: list[str] | None = None) -> str:
     """Build the Claude scoring prompt for a batch of articles (numbered 1..N)."""
     articles_text = ""
     for i, article in enumerate(articles, start=1):
@@ -661,7 +823,12 @@ ARTICLE {i}:{trending_flag}
   Summary:   {(article['summary'] or '(no summary — evaluate based on the topic name alone)')[:300]}
 ---"""
 
-    return f"""You are a senior editor curating a daily intelligence briefing for readers who want to stay sharp on culture, business, and ideas.
+    if recently_covered:
+        recently_covered_block = "\n".join(f"- {t}" for t in recently_covered)
+    else:
+        recently_covered_block = "(none — all stories are fresh)"
+
+    return f"""You are a senior editor curating a daily intelligence briefing. Your job is simple: surface what matters today, across any subject, without bias toward any topic or category.
 
 I'll give you a list of recent articles. Evaluate EACH article on these 4 criteria:
 
@@ -671,26 +838,32 @@ I'll give you a list of recent articles. Evaluate EACH article on these 4 criter
    - Published 12–24 hours ago → score normally (still timely)
    - Published 24–48 hours ago → -1 to the final score, UNLESS the story is still actively developing, trending, or unresolved (in which case score normally)
 3. CULTURAL: Does it connect to a broader cultural moment, movement, or shift in how people think or behave?
-4. SIGNIFICANCE: Is this a story that a well-informed reader would genuinely want to know about today?
+4. SIGNIFICANCE: Is this a story that earns its place in a finite, carefully curated daily briefing?
 
 Score each article from 1–10 overall. Be ruthlessly selective. Most articles should score 4–6.
 
 Scoring anchors:
-- 9–10: You have to tell someone about this today.
+- 10: A cultural moment — someone will reference this a year from now. Genuinely rare, never forced.
+- 9: You have to tell someone about this today.
 - 8: You'd bring this up in conversation today.
-- 7: Worth your time.
-- 5–6: Interesting enough, but you'd forget it by tomorrow.
-- 1–4: Noise — too niche, too dry, too predictable, or irrelevant.
+- 7: Worth your time — earned its place in The Edit.
+- 6: Made the cut — relevant and real, but not urgent. A signal for you to tune.
+- 1–5: Filtered out — noise, too dry, too predictable, or irrelevant.
 
 When in doubt between a 6 and a 7, score it a 6.
 
-10/10 RARITY RULE: A 10/10 story should feel genuinely rare — roughly once every 1–3 runs, but only when truly earned. Never award 10 just to fill the tier. If nothing clears the bar today, that's correct.
+10/10 RARITY RULE: A 10/10 story should feel genuinely rare — roughly once every 1–3 runs, but only when truly earned. Never award 10 just to fill the tier. If nothing clears the bar today, that's correct. When a story genuinely clears this bar, do not hesitate to award it. Holding back a deserved 10 is as much an editorial failure as awarding an undeserved one.
 
 POLITICS RULE: Automatically score any article a 1 if it is primarily about elections, political parties, politicians, legislation, government policy, or partisan issues. This briefing does not cover politics.
 
 CELEBRITY GOSSIP RULE: Automatically score any article a 1 if it is purely about celebrity rumors, relationships, dating, breakups, paparazzi stories, or celebrity gossip. This briefing does not cover celebrity gossip.
 
-CATEGORY DIVERSITY RULE: Aim to surface picks from a variety of categories (music, sports, fashion, tech, business, film/TV, culture, science). If multiple articles cover the same category and topic area, only the single most compelling one should score 7+. Do not let any one category dominate the high scores unless the news genuinely warrants it.
+CATEGORY DIVERSITY RULE: No single topic area should dominate the high scores in a single run. If multiple stories from the same subject area are scoring 7+, ask yourself whether they are each truly independently significant or whether one is just riding the coattails of another. Diversity of subject matter is a core editorial value — a well-rounded briefing covers the breadth of what matters today, not just what's loudest in one corner of the internet.
+
+RECENTLY COVERED RULE: The following story titles were already featured in this briefing within the past 3 days. If an article covers the SAME underlying story as any item on this list — even from a different source, angle, or with a new headline — score it a 1. Exception: if the article reports a genuinely significant NEW development on the story (e.g. an arrest made, a major reversal, a historic outcome), score it on its own merits as a new story.
+
+Recently covered (do not re-pick):
+{recently_covered_block}
 
 TREND ITEMS: Some items have Source "X (Twitter) Trending" or "Google Trends" — these are raw trending topics, not articles. Evaluate them on whether the topic itself is culturally significant and worth a reader's attention. Score them as you would any other item.
 
@@ -736,14 +909,14 @@ Here are the articles to evaluate:
 Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown code blocks."""
 
 
-def _score_batch(batch: list[dict], trending_context_block: str, label: str) -> list[dict]:
+def _score_batch(batch: list[dict], trending_context_block: str, label: str, recently_covered: list[str] | None = None) -> list[dict]:
     """
     Score a single batch of articles via Claude.
     Articles are numbered 1..N locally within the batch.
     On parse failure after one retry, logs a warning and returns the batch
     with score=0 rather than terminating the pipeline.
     """
-    prompt = _build_scoring_prompt(batch, trending_context_block)
+    prompt = _build_scoring_prompt(batch, trending_context_block, recently_covered)
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
     def call_claude():
@@ -806,7 +979,7 @@ def _score_batch(batch: list[dict], trending_context_block: str, label: str) -> 
     return enriched
 
 
-def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[str] | None = None) -> list[dict]:
+def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[str] | None = None, recently_covered: list[str] | None = None) -> list[dict]:
     if not articles:
         return []
 
@@ -831,10 +1004,142 @@ def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[st
     for n, batch in enumerate(batches, 1):
         label = f"batch {n}/{n_batches}" if n_batches > 1 else "batch"
         print(f"   Scoring {label} ({len(batch)} items)...")
-        enriched.extend(_score_batch(batch, trending_context_block, label))
+        enriched.extend(_score_batch(batch, trending_context_block, label, recently_covered))
 
     print(f"✅ Claude evaluated all {len(enriched)} articles.")
     return enriched
+
+
+CLUSTER_SIMILARITY_THRESHOLD = 0.80   # minimum title similarity to consider same story
+
+
+def _title_similarity(a: str, b: str) -> float:
+    """Normalized similarity ratio between two cleaned article titles (0.0–1.0)."""
+    from difflib import SequenceMatcher
+    a_clean = re.sub(r'[^\w\s]', '', a.lower().strip())
+    b_clean = re.sub(r'[^\w\s]', '', b.lower().strip())
+    return SequenceMatcher(None, a_clean, b_clean).ratio()
+
+
+def tag_story_clusters(articles: list[dict]) -> list[dict]:
+    """
+    Group articles by title similarity (≥ CLUSTER_SIMILARITY_THRESHOLD) using union-find.
+    Tags each article with:
+      - cluster_id   : str  — shared label for all members of a cluster (None for singletons)
+      - cluster_size : int  — number of articles in the cluster (1 for singletons)
+      - cluster_sources : list[str] — distinct source names in the cluster
+
+    For clusters with 3+ distinct sources, also sets:
+      - trending_across_sources = True
+      - trending_source_count   = number of distinct sources
+
+    All articles are kept in the batch — nothing is dropped.
+    Replaces the old deduplicate_articles_pre_scoring() call.
+    """
+    from collections import defaultdict
+
+    n = len(articles)
+    if n == 0:
+        return articles
+
+    # ── Union-Find ─────────────────────────────────────────────────
+    parent = list(range(n))
+
+    def find(x: int) -> int:
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(x: int, y: int) -> None:
+        px, py = find(x), find(y)
+        if px != py:
+            parent[px] = py
+
+    for i in range(n):
+        for j in range(i + 1, n):
+            if find(i) == find(j):
+                continue
+            sim = _title_similarity(
+                articles[i].get('title', ''),
+                articles[j].get('title', ''),
+            )
+            if sim >= CLUSTER_SIMILARITY_THRESHOLD:
+                union(i, j)
+
+    # ── Group by root ──────────────────────────────────────────────
+    groups: dict[int, list[int]] = defaultdict(list)
+    for i in range(n):
+        groups[find(i)].append(i)
+
+    # ── Tag articles ───────────────────────────────────────────────
+    cluster_idx = 0
+    clustered_articles = 0
+    for root, members in groups.items():
+        if len(members) == 1:
+            # Singleton — minimal tags, no cluster_id
+            articles[members[0]].update({
+                'cluster_id':      None,
+                'cluster_size':    1,
+                'cluster_sources': [articles[members[0]].get('source', '')],
+            })
+            continue
+
+        cid = f"c{cluster_idx}"
+        cluster_idx += 1
+        sources = list({articles[m].get('source', '') for m in members if articles[m].get('source')})
+        clustered_articles += len(members)
+
+        for m in members:
+            articles[m].update({
+                'cluster_id':      cid,
+                'cluster_size':    len(members),
+                'cluster_sources': sources,
+            })
+
+        # Set cross-source trend signal for 3+ distinct sources
+        if len(sources) >= 3:
+            for m in members:
+                articles[m]['trending_across_sources']  = True
+                articles[m]['trending_source_count']    = len(sources)
+
+    if cluster_idx > 0:
+        print(f"   Story clustering: {clustered_articles} articles → {cluster_idx} cluster(s).")
+    else:
+        print("   Story clustering: no duplicate titles found.")
+    return articles
+
+
+def mark_cluster_primaries(articles: list[dict]) -> list[dict]:
+    """
+    After scoring, mark the highest-scoring article in each cluster as
+    cluster_primary=True.  Singletons are always their own primary.
+    Call this immediately after evaluate_articles_with_claude().
+    """
+    # Find best score per cluster
+    best: dict[str, tuple[int, int]] = {}  # cluster_id → (score, idx)
+    for i, a in enumerate(articles):
+        cid = a.get('cluster_id')
+        if cid is None:
+            continue
+        score = a.get('score', 0)
+        if cid not in best or score > best[cid][0]:
+            best[cid] = (score, i)
+
+    primaries_marked = 0
+    for i, a in enumerate(articles):
+        cid = a.get('cluster_id')
+        if cid is None:
+            a['cluster_primary'] = True   # singletons are always primary
+            continue
+        is_primary = (best.get(cid, (None, -1))[1] == i)
+        a['cluster_primary'] = is_primary
+        if is_primary:
+            primaries_marked += 1
+
+    if primaries_marked:
+        print(f"   Cluster primaries marked: {primaries_marked} cluster(s).")
+    return articles
 
 
 def deduplicate_articles_pre_scoring(articles: list[dict]) -> list[dict]:
@@ -941,6 +1246,7 @@ def select_top_picks(articles: list[dict]) -> list[dict]:
 def filter_already_picked_today(picks: list[dict]) -> list[dict]:
     """
     Remove picks whose URLs already appear in any picks file saved today.
+    Uses normalized URLs to catch tracking-parameter variants of the same URL.
     """
     import glob as glob_module
 
@@ -951,21 +1257,20 @@ def filter_already_picked_today(picks: list[dict]) -> list[dict]:
     if not existing_files:
         return picks
 
-    already_picked_urls = set()
+    already_picked_urls: set[str] = set()
     url_pattern = r"\[Read the full article →\]\((https?://[^\)]+)\)"
-    import re
     for filepath in existing_files:
         with open(filepath, encoding="utf-8") as f:
             content = f.read()
         for url in re.findall(url_pattern, content):
-            already_picked_urls.add(url)
+            already_picked_urls.add(normalize_url(url))
 
     if not already_picked_urls:
         return picks
 
     filtered = []
     for pick in picks:
-        if pick["link"] in already_picked_urls:
+        if normalize_url(pick.get("link", "")) in already_picked_urls:
             print(f"   ↩️  Already picked today: \"{pick['title'][:60]}\"")
         else:
             filtered.append(pick)
@@ -976,28 +1281,68 @@ def filter_already_picked_today(picks: list[dict]) -> list[dict]:
     return filtered
 
 
-def write_all_articles_json(evaluated_articles: list[dict]) -> str:
-    """Write all scored articles (before MIN_SCORE / MAX_PICKS filters) to all_articles/."""
+def load_recently_covered_topics(days: int = 3) -> list[str]:
+    """
+    Return titles of picks from the last N days of picks files.
+    Used to inject into the scoring prompt so Claude can suppress re-picks
+    of the same underlying story across runs and across days.
+    """
+    import glob as glob_module
+    titles = []
+    today = datetime.now().date()
+    for filepath in glob_module.glob("picks/picks-*.md"):
+        m = re.search(r"picks-(\d{4}-\d{2}-\d{2})-", filepath)
+        if not m:
+            continue
+        try:
+            file_date = datetime.strptime(m.group(1), "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if (today - file_date).days > days:
+            continue
+        with open(filepath, encoding="utf-8") as f:
+            content = f.read()
+        for title in re.findall(r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n\[Read the full article", content):
+            titles.append(title.strip())
+    return titles
+
+
+def write_all_articles_json(evaluated_articles: list[dict], exclude_urls: set[str] | None = None) -> str:
+    """
+    Write scored articles (before MIN_SCORE / MAX_PICKS filters) to all_articles/.
+    Articles whose normalized URLs appear in exclude_urls are omitted — this ensures
+    The Feed only shows stories that did NOT make The Edit.
+    Trend items (no link) are always excluded.
+    """
     today_str = datetime.now().strftime("%Y-%m-%d")
     time_str  = datetime.now().strftime("%H%M")
     os.makedirs("all_articles", exist_ok=True)
     filename = f"all_articles/all-{today_str}-{time_str}.json"
 
-    # Exclude trend items (those have no link), include every real article regardless of score
-    articles = [
-        {
-            "title":     a.get("title", ""),
-            "source":    a.get("source", ""),
-            "link":      a.get("link"),
-            "score":     a.get("score", 0),
-            "why":       a.get("why"),
-            "hook":      a.get("hook"),
-            "image":     a.get("image"),
-            "published": a.get("published"),
-        }
-        for a in evaluated_articles
-        if a.get("link")
-    ]
+    excluded = exclude_urls or set()
+    articles = []
+    actually_excluded = 0
+    for a in evaluated_articles:
+        link = a.get("link")
+        if not link:
+            continue  # drop trend items (no URL)
+        if normalize_url(link) in excluded:
+            actually_excluded += 1
+            continue  # drop articles that made The Edit
+        articles.append({
+            "title":           a.get("title", ""),
+            "source":          a.get("source", ""),
+            "link":            link,
+            "score":           a.get("score", 0),
+            "why":             a.get("why"),
+            "hook":            a.get("hook"),
+            "image":           a.get("image"),
+            "published":       a.get("published"),
+            "cluster_id":      a.get("cluster_id"),
+            "cluster_size":    a.get("cluster_size", 1),
+            "cluster_primary": a.get("cluster_primary", True),
+            "cluster_sources": a.get("cluster_sources"),
+        })
 
     # Sort by score descending so highest-signal articles appear first within the run
     articles.sort(key=lambda a: a["score"], reverse=True)
@@ -1006,7 +1351,8 @@ def write_all_articles_json(evaluated_articles: list[dict]) -> str:
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"   📁 Saved {len(articles)} scored articles → {filename}")
+    print(f"   📁 Saved {len(articles)} Feed articles → {filename}"
+          + (f" ({actually_excluded} Edit pick(s) excluded)" if actually_excluded else ""))
     return filename
 
 
@@ -1050,11 +1396,26 @@ This is normal — not every day has strong enough signal. Check back tomorrow!
                 link_line = ""
             image_line = f"\n**Image:** {pick['image']}" if pick.get('image') else ""
             hook_section = f"\n**Hook:**\n{pick['hook']}\n" if pick.get('hook') else ""
+
+            # Cluster metadata lines (omitted for singletons / trend items)
+            cluster_lines = ""
+            if pick.get('cluster_id'):
+                cid       = pick['cluster_id']
+                csize     = pick.get('cluster_size', 1)
+                cprimary  = "true" if pick.get('cluster_primary', True) else "false"
+                csources  = " · ".join(pick.get('cluster_sources') or [])
+                cluster_lines = (
+                    f"\n**Cluster ID:** {cid}"
+                    f"\n**Cluster Size:** {csize}"
+                    f"\n**Cluster Primary:** {cprimary}"
+                    + (f"\n**Cluster Sources:** {csources}" if csources else "")
+                )
+
             content += f"""## Pick #{i} — Score: {pick['score']}/10
 
 **{pick['title']}**
 *{pick['source']}*
-{link_line}{image_line}
+{link_line}{image_line}{cluster_lines}
 
 **Why it matters:**
 {pick.get('why', 'N/A')}
@@ -1069,12 +1430,41 @@ This is normal — not every day has strong enough signal. Check back tomorrow!
     return filename
 
 
+def _get_today_pick_urls() -> set[str]:
+    """
+    Return normalized URLs for every article already picked in today's earlier runs.
+    Used to ensure those articles are also excluded from The Feed, even when they
+    were removed from top_picks by filter_already_picked_today().
+    """
+    import glob as glob_module
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    pattern = f"picks/picks-{today_str}-*.md"
+    existing_files = glob_module.glob(pattern)
+    urls: set[str] = set()
+    url_pattern = r"\[Read the full article →\]\((https?://[^\)]+)\)"
+    for filepath in existing_files:
+        try:
+            with open(filepath, encoding="utf-8") as f:
+                content = f.read()
+            for url in re.findall(url_pattern, content):
+                urls.add(normalize_url(url))
+        except Exception:
+            pass
+    return urls
+
+
 def main():
     print("\n" + "=" * 55)
     print("  📰 Daily Curator — Content Scouting with Claude AI")
     print("=" * 55)
 
     check_setup()
+
+    # ── Load persistent seen-URL registry (rolling 7-day window) ─────────────
+    print("\n📋 Loading seen-URL registry...")
+    seen_urls = load_seen_urls()
+    seen_urls = prune_seen_urls(seen_urls)
+    print(f"   Registry: {len(seen_urls)} known URL(s) from the past {SEEN_URLS_WINDOW_DAYS} days.")
 
     # Auto-generate sources.json from Inoreader subscriptions on first run
     if not os.path.exists(SOURCES_JSON_PATH):
@@ -1098,7 +1488,17 @@ def main():
         sys.exit(0)
 
     articles = apply_source_cap(articles)
-    articles = deduplicate_articles_pre_scoring(articles)
+    articles = dedup_articles_by_url(articles)
+
+    # ── Cross-run dedup: skip articles already seen in the past 7 days ───────
+    print(f"\n🔍 Checking articles against seen-URL registry...")
+    articles, skipped_articles = filter_seen_urls(articles, seen_urls)
+    if articles:
+        print(f"   {len(articles)} unseen article(s) will proceed to scoring.")
+
+    # ── Phase 1 story clustering: fuzzy title matching ───────────────────────
+    print(f"\n🔗 Clustering articles by title similarity (threshold {CLUSTER_SIMILARITY_THRESHOLD:.0%})...")
+    articles = tag_story_clusters(articles)
     articles = detect_cross_source_trends(articles)
     twitter_trends = fetch_twitter_trends()
     google_trends = fetch_google_trends()
@@ -1107,15 +1507,40 @@ def main():
     # Extract plain topic names from trend items for the velocity signal prompt
     trending_topics = [t["title"] for t in twitter_trends + google_trends if t.get("title")]
 
-    evaluated_articles = evaluate_articles_with_claude(all_items, trending_topics=trending_topics)
+    # ── Topic-level cross-run dedup: load recent pick titles for Claude to suppress ──
+    recently_covered = load_recently_covered_topics(days=3)
+    if recently_covered:
+        print(f"   📚 Loaded {len(recently_covered)} recently-covered topic(s) for dedup.")
 
-    print(f"\n📁 Saving all scored articles...")
-    write_all_articles_json(evaluated_articles)
+    evaluated_articles = evaluate_articles_with_claude(all_items, trending_topics=trending_topics, recently_covered=recently_covered)
+
+    # ── Mark highest-scorer in each cluster as the primary ───────────────────
+    print(f"\n🔗 Marking cluster primaries...")
+    evaluated_articles = mark_cluster_primaries(evaluated_articles)
+
+    # ── Update seen-URL registry with everything scored this run ─────────────
+    seen_urls, new_count = update_seen_urls(seen_urls, evaluated_articles)
+    save_seen_urls(seen_urls)
+    print(f"   📋 Seen registry updated: +{new_count} new URL(s), {len(seen_urls)} total.")
 
     top_picks = select_top_picks(evaluated_articles)
 
     print(f"\n🔎 Filtering already-picked URLs...")
     top_picks = filter_already_picked_today(top_picks)
+
+    # Build set of normalized pick URLs to exclude from The Feed.
+    # Include both this run's new picks AND any picks from earlier runs today —
+    # filter_already_picked_today() may have removed articles that scored highly
+    # but were already in The Edit, and their URLs must still be excluded.
+    pick_urls = {normalize_url(p["link"]) for p in top_picks if p.get("link")}
+    prior_today_urls = _get_today_pick_urls()
+    prior_only = prior_today_urls - pick_urls
+    if prior_only:
+        print(f"   +{len(prior_only)} URL(s) from earlier runs today added to Feed exclusion set.")
+    pick_urls |= prior_today_urls
+
+    print(f"\n📁 Saving Feed articles (excluding {len(pick_urls)} Edit pick URL(s))...")
+    write_all_articles_json(evaluated_articles, exclude_urls=pick_urls)
 
     print(f"\n📝 Writing output file...")
     output_file = write_markdown_output(top_picks, len(all_items), twitter_trends)

@@ -1135,6 +1135,128 @@
     .art-row[data-score="9"]  { border-left: 2px solid #a855f7; padding-left: 10px; box-shadow: -3px 0 14px rgba(168,85,247,0.25); }
     .art-row[data-score="10"] { border-left: 2px solid #f59e0b; padding-left: 10px; box-shadow: -3px 0 18px rgba(245,158,11,0.3); }
 
+    /* ─────────────────────────────────────────
+       COVERAGE / CLUSTER BADGE  (inline after title)
+    ───────────────────────────────────────── */
+    .art-coverage-badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 2px;
+      padding: 1px 5px;
+      margin-left: 7px;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+    }
+
+    /* ─────────────────────────────────────────
+       CLUSTER GROUP  (wraps primary row + toggle + sub-list)
+    ───────────────────────────────────────── */
+    .cluster-group .art-row {
+      border-bottom: none;  /* toggle-strip provides the bottom separator */
+    }
+
+    .cluster-toggle-strip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 0 5px 0;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      user-select: none;
+      background: transparent;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      width: 100%;
+      text-align: left;
+      transition: background 0.12s;
+    }
+
+    .cluster-toggle-strip:hover { background: rgba(255,255,255,0.025); }
+
+    .cst-chevron {
+      font-size: 9px;
+      color: var(--faint);
+      display: inline-block;
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+      width: 16px;            /* aligns with art-score column */
+      text-align: center;
+    }
+
+    .cst-label {
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--faint);
+      transition: color 0.12s;
+    }
+
+    .cluster-toggle-strip:hover .cst-label { color: var(--muted); }
+    .cluster-group.expanded .cst-chevron   { transform: rotate(180deg); }
+    .cluster-group.expanded .cst-label     { color: var(--muted); }
+
+    /* Sub-source list */
+    .cluster-sub-list {
+      display: none;
+      border-left: 2px solid var(--border);
+      margin: 0;
+    }
+
+    .cluster-group.expanded .cluster-sub-list { display: block; }
+
+    /* Rarity left-border color threads through into the sub-list */
+    .cluster-group[data-rarity="rare"]       .cluster-sub-list { border-left-color: rgba(59,130,246,0.45); }
+    .cluster-group[data-rarity="epic"]       .cluster-sub-list { border-left-color: rgba(168,85,247,0.45); }
+    .cluster-group[data-rarity="legendary"]  .cluster-sub-list { border-left-color: rgba(245,158,11,0.45); }
+
+    /* Sub-source row */
+    .cluster-sub-row {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 0 12px;
+      padding: 9px 0 9px 14px;
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+    }
+
+    .csr-source {
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .csr-title-link {
+      font-size: 13px;
+      color: var(--ink);
+      text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      opacity: 0.72;
+      transition: opacity 0.1s;
+    }
+
+    .csr-title-link:hover { opacity: 1; text-decoration: underline; text-underline-offset: 3px; }
+
+    .csr-time {
+      font-size: 9.5px;
+      color: var(--faint);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
     /* Trend badge inline */
     .art-trend-tag {
       display: inline-block;
@@ -1894,7 +2016,7 @@
   }
 
   // ── Render a single article row ───────────────────────────────
-  function renderRow(pick, ctDate, runIsoTs, extraClass) {
+  function renderRow(pick, ctDate, runIsoTs, extraClass, clusterMembers) {
     const href     = esc(pick.link || trendSearchUrl(pick));
     const tsAttr   = runIsoTs ? ` data-run-ts="${esc(runIsoTs)}"` : '';
     const score    = pick.score;
@@ -1903,8 +2025,18 @@
 
     const trendBadge = !pick.link
       ? `<span class="art-trend-tag">${esc(trendPlatform(pick)||'Trending')}</span>` : '';
-    const multiSrc   = pick.trending_across_sources
-      ? `<span class="art-trend-tag" style="color:var(--accent);border-color:var(--accent)">3+ SRC</span>` : '';
+
+    // Coverage badge: prefer cluster_size count; fall back to the Claude detection flag
+    const coverageCount = pick.cluster_size >= 3
+      ? pick.cluster_size
+      : (pick.trending_across_sources ? (pick.trending_source_count || 3) : 0);
+    const coverageBadge = coverageCount >= 3
+      ? `<span class="art-coverage-badge">${coverageCount} src</span>`
+      : (pick.trending_across_sources && !pick.cluster_size
+          ? `<span class="art-trend-tag" style="color:var(--accent);border-color:var(--accent)">3+ SRC</span>`
+          : '');
+    // multiSrc is now absorbed into coverageBadge — keep empty for backwards compat
+    const multiSrc = '';
 
     // Build expand panel
     let whyHtml = '';
@@ -1970,7 +2102,7 @@
     return `<div class="art-row${extraClass||''}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}" data-source="${esc(pick.source||'')}">
       <span class="art-score ${scoreCls}">${score}/10</span>
       <div class="art-title-cell">
-        <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${titleClick}>${esc(pick.title)}</a>${trendBadge}${multiSrc}
+        <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${titleClick}>${esc(pick.title)}</a>${trendBadge}${coverageBadge}
       </div>
       <button class="expand-btn" onclick="toggleExpand(this.closest('.art-row'))" aria-label="Expand">+</button>
       ${timeSpan}
@@ -2751,6 +2883,99 @@
     if (btn) btn.textContent = isOpen ? '+' : '−';
   }
 
+  // ── Cluster group toggle ─────────────────────────────────────
+  function toggleCluster(group) {
+    if (!group) return;
+    group.classList.toggle('expanded');
+  }
+
+  // ── Render a non-primary cluster member as a compact sub-row ─
+  function renderSubRow(pick, ctDate, runIsoTs) {
+    const href = esc(pick.link || trendSearchUrl(pick));
+    const timeStr = runIsoTs
+      ? new Date(runIsoTs).toLocaleTimeString('en-US', {
+          timeZone: 'America/Chicago', hour: 'numeric', minute: '2-digit'
+        })
+      : '';
+    // Truncate long titles for sub-rows
+    const titleDisplay = pick.title.length > 100
+      ? pick.title.slice(0, 97) + '…'
+      : pick.title;
+    return `<div class="cluster-sub-row">
+      <span class="csr-source">${esc(pick.source)}</span>
+      <a class="csr-title-link" href="${href}" target="_blank" rel="noopener noreferrer"
+         onclick="event.stopPropagation()">${esc(titleDisplay)}</a>
+      <span class="csr-time">${timeStr}</span>
+    </div>`;
+  }
+
+  // ── Group picks by cluster, render primary rows + sub-lists ──
+  function renderPicksGrouped(picks, ctDate, runIsoTs) {
+    // Build ordered list of {primary, members[]} groups
+    const groups = [];
+    const clusterIdx = {};   // cluster_id → index in groups
+
+    for (const pick of picks) {
+      const cid = pick.cluster_id;
+
+      if (!cid) {
+        // Singleton — plain row
+        groups.push({ primary: pick, members: [] });
+        continue;
+      }
+
+      if (pick.cluster_primary) {
+        // Cluster primary
+        if (clusterIdx[cid] !== undefined) {
+          // Members arrived before primary (shouldn't happen with score-desc sort)
+          groups[clusterIdx[cid]].primary = pick;
+        } else {
+          clusterIdx[cid] = groups.length;
+          groups.push({ primary: pick, members: [] });
+        }
+      } else {
+        // Non-primary cluster member
+        if (clusterIdx[cid] !== undefined) {
+          groups[clusterIdx[cid]].members.push(pick);
+        } else {
+          // Primary not yet seen — create placeholder, primary will fill in later
+          clusterIdx[cid] = groups.length;
+          groups.push({ primary: null, members: [pick] });
+        }
+      }
+    }
+
+    let html = '';
+    for (const { primary, members } of groups) {
+      if (!primary) continue;  // safety: discard orphaned non-primaries
+
+      if (!members.length) {
+        // No cluster members — render as normal row
+        html += renderRow(primary, ctDate, runIsoTs, '', null);
+      } else {
+        // Cluster group: primary + toggle + sub-list
+        const score  = primary.score;
+        const rarity = score >= 10 ? 'legendary' : score >= 9 ? 'epic' : score >= 8 ? 'rare' : 'normal';
+        const clusterSize = primary.cluster_size || (members.length + 1);
+
+        const primaryHtml  = renderRow(primary, ctDate, runIsoTs, ' cluster-primary-row', members);
+        const subRowsHtml  = members.map(m => renderSubRow(m, ctDate, runIsoTs)).join('');
+
+        html += `<div class="cluster-group" data-rarity="${rarity}" data-cluster-id="${esc(primary.cluster_id||'')}">
+          ${primaryHtml}
+          <button class="cluster-toggle-strip" onclick="toggleCluster(this.parentElement)" aria-label="Show other sources covering this story">
+            <span class="cst-chevron">↓</span>
+            <span class="cst-label">${clusterSize} sources covering this story</span>
+          </button>
+          <div class="cluster-sub-list">
+            ${subRowsHtml}
+          </div>
+        </div>`;
+      }
+    }
+    return html;
+  }
+
   // ── Active score filters (multi-select) ──────────────────────
   let activeFilters = new Set();
 
@@ -2774,9 +2999,13 @@
   // ── Build sidebar content ─────────────────────────────────────
   function buildSidebar(runs) {
     const allPicks = runs.flatMap(r => r.picks);
+    // Count only primary/singleton picks for sidebar stats — non-primary cluster
+    // members don't appear as standalone rows so should not inflate the counts.
+    // Falls back to counting everything when cluster_primary is absent (old data).
+    const visiblePicks = allPicks.filter(p => p.cluster_primary !== false);
     const counts   = { all:0, 10:0, 9:0, 8:0, 7:0 };
     const srcMap   = {};
-    allPicks.forEach(p => {
+    visiblePicks.forEach(p => {
       counts.all++;
       const s = p.score;
       if (s >= 10) counts[10]++;
@@ -2884,10 +3113,13 @@
       for (const run of dateRuns) {
         const runIsoTs = (run.date && run.time)
           ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z` : null;
-        for (const pick of run.picks) {
-          chunk += currentView === 'card'
-            ? renderCard(pick, date, runIsoTs)
-            : renderRow(pick, date, runIsoTs, '');
+        if (currentView === 'card') {
+          for (const pick of run.picks) {
+            chunk += renderCard(pick, date, runIsoTs);
+          }
+        } else {
+          // List view: cluster groups with expandable sub-source rows
+          chunk += renderPicksGrouped(run.picks, date, runIsoTs);
         }
       }
 
