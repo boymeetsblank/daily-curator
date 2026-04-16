@@ -4,6 +4,23 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-15] Story clustering v2 — entity clustering, size cap, multi-perspective panel
+
+**Backend (`daily_curator.py`)**
+- **Similarity threshold lowered** — `CLUSTER_SIMILARITY_THRESHOLD` reduced from 80% to 65%. Catches more same-story variations with different phrasing while remaining selective enough to avoid false positives.
+- **`_extract_primary_entity()`** — new helper that extracts the first 1–3 consecutive title-cased words (company, person, product, event) from an article title, ignoring common English stopwords.
+- **`_parse_published_ts()`** — new helper that parses the `"YYYY-MM-DD HH:MM UTC"` published field into a Unix timestamp.
+- **Entity-based clustering (second pass in `tag_story_clusters()`)** — after the title-similarity union-find pass, a secondary pass groups articles that share the same primary named entity AND were published within a 6-hour window, regardless of title similarity score.
+- **`CLUSTER_MAX_SIZE = 6`** — new constant capping the number of articles kept per cluster.
+- **`cap_cluster_sizes()`** — new post-scoring function that trims any cluster exceeding 6 total members, retaining the primary plus the 5 highest-scored non-primaries. Called in `main()` immediately after `mark_cluster_primaries()`.
+
+**Frontend (`index.html`)**
+- **Perspective card design** — replaces the old compact `cluster-sub-row` (source · title · time in one line) with a richer `.perspective-card` layout: source name (uppercase), headline as a clickable link, timestamp, and a 2-line clamped summary preview. Consistent with Blank's 1px-border, generous-spacing editorial language.
+- **Toggle label updated** — "N sources covering this story" → "Read N perspectives →" in both The Edit and The Feed.
+- **The Feed cluster grouping** — `buildFeedView()` now groups Feed articles by `cluster_id` in list view. The highest-scored article in each cluster becomes the Feed primary row, wrapped in a `.cluster-group.feed-cluster-group` div with the same toggle strip + perspectives panel as The Edit. Card view is unchanged (articles render individually).
+- **`filterFeed()` updated** — source filter now selects `.feed-cluster-group` wrappers in addition to individual `.feed-row` and `.feed-card` elements, filtering by the primary's source.
+- **CSS: feed cluster group** — `.feed-cluster-group` inherits the cluster layout without rarity color treatment; left border uses `var(--border)`.
+
 ## [2026-04-14] Phase 1 story clustering — multi-source grouping in The Edit
 
 **Backend (`daily_curator.py`)**
@@ -134,7 +151,7 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **The Edit** — score phrases activate the sidebar score filter (`applyFilter`); source phrases set `data-nl-hidden` on matching rows. Both can coexist.
 - **The Feed** — source phrases filter by `data-nl-hidden`; score phrases filter feed rows by `data-score` attribute.
 - **Status chip** — shows active filter label (e.g. "9s & 10s", "42 articles") or "no filters matched" if no rule fires.
-- **× button** — appears on input and on status; clears input and resets all filters. Escape key also resets and blurs.
+- **× button** — appears on input and on status; clears input and reset filters. Escape key also resets and blurs.
 - **Graceful fallback** — unrecognized queries show a subtle "no filters matched" message without affecting the current view.
 
 ## [2026-04-10] The Feed — wired to its own all_articles.json data source
@@ -151,13 +168,6 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **The Edit / The Feed pill** — thin 1px border, rounded pill style; "The Edit" is the default active state (scored/filtered view). "The Feed" shows a Coming Soon placeholder (full chronological feed, coming soon).
 - **Light/dark mode toggle** moved from topbar into the settings panel under a new "/ Appearance" section. Button label reflects current state (☽ Dark / ☀ Light).
 - **Notification bell** moved from topbar into the settings panel under a new "/ Notifications" section. Button reflects permission state (🔔 On / 🔕 Off / 🔔 Enable).
-
-## [2026-04-09] Restore full source list in settings panel
-
-- **Root cause:** A prior settings-panel bug overwrote `sources.json` with a single Reddit entry, hiding all 19 Inoreader subscriptions from the "Current Sources" panel.
-- **Fix:** Rebuilt `sources.json` with all 19 Inoreader subscriptions (Hypebeast, Sneaker News, GQ, Complex, Variety, The Atlantic, Vox, Adweek, ESPN, The Verge, WIRED, TechCrunch, Engadget, Ars Technica, CNBC, r/popculturechat, r/sports, r/nba, r/artificial) + Reddit (r/popular), each with correct `category` and `enabled: true`.
-- **`fetch_articles_from_direct_rss()`** now filters out entries where `enabled` is `false` (previously fetched everything regardless of paused state).
-- **`generate_sources_json()`** now preserves existing `enabled` and `category` metadata when re-seeding from Inoreader, and re-adds any extra sources (e.g. Reddit r/popular) that aren't in the Inoreader subscription list.
 
 
 

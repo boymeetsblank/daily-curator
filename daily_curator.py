@@ -1010,7 +1010,50 @@ def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[st
     return enriched
 
 
-CLUSTER_SIMILARITY_THRESHOLD = 0.80   # minimum title similarity to consider same story
+CLUSTER_SIMILARITY_THRESHOLD = 0.65   # minimum title similarity to consider same story
+CLUSTER_MAX_SIZE             = 6      # max articles kept per cluster (by score, post-scoring)
+
+# Common English stopwords for entity extraction
+_STOPWORDS = {
+    'a', 'an', 'the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
+    'of', 'with', 'by', 'from', 'up', 'as', 'is', 'was', 'are', 'were',
+    'be', 'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did',
+    'will', 'would', 'could', 'should', 'may', 'might', 'shall', 'can',
+    'not', 'no', 'its', 'it', 'this', 'that', 'these', 'those', 'how',
+    'why', 'what', 'when', 'where', 'who', 'which', 'after', 'before',
+    'over', 'under', 'about', 'into', 'through', 'during', 'just', 'now',
+    'new', 'says', 'said', 'report', 'reports', 'first', 'show', 'shows',
+}
+
+
+def _extract_primary_entity(title: str) -> str | None:
+    """
+    Extract the primary named entity from an article title.
+    Returns the first run of 1–3 consecutive title-cased words that are not
+    stopwords, lowercased and space-joined.  Returns None if nothing found.
+    """
+    words = re.sub(r'[^\w\s\'-]', ' ', title).split()
+    entity_words: list[str] = []
+    for word in words:
+        clean = re.sub(r"['\-]", '', word)
+        if clean and clean[0].isupper() and clean.lower() not in _STOPWORDS and len(clean) > 1:
+            entity_words.append(clean.lower())
+            if len(entity_words) == 3:
+                break
+        else:
+            if entity_words:
+                break  # end of consecutive run
+    return ' '.join(entity_words) if entity_words else None
+
+
+def _parse_published_ts(published: str) -> int | None:
+    """Parse 'YYYY-MM-DD HH:MM UTC' → Unix timestamp, or None on failure."""
+    if not published:
+        return None
+    try:
+        return int(datetime.strptime(published[:16], "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc).timestamp())
+    except Exception:
+        return None
 
 
 def _title_similarity(a: str, b: str) -> float:
@@ -1065,6 +1108,24 @@ def tag_story_clusters(articles: list[dict]) -> list[dict]:
                 articles[j].get('title', ''),
             )
             if sim >= CLUSTER_SIMILARITY_THRESHOLD:
+                union(i, j)
+
+    # ── Secondary pass: entity + time-window clustering ────────────
+    # If two articles share the same primary named entity AND were published
+    # within 6 hours of each other, group them regardless of title similarity.
+    SIX_HOURS = 6 * 3600
+    entities  = [_extract_primary_entity(a.get('title', '')) for a in articles]
+    pub_times = [_parse_published_ts(a.get('published', '')) for a in articles]
+
+    for i in range(n):
+        if not entities[i] or pub_times[i] is None:
+            continue
+        for j in range(i + 1, n):
+            if find(i) == find(j):
+                continue
+            if not entities[j] or pub_times[j] is None:
+                continue
+            if entities[i] == entities[j] and abs(pub_times[i] - pub_times[j]) <= SIX_HOURS:
                 union(i, j)
 
     # ── Group by root ──────────────────────────────────────────────
@@ -1140,6 +1201,42 @@ def mark_cluster_primaries(articles: list[dict]) -> list[dict]:
     if primaries_marked:
         print(f"   Cluster primaries marked: {primaries_marked} cluster(s).")
     return articles
+
+
+def cap_cluster_sizes(articles: list[dict]) -> list[dict]:
+    """
+    After scoring and marking cluster primaries, limit each cluster to at most
+    CLUSTER_MAX_SIZE total members (primary + non-primaries).  If a cluster has
+    more members, the lowest-scoring non-primaries are dropped.
+    Singletons are always kept.
+    """
+    from collections import defaultdict
+
+    # Group non-primary members by cluster_id
+    nonprimaries: dict[str, list[dict]] = defaultdict(list)
+    for a in articles:
+        cid = a.get('cluster_id')
+        if cid and not a.get('cluster_primary', True):
+            nonprimaries[cid].append(a)
+
+    # Identify articles to drop
+    to_drop: set[int] = set()
+    trimmed = 0
+    for cid, members in nonprimaries.items():
+        # Primary always survives, so budget = CLUSTER_MAX_SIZE - 1 non-primaries
+        budget = CLUSTER_MAX_SIZE - 1
+        if len(members) > budget:
+            sorted_members = sorted(members, key=lambda a: a.get('score', 0), reverse=True)
+            for excess in sorted_members[budget:]:
+                to_drop.add(id(excess))
+                trimmed += 1
+
+    if not trimmed:
+        return articles
+
+    kept = [a for a in articles if id(a) not in to_drop]
+    print(f"   Cluster cap ({CLUSTER_MAX_SIZE}/cluster): trimmed {trimmed} excess member(s) from oversized cluster(s).")
+    return kept
 
 
 def deduplicate_articles_pre_scoring(articles: list[dict]) -> list[dict]:
@@ -1517,6 +1614,9 @@ def main():
     # ── Mark highest-scorer in each cluster as the primary ───────────────────
     print(f"\n🔗 Marking cluster primaries...")
     evaluated_articles = mark_cluster_primaries(evaluated_articles)
+
+    # ── Cap oversized clusters to CLUSTER_MAX_SIZE members ───────────────────
+    evaluated_articles = cap_cluster_sizes(evaluated_articles)
 
     # ── Update seen-URL registry with everything scored this run ─────────────
     seen_urls, new_count = update_seen_urls(seen_urls, evaluated_articles)

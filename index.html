@@ -1218,44 +1218,68 @@
     .cluster-group[data-rarity="epic"]       .cluster-sub-list { border-left-color: rgba(168,85,247,0.45); }
     .cluster-group[data-rarity="legendary"]  .cluster-sub-list { border-left-color: rgba(245,158,11,0.45); }
 
-    /* Sub-source row */
-    .cluster-sub-row {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      gap: 0 12px;
-      padding: 9px 0 9px 14px;
+    /* Perspective card (multi-source reading panel) */
+    .perspective-card {
+      padding: 12px 14px;
       border-bottom: 1px solid var(--border);
-      align-items: center;
     }
 
-    .csr-source {
+    .pc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .pc-source {
       font-size: 9.5px;
       font-weight: 700;
-      letter-spacing: 0.07em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--muted);
       white-space: nowrap;
     }
 
-    .csr-title-link {
-      font-size: 13px;
-      color: var(--ink);
-      text-decoration: none;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      opacity: 0.72;
-      transition: opacity 0.1s;
-    }
-
-    .csr-title-link:hover { opacity: 1; text-decoration: underline; text-underline-offset: 3px; }
-
-    .csr-time {
+    .pc-time {
       font-size: 9.5px;
       color: var(--faint);
       font-variant-numeric: tabular-nums;
       white-space: nowrap;
+      flex-shrink: 0;
+      margin-left: 10px;
     }
+
+    .pc-headline {
+      display: block;
+      font-size: 13px;
+      color: var(--ink);
+      text-decoration: none;
+      opacity: 0.8;
+      transition: opacity 0.1s;
+      margin-bottom: 5px;
+      line-height: 1.4;
+    }
+
+    .pc-headline:hover {
+      opacity: 1;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .pc-summary {
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    /* Feed cluster group — no rarity color, plain border */
+    .feed-cluster-group .feed-row { border-bottom: none; }
+    .feed-cluster-group .cluster-sub-list { border-left-color: var(--border); }
 
     /* Trend badge inline */
     .art-trend-tag {
@@ -2889,7 +2913,7 @@
     group.classList.toggle('expanded');
   }
 
-  // ── Render a non-primary cluster member as a compact sub-row ─
+  // ── Render a non-primary cluster member as a perspective card ─
   function renderSubRow(pick, ctDate, runIsoTs) {
     const href = esc(pick.link || trendSearchUrl(pick));
     const timeStr = runIsoTs
@@ -2897,15 +2921,15 @@
           timeZone: 'America/Chicago', hour: 'numeric', minute: '2-digit'
         })
       : '';
-    // Truncate long titles for sub-rows
-    const titleDisplay = pick.title.length > 100
-      ? pick.title.slice(0, 97) + '…'
-      : pick.title;
-    return `<div class="cluster-sub-row">
-      <span class="csr-source">${esc(pick.source)}</span>
-      <a class="csr-title-link" href="${href}" target="_blank" rel="noopener noreferrer"
-         onclick="event.stopPropagation()">${esc(titleDisplay)}</a>
-      <span class="csr-time">${timeStr}</span>
+    const summary = pick.summary ? pick.summary.slice(0, 180) : '';
+    return `<div class="perspective-card">
+      <div class="pc-header">
+        <span class="pc-source">${esc(pick.source)}</span>
+        <span class="pc-time">${timeStr}</span>
+      </div>
+      <a class="pc-headline" href="${href}" target="_blank" rel="noopener noreferrer"
+         onclick="event.stopPropagation()">${esc(pick.title)}</a>
+      ${summary ? `<p class="pc-summary">${esc(summary)}</p>` : ''}
     </div>`;
   }
 
@@ -2965,7 +2989,7 @@
           ${primaryHtml}
           <button class="cluster-toggle-strip" onclick="toggleCluster(this.parentElement)" aria-label="Show other sources covering this story">
             <span class="cst-chevron">↓</span>
-            <span class="cst-label">${clusterSize} sources covering this story</span>
+            <span class="cst-label">Read ${members.length + 1} perspectives →</span>
           </button>
           <div class="cluster-sub-list">
             ${subRowsHtml}
@@ -3603,7 +3627,8 @@
     document.querySelectorAll('.fs-item').forEach(el =>
       el.classList.toggle('active', el.dataset.source === src)
     );
-    document.querySelectorAll('#feed-list .feed-row, #feed-list .feed-card').forEach(row => {
+    // Handle both standalone feed rows/cards AND cluster group wrappers
+    document.querySelectorAll('#feed-list .feed-row, #feed-list .feed-card, #feed-list .feed-cluster-group').forEach(row => {
       row.dataset.hidden = (src === 'all' || row.dataset.source === src) ? '0' : '1';
     });
   }
@@ -3627,19 +3652,84 @@
 
     if (!entries.length) { listEl.innerHTML = EMPTY; return; }
 
-    // Render with date dividers
-    let html = '', lastDate = null;
-    for (const { pick, ctDate, runIsoTs } of entries) {
-      if (ctDate !== lastDate) {
-        html += `<div class="feed-date-divider">${esc(fmtDate(ctDate))}</div>`;
-        lastDate = ctDate;
+    if (currentView === 'card') {
+      // Card view: render all articles individually (no cluster grouping in card view)
+      let html = '', lastDate = null;
+      for (const { pick, ctDate, runIsoTs } of entries) {
+        if (ctDate !== lastDate) {
+          html += `<div class="feed-date-divider">${esc(fmtDate(ctDate))}</div>`;
+          lastDate = ctDate;
+        }
+        html += renderFeedCard(pick, ctDate, runIsoTs);
       }
-      html += currentView === 'card'
-        ? renderFeedCard(pick, ctDate, runIsoTs)
-        : renderFeedRow(pick, ctDate, runIsoTs);
+      listEl.innerHTML = html || '<div class="state-msg">No articles.</div>';
+    } else {
+      // List view: group by cluster_id and show perspectives panels
+      // First pass: identify feed primaries and cluster members within each date bucket
+      // Articles are already score-sorted desc within each run, so first occurrence of a
+      // cluster_id = highest-scored = feed primary for that cluster.
+      const feedPrimaries = new Map();   // cluster_id → entry index in clusterGroups
+      const clusterGroups = [];          // [{primary, members[], ctDate, runIsoTs}]
+      const standalone    = [];          // entries with no cluster or singleton clusters
+
+      for (const entry of entries) {
+        const cid = entry.pick.cluster_id;
+        if (!cid) {
+          standalone.push(entry);
+          continue;
+        }
+        if (!feedPrimaries.has(cid)) {
+          const idx = clusterGroups.length;
+          feedPrimaries.set(cid, idx);
+          clusterGroups.push({ primary: entry, members: [], ctDate: entry.ctDate, runIsoTs: entry.runIsoTs });
+        } else {
+          clusterGroups[feedPrimaries.get(cid)].members.push(entry);
+        }
+      }
+
+      // Merge clusters back into a single ordered list preserving original entry order.
+      // We use the primary's position in `entries` as its sort key.
+      const entryIdx = new Map(entries.map((e, i) => [e, i]));
+      const rendered = [];
+      // Add standalone entries
+      for (const e of standalone) rendered.push({ sortKey: entryIdx.get(e), html: null, entry: e, isGroup: false });
+      // Add cluster groups keyed by primary's position
+      for (const grp of clusterGroups) {
+        rendered.push({ sortKey: entryIdx.get(grp.primary), html: null, entry: grp.primary, isGroup: true, grp });
+      }
+      rendered.sort((a, b) => a.sortKey - b.sortKey);
+
+      let html = '', lastDate = null;
+      for (const item of rendered) {
+        const ctDate   = item.entry.ctDate;
+        const runIsoTs = item.entry.runIsoTs;
+        if (ctDate !== lastDate) {
+          html += `<div class="feed-date-divider">${esc(fmtDate(ctDate))}</div>`;
+          lastDate = ctDate;
+        }
+        if (!item.isGroup || !item.grp.members.length) {
+          // Standalone or cluster with only one Feed member
+          html += renderFeedRow(item.entry.pick, ctDate, runIsoTs);
+        } else {
+          // Cluster group: primary + perspectives panel
+          const { primary, members } = item.grp;
+          const primaryRowHtml  = renderFeedRow(primary.pick, ctDate, runIsoTs);
+          const perspectivesHtml = members.map(m => renderSubRow(m.pick, m.ctDate, m.runIsoTs)).join('');
+          html += `<div class="cluster-group feed-cluster-group" data-source="${esc(primary.pick.source||'')}">
+            ${primaryRowHtml}
+            <button class="cluster-toggle-strip" onclick="toggleCluster(this.parentElement)" aria-label="Show other sources covering this story">
+              <span class="cst-chevron">↓</span>
+              <span class="cst-label">Read ${members.length + 1} perspectives →</span>
+            </button>
+            <div class="cluster-sub-list">
+              ${perspectivesHtml}
+            </div>
+          </div>`;
+        }
+      }
+      listEl.innerHTML = html || '<div class="state-msg">No articles.</div>';
     }
 
-    listEl.innerHTML = html || '<div class="state-msg">No articles.</div>';
     refreshTimestamps();
     buildFeedSidebar(entries.map(e => e.pick));
     activeFeedSource = 'all';
