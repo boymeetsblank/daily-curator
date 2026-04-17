@@ -1282,31 +1282,40 @@ If no articles share the same story, return:
 }}"""
 
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-    try:
-        response = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=4096,
-            messages=[{"role": "user", "content": prompt}]
-        )
-    except Exception as e:
-        print(f"   ⚠️  Pre-scoring dedup failed (continuing with all articles): {e}")
-        return articles
 
-    response_text = response.content[0].text.strip()
-    try:
-        result = json.loads(response_text)
-    except json.JSONDecodeError:
-        import re
-        json_match = re.search(r'\{[\s\S]*\}', response_text)
-        if json_match:
-            try:
-                result = json.loads(json_match.group())
-            except json.JSONDecodeError:
-                print("   ⚠️  Could not parse pre-scoring dedup response (continuing with all).")
-                return articles
-        else:
-            print("   ⚠️  Could not parse pre-scoring dedup response (continuing with all).")
-            return articles
+    def _call(p):
+        try:
+            return client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=4096,
+                messages=[{"role": "user", "content": p}]
+            ).content[0].text.strip()
+        except Exception as e:
+            print(f"   ⚠️  Pre-scoring dedup API call failed: {e}")
+            return None
+
+    def _parse(text):
+        if not text:
+            return None
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            m = re.search(r'\{[\s\S]*\}', text)
+            if m:
+                try:
+                    return json.loads(m.group())
+                except json.JSONDecodeError:
+                    pass
+        return None
+
+    result = _parse(_call(prompt))
+    if result is None:
+        print("   ⚠️  Pre-scoring dedup: Claude returned unparseable JSON — retrying with stricter prompt...")
+        strict = prompt + "\n\nIMPORTANT: Your previous response could not be parsed as JSON. Return ONLY the raw JSON object with absolutely no other text, no markdown, no code fences."
+        result = _parse(_call(strict))
+    if result is None:
+        print("   ❌ Pre-scoring dedup SKIPPED — Claude returned unparseable JSON on both attempts. All articles passed through unfiltered.")
+        return articles
 
     clusters = result.get("clusters", [])
     if not clusters:
@@ -1331,6 +1340,126 @@ If no articles share the same story, return:
         print(f"   Pre-scoring dedup: removed {removed} duplicate(s), {len(kept)} unique topics remain.")
     else:
         print("   ✅ No duplicate topics found.")
+    return kept
+
+
+def deduplicate_after_scoring(articles: list[dict]) -> list[dict]:
+    """
+    After scoring, identify any same-topic duplicates that survived pre-scoring
+    dedup and cluster capping. Uses a broader 'same underlying event or topic'
+    prompt to catch sparse-entity matches (e.g. two arrest headlines naming the
+    subject differently). Only inspects articles scoring >= MIN_SCORE.
+    Keeps the highest-scored duplicate; ties broken by metadata richness.
+    """
+    candidates = [a for a in articles if a.get("score", 0) >= MIN_SCORE]
+    if len(candidates) <= 1:
+        return articles
+
+    print(f"\n🔍 Post-scoring dedup: checking {len(candidates)} scored picks for same-topic duplicates...")
+
+    articles_text = ""
+    for i, article in enumerate(candidates, start=1):
+        snippet = (article.get('summary') or '')[:120] or '(no summary)'
+        articles_text += f"{i}. [{article['score']}/10] \"{article['title']}\" ({article['source']})\n   {snippet}\n"
+
+    prompt = f"""Here are {len(candidates)} articles that scored highly in an editorial evaluation. Some may cover the same underlying event or topic — even if their headlines use different phrasing, name the same person differently, or focus on different angles of the same story.
+
+{articles_text}
+
+Your job:
+1. Identify groups of articles about the same underlying event or topic. Use BROAD matching — for example:
+   - Two headlines about the same person's arrest, even if one names the victim and the other describes them differently
+   - Two headlines about the same person leaving a company, even if worded differently
+   - Two articles about the same product launch, album drop, or sports result from different angles
+2. Do NOT group articles that are merely in the same category (e.g. two unrelated sports stories). They must be the same specific event.
+3. Articles covering genuinely different stories should not be listed.
+
+Return ONLY valid JSON in this exact format, with no other text:
+
+{{
+  "clusters": [
+    {{
+      "topic": "Brief description of the shared underlying event",
+      "article_numbers": [1, 4]
+    }}
+  ]
+}}
+
+If no articles cover the same underlying event, return:
+{{
+  "clusters": []
+}}"""
+
+    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+
+    def _call(p):
+        try:
+            return client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=2048,
+                messages=[{"role": "user", "content": p}]
+            ).content[0].text.strip()
+        except Exception as e:
+            print(f"   ⚠️  Post-scoring dedup API call failed: {e}")
+            return None
+
+    def _parse(text):
+        if not text:
+            return None
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            m = re.search(r'\{[\s\S]*\}', text)
+            if m:
+                try:
+                    return json.loads(m.group())
+                except json.JSONDecodeError:
+                    pass
+        return None
+
+    result = _parse(_call(prompt))
+    if result is None:
+        print("   ⚠️  Post-scoring dedup: Claude returned unparseable JSON — retrying with stricter prompt...")
+        strict = prompt + "\n\nIMPORTANT: Your previous response could not be parsed as JSON. Return ONLY the raw JSON object with absolutely no other text, no markdown, no code fences."
+        result = _parse(_call(strict))
+    if result is None:
+        print("   ❌ Post-scoring dedup SKIPPED — Claude returned unparseable JSON on both attempts.")
+        return articles
+
+    clusters = result.get("clusters", [])
+    if not clusters:
+        print("   ✅ No same-topic duplicates found after scoring.")
+        return articles
+
+    def _richness(article):
+        score = 0
+        if article.get('image'):
+            score += 2
+        score += min(len(article.get('summary') or ''), 500) // 100
+        if article.get('why'):
+            score += 1
+        return score
+
+    to_drop_titles = set()
+    for cluster in clusters:
+        nums = cluster.get("article_numbers", [])
+        topic = cluster.get("topic", "unknown topic")
+        valid = [n for n in nums if 1 <= n <= len(candidates)]
+        if len(valid) < 2:
+            continue
+        cluster_arts = [(n, candidates[n - 1]) for n in valid]
+        winner_num = max(cluster_arts, key=lambda x: (x[1]["score"], _richness(x[1])))[0]
+        for num, art in cluster_arts:
+            if num != winner_num:
+                to_drop_titles.add(art['title'])
+                print(f"   ↩️  Post-dedup ({topic}): dropped \"{art['title'][:60]}\" (score {art['score']})")
+
+    if not to_drop_titles:
+        print("   ✅ No same-topic duplicates found after scoring.")
+        return articles
+
+    kept = [a for a in articles if a['title'] not in to_drop_titles]
+    print(f"   Post-scoring dedup: removed {len(to_drop_titles)} duplicate(s).")
     return kept
 
 
@@ -1617,6 +1746,9 @@ def main():
 
     # ── Cap oversized clusters to CLUSTER_MAX_SIZE members ───────────────────
     evaluated_articles = cap_cluster_sizes(evaluated_articles)
+
+    # ── Post-scoring dedup: catch same-topic pairs that survived clustering ───
+    evaluated_articles = deduplicate_after_scoring(evaluated_articles)
 
     # ── Update seen-URL registry with everything scored this run ─────────────
     seen_urls, new_count = update_seen_urls(seen_urls, evaluated_articles)

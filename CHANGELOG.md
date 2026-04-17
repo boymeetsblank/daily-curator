@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-17] Improve clustering/dedup pipeline
+
+Three fixes to the deduplication pipeline in `daily_curator.py`:
+
+- **Pre-scoring dedup retry** — `deduplicate_articles_pre_scoring()` now retries with a stricter "return only raw JSON" prompt if Claude returns malformed JSON on the first attempt. If both attempts fail, logs a clear `❌` warning instead of silently passing all articles through unfiltered.
+- **Post-scoring dedup pass** — new `deduplicate_after_scoring()` runs after `cap_cluster_sizes()` but before `select_top_picks()`. Checks all picks scoring ≥ MIN_SCORE for remaining same-topic duplicates. Keeps the highest-scored version; ties broken by metadata richness (has image, longer summary). Includes retry + clear failure logging.
+- **Broader post-scoring prompt** — uses "same underlying event or topic" (vs pre-scoring's "exact same story") to catch sparse-entity matches like two arrest headlines that name the subject differently.
+
 ## [2026-04-15] Story clustering v2 — entity clustering, size cap, multi-perspective panel
 
 **Backend (`daily_curator.py`)**
