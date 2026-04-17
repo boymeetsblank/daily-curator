@@ -4,6 +4,16 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-17] Fix multi-perspective cluster expansion panel
+
+Two fixes to make the cluster expansion panel fully functional:
+
+1. **`deduplicate_after_scoring()` preserves duplicates as perspectives** — instead of deleting losing articles, they are now marked `cluster_primary: False` and assigned the winner's `cluster_id`. The winner also gets a `cluster_sources` list built from all cluster members' sources. All articles are returned so non-primary members reach the picks file and the frontend expansion panel.
+
+2. **`select_top_picks()` includes non-primary members** — selects up to `MAX_PICKS` primary/singleton articles first, then appends non-primary members whose cluster primary was selected, so the full cluster reaches the frontend.
+
+3. **`cluster_sources` wired into JS toggle strips** — both `renderPicksGrouped()` and `buildFeedView()` now render a `.cst-sources` span in the toggle strip when `cluster_sources` is present, showing the contributing sources (e.g. "NYT · ESPN · The Atlantic").
+
 ## [2026-04-17] Improve clustering/dedup pipeline
 
 Three fixes to the deduplication pipeline in `daily_curator.py`:

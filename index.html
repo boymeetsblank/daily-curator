@@ -1204,6 +1204,14 @@
     .cluster-group.expanded .cst-chevron   { transform: rotate(180deg); }
     .cluster-group.expanded .cst-label     { color: var(--muted); }
 
+    .cst-sources {
+      font-size: 9px;
+      color: var(--faint);
+      letter-spacing: 0.04em;
+      margin-left: auto;
+      opacity: 0.7;
+    }
+
     /* Sub-source list */
     .cluster-sub-list {
       display: none;
@@ -2985,11 +2993,13 @@
         const primaryHtml  = renderRow(primary, ctDate, runIsoTs, ' cluster-primary-row', members);
         const subRowsHtml  = members.map(m => renderSubRow(m, ctDate, runIsoTs)).join('');
 
+        const srcList = (primary.cluster_sources || []).join(' · ');
         html += `<div class="cluster-group" data-rarity="${rarity}" data-cluster-id="${esc(primary.cluster_id||'')}">
           ${primaryHtml}
           <button class="cluster-toggle-strip" onclick="toggleCluster(this.parentElement)" aria-label="Show other sources covering this story">
             <span class="cst-chevron">↓</span>
             <span class="cst-label">Read ${members.length + 1} perspectives →</span>
+            ${srcList ? `<span class="cst-sources">${esc(srcList)}</span>` : ''}
           </button>
           <div class="cluster-sub-list">
             ${subRowsHtml}
@@ -3715,11 +3725,13 @@
           const { primary, members } = item.grp;
           const primaryRowHtml  = renderFeedRow(primary.pick, ctDate, runIsoTs);
           const perspectivesHtml = members.map(m => renderSubRow(m.pick, m.ctDate, m.runIsoTs)).join('');
+          const feedSrcList = (primary.pick.cluster_sources || []).join(' · ');
           html += `<div class="cluster-group feed-cluster-group" data-source="${esc(primary.pick.source||'')}">
             ${primaryRowHtml}
             <button class="cluster-toggle-strip" onclick="toggleCluster(this.parentElement)" aria-label="Show other sources covering this story">
               <span class="cst-chevron">↓</span>
               <span class="cst-label">Read ${members.length + 1} perspectives →</span>
+              ${feedSrcList ? `<span class="cst-sources">${esc(feedSrcList)}</span>` : ''}
             </button>
             <div class="cluster-sub-list">
               ${perspectivesHtml}

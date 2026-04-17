@@ -1440,7 +1440,7 @@ If no articles cover the same underlying event, return:
             score += 1
         return score
 
-    to_drop_titles = set()
+    merged = 0
     for cluster in clusters:
         nums = cluster.get("article_numbers", [])
         topic = cluster.get("topic", "unknown topic")
@@ -1448,25 +1448,46 @@ If no articles cover the same underlying event, return:
         if len(valid) < 2:
             continue
         cluster_arts = [(n, candidates[n - 1]) for n in valid]
-        winner_num = max(cluster_arts, key=lambda x: (x[1]["score"], _richness(x[1])))[0]
+        winner_num, winner_art = max(cluster_arts, key=lambda x: (x[1]["score"], _richness(x[1])))
+
+        # Assign or adopt a cluster_id for the winner
+        cid = winner_art.get("cluster_id") or f"pd{winner_num}"
+        winner_art["cluster_id"] = cid
+        winner_art["cluster_primary"] = True
+
+        # Collect all source names for the cluster_sources field
+        all_sources = list(dict.fromkeys(
+            art["source"] for _, art in cluster_arts if art.get("source")
+        ))
+        if len(all_sources) > 1:
+            winner_art["cluster_sources"] = all_sources
+
         for num, art in cluster_arts:
             if num != winner_num:
-                to_drop_titles.add(art['title'])
-                print(f"   ↩️  Post-dedup ({topic}): dropped \"{art['title'][:60]}\" (score {art['score']})")
+                art["cluster_id"] = cid
+                art["cluster_primary"] = False
+                merged += 1
+                print(f"   ↩️  Post-dedup ({topic}): kept \"{art['title'][:60]}\" as perspective (score {art['score']})")
 
-    if not to_drop_titles:
+    if not merged:
         print("   ✅ No same-topic duplicates found after scoring.")
         return articles
 
-    kept = [a for a in articles if a['title'] not in to_drop_titles]
-    print(f"   Post-scoring dedup: removed {len(to_drop_titles)} duplicate(s).")
-    return kept
+    print(f"   Post-scoring dedup: merged {merged} article(s) into perspective panels.")
+    return articles
 
 
 def select_top_picks(articles: list[dict]) -> list[dict]:
-    strong_picks = [a for a in articles if a["score"] >= MIN_SCORE]
-    strong_picks.sort(key=lambda a: a["score"], reverse=True)
-    return strong_picks[:MAX_PICKS]
+    strong = [a for a in articles if a.get("score", 0) >= MIN_SCORE]
+    primaries = [a for a in strong if a.get("cluster_primary", True) is not False]
+    primaries.sort(key=lambda a: a["score"], reverse=True)
+    top = primaries[:MAX_PICKS]
+    selected_cids = {a["cluster_id"] for a in top if a.get("cluster_id")}
+    members = [
+        a for a in strong
+        if a.get("cluster_primary") is False and a.get("cluster_id") in selected_cids
+    ]
+    return top + members
 
 
 def filter_already_picked_today(picks: list[dict]) -> list[dict]:
