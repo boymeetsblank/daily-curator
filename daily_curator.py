@@ -31,6 +31,7 @@ APIFY_API_TOKEN         = os.environ.get("APIFY_API_TOKEN")
 HOURS_BACK              = 48
 MAX_ARTICLES_TO_SEND    = 150
 MAX_ARTICLES_PER_SOURCE = 15
+MAX_ARTICLES_HARD_CAP   = 200  # ceiling after per-source cap; trims oldest articles first
 MIN_SCORE               = 6
 MAX_PICKS               = 30
 DIRECT_RSS_TIMEOUT      = 10   # seconds per feed fetch
@@ -708,6 +709,32 @@ def fetch_google_trends() -> list[dict]:
         return []
 
 
+def apply_hard_article_cap(articles: list[dict]) -> list[dict]:
+    """
+    After per-source capping, enforce a hard ceiling of MAX_ARTICLES_HARD_CAP
+    total articles entering the scoring pipeline.  When trimming, keep the
+    most recently published articles so the briefing stays timely.
+    """
+    if len(articles) <= MAX_ARTICLES_HARD_CAP:
+        return articles
+
+    def _pub_key(a):
+        pub = a.get('published', '') or ''
+        for fmt in ('%Y-%m-%d %H:%M UTC', '%Y-%m-%dT%H:%M:%SZ',
+                    '%Y-%m-%d %H:%M:%S', '%Y-%m-%d'):
+            try:
+                return datetime.strptime(pub[:len(fmt)], fmt)
+            except (ValueError, TypeError):
+                pass
+        return datetime.min
+
+    trimmed = len(articles) - MAX_ARTICLES_HARD_CAP
+    kept = sorted(articles, key=_pub_key, reverse=True)[:MAX_ARTICLES_HARD_CAP]
+    print(f"   ⚠️  Hard article cap: trimmed {trimmed} older article(s) "
+          f"({len(articles)} → {MAX_ARTICLES_HARD_CAP})")
+    return kept
+
+
 def detect_cross_source_trends(articles: list[dict]) -> list[dict]:
     """
     Identify articles covering the same story across 3+ different sources.
@@ -828,7 +855,7 @@ ARTICLE {i}:{trending_flag}
     else:
         recently_covered_block = "(none — all stories are fresh)"
 
-    return f"""You are a senior editor curating a daily intelligence briefing. Your job is simple: surface what matters today, across any subject, without bias toward any topic or category.
+    static_preamble = f"""You are a senior editor curating a daily intelligence briefing. Your job is simple: surface what matters today, across any subject, without bias toward any topic or category.
 
 I'll give you a list of recent articles. Evaluate EACH article on these 4 criteria:
 
@@ -903,10 +930,10 @@ IMPORTANT: Return your response as valid JSON in EXACTLY this format, with no ot
   ]
 }}
 
-Here are the articles to evaluate:
-{articles_text}
+Here are the articles to evaluate:"""
 
-Remember: Return ONLY the JSON object. No preamble, no explanation, no markdown code blocks."""
+    dynamic_articles = articles_text + "\n\nRemember: Return ONLY the JSON object. No preamble, no explanation, no markdown code blocks."
+    return static_preamble, dynamic_articles
 
 
 def _score_batch(batch: list[dict], trending_context_block: str, label: str, recently_covered: list[str] | None = None) -> list[dict]:
@@ -916,7 +943,7 @@ def _score_batch(batch: list[dict], trending_context_block: str, label: str, rec
     On parse failure after one retry, logs a warning and returns the batch
     with score=0 rather than terminating the pipeline.
     """
-    prompt = _build_scoring_prompt(batch, trending_context_block, recently_covered)
+    static_preamble, dynamic_articles = _build_scoring_prompt(batch, trending_context_block, recently_covered)
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
     def call_claude():
@@ -924,7 +951,20 @@ def _score_batch(batch: list[dict], trending_context_block: str, label: str, rec
             return client.messages.create(
                 model="claude-sonnet-4-6",
                 max_tokens=8192,
-                messages=[{"role": "user", "content": prompt}]
+                messages=[{
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": static_preamble,
+                            "cache_control": {"type": "ephemeral"},
+                        },
+                        {
+                            "type": "text",
+                            "text": dynamic_articles,
+                        },
+                    ],
+                }],
             )
         except anthropic.AuthenticationError:
             print("❌ Claude API key is invalid. Please check your ANTHROPIC_API_KEY.")
@@ -1236,110 +1276,6 @@ def cap_cluster_sizes(articles: list[dict]) -> list[dict]:
 
     kept = [a for a in articles if id(a) not in to_drop]
     print(f"   Cluster cap ({CLUSTER_MAX_SIZE}/cluster): trimmed {trimmed} excess member(s) from oversized cluster(s).")
-    return kept
-
-
-def deduplicate_articles_pre_scoring(articles: list[dict]) -> list[dict]:
-    """
-    Before sending to Claude for scoring, cluster same-topic articles and keep
-    only the most culturally relevant representative from each cluster.
-    This maximises the number of unique topics Claude evaluates per run.
-    """
-    if len(articles) <= 1:
-        return articles
-
-    print(f"\n🔍 Pre-scoring dedup: clustering {len(articles)} articles by topic...")
-
-    articles_text = ""
-    for i, article in enumerate(articles, start=1):
-        snippet = article['summary'][:120] if article['summary'] else '(no summary)'
-        articles_text += f"{i}. \"{article['title']}\" ({article['source']})\n   {snippet}\n"
-
-    prompt = f"""Here are {len(articles)} articles from various sources. Some may cover the exact same story or event.
-
-{articles_text}
-
-Your job:
-1. Identify groups of articles that are all about the same story or event.
-2. For each group (cluster), pick ONE article to keep — choose the one from the most culturally relevant source (e.g. prefer The Ringer over a generic news wire, prefer a culture-forward outlet over a sports stats site, prefer a primary source over an aggregator).
-3. Articles that are NOT part of any cluster (unique stories) should not be listed.
-
-Return ONLY valid JSON in this exact format, with no other text:
-
-{{
-  "clusters": [
-    {{
-      "story": "Brief description of the shared story",
-      "article_numbers": [1, 3, 5],
-      "keep": 3
-    }}
-  ]
-}}
-
-If no articles share the same story, return:
-{{
-  "clusters": []
-}}"""
-
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-
-    def _call(p):
-        try:
-            return client.messages.create(
-                model="claude-sonnet-4-6",
-                max_tokens=4096,
-                messages=[{"role": "user", "content": p}]
-            ).content[0].text.strip()
-        except Exception as e:
-            print(f"   ⚠️  Pre-scoring dedup API call failed: {e}")
-            return None
-
-    def _parse(text):
-        if not text:
-            return None
-        try:
-            return json.loads(text)
-        except json.JSONDecodeError:
-            m = re.search(r'\{[\s\S]*\}', text)
-            if m:
-                try:
-                    return json.loads(m.group())
-                except json.JSONDecodeError:
-                    pass
-        return None
-
-    result = _parse(_call(prompt))
-    if result is None:
-        print("   ⚠️  Pre-scoring dedup: Claude returned unparseable JSON — retrying with stricter prompt...")
-        strict = prompt + "\n\nIMPORTANT: Your previous response could not be parsed as JSON. Return ONLY the raw JSON object with absolutely no other text, no markdown, no code fences."
-        result = _parse(_call(strict))
-    if result is None:
-        print("   ❌ Pre-scoring dedup SKIPPED — Claude returned unparseable JSON on both attempts. All articles passed through unfiltered.")
-        return articles
-
-    clusters = result.get("clusters", [])
-    if not clusters:
-        print("   ✅ No duplicate topics found.")
-        return articles
-
-    to_drop = set()
-    for cluster in clusters:
-        article_nums = cluster.get("article_numbers", [])
-        keep_num = cluster.get("keep")
-        story = cluster.get("story", "unknown story")
-        if keep_num not in article_nums:
-            continue  # malformed cluster, skip
-        for num in article_nums:
-            if num != keep_num and 1 <= num <= len(articles):
-                to_drop.add(num - 1)
-                print(f"   ↩️  Deduped ({story}): \"{articles[num - 1]['title'][:60]}\"")
-
-    kept = [a for i, a in enumerate(articles) if i not in to_drop]
-    removed = len(articles) - len(kept)
-    if removed:
-        print(f"   Pre-scoring dedup: removed {removed} duplicate(s), {len(kept)} unique topics remain.")
-    else:
-        print("   ✅ No duplicate topics found.")
     return kept
 
 
@@ -1742,6 +1678,9 @@ def main():
     articles, skipped_articles = filter_seen_urls(articles, seen_urls)
     if articles:
         print(f"   {len(articles)} unseen article(s) will proceed to scoring.")
+
+    # ── Hard cap: keep at most MAX_ARTICLES_HARD_CAP articles entering scoring ─
+    articles = apply_hard_article_cap(articles)
 
     # ── Phase 1 story clustering: fuzzy title matching ───────────────────────
     print(f"\n🔗 Clustering articles by title similarity (threshold {CLUSTER_SIMILARITY_THRESHOLD:.0%})...")

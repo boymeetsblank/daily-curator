@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-17] Three scoring pipeline optimizations
+
+1. **Prompt caching on scoring batches** — `_build_scoring_prompt()` now returns a `(static_preamble, dynamic_articles)` tuple. `_score_batch()` sends the user message as two content blocks, marking the static preamble (instructions, rules, recently-covered list, trending context) with `cache_control: {type: "ephemeral"}`. With 4 batches per run, this yields 3 cache hits per run, cutting ~61% of the static-portion token cost across batches 2–4.
+
+2. **Hard article cap** — Added `MAX_ARTICLES_HARD_CAP = 200` constant and `apply_hard_article_cap()` function, called in `main()` after per-source capping and seen-URL filtering but before scoring. When the total exceeds 200, the most recently published articles are kept, with a log of how many were trimmed.
+
+3. **Dead code deleted** — `deduplicate_articles_pre_scoring()` was defined but never called; it had been superseded by the local `tag_story_clusters()` function. Removed entirely.
+
 ## [2026-04-17] Fix multi-perspective cluster expansion panel
 
 Two fixes to make the cluster expansion panel fully functional:
