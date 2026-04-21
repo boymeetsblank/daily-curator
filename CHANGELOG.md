@@ -4,6 +4,42 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-20] Save feature — bookmark articles with persistent storage and slide-in panel
+
+**`index.html`**
+- **Bookmark button** — a save/unsave button (bookmark SVG) added to every card and row inside `.vote-btns`. Filling the icon on save mirrors the voted-up heart pattern.
+- **Topbar saved indicator** — bookmark icon button in `.tb-actions` opens the saved panel; a badge shows the count when ≥1 article is saved.
+- **Saved panel** — slide-in panel from the right with a backdrop overlay. Lists saved articles with rarity-tier left-border color coding. Each item shows title, source, score, and a `×` unsave button.
+- **`savedMap`** — in-memory `Map<url, articleData>` tracks saved state across the session.
+- **`saved.json` on GitHub** — saved state persists via the same GitHub Contents API write pattern used by `votes.json`. `loadSaved()` hydrates `savedMap` on init; `writeSaved()` PUTs on every toggle.
+- **localStorage fallback** — saves to `blank_saved` in localStorage when GitHub write is unavailable (dev mode / unauthenticated).
+- **`syncSaveButtons()`** — re-applies `.is-saved` class to all `.saved-btn` elements after any state change so buttons stay in sync across list and card views.
+
+**`saved.json`** — new file in repo root, initialized as `[]`.
+
+## [2026-04-20] Inoreader token automation — health check, graceful degradation, auto-secret update
+
+**Backend (`daily_curator.py`)**
+- **`InoreaderTokenError` exception** — new exception class raised by `get_fresh_token()` on any token failure instead of `sys.exit(1)`. Allows callers to degrade gracefully rather than aborting the process.
+- **`get_fresh_token()` no longer exits** — raises `InoreaderTokenError` on HTTP errors or network failures; caller decides how to handle.
+- **`fetch_articles_from_inoreader()` no longer exits** — catches `InoreaderTokenError` and all request errors, logs a `⚠️` warning, and returns `[]` so the run continues on Direct RSS.
+- **Token health check in `main()`** — at startup (after `check_setup()`), attempts a token refresh. If it fails, sets `inoreader_available = False`, logs a clear remediation message, and skips all Inoreader fetches for that run without exiting.
+- **Graceful degradation in `main()`** — when `inoreader_available = False`, skips parallel Inoreader fetch and `generate_sources_json()`, runs Direct RSS only, and passes `inoreader_unavailable=True` to the output writer.
+- **`write_markdown_output()` degradation note** — when `inoreader_unavailable=True`, the picks file header now reads "Direct RSS feeds" as the source and includes a `⚠️ Inoreader unavailable` callout.
+
+**`get_inoreader_token.py`**
+- **Auto-updates `.env`** — after a successful token exchange, rewrites `INOREADER_REFRESH_TOKEN` in the local `.env` file in-place (or appends if not present).
+- **Auto-updates GitHub Actions secret** — calls the GitHub REST API to update `INOREADER_REFRESH_TOKEN` in repo secrets. Reads or prompts for `GITHUB_PAT` (repo-scope PAT). Detects owner/repo from `git remote get-url origin`; falls back to prompt. Encrypts the secret with the repo's libsodium public key via PyNaCl (required by GitHub API). Saves `GITHUB_PAT` to `.env` for future runs if not already stored. Prints a direct settings URL if automatic update fails.
+
+**New workflow (`.github/workflows/token-health-check.yml`)**
+- Runs daily at 6:00 AM CST (`0 12 * * *`) and on manual dispatch.
+- Attempts a refresh-token exchange using stdlib only (no pip install needed).
+- On success: writes a green ✅ job summary.
+- On failure: writes a detailed ❌ job summary with step-by-step remediation instructions and marks the job failed so it appears as a red X in the Actions tab.
+- Never attempts to auto-refresh or start a new OAuth flow.
+
+**`requirements.txt`** — added `PyNaCl>=1.5.0`.
+
 ## [2026-04-20] Fix: detect_cross_source_trends() now assigns cluster_id — closes frontend grouping gap
 
 **Backend (`daily_curator.py`)**
@@ -159,41 +195,7 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **Sidebar header:** Removed the redundant `/ SOURCES` section label from the Feed sidebar. "All Sources" as the first item is self-explanatory; the label added noise without adding meaning.
 - **NL filter placeholders:** Replaced wordy "filter by source or category…" / "filter by source, score, or category…" with example-driven copy: `e.g. sneakers, tech, reddit` (Feed) and `e.g. sneakers, 9s & 10s, tech` (Edit). The `/` prefix already implies filtering; the placeholder shows what to type, not how to use it.
 
-## [2026-04-11] Fix: JS syntax error in renderCard — stray backtick breaking all functionality
 
-- **Bug:** `renderCard()` had a stray backtick at the end of the `return` statement's first line (`...data-source="...">\``). This prematurely closed the template literal after just the opening `<div>` tag. The remaining 22 lines of HTML inside the template were left as raw invalid JavaScript, causing `Uncaught SyntaxError: Unexpected token '{'` on every page load.
-- **Impact:** The syntax error prevented the entire script block from executing, which is why both The Edit (no articles) and The Feed pill toggle (no mode switch) were completely broken.
-- **Fix:** Removed the stray closing backtick from line 1661 so the template literal correctly spans from the opening `<div>` to the closing `</div>` on line 1684 — matching the same pattern as `renderRow()`.
-
-## [2026-04-11] Fix: The Feed pill still not switching — display override bug
-
-- **Root cause:** `feedPage.style.display = ''` clears the inline style, which lets the CSS rule `#feed-page { display: none }` win — so The Feed page was never actually becoming visible, even after the previous selector fix.
-- **Fix:** Changed all visibility toggles to use explicit `'block'` / `'none'` values. `display = ''` is ambiguous when CSS has a `display: none` rule on the element.
-- **Session flag:** Added `feedLoaded` flag so `all_articles.json` is only fetched once per session. Repeat pill switches instantly restore the rendered view without a new network request.
-- **No-ops guarded:** Pill and page elements are null-checked before use so clicking a pill before the DOM is fully ready cannot throw.
-
-## [2026-04-10] Fix: The Feed pill click handler and empty state
-
-- **Root cause:** `document.querySelector('.page-outer')` in `switchMode()` was selecting the first `.page-outer` in the DOM — the one inside `#feed-page` — instead of the edit page's wrapper. This meant clicking "The Feed" pill was hiding the feed's own container rather than the edit page.
-- **Fix:** Added `id="edit-page"` to the edit page's `.page-outer` and updated `switchMode()` to reference both pages by ID (`getElementById`), not class selector.
-- **Empty state:** Replaced inline `<small>` loading/error text with a `.feed-empty-state` component — a centered editorial message ("The Feed populates after the next scheduled run.") with a small-caps schedule line ("Runs daily at 7:30 AM · 1:30 PM · 7:30 PM CT"). Applied consistently across all empty/error paths in `switchMode()` and `buildFeedView()`.
-
-## [2026-04-10] NL filter bar — natural language filtering in The Edit and The Feed
-
-- **Both modes** now have a subtle `/` filter bar above the article list, dormant by default (activates on `:focus-within` with a 1px border reveal).
-- **Natural language parsing** — pressing Enter on phrases like "only sneakers", "just 9s and 10s", "high scores", "reddit only", "tech", "watches" maps to existing filters. Clear-typed inputs ("clear", "reset") reset all filters.
-- **The Edit** — score phrases activate the sidebar score filter (`applyFilter`); source phrases set `data-nl-hidden` on matching rows. Both can coexist.
-- **The Feed** — source phrases filter by `data-nl-hidden`; score phrases filter feed rows by `data-score` attribute.
-- **Status chip** — shows active filter label (e.g. "9s & 10s", "42 articles") or "no filters matched" if no rule fires.
-- **× button** — appears on input and on status; clears input and reset filters. Escape key also resets and blurs.
-- **Graceful fallback** — unrecognized queries show a subtle "no filters matched" message without affecting the current view.
-
-## [2026-04-10] The Feed — wired to its own all_articles.json data source
-
-- **`daily_curator.py`** — new `write_all_articles_json()` saves every scored real article (before `MIN_SCORE` filter and `MAX_PICKS` cap) to `all_articles/all-YYYY-MM-DD-HHMM.json` after each run. Trend items (no URL) are excluded. Fields: title, source, link, score, why, hook, image, published.
-- **`daily_curator.yml`** — added `all_articles/` to the `git add` step so each run's file is committed alongside its picks markdown.
-- **`deploy-pages.yml`** — build step now aggregates all `all_articles/*.json` files into `site/all_articles.json` (newest run first), mirroring how `picks_data.json` is built from markdown files.
-- **`index.html`** — The Feed now fetches `all_articles.json` directly (`loadFeedData()` with in-session cache) instead of reading from `cachedRuns`. `buildFeedView()` updated to consume the `runs[].articles[]` format. The Edit continues to use `picks_data.json` / `cachedRuns` unchanged. Graceful "feed populates after next run" message shown if `all_articles.json` is absent.
 
 
 
