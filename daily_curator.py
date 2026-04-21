@@ -1108,6 +1108,7 @@ _STOPWORDS = {
     'why', 'what', 'when', 'where', 'who', 'which', 'after', 'before',
     'over', 'under', 'about', 'into', 'through', 'during', 'just', 'now',
     'new', 'says', 'said', 'report', 'reports', 'first', 'show', 'shows',
+    'til', 'ama', 'lpt', 'eli5', 'smh', 'fyi', 'imo', 'imho', 'psa', 'dae', 'ask',
 }
 
 
@@ -1516,12 +1517,12 @@ def filter_already_picked_today(picks: list[dict]) -> list[dict]:
 
 def load_recently_covered_topics(days: int = 3) -> list[str]:
     """
-    Return titles of picks from the last N days of picks files.
+    Return "Title — Why summary" strings from the last N days of picks files.
     Used to inject into the scoring prompt so Claude can suppress re-picks
     of the same underlying story across runs and across days.
     """
     import glob as glob_module
-    titles = []
+    entries = []
     today = datetime.now().date()
     for filepath in glob_module.glob("picks/picks-*.md"):
         m = re.search(r"picks-(\d{4}-\d{2}-\d{2})-", filepath)
@@ -1535,9 +1536,14 @@ def load_recently_covered_topics(days: int = 3) -> list[str]:
             continue
         with open(filepath, encoding="utf-8") as f:
             content = f.read()
-        for title in re.findall(r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n\[Read the full article", content):
-            titles.append(title.strip())
-    return titles
+        for title, why in re.findall(
+            r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n\[Read the full article"
+            r".*?\n\n\*\*Why it (?:matters|scored high):\*\*\n(.*?)(?=\n\n\*\*Hook|\n\n\*\*Suggested|\n\n---|\Z)",
+            content, re.DOTALL
+        ):
+            why_short = re.sub(r'\s+', ' ', why.strip())[:120]
+            entries.append(f"{title.strip()} — {why_short}")
+    return entries
 
 
 def write_all_articles_json(evaluated_articles: list[dict], exclude_urls: set[str] | None = None) -> str:
@@ -1803,6 +1809,23 @@ def main():
 
     print(f"\n🔎 Filtering already-picked URLs...")
     top_picks = filter_already_picked_today(top_picks)
+
+    # Prune non-primary cluster members whose primary was removed by cross-run dedup.
+    # Without this, orphaned members appear as separate picks in The Edit and can't
+    # be grouped on the website because their primary is absent.
+    surviving_primary_cids = {
+        p["cluster_id"] for p in top_picks
+        if p.get("cluster_primary") is not False and p.get("cluster_id")
+    }
+    orphaned = [
+        p for p in top_picks
+        if p.get("cluster_primary") is False
+        and p.get("cluster_id")
+        and p["cluster_id"] not in surviving_primary_cids
+    ]
+    if orphaned:
+        top_picks = [p for p in top_picks if p not in orphaned]
+        print(f"   Pruned {len(orphaned)} orphaned cluster member(s) whose primary was already picked.")
 
     # Build set of normalized pick URLs to exclude from The Feed.
     # Include both this run's new picks AND any picks from earlier runs today —

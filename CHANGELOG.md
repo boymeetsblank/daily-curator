@@ -11,6 +11,32 @@ All notable changes to the daily-curator project are documented here. Newest ent
 - **Root cause fixed**: cluster IDs (`c0`, `c1`, `trend_0`, …) were assigned per-run starting from index 0. When `deploy-pages.yml` aggregated all `all_articles/*.json` files into `all_articles.json`, the Feed's `buildFeedView()` incorrectly grouped unrelated articles from different runs that happened to share the same base cluster index — producing bogus "Read N perspectives" toggles and hiding articles as orphaned members of the wrong cluster.
 - **No ordering change**: `write_all_articles_json()` was already called after both `detect_cross_source_trends()` and `mark_cluster_primaries()` in `main()` — no reordering was needed.
 
+## [2026-04-21] Fix same-story duplication and broken website clustering
+
+Four root-cause fixes for two persistent issues (same story appearing multiple
+times in The Edit; cluster panels not working on the website):
+
+1. **Prune orphaned cluster members** (`daily_curator.py` `main()`) — after
+   `filter_already_picked_today()` removes a cluster's primary (already picked
+   in an earlier run), non-primary members of that cluster are now explicitly
+   dropped. Previously they remained as separate picks with no primary, causing
+   them to appear individually in The Edit and breaking website cluster grouping.
+
+2. **Fix false entity clustering for internet abbreviations** (`_STOPWORDS`) —
+   "TIL", "AMA", "LPT", "ELI5" and similar Reddit/internet abbreviations are
+   now in the stopwords list, preventing `_extract_primary_entity()` from
+   treating them as named entities and clustering unrelated posts together.
+
+3. **Richer cross-day dedup context** (`load_recently_covered_topics()`) —
+   function now returns "Title — Why summary" strings instead of titles only,
+   giving Claude substantially more context to recognise same-story variants
+   under different headlines (e.g. ongoing Hormuz/Iran coverage).
+
+4. **JS defensive fallback for missing cluster primary** (`index.html`) — if a
+   cluster group has no primary (all members have `cluster_primary: false`),
+   `renderPicksGrouped()` now promotes the first/highest-scored member to visual
+   primary rather than silently discarding the group.
+
 ## [2026-04-20] Save feature — bookmark articles with persistent storage and slide-in panel
 
 **`index.html`**
@@ -189,11 +215,6 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **Claude pre-scoring dedup unchanged:** The existing `deduplicate_articles_pre_scoring()` Claude clustering already handles near-identical titles and same-story articles from different source URLs — no changes needed there.
 - **The Feed is now a true discovery layer:** `write_all_articles_json()` accepts an `exclude_urls` set. In `main()`, the set of normalized pick URLs is built after `filter_already_picked_today()`, then passed to `write_all_articles_json()` so any article that made The Edit is excluded from `all_articles/*.json`. The Feed (`all_articles.json`) now only contains stories that did not make the cut — not a superset of The Edit.
 
-## [2026-04-11] Fix: The Feed — source label standardization, fixed column width, card view
-
-- **Source label standardization:** All source names in The Feed now render identically regardless of length or content — 10px / weight 600 / 0.09em tracking / uppercase. "Artificial Intelligence", "popculturechat", "The Atlantic" and "WIRED", "ESPN", "CNBC" are visually identical in format.
-- **Fixed source column width:** `.feed-source-cell` is now a strict 140px column (`width/min-width/max-width: 140px`) with `text-overflow: ellipsis` for truncation. Every article title in The Feed now starts at exactly the same horizontal position regardless of source name length. The Feed list-header was updated to match (`140px 1fr 32px`).
-- **Card view in The Feed:** The List/Card toggle now applies to The Feed as well as The Edit. Added `renderFeedCard()` — a source-first card layout with thumbnail, source badge, timestamp, headline, and summary — rendered consistently with The Edit's card view. `buildFeedView()` conditionally renders cards or rows based on `currentView`. `setView()` now rebuilds The Feed when the view changes. `filterFeed()` updated to cover `.feed-card` elements in addition to `.feed-row`.
 
 
 

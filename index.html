@@ -3086,8 +3086,11 @@
     }
 
     let html = '';
-    for (const { primary, members } of groups) {
-      if (!primary) continue;  // safety: discard orphaned non-primaries
+    for (let { primary, members } of groups) {
+      if (!primary) {
+        if (!members.length) continue;
+        primary = members.shift();  // promote highest-scored member to visual primary
+      }
 
       if (!members.length) {
         // No cluster members — render as normal row
