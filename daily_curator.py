@@ -43,6 +43,10 @@ CLAUDE_SCORING_BATCH_SIZE = 50  # max articles per Claude scoring call
 INOREADER_BASE_URL   = "https://www.inoreader.com/reader/api/0"
 
 
+class InoreaderTokenError(Exception):
+    """Raised when the Inoreader refresh token is invalid or expired."""
+
+
 def check_setup():
     missing = []
     if not ANTHROPIC_API_KEY:
@@ -65,25 +69,33 @@ def check_setup():
 
 
 def get_fresh_token() -> str:
+    """
+    Exchange the stored refresh token for a new Inoreader access token.
+    Raises InoreaderTokenError on any failure so callers can degrade gracefully
+    instead of hard-exiting the process.
+    """
     credentials = base64.b64encode(
         f"{INOREADER_APP_ID}:{INOREADER_APP_KEY}".encode()
     ).decode()
-    response = requests.post(
-        INOREADER_TOKEN_URL,
-        data={
-            "grant_type": "refresh_token",
-            "refresh_token": INOREADER_REFRESH_TOKEN,
-        },
-        headers={
-            "Authorization": f"Basic {credentials}",
-            "Content-Type": "application/x-www-form-urlencoded",
-        }
-    )
+    try:
+        response = requests.post(
+            INOREADER_TOKEN_URL,
+            data={
+                "grant_type": "refresh_token",
+                "refresh_token": INOREADER_REFRESH_TOKEN,
+            },
+            headers={
+                "Authorization": f"Basic {credentials}",
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            timeout=15,
+        )
+    except requests.exceptions.RequestException as e:
+        raise InoreaderTokenError(f"Network error during token refresh: {e}") from e
     if response.status_code != 200:
-        print("❌ Could not refresh Inoreader token.")
-        print(f"   HTTP {response.status_code}: {response.text}")
-        print("Your INOREADER_REFRESH_TOKEN may be expired.")
-        sys.exit(1)
+        raise InoreaderTokenError(
+            f"HTTP {response.status_code}: {response.text.strip()}"
+        )
     return response.json()["access_token"]
 
 
@@ -259,7 +271,13 @@ def fetch_articles_from_direct_rss() -> list[dict]:
 
 
 def fetch_articles_from_inoreader() -> list[dict]:
-    token = get_fresh_token()
+    try:
+        token = get_fresh_token()
+    except InoreaderTokenError as e:
+        print(f"\n⚠️  Inoreader token refresh failed — skipping Inoreader fetch.")
+        print(f"   {e}")
+        return []
+
     print(f"\n📡 Fetching articles from the last {HOURS_BACK} hours...")
     cutoff_timestamp = int(time.time() - (HOURS_BACK * 3600))
     headers = {
@@ -279,17 +297,17 @@ def fetch_articles_from_inoreader() -> list[dict]:
         response.raise_for_status()
     except requests.exceptions.HTTPError as e:
         if response.status_code == 401:
-            print("\n❌ Inoreader authentication failed.")
-            print("Your INOREADER_REFRESH_TOKEN may be expired.")
+            print("\n⚠️  Inoreader authentication failed (401) — skipping Inoreader fetch.")
+            print("   Your INOREADER_REFRESH_TOKEN may be expired.")
         else:
-            print(f"\n❌ Inoreader API error: {e}")
-        sys.exit(1)
+            print(f"\n⚠️  Inoreader API error: {e} — skipping Inoreader fetch.")
+        return []
     except requests.exceptions.ConnectionError:
-        print("\n❌ Could not connect to Inoreader. Check your internet connection.")
-        sys.exit(1)
+        print("\n⚠️  Could not connect to Inoreader — skipping Inoreader fetch.")
+        return []
     except requests.exceptions.Timeout:
-        print("\n❌ Inoreader took too long to respond. Try again in a moment.")
-        sys.exit(1)
+        print("\n⚠️  Inoreader timed out — skipping Inoreader fetch.")
+        return []
 
     data = response.json()
     items = data.get("items", [])
@@ -1553,7 +1571,7 @@ def write_all_articles_json(evaluated_articles: list[dict], exclude_urls: set[st
             "hook":            a.get("hook"),
             "image":           a.get("image"),
             "published":       a.get("published"),
-            "cluster_id":      a.get("cluster_id"),
+            "cluster_id":      f"{today_str}-{time_str}-{a['cluster_id']}" if a.get("cluster_id") else None,
             "cluster_size":    a.get("cluster_size", 1),
             "cluster_primary": a.get("cluster_primary", True),
             "cluster_sources": a.get("cluster_sources"),
@@ -1571,7 +1589,12 @@ def write_all_articles_json(evaluated_articles: list[dict], exclude_urls: set[st
     return filename
 
 
-def write_markdown_output(picks: list[dict], all_articles_count: int, twitter_trends: list[dict] = None) -> str:
+def write_markdown_output(
+    picks: list[dict],
+    all_articles_count: int,
+    twitter_trends: list[dict] = None,
+    inoreader_unavailable: bool = False,
+) -> str:
     today_str = datetime.now().strftime("%Y-%m-%d")
     time_str = datetime.now().strftime("%H%M")
     os.makedirs("picks", exist_ok=True)
@@ -1583,11 +1606,17 @@ def write_markdown_output(picks: list[dict], all_articles_count: int, twitter_tr
         if names:
             x_trends_line = f"\n> **X Trends:** {' · '.join(names)}"
 
+    ino_note = (
+        "\n> ⚠️ **Inoreader unavailable** — sources reflect Direct RSS only for this run."
+        if inoreader_unavailable else ""
+    )
+    source_label = "Direct RSS feeds" if inoreader_unavailable else "Inoreader feeds"
+
     content = f"""# Daily Content Picks — {today_str} at {datetime.now().strftime("%I:%M %p")}
 
-> **Source:** Inoreader feeds from the last {HOURS_BACK} hours
+> **Source:** {source_label} from the last {HOURS_BACK} hours
 > **Articles reviewed:** {all_articles_count}
-> **Picks surfaced:** {len(picks)} (minimum score: {MIN_SCORE}/10){x_trends_line}
+> **Picks surfaced:** {len(picks)} (minimum score: {MIN_SCORE}/10){x_trends_line}{ino_note}
 
 ---
 
@@ -1675,6 +1704,21 @@ def main():
 
     check_setup()
 
+    # ── Inoreader token health check ──────────────────────────────────────────
+    # Try to refresh the token before any fetching.  If it fails, the run
+    # continues on Direct RSS only — a partial run beats no run.
+    print("\n🔑 Checking Inoreader token...")
+    inoreader_available = True
+    try:
+        get_fresh_token()
+        print("   ✅ Inoreader token is valid.")
+    except InoreaderTokenError as e:
+        inoreader_available = False
+        print(f"\n⚠️  Inoreader token invalid — this run will use Direct RSS only.")
+        print(f"   Details: {e}")
+        print("   Run get_inoreader_token.py locally to obtain a fresh refresh token,")
+        print("   then update the INOREADER_REFRESH_TOKEN secret in GitHub.")
+
     # ── Load persistent seen-URL registry (rolling 7-day window) ─────────────
     print("\n📋 Loading seen-URL registry...")
     seen_urls = load_seen_urls()
@@ -1683,16 +1727,24 @@ def main():
 
     # Auto-generate sources.json from Inoreader subscriptions on first run
     if not os.path.exists(SOURCES_JSON_PATH):
-        print("\n📋 sources.json not found — generating from Inoreader subscriptions...")
-        generate_sources_json()
+        if inoreader_available:
+            print("\n📋 sources.json not found — generating from Inoreader subscriptions...")
+            generate_sources_json()
+        else:
+            print("\n⚠️  sources.json not found and Inoreader is unavailable — Direct RSS only.")
 
-    # Fetch Inoreader and Direct RSS in parallel, then combine
-    print("\n🔀 Fetching Inoreader and Direct RSS in parallel...")
-    with ThreadPoolExecutor(max_workers=2) as ex:
-        ino_future = ex.submit(fetch_articles_from_inoreader)
-        rss_future = ex.submit(fetch_articles_from_direct_rss)
-        inoreader_articles = ino_future.result()
-        direct_rss_articles = rss_future.result()
+    # Fetch Inoreader and Direct RSS in parallel (or Direct RSS only if token expired)
+    if inoreader_available:
+        print("\n🔀 Fetching Inoreader and Direct RSS in parallel...")
+        with ThreadPoolExecutor(max_workers=2) as ex:
+            ino_future = ex.submit(fetch_articles_from_inoreader)
+            rss_future = ex.submit(fetch_articles_from_direct_rss)
+            inoreader_articles = ino_future.result()
+            direct_rss_articles = rss_future.result()
+    else:
+        print("\n🔀 Fetching Direct RSS only (Inoreader unavailable)...")
+        inoreader_articles = []
+        direct_rss_articles = fetch_articles_from_direct_rss()
 
     print(f"   Inoreader: {len(inoreader_articles)} articles | Direct RSS: {len(direct_rss_articles)} articles")
     articles = inoreader_articles + direct_rss_articles
@@ -1767,7 +1819,10 @@ def main():
     write_all_articles_json(evaluated_articles, exclude_urls=pick_urls)
 
     print(f"\n📝 Writing output file...")
-    output_file = write_markdown_output(top_picks, len(all_items), twitter_trends)
+    output_file = write_markdown_output(
+        top_picks, len(all_items), twitter_trends,
+        inoreader_unavailable=not inoreader_available,
+    )
 
     print(f"\n{'=' * 55}")
     if top_picks:

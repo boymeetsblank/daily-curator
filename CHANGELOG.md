@@ -4,6 +4,13 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-21] Fix: namespace cluster_ids in all_articles/*.json to prevent cross-run collisions
+
+**`daily_curator.py`**
+- **`write_all_articles_json()`** — cluster_ids are now prefixed with the run's date-time stamp (e.g., `"c0"` → `"2026-04-21-0730-c0"`, `"trend_0"` → `"2026-04-21-0730-trend_0"`). This makes cluster_ids globally unique across runs.
+- **Root cause fixed**: cluster IDs (`c0`, `c1`, `trend_0`, …) were assigned per-run starting from index 0. When `deploy-pages.yml` aggregated all `all_articles/*.json` files into `all_articles.json`, the Feed's `buildFeedView()` incorrectly grouped unrelated articles from different runs that happened to share the same base cluster index — producing bogus "Read N perspectives" toggles and hiding articles as orphaned members of the wrong cluster.
+- **No ordering change**: `write_all_articles_json()` was already called after both `detect_cross_source_trends()` and `mark_cluster_primaries()` in `main()` — no reordering was needed.
+
 ## [2026-04-20] Save feature — bookmark articles with persistent storage and slide-in panel
 
 **`index.html`**
@@ -188,12 +195,6 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **Fixed source column width:** `.feed-source-cell` is now a strict 140px column (`width/min-width/max-width: 140px`) with `text-overflow: ellipsis` for truncation. Every article title in The Feed now starts at exactly the same horizontal position regardless of source name length. The Feed list-header was updated to match (`140px 1fr 32px`).
 - **Card view in The Feed:** The List/Card toggle now applies to The Feed as well as The Edit. Added `renderFeedCard()` — a source-first card layout with thumbnail, source badge, timestamp, headline, and summary — rendered consistently with The Edit's card view. `buildFeedView()` conditionally renders cards or rows based on `currentView`. `setView()` now rebuilds The Feed when the view changes. `filterFeed()` updated to cover `.feed-card` elements in addition to `.feed-row`.
 
-## [2026-04-11] Polish: The Feed view — source labels, title wrapping, sidebar, NL bar
-
-- **Source label casing:** Removed `text-transform: uppercase` from `.feed-source-cell`. Sources now render in their native casing — "Hypebeast", "r/nba", "WIRED", "The Atlantic" — so Reddit subreddits (`r/nba`, `r/artificial`) are no longer rendered as `R/NBA`. Font adjusted to 11px / weight 500 / tight tracking for legibility at mixed case.
-- **Multi-line title wrapping:** Added `align-self: start` to `.feed-source-cell`, `.feed-row .art-title-cell`, and `.feed-row .expand-btn`. When a title wraps to 2+ lines the source name and expand button now pin to the top of the row instead of floating awkwardly to the vertical midpoint.
-- **Sidebar header:** Removed the redundant `/ SOURCES` section label from the Feed sidebar. "All Sources" as the first item is self-explanatory; the label added noise without adding meaning.
-- **NL filter placeholders:** Replaced wordy "filter by source or category…" / "filter by source, score, or category…" with example-driven copy: `e.g. sneakers, tech, reddit` (Feed) and `e.g. sneakers, 9s & 10s, tech` (Edit). The `/` prefix already implies filtering; the placeholder shows what to type, not how to use it.
 
 
 
