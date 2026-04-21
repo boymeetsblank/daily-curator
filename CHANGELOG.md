@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-20] Fix: detect_cross_source_trends() now assigns cluster_id — closes frontend grouping gap
+
+**Backend (`daily_curator.py`)**
+- **`detect_cross_source_trends()` now assigns cluster fields** — when Claude identifies 2+ articles covering the same story, the function now assigns a shared `cluster_id` (e.g. `trend_0`, `trend_1`), `cluster_size`, and `cluster_sources` to all articles in the group. Previously it only set `trending_across_sources` and `trending_source_count`, meaning Claude-identified multi-source stories were never grouped in the frontend.
+- **Existing cluster IDs preserved** — articles that already have a `cluster_id` from `tag_story_clusters()` (algorithmic title/entity clustering) are not overwritten. Only articles without an existing cluster ID receive a `trend_*` assignment.
+- **Trending signal unchanged** — the 3+ source `trending_across_sources` / `trending_source_count` bonus still fires for all valid members of 3+ source groups, regardless of cluster ID status.
+- **`mark_cluster_primaries()` docstring updated** — clarified that it handles both `c*` (algorithmic) and `trend_*` (Claude-detected) cluster IDs.
+
 ## [2026-04-17] Three scoring pipeline optimizations
 
 1. **Prompt caching on scoring batches** — `_build_scoring_prompt()` now returns a `(static_preamble, dynamic_articles)` tuple. `_score_batch()` sends the user message as two content blocks, marking the static preamble (instructions, rules, recently-covered list, trending context) with `cache_control: {type: "ephemeral"}`. With 4 batches per run, this yields 3 cache hits per run, cutting ~61% of the static-portion token cost across batches 2–4.
@@ -188,12 +196,6 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **`index.html`** — The Feed now fetches `all_articles.json` directly (`loadFeedData()` with in-session cache) instead of reading from `cachedRuns`. `buildFeedView()` updated to consume the `runs[].articles[]` format. The Edit continues to use `picks_data.json` / `cachedRuns` unchanged. Graceful "feed populates after next run" message shown if `all_articles.json` is absent.
 
 
-## [2026-04-10] Nav redesign — The Edit / The Feed pill + settings panel consolidation
-
-- **Top nav simplified** to: Logo wordmark | The Edit / The Feed pill toggle | Gear icon. Today/Archive/Trends nav links removed.
-- **The Edit / The Feed pill** — thin 1px border, rounded pill style; "The Edit" is the default active state (scored/filtered view). "The Feed" shows a Coming Soon placeholder (full chronological feed, coming soon).
-- **Light/dark mode toggle** moved from topbar into the settings panel under a new "/ Appearance" section. Button label reflects current state (☽ Dark / ☀ Light).
-- **Notification bell** moved from topbar into the settings panel under a new "/ Notifications" section. Button reflects permission state (🔔 On / 🔕 Off / 🔔 Enable).
 
 
 

@@ -815,21 +815,48 @@ Articles to analyze:
     for article in articles:
         article["trending_across_sources"] = False
 
-    # Mark articles in clusters with 3+ sources
-    trending_count = 0
+    # Process each Claude-identified topic group
+    trending_count  = 0
+    new_cluster_idx = 0
     for cluster in result.get("topic_clusters", []):
         article_nums = cluster.get("article_numbers", [])
-        sources = cluster.get("sources", [])
-        num_sources = len(sources)
+        sources      = cluster.get("sources", [])
+        num_sources  = len(sources)
 
+        # Only process groups with 2+ valid article references
+        valid_nums = [n for n in article_nums if 1 <= n <= len(articles)]
+        if len(valid_nums) < 2:
+            continue
+
+        # Assign cluster_id to articles that don't already have one from
+        # tag_story_clusters().  Existing algorithmic cluster IDs take priority.
+        untagged = [n for n in valid_nums if not articles[n - 1].get("cluster_id")]
+        if len(untagged) >= 2:
+            cid = f"trend_{new_cluster_idx}"
+            new_cluster_idx += 1
+            actual_sources = list({
+                articles[n - 1].get("source", "")
+                for n in untagged
+                if articles[n - 1].get("source")
+            })
+            for article_num in untagged:
+                articles[article_num - 1].update({
+                    "cluster_id":      cid,
+                    "cluster_size":    len(untagged),
+                    "cluster_sources": actual_sources,
+                })
+
+        # Set trending signal for 3+ source clusters (all members, not just untagged)
         if num_sources >= 3:
-            for article_num in article_nums:
-                if 1 <= article_num <= len(articles):
-                    articles[article_num - 1]["trending_across_sources"] = True
-                    articles[article_num - 1]["trending_source_count"] = num_sources
-                    trending_count += 1
+            for article_num in valid_nums:
+                articles[article_num - 1]["trending_across_sources"]  = True
+                articles[article_num - 1]["trending_source_count"]    = num_sources
+                trending_count += 1
 
-    print(f"   ✅ Found {trending_count} articles trending across 3+ sources.")
+    print(
+        f"   ✅ Cross-source trends: {trending_count} articles across 3+ sources; "
+        f"{new_cluster_idx} new cluster(s) assigned."
+    )
     return articles
 
 
@@ -1215,6 +1242,11 @@ def mark_cluster_primaries(articles: list[dict]) -> list[dict]:
     """
     After scoring, mark the highest-scoring article in each cluster as
     cluster_primary=True.  Singletons are always their own primary.
+
+    Handles clusters from both tag_story_clusters() (IDs like "c0", "c1") and
+    detect_cross_source_trends() (IDs like "trend_0", "trend_1") — any non-None
+    cluster_id is treated the same way.
+
     Call this immediately after evaluate_articles_with_claude().
     """
     # Find best score per cluster

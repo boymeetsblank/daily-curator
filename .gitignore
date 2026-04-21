@@ -12,6 +12,7 @@
 
 # ── SECRET FILES ────────────────────────────────────────────────────────────
 .env                   # Your API keys — NEVER commit this!
+get_inoreader_token.py # One-off auth helper — not needed in version control
 
 # ── OUTPUT FILES ────────────────────────────────────────────────────────────
 picks-*.md             # The daily output files (optional — remove if you want to track them)
