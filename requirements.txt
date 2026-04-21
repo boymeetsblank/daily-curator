@@ -30,3 +30,15 @@ pywebpush>=2.0.0
 # feedparser — Parses RSS and Atom feeds (used by Direct RSS fetch alongside Inoreader)
 feedparser>=6.0.0
 
+# PyNaCl — libsodium bindings used by get_inoreader_token.py to encrypt secrets
+# before sending them to the GitHub Actions secrets API (required by GitHub)
+PyNaCl>=1.5.0
+
+# Pillow — image processing library used by image_sourcer.py
+# Handles open/crop/resize/draw for Instagram-format output images
+Pillow>=10.0.0
+
+# beautifulsoup4 — HTML parser used by image_sourcer.py
+# Scrapes og:image meta tags from article pages
+beautifulsoup4>=4.12.0
+

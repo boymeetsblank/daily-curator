@@ -4,6 +4,20 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-21] New: image_sourcer.py — Instagram-ready image sourcing for daily picks
+
+**`image_sourcer.py`** (new standalone module)
+- Reads the latest `picks/*.md` (or a path passed as argv), processes every cluster-primary story (one image per unique story, skipping perspective duplicates).
+- **4-step sourcing chain**: (1) `og:image` scraped from the article URL via BeautifulSoup — accepted if ≥ 600px on either side; (2) Unsplash API — 2–3 keywords extracted by Claude Haiku from the headline; (3) Pexels API — same keywords; (4) `#F5F5F5` placeholder canvas with Bebas Neue headline text centered.
+- **Formatting**: cover-crops to 1:1, resizes to 1080×1080 px, draws a 1 px `#111111` inset border 24 px from each edge, saves as JPEG quality 95.
+- Output to `images/YYYY-MM-DD/` named by headline slug (e.g. `nike-air-max-drops-this-week.jpg`). Skips files that already exist so re-runs are safe.
+- Bebas Neue font auto-downloaded and cached to `fonts/BebasNeue-Regular.ttf` on first placeholder run.
+- Usage: `python image_sourcer.py` (auto-selects latest picks file) or `python image_sourcer.py picks/picks-2026-04-21-1420.md`.
+
+**`requirements.txt`** — added `Pillow>=10.0.0` and `beautifulsoup4>=4.12.0`.
+
+**`.gitignore`** — added `images/` and `fonts/` (local output / font cache, not committed).
+
 ## [2026-04-21] Fix: namespace cluster_ids in all_articles/*.json to prevent cross-run collisions
 
 **`daily_curator.py`**
@@ -207,13 +221,6 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **Workflow updated** — `daily_curator.yml` `git add` step now includes `seen_urls.json` so the registry persists across all 3 daily runs and across days.
 - **`filter_already_picked_today()` retained** — the existing same-day picks guard remains as a last-mile check specifically on top picks, complementing the broader seen registry.
 
-## [2026-04-12] Fix: deduplication hardening + The Feed excludes Edit stories
-
-- **`normalize_url()` helper:** Strips tracking parameters (UTM, fbclid, gclid, ref, mc_cid, and 15+ others) and URL fragments before any URL comparison. Prevents the same article with different tracking params from appearing twice.
-- **`dedup_articles_by_url()`:** New fast URL-normalization dedup runs immediately after the source cap, before Claude clustering. Removes articles whose normalized URLs are identical — catches exact duplicates and tracking-param variants at zero cost.
-- **`filter_already_picked_today()` upgraded:** Cross-run dedup now normalizes both stored URLs (from today's picks files) and candidate URLs before comparing. A story with `?utm_source=newsletter` no longer slips past an already-picked `?utm_source=twitter` variant.
-- **Claude pre-scoring dedup unchanged:** The existing `deduplicate_articles_pre_scoring()` Claude clustering already handles near-identical titles and same-story articles from different source URLs — no changes needed there.
-- **The Feed is now a true discovery layer:** `write_all_articles_json()` accepts an `exclude_urls` set. In `main()`, the set of normalized pick URLs is built after `filter_already_picked_today()`, then passed to `write_all_articles_json()` so any article that made The Edit is excluded from `all_articles/*.json`. The Feed (`all_articles.json`) now only contains stories that did not make the cut — not a superset of The Edit.
 
 
 
