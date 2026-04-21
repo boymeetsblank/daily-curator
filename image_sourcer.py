@@ -2,17 +2,15 @@
 image_sourcer.py — Source and format Instagram-ready images for daily picks.
 
 Reads the latest picks/*.md, sources one image per story via priority chain:
-  1. og:image scraped from the article URL (min 600px on either dimension)
-  2. Unsplash API — keywords extracted by Claude Haiku
-  3. Pexels API  — same keywords
-  4. Placeholder — #F5F5F5 canvas with Bebas Neue headline text
+  1. Unsplash API — 2-3 creative visual keywords extracted by Claude Haiku
+  2. Pexels API   — same keywords
+  3. Placeholder  — #F5F5F5 canvas with Bebas Neue headline text
 
-Outputs 1080×1080 JPEG (quality 95) to images/YYYY-MM-DD/, named by slug.
+Outputs 1080×1350 (4:5 portrait) JPEG quality 95 to images/YYYY-MM-DD/.
 Usage:  python image_sourcer.py [picks/picks-YYYY-MM-DD-HHMM.md]
 """
 
 import glob
-import html
 import json
 import os
 import re
@@ -24,7 +22,6 @@ from pathlib import Path
 
 import anthropic
 import requests
-from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from PIL import Image, ImageDraw, ImageFont
 
@@ -34,8 +31,8 @@ ANTHROPIC_API_KEY   = os.environ.get("ANTHROPIC_API_KEY")
 UNSPLASH_ACCESS_KEY = os.environ.get("UNSPLASH_ACCESS_KEY")
 PEXELS_API_KEY      = os.environ.get("PEXELS_API_KEY")
 
-MIN_IMAGE_DIM  = 600        # px — minimum side for og:image to be acceptable
-OUTPUT_SIZE    = (1080, 1080)
+MIN_IMAGE_DIM  = 600        # px — minimum side for stock photo to be acceptable
+OUTPUT_SIZE    = (1080, 1350)   # 4:5 portrait for Instagram feed
 BORDER_COLOR   = "#111111"
 BORDER_INSET   = 24         # px from each edge
 JPEG_QUALITY   = 95
@@ -85,10 +82,6 @@ def parse_picks(path: str) -> list[dict]:
             continue
         link = lm.group(1).strip()
 
-        # Existing image URL (may contain HTML entities from the picks writer)
-        im = re.search(r"\*\*Image:\*\*\s*(\S+)", block)
-        existing_image = html.unescape(im.group(1)) if im else None
-
         # Cluster primary — articles with no cluster metadata are standalone primaries
         cp = re.search(r"\*\*Cluster Primary:\*\*\s*(true|false)", block)
         cluster_primary = (cp.group(1) == "true") if cp else True
@@ -97,10 +90,9 @@ def parse_picks(path: str) -> list[dict]:
             continue  # skip perspective articles; one image per story
 
         picks.append({
-            "title":          title,
-            "source":         source,
-            "link":           link,
-            "existing_image": existing_image,
+            "title":  title,
+            "source": source,
+            "link":   link,
         })
 
     return picks
@@ -133,37 +125,6 @@ def _meets_size(data: bytes) -> bool:
 
 # ── Image sourcing chain ──────────────────────────────────────────────────────
 
-def source_og_image(link: str, existing_url: str | None) -> bytes | None:
-    # 1a — try the image already extracted by the curator pipeline
-    if existing_url:
-        data = _fetch_image_bytes(existing_url)
-        if data and _meets_size(data):
-            return data
-
-    # 1b — scrape article page for og:image
-    r = _get(link)
-    if not r:
-        return None
-    try:
-        soup = BeautifulSoup(r.content, "html.parser")
-        tag = (
-            soup.find("meta", property="og:image")
-            or soup.find("meta", attrs={"name": "twitter:image"})
-        )
-        if tag:
-            og_url = tag.get("content", "").strip()
-            if og_url:
-                # Resolve relative URLs
-                if og_url.startswith("//"):
-                    og_url = "https:" + og_url
-                data = _fetch_image_bytes(og_url)
-                if data and _meets_size(data):
-                    return data
-    except Exception as e:
-        print(f"      ⚠️  OG scrape error: {e}")
-    return None
-
-
 def _extract_keywords(title: str) -> list[str]:
     if not ANTHROPIC_API_KEY:
         return [w for w in title.split() if len(w) > 4][:3] or ["news"]
@@ -175,7 +136,9 @@ def _extract_keywords(title: str) -> list[str]:
             messages=[{
                 "role": "user",
                 "content": (
-                    'Extract 2-3 concise visual search keywords for finding a relevant stock photo. '
+                    'You are choosing search terms for a stock photo that will illustrate a news story on Instagram. '
+                    'Extract 2-3 creative, visually descriptive keywords that would surface an evocative, '
+                    'editorial-quality image — think mood and scene, not literal names or brands. '
                     'Return ONLY a JSON array of strings, no markdown, no other text.\n\n'
                     f'Headline: "{title}"'
                 ),
@@ -194,7 +157,7 @@ def source_unsplash(keywords: list[str]) -> bytes | None:
         return None
     r = _get(
         "https://api.unsplash.com/search/photos",
-        params={"query": " ".join(keywords), "per_page": 5, "orientation": "squarish"},
+        params={"query": " ".join(keywords), "per_page": 5, "orientation": "portrait"},
         headers={**_HTTP_HEADERS, "Authorization": f"Client-ID {UNSPLASH_ACCESS_KEY}"},
     )
     if not r:
@@ -213,7 +176,7 @@ def source_pexels(keywords: list[str]) -> bytes | None:
         return None
     r = _get(
         "https://api.pexels.com/v1/search",
-        params={"query": " ".join(keywords), "per_page": 5, "orientation": "square"},
+        params={"query": " ".join(keywords), "per_page": 5, "orientation": "portrait"},
         headers={**_HTTP_HEADERS, "Authorization": PEXELS_API_KEY},
     )
     if not r:
@@ -306,11 +269,19 @@ def format_image(data: bytes | None, title: str) -> Image.Image:
     if data:
         try:
             raw = Image.open(BytesIO(data)).convert("RGB")
-            w, h  = raw.size
-            side  = min(w, h)
-            left  = (w - side) // 2
-            top   = (h - side) // 2
-            raw   = raw.crop((left, top, left + side, top + side))
+            w, h = raw.size
+            target_ratio = OUTPUT_SIZE[0] / OUTPUT_SIZE[1]  # 1080/1350 = 0.8
+            if w / h > target_ratio:
+                # Wider than 4:5 — trim sides
+                crop_w = int(h * target_ratio)
+                crop_h = h
+            else:
+                # Taller than 4:5 — trim top/bottom
+                crop_w = w
+                crop_h = int(w / target_ratio)
+            left  = (w - crop_w) // 2
+            top   = (h - crop_h) // 2
+            raw   = raw.crop((left, top, left + crop_w, top + crop_h))
             img   = raw.resize(OUTPUT_SIZE, Image.LANCZOS)
         except Exception as e:
             print(f"      ⚠️  Image open/crop failed: {e} — using placeholder")
@@ -368,26 +339,21 @@ def main() -> None:
             skipped += 1
             continue
 
-        # ── Priority 1: og:image ──────────────────────────────────────────
-        img_data = source_og_image(pick["link"], pick["existing_image"])
-        source_label = "og:image"
+        keywords = _extract_keywords(title)
+        print(f"          🔍 keywords: {' · '.join(keywords)}")
 
-        # ── Priority 2 & 3: stock photo APIs ─────────────────────────────
+        # ── Priority 1: Unsplash ──────────────────────────────────────────
+        time.sleep(REQUEST_DELAY)
+        img_data = source_unsplash(keywords)
+        source_label = "Unsplash"
+
+        # ── Priority 2: Pexels ───────────────────────────────────────────
         if img_data is None:
-            keywords = _extract_keywords(title)
-            kw_str   = " · ".join(keywords)
-            print(f"          🔍 keywords: {kw_str}")
-
             time.sleep(REQUEST_DELAY)
-            img_data = source_unsplash(keywords)
-            source_label = "Unsplash"
+            img_data = source_pexels(keywords)
+            source_label = "Pexels"
 
-            if img_data is None:
-                time.sleep(REQUEST_DELAY)
-                img_data = source_pexels(keywords)
-                source_label = "Pexels"
-
-        # ── Priority 4: placeholder ───────────────────────────────────────
+        # ── Priority 3: placeholder ───────────────────────────────────────
         if img_data is None:
             source_label = "placeholder"
             placeholder += 1

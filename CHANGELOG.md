@@ -4,6 +4,13 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-21] Update: image_sourcer.py — portrait 4:5 output, stock-photo-only sourcing
+
+**`image_sourcer.py`**
+- **Portrait format**: output resized from 1080×1080 to 1080×1350 (Instagram 4:5). Cover-crop logic updated to target the 4:5 ratio; Unsplash and Pexels queries now request `orientation=portrait`.
+- **Removed og:image extraction**: copyright risk eliminated. Sourcing chain is now: (1) Unsplash → (2) Pexels → (3) `#F5F5F5` placeholder.
+- **Richer keyword prompt**: Claude Haiku is now instructed to produce creative, visually descriptive keywords focused on mood and scene rather than literal names or brands, improving stock-photo relevance.
+
 ## [2026-04-21] New: image_sourcer.py — Instagram-ready image sourcing for daily picks
 
 **`image_sourcer.py`** (new standalone module)
@@ -212,14 +219,6 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **Product Decisions — Locked** table captures all resolved product questions: The Edit/Feed naming and roles, landing page headline, feedback loop trigger, story clustering threshold, Zeitgeist and multi-user unlock conditions.
 - Stale parked items trimmed.
 
-## [2026-04-12] Cross-run deduplication via persistent seen_urls.json
-
-- **`seen_urls.json`** — new persistent registry stored in the repo root. Tracks every article URL that has passed through the scoring pipeline, keyed by normalized URL with an ISO timestamp of when it was first seen.
-- **Rolling 7-day window** — `prune_seen_urls()` removes entries older than 7 days on every run. Prevents unbounded file growth; allows genuinely evergreen content to resurface after a week.
-- **Pre-scoring filter** — `filter_seen_urls()` runs after `dedup_articles_by_url()` and before both Claude calls (pre-scoring topic clustering and main scoring). Articles already in the registry are skipped entirely, saving API calls on already-seen stories.
-- **Registry update after scoring** — `update_seen_urls()` adds all scored article URLs (real articles only, no trend items) to the registry after each run. `save_seen_urls()` writes the updated file to disk.
-- **Workflow updated** — `daily_curator.yml` `git add` step now includes `seen_urls.json` so the registry persists across all 3 daily runs and across days.
-- **`filter_already_picked_today()` retained** — the existing same-day picks guard remains as a last-mile check specifically on top picks, complementing the broader seen registry.
 
 
 
