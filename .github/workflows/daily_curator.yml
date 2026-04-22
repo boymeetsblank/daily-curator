@@ -55,3 +55,20 @@ jobs:
           git commit -m "Prune expired push subscriptions $(date +'%Y-%m-%d %H:%M')"
           git pull --rebase origin main
           git push
+
+      - name: Run Digest Publisher (evening run only)
+        if: github.event.schedule == '30 0 * * *' || github.event_name == 'workflow_dispatch'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python3 digest_publisher.py || echo "⚠️  Digest publisher failed — skipping"
+
+      - name: Commit digest to repo (evening run only)
+        if: github.event.schedule == '30 0 * * *' || github.event_name == 'workflow_dispatch'
+        run: |
+          git add digests/
+          git diff --staged --quiet && exit 0
+          git commit -m "Daily digest $(date +'%Y-%m-%d')"
+          git pull --rebase origin main
+          git push

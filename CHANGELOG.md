@@ -4,6 +4,22 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-21] New: digest_publisher.py — Daily Digest with Auto-Sourced Images
+
+**`digest_publisher.py`** (new standalone module)
+- Runs automatically after the 7:30PM CT (00:30 UTC) pipeline via a new GitHub Actions step.
+- Selects the top 5 stories from the latest `picks/*.md` (cluster primaries, ranked by score).
+- **Editor's Pick** — highest-rarity story (score 10=Legendary/#3B82F6, 9=Epic/#8B5CF6, otherwise Top Pick/#F97316). Ties broken by Claude Sonnet on cultural weight.
+- **Claude Sonnet copy** — one API call generates: cover subline (≤5 words), per-story category tag, Instagram/TikTok/Threads/Substack copy, and a one-line slide caption.
+- **Image sourcing** per slide: pre-scraped og:image from picks file → BeautifulSoup re-scrape → Unsplash API → Pexels API → placeholder.
+- **6 slides** output to `digests/YYYY-MM-DD/`:
+  - `slide_00_cover.jpg`: white canvas, Bebas Neue date ("APR 21"), Claude-generated subline, 1px border.
+  - `slide_01–05.jpg`: top 1080×675 sourced image; bottom 1080×675 text area (category, Bebas headline, source, why-it-matters, 1px bottom rule). Editor's Pick slide adds 3px left accent in rarity color + rarity label top-right.
+- **`digest.md`**: full platform copy for all 5 stories in markdown.
+- Canvas: 1080×1350px, JPEG quality 95. Fonts: Bebas Neue + Inter (auto-downloaded to `fonts/`).
+
+**`.github/workflows/daily_curator.yml`** — added two steps (digest publish + digest commit) gated to the 7:30PM CT (00:30 UTC) run. Digest step uses `|| echo` to skip gracefully on failure without blocking the workflow.
+
 ## [2026-04-21] Update: image_sourcer.py — portrait 4:5 output, stock-photo-only sourcing
 
 **`image_sourcer.py`**
@@ -210,14 +226,6 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **`decodeHtml()` extracted:** Previously defined inline inside `spDetectRss`, now a module-level utility shared across all discovery functions. Handles `&amp;`, `&lt;`, `&gt;`, `&quot;`, `&#39;`, `&apos;`.
 - **Source health indicators (`spLoadSourceHealth`):** On settings panel open, fetches `all_articles.json` in the background and builds a per-source article count from the most recent run. Each source row in the list now shows a colored dot: green (active — articles appeared in last run) or grey (inactive — source is configured but produced no articles). Tooltip shows exact count. Dots update in place without re-rendering the list.
 
-## [2026-04-12] ROADMAP.md — full rewrite to reflect current state
-
-- Retired all stale "In Progress" and "Major Features" entries — everything listed had already shipped.
-- Documented **Shipped** section covering all pipeline, scoring, and frontend work to date.
-- **Up Next** section restructured around the core principle: feed quality first, better inputs beat better technology. Aggressive source expansion (8 Reddit subreddits + 3 independent newsletters) listed as the immediate priority before any new infrastructure.
-- **Phase 2** section captures the real-time trend pipeline plan with explicit note to decide model via testing, not assumption.
-- **Product Decisions — Locked** table captures all resolved product questions: The Edit/Feed naming and roles, landing page headline, feedback loop trigger, story clustering threshold, Zeitgeist and multi-user unlock conditions.
-- Stale parked items trimmed.
 
 
 
