@@ -3,109 +3,109 @@
 ---
 
 ## ★ Editor's Pick — TOP PICK
-**Hormuz is just a ‘dry run’ if China and U.S. go to war in the Pacific, Singapore foreign minister warns**  
-*Top News &amp; Analysis*
+**[Charania] San Antonio's Victor Wembanyama has been diagnosed with a concussion and will have further testing on Wednesday.**  
+*r/nba*
 
-> The most cautious voice in Asia just said the quiet part loud.
+> The NBA's most irreplaceable player is now in concussion protocol.
 
 ### Platform Copy
 
 **Instagram**
-Singapore doesn't panic. That's what makes this so unsettling. Their foreign minister just called the Hormuz standoff a 'dry run' for a U.S.-China Pacific war. A city-state with no enemies and everything to lose doesn't say that unless they believe it.
+Concussion. Second career playoff game. The NBA's most important player is in the protocol, and San Antonio holds its breath.
 
 **TikTok**
-Singapore is one of the most diplomatically careful countries on earth. So when their foreign minister says Hormuz is just a 'dry run' for U.S.-China war in the Pacific… you listen differently.
+Wemby's concussed in just his second playoff game ever. The league cannot afford this.
 
 **Threads**
-Singapore called Hormuz a 'dry run' for a U.S.-China Pacific conflict. They're a neutral city-state with deep ties to both sides. They don't say things like that for theater.
+Wembanyama concussion in his second career playoff game is genuinely one of the scariest injury stories in recent NBA history. Hope the testing Wednesday brings good news.
 
 **Substack**
-What makes Singapore's framing so arresting isn't the geopolitical analysis — plenty of think tanks have war-gamed a Pacific confrontation. It's who's saying it. Singapore has spent decades threading the needle between Washington and Beijing, building prosperity on the premise that both relationships could coexist. When a foreign minister from that position frames a live regional crisis as a rehearsal, it signals that the diplomatic middle ground they've occupied is quietly collapsing beneath them.
+There is no contingency plan for Victor Wembanyama. That's not hyperbole — it's the uncomfortable reality the NBA has quietly accepted since he arrived. A concussion diagnosis in just his second career playoff game doesn't just threaten San Antonio's postseason; it reopens every anxious conversation about how a league builds its future around one singular, irreplaceable body.
 
 ---
 
 ## Story 2
-**Wemby out after hard fall, in concussion protocol**  
-*ESPN*
+**In their 14-point loss to the 76ers without Joel Embiid, the Boston Celtics missed 33 3s.**  
+*NBA*
 
-> The NBA's most important young player is in concussion protocol. Postseason stops.
+> Boston missed 33 playoff threes without Embiid on the floor.
 
 ### Platform Copy
 
 **Instagram**
-Wembanyama is in concussion protocol. Second playoff game of his career. The NBA spent years waiting for this player — and right now the postseason is holding its breath.
+33 threes missed. No Embiid. A 14-point loss. The Celtics looked like a team that forgot how to play basketball.
 
 **TikTok**
-Wemby down. Concussion protocol. Second career playoff game. This is not the story anyone wanted to be writing right now.
+The Celtics just had one of the worst shooting nights in playoff history. Against a team without Embiid. That's a problem.
 
 **Threads**
-Wembanyama in concussion protocol after a hard fall in just his second playoff game. The timing is brutal. The stakes are brutal. Hope it's nothing serious.
+Missing 33 threes in a playoff game is bad. Doing it against a 76ers team without Joel Embiid is a different level of alarming for Boston.
 
 **Substack**
-Wembanyama's concussion scare lands differently than a typical injury update because of the weight the league has placed on his shoulders — culturally, commercially, competitively. He arrived as the answer to a generation's worth of questions about what basketball's ceiling looks like. Two playoff games in, the conversation has shifted from transcendence to fragility, which is a reminder that the most exciting player in the sport is still 22, still learning his body under the harshest possible conditions.
+Cold shooting nights happen. But 33 missed threes in a playoff loss to a depleted Philadelphia team — one missing its best player — points to something more structural. The Celtics have leaned on three-point volume as their identity for two seasons now, and when that volume produces nothing, there's no secondary gear to shift into. That's not a bad night. That's a blueprint problem.
 
 ---
 
 ## Story 3
-**Edgecombe, Maxey star as 76ers tie series vs. C's**  
-*ESPN*
+**Justin Bieber's SKYLRK Shatters Coachella Merchandise Records With $15 Million USD Sale**  
+*Hypebeast*
 
-> A hurt rookie just dropped 30-10 in Boston and tied the series.
+> SKYLRK's $15M Coachella haul is nearly 9x the all-time record.
 
 ### Platform Copy
 
 **Instagram**
-A rookie dropped 30 and 10 in Boston. Playing hurt. In the playoffs. VJ Edgecombe just introduced himself to the league in the loudest possible room.
+SKYLRK did $15 million in merch at Coachella. The previous all-time record wasn't close. Bieber's building something real.
 
 **TikTok**
-VJ Edgecombe. Rookie. 30 points. 10 rebounds. In Boston. In the playoffs. While hurt. File that one away.
+Justin Bieber's brand just broke every Coachella merch record by $13 million. Independent fashion is different now.
 
 **Threads**
-The 76ers just tied the series in Boston behind a rookie going 30-10. Edgecombe didn't look like he belonged — he looked like he owned the building. Wild.
+SKYLRK doing $15M at Coachella isn't just a merch story. It's proof that Bieber rebuilt his cultural equity quietly and turned it into a legitimate fashion business.
 
 **Substack**
-Philadelphia stealing Game 2 in Boston matters for the series, but Edgecombe's performance matters beyond it. Rookie coming-out moments in the playoffs are rare precisely because the environment is designed to swallow them whole — the crowd, the pressure, the defensive attention. Going 30-10 while injured in the Garden doesn't just change a series narrative. It begins a career one.
+Fifteen million dollars in festival merchandise is not a vanity metric — it's infrastructure. SKYLRK arriving at Coachella and lapping the field by nearly nine times the previous record signals that Bieber's pivot from pop star to brand founder has cleared the most important hurdle: people are buying without irony. The celebrity fashion label graveyard is full. This one seems to have found genuine demand.
 
 ---
 
 ## Story 4
-**'Things that come in a dozen': Twins troll Mets after team suffers 12th straight loss**  
-*ESPN*
+**Drake Announces ‘Iceman’ Album Release Date**  
+*Variety*
 
-> Twelve straight losses turned a sports collapse into a public roast.
+> Iceman drops May 15 after one of music's most theatrical rollouts.
 
 ### Platform Copy
 
 **Instagram**
-Twelve straight losses. The Twins sent a list of 'things that come in a dozen.' It's mean. It's accurate. It's the internet working exactly as intended.
+May 15. A melting ice sculpture in Toronto. Drake gave us a rollout and a release date in the same breath.
 
 **TikTok**
-The Mets have lost 12 in a row and the Twins posted 'things that come in a dozen.' Eggs. Donuts. Mets losses. Peak sports internet.
+Drake announced his album date inside a melting ice sculpture. The theatrics are fully back.
 
 **Threads**
-The Twins trolling the Mets over 12 straight losses with a 'things that come in a dozen' post is the kind of sports moment that lives forever. Also the Mets are cooked right now.
+Say what you want about Drake but announcing a release date via a melting ice sculpture in Toronto is genuinely great rollout behavior. May 15.
 
 **Substack**
-There's a specific cultural gravity to a 12-game losing streak — it crosses from bad stretch into historical embarrassment, and other franchises know it. The Twins' public troll isn't just social media opportunism; it's a signal that the Mets' collapse has become a shared cultural reference point across the league. At that stage, the losses stop being a baseball story and start being a meme with a box score attached.
+Drake has always understood that the announcement is part of the art. Embedding a release date in a melting ice sculpture — site-specific, time-sensitive, visually legible without explanation — is the kind of move that reminds you why he's still setting the tempo on music marketing even when his cultural standing is contested. May 15 for Iceman. The campaign started the moment the ice started dripping.
 
 ---
 
 ## Story 5
-**Dave Mason, Rock & Roll Hall of Famer Who Co-Founded Traffic and Sang ‘Feelin’ Alright’ and ‘We Just Disagree,’ Dies at 79**  
-*Variety*
+**[Highlight] Lebron James turns back time with the double pump reverse jam!**  
+*NBA*
 
-> Rock lost one of its most quietly essential architects. 79 years.
+> LeBron's double-pump reverse at 41 is still physically inexplicable.
 
 ### Platform Copy
 
 **Instagram**
-Dave Mason wrote 'Feelin' Alright.' Joe Cocker made it famous. Mason never seemed to mind — he just kept playing, kept moving, kept showing up on the right stages at the right time. 79 years. A life lived exactly in the pocket.
+41 years old. Double-pump reverse jam. LeBron is still doing things that shouldn't be possible.
 
 **TikTok**
-Dave Mason wrote 'Feelin' Alright,' co-founded Traffic, played with Hendrix, the Stones, and Harrison. He died at 79. One of rock's most quietly essential figures.
+LeBron just threw down a double-pump reverse and I don't want to hear another word about age.
 
 **Threads**
-Dave Mason died at 79. He wrote 'Feelin' Alright,' co-founded Traffic, and played alongside basically every legend of his era. Chronically underrated. The music tells you everything.
+The LeBron double-pump reverse is going to live on the timeline for days and honestly it should. That man is 41.
 
 **Substack**
-Dave Mason existed in the strange and valuable space between icon and footnote — close enough to the center of rock history to have shaped it, peripheral enough that his name rarely leads the sentence. He co-founded Traffic, wrote one of the era's most covered songs, and orbited the Stones, Hendrix, and Harrison with enough frequency to suggest he was simply where the music was. His death at 79 is a reminder that rock history has a long tail, and some of its most interesting characters spent their careers just off center stage.
+The clip spreads because it shouldn't exist. A double-pump reverse jam, deep into a playoff run, at 41 — it breaks the mental model most people carry about athletic decline. LeBron has been defying that model for so long that each moment carries its own specific weight now, less about what he did and more about the quiet insistence that time, for him, operates differently.
