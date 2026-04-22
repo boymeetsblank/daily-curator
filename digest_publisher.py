@@ -18,6 +18,7 @@ Usage: python digest_publisher.py [picks/picks-YYYY-MM-DD-HHMM.md]
 import glob
 import html
 import json
+import math
 import os
 import re
 import sys
@@ -422,18 +423,63 @@ def _hex_to_rgb(hex_color: str) -> tuple:
     return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
 
 
-def _crop_to_ratio(raw: Image.Image, target_w: int, target_h: int) -> Image.Image:
+def _entropy_offset(img: Image.Image, target: int, horizontal: bool) -> int:
+    """Return the pixel offset that places the highest-entropy region within target px."""
+    gray = img.convert("L")
+    w, h = gray.size
+    total = w if horizontal else h
+    excess = total - target
+    if excess <= 0:
+        return 0
+
+    # Divide the axis into 32px blocks and score each by entropy.
+    BLOCK = 32
+    n_blocks = max(1, total // BLOCK)
+    block_px = total / n_blocks
+
+    entropies: list[float] = []
+    for i in range(n_blocks):
+        p0 = int(i * block_px)
+        p1 = min(int((i + 1) * block_px), total)
+        tile = gray.crop((p0, 0, p1, h)) if horizontal else gray.crop((0, p0, w, p1))
+        entropies.append(tile.entropy())
+
+    # Sliding window: find the contiguous run of blocks that covers `target` px
+    # and has the highest total entropy.
+    window = max(1, round(target / block_px))
+    if window >= n_blocks:
+        return 0
+
+    win_sum = sum(entropies[:window])
+    best_sum, best_i = win_sum, 0
+    for i in range(1, n_blocks - window + 1):
+        win_sum += entropies[i + window - 1] - entropies[i - 1]
+        if win_sum > best_sum:
+            best_sum, best_i = win_sum, i
+
+    return min(int(best_i * block_px), excess)
+
+
+def _smart_crop(raw: Image.Image, target_w: int, target_h: int) -> Image.Image:
+    """Scale-to-cover then entropy-crop to target_w × target_h."""
     w, h = raw.size
-    ratio = target_w / target_h
-    if w / h > ratio:
-        crop_w = int(h * ratio)
-        left = (w - crop_w) // 2
-        raw = raw.crop((left, 0, left + crop_w, h))
-    else:
-        crop_h = int(w / ratio)
-        top = (h - crop_h) // 2
-        raw = raw.crop((0, top, w, top + crop_h))
-    return raw.resize((target_w, target_h), Image.LANCZOS)
+    scale = max(target_w / w, target_h / h)
+    if scale != 1.0:
+        new_w = max(target_w, math.ceil(w * scale))
+        new_h = max(target_h, math.ceil(h * scale))
+        raw = raw.resize((new_w, new_h), Image.LANCZOS)
+        w, h = raw.size
+
+    if w > target_w:
+        left = _entropy_offset(raw, target_w, horizontal=True)
+        raw = raw.crop((left, 0, left + target_w, h))
+        w = target_w
+
+    if h > target_h:
+        top = _entropy_offset(raw, target_h, horizontal=False)
+        raw = raw.crop((0, top, w, top + target_h))
+
+    return raw
 
 
 # ── Slide rendering ───────────────────────────────────────────────────────────
@@ -498,7 +544,7 @@ def render_story_slide(
     if img_data:
         try:
             raw = Image.open(BytesIO(img_data)).convert("RGB")
-            top_img = _crop_to_ratio(raw, OUTPUT_SIZE[0], HALF_H)
+            top_img = _smart_crop(raw, OUTPUT_SIZE[0], HALF_H)
             canvas.paste(top_img, (0, 0))
         except Exception as e:
             print(f"      ⚠️  Image paste failed: {e} — top half blank")

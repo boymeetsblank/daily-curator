@@ -4,6 +4,13 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-21] Update: digest_publisher.py — entropy-based smart image cropping
+
+**`digest_publisher.py`**
+- Replaced center-crop with entropy-based smart cropping (`_smart_crop` + `_entropy_offset`).
+- Images are first scaled to cover the 1080×675 target, then the excess dimension is cropped by finding the contiguous 32px-block window with the highest total entropy — keeping the most visually significant region in frame rather than blindly centering.
+- No change to output dimensions or JPEG quality.
+
 ## [2026-04-21] New: digest_publisher.py — Daily Digest with Auto-Sourced Images
 
 **`digest_publisher.py`** (new standalone module)
@@ -218,13 +225,6 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **Root cause:** The `spParseInput` Reddit regex only matched `r/sub` and `reddit.com/r/sub`. The patterns `reddit/todayilearned` and `reddit todayilearned` (space-separated) fell through to the bare-domain handler, which produced an invalid URL.
 - **Fix:** Replaced the Reddit alternation with `reddit[\s/]+` which covers `reddit/sub` and `reddit sub` (any whitespace or slash after "reddit"). The alternation order ensures `reddit.com/r/sub` is still caught by the `.com/r/` pattern before `reddit[\s/]+` gets a chance to partially match it. All six variants now resolve to `https://www.reddit.com/r/[sub]/.rss`.
 
-## [2026-04-12] Smart RSS discovery + source health indicators
-
-- **Smart input parsing (`spParseInput`):** Detects input type before any network call and constructs the correct RSS URL automatically. Handles: `r/subreddit` or `reddit.com/r/sub` → Reddit JSON feed; `slug.substack.com` → Substack `/feed`; `youtube.com/channel/ID` or `youtube.com/@handle` → YouTube XML feed; bare domain (e.g. `hypebeast.com`) → tries `/feed`, `/rss`, `/rss.xml`, `/feed.xml`, `/atom.xml` in order; direct RSS/Atom URL → validated immediately; generic URL → autodiscovery.
-- **Validation chain (`spTryFeed`):** Each candidate URL is fetched via the allorigins.win proxy and tested for RSS/Atom markers. If none of the pattern candidates succeed, the last attempt falls back to HTML `<link rel="alternate">` autodiscovery. The resolved feed URL replaces the input field value. Feed title is auto-populated into the Name field.
-- **Real-time type hint (`spHintInput`):** As the user types (debounced 180ms), a small badge appears below the URL input showing the detected input type (e.g. `REDDIT · r/sneakers` or `DOMAIN · Will try /feed, /rss…`). Updates to a green ✓ confirmation or red error after the Detect call resolves.
-- **`decodeHtml()` extracted:** Previously defined inline inside `spDetectRss`, now a module-level utility shared across all discovery functions. Handles `&amp;`, `&lt;`, `&gt;`, `&quot;`, `&#39;`, `&apos;`.
-- **Source health indicators (`spLoadSourceHealth`):** On settings panel open, fetches `all_articles.json` in the background and builds a per-source article count from the most recent run. Each source row in the list now shows a colored dot: green (active — articles appeared in last run) or grey (inactive — source is configured but produced no articles). Tooltip shows exact count. Dots update in place without re-rendering the list.
 
 
 
