@@ -4,6 +4,20 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-21] Update: digest_publisher.py — WSJ Magazine slide redesign + Google Fonts fix
+
+**Font downloading** — replaced broken GitHub raw URLs with a Google Fonts API approach. `_fetch_gfont()` hits `fonts.googleapis.com/css2` with a desktop User-Agent (which forces TTF response), parses the `url()` from the CSS, and downloads the file. Added Inter Medium (wght 500) alongside Inter Regular. Fonts cached locally after first download; failed downloads fall back to PIL default silently.
+
+**Cover slide redesign** — full-bleed Editor's Pick image (entropy-cropped to 1080×1350), 45% black overlay for legibility, Bebas Neue date at 180px centered with +200 tracking (36px/char), Inter Medium subline at 18px in white 80% opacity with 4px letter tracking, 1px white border at 60% opacity inset 20px. Dark background fallback when no image.
+
+**Story slide redesign (WSJ Magazine standard)** — image area is now 1080×620px (was half of 1350); text area 730px. 1px separator rule at image/text boundary. Text area layout: category tag (Inter Medium 11px, #888888, all caps, 6px tracking) → 8px gap → Bebas 72px headline leading 1.0, max 3 lines with ellipsis → 20px gap → 40px editorial divider rule #DDDDDD → 20px gap → why it matters (Inter Regular 15px, #444444, leading 1.6, max 2 lines) → source attribution pinned 40px from bottom ("VIA SOURCE", Inter Medium 12px, 4px tracking). 1px text-area border inset 20px. No centered text, no shadows, no gradients.
+
+**Editor's Pick** — 3px flush-left accent border in rarity color spanning full text area height. Rarity label top-right (Inter Medium 10px, 6px tracking). All other slides strictly B&W.
+
+**Letter spacing** — new `_draw_tracked()` renders each character individually with configurable per-character spacing. New `_truncate_lines()` clips overflow with ellipsis.
+
+**Cover sourcing** — images now sourced for all 5 stories before any slide renders; cover passes Editor's Pick image directly to `render_cover()`.
+
 ## [2026-04-21] Update: digest_publisher.py — entropy-based smart image cropping
 
 **`digest_publisher.py`**
@@ -220,10 +234,6 @@ Added `load_recently_covered_topics()` which reads picks files from the last 3 d
 - **Compact utility topbar**: Dark/Light mode, notifications, and List/Cards view toggles moved into the sources page header — gear now opens one destination.
 - **`applyTheme()`, `initNotifBtn()`, `enableNotifications()`** updated to keep the sources page utility buttons in sync with the sidebar equivalents.
 
-## [2026-04-12] Fix: Reddit RSS parsing — "reddit sub" and "reddit/sub" formats
-
-- **Root cause:** The `spParseInput` Reddit regex only matched `r/sub` and `reddit.com/r/sub`. The patterns `reddit/todayilearned` and `reddit todayilearned` (space-separated) fell through to the bare-domain handler, which produced an invalid URL.
-- **Fix:** Replaced the Reddit alternation with `reddit[\s/]+` which covers `reddit/sub` and `reddit sub` (any whitespace or slash after "reddit"). The alternation order ensures `reddit.com/r/sub` is still caught by the `.com/r/` pattern before `reddit[\s/]+` gets a chance to partially match it. All six variants now resolve to `https://www.reddit.com/r/[sub]/.rss`.
 
 
 
