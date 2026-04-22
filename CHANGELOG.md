@@ -4,6 +4,22 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-22] Update: digest_publisher.py — full-bleed editorial redesign + font fix + face-safe crop
+
+**Font loading** — Google Fonts now serves only woff2 for all UAs, which Pillow/FreeType cannot read. Replaced CSS-parsing approach with direct GitHub raw URL downloads (`_fetch_font_direct`). Bebas Neue from `dharmatype/Bebas-Neue` repo; Inter from `google/fonts` repo as variable font (`Inter[opsz,wght].ttf`). Added `_is_valid_font()` validation (checks magic bytes) that auto-deletes and re-downloads corrupted cached files on next run. `_load_inter_medium` now delegates to `_load_inter` (same variable font file). Fixed `&amp;` HTML entity in source attribution via `html.unescape()`.
+
+**Full-bleed editorial layout** — story slides redesigned from split image/white-box to full-bleed image (1080×1350) with a dual gradient overlay: top-bar fade (40%→transparent over 120px) for badge readability, bottom ease-in gradient (GRAD_START_Y=500 → 92% dark at bottom) for text legibility. All text is white at varying opacities over the gradient. Removed `IMAGE_H`, `TEXT_Y` constants; added `GRAD_START_Y`, `TEXT_BOTTOM_PAD`. New `_gradient_overlay()` helper draws the overlay as a pre-composited RGBA layer.
+
+**Story slide text zone** — rebuilt bottom-up: source (VIA ..., Inter 12px, white 55%, y=bottom−72) → why-it-matters (Inter 16px, white 80%, 1.55 lh, 3 lines max) → 60px divider (white 25%, 2px) → headline (Bebas 76px, white, 2 lines max). Category badge (white 70%) top-left; rarity badge in rarity color top-right. Left accent bar (4px, full height) for Editor's Pick.
+
+**Cover slide** — added "BLANK" wordmark (Inter 13px, white 55%) top-left. Overlay increased to 55%. Thin centered rule (80px, white 30%) between date and subline. Subline tracked at +6px (was +4px).
+
+**Face-safe cropping** — `_smart_crop()` gains `prefer_top: bool = False` parameter. When `True`, vertical crop anchors to the top of the image (offset=0) instead of entropy-seeking. All story and cover slides now pass `prefer_top=True`, ensuring portrait photos show faces/heads rather than entropically-selected mid-sections.
+
+**Hook headlines** — slides now use the `**Hook:**` field from the picks file as the headline instead of the raw article title. The `[TRIGGER: ...]` prefix is stripped; ` / ` delimiters become explicit line breaks. Falls back to word-wrapped article title when no hook is present. `parse_picks()` now extracts `hook_lines: list[str]`.
+
+**Why it matters body copy** — slide body text is now sourced directly from `pick["why"]` (the picks file "Why it matters" section) rather than the Claude-generated `why_slide`. Provides more substantive editorial context per slide.
+
 ## [2026-04-21] Update: digest_publisher.py — WSJ Magazine slide redesign + Google Fonts fix
 
 **Font downloading** — replaced broken GitHub raw URLs with a Google Fonts API approach. `_fetch_gfont()` hits `fonts.googleapis.com/css2` with a desktop User-Agent (which forces TTF response), parses the `url()` from the CSS, and downloads the file. Added Inter Medium (wght 500) alongside Inter Regular. Fonts cached locally after first download; failed downloads fall back to PIL default silently.
@@ -224,15 +240,6 @@ In `deploy-pages.yml`, the `all_articles.json` build step now cross-references a
 
 Added `load_recently_covered_topics()` which reads picks files from the last 3 days and injects the story titles into the Claude scoring prompt. Claude now scores a 1 for any article covering a story already featured recently — preventing same-story duplicates across runs and across days, even when the articles have different URLs and headlines. A nuanced exception allows genuinely significant new developments on an old story (e.g. an arrest, a verdict) to still surface.
 
-## [2026-04-12] Sources full-page overlay — dedicated source management experience
-
-- **Sources page** (`#sources-page`): full-screen overlay that slides up from the bottom, replacing the old sidebar-confined source management. Triggered by the gear icon via `openSettings()` → `openSources()`.
-- **Category grouping**: sources are organized into named sections — Sneakers, Watches, Streetwear, Culture, Wide Net, Other — matching the editorial aesthetic. Categories without sources are hidden.
-- **Per-source health stats**: each row shows a health dot (green = active last run, yellow = stale, grey = no data, red = failed manual check), last pull timestamp, and avg articles/run — computed from `all_articles.json` without any new backend.
-- **Manual ↻ Check button**: validates the source's RSS URL on demand via the existing `spTryFeed()` proxy chain. Dot turns green or red immediately.
-- **Search/filter bar**: live filter across name, URL, and category without re-fetching.
-- **Compact utility topbar**: Dark/Light mode, notifications, and List/Cards view toggles moved into the sources page header — gear now opens one destination.
-- **`applyTheme()`, `initNotifBtn()`, `enableNotifications()`** updated to keep the sources page utility buttons in sync with the sidebar equivalents.
 
 
 

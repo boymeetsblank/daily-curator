@@ -44,14 +44,14 @@ ANTHROPIC_API_KEY   = os.environ.get("ANTHROPIC_API_KEY")
 UNSPLASH_ACCESS_KEY = os.environ.get("UNSPLASH_ACCESS_KEY")
 PEXELS_API_KEY      = os.environ.get("PEXELS_API_KEY")
 
-OUTPUT_SIZE  = (1080, 1350)
-IMAGE_H      = 620          # story slide: top image area height
-TEXT_Y       = IMAGE_H      # story slide: where text area begins
-BORDER_INSET = 20           # outer border inset from canvas edges
-MARGIN       = 48           # left/right text margin
-JPEG_QUALITY = 95
-REQUEST_DELAY = 0.4
-MIN_IMAGE_DIM = 600
+OUTPUT_SIZE     = (1080, 1350)
+GRAD_START_Y    = 500           # story slide: bottom gradient begins here
+TEXT_BOTTOM_PAD = 72            # story slide: source pinned this far from bottom
+BORDER_INSET    = 20            # outer border inset from canvas edges
+MARGIN          = 48            # left/right text margin
+JPEG_QUALITY    = 95
+REQUEST_DELAY   = 0.4
+MIN_IMAGE_DIM   = 600
 
 RARITY_MAP = {
     10: ("LEGENDARY", "#3B82F6"),
@@ -59,20 +59,19 @@ RARITY_MAP = {
 }
 RARITY_DEFAULT = ("TOP PICK", "#F97316")
 
-# Google Fonts CSS endpoints — desktop UA returns TTF, not woff2
-_BEBAS_CSS_URL        = "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-_INTER_REG_CSS_URL    = "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
-_INTER_MED_CSS_URL    = "https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
-_FONT_DIR             = Path("fonts")
-_BEBAS_PATH           = _FONT_DIR / "BebasNeue-Regular.ttf"
-_INTER_PATH           = _FONT_DIR / "Inter-Regular.ttf"
-_INTER_MEDIUM_PATH    = _FONT_DIR / "Inter-Medium.ttf"
-
-_GFONTS_UA = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/120.0.0.0 Safari/537.36"
+# Direct GitHub raw URLs for TTF/variable-font files (Google Fonts now only serves woff2)
+_BEBAS_TTF_URL = (
+    "https://raw.githubusercontent.com/dharmatype/Bebas-Neue/master/"
+    "fonts/BebasNeue%282018%29ByDhamraType/ttf/BebasNeue-Regular.ttf"
 )
+_INTER_TTF_URL = (
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/"
+    "Inter%5Bopsz%2Cwght%5D.ttf"
+)
+_FONT_DIR          = Path("fonts")
+_BEBAS_PATH        = _FONT_DIR / "BebasNeue-Regular.ttf"
+_INTER_PATH        = _FONT_DIR / "Inter-Variable.ttf"
+_INTER_MEDIUM_PATH = _INTER_PATH   # same variable font file; weight distinction via size/tracking
 
 _HTTP_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; DigestPublisher/1.0)"}
 
@@ -126,13 +125,20 @@ def parse_picks(path: str) -> list[dict]:
         wm = re.search(r"\*\*Why it matters:\*\*\n(.+?)(?=\n\n|\*\*Hook|\Z)", block, re.DOTALL)
         why = wm.group(1).strip() if wm else ""
 
+        hm = re.search(r"\*\*Hook:\*\*\n(.+?)(?=\n\n|\Z)", block, re.DOTALL)
+        hook_raw = hm.group(1).strip() if hm else ""
+        # Strip the [TRIGGER: ...] prefix and split on " / " to get pre-formatted lines
+        hook_clean = re.sub(r'^\[TRIGGER:\s*[^\]]+\]\s*', '', hook_raw)
+        hook_lines = [l.strip() for l in hook_clean.split(" / ") if l.strip()] if hook_clean else []
+
         picks.append({
-            "title":     title,
-            "source":    source,
-            "link":      link,
-            "score":     score,
-            "image_url": image_url,
-            "why":       why,
+            "title":      title,
+            "source":     source,
+            "link":       link,
+            "score":      score,
+            "image_url":  image_url,
+            "why":        why,
+            "hook_lines": hook_lines,  # pre-split lines from the Hook field
         })
 
     return picks
@@ -169,19 +175,25 @@ def _meets_size(data: bytes) -> bool:
 
 # ── Font loading ──────────────────────────────────────────────────────────────
 
-def _fetch_gfont(css_url: str, dest: Path, label: str) -> bool:
-    """Download a font file by parsing its URL from a Google Fonts CSS response."""
+def _is_valid_font(path: Path) -> bool:
+    """Return True if the file is a readable TTF/OTF, False if woff/woff2."""
+    try:
+        header = path.read_bytes()[:4]
+        return header not in (b'wOF2', b'wOFF')
+    except Exception:
+        return False
+
+
+def _fetch_font_direct(url: str, dest: Path, label: str) -> bool:
+    """Download a TTF/variable font file directly from a known URL."""
     print(f"   📥 Downloading {label}…", end=" ", flush=True)
     try:
-        css_r = requests.get(css_url, headers={"User-Agent": _GFONTS_UA}, timeout=15)
-        css_r.raise_for_status()
-        m = re.search(r"url\(([^)]+)\)", css_r.text)
-        if not m:
-            raise ValueError("no url() in CSS response")
-        font_url = m.group(1).strip("'\"")
-        font_r = requests.get(font_url, timeout=20)
-        font_r.raise_for_status()
-        dest.write_bytes(font_r.content)
+        r = requests.get(url, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
+        r.raise_for_status()
+        dest.write_bytes(r.content)
+        if not _is_valid_font(dest):
+            dest.unlink()
+            raise ValueError("downloaded file is not a valid TTF/OTF font")
         print("done.")
         return True
     except Exception as e:
@@ -190,9 +202,11 @@ def _fetch_gfont(css_url: str, dest: Path, label: str) -> bool:
 
 
 def _load_bebas(size: int = 68) -> ImageFont.FreeTypeFont | None:
-    if not _BEBAS_PATH.exists():
+    if not _BEBAS_PATH.exists() or not _is_valid_font(_BEBAS_PATH):
         _FONT_DIR.mkdir(parents=True, exist_ok=True)
-        _fetch_gfont(_BEBAS_CSS_URL, _BEBAS_PATH, "Bebas Neue")
+        if _BEBAS_PATH.exists():
+            _BEBAS_PATH.unlink()
+        _fetch_font_direct(_BEBAS_TTF_URL, _BEBAS_PATH, "Bebas Neue")
     if not _BEBAS_PATH.exists():
         return None
     try:
@@ -203,29 +217,22 @@ def _load_bebas(size: int = 68) -> ImageFont.FreeTypeFont | None:
 
 
 def _load_inter(size: int = 16) -> ImageFont.FreeTypeFont | None:
-    if not _INTER_PATH.exists():
+    if not _INTER_PATH.exists() or not _is_valid_font(_INTER_PATH):
         _FONT_DIR.mkdir(parents=True, exist_ok=True)
-        _fetch_gfont(_INTER_REG_CSS_URL, _INTER_PATH, "Inter Regular")
+        if _INTER_PATH.exists():
+            _INTER_PATH.unlink()
+        _fetch_font_direct(_INTER_TTF_URL, _INTER_PATH, "Inter")
     if not _INTER_PATH.exists():
         return None
     try:
         return ImageFont.truetype(str(_INTER_PATH), size=size)
     except Exception as e:
-        print(f"      ⚠️  Inter Regular load failed: {e}")
+        print(f"      ⚠️  Inter load failed: {e}")
         return None
 
 
 def _load_inter_medium(size: int = 16) -> ImageFont.FreeTypeFont | None:
-    if not _INTER_MEDIUM_PATH.exists():
-        _FONT_DIR.mkdir(parents=True, exist_ok=True)
-        _fetch_gfont(_INTER_MED_CSS_URL, _INTER_MEDIUM_PATH, "Inter Medium")
-    if not _INTER_MEDIUM_PATH.exists():
-        return None
-    try:
-        return ImageFont.truetype(str(_INTER_MEDIUM_PATH), size=size)
-    except Exception as e:
-        print(f"      ⚠️  Inter Medium load failed: {e}")
-        return None
+    return _load_inter(size)
 
 
 def _default_font(size: int = 16) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
@@ -536,8 +543,12 @@ def _entropy_offset(img: Image.Image, target: int, horizontal: bool) -> int:
     return min(int(best_i * block_px), excess)
 
 
-def _smart_crop(raw: Image.Image, target_w: int, target_h: int) -> Image.Image:
-    """Scale-to-cover then entropy-crop to target_w × target_h."""
+def _smart_crop(raw: Image.Image, target_w: int, target_h: int, prefer_top: bool = False) -> Image.Image:
+    """Scale-to-cover then entropy-crop to target_w × target_h.
+
+    prefer_top=True anchors vertical crop to the top of the image, preserving
+    faces and heads. Horizontal entropy cropping is always applied.
+    """
     w, h = raw.size
     scale = max(target_w / w, target_h / h)
     if scale != 1.0:
@@ -552,7 +563,7 @@ def _smart_crop(raw: Image.Image, target_w: int, target_h: int) -> Image.Image:
         w = target_w
 
     if h > target_h:
-        top = _entropy_offset(raw, target_h, horizontal=False)
+        top = 0 if prefer_top else _entropy_offset(raw, target_h, horizontal=False)
         raw = raw.crop((0, top, w, top + target_h))
 
     return raw
@@ -567,6 +578,32 @@ def _alpha_rect(canvas: Image.Image, box: tuple, outline: tuple, width: int = 1)
     return Image.alpha_composite(canvas.convert("RGBA"), layer).convert("RGB")
 
 
+def _gradient_overlay(size: tuple, start_y: int, max_alpha: float, top_bar: bool = False) -> Image.Image:
+    """Create a vertical RGBA gradient overlay for compositing.
+
+    Bottom gradient: transparent at start_y, easing to max_alpha at the bottom.
+    top_bar: also adds a 40%-to-transparent fade over the top 120px for badge readability.
+    """
+    w, h = size
+    grad = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(grad)
+
+    if top_bar:
+        bar_h = 120
+        for y in range(bar_h):
+            alpha = int((1 - y / bar_h) * 0.40 * 255)
+            draw.line([(0, y), (w - 1, y)], fill=(0, 0, 0, alpha))
+
+    span = h - start_y
+    for y in range(start_y, h):
+        t = (y - start_y) / span
+        t_eased = t ** 0.65  # ease-in: slow start, accelerating toward bottom
+        alpha = int(t_eased * max_alpha * 255)
+        draw.line([(0, y), (w - 1, y)], fill=(0, 0, 0, alpha))
+
+    return grad
+
+
 def render_cover(
     date_str: str,
     subline: str,
@@ -575,54 +612,68 @@ def render_cover(
 ) -> None:
     import datetime
 
-    # Base: dark canvas or full-bleed Editor's Pick image
     canvas = Image.new("RGB", OUTPUT_SIZE, "#111111")
     if cover_img_data:
         try:
             raw = Image.open(BytesIO(cover_img_data)).convert("RGB")
-            canvas.paste(_smart_crop(raw, OUTPUT_SIZE[0], OUTPUT_SIZE[1]), (0, 0))
+            canvas.paste(_smart_crop(raw, OUTPUT_SIZE[0], OUTPUT_SIZE[1], prefer_top=True), (0, 0))
         except Exception as e:
             print(f"      ⚠️  Cover image failed: {e} — using dark background")
 
-    # Dark overlay 45% opacity
-    overlay = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, int(255 * 0.45)))
+    # 55% dark overlay for drama
+    overlay = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, int(255 * 0.55)))
     canvas = Image.alpha_composite(canvas.convert("RGBA"), overlay).convert("RGB")
 
-    draw = ImageDraw.Draw(canvas)
-
-    bebas = _load_bebas(180) or _default_font(180)
-    inter = _load_inter_medium(18) or _default_font(18)
+    bebas    = _load_bebas(200)       or _default_font(200)
+    inter    = _load_inter_medium(14) or _default_font(14)
+    inter_sm = _load_inter_medium(13) or _default_font(13)
 
     try:
         d = datetime.date.fromisoformat(date_str)
-        date_label = d.strftime("%b %d").upper()   # "APR 21"
+        date_label = d.strftime("%b %d").upper()
     except Exception:
         date_label = date_str.upper()
 
-    # Measure full date block height to vertically center both lines
-    dh = _text_h(bebas)
-    sh = _text_h(inter)
-    block_h = dh + 24 + sh
-    dy = (OUTPUT_SIZE[1] - block_h) // 2
+    # "BLANK" wordmark — top left, Inter Medium 13px, white 55%, +8px tracking
+    wm_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+    _draw_tracked(ImageDraw.Draw(wm_layer), "BLANK", inter_sm,
+                  fill=(255, 255, 255, int(255 * 0.55)),
+                  tracking_px=8, x=MARGIN, y=52)
+    canvas = Image.alpha_composite(canvas.convert("RGBA"), wm_layer).convert("RGB")
 
-    # Date — Bebas 180px, white, +200 tracking (36px at 180px = 0.2em)
-    _draw_tracked(draw, date_label, bebas, fill=(255, 255, 255, 255),
+    # Vertically center the date + rule + subline block, shifted slightly above center
+    dh      = _text_h(bebas)
+    sh      = _text_h(inter)
+    block_h = dh + 28 + 2 + 24 + sh
+    dy      = (OUTPUT_SIZE[1] - block_h) // 2 - 30
+
+    # Date — Bebas 200px, white, +36px tracking, centered
+    draw = ImageDraw.Draw(canvas)
+    _draw_tracked(draw, date_label, bebas, fill=(255, 255, 255),
                   tracking_px=36, y=dy, center_in_w=OUTPUT_SIZE[0])
 
-    # Subline — Inter Medium 18px, white 80% opacity, all caps, 4px tracking
-    sy = dy + dh + 24
-    text_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
-    _draw_tracked(ImageDraw.Draw(text_layer), subline.upper(), inter,
-                  fill=(255, 255, 255, int(255 * 0.8)),
-                  tracking_px=4, y=sy, center_in_w=OUTPUT_SIZE[0])
-    canvas = Image.alpha_composite(canvas.convert("RGBA"), text_layer).convert("RGB")
+    # Thin rule — 80px centered, 2px, white 30%
+    rule_y = dy + dh + 28
+    rule_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+    rule_x = (OUTPUT_SIZE[0] - 80) // 2
+    ImageDraw.Draw(rule_layer).line([(rule_x, rule_y), (rule_x + 80, rule_y)],
+                                     fill=(255, 255, 255, int(255 * 0.30)), width=2)
+    canvas = Image.alpha_composite(canvas.convert("RGBA"), rule_layer).convert("RGB")
+
+    # Subline — Inter Medium 14px, white 60%, all caps, +6px tracking, centered
+    sub_y = rule_y + 2 + 24
+    sub_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+    _draw_tracked(ImageDraw.Draw(sub_layer), subline.upper(), inter,
+                  fill=(255, 255, 255, int(255 * 0.60)),
+                  tracking_px=6, y=sub_y, center_in_w=OUTPUT_SIZE[0])
+    canvas = Image.alpha_composite(canvas.convert("RGBA"), sub_layer).convert("RGB")
 
     # 1px white border 60% opacity, inset 20px
     bi = BORDER_INSET
     canvas = _alpha_rect(
         canvas,
         (bi, bi, OUTPUT_SIZE[0] - bi - 1, OUTPUT_SIZE[1] - bi - 1),
-        outline=(255, 255, 255, int(255 * 0.6)),
+        outline=(255, 255, 255, int(255 * 0.60)),
     )
 
     canvas.save(str(out_path), "JPEG", quality=JPEG_QUALITY, optimize=True)
@@ -635,90 +686,110 @@ def render_story_slide(
     is_editors_pick: bool,
     out_path: Path,
 ) -> None:
-    canvas = Image.new("RGB", OUTPUT_SIZE, "#FFFFFF")
+    W, H = OUTPUT_SIZE
 
-    # ── Image area: top 620px, full bleed ────────────────────────────────────
+    # ── Full-bleed image (or dark canvas fallback) ────────────────────────────
+    canvas = Image.new("RGB", OUTPUT_SIZE, "#111111")
     if img_data:
         try:
             raw = Image.open(BytesIO(img_data)).convert("RGB")
-            canvas.paste(_smart_crop(raw, OUTPUT_SIZE[0], IMAGE_H), (0, 0))
+            canvas.paste(_smart_crop(raw, W, H, prefer_top=True), (0, 0))
         except Exception as e:
-            print(f"      ⚠️  Image paste failed: {e} — image area blank")
+            print(f"      ⚠️  Image paste failed: {e} — using dark background")
 
-    draw = ImageDraw.Draw(canvas)
+    # ── Gradient overlays ─────────────────────────────────────────────────────
+    grad = _gradient_overlay(OUTPUT_SIZE, GRAD_START_Y, 0.92, top_bar=True)
+    canvas = Image.alpha_composite(canvas.convert("RGBA"), grad).convert("RGB")
 
-    # 1px separator rule between image and text area
-    draw.line([(0, TEXT_Y), (OUTPUT_SIZE[0], TEXT_Y)], fill="#111111", width=1)
-
-    # ── Text area layout ──────────────────────────────────────────────────────
-    content_w = OUTPUT_SIZE[0] - MARGIN * 2   # 984px
-
-    bebas72  = _load_bebas(72)         or _default_font(72)
-    inter11  = _load_inter_medium(11)  or _default_font(11)
-    inter12  = _load_inter_medium(12)  or _default_font(12)
-    inter15  = _load_inter(15)         or _default_font(15)
+    # ── Fonts ─────────────────────────────────────────────────────────────────
+    bebas76 = _load_bebas(76)         or _default_font(76)
+    inter11 = _load_inter_medium(11)  or _default_font(11)
+    inter12 = _load_inter_medium(12)  or _default_font(12)
+    inter16 = _load_inter(16)         or _default_font(16)
 
     category  = copy.get("category", "").upper()
-    why_slide = copy.get("why_slide", pick["why"][:120])
-    source    = "VIA " + pick["source"].split("|")[0].strip().upper()
+    # Headline: use hook lines from picks file (already stripped of [TRIGGER:] prefix);
+    # fall back to article title if no hook was parsed.
+    hook_lines = pick.get("hook_lines") or []
+    source    = "VIA " + html.unescape(pick["source"].split("|")[0].strip()).upper()
+    content_w = W - MARGIN * 2
 
-    y = TEXT_Y + MARGIN   # 668 — top of content
+    # ── TOP BADGES (sit on the top-bar gradient) ──────────────────────────────
+    badge_y = 52
 
-    # Line 1: Category tag — Inter Medium 11px, #888888, all caps, 6px tracking
-    cat_h = _text_h(inter11)
-    _draw_tracked(draw, category, inter11, fill="#888888",
-                  tracking_px=6, x=MARGIN, y=y)
+    cat_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+    _draw_tracked(ImageDraw.Draw(cat_layer), category, inter11,
+                  fill=(255, 255, 255, int(255 * 0.70)),
+                  tracking_px=6, x=MARGIN, y=badge_y)
+    canvas = Image.alpha_composite(canvas.convert("RGBA"), cat_layer).convert("RGB")
 
-    # Editor's Pick rarity label — top right, same baseline as category
     if is_editors_pick:
         label, color_hex = RARITY_MAP.get(pick["score"], RARITY_DEFAULT)
+        color_rgb = _hex_to_rgb(color_hex)
         label_chars = list(label)
         label_w = sum(_char_w(inter12, c) for c in label_chars) + 6 * max(0, len(label_chars) - 1)
-        _draw_tracked(draw, label, inter12, fill=color_hex,
-                      tracking_px=6, x=OUTPUT_SIZE[0] - MARGIN - label_w, y=y)
+        draw = ImageDraw.Draw(canvas)
+        _draw_tracked(draw, label, inter12, fill=color_rgb,
+                      tracking_px=6, x=W - MARGIN - label_w, y=badge_y)
 
-    y += cat_h + 8
+    # ── BOTTOM TEXT ZONE (built bottom-up) ───────────────────────────────────
+    draw_meas = ImageDraw.Draw(canvas)
 
-    # Line 2: Headline — Bebas 72px, #111111, leading 1.0, left, max 3 lines
-    raw_lines = _wrap_text(draw, pick["title"], bebas72, content_w)
-    head_lines = _truncate_lines(raw_lines, 3, draw, bebas72, content_w)
-    head_line_h = _text_h(bebas72)   # leading 1.0 — no extra
-    for line in head_lines:
-        draw.text((MARGIN, y), line, fill="#111111", font=bebas72)
-        y += head_line_h
-    y += 20
+    source_h  = _text_h(inter12)
+    source_y  = H - TEXT_BOTTOM_PAD - source_h
 
-    # Line 3: 40px editorial divider rule, 1px, #DDDDDD
-    draw.line([(MARGIN, y), (MARGIN + 40, y)], fill="#DDDDDD", width=1)
-    y += 20
+    # Body: full "Why it matters" from the picks file
+    why_raw   = _wrap_text(draw_meas, pick["why"], inter16, content_w)
+    why_lines = _truncate_lines(why_raw, 3, draw_meas, inter16, content_w)
+    why_lh    = math.ceil(_text_h(inter16) * 1.55)
+    why_total = len(why_lines) * why_lh
+    why_y     = source_y - 20 - why_total
 
-    # Line 4: Why it matters — Inter Regular 15px, #444444, leading 1.6, max 2 lines
-    why_raw = _wrap_text(draw, why_slide, inter15, content_w)
-    why_lines_list = _truncate_lines(why_raw, 2, draw, inter15, content_w)
-    why_line_h = math.ceil(_text_h(inter15) * 1.6)
-    for line in why_lines_list:
-        draw.text((MARGIN, y), line, fill="#444444", font=inter15)
-        y += why_line_h
+    div_y = why_y - 24
 
-    # Line 5: Source — pinned 40px from bottom, Inter Medium 12px, #888888, all caps, 4px tracking
-    source_y = OUTPUT_SIZE[1] - 40 - _text_h(inter12)
-    _draw_tracked(draw, source, inter12, fill="#888888",
+    # Headline: hook lines (pre-formatted) or title word-wrap fallback
+    if hook_lines:
+        head_lines = hook_lines[:3]  # max 3 hook lines
+    else:
+        raw_lines  = _wrap_text(draw_meas, pick["title"], bebas76, content_w)
+        head_lines = _truncate_lines(raw_lines, 2, draw_meas, bebas76, content_w)
+    head_lh    = math.ceil(_text_h(bebas76) * 1.12)
+    head_total = len(head_lines) * head_lh
+    head_y     = div_y - 20 - head_total
+
+    # Source — Inter Medium 12px, white 55%, +4px tracking
+    src_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+    _draw_tracked(ImageDraw.Draw(src_layer), source, inter12,
+                  fill=(255, 255, 255, int(255 * 0.55)),
                   tracking_px=4, x=MARGIN, y=source_y)
+    canvas = Image.alpha_composite(canvas.convert("RGBA"), src_layer).convert("RGB")
 
-    # Text area border — 1px, inset 20px from canvas edges, text area only
-    bi = BORDER_INSET
-    canvas = _alpha_rect(
-        canvas,
-        (bi, TEXT_Y + bi, OUTPUT_SIZE[0] - bi - 1, OUTPUT_SIZE[1] - bi - 1),
-        outline=(17, 17, 17, 255),   # #111111 full opacity
-    )
-    draw = ImageDraw.Draw(canvas)   # refresh after RGBA composite
+    # Why it matters — Inter Regular 16px, white 80%, 1.55 lh, 3 lines max
+    why_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+    wy_draw   = ImageDraw.Draw(why_layer)
+    wy = why_y
+    for line in why_lines:
+        wy_draw.text((MARGIN, wy), line, fill=(255, 255, 255, int(255 * 0.80)), font=inter16)
+        wy += why_lh
+    canvas = Image.alpha_composite(canvas.convert("RGBA"), why_layer).convert("RGB")
 
-    # Editor's Pick: 3px left accent border, flush left, full text area height
+    # Divider — 60px wide, 2px, white 25%
+    div_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+    ImageDraw.Draw(div_layer).line([(MARGIN, div_y), (MARGIN + 60, div_y)],
+                                    fill=(255, 255, 255, int(255 * 0.25)), width=2)
+    canvas = Image.alpha_composite(canvas.convert("RGBA"), div_layer).convert("RGB")
+
+    # Headline — Bebas 76px, white, 2 lines max
+    draw = ImageDraw.Draw(canvas)
+    hy = head_y
+    for line in head_lines:
+        draw.text((MARGIN, hy), line, fill=(255, 255, 255), font=bebas76)
+        hy += head_lh
+
+    # Left accent bar — 4px, full height, rarity color (Editor's Pick only)
     if is_editors_pick:
         _, color_hex = RARITY_MAP.get(pick["score"], RARITY_DEFAULT)
-        color_rgb = _hex_to_rgb(color_hex)
-        draw.line([(0, TEXT_Y), (0, OUTPUT_SIZE[1])], fill=color_rgb, width=3)
+        draw.line([(0, 0), (0, H)], fill=_hex_to_rgb(color_hex), width=4)
 
     canvas.save(str(out_path), "JPEG", quality=JPEG_QUALITY, optimize=True)
 
