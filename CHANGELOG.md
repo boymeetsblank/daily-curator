@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-24] Update: digest_publisher.py — full-day picks, bigger fonts, richer text-only slide
+
+Three improvements: (1) digest now collects all picks files for today (`picks-YYYY-MM-DD-*.md`) and selects the top 5 by score across all runs instead of only the latest file. (2) Headline fonts bumped +20%: image slide Bebas 84px→100px, body Inter 19px→23px; text-only Bebas 76px→91px, body Inter 16px→19px. (3) Text-only fallback slide background replaced — dark vertical gradient (#1c1c1c→#080808) + 4% film grain + subtle score-color wash at bottom instead of flat #111111.
+
 ## [2026-04-24] Fix: index.html — show list mode thumbnails on mobile
 
 Restored thumbnail column on mobile (≤680px): updated `.art-row` and `.list-header` grid templates to `auto 1fr auto 32px`, replaced `display: none` on `.art-thumb-cell` with 52×52px dimensions for compact mobile sizing.

@@ -86,11 +86,12 @@ SYSTEM_PROMPT = (
 
 # ── Picks parsing ─────────────────────────────────────────────────────────────
 
-def find_latest_picks_file() -> str:
-    files = sorted(glob.glob("picks/picks-*.md"), reverse=True)
+def find_todays_picks_files() -> list[str]:
+    today = __import__("datetime").date.today().isoformat()
+    files = sorted(glob.glob(f"picks/picks-{today}-*.md"))
     if not files:
-        sys.exit("❌  No picks files found in picks/")
-    return files[0]
+        sys.exit(f"❌  No picks files found for {today}")
+    return files
 
 
 def parse_picks(path: str) -> list[dict]:
@@ -688,24 +689,144 @@ def render_story_slide(
 ) -> None:
     W, H = OUTPUT_SIZE
 
-    # ── Full-bleed image (or dark canvas fallback) ────────────────────────────
+    # ── Text-only fallback (no image — Reddit posts, etc.) ───────────────────
+    if img_data is None:
+        canvas = Image.new("RGB", OUTPUT_SIZE, "#080808")
+        grad_draw = ImageDraw.Draw(canvas)
+        for y in range(H):
+            t = y / H
+            val = int(28 * (1 - t) + 8 * t)
+            grad_draw.line([(0, y), (W - 1, y)], fill=(val, val, val))
+
+        noise_bytes = os.urandom(H * W * 3)
+        noise_gray  = Image.frombytes("RGB", (W, H), noise_bytes).convert("L")
+        noise_layer = Image.merge("RGBA", (noise_gray, noise_gray, noise_gray,
+                                           Image.new("L", (W, H), 10)))
+        canvas = Image.alpha_composite(canvas.convert("RGBA"), noise_layer).convert("RGB")
+
+        cr, cg, cb = _hex_to_rgb(RARITY_MAP.get(pick["score"], RARITY_DEFAULT)[1])
+        color_layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        color_draw  = ImageDraw.Draw(color_layer)
+        for y in range(H // 2, H):
+            t = (y - H // 2) / (H // 2)
+            color_draw.line([(0, y), (W - 1, y)], fill=(cr, cg, cb, int(t * 0.08 * 255)))
+        canvas = Image.alpha_composite(canvas.convert("RGBA"), color_layer).convert("RGB")
+
+        bebas_to = _load_bebas(91)        or _default_font(91)
+        inter11  = _load_inter_medium(11) or _default_font(11)
+        inter12  = _load_inter_medium(12) or _default_font(12)
+        inter_to = _load_inter(19)        or _default_font(19)
+
+        category  = copy.get("category", "").upper()
+        hook_lines = pick.get("hook_lines") or []
+        source    = "VIA " + html.unescape(pick["source"].split("|")[0].strip()).upper()
+        content_w = W - MARGIN * 2
+
+        draw_meas = ImageDraw.Draw(canvas)
+
+        # Measure headline
+        if hook_lines:
+            head_lines = hook_lines[:3]
+        else:
+            raw_lines  = _wrap_text(draw_meas, pick["title"], bebas_to, content_w)
+            head_lines = _truncate_lines(raw_lines, 3, draw_meas, bebas_to, content_w)
+        head_lh    = math.ceil(_text_h(bebas_to) * 1.12)
+        head_total = len(head_lines) * head_lh
+
+        # Measure why
+        why_raw   = _wrap_text(draw_meas, pick["why"], inter_to, content_w)
+        why_lines = _truncate_lines(why_raw, 4, draw_meas, inter_to, content_w)
+        why_lh    = math.ceil(_text_h(inter_to) * 1.55)
+        why_total = len(why_lines) * why_lh
+
+        # Vertically center the block (headline + 20px gap + divider + 24px gap + why)
+        block_h  = head_total + 20 + 24 + why_total
+        head_y   = (H - block_h) // 2
+        div_y    = head_y + head_total + 20
+        why_y    = div_y + 24
+
+        source_h = _text_h(inter12)
+        source_y = H - TEXT_BOTTOM_PAD - source_h
+
+        # Category badge — top-left
+        badge_y   = 52
+        cat_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+        _draw_tracked(ImageDraw.Draw(cat_layer), category, inter11,
+                      fill=(255, 255, 255, int(255 * 0.70)),
+                      tracking_px=6, x=MARGIN, y=badge_y)
+        canvas = Image.alpha_composite(canvas.convert("RGBA"), cat_layer).convert("RGB")
+
+        # Rarity badge — top-right (Editor's Pick only)
+        if is_editors_pick:
+            label, color_hex = RARITY_MAP.get(pick["score"], RARITY_DEFAULT)
+            color_rgb  = _hex_to_rgb(color_hex)
+            label_chars = list(label)
+            label_w    = sum(_char_w(inter12, c) for c in label_chars) + 6 * max(0, len(label_chars) - 1)
+            _draw_tracked(ImageDraw.Draw(canvas), label, inter12, fill=color_rgb,
+                          tracking_px=6, x=W - MARGIN - label_w, y=badge_y)
+
+        # Source — pinned 72px from bottom
+        src_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+        _draw_tracked(ImageDraw.Draw(src_layer), source, inter12,
+                      fill=(255, 255, 255, int(255 * 0.55)),
+                      tracking_px=4, x=MARGIN, y=source_y)
+        canvas = Image.alpha_composite(canvas.convert("RGBA"), src_layer).convert("RGB")
+
+        # Why it matters — Inter 16px, white 80%, 1.55 lh, 4 lines max
+        why_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+        wy_draw   = ImageDraw.Draw(why_layer)
+        wy = why_y
+        for line in why_lines:
+            wy_draw.text((MARGIN, wy), line, fill=(255, 255, 255, int(255 * 0.80)), font=inter_to)
+            wy += why_lh
+        canvas = Image.alpha_composite(canvas.convert("RGBA"), why_layer).convert("RGB")
+
+        # Divider — 60px wide, 2px, white 25%
+        div_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
+        ImageDraw.Draw(div_layer).line([(MARGIN, div_y), (MARGIN + 60, div_y)],
+                                        fill=(255, 255, 255, int(255 * 0.25)), width=2)
+        canvas = Image.alpha_composite(canvas.convert("RGBA"), div_layer).convert("RGB")
+
+        # Headline — Bebas 76px, white, 3 lines max
+        draw = ImageDraw.Draw(canvas)
+        hy = head_y
+        for line in head_lines:
+            draw.text((MARGIN, hy), line, fill=(255, 255, 255), font=bebas_to)
+            hy += head_lh
+
+        # Left accent bar — Editor's Pick only
+        if is_editors_pick:
+            _, color_hex = RARITY_MAP.get(pick["score"], RARITY_DEFAULT)
+            draw.line([(0, 0), (0, H)], fill=_hex_to_rgb(color_hex), width=4)
+
+        # Outer border — 1px, white 20%, inset 20px
+        bi = BORDER_INSET
+        canvas = _alpha_rect(
+            canvas,
+            (bi, bi, W - bi - 1, H - bi - 1),
+            outline=(255, 255, 255, int(255 * 0.20)),
+        )
+
+        canvas.save(str(out_path), "JPEG", quality=JPEG_QUALITY, optimize=True)
+        return
+
+    # ── Full-bleed image path ─────────────────────────────────────────────────
     canvas = Image.new("RGB", OUTPUT_SIZE, "#111111")
-    if img_data:
-        try:
-            raw = Image.open(BytesIO(img_data)).convert("RGB")
-            canvas.paste(_smart_crop(raw, W, H, prefer_top=True), (0, 0))
-        except Exception as e:
-            print(f"      ⚠️  Image paste failed: {e} — using dark background")
+    try:
+        raw = Image.open(BytesIO(img_data)).convert("RGB")
+        canvas.paste(_smart_crop(raw, W, H, prefer_top=True), (0, 0))
+    except Exception as e:
+        print(f"      ⚠️  Image paste failed: {e} — using dark background")
 
     # ── Gradient overlays ─────────────────────────────────────────────────────
     grad = _gradient_overlay(OUTPUT_SIZE, GRAD_START_Y, 0.92, top_bar=True)
     canvas = Image.alpha_composite(canvas.convert("RGBA"), grad).convert("RGB")
 
     # ── Fonts ─────────────────────────────────────────────────────────────────
-    bebas76 = _load_bebas(76)         or _default_font(76)
+    bebas76 = _load_bebas(100)        or _default_font(100)
     inter11 = _load_inter_medium(11)  or _default_font(11)
     inter12 = _load_inter_medium(12)  or _default_font(12)
-    inter16 = _load_inter(16)         or _default_font(16)
+    inter16 = _load_inter(23)         or _default_font(23)
 
     category  = copy.get("category", "").upper()
     # Headline: use hook lines from picks file (already stripped of [TRIGGER:] prefix);
@@ -764,7 +885,7 @@ def render_story_slide(
                   tracking_px=4, x=MARGIN, y=source_y)
     canvas = Image.alpha_composite(canvas.convert("RGBA"), src_layer).convert("RGB")
 
-    # Why it matters — Inter Regular 16px, white 80%, 1.55 lh, 3 lines max
+    # Why it matters — Inter Regular 19px, white 80%, 1.55 lh, 3 lines max
     why_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
     wy_draw   = ImageDraw.Draw(why_layer)
     wy = why_y
@@ -837,18 +958,23 @@ def write_digest_md(
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    picks_file = sys.argv[1] if len(sys.argv) > 1 else find_latest_picks_file()
-    if not os.path.exists(picks_file):
-        sys.exit(f"❌  File not found: {picks_file}")
+    if len(sys.argv) > 1:
+        picks_files = [sys.argv[1]]
+        if not os.path.exists(picks_files[0]):
+            sys.exit(f"❌  File not found: {picks_files[0]}")
+    else:
+        picks_files = find_todays_picks_files()
 
-    date_m   = re.search(r"picks-(\d{4}-\d{2}-\d{2})", picks_file)
+    date_m   = re.search(r"picks-(\d{4}-\d{2}-\d{2})", picks_files[0])
     date_str = date_m.group(1) if date_m else __import__("datetime").date.today().isoformat()
 
     print(f"\n📰  Digest Publisher")
-    print(f"    Picks file : {picks_file}")
-    print(f"    Output dir : digests/{date_str}/\n")
+    print(f"    Picks files : {len(picks_files)} file(s) for {date_str}")
+    print(f"    Output dir  : digests/{date_str}/\n")
 
-    all_picks = parse_picks(picks_file)
+    all_picks = []
+    for pf in picks_files:
+        all_picks.extend(parse_picks(pf))
     if not all_picks:
         print("⚠️  No cluster-primary picks found — nothing to do.")
         return
