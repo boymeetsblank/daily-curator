@@ -1467,7 +1467,23 @@ If no articles cover the same underlying event, return:
 def select_top_picks(articles: list[dict]) -> list[dict]:
     strong = [a for a in articles if a.get("score", 0) >= MIN_SCORE]
     primaries = [a for a in strong if a.get("cluster_primary", True) is not False]
-    primaries.sort(key=lambda a: a["score"], reverse=True)
+
+    # Precompute cluster_id → all member scores (full pool, not just strong)
+    cluster_scores: dict[str, list[int]] = {}
+    for a in articles:
+        cid = a.get("cluster_id")
+        if cid:
+            cluster_scores.setdefault(cid, []).append(a["score"])
+
+    def _cluster_sort_key(a):
+        scores = cluster_scores.get(a.get("cluster_id") or "", [])
+        if len(scores) > 1:
+            # Cluster primary: rank by avg score, tie-break by cluster size then individual score
+            return (round(sum(scores) / len(scores), 1), len(scores), a["score"])
+        # Solo article: rank by individual score
+        return (float(a["score"]), 1, a["score"])
+
+    primaries.sort(key=_cluster_sort_key, reverse=True)
     top = primaries[:MAX_PICKS]
     selected_cids = {a["cluster_id"] for a in top if a.get("cluster_id")}
     members = [

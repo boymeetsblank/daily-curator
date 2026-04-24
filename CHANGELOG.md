@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-24] Refactor: daily_curator.py — rank The Edit by cluster score, not individual score
+
+`select_top_picks()` now sorts by cluster score (average of all member scores, rounded to 1dp) so a multi-source cluster outranks a solo article with a slightly higher individual score. Tie-break: cluster size desc, then individual score desc. Displayed scores in output are unchanged.
+
 ## [2026-04-24] Update: digest_publisher.py — text-only slide: remove rarity badge, use Substack copy
 
 For imageless slides (Reddit posts, etc.): removed LEGENDARY/EPIC/TOP PICK rarity badge from top-right; replaced short "why it matters" sentence with the Claude-generated Substack paragraph (6-line max) for richer editorial body copy.
