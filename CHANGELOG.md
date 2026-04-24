@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-24] Update: digest_publisher.py — text-only slide: remove rarity badge, use Substack copy
+
+For imageless slides (Reddit posts, etc.): removed LEGENDARY/EPIC/TOP PICK rarity badge from top-right; replaced short "why it matters" sentence with the Claude-generated Substack paragraph (6-line max) for richer editorial body copy.
+
 ## [2026-04-24] Update: digest_publisher.py — full-day picks, bigger fonts, richer text-only slide
 
 Three improvements: (1) digest now collects all picks files for today (`picks-YYYY-MM-DD-*.md`) and selects the top 5 by score across all runs instead of only the latest file. (2) Headline fonts bumped +20%: image slide Bebas 84px→100px, body Inter 19px→23px; text-only Bebas 76px→91px, body Inter 16px→19px. (3) Text-only fallback slide background replaced — dark vertical gradient (#1c1c1c→#080808) + 4% film grain + subtle score-color wash at bottom instead of flat #111111.

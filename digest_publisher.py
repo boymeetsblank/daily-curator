@@ -733,9 +733,10 @@ def render_story_slide(
         head_lh    = math.ceil(_text_h(bebas_to) * 1.12)
         head_total = len(head_lines) * head_lh
 
-        # Measure why
-        why_raw   = _wrap_text(draw_meas, pick["why"], inter_to, content_w)
-        why_lines = _truncate_lines(why_raw, 4, draw_meas, inter_to, content_w)
+        # Measure why — use Substack copy (more analytical) with extra lines for the space
+        substack_text = copy.get("substack") or pick["why"]
+        why_raw   = _wrap_text(draw_meas, substack_text, inter_to, content_w)
+        why_lines = _truncate_lines(why_raw, 6, draw_meas, inter_to, content_w)
         why_lh    = math.ceil(_text_h(inter_to) * 1.55)
         why_total = len(why_lines) * why_lh
 
@@ -755,15 +756,6 @@ def render_story_slide(
                       fill=(255, 255, 255, int(255 * 0.70)),
                       tracking_px=6, x=MARGIN, y=badge_y)
         canvas = Image.alpha_composite(canvas.convert("RGBA"), cat_layer).convert("RGB")
-
-        # Rarity badge — top-right (Editor's Pick only)
-        if is_editors_pick:
-            label, color_hex = RARITY_MAP.get(pick["score"], RARITY_DEFAULT)
-            color_rgb  = _hex_to_rgb(color_hex)
-            label_chars = list(label)
-            label_w    = sum(_char_w(inter12, c) for c in label_chars) + 6 * max(0, len(label_chars) - 1)
-            _draw_tracked(ImageDraw.Draw(canvas), label, inter12, fill=color_rgb,
-                          tracking_px=6, x=W - MARGIN - label_w, y=badge_y)
 
         # Source — pinned 72px from bottom
         src_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
