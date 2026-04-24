@@ -4,6 +4,22 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-23] Feat: index.html — 72×72 thumbnail in List mode story rows
+
+Added a square `object-fit: cover` thumbnail (2px border-radius) in grid column 3 of each `.art-row`, sourced from `pick.image`. Gracefully absent when no image exists; hidden on mobile via `display: none`.
+
+## [2026-04-23] Fix: index.html — add bottom margin to expanded cluster groups in List mode
+
+Added `margin-bottom: 24px` to `.cluster-group.expanded` so perspective rows don't crowd the next story card when a cluster is open.
+
+## [2026-04-22] Fix: digest_publisher.py — styled text-only fallback slide for imageless stories
+
+When `img_data is None`, `render_story_slide()` now renders a purpose-built dark editorial layout instead of a broken gradient-over-black screen. Text block (headline + divider + why) is vertically centered; outer 1px border at 20% opacity; Bebas 76px / Inter 16px; source pinned 72px from bottom; Editor's Pick badges and accent bar preserved.
+
+## [2026-04-22] Update: digest_publisher.py — larger hook and body copy fonts for social readability
+
+Increased hook headline font from Bebas Neue 76px → 84px and "Why it matters" body copy from Inter 16px → 19px to improve legibility when uploaded to social media.
+
 ## [2026-04-22] Update: digest_publisher.py — full-bleed editorial redesign + font fix + face-safe crop
 
 **Font loading** — Google Fonts now serves only woff2 for all UAs, which Pillow/FreeType cannot read. Replaced CSS-parsing approach with direct GitHub raw URL downloads (`_fetch_font_direct`). Bebas Neue from `dharmatype/Bebas-Neue` repo; Inter from `google/fonts` repo as variable font (`Inter[opsz,wght].ttf`). Added `_is_valid_font()` validation (checks magic bytes) that auto-deletes and re-downloads corrupted cached files on next run. `_load_inter_medium` now delegates to `_load_inter` (same variable font file). Fixed `&amp;` HTML entity in source attribution via `html.unescape()`.
@@ -232,13 +248,7 @@ Three fixes to the deduplication pipeline in `daily_curator.py`:
 
 Replaced the Claude scoring prompt with a tightened editorial brief: cleaner criteria framing, revised scoring anchors with explicit tier descriptions (10 as a rare cultural moment, 6 as "made the cut"), a bidirectional 10/10 rarity rule that penalizes both false positives AND false negatives, and a reframed CATEGORY DIVERSITY RULE that emphasizes editorial breadth over category enumeration.
 
-## [2026-04-13] Fix: Edit picks no longer appear in The Feed
 
-In `deploy-pages.yml`, the `all_articles.json` build step now cross-references all pick URLs from `picks_data.json` and strips any matching articles before writing The Feed. This fixes historical `all_articles/*.json` files generated before the per-run exclusion existed, and acts as a permanent safety net going forward.
-
-## [2026-04-13] Cross-run & multi-day topic deduplication
-
-Added `load_recently_covered_topics()` which reads picks files from the last 3 days and injects the story titles into the Claude scoring prompt. Claude now scores a 1 for any article covering a story already featured recently — preventing same-story duplicates across runs and across days, even when the articles have different URLs and headlines. A nuanced exception allows genuinely significant new developments on an old story (e.g. an arrest, a verdict) to still surface.
 
 
 
