@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-24] Fix: index.html — show list mode thumbnails on mobile
+
+Restored thumbnail column on mobile (≤680px): updated `.art-row` and `.list-header` grid templates to `auto 1fr auto 32px`, replaced `display: none` on `.art-thumb-cell` with 52×52px dimensions for compact mobile sizing.
+
 ## [2026-04-23] Feat: index.html — 72×72 thumbnail in List mode story rows
 
 Added a square `object-fit: cover` thumbnail (2px border-radius) in grid column 3 of each `.art-row`, sourced from `pick.image`. Gracefully absent when no image exists; hidden on mobile via `display: none`.
