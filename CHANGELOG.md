@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-25] Perf: daily_curator.py — swap detect_cross_source_trends to Haiku (~10x cheaper)
+
+Grouping/clustering task doesn't require Sonnet reasoning. Saves ~$0.27/day (~$0.09/call × 3 runs), extending $10 token budget from ~7 days to ~10 days with no editorial quality impact.
+
 ## [2026-04-24] Feat: daily_curator.py — cross-run cluster persistence via today_clusters.json
 
 Three new functions: `load_today_clusters()` (midnight CST reset), `save_today_clusters()`, and `merge_cross_run_clusters()` (keyword-overlap matching, ≥3 words). Articles matched to prior-run clusters inherit their cluster_id; updated clusters emit `**Updated:** true` in the markdown output. Resets daily at midnight CST via pytz/zoneinfo.
