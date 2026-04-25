@@ -39,3 +39,4 @@ env/
 .vscode/               # VS Code editor settings
 .idea/                 # JetBrains/PyCharm settings
 *.swp                  # Vim swap files
+__pycache__/
