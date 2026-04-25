@@ -4,6 +4,17 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-25] UX: clickable row expansion + remove list-header right border
+
+- **Removed expand-btn (`+` button)** from list-mode story rows entirely.
+- **Whole row is now the click target** — clicking anywhere on a story row
+  expands/collapses the detail panel. Clicking a cluster primary row toggles
+  the cluster perspectives panel. Title link, vote buttons, and save button
+  retain their own click handlers via `event.stopPropagation()`.
+- **Chevron indicator** (`↓`) replaces the button in col 3, row 2 — rotates
+  180° when expanded, brightens on hover.
+- **Removed `border-right`** from `.list-header` in list mode.
+
 ## [2026-04-25] Fix same-story duplication and broken website clustering
 
 Four root-cause fixes for two persistent issues (same story appearing multiple
