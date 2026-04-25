@@ -4,6 +4,32 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-25] Fix same-story duplication and broken website clustering
+
+Four root-cause fixes for two persistent issues (same story appearing multiple
+times in The Edit; cluster panels not working on the website):
+
+1. **Prune orphaned cluster members** (`daily_curator.py` `main()`) — after
+   `filter_already_picked_today()` removes a cluster's primary (already picked
+   in an earlier run), non-primary members of that cluster are now explicitly
+   dropped. Previously they remained as separate picks with no primary, causing
+   them to appear individually in The Edit and breaking website cluster grouping.
+
+2. **Fix false entity clustering for internet abbreviations** (`_STOPWORDS`) —
+   "TIL", "AMA", "LPT", "ELI5" and similar Reddit/internet abbreviations are
+   now in the stopwords list, preventing `_extract_primary_entity()` from
+   treating them as named entities and clustering unrelated posts together.
+
+3. **Richer cross-day dedup context** (`load_recently_covered_topics()`) —
+   function now returns "Title — Why summary" strings instead of titles only,
+   giving Claude substantially more context to recognise same-story variants
+   under different headlines (e.g. ongoing Hormuz/Iran coverage).
+
+4. **JS defensive fallback for missing cluster primary** (`index.html`) — if a
+   cluster group has no primary (all members have `cluster_primary: false`),
+   `renderPicksGrouped()` now promotes the first/highest-scored member to visual
+   primary rather than silently discarding the group.
+
 ## [2026-04-25] UX: index.html — move expand button below thumbnail, grow images to 96px
 
 Removed the dedicated 32px expand-button column from list-mode grid (`auto 1fr auto 32px` → `auto 1fr auto`). Expand "+" now sits below the thumbnail (col 3, row 2, centered). Thumbnails grown from 72px → 96px desktop, 52px → 64px mobile.
