@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-25] UX: index.html — move expand button below thumbnail, grow images to 96px
+
+Removed the dedicated 32px expand-button column from list-mode grid (`auto 1fr auto 32px` → `auto 1fr auto`). Expand "+" now sits below the thumbnail (col 3, row 2, centered). Thumbnails grown from 72px → 96px desktop, 52px → 64px mobile.
+
 ## [2026-04-25] Perf: daily_curator.py — swap detect_cross_source_trends to Haiku (~10x cheaper)
 
 Grouping/clustering task doesn't require Sonnet reasoning. Saves ~$0.27/day (~$0.09/call × 3 runs), extending $10 token budget from ~7 days to ~10 days with no editorial quality impact.
