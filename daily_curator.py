@@ -38,6 +38,7 @@ DIRECT_RSS_TIMEOUT      = 10   # seconds per feed fetch
 SOURCES_JSON_PATH       = "sources.json"
 SEEN_URLS_PATH          = "seen_urls.json"
 SEEN_URLS_WINDOW_DAYS   = 7    # URLs older than this are pruned from the registry
+TODAY_CLUSTERS_PATH     = "today_clusters.json"
 CLAUDE_SCORING_BATCH_SIZE = 50  # max articles per Claude scoring call
 
 INOREADER_BASE_URL   = "https://www.inoreader.com/reader/api/0"
@@ -614,6 +615,189 @@ def save_seen_urls(urls: dict[str, str]) -> None:
     """Persist the seen-URL registry to disk."""
     with open(SEEN_URLS_PATH, "w", encoding="utf-8") as f:
         json.dump({"urls": urls}, f, ensure_ascii=False, indent=2)
+
+
+# ── Cross-run cluster persistence ─────────────────────────────────────────────
+
+_CLUSTER_STOP_WORDS = {
+    "about", "above", "after", "again", "ahead", "along", "also", "amid",
+    "among", "being", "between", "could", "doing", "during", "every", "first",
+    "found", "going", "group", "having", "here", "heres", "heres", "into",
+    "just", "known", "large", "latest", "like", "made", "make", "major",
+    "makes", "might", "more", "most", "much", "needs", "never", "next",
+    "nothing", "now", "once", "only", "other", "others", "over", "report",
+    "reports", "reveals", "right", "said", "same", "since", "some", "still",
+    "such", "than", "that", "their", "them", "then", "there", "these", "they",
+    "three", "through", "time", "times", "today", "under", "until", "very",
+    "watch", "well", "were", "what", "when", "where", "which", "while",
+    "will", "with", "would", "years", "your",
+}
+
+
+def _extract_keywords(title: str) -> set[str]:
+    """Extract meaningful keywords from a title for cross-run cluster matching."""
+    words = re.findall(r"[a-zA-Z]+", title.lower())
+    return {w for w in words if len(w) > 4 and w not in _CLUSTER_STOP_WORDS}
+
+
+def _cst_now_iso() -> str:
+    """Return current time in CST/CDT as an ISO string."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(tz=ZoneInfo("America/Chicago")).isoformat()
+    except ImportError:
+        pass
+    try:
+        import pytz
+        return datetime.now(tz=pytz.timezone("America/Chicago")).isoformat()
+    except ImportError:
+        pass
+    # Should never reach here given the spec, but avoids a hard crash
+    return datetime.now(timezone.utc).isoformat()
+
+
+def _cst_today_str() -> str:
+    """Return today's date string (YYYY-MM-DD) in CST/CDT."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(tz=ZoneInfo("America/Chicago")).strftime("%Y-%m-%d")
+    except ImportError:
+        pass
+    try:
+        import pytz
+        return datetime.now(tz=pytz.timezone("America/Chicago")).strftime("%Y-%m-%d")
+    except ImportError:
+        pass
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
+def load_today_clusters() -> dict:
+    """
+    Read today_clusters.json. Resets to empty if the stored date doesn't match
+    today (CST) or if the file is missing/corrupt.
+    """
+    today = _cst_today_str()
+    empty = {"date": today, "clusters": {}}
+
+    if not os.path.exists(TODAY_CLUSTERS_PATH):
+        return empty
+
+    try:
+        with open(TODAY_CLUSTERS_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        if data.get("date") != today:
+            print(f"   today_clusters.json is from {data.get('date')!r}, resetting for {today}.")
+            return empty
+        return data
+    except Exception as e:
+        print(f"   ⚠️  Could not read today_clusters.json ({e}) — starting fresh.")
+        return empty
+
+
+def save_today_clusters(data: dict) -> None:
+    """Persist cross-run cluster data to today_clusters.json."""
+    try:
+        with open(TODAY_CLUSTERS_PATH, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"   ⚠️  Could not save today_clusters.json: {e}")
+
+
+def merge_cross_run_clusters(articles: list[dict], today_data: dict) -> tuple[list[dict], dict]:
+    """
+    Match scored articles to existing today_clusters entries by keyword overlap.
+    Articles with >=3 keyword overlap against an existing cluster are assigned to it.
+    New clusters from this run are seeded into today_data for future runs to match against.
+    Returns (articles, updated_today_data).
+    """
+    clusters: dict = today_data.get("clusters", {})
+    now_iso = _cst_now_iso()
+
+    # Pre-compute keyword sets for all existing clusters (avoids repeated set() calls)
+    cluster_kw_sets: dict[str, set[str]] = {
+        cid: set(meta.get("keywords", []))
+        for cid, meta in clusters.items()
+    }
+
+    matched = 0
+    for article in articles:
+        score = article.get("score")
+        if not score:
+            continue
+        title = article.get("title", "")
+        art_kws = _extract_keywords(title)
+        if not art_kws:
+            continue
+        art_url = normalize_url(article.get("link", "")) if article.get("link") else ""
+
+        # Find best matching existing cluster
+        best_cid, best_overlap = None, 0
+        for cid, kws in cluster_kw_sets.items():
+            overlap = len(art_kws & kws)
+            if overlap >= 3 and overlap > best_overlap:
+                best_cid, best_overlap = cid, overlap
+
+        if best_cid:
+            cluster = clusters[best_cid]
+            old_count = cluster.get("member_count", 1)
+            old_avg   = cluster.get("avg_score", float(cluster.get("top_score", score)))
+
+            # Reassign this article's cluster_id to the cross-run cluster
+            article["cluster_id"] = best_cid
+
+            # Update running stats
+            new_count = old_count + 1
+            cluster["member_count"]  = new_count
+            cluster["avg_score"]     = round((old_avg * old_count + score) / new_count, 1)
+            cluster["last_updated"]  = now_iso
+            if art_url and art_url not in cluster.get("member_urls", []):
+                cluster.setdefault("member_urls", []).append(art_url)
+
+            if score > cluster.get("top_score", 0):
+                cluster["top_score"]     = score
+                cluster["primary_url"]   = article.get("link", "")
+                cluster["primary_title"] = article.get("title", "")
+                cluster["updated"]       = True
+
+            # Merge keywords so later runs benefit from the expanded vocabulary
+            merged_kws = set(cluster.get("keywords", [])) | art_kws
+            cluster["keywords"] = list(merged_kws)
+            cluster_kw_sets[best_cid] = merged_kws
+
+            matched += 1
+            print(f"   🔗 Cross-run match: \"{title[:55]}\" → {best_cid} (overlap={best_overlap})")
+
+    if matched:
+        print(f"   Cross-run clustering: {matched} article(s) matched to prior-run cluster(s).")
+
+    # Seed today_clusters with new cluster_ids from this run that aren't stored yet
+    run_clusters: dict[str, list[dict]] = {}
+    for article in articles:
+        cid = article.get("cluster_id")
+        if cid and cid not in clusters and article.get("score"):
+            run_clusters.setdefault(cid, []).append(article)
+
+    for cid, members in run_clusters.items():
+        primary  = max(members, key=lambda a: a["score"])
+        scores   = [a["score"] for a in members]
+        all_kws: set[str] = set()
+        for a in members:
+            all_kws |= _extract_keywords(a.get("title", ""))
+        clusters[cid] = {
+            "cluster_id":    cid,
+            "first_seen":    now_iso,
+            "last_updated":  now_iso,
+            "member_count":  len(members),
+            "top_score":     max(scores),
+            "avg_score":     round(sum(scores) / len(scores), 1),
+            "primary_url":   primary.get("link", ""),
+            "primary_title": primary.get("title", ""),
+            "member_urls":   [normalize_url(a["link"]) for a in members if a.get("link")],
+            "keywords":      list(all_kws),
+        }
+
+    today_data["clusters"] = clusters
+    return articles, today_data
 
 
 def _run_apify_actor(actor_id: str, input_data: dict) -> list[dict]:
@@ -1616,6 +1800,7 @@ def write_markdown_output(
     all_articles_count: int,
     twitter_trends: list[dict] = None,
     inoreader_unavailable: bool = False,
+    today_clusters: dict = None,
 ) -> str:
     today_str = datetime.now().strftime("%Y-%m-%d")
     time_str = datetime.now().strftime("%H%M")
@@ -1676,6 +1861,8 @@ This is normal — not every day has strong enough signal. Check back tomorrow!
                     f"\n**Cluster Primary:** {cprimary}"
                     + (f"\n**Cluster Sources:** {csources}" if csources else "")
                 )
+                if today_clusters and today_clusters.get(cid, {}).get("updated"):
+                    cluster_lines += "\n**Updated:** true"
 
             content += f"""## Pick #{i} — Score: {pick['score']}/10
 
@@ -1747,6 +1934,10 @@ def main():
     seen_urls = prune_seen_urls(seen_urls)
     print(f"   Registry: {len(seen_urls)} known URL(s) from the past {SEEN_URLS_WINDOW_DAYS} days.")
 
+    # ── Load today's cross-run cluster index (resets at midnight CST) ─────────
+    today_data = load_today_clusters()
+    print(f"   Cross-run clusters: {len(today_data['clusters'])} cluster(s) from earlier runs today.")
+
     # Auto-generate sources.json from Inoreader subscriptions on first run
     if not os.path.exists(SOURCES_JSON_PATH):
         if inoreader_available:
@@ -1806,6 +1997,10 @@ def main():
 
     evaluated_articles = evaluate_articles_with_claude(all_items, trending_topics=trending_topics, recently_covered=recently_covered)
 
+    # ── Cross-run cluster merge: match articles to prior-run clusters ─────────
+    print(f"\n🔗 Merging cross-run clusters...")
+    evaluated_articles, today_data = merge_cross_run_clusters(evaluated_articles, today_data)
+
     # ── Mark highest-scorer in each cluster as the primary ───────────────────
     print(f"\n🔗 Marking cluster primaries...")
     evaluated_articles = mark_cluster_primaries(evaluated_articles)
@@ -1861,7 +2056,12 @@ def main():
     output_file = write_markdown_output(
         top_picks, len(all_items), twitter_trends,
         inoreader_unavailable=not inoreader_available,
+        today_clusters=today_data.get("clusters", {}),
     )
+
+    # ── Persist cross-run cluster index for the next run ─────────────────────
+    save_today_clusters(today_data)
+    print(f"   Cross-run clusters saved: {len(today_data['clusters'])} cluster(s).")
 
     print(f"\n{'=' * 55}")
     if top_picks:
