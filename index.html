@@ -3725,10 +3725,9 @@
         ? `Breaking via ${srcLabel}`
         : `Velocity spike — newly trending in the US${item.traffic ? '. ' + esc(item.traffic) + ' searches.' : ''}`;
     return `<div class="breaking-art-row" onclick="handleRowClick(event,this)" style="cursor:pointer">
-      <div class="art-date" style="color:var(--red)">${det}</div>
+      <div class="art-date" style="color:var(--red);font-size:10px;letter-spacing:0.03em">${det}</div>
       <div class="art-title-cell">
         <a class="art-title-link" href="${url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${esc(item.topic)}</a>
-        <span class="art-trend-tag" style="color:var(--red);border-color:rgba(220,38,38,0.3)">Breaking</span>
       </div>
       <span class="row-chevron">↓</span>
       <div class="art-expand" onclick="event.stopPropagation()">
