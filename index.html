@@ -3702,8 +3702,16 @@
 
   // ── Breaking news ─────────────────────────────────────────────
   function renderBreakingCard(item) {
-    const url = esc(item.search_url||`https://www.google.com/search?q=${encodeURIComponent(item.topic)}`);
-    const det = item.detected_at ? timeAgo(item.detected_at) : '';
+    const url      = esc(item.search_url||`https://www.google.com/search?q=${encodeURIComponent(item.topic)}`);
+    const det      = item.detected_at ? timeAgo(item.detected_at) : '';
+    const isWire   = item.source_type === 'wire';
+    const srcLabel = isWire ? esc(item.source_name||'Wire') : 'Google Trends';
+    const ctaText  = isWire ? 'Read article →' : 'Search Google →';
+    const whyText  = item.context
+      ? esc(item.context)
+      : isWire
+        ? `Breaking via ${srcLabel}`
+        : `Velocity spike — newly trending in the US${item.traffic ? '. ' + esc(item.traffic) + ' searches.' : ''}`;
     return `<div class="breaking-art-row">
       <div class="art-date" style="color:var(--red)">${det}</div>
       <div class="art-title-cell">
@@ -3716,11 +3724,12 @@
           <div class="exp-main-row">
             <div class="exp-field">
               <span class="exp-label">Why it matters</span>
-              <p class="exp-why">Velocity spike detected — newly trending in the US${item.traffic?'. '+esc(item.traffic)+' searches.':''}</p>
+              <p class="exp-why">${whyText}</p>
             </div>
           </div>
           <div class="exp-footer">
-            <a class="exp-read-btn" href="${url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Search Google →</a>
+            <span class="exp-source-label" style="opacity:0.45;font-size:11px;letter-spacing:.06em">${srcLabel}</span>
+            <a class="exp-read-btn" href="${url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${ctaText}</a>
           </div>
         </div>
       </div>
