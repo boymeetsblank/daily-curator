@@ -175,7 +175,7 @@
     ───────────────────────────────────────── */
     #feed-page { display: none; }
 
-    #feed-list { border-right: 1px solid var(--border); }
+    #feed-list { }
 
     /* Feed row: source name replaces score badge, no rarity decoration */
     .feed-row {
@@ -1037,10 +1037,9 @@
       gap: 0 14px;
       padding: 0 0 10px;
       border-bottom: 1px solid var(--border);
-      border-right: 1px solid var(--border);
     }
 
-    #feed-container { border-right: 1px solid var(--border); }
+    #feed-container { }
 
     .lh-label {
       font-size: 10px;
@@ -1125,16 +1124,16 @@
       grid-column: 3;
       grid-row: 1;
       align-self: center;
-      width: 96px;
-      height: 96px;
+      width: 120px;
+      height: 120px;
       overflow: hidden;
       border-radius: 2px;
     }
 
     .art-thumb {
       display: block;
-      width: 96px;
-      height: 96px;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
       border-radius: 2px;
     }
@@ -1326,35 +1325,30 @@
       top: -1px;
     }
 
-    /* Expand toggle button — sits below thumbnail in col 3, row 2 */
-    .expand-btn {
+    /* Whole-row click target */
+    .art-row { cursor: pointer; }
+    .art-row a, .art-row button { cursor: auto; }
+    .art-row a { cursor: pointer; }
+
+    /* Chevron indicator — sits below thumbnail in col 3, row 2 */
+    .row-chevron {
       grid-column: 3;
       grid-row: 2;
       justify-self: center;
       align-self: start;
-      margin-top: 6px;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      border: 1px solid var(--border);
-      background: transparent;
-      color: var(--muted);
-      font-size: 14px;
+      margin-top: 10px;
+      font-size: 9px;
+      color: var(--faint);
+      display: inline-block;
+      transition: transform 0.2s ease, color 0.12s;
+      width: 16px;
+      text-align: center;
       line-height: 1;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      align-self: center;
-      flex-shrink: 0;
-      transition: background 0.1s, color 0.1s, border-color 0.1s;
-      font-family: var(--sans);
-      padding: 0;
       user-select: none;
     }
-
-    .expand-btn:hover { background: var(--surface); color: var(--ink); border-color: var(--muted); }
-    .art-row.expanded .expand-btn { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .art-row:hover .row-chevron              { color: var(--muted); }
+    .art-row.expanded .row-chevron           { transform: rotate(180deg); color: var(--muted); }
+    .cluster-group.expanded .cluster-primary-row .row-chevron { transform: rotate(180deg); color: var(--muted); }
 
     /* ─────────────────────────────────────────
        EXPAND DETAIL  (spans all 3 columns)
@@ -1768,8 +1762,8 @@
 
       .list-header   { grid-template-columns: auto 1fr; }
       .art-row       { grid-template-columns: auto 1fr auto; }
-      .art-thumb-cell { width: 64px; height: 64px; }
-      .art-thumb      { width: 64px; height: 64px; }
+      .art-thumb-cell { width: 80px; height: 80px; }
+      .art-thumb      { width: 80px; height: 80px; }
       .breaking-art-row { grid-template-columns: 80px 1fr 32px; }
       .art-title-link { font-size: 13.5px; }
 
@@ -2221,7 +2215,7 @@
              onclick="event.stopPropagation()">Search →</a>`;
 
     const expandHtml = `
-      <div class="art-expand">
+      <div class="art-expand" onclick="event.stopPropagation()">
         <div class="exp-inner">
           <div class="exp-main-row">
             <div class="exp-field">
@@ -2266,13 +2260,13 @@
       ? `<div class="art-thumb-cell"><img class="art-thumb" src="${esc(pick.image)}" alt="" loading="lazy" onerror="this.closest('.art-thumb-cell').style.display='none'"></div>`
       : '';
 
-    return `<div class="art-row${extraClass||''}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}" data-source="${esc(pick.source||'')}">
+    return `<div class="art-row${extraClass||''}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}" data-source="${esc(pick.source||'')}" onclick="handleRowClick(event,this)">
       <span class="art-score ${scoreCls}">${score}/10</span>
       <div class="art-title-cell">
         <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${titleClick}>${esc(pick.title)}</a>${trendBadge}${coverageBadge}
       </div>
       ${thumbHtml}
-      <button class="expand-btn" onclick="toggleExpand(this.closest('.art-row'))" aria-label="Expand">+</button>
+      <span class="row-chevron">↓</span>
       ${timeSpan}
       ${expandHtml}
     </div>`;
@@ -3043,13 +3037,19 @@
     }, 4000);
   }
 
-  // ── Toggle expand / collapse ──────────────────────────────────
+  // ── Row click handler ─────────────────────────────────────────
+  function handleRowClick(event, row) {
+    if (!row) return;
+    if (row.classList.contains('cluster-primary-row')) {
+      toggleCluster(row.closest('.cluster-group'));
+    } else {
+      row.classList.toggle('expanded');
+    }
+  }
+
   function toggleExpand(row) {
     if (!row) return;
-    const isOpen = row.classList.contains('expanded');
-    row.classList.toggle('expanded', !isOpen);
-    const btn = row.querySelector('.expand-btn');
-    if (btn) btn.textContent = isOpen ? '+' : '−';
+    row.classList.toggle('expanded');
   }
 
   // ── Cluster group toggle ─────────────────────────────────────
