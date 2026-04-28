@@ -111,6 +111,9 @@ jobs:
                   elif '*Trending on Google right now*' in block:
                       trend_label = 'Trending on Google right now'
 
+                  lvm = re.search(r'\*\*Live Pick:\*\*\s*(true|false)', block)
+                  from_live = (lvm.group(1) == 'true') if lvm else False
+
                   wm = re.search(
                       r'\*\*Why it (?:scored high|matters):\*\*\n(.*?)(?=\n\n\*\*Hook|\n\n\*\*Suggested|\n\n---|\Z)',
                       block, re.DOTALL
@@ -137,6 +140,7 @@ jobs:
                           'cluster_size': cluster_size,
                           'cluster_primary': cluster_primary,
                           'cluster_sources': cluster_sources,
+                          'from_live': from_live,
                       })
 
               return {

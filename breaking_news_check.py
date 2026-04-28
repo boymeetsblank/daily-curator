@@ -47,13 +47,13 @@ def item_id(text: str) -> str:
 
 def filter_and_enrich_items(candidates: list[dict]) -> list[dict]:
     """
-    Batch quality gate + enrichment via Claude Haiku.
+    Batch quality gate via Claude Haiku.
 
-    Scores each candidate 1-10 for cultural significance. Items scoring >= 7
-    are returned with a context line attached. Items scoring < 7 are silently
-    dropped (their IDs are already in known_ids so they won't be re-evaluated).
+    Scores each candidate 1-10. Items scoring >= 8 are returned with
+    haiku_score attached. Items scoring 9+ are candidates for Sonnet
+    escalation and push notification.
 
-    Falls back to surfacing all candidates without context if the API is
+    Falls back to surfacing all candidates unfiltered if the API is
     unavailable or returns unparseable JSON.
     """
     if not candidates:
@@ -62,6 +62,8 @@ def filter_and_enrich_items(candidates: list[dict]) -> list[dict]:
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         print("   ⚠️  ANTHROPIC_API_KEY not set — surfacing all candidates unfiltered.")
+        for c in candidates:
+            c["haiku_score"] = 8
         return candidates
 
     items_block = "\n".join(
@@ -69,16 +71,14 @@ def filter_and_enrich_items(candidates: list[dict]) -> list[dict]:
         for i, c in enumerate(candidates)
     )
 
-    prompt = f"""You are an editorial filter for a culture intelligence platform focused on sneakers, fashion, music, sports, tech, and internet culture.
+    prompt = f"""You are the editorial filter for Blank, a culture intelligence platform. Your job is to decide what's worth surfacing in a live feed — things that just happened AND are genuinely worth paying attention to.
 
-For each item below, score its cultural significance 1–10:
-- 7–10: Genuinely newsworthy — a breaking story people will actually talk about, culturally significant, affects a broad audience
-- 1–6: Noise — stock purchases/sales, corporate appointments, press releases, fund transactions, ticker symbol mentions, routine product reviews, niche B2B announcements
-
-For items scoring >= 7 ONLY, also write a context line (12 words max, no punctuation at end, specific and editorial, not generic). For items scoring < 7, set context to null.
+Score each item 1–10:
+- 8–10: Something real just broke — and it matters. People in culture are going to be talking about this.
+- 1–7: Doesn't meet the bar — either it just happened but isn't significant, it's significant but not new, or both.
 
 Respond with a JSON array only — one object per item, same order as input:
-[{{"score": <int>, "context": "<string or null>"}}]
+[{{"score": <int>}}]
 
 Items:
 {items_block}"""
@@ -88,11 +88,10 @@ Items:
         client = anthropic.Anthropic(api_key=api_key)
         resp = client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=60 * len(candidates),
+            max_tokens=15 * len(candidates),
             messages=[{"role": "user", "content": prompt}],
         )
         raw = resp.content[0].text.strip()
-        # Strip markdown code fences if present
         if raw.startswith("```"):
             raw = raw.split("```")[1]
             if raw.startswith("json"):
@@ -100,25 +99,115 @@ Items:
         results = json.loads(raw)
     except Exception as e:
         print(f"   ⚠️  Quality gate failed ({e}) — surfacing all candidates unfiltered.")
+        for c in candidates:
+            c["haiku_score"] = 8
         return candidates
 
     if len(results) != len(candidates):
         print(f"   ⚠️  Quality gate returned {len(results)} results for {len(candidates)} candidates — surfacing all unfiltered.")
+        for c in candidates:
+            c["haiku_score"] = 8
         return candidates
 
     passed = []
     for candidate, result in zip(candidates, results):
         score = result.get("score", 0)
-        context = result.get("context")
-        if score >= 7:
-            if context:
-                candidate["context"] = context.strip().rstrip(".")
+        if score >= 8:
+            candidate["haiku_score"] = score
             passed.append(candidate)
         else:
             print(f"   ✂️  Filtered (score {score}): {candidate['topic'][:70]}")
 
     print(f"   🎯 Quality gate: {len(passed)}/{len(candidates)} candidates passed.")
     return passed
+
+
+def escalate_to_sonnet(items: list[dict]) -> None:
+    """
+    For items scoring 9+, call Sonnet to write editorial context and a
+    carousel hook, then write a picks markdown file so they appear in
+    the main feed.
+    """
+    if not items:
+        return
+
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        return
+
+    import anthropic
+    client = anthropic.Anthropic(api_key=api_key)
+
+    items_block = "\n".join(
+        f"{i+1}. [Source: {c['source_name']}] {c['topic']}"
+        for i, c in enumerate(items)
+    )
+
+    prompt = f"""You are an editorial writer for Blank, a culture intelligence platform focused on sneakers, fashion, music, sports, tech, and internet culture.
+
+For each breaking news item below, write:
+1. Why it matters — 2-3 sentences, editorial and specific. Explain the cultural significance of this exact story right now.
+2. Hook — a carousel post hook in this format: [TRIGGER: word] First line. / Second line. / Third line.
+
+Respond with a JSON array only — one object per item, same order as input:
+[{{"why": "<string>", "hook": "<string>"}}]
+
+Items:
+{items_block}"""
+
+    try:
+        resp = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=300 * len(items),
+            messages=[{"role": "user", "content": prompt}],
+        )
+        raw = resp.content[0].text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("```")[1]
+            if raw.startswith("json"):
+                raw = raw[4:]
+        results = json.loads(raw)
+    except Exception as e:
+        print(f"   ⚠️  Sonnet escalation failed: {e}")
+        return
+
+    if len(results) != len(items):
+        print(f"   ⚠️  Sonnet returned {len(results)} results for {len(items)} items — skipping escalation.")
+        return
+
+    now = datetime.now(tz=timezone.utc)
+    timestamp    = now.strftime("%Y-%m-%d-%H%M")
+    display_time = now.strftime("%Y-%m-%d at %I:%M %p")
+
+    blocks = []
+    for i, (item, result) in enumerate(zip(items, results), 1):
+        score = item.get("haiku_score", 9)
+        why   = result.get("why", "").strip()
+        hook  = result.get("hook", "").strip()
+
+        block  = f"## Pick #{i} — Score: {score}/10\n\n"
+        block += f"**{item['topic']}**\n"
+        block += f"*{item['source_name']}*\n"
+        block += f"[Read the full article →]({item['search_url']})\n"
+        block += "**Live Pick:** true\n"
+        if why:
+            block += f"\n**Why it matters:**\n{why}\n"
+        if hook:
+            block += f"\n**Hook:**\n{hook}\n"
+        block += "\n---\n"
+        blocks.append(block)
+        print(f"   🚀 Escalated: {item['topic'][:70]}")
+
+    header  = f"# Live Picks — {display_time}\n\n"
+    header += f"> **Source:** Live feed — Breaking news monitor\n"
+    header += f"> **Picks surfaced:** {len(blocks)}\n\n---\n\n"
+
+    os.makedirs("picks", exist_ok=True)
+    filepath = f"picks/picks-{timestamp}.md"
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(header + "\n".join(blocks))
+
+    print(f"   📝 Wrote {len(blocks)} live pick(s) to {filepath}")
 
 
 def send_breaking_push(new_items: list[dict]) -> None:
@@ -429,7 +518,13 @@ def main():
     else:
         new_items = []
 
-    print(f"\n   {'🔴' if new_items else '✅'} {len(new_items)} new breaking item(s) this check.")
+    # 9+ items get escalated to Sonnet → main feed + push notification
+    escalate_items = [item for item in new_items if item.get("haiku_score", 0) >= 9]
+    if escalate_items:
+        print(f"\n   🚀 Escalating {len(escalate_items)} item(s) to Sonnet for main feed...")
+        escalate_to_sonnet(escalate_items)
+
+    print(f"\n   {'🔴' if new_items else '✅'} {len(new_items)} new item(s) this check ({len(escalate_items)} escalated).")
 
     # ── Merge + prune ─────────────────────────────────────────────────────────
     existing     = load_breaking_news()
@@ -442,15 +537,20 @@ def main():
     ]
     for item in new_items:
         if item["id"] not in existing_ids:
-            kept.insert(0, item)
+            kept.append(item)
+
+    # 9+ items pinned to top; 8s flow chronologically below
+    tier_high = sorted([x for x in kept if x.get("haiku_score", 0) >= 9], key=lambda x: x.get("detected_at", ""), reverse=True)
+    tier_low  = sorted([x for x in kept if x.get("haiku_score", 0) < 9],  key=lambda x: x.get("detected_at", ""), reverse=True)
+    kept = tier_high + tier_low
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump({"items": kept, "last_checked": now_iso}, f, indent=2, ensure_ascii=False)
     print(f"   📝 {OUTPUT_FILE}: {len(kept)} active item(s)")
 
-    # ── Push notification ──────────────────────────────────────────────────────
-    if new_items:
-        send_breaking_push(new_items)
+    # ── Push notification — only for 9+ escalated items ────────────────────────
+    if escalate_items:
+        send_breaking_push(escalate_items)
 
     # ── Persist state ─────────────────────────────────────────────────────────
     save_state(known_ids)

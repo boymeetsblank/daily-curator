@@ -4,6 +4,17 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-28] Live feed overhaul — tighter gate, Sonnet escalation, LIVE badge
+
+- Rewrote Haiku quality gate prompt: scores for "did something just happen AND does it matter" — pass threshold raised from 7 to 8
+- Items scoring 9+ are escalated to Sonnet, which writes editorial context and a carousel hook, then saves a picks markdown file so they appear in the main feed
+- Push notifications now only fire for 9+ escalated items, not all gate-passers
+- 9+ items are pinned to the top of the Live section; 8s flow chronologically below
+- Live picks in the main feed display a red LIVE badge in the card meta row
+- `deploy-pages.yml` now parses the `from_live` field from picks markdown files
+
+---
+
 ## [2026-04-28] Live section feed window widened to 30 minutes
 
 Increased `FEED_WINDOW_MINUTES` from 15 to 30 in `breaking_news_check.py` to reduce missed articles from slow feeds and delayed cron runs.
