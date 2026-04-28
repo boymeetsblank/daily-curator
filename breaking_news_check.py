@@ -3,7 +3,7 @@ breaking_news_check.py — Breaking News Monitor
 
 Sources:
   1. Google Trends RSS — velocity spikes (topics newly entering the top N)
-  2. Wire services (AP, BBC, NPR) — articles published in the last ~15 min
+  2. Your Inoreader sources (via sources.json RSS URLs) — articles published in the last ~15 min
 
 Runs every 5 minutes via GitHub Actions cron.
 Each new item is optionally enriched with a one-sentence context via Claude Haiku
@@ -31,11 +31,7 @@ BREAKING_NEWS_TTL_HOURS = 6
 WIRE_WINDOW_MINUTES = 15   # articles published this recently count as breaking
 MAX_KNOWN_WIRE_IDS  = 500  # cap state file growth
 
-WIRE_FEEDS = [
-    {"name": "AP News",  "url": "https://feeds.apnews.com/rss/apf-topnews"},
-    {"name": "BBC News", "url": "https://feeds.bbci.co.uk/news/rss.xml"},
-    {"name": "NPR News", "url": "https://feeds.npr.org/1001/rss.xml"},
-]
+SOURCES_FILE = "sources.json"
 
 STATE_FILE  = "breaking_news_state.json"
 OUTPUT_FILE = "breaking_news.json"
@@ -105,7 +101,7 @@ def fetch_trending_topics() -> list[dict]:
     return topics
 
 
-# ── Source 2: Wire services ───────────────────────────────────────────────────
+# ── Source 2: Your subscribed feeds (sources.json) ───────────────────────────
 
 def _parse_pubdate(text: str) -> datetime | None:
     if not text:
@@ -115,6 +111,23 @@ def _parse_pubdate(text: str) -> datetime | None:
         return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt
     except Exception:
         return None
+
+
+def load_source_feeds() -> list[dict]:
+    """Load enabled RSS feeds from sources.json (your Inoreader subscriptions)."""
+    try:
+        with open(SOURCES_FILE, encoding="utf-8") as f:
+            sources = json.load(f)
+        feeds = [
+            {"name": s["name"], "url": s["rss"]}
+            for s in sources
+            if s.get("enabled", True) and s.get("rss")
+        ]
+        print(f"      Loaded {len(feeds)} feeds from {SOURCES_FILE}")
+        return feeds
+    except Exception as e:
+        print(f"      ⚠️  Could not load {SOURCES_FILE}: {e}")
+        return []
 
 
 def fetch_wire_articles(feed: dict, window_minutes: int) -> list[dict]:
@@ -233,9 +246,9 @@ def main():
                 item["context"] = context
             new_items.append(item)
 
-    # ── Wire services ─────────────────────────────────────────────────────────
-    print("\n   📰 Wire services...")
-    for feed in WIRE_FEEDS:
+    # ── Your sources (sources.json RSS feeds) ────────────────────────────────
+    print("\n   📰 Your sources...")
+    for feed in load_source_feeds():
         articles = fetch_wire_articles(feed, WIRE_WINDOW_MINUTES)
         for art in articles:
             wid = topic_id(art["link"])

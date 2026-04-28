@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-27] Fix: breaking news — use sources.json feeds instead of AP/BBC/NPR
+
+Replaced hardcoded wire services (AP News, BBC, NPR) with a dynamic read from `sources.json`, so breaking news now monitors the exact RSS feeds from your Inoreader subscriptions. No API calls — direct RSS polling only.
+
 ## [2026-04-27] Feat: breaking news — fix dead pipeline, add wire services + Haiku enrichment
 
 Fixed the breaking news pipeline which had never successfully run (state files never existed, XML parse errors were uncaught). Rewrote `breaking_news_check.py`: hardened Google Trends with proper XML error handling, added AP News/BBC/NPR RSS as wire sources detecting articles from the last 15 min, and enriched each new item with a Claude Haiku context line. Updated `breaking_news.yml`: cron 15min → 5min, concurrency guard, git pull moved before script runs, ANTHROPIC_API_KEY added. Updated `renderBreakingCard` in `index.html`: shows context, source label, and correct CTA per source type.
@@ -86,38 +90,9 @@ Increased hook headline font from Bebas Neue 76px → 84px and "Why it matters" 
 
 ## [2026-04-21] Update: digest_publisher.py — WSJ Magazine slide redesign + Google Fonts fix
 
-**Font downloading** — replaced broken GitHub raw URLs with a Google Fonts API approach. `_fetch_gfont()` hits `fonts.googleapis.com/css2` with a desktop User-Agent (which forces TTF response), parses the `url()` from the CSS, and downloads the file. Added Inter Medium (wght 500) alongside Inter Regular. Fonts cached locally after first download; failed downloads fall back to PIL default silently.
-
-**Cover slide redesign** — full-bleed Editor's Pick image (entropy-cropped to 1080×1350), 45% black overlay for legibility, Bebas Neue date at 180px centered with +200 tracking (36px/char), Inter Medium subline at 18px in white 80% opacity with 4px letter tracking, 1px white border at 60% opacity inset 20px. Dark background fallback when no image.
-
-**Story slide redesign (WSJ Magazine standard)** — image area is now 1080×620px (was half of 1350); text area 730px. 1px separator rule at image/text boundary. Text area layout: category tag (Inter Medium 11px, #888888, all caps, 6px tracking) → 8px gap → Bebas 72px headline leading 1.0, max 3 lines with ellipsis → 20px gap → 40px editorial divider rule #DDDDDD → 20px gap → why it matters (Inter Regular 15px, #444444, leading 1.6, max 2 lines) → source attribution pinned 40px from bottom ("VIA SOURCE", Inter Medium 12px, 4px tracking). 1px text-area border inset 20px. No centered text, no shadows, no gradients.
-
-**Editor's Pick** — 3px flush-left accent border in rarity color spanning full text area height. Rarity label top-right (Inter Medium 10px, 6px tracking). All other slides strictly B&W.
-
-**Letter spacing** — new `_draw_tracked()` renders each character individually with configurable per-character spacing. New `_truncate_lines()` clips overflow with ellipsis.
-
-**Cover sourcing** — images now sourced for all 5 stories before any slide renders; cover passes Editor's Pick image directly to `render_cover()`.
+Replaced broken GitHub raw URL font downloads with Google Fonts API approach. Story slides redesigned to WSJ Magazine standard: 1080×620 image area, 730px text zone with category tag → Bebas 72px headline → editorial divider rule → why-it-matters body copy → source attribution pinned at bottom. Editor's Pick gets 3px flush-left accent border in rarity color.
 
 ## [2026-04-21] Update: digest_publisher.py — entropy-based smart image cropping
 
-**`digest_publisher.py`**
-- Replaced center-crop with entropy-based smart cropping (`_smart_crop` + `_entropy_offset`).
-- Images are first scaled to cover the 1080×675 target, then the excess dimension is cropped by finding the contiguous 32px-block window with the highest total entropy — keeping the most visually significant region in frame rather than blindly centering.
-- No change to output dimensions or JPEG quality.
-
-## [2026-04-21] New: digest_publisher.py — Daily Digest with Auto-Sourced Images
-
-**`digest_publisher.py`** (new standalone module)
-- Runs automatically after the 7:30PM CT (00:30 UTC) pipeline via a new GitHub Actions step.
-- Selects the top 5 stories from the latest `picks/*.md` (cluster primaries, ranked by score).
-- **Editor's Pick** — highest-rarity story (score 10=Legendary/#3B82F6, 9=Epic/#8B5CF6, otherwise Top Pick/#F97316). Ties broken by Claude Sonnet on cultural weight.
-- **Claude Sonnet copy** — one API call generates: cover subline (≤5 words), per-story category tag, Instagram/TikTok/Threads/Substack copy, and a one-line slide caption.
-- **Image sourcing** per slide: pre-scraped og:image from picks file → BeautifulSoup re-scrape → Unsplash API → Pexels API → placeholder.
-- **6 slides** output to `digests/YYYY-MM-DD/`:
-  - `slide_00_cover.jpg`: white canvas, Bebas Neue date ("APR 21"), Claude-generated subline, 1px border.
-  - `slide_01–05.jpg`: top 1080×675 sourced image; bottom 1080×675 text area (category, Bebas headline, source, why-it-matters, 1px bottom rule). Editor's Pick slide adds 3px left accent in rarity color + rarity label top-right.
-- **`digest.md`**: full platform copy for all 5 stories in markdown.
-- Canvas: 1080×1350px, JPEG quality 95. Fonts: Bebas Neue + Inter (auto-downloaded to `fonts/`).
-
-**`.github/workflows/daily_curator.yml`** — added two steps (digest publish + digest commit) gated to the 7:30PM CT (00:30 UTC) run. Digest step uses `|| echo` to skip gracefully on failure without blocking the workflow.
+Replaced center-crop with entropy-based smart cropping (`_smart_crop` + `_entropy_offset`). Images scaled to cover target then cropped by finding the highest-entropy 32px-block window, keeping the most visually significant region in frame.
 
