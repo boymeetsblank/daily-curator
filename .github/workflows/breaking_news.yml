@@ -34,16 +34,18 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests anthropic
+        run: pip install requests anthropic pywebpush
 
       - name: Check for breaking news
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_PUBLIC_KEY:  ${{ secrets.VAPID_PUBLIC_KEY }}
         run: python3 breaking_news_check.py
 
       - name: Commit and push if changed
         run: |
-          git add breaking_news.json breaking_news_state.json
+          git add breaking_news.json breaking_news_state.json subscriptions.json
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "breaking: update $(date +'%Y-%m-%d %H:%M UTC')"
           git push origin main
