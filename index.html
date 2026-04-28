@@ -1645,6 +1645,15 @@
     ───────────────────────────────────────── */
     #breaking-section { margin-bottom: 12px; }
 
+    .breaking-scroll {
+      max-height: 192px;   /* ~3 rows */
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(220,38,38,0.3) transparent;
+    }
+    .breaking-scroll::-webkit-scrollbar       { width: 3px; }
+    .breaking-scroll::-webkit-scrollbar-thumb { background: rgba(220,38,38,0.3); border-radius: 2px; }
+
     .breaking-label-row {
       font-size: 9.5px;
       font-weight: 700;
@@ -3740,7 +3749,7 @@
     if (!items?.length) return;
     const c = document.getElementById('breaking-section');
     if (!c) return;
-    c.innerHTML = `<div class="breaking-label-row">Breaking now</div>`+items.map(renderBreakingCard).join('');
+    c.innerHTML = `<div class="breaking-label-row">Breaking now</div><div class="breaking-scroll">${items.map(renderBreakingCard).join('')}</div>`;
   }
 
   let lastBreakingId = null;
