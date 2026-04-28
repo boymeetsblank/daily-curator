@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-28] Live section feed window widened to 30 minutes
+
+Increased `FEED_WINDOW_MINUTES` from 15 to 30 in `breaking_news_check.py` to reduce missed articles from slow feeds and delayed cron runs.
+
+---
+
 ## [2026-04-28] Fix: breaking_news_check.py — Haiku batch quality gate
 
 Replaced the zero-filter approach (every article from every source in the last

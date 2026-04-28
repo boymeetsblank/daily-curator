@@ -26,7 +26,7 @@ import requests
 # ── Config ────────────────────────────────────────────────────────────────────
 
 BREAKING_NEWS_TTL_HOURS = 6
-FEED_WINDOW_MINUTES     = 15   # articles published this recently count as breaking
+FEED_WINDOW_MINUTES     = 30   # articles published this recently count as breaking
 MAX_KNOWN_IDS           = 500  # cap state file growth
 
 SOURCES_FILE = "sources.json"
