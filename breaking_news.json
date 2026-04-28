@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "id": "c054b2cc51e8",
+      "topic": "The UK’s Answer to Darpa Wants to Rewire the Human Brain",
+      "traffic": "",
+      "detected_at": "2026-04-28T18:07:11.783966+00:00",
+      "search_url": "https://www.wired.com/story/kathleen-fisher-jacques-carolan-aria-wired-health/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "context": "UK launches brain-computer interface research to rival US"
+    },
+    {
+      "id": "d6f8572c94a2",
+      "topic": "Maison Margiela’s Numeric Tag System Becomes A Shroud On Latest Salomon Collaboration",
+      "traffic": "",
+      "detected_at": "2026-04-28T18:07:11.783966+00:00",
+      "search_url": "https://sneakernews.com/2026/04/28/mm6-margiela-salomon-summer-2026/",
+      "source_name": "Sneaker News",
+      "source_type": "feed",
+      "context": "Margiela's numeric codes reshape Salomon's design language"
+    },
+    {
       "id": "54d813186fd4",
       "topic": "Opening arguments begin in Elon Musk and Sam Altman courtroom showdown - The Guardian",
       "traffic": "",
@@ -119,77 +139,7 @@
       "source_name": "Hypebeast",
       "source_type": "feed",
       "context": "NIGO's archive reveals how Japanese streetwear fundamentally reshaped global fashion hierarchy and luxury aesthetics"
-    },
-    {
-      "id": "420a6569e684",
-      "topic": "Century Health: Interview With Founder & CEO Vish Srivastava About The Health Technology Company - Pulse 2.0",
-      "traffic": "",
-      "detected_at": "2026-04-28T10:36:16.032665+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8wdldaVUZ1VzRvWlM1b2lTQmlZUnpzSWpfNEFCOVdfN2J4MUJxb3BmRk9pTXhXNnNLd2xUdXQzejZZTUt0TFhFVnczcjNrQVFWdzc5czhIX3A2aVR1cTdiMHp1ZW10Z2ZWa3hEbVkwMlNzeVk2ZTZR0gF8QVVfeXFMTllXbVYzbXU1UVlrTnpiZXlPYURFRVdYcng1R0RVdUo4dGk1YnVfVEx3bGNCYjRqX0UzZUdPZGpTNzhSYWI5aU5iWGlJYWNUMnl6b1d2dkltTWhScm5XZUVyOTRxTVdyOGFwNGhWNkNzNlB6dlg2U1hoR05QNg?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "context": "Health tech founders of color remain underrepresented in venture capital despite growing demand for accessible care solutions"
-    },
-    {
-      "id": "a13fb4e18d31",
-      "topic": "Country analysis: Qatar defence market - Airforce Technology",
-      "traffic": "",
-      "detected_at": "2026-04-28T10:36:16.032665+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOM0U2bnRIZlg5cGtYN2c2QXJFYTM2WWZ5QUgwUWJwdkdodXc2MkJDM3A5SHowczZQZU5zbDVOUmVQQ2ZDUENjaHJheDJoZkZ4bThMWTEteHBCWURsQUQwUnJVQjZIbW9acEhTNFZuS3dSYlUtaGVXbzE1NnA1NUg4Vm1sdHJOSEtxZ2dv?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "context": "Qatar hosts U.S. military hub amid Middle East tensions and Gulf diplomatic realignments"
-    },
-    {
-      "id": "e81e1559e48d",
-      "topic": "How technology is reinvigorating the sports industry - Fast Company",
-      "traffic": "",
-      "detected_at": "2026-04-28T10:36:16.032665+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOem8xMm9hZDdVVjBJcnNPWk5laEJhTkVxVmszTG5wYnhnSEVDR1pDeEZ3dUVXU3l5Q3RzQlNZWTJDdko3WkU1NUtzS3RzQmREdHRGMUtaR3VNZVY2LVVDQWI1QTRPNkpmZkJlZ1JUOXplaVlXUV9uMEc4dFZuV3BaSTJ4TXhlYnRaWGRHZnZTMlo5MWs?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "context": "Tech democratizes athlete access, disrupts legacy media power structures, reshapes fan engagement economics"
-    },
-    {
-      "id": "fab953a1e62c",
-      "topic": "Coca-Cola is about to report earnings. Here's what to expect",
-      "traffic": "",
-      "detected_at": "2026-04-28T10:36:16.032665+00:00",
-      "search_url": "https://www.cnbc.com/2026/04/28/coca-cola-ko-q1-2026-earnings.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "context": "Major corporations' earnings reveal consumer spending patterns amid inflation and economic uncertainty concerns"
-    },
-    {
-      "id": "facd4bf6ceb7",
-      "topic": "UPS beats Wall Street estimates on top and bottom lines",
-      "traffic": "",
-      "detected_at": "2026-04-28T10:36:16.032665+00:00",
-      "search_url": "https://www.cnbc.com/2026/04/28/ups-ups-q1-2026-earnings.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "context": "Logistics firms signal whether consumer spending and supply chains can sustain economic optimism amid recession fears"
-    },
-    {
-      "id": "e6d0b7d33621",
-      "topic": "GM raises 2026 guidance amid $500 million tariff refund, topping Wall Street's earnings expectations",
-      "traffic": "",
-      "detected_at": "2026-04-28T10:36:16.032665+00:00",
-      "search_url": "https://www.cnbc.com/2026/04/28/general-motors-gm-earnings-q1-2026.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "context": "GM's tariff refund signals corporate winners emerging from Trump's trade policy reshuffling"
-    },
-    {
-      "id": "724e67f8849b",
-      "topic": "Stop Trying to Unmask Satoshi Nakamoto",
-      "traffic": "",
-      "detected_at": "2026-04-28T10:36:16.032665+00:00",
-      "search_url": "https://www.wired.com/story/the-big-interview-podcast-ben-mckenzie-crypto/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "context": "Bitcoin's creator anonymity protects decentralized vision from personality cult worship and government targeting"
     }
   ],
-  "last_checked": "2026-04-28T16:29:58.358150+00:00"
+  "last_checked": "2026-04-28T18:07:11.783966+00:00"
 }
