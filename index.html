@@ -3749,7 +3749,7 @@
     if (!items?.length) return;
     const c = document.getElementById('breaking-section');
     if (!c) return;
-    c.innerHTML = `<div class="breaking-label-row">Breaking now</div><div class="breaking-scroll">${items.map(renderBreakingCard).join('')}</div>`;
+    c.innerHTML = `<div class="breaking-label-row">Live</div><div class="breaking-scroll">${items.map(renderBreakingCard).join('')}</div>`;
   }
 
   let lastBreakingId = null;
