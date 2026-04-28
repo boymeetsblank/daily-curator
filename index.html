@@ -1744,6 +1744,22 @@
     #new-picks-banner:hover { opacity: 0.88; }
     .banner-x { margin-left: 10px; opacity: 0.45; }
 
+    #live-picks-banner {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 501;
+      background: #ef4444;
+      color: #fff;
+      padding: 10px 24px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      animation: slideDown 0.22s ease both;
+    }
+    #live-picks-banner:hover { opacity: 0.9; }
+
     @keyframes slideDown {
       from { transform: translateY(-100%); }
       to   { transform: translateY(0); }
@@ -1822,6 +1838,7 @@
 <div id="new-picks-banner" role="status" onclick="dismissBanner()">
   New picks available — click to refresh <span class="banner-x">✕</span>
 </div>
+<div id="live-picks-banner" role="status" onclick="injectLivePicks()"></div>
 
 <!-- ── Topbar ── -->
 <div id="topbar">
@@ -3340,6 +3357,14 @@
       ? `<div id="archive-section" style="display:none">${archiveHtml}</div>` : '';
 
     document.getElementById('feed-container').innerHTML = todayHtml + archiveWrapper;
+
+    // Track which live picks are already rendered so the poller doesn't re-surface them
+    for (const run of runs) {
+      for (const pick of run.picks) {
+        if (pick.from_live && pick.link) renderedLiveUrls.add(pick.link);
+      }
+    }
+
     applyReadState();
     applyVoteState();
     buildSidebar(runs);
@@ -3496,10 +3521,36 @@
 
   // ── New picks banner ──────────────────────────────────────────
   let picksFingerprint=null, bannerDismissed=false;
+  let renderedLiveUrls = new Set();
+  let pendingLivePicks  = [];
 
   function dismissBanner() {
     bannerDismissed = true;
     document.getElementById('new-picks-banner').style.display='none';
+  }
+
+  function showLivePicksBanner(count) {
+    const el = document.getElementById('live-picks-banner');
+    el.textContent = `${count} new live pick${count > 1 ? 's' : ''} — tap to view`;
+    el.style.display = 'block';
+  }
+
+  function injectLivePicks() {
+    document.getElementById('live-picks-banner').style.display = 'none';
+    const sectionToday = document.getElementById('section-today');
+    if (!sectionToday || !pendingLivePicks.length) return;
+    let html = '';
+    for (const {pick, ctDate, runIsoTs} of pendingLivePicks) {
+      html += currentView === 'card'
+        ? renderCard(pick, ctDate, runIsoTs)
+        : renderPicksGrouped([pick], ctDate, runIsoTs);
+      if (pick.link) renderedLiveUrls.add(pick.link);
+    }
+    pendingLivePicks = [];
+    sectionToday.insertAdjacentHTML('afterbegin', html);
+    applyReadState();
+    applyVoteState();
+    refreshTimestamps();
   }
 
   async function checkForNewPicksAndTrends() {
@@ -3509,12 +3560,32 @@
       const data = await res.json();
       if (!data.runs?.length) return;
 
+      // Check for new live picks first
+      const newLive = [];
+      for (const run of data.runs) {
+        const ctDate   = run.ct_date || run.date;
+        const runIsoTs = (run.date && run.time)
+          ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z` : null;
+        for (const pick of run.picks) {
+          if (pick.from_live && pick.link && !renderedLiveUrls.has(pick.link)) {
+            newLive.push({pick, ctDate, runIsoTs});
+          }
+        }
+      }
+      if (newLive.length) {
+        pendingLivePicks = newLive;
+        showLivePicksBanner(newLive.length);
+      }
+
+      // Regular new-run banner — only if no live picks detected
       const latest = data.runs[0];
       const fp     = (latest.date||'')+(latest.time||'');
       if (!picksFingerprint) { picksFingerprint = fp; }
-      else if (fp !== picksFingerprint && !bannerDismissed) {
+      else if (fp !== picksFingerprint) {
         picksFingerprint = fp;
-        document.getElementById('new-picks-banner').style.display = 'block';
+        if (!bannerDismissed && !newLive.length) {
+          document.getElementById('new-picks-banner').style.display = 'block';
+        }
       }
 
       // Update trends
@@ -3720,7 +3791,7 @@
   loadFeed();
   loadSaved();
   setInterval(tick, 60_000);
-  setInterval(checkForNewPicksAndTrends, 5*60_000);
+  setInterval(checkForNewPicksAndTrends, 2*60_000);
   applyTheme(localStorage.getItem('blank_theme')||'light');
   document.body.classList.toggle('card-view', currentView === 'card');
   document.querySelectorAll('.vt-btn').forEach(btn =>

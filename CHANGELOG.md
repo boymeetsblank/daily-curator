@@ -4,6 +4,16 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-28] Live picks inject into main feed without page refresh
+
+- Main feed polls picks_data.json every 2 minutes (was 5)
+- New live picks (from_live: true) detected during polling show a red "N new live picks — tap to view" banner
+- Tapping the banner injects the new cards at the top of today's feed without re-rendering or resetting scroll
+- Regular "new picks available" banner still fires for normal curator runs, but is suppressed when a live picks banner is shown instead
+- renderedLiveUrls set prevents already-visible picks from re-surfacing on subsequent polls
+
+---
+
 ## [2026-04-28] Live feed overhaul — tighter gate, Sonnet escalation, LIVE badge
 
 - Rewrote Haiku quality gate prompt: scores for "did something just happen AND does it matter" — pass threshold raised from 7 to 8
