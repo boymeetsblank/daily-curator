@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-27] Feat: YouTube Trending + TikTok Trending (3x/day) + Reddit Hot Posts (breaking)
+
+Added three new cultural signals. `daily_curator.py`: `fetch_youtube_trends()` calls Apify actor `streamers~youtube-trending-videos` (US, 20 results); `fetch_tiktok_trends()` calls `clockworks~free-tiktok-scraper` (20 results). Both follow the exact `fetch_twitter_trends()` pattern and merge into `all_items` + `trending_topics` for velocity context. Scoring prompt updated to name all four trend sources and note that YouTube/TikTok viral items precede mainstream coverage. `breaking_news_check.py`: `fetch_reddit_hot_posts()` polls each Reddit subreddit in `sources.json` via the free hot.json API (no auth), surfaces posts with ≥500 upvotes not yet seen, enriches with Haiku context, and tracks IDs in the existing `known_ids` state.
+
 ## [2026-04-27] Feat: breaking news — Web Push notifications + remove dead Google Trends RSS
 
 Google Trends RSS endpoint was returning 404 (Google deprecated it), meaning the monitor was silently producing nothing from that source on every run. Removed entirely. Added Web Push notifications to the breaking news workflow: when new items are detected, a "Breaking" push is sent to all subscribers with the Haiku context as the body. Updated `breaking_news.yml` to pass `VAPID_PRIVATE_KEY`/`VAPID_PUBLIC_KEY` and install `pywebpush`. State file simplified to a single `known_ids` list (no longer splits trend vs wire IDs).
@@ -93,6 +97,3 @@ Increased hook headline font from Bebas Neue 76px → 84px and "Why it matters" 
 **Why it matters body copy** — slide body text is now sourced directly from `pick["why"]` (the picks file "Why it matters" section) rather than the Claude-generated `why_slide`. Provides more substantive editorial context per slide.
 
 
-## [2026-04-21] Update: digest_publisher.py — WSJ Magazine slide redesign + Google Fonts fix
-
-Replaced broken GitHub raw URL font downloads with Google Fonts API approach. Story slides redesigned to WSJ Magazine standard: 1080×620 image area, 730px text zone with category tag → Bebas 72px headline → editorial divider rule → why-it-matters body copy → source attribution pinned at bottom. Editor's Pick gets 3px flush-left accent border in rarity color.

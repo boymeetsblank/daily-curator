@@ -694,8 +694,37 @@ def load_today_clusters() -> dict:
         return empty
 
 
+def _annotate_cluster_velocities(clusters: dict) -> None:
+    """Add velocity and velocity_boosted fields to each cluster entry in place."""
+    for cluster in clusters.values():
+        member_count = cluster.get("member_count", 1)
+        first_seen = cluster.get("first_seen")
+        last_updated = cluster.get("last_updated")
+
+        cluster["velocity"] = 0.0
+        cluster["velocity_boosted"] = False
+
+        if member_count <= 1 or not first_seen or not last_updated:
+            continue
+
+        try:
+            first_dt = datetime.fromisoformat(first_seen)
+            last_dt = datetime.fromisoformat(last_updated)
+            hours = (last_dt - first_dt).total_seconds() / 3600
+        except (ValueError, TypeError):
+            continue
+
+        if hours < 0.5:
+            continue
+
+        velocity = (member_count - 1) / hours
+        cluster["velocity"] = round(velocity, 2)
+        cluster["velocity_boosted"] = velocity >= 1.0
+
+
 def save_today_clusters(data: dict) -> None:
     """Persist cross-run cluster data to today_clusters.json."""
+    _annotate_cluster_velocities(data.get("clusters", {}))
     try:
         with open(TODAY_CLUSTERS_PATH, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
@@ -911,6 +940,70 @@ def fetch_google_trends() -> list[dict]:
         return []
 
 
+def fetch_youtube_trends() -> list[dict]:
+    """
+    Fetch top trending YouTube videos in the US via Apify.
+    Returns a list of trend items ready for Claude scoring, or [] if unavailable.
+    """
+    print(f"\n▶️  Fetching YouTube Trending via Apify...")
+    try:
+        items = _run_apify_actor(
+            "streamers~youtube-trending-videos",
+            {"regionCode": "US", "maxResults": 20},
+        )
+        now_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        trends = []
+        for item in items[:20]:
+            name = (item.get("title") or item.get("name") or
+                    item.get("videoTitle") or "").strip()
+            if not name:
+                continue
+            trends.append({
+                "title":     name,
+                "link":      None,
+                "summary":   "",
+                "source":    "YouTube Trending",
+                "published": now_str,
+            })
+        print(f"   ✅ Got {len(trends)} trending videos from YouTube.")
+        return trends
+    except Exception as e:
+        print(f"   ⚠️  YouTube Trends unavailable (continuing without): {e}")
+        return []
+
+
+def fetch_tiktok_trends() -> list[dict]:
+    """
+    Fetch top trending TikTok videos/hashtags via Apify.
+    Returns a list of trend items ready for Claude scoring, or [] if unavailable.
+    """
+    print(f"\n🎵 Fetching TikTok Trending via Apify...")
+    try:
+        items = _run_apify_actor(
+            "clockworks~free-tiktok-scraper",
+            {"type": "trending", "maxItems": 20},
+        )
+        now_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        trends = []
+        for item in items[:20]:
+            name = (item.get("text") or item.get("title") or
+                    item.get("name") or item.get("hashtag") or "").strip()
+            if not name:
+                continue
+            trends.append({
+                "title":     name,
+                "link":      None,
+                "summary":   "",
+                "source":    "TikTok Trending",
+                "published": now_str,
+            })
+        print(f"   ✅ Got {len(trends)} trending items from TikTok.")
+        return trends
+    except Exception as e:
+        print(f"   ⚠️  TikTok Trends unavailable (continuing without): {e}")
+        return []
+
+
 def apply_hard_article_cap(articles: list[dict]) -> list[dict]:
     """
     After per-source capping, enforce a hard ceiling of MAX_ARTICLES_HARD_CAP
@@ -1106,7 +1199,7 @@ Scoring anchors:
 - 6: Made the cut — relevant and real, but not urgent. A signal for you to tune.
 - 1–5: Filtered out — noise, too dry, too predictable, or irrelevant.
 
-When in doubt between a 6 and a 7, score it a 6.
+When in doubt between a 6 and a 7, score it a 7.
 
 10/10 RARITY RULE: A 10/10 story should feel genuinely rare — roughly once every 1–3 runs, but only when truly earned. Never award 10 just to fill the tier. If nothing clears the bar today, that's correct. When a story genuinely clears this bar, do not hesitate to award it. Holding back a deserved 10 is as much an editorial failure as awarding an undeserved one.
 
@@ -1121,11 +1214,11 @@ RECENTLY COVERED RULE: The following story titles were already featured in this 
 Recently covered (do not re-pick):
 {recently_covered_block}
 
-TREND ITEMS: Some items have Source "X (Twitter) Trending" or "Google Trends" — these are raw trending topics, not articles. Evaluate them on whether the topic itself is culturally significant and worth a reader's attention. Score them as you would any other item.
+TREND ITEMS: Some items have Source "X (Twitter) Trending", "Google Trends", "YouTube Trending", or "TikTok Trending" — these are raw trending topics or videos, not articles. Evaluate them on whether the topic itself is culturally significant and worth a reader's attention. Score them as you would any other item. YouTube and TikTok trends carry strong cultural signal — a video going viral on either platform often precedes broader mainstream coverage.
 
 CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 3+ sources, treat this as evidence of cultural relevance. Add 1 point to the score (if it's already strong across other criteria).
 
-CULTURAL VELOCITY SIGNALS: The following topics are currently trending live on X (Twitter) and Google Trends. If an article's subject directly intersects with one of these topics, that's a signal of real-time cultural momentum — treat it as additional evidence for the TRENDING and CULTURAL criteria. Do not add points mechanically; use this to inform your editorial judgment about whether the story is landing in the cultural conversation right now.
+CULTURAL VELOCITY SIGNALS: The following topics are currently trending live on X (Twitter), Google Trends, YouTube, and TikTok. If an article's subject directly intersects with one of these topics, that's a signal of real-time cultural momentum — treat it as additional evidence for the TRENDING and CULTURAL criteria. Do not add points mechanically; use this to inform your editorial judgment about whether the story is landing in the cultural conversation right now.
 {trending_context_block}
 
 For articles that score 6 or above, also provide:
@@ -1648,7 +1741,7 @@ If no articles cover the same underlying event, return:
     return articles
 
 
-def select_top_picks(articles: list[dict]) -> list[dict]:
+def select_top_picks(articles: list[dict], today_clusters: dict | None = None) -> list[dict]:
     strong = [a for a in articles if a.get("score", 0) >= MIN_SCORE]
     primaries = [a for a in strong if a.get("cluster_primary", True) is not False]
 
@@ -1659,11 +1752,16 @@ def select_top_picks(articles: list[dict]) -> list[dict]:
         if cid:
             cluster_scores.setdefault(cid, []).append(a["score"])
 
+    _tc = today_clusters or {}
+
     def _cluster_sort_key(a):
         scores = cluster_scores.get(a.get("cluster_id") or "", [])
         if len(scores) > 1:
-            # Cluster primary: rank by avg score, tie-break by cluster size then individual score
-            return (round(sum(scores) / len(scores), 1), len(scores), a["score"])
+            avg = round(sum(scores) / len(scores), 1)
+            cid = a.get("cluster_id", "")
+            boosted = _tc.get(cid, {}).get("velocity_boosted", False)
+            rank_score = min(avg + 1, 10) if boosted else avg
+            return (rank_score, len(scores), a["score"])
         # Solo article: rank by individual score
         return (float(a["score"]), 1, a["score"])
 
@@ -1983,12 +2081,14 @@ def main():
     print(f"\n🔗 Clustering articles by title similarity (threshold {CLUSTER_SIMILARITY_THRESHOLD:.0%})...")
     articles = tag_story_clusters(articles)
     articles = detect_cross_source_trends(articles)
-    twitter_trends = fetch_twitter_trends()
-    google_trends = fetch_google_trends()
-    all_items = articles + twitter_trends + google_trends
+    twitter_trends  = fetch_twitter_trends()
+    google_trends   = fetch_google_trends()
+    youtube_trends  = fetch_youtube_trends()
+    tiktok_trends   = fetch_tiktok_trends()
+    all_items = articles + twitter_trends + google_trends + youtube_trends + tiktok_trends
 
     # Extract plain topic names from trend items for the velocity signal prompt
-    trending_topics = [t["title"] for t in twitter_trends + google_trends if t.get("title")]
+    trending_topics = [t["title"] for t in twitter_trends + google_trends + youtube_trends + tiktok_trends if t.get("title")]
 
     # ── Topic-level cross-run dedup: load recent pick titles for Claude to suppress ──
     recently_covered = load_recently_covered_topics(days=3)
@@ -2016,7 +2116,8 @@ def main():
     save_seen_urls(seen_urls)
     print(f"   📋 Seen registry updated: +{new_count} new URL(s), {len(seen_urls)} total.")
 
-    top_picks = select_top_picks(evaluated_articles)
+    _annotate_cluster_velocities(today_data["clusters"])
+    top_picks = select_top_picks(evaluated_articles, today_clusters=today_data["clusters"])
 
     print(f"\n🔎 Filtering already-picked URLs...")
     top_picks = filter_already_picked_today(top_picks)

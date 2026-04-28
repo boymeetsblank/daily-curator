@@ -213,6 +213,96 @@ def fetch_feed_articles(feed: dict, window_minutes: int) -> list[dict]:
     return articles
 
 
+# ── Source: Reddit hot posts ──────────────────────────────────────────────────
+
+REDDIT_MIN_SCORE    = 500   # upvote threshold to surface a hot post
+REDDIT_HOT_LIMIT    = 10    # posts per subreddit
+
+_REDDIT_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; BreakingNewsBot/1.0; +https://boymeetsblank.github.io/daily-curator/)"
+}
+
+
+def _extract_subreddit(rss_url: str) -> str | None:
+    """Extract subreddit name from a reddit.com/r/<sub>... URL."""
+    import re
+    m = re.search(r"reddit\.com/r/([^/?#]+)", rss_url, re.IGNORECASE)
+    return m.group(1) if m else None
+
+
+def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
+    """
+    Fetch hot posts from each Reddit subreddit in sources.json.
+    Returns new items (not in known_set) that exceed REDDIT_MIN_SCORE.
+    """
+    try:
+        with open(SOURCES_FILE, encoding="utf-8") as f:
+            sources = json.load(f)
+    except Exception as e:
+        print(f"      ⚠️  Could not load {SOURCES_FILE} for Reddit: {e}")
+        return []
+
+    subreddits = []
+    for s in sources:
+        if not s.get("enabled", True):
+            continue
+        rss = s.get("rss", "")
+        sub = _extract_subreddit(rss)
+        if sub:
+            subreddits.append(sub)
+
+    if not subreddits:
+        return []
+
+    print(f"\n   🔴 Polling {len(subreddits)} Reddit subreddit(s) for hot posts...")
+    new_items = []
+
+    for sub in subreddits:
+        url = f"https://www.reddit.com/r/{sub}/hot.json?limit={REDDIT_HOT_LIMIT}"
+        try:
+            resp = requests.get(url, headers=_REDDIT_HEADERS, timeout=10)
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"      ⚠️  Could not fetch r/{sub}: {e}")
+            continue
+
+        posts = data.get("data", {}).get("children", [])
+        for child in posts:
+            post = child.get("data", {})
+            post_id   = post.get("id", "")
+            title     = (post.get("title") or "").strip()
+            score     = post.get("score", 0)
+            permalink = post.get("permalink", "")
+            url_dest  = post.get("url") or f"https://www.reddit.com{permalink}"
+
+            if not post_id or not title:
+                continue
+            if score < REDDIT_MIN_SCORE:
+                continue
+
+            aid = item_id(f"reddit:{post_id}")
+            if aid in known_set:
+                continue
+
+            print(f"   🔥 [r/{sub}] {title[:70]} ({score:,} upvotes)")
+            context = enrich_with_context(title)
+            item = {
+                "id":          aid,
+                "topic":       title,
+                "traffic":     f"{score:,} upvotes",
+                "detected_at": now_iso,
+                "search_url":  url_dest,
+                "source_name": f"r/{sub}",
+                "source_type": "reddit",
+            }
+            if context:
+                item["context"] = context
+            new_items.append(item)
+
+    return new_items
+
+
 # ── State ─────────────────────────────────────────────────────────────────────
 
 def load_state() -> dict:
@@ -282,6 +372,12 @@ def main():
                 new_items.append(item)
                 known_ids.append(aid)
                 known_set.add(aid)
+
+    reddit_items = fetch_reddit_hot_posts(known_set, now_iso)
+    for item in reddit_items:
+        new_items.append(item)
+        known_ids.append(item["id"])
+        known_set.add(item["id"])
 
     print(f"\n   {'🔴' if new_items else '✅'} {len(new_items)} new breaking item(s) this check.")
 
