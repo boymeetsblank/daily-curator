@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "id": "54d813186fd4",
+      "topic": "Opening arguments begin in Elon Musk and Sam Altman courtroom showdown - The Guardian",
+      "traffic": "",
+      "detected_at": "2026-04-28T16:29:58.358150+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSm1wcXk3Um1QV0JyQ3hQOG92eXNfSGgyS19xRHdwek5veDhtckNKQkpodFg2YWdIdWpZVWo5MDBjNkF6WjJQdnNkT09aeURPdDJSZlR4aXNOVUdqYXJHQ1NuMmhsQkpiZEpTM00xY2RxTk1DWFhnTlYtQmc4bWx1N2FJWmhIV3h6V0FJQ2h3?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "context": "Musk and Altman face off in high stakes legal battle"
+    },
+    {
+      "id": "e28653a85f38",
+      "topic": "US Supreme Court appears split over controversial use of ‘geofence’ search warrants",
+      "traffic": "",
+      "detected_at": "2026-04-28T16:29:58.358150+00:00",
+      "search_url": "https://techcrunch.com/2026/04/28/scotus-chatrie-geofence-search-warrant-ruling-arguments/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "context": "Supreme Court weighs digital privacy implications of geofence warrants"
+    },
+    {
       "id": "7e20b1b23fa7",
       "topic": "Marvell Technology, Inc. $MRVL Shares Sold by FengHe Fund Management Pte. Ltd. - MarketBeat",
       "traffic": "",
@@ -169,97 +189,7 @@
       "source_name": "WIRED",
       "source_type": "feed",
       "context": "Bitcoin's creator anonymity protects decentralized vision from personality cult worship and government targeting"
-    },
-    {
-      "id": "d3d4ce72a079",
-      "topic": "Seven Ways to Make a Perfect Wave: Comparing the Major Wavepool Technologies - Wave Pool Mag",
-      "traffic": "",
-      "detected_at": "2026-04-28T08:41:36.613595+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUV3NPRVJMYlQ3Nk9kOE8xckdodUlQNzQtVXJyVnpVVUdqMFlWa2pENjF2SUZFQ0twaU1uOUV1R3FlV3FQREc3eDk4YnZkbEVieGhQNVNKS2U5SkVnREVjdGdMNVJ3d3VZdWc?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "context": "Surfing democratization shifts from geography-dependent sport to accessible urban recreation technology"
-    },
-    {
-      "id": "c4eed9933709",
-      "topic": "Fal Will Be The Official Happy Horse 1.0 API Provider - Technology Org",
-      "traffic": "",
-      "detected_at": "2026-04-28T08:41:36.613595+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNb3M1bDFaT21OSUh6OVZYWHUyMkIzUTQwbG14a1Y1STBIN3lqQW5TMTVIUFFiMURmOEtHSTlYN0lMejN2UFBtZWtzY0pJOWhXQlNuVzRta2p5aFR4N2FvcS1OeldmalRuWUs2amtFMnM2M2xKdERUcm5FYzBOdjA1ZWdpTjgzQ2tWSFhway02aFVfT09JbXBn?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "context": "I can't find credible information about \"Fal,\" \"Happy Horse 1.0 API,\" or this technology organization to make a specific editorial claim about its cultural significance"
-    },
-    {
-      "id": "ab552d92daa3",
-      "topic": "Dreame Technology unveils rocket-assisted EV concept with 0.9-second acceleration - TechNode",
-      "traffic": "",
-      "detected_at": "2026-04-28T08:41:36.613595+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcDZOYVNjREFEQU9PZzRLVENyQWxzTmNnbFI1b08yb0t4Z2U3Q0NDaU53RUpocDgzZE84SFN6OFVRSXJZbWpvSUhBTlR5bWlWRnZ3aWFOTnFiRnd6T1dPbDFjTnNvbGZqcU94amZsZmM3MHZ4MmtISG1uRW1hdThqVFZ4VWsxVE00LXRUTlhLeFNibGlGYVhnajlqZ0U0NjFQMld2N2lpOGptNzJ0ZnFubUpSc0M?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "context": "EV acceleration theater masks real concerns: battery limits, grid readiness, safety validation"
-    },
-    {
-      "id": "879aeb789b7f",
-      "topic": "Natural Field Releases Research Findings on NFTriSolve® Co-Loading Liposome Technology - PA Media",
-      "traffic": "",
-      "detected_at": "2026-04-28T08:41:36.613595+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQYWlkSWMxYXBsM2E2VjV4V1F2QS1lX2pab2F3cEhfOXB0MUZGb3BHd09tV251blNKeHhpNFpOZVhib0RqQ0JITEY5SHlkNHN1NHYwcEVHYU5IZ3E2alRBek9RZ0xtZDRrTHU1cmY4bnRGS3dfMWNOb2x2RndSY3BnWm5UZXRyNFBZcUg0ZzVmZzI0b1paWGlKd2ZkMlpZaXlkb1lUaXNIWVNnT1czU1RXaGc3ODlzVzZQSmE1TWdjem0zbWUyMklhSXkzczQ3YUJfbksw?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "context": "I can't identify specific cultural significance from this headline alone. It appears to be a press release about pharmaceutical liposome technology, which would matter primarily to medical/biotech communities rather than broader culture"
-    },
-    {
-      "id": "ec34c393b45a",
-      "topic": "The Bloomberg Terminal Is Getting an AI Makeover, Like It or Not",
-      "traffic": "",
-      "detected_at": "2026-04-28T08:41:36.613595+00:00",
-      "search_url": "https://www.wired.com/story/the-bloomberg-terminal-is-getting-an-ai-makeover-like-it-or-not/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "context": "Wall Street's grip on financial information tightens as AI concentrates power among elite institutional traders"
-    },
-    {
-      "id": "6136c993c5cd",
-      "topic": "Lifezone's Hydromet Technology: The Science Behind the PGM Recycling Pilot - Crux Investor",
-      "traffic": "",
-      "detected_at": "2026-04-28T06:20:14.102741+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQLWNXYU9RbGFvOGo3Nlk3UzYwUVF4ZWcxcHpJVXBSZUIxUFVxa21XQWwtYXo3eHBmamlaczBManJhajhJN01kdEljckVJY3M0Nl9UbFRwLWJzUzBvMzNYc21fVVBLZms3NUNUa0o3akNHWmFiNnl1Y2JSTi1OQkZUdmZGd05hal9aZEtVdFkxSjg3QU9vZ1RGeUo2SGNXNjhtM3FzeWlmWE5maXc?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "context": "Precious metal recycling addresses supply chain vulnerabilities while managing e-waste environmental costs simultaneously"
-    },
-    {
-      "id": "9eb0a90000ae",
-      "topic": "Forget Nvidia: Why 'Worker Bees' Like Micron Technology, Texas Instruments Are Real AI Winners - Benzinga",
-      "traffic": "",
-      "detected_at": "2026-04-28T06:20:14.102741+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNV1BQRWpyZkF2XzNLYXVwUHg3UFJSREhJZGRwMndoQ2JpV3NpLTNYS1R2N3A5d2JzREkzaXlZUkVzUWRpSlVBRlNuVjF6MDRDenN2cTZzcXk1bEZ0UGJfNVFoMnZrOFY0MERxY0UtUFl6YTZrZnlBUVJVNWx3OGJDWnMwNjN1MWJSSHlMQVp5ajVLalFJN1lENHFVX1pCcTZvbm1xb1N3Y3YyX3FLam1SRl8tYkxuUQ?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "context": "AI infrastructure shifts focus from flashy chip designers to unsexy but essential semiconductor suppliers"
-    },
-    {
-      "id": "833b9eefcd6b",
-      "topic": "Experiencing history in Marietta with modern day technology - News and Sentinel",
-      "traffic": "",
-      "detected_at": "2026-04-28T06:20:14.102741+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWksxdUxwOUM3R204MVJUWUxNNkJGREJ6c1lTR0pzM19mVjJFRjdoSEo2elJkbXhRZmtNdWR2LTVQaldxeTQ1YVVMamdsTmN3MnE0OWcwa3ZxLWk3QkJ4QjN2dDFOZWkyeDlOYVNFNWs1YTg4Z3NUR3FfT2pWWXpGc2U4Z2lWZHFucEQyWDVrMkkyem9TNlVOWTJ3UlJTR0t4WWZRTkhkY1RfNGMxSVZuanlvUlhoWXM?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "context": "Digital storytelling reconnects communities to neglected local histories amid national polarization"
-    },
-    {
-      "id": "e3a51bf84268",
-      "topic": "Oil major BP beats profit expectations as Iran war boosts fuel prices",
-      "traffic": "",
-      "detected_at": "2026-04-28T06:20:14.102741+00:00",
-      "search_url": "https://www.cnbc.com/2026/04/28/bp-q1-earnings-oil-energy.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "context": "Geopolitical instability profits corporate giants while ordinary people suffer fuel cost inflation"
     }
   ],
-  "last_checked": "2026-04-28T12:15:30.856858+00:00"
+  "last_checked": "2026-04-28T16:29:58.358150+00:00"
 }
