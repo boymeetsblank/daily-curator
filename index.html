@@ -3757,7 +3757,7 @@
   let lastBreakingId = null;
   async function checkBreakingNews() {
     try {
-      const res = await fetch('breaking_news.json?_='+Date.now(),{cache:'no-store'});
+      const res = await fetch('https://raw.githubusercontent.com/boymeetsblank/daily-curator/main/breaking_news.json?_='+Date.now(),{cache:'no-store'});
       if (!res.ok) return;
       const {items=[]} = await res.json();
       if (!items.length) return;
