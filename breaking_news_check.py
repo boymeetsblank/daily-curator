@@ -45,29 +45,80 @@ def item_id(text: str) -> str:
     return hashlib.md5(text.lower().strip().encode()).hexdigest()[:12]
 
 
-def enrich_with_context(topic: str) -> str | None:
-    """Claude Haiku one-liner for a breaking item. Returns None if unavailable."""
+def filter_and_enrich_items(candidates: list[dict]) -> list[dict]:
+    """
+    Batch quality gate + enrichment via Claude Haiku.
+
+    Scores each candidate 1-10 for cultural significance. Items scoring >= 7
+    are returned with a context line attached. Items scoring < 7 are silently
+    dropped (their IDs are already in known_ids so they won't be re-evaluated).
+
+    Falls back to surfacing all candidates without context if the API is
+    unavailable or returns unparseable JSON.
+    """
+    if not candidates:
+        return []
+
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
-        return None
+        print("   ⚠️  ANTHROPIC_API_KEY not set — surfacing all candidates unfiltered.")
+        return candidates
+
+    items_block = "\n".join(
+        f"{i+1}. [Source: {c['source_name']}] {c['topic']}"
+        for i, c in enumerate(candidates)
+    )
+
+    prompt = f"""You are an editorial filter for a culture intelligence platform focused on sneakers, fashion, music, sports, tech, and internet culture.
+
+For each item below, score its cultural significance 1–10:
+- 7–10: Genuinely newsworthy — a breaking story people will actually talk about, culturally significant, affects a broad audience
+- 1–6: Noise — stock purchases/sales, corporate appointments, press releases, fund transactions, ticker symbol mentions, routine product reviews, niche B2B announcements
+
+For items scoring >= 7 ONLY, also write a context line (12 words max, no punctuation at end, specific and editorial, not generic). For items scoring < 7, set context to null.
+
+Respond with a JSON array only — one object per item, same order as input:
+[{{"score": <int>, "context": "<string or null>"}}]
+
+Items:
+{items_block}"""
+
     try:
         import anthropic
         client = anthropic.Anthropic(api_key=api_key)
         resp = client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=40,
-            messages=[{
-                "role": "user",
-                "content": (
-                    f"In 12 words or fewer, why does '{topic}' matter right now culturally? "
-                    "No punctuation at the end. Be specific and editorial, not generic."
-                ),
-            }],
+            max_tokens=60 * len(candidates),
+            messages=[{"role": "user", "content": prompt}],
         )
-        return resp.content[0].text.strip().rstrip(".")
+        raw = resp.content[0].text.strip()
+        # Strip markdown code fences if present
+        if raw.startswith("```"):
+            raw = raw.split("```")[1]
+            if raw.startswith("json"):
+                raw = raw[4:]
+        results = json.loads(raw)
     except Exception as e:
-        print(f"      ⚠️  Haiku enrichment failed for {topic!r}: {e}")
-        return None
+        print(f"   ⚠️  Quality gate failed ({e}) — surfacing all candidates unfiltered.")
+        return candidates
+
+    if len(results) != len(candidates):
+        print(f"   ⚠️  Quality gate returned {len(results)} results for {len(candidates)} candidates — surfacing all unfiltered.")
+        return candidates
+
+    passed = []
+    for candidate, result in zip(candidates, results):
+        score = result.get("score", 0)
+        context = result.get("context")
+        if score >= 7:
+            if context:
+                candidate["context"] = context.strip().rstrip(".")
+            passed.append(candidate)
+        else:
+            print(f"   ✂️  Filtered (score {score}): {candidate['topic'][:70]}")
+
+    print(f"   🎯 Quality gate: {len(passed)}/{len(candidates)} candidates passed.")
+    return passed
 
 
 def send_breaking_push(new_items: list[dict]) -> None:
@@ -233,7 +284,8 @@ def _extract_subreddit(rss_url: str) -> str | None:
 def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
     """
     Fetch hot posts from each Reddit subreddit in sources.json.
-    Returns new items (not in known_set) that exceed REDDIT_MIN_SCORE.
+    Returns raw candidates (not in known_set, score >= REDDIT_MIN_SCORE).
+    Enrichment/filtering is handled by filter_and_enrich_items().
     """
     try:
         with open(SOURCES_FILE, encoding="utf-8") as f:
@@ -285,9 +337,8 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
             if aid in known_set:
                 continue
 
-            print(f"   🔥 [r/{sub}] {title[:70]} ({score:,} upvotes)")
-            context = enrich_with_context(title)
-            item = {
+            print(f"   🔴 [r/{sub}] {title[:70]} ({score:,} upvotes)")
+            new_items.append({
                 "id":          aid,
                 "topic":       title,
                 "traffic":     f"{score:,} upvotes",
@@ -295,10 +346,7 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
                 "search_url":  url_dest,
                 "source_name": f"r/{sub}",
                 "source_type": "reddit",
-            }
-            if context:
-                item["context"] = context
-            new_items.append(item)
+            })
 
     return new_items
 
@@ -348,17 +396,15 @@ def main():
     known_ids = list(state.get("known_ids", []))
     known_set = set(known_ids)
 
-    new_items = []
+    candidates = []
 
     print("\n   📰 Polling your sources...")
     for feed in load_source_feeds():
-        articles = fetch_feed_articles(feed, FEED_WINDOW_MINUTES)
-        for art in articles:
+        for art in fetch_feed_articles(feed, FEED_WINDOW_MINUTES):
             aid = item_id(art["link"])
             if aid not in known_set:
-                print(f"   🔥 [{art['source_name']}] {art['title'][:70]}")
-                context = enrich_with_context(art["title"])
-                item = {
+                print(f"   📌 [{art['source_name']}] {art['title'][:70]}")
+                candidates.append({
                     "id":          aid,
                     "topic":       art["title"],
                     "traffic":     "",
@@ -366,18 +412,22 @@ def main():
                     "search_url":  art["link"],
                     "source_name": art["source_name"],
                     "source_type": "feed",
-                }
-                if context:
-                    item["context"] = context
-                new_items.append(item)
-                known_ids.append(aid)
-                known_set.add(aid)
+                })
 
-    reddit_items = fetch_reddit_hot_posts(known_set, now_iso)
-    for item in reddit_items:
-        new_items.append(item)
-        known_ids.append(item["id"])
-        known_set.add(item["id"])
+    reddit_candidates = fetch_reddit_hot_posts(known_set, now_iso)
+    candidates.extend(reddit_candidates)
+
+    # Mark all candidates as seen regardless of whether they pass the quality gate,
+    # so low-quality articles from noisy sources are never re-evaluated.
+    for c in candidates:
+        known_ids.append(c["id"])
+        known_set.add(c["id"])
+
+    if candidates:
+        print(f"\n   🔍 Running quality gate on {len(candidates)} candidate(s)...")
+        new_items = filter_and_enrich_items(candidates)
+    else:
+        new_items = []
 
     print(f"\n   {'🔴' if new_items else '✅'} {len(new_items)} new breaking item(s) this check.")
 

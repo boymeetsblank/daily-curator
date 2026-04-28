@@ -4,6 +4,17 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-28] Fix: breaking_news_check.py — Haiku batch quality gate
+
+Replaced the zero-filter approach (every article from every source in the last
+15 minutes was surfaced as "BREAKING") with a Claude Haiku batch quality gate.
+All new candidates are now collected first, then sent to Haiku in a single API
+call. Each item is scored 1–10 for cultural significance; only items scoring ≥ 7
+are surfaced. Items scoring < 7 are recorded as seen (suppressed permanently) but
+not shown. Context enrichment is now part of the same batch call rather than a
+separate per-item call. Falls back to surfacing all candidates unfiltered if the
+API is unavailable.
+
 ## [2026-04-27] Feat: YouTube Trending + TikTok Trending (3x/day) + Reddit Hot Posts (breaking)
 
 Added three new cultural signals. `daily_curator.py`: `fetch_youtube_trends()` calls Apify actor `streamers~youtube-trending-videos` (US, 20 results); `fetch_tiktok_trends()` calls `clockworks~free-tiktok-scraper` (20 results). Both follow the exact `fetch_twitter_trends()` pattern and merge into `all_items` + `trending_topics` for velocity context. Scoring prompt updated to name all four trend sources and note that YouTube/TikTok viral items precede mainstream coverage. `breaking_news_check.py`: `fetch_reddit_hot_posts()` polls each Reddit subreddit in `sources.json` via the free hot.json API (no auth), surfaces posts with ≥500 upvotes not yet seen, enriches with Haiku context, and tracks IDs in the existing `known_ids` state.
