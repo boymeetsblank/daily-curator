@@ -1360,7 +1360,9 @@
       display: none;
     }
 
-    .art-row.expanded .art-expand { display: block; }
+    .art-row.expanded .art-expand,
+    .breaking-art-row.expanded .art-expand,
+    .feed-row.expanded .art-expand { display: block; }
 
     .exp-inner {
       background: transparent;
@@ -3721,14 +3723,14 @@
       : isWire
         ? `Breaking via ${srcLabel}`
         : `Velocity spike — newly trending in the US${item.traffic ? '. ' + esc(item.traffic) + ' searches.' : ''}`;
-    return `<div class="breaking-art-row">
+    return `<div class="breaking-art-row" onclick="handleRowClick(event,this)" style="cursor:pointer">
       <div class="art-date" style="color:var(--red)">${det}</div>
       <div class="art-title-cell">
         <a class="art-title-link" href="${url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${esc(item.topic)}</a>
         <span class="art-trend-tag" style="color:var(--red);border-color:rgba(220,38,38,0.3)">Breaking</span>
       </div>
-      <button class="expand-btn" onclick="toggleExpand(this.closest('.breaking-art-row'))">+</button>
-      <div class="art-expand">
+      <span class="row-chevron">↓</span>
+      <div class="art-expand" onclick="event.stopPropagation()">
         <div class="exp-inner">
           <div class="exp-main-row">
             <div class="exp-field">
