@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-29] Fix: main feed list view — older picks showing latest run timestamp
+
+Pinned (8+) and regular picks in list view were all rendered with `latestIsoTs` (the newest run's timestamp), so every article showed "X minutes ago" relative to the most recent pull. Fixed by grouping pinned picks by their own `runIsoTs` before passing to `renderPicksGrouped`, and restoring per-run rendering for regular picks (matching the original archive-day behavior). Card view was already correct.
+
 ## [2026-04-29] Fix: Live feed — crash on null haiku_score + stale source labels
 
 `breaking_news_check.py` was crashing every 5-minute run with `TypeError: '>=' not supported between 'NoneType' and 'int'` when sorting items by tier. Legacy items written before the quality gate have `haiku_score: null` in `breaking_news.json`; `dict.get(key, default)` returns `None` (not 0) when the key exists with a null value. Fixed both tier sort lines to use `(x.get("haiku_score") or 0)`. Also fixed `renderBreakingCard` in `index.html`: all non-wire items were falling through to a hard-coded "Google Trends" label and "Search Google →" CTA. Now dispatches on `source_type` (feed/reddit/youtube/x/tiktok/google) for correct labels and CTAs on every item.
@@ -110,9 +114,7 @@ Changed the scoring prompt tiebreaker from "when in doubt between a 6 and a 7, s
 
 Removed the dedicated 32px expand-button column from list-mode grid (`auto 1fr auto 32px` → `auto 1fr auto`). Expand "+" now sits below the thumbnail (col 3, row 2, centered). Thumbnails grown from 72px → 96px desktop, 52px → 64px mobile.
 
-## [2026-04-25] Perf: daily_curator.py — swap detect_cross_source_trends to Haiku (~10x cheaper)
 
-Grouping/clustering task doesn't require Sonnet reasoning. Saves ~$0.27/day (~$0.09/call × 3 runs), extending $10 token budget from ~7 days to ~10 days with no editorial quality impact.
 
 ## [2026-04-24] Feat: daily_curator.py — cross-run cluster persistence via today_clusters.json
 

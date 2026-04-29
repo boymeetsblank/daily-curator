@@ -3349,10 +3349,23 @@
             chunk += renderCard(pick, date, runIsoTs);
           }
         } else {
-          const latestIsoTs = dateRuns[0]?.date && dateRuns[0]?.time
-            ? `${dateRuns[0].date}T${dateRuns[0].time.slice(0,2)}:${dateRuns[0].time.slice(2,4)}:00Z` : null;
-          if (pinned.length)  chunk += renderPicksGrouped(pinned.map(e => e.pick),  date, latestIsoTs);
-          if (regular.length) chunk += renderPicksGrouped(regular.map(e => e.pick), date, latestIsoTs);
+          // Pinned 8+: group by runIsoTs so each pick shows its actual run time
+          const pinnedByRun = new Map();
+          for (const {pick, runIsoTs} of pinned) {
+            const key = runIsoTs || '';
+            if (!pinnedByRun.has(key)) pinnedByRun.set(key, {runIsoTs, picks: []});
+            pinnedByRun.get(key).picks.push(pick);
+          }
+          for (const {runIsoTs, picks: pks} of pinnedByRun.values()) {
+            chunk += renderPicksGrouped(pks, date, runIsoTs);
+          }
+          // Regular picks: render per-run to preserve correct timestamps
+          for (const run of dateRuns) {
+            const runIsoTs = (run.date && run.time)
+              ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z` : null;
+            const pks = regular.filter(e => e.runIsoTs === runIsoTs).map(e => e.pick);
+            if (pks.length) chunk += renderPicksGrouped(pks, date, runIsoTs);
+          }
         }
       } else {
         // Archive days: keep original run-by-run order
