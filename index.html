@@ -3828,14 +3828,19 @@
   function renderBreakingCard(item) {
     const url      = esc(item.search_url||`https://www.google.com/search?q=${encodeURIComponent(item.topic)}`);
     const det      = item.detected_at ? timeAgo(item.detected_at) : '';
-    const isWire   = item.source_type === 'wire';
-    const srcLabel = isWire ? esc(item.source_name||'Wire') : 'Google Trends';
-    const ctaText  = isWire ? 'Read article →' : 'Search Google →';
+    const st       = item.source_type || 'feed';
+    const srcLabel = esc(item.source_name || (st === 'google' ? 'Google Trends' : 'Live'));
+    const ctaText  = st === 'reddit' ? 'View post →'
+                   : st === 'youtube' ? 'Watch →'
+                   : st === 'x' ? 'View on X →'
+                   : st === 'tiktok' ? 'View on TikTok →'
+                   : st === 'google' ? 'Search Google →'
+                   : 'Read article →';
     const whyText  = item.context
       ? esc(item.context)
-      : isWire
+      : st === 'feed' || st === 'wire'
         ? `Breaking via ${srcLabel}`
-        : `Velocity spike — newly trending in the US${item.traffic ? '. ' + esc(item.traffic) + ' searches.' : ''}`;
+        : `Trending now${item.traffic ? ' · ' + esc(item.traffic) : ''}`;
     return `<div class="breaking-art-row" onclick="handleRowClick(event,this)" style="cursor:pointer">
       <div class="art-date" style="color:var(--red);font-size:10px;letter-spacing:0.03em">${det}</div>
       <div class="art-title-cell">

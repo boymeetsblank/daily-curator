@@ -699,8 +699,9 @@ def main():
             kept.append(item)
 
     # 9+ items pinned to top; 8s flow chronologically below
-    tier_high = sorted([x for x in kept if x.get("haiku_score", 0) >= 9], key=lambda x: x.get("detected_at", ""), reverse=True)
-    tier_low  = sorted([x for x in kept if x.get("haiku_score", 0) < 9],  key=lambda x: x.get("detected_at", ""), reverse=True)
+    # Use (score or 0) to safely handle legacy items with null haiku_score
+    tier_high = sorted([x for x in kept if (x.get("haiku_score") or 0) >= 9], key=lambda x: x.get("detected_at", ""), reverse=True)
+    tier_low  = sorted([x for x in kept if (x.get("haiku_score") or 0) < 9],  key=lambda x: x.get("detected_at", ""), reverse=True)
     kept = tier_high + tier_low
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:

@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-29] Fix: Live feed — crash on null haiku_score + stale source labels
+
+`breaking_news_check.py` was crashing every 5-minute run with `TypeError: '>=' not supported between 'NoneType' and 'int'` when sorting items by tier. Legacy items written before the quality gate have `haiku_score: null` in `breaking_news.json`; `dict.get(key, default)` returns `None` (not 0) when the key exists with a null value. Fixed both tier sort lines to use `(x.get("haiku_score") or 0)`. Also fixed `renderBreakingCard` in `index.html`: all non-wire items were falling through to a hard-coded "Google Trends" label and "Search Google →" CTA. Now dispatches on `source_type` (feed/reddit/youtube/x/tiktok/google) for correct labels and CTAs on every item.
+
 ## [2026-04-28] Live feed: refined Haiku scoring prompt — 4-band scale, platform-aware
 
 Replaced the binary pass/fail Haiku prompt with a 4-band scoring guide (9–10 must-know, 7–8 worth surfacing, 5–6 interesting, 1–4 noise). Trending topics (X, TikTok, YouTube, Google) are now explicitly told they don't need to be discrete breaking events — scored on cultural relevance instead. Haiku is instructed to score generously for culture-adjacent items (sneakers, music, sports, entertainment). Threshold stays at 7; the finer bands give Haiku permission to surface borderline items that the old binary prompt was silently killing.
@@ -114,8 +118,5 @@ Grouping/clustering task doesn't require Sonnet reasoning. Saves ~$0.27/day (~$0
 
 Three new functions: `load_today_clusters()` (midnight CST reset), `save_today_clusters()`, and `merge_cross_run_clusters()` (keyword-overlap matching, ≥3 words). Articles matched to prior-run clusters inherit their cluster_id; updated clusters emit `**Updated:** true` in the markdown output. Resets daily at midnight CST via pytz/zoneinfo.
 
-## [2026-04-24] Refactor: daily_curator.py — rank The Edit by cluster score, not individual score
-
-`select_top_picks()` now sorts by cluster score (average of all member scores, rounded to 1dp) so a multi-source cluster outranks a solo article with a slightly higher individual score. Tie-break: cluster size desc, then individual score desc. Displayed scores in output are unchanged.
 
 
