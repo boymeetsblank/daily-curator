@@ -3332,16 +3332,38 @@
 
       chunk += isFirst ? `<div id="section-today">` : `<div>`;
 
-      for (const run of dateRuns) {
-        const runIsoTs = (run.date && run.time)
-          ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z` : null;
+      if (isFirst) {
+        // Today: collect all picks across runs, float 8+ to top by score
+        const todayEntries = [];
+        for (const run of dateRuns) {
+          const runIsoTs = (run.date && run.time)
+            ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z` : null;
+          for (const pick of run.picks) todayEntries.push({pick, runIsoTs});
+        }
+        const pinned  = todayEntries.filter(e => e.pick.score >= 8);
+        const regular = todayEntries.filter(e => e.pick.score < 8);
+        pinned.sort((a, b) => b.pick.score - a.pick.score);
+
         if (currentView === 'card') {
-          for (const pick of run.picks) {
+          for (const {pick, runIsoTs} of [...pinned, ...regular]) {
             chunk += renderCard(pick, date, runIsoTs);
           }
         } else {
-          // List view: cluster groups with expandable sub-source rows
-          chunk += renderPicksGrouped(run.picks, date, runIsoTs);
+          const latestIsoTs = dateRuns[0]?.date && dateRuns[0]?.time
+            ? `${dateRuns[0].date}T${dateRuns[0].time.slice(0,2)}:${dateRuns[0].time.slice(2,4)}:00Z` : null;
+          if (pinned.length)  chunk += renderPicksGrouped(pinned.map(e => e.pick),  date, latestIsoTs);
+          if (regular.length) chunk += renderPicksGrouped(regular.map(e => e.pick), date, latestIsoTs);
+        }
+      } else {
+        // Archive days: keep original run-by-run order
+        for (const run of dateRuns) {
+          const runIsoTs = (run.date && run.time)
+            ? `${run.date}T${run.time.slice(0,2)}:${run.time.slice(2,4)}:00Z` : null;
+          if (currentView === 'card') {
+            for (const pick of run.picks) chunk += renderCard(pick, date, runIsoTs);
+          } else {
+            chunk += renderPicksGrouped(run.picks, date, runIsoTs);
+          }
         }
       }
 

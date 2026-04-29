@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-28] Main feed: 8+ picks always pinned to top of today's section
+
+All picks scoring 8+ from any of today's curator runs are collected and sorted to the top of the main feed by score descending. Lower-scoring picks follow in their original order. Archive days are unaffected.
+
+---
+
 ## [2026-04-28] X, Google, TikTok trending topics added as Live feed candidates
 
 X trends link to x.com/search, Google to google.com/search, TikTok to tiktok.com/search. All pass through the Haiku quality gate alongside Reddit and YouTube candidates.
