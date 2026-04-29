@@ -377,6 +377,44 @@ def fetch_youtube_trending_rss(known_set: set[str], now_iso: str) -> list[dict]:
     return candidates
 
 
+# ── Source: social trend topics as candidates (X, Google, TikTok) ────────────
+
+def build_social_candidates(trends: dict, known_set: set[str], now_iso: str) -> list[dict]:
+    """
+    Convert cached social trend topics into scoreable candidates with search URLs.
+    X topics → x.com/search, Google topics → google.com/search, TikTok → tiktok.com/search.
+    """
+    from urllib.parse import quote_plus
+    candidates = []
+
+    platform_cfg = [
+        ("x",       "X (Twitter) Trending", lambda t: f"https://x.com/search?q={quote_plus(t)}&src=trend_click"),
+        ("google",  "Google Trends",        lambda t: f"https://www.google.com/search?q={quote_plus(t)}"),
+        ("tiktok",  "TikTok Trending",      lambda t: f"https://www.tiktok.com/search?q={quote_plus(t)}"),
+    ]
+
+    for key, source_name, url_fn in platform_cfg:
+        for topic in trends.get(key, []):
+            if not topic:
+                continue
+            url = url_fn(topic)
+            aid = item_id(url)
+            if aid in known_set:
+                continue
+            print(f"   📲 [{source_name}] {topic[:70]}")
+            candidates.append({
+                "id":          aid,
+                "topic":       topic,
+                "traffic":     "",
+                "detected_at": now_iso,
+                "search_url":  url,
+                "source_name": source_name,
+                "source_type": key,
+            })
+
+    return candidates
+
+
 # ── Source: your subscribed feeds (sources.json) ─────────────────────────────
 
 def load_source_feeds() -> list[dict]:
@@ -613,6 +651,9 @@ def main():
 
     youtube_candidates = fetch_youtube_trending_rss(known_set, now_iso)
     candidates.extend(youtube_candidates)
+
+    social_candidates = build_social_candidates(trends, known_set, now_iso)
+    candidates.extend(social_candidates)
 
     # Mark all candidates as seen regardless of whether they pass the quality gate,
     # so low-quality articles from noisy sources are never re-evaluated.

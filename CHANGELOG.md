@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-28] X, Google, TikTok trending topics added as Live feed candidates
+
+X trends link to x.com/search, Google to google.com/search, TikTok to tiktok.com/search. All pass through the Haiku quality gate alongside Reddit and YouTube candidates.
+
+---
+
 ## [2026-04-28] Social-first Live feed — YouTube trending + trend-boosted scoring
 
 - `daily_curator.py` now writes `social_trends.json` after each 3×/day Apify run, caching X, Google, YouTube, and TikTok trending topics
