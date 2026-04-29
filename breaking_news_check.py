@@ -132,7 +132,7 @@ Items:
     passed = []
     for candidate, result in zip(candidates, results):
         score = result.get("score", 0)
-        if score >= 8:
+        if score >= 7:
             candidate["haiku_score"] = score
             passed.append(candidate)
         else:
