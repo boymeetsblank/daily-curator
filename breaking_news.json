@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "id": "9a868b0a1935",
+      "topic": "Embiid's 33 downs Celtics, keeps 76ers alive",
+      "traffic": "",
+      "detected_at": "2026-04-29T04:00:44.456541+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48623318/joel-embiid-33-downs-celtics-game-5-keep-76ers-alive",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "16e57829d56f",
+      "topic": "Rockets rule out Durant (ankle) for Game 5",
+      "traffic": "",
+      "detected_at": "2026-04-29T04:00:44.456541+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48622981/rockets-rule-kevin-durant-game-5-vs-lakers-left-ankle-sprain",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
       "id": "89656035fe4b",
       "topic": "'Realize who the villain is': SGA trolls Dillon Br...",
       "traffic": "",
@@ -79,47 +99,7 @@
       "source_name": "Sneaker News",
       "source_type": "feed",
       "context": "Nike Air Force 1 collab channels 90s-2000s nostalgia through CVS aesthetic"
-    },
-    {
-      "id": "2a5dec337e45",
-      "topic": "Everything We Know About Isaiah Rashad's 'It's Been Awful'",
-      "traffic": "",
-      "detected_at": "2026-04-28T21:05:28.784426+00:00",
-      "search_url": "https://hypebeast.com/2026/4/everything-we-know-about-its-been-awful",
-      "source_name": "Hypebeast",
-      "source_type": "feed",
-      "context": "Isaiah Rashad drops anticipated album after extended hiatus"
-    },
-    {
-      "id": "d96310306e69",
-      "topic": "Ex-FBI Director James Comey indicted for his ‘8647’ seashell post on Instagram",
-      "traffic": "",
-      "detected_at": "2026-04-28T19:55:09.889582+00:00",
-      "search_url": "https://www.cnbc.com/2026/04/28/james-comey-indicted-trump-seashell-8647.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "context": "Former FBI director indicted over cryptic Instagram seashell post"
-    },
-    {
-      "id": "c054b2cc51e8",
-      "topic": "The UK’s Answer to Darpa Wants to Rewire the Human Brain",
-      "traffic": "",
-      "detected_at": "2026-04-28T18:07:11.783966+00:00",
-      "search_url": "https://www.wired.com/story/kathleen-fisher-jacques-carolan-aria-wired-health/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "context": "UK launches brain-computer interface research to rival US"
-    },
-    {
-      "id": "d6f8572c94a2",
-      "topic": "Maison Margiela’s Numeric Tag System Becomes A Shroud On Latest Salomon Collaboration",
-      "traffic": "",
-      "detected_at": "2026-04-28T18:07:11.783966+00:00",
-      "search_url": "https://sneakernews.com/2026/04/28/mm6-margiela-salomon-summer-2026/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "context": "Margiela's numeric codes reshape Salomon's design language"
     }
   ],
-  "last_checked": "2026-04-29T00:06:57.029509+00:00"
+  "last_checked": "2026-04-29T04:00:44.456541+00:00"
 }
