@@ -2090,6 +2090,21 @@ def main():
     # Extract plain topic names from trend items for the velocity signal prompt
     trending_topics = [t["title"] for t in twitter_trends + google_trends + youtube_trends + tiktok_trends if t.get("title")]
 
+    # Write social trends cache for breaking_news_check.py to consume (free — no extra Apify calls)
+    try:
+        social_cache = {
+            "fetched_at": datetime.now(tz=timezone.utc).isoformat(),
+            "x":       [t["title"] for t in twitter_trends if t.get("title")],
+            "google":  [t["title"] for t in google_trends  if t.get("title")],
+            "youtube": [t["title"] for t in youtube_trends if t.get("title")],
+            "tiktok":  [t["title"] for t in tiktok_trends  if t.get("title")],
+        }
+        with open("social_trends.json", "w", encoding="utf-8") as _sf:
+            json.dump(social_cache, _sf, indent=2, ensure_ascii=False)
+        print(f"   📲 Wrote social_trends.json ({sum(len(v) for v in social_cache.values() if isinstance(v, list))} topics across 4 platforms)")
+    except Exception as _e:
+        print(f"   ⚠️  Could not write social_trends.json: {_e}")
+
     # ── Topic-level cross-run dedup: load recent pick titles for Claude to suppress ──
     recently_covered = load_recently_covered_topics(days=3)
     if recently_covered:

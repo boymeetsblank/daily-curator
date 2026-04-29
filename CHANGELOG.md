@@ -4,6 +4,16 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-28] Social-first Live feed — YouTube trending + trend-boosted scoring
+
+- `daily_curator.py` now writes `social_trends.json` after each 3×/day Apify run, caching X, Google, YouTube, and TikTok trending topics
+- `breaking_news_check.py` loads `social_trends.json` and injects live social signals into the Haiku scoring prompt — items matching live trends score higher
+- YouTube trending videos added as real candidates via the free public RSS feed (no API key, no Apify cost)
+- Reddit hot posts remain as primary social candidates alongside YouTube
+- Zero increase in Apify usage — all social trend data reuses existing 3×/day curator runs
+
+---
+
 ## [2026-04-28] Live picks inject into main feed without page refresh
 
 - Main feed polls picks_data.json every 2 minutes (was 5)

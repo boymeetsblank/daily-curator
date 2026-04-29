@@ -29,9 +29,11 @@ BREAKING_NEWS_TTL_HOURS = 6
 FEED_WINDOW_MINUTES     = 30   # articles published this recently count as breaking
 MAX_KNOWN_IDS           = 500  # cap state file growth
 
-SOURCES_FILE = "sources.json"
-STATE_FILE   = "breaking_news_state.json"
-OUTPUT_FILE  = "breaking_news.json"
+SOURCES_FILE        = "sources.json"
+STATE_FILE          = "breaking_news_state.json"
+OUTPUT_FILE         = "breaking_news.json"
+SOCIAL_TRENDS_PATH  = "social_trends.json"
+YOUTUBE_TRENDING_RSS = "https://www.youtube.com/feeds/videos.xml?chart=mostpopular&regionCode=US&hl=en&gl=US"
 
 FEED_URL   = "https://boymeetsblank.github.io/daily-curator/"
 VAPID_CLAIMS = {"sub": "mailto:mjaffry1@gmail.com"}
@@ -45,13 +47,16 @@ def item_id(text: str) -> str:
     return hashlib.md5(text.lower().strip().encode()).hexdigest()[:12]
 
 
-def filter_and_enrich_items(candidates: list[dict]) -> list[dict]:
+def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) -> list[dict]:
     """
     Batch quality gate via Claude Haiku.
 
     Scores each candidate 1-10. Items scoring >= 8 are returned with
     haiku_score attached. Items scoring 9+ are candidates for Sonnet
     escalation and push notification.
+
+    trends: optional dict {x, google, youtube, tiktok} of live topic lists
+    used to boost items that match live social signals.
 
     Falls back to surfacing all candidates unfiltered if the API is
     unavailable or returns unparseable JSON.
@@ -71,11 +76,26 @@ def filter_and_enrich_items(candidates: list[dict]) -> list[dict]:
         for i, c in enumerate(candidates)
     )
 
+    # Build live social signals block from cached trends
+    social_block = ""
+    if trends:
+        lines = []
+        if trends.get("x"):
+            lines.append("X (Twitter) trending: " + ", ".join(trends["x"][:15]))
+        if trends.get("google"):
+            lines.append("Google Trends: " + ", ".join(trends["google"][:15]))
+        if trends.get("youtube"):
+            lines.append("YouTube trending: " + ", ".join(trends["youtube"][:10]))
+        if trends.get("tiktok"):
+            lines.append("TikTok trending: " + ", ".join(trends["tiktok"][:10]))
+        if lines:
+            social_block = "\n\nLIVE SOCIAL SIGNALS — score higher when items directly relate to these:\n" + "\n".join(lines)
+
     prompt = f"""You are the editorial filter for Blank, a culture intelligence platform. Your job is to decide what's worth surfacing in a live feed — things that just happened AND are genuinely worth paying attention to.
 
 Score each item 1–10:
 - 8–10: Something real just broke — and it matters. People in culture are going to be talking about this.
-- 1–7: Doesn't meet the bar — either it just happened but isn't significant, it's significant but not new, or both.
+- 1–7: Doesn't meet the bar — either it just happened but isn't significant, it's significant but not new, or both.{social_block}
 
 Respond with a JSON array only — one object per item, same order as input:
 [{{"score": <int>}}]
@@ -278,6 +298,83 @@ def send_breaking_push(new_items: list[dict]) -> None:
             f.write("\n")
 
     print(f"   🔔 Push sent to {sent} subscriber(s). Body: \"{body}\"")
+
+
+# ── Social trends cache (written by daily_curator.py 3×/day via Apify) ───────
+
+def load_social_trends() -> dict:
+    """
+    Load the social trends cache written by daily_curator.py.
+    Returns {x, google, youtube, tiktok} lists, or empty lists if unavailable.
+    """
+    empty = {"x": [], "google": [], "youtube": [], "tiktok": []}
+    if not os.path.exists(SOCIAL_TRENDS_PATH):
+        return empty
+    try:
+        with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        return {
+            "x":       data.get("x", []),
+            "google":  data.get("google", []),
+            "youtube": data.get("youtube", []),
+            "tiktok":  data.get("tiktok", []),
+        }
+    except Exception as e:
+        print(f"   ⚠️  Could not load social_trends.json: {e}")
+        return empty
+
+
+# ── Source: YouTube trending (free RSS, no API key needed) ───────────────────
+
+def fetch_youtube_trending_rss(known_set: set[str], now_iso: str) -> list[dict]:
+    """
+    Fetch YouTube trending videos via the free public RSS feed.
+    Returns candidates in the same shape as RSS/Reddit items.
+    """
+    try:
+        resp = requests.get(YOUTUBE_TRENDING_RSS, headers=_HEADERS, timeout=15)
+        resp.raise_for_status()
+        root = ET.fromstring(resp.content)
+    except Exception as e:
+        print(f"      ⚠️  Could not fetch YouTube trending RSS: {e}")
+        return []
+
+    ns = {
+        "atom":  "http://www.w3.org/2005/Atom",
+        "yt":    "http://www.youtube.com/xml/schemas/2015",
+        "media": "http://search.yahoo.com/mrss/",
+    }
+
+    candidates = []
+    for entry in root.findall("atom:entry", ns):
+        title_el = entry.find("atom:title", ns)
+        link_el  = entry.find("atom:link", ns)
+        vid_el   = entry.find("yt:videoId", ns)
+
+        title = (title_el.text or "").strip() if title_el is not None else ""
+        link  = link_el.get("href", "").strip() if link_el is not None else ""
+        if not link and vid_el is not None:
+            link = f"https://www.youtube.com/watch?v={vid_el.text}"
+
+        if not title or not link:
+            continue
+
+        aid = item_id(link)
+        if aid in known_set:
+            continue
+
+        print(f"   ▶️  [YouTube Trending] {title[:70]}")
+        candidates.append({
+            "id":          aid,
+            "topic":       title,
+            "traffic":     "",
+            "detected_at": now_iso,
+            "search_url":  link,
+            "source_name": "YouTube Trending",
+            "source_type": "youtube",
+        })
+
+    return candidates
 
 
 # ── Source: your subscribed feeds (sources.json) ─────────────────────────────
@@ -485,6 +582,14 @@ def main():
     known_ids = list(state.get("known_ids", []))
     known_set = set(known_ids)
 
+    # Load social trends cache (written by daily_curator.py 3×/day — zero extra Apify cost)
+    trends = load_social_trends()
+    if any(trends.values()):
+        total = sum(len(v) for v in trends.values())
+        print(f"\n   📲 Loaded social trends: {total} topics across X, Google, YouTube, TikTok")
+    else:
+        print("\n   📲 No social_trends.json found — scoring without trend context")
+
     candidates = []
 
     print("\n   📰 Polling your sources...")
@@ -506,6 +611,9 @@ def main():
     reddit_candidates = fetch_reddit_hot_posts(known_set, now_iso)
     candidates.extend(reddit_candidates)
 
+    youtube_candidates = fetch_youtube_trending_rss(known_set, now_iso)
+    candidates.extend(youtube_candidates)
+
     # Mark all candidates as seen regardless of whether they pass the quality gate,
     # so low-quality articles from noisy sources are never re-evaluated.
     for c in candidates:
@@ -514,7 +622,7 @@ def main():
 
     if candidates:
         print(f"\n   🔍 Running quality gate on {len(candidates)} candidate(s)...")
-        new_items = filter_and_enrich_items(candidates)
+        new_items = filter_and_enrich_items(candidates, trends)
     else:
         new_items = []
 
