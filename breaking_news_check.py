@@ -91,11 +91,21 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
         if lines:
             social_block = "\n\nLIVE SOCIAL SIGNALS — score higher when items directly relate to these:\n" + "\n".join(lines)
 
-    prompt = f"""You are the editorial filter for Blank, a culture intelligence platform. Your job is to decide what's worth surfacing in a live feed — things that just happened AND are genuinely worth paying attention to.
+    prompt = f"""You are the editorial filter for Blank — a culture intelligence platform covering sneakers, fashion, music, sports, tech, and internet culture.
 
-Score each item 1–10:
-- 8–10: Something real just broke — and it matters. People in culture are going to be talking about this.
-- 1–7: Doesn't meet the bar — either it just happened but isn't significant, it's significant but not new, or both.{social_block}
+Your job: decide what's worth surfacing in a live culture feed. Score each item 1–10.
+
+SCORING GUIDE:
+- 9–10: Must-know right now. A major cultural moment that people across the internet are actively reacting to.
+- 7–8: Worth surfacing. Something real is happening — a notable drop, result, beef, arrest, announcement, or viral moment. People in your audience will care.
+- 5–6: Interesting but not urgent. Could wait for the main daily feed.
+- 1–4: Noise. Routine content, corporate filler, niche interest, or too political/controversial for a culture platform.
+
+IMPORTANT:
+- For trending topics (X, TikTok, YouTube, Google Trends): score based on how culturally relevant and conversation-worthy the topic is RIGHT NOW — it does not need to be a literal breaking news event.
+- For articles and Reddit posts: score on whether something actually just happened that a culture-forward audience would care about.
+- Give the benefit of the doubt to culture-adjacent items (sneakers, music, sports, entertainment). Score generously when in doubt.
+- Score 1 for anything purely political.{social_block}
 
 Respond with a JSON array only — one object per item, same order as input:
 [{{"score": <int>}}]

@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-28] Live feed: refined Haiku scoring prompt — 4-band scale, platform-aware
+
+Replaced the binary pass/fail Haiku prompt with a 4-band scoring guide (9–10 must-know, 7–8 worth surfacing, 5–6 interesting, 1–4 noise). Trending topics (X, TikTok, YouTube, Google) are now explicitly told they don't need to be discrete breaking events — scored on cultural relevance instead. Haiku is instructed to score generously for culture-adjacent items (sneakers, music, sports, entertainment). Threshold stays at 7; the finer bands give Haiku permission to surface borderline items that the old binary prompt was silently killing.
+
+---
+
 ## [2026-04-28] Main feed: 8+ picks always pinned to top of today's section
 
 All picks scoring 8+ from any of today's curator runs are collected and sorted to the top of the main feed by score descending. Lower-scoring picks follow in their original order. Archive days are unaffected.
@@ -111,49 +117,5 @@ Three new functions: `load_today_clusters()` (midnight CST reset), `save_today_c
 ## [2026-04-24] Refactor: daily_curator.py — rank The Edit by cluster score, not individual score
 
 `select_top_picks()` now sorts by cluster score (average of all member scores, rounded to 1dp) so a multi-source cluster outranks a solo article with a slightly higher individual score. Tie-break: cluster size desc, then individual score desc. Displayed scores in output are unchanged.
-
-## [2026-04-24] Update: digest_publisher.py — text-only slide: remove rarity badge, use Substack copy
-
-For imageless slides (Reddit posts, etc.): removed LEGENDARY/EPIC/TOP PICK rarity badge from top-right; replaced short "why it matters" sentence with the Claude-generated Substack paragraph (6-line max) for richer editorial body copy.
-
-## [2026-04-24] Update: digest_publisher.py — full-day picks, bigger fonts, richer text-only slide
-
-Three improvements: (1) digest now collects all picks files for today (`picks-YYYY-MM-DD-*.md`) and selects the top 5 by score across all runs instead of only the latest file. (2) Headline fonts bumped +20%: image slide Bebas 84px→100px, body Inter 19px→23px; text-only Bebas 76px→91px, body Inter 16px→19px. (3) Text-only fallback slide background replaced — dark vertical gradient (#1c1c1c→#080808) + 4% film grain + subtle score-color wash at bottom instead of flat #111111.
-
-## [2026-04-24] Fix: index.html — show list mode thumbnails on mobile
-
-Restored thumbnail column on mobile (≤680px): updated `.art-row` and `.list-header` grid templates to `auto 1fr auto 32px`, replaced `display: none` on `.art-thumb-cell` with 52×52px dimensions for compact mobile sizing.
-
-## [2026-04-23] Feat: index.html — 72×72 thumbnail in List mode story rows
-
-Added a square `object-fit: cover` thumbnail (2px border-radius) in grid column 3 of each `.art-row`, sourced from `pick.image`. Gracefully absent when no image exists; hidden on mobile via `display: none`.
-
-## [2026-04-23] Fix: index.html — add bottom margin to expanded cluster groups in List mode
-
-Added `margin-bottom: 24px` to `.cluster-group.expanded` so perspective rows don't crowd the next story card when a cluster is open.
-
-## [2026-04-22] Fix: digest_publisher.py — styled text-only fallback slide for imageless stories
-
-When `img_data is None`, `render_story_slide()` now renders a purpose-built dark editorial layout instead of a broken gradient-over-black screen. Text block (headline + divider + why) is vertically centered; outer 1px border at 20% opacity; Bebas 76px / Inter 16px; source pinned 72px from bottom; Editor's Pick badges and accent bar preserved.
-
-## [2026-04-22] Update: digest_publisher.py — larger hook and body copy fonts for social readability
-
-Increased hook headline font from Bebas Neue 76px → 84px and "Why it matters" body copy from Inter 16px → 19px to improve legibility when uploaded to social media.
-
-## [2026-04-22] Update: digest_publisher.py — full-bleed editorial redesign + font fix + face-safe crop
-
-**Font loading** — Google Fonts now serves only woff2 for all UAs, which Pillow/FreeType cannot read. Replaced CSS-parsing approach with direct GitHub raw URL downloads (`_fetch_font_direct`). Bebas Neue from `dharmatype/Bebas-Neue` repo; Inter from `google/fonts` repo as variable font (`Inter[opsz,wght].ttf`). Added `_is_valid_font()` validation (checks magic bytes) that auto-deletes and re-downloads corrupted cached files on next run. `_load_inter_medium` now delegates to `_load_inter` (same variable font file). Fixed `&amp;` HTML entity in source attribution via `html.unescape()`.
-
-**Full-bleed editorial layout** — story slides redesigned from split image/white-box to full-bleed image (1080×1350) with a dual gradient overlay: top-bar fade (40%→transparent over 120px) for badge readability, bottom ease-in gradient (GRAD_START_Y=500 → 92% dark at bottom) for text legibility. All text is white at varying opacities over the gradient. Removed `IMAGE_H`, `TEXT_Y` constants; added `GRAD_START_Y`, `TEXT_BOTTOM_PAD`. New `_gradient_overlay()` helper draws the overlay as a pre-composited RGBA layer.
-
-**Story slide text zone** — rebuilt bottom-up: source (VIA ..., Inter 12px, white 55%, y=bottom−72) → why-it-matters (Inter 16px, white 80%, 1.55 lh, 3 lines max) → 60px divider (white 25%, 2px) → headline (Bebas 76px, white, 2 lines max). Category badge (white 70%) top-left; rarity badge in rarity color top-right. Left accent bar (4px, full height) for Editor's Pick.
-
-**Cover slide** — added "BLANK" wordmark (Inter 13px, white 55%) top-left. Overlay increased to 55%. Thin centered rule (80px, white 30%) between date and subline. Subline tracked at +6px (was +4px).
-
-**Face-safe cropping** — `_smart_crop()` gains `prefer_top: bool = False` parameter. When `True`, vertical crop anchors to the top of the image (offset=0) instead of entropy-seeking. All story and cover slides now pass `prefer_top=True`, ensuring portrait photos show faces/heads rather than entropically-selected mid-sections.
-
-**Hook headlines** — slides now use the `**Hook:**` field from the picks file as the headline instead of the raw article title. The `[TRIGGER: ...]` prefix is stripped; ` / ` delimiters become explicit line breaks. Falls back to word-wrapped article title when no hook is present. `parse_picks()` now extracts `hook_lines: list[str]`.
-
-**Why it matters body copy** — slide body text is now sourced directly from `pick["why"]` (the picks file "Why it matters" section) rather than the Claude-generated `why_slide`. Provides more substantive editorial context per slide.
 
 
