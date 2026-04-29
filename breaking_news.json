@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "id": "7dedf3370d50",
+      "topic": "Next James Bond: Who will be the new 007?",
+      "traffic": "",
+      "detected_at": "2026-04-29T16:16:03.937619+00:00",
+      "search_url": "https://www.gq.com/story/has-the-next-james-bond-been-chosen",
+      "source_name": "GQ",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
       "id": "1196cd57f450",
       "topic": "How ‘Big Mistakes’ Made Its Protagonist an Accidental Style God",
       "traffic": "",
@@ -49,27 +59,7 @@
       "source_name": "TechCrunch",
       "source_type": "feed",
       "haiku_score": 8
-    },
-    {
-      "id": "3e6490c09855",
-      "topic": "Valve Is Officially Developing the Steam Deck 2",
-      "traffic": "",
-      "detected_at": "2026-04-29T08:40:38.796576+00:00",
-      "search_url": "https://hypebeast.com/2026/4/valve-steam-deck-2-targets-massive-performance-leap",
-      "source_name": "Hypebeast",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "dfba43776807",
-      "topic": "Drake's Catalog Is Skyrocketing Up the Billboard Charts Ahead of 'ICEMAN'",
-      "traffic": "",
-      "detected_at": "2026-04-29T08:40:38.796576+00:00",
-      "search_url": "https://hypebeast.com/2026/4/drake-discography-climbs-billboard-200-ahead-of-iceman-release",
-      "source_name": "Hypebeast",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-04-29T14:28:47.635279+00:00"
+  "last_checked": "2026-04-29T16:16:03.937619+00:00"
 }
