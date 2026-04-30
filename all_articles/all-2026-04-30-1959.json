@@ -1,0 +1,2485 @@
+{
+  "date": "2026-04-30",
+  "time": "1959",
+  "articles": [
+    {
+      "title": "Elon Musk testifies that xAI trained Grok on OpenAI models",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/",
+      "score": 8,
+      "why": "Musk admitting under oath that xAI trained Grok on OpenAI's models is a bombshell courtroom moment — it validates a core allegation in the trial and has immediate implications for how the AI industry thinks about model distillation and IP theft.",
+      "hook": "[TRIGGER: Disbelief] Musk trained his AI / on OpenAI's own models. / He said so under oath.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/04/musk-court-2273245544.jpg?resize=1200,801",
+      "published": "2026-04-30 18:03 UTC",
+      "cluster_id": "2026-04-30-1959-c6",
+      "cluster_size": 3,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "TechCrunch",
+        "The Verge"
+      ]
+    },
+    {
+      "title": "U.S. senators ban themselves from prediction markets trading",
+      "source": "CNBC",
+      "link": "https://www.cnbc.com/2026/04/30/senate-prediction-markets-trading-ban-kalshi-polymarket.html",
+      "score": 7,
+      "why": "US senators voluntarily banning themselves from trading prediction markets — after years of congressional insider trading scandals — is a meaningful self-regulatory act that signals prediction markets have become serious enough to warrant the same ethical guardrails as stock trading.",
+      "hook": "[TRIGGER: Disbelief] Senators just banned themselves / from betting on their own decisions. / That's how real this got.",
+      "image": "https://image.cnbcfm.com/api/v1/image/108300143-1777568745082-gettyimages-2266612928-BETS_OFF_ACT.jpeg?v=1777568870&amp;w=1920&amp;h=1080",
+      "published": "2026-04-30 19:22 UTC",
+      "cluster_id": "2026-04-30-1959-c8",
+      "cluster_size": 2,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "CNBC",
+        "Variety"
+      ]
+    },
+    {
+      "title": "Elon Musk confirms xAI used OpenAI’s models to train Grok",
+      "source": "The Verge",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/921546/elon-musk-xai-openai-trial-model-distillation",
+      "score": 7,
+      "why": "Musk testifying in open court that xAI used OpenAI's own models to train Grok is one of the most damaging self-admissions of the trial — it directly undermines his core claim that OpenAI betrayed its founding mission, while simultaneously exposing a common but rarely acknowledged industry practice.",
+      "hook": "[TRIGGER: Disbelief] Musk sued OpenAI for stealing. / Then admitted he did the same thing. / In court. Under oath.",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK022_ELON_MUSK_CVIRGINIA4_G.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200",
+      "published": "2026-04-30 18:16 UTC",
+      "cluster_id": "2026-04-30-1959-c6",
+      "cluster_size": 3,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "TechCrunch",
+        "WIRED",
+        "The Verge"
+      ]
+    },
+    {
+      "title": "Microsoft’s Xbox mode is now available for all Windows 11 PCs",
+      "source": "The Verge -  All Posts",
+      "link": "https://www.theverge.com/news/921582/microsoft-xbox-mode-windows-11",
+      "score": 6,
+      "why": "Microsoft's Xbox mode rolling out to all Windows 11 PCs is a meaningful platform move — it blurs the line between PC gaming and console, and signals where Microsoft sees its gaming future as Xbox hardware revenue collapses.",
+      "hook": "[TRIGGER: FOMO] Your PC just became an Xbox. / No new hardware required. / Microsoft quietly changed the game.",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/xboxmode_d8bb69.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100",
+      "published": "2026-04-30 19:14 UTC",
+      "cluster_id": "2026-04-30-1959-c1",
+      "cluster_size": 3,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Ars Technica",
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "S&P 500 heads for its best month since 2020 — plus, Apple earnings on deck",
+      "source": "Top News &amp; Analysis",
+      "link": "https://www.cnbc.com/2026/04/30/sp-500-heads-for-its-best-month-since-2020-plus-apple-earnings-on-deck.html",
+      "score": 6,
+      "why": "The S&P 500 heading for its best month since 2020 — while Apple earnings loom after close — is a live market signal that investor sentiment has turned sharply despite the ongoing war and inflation data.",
+      "hook": "[TRIGGER: Greed] Worst start to a year in decades. / Best month since 2020. / Apple reports tonight.",
+      "image": "https://image.cnbcfm.com/api/v1/image/108294028-17766986262026-04-20t151759z_1367253900_rc21tka7fuz5_rtrmadp_0_usa-stocks.jpeg?v=1776892785&amp;w=1920&amp;h=1080",
+      "published": "2026-04-30 18:40 UTC",
+      "cluster_id": "2026-04-30-1959-c4",
+      "cluster_size": 2,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Top News &amp; Analysis"
+      ]
+    },
+    {
+      "title": "‘Blair Witch Project’ Reboot Sets New Director as Original Stars Joshua Leonard and Michael C. Williams Join as Exec Producers",
+      "source": "Variety",
+      "link": "https://variety.com/2026/film/news/blair-witch-project-reboot-director-original-actors-1236734378/",
+      "score": 6,
+      "why": "The Blair Witch Project reboot gaining real momentum — with the original actors returning as producers and a serious horror director attached — is a genuine cultural event for a film that invented the found-footage genre and shaped a generation of horror.",
+      "hook": "[TRIGGER: FOMO] Blair Witch is coming back. / The original cast is producing it. / The woods are calling.",
+      "image": "https://variety.com/wp-content/uploads/2024/04/blair-witch.jpg",
+      "published": "2026-04-30 16:33 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "From ‘Star Wars’ Production Art to Frank Miller and Jack Kirby: Lucas Museum of Narrative Art Unveils Inaugural Exhibitions",
+      "source": "Variety",
+      "link": "https://variety.com/2026/film/news/star-wars-frank-miller-jack-kirby-lucas-museum-of-narrative-art-exibitions-1236733777/",
+      "score": 6,
+      "why": "The Lucas Museum of Narrative Art revealing its inaugural exhibitions — spanning Star Wars production art, Frank Miller, and Jack Kirby — marks a genuine cultural institution opening in LA that will define how pop art and visual storytelling get canonized for decades.",
+      "hook": "[TRIGGER: FOMO] Star Wars. Jack Kirby. Frank Miller. / One museum, opening this fall. / George Lucas built something real.",
+      "image": "https://variety.com/wp-content/uploads/2026/04/Unknown_3d21d9.jpeg",
+      "published": "2026-04-30 16:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "RFK Jr. appeals ruling that wiped out his vaccine advisory panel",
+      "source": "Ars Technica",
+      "link": "https://arstechnica.com/health/2026/04/rfk-jr-appeals-ruling-that-wiped-out-his-vaccine-advisory-panel/",
+      "score": 6,
+      "why": "RFK Jr. appealing the court ruling that dismantled his vaccine advisory panel keeps one of the most consequential public health fights of the year alive — the outcome will determine whether the CDC's immunization infrastructure gets permanently restructured.",
+      "hook": "[TRIGGER: Defensiveness] A judge threw out RFK's vaccine panel. / He's appealing. / The CDC fight isn't over.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/06/GettyImages-2221878046-1152x648.jpg",
+      "published": "2026-04-30 16:20 UTC",
+      "cluster_id": "2026-04-30-1959-trend_9",
+      "cluster_size": 2,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Top News &amp; Analysis",
+        "Ars Technica"
+      ]
+    },
+    {
+      "title": "Amazon to air 3 Duke games in landmark deal",
+      "source": "ESPN",
+      "link": "https://www.espn.com/mens-college-basketball/story/_/id/48637981/amazon-televise-3-marquee-duke-basketball-games-part-landmark-deal",
+      "score": 6,
+      "why": "Amazon streaming marquee Duke basketball games directly is the clearest sign yet that college sports rights are fragmenting beyond traditional broadcast — a structural shift in where fans will have to go to watch premium college content.",
+      "hook": "[TRIGGER: FOMO] Duke basketball is leaving TV. / Amazon just bought the biggest games. / College sports are changing forever.",
+      "image": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0430%2Fr1651452_1296x729_16-9.jpg",
+      "published": "2026-04-30 16:12 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "ESPN"
+      ]
+    },
+    {
+      "title": "Gemini is rolling out to cars with Google built-in",
+      "source": "The Verge -  All Posts",
+      "link": "https://www.theverge.com/tech/921117/google-gemini-ai-assistant-cars-upgrade",
+      "score": 6,
+      "why": "Google replacing Google Assistant with Gemini in tens of millions of cars is a quiet but real infrastructure shift — the AI assistant wars are now playing out inside your vehicle, not just your phone.",
+      "hook": "[TRIGGER: Curiosity] Your car's AI just got an upgrade. / Google Assistant is gone. / Gemini is taking the wheel.",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Google-Gemini-car-AI-assistant-upgrade.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100",
+      "published": "2026-04-30 16:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "Uber taps Hertz to clean, charge, and fix its Lucid Motors robotaxis",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/04/30/uber-taps-hertz-to-clean-charge-and-fix-its-lucid-motors-robotaxis/",
+      "score": 6,
+      "why": "Uber partnering with Hertz to create a dedicated fleet management company for Lucid robotaxis is a meaningful infrastructure build — it signals that the robotaxi supply chain is maturing beyond the vehicles themselves into full operational ecosystems.",
+      "hook": "[TRIGGER: Curiosity] Uber's robotaxis need a pit crew. / Hertz just became that crew. / The driverless economy is getting real.",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/10/uber-lucid.jpg?resize=1200,801",
+      "published": "2026-04-30 15:55 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "title": "ChatGPT developed a goblin obsession after OpenAI tried to make it nerdy",
+      "source": "Engadget",
+      "link": "https://www.engadget.com/2161234/chatgpt-developed-a-goblin-obsession-after-openai-tried-to-make-it-nerdy/",
+      "score": 6,
+      "why": "ChatGPT developing a spontaneous goblin obsession after OpenAI tried to make it 'nerdy' is a genuinely revealing anecdote about emergent AI behavior — the model found unexpected ways to express a trait it was intentionally cultivated toward.",
+      "hook": "[TRIGGER: Disbelief] OpenAI tried to make ChatGPT nerdy. / It became obsessed with goblins. / Nobody planned this.",
+      "image": "https://www.engadget.com/img/gallery/chatgpt-developed-a-goblin-obsession-after-openai-tried-to-make-it-nerdy/intro-1777563658.jpg",
+      "published": "2026-04-30 15:42 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Engadget"
+      ]
+    },
+    {
+      "title": "Microsoft open-sources \"the earliest DOS source code discovered to date\"",
+      "source": "Ars Technica",
+      "link": "https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/",
+      "score": 6,
+      "why": "Microsoft open-sourcing the earliest known DOS source code is a genuine piece of computing history becoming publicly accessible — it predates even the code Microsoft has previously released and opens a window into the origins of the PC era.",
+      "hook": "[TRIGGER: Curiosity] Microsoft just released code older than Windows. / Older than MS-DOS as you know it. / The birth of the PC era, unlocked.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/86-DOS-artifact-and-IBM-PC-1152x648.jpg",
+      "published": "2026-04-30 14:20 UTC",
+      "cluster_id": "2026-04-30-1959-c1",
+      "cluster_size": 3,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Ars Technica",
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "The battle over rescuing 2,000 beagles from lab research is not over",
+      "source": "Vox",
+      "link": "https://www.vox.com/future-perfect/486973/beagle-rescue-ridglan-animal-testing-research-rights",
+      "score": 6,
+      "why": "The Ridglan beagle story has evolved from a protest moment into a sustained legal and ethical battle — and the rare political coalition it's building across left and right makes it genuinely worth watching as a signal of where animal rights advocacy is heading.",
+      "hook": "[TRIGGER: Disbelief] 2,000 beagles. One farm. / The fight isn't over. / And the alliance is very strange.",
+      "image": "https://platform.vox.com/wp-content/uploads/sites/2/2026/04/IMG_3678.jpg?quality=90&amp;strip=all&amp;crop=0%2C11.454600357922%2C100%2C77.090799284157&amp;w=1200",
+      "published": "2026-04-29 16:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Vox"
+      ]
+    },
+    {
+      "title": "The sad, ugly debate behind the new Michael Jackson biopic",
+      "source": "Vox",
+      "link": "https://www.vox.com/culture/487316/michael-jackson-biopic",
+      "score": 6,
+      "why": "Vox cuts through the noise on the Michael Jackson biopic to address what everyone is actually wrestling with — how to hold record-breaking cultural celebration and serious abuse allegations simultaneously — a tension that isn't going away.",
+      "hook": "[TRIGGER: Defensiveness] A record box office. / A film about a man accused. / Which side are you on?",
+      "image": "https://platform.vox.com/wp-content/uploads/sites/2/2026/04/GettyImages-2272319841.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+      "published": "2026-04-29 15:35 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Vox"
+      ]
+    },
+    {
+      "title": "House strips MAHA-hated pesticide provisions from farm bill",
+      "source": "CNBC",
+      "link": "https://www.cnbc.com/2026/04/30/congress-house-maha-pesticide-farm-bill-roundup-bayer-glyphosate.html",
+      "score": 6,
+      "why": "MAHA advocates successfully pressuring Congress to strip pesticide liability provisions from the farm bill is a concrete demonstration of the movement's real legislative muscle — it's no longer just a cultural wellness trend.",
+      "hook": "[TRIGGER: Disbelief] A wellness movement just changed the farm bill. / No vote. No election. / Just pressure.",
+      "image": "https://image.cnbcfm.com/api/v1/image/108300031-1777562574973-IMG_0062.jpg?v=1777562741&amp;w=1920&amp;h=1080",
+      "published": "2026-04-30 17:29 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "CNBC"
+      ]
+    },
+    {
+      "title": "Olivia Rodrigo officially announces “The Unraveled Tour”",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1szu88p/olivia_rodrigo_officially_announces_the_unraveled/",
+      "score": 6,
+      "why": "Olivia Rodrigo announcing a new tour behind her second album is a genuine cultural moment for Gen Z — her concerts are among the highest-demand live events of the past two years, and this launch will dominate the presale conversation for the next week.",
+      "hook": "[TRIGGER: FOMO] Olivia Rodrigo is touring again. / Presale starts Tuesday. / Don't say you weren't warned.",
+      "image": null,
+      "published": "2026-04-30 12:08 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "Anti Bezos and Amazon posters and being installed in New York near the Met Museum in anticipation of the Bezos sponsored Met Gala",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1t066ho/anti_bezos_and_amazon_posters_and_being_installed/",
+      "score": 6,
+      "why": "Anti-Bezos street art appearing near the Met Museum ahead of the Bezos-sponsored Met Gala captures the cultural friction between billionaire philanthropy and public protest in one very visual moment — the kind of image that tends to circulate widely.",
+      "hook": "[TRIGGER: Curiosity] Bezos is sponsoring the Met Gala. / Someone put up posters nearby. / New York had thoughts.",
+      "image": null,
+      "published": "2026-04-30 19:22 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "MCU Star Evangeline Lilly Blasts Disney for Marvel Layoffs: ‘Shame on You For Turning Your Back on the People Who’ Gave You ‘Power’",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1t03ne7/mcu_star_evangeline_lilly_blasts_disney_for/",
+      "score": 6,
+      "why": "Evangeline Lilly publicly calling out Disney for Marvel layoffs — naming the studio directly and invoking the people who built its decade of dominance — is the kind of talent-vs-institution confrontation that rarely happens this openly in Hollywood.",
+      "hook": "[TRIGGER: Defensiveness] She helped build the MCU. / Now she's calling Disney out by name. / Shame on you.",
+      "image": null,
+      "published": "2026-04-30 17:52 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "This Quiet Luxury Football Kit Is for Everyone",
+      "source": "Highsnobiety",
+      "link": "https://www.highsnobiety.com/p/everyones-adidas/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://www.highsnobiety.com/static-assets/dato/1777387755-everyone-adidas-football-kit-1.jpg",
+      "published": "2026-04-30 19:23 UTC",
+      "cluster_id": "2026-04-30-1959-trend_6",
+      "cluster_size": 10,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Sneaker News",
+        "Highsnobiety",
+        "GQ"
+      ]
+    },
+    {
+      "title": "Blue Origin certainly has ambitious launch targets for New Glenn",
+      "source": "Ars Technica",
+      "link": "https://arstechnica.com/space/2026/04/blue-origin-certainly-has-ambitious-launch-targets-for-new-glenn/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/11/new-glenn-9x4-1-1152x648.jpg",
+      "published": "2026-04-30 19:12 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Ars Technica"
+      ]
+    },
+    {
+      "title": "Making America’s Houses Bigger May Have Been a Mistake",
+      "source": "Master Feed : The Atlantic",
+      "link": "https://www.theatlantic.com/newsletters/2026/04/small-american-dream-house/687011/?utm_source=feed",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/wyQ7Oxxv-8kHbjt9dHfQ6lfU_J8=/media/newsletters/2026/04/2026_04_30_Time_Travel_mpg/original.jpg",
+      "published": "2026-04-30 18:10 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Master Feed : The Atlantic"
+      ]
+    },
+    {
+      "title": "With Saros, Housemarque makes a case for doing next-gen games differently",
+      "source": "The Verge -  All Posts",
+      "link": "https://www.theverge.com/games/921391/housemarque-interview-saros-ps5",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/SAROS_KEYART_HORIZONTAL_nologo.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100",
+      "published": "2026-04-30 19:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "Pharrell Debuts Pink adidas Jellyfish",
+      "source": "Sneaker News",
+      "link": "https://sneakernews.com/2026/04/30/adidas-jellyfish-pink/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://sneakernews.com/wp-content/uploads/2026/04/adidas-jellyfish-pink-2.jpg",
+      "published": "2026-04-30 18:30 UTC",
+      "cluster_id": "2026-04-30-1959-trend_6",
+      "cluster_size": 10,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Sneaker News",
+        "Highsnobiety",
+        "GQ"
+      ]
+    },
+    {
+      "title": "OpenAI announces new advanced security for ChatGPT accounts, including a partnership with Yubico",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/04/30/openai-announces-new-advanced-security-for-chatgpt-accounts-including-a-partnership-with-yubico/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://techcrunch.com/wp-content/uploads/2026/04/OopenAI-how-to-1.jpg?resize=1200,600",
+      "published": "2026-04-30 18:20 UTC",
+      "cluster_id": "2026-04-30-1959-c5",
+      "cluster_size": 2,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Sadly, this is not The Onion.",
+        "TechCrunch"
+      ]
+    },
+    {
+      "title": "MAGA Is Confused About ‘Animal Farm’",
+      "source": "WIRED",
+      "link": "https://www.wired.com/story/maga-is-confused-about-animal-farm/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://media.wired.com/photos/69f38b6f4dca8ba9c1579a77/master/pass/MAGA-Confused-About-Animal-Farm-Culture-0700__0300_0090__main__compositing__v006_2k.jpg",
+      "published": "2026-04-30 18:19 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "WIRED"
+      ]
+    },
+    {
+      "title": "PSG, Bayern Munich show how fun soccer can be. Why...",
+      "source": "ESPN",
+      "link": "https://www.espn.com/soccer/story/_/id/48637733/psg-bayern-munich-uefa-champions-league-premier-league-analysis-tactics-fun",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0423%2Fr1647981_1296x729_16-9.jpg",
+      "published": "2026-04-30 18:14 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "ESPN"
+      ]
+    },
+    {
+      "title": "Tudor Black Bay Chrono “Carbon 26”: On Pole for 2026",
+      "source": "WatchTime",
+      "link": "https://www.watchtime.com/brands/chronographs/tudor-black-bay-chrono-carbon-26",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.watchtime.com/watchtime_en-us/blt22276bff283176bd/bltcf4c5219cfbefb87/69f3484aa5c9e0d1dbf664cb/WatchTime-Tudor-Black-Bay-Chrono-Carbon-26-Titel_649x365.webp",
+      "published": "2026-04-30 17:19 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "WatchTime"
+      ]
+    },
+    {
+      "title": "Subnautica 2 will be in early access May 14, at long last",
+      "source": "Engadget",
+      "link": "https://www.engadget.com/2161367/subnautica-2-will-be-in-early-access-may-14-at-long-last/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://www.engadget.com/img/gallery/subnautica-2-will-be-in-early-access-may-14-at-long-last/intro-1777571283.jpg",
+      "published": "2026-04-30 17:35 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Engadget"
+      ]
+    },
+    {
+      "title": "The redemption of Rudy and four more trends poweri...",
+      "source": "ESPN",
+      "link": "https://www.espn.com/nba/story/_/id/48624312/nba-playoffs-2025-2026-five-trends-watch-jayson-tatum-star-injuries",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0430%2Fr1651286_1296x729_16-9.jpg",
+      "published": "2026-04-30 17:42 UTC",
+      "cluster_id": "2026-04-30-1959-trend_10",
+      "cluster_size": 2,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows",
+        "ESPN"
+      ]
+    },
+    {
+      "title": "The 10 Biggest Longshot Winners in Kentucky Derby History",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/bets/a/matt-burke/kentucky-derby-longshot-winners",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_2041,w_3058,x_0,y_0/g_auto:aoi_1223_817_612_408/sanity-new%2FGettyImages-1395979988_ce547v.jpg",
+      "published": "2026-04-30 17:32 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "OpenAI Rolls Out 'Advanced' Security Mode for At-Risk ChatGPT and Codex Accounts",
+      "source": "WIRED",
+      "link": "https://www.wired.com/story/openai-chatgpt-codex-advanced-account-security/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://media.wired.com/photos/69f3851f013dbae7ce7c178e/master/pass/security_chatgpt_GettyImages-2271059989.jpg",
+      "published": "2026-04-30 17:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "WIRED"
+      ]
+    },
+    {
+      "title": "Who’s the Brand Behind The $1,000 Jordan Jacket?",
+      "source": "Highsnobiety",
+      "link": "https://www.highsnobiety.com/p/saint-michael-jordan/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://www.highsnobiety.com/static-assets/dato/1777486396-saint-michael-jordan-collab-1.jpg",
+      "published": "2026-04-30 17:12 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Highsnobiety"
+      ]
+    },
+    {
+      "title": "Associate professor arrested for allegedly running meth lab in Michigan State University’s Wells Hall",
+      "source": "Sadly, this is not The Onion.",
+      "link": "https://www.reddit.com/r/nottheonion/comments/1szxvym/associate_professor_arrested_for_allegedly/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://external-preview.redd.it/AnDeDnfAVHPtsUBNUlD0MtcsAGCDk3vc1JRy3XKX-28.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=52e3022bf9ef052587418496096f352b829f1bda",
+      "published": "2026-04-30 14:36 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Sadly, this is not The Onion."
+      ]
+    },
+    {
+      "title": "American High’s ‘Minimum Wage’ Lands Netflix Series Order (EXCLUSIVE)",
+      "source": "Variety",
+      "link": "https://variety.com/2026/tv/news/american-high-minimum-wage-netflix-series-order-1236734250/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/04/Minimum-Wage.png",
+      "published": "2026-04-30 16:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "‘Scrubs’ and ‘Shifting Gears’ Renewed at ABC, Rachel Bloom Pilot ‘Do You Want Kids?’ Not Moving Forward",
+      "source": "Variety",
+      "link": "https://variety.com/2026/tv/news/scrubs-revival-renewed-abc-shifting-gears-renewed-season-3-1236734215/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/04/Scrubs-Shifting-Gears.jpg",
+      "published": "2026-04-30 16:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "Finland’s Beyond Is Bringing Back The Nike SB Dunk High",
+      "source": "Sneaker News",
+      "link": "https://sneakernews.com/2026/04/30/beyond-nike-sb-dunk-high-iu4491-100/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://sneakernews.com/wp-content/uploads/2026/04/beyond-nike-sb-dunk-high-iu4491-100-4.jpg",
+      "published": "2026-04-30 16:30 UTC",
+      "cluster_id": "2026-04-30-1959-trend_6",
+      "cluster_size": 10,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Sneaker News",
+        "Highsnobiety",
+        "GQ"
+      ]
+    },
+    {
+      "title": "Scientists Are Starting to Unlock the Nanoscale Secrets of the Immune System",
+      "source": "WIRED",
+      "link": "https://www.wired.com/story/daniel-davis-immunology-wired-health/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://media.wired.com/photos/69ef9665560213fabd62eb91/master/pass/Daniel-Davis-WIRED-Health-Science-XT502847.jpg",
+      "published": "2026-04-30 16:32 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "WIRED"
+      ]
+    },
+    {
+      "title": "Travis Scott “Pink Pack,” Nigel Sylvester “Brick After Brick” Jordan 4,  And More Jordans Dropping May 2026",
+      "source": "Sneaker News",
+      "link": "https://sneakernews.com/2026/04/30/jordan-release-dates-may-2026/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://sneakernews.com/wp-content/uploads/2026/04/jordan-release-dates-may-2026-air-jordan-inrfrared23.jpg",
+      "published": "2026-04-30 16:00 UTC",
+      "cluster_id": "2026-04-30-1959-trend_6",
+      "cluster_size": 10,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Sneaker News",
+        "Highsnobiety",
+        "GQ"
+      ]
+    },
+    {
+      "title": "Converse Just Remixed the Sneakers Bird and Magic Made Famous",
+      "source": "GQ",
+      "link": "https://www.gq.com/story/engineered-garments-converse-weapon",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://media.gq.com/photos/69f3709dfea50ee62a9bf5b8/master/pass/Engineered-Garments-Converse-Weapon-OX-9%20(1).jpeg",
+      "published": "2026-04-30 15:17 UTC",
+      "cluster_id": "2026-04-30-1959-trend_6",
+      "cluster_size": 10,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Sneaker News",
+        "Highsnobiety",
+        "GQ"
+      ]
+    },
+    {
+      "title": "After working on the Vision Pro, this AR veteran is going back to phones",
+      "source": "The Verge -  All Posts",
+      "link": "https://www.theverge.com/column/921101/ar-mobile-pixi",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/258038_M5_Vision_Pro_AKrales_0401.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100",
+      "published": "2026-04-30 15:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "‘Pragmata’ Is a Great Robot-Fighting Game That Online Creeps Can’t Stop Being Weird About",
+      "source": "GQ",
+      "link": "https://www.gq.com/story/pragmata-video-game",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": "https://media.gq.com/photos/69f235c90bac765d2e3b3d71/16:9/w_1280,c_limit/Screenshot%202026-04-29%20at%209.44.14%E2%80%AFAM.png",
+      "published": "2026-04-30 12:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "GQ"
+      ]
+    },
+    {
+      "title": "Inside Claire’s Comeback Plan: Squishies, ASMR and Reclaiming Girlhood",
+      "source": "Adweek",
+      "link": "https://www.adweek.com/creativity/inside-claires-comeback-plan-squishies-asmr-and-reclaiming-girlhood/",
+      "score": 5,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 06:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Adweek"
+      ]
+    },
+    {
+      "title": "Week of April 20 Cable News Ratings: Viewership After WHCD Incident",
+      "source": "Adweek",
+      "link": "https://www.adweek.com/tvnewser/week-of-april-20-2026-cable-news-ratings/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 15:46 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Adweek"
+      ]
+    },
+    {
+      "title": "Over 20,000 Jeep and Dodge EVs Recalled Over Safety Display Failure",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/life/a/bernadette-giacomazzo/jeep-dodge-recall-check",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1081,w_1920,x_0,y_0/g_auto:aoi_768_433_384_216/sanity-new%2FDrive_a_Jeep_or_a_Dodge_Check_if_Your_Vehicle_is_Being_Recalled_j93kfc.jpg",
+      "published": "2026-04-30 19:41 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "The adidas Anthony Edwards Believe That Nears Debut In “Solar Turbo”",
+      "source": "Sneaker News",
+      "link": "https://sneakernews.com/2026/04/30/adidas-anthony-edwards-believe-that-solar-red-kj0452/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://sneakernews.com/wp-content/uploads/2026/04/adidas-anthony-edwards-believe-that-solar-red-kj0452-6.jpg",
+      "published": "2026-04-30 19:30 UTC",
+      "cluster_id": "2026-04-30-1959-trend_6",
+      "cluster_size": 10,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Sneaker News",
+        "Highsnobiety",
+        "GQ"
+      ]
+    },
+    {
+      "title": "EV startup Faraday Future paid $7.5M to company tied to founder Jia Yueting",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/04/30/ev-startup-faraday-future-paid-7-5m-to-company-tied-to-founder-jia-yueting/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-615658438.jpg?w=1024",
+      "published": "2026-04-30 18:56 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "title": "Hands-On: The Chopard L.U.C 1860 In Aeruse Blue",
+      "source": "Wristwatch News, Reviews, & Original Stories  — HODINKEE",
+      "link": "https://www.hodinkee.com/articles/the-chopard-luc-1860-in-aeruse-blue",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://hodinkee.imgix.net/uploads/images/b9c8419d-3dd9-4fb0-86a3-8ddb5b438458/tan2h-chopard-luc-1860-areuseblue-06668-header.jpg?ixlib=rails-1.1.0&amp;fm=jpg&amp;q=55&amp;auto=format&amp;usm=12&amp;ch=Width%2CDPR%2CSave-Data&amp;fit=crop&amp;w=2000",
+      "published": "2026-04-30 19:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Wristwatch News, Reviews, & Original Stories  — HODINKEE"
+      ]
+    },
+    {
+      "title": "X Revamps Its Ads Manager, Folding in New AI Performance Tools",
+      "source": "Adweek",
+      "link": "https://www.adweek.com/media/x-revamps-its-ads-manager-folding-in-new-ai-performance-tools/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 14:59 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Adweek"
+      ]
+    },
+    {
+      "title": "Musk v. Altman Kicks Off, DOJ Guts Voting Rights Unit, and Is the AI Job Apocalypse Overhyped?",
+      "source": "WIRED",
+      "link": "https://www.wired.com/story/uncanny-valley-podcast-musk-v-altman-doj-guts-voting-rights-unit-is-ai-job-apocalypse-overhyped/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://media.wired.com/photos/69f2663444afef60af143aae/master/pass/Uncanny-Valley-Musk-v-Altman-Business-2272923137.jpg",
+      "published": "2026-04-30 18:54 UTC",
+      "cluster_id": "2026-04-30-1959-trend_0",
+      "cluster_size": 3,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "WIRED",
+        "The Verge"
+      ]
+    },
+    {
+      "title": "NBA Playoffs Odds: Three Monster Game 6s On Tap For Friday Night",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/bets/a/matt-burke/game-6-nba-playoffs-betting-odds",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_2002,w_3000,x_0,y_0/g_auto:aoi_1200_801_600_400/sanity-new%2FGettyImages-2273037519_vdfsxw.jpg",
+      "published": "2026-04-30 18:47 UTC",
+      "cluster_id": "2026-04-30-1959-trend_10",
+      "cluster_size": 2,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows",
+        "ESPN"
+      ]
+    },
+    {
+      "title": "Antonio Lucio Joins PayPal as CMO Amid Massive Restructure",
+      "source": "Adweek",
+      "link": "https://www.adweek.com/commerce/antonio-lucio-joins-paypal-as-cmo-amid-company-wide-restructure/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 14:42 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Adweek"
+      ]
+    },
+    {
+      "title": "IShowSpeed Wants to Stream in Space After Visiting Five Countries in 24 Hours",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/pop-culture/a/jaelaniturnerwilliams/ishowspeed-space-stream",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1081,w_1920,x_0,y_0/g_auto:aoi_768_433_384_216/sanity-new%2FGettyImages-2267747158_hhakbf.jpg",
+      "published": "2026-04-30 18:36 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "Tyrese Revisits Viral Crying Meme: 'I Was on Psych Meds'",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/pop-culture/a/jaelaniturnerwilliams/tyrese-crying-meme-psych-meds",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1081,w_1920,x_0,y_0/g_auto:aoi_694_188_384_216/sanity-new%2FGettyImages-2273187693_bwtxxa.jpg",
+      "published": "2026-04-30 18:15 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "The Shifting Landscape of Design is “Exciting”, says Faye Toogood",
+      "source": "Hypebeast",
+      "link": "https://hypebeast.com/2026/4/faye-toogood-meritalia-launch-milan-design-week-feature-interview",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2026%2F04%2F30%2Ffaye-toogood-meritalia-launch-milan-design-week-feature-interview-0.jpg?w=800&amp;cbr=1&amp;q=90&amp;fit=max",
+      "published": "2026-04-30 15:05 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Hypebeast"
+      ]
+    },
+    {
+      "title": "Don Toliver’s Love for Cars Didn’t Start With ‘Octane’",
+      "source": "Hypebeast",
+      "link": "https://hypebeast.com/2026/4/don-tolivers-love-for-cars-didnt-start-with-octane",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2026%2F04%2F29%2FHow-Don-Toliver-Made-Octane-01.jpg?w=800&amp;cbr=1&amp;q=90&amp;fit=max",
+      "published": "2026-04-29 20:53 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Hypebeast"
+      ]
+    },
+    {
+      "title": "Anthony Mackie's 'Desert Warrior' On Track to Be Major Box Office Flop",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/pop-culture/a/cmplxtara-mahadevan/anthony-mackie-desert-warrior-flop",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1081,w_1920,x_0,y_0/g_auto:aoi_768_433_384_216/sanity-new%2FGettyImages-2247663879_kakzad.jpg",
+      "published": "2026-04-30 17:52 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "Xbox owners can now disable Quick Resume for specific games",
+      "source": "The Verge -  All Posts",
+      "link": "https://www.theverge.com/games/921504/xbox-update-quick-resume-disable",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25283724/STK048_XBOX_C.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100",
+      "published": "2026-04-30 17:51 UTC",
+      "cluster_id": "2026-04-30-1959-trend_2",
+      "cluster_size": 3,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Engadget",
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "Apple execs to talk China and tariffs, but will avoid discussing foldable iPhone, per bettors on Kalshi",
+      "source": "Top News &amp; Analysis",
+      "link": "https://www.cnbc.com/2026/04/30/what-bettors-think-apple-will-talk-about-on-its-earnings-call.html",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://image.cnbcfm.com/api/v1/image/108294282-1776723285352-Apple-John-Ternus-Tim-Cook.jpg?v=1776723345&amp;w=1920&amp;h=1080",
+      "published": "2026-04-30 17:35 UTC",
+      "cluster_id": "2026-04-30-1959-c4",
+      "cluster_size": 2,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Top News &amp; Analysis"
+      ]
+    },
+    {
+      "title": "Amazon's AI-generated shopping experts now let you ask questions",
+      "source": "Engadget",
+      "link": "https://www.engadget.com/2161331/amazon-s-ai-generated-shopping-experts-now-let-you-ask-questions/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://www.engadget.com/img/gallery/amazons-ai-generated-shopping-experts-now-let-you-ask-questions/intro-1777568344.jpg",
+      "published": "2026-04-30 17:11 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Engadget"
+      ]
+    },
+    {
+      "title": "OpenAI: Where the goblins came from",
+      "source": "Sadly, this is not The Onion.",
+      "link": "https://www.reddit.com/r/nottheonion/comments/1t02qup/openai_where_the_goblins_came_from/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://external-preview.redd.it/Yt7I8MtF4CeEteDJx97BxDkO4iWq3aITpuijICToCCo.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=56d5bd4955df0d576224cd2995287b0bc525386b",
+      "published": "2026-04-30 17:19 UTC",
+      "cluster_id": "2026-04-30-1959-c5",
+      "cluster_size": 2,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Sadly, this is not The Onion.",
+        "TechCrunch"
+      ]
+    },
+    {
+      "title": "Scientists Survey Critically Endangered Blue Tarantula in India’s Largest Tiger Reserve, Highlighting Urgent Need to Protect One of the World’s Most Restricted and Vulnerable Species",
+      "source": "Sadly, this is not The Onion.",
+      "link": "https://www.reddit.com/r/nottheonion/comments/1t02gq1/scientists_survey_critically_endangered_blue/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://external-preview.redd.it/jzar7ba497VPBiB_m7OHVJapNAeYJ9nttYdcwvWgPk4.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=833afbeb5b51908def5cb30c6d1b90dea168a98f",
+      "published": "2026-04-30 17:09 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Sadly, this is not The Onion."
+      ]
+    },
+    {
+      "title": "FCC Chairman Trolls Critic Accusing Him of Being a ‘Whole Bitch’ Amid Agency’s ABC Early License Review With Meme From ‘Parks and Recreation’",
+      "source": "Variety",
+      "link": "https://variety.com/2026/tv/news/fcc-chairman-whole-bitch-parks-and-recreation-meme-1236734330/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2025/03/Brendan-Carr.jpg",
+      "published": "2026-04-30 16:01 UTC",
+      "cluster_id": "2026-04-30-1959-trend_11",
+      "cluster_size": 2,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety",
+        "The Atlantic"
+      ]
+    },
+    {
+      "title": "Theater Legends André Bishop, Jules Fisher and James Lapine to Receive Tony Awards Lifetime Achievement Honors (EXCLUSIVE)",
+      "source": "Variety",
+      "link": "https://variety.com/2026/legit/awards/tonys-lifetime-achievement-james-lapine-andre-bishop-jules-fisher-1236733505/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/04/Tony-Awards-Lifetime-Achievement-Award-Recipients.jpg",
+      "published": "2026-04-30 16:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "Introducing: Naoya Hida & Co.'s 2026 Slate Of Releases, Including Two Brand-New Models And Their First Porcelain Dial",
+      "source": "Wristwatch News, Reviews, & Original Stories  — HODINKEE",
+      "link": "https://www.hodinkee.com/articles/intro-naoya-hida-2026",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://hodinkee.imgix.net/uploads/images/bed7a0d4-3186-40a1-8320-b67cd62078a0/HidaHero.jpg?ixlib=rails-1.1.0&amp;fm=jpg&amp;q=55&amp;auto=format&amp;usm=12&amp;ch=Width%2CDPR%2CSave-Data&amp;fit=crop&amp;w=2000",
+      "published": "2026-04-30 17:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Wristwatch News, Reviews, & Original Stories  — HODINKEE"
+      ]
+    },
+    {
+      "title": "3-time Lady Byng winner Kopitar among finalists",
+      "source": "ESPN",
+      "link": "https://www.espn.com/nhl/story/_/id/48638558/three-lady-byng-winner-kopitar-three-finalists-award",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0417%2Fr1001190_1296x729_16-9.jpg",
+      "published": "2026-04-30 17:33 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "ESPN"
+      ]
+    },
+    {
+      "title": "Atomfall is the latest indie game being turned into a TV show",
+      "source": "Engadget",
+      "link": "https://www.engadget.com/2161301/atomfall-is-the-latest-indie-game-being-turned-into-a-tv-show/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://www.engadget.com/img/gallery/atomfall-is-the-latest-indie-game-being-turned-into-a-tv-show/intro-1777566894.jpg",
+      "published": "2026-04-30 16:46 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Engadget"
+      ]
+    },
+    {
+      "title": "Salesforce is crowdsourcing its AI roadmap — with customers ",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/04/30/salesforce-is-crowdsourcing-its-ai-roadmap-with-customers/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://techcrunch.com/wp-content/uploads/2022/11/Salesforce_logo-e1672835031758.jpg?resize=1200,675",
+      "published": "2026-04-30 16:06 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "title": "Microsoft’s DLSS competitor is now available on the Xbox Ally X handheld",
+      "source": "The Verge -  All Posts",
+      "link": "https://www.theverge.com/news/921112/microsoft-auto-sr-xbox-ally-x-preview",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/257996_ROG_Xbox_Ally_and_Xbox_Ally_X_AKrales_0092.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100",
+      "published": "2026-04-30 16:00 UTC",
+      "cluster_id": "2026-04-30-1959-c1",
+      "cluster_size": 3,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Ars Technica",
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "The ROG Xbox Ally X is getting some updates, including Automatic Super Resolution",
+      "source": "Engadget",
+      "link": "https://www.engadget.com/2160776/the-rog-xbox-ally-x-is-getting-some-updates-including-automatic-super-resolution/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://www.engadget.com/img/gallery/the-rog-xbox-ally-x-is-getting-some-updates-including-automatic-super-resolution/intro-1777568911.jpg",
+      "published": "2026-04-30 16:00 UTC",
+      "cluster_id": "2026-04-30-1959-trend_2",
+      "cluster_size": 3,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Engadget",
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "SpaceX backer 137 Ventures raises $700M for two growth-stage funds",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/04/30/spacex-backer-137-ventures-raises-700m-for-two-growth-stage-funds/",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://techcrunch.com/wp-content/uploads/2023/11/GettyImages-1399595760.jpg?resize=1200,675",
+      "published": "2026-04-30 15:29 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "title": "The Most Coveted Watches of 2026, According to a Retail Expert",
+      "source": "GQ",
+      "link": "https://www.gq.com/story/watches-wonders-interview-retailer-perspective-interview",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://media.gq.com/photos/69f2c3e5daecbf8371c0e886/16:9/w_1280,c_limit/GettyImages-2270899478.jpg",
+      "published": "2026-04-30 13:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "GQ"
+      ]
+    },
+    {
+      "title": "Woman Acquitted of All Charges Stemming from Her Wearing Penis Costume to Anti-Trump Protest",
+      "source": "Complex",
+      "link": "https://www.complex.com/life/a/jaelaniturnerwilliams/alabama-woman-acquitted-penis-costume",
+      "score": 4,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1081,w_1920,x_0,y_0/g_auto:aoi_768_433_384_216/sanity-new%2FGettyImages-2273739264_zqjieo.jpg",
+      "published": "2026-04-30 19:48 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex"
+      ]
+    },
+    {
+      "title": "Trick Daddy Claims Polo Asked Him Not to Mention Brand in His Music: 'They Broke My Heart'",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/style/a/backwoodsaltar/trick-daddy-polo-music-drama",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1577,w_2516,x_0,y_0/g_auto:aoi_1120_394_503_315/sanity-new%2FScreenshot_2026-04-30_at_13.19.34_pmhxzm.jpg",
+      "published": "2026-04-30 19:13 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "Seven Books That Will Take You on an Adventure",
+      "source": "Master Feed : The Atlantic",
+      "link": "https://www.theatlantic.com/books/2026/04/adventure-books-recommendations/687006/?utm_source=feed",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/irenULFjm7KcAYYIfbAQ6DiPQco=/media/img/mt/2026/04/2026_02_23_Seven_Books_To_Read_When_You_Want_an_Adventure/original.jpg",
+      "published": "2026-04-30 18:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Master Feed : The Atlantic"
+      ]
+    },
+    {
+      "title": "Anbernic's swiveling retro handheld will be available May 11",
+      "source": "Engadget",
+      "link": "https://www.engadget.com/2161434/anbernics-swiveling-retro-handheld-will-be-available-may-11/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://www.engadget.com/img/gallery/anbernics-swiveling-retro-handheld-will-be-available-may-11/intro-1777573948.jpg",
+      "published": "2026-04-30 18:33 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Engadget"
+      ]
+    },
+    {
+      "title": "LG's UltraGear evo 5K gaming monitor is available to pre-order",
+      "source": "Engadget",
+      "link": "https://www.engadget.com/2161419/lgs-ultragear-evo-5k-gaming-monitor-is-available-to-pre-order/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://www.engadget.com/img/gallery/lgs-ultragear-evo-5k-gaming-monitor-is-available-to-pre-order/intro-1777573275.jpg",
+      "published": "2026-04-30 18:24 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Engadget"
+      ]
+    },
+    {
+      "title": "Cardinal Health is getting pummeled on mixed results — here's our plan for stock",
+      "source": "Top News &amp; Analysis",
+      "link": "https://www.cnbc.com/2026/04/30/cardinal-health-is-getting-pummeled-on-mixed-results-our-plan-for-stock.html",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://image.cnbcfm.com/api/v1/image/105377940-1533562033400gettyimages-870546296.jpeg?v=1764953663&amp;w=1920&amp;h=1080",
+      "published": "2026-04-30 18:25 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Top News &amp; Analysis"
+      ]
+    },
+    {
+      "title": "Lexie Brown’s Friends are Fighting Back Against Klay Thompson Cheating Rumors: 'Blatant Liars'",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/sports/a/bernadette-giacomazzo/lexie-brown-debunks-klay-thompson-cheating-rumors",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1081,w_1920,x_0,y_0/g_auto:aoi_768_433_384_216/sanity-new%2FLexie_Brown_s_Close_Friends_Break_Silence_After_WNBA_Star_Debunks_Klay_Thompson_Cheating_Rumors_johbst.jpg",
+      "published": "2026-04-30 18:22 UTC",
+      "cluster_id": "2026-04-30-1959-trend_4",
+      "cluster_size": 2,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "FDA approval, fundraising, and the reality of building in healthcare according to BioticsAI founder",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/04/30/fda-approval-fundraising-and-the-reality-of-building-in-healthcare-according-to-bioticsai-founder/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://techcrunch.com/wp-content/uploads/2026/04/bms2e11-featured.png?resize=1200,675",
+      "published": "2026-04-30 17:53 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "title": "Microsoft Flight Simulator 2024 support for PlayStation VR2 is now live",
+      "source": "Engadget",
+      "link": "https://www.engadget.com/2161381/microsoft-flight-simulator-2024-support-for-playstation-vr2-is-now-live/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://www.engadget.com/img/gallery/microsoft-flight-simulator-2024-support-for-playstation-vr2-is-now-live/intro-1777571339.jpg",
+      "published": "2026-04-30 17:50 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Engadget"
+      ]
+    },
+    {
+      "title": "Justin Bieber's SKYLRK Compound at Coachella Featured Custom Dune Sofas From Paulin, Paulin, Paulin",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/style/a/tracewilliamcowen/justin-bieber-skylrk-coachella-dune-sofas",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1081,w_1920,x_0,y_0/g_auto:aoi_768_433_384_216/sanity-new%2Fjb-2_jl07oj.jpg",
+      "published": "2026-04-30 17:39 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "Age of Empires II: Definitive Edition arrives on Mac next month",
+      "source": "Engadget",
+      "link": "https://www.engadget.com/2161345/age-of-empires-ii-definitive-edition-arrives-on-mac-next-month/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://www.engadget.com/img/gallery/age-of-empires-ii-definitive-edition-arrives-on-mac-next-month/intro-1777569319.jpg",
+      "published": "2026-04-30 17:18 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Engadget"
+      ]
+    },
+    {
+      "title": "NBC, TV Academy Tap Jesse Collins Entertainment to Produce the Emmys for a Fourth Consecutive Year",
+      "source": "Variety",
+      "link": "https://variety.com/2026/tv/news/jesse-collins-entertainment-producer-emmys-nbc-1236733937/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/04/P10283IZ.jpg",
+      "published": "2026-04-30 16:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "Shareef O’Neal, Shaquille O’Neal’s Son And Entrepreneur, Joins UTA Roster",
+      "source": "Variety",
+      "link": "https://variety.com/2026/tv/news/shareef-oneal-shaquille-oneal-uta-1236733149/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/04/Shareef-ONeal-e1777474206151.jpeg",
+      "published": "2026-04-30 16:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "SAG-AFTRA Launches ‘I Am An Actor’ Podcast; First Guests Include Quinta Brunson, Kate Hudson, Mariska Hargitay, Kerry Washington (EXCLUSIVE)",
+      "source": "Variety",
+      "link": "https://variety.com/2026/tv/news/sag-aftra-i-am-an-actor-podcast-launches-1236733924/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/04/MixCollage-29-Apr-2026-11-22-PM-9225.jpg",
+      "published": "2026-04-30 15:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "Source: Vet DE Campbell reuniting with Ravens",
+      "source": "ESPN",
+      "link": "https://www.espn.com/nfl/story/_/id/48638308/source-calais-campbell-reuniting-ravens-19th-season",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F1105%2Fr1086431_1296x729_16-9.jpg",
+      "published": "2026-04-30 16:23 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "ESPN"
+      ]
+    },
+    {
+      "title": "7 (Actually Good) Things to Watch on Netflix in May",
+      "source": "GQ",
+      "link": "https://www.gq.com/story/netflix-may-2026-what-to-watch",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://media.gq.com/photos/69f0d0ffb4fb2866bb938629/master/pass/088_NetflixStills_JK.jpg",
+      "published": "2026-04-30 15:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "GQ"
+      ]
+    },
+    {
+      "title": "Official Images Of The Air Jordan 3 “World’s Best Dad”",
+      "source": "Sneaker News",
+      "link": "https://sneakernews.com/2026/04/30/air-jordan-3-worlds-best-dad-fathers-day-if4396-103/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://sneakernews.com/wp-content/uploads/2026/04/air-jordan-3-worlds-best-dad-fathers-day-if4396-103-6.jpg",
+      "published": "2026-04-30 15:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Sneaker News"
+      ]
+    },
+    {
+      "title": "Met Gala 2026: The 64 Best-Dressed Men of All Time",
+      "source": "GQ",
+      "link": "https://www.gq.com/gallery/met-gala-most-memorable-menswear-looks",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://media.gq.com/photos/6630048d4bb67fb181842bb5/16:9/w_1280,c_limit/met.jpg",
+      "published": "2026-04-30 12:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "GQ"
+      ]
+    },
+    {
+      "title": "Rao’s Enlists Goodby Silverstein & Partners to Make its Brand Iconic",
+      "source": "Adweek",
+      "link": "https://www.adweek.com/agencies/raos-enlists-goodby-silverstein-partners-to-make-its-brand-iconic/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 09:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Adweek"
+      ]
+    },
+    {
+      "title": "Lenovo Taps Becky G and AI to Turn Soccer Kits Into Art",
+      "source": "Adweek",
+      "link": "https://www.adweek.com/creativity/lenovo-taps-becky-g-and-ai-to-turn-soccer-kits-into-art/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 08:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Adweek"
+      ]
+    },
+    {
+      "title": "Vue Calls on Taika Waititi to Lure Audiences Back to Movie Theaters",
+      "source": "Adweek",
+      "link": "https://www.adweek.com/creativity/vue-calls-on-taika-waititi-to-lure-audiences-back-to-movie-theaters/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 06:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Adweek"
+      ]
+    },
+    {
+      "title": "Gidi Dar’s ‘The Wedding Entertainer’ Sales Rights Acquired by Film Sales Company Ahead of Tribeca Premiere (EXCLUSIVE)",
+      "source": "Variety",
+      "link": "https://variety.com/2026/film/news/gidi-dars-the-wedding-entertainer-sales-rights-acquired-by-film-sales-company-1236734521/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/04/The-Wedding-Entertainer-Image.jpg",
+      "published": "2026-04-30 18:36 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "Thriller Series ‘Second Lady’ in Development at Amazon From Jessica Sharzer, Kevin Williamson",
+      "source": "Variety",
+      "link": "https://variety.com/2026/tv/news/second-lady-amazon-jessica-sharzer-kevin-williamson-1236734478/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/04/Jessica-Sharzer-Kevin-Williamson.jpg",
+      "published": "2026-04-30 18:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "Emmys: Supporting Actress (Drama) — ‘The Pitt’ Could Stack the Field, but Allison Janney and Julianne Nicholson Are Viable Contenders",
+      "source": "Variety",
+      "link": "https://variety.com/lists/emmys-2026-supporting-actress-drama-predictions/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/03/Sepideh-Moafi-_The-Pitt_-HBO-Max.jpg",
+      "published": "2026-04-30 17:55 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "You can now choose which games use Quick Resume on Xbox",
+      "source": "Engadget",
+      "link": "https://www.engadget.com/2161516/you-can-now-choose-which-games-use-quick-resume-on-xbox/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": "https://www.engadget.com/img/gallery/you-can-now-choose-which-games-use-quick-resume-on-xbox/l-intro-1777578458.jpg",
+      "published": "2026-04-30 19:48 UTC",
+      "cluster_id": "2026-04-30-1959-trend_2",
+      "cluster_size": 3,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Engadget",
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "Bryan Cranston has a “Mel” keychain from The Pitt, his daughter Taylor Dearden plays Dr. Melissa King",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1szzuxr/bryan_cranston_has_a_mel_keychain_from_the_pitt/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 15:39 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "Kacey Musgraves has partnered with Depop to sell 20 of her personal items. Benefits from the sale will be donated to The Young Center for Immigrant Children's Rights.",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1t04yqy/kacey_musgraves_has_partnered_with_depop_to_sell/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 18:38 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "LeVar Burton speaks out against cuts to funding for public broadcasting on ‘The View’",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1sz8ffn/levar_burton_speaks_out_against_cuts_to_funding/",
+      "score": 3,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-29 19:08 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "The 10 Best Movies to Watch on Complex TV (May 2026)",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/pop-culture/a/khal/complex-tv-best-movies-to-watch",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1079,w_1920,x_0,y_0/g_auto:aoi_768_432_384_216/sanity-new%2FDear-White-People-2014-lead_usmviq.jpg",
+      "published": "2026-04-30 18:48 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "Cricut’s Joy 2 makes creating stickers easier for beginners, and it’s on sale",
+      "source": "The Verge -  All Posts",
+      "link": "https://www.theverge.com/gadgets/921355/cricut-joy-2-mothers-day-deal-sale",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/cricut2.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100",
+      "published": "2026-04-30 16:45 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "Best Side-Sleeper Mattresses 2026: Picked by a Sleep Science Coach",
+      "source": "WIRED",
+      "link": "https://www.wired.com/gallery/the-best-mattress-for-side-sleeper/",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": "https://media.wired.com/photos/69275715ca35020b3a07c608/master/pass/The%20Best%20Mattresses%20for%20Side%20Sleepers.png",
+      "published": "2026-04-30 15:59 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "WIRED"
+      ]
+    },
+    {
+      "title": "NBC Races Into 100th Anniversary With Kentucky Derby-Bound Promo",
+      "source": "Adweek",
+      "link": "https://www.adweek.com/convergent-tv/nbc-100th-anniversary-with-kentucky-derby-promo/",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 12:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Adweek"
+      ]
+    },
+    {
+      "title": "The Real-Life Diet of Jackson White, Who Loves Cooking Steak the ‘French Way’",
+      "source": "GQ",
+      "link": "https://www.gq.com/story/the-real-life-diet-of-jackson-white",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": "https://media.gq.com/photos/69f36947e284b32f445658f6/master/pass/RLD%20Jackson%20White%20Web.jpg",
+      "published": "2026-04-30 15:33 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "GQ"
+      ]
+    },
+    {
+      "title": "Paul Anthony Kelly Wore 3 Perfect Spring Jackets in 24 Hours",
+      "source": "GQ",
+      "link": "https://www.gq.com/story/paul-anthony-kelly-wore-3-perfect-spring-jackets-in-24-hours",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": "https://media.gq.com/photos/69f361b4b4fb2866bb93a944/master/pass/2273152656",
+      "published": "2026-04-30 14:50 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "GQ"
+      ]
+    },
+    {
+      "title": "Sources: Giants' Slayton has core-muscle surgery",
+      "source": "ESPN",
+      "link": "https://www.espn.com/nfl/story/_/id/48638006/sources-giants-wr-darius-slayton-core-muscle-surgery",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F1008%2Fr1557352_1296x729_16-9.jpg",
+      "published": "2026-04-30 15:51 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "ESPN"
+      ]
+    },
+    {
+      "title": "What GQ Editors Impulse-Bought in April",
+      "source": "GQ",
+      "link": "https://www.gq.com/story/what-gq-editors-impulse-bought-april-2026",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": "https://media.gq.com/photos/69f388216967019ad3486d27/16:9/w_1280,c_limit/GQ-editors-april.jpg",
+      "published": "2026-04-30 18:11 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "GQ"
+      ]
+    },
+    {
+      "title": "16 Best Loafers for Men 2026, According to GQ Style Editors",
+      "source": "GQ",
+      "link": "https://www.gq.com/story/the-best-loafers-for-men",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": "https://media.gq.com/photos/67859383268ae7b6866f5b8d/16:9/w_1280,c_limit/best-loafers-gq.png",
+      "published": "2026-04-30 17:47 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "GQ"
+      ]
+    },
+    {
+      "title": "In Its Summer Campaign, Budweiser Waves the Flag — A Lot",
+      "source": "Adweek",
+      "link": "https://www.adweek.com/brand-marketing/in-its-summer-campaign-budweiser-waves-the-flag-a-lot/",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 09:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Adweek"
+      ]
+    },
+    {
+      "title": "Don’t Let Industry Jargon Cost You When Shopping for a Smart Bed",
+      "source": "WIRED",
+      "link": "https://www.wired.com/story/adjustable-mattress-vs-adjustable-frame-vs-smart-bed/",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": "https://media.wired.com/photos/683e41777a72d53a3adfb36f/191:100/w_1280,c_limit/Adjustable%20Mattress%20vs.%20Adjustable%20Frame.png",
+      "published": "2026-04-30 17:42 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "WIRED"
+      ]
+    },
+    {
+      "title": "Photos: A Century of Sidecar Racing",
+      "source": "The Atlantic",
+      "link": "https://www.theatlantic.com/photography/2026/04/photos-century-sidecar-racing/686992/?utm_source=feed",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/dD4zhHXBGYPpbY0iY3MsF_lEJMI=/0x40:4229x2421/media/img/mt/2026/04/a01_G_558634749/original.jpg",
+      "published": "2026-04-29 18:26 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Atlantic"
+      ]
+    },
+    {
+      "title": "Sofia Coppola congratulates Kirsten Dunst for her 44th birthday with a ‘Marie Antoinette’ throwback picture",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1t02cxi/sofia_coppola_congratulates_kirsten_dunst_for_her/",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 17:06 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "20 years ago today One Republic released their very first song “Apologize”",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1szltii/20_years_ago_today_one_republic_released_their/",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 04:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "[SERIOUS NEXT DAY THREAD] Post-Game Discussion (April 29, 2026)",
+      "source": "r/nba",
+      "link": "https://www.reddit.com/r/nba/comments/1szsry6/serious_next_day_thread_postgame_discussion_april/",
+      "score": 2,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 11:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/nba"
+      ]
+    },
+    {
+      "title": "Trump says 'I don't think about' another assassination attempt",
+      "source": "Top News &amp; Analysis",
+      "link": "https://www.cnbc.com/2026/04/30/trump-assassination-attempt.html",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://image.cnbcfm.com/api/v1/image/108300250-1777575693031-gettyimages-2273912148-ah809975_fdg6fsrp.jpeg?v=1777575731&amp;w=1920&amp;h=1080",
+      "published": "2026-04-30 19:49 UTC",
+      "cluster_id": "2026-04-30-1959-c0",
+      "cluster_size": 6,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Top News &amp; Analysis",
+        "CNBC"
+      ]
+    },
+    {
+      "title": "Mariah Carey’s Twins ‘Dem Babies’ Are Officially 15",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/mariah-carey-dem-babies-15th-birthday",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1080,w_1920,x_0,y_0/g_auto:aoi_768_432_384_216/sanity-new%2FMariah_Carey_Celebrates_Dem_Babies_15th_Birthday_hrsz16.jpg",
+      "published": "2026-04-30 19:23 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "Trump administration finalizes federal student loan caps—what it means for borrowers",
+      "source": "Top News &amp; Analysis",
+      "link": "https://www.cnbc.com/2026/04/30/grad-school-loan-caps-final-rule.html",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://image.cnbcfm.com/api/v1/image/108295399-1776869935866-gettyimages-2215825730-20250518_dc_105.jpeg?v=1776869954&amp;w=1920&amp;h=1080",
+      "published": "2026-04-30 18:37 UTC",
+      "cluster_id": "2026-04-30-1959-c0",
+      "cluster_size": 6,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Top News &amp; Analysis",
+        "CNBC"
+      ]
+    },
+    {
+      "title": "Trump taps Nicole Saphier for surgeon general after pulling Casey Means nomination",
+      "source": "Top News &amp; Analysis",
+      "link": "https://www.cnbc.com/2026/04/30/trump-taps-nicole-saphier-for-surgeon-general-after-pulling-casey-means.html",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://image.cnbcfm.com/api/v1/image/108300140-1777568616690-gettyimages-2135815068-_jjj3787_pe9kjxyy.jpeg?v=1777568639&amp;w=1920&amp;h=1080",
+      "published": "2026-04-30 17:54 UTC",
+      "cluster_id": "2026-04-30-1959-c0",
+      "cluster_size": 6,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Top News &amp; Analysis",
+        "CNBC"
+      ]
+    },
+    {
+      "title": "‘The Boys’ Showrunner Eric Kripke Says Trump’s Image of Himself as Jesus Ruined a Homelander Joke",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/pop-culture/a/backwoodsaltar/eric-kripke-trump-jesus-photo-homelander",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_720,w_1280,x_0,y_0/g_auto:aoi_218_168_256_144/sanity-new%2Fhomelander-trump_dmo43p.jpg",
+      "published": "2026-04-30 17:50 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "Google’s Gemini AI assistant is hitting the road in millions of vehicles",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://techcrunch.com/wp-content/uploads/2026/04/Gemini-google-vehicles.jpeg?w=1200",
+      "published": "2026-04-30 17:46 UTC",
+      "cluster_id": "2026-04-30-1959-c7",
+      "cluster_size": 2,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "CNBC",
+        "TechCrunch"
+      ]
+    },
+    {
+      "title": "Elon Musk Seemingly Admits xAI Has Used OpenAI’s Models to Train Its Own",
+      "source": "WIRED",
+      "link": "https://www.wired.com/story/elon-musk-distill-openai-models-partly-xai/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://media.wired.com/photos/69f3848c17e0528daa0ec80c/master/pass/Musk-Admits-to-Partly-Distilling-OpenAI-Models-Business-2273133893.jpg",
+      "published": "2026-04-30 17:41 UTC",
+      "cluster_id": "2026-04-30-1959-c6",
+      "cluster_size": 3,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "TechCrunch",
+        "WIRED",
+        "The Verge"
+      ]
+    },
+    {
+      "title": "DHS shutdown set to end after House passes bill to fund most of agency, including TSA",
+      "source": "Top News &amp; Analysis",
+      "link": "https://www.cnbc.com/2026/04/30/congress-dhs-tsa-funding.html",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://image.cnbcfm.com/api/v1/image/108277919-1777569719449-108277919-1773422590364-gettyimages-2265809524-AFP_A37Q7K4.jpg?v=1777569756&amp;w=1920&amp;h=1080",
+      "published": "2026-04-30 17:28 UTC",
+      "cluster_id": "2026-04-30-1959-trend_9",
+      "cluster_size": 2,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Top News &amp; Analysis",
+        "Ars Technica"
+      ]
+    },
+    {
+      "title": "Unable to form a cogent argument for themselves, conservative students turn to pre written talking points written by groups accusing Democrats of radicalizing students.",
+      "source": "Sadly, this is not The Onion.",
+      "link": "https://www.reddit.com/r/nottheonion/comments/1t024iq/unable_to_form_a_cogent_argument_for_themselves/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://external-preview.redd.it/NgtFVROtCdwnyfp88kg4l2t6YKeVHqEFtct8WPD1EAY.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=cc0727915176aae00d6270bbd6bbbff59b2ffe1e",
+      "published": "2026-04-30 16:57 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Sadly, this is not The Onion."
+      ]
+    },
+    {
+      "title": "Lexi Brown Says Klay Thompson Affair Rumors Led to Death Threats, Wants Someone to ‘Say Something'",
+      "source": "Complex | Music, Sneakers, Pop Culture, News & Shows",
+      "link": "https://www.complex.com/sports/a/jaelaniturnerwilliams/lexie-brown-defends-klay-thompson-rumors",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://images.complex.com/complex/image/upload/c_crop,h_1081,w_1920,x_0,y_0/g_auto:aoi_768_433_384_216/sanity-new%2FScreenshot_2026-04-30_at_9.04.01_AM_cfadnd.jpg",
+      "published": "2026-04-30 17:05 UTC",
+      "cluster_id": "2026-04-30-1959-trend_4",
+      "cluster_size": 2,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Complex | Music, Sneakers, Pop Culture, News & Shows"
+      ]
+    },
+    {
+      "title": "Here’s how the new Microsoft and OpenAI deal breaks down",
+      "source": "The Verge -  All Posts",
+      "link": "https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25098341/1778707567.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100",
+      "published": "2026-04-30 16:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Verge -  All Posts"
+      ]
+    },
+    {
+      "title": "Senators Ban Themselves From Prediction Markets as Insider Trading Concerns Grow",
+      "source": "Variety",
+      "link": "https://variety.com/2026/digital/news/senators-banned-prediction-markets-insider-trading-1236734547/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/04/2263571544.jpg",
+      "published": "2026-04-30 18:43 UTC",
+      "cluster_id": "2026-04-30-1959-c8",
+      "cluster_size": 2,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "CNBC",
+        "Variety"
+      ]
+    },
+    {
+      "title": "T-Mobile Fiber Delivers Ultra-Fast Home Internet Speeds: Here Are the Best Deals To Shop Online",
+      "source": "Variety",
+      "link": "https://variety.com/2026/shopping/news/t-mobile-fiber-home-internet-deals-shop-online-1236670764/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://variety.com/wp-content/uploads/2026/02/T-Mobile-Fiber-Home-Internet-VR-Featured.jpg",
+      "published": "2026-04-30 18:27 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Variety"
+      ]
+    },
+    {
+      "title": "This is what it takes to become Trump’s attorney general",
+      "source": "Vox",
+      "link": "https://www.vox.com/podcasts/487169/todd-blanche-acting-attorney-general-audition-trump-bondi-comey",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.vox.com/wp-content/uploads/sites/2/2026/04/gettyimages-2272944544.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.752607989199%2C100%2C78.494784021602&amp;w=1200",
+      "published": "2026-04-29 18:15 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Vox"
+      ]
+    },
+    {
+      "title": "The Voting Rights Act is all but dead. Prepare for maximum gerrymandering.",
+      "source": "Vox",
+      "link": "https://www.vox.com/politics/487363/supreme-court-louisiana-callais-gerrymandering-alito-voting-rights-act",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.vox.com/wp-content/uploads/sites/2/2025/03/gettyimages-2194969566.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.72940317001%2C100%2C78.54119365998&amp;w=1200",
+      "published": "2026-04-29 17:35 UTC",
+      "cluster_id": "2026-04-30-1959-trend_5",
+      "cluster_size": 3,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Vox",
+        "The Atlantic",
+        "The Verge"
+      ]
+    },
+    {
+      "title": "We’re missing the economic fallout of the Iran war — just like we did with Covid",
+      "source": "Vox",
+      "link": "https://www.vox.com/future-perfect/487190/iran-strait-of-hormuz-energy-oil-covid-coronavirus-stock-market",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.vox.com/wp-content/uploads/sites/2/2026/04/GettyImages-1204061069.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+      "published": "2026-04-29 12:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Vox"
+      ]
+    },
+    {
+      "title": "Why famous people want to be death doulas",
+      "source": "Vox",
+      "link": "https://www.vox.com/culture/486985/death-doulas-nicole-kidman-chloe-zhoa-the-pitt",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.vox.com/wp-content/uploads/sites/2/2026/04/GettyImages-2269856643.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.737188920638%2C100%2C78.525622158723&amp;w=1200",
+      "published": "2026-04-29 12:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Vox"
+      ]
+    },
+    {
+      "title": "This billionaire could be California’s next governor — and he wants to arrest Stephen Miller",
+      "source": "Vox",
+      "link": "https://www.vox.com/politics/487199/tom-steyer-interview-arrest-stephen-miller",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.vox.com/wp-content/uploads/sites/2/2026/04/gettyimages-2272008299.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729057198914%2C100%2C78.541885602173&amp;w=1200",
+      "published": "2026-04-29 11:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Vox"
+      ]
+    },
+    {
+      "title": "What really happened after Trump slashed HIV funding",
+      "source": "Vox",
+      "link": "https://www.vox.com/future-perfect/487139/pepfar-trump-cuts-data-hiv",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.vox.com/wp-content/uploads/sites/2/2026/04/gettyimages-2200213274.jpg?quality=90&amp;strip=all&amp;crop=0%2C15.674083769634%2C100%2C68.651832460733&amp;w=1200",
+      "published": "2026-04-29 10:30 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "Vox"
+      ]
+    },
+    {
+      "title": "Best Gifts for Hikers, Backpackers, Outdoorsy People (2026)",
+      "source": "WIRED",
+      "link": "https://www.wired.com/gallery/awesome-gifts-for-hikers-backpackers-and-outdoorsy-people/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://media.wired.com/photos/691d003e6dccde5821e66581/191:100/w_1280,c_limit/19%20Adventurous%20Gifts%20for%20Hikers,%20Backpackers,%20and%20Outdoorsy%20People.png",
+      "published": "2026-04-30 12:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "WIRED"
+      ]
+    },
+    {
+      "title": "The ‘Great Man’ Presidency",
+      "source": "The Atlantic",
+      "link": "https://www.theatlantic.com/podcasts/2026/04/donald-trump-presidency-legacy/686999/?utm_source=feed",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/HeXjB_dQt2HOy5uijdvwxg-123E=/305x130:4000x2208/media/img/mt/2026/04/Radio_Atlantic_Vertical_trump_legacy/original.png",
+      "published": "2026-04-30 12:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Atlantic"
+      ]
+    },
+    {
+      "title": "Child Care Is Buckling",
+      "source": "The Atlantic",
+      "link": "https://www.theatlantic.com/family/2026/04/child-care-funding-closures-trump/687003/?utm_source=feed",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/LZnyfqxVQbf6dOn9COsTArOPgEA=/media/img/mt/2026/04/2026_04_24_Under_Trump_Child_Care_Is_Buckling/original.jpg",
+      "published": "2026-04-30 11:16 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Atlantic"
+      ]
+    },
+    {
+      "title": "Micah Lasher, Child Magician",
+      "source": "The Atlantic",
+      "link": "https://www.theatlantic.com/ideas/2026/04/micah-lasher-child-magician/686989/?utm_source=feed",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/Uv0aVqmozvdJF-6Z5x79D9z_PuQ=/0x508:2160x1723/media/img/mt/2026/04/2026_04_25_Magician/original.jpg",
+      "published": "2026-04-30 11:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Atlantic"
+      ]
+    },
+    {
+      "title": "This ABC Showdown Is Different",
+      "source": "The Atlantic",
+      "link": "https://www.theatlantic.com/newsletters/2026/04/trump-fcc-attack-abc-kimmel/687002/?utm_source=feed",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/Fqeps9HIx56P2HPIVLs2as3TLQE=/media/newsletters/2026/04/2026_04_29_The_Daily_This_Attack_on_ABC_isnt_Like_The_Last_one/original.jpg",
+      "published": "2026-04-29 22:47 UTC",
+      "cluster_id": "2026-04-30-1959-trend_11",
+      "cluster_size": 2,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Variety",
+        "The Atlantic"
+      ]
+    },
+    {
+      "title": "Voters Can Be Disenfranchised Now",
+      "source": "The Atlantic",
+      "link": "https://www.theatlantic.com/ideas/2026/04/vra-supreme-court-callais-decision/686997/?utm_source=feed",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/UhrYJ8-dmzEbslMi7dOyi6-v48w=/media/img/mt/2026/04/2026_04_29_Supreme_Court_VRA_Opinion/original.jpg",
+      "published": "2026-04-29 21:39 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Atlantic"
+      ]
+    },
+    {
+      "title": "The Fight-Club Rule on Gerrymandering",
+      "source": "The Atlantic",
+      "link": "https://www.theatlantic.com/politics/2026/04/florida-redistricting-supreme-court/686987/?utm_source=feed",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/BlzRx9AlurG58DRbGe8HfLn9-aI=/media/img/mt/2026/04/2026_04_28_Florida/original.jpg",
+      "published": "2026-04-29 19:49 UTC",
+      "cluster_id": "2026-04-30-1959-trend_5",
+      "cluster_size": 3,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Vox",
+        "The Atlantic",
+        "The Verge"
+      ]
+    },
+    {
+      "title": "Donald Trump’s Disturbing Welcome for King Charles",
+      "source": "The Atlantic",
+      "link": "https://www.theatlantic.com/ideas/2026/04/trump-king-charles-speech-white-house/686996/?utm_source=feed",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/N-BYSoY7VBMRUuixbIlCBzPXcc0=/media/img/mt/2026/04/2026_04_29_Donald_Trumps_Disturbing_Welcome_for_King_Charles/original.jpg",
+      "published": "2026-04-29 19:11 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Atlantic"
+      ]
+    },
+    {
+      "title": "Rise of the Blood Populist",
+      "source": "The Atlantic",
+      "link": "https://www.theatlantic.com/ideas/2026/04/blood-populists-political-violence-ideology/686995/?utm_source=feed",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://cdn.theatlantic.com/thumbor/Y6AGGW8xjEzDecfl-lg6Nw6MUP0=/media/img/mt/2026/04/Political_ViolenceFInal/original.png",
+      "published": "2026-04-29 18:05 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "The Atlantic"
+      ]
+    },
+    {
+      "title": "The logic of the racist Supreme Court isn’t adding up",
+      "source": "The Verge",
+      "link": "https://www.theverge.com/policy/921597/callais-louisiana-voting-rights-act",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25301215/STK463_SCOTUS_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200",
+      "published": "2026-04-30 19:52 UTC",
+      "cluster_id": "2026-04-30-1959-trend_5",
+      "cluster_size": 3,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Vox",
+        "The Atlantic",
+        "The Verge"
+      ]
+    },
+    {
+      "title": "All the evidence unveiled so far in Musk v. Altman",
+      "source": "The Verge",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/268474_musk_vs_altman_CVirginia6.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+      "published": "2026-04-30 19:00 UTC",
+      "cluster_id": "2026-04-30-1959-trend_0",
+      "cluster_size": 3,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "WIRED",
+        "The Verge"
+      ]
+    },
+    {
+      "title": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
+      "source": "The Verge",
+      "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 16:57 UTC",
+      "cluster_id": "2026-04-30-1959-trend_0",
+      "cluster_size": 3,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "WIRED",
+        "The Verge"
+      ]
+    },
+    {
+      "title": "Trump signs executive order expanding retirement account access for workers",
+      "source": "CNBC",
+      "link": "https://www.cnbc.com/2026/04/30/trump-executive-order-expanding-retirement-account-access.html",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": "https://image.cnbcfm.com/api/v1/image/108300251-1777575694653-gettyimages-2273912201-ah800059_yodc75em.jpeg?v=1777575747&amp;w=1920&amp;h=1080",
+      "published": "2026-04-30 19:21 UTC",
+      "cluster_id": "2026-04-30-1959-c0",
+      "cluster_size": 6,
+      "cluster_primary": false,
+      "cluster_sources": [
+        "Top News &amp; Analysis",
+        "CNBC"
+      ]
+    },
+    {
+      "title": "Sabrina Carpenter's evolving style over the years",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1t01ia0/sabrina_carpenters_evolving_style_over_the_years/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 16:35 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "Teyana Taylor poses with her parents at Billboard’s Women in Music event (April 29, 2026)",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1t04ejz/teyana_taylor_poses_with_her_parents_at/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 18:18 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "Benny Blanco to Barry Keoghan: \"A few of my friends making fun of me have sent [memes] where it's me, you, Travis Kelce and the guy who Ariana dates and it's like 'Which one of these ugly bastards would you want to date?'\"",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1szwewz/benny_blanco_to_barry_keoghan_a_few_of_my_friends/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 13:40 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "D4vd bought 2 Chainsaws, Body bag, Burn Cage & Shovel After Killing Celeste",
+      "source": "r/popculturechat",
+      "link": "https://www.reddit.com/r/popculturechat/comments/1szi72b/d4vd_bought_2_chainsaws_body_bag_burn_cage_shovel/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 01:40 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/popculturechat"
+      ]
+    },
+    {
+      "title": "Daily Discussion Thread + Game Thread Index | Playoffs",
+      "source": "r/nba",
+      "link": "https://www.reddit.com/r/nba/comments/1szwxbb/daily_discussion_thread_game_thread_index_playoffs/",
+      "score": 1,
+      "why": null,
+      "hook": null,
+      "image": null,
+      "published": "2026-04-30 14:00 UTC",
+      "cluster_id": null,
+      "cluster_size": 1,
+      "cluster_primary": true,
+      "cluster_sources": [
+        "r/nba"
+      ]
+    }
+  ]
+}
