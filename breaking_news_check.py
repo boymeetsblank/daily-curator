@@ -31,6 +31,7 @@ FEED_WINDOW_MINUTES     = 60   # articles published this recently count as break
 MAX_KNOWN_IDS           = 500  # cap state file growth
 MAX_LIVE_PER_SOURCE     = 3    # max items per source within the cap window
 SOURCE_CAP_WINDOW_HOURS = 2    # rolling window for per-source cap
+MAX_FEED_SIZE           = 20   # max total items in the live feed at once
 
 SOURCES_FILE        = "sources.json"
 STATE_FILE          = "breaking_news_state.json"
@@ -101,8 +102,8 @@ Your job: decide what's worth surfacing in a live culture feed. Score each item 
 SCORING GUIDE:
 - 9–10: Must-know right now. A major cultural moment that people across the internet are actively reacting to.
 - 7–8: Worth surfacing. Something real is happening — a notable drop, result, beef, arrest, announcement, or viral moment. People in your audience will care.
-- 5–6: Interesting but not urgent. Could wait for the main daily feed.
-- 1–4: Noise. Routine content, corporate filler, niche interest, or too political/controversial for a culture platform.
+- 6: Recent and relevant — a real release, result, announcement, or cultural moment worth knowing about today. This is the minimum for the live feed.
+- 1–5: Below the line. Too routine, too niche, purely political, or not culturally relevant enough for this audience.
 
 IMPORTANT:
 - For trending topics (X, TikTok, YouTube, Google Trends): score based on how culturally relevant and conversation-worthy the topic is RIGHT NOW — it does not need to be a literal breaking news event.
@@ -145,7 +146,7 @@ Items:
     passed = []
     for candidate, result in zip(candidates, results):
         score = result.get("score", 0)
-        if score >= 7:
+        if score >= 6:
             candidate["haiku_score"] = score
             passed.append(candidate)
         else:
@@ -724,11 +725,11 @@ def main():
                 kept.append(item)
                 _kept_source_counts[item["source_name"]] += 1
 
-    # 9+ items pinned to top; 8s flow chronologically below
+    # 9+ items pinned to top; rest flow reverse-chronologically below
     # Use (score or 0) to safely handle legacy items with null haiku_score
     tier_high = sorted([x for x in kept if (x.get("haiku_score") or 0) >= 9], key=lambda x: x.get("detected_at", ""), reverse=True)
     tier_low  = sorted([x for x in kept if (x.get("haiku_score") or 0) < 9],  key=lambda x: x.get("detected_at", ""), reverse=True)
-    kept = tier_high + tier_low
+    kept = (tier_high + tier_low)[:MAX_FEED_SIZE]
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump({"items": kept, "last_checked": now_iso}, f, indent=2, ensure_ascii=False)

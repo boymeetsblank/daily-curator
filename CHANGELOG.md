@@ -16,6 +16,12 @@ Removed the `[TRIGGER: X]` emotional-label requirement — it was forcing Claude
 
 ---
 
+## [2026-05-01] Live feed: lower quality gate to 6, add MAX_FEED_SIZE cap
+
+Lowered Haiku quality gate from `>= 7` to `>= 6` so the live feed consistently accumulates 5–10+ items per hour instead of going sparse during off-peak periods. Updated scoring prompt to define 6 as "the minimum for the live feed" rather than "could wait for the main daily feed." Added `MAX_FEED_SIZE = 20` to cap the total live feed size so active-hour volume doesn't overflow the section.
+
+---
+
 ## [2026-04-30] Live feed: per-source cap uses 2-hour rolling window
 
 Changed `MAX_LIVE_PER_SOURCE` from a TTL-based concurrent cap to a 2-hour rolling window. Only items detected in the last 2 hours count against a source's slot limit — items older than 2 hours no longer block new ones from the same source. Added `SOURCE_CAP_WINDOW_HOURS = 2` constant.
