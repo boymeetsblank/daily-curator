@@ -1225,14 +1225,14 @@ For articles that score 6 or above, also provide:
 - WHY: 1–2 sentences written as a brief editor's note — explain why this story is significant and why it matters to the reader right now. Write in clear, direct editorial prose. No references to social media, posting, or content.
 - HOOK: 1–3 lines for a carousel headline slide, separated by /.
 
-  Write it the way you'd text a friend something wild you just read — incomplete thoughts are fine, lines can flow together as one broken sentence or each can stand alone. Vary the structure: sometimes 2 lines hits harder than 3.
+  Write it the way you'd text a friend something wild you just read — punchy, terse, each line a distinct beat. Lines can flow as one broken sentence, or each can stand completely alone. Vary the structure: sometimes 2 lines hits harder than 3.
 
   Rules:
   - Lines separated by /
   - 7 words or fewer per line
-  - No period at the end of every line — that's the AI tell. Fragments, run-ons, no punctuation, lowercase mid-sentence: all fine.
+  - Punctuate naturally. If a line is a complete standalone thought, give it a period. If lines are fragments of the same flowing sentence, skip the punctuation between them. Never mechanically add or withhold punctuation — let it follow the rhythm.
   - Don't build to a tidy conclusion. Don't use "Here's why" or "This changes everything" or "Nobody saw this coming."
-  - The best hooks feel like you already missed something.
+  - Each line should earn its place. Read it aloud — if it sounds like a human wrote it, you're done.
 
 IMPORTANT: Return your response as valid JSON in EXACTLY this format, with no other text before or after:
 
