@@ -855,15 +855,6 @@ def render_story_slide(
                   tracking_px=6, x=MARGIN, y=badge_y)
     canvas = Image.alpha_composite(canvas.convert("RGBA"), cat_layer).convert("RGB")
 
-    if is_editors_pick:
-        label, color_hex = RARITY_MAP.get(pick["score"], RARITY_DEFAULT)
-        color_rgb = _hex_to_rgb(color_hex)
-        label_chars = list(label)
-        label_w = sum(_char_w(inter12, c) for c in label_chars) + 6 * max(0, len(label_chars) - 1)
-        draw = ImageDraw.Draw(canvas)
-        _draw_tracked(draw, label, inter12, fill=color_rgb,
-                      tracking_px=6, x=W - MARGIN - label_w, y=badge_y)
-
     # ── BOTTOM TEXT ZONE (built bottom-up) ───────────────────────────────────
     draw_meas = ImageDraw.Draw(canvas)
 
