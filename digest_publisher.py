@@ -681,14 +681,6 @@ def render_cover(
                   tracking_px=6, y=sub_y, center_in_w=OUTPUT_SIZE[0])
     canvas = Image.alpha_composite(canvas.convert("RGBA"), sub_layer).convert("RGB")
 
-    # 1px white border 60% opacity, inset 20px
-    bi = BORDER_INSET
-    canvas = _alpha_rect(
-        canvas,
-        (bi, bi, OUTPUT_SIZE[0] - bi - 1, OUTPUT_SIZE[1] - bi - 1),
-        outline=(255, 255, 255, int(255 * 0.60)),
-    )
-
     canvas.save(str(out_path), "JPEG", quality=JPEG_QUALITY, optimize=True)
 
 
@@ -755,14 +747,16 @@ def render_story_slide(
         why_lh    = math.ceil(_text_h(inter_to) * 1.55)
         why_total = len(why_lines) * why_lh
 
-        # Vertically center the block (headline + 20px gap + divider + 24px gap + why)
-        block_h  = head_total + 20 + 24 + why_total
-        head_y   = (H - block_h) // 2
-        div_y    = head_y + head_total + 20
-        why_y    = div_y + 24
-
+        # Anchor text block to the bottom (mirrors image-path layout)
         source_h = _text_h(inter12)
         source_y = H - TEXT_BOTTOM_PAD - source_h
+        why_y    = source_y - 20 - why_total
+        div_y    = why_y - 24
+        head_y   = div_y - 20 - head_total
+
+        # Bottom gradient to ground the text zone
+        grad = _gradient_overlay(OUTPUT_SIZE, 600, 0.55)
+        canvas = Image.alpha_composite(canvas.convert("RGBA"), grad).convert("RGB")
 
         # Category badge — top-left
         badge_y   = 52
@@ -788,9 +782,9 @@ def render_story_slide(
             wy += why_lh
         canvas = Image.alpha_composite(canvas.convert("RGBA"), why_layer).convert("RGB")
 
-        # Divider — 60px wide, 2px, white 25%
+        # Divider — 160px wide, 2px, white 25%
         div_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
-        ImageDraw.Draw(div_layer).line([(MARGIN, div_y), (MARGIN + 60, div_y)],
+        ImageDraw.Draw(div_layer).line([(MARGIN, div_y), (MARGIN + 160, div_y)],
                                         fill=(255, 255, 255, int(255 * 0.25)), width=2)
         canvas = Image.alpha_composite(canvas.convert("RGBA"), div_layer).convert("RGB")
 
@@ -805,14 +799,6 @@ def render_story_slide(
         if is_editors_pick:
             _, color_hex = RARITY_MAP.get(pick["score"], RARITY_DEFAULT)
             draw.line([(0, 0), (0, H)], fill=_hex_to_rgb(color_hex), width=4)
-
-        # Outer border — 1px, white 20%, inset 20px
-        bi = BORDER_INSET
-        canvas = _alpha_rect(
-            canvas,
-            (bi, bi, W - bi - 1, H - bi - 1),
-            outline=(255, 255, 255, int(255 * 0.20)),
-        )
 
         canvas.save(str(out_path), "JPEG", quality=JPEG_QUALITY, optimize=True)
         return
@@ -904,9 +890,9 @@ def render_story_slide(
         wy += why_lh
     canvas = Image.alpha_composite(canvas.convert("RGBA"), why_layer).convert("RGB")
 
-    # Divider — 60px wide, 2px, white 25%
+    # Divider — 160px wide, 2px, white 25%
     div_layer = Image.new("RGBA", OUTPUT_SIZE, (0, 0, 0, 0))
-    ImageDraw.Draw(div_layer).line([(MARGIN, div_y), (MARGIN + 60, div_y)],
+    ImageDraw.Draw(div_layer).line([(MARGIN, div_y), (MARGIN + 160, div_y)],
                                     fill=(255, 255, 255, int(255 * 0.25)), width=2)
     canvas = Image.alpha_composite(canvas.convert("RGBA"), div_layer).convert("RGB")
 

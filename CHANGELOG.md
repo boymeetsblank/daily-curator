@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-30] Fix: live feed not updating after breaking news commits
+
+GitHub blocks workflow-triggered pushes (via default GITHUB_TOKEN) from re-triggering other workflows, so breaking_news.yml commits to main were never firing deploy-pages.yml. Fixed by tracking whether a push actually happened (GITHUB_OUTPUT) and explicitly calling `gh workflow run deploy-pages.yml` only when new items were committed.
+
+## [2026-04-30] Digest slide polish: remove borders, widen dividers, anchor text-only layout
+
+Removed the outer border from all slides (cover and story). Widened the divider rule from 60px to 160px on both image and text-only story slides. On text-only slides, switched the content block from vertically centered to bottom-anchored (matching the image-path layout) and added a bottom gradient overlay starting at y=600 to ground the text zone instead of letting it float.
+
 ## [2026-04-30] Hook prompt: drop TRIGGER mechanic, break three-sentence pattern
 
 Removed the `[TRIGGER: X]` emotional-label requirement — it was forcing Claude into a formulaic "emotion → three parallel sentences with periods" structure. Replaced with guidance to write like a text to a friend: fragments OK, lines can flow together as one broken thought, no period at the end of every line, vary between 2 and 3 lines. Updated the JSON example to show a natural-sounding hook instead of the old "Nobody saw this coming. / Not even the insiders. / It changes everything." pattern.
