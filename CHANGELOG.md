@@ -16,6 +16,12 @@ Removed the `[TRIGGER: X]` emotional-label requirement — it was forcing Claude
 
 ---
 
+## [2026-04-30] Live feed: per-source cap uses 2-hour rolling window
+
+Changed `MAX_LIVE_PER_SOURCE` from a TTL-based concurrent cap to a 2-hour rolling window. Only items detected in the last 2 hours count against a source's slot limit — items older than 2 hours no longer block new ones from the same source. Added `SOURCE_CAP_WINDOW_HOURS = 2` constant.
+
+---
+
 ## [2026-04-30] Live feed: wider article window + per-source cap
 
 Extended `FEED_WINDOW_MINUTES` from 30 → 60 so articles aren't silently dropped when GitHub Actions queue delays push evaluation past the old cutoff. Added `MAX_LIVE_PER_SOURCE = 3` cap applied in two places: before the Haiku quality gate (to avoid scoring excess articles from burst-publishing sources) and when merging items into the active Live feed (to prevent any one source from holding more than 3 slots at once).

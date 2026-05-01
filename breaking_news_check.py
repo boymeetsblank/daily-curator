@@ -29,7 +29,8 @@ import requests
 BREAKING_NEWS_TTL_HOURS = 6
 FEED_WINDOW_MINUTES     = 60   # articles published this recently count as breaking
 MAX_KNOWN_IDS           = 500  # cap state file growth
-MAX_LIVE_PER_SOURCE     = 3    # max Live items shown per source at once
+MAX_LIVE_PER_SOURCE     = 3    # max items per source within the cap window
+SOURCE_CAP_WINDOW_HOURS = 2    # rolling window for per-source cap
 
 SOURCES_FILE        = "sources.json"
 STATE_FILE          = "breaking_news_state.json"
@@ -709,11 +710,13 @@ def main():
         if datetime.fromisoformat(item["detected_at"]) > cutoff
     ]
 
-    # Count how many items per source are already in the active feed, then
-    # only admit new items that don't push a source over MAX_LIVE_PER_SOURCE.
+    # Count items per source detected within the rolling cap window.
+    # Items older than SOURCE_CAP_WINDOW_HOURS don't block new ones from the same source.
+    cap_cutoff = datetime.now(tz=timezone.utc) - timedelta(hours=SOURCE_CAP_WINDOW_HOURS)
     _kept_source_counts: dict[str, int] = defaultdict(int)
     for item in kept:
-        _kept_source_counts[item["source_name"]] += 1
+        if datetime.fromisoformat(item["detected_at"]) > cap_cutoff:
+            _kept_source_counts[item["source_name"]] += 1
 
     for item in new_items:
         if item["id"] not in existing_ids:
