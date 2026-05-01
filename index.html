@@ -3849,11 +3849,6 @@
                    : st === 'tiktok' ? 'View on TikTok →'
                    : st === 'google' ? 'Search Google →'
                    : 'Read article →';
-    const whyText  = item.context
-      ? esc(item.context)
-      : st === 'feed' || st === 'wire'
-        ? `Breaking via ${srcLabel}`
-        : `Trending now${item.traffic ? ' · ' + esc(item.traffic) : ''}`;
     return `<div class="breaking-art-row" onclick="handleRowClick(event,this)" style="cursor:pointer">
       <div class="art-date" style="color:var(--red);font-size:10px;letter-spacing:0.03em">${det}</div>
       <div class="art-title-cell">
@@ -3862,12 +3857,6 @@
       <span class="row-chevron">↓</span>
       <div class="art-expand" onclick="event.stopPropagation()">
         <div class="exp-inner">
-          <div class="exp-main-row">
-            <div class="exp-field">
-              <span class="exp-label">Why it matters</span>
-              <p class="exp-why">${whyText}</p>
-            </div>
-          </div>
           <div class="exp-footer">
             <span class="exp-source-label" style="opacity:0.45;font-size:11px;letter-spacing:.06em">${srcLabel}</span>
             <a class="exp-read-btn" href="${url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${ctaText}</a>
