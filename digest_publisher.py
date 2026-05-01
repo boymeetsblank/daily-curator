@@ -872,7 +872,7 @@ def render_story_slide(
 
     # Body: use Substack copy (more analytical); fall back to why field
     substack_text = copy.get("substack") or pick["why"]
-    why_lines = _wrap_sentences(substack_text, draw_meas, inter16, content_w, 3)
+    why_lines = _wrap_sentences(substack_text, draw_meas, inter16, content_w, 4)
     why_lh    = math.ceil(_text_h(inter16) * 1.55)
     why_total = len(why_lines) * why_lh
     why_y     = source_y - 20 - why_total
