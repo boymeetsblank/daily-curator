@@ -747,34 +747,31 @@ def render_story_slide(
 
         draw_meas = ImageDraw.Draw(canvas)
 
-        # Measure headline
+        # Measure headline — no line cap on text-only slides, centering handles layout
         if hook_lines:
-            wrapped = []
+            head_lines = []
             for hl in hook_lines:
-                wrapped.extend(_wrap_text(draw_meas, hl, bebas_to, content_w))
-            head_lines = _truncate_lines(wrapped, 3, draw_meas, bebas_to, content_w)
+                head_lines.extend(_wrap_text(draw_meas, hl, bebas_to, content_w))
         else:
-            raw_lines  = _wrap_text(draw_meas, pick["title"], bebas_to, content_w)
-            head_lines = _truncate_lines(raw_lines, 3, draw_meas, bebas_to, content_w)
+            head_lines = _wrap_text(draw_meas, pick["title"], bebas_to, content_w)
         head_lh    = math.ceil(_text_h(bebas_to) * 1.12)
         head_total = len(head_lines) * head_lh
 
-        # Measure why — use Substack copy (more analytical) with extra lines for the space
+        # Measure why — use Substack copy (more analytical); no line cap
         substack_text = copy.get("substack") or pick["why"]
-        why_lines = _wrap_sentences(substack_text, draw_meas, inter_to, content_w, 5)
+        why_lines = _wrap_text(draw_meas, substack_text, inter_to, content_w)
         why_lh    = math.ceil(_text_h(inter_to) * 1.55)
         why_total = len(why_lines) * why_lh
 
-        # Anchor text block to the bottom (mirrors image-path layout)
-        source_h = _text_h(inter12)
-        source_y = H - TEXT_BOTTOM_PAD - source_h
-        why_y    = source_y - 20 - why_total
-        div_y    = why_y - 24
-        head_y   = div_y - 20 - head_total
-
-        # Bottom gradient to ground the text zone
-        grad = _gradient_overlay(OUTPUT_SIZE, 600, 0.55)
-        canvas = Image.alpha_composite(canvas.convert("RGBA"), grad).convert("RGB")
+        # Center the content block vertically between the category badge and source line
+        source_h  = _text_h(inter12)
+        source_y  = H - TEXT_BOTTOM_PAD - source_h
+        block_total = head_total + 20 + 24 + why_total
+        usable_top  = 90   # clear the category badge
+        usable_bot  = source_y - 20
+        head_y = usable_top + max(0, (usable_bot - usable_top - block_total) // 2)
+        div_y  = head_y + head_total + 20
+        why_y  = div_y + 24
 
         # Category badge — top-left
         badge_y   = 52
@@ -876,7 +873,7 @@ def render_story_slide(
         wrapped = []
         for hl in hook_lines:
             wrapped.extend(_wrap_text(draw_meas, hl, bebas76, content_w))
-        head_lines = _truncate_lines(wrapped, 3, draw_meas, bebas76, content_w)
+        head_lines = _truncate_lines(wrapped, 5, draw_meas, bebas76, content_w)
     else:
         raw_lines  = _wrap_text(draw_meas, pick["title"], bebas76, content_w)
         head_lines = _truncate_lines(raw_lines, 2, draw_meas, bebas76, content_w)
