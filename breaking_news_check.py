@@ -2,7 +2,7 @@
 breaking_news_check.py — Breaking News Monitor
 
 Polls your subscribed RSS feeds (sources.json) every 5 minutes for articles
-published in the last 15 minutes. New items are enriched with a one-sentence
+published in the last 60 minutes. New items are enriched with a one-sentence
 context via Claude Haiku, then written to breaking_news.json (deployed to
 GitHub Pages). If new items are found, a Web Push notification is sent.
 
@@ -18,6 +18,7 @@ import hashlib
 import json
 import os
 import xml.etree.ElementTree as ET
+from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 
@@ -26,8 +27,9 @@ import requests
 # ── Config ────────────────────────────────────────────────────────────────────
 
 BREAKING_NEWS_TTL_HOURS = 6
-FEED_WINDOW_MINUTES     = 30   # articles published this recently count as breaking
+FEED_WINDOW_MINUTES     = 60   # articles published this recently count as breaking
 MAX_KNOWN_IDS           = 500  # cap state file growth
+MAX_LIVE_PER_SOURCE     = 3    # max Live items shown per source at once
 
 SOURCES_FILE        = "sources.json"
 STATE_FILE          = "breaking_news_state.json"
@@ -671,6 +673,18 @@ def main():
         known_ids.append(c["id"])
         known_set.add(c["id"])
 
+    # Cap candidates per source before scoring to avoid wasting API calls on
+    # burst-publishing sources and to encourage diversity in what gets evaluated.
+    _source_counts: dict[str, int] = defaultdict(int)
+    capped: list[dict] = []
+    for c in candidates:
+        if _source_counts[c["source_name"]] < MAX_LIVE_PER_SOURCE:
+            capped.append(c)
+            _source_counts[c["source_name"]] += 1
+    if len(capped) < len(candidates):
+        print(f"   ✂️  Per-source cap: {len(candidates)} → {len(capped)} candidates")
+    candidates = capped
+
     if candidates:
         print(f"\n   🔍 Running quality gate on {len(candidates)} candidate(s)...")
         new_items = filter_and_enrich_items(candidates, trends)
@@ -694,9 +708,18 @@ def main():
         item for item in existing
         if datetime.fromisoformat(item["detected_at"]) > cutoff
     ]
+
+    # Count how many items per source are already in the active feed, then
+    # only admit new items that don't push a source over MAX_LIVE_PER_SOURCE.
+    _kept_source_counts: dict[str, int] = defaultdict(int)
+    for item in kept:
+        _kept_source_counts[item["source_name"]] += 1
+
     for item in new_items:
         if item["id"] not in existing_ids:
-            kept.append(item)
+            if _kept_source_counts[item["source_name"]] < MAX_LIVE_PER_SOURCE:
+                kept.append(item)
+                _kept_source_counts[item["source_name"]] += 1
 
     # 9+ items pinned to top; 8s flow chronologically below
     # Use (score or 0) to safely handle legacy items with null haiku_score

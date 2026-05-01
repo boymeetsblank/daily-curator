@@ -4,6 +4,24 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-04-30] Hook prompt: drop TRIGGER mechanic, break three-sentence pattern
+
+Removed the `[TRIGGER: X]` emotional-label requirement — it was forcing Claude into a formulaic "emotion → three parallel sentences with periods" structure. Replaced with guidance to write like a text to a friend: fragments OK, lines can flow together as one broken thought, no period at the end of every line, vary between 2 and 3 lines. Updated the JSON example to show a natural-sounding hook instead of the old "Nobody saw this coming. / Not even the insiders. / It changes everything." pattern.
+
+---
+
+## [2026-04-30] Fix: digest slide headline text no longer clips at right edge
+
+`_wrap_text` and `_truncate_lines` were using `draw.textlength()` (advance-width metric) to check if text fits within the content area. For Bebas Neue at 100px, actual rendered glyph extents exceed the advance width, so long hook lines appeared to fit but overflowed the canvas. Switched both functions to `draw.textbbox()` which returns real pixel bounds (including sidebearings), extracted into a shared `_text_width()` helper.
+
+---
+
+## [2026-04-30] Live feed: wider article window + per-source cap
+
+Extended `FEED_WINDOW_MINUTES` from 30 → 60 so articles aren't silently dropped when GitHub Actions queue delays push evaluation past the old cutoff. Added `MAX_LIVE_PER_SOURCE = 3` cap applied in two places: before the Haiku quality gate (to avoid scoring excess articles from burst-publishing sources) and when merging items into the active Live feed (to prevent any one source from holding more than 3 slots at once).
+
+---
+
 ## [2026-04-29] Fix: main feed list view — older picks showing latest run timestamp
 
 Pinned (8+) and regular picks in list view were all rendered with `latestIsoTs` (the newest run's timestamp), so every article showed "X minutes ago" relative to the most recent pull. Fixed by grouping pinned picks by their own `runIsoTs` before passing to `renderPicksGrouped`, and restoring per-run rendering for regular picks (matching the original archive-day behavior). Card view was already correct.

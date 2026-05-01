@@ -422,16 +422,28 @@ def _today_label() -> str:
 
 # ── Drawing helpers ───────────────────────────────────────────────────────────
 
+def _text_width(draw: ImageDraw.Draw, text: str, font) -> float:
+    """Return the actual rendered pixel width of text using bounding box measurement.
+
+    textbbox gives real glyph extents (including sidebearings), which is more
+    accurate than textlength (advance width) for large display fonts like Bebas Neue.
+    """
+    try:
+        bb = draw.textbbox((0, 0), text, font=font)
+        return bb[2] - bb[0]
+    except Exception:
+        try:
+            return draw.textlength(text, font=font)
+        except Exception:
+            return len(text) * (font.size if hasattr(font, "size") else 10)
+
+
 def _wrap_text(draw: ImageDraw.Draw, text: str, font, max_w: int) -> list[str]:
     words = text.split()
     lines, current = [], []
     for word in words:
         test = " ".join(current + [word])
-        try:
-            w = draw.textlength(test, font=font)
-        except Exception:
-            w = len(test) * (font.size if hasattr(font, "size") else 10)
-        if w <= max_w:
+        if _text_width(draw, test, font) <= max_w:
             current.append(word)
         else:
             if current:
@@ -448,7 +460,7 @@ def _truncate_lines(lines: list[str], max_lines: int, draw: ImageDraw.Draw, font
     result = list(lines[:max_lines])
     last = result[-1]
     try:
-        while last and draw.textlength(last + "…", font=font) > max_w:
+        while last and _text_width(draw, last + "…", font) > max_w:
             last = last[:-1]
     except Exception:
         last = last[:40]
@@ -715,7 +727,7 @@ def render_story_slide(
         bebas_to = _load_bebas(91)        or _default_font(91)
         inter11  = _load_inter_medium(11) or _default_font(11)
         inter12  = _load_inter_medium(12) or _default_font(12)
-        inter_to = _load_inter(19)        or _default_font(19)
+        inter_to = _load_inter(26)        or _default_font(26)
 
         category  = copy.get("category", "").upper()
         hook_lines = pick.get("hook_lines") or []
@@ -726,7 +738,10 @@ def render_story_slide(
 
         # Measure headline
         if hook_lines:
-            head_lines = hook_lines[:3]
+            wrapped = []
+            for hl in hook_lines:
+                wrapped.extend(_wrap_text(draw_meas, hl, bebas_to, content_w))
+            head_lines = _truncate_lines(wrapped, 3, draw_meas, bebas_to, content_w)
         else:
             raw_lines  = _wrap_text(draw_meas, pick["title"], bebas_to, content_w)
             head_lines = _truncate_lines(raw_lines, 3, draw_meas, bebas_to, content_w)
@@ -736,7 +751,7 @@ def render_story_slide(
         # Measure why — use Substack copy (more analytical) with extra lines for the space
         substack_text = copy.get("substack") or pick["why"]
         why_raw   = _wrap_text(draw_meas, substack_text, inter_to, content_w)
-        why_lines = _truncate_lines(why_raw, 6, draw_meas, inter_to, content_w)
+        why_lines = _truncate_lines(why_raw, 5, draw_meas, inter_to, content_w)
         why_lh    = math.ceil(_text_h(inter_to) * 1.55)
         why_total = len(why_lines) * why_lh
 
@@ -862,7 +877,10 @@ def render_story_slide(
 
     # Headline: hook lines (pre-formatted) or title word-wrap fallback
     if hook_lines:
-        head_lines = hook_lines[:3]  # max 3 hook lines
+        wrapped = []
+        for hl in hook_lines:
+            wrapped.extend(_wrap_text(draw_meas, hl, bebas76, content_w))
+        head_lines = _truncate_lines(wrapped, 3, draw_meas, bebas76, content_w)
     else:
         raw_lines  = _wrap_text(draw_meas, pick["title"], bebas76, content_w)
         head_lines = _truncate_lines(raw_lines, 2, draw_meas, bebas76, content_w)
