@@ -468,6 +468,25 @@ def _truncate_lines(lines: list[str], max_lines: int, draw: ImageDraw.Draw, font
     return result
 
 
+def _wrap_sentences(text: str, draw: ImageDraw.Draw, font, max_w: int, max_lines: int) -> list[str]:
+    """Wrap body copy fitting as many complete sentences as possible within max_lines.
+    Never cuts mid-sentence — stops at the last sentence boundary that fits."""
+    sentences = [s.strip() for s in re.split(r'(?<=[.!?])\s+', text.strip()) if s.strip()]
+    if not sentences:
+        return _wrap_text(draw, text, font, max_w)[:max_lines]
+    best = None
+    for i in range(len(sentences)):
+        candidate = " ".join(sentences[:i + 1])
+        wrapped = _wrap_text(draw, candidate, font, max_w)
+        if len(wrapped) > max_lines:
+            break
+        best = wrapped
+    if best:
+        return best
+    # First sentence alone overflows — truncate at line boundary as last resort
+    return _truncate_lines(_wrap_text(draw, sentences[0], font, max_w), max_lines, draw, font, max_w)
+
+
 def _text_h(font) -> int:
     try:
         bb = font.getbbox("Ag")
@@ -742,8 +761,7 @@ def render_story_slide(
 
         # Measure why — use Substack copy (more analytical) with extra lines for the space
         substack_text = copy.get("substack") or pick["why"]
-        why_raw   = _wrap_text(draw_meas, substack_text, inter_to, content_w)
-        why_lines = _truncate_lines(why_raw, 5, draw_meas, inter_to, content_w)
+        why_lines = _wrap_sentences(substack_text, draw_meas, inter_to, content_w, 5)
         why_lh    = math.ceil(_text_h(inter_to) * 1.55)
         why_total = len(why_lines) * why_lh
 
@@ -852,9 +870,9 @@ def render_story_slide(
     source_h  = _text_h(inter12)
     source_y  = H - TEXT_BOTTOM_PAD - source_h
 
-    # Body: full "Why it matters" from the picks file
-    why_raw   = _wrap_text(draw_meas, pick["why"], inter16, content_w)
-    why_lines = _truncate_lines(why_raw, 3, draw_meas, inter16, content_w)
+    # Body: use Substack copy (more analytical); fall back to why field
+    substack_text = copy.get("substack") or pick["why"]
+    why_lines = _wrap_sentences(substack_text, draw_meas, inter16, content_w, 3)
     why_lh    = math.ceil(_text_h(inter16) * 1.55)
     why_total = len(why_lines) * why_lh
     why_y     = source_y - 20 - why_total
