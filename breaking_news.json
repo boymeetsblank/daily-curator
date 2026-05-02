@@ -1,6 +1,36 @@
 {
   "items": [
     {
+      "id": "9d484fb0bf29",
+      "topic": "Celtics' Tatum (knee) out for Game 7 vs. 76ers",
+      "traffic": "",
+      "detected_at": "2026-05-02T23:58:32.046014+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48660086/celtics-rule-jayson-tatum-game-7-knee-stiffness",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 9
+    },
+    {
+      "id": "9504cd31a7aa",
+      "topic": "Golden Tempo rallies from last, wins Derby at 23-1",
+      "traffic": "",
+      "detected_at": "2026-05-02T23:58:32.046014+00:00",
+      "search_url": "https://www.espn.com/horse-racing/story/_/id/48660708/golden-tempo-edges-renegade-win-kentucky-derby",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "3c69ffeee8a5",
+      "topic": "Follow live: Celtics host 76ers for Game 7 at TD G...",
+      "traffic": "",
+      "detected_at": "2026-05-02T23:58:32.046014+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48658553/nba-playoffs-2026-philadelphia-76ers-boston-celtics-game-7-live-updates-results",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
       "id": "7c136db73df9",
       "topic": "'Godspeed my friend': Inside the final hours of Spirit Airlines",
       "traffic": "",
@@ -169,37 +199,7 @@
       "source_name": "GQ",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "a6190c0093be",
-      "topic": "Lakers blow out Rockets, advance to face Thunder",
-      "traffic": "",
-      "detected_at": "2026-05-02T13:27:14.418343+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/48652810/lakers-eliminate-rockets-game-6-rout",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "a28c7c1ca014",
-      "topic": "Ex-Paralympian, F1 driver Zanardi dies at 59",
-      "traffic": "",
-      "detected_at": "2026-05-02T13:27:14.418343+00:00",
-      "search_url": "https://www.espn.com/f1/story/_/id/48653978/former-paralympian-f1-driver-alex-zanardi-dies-59",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "55c4b686fb2e",
-      "topic": "Undead co-op shooters, gorgeous hack-and-slash action and other new indie games worth checking out",
-      "traffic": "",
-      "detected_at": "2026-05-02T11:58:33.217747+00:00",
-      "search_url": "https://www.engadget.com/2162333/undead-co-op-shooters-gorgeous-hack-and-slash-action-and-other-new-indie-games/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-02T23:06:33.238069+00:00"
+  "last_checked": "2026-05-02T23:58:32.046014+00:00"
 }
