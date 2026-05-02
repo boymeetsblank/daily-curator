@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "id": "295d5d74e8ab",
+      "topic": "Date, time, horses, odds, format, purse",
+      "traffic": "",
+      "detected_at": "2026-05-02T19:13:32.768671+00:00",
+      "search_url": "https://www.espn.com/horse-racing/story/_/id/48638070/2026-kentucky-derby-date-horses-odds-format-purse",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
       "id": "cbd710e3fc76",
       "topic": "The New Balance 9060 Finds Room For Even More Mesh",
       "traffic": "",
@@ -141,5 +151,5 @@
       "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-02T18:00:55.356353+00:00"
+  "last_checked": "2026-05-02T19:13:32.768671+00:00"
 }
