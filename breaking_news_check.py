@@ -26,7 +26,7 @@ import requests
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-BREAKING_NEWS_TTL_HOURS = 6
+BREAKING_NEWS_TTL_HOURS = 12
 FEED_WINDOW_MINUTES     = 60   # articles published this recently count as breaking
 MAX_KNOWN_IDS           = 500  # cap state file growth
 MAX_LIVE_PER_SOURCE     = 3    # max items per source within the cap window
