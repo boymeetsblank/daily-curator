@@ -11,6 +11,36 @@
       "haiku_score": 9
     },
     {
+      "id": "4129ce7e7ab5",
+      "topic": "Celtics",
+      "traffic": "",
+      "detected_at": "2026-05-03T06:25:09.202478+00:00",
+      "search_url": "https://x.com/search?q=Celtics&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "fbc3c3639c77",
+      "topic": "Philly",
+      "traffic": "",
+      "detected_at": "2026-05-03T06:25:09.202478+00:00",
+      "search_url": "https://x.com/search?q=Philly&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "65496c694d00",
+      "topic": "#saturdaynightliv",
+      "traffic": "",
+      "detected_at": "2026-05-03T06:25:09.202478+00:00",
+      "search_url": "https://x.com/search?q=%23saturdaynightliv&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
       "id": "d823b2154f46",
       "topic": "76ers, Embiid vanquish Celtics in Game 7 thriller",
       "traffic": "",
@@ -129,47 +159,7 @@
       "source_name": "ESPN",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "cbd710e3fc76",
-      "topic": "The New Balance 9060 Finds Room For Even More Mesh",
-      "traffic": "",
-      "detected_at": "2026-05-02T18:00:55.356353+00:00",
-      "search_url": "https://sneakernews.com/2026/05/02/new-balance-9060-mesh-white-green-yellow-u906089d/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "64581d20e008",
-      "topic": "Netflix delays Greta Gerwig’s ‘Narnia’ movie for big theatrical push in 2027",
-      "traffic": "",
-      "detected_at": "2026-05-02T17:06:47.452551+00:00",
-      "search_url": "https://techcrunch.com/2026/05/02/netflix-delays-greta-gerwigs-narnia-movie-for-big-theatrical-push-in-2027/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "eefd7b33a816",
-      "topic": "Get A Jump On Your Summer Rotation With This ASICS GEL-Kayano 14 “Cream”",
-      "traffic": "",
-      "detected_at": "2026-05-02T16:10:09.894922+00:00",
-      "search_url": "https://sneakernews.com/2026/05/02/asics-gel-kayano-14-cream-obsidian-grey-1203a537-113/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "5838faf70718",
-      "topic": "Wrexham's rapid rise hits first hitch as Premier L...",
-      "traffic": "",
-      "detected_at": "2026-05-02T16:10:09.894922+00:00",
-      "search_url": "https://www.espn.com/soccer/story/_/id/48653867/wrexham-made-wait-premier-league-promotion-hopes-ended",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-03T03:55:25.109101+00:00"
+  "last_checked": "2026-05-03T06:25:09.202478+00:00"
 }
