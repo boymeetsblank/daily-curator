@@ -11,6 +11,26 @@
       "haiku_score": 9
     },
     {
+      "id": "d823b2154f46",
+      "topic": "76ers, Embiid vanquish Celtics in Game 7 thriller",
+      "traffic": "",
+      "detected_at": "2026-05-03T03:55:25.109101+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48662033/76ers-embiid-vanquish-celtics-complete-3-1-comeback",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "123eef558636",
+      "topic": "Orlando rallies from 3 down to stun Messi, Miami",
+      "traffic": "",
+      "detected_at": "2026-05-03T03:55:25.109101+00:00",
+      "search_url": "https://www.espn.com/soccer/story/_/id/48661010/lionel-messi-inter-miami-orlando-city-mls-new-stadium",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
       "id": "9504cd31a7aa",
       "topic": "Golden Tempo rallies from last, wins Derby at 23-1",
       "traffic": "",
@@ -149,57 +169,7 @@
       "source_name": "ESPN",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "9741d20ad5a5",
-      "topic": "Kentucky Derby at 19 horses with The Puma out",
-      "traffic": "",
-      "detected_at": "2026-05-02T14:30:52.977662+00:00",
-      "search_url": "https://www.espn.com/horse-racing/story/_/id/48655206/kentucky-derby-19-horses-puma-scratched",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "50253737fe96",
-      "topic": "#UFCPerth",
-      "traffic": "",
-      "detected_at": "2026-05-02T14:30:52.977662+00:00",
-      "search_url": "https://x.com/search?q=%23UFCPerth&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 8
-    },
-    {
-      "id": "6842316f0c8d",
-      "topic": "Spirit",
-      "traffic": "",
-      "detected_at": "2026-05-02T14:30:52.977662+00:00",
-      "search_url": "https://x.com/search?q=Spirit&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 7
-    },
-    {
-      "id": "caf8422f4e5b",
-      "topic": "#InoueNakatani",
-      "traffic": "",
-      "detected_at": "2026-05-02T14:30:52.977662+00:00",
-      "search_url": "https://x.com/search?q=%23InoueNakatani&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 8
-    },
-    {
-      "id": "3251f296dc56",
-      "topic": "The Devil Also Wears Cartier",
-      "traffic": "",
-      "detected_at": "2026-05-02T13:27:14.418343+00:00",
-      "search_url": "https://www.gq.com/story/watches-of-the-week-5-2-26",
-      "source_name": "GQ",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-02T23:58:32.046014+00:00"
+  "last_checked": "2026-05-03T03:55:25.109101+00:00"
 }
