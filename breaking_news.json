@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "id": "bcaa7ecf63f6",
+      "topic": "Embiid to Philly: Don't sell tickets to Knicks fan...",
+      "traffic": "",
+      "detected_at": "2026-05-03T13:45:32.192308+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48664111/joel-embiid-asks-76ers-fans-not-sell-tickets-knicks-fans",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "146647beebf0",
+      "topic": "Benavidez trounces 'Zurdo' in one-sided TKO win",
+      "traffic": "",
+      "detected_at": "2026-05-03T13:45:32.192308+00:00",
+      "search_url": "https://www.espn.com/boxing/story/_/id/48662917/benavidez-trounces-zurdo-tko-become-three-weight-champ",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
       "id": "4129ce7e7ab5",
       "topic": "Celtics",
       "traffic": "",
@@ -51,5 +71,5 @@
       "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-03T12:05:35.635336+00:00"
+  "last_checked": "2026-05-03T13:45:32.192308+00:00"
 }
