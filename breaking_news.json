@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "id": "3be62f1ab556",
+      "topic": "Noah Kahan Scores First No. 1 on Albums Chart With ‘The Great Divide’",
+      "traffic": "",
+      "detected_at": "2026-05-03T20:57:09.362282+00:00",
+      "search_url": "https://variety.com/2026/music/news/noah-kahan-scores-first-no-1-albums-chart-the-great-divide-1236736424/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "01b7165cd4b6",
+      "topic": "‘This is fine’ creator says AI startup stole his art",
+      "traffic": "",
+      "detected_at": "2026-05-03T20:57:09.362282+00:00",
+      "search_url": "https://techcrunch.com/2026/05/03/this-is-fine-creator-says-ai-startup-stole-his-art/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
       "id": "e69620cf9845",
       "topic": "The Nike GT Cut 4 Polishes Off “Metallic Silver”",
       "traffic": "",
@@ -171,5 +191,5 @@
       "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-03T20:01:30.893156+00:00"
+  "last_checked": "2026-05-03T20:57:09.362282+00:00"
 }
