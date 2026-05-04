@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "id": "c59fd808055e",
+      "topic": "Minted NY Debuts Chromed-Out Saucony Endorphin Pro 5",
+      "traffic": "",
+      "detected_at": "2026-05-04T22:29:33.843682+00:00",
+      "search_url": "https://sneakernews.com/2026/05/04/minted-new-york-saucony-endorphin-pro-5/",
+      "source_name": "Sneaker News",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "d0c6770434ae",
+      "topic": "Met Gala 2026 Red Carpet: See All the Best Celebrity Looks",
+      "traffic": "",
+      "detected_at": "2026-05-04T22:29:33.843682+00:00",
+      "search_url": "https://www.gq.com/gallery/met-gala-2026-red-carpet",
+      "source_name": "GQ",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
       "id": "7434afde3110",
       "topic": "Jordan Poole Polishes A Golden Nike GT Cut 4",
       "traffic": "",
@@ -161,5 +181,5 @@
       "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-04T21:18:54.622602+00:00"
+  "last_checked": "2026-05-04T22:29:33.843682+00:00"
 }
