@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "id": "016513c23d0c",
+      "topic": "Yes, That Is ‘Old’ Bad Bunny at the Met Gala",
+      "traffic": "",
+      "detected_at": "2026-05-05T01:12:51.570702+00:00",
+      "search_url": "https://www.gq.com/story/bad-bunny-old-man-met-gala-2026",
+      "source_name": "GQ",
+      "source_type": "feed",
+      "haiku_score": 9
+    },
+    {
       "id": "b67cbe67fe5c",
       "topic": "Here Are the Best Looks at Met Gala 2026",
       "traffic": "",
@@ -9,6 +19,16 @@
       "source_name": "Hypebeast",
       "source_type": "feed",
       "haiku_score": 9
+    },
+    {
+      "id": "bf48979e4737",
+      "topic": "👠Top athlete looks at Met Gala 2026",
+      "traffic": "",
+      "detected_at": "2026-05-05T01:12:51.570702+00:00",
+      "search_url": "https://www.espn.com/espn/story/_/id/48675094/met-gala-2026-athlete-looks-moments",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
     },
     {
       "id": "647a9207cf32",
@@ -179,27 +199,7 @@
       "source_name": "Variety",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "ab575f5baba4",
-      "topic": "Puerto Rico Gets Its Own adidas Adistar Control 5",
-      "traffic": "",
-      "detected_at": "2026-05-04T17:02:42.779272+00:00",
-      "search_url": "https://sneakernews.com/2026/05/04/adidas-adistar-control-5-puerto-rico/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "f71cffe7500f",
-      "topic": "Cadillac’s Formula One Team Receives A Hyper Rare Nike Dunk Low Custom",
-      "traffic": "",
-      "detected_at": "2026-05-04T15:15:01.379710+00:00",
-      "search_url": "https://sneakernews.com/2026/05/04/cadillac-formula-1-team-nike-dunk-low-miami-grand-prix/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-04T23:29:32.789837+00:00"
+  "last_checked": "2026-05-05T01:12:51.570702+00:00"
 }
