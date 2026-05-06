@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "id": "f863a8c5b9b9",
+      "topic": "Snap says its $400M deal with Perplexity ‘amicably ended’",
+      "traffic": "",
+      "detected_at": "2026-05-06T22:28:45.586330+00:00",
+      "search_url": "https://techcrunch.com/2026/05/06/snap-says-its-400m-deal-with-perplexity-amicably-ended/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "9c827a72c49d",
+      "topic": "Anthropic CEO says 80-fold growth in first quarter explains 'difficulties with compute'",
+      "traffic": "",
+      "detected_at": "2026-05-06T22:28:45.586330+00:00",
+      "search_url": "https://www.cnbc.com/2026/05/06/anthropic-ceo-dario-amodei-says-company-crew-80-fold-in-first-quarter.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
       "id": "edb4e85efca0",
       "topic": "A Kid With a Fake Mustache Tricked an Online Age-Verification Tool",
       "traffic": "",
@@ -179,27 +199,7 @@
       "source_name": "Hypebeast",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "17b01964145c",
-      "topic": "Official Images Of The Air Jordan 12 “Bloodline”",
-      "traffic": "",
-      "detected_at": "2026-05-06T17:06:51.097582+00:00",
-      "search_url": "https://sneakernews.com/2026/05/06/air-jordan-12-bloodline-ct8013-001-release-date/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "fb2dc3c578dd",
-      "topic": "Blueprint Graphics Lands On The Nike Air Max 95 SE “Work Blue”",
-      "traffic": "",
-      "detected_at": "2026-05-06T17:06:51.097582+00:00",
-      "search_url": "https://sneakernews.com/2026/05/06/nike-air-max-95-work-blue-iu2254-900/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-06T21:36:17.054105+00:00"
+  "last_checked": "2026-05-06T22:28:45.586330+00:00"
 }
