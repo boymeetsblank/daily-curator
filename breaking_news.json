@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "id": "24998e839e42",
+      "topic": "Kith West Hollywood Reopens With a New Design, \"Ronnie’s Pronto,\" and an Exclusive New Balance Drop",
+      "traffic": "",
+      "detected_at": "2026-05-07T04:46:06.649382+00:00",
+      "search_url": "https://hypebeast.com/2026/5/kith-west-hollywood-reopens-ronnies-pronto-exclusive-new-balance-drop-info",
+      "source_name": "Hypebeast",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "0b2a73ff3523",
+      "topic": "Brunson, Knicks pull out win, go up 2-0 on 76ers",
+      "traffic": "",
+      "detected_at": "2026-05-07T04:46:06.649382+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48699103/jalen-brunson-knicks-pull-win-2-0-lead-vs-76ers",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
       "id": "c47cc4096f6f",
       "topic": "Total recall: PSG backs up best team in world talk...",
       "traffic": "",
@@ -179,27 +199,7 @@
       "source_name": "TechCrunch",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "5ba3f327fcef",
-      "topic": "Mina the Hollower, from the studio behind Shovel Knight, arrives on May 29",
-      "traffic": "",
-      "detected_at": "2026-05-06T18:55:50.222534+00:00",
-      "search_url": "https://www.engadget.com/2166369/mina-the-hollower-from-the-studio-behind-shovel-knight-arrives-on-may-29/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "9f597ceb1c69",
-      "topic": "Anthropic is doubling Claude Code rate limits after deal with SpaceX",
-      "traffic": "",
-      "detected_at": "2026-05-06T18:55:50.222534+00:00",
-      "search_url": "https://www.engadget.com/2166315/anthropic-is-doubling-claude-code-rate-limits-after-deal-with-spacex/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-07T01:17:24.749907+00:00"
+  "last_checked": "2026-05-07T04:46:06.649382+00:00"
 }
