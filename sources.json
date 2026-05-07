@@ -126,6 +126,18 @@
     "enabled": true
   },
   {
+    "name": "r/popular",
+    "rss": "https://www.reddit.com/r/popular/.rss",
+    "category": "wide net",
+    "enabled": true
+  },
+  {
+    "name": "r/all",
+    "rss": "https://www.reddit.com/r/all/.rss",
+    "category": "wide net",
+    "enabled": true
+  },
+  {
     "name": "r/InterestingAsFuck",
     "rss": "https://www.reddit.com/r/interestingasfuck/",
     "category": "wide net",

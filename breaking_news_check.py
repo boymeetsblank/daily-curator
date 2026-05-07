@@ -29,7 +29,7 @@ import requests
 BREAKING_NEWS_TTL_HOURS = 12
 FEED_WINDOW_MINUTES     = 60   # articles published this recently count as breaking
 MAX_KNOWN_IDS           = 500  # cap state file growth
-MAX_LIVE_PER_SOURCE     = 3    # max items per source within the cap window
+MAX_LIVE_PER_SOURCE     = 5    # max items per source within the cap window
 SOURCE_CAP_WINDOW_HOURS = 2    # rolling window for per-source cap
 MAX_FEED_SIZE           = 20   # max total items in the live feed at once
 
@@ -100,16 +100,19 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
 Your job: decide what's worth surfacing in a live culture feed. Score each item 1–10.
 
 SCORING GUIDE:
-- 9–10: Must-know right now. A major cultural moment that people across the internet are actively reacting to.
-- 7–8: Worth surfacing. Something real is happening — a notable drop, result, beef, arrest, announcement, or viral moment. People in your audience will care.
-- 6: Recent and relevant — a real release, result, announcement, or cultural moment worth knowing about today. This is the minimum for the live feed.
-- 1–5: Below the line. Too routine, too niche, purely political, or not culturally relevant enough for this audience.
+- 10: A cultural moment — someone will reference this a year from now. Genuinely rare, never forced.
+- 9: You have to tell someone about this right now.
+- 8: You'd bring this up in conversation today.
+- 7: Worth surfacing — something real is happening.
+- 6: Made the cut — relevant and real, but minimum bar for the live feed.
+- 1–5: Filtered out — noise, too dry, too predictable, or irrelevant.
 
 IMPORTANT:
-- For trending topics (X, TikTok, YouTube, Google Trends): score based on how culturally relevant and conversation-worthy the topic is RIGHT NOW — it does not need to be a literal breaking news event.
-- For articles and Reddit posts: score on whether something actually just happened that a culture-forward audience would care about.
+- For YouTube trending videos and Reddit posts: score on whether something actually just happened or is going viral that a culture-forward audience would care about.
+- For articles: score on whether this is a real, timely story worth a reader's attention right now.
 - Give the benefit of the doubt to culture-adjacent items (sneakers, music, sports, entertainment). Score generously when in doubt.
-- Score 1 for anything purely political.{social_block}
+- Score 1 for routine political content: partisan commentary, policy debates, regular war/conflict updates, diplomatic news, Fed/inflation data, and regulatory coverage.
+- Exception: if a political or geopolitical event is so significant it transcends politics and becomes a cultural moment everyone needs to know about right now (a world leader falls, a landmark ruling that changes daily life, a war escalation that shifts the global order), score it on its actual magnitude — it may warrant a 9 or 10.{social_block}
 
 Respond with a JSON array only — one object per item, same order as input:
 [{{"score": <int>}}]
@@ -504,7 +507,7 @@ def fetch_feed_articles(feed: dict, window_minutes: int) -> list[dict]:
 
 # ── Source: Reddit hot posts ──────────────────────────────────────────────────
 
-REDDIT_MIN_SCORE    = 500   # upvote threshold to surface a hot post
+REDDIT_MIN_SCORE    = 200   # upvote threshold to surface a hot post
 REDDIT_HOT_LIMIT    = 10    # posts per subreddit
 
 _REDDIT_HEADERS = {
@@ -665,9 +668,6 @@ def main():
 
     youtube_candidates = fetch_youtube_trending_rss(known_set, now_iso)
     candidates.extend(youtube_candidates)
-
-    social_candidates = build_social_candidates(trends, known_set, now_iso)
-    candidates.extend(social_candidates)
 
     # Mark all candidates as seen regardless of whether they pass the quality gate,
     # so low-quality articles from noisy sources are never re-evaluated.

@@ -4,11 +4,25 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-06] Live feed scoring overhaul — tighter quality gate, no bare social trends
+
+Rewrote the Haiku scoring prompt in `breaking_news_check.py` to match the main curator's scoring anchors (10: cultural moment, 9: tell someone now, 8: bring up today, 7: worth surfacing, 6: minimum bar). Tightened the politics filter to cover routine political/geopolitical/economic policy content while preserving a carve-out for genuinely historic moments. Removed bare X/Google/TikTok trend topic names as live feed candidates — social context signal is preserved in the scoring prompt but bare names no longer enter the pipeline. Dropped Reddit hot post threshold from 500 → 200 upvotes and raised per-source cap from 3 → 5 to increase candidate volume.
+
+## [2026-05-06] Remove Reddit and Instagram Apify actors to stay within free tier
+
+Reddit Trending was redundant (r/popular and r/all already covered by direct RSS). Instagram scraping requires browser automation — too expensive for the free plan. Apify stack is now 4 lightweight actors: X, Google, YouTube, TikTok.
+
+## [2026-05-06] Raise per-subreddit article cap to 25
+
+Reddit sources (any source name starting with "r/") now get a cap of 25 articles per run instead of the default 15. All other sources remain at 15. The overall 200-article hard cap still applies.
+
+## [2026-05-06] Add r/popular and r/all as wide net sources
+
+Added r/popular and r/all to sources.json as direct RSS feeds under the "wide net" category.
+
 ## [2026-05-02] Fix: Live section disappears overnight — extend TTL, commit social trends
 
 Extended `BREAKING_NEWS_TTL_HOURS` from 6 → 12 so items from the previous evening survive the overnight dead zone (US feeds go quiet ~11 PM CT, next curator run at 7:30 AM CT). Fixed `social_trends.json` never being committed: added it to `git add` in `daily_curator.yml` so X, Google, and TikTok trending candidates are available to the breaking news monitor after each 3×/day curator run. Both issues were causing the Live section to show nothing for 8+ hours overnight.
-
----
 
 ## [2026-05-01] Digest slides: sentence-aware body copy + substack text on image slides
 

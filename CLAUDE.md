@@ -15,7 +15,7 @@ Each run:
 4. Fetches live trending topics from X (Twitter) and Google Trends via Apify
 5. Sends everything to Claude AI for scoring (1–10)
 6. Deduplicates same-story picks using Claude topic clustering
-7. Saves the top 10 picks (minimum score 7) to picks/picks-YYYY-MM-DD-HHMM.md
+7. Saves the top 10 picks (minimum score 6) to picks/picks-YYYY-MM-DD-HHMM.md
 
 The picks are also published to a live web feed at:
 **https://boymeetsblank.github.io/daily-curator**

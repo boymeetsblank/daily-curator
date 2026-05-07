@@ -31,6 +31,7 @@ APIFY_API_TOKEN         = os.environ.get("APIFY_API_TOKEN")
 HOURS_BACK              = 48
 MAX_ARTICLES_TO_SEND    = 150
 MAX_ARTICLES_PER_SOURCE = 15
+MAX_ARTICLES_PER_REDDIT = 25  # Reddit subreddits get a higher cap
 MAX_ARTICLES_HARD_CAP   = 200  # ceiling after per-source cap; trims oldest articles first
 MIN_SCORE               = 6
 MAX_PICKS               = 30
@@ -442,11 +443,12 @@ def apply_source_cap(articles: list[dict]) -> list[dict]:
     capped = []
     for article in articles:
         source = article["source"]
+        limit = MAX_ARTICLES_PER_REDDIT if source.startswith("r/") else MAX_ARTICLES_PER_SOURCE
         count = source_counts.get(source, 0)
-        if count < MAX_ARTICLES_PER_SOURCE:
+        if count < limit:
             capped.append(article)
             source_counts[source] = count + 1
-    print(f"   After source cap ({MAX_ARTICLES_PER_SOURCE}/source): {len(capped)} articles remaining.")
+    print(f"   After source cap ({MAX_ARTICLES_PER_SOURCE}/source, {MAX_ARTICLES_PER_REDDIT}/subreddit): {len(capped)} articles remaining.")
     return capped
 
 
@@ -1002,6 +1004,7 @@ def fetch_tiktok_trends() -> list[dict]:
     except Exception as e:
         print(f"   ⚠️  TikTok Trends unavailable (continuing without): {e}")
         return []
+
 
 
 def apply_hard_article_cap(articles: list[dict]) -> list[dict]:
