@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "id": "b92f6a9d0326",
+      "topic": "Airbnb says AI now writes 60% of its new code",
+      "traffic": "",
+      "detected_at": "2026-05-08T13:00:42.803316+00:00",
+      "search_url": "https://techcrunch.com/2026/05/08/airbnb-says-ai-now-writes-60-of-its-new-code/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
       "id": "a95fa67dbedd",
       "topic": "Stone Island’s SS26 Range Is a Technical Voyage in Fabric Innovation",
       "traffic": "",
@@ -89,27 +99,7 @@
       "source_name": "WIRED",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "2caf898275a3",
-      "topic": "Twitch has new penalties for streamers caught viewbotting, CEO says",
-      "traffic": "",
-      "detected_at": "2026-05-08T00:07:05.002177+00:00",
-      "search_url": "https://www.engadget.com/2167521/twitch-has-new-penalties-for-streamers-caught-viewbotting-ceo-says/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "748b7ff7f310",
-      "topic": "Visualizing Shea Langeliers' swing using bat tracking technology - MLB.com",
-      "traffic": "",
-      "detected_at": "2026-05-08T00:07:05.002177+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPLUVaSm0yb1R2R2wxdnZyYnZOeU5hSzFLanFRekwyRDdHZERHWjgyb1JoUldKZVBOQWhFNWNGY0tlWFNJRzhHXzItWjZnNWdZUzZFSy11ZTJiUXdXYTVSZTMtWXZTUUZWZmtLZTMxY2dOcjZDUDhnLVV5Q09sRnI2bEgtVlotNjg2S2cwaGFOVlVub2RKQ1JvcXB1dw?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-08T11:46:22.292053+00:00"
+  "last_checked": "2026-05-08T13:00:42.803316+00:00"
 }
