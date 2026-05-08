@@ -1,6 +1,36 @@
 {
   "items": [
     {
+      "id": "aa6ee27c917f",
+      "topic": "OKC up 2-0 on Lakers as Holmgren, SGA score 22",
+      "traffic": "",
+      "detected_at": "2026-05-08T08:49:18.276956+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48708989/chet-holmgren-shai-gilgeous-alexander-lead-thunder-lakers",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "00e1e021341d",
+      "topic": "Lakers' Redick rips refs; Reaves takes issue, too",
+      "traffic": "",
+      "detected_at": "2026-05-08T08:49:18.276956+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48709627/lakers-redick-rips-officiating-reaves-feels-disrespected",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "ee303d7bd6f5",
+      "topic": "Cunningham, Pistons pull away, take G2 vs. Cavs",
+      "traffic": "",
+      "detected_at": "2026-05-08T08:49:18.276956+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48708023/cunningham-pistons-pull-away-take-2-0-lead-cavaliers",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
       "id": "8f8ea4ff8fef",
       "topic": "The Canvas Hack Is a New Kind of Ransomware Debacle",
       "traffic": "",
@@ -119,47 +149,7 @@
       "source_name": "TechCrunch",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "7509b8b49231",
-      "topic": "Why the Hantavirus Cruise Ship Outbreak Isn't Likely to Become a Global Crisis",
-      "traffic": "",
-      "detected_at": "2026-05-07T19:53:10.322168+00:00",
-      "search_url": "https://www.wired.com/story/hantavirus-cruise-ship-what-you-need-to-know/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "7e91dc3be4fb",
-      "topic": "Bumble is getting rid of the swipe, CEO says",
-      "traffic": "",
-      "detected_at": "2026-05-07T19:53:10.322168+00:00",
-      "search_url": "https://techcrunch.com/2026/05/07/bumble-is-getting-rid-of-the-swipe-ceo-says/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "7480071a556c",
-      "topic": "I'm already dreading Apple's camera-equipped AirPods",
-      "traffic": "",
-      "detected_at": "2026-05-07T19:53:10.322168+00:00",
-      "search_url": "https://www.engadget.com/2167325/im-already-dreading-apples-camera-equipped-airpods/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "e662d0c65871",
-      "topic": "Perplexity opens up its Personal Computer AI assistant to all Mac users",
-      "traffic": "",
-      "detected_at": "2026-05-07T19:53:10.322168+00:00",
-      "search_url": "https://www.engadget.com/2167301/perplexity-opens-up-its-personal-computer-ai-assistant-to-all-mac-users/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-08T07:11:00.373834+00:00"
+  "last_checked": "2026-05-08T08:49:18.276956+00:00"
 }
