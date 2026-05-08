@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "id": "2caf898275a3",
+      "topic": "Twitch has new penalties for streamers caught viewbotting, CEO says",
+      "traffic": "",
+      "detected_at": "2026-05-08T00:07:05.002177+00:00",
+      "search_url": "https://www.engadget.com/2167521/twitch-has-new-penalties-for-streamers-caught-viewbotting-ceo-says/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "748b7ff7f310",
+      "topic": "Visualizing Shea Langeliers' swing using bat tracking technology - MLB.com",
+      "traffic": "",
+      "detected_at": "2026-05-08T00:07:05.002177+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPLUVaSm0yb1R2R2wxdnZyYnZOeU5hSzFLanFRekwyRDdHZERHWjgyb1JoUldKZVBOQWhFNWNGY0tlWFNJRzhHXzItWjZnNWdZUzZFSy11ZTJiUXdXYTVSZTMtWXZTUUZWZmtLZTMxY2dOcjZDUDhnLVV5Q09sRnI2bEgtVlotNjg2S2cwaGFOVlVub2RKQ1JvcXB1dw?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
       "id": "31f1245fb628",
       "topic": "iam8bit recorded a jazzy Persona album for the series' 30th",
       "traffic": "",
@@ -179,27 +199,7 @@
       "source_name": "WIRED",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "42f80f2e7fd2",
-      "topic": "Google’s $9.99-per-month AI health coach launches May 19",
-      "traffic": "",
-      "detected_at": "2026-05-07T16:28:15.100521+00:00",
-      "search_url": "https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "50eff9382b8f",
-      "topic": "Teenage Engineering just released a stereo mixer that physically connects to its EP-series samplers",
-      "traffic": "",
-      "detected_at": "2026-05-07T16:28:15.100521+00:00",
-      "search_url": "https://www.engadget.com/2167044/teenage-engineering-just-released-a-stereo-mixer-that-physically-connects-to-its-ep-series-samplers/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-07T23:11:26.302070+00:00"
+  "last_checked": "2026-05-08T00:07:05.002177+00:00"
 }
