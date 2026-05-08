@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "id": "8f8ea4ff8fef",
+      "topic": "The Canvas Hack Is a New Kind of Ransomware Debacle",
+      "traffic": "",
+      "detected_at": "2026-05-08T05:49:48.291710+00:00",
+      "search_url": "https://www.wired.com/story/canvas-hack-shinyhunters-ransomware-instructure/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
       "id": "2caf898275a3",
       "topic": "Twitch has new penalties for streamers caught viewbotting, CEO says",
       "traffic": "",
@@ -169,37 +179,7 @@
       "source_name": "Engadget",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "8d0894659c30",
-      "topic": "The Nike SB Air Force 1 Continues To Impress In “Wheat”",
-      "traffic": "",
-      "detected_at": "2026-05-07T16:28:15.100521+00:00",
-      "search_url": "https://sneakernews.com/2026/05/07/nike-sb-air-force-1-flax-wheat-hm8517-200/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "f6f2b1094206",
-      "topic": "John and Allegra Leguizamo to Star in Father-Daughter Drama ‘Bullet Catch’",
-      "traffic": "",
-      "detected_at": "2026-05-07T16:28:15.100521+00:00",
-      "search_url": "https://variety.com/2026/film/news/john-leguizamo-allegra-daughter-bullet-catch-movie-1236735791/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "96cca6123a6b",
-      "topic": "ChatGPT Has 'Goblin' Mania in the US. In China It Will 'Catch You Steadily'",
-      "traffic": "",
-      "detected_at": "2026-05-07T16:28:15.100521+00:00",
-      "search_url": "https://www.wired.com/story/chatgpt-chinese-catch-you-steadily-sycophancy/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-08T03:51:08.404774+00:00"
+  "last_checked": "2026-05-08T05:49:48.291710+00:00"
 }
