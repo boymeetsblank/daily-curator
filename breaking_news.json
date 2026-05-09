@@ -1,14 +1,54 @@
 {
   "items": [
     {
-      "id": "9ce2b63e73a1",
-      "topic": "PJ Tucker, The NBA’s All-Time Sneaker King, Has Retired",
+      "id": "a26739f6393a",
+      "topic": "Follow live: Wemby, Edwards dueling in Game 3",
       "traffic": "",
-      "detected_at": "2026-05-08T15:00:27.492572+00:00",
-      "search_url": "https://sneakernews.com/2026/05/08/pj-tucker-retires-nba-sneaker-king/",
-      "source_name": "Sneaker News",
+      "detected_at": "2026-05-09T03:55:56.758016+00:00",
+      "search_url": "https://www.espn.com/nba/game/_/gameId/401871154/spurs-timberwolves",
+      "source_name": "ESPN",
       "source_type": "feed",
-      "haiku_score": 9
+      "haiku_score": 8
+    },
+    {
+      "id": "28b21ce828df",
+      "topic": "Brunson shuts door on 76ers as Knicks go up 3-0",
+      "traffic": "",
+      "detected_at": "2026-05-09T03:55:56.758016+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48717062/jalen-brunson-shuts-door-76ers-knicks-go-3-0",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "9ea0ed04f150",
+      "topic": "Historic heat: Misiorowski tops 103 mph 10 times",
+      "traffic": "",
+      "detected_at": "2026-05-09T03:55:56.758016+00:00",
+      "search_url": "https://www.espn.com/mlb/story/_/id/48717076/brewers-jacob-misiorowski-hits-1036-mph-fastest-pitch-starter-statcast-era",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "900e969c7567",
+      "topic": "McIlroy no longer against return of LIV golfers",
+      "traffic": "",
+      "detected_at": "2026-05-09T03:55:56.758016+00:00",
+      "search_url": "https://www.espn.com/golf/story/_/id/48716367/mcilroy-not-liv-golfers-return-just-good-business",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "1ddfadd5ffcb",
+      "topic": "inMusic To Acquire Native Instruments To Expand Music Technology Platform - Pulse 2.0",
+      "traffic": "",
+      "detected_at": "2026-05-09T03:55:56.758016+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOampCX19MMFM5M09JTk1ZR3l2OE5VMEowd2VfNzRjbTRLTlYwS2hPZkFiaU43OV9rWnJHWXVjMmJHZmQ1Tk9xaDQ4cnJ5cVFETmxsXzRvM0hpZ0NkbVgwc1VDNXFUMmd3ek43TXRFazFwYk9ieldzc1gtWldqV0dBTkRkQTNRRWZ1N3lwNm4yRmczZUtCUWFBWdIB0AFBVV95cUxOQkVDb1U0T0VXOUVkVTQtOE12Wnl4QVlleHB1RG1DbEd2ZDdQemtCelhoRS1ndnBLSFZxLXV5NjBlSk9lWFBjZ3dpTzZQLVhqRmhnWFpwNmZDZzRrVEhQemlhT04yWjN0R1JNU3V3Yi1zWUdoWGVVMG5UeW43cVVaMUZtZDVzWmVaT2pwZS01MnFDendzY3JNcHpmQmM0T1hndDM0R245NGVOYl94Ni0wWV9yRHJpa2ZNSGx0d1RHR21UWTJRSXJaaWk4ZnhCVzNL?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 6
     },
     {
       "id": "99a05e6533b7",
@@ -159,47 +199,7 @@
       "source_name": "WIRED",
       "source_type": "feed",
       "haiku_score": 8
-    },
-    {
-      "id": "a769bea41ff2",
-      "topic": "Tesla’s Latest Recall? Wheels May Fall Off Cybertrucks",
-      "traffic": "",
-      "detected_at": "2026-05-08T18:59:48.320782+00:00",
-      "search_url": "https://www.wired.com/story/the-latest-tesla-recall-wheels-may-fall-off-cybertrucks/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "0d32a304fbc2",
-      "topic": "Porsche shutters e-bike, battery, software subsidiaries as part of company overhaul",
-      "traffic": "",
-      "detected_at": "2026-05-08T18:59:48.320782+00:00",
-      "search_url": "https://techcrunch.com/2026/05/08/porsche-shutters-e-bike-battery-software-subsidiaries-as-part-of-company-overhaul/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "6b8227b97249",
-      "topic": "Department of War sets up UFO website, but there isn't much to see",
-      "traffic": "",
-      "detected_at": "2026-05-08T18:59:48.320782+00:00",
-      "search_url": "https://www.engadget.com/2168147/department-of-war-sets-up-ufo-website-but-there-isnt-much-to-see/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "aaa8d24c82b0",
-      "topic": "Fitness wearable Whoop to offer on-demand clinician access to U.S. users",
-      "traffic": "",
-      "detected_at": "2026-05-08T18:59:48.320782+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/08/whoop-on-demand-clinician-access.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-09T00:10:46.288775+00:00"
+  "last_checked": "2026-05-09T03:55:56.758016+00:00"
 }
