@@ -32,7 +32,7 @@ FEED_WINDOW_MINUTES     = 90   # articles published this recently count as break
 MAX_KNOWN_IDS           = 500  # cap state file growth
 MAX_LIVE_PER_SOURCE     = 5    # max items per source within the cap window
 SOURCE_CAP_WINDOW_HOURS = 2    # rolling window for per-source cap
-MAX_FEED_SIZE           = 20   # max total items in the live feed at once
+MAX_FEED_SIZE           = 40   # max total items in the live feed at once
 FAILED_IDS_TTL_HOURS    = 4    # failed items re-enter the pipeline after this long
 
 SOURCES_FILE        = "sources.json"

@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-07] Live feed: MAX_FEED_SIZE raised 20→40
+
+Increased the live feed display cap from 20 to 40 items. With the pipeline now generating 5–12 new items/hour during peak hours, the old cap was filling up within 2–4 hours and blocking new entries until older items expired.
+
 ## [2026-05-07] Live feed volume: social candidates restored, 6 new RSS sources, 5 subreddits, free Google Trends refresh, 4h failed-item window, wider article window
 
 Six changes to restore and grow live feed candidate volume after the May 6 overhaul thinned the pipeline: (1) restored `build_social_candidates()` call so X/Google/TikTok topics re-enter as Haiku-scored candidates; (2) added 6 RSS sources — Pitchfork, Billboard, Rolling Stone, The Ringer, Deadline, Bleacher Report; (3) breaking news monitor now tops up Google Trends data from the free unofficial daily endpoint when `social_trends.json` is >60 minutes old — no Apify cost; (4) added 5 subreddits — r/hiphopheads, r/sneakers, r/soccer, r/movies, r/music; (5) failed items (score 1–5) are now suppressed for only 4 hours instead of permanently, so slow-burn stories can resurface; (6) `FEED_WINDOW_MINUTES` widened 60→90 to reduce misses from delayed GitHub Actions runs.
