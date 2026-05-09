@@ -810,11 +810,9 @@ def main():
                 kept.append(item)
                 _kept_source_counts[item["source_name"]] += 1
 
-    # 9+ items pinned to top; rest flow reverse-chronologically below
-    # Use (score or 0) to safely handle legacy items with null haiku_score
-    tier_high = sorted([x for x in kept if (x.get("haiku_score") or 0) >= 9], key=lambda x: x.get("detected_at", ""), reverse=True)
-    tier_low  = sorted([x for x in kept if (x.get("haiku_score") or 0) < 9],  key=lambda x: x.get("detected_at", ""), reverse=True)
-    kept = (tier_high + tier_low)[:MAX_FEED_SIZE]
+    # Live feed is purely reverse-chronological — no score-based pinning here.
+    # Pinning by score is handled in the main feed only.
+    kept = sorted(kept, key=lambda x: x.get("detected_at", ""), reverse=True)[:MAX_FEED_SIZE]
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump({"items": kept, "last_checked": now_iso}, f, indent=2, ensure_ascii=False)

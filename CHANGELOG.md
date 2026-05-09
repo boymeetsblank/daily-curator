@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-07] Live feed: purely reverse-chronological, no score pinning
+
+Removed the two-tier sort that pinned 9+ items to the top of the Live feed. The Live section is now strictly newest-first. Score-based pinning belongs in the main feed only.
+
 ## [2026-05-07] Live feed: MAX_FEED_SIZE raised 20→40
 
 Increased the live feed display cap from 20 to 40 items. With the pipeline now generating 5–12 new items/hour during peak hours, the old cap was filling up within 2–4 hours and blocking new entries until older items expired.
