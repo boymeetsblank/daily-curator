@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-07] Live feed volume: social candidates restored, 6 new RSS sources, 5 subreddits, free Google Trends refresh, 4h failed-item window, wider article window
+
+Six changes to restore and grow live feed candidate volume after the May 6 overhaul thinned the pipeline: (1) restored `build_social_candidates()` call so X/Google/TikTok topics re-enter as Haiku-scored candidates; (2) added 6 RSS sources — Pitchfork, Billboard, Rolling Stone, The Ringer, Deadline, Bleacher Report; (3) breaking news monitor now tops up Google Trends data from the free unofficial daily endpoint when `social_trends.json` is >60 minutes old — no Apify cost; (4) added 5 subreddits — r/hiphopheads, r/sneakers, r/soccer, r/movies, r/music; (5) failed items (score 1–5) are now suppressed for only 4 hours instead of permanently, so slow-burn stories can resurface; (6) `FEED_WINDOW_MINUTES` widened 60→90 to reduce misses from delayed GitHub Actions runs.
+
 ## [2026-05-06] Live feed scoring overhaul — tighter quality gate, no bare social trends
 
 Rewrote the Haiku scoring prompt in `breaking_news_check.py` to match the main curator's scoring anchors (10: cultural moment, 9: tell someone now, 8: bring up today, 7: worth surfacing, 6: minimum bar). Tightened the politics filter to cover routine political/geopolitical/economic policy content while preserving a carve-out for genuinely historic moments. Removed bare X/Google/TikTok trend topic names as live feed candidates — social context signal is preserved in the scoring prompt but bare names no longer enter the pipeline. Dropped Reddit hot post threshold from 500 → 200 upvotes and raised per-source cap from 3 → 5 to increase candidate volume.

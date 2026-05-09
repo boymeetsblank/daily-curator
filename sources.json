@@ -48,6 +48,42 @@
     "enabled": true
   },
   {
+    "name": "Pitchfork",
+    "rss": "https://pitchfork.com/rss/news/",
+    "category": "music",
+    "enabled": true
+  },
+  {
+    "name": "Billboard",
+    "rss": "https://www.billboard.com/feed/",
+    "category": "music",
+    "enabled": true
+  },
+  {
+    "name": "Rolling Stone",
+    "rss": "https://www.rollingstone.com/feed/",
+    "category": "music",
+    "enabled": true
+  },
+  {
+    "name": "The Ringer",
+    "rss": "https://www.theringer.com/rss/index.xml",
+    "category": "culture",
+    "enabled": true
+  },
+  {
+    "name": "Deadline",
+    "rss": "https://deadline.com/feed/",
+    "category": "entertainment",
+    "enabled": true
+  },
+  {
+    "name": "Bleacher Report",
+    "rss": "https://bleacherreport.com/articles/feed",
+    "category": "sports",
+    "enabled": true
+  },
+  {
     "name": "r/popculturechat",
     "rss": "https://www.reddit.com/r/popculturechat/.rss",
     "category": "culture",
@@ -153,6 +189,36 @@
     "name": "r/Damnthatsinteresting",
     "rss": "https://www.reddit.com/r/Damnthatsinteresting/",
     "category": "wide net",
+    "enabled": true
+  },
+  {
+    "name": "r/hiphopheads",
+    "rss": "https://www.reddit.com/r/hiphopheads/.rss",
+    "category": "music",
+    "enabled": true
+  },
+  {
+    "name": "r/sneakers",
+    "rss": "https://www.reddit.com/r/sneakers/.rss",
+    "category": "sneakers",
+    "enabled": true
+  },
+  {
+    "name": "r/soccer",
+    "rss": "https://www.reddit.com/r/soccer/.rss",
+    "category": "sports",
+    "enabled": true
+  },
+  {
+    "name": "r/movies",
+    "rss": "https://www.reddit.com/r/movies/.rss",
+    "category": "entertainment",
+    "enabled": true
+  },
+  {
+    "name": "r/music",
+    "rss": "https://www.reddit.com/r/music/.rss",
+    "category": "music",
     "enabled": true
   }
 ]
