@@ -99,7 +99,7 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
         if lines:
             social_block = "\n\nLIVE SOCIAL SIGNALS — score higher when items directly relate to these:\n" + "\n".join(lines)
 
-    prompt = f"""You are the editorial filter for Blank — a culture intelligence platform covering sneakers, fashion, music, sports, tech, and internet culture.
+    prompt = f"""You are the editorial filter for Blank — a culture intelligence platform for trend-forward people who want to know what's happening right now.
 
 Your job: decide what's worth surfacing in a live culture feed. Score each item 1–10.
 
@@ -112,9 +112,9 @@ SCORING GUIDE:
 - 1–5: Filtered out — noise, too dry, too predictable, or irrelevant.
 
 IMPORTANT:
-- For YouTube trending videos and Reddit posts: score on whether something actually just happened or is going viral that a culture-forward audience would care about.
-- For articles: score on whether this is a real, timely story worth a reader's attention right now.
-- Give the benefit of the doubt to culture-adjacent items (sneakers, music, sports, entertainment). Score generously when in doubt.
+- Score based on whether a well-connected, culturally aware person would consider this worth knowing today — regardless of topic. A major watch collab, a title fight, a surprise album drop, a viral moment, a landmark court ruling: anything genuinely significant has a fair shot.
+- If something feels important and you're unsure, score it generously. Don't penalize topics that don't fit a narrow content bucket.
+- For YouTube trending videos and Reddit posts: score on whether something actually just happened or is going viral that a culturally aware audience would care about.
 - Score 1 for routine political content: partisan commentary, policy debates, regular war/conflict updates, diplomatic news, Fed/inflation data, and regulatory coverage.
 - Exception: if a political or geopolitical event is so significant it transcends politics and becomes a cultural moment everyone needs to know about right now (a world leader falls, a landmark ruling that changes daily life, a war escalation that shifts the global order), score it on its actual magnitude — it may warrant a 9 or 10.{social_block}
 

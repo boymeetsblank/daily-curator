@@ -220,5 +220,23 @@
     "rss": "https://www.reddit.com/r/music/.rss",
     "category": "music",
     "enabled": true
+  },
+  {
+    "name": "MMA Fighting",
+    "rss": "https://www.mmafighting.com/rss/current",
+    "category": "sports",
+    "enabled": true
+  },
+  {
+    "name": "MMA Junkie",
+    "rss": "https://mmajunkie.usatoday.com/feed",
+    "category": "sports",
+    "enabled": true
+  },
+  {
+    "name": "r/MMA",
+    "rss": "https://www.reddit.com/r/MMA/.rss",
+    "category": "sports",
+    "enabled": true
   }
 ]

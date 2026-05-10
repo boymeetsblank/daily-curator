@@ -1144,8 +1144,8 @@ Articles to analyze:
                     "cluster_sources": actual_sources,
                 })
 
-        # Set trending signal for 3+ source clusters (all members, not just untagged)
-        if num_sources >= 3:
+        # Set trending signal for 2+ source clusters (all members, not just untagged)
+        if num_sources >= 2:
             for article_num in valid_nums:
                 articles[article_num - 1]["trending_across_sources"]  = True
                 articles[article_num - 1]["trending_source_count"]    = num_sources
@@ -1219,7 +1219,7 @@ Recently covered (do not re-pick):
 
 TREND ITEMS: Some items have Source "X (Twitter) Trending", "Google Trends", "YouTube Trending", or "TikTok Trending" — these are raw trending topics or videos, not articles. Evaluate them on whether the topic itself is culturally significant and worth a reader's attention. Score them as you would any other item. YouTube and TikTok trends carry strong cultural signal — a video going viral on either platform often precedes broader mainstream coverage.
 
-CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 3+ sources, treat this as evidence of cultural relevance. Add 1 point to the score (if it's already strong across other criteria).
+CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 2+ sources, this is strong evidence the story has real cultural weight — multiple independent outlets chose to cover it. Score it a minimum of 7. If it's covered by 3+ sources, score it a minimum of 8. Apply this floor regardless of topic area.
 
 CULTURAL VELOCITY SIGNALS: The following topics are currently trending live on X (Twitter), Google Trends, YouTube, and TikTok. If an article's subject directly intersects with one of these topics, that's a signal of real-time cultural momentum — treat it as additional evidence for the TRENDING and CULTURAL criteria. Do not add points mechanically; use this to inform your editorial judgment about whether the story is landing in the cultural conversation right now.
 {trending_context_block}
