@@ -1,6 +1,46 @@
 {
   "items": [
     {
+      "id": "3f043c54b980",
+      "topic": "Phoebe Bridgers Premieres New Music at First Solo Show Since 2023",
+      "traffic": "",
+      "detected_at": "2026-05-10T15:09:04.556519+00:00",
+      "search_url": "https://pitchfork.com/news/phoebe-bridgers-premieres-new-music-at-first-solo-show-since-2023/",
+      "source_name": "Pitchfork",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "92f7f9557b49",
+      "topic": "Red Hot Chili Peppers Sell Recorded Music Catalog for Over $300 Million",
+      "traffic": "",
+      "detected_at": "2026-05-10T15:09:04.556519+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/red-hot-chili-peppers-recorded-music-catalog-300-million-1235560319/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "a4ec109ce1e1",
+      "topic": "This Wild New Technology Is Making Surfing More Accessible—but Not How You Think - Travel + Leisure",
+      "traffic": "",
+      "detected_at": "2026-05-10T15:09:04.556519+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcWFiaG14OUtOcDlHRFBoQVZUbmFBZkxqOENXRndlM3FEQWJpQlVtVUJtX2JEVHJxME5lUVBWRnpNU2FSQjkxbVpKQVBDa0podDJzdGY0Rzc2TUVBTm5WLTU3WGNzSzlyZTdpak51UjF5WFltQUlIVFNoNHlWVENIcGtB?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "b95ef0e114aa",
+      "topic": "Bobby Cox",
+      "traffic": "",
+      "detected_at": "2026-05-10T15:09:04.556519+00:00",
+      "search_url": "https://x.com/search?q=Bobby+Cox&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "3bc1fd122457",
       "topic": "‘Money Heist’ Set to Return With Expansion of Series Universe at Netflix",
       "traffic": "",
@@ -291,5 +331,5 @@
       "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-10T14:04:51.643661+00:00"
+  "last_checked": "2026-05-10T15:09:04.556519+00:00"
 }
