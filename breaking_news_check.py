@@ -2,12 +2,13 @@
 breaking_news_check.py — Breaking News Monitor
 
 Polls your subscribed RSS feeds (sources.json) every 5 minutes for articles
-published in the last 60 minutes. New items are enriched with a one-sentence
+published in the last 90 minutes. New items are enriched with a one-sentence
 context via Claude Haiku, then written to breaking_news.json (deployed to
 GitHub Pages). If new items are found, a Web Push notification is sent.
 
-Note: Google Trends RSS was removed — Google deprecated the endpoint (404).
-X trends are available via the 3x/day Apify runs in daily_curator.py.
+Google Trends are refreshed from the unofficial daily trends endpoint whenever
+the cached data in social_trends.json is older than 60 minutes (free, no Apify).
+X and TikTok trends are available via the 3x/day Apify runs in daily_curator.py.
 
 Writes:
   breaking_news.json       — deployed to GitHub Pages for the frontend
@@ -27,17 +28,20 @@ import requests
 # ── Config ────────────────────────────────────────────────────────────────────
 
 BREAKING_NEWS_TTL_HOURS = 12
-FEED_WINDOW_MINUTES     = 60   # articles published this recently count as breaking
+FEED_WINDOW_MINUTES     = 90   # articles published this recently count as breaking
 MAX_KNOWN_IDS           = 500  # cap state file growth
 MAX_LIVE_PER_SOURCE     = 5    # max items per source within the cap window
 SOURCE_CAP_WINDOW_HOURS = 2    # rolling window for per-source cap
-MAX_FEED_SIZE           = 20   # max total items in the live feed at once
+MAX_FEED_SIZE           = 40   # max total items in the live feed at once
+FAILED_IDS_TTL_HOURS    = 4    # failed items re-enter the pipeline after this long
 
 SOURCES_FILE        = "sources.json"
 STATE_FILE          = "breaking_news_state.json"
 OUTPUT_FILE         = "breaking_news.json"
 SOCIAL_TRENDS_PATH  = "social_trends.json"
-YOUTUBE_TRENDING_RSS = "https://www.youtube.com/feeds/videos.xml?chart=mostpopular&regionCode=US&hl=en&gl=US"
+YOUTUBE_TRENDING_RSS  = "https://www.youtube.com/feeds/videos.xml?chart=mostpopular&regionCode=US&hl=en&gl=US"
+GOOGLE_TRENDS_URL     = "https://trends.google.com/trends/trendingsearches/daily?geo=US&ns=15"
+GOOGLE_TRENDS_MAX_AGE = 60    # minutes before we try to refresh google trends
 
 FEED_URL   = "https://boymeetsblank.github.io/daily-curator/"
 VAPID_CLAIMS = {"sub": "mailto:mjaffry1@gmail.com"}
@@ -95,7 +99,7 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
         if lines:
             social_block = "\n\nLIVE SOCIAL SIGNALS — score higher when items directly relate to these:\n" + "\n".join(lines)
 
-    prompt = f"""You are the editorial filter for Blank — a culture intelligence platform covering sneakers, fashion, music, sports, tech, and internet culture.
+    prompt = f"""You are the editorial filter for Blank — a culture intelligence platform for trend-forward people who want to know what's happening right now.
 
 Your job: decide what's worth surfacing in a live culture feed. Score each item 1–10.
 
@@ -108,9 +112,9 @@ SCORING GUIDE:
 - 1–5: Filtered out — noise, too dry, too predictable, or irrelevant.
 
 IMPORTANT:
-- For YouTube trending videos and Reddit posts: score on whether something actually just happened or is going viral that a culture-forward audience would care about.
-- For articles: score on whether this is a real, timely story worth a reader's attention right now.
-- Give the benefit of the doubt to culture-adjacent items (sneakers, music, sports, entertainment). Score generously when in doubt.
+- Score based on whether a well-connected, culturally aware person would consider this worth knowing today — regardless of topic. A major watch collab, a title fight, a surprise album drop, a viral moment, a landmark court ruling: anything genuinely significant has a fair shot.
+- If something feels important and you're unsure, score it generously. Don't penalize topics that don't fit a narrow content bucket.
+- For YouTube trending videos and Reddit posts: score on whether something actually just happened or is going viral that a culturally aware audience would care about.
 - Score 1 for routine political content: partisan commentary, policy debates, regular war/conflict updates, diplomatic news, Fed/inflation data, and regulatory coverage.
 - Exception: if a political or geopolitical event is so significant it transcends politics and becomes a cultural moment everyone needs to know about right now (a world leader falls, a landmark ruling that changes daily life, a war escalation that shifts the global order), score it on its actual magnitude — it may warrant a 9 or 10.{social_block}
 
@@ -339,6 +343,66 @@ def load_social_trends() -> dict:
     except Exception as e:
         print(f"   ⚠️  Could not load social_trends.json: {e}")
         return empty
+
+
+# ── Google Trends live refresh (free, no Apify) ──────────────────────────────
+
+def refresh_google_trends(trends: dict) -> dict:
+    """
+    Top up the google field in trends if the cached data is older than
+    GOOGLE_TRENDS_MAX_AGE minutes. Hits the unofficial daily trends endpoint
+    (free, no Apify). Falls back silently to the cached data on any failure.
+    Also writes the refreshed data back to social_trends.json so subsequent
+    runs within the same window skip the fetch.
+    """
+    try:
+        if os.path.exists(SOCIAL_TRENDS_PATH):
+            with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
+                cached = json.load(f)
+            fetched_at = cached.get("fetched_at") or cached.get("timestamp")
+            if fetched_at:
+                age_minutes = (
+                    datetime.now(tz=timezone.utc)
+                    - datetime.fromisoformat(fetched_at)
+                ).total_seconds() / 60
+                if age_minutes < GOOGLE_TRENDS_MAX_AGE:
+                    return trends  # still fresh
+    except Exception:
+        pass  # can't determine age — attempt a refresh anyway
+
+    try:
+        resp = requests.get(
+            GOOGLE_TRENDS_URL,
+            headers={**_HEADERS, "Accept-Language": "en-US,en;q=0.9"},
+            timeout=10,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        days = data.get("default", {}).get("trendingSearchesDays", [])
+        topics = []
+        for day in days[:1]:  # only today's trends
+            for search in day.get("trendingSearches", []):
+                query = search.get("title", {}).get("query", "")
+                if query:
+                    topics.append(query)
+        if topics:
+            trends = {**trends, "google": topics}
+            # Write back so subsequent runs skip the fetch until data is stale again
+            try:
+                existing = {}
+                if os.path.exists(SOCIAL_TRENDS_PATH):
+                    with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
+                        existing = json.load(f)
+                existing.update({"google": topics, "fetched_at": datetime.now(tz=timezone.utc).isoformat()})
+                with open(SOCIAL_TRENDS_PATH, "w", encoding="utf-8") as f:
+                    json.dump(existing, f, indent=2, ensure_ascii=False)
+            except Exception:
+                pass  # write failure is non-critical
+            print(f"   🔍 Google Trends refreshed: {len(topics)} topics")
+    except Exception as e:
+        print(f"   ⚠️  Google Trends refresh failed ({e}) — using cached data")
+
+    return trends
 
 
 # ── Source: YouTube trending (free RSS, no API key needed) ───────────────────
@@ -596,21 +660,29 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
 
 def load_state() -> dict:
     if not os.path.exists(STATE_FILE):
-        return {"known_ids": [], "last_checked": None}
+        return {"known_ids": [], "failed_ids": {}, "last_checked": None}
     try:
         with open(STATE_FILE, encoding="utf-8") as f:
             state = json.load(f)
         # Backfill: old state files used known_wire_ids
         if "known_ids" not in state:
             state["known_ids"] = state.get("known_wire_ids", [])
+        # Prune failed_ids older than FAILED_IDS_TTL_HOURS so they re-enter the pipeline
+        cutoff = datetime.now(tz=timezone.utc) - timedelta(hours=FAILED_IDS_TTL_HOURS)
+        raw_failed = state.get("failed_ids", {})
+        state["failed_ids"] = {
+            k: v for k, v in raw_failed.items()
+            if datetime.fromisoformat(v) > cutoff
+        }
         return state
     except Exception:
-        return {"known_ids": [], "last_checked": None}
+        return {"known_ids": [], "failed_ids": {}, "last_checked": None}
 
 
-def save_state(known_ids: list[str]) -> None:
+def save_state(known_ids: list[str], failed_ids: dict[str, str]) -> None:
     state = {
         "known_ids":    known_ids[-MAX_KNOWN_IDS:],
+        "failed_ids":   failed_ids,
         "last_checked": datetime.now(tz=timezone.utc).isoformat(),
     }
     with open(STATE_FILE, "w", encoding="utf-8") as f:
@@ -635,10 +707,13 @@ def main():
 
     state     = load_state()
     known_ids = list(state.get("known_ids", []))
-    known_set = set(known_ids)
+    failed_ids = dict(state.get("failed_ids", {}))
+    known_set = set(known_ids) | set(failed_ids.keys())
 
     # Load social trends cache (written by daily_curator.py 3×/day — zero extra Apify cost)
+    # then top up Google Trends from the free daily endpoint if the cached data is stale.
     trends = load_social_trends()
+    trends = refresh_google_trends(trends)
     if any(trends.values()):
         total = sum(len(v) for v in trends.values())
         print(f"\n   📲 Loaded social trends: {total} topics across X, Google, YouTube, TikTok")
@@ -669,10 +744,12 @@ def main():
     youtube_candidates = fetch_youtube_trending_rss(known_set, now_iso)
     candidates.extend(youtube_candidates)
 
-    # Mark all candidates as seen regardless of whether they pass the quality gate,
-    # so low-quality articles from noisy sources are never re-evaluated.
+    social_candidates = build_social_candidates(trends, known_set, now_iso)
+    candidates.extend(social_candidates)
+
+    # Add all candidate IDs to known_set now to prevent same-run re-evaluation.
+    # After scoring we route: passed → known_ids (permanent), failed → failed_ids (4h TTL).
     for c in candidates:
-        known_ids.append(c["id"])
         known_set.add(c["id"])
 
     # Cap candidates per source before scoring to avoid wasting API calls on
@@ -701,6 +778,14 @@ def main():
 
     print(f"\n   {'🔴' if new_items else '✅'} {len(new_items)} new item(s) this check ({len(escalate_items)} escalated).")
 
+    # Route candidates: passed → known_ids (permanent), failed → failed_ids (4h TTL)
+    passed_ids = {item["id"] for item in new_items}
+    for c in candidates:
+        if c["id"] in passed_ids:
+            known_ids.append(c["id"])
+        else:
+            failed_ids[c["id"]] = now_iso
+
     # ── Merge + prune ─────────────────────────────────────────────────────────
     existing     = load_breaking_news()
     cutoff       = datetime.now(tz=timezone.utc) - timedelta(hours=BREAKING_NEWS_TTL_HOURS)
@@ -725,11 +810,9 @@ def main():
                 kept.append(item)
                 _kept_source_counts[item["source_name"]] += 1
 
-    # 9+ items pinned to top; rest flow reverse-chronologically below
-    # Use (score or 0) to safely handle legacy items with null haiku_score
-    tier_high = sorted([x for x in kept if (x.get("haiku_score") or 0) >= 9], key=lambda x: x.get("detected_at", ""), reverse=True)
-    tier_low  = sorted([x for x in kept if (x.get("haiku_score") or 0) < 9],  key=lambda x: x.get("detected_at", ""), reverse=True)
-    kept = (tier_high + tier_low)[:MAX_FEED_SIZE]
+    # Live feed is purely reverse-chronological — no score-based pinning here.
+    # Pinning by score is handled in the main feed only.
+    kept = sorted(kept, key=lambda x: x.get("detected_at", ""), reverse=True)[:MAX_FEED_SIZE]
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump({"items": kept, "last_checked": now_iso}, f, indent=2, ensure_ascii=False)
@@ -740,8 +823,8 @@ def main():
         send_breaking_push(escalate_items)
 
     # ── Persist state ─────────────────────────────────────────────────────────
-    save_state(known_ids)
-    print(f"   💾 State saved — {len(known_ids)} IDs known\n")
+    save_state(known_ids, failed_ids)
+    print(f"   💾 State saved — {len(known_ids)} known, {len(failed_ids)} on 4h suppression\n")
 
 
 if __name__ == "__main__":
