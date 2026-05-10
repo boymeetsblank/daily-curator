@@ -1,6 +1,56 @@
 {
   "items": [
     {
+      "id": "25f2c841ef00",
+      "topic": "Arsenal",
+      "traffic": "",
+      "detected_at": "2026-05-10T20:07:10.733316+00:00",
+      "search_url": "https://x.com/search?q=Arsenal&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "0cfacc9b9e4c",
+      "topic": "Pacers",
+      "traffic": "",
+      "detected_at": "2026-05-10T20:07:10.733316+00:00",
+      "search_url": "https://x.com/search?q=Pacers&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "3045e19e0462",
+      "topic": "Adam Silver",
+      "traffic": "",
+      "detected_at": "2026-05-10T20:07:10.733316+00:00",
+      "search_url": "https://x.com/search?q=Adam+Silver&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "4a1533891ab8",
+      "topic": "Caleb Wilson",
+      "traffic": "",
+      "detected_at": "2026-05-10T20:07:10.733316+00:00",
+      "search_url": "https://x.com/search?q=Caleb+Wilson&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "d4f40040bb42",
+      "topic": "John Wall",
+      "traffic": "",
+      "detected_at": "2026-05-10T20:07:10.733316+00:00",
+      "search_url": "https://x.com/search?q=John+Wall&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "c73f5caa3085",
       "topic": "The Nike Kobe 4 Protro “Draft Day” Pack Will Be A Blind Box Drop",
       "traffic": "",
@@ -349,57 +399,7 @@
       "source_name": "CNBC",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "6c9b33baed89",
-      "topic": "With Netflix new ad-free standard plan at $20, streaming's tipping point into old TV is getting closer",
-      "traffic": "",
-      "detected_at": "2026-05-10T14:04:51.643661+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/10/netflix-20-dollar-streaming-plan-price.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "c02576d5c338",
-      "topic": "AI fabrications in legal filings grow in Oregon, US - Oregon Public Broadcasting - OPB",
-      "traffic": "",
-      "detected_at": "2026-05-10T14:04:51.643661+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcFdjNHdJUlFaVVpnc2FoTWkzZ1lOZTl1dDFwYlRKYmp2N0psTXJTQ1VPZkpiajJyRXpSTmRvUThabmpZcl9ubm5HYkZEOVZWRl80SXpvYVF0eVRyQzAwbDIyZlN4aDdNdG9xWFdqRTV4bFhuM08zNng0bEphaU80dVFvN0lxdnN2Sy16REF4MHQwWUVsNUE?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "6842881dc5a0",
-      "topic": "‘Devil Wears Prada 2’ Sashays Past ‘Mortal Kombat II’ With $41M U.S. After Strong Saturday; ‘Michael’ Dances To $570M WW – Mother’s Day Weekend B.O. Early Update",
-      "traffic": "",
-      "detected_at": "2026-05-10T11:33:09.684633+00:00",
-      "search_url": "https://deadline.com/2026/05/box-office-mortal-kombat-ii-devil-wears-prada-2-1236887876/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "32c00c11fe5a",
-      "topic": "Bitmap Books To Launch ‘Fatal Fury: The Ultimate History’",
-      "traffic": "",
-      "detected_at": "2026-05-10T10:39:54.073873+00:00",
-      "search_url": "https://hypebeast.com/2026/5/bitmap-books-fatal-fury-garou-densetsu-the-ultimate-history-book-release-info",
-      "source_name": "Hypebeast",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "d1038432313e",
-      "topic": "Do City Delivery Drones Make Sense? No One Knows, but They're Flying Over NYC",
-      "traffic": "",
-      "detected_at": "2026-05-10T10:39:54.073873+00:00",
-      "search_url": "https://www.wired.com/story/do-city-delivery-drones-make-sense-no-one-knows-but-theyre-flying-over-nyc/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-10T19:20:44.116962+00:00"
+  "last_checked": "2026-05-10T20:07:10.733316+00:00"
 }
