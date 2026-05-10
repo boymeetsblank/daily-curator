@@ -1,14 +1,74 @@
 {
   "items": [
     {
-      "id": "fd2f88ef041d",
-      "topic": "23 moments that defined LeBron's career, legacy an...",
+      "id": "0b6f5d986eaf",
+      "topic": "‘SNL’ Cold Open: Brett Kavanaugh Shares Big Trump Secret with Hegseth, Patel",
       "traffic": "",
-      "detected_at": "2026-05-09T20:04:59.081920+00:00",
-      "search_url": "https://www.espn.com/espn/feature/story/_/id/48195037/23-moments-lebron-james-iconic-nba-career",
-      "source_name": "ESPN",
+      "detected_at": "2026-05-10T04:59:01.921815+00:00",
+      "search_url": "https://www.rollingstone.com/tv-movies/tv-movie-news/snl-matt-damon-brett-kavanaugh-trump-secret-hegseth-patel-1235560241/",
+      "source_name": "Rolling Stone",
       "source_type": "feed",
-      "haiku_score": 9
+      "haiku_score": 6
+    },
+    {
+      "id": "9969909dd506",
+      "topic": "‘Saturday Night Live’ Open Has Matt Damon As Brett Kavanaugh Joining Pete Hegseth And Kash Patel In Boozy Night On The Town",
+      "traffic": "",
+      "detected_at": "2026-05-10T04:59:01.921815+00:00",
+      "search_url": "https://deadline.com/2026/05/saturday-night-live-matt-damon-brett-kavanaugh-hegseth-open-1236889333/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "d91a0ada5d0f",
+      "topic": "NASA And Katalyst Space Technologies Are Soon To Launch A Robotic Spacecraft, With Hopes That It Can Catch A Vital Observatory Before It Falls Back Into Our Atmosphere - TwistedSifter",
+      "traffic": "",
+      "detected_at": "2026-05-10T04:59:01.921815+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQRUZKWnNia0FUOU00MUR5UnJtQXVGYzlsVEVlLWkteGk2MjhXYXdwamxjMkF3U0RFQm1HQ3BVdWJEb3dqSllTdkpuQVNodHFIaG5DaW9mdkpMd3A2UURxUmlmaU1KbjVhRXZpb2JuZkhIcV9Pd1lIbmxLanJocXBKRll2eU1nVVYzMUNoZTFWZVZ1MnRWWF9NRTJfSEcyR1UyQW8xSTNGYUtQV2ZKZ1VyQVNndTF6SXQyenhZNDdueXRmOTdRTm55SWFRLXpremlSX095emVxbUtfU0JXS3VaTkYxcEV6QUtHNjZUeGp4VGNLZ0R2UllZQmJUX3JMZFE0eDZOOVRtcTRmZmI3VWdBM3Vtd0JHazVGYTVhWXJ6eWpVOVQyVjRoOQ?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "2d2a6167765d",
+      "topic": "#UFC328",
+      "traffic": "",
+      "detected_at": "2026-05-10T04:59:01.921815+00:00",
+      "search_url": "https://x.com/search?q=%23UFC328&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "b15d647e993a",
+      "topic": "Ajay Mitchell",
+      "traffic": "",
+      "detected_at": "2026-05-10T04:59:01.921815+00:00",
+      "search_url": "https://x.com/search?q=Ajay+Mitchell&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "c68b373305a8",
+      "topic": "Ayton",
+      "traffic": "",
+      "detected_at": "2026-05-10T04:59:01.921815+00:00",
+      "search_url": "https://x.com/search?q=Ayton&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "94e42554f0fb",
+      "topic": "Volkov",
+      "traffic": "",
+      "detected_at": "2026-05-10T04:59:01.921815+00:00",
+      "search_url": "https://x.com/search?q=Volkov&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
     },
     {
       "id": "ca6625e3b9ba",
@@ -101,6 +161,16 @@
       "haiku_score": 7
     },
     {
+      "id": "fd2f88ef041d",
+      "topic": "23 moments that defined LeBron's career, legacy an...",
+      "traffic": "",
+      "detected_at": "2026-05-09T20:04:59.081920+00:00",
+      "search_url": "https://www.espn.com/espn/feature/story/_/id/48195037/23-moments-lebron-james-iconic-nba-career",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 9
+    },
+    {
       "id": "772d677ecccf",
       "topic": "Follow live: Cavs seek first win vs. series-leadin...",
       "traffic": "",
@@ -169,17 +239,7 @@
       "source_name": "ESPN",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "bae46858c0b9",
-      "topic": "The Instax Wide 400 builds on instant photography’s simplicity and stretches it, literally",
-      "traffic": "",
-      "detected_at": "2026-05-09T16:06:42.137087+00:00",
-      "search_url": "https://techcrunch.com/2026/05/09/the-instax-wide-400-builds-on-instant-photographys-simplicity-and-stretches-it-literally/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-10T01:23:04.118511+00:00"
+  "last_checked": "2026-05-10T04:59:01.921815+00:00"
 }
