@@ -1,6 +1,126 @@
 {
   "items": [
     {
+      "id": "f3e06384ef0c",
+      "topic": "Steve Kerr's New Contract Makes Him The Highest-Paid Coach in NBA History",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://hypebeast.com/2026/5/steve-kerr-becomes-nbas-highest-paid-coach-with-new-deal",
+      "source_name": "Hypebeast",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "baa94fc1f45a",
+      "topic": "Supercell Teams With Spin Master for Major Toy Deal Across ‘Clash of Clans,’ ‘Clash Royale’ and ‘Brawl Stars’ Mobile Game Franchises (EXCLUSIVE)",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://variety.com/2026/gaming/news/clash-of-clans-royale-brawl-stars-toys-supercell-spin-master-1236742081/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "de03ef7ef5c4",
+      "topic": "Russell Tovey and Olivia Colman to Star in Andrew Haigh Short About Alexander McQueen and Isabella Blow (EXCLUSIVE)",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://variety.com/2026/film/global/russell-tovey-olivia-colman-alexander-mcqueen-isabella-blow-1236744392/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "f499eeef1883",
+      "topic": "FKA Twigs to Star as Josephine Baker in Movie Biopic Filming This Fall",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://variety.com/2026/film/markets-festivals/fka-twigs-josephine-baker-biopic-maimouna-doucoure-studiocanal-1236744418/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "9d86e09d0c3b",
+      "topic": "FKA Twigs Confirmed For Josephine Baker Role In Maïmouna Doucouré’s Biopic As Studiocanal Launches Sales – Cannes Market",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://deadline.com/2026/05/fka-twigs-josephine-baker-doucoure-biopic-studiocanal-1236890174/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "9fdd3be96da3",
+      "topic": "🍼 LaOne: LaMelo, partner welcome first child",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48734873/lamelo-ball-birth-first-child-laone",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "716de6484063",
+      "topic": "I Work in Hollywood. Everyone Who Used to Make TV Is Now Secretly Training AI",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://www.wired.com/story/i-work-in-hollywood-everyone-who-used-to-make-tv-now-training-ai/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "b6d0ae4530d8",
+      "topic": "Spurs",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://x.com/search?q=Spurs&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "71abe7f4097c",
+      "topic": "#RHOA",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://x.com/search?q=%23RHOA&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "305a64d42007",
+      "topic": "Anthony Edwards",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://x.com/search?q=Anthony+Edwards&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "fff97a130bc6",
+      "topic": "Sam Levinson",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://x.com/search?q=Sam+Levinson&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "17bdf9c525c8",
+      "topic": "Julius Randle",
+      "traffic": "",
+      "detected_at": "2026-05-11T11:18:32.773149+00:00",
+      "search_url": "https://x.com/search?q=Julius+Randle&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "2d956e8b3fcc",
       "topic": "Wemby",
       "traffic": "",
@@ -119,227 +239,7 @@
       "source_name": "Engadget",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "06325a6b424b",
-      "topic": "Morgan Wallen Walks Out With Caitlin Clark at Indianapolis Stadium Concert",
-      "traffic": "",
-      "detected_at": "2026-05-10T22:58:25.779041+00:00",
-      "search_url": "https://www.billboard.com/music/music-news/morgan-wallen-caitlin-clark-walkout-indianapolis-concert-1236243974/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "ecc0da785514",
-      "topic": "Record-setting Knicks sweep 76ers, return to ECF",
-      "traffic": "",
-      "detected_at": "2026-05-10T22:58:25.779041+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/48735626/knicks-sweep-76ers-return-eastern-conference-finals",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "b36c4cf32489",
-      "topic": "Pritchard on Pacers losing pick: 'Sorry to our fan...",
-      "traffic": "",
-      "detected_at": "2026-05-10T22:58:25.779041+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/48734927/pritchard-pacers-losing-no-5-pick-sorry-our-fans",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "dee39abaee51",
-      "topic": "Tolle honors late mom with gameday attire, song",
-      "traffic": "",
-      "detected_at": "2026-05-10T22:58:25.779041+00:00",
-      "search_url": "https://www.espn.com/mlb/story/_/id/48735327/red-sox-payton-tolle-honors-mom-died-two-years-ago",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "3e083c4a6397",
-      "topic": "iPhone owners may get $95 for features Apple never delivered - thestreet.com",
-      "traffic": "",
-      "detected_at": "2026-05-10T22:58:25.779041+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdmhLWmRhbm5NYWVIZlhLcHF6WkhOR1BmNU1KRFJtaTlWQ05LdC0zbW5BX2s5VFlPVHE5dVR2THlnaVg1QnZSTG0xSkxSUkppWkxja2F6VlBLOHk0a05jTmVLNmF4MExGMkROVHAyWDJwa0U2b0V3TUk2OWFtQ2NIbk1tS1pqU0p4TDdnMEV2SmU5V01sVl9Ec0dNd0c?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "f1beeb059204",
-      "topic": "Arteta",
-      "traffic": "",
-      "detected_at": "2026-05-10T22:58:25.779041+00:00",
-      "search_url": "https://x.com/search?q=Arteta&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "9bea864b085f",
-      "topic": "#COYG",
-      "traffic": "",
-      "detected_at": "2026-05-10T22:58:25.779041+00:00",
-      "search_url": "https://x.com/search?q=%23COYG&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "4abefe23743d",
-      "topic": "Kacey Musgraves Has Career-Best Opening Week With ‘Middle of Nowhere,’ as Michael Jackson Lands Two Albums in the Top 10",
-      "traffic": "",
-      "detected_at": "2026-05-10T22:00:04.228081+00:00",
-      "search_url": "https://variety.com/2026/music/news/kacey-musgraves-billboard-noah-kahan-michael-jackson-albums-1236744199/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "dfe54eec7241",
-      "topic": "Savannah Guthrie Shares Mother’s Day Tribute to Her Missing Mom Nancy: ‘We Will Never Be at Peace Until We Find You’",
-      "traffic": "",
-      "detected_at": "2026-05-10T21:03:39.161051+00:00",
-      "search_url": "https://variety.com/2026/tv/news/savannah-guthrie-mothers-day-tribute-missing-mom-nancy-1236744189/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "0590a9335727",
-      "topic": "Rita Wilson on Her ‘Sound of a Woman’ Album, Growing Up a Music Lover in L.A. and the Advice From Nora Ephron and Bruce Springsteen That Kickstarted Her Second Act",
-      "traffic": "",
-      "detected_at": "2026-05-10T21:03:39.161051+00:00",
-      "search_url": "https://variety.com/2026/music/news/rita-wilson-music-sound-woman-album-interview-1236741922/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "bd2acafd1b79",
-      "topic": "‘Michael’ Becomes 2nd Music Biopic to Top $500 Million in Global Boxoffice Grosses: See the Full List",
-      "traffic": "",
-      "detected_at": "2026-05-10T21:03:39.161051+00:00",
-      "search_url": "https://www.billboard.com/lists/top-grossing-music-biopics-movies/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "b6bb704badef",
-      "topic": "Slipknot’s M. Shawn Crahan Reveals He Needs Heart Surgery",
-      "traffic": "",
-      "detected_at": "2026-05-10T21:03:39.161051+00:00",
-      "search_url": "https://www.billboard.com/music/rock/slipknot-shawn-crahan-clown-heart-surgery-rick-rubin-1236243964/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "371e7c3b572e",
-      "topic": "Martin Short Opens Up About Daughter’s Death in New Interview: ‘It’s Been a Nightmare’",
-      "traffic": "",
-      "detected_at": "2026-05-10T21:03:39.161051+00:00",
-      "search_url": "https://www.rollingstone.com/tv-movies/tv-movie-news/martin-short-daughter-death-cbs-interview-1235560387/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "71b8336ed74c",
-      "topic": "WGA West Staff Union Strike Ends As Members Ratify First Collective Bargaining Agreement",
-      "traffic": "",
-      "detected_at": "2026-05-10T21:03:39.161051+00:00",
-      "search_url": "https://deadline.com/2026/05/wga-west-staff-union-strike-ends-members-ratify-first-deal-1236889747/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "d0343ed7b95f",
-      "topic": "Wiz win draft lottery; Clippers get Pacers pick",
-      "traffic": "",
-      "detected_at": "2026-05-10T21:03:39.161051+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/48733572/wizards-win-nba-draft-lottery-clippers-get-pacers-pick",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "d845165eab67",
-      "topic": "Dodgers get boost with Betts' return set for Mon.",
-      "traffic": "",
-      "detected_at": "2026-05-10T21:03:39.161051+00:00",
-      "search_url": "https://www.espn.com/mlb/story/_/id/48733819/dodgers-mookie-betts-set-return-strained-oblique-monday",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "224cbba90f0c",
-      "topic": "Anthropic says ‘evil’ portrayals of AI were responsible for Claude’s blackmail attempts",
-      "traffic": "",
-      "detected_at": "2026-05-10T21:03:39.161051+00:00",
-      "search_url": "https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "25f2c841ef00",
-      "topic": "Arsenal",
-      "traffic": "",
-      "detected_at": "2026-05-10T20:07:10.733316+00:00",
-      "search_url": "https://x.com/search?q=Arsenal&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 7
-    },
-    {
-      "id": "0cfacc9b9e4c",
-      "topic": "Pacers",
-      "traffic": "",
-      "detected_at": "2026-05-10T20:07:10.733316+00:00",
-      "search_url": "https://x.com/search?q=Pacers&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 7
-    },
-    {
-      "id": "3045e19e0462",
-      "topic": "Adam Silver",
-      "traffic": "",
-      "detected_at": "2026-05-10T20:07:10.733316+00:00",
-      "search_url": "https://x.com/search?q=Adam+Silver&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 7
-    },
-    {
-      "id": "4a1533891ab8",
-      "topic": "Caleb Wilson",
-      "traffic": "",
-      "detected_at": "2026-05-10T20:07:10.733316+00:00",
-      "search_url": "https://x.com/search?q=Caleb+Wilson&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "d4f40040bb42",
-      "topic": "John Wall",
-      "traffic": "",
-      "detected_at": "2026-05-10T20:07:10.733316+00:00",
-      "search_url": "https://x.com/search?q=John+Wall&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-11T07:55:46.331776+00:00"
+  "last_checked": "2026-05-11T11:18:32.773149+00:00"
 }
