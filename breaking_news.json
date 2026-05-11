@@ -1,6 +1,36 @@
 {
   "items": [
     {
+      "id": "21aef861ffa8",
+      "topic": "‘The Lord of the Rings: The Rings of Power’ Season 3 Sets Fall Premiere Date",
+      "traffic": "",
+      "detected_at": "2026-05-11T23:40:39.530554+00:00",
+      "search_url": "https://variety.com/2026/tv/news/the-rings-of-power-season-3-fall-release-date-1236745269/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "e50dcada9475",
+      "topic": "Michael Jackson Now Has a Billboard 200 Top 10 Album In Each Decade Since the ‘70s — Who Else Does?",
+      "traffic": "",
+      "detected_at": "2026-05-11T23:40:39.530554+00:00",
+      "search_url": "https://www.billboard.com/music/chart-beat/michael-jackson-billboard-200-top-10-album-six-decades-1236244011/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "d939d3959d8e",
+      "topic": "Blinking",
+      "traffic": "",
+      "detected_at": "2026-05-11T23:40:39.530554+00:00",
+      "search_url": "https://x.com/search?q=Blinking&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
       "id": "79bf42a3c996",
       "topic": "Inside Fox’s Upfront: ‘Baywatch,’ Lachlan Murdoch, Lots of Tom Brady, and the World Cup Brings James Corden Back to Late Night",
       "traffic": "",
@@ -369,37 +399,7 @@
       "source_name": "Pitchfork",
       "source_type": "feed",
       "haiku_score": 8
-    },
-    {
-      "id": "7d6eb5f79b33",
-      "topic": "Madonna Returns to Billboard Hot 100 With Sabrina Carpenter Collab ‘Bring Your Love’",
-      "traffic": "",
-      "detected_at": "2026-05-11T18:23:36.985213+00:00",
-      "search_url": "https://www.billboard.com/music/chart-beat/madonna-sabrina-carpenter-bring-your-love-hot-100-debut-1236244447/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "7f48a82b1305",
-      "topic": "Maluma Celebrates Mother’s Day by Announcing He & Susana Gómez Are Expecting Baby No. 2",
-      "traffic": "",
-      "detected_at": "2026-05-11T18:23:36.985213+00:00",
-      "search_url": "https://www.billboard.com/music/latin/maluma-girlfriend-pregnant-baby-number-2-mothers-day-post-1236244357/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "d6d4658e2f26",
-      "topic": "Billboard’s Music Industry Events Calendar",
-      "traffic": "",
-      "detected_at": "2026-05-11T18:23:36.985213+00:00",
-      "search_url": "https://www.billboard.com/pro/music-industry-events-calendar-festivals-awards-conferences/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-11T22:40:46.408332+00:00"
+  "last_checked": "2026-05-11T23:40:39.530554+00:00"
 }
