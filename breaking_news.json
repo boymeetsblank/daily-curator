@@ -1,6 +1,56 @@
 {
   "items": [
     {
+      "id": "2d956e8b3fcc",
+      "topic": "Wemby",
+      "traffic": "",
+      "detected_at": "2026-05-11T07:55:46.331776+00:00",
+      "search_url": "https://x.com/search?q=Wemby&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "c47e9967e5e5",
+      "topic": "#euphoria",
+      "traffic": "",
+      "detected_at": "2026-05-11T07:55:46.331776+00:00",
+      "search_url": "https://x.com/search?q=%23euphoria&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "18cbdb0ce8b4",
+      "topic": "SPRING DAY",
+      "traffic": "",
+      "detected_at": "2026-05-11T07:55:46.331776+00:00",
+      "search_url": "https://x.com/search?q=SPRING+DAY&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "ee77fb9432af",
+      "topic": "#KevinHartRoast",
+      "traffic": "",
+      "detected_at": "2026-05-11T07:55:46.331776+00:00",
+      "search_url": "https://x.com/search?q=%23KevinHartRoast&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "0cac9bd145d3",
+      "topic": "Cassie",
+      "traffic": "",
+      "detected_at": "2026-05-11T07:55:46.331776+00:00",
+      "search_url": "https://x.com/search?q=Cassie&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
       "id": "6bcb62cf2690",
       "topic": "Unauthorized Exploitation: Dua Lipa Slaps Samsung With a $15 Million USD Lawsuit",
       "traffic": "",
@@ -289,117 +339,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 6
-    },
-    {
-      "id": "c73f5caa3085",
-      "topic": "The Nike Kobe 4 Protro “Draft Day” Pack Will Be A Blind Box Drop",
-      "traffic": "",
-      "detected_at": "2026-05-10T19:20:44.116962+00:00",
-      "search_url": "https://sneakernews.com/2026/05/10/nike-kobe-4-protro-draft-day/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "84f17e8199f7",
-      "topic": "Seth Rogen Dedicates ‘The Studio’ BAFTA TV Award to Catherine O’Hara: ‘She Meant So Much to All of Us’",
-      "traffic": "",
-      "detected_at": "2026-05-10T19:20:44.116962+00:00",
-      "search_url": "https://variety.com/2026/tv/global/seth-rogen-bafta-tv-award-catherine-ohara-1236744111/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "31fb6b9440be",
-      "topic": "Dua Lipa Sues Samsung for $15 Million Over TV Packaging",
-      "traffic": "",
-      "detected_at": "2026-05-10T19:20:44.116962+00:00",
-      "search_url": "https://pitchfork.com/news/dua-lipa-sues-samsung-for-15-million-over-tv-packaging/",
-      "source_name": "Pitchfork",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "e01f05ba08c3",
-      "topic": "Noah Kahan’s ‘The Great Divide’ Spends Second Week Atop Billboard 200",
-      "traffic": "",
-      "detected_at": "2026-05-10T19:20:44.116962+00:00",
-      "search_url": "https://www.billboard.com/music/chart-beat/noah-kahan-the-great-divide-second-week-atop-billboard-200-1236243954/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "31f50bb64b99",
-      "topic": "Playboi Carti Asserts Opium Dominance With Record-Breaking Sixth Headlining Set at Rolling Loud Orlando: ‘F—k the Budget’",
-      "traffic": "",
-      "detected_at": "2026-05-10T19:20:44.116962+00:00",
-      "search_url": "https://www.billboard.com/music/rb-hip-hop/playboi-carti-rolling-loud-orlando-set-recap-1236243761/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "ea829ac5dd56",
-      "topic": "Britney Spears Writes of ‘Spiritual Journey’ in First Comments Since DUI Case, Rehab",
-      "traffic": "",
-      "detected_at": "2026-05-10T19:20:44.116962+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-news/britney-spears-spiritual-journey-first-comments-dui-rehab-1235560381/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "c73ddcfd6af6",
-      "topic": "Stephen Graham Wins First Ever BAFTA Acting Award For Netflix Series ‘Adolescence’",
-      "traffic": "",
-      "detected_at": "2026-05-10T19:20:44.116962+00:00",
-      "search_url": "https://deadline.com/2026/05/stephen-graham-wins-first-bafta-acting-award-adolescence-1236887413/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "662fbb4b05e6",
-      "topic": "‘Adolescence’ Makes BAFTA History By Scooping Record Number Of TV Awards",
-      "traffic": "",
-      "detected_at": "2026-05-10T19:20:44.116962+00:00",
-      "search_url": "https://deadline.com/2026/05/adolescence-bafta-tv-awards-record-netflix-1236887400/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "a0fc090292e1",
-      "topic": "Seth Rogen Dedicates BAFTA TV Award Win To ‘The Studio’ Co-Star Catherine O’Hara",
-      "traffic": "",
-      "detected_at": "2026-05-10T19:20:44.116962+00:00",
-      "search_url": "https://deadline.com/2026/05/bafta-tv-awards-seth-rogen-dedicates-studio-win-catherine-ohara-1236889673/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "264bb97ba697",
-      "topic": "Dua Lipa is suing Samsung for $15 million",
-      "traffic": "",
-      "detected_at": "2026-05-10T19:20:44.116962+00:00",
-      "search_url": "https://www.engadget.com/2169117/dua-lipa-is-suing-samsung-for-15-million/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "291032f1bf23",
-      "topic": "Para Las Mamás: Latin Artists on Their Favorite Mother’s Day Songs",
-      "traffic": "",
-      "detected_at": "2026-05-10T18:06:36.725924+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-latin/mothers-day-songs-latin-artists-1235560331/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-11T04:15:33.820548+00:00"
+  "last_checked": "2026-05-11T07:55:46.331776+00:00"
 }
