@@ -1,6 +1,66 @@
 {
   "items": [
     {
+      "id": "57b9149365ca",
+      "topic": "‘American Idol’ Crowns Season 24 Winner in Star-Studded Live Finale",
+      "traffic": "",
+      "detected_at": "2026-05-12T04:58:13.458760+00:00",
+      "search_url": "https://www.billboard.com/culture/tv-film/american-idol-season-24-winner-1236245330/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "6a22d72bb0b1",
+      "topic": "American Idol Crowns Missouri Native Winner of Season 24",
+      "traffic": "",
+      "detected_at": "2026-05-12T04:58:13.458760+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/american-idol-season-24-winner-1235561033/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "591e8372016d",
+      "topic": "‘American Idol’ Crowns Season 24 Winner",
+      "traffic": "",
+      "detected_at": "2026-05-12T04:58:13.458760+00:00",
+      "search_url": "https://deadline.com/2026/05/american-idol-crowns-winner-hannah-harper-season-24-1236898872/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "ed1ec9675868",
+      "topic": "#WWERaw",
+      "traffic": "",
+      "detected_at": "2026-05-12T04:58:13.458760+00:00",
+      "search_url": "https://x.com/search?q=%23WWERaw&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "3201eafd030c",
+      "topic": "Donovan Mitchell",
+      "traffic": "",
+      "detected_at": "2026-05-12T04:58:13.458760+00:00",
+      "search_url": "https://x.com/search?q=Donovan+Mitchell&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "e18ef6345a2c",
+      "topic": "#AmericanIdol",
+      "traffic": "",
+      "detected_at": "2026-05-12T04:58:13.458760+00:00",
+      "search_url": "https://x.com/search?q=%23AmericanIdol&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
       "id": "c4eac66106e4",
       "topic": "Jeff Ross on the ‘Real Tension’ Behind the ‘Roast of Kevin Hart,’ His Favorite Cut Joke and Who He Wants to Skewer Next (EXCLUSIVE)",
       "traffic": "",
@@ -339,67 +399,7 @@
       "source_name": "Billboard",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "0ce32108d13d",
-      "topic": "Everything We Know About ‘The White Lotus’ Season 4 So Far",
-      "traffic": "",
-      "detected_at": "2026-05-11T20:14:00.105380+00:00",
-      "search_url": "https://deadline.com/feature/the-white-lotus-season-4-news-updates-1236660696/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "c80148510650",
-      "topic": "The Row's Menswear Breaks Out Its Shirttails & Flat Footwear for Summer 2026",
-      "traffic": "",
-      "detected_at": "2026-05-11T18:23:36.985213+00:00",
-      "search_url": "https://hypebeast.com/2026/5/the-row-menswear-summer-2026-collection-release-info",
-      "source_name": "Hypebeast",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "c59aea0953a8",
-      "topic": "Assouline’s $1,400 Basquiat Book Is a Collector’s Holy Grail",
-      "traffic": "",
-      "detected_at": "2026-05-11T18:23:36.985213+00:00",
-      "search_url": "https://hypebeast.com/2026/5/basquiat-assouline-world-of-jean-michel-book-release",
-      "source_name": "Hypebeast",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "fe6eaf05d498",
-      "topic": "adidas Transforms The Samba Into A Backless Mule",
-      "traffic": "",
-      "detected_at": "2026-05-11T18:23:36.985213+00:00",
-      "search_url": "https://sneakernews.com/2026/05/11/adidas-samba-mule-release-date/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "47695294a163",
-      "topic": "LeBron James Fuels Retirement Speculation With Nike LeBron 23 “Closing Ceremony” PE",
-      "traffic": "",
-      "detected_at": "2026-05-11T18:23:36.985213+00:00",
-      "search_url": "https://sneakernews.com/2026/05/11/nike-lebron-23-closing-ceremony-pe/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "7df4f97ba11c",
-      "topic": "PJ Tucker And His The Better Generation Collab On The Nike GT Future",
-      "traffic": "",
-      "detected_at": "2026-05-11T18:23:36.985213+00:00",
-      "search_url": "https://sneakernews.com/2026/05/11/pj-tucker-the-better-generation-nike-gt-future-ix5121-600/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-12T01:24:04.594143+00:00"
+  "last_checked": "2026-05-12T04:58:13.458760+00:00"
 }
