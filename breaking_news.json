@@ -1,6 +1,96 @@
 {
   "items": [
     {
+      "id": "f882d8b4b5c0",
+      "topic": "All 8 Swatch x Audemars Piguet Royal Pops, Ranked",
+      "traffic": "",
+      "detected_at": "2026-05-13T15:20:44.764911+00:00",
+      "search_url": "https://www.gq.com/story/all-swatch-audemars-piguet-royal-pop-ranked",
+      "source_name": "GQ",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "f950348ee834",
+      "topic": "Every Punisher, Ranked",
+      "traffic": "",
+      "detected_at": "2026-05-13T15:20:44.764911+00:00",
+      "search_url": "https://www.gq.com/story/every-punisher-movie-and-tv-show-ranked",
+      "source_name": "GQ",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "acba71b9a21c",
+      "topic": "Listen to the Strokes’ New Song “Falling Out of Love”",
+      "traffic": "",
+      "detected_at": "2026-05-13T15:20:44.764911+00:00",
+      "search_url": "https://pitchfork.com/news/listen-to-the-strokes-new-song-falling-out-of-love/",
+      "source_name": "Pitchfork",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "99cd8a1a8580",
+      "topic": "The Mountain Goats Launch New Album With “Charlie Sheen Reaches Out to the Feds”",
+      "traffic": "",
+      "detected_at": "2026-05-13T15:20:44.764911+00:00",
+      "search_url": "https://pitchfork.com/news/the-mountain-goats-new-album-days-charlie-sheen-reaches-out-to-the-feds/",
+      "source_name": "Pitchfork",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "f519a312fbd9",
+      "topic": "Jack Douglas, Producer For John Lennon, Aerosmith, Cheap Trick Dies at 80",
+      "traffic": "",
+      "detected_at": "2026-05-13T15:20:44.764911+00:00",
+      "search_url": "https://www.billboard.com/music/rock/jack-douglas-death-producer-lennon-aerosmith-dies-obituary-1236246779/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "52b9678ba472",
+      "topic": "Watch Rod Stewart and Ron Wood Perform ‘Ooh La La’ for King Charles",
+      "traffic": "",
+      "detected_at": "2026-05-13T15:20:44.764911+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/rod-stewart-ron-wood-ooh-la-la-king-charles-1235561857/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "c7cd00378785",
+      "topic": "That awful gold Trump phone will reportedly ship this week",
+      "traffic": "",
+      "detected_at": "2026-05-13T15:20:44.764911+00:00",
+      "search_url": "https://www.engadget.com/2172010/that-awful-gold-trump-phone-will-reportedly-ship-this-week/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "f9154b3fd9bb",
+      "topic": "#PorVida",
+      "traffic": "",
+      "detected_at": "2026-05-13T15:20:44.764911+00:00",
+      "search_url": "https://x.com/search?q=%23PorVida&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "7ff3ef1a0360",
+      "topic": "Yamamoto",
+      "traffic": "",
+      "detected_at": "2026-05-13T15:20:44.764911+00:00",
+      "search_url": "https://x.com/search?q=Yamamoto&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "291103f3db40",
       "topic": "Olive Nwosu’s Sundance-Winning Debut Feature ‘Lady’ Acquired by Cohen for U.S. (EXCLUSIVE)",
       "traffic": "",
@@ -309,57 +399,7 @@
       "source_name": "Engadget",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "6d9aec70d7d9",
-      "topic": "Jensen Huang joins Trump's China trip after the U.S. president called the Nvidia CEO",
-      "traffic": "",
-      "detected_at": "2026-05-13T04:15:34.873379+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "1488a3b12c58",
-      "topic": "UMass Chan scientists develop gene editing technology capable of rewriting entire chapters of the genome - UMass Chan Medical School",
-      "traffic": "",
-      "detected_at": "2026-05-13T04:15:34.873379+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOb01WLVN5c2Npb3RSODExaGJEQ3hSY2dWNFotUzVIV2IwYThsZUZ2Sl8zRlFuTHl4VEVQYW51Q0lWeGNUZ2NJbVBLd0ZNLU1aMFUxZDZGVy1nUV91bjV4WmZZRjhJanNOVmFfbXIzRFhjWjJTc2NMQ3dIVS1pN3VJNFhvNktSRE1KbllkQm1Td2dkVDF4Tzk2UER0dzNabXFWbF82enZUcEEtY1JyZFJrbjdyUXpIbUFEOThpdWVFOVJKSjRRTmR5MkNuSXJfZzFrUVhoeUZvU3RSWmdhb2FJWEQtWHJ1TEU?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "21e51b8fe4d5",
-      "topic": "Brandon Clarke",
-      "traffic": "",
-      "detected_at": "2026-05-13T04:15:34.873379+00:00",
-      "search_url": "https://x.com/search?q=Brandon+Clarke&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "b5effef21668",
-      "topic": "Florentino",
-      "traffic": "",
-      "detected_at": "2026-05-13T04:15:34.873379+00:00",
-      "search_url": "https://x.com/search?q=Florentino&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "ceba3f9722be",
-      "topic": "Moon Girl",
-      "traffic": "",
-      "detected_at": "2026-05-13T04:15:34.873379+00:00",
-      "search_url": "https://x.com/search?q=Moon+Girl&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-13T12:22:28.660024+00:00"
+  "last_checked": "2026-05-13T15:20:44.764911+00:00"
 }
