@@ -1,6 +1,76 @@
 {
   "items": [
     {
+      "id": "3ac33dda23de",
+      "topic": "U2 Is Taking It To The Streets Of Mexico City For New Music Video: Watch",
+      "traffic": "",
+      "detected_at": "2026-05-13T04:15:34.873379+00:00",
+      "search_url": "https://www.billboard.com/music/rock/u2-street-of-dreams-mexico-city-new-music-video-watch-1236241251/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "db7d9935b03e",
+      "topic": "Family sues OpenAI, alleging ChatGPT advice led to accidental overdose",
+      "traffic": "",
+      "detected_at": "2026-05-13T04:15:34.873379+00:00",
+      "search_url": "https://www.engadget.com/2171685/openai-lawsuit-wrongful-death-chatgpt-advice-overdose-sam-nelson/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "6d9aec70d7d9",
+      "topic": "Jensen Huang joins Trump's China trip after the U.S. president called the Nvidia CEO",
+      "traffic": "",
+      "detected_at": "2026-05-13T04:15:34.873379+00:00",
+      "search_url": "https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "1488a3b12c58",
+      "topic": "UMass Chan scientists develop gene editing technology capable of rewriting entire chapters of the genome - UMass Chan Medical School",
+      "traffic": "",
+      "detected_at": "2026-05-13T04:15:34.873379+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOb01WLVN5c2Npb3RSODExaGJEQ3hSY2dWNFotUzVIV2IwYThsZUZ2Sl8zRlFuTHl4VEVQYW51Q0lWeGNUZ2NJbVBLd0ZNLU1aMFUxZDZGVy1nUV91bjV4WmZZRjhJanNOVmFfbXIzRFhjWjJTc2NMQ3dIVS1pN3VJNFhvNktSRE1KbllkQm1Td2dkVDF4Tzk2UER0dzNabXFWbF82enZUcEEtY1JyZFJrbjdyUXpIbUFEOThpdWVFOVJKSjRRTmR5MkNuSXJfZzFrUVhoeUZvU3RSWmdhb2FJWEQtWHJ1TEU?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "21e51b8fe4d5",
+      "topic": "Brandon Clarke",
+      "traffic": "",
+      "detected_at": "2026-05-13T04:15:34.873379+00:00",
+      "search_url": "https://x.com/search?q=Brandon+Clarke&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "b5effef21668",
+      "topic": "Florentino",
+      "traffic": "",
+      "detected_at": "2026-05-13T04:15:34.873379+00:00",
+      "search_url": "https://x.com/search?q=Florentino&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "ceba3f9722be",
+      "topic": "Moon Girl",
+      "traffic": "",
+      "detected_at": "2026-05-13T04:15:34.873379+00:00",
+      "search_url": "https://x.com/search?q=Moon+Girl&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "8da266d221c3",
       "topic": "Ye Loses Copyright Trial Over Uncleared ‘Donda’ Demo Sample",
       "traffic": "",
@@ -329,77 +399,7 @@
       "source_name": "Rolling Stone",
       "source_type": "feed",
       "haiku_score": 8
-    },
-    {
-      "id": "8cbecda250fa",
-      "topic": "Charli XCX Somehow Found Time to Join Headphone Brand Nothing as Its First Global Ambassador",
-      "traffic": "",
-      "detected_at": "2026-05-12T20:53:36.538281+00:00",
-      "search_url": "https://www.rollingstone.com/product-recommendations/tech/charli-xcx-nothing-headphones-brand-ambassador-1235561355/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "69398b93731a",
-      "topic": "‘Ahsoka’ Season 2 Gets Premiere Window On Disney+",
-      "traffic": "",
-      "detected_at": "2026-05-12T20:53:36.538281+00:00",
-      "search_url": "https://deadline.com/2026/05/ahsoka-season-2-premiere-window-disney-plus-1236899905/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "2b1beca41640",
-      "topic": "The Audemars Piguet x Swatch Collaboration Is Here for Real",
-      "traffic": "",
-      "detected_at": "2026-05-12T20:53:36.538281+00:00",
-      "search_url": "https://www.wired.com/story/this-is-the-real-swatch-x-audemars-piguet-royal-pop-collaboration/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "5a662c4f29a1",
-      "topic": "adidas Minted A Crazy Energy+ PE For Chelsea Grey’s Ring Night",
-      "traffic": "",
-      "detected_at": "2026-05-12T19:17:33.176229+00:00",
-      "search_url": "https://sneakernews.com/2026/05/12/chelsea-gray-adidas-crazy-energy-ring-night-pe/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "8c893198ce0c",
-      "topic": "New Balance Just Dropped The Price On One Of Their Lifestyle Models",
-      "traffic": "",
-      "detected_at": "2026-05-12T19:17:33.176229+00:00",
-      "search_url": "https://sneakernews.com/2026/05/12/new-balance-2010-harbor-grey-blue-u201056u/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "52cd88bb32ac",
-      "topic": "17 Best Beard Trimmer Picks, Tested by GQ Editors in 2026",
-      "traffic": "",
-      "detected_at": "2026-05-12T19:17:33.176229+00:00",
-      "search_url": "https://www.gq.com/story/best-stuff-beard-trimmers",
-      "source_name": "GQ",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "87c70a08775b",
-      "topic": "Tom Hiddleston Just Aced the Grown-Man Travel Outfit",
-      "traffic": "",
-      "detected_at": "2026-05-12T19:17:33.176229+00:00",
-      "search_url": "https://www.gq.com/story/tom-hiddleston-airport-fit-2026",
-      "source_name": "GQ",
-      "source_type": "feed",
-      "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-13T00:15:30.067426+00:00"
+  "last_checked": "2026-05-13T04:15:34.873379+00:00"
 }
