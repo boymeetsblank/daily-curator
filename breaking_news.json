@@ -1,6 +1,36 @@
 {
   "items": [
     {
+      "id": "17ff85e16a36",
+      "topic": "What the jury will actually decide in the case of Elon Musk vs. Sam Altman",
+      "traffic": "",
+      "detected_at": "2026-05-14T23:37:35.531079+00:00",
+      "search_url": "https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "0995a1feead0",
+      "topic": "Fairfax",
+      "traffic": "",
+      "detected_at": "2026-05-14T23:37:35.531079+00:00",
+      "search_url": "https://x.com/search?q=Fairfax&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "2d580a8678f5",
+      "topic": "Charles Dance",
+      "traffic": "",
+      "detected_at": "2026-05-14T23:37:35.531079+00:00",
+      "search_url": "https://x.com/search?q=Charles+Dance&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
       "id": "929e40293fbb",
       "topic": "Jack Antonoff Calls Musicians Who Use AI ‘Godless Whores,’ Says Songwriting Has ‘Become an Ancient Ritual’",
       "traffic": "",
@@ -369,37 +399,7 @@
       "source_name": "TechCrunch",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "e433b061d371",
-      "topic": "Netflix wants to use generative AI to make animated shorts",
-      "traffic": "",
-      "detected_at": "2026-05-14T20:15:26.035502+00:00",
-      "search_url": "https://www.engadget.com/2173239/netflix-wants-to-use-generative-ai-to-make-animated-shorts/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "733c387d6b67",
-      "topic": "Benny",
-      "traffic": "",
-      "detected_at": "2026-05-14T20:15:26.035502+00:00",
-      "search_url": "https://x.com/search?q=Benny&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "36062ac15e01",
-      "topic": "This Nike Book 2 Is Inspired By The Only McDonald’s Without Golden Arches In Sedona, AZ",
-      "traffic": "",
-      "detected_at": "2026-05-14T18:27:21.224356+00:00",
-      "search_url": "https://sneakernews.com/2026/05/14/nike-book-2-mcdonalds-all-american-sedona-ir6443-100/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-14T22:40:16.483830+00:00"
+  "last_checked": "2026-05-14T23:37:35.531079+00:00"
 }
