@@ -1,6 +1,126 @@
 {
   "items": [
     {
+      "id": "818e702c36e6",
+      "topic": "Carpet Company Built A Salomon XT-Whisper Based On The Company Van",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://sneakernews.com/2026/05/14/carpet-company-salomon-xt-whisper-void-l45466900/",
+      "source_name": "Sneaker News",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "95ae8c4f7848",
+      "topic": "Red Bull Racing Is Dropping The First Crocs Collaboration By A Formula 1 Team",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://sneakernews.com/2026/05/14/red-bull-racing-crocs-release-date/",
+      "source_name": "Sneaker News",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "f8e0080a7390",
+      "topic": "There’s a New Salem Album Out Today",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://pitchfork.com/news/theres-a-new-salem-album-out/",
+      "source_name": "Pitchfork",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "bfe87d64728d",
+      "topic": "The Beatles’ ‘First Known’ Recording Sparks Legal Battle With UMG: ‘A Highly Valuable Artifact’",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://www.billboard.com/pro/beatles-tape-lawsuit-universal-rare-recording-stolen/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "852a3bebc8d4",
+      "topic": "Movie Buffs, Take Note — The Entire Criterion Collection Is 30% Off",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://www.rollingstone.com/product-recommendations/lifestyle/criterion-collection-blu-ray-sale-1235374136/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "05592adb09aa",
+      "topic": "‘Michael’ & ‘Devil 2’ In Dance-Off For No. 1 At Mid-May Box Office; Michael Jackson Biopic Passes $600M WW – Preview",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://deadline.com/2026/05/box-office-michael-devil-wears-prada-2-obsession-preview-1236905015/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "01fa00cf29f5",
+      "topic": "‘Doctor Who’ Lands U.S. Streaming Home At AMC+",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://deadline.com/2026/05/doctor-who-streaming-us-amc-plus-1236904974/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "baafa407a6f8",
+      "topic": "What happens when AI starts building itself?",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "3a7e43483526",
+      "topic": "OpenAI is reportedly preparing legal action against Apple; it wouldn’t be the first partner to feel burned",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://techcrunch.com/2026/05/14/openai-is-reportedly-preparing-legal-action-against-apple-it-wouldnt-be-the-first-partner-to-feel-burned/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "5b51a4e60ba3",
+      "topic": "YouTube viewers watch 2 billion hours of Shorts on TVs each month",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://techcrunch.com/2026/05/14/youtube-viewers-watch-2-billion-hours-of-shorts-on-tvs-each-month/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "e433b061d371",
+      "topic": "Netflix wants to use generative AI to make animated shorts",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://www.engadget.com/2173239/netflix-wants-to-use-generative-ai-to-make-animated-shorts/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "733c387d6b67",
+      "topic": "Benny",
+      "traffic": "",
+      "detected_at": "2026-05-14T20:15:26.035502+00:00",
+      "search_url": "https://x.com/search?q=Benny&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "36062ac15e01",
       "topic": "This Nike Book 2 Is Inspired By The Only McDonald’s Without Golden Arches In Sedona, AZ",
       "traffic": "",
@@ -279,127 +399,7 @@
       "source_name": "Rolling Stone",
       "source_type": "feed",
       "haiku_score": 8
-    },
-    {
-      "id": "5bcde22c192e",
-      "topic": "Clarence Carter, Singer-Producer Who Scored Hits With ‘Patches’ and ‘Strokin’,’ Dead at 90",
-      "traffic": "",
-      "detected_at": "2026-05-14T16:52:01.828954+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-news/clarence-carter-strokin-singer-1235266836/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "9ce6496060c5",
-      "topic": "Clarence Carter Dies: ‘Slip Away’, ‘Patches’ Singer Was 90; Raunchy Song ‘Strokin” Found Second Life In Eddie Murphy’s ‘The Nutty Professor’",
-      "traffic": "",
-      "detected_at": "2026-05-14T16:52:01.828954+00:00",
-      "search_url": "https://deadline.com/2026/05/clarence-carter-dead-1236904702/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "53db5a878a44",
-      "topic": "King Princess Signs With Anonymous Content",
-      "traffic": "",
-      "detected_at": "2026-05-14T16:52:01.828954+00:00",
-      "search_url": "https://deadline.com/2026/05/king-princess-signs-anonymous-content-1236904625/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "cf26ac3fbd7d",
-      "topic": "Beyoncé, Taylor Swift, and Weezer Records Added to National Recording Registry",
-      "traffic": "",
-      "detected_at": "2026-05-14T14:44:35.500229+00:00",
-      "search_url": "https://pitchfork.com/news/beyonce-taylor-swift-and-weezer-records-added-to-national-recording-registry/",
-      "source_name": "Pitchfork",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "3666af663c48",
-      "topic": "Ahead of His Rock Hall Induction, Billy Idol to Receive Lifetime Achievement Award at 2026 American Music Awards",
-      "traffic": "",
-      "detected_at": "2026-05-14T14:44:35.500229+00:00",
-      "search_url": "https://www.billboard.com/music/awards/billy-idol-2026-american-music-awards-lifetime-achievement-1236247973/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "135bb7c5d0c1",
-      "topic": "Beyonce, Taylor Swift, Weezer Recordings Enter Library of Congress’ National Registry",
-      "traffic": "",
-      "detected_at": "2026-05-14T14:44:35.500229+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-news/beyonce-taylor-swift-weezer-national-recording-registry-1235562555/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "78bafb675374",
-      "topic": "Natasha Lyonne On Her Upcoming Film ‘Uncanny Valley’ & The State Of AI: “If We Do This Correctly, We’re Going To Get To Keep Our Movies”",
-      "traffic": "",
-      "detected_at": "2026-05-14T14:44:35.500229+00:00",
-      "search_url": "https://deadline.com/2026/05/natasha-lyonne-interview-asteria-ai-studio-1236881859/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "550deff534db",
-      "topic": "Billy Idol Set For American Music Awards’ Lifetime Achievement Honor",
-      "traffic": "",
-      "detected_at": "2026-05-14T14:44:35.500229+00:00",
-      "search_url": "https://deadline.com/2026/05/billy-idol-american-music-awards-1236904491/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "4ad727a9cd71",
-      "topic": "Max Strus",
-      "traffic": "",
-      "detected_at": "2026-05-14T14:44:35.500229+00:00",
-      "search_url": "https://x.com/search?q=Max+Strus&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "701bb3c9a3d7",
-      "topic": "How Marcello Hernández Became the Boy Prince of Comedy",
-      "traffic": "",
-      "detected_at": "2026-05-14T12:14:04.140858+00:00",
-      "search_url": "https://www.gq.com/story/marcello-hernandez-gq-hype",
-      "source_name": "GQ",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "3bb1bec006b3",
-      "topic": "The Kevin Hart Roast Was Proof that Celebrity Roasts are Cooked",
-      "traffic": "",
-      "detected_at": "2026-05-14T12:14:04.140858+00:00",
-      "search_url": "https://www.gq.com/story/pulling-weeds-celebrity-roasts-are-cooked",
-      "source_name": "GQ",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "787b7ade5d8f",
-      "topic": "Madonna, Shakira, and BTS Set for First-Ever World Cup Final Halftime Show",
-      "traffic": "",
-      "detected_at": "2026-05-14T12:14:04.140858+00:00",
-      "search_url": "https://pitchfork.com/news/madonna-shakira-and-bts-set-for-first-ever-world-cup-final-halftime-show/",
-      "source_name": "Pitchfork",
-      "source_type": "feed",
-      "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-14T18:27:21.224356+00:00"
+  "last_checked": "2026-05-14T20:15:26.035502+00:00"
 }
