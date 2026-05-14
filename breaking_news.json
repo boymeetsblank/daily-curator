@@ -1,6 +1,66 @@
 {
   "items": [
     {
+      "id": "cf26ac3fbd7d",
+      "topic": "Beyoncé, Taylor Swift, and Weezer Records Added to National Recording Registry",
+      "traffic": "",
+      "detected_at": "2026-05-14T14:44:35.500229+00:00",
+      "search_url": "https://pitchfork.com/news/beyonce-taylor-swift-and-weezer-records-added-to-national-recording-registry/",
+      "source_name": "Pitchfork",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "3666af663c48",
+      "topic": "Ahead of His Rock Hall Induction, Billy Idol to Receive Lifetime Achievement Award at 2026 American Music Awards",
+      "traffic": "",
+      "detected_at": "2026-05-14T14:44:35.500229+00:00",
+      "search_url": "https://www.billboard.com/music/awards/billy-idol-2026-american-music-awards-lifetime-achievement-1236247973/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "135bb7c5d0c1",
+      "topic": "Beyonce, Taylor Swift, Weezer Recordings Enter Library of Congress’ National Registry",
+      "traffic": "",
+      "detected_at": "2026-05-14T14:44:35.500229+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/beyonce-taylor-swift-weezer-national-recording-registry-1235562555/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "78bafb675374",
+      "topic": "Natasha Lyonne On Her Upcoming Film ‘Uncanny Valley’ & The State Of AI: “If We Do This Correctly, We’re Going To Get To Keep Our Movies”",
+      "traffic": "",
+      "detected_at": "2026-05-14T14:44:35.500229+00:00",
+      "search_url": "https://deadline.com/2026/05/natasha-lyonne-interview-asteria-ai-studio-1236881859/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "550deff534db",
+      "topic": "Billy Idol Set For American Music Awards’ Lifetime Achievement Honor",
+      "traffic": "",
+      "detected_at": "2026-05-14T14:44:35.500229+00:00",
+      "search_url": "https://deadline.com/2026/05/billy-idol-american-music-awards-1236904491/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "4ad727a9cd71",
+      "topic": "Max Strus",
+      "traffic": "",
+      "detected_at": "2026-05-14T14:44:35.500229+00:00",
+      "search_url": "https://x.com/search?q=Max+Strus&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "701bb3c9a3d7",
       "topic": "How Marcello Hernández Became the Boy Prince of Comedy",
       "traffic": "",
@@ -269,77 +329,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 7
-    },
-    {
-      "id": "02d1d1216117",
-      "topic": "‘Margo’s Got Money Troubles’ Renewed for Season 2 at Apple TV",
-      "traffic": "",
-      "detected_at": "2026-05-14T01:30:00.994971+00:00",
-      "search_url": "https://variety.com/2026/tv/news/margos-got-money-troubles-renewed-season-2-apple-tv-1236747808/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "9a7784b246c4",
-      "topic": "‘Survivor 50’ Opens Voting for Fan Favorite Award With $100,000 Prize From Sia",
-      "traffic": "",
-      "detected_at": "2026-05-14T01:30:00.994971+00:00",
-      "search_url": "https://variety.com/2026/tv/news/survivor-50-sia-award-fan-vote-favorite-1236748022/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "83b8c0612575",
-      "topic": "Tony Dokoupil Suddenly Stops CBS Evening Newscast as Cameraman Suffers Medical Emergency",
-      "traffic": "",
-      "detected_at": "2026-05-14T01:30:00.994971+00:00",
-      "search_url": "https://variety.com/2026/tv/news/tony-dokoupil-cbs-news-taiwan-medical-emergency-1236748154/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "77585a65c52b",
-      "topic": "Druski Shows Up to Cardi B’s House With Full Mariachi to Invite Her to 2026 BET Awards: ‘Thank You, Papacitos’",
-      "traffic": "",
-      "detected_at": "2026-05-14T01:30:00.994971+00:00",
-      "search_url": "https://www.billboard.com/music/awards/druski-cardi-b-john-legend-jamie-foxx-2026-bet-awards-video-1236247885/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "347b336e9d59",
-      "topic": "‘Margo’s Got Money Troubles’ Renewed For Second Season By Apple TV",
-      "traffic": "",
-      "detected_at": "2026-05-14T01:30:00.994971+00:00",
-      "search_url": "https://deadline.com/2026/05/margos-got-money-troubles-renewed-season-2-1236901975/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "9b8a51e00155",
-      "topic": "CBS News Says Cameraman “Okay And Recovering” After Medical Emergency Interrupts Live ‘Evening News’ Broadcast From Taiwan",
-      "traffic": "",
-      "detected_at": "2026-05-14T01:30:00.994971+00:00",
-      "search_url": "https://deadline.com/2026/05/cbs-evening-news-cameraman-medical-emergency-1236902142/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "200251227293",
-      "topic": "YouTube Upfront: Here’s What Happened At Lincoln Center With Trevor Noah, Zara Larsson, Alex Cooper, Kareem Rahma & Chappell Roan",
-      "traffic": "",
-      "detected_at": "2026-05-14T01:30:00.994971+00:00",
-      "search_url": "https://deadline.com/2026/05/youtube-upfront-highlights-recap-alex-cooper-trevor-noah-26-1236902145/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-14T12:14:04.140858+00:00"
+  "last_checked": "2026-05-14T14:44:35.500229+00:00"
 }
