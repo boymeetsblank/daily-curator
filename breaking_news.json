@@ -1,6 +1,76 @@
 {
   "items": [
     {
+      "id": "7dedf3370d50",
+      "topic": "Next James Bond: Has the New 007 Been Chosen?",
+      "traffic": "",
+      "detected_at": "2026-05-15T21:18:22.303500+00:00",
+      "search_url": "https://www.gq.com/story/has-the-next-james-bond-been-chosen",
+      "source_name": "GQ",
+      "source_type": "feed",
+      "haiku_score": 9
+    },
+    {
+      "id": "14456f75ebd6",
+      "topic": "Jack Johnson on How a Surfing Injury, Warning From Chris Rock and Deadly Shark Attack Shaped ‘SURFILMUSIC’ Documentary (EXCLUSIVE)",
+      "traffic": "",
+      "detected_at": "2026-05-15T21:18:22.303500+00:00",
+      "search_url": "https://variety.com/2026/music/news/jack-johnson-surfilmusic-surfing-injury-documentary-1236750260/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "0bdab04cddfc",
+      "topic": "Harrison Ford on Crafting His Whisky Collab: ‘There Were a Lot of Things That I Had to Learn’",
+      "traffic": "",
+      "detected_at": "2026-05-15T21:18:22.303500+00:00",
+      "search_url": "https://www.rollingstone.com/product-recommendations/lifestyle/harrison-ford-interview-glenmorangie-scotch-whisky-1235563199/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "5d8163a8672c",
+      "topic": "Colin Jost Claims He Predicted Pete Hegseth’s ‘Pulp Fiction’ Biblical Quote In Rejected ‘SNL’ Joke: “That Would Be Too Ridiculous”",
+      "traffic": "",
+      "detected_at": "2026-05-15T21:18:22.303500+00:00",
+      "search_url": "https://deadline.com/2026/05/colin-jost-predicted-pete-hegseth-pulp-fiction-quote-1236906761/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "2578890c3145",
+      "topic": "‘Late Show With Stephen Colbert’ Sets Final Week Guests: Jon Stewart, Steven Spielberg, Bruce Springsteen & More",
+      "traffic": "",
+      "detected_at": "2026-05-15T21:18:22.303500+00:00",
+      "search_url": "https://deadline.com/2026/05/late-show-with-stephen-colbert-final-week-guests-1236906782/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "98cbe36f77ef",
+      "topic": "Rousey, Carano on weight for 1st MVP MMA card",
+      "traffic": "",
+      "detected_at": "2026-05-15T21:18:22.303500+00:00",
+      "search_url": "https://www.espn.com/mma/story/_/id/48779264/ronda-rousey-gina-carano-weight-mvp-inaugural-mma-card",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "44d675f7b7b6",
+      "topic": "Academy Awards",
+      "traffic": "",
+      "detected_at": "2026-05-15T21:18:22.303500+00:00",
+      "search_url": "https://x.com/search?q=Academy+Awards&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "0f1069de5624",
       "topic": "Here’s the Full List of Performers Announced So Far for the 2026 American Music Awards",
       "traffic": "",
@@ -329,77 +399,7 @@
       "source_name": "WIRED",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "ba162ec2cb94",
-      "topic": "OpenAI launches ChatGPT for personal finance, will let you connect bank accounts",
-      "traffic": "",
-      "detected_at": "2026-05-15T17:07:28.787459+00:00",
-      "search_url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "8f4a5e533aef",
-      "topic": "ChatGPT will offer personalized financial advice (if you connect your bank account)",
-      "traffic": "",
-      "detected_at": "2026-05-15T17:07:28.787459+00:00",
-      "search_url": "https://www.engadget.com/2173768/chatgpt-will-offer-personalized-financial-advice-if-you-connect-your-bank-account/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "e2d86bf35055",
-      "topic": "#OnlyFriendsDreamOnFinalEP",
-      "traffic": "",
-      "detected_at": "2026-05-15T17:07:28.787459+00:00",
-      "search_url": "https://x.com/search?q=%23OnlyFriendsDreamOnFinalEP&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "43698009dc16",
-      "topic": "15 New Albums You Should Listen to Now: Kevin Morby, Drake, Smerz, and More",
-      "traffic": "",
-      "detected_at": "2026-05-15T15:23:11.136286+00:00",
-      "search_url": "https://pitchfork.com/news/15-new-albums-you-should-listen-to-now-kevin-morby-drake-smerz-and-more/",
-      "source_name": "Pitchfork",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "ccee19353780",
-      "topic": "BTS Members React to Drake Name-Dropping Them on New ‘Iceman’ Track",
-      "traffic": "",
-      "detected_at": "2026-05-15T15:23:11.136286+00:00",
-      "search_url": "https://www.billboard.com/music/music-news/drake-bts-mention-iceman-j-hope-v-react-1236248990/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "94d3103c6b88",
-      "topic": "Before Drake’s Ice Block Challenge: 10 Wild Album Release Stunts, From U2 to Beyonce to Kanye West",
-      "traffic": "",
-      "detected_at": "2026-05-15T15:23:11.136286+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-lists/best-album-release-stunts-u2-beyonce-radiohead-1235563330/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "90df27b29f7e",
-      "topic": "‘Good Night and Good Luck, Motherf–kers’: Letterman and Colbert Toss CBS Property Off the Roof",
-      "traffic": "",
-      "detected_at": "2026-05-15T15:23:11.136286+00:00",
-      "search_url": "https://www.rollingstone.com/tv-movies/tv-movie-news/colbert-letterman-cbs-property-off-roof-1235563362/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-15T20:09:47.916443+00:00"
+  "last_checked": "2026-05-15T21:18:22.303500+00:00"
 }
