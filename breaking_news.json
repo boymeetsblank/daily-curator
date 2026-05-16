@@ -1,6 +1,96 @@
 {
   "items": [
     {
+      "id": "9da87308516f",
+      "topic": "John Travolta Is Wearing Berets at the Cannes Film Festival",
+      "traffic": "",
+      "detected_at": "2026-05-16T13:51:41.019475+00:00",
+      "search_url": "https://www.gq.com/story/john-travolta-beret-cannes-film-festival-2026",
+      "source_name": "GQ",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "f30203434347",
+      "topic": "It’s Time for German Dogma as Tom Tykwer, Nora Fingscheidt, Kurdwin Ayub, İlker Çatak and Helene Hegemann Pledge to Create Five Films According to Its Rules",
+      "traffic": "",
+      "detected_at": "2026-05-16T13:51:41.019475+00:00",
+      "search_url": "https://variety.com/2026/film/global/german-dogma-tom-tykwer-nora-fingscheidt-five-films-cannes-1236750819/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "58d61c6f7321",
+      "topic": "‘Club Kid’ Review: Jordan Firstman Cleans Up His Act in a Sweet, Surprisingly Old-Fashioned Heartwarmer",
+      "traffic": "",
+      "detected_at": "2026-05-16T13:51:41.019475+00:00",
+      "search_url": "https://variety.com/2026/film/reviews/club-kid-review-1236750685/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "201b0b0449e9",
+      "topic": "Sam Fender & Olivia Dean Set New U.K. Chart Record as ‘Rein Me In’ Earns 11th Week at No. 1",
+      "traffic": "",
+      "detected_at": "2026-05-16T13:51:41.019475+00:00",
+      "search_url": "https://www.billboard.com/music/chart-beat/sam-fender-olivia-dean-uk-charts-eleven-weeks-1236249775/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "d37ec0577a0a",
+      "topic": "Stephen Colbert’s Final Week ‘Late Show’ Guests: Springsteen, Jon Stewart, David Byrne",
+      "traffic": "",
+      "detected_at": "2026-05-16T13:51:41.019475+00:00",
+      "search_url": "https://www.rollingstone.com/tv-movies/tv-movie-news/stephen-colbert-final-late-show-guests-revealed-springsteen-1235563889/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "c6e6bb59b6b9",
+      "topic": "How the ‘Effed-Up Fairy Tale’ of ‘Is God Is’ Went From Stage to Screen",
+      "traffic": "",
+      "detected_at": "2026-05-16T13:51:41.019475+00:00",
+      "search_url": "https://www.rollingstone.com/tv-movies/tv-movie-features/is-god-is-play-to-movie-aleshea-harris-director-interview-1235563650/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "a867bb5dce79",
+      "topic": "Breaking Baz @ Cannes: The New James Bond Must “Ooze Sex Appeal,” Says 007 Casting Director; Jordan Firstman’s ‘Club Kid’ Party Rocks The Croisette",
+      "traffic": "",
+      "detected_at": "2026-05-16T13:51:41.019475+00:00",
+      "search_url": "https://deadline.com/2026/05/the-new-james-bond-must-ooze-sex-appeal-says-casting-director-jordan-firstmans-club-kidparty-rocks-the-croisette-1236907089/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "192c00fc42f3",
+      "topic": "Theo",
+      "traffic": "",
+      "detected_at": "2026-05-16T13:51:41.019475+00:00",
+      "search_url": "https://x.com/search?q=Theo&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 9
+    },
+    {
+      "id": "85e6445b5da2",
+      "topic": "Tina Peters",
+      "traffic": "",
+      "detected_at": "2026-05-16T13:51:41.019475+00:00",
+      "search_url": "https://x.com/search?q=Tina+Peters&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
       "id": "d2ab882cf942",
       "topic": "ESPN’s Mina Kimes Wins ‘Celebrity Jeopardy! All-Stars’ Final, Landing $1 Million for Her Chosen Charity",
       "traffic": "",
@@ -259,17 +349,7 @@
       "source_name": "Deadline",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "4318619e8dd0",
-      "topic": "‘Sonic the Hedgehog 4’ Wraps Production, Director Teases Metal Sonic & “The Best Sonic Movie Yet”",
-      "traffic": "",
-      "detected_at": "2026-05-16T00:09:17.403236+00:00",
-      "search_url": "https://deadline.com/2026/05/sonic-the-hedgehog-4-wraps-production-1236906984/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-16T12:00:22.153875+00:00"
+  "last_checked": "2026-05-16T13:51:41.019475+00:00"
 }
