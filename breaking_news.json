@@ -1,6 +1,36 @@
 {
   "items": [
     {
+      "id": "1d1967b1baef",
+      "topic": "Donald Trump as James Bond? White House Posts Image of President as Gun-Wielding 007",
+      "traffic": "",
+      "detected_at": "2026-05-17T11:48:56.708077+00:00",
+      "search_url": "https://variety.com/2026/film/news/donald-trump-james-bond-white-house-image-1236751477/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "c2c8b8cd0fbc",
+      "topic": "Adam Driver On Lena Dunham Memoir Claims: “I’m Saving It All For My Book” – Cannes",
+      "traffic": "",
+      "detected_at": "2026-05-17T11:48:56.708077+00:00",
+      "search_url": "https://deadline.com/2026/05/adam-driver-lena-dunham-claims-cannes-1236907875/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "09c1759bab2b",
+      "topic": "Alex Saab",
+      "traffic": "",
+      "detected_at": "2026-05-17T11:48:56.708077+00:00",
+      "search_url": "https://x.com/search?q=Alex+Saab&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "a0ed3443cb02",
       "topic": "After ‘Son of Saul,’ László Nemes Returns to WWII With ‘Moulin’ and a Warning About Tyranny: ‘You Have to Choose Your Side’",
       "traffic": "",
@@ -319,37 +349,7 @@
       "source_name": "ESPN",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "98aa977cb721",
-      "topic": "Bulgaria Triumphs At Eurovision Song Contest For First Time In Nation’s History",
-      "traffic": "",
-      "detected_at": "2026-05-16T23:25:47.307604+00:00",
-      "search_url": "https://deadline.com/2026/05/bulgaria-wins-eurovision-song-contest-2026-1236907425/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "1bf3fc9fc3d2",
-      "topic": "Rory rallies, gets 'a little bit closer' at PGA",
-      "traffic": "",
-      "detected_at": "2026-05-16T23:25:47.307604+00:00",
-      "search_url": "https://www.espn.com/golf/story/_/id/48789742/rory-mcilroy-climbs-back-contention-pga-championship",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "bf3444a3c770",
-      "topic": "He Spent 23 Years in Prison for a Crime He Didn’t Commit—Tech Advancements Set Him Free - inc.com",
-      "traffic": "",
-      "detected_at": "2026-05-16T23:25:47.307604+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNd01EaWowTDNKNnhmRkJQdmlTdjdDbVlIOWhXQXlHSGV0TGhIQXkwSTdydW1PNjZORTh6am1mYjlDRDdzd1ljem5rXzZodWVsb1pud2pXeDZ4NnFTZ1RLMWNTZHpxY1FaaWNwa2R5eGdGbElZRFppQjBaRG9sTFNtM3B6WS15M2RZbFlyQmlueENQNUdhaGVXajgtQ1JTWS1Pd3lvZ0JWWE5aVEVsb0YxdFdaRlFWUm1VUXFNcUVzOTRjRU9BZXc4?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-17T10:48:38.377623+00:00"
+  "last_checked": "2026-05-17T11:48:56.708077+00:00"
 }
