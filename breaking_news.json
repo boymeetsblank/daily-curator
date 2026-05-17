@@ -1,6 +1,126 @@
 {
   "items": [
     {
+      "id": "e8fa2a83f44f",
+      "topic": "Chad Smith Delivers Will Ferrell’s ‘SNL’ Monologue: ‘You’re Not the Host, I Am’",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://variety.com/2026/tv/news/will-ferrell-snl-monologue-chad-smith-1236751292/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "095e022deb4f",
+      "topic": "Molly Shannon Surprises With ‘SNL’ Cameo As Handsy High School Theater Teacher In Resurrected Cut-For-Time Sketch",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://deadline.com/2026/05/molly-shannon-snl-sketch-cameo-surprise-will-ferrell-1236907702/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "11f8f381d674",
+      "topic": "Red Hot Chili Peppers Drummer Chad Smith Crashes Will Ferrell’s Opening Monologue, Pretending To Be The Night’s ‘SNL’ Host",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://deadline.com/2026/05/red-hot-chili-peppers-chad-smith-will-ferrell-snl-monologue-1236907675/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "7c2c94d9a141",
+      "topic": "'It's going to be such a good Sunday': Stage set f...",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://www.espn.com/golf/story/_/id/48790313/stage-set-epic-final-round-pga-championship-aronimink",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "48cb7f06ca75",
+      "topic": "Rousey submits Carano by armbar in 17 seconds",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://www.espn.com/mma/story/_/id/48793049/ronda-rousey-submits-gina-carano-armbar-17-seconds",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 9
+    },
+    {
+      "id": "cc7c05b5bf74",
+      "topic": "McGregor books July 11 return against Holloway",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://www.espn.com/mma/story/_/id/48792350/conor-mcgregor-books-july-11-return-max-holloway",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "221634eb6004",
+      "topic": "Goalie change fuels rally as Sabres force Game 7",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://www.espn.com/nhl/story/_/id/48792712/goaltender-change-sparks-buffalo-sabres-rally-game-6",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "a8eb631131b3",
+      "topic": "#RouseyCarano",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://x.com/search?q=%23RouseyCarano&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 9
+    },
+    {
+      "id": "01d03e2d7233",
+      "topic": "Nate Diaz",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://x.com/search?q=Nate+Diaz&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "7440aea02e8a",
+      "topic": "Jake Paul",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://x.com/search?q=Jake+Paul&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "8bd1bfbb72cc",
+      "topic": "Conor",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://x.com/search?q=Conor&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "df4e1a763b00",
+      "topic": "Cassidy",
+      "traffic": "",
+      "detected_at": "2026-05-17T05:05:28.430356+00:00",
+      "search_url": "https://x.com/search?q=Cassidy&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "31de9c84116d",
       "topic": "Kristen Stewart and ‘Full Phil’ Cast Get Lively 5-Minute Cannes Ovation Despite Mixed Response to Quentin Dupieux’s Absurd Comedy",
       "traffic": "",
@@ -279,127 +399,7 @@
       "source_name": "Variety",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "a4f8a83fe8bd",
-      "topic": "James Cameron Wants to Make ‘Avatar 4’ and ‘5’ in ‘Half the Time for Two-Thirds of the Cost,’ but It’ll Take One Year to ‘Figure Out How to Do That’",
-      "traffic": "",
-      "detected_at": "2026-05-16T18:39:29.402374+00:00",
-      "search_url": "https://variety.com/2026/film/news/james-cameron-make-avatar-4-half-the-time-two-thirds-cost-1236751011/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "42853abe27ed",
-      "topic": "How Lykke Li’s Biggest Song Landed on Drake’s ‘Iceman’: ‘It Has a Life of Its Own’",
-      "traffic": "",
-      "detected_at": "2026-05-16T18:39:29.402374+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-news/lykke-li-i-follow-rivers-drake-iceman-interview-1235563826/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "9389ef807b52",
-      "topic": "Analogue 3D's latest update lets you save whenever you want",
-      "traffic": "",
-      "detected_at": "2026-05-16T18:39:29.402374+00:00",
-      "search_url": "https://www.engadget.com/2174519/analogue-3d-latest-update-lets-you-save-whenever-you-want/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "0d4b501f69ad",
-      "topic": "2026 ACM Awards: The Complete Winners List",
-      "traffic": "",
-      "detected_at": "2026-05-16T17:39:07.617199+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-country/2026-acm-awards-winners-list-1235554212/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "f0e98b1117e5",
-      "topic": "Engadget review recap: Razr Fold, Bose Lifestyle Ultra Speaker, Ultrahuman Ring Pro and more",
-      "traffic": "",
-      "detected_at": "2026-05-16T17:39:07.617199+00:00",
-      "search_url": "https://www.engadget.com/2174499/engadget-review-recap-razr-fold-bose-lifestyle-ultra-speaker-ultrahuman-ring-pro/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "a80f4244676d",
-      "topic": "Vin Diesel Defends ‘Popular Cinema’ as ‘Not a Lesser Form of Art’ in Passionate Essay About His History at Cannes",
-      "traffic": "",
-      "detected_at": "2026-05-16T16:38:20.813593+00:00",
-      "search_url": "https://variety.com/2026/film/features/vin-diesel-fast-and-furious-cannes-essay-1236749959/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "9555a329c2b0",
-      "topic": "Hirokazu Kore-eda’s AI Family Drama ‘Sheep in the Box’ Earns 3.5-Minute Standing Ovation at Cannes",
-      "traffic": "",
-      "detected_at": "2026-05-16T16:38:20.813593+00:00",
-      "search_url": "https://variety.com/2026/film/festivals/hirokazu-koreeda-sheep-in-the-box-cannes-ovation-1236741522/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "9cf8724549c2",
-      "topic": "Nathan Lane Wants Jack Black To Star In A ‘Producers’ Broadway Revival: “The Only Guy I Could Think Of”",
-      "traffic": "",
-      "detected_at": "2026-05-16T16:38:20.813593+00:00",
-      "search_url": "https://deadline.com/2026/05/nathan-lane-wants-jack-black-producers-broadway-revival-1236907231/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "e0de14a9116c",
-      "topic": "Nike Trolled Anthony Edwards With New Victor Wembanyama Ad",
-      "traffic": "",
-      "detected_at": "2026-05-16T15:42:47.662021+00:00",
-      "search_url": "https://sneakernews.com/2026/05/16/nike-basketball-trolls-adidas-anthony-edwards-believe-this/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "3c9bf3c017bc",
-      "topic": "Young Dolph Shooter Pleads Guilty, Concluding Rapper’s Murder Case",
-      "traffic": "",
-      "detected_at": "2026-05-16T15:42:47.662021+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-news/young-dolph-shooter-pleads-guilty-rapper-murder-case-ends-1235563914/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "2d8057175bc0",
-      "topic": "‘Sheep In The Box’ Review: Hirokazu Koreeda Turns The Stuff Of Dystopian Nightmares Into A Beautiful Fairytale Study Of Loss – Cannes Film Festival",
-      "traffic": "",
-      "detected_at": "2026-05-16T15:42:47.662021+00:00",
-      "search_url": "https://deadline.com/2026/05/sheep-in-the-box-review-hirokazu-koreeda-cannes-1236907156/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "85331331526c",
-      "topic": "OpenAI co-founder Greg Brockman reportedly takes charge of product strategy",
-      "traffic": "",
-      "detected_at": "2026-05-16T15:42:47.662021+00:00",
-      "search_url": "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-17T01:23:22.467087+00:00"
+  "last_checked": "2026-05-17T05:05:28.430356+00:00"
 }
