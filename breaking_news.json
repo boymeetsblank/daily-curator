@@ -1,6 +1,56 @@
 {
   "items": [
     {
+      "id": "0f8495ad0e52",
+      "topic": "Shania Twain Gives Ella Langley Her Flowers, What Fans Can Expect From Her New Album & More | ACM Awards 2026",
+      "traffic": "",
+      "detected_at": "2026-05-17T23:32:46.085225+00:00",
+      "search_url": "https://www.billboard.com/video/shania-twain-gives-ella-langley-her-flowers/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "03ce0b91ae5d",
+      "topic": "Dasha Reveals “Mad About It” is a True Story About Her Best Friend Getting With Her Ex-Boyfriend | ACM Awards 2026",
+      "traffic": "",
+      "detected_at": "2026-05-17T23:32:46.085225+00:00",
+      "search_url": "https://www.billboard.com/video/dasha-reveals-mad-about-it-is-a-true-story/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "89ecdaa81923",
+      "topic": "Cannes Audience Gives ‘Hope’ A 7-Minute Standing Ovation",
+      "traffic": "",
+      "detected_at": "2026-05-17T23:32:46.085225+00:00",
+      "search_url": "https://deadline.com/2026/05/cannes-hope-movie-standing-ovation-1236913780/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "5477abf313ff",
+      "topic": "‘Hope’ Review: It’s Aliens Vs. South Korean Villagers In Na Hong-Jin’s Wild Non-Stop Action-Driven Genre Movie – Cannes Film Festival",
+      "traffic": "",
+      "detected_at": "2026-05-17T23:32:46.085225+00:00",
+      "search_url": "https://deadline.com/2026/05/hope-review-aliens-vs-south-koreans-cannes-film-festival-1236913546/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "08aa34fe5057",
+      "topic": "Hamlin outduels Briscoe for 2nd All-Star Race win",
+      "traffic": "",
+      "detected_at": "2026-05-17T23:32:46.085225+00:00",
+      "search_url": "https://www.espn.com/racing/nascar/story/_/id/48799746/denny-hamlin-outduels-chase-briscoe-win-nascar-all-star-race",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
       "id": "bffcc369b176",
       "topic": "The New Balance 9060 Scores A Trendy “Dark Olivine” Colorway",
       "traffic": "",
@@ -349,57 +399,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 7
-    },
-    {
-      "id": "f3d1f4e4c942",
-      "topic": "Gary Neville",
-      "traffic": "",
-      "detected_at": "2026-05-17T17:29:13.634211+00:00",
-      "search_url": "https://x.com/search?q=Gary+Neville&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 7
-    },
-    {
-      "id": "59836ef84aca",
-      "topic": "Nigel Sylvester Jordan 4 “Brick After Brick,” Jordan 12 “Bloodline” And This Week’s Best Releases [May 17 – May 23]",
-      "traffic": "",
-      "detected_at": "2026-05-17T16:16:50.233820+00:00",
-      "search_url": "https://sneakernews.com/2026/05/17/sneaker-releases-may-17-may-23-2026/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "3cee1929606c",
-      "topic": "Will Ferrell’s ‘SNL’ Monologue Hijacked by Lookalike Red Hot Chili Peppers Drummer Chad Smith",
-      "traffic": "",
-      "detected_at": "2026-05-17T16:16:50.233820+00:00",
-      "search_url": "https://www.rollingstone.com/tv-movies/tv-movie-news/will-ferrell-snl-monologue-drummer-chad-smith-1235564071/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "20bb12b4d78e",
-      "topic": "No Message Could Have Been Any Clearer: ‘Michael’ No. 1 Around The Globe With $704M WW Cume; ‘Devil 2’ Va-Va-Vooms Past Half Billion – Global Box Office",
-      "traffic": "",
-      "detected_at": "2026-05-17T16:16:50.233820+00:00",
-      "search_url": "https://deadline.com/2026/05/box-office-michael-devil-wears-prada-2-1236913316/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "c123a093b611",
-      "topic": "Tech giants sued over ‘stealing’ voices of well-known journalists, voice actors to train AI - Capitol City Now",
-      "traffic": "",
-      "detected_at": "2026-05-17T16:16:50.233820+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUzFuak1QT2NSWFRJdmg0SG56ZVM5dzRPNEVyTXZNNkQzdXcxWHJzaFJUOEpvczh1YVJCeXNsT1VsdjFseUV4ZGF0TEJ6R3g5RkN6dlQ1Wm1uQzNiUm1SbGREa2gtNzc3dmlSVmZJVFF4LTNwb3pLRkpMOGVCYU9oME9PYmFhMy00dFcteDhQNnZxSWpiUmsweC1YR0J2ZFQyRE1kdlBjajVFVmt5U3VRZmY2R0NHOHY4b2JmaWR1YlNKMnB5MHBr?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-17T22:29:51.015953+00:00"
+  "last_checked": "2026-05-17T23:32:46.085225+00:00"
 }
