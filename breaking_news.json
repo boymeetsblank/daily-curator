@@ -1,6 +1,106 @@
 {
   "items": [
     {
+      "id": "b74b7c07336d",
+      "topic": "Unauthorized Larry Gagosian Documentary Goes Inside His Art Empire",
+      "traffic": "",
+      "detected_at": "2026-05-18T22:31:13.433384+00:00",
+      "search_url": "https://hypebeast.com/2026/5/larry-gagosian-documentary-barry-avrich-shadow-man",
+      "source_name": "Hypebeast",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "3c5e5e769bc5",
+      "topic": "‘Iceman’ is Drake’s Best Album in 10 Years, If You Don’t Listen Too Closely",
+      "traffic": "",
+      "detected_at": "2026-05-18T22:31:13.433384+00:00",
+      "search_url": "https://www.gq.com/story/drake-iceman-review",
+      "source_name": "GQ",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "d37cfe510d98",
+      "topic": "Filmmakers Are Still the Best-Dressed Attendees at Cannes",
+      "traffic": "",
+      "detected_at": "2026-05-18T22:31:13.433384+00:00",
+      "search_url": "https://www.gq.com/gallery/filmmakers-are-still-the-best-dressed-attendees-at-cannes",
+      "source_name": "GQ",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "83e284d74a6a",
+      "topic": "Ice Cube & Mike Epps Say ‘Last Friday’ Will Be About Gentrification",
+      "traffic": "",
+      "detected_at": "2026-05-18T22:31:13.433384+00:00",
+      "search_url": "https://www.billboard.com/culture/tv-film/ice-cube-mike-epps-last-friday-gentrification-1236251266/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "373c80b4e473",
+      "topic": "Watch Lola Young Lose Herself in Deeply Emotional Performance for a Small Room of People: ‘Art Is Really All We Have’",
+      "traffic": "",
+      "detected_at": "2026-05-18T22:31:13.433384+00:00",
+      "search_url": "https://www.billboard.com/music/pop/lola-young-tears-apple-music-room-series-can-we-ignore-it-1236251296/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "508a3d1e48b3",
+      "topic": "‘Yokoso Scooby-Doo!’ Anime Series Set At Tubi; Frank Welker & Matthew Lillard To Reprise Original Roles",
+      "traffic": "",
+      "detected_at": "2026-05-18T22:31:13.433384+00:00",
+      "search_url": "https://deadline.com/2026/05/yokoso-scooby-doo-anime-series-tubi-matthew-lillard-1236915079/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "30df67bc19eb",
+      "topic": "Mark Fuhrman Dies: LAPD Detective At Center Of O.J. Simpson Murder Trial Was 74",
+      "traffic": "",
+      "detected_at": "2026-05-18T22:31:13.433384+00:00",
+      "search_url": "https://deadline.com/2026/05/mark-fuhrman-dead-1236915078/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "8c8a03a823d0",
+      "topic": "'Miracle on Ice' coach's ring sells for $549,000",
+      "traffic": "",
+      "detected_at": "2026-05-18T22:31:13.433384+00:00",
+      "search_url": "https://www.espn.com/nhl/story/_/id/48809046/miracle-ice-coach-ring-sells-549000-auction",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "1d6d52adbf99",
+      "topic": "Disney faces a class action lawsuit over facial recognition tech",
+      "traffic": "",
+      "detected_at": "2026-05-18T22:31:13.433384+00:00",
+      "search_url": "https://www.engadget.com/2176016/disney-faces-a-class-action-lawsuit-over-facial-recognition-tech/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "463ba5067c18",
+      "topic": "Altman",
+      "traffic": "",
+      "detected_at": "2026-05-18T22:31:13.433384+00:00",
+      "search_url": "https://x.com/search?q=Altman&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "1937bf4dc1cd",
       "topic": "Les Deux x Prince Serves Up Pure Vintage Nostalgia",
       "traffic": "",
@@ -299,107 +399,7 @@
       "source_name": "TechCrunch",
       "source_type": "feed",
       "haiku_score": 9
-    },
-    {
-      "id": "b26a9e69abfa",
-      "topic": "X accounts are limited to 50 posts and 200 replies a day unless they pay for a blue checkmark",
-      "traffic": "",
-      "detected_at": "2026-05-18T18:15:02.087305+00:00",
-      "search_url": "https://www.engadget.com/2175771/x-free-accounts-limited-to-50-posts-and-200-replies-a-day/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "7684482ed9f3",
-      "topic": "Sony raises PS Plus prices for one- and three-month subscriptions",
-      "traffic": "",
-      "detected_at": "2026-05-18T18:15:02.087305+00:00",
-      "search_url": "https://www.engadget.com/2175751/sony-raises-ps-plus-prices-for-one-and-three-month-subscriptions/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "8ebfdad4970d",
-      "topic": "Elon Musk loses court battle against Sam Altman and OpenAI after 3-week trial",
-      "traffic": "",
-      "detected_at": "2026-05-18T18:15:02.087305+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/18/musk-altman-openai-trial-verdict.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 9
-    },
-    {
-      "id": "df3a8ebb6dd7",
-      "topic": "'Absolutely massive win for OpenAI,' now has road to IPO: Big Technology's Kantrowitz - CNBC",
-      "traffic": "",
-      "detected_at": "2026-05-18T18:15:02.087305+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORU8tbENUWEpNWTdjNWFfVFRidlhaQkluY0FSUGJudEt2VHNfSER4Vl9PbmtsVTNVbV9GTGpkT1V2T1NGakhDUnI5djVMZFZ6RXVyclpJa0M5VjJkdkhDZHRpVUpjVEZJdXRjMVVqbHJCRlg0OFlsT201MWlXN0s0QWQ5UkRUeEoxbDRxNTg2VG5IdExoNThiT2ZVeU53a3JUSnJtYWNoX01UcFNudkpZcGVR?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "b7c6b13f083f",
-      "topic": "FAFSA",
-      "traffic": "",
-      "detected_at": "2026-05-18T18:15:02.087305+00:00",
-      "search_url": "https://x.com/search?q=FAFSA&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "33648a4880a3",
-      "topic": "First Look At The Nike Zoom Huarache 2k4 “Knicks”",
-      "traffic": "",
-      "detected_at": "2026-05-18T16:19:48.299476+00:00",
-      "search_url": "https://sneakernews.com/2026/05/18/nike-zoom-huarache-2k4-knicks-iv0345-001/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "4470e27993b7",
-      "topic": "adidas Running Continues Its Rise With SATISFY Partnership",
-      "traffic": "",
-      "detected_at": "2026-05-18T16:19:48.299476+00:00",
-      "search_url": "https://sneakernews.com/2026/05/18/satisfy-adidas-adidas-pro-4-release-date/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "acec5420f448",
-      "topic": "The Nike Mind 001 Chills Out In “Cucumber Calm”",
-      "traffic": "",
-      "detected_at": "2026-05-18T16:19:48.299476+00:00",
-      "search_url": "https://sneakernews.com/2026/05/18/nike-mind-001-cucumber-calm-barely-volt-hq4307-302/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "167f0cfc53b9",
-      "topic": "‘The Unknown’ Review: Niels Schneider Wakes Up as Léa Seydoux in Arthur Harari’s Gratuitously Serious Body-Swap Psychodrama",
-      "traffic": "",
-      "detected_at": "2026-05-18T16:19:48.299476+00:00",
-      "search_url": "https://variety.com/2026/film/reviews/the-unknown-review-lea-seydoux-1236750505/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "1797998c5e26",
-      "topic": "‘Better Call Saul’ Actor Russell Andrews Shares ALS Diagnosis in Moving CNN Interview",
-      "traffic": "",
-      "detected_at": "2026-05-18T16:19:48.299476+00:00",
-      "search_url": "https://variety.com/2026/tv/news/russell-andrews-als-better-caul-saul-1236752527/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-18T21:22:51.952246+00:00"
+  "last_checked": "2026-05-18T22:31:13.433384+00:00"
 }
