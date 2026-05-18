@@ -1,6 +1,76 @@
 {
   "items": [
     {
+      "id": "21daee5c336e",
+      "topic": "Every 2026 ACMs Performance, Ranked",
+      "traffic": "",
+      "detected_at": "2026-05-18T05:51:24.264258+00:00",
+      "search_url": "https://www.billboard.com/lists/acm-awards-performances-ranked-2026/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "e5491519138d",
+      "topic": "Anderson Cooper Celebrates ‘Independence’ of ’60 Minutes’ as He Bids CBS Show Farewell",
+      "traffic": "",
+      "detected_at": "2026-05-18T05:51:24.264258+00:00",
+      "search_url": "https://www.rollingstone.com/tv-movies/tv-movie-news/anderson-cooper-60-minutes-departure-farewell-cbs-1235564311/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "4963ce782cac",
+      "topic": "Cavs",
+      "traffic": "",
+      "detected_at": "2026-05-18T05:51:24.264258+00:00",
+      "search_url": "https://x.com/search?q=Cavs&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "c47e9967e5e5",
+      "topic": "#euphoria",
+      "traffic": "",
+      "detected_at": "2026-05-18T05:51:24.264258+00:00",
+      "search_url": "https://x.com/search?q=%23euphoria&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 9
+    },
+    {
+      "id": "71abe7f4097c",
+      "topic": "#RHOA",
+      "traffic": "",
+      "detected_at": "2026-05-18T05:51:24.264258+00:00",
+      "search_url": "https://x.com/search?q=%23RHOA&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "67956daa1840",
+      "topic": "#RHORI",
+      "traffic": "",
+      "detected_at": "2026-05-18T05:51:24.264258+00:00",
+      "search_url": "https://x.com/search?q=%23RHORI&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "6b6be7de15f4",
+      "topic": "#BaddiesUSA",
+      "traffic": "",
+      "detected_at": "2026-05-18T05:51:24.264258+00:00",
+      "search_url": "https://x.com/search?q=%23BaddiesUSA&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
       "id": "a9e67974bb63",
       "topic": "Ella Langley Becomes 5th Artist to Win Back-to-Back ACM Awards for Single of the Year: Full List",
       "traffic": "",
@@ -329,77 +399,7 @@
       "source_name": "Deadline",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "ee6e76f8dc5d",
-      "topic": "Barbra Streisand Will Not Attend Cannes Closing Ceremony To Accept Honorary Palme D’Or Due To Injury",
-      "traffic": "",
-      "detected_at": "2026-05-17T18:36:56.467407+00:00",
-      "search_url": "https://deadline.com/2026/05/barbra-streisand-no-cannes-palme-dor-1236913628/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "ce0e992b04e1",
-      "topic": "1047 Games' spiritual successor to Titanfall will reportedly be called Empulse",
-      "traffic": "",
-      "detected_at": "2026-05-17T18:36:56.467407+00:00",
-      "search_url": "https://www.engadget.com/2174946/1047-games-spiritual-successor-to-titanfall-will-reportedly-be-called-empulse/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "97ae480335c4",
-      "topic": "The Oscars’ New Inclusion Rules Wouldn’t Disqualify Any Best Picture Nominee in History. So Why Is Elon Musk Melting Down Over ‘The Odyssey’?",
-      "traffic": "",
-      "detected_at": "2026-05-17T17:29:13.634211+00:00",
-      "search_url": "https://variety.com/2026/film/awards/academy-diversity-standards-best-picture-elon-musk-odyssey-1236751219/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "8a76abb1a726",
-      "topic": "Happy 60th Birthday, ‘Pet Sounds’: Beach Boys Mike Love, Al Jardine and Bruce Johnston Recall the Making and Aftermath of One of Rock’s Greatest Albums",
-      "traffic": "",
-      "detected_at": "2026-05-17T17:29:13.634211+00:00",
-      "search_url": "https://variety.com/2026/music/news/pet-sounds-beach-boys-60th-classic-album-interviews-1236751617/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "f52b46c98b7c",
-      "topic": "Paul McCartney Jumps Into ‘SNL’ Monologue’s Will Ferrell/Chad Smith Joke",
-      "traffic": "",
-      "detected_at": "2026-05-17T17:29:13.634211+00:00",
-      "search_url": "https://www.billboard.com/music/music-news/snl-will-ferrell-monologue-chad-smith-paul-mccartney-1236250130/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "3f92437af2ad",
-      "topic": "Cate Blanchett Says, “MeToo Got Killed Very Quickly” And That “A Systemic Layer Of Abuse” Remains",
-      "traffic": "",
-      "detected_at": "2026-05-17T17:29:13.634211+00:00",
-      "search_url": "https://deadline.com/2026/05/cate-blanchett-metoo-got-killed-very-quickly-1236913583/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "8b679f5fb382",
-      "topic": "Sources: SGA wins MVP for second straight year",
-      "traffic": "",
-      "detected_at": "2026-05-17T17:29:13.634211+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/48795765/sources-thunder-shai-gilgeous-alexander-repeats-nba-mvp",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-18T01:31:23.970337+00:00"
+  "last_checked": "2026-05-18T05:51:24.264258+00:00"
 }
