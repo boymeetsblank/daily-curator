@@ -1,6 +1,66 @@
 {
   "items": [
     {
+      "id": "e3434061ac0f",
+      "topic": "Anita Rani Launching ‘Sisters Of Defiance’ Podcast With Guests Including Gisele Pelicot",
+      "traffic": "",
+      "detected_at": "2026-05-19T08:50:46.190073+00:00",
+      "search_url": "https://deadline.com/2026/05/anita-rani-sisters-of-defiance-podcast-gisele-pelicot-1236914384/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "52bac5a19204",
+      "topic": "Double OT",
+      "traffic": "",
+      "detected_at": "2026-05-19T08:50:46.190073+00:00",
+      "search_url": "https://x.com/search?q=Double+OT&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "cbf7d3c9fad9",
+      "topic": "Victor Wembanyama",
+      "traffic": "",
+      "detected_at": "2026-05-19T08:50:46.190073+00:00",
+      "search_url": "https://x.com/search?q=Victor+Wembanyama&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 9
+    },
+    {
+      "id": "ed1ec9675868",
+      "topic": "#WWERaw",
+      "traffic": "",
+      "detected_at": "2026-05-19T08:50:46.190073+00:00",
+      "search_url": "https://x.com/search?q=%23WWERaw&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "b04daa792ec0",
+      "topic": "Buffalo",
+      "traffic": "",
+      "detected_at": "2026-05-19T08:50:46.190073+00:00",
+      "search_url": "https://x.com/search?q=Buffalo&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "f9154b3fd9bb",
+      "topic": "#PorVida",
+      "traffic": "",
+      "detected_at": "2026-05-19T08:50:46.190073+00:00",
+      "search_url": "https://x.com/search?q=%23PorVida&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "81b2ff8a709d",
       "topic": "‘South Park’ Creators Show Jimmy Kimmel How They Made Trump’s Tiny Penis",
       "traffic": "",
@@ -339,67 +399,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 6
-    },
-    {
-      "id": "1937bf4dc1cd",
-      "topic": "Les Deux x Prince Serves Up Pure Vintage Nostalgia",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://hypebeast.com/2026/5/les-deux-prince-tennis-capsule-collaboration",
-      "source_name": "Hypebeast",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "8434ab327ec3",
-      "topic": "Is Golf Finally Getting Better to Watch in Person?",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://hypebeast.com/2026/5/pga-championship-t-mobile-club-magenta-tournament-recap",
-      "source_name": "Hypebeast",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "dac5539a70c5",
-      "topic": "In Pol Taburet’s New Show, Paranoia Is the Point",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://hypebeast.com/2026/5/pol-taburet-villa-medici-rome-paranoia-method-exhibition",
-      "source_name": "Hypebeast",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "a46695607464",
-      "topic": "A$AP Rocky’s Backless Puma Mostro Mule Is Debuting Soon",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://sneakernews.com/2026/05/18/asap-rocky-puma-mostro-mule-summer-2026/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "7451fe1e2bdb",
-      "topic": "Michael Jackson Rules Billboard Artist 100 for First Time, Thanks to Continued ‘Michael’ Biopic Success",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://www.billboard.com/music/chart-beat/michael-jackson-artist-100-biopic-success-1236251267/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "de991c499462",
-      "topic": "Billboard & Montauk Yacht Club Announce the Return of Marina Music Series With Washed Out DJ Set",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://www.billboard.com/music/music-news/montauk-yacht-club-marina-music-series-2026-washed-out-1236249531/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-19T05:48:13.640400+00:00"
+  "last_checked": "2026-05-19T08:50:46.190073+00:00"
 }
