@@ -1,6 +1,126 @@
 {
   "items": [
     {
+      "id": "81b2ff8a709d",
+      "topic": "‘South Park’ Creators Show Jimmy Kimmel How They Made Trump’s Tiny Penis",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://variety.com/2026/tv/news/south-park-creators-jimmy-kimmel-trump-penis-jd-vance-1236753247/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "e8c25ad39f58",
+      "topic": "Stephen Colbert Reveals NSFW Graphics and Cut Sketches in ‘Worst of the Late Show’ Episode",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://variety.com/2026/tv/news/stephen-colbert-nsfw-sketches-worst-of-late-show-1236753231/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "fed8e537d8c6",
+      "topic": "Breaking Baz: ‘Stranger Things’ Star Gaten Matarazzo Will Lead “Alive & Urgent” Revival Of Landmark Musical ‘Rent’ Into London’s West End This Fall",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://deadline.com/2026/05/stranger-things-gaten-matarazzo-rent-revival-west-end-1236915236/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "b3191a1b87c9",
+      "topic": "Takeaways: Spurs defeat defending champions in Gam...",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48771425/2026-nba-playoffs-conference-finals-takeaways-thunder-spurs-knicks-cavaliers",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 8
+    },
+    {
+      "id": "7d6c77c517a2",
+      "topic": "Wemby spoils SGA's MVP night as Spurs stun OKC",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48812302/wembanyama-explodes-41-spurs-stun-thunder-game-1",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 9
+    },
+    {
+      "id": "bd22d58886ae",
+      "topic": "Canadiens outlast Sabres in overtime in Game 7",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://www.espn.com/nhl/story/_/id/48812003/alex-newhook-ot-goal-lifts-canadiens-sabres-game-7",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "b9106327f6be",
+      "topic": "Angels no-hit by A's Ginn into 9th, win on walk-of...",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://www.espn.com/mlb/story/_/id/48812432/athletics-jt-ginn-loses-no-hitter-9th-inning-allows-walk-home-run-angels-zach-neto",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "2d956e8b3fcc",
+      "topic": "Wemby",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://x.com/search?q=Wemby&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 9
+    },
+    {
+      "id": "36cbc78fd8f1",
+      "topic": "Chet",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://x.com/search?q=Chet&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "5f9c54b8f6b2",
+      "topic": "Caruso",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://x.com/search?q=Caruso&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "b6d0ae4530d8",
+      "topic": "Spurs",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://x.com/search?q=Spurs&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8
+    },
+    {
+      "id": "1bdbc5559cad",
+      "topic": "Dylan Harper",
+      "traffic": "",
+      "detected_at": "2026-05-19T05:48:13.640400+00:00",
+      "search_url": "https://x.com/search?q=Dylan+Harper&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
       "id": "42b465e269cf",
       "topic": "Netflix Snaps Up Cannes Critics Week’s Animated Feature ‘In Waves’ (EXCLUSIVE)",
       "traffic": "",
@@ -279,127 +399,7 @@
       "source_name": "Billboard",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "32bb49692a07",
-      "topic": "TLC Musical ‘CrazySexyCool’ Reveals Cast: See the Lead Actresses",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://www.billboard.com/music/rb-hip-hop/tlc-crazysexycool-musical-cast-photo-1236251111/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "08dbca465503",
-      "topic": "Luigi Mangione’s Alleged Gun and Notebook Allowed Into Evidence at Murder Trial",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://www.rollingstone.com/culture/culture-features/luigi-mangione-gun-notebook-evidence-murder-trial-1235564921/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "92c81a73b3bb",
-      "topic": "Tom Kane Dies: ‘Star Wars: The Clone Wars’, ‘Powerpuff Girls’, ‘Archer’ Voice Actor Was 64",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://deadline.com/2026/05/tom-kane-dead-clone-wars-1236915028/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 9
-    },
-    {
-      "id": "ba2badf23d53",
-      "topic": "Sources: City expect Guardiola exit after season",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://www.espn.com/soccer/story/_/id/48809120/manchester-city-expect-guardiola-exit-season",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "59590b974b18",
-      "topic": "Tom Kane",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://x.com/search?q=Tom+Kane&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 9
-    },
-    {
-      "id": "9e005d56e82a",
-      "topic": "Simi Valley",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://x.com/search?q=Simi+Valley&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 8
-    },
-    {
-      "id": "ffcf0a352940",
-      "topic": "#SandyFire",
-      "traffic": "",
-      "detected_at": "2026-05-18T21:22:51.952246+00:00",
-      "search_url": "https://x.com/search?q=%23SandyFire&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 8
-    },
-    {
-      "id": "e2de9497d5d6",
-      "topic": "James Harden Sealed Another Conference Finals With The “Clear Cyan” Harden 10s",
-      "traffic": "",
-      "detected_at": "2026-05-18T20:04:31.053231+00:00",
-      "search_url": "https://sneakernews.com/2026/05/18/adidas-harden-vol-10-clear-cyan-ki1605/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "a8ebd2c8226b",
-      "topic": "Kasina Created An Insane Nike Air Max Shrine With 500 Pairs",
-      "traffic": "",
-      "detected_at": "2026-05-18T20:04:31.053231+00:00",
-      "search_url": "https://sneakernews.com/2026/05/18/kasina-nike-air-max-museum/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "f2a49738a1d5",
-      "topic": "In Praise of Travis Kelce’s Unserious Date-Night Shirt",
-      "traffic": "",
-      "detected_at": "2026-05-18T20:04:31.053231+00:00",
-      "search_url": "https://www.gq.com/story/travis-kelce-unserious-date-night-shirt",
-      "source_name": "GQ",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "6a245d03a5f0",
-      "topic": "Joshua and Rebecca Tickell Win Golden Globes Prize for Documentary at Cannes Film Festival",
-      "traffic": "",
-      "detected_at": "2026-05-18T20:04:31.053231+00:00",
-      "search_url": "https://variety.com/2026/film/global/joshua-rebecca-tickell-golden-globes-prize-for-documentary-1236752863/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "1c17e00288d5",
-      "topic": "Tom Kane, ‘Star Wars’ and ‘Powerpuff Girls’ Voice Actor, Dies at 64",
-      "traffic": "",
-      "detected_at": "2026-05-18T20:04:31.053231+00:00",
-      "search_url": "https://variety.com/2026/tv/news/tom-kane-dead-star-wars-powerpuff-girls-1236752823/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7
     }
   ],
-  "last_checked": "2026-05-19T01:34:35.650740+00:00"
+  "last_checked": "2026-05-19T05:48:13.640400+00:00"
 }
