@@ -1219,6 +1219,14 @@ TREND ITEMS: Some items have Source "X (Twitter) Trending", "Google Trends", "Yo
 
 REDDIT AS FIRST-MOVER SIGNAL: Items sourced from Reddit subreddits (r/*) represent real people actively discussing or sharing something right now. A Reddit post gaining traction — especially in culture, sneakers, music, or street culture communities — often surfaces a story hours before mainstream outlets pick it up. Treat Reddit upvote virality as strong evidence for the TRENDING criterion.
 
+ENGAGEMENT SIGNALS: When a story is trending, the scale of engagement matters. Use these as calibration:
+- A Reddit post with 10K+ upvotes has real traction — treat it as strong evidence for the TRENDING criterion and score it at least 7.
+- A Reddit post with 30K+ upvotes is almost certainly culturally significant — score it at least 8.
+- An X topic ranked #1–5 (shown in the trending list above) is what everyone is talking about right now.
+- A Google Trends topic with 100K+ searches is a strong real-time interest signal.
+- A Google Trends topic with 250K+ searches is dominating the day's conversation.
+- Strong engagement alone doesn't override the POLITICS or CELEBRITY GOSSIP rules, but for any borderline story it should break the tie upward.
+
 CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 2+ sources, this is strong evidence the story has real cultural weight — multiple independent outlets chose to cover it. Score it a minimum of 7. If it's covered by 3+ sources, score it a minimum of 8. Apply this floor regardless of topic area.
 {live_clusters_block}
 CULTURAL VELOCITY SIGNALS: The following topics are currently trending live on X (Twitter), Google Trends, YouTube, and TikTok. If an article's subject directly intersects with one of these topics, that's a signal of real-time cultural momentum — treat it as additional evidence for the TRENDING and CULTURAL criteria. Do not add points mechanically; use this to inform your editorial judgment about whether the story is landing in the cultural conversation right now.
@@ -1345,14 +1353,25 @@ def _score_batch(batch: list[dict], trending_context_block: str, label: str, rec
     return enriched
 
 
-def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[str] | None = None, recently_covered: list[str] | None = None, live_clusters: list[dict] | None = None) -> list[dict]:
+def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[str] | None = None, recently_covered: list[str] | None = None, live_clusters: list[dict] | None = None, social_engagement: dict | None = None) -> list[dict]:
     if not articles:
         return []
 
     # Build the trending context block once — shared across all batches
     if trending_topics:
-        topics_list = "\n".join(f"  • {t}" for t in trending_topics[:30])
-        trending_context_block = f"Live trending topics right now:\n{topics_list}"
+        x_ranks = (social_engagement or {}).get("x_ranks", {})
+        g_eng   = (social_engagement or {}).get("google_engagement", {})
+        context_lines = []
+        for t in trending_topics[:30]:
+            rank = x_ranks.get(t)
+            vol  = g_eng.get(t)
+            if rank:
+                context_lines.append(f"  • #{rank} {t} (X trending)")
+            elif vol:
+                context_lines.append(f"  • {t} — {vol} searches (Google)")
+            else:
+                context_lines.append(f"  • {t}")
+        trending_context_block = "Live trending topics right now:\n" + "\n".join(context_lines)
         print(f"   📊 Injecting {len(trending_topics[:30])} live trending topics into scoring prompt.")
     else:
         trending_context_block = "(No live trending data available for this run.)"
@@ -2137,13 +2156,29 @@ def main():
     trending_topics = [t["title"] for t in twitter_trends + google_trends + youtube_trends + tiktok_trends if t.get("title")]
 
     # Write social trends cache for breaking_news_check.py to consume (free — no extra Apify calls)
+    # Preserve live-feed-written fields (x_ranks, google_engagement, x_fetched_at, google_fetched_at)
+    # so they survive this overwrite.
+    social_engagement: dict = {}
     try:
+        existing_social: dict = {}
+        if os.path.exists("social_trends.json"):
+            with open("social_trends.json", encoding="utf-8") as _ef:
+                existing_social = json.load(_ef)
         social_cache = {
-            "fetched_at": datetime.now(tz=timezone.utc).isoformat(),
-            "x":       [t["title"] for t in twitter_trends if t.get("title")],
-            "google":  [t["title"] for t in google_trends  if t.get("title")],
-            "youtube": [t["title"] for t in youtube_trends if t.get("title")],
-            "tiktok":  [t["title"] for t in tiktok_trends  if t.get("title")],
+            "fetched_at":        datetime.now(tz=timezone.utc).isoformat(),
+            "x":                 [t["title"] for t in twitter_trends if t.get("title")],
+            "google":            [t["title"] for t in google_trends  if t.get("title")],
+            "youtube":           [t["title"] for t in youtube_trends if t.get("title")],
+            "tiktok":            [t["title"] for t in tiktok_trends  if t.get("title")],
+            # Preserve live-feed engagement metadata if present
+            "x_ranks":           existing_social.get("x_ranks", {}),
+            "google_engagement": existing_social.get("google_engagement", {}),
+            "x_fetched_at":      existing_social.get("x_fetched_at", ""),
+            "google_fetched_at": existing_social.get("google_fetched_at", ""),
+        }
+        social_engagement = {
+            "x_ranks":           social_cache["x_ranks"],
+            "google_engagement": social_cache["google_engagement"],
         }
         with open("social_trends.json", "w", encoding="utf-8") as _sf:
             json.dump(social_cache, _sf, indent=2, ensure_ascii=False)
@@ -2160,7 +2195,7 @@ def main():
     if live_clusters:
         print(f"   🔴 Loaded {len(live_clusters)} escalated live cluster(s) for scoring boost.")
 
-    evaluated_articles = evaluate_articles_with_claude(all_items, trending_topics=trending_topics, recently_covered=recently_covered, live_clusters=live_clusters)
+    evaluated_articles = evaluate_articles_with_claude(all_items, trending_topics=trending_topics, recently_covered=recently_covered, live_clusters=live_clusters, social_engagement=social_engagement)
 
     # ── Cross-run cluster merge: match articles to prior-run clusters ─────────
     print(f"\n🔗 Merging cross-run clusters...")
