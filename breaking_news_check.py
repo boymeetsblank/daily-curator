@@ -7,8 +7,9 @@ context via Claude Haiku, then written to breaking_news.json (deployed to
 GitHub Pages). If new items are found, a Web Push notification is sent.
 
 Google Trends are refreshed from the unofficial daily trends endpoint whenever
-the cached data in social_trends.json is older than 60 minutes (free, no Apify).
-X and TikTok trends are available via the 3x/day Apify runs in daily_curator.py.
+the cached data is older than 10 minutes (free, no Apify).
+X (Twitter) trending topics are refreshed every 10 minutes via trends24.in (free, no auth).
+TikTok trends are available via the 3x/day Apify runs in daily_curator.py.
 
 Writes:
   breaking_news.json       — deployed to GitHub Pages for the frontend
@@ -43,7 +44,9 @@ OUTPUT_FILE         = "breaking_news.json"
 SOCIAL_TRENDS_PATH  = "social_trends.json"
 YOUTUBE_TRENDING_RSS  = "https://www.youtube.com/feeds/videos.xml?chart=mostpopular&regionCode=US&hl=en&gl=US"
 GOOGLE_TRENDS_URL     = "https://trends.google.com/trends/trendingsearches/daily?geo=US&ns=15"
-GOOGLE_TRENDS_MAX_AGE = 60    # minutes before we try to refresh google trends
+GOOGLE_TRENDS_MAX_AGE = 10    # minutes before we try to refresh google trends
+X_TRENDS_URL          = "https://trends24.in/united-states/"
+X_TRENDS_MAX_AGE      = 10    # minutes before we try to refresh X trending
 
 FEED_URL   = "https://boymeetsblank.github.io/daily-curator/"
 VAPID_CLAIMS = {"sub": "mailto:mjaffry1@gmail.com"}
@@ -671,6 +674,68 @@ def refresh_google_trends(trends: dict) -> dict:
     return trends
 
 
+# ── X (Twitter) trending live refresh (trends24.in, free, no auth) ──────────
+
+def fetch_x_trending_live(trends: dict) -> dict:
+    """
+    Refresh X (Twitter) trending topics from trends24.in every X_TRENDS_MAX_AGE minutes.
+    Free, no API key or auth required. Falls back to cached data on any failure.
+    Writes refreshed topics back to social_trends.json so subsequent runs skip the fetch.
+    """
+    try:
+        if os.path.exists(SOCIAL_TRENDS_PATH):
+            with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
+                cached = json.load(f)
+            x_fetched_at = cached.get("x_fetched_at")
+            if x_fetched_at:
+                age_minutes = (
+                    datetime.now(tz=timezone.utc)
+                    - datetime.fromisoformat(x_fetched_at)
+                ).total_seconds() / 60
+                if age_minutes < X_TRENDS_MAX_AGE:
+                    return trends  # still fresh
+    except Exception:
+        pass
+
+    try:
+        import re
+        resp = requests.get(
+            X_TRENDS_URL,
+            headers={**_HEADERS, "Accept-Language": "en-US,en;q=0.9"},
+            timeout=10,
+        )
+        resp.raise_for_status()
+        # trends24 renders links like: href="/united-states/#topic-name">Topic Name</a>
+        raw = re.findall(r'href="/united-states/#[^"]*">([^<]+)</a>', resp.text)
+        seen = set()
+        topics = []
+        for t in raw:
+            t = t.strip()
+            if t and t not in seen:
+                seen.add(t)
+                topics.append(t)
+        if topics:
+            trends = {**trends, "x": topics[:30]}
+            try:
+                existing = {}
+                if os.path.exists(SOCIAL_TRENDS_PATH):
+                    with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
+                        existing = json.load(f)
+                existing["x"] = topics[:30]
+                existing["x_fetched_at"] = datetime.now(tz=timezone.utc).isoformat()
+                with open(SOCIAL_TRENDS_PATH, "w", encoding="utf-8") as f:
+                    json.dump(existing, f, indent=2, ensure_ascii=False)
+            except Exception:
+                pass
+            print(f"   🐦 X Trending refreshed (trends24.in): {len(topics)} topics")
+        else:
+            print(f"   ⚠️  X Trending: no topics parsed from trends24.in — using cached data")
+    except Exception as e:
+        print(f"   ⚠️  Could not refresh X trending ({e}) — using cached data")
+
+    return trends
+
+
 # ── Source: YouTube trending (free RSS, no API key needed) ───────────────────
 
 def fetch_youtube_trending_rss(known_set: set[str], now_iso: str) -> list[dict]:
@@ -1046,10 +1111,11 @@ def main():
     live_clusters = dict(state.get("live_clusters", {}))
     known_set    = set(known_ids) | set(failed_ids.keys())
 
-    # Load social trends cache (written by daily_curator.py 3×/day — zero extra Apify cost)
-    # then top up Google Trends from the free daily endpoint if the cached data is stale.
+    # Load social trends, then live-refresh X (every 10 min) and Google (every 10 min).
+    # TikTok/YouTube stay on the 3×/day Apify schedule.
     trends = load_social_trends()
     trends = refresh_google_trends(trends)
+    trends = fetch_x_trending_live(trends)
     if any(trends.values()):
         total = sum(len(v) for v in trends.values())
         print(f"\n   📲 Loaded social trends: {total} topics across X, Google, YouTube, TikTok")
