@@ -60,7 +60,7 @@ def item_id(text: str) -> str:
     return hashlib.md5(text.lower().strip().encode()).hexdigest()[:12]
 
 
-def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) -> list[dict]:
+def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None, live_clusters: dict | None = None) -> list[dict]:
     """
     Batch quality gate via Claude Haiku.
 
@@ -70,6 +70,9 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
 
     trends: optional dict {x, google, youtube, tiktok} of live topic lists
     used to boost items that match live social signals.
+
+    live_clusters: existing cluster state so Haiku knows which stories are
+    already building — corroborating signals score higher.
 
     Falls back to surfacing all candidates unfiltered if the API is
     unavailable or returns unparseable JSON.
@@ -89,6 +92,26 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
         (f"  [{c['traffic']}]" if c.get("traffic") else "")
         for i, c in enumerate(candidates)
     )
+
+    # Build building clusters block — shows Haiku which stories already have signals
+    clusters_block = ""
+    if live_clusters:
+        active = [
+            (c["topic"], len(c["item_ids"]))
+            for c in live_clusters.values()
+            if c.get("topic") and c.get("item_ids")
+        ]
+        if active:
+            cluster_lines = "\n".join(
+                f"  - {topic} ({count} independent signal{'s' if count != 1 else ''} so far)"
+                for topic, count in sorted(active, key=lambda x: -x[1])
+            )
+            clusters_block = (
+                f"\n\nBUILDING STORIES — these topics already have independent signals in the live feed right now:\n"
+                f"{cluster_lines}\n"
+                f"If any item below corroborates one of these stories, that convergence is strong evidence "
+                f"something real is happening — score it at least 1 point higher than you would in isolation."
+            )
 
     # Build live social signals block — include rank/volume where available
     social_block = ""
@@ -145,7 +168,7 @@ IMPORTANT:
 - For Bluesky posts: score above 5 only if the post contains significant news, a major announcement, or a genuine cultural flashpoint — OR if engagement is very high (10K+ likes), which itself signals the post struck a nerve.
 - For Reddit posts: upvote count is strong signal — 10K+ means real traction, 30K+ means broadly significant. Score on the combination of topic substance AND engagement.
 - For YouTube trending videos: score on whether the video captures a genuine cultural moment — a performance, a reveal, a reaction with broad significance.
-- Anything genuinely significant has a fair shot regardless of topic area — a major sports result, a surprise album drop, a landmark business moment, a cultural event. Topic area is never a reason to score down.{social_block}
+- Anything genuinely significant has a fair shot regardless of topic area — a major sports result, a surprise album drop, a landmark business moment, a cultural event. Topic area is never a reason to score down.{social_block}{clusters_block}
 
 Respond with a JSON array only — one object per item, same order as input:
 [{{"score": <int>}}]
@@ -1229,7 +1252,7 @@ def main():
 
     if candidates:
         print(f"\n   🔍 Running quality gate on {len(candidates)} candidate(s)...")
-        new_items = filter_and_enrich_items(candidates, trends)
+        new_items = filter_and_enrich_items(candidates, trends, live_clusters)
     else:
         new_items = []
 
