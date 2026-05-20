@@ -85,18 +85,23 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
         return candidates
 
     items_block = "\n".join(
-        f"{i+1}. [Source: {c['source_name']}] {c['topic']}"
+        f"{i+1}. [Source: {c['source_name']}] {c['topic']}" +
+        (f"  [{c['traffic']}]" if c.get("traffic") else "")
         for i, c in enumerate(candidates)
     )
 
-    # Build live social signals block from cached trends
+    # Build live social signals block — include rank/volume where available
     social_block = ""
     if trends:
         lines = []
         if trends.get("x"):
-            lines.append("X (Twitter) trending: " + ", ".join(trends["x"][:15]))
+            x_ranks = trends.get("x_ranks", {})
+            x_items = [f"#{x_ranks.get(t, i+1)} {t}" for i, t in enumerate(trends["x"][:15])]
+            lines.append("X (Twitter) trending (ranked): " + ", ".join(x_items))
         if trends.get("google"):
-            lines.append("Google Trends: " + ", ".join(trends["google"][:15]))
+            g_eng = trends.get("google_engagement", {})
+            g_items = [f"{t} ({g_eng[t]})" if g_eng.get(t) else t for t in trends["google"][:15]]
+            lines.append("Google Trends (with search volume): " + ", ".join(g_items))
         if trends.get("youtube"):
             lines.append("YouTube trending: " + ", ".join(trends["youtube"][:10]))
         if trends.get("tiktok"):
@@ -127,9 +132,16 @@ BARE TRENDING TOPIC NAMES (X, Google, TikTok trend topics that are just a name o
 - Score 5 for a name that could trend for many reasons. Score 6 when the name clearly belongs to a culturally significant person, team, or moment where trending almost certainly means something just happened.
 - Do NOT score these 1. They belong in the live feed as early signals and are critical for clustering related items into a coherent story.
 
+ENGAGEMENT SIGNALS: Numbers in brackets after an item show real engagement — upvotes, likes, reposts, comments, search volume, or trending rank (e.g. [50,000 upvotes · 1,200 comments], [12,000 likes], [#3 on X], [200K+ searches]). Weight these heavily as evidence of actual audience reach:
+- A Reddit post with 50K+ upvotes is almost certainly culturally significant — score it at least 7.
+- A Bluesky post with 10K+ likes has broken through — treat it as strong evidence of cultural relevance.
+- An X topic ranked #1–5 is what everyone is talking about right now.
+- A Google Trends topic with 500K+ searches is dominating the day's conversation.
+- High engagement alone doesn't override the auto-1 rules (politics, generic lifestyle posts), but for any borderline story, strong engagement should break the tie upward.
+
 IMPORTANT:
-- For Bluesky posts: only score above 5 if the post itself contains significant news, a major announcement, or a genuine cultural flashpoint with broad relevance. Viral engagement alone is not enough.
-- For Reddit posts: score on whether a real event is happening that a broad culturally-aware audience would care about. Upvote count is context, not justification.
+- For Bluesky posts: score above 5 only if the post contains significant news, a major announcement, or a genuine cultural flashpoint — OR if engagement is very high (10K+ likes), which itself signals the post struck a nerve.
+- For Reddit posts: high upvotes (50K+) are strong evidence of cultural significance. Score on the combination of topic substance AND engagement.
 - For YouTube trending videos: score on whether the video captures a genuine cultural moment — a performance, a reveal, a reaction with broad significance.
 - Anything genuinely significant has a fair shot regardless of topic area — a major sports result, a surprise album drop, a landmark business moment, a cultural event. Topic area is never a reason to score down.{social_block}
 
@@ -595,19 +607,21 @@ def send_breaking_push(new_items: list[dict]) -> None:
 def load_social_trends() -> dict:
     """
     Load the social trends cache written by daily_curator.py.
-    Returns {x, google, youtube, tiktok} lists, or empty lists if unavailable.
+    Returns topic lists plus engagement metadata (ranks, search volumes).
     """
-    empty = {"x": [], "google": [], "youtube": [], "tiktok": []}
+    empty = {"x": [], "google": [], "youtube": [], "tiktok": [], "x_ranks": {}, "google_engagement": {}}
     if not os.path.exists(SOCIAL_TRENDS_PATH):
         return empty
     try:
         with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
             data = json.load(f)
         return {
-            "x":       data.get("x", []),
-            "google":  data.get("google", []),
-            "youtube": data.get("youtube", []),
-            "tiktok":  data.get("tiktok", []),
+            "x":                 data.get("x", []),
+            "google":            data.get("google", []),
+            "youtube":           data.get("youtube", []),
+            "tiktok":            data.get("tiktok", []),
+            "x_ranks":           data.get("x_ranks", {}),
+            "google_engagement": data.get("google_engagement", {}),
         }
     except Exception as e:
         print(f"   ⚠️  Could not load social_trends.json: {e}")
@@ -650,19 +664,24 @@ def refresh_google_trends(trends: dict) -> dict:
         data = resp.json()
         days = data.get("default", {}).get("trendingSearchesDays", [])
         topics = []
+        engagement = {}  # topic → "200K+ searches" style label
         for day in days[:1]:  # only today's trends
             for search in day.get("trendingSearches", []):
                 query = search.get("title", {}).get("query", "")
                 if query:
                     topics.append(query)
+                    traffic = search.get("formattedTraffic", "")
+                    if traffic:
+                        engagement[query] = traffic
         if topics:
-            trends = {**trends, "google": topics}
+            trends = {**trends, "google": topics, "google_engagement": engagement}
             try:
                 existing = {}
                 if os.path.exists(SOCIAL_TRENDS_PATH):
                     with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
                         existing = json.load(f)
                 existing["google"] = topics
+                existing["google_engagement"] = engagement
                 existing["google_fetched_at"] = datetime.now(tz=timezone.utc).isoformat()
                 with open(SOCIAL_TRENDS_PATH, "w", encoding="utf-8") as f:
                     json.dump(existing, f, indent=2, ensure_ascii=False)
@@ -716,19 +735,23 @@ def fetch_x_trending_live(trends: dict) -> dict:
                 seen.add(t)
                 topics.append(t)
         if topics:
-            trends = {**trends, "x": topics[:30]}
+            top30 = topics[:30]
+            # Rank = 1-indexed position on the trending list
+            ranks = {t: i + 1 for i, t in enumerate(top30)}
+            trends = {**trends, "x": top30, "x_ranks": ranks}
             try:
                 existing = {}
                 if os.path.exists(SOCIAL_TRENDS_PATH):
                     with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
                         existing = json.load(f)
-                existing["x"] = topics[:30]
+                existing["x"] = top30
+                existing["x_ranks"] = ranks
                 existing["x_fetched_at"] = datetime.now(tz=timezone.utc).isoformat()
                 with open(SOCIAL_TRENDS_PATH, "w", encoding="utf-8") as f:
                     json.dump(existing, f, indent=2, ensure_ascii=False)
             except Exception:
                 pass
-            print(f"   🐦 X Trending refreshed (trends24.in): {len(topics)} topics")
+            print(f"   🐦 X Trending refreshed (trends24.in): {len(top30)} topics")
         else:
             print(f"   ⚠️  X Trending: no topics parsed from trends24.in — using cached data")
     except Exception as e:
@@ -776,11 +799,15 @@ def fetch_youtube_trending_rss(known_set: set[str], now_iso: str) -> list[dict]:
         if aid in known_set:
             continue
 
-        print(f"   ▶️  [YouTube Trending] {title[:70]}")
+        stats_el = entry.find("yt:statistics", ns)
+        views = int(stats_el.get("views", 0)) if stats_el is not None else 0
+        traffic = f"{views:,} views" if views else ""
+
+        print(f"   ▶️  [YouTube Trending] {title[:70]}" + (f" ({traffic})" if traffic else ""))
         candidates.append({
             "id":          aid,
             "topic":       title,
-            "traffic":     "",
+            "traffic":     traffic,
             "detected_at": now_iso,
             "search_url":  link,
             "source_name": "YouTube Trending",
@@ -831,12 +858,20 @@ def fetch_bluesky_trending(known_set: set[str], now_iso: str) -> list[dict]:
         if aid in known_set:
             continue
 
-        likes = post.get("likeCount", 0)
-        print(f"   🦋 [Bluesky] {text[:70]} ({likes:,} likes)")
+        likes   = post.get("likeCount", 0)
+        reposts = post.get("repostCount", 0)
+        replies = post.get("replyCount", 0)
+        eng_parts = []
+        if likes:   eng_parts.append(f"{likes:,} likes")
+        if reposts: eng_parts.append(f"{reposts:,} reposts")
+        if replies: eng_parts.append(f"{replies:,} replies")
+        traffic = " · ".join(eng_parts)
+
+        print(f"   🦋 [Bluesky] {text[:70]} ({traffic or 'no engagement'})")
         candidates.append({
             "id":          aid,
             "topic":       text[:200],
-            "traffic":     f"{likes:,} likes",
+            "traffic":     traffic,
             "detected_at": now_iso,
             "search_url":  link,
             "source_name": "Bluesky",
@@ -862,19 +897,32 @@ def build_social_candidates(trends: dict, known_set: set[str], now_iso: str) -> 
         ("tiktok",  "TikTok Trending",      lambda t: f"https://www.tiktok.com/search?q={quote_plus(t)}"),
     ]
 
+    x_ranks           = trends.get("x_ranks", {})
+    google_engagement = trends.get("google_engagement", {})
+
     for key, source_name, url_fn in platform_cfg:
-        for topic in trends.get(key, []):
+        for i, topic in enumerate(trends.get(key, [])):
             if not topic:
                 continue
             url = url_fn(topic)
             aid = item_id(url)
             if aid in known_set:
                 continue
-            print(f"   📲 [{source_name}] {topic[:70]}")
+
+            if key == "x":
+                rank    = x_ranks.get(topic, i + 1)
+                traffic = f"#{rank} on X"
+            elif key == "google":
+                vol     = google_engagement.get(topic, "")
+                traffic = f"{vol} searches" if vol else ""
+            else:
+                traffic = ""
+
+            print(f"   📲 [{source_name}] {topic[:70]}" + (f" ({traffic})" if traffic else ""))
             candidates.append({
                 "id":          aid,
                 "topic":       topic,
-                "traffic":     "",
+                "traffic":     traffic,
                 "detected_at": now_iso,
                 "search_url":  url,
                 "source_name": source_name,
@@ -1015,11 +1063,12 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
         posts = data.get("data", {}).get("children", [])
         for child in posts:
             post = child.get("data", {})
-            post_id   = post.get("id", "")
-            title     = (post.get("title") or "").strip()
-            score     = post.get("score", 0)
-            permalink = post.get("permalink", "")
-            url_dest  = post.get("url") or f"https://www.reddit.com{permalink}"
+            post_id      = post.get("id", "")
+            title        = (post.get("title") or "").strip()
+            score        = post.get("score", 0)
+            num_comments = post.get("num_comments", 0)
+            permalink    = post.get("permalink", "")
+            url_dest     = post.get("url") or f"https://www.reddit.com{permalink}"
 
             if not post_id or not title:
                 continue
@@ -1035,11 +1084,16 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
             if aid in known_set:
                 continue
 
-            print(f"   🔴 [r/{sub}] {title[:70]} ({score:,} upvotes)")
+            eng_parts = [f"{score:,} upvotes"]
+            if num_comments:
+                eng_parts.append(f"{num_comments:,} comments")
+            traffic = " · ".join(eng_parts)
+
+            print(f"   🔴 [r/{sub}] {title[:70]} ({traffic})")
             new_items.append({
                 "id":          aid,
                 "topic":       title,
-                "traffic":     f"{score:,} upvotes",
+                "traffic":     traffic,
                 "detected_at": now_iso,
                 "search_url":  url_dest,
                 "source_name": f"r/{sub}",

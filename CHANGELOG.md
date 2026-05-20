@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-20] Live feed: engagement signals now flow into Haiku scoring
+
+Engagement data is now surfaced to the Haiku quality gate so high-engagement content gets scored appropriately. Five changes: (1) Reddit upvotes + comment count and Bluesky likes + reposts + replies were fetched but never shown to Haiku — now included as brackets after each item in the scoring prompt (e.g. `[50,000 upvotes · 1,200 comments]`); (2) YouTube view counts extracted from `<yt:statistics>` in the RSS feed; (3) Google Trends `formattedTraffic` (e.g. "200K+ searches") extracted from the daily endpoint and stored in `social_trends.json`; (4) X trending rank position tracked and stored (`#1` through `#30`) so Haiku knows position-1 topics carry more weight; (5) Haiku prompt updated with explicit engagement scoring guidance — 50K+ Reddit upvotes, 10K+ Bluesky likes, and #1–5 X positions are treated as strong upward score signals.
+
 ## [2026-05-20] Main feed: live cluster awareness — confirmed stories get a score floor
 
 `daily_curator.py` now reads `breaking_news_state.json` before scoring. Any live feed cluster already escalated to the main feed (i.e. confirmed by 3+ independent real-time signals) is injected into the Sonnet scoring prompt as a "LIVE FEED CONFIRMED STORIES" block. Articles that match a live cluster topic receive a score floor: 3–5 live signals → minimum 7; 6+ signals → minimum 8. This closes the gap between the live and main feed pipelines — if a story has been building for hours across Reddit, YouTube, X, and Bluesky, the 3×/day curator runs now know about it and prioritize it accordingly. Also fixed misleading log message in `detect_cross_source_trends()` (said "3+ sources" but threshold is 2+).
@@ -82,11 +86,7 @@ Body copy on story slides now stops at complete sentence boundaries instead of t
 
 Replaced the blunt "no period at the end of every line" rule with nuanced guidance: punctuate naturally based on rhythm — complete standalone thoughts get a period, fragments flowing as one sentence don't. Fixes hooks like "TIM COOK IS OUT / APPLE JUST HAD ITS BEST QUARTER EVER..." where the first line is a distinct beat that needs its own punctuation.
 
----
 
-## [2026-04-30] Fix: live feed not updating after breaking news commits
-
-GitHub blocks workflow-triggered pushes (via default GITHUB_TOKEN) from re-triggering other workflows, so breaking_news.yml commits to main were never firing deploy-pages.yml. Fixed by tracking whether a push actually happened (GITHUB_OUTPUT) and explicitly calling `gh workflow run deploy-pages.yml` only when new items were committed.
 
 
 
