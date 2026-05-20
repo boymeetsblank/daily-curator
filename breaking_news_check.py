@@ -629,7 +629,7 @@ def fetch_feed_articles(feed: dict, window_minutes: int) -> list[dict]:
 # ── Source: Reddit hot posts ──────────────────────────────────────────────────
 
 REDDIT_MIN_SCORE    = 150   # upvote threshold to surface a hot post
-REDDIT_HOT_LIMIT    = 10    # posts per subreddit
+REDDIT_HOT_LIMIT    = 20    # posts per subreddit
 
 _REDDIT_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; BreakingNewsBot/1.0; +https://boymeetsblank.github.io/daily-curator/)"
