@@ -944,25 +944,23 @@ def fetch_google_trends() -> list[dict]:
 
 def fetch_youtube_trends() -> list[dict]:
     """
-    Fetch top trending YouTube videos in the US via Apify.
-    Returns a list of trend items ready for Claude scoring, or [] if unavailable.
+    Fetch top trending YouTube videos in the US via the free public RSS feed.
+    Same endpoint the live feed uses — no Apify actor needed.
     """
-    print(f"\n▶️  Fetching YouTube Trending via Apify...")
+    rss_url = "https://www.youtube.com/feeds/videos.xml?chart=mostpopular&regionCode=US&hl=en&gl=US"
+    print(f"\n▶️  Fetching YouTube Trending via free RSS...")
     try:
-        items = _run_apify_actor(
-            "streamers~youtube-trending-videos",
-            {"regionCode": "US", "maxResults": 20},
-        )
+        feed = feedparser.parse(rss_url)
         now_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
         trends = []
-        for item in items[:20]:
-            name = (item.get("title") or item.get("name") or
-                    item.get("videoTitle") or "").strip()
-            if not name:
+        for entry in feed.entries[:20]:
+            title = (entry.get("title") or "").strip()
+            link  = entry.get("link") or entry.get("id") or None
+            if not title:
                 continue
             trends.append({
-                "title":     name,
-                "link":      None,
+                "title":     title,
+                "link":      link,
                 "summary":   "",
                 "source":    "YouTube Trending",
                 "published": now_str,

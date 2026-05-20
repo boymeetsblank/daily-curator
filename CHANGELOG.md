@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-20] Cut Apify YouTube actor — replaced with free RSS
+
+`fetch_youtube_trends()` in `daily_curator.py` now uses the free public YouTube trending RSS feed instead of the `streamers~youtube-trending-videos` Apify actor. Same data, zero Apify compute cost. Saves 3 actor runs/day. The live feed was already using this free RSS endpoint — the main curator now does the same.
+
 ## [2026-05-19] Live feed overhaul — more active, more social, smarter scoring
 
 Raised live feed quality gate from 6→5 and Sonnet escalation threshold from 9→8, so more content surfaces and more reaches the main picks feed. Added Reddit 6-hour age filter (hot.json can return stale posts). Added Bluesky What's Hot as a source (free public API, no auth). Updated Haiku prompt with velocity/recency signal and Bluesky context. Added pip caching to breaking_news.yml to reduce run latency. Lowered Reddit upvote threshold 200→150. Fixed 3 broken Reddit RSS URLs (missing .rss suffix on r/InterestingAsFuck, r/NotTheOnion, r/Damnthatsinteresting). Added r/nextfuckinglevel, r/BeAmazed, r/PublicFreakout, r/streetwear to sources. Added Reddit first-mover signal to main curator scoring prompt. Fixed main feed auto-opening archive when today only has live picks.
