@@ -114,7 +114,8 @@ SCORING GUIDE:
 IMPORTANT:
 - Score based on whether a well-connected, culturally aware person would consider this worth knowing today — regardless of topic. A major watch collab, a title fight, a surprise album drop, a viral moment, a landmark court ruling: anything genuinely significant has a fair shot.
 - If something feels important and you're unsure, score it generously. Don't penalize topics that don't fit a narrow content bucket.
-- For YouTube trending videos and Reddit posts: score on whether something actually just happened or is going viral that a culturally aware audience would care about.
+- For YouTube trending videos and Reddit posts: score on whether something actually just happened or is going viral that a culturally aware audience would care about. Prefer posts that are NEW and rising fast — a post gaining upvotes in the last few hours is more significant than one that accumulated the same score over days. Speed of rise is a strong cultural signal.
+- For Bluesky posts: score on whether the post captures a cultural moment, a viral reaction, or something a taste-forward audience would screenshot and share. Bluesky skews creative, cultural, and tech — weight accordingly.
 - Score 1 for routine political content: partisan commentary, policy debates, regular war/conflict updates, diplomatic news, Fed/inflation data, and regulatory coverage.
 - Exception: if a political or geopolitical event is so significant it transcends politics and becomes a cultural moment everyone needs to know about right now (a world leader falls, a landmark ruling that changes daily life, a war escalation that shifts the global order), score it on its actual magnitude — it may warrant a 9 or 10.{social_block}
 
@@ -153,7 +154,7 @@ Items:
     passed = []
     for candidate, result in zip(candidates, results):
         score = result.get("score", 0)
-        if score >= 6:
+        if score >= 5:
             candidate["haiku_score"] = score
             passed.append(candidate)
         else:
@@ -458,6 +459,62 @@ def fetch_youtube_trending_rss(known_set: set[str], now_iso: str) -> list[dict]:
     return candidates
 
 
+# ── Source: Bluesky What's Hot feed (free public API, no auth) ───────────────
+
+BLUESKY_HOT_URL  = "https://public.api.bsky.app/xrpc/app.bsky.feed.getFeed"
+BLUESKY_HOT_FEED = "at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.generator/whats-hot"
+
+def fetch_bluesky_trending(known_set: set[str], now_iso: str) -> list[dict]:
+    """
+    Fetch trending posts from Bluesky's What's Hot curated feed.
+    No authentication required — uses the public AT Protocol API.
+    """
+    try:
+        resp = requests.get(
+            BLUESKY_HOT_URL,
+            params={"feed": BLUESKY_HOT_FEED, "limit": 30},
+            headers=_HEADERS,
+            timeout=15,
+        )
+        resp.raise_for_status()
+        feed = resp.json().get("feed", [])
+    except Exception as e:
+        print(f"      ⚠️  Could not fetch Bluesky trending: {e}")
+        return []
+
+    candidates = []
+    for entry in feed:
+        post   = entry.get("post", {})
+        record = post.get("record", {})
+        text   = (record.get("text") or "").strip()
+        if not text or len(text) < 20:
+            continue
+
+        uri   = post.get("uri", "")  # at://did:.../app.bsky.feed.post/rkey
+        parts = uri.split("/")
+        did   = parts[2] if len(parts) > 2 else ""
+        rkey  = parts[-1] if parts else ""
+        link  = f"https://bsky.app/profile/{did}/post/{rkey}" if did and rkey else "https://bsky.app"
+
+        aid = item_id(f"bsky:{uri}")
+        if aid in known_set:
+            continue
+
+        likes = post.get("likeCount", 0)
+        print(f"   🦋 [Bluesky] {text[:70]} ({likes:,} likes)")
+        candidates.append({
+            "id":          aid,
+            "topic":       text[:200],
+            "traffic":     f"{likes:,} likes",
+            "detected_at": now_iso,
+            "search_url":  link,
+            "source_name": "Bluesky",
+            "source_type": "bluesky",
+        })
+
+    return candidates
+
+
 # ── Source: social trend topics as candidates (X, Google, TikTok) ────────────
 
 def build_social_candidates(trends: dict, known_set: set[str], now_iso: str) -> list[dict]:
@@ -571,7 +628,7 @@ def fetch_feed_articles(feed: dict, window_minutes: int) -> list[dict]:
 
 # ── Source: Reddit hot posts ──────────────────────────────────────────────────
 
-REDDIT_MIN_SCORE    = 200   # upvote threshold to surface a hot post
+REDDIT_MIN_SCORE    = 150   # upvote threshold to surface a hot post
 REDDIT_HOT_LIMIT    = 10    # posts per subreddit
 
 _REDDIT_HEADERS = {
@@ -637,6 +694,11 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
                 continue
             if score < REDDIT_MIN_SCORE:
                 continue
+
+            created_utc = post.get("created_utc", 0)
+            post_age_hours = (datetime.now(tz=timezone.utc).timestamp() - created_utc) / 3600
+            if post_age_hours > 6:
+                continue  # skip posts older than 6 hours — live feed needs fresh content
 
             aid = item_id(f"reddit:{post_id}")
             if aid in known_set:
@@ -744,6 +806,9 @@ def main():
     youtube_candidates = fetch_youtube_trending_rss(known_set, now_iso)
     candidates.extend(youtube_candidates)
 
+    bluesky_candidates = fetch_bluesky_trending(known_set, now_iso)
+    candidates.extend(bluesky_candidates)
+
     social_candidates = build_social_candidates(trends, known_set, now_iso)
     candidates.extend(social_candidates)
 
@@ -771,7 +836,7 @@ def main():
         new_items = []
 
     # 9+ items get escalated to Sonnet → main feed + push notification
-    escalate_items = [item for item in new_items if item.get("haiku_score", 0) >= 9]
+    escalate_items = [item for item in new_items if item.get("haiku_score", 0) >= 8]
     if escalate_items:
         print(f"\n   🚀 Escalating {len(escalate_items)} item(s) to Sonnet for main feed...")
         escalate_to_sonnet(escalate_items)

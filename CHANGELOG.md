@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-19] Live feed overhaul — more active, more social, smarter scoring
+
+Raised live feed quality gate from 6→5 and Sonnet escalation threshold from 9→8, so more content surfaces and more reaches the main picks feed. Added Reddit 6-hour age filter (hot.json can return stale posts). Added Bluesky What's Hot as a source (free public API, no auth). Updated Haiku prompt with velocity/recency signal and Bluesky context. Added pip caching to breaking_news.yml to reduce run latency. Lowered Reddit upvote threshold 200→150. Fixed 3 broken Reddit RSS URLs (missing .rss suffix on r/InterestingAsFuck, r/NotTheOnion, r/Damnthatsinteresting). Added r/nextfuckinglevel, r/BeAmazed, r/PublicFreakout, r/streetwear to sources. Added Reddit first-mover signal to main curator scoring prompt. Fixed main feed auto-opening archive when today only has live picks.
+
 ## [2026-05-10] Main feed: stronger cross-source signal + any-topic scoring philosophy + MMA sources
 
 Three changes to catch high-value stories that were slipping through. (1) Cross-source threshold lowered 3→2: stories covered by 2+ sources now trigger the TRENDING flag, giving more stories the benefit of the doubt. (2) Cross-source bonus upgraded to hard score floors: 2+ sources → minimum 7, 3+ sources → minimum 8, applied regardless of topic. (3) Haiku prompt rewritten from category-list framing ("sneakers, music, sports...") to audience-first framing ("well-connected, culturally aware person") — anything genuinely significant has a fair shot regardless of topic bucket. (4) Added MMA Fighting, MMA Junkie, and r/MMA as sources so major fight events surface reliably.

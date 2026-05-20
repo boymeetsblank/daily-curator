@@ -3388,8 +3388,15 @@
       isFirst = false;
     }
 
+    // Auto-open archive when today only has live-escalated picks (no regular run yet)
+    const todayDate = runs[0]?.ct_date || runs[0]?.date;
+    const todayPicks = runs
+      .filter(r => (r.ct_date || r.date) === todayDate)
+      .flatMap(r => r.picks);
+    const todayOnlyLive = todayPicks.length > 0 && todayPicks.every(p => p.from_live);
+
     const archiveWrapper = archiveHtml
-      ? `<div id="archive-section" style="display:none">${archiveHtml}</div>` : '';
+      ? `<div id="archive-section" style="display:${todayOnlyLive ? 'block' : 'none'}">${archiveHtml}</div>` : '';
 
     document.getElementById('feed-container').innerHTML = todayHtml + archiveWrapper;
 

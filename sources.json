@@ -175,20 +175,44 @@
   },
   {
     "name": "r/InterestingAsFuck",
-    "rss": "https://www.reddit.com/r/interestingasfuck/",
+    "rss": "https://www.reddit.com/r/interestingasfuck/.rss",
     "category": "wide net",
     "enabled": true
   },
   {
     "name": "r/NotTheOnion",
-    "rss": "https://www.reddit.com/r/nottheonion/",
+    "rss": "https://www.reddit.com/r/nottheonion/.rss",
     "category": "wide net",
     "enabled": true
   },
   {
     "name": "r/Damnthatsinteresting",
-    "rss": "https://www.reddit.com/r/Damnthatsinteresting/",
+    "rss": "https://www.reddit.com/r/Damnthatsinteresting/.rss",
     "category": "wide net",
+    "enabled": true
+  },
+  {
+    "name": "r/nextfuckinglevel",
+    "rss": "https://www.reddit.com/r/nextfuckinglevel/.rss",
+    "category": "wide net",
+    "enabled": true
+  },
+  {
+    "name": "r/BeAmazed",
+    "rss": "https://www.reddit.com/r/BeAmazed/.rss",
+    "category": "wide net",
+    "enabled": true
+  },
+  {
+    "name": "r/PublicFreakout",
+    "rss": "https://www.reddit.com/r/PublicFreakout/.rss",
+    "category": "wide net",
+    "enabled": true
+  },
+  {
+    "name": "r/streetwear",
+    "rss": "https://www.reddit.com/r/streetwear/.rss",
+    "category": "fashion",
     "enabled": true
   },
   {
