@@ -1150,13 +1150,13 @@ Articles to analyze:
                 trending_count += 1
 
     print(
-        f"   ✅ Cross-source trends: {trending_count} articles across 3+ sources; "
+        f"   ✅ Cross-source trends: {trending_count} articles across 2+ sources; "
         f"{new_cluster_idx} new cluster(s) assigned."
     )
     return articles
 
 
-def _build_scoring_prompt(articles: list[dict], trending_context_block: str, recently_covered: list[str] | None = None) -> str:
+def _build_scoring_prompt(articles: list[dict], trending_context_block: str, recently_covered: list[str] | None = None, live_clusters_block: str = "") -> str:
     """Build the Claude scoring prompt for a batch of articles (numbered 1..N)."""
     articles_text = ""
     for i, article in enumerate(articles, start=1):
@@ -1220,7 +1220,7 @@ TREND ITEMS: Some items have Source "X (Twitter) Trending", "Google Trends", "Yo
 REDDIT AS FIRST-MOVER SIGNAL: Items sourced from Reddit subreddits (r/*) represent real people actively discussing or sharing something right now. A Reddit post gaining traction — especially in culture, sneakers, music, or street culture communities — often surfaces a story hours before mainstream outlets pick it up. Treat Reddit upvote virality as strong evidence for the TRENDING criterion.
 
 CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 2+ sources, this is strong evidence the story has real cultural weight — multiple independent outlets chose to cover it. Score it a minimum of 7. If it's covered by 3+ sources, score it a minimum of 8. Apply this floor regardless of topic area.
-
+{live_clusters_block}
 CULTURAL VELOCITY SIGNALS: The following topics are currently trending live on X (Twitter), Google Trends, YouTube, and TikTok. If an article's subject directly intersects with one of these topics, that's a signal of real-time cultural momentum — treat it as additional evidence for the TRENDING and CULTURAL criteria. Do not add points mechanically; use this to inform your editorial judgment about whether the story is landing in the cultural conversation right now.
 {trending_context_block}
 
@@ -1262,14 +1262,14 @@ Here are the articles to evaluate:"""
     return static_preamble, dynamic_articles
 
 
-def _score_batch(batch: list[dict], trending_context_block: str, label: str, recently_covered: list[str] | None = None) -> list[dict]:
+def _score_batch(batch: list[dict], trending_context_block: str, label: str, recently_covered: list[str] | None = None, live_clusters_block: str = "") -> list[dict]:
     """
     Score a single batch of articles via Claude.
     Articles are numbered 1..N locally within the batch.
     On parse failure after one retry, logs a warning and returns the batch
     with score=0 rather than terminating the pipeline.
     """
-    static_preamble, dynamic_articles = _build_scoring_prompt(batch, trending_context_block, recently_covered)
+    static_preamble, dynamic_articles = _build_scoring_prompt(batch, trending_context_block, recently_covered, live_clusters_block)
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
     def call_claude():
@@ -1345,7 +1345,7 @@ def _score_batch(batch: list[dict], trending_context_block: str, label: str, rec
     return enriched
 
 
-def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[str] | None = None, recently_covered: list[str] | None = None) -> list[dict]:
+def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[str] | None = None, recently_covered: list[str] | None = None, live_clusters: list[dict] | None = None) -> list[dict]:
     if not articles:
         return []
 
@@ -1356,6 +1356,18 @@ def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[st
         print(f"   📊 Injecting {len(trending_topics[:30])} live trending topics into scoring prompt.")
     else:
         trending_context_block = "(No live trending data available for this run.)"
+
+    # Build live cluster context block — confirmed real-time multi-signal stories
+    live_clusters_block = ""
+    if live_clusters:
+        cluster_lines = "\n".join(
+            f"  • {c['topic']} ({c['signal_count']} independent signals)"
+            for c in live_clusters
+        )
+        live_clusters_block = f"""
+LIVE FEED CONFIRMED STORIES: The following stories are already confirmed trending in the real-time live feed — multiple independent signals from different platforms (Reddit, YouTube, Bluesky, X, news RSS) have clustered around them in the last 24 hours. If any article in this batch covers the same story as one of these, apply a score floor: 3–5 signals → minimum 7; 6+ signals → minimum 8. This is the strongest possible evidence of real-time cultural momentum.
+{cluster_lines}"""
+        print(f"   🔴 Injecting {len(live_clusters)} live cluster(s) into scoring prompt.")
 
     total = len(articles)
     batches = [articles[i:i + CLAUDE_SCORING_BATCH_SIZE] for i in range(0, total, CLAUDE_SCORING_BATCH_SIZE)]
@@ -1370,7 +1382,7 @@ def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[st
     for n, batch in enumerate(batches, 1):
         label = f"batch {n}/{n_batches}" if n_batches > 1 else "batch"
         print(f"   Scoring {label} ({len(batch)} items)...")
-        enriched.extend(_score_batch(batch, trending_context_block, label, recently_covered))
+        enriched.extend(_score_batch(batch, trending_context_block, label, recently_covered, live_clusters_block))
 
     print(f"✅ Claude evaluated all {len(enriched)} articles.")
     return enriched
@@ -1848,6 +1860,36 @@ def load_recently_covered_topics(days: int = 3) -> list[str]:
     return entries
 
 
+def load_live_feed_clusters() -> list[dict]:
+    """
+    Load escalated live cluster topics from breaking_news_state.json.
+    Returns list of {topic, signal_count} for clusters already pushed to the main feed.
+    Used to inject confirmed real-time momentum into the main curator's scoring prompt.
+    """
+    state_file = "breaking_news_state.json"
+    if not os.path.exists(state_file):
+        return []
+    try:
+        with open(state_file, encoding="utf-8") as f:
+            state = json.load(f)
+        now = datetime.now(tz=timezone.utc)
+        clusters = state.get("live_clusters", {})
+        escalated = []
+        for c in clusters.values():
+            if not c.get("picks_file"):
+                continue  # cluster exists but hasn't hit the escalation threshold yet
+            created = datetime.fromisoformat(c["created_at"])
+            if (now - created).total_seconds() / 3600 > 24:
+                continue  # older than 24 hours — stale
+            escalated.append({
+                "topic":        c["topic"],
+                "signal_count": len(c["item_ids"]),
+            })
+        return escalated
+    except Exception:
+        return []
+
+
 def write_all_articles_json(evaluated_articles: list[dict], exclude_urls: set[str] | None = None) -> str:
     """
     Write scored articles (before MIN_SCORE / MAX_PICKS filters) to all_articles/.
@@ -2114,7 +2156,11 @@ def main():
     if recently_covered:
         print(f"   📚 Loaded {len(recently_covered)} recently-covered topic(s) for dedup.")
 
-    evaluated_articles = evaluate_articles_with_claude(all_items, trending_topics=trending_topics, recently_covered=recently_covered)
+    live_clusters = load_live_feed_clusters()
+    if live_clusters:
+        print(f"   🔴 Loaded {len(live_clusters)} escalated live cluster(s) for scoring boost.")
+
+    evaluated_articles = evaluate_articles_with_claude(all_items, trending_topics=trending_topics, recently_covered=recently_covered, live_clusters=live_clusters)
 
     # ── Cross-run cluster merge: match articles to prior-run clusters ─────────
     print(f"\n🔗 Merging cross-run clusters...")
