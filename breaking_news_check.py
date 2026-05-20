@@ -34,6 +34,8 @@ MAX_LIVE_PER_SOURCE     = 5    # max items per source within the cap window
 SOURCE_CAP_WINDOW_HOURS = 2    # rolling window for per-source cap
 MAX_FEED_SIZE           = 40   # max total items in the live feed at once
 FAILED_IDS_TTL_HOURS    = 4    # failed items re-enter the pipeline after this long
+CLUSTER_THRESHOLD       = 3    # items in a cluster before escalating to main feed
+CLUSTER_TTL_HOURS       = 24   # prune clusters from state after this long
 
 SOURCES_FILE        = "sources.json"
 STATE_FILE          = "breaking_news_state.json"
@@ -256,6 +258,176 @@ Items:
         f.write(header + "\n".join(blocks))
 
     print(f"   📝 Wrote {len(blocks)} live pick(s) to {filepath}")
+
+
+def cluster_new_items(new_items: list[dict], live_clusters: dict, api_key: str) -> dict:
+    """
+    Uses Haiku to assign new live feed items to existing clusters or create new ones.
+    Returns updated live_clusters dict. Items get a 'cluster_id' field attached if clustered.
+    """
+    if not new_items or not api_key:
+        return live_clusters
+
+    cluster_block = ""
+    if live_clusters:
+        lines = [
+            f"  [{cid}] {c['topic']} ({len(c['item_ids'])} items)"
+            for cid, c in live_clusters.items()
+        ]
+        cluster_block = "EXISTING STORY CLUSTERS:\n" + "\n".join(lines) + "\n\n"
+
+    items_block = "\n".join(
+        f"{i+1}. [Source: {item['source_name']}] {item['topic']}"
+        for i, item in enumerate(new_items)
+    )
+
+    prompt = f"""You are a news clustering engine for a live culture feed.
+
+{cluster_block}NEW ITEMS TO CLASSIFY:
+{items_block}
+
+For each new item, decide ONE of:
+A) It covers the SAME specific event as an existing cluster → return that cluster's exact ID string
+B) It starts a NEW cluster (a distinct event generating multiple signals) → return a concise topic label
+C) It is standalone — does not cluster with anything → return null for both fields
+
+RULES:
+- Only cluster items about the SAME SPECIFIC EVENT. Multiple signals about one game, one release, one moment = same cluster. Two unrelated stories = different clusters.
+- Generic posts, bare trend names without context, or unrelated items = standalone (null).
+- New cluster topic labels should be specific: "Knicks win Game 1 of NBA Eastern Conference Finals", not just "NBA".
+
+Return a JSON array, one object per item, same order as input:
+[{{"item_index": 0, "existing_cluster_id": "<id-string-or-null>", "new_cluster_topic": "<topic-if-new-or-null>"}}]"""
+
+    try:
+        import anthropic
+        client = anthropic.Anthropic(api_key=api_key)
+        resp = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=60 * len(new_items),
+            messages=[{"role": "user", "content": prompt}],
+        )
+        raw = resp.content[0].text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("```")[1]
+            if raw.startswith("json"):
+                raw = raw[4:]
+        results = json.loads(raw)
+    except Exception as e:
+        print(f"   ⚠️  Clustering failed ({e}) — skipping.")
+        return live_clusters
+
+    now_iso = datetime.now(tz=timezone.utc).isoformat()
+
+    for item, result in zip(new_items, results):
+        item_id = item["id"]
+        existing_cid = result.get("existing_cluster_id")
+        new_topic    = result.get("new_cluster_topic")
+
+        if existing_cid and existing_cid in live_clusters:
+            if item_id not in live_clusters[existing_cid]["item_ids"]:
+                live_clusters[existing_cid]["item_ids"].append(item_id)
+            item["cluster_id"] = existing_cid
+        elif new_topic:
+            cid = hashlib.md5(new_topic.encode()).hexdigest()[:16]
+            if cid not in live_clusters:
+                live_clusters[cid] = {
+                    "topic":                new_topic,
+                    "item_ids":             [],
+                    "created_at":           now_iso,
+                    "last_escalated_size":  0,
+                    "last_escalated_at":    None,
+                }
+            if item_id not in live_clusters[cid]["item_ids"]:
+                live_clusters[cid]["item_ids"].append(item_id)
+            item["cluster_id"] = cid
+
+    return live_clusters
+
+
+def escalate_cluster_to_sonnet(cluster: dict, cluster_items: list[dict]) -> None:
+    """
+    Synthesizes a cluster of related live feed items into one unified main feed story.
+    Called when a cluster hits CLUSTER_THRESHOLD items (and every CLUSTER_THRESHOLD more).
+    """
+    if not cluster_items:
+        return
+
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        return
+
+    items_block = "\n".join(
+        f"{i+1}. [Source: {item['source_name']}] {item['topic']}"
+        for i, item in enumerate(cluster_items)
+    )
+
+    prompt = f"""You are the senior editor for Blank, a culture intelligence platform.
+
+The following {len(cluster_items)} signals from the live feed all cover the same story: "{cluster['topic']}"
+
+{items_block}
+
+This story earned its place in the main feed through the weight of coverage — multiple independent sources are all pointing at the same event. Write ONE unified editorial story that captures the full picture.
+
+WHY IT MATTERS: 2–3 sentences. Be specific about what happened, why it matters, and what it means right now. Editorial voice — not a summary, a take.
+
+HOOK: A punchy 2–3 line carousel headline, separated by /. Write like a text to a friend: fragments OK, each line a distinct beat. 7 words or fewer per line. Punctuate naturally — complete thoughts get periods, flowing fragments don't.
+
+Respond with JSON only:
+{{"title": "<concise headline>", "why": "<2-3 sentence editorial context>", "hook": "<2-3 lines separated by />"}}"""
+
+    try:
+        import anthropic
+        client = anthropic.Anthropic(api_key=api_key)
+        resp = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=400,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        raw = resp.content[0].text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("```")[1]
+            if raw.startswith("json"):
+                raw = raw[4:]
+        result = json.loads(raw)
+    except Exception as e:
+        print(f"   ⚠️  Cluster Sonnet escalation failed: {e}")
+        return
+
+    title = result.get("title", cluster["topic"])
+    why   = result.get("why", "").strip()
+    hook  = result.get("hook", "").strip()
+
+    primary = max(cluster_items, key=lambda x: x.get("haiku_score", 0))
+    n_src   = len(cluster_items)
+    src_label = f"{primary['source_name']} + {n_src - 1} more" if n_src > 1 else primary["source_name"]
+
+    now          = datetime.now(tz=timezone.utc)
+    timestamp    = now.strftime("%Y-%m-%d-%H%M")
+    display_time = now.strftime("%Y-%m-%d at %I:%M %p")
+
+    header  = f"# Live Cluster — {display_time}\n\n"
+    header += f"> **Source:** Live feed — {n_src}-signal cluster\n"
+    header += f"> **Picks surfaced:** 1\n\n---\n\n"
+
+    block  = f"## Pick #1 — Score: 8/10\n\n"
+    block += f"**{title}**\n"
+    block += f"*{src_label}*\n"
+    block += f"[Read the full article →]({primary['search_url']})\n"
+    block += "**Live Pick:** true\n"
+    if why:
+        block += f"\n**Why it matters:**\n{why}\n"
+    if hook:
+        block += f"\n**Hook:**\n{hook}\n"
+    block += "\n---\n"
+
+    os.makedirs("picks", exist_ok=True)
+    filepath = f"picks/picks-{timestamp}.md"
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(header + block)
+
+    print(f"   🔗 Cluster escalated ({n_src} signals) → {filepath}: {title[:60]}")
 
 
 def send_breaking_push(new_items: list[dict]) -> None:
@@ -728,7 +900,7 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
 
 def load_state() -> dict:
     if not os.path.exists(STATE_FILE):
-        return {"known_ids": [], "failed_ids": {}, "last_checked": None}
+        return {"known_ids": [], "failed_ids": {}, "live_clusters": {}, "last_checked": None}
     try:
         with open(STATE_FILE, encoding="utf-8") as f:
             state = json.load(f)
@@ -742,16 +914,24 @@ def load_state() -> dict:
             k: v for k, v in raw_failed.items()
             if datetime.fromisoformat(v) > cutoff
         }
+        # Prune clusters older than CLUSTER_TTL_HOURS
+        cluster_cutoff = datetime.now(tz=timezone.utc) - timedelta(hours=CLUSTER_TTL_HOURS)
+        raw_clusters = state.get("live_clusters", {})
+        state["live_clusters"] = {
+            cid: c for cid, c in raw_clusters.items()
+            if datetime.fromisoformat(c["created_at"]) > cluster_cutoff
+        }
         return state
     except Exception:
-        return {"known_ids": [], "failed_ids": {}, "last_checked": None}
+        return {"known_ids": [], "failed_ids": {}, "live_clusters": {}, "last_checked": None}
 
 
-def save_state(known_ids: list[str], failed_ids: dict[str, str]) -> None:
+def save_state(known_ids: list[str], failed_ids: dict[str, str], live_clusters: dict) -> None:
     state = {
-        "known_ids":    known_ids[-MAX_KNOWN_IDS:],
-        "failed_ids":   failed_ids,
-        "last_checked": datetime.now(tz=timezone.utc).isoformat(),
+        "known_ids":     known_ids[-MAX_KNOWN_IDS:],
+        "failed_ids":    failed_ids,
+        "live_clusters": live_clusters,
+        "last_checked":  datetime.now(tz=timezone.utc).isoformat(),
     }
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
@@ -773,10 +953,11 @@ def main():
     print("\n⚡ Breaking News Monitor")
     now_iso = datetime.now(tz=timezone.utc).isoformat()
 
-    state     = load_state()
-    known_ids = list(state.get("known_ids", []))
-    failed_ids = dict(state.get("failed_ids", {}))
-    known_set = set(known_ids) | set(failed_ids.keys())
+    state        = load_state()
+    known_ids    = list(state.get("known_ids", []))
+    failed_ids   = dict(state.get("failed_ids", {}))
+    live_clusters = dict(state.get("live_clusters", {}))
+    known_set    = set(known_ids) | set(failed_ids.keys())
 
     # Load social trends cache (written by daily_curator.py 3×/day — zero extra Apify cost)
     # then top up Google Trends from the free daily endpoint if the cached data is stale.
@@ -841,13 +1022,48 @@ def main():
     else:
         new_items = []
 
-    # 9+ items get escalated to Sonnet → main feed + push notification
+    # ── Cluster new items with existing live feed ──────────────────────────────
+    if new_items:
+        api_key = os.environ.get("ANTHROPIC_API_KEY")
+        print(f"\n   🧩 Clustering {len(new_items)} new item(s) against {len(live_clusters)} existing cluster(s)...")
+        live_clusters = cluster_new_items(new_items, live_clusters, api_key)
+
+        # Load current live feed items so we can gather full cluster context for escalation
+        existing_for_cluster = load_breaking_news()
+        existing_by_id = {item["id"]: item for item in existing_for_cluster}
+
+        for cid, cluster in live_clusters.items():
+            item_count = len(cluster["item_ids"])
+            last_size  = cluster.get("last_escalated_size", 0)
+
+            should_escalate = (
+                (last_size == 0 and item_count >= CLUSTER_THRESHOLD) or
+                (last_size > 0 and (item_count - last_size) >= CLUSTER_THRESHOLD)
+            )
+
+            if should_escalate:
+                # Gather all cluster items from new items + existing live feed
+                new_by_id = {item["id"]: item for item in new_items}
+                cluster_items = []
+                for iid in cluster["item_ids"]:
+                    if iid in new_by_id:
+                        cluster_items.append(new_by_id[iid])
+                    elif iid in existing_by_id:
+                        cluster_items.append(existing_by_id[iid])
+
+                if cluster_items:
+                    print(f"\n   🔗 Cluster '{cluster['topic']}' reached {item_count} signals — escalating to Sonnet...")
+                    escalate_cluster_to_sonnet(cluster, cluster_items)
+                    cluster["last_escalated_size"] = item_count
+                    cluster["last_escalated_at"]   = now_iso
+
+    # ── Individual item escalation: 9+ haiku score → Sonnet + push ───────────
     escalate_items = [item for item in new_items if item.get("haiku_score", 0) >= 9]
     if escalate_items:
         print(f"\n   🚀 Escalating {len(escalate_items)} item(s) to Sonnet for main feed...")
         escalate_to_sonnet(escalate_items)
 
-    print(f"\n   {'🔴' if new_items else '✅'} {len(new_items)} new item(s) this check ({len(escalate_items)} escalated).")
+    print(f"\n   {'🔴' if new_items else '✅'} {len(new_items)} new item(s) this check ({len(escalate_items)} individually escalated).")
 
     # Route candidates: passed → known_ids (permanent), failed → failed_ids (4h TTL)
     passed_ids = {item["id"] for item in new_items}
@@ -894,7 +1110,7 @@ def main():
         send_breaking_push(escalate_items)
 
     # ── Persist state ─────────────────────────────────────────────────────────
-    save_state(known_ids, failed_ids)
+    save_state(known_ids, failed_ids, live_clusters)
     print(f"   💾 State saved — {len(known_ids)} known, {len(failed_ids)} on 4h suppression\n")
 
 
