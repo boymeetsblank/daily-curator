@@ -1,34 +1,5 @@
 {
   "known_ids": [
-    "a8eb631131b3",
-    "01d03e2d7233",
-    "7440aea02e8a",
-    "8bd1bfbb72cc",
-    "df4e1a763b00",
-    "0d9112fa2fd4",
-    "023768584683",
-    "b0b1b3ad49e1",
-    "5e3a39b70473",
-    "0f174f7d1cda",
-    "cf2761d7faa7",
-    "f072a31d87cb",
-    "02e745211b2d",
-    "9a85b396e294",
-    "74b6d7555cad",
-    "a0ed3443cb02",
-    "ce38f27e9868",
-    "2d1fc5c569dc",
-    "e0769902c333",
-    "c88e12fc76e9",
-    "8bc11715dbcc",
-    "f997718f0212",
-    "1d1967b1baef",
-    "c2c8b8cd0fbc",
-    "09c1759bab2b",
-    "aabe73f3569e",
-    "ce08229b3f11",
-    "63edab56ca46",
-    "2db25a3fa60c",
     "b942ecadedbe",
     "e25ed588f73f",
     "fa60a1903737",
@@ -499,34 +470,38 @@
     "99a5a7d16e87",
     "c0c300d89a1a",
     "e0a12140429e",
-    "cd90adce052a"
+    "cd90adce052a",
+    "c10adec9a6e5",
+    "2256de190b01",
+    "6a466a01f13a",
+    "6e7c42603258",
+    "6131ba4db945",
+    "825658b2d795",
+    "5d2246da90c7",
+    "c4ea9218c5f0",
+    "a98d498f846b",
+    "dc8294f1aa45",
+    "ca4e818262f6",
+    "1d78cd384598",
+    "7d6fd1915332",
+    "7a7ff34b8bd4",
+    "8ad8deb31608",
+    "7e693c7c2091",
+    "bbaed57bb918",
+    "11ec8b3b563e",
+    "fb0ba42f9c10",
+    "1ee2e33024ef",
+    "05cb13eb1cee",
+    "fb5b455ba41d",
+    "5cff5ed7e90f",
+    "07775cef5a70",
+    "3036a982d00a",
+    "7e6138e38a8a",
+    "ebdbdd3ac1aa",
+    "54f9e6712e40",
+    "1b3ff6391b5c"
   ],
   "failed_ids": {
-    "327b3608fb64": "2026-05-20T17:33:53.864477+00:00",
-    "896fb5182763": "2026-05-20T17:33:53.864477+00:00",
-    "e6ba09a3bb38": "2026-05-20T17:33:53.864477+00:00",
-    "a2402f46eba1": "2026-05-20T17:33:53.864477+00:00",
-    "36018728741e": "2026-05-20T17:33:53.864477+00:00",
-    "c35574809f00": "2026-05-20T17:33:53.864477+00:00",
-    "dacaf5e6c556": "2026-05-20T17:33:53.864477+00:00",
-    "41c652f08659": "2026-05-20T17:33:53.864477+00:00",
-    "4a8101bb8c9b": "2026-05-20T17:33:53.864477+00:00",
-    "1c43383d7ae7": "2026-05-20T17:33:53.864477+00:00",
-    "77f243aebcba": "2026-05-20T17:33:53.864477+00:00",
-    "3771d983f94b": "2026-05-20T17:33:53.864477+00:00",
-    "17ffc53a7177": "2026-05-20T17:33:53.864477+00:00",
-    "1af401e04080": "2026-05-20T17:33:53.864477+00:00",
-    "ebff393616f6": "2026-05-20T17:33:53.864477+00:00",
-    "307859840821": "2026-05-20T17:33:53.864477+00:00",
-    "70e12f781cfe": "2026-05-20T17:33:53.864477+00:00",
-    "aa899505b6e8": "2026-05-20T17:33:53.864477+00:00",
-    "d4cfe4a3348c": "2026-05-20T17:33:53.864477+00:00",
-    "542ef9c0c8b8": "2026-05-20T17:33:53.864477+00:00",
-    "e38d6fc6b2d6": "2026-05-20T17:33:53.864477+00:00",
-    "81ef0870be70": "2026-05-20T17:33:53.864477+00:00",
-    "4735e767200f": "2026-05-20T17:33:53.864477+00:00",
-    "6f72bc6a1701": "2026-05-20T17:33:53.864477+00:00",
-    "a619f91991a2": "2026-05-20T17:33:53.864477+00:00",
     "9ac5d8336519": "2026-05-20T19:52:30.450472+00:00",
     "7251f83ead86": "2026-05-20T19:52:30.450472+00:00",
     "ed27fa7ecba2": "2026-05-20T19:52:30.450472+00:00",
@@ -546,7 +521,21 @@
     "425816577b55": "2026-05-20T19:52:30.450472+00:00",
     "5941efb940ed": "2026-05-20T19:52:30.450472+00:00",
     "541dd961ed20": "2026-05-20T19:52:30.450472+00:00",
-    "4e54126622a1": "2026-05-20T19:52:30.450472+00:00"
+    "4e54126622a1": "2026-05-20T19:52:30.450472+00:00",
+    "722301954612": "2026-05-20T21:42:38.130654+00:00",
+    "3ec0c0be9be1": "2026-05-20T21:42:38.130654+00:00",
+    "1af401e04080": "2026-05-20T21:42:38.130654+00:00",
+    "0da6fa060d31": "2026-05-20T21:42:38.130654+00:00",
+    "fbb6697897e2": "2026-05-20T21:42:38.130654+00:00",
+    "df3acb416169": "2026-05-20T21:42:38.130654+00:00",
+    "d21fa333d215": "2026-05-20T21:42:38.130654+00:00",
+    "35f500262b3b": "2026-05-20T21:42:38.130654+00:00",
+    "542ef9c0c8b8": "2026-05-20T21:42:38.130654+00:00",
+    "5498c41d58c8": "2026-05-20T21:42:38.130654+00:00",
+    "3e22513b6ea0": "2026-05-20T21:42:38.130654+00:00",
+    "dc31d1d481aa": "2026-05-20T21:42:38.130654+00:00",
+    "b543b137cf92": "2026-05-20T21:42:38.130654+00:00",
+    "6f72bc6a1701": "2026-05-20T21:42:38.130654+00:00"
   },
   "live_clusters": {
     "724e7cc5088c25d6": {
@@ -598,7 +587,8 @@
     "7cdf8e1f6d2b43f3": {
       "topic": "Ariana Grande Dangerous Woman Outtake Release",
       "item_ids": [
-        "b4ff1408d047"
+        "b4ff1408d047",
+        "a98d498f846b"
       ],
       "created_at": "2026-05-20T17:34:28.757910+00:00",
       "last_escalated_size": 0,
@@ -837,7 +827,215 @@
       "created_at": "2026-05-20T19:53:05.201686+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "5e67346febb8aabe": {
+      "topic": "Sneaker Politics 20th Anniversary PUMA H-Street Trophies Release",
+      "item_ids": [
+        "c10adec9a6e5"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2f01e941ad310f55": {
+      "topic": "Vans Old Skool Souvenir 2026 Drops",
+      "item_ids": [
+        "2256de190b01"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "978307e9d79c0712": {
+      "topic": "Nike Air Max 90 Scorpion Collection",
+      "item_ids": [
+        "6a466a01f13a"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "361b5ccfd16163a5": {
+      "topic": "Apple Music AI-Generated Songs Usage Statistics",
+      "item_ids": [
+        "6e7c42603258"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d215db70da7969d7": {
+      "topic": "Peso Pluma Adidas 2026 World Cup Opening Watch Party Performance",
+      "item_ids": [
+        "6131ba4db945"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b15f7a0132f3c8a2": {
+      "topic": "Peanuts Music Owners Legal Action Charlie Brown Christmas Songs",
+      "item_ids": [
+        "825658b2d795"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "031c71ab5a6cb13f": {
+      "topic": "Shamrock Capital Entertainment IP Fund Raises $800 Million",
+      "item_ids": [
+        "5d2246da90c7"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "758a7755072b25c1": {
+      "topic": "Iron Maiden 2026 Run for Your Lives Tour Ticket Information",
+      "item_ids": [
+        "c4ea9218c5f0"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "24fe125989fe3e17": {
+      "topic": "Obsession Film Inde Navarrette Character Humanization Interview",
+      "item_ids": [
+        "dc8294f1aa45"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1640f85758986669": {
+      "topic": "Ciar\u00e1n Hinds Joins Isle of Man Movie with Channing Tatum",
+      "item_ids": [
+        "ca4e818262f6"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5cb7c206ba7f5e9b": {
+      "topic": "Schmigadoon 2027 North American Tour Launch",
+      "item_ids": [
+        "1d78cd384598"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d94b2bd2f0616849": {
+      "topic": "ATG Entertainment Possible Sale Report",
+      "item_ids": [
+        "7d6fd1915332"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9323619498a72f66": {
+      "topic": "No Fakes Act Revised Bill Unauthorized Digital Replicas",
+      "item_ids": [
+        "7a7ff34b8bd4"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "494de9a6b7e5d0d6": {
+      "topic": "Anthropic xAI Compute Agreement $1.25 Billion Monthly",
+      "item_ids": [
+        "8ad8deb31608"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "daad484924133784": {
+      "topic": "Sam Altman Y Combinator Startup Offer",
+      "item_ids": [
+        "7e693c7c2091"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d9890d6bf8167b52": {
+      "topic": "Lucra Non-AI Startup Funding $20 Million",
+      "item_ids": [
+        "bbaed57bb918"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5eff4a847150b4ec": {
+      "topic": "SpaceX IPO Filing Public Disclosure",
+      "item_ids": [
+        "11ec8b3b563e",
+        "fb0ba42f9c10"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1e601df090b8ea99": {
+      "topic": "Microsoft Carbon Removal Plans Update",
+      "item_ids": [
+        "1ee2e33024ef"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "155ca4460e50ebdd": {
+      "topic": "Masters of the Universe Final Trailer Release",
+      "item_ids": [
+        "05cb13eb1cee"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9b4632660a9f4bca": {
+      "topic": "Intuit Workforce Reduction 17% Layoffs",
+      "item_ids": [
+        "fb5b455ba41d"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7e298200b786a484": {
+      "topic": "E.l.f. Beauty Tariff Price Increase Rollback",
+      "item_ids": [
+        "5cff5ed7e90f"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e10815bfa357e9c6": {
+      "topic": "Target Q4 Earnings Beat Sales Outlook Raise",
+      "item_ids": [
+        "07775cef5a70"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6a0d30c71cae02a3": {
+      "topic": "Lowes Earnings Beat Housing Market Performance",
+      "item_ids": [
+        "3036a982d00a"
+      ],
+      "created_at": "2026-05-20T21:43:09.240049+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-20T19:53:05.202815+00:00"
+  "last_checked": "2026-05-20T21:43:09.241480+00:00"
 }
