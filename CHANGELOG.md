@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-20] Main feed: live cluster awareness — confirmed stories get a score floor
+
+`daily_curator.py` now reads `breaking_news_state.json` before scoring. Any live feed cluster already escalated to the main feed (i.e. confirmed by 3+ independent real-time signals) is injected into the Sonnet scoring prompt as a "LIVE FEED CONFIRMED STORIES" block. Articles that match a live cluster topic receive a score floor: 3–5 live signals → minimum 7; 6+ signals → minimum 8. This closes the gap between the live and main feed pipelines — if a story has been building for hours across Reddit, YouTube, X, and Bluesky, the 3×/day curator runs now know about it and prioritize it accordingly. Also fixed misleading log message in `detect_cross_source_trends()` (said "3+ sources" but threshold is 2+).
+
 ## [2026-05-20] Fix: Google Trends — dedicated TTL field + remove news-only filter
 
 Two bugs fixed. (1) `refresh_google_trends()` was reading the global `fetched_at` timestamp (written by `daily_curator.py`'s Apify run) as its TTL, causing Google trends to appear "fresh" for up to 10 minutes after an Apify run even though the live refresh hadn't fired. Fixed with a dedicated `google_fetched_at` field, independent of Apify's timestamp. (2) Removed `ns=15` parameter from the Google Trends URL — this flag was silently filtering to news-only topics, excluding entertainment, sports, and celebrity trends. Full trending list now flows through.
@@ -84,8 +88,5 @@ Replaced the blunt "no period at the end of every line" rule with nuanced guidan
 
 GitHub blocks workflow-triggered pushes (via default GITHUB_TOKEN) from re-triggering other workflows, so breaking_news.yml commits to main were never firing deploy-pages.yml. Fixed by tracking whether a push actually happened (GITHUB_OUTPUT) and explicitly calling `gh workflow run deploy-pages.yml` only when new items were committed.
 
-## [2026-04-30] Digest slide polish: remove borders, widen dividers, anchor text-only layout
-
-Removed the outer border from all slides (cover and story). Widened the divider rule from 60px to 160px on both image and text-only story slides. On text-only slides, switched the content block from vertically centered to bottom-anchored (matching the image-path layout) and added a bottom gradient overlay starting at y=600 to ground the text zone instead of letting it float.
 
 
