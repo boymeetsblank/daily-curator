@@ -64,7 +64,7 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
     """
     Batch quality gate via Claude Haiku.
 
-    Scores each candidate 1-10. Items scoring >= 8 are returned with
+    Scores each candidate 1-10. Items scoring >= 5 are returned with
     haiku_score attached. Items scoring 9+ are candidates for Sonnet
     escalation and push notification.
 
@@ -1088,6 +1088,7 @@ def save_state(known_ids: list[str], failed_ids: dict[str, str], live_clusters: 
     }
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
+        f.write("\n")
 
 
 def load_breaking_news() -> list[dict]:

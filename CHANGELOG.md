@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-20] Fix: Google Trends — dedicated TTL field + remove news-only filter
+
+Two bugs fixed. (1) `refresh_google_trends()` was reading the global `fetched_at` timestamp (written by `daily_curator.py`'s Apify run) as its TTL, causing Google trends to appear "fresh" for up to 10 minutes after an Apify run even though the live refresh hadn't fired. Fixed with a dedicated `google_fetched_at` field, independent of Apify's timestamp. (2) Removed `ns=15` parameter from the Google Trends URL — this flag was silently filtering to news-only topics, excluding entertainment, sports, and celebrity trends. Full trending list now flows through.
+
+## [2026-05-20] Push notifications for cluster escalation and updates
+
+`escalate_cluster_to_sonnet()` now calls `send_breaking_push()` on both escalation paths: initial story escalation (when a cluster first hits 3 signals) sends the synthesized headline and "Why it matters" as the notification body; re-escalation (every 3 additional signals) sends an "Update: {topic}" notification with the new timestamped update paragraph. Users are notified in real time whenever a live cluster story is created or updated in the main feed.
+
 ## [2026-05-20] Live feed: X trending and Google Trends now refresh every 10 minutes
 
 X (Twitter) trending topics now refresh every 10 minutes via trends24.in (free, no API key) instead of waiting for the 3×/day Apify run. Google Trends TTL tightened from 60 → 10 minutes. Combined with Reddit hot posts (already real-time), YouTube trending RSS (real-time), and Bluesky What's Hot (real-time), all five major social signals now feed the live feed continuously every ~10 minutes rather than in daily batches.
@@ -79,15 +87,5 @@ GitHub blocks workflow-triggered pushes (via default GITHUB_TOKEN) from re-trigg
 ## [2026-04-30] Digest slide polish: remove borders, widen dividers, anchor text-only layout
 
 Removed the outer border from all slides (cover and story). Widened the divider rule from 60px to 160px on both image and text-only story slides. On text-only slides, switched the content block from vertically centered to bottom-anchored (matching the image-path layout) and added a bottom gradient overlay starting at y=600 to ground the text zone instead of letting it float.
-
-## [2026-04-30] Hook prompt: drop TRIGGER mechanic, break three-sentence pattern
-
-Removed the `[TRIGGER: X]` emotional-label requirement — it was forcing Claude into a formulaic "emotion → three parallel sentences with periods" structure. Replaced with guidance to write like a text to a friend: fragments OK, lines can flow together as one broken thought, no period at the end of every line, vary between 2 and 3 lines. Updated the JSON example to show a natural-sounding hook instead of the old "Nobody saw this coming. / Not even the insiders. / It changes everything." pattern.
-
----
-
-## [2026-04-30] Fix: digest slide headline text no longer clips at right edge
-
-`_wrap_text` and `_truncate_lines` were using `draw.textlength()` (advance-width metric) to check if text fits within the content area. For Bebas Neue at 100px, actual rendered glyph extents exceed the advance width, so long hook lines appeared to fit but overflowed the canvas. Switched both functions to `draw.textbbox()` which returns real pixel bounds (including sidebearings), extracted into a shared `_text_width()` helper.
 
 
