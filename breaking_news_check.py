@@ -427,6 +427,12 @@ Return JSON only: {{"update": "<1-2 sentence update>"}}"""
             cluster["why_text"] = updated_why
             n_src = len(cluster_items)
             print(f"   🔗 Cluster updated ({n_src} signals) → {picks_file}: +{len(new_items_only)} new signal(s)")
+            send_breaking_push([{
+                "topic": f"Update: {cluster['topic']}",
+                "context": update_text[:120],
+                "search_url": FEED_URL,
+                "source_name": "Live Cluster Update",
+            }])
         else:
             # File missing — fall through to write a fresh one
             is_update = False
@@ -503,6 +509,12 @@ Respond with JSON only:
         cluster["picks_file"] = filepath
         cluster["why_text"]   = why
         print(f"   🔗 Cluster escalated ({n_src} signals) → {filepath}: {title[:60]}")
+        send_breaking_push([{
+            "topic": title,
+            "context": why[:120],
+            "search_url": FEED_URL,
+            "source_name": "Live Cluster",
+        }])
 
 
 def send_breaking_push(new_items: list[dict]) -> None:
