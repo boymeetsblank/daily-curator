@@ -132,16 +132,18 @@ BARE TRENDING TOPIC NAMES (X, Google, TikTok trend topics that are just a name o
 - Score 5 for a name that could trend for many reasons. Score 6 when the name clearly belongs to a culturally significant person, team, or moment where trending almost certainly means something just happened.
 - Do NOT score these 1. They belong in the live feed as early signals and are critical for clustering related items into a coherent story.
 
-ENGAGEMENT SIGNALS: Numbers in brackets after an item show real engagement — upvotes, likes, reposts, comments, search volume, or trending rank (e.g. [50,000 upvotes · 1,200 comments], [12,000 likes], [#3 on X], [200K+ searches]). Weight these heavily as evidence of actual audience reach:
-- A Reddit post with 50K+ upvotes is almost certainly culturally significant — score it at least 7.
+ENGAGEMENT SIGNALS: Numbers in brackets after an item show real engagement — upvotes, likes, reposts, comments, search volume, or trending rank (e.g. [10,000 upvotes · 800 comments], [12,000 likes], [#3 on X], [200K+ searches]). Weight these heavily as evidence of actual audience reach:
+- A Reddit post with 10K+ upvotes has real traction — score it at least 7.
+- A Reddit post with 30K+ upvotes is almost certainly culturally significant — score it at least 8.
 - A Bluesky post with 10K+ likes has broken through — treat it as strong evidence of cultural relevance.
 - An X topic ranked #1–5 is what everyone is talking about right now.
-- A Google Trends topic with 500K+ searches is dominating the day's conversation.
+- A Google Trends topic with 100K+ searches is a strong signal of real-time interest.
+- A Google Trends topic with 250K+ searches is dominating the day's conversation.
 - High engagement alone doesn't override the auto-1 rules (politics, generic lifestyle posts), but for any borderline story, strong engagement should break the tie upward.
 
 IMPORTANT:
 - For Bluesky posts: score above 5 only if the post contains significant news, a major announcement, or a genuine cultural flashpoint — OR if engagement is very high (10K+ likes), which itself signals the post struck a nerve.
-- For Reddit posts: high upvotes (50K+) are strong evidence of cultural significance. Score on the combination of topic substance AND engagement.
+- For Reddit posts: upvote count is strong signal — 10K+ means real traction, 30K+ means broadly significant. Score on the combination of topic substance AND engagement.
 - For YouTube trending videos: score on whether the video captures a genuine cultural moment — a performance, a reveal, a reaction with broad significance.
 - Anything genuinely significant has a fair shot regardless of topic area — a major sports result, a surprise album drop, a landmark business moment, a cultural event. Topic area is never a reason to score down.{social_block}
 

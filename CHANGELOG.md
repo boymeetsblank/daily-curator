@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-20] Engagement signals in both feeds + recalibrated thresholds
+
+Engagement signals now apply to both the live feed (Haiku) and the main feed (Sonnet). Main feed changes: (1) ENGAGEMENT SIGNALS section added to Sonnet scoring prompt with calibrated Reddit/Google thresholds; (2) trending context block now shows X rank positions (`#1 Josh Hart`) and Google search volumes (`Apple — 500K+ searches`) so Sonnet can see the scale of real-time interest, not just a flat topic list; (3) `social_trends.json` write now preserves `x_ranks`, `google_engagement`, `x_fetched_at`, and `google_fetched_at` written by the live feed instead of overwriting them. Threshold recalibration across both feeds: Reddit 10K+ upvotes → minimum 7; Reddit 30K+ → minimum 8 (was a single 50K threshold); Google 100K+ searches → strong signal, 250K+ → dominating the day (was a single 500K threshold that was too high for most genuinely trending topics).
+
 ## [2026-05-20] Live feed: engagement signals now flow into Haiku scoring
 
 Engagement data is now surfaced to the Haiku quality gate so high-engagement content gets scored appropriately. Five changes: (1) Reddit upvotes + comment count and Bluesky likes + reposts + replies were fetched but never shown to Haiku — now included as brackets after each item in the scoring prompt (e.g. `[50,000 upvotes · 1,200 comments]`); (2) YouTube view counts extracted from `<yt:statistics>` in the RSS feed; (3) Google Trends `formattedTraffic` (e.g. "200K+ searches") extracted from the daily endpoint and stored in `social_trends.json`; (4) X trending rank position tracked and stored (`#1` through `#30`) so Haiku knows position-1 topics carry more weight; (5) Haiku prompt updated with explicit engagement scoring guidance — 50K+ Reddit upvotes, 10K+ Bluesky likes, and #1–5 X positions are treated as strong upward score signals.
@@ -79,12 +83,6 @@ Extended `BREAKING_NEWS_TTL_HOURS` from 6 → 12 so items from the previous even
 ## [2026-05-01] Digest slides: sentence-aware body copy + substack text on image slides
 
 Body copy on story slides now stops at complete sentence boundaries instead of truncating mid-sentence with "...". Added `_wrap_sentences` helper that accumulates sentences until adding another would overflow the line limit, then stops clean. Also switched the image path to use the Substack copy field (already used by text-only slides) instead of the shorter "why" field, matching the more analytical tone.
-
----
-
-## [2026-05-01] Hook prompt: natural punctuation guidance
-
-Replaced the blunt "no period at the end of every line" rule with nuanced guidance: punctuate naturally based on rhythm — complete standalone thoughts get a period, fragments flowing as one sentence don't. Fixes hooks like "TIM COOK IS OUT / APPLE JUST HAD ITS BEST QUARTER EVER..." where the first line is a distinct beat that needs its own punctuation.
 
 
 
