@@ -348,10 +348,11 @@ Return a JSON array, one object per item, same order as input:
     return live_clusters
 
 
-def escalate_cluster_to_sonnet(cluster: dict, cluster_items: list[dict]) -> None:
+def escalate_cluster_to_sonnet(cluster: dict, cluster_items: list[dict], new_items_only: list[dict] | None = None) -> None:
     """
     Synthesizes a cluster of related live feed items into one unified main feed story.
-    Called when a cluster hits CLUSTER_THRESHOLD items (and every CLUSTER_THRESHOLD more).
+    On first escalation: writes a new picks file.
+    On re-escalation: appends a timestamped update to the existing picks file.
     """
     if not cluster_items:
         return
@@ -360,12 +361,84 @@ def escalate_cluster_to_sonnet(cluster: dict, cluster_items: list[dict]) -> None
     if not api_key:
         return
 
-    items_block = "\n".join(
-        f"{i+1}. [Source: {item['source_name']}] {item['topic']}"
-        for i, item in enumerate(cluster_items)
-    )
+    import anthropic
+    client = anthropic.Anthropic(api_key=api_key)
 
-    prompt = f"""You are the senior editor for Blank, a culture intelligence platform.
+    now          = datetime.now(tz=timezone.utc)
+    # Display time in CT (UTC-5, approximate — covers CDT)
+    ct_now       = now - timedelta(hours=5)
+    display_time = now.strftime("%Y-%m-%d at %I:%M %p UTC")
+    ct_time_str  = ct_now.strftime("%-I:%M %p CT")
+
+    is_update = bool(cluster.get("picks_file") and cluster.get("why_text") and new_items_only)
+
+    if is_update:
+        # ── Re-escalation: append a timestamped update ────────────────────────
+        new_block = "\n".join(
+            f"{i+1}. [Source: {item['source_name']}] {item['topic']}"
+            for i, item in enumerate(new_items_only)
+        )
+
+        update_prompt = f"""You are the senior editor for Blank, a culture intelligence platform.
+
+This story is already in the main feed: "{cluster['topic']}"
+
+EXISTING WRITE-UP:
+{cluster['why_text']}
+
+NEW SIGNALS just joined the cluster:
+{new_block}
+
+Write a brief update paragraph (1–2 sentences) to append below the existing write-up.
+- Some signals may be bare trending names — use your knowledge to infer what specifically just happened
+- Be concrete: what changed, what happened, what's new
+- Write with editorial confidence — you're adding to a live story, not hedging
+
+Return JSON only: {{"update": "<1-2 sentence update>"}}"""
+
+        try:
+            resp = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=200,
+                messages=[{"role": "user", "content": update_prompt}],
+            )
+            raw = resp.content[0].text.strip()
+            if raw.startswith("```"):
+                raw = raw.split("```")[1]
+                if raw.startswith("json"):
+                    raw = raw[4:]
+            update_text = json.loads(raw).get("update", "").strip()
+        except Exception as e:
+            print(f"   ⚠️  Cluster update failed: {e}")
+            return
+
+        update_paragraph = f"\n**Update {ct_time_str}:** {update_text}"
+        updated_why = cluster["why_text"] + update_paragraph
+
+        picks_file = cluster["picks_file"]
+        if os.path.exists(picks_file):
+            content = open(picks_file, encoding="utf-8").read()
+            # Replace the why section with the updated version
+            old_why_block = f"\n**Why it matters:**\n{cluster['why_text']}\n"
+            new_why_block = f"\n**Why it matters:**\n{updated_why}\n"
+            content = content.replace(old_why_block, new_why_block, 1)
+            with open(picks_file, "w", encoding="utf-8") as f:
+                f.write(content)
+            cluster["why_text"] = updated_why
+            n_src = len(cluster_items)
+            print(f"   🔗 Cluster updated ({n_src} signals) → {picks_file}: +{len(new_items_only)} new signal(s)")
+        else:
+            # File missing — fall through to write a fresh one
+            is_update = False
+
+    if not is_update:
+        # ── First escalation: full synthesis ──────────────────────────────────
+        items_block = "\n".join(
+            f"{i+1}. [Source: {item['source_name']}] {item['topic']}"
+            for i, item in enumerate(cluster_items)
+        )
+
+        prompt = f"""You are the senior editor for Blank, a culture intelligence platform.
 
 The following {len(cluster_items)} signals from the live feed all cover the same story: "{cluster['topic']}"
 
@@ -382,57 +455,54 @@ HOOK: A punchy 2–3 line carousel headline, separated by /. Write like a text t
 Respond with JSON only:
 {{"title": "<concise headline>", "why": "<2-3 sentence editorial context>", "hook": "<2-3 lines separated by />"}}"""
 
-    try:
-        import anthropic
-        client = anthropic.Anthropic(api_key=api_key)
-        resp = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=400,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        raw = resp.content[0].text.strip()
-        if raw.startswith("```"):
-            raw = raw.split("```")[1]
-            if raw.startswith("json"):
-                raw = raw[4:]
-        result = json.loads(raw)
-    except Exception as e:
-        print(f"   ⚠️  Cluster Sonnet escalation failed: {e}")
-        return
+        try:
+            resp = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=400,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            raw = resp.content[0].text.strip()
+            if raw.startswith("```"):
+                raw = raw.split("```")[1]
+                if raw.startswith("json"):
+                    raw = raw[4:]
+            result = json.loads(raw)
+        except Exception as e:
+            print(f"   ⚠️  Cluster Sonnet escalation failed: {e}")
+            return
 
-    title = result.get("title", cluster["topic"])
-    why   = result.get("why", "").strip()
-    hook  = result.get("hook", "").strip()
+        title = result.get("title", cluster["topic"])
+        why   = result.get("why", "").strip()
+        hook  = result.get("hook", "").strip()
 
-    primary = max(cluster_items, key=lambda x: x.get("haiku_score", 0))
-    n_src   = len(cluster_items)
-    src_label = f"{primary['source_name']} + {n_src - 1} more" if n_src > 1 else primary["source_name"]
+        primary   = max(cluster_items, key=lambda x: x.get("haiku_score", 0))
+        n_src     = len(cluster_items)
+        src_label = f"{primary['source_name']} + {n_src - 1} more" if n_src > 1 else primary["source_name"]
 
-    now          = datetime.now(tz=timezone.utc)
-    timestamp    = now.strftime("%Y-%m-%d-%H%M")
-    display_time = now.strftime("%Y-%m-%d at %I:%M %p")
+        timestamp = now.strftime("%Y-%m-%d-%H%M")
+        header    = f"# Live Cluster — {display_time}\n\n"
+        header   += f"> **Source:** Live feed — {n_src}-signal cluster\n"
+        header   += f"> **Picks surfaced:** 1\n\n---\n\n"
 
-    header  = f"# Live Cluster — {display_time}\n\n"
-    header += f"> **Source:** Live feed — {n_src}-signal cluster\n"
-    header += f"> **Picks surfaced:** 1\n\n---\n\n"
+        block  = f"## Pick #1 — Score: 8/10\n\n"
+        block += f"**{title}**\n"
+        block += f"*{src_label}*\n"
+        block += f"[Read the full article →]({primary['search_url']})\n"
+        block += "**Live Pick:** true\n"
+        if why:
+            block += f"\n**Why it matters:**\n{why}\n"
+        if hook:
+            block += f"\n**Hook:**\n{hook}\n"
+        block += "\n---\n"
 
-    block  = f"## Pick #1 — Score: 8/10\n\n"
-    block += f"**{title}**\n"
-    block += f"*{src_label}*\n"
-    block += f"[Read the full article →]({primary['search_url']})\n"
-    block += "**Live Pick:** true\n"
-    if why:
-        block += f"\n**Why it matters:**\n{why}\n"
-    if hook:
-        block += f"\n**Hook:**\n{hook}\n"
-    block += "\n---\n"
+        os.makedirs("picks", exist_ok=True)
+        filepath = f"picks/picks-{timestamp}.md"
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(header + block)
 
-    os.makedirs("picks", exist_ok=True)
-    filepath = f"picks/picks-{timestamp}.md"
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(header + block)
-
-    print(f"   🔗 Cluster escalated ({n_src} signals) → {filepath}: {title[:60]}")
+        cluster["picks_file"] = filepath
+        cluster["why_text"]   = why
+        print(f"   🔗 Cluster escalated ({n_src} signals) → {filepath}: {title[:60]}")
 
 
 def send_breaking_push(new_items: list[dict]) -> None:
@@ -1056,11 +1126,22 @@ def main():
                     elif iid in existing_by_id:
                         cluster_items.append(existing_by_id[iid])
 
+                # On re-escalation, identify which items are new since last escalation
+                last_item_ids = set(cluster.get("last_escalated_item_ids", []))
+                new_items_only = [item for item in cluster_items if item["id"] not in last_item_ids]
+                is_reescalation = last_size > 0
+
                 if cluster_items:
-                    print(f"\n   🔗 Cluster '{cluster['topic']}' reached {item_count} signals — escalating to Sonnet...")
-                    escalate_cluster_to_sonnet(cluster, cluster_items)
-                    cluster["last_escalated_size"] = item_count
-                    cluster["last_escalated_at"]   = now_iso
+                    verb = "updating" if is_reescalation else "escalating"
+                    print(f"\n   🔗 Cluster '{cluster['topic']}' reached {item_count} signals — {verb} to Sonnet...")
+                    escalate_cluster_to_sonnet(
+                        cluster,
+                        cluster_items,
+                        new_items_only=new_items_only if is_reescalation else None,
+                    )
+                    cluster["last_escalated_size"]    = item_count
+                    cluster["last_escalated_at"]      = now_iso
+                    cluster["last_escalated_item_ids"] = cluster["item_ids"].copy()
 
     # ── Individual item escalation: 9+ haiku score → Sonnet + push ───────────
     escalate_items = [item for item in new_items if item.get("haiku_score", 0) >= 9]
