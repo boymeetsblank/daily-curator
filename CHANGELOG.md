@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-20] Live feed: tighter Haiku scoring gate + escalation threshold restored to 9
+
+Rewrote the Haiku scoring prompt to fix junk flowing into the main feed after the May 19 overhaul. Four changes: (1) replaced "score generously" with "be strict — when in doubt, score lower"; (2) added explicit auto-1 list covering political content, generic social posts (good morning/lifestyle/emoji filler), local/trade niche articles, and bare trending topic names with no news context; (3) tightened Bluesky guidance — viral engagement alone is not enough, post must contain actual news or a genuine cultural flashpoint; (4) tightened the 8-anchor to require broad audience significance, not just niche relevance. Escalation threshold raised 8→9 so only "you have to tell someone right now" items reach the main feed.
+
 ## [2026-05-20] Cut Apify YouTube actor — replaced with free RSS
 
 `fetch_youtube_trends()` in `daily_curator.py` now uses the free public YouTube trending RSS feed instead of the `streamers~youtube-trending-videos` Apify actor. Same data, zero Apify compute cost. Saves 3 actor runs/day. The live feed was already using this free RSS endpoint — the main curator now does the same.
@@ -91,18 +95,4 @@ Lowered Haiku quality gate from `>= 7` to `>= 6` so the live feed consistently a
 Changed `MAX_LIVE_PER_SOURCE` from a TTL-based concurrent cap to a 2-hour rolling window. Only items detected in the last 2 hours count against a source's slot limit — items older than 2 hours no longer block new ones from the same source. Added `SOURCE_CAP_WINDOW_HOURS = 2` constant.
 
 ---
-
-## [2026-04-30] Live feed: wider article window + per-source cap
-
-Extended `FEED_WINDOW_MINUTES` from 30 → 60 so articles aren't silently dropped when GitHub Actions queue delays push evaluation past the old cutoff. Added `MAX_LIVE_PER_SOURCE = 3` cap applied in two places: before the Haiku quality gate (to avoid scoring excess articles from burst-publishing sources) and when merging items into the active Live feed (to prevent any one source from holding more than 3 slots at once).
-
----
-
-## [2026-04-29] Fix: main feed list view — older picks showing latest run timestamp
-
-Pinned (8+) and regular picks in list view were all rendered with `latestIsoTs` (the newest run's timestamp), so every article showed "X minutes ago" relative to the most recent pull. Fixed by grouping pinned picks by their own `runIsoTs` before passing to `renderPicksGrouped`, and restoring per-run rendering for regular picks (matching the original archive-day behavior). Card view was already correct.
-
-## [2026-04-29] Fix: Live feed — crash on null haiku_score + stale source labels
-
-`breaking_news_check.py` was crashing every 5-minute run with `TypeError: '>=' not supported between 'NoneType' and 'int'` when sorting items by tier. Legacy items written before the quality gate have `haiku_score: null` in `breaking_news.json`; `dict.get(key, default)` returns `None` (not 0) when the key exists with a null value. Fixed both tier sort lines to use `(x.get("haiku_score") or 0)`. Also fixed `renderBreakingCard` in `index.html`: all non-wire items were falling through to a hard-coded "Google Trends" label and "Search Google →" CTA. Now dispatches on `source_type` (feed/reddit/youtube/x/tiktok/google) for correct labels and CTAs on every item.
 
