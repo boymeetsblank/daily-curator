@@ -1,32 +1,5 @@
 {
   "known_ids": [
-    "70b714bc717b",
-    "44b8b0defd7a",
-    "163ac43a9d21",
-    "e0de14a9116c",
-    "3c9bf3c017bc",
-    "2d8057175bc0",
-    "85331331526c",
-    "e0a063b7a71f",
-    "093870f0c31f",
-    "a6a31e60292b",
-    "ed58630763e8",
-    "afa352f67562",
-    "a80f4244676d",
-    "9555a329c2b0",
-    "9cf8724549c2",
-    "0d4b501f69ad",
-    "f0e98b1117e5",
-    "87297aa70138",
-    "a4f8a83fe8bd",
-    "42853abe27ed",
-    "9389ef807b52",
-    "e634c53369ea",
-    "ae805479075d",
-    "a1d2870204d1",
-    "f04b5b1c9763",
-    "771e6c99ce6a",
-    "ed1d305135b9",
     "01412404421b",
     "124ec564aeb2",
     "cb979817a5b3",
@@ -499,32 +472,198 @@
     "e06239c66089",
     "741cbabbfd4d",
     "facc7e69270a",
-    "b56decb14d5d"
+    "b56decb14d5d",
+    "700edf3ab9b7",
+    "6a2c3475a0dc",
+    "d987b9bc51eb",
+    "450c864da7f6",
+    "c15388fda420",
+    "8d75f45053a7",
+    "b4ff1408d047",
+    "cc011fda77af",
+    "4b3b10db7406",
+    "2f2bbc68a095",
+    "c24285d143a6",
+    "4920648869db",
+    "a348b082b273",
+    "6ab8be6c264f",
+    "abdc65e8a268",
+    "89684b284503",
+    "fc8a6d7375b5",
+    "23120de086de",
+    "beb6c71a48f3",
+    "c2141715a668",
+    "443bc099361c",
+    "bf7079911e9e",
+    "df9b8fe43115",
+    "a1e450ddd296",
+    "32ad2a34830b",
+    "dd2b6c3aff65",
+    "2c2916be521f"
   ],
   "failed_ids": {
-    "b10b4cd57bb0": "2026-05-20T11:37:46.463119+00:00",
-    "e3f3af7c544f": "2026-05-20T11:37:46.463119+00:00",
-    "f7617756bff1": "2026-05-20T11:37:46.463119+00:00",
-    "a5002140720e": "2026-05-20T11:37:46.463119+00:00",
-    "a61f36e219ac": "2026-05-20T11:37:46.463119+00:00",
-    "b7ffcabf764a": "2026-05-20T11:37:46.463119+00:00",
-    "07775cef5a70": "2026-05-20T11:37:46.463119+00:00",
-    "55e5d602b11d": "2026-05-20T11:37:46.463119+00:00",
-    "4d82f235e652": "2026-05-20T11:37:46.463119+00:00",
-    "3036a982d00a": "2026-05-20T11:37:46.463119+00:00",
-    "b529bd6b6707": "2026-05-20T11:37:46.463119+00:00",
-    "d0573cc02317": "2026-05-20T11:37:46.463119+00:00",
-    "12d4979a9c6a": "2026-05-20T11:37:46.463119+00:00",
-    "dc5a45742810": "2026-05-20T11:37:46.463119+00:00",
-    "f289c9ea2de7": "2026-05-20T11:37:46.463119+00:00",
-    "b6051bcfb0dd": "2026-05-20T11:37:46.463119+00:00",
-    "f865cf16de9d": "2026-05-20T11:37:46.463119+00:00",
-    "5ad5b8ee6490": "2026-05-20T11:37:46.463119+00:00",
-    "28ecf12354f2": "2026-05-20T11:37:46.463119+00:00",
-    "7877286f0933": "2026-05-20T11:37:46.463119+00:00",
-    "87d7d964b853": "2026-05-20T11:37:46.463119+00:00",
-    "e6f75fffa628": "2026-05-20T11:37:46.463119+00:00",
-    "f52991d017e5": "2026-05-20T11:37:46.463119+00:00"
+    "327b3608fb64": "2026-05-20T17:33:53.864477+00:00",
+    "896fb5182763": "2026-05-20T17:33:53.864477+00:00",
+    "e6ba09a3bb38": "2026-05-20T17:33:53.864477+00:00",
+    "a2402f46eba1": "2026-05-20T17:33:53.864477+00:00",
+    "36018728741e": "2026-05-20T17:33:53.864477+00:00",
+    "c35574809f00": "2026-05-20T17:33:53.864477+00:00",
+    "dacaf5e6c556": "2026-05-20T17:33:53.864477+00:00",
+    "41c652f08659": "2026-05-20T17:33:53.864477+00:00",
+    "4a8101bb8c9b": "2026-05-20T17:33:53.864477+00:00",
+    "1c43383d7ae7": "2026-05-20T17:33:53.864477+00:00",
+    "77f243aebcba": "2026-05-20T17:33:53.864477+00:00",
+    "3771d983f94b": "2026-05-20T17:33:53.864477+00:00",
+    "17ffc53a7177": "2026-05-20T17:33:53.864477+00:00",
+    "1af401e04080": "2026-05-20T17:33:53.864477+00:00",
+    "ebff393616f6": "2026-05-20T17:33:53.864477+00:00",
+    "307859840821": "2026-05-20T17:33:53.864477+00:00",
+    "70e12f781cfe": "2026-05-20T17:33:53.864477+00:00",
+    "aa899505b6e8": "2026-05-20T17:33:53.864477+00:00",
+    "d4cfe4a3348c": "2026-05-20T17:33:53.864477+00:00",
+    "542ef9c0c8b8": "2026-05-20T17:33:53.864477+00:00",
+    "e38d6fc6b2d6": "2026-05-20T17:33:53.864477+00:00",
+    "81ef0870be70": "2026-05-20T17:33:53.864477+00:00",
+    "4735e767200f": "2026-05-20T17:33:53.864477+00:00",
+    "6f72bc6a1701": "2026-05-20T17:33:53.864477+00:00",
+    "a619f91991a2": "2026-05-20T17:33:53.864477+00:00"
   },
-  "last_checked": "2026-05-20T14:20:27.951929+00:00"
+  "live_clusters": {
+    "724e7cc5088c25d6": {
+      "topic": "Levi's 1870 Nevada Jean Archive Revival",
+      "item_ids": [
+        "700edf3ab9b7"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1f78b267360a3ce6": {
+      "topic": "Lorna Simpson 'Third Person' Venice Exhibition",
+      "item_ids": [
+        "6a2c3475a0dc"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fc70a1543a138acf": {
+      "topic": "Air Jordan 4 Georgetown 2027 Release",
+      "item_ids": [
+        "d987b9bc51eb"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c4f03bc15211709": {
+      "topic": "Nike Air Max 95 Laser-Etched Bandana Paisley",
+      "item_ids": [
+        "450c864da7f6"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dafbdd116017651e": {
+      "topic": "JJJJound New Balance 1890 Yellow Accents",
+      "item_ids": [
+        "c15388fda420"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7cdf8e1f6d2b43f3": {
+      "topic": "Ariana Grande Dangerous Woman Outtake Release",
+      "item_ids": [
+        "b4ff1408d047"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e3216872fe036617": {
+      "topic": "Billy Joel Biopic Opposition",
+      "item_ids": [
+        "cc011fda77af"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1e9c8b4fe2758174": {
+      "topic": "Kylie Minogue Madonna Collaboration Rumors",
+      "item_ids": [
+        "4b3b10db7406"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3c8326119fbce782": {
+      "topic": "Tony Awards Act One Hosting Announcement",
+      "item_ids": [
+        "2f2bbc68a095"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75585cf92560d9bf": {
+      "topic": "Japan Hot 100 Chart: Bullet Train Gachi Muchuu Number One",
+      "item_ids": [
+        "c24285d143a6"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "474f945646469872": {
+      "topic": "Michael Jackson 100 Weeks Number One R&B Hip-Hop Albums Chart",
+      "item_ids": [
+        "4920648869db"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a5b991ad13128f02": {
+      "topic": "Smashing Pumpkins Butch Vig Recording First Time Since Siamese Dream",
+      "item_ids": [
+        "a348b082b273"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e4c717c83c385c03": {
+      "topic": "Gregg Allman Documentary About Late Brother",
+      "item_ids": [
+        "6ab8be6c264f"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c45b3cf4f43bbb65": {
+      "topic": "Quantic Dream Shutting Down Spellcasters Chronicles MOBA",
+      "item_ids": [
+        "443bc099361c"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "652b4410c79e9330": {
+      "topic": "Barney Frank Death",
+      "item_ids": [
+        "a1e450ddd296"
+      ],
+      "created_at": "2026-05-20T17:34:28.757910+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    }
+  },
+  "last_checked": "2026-05-20T17:34:34.214514+00:00"
 }
