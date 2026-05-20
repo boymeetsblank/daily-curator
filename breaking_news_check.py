@@ -99,7 +99,7 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
         if trends.get("tiktok"):
             lines.append("TikTok trending: " + ", ".join(trends["tiktok"][:10]))
         if lines:
-            social_block = "\n\nLIVE SOCIAL SIGNALS — these topics are trending right now. Use as a tiebreaker when a story already has clear news merit. A bare name matching a trend is not a story by itself:\n" + "\n".join(lines)
+            social_block = "\n\nLIVE SOCIAL SIGNALS — these topics are trending right now. If an item directly relates to one of these, it's evidence something is actively happening:\n" + "\n".join(lines)
 
     prompt = f"""You are the editorial filter for Blank — a culture intelligence platform for trend-forward people who want to know what's happening right now.
 
@@ -118,10 +118,13 @@ AUTOMATIC SCORE OF 1 — always score these 1, no exceptions:
 - Generic social media posts: good morning greetings, motivational quotes, hashtag participation, lifestyle posts, nature photos, feel-good content, emoji-heavy filler posts
 - Local or regional news with no national/cultural relevance
 - Industry/trade publication articles about operational, business, or technical topics for specialist audiences (e.g. hospitality tech, fire academy training, supply chain updates)
-- Bare trend topic names with no actual news: a person's name or team name alone with no event, announcement, or development attached
+
+BARE TRENDING TOPIC NAMES (X, Google, TikTok trend topics that are just a name or short phrase with no article context):
+- Score 5–6. They are real-time signals that something is happening right now — often surfacing before any article exists.
+- Score 5 for a name that could trend for many reasons. Score 6 when the name clearly belongs to a culturally significant person, team, or moment where trending almost certainly means something just happened.
+- Do NOT score these 1. They belong in the live feed as early signals and are critical for clustering related items into a coherent story.
 
 IMPORTANT:
-- A story must have actual news substance — something that happened, was announced, or changed. A name trending on X is not a story by itself.
 - For Bluesky posts: only score above 5 if the post itself contains significant news, a major announcement, or a genuine cultural flashpoint with broad relevance. Viral engagement alone is not enough.
 - For Reddit posts: score on whether a real event is happening that a broad culturally-aware audience would care about. Upvote count is context, not justification.
 - For YouTube trending videos: score on whether the video captures a genuine cultural moment — a performance, a reveal, a reaction with broad significance.
@@ -368,11 +371,13 @@ The following {len(cluster_items)} signals from the live feed all cover the same
 
 {items_block}
 
-This story earned its place in the main feed through the weight of coverage — multiple independent sources are all pointing at the same event. Write ONE unified editorial story that captures the full picture.
+This story earned its place in the main feed through the weight of coverage — multiple independent signals are all pointing at the same event simultaneously.
 
-WHY IT MATTERS: 2–3 sentences. Be specific about what happened, why it matters, and what it means right now. Editorial voice — not a summary, a take.
+Some signals may be bare trending topic names (e.g. a player's name, a team name) rather than full articles — this is intentional. Trending names surface in real time, often before any article exists. Use your knowledge of these people, teams, and the cultural context to confidently infer what is happening and write an accurate, specific "Why it matters." The convergence of these signals is itself strong evidence that something significant just occurred. Write like a smart editor who caught the story early — not like someone waiting for more information.
 
-HOOK: A punchy 2–3 line carousel headline, separated by /. Write like a text to a friend: fragments OK, each line a distinct beat. 7 words or fewer per line. Punctuate naturally — complete thoughts get periods, flowing fragments don't.
+WHY IT MATTERS: 2–3 sentences. Be specific: who, what, why it matters culturally right now. Editorial voice — a take, not a summary.
+
+HOOK: A punchy 2–3 line carousel headline, separated by /. Write like a text to a friend: fragments OK, each line a distinct beat. 7 words or fewer per line. Punctuate naturally.
 
 Respond with JSON only:
 {{"title": "<concise headline>", "why": "<2-3 sentence editorial context>", "hook": "<2-3 lines separated by />"}}"""
