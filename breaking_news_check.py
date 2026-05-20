@@ -97,27 +97,33 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
         if trends.get("tiktok"):
             lines.append("TikTok trending: " + ", ".join(trends["tiktok"][:10]))
         if lines:
-            social_block = "\n\nLIVE SOCIAL SIGNALS — score higher when items directly relate to these:\n" + "\n".join(lines)
+            social_block = "\n\nLIVE SOCIAL SIGNALS — these topics are trending right now. Use as a tiebreaker when a story already has clear news merit. A bare name matching a trend is not a story by itself:\n" + "\n".join(lines)
 
     prompt = f"""You are the editorial filter for Blank — a culture intelligence platform for trend-forward people who want to know what's happening right now.
 
-Your job: decide what's worth surfacing in a live culture feed. Score each item 1–10.
+Your job: decide what's worth surfacing in a live culture feed. Score each item 1–10. Be strict — most items should score 5–7. Reserve 8–9 for genuinely important moments. When in doubt between two scores, choose the lower one.
 
 SCORING GUIDE:
 - 10: A cultural moment — someone will reference this a year from now. Genuinely rare, never forced.
-- 9: You have to tell someone about this right now.
-- 8: You'd bring this up in conversation today.
-- 7: Worth surfacing — something real is happening.
+- 9: You have to tell someone about this right now. Broad audience, immediate significance.
+- 8: A significant, unexpected development that most culturally-aware people — not just fans of one niche — would genuinely care about.
+- 7: Worth surfacing — something real is happening, with clear cultural or news relevance.
 - 6: Made the cut — relevant and real, but minimum bar for the live feed.
-- 1–5: Filtered out — noise, too dry, too predictable, or irrelevant.
+- 1–5: Filtered out — noise, too dry, too predictable, too niche, or irrelevant.
+
+AUTOMATIC SCORE OF 1 — always score these 1, no exceptions:
+- Political content: partisan commentary, policy debates, elections, legislation, politicians, government actions, legal/court cases involving political figures, war/conflict updates, diplomatic news, Fed/inflation/regulatory coverage
+- Generic social media posts: good morning greetings, motivational quotes, hashtag participation, lifestyle posts, nature photos, feel-good content, emoji-heavy filler posts
+- Local or regional news with no national/cultural relevance
+- Industry/trade publication articles about operational, business, or technical topics for specialist audiences (e.g. hospitality tech, fire academy training, supply chain updates)
+- Bare trend topic names with no actual news: a person's name or team name alone with no event, announcement, or development attached
 
 IMPORTANT:
-- Score based on whether a well-connected, culturally aware person would consider this worth knowing today — regardless of topic. A major watch collab, a title fight, a surprise album drop, a viral moment, a landmark court ruling: anything genuinely significant has a fair shot.
-- If something feels important and you're unsure, score it generously. Don't penalize topics that don't fit a narrow content bucket.
-- For YouTube trending videos and Reddit posts: score on whether something actually just happened or is going viral that a culturally aware audience would care about. Prefer posts that are NEW and rising fast — a post gaining upvotes in the last few hours is more significant than one that accumulated the same score over days. Speed of rise is a strong cultural signal.
-- For Bluesky posts: score on whether the post captures a cultural moment, a viral reaction, or something a taste-forward audience would screenshot and share. Bluesky skews creative, cultural, and tech — weight accordingly.
-- Score 1 for routine political content: partisan commentary, policy debates, regular war/conflict updates, diplomatic news, Fed/inflation data, and regulatory coverage.
-- Exception: if a political or geopolitical event is so significant it transcends politics and becomes a cultural moment everyone needs to know about right now (a world leader falls, a landmark ruling that changes daily life, a war escalation that shifts the global order), score it on its actual magnitude — it may warrant a 9 or 10.{social_block}
+- A story must have actual news substance — something that happened, was announced, or changed. A name trending on X is not a story by itself.
+- For Bluesky posts: only score above 5 if the post itself contains significant news, a major announcement, or a genuine cultural flashpoint with broad relevance. Viral engagement alone is not enough.
+- For Reddit posts: score on whether a real event is happening that a broad culturally-aware audience would care about. Upvote count is context, not justification.
+- For YouTube trending videos: score on whether the video captures a genuine cultural moment — a performance, a reveal, a reaction with broad significance.
+- Anything genuinely significant has a fair shot regardless of topic area — a major sports result, a surprise album drop, a landmark business moment, a cultural event. Topic area is never a reason to score down.{social_block}
 
 Respond with a JSON array only — one object per item, same order as input:
 [{{"score": <int>}}]
@@ -836,7 +842,7 @@ def main():
         new_items = []
 
     # 9+ items get escalated to Sonnet → main feed + push notification
-    escalate_items = [item for item in new_items if item.get("haiku_score", 0) >= 8]
+    escalate_items = [item for item in new_items if item.get("haiku_score", 0) >= 9]
     if escalate_items:
         print(f"\n   🚀 Escalating {len(escalate_items)} item(s) to Sonnet for main feed...")
         escalate_to_sonnet(escalate_items)
