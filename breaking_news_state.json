@@ -1,39 +1,5 @@
 {
   "known_ids": [
-    "01412404421b",
-    "124ec564aeb2",
-    "cb979817a5b3",
-    "8bda0ff0df23",
-    "a18c653f26cd",
-    "28064b5616fe",
-    "281489a99fb1",
-    "d88c6be0f8b8",
-    "3f2340bd39e0",
-    "43c27c6b836b",
-    "709ed739d931",
-    "dc575f435a66",
-    "9bde7726d9cc",
-    "37ca89b04f38",
-    "b26ad9d665cb",
-    "75aaa1f7f591",
-    "8bcb0495bea5",
-    "e963c051f377",
-    "d604145e2cfd",
-    "98aa977cb721",
-    "8af2fe43b426",
-    "1bf3fc9fc3d2",
-    "bf3444a3c770",
-    "31de9c84116d",
-    "9624f187d8c8",
-    "6285f1bd57e0",
-    "7e80f3be9d00",
-    "e8fa2a83f44f",
-    "095e022deb4f",
-    "11f8f381d674",
-    "7c2c94d9a141",
-    "48cb7f06ca75",
-    "cc7c05b5bf74",
-    "221634eb6004",
     "a8eb631131b3",
     "01d03e2d7233",
     "7440aea02e8a",
@@ -499,7 +465,41 @@
     "a1e450ddd296",
     "32ad2a34830b",
     "dd2b6c3aff65",
-    "2c2916be521f"
+    "2c2916be521f",
+    "625d1ebe33a6",
+    "c78e552e1b80",
+    "9abf99ac93d2",
+    "c70b76f4b441",
+    "2c83a90fb1dd",
+    "2b26d1fbc3dc",
+    "8036a01d9921",
+    "e50cedec660d",
+    "75a707a4902b",
+    "861a0e8e63b2",
+    "6716e3a294ce",
+    "7099144d31c7",
+    "9f33a5ee068b",
+    "1f2b934b1a5b",
+    "459e4893559e",
+    "29e370f65f7f",
+    "7b4ca0f35316",
+    "986baddb3207",
+    "4f3ec8edc1c2",
+    "087a18269acb",
+    "ec792ce29861",
+    "8bb2b7036661",
+    "0168247db7f3",
+    "d1615454d621",
+    "1f7b0324d248",
+    "cac8f2d97af5",
+    "15df0e18e2fc",
+    "895a55265136",
+    "805a81941682",
+    "0ad1b52ecf6d",
+    "99a5a7d16e87",
+    "c0c300d89a1a",
+    "e0a12140429e",
+    "cd90adce052a"
   ],
   "failed_ids": {
     "327b3608fb64": "2026-05-20T17:33:53.864477+00:00",
@@ -526,7 +526,27 @@
     "81ef0870be70": "2026-05-20T17:33:53.864477+00:00",
     "4735e767200f": "2026-05-20T17:33:53.864477+00:00",
     "6f72bc6a1701": "2026-05-20T17:33:53.864477+00:00",
-    "a619f91991a2": "2026-05-20T17:33:53.864477+00:00"
+    "a619f91991a2": "2026-05-20T17:33:53.864477+00:00",
+    "9ac5d8336519": "2026-05-20T19:52:30.450472+00:00",
+    "7251f83ead86": "2026-05-20T19:52:30.450472+00:00",
+    "ed27fa7ecba2": "2026-05-20T19:52:30.450472+00:00",
+    "bf90452a7cb7": "2026-05-20T19:52:30.450472+00:00",
+    "379c172c7334": "2026-05-20T19:52:30.450472+00:00",
+    "4445eb68767b": "2026-05-20T19:52:30.450472+00:00",
+    "f3487ee3f246": "2026-05-20T19:52:30.450472+00:00",
+    "fb6e1b1757bd": "2026-05-20T19:52:30.450472+00:00",
+    "a11c918f9610": "2026-05-20T19:52:30.450472+00:00",
+    "901f488af9d7": "2026-05-20T19:52:30.450472+00:00",
+    "17392fe1a119": "2026-05-20T19:52:30.450472+00:00",
+    "ddff12886be7": "2026-05-20T19:52:30.450472+00:00",
+    "1085e8ba6127": "2026-05-20T19:52:30.450472+00:00",
+    "7fdbeee595de": "2026-05-20T19:52:30.450472+00:00",
+    "4969b68eb749": "2026-05-20T19:52:30.450472+00:00",
+    "1e9fb9db6c66": "2026-05-20T19:52:30.450472+00:00",
+    "425816577b55": "2026-05-20T19:52:30.450472+00:00",
+    "5941efb940ed": "2026-05-20T19:52:30.450472+00:00",
+    "541dd961ed20": "2026-05-20T19:52:30.450472+00:00",
+    "4e54126622a1": "2026-05-20T19:52:30.450472+00:00"
   },
   "live_clusters": {
     "724e7cc5088c25d6": {
@@ -550,7 +570,8 @@
     "fc70a1543a138acf": {
       "topic": "Air Jordan 4 Georgetown 2027 Release",
       "item_ids": [
-        "d987b9bc51eb"
+        "d987b9bc51eb",
+        "986baddb3207"
       ],
       "created_at": "2026-05-20T17:34:28.757910+00:00",
       "last_escalated_size": 0,
@@ -663,7 +684,160 @@
       "created_at": "2026-05-20T17:34:28.757910+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "367bf35e7705be19": {
+      "topic": "Rihanna PUMA Partnership Ends",
+      "item_ids": [
+        "625d1ebe33a6"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5668538979cad2fb": {
+      "topic": "Air Jordan 4 'Musik' Hip-Hop Inspired Release",
+      "item_ids": [
+        "c78e552e1b80"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c56a07725c3539bb": {
+      "topic": "Air Jordan 3 Utility Spring 2027 Launch",
+      "item_ids": [
+        "9abf99ac93d2"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cbe0de2b42a0c424": {
+      "topic": "'Adventures of Cliff Booth' Release Date Announcement",
+      "item_ids": [
+        "c70b76f4b441"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "efb0dc58491d1527": {
+      "topic": "Everlane Acquisition by Shein",
+      "item_ids": [
+        "2c83a90fb1dd"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "53a573078f134c99": {
+      "topic": "Saudi National Orchestra and Choir Rome Performance",
+      "item_ids": [
+        "2b26d1fbc3dc"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "411297676b7e2ba6": {
+      "topic": "Skrillex Contra Creative Platform Berlin Debut",
+      "item_ids": [
+        "8036a01d9921"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2d002efb40b10d77": {
+      "topic": "Billboard Latin Music Week 2026 Miami",
+      "item_ids": [
+        "e50cedec660d"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d32ba60a2d0005f4": {
+      "topic": "Bad Bunny Benito Antonio Fashion Collection Launch",
+      "item_ids": [
+        "75a707a4902b"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fd17afdcc482c64e": {
+      "topic": "Madonna on Dance Music 2026",
+      "item_ids": [
+        "861a0e8e63b2"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "be4139dbc6f80b50": {
+      "topic": "'Michael Jackson: The Verdict' Documentary Trial Coverage",
+      "item_ids": [
+        "6716e3a294ce"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e379d016bdb0d00e": {
+      "topic": "Busta Rhymes Songwriting Award NYC Anti Social Camp",
+      "item_ids": [
+        "7099144d31c7"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0cadf0f1a8c53295": {
+      "topic": "The All-American Rejects 'Sandbox' Album",
+      "item_ids": [
+        "9f33a5ee068b"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a7e17845c1a52c08": {
+      "topic": "Bruce Dern Documentary 'Dernsie' Cannes Premiere",
+      "item_ids": [
+        "1f2b934b1a5b"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0846548b2fec9647": {
+      "topic": "Stephen Colbert 'Late Show' Finale",
+      "item_ids": [
+        "459e4893559e"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ac0fe705985c79ce": {
+      "topic": "'Margo's Got Money Troubles' Series Finale",
+      "item_ids": [
+        "29e370f65f7f"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cf4e2bfee01690ac": {
+      "topic": "'Jawbreaker' Musical Workshop LA Reunion",
+      "item_ids": [
+        "7b4ca0f35316"
+      ],
+      "created_at": "2026-05-20T19:53:05.201686+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-20T17:34:34.214514+00:00"
+  "last_checked": "2026-05-20T19:53:05.202815+00:00"
 }
