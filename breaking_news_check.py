@@ -43,7 +43,7 @@ STATE_FILE          = "breaking_news_state.json"
 OUTPUT_FILE         = "breaking_news.json"
 SOCIAL_TRENDS_PATH  = "social_trends.json"
 YOUTUBE_TRENDING_RSS  = "https://www.youtube.com/feeds/videos.xml?chart=mostpopular&regionCode=US&hl=en&gl=US"
-GOOGLE_TRENDS_URL     = "https://trends.google.com/trends/trendingsearches/daily?geo=US&ns=15"
+GOOGLE_TRENDS_URL     = "https://trends.google.com/trends/trendingsearches/daily?geo=US"
 GOOGLE_TRENDS_MAX_AGE = 10    # minutes before we try to refresh google trends
 X_TRENDS_URL          = "https://trends24.in/united-states/"
 X_TRENDS_MAX_AGE      = 10    # minutes before we try to refresh X trending
@@ -628,11 +628,12 @@ def refresh_google_trends(trends: dict) -> dict:
         if os.path.exists(SOCIAL_TRENDS_PATH):
             with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
                 cached = json.load(f)
-            fetched_at = cached.get("fetched_at") or cached.get("timestamp")
-            if fetched_at:
+            # Use google_fetched_at (independent of Apify's global fetched_at timestamp)
+            google_fetched_at = cached.get("google_fetched_at")
+            if google_fetched_at:
                 age_minutes = (
                     datetime.now(tz=timezone.utc)
-                    - datetime.fromisoformat(fetched_at)
+                    - datetime.fromisoformat(google_fetched_at)
                 ).total_seconds() / 60
                 if age_minutes < GOOGLE_TRENDS_MAX_AGE:
                     return trends  # still fresh
@@ -656,17 +657,17 @@ def refresh_google_trends(trends: dict) -> dict:
                     topics.append(query)
         if topics:
             trends = {**trends, "google": topics}
-            # Write back so subsequent runs skip the fetch until data is stale again
             try:
                 existing = {}
                 if os.path.exists(SOCIAL_TRENDS_PATH):
                     with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
                         existing = json.load(f)
-                existing.update({"google": topics, "fetched_at": datetime.now(tz=timezone.utc).isoformat()})
+                existing["google"] = topics
+                existing["google_fetched_at"] = datetime.now(tz=timezone.utc).isoformat()
                 with open(SOCIAL_TRENDS_PATH, "w", encoding="utf-8") as f:
                     json.dump(existing, f, indent=2, ensure_ascii=False)
             except Exception:
-                pass  # write failure is non-critical
+                pass
             print(f"   🔍 Google Trends refreshed: {len(topics)} topics")
     except Exception as e:
         print(f"   ⚠️  Google Trends refresh failed ({e}) — using cached data")
