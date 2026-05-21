@@ -1,35 +1,5 @@
 {
   "known_ids": [
-    "59f1fdc3c4e4",
-    "e5b55392915c",
-    "b3b10f78ea8f",
-    "5f3c908a4d3b",
-    "289e51c59abe",
-    "4278965294ae",
-    "c557a0a57157",
-    "6e47fec9014c",
-    "6c4273470169",
-    "5d426cbb2800",
-    "8f59029ef9e0",
-    "6af24ec7c0c0",
-    "cc5b9a82839c",
-    "0fc7772feed6",
-    "4e878d2b156e",
-    "436a90d470ca",
-    "5f258cc96377",
-    "1d895bcd0ef7",
-    "56e9e484d6ff",
-    "682f7dacaf89",
-    "93a881da8e9c",
-    "e1d8d7ba08a6",
-    "522c4e78edf7",
-    "2ce67b7187fe",
-    "d31e6e2c08aa",
-    "287c34d650a9",
-    "fd2354ceeaca",
-    "b36982424742",
-    "0d1ce35ae488",
-    "a140216b12d4",
     "627101c0dd19",
     "2c3caa3bd302",
     "6892e18fff07",
@@ -499,7 +469,37 @@
     "db6bd1fb6396",
     "86a966fd4a72",
     "8f21befcc147",
-    "5af9588b931c"
+    "5af9588b931c",
+    "8c917e3e0b3f",
+    "b73db948900f",
+    "ff036b159e7c",
+    "1886732191fe",
+    "766bcf56ee07",
+    "88ffe866c0c4",
+    "c6db75cb0d46",
+    "c90774afcb1c",
+    "d9723a8fbe03",
+    "2847fe25d219",
+    "8240007eb56c",
+    "e67354052d88",
+    "f1488e5b9dfc",
+    "d8b76417f045",
+    "4461e48e7beb",
+    "c25e53f0351d",
+    "861eebfee4bf",
+    "cd7dc8f490b6",
+    "ce34a9a62e48",
+    "2da1121f871b",
+    "c8545dcb1f13",
+    "271426b49c8d",
+    "9ed876a9ff77",
+    "2e07a1a98210",
+    "0306045eb227",
+    "02366bcb995a",
+    "7999c9bdb0a1",
+    "76056ed31073",
+    "cc1c132201fd",
+    "6bc924b16aea"
   ],
   "failed_ids": {
     "5aa5d705dd51": "2026-05-21T21:02:00.446759+00:00",
@@ -526,242 +526,25 @@
     "96e9a6f4b883": "2026-05-21T21:02:00.446759+00:00",
     "9ea9f0e859e2": "2026-05-21T21:02:00.446759+00:00",
     "d9bb37d0da3f": "2026-05-21T21:02:00.446759+00:00",
-    "f518ea929a47": "2026-05-21T21:02:00.446759+00:00"
+    "f518ea929a47": "2026-05-21T21:02:00.446759+00:00",
+    "679d7150aa30": "2026-05-21T22:37:54.777510+00:00",
+    "faea154ad0f5": "2026-05-21T22:37:54.777510+00:00",
+    "2f42832bcc2f": "2026-05-21T22:37:54.777510+00:00",
+    "1c45fee12134": "2026-05-21T22:37:54.777510+00:00",
+    "feff019822b7": "2026-05-21T22:37:54.777510+00:00",
+    "2a85b47a0df4": "2026-05-21T22:37:54.777510+00:00",
+    "fd25ed710e77": "2026-05-21T22:37:54.777510+00:00",
+    "fcec9829bdb0": "2026-05-21T22:37:54.777510+00:00",
+    "ad8f421801c1": "2026-05-21T22:37:54.777510+00:00",
+    "7afebf9de2b8": "2026-05-21T22:37:54.777510+00:00",
+    "74a3557318de": "2026-05-21T22:37:54.777510+00:00",
+    "22291d3e2163": "2026-05-21T22:37:54.777510+00:00",
+    "e04f529dfbb5": "2026-05-21T22:37:54.777510+00:00",
+    "b5c91d02c5c6": "2026-05-21T22:37:54.777510+00:00",
+    "a4e9bb0d6079": "2026-05-21T22:37:54.777510+00:00",
+    "bfc65f6c83e4": "2026-05-21T22:37:54.777510+00:00"
   },
   "live_clusters": {
-    "5e67346febb8aabe": {
-      "topic": "Sneaker Politics 20th Anniversary PUMA H-Street Trophies Release",
-      "item_ids": [
-        "c10adec9a6e5"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2f01e941ad310f55": {
-      "topic": "Vans Old Skool Souvenir 2026 Drops",
-      "item_ids": [
-        "2256de190b01"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "978307e9d79c0712": {
-      "topic": "Nike Air Max 90 Scorpion Collection",
-      "item_ids": [
-        "6a466a01f13a"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "361b5ccfd16163a5": {
-      "topic": "Apple Music AI-Generated Songs Usage Statistics",
-      "item_ids": [
-        "6e7c42603258"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d215db70da7969d7": {
-      "topic": "Peso Pluma Adidas 2026 World Cup Opening Watch Party Performance",
-      "item_ids": [
-        "6131ba4db945"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b15f7a0132f3c8a2": {
-      "topic": "Peanuts Music Owners Legal Action Charlie Brown Christmas Songs",
-      "item_ids": [
-        "825658b2d795"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "031c71ab5a6cb13f": {
-      "topic": "Shamrock Capital Entertainment IP Fund Raises $800 Million",
-      "item_ids": [
-        "5d2246da90c7"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "758a7755072b25c1": {
-      "topic": "Iron Maiden 2026 Run for Your Lives Tour Ticket Information",
-      "item_ids": [
-        "c4ea9218c5f0"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "24fe125989fe3e17": {
-      "topic": "Obsession Film Inde Navarrette Character Humanization Interview",
-      "item_ids": [
-        "dc8294f1aa45"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1640f85758986669": {
-      "topic": "Ciar\u00e1n Hinds Joins Isle of Man Movie with Channing Tatum",
-      "item_ids": [
-        "ca4e818262f6"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5cb7c206ba7f5e9b": {
-      "topic": "Schmigadoon 2027 North American Tour Launch",
-      "item_ids": [
-        "1d78cd384598"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d94b2bd2f0616849": {
-      "topic": "ATG Entertainment Possible Sale Report",
-      "item_ids": [
-        "7d6fd1915332"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9323619498a72f66": {
-      "topic": "No Fakes Act Revised Bill Unauthorized Digital Replicas",
-      "item_ids": [
-        "7a7ff34b8bd4",
-        "40586f83067c",
-        "d435a16cfe68"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-21T14:27:18.446911+00:00",
-      "picks_file": "picks/picks-2026-05-21-1427.md",
-      "why_text": "The revised No Fakes Act isn't just about protecting celebrity likenesses \u2014 it's a potential lifeline for independent artists who've had no legal infrastructure to fight unauthorized AI replicas of their voice or image. The bill's new collective action provisions mean a solo artist doesn't have to outspend a tech giant alone, which is a genuine structural shift in how music law could work in the streaming era. At a moment when AI-generated music is flooding platforms and eroding artist identity, this is the first legislation that actually acknowledges the power imbalance.",
-      "last_escalated_item_ids": [
-        "7a7ff34b8bd4",
-        "40586f83067c",
-        "d435a16cfe68"
-      ]
-    },
-    "494de9a6b7e5d0d6": {
-      "topic": "Anthropic xAI Compute Agreement $1.25 Billion Monthly",
-      "item_ids": [
-        "8ad8deb31608"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "daad484924133784": {
-      "topic": "Sam Altman Y Combinator Startup Offer",
-      "item_ids": [
-        "7e693c7c2091"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d9890d6bf8167b52": {
-      "topic": "Lucra Non-AI Startup Funding $20 Million",
-      "item_ids": [
-        "bbaed57bb918"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5eff4a847150b4ec": {
-      "topic": "SpaceX IPO Filing Public Disclosure",
-      "item_ids": [
-        "11ec8b3b563e",
-        "fb0ba42f9c10",
-        "d738ba2554fc",
-        "78c2c16806e2",
-        "d117f3902ca9",
-        "7c11f49afe66",
-        "19171a41949d",
-        "5f3cd787259b"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-05-21T00:14:39.563460+00:00",
-      "picks_file": "picks/picks-2026-05-20-2300.md",
-      "why_text": "SpaceX's long-awaited IPO filing just cracked open the books on one of tech's most opaque empires \u2014 and the headline number is staggering: Anthropic is paying $15 billion a year to use SpaceX's data centers, exposing just how deeply the AI boom is subsidizing Elon Musk's space ambitions. This is the clearest evidence yet that the AI infrastructure arms race has quietly made SpaceX a critical \u2014 and enormously profitable \u2014 backbone of the industry. The filing reframes the entire AI vs. space narrative: these aren't competing futures, they're the same cash flow.\n**Update 7:15 PM CT:** Coverage is now widening beyond the financials: TechCrunch and Ars Technica are digging into the filing's full scope \u2014 its AI investment disclosures, Starship commercialization timelines, and Musk's outsized control provisions \u2014 while CNBC puts the scale in context, noting SpaceX is on track to surpass Alibaba's $25 billion 2014 record to become the largest IPO in U.S. history.",
-      "last_escalated_item_ids": [
-        "11ec8b3b563e",
-        "fb0ba42f9c10",
-        "d738ba2554fc",
-        "78c2c16806e2",
-        "d117f3902ca9",
-        "7c11f49afe66"
-      ]
-    },
-    "1e601df090b8ea99": {
-      "topic": "Microsoft Carbon Removal Plans Update",
-      "item_ids": [
-        "1ee2e33024ef"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "155ca4460e50ebdd": {
-      "topic": "Masters of the Universe Final Trailer Release",
-      "item_ids": [
-        "05cb13eb1cee"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9b4632660a9f4bca": {
-      "topic": "Intuit Workforce Reduction 17% Layoffs",
-      "item_ids": [
-        "fb5b455ba41d"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7e298200b786a484": {
-      "topic": "E.l.f. Beauty Tariff Price Increase Rollback",
-      "item_ids": [
-        "5cff5ed7e90f"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e10815bfa357e9c6": {
-      "topic": "Target Q4 Earnings Beat Sales Outlook Raise",
-      "item_ids": [
-        "07775cef5a70"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6a0d30c71cae02a3": {
-      "topic": "Lowes Earnings Beat Housing Market Performance",
-      "item_ids": [
-        "3036a982d00a"
-      ],
-      "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "2a2f057503aea051": {
       "topic": "Brian Child Reebok DMX Series 3000 Blue Nebula Release",
       "item_ids": [
@@ -910,7 +693,8 @@
     "fcfab5dfc75a39ca": {
       "topic": "Goldman Sachs SpaceX IPO Lead Role",
       "item_ids": [
-        "e70fc0e9d65a"
+        "e70fc0e9d65a",
+        "c8545dcb1f13"
       ],
       "created_at": "2026-05-20T23:00:46.879536+00:00",
       "last_escalated_size": 0,
@@ -994,7 +778,8 @@
         "cf842fe41a80",
         "6ec44603e698",
         "a05ec7afdc82",
-        "b8b19566d0cc"
+        "b8b19566d0cc",
+        "c6db75cb0d46"
       ],
       "created_at": "2026-05-21T04:47:41.986867+00:00",
       "last_escalated_size": 3,
@@ -1407,7 +1192,8 @@
     "d527c87ae5ba86ea": {
       "topic": "DUNE Liquid-Argon Time Projection Chamber Quantum Research",
       "item_ids": [
-        "2813abe7b137"
+        "2813abe7b137",
+        "0306045eb227"
       ],
       "created_at": "2026-05-21T14:27:53.501004+00:00",
       "last_escalated_size": 0,
@@ -2088,7 +1874,188 @@
       "created_at": "2026-05-21T21:02:37.537648+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "bca6a4ddbaa2ca07": {
+      "topic": "Museo Jumex Soccer-Inspired Art Exhibition",
+      "item_ids": [
+        "8c917e3e0b3f"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "91170508cd585ed9": {
+      "topic": "adidas Harden Vol. 10 'Metallic Gold' Basketball Sneaker Release",
+      "item_ids": [
+        "b73db948900f"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ba85dd028a0cc845": {
+      "topic": "Memorial Day 2026 Menswear Sales and Deals",
+      "item_ids": [
+        "ff036b159e7c"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f2f2b288c81ccb04": {
+      "topic": "Lukas Dhont 'Coward' Cannes Film Festival Premiere and Review",
+      "item_ids": [
+        "1886732191fe",
+        "4461e48e7beb",
+        "ce34a9a62e48"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-21T22:37:54.777510+00:00",
+      "picks_file": "picks/picks-2026-05-21-2238.md",
+      "why_text": "Belgian director Lukas Dhont \u2014 who broke through with 'Close' \u2014 has just delivered what critics are calling his most accomplished film yet: a queer WWI romantic drama that's earning rapturous reviews and a 13-minute standing ovation at Cannes. At a moment when queer cinema is fighting for serious prestige-film real estate, Dhont is planting a flag at the top of the festival circuit. This one has awards season written all over it.",
+      "last_escalated_item_ids": [
+        "1886732191fe",
+        "4461e48e7beb",
+        "ce34a9a62e48"
+      ]
+    },
+    "c2fdf608bc296079": {
+      "topic": "'Michael 2' Sequel Lionsgate Production Announcement",
+      "item_ids": [
+        "766bcf56ee07",
+        "c25e53f0351d"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dd7070744844b700": {
+      "topic": "Zendaya Tom Holland 'Spider-Man: Brand New Day' Filming Comments",
+      "item_ids": [
+        "88ffe866c0c4"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5ab060557ecf4e61": {
+      "topic": "F1 Canadian Grand Prix 2026 Watch Guide",
+      "item_ids": [
+        "c90774afcb1c"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5731aa007d0caca5": {
+      "topic": "Primary Wave Music Catalog Acquisitions and Warner Music Korea Deals",
+      "item_ids": [
+        "d9723a8fbe03"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "be7ea20cd7cf2ab9": {
+      "topic": "The Smashing Pumpkins 2026 Tour Ticket Sales",
+      "item_ids": [
+        "2847fe25d219"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8ebc5bee4a7f705b": {
+      "topic": "Nicholas Christopher Broadway Leading Man Profile",
+      "item_ids": [
+        "8240007eb56c"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "94cf5e2f05ff2035": {
+      "topic": "Kenny Chesney 100 Hits on Billboard Hot Country Songs Chart Milestone",
+      "item_ids": [
+        "e67354052d88"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ab9d11372b498373": {
+      "topic": "T-Shirt Brand Memorial Day Sitewide Sale 20% Off",
+      "item_ids": [
+        "f1488e5b9dfc"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "285dbba146613fc5": {
+      "topic": "Questlove Earth Wind & Fire Documentary Featuring Obamas Trailer Release",
+      "item_ids": [
+        "d8b76417f045"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "672cde509c80b7c6": {
+      "topic": "Lupita Nyong'o 'The Odyssey' Racist Casting Criticism Response",
+      "item_ids": [
+        "861eebfee4bf"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "47ff070579f837ee": {
+      "topic": "Stephen Colbert 'The Late Show' Final Episode Taping",
+      "item_ids": [
+        "cd7dc8f490b6"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d4f1ce5994efe332": {
+      "topic": "FTC Report on Creepy Listening Tool for Targeted Ads Ineffectiveness",
+      "item_ids": [
+        "2da1121f871b"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dce67a8875c8c0ae": {
+      "topic": "Waymo Robotaxi Freeway Operations Halted Construction Zone Issues",
+      "item_ids": [
+        "271426b49c8d"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5b61707074d22f63": {
+      "topic": "ChatGPT Integration PowerPoint Microsoft Office",
+      "item_ids": [
+        "9ed876a9ff77"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f79443c629d5d16f": {
+      "topic": "SpaceX Starship 12th Test Flight Preparation IPO Announcement",
+      "item_ids": [
+        "2e07a1a98210"
+      ],
+      "created_at": "2026-05-21T22:38:33.432181+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-21T21:02:41.066333+00:00"
+  "last_checked": "2026-05-21T22:38:39.056590+00:00"
 }
