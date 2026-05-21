@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "d99eb7de3b9a",
-    "7a1e5cb1c7e2",
-    "f4e20e1053ea",
-    "044189405bb9",
-    "f3d1f4e4c942",
-    "8e2426420683",
-    "ea80edec8086",
-    "868ad0031462",
-    "1a0205611067",
-    "970ffc028d7c",
-    "ee6e76f8dc5d",
-    "ce0e992b04e1",
-    "5515543bfecb",
-    "bd2acafd1b79",
-    "4bd3d3193b0d",
-    "855e2e5ce5f8",
-    "6261b7f57629",
     "175b3a1b92d3",
     "9de4a092dce1",
     "5ffbcd2eae2e",
@@ -499,29 +482,26 @@
     "69485a6eda90",
     "3d9a902b7011",
     "83a42b5cce71",
-    "e9d30c470c70"
+    "e9d30c470c70",
+    "c48cdb108138",
+    "453df81e0e95",
+    "5deae4c5dcf8",
+    "b4aa7928133f",
+    "490f4439292f",
+    "133d9d87f232",
+    "78c2c16806e2",
+    "79e903294350",
+    "ee7bebf26d47",
+    "b14cba37ad4b",
+    "d117f3902ca9",
+    "7c11f49afe66",
+    "425816577b55",
+    "e05f4acddbd8",
+    "7c2d33164892",
+    "f04537cac6c7",
+    "b70ca79eca36"
   ],
   "failed_ids": {
-    "9ac5d8336519": "2026-05-20T19:52:30.450472+00:00",
-    "7251f83ead86": "2026-05-20T19:52:30.450472+00:00",
-    "ed27fa7ecba2": "2026-05-20T19:52:30.450472+00:00",
-    "bf90452a7cb7": "2026-05-20T19:52:30.450472+00:00",
-    "379c172c7334": "2026-05-20T19:52:30.450472+00:00",
-    "4445eb68767b": "2026-05-20T19:52:30.450472+00:00",
-    "f3487ee3f246": "2026-05-20T19:52:30.450472+00:00",
-    "fb6e1b1757bd": "2026-05-20T19:52:30.450472+00:00",
-    "a11c918f9610": "2026-05-20T19:52:30.450472+00:00",
-    "901f488af9d7": "2026-05-20T19:52:30.450472+00:00",
-    "17392fe1a119": "2026-05-20T19:52:30.450472+00:00",
-    "ddff12886be7": "2026-05-20T19:52:30.450472+00:00",
-    "1085e8ba6127": "2026-05-20T19:52:30.450472+00:00",
-    "7fdbeee595de": "2026-05-20T19:52:30.450472+00:00",
-    "4969b68eb749": "2026-05-20T19:52:30.450472+00:00",
-    "1e9fb9db6c66": "2026-05-20T19:52:30.450472+00:00",
-    "425816577b55": "2026-05-20T19:52:30.450472+00:00",
-    "5941efb940ed": "2026-05-20T19:52:30.450472+00:00",
-    "541dd961ed20": "2026-05-20T19:52:30.450472+00:00",
-    "4e54126622a1": "2026-05-20T19:52:30.450472+00:00",
     "722301954612": "2026-05-20T21:42:38.130654+00:00",
     "3ec0c0be9be1": "2026-05-20T21:42:38.130654+00:00",
     "1af401e04080": "2026-05-20T21:42:38.130654+00:00",
@@ -550,7 +530,20 @@
     "0294889e16c6": "2026-05-20T23:00:11.157749+00:00",
     "2761b79484b0": "2026-05-20T23:00:11.157749+00:00",
     "455350429a87": "2026-05-20T23:00:11.157749+00:00",
-    "b6e17293f0c0": "2026-05-20T23:00:11.157749+00:00"
+    "b6e17293f0c0": "2026-05-20T23:00:11.157749+00:00",
+    "64e4be8fb8b5": "2026-05-21T00:14:39.563460+00:00",
+    "8c07b4ec86c7": "2026-05-21T00:14:39.563460+00:00",
+    "de8917c24397": "2026-05-21T00:14:39.563460+00:00",
+    "748fbf711e82": "2026-05-21T00:14:39.563460+00:00",
+    "6add26b1b790": "2026-05-21T00:14:39.563460+00:00",
+    "44d143098ba8": "2026-05-21T00:14:39.563460+00:00",
+    "88160d8ac2dc": "2026-05-21T00:14:39.563460+00:00",
+    "6e6f447e2800": "2026-05-21T00:14:39.563460+00:00",
+    "4e54126622a1": "2026-05-21T00:14:39.563460+00:00",
+    "c9cab634e0b1": "2026-05-21T00:14:39.563460+00:00",
+    "541dd961ed20": "2026-05-21T00:14:39.563460+00:00",
+    "429c6ad1d95f": "2026-05-21T00:14:39.563460+00:00",
+    "ac86961f9813": "2026-05-21T00:14:39.563460+00:00"
   },
   "live_clusters": {
     "724e7cc5088c25d6": {
@@ -819,7 +812,8 @@
     "0846548b2fec9647": {
       "topic": "Stephen Colbert 'Late Show' Finale",
       "item_ids": [
-        "459e4893559e"
+        "459e4893559e",
+        "b4aa7928133f"
       ],
       "created_at": "2026-05-20T19:53:05.201686+00:00",
       "last_escalated_size": 0,
@@ -993,17 +987,23 @@
       "item_ids": [
         "11ec8b3b563e",
         "fb0ba42f9c10",
-        "d738ba2554fc"
+        "d738ba2554fc",
+        "78c2c16806e2",
+        "d117f3902ca9",
+        "7c11f49afe66"
       ],
       "created_at": "2026-05-20T21:43:09.240049+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-20T23:00:11.157749+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-05-21T00:14:39.563460+00:00",
       "picks_file": "picks/picks-2026-05-20-2300.md",
-      "why_text": "SpaceX's long-awaited IPO filing just cracked open the books on one of tech's most opaque empires \u2014 and the headline number is staggering: Anthropic is paying $15 billion a year to use SpaceX's data centers, exposing just how deeply the AI boom is subsidizing Elon Musk's space ambitions. This is the clearest evidence yet that the AI infrastructure arms race has quietly made SpaceX a critical \u2014 and enormously profitable \u2014 backbone of the industry. The filing reframes the entire AI vs. space narrative: these aren't competing futures, they're the same cash flow.",
+      "why_text": "SpaceX's long-awaited IPO filing just cracked open the books on one of tech's most opaque empires \u2014 and the headline number is staggering: Anthropic is paying $15 billion a year to use SpaceX's data centers, exposing just how deeply the AI boom is subsidizing Elon Musk's space ambitions. This is the clearest evidence yet that the AI infrastructure arms race has quietly made SpaceX a critical \u2014 and enormously profitable \u2014 backbone of the industry. The filing reframes the entire AI vs. space narrative: these aren't competing futures, they're the same cash flow.\n**Update 7:15 PM CT:** Coverage is now widening beyond the financials: TechCrunch and Ars Technica are digging into the filing's full scope \u2014 its AI investment disclosures, Starship commercialization timelines, and Musk's outsized control provisions \u2014 while CNBC puts the scale in context, noting SpaceX is on track to surpass Alibaba's $25 billion 2014 record to become the largest IPO in U.S. history.",
       "last_escalated_item_ids": [
         "11ec8b3b563e",
         "fb0ba42f9c10",
-        "d738ba2554fc"
+        "d738ba2554fc",
+        "78c2c16806e2",
+        "d117f3902ca9",
+        "7c11f49afe66"
       ]
     },
     "1e601df090b8ea99": {
@@ -1171,7 +1171,8 @@
     "a242b3cfdc78221b": {
       "topic": "xAI Data Center Generator Lawsuit $2.8 Billion Purchase",
       "item_ids": [
-        "42a4a62f5a1d"
+        "42a4a62f5a1d",
+        "133d9d87f232"
       ],
       "created_at": "2026-05-20T23:00:46.879536+00:00",
       "last_escalated_size": 0,
@@ -1212,7 +1213,70 @@
       "created_at": "2026-05-20T23:00:46.879536+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "5d7c5beaae21b040": {
+      "topic": "Salehe Bembury PUMA Velum 'Toasted Almond' Release",
+      "item_ids": [
+        "c48cdb108138"
+      ],
+      "created_at": "2026-05-21T00:15:16.702391+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e4eeca311d347762": {
+      "topic": "Kevin Morby and Carrie Brownstein Sleater-Kinney 'Modern Girl' Performance",
+      "item_ids": [
+        "453df81e0e95"
+      ],
+      "created_at": "2026-05-21T00:15:16.702391+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "93b64b7134e91fa1": {
+      "topic": "Bruno Mars 'Lo Arriesgo Todo' Spanish Version Latin Charts Success",
+      "item_ids": [
+        "5deae4c5dcf8"
+      ],
+      "created_at": "2026-05-21T00:15:16.702391+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9141bca2dedb3114": {
+      "topic": "Cannes Film Festival 2026 Movie Reviews",
+      "item_ids": [
+        "490f4439292f"
+      ],
+      "created_at": "2026-05-21T00:15:16.702391+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c700c78ca52aec36": {
+      "topic": "AMD Ryzen AI Halo PC $3,999 Launch and Ryzen AI Max 400 Chips",
+      "item_ids": [
+        "79e903294350"
+      ],
+      "created_at": "2026-05-21T00:15:16.702391+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3f3bf08b4d592776": {
+      "topic": "Kansas City MacBook Neo Purchase for Students",
+      "item_ids": [
+        "ee7bebf26d47"
+      ],
+      "created_at": "2026-05-21T00:15:16.702391+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "57011dd21b948324": {
+      "topic": "Microsoft Hires Video Game Blog Analyst for Xbox Division",
+      "item_ids": [
+        "b14cba37ad4b"
+      ],
+      "created_at": "2026-05-21T00:15:16.702391+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-20T23:00:52.516469+00:00"
+  "last_checked": "2026-05-21T00:15:29.338699+00:00"
 }
