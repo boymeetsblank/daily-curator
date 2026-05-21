@@ -1,21 +1,5 @@
 {
   "known_ids": [
-    "deaed6365115",
-    "245c7915ad47",
-    "5466180c5b5e",
-    "4451ab601eb0",
-    "32ce1194fbe1",
-    "28ff975a9a5a",
-    "b7e9882f5ee1",
-    "bffcc369b176",
-    "ccba1fb4b123",
-    "a09153513aa0",
-    "166ed186bc48",
-    "0f8495ad0e52",
-    "03ce0b91ae5d",
-    "89ecdaa81923",
-    "5477abf313ff",
-    "08aa34fe5057",
     "a9e67974bb63",
     "9826ce155f72",
     "ed4d5e8ea66b",
@@ -499,7 +483,23 @@
     "1ac31b353a66",
     "2390dd2b6555",
     "0ea532dbf2bc",
-    "b251a3019e5f"
+    "b251a3019e5f",
+    "796a6c2f8157",
+    "1d5f75213408",
+    "6cd9262b7451",
+    "67c1884eb80b",
+    "3a0c6dc938ae",
+    "b3934f17b3b5",
+    "25bf0f904753",
+    "765ffcecbfbb",
+    "346964939397",
+    "6564365fc571",
+    "55179437b1ad",
+    "302705df3c5c",
+    "725d3b12f441",
+    "6ec44603e698",
+    "83d83b1f36a5",
+    "1e9bf278d3de"
   ],
   "failed_ids": {
     "4959b1549cd7": "2026-05-21T04:47:13.933042+00:00",
@@ -514,7 +514,24 @@
     "b543b137cf92": "2026-05-21T04:47:13.933042+00:00",
     "6f72bc6a1701": "2026-05-21T04:47:13.933042+00:00",
     "ac86961f9813": "2026-05-21T04:47:13.933042+00:00",
-    "9159441526d6": "2026-05-21T04:47:13.933042+00:00"
+    "9159441526d6": "2026-05-21T04:47:13.933042+00:00",
+    "d1075d5ed033": "2026-05-21T08:23:38.305236+00:00",
+    "a4f4cae51bb3": "2026-05-21T08:23:38.305236+00:00",
+    "08c9e53888b3": "2026-05-21T08:23:38.305236+00:00",
+    "3cb39004b515": "2026-05-21T08:23:38.305236+00:00",
+    "d30a3e46f322": "2026-05-21T08:23:38.305236+00:00",
+    "b0abed988fc1": "2026-05-21T08:23:38.305236+00:00",
+    "cb2c8bc3806a": "2026-05-21T08:23:38.305236+00:00",
+    "7183797bf202": "2026-05-21T08:23:38.305236+00:00",
+    "1d51624f0c57": "2026-05-21T08:23:38.305236+00:00",
+    "692d49e1e4d7": "2026-05-21T08:23:38.305236+00:00",
+    "32458420c386": "2026-05-21T08:23:38.305236+00:00",
+    "89ba2c1eba2d": "2026-05-21T08:23:38.305236+00:00",
+    "aaf7e8cd0964": "2026-05-21T08:23:38.305236+00:00",
+    "aac6af3bf63d": "2026-05-21T08:23:38.305236+00:00",
+    "e38d6fc6b2d6": "2026-05-21T08:23:38.305236+00:00",
+    "18815b412ebf": "2026-05-21T08:23:38.305236+00:00",
+    "8f4cf4379fd8": "2026-05-21T08:23:38.305236+00:00"
   },
   "live_clusters": {
     "724e7cc5088c25d6": {
@@ -684,7 +701,8 @@
     "cbe0de2b42a0c424": {
       "topic": "'Adventures of Cliff Booth' Release Date Announcement",
       "item_ids": [
-        "c70b76f4b441"
+        "c70b76f4b441",
+        "6cd9262b7451"
       ],
       "created_at": "2026-05-20T19:53:05.201686+00:00",
       "last_escalated_size": 0,
@@ -784,11 +802,19 @@
       "topic": "Stephen Colbert 'Late Show' Finale",
       "item_ids": [
         "459e4893559e",
-        "b4aa7928133f"
+        "b4aa7928133f",
+        "3a0c6dc938ae"
       ],
       "created_at": "2026-05-20T19:53:05.201686+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-21T08:23:38.305236+00:00",
+      "picks_file": "picks/picks-2026-05-21-0824.md",
+      "why_text": "After a decade-plus run, Stephen Colbert is ending The Late Show, and the TV world is taking it seriously \u2014 Seth Meyers called it 'a very sad week for television in America.' The finale is shaping up as a genuine send-off event, with heavyweights like Robert De Niro, Billy Crystal, and Martha Stewart showing up to roast and toast him. In an era when late night has been steadily losing its cultural grip, losing Colbert feels less like a cancellation and more like the end of an era.",
+      "last_escalated_item_ids": [
+        "459e4893559e",
+        "b4aa7928133f",
+        "3a0c6dc938ae"
+      ]
     },
     "ac0fe705985c79ce": {
       "topic": "'Margo's Got Money Troubles' Series Finale",
@@ -1260,7 +1286,8 @@
     "42d81ba8a34a26d1": {
       "topic": "Sia $100,000 Donation 'Survivor 50' Finale",
       "item_ids": [
-        "cf842fe41a80"
+        "cf842fe41a80",
+        "6ec44603e698"
       ],
       "created_at": "2026-05-21T04:47:41.986867+00:00",
       "last_escalated_size": 0,
@@ -1310,7 +1337,70 @@
         "2390dd2b6555",
         "0ea532dbf2bc"
       ]
+    },
+    "16640dd4bca7a0f4": {
+      "topic": "JW Anderson Chelsea Flower Show Pimlico Boutique Installation",
+      "item_ids": [
+        "796a6c2f8157"
+      ],
+      "created_at": "2026-05-21T08:24:12.894812+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "28beaed3bf1b89ab": {
+      "topic": "Nike Dunk Low CBGB Music Venue Collaboration",
+      "item_ids": [
+        "1d5f75213408"
+      ],
+      "created_at": "2026-05-21T08:24:12.894812+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2d02b5f7a7ba9ce8": {
+      "topic": "Palace Skateboards Shanghai Mainland China Store Opening",
+      "item_ids": [
+        "67c1884eb80b"
+      ],
+      "created_at": "2026-05-21T08:24:12.894812+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6b4910700ced6c52": {
+      "topic": "Audible 'Foul Play' Podcast Gordon Banks CIA Poisoning 1970 World Cup",
+      "item_ids": [
+        "b3934f17b3b5"
+      ],
+      "created_at": "2026-05-21T08:24:12.894812+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b37b5f0a47d6a458": {
+      "topic": "Anthropic First Profitable Quarter Report",
+      "item_ids": [
+        "25bf0f904753"
+      ],
+      "created_at": "2026-05-21T08:24:12.894812+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6555440b2902410c": {
+      "topic": "Ubisoft Stock Plunge Annual Profit Loss Warning",
+      "item_ids": [
+        "765ffcecbfbb"
+      ],
+      "created_at": "2026-05-21T08:24:12.894812+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4300553e447dc9cc": {
+      "topic": "SoftBank Shares Surge Nvidia AI Momentum Signal",
+      "item_ids": [
+        "346964939397"
+      ],
+      "created_at": "2026-05-21T08:24:12.894812+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-21T04:47:47.167497+00:00"
+  "last_checked": "2026-05-21T08:24:28.093244+00:00"
 }
