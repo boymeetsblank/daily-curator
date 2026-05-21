@@ -1,61 +1,5 @@
 {
   "known_ids": [
-    "56b12009f8da",
-    "80748e81552a",
-    "47cad85be65f",
-    "57a09211ba22",
-    "fbe16620e5da",
-    "bd20da5a3fa6",
-    "a709798ee8f1",
-    "c646b29b9090",
-    "3a9b0386203c",
-    "919e5421eb41",
-    "c91f18ee8878",
-    "42ab7a5792ea",
-    "866703621228",
-    "7032f855edeb",
-    "d6f78e1ba53a",
-    "656915d7f538",
-    "e6240ed5fe9c",
-    "cc79f5496000",
-    "44865bd93aef",
-    "6465c8d73461",
-    "6f0f805e24a1",
-    "55ff9278324e",
-    "5bffd3560176",
-    "5f8eca5e0505",
-    "e60fac01d36f",
-    "2c5dc1c93c55",
-    "fd8580d10720",
-    "0570a016c805",
-    "c4057133c9fa",
-    "11f244003e3e",
-    "3273d3f04dcf",
-    "f7b3d8eb850c",
-    "3c005df205b9",
-    "732f56ecb441",
-    "9ff467d5972d",
-    "54711cc4a5de",
-    "3d05c7adf285",
-    "f4075578633b",
-    "0c9424b5410d",
-    "f568df07558f",
-    "b26a9e69abfa",
-    "7684482ed9f3",
-    "cf59929fa0bd",
-    "8ebfdad4970d",
-    "df3a8ebb6dd7",
-    "b7c6b13f083f",
-    "e2de9497d5d6",
-    "a8ebd2c8226b",
-    "f2a49738a1d5",
-    "6a245d03a5f0",
-    "1c17e00288d5",
-    "a6b3373bb94f",
-    "89da2b87a31a",
-    "293c4e42dd55",
-    "61ae9aeaf635",
-    "83b497b4adc3",
     "dc0f5ad0e326",
     "593ca8dbf24f",
     "9ec0e3e83150",
@@ -499,20 +443,65 @@
     "fd7590ccc168",
     "b0de73434e03",
     "c588752d4e5e",
-    "71e8697d7644"
+    "71e8697d7644",
+    "eea433da1712",
+    "827753236b6c",
+    "b31619673242",
+    "cbc9a3001c03",
+    "45975d476880",
+    "95171700dd4c",
+    "5ac891adc95b",
+    "c106382df1b3",
+    "42f614784800",
+    "130cfd3e542d",
+    "a4ecbb2b2593",
+    "e846fb6567f5",
+    "7bb1cf4687aa",
+    "7345b38bcce3",
+    "6382be51f14b",
+    "d6d4658e2f26",
+    "38e190e40b34",
+    "ac8439f3be29",
+    "a05ec7afdc82",
+    "f73770bd087c",
+    "24095b4734fe",
+    "585ae4a7e2ea",
+    "8acc93d9db5a",
+    "bd16d94dbc4d",
+    "f7528e8a3f01",
+    "f43899ea7f05",
+    "a75963c683c2",
+    "e3dba206c333",
+    "f470f751675c",
+    "fe576b2d8340",
+    "ce59bdc7a569",
+    "5f32e9da337f",
+    "9df71bf1283e",
+    "51a5f7a88be8",
+    "7613904bafc3",
+    "90dbdd6e7b88",
+    "d57c35bc803a",
+    "5dc9f7ee915e",
+    "593494e6f1b9",
+    "408ef0ef57de",
+    "ede5a08fcbc1",
+    "47c247cd616d",
+    "ee55c3a60de3",
+    "a7cdc022de06",
+    "6738ad996822",
+    "9040ca40a891",
+    "723adcf8ab86",
+    "579fb556186f",
+    "4b1a8d119d40",
+    "b4a9f37444d2",
+    "f2360ec32f6a",
+    "a0a7be63470f",
+    "13849d51430e",
+    "fb9ed73d0318",
+    "a159563e5e70",
+    "5f59c685a20a"
   ],
   "failed_ids": {
-    "52728f84358d": "2026-05-21T11:43:09.449961+00:00",
-    "f829879068b5": "2026-05-21T11:43:09.449961+00:00",
-    "ac736766b141": "2026-05-21T11:43:09.449961+00:00",
-    "bd30a781be73": "2026-05-21T11:43:09.449961+00:00",
-    "0b49f2a7eef6": "2026-05-21T11:43:09.449961+00:00",
-    "1ab00c54d690": "2026-05-21T11:43:09.449961+00:00",
-    "cf55a657261e": "2026-05-21T11:43:09.449961+00:00",
-    "e7afa28fbe6b": "2026-05-21T11:43:09.449961+00:00",
-    "d24328f07da6": "2026-05-21T11:43:09.449961+00:00",
-    "ca5f4ce0d35d": "2026-05-21T11:43:09.449961+00:00",
-    "c45054fe71f2": "2026-05-21T11:43:09.449961+00:00",
     "8b0fccdd9c42": "2026-05-21T14:27:18.446911+00:00",
     "1ae647fb5b53": "2026-05-21T14:27:18.446911+00:00",
     "bf19e32669f8": "2026-05-21T14:27:18.446911+00:00",
@@ -700,11 +689,21 @@
       "topic": "'Adventures of Cliff Booth' Release Date Announcement",
       "item_ids": [
         "c70b76f4b441",
-        "6cd9262b7451"
+        "6cd9262b7451",
+        "7bb1cf4687aa",
+        "f43899ea7f05"
       ],
       "created_at": "2026-05-20T19:53:05.201686+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-05-21T17:15:24.960183+00:00",
+      "picks_file": "picks/picks-2026-05-21-1716.md",
+      "why_text": "The 'Cliffhanger' reboot is finding its U.S. theatrical home with Neon's Decal label, signaling serious arthouse-adjacent ambition for what could easily have been a straightforward action tentpole. Neon has been on a hot streak as a distributor with cultural cachet \u2014 picking up this title suggests they see crossover potential beyond the nostalgia crowd. In a crowded reboot landscape, the distributor choice often sets the entire tone for how a film gets positioned and received.",
+      "last_escalated_item_ids": [
+        "c70b76f4b441",
+        "6cd9262b7451",
+        "7bb1cf4687aa",
+        "f43899ea7f05"
+      ]
     },
     "efb0dc58491d1527": {
       "topic": "Everlane Acquisition by Shein",
@@ -1295,11 +1294,19 @@
       "topic": "Sia $100,000 Donation 'Survivor 50' Finale",
       "item_ids": [
         "cf842fe41a80",
-        "6ec44603e698"
+        "6ec44603e698",
+        "a05ec7afdc82"
       ],
       "created_at": "2026-05-21T04:47:41.986867+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-21T17:15:24.960183+00:00",
+      "picks_file": "picks/picks-2026-05-21-1716.md",
+      "why_text": "Survivor's landmark 50th season finale just got a marquee moment: Sia, who has shown up at multiple finales to personally hand out six-figure prizes to players she found inspiring, kept the tradition alive in a big way. It's a genuinely strange and beloved piece of reality TV lore \u2014 a pop star with no formal show affiliation essentially crowdfunding goodwill on live television. In an era when legacy franchises are fighting for cultural relevance, Sia's recurring cameo has become one of Survivor's most talked-about rituals.",
+      "last_escalated_item_ids": [
+        "cf842fe41a80",
+        "6ec44603e698",
+        "a05ec7afdc82"
+      ]
     },
     "c22516536a42b57d": {
       "topic": "Damon Lindelof Scrapped 'Star Wars' Project Details",
@@ -1705,7 +1712,306 @@
       "created_at": "2026-05-21T14:27:53.501004+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "2fbb7aad06302fc8": {
+      "topic": "Nike KD 6 'Seat Pleasant' Spring 2027 Retro Release",
+      "item_ids": [
+        "eea433da1712"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a0e7ca373b8b0a75": {
+      "topic": "Nike Air Trainer SC Atlanta Market Return",
+      "item_ids": [
+        "827753236b6c"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2ae50f11203396a4": {
+      "topic": "Nike 2026 World Cup Marketing Campaign Polaroid Album",
+      "item_ids": [
+        "b31619673242"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "90dedc2694f807f2": {
+      "topic": "GQ Summer Fashion Oxford Shirt Feature",
+      "item_ids": [
+        "cbc9a3001c03"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8cf595b5dfd854aa": {
+      "topic": "AI Implementation in Creative Industries Analysis",
+      "item_ids": [
+        "45975d476880"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d9947db2a8c8ddfd": {
+      "topic": "AI Usage Ethics and Personal Privacy Guide",
+      "item_ids": [
+        "95171700dd4c"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "90ce3003c102908d": {
+      "topic": "AI Side Hustle Automation Guide",
+      "item_ids": [
+        "5ac891adc95b"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "af4e5a74185c1d7d": {
+      "topic": "OpenClaw AI Avatar Self-Cloning Experience",
+      "item_ids": [
+        "c106382df1b3"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "38651300f3276c10": {
+      "topic": "Lucas Acher 'Laser-Cat' Cannes La Cinef Best Short Award",
+      "item_ids": [
+        "42f614784800"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dbdc7f22ece05ea1": {
+      "topic": "Sarah Arnold 'Too Many Beasts' Cannes Directors' Fortnight Best European Film",
+      "item_ids": [
+        "130cfd3e542d"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "67fcb1deb669d790": {
+      "topic": "'Summer of '94' Documentary Coach Bora Milutinovi\u0107 1994 World Cup Legacy",
+      "item_ids": [
+        "a4ecbb2b2593"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3ad2a09ccfaf4d4b": {
+      "topic": "'Sinners' Film Halloween Horror Nights Universal Attraction",
+      "item_ids": [
+        "e846fb6567f5"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4d92ccff4df7fe20": {
+      "topic": "Vince Staples American Flag Music Video",
+      "item_ids": [
+        "7345b38bcce3"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "81deabb82e9b0543": {
+      "topic": "Suu Morishita 'Yubisaki to Renren' Vol. 14 Billboard Japan Book Chart",
+      "item_ids": [
+        "6382be51f14b"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "046ca46da721ebac": {
+      "topic": "Kacey Musgraves Lee Denim Fashion Collection",
+      "item_ids": [
+        "38e190e40b34"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "76475c86e24859e1": {
+      "topic": "LISA Anitta Rema 'Goals' FIFA World Cup Cross-Continental Single",
+      "item_ids": [
+        "ac8439f3be29"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "06e25bd5541afa64": {
+      "topic": "BTS 'Arirang' World Tour Homecoming Show Global Live Screening",
+      "item_ids": [
+        "f73770bd087c"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e7e6199f4af36fd7": {
+      "topic": "Sadie Soverall Brady Corbet X-Rated Film Role",
+      "item_ids": [
+        "585ae4a7e2ea"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1ca0c656fe8983aa": {
+      "topic": "Courtney A. Kemp Apple TV Overall Deal",
+      "item_ids": [
+        "8acc93d9db5a"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c883fd0da7b37b6": {
+      "topic": "Gavin Newsom AI Disruption Executive Order",
+      "item_ids": [
+        "bd16d94dbc4d"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d384aefcd045ef15": {
+      "topic": "Spotify Reserved Concert Tickets Premium Subscribers Universal Music AI Covers Deal",
+      "item_ids": [
+        "f7528e8a3f01",
+        "ce59bdc7a569",
+        "51a5f7a88be8",
+        "408ef0ef57de"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-05-21T17:15:24.960183+00:00",
+      "picks_file": "picks/picks-2026-05-21-1716.md",
+      "why_text": "Spotify is moving hard to justify its premium tier by bundling live music access \u2014 a direct shot at competitors and a signal that streaming alone no longer sells subscriptions. The Universal Music deal for fan-made AI covers is the bigger flex: it legitimizes a whole category of AI-generated content that the music industry has been fighting, turning a legal headache into a revenue stream. Together, these moves reframe Spotify from passive platform to active gatekeeper of the entire music experience.",
+      "last_escalated_item_ids": [
+        "f7528e8a3f01",
+        "ce59bdc7a569",
+        "51a5f7a88be8",
+        "408ef0ef57de"
+      ]
+    },
+    "918bf20e9a53a43f": {
+      "topic": "2026 Hurricane Season Weather Forecast",
+      "item_ids": [
+        "e3dba206c333"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "de550af818c58e8f": {
+      "topic": "Google Gemini AI Avatar Self-Cloning Tool Experience",
+      "item_ids": [
+        "f470f751675c"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fa49206ac61f63ff": {
+      "topic": "Fragrance Industry Startup Innovation Challenge",
+      "item_ids": [
+        "fe576b2d8340"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3a65557654796252": {
+      "topic": "Google Gemini Integration Smart Home Devices",
+      "item_ids": [
+        "5f32e9da337f"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7d7ad2e6e701a9db": {
+      "topic": "Humanoid Robot Bosch Production Partnership",
+      "item_ids": [
+        "9df71bf1283e"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "70a16b282469caf6": {
+      "topic": "AT&T Customizable Wireless Plans $15 Monthly Offer",
+      "item_ids": [
+        "7613904bafc3"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e621801240357689": {
+      "topic": "Top Gun 40th Anniversary Retrospective",
+      "item_ids": [
+        "90dbdd6e7b88"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "21c2de2100c8dc25": {
+      "topic": "International Space Station Coolant Leak Repair",
+      "item_ids": [
+        "d57c35bc803a"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "536ac011c16aabc2": {
+      "topic": "Trump AI Executive Order Postponement",
+      "item_ids": [
+        "5dc9f7ee915e"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a444f58026b11e7d": {
+      "topic": "Trump EPA Rules Supermarket Price Impact",
+      "item_ids": [
+        "593494e6f1b9"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0cf33bab0ade4f37": {
+      "topic": "White House AI Defense Strategy Policy",
+      "item_ids": [
+        "ee55c3a60de3"
+      ],
+      "created_at": "2026-05-21T17:16:09.908062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-21T14:27:59.722804+00:00"
+  "last_checked": "2026-05-21T17:16:26.512469+00:00"
 }
