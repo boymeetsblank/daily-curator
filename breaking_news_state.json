@@ -1,62 +1,5 @@
 {
   "known_ids": [
-    "dc0f5ad0e326",
-    "593ca8dbf24f",
-    "9ec0e3e83150",
-    "1937bf4dc1cd",
-    "8434ab327ec3",
-    "dac5539a70c5",
-    "a46695607464",
-    "7451fe1e2bdb",
-    "de991c499462",
-    "32bb49692a07",
-    "08dbca465503",
-    "92c81a73b3bb",
-    "ba2badf23d53",
-    "59590b974b18",
-    "9e005d56e82a",
-    "ffcf0a352940",
-    "b74b7c07336d",
-    "3c5e5e769bc5",
-    "d37cfe510d98",
-    "83e284d74a6a",
-    "373c80b4e473",
-    "508a3d1e48b3",
-    "30df67bc19eb",
-    "8c8a03a823d0",
-    "1d6d52adbf99",
-    "463ba5067c18",
-    "bdcbb452cd00",
-    "17cac120fb6d",
-    "52c98eb74577",
-    "cd2f47fd902d",
-    "2c0676e15579",
-    "e250ebed2031",
-    "b4f4cfbafd7c",
-    "42b465e269cf",
-    "1de0f2cf57e7",
-    "8eb0f2b12729",
-    "b35b2315b7d8",
-    "328bafdb2371",
-    "81b2ff8a709d",
-    "e8c25ad39f58",
-    "fed8e537d8c6",
-    "b3191a1b87c9",
-    "7d6c77c517a2",
-    "bd22d58886ae",
-    "b9106327f6be",
-    "2d956e8b3fcc",
-    "36cbc78fd8f1",
-    "5f9c54b8f6b2",
-    "b6d0ae4530d8",
-    "1bdbc5559cad",
-    "e3434061ac0f",
-    "52bac5a19204",
-    "cbf7d3c9fad9",
-    "ed1ec9675868",
-    "b04daa792ec0",
-    "f9154b3fd9bb",
-    "3b5b3e1c3eeb",
     "282a649e44dc",
     "a3d053842ed8",
     "14a332c56827",
@@ -499,165 +442,67 @@
     "13849d51430e",
     "fb9ed73d0318",
     "a159563e5e70",
-    "5f59c685a20a"
+    "5f59c685a20a",
+    "7b63178f5008",
+    "4ff0291e4612",
+    "453d1ca72ebf",
+    "fddb7c84a91c",
+    "0cabaa0d20a9",
+    "534970ef2775",
+    "233d5c4e3bd8",
+    "35578a407393",
+    "99e6c1b5d90a",
+    "f96f43677dd8",
+    "ae21f5985afa",
+    "a2e1150087ec",
+    "e3ba434af004",
+    "12ab407f2ddc",
+    "cafc2b6a4518",
+    "47cfcb688295",
+    "bb547bad5f18",
+    "83ec6af8d714",
+    "1e8d681d94f7",
+    "d2fea97788c7",
+    "fa6b6ec04263",
+    "d763a91b36dc",
+    "a7a3efb9c036",
+    "2a411320229a",
+    "90868d225398",
+    "d8e0469045bd",
+    "afa0da01f3cf",
+    "895cbfe52920",
+    "09dea98fc4ca",
+    "7dd0c8b28b0d",
+    "8f96223326b4",
+    "31c309833c9c",
+    "5399eb80216c",
+    "7d8088891c85",
+    "584e17c0a652",
+    "a951e456ef62",
+    "17bf9ceb76af",
+    "eb82e0e9a3ad",
+    "9039953e8b9e",
+    "5f3cd787259b",
+    "be06046db239",
+    "24cc9ee60efa",
+    "acf4edfb4044",
+    "75f7db50ec81",
+    "43bf88c7d0d9",
+    "6fe128c59815",
+    "fbc7c9990985",
+    "a44e92d67d5b",
+    "fd5d62602d42",
+    "a3c5b2cc136f",
+    "730c7bb6c4bc",
+    "e7550e61636d",
+    "4bbf800c3d3b",
+    "de86858655ec",
+    "b562ee0d8cbc",
+    "df8834d9d9eb",
+    "ba6238bdaed4"
   ],
-  "failed_ids": {
-    "8b0fccdd9c42": "2026-05-21T14:27:18.446911+00:00",
-    "1ae647fb5b53": "2026-05-21T14:27:18.446911+00:00",
-    "bf19e32669f8": "2026-05-21T14:27:18.446911+00:00",
-    "e4712d861ef1": "2026-05-21T14:27:18.446911+00:00",
-    "253855ab9058": "2026-05-21T14:27:18.446911+00:00",
-    "7e5b52307aaa": "2026-05-21T14:27:18.446911+00:00",
-    "07dbdb1a9634": "2026-05-21T14:27:18.446911+00:00",
-    "15f799483b0f": "2026-05-21T14:27:18.446911+00:00",
-    "324459863435": "2026-05-21T14:27:18.446911+00:00",
-    "d354d2b4ebff": "2026-05-21T14:27:18.446911+00:00",
-    "7a7d0a694c9f": "2026-05-21T14:27:18.446911+00:00",
-    "65d250d35e3b": "2026-05-21T14:27:18.446911+00:00",
-    "cbb51c21cd81": "2026-05-21T14:27:18.446911+00:00",
-    "907f3c58cbb7": "2026-05-21T14:27:18.446911+00:00",
-    "a44e92d67d5b": "2026-05-21T14:27:18.446911+00:00",
-    "730c7bb6c4bc": "2026-05-21T14:27:18.446911+00:00",
-    "dbfe9960ce44": "2026-05-21T14:27:18.446911+00:00"
-  },
+  "failed_ids": {},
   "live_clusters": {
-    "724e7cc5088c25d6": {
-      "topic": "Levi's 1870 Nevada Jean Archive Revival",
-      "item_ids": [
-        "700edf3ab9b7"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1f78b267360a3ce6": {
-      "topic": "Lorna Simpson 'Third Person' Venice Exhibition",
-      "item_ids": [
-        "6a2c3475a0dc"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fc70a1543a138acf": {
-      "topic": "Air Jordan 4 Georgetown 2027 Release",
-      "item_ids": [
-        "d987b9bc51eb",
-        "986baddb3207"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c4f03bc15211709": {
-      "topic": "Nike Air Max 95 Laser-Etched Bandana Paisley",
-      "item_ids": [
-        "450c864da7f6"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dafbdd116017651e": {
-      "topic": "JJJJound New Balance 1890 Yellow Accents",
-      "item_ids": [
-        "c15388fda420"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7cdf8e1f6d2b43f3": {
-      "topic": "Ariana Grande Dangerous Woman Outtake Release",
-      "item_ids": [
-        "b4ff1408d047",
-        "a98d498f846b"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e3216872fe036617": {
-      "topic": "Billy Joel Biopic Opposition",
-      "item_ids": [
-        "cc011fda77af"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1e9c8b4fe2758174": {
-      "topic": "Kylie Minogue Madonna Collaboration Rumors",
-      "item_ids": [
-        "4b3b10db7406"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3c8326119fbce782": {
-      "topic": "Tony Awards Act One Hosting Announcement",
-      "item_ids": [
-        "2f2bbc68a095"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "75585cf92560d9bf": {
-      "topic": "Japan Hot 100 Chart: Bullet Train Gachi Muchuu Number One",
-      "item_ids": [
-        "c24285d143a6"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "474f945646469872": {
-      "topic": "Michael Jackson 100 Weeks Number One R&B Hip-Hop Albums Chart",
-      "item_ids": [
-        "4920648869db"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a5b991ad13128f02": {
-      "topic": "Smashing Pumpkins Butch Vig Recording First Time Since Siamese Dream",
-      "item_ids": [
-        "a348b082b273"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e4c717c83c385c03": {
-      "topic": "Gregg Allman Documentary About Late Brother",
-      "item_ids": [
-        "6ab8be6c264f"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c45b3cf4f43bbb65": {
-      "topic": "Quantic Dream Shutting Down Spellcasters Chronicles MOBA",
-      "item_ids": [
-        "443bc099361c"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "652b4410c79e9330": {
-      "topic": "Barney Frank Death",
-      "item_ids": [
-        "a1e450ddd296"
-      ],
-      "created_at": "2026-05-20T17:34:28.757910+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "367bf35e7705be19": {
       "topic": "Rihanna PUMA Partnership Ends",
       "item_ids": [
@@ -800,7 +645,8 @@
       "item_ids": [
         "459e4893559e",
         "b4aa7928133f",
-        "3a0c6dc938ae"
+        "3a0c6dc938ae",
+        "df8834d9d9eb"
       ],
       "created_at": "2026-05-20T19:53:05.201686+00:00",
       "last_escalated_size": 3,
@@ -994,7 +840,8 @@
         "78c2c16806e2",
         "d117f3902ca9",
         "7c11f49afe66",
-        "19171a41949d"
+        "19171a41949d",
+        "5f3cd787259b"
       ],
       "created_at": "2026-05-20T21:43:09.240049+00:00",
       "last_escalated_size": 6,
@@ -1491,7 +1338,8 @@
     "ba55b6faa21e1ada": {
       "topic": "Quantum Computing Stocks Rally US $2 Billion Investment Program",
       "item_ids": [
-        "c7806d70c03c"
+        "c7806d70c03c",
+        "75f7db50ec81"
       ],
       "created_at": "2026-05-21T11:43:42.001302+00:00",
       "last_escalated_size": 0,
@@ -1899,7 +1747,8 @@
         "f7528e8a3f01",
         "ce59bdc7a569",
         "51a5f7a88be8",
-        "408ef0ef57de"
+        "408ef0ef57de",
+        "d763a91b36dc"
       ],
       "created_at": "2026-05-21T17:16:09.908062+00:00",
       "last_escalated_size": 4,
@@ -2011,7 +1860,223 @@
       "created_at": "2026-05-21T17:16:09.908062+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "020433948059acc0": {
+      "topic": "Louis Vuitton Cruise 2027 Shoes Basketball Karate Inspired Design",
+      "item_ids": [
+        "7b63178f5008"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6c04c525570ce5fb": {
+      "topic": "Merrell Union Square Outdoor Space Installation",
+      "item_ids": [
+        "4ff0291e4612"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7fbca8ff67d5f4b9": {
+      "topic": "Nigel Sylvester Air Jordan 4 'Brick After Brick' Release",
+      "item_ids": [
+        "453d1ca72ebf"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d89cb8d6fd9ed4d0": {
+      "topic": "Nike SB P-Rod 1 'Flint Grey' Sneaker Release",
+      "item_ids": [
+        "fddb7c84a91c"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "804c226116b5265e": {
+      "topic": "S\u00e3o Paulo International Film Production Tax Incentive 20-Year Plan",
+      "item_ids": [
+        "233d5c4e3bd8"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7e9560d3e91edf30": {
+      "topic": "'Anatomy of Murder' Hosts Launch New Podcast 'Homicide 360' After Audiochuck Split",
+      "item_ids": [
+        "35578a407393"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a69e03ed3cfa8e22": {
+      "topic": "2026 Tony Awards Predictions 'Death of a Salesman' 'The Lost Boys'",
+      "item_ids": [
+        "99e6c1b5d90a"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2c2fa465584d88c2": {
+      "topic": "Cannes Directors' Fortnight Clio Barnard 'I See Buildings Fall Like Lightning' People's Choice Award",
+      "item_ids": [
+        "f96f43677dd8"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ccdda0963d58656b": {
+      "topic": "Amita Rao Breakout Star Horror-Comedy 'See Bot Run' Casting",
+      "item_ids": [
+        "ae21f5985afa"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f8bf76c060acee0e": {
+      "topic": "Wiki First Solo Album in Seven Years Announcement",
+      "item_ids": [
+        "a2e1150087ec"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "009b227efee7f2f5": {
+      "topic": "2026 Americana Honors & Awards Nominees Margo Price Brandi Carlile",
+      "item_ids": [
+        "e3ba434af004"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eb4835cad4e61da4": {
+      "topic": "The Cranberries 'Linger' 'Dreams' Spanish Versions Gen Z Gen Z Resurgence",
+      "item_ids": [
+        "12ab407f2ddc"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "22ad87697dd80cc7": {
+      "topic": "Chuyin Masked Artist 'Los Locos Nunca Mueren' Album Billboard Chart Debut",
+      "item_ids": [
+        "47cfcb688295"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d39f1528e76282a9": {
+      "topic": "Why Don't We's Jack Avery Ex-Girlfriend Charged Hiring Hitman Statement",
+      "item_ids": [
+        "bb547bad5f18"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "32eadff1cad00941": {
+      "topic": "Paul McCartney Beatles Classics 'SNL' Post-Credits Performance",
+      "item_ids": [
+        "1e8d681d94f7"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9abb246bf06e121f": {
+      "topic": "Xavi Second Album 'Dosis' Music Release",
+      "item_ids": [
+        "fa6b6ec04263"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eab9b37ea5a44339": {
+      "topic": "Pen\u00e9lope Cruz 'La Bola Negra' Cannes 20-Minute Standing Ovation",
+      "item_ids": [
+        "a7a3efb9c036"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fbcc46b711de63fc": {
+      "topic": "Apple TV MLS Live Match Shot Entirely With iPhones Sports Broadcasting History",
+      "item_ids": [
+        "2a411320229a"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "16ff4384a6e0da88": {
+      "topic": "Kyle Gallner Joins Brie Larson 'Skeletons' Sony Pictures JT Mollner",
+      "item_ids": [
+        "90868d225398"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "46629cea498101c2": {
+      "topic": "'How To Survive Without Me' HBO Max Pilot Joe Romano Ray Katie Aselton Will Yun Lee",
+      "item_ids": [
+        "d8e0469045bd"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "acec864bd99d91bd": {
+      "topic": "Radio Silence 'Choose Your Own Adventure' Feature Film Adaptation 20th Century Studios",
+      "item_ids": [
+        "afa0da01f3cf"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "38d717c7023482da": {
+      "topic": "Meta School District Lawsuit Settlement",
+      "item_ids": [
+        "a951e456ef62"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fc337baf0783cab1": {
+      "topic": "Oura Smart Ring Maker IPO Filing",
+      "item_ids": [
+        "17bf9ceb76af"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d804d91303df39c6": {
+      "topic": "Anthropic Microsoft AI Chip Deal Talks $5 Billion Investment",
+      "item_ids": [
+        "9039953e8b9e"
+      ],
+      "created_at": "2026-05-21T19:20:38.150222+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-21T17:16:26.512469+00:00"
+  "last_checked": "2026-05-21T19:20:38.151478+00:00"
 }
