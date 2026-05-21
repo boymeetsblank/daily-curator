@@ -1,27 +1,5 @@
 {
   "known_ids": [
-    "a9e67974bb63",
-    "9826ce155f72",
-    "ed4d5e8ea66b",
-    "4c40edc2bfc6",
-    "c355adb93f93",
-    "21daee5c336e",
-    "e5491519138d",
-    "4963ce782cac",
-    "c47e9967e5e5",
-    "71abe7f4097c",
-    "67956daa1840",
-    "6b6be7de15f4",
-    "75f1cec9b7e0",
-    "d6f868a8934a",
-    "8877e63f1fdf",
-    "239637ec2399",
-    "98175381ef2e",
-    "3b8472ccd274",
-    "7868d8eb5af0",
-    "5465bb3ed5b2",
-    "584bff8ede98",
-    "316acb0adeba",
     "0ce1e49d5eb0",
     "8f372fb6d2ab",
     "368b5b7f8c96",
@@ -499,22 +477,31 @@
     "725d3b12f441",
     "6ec44603e698",
     "83d83b1f36a5",
-    "1e9bf278d3de"
+    "1e9bf278d3de",
+    "fa9d1ef0097d",
+    "dd4f4603fcaf",
+    "2617144d7096",
+    "bc494f328c7c",
+    "3a83283cc01c",
+    "e9fb85dec57c",
+    "6a221343cb74",
+    "92eccd065496",
+    "69c136cdddd9",
+    "81a235d3b0b9",
+    "13887e39ab77",
+    "5155d3d101d5",
+    "e054bce44c34",
+    "c7806d70c03c",
+    "f67fc7f58083",
+    "b6809af8a97d",
+    "d4a91ecc8fcf",
+    "edb211396f1b",
+    "1f0642b0a3ca",
+    "f55a67534a34",
+    "b3dcfc57c9c0",
+    "8a9848b6b815"
   ],
   "failed_ids": {
-    "4959b1549cd7": "2026-05-21T04:47:13.933042+00:00",
-    "f99ac2fc9e2a": "2026-05-21T04:47:13.933042+00:00",
-    "1f50a6eac87a": "2026-05-21T04:47:13.933042+00:00",
-    "5e8958d1d9f6": "2026-05-21T04:47:13.933042+00:00",
-    "0d7eca797eaa": "2026-05-21T04:47:13.933042+00:00",
-    "fadfd7d3c94d": "2026-05-21T04:47:13.933042+00:00",
-    "7b520a9baa3c": "2026-05-21T04:47:13.933042+00:00",
-    "30a9207e6bd4": "2026-05-21T04:47:13.933042+00:00",
-    "cc148ee43b46": "2026-05-21T04:47:13.933042+00:00",
-    "b543b137cf92": "2026-05-21T04:47:13.933042+00:00",
-    "6f72bc6a1701": "2026-05-21T04:47:13.933042+00:00",
-    "ac86961f9813": "2026-05-21T04:47:13.933042+00:00",
-    "9159441526d6": "2026-05-21T04:47:13.933042+00:00",
     "d1075d5ed033": "2026-05-21T08:23:38.305236+00:00",
     "a4f4cae51bb3": "2026-05-21T08:23:38.305236+00:00",
     "08c9e53888b3": "2026-05-21T08:23:38.305236+00:00",
@@ -531,7 +518,18 @@
     "aac6af3bf63d": "2026-05-21T08:23:38.305236+00:00",
     "e38d6fc6b2d6": "2026-05-21T08:23:38.305236+00:00",
     "18815b412ebf": "2026-05-21T08:23:38.305236+00:00",
-    "8f4cf4379fd8": "2026-05-21T08:23:38.305236+00:00"
+    "8f4cf4379fd8": "2026-05-21T08:23:38.305236+00:00",
+    "52728f84358d": "2026-05-21T11:43:09.449961+00:00",
+    "f829879068b5": "2026-05-21T11:43:09.449961+00:00",
+    "ac736766b141": "2026-05-21T11:43:09.449961+00:00",
+    "bd30a781be73": "2026-05-21T11:43:09.449961+00:00",
+    "0b49f2a7eef6": "2026-05-21T11:43:09.449961+00:00",
+    "1ab00c54d690": "2026-05-21T11:43:09.449961+00:00",
+    "cf55a657261e": "2026-05-21T11:43:09.449961+00:00",
+    "e7afa28fbe6b": "2026-05-21T11:43:09.449961+00:00",
+    "d24328f07da6": "2026-05-21T11:43:09.449961+00:00",
+    "ca5f4ce0d35d": "2026-05-21T11:43:09.449961+00:00",
+    "c45054fe71f2": "2026-05-21T11:43:09.449961+00:00"
   },
   "live_clusters": {
     "724e7cc5088c25d6": {
@@ -819,7 +817,8 @@
     "ac0fe705985c79ce": {
       "topic": "'Margo's Got Money Troubles' Series Finale",
       "item_ids": [
-        "29e370f65f7f"
+        "29e370f65f7f",
+        "6a221343cb74"
       ],
       "created_at": "2026-05-20T19:53:05.201686+00:00",
       "last_escalated_size": 0,
@@ -1400,7 +1399,106 @@
       "created_at": "2026-05-21T08:24:12.894812+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b04d3323fd6c90e5": {
+      "topic": "'28 Years Later Part 3' Zombie Film Development",
+      "item_ids": [
+        "fa9d1ef0097d"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "22914f106dd193ab": {
+      "topic": "'The Odyssey' Film Cast Announcement",
+      "item_ids": [
+        "dd4f4603fcaf"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b3ca5b0dc4198808": {
+      "topic": "Prashanth Neel NTR 'Dragon' Patriotic Film and 'Salaar' Sequel Confirmation",
+      "item_ids": [
+        "2617144d7096"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "120abc28d628a0d9": {
+      "topic": "Fresha Beauty Booking Startup $1 Billion Valuation KKR Funding",
+      "item_ids": [
+        "69c136cdddd9"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "01471ce5784e099e": {
+      "topic": "Meta 8,000 Employee Layoffs",
+      "item_ids": [
+        "81a235d3b0b9"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fc52bc940459d177": {
+      "topic": "Meta Snap Roblox Anti-Grooming Measures UK Commitment",
+      "item_ids": [
+        "13887e39ab77"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fe694b68b7cd138e": {
+      "topic": "Walmart Q4 Outlook Guidance Cut High Gas Prices Impact",
+      "item_ids": [
+        "5155d3d101d5"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cefa4c97576126e6": {
+      "topic": "Stellantis $70 Billion Turnaround Plan 2028 Cash Flow Target",
+      "item_ids": [
+        "e054bce44c34"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ba55b6faa21e1ada": {
+      "topic": "Quantum Computing Stocks Rally US $2 Billion Investment Program",
+      "item_ids": [
+        "c7806d70c03c"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "92314b574c759fc4": {
+      "topic": "Oil Markets 'Red Zone' Risk July Summer Demand IEA Warning",
+      "item_ids": [
+        "f67fc7f58083"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "71099f43c9a8998e": {
+      "topic": "Eli Lilly Next-Generation Weight Loss Drug Obesity Trial Success",
+      "item_ids": [
+        "b6809af8a97d"
+      ],
+      "created_at": "2026-05-21T11:43:42.001302+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-21T08:24:28.093244+00:00"
+  "last_checked": "2026-05-21T11:43:42.002410+00:00"
 }
