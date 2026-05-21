@@ -1,42 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "mcp__Canva__cancel-editing-transaction",
-      "mcp__Canva__comment-on-design",
-      "mcp__Canva__commit-editing-transaction",
-      "mcp__Canva__copy-design",
-      "mcp__Canva__create-design-from-brand-template",
-      "mcp__Canva__create-design-from-candidate",
-      "mcp__Canva__create-folder",
-      "mcp__Canva__export-design",
-      "mcp__Canva__generate-design",
-      "mcp__Canva__generate-design-structured",
-      "mcp__Canva__get-assets",
-      "mcp__Canva__get-brand-template-dataset",
-      "mcp__Canva__get-design",
-      "mcp__Canva__get-design-content",
-      "mcp__Canva__get-design-pages",
-      "mcp__Canva__get-design-thumbnail",
-      "mcp__Canva__get-export-formats",
-      "mcp__Canva__get-presenter-notes",
-      "mcp__Canva__help",
-      "mcp__Canva__import-design-from-url",
-      "mcp__Canva__list-brand-kits",
-      "mcp__Canva__list-comments",
-      "mcp__Canva__list-folder-items",
-      "mcp__Canva__list-replies",
-      "mcp__Canva__merge-designs",
-      "mcp__Canva__move-item-to-folder",
-      "mcp__Canva__perform-editing-operations",
-      "mcp__Canva__reply-to-comment",
-      "mcp__Canva__request-outline-review",
-      "mcp__Canva__resize-design",
-      "mcp__Canva__resolve-shortlink",
-      "mcp__Canva__search-brand-templates",
-      "mcp__Canva__search-designs",
-      "mcp__Canva__search-folders",
-      "mcp__Canva__start-editing-transaction",
-      "mcp__Canva__upload-asset-from-url"
+      "mcp__Canva__*"
     ]
   }
 }
