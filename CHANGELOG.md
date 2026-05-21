@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-21] Main feed: stronger same-event dedup — different angles on one event now cluster
+
+The post-scoring Sonnet dedup was good at catching "same story, different outlets" but missed "one event generating multiple distinct angle headlines" (e.g. a single IPO filing producing three separately-worded picks). Fixed by replacing category-specific examples in the dedup prompt with event-identity logic: if all articles trace back to one single thing that happened, they are the same story and should cluster — regardless of how different the angles or revelations are.
+
 ## [2026-05-20] Live feed: Haiku now sees building clusters when scoring
 
 Haiku was scoring each live feed item in isolation — it had no awareness that 2 other items about the same topic had already passed the quality gate. A third corroborating signal might score 6 because Haiku didn't know it was the third, not the first. Fixed by passing the current cluster state into `filter_and_enrich_items()` and injecting a "BUILDING STORIES" block into the Haiku prompt listing all active clusters with their signal count. If an incoming item matches a building story, Haiku is instructed to score it at least 1 point higher than it would in isolation — because convergence across independent sources is itself strong evidence something real is happening.
@@ -79,10 +83,6 @@ Reddit sources (any source name starting with "r/") now get a cap of 25 articles
 ## [2026-05-06] Add r/popular and r/all as wide net sources
 
 Added r/popular and r/all to sources.json as direct RSS feeds under the "wide net" category.
-
-## [2026-05-02] Fix: Live section disappears overnight — extend TTL, commit social trends
-
-Extended `BREAKING_NEWS_TTL_HOURS` from 6 → 12 so items from the previous evening survive the overnight dead zone (US feeds go quiet ~11 PM CT, next curator run at 7:30 AM CT). Fixed `social_trends.json` never being committed: added it to `git add` in `daily_curator.yml` so X, Google, and TikTok trending candidates are available to the breaking news monitor after each 3×/day curator run. Both issues were causing the Live section to show nothing for 8+ hours overnight.
 
 
 

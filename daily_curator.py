@@ -1666,11 +1666,8 @@ def deduplicate_after_scoring(articles: list[dict]) -> list[dict]:
 {articles_text}
 
 Your job:
-1. Identify groups of articles about the same underlying event or topic. Use BROAD matching — for example:
-   - Two headlines about the same person's arrest, even if one names the victim and the other describes them differently
-   - Two headlines about the same person leaving a company, even if worded differently
-   - Two articles about the same product launch, album drop, or sports result from different angles
-2. Do NOT group articles that are merely in the same category (e.g. two unrelated sports stories). They must be the same specific event.
+1. Identify groups of articles about the same underlying event. Use this test: did these articles all exist because of one single thing that happened? If yes, they are the same story — group them, regardless of how different the angles or revelations are. A filing that produced three distinct headlines is one event. An announcement that generated multiple reaction pieces is one event. A game result covered from multiple angles is one event.
+2. Do NOT group articles that are merely in the same category (e.g. two unrelated sports stories, two separate company announcements). They must all trace back to the same specific moment or occurrence.
 3. Articles covering genuinely different stories should not be listed.
 
 Return ONLY valid JSON in this exact format, with no other text:
