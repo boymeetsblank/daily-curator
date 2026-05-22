@@ -1,21 +1,5 @@
 {
   "known_ids": [
-    "2fbbd1cc30ea",
-    "a819c5c71dcb",
-    "f12493775719",
-    "bdc42c2ba225",
-    "a794b6803f47",
-    "5be93b32b568",
-    "31fe48d109d7",
-    "4a31eb1b7d50",
-    "3dc6d626d5ea",
-    "1afd3230efe4",
-    "6a15ade41fd9",
-    "d5c6ffa9cc51",
-    "6accfe5d9438",
-    "894fa2032349",
-    "db5fce2b0c42",
-    "01ae559b2d89",
     "25c512978349",
     "1ce8b0b87e92",
     "9032dd3cbe1f",
@@ -499,34 +483,25 @@
     "519200b4fc3b",
     "48f4ab9a5e44",
     "ef3596a6497b",
-    "759454b432f5"
+    "759454b432f5",
+    "aa8a3c4c2cc9",
+    "68a04d8b5fc3",
+    "7c8c092836aa",
+    "3c76fa603069",
+    "442218b5d7a2",
+    "56d76575f009",
+    "98d9dd82ea65",
+    "bcf1e87bf959",
+    "a4112f743b05",
+    "96e9a6f4b883",
+    "0bddb16ad25d",
+    "5f1bdad161f4",
+    "d9bb37d0da3f",
+    "aca6dc209b4b",
+    "8a1234d98446",
+    "00a401089c32"
   ],
   "failed_ids": {
-    "5aa5d705dd51": "2026-05-21T21:02:00.446759+00:00",
-    "ea75fb7808b9": "2026-05-21T21:02:00.446759+00:00",
-    "690e0b1ae1a5": "2026-05-21T21:02:00.446759+00:00",
-    "e668e587e14d": "2026-05-21T21:02:00.446759+00:00",
-    "000b019d984c": "2026-05-21T21:02:00.446759+00:00",
-    "9233b95eecdf": "2026-05-21T21:02:00.446759+00:00",
-    "8ada8591e7ed": "2026-05-21T21:02:00.446759+00:00",
-    "e7ad6a77fddb": "2026-05-21T21:02:00.446759+00:00",
-    "2119668c33d9": "2026-05-21T21:02:00.446759+00:00",
-    "e32e34e1e55c": "2026-05-21T21:02:00.446759+00:00",
-    "1850b745159a": "2026-05-21T21:02:00.446759+00:00",
-    "5c4ce90f718d": "2026-05-21T21:02:00.446759+00:00",
-    "96778c897f15": "2026-05-21T21:02:00.446759+00:00",
-    "708347f00963": "2026-05-21T21:02:00.446759+00:00",
-    "975a6eb43ca1": "2026-05-21T21:02:00.446759+00:00",
-    "95ee8a1338d4": "2026-05-21T21:02:00.446759+00:00",
-    "dc8b2970b851": "2026-05-21T21:02:00.446759+00:00",
-    "64ebe46ae1df": "2026-05-21T21:02:00.446759+00:00",
-    "4546baaee113": "2026-05-21T21:02:00.446759+00:00",
-    "57adc6911aa3": "2026-05-21T21:02:00.446759+00:00",
-    "a4112f743b05": "2026-05-21T21:02:00.446759+00:00",
-    "96e9a6f4b883": "2026-05-21T21:02:00.446759+00:00",
-    "9ea9f0e859e2": "2026-05-21T21:02:00.446759+00:00",
-    "d9bb37d0da3f": "2026-05-21T21:02:00.446759+00:00",
-    "f518ea929a47": "2026-05-21T21:02:00.446759+00:00",
     "679d7150aa30": "2026-05-21T22:37:54.777510+00:00",
     "faea154ad0f5": "2026-05-21T22:37:54.777510+00:00",
     "2f42832bcc2f": "2026-05-21T22:37:54.777510+00:00",
@@ -556,72 +531,21 @@
     "7adf50e36857": "2026-05-21T23:39:17.231713+00:00",
     "a6b55e8de456": "2026-05-21T23:39:17.231713+00:00",
     "010b766dba8b": "2026-05-21T23:39:17.231713+00:00",
-    "90610f78d58e": "2026-05-21T23:39:17.231713+00:00"
+    "90610f78d58e": "2026-05-21T23:39:17.231713+00:00",
+    "3d93302766c4": "2026-05-22T01:35:04.081225+00:00",
+    "9ca9be96ab65": "2026-05-22T01:35:04.081225+00:00",
+    "0b23fa30a1af": "2026-05-22T01:35:04.081225+00:00",
+    "198f42dd59d7": "2026-05-22T01:35:04.081225+00:00",
+    "797125e1619e": "2026-05-22T01:35:04.081225+00:00",
+    "e2a5e7c746da": "2026-05-22T01:35:04.081225+00:00",
+    "8e451d7fff03": "2026-05-22T01:35:04.081225+00:00",
+    "291965fa7553": "2026-05-22T01:35:04.081225+00:00",
+    "7a55b970cde0": "2026-05-22T01:35:04.081225+00:00",
+    "3892a091c759": "2026-05-22T01:35:04.081225+00:00",
+    "e58ae9876565": "2026-05-22T01:35:04.081225+00:00",
+    "f518ea929a47": "2026-05-22T01:35:04.081225+00:00"
   },
   "live_clusters": {
-    "5d7c5beaae21b040": {
-      "topic": "Salehe Bembury PUMA Velum 'Toasted Almond' Release",
-      "item_ids": [
-        "c48cdb108138"
-      ],
-      "created_at": "2026-05-21T00:15:16.702391+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e4eeca311d347762": {
-      "topic": "Kevin Morby and Carrie Brownstein Sleater-Kinney 'Modern Girl' Performance",
-      "item_ids": [
-        "453df81e0e95"
-      ],
-      "created_at": "2026-05-21T00:15:16.702391+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "93b64b7134e91fa1": {
-      "topic": "Bruno Mars 'Lo Arriesgo Todo' Spanish Version Latin Charts Success",
-      "item_ids": [
-        "5deae4c5dcf8"
-      ],
-      "created_at": "2026-05-21T00:15:16.702391+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9141bca2dedb3114": {
-      "topic": "Cannes Film Festival 2026 Movie Reviews",
-      "item_ids": [
-        "490f4439292f"
-      ],
-      "created_at": "2026-05-21T00:15:16.702391+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c700c78ca52aec36": {
-      "topic": "AMD Ryzen AI Halo PC $3,999 Launch and Ryzen AI Max 400 Chips",
-      "item_ids": [
-        "79e903294350"
-      ],
-      "created_at": "2026-05-21T00:15:16.702391+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3f3bf08b4d592776": {
-      "topic": "Kansas City MacBook Neo Purchase for Students",
-      "item_ids": [
-        "ee7bebf26d47"
-      ],
-      "created_at": "2026-05-21T00:15:16.702391+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "57011dd21b948324": {
-      "topic": "Microsoft Hires Video Game Blog Analyst for Xbox Division",
-      "item_ids": [
-        "b14cba37ad4b"
-      ],
-      "created_at": "2026-05-21T00:15:16.702391+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "6a4087229e39556d": {
       "topic": "Jeethu Joseph 'Drishyam 3' Film Interview",
       "item_ids": [
@@ -1928,7 +1852,8 @@
     "e24f785a563767b9": {
       "topic": "AI Ozzy Osbourne Avatar Fan Interaction Summer 2026",
       "item_ids": [
-        "3b3cc419347e"
+        "3b3cc419347e",
+        "68a04d8b5fc3"
       ],
       "created_at": "2026-05-21T23:39:45.101866+00:00",
       "last_escalated_size": 0,
@@ -1964,7 +1889,8 @@
     "c80902a93774765b": {
       "topic": "IMAX Potential Acquisition Preliminary Talks",
       "item_ids": [
-        "ed1d5d550ce7"
+        "ed1d5d550ce7",
+        "56d76575f009"
       ],
       "created_at": "2026-05-21T23:39:45.101866+00:00",
       "last_escalated_size": 0,
@@ -2005,7 +1931,61 @@
       "created_at": "2026-05-21T23:39:45.101866+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1c012aeb5dd88f8b": {
+      "topic": "Emmy Awards 2026 Dark Horse Predictions 'Pluribus'",
+      "item_ids": [
+        "aa8a3c4c2cc9"
+      ],
+      "created_at": "2026-05-22T01:35:31.704794+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c41514f3338110d4": {
+      "topic": "Ricky Martin Montenegro Concert Tear Gas Incident",
+      "item_ids": [
+        "7c8c092836aa"
+      ],
+      "created_at": "2026-05-22T01:35:31.704794+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d8239659d0116e6a": {
+      "topic": "XG K-Pop Group New Era Career Milestone",
+      "item_ids": [
+        "3c76fa603069"
+      ],
+      "created_at": "2026-05-22T01:35:31.704794+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8b6af54daf3967d2": {
+      "topic": "Anne Hathaway 'Mother Mary' Film Performance Self-Critique",
+      "item_ids": [
+        "442218b5d7a2"
+      ],
+      "created_at": "2026-05-22T01:35:31.704794+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2189b6f77db52a83": {
+      "topic": "Waymo Robotaxi Expansion Pause Four Cities Flooding Issues",
+      "item_ids": [
+        "98d9dd82ea65"
+      ],
+      "created_at": "2026-05-22T01:35:31.704794+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5ada7fcf5295133f": {
+      "topic": "SpaceX Starship V3 Launch Scrubbed Pre-Liftoff",
+      "item_ids": [
+        "bcf1e87bf959"
+      ],
+      "created_at": "2026-05-22T01:35:31.704794+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-21T23:39:45.103023+00:00"
+  "last_checked": "2026-05-22T01:35:31.706062+00:00"
 }
