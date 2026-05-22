@@ -1,14 +1,5 @@
 {
   "known_ids": [
-    "25c512978349",
-    "1ce8b0b87e92",
-    "9032dd3cbe1f",
-    "f003ab8421a4",
-    "d43bc784547a",
-    "c43e302c7371",
-    "5ca29feae384",
-    "dfcf64c95122",
-    "4b5674ed9d2f",
     "8dea50ff48e6",
     "6f91c2775fda",
     "c96f958ea47f",
@@ -499,127 +490,39 @@
     "d9bb37d0da3f",
     "aca6dc209b4b",
     "8a1234d98446",
-    "00a401089c32"
+    "00a401089c32",
+    "5d59fa551c89",
+    "7deac68ca2a7",
+    "815442edd48a",
+    "e03c197bdcee",
+    "cf9628bce877",
+    "f76fe142d72d",
+    "9810eafa5fb8",
+    "f3259629104c",
+    "7773f6f8fe6f"
   ],
   "failed_ids": {
-    "679d7150aa30": "2026-05-21T22:37:54.777510+00:00",
-    "faea154ad0f5": "2026-05-21T22:37:54.777510+00:00",
-    "2f42832bcc2f": "2026-05-21T22:37:54.777510+00:00",
-    "1c45fee12134": "2026-05-21T22:37:54.777510+00:00",
-    "feff019822b7": "2026-05-21T22:37:54.777510+00:00",
-    "2a85b47a0df4": "2026-05-21T22:37:54.777510+00:00",
-    "fd25ed710e77": "2026-05-21T22:37:54.777510+00:00",
-    "fcec9829bdb0": "2026-05-21T22:37:54.777510+00:00",
-    "ad8f421801c1": "2026-05-21T22:37:54.777510+00:00",
-    "7afebf9de2b8": "2026-05-21T22:37:54.777510+00:00",
-    "74a3557318de": "2026-05-21T22:37:54.777510+00:00",
-    "22291d3e2163": "2026-05-21T22:37:54.777510+00:00",
-    "e04f529dfbb5": "2026-05-21T22:37:54.777510+00:00",
-    "b5c91d02c5c6": "2026-05-21T22:37:54.777510+00:00",
-    "a4e9bb0d6079": "2026-05-21T22:37:54.777510+00:00",
-    "bfc65f6c83e4": "2026-05-21T22:37:54.777510+00:00",
-    "78409319c74b": "2026-05-21T23:39:17.231713+00:00",
-    "938dfef4c4ca": "2026-05-21T23:39:17.231713+00:00",
-    "750acb63ccdc": "2026-05-21T23:39:17.231713+00:00",
-    "f0d2d8551338": "2026-05-21T23:39:17.231713+00:00",
-    "a0779761e2a7": "2026-05-21T23:39:17.231713+00:00",
-    "6f9902a60b7e": "2026-05-21T23:39:17.231713+00:00",
-    "8438821cb7a3": "2026-05-21T23:39:17.231713+00:00",
-    "76acb1f7d4fa": "2026-05-21T23:39:17.231713+00:00",
-    "3ce7f914fa4d": "2026-05-21T23:39:17.231713+00:00",
-    "de667a5df65c": "2026-05-21T23:39:17.231713+00:00",
-    "7adf50e36857": "2026-05-21T23:39:17.231713+00:00",
-    "a6b55e8de456": "2026-05-21T23:39:17.231713+00:00",
-    "010b766dba8b": "2026-05-21T23:39:17.231713+00:00",
-    "90610f78d58e": "2026-05-21T23:39:17.231713+00:00",
-    "3d93302766c4": "2026-05-22T01:35:04.081225+00:00",
-    "9ca9be96ab65": "2026-05-22T01:35:04.081225+00:00",
-    "0b23fa30a1af": "2026-05-22T01:35:04.081225+00:00",
-    "198f42dd59d7": "2026-05-22T01:35:04.081225+00:00",
-    "797125e1619e": "2026-05-22T01:35:04.081225+00:00",
-    "e2a5e7c746da": "2026-05-22T01:35:04.081225+00:00",
-    "8e451d7fff03": "2026-05-22T01:35:04.081225+00:00",
-    "291965fa7553": "2026-05-22T01:35:04.081225+00:00",
-    "7a55b970cde0": "2026-05-22T01:35:04.081225+00:00",
-    "3892a091c759": "2026-05-22T01:35:04.081225+00:00",
-    "e58ae9876565": "2026-05-22T01:35:04.081225+00:00",
-    "f518ea929a47": "2026-05-22T01:35:04.081225+00:00"
+    "615fcb9ad5d9": "2026-05-22T05:48:13.381534+00:00",
+    "6a0d05f18a0b": "2026-05-22T05:48:13.381534+00:00",
+    "58bf00bbacf8": "2026-05-22T05:48:13.381534+00:00",
+    "801bd23e8d7f": "2026-05-22T05:48:13.381534+00:00",
+    "497c39ce1df4": "2026-05-22T05:48:13.381534+00:00",
+    "ad088180ae34": "2026-05-22T05:48:13.381534+00:00",
+    "3a4f6b64858d": "2026-05-22T05:48:13.381534+00:00",
+    "ba1af03ee919": "2026-05-22T05:48:13.381534+00:00",
+    "9ca9be96ab65": "2026-05-22T05:48:13.381534+00:00",
+    "d4383fce5a2e": "2026-05-22T05:48:13.381534+00:00",
+    "335b2c593b74": "2026-05-22T05:48:13.381534+00:00",
+    "aaab631842b5": "2026-05-22T05:48:13.381534+00:00",
+    "1e46d0c15c22": "2026-05-22T05:48:13.381534+00:00",
+    "7ba4146f92c1": "2026-05-22T05:48:13.381534+00:00",
+    "f518ea929a47": "2026-05-22T05:48:13.381534+00:00",
+    "de667a5df65c": "2026-05-22T05:48:13.381534+00:00",
+    "7adf50e36857": "2026-05-22T05:48:13.381534+00:00",
+    "a6b55e8de456": "2026-05-22T05:48:13.381534+00:00",
+    "010b766dba8b": "2026-05-22T05:48:13.381534+00:00"
   },
   "live_clusters": {
-    "6a4087229e39556d": {
-      "topic": "Jeethu Joseph 'Drishyam 3' Film Interview",
-      "item_ids": [
-        "ac6998f5f851"
-      ],
-      "created_at": "2026-05-21T04:47:41.986867+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "42d81ba8a34a26d1": {
-      "topic": "Sia $100,000 Donation 'Survivor 50' Finale",
-      "item_ids": [
-        "cf842fe41a80",
-        "6ec44603e698",
-        "a05ec7afdc82",
-        "b8b19566d0cc",
-        "c6db75cb0d46"
-      ],
-      "created_at": "2026-05-21T04:47:41.986867+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-21T17:15:24.960183+00:00",
-      "picks_file": "picks/picks-2026-05-21-1716.md",
-      "why_text": "Survivor's landmark 50th season finale just got a marquee moment: Sia, who has shown up at multiple finales to personally hand out six-figure prizes to players she found inspiring, kept the tradition alive in a big way. It's a genuinely strange and beloved piece of reality TV lore \u2014 a pop star with no formal show affiliation essentially crowdfunding goodwill on live television. In an era when legacy franchises are fighting for cultural relevance, Sia's recurring cameo has become one of Survivor's most talked-about rituals.",
-      "last_escalated_item_ids": [
-        "cf842fe41a80",
-        "6ec44603e698",
-        "a05ec7afdc82"
-      ]
-    },
-    "c22516536a42b57d": {
-      "topic": "Damon Lindelof Scrapped 'Star Wars' Project Details",
-      "item_ids": [
-        "3733505ee37c"
-      ],
-      "created_at": "2026-05-21T04:47:41.986867+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "01e96e9addcd4e2c": {
-      "topic": "Anthropic Nobel Prize Discovery AI Prediction",
-      "item_ids": [
-        "7ba2fce75225"
-      ],
-      "created_at": "2026-05-21T04:47:41.986867+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5ef94dc4714433be": {
-      "topic": "AI Job Creation Impact Young Skilled Workers",
-      "item_ids": [
-        "b71a550d794e"
-      ],
-      "created_at": "2026-05-21T04:47:41.986867+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "12da9d05d5ea49ca": {
-      "topic": "Montr\u00e9al Victoire 2026 PWHL Walter Cup Champions",
-      "item_ids": [
-        "1ac31b353a66",
-        "2390dd2b6555",
-        "0ea532dbf2bc"
-      ],
-      "created_at": "2026-05-21T04:47:41.986867+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-21T04:47:13.933042+00:00",
-      "picks_file": "picks/picks-2026-05-21-0447.md",
-      "why_text": "The Montr\u00e9al Victoire are the first Canadian team to claim the Walter Cup, making this a landmark moment for women's hockey in the country where the sport was practically invented. It's a massive cultural win for Montr\u00e9al \u2014 a city that bleeds hockey but had been waiting for a champion \u2014 and validation that the PWHL's second season has delivered a story worth caring about. This is the kind of moment that converts casual observers into lifelong fans.",
-      "last_escalated_item_ids": [
-        "1ac31b353a66",
-        "2390dd2b6555",
-        "0ea532dbf2bc"
-      ]
-    },
     "16640dd4bca7a0f4": {
       "topic": "JW Anderson Chelsea Flower Show Pimlico Boutique Installation",
       "item_ids": [
@@ -1129,7 +1032,8 @@
     "06e25bd5541afa64": {
       "topic": "BTS 'Arirang' World Tour Homecoming Show Global Live Screening",
       "item_ids": [
-        "f73770bd087c"
+        "f73770bd087c",
+        "7deac68ca2a7"
       ],
       "created_at": "2026-05-21T17:16:09.908062+00:00",
       "last_escalated_size": 0,
@@ -1417,11 +1321,24 @@
     "32eadff1cad00941": {
       "topic": "Paul McCartney Beatles Classics 'SNL' Post-Credits Performance",
       "item_ids": [
-        "1e8d681d94f7"
+        "1e8d681d94f7",
+        "e03c197bdcee",
+        "cf9628bce877",
+        "f76fe142d72d",
+        "9810eafa5fb8"
       ],
       "created_at": "2026-05-21T19:20:38.150222+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 5,
+      "last_escalated_at": "2026-05-22T05:48:13.381534+00:00",
+      "picks_file": "picks/picks-2026-05-22-0548.md",
+      "why_text": "Stephen Colbert's final Late Show brought out Paul McCartney for a send-off that doubled as a cultural event \u2014 Beatles classics, a wormhole gag, Elvis Costello and Jon Batiste in tow. It's the kind of late-night finale that feels increasingly rare: a genuine gathering of icons rather than a promotional pit stop. In an era where legacy TV is fading fast, Colbert went out swinging with one of the last living Beatles as his exclamation point.",
+      "last_escalated_item_ids": [
+        "1e8d681d94f7",
+        "e03c197bdcee",
+        "cf9628bce877",
+        "f76fe142d72d",
+        "9810eafa5fb8"
+      ]
     },
     "9abb246bf06e121f": {
       "topic": "Xavi Second Album 'Dosis' Music Release",
@@ -1985,7 +1902,25 @@
       "created_at": "2026-05-22T01:35:31.704794+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "8c8cdf1d0f265af9": {
+      "topic": "Sacha Baron Cohen Rosamund Pike 'Ladies First' Comedy Film Review",
+      "item_ids": [
+        "5d59fa551c89"
+      ],
+      "created_at": "2026-05-22T05:48:45.474994+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "016adc2a69578d4c": {
+      "topic": "Meta Forum Reddit-Like Social App Launch",
+      "item_ids": [
+        "f3259629104c"
+      ],
+      "created_at": "2026-05-22T05:48:45.474994+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-22T01:35:31.706062+00:00"
+  "last_checked": "2026-05-22T05:48:51.476534+00:00"
 }
