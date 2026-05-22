@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "f7f5f3cfbbb3",
-    "40586f83067c",
-    "7edb08529ecf",
-    "0ae704a19117",
-    "9d99bf5974d5",
-    "3ed78af9c012",
-    "553168cc7e18",
-    "2d34de9ad2a9",
-    "6297ebbbe496",
-    "c2758adbbb45",
-    "6b28724af00c",
-    "d738ba2554fc",
-    "6b0b9cf6e7e3",
-    "1dd7071627fc",
-    "701a8a6a4c04",
     "42a4a62f5a1d",
     "0d61dbcdd23f",
     "c5856680b1bd",
@@ -499,17 +484,24 @@
     "6c669bd48f01",
     "1fb2a3ebc284",
     "010c480abc4f",
-    "74548e62f123"
+    "74548e62f123",
+    "8ef4f0bda83f",
+    "afc94e4eadbc",
+    "0592874d42cf",
+    "507c84f324bb",
+    "2f56c51564e9",
+    "5bf5489730a8",
+    "a96cb9eb0b40",
+    "e329442b0195",
+    "4e083d50e1de",
+    "805657ad547d",
+    "95214c72365a",
+    "827be42d4293",
+    "6205a481c2ff",
+    "3abfa138d0d2",
+    "4e9ded358acb"
   ],
   "failed_ids": {
-    "5ff4bab14e8a": "2026-05-22T18:17:18.771832+00:00",
-    "bf6fa60052f8": "2026-05-22T18:17:18.771832+00:00",
-    "75fedd8e4f81": "2026-05-22T18:17:18.771832+00:00",
-    "5e2abe0a891b": "2026-05-22T18:17:18.771832+00:00",
-    "bda4c4489108": "2026-05-22T18:17:18.771832+00:00",
-    "a9f40b98e796": "2026-05-22T18:17:18.771832+00:00",
-    "785fb63da2d3": "2026-05-22T18:17:18.771832+00:00",
-    "d4383fce5a2e": "2026-05-22T18:17:18.771832+00:00",
     "dc5fef98b220": "2026-05-22T20:15:05.046725+00:00",
     "0831c5bf93da": "2026-05-22T20:15:05.046725+00:00",
     "5ab27eca5df0": "2026-05-22T20:15:05.046725+00:00",
@@ -533,212 +525,21 @@
     "11ebee98b464": "2026-05-22T21:37:51.403442+00:00",
     "13ce3ef1b130": "2026-05-22T21:37:51.403442+00:00",
     "debe1948606c": "2026-05-22T21:37:51.403442+00:00",
-    "4b8428921ce1": "2026-05-22T21:37:51.403442+00:00"
+    "4b8428921ce1": "2026-05-22T21:37:51.403442+00:00",
+    "91e97c20c19f": "2026-05-22T22:39:25.443314+00:00",
+    "d274f33ccf4d": "2026-05-22T22:39:25.443314+00:00",
+    "0e56f3a56c68": "2026-05-22T22:39:25.443314+00:00",
+    "c52cc58f8bd6": "2026-05-22T22:39:25.443314+00:00",
+    "c1c7074fa99b": "2026-05-22T22:39:25.443314+00:00",
+    "75fedd8e4f81": "2026-05-22T22:39:25.443314+00:00",
+    "f689e3b0d00a": "2026-05-22T22:39:25.443314+00:00",
+    "c28cfb527952": "2026-05-22T22:39:25.443314+00:00",
+    "8937af86919c": "2026-05-22T22:39:25.443314+00:00",
+    "b486ebdcbdaa": "2026-05-22T22:39:25.443314+00:00",
+    "f1a76b832639": "2026-05-22T22:39:25.443314+00:00",
+    "2804931fea70": "2026-05-22T22:39:25.443314+00:00"
   },
   "live_clusters": {
-    "bca6a4ddbaa2ca07": {
-      "topic": "Museo Jumex Soccer-Inspired Art Exhibition",
-      "item_ids": [
-        "8c917e3e0b3f"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "91170508cd585ed9": {
-      "topic": "adidas Harden Vol. 10 'Metallic Gold' Basketball Sneaker Release",
-      "item_ids": [
-        "b73db948900f"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ba85dd028a0cc845": {
-      "topic": "Memorial Day 2026 Menswear Sales and Deals",
-      "item_ids": [
-        "ff036b159e7c",
-        "d6cc1c8b1586"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f2f2b288c81ccb04": {
-      "topic": "Lukas Dhont 'Coward' Cannes Film Festival Premiere and Review",
-      "item_ids": [
-        "1886732191fe",
-        "4461e48e7beb",
-        "ce34a9a62e48",
-        "38c59b1817a1"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-21T22:37:54.777510+00:00",
-      "picks_file": "picks/picks-2026-05-21-2238.md",
-      "why_text": "Belgian director Lukas Dhont \u2014 who broke through with 'Close' \u2014 has just delivered what critics are calling his most accomplished film yet: a queer WWI romantic drama that's earning rapturous reviews and a 13-minute standing ovation at Cannes. At a moment when queer cinema is fighting for serious prestige-film real estate, Dhont is planting a flag at the top of the festival circuit. This one has awards season written all over it.",
-      "last_escalated_item_ids": [
-        "1886732191fe",
-        "4461e48e7beb",
-        "ce34a9a62e48"
-      ]
-    },
-    "c2fdf608bc296079": {
-      "topic": "'Michael 2' Sequel Lionsgate Production Announcement",
-      "item_ids": [
-        "766bcf56ee07",
-        "c25e53f0351d"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dd7070744844b700": {
-      "topic": "Zendaya Tom Holland 'Spider-Man: Brand New Day' Filming Comments",
-      "item_ids": [
-        "88ffe866c0c4"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5ab060557ecf4e61": {
-      "topic": "F1 Canadian Grand Prix 2026 Watch Guide",
-      "item_ids": [
-        "c90774afcb1c",
-        "0060a3ee947b",
-        "4a3d97252639"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-22T13:57:46.295177+00:00",
-      "last_escalated_item_ids": [
-        "c90774afcb1c",
-        "0060a3ee947b",
-        "4a3d97252639"
-      ]
-    },
-    "5731aa007d0caca5": {
-      "topic": "Primary Wave Music Catalog Acquisitions and Warner Music Korea Deals",
-      "item_ids": [
-        "d9723a8fbe03"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "be7ea20cd7cf2ab9": {
-      "topic": "The Smashing Pumpkins 2026 Tour Ticket Sales",
-      "item_ids": [
-        "2847fe25d219"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8ebc5bee4a7f705b": {
-      "topic": "Nicholas Christopher Broadway Leading Man Profile",
-      "item_ids": [
-        "8240007eb56c"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "94cf5e2f05ff2035": {
-      "topic": "Kenny Chesney 100 Hits on Billboard Hot Country Songs Chart Milestone",
-      "item_ids": [
-        "e67354052d88"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ab9d11372b498373": {
-      "topic": "T-Shirt Brand Memorial Day Sitewide Sale 20% Off",
-      "item_ids": [
-        "f1488e5b9dfc"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "285dbba146613fc5": {
-      "topic": "Questlove Earth Wind & Fire Documentary Featuring Obamas Trailer Release",
-      "item_ids": [
-        "d8b76417f045"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "672cde509c80b7c6": {
-      "topic": "Lupita Nyong'o 'The Odyssey' Racist Casting Criticism Response",
-      "item_ids": [
-        "861eebfee4bf",
-        "44b39a1c4a3f"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "47ff070579f837ee": {
-      "topic": "Stephen Colbert 'The Late Show' Final Episode Taping",
-      "item_ids": [
-        "cd7dc8f490b6",
-        "ae0a7e5e201d",
-        "ad61bbce320a",
-        "8c8f46eef5e9",
-        "c9b40efb2682"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-22T16:28:35.144971+00:00",
-      "picks_file": "picks/picks-2026-05-22-1629.md",
-      "why_text": "Stephen Colbert signed off from The Late Show last night, closing a decade-long run that redefined what political comedy on late night could look like \u2014 particularly in the Trump era. The finale reportedly featured a Beatle, a Peanuts piano gag, and the kind of bittersweet irreverence that defined his tenure; it's the end of an institution, not just a show. With late night already contracting and CBS not renewing, this feels like a cultural inflection point for the entire format.",
-      "last_escalated_item_ids": [
-        "cd7dc8f490b6",
-        "ae0a7e5e201d",
-        "ad61bbce320a"
-      ]
-    },
-    "d4f1ce5994efe332": {
-      "topic": "FTC Report on Creepy Listening Tool for Targeted Ads Ineffectiveness",
-      "item_ids": [
-        "2da1121f871b"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dce67a8875c8c0ae": {
-      "topic": "Waymo Robotaxi Freeway Operations Halted Construction Zone Issues",
-      "item_ids": [
-        "271426b49c8d"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5b61707074d22f63": {
-      "topic": "ChatGPT Integration PowerPoint Microsoft Office",
-      "item_ids": [
-        "9ed876a9ff77",
-        "ce328c8691f3"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f79443c629d5d16f": {
-      "topic": "SpaceX Starship 12th Test Flight Preparation IPO Announcement",
-      "item_ids": [
-        "2e07a1a98210"
-      ],
-      "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "90d33219c976c3b2": {
       "topic": "Charli XCX 'SS26' Spring/Summer Fashion Video",
       "item_ids": [
@@ -1514,7 +1315,8 @@
     "a0d63f89deeb4505": {
       "topic": "Off Campus Hockey-Romance TV Series Launch",
       "item_ids": [
-        "e2e626f4871f"
+        "e2e626f4871f",
+        "507c84f324bb"
       ],
       "created_at": "2026-05-22T18:17:57.277456+00:00",
       "last_escalated_size": 0,
@@ -1802,7 +1604,8 @@
     "2cb732b2877b8c00": {
       "topic": "The Boys Series Finale Vought Rising Spinoff",
       "item_ids": [
-        "7e5f58c568fd"
+        "7e5f58c568fd",
+        "a96cb9eb0b40"
       ],
       "created_at": "2026-05-22T20:15:46.559979+00:00",
       "last_escalated_size": 0,
@@ -1811,7 +1614,8 @@
     "a4df8ebab7671588": {
       "topic": "Disney Star Wars The Mandalorian and Grogu Lowest Preview Sales",
       "item_ids": [
-        "f82d59e44230"
+        "f82d59e44230",
+        "5bf5489730a8"
       ],
       "created_at": "2026-05-22T20:15:46.559979+00:00",
       "last_escalated_size": 0,
@@ -1933,7 +1737,79 @@
       "created_at": "2026-05-22T21:38:21.607561+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "e45c284bc507e1de": {
+      "topic": "Zach Braff Scrubs Revival Interview Fan Base Pressure",
+      "item_ids": [
+        "8ef4f0bda83f"
+      ],
+      "created_at": "2026-05-22T22:39:54.819535+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "974c0d1c483509e9": {
+      "topic": "Emmy Awards Outstanding Variety Series New Rules Multiple Winners SNL",
+      "item_ids": [
+        "afc94e4eadbc"
+      ],
+      "created_at": "2026-05-22T22:39:54.819535+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7aa89da1b243dc49": {
+      "topic": "Rob Base 'It Takes Two' Rapper Death Obituary",
+      "item_ids": [
+        "0592874d42cf"
+      ],
+      "created_at": "2026-05-22T22:39:54.819535+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cd9cb3ee4a0ee4f1": {
+      "topic": "Julia Roberts Home Economics Film Adaptation 3000 Pictures",
+      "item_ids": [
+        "2f56c51564e9"
+      ],
+      "created_at": "2026-05-22T22:39:54.819535+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d97a832fa8b5e369": {
+      "topic": "Erin Moriarty Graves Disease Filming The Boys Final Season",
+      "item_ids": [
+        "e329442b0195"
+      ],
+      "created_at": "2026-05-22T22:39:54.819535+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e98519e57537f4a5": {
+      "topic": "Alexa Bliss WWE Prototype Talent Agency Signing",
+      "item_ids": [
+        "4e083d50e1de"
+      ],
+      "created_at": "2026-05-22T22:39:54.819535+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "548502cc0745af14": {
+      "topic": "Nicolas Winding Refn Maniac Cop Feature Film Mubi Goodfellas",
+      "item_ids": [
+        "805657ad547d"
+      ],
+      "created_at": "2026-05-22T22:39:54.819535+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5d0c0dea83c94f5d": {
+      "topic": "SpaceX Starship Test Flight Second Attempt Launch",
+      "item_ids": [
+        "827be42d4293"
+      ],
+      "created_at": "2026-05-22T22:39:54.819535+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-22T21:38:27.532566+00:00"
+  "last_checked": "2026-05-22T22:39:54.820796+00:00"
 }
