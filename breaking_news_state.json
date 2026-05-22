@@ -1,41 +1,5 @@
 {
   "known_ids": [
-    "c24285d143a6",
-    "4920648869db",
-    "a348b082b273",
-    "6ab8be6c264f",
-    "abdc65e8a268",
-    "89684b284503",
-    "fc8a6d7375b5",
-    "23120de086de",
-    "beb6c71a48f3",
-    "c2141715a668",
-    "443bc099361c",
-    "bf7079911e9e",
-    "df9b8fe43115",
-    "a1e450ddd296",
-    "32ad2a34830b",
-    "dd2b6c3aff65",
-    "2c2916be521f",
-    "625d1ebe33a6",
-    "c78e552e1b80",
-    "9abf99ac93d2",
-    "c70b76f4b441",
-    "2c83a90fb1dd",
-    "2b26d1fbc3dc",
-    "8036a01d9921",
-    "e50cedec660d",
-    "75a707a4902b",
-    "861a0e8e63b2",
-    "6716e3a294ce",
-    "7099144d31c7",
-    "9f33a5ee068b",
-    "1f2b934b1a5b",
-    "459e4893559e",
-    "29e370f65f7f",
-    "7b4ca0f35316",
-    "986baddb3207",
-    "4f3ec8edc1c2",
     "087a18269acb",
     "ec792ce29861",
     "8bb2b7036661",
@@ -499,22 +463,45 @@
     "1da02c47ed9f",
     "71be3a8f91a8",
     "e8d926d28cd3",
-    "6943dfa8e09c"
+    "6943dfa8e09c",
+    "d6c70bc4ac8b",
+    "6b13fc07a5b0",
+    "d6cc1c8b1586",
+    "ea211676232b",
+    "c2da7377efdd",
+    "2ed3ffb05c9f",
+    "59be8908395a",
+    "ecee215ffecd",
+    "58731f1396cf",
+    "a56496888b2c",
+    "4f2d2c6685c4",
+    "ba79212ce153",
+    "1b97dc029a8f",
+    "835578267d22",
+    "5084600d9b9e",
+    "e2e626f4871f",
+    "554ca7cf87fc",
+    "8204a92aca67",
+    "f1a61cf47af4",
+    "dfb03a530ab9",
+    "816f3dc7e0ab",
+    "ce328c8691f3",
+    "9e2385ad59fe",
+    "443b4e262739",
+    "26dcd444a287",
+    "b5721f169905",
+    "950034659421",
+    "f30adb981d04",
+    "8b47240b71d9",
+    "d3a6fd08831e",
+    "1fe91768ce11",
+    "34aac5a4fe84",
+    "a6962e5d1740",
+    "8169ee767229",
+    "3be64e38befc",
+    "5acead52f49c"
   ],
   "failed_ids": {
-    "90411a9cd03a": "2026-05-22T13:57:46.295177+00:00",
-    "1821efaf5597": "2026-05-22T13:57:46.295177+00:00",
-    "dce8e1895f32": "2026-05-22T13:57:46.295177+00:00",
-    "33fe239aea2c": "2026-05-22T13:57:46.295177+00:00",
-    "69c83510d0fe": "2026-05-22T13:57:46.295177+00:00",
-    "888e57649971": "2026-05-22T13:57:46.295177+00:00",
-    "0b23fa30a1af": "2026-05-22T13:57:46.295177+00:00",
-    "b14326cf34fe": "2026-05-22T13:57:46.295177+00:00",
-    "bdab22adc90f": "2026-05-22T13:57:46.295177+00:00",
-    "6e88f55a5c60": "2026-05-22T13:57:46.295177+00:00",
-    "24cf7048581d": "2026-05-22T13:57:46.295177+00:00",
-    "3b285d4c2279": "2026-05-22T13:57:46.295177+00:00",
-    "dfd8dc576a5c": "2026-05-22T13:57:46.295177+00:00",
     "33c1a2528aa4": "2026-05-22T16:28:35.144971+00:00",
     "d5baa764f02e": "2026-05-22T16:28:35.144971+00:00",
     "4cd1169bfeb0": "2026-05-22T16:28:35.144971+00:00",
@@ -523,315 +510,17 @@
     "aec2d74c6d67": "2026-05-22T16:28:35.144971+00:00",
     "dfba267855cd": "2026-05-22T16:28:35.144971+00:00",
     "5f950ff4c2ae": "2026-05-22T16:28:35.144971+00:00",
-    "460e365cd6ea": "2026-05-22T16:28:35.144971+00:00"
+    "460e365cd6ea": "2026-05-22T16:28:35.144971+00:00",
+    "5ff4bab14e8a": "2026-05-22T18:17:18.771832+00:00",
+    "bf6fa60052f8": "2026-05-22T18:17:18.771832+00:00",
+    "75fedd8e4f81": "2026-05-22T18:17:18.771832+00:00",
+    "5e2abe0a891b": "2026-05-22T18:17:18.771832+00:00",
+    "bda4c4489108": "2026-05-22T18:17:18.771832+00:00",
+    "a9f40b98e796": "2026-05-22T18:17:18.771832+00:00",
+    "785fb63da2d3": "2026-05-22T18:17:18.771832+00:00",
+    "d4383fce5a2e": "2026-05-22T18:17:18.771832+00:00"
   },
   "live_clusters": {
-    "2fbb7aad06302fc8": {
-      "topic": "Nike KD 6 'Seat Pleasant' Spring 2027 Retro Release",
-      "item_ids": [
-        "eea433da1712"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a0e7ca373b8b0a75": {
-      "topic": "Nike Air Trainer SC Atlanta Market Return",
-      "item_ids": [
-        "827753236b6c"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ae50f11203396a4": {
-      "topic": "Nike 2026 World Cup Marketing Campaign Polaroid Album",
-      "item_ids": [
-        "b31619673242"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "90dedc2694f807f2": {
-      "topic": "GQ Summer Fashion Oxford Shirt Feature",
-      "item_ids": [
-        "cbc9a3001c03"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8cf595b5dfd854aa": {
-      "topic": "AI Implementation in Creative Industries Analysis",
-      "item_ids": [
-        "45975d476880"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d9947db2a8c8ddfd": {
-      "topic": "AI Usage Ethics and Personal Privacy Guide",
-      "item_ids": [
-        "95171700dd4c"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "90ce3003c102908d": {
-      "topic": "AI Side Hustle Automation Guide",
-      "item_ids": [
-        "5ac891adc95b"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "af4e5a74185c1d7d": {
-      "topic": "OpenClaw AI Avatar Self-Cloning Experience",
-      "item_ids": [
-        "c106382df1b3"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "38651300f3276c10": {
-      "topic": "Lucas Acher 'Laser-Cat' Cannes La Cinef Best Short Award",
-      "item_ids": [
-        "42f614784800"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dbdc7f22ece05ea1": {
-      "topic": "Sarah Arnold 'Too Many Beasts' Cannes Directors' Fortnight Best European Film",
-      "item_ids": [
-        "130cfd3e542d"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "67fcb1deb669d790": {
-      "topic": "'Summer of '94' Documentary Coach Bora Milutinovi\u0107 1994 World Cup Legacy",
-      "item_ids": [
-        "a4ecbb2b2593"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3ad2a09ccfaf4d4b": {
-      "topic": "'Sinners' Film Halloween Horror Nights Universal Attraction",
-      "item_ids": [
-        "e846fb6567f5"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4d92ccff4df7fe20": {
-      "topic": "Vince Staples American Flag Music Video",
-      "item_ids": [
-        "7345b38bcce3"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "81deabb82e9b0543": {
-      "topic": "Suu Morishita 'Yubisaki to Renren' Vol. 14 Billboard Japan Book Chart",
-      "item_ids": [
-        "6382be51f14b"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "046ca46da721ebac": {
-      "topic": "Kacey Musgraves Lee Denim Fashion Collection",
-      "item_ids": [
-        "38e190e40b34"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "76475c86e24859e1": {
-      "topic": "LISA Anitta Rema 'Goals' FIFA World Cup Cross-Continental Single",
-      "item_ids": [
-        "ac8439f3be29"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "06e25bd5541afa64": {
-      "topic": "BTS 'Arirang' World Tour Homecoming Show Global Live Screening",
-      "item_ids": [
-        "f73770bd087c",
-        "7deac68ca2a7"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e7e6199f4af36fd7": {
-      "topic": "Sadie Soverall Brady Corbet X-Rated Film Role",
-      "item_ids": [
-        "585ae4a7e2ea"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1ca0c656fe8983aa": {
-      "topic": "Courtney A. Kemp Apple TV Overall Deal",
-      "item_ids": [
-        "8acc93d9db5a"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c883fd0da7b37b6": {
-      "topic": "Gavin Newsom AI Disruption Executive Order",
-      "item_ids": [
-        "bd16d94dbc4d"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d384aefcd045ef15": {
-      "topic": "Spotify Reserved Concert Tickets Premium Subscribers Universal Music AI Covers Deal",
-      "item_ids": [
-        "f7528e8a3f01",
-        "ce59bdc7a569",
-        "51a5f7a88be8",
-        "408ef0ef57de",
-        "d763a91b36dc",
-        "68f28901f517",
-        "00d321dd1852"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 7,
-      "last_escalated_at": "2026-05-21T21:02:00.446759+00:00",
-      "picks_file": "picks/picks-2026-05-21-1716.md",
-      "why_text": "Spotify is moving hard to justify its premium tier by bundling live music access \u2014 a direct shot at competitors and a signal that streaming alone no longer sells subscriptions. The Universal Music deal for fan-made AI covers is the bigger flex: it legitimizes a whole category of AI-generated content that the music industry has been fighting, turning a legal headache into a revenue stream. Together, these moves reframe Spotify from passive platform to active gatekeeper of the entire music experience.\n**Update 4:02 PM CT:** TechCrunch and Rolling Stone's confirmation of the Spotify-Universal deal adds weight to what's now a watershed moment: labels are formally flipping from litigation mode to licensing mode on AI, betting that controlled fan creativity inside their catalog beats an uncontrollable black market of unauthorized AI covers outside it.",
-      "last_escalated_item_ids": [
-        "f7528e8a3f01",
-        "ce59bdc7a569",
-        "51a5f7a88be8",
-        "408ef0ef57de",
-        "d763a91b36dc",
-        "68f28901f517",
-        "00d321dd1852"
-      ]
-    },
-    "918bf20e9a53a43f": {
-      "topic": "2026 Hurricane Season Weather Forecast",
-      "item_ids": [
-        "e3dba206c333"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "de550af818c58e8f": {
-      "topic": "Google Gemini AI Avatar Self-Cloning Tool Experience",
-      "item_ids": [
-        "f470f751675c"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fa49206ac61f63ff": {
-      "topic": "Fragrance Industry Startup Innovation Challenge",
-      "item_ids": [
-        "fe576b2d8340"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3a65557654796252": {
-      "topic": "Google Gemini Integration Smart Home Devices",
-      "item_ids": [
-        "5f32e9da337f"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7d7ad2e6e701a9db": {
-      "topic": "Humanoid Robot Bosch Production Partnership",
-      "item_ids": [
-        "9df71bf1283e"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "70a16b282469caf6": {
-      "topic": "AT&T Customizable Wireless Plans $15 Monthly Offer",
-      "item_ids": [
-        "7613904bafc3"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e621801240357689": {
-      "topic": "Top Gun 40th Anniversary Retrospective",
-      "item_ids": [
-        "90dbdd6e7b88"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "21c2de2100c8dc25": {
-      "topic": "International Space Station Coolant Leak Repair",
-      "item_ids": [
-        "d57c35bc803a"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "536ac011c16aabc2": {
-      "topic": "Trump AI Executive Order Postponement",
-      "item_ids": [
-        "5dc9f7ee915e"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a444f58026b11e7d": {
-      "topic": "Trump EPA Rules Supermarket Price Impact",
-      "item_ids": [
-        "593494e6f1b9"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0cf33bab0ade4f37": {
-      "topic": "White House AI Defense Strategy Policy",
-      "item_ids": [
-        "ee55c3a60de3"
-      ],
-      "created_at": "2026-05-21T17:16:09.908062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "020433948059acc0": {
       "topic": "Louis Vuitton Cruise 2027 Shoes Basketball Karate Inspired Design",
       "item_ids": [
@@ -995,11 +684,19 @@
       "topic": "Pen\u00e9lope Cruz 'La Bola Negra' Cannes 20-Minute Standing Ovation",
       "item_ids": [
         "a7a3efb9c036",
-        "bad88fea0146"
+        "bad88fea0146",
+        "c2da7377efdd"
       ],
       "created_at": "2026-05-21T19:20:38.150222+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-22T18:17:18.771832+00:00",
+      "picks_file": "picks/picks-2026-05-22-1817.md",
+      "why_text": "A 16-minute standing ovation at Cannes is the kind of moment that instantly rewrites a film's trajectory \u2014 and for Pen\u00e9lope Cruz, it confirms she's operating at a career-defining peak. 'La Bola Negra' has sparked a multi-studio bidding war before it even has a distributor, which means the industry is betting serious money on the crowd's instinct. In a festival season hungry for a genuine breakout, this is it.",
+      "last_escalated_item_ids": [
+        "a7a3efb9c036",
+        "bad88fea0146",
+        "c2da7377efdd"
+      ]
     },
     "fbcc46b711de63fc": {
       "topic": "Apple TV MLS Live Match Shot Entirely With iPhones Sports Broadcasting History",
@@ -1238,7 +935,8 @@
     "ba85dd028a0cc845": {
       "topic": "Memorial Day 2026 Menswear Sales and Deals",
       "item_ids": [
-        "ff036b159e7c"
+        "ff036b159e7c",
+        "d6cc1c8b1586"
       ],
       "created_at": "2026-05-21T22:38:33.432181+00:00",
       "last_escalated_size": 0,
@@ -1400,7 +1098,8 @@
     "5b61707074d22f63": {
       "topic": "ChatGPT Integration PowerPoint Microsoft Office",
       "item_ids": [
-        "9ed876a9ff77"
+        "9ed876a9ff77",
+        "ce328c8691f3"
       ],
       "created_at": "2026-05-21T22:38:33.432181+00:00",
       "last_escalated_size": 0,
@@ -2056,7 +1755,259 @@
       "created_at": "2026-05-22T16:29:08.815276+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "febea7c2b7c81239": {
+      "topic": "Nike Shox BB4 'Olympic' Sneaker Release",
+      "item_ids": [
+        "d6c70bc4ac8b"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "90b2562350ad9d32": {
+      "topic": "Nike Air Max 1000.2 'Black/Hyper Crimson' Sneaker Release",
+      "item_ids": [
+        "6b13fc07a5b0"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9edc44975d264141": {
+      "topic": "Vuori Memorial Day Sale Activewear",
+      "item_ids": [
+        "ea211676232b"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "af1216d5cd37048a": {
+      "topic": "Missing Virgin River Actor Stewart McLean Homicide Investigation",
+      "item_ids": [
+        "2ed3ffb05c9f"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "de4504670f4673fd": {
+      "topic": "The Birthday Party Film Review L\u00e9a Mysius Cannes",
+      "item_ids": [
+        "59be8908395a"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3496da843545400c": {
+      "topic": "Sh(AI)ved AI-Generated Adult Film Collection Cannes Unveiled",
+      "item_ids": [
+        "ecee215ffecd"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6a70ab83f74c8960": {
+      "topic": "Kaitlyn Aurelia Smith Label Launch Album Ruin",
+      "item_ids": [
+        "58731f1396cf"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1dade97b7b52ee2f": {
+      "topic": "Tucker Wetmore 'Brunette' Country Airplay No. 1 Debut",
+      "item_ids": [
+        "a56496888b2c"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "30618a2c66c47c2b": {
+      "topic": "New Music Releases Olivia Rodrigo Charli XCX Bleachers Week Poll",
+      "item_ids": [
+        "4f2d2c6685c4"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "77d3a83c9b6b35e6": {
+      "topic": "UK Chart Songs 8+ Weeks But Not US Hot 100 Top 10 Analysis",
+      "item_ids": [
+        "ba79212ce153"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8ba58dc509a264ae": {
+      "topic": "Live Nation Settlement Beyond Wonderland Shooting Victims Families",
+      "item_ids": [
+        "1b97dc029a8f"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "36dfe81ba2e92785": {
+      "topic": "Madonna 'I Feel So Free' First No. 1 Radio Hit in 18 Years",
+      "item_ids": [
+        "835578267d22"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "05674a1d96279eb8": {
+      "topic": "Britney Spears DUI Stop British Accent Lasagna Arrest Records",
+      "item_ids": [
+        "5084600d9b9e"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a0d63f89deeb4505": {
+      "topic": "Off Campus Hockey-Romance TV Series Launch",
+      "item_ids": [
+        "e2e626f4871f"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5257eb3dc1c970e6": {
+      "topic": "Thom Yorke 'Space Walk' Song Debut Ivor Novello Awards",
+      "item_ids": [
+        "554ca7cf87fc"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e8f48f294812919c": {
+      "topic": "World Cup 2026 Best Hotel Stays Guide",
+      "item_ids": [
+        "8204a92aca67"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4965db6aa33551ee": {
+      "topic": "Ben Stiller Mike Judge Apple Comedy Series 'Protective Custody'",
+      "item_ids": [
+        "f1a61cf47af4"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a18b772f41c249e0": {
+      "topic": "Celebrity Wheel of Fortune Exclusive Disney+ Hulu Episodes",
+      "item_ids": [
+        "dfb03a530ab9"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2dd67d2db7f7b476": {
+      "topic": "Bill Pullman League of Their Own Netflix Sci-Fi Series Reflection",
+      "item_ids": [
+        "816f3dc7e0ab"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cdeb292121bf468a": {
+      "topic": "Boots Riley Indie Holiday Films 'I Love Boosters' 'Tuner' 'Saccharine'",
+      "item_ids": [
+        "9e2385ad59fe"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "59fd000b23fdaaa2": {
+      "topic": "Shein Acquisition of Everlane Strategic Analysis",
+      "item_ids": [
+        "443b4e262739"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "89fa86eded19121a": {
+      "topic": "Memorial Day 2026 Grill Griddle Deals Weber Traeger Recteq",
+      "item_ids": [
+        "26dcd444a287"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0b46056dccd5d38a": {
+      "topic": "NASA Jet Propulsion Laboratory Management Bids Opening",
+      "item_ids": [
+        "b5721f169905"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7ef9ff082b56faf6": {
+      "topic": "Solar Energy Hydro Power Surge US Coal Grid Displacement",
+      "item_ids": [
+        "950034659421"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0609fc7c19acf763": {
+      "topic": "Arm Stock Rally Starbucks AI Project Discontinuation",
+      "item_ids": [
+        "f30adb981d04"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fed8c7abe09c4e97": {
+      "topic": "Morgan County Laser Technology Drug Identification Safety",
+      "item_ids": [
+        "8b47240b71d9"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4a44ca3d5ca3ee68": {
+      "topic": "Teberg NDSCS Electrical Technology Program Sponsorship",
+      "item_ids": [
+        "d3a6fd08831e"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75a5ed8b09256576": {
+      "topic": "EUV Chip-Making Technology ETF AI Analysis",
+      "item_ids": [
+        "1fe91768ce11"
+      ],
+      "created_at": "2026-05-22T18:17:57.277456+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-22T16:29:19.000544+00:00"
+  "last_checked": "2026-05-22T18:18:02.444178+00:00"
 }
