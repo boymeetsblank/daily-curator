@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "7a7ff34b8bd4",
-    "8ad8deb31608",
-    "7e693c7c2091",
-    "bbaed57bb918",
-    "11ec8b3b563e",
-    "fb0ba42f9c10",
-    "1ee2e33024ef",
-    "05cb13eb1cee",
-    "fb5b455ba41d",
-    "5cff5ed7e90f",
-    "07775cef5a70",
-    "3036a982d00a",
-    "7e6138e38a8a",
-    "ebdbdd3ac1aa",
-    "54f9e6712e40",
-    "1b3ff6391b5c",
-    "536940cfb6d7",
     "f7f5f3cfbbb3",
     "40586f83067c",
     "7edb08529ecf",
@@ -499,18 +482,26 @@
     "45a135a35341",
     "35fd86d96db8",
     "7aa227e6ab1a",
-    "43c782012c40"
+    "43c782012c40",
+    "324260636e1c",
+    "f4c5132e73bc",
+    "8a94c2c63ea3",
+    "68d4611f4d3c",
+    "31b07a3cadf1",
+    "c9b40efb2682",
+    "1054458d4909",
+    "b8479585ae78",
+    "44b39a1c4a3f",
+    "7cba577e683e",
+    "e454816d9925",
+    "e3e1f21c8d7e",
+    "d4ba36838dce",
+    "6c669bd48f01",
+    "1fb2a3ebc284",
+    "010c480abc4f",
+    "74548e62f123"
   ],
   "failed_ids": {
-    "33c1a2528aa4": "2026-05-22T16:28:35.144971+00:00",
-    "d5baa764f02e": "2026-05-22T16:28:35.144971+00:00",
-    "4cd1169bfeb0": "2026-05-22T16:28:35.144971+00:00",
-    "1cdf71c0b5bb": "2026-05-22T16:28:35.144971+00:00",
-    "58380f9115ea": "2026-05-22T16:28:35.144971+00:00",
-    "aec2d74c6d67": "2026-05-22T16:28:35.144971+00:00",
-    "dfba267855cd": "2026-05-22T16:28:35.144971+00:00",
-    "5f950ff4c2ae": "2026-05-22T16:28:35.144971+00:00",
-    "460e365cd6ea": "2026-05-22T16:28:35.144971+00:00",
     "5ff4bab14e8a": "2026-05-22T18:17:18.771832+00:00",
     "bf6fa60052f8": "2026-05-22T18:17:18.771832+00:00",
     "75fedd8e4f81": "2026-05-22T18:17:18.771832+00:00",
@@ -526,162 +517,25 @@
     "2bec076fa2a1": "2026-05-22T20:15:05.046725+00:00",
     "0b79387cc9f2": "2026-05-22T20:15:05.046725+00:00",
     "bcd76d5d3729": "2026-05-22T20:15:05.046725+00:00",
-    "288c23eb44d4": "2026-05-22T20:15:05.046725+00:00"
+    "288c23eb44d4": "2026-05-22T20:15:05.046725+00:00",
+    "6817f5a583f8": "2026-05-22T21:37:51.403442+00:00",
+    "2c8a0a6bedc2": "2026-05-22T21:37:51.403442+00:00",
+    "3537f4cb64ef": "2026-05-22T21:37:51.403442+00:00",
+    "f65b35d28d31": "2026-05-22T21:37:51.403442+00:00",
+    "dfba267855cd": "2026-05-22T21:37:51.403442+00:00",
+    "871cab5a1b11": "2026-05-22T21:37:51.403442+00:00",
+    "bf1115b87e1d": "2026-05-22T21:37:51.403442+00:00",
+    "edae89febb7f": "2026-05-22T21:37:51.403442+00:00",
+    "4254f298e49b": "2026-05-22T21:37:51.403442+00:00",
+    "4c35b4886b8c": "2026-05-22T21:37:51.403442+00:00",
+    "a7861c35c1e1": "2026-05-22T21:37:51.403442+00:00",
+    "1e1143f86185": "2026-05-22T21:37:51.403442+00:00",
+    "11ebee98b464": "2026-05-22T21:37:51.403442+00:00",
+    "13ce3ef1b130": "2026-05-22T21:37:51.403442+00:00",
+    "debe1948606c": "2026-05-22T21:37:51.403442+00:00",
+    "4b8428921ce1": "2026-05-22T21:37:51.403442+00:00"
   },
   "live_clusters": {
-    "6bbcad98177eff5d": {
-      "topic": "Nike Structure Plus Monochrome Pack Release",
-      "item_ids": [
-        "11f92133b1c0"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f68e7b05643209d8": {
-      "topic": "Nike Mind 001 Bronze Eclipse Flyknit Release",
-      "item_ids": [
-        "42008fb2f8c2"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dff9540080b111c3": {
-      "topic": "Blundstone Aerocork Sandals Review 2026",
-      "item_ids": [
-        "9107fea8bbdc"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cdf739091a4a1edf": {
-      "topic": "Fallout Chad Powers Stranger Things Makeup VFX Prosthetics Feature",
-      "item_ids": [
-        "f630897bdb11"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "80c50f3ba74b7f18": {
-      "topic": "Johnny Depp Penelope Cruz Day Drinker Action Thriller 2027 Release",
-      "item_ids": [
-        "f092f68eab3f"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "819bfcdf42a1dc49": {
-      "topic": "Mel Gibson Resurrection of the Christ Two-Part Biblical Epic Release Delay",
-      "item_ids": [
-        "9f746c007e84"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4f390f8e3b2eab07": {
-      "topic": "GTA 6 Price Marketing Launch Summer 2026",
-      "item_ids": [
-        "0707a6e05f40"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "76e6bc41523b8d04": {
-      "topic": "Harry Styles Limited-Edition Loop Earplugs Release",
-      "item_ids": [
-        "dcb9bf74db66"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7c0c3c1758bcd0a8": {
-      "topic": "Madonna Confessions Tour Part 1 20th Anniversary Part 2 Speculation",
-      "item_ids": [
-        "4460db5f6d17"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a1678176895e509c": {
-      "topic": "Cardi B Fall 2026 Tour Plans Little Miss Drama Tour $70M Gross",
-      "item_ids": [
-        "e47f44a860bf"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ab31074ee5d1d04": {
-      "topic": "Two Strangers Carry A Cake Across New York North American Tour Fall 2027",
-      "item_ids": [
-        "6d0907d24d55"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "212a6e02cf04b64a": {
-      "topic": "Elon Musk The Boys Finale Critique Eric Kripke Response",
-      "item_ids": [
-        "4c8f3a16a2b6"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "138205ea451e5724": {
-      "topic": "Meta Corporate Crisis Google Search AI Criticism Graduates",
-      "item_ids": [
-        "18133e5cc8dc"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "618e399562f7d4a5": {
-      "topic": "Law Enforcement VPN Service Ransomware Gang Shutdown",
-      "item_ids": [
-        "1e4681c5b3bf"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3fe86c9881420d91": {
-      "topic": "Microsoft Xbox Controller Accessory Port Removal Refresh",
-      "item_ids": [
-        "2e4077ae4ae8"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a3165914c506971f": {
-      "topic": "Meta Broadcom Semiconductor Research Hub UCLA $125 Million",
-      "item_ids": [
-        "9a9f895e8adc"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "540a11195d633e39": {
-      "topic": "Workday Stock Jump 14% AI Margin Forecast Bump",
-      "item_ids": [
-        "e4405fedefa4"
-      ],
-      "created_at": "2026-05-21T21:02:37.537648+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "bca6a4ddbaa2ca07": {
       "topic": "Museo Jumex Soccer-Inspired Art Exhibition",
       "item_ids": [
@@ -821,7 +675,8 @@
     "672cde509c80b7c6": {
       "topic": "Lupita Nyong'o 'The Odyssey' Racist Casting Criticism Response",
       "item_ids": [
-        "861eebfee4bf"
+        "861eebfee4bf",
+        "44b39a1c4a3f"
       ],
       "created_at": "2026-05-21T22:38:33.432181+00:00",
       "last_escalated_size": 0,
@@ -833,7 +688,8 @@
         "cd7dc8f490b6",
         "ae0a7e5e201d",
         "ad61bbce320a",
-        "8c8f46eef5e9"
+        "8c8f46eef5e9",
+        "c9b40efb2682"
       ],
       "created_at": "2026-05-21T22:38:33.432181+00:00",
       "last_escalated_size": 3,
@@ -1466,7 +1322,8 @@
     "060d15482e17e79e": {
       "topic": "Google Search Disregard Word Query Issue",
       "item_ids": [
-        "7e9de1698fc8"
+        "7e9de1698fc8",
+        "1fb2a3ebc284"
       ],
       "created_at": "2026-05-22T16:29:08.815276+00:00",
       "last_escalated_size": 0,
@@ -1629,7 +1486,8 @@
     "8ba58dc509a264ae": {
       "topic": "Live Nation Settlement Beyond Wonderland Shooting Victims Families",
       "item_ids": [
-        "1b97dc029a8f"
+        "1b97dc029a8f",
+        "1054458d4909"
       ],
       "created_at": "2026-05-22T18:17:57.277456+00:00",
       "last_escalated_size": 0,
@@ -1958,7 +1816,124 @@
       "created_at": "2026-05-22T20:15:46.559979+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "08a5837b1f102d47": {
+      "topic": "Jude Bellingham adidas Climacool Solar Red Sneaker Release",
+      "item_ids": [
+        "324260636e1c"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9a3304c40bf5cd25": {
+      "topic": "Air Jordan 1 'Workwear' Sneaker Release",
+      "item_ids": [
+        "f4c5132e73bc"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "edb0318827ec093a": {
+      "topic": "NCT TAEYONG 'WYLD' Album Evolution Interview",
+      "item_ids": [
+        "8a94c2c63ea3"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6ad8800a4feb645f": {
+      "topic": "Ryan Porter Jazz Trombonist Kendrick Lamar Collaborator Death Obituary",
+      "item_ids": [
+        "68d4611f4d3c"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4affed67282ee18a": {
+      "topic": "Christian Nodal 'Bandera Blanca' Album Ranking Review",
+      "item_ids": [
+        "31b07a3cadf1"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8b291afecb3a2937": {
+      "topic": "Cannes Un Certain Regard Winners Sandra Wollner 'Everytime' Top Prize",
+      "item_ids": [
+        "b8479585ae78"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "97890f820467cf83": {
+      "topic": "'Spartacus: House Of Ashur' Starz Cancellation One Season",
+      "item_ids": [
+        "7cba577e683e"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a3fcc72e3f80ec66": {
+      "topic": "Ronaldo Canelo Forbes Highest Paid Athletes List Ranking",
+      "item_ids": [
+        "e454816d9925"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eca4c3d16cced891": {
+      "topic": "Blue Origin New Glenn Mega-Rocket Cleared to Fly April Mishap",
+      "item_ids": [
+        "e3e1f21c8d7e"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f6ddb8c6ea16ac80": {
+      "topic": "Google Disco Ball Icons Design Update",
+      "item_ids": [
+        "d4ba36838dce"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c357dadfbe404a80": {
+      "topic": "VCs Founders Inflated ARR AI Startups Valuation Analysis",
+      "item_ids": [
+        "6c669bd48f01"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4e31542e65e2fbe4": {
+      "topic": "Qualcomm Stock Rally AI Devices Boom Investor Growth",
+      "item_ids": [
+        "010c480abc4f"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a330623ec58832c5": {
+      "topic": "Walmart Top Executives Departure New CEO John Furner",
+      "item_ids": [
+        "74548e62f123"
+      ],
+      "created_at": "2026-05-22T21:38:21.607561+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-22T20:15:57.441873+00:00"
+  "last_checked": "2026-05-22T21:38:27.532566+00:00"
 }
