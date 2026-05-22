@@ -2208,6 +2208,11 @@ def main():
     # ── Post-scoring dedup: catch same-topic pairs that survived clustering ───
     evaluated_articles = deduplicate_after_scoring(evaluated_articles)
 
+    # Re-run primary marking: the dedup can incorrectly promote a non-primary
+    # to primary=True if it wins a sub-group — a second pass guarantees exactly
+    # one primary per cluster_id.
+    evaluated_articles = mark_cluster_primaries(evaluated_articles)
+
     # ── Update seen-URL registry with everything scored this run ─────────────
     seen_urls, new_count = update_seen_urls(seen_urls, evaluated_articles)
     save_seen_urls(seen_urls)

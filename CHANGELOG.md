@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-22] Fix: two primaries bug — re-run cluster primary marking after post-scoring dedup
+
+`deduplicate_after_scoring()` could incorrectly promote a non-primary article to `cluster_primary=True` if it won a Sonnet-identified sub-group, resulting in two primaries within the same cluster (e.g. both "Spotify AI remixes" and "Spotify Reserved ticketing" showing as independent picks in the feed). Fixed by re-running `mark_cluster_primaries()` immediately after the dedup, guaranteeing exactly one primary per cluster regardless of what the dedup changed.
+
 ## [2026-05-21] Disabled digest publisher
 
 Commented out the "Run Digest Publisher" and "Commit digest" steps in `daily_curator.yml`. The `digest_publisher.py` script is still present — uncomment those steps to re-enable.
@@ -83,10 +87,6 @@ Reddit Trending was redundant (r/popular and r/all already covered by direct RSS
 ## [2026-05-06] Raise per-subreddit article cap to 25
 
 Reddit sources (any source name starting with "r/") now get a cap of 25 articles per run instead of the default 15. All other sources remain at 15. The overall 200-article hard cap still applies.
-
-## [2026-05-06] Add r/popular and r/all as wide net sources
-
-Added r/popular and r/all to sources.json as direct RSS feeds under the "wide net" category.
 
 
 
