@@ -1,26 +1,5 @@
 {
   "known_ids": [
-    "d7f12f85f97f",
-    "735376f49eea",
-    "5dcca4d5a71d",
-    "77d1dcbed5e5",
-    "6b5fb4508ebb",
-    "c2f807807ab0",
-    "c6feff44e0fd",
-    "41ee3ef3117f",
-    "ba883280425f",
-    "db168c770455",
-    "b324112351d0",
-    "e8c69009b53f",
-    "eef5de62fe18",
-    "4f685d8c9f73",
-    "df8a26a3407f",
-    "5064af214284",
-    "75515dab0b36",
-    "d9cb871a6db1",
-    "fd310a3cbf0e",
-    "2cbd3e3624d2",
-    "d2b7d6004c4a",
     "26e9f02bc577",
     "7fa0875ec0c9",
     "76624aceadaa",
@@ -499,7 +478,28 @@
     "01bb76709e50",
     "e9b77c2df8ed",
     "2c6d426c37c8",
-    "91acc6d79c39"
+    "91acc6d79c39",
+    "d8a10c99f46a",
+    "d1ce1268477f",
+    "744904b72a2b",
+    "0060a3ee947b",
+    "0e3b567295b0",
+    "fef5ec65ece7",
+    "d0589b9b71f0",
+    "d02870ae46ac",
+    "afb992ed2324",
+    "7baa9b4c7175",
+    "ad0326b2ebee",
+    "340bb28388a9",
+    "4a3d97252639",
+    "cebec554b20c",
+    "87e92047b4c8",
+    "82f0aa868929",
+    "c3d01886fb4f",
+    "5f013ac0f668",
+    "2114a755a45e",
+    "bc08ab0533cb",
+    "d1f989a9e5fb"
   ],
   "failed_ids": {
     "8d95b14e7897": "2026-05-22T11:32:43.109149+00:00",
@@ -517,109 +517,22 @@
     "41b25f5892ca": "2026-05-22T11:32:43.109149+00:00",
     "6ec71cd52e4b": "2026-05-22T11:32:43.109149+00:00",
     "9cdfd381c87a": "2026-05-22T11:32:43.109149+00:00",
-    "ad923dad92a2": "2026-05-22T11:32:43.109149+00:00"
+    "ad923dad92a2": "2026-05-22T11:32:43.109149+00:00",
+    "90411a9cd03a": "2026-05-22T13:57:46.295177+00:00",
+    "1821efaf5597": "2026-05-22T13:57:46.295177+00:00",
+    "dce8e1895f32": "2026-05-22T13:57:46.295177+00:00",
+    "33fe239aea2c": "2026-05-22T13:57:46.295177+00:00",
+    "69c83510d0fe": "2026-05-22T13:57:46.295177+00:00",
+    "888e57649971": "2026-05-22T13:57:46.295177+00:00",
+    "0b23fa30a1af": "2026-05-22T13:57:46.295177+00:00",
+    "b14326cf34fe": "2026-05-22T13:57:46.295177+00:00",
+    "bdab22adc90f": "2026-05-22T13:57:46.295177+00:00",
+    "6e88f55a5c60": "2026-05-22T13:57:46.295177+00:00",
+    "24cf7048581d": "2026-05-22T13:57:46.295177+00:00",
+    "3b285d4c2279": "2026-05-22T13:57:46.295177+00:00",
+    "dfd8dc576a5c": "2026-05-22T13:57:46.295177+00:00"
   },
   "live_clusters": {
-    "b04d3323fd6c90e5": {
-      "topic": "'28 Years Later Part 3' Zombie Film Development",
-      "item_ids": [
-        "fa9d1ef0097d"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "22914f106dd193ab": {
-      "topic": "'The Odyssey' Film Cast Announcement",
-      "item_ids": [
-        "dd4f4603fcaf"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b3ca5b0dc4198808": {
-      "topic": "Prashanth Neel NTR 'Dragon' Patriotic Film and 'Salaar' Sequel Confirmation",
-      "item_ids": [
-        "2617144d7096"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "120abc28d628a0d9": {
-      "topic": "Fresha Beauty Booking Startup $1 Billion Valuation KKR Funding",
-      "item_ids": [
-        "69c136cdddd9"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "01471ce5784e099e": {
-      "topic": "Meta 8,000 Employee Layoffs",
-      "item_ids": [
-        "81a235d3b0b9"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fc52bc940459d177": {
-      "topic": "Meta Snap Roblox Anti-Grooming Measures UK Commitment",
-      "item_ids": [
-        "13887e39ab77"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fe694b68b7cd138e": {
-      "topic": "Walmart Q4 Outlook Guidance Cut High Gas Prices Impact",
-      "item_ids": [
-        "5155d3d101d5"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cefa4c97576126e6": {
-      "topic": "Stellantis $70 Billion Turnaround Plan 2028 Cash Flow Target",
-      "item_ids": [
-        "e054bce44c34"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ba55b6faa21e1ada": {
-      "topic": "Quantum Computing Stocks Rally US $2 Billion Investment Program",
-      "item_ids": [
-        "c7806d70c03c",
-        "75f7db50ec81"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "92314b574c759fc4": {
-      "topic": "Oil Markets 'Red Zone' Risk July Summer Demand IEA Warning",
-      "item_ids": [
-        "f67fc7f58083"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "71099f43c9a8998e": {
-      "topic": "Eli Lilly Next-Generation Weight Loss Drug Obesity Trial Success",
-      "item_ids": [
-        "b6809af8a97d"
-      ],
-      "created_at": "2026-05-21T11:43:42.001302+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "189fbc51380a80f5": {
       "topic": "Arghavan Khosravi 'What Remains' Film Diasporic Narratives",
       "item_ids": [
@@ -1259,7 +1172,8 @@
         "e03c197bdcee",
         "cf9628bce877",
         "f76fe142d72d",
-        "9810eafa5fb8"
+        "9810eafa5fb8",
+        "340bb28388a9"
       ],
       "created_at": "2026-05-21T19:20:38.150222+00:00",
       "last_escalated_size": 5,
@@ -1577,11 +1491,18 @@
     "5ab060557ecf4e61": {
       "topic": "F1 Canadian Grand Prix 2026 Watch Guide",
       "item_ids": [
-        "c90774afcb1c"
+        "c90774afcb1c",
+        "0060a3ee947b",
+        "4a3d97252639"
       ],
       "created_at": "2026-05-21T22:38:33.432181+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-22T13:57:46.295177+00:00",
+      "last_escalated_item_ids": [
+        "c90774afcb1c",
+        "0060a3ee947b",
+        "4a3d97252639"
+      ]
     },
     "5731aa007d0caca5": {
       "topic": "Primary Wave Music Catalog Acquisitions and Warner Music Korea Deals",
@@ -1964,7 +1885,124 @@
       "created_at": "2026-05-22T11:33:10.544014+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "98376140ebf10058": {
+      "topic": "Auralee New Balance Collaborative Sneaker Release",
+      "item_ids": [
+        "d8a10c99f46a"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7425f0583d23e5eb": {
+      "topic": "Rihanna Nike Sneaker Partnership Shift from Puma",
+      "item_ids": [
+        "d1ce1268477f"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1f7e566994f7762d": {
+      "topic": "Drake Best Songs Ranking Feature",
+      "item_ids": [
+        "744904b72a2b"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2170f33fb36b2bb9": {
+      "topic": "Valeska Grisebach 'The Dreamed Adventure' Cannes Palme d'Or Contender",
+      "item_ids": [
+        "0e3b567295b0"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6316b886a1b09f8d": {
+      "topic": "amfAR 32nd Cannes Gala AIDS Research Fundraiser $20 Million",
+      "item_ids": [
+        "fef5ec65ece7"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3ede21ab4f168664": {
+      "topic": "Sofa 16 Linear TV Channels YouTube Launch Brazil Latin America US Portugal",
+      "item_ids": [
+        "d0589b9b71f0"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a27933c8da9746e4": {
+      "topic": "Olivia Rodrigo 'The Cure' Single Release Review",
+      "item_ids": [
+        "d02870ae46ac"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "deeb968d0438100d": {
+      "topic": "Philipp Jung Get Physical Co-Founder Death Obituary",
+      "item_ids": [
+        "afb992ed2324"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "acfffebb3439adff": {
+      "topic": "Moses Sumney 'Is God Is' Film Scoring Debut",
+      "item_ids": [
+        "7baa9b4c7175"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2fa2e43639d8c4ac": {
+      "topic": "James Gray 'Paper Tiger' Film Director Interview",
+      "item_ids": [
+        "ad0326b2ebee"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4ad7e96bffa8904e": {
+      "topic": "Maria Mart\u00ednez Bayona 'The End Of It' A-List Cast Cannes Studio First Feature",
+      "item_ids": [
+        "cebec554b20c"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ceddbe45739c04ac": {
+      "topic": "Huxe Audio Generation App Shutdown Former NotebookLM Developers",
+      "item_ids": [
+        "87e92047b4c8"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bafdcef38310f125": {
+      "topic": "Oppo Find X9 Ultra vs Vivo X300 Ultra Telephoto Smartphone Comparison",
+      "item_ids": [
+        "82f0aa868929"
+      ],
+      "created_at": "2026-05-22T13:58:21.973684+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-22T11:33:10.545223+00:00"
+  "last_checked": "2026-05-22T13:58:28.174044+00:00"
 }
