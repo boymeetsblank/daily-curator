@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-22] Live feed: removed Bluesky as a source
+
+Removed `fetch_bluesky_trending()` and the Bluesky What's Hot feed from the live feed pipeline. The platform's "What's Hot" feed skews toward indie creators, journalists, and political commentators — not the mainstream culture audience Blank targets. Engagement signals on Bluesky (1–2K likes) don't translate to the same real-world significance as equivalent Reddit upvotes or X trending positions. Reddit, X trending, YouTube trending, and RSS feeds cover the same signal space without the noise. Removed Bluesky-specific scoring guidance from the Haiku prompt.
+
 ## [2026-05-22] Live feed: tighter Bluesky auto-1 rules — creator promos, crowdfunding, trivial posts
 
 Three new categories added to the Haiku auto-1 list to stop personal Bluesky posts from passing the quality gate: (1) personal creator self-promotion (artist/creator announcing their own art, stickers, prints, merch — regardless of engagement); (2) crowdfunding and campaign posts (Kickstarter, Patreon, Indiegogo "last day to back" type content); (3) trivial observations, viral jokes, or "look at this funny thing" posts with no cultural news significance (e.g. pointing out a typo in a book). These types were scoring 5 (the gate minimum) and appearing in the feed despite having no editorial value.
@@ -79,10 +83,6 @@ Six changes to restore and grow live feed candidate volume after the May 6 overh
 ## [2026-05-06] Live feed scoring overhaul — tighter quality gate, no bare social trends
 
 Rewrote the Haiku scoring prompt in `breaking_news_check.py` to match the main curator's scoring anchors (10: cultural moment, 9: tell someone now, 8: bring up today, 7: worth surfacing, 6: minimum bar). Tightened the politics filter to cover routine political/geopolitical/economic policy content while preserving a carve-out for genuinely historic moments. Removed bare X/Google/TikTok trend topic names as live feed candidates — social context signal is preserved in the scoring prompt but bare names no longer enter the pipeline. Dropped Reddit hot post threshold from 500 → 200 upvotes and raised per-source cap from 3 → 5 to increase candidate volume.
-
-## [2026-05-06] Remove Reddit and Instagram Apify actors to stay within free tier
-
-Reddit Trending was redundant (r/popular and r/all already covered by direct RSS). Instagram scraping requires browser automation — too expensive for the free plan. Apify stack is now 4 lightweight actors: X, Google, YouTube, TikTok.
 
 
 
