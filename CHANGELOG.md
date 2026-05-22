@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-22] Automatic Inoreader refresh token rotation
+
+On every run, if Inoreader returns a new refresh token (token rotation), `daily_curator.py` now automatically saves it back to the `INOREADER_REFRESH_TOKEN` GitHub Actions secret via the API. Requires `GITHUB_PAT` to be set as a GitHub Actions secret. This keeps the token perpetually fresh with no manual re-auth needed.
+
 ## [2026-05-22] Main feed: retry on Claude 529 overloaded error
 
 `_score_batch()` now retries up to 4 times with exponential backoff (2s, 4s, 8s, 16s) when the Anthropic API returns a 529 overloaded error instead of crashing the run. All other errors (auth failures, rate limits, unexpected exceptions) still exit immediately.

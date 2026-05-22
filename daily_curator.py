@@ -27,6 +27,8 @@ INOREADER_TOKEN         = os.environ.get("INOREADER_TOKEN")
 INOREADER_REFRESH_TOKEN = os.environ.get("INOREADER_REFRESH_TOKEN")
 INOREADER_TOKEN_URL     = "https://www.inoreader.com/oauth2/token"
 APIFY_API_TOKEN         = os.environ.get("APIFY_API_TOKEN")
+GITHUB_PAT              = os.environ.get("GITHUB_PAT")
+GITHUB_API              = "https://api.github.com"
 
 HOURS_BACK              = 48
 MAX_ARTICLES_TO_SEND    = 150
@@ -70,9 +72,11 @@ def check_setup():
     print("✅ Credentials loaded successfully.")
 
 
-def get_fresh_token() -> str:
+def get_fresh_token() -> tuple[str, str | None]:
     """
     Exchange the stored refresh token for a new Inoreader access token.
+    Returns (access_token, new_refresh_token). new_refresh_token may be None
+    if Inoreader did not rotate it.
     Raises InoreaderTokenError on any failure so callers can degrade gracefully
     instead of hard-exiting the process.
     """
@@ -98,7 +102,55 @@ def get_fresh_token() -> str:
         raise InoreaderTokenError(
             f"HTTP {response.status_code}: {response.text.strip()}"
         )
-    return response.json()["access_token"]
+    data = response.json()
+    return data["access_token"], data.get("refresh_token")
+
+
+def rotate_github_secret(secret_name: str, secret_value: str) -> bool:
+    """Update a GitHub Actions secret via the REST API. Returns True on success."""
+    if not GITHUB_PAT:
+        return False
+    repo = _detect_github_repo()
+    if not repo:
+        return False
+    headers = {
+        "Authorization": f"Bearer {GITHUB_PAT}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    pk_resp = requests.get(
+        f"{GITHUB_API}/repos/{repo}/actions/secrets/public-key",
+        headers=headers, timeout=10,
+    )
+    if not pk_resp.ok:
+        return False
+    pk_data = pk_resp.json()
+    try:
+        from nacl import encoding, public as nacl_public
+        pk = nacl_public.PublicKey(pk_data["key"].encode(), encoding.Base64Encoder())
+        encrypted = base64.b64encode(nacl_public.SealedBox(pk).encrypt(secret_value.encode())).decode()
+    except ImportError:
+        return False
+    put_resp = requests.put(
+        f"{GITHUB_API}/repos/{repo}/actions/secrets/{secret_name}",
+        headers=headers,
+        json={"encrypted_value": encrypted, "key_id": pk_data["key_id"]},
+        timeout=10,
+    )
+    return put_resp.status_code in (201, 204)
+
+
+def _detect_github_repo() -> str | None:
+    import subprocess, re as _re
+    try:
+        result = subprocess.run(
+            ["git", "remote", "get-url", "origin"],
+            capture_output=True, text=True, timeout=5,
+        )
+        m = _re.search(r"github\.com[:/]([^/]+/[^/]+?)(?:\.git)?$", result.stdout.strip())
+        return m.group(1) if m else None
+    except Exception:
+        return None
 
 
 def generate_sources_json():
@@ -107,7 +159,7 @@ def generate_sources_json():
     Preserves existing entries' 'enabled' and 'category' metadata so that
     paused/categorised sources survive a re-seed.
     """
-    token = get_fresh_token()
+    token, _ = get_fresh_token()
     url = f"{INOREADER_BASE_URL}/subscription/list"
     headers = {
         "Authorization": f"Bearer {token}",
@@ -274,7 +326,7 @@ def fetch_articles_from_direct_rss() -> list[dict]:
 
 def fetch_articles_from_inoreader() -> list[dict]:
     try:
-        token = get_fresh_token()
+        token, _ = get_fresh_token()
     except InoreaderTokenError as e:
         print(f"\n⚠️  Inoreader token refresh failed — skipping Inoreader fetch.")
         print(f"   {e}")
@@ -2085,11 +2137,18 @@ def main():
     # ── Inoreader token health check ──────────────────────────────────────────
     # Try to refresh the token before any fetching.  If it fails, the run
     # continues on Direct RSS only — a partial run beats no run.
+    # If Inoreader returns a new refresh token (rotation), save it back to
+    # the GitHub Actions secret automatically so it never expires.
     print("\n🔑 Checking Inoreader token...")
     inoreader_available = True
     try:
-        get_fresh_token()
+        _, new_refresh_token = get_fresh_token()
         print("   ✅ Inoreader token is valid.")
+        if new_refresh_token and new_refresh_token != INOREADER_REFRESH_TOKEN:
+            if rotate_github_secret("INOREADER_REFRESH_TOKEN", new_refresh_token):
+                print("   🔄 Refresh token rotated and saved to GitHub secret.")
+            else:
+                print("   ⚠️  Could not auto-rotate refresh token in GitHub secret.")
     except InoreaderTokenError as e:
         inoreader_available = False
         print(f"\n⚠️  Inoreader token invalid — this run will use Direct RSS only.")
