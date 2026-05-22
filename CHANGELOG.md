@@ -4,6 +4,42 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-21] Disabled digest publisher
+
+Commented out the "Run Digest Publisher" and "Commit digest" steps in `daily_curator.yml`. The `digest_publisher.py` script is still present — uncomment those steps to re-enable.
+
+## [2026-05-21] Main feed: stronger same-event dedup — different angles on one event now cluster
+
+The post-scoring Sonnet dedup was good at catching "same story, different outlets" but missed "one event generating multiple distinct angle headlines" (e.g. a single IPO filing producing three separately-worded picks). Fixed by replacing category-specific examples in the dedup prompt with event-identity logic: if all articles trace back to one single thing that happened, they are the same story and should cluster — regardless of how different the angles or revelations are.
+
+## [2026-05-20] Live feed: Haiku now sees building clusters when scoring
+
+Haiku was scoring each live feed item in isolation — it had no awareness that 2 other items about the same topic had already passed the quality gate. A third corroborating signal might score 6 because Haiku didn't know it was the third, not the first. Fixed by passing the current cluster state into `filter_and_enrich_items()` and injecting a "BUILDING STORIES" block into the Haiku prompt listing all active clusters with their signal count. If an incoming item matches a building story, Haiku is instructed to score it at least 1 point higher than it would in isolation — because convergence across independent sources is itself strong evidence something real is happening.
+
+## [2026-05-20] Engagement signals in both feeds + recalibrated thresholds
+
+Engagement signals now apply to both the live feed (Haiku) and the main feed (Sonnet). Main feed changes: (1) ENGAGEMENT SIGNALS section added to Sonnet scoring prompt with calibrated Reddit/Google thresholds; (2) trending context block now shows X rank positions (`#1 Josh Hart`) and Google search volumes (`Apple — 500K+ searches`) so Sonnet can see the scale of real-time interest, not just a flat topic list; (3) `social_trends.json` write now preserves `x_ranks`, `google_engagement`, `x_fetched_at`, and `google_fetched_at` written by the live feed instead of overwriting them. Threshold recalibration across both feeds: Reddit 10K+ upvotes → minimum 7; Reddit 30K+ → minimum 8 (was a single 50K threshold); Google 100K+ searches → strong signal, 250K+ → dominating the day (was a single 500K threshold that was too high for most genuinely trending topics).
+
+## [2026-05-20] Live feed: engagement signals now flow into Haiku scoring
+
+Engagement data is now surfaced to the Haiku quality gate so high-engagement content gets scored appropriately. Five changes: (1) Reddit upvotes + comment count and Bluesky likes + reposts + replies were fetched but never shown to Haiku — now included as brackets after each item in the scoring prompt (e.g. `[50,000 upvotes · 1,200 comments]`); (2) YouTube view counts extracted from `<yt:statistics>` in the RSS feed; (3) Google Trends `formattedTraffic` (e.g. "200K+ searches") extracted from the daily endpoint and stored in `social_trends.json`; (4) X trending rank position tracked and stored (`#1` through `#30`) so Haiku knows position-1 topics carry more weight; (5) Haiku prompt updated with explicit engagement scoring guidance — 50K+ Reddit upvotes, 10K+ Bluesky likes, and #1–5 X positions are treated as strong upward score signals.
+
+## [2026-05-20] Main feed: live cluster awareness — confirmed stories get a score floor
+
+`daily_curator.py` now reads `breaking_news_state.json` before scoring. Any live feed cluster already escalated to the main feed (i.e. confirmed by 3+ independent real-time signals) is injected into the Sonnet scoring prompt as a "LIVE FEED CONFIRMED STORIES" block. Articles that match a live cluster topic receive a score floor: 3–5 live signals → minimum 7; 6+ signals → minimum 8. This closes the gap between the live and main feed pipelines — if a story has been building for hours across Reddit, YouTube, X, and Bluesky, the 3×/day curator runs now know about it and prioritize it accordingly. Also fixed misleading log message in `detect_cross_source_trends()` (said "3+ sources" but threshold is 2+).
+
+## [2026-05-20] Fix: Google Trends — dedicated TTL field + remove news-only filter
+
+Two bugs fixed. (1) `refresh_google_trends()` was reading the global `fetched_at` timestamp (written by `daily_curator.py`'s Apify run) as its TTL, causing Google trends to appear "fresh" for up to 10 minutes after an Apify run even though the live refresh hadn't fired. Fixed with a dedicated `google_fetched_at` field, independent of Apify's timestamp. (2) Removed `ns=15` parameter from the Google Trends URL — this flag was silently filtering to news-only topics, excluding entertainment, sports, and celebrity trends. Full trending list now flows through.
+
+## [2026-05-20] Push notifications for cluster escalation and updates
+
+`escalate_cluster_to_sonnet()` now calls `send_breaking_push()` on both escalation paths: initial story escalation (when a cluster first hits 3 signals) sends the synthesized headline and "Why it matters" as the notification body; re-escalation (every 3 additional signals) sends an "Update: {topic}" notification with the new timestamped update paragraph. Users are notified in real time whenever a live cluster story is created or updated in the main feed.
+
+## [2026-05-20] Live feed: X trending and Google Trends now refresh every 10 minutes
+
+X (Twitter) trending topics now refresh every 10 minutes via trends24.in (free, no API key) instead of waiting for the 3×/day Apify run. Google Trends TTL tightened from 60 → 10 minutes. Combined with Reddit hot posts (already real-time), YouTube trending RSS (real-time), and Bluesky What's Hot (real-time), all five major social signals now feed the live feed continuously every ~10 minutes rather than in daily batches.
+
 ## [2026-05-20] Live feed: cluster-based escalation to main feed
 
 When multiple live feed items converge on the same story, they now automatically cluster and escalate as one unified main feed pick. How it works: after each quality gate pass, a Haiku clustering call assigns new items to existing clusters or creates new ones (e.g., "Knicks win Game 1 of NBA Eastern Conference Finals" groups Knicks, Josh Hart, Harden, and Mike Breen signals together). When a cluster hits 3 items, Sonnet synthesizes all signals into one editorial story — headline, Why It Matters, and hook — and writes it to the main feed. Re-escalates every 3 additional items so evolving stories stay current. Cluster state persists in `breaking_news_state.json` with a 24-hour TTL.
@@ -52,45 +88,7 @@ Reddit sources (any source name starting with "r/") now get a cap of 25 articles
 
 Added r/popular and r/all to sources.json as direct RSS feeds under the "wide net" category.
 
-## [2026-05-02] Fix: Live section disappears overnight — extend TTL, commit social trends
 
-Extended `BREAKING_NEWS_TTL_HOURS` from 6 → 12 so items from the previous evening survive the overnight dead zone (US feeds go quiet ~11 PM CT, next curator run at 7:30 AM CT). Fixed `social_trends.json` never being committed: added it to `git add` in `daily_curator.yml` so X, Google, and TikTok trending candidates are available to the breaking news monitor after each 3×/day curator run. Both issues were causing the Live section to show nothing for 8+ hours overnight.
 
-## [2026-05-01] Digest slides: sentence-aware body copy + substack text on image slides
 
-Body copy on story slides now stops at complete sentence boundaries instead of truncating mid-sentence with "...". Added `_wrap_sentences` helper that accumulates sentences until adding another would overflow the line limit, then stops clean. Also switched the image path to use the Substack copy field (already used by text-only slides) instead of the shorter "why" field, matching the more analytical tone.
-
----
-
-## [2026-05-01] Hook prompt: natural punctuation guidance
-
-Replaced the blunt "no period at the end of every line" rule with nuanced guidance: punctuate naturally based on rhythm — complete standalone thoughts get a period, fragments flowing as one sentence don't. Fixes hooks like "TIM COOK IS OUT / APPLE JUST HAD ITS BEST QUARTER EVER..." where the first line is a distinct beat that needs its own punctuation.
-
----
-
-## [2026-04-30] Fix: live feed not updating after breaking news commits
-
-GitHub blocks workflow-triggered pushes (via default GITHUB_TOKEN) from re-triggering other workflows, so breaking_news.yml commits to main were never firing deploy-pages.yml. Fixed by tracking whether a push actually happened (GITHUB_OUTPUT) and explicitly calling `gh workflow run deploy-pages.yml` only when new items were committed.
-
-## [2026-04-30] Digest slide polish: remove borders, widen dividers, anchor text-only layout
-
-Removed the outer border from all slides (cover and story). Widened the divider rule from 60px to 160px on both image and text-only story slides. On text-only slides, switched the content block from vertically centered to bottom-anchored (matching the image-path layout) and added a bottom gradient overlay starting at y=600 to ground the text zone instead of letting it float.
-
-## [2026-04-30] Hook prompt: drop TRIGGER mechanic, break three-sentence pattern
-
-Removed the `[TRIGGER: X]` emotional-label requirement — it was forcing Claude into a formulaic "emotion → three parallel sentences with periods" structure. Replaced with guidance to write like a text to a friend: fragments OK, lines can flow together as one broken thought, no period at the end of every line, vary between 2 and 3 lines. Updated the JSON example to show a natural-sounding hook instead of the old "Nobody saw this coming. / Not even the insiders. / It changes everything." pattern.
-
----
-
-## [2026-04-30] Fix: digest slide headline text no longer clips at right edge
-
-`_wrap_text` and `_truncate_lines` were using `draw.textlength()` (advance-width metric) to check if text fits within the content area. For Bebas Neue at 100px, actual rendered glyph extents exceed the advance width, so long hook lines appeared to fit but overflowed the canvas. Switched both functions to `draw.textbbox()` which returns real pixel bounds (including sidebearings), extracted into a shared `_text_width()` helper.
-
----
-
-## [2026-05-01] Live feed: lower quality gate to 6, add MAX_FEED_SIZE cap
-
-Lowered Haiku quality gate from `>= 7` to `>= 6` so the live feed consistently accumulates 5–10+ items per hour instead of going sparse during off-peak periods. Updated scoring prompt to define 6 as "the minimum for the live feed" rather than "could wait for the main daily feed." Added `MAX_FEED_SIZE = 20` to cap the total live feed size so active-hour volume doesn't overflow the section.
-
----
 

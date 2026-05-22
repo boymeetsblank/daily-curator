@@ -7,8 +7,9 @@ context via Claude Haiku, then written to breaking_news.json (deployed to
 GitHub Pages). If new items are found, a Web Push notification is sent.
 
 Google Trends are refreshed from the unofficial daily trends endpoint whenever
-the cached data in social_trends.json is older than 60 minutes (free, no Apify).
-X and TikTok trends are available via the 3x/day Apify runs in daily_curator.py.
+the cached data is older than 10 minutes (free, no Apify).
+X (Twitter) trending topics are refreshed every 10 minutes via trends24.in (free, no auth).
+TikTok trends are available via the 3x/day Apify runs in daily_curator.py.
 
 Writes:
   breaking_news.json       — deployed to GitHub Pages for the frontend
@@ -42,8 +43,10 @@ STATE_FILE          = "breaking_news_state.json"
 OUTPUT_FILE         = "breaking_news.json"
 SOCIAL_TRENDS_PATH  = "social_trends.json"
 YOUTUBE_TRENDING_RSS  = "https://www.youtube.com/feeds/videos.xml?chart=mostpopular&regionCode=US&hl=en&gl=US"
-GOOGLE_TRENDS_URL     = "https://trends.google.com/trends/trendingsearches/daily?geo=US&ns=15"
-GOOGLE_TRENDS_MAX_AGE = 60    # minutes before we try to refresh google trends
+GOOGLE_TRENDS_URL     = "https://trends.google.com/trends/trendingsearches/daily?geo=US"
+GOOGLE_TRENDS_MAX_AGE = 10    # minutes before we try to refresh google trends
+X_TRENDS_URL          = "https://trends24.in/united-states/"
+X_TRENDS_MAX_AGE      = 10    # minutes before we try to refresh X trending
 
 FEED_URL   = "https://boymeetsblank.github.io/daily-curator/"
 VAPID_CLAIMS = {"sub": "mailto:mjaffry1@gmail.com"}
@@ -57,16 +60,19 @@ def item_id(text: str) -> str:
     return hashlib.md5(text.lower().strip().encode()).hexdigest()[:12]
 
 
-def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) -> list[dict]:
+def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None, live_clusters: dict | None = None) -> list[dict]:
     """
     Batch quality gate via Claude Haiku.
 
-    Scores each candidate 1-10. Items scoring >= 8 are returned with
+    Scores each candidate 1-10. Items scoring >= 5 are returned with
     haiku_score attached. Items scoring 9+ are candidates for Sonnet
     escalation and push notification.
 
     trends: optional dict {x, google, youtube, tiktok} of live topic lists
     used to boost items that match live social signals.
+
+    live_clusters: existing cluster state so Haiku knows which stories are
+    already building — corroborating signals score higher.
 
     Falls back to surfacing all candidates unfiltered if the API is
     unavailable or returns unparseable JSON.
@@ -82,18 +88,43 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None) 
         return candidates
 
     items_block = "\n".join(
-        f"{i+1}. [Source: {c['source_name']}] {c['topic']}"
+        f"{i+1}. [Source: {c['source_name']}] {c['topic']}" +
+        (f"  [{c['traffic']}]" if c.get("traffic") else "")
         for i, c in enumerate(candidates)
     )
 
-    # Build live social signals block from cached trends
+    # Build building clusters block — shows Haiku which stories already have signals
+    clusters_block = ""
+    if live_clusters:
+        active = [
+            (c["topic"], len(c["item_ids"]))
+            for c in live_clusters.values()
+            if c.get("topic") and c.get("item_ids")
+        ]
+        if active:
+            cluster_lines = "\n".join(
+                f"  - {topic} ({count} independent signal{'s' if count != 1 else ''} so far)"
+                for topic, count in sorted(active, key=lambda x: -x[1])
+            )
+            clusters_block = (
+                f"\n\nBUILDING STORIES — these topics already have independent signals in the live feed right now:\n"
+                f"{cluster_lines}\n"
+                f"If any item below corroborates one of these stories, that convergence is strong evidence "
+                f"something real is happening — score it at least 1 point higher than you would in isolation."
+            )
+
+    # Build live social signals block — include rank/volume where available
     social_block = ""
     if trends:
         lines = []
         if trends.get("x"):
-            lines.append("X (Twitter) trending: " + ", ".join(trends["x"][:15]))
+            x_ranks = trends.get("x_ranks", {})
+            x_items = [f"#{x_ranks.get(t, i+1)} {t}" for i, t in enumerate(trends["x"][:15])]
+            lines.append("X (Twitter) trending (ranked): " + ", ".join(x_items))
         if trends.get("google"):
-            lines.append("Google Trends: " + ", ".join(trends["google"][:15]))
+            g_eng = trends.get("google_engagement", {})
+            g_items = [f"{t} ({g_eng[t]})" if g_eng.get(t) else t for t in trends["google"][:15]]
+            lines.append("Google Trends (with search volume): " + ", ".join(g_items))
         if trends.get("youtube"):
             lines.append("YouTube trending: " + ", ".join(trends["youtube"][:10]))
         if trends.get("tiktok"):
@@ -124,11 +155,20 @@ BARE TRENDING TOPIC NAMES (X, Google, TikTok trend topics that are just a name o
 - Score 5 for a name that could trend for many reasons. Score 6 when the name clearly belongs to a culturally significant person, team, or moment where trending almost certainly means something just happened.
 - Do NOT score these 1. They belong in the live feed as early signals and are critical for clustering related items into a coherent story.
 
+ENGAGEMENT SIGNALS: Numbers in brackets after an item show real engagement — upvotes, likes, reposts, comments, search volume, or trending rank (e.g. [10,000 upvotes · 800 comments], [12,000 likes], [#3 on X], [200K+ searches]). Weight these heavily as evidence of actual audience reach:
+- A Reddit post with 10K+ upvotes has real traction — score it at least 7.
+- A Reddit post with 30K+ upvotes is almost certainly culturally significant — score it at least 8.
+- A Bluesky post with 10K+ likes has broken through — treat it as strong evidence of cultural relevance.
+- An X topic ranked #1–5 is what everyone is talking about right now.
+- A Google Trends topic with 100K+ searches is a strong signal of real-time interest.
+- A Google Trends topic with 250K+ searches is dominating the day's conversation.
+- High engagement alone doesn't override the auto-1 rules (politics, generic lifestyle posts), but for any borderline story, strong engagement should break the tie upward.
+
 IMPORTANT:
-- For Bluesky posts: only score above 5 if the post itself contains significant news, a major announcement, or a genuine cultural flashpoint with broad relevance. Viral engagement alone is not enough.
-- For Reddit posts: score on whether a real event is happening that a broad culturally-aware audience would care about. Upvote count is context, not justification.
+- For Bluesky posts: score above 5 only if the post contains significant news, a major announcement, or a genuine cultural flashpoint — OR if engagement is very high (10K+ likes), which itself signals the post struck a nerve.
+- For Reddit posts: upvote count is strong signal — 10K+ means real traction, 30K+ means broadly significant. Score on the combination of topic substance AND engagement.
 - For YouTube trending videos: score on whether the video captures a genuine cultural moment — a performance, a reveal, a reaction with broad significance.
-- Anything genuinely significant has a fair shot regardless of topic area — a major sports result, a surprise album drop, a landmark business moment, a cultural event. Topic area is never a reason to score down.{social_block}
+- Anything genuinely significant has a fair shot regardless of topic area — a major sports result, a surprise album drop, a landmark business moment, a cultural event. Topic area is never a reason to score down.{social_block}{clusters_block}
 
 Respond with a JSON array only — one object per item, same order as input:
 [{{"score": <int>}}]
@@ -592,19 +632,21 @@ def send_breaking_push(new_items: list[dict]) -> None:
 def load_social_trends() -> dict:
     """
     Load the social trends cache written by daily_curator.py.
-    Returns {x, google, youtube, tiktok} lists, or empty lists if unavailable.
+    Returns topic lists plus engagement metadata (ranks, search volumes).
     """
-    empty = {"x": [], "google": [], "youtube": [], "tiktok": []}
+    empty = {"x": [], "google": [], "youtube": [], "tiktok": [], "x_ranks": {}, "google_engagement": {}}
     if not os.path.exists(SOCIAL_TRENDS_PATH):
         return empty
     try:
         with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
             data = json.load(f)
         return {
-            "x":       data.get("x", []),
-            "google":  data.get("google", []),
-            "youtube": data.get("youtube", []),
-            "tiktok":  data.get("tiktok", []),
+            "x":                 data.get("x", []),
+            "google":            data.get("google", []),
+            "youtube":           data.get("youtube", []),
+            "tiktok":            data.get("tiktok", []),
+            "x_ranks":           data.get("x_ranks", {}),
+            "google_engagement": data.get("google_engagement", {}),
         }
     except Exception as e:
         print(f"   ⚠️  Could not load social_trends.json: {e}")
@@ -625,11 +667,12 @@ def refresh_google_trends(trends: dict) -> dict:
         if os.path.exists(SOCIAL_TRENDS_PATH):
             with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
                 cached = json.load(f)
-            fetched_at = cached.get("fetched_at") or cached.get("timestamp")
-            if fetched_at:
+            # Use google_fetched_at (independent of Apify's global fetched_at timestamp)
+            google_fetched_at = cached.get("google_fetched_at")
+            if google_fetched_at:
                 age_minutes = (
                     datetime.now(tz=timezone.utc)
-                    - datetime.fromisoformat(fetched_at)
+                    - datetime.fromisoformat(google_fetched_at)
                 ).total_seconds() / 60
                 if age_minutes < GOOGLE_TRENDS_MAX_AGE:
                     return trends  # still fresh
@@ -646,27 +689,98 @@ def refresh_google_trends(trends: dict) -> dict:
         data = resp.json()
         days = data.get("default", {}).get("trendingSearchesDays", [])
         topics = []
+        engagement = {}  # topic → "200K+ searches" style label
         for day in days[:1]:  # only today's trends
             for search in day.get("trendingSearches", []):
                 query = search.get("title", {}).get("query", "")
                 if query:
                     topics.append(query)
+                    traffic = search.get("formattedTraffic", "")
+                    if traffic:
+                        engagement[query] = traffic
         if topics:
-            trends = {**trends, "google": topics}
-            # Write back so subsequent runs skip the fetch until data is stale again
+            trends = {**trends, "google": topics, "google_engagement": engagement}
             try:
                 existing = {}
                 if os.path.exists(SOCIAL_TRENDS_PATH):
                     with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
                         existing = json.load(f)
-                existing.update({"google": topics, "fetched_at": datetime.now(tz=timezone.utc).isoformat()})
+                existing["google"] = topics
+                existing["google_engagement"] = engagement
+                existing["google_fetched_at"] = datetime.now(tz=timezone.utc).isoformat()
                 with open(SOCIAL_TRENDS_PATH, "w", encoding="utf-8") as f:
                     json.dump(existing, f, indent=2, ensure_ascii=False)
             except Exception:
-                pass  # write failure is non-critical
+                pass
             print(f"   🔍 Google Trends refreshed: {len(topics)} topics")
     except Exception as e:
         print(f"   ⚠️  Google Trends refresh failed ({e}) — using cached data")
+
+    return trends
+
+
+# ── X (Twitter) trending live refresh (trends24.in, free, no auth) ──────────
+
+def fetch_x_trending_live(trends: dict) -> dict:
+    """
+    Refresh X (Twitter) trending topics from trends24.in every X_TRENDS_MAX_AGE minutes.
+    Free, no API key or auth required. Falls back to cached data on any failure.
+    Writes refreshed topics back to social_trends.json so subsequent runs skip the fetch.
+    """
+    try:
+        if os.path.exists(SOCIAL_TRENDS_PATH):
+            with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
+                cached = json.load(f)
+            x_fetched_at = cached.get("x_fetched_at")
+            if x_fetched_at:
+                age_minutes = (
+                    datetime.now(tz=timezone.utc)
+                    - datetime.fromisoformat(x_fetched_at)
+                ).total_seconds() / 60
+                if age_minutes < X_TRENDS_MAX_AGE:
+                    return trends  # still fresh
+    except Exception:
+        pass
+
+    try:
+        import re
+        resp = requests.get(
+            X_TRENDS_URL,
+            headers={**_HEADERS, "Accept-Language": "en-US,en;q=0.9"},
+            timeout=10,
+        )
+        resp.raise_for_status()
+        # trends24 renders links like: href="/united-states/#topic-name">Topic Name</a>
+        raw = re.findall(r'href="/united-states/#[^"]*">([^<]+)</a>', resp.text)
+        seen = set()
+        topics = []
+        for t in raw:
+            t = t.strip()
+            if t and t not in seen:
+                seen.add(t)
+                topics.append(t)
+        if topics:
+            top30 = topics[:30]
+            # Rank = 1-indexed position on the trending list
+            ranks = {t: i + 1 for i, t in enumerate(top30)}
+            trends = {**trends, "x": top30, "x_ranks": ranks}
+            try:
+                existing = {}
+                if os.path.exists(SOCIAL_TRENDS_PATH):
+                    with open(SOCIAL_TRENDS_PATH, encoding="utf-8") as f:
+                        existing = json.load(f)
+                existing["x"] = top30
+                existing["x_ranks"] = ranks
+                existing["x_fetched_at"] = datetime.now(tz=timezone.utc).isoformat()
+                with open(SOCIAL_TRENDS_PATH, "w", encoding="utf-8") as f:
+                    json.dump(existing, f, indent=2, ensure_ascii=False)
+            except Exception:
+                pass
+            print(f"   🐦 X Trending refreshed (trends24.in): {len(top30)} topics")
+        else:
+            print(f"   ⚠️  X Trending: no topics parsed from trends24.in — using cached data")
+    except Exception as e:
+        print(f"   ⚠️  Could not refresh X trending ({e}) — using cached data")
 
     return trends
 
@@ -710,11 +824,15 @@ def fetch_youtube_trending_rss(known_set: set[str], now_iso: str) -> list[dict]:
         if aid in known_set:
             continue
 
-        print(f"   ▶️  [YouTube Trending] {title[:70]}")
+        stats_el = entry.find("yt:statistics", ns)
+        views = int(stats_el.get("views", 0)) if stats_el is not None else 0
+        traffic = f"{views:,} views" if views else ""
+
+        print(f"   ▶️  [YouTube Trending] {title[:70]}" + (f" ({traffic})" if traffic else ""))
         candidates.append({
             "id":          aid,
             "topic":       title,
-            "traffic":     "",
+            "traffic":     traffic,
             "detected_at": now_iso,
             "search_url":  link,
             "source_name": "YouTube Trending",
@@ -765,12 +883,20 @@ def fetch_bluesky_trending(known_set: set[str], now_iso: str) -> list[dict]:
         if aid in known_set:
             continue
 
-        likes = post.get("likeCount", 0)
-        print(f"   🦋 [Bluesky] {text[:70]} ({likes:,} likes)")
+        likes   = post.get("likeCount", 0)
+        reposts = post.get("repostCount", 0)
+        replies = post.get("replyCount", 0)
+        eng_parts = []
+        if likes:   eng_parts.append(f"{likes:,} likes")
+        if reposts: eng_parts.append(f"{reposts:,} reposts")
+        if replies: eng_parts.append(f"{replies:,} replies")
+        traffic = " · ".join(eng_parts)
+
+        print(f"   🦋 [Bluesky] {text[:70]} ({traffic or 'no engagement'})")
         candidates.append({
             "id":          aid,
             "topic":       text[:200],
-            "traffic":     f"{likes:,} likes",
+            "traffic":     traffic,
             "detected_at": now_iso,
             "search_url":  link,
             "source_name": "Bluesky",
@@ -796,19 +922,32 @@ def build_social_candidates(trends: dict, known_set: set[str], now_iso: str) -> 
         ("tiktok",  "TikTok Trending",      lambda t: f"https://www.tiktok.com/search?q={quote_plus(t)}"),
     ]
 
+    x_ranks           = trends.get("x_ranks", {})
+    google_engagement = trends.get("google_engagement", {})
+
     for key, source_name, url_fn in platform_cfg:
-        for topic in trends.get(key, []):
+        for i, topic in enumerate(trends.get(key, [])):
             if not topic:
                 continue
             url = url_fn(topic)
             aid = item_id(url)
             if aid in known_set:
                 continue
-            print(f"   📲 [{source_name}] {topic[:70]}")
+
+            if key == "x":
+                rank    = x_ranks.get(topic, i + 1)
+                traffic = f"#{rank} on X"
+            elif key == "google":
+                vol     = google_engagement.get(topic, "")
+                traffic = f"{vol} searches" if vol else ""
+            else:
+                traffic = ""
+
+            print(f"   📲 [{source_name}] {topic[:70]}" + (f" ({traffic})" if traffic else ""))
             candidates.append({
                 "id":          aid,
                 "topic":       topic,
-                "traffic":     "",
+                "traffic":     traffic,
                 "detected_at": now_iso,
                 "search_url":  url,
                 "source_name": source_name,
@@ -949,11 +1088,12 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
         posts = data.get("data", {}).get("children", [])
         for child in posts:
             post = child.get("data", {})
-            post_id   = post.get("id", "")
-            title     = (post.get("title") or "").strip()
-            score     = post.get("score", 0)
-            permalink = post.get("permalink", "")
-            url_dest  = post.get("url") or f"https://www.reddit.com{permalink}"
+            post_id      = post.get("id", "")
+            title        = (post.get("title") or "").strip()
+            score        = post.get("score", 0)
+            num_comments = post.get("num_comments", 0)
+            permalink    = post.get("permalink", "")
+            url_dest     = post.get("url") or f"https://www.reddit.com{permalink}"
 
             if not post_id or not title:
                 continue
@@ -969,11 +1109,16 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
             if aid in known_set:
                 continue
 
-            print(f"   🔴 [r/{sub}] {title[:70]} ({score:,} upvotes)")
+            eng_parts = [f"{score:,} upvotes"]
+            if num_comments:
+                eng_parts.append(f"{num_comments:,} comments")
+            traffic = " · ".join(eng_parts)
+
+            print(f"   🔴 [r/{sub}] {title[:70]} ({traffic})")
             new_items.append({
                 "id":          aid,
                 "topic":       title,
-                "traffic":     f"{score:,} upvotes",
+                "traffic":     traffic,
                 "detected_at": now_iso,
                 "search_url":  url_dest,
                 "source_name": f"r/{sub}",
@@ -1022,6 +1167,7 @@ def save_state(known_ids: list[str], failed_ids: dict[str, str], live_clusters: 
     }
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
+        f.write("\n")
 
 
 def load_breaking_news() -> list[dict]:
@@ -1046,10 +1192,11 @@ def main():
     live_clusters = dict(state.get("live_clusters", {}))
     known_set    = set(known_ids) | set(failed_ids.keys())
 
-    # Load social trends cache (written by daily_curator.py 3×/day — zero extra Apify cost)
-    # then top up Google Trends from the free daily endpoint if the cached data is stale.
+    # Load social trends, then live-refresh X (every 10 min) and Google (every 10 min).
+    # TikTok/YouTube stay on the 3×/day Apify schedule.
     trends = load_social_trends()
     trends = refresh_google_trends(trends)
+    trends = fetch_x_trending_live(trends)
     if any(trends.values()):
         total = sum(len(v) for v in trends.values())
         print(f"\n   📲 Loaded social trends: {total} topics across X, Google, YouTube, TikTok")
@@ -1105,7 +1252,7 @@ def main():
 
     if candidates:
         print(f"\n   🔍 Running quality gate on {len(candidates)} candidate(s)...")
-        new_items = filter_and_enrich_items(candidates, trends)
+        new_items = filter_and_enrich_items(candidates, trends, live_clusters)
     else:
         new_items = []
 
