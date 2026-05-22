@@ -2287,22 +2287,21 @@ def main():
     print(f"\n🔎 Filtering already-picked URLs...")
     top_picks = filter_already_picked_today(top_picks)
 
-    # Prune non-primary cluster members whose primary was removed by cross-run dedup.
-    # Without this, orphaned members appear as separate picks in The Edit and can't
-    # be grouped on the website because their primary is absent.
+    # Prune all non-primary cluster members — only the highest-scoring pick per
+    # cluster should survive. Also prune orphaned secondaries (whose primary was
+    # removed by cross-run dedup) so they don't appear as standalone picks.
     surviving_primary_cids = {
         p["cluster_id"] for p in top_picks
         if p.get("cluster_primary") is not False and p.get("cluster_id")
     }
-    orphaned = [
+    duplicates = [
         p for p in top_picks
         if p.get("cluster_primary") is False
         and p.get("cluster_id")
-        and p["cluster_id"] not in surviving_primary_cids
     ]
-    if orphaned:
-        top_picks = [p for p in top_picks if p not in orphaned]
-        print(f"   Pruned {len(orphaned)} orphaned cluster member(s) whose primary was already picked.")
+    if duplicates:
+        top_picks = [p for p in top_picks if p not in duplicates]
+        print(f"   Pruned {len(duplicates)} duplicate cluster member(s) — keeping only cluster primaries.")
 
     # Build set of normalized pick URLs to exclude from The Feed.
     # Include both this run's new picks AND any picks from earlier runs today —

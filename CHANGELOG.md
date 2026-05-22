@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-22] Fix: cluster dedup now correctly removes all non-primary members
+
+Previously, the post-scoring cluster dedup only pruned "orphaned" secondaries (where the primary was removed by cross-run dedup) but left all secondaries intact when the primary survived — causing multiple versions of the same story to appear in picks. Fixed to remove all non-primary cluster members unconditionally, keeping only the highest-scoring pick per cluster as intended.
+
 ## [2026-05-22] Automatic Inoreader refresh token rotation
 
 On every run, if Inoreader returns a new refresh token (token rotation), `daily_curator.py` now automatically saves it back to the `INOREADER_REFRESH_TOKEN` GitHub Actions secret via the API. Requires `GITHUB_PAT` to be set as a GitHub Actions secret. This keeps the token perpetually fresh with no manual re-auth needed.
