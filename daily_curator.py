@@ -933,6 +933,7 @@ def fetch_twitter_trends() -> list[dict]:
     """
     Fetch top trending topics in the US from X (Twitter) via Apify.
     Returns a list of trend items ready for Claude scoring, or [] if unavailable.
+    Each item includes engagement.rank so Claude knows its position on X.
     """
     print(f"\n🐦 Fetching X (Twitter) trends via Apify...")
     try:
@@ -942,17 +943,22 @@ def fetch_twitter_trends() -> list[dict]:
         )
         now_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
         trends = []
-        for item in items[:20]:
+        for i, item in enumerate(items[:30], start=1):
             name = (item.get("name") or item.get("trend") or
                     item.get("title") or item.get("keyword") or "").strip()
             if not name:
                 continue
+            tweet_vol = item.get("tweet_volume") or item.get("tweet_count") or item.get("volume")
+            engagement: dict = {"rank": i}
+            if tweet_vol:
+                engagement["tweet_volume"] = tweet_vol
             trends.append({
-                "title":     name,
-                "link":      None,
-                "summary":   "",
-                "source":    "X (Twitter) Trending",
-                "published": now_str,
+                "title":      name,
+                "link":       None,
+                "summary":    "",
+                "source":     "X (Twitter) Trending",
+                "published":  now_str,
+                "engagement": engagement,
             })
         print(f"   ✅ Got {len(trends)} trending topics from X.")
         return trends
@@ -965,6 +971,7 @@ def fetch_google_trends() -> list[dict]:
     """
     Fetch top trending search terms in the US from Google Trends via Apify.
     Returns a list of trend items ready for Claude scoring, or [] if unavailable.
+    Captures search volume (formattedTraffic) when the actor returns it.
     """
     print(f"\n📈 Fetching Google Trends via Apify...")
     try:
@@ -974,18 +981,24 @@ def fetch_google_trends() -> list[dict]:
         )
         now_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
         trends = []
-        for item in items[:20]:
+        for item in items[:30]:
             name = (item.get("title") or item.get("keyword") or
                     item.get("query") or item.get("topic") or
                     item.get("name") or "").strip()
             if not name:
                 continue
+            vol = (item.get("formattedTraffic") or item.get("traffic") or
+                   item.get("search_volume") or item.get("value") or "").strip()
+            engagement: dict = {}
+            if vol:
+                engagement["search_volume"] = vol
             trends.append({
-                "title":     name,
-                "link":      None,
-                "summary":   "",
-                "source":    "Google Trends",
-                "published": now_str,
+                "title":      name,
+                "link":       None,
+                "summary":    "",
+                "source":     "Google Trends",
+                "published":  now_str,
+                "engagement": engagement,
             })
         print(f"   ✅ Got {len(trends)} trending topics from Google.")
         return trends
@@ -1055,6 +1068,95 @@ def fetch_tiktok_trends() -> list[dict]:
         print(f"   ⚠️  TikTok Trends unavailable (continuing without): {e}")
         return []
 
+
+def fetch_reddit_hot() -> list[dict]:
+    """
+    Fetch top posts from Reddit r/all via the public JSON API — no API key needed.
+    Returns scoreable items with upvote + comment engagement data.
+    """
+    print(f"\n🟠 Fetching Reddit r/all hot posts...")
+    try:
+        resp = requests.get(
+            "https://www.reddit.com/r/all/hot.json?limit=25",
+            headers={"User-Agent": "daily-curator/1.0"},
+            timeout=15,
+        )
+        resp.raise_for_status()
+        children = resp.json().get("data", {}).get("children", [])
+        now_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        posts = []
+        for child in children:
+            d = child.get("data", {})
+            title = (d.get("title") or "").strip()
+            if not title:
+                continue
+            subreddit = d.get("subreddit_name_prefixed") or d.get("subreddit") or "r/all"
+            link = f"https://www.reddit.com{d['permalink']}" if d.get("permalink") else None
+            summary = (d.get("selftext") or "")[:300].strip()
+            upvotes = d.get("score", 0)
+            comments = d.get("num_comments", 0)
+            image = d.get("thumbnail") if d.get("thumbnail", "").startswith("http") else None
+            posts.append({
+                "title":      title,
+                "link":       link,
+                "summary":    summary,
+                "source":     f"Reddit r/all ({subreddit})",
+                "published":  now_str,
+                "image":      image,
+                "engagement": {"upvotes": upvotes, "comments": comments},
+            })
+        print(f"   ✅ Got {len(posts)} hot posts from Reddit r/all.")
+        return posts
+    except Exception as e:
+        print(f"   ⚠️  Reddit r/all unavailable (continuing without): {e}")
+        return []
+
+
+def fetch_twitter_posts(trending_topics: list[str]) -> list[dict]:
+    """
+    Fetch top tweets for the top 3 trending X topics via Apify.
+    Capped at 5 tweets per topic (15 total) to stay within Apify free tier.
+    Returns scoreable items with full tweet text and engagement metrics.
+    """
+    topics = [t for t in trending_topics[:3] if t]
+    if not topics:
+        return []
+    print(f"\n🐦 Fetching X posts for top trends: {', '.join(topics)}...")
+    try:
+        items = _run_apify_actor(
+            "apify~twitter-scraper",
+            {
+                "searchTerms": topics,
+                "maxItems":    15,
+                "sort":        "Top",
+            },
+        )
+        now_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        posts = []
+        for item in items[:15]:
+            text = (item.get("full_text") or item.get("text") or
+                    item.get("tweet_text") or item.get("content") or "").strip()
+            if not text:
+                continue
+            link = (item.get("url") or item.get("tweet_url") or
+                    item.get("tweetUrl") or None)
+            likes     = item.get("favorite_count") or item.get("likeCount") or item.get("likes") or 0
+            retweets  = item.get("retweet_count")  or item.get("retweetCount") or item.get("retweets") or 0
+            replies   = item.get("reply_count")    or item.get("replyCount")   or item.get("replies") or 0
+            created   = item.get("created_at") or item.get("createdAt") or now_str
+            posts.append({
+                "title":      text[:150],
+                "link":       link,
+                "summary":    text,
+                "source":     "X (Twitter) Post",
+                "published":  created,
+                "engagement": {"likes": likes, "retweets": retweets, "replies": replies},
+            })
+        print(f"   ✅ Got {len(posts)} posts from X.")
+        return posts
+    except Exception as e:
+        print(f"   ⚠️  X posts unavailable (continuing without): {e}")
+        return []
 
 
 def apply_hard_article_cap(articles: list[dict]) -> list[dict]:
@@ -1216,8 +1318,27 @@ def _build_scoring_prompt(articles: list[dict], trending_context_block: str, rec
         if article.get("trending_across_sources"):
             source_count = article.get("trending_source_count", 3)
             trending_flag = f"\n  🔥 TRENDING: Covered by {source_count} sources"
+        eng = article.get("engagement") or {}
+        engagement_parts = []
+        if eng.get("rank"):
+            engagement_parts.append(f"#{eng['rank']} on X right now")
+        if eng.get("tweet_volume"):
+            engagement_parts.append(f"{eng['tweet_volume']:,} tweets" if isinstance(eng['tweet_volume'], int) else f"{eng['tweet_volume']} tweets")
+        if eng.get("upvotes"):
+            engagement_parts.append(f"{eng['upvotes']:,} upvotes")
+        if eng.get("comments"):
+            engagement_parts.append(f"{eng['comments']:,} comments")
+        if eng.get("likes"):
+            engagement_parts.append(f"{eng['likes']:,} likes")
+        if eng.get("retweets"):
+            engagement_parts.append(f"{eng['retweets']:,} retweets")
+        if eng.get("replies"):
+            engagement_parts.append(f"{eng['replies']:,} replies")
+        if eng.get("search_volume"):
+            engagement_parts.append(f"{eng['search_volume']} searches on Google")
+        engagement_line = f"\n  Engagement: {' · '.join(engagement_parts)}" if engagement_parts else ""
         articles_text += f"""
-ARTICLE {i}:{trending_flag}
+ARTICLE {i}:{trending_flag}{engagement_line}
   Title:     {article['title']}
   Source:    {article['source']}
   Published: {article['published']}
@@ -1269,14 +1390,18 @@ Recently covered (do not re-pick):
 
 TREND ITEMS: Some items have Source "X (Twitter) Trending", "Google Trends", "YouTube Trending", or "TikTok Trending" — these are raw trending topics or videos, not articles. Evaluate them on whether the topic itself is culturally significant and worth a reader's attention. Score them as you would any other item. YouTube and TikTok trends carry strong cultural signal — a video going viral on either platform often precedes broader mainstream coverage.
 
-REDDIT AS FIRST-MOVER SIGNAL: Items sourced from Reddit subreddits (r/*) represent real people actively discussing or sharing something right now. A Reddit post gaining traction — especially in culture, sneakers, music, or street culture communities — often surfaces a story hours before mainstream outlets pick it up. Treat Reddit upvote virality as strong evidence for the TRENDING criterion.
+X POSTS: Items with Source "X (Twitter) Post" are actual tweets from real people. Read the full tweet text in the Summary field. A tweet that is viral, funny, breaking, or culturally charged can absolutely be a standalone pick. Judge it on the content and context, not just the engagement numbers.
 
-ENGAGEMENT SIGNALS: When a story is trending, the scale of engagement matters. Use these as calibration:
-- A Reddit post with 10K+ upvotes has real traction — treat it as strong evidence for the TRENDING criterion and score it at least 7.
-- A Reddit post with 30K+ upvotes is almost certainly culturally significant — score it at least 8.
-- An X topic ranked #1–5 (shown in the trending list above) is what everyone is talking about right now.
-- A Google Trends topic with 100K+ searches is a strong real-time interest signal.
-- A Google Trends topic with 250K+ searches is dominating the day's conversation.
+REDDIT AS FIRST-MOVER SIGNAL: Items sourced from Reddit (r/*) represent real people actively discussing or sharing something right now. Reddit r/all hot posts surface what is capturing the internet's attention across all communities — a post with 20K+ upvotes is genuinely viral. Reddit often surfaces a story hours before mainstream outlets pick it up. Treat Reddit upvote virality as strong evidence for the TRENDING criterion.
+
+ENGAGEMENT SIGNALS: Every item with social data shows an Engagement line. Use these as calibration floors — not ceilings:
+- Reddit 10K+ upvotes → score minimum 7
+- Reddit 30K+ upvotes → score minimum 8
+- X topic #1–5 on X right now → highest real-time discussion signal
+- X post 10K+ likes → strong viral signal
+- X post 50K+ likes → massive cultural moment
+- Google 100K+ searches → strong real-time interest signal
+- Google 250K+ searches → dominating the day's conversation
 - Strong engagement alone doesn't override the POLITICS or CELEBRITY GOSSIP rules, but for any borderline story it should break the tie upward.
 
 CROSS-SOURCE TREND BONUS: If an article is marked with 🔥 TRENDING and covered by 2+ sources, this is strong evidence the story has real cultural weight — multiple independent outlets chose to cover it. Score it a minimum of 7. If it's covered by 3+ sources, score it a minimum of 8. Apply this floor regardless of topic area.
@@ -2212,10 +2337,12 @@ def main():
     articles = tag_story_clusters(articles)
     articles = detect_cross_source_trends(articles)
     twitter_trends  = fetch_twitter_trends()
+    twitter_posts   = fetch_twitter_posts([t["title"] for t in twitter_trends[:3]])
+    reddit_hot      = fetch_reddit_hot()
     google_trends   = fetch_google_trends()
     youtube_trends  = fetch_youtube_trends()
     tiktok_trends   = fetch_tiktok_trends()
-    all_items = articles + twitter_trends + google_trends + youtube_trends + tiktok_trends
+    all_items = articles + twitter_trends + twitter_posts + reddit_hot + google_trends + youtube_trends + tiktok_trends
 
     # Extract plain topic names from trend items for the velocity signal prompt
     trending_topics = [t["title"] for t in twitter_trends + google_trends + youtube_trends + tiktok_trends if t.get("title")]
@@ -2232,11 +2359,13 @@ def main():
         social_cache = {
             "fetched_at":        datetime.now(tz=timezone.utc).isoformat(),
             "x":                 [t["title"] for t in twitter_trends if t.get("title")],
+            "x_posts":           [t["title"] for t in twitter_posts  if t.get("title")],
+            "reddit_hot":        [t["title"] for t in reddit_hot     if t.get("title")],
             "google":            [t["title"] for t in google_trends  if t.get("title")],
             "youtube":           [t["title"] for t in youtube_trends if t.get("title")],
             "tiktok":            [t["title"] for t in tiktok_trends  if t.get("title")],
             # Preserve live-feed engagement metadata if present
-            "x_ranks":           existing_social.get("x_ranks", {}),
+            "x_ranks":           {t["title"]: f"#{t['engagement']['rank']}" for t in twitter_trends if t.get("engagement", {}).get("rank")},
             "google_engagement": existing_social.get("google_engagement", {}),
             "x_fetched_at":      existing_social.get("x_fetched_at", ""),
             "google_fetched_at": existing_social.get("google_fetched_at", ""),
@@ -2247,7 +2376,7 @@ def main():
         }
         with open("social_trends.json", "w", encoding="utf-8") as _sf:
             json.dump(social_cache, _sf, indent=2, ensure_ascii=False)
-        print(f"   📲 Wrote social_trends.json ({sum(len(v) for v in social_cache.values() if isinstance(v, list))} topics across 4 platforms)")
+        print(f"   📲 Wrote social_trends.json ({sum(len(v) for v in social_cache.values() if isinstance(v, list))} topics across 6 platforms)")
     except Exception as _e:
         print(f"   ⚠️  Could not write social_trends.json: {_e}")
 
