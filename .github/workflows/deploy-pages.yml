@@ -119,6 +119,7 @@ jobs:
                       block, re.DOTALL
                   )
                   why = wm.group(1).strip() if wm else ''
+                  cluster_updated = '**Update ' in why
 
                   am = re.search(
                       r'\*\*Suggested carousel angle / hook:\*\*\n(.*?)(?=\n\n---|\n---|\Z)',
@@ -141,6 +142,7 @@ jobs:
                           'cluster_primary': cluster_primary,
                           'cluster_sources': cluster_sources,
                           'from_live': from_live,
+                          'cluster_updated': cluster_updated,
                       })
 
               return {
