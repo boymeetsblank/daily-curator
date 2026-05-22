@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-22] Live feed: Reddit r/all added to clustering pipeline
+
+`breaking_news_check.py` now fetches Reddit r/all hot posts every 5 minutes via `fetch_reddit_all_hot()`. Posts need 1,000+ upvotes and must be under 6 hours old to enter the pipeline — a higher bar than subscribed subreddits to ensure only genuinely viral content triggers clusters. Also: `load_social_trends()` now reads `reddit_hot` from the daily_curator cache so Haiku sees r/all titles as social context when scoring; `filter_and_enrich_items()` surfaces those titles in the live social signals block.
+
 ## [2026-05-22] Social-first signal upgrade: X posts, Reddit r/all, engagement data, 6x/day
 
 Six changes landed together: (1) Curator now runs 6x/day (every ~3 hours, 7:30am–10:30pm CT) instead of 3x. (2) New `fetch_reddit_hot()` pulls top 25 posts from Reddit r/all via free public API — upvotes and comment counts flow into scoring. (3) New `fetch_twitter_posts()` fetches top tweets for the 3 highest-trending X topics via Apify (capped at 15 tweets/run to stay within free tier) — actual tweet text and likes/retweets/replies now scoreable as standalone picks. (4) X trending topics bumped from 20 → 30, Google Trends from 20 → 30. (5) Every article in the scoring prompt now shows an `Engagement:` line when data is available (rank on X, upvotes, likes, search volume), so Claude scores with full context rather than guessing. (6) `social_trends.json` now tracks `x_posts` and `reddit_hot` lists alongside existing platform signals, and `x_ranks` is now populated directly from the main curator run.

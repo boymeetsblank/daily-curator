@@ -37,6 +37,7 @@ MAX_FEED_SIZE           = 40   # max total items in the live feed at once
 FAILED_IDS_TTL_HOURS    = 4    # failed items re-enter the pipeline after this long
 CLUSTER_THRESHOLD       = 3    # items in a cluster before escalating to main feed
 CLUSTER_TTL_HOURS       = 24   # prune clusters from state after this long
+REDDIT_ALL_MIN_SCORE    = 1000 # minimum upvotes for r/all posts (higher bar than subscribed subs)
 
 SOURCES_FILE        = "sources.json"
 STATE_FILE          = "breaking_news_state.json"
@@ -129,6 +130,8 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None, 
             lines.append("YouTube trending: " + ", ".join(trends["youtube"][:10]))
         if trends.get("tiktok"):
             lines.append("TikTok trending: " + ", ".join(trends["tiktok"][:10]))
+        if trends.get("reddit_hot"):
+            lines.append("Reddit r/all hot (recent curator run): " + ", ".join(trends["reddit_hot"][:10]))
         if lines:
             social_block = "\n\nLIVE SOCIAL SIGNALS — these topics are trending right now. If an item directly relates to one of these, it's evidence something is actively happening:\n" + "\n".join(lines)
 
@@ -646,6 +649,7 @@ def load_social_trends() -> dict:
             "google":            data.get("google", []),
             "youtube":           data.get("youtube", []),
             "tiktok":            data.get("tiktok", []),
+            "reddit_hot":        data.get("reddit_hot", []),
             "x_ranks":           data.get("x_ranks", {}),
             "google_engagement": data.get("google_engagement", {}),
         }
@@ -1065,6 +1069,69 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
     return new_items
 
 
+def fetch_reddit_all_hot(known_set: set[str], now_iso: str) -> list[dict]:
+    """
+    Fetch hot posts from Reddit r/all — the internet's broadest real-time signal.
+    Uses a higher upvote threshold (REDDIT_ALL_MIN_SCORE) than subscribed subreddits
+    to ensure only genuinely viral posts enter the clustering pipeline.
+    """
+    print(f"\n   🟠 Fetching Reddit r/all hot posts...")
+    new_items = []
+    try:
+        resp = requests.get(
+            f"https://www.reddit.com/r/all/hot.json?limit=25",
+            headers=_REDDIT_HEADERS,
+            timeout=10,
+        )
+        resp.raise_for_status()
+        posts = resp.json().get("data", {}).get("children", [])
+    except Exception as e:
+        print(f"      ⚠️  Could not fetch r/all: {e}")
+        return []
+
+    for child in posts:
+        post        = child.get("data", {})
+        post_id     = post.get("id", "")
+        title       = (post.get("title") or "").strip()
+        score       = post.get("score", 0)
+        num_comments = post.get("num_comments", 0)
+        permalink   = post.get("permalink", "")
+        subreddit   = post.get("subreddit_name_prefixed") or post.get("subreddit") or "r/all"
+
+        if not post_id or not title:
+            continue
+        if score < REDDIT_ALL_MIN_SCORE:
+            continue
+
+        created_utc = post.get("created_utc", 0)
+        post_age_hours = (datetime.now(tz=timezone.utc).timestamp() - created_utc) / 3600
+        if post_age_hours > 6:
+            continue
+
+        aid = item_id(f"reddit_all:{post_id}")
+        if aid in known_set:
+            continue
+
+        eng_parts = [f"{score:,} upvotes"]
+        if num_comments:
+            eng_parts.append(f"{num_comments:,} comments")
+        traffic = " · ".join(eng_parts)
+
+        print(f"   🟠 [r/all/{subreddit}] {title[:70]} ({traffic})")
+        new_items.append({
+            "id":          aid,
+            "topic":       title,
+            "traffic":     traffic,
+            "detected_at": now_iso,
+            "search_url":  f"https://www.reddit.com{permalink}",
+            "source_name": f"Reddit r/all ({subreddit})",
+            "source_type": "reddit",
+        })
+
+    print(f"   🟠 Got {len(new_items)} new r/all post(s).")
+    return new_items
+
+
 # ── State ─────────────────────────────────────────────────────────────────────
 
 def load_state() -> dict:
@@ -1160,6 +1227,9 @@ def main():
 
     reddit_candidates = fetch_reddit_hot_posts(known_set, now_iso)
     candidates.extend(reddit_candidates)
+
+    reddit_all_candidates = fetch_reddit_all_hot(known_set, now_iso)
+    candidates.extend(reddit_all_candidates)
 
     youtube_candidates = fetch_youtube_trending_rss(known_set, now_iso)
     candidates.extend(youtube_candidates)
