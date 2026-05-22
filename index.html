@@ -1154,17 +1154,17 @@
     .art-row[data-score="10"] { border-left: 2px solid #f59e0b; padding-left: 10px; box-shadow: -3px 0 18px rgba(245,158,11,0.3); }
 
     /* ─────────────────────────────────────────
-       COVERAGE / CLUSTER BADGE  (inline after title)
+       UPDATED BADGE  (inline after title — live cluster re-escalated)
     ───────────────────────────────────────── */
-    .art-coverage-badge {
+    .updated-badge {
       display: inline-flex;
       align-items: center;
       font-size: 9px;
       font-weight: 700;
       letter-spacing: 0.07em;
       text-transform: uppercase;
-      color: var(--accent);
-      border: 1px solid var(--accent);
+      color: #f59e0b;
+      border: 1px solid rgba(245,158,11,0.5);
       border-radius: 2px;
       padding: 1px 5px;
       margin-left: 7px;
@@ -2228,17 +2228,8 @@
     const trendBadge = !pick.link
       ? `<span class="art-trend-tag">${esc(trendPlatform(pick)||'Trending')}</span>` : '';
 
-    // Coverage badge: prefer cluster_size count; fall back to the Claude detection flag
-    const coverageCount = pick.cluster_size >= 3
-      ? pick.cluster_size
-      : (pick.trending_across_sources ? (pick.trending_source_count || 3) : 0);
-    const coverageBadge = coverageCount >= 3
-      ? `<span class="art-coverage-badge">${coverageCount} src</span>`
-      : (pick.trending_across_sources && !pick.cluster_size
-          ? `<span class="art-trend-tag" style="color:var(--accent);border-color:var(--accent)">3+ SRC</span>`
-          : '');
-    // multiSrc is now absorbed into coverageBadge — keep empty for backwards compat
-    const multiSrc = '';
+    const updatedBadge = pick.cluster_updated
+      ? `<span class="updated-badge">Updated</span>` : '';
 
     // Build expand panel
     let whyHtml = '';
@@ -2309,7 +2300,7 @@
     return `<div class="art-row${extraClass||''}" data-score="${score}" data-url="${esc(pick.link||'')}" data-date="${esc(ctDate||'')}" data-source="${esc(pick.source||'')}" onclick="handleRowClick(event,this)">
       <span class="art-score ${scoreCls}">${score}/10</span>
       <div class="art-title-cell">
-        <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${titleClick}>${esc(pick.title)}</a>${trendBadge}${coverageBadge}
+        <a class="art-title-link" href="${href}" target="_blank" rel="noopener noreferrer" ${titleClick}>${esc(pick.title)}</a>${trendBadge}${updatedBadge}
       </div>
       ${thumbHtml}
       <span class="row-chevron">↓</span>
@@ -2338,6 +2329,8 @@
       ? `<span class="art-trend-tag">${esc(trendPlatform(pick)||'Trending')}</span>` : '';
     const liveBadge = pick.from_live
       ? `<span class="live-badge">LIVE</span>` : '';
+    const updatedBadge = pick.cluster_updated
+      ? `<span class="updated-badge">Updated</span>` : '';
 
     const readBtn = pick.link
       ? `<a class="card-read-btn" href="${href}" target="_blank" rel="noopener noreferrer" onclick="markRead(this.closest('.pick-card'))">Read →</a>`
@@ -2349,7 +2342,7 @@
         <div class="card-meta">
           <span class="art-score ${scoreCls}">${score}/10</span>
           <span class="card-source">${esc(pick.source)}</span>
-          ${trendBadge}${liveBadge}
+          ${trendBadge}${liveBadge}${updatedBadge}
           <span class="card-ts"${tsAttr}>${tsDisplay}</span>
         </div>
         <a class="card-headline" href="${href}" target="_blank" rel="noopener noreferrer" onclick="markRead(this.closest('.pick-card'))">${esc(pick.title)}</a>
