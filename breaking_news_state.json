@@ -1,27 +1,5 @@
 {
   "known_ids": [
-    "8dea50ff48e6",
-    "6f91c2775fda",
-    "c96f958ea47f",
-    "ba89f6108e68",
-    "873aeb42ae59",
-    "39b28a8d5738",
-    "cdb93079aac8",
-    "4e8034b04f3c",
-    "5bf0be871d62",
-    "02719ef0ef67",
-    "82a5f27d440c",
-    "5baae0dbb7f9",
-    "f8bdd6586675",
-    "a8559f5ee431",
-    "1552c2040da1",
-    "b5a7a4510e5a",
-    "9e44dcd77612",
-    "56f0b617a56f",
-    "f2b8513e0693",
-    "ad3bc4b8dafc",
-    "edc0d26e9391",
-    "b2d4f6670a0c",
     "842fee664179",
     "ff3cf4dc4cfb",
     "7e91cb18ad95",
@@ -499,7 +477,29 @@
     "f76fe142d72d",
     "9810eafa5fb8",
     "f3259629104c",
-    "7773f6f8fe6f"
+    "7773f6f8fe6f",
+    "ae0a7e5e201d",
+    "04f3239fe442",
+    "9f277f6c5896",
+    "99d05ce9f4c3",
+    "3fac909a4ab5",
+    "bf7fc75cfa1d",
+    "8d8f6ac08c62",
+    "adca3a80e27b",
+    "3d93302766c4",
+    "fe8da49e23dc",
+    "198f42dd59d7",
+    "f690d012bd23",
+    "92f7a51463e6",
+    "c54bcccc8438",
+    "9f29be4912fd",
+    "ce23ecc8fb64",
+    "844bcea36604",
+    "b3e62ac7d1eb",
+    "ef77bd9f91c2",
+    "05e373e42e7e",
+    "8dc975c07683",
+    "4f850139fb13"
   ],
   "failed_ids": {
     "615fcb9ad5d9": "2026-05-22T05:48:13.381534+00:00",
@@ -523,69 +523,6 @@
     "010b766dba8b": "2026-05-22T05:48:13.381534+00:00"
   },
   "live_clusters": {
-    "16640dd4bca7a0f4": {
-      "topic": "JW Anderson Chelsea Flower Show Pimlico Boutique Installation",
-      "item_ids": [
-        "796a6c2f8157"
-      ],
-      "created_at": "2026-05-21T08:24:12.894812+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "28beaed3bf1b89ab": {
-      "topic": "Nike Dunk Low CBGB Music Venue Collaboration",
-      "item_ids": [
-        "1d5f75213408"
-      ],
-      "created_at": "2026-05-21T08:24:12.894812+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2d02b5f7a7ba9ce8": {
-      "topic": "Palace Skateboards Shanghai Mainland China Store Opening",
-      "item_ids": [
-        "67c1884eb80b"
-      ],
-      "created_at": "2026-05-21T08:24:12.894812+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6b4910700ced6c52": {
-      "topic": "Audible 'Foul Play' Podcast Gordon Banks CIA Poisoning 1970 World Cup",
-      "item_ids": [
-        "b3934f17b3b5"
-      ],
-      "created_at": "2026-05-21T08:24:12.894812+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b37b5f0a47d6a458": {
-      "topic": "Anthropic First Profitable Quarter Report",
-      "item_ids": [
-        "25bf0f904753"
-      ],
-      "created_at": "2026-05-21T08:24:12.894812+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6555440b2902410c": {
-      "topic": "Ubisoft Stock Plunge Annual Profit Loss Warning",
-      "item_ids": [
-        "765ffcecbfbb"
-      ],
-      "created_at": "2026-05-21T08:24:12.894812+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4300553e447dc9cc": {
-      "topic": "SoftBank Shares Surge Nvidia AI Momentum Signal",
-      "item_ids": [
-        "346964939397"
-      ],
-      "created_at": "2026-05-21T08:24:12.894812+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "b04d3323fd6c90e5": {
       "topic": "'28 Years Later Part 3' Zombie Film Development",
       "item_ids": [
@@ -1714,7 +1651,8 @@
     "47ff070579f837ee": {
       "topic": "Stephen Colbert 'The Late Show' Final Episode Taping",
       "item_ids": [
-        "cd7dc8f490b6"
+        "cd7dc8f490b6",
+        "ae0a7e5e201d"
       ],
       "created_at": "2026-05-21T22:38:33.432181+00:00",
       "last_escalated_size": 0,
@@ -1920,7 +1858,61 @@
       "created_at": "2026-05-22T05:48:45.474994+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "93cbcb4971c51970": {
+      "topic": "White Lotus Thailand Tourism Impact $36.5 Million Spending 300% Surge",
+      "item_ids": [
+        "04f3239fe442"
+      ],
+      "created_at": "2026-05-22T08:43:27.579711+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "157a9a1aead4fdb2": {
+      "topic": "Paul Di'Anno Documentary Wes Orshoski Iron Maiden",
+      "item_ids": [
+        "9f277f6c5896"
+      ],
+      "created_at": "2026-05-22T08:43:27.579711+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "42846574f8497c67": {
+      "topic": "Lola Young Reflective Single 'From Down Here' Release",
+      "item_ids": [
+        "99d05ce9f4c3"
+      ],
+      "created_at": "2026-05-22T08:43:27.579711+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d6c5ed22dba52301": {
+      "topic": "Naomie Harris Christina Hendricks BBC Drama 'Reputation' Celebrity Legal Battle",
+      "item_ids": [
+        "3fac909a4ab5"
+      ],
+      "created_at": "2026-05-22T08:43:27.579711+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fb493fdaf501c6a5": {
+      "topic": "YouTube EMEA Boss Edinburgh TV Festival MacTaggart Speech",
+      "item_ids": [
+        "bf7fc75cfa1d"
+      ],
+      "created_at": "2026-05-22T08:43:27.579711+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "532586162ae466a5": {
+      "topic": "Reed Van Dyk Boyd Holbrook Gheed 'Atonement' War Film Cannes Studio",
+      "item_ids": [
+        "8d8f6ac08c62"
+      ],
+      "created_at": "2026-05-22T08:43:27.579711+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-22T05:48:51.476534+00:00"
+  "last_checked": "2026-05-22T08:43:27.580960+00:00"
 }
