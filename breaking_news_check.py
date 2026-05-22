@@ -158,17 +158,15 @@ BARE TRENDING TOPIC NAMES (X, Google, TikTok trend topics that are just a name o
 - Score 5 for a name that could trend for many reasons. Score 6 when the name clearly belongs to a culturally significant person, team, or moment where trending almost certainly means something just happened.
 - Do NOT score these 1. They belong in the live feed as early signals and are critical for clustering related items into a coherent story.
 
-ENGAGEMENT SIGNALS: Numbers in brackets after an item show real engagement — upvotes, likes, reposts, comments, search volume, or trending rank (e.g. [10,000 upvotes · 800 comments], [12,000 likes], [#3 on X], [200K+ searches]). Weight these heavily as evidence of actual audience reach:
+ENGAGEMENT SIGNALS: Numbers in brackets after an item show real engagement — upvotes, comments, search volume, or trending rank (e.g. [10,000 upvotes · 800 comments], [#3 on X], [200K+ searches]). Weight these heavily as evidence of actual audience reach:
 - A Reddit post with 10K+ upvotes has real traction — score it at least 7.
 - A Reddit post with 30K+ upvotes is almost certainly culturally significant — score it at least 8.
-- A Bluesky post with 10K+ likes has broken through — treat it as strong evidence of cultural relevance.
 - An X topic ranked #1–5 is what everyone is talking about right now.
 - A Google Trends topic with 100K+ searches is a strong signal of real-time interest.
 - A Google Trends topic with 250K+ searches is dominating the day's conversation.
 - High engagement alone doesn't override the auto-1 rules (politics, generic lifestyle posts), but for any borderline story, strong engagement should break the tie upward.
 
 IMPORTANT:
-- For Bluesky posts: score above 5 only if the post contains significant news, a major announcement, or a genuine cultural flashpoint — OR if engagement is very high (10K+ likes), which itself signals the post struck a nerve.
 - For Reddit posts: upvote count is strong signal — 10K+ means real traction, 30K+ means broadly significant. Score on the combination of topic substance AND engagement.
 - For YouTube trending videos: score on whether the video captures a genuine cultural moment — a performance, a reveal, a reaction with broad significance.
 - Anything genuinely significant has a fair shot regardless of topic area — a major sports result, a surprise album drop, a landmark business moment, a cultural event. Topic area is never a reason to score down.{social_block}{clusters_block}
@@ -845,70 +843,6 @@ def fetch_youtube_trending_rss(known_set: set[str], now_iso: str) -> list[dict]:
     return candidates
 
 
-# ── Source: Bluesky What's Hot feed (free public API, no auth) ───────────────
-
-BLUESKY_HOT_URL  = "https://public.api.bsky.app/xrpc/app.bsky.feed.getFeed"
-BLUESKY_HOT_FEED = "at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.generator/whats-hot"
-
-def fetch_bluesky_trending(known_set: set[str], now_iso: str) -> list[dict]:
-    """
-    Fetch trending posts from Bluesky's What's Hot curated feed.
-    No authentication required — uses the public AT Protocol API.
-    """
-    try:
-        resp = requests.get(
-            BLUESKY_HOT_URL,
-            params={"feed": BLUESKY_HOT_FEED, "limit": 30},
-            headers=_HEADERS,
-            timeout=15,
-        )
-        resp.raise_for_status()
-        feed = resp.json().get("feed", [])
-    except Exception as e:
-        print(f"      ⚠️  Could not fetch Bluesky trending: {e}")
-        return []
-
-    candidates = []
-    for entry in feed:
-        post   = entry.get("post", {})
-        record = post.get("record", {})
-        text   = (record.get("text") or "").strip()
-        if not text or len(text) < 20:
-            continue
-
-        uri   = post.get("uri", "")  # at://did:.../app.bsky.feed.post/rkey
-        parts = uri.split("/")
-        did   = parts[2] if len(parts) > 2 else ""
-        rkey  = parts[-1] if parts else ""
-        link  = f"https://bsky.app/profile/{did}/post/{rkey}" if did and rkey else "https://bsky.app"
-
-        aid = item_id(f"bsky:{uri}")
-        if aid in known_set:
-            continue
-
-        likes   = post.get("likeCount", 0)
-        reposts = post.get("repostCount", 0)
-        replies = post.get("replyCount", 0)
-        eng_parts = []
-        if likes:   eng_parts.append(f"{likes:,} likes")
-        if reposts: eng_parts.append(f"{reposts:,} reposts")
-        if replies: eng_parts.append(f"{replies:,} replies")
-        traffic = " · ".join(eng_parts)
-
-        print(f"   🦋 [Bluesky] {text[:70]} ({traffic or 'no engagement'})")
-        candidates.append({
-            "id":          aid,
-            "topic":       text[:200],
-            "traffic":     traffic,
-            "detected_at": now_iso,
-            "search_url":  link,
-            "source_name": "Bluesky",
-            "source_type": "bluesky",
-        })
-
-    return candidates
-
-
 # ── Source: social trend topics as candidates (X, Google, TikTok) ────────────
 
 def build_social_candidates(trends: dict, known_set: set[str], now_iso: str) -> list[dict]:
@@ -1229,9 +1163,6 @@ def main():
 
     youtube_candidates = fetch_youtube_trending_rss(known_set, now_iso)
     candidates.extend(youtube_candidates)
-
-    bluesky_candidates = fetch_bluesky_trending(known_set, now_iso)
-    candidates.extend(bluesky_candidates)
 
     social_candidates = build_social_candidates(trends, known_set, now_iso)
     candidates.extend(social_candidates)
