@@ -1,17 +1,5 @@
 {
   "known_ids": [
-    "42a4a62f5a1d",
-    "0d61dbcdd23f",
-    "c5856680b1bd",
-    "ff21181ecb89",
-    "e70fc0e9d65a",
-    "70ab9841e7d0",
-    "69485a6eda90",
-    "3d9a902b7011",
-    "83a42b5cce71",
-    "e9d30c470c70",
-    "c48cdb108138",
-    "453df81e0e95",
     "5deae4c5dcf8",
     "b4aa7928133f",
     "490f4439292f",
@@ -499,7 +487,19 @@
     "827be42d4293",
     "6205a481c2ff",
     "3abfa138d0d2",
-    "4e9ded358acb"
+    "4e9ded358acb",
+    "49e13cfa293c",
+    "a705b5ffcf61",
+    "ac45874c2656",
+    "5980cd955260",
+    "d290d820604f",
+    "c576f20ec4e4",
+    "afaff13bbfbc",
+    "a54f3c0afe74",
+    "b0546d206757",
+    "3d49771b5147",
+    "fd275f985643",
+    "1c7f984fcfa7"
   ],
   "failed_ids": {
     "dc5fef98b220": "2026-05-22T20:15:05.046725+00:00",
@@ -537,103 +537,21 @@
     "8937af86919c": "2026-05-22T22:39:25.443314+00:00",
     "b486ebdcbdaa": "2026-05-22T22:39:25.443314+00:00",
     "f1a76b832639": "2026-05-22T22:39:25.443314+00:00",
-    "2804931fea70": "2026-05-22T22:39:25.443314+00:00"
+    "2804931fea70": "2026-05-22T22:39:25.443314+00:00",
+    "281c6e436956": "2026-05-22T23:46:23.122796+00:00",
+    "6e4606abd7b0": "2026-05-22T23:46:23.122796+00:00",
+    "26873ce8f15a": "2026-05-22T23:46:23.122796+00:00",
+    "4484832f5569": "2026-05-22T23:46:23.122796+00:00",
+    "442983b3504e": "2026-05-22T23:46:23.122796+00:00",
+    "f7056372e966": "2026-05-22T23:46:23.122796+00:00",
+    "8b195a4c23b8": "2026-05-22T23:46:23.122796+00:00",
+    "1dd65f371807": "2026-05-22T23:46:23.122796+00:00",
+    "9441625a5bb4": "2026-05-22T23:46:23.122796+00:00",
+    "40d7f667df88": "2026-05-22T23:46:23.122796+00:00",
+    "873aeb42ae59": "2026-05-22T23:46:23.122796+00:00",
+    "7cb0cb419756": "2026-05-22T23:46:23.122796+00:00"
   },
   "live_clusters": {
-    "90d33219c976c3b2": {
-      "topic": "Charli XCX 'SS26' Spring/Summer Fashion Video",
-      "item_ids": [
-        "87b968d37079",
-        "1f1f129d6d36"
-      ],
-      "created_at": "2026-05-21T23:39:45.101866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e24f785a563767b9": {
-      "topic": "AI Ozzy Osbourne Avatar Fan Interaction Summer 2026",
-      "item_ids": [
-        "3b3cc419347e",
-        "68a04d8b5fc3"
-      ],
-      "created_at": "2026-05-21T23:39:45.101866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ab00f2d96f830cad": {
-      "topic": "Zhamira Zambrano Irving Plaza Concert Performance",
-      "item_ids": [
-        "3c1931b59afd"
-      ],
-      "created_at": "2026-05-21T23:39:45.101866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "beaf9331d4cd19db": {
-      "topic": "Anker Soundcore Liberty 5 Pro Earbuds Thus AI Chip Release",
-      "item_ids": [
-        "a6eb364da9d7"
-      ],
-      "created_at": "2026-05-21T23:39:45.101866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b256cfa41311dfa5": {
-      "topic": "AcuRite IoT App Discontinuation",
-      "item_ids": [
-        "f3d9d99eea72"
-      ],
-      "created_at": "2026-05-21T23:39:45.101866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c80902a93774765b": {
-      "topic": "IMAX Potential Acquisition Preliminary Talks",
-      "item_ids": [
-        "ed1d5d550ce7",
-        "56d76575f009"
-      ],
-      "created_at": "2026-05-21T23:39:45.101866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "728b3477ab948cb1": {
-      "topic": "Jefferson Health Paralysis Technology Breakthrough",
-      "item_ids": [
-        "519200b4fc3b"
-      ],
-      "created_at": "2026-05-21T23:39:45.101866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bf032fabcff534da": {
-      "topic": "MLB Loose Bodies Technology Solutions",
-      "item_ids": [
-        "48f4ab9a5e44"
-      ],
-      "created_at": "2026-05-21T23:39:45.101866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "660d04a81d6a50d6": {
-      "topic": "Vermont ALS Patient AI Voice Restoration",
-      "item_ids": [
-        "ef3596a6497b",
-        "d86cad5121bf"
-      ],
-      "created_at": "2026-05-21T23:39:45.101866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "173c5c7485f8206c": {
-      "topic": "Bear Koala Detection Dog Retirement Australia",
-      "item_ids": [
-        "759454b432f5"
-      ],
-      "created_at": "2026-05-21T23:39:45.101866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "1c012aeb5dd88f8b": {
       "topic": "Emmy Awards 2026 Dark Horse Predictions 'Pluribus'",
       "item_ids": [
@@ -898,7 +816,8 @@
     "acfffebb3439adff": {
       "topic": "Moses Sumney 'Is God Is' Film Scoring Debut",
       "item_ids": [
-        "7baa9b4c7175"
+        "7baa9b4c7175",
+        "b0546d206757"
       ],
       "created_at": "2026-05-22T13:58:21.973684+00:00",
       "last_escalated_size": 0,
@@ -1759,16 +1678,26 @@
     "7aa89da1b243dc49": {
       "topic": "Rob Base 'It Takes Two' Rapper Death Obituary",
       "item_ids": [
-        "0592874d42cf"
+        "0592874d42cf",
+        "d290d820604f",
+        "afaff13bbfbc"
       ],
       "created_at": "2026-05-22T22:39:54.819535+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-22T23:46:23.122796+00:00",
+      "picks_file": "picks/picks-2026-05-22-2346.md",
+      "why_text": "Rob Base has died at 59, leaving behind one of hip-hop's most indelible party anthems \u2014 'It Takes Two' is the kind of record that transcends genre, era, and audience, still sampled, still played, still instantly recognizable decades later. His death is a reminder of how much of hip-hop's foundational joy was built by artists who never got their full flowers. This one hits different because that song is genuinely everywhere \u2014 sports arenas, weddings, movie trailers \u2014 and now we have to reckon with the man behind it.",
+      "last_escalated_item_ids": [
+        "0592874d42cf",
+        "d290d820604f",
+        "afaff13bbfbc"
+      ]
     },
     "cd9cb3ee4a0ee4f1": {
       "topic": "Julia Roberts Home Economics Film Adaptation 3000 Pictures",
       "item_ids": [
-        "2f56c51564e9"
+        "2f56c51564e9",
+        "3d49771b5147"
       ],
       "created_at": "2026-05-22T22:39:54.819535+00:00",
       "last_escalated_size": 0,
@@ -1804,12 +1733,76 @@
     "5d0c0dea83c94f5d": {
       "topic": "SpaceX Starship Test Flight Second Attempt Launch",
       "item_ids": [
-        "827be42d4293"
+        "827be42d4293",
+        "1c7f984fcfa7"
       ],
       "created_at": "2026-05-22T22:39:54.819535+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "659e6f01bb220eb9": {
+      "topic": "Dutton Ranch Episode 3 Cattle Vaccination Plot Controversy",
+      "item_ids": [
+        "49e13cfa293c"
+      ],
+      "created_at": "2026-05-22T23:46:50.542811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1da88b293980878d": {
+      "topic": "Epic Ride Universal Theme Parks Docuseries Opening Day Documentary",
+      "item_ids": [
+        "a705b5ffcf61"
+      ],
+      "created_at": "2026-05-22T23:46:50.542811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d02931074a26c1bf": {
+      "topic": "Survivor Jeff Probst Kalshi Polymarket Spoiler Betting Concerns",
+      "item_ids": [
+        "ac45874c2656"
+      ],
+      "created_at": "2026-05-22T23:46:50.542811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d4c10b39da65e9f3": {
+      "topic": "2026 French Open Live Streaming Viewing Guide",
+      "item_ids": [
+        "5980cd955260"
+      ],
+      "created_at": "2026-05-22T23:46:50.542811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1cff754a9d3d4e90": {
+      "topic": "Men's Wearhouse Memorial Day Sale Shopping Guide",
+      "item_ids": [
+        "c576f20ec4e4"
+      ],
+      "created_at": "2026-05-22T23:46:50.542811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "35b82f6dfd6f9240": {
+      "topic": "Stranger Things Eleven Pink Dress Donated Smithsonian",
+      "item_ids": [
+        "a54f3c0afe74"
+      ],
+      "created_at": "2026-05-22T23:46:50.542811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "da092f21a587b91d": {
+      "topic": "AI Voice Resurrection Technology Dead Pilots Application",
+      "item_ids": [
+        "fd275f985643"
+      ],
+      "created_at": "2026-05-22T23:46:50.542811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-22T22:39:54.820796+00:00"
+  "last_checked": "2026-05-22T23:46:56.142106+00:00"
 }
