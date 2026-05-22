@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-22] Live feed: tighter Bluesky auto-1 rules — creator promos, crowdfunding, trivial posts
+
+Three new categories added to the Haiku auto-1 list to stop personal Bluesky posts from passing the quality gate: (1) personal creator self-promotion (artist/creator announcing their own art, stickers, prints, merch — regardless of engagement); (2) crowdfunding and campaign posts (Kickstarter, Patreon, Indiegogo "last day to back" type content); (3) trivial observations, viral jokes, or "look at this funny thing" posts with no cultural news significance (e.g. pointing out a typo in a book). These types were scoring 5 (the gate minimum) and appearing in the feed despite having no editorial value.
+
 ## [2026-05-21] Disabled digest publisher
 
 Commented out the "Run Digest Publisher" and "Commit digest" steps in `daily_curator.yml`. The `digest_publisher.py` script is still present — uncomment those steps to re-enable.
@@ -80,13 +84,7 @@ Rewrote the Haiku scoring prompt in `breaking_news_check.py` to match the main c
 
 Reddit Trending was redundant (r/popular and r/all already covered by direct RSS). Instagram scraping requires browser automation — too expensive for the free plan. Apify stack is now 4 lightweight actors: X, Google, YouTube, TikTok.
 
-## [2026-05-06] Raise per-subreddit article cap to 25
 
-Reddit sources (any source name starting with "r/") now get a cap of 25 articles per run instead of the default 15. All other sources remain at 15. The overall 200-article hard cap still applies.
-
-## [2026-05-06] Add r/popular and r/all as wide net sources
-
-Added r/popular and r/all to sources.json as direct RSS feeds under the "wide net" category.
 
 
 
