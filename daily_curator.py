@@ -1281,34 +1281,43 @@ def _score_batch(batch: list[dict], trending_context_block: str, label: str, rec
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
     def call_claude():
-        try:
-            return client.messages.create(
-                model="claude-sonnet-4-6",
-                max_tokens=8192,
-                messages=[{
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": static_preamble,
-                            "cache_control": {"type": "ephemeral"},
-                        },
-                        {
-                            "type": "text",
-                            "text": dynamic_articles,
-                        },
-                    ],
-                }],
-            )
-        except anthropic.AuthenticationError:
-            print("❌ Claude API key is invalid. Please check your ANTHROPIC_API_KEY.")
-            sys.exit(1)
-        except anthropic.RateLimitError:
-            print("❌ Claude rate limit hit. Please wait a minute and try again.")
-            sys.exit(1)
-        except Exception as e:
-            print(f"❌ Claude error: {e}")
-            sys.exit(1)
+        for attempt in range(4):
+            try:
+                return client.messages.create(
+                    model="claude-sonnet-4-6",
+                    max_tokens=8192,
+                    messages=[{
+                        "role": "user",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": static_preamble,
+                                "cache_control": {"type": "ephemeral"},
+                            },
+                            {
+                                "type": "text",
+                                "text": dynamic_articles,
+                            },
+                        ],
+                    }],
+                )
+            except anthropic.AuthenticationError:
+                print("❌ Claude API key is invalid. Please check your ANTHROPIC_API_KEY.")
+                sys.exit(1)
+            except anthropic.RateLimitError:
+                print("❌ Claude rate limit hit. Please wait a minute and try again.")
+                sys.exit(1)
+            except anthropic.APIStatusError as e:
+                if e.status_code == 529 and attempt < 3:
+                    wait = 2 ** (attempt + 1)
+                    print(f"   ⚠️  Claude overloaded (529) — retrying in {wait}s (attempt {attempt + 1}/4)...")
+                    time.sleep(wait)
+                else:
+                    print(f"❌ Claude error: {e}")
+                    sys.exit(1)
+            except Exception as e:
+                print(f"❌ Claude error: {e}")
+                sys.exit(1)
 
     def parse_response(response):
         response_text = response.content[0].text.strip()
