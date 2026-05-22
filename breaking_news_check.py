@@ -147,6 +147,9 @@ SCORING GUIDE:
 AUTOMATIC SCORE OF 1 — always score these 1, no exceptions:
 - Political content: partisan commentary, policy debates, elections, legislation, politicians, government actions, legal/court cases involving political figures, war/conflict updates, diplomatic news, Fed/inflation/regulatory coverage
 - Generic social media posts: good morning greetings, motivational quotes, hashtag participation, lifestyle posts, nature photos, feel-good content, emoji-heavy filler posts
+- Personal creator self-promotion: an individual or small account announcing or promoting their own art, merchandise, stickers, prints, zines, or projects — regardless of likes
+- Crowdfunding and campaign posts: Kickstarter, Indiegogo, Patreon, or any "back my project / last day to support" post
+- Trivial observations, viral jokes, or "look at this funny thing" posts with no cultural news significance (e.g. pointing out a typo, a funny coincidence, a relatable meme)
 - Local or regional news with no national/cultural relevance
 - Industry/trade publication articles about operational, business, or technical topics for specialist audiences (e.g. hospitality tech, fire academy training, supply chain updates)
 
