@@ -1,6 +1,48 @@
 {
   "items": [
     {
+      "id": "d944634a4649",
+      "topic": "Post Malone Announces Australian and New Zealand Stadium Run With Don Toliver as Special Guest",
+      "traffic": "",
+      "detected_at": "2026-05-23T05:09:36.471522+00:00",
+      "search_url": "https://www.billboard.com/music/concerts/post-malone-australian-new-zealand-stadium-don-toliver-special-guest-1236255635/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "20c036f16f72fad9"
+    },
+    {
+      "id": "8931cd411ba4",
+      "topic": "CBS News Radio Ends With An Edward R. Murrow Sign Off: “Good Night, And Good Luck”",
+      "traffic": "",
+      "detected_at": "2026-05-23T05:09:36.471522+00:00",
+      "search_url": "https://deadline.com/2026/05/cbs-news-radio-shuts-down-edward-r-murrow-1236919656/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "e31d56c6aed5fea1"
+    },
+    {
+      "id": "b6d0ae4530d8",
+      "topic": "Spurs",
+      "traffic": "##1 on X",
+      "detected_at": "2026-05-23T05:09:36.471522+00:00",
+      "search_url": "https://x.com/search?q=Spurs&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "2d956e8b3fcc",
+      "topic": "Wemby",
+      "traffic": "##3 on X",
+      "detected_at": "2026-05-23T05:09:36.471522+00:00",
+      "search_url": "https://x.com/search?q=Wemby&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "de0d4d070b88",
       "topic": "Zendaya Recalls Juggling ‘Euphoria’, ‘The Odyssey’ & ‘Dune: Part Three’ Filming: “I Was So Tired”",
       "traffic": "",
@@ -387,51 +429,7 @@
       "source_type": "feed",
       "haiku_score": 6,
       "cluster_id": "a3fcc72e3f80ec66"
-    },
-    {
-      "id": "e3e1f21c8d7e",
-      "topic": "Blue Origin cleared to fly New Glenn mega-rocket after April mishap",
-      "traffic": "",
-      "detected_at": "2026-05-22T21:37:51.403442+00:00",
-      "search_url": "https://techcrunch.com/2026/05/22/blue-origin-cleared-to-fly-new-glenn-mega-rocket-after-april-mishap/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "eca4c3d16cced891"
-    },
-    {
-      "id": "d4ba36838dce",
-      "topic": "Google goes for the glitter with disco-ball icons: ‘Are y’all sure you still want this?’",
-      "traffic": "",
-      "detected_at": "2026-05-22T21:37:51.403442+00:00",
-      "search_url": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "f6ddb8c6ea16ac80"
-    },
-    {
-      "id": "6c669bd48f01",
-      "topic": "How VCs and founders use inflated ‘ARR’ to crown AI startups",
-      "traffic": "",
-      "detected_at": "2026-05-22T21:37:51.403442+00:00",
-      "search_url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "c357dadfbe404a80"
-    },
-    {
-      "id": "1fb2a3ebc284",
-      "topic": "Google is currently struggling to define words like disregard, stop and ignore",
-      "traffic": "",
-      "detected_at": "2026-05-22T21:37:51.403442+00:00",
-      "search_url": "https://www.engadget.com/2179762/google-is-currently-struggling-to-define-words-like-disregard-stop-and-ignore/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "060d15482e17e79e"
     }
   ],
-  "last_checked": "2026-05-23T01:30:04.692741+00:00"
+  "last_checked": "2026-05-23T05:09:36.471522+00:00"
 }
