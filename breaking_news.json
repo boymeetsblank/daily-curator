@@ -1,6 +1,68 @@
 {
   "items": [
     {
+      "id": "de0d4d070b88",
+      "topic": "Zendaya Recalls Juggling ‘Euphoria’, ‘The Odyssey’ & ‘Dune: Part Three’ Filming: “I Was So Tired”",
+      "traffic": "",
+      "detected_at": "2026-05-23T01:30:04.692741+00:00",
+      "search_url": "https://deadline.com/2026/05/zendaya-juggling-euphoria-odyssey-dune-filming-1236919622/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "db05af9e534943e3"
+    },
+    {
+      "id": "8623307a4eb1",
+      "topic": "‘The Boroughs’ Creators Will Matthews And Jeffrey Addiss Unpack Finale & How They Wanted To “Crack The Door” For Future Seasons",
+      "traffic": "",
+      "detected_at": "2026-05-23T01:30:04.692741+00:00",
+      "search_url": "https://deadline.com/2026/05/the-boroughs-ending-explained-by-creators-cliffhanger-1236918368/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "6dde9a1128ef0167"
+    },
+    {
+      "id": "6088453db77c",
+      "topic": "Cubs",
+      "traffic": "##18 on X",
+      "detected_at": "2026-05-23T01:30:04.692741+00:00",
+      "search_url": "https://x.com/search?q=Cubs&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "7deaf89ec965",
+      "topic": "Prayers",
+      "traffic": "##19 on X",
+      "detected_at": "2026-05-23T01:30:04.692741+00:00",
+      "search_url": "https://x.com/search?q=Prayers&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "ba89f6108e68",
+      "topic": "Knicks",
+      "traffic": "##20 on X",
+      "detected_at": "2026-05-23T01:30:04.692741+00:00",
+      "search_url": "https://x.com/search?q=Knicks&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "6a5474e970b2",
+      "topic": "Florida",
+      "traffic": "##21 on X",
+      "detected_at": "2026-05-23T01:30:04.692741+00:00",
+      "search_url": "https://x.com/search?q=Florida&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "49e13cfa293c",
       "topic": "‘Dutton Ranch’ Episode 3: Rip’s Cattle Might Be Ruined by Anti-Vaxxers and Carter Avoids Getting Murdered After Peeing on a Truck",
       "traffic": "",
@@ -369,73 +431,7 @@
       "source_type": "feed",
       "haiku_score": 6,
       "cluster_id": "060d15482e17e79e"
-    },
-    {
-      "id": "010c480abc4f",
-      "topic": "Qualcomm's stock pop shows investors are 'waking up' to boom in AI devices",
-      "traffic": "",
-      "detected_at": "2026-05-22T21:37:51.403442+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/22/qualcomms-stock-pop-shows-investors-waking-up-to-boom-in-ai-devices.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "4e31542e65e2fbe4"
-    },
-    {
-      "id": "74548e62f123",
-      "topic": "Two top Walmart executives leave company under new CEO John Furner",
-      "traffic": "",
-      "detected_at": "2026-05-22T21:37:51.403442+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/22/walmart-executives-depart-under-ceo-john-furner.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "a330623ec58832c5"
-    },
-    {
-      "id": "603cb4ca221b",
-      "topic": "Where To Buy The Air Jordan 12 “Bloodline”",
-      "traffic": "",
-      "detected_at": "2026-05-22T20:15:05.046725+00:00",
-      "search_url": "https://sneakernews.com/2026/05/22/air-jordan-12-bloodline-store-list/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "13bd74780e24be4c"
-    },
-    {
-      "id": "af0a61f64d7d",
-      "topic": "The Sold-Out Nike Air Force 1 Low “Knicks” Is Getting Another Release",
-      "traffic": "",
-      "detected_at": "2026-05-22T20:15:05.046725+00:00",
-      "search_url": "https://sneakernews.com/2026/05/22/nike-air-force-1-low-knicks-iv2705-819/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "299743bfe02b7dda"
-    },
-    {
-      "id": "b637aea8892f",
-      "topic": "Bad Bunny’s adidas Badbo Golf Shoe Drops In June",
-      "traffic": "",
-      "detected_at": "2026-05-22T20:15:05.046725+00:00",
-      "search_url": "https://sneakernews.com/2026/05/22/bad-bunny-adidas-badbo-golf-kh6725/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "930e313f25d29c12"
-    },
-    {
-      "id": "dd91373291c4",
-      "topic": "The 16 Best New Menswear Items to Buy This Week",
-      "traffic": "",
-      "detected_at": "2026-05-22T20:15:05.046725+00:00",
-      "search_url": "https://www.gq.com/gallery/best-new-menswear-to-buy-this-week-5-22-26",
-      "source_name": "GQ",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "08e0091b5461bb49"
     }
   ],
-  "last_checked": "2026-05-22T23:46:23.122796+00:00"
+  "last_checked": "2026-05-23T01:30:04.692741+00:00"
 }
