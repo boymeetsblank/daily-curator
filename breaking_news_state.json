@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "38e190e40b34",
-    "ac8439f3be29",
-    "a05ec7afdc82",
-    "f73770bd087c",
-    "24095b4734fe",
-    "585ae4a7e2ea",
-    "8acc93d9db5a",
-    "bd16d94dbc4d",
-    "f7528e8a3f01",
-    "f43899ea7f05",
-    "a75963c683c2",
-    "e3dba206c333",
-    "f470f751675c",
     "fe576b2d8340",
     "ce59bdc7a569",
     "5f32e9da337f",
@@ -499,28 +486,22 @@
     "1050b7016af7",
     "ce08229b3f11",
     "b69f5095651f",
-    "55e14c9a2ed5"
+    "55e14c9a2ed5",
+    "d6d0d6a4a751",
+    "df3f7441eb79",
+    "207a56e298de",
+    "54db81a609fb",
+    "27238f86e6b6",
+    "106461318fc3",
+    "01eb1940fddb",
+    "03761f8ccbe2",
+    "b2eeb83da149",
+    "6995b3a3976c",
+    "bbb3fdba7190",
+    "7b2518dba36a",
+    "40b9208bb4ff"
   ],
   "failed_ids": {
-    "e715c8d79fd6": "2026-05-23T14:47:56.300149+00:00",
-    "b05a641ccd89": "2026-05-23T14:47:56.300149+00:00",
-    "7b0a44e37a35": "2026-05-23T14:47:56.300149+00:00",
-    "e0c502dfc0eb": "2026-05-23T14:47:56.300149+00:00",
-    "9ee8e09b3733": "2026-05-23T15:50:55.008733+00:00",
-    "b47917ce9b41": "2026-05-23T15:50:55.008733+00:00",
-    "db072817c861": "2026-05-23T15:50:55.008733+00:00",
-    "003bc3c2d1b8": "2026-05-23T15:50:55.008733+00:00",
-    "e7544929913b": "2026-05-23T15:50:55.008733+00:00",
-    "01ad020c4437": "2026-05-23T15:50:55.008733+00:00",
-    "58d4dce3ae34": "2026-05-23T15:50:55.008733+00:00",
-    "27238f86e6b6": "2026-05-23T15:50:55.008733+00:00",
-    "422fb09154bd": "2026-05-23T15:50:55.008733+00:00",
-    "c7d5b3e6d261": "2026-05-23T15:50:55.008733+00:00",
-    "2804931fea70": "2026-05-23T15:50:55.008733+00:00",
-    "b486ebdcbdaa": "2026-05-23T15:50:55.008733+00:00",
-    "40d7f667df88": "2026-05-23T15:50:55.008733+00:00",
-    "892cfe292358": "2026-05-23T15:50:55.008733+00:00",
-    "381cc3e7541c": "2026-05-23T15:50:55.008733+00:00",
     "49574a2d7059": "2026-05-23T16:44:08.413743+00:00",
     "be081016e5f3": "2026-05-23T16:44:08.413743+00:00",
     "6922de6c7bbd": "2026-05-23T16:44:08.413743+00:00",
@@ -545,7 +526,10 @@
     "7cb0cb419756": "2026-05-23T18:45:38.100272+00:00",
     "873aeb42ae59": "2026-05-23T18:45:38.100272+00:00",
     "cb979817a5b3": "2026-05-23T18:45:38.100272+00:00",
-    "446a03507dd2": "2026-05-23T18:45:38.100272+00:00"
+    "446a03507dd2": "2026-05-23T18:45:38.100272+00:00",
+    "422fb09154bd": "2026-05-23T19:54:40.426327+00:00",
+    "7c3fbf166545": "2026-05-23T19:54:40.426327+00:00",
+    "f1a76b832639": "2026-05-23T19:54:40.426327+00:00"
   },
   "live_clusters": {
     "13bd74780e24be4c": {
@@ -605,11 +589,20 @@
     "9a6dc292cde8b0b7": {
       "topic": "Usyk vs. Verhoeven Boxing Pay-Per-View Livestream",
       "item_ids": [
-        "15c70da34b2e"
+        "15c70da34b2e",
+        "106461318fc3",
+        "01eb1940fddb"
       ],
       "created_at": "2026-05-22T20:15:46.559979+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-23T19:54:40.426327+00:00",
+      "picks_file": "picks/picks-2026-05-23-1955.md",
+      "why_text": "Oleksandr Usyk, undisputed heavyweight boxing champion, is stepping into a rare crossover bout against Rico Verhoeven, the dominant force in heavyweight kickboxing \u2014 a matchup that blurs combat sport boundaries and carries genuine stakes for both men's legacies. For Usyk, who has already beaten Fury and unified every major belt, this is pure curiosity and spectacle; for Verhoeven, it's a shot at mainstream legitimacy on the biggest stage of his career. The pay-per-view moment matters because it's testing whether boxing audiences will embrace a crossover event without a traditional title on the line.",
+      "last_escalated_item_ids": [
+        "15c70da34b2e",
+        "106461318fc3",
+        "01eb1940fddb"
+      ]
     },
     "82ac610e9cc54c24": {
       "topic": "Best New Latin Music Release Weekly Poll",
@@ -1340,11 +1333,21 @@
       "topic": "Kyle Busch Death Pneumonia Sepsis",
       "item_ids": [
         "58417b834aad",
-        "035f45136bf5"
+        "035f45136bf5",
+        "d6d0d6a4a751",
+        "27238f86e6b6"
       ],
       "created_at": "2026-05-23T15:51:25.663151+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-05-23T19:54:40.426327+00:00",
+      "picks_file": "picks/picks-2026-05-23-1955.md",
+      "why_text": "Two-time NASCAR Cup Series champion Kyle Busch has died from pneumonia and sepsis, sending shockwaves through motorsport and American sports culture broadly. NASCAR is already moving to honor him \u2014 the Coca-Cola 600 will serve as a tribute race, and RCR is retiring his iconic No. 8 car with the intention of passing it to his son Brexton, a poignant gesture that underscores how deeply his legacy is already being framed as dynastic. Busch was one of the most polarizing and dominant drivers of his generation, and his death marks the end of an era for the sport.",
+      "last_escalated_item_ids": [
+        "58417b834aad",
+        "035f45136bf5",
+        "d6d0d6a4a751",
+        "27238f86e6b6"
+      ]
     },
     "2fc1e199b381e5dc": {
       "topic": "Ferrari IBM AI F1 Superfans Strategy",
@@ -1589,7 +1592,52 @@
       "created_at": "2026-05-23T18:46:12.480385+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "833fd3d222041e4c": {
+      "topic": "Neon Raises Cannes Palme d'Or Winning Streak to Seven With 'Fjord' Starring Sebastian Stan & Renate Reinsve",
+      "item_ids": [
+        "df3f7441eb79"
+      ],
+      "created_at": "2026-05-23T19:55:14.194813+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3e4bfd817b3165c9": {
+      "topic": "Barbra Streisand Receives Honorary Palme d'Or at Cannes 2026",
+      "item_ids": [
+        "207a56e298de"
+      ],
+      "created_at": "2026-05-23T19:55:14.194813+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "640b81bc9a7361cd": {
+      "topic": "Liberty's Ionescu Season Debut vs. Wings WNBA Game",
+      "item_ids": [
+        "54db81a609fb"
+      ],
+      "created_at": "2026-05-23T19:55:14.194813+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0099cb843357a619": {
+      "topic": "NASA Psyche Spacecraft Mars Photography Images",
+      "item_ids": [
+        "03761f8ccbe2"
+      ],
+      "created_at": "2026-05-23T19:55:14.194813+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "88ad2d7fb554bc84": {
+      "topic": "Image Comics 'Of the Earth' Miniseries Weekend Reading Recommendation",
+      "item_ids": [
+        "b2eeb83da149"
+      ],
+      "created_at": "2026-05-23T19:55:14.194813+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T18:46:12.481648+00:00"
+  "last_checked": "2026-05-23T19:55:28.657536+00:00"
 }
