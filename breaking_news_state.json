@@ -1,12 +1,5 @@
 {
   "known_ids": [
-    "425816577b55",
-    "e05f4acddbd8",
-    "7c2d33164892",
-    "f04537cac6c7",
-    "b70ca79eca36",
-    "ac6998f5f851",
-    "cf842fe41a80",
     "3733505ee37c",
     "7ba2fce75225",
     "b71a550d794e",
@@ -499,15 +492,16 @@
     "d944634a4649",
     "8931cd411ba4",
     "b6d0ae4530d8",
-    "2d956e8b3fcc"
+    "2d956e8b3fcc",
+    "0cadde7e32fa",
+    "e504babf4306",
+    "b3d1bd3e67ef",
+    "9310df355270",
+    "3ab468916075",
+    "42adec4eda48",
+    "54cda1669d81"
   ],
   "failed_ids": {
-    "7d375b32fd97": "2026-05-23T01:30:04.692741+00:00",
-    "2d19ee537894": "2026-05-23T01:30:04.692741+00:00",
-    "60a3cfff206c": "2026-05-23T01:30:04.692741+00:00",
-    "c62fa70505e6": "2026-05-23T01:30:04.692741+00:00",
-    "0792741efc4d": "2026-05-23T01:30:04.692741+00:00",
-    "892cfe292358": "2026-05-23T01:30:04.692741+00:00",
     "81c7b5f466f5": "2026-05-23T05:09:36.471522+00:00",
     "2debe551ba08": "2026-05-23T05:09:36.471522+00:00",
     "1656a1b0f9a0": "2026-05-23T05:09:36.471522+00:00",
@@ -518,27 +512,15 @@
     "cc5c5014b504": "2026-05-23T05:09:36.471522+00:00",
     "1e1143f86185": "2026-05-23T05:09:36.471522+00:00",
     "11ebee98b464": "2026-05-23T05:09:36.471522+00:00",
-    "4b8428921ce1": "2026-05-23T05:09:36.471522+00:00"
+    "4b8428921ce1": "2026-05-23T05:09:36.471522+00:00",
+    "7d9648dc04d2": "2026-05-23T07:42:28.028210+00:00",
+    "f0633374f3d9": "2026-05-23T07:42:28.028210+00:00",
+    "167f5fc352db": "2026-05-23T07:42:28.028210+00:00",
+    "62c3b758fa63": "2026-05-23T07:42:28.028210+00:00",
+    "13ce3ef1b130": "2026-05-23T07:42:28.028210+00:00",
+    "debe1948606c": "2026-05-23T07:42:28.028210+00:00"
   },
   "live_clusters": {
-    "8c8cdf1d0f265af9": {
-      "topic": "Sacha Baron Cohen Rosamund Pike 'Ladies First' Comedy Film Review",
-      "item_ids": [
-        "5d59fa551c89"
-      ],
-      "created_at": "2026-05-22T05:48:45.474994+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "016adc2a69578d4c": {
-      "topic": "Meta Forum Reddit-Like Social App Launch",
-      "item_ids": [
-        "f3259629104c"
-      ],
-      "created_at": "2026-05-22T05:48:45.474994+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "93cbcb4971c51970": {
       "topic": "White Lotus Thailand Tourism Impact $36.5 Million Spending 300% Surge",
       "item_ids": [
@@ -1753,7 +1735,43 @@
       "created_at": "2026-05-23T05:10:00.919082+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "724dd4c2e3d6c6de": {
+      "topic": "Memorial Day 2026 Mattress Sales Deals Helix Saatva",
+      "item_ids": [
+        "0cadde7e32fa"
+      ],
+      "created_at": "2026-05-23T07:42:55.083275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "424118046bc58098": {
+      "topic": "Peec Berlin Startup $10M ARR Growth",
+      "item_ids": [
+        "e504babf4306"
+      ],
+      "created_at": "2026-05-23T07:42:55.083275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "210df103a2cd7bc3": {
+      "topic": "EV Fire Safety Technology Development",
+      "item_ids": [
+        "b3d1bd3e67ef"
+      ],
+      "created_at": "2026-05-23T07:42:55.083275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5cac9b6761458395": {
+      "topic": "Credo Technology AI Connectivity Stock Gains",
+      "item_ids": [
+        "9310df355270"
+      ],
+      "created_at": "2026-05-23T07:42:55.083275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T05:10:00.920243+00:00"
+  "last_checked": "2026-05-23T07:42:55.084556+00:00"
 }
