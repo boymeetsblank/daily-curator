@@ -1,6 +1,59 @@
 {
   "items": [
     {
+      "id": "479ab5b8d1c9",
+      "topic": "Usyk avoids huge upset with last-second stoppage",
+      "traffic": "",
+      "detected_at": "2026-05-23T23:39:43.079584+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48856437/usyk-avoids-upset-verhoeven-last-second-stoppage",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "4f028765a2f84ea3"
+    },
+    {
+      "id": "e91da263052c",
+      "topic": "OKC rules out Mitchell for Game 4 with calf strain...",
+      "traffic": "",
+      "detected_at": "2026-05-23T23:39:43.079584+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48856022/thunder-rule-ajay-mitchell-game-4-calf-strain",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "29fff24107209230"
+    },
+    {
+      "id": "97e3470d0558",
+      "topic": "Springer, Jays hand Skenes second straight loss",
+      "traffic": "",
+      "detected_at": "2026-05-23T23:39:43.079584+00:00",
+      "search_url": "https://www.espn.com/mlb/story/_/id/48855991/springer-blue-jays-hand-pirates-skenes-back-back-defeats",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "3617616790914833"
+    },
+    {
+      "id": "1be7601f6233",
+      "topic": "Kimi",
+      "traffic": "##28 on X",
+      "detected_at": "2026-05-23T23:39:43.079584+00:00",
+      "search_url": "https://x.com/search?q=Kimi&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "4963ce782cac",
+      "topic": "Cavs",
+      "traffic": "##29 on X",
+      "detected_at": "2026-05-23T23:39:43.079584+00:00",
+      "search_url": "https://x.com/search?q=Cavs&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "c2bf3503dfa3",
       "topic": "The Nike Zoom Skylon 11 Begins Unexpected Return In “Volt”",
       "traffic": "",
@@ -377,62 +430,7 @@
       "source_type": "feed",
       "haiku_score": 5,
       "cluster_id": "457bc92ce8826d1c"
-    },
-    {
-      "id": "ce08229b3f11",
-      "topic": "Stanley Cup playoffs daily: Can the Hurricanes tie...",
-      "traffic": "",
-      "detected_at": "2026-05-23T18:45:38.100272+00:00",
-      "search_url": "https://www.espn.com/nhl/story/_/id/48526483/2026-nhl-playoffs-stanley-cup-preview-stats-schedule-top-players-bracket-matchups",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "279833b4c67e82e4"
-    },
-    {
-      "id": "b69f5095651f",
-      "topic": "From the favorites to the underdogs: Ranking the F...",
-      "traffic": "",
-      "detected_at": "2026-05-23T18:45:38.100272+00:00",
-      "search_url": "https://www.espn.com/tennis/story/_/id/48845832/french-open-top-contenders-rankings-sinner-gauff-sabalenka-swiatek-djokovic",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "644896bf2bc98561"
-    },
-    {
-      "id": "55e14c9a2ed5",
-      "topic": "SpaceX's Starship V3—still a work in progress—mostly successful on first flight",
-      "traffic": "",
-      "detected_at": "2026-05-23T18:45:38.100272+00:00",
-      "search_url": "https://arstechnica.com/space/2026/05/spacexs-starship-v3-still-a-work-in-progress-mostly-successful-on-first-flight/",
-      "source_name": "Ars Technica",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "5d0c0dea83c94f5d"
-    },
-    {
-      "id": "f17021387847",
-      "topic": "Up Close With The Nike Kobe 4 Protro “Lakers”",
-      "traffic": "",
-      "detected_at": "2026-05-23T17:46:06.599470+00:00",
-      "search_url": "https://sneakernews.com/2026/05/23/nike-kobe-4-protro-draft-day-lakers-iv6592-700/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "31a123e1e3f726c3"
-    },
-    {
-      "id": "91a3489e31de",
-      "topic": "Shakira & Burna Boy Drop ‘Dai Dai’ Video Featuring Cameos From World Cup Winners Messi & Mbappé: Watch",
-      "traffic": "",
-      "detected_at": "2026-05-23T17:46:06.599470+00:00",
-      "search_url": "https://www.billboard.com/music/music-news/shakira-burna-boy-dai-dai-video-2026-world-cup-1236255709/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "588883d83dd2fcf5"
     }
   ],
-  "last_checked": "2026-05-23T22:36:59.427770+00:00"
+  "last_checked": "2026-05-23T23:39:43.079584+00:00"
 }

@@ -1,11 +1,5 @@
 {
   "known_ids": [
-    "a0a7be63470f",
-    "13849d51430e",
-    "fb9ed73d0318",
-    "a159563e5e70",
-    "5f59c685a20a",
-    "7b63178f5008",
     "4ff0291e4612",
     "453d1ca72ebf",
     "fddb7c84a91c",
@@ -499,19 +493,15 @@
     "0b0aa1823626",
     "a3dbb7301a42",
     "1fa5883d3266",
-    "103342bc6b07"
+    "103342bc6b07",
+    "ac9d816c267c",
+    "479ab5b8d1c9",
+    "e91da263052c",
+    "97e3470d0558",
+    "1be7601f6233",
+    "4963ce782cac"
   ],
   "failed_ids": {
-    "592b83a92b28": "2026-05-23T18:45:38.100272+00:00",
-    "fc62fe0464be": "2026-05-23T18:45:38.100272+00:00",
-    "d2136c09d1ee": "2026-05-23T18:45:38.100272+00:00",
-    "add831fef1ea": "2026-05-23T18:45:38.100272+00:00",
-    "d6da402f4ca1": "2026-05-23T18:45:38.100272+00:00",
-    "9441625a5bb4": "2026-05-23T18:45:38.100272+00:00",
-    "7cb0cb419756": "2026-05-23T18:45:38.100272+00:00",
-    "873aeb42ae59": "2026-05-23T18:45:38.100272+00:00",
-    "cb979817a5b3": "2026-05-23T18:45:38.100272+00:00",
-    "446a03507dd2": "2026-05-23T18:45:38.100272+00:00",
     "422fb09154bd": "2026-05-23T19:54:40.426327+00:00",
     "7c3fbf166545": "2026-05-23T19:54:40.426327+00:00",
     "f1a76b832639": "2026-05-23T19:54:40.426327+00:00",
@@ -536,103 +526,15 @@
     "399ddb360727": "2026-05-23T22:36:59.427770+00:00",
     "1e1143f86185": "2026-05-23T22:36:59.427770+00:00",
     "11ebee98b464": "2026-05-23T22:36:59.427770+00:00",
-    "4b8428921ce1": "2026-05-23T22:36:59.427770+00:00"
+    "4b8428921ce1": "2026-05-23T22:36:59.427770+00:00",
+    "3fed3829a076": "2026-05-23T23:39:43.079584+00:00",
+    "296e643f3118": "2026-05-23T23:39:43.079584+00:00",
+    "19959e93c5ae": "2026-05-23T23:39:43.079584+00:00",
+    "7cb0cb419756": "2026-05-23T23:39:43.079584+00:00",
+    "9441625a5bb4": "2026-05-23T23:39:43.079584+00:00",
+    "5021f187f96d": "2026-05-23T23:39:43.079584+00:00"
   },
   "live_clusters": {
-    "e45c284bc507e1de": {
-      "topic": "Zach Braff Scrubs Revival Interview Fan Base Pressure",
-      "item_ids": [
-        "8ef4f0bda83f"
-      ],
-      "created_at": "2026-05-22T22:39:54.819535+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "974c0d1c483509e9": {
-      "topic": "Emmy Awards Outstanding Variety Series New Rules Multiple Winners SNL",
-      "item_ids": [
-        "afc94e4eadbc",
-        "f48b5b0b93df"
-      ],
-      "created_at": "2026-05-22T22:39:54.819535+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7aa89da1b243dc49": {
-      "topic": "Rob Base 'It Takes Two' Rapper Death Obituary",
-      "item_ids": [
-        "0592874d42cf",
-        "d290d820604f",
-        "afaff13bbfbc"
-      ],
-      "created_at": "2026-05-22T22:39:54.819535+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-22T23:46:23.122796+00:00",
-      "picks_file": "picks/picks-2026-05-22-2346.md",
-      "why_text": "Rob Base has died at 59, leaving behind one of hip-hop's most indelible party anthems \u2014 'It Takes Two' is the kind of record that transcends genre, era, and audience, still sampled, still played, still instantly recognizable decades later. His death is a reminder of how much of hip-hop's foundational joy was built by artists who never got their full flowers. This one hits different because that song is genuinely everywhere \u2014 sports arenas, weddings, movie trailers \u2014 and now we have to reckon with the man behind it.",
-      "last_escalated_item_ids": [
-        "0592874d42cf",
-        "d290d820604f",
-        "afaff13bbfbc"
-      ]
-    },
-    "cd9cb3ee4a0ee4f1": {
-      "topic": "Julia Roberts Home Economics Film Adaptation 3000 Pictures",
-      "item_ids": [
-        "2f56c51564e9",
-        "3d49771b5147"
-      ],
-      "created_at": "2026-05-22T22:39:54.819535+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d97a832fa8b5e369": {
-      "topic": "Erin Moriarty Graves Disease Filming The Boys Final Season",
-      "item_ids": [
-        "e329442b0195"
-      ],
-      "created_at": "2026-05-22T22:39:54.819535+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e98519e57537f4a5": {
-      "topic": "Alexa Bliss WWE Prototype Talent Agency Signing",
-      "item_ids": [
-        "4e083d50e1de"
-      ],
-      "created_at": "2026-05-22T22:39:54.819535+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "548502cc0745af14": {
-      "topic": "Nicolas Winding Refn Maniac Cop Feature Film Mubi Goodfellas",
-      "item_ids": [
-        "805657ad547d",
-        "b759c03e7104"
-      ],
-      "created_at": "2026-05-22T22:39:54.819535+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d0c0dea83c94f5d": {
-      "topic": "SpaceX Starship Test Flight Second Attempt Launch",
-      "item_ids": [
-        "827be42d4293",
-        "1c7f984fcfa7",
-        "e0d93312a214",
-        "55e14c9a2ed5"
-      ],
-      "created_at": "2026-05-22T22:39:54.819535+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-23T10:53:28.688933+00:00",
-      "picks_file": "picks/picks-2026-05-23-1054.md",
-      "why_text": "SpaceX's third-generation Starship completed its inaugural test flight in a largely successful run \u2014 but the Super Heavy booster was lost on its return attempt, a reminder that even 'successful' missions in this program come with asterisks. For SpaceX, the bar keeps moving: the vehicle flew, the future is closer, but full reusability remains the unchecked box that defines the whole economic model. This is the rocket meant to carry humans to Mars, and every partial win tightens the timeline.",
-      "last_escalated_item_ids": [
-        "827be42d4293",
-        "1c7f984fcfa7",
-        "e0d93312a214"
-      ]
-    },
     "659e6f01bb220eb9": {
       "topic": "Dutton Ranch Episode 3 Cattle Vaccination Plot Controversy",
       "item_ids": [
@@ -1306,7 +1208,8 @@
     "833fd3d222041e4c": {
       "topic": "Neon Raises Cannes Palme d'Or Winning Streak to Seven With 'Fjord' Starring Sebastian Stan & Renate Reinsve",
       "item_ids": [
-        "df3f7441eb79"
+        "df3f7441eb79",
+        "ac9d816c267c"
       ],
       "created_at": "2026-05-23T19:55:14.194813+00:00",
       "last_escalated_size": 0,
@@ -1437,7 +1340,34 @@
       "created_at": "2026-05-23T22:37:26.656440+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "4f028765a2f84ea3": {
+      "topic": "Usyk Boxing Match Last-Second Stoppage Victory",
+      "item_ids": [
+        "479ab5b8d1c9"
+      ],
+      "created_at": "2026-05-23T23:40:13.433827+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "29fff24107209230": {
+      "topic": "OKC Thunder Mitchell Ruled Out Game 4 Calf Strain",
+      "item_ids": [
+        "e91da263052c"
+      ],
+      "created_at": "2026-05-23T23:40:13.433827+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3617616790914833": {
+      "topic": "MLB Jays Defeat Skenes Pirates Second Straight Loss",
+      "item_ids": [
+        "97e3470d0558"
+      ],
+      "created_at": "2026-05-23T23:40:13.433827+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T22:37:26.657658+00:00"
+  "last_checked": "2026-05-23T23:40:13.437187+00:00"
 }
