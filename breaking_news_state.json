@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "248c769bae74",
-    "02848de2aeec",
-    "20a8a7f29268",
-    "e8806b397fe5",
-    "54f5d2b41dbc",
-    "7b8293e95bcb",
-    "65ea913ba782",
-    "bfc479a488d3",
-    "2dc9bf4077b0",
-    "1e9991c596fd",
-    "2ef0ab07f3d3",
-    "0fbee4c7a266",
-    "19171a41949d",
-    "087a2ebae115",
-    "0da6fa060d31",
-    "512b164c3f80",
-    "2813abe7b137",
     "8f4cf4379fd8",
     "fd7590ccc168",
     "b0de73434e03",
@@ -499,17 +482,26 @@
     "0251516d6652",
     "cf0e6e41e5ba",
     "df00e65d1f19",
-    "7c406f1f6824"
+    "7c406f1f6824",
+    "25f125509688",
+    "74d77609a3ad",
+    "a174b49801e7",
+    "bdb7fd9cc52c",
+    "1d96808d7253",
+    "c1293d5ab4ca",
+    "702d60a8e000",
+    "3ab4b1686b01",
+    "3d77a48f1bbc",
+    "9f62a9b3a78d",
+    "73fe94cb99e1",
+    "987202f35372",
+    "354027cba18e",
+    "17e508155961",
+    "047394d7d41e",
+    "25f2c841ef00",
+    "1171da894157"
   ],
   "failed_ids": {
-    "198f7068b783": "2026-05-23T11:56:21.765111+00:00",
-    "1679b76015a0": "2026-05-23T11:56:21.765111+00:00",
-    "d9a8869b6d37": "2026-05-23T11:56:21.765111+00:00",
-    "8a402de2b21c": "2026-05-23T11:56:21.765111+00:00",
-    "7e0e10b15062": "2026-05-23T11:56:21.765111+00:00",
-    "01065d86b866": "2026-05-23T11:56:21.765111+00:00",
-    "13ce3ef1b130": "2026-05-23T11:56:21.765111+00:00",
-    "debe1948606c": "2026-05-23T11:56:21.765111+00:00",
     "7f462d89b90e": "2026-05-23T13:27:24.691464+00:00",
     "bcb2aaec324e": "2026-05-23T13:27:24.691464+00:00",
     "e9000b15ea57": "2026-05-23T13:27:24.691464+00:00",
@@ -541,253 +533,16 @@
     "b486ebdcbdaa": "2026-05-23T15:50:55.008733+00:00",
     "40d7f667df88": "2026-05-23T15:50:55.008733+00:00",
     "892cfe292358": "2026-05-23T15:50:55.008733+00:00",
-    "381cc3e7541c": "2026-05-23T15:50:55.008733+00:00"
+    "381cc3e7541c": "2026-05-23T15:50:55.008733+00:00",
+    "49574a2d7059": "2026-05-23T16:44:08.413743+00:00",
+    "be081016e5f3": "2026-05-23T16:44:08.413743+00:00",
+    "6922de6c7bbd": "2026-05-23T16:44:08.413743+00:00",
+    "bfdfac347907": "2026-05-23T16:44:08.413743+00:00",
+    "13ce3ef1b130": "2026-05-23T16:44:08.413743+00:00",
+    "debe1948606c": "2026-05-23T16:44:08.413743+00:00",
+    "27194cd3fc0b": "2026-05-23T16:44:08.413743+00:00"
   },
   "live_clusters": {
-    "1628f5ac0802d7b6": {
-      "topic": "A Ma Maniere Nike Air Force 1 Low Summer Release Pack",
-      "item_ids": [
-        "8db580dbcade"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "be9615b428a0c483": {
-      "topic": "James Whitner JAIDE x Air Jordan 11 Low Fiberglass Release",
-      "item_ids": [
-        "bef9ec3da5c6"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c38d8e0dfd556d10": {
-      "topic": "Martin McDonagh 'Wild Horse Nine' Film Chile Western",
-      "item_ids": [
-        "d21dc76121e3"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "751baacac42b8c3e": {
-      "topic": "May 2026 Celebrity Red Carpet Photos Fashion Events",
-      "item_ids": [
-        "79bfe04e12f6"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8acd54a96fb75ad3": {
-      "topic": "Miley Cyrus Hannah Montana Retrospective Interview",
-      "item_ids": [
-        "27466951ab1a"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4c38d90e9296f554": {
-      "topic": "Big Brands Marketing Gen Z Gen Alpha Consumer Strategy",
-      "item_ids": [
-        "6e85c182b170"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "af3f2c6ea006a846": {
-      "topic": "DJ Koze New Song Spiralen Release",
-      "item_ids": [
-        "4925f3d1f2ab"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ad2185c06638b1b": {
-      "topic": "Nate Bargatze April 2026 Comedy Charts No. 1",
-      "item_ids": [
-        "ddc166b7f881"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1d48bb57f8505763": {
-      "topic": "Electric Mayhem Rock n Roller Coaster Disney World Takeover",
-      "item_ids": [
-        "b6fba7f8aecd"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e0efaa569f9ca225": {
-      "topic": "Lucian Grainge Spotify AI Likeness Rights Partnership",
-      "item_ids": [
-        "66ff6d61559e"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8a729b0af7063f1f": {
-      "topic": "Pearl Jam New Drummer September 2026 Announcement",
-      "item_ids": [
-        "d600769ac40a"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d91f162e4aca04ca": {
-      "topic": "Ed Sheeran Departs Warner Music Label",
-      "item_ids": [
-        "15efd81ef42d"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bb63215af4dea080": {
-      "topic": "Leven Kali Beyonc\u00e9 Collaboration Quincy Jones Mentorship",
-      "item_ids": [
-        "9f230242a0a8"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "26644afdbb7e242d": {
-      "topic": "Guy Burnet Landman Signs With Paradigm Agency",
-      "item_ids": [
-        "3604cebc4bce"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9747db824bbf54e0": {
-      "topic": "Sony Holiday Inn Family Film Ben Zazove Evan Turner",
-      "item_ids": [
-        "cddacdc6e7b8"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dc21ae7a81255e34": {
-      "topic": "Jayro Bustamante Rep\u00fablica Luminosa Paper Tiger RT Features",
-      "item_ids": [
-        "5291db434b3e"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "411a469575aae818": {
-      "topic": "Hollywood Summertime Release Schedule Directors Shortage Analysis",
-      "item_ids": [
-        "dcc703840951"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5cf8e1b735eeff12": {
-      "topic": "Routers Modems Internet Connectivity Guide",
-      "item_ids": [
-        "f63d652a3e8f"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "41138055ebb24bcb": {
-      "topic": "Google AI Search Adoption Ubiquity Analysis",
-      "item_ids": [
-        "8b31c18590b7"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f79ed975e1d1d9e2": {
-      "topic": "Spotify AI Music Personalization Strategy Analysis",
-      "item_ids": [
-        "a8bc5e2a2198"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "060d15482e17e79e": {
-      "topic": "Google Search Disregard Word Query Issue",
-      "item_ids": [
-        "7e9de1698fc8",
-        "1fb2a3ebc284"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6a18886421949841": {
-      "topic": "Google AI Glasses Review Hands-On Experience",
-      "item_ids": [
-        "3db5dbae3cb2"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bf0c9c2ca1ecc4a4": {
-      "topic": "Steam Controller Magnetic Charger Fire Hazard Safety PSA",
-      "item_ids": [
-        "044c6635c8e2"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "29faf5212d2fa9db": {
-      "topic": "3D Technology Bronze Dragon Reconstruction PBS",
-      "item_ids": [
-        "85d87a961163"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "47aff7cbaabd057a": {
-      "topic": "Technology Executive Role Expansion AI Workplace Pressure",
-      "item_ids": [
-        "643def4656ef"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e626232b36e0f642": {
-      "topic": "NexSens Environmental Monitoring Web Camera Technology",
-      "item_ids": [
-        "f17b35181761"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6e77c9834b6528d3": {
-      "topic": "High-Throughput Screening False Positives Reduction Guide",
-      "item_ids": [
-        "8836ccf134f3"
-      ],
-      "created_at": "2026-05-22T16:29:08.815276+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "febea7c2b7c81239": {
       "topic": "Nike Shox BB4 'Olympic' Sneaker Release",
       "item_ids": [
@@ -873,11 +628,19 @@
       "topic": "New Music Releases Olivia Rodrigo Charli XCX Bleachers Week Poll",
       "item_ids": [
         "4f2d2c6685c4",
-        "633252d012b6"
+        "633252d012b6",
+        "c1293d5ab4ca"
       ],
       "created_at": "2026-05-22T18:17:57.277456+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-23T16:44:08.413743+00:00",
+      "picks_file": "picks/picks-2026-05-23-1644.md",
+      "why_text": "Charli XCX is keeping her momentum alive between era-defining drops by releasing a cheeky b-side to 'SS26,' reinforcing her habit of treating her fanbase like insiders on a rolling creative project rather than passive listeners. It's a smart move that keeps the BRAT-era glow burning without burning out a full single cycle. In a week stacked with new music from Olivia Rodrigo and Bleachers, Charli's approach \u2014 raw, playful, low-stakes \u2014 is a masterclass in staying culturally present.",
+      "last_escalated_item_ids": [
+        "4f2d2c6685c4",
+        "633252d012b6",
+        "c1293d5ab4ca"
+      ]
     },
     "77d3a83c9b6b35e6": {
       "topic": "UK Chart Songs 8+ Weeks But Not US Hot 100 Top 10 Analysis",
@@ -1219,11 +982,21 @@
       "topic": "Disney Star Wars The Mandalorian and Grogu Lowest Preview Sales",
       "item_ids": [
         "f82d59e44230",
-        "5bf5489730a8"
+        "5bf5489730a8",
+        "74d77609a3ad",
+        "a174b49801e7"
       ],
       "created_at": "2026-05-22T20:15:46.559979+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-05-23T16:44:08.413743+00:00",
+      "picks_file": "picks/picks-2026-05-23-1644.md",
+      "why_text": "The Mandalorian and Grogu debuted to $33 million in Thursday previews, a number that signals real audience hesitation for a streaming-to-screen franchise gamble \u2014 and Disney knows it. This is the first major test of whether Star Wars can still command theatrical loyalty after years of Disney+ dilution, and a soft preview number puts pressure on the full opening weekend to tell a clearer story. The simultaneous Millennium Falcon ride update at Disney Parks shows the machine is fully in motion \u2014 but enthusiasm at the parks and enthusiasm at the box office aren't the same thing.",
+      "last_escalated_item_ids": [
+        "f82d59e44230",
+        "5bf5489730a8",
+        "74d77609a3ad",
+        "a174b49801e7"
+      ]
     },
     "08a5837b1f102d47": {
       "topic": "Jude Bellingham adidas Climacool Solar Red Sneaker Release",
@@ -1437,7 +1210,8 @@
     "659e6f01bb220eb9": {
       "topic": "Dutton Ranch Episode 3 Cattle Vaccination Plot Controversy",
       "item_ids": [
-        "49e13cfa293c"
+        "49e13cfa293c",
+        "702d60a8e000"
       ],
       "created_at": "2026-05-22T23:46:50.542811+00:00",
       "last_escalated_size": 0,
@@ -1869,7 +1643,106 @@
       "created_at": "2026-05-23T15:51:25.663151+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "efabc0e3426aa3eb": {
+      "topic": "T\u00e2nia Maria Joins Leonardo Lacca's 'S\u00e1bado Morto' Film",
+      "item_ids": [
+        "25f125509688"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4b106a93e6881ba9": {
+      "topic": "2026 Crunchyroll Anime Awards Winners",
+      "item_ids": [
+        "bdb7fd9cc52c"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "edc930edc49032fa": {
+      "topic": "Bruce Springsteen Tour Cleveland Shows Highlights",
+      "item_ids": [
+        "1d96808d7253"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "50db882bb721542b": {
+      "topic": "Latvia Defeats US 4-2 Ice Hockey World Championships",
+      "item_ids": [
+        "3ab4b1686b01"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7d880de08f4e643d": {
+      "topic": "Kerley Commitment Clean Run Enhanced Games",
+      "item_ids": [
+        "3d77a48f1bbc"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "951ec1ad0039ffa4": {
+      "topic": "WNBA Fever's Clark Addresses 2025 Season Injuries Mental Challenges",
+      "item_ids": [
+        "9f62a9b3a78d"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5f3b7860b8a69d88": {
+      "topic": "Manzardo Pinch-Hit Home Run Williams 11-Strikeout Game",
+      "item_ids": [
+        "73fe94cb99e1"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7f720400fe1be4e4": {
+      "topic": "NBA Free Agent Rankings LeBron James 2026",
+      "item_ids": [
+        "987202f35372"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bf09200a15908e57": {
+      "topic": "Phone App Features Spyware Protection Guide",
+      "item_ids": [
+        "354027cba18e"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e51b65b4de16b9c9": {
+      "topic": "Science Stories Artificial Eggshells Earth Magnetosphere Research",
+      "item_ids": [
+        "17e508155961"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b63277828430c98e": {
+      "topic": "The Future of Truth AI Writing Reckoning Atlantic",
+      "item_ids": [
+        "047394d7d41e"
+      ],
+      "created_at": "2026-05-23T16:44:44.928105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T15:51:25.664354+00:00"
+  "last_checked": "2026-05-23T16:44:57.000764+00:00"
 }
