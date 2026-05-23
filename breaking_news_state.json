@@ -1,11 +1,5 @@
 {
   "known_ids": [
-    "5dc9f7ee915e",
-    "593494e6f1b9",
-    "408ef0ef57de",
-    "ede5a08fcbc1",
-    "47c247cd616d",
-    "ee55c3a60de3",
     "a7cdc022de06",
     "6738ad996822",
     "9040ca40a891",
@@ -499,7 +493,13 @@
     "43cc8faba191",
     "e547a300c828",
     "1c3368772972",
-    "961fe3fb11a2"
+    "961fe3fb11a2",
+    "42195f961b69",
+    "f48b5b0b93df",
+    "9ae93c258456",
+    "46d3707bcbbc",
+    "264f042ac75d",
+    "4d8ddcc70be0"
   ],
   "failed_ids": {
     "6315619dceb6": "2026-05-23T17:46:06.599470+00:00",
@@ -526,126 +526,21 @@
     "49574a2d7059": "2026-05-23T20:44:39.794213+00:00",
     "debe1948606c": "2026-05-23T20:44:39.794213+00:00",
     "13ce3ef1b130": "2026-05-23T20:44:39.794213+00:00",
-    "2804931fea70": "2026-05-23T20:44:39.794213+00:00"
+    "2804931fea70": "2026-05-23T20:44:39.794213+00:00",
+    "5a428dfeb9df": "2026-05-23T21:40:18.283557+00:00",
+    "ff63392b4164": "2026-05-23T21:40:18.283557+00:00",
+    "99074b49c860": "2026-05-23T21:40:18.283557+00:00",
+    "85e0a2b2ad68": "2026-05-23T21:40:18.283557+00:00",
+    "01ad020c4437": "2026-05-23T21:40:18.283557+00:00",
+    "605002f7f0f6": "2026-05-23T21:40:18.283557+00:00",
+    "af06a9735a60": "2026-05-23T21:40:18.283557+00:00",
+    "4501782b3890": "2026-05-23T21:40:18.283557+00:00",
+    "38633d69fdef": "2026-05-23T21:40:18.283557+00:00",
+    "8b32d4712a65": "2026-05-23T21:40:18.283557+00:00",
+    "b486ebdcbdaa": "2026-05-23T21:40:18.283557+00:00",
+    "40d7f667df88": "2026-05-23T21:40:18.283557+00:00"
   },
   "live_clusters": {
-    "08a5837b1f102d47": {
-      "topic": "Jude Bellingham adidas Climacool Solar Red Sneaker Release",
-      "item_ids": [
-        "324260636e1c"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9a3304c40bf5cd25": {
-      "topic": "Air Jordan 1 'Workwear' Sneaker Release",
-      "item_ids": [
-        "f4c5132e73bc"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "edb0318827ec093a": {
-      "topic": "NCT TAEYONG 'WYLD' Album Evolution Interview",
-      "item_ids": [
-        "8a94c2c63ea3"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6ad8800a4feb645f": {
-      "topic": "Ryan Porter Jazz Trombonist Kendrick Lamar Collaborator Death Obituary",
-      "item_ids": [
-        "68d4611f4d3c"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4affed67282ee18a": {
-      "topic": "Christian Nodal 'Bandera Blanca' Album Ranking Review",
-      "item_ids": [
-        "31b07a3cadf1"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8b291afecb3a2937": {
-      "topic": "Cannes Un Certain Regard Winners Sandra Wollner 'Everytime' Top Prize",
-      "item_ids": [
-        "b8479585ae78"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "97890f820467cf83": {
-      "topic": "'Spartacus: House Of Ashur' Starz Cancellation One Season",
-      "item_ids": [
-        "7cba577e683e"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a3fcc72e3f80ec66": {
-      "topic": "Ronaldo Canelo Forbes Highest Paid Athletes List Ranking",
-      "item_ids": [
-        "e454816d9925"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eca4c3d16cced891": {
-      "topic": "Blue Origin New Glenn Mega-Rocket Cleared to Fly April Mishap",
-      "item_ids": [
-        "e3e1f21c8d7e"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f6ddb8c6ea16ac80": {
-      "topic": "Google Disco Ball Icons Design Update",
-      "item_ids": [
-        "d4ba36838dce"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c357dadfbe404a80": {
-      "topic": "VCs Founders Inflated ARR AI Startups Valuation Analysis",
-      "item_ids": [
-        "6c669bd48f01"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4e31542e65e2fbe4": {
-      "topic": "Qualcomm Stock Rally AI Devices Boom Investor Growth",
-      "item_ids": [
-        "010c480abc4f"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a330623ec58832c5": {
-      "topic": "Walmart Top Executives Departure New CEO John Furner",
-      "item_ids": [
-        "74548e62f123"
-      ],
-      "created_at": "2026-05-22T21:38:21.607561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "e45c284bc507e1de": {
       "topic": "Zach Braff Scrubs Revival Interview Fan Base Pressure",
       "item_ids": [
@@ -658,7 +553,8 @@
     "974c0d1c483509e9": {
       "topic": "Emmy Awards Outstanding Variety Series New Rules Multiple Winners SNL",
       "item_ids": [
-        "afc94e4eadbc"
+        "afc94e4eadbc",
+        "f48b5b0b93df"
       ],
       "created_at": "2026-05-22T22:39:54.819535+00:00",
       "last_escalated_size": 0,
@@ -1321,11 +1217,19 @@
       "topic": "Cannes 2026 Film Festival Winners Red Carpet Arrivals",
       "item_ids": [
         "401f45d7d214",
-        "9e5e4b2c6b62"
+        "9e5e4b2c6b62",
+        "9ae93c258456"
       ],
       "created_at": "2026-05-23T17:46:32.972445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-23T21:40:18.283557+00:00",
+      "picks_file": "picks/picks-2026-05-23-2140.md",
+      "why_text": "The 2026 Palme d'Or race has landed, with Park Chan-Wook's jury making waves not just for who won but how \u2014 multiple tied categories in acting and directing signal a panel that refused to play it safe. Films like 'La Bola Negra,' 'Fatherland,' and 'Minotaur' are now entering the global conversation, the kind of Cannes moment that reshapes arthouse release calendars overnight. A jury admitting 'we couldn't decide' is rare candor from the Croisette \u2014 and it makes every tie feel like a genuine statement rather than a compromise.",
+      "last_escalated_item_ids": [
+        "401f45d7d214",
+        "9e5e4b2c6b62",
+        "9ae93c258456"
+      ]
     },
     "e4b68ad4ff6c41f1": {
       "topic": "Lego Batman: Legacy Of The Dark Knight Video Game Development",
@@ -1488,7 +1392,16 @@
       "created_at": "2026-05-23T20:45:11.643304+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "7aed170cd2dccaec": {
+      "topic": "Dick Parry Pink Floyd Saxophonist Death Obituary",
+      "item_ids": [
+        "42195f961b69"
+      ],
+      "created_at": "2026-05-23T21:40:46.812687+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T20:45:11.644463+00:00"
+  "last_checked": "2026-05-23T21:40:53.425619+00:00"
 }
