@@ -1,15 +1,5 @@
 {
   "known_ids": [
-    "8f4cf4379fd8",
-    "fd7590ccc168",
-    "b0de73434e03",
-    "c588752d4e5e",
-    "71e8697d7644",
-    "eea433da1712",
-    "827753236b6c",
-    "b31619673242",
-    "cbc9a3001c03",
-    "45975d476880",
     "95171700dd4c",
     "5ac891adc95b",
     "c106382df1b3",
@@ -499,22 +489,19 @@
     "17e508155961",
     "047394d7d41e",
     "25f2c841ef00",
-    "1171da894157"
+    "1171da894157",
+    "f17021387847",
+    "4bd6bf6878ca",
+    "91a3489e31de",
+    "035f45136bf5",
+    "457d50ed3517",
+    "401f45d7d214",
+    "266de9a15aee",
+    "b3f71bfcbb8d",
+    "1eaf3737dcb5",
+    "3865bac7d098"
   ],
   "failed_ids": {
-    "7f462d89b90e": "2026-05-23T13:27:24.691464+00:00",
-    "bcb2aaec324e": "2026-05-23T13:27:24.691464+00:00",
-    "e9000b15ea57": "2026-05-23T13:27:24.691464+00:00",
-    "f1ede37c1a26": "2026-05-23T13:27:24.691464+00:00",
-    "fb4f2d9b3baf": "2026-05-23T13:27:24.691464+00:00",
-    "785fb63da2d3": "2026-05-23T13:27:24.691464+00:00",
-    "69ddbec1d560": "2026-05-23T13:27:24.691464+00:00",
-    "90a788c6bbb3": "2026-05-23T13:27:24.691464+00:00",
-    "f3d96a27a0f5": "2026-05-23T13:27:24.691464+00:00",
-    "1e1143f86185": "2026-05-23T13:27:24.691464+00:00",
-    "11ebee98b464": "2026-05-23T13:27:24.691464+00:00",
-    "4b8428921ce1": "2026-05-23T13:27:24.691464+00:00",
-    "8937af86919c": "2026-05-23T13:27:24.691464+00:00",
     "e715c8d79fd6": "2026-05-23T14:47:56.300149+00:00",
     "b05a641ccd89": "2026-05-23T14:47:56.300149+00:00",
     "7b0a44e37a35": "2026-05-23T14:47:56.300149+00:00",
@@ -540,7 +527,15 @@
     "bfdfac347907": "2026-05-23T16:44:08.413743+00:00",
     "13ce3ef1b130": "2026-05-23T16:44:08.413743+00:00",
     "debe1948606c": "2026-05-23T16:44:08.413743+00:00",
-    "27194cd3fc0b": "2026-05-23T16:44:08.413743+00:00"
+    "27194cd3fc0b": "2026-05-23T16:44:08.413743+00:00",
+    "6315619dceb6": "2026-05-23T17:46:06.599470+00:00",
+    "e1bd44d7ee31": "2026-05-23T17:46:06.599470+00:00",
+    "4ab0d2d3c504": "2026-05-23T17:46:06.599470+00:00",
+    "1e1143f86185": "2026-05-23T17:46:06.599470+00:00",
+    "11ebee98b464": "2026-05-23T17:46:06.599470+00:00",
+    "4b8428921ce1": "2026-05-23T17:46:06.599470+00:00",
+    "8937af86919c": "2026-05-23T17:46:06.599470+00:00",
+    "92570e983f70": "2026-05-23T17:46:06.599470+00:00"
   },
   "live_clusters": {
     "febea7c2b7c81239": {
@@ -737,7 +732,8 @@
     "cdeb292121bf468a": {
       "topic": "Boots Riley Indie Holiday Films 'I Love Boosters' 'Tuner' 'Saccharine'",
       "item_ids": [
-        "9e2385ad59fe"
+        "9e2385ad59fe",
+        "b3f71bfcbb8d"
       ],
       "created_at": "2026-05-22T18:17:57.277456+00:00",
       "last_escalated_size": 0,
@@ -1238,7 +1234,8 @@
     "d4c10b39da65e9f3": {
       "topic": "2026 French Open Live Streaming Viewing Guide",
       "item_ids": [
-        "5980cd955260"
+        "5980cd955260",
+        "457d50ed3517"
       ],
       "created_at": "2026-05-22T23:46:50.542811+00:00",
       "last_escalated_size": 0,
@@ -1467,11 +1464,20 @@
     "90b9c8dcd99c651d": {
       "topic": "Stephen Colbert Public Access TV Appearance Monroe Michigan",
       "item_ids": [
-        "7bdeb4910f5c"
+        "7bdeb4910f5c",
+        "4bd6bf6878ca",
+        "3865bac7d098"
       ],
       "created_at": "2026-05-23T13:27:51.186018+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-23T17:46:06.599470+00:00",
+      "picks_file": "picks/picks-2026-05-23-1746.md",
+      "why_text": "One day after The Late Show's final CBS broadcast, Stephen Colbert didn't disappear quietly \u2014 he resurfaced on a local Monroe, Michigan public access channel with an absurdist farewell special stacked with Jack White, Jeff Daniels, Eminem, Steve Buscemi, and Byron Allen. It's a deliberately lo-fi mic drop: after decades of prestige late night, Colbert chose public access as his final statement, which is both a joke and a genuine rebuke of the formats that define mainstream TV success. The stunt lands harder because it actually worked \u2014 the celebrity lineup made it a cultural event, not a gag.",
+      "last_escalated_item_ids": [
+        "7bdeb4910f5c",
+        "4bd6bf6878ca",
+        "3865bac7d098"
+      ]
     },
     "03441e05a02f6a64": {
       "topic": "Mark Cousins 16-Chapter Documentary Cinema History Cannes",
@@ -1593,7 +1599,8 @@
     "6e075340a33c6eac": {
       "topic": "Kyle Busch Death Pneumonia Sepsis",
       "item_ids": [
-        "58417b834aad"
+        "58417b834aad",
+        "035f45136bf5"
       ],
       "created_at": "2026-05-23T15:51:25.663151+00:00",
       "last_escalated_size": 0,
@@ -1742,7 +1749,43 @@
       "created_at": "2026-05-23T16:44:44.928105+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "31a123e1e3f726c3": {
+      "topic": "Nike Kobe 4 Protro 'Lakers' Sneaker Release",
+      "item_ids": [
+        "f17021387847"
+      ],
+      "created_at": "2026-05-23T17:46:32.972445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "588883d83dd2fcf5": {
+      "topic": "Shakira & Burna Boy 'Dai Dai' Music Video World Cup Cameos",
+      "item_ids": [
+        "91a3489e31de"
+      ],
+      "created_at": "2026-05-23T17:46:32.972445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "89cfb5e2397023fe": {
+      "topic": "Cannes 2026 Film Festival Winners Red Carpet Arrivals",
+      "item_ids": [
+        "401f45d7d214"
+      ],
+      "created_at": "2026-05-23T17:46:32.972445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e4b68ad4ff6c41f1": {
+      "topic": "Lego Batman: Legacy Of The Dark Knight Video Game Development",
+      "item_ids": [
+        "266de9a15aee"
+      ],
+      "created_at": "2026-05-23T17:46:32.972445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T16:44:57.000764+00:00"
+  "last_checked": "2026-05-23T17:46:39.350252+00:00"
 }
