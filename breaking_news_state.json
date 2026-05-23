@@ -1,13 +1,5 @@
 {
   "known_ids": [
-    "2390dd2b6555",
-    "0ea532dbf2bc",
-    "b251a3019e5f",
-    "796a6c2f8157",
-    "1d5f75213408",
-    "6cd9262b7451",
-    "67c1884eb80b",
-    "3a0c6dc938ae",
     "b3934f17b3b5",
     "25bf0f904753",
     "765ffcecbfbb",
@@ -499,7 +491,15 @@
     "c73c801b7c5b",
     "920555e6d1fa",
     "afaa6c0df9c3",
-    "36cbc78fd8f1"
+    "36cbc78fd8f1",
+    "8c03593e35cc",
+    "416188ccb812",
+    "ec5b13567d21",
+    "22566c44a480",
+    "d30e659ed837",
+    "287b14126e2c",
+    "e0d93312a214",
+    "9563442f0e87"
   ],
   "failed_ids": {
     "7d9648dc04d2": "2026-05-23T07:42:28.028210+00:00",
@@ -512,7 +512,19 @@
     "1e1143f86185": "2026-05-23T09:27:07.420632+00:00",
     "11ebee98b464": "2026-05-23T09:27:07.420632+00:00",
     "4b8428921ce1": "2026-05-23T09:27:07.420632+00:00",
-    "8937af86919c": "2026-05-23T09:27:07.420632+00:00"
+    "8937af86919c": "2026-05-23T09:27:07.420632+00:00",
+    "cf80fc36b2be": "2026-05-23T10:53:28.688933+00:00",
+    "96ff09de97f9": "2026-05-23T10:53:28.688933+00:00",
+    "91da70aac7a8": "2026-05-23T10:53:28.688933+00:00",
+    "4f6afec2edcb": "2026-05-23T10:53:28.688933+00:00",
+    "66d61aa646a6": "2026-05-23T10:53:28.688933+00:00",
+    "909c5d0d1e9c": "2026-05-23T10:53:28.688933+00:00",
+    "5609ed44f73e": "2026-05-23T10:53:28.688933+00:00",
+    "1ce93660fa64": "2026-05-23T10:53:28.688933+00:00",
+    "f1a76b832639": "2026-05-23T10:53:28.688933+00:00",
+    "2804931fea70": "2026-05-23T10:53:28.688933+00:00",
+    "bb29f75f87c4": "2026-05-23T10:53:28.688933+00:00",
+    "b486ebdcbdaa": "2026-05-23T10:53:28.688933+00:00"
   },
   "live_clusters": {
     "dda6848463d6b941": {
@@ -1571,11 +1583,19 @@
       "topic": "SpaceX Starship Test Flight Second Attempt Launch",
       "item_ids": [
         "827be42d4293",
-        "1c7f984fcfa7"
+        "1c7f984fcfa7",
+        "e0d93312a214"
       ],
       "created_at": "2026-05-22T22:39:54.819535+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-23T10:53:28.688933+00:00",
+      "picks_file": "picks/picks-2026-05-23-1054.md",
+      "why_text": "SpaceX's third-generation Starship completed its inaugural test flight in a largely successful run \u2014 but the Super Heavy booster was lost on its return attempt, a reminder that even 'successful' missions in this program come with asterisks. For SpaceX, the bar keeps moving: the vehicle flew, the future is closer, but full reusability remains the unchecked box that defines the whole economic model. This is the rocket meant to carry humans to Mars, and every partial win tightens the timeline.",
+      "last_escalated_item_ids": [
+        "827be42d4293",
+        "1c7f984fcfa7",
+        "e0d93312a214"
+      ]
     },
     "659e6f01bb220eb9": {
       "topic": "Dutton Ranch Episode 3 Cattle Vaccination Plot Controversy",
@@ -1729,7 +1749,43 @@
       "created_at": "2026-05-23T09:27:31.646383+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "42d2c25e6a025b7a": {
+      "topic": "U.K.-Nigeria-Hong Kong Romantic Comedy 'My Nigerian Fiance' in Development",
+      "item_ids": [
+        "8c03593e35cc"
+      ],
+      "created_at": "2026-05-23T10:54:02.271588+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dca371e1c52eecb0": {
+      "topic": "'Discovering Sambha' Documentary on Sholay Actor Mac Mohan",
+      "item_ids": [
+        "416188ccb812"
+      ],
+      "created_at": "2026-05-23T10:54:02.271588+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aab9e754bdcc32db": {
+      "topic": "Australian Animated Series 'Finally, a Show About Men!' YouTube Launch Masculinity Satire",
+      "item_ids": [
+        "ec5b13567d21"
+      ],
+      "created_at": "2026-05-23T10:54:02.271588+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0c7aa0849fb67c47": {
+      "topic": "UEFA Women's Champions League Final Barcelona vs. OL Lyonnais Viewing Guide",
+      "item_ids": [
+        "22566c44a480"
+      ],
+      "created_at": "2026-05-23T10:54:02.271588+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T09:27:31.647542+00:00"
+  "last_checked": "2026-05-23T10:54:07.790155+00:00"
 }
