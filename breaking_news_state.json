@@ -1,14 +1,5 @@
 {
   "known_ids": [
-    "6ec44603e698",
-    "83d83b1f36a5",
-    "1e9bf278d3de",
-    "fa9d1ef0097d",
-    "dd4f4603fcaf",
-    "2617144d7096",
-    "bc494f328c7c",
-    "3a83283cc01c",
-    "e9fb85dec57c",
     "6a221343cb74",
     "92eccd065496",
     "69c136cdddd9",
@@ -499,14 +490,18 @@
     "fc87d2a23ca9",
     "d5c64cbaa17c",
     "1dd65f371807",
-    "3bffc6339e5a"
+    "3bffc6339e5a",
+    "cfea06b73e40",
+    "372d204021b0",
+    "7bdeb4910f5c",
+    "afd7e6fb33b8",
+    "4a77ae9ab06b",
+    "049609b07c31",
+    "bc7c9b4e4932",
+    "7f38be23843e",
+    "54e048defc2b"
   ],
   "failed_ids": {
-    "a33e7e0c915b": "2026-05-23T09:27:07.420632+00:00",
-    "1e1143f86185": "2026-05-23T09:27:07.420632+00:00",
-    "11ebee98b464": "2026-05-23T09:27:07.420632+00:00",
-    "4b8428921ce1": "2026-05-23T09:27:07.420632+00:00",
-    "8937af86919c": "2026-05-23T09:27:07.420632+00:00",
     "cf80fc36b2be": "2026-05-23T10:53:28.688933+00:00",
     "96ff09de97f9": "2026-05-23T10:53:28.688933+00:00",
     "91da70aac7a8": "2026-05-23T10:53:28.688933+00:00",
@@ -526,7 +521,20 @@
     "7e0e10b15062": "2026-05-23T11:56:21.765111+00:00",
     "01065d86b866": "2026-05-23T11:56:21.765111+00:00",
     "13ce3ef1b130": "2026-05-23T11:56:21.765111+00:00",
-    "debe1948606c": "2026-05-23T11:56:21.765111+00:00"
+    "debe1948606c": "2026-05-23T11:56:21.765111+00:00",
+    "7f462d89b90e": "2026-05-23T13:27:24.691464+00:00",
+    "bcb2aaec324e": "2026-05-23T13:27:24.691464+00:00",
+    "e9000b15ea57": "2026-05-23T13:27:24.691464+00:00",
+    "f1ede37c1a26": "2026-05-23T13:27:24.691464+00:00",
+    "fb4f2d9b3baf": "2026-05-23T13:27:24.691464+00:00",
+    "785fb63da2d3": "2026-05-23T13:27:24.691464+00:00",
+    "69ddbec1d560": "2026-05-23T13:27:24.691464+00:00",
+    "90a788c6bbb3": "2026-05-23T13:27:24.691464+00:00",
+    "f3d96a27a0f5": "2026-05-23T13:27:24.691464+00:00",
+    "1e1143f86185": "2026-05-23T13:27:24.691464+00:00",
+    "11ebee98b464": "2026-05-23T13:27:24.691464+00:00",
+    "4b8428921ce1": "2026-05-23T13:27:24.691464+00:00",
+    "8937af86919c": "2026-05-23T13:27:24.691464+00:00"
   },
   "live_clusters": {
     "98376140ebf10058": {
@@ -1778,7 +1786,71 @@
       "created_at": "2026-05-23T11:56:46.212597+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "bbfce3b2eed493bd": {
+      "topic": "Travis Kelce Rolex Watch Feature",
+      "item_ids": [
+        "cfea06b73e40"
+      ],
+      "created_at": "2026-05-23T13:27:51.186018+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "74df8904651cc2b7": {
+      "topic": "Lukas Dhont 'Coward' Mubi Cannes Acquisition",
+      "item_ids": [
+        "372d204021b0",
+        "afd7e6fb33b8"
+      ],
+      "created_at": "2026-05-23T13:27:51.186018+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "90b9c8dcd99c651d": {
+      "topic": "Stephen Colbert Public Access TV Appearance Monroe Michigan",
+      "item_ids": [
+        "7bdeb4910f5c"
+      ],
+      "created_at": "2026-05-23T13:27:51.186018+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "03441e05a02f6a64": {
+      "topic": "Mark Cousins 16-Chapter Documentary Cinema History Cannes",
+      "item_ids": [
+        "4a77ae9ab06b"
+      ],
+      "created_at": "2026-05-23T13:27:51.186018+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d237ff4845136998": {
+      "topic": "Elon Musk Solar Power Earth Abandonment",
+      "item_ids": [
+        "049609b07c31"
+      ],
+      "created_at": "2026-05-23T13:27:51.186018+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c1e2bae51949d16": {
+      "topic": "Anthropic Mythos Security Vulnerability Detection 10000 Findings",
+      "item_ids": [
+        "bc7c9b4e4932"
+      ],
+      "created_at": "2026-05-23T13:27:51.186018+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "369baa0d18241806": {
+      "topic": "Blue Dot Fever Summer Live Music Industry Dynamics",
+      "item_ids": [
+        "7f38be23843e"
+      ],
+      "created_at": "2026-05-23T13:27:51.186018+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T11:56:46.213711+00:00"
+  "last_checked": "2026-05-23T13:27:51.187180+00:00"
 }
