@@ -1,9 +1,5 @@
 {
   "known_ids": [
-    "3733505ee37c",
-    "7ba2fce75225",
-    "b71a550d794e",
-    "1ac31b353a66",
     "2390dd2b6555",
     "0ea532dbf2bc",
     "b251a3019e5f",
@@ -499,82 +495,26 @@
     "9310df355270",
     "3ab468916075",
     "42adec4eda48",
-    "54cda1669d81"
+    "54cda1669d81",
+    "c73c801b7c5b",
+    "920555e6d1fa",
+    "afaa6c0df9c3",
+    "36cbc78fd8f1"
   ],
   "failed_ids": {
-    "81c7b5f466f5": "2026-05-23T05:09:36.471522+00:00",
-    "2debe551ba08": "2026-05-23T05:09:36.471522+00:00",
-    "1656a1b0f9a0": "2026-05-23T05:09:36.471522+00:00",
-    "f7e164c871e2": "2026-05-23T05:09:36.471522+00:00",
-    "209f02defe9f": "2026-05-23T05:09:36.471522+00:00",
-    "17924d9e6312": "2026-05-23T05:09:36.471522+00:00",
-    "ec1720e62b0e": "2026-05-23T05:09:36.471522+00:00",
-    "cc5c5014b504": "2026-05-23T05:09:36.471522+00:00",
-    "1e1143f86185": "2026-05-23T05:09:36.471522+00:00",
-    "11ebee98b464": "2026-05-23T05:09:36.471522+00:00",
-    "4b8428921ce1": "2026-05-23T05:09:36.471522+00:00",
     "7d9648dc04d2": "2026-05-23T07:42:28.028210+00:00",
     "f0633374f3d9": "2026-05-23T07:42:28.028210+00:00",
     "167f5fc352db": "2026-05-23T07:42:28.028210+00:00",
     "62c3b758fa63": "2026-05-23T07:42:28.028210+00:00",
     "13ce3ef1b130": "2026-05-23T07:42:28.028210+00:00",
-    "debe1948606c": "2026-05-23T07:42:28.028210+00:00"
+    "debe1948606c": "2026-05-23T07:42:28.028210+00:00",
+    "a33e7e0c915b": "2026-05-23T09:27:07.420632+00:00",
+    "1e1143f86185": "2026-05-23T09:27:07.420632+00:00",
+    "11ebee98b464": "2026-05-23T09:27:07.420632+00:00",
+    "4b8428921ce1": "2026-05-23T09:27:07.420632+00:00",
+    "8937af86919c": "2026-05-23T09:27:07.420632+00:00"
   },
   "live_clusters": {
-    "93cbcb4971c51970": {
-      "topic": "White Lotus Thailand Tourism Impact $36.5 Million Spending 300% Surge",
-      "item_ids": [
-        "04f3239fe442"
-      ],
-      "created_at": "2026-05-22T08:43:27.579711+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "157a9a1aead4fdb2": {
-      "topic": "Paul Di'Anno Documentary Wes Orshoski Iron Maiden",
-      "item_ids": [
-        "9f277f6c5896"
-      ],
-      "created_at": "2026-05-22T08:43:27.579711+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "42846574f8497c67": {
-      "topic": "Lola Young Reflective Single 'From Down Here' Release",
-      "item_ids": [
-        "99d05ce9f4c3"
-      ],
-      "created_at": "2026-05-22T08:43:27.579711+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d6c5ed22dba52301": {
-      "topic": "Naomie Harris Christina Hendricks BBC Drama 'Reputation' Celebrity Legal Battle",
-      "item_ids": [
-        "3fac909a4ab5"
-      ],
-      "created_at": "2026-05-22T08:43:27.579711+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fb493fdaf501c6a5": {
-      "topic": "YouTube EMEA Boss Edinburgh TV Festival MacTaggart Speech",
-      "item_ids": [
-        "bf7fc75cfa1d"
-      ],
-      "created_at": "2026-05-22T08:43:27.579711+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "532586162ae466a5": {
-      "topic": "Reed Van Dyk Boyd Holbrook Gheed 'Atonement' War Film Cannes Studio",
-      "item_ids": [
-        "8d8f6ac08c62"
-      ],
-      "created_at": "2026-05-22T08:43:27.579711+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "dda6848463d6b941": {
       "topic": "'Rehearsals For A Revolution' Documentary L'Oeil D'Or Prize Cannes Film Festival",
       "item_ids": [
@@ -1771,7 +1711,25 @@
       "created_at": "2026-05-23T07:42:55.083275+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "cb2a622b6a6e6dfd": {
+      "topic": "'Jim Queen' Adult Animation Series Review",
+      "item_ids": [
+        "c73c801b7c5b"
+      ],
+      "created_at": "2026-05-23T09:27:31.646383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7ce84a2de0cbbe45": {
+      "topic": "Memory Chip Supercycle 2026 Micron Sandisk Stock Analysis",
+      "item_ids": [
+        "afaa6c0df9c3"
+      ],
+      "created_at": "2026-05-23T09:27:31.646383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T07:42:55.084556+00:00"
+  "last_checked": "2026-05-23T09:27:31.647542+00:00"
 }
