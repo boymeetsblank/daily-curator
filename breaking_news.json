@@ -1,6 +1,91 @@
 {
   "items": [
     {
+      "id": "956403d4a033",
+      "topic": "Netflix Closing In On Cannes Competition Buzz Title ‘La Bola Negra’ For The U.S. After Buyer Chase",
+      "traffic": "",
+      "detected_at": "2026-05-23T11:56:21.765111+00:00",
+      "search_url": "https://deadline.com/2026/05/bola-negra-sells-x-cannes-competition-penelope-cruz-1236919351/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "a031f0bb5305843b"
+    },
+    {
+      "id": "3cedfee29556",
+      "topic": "L.L.Bean's Zip Hunter's Tote Is the Only Carryall You Need",
+      "traffic": "",
+      "detected_at": "2026-05-23T11:56:21.765111+00:00",
+      "search_url": "https://www.wired.com/story/llbean-zip-hunters-tote-bag/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "eddd4d5237a00ad5"
+    },
+    {
+      "id": "a2a71085d236",
+      "topic": "Quantum ‘Jamming’ Could Help Unlock the Mysteries of Causality",
+      "traffic": "",
+      "detected_at": "2026-05-23T11:56:21.765111+00:00",
+      "search_url": "https://www.wired.com/story/quantum-jamming-could-help-unlock-the-mysteries-of-causality/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "c341044458839d9a"
+    },
+    {
+      "id": "5f3891dc9bee",
+      "topic": "Myst and Riven remakes, the return of Bubsy and other new indie games worth checking out",
+      "traffic": "",
+      "detected_at": "2026-05-23T11:56:21.765111+00:00",
+      "search_url": "https://www.engadget.com/2179711/myst-riven-remakes-the-return-of-bubsy-and-other-new-indie-games-worth-checking-out/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "1823c39024efeede"
+    },
+    {
+      "id": "fc87d2a23ca9",
+      "topic": "These Houston schools are saying no to AI and devices and yes to paper and pen - Houston Chronicle",
+      "traffic": "",
+      "detected_at": "2026-05-23T11:56:21.765111+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNGpHUjVuNHJiWmVKWDg4ZE9temphSHlMblQ4bWF0ZVBtVWhQbVJ3OTFhbUc5a1VQczAzNGlwYVB4Q3JxS0ZpbHZ1aWtCU0NNSTNYWVEtN1g1Tzk5c0J6bUpoZDlPZk84UHpLZmxPTjhUUmg1V3VoVWVJVGhWZ0tVbDdLdWVieVFpY3Q1NS05aE5ta2V6VExoN09HQmFBTnNFS1B2ZFB0d1ZUMmNNc1BOc2hXTVhGNkpq?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "ce47151022820945"
+    },
+    {
+      "id": "d5c64cbaa17c",
+      "topic": "Yankees",
+      "traffic": "##21 on X",
+      "detected_at": "2026-05-23T11:56:21.765111+00:00",
+      "search_url": "https://x.com/search?q=Yankees&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "1dd65f371807",
+      "topic": "Texas",
+      "traffic": "##23 on X",
+      "detected_at": "2026-05-23T11:56:21.765111+00:00",
+      "search_url": "https://x.com/search?q=Texas&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "3bffc6339e5a",
+      "topic": "#BostonBlue",
+      "traffic": "##24 on X",
+      "detected_at": "2026-05-23T11:56:21.765111+00:00",
+      "search_url": "https://x.com/search?q=%23BostonBlue&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "8c03593e35cc",
       "topic": "U.K.-Nigeria-Hong Kong Romantic Comedy ‘My Nigerian Fiance’ in the Works (EXCLUSIVE)",
       "traffic": "",
@@ -304,106 +389,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 5
-    },
-    {
-      "id": "49e13cfa293c",
-      "topic": "‘Dutton Ranch’ Episode 3: Rip’s Cattle Might Be Ruined by Anti-Vaxxers and Carter Avoids Getting Murdered After Peeing on a Truck",
-      "traffic": "",
-      "detected_at": "2026-05-22T23:46:23.122796+00:00",
-      "search_url": "https://variety.com/2026/tv/news/dutton-ranch-episode-3-recap-rip-sick-cattle-carter-hookup-1236757328/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "659e6f01bb220eb9"
-    },
-    {
-      "id": "a705b5ffcf61",
-      "topic": "How ‘Epic Ride: The Story of Universal’s Theme Parks’ Docuseries Captures the Race to Meet Opening Day Deadline",
-      "traffic": "",
-      "detected_at": "2026-05-22T23:46:23.122796+00:00",
-      "search_url": "https://variety.com/2026/artisans/news/epic-universal-theme-park-docu-series-1236757326/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "1da88b293980878d"
-    },
-    {
-      "id": "5980cd955260",
-      "topic": "Here’s Where to Watch the 2026 French Open Live Online for Free",
-      "traffic": "",
-      "detected_at": "2026-05-22T23:46:23.122796+00:00",
-      "search_url": "https://www.billboard.com/culture/product-recommendations/french-open-2026-tennis-watch-live-online-free-1236251399/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "d4c10b39da65e9f3"
-    },
-    {
-      "id": "d290d820604f",
-      "topic": "‘It Takes Two’ Rapper Rob Base Dead at 59",
-      "traffic": "",
-      "detected_at": "2026-05-22T23:46:23.122796+00:00",
-      "search_url": "https://www.billboard.com/music/rb-hip-hop/rob-base-death-it-takes-two-rapper-1236255578/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "7aa89da1b243dc49"
-    },
-    {
-      "id": "c576f20ec4e4",
-      "topic": "Here’s What to Buy During the Massive Men’s Wearhouse Memorial Day Sale",
-      "traffic": "",
-      "detected_at": "2026-05-22T23:46:23.122796+00:00",
-      "search_url": "https://www.rollingstone.com/product-recommendations/style/mens-wearhouse-memorial-day-sale-best-deals-1235567891/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "1cff754a9d3d4e90"
-    },
-    {
-      "id": "afaff13bbfbc",
-      "topic": "Rob Base, ‘It Takes Two’ Rapper, Dead at 59",
-      "traffic": "",
-      "detected_at": "2026-05-22T23:46:23.122796+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-news/rob-base-it-takes-two-rapper-dead-obituary-1235567888/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "7aa89da1b243dc49"
-    },
-    {
-      "id": "a54f3c0afe74",
-      "topic": "‘Stranger Things’ Duffer Brothers & Shawn Levy Donate Eleven’s Pink Dress To The Smithsonian",
-      "traffic": "",
-      "detected_at": "2026-05-22T23:46:23.122796+00:00",
-      "search_url": "https://deadline.com/2026/05/stranger-things-eleven-pink-dress-donated-the-smithsonian-1236919522/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "35b82f6dfd6f9240"
-    },
-    {
-      "id": "fd275f985643",
-      "topic": "AI is being used to resurrect the voices of dead pilots",
-      "traffic": "",
-      "detected_at": "2026-05-22T23:46:23.122796+00:00",
-      "search_url": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "da092f21a587b91d"
-    },
-    {
-      "id": "1c7f984fcfa7",
-      "topic": "SpaceX launches Starship V3 for the first time, but loses booster on return",
-      "traffic": "",
-      "detected_at": "2026-05-22T23:46:23.122796+00:00",
-      "search_url": "https://techcrunch.com/2026/05/22/spacex-launches-starship-v3-for-the-first-time-but-loses-booster-on-return/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "5d0c0dea83c94f5d"
     }
   ],
-  "last_checked": "2026-05-23T10:53:28.688933+00:00"
+  "last_checked": "2026-05-23T11:56:21.765111+00:00"
 }

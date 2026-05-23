@@ -1,13 +1,5 @@
 {
   "known_ids": [
-    "b3934f17b3b5",
-    "25bf0f904753",
-    "765ffcecbfbb",
-    "346964939397",
-    "6564365fc571",
-    "55179437b1ad",
-    "302705df3c5c",
-    "725d3b12f441",
     "6ec44603e698",
     "83d83b1f36a5",
     "1e9bf278d3de",
@@ -499,15 +491,17 @@
     "d30e659ed837",
     "287b14126e2c",
     "e0d93312a214",
-    "9563442f0e87"
+    "9563442f0e87",
+    "956403d4a033",
+    "3cedfee29556",
+    "a2a71085d236",
+    "5f3891dc9bee",
+    "fc87d2a23ca9",
+    "d5c64cbaa17c",
+    "1dd65f371807",
+    "3bffc6339e5a"
   ],
   "failed_ids": {
-    "7d9648dc04d2": "2026-05-23T07:42:28.028210+00:00",
-    "f0633374f3d9": "2026-05-23T07:42:28.028210+00:00",
-    "167f5fc352db": "2026-05-23T07:42:28.028210+00:00",
-    "62c3b758fa63": "2026-05-23T07:42:28.028210+00:00",
-    "13ce3ef1b130": "2026-05-23T07:42:28.028210+00:00",
-    "debe1948606c": "2026-05-23T07:42:28.028210+00:00",
     "a33e7e0c915b": "2026-05-23T09:27:07.420632+00:00",
     "1e1143f86185": "2026-05-23T09:27:07.420632+00:00",
     "11ebee98b464": "2026-05-23T09:27:07.420632+00:00",
@@ -524,63 +518,17 @@
     "f1a76b832639": "2026-05-23T10:53:28.688933+00:00",
     "2804931fea70": "2026-05-23T10:53:28.688933+00:00",
     "bb29f75f87c4": "2026-05-23T10:53:28.688933+00:00",
-    "b486ebdcbdaa": "2026-05-23T10:53:28.688933+00:00"
+    "b486ebdcbdaa": "2026-05-23T10:53:28.688933+00:00",
+    "198f7068b783": "2026-05-23T11:56:21.765111+00:00",
+    "1679b76015a0": "2026-05-23T11:56:21.765111+00:00",
+    "d9a8869b6d37": "2026-05-23T11:56:21.765111+00:00",
+    "8a402de2b21c": "2026-05-23T11:56:21.765111+00:00",
+    "7e0e10b15062": "2026-05-23T11:56:21.765111+00:00",
+    "01065d86b866": "2026-05-23T11:56:21.765111+00:00",
+    "13ce3ef1b130": "2026-05-23T11:56:21.765111+00:00",
+    "debe1948606c": "2026-05-23T11:56:21.765111+00:00"
   },
   "live_clusters": {
-    "dda6848463d6b941": {
-      "topic": "'Rehearsals For A Revolution' Documentary L'Oeil D'Or Prize Cannes Film Festival",
-      "item_ids": [
-        "330fd9f4566b"
-      ],
-      "created_at": "2026-05-22T11:33:10.544014+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1734451e07a7b427": {
-      "topic": "Ira Sachs 'The Man I Love' 1980s New York Film Cannes Studio",
-      "item_ids": [
-        "af2658d8475c"
-      ],
-      "created_at": "2026-05-22T11:33:10.544014+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ba2006f627bba028": {
-      "topic": "Google I/O 2026 Keynote Announcements Product Releases",
-      "item_ids": [
-        "b7b956da4c99"
-      ],
-      "created_at": "2026-05-22T11:33:10.544014+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6b30d469e50caa4e": {
-      "topic": "SpaceX Starship Launch Delay German Launch Company Canada Partnership",
-      "item_ids": [
-        "5182e5706991"
-      ],
-      "created_at": "2026-05-22T11:33:10.544014+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "40682dc33a9db466": {
-      "topic": "Open Source Code Poisoning Attack Hacker Group Security Threat",
-      "item_ids": [
-        "682b115b447c"
-      ],
-      "created_at": "2026-05-22T11:33:10.544014+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "16b564577bbfe4df": {
-      "topic": "Est\u00e9e Lauder Stock Surge Puig Merger Deal Talks End",
-      "item_ids": [
-        "0e53e2b83911"
-      ],
-      "created_at": "2026-05-22T11:33:10.544014+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "98376140ebf10058": {
       "topic": "Auralee New Balance Collaborative Sneaker Release",
       "item_ids": [
@@ -1785,7 +1733,52 @@
       "created_at": "2026-05-23T10:54:02.271588+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "a031f0bb5305843b": {
+      "topic": "Netflix Acquires 'La Bola Negra' Cannes Competition Film US Distribution Rights",
+      "item_ids": [
+        "956403d4a033"
+      ],
+      "created_at": "2026-05-23T11:56:46.212597+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eddd4d5237a00ad5": {
+      "topic": "L.L.Bean Zip Hunter's Tote Carryall Fashion Product Feature",
+      "item_ids": [
+        "3cedfee29556"
+      ],
+      "created_at": "2026-05-23T11:56:46.212597+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c341044458839d9a": {
+      "topic": "Quantum Jamming Physics Research Causality Mysteries",
+      "item_ids": [
+        "a2a71085d236"
+      ],
+      "created_at": "2026-05-23T11:56:46.212597+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1823c39024efeede": {
+      "topic": "Myst Riven Remakes Bubsy Return Indie Games Releases",
+      "item_ids": [
+        "5f3891dc9bee"
+      ],
+      "created_at": "2026-05-23T11:56:46.212597+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ce47151022820945": {
+      "topic": "Houston Schools Reject AI Devices Return to Paper Pen Education",
+      "item_ids": [
+        "fc87d2a23ca9"
+      ],
+      "created_at": "2026-05-23T11:56:46.212597+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T10:54:07.790155+00:00"
+  "last_checked": "2026-05-23T11:56:46.213711+00:00"
 }
