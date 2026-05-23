@@ -1,12 +1,5 @@
 {
   "known_ids": [
-    "6a221343cb74",
-    "92eccd065496",
-    "69c136cdddd9",
-    "81a235d3b0b9",
-    "13887e39ab77",
-    "5155d3d101d5",
-    "e054bce44c34",
     "c7806d70c03c",
     "f67fc7f58083",
     "b6809af8a97d",
@@ -499,7 +492,14 @@
     "049609b07c31",
     "bc7c9b4e4932",
     "7f38be23843e",
-    "54e048defc2b"
+    "54e048defc2b",
+    "3a2f79c571bd",
+    "a1268c814e7a",
+    "20224850697b",
+    "83f73dc99ba1",
+    "b8fb2a6428ef",
+    "02b1a371f955",
+    "a0039b0414d2"
   ],
   "failed_ids": {
     "cf80fc36b2be": "2026-05-23T10:53:28.688933+00:00",
@@ -534,136 +534,13 @@
     "1e1143f86185": "2026-05-23T13:27:24.691464+00:00",
     "11ebee98b464": "2026-05-23T13:27:24.691464+00:00",
     "4b8428921ce1": "2026-05-23T13:27:24.691464+00:00",
-    "8937af86919c": "2026-05-23T13:27:24.691464+00:00"
+    "8937af86919c": "2026-05-23T13:27:24.691464+00:00",
+    "e715c8d79fd6": "2026-05-23T14:47:56.300149+00:00",
+    "b05a641ccd89": "2026-05-23T14:47:56.300149+00:00",
+    "7b0a44e37a35": "2026-05-23T14:47:56.300149+00:00",
+    "e0c502dfc0eb": "2026-05-23T14:47:56.300149+00:00"
   },
   "live_clusters": {
-    "98376140ebf10058": {
-      "topic": "Auralee New Balance Collaborative Sneaker Release",
-      "item_ids": [
-        "d8a10c99f46a"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7425f0583d23e5eb": {
-      "topic": "Rihanna Nike Sneaker Partnership Shift from Puma",
-      "item_ids": [
-        "d1ce1268477f"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1f7e566994f7762d": {
-      "topic": "Drake Best Songs Ranking Feature",
-      "item_ids": [
-        "744904b72a2b"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2170f33fb36b2bb9": {
-      "topic": "Valeska Grisebach 'The Dreamed Adventure' Cannes Palme d'Or Contender",
-      "item_ids": [
-        "0e3b567295b0",
-        "55f0eb353903",
-        "0befc6eda3e1"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-22T16:28:35.144971+00:00",
-      "picks_file": "picks/picks-2026-05-22-1629.md",
-      "why_text": "Valeska Grisebach \u2014 the German director behind the quiet masterpiece 'Western' \u2014 is back at Cannes with 'The Dreamed Adventure,' a small-town gangster epic that's already pulling five-minute ovations and serious Palme d'Or buzz. Her approach of collapsing genre conventions into raw, non-professional-driven realism is exactly the kind of cinema Cannes loves to crown, and a win here would be a landmark moment for European arthouse. With critics calling it 'wildly audacious,' this is the film that could define the festival.",
-      "last_escalated_item_ids": [
-        "0e3b567295b0",
-        "55f0eb353903",
-        "0befc6eda3e1"
-      ]
-    },
-    "6316b886a1b09f8d": {
-      "topic": "amfAR 32nd Cannes Gala AIDS Research Fundraiser $20 Million",
-      "item_ids": [
-        "fef5ec65ece7"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3ede21ab4f168664": {
-      "topic": "Sofa 16 Linear TV Channels YouTube Launch Brazil Latin America US Portugal",
-      "item_ids": [
-        "d0589b9b71f0"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a27933c8da9746e4": {
-      "topic": "Olivia Rodrigo 'The Cure' Single Release Review",
-      "item_ids": [
-        "d02870ae46ac"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "deeb968d0438100d": {
-      "topic": "Philipp Jung Get Physical Co-Founder Death Obituary",
-      "item_ids": [
-        "afb992ed2324"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "acfffebb3439adff": {
-      "topic": "Moses Sumney 'Is God Is' Film Scoring Debut",
-      "item_ids": [
-        "7baa9b4c7175",
-        "b0546d206757"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2fa2e43639d8c4ac": {
-      "topic": "James Gray 'Paper Tiger' Film Director Interview",
-      "item_ids": [
-        "ad0326b2ebee"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4ad7e96bffa8904e": {
-      "topic": "Maria Mart\u00ednez Bayona 'The End Of It' A-List Cast Cannes Studio First Feature",
-      "item_ids": [
-        "cebec554b20c"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ceddbe45739c04ac": {
-      "topic": "Huxe Audio Generation App Shutdown Former NotebookLM Developers",
-      "item_ids": [
-        "87e92047b4c8"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bafdcef38310f125": {
-      "topic": "Oppo Find X9 Ultra vs Vivo X300 Ultra Telephoto Smartphone Comparison",
-      "item_ids": [
-        "82f0aa868929"
-      ],
-      "created_at": "2026-05-22T13:58:21.973684+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "1628f5ac0802d7b6": {
       "topic": "A Ma Maniere Nike Air Force 1 Low Summer Release Pack",
       "item_ids": [
@@ -1745,7 +1622,8 @@
     "a031f0bb5305843b": {
       "topic": "Netflix Acquires 'La Bola Negra' Cannes Competition Film US Distribution Rights",
       "item_ids": [
-        "956403d4a033"
+        "956403d4a033",
+        "20224850697b"
       ],
       "created_at": "2026-05-23T11:56:46.212597+00:00",
       "last_escalated_size": 0,
@@ -1850,7 +1728,34 @@
       "created_at": "2026-05-23T13:27:51.186018+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "a5509901c1f81bd8": {
+      "topic": "Lenny Tav\u00e1rez Dale Ritmo Latin Music Outreach Program",
+      "item_ids": [
+        "3a2f79c571bd"
+      ],
+      "created_at": "2026-05-23T14:48:33.135967+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "26656be14851b37f": {
+      "topic": "Shakira Tax Fraud Case Acquittal",
+      "item_ids": [
+        "a1268c814e7a"
+      ],
+      "created_at": "2026-05-23T14:48:33.135967+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1c76f37642e11570": {
+      "topic": "Millennials Date Spending 'Date-flation' Social Media Trend",
+      "item_ids": [
+        "83f73dc99ba1"
+      ],
+      "created_at": "2026-05-23T14:48:33.135967+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T13:27:51.187180+00:00"
+  "last_checked": "2026-05-23T14:48:33.137150+00:00"
 }
