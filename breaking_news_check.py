@@ -340,9 +340,13 @@ B) It starts a NEW cluster (a distinct event generating multiple signals) → re
 C) It is standalone — does not cluster with anything → return null for both fields
 
 RULES:
-- Only cluster items about the SAME SPECIFIC EVENT. Multiple signals about one game, one release, one moment = same cluster. Two unrelated stories = different clusters.
+- Cluster items that all exist because of the SAME underlying thing that happened. Initial report + follow-up details + cause explanations + reactions = same cluster, as long as they all trace back to one event.
+  Examples: "Kyle Busch dead at 39" and "Family: Busch died from pneumonia, sepsis" → SAME cluster (one death).
+            "Knicks win Game 7" and "Brunson drops 44 to close out Celtics" → SAME cluster (one game).
+            "Apple announces iPhone 17" and "iPhone 17 pre-orders open" → SAME cluster (one launch).
+- Do NOT cluster items about genuinely different events, even in the same topic area.
 - Generic posts, bare trend names without context, or unrelated items = standalone (null).
-- New cluster topic labels should be specific: "Knicks win Game 1 of NBA Eastern Conference Finals", not just "NBA".
+- New cluster topic labels should be specific and entity-focused: "Kyle Busch dies at 39", not just "NASCAR".
 
 Return a JSON array, one object per item, same order as input:
 [{{"item_index": 0, "existing_cluster_id": "<id-string-or-null>", "new_cluster_topic": "<topic-if-new-or-null>"}}]"""
