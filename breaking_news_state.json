@@ -1,12 +1,5 @@
 {
   "known_ids": [
-    "df8834d9d9eb",
-    "ba6238bdaed4",
-    "11f92133b1c0",
-    "42008fb2f8c2",
-    "9107fea8bbdc",
-    "f630897bdb11",
-    "f092f68eab3f",
     "9f746c007e84",
     "bad88fea0146",
     "0707a6e05f40",
@@ -499,16 +492,16 @@
     "ac6eceff692e",
     "fe097895893d",
     "a6ee2274700a",
-    "8220f88518f0"
+    "8220f88518f0",
+    "30f17078ac83",
+    "d355e0755ad4",
+    "512eade85756",
+    "2a0361684cb5",
+    "3ece2b86dd89",
+    "738d4ca74474",
+    "465d80163d6e"
   ],
   "failed_ids": {
-    "04ffa4e29d32": "2026-05-24T10:08:07.036837+00:00",
-    "c44dc74ed6c7": "2026-05-24T10:08:07.036837+00:00",
-    "6dbfef447735": "2026-05-24T10:08:07.036837+00:00",
-    "4b8428921ce1": "2026-05-24T10:08:07.036837+00:00",
-    "6775ef4c8000": "2026-05-24T10:08:07.036837+00:00",
-    "00c94f420448": "2026-05-24T10:08:07.036837+00:00",
-    "debe1948606c": "2026-05-24T10:08:07.036837+00:00",
     "a61948772153": "2026-05-24T11:41:09.480899+00:00",
     "52de7c4200ea": "2026-05-24T11:41:09.480899+00:00",
     "9c241e13d4bb": "2026-05-24T11:41:09.480899+00:00",
@@ -517,84 +510,22 @@
     "ab046c967a17": "2026-05-24T11:41:09.480899+00:00",
     "99074b49c860": "2026-05-24T12:46:41.990044+00:00",
     "90655506a0c8": "2026-05-24T12:46:41.990044+00:00",
-    "d8fb5a2a5585": "2026-05-24T12:46:41.990044+00:00"
+    "d8fb5a2a5585": "2026-05-24T12:46:41.990044+00:00",
+    "e11dc9f7f7c7": "2026-05-24T14:15:28.622950+00:00",
+    "04ffa4e29d32": "2026-05-24T14:15:28.622950+00:00",
+    "aa8952f01c63": "2026-05-24T14:15:28.622950+00:00",
+    "6215b01dfacb": "2026-05-24T14:15:28.622950+00:00",
+    "5a8109bea344": "2026-05-24T14:15:28.622950+00:00",
+    "13a4b37c1d1e": "2026-05-24T14:15:28.622950+00:00",
+    "7caa1c39795a": "2026-05-24T14:15:28.622950+00:00",
+    "862dd8f5dc0b": "2026-05-24T14:15:28.622950+00:00",
+    "62c0c1e09a21": "2026-05-24T14:15:28.622950+00:00",
+    "1df33ad582bd": "2026-05-24T14:15:28.622950+00:00",
+    "dcc701bc41aa": "2026-05-24T14:15:28.622950+00:00",
+    "69ad246611d1": "2026-05-24T14:15:28.622950+00:00",
+    "c61c64ed49b0": "2026-05-24T14:15:28.622950+00:00"
   },
   "live_clusters": {
-    "bbfce3b2eed493bd": {
-      "topic": "Travis Kelce Rolex Watch Feature",
-      "item_ids": [
-        "cfea06b73e40"
-      ],
-      "created_at": "2026-05-23T13:27:51.186018+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "74df8904651cc2b7": {
-      "topic": "Lukas Dhont 'Coward' Mubi Cannes Acquisition",
-      "item_ids": [
-        "372d204021b0",
-        "afd7e6fb33b8"
-      ],
-      "created_at": "2026-05-23T13:27:51.186018+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "90b9c8dcd99c651d": {
-      "topic": "Stephen Colbert Public Access TV Appearance Monroe Michigan",
-      "item_ids": [
-        "7bdeb4910f5c",
-        "4bd6bf6878ca",
-        "3865bac7d098",
-        "0e026a44204f",
-        "64833ad769b3"
-      ],
-      "created_at": "2026-05-23T13:27:51.186018+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-23T17:46:06.599470+00:00",
-      "picks_file": "picks/picks-2026-05-23-1746.md",
-      "why_text": "One day after The Late Show's final CBS broadcast, Stephen Colbert didn't disappear quietly \u2014 he resurfaced on a local Monroe, Michigan public access channel with an absurdist farewell special stacked with Jack White, Jeff Daniels, Eminem, Steve Buscemi, and Byron Allen. It's a deliberately lo-fi mic drop: after decades of prestige late night, Colbert chose public access as his final statement, which is both a joke and a genuine rebuke of the formats that define mainstream TV success. The stunt lands harder because it actually worked \u2014 the celebrity lineup made it a cultural event, not a gag.",
-      "last_escalated_item_ids": [
-        "7bdeb4910f5c",
-        "4bd6bf6878ca",
-        "3865bac7d098"
-      ]
-    },
-    "03441e05a02f6a64": {
-      "topic": "Mark Cousins 16-Chapter Documentary Cinema History Cannes",
-      "item_ids": [
-        "4a77ae9ab06b"
-      ],
-      "created_at": "2026-05-23T13:27:51.186018+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d237ff4845136998": {
-      "topic": "Elon Musk Solar Power Earth Abandonment",
-      "item_ids": [
-        "049609b07c31"
-      ],
-      "created_at": "2026-05-23T13:27:51.186018+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c1e2bae51949d16": {
-      "topic": "Anthropic Mythos Security Vulnerability Detection 10000 Findings",
-      "item_ids": [
-        "bc7c9b4e4932"
-      ],
-      "created_at": "2026-05-23T13:27:51.186018+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "369baa0d18241806": {
-      "topic": "Blue Dot Fever Summer Live Music Industry Dynamics",
-      "item_ids": [
-        "7f38be23843e"
-      ],
-      "created_at": "2026-05-23T13:27:51.186018+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "a5509901c1f81bd8": {
       "topic": "Lenny Tav\u00e1rez Dale Ritmo Latin Music Outreach Program",
       "item_ids": [
@@ -874,17 +805,21 @@
         "9e5e4b2c6b62",
         "9ae93c258456",
         "8b614339a907",
-        "9250ebb03ae2"
+        "9250ebb03ae2",
+        "512eade85756"
       ],
       "created_at": "2026-05-23T17:46:32.972445+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-23T21:40:18.283557+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-05-24T14:15:28.622950+00:00",
       "picks_file": "picks/picks-2026-05-23-2140.md",
-      "why_text": "The 2026 Palme d'Or race has landed, with Park Chan-Wook's jury making waves not just for who won but how \u2014 multiple tied categories in acting and directing signal a panel that refused to play it safe. Films like 'La Bola Negra,' 'Fatherland,' and 'Minotaur' are now entering the global conversation, the kind of Cannes moment that reshapes arthouse release calendars overnight. A jury admitting 'we couldn't decide' is rare candor from the Croisette \u2014 and it makes every tie feel like a genuine statement rather than a compromise.",
+      "why_text": "The 2026 Palme d'Or race has landed, with Park Chan-Wook's jury making waves not just for who won but how \u2014 multiple tied categories in acting and directing signal a panel that refused to play it safe. Films like 'La Bola Negra,' 'Fatherland,' and 'Minotaur' are now entering the global conversation, the kind of Cannes moment that reshapes arthouse release calendars overnight. A jury admitting 'we couldn't decide' is rare candor from the Croisette \u2014 and it makes every tie feel like a genuine statement rather than a compromise.\n**Update 9:15 AM CT:** Beyond the jury's bold calls, Cannes 2026 is generating a second major conversation: AI's visible footprint on the Croisette, with The Guardian reporting sharp divisions among filmmakers over whether artificial intelligence is expanding cinema's creative toolkit or threatening its foundation \u2014 a fault line that colored press conferences and red carpet interviews throughout the week. Meanwhile, Rolling Stone's best-of list is already shaping which titles will cross over from arthouse buzz to mainstream awards consideration.",
       "last_escalated_item_ids": [
         "401f45d7d214",
         "9e5e4b2c6b62",
-        "9ae93c258456"
+        "9ae93c258456",
+        "8b614339a907",
+        "9250ebb03ae2",
+        "512eade85756"
       ]
     },
     "e4b68ad4ff6c41f1": {
@@ -964,11 +899,19 @@
       "topic": "Neon Raises Cannes Palme d'Or Winning Streak to Seven With 'Fjord' Starring Sebastian Stan & Renate Reinsve",
       "item_ids": [
         "df3f7441eb79",
-        "ac9d816c267c"
+        "ac9d816c267c",
+        "2a0361684cb5"
       ],
       "created_at": "2026-05-23T19:55:14.194813+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-24T14:15:28.622950+00:00",
+      "picks_file": "picks/picks-2026-05-24-1416.md",
+      "why_text": "Neon has now claimed seven consecutive Palme d'Or wins, cementing the indie distributor as the defining taste-maker in prestige cinema \u2014 a remarkable run that would have seemed impossible for a company that didn't exist a decade ago. 'Fjord' brings together Sebastian Stan and Renate Reinsve, two of the most compelling actors working right now, and the win will only accelerate the film's awards-season momentum. That Tilda Swinton felt compelled to publicly push back on a 'down year' narrative suggests the discourse around Cannes 2025 is already heating up \u2014 and Neon just won the argument.",
+      "last_escalated_item_ids": [
+        "df3f7441eb79",
+        "ac9d816c267c",
+        "2a0361684cb5"
+      ]
     },
     "3e4bfd817b3165c9": {
       "topic": "Barbra Streisand Receives Honorary Palme d'Or at Cannes 2026",
@@ -1135,7 +1078,8 @@
     "f4efdd95706cd52d": {
       "topic": "Indianapolis 500 Race 2026 Live Viewing Guide",
       "item_ids": [
-        "ae0ec5e68561"
+        "ae0ec5e68561",
+        "465d80163d6e"
       ],
       "created_at": "2026-05-24T01:36:19.304860+00:00",
       "last_escalated_size": 0,
@@ -1320,7 +1264,34 @@
       "created_at": "2026-05-24T12:47:08.215034+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b1aefd6ff5e92222": {
+      "topic": "Yes Keyboardist Trevor Horn 'Video Killed the Radio Star' Career Retrospective",
+      "item_ids": [
+        "30f17078ac83"
+      ],
+      "created_at": "2026-05-24T14:15:56.889001+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "23c46cea8e03d411": {
+      "topic": "Spencer Pratt Profile Documentary or Interview",
+      "item_ids": [
+        "d355e0755ad4"
+      ],
+      "created_at": "2026-05-24T14:15:56.889001+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1c855232e56f9d58": {
+      "topic": "Dreamie Alarm Clock Sleep Technology Product Review",
+      "item_ids": [
+        "3ece2b86dd89"
+      ],
+      "created_at": "2026-05-24T14:15:56.889001+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T12:47:08.216217+00:00"
+  "last_checked": "2026-05-24T14:16:07.488332+00:00"
 }

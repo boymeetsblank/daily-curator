@@ -1,6 +1,82 @@
 {
   "items": [
     {
+      "id": "30f17078ac83",
+      "topic": "Meet the Yes Keyboardist Who Also Gave Us ‘Video Killed the Radio Star’ and ‘Heat of the Moment’",
+      "traffic": "",
+      "detected_at": "2026-05-24T14:15:28.622950+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-features/yes-keyboardist-video-killed-the-radio-star-1235567176/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "b1aefd6ff5e92222"
+    },
+    {
+      "id": "d355e0755ad4",
+      "topic": "Spencer Pratt Is the Same as He Ever Was",
+      "traffic": "",
+      "detected_at": "2026-05-24T14:15:28.622950+00:00",
+      "search_url": "https://www.rollingstone.com/politics/politics-features/spencer-pratt-the-hills-los-angeles-mayoral-race-1235567677/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "23c46cea8e03d411"
+    },
+    {
+      "id": "512eade85756",
+      "topic": "10 Best Movies at Cannes 2026",
+      "traffic": "",
+      "detected_at": "2026-05-24T14:15:28.622950+00:00",
+      "search_url": "https://www.rollingstone.com/tv-movies/tv-movie-lists/cannes-2026-best-movies-1235565564/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "89cfb5e2397023fe"
+    },
+    {
+      "id": "2a0361684cb5",
+      "topic": "Breaking Baz @ Cannes: Sebastian Stan On ‘Fjord’ & ‘The Batman II’; Tilda Swinton Responds To Claims Of A Down Year For Croisette Movies & Looks To The Future Of Cinema",
+      "traffic": "",
+      "detected_at": "2026-05-24T14:15:28.622950+00:00",
+      "search_url": "https://deadline.com/2026/05/sebastian-stan-fjord-shooting-the-batman-2-in-london-1236920168/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "833fd3d222041e4c"
+    },
+    {
+      "id": "3ece2b86dd89",
+      "topic": "The Dreamie alarm clock got me to stop using my phone in bed",
+      "traffic": "",
+      "detected_at": "2026-05-24T14:15:28.622950+00:00",
+      "search_url": "https://techcrunch.com/2026/05/24/the-dreamie-alarm-clock-got-me-to-stop-using-my-phone-in-bed/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "1c855232e56f9d58"
+    },
+    {
+      "id": "738d4ca74474",
+      "topic": "#LOLFanFest2026D3",
+      "traffic": "##2 on X",
+      "detected_at": "2026-05-24T14:15:28.622950+00:00",
+      "search_url": "https://x.com/search?q=%23LOLFanFest2026D3&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "465d80163d6e",
+      "topic": "#Indy500",
+      "traffic": "##3 on X",
+      "detected_at": "2026-05-24T14:15:28.622950+00:00",
+      "search_url": "https://x.com/search?q=%23Indy500&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6,
+      "cluster_id": "f4efdd95706cd52d"
+    },
+    {
       "id": "02a4b9ee7980",
       "topic": "Tiffany & Co. Brings the Blue Box Café to Its Causeway Bay Flagship in Hong Kong",
       "traffic": "",
@@ -348,81 +424,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 6
-    },
-    {
-      "id": "fe2a44de6c42",
-      "topic": "Usyk",
-      "traffic": "##9 on X",
-      "detected_at": "2026-05-24T08:08:48.984317+00:00",
-      "search_url": "https://x.com/search?q=Usyk&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6,
-      "cluster_id": "4f028765a2f84ea3"
-    },
-    {
-      "id": "1ed94562e292",
-      "topic": "Pistons",
-      "traffic": "##10 on X",
-      "detected_at": "2026-05-24T08:08:48.984317+00:00",
-      "search_url": "https://x.com/search?q=Pistons&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "7b8f1726e7a9",
-      "topic": "JIMINS",
-      "traffic": "##12 on X",
-      "detected_at": "2026-05-24T08:08:48.984317+00:00",
-      "search_url": "https://x.com/search?q=JIMINS&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "342c1d798f93",
-      "topic": "Taylor Swift Sits Courtside at Knicks-Cavaliers as ESPN Calls Her ‘Travis Kelce’s Fiancée’",
-      "traffic": "",
-      "detected_at": "2026-05-24T05:45:02.629847+00:00",
-      "search_url": "https://www.billboard.com/music/pop/taylor-swift-knicks-cavaliers-game-travis-kelce-1236255749/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "59e1179fe93e4677"
-    },
-    {
-      "id": "9250ebb03ae2",
-      "topic": "‘We’re expanding the cinematic toolbox’: AI fault lines on show at Cannes - The Guardian",
-      "traffic": "",
-      "detected_at": "2026-05-24T05:45:02.629847+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNX28zSkEtRjRfWl9jeFNkRDNmTzcyVzR4RHJKV3Z5bzBXRWUwUVptWXlyS2NRSy1jRVY4cDI1dXp4OGpQQ1d1R2NRMk9ZaEd3d2hxc3FVck4tRC1UcUtWUEtqaGRoZEtUZ2VtZjBJbkVaUFlQMEtQeGZmYkdBal90cUY2NUNuekE1NFl5ZlJxQkZYWDZf?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "89cfb5e2397023fe"
-    },
-    {
-      "id": "233ea703c37f",
-      "topic": "Nanoscale drug factory helps cells make medicine from within - Technology Org",
-      "traffic": "",
-      "detected_at": "2026-05-24T05:45:02.629847+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONXZKZUk1RkI4X0puZ0c0NnllTDhSSWdGcWJoc245aFMyTVh1VXhHSkpuTlh6ZV9CV0g2SGZJd0VMYkRjRUZJR2tEYUItU3NEVUxSTjJkczdYTndaUUVwVjZoeFRqWExWZTBoN0w0UU1XVnlGWU9hMDlNQWZYUnpmYWxrdEpibktmN3AyWW5SVUlXbHliNWlhZVNwMjlDNzFv?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "f0a7efb31e3a16f9"
-    },
-    {
-      "id": "9e5d66df9689",
-      "topic": "#SNME",
-      "traffic": "##2 on X",
-      "detected_at": "2026-05-24T05:45:02.629847+00:00",
-      "search_url": "https://x.com/search?q=%23SNME&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-24T12:46:41.990044+00:00"
+  "last_checked": "2026-05-24T14:15:28.622950+00:00"
 }
