@@ -1,10 +1,5 @@
 {
   "known_ids": [
-    "4ff0291e4612",
-    "453d1ca72ebf",
-    "fddb7c84a91c",
-    "0cabaa0d20a9",
-    "534970ef2775",
     "233d5c4e3bd8",
     "35578a407393",
     "99e6c1b5d90a",
@@ -499,16 +494,14 @@
     "e91da263052c",
     "97e3470d0558",
     "1be7601f6233",
-    "4963ce782cac"
+    "4963ce782cac",
+    "ae0ec5e68561",
+    "02315d1cc73b",
+    "9ade2ddf1f57",
+    "0ed28cec9694",
+    "a7075e2e7097"
   ],
   "failed_ids": {
-    "422fb09154bd": "2026-05-23T19:54:40.426327+00:00",
-    "7c3fbf166545": "2026-05-23T19:54:40.426327+00:00",
-    "f1a76b832639": "2026-05-23T19:54:40.426327+00:00",
-    "49574a2d7059": "2026-05-23T20:44:39.794213+00:00",
-    "debe1948606c": "2026-05-23T20:44:39.794213+00:00",
-    "13ce3ef1b130": "2026-05-23T20:44:39.794213+00:00",
-    "2804931fea70": "2026-05-23T20:44:39.794213+00:00",
     "5a428dfeb9df": "2026-05-23T21:40:18.283557+00:00",
     "ff63392b4164": "2026-05-23T21:40:18.283557+00:00",
     "99074b49c860": "2026-05-23T21:40:18.283557+00:00",
@@ -532,94 +525,21 @@
     "19959e93c5ae": "2026-05-23T23:39:43.079584+00:00",
     "7cb0cb419756": "2026-05-23T23:39:43.079584+00:00",
     "9441625a5bb4": "2026-05-23T23:39:43.079584+00:00",
-    "5021f187f96d": "2026-05-23T23:39:43.079584+00:00"
+    "5021f187f96d": "2026-05-23T23:39:43.079584+00:00",
+    "3945be721f96": "2026-05-24T01:35:50.646468+00:00",
+    "a61948772153": "2026-05-24T01:35:50.646468+00:00",
+    "49574a2d7059": "2026-05-24T01:35:50.646468+00:00",
+    "168220e9468d": "2026-05-24T01:35:50.646468+00:00",
+    "6728466e5896": "2026-05-24T01:35:50.646468+00:00",
+    "46bc5e65f601": "2026-05-24T01:35:50.646468+00:00",
+    "d5f2b9f9dcbd": "2026-05-24T01:35:50.646468+00:00",
+    "0bdbf4b7ad24": "2026-05-24T01:35:50.646468+00:00",
+    "debe1948606c": "2026-05-24T01:35:50.646468+00:00",
+    "13ce3ef1b130": "2026-05-24T01:35:50.646468+00:00",
+    "f1a76b832639": "2026-05-24T01:35:50.646468+00:00",
+    "2804931fea70": "2026-05-24T01:35:50.646468+00:00"
   },
   "live_clusters": {
-    "659e6f01bb220eb9": {
-      "topic": "Dutton Ranch Episode 3 Cattle Vaccination Plot Controversy",
-      "item_ids": [
-        "49e13cfa293c",
-        "702d60a8e000"
-      ],
-      "created_at": "2026-05-22T23:46:50.542811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1da88b293980878d": {
-      "topic": "Epic Ride Universal Theme Parks Docuseries Opening Day Documentary",
-      "item_ids": [
-        "a705b5ffcf61"
-      ],
-      "created_at": "2026-05-22T23:46:50.542811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d02931074a26c1bf": {
-      "topic": "Survivor Jeff Probst Kalshi Polymarket Spoiler Betting Concerns",
-      "item_ids": [
-        "ac45874c2656"
-      ],
-      "created_at": "2026-05-22T23:46:50.542811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d4c10b39da65e9f3": {
-      "topic": "2026 French Open Live Streaming Viewing Guide",
-      "item_ids": [
-        "5980cd955260",
-        "457d50ed3517"
-      ],
-      "created_at": "2026-05-22T23:46:50.542811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1cff754a9d3d4e90": {
-      "topic": "Men's Wearhouse Memorial Day Sale Shopping Guide",
-      "item_ids": [
-        "c576f20ec4e4"
-      ],
-      "created_at": "2026-05-22T23:46:50.542811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "35b82f6dfd6f9240": {
-      "topic": "Stranger Things Eleven Pink Dress Donated Smithsonian",
-      "item_ids": [
-        "a54f3c0afe74"
-      ],
-      "created_at": "2026-05-22T23:46:50.542811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "da092f21a587b91d": {
-      "topic": "AI Voice Resurrection Technology Dead Pilots Application",
-      "item_ids": [
-        "fd275f985643",
-        "5f7a8c85d5bf"
-      ],
-      "created_at": "2026-05-22T23:46:50.542811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "db05af9e534943e3": {
-      "topic": "Zendaya Juggling Multiple Major Film & TV Productions Filming Schedules",
-      "item_ids": [
-        "de0d4d070b88"
-      ],
-      "created_at": "2026-05-23T01:30:34.186193+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6dde9a1128ef0167": {
-      "topic": "'The Boroughs' Series Finale Creators Discussion Future Season Prospects",
-      "item_ids": [
-        "8623307a4eb1",
-        "587205d25ecc"
-      ],
-      "created_at": "2026-05-23T01:30:34.186193+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "20c036f16f72fad9": {
       "topic": "Post Malone Australian New Zealand Stadium Tour Don Toliver",
       "item_ids": [
@@ -1344,7 +1264,8 @@
     "4f028765a2f84ea3": {
       "topic": "Usyk Boxing Match Last-Second Stoppage Victory",
       "item_ids": [
-        "479ab5b8d1c9"
+        "479ab5b8d1c9",
+        "0ed28cec9694"
       ],
       "created_at": "2026-05-23T23:40:13.433827+00:00",
       "last_escalated_size": 0,
@@ -1367,7 +1288,34 @@
       "created_at": "2026-05-23T23:40:13.433827+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f4efdd95706cd52d": {
+      "topic": "Indianapolis 500 Race 2026 Live Viewing Guide",
+      "item_ids": [
+        "ae0ec5e68561"
+      ],
+      "created_at": "2026-05-24T01:36:19.304860+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "421654e9d012ac2d": {
+      "topic": "Tamer Nafar Palestinian Rapper John Lennon Inspired Music",
+      "item_ids": [
+        "02315d1cc73b"
+      ],
+      "created_at": "2026-05-24T01:36:19.304860+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "41be8ba67defe2a4": {
+      "topic": "Sherri Shepherd Talk Show Finale Farewell",
+      "item_ids": [
+        "9ade2ddf1f57"
+      ],
+      "created_at": "2026-05-24T01:36:19.304860+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-23T23:40:13.437187+00:00"
+  "last_checked": "2026-05-24T01:36:19.305938+00:00"
 }
