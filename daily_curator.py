@@ -1828,13 +1828,17 @@ def cap_cluster_sizes(articles: list[dict]) -> list[dict]:
     return kept
 
 
-def deduplicate_after_scoring(articles: list[dict]) -> list[dict]:
+def deduplicate_after_scoring(articles: list[dict], published_today: list[str] | None = None) -> list[dict]:
     """
     After scoring, identify any same-topic duplicates that survived pre-scoring
     dedup and cluster capping. Uses a broader 'same underlying event or topic'
     prompt to catch sparse-entity matches (e.g. two arrest headlines naming the
     subject differently). Only inspects articles scoring >= MIN_SCORE.
     Keeps the highest-scored duplicate; ties broken by metadata richness.
+
+    published_today: titles already committed in earlier runs today.
+    Any current pick about the same underlying event as a published_today entry
+    is removed so the same story never appears twice in one day.
     """
     candidates = [a for a in articles if a.get("score", 0) >= MIN_SCORE]
     if len(candidates) <= 1:
@@ -1847,14 +1851,20 @@ def deduplicate_after_scoring(articles: list[dict]) -> list[dict]:
         snippet = (article.get('summary') or '')[:120] or '(no summary)'
         articles_text += f"{i}. [{article['score']}/10] \"{article['title']}\" ({article['source']})\n   {snippet}\n"
 
-    prompt = f"""Here are {len(candidates)} articles that scored highly in an editorial evaluation. Some may cover the same underlying event or topic — even if their headlines use different phrasing, name the same person differently, or focus on different angles of the same story.
+    already_block = ""
+    if published_today:
+        already_block = "\nALREADY IN THE FEED TODAY (from earlier runs — any current article about the same underlying event as these must be flagged as a duplicate):\n"
+        already_block += "\n".join(f"- {t}" for t in published_today[:40])
+        already_block += "\n"
 
+    prompt = f"""Here are {len(candidates)} articles that scored highly in an editorial evaluation. Some may cover the same underlying event — even if their headlines use different phrasing, name the same person differently, or focus on different angles.
+{already_block}
+CURRENT ARTICLES:
 {articles_text}
-
 Your job:
-1. Identify groups of articles about the same underlying event. Use this test: did these articles all exist because of one single thing that happened? If yes, they are the same story — group them, regardless of how different the angles or revelations are. A filing that produced three distinct headlines is one event. An announcement that generated multiple reaction pieces is one event. A game result covered from multiple angles is one event.
-2. Do NOT group articles that are merely in the same category (e.g. two unrelated sports stories, two separate company announcements). They must all trace back to the same specific moment or occurrence.
-3. Articles covering genuinely different stories should not be listed.
+1. Identify groups of CURRENT articles about the same underlying event. Use this test: did these articles all exist because of one single thing that happened? If yes, they are the same story — group them regardless of angle differences. A filing that produced three distinct headlines is one event. A death announcement + cause-of-death reveal = one event. A game result covered from multiple angles is one event.
+2. Also flag any CURRENT article that covers the same underlying event as something ALREADY IN THE FEED TODAY. Group it with topic "ALREADY COVERED: <matching title>".
+3. Do NOT group articles that are merely in the same category. They must trace back to the same specific occurrence.
 
 Return ONLY valid JSON in this exact format, with no other text:
 
@@ -1867,7 +1877,7 @@ Return ONLY valid JSON in this exact format, with no other text:
   ]
 }}
 
-If no articles cover the same underlying event, return:
+If no duplicates exist, return:
 {{
   "clusters": []
 }}"""
@@ -2060,6 +2070,27 @@ def load_recently_covered_topics(days: int = 3) -> list[str]:
             why_short = re.sub(r'\s+', ' ', why.strip())[:120]
             entries.append(f"{title.strip()} — {why_short}")
     return entries
+
+
+def load_todays_published_titles() -> list[str]:
+    """
+    Return just the titles of picks published in earlier runs today (CST).
+    Used to pass to deduplicate_after_scoring() so the same story can't appear
+    twice in one day across separate curator runs.
+    """
+    import glob as glob_module
+    try:
+        from zoneinfo import ZoneInfo
+        today_str = datetime.now(tz=ZoneInfo("America/Chicago")).strftime("%Y-%m-%d")
+    except ImportError:
+        today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    titles = []
+    for filepath in glob_module.glob(f"picks/picks-{today_str}-*.md"):
+        with open(filepath, encoding="utf-8") as f:
+            content = f.read()
+        for title in re.findall(r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n\[Read the full article", content):
+            titles.append(title.strip())
+    return titles
 
 
 def load_live_feed_clusters() -> list[dict]:
@@ -2402,8 +2433,11 @@ def main():
     # ── Cap oversized clusters to CLUSTER_MAX_SIZE members ───────────────────
     evaluated_articles = cap_cluster_sizes(evaluated_articles)
 
-    # ── Post-scoring dedup: catch same-topic pairs that survived clustering ───
-    evaluated_articles = deduplicate_after_scoring(evaluated_articles)
+    # ── Post-scoring dedup: catch same-topic pairs + cross-run duplicates ────
+    published_today = load_todays_published_titles()
+    if published_today:
+        print(f"   📋 Loaded {len(published_today)} title(s) published earlier today for cross-run dedup.")
+    evaluated_articles = deduplicate_after_scoring(evaluated_articles, published_today=published_today)
 
     # ── Update seen-URL registry with everything scored this run ─────────────
     seen_urls, new_count = update_seen_urls(seen_urls, evaluated_articles)

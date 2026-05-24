@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-24] Fix: cross-run and live-cluster dedup — Colbert/Kyle Busch pattern
+
+Two clustering failures fixed. (1) Cross-run main feed dedup: `deduplicate_after_scoring()` now receives titles published in earlier runs today via `load_todays_published_titles()`. Sonnet compares current picks against already-published titles and removes duplicates — "Colbert Signs Off CBS" at 17:46 will now block "Stephen Colbert Makes Quick Return" in a later run. (2) Live cluster assignment: tightened the Haiku cluster prompt rules so that follow-up details, cause-of-death reveals, and reaction pieces are assigned to the originating cluster rather than spawning a new one — "Kyle Busch Dead at 39" and "Family: Busch died from pneumonia, sepsis" will cluster as one story.
+
 ## [2026-05-24] Live feed: social content overhaul — Google Trends RSS fix + Reddit culture subreddits
 
 Three changes to make social content consistently present in the live feed. (1) Google Trends switched from the broken JSON endpoint to the RSS endpoint (`/daily/rss?geo=US`) — the JSON endpoint was returning non-JSON in GitHub Actions and silently failing; the RSS endpoint is XML-based and reliable. (2) Removed YouTube trending RSS — it has been consistently returning 0 results in GitHub Actions from both the free RSS and Apify; removed rather than silently failing every run. (3) Added `fetch_reddit_culture_hot()` which directly calls Reddit's hot.json API for 8 culture subreddits (r/popculturechat, r/music, r/movies, r/hiphopheads, r/streetwear, r/sneakers, r/nba, r/soccer) — bypasses the 90-min RSS publication window so posts surface when they're actually hot. Posts need 200+ upvotes and be under 12 hours old. Also: r/all threshold lowered 1000→500 upvotes; r/all and culture subreddits both use the 12h age window.
@@ -80,9 +84,6 @@ When multiple live feed items converge on the same story, they now automatically
 
 Rewrote the Haiku scoring prompt to fix junk flowing into the main feed after the May 19 overhaul. Four changes: (1) replaced "score generously" with "be strict — when in doubt, score lower"; (2) added explicit auto-1 list covering political content, generic social posts (good morning/lifestyle/emoji filler), local/trade niche articles, and bare trending topic names with no news context; (3) tightened Bluesky guidance — viral engagement alone is not enough, post must contain actual news or a genuine cultural flashpoint; (4) tightened the 8-anchor to require broad audience significance, not just niche relevance. Escalation threshold raised 8→9 so only "you have to tell someone right now" items reach the main feed.
 
-## [2026-05-20] Cut Apify YouTube actor — replaced with free RSS
-
-`fetch_youtube_trends()` in `daily_curator.py` now uses the free public YouTube trending RSS feed instead of the `streamers~youtube-trending-videos` Apify actor. Same data, zero Apify compute cost. Saves 3 actor runs/day. The live feed was already using this free RSS endpoint — the main curator now does the same.
 
 
 
