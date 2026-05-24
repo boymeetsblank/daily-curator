@@ -1,13 +1,5 @@
 {
   "known_ids": [
-    "86a966fd4a72",
-    "8f21befcc147",
-    "5af9588b931c",
-    "8c917e3e0b3f",
-    "b73db948900f",
-    "ff036b159e7c",
-    "1886732191fe",
-    "766bcf56ee07",
     "88ffe866c0c4",
     "c6db75cb0d46",
     "c90774afcb1c",
@@ -499,25 +491,17 @@
     "c1d4da231cd2",
     "70a6038810b0",
     "3c661ad00a2a",
-    "f803a68b2987"
+    "f803a68b2987",
+    "0763e79c4f8d",
+    "1ca28d2cca5e",
+    "6a2b11f0c3ee",
+    "5398d4ba2c37",
+    "dcc701bc41aa",
+    "69ad246611d1",
+    "c61c64ed49b0",
+    "d8e578002cb6"
   ],
   "failed_ids": {
-    "99074b49c860": "2026-05-24T12:46:41.990044+00:00",
-    "90655506a0c8": "2026-05-24T12:46:41.990044+00:00",
-    "d8fb5a2a5585": "2026-05-24T12:46:41.990044+00:00",
-    "e11dc9f7f7c7": "2026-05-24T14:15:28.622950+00:00",
-    "04ffa4e29d32": "2026-05-24T14:15:28.622950+00:00",
-    "aa8952f01c63": "2026-05-24T14:15:28.622950+00:00",
-    "6215b01dfacb": "2026-05-24T14:15:28.622950+00:00",
-    "5a8109bea344": "2026-05-24T14:15:28.622950+00:00",
-    "13a4b37c1d1e": "2026-05-24T14:15:28.622950+00:00",
-    "7caa1c39795a": "2026-05-24T14:15:28.622950+00:00",
-    "862dd8f5dc0b": "2026-05-24T14:15:28.622950+00:00",
-    "62c0c1e09a21": "2026-05-24T14:15:28.622950+00:00",
-    "1df33ad582bd": "2026-05-24T14:15:28.622950+00:00",
-    "dcc701bc41aa": "2026-05-24T14:15:28.622950+00:00",
-    "69ad246611d1": "2026-05-24T14:15:28.622950+00:00",
-    "c61c64ed49b0": "2026-05-24T14:15:28.622950+00:00",
     "2ed019826a18": "2026-05-24T15:37:01.599542+00:00",
     "ccc99537958c": "2026-05-24T15:37:01.599542+00:00",
     "aff0a4cb41bc": "2026-05-24T15:37:01.599542+00:00",
@@ -542,232 +526,15 @@
     "55b459948395": "2026-05-24T16:40:36.691947+00:00",
     "27194cd3fc0b": "2026-05-24T16:40:36.691947+00:00",
     "6f420c9d4f63": "2026-05-24T16:40:36.691947+00:00",
-    "11c9a05ec734": "2026-05-24T16:40:36.691947+00:00"
+    "11c9a05ec734": "2026-05-24T16:40:36.691947+00:00",
+    "2e9483db6e3b": "2026-05-24T18:48:38.343452+00:00",
+    "f2e1c0841b07": "2026-05-24T18:48:38.343452+00:00",
+    "d1de52b2829e": "2026-05-24T18:48:38.343452+00:00",
+    "c5ede290a11f": "2026-05-24T18:48:38.343452+00:00",
+    "8bc6b1c7a29f": "2026-05-24T18:48:38.343452+00:00",
+    "47376df9d794": "2026-05-24T18:48:38.343452+00:00"
   },
   "live_clusters": {
-    "efabc0e3426aa3eb": {
-      "topic": "T\u00e2nia Maria Joins Leonardo Lacca's 'S\u00e1bado Morto' Film",
-      "item_ids": [
-        "25f125509688"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4b106a93e6881ba9": {
-      "topic": "2026 Crunchyroll Anime Awards Winners",
-      "item_ids": [
-        "bdb7fd9cc52c",
-        "d6158397874a",
-        "c4760bf4ab08"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-24T11:41:09.480899+00:00",
-      "picks_file": "picks/picks-2026-05-24-1141.md",
-      "why_text": "MHA taking the top prize at the 2026 Crunchyroll Anime Awards with its FINAL SEASON is a full-circle cultural moment \u2014 the show that arguably mainstreamed anime in the West is closing out on the highest note possible. It's a validation of the franchise's endurance over a decade of hype cycles, new contenders, and shifting fanbases. For the anime industry, it signals that legacy IP can still dominate when a finale is handled with care.",
-      "last_escalated_item_ids": [
-        "bdb7fd9cc52c",
-        "d6158397874a",
-        "c4760bf4ab08"
-      ]
-    },
-    "edc930edc49032fa": {
-      "topic": "Bruce Springsteen Tour Cleveland Shows Highlights",
-      "item_ids": [
-        "1d96808d7253"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "50db882bb721542b": {
-      "topic": "Latvia Defeats US 4-2 Ice Hockey World Championships",
-      "item_ids": [
-        "3ab4b1686b01"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7d880de08f4e643d": {
-      "topic": "Kerley Commitment Clean Run Enhanced Games",
-      "item_ids": [
-        "3d77a48f1bbc"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "951ec1ad0039ffa4": {
-      "topic": "WNBA Fever's Clark Addresses 2025 Season Injuries Mental Challenges",
-      "item_ids": [
-        "9f62a9b3a78d"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5f3b7860b8a69d88": {
-      "topic": "Manzardo Pinch-Hit Home Run Williams 11-Strikeout Game",
-      "item_ids": [
-        "73fe94cb99e1"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7f720400fe1be4e4": {
-      "topic": "NBA Free Agent Rankings LeBron James 2026",
-      "item_ids": [
-        "987202f35372"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bf09200a15908e57": {
-      "topic": "Phone App Features Spyware Protection Guide",
-      "item_ids": [
-        "354027cba18e"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e51b65b4de16b9c9": {
-      "topic": "Science Stories Artificial Eggshells Earth Magnetosphere Research",
-      "item_ids": [
-        "17e508155961"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b63277828430c98e": {
-      "topic": "The Future of Truth AI Writing Reckoning Atlantic",
-      "item_ids": [
-        "047394d7d41e"
-      ],
-      "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "31a123e1e3f726c3": {
-      "topic": "Nike Kobe 4 Protro 'Lakers' Sneaker Release",
-      "item_ids": [
-        "f17021387847"
-      ],
-      "created_at": "2026-05-23T17:46:32.972445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "588883d83dd2fcf5": {
-      "topic": "Shakira & Burna Boy 'Dai Dai' Music Video World Cup Cameos",
-      "item_ids": [
-        "91a3489e31de"
-      ],
-      "created_at": "2026-05-23T17:46:32.972445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "89cfb5e2397023fe": {
-      "topic": "Cannes 2026 Film Festival Winners Red Carpet Arrivals",
-      "item_ids": [
-        "401f45d7d214",
-        "9e5e4b2c6b62",
-        "9ae93c258456",
-        "8b614339a907",
-        "9250ebb03ae2",
-        "512eade85756"
-      ],
-      "created_at": "2026-05-23T17:46:32.972445+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-05-24T14:15:28.622950+00:00",
-      "picks_file": "picks/picks-2026-05-23-2140.md",
-      "why_text": "The 2026 Palme d'Or race has landed, with Park Chan-Wook's jury making waves not just for who won but how \u2014 multiple tied categories in acting and directing signal a panel that refused to play it safe. Films like 'La Bola Negra,' 'Fatherland,' and 'Minotaur' are now entering the global conversation, the kind of Cannes moment that reshapes arthouse release calendars overnight. A jury admitting 'we couldn't decide' is rare candor from the Croisette \u2014 and it makes every tie feel like a genuine statement rather than a compromise.\n**Update 9:15 AM CT:** Beyond the jury's bold calls, Cannes 2026 is generating a second major conversation: AI's visible footprint on the Croisette, with The Guardian reporting sharp divisions among filmmakers over whether artificial intelligence is expanding cinema's creative toolkit or threatening its foundation \u2014 a fault line that colored press conferences and red carpet interviews throughout the week. Meanwhile, Rolling Stone's best-of list is already shaping which titles will cross over from arthouse buzz to mainstream awards consideration.",
-      "last_escalated_item_ids": [
-        "401f45d7d214",
-        "9e5e4b2c6b62",
-        "9ae93c258456",
-        "8b614339a907",
-        "9250ebb03ae2",
-        "512eade85756"
-      ]
-    },
-    "e4b68ad4ff6c41f1": {
-      "topic": "Lego Batman: Legacy Of The Dark Knight Video Game Development",
-      "item_ids": [
-        "266de9a15aee"
-      ],
-      "created_at": "2026-05-23T17:46:32.972445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6f109a791b250cde": {
-      "topic": "Air Jordan 1 Low SE 'Sherbet' Sneaker Release",
-      "item_ids": [
-        "03a217b8b244"
-      ],
-      "created_at": "2026-05-23T18:46:12.480385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e111d791c9a3368f": {
-      "topic": "'The Yogurt Shop Murders' Documentary Director Interview",
-      "item_ids": [
-        "792046d421a9"
-      ],
-      "created_at": "2026-05-23T18:46:12.480385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "67562b194277cf39": {
-      "topic": "'Paradise' Film Shailene Woodley Character Development Behind-the-Scenes",
-      "item_ids": [
-        "81ca8fec654e"
-      ],
-      "created_at": "2026-05-23T18:46:12.480385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "972e2905a8e849a0": {
-      "topic": "Hull City Wins EFL Playoff, Promoted to EPL",
-      "item_ids": [
-        "7aed96f0ac82"
-      ],
-      "created_at": "2026-05-23T18:46:12.480385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "457bc92ce8826d1c": {
-      "topic": "Montreal Canadiens Stanley Cup Playoff Run Strategy",
-      "item_ids": [
-        "1050b7016af7"
-      ],
-      "created_at": "2026-05-23T18:46:12.480385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "279833b4c67e82e4": {
-      "topic": "Carolina Hurricanes Stanley Cup Playoff Game",
-      "item_ids": [
-        "ce08229b3f11",
-        "77210d81b8fe"
-      ],
-      "created_at": "2026-05-23T18:46:12.480385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "644896bf2bc98561": {
-      "topic": "Stanley Cup Playoff Favorites vs Underdogs Rankings",
-      "item_ids": [
-        "b69f5095651f"
-      ],
-      "created_at": "2026-05-23T18:46:12.480385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "833fd3d222041e4c": {
       "topic": "Neon Raises Cannes Palme d'Or Winning Streak to Seven With 'Fjord' Starring Sebastian Stan & Renate Reinsve",
       "item_ids": [
@@ -1256,7 +1023,35 @@
       "created_at": "2026-05-24T16:41:07.613612+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1b45720869163faf": {
+      "topic": "Nike Giannis Freak 7 'Neon Fade' Sneaker Release",
+      "item_ids": [
+        "0763e79c4f8d"
+      ],
+      "created_at": "2026-05-24T18:49:05.617929+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "de769843b305ef19": {
+      "topic": "Beartooth's Caleb Shomo Comes Out as Gay",
+      "item_ids": [
+        "1ca28d2cca5e",
+        "5398d4ba2c37"
+      ],
+      "created_at": "2026-05-24T18:49:05.617929+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8e792d246c1dc0d6": {
+      "topic": "Selena Gomez 'Only Murders in the Building' London Filming Behind-the-Scenes",
+      "item_ids": [
+        "6a2b11f0c3ee"
+      ],
+      "created_at": "2026-05-24T18:49:05.617929+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T16:41:07.614769+00:00"
+  "last_checked": "2026-05-24T18:49:05.619108+00:00"
 }
