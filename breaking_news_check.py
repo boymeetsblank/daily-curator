@@ -394,6 +394,44 @@ Return a JSON array, one object per item, same order as input:
     return live_clusters
 
 
+_ESCALATION_STOP_WORDS = {
+    "with", "the", "that", "this", "from", "have", "been", "will", "about",
+    "after", "their", "there", "which", "would", "could", "should", "than",
+    "when", "where", "what", "into", "over", "just", "more", "some", "also",
+    "says", "said", "show", "shows", "gets", "first", "year", "years", "week",
+}
+
+def _todays_pick_titles() -> list[str]:
+    """Return bold-formatted titles from all picks files written today (UTC)."""
+    import glob as _glob
+    today_str = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d")
+    titles = []
+    for path in _glob.glob(f"picks/picks-{today_str}-*.md"):
+        with open(path, encoding="utf-8") as f:
+            content = f.read()
+        titles += re.findall(r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n\[Read the full article", content)
+    return titles
+
+
+def _topic_already_covered(cluster_topic: str, published_titles: list[str], threshold: int = 2) -> str | None:
+    """
+    Return the matching published title if the cluster topic overlaps enough
+    keywords with any already-published title today, else None.
+    """
+    def keywords(text: str) -> set[str]:
+        return {
+            w.lower() for w in re.findall(r"[a-zA-Z']+", text)
+            if len(w) > 3 and w.lower() not in _ESCALATION_STOP_WORDS
+        }
+
+    topic_kw = keywords(cluster_topic)
+    for title in published_titles:
+        overlap = topic_kw & keywords(title)
+        if len(overlap) >= threshold:
+            return title
+    return None
+
+
 def escalate_cluster_to_sonnet(cluster: dict, cluster_items: list[dict], new_items_only: list[dict] | None = None) -> None:
     """
     Synthesizes a cluster of related live feed items into one unified main feed story.
@@ -484,6 +522,14 @@ Return JSON only: {{"update": "<1-2 sentence update>"}}"""
             is_update = False
 
     if not is_update:
+        # ── Guard: skip if main feed already has this story today ─────────────
+        already_published = _todays_pick_titles()
+        match = _topic_already_covered(cluster["topic"], already_published)
+        if match:
+            print(f"   ⏭️  Cluster '{cluster['topic'][:60]}' skipped — already in feed as: '{match[:60]}'")
+            cluster["picks_file"] = "SUPPRESSED"  # prevent future re-escalation attempts
+            return
+
         # ── First escalation: full synthesis ──────────────────────────────────
         items_block = "\n".join(
             f"{i+1}. [Source: {item['source_name']}] {item['topic']}"

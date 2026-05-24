@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-24] Fix: live cluster escalation now checks for already-published stories
+
+Added a pre-write guard in `escalate_cluster_to_sonnet()`: before writing a new picks file, it loads today's already-published pick titles and checks keyword overlap with the cluster topic. If 2+ distinctive keywords match an existing pick, the escalation is skipped — fixing cases like "Neon Extends Palme d'Or Streak" (main feed at 14:13) being duplicated by a live cluster escalation 3 minutes later.
+
 ## [2026-05-24] Fix: cross-run and live-cluster dedup — Colbert/Kyle Busch pattern
 
 Two clustering failures fixed. (1) Cross-run main feed dedup: `deduplicate_after_scoring()` now receives titles published in earlier runs today via `load_todays_published_titles()`. Sonnet compares current picks against already-published titles and removes duplicates — "Colbert Signs Off CBS" at 17:46 will now block "Stephen Colbert Makes Quick Return" in a later run. (2) Live cluster assignment: tightened the Haiku cluster prompt rules so that follow-up details, cause-of-death reveals, and reaction pieces are assigned to the originating cluster rather than spawning a new one — "Kyle Busch Dead at 39" and "Family: Busch died from pneumonia, sepsis" will cluster as one story.
@@ -80,9 +84,6 @@ X (Twitter) trending topics now refresh every 10 minutes via trends24.in (free, 
 
 When multiple live feed items converge on the same story, they now automatically cluster and escalate as one unified main feed pick. How it works: after each quality gate pass, a Haiku clustering call assigns new items to existing clusters or creates new ones (e.g., "Knicks win Game 1 of NBA Eastern Conference Finals" groups Knicks, Josh Hart, Harden, and Mike Breen signals together). When a cluster hits 3 items, Sonnet synthesizes all signals into one editorial story — headline, Why It Matters, and hook — and writes it to the main feed. Re-escalates every 3 additional items so evolving stories stay current. Cluster state persists in `breaking_news_state.json` with a 24-hour TTL.
 
-## [2026-05-20] Live feed: tighter Haiku scoring gate + escalation threshold restored to 9
-
-Rewrote the Haiku scoring prompt to fix junk flowing into the main feed after the May 19 overhaul. Four changes: (1) replaced "score generously" with "be strict — when in doubt, score lower"; (2) added explicit auto-1 list covering political content, generic social posts (good morning/lifestyle/emoji filler), local/trade niche articles, and bare trending topic names with no news context; (3) tightened Bluesky guidance — viral engagement alone is not enough, post must contain actual news or a genuine cultural flashpoint; (4) tightened the 8-anchor to require broad audience significance, not just niche relevance. Escalation threshold raised 8→9 so only "you have to tell someone right now" items reach the main feed.
 
 
 
