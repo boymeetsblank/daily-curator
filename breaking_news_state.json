@@ -1,16 +1,5 @@
 {
   "known_ids": [
-    "442218b5d7a2",
-    "56d76575f009",
-    "98d9dd82ea65",
-    "bcf1e87bf959",
-    "a4112f743b05",
-    "96e9a6f4b883",
-    "0bddb16ad25d",
-    "5f1bdad161f4",
-    "d9bb37d0da3f",
-    "aca6dc209b4b",
-    "8a1234d98446",
     "00a401089c32",
     "5d59fa551c89",
     "7deac68ca2a7",
@@ -499,57 +488,28 @@
     "d9bc7dd071fe",
     "830d6a7093eb",
     "c64c69a3e8a8",
-    "53b43a67f0b6"
+    "53b43a67f0b6",
+    "08666a3d8834",
+    "3d9a9c67bd47",
+    "01a9b2f0075c",
+    "c91949ebb0f0",
+    "14820ca0e034",
+    "4922d84e88f6",
+    "cafdc557f14c",
+    "c6a5d9dbfd93",
+    "d470381e722f",
+    "cc7d5992fc14",
+    "1a8200760839"
   ],
   "failed_ids": {
-    "2e9483db6e3b": "2026-05-24T18:48:38.343452+00:00",
-    "f2e1c0841b07": "2026-05-24T18:48:38.343452+00:00",
-    "d1de52b2829e": "2026-05-24T18:48:38.343452+00:00",
-    "c5ede290a11f": "2026-05-24T18:48:38.343452+00:00",
-    "8bc6b1c7a29f": "2026-05-24T18:48:38.343452+00:00",
-    "47376df9d794": "2026-05-24T18:48:38.343452+00:00",
     "fcc5cdd3e08b": "2026-05-24T21:59:59.715346+00:00",
     "84041eb2b71a": "2026-05-24T21:59:59.715346+00:00",
     "2db9a0eedcd3": "2026-05-24T21:59:59.715346+00:00",
-    "80b0155522ec": "2026-05-24T21:59:59.715346+00:00"
+    "80b0155522ec": "2026-05-24T21:59:59.715346+00:00",
+    "cfe06fc8c906": "2026-05-24T23:05:29.596802+00:00",
+    "771b8bfe0fa2": "2026-05-24T23:05:29.596802+00:00"
   },
   "live_clusters": {
-    "bf59441691f42967": {
-      "topic": "Nike Zoom Skylon 11 'Volt' Sneaker Return Release",
-      "item_ids": [
-        "c2bf3503dfa3"
-      ],
-      "created_at": "2026-05-23T22:37:26.656440+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "014f410fefb135ea": {
-      "topic": "Florence Pugh 'The Midnight Library' Cannes Film Market Deal",
-      "item_ids": [
-        "a1eed420f98b"
-      ],
-      "created_at": "2026-05-23T22:37:26.656440+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ac8f3626fe9a66cc": {
-      "topic": "MLB Cards Torres Emotional Debut Home Run",
-      "item_ids": [
-        "0b0aa1823626"
-      ],
-      "created_at": "2026-05-23T22:37:26.656440+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ffa2a5d6e118bd0": {
-      "topic": "Bayern Munich Kane Hat Trick German Cup Final Victory",
-      "item_ids": [
-        "a3dbb7301a42"
-      ],
-      "created_at": "2026-05-23T22:37:26.656440+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "4f028765a2f84ea3": {
       "topic": "Usyk Boxing Match Last-Second Stoppage Victory",
       "item_ids": [
@@ -985,7 +945,61 @@
       "created_at": "2026-05-24T22:00:48.903995+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "48166369f116b270": {
+      "topic": "adidas Adistar MLD Summer Colorway Release",
+      "item_ids": [
+        "08666a3d8834"
+      ],
+      "created_at": "2026-05-24T23:06:01.263976+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0ad4d953ce63decc": {
+      "topic": "Richard Dreyfuss Cancels Jaws Reunion Appearance",
+      "item_ids": [
+        "3d9a9c67bd47"
+      ],
+      "created_at": "2026-05-24T23:06:01.263976+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1afce5e24d354467": {
+      "topic": "Meshchera Match-Three Game Playdate Release",
+      "item_ids": [
+        "01a9b2f0075c"
+      ],
+      "created_at": "2026-05-24T23:06:01.263976+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "52779c578c33a0fc": {
+      "topic": "KHCC 3D Augmented Reality Medical Technology Achievement",
+      "item_ids": [
+        "c91949ebb0f0"
+      ],
+      "created_at": "2026-05-24T23:06:01.263976+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "02047f3078544307": {
+      "topic": "Quantum Computing Stock Analysis May 2026",
+      "item_ids": [
+        "14820ca0e034"
+      ],
+      "created_at": "2026-05-24T23:06:01.263976+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "32fcfe61eaa9d6c7": {
+      "topic": "Asian High-Growth Tech Stocks May 2026",
+      "item_ids": [
+        "4922d84e88f6"
+      ],
+      "created_at": "2026-05-24T23:06:01.263976+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T22:00:48.905196+00:00"
+  "last_checked": "2026-05-24T23:06:01.265151+00:00"
 }
