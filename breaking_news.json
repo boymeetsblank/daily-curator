@@ -1,6 +1,79 @@
 {
   "items": [
     {
+      "id": "64833ad769b3",
+      "topic": "Stephen Colbert Makes Surprise Michigan Public Access Appearance After ‘Late Show’ Farewell",
+      "traffic": "",
+      "detected_at": "2026-05-24T08:08:48.984317+00:00",
+      "search_url": "https://www.billboard.com/culture/tv-film/stephen-colbert-public-access-only-in-monroe-1236255765/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "90b9c8dcd99c651d"
+    },
+    {
+      "id": "f7dc209d1486",
+      "topic": "The Universe Is Full of ‘Impossible’ Black Holes. Now Scientists Know Why",
+      "traffic": "",
+      "detected_at": "2026-05-24T08:08:48.984317+00:00",
+      "search_url": "https://www.wired.com/story/the-universe-is-full-of-impossible-black-holes-now-scientists-know-why/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "b44cd56a51e40c08"
+    },
+    {
+      "id": "770bd9c54fcd",
+      "topic": "Keith Jackson",
+      "traffic": "##7 on X",
+      "detected_at": "2026-05-24T08:08:48.984317+00:00",
+      "search_url": "https://x.com/search?q=Keith+Jackson&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "7920d04193b0",
+      "topic": "NBA Finals",
+      "traffic": "##8 on X",
+      "detected_at": "2026-05-24T08:08:48.984317+00:00",
+      "search_url": "https://x.com/search?q=NBA+Finals&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "fe2a44de6c42",
+      "topic": "Usyk",
+      "traffic": "##9 on X",
+      "detected_at": "2026-05-24T08:08:48.984317+00:00",
+      "search_url": "https://x.com/search?q=Usyk&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6,
+      "cluster_id": "4f028765a2f84ea3"
+    },
+    {
+      "id": "1ed94562e292",
+      "topic": "Pistons",
+      "traffic": "##10 on X",
+      "detected_at": "2026-05-24T08:08:48.984317+00:00",
+      "search_url": "https://x.com/search?q=Pistons&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "7b8f1726e7a9",
+      "topic": "JIMINS",
+      "traffic": "##12 on X",
+      "detected_at": "2026-05-24T08:08:48.984317+00:00",
+      "search_url": "https://x.com/search?q=JIMINS&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "342c1d798f93",
       "topic": "Taylor Swift Sits Courtside at Knicks-Cavaliers as ESPN Calls Her ‘Travis Kelce’s Fiancée’",
       "traffic": "",
@@ -354,82 +427,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 6
-    },
-    {
-      "id": "d6d0d6a4a751",
-      "topic": "Coca-Cola 600 Sets Kyle Busch Tribute: Here’s How to Livestream the NASCAR Race Online Free",
-      "traffic": "",
-      "detected_at": "2026-05-23T19:54:40.426327+00:00",
-      "search_url": "https://www.rollingstone.com/product-recommendations/streaming/watch-coca-cola-600-race-free-livestream-kyle-busch-tribute-1235567402/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "6e075340a33c6eac"
-    },
-    {
-      "id": "df3f7441eb79",
-      "topic": "Neon Raises Palme D’Or Winning Streak To Seven At Cannes With Sebastian Stan & Renate Reinsve Pic ‘Fjord’",
-      "traffic": "",
-      "detected_at": "2026-05-23T19:54:40.426327+00:00",
-      "search_url": "https://deadline.com/2026/05/cannes-neon-palme-dor-record-fjord-1236919669/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "833fd3d222041e4c"
-    },
-    {
-      "id": "207a56e298de",
-      "topic": "Barbra Streisand Shares Challenges With Cannes On Making ‘Yentl’ In Video Message For Honorary Palme: “I Had To Make This Movie”",
-      "traffic": "",
-      "detected_at": "2026-05-23T19:54:40.426327+00:00",
-      "search_url": "https://deadline.com/2026/05/cannes-barbra-streisand-palme-dor-1236919892/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "3e4bfd817b3165c9"
-    },
-    {
-      "id": "03761f8ccbe2",
-      "topic": "NASA shares Psyche spacecraft's photos of Mars",
-      "traffic": "",
-      "detected_at": "2026-05-23T19:54:40.426327+00:00",
-      "search_url": "https://www.engadget.com/2180093/nasa-shares-psyche-spacecraft-photos-of-mars/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "0099cb843357a619"
-    },
-    {
-      "id": "b2eeb83da149",
-      "topic": "What to read this weekend: The new Image Comics miniseries, Of the Earth",
-      "traffic": "",
-      "detected_at": "2026-05-23T19:54:40.426327+00:00",
-      "search_url": "https://www.engadget.com/2180091/what-to-read-new-image-comics-miniseries-of-the-earth/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "88ad2d7fb554bc84"
-    },
-    {
-      "id": "6995b3a3976c",
-      "topic": "Dart",
-      "traffic": "##2 on X",
-      "detected_at": "2026-05-23T19:54:40.426327+00:00",
-      "search_url": "https://x.com/search?q=Dart&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "bbb3fdba7190",
-      "topic": "Roldan",
-      "traffic": "##10 on X",
-      "detected_at": "2026-05-23T19:54:40.426327+00:00",
-      "search_url": "https://x.com/search?q=Roldan&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-24T05:45:02.629847+00:00"
+  "last_checked": "2026-05-24T08:08:48.984317+00:00"
 }

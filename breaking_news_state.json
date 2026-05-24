@@ -1,12 +1,5 @@
 {
   "known_ids": [
-    "a2e1150087ec",
-    "e3ba434af004",
-    "12ab407f2ddc",
-    "cafc2b6a4518",
-    "47cfcb688295",
-    "bb547bad5f18",
-    "83ec6af8d714",
     "1e8d681d94f7",
     "d2fea97788c7",
     "fa6b6ec04263",
@@ -499,52 +492,29 @@
     "9250ebb03ae2",
     "233ea703c37f",
     "9e5d66df9689",
-    "bad5881f3297"
+    "bad5881f3297",
+    "64833ad769b3",
+    "f7dc209d1486",
+    "770bd9c54fcd",
+    "7920d04193b0",
+    "fe2a44de6c42",
+    "1ed94562e292",
+    "7b8f1726e7a9"
   ],
   "failed_ids": {
     "fdce307b1711": "2026-05-24T05:45:02.629847+00:00",
     "5e327c25dd00": "2026-05-24T05:45:02.629847+00:00",
     "4b8428921ce1": "2026-05-24T05:45:02.629847+00:00",
     "6775ef4c8000": "2026-05-24T05:45:02.629847+00:00",
-    "00c94f420448": "2026-05-24T05:45:02.629847+00:00"
+    "00c94f420448": "2026-05-24T05:45:02.629847+00:00",
+    "49574a2d7059": "2026-05-24T08:08:48.984317+00:00",
+    "d045d66202c6": "2026-05-24T08:08:48.984317+00:00",
+    "9d6259f83e39": "2026-05-24T08:08:48.984317+00:00",
+    "5daec888fdd0": "2026-05-24T08:08:48.984317+00:00",
+    "2207756d9409": "2026-05-24T08:08:48.984317+00:00",
+    "a4d06c318189": "2026-05-24T08:08:48.984317+00:00"
   },
   "live_clusters": {
-    "724dd4c2e3d6c6de": {
-      "topic": "Memorial Day 2026 Mattress Sales Deals Helix Saatva",
-      "item_ids": [
-        "0cadde7e32fa"
-      ],
-      "created_at": "2026-05-23T07:42:55.083275+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "424118046bc58098": {
-      "topic": "Peec Berlin Startup $10M ARR Growth",
-      "item_ids": [
-        "e504babf4306"
-      ],
-      "created_at": "2026-05-23T07:42:55.083275+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "210df103a2cd7bc3": {
-      "topic": "EV Fire Safety Technology Development",
-      "item_ids": [
-        "b3d1bd3e67ef"
-      ],
-      "created_at": "2026-05-23T07:42:55.083275+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5cac9b6761458395": {
-      "topic": "Credo Technology AI Connectivity Stock Gains",
-      "item_ids": [
-        "9310df355270"
-      ],
-      "created_at": "2026-05-23T07:42:55.083275+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "cb2a622b6a6e6dfd": {
       "topic": "'Jim Queen' Adult Animation Series Review",
       "item_ids": [
@@ -672,7 +642,8 @@
         "7bdeb4910f5c",
         "4bd6bf6878ca",
         "3865bac7d098",
-        "0e026a44204f"
+        "0e026a44204f",
+        "64833ad769b3"
       ],
       "created_at": "2026-05-23T13:27:51.186018+00:00",
       "last_escalated_size": 3,
@@ -1217,11 +1188,19 @@
       "topic": "Usyk Boxing Match Last-Second Stoppage Victory",
       "item_ids": [
         "479ab5b8d1c9",
-        "0ed28cec9694"
+        "0ed28cec9694",
+        "fe2a44de6c42"
       ],
       "created_at": "2026-05-23T23:40:13.433827+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-24T08:08:48.984317+00:00",
+      "picks_file": "picks/picks-2026-05-24-0809.md",
+      "why_text": "Oleksandr Usyk, the undisputed heavyweight champion, nearly handed boxing one of its biggest upsets before escaping with a dramatic late stoppage \u2014 the kind of fight that reminds you why the heavyweights still own the sport's biggest moments. It reinforces Usyk's reputation as a fighter who can win ugly, even when his back is against the wall. In a division hungry for chaos, a near-upset that didn't happen still shifts the conversation.",
+      "last_escalated_item_ids": [
+        "479ab5b8d1c9",
+        "0ed28cec9694",
+        "fe2a44de6c42"
+      ]
     },
     "29fff24107209230": {
       "topic": "OKC Thunder Mitchell Ruled Out Game 4 Calf Strain",
@@ -1285,7 +1264,16 @@
       "created_at": "2026-05-24T05:45:28.513468+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b44cd56a51e40c08": {
+      "topic": "Black Holes Physics Discovery Universe Research",
+      "item_ids": [
+        "f7dc209d1486"
+      ],
+      "created_at": "2026-05-24T08:09:20.113110+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T05:45:28.514568+00:00"
+  "last_checked": "2026-05-24T08:09:25.537613+00:00"
 }
