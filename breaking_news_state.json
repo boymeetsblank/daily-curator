@@ -1,13 +1,5 @@
 {
   "known_ids": [
-    "1e8d681d94f7",
-    "d2fea97788c7",
-    "fa6b6ec04263",
-    "d763a91b36dc",
-    "a7a3efb9c036",
-    "2a411320229a",
-    "90868d225398",
-    "d8e0469045bd",
     "afa0da01f3cf",
     "895cbfe52920",
     "09dea98fc4ca",
@@ -499,41 +491,32 @@
     "7920d04193b0",
     "fe2a44de6c42",
     "1ed94562e292",
-    "7b8f1726e7a9"
+    "7b8f1726e7a9",
+    "0eb0f4719380",
+    "5008af3a386b",
+    "4318075d0ef3",
+    "2026dd8457aa",
+    "af76e47eac4d",
+    "2965210ac7e1",
+    "de20a32107fe",
+    "b80ec5ff091c"
   ],
   "failed_ids": {
-    "fdce307b1711": "2026-05-24T05:45:02.629847+00:00",
-    "5e327c25dd00": "2026-05-24T05:45:02.629847+00:00",
-    "4b8428921ce1": "2026-05-24T05:45:02.629847+00:00",
-    "6775ef4c8000": "2026-05-24T05:45:02.629847+00:00",
-    "00c94f420448": "2026-05-24T05:45:02.629847+00:00",
     "49574a2d7059": "2026-05-24T08:08:48.984317+00:00",
     "d045d66202c6": "2026-05-24T08:08:48.984317+00:00",
     "9d6259f83e39": "2026-05-24T08:08:48.984317+00:00",
     "5daec888fdd0": "2026-05-24T08:08:48.984317+00:00",
     "2207756d9409": "2026-05-24T08:08:48.984317+00:00",
-    "a4d06c318189": "2026-05-24T08:08:48.984317+00:00"
+    "a4d06c318189": "2026-05-24T08:08:48.984317+00:00",
+    "04ffa4e29d32": "2026-05-24T10:08:07.036837+00:00",
+    "c44dc74ed6c7": "2026-05-24T10:08:07.036837+00:00",
+    "6dbfef447735": "2026-05-24T10:08:07.036837+00:00",
+    "4b8428921ce1": "2026-05-24T10:08:07.036837+00:00",
+    "6775ef4c8000": "2026-05-24T10:08:07.036837+00:00",
+    "00c94f420448": "2026-05-24T10:08:07.036837+00:00",
+    "debe1948606c": "2026-05-24T10:08:07.036837+00:00"
   },
   "live_clusters": {
-    "cb2a622b6a6e6dfd": {
-      "topic": "'Jim Queen' Adult Animation Series Review",
-      "item_ids": [
-        "c73c801b7c5b"
-      ],
-      "created_at": "2026-05-23T09:27:31.646383+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7ce84a2de0cbbe45": {
-      "topic": "Memory Chip Supercycle 2026 Micron Sandisk Stock Analysis",
-      "item_ids": [
-        "afaa6c0df9c3",
-        "7c406f1f6824"
-      ],
-      "created_at": "2026-05-23T09:27:31.646383+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "42d2c25e6a025b7a": {
       "topic": "U.K.-Nigeria-Hong Kong Romantic Comedy 'My Nigerian Fiance' in Development",
       "item_ids": [
@@ -1273,7 +1256,52 @@
       "created_at": "2026-05-24T08:09:20.113110+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "33c9db6eff3953e4": {
+      "topic": "Mohamed Salah Final Liverpool Game Viewing Guide",
+      "item_ids": [
+        "0eb0f4719380"
+      ],
+      "created_at": "2026-05-24T10:08:31.887909+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4fbc795ba4a13cdf": {
+      "topic": "Premier League Production In-House IMG Transition",
+      "item_ids": [
+        "5008af3a386b"
+      ],
+      "created_at": "2026-05-24T10:08:31.887909+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0bf4560a0f401edb": {
+      "topic": "Cybersecurity Jobs Growth AI Era",
+      "item_ids": [
+        "af76e47eac4d"
+      ],
+      "created_at": "2026-05-24T10:08:31.887909+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "07825749aeae07e2": {
+      "topic": "Seagate Technology AI Storage Valuation Rally",
+      "item_ids": [
+        "2965210ac7e1"
+      ],
+      "created_at": "2026-05-24T10:08:31.887909+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1e36bf0bc1761145": {
+      "topic": "British Lab AI Safety Research Risks",
+      "item_ids": [
+        "de20a32107fe"
+      ],
+      "created_at": "2026-05-24T10:08:31.887909+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T08:09:25.537613+00:00"
+  "last_checked": "2026-05-24T10:08:31.889000+00:00"
 }
