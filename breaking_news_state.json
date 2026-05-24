@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "88ffe866c0c4",
-    "c6db75cb0d46",
-    "c90774afcb1c",
-    "d9723a8fbe03",
-    "2847fe25d219",
-    "8240007eb56c",
-    "e67354052d88",
-    "f1488e5b9dfc",
-    "d8b76417f045",
-    "4461e48e7beb",
-    "c25e53f0351d",
-    "861eebfee4bf",
-    "cd7dc8f490b6",
-    "ce34a9a62e48",
     "2da1121f871b",
     "c8545dcb1f13",
     "271426b49c8d",
@@ -499,22 +485,23 @@
     "dcc701bc41aa",
     "69ad246611d1",
     "c61c64ed49b0",
-    "d8e578002cb6"
+    "d8e578002cb6",
+    "0148929367a2",
+    "16c61ba3e12c",
+    "3f8181f159b2",
+    "a3678b07908e",
+    "e723064f8654",
+    "9e809aad23cb",
+    "fe53b976cadd",
+    "a65a31d95fce",
+    "0ea4a8c5419d",
+    "5e01fd9aab10",
+    "69d15f18efd4",
+    "f49bbb224619",
+    "993867f6e104",
+    "2c08ced66deb"
   ],
   "failed_ids": {
-    "2ed019826a18": "2026-05-24T15:37:01.599542+00:00",
-    "ccc99537958c": "2026-05-24T15:37:01.599542+00:00",
-    "aff0a4cb41bc": "2026-05-24T15:37:01.599542+00:00",
-    "8b41f6a06297": "2026-05-24T15:37:01.599542+00:00",
-    "74db242c8627": "2026-05-24T15:37:01.599542+00:00",
-    "fb65dae252da": "2026-05-24T15:37:01.599542+00:00",
-    "0bae6e931bab": "2026-05-24T15:37:01.599542+00:00",
-    "9e809aad23cb": "2026-05-24T15:37:01.599542+00:00",
-    "87f9c3f1a854": "2026-05-24T15:37:01.599542+00:00",
-    "0edf51d29e45": "2026-05-24T15:37:01.599542+00:00",
-    "d91d18b7604f": "2026-05-24T15:37:01.599542+00:00",
-    "911c5212dc68": "2026-05-24T15:37:01.599542+00:00",
-    "3bfea8ba850b": "2026-05-24T15:37:01.599542+00:00",
     "48905a6f9416": "2026-05-24T16:40:36.691947+00:00",
     "a61948772153": "2026-05-24T16:40:36.691947+00:00",
     "af06a9735a60": "2026-05-24T16:40:36.691947+00:00",
@@ -535,60 +522,6 @@
     "47376df9d794": "2026-05-24T18:48:38.343452+00:00"
   },
   "live_clusters": {
-    "833fd3d222041e4c": {
-      "topic": "Neon Raises Cannes Palme d'Or Winning Streak to Seven With 'Fjord' Starring Sebastian Stan & Renate Reinsve",
-      "item_ids": [
-        "df3f7441eb79",
-        "ac9d816c267c",
-        "2a0361684cb5"
-      ],
-      "created_at": "2026-05-23T19:55:14.194813+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-24T14:15:28.622950+00:00",
-      "picks_file": "picks/picks-2026-05-24-1416.md",
-      "why_text": "Neon has now claimed seven consecutive Palme d'Or wins, cementing the indie distributor as the defining taste-maker in prestige cinema \u2014 a remarkable run that would have seemed impossible for a company that didn't exist a decade ago. 'Fjord' brings together Sebastian Stan and Renate Reinsve, two of the most compelling actors working right now, and the win will only accelerate the film's awards-season momentum. That Tilda Swinton felt compelled to publicly push back on a 'down year' narrative suggests the discourse around Cannes 2025 is already heating up \u2014 and Neon just won the argument.",
-      "last_escalated_item_ids": [
-        "df3f7441eb79",
-        "ac9d816c267c",
-        "2a0361684cb5"
-      ]
-    },
-    "3e4bfd817b3165c9": {
-      "topic": "Barbra Streisand Receives Honorary Palme d'Or at Cannes 2026",
-      "item_ids": [
-        "207a56e298de"
-      ],
-      "created_at": "2026-05-23T19:55:14.194813+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "640b81bc9a7361cd": {
-      "topic": "Liberty's Ionescu Season Debut vs. Wings WNBA Game",
-      "item_ids": [
-        "54db81a609fb"
-      ],
-      "created_at": "2026-05-23T19:55:14.194813+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0099cb843357a619": {
-      "topic": "NASA Psyche Spacecraft Mars Photography Images",
-      "item_ids": [
-        "03761f8ccbe2"
-      ],
-      "created_at": "2026-05-23T19:55:14.194813+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "88ad2d7fb554bc84": {
-      "topic": "Image Comics 'Of the Earth' Miniseries Weekend Reading Recommendation",
-      "item_ids": [
-        "b2eeb83da149"
-      ],
-      "created_at": "2026-05-23T19:55:14.194813+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "5717eb51430ee9a4": {
       "topic": "Air Jordan 5 'Dark Powder Blue' Unreleased 2025 Sneaker",
       "item_ids": [
@@ -1053,5 +986,5 @@
       "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T18:49:05.619108+00:00"
+  "last_checked": "2026-05-24T19:57:04.838248+00:00"
 }
