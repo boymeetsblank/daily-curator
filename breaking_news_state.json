@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "2da1121f871b",
-    "c8545dcb1f13",
-    "271426b49c8d",
-    "9ed876a9ff77",
-    "2e07a1a98210",
-    "0306045eb227",
-    "02366bcb995a",
-    "7999c9bdb0a1",
-    "76056ed31073",
-    "cc1c132201fd",
-    "6bc924b16aea",
-    "87b968d37079",
-    "3b3cc419347e",
-    "1f1f129d6d36",
     "3c1931b59afd",
     "a6eb364da9d7",
     "f3d9d99eea72",
@@ -499,21 +485,23 @@
     "69d15f18efd4",
     "f49bbb224619",
     "993867f6e104",
-    "2c08ced66deb"
+    "2c08ced66deb",
+    "6357114a1caf",
+    "c95a309dc573",
+    "e40b35959352",
+    "bd2acafd1b79",
+    "665d57e61d6e",
+    "4f8176b91d15",
+    "728fac2dc581",
+    "4c85a7a68cdd",
+    "f15b90dc149f",
+    "55b459948395",
+    "27194cd3fc0b",
+    "6f420c9d4f63",
+    "11c9a05ec734",
+    "f0c7ec31c2bb"
   ],
   "failed_ids": {
-    "48905a6f9416": "2026-05-24T16:40:36.691947+00:00",
-    "a61948772153": "2026-05-24T16:40:36.691947+00:00",
-    "af06a9735a60": "2026-05-24T16:40:36.691947+00:00",
-    "1a4e9a5982c5": "2026-05-24T16:40:36.691947+00:00",
-    "fbb69bf02408": "2026-05-24T16:40:36.691947+00:00",
-    "32d2b1e07e1a": "2026-05-24T16:40:36.691947+00:00",
-    "290194435ced": "2026-05-24T16:40:36.691947+00:00",
-    "a04f765c1ddc": "2026-05-24T16:40:36.691947+00:00",
-    "55b459948395": "2026-05-24T16:40:36.691947+00:00",
-    "27194cd3fc0b": "2026-05-24T16:40:36.691947+00:00",
-    "6f420c9d4f63": "2026-05-24T16:40:36.691947+00:00",
-    "11c9a05ec734": "2026-05-24T16:40:36.691947+00:00",
     "2e9483db6e3b": "2026-05-24T18:48:38.343452+00:00",
     "f2e1c0841b07": "2026-05-24T18:48:38.343452+00:00",
     "d1de52b2829e": "2026-05-24T18:48:38.343452+00:00",
@@ -522,51 +510,6 @@
     "47376df9d794": "2026-05-24T18:48:38.343452+00:00"
   },
   "live_clusters": {
-    "5717eb51430ee9a4": {
-      "topic": "Air Jordan 5 'Dark Powder Blue' Unreleased 2025 Sneaker",
-      "item_ids": [
-        "facb13cf9ef3"
-      ],
-      "created_at": "2026-05-23T20:45:11.643304+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "39a14526d7f05496": {
-      "topic": "Charli xcx 'Playboy Bunny' Pop-Punk B-Side Track Release",
-      "item_ids": [
-        "58c2b5de04d9"
-      ],
-      "created_at": "2026-05-23T20:45:11.643304+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "de86f6a3f0d9d931": {
-      "topic": "SolarSquare India Rooftop Solar VC Funding Round $60M",
-      "item_ids": [
-        "fc4bedbc0cf5"
-      ],
-      "created_at": "2026-05-23T20:45:11.643304+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "80eb406aa17288d1": {
-      "topic": "Ansel Adams Trust AI-Colorized Photography Exhibition Unauthorized",
-      "item_ids": [
-        "43cc8faba191"
-      ],
-      "created_at": "2026-05-23T20:45:11.643304+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6bb165e2bec618e1": {
-      "topic": "Ayaneo Game Boy Remake with AI Features Announcement",
-      "item_ids": [
-        "e547a300c828"
-      ],
-      "created_at": "2026-05-23T20:45:11.643304+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "7aed170cd2dccaec": {
       "topic": "Dick Parry Pink Floyd Saxophonist Death Obituary",
       "item_ids": [
@@ -986,5 +929,5 @@
       "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T19:57:04.838248+00:00"
+  "last_checked": "2026-05-24T20:58:26.172481+00:00"
 }
