@@ -37,14 +37,15 @@ MAX_FEED_SIZE           = 40   # max total items in the live feed at once
 FAILED_IDS_TTL_HOURS    = 4    # failed items re-enter the pipeline after this long
 CLUSTER_THRESHOLD       = 3    # items in a cluster before escalating to main feed
 CLUSTER_TTL_HOURS       = 24   # prune clusters from state after this long
-REDDIT_ALL_MIN_SCORE    = 1000 # minimum upvotes for r/all posts (higher bar than subscribed subs)
+REDDIT_ALL_MIN_SCORE    = 500  # minimum upvotes for r/all posts
+REDDIT_SUB_MIN_SCORE    = 200  # minimum upvotes for culture-subreddit hot posts
+REDDIT_SUB_AGE_HOURS    = 12   # culture-subreddit posts must be under this age
 
 SOURCES_FILE        = "sources.json"
 STATE_FILE          = "breaking_news_state.json"
 OUTPUT_FILE         = "breaking_news.json"
 SOCIAL_TRENDS_PATH  = "social_trends.json"
-YOUTUBE_TRENDING_RSS  = "https://www.youtube.com/feeds/videos.xml?chart=mostpopular&regionCode=US&hl=en&gl=US"
-GOOGLE_TRENDS_URL     = "https://trends.google.com/trends/trendingsearches/daily?geo=US"
+GOOGLE_TRENDS_URL     = "https://trends.google.com/trends/trendingsearches/daily/rss?geo=US"
 GOOGLE_TRENDS_MAX_AGE = 10    # minutes before we try to refresh google trends
 X_TRENDS_URL          = "https://trends24.in/united-states/"
 X_TRENDS_MAX_AGE      = 10    # minutes before we try to refresh X trending
@@ -691,18 +692,19 @@ def refresh_google_trends(trends: dict) -> dict:
             timeout=10,
         )
         resp.raise_for_status()
-        data = resp.json()
-        days = data.get("default", {}).get("trendingSearchesDays", [])
+        # Parse RSS/XML — more reliable in GitHub Actions than the JSON endpoint
+        GT_NS = "https://trends.google.com/trends/trendingsearches/daily"
+        root = ET.fromstring(resp.content)
         topics = []
-        engagement = {}  # topic → "200K+ searches" style label
-        for day in days[:1]:  # only today's trends
-            for search in day.get("trendingSearches", []):
-                query = search.get("title", {}).get("query", "")
-                if query:
-                    topics.append(query)
-                    traffic = search.get("formattedTraffic", "")
-                    if traffic:
-                        engagement[query] = traffic
+        engagement = {}
+        for item in root.findall("./channel/item"):
+            title_el   = item.find("title")
+            traffic_el = item.find(f"{{{GT_NS}}}approx_traffic")
+            if title_el is not None and title_el.text:
+                query = title_el.text.strip()
+                topics.append(query)
+                if traffic_el is not None and traffic_el.text:
+                    engagement[query] = traffic_el.text.strip()
         if topics:
             trends = {**trends, "google": topics, "google_engagement": engagement}
             try:
@@ -790,61 +792,79 @@ def fetch_x_trending_live(trends: dict) -> dict:
     return trends
 
 
-# ── Source: YouTube trending (free RSS, no API key needed) ───────────────────
+# ── Source: Reddit hot posts for key culture subreddits (direct API) ─────────
 
-def fetch_youtube_trending_rss(known_set: set[str], now_iso: str) -> list[dict]:
+CULTURE_SUBREDDITS = [
+    "popculturechat",
+    "music",
+    "movies",
+    "hiphopheads",
+    "streetwear",
+    "sneakers",
+    "nba",
+    "soccer",
+]
+
+def fetch_reddit_culture_hot(known_set: set[str], now_iso: str) -> list[dict]:
     """
-    Fetch YouTube trending videos via the free public RSS feed.
-    Returns candidates in the same shape as RSS/Reddit items.
+    Fetch hot posts from key culture subreddits via Reddit's public JSON API.
+    Bypasses the RSS publication-time window so posts surface when they're
+    actually hot, not just when they were first published.
     """
-    try:
-        resp = requests.get(YOUTUBE_TRENDING_RSS, headers=_HEADERS, timeout=15)
-        resp.raise_for_status()
-        root = ET.fromstring(resp.content)
-    except Exception as e:
-        print(f"      ⚠️  Could not fetch YouTube trending RSS: {e}")
-        return []
+    new_items = []
+    now_ts = datetime.now(tz=timezone.utc).timestamp()
 
-    ns = {
-        "atom":  "http://www.w3.org/2005/Atom",
-        "yt":    "http://www.youtube.com/xml/schemas/2015",
-        "media": "http://search.yahoo.com/mrss/",
-    }
-
-    candidates = []
-    for entry in root.findall("atom:entry", ns):
-        title_el = entry.find("atom:title", ns)
-        link_el  = entry.find("atom:link", ns)
-        vid_el   = entry.find("yt:videoId", ns)
-
-        title = (title_el.text or "").strip() if title_el is not None else ""
-        link  = link_el.get("href", "").strip() if link_el is not None else ""
-        if not link and vid_el is not None:
-            link = f"https://www.youtube.com/watch?v={vid_el.text}"
-
-        if not title or not link:
+    for sub in CULTURE_SUBREDDITS:
+        try:
+            resp = requests.get(
+                f"https://www.reddit.com/r/{sub}/hot.json?limit=10",
+                headers=_REDDIT_HEADERS,
+                timeout=10,
+            )
+            resp.raise_for_status()
+            posts = resp.json().get("data", {}).get("children", [])
+        except Exception as e:
+            print(f"      ⚠️  Could not fetch r/{sub}: {e}")
             continue
 
-        aid = item_id(link)
-        if aid in known_set:
-            continue
+        for child in posts:
+            post         = child.get("data", {})
+            post_id      = post.get("id", "")
+            title        = (post.get("title") or "").strip()
+            score        = post.get("score", 0)
+            num_comments = post.get("num_comments", 0)
+            permalink    = post.get("permalink", "")
 
-        stats_el = entry.find("yt:statistics", ns)
-        views = int(stats_el.get("views", 0)) if stats_el is not None else 0
-        traffic = f"{views:,} views" if views else ""
+            if not post_id or not title:
+                continue
+            if score < REDDIT_SUB_MIN_SCORE:
+                continue
+            age_hours = (now_ts - post.get("created_utc", 0)) / 3600
+            if age_hours > REDDIT_SUB_AGE_HOURS:
+                continue
 
-        print(f"   ▶️  [YouTube Trending] {title[:70]}" + (f" ({traffic})" if traffic else ""))
-        candidates.append({
-            "id":          aid,
-            "topic":       title,
-            "traffic":     traffic,
-            "detected_at": now_iso,
-            "search_url":  link,
-            "source_name": "YouTube Trending",
-            "source_type": "youtube",
-        })
+            aid = item_id(f"reddit_sub:{post_id}")
+            if aid in known_set:
+                continue
 
-    return candidates
+            eng_parts = [f"{score:,} upvotes"]
+            if num_comments:
+                eng_parts.append(f"{num_comments:,} comments")
+            traffic = " · ".join(eng_parts)
+
+            print(f"   🟠 [r/{sub}] {title[:70]} ({traffic})")
+            new_items.append({
+                "id":          aid,
+                "topic":       title,
+                "traffic":     traffic,
+                "detected_at": now_iso,
+                "search_url":  f"https://www.reddit.com{permalink}",
+                "source_name": f"r/{sub}",
+                "source_type": "reddit",
+            })
+
+    print(f"   🟠 Got {len(new_items)} new culture subreddit post(s).")
+    return new_items
 
 
 # ── Source: social trend topics as candidates (X, Google, TikTok) ────────────
@@ -1105,7 +1125,7 @@ def fetch_reddit_all_hot(known_set: set[str], now_iso: str) -> list[dict]:
 
         created_utc = post.get("created_utc", 0)
         post_age_hours = (datetime.now(tz=timezone.utc).timestamp() - created_utc) / 3600
-        if post_age_hours > 6:
+        if post_age_hours > REDDIT_SUB_AGE_HOURS:
             continue
 
         aid = item_id(f"reddit_all:{post_id}")
@@ -1231,8 +1251,8 @@ def main():
     reddit_all_candidates = fetch_reddit_all_hot(known_set, now_iso)
     candidates.extend(reddit_all_candidates)
 
-    youtube_candidates = fetch_youtube_trending_rss(known_set, now_iso)
-    candidates.extend(youtube_candidates)
+    reddit_culture_candidates = fetch_reddit_culture_hot(known_set, now_iso)
+    candidates.extend(reddit_culture_candidates)
 
     social_candidates = build_social_candidates(trends, known_set, now_iso)
     candidates.extend(social_candidates)

@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-24] Live feed: social content overhaul — Google Trends RSS fix + Reddit culture subreddits
+
+Three changes to make social content consistently present in the live feed. (1) Google Trends switched from the broken JSON endpoint to the RSS endpoint (`/daily/rss?geo=US`) — the JSON endpoint was returning non-JSON in GitHub Actions and silently failing; the RSS endpoint is XML-based and reliable. (2) Removed YouTube trending RSS — it has been consistently returning 0 results in GitHub Actions from both the free RSS and Apify; removed rather than silently failing every run. (3) Added `fetch_reddit_culture_hot()` which directly calls Reddit's hot.json API for 8 culture subreddits (r/popculturechat, r/music, r/movies, r/hiphopheads, r/streetwear, r/sneakers, r/nba, r/soccer) — bypasses the 90-min RSS publication window so posts surface when they're actually hot. Posts need 200+ upvotes and be under 12 hours old. Also: r/all threshold lowered 1000→500 upvotes; r/all and culture subreddits both use the 12h age window.
+
 ## [2026-05-22] Live feed: Reddit r/all added to clustering pipeline
 
 `breaking_news_check.py` now fetches Reddit r/all hot posts every 5 minutes via `fetch_reddit_all_hot()`. Posts need 1,000+ upvotes and must be under 6 hours old to enter the pipeline — a higher bar than subscribed subreddits to ensure only genuinely viral content triggers clusters. Also: `load_social_trends()` now reads `reddit_hot` from the daily_curator cache so Haiku sees r/all titles as social context when scoring; `filter_and_enrich_items()` surfaces those titles in the live social signals block.
@@ -80,25 +84,8 @@ Rewrote the Haiku scoring prompt to fix junk flowing into the main feed after th
 
 `fetch_youtube_trends()` in `daily_curator.py` now uses the free public YouTube trending RSS feed instead of the `streamers~youtube-trending-videos` Apify actor. Same data, zero Apify compute cost. Saves 3 actor runs/day. The live feed was already using this free RSS endpoint — the main curator now does the same.
 
-## [2026-05-19] Live feed overhaul — more active, more social, smarter scoring
 
-Raised live feed quality gate from 6→5 and Sonnet escalation threshold from 9→8, so more content surfaces and more reaches the main picks feed. Added Reddit 6-hour age filter (hot.json can return stale posts). Added Bluesky What's Hot as a source (free public API, no auth). Updated Haiku prompt with velocity/recency signal and Bluesky context. Added pip caching to breaking_news.yml to reduce run latency. Lowered Reddit upvote threshold 200→150. Fixed 3 broken Reddit RSS URLs (missing .rss suffix on r/InterestingAsFuck, r/NotTheOnion, r/Damnthatsinteresting). Added r/nextfuckinglevel, r/BeAmazed, r/PublicFreakout, r/streetwear to sources. Added Reddit first-mover signal to main curator scoring prompt. Fixed main feed auto-opening archive when today only has live picks.
 
-## [2026-05-10] Main feed: stronger cross-source signal + any-topic scoring philosophy + MMA sources
-
-Three changes to catch high-value stories that were slipping through. (1) Cross-source threshold lowered 3→2: stories covered by 2+ sources now trigger the TRENDING flag, giving more stories the benefit of the doubt. (2) Cross-source bonus upgraded to hard score floors: 2+ sources → minimum 7, 3+ sources → minimum 8, applied regardless of topic. (3) Haiku prompt rewritten from category-list framing ("sneakers, music, sports...") to audience-first framing ("well-connected, culturally aware person") — anything genuinely significant has a fair shot regardless of topic bucket. (4) Added MMA Fighting, MMA Junkie, and r/MMA as sources so major fight events surface reliably.
-
-## [2026-05-07] Live feed: purely reverse-chronological, no score pinning
-
-Removed the two-tier sort that pinned 9+ items to the top of the Live feed. The Live section is now strictly newest-first. Score-based pinning belongs in the main feed only.
-
-## [2026-05-07] Live feed: MAX_FEED_SIZE raised 20→40
-
-Increased the live feed display cap from 20 to 40 items. With the pipeline now generating 5–12 new items/hour during peak hours, the old cap was filling up within 2–4 hours and blocking new entries until older items expired.
-
-## [2026-05-07] Live feed volume: social candidates restored, 6 new RSS sources, 5 subreddits, free Google Trends refresh, 4h failed-item window, wider article window
-
-Six changes to restore and grow live feed candidate volume after the May 6 overhaul thinned the pipeline: (1) restored `build_social_candidates()` call so X/Google/TikTok topics re-enter as Haiku-scored candidates; (2) added 6 RSS sources — Pitchfork, Billboard, Rolling Stone, The Ringer, Deadline, Bleacher Report; (3) breaking news monitor now tops up Google Trends data from the free unofficial daily endpoint when `social_trends.json` is >60 minutes old — no Apify cost; (4) added 5 subreddits — r/hiphopheads, r/sneakers, r/soccer, r/movies, r/music; (5) failed items (score 1–5) are now suppressed for only 4 hours instead of permanently, so slow-burn stories can resurface; (6) `FEED_WINDOW_MINUTES` widened 60→90 to reduce misses from delayed GitHub Actions runs.
 
 
 
