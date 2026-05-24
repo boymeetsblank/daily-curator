@@ -1,6 +1,154 @@
 {
   "items": [
     {
+      "id": "3a67faae5333",
+      "topic": "Arc’teryx Launches Breezy Kragg Aura Recovery Mules",
+      "traffic": "",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://hypebeast.com/2026/5/arcteryx-kragg-aura-mules-release-info",
+      "source_name": "Hypebeast",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "ad3ee9721f290822"
+    },
+    {
+      "id": "c4760bf4ab08",
+      "topic": "‘My Hero Academia FINAL SEASON’ Is Crunchyroll’s 2026 Anime of the Year",
+      "traffic": "",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://hypebeast.com/2026/5/crunchyroll-anime-awards-2026-winner-list-my-hero-academia-final-season-anime-of-the-year",
+      "source_name": "Hypebeast",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "4b106a93e6881ba9"
+    },
+    {
+      "id": "58b2d38b2586",
+      "topic": "Knicks win 10th straight, take command of ECF",
+      "traffic": "",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48858308/knicks-overwhelm-cavaliers-again-take-3-0-series-lead",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "4e9680741e4a5a89"
+    },
+    {
+      "id": "77210d81b8fe",
+      "topic": "Ehlers wins it OT as favored Canes dodge 2-0 hole",
+      "traffic": "",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://www.espn.com/nhl/story/_/id/48857997/nikolaj-ehlers-scores-ot-winner-hurricanes-tie-series",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "279833b4c67e82e4"
+    },
+    {
+      "id": "c0c94014e930",
+      "topic": "Hernandez drives in 6 runs keying Dodgers' rout",
+      "traffic": "",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://www.espn.com/mlb/story/_/id/48858330/teoscar-hernandez-ties-career-high-6-rbi-dodgers-win",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "3f53b6a587816998"
+    },
+    {
+      "id": "aff6884e2d65",
+      "topic": "Ex-QB Manziel pummels influencer in MMA debut",
+      "traffic": "",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://www.espn.com/mma/story/_/id/48859493/johnny-manziel-dominates-mma-debut-says-fight-again",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "ccc3bcac503d974d"
+    },
+    {
+      "id": "ee543189c969",
+      "topic": "Topo Designs Rover Trail Pack Is the Best Backpack I’ve Ever Used",
+      "traffic": "",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://www.wired.com/story/topo-designs-rover-trail-pack/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "ae03bd71b1300753"
+    },
+    {
+      "id": "f9c22f33f98a",
+      "topic": "The Best Browser Extensions to Get More Out of YouTube",
+      "traffic": "",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://www.wired.com/story/the-best-browser-extensions-to-get-more-out-of-youtube/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 5
+    },
+    {
+      "id": "d980118a65bf",
+      "topic": "These Robots Are Making Meals for a Nonprofit in San Francisco’s Tenderloin",
+      "traffic": "",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://www.wired.com/story/these-robots-are-making-meals-for-a-nonprofit-in-san-franciscos-tenderloin/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "3832af7bab297bc3"
+    },
+    {
+      "id": "9a85b396e294",
+      "topic": "#RoosterFighter",
+      "traffic": "##15 on X",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://x.com/search?q=%23RoosterFighter&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "bf272544af6a",
+      "topic": "Kelsey Plum",
+      "traffic": "##16 on X",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://x.com/search?q=Kelsey+Plum&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "fa8cbc361663",
+      "topic": "Hasan",
+      "traffic": "##17 on X",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://x.com/search?q=Hasan&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "68ac0fbf3d48",
+      "topic": "Becky",
+      "traffic": "##18 on X",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://x.com/search?q=Becky&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "390c547c391e",
+      "topic": "#OPLive",
+      "traffic": "##19 on X",
+      "detected_at": "2026-05-24T11:41:09.480899+00:00",
+      "search_url": "https://x.com/search?q=%23OPLive&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "0eb0f4719380",
       "topic": "Where to Watch Mohamed Salah’s Final Game With Liverpool Online for Free",
       "traffic": "",
@@ -254,146 +402,7 @@
       "source_name": "ESPN",
       "source_type": "feed",
       "haiku_score": 7
-    },
-    {
-      "id": "479ab5b8d1c9",
-      "topic": "Usyk avoids huge upset with last-second stoppage",
-      "traffic": "",
-      "detected_at": "2026-05-23T23:39:43.079584+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/48856437/usyk-avoids-upset-verhoeven-last-second-stoppage",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "4f028765a2f84ea3"
-    },
-    {
-      "id": "e91da263052c",
-      "topic": "OKC rules out Mitchell for Game 4 with calf strain...",
-      "traffic": "",
-      "detected_at": "2026-05-23T23:39:43.079584+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/48856022/thunder-rule-ajay-mitchell-game-4-calf-strain",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "29fff24107209230"
-    },
-    {
-      "id": "97e3470d0558",
-      "topic": "Springer, Jays hand Skenes second straight loss",
-      "traffic": "",
-      "detected_at": "2026-05-23T23:39:43.079584+00:00",
-      "search_url": "https://www.espn.com/mlb/story/_/id/48855991/springer-blue-jays-hand-pirates-skenes-back-back-defeats",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "3617616790914833"
-    },
-    {
-      "id": "1be7601f6233",
-      "topic": "Kimi",
-      "traffic": "##28 on X",
-      "detected_at": "2026-05-23T23:39:43.079584+00:00",
-      "search_url": "https://x.com/search?q=Kimi&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "4963ce782cac",
-      "topic": "Cavs",
-      "traffic": "##29 on X",
-      "detected_at": "2026-05-23T23:39:43.079584+00:00",
-      "search_url": "https://x.com/search?q=Cavs&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "c2bf3503dfa3",
-      "topic": "The Nike Zoom Skylon 11 Begins Unexpected Return In “Volt”",
-      "traffic": "",
-      "detected_at": "2026-05-23T22:36:59.427770+00:00",
-      "search_url": "https://sneakernews.com/2026/05/23/nike-skylon-11-volt-metallic-silver-black-light-smoke-grey-iu1869-700/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "bf59441691f42967"
-    },
-    {
-      "id": "d6158397874a",
-      "topic": "Crunchyroll Anime Awards 2026 Winners — Full List",
-      "traffic": "",
-      "detected_at": "2026-05-23T22:36:59.427770+00:00",
-      "search_url": "https://deadline.com/2026/05/crunchyroll-anime-awards-2026-winners-list-1236920076/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "4b106a93e6881ba9"
-    },
-    {
-      "id": "a1eed420f98b",
-      "topic": "Florence Pugh Starrer ‘The Midnight Library’ Heading For Cannes Market’s Biggest Deal With Multiple Studios Chasing",
-      "traffic": "",
-      "detected_at": "2026-05-23T22:36:59.427770+00:00",
-      "search_url": "https://deadline.com/2026/05/florence-pugh-midnight-library-studios-in-talks-cannes-1236919776/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "014f410fefb135ea"
-    },
-    {
-      "id": "8b614339a907",
-      "topic": "The Jury Has Spoken, American Films Shut Out, But What Does It All  Mean For Oscars? – Cannes Film Festival",
-      "traffic": "",
-      "detected_at": "2026-05-23T22:36:59.427770+00:00",
-      "search_url": "https://deadline.com/2026/05/cannes-film-festival-palme-dor-fjord-oscars-1236919999/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "89cfb5e2397023fe"
-    },
-    {
-      "id": "0b0aa1823626",
-      "topic": "Cards' Torres, 28, homers in emotional MLB debut",
-      "traffic": "",
-      "detected_at": "2026-05-23T22:36:59.427770+00:00",
-      "search_url": "https://www.espn.com/mlb/story/_/id/48855702/cardinals-torres-completes-11-year-journey-hr-debut",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "ac8f3626fe9a66cc"
-    },
-    {
-      "id": "a3dbb7301a42",
-      "topic": "Kane hat trick powers Bayern to German Cup title",
-      "traffic": "",
-      "detected_at": "2026-05-23T22:36:59.427770+00:00",
-      "search_url": "https://www.espn.com/soccer/story/_/id/48854785/harry-kane-hat-trick-powers-bayern-munich-german-cup-title",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "2ffa2a5d6e118bd0"
-    },
-    {
-      "id": "1fa5883d3266",
-      "topic": "Tessman",
-      "traffic": "##24 on X",
-      "detected_at": "2026-05-23T22:36:59.427770+00:00",
-      "search_url": "https://x.com/search?q=Tessman&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "103342bc6b07",
-      "topic": "#PFLBrussels",
-      "traffic": "##26 on X",
-      "detected_at": "2026-05-23T22:36:59.427770+00:00",
-      "search_url": "https://x.com/search?q=%23PFLBrussels&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-24T10:08:07.036837+00:00"
+  "last_checked": "2026-05-24T11:41:09.480899+00:00"
 }

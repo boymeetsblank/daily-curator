@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "afa0da01f3cf",
-    "895cbfe52920",
-    "09dea98fc4ca",
-    "7dd0c8b28b0d",
-    "8f96223326b4",
-    "31c309833c9c",
-    "5399eb80216c",
-    "7d8088891c85",
-    "584e17c0a652",
-    "a951e456ef62",
-    "17bf9ceb76af",
-    "eb82e0e9a3ad",
-    "9039953e8b9e",
-    "5f3cd787259b",
     "be06046db239",
     "24cc9ee60efa",
     "acf4edfb4044",
@@ -499,7 +485,21 @@
     "af76e47eac4d",
     "2965210ac7e1",
     "de20a32107fe",
-    "b80ec5ff091c"
+    "b80ec5ff091c",
+    "3a67faae5333",
+    "c4760bf4ab08",
+    "58b2d38b2586",
+    "77210d81b8fe",
+    "c0c94014e930",
+    "aff6884e2d65",
+    "ee543189c969",
+    "f9c22f33f98a",
+    "d980118a65bf",
+    "9a85b396e294",
+    "bf272544af6a",
+    "fa8cbc361663",
+    "68ac0fbf3d48",
+    "390c547c391e"
   ],
   "failed_ids": {
     "49574a2d7059": "2026-05-24T08:08:48.984317+00:00",
@@ -514,46 +514,15 @@
     "4b8428921ce1": "2026-05-24T10:08:07.036837+00:00",
     "6775ef4c8000": "2026-05-24T10:08:07.036837+00:00",
     "00c94f420448": "2026-05-24T10:08:07.036837+00:00",
-    "debe1948606c": "2026-05-24T10:08:07.036837+00:00"
+    "debe1948606c": "2026-05-24T10:08:07.036837+00:00",
+    "a61948772153": "2026-05-24T11:41:09.480899+00:00",
+    "52de7c4200ea": "2026-05-24T11:41:09.480899+00:00",
+    "9c241e13d4bb": "2026-05-24T11:41:09.480899+00:00",
+    "fbc16b8b1919": "2026-05-24T11:41:09.480899+00:00",
+    "e09e2b2d7f02": "2026-05-24T11:41:09.480899+00:00",
+    "ab046c967a17": "2026-05-24T11:41:09.480899+00:00"
   },
   "live_clusters": {
-    "42d2c25e6a025b7a": {
-      "topic": "U.K.-Nigeria-Hong Kong Romantic Comedy 'My Nigerian Fiance' in Development",
-      "item_ids": [
-        "8c03593e35cc"
-      ],
-      "created_at": "2026-05-23T10:54:02.271588+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dca371e1c52eecb0": {
-      "topic": "'Discovering Sambha' Documentary on Sholay Actor Mac Mohan",
-      "item_ids": [
-        "416188ccb812"
-      ],
-      "created_at": "2026-05-23T10:54:02.271588+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "aab9e754bdcc32db": {
-      "topic": "Australian Animated Series 'Finally, a Show About Men!' YouTube Launch Masculinity Satire",
-      "item_ids": [
-        "ec5b13567d21"
-      ],
-      "created_at": "2026-05-23T10:54:02.271588+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0c7aa0849fb67c47": {
-      "topic": "UEFA Women's Champions League Final Barcelona vs. OL Lyonnais Viewing Guide",
-      "item_ids": [
-        "22566c44a480",
-        "ebb85b473afc"
-      ],
-      "created_at": "2026-05-23T10:54:02.271588+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "a031f0bb5305843b": {
       "topic": "Netflix Acquires 'La Bola Negra' Cannes Competition Film US Distribution Rights",
       "item_ids": [
@@ -834,11 +803,19 @@
       "topic": "2026 Crunchyroll Anime Awards Winners",
       "item_ids": [
         "bdb7fd9cc52c",
-        "d6158397874a"
+        "d6158397874a",
+        "c4760bf4ab08"
       ],
       "created_at": "2026-05-23T16:44:44.928105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-24T11:41:09.480899+00:00",
+      "picks_file": "picks/picks-2026-05-24-1141.md",
+      "why_text": "MHA taking the top prize at the 2026 Crunchyroll Anime Awards with its FINAL SEASON is a full-circle cultural moment \u2014 the show that arguably mainstreamed anime in the West is closing out on the highest note possible. It's a validation of the franchise's endurance over a decade of hype cycles, new contenders, and shifting fanbases. For the anime industry, it signals that legacy IP can still dominate when a finale is handled with care.",
+      "last_escalated_item_ids": [
+        "bdb7fd9cc52c",
+        "d6158397874a",
+        "c4760bf4ab08"
+      ]
     },
     "edc930edc49032fa": {
       "topic": "Bruce Springsteen Tour Cleveland Shows Highlights",
@@ -1016,7 +993,8 @@
     "279833b4c67e82e4": {
       "topic": "Carolina Hurricanes Stanley Cup Playoff Game",
       "item_ids": [
-        "ce08229b3f11"
+        "ce08229b3f11",
+        "77210d81b8fe"
       ],
       "created_at": "2026-05-23T18:46:12.480385+00:00",
       "last_escalated_size": 0,
@@ -1301,7 +1279,61 @@
       "created_at": "2026-05-24T10:08:31.887909+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "ad3ee9721f290822": {
+      "topic": "Arc'teryx Breezy Kragg Aura Recovery Mules Fashion Release",
+      "item_ids": [
+        "3a67faae5333"
+      ],
+      "created_at": "2026-05-24T11:41:39.794607+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4e9680741e4a5a89": {
+      "topic": "Knicks Eastern Conference Finals Playoff Run",
+      "item_ids": [
+        "58b2d38b2586"
+      ],
+      "created_at": "2026-05-24T11:41:39.794607+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3f53b6a587816998": {
+      "topic": "Dodgers Hernandez 6 RBIs Victory",
+      "item_ids": [
+        "c0c94014e930"
+      ],
+      "created_at": "2026-05-24T11:41:39.794607+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ccc3bcac503d974d": {
+      "topic": "Manziel MMA Debut Victory Influencer Fight",
+      "item_ids": [
+        "aff6884e2d65"
+      ],
+      "created_at": "2026-05-24T11:41:39.794607+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ae03bd71b1300753": {
+      "topic": "Topo Designs Rover Trail Pack Product Review",
+      "item_ids": [
+        "ee543189c969"
+      ],
+      "created_at": "2026-05-24T11:41:39.794607+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3832af7bab297bc3": {
+      "topic": "Robots Serving Meals Nonprofit San Francisco Tenderloin",
+      "item_ids": [
+        "d980118a65bf"
+      ],
+      "created_at": "2026-05-24T11:41:39.794607+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T10:08:31.889000+00:00"
+  "last_checked": "2026-05-24T11:41:45.504512+00:00"
 }
