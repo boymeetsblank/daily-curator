@@ -1,6 +1,59 @@
 {
   "items": [
     {
+      "id": "342c1d798f93",
+      "topic": "Taylor Swift Sits Courtside at Knicks-Cavaliers as ESPN Calls Her ‘Travis Kelce’s Fiancée’",
+      "traffic": "",
+      "detected_at": "2026-05-24T05:45:02.629847+00:00",
+      "search_url": "https://www.billboard.com/music/pop/taylor-swift-knicks-cavaliers-game-travis-kelce-1236255749/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "59e1179fe93e4677"
+    },
+    {
+      "id": "9250ebb03ae2",
+      "topic": "‘We’re expanding the cinematic toolbox’: AI fault lines on show at Cannes - The Guardian",
+      "traffic": "",
+      "detected_at": "2026-05-24T05:45:02.629847+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNX28zSkEtRjRfWl9jeFNkRDNmTzcyVzR4RHJKV3Z5bzBXRWUwUVptWXlyS2NRSy1jRVY4cDI1dXp4OGpQQ1d1R2NRMk9ZaEd3d2hxc3FVck4tRC1UcUtWUEtqaGRoZEtUZ2VtZjBJbkVaUFlQMEtQeGZmYkdBal90cUY2NUNuekE1NFl5ZlJxQkZYWDZf?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "89cfb5e2397023fe"
+    },
+    {
+      "id": "233ea703c37f",
+      "topic": "Nanoscale drug factory helps cells make medicine from within - Technology Org",
+      "traffic": "",
+      "detected_at": "2026-05-24T05:45:02.629847+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONXZKZUk1RkI4X0puZ0c0NnllTDhSSWdGcWJoc245aFMyTVh1VXhHSkpuTlh6ZV9CV0g2SGZJd0VMYkRjRUZJR2tEYUItU3NEVUxSTjJkczdYTndaUUVwVjZoeFRqWExWZTBoN0w0UU1XVnlGWU9hMDlNQWZYUnpmYWxrdEpibktmN3AyWW5SVUlXbHliNWlhZVNwMjlDNzFv?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "f0a7efb31e3a16f9"
+    },
+    {
+      "id": "9e5d66df9689",
+      "topic": "#SNME",
+      "traffic": "##2 on X",
+      "detected_at": "2026-05-24T05:45:02.629847+00:00",
+      "search_url": "https://x.com/search?q=%23SNME&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "bad5881f3297",
+      "topic": "Landry Shamet",
+      "traffic": "##4 on X",
+      "detected_at": "2026-05-24T05:45:02.629847+00:00",
+      "search_url": "https://x.com/search?q=Landry+Shamet&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "ae0ec5e68561",
       "topic": "Here’s Where to Watch the Indianapolis 500 Race Live Online",
       "traffic": "",
@@ -376,60 +429,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 6
-    },
-    {
-      "id": "7b2518dba36a",
-      "topic": "Frank Sanchez",
-      "traffic": "##11 on X",
-      "detected_at": "2026-05-23T19:54:40.426327+00:00",
-      "search_url": "https://x.com/search?q=Frank+Sanchez&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "40b9208bb4ff",
-      "topic": "Torrez",
-      "traffic": "##13 on X",
-      "detected_at": "2026-05-23T19:54:40.426327+00:00",
-      "search_url": "https://x.com/search?q=Torrez&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "03a217b8b244",
-      "topic": "Sherbet Tones Land On This Flavorful Air Jordan 1 Low SE",
-      "traffic": "",
-      "detected_at": "2026-05-23T18:45:38.100272+00:00",
-      "search_url": "https://sneakernews.com/2026/05/23/air-jordan-1-low-se-black-sail-pinksicle-university-gold-iv2442-010/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "6f109a791b250cde"
-    },
-    {
-      "id": "9e5e4b2c6b62",
-      "topic": "Cannes Film Festival Reveals 2026 Award Winners (Updating Live)",
-      "traffic": "",
-      "detected_at": "2026-05-23T18:45:38.100272+00:00",
-      "search_url": "https://variety.com/2026/film/news/cannes-film-festival-reveals-2026-award-winners-1236757655/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "89cfb5e2397023fe"
-    },
-    {
-      "id": "792046d421a9",
-      "topic": "‘The Yogurt Shop Murders’ Director on Completing the Story and Interviewing the Killer’s Daughter After the Case Was Solved: ‘I Thought I Was Going to Thow Up’",
-      "traffic": "",
-      "detected_at": "2026-05-23T18:45:38.100272+00:00",
-      "search_url": "https://variety.com/2026/tv/news/yogurt-shop-murders-director-making-episode-5-murders-solved-1236757379/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "e111d791c9a3368f"
     }
   ],
-  "last_checked": "2026-05-24T01:35:50.646468+00:00"
+  "last_checked": "2026-05-24T05:45:02.629847+00:00"
 }
