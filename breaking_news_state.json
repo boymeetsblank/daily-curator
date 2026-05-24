@@ -1,17 +1,5 @@
 {
   "known_ids": [
-    "3c1931b59afd",
-    "a6eb364da9d7",
-    "f3d9d99eea72",
-    "ed1d5d550ce7",
-    "519200b4fc3b",
-    "48f4ab9a5e44",
-    "ef3596a6497b",
-    "759454b432f5",
-    "aa8a3c4c2cc9",
-    "68a04d8b5fc3",
-    "7c8c092836aa",
-    "3c76fa603069",
     "442218b5d7a2",
     "56d76575f009",
     "98d9dd82ea65",
@@ -499,7 +487,19 @@
     "27194cd3fc0b",
     "6f420c9d4f63",
     "11c9a05ec734",
-    "f0c7ec31c2bb"
+    "f0c7ec31c2bb",
+    "43477191cc42",
+    "010b37038cb8",
+    "54b05392430a",
+    "42e2fbba19f3",
+    "3ff978499b35",
+    "a1acbef14ea2",
+    "3a6e90b7600b",
+    "734d87c3d54f",
+    "d9bc7dd071fe",
+    "830d6a7093eb",
+    "c64c69a3e8a8",
+    "53b43a67f0b6"
   ],
   "failed_ids": {
     "2e9483db6e3b": "2026-05-24T18:48:38.343452+00:00",
@@ -507,18 +507,13 @@
     "d1de52b2829e": "2026-05-24T18:48:38.343452+00:00",
     "c5ede290a11f": "2026-05-24T18:48:38.343452+00:00",
     "8bc6b1c7a29f": "2026-05-24T18:48:38.343452+00:00",
-    "47376df9d794": "2026-05-24T18:48:38.343452+00:00"
+    "47376df9d794": "2026-05-24T18:48:38.343452+00:00",
+    "fcc5cdd3e08b": "2026-05-24T21:59:59.715346+00:00",
+    "84041eb2b71a": "2026-05-24T21:59:59.715346+00:00",
+    "2db9a0eedcd3": "2026-05-24T21:59:59.715346+00:00",
+    "80b0155522ec": "2026-05-24T21:59:59.715346+00:00"
   },
   "live_clusters": {
-    "7aed170cd2dccaec": {
-      "topic": "Dick Parry Pink Floyd Saxophonist Death Obituary",
-      "item_ids": [
-        "42195f961b69"
-      ],
-      "created_at": "2026-05-23T21:40:46.812687+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "bf59441691f42967": {
       "topic": "Nike Zoom Skylon 11 'Volt' Sneaker Return Release",
       "item_ids": [
@@ -927,7 +922,70 @@
       "created_at": "2026-05-24T18:49:05.617929+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f9668cd9d1a93d34": {
+      "topic": "Andr\u00e9 \u00d8vredal 'Passenger' Horror Film Review",
+      "item_ids": [
+        "43477191cc42"
+      ],
+      "created_at": "2026-05-24T22:00:48.903995+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f82e11e7263aeabc": {
+      "topic": "'Obsession' Horror Film Box Office Success",
+      "item_ids": [
+        "010b37038cb8"
+      ],
+      "created_at": "2026-05-24T22:00:48.903995+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aa681fa0556cf222": {
+      "topic": "Drake Billboard 200 Chart Dominance",
+      "item_ids": [
+        "54b05392430a"
+      ],
+      "created_at": "2026-05-24T22:00:48.903995+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "906047e55eccc38b": {
+      "topic": "'Tuner' Black Bear Limited Box Office Release",
+      "item_ids": [
+        "42e2fbba19f3"
+      ],
+      "created_at": "2026-05-24T22:00:48.903995+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "26d1acc1b72e886a": {
+      "topic": "'Maximum Pleasure Guaranteed' Apple TV Dark Comedy",
+      "item_ids": [
+        "3ff978499b35"
+      ],
+      "created_at": "2026-05-24T22:00:48.903995+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0f62c1066b671212": {
+      "topic": "Google AI Security Challenges Real-Time Navigation",
+      "item_ids": [
+        "a1acbef14ea2"
+      ],
+      "created_at": "2026-05-24T22:00:48.903995+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "21b8444b4de892e8": {
+      "topic": "KULR Technology Drone Space Battery Stock Rally",
+      "item_ids": [
+        "3a6e90b7600b"
+      ],
+      "created_at": "2026-05-24T22:00:48.903995+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T20:58:26.172481+00:00"
+  "last_checked": "2026-05-24T22:00:48.905196+00:00"
 }
