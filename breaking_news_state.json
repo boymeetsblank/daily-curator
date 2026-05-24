@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "be06046db239",
-    "24cc9ee60efa",
-    "acf4edfb4044",
-    "75f7db50ec81",
-    "43bf88c7d0d9",
-    "6fe128c59815",
-    "fbc7c9990985",
-    "a44e92d67d5b",
-    "fd5d62602d42",
-    "a3c5b2cc136f",
-    "730c7bb6c4bc",
-    "e7550e61636d",
-    "4bbf800c3d3b",
-    "de86858655ec",
-    "b562ee0d8cbc",
     "df8834d9d9eb",
     "ba6238bdaed4",
     "11f92133b1c0",
@@ -499,15 +484,24 @@
     "bf272544af6a",
     "fa8cbc361663",
     "68ac0fbf3d48",
-    "390c547c391e"
+    "390c547c391e",
+    "02a4b9ee7980",
+    "6b7086af536c",
+    "f9d54ae3c5d4",
+    "136fe61aed12",
+    "51148db7210a",
+    "71c133ff0c83",
+    "347dd50e7880",
+    "dc21e64ee5f2",
+    "fafb8f2d17ee",
+    "ece1393b030b",
+    "88f3a8c978f3",
+    "ac6eceff692e",
+    "fe097895893d",
+    "a6ee2274700a",
+    "8220f88518f0"
   ],
   "failed_ids": {
-    "49574a2d7059": "2026-05-24T08:08:48.984317+00:00",
-    "d045d66202c6": "2026-05-24T08:08:48.984317+00:00",
-    "9d6259f83e39": "2026-05-24T08:08:48.984317+00:00",
-    "5daec888fdd0": "2026-05-24T08:08:48.984317+00:00",
-    "2207756d9409": "2026-05-24T08:08:48.984317+00:00",
-    "a4d06c318189": "2026-05-24T08:08:48.984317+00:00",
     "04ffa4e29d32": "2026-05-24T10:08:07.036837+00:00",
     "c44dc74ed6c7": "2026-05-24T10:08:07.036837+00:00",
     "6dbfef447735": "2026-05-24T10:08:07.036837+00:00",
@@ -520,55 +514,12 @@
     "9c241e13d4bb": "2026-05-24T11:41:09.480899+00:00",
     "fbc16b8b1919": "2026-05-24T11:41:09.480899+00:00",
     "e09e2b2d7f02": "2026-05-24T11:41:09.480899+00:00",
-    "ab046c967a17": "2026-05-24T11:41:09.480899+00:00"
+    "ab046c967a17": "2026-05-24T11:41:09.480899+00:00",
+    "99074b49c860": "2026-05-24T12:46:41.990044+00:00",
+    "90655506a0c8": "2026-05-24T12:46:41.990044+00:00",
+    "d8fb5a2a5585": "2026-05-24T12:46:41.990044+00:00"
   },
   "live_clusters": {
-    "a031f0bb5305843b": {
-      "topic": "Netflix Acquires 'La Bola Negra' Cannes Competition Film US Distribution Rights",
-      "item_ids": [
-        "956403d4a033",
-        "20224850697b"
-      ],
-      "created_at": "2026-05-23T11:56:46.212597+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eddd4d5237a00ad5": {
-      "topic": "L.L.Bean Zip Hunter's Tote Carryall Fashion Product Feature",
-      "item_ids": [
-        "3cedfee29556"
-      ],
-      "created_at": "2026-05-23T11:56:46.212597+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c341044458839d9a": {
-      "topic": "Quantum Jamming Physics Research Causality Mysteries",
-      "item_ids": [
-        "a2a71085d236"
-      ],
-      "created_at": "2026-05-23T11:56:46.212597+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1823c39024efeede": {
-      "topic": "Myst Riven Remakes Bubsy Return Indie Games Releases",
-      "item_ids": [
-        "5f3891dc9bee"
-      ],
-      "created_at": "2026-05-23T11:56:46.212597+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ce47151022820945": {
-      "topic": "Houston Schools Reject AI Devices Return to Paper Pen Education",
-      "item_ids": [
-        "fc87d2a23ca9"
-      ],
-      "created_at": "2026-05-23T11:56:46.212597+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "bbfce3b2eed493bd": {
       "topic": "Travis Kelce Rolex Watch Feature",
       "item_ids": [
@@ -1333,7 +1284,43 @@
       "created_at": "2026-05-24T11:41:39.794607+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "bbfeb3617d3da328": {
+      "topic": "Tiffany & Co. Blue Box Caf\u00e9 Hong Kong Flagship Launch",
+      "item_ids": [
+        "02a4b9ee7980"
+      ],
+      "created_at": "2026-05-24T12:47:08.215034+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c24b417a74a16789": {
+      "topic": "Sandra Wollner 'Everytime' Film Cannes Review",
+      "item_ids": [
+        "6b7086af536c"
+      ],
+      "created_at": "2026-05-24T12:47:08.215034+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dd1614da6b67052e": {
+      "topic": "Non-Carbonated Beverages Market Growth Trend",
+      "item_ids": [
+        "347dd50e7880"
+      ],
+      "created_at": "2026-05-24T12:47:08.215034+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ba0e229a6c47d5aa": {
+      "topic": "AI Washing Corporate Rebranding Trend",
+      "item_ids": [
+        "dc21e64ee5f2"
+      ],
+      "created_at": "2026-05-24T12:47:08.215034+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T11:41:45.504512+00:00"
+  "last_checked": "2026-05-24T12:47:08.216217+00:00"
 }
