@@ -1,14 +1,5 @@
 {
   "known_ids": [
-    "9f746c007e84",
-    "bad88fea0146",
-    "0707a6e05f40",
-    "dcb9bf74db66",
-    "4460db5f6d17",
-    "e47f44a860bf",
-    "b80d8bae05fe",
-    "b8b19566d0cc",
-    "6d0907d24d55",
     "4c8f3a16a2b6",
     "68f28901f517",
     "18133e5cc8dc",
@@ -499,7 +490,16 @@
     "2a0361684cb5",
     "3ece2b86dd89",
     "738d4ca74474",
-    "465d80163d6e"
+    "465d80163d6e",
+    "b94ec680e33c",
+    "412996a49a00",
+    "8907bc013160",
+    "8236b84cbe72",
+    "ba17502f705a",
+    "2f097c6f7765",
+    "6110b10da3e8",
+    "e3725d4b1311",
+    "8bd7db9a8202"
   ],
   "failed_ids": {
     "a61948772153": "2026-05-24T11:41:09.480899+00:00",
@@ -523,36 +523,22 @@
     "1df33ad582bd": "2026-05-24T14:15:28.622950+00:00",
     "dcc701bc41aa": "2026-05-24T14:15:28.622950+00:00",
     "69ad246611d1": "2026-05-24T14:15:28.622950+00:00",
-    "c61c64ed49b0": "2026-05-24T14:15:28.622950+00:00"
+    "c61c64ed49b0": "2026-05-24T14:15:28.622950+00:00",
+    "2ed019826a18": "2026-05-24T15:37:01.599542+00:00",
+    "ccc99537958c": "2026-05-24T15:37:01.599542+00:00",
+    "aff0a4cb41bc": "2026-05-24T15:37:01.599542+00:00",
+    "8b41f6a06297": "2026-05-24T15:37:01.599542+00:00",
+    "74db242c8627": "2026-05-24T15:37:01.599542+00:00",
+    "fb65dae252da": "2026-05-24T15:37:01.599542+00:00",
+    "0bae6e931bab": "2026-05-24T15:37:01.599542+00:00",
+    "9e809aad23cb": "2026-05-24T15:37:01.599542+00:00",
+    "87f9c3f1a854": "2026-05-24T15:37:01.599542+00:00",
+    "0edf51d29e45": "2026-05-24T15:37:01.599542+00:00",
+    "d91d18b7604f": "2026-05-24T15:37:01.599542+00:00",
+    "911c5212dc68": "2026-05-24T15:37:01.599542+00:00",
+    "3bfea8ba850b": "2026-05-24T15:37:01.599542+00:00"
   },
   "live_clusters": {
-    "a5509901c1f81bd8": {
-      "topic": "Lenny Tav\u00e1rez Dale Ritmo Latin Music Outreach Program",
-      "item_ids": [
-        "3a2f79c571bd"
-      ],
-      "created_at": "2026-05-23T14:48:33.135967+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "26656be14851b37f": {
-      "topic": "Shakira Tax Fraud Case Acquittal",
-      "item_ids": [
-        "a1268c814e7a"
-      ],
-      "created_at": "2026-05-23T14:48:33.135967+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1c76f37642e11570": {
-      "topic": "Millennials Date Spending 'Date-flation' Social Media Trend",
-      "item_ids": [
-        "83f73dc99ba1"
-      ],
-      "created_at": "2026-05-23T14:48:33.135967+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "4af2e90755a73fd5": {
       "topic": "Nike Air Max Goadome Low Return Release",
       "item_ids": [
@@ -1291,7 +1277,34 @@
       "created_at": "2026-05-24T14:15:56.889001+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "9fc09bbec9e0c664": {
+      "topic": "'Mandalorian and Grogu' Box Office Performance Memorial Day Weekend",
+      "item_ids": [
+        "b94ec680e33c"
+      ],
+      "created_at": "2026-05-24T15:37:28.529915+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "24647698fd93230b": {
+      "topic": "Kali Uchis For the Girls Tour Launch Sue\u00f1os 2026",
+      "item_ids": [
+        "412996a49a00"
+      ],
+      "created_at": "2026-05-24T15:37:28.529915+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2d035afc0486208d": {
+      "topic": "Amazon Bee Wearable Device Review",
+      "item_ids": [
+        "8907bc013160"
+      ],
+      "created_at": "2026-05-24T15:37:28.529915+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-24T14:16:07.488332+00:00"
+  "last_checked": "2026-05-24T15:37:28.530995+00:00"
 }
