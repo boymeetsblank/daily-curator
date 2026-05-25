@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "2114a755a45e",
-    "bc08ab0533cb",
-    "d1f989a9e5fb",
-    "8db580dbcade",
-    "bef9ec3da5c6",
-    "d21dc76121e3",
-    "55f0eb353903",
-    "79bfe04e12f6",
-    "27466951ab1a",
-    "6e85c182b170",
-    "4925f3d1f2ab",
-    "ad61bbce320a",
-    "ddc166b7f881",
-    "b6fba7f8aecd",
     "66ff6d61559e",
     "d600769ac40a",
     "15efd81ef42d",
@@ -499,7 +485,21 @@
     "9b517d73fed9",
     "350476aa6bba",
     "25aabd4bd0bb",
-    "341f056ff775"
+    "341f056ff775",
+    "0720bb1c8dc2",
+    "2d6fa56c82fb",
+    "1d2e32ada96e",
+    "6ee454fa3ba7",
+    "4086e10ecf28",
+    "62348d9c5088",
+    "aa6cecd548f9",
+    "94be3c486864",
+    "5c7ebeeb3414",
+    "c620182674cc",
+    "50ab2103bc92",
+    "1e0bf773e4dc",
+    "04b989a4ac1d",
+    "b7e9012b53b4"
   ],
   "failed_ids": {
     "1075495bbec5": "2026-05-25T15:30:39.548895+00:00",
@@ -517,37 +517,15 @@
     "9ede6aa59fa5": "2026-05-25T17:20:09.672564+00:00",
     "97b0602b3ede": "2026-05-25T17:20:09.672564+00:00",
     "01b9bf892cc4": "2026-05-25T17:20:09.672564+00:00",
-    "4a4e9a6f28aa": "2026-05-25T17:20:09.672564+00:00"
+    "4a4e9a6f28aa": "2026-05-25T17:20:09.672564+00:00",
+    "53576e4d1aa5": "2026-05-25T18:55:37.288756+00:00",
+    "a2a93f0d6725": "2026-05-25T18:55:37.288756+00:00",
+    "4e17c0fd70d1": "2026-05-25T18:55:37.288756+00:00",
+    "26bc8acf2dc5": "2026-05-25T18:55:37.288756+00:00",
+    "4e8f92bf7fc6": "2026-05-25T18:55:37.288756+00:00",
+    "5c7ec92b6279": "2026-05-25T18:55:37.288756+00:00"
   },
   "live_clusters": {
-    "1b45720869163faf": {
-      "topic": "Nike Giannis Freak 7 'Neon Fade' Sneaker Release",
-      "item_ids": [
-        "0763e79c4f8d"
-      ],
-      "created_at": "2026-05-24T18:49:05.617929+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "de769843b305ef19": {
-      "topic": "Beartooth's Caleb Shomo Comes Out as Gay",
-      "item_ids": [
-        "1ca28d2cca5e",
-        "5398d4ba2c37"
-      ],
-      "created_at": "2026-05-24T18:49:05.617929+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8e792d246c1dc0d6": {
-      "topic": "Selena Gomez 'Only Murders in the Building' London Filming Behind-the-Scenes",
-      "item_ids": [
-        "6a2b11f0c3ee"
-      ],
-      "created_at": "2026-05-24T18:49:05.617929+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "f9668cd9d1a93d34": {
       "topic": "Andr\u00e9 \u00d8vredal 'Passenger' Horror Film Review",
       "item_ids": [
@@ -819,7 +797,8 @@
     "631e8e12ba04887b": {
       "topic": "American Music Awards 2026 Livestream",
       "item_ids": [
-        "02006654a28b"
+        "02006654a28b",
+        "4086e10ecf28"
       ],
       "created_at": "2026-05-25T15:31:06.368097+00:00",
       "last_escalated_size": 0,
@@ -941,7 +920,79 @@
       "created_at": "2026-05-25T17:20:40.076958+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "2e9e8086724e19cf": {
+      "topic": "Lionel Messi Kith adidas Collection Release",
+      "item_ids": [
+        "0720bb1c8dc2"
+      ],
+      "created_at": "2026-05-25T18:56:04.904963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3df49f0aefa23936": {
+      "topic": "Diplo DJ Set Son's Kindergarten Graduation",
+      "item_ids": [
+        "2d6fa56c82fb"
+      ],
+      "created_at": "2026-05-25T18:56:04.904963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a989c64f3e2c8607": {
+      "topic": "Bad Bunny Global Tour Moments",
+      "item_ids": [
+        "1d2e32ada96e"
+      ],
+      "created_at": "2026-05-25T18:56:04.904963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dac35f5e2f44a14b": {
+      "topic": "Paul McCartney Paul Mescal 'Boys of Dungeon Lane' Short Film",
+      "item_ids": [
+        "6ee454fa3ba7"
+      ],
+      "created_at": "2026-05-25T18:56:04.904963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9b96d8ca57d5a04c": {
+      "topic": "Owen Wilson Jason Keller 'Stick' Film Father Figures Athletes",
+      "item_ids": [
+        "62348d9c5088"
+      ],
+      "created_at": "2026-05-25T18:56:04.904963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "feda845ca5b3dcfd": {
+      "topic": "'Big Bang Theory' Alum 'Stuart Fails To Save The Universe' Spinoff",
+      "item_ids": [
+        "aa6cecd548f9"
+      ],
+      "created_at": "2026-05-25T18:56:04.904963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ac049c4d3e7ac20e": {
+      "topic": "Enhanced Games Swimming World Record",
+      "item_ids": [
+        "94be3c486864"
+      ],
+      "created_at": "2026-05-25T18:56:04.904963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d57f29ba477d8fd3": {
+      "topic": "Unreal Engine 6 First Look Rocket League",
+      "item_ids": [
+        "5c7ebeeb3414"
+      ],
+      "created_at": "2026-05-25T18:56:04.904963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-25T17:20:51.180271+00:00"
+  "last_checked": "2026-05-25T18:56:04.906214+00:00"
 }
