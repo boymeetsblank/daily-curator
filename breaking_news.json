@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "01412404421b",
+      "topic": "Chelsea",
+      "traffic": "##14 on X",
+      "detected_at": "2026-05-25T00:11:34.959973+00:00",
+      "search_url": "https://x.com/search?q=Chelsea&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5,
+      "cluster_id": "4835d4c4b97bf93b"
+    },
+    {
       "id": "08666a3d8834",
       "topic": "The adidas Adistar MLD Tees Up Essential Colorways For Summer",
       "traffic": "",
@@ -402,17 +413,7 @@
       "source_name": "Google News - Technology",
       "source_type": "feed",
       "haiku_score": 8
-    },
-    {
-      "id": "0ea4a8c5419d",
-      "topic": "NSA Doval, US Secretary of State Rubio discuss defence, security, strategic technology cooperation - The Indian Awaaz",
-      "traffic": "",
-      "detected_at": "2026-05-24T19:56:40.111400+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVnIxc2Noa2lvbmZBT0FDZGhERFlmV0xJMjMyUXlwUEVyRVV2UjRMREdmZFVHcnJpdGZObGhDOWh5UkVSV1pPamdLcmhQTmwyMDlsLUJ5SUkzdXFjSHlJRFh5M1Rwb2pWakFKdE56ZVNnYjU0U0dYMXRxc29CbzFvbU02T2ozQ1pON2N1RmNvQnV0cm5JSmlkUlA5SFIwdFgxRkZqYkpBMHhEOFhKRHBKdmJpenNTUE9ZZ3VCdjVzNmw?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-24T23:05:29.596802+00:00"
+  "last_checked": "2026-05-25T00:11:34.959973+00:00"
 }
