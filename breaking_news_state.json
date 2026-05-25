@@ -1,12 +1,5 @@
 {
   "known_ids": [
-    "9f29be4912fd",
-    "ce23ecc8fb64",
-    "844bcea36604",
-    "b3e62ac7d1eb",
-    "ef77bd9f91c2",
-    "05e373e42e7e",
-    "8dc975c07683",
     "4f850139fb13",
     "330fd9f4566b",
     "af2658d8475c",
@@ -499,15 +492,16 @@
     "c47e9967e5e5",
     "012731a27831",
     "71abe7f4097c",
-    "031deab60afa"
+    "031deab60afa",
+    "5720becbca64",
+    "572e4c15344c",
+    "de9579df6c89",
+    "178cb2e4a213",
+    "4f9ded3f5ef9",
+    "34d2864dcdad",
+    "60005804e8a4"
   ],
   "failed_ids": {
-    "7d5d7ee80997": "2026-05-25T04:52:37.846798+00:00",
-    "6eb8fdf0069b": "2026-05-25T04:52:37.846798+00:00",
-    "f9bd298e88f1": "2026-05-25T04:52:37.846798+00:00",
-    "6ec7c75d6a27": "2026-05-25T04:52:37.846798+00:00",
-    "36d1132c180c": "2026-05-25T04:52:37.846798+00:00",
-    "0e12b32afed5": "2026-05-25T04:52:37.846798+00:00",
     "63d450934192": "2026-05-25T08:50:25.999338+00:00",
     "196ffb160b14": "2026-05-25T08:50:25.999338+00:00",
     "268d6d4a196a": "2026-05-25T08:50:25.999338+00:00",
@@ -515,108 +509,16 @@
     "43f1603ff10d": "2026-05-25T08:50:25.999338+00:00",
     "9ab02949ca07": "2026-05-25T08:50:25.999338+00:00",
     "b88499b5e09c": "2026-05-25T08:50:25.999338+00:00",
-    "fc9a195abe57": "2026-05-25T08:50:25.999338+00:00"
+    "fc9a195abe57": "2026-05-25T08:50:25.999338+00:00",
+    "544385da4da1": "2026-05-25T12:15:38.315287+00:00",
+    "8e929f8b4fed": "2026-05-25T12:15:38.315287+00:00",
+    "30549087f6ba": "2026-05-25T12:15:38.315287+00:00",
+    "318ff832fcf1": "2026-05-25T12:15:38.315287+00:00",
+    "f0baeb1915f8": "2026-05-25T12:15:38.315287+00:00",
+    "77ff175a348b": "2026-05-25T12:15:38.315287+00:00",
+    "b40e3a325cdf": "2026-05-25T12:15:38.315287+00:00"
   },
   "live_clusters": {
-    "33c9db6eff3953e4": {
-      "topic": "Mohamed Salah Final Liverpool Game Viewing Guide",
-      "item_ids": [
-        "0eb0f4719380"
-      ],
-      "created_at": "2026-05-24T10:08:31.887909+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4fbc795ba4a13cdf": {
-      "topic": "Premier League Production In-House IMG Transition",
-      "item_ids": [
-        "5008af3a386b"
-      ],
-      "created_at": "2026-05-24T10:08:31.887909+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0bf4560a0f401edb": {
-      "topic": "Cybersecurity Jobs Growth AI Era",
-      "item_ids": [
-        "af76e47eac4d"
-      ],
-      "created_at": "2026-05-24T10:08:31.887909+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "07825749aeae07e2": {
-      "topic": "Seagate Technology AI Storage Valuation Rally",
-      "item_ids": [
-        "2965210ac7e1"
-      ],
-      "created_at": "2026-05-24T10:08:31.887909+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1e36bf0bc1761145": {
-      "topic": "British Lab AI Safety Research Risks",
-      "item_ids": [
-        "de20a32107fe"
-      ],
-      "created_at": "2026-05-24T10:08:31.887909+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ad3ee9721f290822": {
-      "topic": "Arc'teryx Breezy Kragg Aura Recovery Mules Fashion Release",
-      "item_ids": [
-        "3a67faae5333"
-      ],
-      "created_at": "2026-05-24T11:41:39.794607+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4e9680741e4a5a89": {
-      "topic": "Knicks Eastern Conference Finals Playoff Run",
-      "item_ids": [
-        "58b2d38b2586"
-      ],
-      "created_at": "2026-05-24T11:41:39.794607+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3f53b6a587816998": {
-      "topic": "Dodgers Hernandez 6 RBIs Victory",
-      "item_ids": [
-        "c0c94014e930"
-      ],
-      "created_at": "2026-05-24T11:41:39.794607+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ccc3bcac503d974d": {
-      "topic": "Manziel MMA Debut Victory Influencer Fight",
-      "item_ids": [
-        "aff6884e2d65"
-      ],
-      "created_at": "2026-05-24T11:41:39.794607+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ae03bd71b1300753": {
-      "topic": "Topo Designs Rover Trail Pack Product Review",
-      "item_ids": [
-        "ee543189c969"
-      ],
-      "created_at": "2026-05-24T11:41:39.794607+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3832af7bab297bc3": {
-      "topic": "Robots Serving Meals Nonprofit San Francisco Tenderloin",
-      "item_ids": [
-        "d980118a65bf"
-      ],
-      "created_at": "2026-05-24T11:41:39.794607+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "bbfeb3617d3da328": {
       "topic": "Tiffany & Co. Blue Box Caf\u00e9 Hong Kong Flagship Launch",
       "item_ids": [
@@ -1016,7 +918,34 @@
       "created_at": "2026-05-25T08:50:51.744124+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "2093ffb49b1469c3": {
+      "topic": "Privacy-Focused Gay Dating Apps Challenge Grindr",
+      "item_ids": [
+        "5720becbca64"
+      ],
+      "created_at": "2026-05-25T12:16:04.265977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c03cbbd025da281f": {
+      "topic": "Pope Leo AI Ethics Statement Humanity-Centered Development",
+      "item_ids": [
+        "572e4c15344c"
+      ],
+      "created_at": "2026-05-25T12:16:04.265977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7eb00301bbef8274": {
+      "topic": "AEW Double or Nothing Wrestling Event",
+      "item_ids": [
+        "34d2864dcdad"
+      ],
+      "created_at": "2026-05-25T12:16:04.265977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-25T08:50:51.745319+00:00"
+  "last_checked": "2026-05-25T12:16:04.266932+00:00"
 }
