@@ -1,14 +1,5 @@
 {
   "known_ids": [
-    "cf9628bce877",
-    "f76fe142d72d",
-    "9810eafa5fb8",
-    "f3259629104c",
-    "7773f6f8fe6f",
-    "ae0a7e5e201d",
-    "04f3239fe442",
-    "9f277f6c5896",
-    "99d05ce9f4c3",
     "3fac909a4ab5",
     "bf7fc75cfa1d",
     "8d8f6ac08c62",
@@ -499,50 +490,26 @@
     "6726343cb864",
     "a8ba3e3f66ce",
     "58325559c8fd",
-    "fbd574fbad3f"
+    "fbd574fbad3f",
+    "171f7c497a91",
+    "d9b070ac1ddd",
+    "5e619dae7a3e",
+    "72ef5970cb0a",
+    "2d99552dd20b",
+    "653df86c37db",
+    "9b45eabc7311",
+    "32a03fa8e32c",
+    "59926ce16203"
   ],
   "failed_ids": {
-    "fcc5cdd3e08b": "2026-05-24T21:59:59.715346+00:00",
-    "84041eb2b71a": "2026-05-24T21:59:59.715346+00:00",
-    "2db9a0eedcd3": "2026-05-24T21:59:59.715346+00:00",
-    "80b0155522ec": "2026-05-24T21:59:59.715346+00:00",
-    "cfe06fc8c906": "2026-05-24T23:05:29.596802+00:00",
-    "771b8bfe0fa2": "2026-05-24T23:05:29.596802+00:00",
-    "6ec7c75d6a27": "2026-05-25T00:11:34.959973+00:00",
-    "78df91d941bf": "2026-05-25T00:11:34.959973+00:00",
-    "3e5944cf7ba6": "2026-05-25T00:11:34.959973+00:00",
-    "3f51a4fb6c6b": "2026-05-25T00:11:34.959973+00:00",
-    "b9c7ae8c0e3e": "2026-05-25T00:11:34.959973+00:00"
+    "7d5d7ee80997": "2026-05-25T04:52:37.846798+00:00",
+    "6eb8fdf0069b": "2026-05-25T04:52:37.846798+00:00",
+    "f9bd298e88f1": "2026-05-25T04:52:37.846798+00:00",
+    "6ec7c75d6a27": "2026-05-25T04:52:37.846798+00:00",
+    "36d1132c180c": "2026-05-25T04:52:37.846798+00:00",
+    "0e12b32afed5": "2026-05-25T04:52:37.846798+00:00"
   },
   "live_clusters": {
-    "f4efdd95706cd52d": {
-      "topic": "Indianapolis 500 Race 2026 Live Viewing Guide",
-      "item_ids": [
-        "ae0ec5e68561",
-        "465d80163d6e"
-      ],
-      "created_at": "2026-05-24T01:36:19.304860+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "421654e9d012ac2d": {
-      "topic": "Tamer Nafar Palestinian Rapper John Lennon Inspired Music",
-      "item_ids": [
-        "02315d1cc73b"
-      ],
-      "created_at": "2026-05-24T01:36:19.304860+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "41be8ba67defe2a4": {
-      "topic": "Sherri Shepherd Talk Show Finale Farewell",
-      "item_ids": [
-        "9ade2ddf1f57"
-      ],
-      "created_at": "2026-05-24T01:36:19.304860+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "59e1179fe93e4677": {
       "topic": "Taylor Swift Courtside at Knicks-Cavaliers Game ESPN Commentary",
       "item_ids": [
@@ -873,7 +840,8 @@
     "aa681fa0556cf222": {
       "topic": "Drake Billboard 200 Chart Dominance",
       "item_ids": [
-        "54b05392430a"
+        "54b05392430a",
+        "171f7c497a91"
       ],
       "created_at": "2026-05-24T22:00:48.903995+00:00",
       "last_escalated_size": 0,
@@ -963,7 +931,8 @@
     "32fcfe61eaa9d6c7": {
       "topic": "Asian High-Growth Tech Stocks May 2026",
       "item_ids": [
-        "4922d84e88f6"
+        "4922d84e88f6",
+        "d9b070ac1ddd"
       ],
       "created_at": "2026-05-24T23:06:01.263976+00:00",
       "last_escalated_size": 0,
@@ -1004,7 +973,25 @@
       "created_at": "2026-05-25T00:12:05.968141+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "720881f655e1968e": {
+      "topic": "Fujitsu Multi-AI Agent Self-Evolving Technology",
+      "item_ids": [
+        "5e619dae7a3e"
+      ],
+      "created_at": "2026-05-25T04:53:05.362928+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "48da8164cdb8cb98": {
+      "topic": "AI Pilots Aviation Flight Technology Testing",
+      "item_ids": [
+        "72ef5970cb0a"
+      ],
+      "created_at": "2026-05-25T04:53:05.362928+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-25T00:12:05.969377+00:00"
+  "last_checked": "2026-05-25T04:53:05.364286+00:00"
 }

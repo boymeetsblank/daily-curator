@@ -1,6 +1,100 @@
 {
   "items": [
     {
+      "id": "171f7c497a91",
+      "topic": "Drake Ties Taylor Swift for the Most Billboard 200 No. 1 Albums Among Soloists",
+      "traffic": "",
+      "detected_at": "2026-05-25T04:52:37.846798+00:00",
+      "search_url": "https://www.billboard.com/lists/drake-taylor-swift-most-billboard200-no1-albums-soloists/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "aa681fa0556cf222"
+    },
+    {
+      "id": "d9b070ac1ddd",
+      "topic": "Accelink Technologies CoLtd And 2 Other High Growth Tech Stocks in Asia - Yahoo Finance UK",
+      "traffic": "",
+      "detected_at": "2026-05-25T04:52:37.846798+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcUFTYXowOHV2QjdHb2VBYWtlT1o0R0tLN2N2TFNBZHpBc01XTnM5UFoyTUM1bGdMdmVScUFPdk9GVmZLVGVLUmRjU2FPS3Q4YVQ4czM4NHZDbXNaNm94MjB5UjFFTjNaTmJCcHRLd0JQY3lWX3oxQks1NWE5dGNvZVRubDhHd3pIWHZHVQ?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "32fcfe61eaa9d6c7"
+    },
+    {
+      "id": "5e619dae7a3e",
+      "topic": "Fujitsu develops self-evolving multi-AI agent technology that learns and adapts to business operations - Fujitsu Global",
+      "traffic": "",
+      "detected_at": "2026-05-25T04:52:37.846798+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1mcklXQldLdkM1R3JpTnEwSGpOYV9KdmZjaHVZWFR2NG1fUF9tTVlLR19QbTBGTU9xQkxQbjBndmxIaVRCaGd4NU9UbEhoZzdDOGE5QWxmNm5qN29mLWNxTzR4b3Q?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "720881f655e1968e"
+    },
+    {
+      "id": "72ef5970cb0a",
+      "topic": "Could AI replace pilots? Aviation industry tests next generation flight technology - The News International",
+      "traffic": "",
+      "detected_at": "2026-05-25T04:52:37.846798+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQalNvYzB3b29tQXVHZ25UYlhYSzR0M2tpazhqd2ZGM25MSk1RMW1iTk9GQTliU1Q5SUNUNFRvYzFEY1piNGt4LUVRWnZwbFEzQ1V0OUVDclpWamlnU3NRVDVHcFN1SmJqMGlBc1BCc0gzQkFQRHhpcGVwR1E1TkoxRGp3M2FIVmplM0xkeGNLejhvYzVLY3h4WlN1NHlJRy1rajR5OWJ2V3BBVXJLQkZfSDN2bGtTMGN4ZXBZYmdUUVI?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "48da8164cdb8cb98"
+    },
+    {
+      "id": "2d99552dd20b",
+      "topic": "Azzi",
+      "traffic": "##20 on X",
+      "detected_at": "2026-05-25T04:52:37.846798+00:00",
+      "search_url": "https://x.com/search?q=Azzi&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "653df86c37db",
+      "topic": "Unreal Engine 6",
+      "traffic": "##21 on X",
+      "detected_at": "2026-05-25T04:52:37.846798+00:00",
+      "search_url": "https://x.com/search?q=Unreal+Engine+6&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "9b45eabc7311",
+      "topic": "All 20",
+      "traffic": "##22 on X",
+      "detected_at": "2026-05-25T04:52:37.846798+00:00",
+      "search_url": "https://x.com/search?q=All+20&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "32a03fa8e32c",
+      "topic": "Oscar",
+      "traffic": "##23 on X",
+      "detected_at": "2026-05-25T04:52:37.846798+00:00",
+      "search_url": "https://x.com/search?q=Oscar&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "59926ce16203",
+      "topic": "Collet",
+      "traffic": "##24 on X",
+      "detected_at": "2026-05-25T04:52:37.846798+00:00",
+      "search_url": "https://x.com/search?q=Collet&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "01412404421b",
       "topic": "Chelsea",
       "traffic": "##14 on X",
@@ -323,97 +417,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 8
-    },
-    {
-      "id": "11c9a05ec734",
-      "topic": "Meet the Press",
-      "traffic": "##16 on X",
-      "detected_at": "2026-05-24T20:58:03.313066+00:00",
-      "search_url": "https://x.com/search?q=Meet+the+Press&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 8
-    },
-    {
-      "id": "0148929367a2",
-      "topic": "Beartooth Singer Caleb Shomo Comes Out as a ‘Proudly Gay Man’ in Emotional Message to Fans",
-      "traffic": "",
-      "detected_at": "2026-05-24T19:56:40.111400+00:00",
-      "search_url": "https://variety.com/2026/music/news/beartooth-singer-caleb-shomo-comes-out-gay-1236758007/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "16c61ba3e12c",
-      "topic": "Drake Makes History at Nos. 1, 2 & 3 on Billboard 200 With ‘ICEMAN,’ ‘HABIBTI’ & ‘MAID OF HONOUR’",
-      "traffic": "",
-      "detected_at": "2026-05-24T19:56:40.111400+00:00",
-      "search_url": "https://www.billboard.com/lists/drake-iceman-habibti-maid-of-honour-top-billboard-200-chart/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "3f8181f159b2",
-      "topic": "Nicolas Cage Says Christopher Nolan Won’t “Call Me Back” After Turning Down ‘Insomnia’: “They Get Their Feelings Hurt”",
-      "traffic": "",
-      "detected_at": "2026-05-24T19:56:40.111400+00:00",
-      "search_url": "https://deadline.com/2026/05/nicolas-cage-christopher-nolan-wont-call-me-turning-down-insomnia-1236920221/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "a3678b07908e",
-      "topic": "Idris Elba Admits He Was Never “In The Race” For James Bond Role: “They’re Going Younger”",
-      "traffic": "",
-      "detected_at": "2026-05-24T19:56:40.111400+00:00",
-      "search_url": "https://deadline.com/2026/05/idris-elba-never-in-race-james-bond-role-1236920218/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "e723064f8654",
-      "topic": "Xreal, Google’s smartglasses partner, thinks it has finally mastered this notoriously tricky industry",
-      "traffic": "",
-      "detected_at": "2026-05-24T19:56:40.111400+00:00",
-      "search_url": "https://techcrunch.com/2026/05/24/xreal-googles-smartglasses-partner-thinks-it-has-finally-mastered-this-notoriously-tricky-industry/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "9e809aad23cb",
-      "topic": "Trump says Iran negotiations proceeding in 'orderly and constructive manner;' warns against rushing",
-      "traffic": "",
-      "detected_at": "2026-05-24T19:56:40.111400+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/24/trump-iran-war-talks.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "fe53b976cadd",
-      "topic": "As Global Markets Roar Higher and Echo the Spirit of the Dot-Com Era, ELEKTROS Inc. Celebrates Expanding Worldwide Recognition Among Penny Stock and Microcap Investors Discovering the Company's Vision for Hard Rock Lithium Mining and EV Paten - Yahoo! Finance Canada",
-      "traffic": "",
-      "detected_at": "2026-05-24T19:56:40.111400+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPT0xPcmcxSUlUaXFjTmJwdndpN1I5UVdIWGc3eUdUMDB4MUY0LXRaT0dMaWR1dXIteEhLRXBoSkQ3NUZKTGVXX1dXTlBZdER2d25EVzl4c1VtS1U1bFdoT2N0LU0xemR1cjdXcUJtZHRVZkc5bkR6T3Q2OFl5Uk9yaElNU3F0cVk?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "a65a31d95fce",
-      "topic": "PHOTOS: 2026 Gwinnett School of Math, Science and Technology Graduation - Gwinnett Daily Post",
-      "traffic": "",
-      "detected_at": "2026-05-24T19:56:40.111400+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOazAyUXoxTldRTTFzdGlzT09TYTJCcGcwVnJZTXFNc25PczRPQlN6al9hbUdYcm9LcUNCMVVac1lKVDduMnNRV3BDSDBtZjJKeDhSdWN5VTJQNHloczZzQ01oQlFydnlQWUhveUNzbmNHQUV4Z0RLb1QxZDFfeVVPdE9qR2VacTI5YWRKdjg0ZjFuVGU0OEJpeUVjZ3lsOENGMkxJZmkxaE0xckFnZG9Ydng1RGNtTm5PMlJnOGwtMk9pS0JKRkpTbEwzOG5JRnJlSFpzTDBIeVZ2NTZIcjBPSlNNM0dOTUFHWXhzYmwydk1sXzJq?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 8
     }
   ],
-  "last_checked": "2026-05-25T00:11:34.959973+00:00"
+  "last_checked": "2026-05-25T04:52:37.846798+00:00"
 }
