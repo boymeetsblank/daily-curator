@@ -1,15 +1,5 @@
 {
   "known_ids": [
-    "3fac909a4ab5",
-    "bf7fc75cfa1d",
-    "8d8f6ac08c62",
-    "adca3a80e27b",
-    "3d93302766c4",
-    "fe8da49e23dc",
-    "198f42dd59d7",
-    "f690d012bd23",
-    "92f7a51463e6",
-    "c54bcccc8438",
     "9f29be4912fd",
     "ce23ecc8fb64",
     "844bcea36604",
@@ -499,7 +489,17 @@
     "653df86c37db",
     "9b45eabc7311",
     "32a03fa8e32c",
-    "59926ce16203"
+    "59926ce16203",
+    "6602eb3e0925",
+    "64238ab67cc8",
+    "19e390ad0c5e",
+    "3f69ea220c9b",
+    "06f6d857b8b5",
+    "6d1942b91279",
+    "c47e9967e5e5",
+    "012731a27831",
+    "71abe7f4097c",
+    "031deab60afa"
   ],
   "failed_ids": {
     "7d5d7ee80997": "2026-05-25T04:52:37.846798+00:00",
@@ -507,37 +507,17 @@
     "f9bd298e88f1": "2026-05-25T04:52:37.846798+00:00",
     "6ec7c75d6a27": "2026-05-25T04:52:37.846798+00:00",
     "36d1132c180c": "2026-05-25T04:52:37.846798+00:00",
-    "0e12b32afed5": "2026-05-25T04:52:37.846798+00:00"
+    "0e12b32afed5": "2026-05-25T04:52:37.846798+00:00",
+    "63d450934192": "2026-05-25T08:50:25.999338+00:00",
+    "196ffb160b14": "2026-05-25T08:50:25.999338+00:00",
+    "268d6d4a196a": "2026-05-25T08:50:25.999338+00:00",
+    "3129976f71cb": "2026-05-25T08:50:25.999338+00:00",
+    "43f1603ff10d": "2026-05-25T08:50:25.999338+00:00",
+    "9ab02949ca07": "2026-05-25T08:50:25.999338+00:00",
+    "b88499b5e09c": "2026-05-25T08:50:25.999338+00:00",
+    "fc9a195abe57": "2026-05-25T08:50:25.999338+00:00"
   },
   "live_clusters": {
-    "59e1179fe93e4677": {
-      "topic": "Taylor Swift Courtside at Knicks-Cavaliers Game ESPN Commentary",
-      "item_ids": [
-        "342c1d798f93",
-        "b1ce9ba10fb9"
-      ],
-      "created_at": "2026-05-24T05:45:28.513468+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f0a7efb31e3a16f9": {
-      "topic": "Nanoscale Drug Factory Cellular Medicine Technology Research",
-      "item_ids": [
-        "233ea703c37f"
-      ],
-      "created_at": "2026-05-24T05:45:28.513468+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b44cd56a51e40c08": {
-      "topic": "Black Holes Physics Discovery Universe Research",
-      "item_ids": [
-        "f7dc209d1486"
-      ],
-      "created_at": "2026-05-24T08:09:20.113110+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "33c9db6eff3953e4": {
       "topic": "Mohamed Salah Final Liverpool Game Viewing Guide",
       "item_ids": [
@@ -991,7 +971,52 @@
       "created_at": "2026-05-25T04:53:05.362928+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "0bb0dfd493d6e45b": {
+      "topic": "Cuba Gooding Jr. Luke Ford Keith Duffy 'Lotus' Action Thriller Cast",
+      "item_ids": [
+        "6602eb3e0925"
+      ],
+      "created_at": "2026-05-25T08:50:51.744124+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0bc5ae851c808d69": {
+      "topic": "Bruno Dumont 'Red Rocks' Film Review",
+      "item_ids": [
+        "64238ab67cc8"
+      ],
+      "created_at": "2026-05-25T08:50:51.744124+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d8f133602e45d768": {
+      "topic": "'A Girl Unknown' Period Drama Review China One-Child Policy",
+      "item_ids": [
+        "19e390ad0c5e"
+      ],
+      "created_at": "2026-05-25T08:50:51.744124+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f78fb9cb9342f794": {
+      "topic": "Yeon Sang-ho 'Colony' Korea Box Office No. 1 Cannes Midnight",
+      "item_ids": [
+        "3f69ea220c9b"
+      ],
+      "created_at": "2026-05-25T08:50:51.744124+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "30ccc5e667e83ed3": {
+      "topic": "Antonin Baudry 'De Gaulle: R\u00e9sistance' Wartime Biopic Review",
+      "item_ids": [
+        "06f6d857b8b5"
+      ],
+      "created_at": "2026-05-25T08:50:51.744124+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-25T04:53:05.364286+00:00"
+  "last_checked": "2026-05-25T08:50:51.745319+00:00"
 }
