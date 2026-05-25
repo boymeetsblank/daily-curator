@@ -1,15 +1,5 @@
 {
   "known_ids": [
-    "4f2d2c6685c4",
-    "ba79212ce153",
-    "1b97dc029a8f",
-    "835578267d22",
-    "5084600d9b9e",
-    "e2e626f4871f",
-    "554ca7cf87fc",
-    "8204a92aca67",
-    "f1a61cf47af4",
-    "dfb03a530ab9",
     "816f3dc7e0ab",
     "ce328c8691f3",
     "9e2385ad59fe",
@@ -499,15 +489,19 @@
     "350698e5fe0c",
     "3c834b8a5b0e",
     "a3effa45b595",
-    "0c0326f50317"
+    "0c0326f50317",
+    "091b4c08dac1",
+    "d48e41fe4a9e",
+    "c4bee372dd35",
+    "32cfd91d24e5",
+    "9a9d6a74cec4",
+    "86be422853db",
+    "0a838c26e35a",
+    "4d187aee2861",
+    "227c8a2b50ae",
+    "056daec2791d"
   ],
   "failed_ids": {
-    "53576e4d1aa5": "2026-05-25T18:55:37.288756+00:00",
-    "a2a93f0d6725": "2026-05-25T18:55:37.288756+00:00",
-    "4e17c0fd70d1": "2026-05-25T18:55:37.288756+00:00",
-    "26bc8acf2dc5": "2026-05-25T18:55:37.288756+00:00",
-    "4e8f92bf7fc6": "2026-05-25T18:55:37.288756+00:00",
-    "5c7ec92b6279": "2026-05-25T18:55:37.288756+00:00",
     "1179fbb20829": "2026-05-25T20:22:22.025353+00:00",
     "4cb40b19733a": "2026-05-25T20:22:22.025353+00:00",
     "9fb06f696c9b": "2026-05-25T20:22:22.025353+00:00",
@@ -529,64 +523,17 @@
     "3b06268aafd1": "2026-05-25T22:41:32.273639+00:00",
     "ab2937944554": "2026-05-25T22:41:32.273639+00:00",
     "9ede6aa59fa5": "2026-05-25T22:41:32.273639+00:00",
-    "c04de33d0f07": "2026-05-25T22:41:32.273639+00:00"
+    "c04de33d0f07": "2026-05-25T22:41:32.273639+00:00",
+    "3fabc68cac90": "2026-05-25T23:46:10.870454+00:00",
+    "e26319796a32": "2026-05-25T23:46:10.870454+00:00",
+    "0629d28e8969": "2026-05-25T23:46:10.870454+00:00",
+    "b092e062fe4b": "2026-05-25T23:46:10.870454+00:00",
+    "480fa305b4e3": "2026-05-25T23:46:10.870454+00:00",
+    "030d6c0e3521": "2026-05-25T23:46:10.870454+00:00",
+    "e5d697d8aaa5": "2026-05-25T23:46:10.870454+00:00",
+    "154384660dc7": "2026-05-25T23:46:10.870454+00:00"
   },
   "live_clusters": {
-    "48166369f116b270": {
-      "topic": "adidas Adistar MLD Summer Colorway Release",
-      "item_ids": [
-        "08666a3d8834"
-      ],
-      "created_at": "2026-05-24T23:06:01.263976+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0ad4d953ce63decc": {
-      "topic": "Richard Dreyfuss Cancels Jaws Reunion Appearance",
-      "item_ids": [
-        "3d9a9c67bd47"
-      ],
-      "created_at": "2026-05-24T23:06:01.263976+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1afce5e24d354467": {
-      "topic": "Meshchera Match-Three Game Playdate Release",
-      "item_ids": [
-        "01a9b2f0075c"
-      ],
-      "created_at": "2026-05-24T23:06:01.263976+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "52779c578c33a0fc": {
-      "topic": "KHCC 3D Augmented Reality Medical Technology Achievement",
-      "item_ids": [
-        "c91949ebb0f0"
-      ],
-      "created_at": "2026-05-24T23:06:01.263976+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "02047f3078544307": {
-      "topic": "Quantum Computing Stock Analysis May 2026",
-      "item_ids": [
-        "14820ca0e034"
-      ],
-      "created_at": "2026-05-24T23:06:01.263976+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "32fcfe61eaa9d6c7": {
-      "topic": "Asian High-Growth Tech Stocks May 2026",
-      "item_ids": [
-        "4922d84e88f6",
-        "d9b070ac1ddd"
-      ],
-      "created_at": "2026-05-24T23:06:01.263976+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "4835d4c4b97bf93b": {
       "topic": "Chelsea Football Club News",
       "item_ids": [
@@ -743,19 +690,29 @@
         "4086e10ecf28",
         "d40591b4328e",
         "e4db7976ab5e",
-        "fadbfee873ce"
+        "fadbfee873ce",
+        "091b4c08dac1",
+        "d48e41fe4a9e",
+        "c4bee372dd35",
+        "32cfd91d24e5",
+        "9a9d6a74cec4"
       ],
       "created_at": "2026-05-25T15:31:06.368097+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-05-25T22:41:32.273639+00:00",
+      "last_escalated_size": 10,
+      "last_escalated_at": "2026-05-25T23:46:10.870454+00:00",
       "picks_file": "picks/picks-2026-05-25-2241.md",
-      "why_text": "The 2026 AMAs are unfolding in real time, with a notably genre-fluid lineup \u2014 country's Russell Dickerson linking up with Fetty Wap, K-pop/Latin hybrid REI AMI teasing new music, and global girl groups XG and KATSEYE sharing the same stage conversation alongside the Jonas Brothers. It's a snapshot of exactly how fractured and cross-pollinated pop culture has become: the AMAs, once a mainstream barometer, now reads more like a festival of niches colliding. The convergence of these signals mid-show means the moments are landing \u2014 people are watching and talking.",
+      "why_text": "The 2026 AMAs are unfolding in real time, with a notably genre-fluid lineup \u2014 country's Russell Dickerson linking up with Fetty Wap, K-pop/Latin hybrid REI AMI teasing new music, and global girl groups XG and KATSEYE sharing the same stage conversation alongside the Jonas Brothers. It's a snapshot of exactly how fractured and cross-pollinated pop culture has become: the AMAs, once a mainstream barometer, now reads more like a festival of niches colliding. The convergence of these signals mid-show means the moments are landing \u2014 people are watching and talking.\n**Update 6:46 PM CT:** Winners are now being confirmed across categories as the full list takes shape live, while the show keeps building momentum off-stage too \u2014 Ludacris teased a new album alongside his 'Pull Over' video drop, EJAE revealed she's heading to Coachella with KATSEYE, and Sombr reflected on a breakout run that's taken her from the Grammys to this AMAs stage, adding another layer to an already stacked night of debuts and announcements.",
       "last_escalated_item_ids": [
         "02006654a28b",
         "4086e10ecf28",
         "d40591b4328e",
         "e4db7976ab5e",
-        "fadbfee873ce"
+        "fadbfee873ce",
+        "091b4c08dac1",
+        "d48e41fe4a9e",
+        "c4bee372dd35",
+        "32cfd91d24e5",
+        "9a9d6a74cec4"
       ]
     },
     "48ed72a3a4f63adb": {
@@ -834,7 +791,8 @@
     "99d7902fd5536c0c": {
       "topic": "'Star Wars: The Mandalorian & Grogu' $163M Box Office Opening",
       "item_ids": [
-        "0c401ec9f98b"
+        "0c401ec9f98b",
+        "86be422853db"
       ],
       "created_at": "2026-05-25T17:20:40.076958+00:00",
       "last_escalated_size": 0,
@@ -1048,5 +1006,5 @@
       "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-25T22:42:06.007881+00:00"
+  "last_checked": "2026-05-25T23:46:46.708872+00:00"
 }
