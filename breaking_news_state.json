@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "d1ce1268477f",
-    "744904b72a2b",
-    "0060a3ee947b",
-    "0e3b567295b0",
-    "fef5ec65ece7",
-    "d0589b9b71f0",
-    "d02870ae46ac",
-    "afb992ed2324",
-    "7baa9b4c7175",
-    "ad0326b2ebee",
-    "340bb28388a9",
-    "4a3d97252639",
-    "cebec554b20c",
-    "87e92047b4c8",
-    "82f0aa868929",
-    "c3d01886fb4f",
-    "5f013ac0f668",
     "2114a755a45e",
     "bc08ab0533cb",
     "d1f989a9e5fb",
@@ -499,16 +482,26 @@
     "2d115a208575",
     "06d78a3bdb46",
     "85234b04922e",
-    "239637ec2399"
+    "239637ec2399",
+    "a63ab852342e",
+    "40ffb4e3b367",
+    "0234218e354d",
+    "832acfe85224",
+    "b4ee559018db",
+    "a73a27fd99ef",
+    "0c401ec9f98b",
+    "413767c315b0",
+    "6494b6b4c02c",
+    "982e98195042",
+    "abb22fea2763",
+    "2e2e3bb66a4f",
+    "dce9cb54928b",
+    "9b517d73fed9",
+    "350476aa6bba",
+    "25aabd4bd0bb",
+    "341f056ff775"
   ],
   "failed_ids": {
-    "544385da4da1": "2026-05-25T12:15:38.315287+00:00",
-    "8e929f8b4fed": "2026-05-25T12:15:38.315287+00:00",
-    "30549087f6ba": "2026-05-25T12:15:38.315287+00:00",
-    "318ff832fcf1": "2026-05-25T12:15:38.315287+00:00",
-    "f0baeb1915f8": "2026-05-25T12:15:38.315287+00:00",
-    "77ff175a348b": "2026-05-25T12:15:38.315287+00:00",
-    "b40e3a325cdf": "2026-05-25T12:15:38.315287+00:00",
     "1075495bbec5": "2026-05-25T15:30:39.548895+00:00",
     "29f40dfa3585": "2026-05-25T15:30:39.548895+00:00",
     "d676d1f5cb3c": "2026-05-25T15:30:39.548895+00:00",
@@ -518,100 +511,15 @@
     "cbd0cecd9533": "2026-05-25T15:30:39.548895+00:00",
     "78243e70169e": "2026-05-25T15:30:39.548895+00:00",
     "43c0f3ac0188": "2026-05-25T15:30:39.548895+00:00",
-    "4003a3a67241": "2026-05-25T15:30:39.548895+00:00"
+    "4003a3a67241": "2026-05-25T15:30:39.548895+00:00",
+    "542c91653683": "2026-05-25T17:20:09.672564+00:00",
+    "a159563e5e70": "2026-05-25T17:20:09.672564+00:00",
+    "9ede6aa59fa5": "2026-05-25T17:20:09.672564+00:00",
+    "97b0602b3ede": "2026-05-25T17:20:09.672564+00:00",
+    "01b9bf892cc4": "2026-05-25T17:20:09.672564+00:00",
+    "4a4e9a6f28aa": "2026-05-25T17:20:09.672564+00:00"
   },
   "live_clusters": {
-    "9fc09bbec9e0c664": {
-      "topic": "'Mandalorian and Grogu' Box Office Performance Memorial Day Weekend",
-      "item_ids": [
-        "b94ec680e33c",
-        "3c661ad00a2a"
-      ],
-      "created_at": "2026-05-24T15:37:28.529915+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "24647698fd93230b": {
-      "topic": "Kali Uchis For the Girls Tour Launch Sue\u00f1os 2026",
-      "item_ids": [
-        "412996a49a00"
-      ],
-      "created_at": "2026-05-24T15:37:28.529915+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2d035afc0486208d": {
-      "topic": "Amazon Bee Wearable Device Review",
-      "item_ids": [
-        "8907bc013160"
-      ],
-      "created_at": "2026-05-24T15:37:28.529915+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a9689c232a2d3bae": {
-      "topic": "Travis Scott Jordan 1 Low OG 'Pink Pack' Sneaker Release",
-      "item_ids": [
-        "0f5a36ae5ead"
-      ],
-      "created_at": "2026-05-24T16:41:07.613612+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7aa89da1b243dc49": {
-      "topic": "Rob Base 'It Takes Two' Rapper Death Obituary",
-      "item_ids": [
-        "035b0dff55e6"
-      ],
-      "created_at": "2026-05-24T16:41:07.613612+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b50dd888754a82f9": {
-      "topic": "HBO Max Teases 'Harry Potter', 'Gilded Age', 'Lanterns' Upcoming Content",
-      "item_ids": [
-        "3ee79eb3499d"
-      ],
-      "created_at": "2026-05-24T16:41:07.613612+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a05bc067482cd6a8": {
-      "topic": "'Baywatch' Fox Reboot Series Teaser New Faces",
-      "item_ids": [
-        "f5e76993b166"
-      ],
-      "created_at": "2026-05-24T16:41:07.613612+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3b9f4900c052b880": {
-      "topic": "French Open 2026 Expert Predictions",
-      "item_ids": [
-        "4a15f679a8ce"
-      ],
-      "created_at": "2026-05-24T16:41:07.613612+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ec15be8caed76447": {
-      "topic": "Robotaxi Reality Check Mobility Technology",
-      "item_ids": [
-        "c1d4da231cd2"
-      ],
-      "created_at": "2026-05-24T16:41:07.613612+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cdcca0e6c2a21bf3": {
-      "topic": "Kalshi Rhode Island Prediction Markets Legal Challenge",
-      "item_ids": [
-        "70a6038810b0"
-      ],
-      "created_at": "2026-05-24T16:41:07.613612+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "1b45720869163faf": {
       "topic": "Nike Giannis Freak 7 'Neon Fade' Sneaker Release",
       "item_ids": [
@@ -875,20 +783,28 @@
         "8f76bece1243",
         "2d9b87dcd54f",
         "bf17820e5789",
-        "a31374d3935d"
+        "a31374d3935d",
+        "b4ee559018db",
+        "982e98195042",
+        "9b517d73fed9",
+        "341f056ff775"
       ],
       "created_at": "2026-05-25T12:16:04.265977+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-05-25T15:30:39.548895+00:00",
+      "last_escalated_size": 10,
+      "last_escalated_at": "2026-05-25T17:20:09.672564+00:00",
       "picks_file": "picks/picks-2026-05-25-1531.md",
-      "why_text": "Pope Leo has released what appears to be a landmark papal encyclical specifically addressing artificial intelligence \u2014 a rare and significant move that plants the Catholic Church squarely in the middle of the most consequential tech debate of our time. His call to 'disarm' AI and prevent power concentration lands as Silicon Valley is drunk on AGI hype and regulators worldwide are still fumbling for a framework. When the Pope writes an encyclical about your industry, you've officially stopped being a niche conversation.",
+      "why_text": "Pope Leo has released what appears to be a landmark papal encyclical specifically addressing artificial intelligence \u2014 a rare and significant move that plants the Catholic Church squarely in the middle of the most consequential tech debate of our time. His call to 'disarm' AI and prevent power concentration lands as Silicon Valley is drunk on AGI hype and regulators worldwide are still fumbling for a framework. When the Pope writes an encyclical about your industry, you've officially stopped being a niche conversation.\n**Update 12:20 PM CT:** The encyclical's 'Tower of Babel' framing is now breaking wide \u2014 Pope Leo XIV is explicitly warning that AI concentrated in the hands of a few risks a civilization-scale collapse of shared meaning, not just a policy problem. Coverage has escalated from tech outlets to Rolling Stone and The Washington Post, signaling this has crossed from religious news into mainstream cultural event.",
       "last_escalated_item_ids": [
         "572e4c15344c",
         "7bc4d8ae5302",
         "8f76bece1243",
         "2d9b87dcd54f",
         "bf17820e5789",
-        "a31374d3935d"
+        "a31374d3935d",
+        "b4ee559018db",
+        "982e98195042",
+        "9b517d73fed9",
+        "341f056ff775"
       ]
     },
     "7eb00301bbef8274": {
@@ -935,7 +851,97 @@
       "created_at": "2026-05-25T15:31:06.368097+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "68580e0a03449b88": {
+      "topic": "Nike Mercurial World Cup Reinvention",
+      "item_ids": [
+        "a63ab852342e"
+      ],
+      "created_at": "2026-05-25T17:20:40.076958+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dae1235bbca08195": {
+      "topic": "Nike Air Max DN8 Release",
+      "item_ids": [
+        "40ffb4e3b367"
+      ],
+      "created_at": "2026-05-25T17:20:40.076958+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c91a4aef4d8c69ec": {
+      "topic": "Jack Osbourne AI Ozzy Avatar Backlash",
+      "item_ids": [
+        "0234218e354d"
+      ],
+      "created_at": "2026-05-25T17:20:40.076958+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "73837e72b50d534c": {
+      "topic": "Chris Brown Honorary PhD Harvest Christian University",
+      "item_ids": [
+        "832acfe85224"
+      ],
+      "created_at": "2026-05-25T17:20:40.076958+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "29414888069208e9": {
+      "topic": "'Hacks' Creators DVD Box Set Campaign",
+      "item_ids": [
+        "a73a27fd99ef"
+      ],
+      "created_at": "2026-05-25T17:20:40.076958+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "99d7902fd5536c0c": {
+      "topic": "'Star Wars: The Mandalorian & Grogu' $163M Box Office Opening",
+      "item_ids": [
+        "0c401ec9f98b"
+      ],
+      "created_at": "2026-05-25T17:20:40.076958+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dd934b7c3bfee491": {
+      "topic": "Boots Riley Cannes Rejection 'I Love Boosters'",
+      "item_ids": [
+        "413767c315b0"
+      ],
+      "created_at": "2026-05-25T17:20:40.076958+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "65e3c961b2071511": {
+      "topic": "'Backrooms' A24 Film Kane Parsons Youngest Director",
+      "item_ids": [
+        "6494b6b4c02c"
+      ],
+      "created_at": "2026-05-25T17:20:40.076958+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1a36c856291449f7": {
+      "topic": "ClickUp Mass Layoff Future of Work",
+      "item_ids": [
+        "abb22fea2763"
+      ],
+      "created_at": "2026-05-25T17:20:40.076958+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2a6080b09c39614c": {
+      "topic": "Huawei Semiconductor Development 2031",
+      "item_ids": [
+        "2e2e3bb66a4f"
+      ],
+      "created_at": "2026-05-25T17:20:40.076958+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-25T15:31:11.529021+00:00"
+  "last_checked": "2026-05-25T17:20:51.180271+00:00"
 }
