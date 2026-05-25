@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "4f850139fb13",
-    "330fd9f4566b",
-    "af2658d8475c",
-    "38c59b1817a1",
-    "b7b956da4c99",
-    "5182e5706991",
-    "682b115b447c",
-    "0e53e2b83911",
-    "a4a472517c5f",
-    "01bb76709e50",
-    "e9b77c2df8ed",
-    "2c6d426c37c8",
-    "91acc6d79c39",
-    "d8a10c99f46a",
     "d1ce1268477f",
     "744904b72a2b",
     "0060a3ee947b",
@@ -499,89 +485,42 @@
     "178cb2e4a213",
     "4f9ded3f5ef9",
     "34d2864dcdad",
-    "60005804e8a4"
+    "60005804e8a4",
+    "02006654a28b",
+    "7b70cc5488a7",
+    "5ab7c858aaab",
+    "7f6ccc69f414",
+    "7bc4d8ae5302",
+    "8f76bece1243",
+    "2d9b87dcd54f",
+    "bf17820e5789",
+    "a31374d3935d",
+    "b0c2398f3274",
+    "2d115a208575",
+    "06d78a3bdb46",
+    "85234b04922e",
+    "239637ec2399"
   ],
   "failed_ids": {
-    "63d450934192": "2026-05-25T08:50:25.999338+00:00",
-    "196ffb160b14": "2026-05-25T08:50:25.999338+00:00",
-    "268d6d4a196a": "2026-05-25T08:50:25.999338+00:00",
-    "3129976f71cb": "2026-05-25T08:50:25.999338+00:00",
-    "43f1603ff10d": "2026-05-25T08:50:25.999338+00:00",
-    "9ab02949ca07": "2026-05-25T08:50:25.999338+00:00",
-    "b88499b5e09c": "2026-05-25T08:50:25.999338+00:00",
-    "fc9a195abe57": "2026-05-25T08:50:25.999338+00:00",
     "544385da4da1": "2026-05-25T12:15:38.315287+00:00",
     "8e929f8b4fed": "2026-05-25T12:15:38.315287+00:00",
     "30549087f6ba": "2026-05-25T12:15:38.315287+00:00",
     "318ff832fcf1": "2026-05-25T12:15:38.315287+00:00",
     "f0baeb1915f8": "2026-05-25T12:15:38.315287+00:00",
     "77ff175a348b": "2026-05-25T12:15:38.315287+00:00",
-    "b40e3a325cdf": "2026-05-25T12:15:38.315287+00:00"
+    "b40e3a325cdf": "2026-05-25T12:15:38.315287+00:00",
+    "1075495bbec5": "2026-05-25T15:30:39.548895+00:00",
+    "29f40dfa3585": "2026-05-25T15:30:39.548895+00:00",
+    "d676d1f5cb3c": "2026-05-25T15:30:39.548895+00:00",
+    "40bef2674617": "2026-05-25T15:30:39.548895+00:00",
+    "fc03edd93dda": "2026-05-25T15:30:39.548895+00:00",
+    "96a0ae8f1cd7": "2026-05-25T15:30:39.548895+00:00",
+    "cbd0cecd9533": "2026-05-25T15:30:39.548895+00:00",
+    "78243e70169e": "2026-05-25T15:30:39.548895+00:00",
+    "43c0f3ac0188": "2026-05-25T15:30:39.548895+00:00",
+    "4003a3a67241": "2026-05-25T15:30:39.548895+00:00"
   },
   "live_clusters": {
-    "bbfeb3617d3da328": {
-      "topic": "Tiffany & Co. Blue Box Caf\u00e9 Hong Kong Flagship Launch",
-      "item_ids": [
-        "02a4b9ee7980"
-      ],
-      "created_at": "2026-05-24T12:47:08.215034+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c24b417a74a16789": {
-      "topic": "Sandra Wollner 'Everytime' Film Cannes Review",
-      "item_ids": [
-        "6b7086af536c"
-      ],
-      "created_at": "2026-05-24T12:47:08.215034+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dd1614da6b67052e": {
-      "topic": "Non-Carbonated Beverages Market Growth Trend",
-      "item_ids": [
-        "347dd50e7880"
-      ],
-      "created_at": "2026-05-24T12:47:08.215034+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ba0e229a6c47d5aa": {
-      "topic": "AI Washing Corporate Rebranding Trend",
-      "item_ids": [
-        "dc21e64ee5f2"
-      ],
-      "created_at": "2026-05-24T12:47:08.215034+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b1aefd6ff5e92222": {
-      "topic": "Yes Keyboardist Trevor Horn 'Video Killed the Radio Star' Career Retrospective",
-      "item_ids": [
-        "30f17078ac83"
-      ],
-      "created_at": "2026-05-24T14:15:56.889001+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "23c46cea8e03d411": {
-      "topic": "Spencer Pratt Profile Documentary or Interview",
-      "item_ids": [
-        "d355e0755ad4"
-      ],
-      "created_at": "2026-05-24T14:15:56.889001+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1c855232e56f9d58": {
-      "topic": "Dreamie Alarm Clock Sleep Technology Product Review",
-      "item_ids": [
-        "3ece2b86dd89"
-      ],
-      "created_at": "2026-05-24T14:15:56.889001+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "9fc09bbec9e0c664": {
       "topic": "'Mandalorian and Grogu' Box Office Performance Memorial Day Weekend",
       "item_ids": [
@@ -931,11 +870,26 @@
     "c03cbbd025da281f": {
       "topic": "Pope Leo AI Ethics Statement Humanity-Centered Development",
       "item_ids": [
-        "572e4c15344c"
+        "572e4c15344c",
+        "7bc4d8ae5302",
+        "8f76bece1243",
+        "2d9b87dcd54f",
+        "bf17820e5789",
+        "a31374d3935d"
       ],
       "created_at": "2026-05-25T12:16:04.265977+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-05-25T15:30:39.548895+00:00",
+      "picks_file": "picks/picks-2026-05-25-1531.md",
+      "why_text": "Pope Leo has released what appears to be a landmark papal encyclical specifically addressing artificial intelligence \u2014 a rare and significant move that plants the Catholic Church squarely in the middle of the most consequential tech debate of our time. His call to 'disarm' AI and prevent power concentration lands as Silicon Valley is drunk on AGI hype and regulators worldwide are still fumbling for a framework. When the Pope writes an encyclical about your industry, you've officially stopped being a niche conversation.",
+      "last_escalated_item_ids": [
+        "572e4c15344c",
+        "7bc4d8ae5302",
+        "8f76bece1243",
+        "2d9b87dcd54f",
+        "bf17820e5789",
+        "a31374d3935d"
+      ]
     },
     "7eb00301bbef8274": {
       "topic": "AEW Double or Nothing Wrestling Event",
@@ -945,7 +899,43 @@
       "created_at": "2026-05-25T12:16:04.265977+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "631e8e12ba04887b": {
+      "topic": "American Music Awards 2026 Livestream",
+      "item_ids": [
+        "02006654a28b"
+      ],
+      "created_at": "2026-05-25T15:31:06.368097+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "48ed72a3a4f63adb": {
+      "topic": "Stewart McLean 'Virgin River' Actor Death",
+      "item_ids": [
+        "7b70cc5488a7"
+      ],
+      "created_at": "2026-05-25T15:31:06.368097+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ecd72533753f1a52": {
+      "topic": "Spurs vs OKC NBA Playoffs Game 4",
+      "item_ids": [
+        "5ab7c858aaab"
+      ],
+      "created_at": "2026-05-25T15:31:06.368097+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bbbaaf96378e6a6a": {
+      "topic": "Suarez Wins 600 NASCAR Race Memorial",
+      "item_ids": [
+        "7f6ccc69f414"
+      ],
+      "created_at": "2026-05-25T15:31:06.368097+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-25T12:16:04.266932+00:00"
+  "last_checked": "2026-05-25T15:31:11.529021+00:00"
 }
