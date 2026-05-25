@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "1da02c47ed9f",
-    "71be3a8f91a8",
-    "e8d926d28cd3",
-    "6943dfa8e09c",
-    "d6c70bc4ac8b",
-    "6b13fc07a5b0",
-    "d6cc1c8b1586",
-    "ea211676232b",
-    "c2da7377efdd",
-    "2ed3ffb05c9f",
-    "59be8908395a",
-    "ecee215ffecd",
-    "58731f1396cf",
-    "a56496888b2c",
     "4f2d2c6685c4",
     "ba79212ce153",
     "1b97dc029a8f",
@@ -499,7 +485,21 @@
     "77e98d27aa87",
     "4e5c82ec87b2",
     "299ceb851d40",
-    "e76d3c93e155"
+    "e76d3c93e155",
+    "7004a52f44da",
+    "d40591b4328e",
+    "e4db7976ab5e",
+    "92df032a1976",
+    "fadbfee873ce",
+    "9b8121c29302",
+    "5c68b5829272",
+    "659835debd56",
+    "4b5bc94ec7df",
+    "2f9f20a272d0",
+    "350698e5fe0c",
+    "3c834b8a5b0e",
+    "a3effa45b595",
+    "0c0326f50317"
   ],
   "failed_ids": {
     "53576e4d1aa5": "2026-05-25T18:55:37.288756+00:00",
@@ -521,73 +521,17 @@
     "75cf6a99db11": "2026-05-25T21:40:05.756004+00:00",
     "c80a8cb25fbc": "2026-05-25T21:40:05.756004+00:00",
     "a159563e5e70": "2026-05-25T21:40:05.756004+00:00",
-    "a6cb34f73ecc": "2026-05-25T21:40:05.756004+00:00"
+    "a6cb34f73ecc": "2026-05-25T21:40:05.756004+00:00",
+    "40bef2674617": "2026-05-25T22:41:32.273639+00:00",
+    "0146862059e7": "2026-05-25T22:41:32.273639+00:00",
+    "d74bbc54517d": "2026-05-25T22:41:32.273639+00:00",
+    "e9d015b6e4e7": "2026-05-25T22:41:32.273639+00:00",
+    "3b06268aafd1": "2026-05-25T22:41:32.273639+00:00",
+    "ab2937944554": "2026-05-25T22:41:32.273639+00:00",
+    "9ede6aa59fa5": "2026-05-25T22:41:32.273639+00:00",
+    "c04de33d0f07": "2026-05-25T22:41:32.273639+00:00"
   },
   "live_clusters": {
-    "f9668cd9d1a93d34": {
-      "topic": "Andr\u00e9 \u00d8vredal 'Passenger' Horror Film Review",
-      "item_ids": [
-        "43477191cc42"
-      ],
-      "created_at": "2026-05-24T22:00:48.903995+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f82e11e7263aeabc": {
-      "topic": "'Obsession' Horror Film Box Office Success",
-      "item_ids": [
-        "010b37038cb8"
-      ],
-      "created_at": "2026-05-24T22:00:48.903995+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "aa681fa0556cf222": {
-      "topic": "Drake Billboard 200 Chart Dominance",
-      "item_ids": [
-        "54b05392430a",
-        "171f7c497a91"
-      ],
-      "created_at": "2026-05-24T22:00:48.903995+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "906047e55eccc38b": {
-      "topic": "'Tuner' Black Bear Limited Box Office Release",
-      "item_ids": [
-        "42e2fbba19f3"
-      ],
-      "created_at": "2026-05-24T22:00:48.903995+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "26d1acc1b72e886a": {
-      "topic": "'Maximum Pleasure Guaranteed' Apple TV Dark Comedy",
-      "item_ids": [
-        "3ff978499b35"
-      ],
-      "created_at": "2026-05-24T22:00:48.903995+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0f62c1066b671212": {
-      "topic": "Google AI Security Challenges Real-Time Navigation",
-      "item_ids": [
-        "a1acbef14ea2"
-      ],
-      "created_at": "2026-05-24T22:00:48.903995+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "21b8444b4de892e8": {
-      "topic": "KULR Technology Drone Space Battery Stock Rally",
-      "item_ids": [
-        "3a6e90b7600b"
-      ],
-      "created_at": "2026-05-24T22:00:48.903995+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "48166369f116b270": {
       "topic": "adidas Adistar MLD Summer Colorway Release",
       "item_ids": [
@@ -796,11 +740,23 @@
       "topic": "American Music Awards 2026 Livestream",
       "item_ids": [
         "02006654a28b",
-        "4086e10ecf28"
+        "4086e10ecf28",
+        "d40591b4328e",
+        "e4db7976ab5e",
+        "fadbfee873ce"
       ],
       "created_at": "2026-05-25T15:31:06.368097+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 5,
+      "last_escalated_at": "2026-05-25T22:41:32.273639+00:00",
+      "picks_file": "picks/picks-2026-05-25-2241.md",
+      "why_text": "The 2026 AMAs are unfolding in real time, with a notably genre-fluid lineup \u2014 country's Russell Dickerson linking up with Fetty Wap, K-pop/Latin hybrid REI AMI teasing new music, and global girl groups XG and KATSEYE sharing the same stage conversation alongside the Jonas Brothers. It's a snapshot of exactly how fractured and cross-pollinated pop culture has become: the AMAs, once a mainstream barometer, now reads more like a festival of niches colliding. The convergence of these signals mid-show means the moments are landing \u2014 people are watching and talking.",
+      "last_escalated_item_ids": [
+        "02006654a28b",
+        "4086e10ecf28",
+        "d40591b4328e",
+        "e4db7976ab5e",
+        "fadbfee873ce"
+      ]
     },
     "48ed72a3a4f63adb": {
       "topic": "Stewart McLean 'Virgin River' Actor Death",
@@ -868,7 +824,8 @@
     "29414888069208e9": {
       "topic": "'Hacks' Creators DVD Box Set Campaign",
       "item_ids": [
-        "a73a27fd99ef"
+        "a73a27fd99ef",
+        "5c68b5829272"
       ],
       "created_at": "2026-05-25T17:20:40.076958+00:00",
       "last_escalated_size": 0,
@@ -1026,7 +983,70 @@
       "created_at": "2026-05-25T20:22:53.833444+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "570126de55eae355": {
+      "topic": "Nike First Sight Noir Bright Crimson Release",
+      "item_ids": [
+        "7004a52f44da"
+      ],
+      "created_at": "2026-05-25T22:41:59.976189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6288a6a32b79a6c2": {
+      "topic": "Demi Lovato First Wedding Anniversary",
+      "item_ids": [
+        "92df032a1976"
+      ],
+      "created_at": "2026-05-25T22:41:59.976189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ab4ef435bd0d2f1a": {
+      "topic": "Leo Woodall Lord of the Rings Hunt for Gollum Casting",
+      "item_ids": [
+        "9b8121c29302"
+      ],
+      "created_at": "2026-05-25T22:41:59.976189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1603263f95550131": {
+      "topic": "Rosenqvist Indy 500 Record Prize Purse",
+      "item_ids": [
+        "659835debd56"
+      ],
+      "created_at": "2026-05-25T22:41:59.976189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6b6e31c0e566c53c": {
+      "topic": "Jodar French Open Tennis Debut",
+      "item_ids": [
+        "4b5bc94ec7df"
+      ],
+      "created_at": "2026-05-25T22:41:59.976189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "60023aaff891675c": {
+      "topic": "Princeton Men's Lacrosse Title Win",
+      "item_ids": [
+        "2f9f20a272d0"
+      ],
+      "created_at": "2026-05-25T22:41:59.976189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bb9be1d370d639ae": {
+      "topic": "Sennheiser Momentum 5 Headphones Audio ANC",
+      "item_ids": [
+        "350698e5fe0c"
+      ],
+      "created_at": "2026-05-25T22:41:59.976189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-25T21:40:40.292789+00:00"
+  "last_checked": "2026-05-25T22:42:06.007881+00:00"
 }
