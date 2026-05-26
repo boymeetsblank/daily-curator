@@ -1,24 +1,5 @@
 {
   "known_ids": [
-    "816f3dc7e0ab",
-    "ce328c8691f3",
-    "9e2385ad59fe",
-    "443b4e262739",
-    "26dcd444a287",
-    "b5721f169905",
-    "950034659421",
-    "f30adb981d04",
-    "8b47240b71d9",
-    "d3a6fd08831e",
-    "1fe91768ce11",
-    "34aac5a4fe84",
-    "a6962e5d1740",
-    "8169ee767229",
-    "3be64e38befc",
-    "5acead52f49c",
-    "603cb4ca221b",
-    "af0a61f64d7d",
-    "b637aea8892f",
     "dd91373291c4",
     "965033573ac7",
     "46d710a3df37",
@@ -499,16 +480,28 @@
     "0a838c26e35a",
     "4d187aee2861",
     "227c8a2b50ae",
-    "056daec2791d"
+    "056daec2791d",
+    "1d2d51e080b1",
+    "3d177534648c",
+    "df27f63057b1",
+    "14aa34ac4672",
+    "3744210972fb",
+    "1732d25f6928",
+    "f395dda6ee18",
+    "db94e83ac97f",
+    "58c1515edc0c",
+    "31b0c9ca0d16",
+    "a84c882a30d3",
+    "27b3b1f5e368",
+    "9e0ec231bca9",
+    "dddd626fcb68",
+    "556c717632da",
+    "167d9c05b073",
+    "10df18b5dd34",
+    "4adab681a9c0",
+    "bc0feacfd919"
   ],
   "failed_ids": {
-    "1179fbb20829": "2026-05-25T20:22:22.025353+00:00",
-    "4cb40b19733a": "2026-05-25T20:22:22.025353+00:00",
-    "9fb06f696c9b": "2026-05-25T20:22:22.025353+00:00",
-    "753f5fefe554": "2026-05-25T20:22:22.025353+00:00",
-    "df618b730229": "2026-05-25T20:22:22.025353+00:00",
-    "6ccc42875999": "2026-05-25T20:22:22.025353+00:00",
-    "74dc25c04789": "2026-05-25T20:22:22.025353+00:00",
     "c331a76ab20a": "2026-05-25T21:40:05.756004+00:00",
     "cfe06fc8c906": "2026-05-25T21:40:05.756004+00:00",
     "50a55c8deac0": "2026-05-25T21:40:05.756004+00:00",
@@ -531,49 +524,22 @@
     "480fa305b4e3": "2026-05-25T23:46:10.870454+00:00",
     "030d6c0e3521": "2026-05-25T23:46:10.870454+00:00",
     "e5d697d8aaa5": "2026-05-25T23:46:10.870454+00:00",
-    "154384660dc7": "2026-05-25T23:46:10.870454+00:00"
+    "154384660dc7": "2026-05-25T23:46:10.870454+00:00",
+    "426d84782ca9": "2026-05-26T01:33:26.885579+00:00",
+    "35d6596191ef": "2026-05-26T01:33:26.885579+00:00",
+    "267c5721b373": "2026-05-26T01:33:26.885579+00:00",
+    "d2afe6d01c5c": "2026-05-26T01:33:26.885579+00:00",
+    "6935a138ddbf": "2026-05-26T01:33:26.885579+00:00",
+    "a02251c14001": "2026-05-26T01:33:26.885579+00:00",
+    "d37cca251591": "2026-05-26T01:33:26.885579+00:00",
+    "7492556610f4": "2026-05-26T01:33:26.885579+00:00"
   },
   "live_clusters": {
-    "4835d4c4b97bf93b": {
-      "topic": "Chelsea Football Club News",
-      "item_ids": [
-        "01412404421b"
-      ],
-      "created_at": "2026-05-25T00:12:05.968141+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "514018a7d6f70543": {
-      "topic": "Amber Rose Celebrity News",
-      "item_ids": [
-        "a8ba3e3f66ce"
-      ],
-      "created_at": "2026-05-25T00:12:05.968141+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4970e6660702cbdf": {
-      "topic": "Canadian Grand Prix 2026 Racing",
-      "item_ids": [
-        "58325559c8fd"
-      ],
-      "created_at": "2026-05-25T00:12:05.968141+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "08a29cea7573e71f": {
-      "topic": "Taylor Fritz Tennis",
-      "item_ids": [
-        "fbd574fbad3f"
-      ],
-      "created_at": "2026-05-25T00:12:05.968141+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "720881f655e1968e": {
       "topic": "Fujitsu Multi-AI Agent Self-Evolving Technology",
       "item_ids": [
-        "5e619dae7a3e"
+        "5e619dae7a3e",
+        "9e0ec231bca9"
       ],
       "created_at": "2026-05-25T04:53:05.362928+00:00",
       "last_escalated_size": 0,
@@ -695,13 +661,25 @@
         "d48e41fe4a9e",
         "c4bee372dd35",
         "32cfd91d24e5",
-        "9a9d6a74cec4"
+        "9a9d6a74cec4",
+        "1d2d51e080b1",
+        "3d177534648c",
+        "df27f63057b1",
+        "14aa34ac4672",
+        "3744210972fb",
+        "1732d25f6928",
+        "f395dda6ee18",
+        "db94e83ac97f",
+        "58c1515edc0c",
+        "31b0c9ca0d16",
+        "a84c882a30d3",
+        "27b3b1f5e368"
       ],
       "created_at": "2026-05-25T15:31:06.368097+00:00",
-      "last_escalated_size": 10,
-      "last_escalated_at": "2026-05-25T23:46:10.870454+00:00",
+      "last_escalated_size": 22,
+      "last_escalated_at": "2026-05-26T01:33:26.885579+00:00",
       "picks_file": "picks/picks-2026-05-25-2241.md",
-      "why_text": "The 2026 AMAs are unfolding in real time, with a notably genre-fluid lineup \u2014 country's Russell Dickerson linking up with Fetty Wap, K-pop/Latin hybrid REI AMI teasing new music, and global girl groups XG and KATSEYE sharing the same stage conversation alongside the Jonas Brothers. It's a snapshot of exactly how fractured and cross-pollinated pop culture has become: the AMAs, once a mainstream barometer, now reads more like a festival of niches colliding. The convergence of these signals mid-show means the moments are landing \u2014 people are watching and talking.\n**Update 6:46 PM CT:** Winners are now being confirmed across categories as the full list takes shape live, while the show keeps building momentum off-stage too \u2014 Ludacris teased a new album alongside his 'Pull Over' video drop, EJAE revealed she's heading to Coachella with KATSEYE, and Sombr reflected on a breakout run that's taken her from the Grammys to this AMAs stage, adding another layer to an already stacked night of debuts and announcements.",
+      "why_text": "The 2026 AMAs are unfolding in real time, with a notably genre-fluid lineup \u2014 country's Russell Dickerson linking up with Fetty Wap, K-pop/Latin hybrid REI AMI teasing new music, and global girl groups XG and KATSEYE sharing the same stage conversation alongside the Jonas Brothers. It's a snapshot of exactly how fractured and cross-pollinated pop culture has become: the AMAs, once a mainstream barometer, now reads more like a festival of niches colliding. The convergence of these signals mid-show means the moments are landing \u2014 people are watching and talking.\n**Update 6:46 PM CT:** Winners are now being confirmed across categories as the full list takes shape live, while the show keeps building momentum off-stage too \u2014 Ludacris teased a new album alongside his 'Pull Over' video drop, EJAE revealed she's heading to Coachella with KATSEYE, and Sombr reflected on a breakout run that's taken her from the Grammys to this AMAs stage, adding another layer to an already stacked night of debuts and announcements.\n**Update 8:33 PM CT:** **Update 7:12 PM CT:** The show's biggest performance moments are now coming into focus \u2014 Sombr turned 'Homewrecker' into a full rain-soaked spectacle and claimed the night's first win, BTS brought the 'Hooligan' video to life on stage, Karol G delivered an ethereal 'Ivonny Bonita' set while teasing her upcoming tour, and Hootie and the Blowfish marked a notable comeback with a crowd-pleasing medley, while off-stage GloRilla teased collabs on a new summer album and Leon Thomas spoke on touring with Bruno Mars.",
       "last_escalated_item_ids": [
         "02006654a28b",
         "4086e10ecf28",
@@ -712,7 +690,19 @@
         "d48e41fe4a9e",
         "c4bee372dd35",
         "32cfd91d24e5",
-        "9a9d6a74cec4"
+        "9a9d6a74cec4",
+        "1d2d51e080b1",
+        "3d177534648c",
+        "df27f63057b1",
+        "14aa34ac4672",
+        "3744210972fb",
+        "1732d25f6928",
+        "f395dda6ee18",
+        "db94e83ac97f",
+        "58c1515edc0c",
+        "31b0c9ca0d16",
+        "a84c882a30d3",
+        "27b3b1f5e368"
       ]
     },
     "48ed72a3a4f63adb": {
@@ -1004,7 +994,16 @@
       "created_at": "2026-05-25T22:41:59.976189+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "d1eed2d60a5c1e86": {
+      "topic": "Accenture Invests in Aera Technology Agentic AI Supply Chain",
+      "item_ids": [
+        "dddd626fcb68"
+      ],
+      "created_at": "2026-05-26T01:33:59.549227+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-25T23:46:46.708872+00:00"
+  "last_checked": "2026-05-26T01:34:04.038777+00:00"
 }
