@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-25] Fix: stronger dedup prompt + switch to Haiku for post-scoring dedup
+
+`deduplicate_after_scoring()` had two issues: (1) the "one single thing that happened" test let reaction pieces and analysis articles through as "different stories," and (2) it was using Sonnet for a simple pattern-matching task. Fixed: expanded the grouping rules to explicitly include reaction pieces, multi-outlet coverage, and any articles sharing the same person + topic in the same news cycle. Switched the dedup model from `claude-sonnet-4-6` to `claude-haiku-4-5-20251001` — same accuracy for this task, ~20× cheaper, max_tokens reduced 2048→1024.
+
 ## [2026-05-25] Fix: cross-run and within-run clustering now catches named-entity stories
 
 Two clustering bugs caused same-story articles (e.g. multiple Pope Leo AI encyclical pieces) to survive as separate picks across runs. Fixed:

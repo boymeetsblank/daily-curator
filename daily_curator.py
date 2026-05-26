@@ -1913,9 +1913,13 @@ def deduplicate_after_scoring(articles: list[dict], published_today: list[str] |
 CURRENT ARTICLES:
 {articles_text}
 Your job:
-1. Identify groups of CURRENT articles about the same underlying event. Use this test: did these articles all exist because of one single thing that happened? If yes, they are the same story — group them regardless of angle differences. A filing that produced three distinct headlines is one event. A death announcement + cause-of-death reveal = one event. A game result covered from multiple angles is one event.
+1. Identify groups of CURRENT articles about the same underlying event. Use this test: would these articles still have been written if the triggering event hadn't happened? If no — they're the same story. Group them regardless of angle. These all count as one story:
+   - The initial report + reaction pieces + analysis + "what this means" coverage
+   - Coverage from multiple outlets of the same announcement, release, or action
+   - Follow-up details, cause-of-death reveals, or context pieces about the same event
+   - Any article whose headline includes the same person's name AND the same general topic (e.g. "Pope Leo AI" articles are one story)
 2. Also flag any CURRENT article that covers the same underlying event as something ALREADY IN THE FEED TODAY. Group it with topic "ALREADY COVERED: <matching title>".
-3. Do NOT group articles that are merely in the same category. They must trace back to the same specific occurrence.
+3. Do NOT group articles that are merely in the same category (e.g. two unrelated sports stories). They must trace back to the same specific occurrence or news cycle.
 
 Return ONLY valid JSON in this exact format, with no other text:
 
@@ -1938,8 +1942,8 @@ If no duplicates exist, return:
     def _call(p):
         try:
             return client.messages.create(
-                model="claude-sonnet-4-6",
-                max_tokens=2048,
+                model="claude-haiku-4-5-20251001",
+                max_tokens=1024,
                 messages=[{"role": "user", "content": p}]
             ).content[0].text.strip()
         except Exception as e:
