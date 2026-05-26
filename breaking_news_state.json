@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "7bdeb4910f5c",
-    "afd7e6fb33b8",
-    "4a77ae9ab06b",
-    "049609b07c31",
-    "bc7c9b4e4932",
-    "7f38be23843e",
-    "54e048defc2b",
-    "3a2f79c571bd",
-    "a1268c814e7a",
-    "20224850697b",
-    "83f73dc99ba1",
-    "b8fb2a6428ef",
-    "02b1a371f955",
-    "a0039b0414d2",
     "9f49640fa0fa",
     "158c8b550677",
     "bea26c081730",
@@ -499,7 +485,21 @@
     "2f752221c32e",
     "dbf841a4b2ed",
     "b5084be8083f",
-    "3ff2b7c76983"
+    "3ff2b7c76983",
+    "f7b0d0bb057c",
+    "6d62ee76f180",
+    "893d84c658eb",
+    "e90ba2871ffa",
+    "041a0b850011",
+    "d7968e492b5c",
+    "da0822344b5b",
+    "916773c5f866",
+    "b3a3b4a4cc7d",
+    "f3cc136e052b",
+    "42e02a73cdda",
+    "46cb43ecf337",
+    "0c203c9ea214",
+    "98ec13bed4da"
   ],
   "failed_ids": {
     "1a6f0e33ddc6": "2026-05-26T18:37:49.056222+00:00",
@@ -531,7 +531,27 @@
     "0e3d6bdd1a73": "2026-05-26T20:34:45.337189+00:00",
     "a5f624d79a74": "2026-05-26T20:34:45.337189+00:00",
     "677b6ae7871d": "2026-05-26T20:34:45.337189+00:00",
-    "f49e1ac9b079": "2026-05-26T20:34:45.337189+00:00"
+    "f49e1ac9b079": "2026-05-26T20:34:45.337189+00:00",
+    "4f10a9ab6b8c": "2026-05-26T22:09:30.721685+00:00",
+    "7acc4d1f0526": "2026-05-26T22:09:30.721685+00:00",
+    "4ced7484a6e3": "2026-05-26T22:09:30.721685+00:00",
+    "ec54900c5c2d": "2026-05-26T22:09:30.721685+00:00",
+    "091cb5eef6d5": "2026-05-26T22:09:30.721685+00:00",
+    "99105d43bf32": "2026-05-26T22:09:30.721685+00:00",
+    "321a9bfed3e1": "2026-05-26T22:09:30.721685+00:00",
+    "87d9187bbb2c": "2026-05-26T22:09:30.721685+00:00",
+    "091cbf243a32": "2026-05-26T22:09:30.721685+00:00",
+    "b3e528a27027": "2026-05-26T22:09:30.721685+00:00",
+    "529fc364c00d": "2026-05-26T22:09:30.721685+00:00",
+    "abf9b1246ae8": "2026-05-26T22:09:30.721685+00:00",
+    "8f431a2ea37f": "2026-05-26T22:09:30.721685+00:00",
+    "b2adb8fd595e": "2026-05-26T22:09:30.721685+00:00",
+    "0eaeb97f6207": "2026-05-26T22:09:30.721685+00:00",
+    "be30cf32f365": "2026-05-26T22:09:30.721685+00:00",
+    "e7b92c077d7e": "2026-05-26T22:09:30.721685+00:00",
+    "a6aff2e4def7": "2026-05-26T22:09:30.721685+00:00",
+    "f5045979ea1b": "2026-05-26T22:09:30.721685+00:00",
+    "d3527a5bb6dd": "2026-05-26T22:09:30.721685+00:00"
   },
   "live_clusters": {
     "570126de55eae355": {
@@ -937,7 +957,8 @@
     "5cd89d6531c1fc27": {
       "topic": "A Ma Mani\u00e9re Nike Pegasus Premium Collaboration",
       "item_ids": [
-        "ceb2fbec04ce"
+        "ceb2fbec04ce",
+        "f7b0d0bb057c"
       ],
       "created_at": "2026-05-26T18:38:27.061366+00:00",
       "last_escalated_size": 0,
@@ -1172,7 +1193,8 @@
     "85166d4927c60df6": {
       "topic": "J. Cole Cam'ron Ready '24' Lawsuit Settlement",
       "item_ids": [
-        "16351529b8ce"
+        "16351529b8ce",
+        "b3a3b4a4cc7d"
       ],
       "created_at": "2026-05-26T20:35:18.028428+00:00",
       "last_escalated_size": 0,
@@ -1222,7 +1244,115 @@
       "created_at": "2026-05-26T20:35:18.028428+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "052c4640efd3a9d7": {
+      "topic": "New Balance 1300 Slate Grey Pebbled Leather Release",
+      "item_ids": [
+        "6d62ee76f180"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5327bdd69acc5077": {
+      "topic": "CBS Evening News Viewership Milestone",
+      "item_ids": [
+        "893d84c658eb"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "791fccb7f3eb6e99": {
+      "topic": "Jim Jones Cam'ron Verzuz Challenge",
+      "item_ids": [
+        "e90ba2871ffa"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "94bf1e360c46e55d": {
+      "topic": "BTS Limited Edition Cookie Collaboration",
+      "item_ids": [
+        "041a0b850011"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "46a26657e369d32e": {
+      "topic": "Billboard Chart Records Comparison Analysis",
+      "item_ids": [
+        "d7968e492b5c"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63c14d8bce56cd2a": {
+      "topic": "Warehouse Project 20-Year Anniversary Celebrations",
+      "item_ids": [
+        "da0822344b5b"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ca7fd3b6b28d2b60": {
+      "topic": "Olivia Rodrigo Barcelona Concert Film",
+      "item_ids": [
+        "916773c5f866"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ff9c7160cf3148e3": {
+      "topic": "Nemesis Netflix Series Performance",
+      "item_ids": [
+        "f3cc136e052b"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5f50c5e3a214b9d9": {
+      "topic": "Everybody To Kenmure Street Documentary Film",
+      "item_ids": [
+        "42e02a73cdda"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a13ee414f87ebbb9": {
+      "topic": "Dive Into You Rakuten Viki K-Drama Cast",
+      "item_ids": [
+        "46cb43ecf337"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f020597cd16a68cf": {
+      "topic": "PC Makers Response to Apple MacBook Neo",
+      "item_ids": [
+        "0c203c9ea214"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5bd97408d48d5503": {
+      "topic": "Apple Stock Performance Market Test",
+      "item_ids": [
+        "98ec13bed4da"
+      ],
+      "created_at": "2026-05-26T22:10:01.495218+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-26T20:35:18.029575+00:00"
+  "last_checked": "2026-05-26T22:10:01.496395+00:00"
 }
