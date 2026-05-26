@@ -1,23 +1,5 @@
 {
   "known_ids": [
-    "bacf225e4162",
-    "6c5a5bf05022",
-    "51f378415b02",
-    "2c65206999cc",
-    "633252d012b6",
-    "8c8f46eef5e9",
-    "d6d1ba70bb7a",
-    "e882245c74ae",
-    "30323ec33944",
-    "02d7d6252531",
-    "d86cad5121bf",
-    "7e5f58c568fd",
-    "f82d59e44230",
-    "45a135a35341",
-    "35fd86d96db8",
-    "7aa227e6ab1a",
-    "43c782012c40",
-    "324260636e1c",
     "f4c5132e73bc",
     "8a94c2c63ea3",
     "68d4611f4d3c",
@@ -499,7 +481,25 @@
     "950ccceed53b",
     "ed1ec9675868",
     "2c6d426c37c8",
-    "20e44f33c535"
+    "20e44f33c535",
+    "8f95215fade1",
+    "4b3ea3790ef7",
+    "2521249baea9",
+    "70212c136502",
+    "b7c427cf1b68",
+    "cd825953e41f",
+    "cac3e445a90c",
+    "73fd364859c9",
+    "024297172a19",
+    "7a80c04d75a4",
+    "f801b9a9c725",
+    "c5b80f26fee3",
+    "717095031113",
+    "3cdde26fee53",
+    "3d734085a1d7",
+    "4b129cd8bf48",
+    "51fc492a31d7",
+    "817adde2c204"
   ],
   "failed_ids": {
     "d2afe6d01c5c": "2026-05-26T05:48:18.870396+00:00",
@@ -507,54 +507,14 @@
     "5e117e826905": "2026-05-26T05:48:18.870396+00:00",
     "203238364908": "2026-05-26T05:48:18.870396+00:00",
     "f8a023956ff9": "2026-05-26T05:48:18.870396+00:00",
-    "f809c6e5e9dc": "2026-05-26T05:48:18.870396+00:00"
+    "f809c6e5e9dc": "2026-05-26T05:48:18.870396+00:00",
+    "a8a57ff6ebdc": "2026-05-26T08:58:28.402001+00:00",
+    "da5c550db11e": "2026-05-26T08:58:28.402001+00:00",
+    "d60a5b6fd14e": "2026-05-26T08:58:28.402001+00:00",
+    "6935a138ddbf": "2026-05-26T08:58:28.402001+00:00",
+    "ac499eba6cdb": "2026-05-26T08:58:28.402001+00:00"
   },
   "live_clusters": {
-    "0bb0dfd493d6e45b": {
-      "topic": "Cuba Gooding Jr. Luke Ford Keith Duffy 'Lotus' Action Thriller Cast",
-      "item_ids": [
-        "6602eb3e0925"
-      ],
-      "created_at": "2026-05-25T08:50:51.744124+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0bc5ae851c808d69": {
-      "topic": "Bruno Dumont 'Red Rocks' Film Review",
-      "item_ids": [
-        "64238ab67cc8"
-      ],
-      "created_at": "2026-05-25T08:50:51.744124+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d8f133602e45d768": {
-      "topic": "'A Girl Unknown' Period Drama Review China One-Child Policy",
-      "item_ids": [
-        "19e390ad0c5e"
-      ],
-      "created_at": "2026-05-25T08:50:51.744124+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f78fb9cb9342f794": {
-      "topic": "Yeon Sang-ho 'Colony' Korea Box Office No. 1 Cannes Midnight",
-      "item_ids": [
-        "3f69ea220c9b"
-      ],
-      "created_at": "2026-05-25T08:50:51.744124+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "30ccc5e667e83ed3": {
-      "topic": "Antonin Baudry 'De Gaulle: R\u00e9sistance' Wartime Biopic Review",
-      "item_ids": [
-        "06f6d857b8b5"
-      ],
-      "created_at": "2026-05-25T08:50:51.744124+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "2093ffb49b1469c3": {
       "topic": "Privacy-Focused Gay Dating Apps Challenge Grindr",
       "item_ids": [
@@ -632,7 +592,8 @@
         "27b3b1f5e368",
         "802f03a0faad",
         "f049c1847fd8",
-        "950ccceed53b"
+        "950ccceed53b",
+        "2521249baea9"
       ],
       "created_at": "2026-05-25T15:31:06.368097+00:00",
       "last_escalated_size": 25,
@@ -974,7 +935,79 @@
       "created_at": "2026-05-26T05:48:47.578762+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1a95bc29a1653944": {
+      "topic": "Naseeruddin Shah Jim Sarbh Amazon MX Player 'Made in India: A Titan Story' Series",
+      "item_ids": [
+        "8f95215fade1"
+      ],
+      "created_at": "2026-05-26T08:59:01.383260+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "982484b4192cd462": {
+      "topic": "Rise Against Dropkick Murphys Australian New Zealand Tour",
+      "item_ids": [
+        "4b3ea3790ef7"
+      ],
+      "created_at": "2026-05-26T08:59:01.383260+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "caf2862b5c4f5273": {
+      "topic": "Netflix Brazilian Medical Drama 'MED' Original Series",
+      "item_ids": [
+        "70212c136502"
+      ],
+      "created_at": "2026-05-26T08:59:01.383260+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "34a1295fae54b5e8": {
+      "topic": "Russell T. Davies Queer Drama 'Tip Toe' American Version Lead Casting",
+      "item_ids": [
+        "b7c427cf1b68"
+      ],
+      "created_at": "2026-05-26T08:59:01.383260+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b3de059bd545ef07": {
+      "topic": "Banijay Norway 'The Comedy League' Format",
+      "item_ids": [
+        "cd825953e41f"
+      ],
+      "created_at": "2026-05-26T08:59:01.383260+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3b6bdc3b5da2cfee": {
+      "topic": "Philippines Academy Oscars Campaign Reform Film Worker Protections",
+      "item_ids": [
+        "cac3e445a90c"
+      ],
+      "created_at": "2026-05-26T08:59:01.383260+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5ade04d956e8a586": {
+      "topic": "Ferrari First Fully Electric Vehicle Launch Stock Drop",
+      "item_ids": [
+        "024297172a19"
+      ],
+      "created_at": "2026-05-26T08:59:01.383260+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fb19fedd1beb5075": {
+      "topic": "Poznan University of Technology IQM Quantum Computer Installation",
+      "item_ids": [
+        "c5b80f26fee3"
+      ],
+      "created_at": "2026-05-26T08:59:01.383260+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-26T05:48:51.262408+00:00"
+  "last_checked": "2026-05-26T08:59:01.384106+00:00"
 }
