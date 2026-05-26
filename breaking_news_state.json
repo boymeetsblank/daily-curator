@@ -1,13 +1,5 @@
 {
   "known_ids": [
-    "dd91373291c4",
-    "965033573ac7",
-    "46d710a3df37",
-    "15c70da34b2e",
-    "9d5c534e14fe",
-    "9c5447998b1b",
-    "1c6a7fb1380c",
-    "79d8f576a4c6",
     "bacf225e4162",
     "6c5a5bf05022",
     "51f378415b02",
@@ -499,61 +491,25 @@
     "167d9c05b073",
     "10df18b5dd34",
     "4adab681a9c0",
-    "bc0feacfd919"
+    "bc0feacfd919",
+    "802f03a0faad",
+    "cd5c18cee754",
+    "f049c1847fd8",
+    "c96f958ea47f",
+    "950ccceed53b",
+    "ed1ec9675868",
+    "2c6d426c37c8",
+    "20e44f33c535"
   ],
   "failed_ids": {
-    "c331a76ab20a": "2026-05-25T21:40:05.756004+00:00",
-    "cfe06fc8c906": "2026-05-25T21:40:05.756004+00:00",
-    "50a55c8deac0": "2026-05-25T21:40:05.756004+00:00",
-    "75cf6a99db11": "2026-05-25T21:40:05.756004+00:00",
-    "c80a8cb25fbc": "2026-05-25T21:40:05.756004+00:00",
-    "a159563e5e70": "2026-05-25T21:40:05.756004+00:00",
-    "a6cb34f73ecc": "2026-05-25T21:40:05.756004+00:00",
-    "40bef2674617": "2026-05-25T22:41:32.273639+00:00",
-    "0146862059e7": "2026-05-25T22:41:32.273639+00:00",
-    "d74bbc54517d": "2026-05-25T22:41:32.273639+00:00",
-    "e9d015b6e4e7": "2026-05-25T22:41:32.273639+00:00",
-    "3b06268aafd1": "2026-05-25T22:41:32.273639+00:00",
-    "ab2937944554": "2026-05-25T22:41:32.273639+00:00",
-    "9ede6aa59fa5": "2026-05-25T22:41:32.273639+00:00",
-    "c04de33d0f07": "2026-05-25T22:41:32.273639+00:00",
-    "3fabc68cac90": "2026-05-25T23:46:10.870454+00:00",
-    "e26319796a32": "2026-05-25T23:46:10.870454+00:00",
-    "0629d28e8969": "2026-05-25T23:46:10.870454+00:00",
-    "b092e062fe4b": "2026-05-25T23:46:10.870454+00:00",
-    "480fa305b4e3": "2026-05-25T23:46:10.870454+00:00",
-    "030d6c0e3521": "2026-05-25T23:46:10.870454+00:00",
-    "e5d697d8aaa5": "2026-05-25T23:46:10.870454+00:00",
-    "154384660dc7": "2026-05-25T23:46:10.870454+00:00",
-    "426d84782ca9": "2026-05-26T01:33:26.885579+00:00",
-    "35d6596191ef": "2026-05-26T01:33:26.885579+00:00",
-    "267c5721b373": "2026-05-26T01:33:26.885579+00:00",
-    "d2afe6d01c5c": "2026-05-26T01:33:26.885579+00:00",
-    "6935a138ddbf": "2026-05-26T01:33:26.885579+00:00",
-    "a02251c14001": "2026-05-26T01:33:26.885579+00:00",
-    "d37cca251591": "2026-05-26T01:33:26.885579+00:00",
-    "7492556610f4": "2026-05-26T01:33:26.885579+00:00"
+    "d2afe6d01c5c": "2026-05-26T05:48:18.870396+00:00",
+    "c05acc242f61": "2026-05-26T05:48:18.870396+00:00",
+    "5e117e826905": "2026-05-26T05:48:18.870396+00:00",
+    "203238364908": "2026-05-26T05:48:18.870396+00:00",
+    "f8a023956ff9": "2026-05-26T05:48:18.870396+00:00",
+    "f809c6e5e9dc": "2026-05-26T05:48:18.870396+00:00"
   },
   "live_clusters": {
-    "720881f655e1968e": {
-      "topic": "Fujitsu Multi-AI Agent Self-Evolving Technology",
-      "item_ids": [
-        "5e619dae7a3e",
-        "9e0ec231bca9"
-      ],
-      "created_at": "2026-05-25T04:53:05.362928+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "48da8164cdb8cb98": {
-      "topic": "AI Pilots Aviation Flight Technology Testing",
-      "item_ids": [
-        "72ef5970cb0a"
-      ],
-      "created_at": "2026-05-25T04:53:05.362928+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "0bb0dfd493d6e45b": {
       "topic": "Cuba Gooding Jr. Luke Ford Keith Duffy 'Lotus' Action Thriller Cast",
       "item_ids": [
@@ -673,13 +629,16 @@
         "58c1515edc0c",
         "31b0c9ca0d16",
         "a84c882a30d3",
-        "27b3b1f5e368"
+        "27b3b1f5e368",
+        "802f03a0faad",
+        "f049c1847fd8",
+        "950ccceed53b"
       ],
       "created_at": "2026-05-25T15:31:06.368097+00:00",
-      "last_escalated_size": 22,
-      "last_escalated_at": "2026-05-26T01:33:26.885579+00:00",
+      "last_escalated_size": 25,
+      "last_escalated_at": "2026-05-26T05:48:18.870396+00:00",
       "picks_file": "picks/picks-2026-05-25-2241.md",
-      "why_text": "The 2026 AMAs are unfolding in real time, with a notably genre-fluid lineup \u2014 country's Russell Dickerson linking up with Fetty Wap, K-pop/Latin hybrid REI AMI teasing new music, and global girl groups XG and KATSEYE sharing the same stage conversation alongside the Jonas Brothers. It's a snapshot of exactly how fractured and cross-pollinated pop culture has become: the AMAs, once a mainstream barometer, now reads more like a festival of niches colliding. The convergence of these signals mid-show means the moments are landing \u2014 people are watching and talking.\n**Update 6:46 PM CT:** Winners are now being confirmed across categories as the full list takes shape live, while the show keeps building momentum off-stage too \u2014 Ludacris teased a new album alongside his 'Pull Over' video drop, EJAE revealed she's heading to Coachella with KATSEYE, and Sombr reflected on a breakout run that's taken her from the Grammys to this AMAs stage, adding another layer to an already stacked night of debuts and announcements.\n**Update 8:33 PM CT:** **Update 7:12 PM CT:** The show's biggest performance moments are now coming into focus \u2014 Sombr turned 'Homewrecker' into a full rain-soaked spectacle and claimed the night's first win, BTS brought the 'Hooligan' video to life on stage, Karol G delivered an ethereal 'Ivonny Bonita' set while teasing her upcoming tour, and Hootie and the Blowfish marked a notable comeback with a crowd-pleasing medley, while off-stage GloRilla teased collabs on a new summer album and Leon Thomas spoke on touring with Bruno Mars.",
+      "why_text": "The 2026 AMAs are unfolding in real time, with a notably genre-fluid lineup \u2014 country's Russell Dickerson linking up with Fetty Wap, K-pop/Latin hybrid REI AMI teasing new music, and global girl groups XG and KATSEYE sharing the same stage conversation alongside the Jonas Brothers. It's a snapshot of exactly how fractured and cross-pollinated pop culture has become: the AMAs, once a mainstream barometer, now reads more like a festival of niches colliding. The convergence of these signals mid-show means the moments are landing \u2014 people are watching and talking.\n**Update 6:46 PM CT:** Winners are now being confirmed across categories as the full list takes shape live, while the show keeps building momentum off-stage too \u2014 Ludacris teased a new album alongside his 'Pull Over' video drop, EJAE revealed she's heading to Coachella with KATSEYE, and Sombr reflected on a breakout run that's taken her from the Grammys to this AMAs stage, adding another layer to an already stacked night of debuts and announcements.\n**Update 8:33 PM CT:** **Update 7:12 PM CT:** The show's biggest performance moments are now coming into focus \u2014 Sombr turned 'Homewrecker' into a full rain-soaked spectacle and claimed the night's first win, BTS brought the 'Hooligan' video to life on stage, Karol G delivered an ethereal 'Ivonny Bonita' set while teasing her upcoming tour, and Hootie and the Blowfish marked a notable comeback with a crowd-pleasing medley, while off-stage GloRilla teased collabs on a new summer album and Leon Thomas spoke on touring with Bruno Mars.\n**Update 12:48 AM CT:** **Update 9:15 PM CT:** The night's defining narrative is now official \u2014 BTS took home Artist of the Year, the show's top honor, while Taylor Swift went 0-8 in a stunning shutout that's already dominating conversation on X and will likely be the AMAs headline come morning; Billboard has the full performance rankings live as the show wraps.",
       "last_escalated_item_ids": [
         "02006654a28b",
         "4086e10ecf28",
@@ -702,7 +661,10 @@
         "58c1515edc0c",
         "31b0c9ca0d16",
         "a84c882a30d3",
-        "27b3b1f5e368"
+        "27b3b1f5e368",
+        "802f03a0faad",
+        "f049c1847fd8",
+        "950ccceed53b"
       ]
     },
     "48ed72a3a4f63adb": {
@@ -1003,7 +965,16 @@
       "created_at": "2026-05-26T01:33:59.549227+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "6ea65fbf7ccb0d48": {
+      "topic": "Dom Dolla AFL Grand Final Eve Concert Melbourne",
+      "item_ids": [
+        "cd5c18cee754"
+      ],
+      "created_at": "2026-05-26T05:48:47.578762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-26T01:34:04.038777+00:00"
+  "last_checked": "2026-05-26T05:48:51.262408+00:00"
 }

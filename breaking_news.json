@@ -1,6 +1,90 @@
 {
   "items": [
     {
+      "id": "802f03a0faad",
+      "topic": "BTS Wins Artist of the Year at 2026 American Music Awards; Taylor Swift Goes 0-8",
+      "traffic": "",
+      "detected_at": "2026-05-26T05:48:18.870396+00:00",
+      "search_url": "https://www.billboard.com/music/awards/bts-makes-amas-history-with-record-breaking-win-1236256463/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "631e8e12ba04887b"
+    },
+    {
+      "id": "cd5c18cee754",
+      "topic": "Dom Dolla to Headline Marvel Stadium in Melbourne for AFL Grand Final Eve Show",
+      "traffic": "",
+      "detected_at": "2026-05-26T05:48:18.870396+00:00",
+      "search_url": "https://www.billboard.com/music/music-news/dom-dolla-marvel-stadium-afl-grand-final-eve-show-1236256644/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "6ea65fbf7ccb0d48"
+    },
+    {
+      "id": "f049c1847fd8",
+      "topic": "All of the 2026 AMAs Performances, Ranked",
+      "traffic": "",
+      "detected_at": "2026-05-26T05:48:18.870396+00:00",
+      "search_url": "https://www.billboard.com/lists/amas-2026-performances-ranked-best-song/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "631e8e12ba04887b"
+    },
+    {
+      "id": "c96f958ea47f",
+      "topic": "Harden",
+      "traffic": "##3 on X",
+      "detected_at": "2026-05-26T05:48:18.870396+00:00",
+      "search_url": "https://x.com/search?q=Harden&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "950ccceed53b",
+      "topic": "#AMAs",
+      "traffic": "##4 on X",
+      "detected_at": "2026-05-26T05:48:18.870396+00:00",
+      "search_url": "https://x.com/search?q=%23AMAs&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6,
+      "cluster_id": "631e8e12ba04887b"
+    },
+    {
+      "id": "ed1ec9675868",
+      "topic": "#WWERaw",
+      "traffic": "##5 on X",
+      "detected_at": "2026-05-26T05:48:18.870396+00:00",
+      "search_url": "https://x.com/search?q=%23WWERaw&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "2c6d426c37c8",
+      "topic": "Canes",
+      "traffic": "##6 on X",
+      "detected_at": "2026-05-26T05:48:18.870396+00:00",
+      "search_url": "https://x.com/search?q=Canes&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "20e44f33c535",
+      "topic": "Ferrari",
+      "traffic": "##7 on X",
+      "detected_at": "2026-05-26T05:48:18.870396+00:00",
+      "search_url": "https://x.com/search?q=Ferrari&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "1d2d51e080b1",
       "topic": "Sombr Makes It Rain at the American Music Awards With Splashy Version of ‘Homewrecker’",
       "traffic": "",
@@ -344,87 +428,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 5
-    },
-    {
-      "id": "02acce907a94",
-      "topic": "Kurt Cobain’s ‘Foxes’ T-Shirt Being Auctioned by Hole’s Patty Schemel",
-      "traffic": "",
-      "detected_at": "2026-05-25T21:40:05.756004+00:00",
-      "search_url": "https://www.billboard.com/music/music-news/kurt-cobain-foxes-shirt-auction-patty-schemel-hole-1236256153/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "11464c3ffec5",
-      "topic": "Films Are More Likely To Star Actors Named Chris Or A Talking Animal Than Women Over 60, UK Anti-Ageism Analysis Finds",
-      "traffic": "",
-      "detected_at": "2026-05-25T21:40:05.756004+00:00",
-      "search_url": "https://deadline.com/2026/05/films-star-actors-named-chris-talking-animal-older-women-1236920528/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "da5efefcd4d7",
-      "topic": "Misiorowski hits 100 mph 57 times in 12-K gem",
-      "traffic": "",
-      "detected_at": "2026-05-25T21:40:05.756004+00:00",
-      "search_url": "https://www.espn.com/mlb/story/_/id/48874861/brewers-misiorowski-hits-100-mph-57-s-fans-12-gem",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "8be2caf8ace9",
-      "topic": "Lakers hire 'rocket scientist' as assistant GM",
-      "traffic": "",
-      "detected_at": "2026-05-25T21:40:05.756004+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/48845975/sources-lakers-hire-rohan-ramadas-assistant-general-manager",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "789891d1bebf",
-      "topic": "Jays' Cease heading to IL with hamstring strain",
-      "traffic": "",
-      "detected_at": "2026-05-25T21:40:05.756004+00:00",
-      "search_url": "https://www.espn.com/mlb/story/_/id/48874786/blue-jays-dylan-cease-heading-il-hamstring-strain",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "02ba4d0f21c5",
-      "topic": "UCLA tabbed top seed for NCAA baseball tourney",
-      "traffic": "",
-      "detected_at": "2026-05-25T21:40:05.756004+00:00",
-      "search_url": "https://www.espn.com/college-sports/story/_/id/48873507/ucla-51-6-earns-top-seed-ncaa-baseball-tournament",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "aed3b0dc6d53",
-      "topic": "The Electric Ferrari Luce Is Finally Here",
-      "traffic": "",
-      "detected_at": "2026-05-25T21:40:05.756004+00:00",
-      "search_url": "https://www.wired.com/story/ferrari-luce-ev-is-finally-here/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "51a6f8e52dff",
-      "topic": "Visualizing Cody Bellinger's swing using bat tracking technology - MLB.com",
-      "traffic": "",
-      "detected_at": "2026-05-25T21:40:05.756004+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdXM4Q0JnQmdlcXhKaDBTX2U0LTI1bTRXMVNsemEwamVlamh6ZXVDR3o4Q3NVbW9nRzI4MjlkLWhSSVlZQzFWSDdIel8zMmo2X25ENkw1X3FBSVNFaUE0dXA3Zmh1dHN0NzZqaU9tM2gzOWxQUTBRMTNSVjJrWTNRQjBWV0k3ZVBTLUhPRXI5bXhWZDN3M2RfT1JHNUY?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 5
     }
   ],
-  "last_checked": "2026-05-26T01:33:26.885579+00:00"
+  "last_checked": "2026-05-26T05:48:18.870396+00:00"
 }
