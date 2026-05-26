@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "9f49640fa0fa",
-    "158c8b550677",
-    "bea26c081730",
-    "b759c03e7104",
-    "f1c23ab3b281",
-    "bdafd9b88561",
-    "54abb870830b",
-    "8bc3f682fbda",
-    "20a46dfc0a07",
-    "58417b834aad",
-    "a9d9190a523c",
-    "32e0243942b6",
-    "85b6e7147c49",
-    "ae3a6ebc9eaa",
-    "dd3061edb197",
-    "5f7a8c85d5bf",
-    "0251516d6652",
     "cf0e6e41e5ba",
     "df00e65d1f19",
     "7c406f1f6824",
@@ -499,24 +482,26 @@
     "42e02a73cdda",
     "46cb43ecf337",
     "0c203c9ea214",
-    "98ec13bed4da"
+    "98ec13bed4da",
+    "99df69649221",
+    "10dd2c222fa9",
+    "bc9679da07e4",
+    "14e581344b47",
+    "41c4d56271ca",
+    "cad6689167b5",
+    "4c3c43ab0be9",
+    "b78154fdc9ac",
+    "b431a0450af6",
+    "1e2ebecf46ce",
+    "e92e98df8d14",
+    "6ff4055a2781",
+    "acb5bba7d056",
+    "a0d91eb24a85",
+    "2399a4d9b528",
+    "51279cd82ab2",
+    "e74c0f12bf48"
   ],
   "failed_ids": {
-    "1a6f0e33ddc6": "2026-05-26T18:37:49.056222+00:00",
-    "d6d4658e2f26": "2026-05-26T18:37:49.056222+00:00",
-    "13be8146af1b": "2026-05-26T18:37:49.056222+00:00",
-    "cdb337034f8c": "2026-05-26T18:37:49.056222+00:00",
-    "7029b958bcac": "2026-05-26T18:37:49.056222+00:00",
-    "e9d9bb8c415d": "2026-05-26T18:37:49.056222+00:00",
-    "3a30bb8e1abd": "2026-05-26T18:37:49.056222+00:00",
-    "24d22e9acdec": "2026-05-26T18:37:49.056222+00:00",
-    "59c6a1a72af8": "2026-05-26T18:37:49.056222+00:00",
-    "766e672cb7a0": "2026-05-26T18:37:49.056222+00:00",
-    "8b6e201eb744": "2026-05-26T18:37:49.056222+00:00",
-    "ba6f060b221f": "2026-05-26T18:37:49.056222+00:00",
-    "acb5bba7d056": "2026-05-26T18:37:49.056222+00:00",
-    "2253a7dad681": "2026-05-26T18:37:49.056222+00:00",
-    "5bdfdefe32c6": "2026-05-26T18:37:49.056222+00:00",
     "20f65d737147": "2026-05-26T20:34:45.337189+00:00",
     "df56f50d586c": "2026-05-26T20:34:45.337189+00:00",
     "9ce623c831f1": "2026-05-26T20:34:45.337189+00:00",
@@ -551,72 +536,19 @@
     "e7b92c077d7e": "2026-05-26T22:09:30.721685+00:00",
     "a6aff2e4def7": "2026-05-26T22:09:30.721685+00:00",
     "f5045979ea1b": "2026-05-26T22:09:30.721685+00:00",
-    "d3527a5bb6dd": "2026-05-26T22:09:30.721685+00:00"
+    "d3527a5bb6dd": "2026-05-26T22:09:30.721685+00:00",
+    "d6d4658e2f26": "2026-05-26T23:33:20.781236+00:00",
+    "e86d5729eb34": "2026-05-26T23:33:20.781236+00:00",
+    "8e1644dde4f3": "2026-05-26T23:33:20.781236+00:00",
+    "2a473852667b": "2026-05-26T23:33:20.781236+00:00",
+    "aa4137c034cd": "2026-05-26T23:33:20.781236+00:00",
+    "daf0fc968107": "2026-05-26T23:33:20.781236+00:00",
+    "7e24b5486e6d": "2026-05-26T23:33:20.781236+00:00",
+    "f7bcb83bb308": "2026-05-26T23:33:20.781236+00:00",
+    "51bfa3900dd9": "2026-05-26T23:33:20.781236+00:00",
+    "16820a3627b5": "2026-05-26T23:33:20.781236+00:00"
   },
   "live_clusters": {
-    "570126de55eae355": {
-      "topic": "Nike First Sight Noir Bright Crimson Release",
-      "item_ids": [
-        "7004a52f44da"
-      ],
-      "created_at": "2026-05-25T22:41:59.976189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6288a6a32b79a6c2": {
-      "topic": "Demi Lovato First Wedding Anniversary",
-      "item_ids": [
-        "92df032a1976"
-      ],
-      "created_at": "2026-05-25T22:41:59.976189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ab4ef435bd0d2f1a": {
-      "topic": "Leo Woodall Lord of the Rings Hunt for Gollum Casting",
-      "item_ids": [
-        "9b8121c29302"
-      ],
-      "created_at": "2026-05-25T22:41:59.976189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1603263f95550131": {
-      "topic": "Rosenqvist Indy 500 Record Prize Purse",
-      "item_ids": [
-        "659835debd56"
-      ],
-      "created_at": "2026-05-25T22:41:59.976189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6b6e31c0e566c53c": {
-      "topic": "Jodar French Open Tennis Debut",
-      "item_ids": [
-        "4b5bc94ec7df"
-      ],
-      "created_at": "2026-05-25T22:41:59.976189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "60023aaff891675c": {
-      "topic": "Princeton Men's Lacrosse Title Win",
-      "item_ids": [
-        "2f9f20a272d0"
-      ],
-      "created_at": "2026-05-25T22:41:59.976189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bb9be1d370d639ae": {
-      "topic": "Sennheiser Momentum 5 Headphones Audio ANC",
-      "item_ids": [
-        "350698e5fe0c"
-      ],
-      "created_at": "2026-05-25T22:41:59.976189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "d1eed2d60a5c1e86": {
       "topic": "Accenture Invests in Aera Technology Agentic AI Supply Chain",
       "item_ids": [
@@ -729,7 +661,8 @@
     "e70370fc9ba04d38": {
       "topic": "Drake Surpasses Michael Jackson No. 1 Solo Male Artist Record",
       "item_ids": [
-        "28f91664ec45"
+        "28f91664ec45",
+        "41c4d56271ca"
       ],
       "created_at": "2026-05-26T16:13:34.588879+00:00",
       "last_escalated_size": 0,
@@ -1352,7 +1285,106 @@
       "created_at": "2026-05-26T22:10:01.495218+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "09b613d4165d250a": {
+      "topic": "Mark Duplass Defends Kane Parsons as Director of 'Backrooms' Horror Film",
+      "item_ids": [
+        "99df69649221"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "68e13a434d147062": {
+      "topic": "Eddy Current Suppression Ring Surprise Album Release",
+      "item_ids": [
+        "10dd2c222fa9"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c0a287c66727f118": {
+      "topic": "Spotify Long-Form Magazine Articles Feature Launch",
+      "item_ids": [
+        "bc9679da07e4"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d6267b7d875db13b": {
+      "topic": "BTS Vegas Samsung Partnership Fan Activations Citywide Takeover",
+      "item_ids": [
+        "14e581344b47"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ee906109368eb92c": {
+      "topic": "'KPop Demon Hunters' Criterion Collection Blu-ray DVD Release",
+      "item_ids": [
+        "cad6689167b5"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "88afa2c28e44d6fa": {
+      "topic": "'The Boys' Prequel Series 'Vought Rising' Development",
+      "item_ids": [
+        "4c3c43ab0be9"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "987c361392efed52": {
+      "topic": "'Chess' Broadway Early Closure Lea Michele Departure",
+      "item_ids": [
+        "b78154fdc9ac"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e09b64886ff21da1": {
+      "topic": "Pope Leo Criticism of Tech Leaders on Tolkien",
+      "item_ids": [
+        "b431a0450af6"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "25b0432afa8003a7": {
+      "topic": "DuckDuckGo Install Surge User Rejection of Google AI Search",
+      "item_ids": [
+        "1e2ebecf46ce"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75d319bd1fb1c0ee": {
+      "topic": "Sony Shuts Down Destruction AllStars Online Multiplayer",
+      "item_ids": [
+        "e92e98df8d14"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "359fb33bb44fa9e2": {
+      "topic": "Pope Leo Gandalf Quote Potential Peter Thiel Target Investigation",
+      "item_ids": [
+        "6ff4055a2781"
+      ],
+      "created_at": "2026-05-26T23:33:50.861878+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-26T22:10:01.496395+00:00"
+  "last_checked": "2026-05-26T23:33:50.865251+00:00"
 }
