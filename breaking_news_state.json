@@ -1,35 +1,5 @@
 {
   "known_ids": [
-    "f4c5132e73bc",
-    "8a94c2c63ea3",
-    "68d4611f4d3c",
-    "31b07a3cadf1",
-    "c9b40efb2682",
-    "1054458d4909",
-    "b8479585ae78",
-    "44b39a1c4a3f",
-    "7cba577e683e",
-    "e454816d9925",
-    "e3e1f21c8d7e",
-    "d4ba36838dce",
-    "6c669bd48f01",
-    "1fb2a3ebc284",
-    "010c480abc4f",
-    "74548e62f123",
-    "8ef4f0bda83f",
-    "afc94e4eadbc",
-    "0592874d42cf",
-    "507c84f324bb",
-    "2f56c51564e9",
-    "5bf5489730a8",
-    "a96cb9eb0b40",
-    "e329442b0195",
-    "4e083d50e1de",
-    "805657ad547d",
-    "95214c72365a",
-    "827be42d4293",
-    "6205a481c2ff",
-    "3abfa138d0d2",
     "4e9ded358acb",
     "49e13cfa293c",
     "a705b5ffcf61",
@@ -499,162 +469,51 @@
     "3d734085a1d7",
     "4b129cd8bf48",
     "51fc492a31d7",
-    "817adde2c204"
+    "817adde2c204",
+    "2b8981d43a02",
+    "9c3f78516e7f",
+    "28f91664ec45",
+    "60a37fe5ab7b",
+    "7d3590c50fb6",
+    "249189b7f263",
+    "4ff7f1ef71a2",
+    "e2964c64ef00",
+    "d346b4f94f62",
+    "5c6b85f6c2cc",
+    "aebe2840a410",
+    "04e8800a6568",
+    "d2c0d513cfd1",
+    "c1f2eedc7778",
+    "c78ffc0f8d61",
+    "8b6e5ea41b9c",
+    "96f157c6ce9a",
+    "342462d0867c",
+    "aeb56b74f84a",
+    "4205f543016a",
+    "77c86a7cf51b",
+    "86dcce359633",
+    "5f3e1e393be0",
+    "c5a24dee2200",
+    "61c52c9e3c42",
+    "53668f42f2ab",
+    "94b53d61b151",
+    "7748b543c963",
+    "c5ab7c37b38d",
+    "c04ee019c88c"
   ],
   "failed_ids": {
-    "d2afe6d01c5c": "2026-05-26T05:48:18.870396+00:00",
-    "c05acc242f61": "2026-05-26T05:48:18.870396+00:00",
-    "5e117e826905": "2026-05-26T05:48:18.870396+00:00",
-    "203238364908": "2026-05-26T05:48:18.870396+00:00",
-    "f8a023956ff9": "2026-05-26T05:48:18.870396+00:00",
-    "f809c6e5e9dc": "2026-05-26T05:48:18.870396+00:00",
-    "a8a57ff6ebdc": "2026-05-26T08:58:28.402001+00:00",
-    "da5c550db11e": "2026-05-26T08:58:28.402001+00:00",
-    "d60a5b6fd14e": "2026-05-26T08:58:28.402001+00:00",
-    "6935a138ddbf": "2026-05-26T08:58:28.402001+00:00",
-    "ac499eba6cdb": "2026-05-26T08:58:28.402001+00:00"
+    "0cec96132479": "2026-05-26T16:12:59.941598+00:00",
+    "066a9a75a421": "2026-05-26T16:12:59.941598+00:00",
+    "29036aa29484": "2026-05-26T16:12:59.941598+00:00",
+    "1e1793faa29b": "2026-05-26T16:12:59.941598+00:00",
+    "6682582a2605": "2026-05-26T16:12:59.941598+00:00",
+    "b3e528a27027": "2026-05-26T16:12:59.941598+00:00",
+    "72833145a89c": "2026-05-26T16:12:59.941598+00:00",
+    "d2afe6d01c5c": "2026-05-26T16:12:59.941598+00:00",
+    "2202cebaf128": "2026-05-26T16:12:59.941598+00:00",
+    "ac499eba6cdb": "2026-05-26T16:12:59.941598+00:00"
   },
   "live_clusters": {
-    "2093ffb49b1469c3": {
-      "topic": "Privacy-Focused Gay Dating Apps Challenge Grindr",
-      "item_ids": [
-        "5720becbca64"
-      ],
-      "created_at": "2026-05-25T12:16:04.265977+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c03cbbd025da281f": {
-      "topic": "Pope Leo AI Ethics Statement Humanity-Centered Development",
-      "item_ids": [
-        "572e4c15344c",
-        "7bc4d8ae5302",
-        "8f76bece1243",
-        "2d9b87dcd54f",
-        "bf17820e5789",
-        "a31374d3935d",
-        "b4ee559018db",
-        "982e98195042",
-        "9b517d73fed9",
-        "341f056ff775"
-      ],
-      "created_at": "2026-05-25T12:16:04.265977+00:00",
-      "last_escalated_size": 10,
-      "last_escalated_at": "2026-05-25T17:20:09.672564+00:00",
-      "picks_file": "picks/picks-2026-05-25-1531.md",
-      "why_text": "Pope Leo has released what appears to be a landmark papal encyclical specifically addressing artificial intelligence \u2014 a rare and significant move that plants the Catholic Church squarely in the middle of the most consequential tech debate of our time. His call to 'disarm' AI and prevent power concentration lands as Silicon Valley is drunk on AGI hype and regulators worldwide are still fumbling for a framework. When the Pope writes an encyclical about your industry, you've officially stopped being a niche conversation.\n**Update 12:20 PM CT:** The encyclical's 'Tower of Babel' framing is now breaking wide \u2014 Pope Leo XIV is explicitly warning that AI concentrated in the hands of a few risks a civilization-scale collapse of shared meaning, not just a policy problem. Coverage has escalated from tech outlets to Rolling Stone and The Washington Post, signaling this has crossed from religious news into mainstream cultural event.",
-      "last_escalated_item_ids": [
-        "572e4c15344c",
-        "7bc4d8ae5302",
-        "8f76bece1243",
-        "2d9b87dcd54f",
-        "bf17820e5789",
-        "a31374d3935d",
-        "b4ee559018db",
-        "982e98195042",
-        "9b517d73fed9",
-        "341f056ff775"
-      ]
-    },
-    "7eb00301bbef8274": {
-      "topic": "AEW Double or Nothing Wrestling Event",
-      "item_ids": [
-        "34d2864dcdad"
-      ],
-      "created_at": "2026-05-25T12:16:04.265977+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "631e8e12ba04887b": {
-      "topic": "American Music Awards 2026 Livestream",
-      "item_ids": [
-        "02006654a28b",
-        "4086e10ecf28",
-        "d40591b4328e",
-        "e4db7976ab5e",
-        "fadbfee873ce",
-        "091b4c08dac1",
-        "d48e41fe4a9e",
-        "c4bee372dd35",
-        "32cfd91d24e5",
-        "9a9d6a74cec4",
-        "1d2d51e080b1",
-        "3d177534648c",
-        "df27f63057b1",
-        "14aa34ac4672",
-        "3744210972fb",
-        "1732d25f6928",
-        "f395dda6ee18",
-        "db94e83ac97f",
-        "58c1515edc0c",
-        "31b0c9ca0d16",
-        "a84c882a30d3",
-        "27b3b1f5e368",
-        "802f03a0faad",
-        "f049c1847fd8",
-        "950ccceed53b",
-        "2521249baea9"
-      ],
-      "created_at": "2026-05-25T15:31:06.368097+00:00",
-      "last_escalated_size": 25,
-      "last_escalated_at": "2026-05-26T05:48:18.870396+00:00",
-      "picks_file": "picks/picks-2026-05-25-2241.md",
-      "why_text": "The 2026 AMAs are unfolding in real time, with a notably genre-fluid lineup \u2014 country's Russell Dickerson linking up with Fetty Wap, K-pop/Latin hybrid REI AMI teasing new music, and global girl groups XG and KATSEYE sharing the same stage conversation alongside the Jonas Brothers. It's a snapshot of exactly how fractured and cross-pollinated pop culture has become: the AMAs, once a mainstream barometer, now reads more like a festival of niches colliding. The convergence of these signals mid-show means the moments are landing \u2014 people are watching and talking.\n**Update 6:46 PM CT:** Winners are now being confirmed across categories as the full list takes shape live, while the show keeps building momentum off-stage too \u2014 Ludacris teased a new album alongside his 'Pull Over' video drop, EJAE revealed she's heading to Coachella with KATSEYE, and Sombr reflected on a breakout run that's taken her from the Grammys to this AMAs stage, adding another layer to an already stacked night of debuts and announcements.\n**Update 8:33 PM CT:** **Update 7:12 PM CT:** The show's biggest performance moments are now coming into focus \u2014 Sombr turned 'Homewrecker' into a full rain-soaked spectacle and claimed the night's first win, BTS brought the 'Hooligan' video to life on stage, Karol G delivered an ethereal 'Ivonny Bonita' set while teasing her upcoming tour, and Hootie and the Blowfish marked a notable comeback with a crowd-pleasing medley, while off-stage GloRilla teased collabs on a new summer album and Leon Thomas spoke on touring with Bruno Mars.\n**Update 12:48 AM CT:** **Update 9:15 PM CT:** The night's defining narrative is now official \u2014 BTS took home Artist of the Year, the show's top honor, while Taylor Swift went 0-8 in a stunning shutout that's already dominating conversation on X and will likely be the AMAs headline come morning; Billboard has the full performance rankings live as the show wraps.",
-      "last_escalated_item_ids": [
-        "02006654a28b",
-        "4086e10ecf28",
-        "d40591b4328e",
-        "e4db7976ab5e",
-        "fadbfee873ce",
-        "091b4c08dac1",
-        "d48e41fe4a9e",
-        "c4bee372dd35",
-        "32cfd91d24e5",
-        "9a9d6a74cec4",
-        "1d2d51e080b1",
-        "3d177534648c",
-        "df27f63057b1",
-        "14aa34ac4672",
-        "3744210972fb",
-        "1732d25f6928",
-        "f395dda6ee18",
-        "db94e83ac97f",
-        "58c1515edc0c",
-        "31b0c9ca0d16",
-        "a84c882a30d3",
-        "27b3b1f5e368",
-        "802f03a0faad",
-        "f049c1847fd8",
-        "950ccceed53b"
-      ]
-    },
-    "48ed72a3a4f63adb": {
-      "topic": "Stewart McLean 'Virgin River' Actor Death",
-      "item_ids": [
-        "7b70cc5488a7"
-      ],
-      "created_at": "2026-05-25T15:31:06.368097+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ecd72533753f1a52": {
-      "topic": "Spurs vs OKC NBA Playoffs Game 4",
-      "item_ids": [
-        "5ab7c858aaab"
-      ],
-      "created_at": "2026-05-25T15:31:06.368097+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bbbaaf96378e6a6a": {
-      "topic": "Suarez Wins 600 NASCAR Race Memorial",
-      "item_ids": [
-        "7f6ccc69f414"
-      ],
-      "created_at": "2026-05-25T15:31:06.368097+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "68580e0a03449b88": {
       "topic": "Nike Mercurial World Cup Reinvention",
       "item_ids": [
@@ -993,7 +852,8 @@
     "5ade04d956e8a586": {
       "topic": "Ferrari First Fully Electric Vehicle Launch Stock Drop",
       "item_ids": [
-        "024297172a19"
+        "024297172a19",
+        "aeb56b74f84a"
       ],
       "created_at": "2026-05-26T08:59:01.383260+00:00",
       "last_escalated_size": 0,
@@ -1007,7 +867,232 @@
       "created_at": "2026-05-26T08:59:01.383260+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "727d54f1efa6993d": {
+      "topic": "Air Jordan 15 RE Black/Muslin Release",
+      "item_ids": [
+        "2b8981d43a02"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5315e83b81823303": {
+      "topic": "Metagirl x Vans Old Skool 36 Collaboration Release",
+      "item_ids": [
+        "9c3f78516e7f"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e70370fc9ba04d38": {
+      "topic": "Drake Surpasses Michael Jackson No. 1 Solo Male Artist Record",
+      "item_ids": [
+        "28f91664ec45"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "57a33d56012e214e": {
+      "topic": "Toy Story 5 Filmmakers Discuss Woody Aging and Story Direction",
+      "item_ids": [
+        "60a37fe5ab7b"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cd4345d4d941b33e": {
+      "topic": "Sam Elliott Landman Interview on Artistic Honesty",
+      "item_ids": [
+        "7d3590c50fb6"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6ccfd6b8d650f6fc": {
+      "topic": "Fat Joe Cavaliers Courtside Seat Incident NBA Finals",
+      "item_ids": [
+        "249189b7f263"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e08f155364218201": {
+      "topic": "Drake Janice STFU Global Chart Dominance",
+      "item_ids": [
+        "4ff7f1ef71a2"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "288b6c40d87cf964": {
+      "topic": "Shinedown Mainstream Rock Airplay No. 1 Record Extension",
+      "item_ids": [
+        "e2964c64ef00"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eb2034064b294269": {
+      "topic": "2026 AMAs Performance Voting",
+      "item_ids": [
+        "d346b4f94f62"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c18c9ce1a097dbfc": {
+      "topic": "Drake Janice STFU Hot 100 No. 1 42 Songs Single Week",
+      "item_ids": [
+        "5c6b85f6c2cc"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ebacd88b58771e74": {
+      "topic": "Rivers Cuomo Cover Medley Outkast Dolly Parton Whitney Houston",
+      "item_ids": [
+        "aebe2840a410"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "057ca0b41492cae6": {
+      "topic": "Linda Perry Green Day Producer Dropped Fan Backlash",
+      "item_ids": [
+        "04e8800a6568"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d1b195757ea5cb5a": {
+      "topic": "Albert Wolsky Oscar-Winning Costume Designer Death",
+      "item_ids": [
+        "d2c0d513cfd1"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c57e6b3340402cd6": {
+      "topic": "Pluribus Costume Designer End of World Aesthetic Interview",
+      "item_ids": [
+        "c1f2eedc7778"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "14d7b365318dafc0": {
+      "topic": "Masashi Kawamura Hidari Stop-Motion Keanu Reeves",
+      "item_ids": [
+        "c78ffc0f8d61"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "44e003773d3f2a45": {
+      "topic": "TIFF Christopher Nolan Retrospective The Odyssey",
+      "item_ids": [
+        "8b6e5ea41b9c"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a81b053a7a850c8c": {
+      "topic": "India Gig Economy Robot Training Startup",
+      "item_ids": [
+        "96f157c6ce9a"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "31c7d8d0a3496059": {
+      "topic": "Cybersecurity Ghost Hackers Unsolved Mystery",
+      "item_ids": [
+        "342462d0867c"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a61da080ba0ecb86": {
+      "topic": "Spain Blocks Polymarket Kalshi Prediction Markets Investigation",
+      "item_ids": [
+        "4205f543016a"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "089e4fe934cf0db7": {
+      "topic": "Micron Reaches $1 Trillion Market Cap Milestone",
+      "item_ids": [
+        "77c86a7cf51b"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "869b0a5992c81392": {
+      "topic": "American Airlines SpaceX Starlink In-Flight Wi-Fi 500 Planes",
+      "item_ids": [
+        "86dcce359633"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7e01546f93e622c2": {
+      "topic": "Voyager DARPA Solid Rocket Propellant Contract",
+      "item_ids": [
+        "5f3e1e393be0"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c9ca47f407bb0e34": {
+      "topic": "European Technology Chiefs Leadership Strategy",
+      "item_ids": [
+        "c5a24dee2200"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3517706d19f363bf": {
+      "topic": "AI-Driven Formally Proven Code Development",
+      "item_ids": [
+        "61c52c9e3c42"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cfeb56b85205207d": {
+      "topic": "MLS WWT Technology Sponsor Partnership",
+      "item_ids": [
+        "53668f42f2ab"
+      ],
+      "created_at": "2026-05-26T16:13:34.588879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-26T08:59:01.384106+00:00"
+  "last_checked": "2026-05-26T16:13:34.590092+00:00"
 }
