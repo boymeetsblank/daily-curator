@@ -1,26 +1,5 @@
 {
   "known_ids": [
-    "920555e6d1fa",
-    "afaa6c0df9c3",
-    "36cbc78fd8f1",
-    "8c03593e35cc",
-    "416188ccb812",
-    "ec5b13567d21",
-    "22566c44a480",
-    "d30e659ed837",
-    "287b14126e2c",
-    "e0d93312a214",
-    "9563442f0e87",
-    "956403d4a033",
-    "3cedfee29556",
-    "a2a71085d236",
-    "5f3891dc9bee",
-    "fc87d2a23ca9",
-    "d5c64cbaa17c",
-    "1dd65f371807",
-    "3bffc6339e5a",
-    "cfea06b73e40",
-    "372d204021b0",
     "7bdeb4910f5c",
     "afd7e6fb33b8",
     "4a77ae9ab06b",
@@ -499,19 +478,30 @@
     "16ffd3ee0324",
     "842a9066f6ce",
     "9dddc2d84f97",
-    "5fe03f8442b6"
+    "5fe03f8442b6",
+    "db459663a533",
+    "1e95e0752896",
+    "effaf5c9ad78",
+    "2244eca59b77",
+    "f3b975c7be1d",
+    "0071eb329701",
+    "ae0b7c6930ab",
+    "93ccb50ec247",
+    "16351529b8ce",
+    "1a6982ae0f03",
+    "ad4b9e7523fc",
+    "9db46184aab5",
+    "f69ef0e18ce8",
+    "8aa5f225d3b6",
+    "2ac9cb39e2cb",
+    "9534203f7a68",
+    "336256f5c435",
+    "2f752221c32e",
+    "dbf841a4b2ed",
+    "b5084be8083f",
+    "3ff2b7c76983"
   ],
   "failed_ids": {
-    "0cec96132479": "2026-05-26T16:12:59.941598+00:00",
-    "066a9a75a421": "2026-05-26T16:12:59.941598+00:00",
-    "29036aa29484": "2026-05-26T16:12:59.941598+00:00",
-    "1e1793faa29b": "2026-05-26T16:12:59.941598+00:00",
-    "6682582a2605": "2026-05-26T16:12:59.941598+00:00",
-    "b3e528a27027": "2026-05-26T16:12:59.941598+00:00",
-    "72833145a89c": "2026-05-26T16:12:59.941598+00:00",
-    "d2afe6d01c5c": "2026-05-26T16:12:59.941598+00:00",
-    "2202cebaf128": "2026-05-26T16:12:59.941598+00:00",
-    "ac499eba6cdb": "2026-05-26T16:12:59.941598+00:00",
     "1a6f0e33ddc6": "2026-05-26T18:37:49.056222+00:00",
     "d6d4658e2f26": "2026-05-26T18:37:49.056222+00:00",
     "13be8146af1b": "2026-05-26T18:37:49.056222+00:00",
@@ -526,117 +516,24 @@
     "ba6f060b221f": "2026-05-26T18:37:49.056222+00:00",
     "acb5bba7d056": "2026-05-26T18:37:49.056222+00:00",
     "2253a7dad681": "2026-05-26T18:37:49.056222+00:00",
-    "5bdfdefe32c6": "2026-05-26T18:37:49.056222+00:00"
+    "5bdfdefe32c6": "2026-05-26T18:37:49.056222+00:00",
+    "20f65d737147": "2026-05-26T20:34:45.337189+00:00",
+    "df56f50d586c": "2026-05-26T20:34:45.337189+00:00",
+    "9ce623c831f1": "2026-05-26T20:34:45.337189+00:00",
+    "3571ba23ee9c": "2026-05-26T20:34:45.337189+00:00",
+    "fda5b9367911": "2026-05-26T20:34:45.337189+00:00",
+    "2427422af716": "2026-05-26T20:34:45.337189+00:00",
+    "5dafe2d9eecf": "2026-05-26T20:34:45.337189+00:00",
+    "39ba142a0c46": "2026-05-26T20:34:45.337189+00:00",
+    "d2afe6d01c5c": "2026-05-26T20:34:45.337189+00:00",
+    "622324509b98": "2026-05-26T20:34:45.337189+00:00",
+    "cd0e541e265d": "2026-05-26T20:34:45.337189+00:00",
+    "0e3d6bdd1a73": "2026-05-26T20:34:45.337189+00:00",
+    "a5f624d79a74": "2026-05-26T20:34:45.337189+00:00",
+    "677b6ae7871d": "2026-05-26T20:34:45.337189+00:00",
+    "f49e1ac9b079": "2026-05-26T20:34:45.337189+00:00"
   },
   "live_clusters": {
-    "2e9e8086724e19cf": {
-      "topic": "Lionel Messi Kith adidas Collection Release",
-      "item_ids": [
-        "0720bb1c8dc2"
-      ],
-      "created_at": "2026-05-25T18:56:04.904963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3df49f0aefa23936": {
-      "topic": "Diplo DJ Set Son's Kindergarten Graduation",
-      "item_ids": [
-        "2d6fa56c82fb"
-      ],
-      "created_at": "2026-05-25T18:56:04.904963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a989c64f3e2c8607": {
-      "topic": "Bad Bunny Global Tour Moments",
-      "item_ids": [
-        "1d2e32ada96e"
-      ],
-      "created_at": "2026-05-25T18:56:04.904963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dac35f5e2f44a14b": {
-      "topic": "Paul McCartney Paul Mescal 'Boys of Dungeon Lane' Short Film",
-      "item_ids": [
-        "6ee454fa3ba7"
-      ],
-      "created_at": "2026-05-25T18:56:04.904963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9b96d8ca57d5a04c": {
-      "topic": "Owen Wilson Jason Keller 'Stick' Film Father Figures Athletes",
-      "item_ids": [
-        "62348d9c5088"
-      ],
-      "created_at": "2026-05-25T18:56:04.904963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "feda845ca5b3dcfd": {
-      "topic": "'Big Bang Theory' Alum 'Stuart Fails To Save The Universe' Spinoff",
-      "item_ids": [
-        "aa6cecd548f9"
-      ],
-      "created_at": "2026-05-25T18:56:04.904963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ac049c4d3e7ac20e": {
-      "topic": "Enhanced Games Swimming World Record",
-      "item_ids": [
-        "94be3c486864"
-      ],
-      "created_at": "2026-05-25T18:56:04.904963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d57f29ba477d8fd3": {
-      "topic": "Unreal Engine 6 First Look Rocket League",
-      "item_ids": [
-        "5c7ebeeb3414"
-      ],
-      "created_at": "2026-05-25T18:56:04.904963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b3aa632f30ac03cb": {
-      "topic": "ASICS GEL-Kayano 12.1 Ice Green Release",
-      "item_ids": [
-        "06f08a20ae40"
-      ],
-      "created_at": "2026-05-25T20:22:53.833444+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "776ac3f447331e44": {
-      "topic": "Sue\u00f1os 2026 Music Festival Performances",
-      "item_ids": [
-        "f06dbaa68fb0"
-      ],
-      "created_at": "2026-05-25T20:22:53.833444+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2d042b0175531da4": {
-      "topic": "\u00c1lvaro D\u00edaz 'Omakase' Album Release",
-      "item_ids": [
-        "6bee481c93f9"
-      ],
-      "created_at": "2026-05-25T20:22:53.833444+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4083a250b2e13001": {
-      "topic": "Ferrari Luce Jony Ive Design House Debut",
-      "item_ids": [
-        "5391d6131af7"
-      ],
-      "created_at": "2026-05-25T20:22:53.833444+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "570126de55eae355": {
       "topic": "Nike First Sight Noir Bright Crimson Release",
       "item_ids": [
@@ -884,7 +781,8 @@
     "ebacd88b58771e74": {
       "topic": "Rivers Cuomo Cover Medley Outkast Dolly Parton Whitney Houston",
       "item_ids": [
-        "aebe2840a410"
+        "aebe2840a410",
+        "0071eb329701"
       ],
       "created_at": "2026-05-26T16:13:34.588879+00:00",
       "last_escalated_size": 0,
@@ -1206,7 +1104,125 @@
       "created_at": "2026-05-26T18:38:27.061366+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "be561ce5493c85c4": {
+      "topic": "J Balvin Air Jordan 4 Collaboration Release",
+      "item_ids": [
+        "db459663a533"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cb731a838832e125": {
+      "topic": "Willy Chavarria adidas Copa Mundial Megaride Collaboration",
+      "item_ids": [
+        "1e95e0752896"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7540ca0f983faf98": {
+      "topic": "Bape Camo Slides Release",
+      "item_ids": [
+        "effaf5c9ad78"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aca55d91c5581a54": {
+      "topic": "Rolex Luxury Watch Auction Half Million Sale",
+      "item_ids": [
+        "2244eca59b77"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "801151f4c7da1589": {
+      "topic": "Marlon Wayans Scary Movie Franchise Criticism",
+      "item_ids": [
+        "f3b975c7be1d"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "47aff47836d10600": {
+      "topic": "Bad Bunny Toy Story 5 Character Voice",
+      "item_ids": [
+        "ae0b7c6930ab",
+        "9db46184aab5"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "18aa35e9fd288b75": {
+      "topic": "Pacsun Gov Ball Festival Merchandise Collection",
+      "item_ids": [
+        "93ccb50ec247"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "85166d4927c60df6": {
+      "topic": "J. Cole Cam'ron Ready '24' Lawsuit Settlement",
+      "item_ids": [
+        "16351529b8ce"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c6acb40112000ede": {
+      "topic": "Ziggy Marley First Solo Album in Eight Years",
+      "item_ids": [
+        "1a6982ae0f03"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "33ef2a596382e387": {
+      "topic": "U2 Hires Sulinna Ong Spotify Executive Management",
+      "item_ids": [
+        "ad4b9e7523fc"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "24511daae1c9c04e": {
+      "topic": "Young Sherlock Series Making-Of Documentary",
+      "item_ids": [
+        "f69ef0e18ce8"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "44e18890a690c685": {
+      "topic": "Live Nation Veeps MLW Free Digital Streaming",
+      "item_ids": [
+        "8aa5f225d3b6"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2c23322d89062505": {
+      "topic": "Tom Francis The Off Weeks Apple TV Limited Series",
+      "item_ids": [
+        "2ac9cb39e2cb"
+      ],
+      "created_at": "2026-05-26T20:35:18.028428+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-26T18:38:27.062643+00:00"
+  "last_checked": "2026-05-26T20:35:18.029575+00:00"
 }
