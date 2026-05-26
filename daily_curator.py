@@ -689,9 +689,38 @@ _CLUSTER_STOP_WORDS = {
 
 
 def _extract_keywords(title: str) -> set[str]:
-    """Extract meaningful keywords from a title for cross-run cluster matching."""
-    words = re.findall(r"[a-zA-Z]+", title.lower())
-    return {w for w in words if len(w) > 4 and w not in _CLUSTER_STOP_WORDS}
+    """Extract meaningful keywords from a title for cross-run cluster matching.
+
+    Returns unigrams (≥5 chars) plus named-entity bigrams built from consecutive
+    title-cased word pairs (e.g. "pope leo", "elon musk").  Possessives are
+    stripped before extraction so "Leo's" contributes "leo" correctly.
+    """
+    # Strip possessives so "Leo's" → "Leo" before any processing
+    title_norm = re.sub(r"'s\b", '', title, flags=re.IGNORECASE)
+
+    words = re.findall(r"[a-zA-Z]+", title_norm.lower())
+    kws = {w for w in words if len(w) > 4 and w not in _CLUSTER_STOP_WORDS}
+
+    # Named-entity bigrams: emit adjacent title-cased word pairs (e.g. "pope leo").
+    # Both words must be ≤8 chars (excludes long common words like "encyclical").
+    cap_positions: list[tuple[int, str]] = []
+    for m in re.finditer(r'[A-Z][a-zA-Z]*', title_norm):
+        cap_positions.append((m.start(), m.group().lower()))
+
+    for i in range(len(cap_positions) - 1):
+        pos1, w1 = cap_positions[i]
+        pos2, w2 = cap_positions[i + 1]
+        # Only pair words that are adjacent (gap ≤ 2 chars for spaces/punctuation)
+        gap = title_norm[pos1 + len(w1) : pos2].strip()
+        if len(gap) > 1:
+            continue
+        if (len(w1) <= 8 and len(w2) <= 8
+                and w1 not in _CLUSTER_STOP_WORDS
+                and w2 not in _CLUSTER_STOP_WORDS
+                and len(w1) >= 2 and len(w2) >= 2):
+            kws.add(f"{w1} {w2}")
+
+    return kws
 
 
 def _cst_now_iso() -> str:
@@ -813,12 +842,25 @@ def merge_cross_run_clusters(articles: list[dict], today_data: dict) -> tuple[li
             continue
         art_url = normalize_url(article.get("link", "")) if article.get("link") else ""
 
-        # Find best matching existing cluster
-        best_cid, best_overlap = None, 0
+        art_bigrams  = {kw for kw in art_kws if ' ' in kw}
+        art_unigrams = {kw for kw in art_kws if ' ' not in kw}
+
+        # Find best matching existing cluster.
+        # Match rules (either is sufficient):
+        #   • ≥1 named-entity bigram in common (e.g. "pope leo")
+        #   • ≥2 regular unigrams in common
+        # Bigrams count as 2 in the ranking score so entity matches rank above
+        # coincidental 2-unigram matches.
+        best_cid, best_score = None, 0
         for cid, kws in cluster_kw_sets.items():
-            overlap = len(art_kws & kws)
-            if overlap >= 3 and overlap > best_overlap:
-                best_cid, best_overlap = cid, overlap
+            c_bigrams  = {kw for kw in kws if ' ' in kw}
+            c_unigrams = {kw for kw in kws if ' ' not in kw}
+            bigram_overlap  = len(art_bigrams  & c_bigrams)
+            unigram_overlap = len(art_unigrams & c_unigrams)
+            if bigram_overlap >= 1 or unigram_overlap >= 2:
+                rank = bigram_overlap * 2 + unigram_overlap
+                if rank > best_score:
+                    best_cid, best_score = cid, rank
 
         if best_cid:
             cluster = clusters[best_cid]
@@ -848,7 +890,7 @@ def merge_cross_run_clusters(articles: list[dict], today_data: dict) -> tuple[li
             cluster_kw_sets[best_cid] = merged_kws
 
             matched += 1
-            print(f"   🔗 Cross-run match: \"{title[:55]}\" → {best_cid} (overlap={best_overlap})")
+            print(f"   🔗 Cross-run match: \"{title[:55]}\" → {best_cid} (score={best_score})")
 
     if matched:
         print(f"   Cross-run clustering: {matched} article(s) matched to prior-run cluster(s).")
@@ -1619,6 +1661,7 @@ def _extract_primary_entity(title: str) -> str | None:
     words = re.sub(r'[^\w\s\'-]', ' ', title).split()
     entity_words: list[str] = []
     for word in words:
+        word = re.sub(r"'s$", '', word, flags=re.IGNORECASE)  # strip possessive
         clean = re.sub(r"['\-]", '', word)
         if clean and clean[0].isupper() and clean.lower() not in _STOPWORDS and len(clean) > 1:
             entity_words.append(clean.lower())
@@ -1709,7 +1752,15 @@ def tag_story_clusters(articles: list[dict]) -> list[dict]:
                 continue
             if not entities[j] or pub_times[j] is None:
                 continue
-            if entities[i] == entities[j] and abs(pub_times[i] - pub_times[j]) <= SIX_HOURS:
+            ei, ej = entities[i], entities[j]
+            # Use prefix matching so "pope" matches "pope leo" and
+            # "pope leo" matches "pope leo unsettling" etc.
+            entities_match = (
+                ei == ej
+                or ei.startswith(ej + ' ')
+                or ej.startswith(ei + ' ')
+            )
+            if entities_match and abs(pub_times[i] - pub_times[j]) <= SIX_HOURS:
                 union(i, j)
 
     # ── Group by root ──────────────────────────────────────────────

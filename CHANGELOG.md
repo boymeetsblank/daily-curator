@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-25] Fix: cross-run and within-run clustering now catches named-entity stories
+
+Two clustering bugs caused same-story articles (e.g. multiple Pope Leo AI encyclical pieces) to survive as separate picks across runs. Fixed:
+1. **Named-entity bigrams** — `_extract_keywords()` now extracts consecutive title-cased word pairs (e.g. "pope leo", "elon musk") as bonus tokens. Possessives are stripped first so "Leo's" correctly yields "leo".
+2. **Looser cross-run threshold** — `merge_cross_run_clusters()` now matches if ≥1 bigram overlaps OR ≥2 unigrams overlap (was: total ≥3 unigrams). Bigrams count double in the ranking score.
+3. **Possessive fix in entity extraction** — `_extract_primary_entity()` strips "'s" before cleaning so "Pope Leo's" and "Pope Leo" produce the same entity.
+4. **Prefix entity matching** — within-run secondary pass now clusters articles where one entity is a prefix of the other (e.g. "pope" matches "pope leo"), instead of requiring exact string equality.
+
 ## [2026-05-24] Fix: live cluster escalation now checks for already-published stories
 
 Added a pre-write guard in `escalate_cluster_to_sonnet()`: before writing a new picks file, it loads today's already-published pick titles and checks keyword overlap with the cluster topic. If 2+ distinctive keywords match an existing pick, the escalation is skipped — fixing cases like "Neon Extends Palme d'Or Streak" (main feed at 14:13) being duplicated by a live cluster escalation 3 minutes later.
@@ -71,18 +79,6 @@ Engagement data is now surfaced to the Haiku quality gate so high-engagement con
 ## [2026-05-20] Fix: Google Trends — dedicated TTL field + remove news-only filter
 
 Two bugs fixed. (1) `refresh_google_trends()` was reading the global `fetched_at` timestamp (written by `daily_curator.py`'s Apify run) as its TTL, causing Google trends to appear "fresh" for up to 10 minutes after an Apify run even though the live refresh hadn't fired. Fixed with a dedicated `google_fetched_at` field, independent of Apify's timestamp. (2) Removed `ns=15` parameter from the Google Trends URL — this flag was silently filtering to news-only topics, excluding entertainment, sports, and celebrity trends. Full trending list now flows through.
-
-## [2026-05-20] Push notifications for cluster escalation and updates
-
-`escalate_cluster_to_sonnet()` now calls `send_breaking_push()` on both escalation paths: initial story escalation (when a cluster first hits 3 signals) sends the synthesized headline and "Why it matters" as the notification body; re-escalation (every 3 additional signals) sends an "Update: {topic}" notification with the new timestamped update paragraph. Users are notified in real time whenever a live cluster story is created or updated in the main feed.
-
-## [2026-05-20] Live feed: X trending and Google Trends now refresh every 10 minutes
-
-X (Twitter) trending topics now refresh every 10 minutes via trends24.in (free, no API key) instead of waiting for the 3×/day Apify run. Google Trends TTL tightened from 60 → 10 minutes. Combined with Reddit hot posts (already real-time), YouTube trending RSS (real-time), and Bluesky What's Hot (real-time), all five major social signals now feed the live feed continuously every ~10 minutes rather than in daily batches.
-
-## [2026-05-20] Live feed: cluster-based escalation to main feed
-
-When multiple live feed items converge on the same story, they now automatically cluster and escalate as one unified main feed pick. How it works: after each quality gate pass, a Haiku clustering call assigns new items to existing clusters or creates new ones (e.g., "Knicks win Game 1 of NBA Eastern Conference Finals" groups Knicks, Josh Hart, Harden, and Mike Breen signals together). When a cluster hits 3 items, Sonnet synthesizes all signals into one editorial story — headline, Why It Matters, and hook — and writes it to the main feed. Re-escalates every 3 additional items so evolving stories stay current. Cluster state persists in `breaking_news_state.json` with a 24-hour TTL.
 
 
 
