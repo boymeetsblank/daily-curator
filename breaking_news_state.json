@@ -1,39 +1,5 @@
 {
   "known_ids": [
-    "347dd50e7880",
-    "dc21e64ee5f2",
-    "fafb8f2d17ee",
-    "ece1393b030b",
-    "88f3a8c978f3",
-    "ac6eceff692e",
-    "fe097895893d",
-    "a6ee2274700a",
-    "8220f88518f0",
-    "30f17078ac83",
-    "d355e0755ad4",
-    "512eade85756",
-    "2a0361684cb5",
-    "3ece2b86dd89",
-    "738d4ca74474",
-    "465d80163d6e",
-    "b94ec680e33c",
-    "412996a49a00",
-    "8907bc013160",
-    "8236b84cbe72",
-    "ba17502f705a",
-    "2f097c6f7765",
-    "6110b10da3e8",
-    "e3725d4b1311",
-    "8bd7db9a8202",
-    "0f5a36ae5ead",
-    "035b0dff55e6",
-    "3ee79eb3499d",
-    "f5e76993b166",
-    "b1ce9ba10fb9",
-    "4a15f679a8ce",
-    "c1d4da231cd2",
-    "70a6038810b0",
-    "3c661ad00a2a",
     "f803a68b2987",
     "0763e79c4f8d",
     "1ca28d2cca5e",
@@ -499,216 +465,68 @@
     "a4c9931a83b5",
     "adf41dd776bf",
     "8f21befcc147",
-    "0988db4fc1d2"
+    "0988db4fc1d2",
+    "a52697aff3be",
+    "33984d643cf2",
+    "ac1f2a3571c1",
+    "f9671d522ce7",
+    "76262f3f8c0f",
+    "9762bf0065d4",
+    "7d69f7ec9569",
+    "b3b09dfc053b",
+    "8c4b9f418f0a",
+    "33dc9e24418a",
+    "8bdb4762aa58",
+    "56a63bb3b574",
+    "f53ac4fce22f",
+    "d10a63040a13",
+    "d44369b040e5",
+    "c8480f91000e",
+    "59d0fb9e3c02",
+    "836a0f5d8660",
+    "3b8d73e00f0d",
+    "3eee17bfd7e5",
+    "c100ff370efe",
+    "d73c2adfc401",
+    "2bc93e6d4c7f",
+    "02233afb32a8",
+    "0f63644e7bee",
+    "baf3281cc32c",
+    "566a27e6d7ae",
+    "d8d868171451",
+    "d94b8c8a8d88",
+    "4352a3da49d1",
+    "7292128a7f43",
+    "1b78ddae1232",
+    "5189cf02c5cf",
+    "7fd208cfeb6a"
   ],
   "failed_ids": {
-    "cd909038e8d5": "2026-05-27T13:50:41.009054+00:00",
-    "dfd4f618acde": "2026-05-27T13:50:41.009054+00:00",
-    "74404242c510": "2026-05-27T13:50:41.009054+00:00",
-    "03c2f4fce2c2": "2026-05-27T13:50:41.009054+00:00",
-    "849ea426ce10": "2026-05-27T13:50:41.009054+00:00",
-    "ccb1809e1197": "2026-05-27T13:50:41.009054+00:00",
-    "dcea6c6825c5": "2026-05-27T13:50:41.009054+00:00",
-    "ac71419291b3": "2026-05-27T13:50:41.009054+00:00",
-    "a2dc014d7ef1": "2026-05-27T13:50:41.009054+00:00",
-    "da49bb98f507": "2026-05-27T13:50:41.009054+00:00",
-    "2d41dd81784b": "2026-05-27T13:50:41.009054+00:00",
     "82277050a180": "2026-05-27T16:55:44.966481+00:00",
     "f1a99951a93c": "2026-05-27T16:55:44.966481+00:00",
-    "c839e20dfd32": "2026-05-27T16:55:44.966481+00:00"
+    "c839e20dfd32": "2026-05-27T16:55:44.966481+00:00",
+    "d8dcbffd4821": "2026-05-27T19:24:05.687974+00:00",
+    "aa7d2cb6d569": "2026-05-27T19:24:05.687974+00:00",
+    "ed628492afa9": "2026-05-27T19:24:05.687974+00:00",
+    "219cbd6d7d03": "2026-05-27T19:24:05.687974+00:00",
+    "5802baab2c10": "2026-05-27T19:24:05.687974+00:00",
+    "a4a42e92d869": "2026-05-27T19:24:05.687974+00:00",
+    "c535efbbb5b6": "2026-05-27T19:24:05.687974+00:00",
+    "54aec914d62d": "2026-05-27T19:24:05.687974+00:00",
+    "ed748c26e326": "2026-05-27T19:24:05.687974+00:00",
+    "a34e6287e254": "2026-05-27T19:24:05.687974+00:00",
+    "74404242c510": "2026-05-27T19:24:05.687974+00:00",
+    "13875e9b0a18": "2026-05-27T19:24:05.687974+00:00",
+    "a1ba3a74edef": "2026-05-27T19:24:05.687974+00:00",
+    "0f5d480ddda3": "2026-05-27T19:24:05.687974+00:00",
+    "28f0892e42ec": "2026-05-27T19:24:05.687974+00:00",
+    "8d7c4cde7478": "2026-05-27T19:24:05.687974+00:00",
+    "a2dc014d7ef1": "2026-05-27T19:24:05.687974+00:00",
+    "24a249edee4e": "2026-05-27T19:24:05.687974+00:00",
+    "a1288c6f3026": "2026-05-27T19:24:05.687974+00:00",
+    "af7116bd1ef1": "2026-05-27T19:24:05.687974+00:00"
   },
   "live_clusters": {
-    "3df09d5df602e995": {
-      "topic": "Kansas City Royals City Connect Nike Air Max 1 Release",
-      "item_ids": [
-        "d23e948e178b"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "21573fb99faab6eb": {
-      "topic": "Baltimore Orioles Nike Air Max 1 Release",
-      "item_ids": [
-        "c9adabf33860"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5cd89d6531c1fc27": {
-      "topic": "A Ma Mani\u00e9re Nike Pegasus Premium Collaboration",
-      "item_ids": [
-        "ceb2fbec04ce",
-        "f7b0d0bb057c"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c2097c612426536f": {
-      "topic": "James Harden adidas Jellyfish Sneaker Debut",
-      "item_ids": [
-        "ec58179b6c8f"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c9948bfc60569a55": {
-      "topic": "Travis Kelce LeBron Nike Courtside Appearance Cleveland",
-      "item_ids": [
-        "2c69c183804a",
-        "4913f6d46566"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ead62ec6ef53fcaa": {
-      "topic": "Zee Unite8 Sports Channels Soccer World Cup Rights India",
-      "item_ids": [
-        "766cff0d8d5f"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a2ceb7792fd22ed1": {
-      "topic": "'Dutton Ranch' Paramount+ Record Launch 12.9 Million Views",
-      "item_ids": [
-        "a8d09d0213e0"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9619436773d25b59": {
-      "topic": "Knicks NBA Season Official Merchandise Collection",
-      "item_ids": [
-        "2f189fd42a26"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "78524448fa3ec7bd": {
-      "topic": "Kehlani The Kehlani World Tour North America Dates",
-      "item_ids": [
-        "c262aa608736"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "64819a367110597b": {
-      "topic": "Arc\u00e1ngel La 8va Maravilla 20 Aniversario Tour U.S. Dates",
-      "item_ids": [
-        "8615005ddd63"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e64d5c0252b9729b": {
-      "topic": "Ariana Grande 'Hate That I Made You Love Me' New Song Tease",
-      "item_ids": [
-        "d31bfddf5fb5"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1e72823453c6c7e4": {
-      "topic": "Jimin BTS AMAs Artist of the Year Winner Card Edit",
-      "item_ids": [
-        "b114866a5635"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "92764b388df7951a": {
-      "topic": "Sam Barber Breakthrough Country Artist 2026 AMAs Win",
-      "item_ids": [
-        "799515fdf88b"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "28024d0b7a234e6e": {
-      "topic": "Karol G New Song Tease American Music Awards Performance",
-      "item_ids": [
-        "94b240ccab18"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f83deac7d1cf8f37": {
-      "topic": "Olivia Rodrigo 'You Seem Pretty Sad for a Girl So in Love' Split Track List",
-      "item_ids": [
-        "7d6e5b3b98b1"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "920edee4a17f32b9": {
-      "topic": "Alex Bonifer Signs Innovative Artists Entertainment",
-      "item_ids": [
-        "eabafb299783"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "67ed1c2bbd237201": {
-      "topic": "'Dutton Ranch' Paramount+ Original Series Record Launch",
-      "item_ids": [
-        "186089ba0bbc"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "101ace9e06926908": {
-      "topic": "'Blood On The Promontory' Western Drama Cast Announcement",
-      "item_ids": [
-        "5ff4080fbe5b"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "007f043433c19f08": {
-      "topic": "OpenRouter Valuation Doubles to $1.3B",
-      "item_ids": [
-        "1ab37a271eb8"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "27f1b14172507ed3": {
-      "topic": "SpaceX Pentagon Starlink Pricing Pressure",
-      "item_ids": [
-        "6bf3f5e54fbc"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a08fbf9abd531245": {
-      "topic": "Dropbox CEO Drew Houston Departure After 19 Years",
-      "item_ids": [
-        "842a9066f6ce"
-      ],
-      "created_at": "2026-05-26T18:38:27.061366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "be561ce5493c85c4": {
       "topic": "J Balvin Air Jordan 4 Collaboration Release",
       "item_ids": [
@@ -1002,7 +820,8 @@
     "88afa2c28e44d6fa": {
       "topic": "'The Boys' Prequel Series 'Vought Rising' Development",
       "item_ids": [
-        "4c3c43ab0be9"
+        "4c3c43ab0be9",
+        "3b8d73e00f0d"
       ],
       "created_at": "2026-05-26T23:33:50.861878+00:00",
       "last_escalated_size": 0,
@@ -1747,7 +1566,8 @@
     "672336ac31a8ef41": {
       "topic": "Tony Awards Book of Mormon Original Cast Reunion Performance",
       "item_ids": [
-        "5e917aee93b8"
+        "5e917aee93b8",
+        "8bdb4762aa58"
       ],
       "created_at": "2026-05-27T16:56:19.362762+00:00",
       "last_escalated_size": 0,
@@ -1815,7 +1635,286 @@
       "created_at": "2026-05-27T16:56:19.362762+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "444867ce7aa03d1e": {
+      "topic": "Vans Old Skool 36 Paint Splatter Release",
+      "item_ids": [
+        "a52697aff3be"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b283af52d4c1e3d2": {
+      "topic": "New Balance 991v2 Sea Glass Release",
+      "item_ids": [
+        "33984d643cf2"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f314527d93efbcbd": {
+      "topic": "Thrasher Magazine adidas Glenburn Collaboration",
+      "item_ids": [
+        "ac1f2a3571c1"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9cbe88c67904facf": {
+      "topic": "Hudson Williams Books Instagram Viral Sales",
+      "item_ids": [
+        "f9671d522ce7"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a1c897cd1d252b6b": {
+      "topic": "Ted Danson Elizabeth Banks Apple TV Comedy",
+      "item_ids": [
+        "76262f3f8c0f"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "da78974717710381": {
+      "topic": "Michael Shannon Death by Lightning Emmy Performance",
+      "item_ids": [
+        "9762bf0065d4"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e1cee1cb76ea84d9": {
+      "topic": "Howard Storm Taxi Full House Director Death",
+      "item_ids": [
+        "7d69f7ec9569"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6f4c62d556497ec2": {
+      "topic": "The Cramps Gravest Gravy Lost Album Release",
+      "item_ids": [
+        "b3b09dfc053b"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "de3232f0cf582d9c": {
+      "topic": "Gilla Band New Song Tour Dates 2027",
+      "item_ids": [
+        "8c4b9f418f0a"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "22be04efe2e51140": {
+      "topic": "Nick Jonas Solo Show A Night With Nick",
+      "item_ids": [
+        "33dc9e24418a"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7a9b9961427e21b0": {
+      "topic": "BTS Mexico National Palace Historic Visit Video",
+      "item_ids": [
+        "56a63bb3b574"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "528cb13173313047": {
+      "topic": "Five Finger Death Punch Eye of the Storm No. 1",
+      "item_ids": [
+        "f53ac4fce22f"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "42693f73f374fdf7": {
+      "topic": "AI-Generated Film Tribeca Festival",
+      "item_ids": [
+        "d10a63040a13"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8bcd34a26bc83a06": {
+      "topic": "Taylor Swift Fan Paper Airplane Gift",
+      "item_ids": [
+        "d44369b040e5"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f60162e674b18f6a": {
+      "topic": "Fallout Season 2 Premiere Script The Innovator",
+      "item_ids": [
+        "c8480f91000e"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b0d1d0825ad3d0c9": {
+      "topic": "Charles Cioffi Actor Death",
+      "item_ids": [
+        "59d0fb9e3c02"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "795671f2dab32482": {
+      "topic": "Michael Buble Drew Scott Prime Video Junior Hockey Doc",
+      "item_ids": [
+        "836a0f5d8660"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9e2bab748b49cfa2": {
+      "topic": "Amazon Albert Cheng AI Production Impact",
+      "item_ids": [
+        "3eee17bfd7e5"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8dbb1a7a87c7db29": {
+      "topic": "Huawei Chip Queen Competition Strategy",
+      "item_ids": [
+        "c100ff370efe"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "322a734b4130b8d1": {
+      "topic": "Snowflake AWS $6B AI CPU Chips Deal",
+      "item_ids": [
+        "d73c2adfc401"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4cb51b70f8047fc8": {
+      "topic": "UK Visa Portal Data Breach Passports Selfies",
+      "item_ids": [
+        "2bc93e6d4c7f"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e34f4fd916a8fe56": {
+      "topic": "Meta Instagram Facebook WhatsApp Subscriptions AI Plans",
+      "item_ids": [
+        "02233afb32a8"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4502a49cc896690c": {
+      "topic": "Princeton Thea Energy Fusion Startup $100M Funding",
+      "item_ids": [
+        "0f63644e7bee"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c91c3741a1d5e71b": {
+      "topic": "Google Gemini Home AI Camera Automations",
+      "item_ids": [
+        "baf3281cc32c"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2d423c39cdabd1fe": {
+      "topic": "James Webb Telescope Supermassive Black Hole Discovery",
+      "item_ids": [
+        "566a27e6d7ae"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "51869947e874ed80": {
+      "topic": "Valve Steam Deck Price Increase",
+      "item_ids": [
+        "d8d868171451"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c6cc73f87cc39a46": {
+      "topic": "US Space Force SpaceX Targeting Network",
+      "item_ids": [
+        "d94b8c8a8d88"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "baf93ab8d7b96daa": {
+      "topic": "Lamborghini EV Cancellation Decision",
+      "item_ids": [
+        "4352a3da49d1"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "745a023a01658a4f": {
+      "topic": "Boeing 737 Max Production Increase",
+      "item_ids": [
+        "7292128a7f43"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "291a3a1602c0dd75": {
+      "topic": "Abercrombie Earnings Iran Conflict Impact",
+      "item_ids": [
+        "1b78ddae1232"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "805abaf0da37bfc5": {
+      "topic": "Armadillos Soft Machines Protective Technology",
+      "item_ids": [
+        "5189cf02c5cf"
+      ],
+      "created_at": "2026-05-27T19:24:39.802900+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-27T16:56:24.993804+00:00"
+  "last_checked": "2026-05-27T19:24:39.804178+00:00"
 }
