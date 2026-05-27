@@ -1,43 +1,5 @@
 {
   "known_ids": [
-    "f803a68b2987",
-    "0763e79c4f8d",
-    "1ca28d2cca5e",
-    "6a2b11f0c3ee",
-    "5398d4ba2c37",
-    "dcc701bc41aa",
-    "69ad246611d1",
-    "c61c64ed49b0",
-    "d8e578002cb6",
-    "0148929367a2",
-    "16c61ba3e12c",
-    "3f8181f159b2",
-    "a3678b07908e",
-    "e723064f8654",
-    "9e809aad23cb",
-    "fe53b976cadd",
-    "a65a31d95fce",
-    "0ea4a8c5419d",
-    "5e01fd9aab10",
-    "69d15f18efd4",
-    "f49bbb224619",
-    "993867f6e104",
-    "2c08ced66deb",
-    "6357114a1caf",
-    "c95a309dc573",
-    "e40b35959352",
-    "bd2acafd1b79",
-    "665d57e61d6e",
-    "4f8176b91d15",
-    "728fac2dc581",
-    "4c85a7a68cdd",
-    "f15b90dc149f",
-    "55b459948395",
-    "27194cd3fc0b",
-    "6f420c9d4f63",
-    "11c9a05ec734",
-    "f0c7ec31c2bb",
-    "43477191cc42",
     "010b37038cb8",
     "54b05392430a",
     "42e2fbba19f3",
@@ -499,12 +461,47 @@
     "7292128a7f43",
     "1b78ddae1232",
     "5189cf02c5cf",
-    "7fd208cfeb6a"
+    "7fd208cfeb6a",
+    "661ba18562b9",
+    "241b28d2a0b9",
+    "7bd9e89554d3",
+    "864e19c9e51b",
+    "40e0461d89eb",
+    "885980bd31fe",
+    "e20bea6f8087",
+    "39c1504a0b80",
+    "acbeca63e6ae",
+    "d29ac8955bba",
+    "4f8901d8ddd7",
+    "7bddf1861275",
+    "2262b947eed9",
+    "206a2b665be5",
+    "b781380fed43",
+    "cb06895c498e",
+    "2d59e65512f7",
+    "a12ee121d46b",
+    "9c57220caf7e",
+    "2e73f3c512f2",
+    "aef95ed50564",
+    "3bb425fa4e68",
+    "7ac32817d0c1",
+    "ee3f0fa99c6e",
+    "16a0238ae6d4",
+    "657abec023ff",
+    "68fce15c6e47",
+    "00f755e90417",
+    "721e3a147dba",
+    "badc4f964b2a",
+    "6aa038b51455",
+    "36fee744e624",
+    "c344200809d7",
+    "6ebf061851c5",
+    "c04dfc73553a",
+    "9000e3c3c768",
+    "4bc0d1eaf4d6",
+    "4df0ddf9b0dc"
   ],
   "failed_ids": {
-    "82277050a180": "2026-05-27T16:55:44.966481+00:00",
-    "f1a99951a93c": "2026-05-27T16:55:44.966481+00:00",
-    "c839e20dfd32": "2026-05-27T16:55:44.966481+00:00",
     "d8dcbffd4821": "2026-05-27T19:24:05.687974+00:00",
     "aa7d2cb6d569": "2026-05-27T19:24:05.687974+00:00",
     "ed628492afa9": "2026-05-27T19:24:05.687974+00:00",
@@ -524,144 +521,18 @@
     "a2dc014d7ef1": "2026-05-27T19:24:05.687974+00:00",
     "24a249edee4e": "2026-05-27T19:24:05.687974+00:00",
     "a1288c6f3026": "2026-05-27T19:24:05.687974+00:00",
-    "af7116bd1ef1": "2026-05-27T19:24:05.687974+00:00"
+    "af7116bd1ef1": "2026-05-27T19:24:05.687974+00:00",
+    "b2e8742fae2e": "2026-05-27T21:18:58.317745+00:00",
+    "512a4a0120f5": "2026-05-27T21:18:58.317745+00:00",
+    "729ebad86604": "2026-05-27T21:18:58.317745+00:00",
+    "a2e21de08488": "2026-05-27T21:18:58.317745+00:00",
+    "77ef2db3fe09": "2026-05-27T21:18:58.317745+00:00",
+    "b81521f427b6": "2026-05-27T21:18:58.317745+00:00",
+    "3cfad2148468": "2026-05-27T21:18:58.317745+00:00",
+    "819f2edb49af": "2026-05-27T21:18:58.317745+00:00",
+    "8837e6caf0d1": "2026-05-27T21:18:58.317745+00:00"
   },
   "live_clusters": {
-    "be561ce5493c85c4": {
-      "topic": "J Balvin Air Jordan 4 Collaboration Release",
-      "item_ids": [
-        "db459663a533"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cb731a838832e125": {
-      "topic": "Willy Chavarria adidas Copa Mundial Megaride Collaboration",
-      "item_ids": [
-        "1e95e0752896"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7540ca0f983faf98": {
-      "topic": "Bape Camo Slides Release",
-      "item_ids": [
-        "effaf5c9ad78"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "aca55d91c5581a54": {
-      "topic": "Rolex Luxury Watch Auction Half Million Sale",
-      "item_ids": [
-        "2244eca59b77"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "801151f4c7da1589": {
-      "topic": "Marlon Wayans Scary Movie Franchise Criticism",
-      "item_ids": [
-        "f3b975c7be1d"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "47aff47836d10600": {
-      "topic": "Bad Bunny Toy Story 5 Character Voice",
-      "item_ids": [
-        "ae0b7c6930ab",
-        "9db46184aab5",
-        "63b3f3108697"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-27T06:00:36.924078+00:00",
-      "picks_file": "picks/picks-2026-05-27-0601.md",
-      "why_text": "Disney and Pixar landing Bad Bunny for Toy Story 5 is a major cultural signal \u2014 it's the franchise explicitly reaching for a younger, Latino audience at a moment when Bad Bunny is arguably the biggest pop star on the planet. This isn't a cameo casting; it's a statement about who Pixar sees as the future of family entertainment. The move bridges reggaeton's global dominance with one of cinema's most beloved legacy IPs.",
-      "last_escalated_item_ids": [
-        "ae0b7c6930ab",
-        "9db46184aab5",
-        "63b3f3108697"
-      ]
-    },
-    "18aa35e9fd288b75": {
-      "topic": "Pacsun Gov Ball Festival Merchandise Collection",
-      "item_ids": [
-        "93ccb50ec247"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "85166d4927c60df6": {
-      "topic": "J. Cole Cam'ron Ready '24' Lawsuit Settlement",
-      "item_ids": [
-        "16351529b8ce",
-        "b3a3b4a4cc7d",
-        "8bd604bc5f8e"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-27T16:55:44.966481+00:00",
-      "picks_file": "picks/picks-2026-05-27-1656.md",
-      "why_text": "Cam'ron's long-threatened legal action over J. Cole sampling 'Oh Boy' for '2013' without clearance is apparently heading toward resolution, a rare moment of a street-level beef getting formalized in a courtroom. It matters because it underscores how sample clearance disputes \u2014 often glossed over in hip-hop mythology \u2014 carry real legal teeth, even years later. With Cam'ron already in a headline-grabbing feud with Jim Jones, this settlement lands in the middle of a broader narrative about Dipset's complicated legacy politics.",
-      "last_escalated_item_ids": [
-        "16351529b8ce",
-        "b3a3b4a4cc7d",
-        "8bd604bc5f8e"
-      ]
-    },
-    "c6acb40112000ede": {
-      "topic": "Ziggy Marley First Solo Album in Eight Years",
-      "item_ids": [
-        "1a6982ae0f03"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "33ef2a596382e387": {
-      "topic": "U2 Hires Sulinna Ong Spotify Executive Management",
-      "item_ids": [
-        "ad4b9e7523fc"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "24511daae1c9c04e": {
-      "topic": "Young Sherlock Series Making-Of Documentary",
-      "item_ids": [
-        "f69ef0e18ce8"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "44e18890a690c685": {
-      "topic": "Live Nation Veeps MLW Free Digital Streaming",
-      "item_ids": [
-        "8aa5f225d3b6"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2c23322d89062505": {
-      "topic": "Tom Francis The Off Weeks Apple TV Limited Series",
-      "item_ids": [
-        "2ac9cb39e2cb"
-      ],
-      "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "052c4640efd3a9d7": {
       "topic": "New Balance 1300 Slate Grey Pebbled Leather Release",
       "item_ids": [
@@ -1150,7 +1021,8 @@
     "0f0c658f0e0b02ab": {
       "topic": "Taiwan Chip Stocks Rally Nvidia $150 Billion Spending Announcement",
       "item_ids": [
-        "e1504ccd575d"
+        "e1504ccd575d",
+        "721e3a147dba"
       ],
       "created_at": "2026-05-27T10:15:11.428326+00:00",
       "last_escalated_size": 0,
@@ -1810,7 +1682,8 @@
     "322a734b4130b8d1": {
       "topic": "Snowflake AWS $6B AI CPU Chips Deal",
       "item_ids": [
-        "d73c2adfc401"
+        "d73c2adfc401",
+        "badc4f964b2a"
       ],
       "created_at": "2026-05-27T19:24:39.802900+00:00",
       "last_escalated_size": 0,
@@ -1828,11 +1701,20 @@
     "e34f4fd916a8fe56": {
       "topic": "Meta Instagram Facebook WhatsApp Subscriptions AI Plans",
       "item_ids": [
-        "02233afb32a8"
+        "02233afb32a8",
+        "16a0238ae6d4",
+        "6aa038b51455"
       ],
       "created_at": "2026-05-27T19:24:39.802900+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-27T21:18:58.317745+00:00",
+      "picks_file": "picks/picks-2026-05-27-2119.md",
+      "why_text": "Meta is officially moving its most-used platforms \u2014 Instagram, Facebook, and WhatsApp \u2014 into a subscription model, with AI-powered tiers starting at $7.99/month. This is a landmark shift: apps that built their entire identity on being free are now asking users to pay, betting that AI features are compelling enough to justify it. It signals that the ad-only model is no longer sufficient, and it sets a precedent that will pressure every major social platform to follow.",
+      "last_escalated_item_ids": [
+        "02233afb32a8",
+        "16a0238ae6d4",
+        "6aa038b51455"
+      ]
     },
     "4502a49cc896690c": {
       "topic": "Princeton Thea Energy Fusion Startup $100M Funding",
@@ -1864,7 +1746,8 @@
     "51869947e874ed80": {
       "topic": "Valve Steam Deck Price Increase",
       "item_ids": [
-        "d8d868171451"
+        "d8d868171451",
+        "9000e3c3c768"
       ],
       "created_at": "2026-05-27T19:24:39.802900+00:00",
       "last_escalated_size": 0,
@@ -1914,7 +1797,286 @@
       "created_at": "2026-05-27T19:24:39.802900+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "3619ef6c98e63ae1": {
+      "topic": "Sue\u00f1os Festival Latin Live Music Chicago Launch",
+      "item_ids": [
+        "661ba18562b9"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6bb86a933c0acd27": {
+      "topic": "Lil Uzi Vert Album Release Pet Monkey Instagram Strategy",
+      "item_ids": [
+        "241b28d2a0b9"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "23e01fb106afc30d": {
+      "topic": "Jordan Sixty Plus Low True Blue Release",
+      "item_ids": [
+        "7bd9e89554d3"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a81e70153e86ecf6": {
+      "topic": "Air Jordan 1 Mid Obsidian Summer Release",
+      "item_ids": [
+        "864e19c9e51b"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8257c24c6f38e987": {
+      "topic": "Lil Uzi Vert Vans Collaboration Sneaker Preview",
+      "item_ids": [
+        "40e0461d89eb"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6937784194f1633a": {
+      "topic": "GQ May 2026 Reader Shopping Roundup",
+      "item_ids": [
+        "885980bd31fe"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "341fff86d1146650": {
+      "topic": "Byron Allen Closes BuzzFeed Acquisition YouTube Strategy",
+      "item_ids": [
+        "e20bea6f8087"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "93c5cc51016c00c7": {
+      "topic": "Anitta Globo Film Production Starring Role",
+      "item_ids": [
+        "39c1504a0b80"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "68f3130e850e9453": {
+      "topic": "Sepideh Moafi The Pitt Fan Fiction Toxic Fandom Response",
+      "item_ids": [
+        "acbeca63e6ae"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1888fd94a371a3bd": {
+      "topic": "Keanu Reeves Leniency Request Director Netflix Fraud Case",
+      "item_ids": [
+        "d29ac8955bba"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ab0da0e084cf182c": {
+      "topic": "Maluma Mental Health Interview Medell\u00edn Estate",
+      "item_ids": [
+        "4f8901d8ddd7"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b9481ddf8f6a7944": {
+      "topic": "DIA Omar Camacho Emjay Emerging Latin Artists Spotlight",
+      "item_ids": [
+        "7bddf1861275"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "31e33f3d2db6492b": {
+      "topic": "Zac Brown Kendra Scott Wedding Greece",
+      "item_ids": [
+        "2262b947eed9"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3d6611dc7fe72ea5": {
+      "topic": "Great American State Fair 250th Birthday Lineup Martina McBride Flo Rida",
+      "item_ids": [
+        "206a2b665be5"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75f2691161bdc1e8": {
+      "topic": "Drake Historic Week Billboard Charts Analysis",
+      "item_ids": [
+        "b781380fed43"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3b5b3244d34675cc": {
+      "topic": "Tank and the Bangas New Orleans After Hours Profile",
+      "item_ids": [
+        "cb06895c498e"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63305be13cd3e790": {
+      "topic": "Anu Valia CAA Representation Signing",
+      "item_ids": [
+        "2d59e65512f7"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f4c4d33ad6f5ddd1": {
+      "topic": "Postseason Sports Roundup Matthews Updates",
+      "item_ids": [
+        "a12ee121d46b"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d631ddfc5767f2e9": {
+      "topic": "Jalen Hurts AJ Brown Communication Dynamics Update",
+      "item_ids": [
+        "9c57220caf7e"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "919bc9774d270591": {
+      "topic": "AD DeBoer Coaching Stability Assessment",
+      "item_ids": [
+        "2e73f3c512f2"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dcb11f321568e46d": {
+      "topic": "Rivian R2 SUV First Delivery June 9",
+      "item_ids": [
+        "aef95ed50564"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "78e4e570aadb4487": {
+      "topic": "Triomics Oncology AI Funding $22M Series",
+      "item_ids": [
+        "3bb425fa4e68"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "55bf1e7601c718f6": {
+      "topic": "Halide Mark III Camera App Built-in Editor Update",
+      "item_ids": [
+        "7ac32817d0c1"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a13dae5945c734df": {
+      "topic": "Marathon Open Play Week June 2 Launch",
+      "item_ids": [
+        "ee3f0fa99c6e"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "31a2ce5e3e12a9ff": {
+      "topic": "SSD Activity Privacy Tracking Websites Spy Method",
+      "item_ids": [
+        "657abec023ff"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "adcc4d20fb7bcd1a": {
+      "topic": "Iran GPS Jammer NASA Satellite Test Capability",
+      "item_ids": [
+        "68fce15c6e47"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bef3352f4baa0475": {
+      "topic": "Mina the Hollower Old-School Action Adventure Game Review",
+      "item_ids": [
+        "00f755e90417"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "02a915ef446f2cf7": {
+      "topic": "Dustin May Baseball News",
+      "item_ids": [
+        "36fee744e624"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9807f0a845e78d9c": {
+      "topic": "Milli Vanilli Trending Topic",
+      "item_ids": [
+        "c344200809d7"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "885cafbf35bd08d4": {
+      "topic": "Oman Trending Topic",
+      "item_ids": [
+        "6ebf061851c5"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4522107d7304bd96": {
+      "topic": "StickGiveaway Trending Hashtag",
+      "item_ids": [
+        "c04dfc73553a"
+      ],
+      "created_at": "2026-05-27T21:19:37.761045+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-27T19:24:39.804178+00:00"
+  "last_checked": "2026-05-27T21:19:48.265515+00:00"
 }
