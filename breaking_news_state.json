@@ -1,23 +1,5 @@
 {
   "known_ids": [
-    "1171da894157",
-    "f17021387847",
-    "4bd6bf6878ca",
-    "91a3489e31de",
-    "035f45136bf5",
-    "457d50ed3517",
-    "401f45d7d214",
-    "266de9a15aee",
-    "b3f71bfcbb8d",
-    "1eaf3737dcb5",
-    "3865bac7d098",
-    "03a217b8b244",
-    "9e5e4b2c6b62",
-    "792046d421a9",
-    "81ca8fec654e",
-    "0e026a44204f",
-    "7aed96f0ac82",
-    "ebb85b473afc",
     "1050b7016af7",
     "ce08229b3f11",
     "b69f5095651f",
@@ -499,57 +481,38 @@
     "71f468ac008e",
     "0bfa67440a2e",
     "0239f3834eef",
-    "d71ab846750f"
+    "d71ab846750f",
+    "81997632c413",
+    "8a82f591b0bd",
+    "63b3f3108697",
+    "f1dedc18c0b9",
+    "26f6274486d5",
+    "3c8044feb101",
+    "4aa96d39f941",
+    "d69da1fa3fae",
+    "9ac335415be0",
+    "202e7601540e",
+    "5de135386442",
+    "631aab615ce4",
+    "7670b4a76be0",
+    "1dd65f371807",
+    "b6d0ae4530d8",
+    "2253a7dad681",
+    "2d956e8b3fcc",
+    "6d131bc59e3d"
   ],
   "failed_ids": {
-    "4f10a9ab6b8c": "2026-05-26T22:09:30.721685+00:00",
-    "7acc4d1f0526": "2026-05-26T22:09:30.721685+00:00",
-    "4ced7484a6e3": "2026-05-26T22:09:30.721685+00:00",
-    "ec54900c5c2d": "2026-05-26T22:09:30.721685+00:00",
-    "091cb5eef6d5": "2026-05-26T22:09:30.721685+00:00",
-    "99105d43bf32": "2026-05-26T22:09:30.721685+00:00",
-    "321a9bfed3e1": "2026-05-26T22:09:30.721685+00:00",
-    "87d9187bbb2c": "2026-05-26T22:09:30.721685+00:00",
-    "091cbf243a32": "2026-05-26T22:09:30.721685+00:00",
-    "b3e528a27027": "2026-05-26T22:09:30.721685+00:00",
-    "529fc364c00d": "2026-05-26T22:09:30.721685+00:00",
-    "abf9b1246ae8": "2026-05-26T22:09:30.721685+00:00",
-    "8f431a2ea37f": "2026-05-26T22:09:30.721685+00:00",
-    "b2adb8fd595e": "2026-05-26T22:09:30.721685+00:00",
-    "0eaeb97f6207": "2026-05-26T22:09:30.721685+00:00",
-    "be30cf32f365": "2026-05-26T22:09:30.721685+00:00",
-    "e7b92c077d7e": "2026-05-26T22:09:30.721685+00:00",
-    "a6aff2e4def7": "2026-05-26T22:09:30.721685+00:00",
-    "f5045979ea1b": "2026-05-26T22:09:30.721685+00:00",
-    "d3527a5bb6dd": "2026-05-26T22:09:30.721685+00:00",
-    "d6d4658e2f26": "2026-05-26T23:33:20.781236+00:00",
-    "e86d5729eb34": "2026-05-26T23:33:20.781236+00:00",
-    "8e1644dde4f3": "2026-05-26T23:33:20.781236+00:00",
-    "2a473852667b": "2026-05-26T23:33:20.781236+00:00",
-    "aa4137c034cd": "2026-05-26T23:33:20.781236+00:00",
-    "daf0fc968107": "2026-05-26T23:33:20.781236+00:00",
-    "7e24b5486e6d": "2026-05-26T23:33:20.781236+00:00",
-    "f7bcb83bb308": "2026-05-26T23:33:20.781236+00:00",
-    "51bfa3900dd9": "2026-05-26T23:33:20.781236+00:00",
-    "16820a3627b5": "2026-05-26T23:33:20.781236+00:00",
-    "cc81f016b0a0": "2026-05-27T01:36:08.325055+00:00",
-    "e9d9bb8c415d": "2026-05-27T01:36:08.325055+00:00",
-    "91fc56640ff6": "2026-05-27T01:36:08.325055+00:00",
-    "8c2a8732dc91": "2026-05-27T01:36:08.325055+00:00",
-    "b8361929122c": "2026-05-27T01:36:08.325055+00:00",
-    "cb92c8a6c3b7": "2026-05-27T01:36:08.325055+00:00",
-    "b75f7d5a5e93": "2026-05-27T01:36:08.325055+00:00"
+    "cd909038e8d5": "2026-05-27T06:00:36.924078+00:00",
+    "4742d05d25ba": "2026-05-27T06:00:36.924078+00:00",
+    "cd1a2f13f003": "2026-05-27T06:00:36.924078+00:00",
+    "1d61a1102f16": "2026-05-27T06:00:36.924078+00:00",
+    "759e38e9768d": "2026-05-27T06:00:36.924078+00:00",
+    "68aaececa783": "2026-05-27T06:00:36.924078+00:00",
+    "fe4e625528ab": "2026-05-27T06:00:36.924078+00:00",
+    "05203bc76e2a": "2026-05-27T06:00:36.924078+00:00",
+    "91fc56640ff6": "2026-05-27T06:00:36.924078+00:00"
   },
   "live_clusters": {
-    "6ea65fbf7ccb0d48": {
-      "topic": "Dom Dolla AFL Grand Final Eve Concert Melbourne",
-      "item_ids": [
-        "cd5c18cee754"
-      ],
-      "created_at": "2026-05-26T05:48:47.578762+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "1a95bc29a1653944": {
       "topic": "Naseeruddin Shah Jim Sarbh Amazon MX Player 'Made in India: A Titan Story' Series",
       "item_ids": [
@@ -646,7 +609,8 @@
       "item_ids": [
         "28f91664ec45",
         "41c4d56271ca",
-        "b39b11c1cb9f"
+        "b39b11c1cb9f",
+        "8a82f591b0bd"
       ],
       "created_at": "2026-05-26T16:13:34.588879+00:00",
       "last_escalated_size": 3,
@@ -1099,11 +1063,19 @@
       "topic": "Bad Bunny Toy Story 5 Character Voice",
       "item_ids": [
         "ae0b7c6930ab",
-        "9db46184aab5"
+        "9db46184aab5",
+        "63b3f3108697"
       ],
       "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-27T06:00:36.924078+00:00",
+      "picks_file": "picks/picks-2026-05-27-0601.md",
+      "why_text": "Disney and Pixar landing Bad Bunny for Toy Story 5 is a major cultural signal \u2014 it's the franchise explicitly reaching for a younger, Latino audience at a moment when Bad Bunny is arguably the biggest pop star on the planet. This isn't a cameo casting; it's a statement about who Pixar sees as the future of family entertainment. The move bridges reggaeton's global dominance with one of cinema's most beloved legacy IPs.",
+      "last_escalated_item_ids": [
+        "ae0b7c6930ab",
+        "9db46184aab5",
+        "63b3f3108697"
+      ]
     },
     "18aa35e9fd288b75": {
       "topic": "Pacsun Gov Ball Festival Merchandise Collection",
@@ -1458,7 +1430,106 @@
       "created_at": "2026-05-27T01:36:36.729341+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "6362e12830716541": {
+      "topic": "Chanel Matthieu Blazy M\u00e9tiers d'Art 2026 Seoul Show",
+      "item_ids": [
+        "81997632c413"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "07ecb2c57163cbcd": {
+      "topic": "Katseye Tour Sold Out 48 Hours",
+      "item_ids": [
+        "f1dedc18c0b9"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7c03436ef1f54882": {
+      "topic": "Golden Knights sweep Avalanche Stanley Cup Playoffs",
+      "item_ids": [
+        "26f6274486d5"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "03e9e0a44b37ce00": {
+      "topic": "Vegas Golden Knights Stanley Cup Final Return",
+      "item_ids": [
+        "3c8044feb101"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a9727cb253236d54": {
+      "topic": "Thunder balanced attack series lead NBA Playoffs",
+      "item_ids": [
+        "4aa96d39f941"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "455e426ae98c77d9": {
+      "topic": "Samsung unions chip workers $400,000 bonuses deal",
+      "item_ids": [
+        "d69da1fa3fae"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "17042d095795c0c1": {
+      "topic": "Fujitsu OpenAI AI transformation Japan enterprise",
+      "item_ids": [
+        "9ac335415be0"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3192513504dce396": {
+      "topic": "USI SiC Chip-Embedded Packaging PCIM Europe 2026",
+      "item_ids": [
+        "202e7601540e"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b518f597b51e4d8e": {
+      "topic": "Nomura Science Technology Fund Q1 2026",
+      "item_ids": [
+        "5de135386442"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e63dc8e6ffde18dd": {
+      "topic": "Credo Technology stock 42% rally winning streak",
+      "item_ids": [
+        "631aab615ce4"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3a1c9ec9a073fd3b": {
+      "topic": "Technology analyst insights ENPH ASX ADSK",
+      "item_ids": [
+        "7670b4a76be0"
+      ],
+      "created_at": "2026-05-27T06:01:15.618515+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-27T01:36:42.946955+00:00"
+  "last_checked": "2026-05-27T06:01:25.442512+00:00"
 }
