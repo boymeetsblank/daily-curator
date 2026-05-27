@@ -1,24 +1,5 @@
 {
   "known_ids": [
-    "cf0e6e41e5ba",
-    "df00e65d1f19",
-    "7c406f1f6824",
-    "25f125509688",
-    "74d77609a3ad",
-    "a174b49801e7",
-    "bdb7fd9cc52c",
-    "1d96808d7253",
-    "c1293d5ab4ca",
-    "702d60a8e000",
-    "3ab4b1686b01",
-    "3d77a48f1bbc",
-    "9f62a9b3a78d",
-    "73fe94cb99e1",
-    "987202f35372",
-    "354027cba18e",
-    "17e508155961",
-    "047394d7d41e",
-    "25f2c841ef00",
     "1171da894157",
     "f17021387847",
     "4bd6bf6878ca",
@@ -499,24 +480,28 @@
     "a0d91eb24a85",
     "2399a4d9b528",
     "51279cd82ab2",
-    "e74c0f12bf48"
+    "e74c0f12bf48",
+    "3c60e75dcb26",
+    "088bad303098",
+    "fbdbe2348bd1",
+    "40b5ba0485f3",
+    "ad32779bdc95",
+    "b39b11c1cb9f",
+    "4977a795047f",
+    "c8b28995f51c",
+    "ba69717f0cea",
+    "0b11084df606",
+    "1512f7dbb7c0",
+    "9aeb5a62e785",
+    "a3bf820663b0",
+    "2a847856bbf7",
+    "f49e1ac9b079",
+    "71f468ac008e",
+    "0bfa67440a2e",
+    "0239f3834eef",
+    "d71ab846750f"
   ],
   "failed_ids": {
-    "20f65d737147": "2026-05-26T20:34:45.337189+00:00",
-    "df56f50d586c": "2026-05-26T20:34:45.337189+00:00",
-    "9ce623c831f1": "2026-05-26T20:34:45.337189+00:00",
-    "3571ba23ee9c": "2026-05-26T20:34:45.337189+00:00",
-    "fda5b9367911": "2026-05-26T20:34:45.337189+00:00",
-    "2427422af716": "2026-05-26T20:34:45.337189+00:00",
-    "5dafe2d9eecf": "2026-05-26T20:34:45.337189+00:00",
-    "39ba142a0c46": "2026-05-26T20:34:45.337189+00:00",
-    "d2afe6d01c5c": "2026-05-26T20:34:45.337189+00:00",
-    "622324509b98": "2026-05-26T20:34:45.337189+00:00",
-    "cd0e541e265d": "2026-05-26T20:34:45.337189+00:00",
-    "0e3d6bdd1a73": "2026-05-26T20:34:45.337189+00:00",
-    "a5f624d79a74": "2026-05-26T20:34:45.337189+00:00",
-    "677b6ae7871d": "2026-05-26T20:34:45.337189+00:00",
-    "f49e1ac9b079": "2026-05-26T20:34:45.337189+00:00",
     "4f10a9ab6b8c": "2026-05-26T22:09:30.721685+00:00",
     "7acc4d1f0526": "2026-05-26T22:09:30.721685+00:00",
     "4ced7484a6e3": "2026-05-26T22:09:30.721685+00:00",
@@ -546,18 +531,16 @@
     "7e24b5486e6d": "2026-05-26T23:33:20.781236+00:00",
     "f7bcb83bb308": "2026-05-26T23:33:20.781236+00:00",
     "51bfa3900dd9": "2026-05-26T23:33:20.781236+00:00",
-    "16820a3627b5": "2026-05-26T23:33:20.781236+00:00"
+    "16820a3627b5": "2026-05-26T23:33:20.781236+00:00",
+    "cc81f016b0a0": "2026-05-27T01:36:08.325055+00:00",
+    "e9d9bb8c415d": "2026-05-27T01:36:08.325055+00:00",
+    "91fc56640ff6": "2026-05-27T01:36:08.325055+00:00",
+    "8c2a8732dc91": "2026-05-27T01:36:08.325055+00:00",
+    "b8361929122c": "2026-05-27T01:36:08.325055+00:00",
+    "cb92c8a6c3b7": "2026-05-27T01:36:08.325055+00:00",
+    "b75f7d5a5e93": "2026-05-27T01:36:08.325055+00:00"
   },
   "live_clusters": {
-    "d1eed2d60a5c1e86": {
-      "topic": "Accenture Invests in Aera Technology Agentic AI Supply Chain",
-      "item_ids": [
-        "dddd626fcb68"
-      ],
-      "created_at": "2026-05-26T01:33:59.549227+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "6ea65fbf7ccb0d48": {
       "topic": "Dom Dolla AFL Grand Final Eve Concert Melbourne",
       "item_ids": [
@@ -662,11 +645,19 @@
       "topic": "Drake Surpasses Michael Jackson No. 1 Solo Male Artist Record",
       "item_ids": [
         "28f91664ec45",
-        "41c4d56271ca"
+        "41c4d56271ca",
+        "b39b11c1cb9f"
       ],
       "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-27T01:36:08.325055+00:00",
+      "picks_file": "picks/picks-2026-05-27-0136.md",
+      "why_text": "Drake has officially passed Michael Jackson to become the solo male artist with the most No. 1 albums in Billboard history \u2014 a milestone that reframes his legacy from rap superstar to all-time pop culture monument. The timing is pointed: Drake is coming off a bruising public year, and this record lands as a quiet, statistical rebuttal to anyone who counted him out. It's a reminder that longevity and catalog depth are their own kind of dominance.",
+      "last_escalated_item_ids": [
+        "28f91664ec45",
+        "41c4d56271ca",
+        "b39b11c1cb9f"
+      ]
     },
     "57a33d56012e214e": {
       "topic": "Toy Story 5 Filmmakers Discuss Woody Aging and Story Direction",
@@ -1316,7 +1307,8 @@
     "d6267b7d875db13b": {
       "topic": "BTS Vegas Samsung Partnership Fan Activations Citywide Takeover",
       "item_ids": [
-        "14e581344b47"
+        "14e581344b47",
+        "40b5ba0485f3"
       ],
       "created_at": "2026-05-26T23:33:50.861878+00:00",
       "last_escalated_size": 0,
@@ -1384,7 +1376,89 @@
       "created_at": "2026-05-26T23:33:50.861878+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b37a974e8f59cc2d": {
+      "topic": "'Summer House' Reunion Recap Ciara Miller Amanda Batula West Wilson Confrontation",
+      "item_ids": [
+        "3c60e75dcb26"
+      ],
+      "created_at": "2026-05-27T01:36:36.729341+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b67a8f4637178202": {
+      "topic": "'Pressure' WWII Film Andrew Scott Brendan Fraser D-Day Weather Forecast",
+      "item_ids": [
+        "088bad303098",
+        "0b11084df606"
+      ],
+      "created_at": "2026-05-27T01:36:36.729341+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4d5b5e4bd472c58e": {
+      "topic": "Nike Ja 3 Signature Sneaker Release",
+      "item_ids": [
+        "fbdbe2348bd1"
+      ],
+      "created_at": "2026-05-27T01:36:36.729341+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a122c0af19fe39f0": {
+      "topic": "Carlos Vives 'Te Dedico' Latin Airplay No. 1 Return",
+      "item_ids": [
+        "ad32779bdc95"
+      ],
+      "created_at": "2026-05-27T01:36:36.729341+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "12eb3d072ffb487f": {
+      "topic": "David Nail Country Ballad 'She Knows' New Release",
+      "item_ids": [
+        "4977a795047f"
+      ],
+      "created_at": "2026-05-27T01:36:36.729341+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "96df1394d31023cf": {
+      "topic": "Eiza Gonz\u00e1lez 'I Love Boosters' Director Boots Riley Praise",
+      "item_ids": [
+        "c8b28995f51c"
+      ],
+      "created_at": "2026-05-27T01:36:36.729341+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "941cf1dd6558742b": {
+      "topic": "'Boston Blue' Sonequa Martin-Green Character Evolution Interview",
+      "item_ids": [
+        "ba69717f0cea"
+      ],
+      "created_at": "2026-05-27T01:36:36.729341+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2c75098af7c1ea6b": {
+      "topic": "Cooper Hoffman Hulu Drama Pilot 'Durango' Lead Role",
+      "item_ids": [
+        "1512f7dbb7c0"
+      ],
+      "created_at": "2026-05-27T01:36:36.729341+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6d83c93410232cc8": {
+      "topic": "SK Hynix $1 Trillion Valuation AI Boom South Korean Chip Stocks",
+      "item_ids": [
+        "9aeb5a62e785"
+      ],
+      "created_at": "2026-05-27T01:36:36.729341+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-26T23:33:50.865251+00:00"
+  "last_checked": "2026-05-27T01:36:42.946955+00:00"
 }
