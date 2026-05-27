@@ -1,26 +1,5 @@
 {
   "known_ids": [
-    "cc7d5992fc14",
-    "1a8200760839",
-    "01412404421b",
-    "6726343cb864",
-    "a8ba3e3f66ce",
-    "58325559c8fd",
-    "fbd574fbad3f",
-    "171f7c497a91",
-    "d9b070ac1ddd",
-    "5e619dae7a3e",
-    "72ef5970cb0a",
-    "2d99552dd20b",
-    "653df86c37db",
-    "9b45eabc7311",
-    "32a03fa8e32c",
-    "59926ce16203",
-    "6602eb3e0925",
-    "64238ab67cc8",
-    "19e390ad0c5e",
-    "3f69ea220c9b",
-    "06f6d857b8b5",
     "6d1942b91279",
     "c47e9967e5e5",
     "012731a27831",
@@ -499,29 +478,30 @@
     "ae01b73b5dff",
     "c7e900f4e1f0",
     "8344e3b4e669",
-    "b57674c07097"
+    "b57674c07097",
+    "c8a10f8e0fd9",
+    "e572c6ab1e58",
+    "936b88ee7738",
+    "93377b741a2f",
+    "1ec329b9488c",
+    "ae837fabd4ba",
+    "bfd2ded3d647",
+    "d3ff6c0ad7d2",
+    "b77136c1cd7a",
+    "483d5246bbf8",
+    "2ff19923af60",
+    "3e63531d7033",
+    "a6fdcf69bf3f",
+    "28f6ddc14641",
+    "55c777bd9e75",
+    "4625f0e31e6d",
+    "0df22ee84f17",
+    "e79c222e3130",
+    "f7aa621c1bf3",
+    "f99fe7978f92",
+    "2041ace59d3d"
   ],
   "failed_ids": {
-    "d8dcbffd4821": "2026-05-27T19:24:05.687974+00:00",
-    "aa7d2cb6d569": "2026-05-27T19:24:05.687974+00:00",
-    "ed628492afa9": "2026-05-27T19:24:05.687974+00:00",
-    "219cbd6d7d03": "2026-05-27T19:24:05.687974+00:00",
-    "5802baab2c10": "2026-05-27T19:24:05.687974+00:00",
-    "a4a42e92d869": "2026-05-27T19:24:05.687974+00:00",
-    "c535efbbb5b6": "2026-05-27T19:24:05.687974+00:00",
-    "54aec914d62d": "2026-05-27T19:24:05.687974+00:00",
-    "ed748c26e326": "2026-05-27T19:24:05.687974+00:00",
-    "a34e6287e254": "2026-05-27T19:24:05.687974+00:00",
-    "74404242c510": "2026-05-27T19:24:05.687974+00:00",
-    "13875e9b0a18": "2026-05-27T19:24:05.687974+00:00",
-    "a1ba3a74edef": "2026-05-27T19:24:05.687974+00:00",
-    "0f5d480ddda3": "2026-05-27T19:24:05.687974+00:00",
-    "28f0892e42ec": "2026-05-27T19:24:05.687974+00:00",
-    "8d7c4cde7478": "2026-05-27T19:24:05.687974+00:00",
-    "a2dc014d7ef1": "2026-05-27T19:24:05.687974+00:00",
-    "24a249edee4e": "2026-05-27T19:24:05.687974+00:00",
-    "a1288c6f3026": "2026-05-27T19:24:05.687974+00:00",
-    "af7116bd1ef1": "2026-05-27T19:24:05.687974+00:00",
     "b2e8742fae2e": "2026-05-27T21:18:58.317745+00:00",
     "512a4a0120f5": "2026-05-27T21:18:58.317745+00:00",
     "729ebad86604": "2026-05-27T21:18:58.317745+00:00",
@@ -536,112 +516,15 @@
     "150a40748f92": "2026-05-27T22:53:37.625699+00:00",
     "fd98f843e87c": "2026-05-27T22:53:37.625699+00:00",
     "4cd50a103022": "2026-05-27T22:53:37.625699+00:00",
-    "3f075d1f283c": "2026-05-27T22:53:37.625699+00:00"
+    "3f075d1f283c": "2026-05-27T22:53:37.625699+00:00",
+    "e076901db5c9": "2026-05-27T23:56:57.715913+00:00",
+    "f17097b7a4a8": "2026-05-27T23:56:57.715913+00:00",
+    "eb4cea75cdd6": "2026-05-27T23:56:57.715913+00:00",
+    "92799986a52e": "2026-05-27T23:56:57.715913+00:00",
+    "6bcff5c77732": "2026-05-27T23:56:57.715913+00:00",
+    "a2dc014d7ef1": "2026-05-27T23:56:57.715913+00:00"
   },
   "live_clusters": {
-    "09b613d4165d250a": {
-      "topic": "Mark Duplass Defends Kane Parsons as Director of 'Backrooms' Horror Film",
-      "item_ids": [
-        "99df69649221",
-        "a408141515b6"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "68e13a434d147062": {
-      "topic": "Eddy Current Suppression Ring Surprise Album Release",
-      "item_ids": [
-        "10dd2c222fa9"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c0a287c66727f118": {
-      "topic": "Spotify Long-Form Magazine Articles Feature Launch",
-      "item_ids": [
-        "bc9679da07e4"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d6267b7d875db13b": {
-      "topic": "BTS Vegas Samsung Partnership Fan Activations Citywide Takeover",
-      "item_ids": [
-        "14e581344b47",
-        "40b5ba0485f3"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ee906109368eb92c": {
-      "topic": "'KPop Demon Hunters' Criterion Collection Blu-ray DVD Release",
-      "item_ids": [
-        "cad6689167b5"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "88afa2c28e44d6fa": {
-      "topic": "'The Boys' Prequel Series 'Vought Rising' Development",
-      "item_ids": [
-        "4c3c43ab0be9",
-        "3b8d73e00f0d"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "987c361392efed52": {
-      "topic": "'Chess' Broadway Early Closure Lea Michele Departure",
-      "item_ids": [
-        "b78154fdc9ac"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e09b64886ff21da1": {
-      "topic": "Pope Leo Criticism of Tech Leaders on Tolkien",
-      "item_ids": [
-        "b431a0450af6"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "25b0432afa8003a7": {
-      "topic": "DuckDuckGo Install Surge User Rejection of Google AI Search",
-      "item_ids": [
-        "1e2ebecf46ce",
-        "accd3b357754"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "75d319bd1fb1c0ee": {
-      "topic": "Sony Shuts Down Destruction AllStars Online Multiplayer",
-      "item_ids": [
-        "e92e98df8d14"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "359fb33bb44fa9e2": {
-      "topic": "Pope Leo Gandalf Quote Potential Peter Thiel Target Investigation",
-      "item_ids": [
-        "6ff4055a2781"
-      ],
-      "created_at": "2026-05-26T23:33:50.861878+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "b37a974e8f59cc2d": {
       "topic": "'Summer House' Reunion Recap Ciara Miller Amanda Batula West Wilson Confrontation",
       "item_ids": [
@@ -1783,7 +1666,8 @@
     "1888fd94a371a3bd": {
       "topic": "Keanu Reeves Leniency Request Director Netflix Fraud Case",
       "item_ids": [
-        "d29ac8955bba"
+        "d29ac8955bba",
+        "b77136c1cd7a"
       ],
       "created_at": "2026-05-27T21:19:37.761045+00:00",
       "last_escalated_size": 0,
@@ -2044,11 +1928,20 @@
     "4542ab3ab453a5f2": {
       "topic": "Google Security Engineer Arrested Polymarket Trading Scheme",
       "item_ids": [
-        "29235b0781e7"
+        "29235b0781e7",
+        "3e63531d7033",
+        "a6fdcf69bf3f"
       ],
       "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-27T23:56:57.715913+00:00",
+      "picks_file": "picks/picks-2026-05-27-2357.md",
+      "why_text": "A Google security engineer was arrested for allegedly using insider access to company search data to place winning bets on Polymarket, the crypto prediction market \u2014 netting around $1 million in the process. This is a landmark case: it's the first major insider trading prosecution tied to a prediction market, and it forces a reckoning with how platforms like Polymarket handle information asymmetry. The irony of a security professional weaponizing his own access cuts deep \u2014 and signals that regulators are now watching crypto prediction markets like never before.",
+      "last_escalated_item_ids": [
+        "29235b0781e7",
+        "3e63531d7033",
+        "a6fdcf69bf3f"
+      ]
     },
     "cc14ead4a69b035e": {
       "topic": "Amazon Health Executive Departure Amwell Co-founder Replacement",
@@ -2062,12 +1955,114 @@
     "eee7d9de0e52117f": {
       "topic": "Salesforce CEO Marc Benioff Stock Recovery Strategy",
       "item_ids": [
-        "604c478aebb4"
+        "604c478aebb4",
+        "4625f0e31e6d"
       ],
       "created_at": "2026-05-27T22:54:09.419741+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "093083bd4efb3d81": {
+      "topic": "Jason Kidd Nike Zoom Flight 5 Sneaker 2027 Return",
+      "item_ids": [
+        "c8a10f8e0fd9"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "86fd44948438598a": {
+      "topic": "'Disclosure Day' Spielberg Film Emily Blunt First Reactions",
+      "item_ids": [
+        "e572c6ab1e58",
+        "d3ff6c0ad7d2"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "284a89ca73f6f3ba": {
+      "topic": "'Widow's Bay' Betty Gilpin Hamish Linklater 1702 Flashback Episode",
+      "item_ids": [
+        "936b88ee7738"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "33f789ed2308f1bd": {
+      "topic": "'The Testaments' Elisabeth Moss Season Finale Agnes Twist Season 2 Plans",
+      "item_ids": [
+        "93377b741a2f"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f7173d0af6b8aaed": {
+      "topic": "Gayle King Oprah Rumors 'Secretly Gay' Interview",
+      "item_ids": [
+        "1ec329b9488c"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "efb515b6d0461a15": {
+      "topic": "Taylor Swift 'Life of a Showgirl' Trademark First Amendment Legal Battle",
+      "item_ids": [
+        "ae837fabd4ba",
+        "bfd2ded3d647"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7f7513785c57822c": {
+      "topic": "'Emily in Paris' Season 6 Development Update",
+      "item_ids": [
+        "483d5246bbf8"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3a4fd1ad0d458be4": {
+      "topic": "Rentrak PE Acquisition Comscore Movies Restored Name Chris Aronson",
+      "item_ids": [
+        "2ff19923af60"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8dce1210f369c3df": {
+      "topic": "Petraeus Drone Swarms Next Military Technology Threat",
+      "item_ids": [
+        "28f6ddc14641"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8798314ad59fa5ff": {
+      "topic": "Mark Zuckerberg Meta Cloud Computing Business Plans",
+      "item_ids": [
+        "55c777bd9e75"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b80d3056e302a99d": {
+      "topic": "Silicon Valley Tech Partnerships AI Regulation Policy",
+      "item_ids": [
+        "0df22ee84f17"
+      ],
+      "created_at": "2026-05-27T23:57:34.351531+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-27T22:54:09.421003+00:00"
+  "last_checked": "2026-05-27T23:57:39.182072+00:00"
 }
