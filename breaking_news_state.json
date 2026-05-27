@@ -1,23 +1,5 @@
 {
   "known_ids": [
-    "1050b7016af7",
-    "ce08229b3f11",
-    "b69f5095651f",
-    "55e14c9a2ed5",
-    "d6d0d6a4a751",
-    "df3f7441eb79",
-    "207a56e298de",
-    "54db81a609fb",
-    "27238f86e6b6",
-    "106461318fc3",
-    "01eb1940fddb",
-    "03761f8ccbe2",
-    "b2eeb83da149",
-    "6995b3a3976c",
-    "bbb3fdba7190",
-    "7b2518dba36a",
-    "40b9208bb4ff",
-    "facb13cf9ef3",
     "587205d25ecc",
     "58c2b5de04d9",
     "fc4bedbc0cf5",
@@ -499,93 +481,40 @@
     "b6d0ae4530d8",
     "2253a7dad681",
     "2d956e8b3fcc",
-    "6d131bc59e3d"
+    "6d131bc59e3d",
+    "7b0a806309db",
+    "9044a850b969",
+    "7e3feb658b92",
+    "afcf727e25ef",
+    "abef178555b9",
+    "cb7f4debcd22",
+    "a408141515b6",
+    "573c3ef8abca",
+    "9726d26d00e9",
+    "4becf1cd9d27",
+    "2de86aa7a440",
+    "accd3b357754",
+    "e1504ccd575d",
+    "988ef2bf95da",
+    "1fadddaf7084",
+    "b3dcfc57c9c0",
+    "36cbc78fd8f1",
+    "d80c89c5331c"
   ],
   "failed_ids": {
-    "cd909038e8d5": "2026-05-27T06:00:36.924078+00:00",
-    "4742d05d25ba": "2026-05-27T06:00:36.924078+00:00",
-    "cd1a2f13f003": "2026-05-27T06:00:36.924078+00:00",
-    "1d61a1102f16": "2026-05-27T06:00:36.924078+00:00",
-    "759e38e9768d": "2026-05-27T06:00:36.924078+00:00",
-    "68aaececa783": "2026-05-27T06:00:36.924078+00:00",
-    "fe4e625528ab": "2026-05-27T06:00:36.924078+00:00",
-    "05203bc76e2a": "2026-05-27T06:00:36.924078+00:00",
-    "91fc56640ff6": "2026-05-27T06:00:36.924078+00:00"
+    "fcba012e9ba3": "2026-05-27T10:14:35.968497+00:00",
+    "c05fbff23bb5": "2026-05-27T10:14:35.968497+00:00",
+    "cc0a66a9ecc7": "2026-05-27T10:14:35.968497+00:00",
+    "5772af1b2931": "2026-05-27T10:14:35.968497+00:00",
+    "d588c35ef257": "2026-05-27T10:14:35.968497+00:00",
+    "3978e4cbd2a0": "2026-05-27T10:14:35.968497+00:00",
+    "1c5e4bdfef65": "2026-05-27T10:14:35.968497+00:00",
+    "0b4b0f11b530": "2026-05-27T10:14:35.968497+00:00",
+    "b89eb36345a0": "2026-05-27T10:14:35.968497+00:00",
+    "4ab8fa37ddee": "2026-05-27T10:14:35.968497+00:00",
+    "f467bfec9689": "2026-05-27T10:14:35.968497+00:00"
   },
   "live_clusters": {
-    "1a95bc29a1653944": {
-      "topic": "Naseeruddin Shah Jim Sarbh Amazon MX Player 'Made in India: A Titan Story' Series",
-      "item_ids": [
-        "8f95215fade1"
-      ],
-      "created_at": "2026-05-26T08:59:01.383260+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "982484b4192cd462": {
-      "topic": "Rise Against Dropkick Murphys Australian New Zealand Tour",
-      "item_ids": [
-        "4b3ea3790ef7"
-      ],
-      "created_at": "2026-05-26T08:59:01.383260+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "caf2862b5c4f5273": {
-      "topic": "Netflix Brazilian Medical Drama 'MED' Original Series",
-      "item_ids": [
-        "70212c136502"
-      ],
-      "created_at": "2026-05-26T08:59:01.383260+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "34a1295fae54b5e8": {
-      "topic": "Russell T. Davies Queer Drama 'Tip Toe' American Version Lead Casting",
-      "item_ids": [
-        "b7c427cf1b68"
-      ],
-      "created_at": "2026-05-26T08:59:01.383260+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b3de059bd545ef07": {
-      "topic": "Banijay Norway 'The Comedy League' Format",
-      "item_ids": [
-        "cd825953e41f"
-      ],
-      "created_at": "2026-05-26T08:59:01.383260+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3b6bdc3b5da2cfee": {
-      "topic": "Philippines Academy Oscars Campaign Reform Film Worker Protections",
-      "item_ids": [
-        "cac3e445a90c"
-      ],
-      "created_at": "2026-05-26T08:59:01.383260+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5ade04d956e8a586": {
-      "topic": "Ferrari First Fully Electric Vehicle Launch Stock Drop",
-      "item_ids": [
-        "024297172a19",
-        "aeb56b74f84a"
-      ],
-      "created_at": "2026-05-26T08:59:01.383260+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fb19fedd1beb5075": {
-      "topic": "Poznan University of Technology IQM Quantum Computer Installation",
-      "item_ids": [
-        "c5b80f26fee3"
-      ],
-      "created_at": "2026-05-26T08:59:01.383260+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "727d54f1efa6993d": {
       "topic": "Air Jordan 15 RE Black/Muslin Release",
       "item_ids": [
@@ -1252,7 +1181,8 @@
     "09b613d4165d250a": {
       "topic": "Mark Duplass Defends Kane Parsons as Director of 'Backrooms' Horror Film",
       "item_ids": [
-        "99df69649221"
+        "99df69649221",
+        "a408141515b6"
       ],
       "created_at": "2026-05-26T23:33:50.861878+00:00",
       "last_escalated_size": 0,
@@ -1325,7 +1255,8 @@
     "25b0432afa8003a7": {
       "topic": "DuckDuckGo Install Surge User Rejection of Google AI Search",
       "item_ids": [
-        "1e2ebecf46ce"
+        "1e2ebecf46ce",
+        "accd3b357754"
       ],
       "created_at": "2026-05-26T23:33:50.861878+00:00",
       "last_escalated_size": 0,
@@ -1352,7 +1283,8 @@
     "b37a974e8f59cc2d": {
       "topic": "'Summer House' Reunion Recap Ciara Miller Amanda Batula West Wilson Confrontation",
       "item_ids": [
-        "3c60e75dcb26"
+        "3c60e75dcb26",
+        "d80c89c5331c"
       ],
       "created_at": "2026-05-27T01:36:36.729341+00:00",
       "last_escalated_size": 0,
@@ -1529,7 +1461,124 @@
       "created_at": "2026-05-27T06:01:15.618515+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "6d61e142e2817ec6": {
+      "topic": "Danner x N.HOOLYWOOD Postman Shoe Spring 2026 Collaboration",
+      "item_ids": [
+        "7b0a806309db"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "23b6296dd47163ea": {
+      "topic": "Basic.Space Curated Design Pop-Up London Launch",
+      "item_ids": [
+        "9044a850b969"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "64da454963726df4": {
+      "topic": "Canadian Artists Billboard Hot 100 No. 1 Chart History",
+      "item_ids": [
+        "7e3feb658b92"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0bd5ededcd04325d": {
+      "topic": "Starship Entertainment IDID K-Pop Group Debut",
+      "item_ids": [
+        "afcf727e25ef"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bdf009d3b26f8ca5": {
+      "topic": "Mallrat North America Tour New Music Announcement",
+      "item_ids": [
+        "abef178555b9"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "758c1bcb0aa6d116": {
+      "topic": "We Are Parable 2026 Momentum Cohort Announcement",
+      "item_ids": [
+        "cb7f4debcd22"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d48feff164055566": {
+      "topic": "Stranger Things Effect Scripted TV Season Gap Analysis Report",
+      "item_ids": [
+        "573c3ef8abca"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ba4c81e3aa4418ed": {
+      "topic": "Corsair Galleon 100 SD Stream Deck Review",
+      "item_ids": [
+        "9726d26d00e9"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "82bf096c10425241": {
+      "topic": "New Tiny Octopus Species Discovery Gal\u00e1pagos Islands",
+      "item_ids": [
+        "4becf1cd9d27"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d44c53730eeb8e2b": {
+      "topic": "NASA Lunar Base South Pole Construction Plan",
+      "item_ids": [
+        "2de86aa7a440"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0f0c658f0e0b02ab": {
+      "topic": "Taiwan Chip Stocks Rally Nvidia $150 Billion Spending Announcement",
+      "item_ids": [
+        "e1504ccd575d"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ad08ff8a925f5513": {
+      "topic": "Microchip Technology Demand Rebound Bookings 4-Year High",
+      "item_ids": [
+        "988ef2bf95da"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5a7e4d06328584b0": {
+      "topic": "Marvell Technology Q1 Earnings Pre-Market Surge",
+      "item_ids": [
+        "1fadddaf7084"
+      ],
+      "created_at": "2026-05-27T10:15:11.428326+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-27T06:01:25.442512+00:00"
+  "last_checked": "2026-05-27T10:15:11.429495+00:00"
 }
