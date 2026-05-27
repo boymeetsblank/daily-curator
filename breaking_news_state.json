@@ -1,42 +1,5 @@
 {
   "known_ids": [
-    "9e5d66df9689",
-    "bad5881f3297",
-    "64833ad769b3",
-    "f7dc209d1486",
-    "770bd9c54fcd",
-    "7920d04193b0",
-    "fe2a44de6c42",
-    "1ed94562e292",
-    "7b8f1726e7a9",
-    "0eb0f4719380",
-    "5008af3a386b",
-    "4318075d0ef3",
-    "2026dd8457aa",
-    "af76e47eac4d",
-    "2965210ac7e1",
-    "de20a32107fe",
-    "b80ec5ff091c",
-    "3a67faae5333",
-    "c4760bf4ab08",
-    "58b2d38b2586",
-    "77210d81b8fe",
-    "c0c94014e930",
-    "aff6884e2d65",
-    "ee543189c969",
-    "f9c22f33f98a",
-    "d980118a65bf",
-    "9a85b396e294",
-    "bf272544af6a",
-    "fa8cbc361663",
-    "68ac0fbf3d48",
-    "390c547c391e",
-    "02a4b9ee7980",
-    "6b7086af536c",
-    "f9d54ae3c5d4",
-    "136fe61aed12",
-    "51148db7210a",
-    "71c133ff0c83",
     "347dd50e7880",
     "dc21e64ee5f2",
     "fafb8f2d17ee",
@@ -499,20 +462,46 @@
     "60c2ff9533c0",
     "ba5ac11dbdb6",
     "3ab468916075",
-    "5f9c54b8f6b2"
+    "5f9c54b8f6b2",
+    "d64cbe181e47",
+    "a221051cd271",
+    "c8ee4e48f719",
+    "4913f6d46566",
+    "92d1b621b40d",
+    "5273fc6aeb7e",
+    "477bdfe3cb82",
+    "64de5554ec35",
+    "7b6e8445889c",
+    "8bd604bc5f8e",
+    "e0e6766a437e",
+    "aac466fad8e6",
+    "274491eca225",
+    "925bb3e5b48a",
+    "e1ebcfd1b9e6",
+    "a8f619f5b10b",
+    "da3dc6ff381b",
+    "5e917aee93b8",
+    "89ab6dc2ed72",
+    "05063096037a",
+    "18a77a7c1608",
+    "1cc872c669a3",
+    "9121f00bea36",
+    "ac227cf1928a",
+    "289f9ec44601",
+    "51db6fb36c24",
+    "cc9aa9ec1516",
+    "b97fded2946c",
+    "9614f39d4c4d",
+    "d4ce7f402d92",
+    "c05fa3778e32",
+    "0dfe84b7229b",
+    "26a9953f72a4",
+    "a4c9931a83b5",
+    "adf41dd776bf",
+    "8f21befcc147",
+    "0988db4fc1d2"
   ],
   "failed_ids": {
-    "fcba012e9ba3": "2026-05-27T10:14:35.968497+00:00",
-    "c05fbff23bb5": "2026-05-27T10:14:35.968497+00:00",
-    "cc0a66a9ecc7": "2026-05-27T10:14:35.968497+00:00",
-    "5772af1b2931": "2026-05-27T10:14:35.968497+00:00",
-    "d588c35ef257": "2026-05-27T10:14:35.968497+00:00",
-    "3978e4cbd2a0": "2026-05-27T10:14:35.968497+00:00",
-    "1c5e4bdfef65": "2026-05-27T10:14:35.968497+00:00",
-    "0b4b0f11b530": "2026-05-27T10:14:35.968497+00:00",
-    "b89eb36345a0": "2026-05-27T10:14:35.968497+00:00",
-    "4ab8fa37ddee": "2026-05-27T10:14:35.968497+00:00",
-    "f467bfec9689": "2026-05-27T10:14:35.968497+00:00",
     "cd909038e8d5": "2026-05-27T13:50:41.009054+00:00",
     "dfd4f618acde": "2026-05-27T13:50:41.009054+00:00",
     "74404242c510": "2026-05-27T13:50:41.009054+00:00",
@@ -523,247 +512,12 @@
     "ac71419291b3": "2026-05-27T13:50:41.009054+00:00",
     "a2dc014d7ef1": "2026-05-27T13:50:41.009054+00:00",
     "da49bb98f507": "2026-05-27T13:50:41.009054+00:00",
-    "2d41dd81784b": "2026-05-27T13:50:41.009054+00:00"
+    "2d41dd81784b": "2026-05-27T13:50:41.009054+00:00",
+    "82277050a180": "2026-05-27T16:55:44.966481+00:00",
+    "f1a99951a93c": "2026-05-27T16:55:44.966481+00:00",
+    "c839e20dfd32": "2026-05-27T16:55:44.966481+00:00"
   },
   "live_clusters": {
-    "727d54f1efa6993d": {
-      "topic": "Air Jordan 15 RE Black/Muslin Release",
-      "item_ids": [
-        "2b8981d43a02"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5315e83b81823303": {
-      "topic": "Metagirl x Vans Old Skool 36 Collaboration Release",
-      "item_ids": [
-        "9c3f78516e7f"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e70370fc9ba04d38": {
-      "topic": "Drake Surpasses Michael Jackson No. 1 Solo Male Artist Record",
-      "item_ids": [
-        "28f91664ec45",
-        "41c4d56271ca",
-        "b39b11c1cb9f",
-        "8a82f591b0bd"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-27T01:36:08.325055+00:00",
-      "picks_file": "picks/picks-2026-05-27-0136.md",
-      "why_text": "Drake has officially passed Michael Jackson to become the solo male artist with the most No. 1 albums in Billboard history \u2014 a milestone that reframes his legacy from rap superstar to all-time pop culture monument. The timing is pointed: Drake is coming off a bruising public year, and this record lands as a quiet, statistical rebuttal to anyone who counted him out. It's a reminder that longevity and catalog depth are their own kind of dominance.",
-      "last_escalated_item_ids": [
-        "28f91664ec45",
-        "41c4d56271ca",
-        "b39b11c1cb9f"
-      ]
-    },
-    "57a33d56012e214e": {
-      "topic": "Toy Story 5 Filmmakers Discuss Woody Aging and Story Direction",
-      "item_ids": [
-        "60a37fe5ab7b"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cd4345d4d941b33e": {
-      "topic": "Sam Elliott Landman Interview on Artistic Honesty",
-      "item_ids": [
-        "7d3590c50fb6"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6ccfd6b8d650f6fc": {
-      "topic": "Fat Joe Cavaliers Courtside Seat Incident NBA Finals",
-      "item_ids": [
-        "249189b7f263"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e08f155364218201": {
-      "topic": "Drake Janice STFU Global Chart Dominance",
-      "item_ids": [
-        "4ff7f1ef71a2"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "288b6c40d87cf964": {
-      "topic": "Shinedown Mainstream Rock Airplay No. 1 Record Extension",
-      "item_ids": [
-        "e2964c64ef00"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eb2034064b294269": {
-      "topic": "2026 AMAs Performance Voting",
-      "item_ids": [
-        "d346b4f94f62"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c18c9ce1a097dbfc": {
-      "topic": "Drake Janice STFU Hot 100 No. 1 42 Songs Single Week",
-      "item_ids": [
-        "5c6b85f6c2cc"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ebacd88b58771e74": {
-      "topic": "Rivers Cuomo Cover Medley Outkast Dolly Parton Whitney Houston",
-      "item_ids": [
-        "aebe2840a410",
-        "0071eb329701"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "057ca0b41492cae6": {
-      "topic": "Linda Perry Green Day Producer Dropped Fan Backlash",
-      "item_ids": [
-        "04e8800a6568"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d1b195757ea5cb5a": {
-      "topic": "Albert Wolsky Oscar-Winning Costume Designer Death",
-      "item_ids": [
-        "d2c0d513cfd1",
-        "dc437bc71fbd"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c57e6b3340402cd6": {
-      "topic": "Pluribus Costume Designer End of World Aesthetic Interview",
-      "item_ids": [
-        "c1f2eedc7778"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "14d7b365318dafc0": {
-      "topic": "Masashi Kawamura Hidari Stop-Motion Keanu Reeves",
-      "item_ids": [
-        "c78ffc0f8d61"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "44e003773d3f2a45": {
-      "topic": "TIFF Christopher Nolan Retrospective The Odyssey",
-      "item_ids": [
-        "8b6e5ea41b9c"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a81b053a7a850c8c": {
-      "topic": "India Gig Economy Robot Training Startup",
-      "item_ids": [
-        "96f157c6ce9a"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "31c7d8d0a3496059": {
-      "topic": "Cybersecurity Ghost Hackers Unsolved Mystery",
-      "item_ids": [
-        "342462d0867c"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a61da080ba0ecb86": {
-      "topic": "Spain Blocks Polymarket Kalshi Prediction Markets Investigation",
-      "item_ids": [
-        "4205f543016a"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "089e4fe934cf0db7": {
-      "topic": "Micron Reaches $1 Trillion Market Cap Milestone",
-      "item_ids": [
-        "77c86a7cf51b"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "869b0a5992c81392": {
-      "topic": "American Airlines SpaceX Starlink In-Flight Wi-Fi 500 Planes",
-      "item_ids": [
-        "86dcce359633",
-        "dc3e55ef6065"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7e01546f93e622c2": {
-      "topic": "Voyager DARPA Solid Rocket Propellant Contract",
-      "item_ids": [
-        "5f3e1e393be0"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c9ca47f407bb0e34": {
-      "topic": "European Technology Chiefs Leadership Strategy",
-      "item_ids": [
-        "c5a24dee2200"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3517706d19f363bf": {
-      "topic": "AI-Driven Formally Proven Code Development",
-      "item_ids": [
-        "61c52c9e3c42"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cfeb56b85205207d": {
-      "topic": "MLS WWT Technology Sponsor Partnership",
-      "item_ids": [
-        "53668f42f2ab"
-      ],
-      "created_at": "2026-05-26T16:13:34.588879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "3df09d5df602e995": {
       "topic": "Kansas City Royals City Connect Nike Air Max 1 Release",
       "item_ids": [
@@ -804,7 +558,8 @@
     "c9948bfc60569a55": {
       "topic": "Travis Kelce LeBron Nike Courtside Appearance Cleveland",
       "item_ids": [
-        "2c69c183804a"
+        "2c69c183804a",
+        "4913f6d46566"
       ],
       "created_at": "2026-05-26T18:38:27.061366+00:00",
       "last_escalated_size": 0,
@@ -1030,11 +785,19 @@
       "topic": "J. Cole Cam'ron Ready '24' Lawsuit Settlement",
       "item_ids": [
         "16351529b8ce",
-        "b3a3b4a4cc7d"
+        "b3a3b4a4cc7d",
+        "8bd604bc5f8e"
       ],
       "created_at": "2026-05-26T20:35:18.028428+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-27T16:55:44.966481+00:00",
+      "picks_file": "picks/picks-2026-05-27-1656.md",
+      "why_text": "Cam'ron's long-threatened legal action over J. Cole sampling 'Oh Boy' for '2013' without clearance is apparently heading toward resolution, a rare moment of a street-level beef getting formalized in a courtroom. It matters because it underscores how sample clearance disputes \u2014 often glossed over in hip-hop mythology \u2014 carry real legal teeth, even years later. With Cam'ron already in a headline-grabbing feud with Jim Jones, this settlement lands in the middle of a broader narrative about Dipset's complicated legacy politics.",
+      "last_escalated_item_ids": [
+        "16351529b8ce",
+        "b3a3b4a4cc7d",
+        "8bd604bc5f8e"
+      ]
     },
     "c6acb40112000ede": {
       "topic": "Ziggy Marley First Solo Album in Eight Years",
@@ -1386,7 +1149,8 @@
     "07ecb2c57163cbcd": {
       "topic": "Katseye Tour Sold Out 48 Hours",
       "item_ids": [
-        "f1dedc18c0b9"
+        "f1dedc18c0b9",
+        "e0e6766a437e"
       ],
       "created_at": "2026-05-27T06:01:15.618515+00:00",
       "last_escalated_size": 0,
@@ -1651,11 +1415,18 @@
       "topic": "'Primetime' Robert Pattinson Chris Hansen A24 Thriller",
       "item_ids": [
         "73dfffa5af58",
-        "c583ff820adc"
+        "c583ff820adc",
+        "8f21befcc147"
       ],
       "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-27T16:55:44.966481+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "73dfffa5af58",
+        "c583ff820adc",
+        "8f21befcc147"
+      ]
     },
     "2a6d4592edf85edc": {
       "topic": "Laurie Segall Paris Hilton 'Mr. Deepfakes' Investigation",
@@ -1846,7 +1617,205 @@
       "created_at": "2026-05-27T13:51:15.229842+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "0c592748a4b35f7a": {
+      "topic": "Nike SB Air Force 1 Light Chocolate Release",
+      "item_ids": [
+        "d64cbe181e47"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2bf718c9e7a2e28e": {
+      "topic": "Nike Book 2 Sunburst PE to Public Release",
+      "item_ids": [
+        "a221051cd271"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "488e68a7a2a32bf3": {
+      "topic": "Caitlin Clark Nike Zoom Kobe 5 Protro Coconut Milk",
+      "item_ids": [
+        "c8ee4e48f719"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a887ef2eb2fe12ef": {
+      "topic": "Flea Thom Yorke Marvin Gaye Cover",
+      "item_ids": [
+        "92d1b621b40d"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "87a9c9911e3630a5": {
+      "topic": "Panda Bear Sonic Boom Collaboration Album",
+      "item_ids": [
+        "5273fc6aeb7e"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4f8dff206308b712": {
+      "topic": "Forrest Frank Hot Christian Songs No. 1",
+      "item_ids": [
+        "477bdfe3cb82"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c7fe001816b5b66d": {
+      "topic": "Stella Lefty Country Albums Debut Boston",
+      "item_ids": [
+        "64de5554ec35"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3379a4f099d6de1b": {
+      "topic": "The Chicks Taking the Long Way 20th Anniversary Tour",
+      "item_ids": [
+        "7b6e8445889c"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "87bac2e56fb9b18e": {
+      "topic": "Ella Langley Dandelion Tour Ticket Sales",
+      "item_ids": [
+        "aac466fad8e6"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "70c95109be259247": {
+      "topic": "John McClain Michael Jackson Estate Co-Executor Death",
+      "item_ids": [
+        "274491eca225"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3a9800481ad657cc": {
+      "topic": "Wheelhouse Acquires Shark Week Producer Anomaly Entertainment",
+      "item_ids": [
+        "925bb3e5b48a"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "89555c6edb2f8831": {
+      "topic": "Mark O'Brien Crime Thriller Good in the Room Cast",
+      "item_ids": [
+        "e1ebcfd1b9e6"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bb0468f7c42f7c2c": {
+      "topic": "Cineflix Productions President JC Mills Exit",
+      "item_ids": [
+        "a8f619f5b10b"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e912ddfde8d67cee": {
+      "topic": "Jim Henson Company Hires Shirley Bowers Global Distribution",
+      "item_ids": [
+        "da3dc6ff381b"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "672336ac31a8ef41": {
+      "topic": "Tony Awards Book of Mormon Original Cast Reunion Performance",
+      "item_ids": [
+        "5e917aee93b8"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f0f91c59eff7b4cc": {
+      "topic": "Cognition AI Coding Startup $1B Funding",
+      "item_ids": [
+        "05063096037a"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d3c39c70fd9eb8ca": {
+      "topic": "Square Enix Dragon Quest 12 Development Restart",
+      "item_ids": [
+        "18a77a7c1608"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "42be445669619fbe": {
+      "topic": "Sony Bravia True RGB TV Lineup Announcement",
+      "item_ids": [
+        "9121f00bea36"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "747628a40cdbed73": {
+      "topic": "Sony Bravia Theater Trio Speaker Launch",
+      "item_ids": [
+        "ac227cf1928a"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "daefe0e2e0a140fd": {
+      "topic": "Roku UI Update First Decade Redesign",
+      "item_ids": [
+        "289f9ec44601"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c1761b3ada3e67c9": {
+      "topic": "JPMorgan Chase $20B Acquisition Spending Plan",
+      "item_ids": [
+        "51db6fb36c24"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "779c5c94de15d2cb": {
+      "topic": "Lululemon Proxy Battle Chip Wilson Settlement",
+      "item_ids": [
+        "cc9aa9ec1516"
+      ],
+      "created_at": "2026-05-27T16:56:19.362762+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-27T13:51:15.231344+00:00"
+  "last_checked": "2026-05-27T16:56:24.993804+00:00"
 }
