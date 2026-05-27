@@ -1,40 +1,5 @@
 {
   "known_ids": [
-    "587205d25ecc",
-    "58c2b5de04d9",
-    "fc4bedbc0cf5",
-    "43cc8faba191",
-    "e547a300c828",
-    "1c3368772972",
-    "961fe3fb11a2",
-    "42195f961b69",
-    "f48b5b0b93df",
-    "9ae93c258456",
-    "46d3707bcbbc",
-    "264f042ac75d",
-    "4d8ddcc70be0",
-    "c2bf3503dfa3",
-    "d6158397874a",
-    "a1eed420f98b",
-    "8b614339a907",
-    "0b0aa1823626",
-    "a3dbb7301a42",
-    "1fa5883d3266",
-    "103342bc6b07",
-    "ac9d816c267c",
-    "479ab5b8d1c9",
-    "e91da263052c",
-    "97e3470d0558",
-    "1be7601f6233",
-    "4963ce782cac",
-    "ae0ec5e68561",
-    "02315d1cc73b",
-    "9ade2ddf1f57",
-    "0ed28cec9694",
-    "a7075e2e7097",
-    "342c1d798f93",
-    "9250ebb03ae2",
-    "233ea703c37f",
     "9e5d66df9689",
     "bad5881f3297",
     "64833ad769b3",
@@ -499,7 +464,42 @@
     "1fadddaf7084",
     "b3dcfc57c9c0",
     "36cbc78fd8f1",
-    "d80c89c5331c"
+    "d80c89c5331c",
+    "b45c8ff474ba",
+    "b3e82def6a11",
+    "f938e37015ec",
+    "3582788209db",
+    "c1bdc04a825d",
+    "baf9e4b7419e",
+    "73dfffa5af58",
+    "7c8a53f413df",
+    "e20e2abcc16b",
+    "b1144a328785",
+    "075b271a6bec",
+    "e1caf2530c26",
+    "213405daa344",
+    "ce930c9495f8",
+    "5c1d3f4ea086",
+    "4f3b4791ecb8",
+    "c583ff820adc",
+    "353e11f75675",
+    "899e9d75c804",
+    "38fbc23bc388",
+    "ed08a8bf64a0",
+    "7cafa33d3026",
+    "30e2389acf14",
+    "c631a36e278f",
+    "6da58f6215a9",
+    "1b2eb7271a93",
+    "d43d303538df",
+    "595d59529625",
+    "ecf444b9441f",
+    "1bbcdbf5d2bc",
+    "dabbd266c1dc",
+    "60c2ff9533c0",
+    "ba5ac11dbdb6",
+    "3ab468916075",
+    "5f9c54b8f6b2"
   ],
   "failed_ids": {
     "fcba012e9ba3": "2026-05-27T10:14:35.968497+00:00",
@@ -512,7 +512,18 @@
     "0b4b0f11b530": "2026-05-27T10:14:35.968497+00:00",
     "b89eb36345a0": "2026-05-27T10:14:35.968497+00:00",
     "4ab8fa37ddee": "2026-05-27T10:14:35.968497+00:00",
-    "f467bfec9689": "2026-05-27T10:14:35.968497+00:00"
+    "f467bfec9689": "2026-05-27T10:14:35.968497+00:00",
+    "cd909038e8d5": "2026-05-27T13:50:41.009054+00:00",
+    "dfd4f618acde": "2026-05-27T13:50:41.009054+00:00",
+    "74404242c510": "2026-05-27T13:50:41.009054+00:00",
+    "03c2f4fce2c2": "2026-05-27T13:50:41.009054+00:00",
+    "849ea426ce10": "2026-05-27T13:50:41.009054+00:00",
+    "ccb1809e1197": "2026-05-27T13:50:41.009054+00:00",
+    "dcea6c6825c5": "2026-05-27T13:50:41.009054+00:00",
+    "ac71419291b3": "2026-05-27T13:50:41.009054+00:00",
+    "a2dc014d7ef1": "2026-05-27T13:50:41.009054+00:00",
+    "da49bb98f507": "2026-05-27T13:50:41.009054+00:00",
+    "2d41dd81784b": "2026-05-27T13:50:41.009054+00:00"
   },
   "live_clusters": {
     "727d54f1efa6993d": {
@@ -1402,7 +1413,8 @@
     "a9727cb253236d54": {
       "topic": "Thunder balanced attack series lead NBA Playoffs",
       "item_ids": [
-        "4aa96d39f941"
+        "4aa96d39f941",
+        "38fbc23bc388"
       ],
       "created_at": "2026-05-27T06:01:15.618515+00:00",
       "last_escalated_size": 0,
@@ -1578,7 +1590,263 @@
       "created_at": "2026-05-27T10:15:11.428326+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "5c3da5db2345dc52": {
+      "topic": "Gucci Formula 1 Alpine Title Sponsorship",
+      "item_ids": [
+        "b45c8ff474ba"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "919ace4c16205c54": {
+      "topic": "AMO Marble Grocery Store Design",
+      "item_ids": [
+        "b3e82def6a11"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "48b4449553eb6b1c": {
+      "topic": "Anthony Edwards adidas Sneaker Line Growth",
+      "item_ids": [
+        "f938e37015ec"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f915f033b1ae41ee": {
+      "topic": "YouTube AI Content Automatic Labeling Feature",
+      "item_ids": [
+        "3582788209db",
+        "1b2eb7271a93"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "57c55ba1668e2b04": {
+      "topic": "Sunset Studios Knockout Shorts Microdrama Standing Sets",
+      "item_ids": [
+        "c1bdc04a825d"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "abb94d27ac3745d8": {
+      "topic": "Steve Burns UTA Representation Signing",
+      "item_ids": [
+        "baf9e4b7419e",
+        "4f3b4791ecb8"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "98447b74405e18df": {
+      "topic": "'Primetime' Robert Pattinson Chris Hansen A24 Thriller",
+      "item_ids": [
+        "73dfffa5af58",
+        "c583ff820adc"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2a6d4592edf85edc": {
+      "topic": "Laurie Segall Paris Hilton 'Mr. Deepfakes' Investigation",
+      "item_ids": [
+        "7c8a53f413df"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7dceb052861b2eb3": {
+      "topic": "Bollor\u00e9 Group Opposes Bill Ackman UMG Purchase Bid",
+      "item_ids": [
+        "e20e2abcc16b"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "825e4cac106d7e16": {
+      "topic": "Riley Green Lara Spencer CMA Fest Hosts",
+      "item_ids": [
+        "b1144a328785"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3dfd7b029b6019cf": {
+      "topic": "Lizzo Chili's Baby Back Ribs Brand Deal",
+      "item_ids": [
+        "075b271a6bec"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75285aa40d3c2873": {
+      "topic": "Lady Gaga Mayhem Ball $236M Gross Record",
+      "item_ids": [
+        "e1caf2530c26"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "50ea7750be39b8f0": {
+      "topic": "Lizzo 'Love in Real Life' Album Name Change Clarification",
+      "item_ids": [
+        "213405daa344"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1dea5a5437d96b4f": {
+      "topic": "Muna New LP Tour Announcement",
+      "item_ids": [
+        "ce930c9495f8"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "54f9f87b584a4091": {
+      "topic": "'The Office' Editor AI Comedy Enhancement",
+      "item_ids": [
+        "5c1d3f4ea086"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c42e9172f78557f6": {
+      "topic": "Fox Entertainment Studios Access Entertainment 'Our Loves' Feature",
+      "item_ids": [
+        "353e11f75675"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2afa5aed0ed96593": {
+      "topic": "Greenwich Entertainment 'Olmo' Film Acquisition",
+      "item_ids": [
+        "899e9d75c804"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d663573125c16be2": {
+      "topic": "Travis Kelce Guardians Ownership Group",
+      "item_ids": [
+        "ed08a8bf64a0"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "73cf6e0f560346bf": {
+      "topic": "Avalanche Stanley Cup Playoffs Vegas Loss",
+      "item_ids": [
+        "7cafa33d3026"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d24bbdc829f7f56c": {
+      "topic": "Spurs Wembanayama Performance Urgency",
+      "item_ids": [
+        "30e2389acf14"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4d251a171becff2f": {
+      "topic": "China AI Talent Retention Strategy",
+      "item_ids": [
+        "c631a36e278f"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ccf6769cd8a24305": {
+      "topic": "ClickHouse $250M Annualized Revenue IPO Path",
+      "item_ids": [
+        "6da58f6215a9"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "da175a66039e38ca": {
+      "topic": "Tech CEOs AI Psychosis Trend",
+      "item_ids": [
+        "d43d303538df"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "17ce7112c544171d": {
+      "topic": "Robinhood AI Agent Stock Trading Feature",
+      "item_ids": [
+        "595d59529625"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bc26273438242321": {
+      "topic": "Spotify Podcast Clips Sharing Feature",
+      "item_ids": [
+        "ecf444b9441f"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c94cd8057775e451": {
+      "topic": "Amazon AI Shopping Technology Retail Licensing",
+      "item_ids": [
+        "1bbcdbf5d2bc",
+        "ba5ac11dbdb6"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fa88a37f54064858": {
+      "topic": "Robinhood AI Agent Credit Card Transactions",
+      "item_ids": [
+        "dabbd266c1dc"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d6083471e387cfc8": {
+      "topic": "Foot Locker Growth Dick's Sporting Goods Earnings Miss",
+      "item_ids": [
+        "60c2ff9533c0"
+      ],
+      "created_at": "2026-05-27T13:51:15.229842+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-27T10:15:11.429495+00:00"
+  "last_checked": "2026-05-27T13:51:15.231344+00:00"
 }
