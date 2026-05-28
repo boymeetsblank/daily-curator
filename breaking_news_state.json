@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "7f6ccc69f414",
-    "7bc4d8ae5302",
-    "8f76bece1243",
-    "2d9b87dcd54f",
-    "bf17820e5789",
-    "a31374d3935d",
-    "b0c2398f3274",
-    "2d115a208575",
-    "06d78a3bdb46",
-    "85234b04922e",
-    "239637ec2399",
-    "a63ab852342e",
-    "40ffb4e3b367",
-    "0234218e354d",
-    "832acfe85224",
-    "b4ee559018db",
-    "a73a27fd99ef",
     "0c401ec9f98b",
     "413767c315b0",
     "6494b6b4c02c",
@@ -499,15 +482,26 @@
     "03e6f73a62e6",
     "4b7b1122161a",
     "c6f7fd12974e",
-    "cac892fc4984"
+    "cac892fc4984",
+    "e455519d3f34",
+    "ac573bcd1459",
+    "0fe0f9c0e74d",
+    "17c671330ca6",
+    "37b71a7ba36b",
+    "7c9fdcc2d35d",
+    "5b33554de544",
+    "be8d0929ad6c",
+    "478d5c2b2964",
+    "53f54e397639",
+    "ea744a427a5a",
+    "b16689dc6815",
+    "01cd27218a43",
+    "1e04f2f4afe1",
+    "2f7aa318ab65",
+    "5817a44657dc",
+    "1f0642b0a3ca"
   ],
   "failed_ids": {
-    "e076901db5c9": "2026-05-27T23:56:57.715913+00:00",
-    "f17097b7a4a8": "2026-05-27T23:56:57.715913+00:00",
-    "eb4cea75cdd6": "2026-05-27T23:56:57.715913+00:00",
-    "92799986a52e": "2026-05-27T23:56:57.715913+00:00",
-    "6bcff5c77732": "2026-05-27T23:56:57.715913+00:00",
-    "a2dc014d7ef1": "2026-05-27T23:56:57.715913+00:00",
     "729ebad86604": "2026-05-28T03:52:26.304985+00:00",
     "c0026c1da8ab": "2026-05-28T03:52:26.304985+00:00",
     "6d8e45f53c39": "2026-05-28T03:52:26.304985+00:00",
@@ -515,110 +509,23 @@
     "2ad8b53b4c0a": "2026-05-28T03:52:26.304985+00:00",
     "9f91d4828ee1": "2026-05-28T03:52:26.304985+00:00",
     "5f411a2956e1": "2026-05-28T03:52:26.304985+00:00",
-    "f5f6d212cb15": "2026-05-28T03:52:26.304985+00:00"
+    "f5f6d212cb15": "2026-05-28T03:52:26.304985+00:00",
+    "e15bd0df907e": "2026-05-28T07:47:17.416650+00:00",
+    "ff5e3f960bd2": "2026-05-28T07:47:17.416650+00:00",
+    "1acf60350202": "2026-05-28T07:47:17.416650+00:00",
+    "08b893596b07": "2026-05-28T07:47:17.416650+00:00",
+    "e05ac07a274e": "2026-05-28T07:47:17.416650+00:00",
+    "f8053d9c4db1": "2026-05-28T07:47:17.416650+00:00",
+    "3251afc8e559": "2026-05-28T07:47:17.416650+00:00",
+    "9f35502bf57c": "2026-05-28T07:47:17.416650+00:00",
+    "88e414555249": "2026-05-28T07:47:17.416650+00:00",
+    "70cdbcbf4294": "2026-05-28T07:47:17.416650+00:00",
+    "e94b2c23154c": "2026-05-28T07:47:17.416650+00:00",
+    "14b8a8e9aa5c": "2026-05-28T07:47:17.416650+00:00",
+    "91b0fa4400c7": "2026-05-28T07:47:17.416650+00:00",
+    "1dd94ac22fe5": "2026-05-28T07:47:17.416650+00:00"
   },
   "live_clusters": {
-    "6362e12830716541": {
-      "topic": "Chanel Matthieu Blazy M\u00e9tiers d'Art 2026 Seoul Show",
-      "item_ids": [
-        "81997632c413"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "07ecb2c57163cbcd": {
-      "topic": "Katseye Tour Sold Out 48 Hours",
-      "item_ids": [
-        "f1dedc18c0b9",
-        "e0e6766a437e"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7c03436ef1f54882": {
-      "topic": "Golden Knights sweep Avalanche Stanley Cup Playoffs",
-      "item_ids": [
-        "26f6274486d5"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "03e9e0a44b37ce00": {
-      "topic": "Vegas Golden Knights Stanley Cup Final Return",
-      "item_ids": [
-        "3c8044feb101"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a9727cb253236d54": {
-      "topic": "Thunder balanced attack series lead NBA Playoffs",
-      "item_ids": [
-        "4aa96d39f941",
-        "38fbc23bc388"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "455e426ae98c77d9": {
-      "topic": "Samsung unions chip workers $400,000 bonuses deal",
-      "item_ids": [
-        "d69da1fa3fae"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "17042d095795c0c1": {
-      "topic": "Fujitsu OpenAI AI transformation Japan enterprise",
-      "item_ids": [
-        "9ac335415be0"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3192513504dce396": {
-      "topic": "USI SiC Chip-Embedded Packaging PCIM Europe 2026",
-      "item_ids": [
-        "202e7601540e"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b518f597b51e4d8e": {
-      "topic": "Nomura Science Technology Fund Q1 2026",
-      "item_ids": [
-        "5de135386442"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e63dc8e6ffde18dd": {
-      "topic": "Credo Technology stock 42% rally winning streak",
-      "item_ids": [
-        "631aab615ce4"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3a1c9ec9a073fd3b": {
-      "topic": "Technology analyst insights ENPH ASX ADSK",
-      "item_ids": [
-        "7670b4a76be0"
-      ],
-      "created_at": "2026-05-27T06:01:15.618515+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "6d61e142e2817ec6": {
       "topic": "Danner x N.HOOLYWOOD Postman Shoe Spring 2026 Collaboration",
       "item_ids": [
@@ -2046,7 +1953,142 @@
       "created_at": "2026-05-28T03:52:55.071472+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "a94cf8b0eb942be2": {
+      "topic": "G-SHOCK DW-5600 RX-78-2 Gundam Collaboration Watch Release",
+      "item_ids": [
+        "e455519d3f34"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "12de25ca8248af0b": {
+      "topic": "Nautica Made in USA T-Shirt Collection New York Heritage Launch",
+      "item_ids": [
+        "ac573bcd1459"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6cce4c972eaeaedf": {
+      "topic": "Disney+ June 2026 Content Releases",
+      "item_ids": [
+        "0fe0f9c0e74d"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "817a24613ba1be8d": {
+      "topic": "A24 Charli XCX 'The Moment' Merchandise Japan Release",
+      "item_ids": [
+        "17c671330ca6"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e4decda56ba7402a": {
+      "topic": "2026 SESAC Latina Music Awards Winners Kapo Ed\u00e9n Mu\u00f1oz",
+      "item_ids": [
+        "37b71a7ba36b"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0fb30bdcfd1e96bf": {
+      "topic": "Dyson Supersonic Nural Hair Dryer Summer Sale",
+      "item_ids": [
+        "7c9fdcc2d35d"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bcaa04e5ba5df1d2": {
+      "topic": "Ohtani Performance No-Hit Bid Home Run",
+      "item_ids": [
+        "5b33554de544"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "19494a00cb74ee5d": {
+      "topic": "S\u00e1nchez Scoreless Streak Phillies 1911 Record",
+      "item_ids": [
+        "be8d0929ad6c"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8d3770460d19e348": {
+      "topic": "Ex-Super Bowl MVP Miller Broncos Return Lobbying",
+      "item_ids": [
+        "478d5c2b2964"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "adc936802da6dc91": {
+      "topic": "Momcilovic Portal Top Target Draft Exit",
+      "item_ids": [
+        "53f54e397639"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "de39d256c76f68a4": {
+      "topic": "Vertu AI-Powered Folding Phone Luxury Device Launch",
+      "item_ids": [
+        "ea744a427a5a"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "07122da5e5ca44a7": {
+      "topic": "Vertu AI Foldable Phone CEO Business Tool",
+      "item_ids": [
+        "b16689dc6815"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "005f759898a55b82": {
+      "topic": "Samsung Galaxy Watch 8 GLP-1 Muscle Loss Prevention Testing",
+      "item_ids": [
+        "01cd27218a43"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "79f8e86cd68478f2": {
+      "topic": "Ferrari EV Launch Market Impact Assessment",
+      "item_ids": [
+        "1e04f2f4afe1"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "357b40c77c0a2e81": {
+      "topic": "Wyclef Jean Seven Albums One Year AI Technology Project",
+      "item_ids": [
+        "2f7aa318ab65"
+      ],
+      "created_at": "2026-05-28T07:47:46.202496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-28T03:52:55.072761+00:00"
+  "last_checked": "2026-05-28T07:47:46.203764+00:00"
 }
