@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "0c401ec9f98b",
-    "413767c315b0",
-    "6494b6b4c02c",
-    "982e98195042",
-    "abb22fea2763",
-    "2e2e3bb66a4f",
-    "dce9cb54928b",
-    "9b517d73fed9",
-    "350476aa6bba",
-    "25aabd4bd0bb",
-    "341f056ff775",
-    "0720bb1c8dc2",
-    "2d6fa56c82fb",
-    "1d2e32ada96e",
-    "6ee454fa3ba7",
     "4086e10ecf28",
     "62348d9c5088",
     "aa6cecd548f9",
@@ -499,17 +484,24 @@
     "1e04f2f4afe1",
     "2f7aa318ab65",
     "5817a44657dc",
-    "1f0642b0a3ca"
+    "1f0642b0a3ca",
+    "0dba402b91db",
+    "15f7c1e0ba96",
+    "6cf5b03a7a7f",
+    "d8e632b0f15a",
+    "4be1b59a1447",
+    "3f74da50a863",
+    "63394a4a7597",
+    "73e2d2e2f2e6",
+    "fb33d2bf9b18",
+    "3f30a7fdc184",
+    "7e15f7e75ab9",
+    "2f03750fa4cc",
+    "f49c6db96c8f",
+    "b14c00526c43",
+    "d81feb8e41f8"
   ],
   "failed_ids": {
-    "729ebad86604": "2026-05-28T03:52:26.304985+00:00",
-    "c0026c1da8ab": "2026-05-28T03:52:26.304985+00:00",
-    "6d8e45f53c39": "2026-05-28T03:52:26.304985+00:00",
-    "fd10593a1c59": "2026-05-28T03:52:26.304985+00:00",
-    "2ad8b53b4c0a": "2026-05-28T03:52:26.304985+00:00",
-    "9f91d4828ee1": "2026-05-28T03:52:26.304985+00:00",
-    "5f411a2956e1": "2026-05-28T03:52:26.304985+00:00",
-    "f5f6d212cb15": "2026-05-28T03:52:26.304985+00:00",
     "e15bd0df907e": "2026-05-28T07:47:17.416650+00:00",
     "ff5e3f960bd2": "2026-05-28T07:47:17.416650+00:00",
     "1acf60350202": "2026-05-28T07:47:17.416650+00:00",
@@ -523,127 +515,18 @@
     "e94b2c23154c": "2026-05-28T07:47:17.416650+00:00",
     "14b8a8e9aa5c": "2026-05-28T07:47:17.416650+00:00",
     "91b0fa4400c7": "2026-05-28T07:47:17.416650+00:00",
-    "1dd94ac22fe5": "2026-05-28T07:47:17.416650+00:00"
+    "1dd94ac22fe5": "2026-05-28T07:47:17.416650+00:00",
+    "171b2f6803da": "2026-05-28T11:25:33.667732+00:00",
+    "adb883aedca2": "2026-05-28T11:25:33.667732+00:00",
+    "930090ae6769": "2026-05-28T11:25:33.667732+00:00",
+    "1b3c53c47f59": "2026-05-28T11:25:33.667732+00:00",
+    "36ad63cfc34d": "2026-05-28T11:25:33.667732+00:00",
+    "b203a51d5e15": "2026-05-28T11:25:33.667732+00:00",
+    "e216ff03ead5": "2026-05-28T11:25:33.667732+00:00",
+    "c1e85531d6f4": "2026-05-28T11:25:33.667732+00:00",
+    "9808259d2d8d": "2026-05-28T11:25:33.667732+00:00"
   },
   "live_clusters": {
-    "6d61e142e2817ec6": {
-      "topic": "Danner x N.HOOLYWOOD Postman Shoe Spring 2026 Collaboration",
-      "item_ids": [
-        "7b0a806309db"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "23b6296dd47163ea": {
-      "topic": "Basic.Space Curated Design Pop-Up London Launch",
-      "item_ids": [
-        "9044a850b969"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "64da454963726df4": {
-      "topic": "Canadian Artists Billboard Hot 100 No. 1 Chart History",
-      "item_ids": [
-        "7e3feb658b92"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0bd5ededcd04325d": {
-      "topic": "Starship Entertainment IDID K-Pop Group Debut",
-      "item_ids": [
-        "afcf727e25ef"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bdf009d3b26f8ca5": {
-      "topic": "Mallrat North America Tour New Music Announcement",
-      "item_ids": [
-        "abef178555b9"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "758c1bcb0aa6d116": {
-      "topic": "We Are Parable 2026 Momentum Cohort Announcement",
-      "item_ids": [
-        "cb7f4debcd22"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d48feff164055566": {
-      "topic": "Stranger Things Effect Scripted TV Season Gap Analysis Report",
-      "item_ids": [
-        "573c3ef8abca"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ba4c81e3aa4418ed": {
-      "topic": "Corsair Galleon 100 SD Stream Deck Review",
-      "item_ids": [
-        "9726d26d00e9"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "82bf096c10425241": {
-      "topic": "New Tiny Octopus Species Discovery Gal\u00e1pagos Islands",
-      "item_ids": [
-        "4becf1cd9d27"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d44c53730eeb8e2b": {
-      "topic": "NASA Lunar Base South Pole Construction Plan",
-      "item_ids": [
-        "2de86aa7a440"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0f0c658f0e0b02ab": {
-      "topic": "Taiwan Chip Stocks Rally Nvidia $150 Billion Spending Announcement",
-      "item_ids": [
-        "e1504ccd575d",
-        "721e3a147dba"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ad08ff8a925f5513": {
-      "topic": "Microchip Technology Demand Rebound Bookings 4-Year High",
-      "item_ids": [
-        "988ef2bf95da"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5a7e4d06328584b0": {
-      "topic": "Marvell Technology Q1 Earnings Pre-Market Surge",
-      "item_ids": [
-        "1fadddaf7084"
-      ],
-      "created_at": "2026-05-27T10:15:11.428326+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "5c3da5db2345dc52": {
       "topic": "Gucci Formula 1 Alpine Title Sponsorship",
       "item_ids": [
@@ -2011,7 +1894,8 @@
     "bcaa04e5ba5df1d2": {
       "topic": "Ohtani Performance No-Hit Bid Home Run",
       "item_ids": [
-        "5b33554de544"
+        "5b33554de544",
+        "f49c6db96c8f"
       ],
       "created_at": "2026-05-28T07:47:46.202496+00:00",
       "last_escalated_size": 0,
@@ -2088,7 +1972,97 @@
       "created_at": "2026-05-28T07:47:46.202496+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "34ef81291d54c75a": {
+      "topic": "Sidemen SideMenu Culinary Series Prime Video YouTube Co-Release",
+      "item_ids": [
+        "0dba402b91db"
+      ],
+      "created_at": "2026-05-28T11:26:05.573879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "78f6750a7e26580e": {
+      "topic": "'Moriarty' Sherlock Holmes Nemesis Series Development",
+      "item_ids": [
+        "15f7c1e0ba96"
+      ],
+      "created_at": "2026-05-28T11:26:05.573879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "101a6af3597f1019": {
+      "topic": "New Mothers Returning to Tech Jobs AI Workplace Transformation",
+      "item_ids": [
+        "6cf5b03a7a7f"
+      ],
+      "created_at": "2026-05-28T11:26:05.573879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5e745668f00dd063": {
+      "topic": "Amazon Data Centers AI Technical Infrastructure Solution",
+      "item_ids": [
+        "d8e632b0f15a"
+      ],
+      "created_at": "2026-05-28T11:26:05.573879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6654460ca4077159": {
+      "topic": "YouTube AI Playlist Curation Feature",
+      "item_ids": [
+        "4be1b59a1447"
+      ],
+      "created_at": "2026-05-28T11:26:05.573879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dcedc71e374a61fd": {
+      "topic": "CVS Restores Zepbound Eli Lilly Obesity Medication Coverage",
+      "item_ids": [
+        "3f74da50a863"
+      ],
+      "created_at": "2026-05-28T11:26:05.573879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0bb49c3181b75c2f": {
+      "topic": "Best Buy Earnings Beat Retail Sales Momentum",
+      "item_ids": [
+        "63394a4a7597"
+      ],
+      "created_at": "2026-05-28T11:26:05.573879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "396e5e79d2ca46fd": {
+      "topic": "Chip Stock Rally Market Sentiment Analysis",
+      "item_ids": [
+        "73e2d2e2f2e6"
+      ],
+      "created_at": "2026-05-28T11:26:05.573879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bead29f251ca7e91": {
+      "topic": "AI Stock Surge Ex-OpenAI Employee Fund Stake Disclosure",
+      "item_ids": [
+        "fb33d2bf9b18"
+      ],
+      "created_at": "2026-05-28T11:26:05.573879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9cc81e0f638bedc2": {
+      "topic": "Climate Tech Companies IPO Trend",
+      "item_ids": [
+        "3f30a7fdc184"
+      ],
+      "created_at": "2026-05-28T11:26:05.573879+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-28T07:47:46.203764+00:00"
+  "last_checked": "2026-05-28T11:26:05.574971+00:00"
 }
