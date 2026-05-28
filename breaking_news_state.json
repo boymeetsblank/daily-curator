@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "6d1942b91279",
-    "c47e9967e5e5",
-    "012731a27831",
-    "71abe7f4097c",
-    "031deab60afa",
-    "5720becbca64",
-    "572e4c15344c",
-    "de9579df6c89",
-    "178cb2e4a213",
-    "4f9ded3f5ef9",
-    "34d2864dcdad",
-    "60005804e8a4",
-    "02006654a28b",
-    "7b70cc5488a7",
-    "5ab7c858aaab",
     "7f6ccc69f414",
     "7bc4d8ae5302",
     "8f76bece1243",
@@ -499,115 +484,40 @@
     "e79c222e3130",
     "f7aa621c1bf3",
     "f99fe7978f92",
-    "2041ace59d3d"
+    "2041ace59d3d",
+    "56fc11a9d589",
+    "57b668162e51",
+    "e53a1c5b2e2a",
+    "ca006370d304",
+    "3914f58e3f6a",
+    "47b975907833",
+    "68f2dc41c2c8",
+    "b37943d9112d",
+    "7e1c1ac0e06e",
+    "31de215199dc",
+    "6a80db5133db",
+    "03e6f73a62e6",
+    "4b7b1122161a",
+    "c6f7fd12974e",
+    "cac892fc4984"
   ],
   "failed_ids": {
-    "b2e8742fae2e": "2026-05-27T21:18:58.317745+00:00",
-    "512a4a0120f5": "2026-05-27T21:18:58.317745+00:00",
-    "729ebad86604": "2026-05-27T21:18:58.317745+00:00",
-    "a2e21de08488": "2026-05-27T21:18:58.317745+00:00",
-    "77ef2db3fe09": "2026-05-27T21:18:58.317745+00:00",
-    "b81521f427b6": "2026-05-27T21:18:58.317745+00:00",
-    "3cfad2148468": "2026-05-27T21:18:58.317745+00:00",
-    "819f2edb49af": "2026-05-27T21:18:58.317745+00:00",
-    "8837e6caf0d1": "2026-05-27T21:18:58.317745+00:00",
-    "400fbfdf8cb7": "2026-05-27T22:53:37.625699+00:00",
-    "b5fd8cb43b82": "2026-05-27T22:53:37.625699+00:00",
-    "150a40748f92": "2026-05-27T22:53:37.625699+00:00",
-    "fd98f843e87c": "2026-05-27T22:53:37.625699+00:00",
-    "4cd50a103022": "2026-05-27T22:53:37.625699+00:00",
-    "3f075d1f283c": "2026-05-27T22:53:37.625699+00:00",
     "e076901db5c9": "2026-05-27T23:56:57.715913+00:00",
     "f17097b7a4a8": "2026-05-27T23:56:57.715913+00:00",
     "eb4cea75cdd6": "2026-05-27T23:56:57.715913+00:00",
     "92799986a52e": "2026-05-27T23:56:57.715913+00:00",
     "6bcff5c77732": "2026-05-27T23:56:57.715913+00:00",
-    "a2dc014d7ef1": "2026-05-27T23:56:57.715913+00:00"
+    "a2dc014d7ef1": "2026-05-27T23:56:57.715913+00:00",
+    "729ebad86604": "2026-05-28T03:52:26.304985+00:00",
+    "c0026c1da8ab": "2026-05-28T03:52:26.304985+00:00",
+    "6d8e45f53c39": "2026-05-28T03:52:26.304985+00:00",
+    "fd10593a1c59": "2026-05-28T03:52:26.304985+00:00",
+    "2ad8b53b4c0a": "2026-05-28T03:52:26.304985+00:00",
+    "9f91d4828ee1": "2026-05-28T03:52:26.304985+00:00",
+    "5f411a2956e1": "2026-05-28T03:52:26.304985+00:00",
+    "f5f6d212cb15": "2026-05-28T03:52:26.304985+00:00"
   },
   "live_clusters": {
-    "b37a974e8f59cc2d": {
-      "topic": "'Summer House' Reunion Recap Ciara Miller Amanda Batula West Wilson Confrontation",
-      "item_ids": [
-        "3c60e75dcb26",
-        "d80c89c5331c"
-      ],
-      "created_at": "2026-05-27T01:36:36.729341+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b67a8f4637178202": {
-      "topic": "'Pressure' WWII Film Andrew Scott Brendan Fraser D-Day Weather Forecast",
-      "item_ids": [
-        "088bad303098",
-        "0b11084df606"
-      ],
-      "created_at": "2026-05-27T01:36:36.729341+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4d5b5e4bd472c58e": {
-      "topic": "Nike Ja 3 Signature Sneaker Release",
-      "item_ids": [
-        "fbdbe2348bd1"
-      ],
-      "created_at": "2026-05-27T01:36:36.729341+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a122c0af19fe39f0": {
-      "topic": "Carlos Vives 'Te Dedico' Latin Airplay No. 1 Return",
-      "item_ids": [
-        "ad32779bdc95"
-      ],
-      "created_at": "2026-05-27T01:36:36.729341+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "12eb3d072ffb487f": {
-      "topic": "David Nail Country Ballad 'She Knows' New Release",
-      "item_ids": [
-        "4977a795047f"
-      ],
-      "created_at": "2026-05-27T01:36:36.729341+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "96df1394d31023cf": {
-      "topic": "Eiza Gonz\u00e1lez 'I Love Boosters' Director Boots Riley Praise",
-      "item_ids": [
-        "c8b28995f51c"
-      ],
-      "created_at": "2026-05-27T01:36:36.729341+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "941cf1dd6558742b": {
-      "topic": "'Boston Blue' Sonequa Martin-Green Character Evolution Interview",
-      "item_ids": [
-        "ba69717f0cea"
-      ],
-      "created_at": "2026-05-27T01:36:36.729341+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2c75098af7c1ea6b": {
-      "topic": "Cooper Hoffman Hulu Drama Pilot 'Durango' Lead Role",
-      "item_ids": [
-        "1512f7dbb7c0"
-      ],
-      "created_at": "2026-05-27T01:36:36.729341+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6d83c93410232cc8": {
-      "topic": "SK Hynix $1 Trillion Valuation AI Boom South Korean Chip Stocks",
-      "item_ids": [
-        "9aeb5a62e785"
-      ],
-      "created_at": "2026-05-27T01:36:36.729341+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "6362e12830716541": {
       "topic": "Chanel Matthieu Blazy M\u00e9tiers d'Art 2026 Seoul Show",
       "item_ids": [
@@ -1240,7 +1150,8 @@
     "d3c39c70fd9eb8ca": {
       "topic": "Square Enix Dragon Quest 12 Development Restart",
       "item_ids": [
-        "18a77a7c1608"
+        "18a77a7c1608",
+        "57b668162e51"
       ],
       "created_at": "2026-05-27T16:56:19.362762+00:00",
       "last_escalated_size": 0,
@@ -1910,7 +1821,8 @@
     "c915f45a05a3b552": {
       "topic": "Matthew Perry Death Assistant Ken Iwamasa Sentencing",
       "item_ids": [
-        "1d26da552948"
+        "1d26da552948",
+        "6a80db5133db"
       ],
       "created_at": "2026-05-27T22:54:09.419741+00:00",
       "last_escalated_size": 0,
@@ -2062,7 +1974,79 @@
       "created_at": "2026-05-27T23:57:34.351531+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "9eb47729e0859934": {
+      "topic": "Dorohedoro Season 3 Renewal",
+      "item_ids": [
+        "56fc11a9d589"
+      ],
+      "created_at": "2026-05-28T03:52:55.071472+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8b20d12d91e3631a": {
+      "topic": "News & Documentary Emmy Awards 2026 ABC Winners",
+      "item_ids": [
+        "e53a1c5b2e2a"
+      ],
+      "created_at": "2026-05-28T03:52:55.071472+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0968ff96280e3f8b": {
+      "topic": "ARIA Hall of Fame Broadcast Deal",
+      "item_ids": [
+        "ca006370d304"
+      ],
+      "created_at": "2026-05-28T03:52:55.071472+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "756cac8b6d8a7a35": {
+      "topic": "Love Island USA Season 8 Safety Campaign",
+      "item_ids": [
+        "3914f58e3f6a"
+      ],
+      "created_at": "2026-05-28T03:52:55.071472+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fd09116f519141da": {
+      "topic": "Hurricanes Playoff Domination Game Updates",
+      "item_ids": [
+        "68f2dc41c2c8"
+      ],
+      "created_at": "2026-05-28T03:52:55.071472+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3bde4c6ee7fc2cd2": {
+      "topic": "Hurricanes Stanley Cup Finals Path",
+      "item_ids": [
+        "b37943d9112d"
+      ],
+      "created_at": "2026-05-28T03:52:55.071472+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0d294b987a050a2e": {
+      "topic": "SEC vs B1G College Football Conference Dominance",
+      "item_ids": [
+        "7e1c1ac0e06e"
+      ],
+      "created_at": "2026-05-28T03:52:55.071472+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f117c85747dec5b5": {
+      "topic": "NFL Draft 2026 First Round Projections",
+      "item_ids": [
+        "31de215199dc"
+      ],
+      "created_at": "2026-05-28T03:52:55.071472+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-27T23:57:39.182072+00:00"
+  "last_checked": "2026-05-28T03:52:55.072761+00:00"
 }
