@@ -1,17 +1,5 @@
 {
   "known_ids": [
-    "86dcce359633",
-    "5f3e1e393be0",
-    "c5a24dee2200",
-    "61c52c9e3c42",
-    "53668f42f2ab",
-    "94b53d61b151",
-    "7748b543c963",
-    "c5ab7c37b38d",
-    "c04ee019c88c",
-    "d23e948e178b",
-    "c9adabf33860",
-    "ceb2fbec04ce",
     "ec58179b6c8f",
     "2c69c183804a",
     "766cff0d8d5f",
@@ -499,7 +487,19 @@
     "68b780ecc880",
     "9d9adea5cda1",
     "3045e19e0462",
-    "d07c2781e933"
+    "d07c2781e933",
+    "e4524f4f9788",
+    "dff683541076",
+    "a1269e014cab",
+    "400fffeced0f",
+    "369cb6e9a62e",
+    "0b9a450cb505",
+    "3c3eaaaa0fac",
+    "e5dd7b2d6706",
+    "5328b359df14",
+    "0c7e53740d07",
+    "e320a86719bb",
+    "40dc28a7cad5"
   ],
   "failed_ids": {
     "cde7b28cc217": "2026-05-28T20:11:08.246024+00:00",
@@ -518,111 +518,25 @@
     "54fcd0cd536c": "2026-05-28T22:06:54.276218+00:00",
     "a0ea0e198814": "2026-05-28T22:06:54.276218+00:00",
     "bb06936d6443": "2026-05-28T22:06:54.276218+00:00",
-    "b76f822688c1": "2026-05-28T22:06:54.276218+00:00"
+    "b76f822688c1": "2026-05-28T22:06:54.276218+00:00",
+    "35a27522576e": "2026-05-28T23:41:37.981632+00:00",
+    "ab1e5d6aa6cd": "2026-05-28T23:41:37.981632+00:00",
+    "7a846385f312": "2026-05-28T23:41:37.981632+00:00",
+    "f07f30eea35c": "2026-05-28T23:41:37.981632+00:00",
+    "c15316847544": "2026-05-28T23:41:37.981632+00:00",
+    "3ae26fb2e66f": "2026-05-28T23:41:37.981632+00:00",
+    "636e5245fd07": "2026-05-28T23:41:37.981632+00:00",
+    "1697b1eeb90f": "2026-05-28T23:41:37.981632+00:00",
+    "52c68b350a0c": "2026-05-28T23:41:37.981632+00:00",
+    "8bf095b88416": "2026-05-28T23:41:37.981632+00:00",
+    "e9ef8b8a31ea": "2026-05-28T23:41:37.981632+00:00",
+    "623cd3a9de13": "2026-05-28T23:41:37.981632+00:00",
+    "45a135a35341": "2026-05-28T23:41:37.981632+00:00",
+    "9a30a4903e53": "2026-05-28T23:41:37.981632+00:00",
+    "514f87bedc4d": "2026-05-28T23:41:37.981632+00:00",
+    "0cbb0ba793f4": "2026-05-28T23:41:37.981632+00:00"
   },
   "live_clusters": {
-    "278609f298a95537": {
-      "topic": "Patrick Brammall Apple TV Thriller 'Last Seen'",
-      "item_ids": [
-        "27e7ffe05af0"
-      ],
-      "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "119ddc2499de65c8": {
-      "topic": "Ali Louis Bourzgui Vampire Rock Star Broadway 'The Lost Boys'",
-      "item_ids": [
-        "9f4cd0ed7eaf"
-      ],
-      "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "95b1541315766fdc": {
-      "topic": "Hilary Duff Interview Being Yourself Career Focus",
-      "item_ids": [
-        "856d93d44b06"
-      ],
-      "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a112135f877d5d6f": {
-      "topic": "Billboard Hot 100 Chart Analysis Top 10 Albums",
-      "item_ids": [
-        "c1d1dc9f8d82"
-      ],
-      "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "557e326a72b5560a": {
-      "topic": "Poppy Liu Hollywood Blacklist Concerns Interview",
-      "item_ids": [
-        "e564ed9019af"
-      ],
-      "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c915f45a05a3b552": {
-      "topic": "Matthew Perry Death Assistant Ken Iwamasa Sentencing",
-      "item_ids": [
-        "1d26da552948",
-        "6a80db5133db"
-      ],
-      "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a267eadd6a576fad": {
-      "topic": "Broadway Box Office 'Every Brilliant Thing' 'Cats: The Jellicle Ball' Records",
-      "item_ids": [
-        "a5296edd4fff"
-      ],
-      "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4542ab3ab453a5f2": {
-      "topic": "Google Security Engineer Arrested Polymarket Trading Scheme",
-      "item_ids": [
-        "29235b0781e7",
-        "3e63531d7033",
-        "a6fdcf69bf3f",
-        "bad4033d5faa"
-      ],
-      "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-27T23:56:57.715913+00:00",
-      "picks_file": "picks/picks-2026-05-27-2357.md",
-      "why_text": "A Google security engineer was arrested for allegedly using insider access to company search data to place winning bets on Polymarket, the crypto prediction market \u2014 netting around $1 million in the process. This is a landmark case: it's the first major insider trading prosecution tied to a prediction market, and it forces a reckoning with how platforms like Polymarket handle information asymmetry. The irony of a security professional weaponizing his own access cuts deep \u2014 and signals that regulators are now watching crypto prediction markets like never before.",
-      "last_escalated_item_ids": [
-        "29235b0781e7",
-        "3e63531d7033",
-        "a6fdcf69bf3f"
-      ]
-    },
-    "cc14ead4a69b035e": {
-      "topic": "Amazon Health Executive Departure Amwell Co-founder Replacement",
-      "item_ids": [
-        "aa6826c8a5e2"
-      ],
-      "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eee7d9de0e52117f": {
-      "topic": "Salesforce CEO Marc Benioff Stock Recovery Strategy",
-      "item_ids": [
-        "604c478aebb4",
-        "4625f0e31e6d"
-      ],
-      "created_at": "2026-05-27T22:54:09.419741+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "093083bd4efb3d81": {
       "topic": "Jason Kidd Nike Zoom Flight 5 Sneaker 2027 Return",
       "item_ids": [
@@ -1387,11 +1301,19 @@
       "topic": "Off Campus Season 2 Allie Dean Focus",
       "item_ids": [
         "1af10f9526f6",
-        "3a6abf423b26"
+        "3a6abf423b26",
+        "e5dd7b2d6706"
       ],
       "created_at": "2026-05-28T17:54:26.902464+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-28T23:41:37.981632+00:00",
+      "picks_file": "picks/picks-2026-05-28-2342.md",
+      "why_text": "The second season of Off Campus is zeroing in on Allie Dean, and the cultural ripple is already measurable \u2014 Billboard is tracking real streaming gains for classic rock and alt-pop tracks from the soundtrack, a sign the show has genuine music-discovery pull beyond its core fanbase. That combination of character-driven narrative momentum and a curated soundtrack doing real chart work puts Off Campus in the same conversation as Euphoria and The Bear as shows that move culture, not just audiences. The Allie Dean focus signals the writers are doubling down on a breakout element from Season 1, which is exactly the kind of confident storytelling that turns a hit into a phenomenon.",
+      "last_escalated_item_ids": [
+        "1af10f9526f6",
+        "3a6abf423b26",
+        "e5dd7b2d6706"
+      ]
     },
     "24440c7a91c5c7f2": {
       "topic": "Newsboy Cap Fashion Trend Cali Brand",
@@ -1477,7 +1399,8 @@
     "b58b788332c10162": {
       "topic": "Startup Battlefield 200 Application Deadline Extension",
       "item_ids": [
-        "2fb9701b6a79"
+        "2fb9701b6a79",
+        "e320a86719bb"
       ],
       "created_at": "2026-05-28T17:54:26.902464+00:00",
       "last_escalated_size": 0,
@@ -1530,7 +1453,8 @@
     "6e1282ded633d1c8": {
       "topic": "Call of Duty Modern Warfare 4 Switch 2 Official",
       "item_ids": [
-        "1f09067a925b"
+        "1f09067a925b",
+        "40dc28a7cad5"
       ],
       "created_at": "2026-05-28T17:54:26.902464+00:00",
       "last_escalated_size": 0,
@@ -1719,7 +1643,8 @@
     "76c13f70040948d3": {
       "topic": "Nick Bilton CBS News '60 Minutes' Pivot Strategy",
       "item_ids": [
-        "1ca564770fb7"
+        "1ca564770fb7",
+        "dff683541076"
       ],
       "created_at": "2026-05-28T20:11:49.017394+00:00",
       "last_escalated_size": 0,
@@ -1791,7 +1716,8 @@
     "a0a5ad36a3d44259": {
       "topic": "Man Sentenced 12 Years Taylor Swift Eras Tour Vienna Terror Plot",
       "item_ids": [
-        "eb89d4896fdb"
+        "eb89d4896fdb",
+        "0b9a450cb505"
       ],
       "created_at": "2026-05-28T22:07:32.711502+00:00",
       "last_escalated_size": 0,
@@ -1877,7 +1803,70 @@
       "created_at": "2026-05-28T22:07:32.711502+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "c114d823dfdadd06": {
+      "topic": "Travis Scott Air Jordan 1 Low Pink Pack Release",
+      "item_ids": [
+        "e4524f4f9788"
+      ],
+      "created_at": "2026-05-28T23:42:14.384730+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e183cc509d07cfaf": {
+      "topic": "Nina Protocol Independent Music Platform Shutdown",
+      "item_ids": [
+        "a1269e014cab"
+      ],
+      "created_at": "2026-05-28T23:42:14.384730+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "74ec79ac6ecede6d": {
+      "topic": "BTS BUSAN LIVE VIEWING Theater Release",
+      "item_ids": [
+        "400fffeced0f"
+      ],
+      "created_at": "2026-05-28T23:42:14.384730+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7e21d2d388ab30c3": {
+      "topic": "Lizzo PETA Controversy Baby Back Ribs Campaign",
+      "item_ids": [
+        "369cb6e9a62e"
+      ],
+      "created_at": "2026-05-28T23:42:14.384730+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9d112ea6f9cdeca1": {
+      "topic": "Erin Moriarty Fan Expo Denver Cancellation",
+      "item_ids": [
+        "3c3eaaaa0fac"
+      ],
+      "created_at": "2026-05-28T23:42:14.384730+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2c51323fc986b2ed": {
+      "topic": "Brooke Shields 'You're Killing Me' Season 2 Renewal Acorn TV",
+      "item_ids": [
+        "5328b359df14"
+      ],
+      "created_at": "2026-05-28T23:42:14.384730+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "34f03e32e19c3700": {
+      "topic": "'Virgin River' Season 8 Natasha Calis Cast Addition",
+      "item_ids": [
+        "0c7e53740d07"
+      ],
+      "created_at": "2026-05-28T23:42:14.384730+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-28T22:07:32.732533+00:00"
+  "last_checked": "2026-05-28T23:42:21.377148+00:00"
 }
