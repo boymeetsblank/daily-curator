@@ -1,36 +1,5 @@
 {
   "known_ids": [
-    "4086e10ecf28",
-    "62348d9c5088",
-    "aa6cecd548f9",
-    "94be3c486864",
-    "5c7ebeeb3414",
-    "c620182674cc",
-    "50ab2103bc92",
-    "1e0bf773e4dc",
-    "04b989a4ac1d",
-    "b7e9012b53b4",
-    "06f08a20ae40",
-    "f06dbaa68fb0",
-    "6bee481c93f9",
-    "5391d6131af7",
-    "b8961c849f01",
-    "f844941f38c5",
-    "819de3de1092",
-    "58370e2c31a4",
-    "9481245c9242",
-    "02acce907a94",
-    "11464c3ffec5",
-    "da5efefcd4d7",
-    "8be2caf8ace9",
-    "789891d1bebf",
-    "02ba4d0f21c5",
-    "aed3b0dc6d53",
-    "51a6f8e52dff",
-    "77e98d27aa87",
-    "4e5c82ec87b2",
-    "299ceb851d40",
-    "e76d3c93e155",
     "7004a52f44da",
     "d40591b4328e",
     "e4db7976ab5e",
@@ -499,23 +468,40 @@
     "2f03750fa4cc",
     "f49c6db96c8f",
     "b14c00526c43",
-    "d81feb8e41f8"
+    "d81feb8e41f8",
+    "a290266f21c8",
+    "6e04d8d8a28d",
+    "4ac05351b7da",
+    "2806888dde8e",
+    "164ede48f839",
+    "6552927e6813",
+    "ef488b34aa9f",
+    "328be4f7e0fd",
+    "6c07c4c3f2e6",
+    "d73c226ef275",
+    "50df41cc6acf",
+    "3faea2c5d6f1",
+    "0fa78a4b6f37",
+    "df434a3f7f51",
+    "5ae8ee806afa",
+    "b87d30caf438",
+    "0ec483fbd67f",
+    "7dac4f0cab35",
+    "0c15b54208f1",
+    "d1ea6ead9204",
+    "88ecccb14fe5",
+    "bf801b9d624a",
+    "f168e38be9e1",
+    "659973b2e893",
+    "0779ec25ce71",
+    "9f2d3d1a0d1a",
+    "ddac3dc33028",
+    "ad0ef667a6d5",
+    "6181ef3a1199",
+    "b14050d94744",
+    "acb972ef488a"
   ],
   "failed_ids": {
-    "e15bd0df907e": "2026-05-28T07:47:17.416650+00:00",
-    "ff5e3f960bd2": "2026-05-28T07:47:17.416650+00:00",
-    "1acf60350202": "2026-05-28T07:47:17.416650+00:00",
-    "08b893596b07": "2026-05-28T07:47:17.416650+00:00",
-    "e05ac07a274e": "2026-05-28T07:47:17.416650+00:00",
-    "f8053d9c4db1": "2026-05-28T07:47:17.416650+00:00",
-    "3251afc8e559": "2026-05-28T07:47:17.416650+00:00",
-    "9f35502bf57c": "2026-05-28T07:47:17.416650+00:00",
-    "88e414555249": "2026-05-28T07:47:17.416650+00:00",
-    "70cdbcbf4294": "2026-05-28T07:47:17.416650+00:00",
-    "e94b2c23154c": "2026-05-28T07:47:17.416650+00:00",
-    "14b8a8e9aa5c": "2026-05-28T07:47:17.416650+00:00",
-    "91b0fa4400c7": "2026-05-28T07:47:17.416650+00:00",
-    "1dd94ac22fe5": "2026-05-28T07:47:17.416650+00:00",
     "171b2f6803da": "2026-05-28T11:25:33.667732+00:00",
     "adb883aedca2": "2026-05-28T11:25:33.667732+00:00",
     "930090ae6769": "2026-05-28T11:25:33.667732+00:00",
@@ -524,273 +510,18 @@
     "b203a51d5e15": "2026-05-28T11:25:33.667732+00:00",
     "e216ff03ead5": "2026-05-28T11:25:33.667732+00:00",
     "c1e85531d6f4": "2026-05-28T11:25:33.667732+00:00",
-    "9808259d2d8d": "2026-05-28T11:25:33.667732+00:00"
+    "9808259d2d8d": "2026-05-28T11:25:33.667732+00:00",
+    "e576098d5b7e": "2026-05-28T14:48:45.437222+00:00",
+    "c09cc4bee94c": "2026-05-28T14:48:45.437222+00:00",
+    "5a70e0a83bbd": "2026-05-28T14:48:45.437222+00:00",
+    "2ad8b53b4c0a": "2026-05-28T14:48:45.437222+00:00",
+    "508454d8e155": "2026-05-28T14:48:45.437222+00:00",
+    "14b8a8e9aa5c": "2026-05-28T14:48:45.437222+00:00",
+    "91b0fa4400c7": "2026-05-28T14:48:45.437222+00:00",
+    "1dd94ac22fe5": "2026-05-28T14:48:45.437222+00:00",
+    "839ecb3b2b4c": "2026-05-28T14:48:45.437222+00:00"
   },
   "live_clusters": {
-    "5c3da5db2345dc52": {
-      "topic": "Gucci Formula 1 Alpine Title Sponsorship",
-      "item_ids": [
-        "b45c8ff474ba"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "919ace4c16205c54": {
-      "topic": "AMO Marble Grocery Store Design",
-      "item_ids": [
-        "b3e82def6a11"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "48b4449553eb6b1c": {
-      "topic": "Anthony Edwards adidas Sneaker Line Growth",
-      "item_ids": [
-        "f938e37015ec"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f915f033b1ae41ee": {
-      "topic": "YouTube AI Content Automatic Labeling Feature",
-      "item_ids": [
-        "3582788209db",
-        "1b2eb7271a93"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "57c55ba1668e2b04": {
-      "topic": "Sunset Studios Knockout Shorts Microdrama Standing Sets",
-      "item_ids": [
-        "c1bdc04a825d"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "abb94d27ac3745d8": {
-      "topic": "Steve Burns UTA Representation Signing",
-      "item_ids": [
-        "baf9e4b7419e",
-        "4f3b4791ecb8"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "98447b74405e18df": {
-      "topic": "'Primetime' Robert Pattinson Chris Hansen A24 Thriller",
-      "item_ids": [
-        "73dfffa5af58",
-        "c583ff820adc",
-        "8f21befcc147",
-        "7e5b80dae8da"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-27T16:55:44.966481+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "73dfffa5af58",
-        "c583ff820adc",
-        "8f21befcc147"
-      ]
-    },
-    "2a6d4592edf85edc": {
-      "topic": "Laurie Segall Paris Hilton 'Mr. Deepfakes' Investigation",
-      "item_ids": [
-        "7c8a53f413df"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7dceb052861b2eb3": {
-      "topic": "Bollor\u00e9 Group Opposes Bill Ackman UMG Purchase Bid",
-      "item_ids": [
-        "e20e2abcc16b"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "825e4cac106d7e16": {
-      "topic": "Riley Green Lara Spencer CMA Fest Hosts",
-      "item_ids": [
-        "b1144a328785"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3dfd7b029b6019cf": {
-      "topic": "Lizzo Chili's Baby Back Ribs Brand Deal",
-      "item_ids": [
-        "075b271a6bec"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "75285aa40d3c2873": {
-      "topic": "Lady Gaga Mayhem Ball $236M Gross Record",
-      "item_ids": [
-        "e1caf2530c26"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "50ea7750be39b8f0": {
-      "topic": "Lizzo 'Love in Real Life' Album Name Change Clarification",
-      "item_ids": [
-        "213405daa344"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1dea5a5437d96b4f": {
-      "topic": "Muna New LP Tour Announcement",
-      "item_ids": [
-        "ce930c9495f8"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "54f9f87b584a4091": {
-      "topic": "'The Office' Editor AI Comedy Enhancement",
-      "item_ids": [
-        "5c1d3f4ea086"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c42e9172f78557f6": {
-      "topic": "Fox Entertainment Studios Access Entertainment 'Our Loves' Feature",
-      "item_ids": [
-        "353e11f75675"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2afa5aed0ed96593": {
-      "topic": "Greenwich Entertainment 'Olmo' Film Acquisition",
-      "item_ids": [
-        "899e9d75c804"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d663573125c16be2": {
-      "topic": "Travis Kelce Guardians Ownership Group",
-      "item_ids": [
-        "ed08a8bf64a0"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "73cf6e0f560346bf": {
-      "topic": "Avalanche Stanley Cup Playoffs Vegas Loss",
-      "item_ids": [
-        "7cafa33d3026"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d24bbdc829f7f56c": {
-      "topic": "Spurs Wembanayama Performance Urgency",
-      "item_ids": [
-        "30e2389acf14"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4d251a171becff2f": {
-      "topic": "China AI Talent Retention Strategy",
-      "item_ids": [
-        "c631a36e278f"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ccf6769cd8a24305": {
-      "topic": "ClickHouse $250M Annualized Revenue IPO Path",
-      "item_ids": [
-        "6da58f6215a9"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "da175a66039e38ca": {
-      "topic": "Tech CEOs AI Psychosis Trend",
-      "item_ids": [
-        "d43d303538df"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "17ce7112c544171d": {
-      "topic": "Robinhood AI Agent Stock Trading Feature",
-      "item_ids": [
-        "595d59529625"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bc26273438242321": {
-      "topic": "Spotify Podcast Clips Sharing Feature",
-      "item_ids": [
-        "ecf444b9441f"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c94cd8057775e451": {
-      "topic": "Amazon AI Shopping Technology Retail Licensing",
-      "item_ids": [
-        "1bbcdbf5d2bc",
-        "ba5ac11dbdb6"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fa88a37f54064858": {
-      "topic": "Robinhood AI Agent Credit Card Transactions",
-      "item_ids": [
-        "dabbd266c1dc"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d6083471e387cfc8": {
-      "topic": "Foot Locker Growth Dick's Sporting Goods Earnings Miss",
-      "item_ids": [
-        "60c2ff9533c0"
-      ],
-      "created_at": "2026-05-27T13:51:15.229842+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "0c592748a4b35f7a": {
       "topic": "Nike SB Air Force 1 Light Chocolate Release",
       "item_ids": [
@@ -1085,7 +816,8 @@
     "7a9b9961427e21b0": {
       "topic": "BTS Mexico National Palace Historic Visit Video",
       "item_ids": [
-        "56a63bb3b574"
+        "56a63bb3b574",
+        "6c07c4c3f2e6"
       ],
       "created_at": "2026-05-27T19:24:39.802900+00:00",
       "last_escalated_size": 0,
@@ -1167,11 +899,19 @@
       "topic": "Snowflake AWS $6B AI CPU Chips Deal",
       "item_ids": [
         "d73c2adfc401",
-        "badc4f964b2a"
+        "badc4f964b2a",
+        "659973b2e893"
       ],
       "created_at": "2026-05-27T19:24:39.802900+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-28T14:48:45.437222+00:00",
+      "picks_file": "picks/picks-2026-05-28-1449.md",
+      "why_text": "Snowflake just erased years of post-IPO doubt in a single session, surging toward its best day ever after locking in a $6 billion deal with AWS centered on AI compute infrastructure. This isn't just a stock pop \u2014 it's a signal that the cloud data wars have entered a new phase where chip access and AI positioning are the decisive leverage. The deal validates Snowflake's pivot from pure data warehousing to AI platform player, and it's dragging the broader software sector up with it.",
+      "last_escalated_item_ids": [
+        "d73c2adfc401",
+        "badc4f964b2a",
+        "659973b2e893"
+      ]
     },
     "4cb51b70f8047fc8": {
       "topic": "UK Visa Portal Data Breach Passports Selfies",
@@ -2012,7 +1752,8 @@
     "6654460ca4077159": {
       "topic": "YouTube AI Playlist Curation Feature",
       "item_ids": [
-        "4be1b59a1447"
+        "4be1b59a1447",
+        "0c15b54208f1"
       ],
       "created_at": "2026-05-28T11:26:05.573879+00:00",
       "last_escalated_size": 0,
@@ -2062,7 +1803,234 @@
       "created_at": "2026-05-28T11:26:05.573879+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "5e4f928208e0b970": {
+      "topic": "Salomon JISOO Partnership Announcement",
+      "item_ids": [
+        "a290266f21c8"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0adce629b8a61a28": {
+      "topic": "Sage Elsesser GQ Fashion Profile",
+      "item_ids": [
+        "6e04d8d8a28d"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "14e1747da94fb8aa": {
+      "topic": "Reactor AI Video Startup $59M Funding WndrCo",
+      "item_ids": [
+        "4ac05351b7da"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c783662fe75e10b1": {
+      "topic": "CNN Sues Perplexity AI Copyright Infringement",
+      "item_ids": [
+        "2806888dde8e",
+        "3faea2c5d6f1"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b3b6bce26cf30041": {
+      "topic": "Chanel Beads Tour and New Song",
+      "item_ids": [
+        "164ede48f839"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "69f5ed92658c7d8c": {
+      "topic": "Jadasea New Album Holly Grove",
+      "item_ids": [
+        "6552927e6813"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c5856351087f3210": {
+      "topic": "Riley Green Billboard Cover Profile",
+      "item_ids": [
+        "ef488b34aa9f"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7d232fd514ef8170": {
+      "topic": "Riley Green Billboard Cover Shoot Photos",
+      "item_ids": [
+        "328be4f7e0fd"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2c792b268c6a9d6e": {
+      "topic": "Nate Bargatze Mr. Mom Remake Discussion",
+      "item_ids": [
+        "d73c226ef275"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "257b36bff56eda90": {
+      "topic": "Sugar Season 2 Trailer Colin Farrell",
+      "item_ids": [
+        "50df41cc6acf"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cda7f0aef25254ec": {
+      "topic": "Kevin O'Leary Nvidia Co-Founder 2026 AI Honors",
+      "item_ids": [
+        "0fa78a4b6f37"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "47f5b4a04b1db29b": {
+      "topic": "Nat Geo Titanic Sinks Tonight Docu-Drama",
+      "item_ids": [
+        "df434a3f7f51"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d2ef0a6a41b04724": {
+      "topic": "Apple Siri Overhaul iOS 27 ChatGPT Competitor",
+      "item_ids": [
+        "5ae8ee806afa",
+        "d1ea6ead9204"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "18b10b50dfb093c3": {
+      "topic": "Rivian R1 Rear Suspension Failure Investigation",
+      "item_ids": [
+        "b87d30caf438"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ca99f3260985e0b2": {
+      "topic": "RSI Artificial General Intelligence Analysis",
+      "item_ids": [
+        "0ec483fbd67f"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6820b188895c743a": {
+      "topic": "Databricks Enterprise AI Deals TechCrunch Disrupt",
+      "item_ids": [
+        "7dac4f0cab35"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "557ff0c99963b291": {
+      "topic": "Intel Arc G-Series Gaming Handhelds",
+      "item_ids": [
+        "88ecccb14fe5"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "35cce5771103b2d1": {
+      "topic": "Local AI Chatbot iPhone Setup Guide",
+      "item_ids": [
+        "bf801b9d624a"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1d3f64411c7afeb5": {
+      "topic": "Gene-Editing Drug Cholesterol Reduction Trial",
+      "item_ids": [
+        "f168e38be9e1"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dadd870b2acc2344": {
+      "topic": "Starbucks Afternoon Traffic Turnaround",
+      "item_ids": [
+        "0779ec25ce71"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1de96cf42dcd6ffb": {
+      "topic": "Credo Technology DustPhotonics Acquisition",
+      "item_ids": [
+        "9f2d3d1a0d1a"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8bb1ed7ea706fe20": {
+      "topic": "Technology Older Adults Connected Independent Living",
+      "item_ids": [
+        "ddac3dc33028"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "06fe39f640672c53": {
+      "topic": "Pope Leo AI Technology Landmark Text",
+      "item_ids": [
+        "ad0ef667a6d5"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1f52dcb114f9390b": {
+      "topic": "DGIST Asian Engineering Education Hub AEDS 2026",
+      "item_ids": [
+        "6181ef3a1199"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "078d851d2a8268c9": {
+      "topic": "Career Technology Education Vo-Tech Evolution",
+      "item_ids": [
+        "b14050d94744"
+      ],
+      "created_at": "2026-05-28T14:49:26.667498+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-28T11:26:05.574971+00:00"
+  "last_checked": "2026-05-28T14:49:32.284274+00:00"
 }
