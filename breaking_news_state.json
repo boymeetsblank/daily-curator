@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "336256f5c435",
-    "2f752221c32e",
-    "dbf841a4b2ed",
-    "b5084be8083f",
-    "3ff2b7c76983",
-    "f7b0d0bb057c",
-    "6d62ee76f180",
-    "893d84c658eb",
-    "e90ba2871ffa",
-    "041a0b850011",
-    "d7968e492b5c",
-    "da0822344b5b",
-    "916773c5f866",
-    "b3a3b4a4cc7d",
-    "f3cc136e052b",
     "42e02a73cdda",
     "46cb43ecf337",
     "0c203c9ea214",
@@ -499,121 +484,45 @@
     "f9c84354f256",
     "bb6b346af47d",
     "9be381995b10",
-    "c9e1aa102ea2"
+    "c9e1aa102ea2",
+    "e60658576fa3",
+    "d96decc3a27a",
+    "a902f2a2f4d9",
+    "95bb06f5125a",
+    "4b75f78271b1",
+    "a7ae01530f1e",
+    "69eb659b4563",
+    "811c46fb3d64",
+    "fb538ed06f35",
+    "b56a900435aa",
+    "8b975d5a9467",
+    "1bdbc5559cad",
+    "7e8e1c0f6f06",
+    "eda66b6b2abd",
+    "27f9a16872ce"
   ],
   "failed_ids": {
-    "1bb8475dbafe": "2026-05-29T05:55:41.667078+00:00",
-    "3981ee1a0070": "2026-05-29T05:55:41.667078+00:00",
-    "aa315854d410": "2026-05-29T05:55:41.667078+00:00",
-    "b3ecbdd5ff22": "2026-05-29T05:55:41.667078+00:00",
-    "ae8878d78634": "2026-05-29T05:55:41.667078+00:00",
-    "53d04c214507": "2026-05-29T05:55:41.667078+00:00",
-    "715fd8c0e520": "2026-05-29T05:55:41.667078+00:00",
-    "c4ad0f9dcfdc": "2026-05-29T05:55:41.667078+00:00",
-    "756c23fdbbd0": "2026-05-29T05:55:41.667078+00:00",
-    "4c36be699772": "2026-05-29T05:55:41.667078+00:00",
-    "446c30b1641d": "2026-05-29T05:55:41.667078+00:00",
-    "43964706f94d": "2026-05-29T05:55:41.667078+00:00",
-    "6ea7784b3a0e": "2026-05-29T05:55:41.667078+00:00",
     "b38e0bb9d02e": "2026-05-29T09:53:06.719931+00:00",
     "da2de4a49fd1": "2026-05-29T09:53:06.719931+00:00",
     "220358b9c044": "2026-05-29T09:53:06.719931+00:00",
     "b9cc6449fe78": "2026-05-29T09:53:06.719931+00:00",
     "ca7bf60407cc": "2026-05-29T09:53:06.719931+00:00",
-    "cc26f84a5499": "2026-05-29T09:53:06.719931+00:00"
+    "cc26f84a5499": "2026-05-29T09:53:06.719931+00:00",
+    "7cb214d2c5b9": "2026-05-29T12:42:18.817403+00:00",
+    "3fd1424230d4": "2026-05-29T12:42:18.817403+00:00",
+    "d0d72a24af7b": "2026-05-29T12:42:18.817403+00:00",
+    "3981ee1a0070": "2026-05-29T12:42:18.817403+00:00",
+    "74964f814e4e": "2026-05-29T12:42:18.817403+00:00",
+    "1c857c594da1": "2026-05-29T12:42:18.817403+00:00",
+    "2dd677a21859": "2026-05-29T12:42:18.817403+00:00",
+    "d83d2fbdde96": "2026-05-29T12:42:18.817403+00:00",
+    "5c6fbc2f1fb3": "2026-05-29T12:42:18.817403+00:00",
+    "c2cfa3a49f1e": "2026-05-29T12:42:18.817403+00:00",
+    "15054378333b": "2026-05-29T12:42:18.817403+00:00",
+    "da0af99b8176": "2026-05-29T12:42:18.817403+00:00",
+    "eadba5bb8750": "2026-05-29T12:42:18.817403+00:00"
   },
   "live_clusters": {
-    "34ef81291d54c75a": {
-      "topic": "Sidemen SideMenu Culinary Series Prime Video YouTube Co-Release",
-      "item_ids": [
-        "0dba402b91db"
-      ],
-      "created_at": "2026-05-28T11:26:05.573879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "78f6750a7e26580e": {
-      "topic": "'Moriarty' Sherlock Holmes Nemesis Series Development",
-      "item_ids": [
-        "15f7c1e0ba96"
-      ],
-      "created_at": "2026-05-28T11:26:05.573879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "101a6af3597f1019": {
-      "topic": "New Mothers Returning to Tech Jobs AI Workplace Transformation",
-      "item_ids": [
-        "6cf5b03a7a7f"
-      ],
-      "created_at": "2026-05-28T11:26:05.573879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5e745668f00dd063": {
-      "topic": "Amazon Data Centers AI Technical Infrastructure Solution",
-      "item_ids": [
-        "d8e632b0f15a"
-      ],
-      "created_at": "2026-05-28T11:26:05.573879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6654460ca4077159": {
-      "topic": "YouTube AI Playlist Curation Feature",
-      "item_ids": [
-        "4be1b59a1447",
-        "0c15b54208f1"
-      ],
-      "created_at": "2026-05-28T11:26:05.573879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dcedc71e374a61fd": {
-      "topic": "CVS Restores Zepbound Eli Lilly Obesity Medication Coverage",
-      "item_ids": [
-        "3f74da50a863"
-      ],
-      "created_at": "2026-05-28T11:26:05.573879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0bb49c3181b75c2f": {
-      "topic": "Best Buy Earnings Beat Retail Sales Momentum",
-      "item_ids": [
-        "63394a4a7597"
-      ],
-      "created_at": "2026-05-28T11:26:05.573879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "396e5e79d2ca46fd": {
-      "topic": "Chip Stock Rally Market Sentiment Analysis",
-      "item_ids": [
-        "73e2d2e2f2e6"
-      ],
-      "created_at": "2026-05-28T11:26:05.573879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bead29f251ca7e91": {
-      "topic": "AI Stock Surge Ex-OpenAI Employee Fund Stake Disclosure",
-      "item_ids": [
-        "fb33d2bf9b18"
-      ],
-      "created_at": "2026-05-28T11:26:05.573879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9cc81e0f638bedc2": {
-      "topic": "Climate Tech Companies IPO Trend",
-      "item_ids": [
-        "3f30a7fdc184"
-      ],
-      "created_at": "2026-05-28T11:26:05.573879+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "5e4f928208e0b970": {
       "topic": "Salomon JISOO Partnership Announcement",
       "item_ids": [
@@ -727,11 +636,19 @@
       "topic": "Apple Siri Overhaul iOS 27 ChatGPT Competitor",
       "item_ids": [
         "5ae8ee806afa",
-        "d1ea6ead9204"
+        "d1ea6ead9204",
+        "a7ae01530f1e"
       ],
       "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-29T12:42:18.817403+00:00",
+      "picks_file": "picks/picks-2026-05-29-1242.md",
+      "why_text": "Apple is preparing a ground-up redesign of Siri that positions it as a direct ChatGPT competitor, a move that signals the company knows its voice assistant has fallen embarrassingly behind. This isn't a tweak \u2014 it's an admission that the AI race has forced Apple's hand, and iOS 27 is where they're betting they can catch up. If it lands, it reshapes the entire consumer AI landscape; if it doesn't, Apple risks ceding the most personal layer of its ecosystem to OpenAI permanently.",
+      "last_escalated_item_ids": [
+        "5ae8ee806afa",
+        "d1ea6ead9204",
+        "a7ae01530f1e"
+      ]
     },
     "18b10b50dfb093c3": {
       "topic": "Rivian R1 Rear Suspension Failure Investigation",
@@ -1324,7 +1241,8 @@
     "7574ee4f0aff0d02": {
       "topic": "Dylan Harper Titan x Nike GT Cut 1 Foot Locker Release",
       "item_ids": [
-        "28f53d8b02d2"
+        "28f53d8b02d2",
+        "1bdbc5559cad"
       ],
       "created_at": "2026-05-28T22:07:32.711502+00:00",
       "last_escalated_size": 0,
@@ -1737,7 +1655,88 @@
       "created_at": "2026-05-29T09:53:39.434634+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "0f2d308620be5bf1": {
+      "topic": "Riot Fest 2026 Lineup Announcement",
+      "item_ids": [
+        "e60658576fa3"
+      ],
+      "created_at": "2026-05-29T12:42:47.235946+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c7425eb5a77ca501": {
+      "topic": "CMAT Body-Shaming Comments BBC Radio 1 Big Weekend",
+      "item_ids": [
+        "d96decc3a27a"
+      ],
+      "created_at": "2026-05-29T12:42:47.235946+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8fd1cbedf8c4f084": {
+      "topic": "Noah Kahan Out of the Blue Festival 2027 Lineup",
+      "item_ids": [
+        "a902f2a2f4d9"
+      ],
+      "created_at": "2026-05-29T12:42:47.235946+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a3480fcd897e9840": {
+      "topic": "AI Memory Chip Startup $135M Funding",
+      "item_ids": [
+        "95bb06f5125a"
+      ],
+      "created_at": "2026-05-29T12:42:47.235946+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "076007f53f23abd5": {
+      "topic": "Fitbit Air Pope AI Criticism Podcast Discussion",
+      "item_ids": [
+        "4b75f78271b1"
+      ],
+      "created_at": "2026-05-29T12:42:47.235946+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f8777922564dcc24": {
+      "topic": "Rivian R2 Electric SUV June 9 Launch",
+      "item_ids": [
+        "69eb659b4563"
+      ],
+      "created_at": "2026-05-29T12:42:47.235946+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8b1b961dfe10fae9": {
+      "topic": "Massive Lord of the Rings Crowd Simulation Software Free Release",
+      "item_ids": [
+        "811c46fb3d64"
+      ],
+      "created_at": "2026-05-29T12:42:47.235946+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5a7dae0e780f9372": {
+      "topic": "Dan Ives Anthropic Growth AI Rally Analysis",
+      "item_ids": [
+        "fb538ed06f35"
+      ],
+      "created_at": "2026-05-29T12:42:47.235946+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "92edbacf65e470e0": {
+      "topic": "AI Chip Memory Technology Company High Margin Analysis",
+      "item_ids": [
+        "b56a900435aa"
+      ],
+      "created_at": "2026-05-29T12:42:47.235946+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-29T09:53:39.435730+00:00"
+  "last_checked": "2026-05-29T12:42:53.104475+00:00"
 }
