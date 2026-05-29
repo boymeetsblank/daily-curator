@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "ecf444b9441f",
-    "1bbcdbf5d2bc",
-    "dabbd266c1dc",
-    "60c2ff9533c0",
-    "ba5ac11dbdb6",
-    "3ab468916075",
-    "5f9c54b8f6b2",
-    "d64cbe181e47",
-    "a221051cd271",
-    "c8ee4e48f719",
-    "4913f6d46566",
-    "92d1b621b40d",
-    "5273fc6aeb7e",
-    "477bdfe3cb82",
-    "64de5554ec35",
-    "7b6e8445889c",
-    "8bd604bc5f8e",
     "e0e6766a437e",
     "aac466fad8e6",
     "274491eca225",
@@ -499,21 +482,26 @@
     "48026dd09a75",
     "2d09ec9a487e",
     "9efeed87e5f3",
-    "c133e41f423a"
+    "c133e41f423a",
+    "f00451e5cd8d",
+    "3f80831f496f",
+    "48ae559f0654",
+    "5001150c96ed",
+    "674203e0afff",
+    "ed308a66f0f3",
+    "ba79212ce153",
+    "5a1daf227173",
+    "9d6e2616d0ee",
+    "9ba7b67b8f93",
+    "2656dcec043c",
+    "bad7ebda5ec9",
+    "ead8992c2bf4",
+    "418df84ee0c1",
+    "e43022626753",
+    "d21c58103da3",
+    "1b58a5529b55"
   ],
   "failed_ids": {
-    "6877ec73566a": "2026-05-29T19:12:40.122985+00:00",
-    "11dd859a1c81": "2026-05-29T19:12:40.122985+00:00",
-    "52cc2976acb8": "2026-05-29T19:12:40.122985+00:00",
-    "1fb80c659c90": "2026-05-29T19:12:40.122985+00:00",
-    "f36951b847aa": "2026-05-29T19:12:40.122985+00:00",
-    "ad7a1ae943a6": "2026-05-29T19:12:40.122985+00:00",
-    "781d502102a9": "2026-05-29T19:12:40.122985+00:00",
-    "ec5903c0c42e": "2026-05-29T19:12:40.122985+00:00",
-    "ad67217286b0": "2026-05-29T19:12:40.122985+00:00",
-    "bdcb08c12644": "2026-05-29T19:12:40.122985+00:00",
-    "928a968d22c4": "2026-05-29T19:12:40.122985+00:00",
-    "c8c82c7622f1": "2026-05-29T19:12:40.122985+00:00",
     "e79b5549c409": "2026-05-29T21:17:23.001035+00:00",
     "034bbc5861d4": "2026-05-29T21:17:23.001035+00:00",
     "d11e64ed6123": "2026-05-29T21:17:23.001035+00:00",
@@ -532,72 +520,20 @@
     "c08b40fd4893": "2026-05-29T22:44:50.607336+00:00",
     "62ceb19d4336": "2026-05-29T22:44:50.607336+00:00",
     "f54785d470f0": "2026-05-29T22:44:50.607336+00:00",
-    "0cfae9de3ffa": "2026-05-29T22:44:50.607336+00:00"
+    "0cfae9de3ffa": "2026-05-29T22:44:50.607336+00:00",
+    "3511f4b2c840": "2026-05-29T23:56:36.653236+00:00",
+    "0e081e4a5016": "2026-05-29T23:56:36.653236+00:00",
+    "76dd3ba0be52": "2026-05-29T23:56:36.653236+00:00",
+    "64aad299fdf0": "2026-05-29T23:56:36.653236+00:00",
+    "a7b8696d72ee": "2026-05-29T23:56:36.653236+00:00",
+    "4e4f27ec31c8": "2026-05-29T23:56:36.653236+00:00",
+    "d5af5600a371": "2026-05-29T23:56:36.653236+00:00",
+    "72750fd2d2f2": "2026-05-29T23:56:36.653236+00:00",
+    "3e503b499df1": "2026-05-29T23:56:36.653236+00:00",
+    "dc7fc3c44de4": "2026-05-29T23:56:36.653236+00:00",
+    "737868eb28fe": "2026-05-29T23:56:36.653236+00:00"
   },
   "live_clusters": {
-    "c114d823dfdadd06": {
-      "topic": "Travis Scott Air Jordan 1 Low Pink Pack Release",
-      "item_ids": [
-        "e4524f4f9788"
-      ],
-      "created_at": "2026-05-28T23:42:14.384730+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e183cc509d07cfaf": {
-      "topic": "Nina Protocol Independent Music Platform Shutdown",
-      "item_ids": [
-        "a1269e014cab"
-      ],
-      "created_at": "2026-05-28T23:42:14.384730+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "74ec79ac6ecede6d": {
-      "topic": "BTS BUSAN LIVE VIEWING Theater Release",
-      "item_ids": [
-        "400fffeced0f"
-      ],
-      "created_at": "2026-05-28T23:42:14.384730+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7e21d2d388ab30c3": {
-      "topic": "Lizzo PETA Controversy Baby Back Ribs Campaign",
-      "item_ids": [
-        "369cb6e9a62e"
-      ],
-      "created_at": "2026-05-28T23:42:14.384730+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9d112ea6f9cdeca1": {
-      "topic": "Erin Moriarty Fan Expo Denver Cancellation",
-      "item_ids": [
-        "3c3eaaaa0fac"
-      ],
-      "created_at": "2026-05-28T23:42:14.384730+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2c51323fc986b2ed": {
-      "topic": "Brooke Shields 'You're Killing Me' Season 2 Renewal Acorn TV",
-      "item_ids": [
-        "5328b359df14"
-      ],
-      "created_at": "2026-05-28T23:42:14.384730+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "34f03e32e19c3700": {
-      "topic": "'Virgin River' Season 8 Natasha Calis Cast Addition",
-      "item_ids": [
-        "0c7e53740d07"
-      ],
-      "created_at": "2026-05-28T23:42:14.384730+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "8e393a699c2c9495": {
       "topic": "Martina McBride Withdraws From Trump Freedom 250 Concert Event",
       "item_ids": [
@@ -710,7 +646,8 @@
     "2cca5780f88c61a5": {
       "topic": "Spurs vs Thunder Western Conference Finals Game 7",
       "item_ids": [
-        "fad6a9dabc1b"
+        "fad6a9dabc1b",
+        "2656dcec043c"
       ],
       "created_at": "2026-05-29T05:56:31.988714+00:00",
       "last_escalated_size": 0,
@@ -1572,7 +1509,88 @@
       "created_at": "2026-05-29T22:45:19.054333+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "abf5856a77cec9ba": {
+      "topic": "Marcia Lucas Star Wars Editor Death Obituary",
+      "item_ids": [
+        "3f80831f496f"
+      ],
+      "created_at": "2026-05-29T23:57:03.617619+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f9c3231690967446": {
+      "topic": "Deli Boys Season 2 Character Romance",
+      "item_ids": [
+        "48ae559f0654"
+      ],
+      "created_at": "2026-05-29T23:57:03.617619+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d8c8fed4f0a5d02c": {
+      "topic": "Dutton Ranch Episode 4 Plot Summary",
+      "item_ids": [
+        "5001150c96ed"
+      ],
+      "created_at": "2026-05-29T23:57:03.617619+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6e1de7f983861a9a": {
+      "topic": "DJ Screw Catalog Streaming Release",
+      "item_ids": [
+        "674203e0afff"
+      ],
+      "created_at": "2026-05-29T23:57:03.617619+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dec1d08f49c32d81": {
+      "topic": "Drake Canadian Hot 100 Chart Records",
+      "item_ids": [
+        "ed308a66f0f3"
+      ],
+      "created_at": "2026-05-29T23:57:03.617619+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e28de1a67320679e": {
+      "topic": "UK Chart Songs 8+ Weeks Not Top 10 Hot 100",
+      "item_ids": [
+        "ba79212ce153"
+      ],
+      "created_at": "2026-05-29T23:57:03.617619+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e91ce1e6e98da9af": {
+      "topic": "Real Housewives New York Season 16 Cast Addition",
+      "item_ids": [
+        "9d6e2616d0ee"
+      ],
+      "created_at": "2026-05-29T23:57:03.617619+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5a278849b6b8f485": {
+      "topic": "Danny Boyle 28 Years Later III Filming Plans",
+      "item_ids": [
+        "9ba7b67b8f93"
+      ],
+      "created_at": "2026-05-29T23:57:03.617619+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7a98cac1536d3d2f": {
+      "topic": "Giants Olszewski Torn Achilles Injury",
+      "item_ids": [
+        "bad7ebda5ec9"
+      ],
+      "created_at": "2026-05-29T23:57:03.617619+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-29T22:45:19.055581+00:00"
+  "last_checked": "2026-05-29T23:57:03.618870+00:00"
 }
