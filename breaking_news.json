@@ -1,6 +1,189 @@
 {
   "items": [
     {
+      "id": "1af4c466851d",
+      "topic": "‘Project Hail Mary’ Tops Golden Trailer Awards With 5 Prizes",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://variety.com/2026/film/news/golden-trailer-awards-project-hail-mary-1236761839/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "6cce4c972eaeaedf"
+    },
+    {
+      "id": "409df3fcb4e6",
+      "topic": "Syd Announces First Album in Four Years",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://pitchfork.com/news/syd-announces-first-album-in-four-years/",
+      "source_name": "Pitchfork",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "f97e24e85b3ca189"
+    },
+    {
+      "id": "62f7c109ed4b",
+      "topic": "Ariana Grande, Labrinth, aespa & More: New Music Friday Guide",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://www.billboard.com/music/music-news/ariana-grande-aespa-new-music-friday-guide-1236258464/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "2b6d2fb7407f2a30"
+    },
+    {
+      "id": "b7051958011b",
+      "topic": "After a Prolonged Absence, Boards of Canada Fires-Up With ‘Inferno’: Stream It Now",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://www.billboard.com/music/music-news/boards-of-canada-inferno-stream-it-now-1236259803/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "7f51a006801956ec"
+    },
+    {
+      "id": "901866dcadba",
+      "topic": "Let The ‘Backrooms’ Bonanza Begin: Previews For Kane Parsons Movie At $9M – Late Thursday Box Office",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://deadline.com/2026/05/box-office-backrooms-1236929953/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "81652e4ca6121e9e"
+    },
+    {
+      "id": "8fc1bf2f35ac",
+      "topic": "Golden Trailer Awards: ‘Project Hail Mary’ Scores Best In Show & Leads Field; Disney Tops Studios – Full List",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://deadline.com/2026/05/golden-trailer-awards-2026-winners-list-1236929662/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "6cce4c972eaeaedf"
+    },
+    {
+      "id": "fad6a9dabc1b",
+      "topic": "Spurs roll past Thunder as WCF head to Game 7",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48906635/spurs-rout-thunder-force-game-7-western-conference-finals",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "2cca5780f88c61a5"
+    },
+    {
+      "id": "f07f30eea35c",
+      "topic": "4-time Cup champ Claude Lemieux dies at 60",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://www.espn.com/nhl/story/_/id/48901936/4-stanley-cup-champion-claude-lemieux-dies-60",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "6b9aecc45137598b"
+    },
+    {
+      "id": "e44b134aa819",
+      "topic": "Knicks' Robinson has broken finger, sources say",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://www.espn.com/nba/story/_/id/48904991/sources-knicks-mitchell-robinson-broken-pinkie-finger",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "b52d4b85460559ce"
+    },
+    {
+      "id": "cf8f3329ec6b",
+      "topic": "Nvidia is investing billions into this emerging technology that could change the AI industry",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "f54ad1b3cf321e07"
+    },
+    {
+      "id": "3bfa7db2e7e7",
+      "topic": "I was at the exclusive launch of Ferrari's new EV that sent the stock tumbling. But there may be light at the end of the tunnel",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://www.cnbc.com/2026/05/29/ferrari-luce-ev-launch-backlash-stock-drop.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "79f8e86cd68478f2"
+    },
+    {
+      "id": "b3b545f404b3",
+      "topic": "Nvidia is investing billions into this emerging technology that could change the AI industry - CNBC",
+      "traffic": "",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5LdnhMdmVKM19DYkQ4c1EtWXk3bHI3ek1mRWZvVFV6b3RTdXp1Y2VWTk9KdWs2M1o4LXlxc3pkQ0JNeWNfVzlwZmM0c212cFJ6LW9pRm9MNC1wUUwwd0hRTTRMVUN1RDRUbkRBUnp3dFJvazR6eGfSAXtBVV95cUxQZktCN0hoc29UbEI1bHVGR2NGd0pLSnBkWW1xbFlWZ2hxV0JrcFd0NEFwQ0NHY3pqbHlvZG5nS2pGdTcwZjJEU2YyQWdHdWNDTkRnMGRkc0J1aFBRZ0M5UEh6T1RqT3ZRdVF1NHBCOE4yQk9wdzRkRWF0Vzg?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "79f8e86cd68478f2"
+    },
+    {
+      "id": "12fdc647858f",
+      "topic": "ariana",
+      "traffic": "##2 on X",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://x.com/search?q=ariana&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "85652c1ab4e0",
+      "topic": "#hatethatimadeyouloveme",
+      "traffic": "##3 on X",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://x.com/search?q=%23hatethatimadeyouloveme&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "8eb647dce1f6",
+      "topic": "Blue Origin",
+      "traffic": "##4 on X",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://x.com/search?q=Blue+Origin&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6,
+      "cluster_id": "92a7292f430d2eb0"
+    },
+    {
+      "id": "17e420bdffb8",
+      "topic": "Carter Bryant",
+      "traffic": "##5 on X",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://x.com/search?q=Carter+Bryant&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "ed69d68467f3",
+      "topic": "Raven Johnson",
+      "traffic": "##6 on X",
+      "detected_at": "2026-05-29T05:55:41.667078+00:00",
+      "search_url": "https://x.com/search?q=Raven+Johnson&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "d2c2b9974bd1",
       "topic": "Martina McBride Pulls Out of ‘Misleading’ Great American State Fair Event: ‘What We Were Told Is Not, In Fact, What Is Happening’",
       "traffic": "",
@@ -246,194 +429,7 @@
       "source_type": "feed",
       "haiku_score": 6,
       "cluster_id": "34f03e32e19c3700"
-    },
-    {
-      "id": "e320a86719bb",
-      "topic": "How to apply to Startup Battlefield 2026, what you need ahead of the June 8 deadline",
-      "traffic": "",
-      "detected_at": "2026-05-28T23:41:37.981632+00:00",
-      "search_url": "https://techcrunch.com/2026/05/28/how-to-apply-to-startup-battlefield-2026-what-you-need-ahead-of-the-june-8-deadline/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "b58b788332c10162"
-    },
-    {
-      "id": "40dc28a7cad5",
-      "topic": "Call of Duty",
-      "traffic": "##11 on X",
-      "detected_at": "2026-05-28T23:41:37.981632+00:00",
-      "search_url": "https://x.com/search?q=Call+of+Duty&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 7,
-      "cluster_id": "6e1282ded633d1c8"
-    },
-    {
-      "id": "28f53d8b02d2",
-      "topic": "Dylan Harper’s Titan x Nike GT Cut 1 Drops Via Foot Locker On June 1st",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://sneakernews.com/2026/05/28/nike-gt-cut-dylan-harper-bleached-aqua-iu0779-400/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "7574ee4f0aff0d02"
-    },
-    {
-      "id": "fa7f07a9e3d7",
-      "topic": "Supreme x Martine Rose x Nike Dunk Low Dropping Holiday 2026",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://sneakernews.com/2026/05/28/supreme-martine-rose-nike-dunk-low-ja1868-001/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "206cf31cd2f7f80c"
-    },
-    {
-      "id": "5e99276d1268",
-      "topic": "The Air Jordan 4 “Toro” Launches A Collectible Hangtag Series In NYC",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://sneakernews.com/2026/05/28/air-jordan-4-toro-queens-bronx-hangtag/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "d4fbb324bf80b372"
-    },
-    {
-      "id": "766ac3b4ff97",
-      "topic": "Ezra Collective Shares New Song, Details New Album and Tour",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://pitchfork.com/news/ezra-collective-share-new-song-with-pa-salieu-detail-new-album-and-tour/",
-      "source_name": "Pitchfork",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "7dff736700b86724"
-    },
-    {
-      "id": "bad4033d5faa",
-      "topic": "Google Staffer Used Insider Data to Win Online Bet D4vd Would Be ‘Most Searched’ of 2025: Feds",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-news/google-staffer-insider-data-win-d4vd-bet-online-1235569669/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "4542ab3ab453a5f2"
-    },
-    {
-      "id": "224aa29caf46",
-      "topic": "Our Films, Producers Of Cannes Winning ‘Fatherland’, Teaming With Alice Rohrwacher For Feature Take Of ‘The Baron In The Trees’",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://deadline.com/2026/05/alice-rohrwacher-baron-in-the-trees-lorenzo-mieli-mario-gianani-1236929487/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "9fe916adf5ffcc5c"
-    },
-    {
-      "id": "7b1aab1a5e8d",
-      "topic": "The internet is being rebuilt for machines",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "bd50ec185be708b6"
-    },
-    {
-      "id": "4ee49a2bdbda",
-      "topic": "A leaked Disney memo suggests the standalone Hulu app's days may be numbered",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://www.engadget.com/2183291/a-leaked-disney-memo-suggests-the-standalone-hulu-app-s-days-may-be-numbered/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "8ec96b7a1b8274d1"
-    },
-    {
-      "id": "8782dda3d458",
-      "topic": "LLMs believe false statements even after explicit warnings that they're false",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://arstechnica.com/ai/2026/05/llms-believe-false-statements-even-after-explicit-warnings-that-theyre-false/",
-      "source_name": "Ars Technica",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "8debda43d4989bfb"
-    },
-    {
-      "id": "a3b8577337c8",
-      "topic": "Dell shares jump 31% after server maker reports fastest sales growth since return to public market in 2018",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/28/dell-q1-earnings-report-2027.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "5857231a1c9fa6fa"
-    },
-    {
-      "id": "9c831165bae5",
-      "topic": "Costco says it saw 'record-breaking' gas volumes amid rising prices",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/28/costco-cost-q3-2026-earnings.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "4fa14127d4874a0a"
-    },
-    {
-      "id": "68b780ecc880",
-      "topic": "Okta jumps 8%, tops first-quarter results on agentic AI demand",
-      "traffic": "",
-      "detected_at": "2026-05-28T22:06:54.276218+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/28/okta-okta-earnings-q1-2027.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "38b413e5ce557740"
-    },
-    {
-      "id": "5def3e8554e8",
-      "topic": "First Look At The Nike Ava Edge",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://sneakernews.com/2026/05/28/nike-ava-edge-vast-grey-racer-blue-smoke-grey-im1973-001/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "a44de91f299b2f48"
-    },
-    {
-      "id": "f3da5b324702",
-      "topic": "Nike Dresses Up The Air Force 1 Low With Loafer Buckles",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://sneakernews.com/2026/05/28/nike-air-force-1-low-black-leather-im5754-001/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "37fc578ec6c0c267"
-    },
-    {
-      "id": "af0145f360c4",
-      "topic": "The Levi’s 501 Jeans Mega-Test: I Tried On 20 Different Pairs to Find the Best Ones",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://www.gq.com/story/best-levis-501-jeans",
-      "source_name": "GQ",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "bc0c0cf6c45ed3af"
     }
   ],
-  "last_checked": "2026-05-29T01:34:57.880156+00:00"
+  "last_checked": "2026-05-29T05:55:41.667078+00:00"
 }

@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "7d6e5b3b98b1",
-    "eabafb299783",
-    "186089ba0bbc",
-    "5ff4080fbe5b",
-    "1ab37a271eb8",
-    "6bf3f5e54fbc",
-    "dc3e55ef6065",
-    "299ac1bc03c5",
-    "d2ae7f217bce",
-    "8a3b9b3c0824",
-    "16ffd3ee0324",
-    "842a9066f6ce",
-    "9dddc2d84f97",
-    "5fe03f8442b6",
-    "db459663a533",
-    "1e95e0752896",
-    "effaf5c9ad78",
     "2244eca59b77",
     "f3b975c7be1d",
     "0071eb329701",
@@ -499,124 +482,41 @@
     "7c879b0eea14",
     "446a03507dd2",
     "0a110c6d38e5",
-    "60eccf833923"
+    "60eccf833923",
+    "1af4c466851d",
+    "409df3fcb4e6",
+    "62f7c109ed4b",
+    "b7051958011b",
+    "901866dcadba",
+    "8fc1bf2f35ac",
+    "fad6a9dabc1b",
+    "f07f30eea35c",
+    "e44b134aa819",
+    "cf8f3329ec6b",
+    "3bfa7db2e7e7",
+    "b3b545f404b3",
+    "12fdc647858f",
+    "85652c1ab4e0",
+    "8eb647dce1f6",
+    "17e420bdffb8",
+    "ed69d68467f3"
   ],
   "failed_ids": {
-    "91b54197de5c": "2026-05-28T22:06:54.276218+00:00",
-    "3db41d8dbe0f": "2026-05-28T22:06:54.276218+00:00",
-    "2aafc9617a62": "2026-05-28T22:06:54.276218+00:00",
-    "508454d8e155": "2026-05-28T22:06:54.276218+00:00",
-    "56117658259d": "2026-05-28T22:06:54.276218+00:00",
-    "b26ce6022a43": "2026-05-28T22:06:54.276218+00:00",
-    "19ab8d553f1c": "2026-05-28T22:06:54.276218+00:00",
-    "44e729e4dbf6": "2026-05-28T22:06:54.276218+00:00",
-    "54fcd0cd536c": "2026-05-28T22:06:54.276218+00:00",
-    "a0ea0e198814": "2026-05-28T22:06:54.276218+00:00",
-    "bb06936d6443": "2026-05-28T22:06:54.276218+00:00",
-    "b76f822688c1": "2026-05-28T22:06:54.276218+00:00",
-    "35a27522576e": "2026-05-28T23:41:37.981632+00:00",
-    "ab1e5d6aa6cd": "2026-05-28T23:41:37.981632+00:00",
-    "7a846385f312": "2026-05-28T23:41:37.981632+00:00",
-    "f07f30eea35c": "2026-05-28T23:41:37.981632+00:00",
-    "c15316847544": "2026-05-28T23:41:37.981632+00:00",
-    "3ae26fb2e66f": "2026-05-28T23:41:37.981632+00:00",
-    "636e5245fd07": "2026-05-28T23:41:37.981632+00:00",
-    "1697b1eeb90f": "2026-05-28T23:41:37.981632+00:00",
-    "52c68b350a0c": "2026-05-28T23:41:37.981632+00:00",
-    "8bf095b88416": "2026-05-28T23:41:37.981632+00:00",
-    "e9ef8b8a31ea": "2026-05-28T23:41:37.981632+00:00",
-    "623cd3a9de13": "2026-05-28T23:41:37.981632+00:00",
-    "45a135a35341": "2026-05-28T23:41:37.981632+00:00",
-    "9a30a4903e53": "2026-05-28T23:41:37.981632+00:00",
-    "514f87bedc4d": "2026-05-28T23:41:37.981632+00:00",
-    "0cbb0ba793f4": "2026-05-28T23:41:37.981632+00:00",
-    "908257da32ec": "2026-05-29T01:34:57.880156+00:00",
-    "e44b134aa819": "2026-05-29T01:34:57.880156+00:00",
-    "3fd1424230d4": "2026-05-29T01:34:57.880156+00:00",
-    "3fbd8a7696f5": "2026-05-29T01:34:57.880156+00:00",
-    "a9f327ffc92d": "2026-05-29T01:34:57.880156+00:00",
-    "d83d2fbdde96": "2026-05-29T01:34:57.880156+00:00",
-    "756c23fdbbd0": "2026-05-29T01:34:57.880156+00:00",
-    "c9f99ee52855": "2026-05-29T01:34:57.880156+00:00",
-    "f0be99a67155": "2026-05-29T01:34:57.880156+00:00",
-    "7ebe464599a1": "2026-05-29T01:34:57.880156+00:00",
-    "0e18d7e4c947": "2026-05-29T01:34:57.880156+00:00",
-    "f8d77c731938": "2026-05-29T01:34:57.880156+00:00",
-    "4c6a5fb96f6a": "2026-05-29T01:34:57.880156+00:00"
+    "1bb8475dbafe": "2026-05-29T05:55:41.667078+00:00",
+    "3981ee1a0070": "2026-05-29T05:55:41.667078+00:00",
+    "aa315854d410": "2026-05-29T05:55:41.667078+00:00",
+    "b3ecbdd5ff22": "2026-05-29T05:55:41.667078+00:00",
+    "ae8878d78634": "2026-05-29T05:55:41.667078+00:00",
+    "53d04c214507": "2026-05-29T05:55:41.667078+00:00",
+    "715fd8c0e520": "2026-05-29T05:55:41.667078+00:00",
+    "c4ad0f9dcfdc": "2026-05-29T05:55:41.667078+00:00",
+    "756c23fdbbd0": "2026-05-29T05:55:41.667078+00:00",
+    "4c36be699772": "2026-05-29T05:55:41.667078+00:00",
+    "446c30b1641d": "2026-05-29T05:55:41.667078+00:00",
+    "43964706f94d": "2026-05-29T05:55:41.667078+00:00",
+    "6ea7784b3a0e": "2026-05-29T05:55:41.667078+00:00"
   },
   "live_clusters": {
-    "9eb47729e0859934": {
-      "topic": "Dorohedoro Season 3 Renewal",
-      "item_ids": [
-        "56fc11a9d589"
-      ],
-      "created_at": "2026-05-28T03:52:55.071472+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8b20d12d91e3631a": {
-      "topic": "News & Documentary Emmy Awards 2026 ABC Winners",
-      "item_ids": [
-        "e53a1c5b2e2a"
-      ],
-      "created_at": "2026-05-28T03:52:55.071472+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0968ff96280e3f8b": {
-      "topic": "ARIA Hall of Fame Broadcast Deal",
-      "item_ids": [
-        "ca006370d304"
-      ],
-      "created_at": "2026-05-28T03:52:55.071472+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "756cac8b6d8a7a35": {
-      "topic": "Love Island USA Season 8 Safety Campaign",
-      "item_ids": [
-        "3914f58e3f6a"
-      ],
-      "created_at": "2026-05-28T03:52:55.071472+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fd09116f519141da": {
-      "topic": "Hurricanes Playoff Domination Game Updates",
-      "item_ids": [
-        "68f2dc41c2c8"
-      ],
-      "created_at": "2026-05-28T03:52:55.071472+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3bde4c6ee7fc2cd2": {
-      "topic": "Hurricanes Stanley Cup Finals Path",
-      "item_ids": [
-        "b37943d9112d"
-      ],
-      "created_at": "2026-05-28T03:52:55.071472+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0d294b987a050a2e": {
-      "topic": "SEC vs B1G College Football Conference Dominance",
-      "item_ids": [
-        "7e1c1ac0e06e"
-      ],
-      "created_at": "2026-05-28T03:52:55.071472+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f117c85747dec5b5": {
-      "topic": "NFL Draft 2026 First Round Projections",
-      "item_ids": [
-        "31de215199dc"
-      ],
-      "created_at": "2026-05-28T03:52:55.071472+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "a94cf8b0eb942be2": {
       "topic": "G-SHOCK DW-5600 RX-78-2 Gundam Collaboration Watch Release",
       "item_ids": [
@@ -638,11 +538,20 @@
     "6cce4c972eaeaedf": {
       "topic": "Disney+ June 2026 Content Releases",
       "item_ids": [
-        "0fe0f9c0e74d"
+        "0fe0f9c0e74d",
+        "1af4c466851d",
+        "8fc1bf2f35ac"
       ],
       "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-29T05:55:41.667078+00:00",
+      "picks_file": "picks/picks-2026-05-29-0556.md",
+      "why_text": "The film adaptation of Andy Weir's beloved sci-fi novel swept the Golden Trailer Awards with five prizes including Best in Show, signaling that the Ryan Gosling-led space epic has serious awards-season momentum before it even opens wide. This is a cultural inflection point for prestige sci-fi \u2014 'Interstellar' energy meets modern IP hunger \u2014 and it confirms that Gosling's post-Barbie career pivot toward grounded blockbuster territory is landing exactly as planned. Disney cleaning up at the studio level alongside it cements that the summer 2026 slate is shaping up to be theirs to lose.",
+      "last_escalated_item_ids": [
+        "0fe0f9c0e74d",
+        "1af4c466851d",
+        "8fc1bf2f35ac"
+      ]
     },
     "817a24613ba1be8d": {
       "topic": "A24 Charli XCX 'The Moment' Merchandise Japan Release",
@@ -738,11 +647,20 @@
     "79f8e86cd68478f2": {
       "topic": "Ferrari EV Launch Market Impact Assessment",
       "item_ids": [
-        "1e04f2f4afe1"
+        "1e04f2f4afe1",
+        "3bfa7db2e7e7",
+        "b3b545f404b3"
       ],
       "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-29T05:55:41.667078+00:00",
+      "picks_file": "picks/picks-2026-05-29-0556.md",
+      "why_text": "Ferrari just unveiled its first electric vehicle, and the market's immediate reaction was a stock dip \u2014 a sign that investors aren't yet convinced the Prancing Horse can electrify without losing its soul. But Ferrari has pulled off the impossible before: commanding hyper-premium pricing in a market that keeps commoditizing, and the EV space desperately needs a luxury anchor. If Ferrari can make electric feel scarce and desirable, it doesn't just save its own brand \u2014 it reframes the entire EV narrative.",
+      "last_escalated_item_ids": [
+        "1e04f2f4afe1",
+        "3bfa7db2e7e7",
+        "b3b545f404b3"
+      ]
     },
     "357b40c77c0a2e81": {
       "topic": "Wyclef Jean Seven Albums One Year AI Technology Project",
@@ -1806,7 +1724,8 @@
     "92a7292f430d2eb0": {
       "topic": "Blue Origin New Glenn Rocket Test Failure Florida",
       "item_ids": [
-        "0f942237e7a3"
+        "0f942237e7a3",
+        "8eb647dce1f6"
       ],
       "created_at": "2026-05-29T01:35:27.158167+00:00",
       "last_escalated_size": 0,
@@ -1829,7 +1748,79 @@
       "created_at": "2026-05-29T01:35:27.158167+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f97e24e85b3ca189": {
+      "topic": "Syd First Album in Four Years Announcement",
+      "item_ids": [
+        "409df3fcb4e6"
+      ],
+      "created_at": "2026-05-29T05:56:31.988714+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2b6d2fb7407f2a30": {
+      "topic": "New Music Friday Ariana Grande Labrinth aespa",
+      "item_ids": [
+        "62f7c109ed4b"
+      ],
+      "created_at": "2026-05-29T05:56:31.988714+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7f51a006801956ec": {
+      "topic": "Boards of Canada Inferno Track Release",
+      "item_ids": [
+        "b7051958011b"
+      ],
+      "created_at": "2026-05-29T05:56:31.988714+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "81652e4ca6121e9e": {
+      "topic": "Backrooms Kane Parsons Movie $9M Box Office",
+      "item_ids": [
+        "901866dcadba"
+      ],
+      "created_at": "2026-05-29T05:56:31.988714+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2cca5780f88c61a5": {
+      "topic": "Spurs vs Thunder Western Conference Finals Game 7",
+      "item_ids": [
+        "fad6a9dabc1b"
+      ],
+      "created_at": "2026-05-29T05:56:31.988714+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6b9aecc45137598b": {
+      "topic": "Claude Lemieux Hockey Legend Death Obituary",
+      "item_ids": [
+        "f07f30eea35c"
+      ],
+      "created_at": "2026-05-29T05:56:31.988714+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b52d4b85460559ce": {
+      "topic": "Knicks Robinson Broken Finger Injury",
+      "item_ids": [
+        "e44b134aa819"
+      ],
+      "created_at": "2026-05-29T05:56:31.988714+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f54ad1b3cf321e07": {
+      "topic": "Nvidia Billions Investment Emerging AI Technology",
+      "item_ids": [
+        "cf8f3329ec6b"
+      ],
+      "created_at": "2026-05-29T05:56:31.988714+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-29T01:35:27.164718+00:00"
+  "last_checked": "2026-05-29T05:56:43.845017+00:00"
 }
