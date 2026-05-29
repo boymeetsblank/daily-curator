@@ -1,33 +1,5 @@
 {
   "known_ids": [
-    "42e02a73cdda",
-    "46cb43ecf337",
-    "0c203c9ea214",
-    "98ec13bed4da",
-    "99df69649221",
-    "10dd2c222fa9",
-    "bc9679da07e4",
-    "14e581344b47",
-    "41c4d56271ca",
-    "cad6689167b5",
-    "4c3c43ab0be9",
-    "b78154fdc9ac",
-    "b431a0450af6",
-    "1e2ebecf46ce",
-    "e92e98df8d14",
-    "6ff4055a2781",
-    "acb5bba7d056",
-    "a0d91eb24a85",
-    "2399a4d9b528",
-    "51279cd82ab2",
-    "e74c0f12bf48",
-    "3c60e75dcb26",
-    "088bad303098",
-    "fbdbe2348bd1",
-    "40b5ba0485f3",
-    "ad32779bdc95",
-    "b39b11c1cb9f",
-    "4977a795047f",
     "c8b28995f51c",
     "ba69717f0cea",
     "0b11084df606",
@@ -499,15 +471,37 @@
     "1bdbc5559cad",
     "7e8e1c0f6f06",
     "eda66b6b2abd",
-    "27f9a16872ce"
+    "27f9a16872ce",
+    "95fc3acd36d2",
+    "1b7725815d1f",
+    "e6cfcac1608b",
+    "7d5e428bea14",
+    "9a2110146a5f",
+    "98e078d0e458",
+    "37dac706e49c",
+    "8791907a4ce2",
+    "8b7c095ae3d7",
+    "83cc0dc15509",
+    "6dd1a7d29077",
+    "55485ad004ad",
+    "165e6147afdf",
+    "794abfb09851",
+    "d7ea7cb2187d",
+    "2c71bde7f2da",
+    "1c41a8078010",
+    "89d0a84a00ea",
+    "194d89b35f3b",
+    "82d19b7b3f6a",
+    "4b1d7fc08047",
+    "b1388b76fe57",
+    "c7db6bf27bc6",
+    "4283bc89dc1f",
+    "db4b1f3e342c",
+    "fc9968aab84a",
+    "03630e2d433b",
+    "661d85a0d40e"
   ],
   "failed_ids": {
-    "b38e0bb9d02e": "2026-05-29T09:53:06.719931+00:00",
-    "da2de4a49fd1": "2026-05-29T09:53:06.719931+00:00",
-    "220358b9c044": "2026-05-29T09:53:06.719931+00:00",
-    "b9cc6449fe78": "2026-05-29T09:53:06.719931+00:00",
-    "ca7bf60407cc": "2026-05-29T09:53:06.719931+00:00",
-    "cc26f84a5499": "2026-05-29T09:53:06.719931+00:00",
     "7cb214d2c5b9": "2026-05-29T12:42:18.817403+00:00",
     "3fd1424230d4": "2026-05-29T12:42:18.817403+00:00",
     "d0d72a24af7b": "2026-05-29T12:42:18.817403+00:00",
@@ -520,244 +514,22 @@
     "c2cfa3a49f1e": "2026-05-29T12:42:18.817403+00:00",
     "15054378333b": "2026-05-29T12:42:18.817403+00:00",
     "da0af99b8176": "2026-05-29T12:42:18.817403+00:00",
-    "eadba5bb8750": "2026-05-29T12:42:18.817403+00:00"
+    "eadba5bb8750": "2026-05-29T12:42:18.817403+00:00",
+    "2c7f1294b67c": "2026-05-29T16:30:33.057365+00:00",
+    "32ffdd766b9b": "2026-05-29T16:30:33.057365+00:00",
+    "d141b17ed5f7": "2026-05-29T16:30:33.057365+00:00",
+    "d6d4658e2f26": "2026-05-29T16:30:33.057365+00:00",
+    "d11e64ed6123": "2026-05-29T16:30:33.057365+00:00",
+    "dd3db0185299": "2026-05-29T16:30:33.057365+00:00",
+    "56117658259d": "2026-05-29T16:30:33.057365+00:00",
+    "bbc026ea331f": "2026-05-29T16:30:33.057365+00:00",
+    "0560af7b33f3": "2026-05-29T16:30:33.057365+00:00",
+    "8eeb47c839ed": "2026-05-29T16:30:33.057365+00:00",
+    "1a7d488fa4c7": "2026-05-29T16:30:33.057365+00:00",
+    "c31441e0c7ab": "2026-05-29T16:30:33.057365+00:00",
+    "60933b298ea1": "2026-05-29T16:30:33.057365+00:00"
   },
   "live_clusters": {
-    "5e4f928208e0b970": {
-      "topic": "Salomon JISOO Partnership Announcement",
-      "item_ids": [
-        "a290266f21c8"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0adce629b8a61a28": {
-      "topic": "Sage Elsesser GQ Fashion Profile",
-      "item_ids": [
-        "6e04d8d8a28d"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "14e1747da94fb8aa": {
-      "topic": "Reactor AI Video Startup $59M Funding WndrCo",
-      "item_ids": [
-        "4ac05351b7da"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c783662fe75e10b1": {
-      "topic": "CNN Sues Perplexity AI Copyright Infringement",
-      "item_ids": [
-        "2806888dde8e",
-        "3faea2c5d6f1"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b3b6bce26cf30041": {
-      "topic": "Chanel Beads Tour and New Song",
-      "item_ids": [
-        "164ede48f839"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "69f5ed92658c7d8c": {
-      "topic": "Jadasea New Album Holly Grove",
-      "item_ids": [
-        "6552927e6813"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c5856351087f3210": {
-      "topic": "Riley Green Billboard Cover Profile",
-      "item_ids": [
-        "ef488b34aa9f"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7d232fd514ef8170": {
-      "topic": "Riley Green Billboard Cover Shoot Photos",
-      "item_ids": [
-        "328be4f7e0fd"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2c792b268c6a9d6e": {
-      "topic": "Nate Bargatze Mr. Mom Remake Discussion",
-      "item_ids": [
-        "d73c226ef275"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "257b36bff56eda90": {
-      "topic": "Sugar Season 2 Trailer Colin Farrell",
-      "item_ids": [
-        "50df41cc6acf"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cda7f0aef25254ec": {
-      "topic": "Kevin O'Leary Nvidia Co-Founder 2026 AI Honors",
-      "item_ids": [
-        "0fa78a4b6f37"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "47f5b4a04b1db29b": {
-      "topic": "Nat Geo Titanic Sinks Tonight Docu-Drama",
-      "item_ids": [
-        "df434a3f7f51"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d2ef0a6a41b04724": {
-      "topic": "Apple Siri Overhaul iOS 27 ChatGPT Competitor",
-      "item_ids": [
-        "5ae8ee806afa",
-        "d1ea6ead9204",
-        "a7ae01530f1e"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-29T12:42:18.817403+00:00",
-      "picks_file": "picks/picks-2026-05-29-1242.md",
-      "why_text": "Apple is preparing a ground-up redesign of Siri that positions it as a direct ChatGPT competitor, a move that signals the company knows its voice assistant has fallen embarrassingly behind. This isn't a tweak \u2014 it's an admission that the AI race has forced Apple's hand, and iOS 27 is where they're betting they can catch up. If it lands, it reshapes the entire consumer AI landscape; if it doesn't, Apple risks ceding the most personal layer of its ecosystem to OpenAI permanently.",
-      "last_escalated_item_ids": [
-        "5ae8ee806afa",
-        "d1ea6ead9204",
-        "a7ae01530f1e"
-      ]
-    },
-    "18b10b50dfb093c3": {
-      "topic": "Rivian R1 Rear Suspension Failure Investigation",
-      "item_ids": [
-        "b87d30caf438"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ca99f3260985e0b2": {
-      "topic": "RSI Artificial General Intelligence Analysis",
-      "item_ids": [
-        "0ec483fbd67f"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6820b188895c743a": {
-      "topic": "Databricks Enterprise AI Deals TechCrunch Disrupt",
-      "item_ids": [
-        "7dac4f0cab35"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "557ff0c99963b291": {
-      "topic": "Intel Arc G-Series Gaming Handhelds",
-      "item_ids": [
-        "88ecccb14fe5"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "35cce5771103b2d1": {
-      "topic": "Local AI Chatbot iPhone Setup Guide",
-      "item_ids": [
-        "bf801b9d624a"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1d3f64411c7afeb5": {
-      "topic": "Gene-Editing Drug Cholesterol Reduction Trial",
-      "item_ids": [
-        "f168e38be9e1"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dadd870b2acc2344": {
-      "topic": "Starbucks Afternoon Traffic Turnaround",
-      "item_ids": [
-        "0779ec25ce71"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1de96cf42dcd6ffb": {
-      "topic": "Credo Technology DustPhotonics Acquisition",
-      "item_ids": [
-        "9f2d3d1a0d1a"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8bb1ed7ea706fe20": {
-      "topic": "Technology Older Adults Connected Independent Living",
-      "item_ids": [
-        "ddac3dc33028"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "06fe39f640672c53": {
-      "topic": "Pope Leo AI Technology Landmark Text",
-      "item_ids": [
-        "ad0ef667a6d5"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1f52dcb114f9390b": {
-      "topic": "DGIST Asian Engineering Education Hub AEDS 2026",
-      "item_ids": [
-        "6181ef3a1199"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "078d851d2a8268c9": {
-      "topic": "Career Technology Education Vo-Tech Evolution",
-      "item_ids": [
-        "b14050d94744"
-      ],
-      "created_at": "2026-05-28T14:49:26.667498+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "40fff766c7655ef7": {
       "topic": "New Balance 992 Shadow Grey Vintage Release",
       "item_ids": [
@@ -1369,7 +1141,8 @@
     "5857231a1c9fa6fa": {
       "topic": "Dell Shares Jump 31% Server Sales Growth Post-IPO Return",
       "item_ids": [
-        "a3b8577337c8"
+        "a3b8577337c8",
+        "c7db6bf27bc6"
       ],
       "created_at": "2026-05-28T22:07:32.711502+00:00",
       "last_escalated_size": 0,
@@ -1659,7 +1432,8 @@
     "0f2d308620be5bf1": {
       "topic": "Riot Fest 2026 Lineup Announcement",
       "item_ids": [
-        "e60658576fa3"
+        "e60658576fa3",
+        "794abfb09851"
       ],
       "created_at": "2026-05-29T12:42:47.235946+00:00",
       "last_escalated_size": 0,
@@ -1736,7 +1510,196 @@
       "created_at": "2026-05-29T12:42:47.235946+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "53591f531f46176c": {
+      "topic": "LEGO Nike Dunk Low Bright Concord Collaboration",
+      "item_ids": [
+        "95fc3acd36d2"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1c807023eb5ebb03": {
+      "topic": "KidSuper World Cup BAPE Collection",
+      "item_ids": [
+        "1b7725815d1f"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b7e83cd7e7a247b7": {
+      "topic": "'Half Man' Emmy Submissions Richard Gadd Jamie Bell HBO",
+      "item_ids": [
+        "e6cfcac1608b"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9308831a8da8a567": {
+      "topic": "Broadway Galileo Neil deGrasse Tyson Narrator Video",
+      "item_ids": [
+        "7d5e428bea14"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6ff06f1bcf29b4f7": {
+      "topic": "Jorge Gutierrez AI Series Cancellation Amazon MGM Backlash",
+      "item_ids": [
+        "9a2110146a5f"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0c227c7b1db2ff92": {
+      "topic": "Adewale Akinnuoye-Agbaje Alamo Method Acting Southern Accent",
+      "item_ids": [
+        "98e078d0e458"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "97cfde5deffb1568": {
+      "topic": "Big Thief Irish Field Song Performance",
+      "item_ids": [
+        "37dac706e49c"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a48ccfb2e275fc8c": {
+      "topic": "Ren\u00e9e Fleming B\u00e9la Fleck Opera Bluegrass Album",
+      "item_ids": [
+        "8791907a4ce2"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0275df5985095119": {
+      "topic": "Billboard 2026 Country Power Players",
+      "item_ids": [
+        "8b7c095ae3d7"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3d0b66c33f25d172": {
+      "topic": "Austin Neal Agency Morgan Wallen Riley Green Ella Langley",
+      "item_ids": [
+        "83cc0dc15509"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7a4c7764429ca6b5": {
+      "topic": "Sting Deindustrialization Toxic Masculinity Comments",
+      "item_ids": [
+        "6dd1a7d29077"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "90ccad24a024a124": {
+      "topic": "Tranquilo Quieto Series Buscabulla Return",
+      "item_ids": [
+        "55485ad004ad"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "237a64f0326c1c39": {
+      "topic": "MXZI Phonk Mainstream Success",
+      "item_ids": [
+        "165e6147afdf"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1811c4925dcd018f": {
+      "topic": "Jim Mickle E.L. Katz FX That Texas Blood Series",
+      "item_ids": [
+        "d7ea7cb2187d"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3587f41e87ab0eb6": {
+      "topic": "Florence Pugh Midnight Library Paramount Deal",
+      "item_ids": [
+        "2c71bde7f2da"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a547381e48cd8bf8": {
+      "topic": "Rosalind Eleazar WME Signing Chris Rock Misty Green",
+      "item_ids": [
+        "1c41a8078010"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "974feea43bc097ca": {
+      "topic": "Jorge Gutierrez AI Project Cancellation Amazon MGM",
+      "item_ids": [
+        "89d0a84a00ea"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2ff98ad07cb2cdb6": {
+      "topic": "'The Pitt' Emmy Submissions Noah Wyle HBO Max",
+      "item_ids": [
+        "194d89b35f3b"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b91241fb33918e52": {
+      "topic": "Samsung Movingstyle Essential Screen Review",
+      "item_ids": [
+        "82d19b7b3f6a"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9a2ac868cbc28c72": {
+      "topic": "Cognition Scott Wu AI Coding Agents",
+      "item_ids": [
+        "4b1d7fc08047"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7c55f15c831a1870": {
+      "topic": "Paramount+ Star Trek AI Thumbnail Criticism",
+      "item_ids": [
+        "b1388b76fe57"
+      ],
+      "created_at": "2026-05-29T16:31:09.142279+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-29T12:42:53.104475+00:00"
+  "last_checked": "2026-05-29T16:31:09.143579+00:00"
 }
