@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "2244eca59b77",
-    "f3b975c7be1d",
-    "0071eb329701",
-    "ae0b7c6930ab",
-    "93ccb50ec247",
-    "16351529b8ce",
-    "1a6982ae0f03",
-    "ad4b9e7523fc",
-    "9db46184aab5",
-    "f69ef0e18ce8",
-    "8aa5f225d3b6",
-    "2ac9cb39e2cb",
-    "9534203f7a68",
     "336256f5c435",
     "2f752221c32e",
     "dbf841a4b2ed",
@@ -499,7 +486,20 @@
     "85652c1ab4e0",
     "8eb647dce1f6",
     "17e420bdffb8",
-    "ed69d68467f3"
+    "ed69d68467f3",
+    "31c83a5359ba",
+    "f8a510237df1",
+    "bca892fd7936",
+    "7a7043f922e5",
+    "1a0486e6e88e",
+    "4863d5b4ea26",
+    "3450b3ed316a",
+    "1947093ecfa5",
+    "b4830e7d94cc",
+    "f9c84354f256",
+    "bb6b346af47d",
+    "9be381995b10",
+    "c9e1aa102ea2"
   ],
   "failed_ids": {
     "1bb8475dbafe": "2026-05-29T05:55:41.667078+00:00",
@@ -514,163 +514,15 @@
     "4c36be699772": "2026-05-29T05:55:41.667078+00:00",
     "446c30b1641d": "2026-05-29T05:55:41.667078+00:00",
     "43964706f94d": "2026-05-29T05:55:41.667078+00:00",
-    "6ea7784b3a0e": "2026-05-29T05:55:41.667078+00:00"
+    "6ea7784b3a0e": "2026-05-29T05:55:41.667078+00:00",
+    "b38e0bb9d02e": "2026-05-29T09:53:06.719931+00:00",
+    "da2de4a49fd1": "2026-05-29T09:53:06.719931+00:00",
+    "220358b9c044": "2026-05-29T09:53:06.719931+00:00",
+    "b9cc6449fe78": "2026-05-29T09:53:06.719931+00:00",
+    "ca7bf60407cc": "2026-05-29T09:53:06.719931+00:00",
+    "cc26f84a5499": "2026-05-29T09:53:06.719931+00:00"
   },
   "live_clusters": {
-    "a94cf8b0eb942be2": {
-      "topic": "G-SHOCK DW-5600 RX-78-2 Gundam Collaboration Watch Release",
-      "item_ids": [
-        "e455519d3f34"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "12de25ca8248af0b": {
-      "topic": "Nautica Made in USA T-Shirt Collection New York Heritage Launch",
-      "item_ids": [
-        "ac573bcd1459"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6cce4c972eaeaedf": {
-      "topic": "Disney+ June 2026 Content Releases",
-      "item_ids": [
-        "0fe0f9c0e74d",
-        "1af4c466851d",
-        "8fc1bf2f35ac"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-29T05:55:41.667078+00:00",
-      "picks_file": "picks/picks-2026-05-29-0556.md",
-      "why_text": "The film adaptation of Andy Weir's beloved sci-fi novel swept the Golden Trailer Awards with five prizes including Best in Show, signaling that the Ryan Gosling-led space epic has serious awards-season momentum before it even opens wide. This is a cultural inflection point for prestige sci-fi \u2014 'Interstellar' energy meets modern IP hunger \u2014 and it confirms that Gosling's post-Barbie career pivot toward grounded blockbuster territory is landing exactly as planned. Disney cleaning up at the studio level alongside it cements that the summer 2026 slate is shaping up to be theirs to lose.",
-      "last_escalated_item_ids": [
-        "0fe0f9c0e74d",
-        "1af4c466851d",
-        "8fc1bf2f35ac"
-      ]
-    },
-    "817a24613ba1be8d": {
-      "topic": "A24 Charli XCX 'The Moment' Merchandise Japan Release",
-      "item_ids": [
-        "17c671330ca6"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e4decda56ba7402a": {
-      "topic": "2026 SESAC Latina Music Awards Winners Kapo Ed\u00e9n Mu\u00f1oz",
-      "item_ids": [
-        "37b71a7ba36b"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0fb30bdcfd1e96bf": {
-      "topic": "Dyson Supersonic Nural Hair Dryer Summer Sale",
-      "item_ids": [
-        "7c9fdcc2d35d"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bcaa04e5ba5df1d2": {
-      "topic": "Ohtani Performance No-Hit Bid Home Run",
-      "item_ids": [
-        "5b33554de544",
-        "f49c6db96c8f"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "19494a00cb74ee5d": {
-      "topic": "S\u00e1nchez Scoreless Streak Phillies 1911 Record",
-      "item_ids": [
-        "be8d0929ad6c"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8d3770460d19e348": {
-      "topic": "Ex-Super Bowl MVP Miller Broncos Return Lobbying",
-      "item_ids": [
-        "478d5c2b2964"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "adc936802da6dc91": {
-      "topic": "Momcilovic Portal Top Target Draft Exit",
-      "item_ids": [
-        "53f54e397639"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "de39d256c76f68a4": {
-      "topic": "Vertu AI-Powered Folding Phone Luxury Device Launch",
-      "item_ids": [
-        "ea744a427a5a"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "07122da5e5ca44a7": {
-      "topic": "Vertu AI Foldable Phone CEO Business Tool",
-      "item_ids": [
-        "b16689dc6815"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "005f759898a55b82": {
-      "topic": "Samsung Galaxy Watch 8 GLP-1 Muscle Loss Prevention Testing",
-      "item_ids": [
-        "01cd27218a43"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "79f8e86cd68478f2": {
-      "topic": "Ferrari EV Launch Market Impact Assessment",
-      "item_ids": [
-        "1e04f2f4afe1",
-        "3bfa7db2e7e7",
-        "b3b545f404b3"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-29T05:55:41.667078+00:00",
-      "picks_file": "picks/picks-2026-05-29-0556.md",
-      "why_text": "Ferrari just unveiled its first electric vehicle, and the market's immediate reaction was a stock dip \u2014 a sign that investors aren't yet convinced the Prancing Horse can electrify without losing its soul. But Ferrari has pulled off the impossible before: commanding hyper-premium pricing in a market that keeps commoditizing, and the EV space desperately needs a luxury anchor. If Ferrari can make electric feel scarce and desirable, it doesn't just save its own brand \u2014 it reframes the entire EV narrative.",
-      "last_escalated_item_ids": [
-        "1e04f2f4afe1",
-        "3bfa7db2e7e7",
-        "b3b545f404b3"
-      ]
-    },
-    "357b40c77c0a2e81": {
-      "topic": "Wyclef Jean Seven Albums One Year AI Technology Project",
-      "item_ids": [
-        "2f7aa318ab65"
-      ],
-      "created_at": "2026-05-28T07:47:46.202496+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "34ef81291d54c75a": {
       "topic": "Sidemen SideMenu Culinary Series Prime Video YouTube Co-Release",
       "item_ids": [
@@ -1371,7 +1223,8 @@
     "cb9afa6b8502f02d": {
       "topic": "Janus Films Acquires 'The Dreamed Adventure' North America Rights",
       "item_ids": [
-        "5bc3aa9d0bef"
+        "5bc3aa9d0bef",
+        "1a0486e6e88e"
       ],
       "created_at": "2026-05-28T20:11:49.017394+00:00",
       "last_escalated_size": 0,
@@ -1688,7 +1541,8 @@
     "8e393a699c2c9495": {
       "topic": "Martina McBride Withdraws From Trump Freedom 250 Concert Event",
       "item_ids": [
-        "d2c2b9974bd1"
+        "d2c2b9974bd1",
+        "9be381995b10"
       ],
       "created_at": "2026-05-29T01:35:27.158167+00:00",
       "last_escalated_size": 0,
@@ -1820,7 +1674,70 @@
       "created_at": "2026-05-29T05:56:31.988714+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "aafaafd816ddd9c9": {
+      "topic": "Maisie Peters ARIA Chart Success 'Florescence'",
+      "item_ids": [
+        "31c83a5359ba"
+      ],
+      "created_at": "2026-05-29T09:53:39.434634+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6503535e2c7bf18b": {
+      "topic": "Billboard 2026 U.K. Power Players List",
+      "item_ids": [
+        "f8a510237df1"
+      ],
+      "created_at": "2026-05-29T09:53:39.434634+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "db334f8aabd9c3ff": {
+      "topic": "Zane Lowe New Zealand Music Executive Profile",
+      "item_ids": [
+        "bca892fd7936"
+      ],
+      "created_at": "2026-05-29T09:53:39.434634+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7cfc325657feb02e": {
+      "topic": "'Amores Perros' TV Series Adaptation Sofia Vergara LatinWe",
+      "item_ids": [
+        "7a7043f922e5"
+      ],
+      "created_at": "2026-05-29T09:53:39.434634+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c9b80a7f6b7e8840": {
+      "topic": "BYD Autonomous Driving Chip Development",
+      "item_ids": [
+        "4863d5b4ea26"
+      ],
+      "created_at": "2026-05-29T09:53:39.434634+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d40bd59e17acaf47": {
+      "topic": "Technology Sector Rotation Risk Analysis UBP",
+      "item_ids": [
+        "3450b3ed316a"
+      ],
+      "created_at": "2026-05-29T09:53:39.434634+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "57cf168ab9bb2de3": {
+      "topic": "Fama Technologies AI Social Media Screening Patent",
+      "item_ids": [
+        "1947093ecfa5"
+      ],
+      "created_at": "2026-05-29T09:53:39.434634+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-29T05:56:43.845017+00:00"
+  "last_checked": "2026-05-29T09:53:39.435730+00:00"
 }
