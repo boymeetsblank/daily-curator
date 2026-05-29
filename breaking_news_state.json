@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "ec58179b6c8f",
-    "2c69c183804a",
-    "766cff0d8d5f",
-    "a8d09d0213e0",
-    "dc437bc71fbd",
-    "2f189fd42a26",
-    "c262aa608736",
-    "fc5de8b559a6",
-    "f48baaf4e52a",
-    "8615005ddd63",
-    "d31bfddf5fb5",
-    "b114866a5635",
-    "799515fdf88b",
-    "94b240ccab18",
     "7d6e5b3b98b1",
     "eabafb299783",
     "186089ba0bbc",
@@ -499,14 +485,23 @@
     "5328b359df14",
     "0c7e53740d07",
     "e320a86719bb",
-    "40dc28a7cad5"
+    "40dc28a7cad5",
+    "d2c2b9974bd1",
+    "3964023fa19f",
+    "aa28d704cb40",
+    "7a48ac4292ec",
+    "dfbe4073799e",
+    "0f942237e7a3",
+    "c87f159dd82a",
+    "8086a6b31b94",
+    "1298a16c75a0",
+    "29c7b9188235",
+    "7c879b0eea14",
+    "446a03507dd2",
+    "0a110c6d38e5",
+    "60eccf833923"
   ],
   "failed_ids": {
-    "cde7b28cc217": "2026-05-28T20:11:08.246024+00:00",
-    "72fcd849a6ff": "2026-05-28T20:11:08.246024+00:00",
-    "2ad8b53b4c0a": "2026-05-28T20:11:08.246024+00:00",
-    "a5242127739c": "2026-05-28T20:11:08.246024+00:00",
-    "8dae373373ba": "2026-05-28T20:11:08.246024+00:00",
     "91b54197de5c": "2026-05-28T22:06:54.276218+00:00",
     "3db41d8dbe0f": "2026-05-28T22:06:54.276218+00:00",
     "2aafc9617a62": "2026-05-28T22:06:54.276218+00:00",
@@ -534,117 +529,22 @@
     "45a135a35341": "2026-05-28T23:41:37.981632+00:00",
     "9a30a4903e53": "2026-05-28T23:41:37.981632+00:00",
     "514f87bedc4d": "2026-05-28T23:41:37.981632+00:00",
-    "0cbb0ba793f4": "2026-05-28T23:41:37.981632+00:00"
+    "0cbb0ba793f4": "2026-05-28T23:41:37.981632+00:00",
+    "908257da32ec": "2026-05-29T01:34:57.880156+00:00",
+    "e44b134aa819": "2026-05-29T01:34:57.880156+00:00",
+    "3fd1424230d4": "2026-05-29T01:34:57.880156+00:00",
+    "3fbd8a7696f5": "2026-05-29T01:34:57.880156+00:00",
+    "a9f327ffc92d": "2026-05-29T01:34:57.880156+00:00",
+    "d83d2fbdde96": "2026-05-29T01:34:57.880156+00:00",
+    "756c23fdbbd0": "2026-05-29T01:34:57.880156+00:00",
+    "c9f99ee52855": "2026-05-29T01:34:57.880156+00:00",
+    "f0be99a67155": "2026-05-29T01:34:57.880156+00:00",
+    "7ebe464599a1": "2026-05-29T01:34:57.880156+00:00",
+    "0e18d7e4c947": "2026-05-29T01:34:57.880156+00:00",
+    "f8d77c731938": "2026-05-29T01:34:57.880156+00:00",
+    "4c6a5fb96f6a": "2026-05-29T01:34:57.880156+00:00"
   },
   "live_clusters": {
-    "093083bd4efb3d81": {
-      "topic": "Jason Kidd Nike Zoom Flight 5 Sneaker 2027 Return",
-      "item_ids": [
-        "c8a10f8e0fd9"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "86fd44948438598a": {
-      "topic": "'Disclosure Day' Spielberg Film Emily Blunt First Reactions",
-      "item_ids": [
-        "e572c6ab1e58",
-        "d3ff6c0ad7d2",
-        "51831dd26fdc"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-28T20:11:08.246024+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "e572c6ab1e58",
-        "d3ff6c0ad7d2",
-        "51831dd26fdc"
-      ]
-    },
-    "284a89ca73f6f3ba": {
-      "topic": "'Widow's Bay' Betty Gilpin Hamish Linklater 1702 Flashback Episode",
-      "item_ids": [
-        "936b88ee7738"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "33f789ed2308f1bd": {
-      "topic": "'The Testaments' Elisabeth Moss Season Finale Agnes Twist Season 2 Plans",
-      "item_ids": [
-        "93377b741a2f"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f7173d0af6b8aaed": {
-      "topic": "Gayle King Oprah Rumors 'Secretly Gay' Interview",
-      "item_ids": [
-        "1ec329b9488c"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "efb515b6d0461a15": {
-      "topic": "Taylor Swift 'Life of a Showgirl' Trademark First Amendment Legal Battle",
-      "item_ids": [
-        "ae837fabd4ba",
-        "bfd2ded3d647"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7f7513785c57822c": {
-      "topic": "'Emily in Paris' Season 6 Development Update",
-      "item_ids": [
-        "483d5246bbf8"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3a4fd1ad0d458be4": {
-      "topic": "Rentrak PE Acquisition Comscore Movies Restored Name Chris Aronson",
-      "item_ids": [
-        "2ff19923af60"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8dce1210f369c3df": {
-      "topic": "Petraeus Drone Swarms Next Military Technology Threat",
-      "item_ids": [
-        "28f6ddc14641"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8798314ad59fa5ff": {
-      "topic": "Mark Zuckerberg Meta Cloud Computing Business Plans",
-      "item_ids": [
-        "55c777bd9e75"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b80d3056e302a99d": {
-      "topic": "Silicon Valley Tech Partnerships AI Regulation Policy",
-      "item_ids": [
-        "0df22ee84f17"
-      ],
-      "created_at": "2026-05-27T23:57:34.351531+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "9eb47729e0859934": {
       "topic": "Dorohedoro Season 3 Renewal",
       "item_ids": [
@@ -1866,7 +1766,70 @@
       "created_at": "2026-05-28T23:42:14.384730+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "8e393a699c2c9495": {
+      "topic": "Martina McBride Withdraws From Trump Freedom 250 Concert Event",
+      "item_ids": [
+        "d2c2b9974bd1"
+      ],
+      "created_at": "2026-05-29T01:35:27.158167+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cca1b08cb7cc757d": {
+      "topic": "Nothing Phone (4a) Pro Music Creator Device Review",
+      "item_ids": [
+        "3964023fa19f"
+      ],
+      "created_at": "2026-05-29T01:35:27.158167+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "89f936756fe4bfd5": {
+      "topic": "Scooter Braun Comments Taylor Swift Dispute Public Perception",
+      "item_ids": [
+        "aa28d704cb40"
+      ],
+      "created_at": "2026-05-29T01:35:27.158167+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c75476092f1b3583": {
+      "topic": "CBS Late Show Financials Byron Allen Time Buy Disclosure",
+      "item_ids": [
+        "dfbe4073799e"
+      ],
+      "created_at": "2026-05-29T01:35:27.158167+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "92a7292f430d2eb0": {
+      "topic": "Blue Origin New Glenn Rocket Test Failure Florida",
+      "item_ids": [
+        "0f942237e7a3"
+      ],
+      "created_at": "2026-05-29T01:35:27.158167+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5b14cedeb06b0a06": {
+      "topic": "Glean AI Enterprise Revenue $300M Cost-Cutting Demand",
+      "item_ids": [
+        "c87f159dd82a"
+      ],
+      "created_at": "2026-05-29T01:35:27.158167+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "50ad1ebd118fe175": {
+      "topic": "Waymo Autonomous Vehicle Registration Leadership Tesla Competition",
+      "item_ids": [
+        "8086a6b31b94"
+      ],
+      "created_at": "2026-05-29T01:35:27.158167+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-28T23:42:21.377148+00:00"
+  "last_checked": "2026-05-29T01:35:27.164718+00:00"
 }

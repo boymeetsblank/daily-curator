@@ -1,6 +1,143 @@
 {
   "items": [
     {
+      "id": "d2c2b9974bd1",
+      "topic": "Martina McBride Pulls Out of ‘Misleading’ Great American State Fair Event: ‘What We Were Told Is Not, In Fact, What Is Happening’",
+      "traffic": "",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://www.billboard.com/music/country/martina-mcbride-exits-great-american-state-fair-freedom-250-1236259750/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "8e393a699c2c9495"
+    },
+    {
+      "id": "3964023fa19f",
+      "topic": "Nothing Phone (4a) Pro Review: The $500 Phone Built for Music Content Creators",
+      "traffic": "",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://www.billboard.com/culture/product-recommendations/nothing-phone-4a-pro-review-buy-smartphone-online-1236217982/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "cca1b08cb7cc757d"
+    },
+    {
+      "id": "aa28d704cb40",
+      "topic": "Scooter Braun Says Dispute With Taylor Swift Turned Him Into a ‘Villain’ Overnight: ‘I Don’t Know Taylor Swift’",
+      "traffic": "",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://www.billboard.com/music/music-news/scooter-braun-comments-on-taylor-swift-feud-podcast-villain-1236259723/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "89f936756fe4bfd5"
+    },
+    {
+      "id": "7a48ac4292ec",
+      "topic": "Martina McBride Drops Out of Trump’s ‘Misleading’ Freedom 250 Concert",
+      "traffic": "",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/martina-mcbride-drops-out-trump-freedom-250-concert-1235569756/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7
+    },
+    {
+      "id": "dfbe4073799e",
+      "topic": "CBS Defends Byron Allen Time Buy, Discloses Financials On ‘The Late Show With Stephen Colbert’s Annual Loss & ‘Comics Unleashed’s Profit",
+      "traffic": "",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://deadline.com/2026/05/cbs-statement-byron-allen-late-show-stephen-colbert-loss-1236929852/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "c75476092f1b3583"
+    },
+    {
+      "id": "0f942237e7a3",
+      "topic": "Blue Origin’s New Glenn rocket explodes during testing in Florida",
+      "traffic": "",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://techcrunch.com/2026/05/28/blue-origins-new-glenn-rocket-explodes-during-testing-in-florida/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "92a7292f430d2eb0"
+    },
+    {
+      "id": "c87f159dd82a",
+      "topic": "Glean’s top line crosses $300M as AI budget-cutting becomes its major selling point",
+      "traffic": "",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "5b14cedeb06b0a06"
+    },
+    {
+      "id": "8086a6b31b94",
+      "topic": "Waymo dominates autonomous vehicle registrations as Tesla trails behind",
+      "traffic": "",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://techcrunch.com/2026/05/28/waymo-dominates-texas-autonomous-vehicle-registrations-as-tesla-trails-behind/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "50ad1ebd118fe175"
+    },
+    {
+      "id": "1298a16c75a0",
+      "topic": "Costco issues a lukewarm quarter, but delivers on the metric that matters most",
+      "traffic": "",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://www.cnbc.com/2026/05/28/costco-issues-a-lukewarm-quarter-but-delivers-on-the-metric-that-matters-most.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "29c7b9188235",
+      "topic": "Whataburger",
+      "traffic": "##12 on X",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://x.com/search?q=Whataburger&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "7c879b0eea14",
+      "topic": "Grizzlies",
+      "traffic": "##13 on X",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://x.com/search?q=Grizzlies&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "446a03507dd2",
+      "topic": "Kimmel",
+      "traffic": "##14 on X",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://x.com/search?q=Kimmel&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "0a110c6d38e5",
+      "topic": "Ryan Clark",
+      "traffic": "##15 on X",
+      "detected_at": "2026-05-29T01:34:57.880156+00:00",
+      "search_url": "https://x.com/search?q=Ryan+Clark&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "e4524f4f9788",
       "topic": "Where To Buy The Travis Scott Air Jordan 1 Low Pink Pack",
       "traffic": "",
@@ -296,150 +433,7 @@
       "source_type": "feed",
       "haiku_score": 5,
       "cluster_id": "bc0c0cf6c45ed3af"
-    },
-    {
-      "id": "013f6abc3607",
-      "topic": "Sienna Spiro’s ‘Die on This Hill’ Is April 2026’s Top TV Songs Chart No. 1",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://www.billboard.com/music/chart-beat/sienna-spiro-die-on-this-hill-april-2026-top-tv-songs-chart-1236259466/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "fc22c4bdd0e84f10"
-    },
-    {
-      "id": "92463bc6a97c",
-      "topic": "BLACKPINK’s New Razer Gaming Collection Comes With a Free Exclusive Photocard",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://www.billboard.com/culture/product-recommendations/razer-blackpink-gaming-accessories-collection-buy-online-1236249140/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "edebd726411fccc0"
-    },
-    {
-      "id": "a4afc5d444ce",
-      "topic": "Nelly Wins $67K Fine From Lawyer Who Filed ‘Baseless’ Lawsuit Over ‘Country Grammar’",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://www.billboard.com/pro/nelly-wins-67k-lawyer-sued-country-grammar/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "6888353cefcd93b6"
-    },
-    {
-      "id": "3a6abf423b26",
-      "topic": "How Big a Streaming Bump Is ‘Off Campus’ Giving Elton John, Audrey Hobert and Dozens More Classic Rock & Alt-Pop Soundtrack Favorites?",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://www.billboard.com/music/pop/off-campus-streaming-gains-trending-up-1236259265/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "b08d0b442f66eb8e"
-    },
-    {
-      "id": "71625a5b2a60",
-      "topic": "Robyn, Dog Blood & Swedish House Mafia Lead Portola 2026 Lineup",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://www.billboard.com/music/music-news/portola-2026-lineup-robyn-dog-blood-swedish-house-mafia-1236257097/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "6343d73af1aa8b62"
-    },
-    {
-      "id": "9fcee08d7f34",
-      "topic": "Role Model Is Back with Third LP ‘Chuck Timely & the Hourglass’",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-news/role-model-chuck-timely-and-the-hourglass-album-announcement-1235569612/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "743e874ec28b3e0e"
-    },
-    {
-      "id": "5bc3aa9d0bef",
-      "topic": "Janus Films Takes North America For Cannes Jury Prize Winner ‘The Dreamed Adventure’",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://deadline.com/2026/05/janus-north-america-cannes-winner-dreamed-adventure-1236929450/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "cb9afa6b8502f02d"
-    },
-    {
-      "id": "1b48de97a68c",
-      "topic": "Strand Entertainment Signs ‘The Summer I Turned Pretty’s Kristen Connolly",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://deadline.com/2026/05/kristen-connolly-signs-strand-entertainment-1236929520/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "46de3a85ea4ad163"
-    },
-    {
-      "id": "e068403d1420",
-      "topic": "It Starts On The Page: Read ‘Stranger Things’ Series Finale Script “The Rightside Up” With Foreword By The Duffer Brothers",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://deadline.com/2026/05/stranger-things-finale-script-the-rightside-up-1236917173/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "e019c0d737131e30"
-    },
-    {
-      "id": "51831dd26fdc",
-      "topic": "Everything We Know About Steven Spielberg’s ‘Disclosure Day’ So Far",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://deadline.com/feature/disclosure-day-news-updates-steven-spielberg-movie-1236929482/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "86fd44948438598a"
-    },
-    {
-      "id": "873652407ff7",
-      "topic": "The $6 Billion Chinese Startup Trying to Build Hands for Every Robot",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://www.wired.com/story/made-in-china-the-dollar6-billion-chinese-startup-making-hands-for-humanoids/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "73e7361f924c503a"
-    },
-    {
-      "id": "d69a040d92dd",
-      "topic": "Meta Copies Snapchat’s Homework Again With ‘Plus’ Features for Instagram and Facebook",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://www.wired.com/story/meta-copies-snapchats-homework-again/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "3351a39bcdb7064a"
-    },
-    {
-      "id": "0d22b3289c3b",
-      "topic": "Asana acquires no-code agent-builder Stack AI",
-      "traffic": "",
-      "detected_at": "2026-05-28T20:11:08.246024+00:00",
-      "search_url": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "861c0ccafa6b4a2d"
     }
   ],
-  "last_checked": "2026-05-28T23:41:37.981632+00:00"
+  "last_checked": "2026-05-29T01:34:57.880156+00:00"
 }
