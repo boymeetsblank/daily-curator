@@ -1,26 +1,5 @@
 {
   "known_ids": [
-    "7c8a53f413df",
-    "e20e2abcc16b",
-    "b1144a328785",
-    "075b271a6bec",
-    "e1caf2530c26",
-    "213405daa344",
-    "ce930c9495f8",
-    "5c1d3f4ea086",
-    "4f3b4791ecb8",
-    "c583ff820adc",
-    "353e11f75675",
-    "899e9d75c804",
-    "38fbc23bc388",
-    "ed08a8bf64a0",
-    "7cafa33d3026",
-    "30e2389acf14",
-    "c631a36e278f",
-    "6da58f6215a9",
-    "1b2eb7271a93",
-    "d43d303538df",
-    "595d59529625",
     "ecf444b9441f",
     "1bbcdbf5d2bc",
     "dabbd266c1dc",
@@ -499,7 +478,28 @@
     "1ee097751935",
     "29298ba4a638",
     "8ec574cb93a6",
-    "b0d3f46aa00a"
+    "b0d3f46aa00a",
+    "7274c7747e59",
+    "4b4b2273e6fd",
+    "3ad9e549e217",
+    "d6d4658e2f26",
+    "e0437eaab3c6",
+    "6255ae3fe39f",
+    "456a1df399a7",
+    "a90d5d7897b1",
+    "72721a73dfbd",
+    "cfce19e2f5bb",
+    "4039b03b27cf",
+    "0978c66c292a",
+    "c9d2cd3dcdd5",
+    "62b1c2746533",
+    "d4c0d67cd465",
+    "65b69c336298",
+    "e958b58fdfc9",
+    "48026dd09a75",
+    "2d09ec9a487e",
+    "9efeed87e5f3",
+    "c133e41f423a"
   ],
   "failed_ids": {
     "6877ec73566a": "2026-05-29T19:12:40.122985+00:00",
@@ -522,166 +522,19 @@
     "dba35fe38d1b": "2026-05-29T21:17:23.001035+00:00",
     "2d28678b4dd5": "2026-05-29T21:17:23.001035+00:00",
     "66fea3f5bf35": "2026-05-29T21:17:23.001035+00:00",
-    "9b5bd271f796": "2026-05-29T21:17:23.001035+00:00"
+    "9b5bd271f796": "2026-05-29T21:17:23.001035+00:00",
+    "326fb314ef65": "2026-05-29T22:44:50.607336+00:00",
+    "1e171d61e2a3": "2026-05-29T22:44:50.607336+00:00",
+    "8d1edcad286a": "2026-05-29T22:44:50.607336+00:00",
+    "3e37731b9183": "2026-05-29T22:44:50.607336+00:00",
+    "15a489190cb5": "2026-05-29T22:44:50.607336+00:00",
+    "4f181a54ae99": "2026-05-29T22:44:50.607336+00:00",
+    "c08b40fd4893": "2026-05-29T22:44:50.607336+00:00",
+    "62ceb19d4336": "2026-05-29T22:44:50.607336+00:00",
+    "f54785d470f0": "2026-05-29T22:44:50.607336+00:00",
+    "0cfae9de3ffa": "2026-05-29T22:44:50.607336+00:00"
   },
   "live_clusters": {
-    "7574ee4f0aff0d02": {
-      "topic": "Dylan Harper Titan x Nike GT Cut 1 Foot Locker Release",
-      "item_ids": [
-        "28f53d8b02d2",
-        "1bdbc5559cad"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "206cf31cd2f7f80c": {
-      "topic": "Supreme x Martine Rose x Nike Dunk Low Holiday 2026",
-      "item_ids": [
-        "fa7f07a9e3d7"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d4fbb324bf80b372": {
-      "topic": "Air Jordan 4 Toro Collectible Hangtag Series NYC",
-      "item_ids": [
-        "5e99276d1268",
-        "265ac6721331"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7dff736700b86724": {
-      "topic": "Ezra Collective New Song Album Tour Announcement",
-      "item_ids": [
-        "766ac3b4ff97"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3c7a703bbf0d9ecc": {
-      "topic": "Manuel Carrasco 'Pueblo Salvaje I' Album Prequel Release",
-      "item_ids": [
-        "9ed599c7ed72"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2090dc170f8a789e": {
-      "topic": "Bruce Springsteen Land of Hope and Dreams Tour Activist Backing",
-      "item_ids": [
-        "03df2285a398"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9fe916adf5ffcc5c": {
-      "topic": "Our Films Alice Rohrwacher 'The Baron In The Trees' Feature",
-      "item_ids": [
-        "224aa29caf46"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a0a5ad36a3d44259": {
-      "topic": "Man Sentenced 12 Years Taylor Swift Eras Tour Vienna Terror Plot",
-      "item_ids": [
-        "eb89d4896fdb",
-        "0b9a450cb505"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a89335d67ef62d22": {
-      "topic": "Emily Henry Books Film Adaptations Happy Place Beach Read",
-      "item_ids": [
-        "29b93889d919"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "30a6957dd33000a1": {
-      "topic": "Emily Henry 'Beach Read' Film Adaptation Development",
-      "item_ids": [
-        "6311e7ca73bb"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "61e44a9aa4007b26": {
-      "topic": "Guillermo Del Toro Praises Boots Riley 'I Love Boosters' Effects",
-      "item_ids": [
-        "40873d8b401d"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bd50ec185be708b6": {
-      "topic": "Internet Rebuilt for Machines AI Infrastructure Shift",
-      "item_ids": [
-        "7b1aab1a5e8d"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8ec96b7a1b8274d1": {
-      "topic": "Disney Standalone Hulu App Merger Plans Memo Leak",
-      "item_ids": [
-        "4ee49a2bdbda"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8debda43d4989bfb": {
-      "topic": "LLMs Believe False Statements Despite Explicit Warnings",
-      "item_ids": [
-        "8782dda3d458"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5857231a1c9fa6fa": {
-      "topic": "Dell Shares Jump 31% Server Sales Growth Post-IPO Return",
-      "item_ids": [
-        "a3b8577337c8",
-        "c7db6bf27bc6"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4fa14127d4874a0a": {
-      "topic": "Costco Record-Breaking Gas Volumes Rising Prices",
-      "item_ids": [
-        "9c831165bae5"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "38b413e5ce557740": {
-      "topic": "Okta Jumps 8% Q1 Results Agentic AI Demand",
-      "item_ids": [
-        "68b780ecc880"
-      ],
-      "created_at": "2026-05-28T22:07:32.711502+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "c114d823dfdadd06": {
       "topic": "Travis Scott Air Jordan 1 Low Pink Pack Release",
       "item_ids": [
@@ -829,7 +682,8 @@
     "2b6d2fb7407f2a30": {
       "topic": "New Music Friday Ariana Grande Labrinth aespa",
       "item_ids": [
-        "62f7c109ed4b"
+        "62f7c109ed4b",
+        "6255ae3fe39f"
       ],
       "created_at": "2026-05-29T05:56:31.988714+00:00",
       "last_escalated_size": 0,
@@ -1619,7 +1473,106 @@
       "created_at": "2026-05-29T21:17:57.930243+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "e7884fc5c747d523": {
+      "topic": "Nike Air Rift 2 Summit White Retro Release",
+      "item_ids": [
+        "7274c7747e59"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fa47a20ec51622e3": {
+      "topic": "Emmy Artisans Tools Feature Wednesday Beef Stranger Things",
+      "item_ids": [
+        "4b4b2273e6fd"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9affd8a4ffd912eb": {
+      "topic": "DIRECTV MySports Genre Pack Launch",
+      "item_ids": [
+        "3ad9e549e217"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "80d7d1064bac5b5f": {
+      "topic": "Megan Thee Stallion Tory Lanez Defamation Trial Blogger Payment",
+      "item_ids": [
+        "e0437eaab3c6"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d4fc3224b1c8dfdd": {
+      "topic": "Michael Jackson Songs Top Movie Songs Chart After Michael Premiere",
+      "item_ids": [
+        "456a1df399a7"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "845e6e69beb29b62": {
+      "topic": "Billy Joel 100th Madison Square Garden Residency Show Blu-ray DVD Release",
+      "item_ids": [
+        "a90d5d7897b1"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0415d09e83e3ab62": {
+      "topic": "Megan Thee Stallion Defamation Judgment Reinstated Milagro Gramz",
+      "item_ids": [
+        "cfce19e2f5bb"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9178ed85969d45b9": {
+      "topic": "The Birds Limited Series Sarah Snook Hitchcock Adaptation",
+      "item_ids": [
+        "4039b03b27cf"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "daa95c344a8ceeac": {
+      "topic": "Love Island USA Clarke Carraway Kensington Grey Signing",
+      "item_ids": [
+        "0978c66c292a"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "48d60d9f5ec246ad": {
+      "topic": "Paramount K-Pop Film Retitled Release Date Shift",
+      "item_ids": [
+        "c9d2cd3dcdd5"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "54a5c5859efc745f": {
+      "topic": "Coders Refusing Work Without AI Workplace Trend",
+      "item_ids": [
+        "62b1c2746533"
+      ],
+      "created_at": "2026-05-29T22:45:19.054333+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-29T21:17:57.931458+00:00"
+  "last_checked": "2026-05-29T22:45:19.055581+00:00"
 }
