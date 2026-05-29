@@ -1,33 +1,5 @@
 {
   "known_ids": [
-    "2253a7dad681",
-    "2d956e8b3fcc",
-    "6d131bc59e3d",
-    "7b0a806309db",
-    "9044a850b969",
-    "7e3feb658b92",
-    "afcf727e25ef",
-    "abef178555b9",
-    "cb7f4debcd22",
-    "a408141515b6",
-    "573c3ef8abca",
-    "9726d26d00e9",
-    "4becf1cd9d27",
-    "2de86aa7a440",
-    "accd3b357754",
-    "e1504ccd575d",
-    "988ef2bf95da",
-    "1fadddaf7084",
-    "b3dcfc57c9c0",
-    "36cbc78fd8f1",
-    "d80c89c5331c",
-    "b45c8ff474ba",
-    "b3e82def6a11",
-    "f938e37015ec",
-    "3582788209db",
-    "c1bdc04a825d",
-    "baf9e4b7419e",
-    "73dfffa5af58",
     "7c8a53f413df",
     "e20e2abcc16b",
     "b1144a328785",
@@ -499,22 +471,37 @@
     "57413f5a5f3b",
     "ed9ecf47f42c",
     "8169ee767229",
-    "1da02c47ed9f"
+    "1da02c47ed9f",
+    "20854f51b79c",
+    "4f277ea3bf79",
+    "2a8e3f1b857e",
+    "799349c85dc0",
+    "2c42c517045a",
+    "bdc5f7f4b4bf",
+    "daf709688e47",
+    "d865e75521ec",
+    "5001f294daa3",
+    "ac6f391ad160",
+    "69184feaa0bc",
+    "ddac40d323c4",
+    "26991297a6bc",
+    "07b1b8128446",
+    "f75fb0966d48",
+    "5019ee7131cf",
+    "a3222359d2e4",
+    "0f34f5cd0b9e",
+    "347e0b10be3b",
+    "5640b885e3f7",
+    "0b3c3a09bf3c",
+    "2afb715771e8",
+    "c161469b7248",
+    "d7c4c18cf03d",
+    "1ee097751935",
+    "29298ba4a638",
+    "8ec574cb93a6",
+    "b0d3f46aa00a"
   ],
   "failed_ids": {
-    "2c7f1294b67c": "2026-05-29T16:30:33.057365+00:00",
-    "32ffdd766b9b": "2026-05-29T16:30:33.057365+00:00",
-    "d141b17ed5f7": "2026-05-29T16:30:33.057365+00:00",
-    "d6d4658e2f26": "2026-05-29T16:30:33.057365+00:00",
-    "d11e64ed6123": "2026-05-29T16:30:33.057365+00:00",
-    "dd3db0185299": "2026-05-29T16:30:33.057365+00:00",
-    "56117658259d": "2026-05-29T16:30:33.057365+00:00",
-    "bbc026ea331f": "2026-05-29T16:30:33.057365+00:00",
-    "0560af7b33f3": "2026-05-29T16:30:33.057365+00:00",
-    "8eeb47c839ed": "2026-05-29T16:30:33.057365+00:00",
-    "1a7d488fa4c7": "2026-05-29T16:30:33.057365+00:00",
-    "c31441e0c7ab": "2026-05-29T16:30:33.057365+00:00",
-    "60933b298ea1": "2026-05-29T16:30:33.057365+00:00",
     "6877ec73566a": "2026-05-29T19:12:40.122985+00:00",
     "11dd859a1c81": "2026-05-29T19:12:40.122985+00:00",
     "52cc2976acb8": "2026-05-29T19:12:40.122985+00:00",
@@ -526,182 +513,18 @@
     "ad67217286b0": "2026-05-29T19:12:40.122985+00:00",
     "bdcb08c12644": "2026-05-29T19:12:40.122985+00:00",
     "928a968d22c4": "2026-05-29T19:12:40.122985+00:00",
-    "c8c82c7622f1": "2026-05-29T19:12:40.122985+00:00"
+    "c8c82c7622f1": "2026-05-29T19:12:40.122985+00:00",
+    "e79b5549c409": "2026-05-29T21:17:23.001035+00:00",
+    "034bbc5861d4": "2026-05-29T21:17:23.001035+00:00",
+    "d11e64ed6123": "2026-05-29T21:17:23.001035+00:00",
+    "f11bb1f25f80": "2026-05-29T21:17:23.001035+00:00",
+    "2d29f955c162": "2026-05-29T21:17:23.001035+00:00",
+    "dba35fe38d1b": "2026-05-29T21:17:23.001035+00:00",
+    "2d28678b4dd5": "2026-05-29T21:17:23.001035+00:00",
+    "66fea3f5bf35": "2026-05-29T21:17:23.001035+00:00",
+    "9b5bd271f796": "2026-05-29T21:17:23.001035+00:00"
   },
   "live_clusters": {
-    "a44de91f299b2f48": {
-      "topic": "Nike Ava Edge Sneaker Release",
-      "item_ids": [
-        "5def3e8554e8"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "37fc578ec6c0c267": {
-      "topic": "Nike Air Force 1 Low Loafer Buckle Design",
-      "item_ids": [
-        "f3da5b324702"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bc0c0cf6c45ed3af": {
-      "topic": "Levi's 501 Jeans Fit Comparison Test",
-      "item_ids": [
-        "af0145f360c4"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fc22c4bdd0e84f10": {
-      "topic": "Sienna Spiro 'Die on This Hill' TV Songs Chart No. 1",
-      "item_ids": [
-        "013f6abc3607"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "edebd726411fccc0": {
-      "topic": "BLACKPINK Razer Gaming Collection Launch",
-      "item_ids": [
-        "92463bc6a97c"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6888353cefcd93b6": {
-      "topic": "Nelly Wins Lawsuit Settlement 'Country Grammar'",
-      "item_ids": [
-        "a4afc5d444ce"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6343d73af1aa8b62": {
-      "topic": "Portola 2026 Festival Lineup Robyn Swedish House Mafia",
-      "item_ids": [
-        "71625a5b2a60"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "743e874ec28b3e0e": {
-      "topic": "Role Model Third Album 'Chuck Timely & the Hourglass'",
-      "item_ids": [
-        "9fcee08d7f34"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cb9afa6b8502f02d": {
-      "topic": "Janus Films Acquires 'The Dreamed Adventure' North America Rights",
-      "item_ids": [
-        "5bc3aa9d0bef",
-        "1a0486e6e88e"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "46de3a85ea4ad163": {
-      "topic": "Kristen Connolly Signs with Strand Entertainment",
-      "item_ids": [
-        "1b48de97a68c"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e019c0d737131e30": {
-      "topic": "'Stranger Things' Series Finale Script Release 'The Rightside Up'",
-      "item_ids": [
-        "e068403d1420"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "73e7361f924c503a": {
-      "topic": "Chinese Robotics Startup $6B Valuation Robot Hands Development",
-      "item_ids": [
-        "873652407ff7"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3351a39bcdb7064a": {
-      "topic": "Meta Instagram Facebook 'Plus' Features Snapchat Competition",
-      "item_ids": [
-        "d69a040d92dd"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "861c0ccafa6b4a2d": {
-      "topic": "Asana Acquires Stack AI No-Code Agent Builder",
-      "item_ids": [
-        "0d22b3289c3b"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "37c163c77ef52955": {
-      "topic": "Bluesky Long-Form Content Feature X Competition",
-      "item_ids": [
-        "3ac158f51482"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "aa99e48b9e48e564": {
-      "topic": "Signal Users Targeted Phishing Attacks Backup Theft",
-      "item_ids": [
-        "523af10c8b76"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "01cdc1b0cb117494": {
-      "topic": "Anthropic $65B Funding Round $1T Valuation IPO Path",
-      "item_ids": [
-        "fa304b3484d5"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f4d7232da291a8d5": {
-      "topic": "Slate EV Truck Pre-Orders June 24 Launch",
-      "item_ids": [
-        "519f8823f240"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "76c13f70040948d3": {
-      "topic": "Nick Bilton CBS News '60 Minutes' Pivot Strategy",
-      "item_ids": [
-        "1ca564770fb7",
-        "dff683541076"
-      ],
-      "created_at": "2026-05-28T20:11:49.017394+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "7574ee4f0aff0d02": {
       "topic": "Dylan Harper Titan x Nike GT Cut 1 Foot Locker Release",
       "item_ids": [
@@ -1598,7 +1421,205 @@
       "created_at": "2026-05-29T19:13:12.933208+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "439d23d4c79347a2": {
+      "topic": "Nike Air Max Plus Scorpion Colorway Release",
+      "item_ids": [
+        "20854f51b79c"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6da70ae079411163": {
+      "topic": "Nike Total 90 III Sail Fold-Over Tongue Release",
+      "item_ids": [
+        "4f277ea3bf79"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8f1124462c7dc212": {
+      "topic": "New Balance 993 Triple Black Release",
+      "item_ids": [
+        "2a8e3f1b857e"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3c91805111512bab": {
+      "topic": "Star Wars Grogu Baby Yoda Puppet Craftsmanship Feature",
+      "item_ids": [
+        "799349c85dc0"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c0864f1af241d46": {
+      "topic": "Toy Story Sequel Taylor Swift Involvement Easter Eggs Speculation",
+      "item_ids": [
+        "2c42c517045a"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b9da259cf8099012": {
+      "topic": "Gold Panda Ton Up Album Announcement",
+      "item_ids": [
+        "daf709688e47"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9e8021750b3f818e": {
+      "topic": "Rebel Lounge Phoenix Rock Club Renovation",
+      "item_ids": [
+        "d865e75521ec"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f42a8fbad35674bc": {
+      "topic": "Jay Wheeler La Voz Favorita Album Latin Music Release",
+      "item_ids": [
+        "5001f294daa3"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e05b93d3e0a4d541": {
+      "topic": "Clint Black Country Music Memoir Book Release",
+      "item_ids": [
+        "ac6f391ad160"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bf1ba72da8140f17": {
+      "topic": "Maluma Shifts Away From American Collaborations Focus",
+      "item_ids": [
+        "69184feaa0bc"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b303cf2c8333be88": {
+      "topic": "Latto Baby Gender Reveal Big Mama Album 21 Savage",
+      "item_ids": [
+        "ddac40d323c4"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "019ef9ee2bd12751": {
+      "topic": "Becky G Santana Mi Gran Amor ICE Raids Anthem",
+      "item_ids": [
+        "26991297a6bc"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "85bb4c65d280776a": {
+      "topic": "Emily Blunt AI Alien Voice Disclosure Day",
+      "item_ids": [
+        "07b1b8128446"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f5410d59c4274972": {
+      "topic": "Jon Tenney FX Cry Wolf Limited Series Cast",
+      "item_ids": [
+        "f75fb0966d48"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "30d96c5e61276f49": {
+      "topic": "Evoke Entertainment $35M Production Financing Facility",
+      "item_ids": [
+        "5019ee7131cf"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "820fd6ff02b66e5b": {
+      "topic": "A Good Girl's Guide to Murder Season Soundtrack",
+      "item_ids": [
+        "a3222359d2e4"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4987df6d394ca576": {
+      "topic": "Good Advice Cupcake AI Animation Amazon Creator Dispute",
+      "item_ids": [
+        "0f34f5cd0b9e"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8af8ea526c01928e": {
+      "topic": "Meta European Contractor Layoffs Protest",
+      "item_ids": [
+        "347e0b10be3b"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fbadc19d2d09f9f0": {
+      "topic": "Fable Game Release Delay GTA VI",
+      "item_ids": [
+        "5640b885e3f7"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "054bda9add62bc44": {
+      "topic": "Software Stocks SaaS Rally Best Month Since 2001",
+      "item_ids": [
+        "0b3c3a09bf3c"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5be59584c421ea56": {
+      "topic": "SentinelOne Layoffs AI Investment Cybersecurity",
+      "item_ids": [
+        "2afb715771e8"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7657344c76500983": {
+      "topic": "AI Adoption Operational Challenges Corporate Implementation",
+      "item_ids": [
+        "c161469b7248"
+      ],
+      "created_at": "2026-05-29T21:17:57.930243+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-29T19:13:12.954021+00:00"
+  "last_checked": "2026-05-29T21:17:57.931458+00:00"
 }
