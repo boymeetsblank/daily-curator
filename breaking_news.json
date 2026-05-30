@@ -1,6 +1,101 @@
 {
   "items": [
     {
+      "id": "fd059a847111",
+      "topic": "Keychron K2 HE Concrete Edition Review: Rock-Solid Typing",
+      "traffic": "",
+      "detected_at": "2026-05-30T11:59:43.301555+00:00",
+      "search_url": "https://www.wired.com/review/keychron-k2-he-concrete-edition/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "d5fade47d687ac0b"
+    },
+    {
+      "id": "28fc08128a6b",
+      "topic": "‘Backrooms’ Takes You Deeper Inside the Internet’s Most Uncanny Horror Myth",
+      "traffic": "",
+      "detected_at": "2026-05-30T11:59:43.301555+00:00",
+      "search_url": "https://www.wired.com/story/backrooms-movie-kane-parsons-interview/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "5173d0c964809c26"
+    },
+    {
+      "id": "b5d6140c247c",
+      "topic": "Mina the Hollower, a Sims alternative and other new indie games worth checking out",
+      "traffic": "",
+      "detected_at": "2026-05-30T11:59:43.301555+00:00",
+      "search_url": "https://www.engadget.com/2183989/mina-the-hollower-a-sims-alternative-and-other-new-indie-games-worth-checking-out/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "1b4628879cae2b0c"
+    },
+    {
+      "id": "655bf7058498",
+      "topic": "Classrooms lean into analog learning in the AI era - Axios",
+      "traffic": "",
+      "detected_at": "2026-05-30T11:59:43.301555+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBObHBpQmstSXFVbldzdHVpUFpWNGdYNURyVXNqOXlqdUtGTG5YOGhNdi13emZtT3FmNmRiX1IzSlpHbElheXdldHBtSURnbUxYaWZDQmFOT0pOamc3aUpaQm0zVlZVdmdMTzZUdjhjT0YxcG9iRTNfV2stcw?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "e89e10c2bdf0ba6e"
+    },
+    {
+      "id": "dd3a0ecdc593",
+      "topic": "America Has a Pangram Problem - The Atlantic",
+      "traffic": "",
+      "detected_at": "2026-05-30T11:59:43.301555+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ1BhRlA3aS1lWjVnN3pXYWJGSjNVN0I2SVg4MUNnRmZxUEVtTHVMTk1YeDlOT0hpRlRHNDd6eVYwMEUySEw2bEhaXzhjRjNqMDVpVms5anJIby1hLXhDY1NFb2x0TXVKQVVsMGotZWVWTnNZM1NQanc5TXAzSEZ1ZUpxWVVLOHRlM1AyVQ?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "5fb0068e19146b64"
+    },
+    {
+      "id": "2de4238fa385",
+      "topic": "Habs",
+      "traffic": "##16 on X",
+      "detected_at": "2026-05-30T11:59:43.301555+00:00",
+      "search_url": "https://x.com/search?q=Habs&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "29da2327d62a",
+      "topic": "Devers",
+      "traffic": "##17 on X",
+      "detected_at": "2026-05-30T11:59:43.301555+00:00",
+      "search_url": "https://x.com/search?q=Devers&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "44a3e9fed2a1",
+      "topic": "Swan",
+      "traffic": "##18 on X",
+      "detected_at": "2026-05-30T11:59:43.301555+00:00",
+      "search_url": "https://x.com/search?q=Swan&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "c018826815e5",
+      "topic": "Captain Kangaroo",
+      "traffic": "##19 on X",
+      "detected_at": "2026-05-30T11:59:43.301555+00:00",
+      "search_url": "https://x.com/search?q=Captain+Kangaroo&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "3db48881348f",
       "topic": "Cybercrime Crew Claims It Hacked Mike Lindell’s MyPillow",
       "traffic": "",
@@ -271,157 +366,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 5
-    },
-    {
-      "id": "f00451e5cd8d",
-      "topic": "How to Watch the Original ‘Backrooms’ YouTube Series That Inspired Kane Parsons’ Eerie A24 Film",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://variety.com/2026/film/news/watch-backrooms-youtube-series-kane-parsons-horror-movie-1236762708/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7
-    },
-    {
-      "id": "3f80831f496f",
-      "topic": "Marcia Lucas, Oscar-Winning ‘Star Wars’ Editor, Dies at 80",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://variety.com/2026/film/news/marcia-lucas-dead-star-wars-editor-1236762833/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "abf5856a77cec9ba"
-    },
-    {
-      "id": "48ae559f0654",
-      "topic": "‘Deli Boys’ Star Poorna Jagannathan on Her Character’s Season 2 Romance: ‘Lucky Loves Toxic’",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://variety.com/2026/tv/news/deli-boys-season-2-poorna-jagannathan-lucky-1236759218/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "f9c3231690967446"
-    },
-    {
-      "id": "5001150c96ed",
-      "topic": "‘Dutton Ranch’ Episode 4: Rip Shoots Dozens of Cows, Beth Catches Carter Hooking Up With Beulah’s Granddaughter and We Meet Creepy Dwight",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://variety.com/2026/tv/news/dutton-ranch-episode-4-recap-rip-shoots-cows-dwight-1236762691/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "d8c8fed4f0a5d02c"
-    },
-    {
-      "id": "674203e0afff",
-      "topic": "DJ Screw’s Catalog Is Coming to Streaming for the First Time",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://pitchfork.com/news/dj-screws-catalog-is-coming-to-streaming-for-the-first-time/",
-      "source_name": "Pitchfork",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "6e1de7f983861a9a"
-    },
-    {
-      "id": "ed308a66f0f3",
-      "topic": "In Canada: Drake Breaks Records for Most No. 1s Ever on the Billboard Canadian Hot 100 & Album Charts",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://www.billboard.com/pro/drake-breaks-records-billboard-canadian-charts-canada-news/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "dec1d08f49c32d81"
-    },
-    {
-      "id": "ba79212ce153",
-      "topic": "Every Song That Topped the U.K. Chart for 8 or More Weeks, But Didn’t Make the Top 10 on the Hot 100",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://www.billboard.com/lists/songs-that-were-big-uk-hits-but-not-in-the-u-s/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "e28de1a67320679e"
-    },
-    {
-      "id": "5a1daf227173",
-      "topic": "Marcia Lucas Dies: ‘Star Wars’ Oscar Winner Who Also Edited ‘American Graffiti’ Was 80",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://deadline.com/2026/05/marcia-lucas-dead-star-wars-editor-george-lucas-ex-wife-1236930815/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "9d6e2616d0ee",
-      "topic": "‘Real Housewives Of New York City’ Adds Devyn Simone To Season 16 Cast",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://deadline.com/2026/05/real-housewives-of-new-york-city-devyn-simone-season-16-cast-1236930765/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "e91ce1e6e98da9af"
-    },
-    {
-      "id": "9ba7b67b8f93",
-      "topic": "Danny Boyle Hopes To Film ’28 Years Later III’ Next Year: “Fingers Crossed”",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://deadline.com/2026/05/danny-boyle-hopes-film-28-years-later-iii-next-year-1236930755/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "5a278849b6b8f485"
-    },
-    {
-      "id": "2656dcec043c",
-      "topic": "OKC to be without injured Williams for Game 7",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/48914043/thunder-injured-jalen-williams-game-7",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "2cca5780f88c61a5"
-    },
-    {
-      "id": "bad7ebda5ec9",
-      "topic": "Sources: Giants fear Olszewski has torn Achilles",
-      "traffic": "",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://www.espn.com/nfl/story/_/id/48913425/giants-fear-wr-gunner-olszewski-torn-achilles-sources-say",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "7a98cac1536d3d2f"
-    },
-    {
-      "id": "ead8992c2bf4",
-      "topic": "Browsing",
-      "traffic": "##11 on X",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://x.com/search?q=Browsing&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "418df84ee0c1",
-      "topic": "#myhome",
-      "traffic": "##12 on X",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://x.com/search?q=%23myhome&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
     }
   ],
-  "last_checked": "2026-05-30T10:51:31.838893+00:00"
+  "last_checked": "2026-05-30T11:59:43.301555+00:00"
 }
