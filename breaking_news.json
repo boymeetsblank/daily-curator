@@ -1,6 +1,123 @@
 {
   "items": [
     {
+      "id": "3743634db917",
+      "topic": "Samsung Sets Immersive BTS Fan Activations for ‘Arirang’ World Tour",
+      "traffic": "",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://variety.com/2026/shopping/news/samsung-galaxy-s26-ultra-bts-arirang-tour-fan-activation-1236762653/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "94d0fdfb706194cd"
+    },
+    {
+      "id": "d5e629e51422",
+      "topic": "Tom Holland Is Looking Forward to ‘Setting Up the Next Chapter’ For a New ‘Spider-Man’ Star: ‘I Could Do What Downey Did For Me’",
+      "traffic": "",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://variety.com/2026/film/news/tom-holland-setting-new-spider-man-brand-new-day-marvel-1236763157/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "9a328618dae41b75"
+    },
+    {
+      "id": "721f640eb4b6",
+      "topic": "Is Taylor Swift Involved in ‘Toy Story 5’? Fans Decode Cryptic ‘TS’ Billboard Campaign & Lyric Clue",
+      "traffic": "",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://www.billboard.com/music/music-news/taylor-swift-toy-story-5-speculation-ts-billboard-campaign-1236260811/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "5c0864f1af241d46"
+    },
+    {
+      "id": "a0535754d0c4",
+      "topic": "Cracker Barrel 400 Livestream: How to Watch the NASCAR Race Online for Free",
+      "traffic": "",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://www.rollingstone.com/product-recommendations/streaming/watch-cracker-barrel-400-livestream-nascar-race-online-free-1235569882/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "a32c0122663879db"
+    },
+    {
+      "id": "c001ff198ec9",
+      "topic": "Neon Boss Tom Quinn Isn’t A Fan Of Industry Consolidation: “How Would You Feel If A24 & Neon Merged? That Would Be Ridiculous”",
+      "traffic": "",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://deadline.com/2026/05/neon-tom-quinn-paramount-warner-bros-merger-a24-1236931132/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "54b4a77df819ffa4"
+    },
+    {
+      "id": "b4ee2f6da183",
+      "topic": "‘You See L.A.’ Creators, Coach Made Sure Pic Following UCLA Women’s Basketball Team Shot From The Heart – Contenders TV: Docs + Unscripted",
+      "traffic": "",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://deadline.com/2026/05/you-see-la-documentary-creators-ucla-coach-interview-1236864969/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "10d099f1aaff014d"
+    },
+    {
+      "id": "a016d968befb",
+      "topic": "MSI's next-gen monitor can switch between three resolutions and refresh rates",
+      "traffic": "",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://www.engadget.com/2184290/msi-next-gen-monitor-can-switch-between-three-resolutions-and-refresh-rates/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "135b545b97a18c1c"
+    },
+    {
+      "id": "8a0f944e1a68",
+      "topic": "Gabriel",
+      "traffic": "##2 on X",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://x.com/search?q=Gabriel&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "0a3380f0ef31",
+      "topic": "Dembele",
+      "traffic": "##3 on X",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://x.com/search?q=Dembele&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "f1beeb059204",
+      "topic": "Arteta",
+      "traffic": "##4 on X",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://x.com/search?q=Arteta&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "cd5178b26548",
+      "topic": "Raya",
+      "traffic": "##5 on X",
+      "detected_at": "2026-05-30T19:57:01.864429+00:00",
+      "search_url": "https://x.com/search?q=Raya&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "0bab009a28c4",
       "topic": "The New Balance P400 Cops A “Bulls” Colorway",
       "traffic": "",
@@ -313,125 +430,7 @@
       "source_type": "feed",
       "haiku_score": 5,
       "cluster_id": "feef049be3d0ea7c"
-    },
-    {
-      "id": "eb494e884284",
-      "topic": "Deadline’s Contenders Television: Documentary + Unscripted Livestream Underway Spanning Oceans, Beasts & Subways",
-      "traffic": "",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://deadline.com/2026/05/2026-contenders-television-documentary-unscripted-lineup-1236927601/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "75d6f0e4ec70",
-      "topic": "Lucasfilm Pays Tribute To Marcia Lucas After Oscar-Winning Editor’s Death At 80",
-      "traffic": "",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://deadline.com/2026/05/lucasfilm-pays-tribute-marcia-lucas-1236931004/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "abf5856a77cec9ba"
-    },
-    {
-      "id": "361533e64698",
-      "topic": "Meta is reportedly developing an AI pendant",
-      "traffic": "",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "27820c9f4723892f"
-    },
-    {
-      "id": "efe0c0c4c881",
-      "topic": "I put Google’s 24/7 AI assistant Gemini Spark to work, and it’s actually pretty useful",
-      "traffic": "",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "88d9acd443edfc1e"
-    },
-    {
-      "id": "15550bd28489",
-      "topic": "Two months, $2.6 billion: How NASA ETF turned SpaceX IPO access into a hot retail trade",
-      "traffic": "",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://www.cnbc.com/2026/05/30/spacex-ipo-invest.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "4378ade99089",
-      "topic": "#TicketToHeavenEP1",
-      "traffic": "##6 on X",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://x.com/search?q=%23TicketToHeavenEP1&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "ee7ef5dff9f0",
-      "topic": "WWE Clash in Italy 2026 Livestream: How to Watch Cody Rhodes vs. Gunther Live Online",
-      "traffic": "",
-      "detected_at": "2026-05-30T15:16:21.419495+00:00",
-      "search_url": "https://www.billboard.com/culture/product-recommendations/wwe-clash-in-italy-watch-livestream-online-free-1236258202/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "d129bdb33fb19b64"
-    },
-    {
-      "id": "fdeac3ff9ea1",
-      "topic": "Bad Bunny’s Latest Drop With Adidas Is His Most Stylish to Date & Reps Puerto Rico With Pride",
-      "traffic": "",
-      "detected_at": "2026-05-30T15:16:21.419495+00:00",
-      "search_url": "https://www.billboard.com/culture/product-recommendations/bad-bunny-adidas-ballerina-sneakers-vivid-red-buy-shop-online-1236259236/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "67ddbe659e407ea1"
-    },
-    {
-      "id": "a82d1f5ed447",
-      "topic": "Milo J Makes Premios Gardel History With 13 Wins & More Uplifting Moments in Latin Music",
-      "traffic": "",
-      "detected_at": "2026-05-30T15:16:21.419495+00:00",
-      "search_url": "https://www.billboard.com/music/latin/milo-j-makes-premios-gardel-uplifting-moments-latin-music-1236260513/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "86129a6e79659656"
-    },
-    {
-      "id": "79871d1f9087",
-      "topic": "Charlie Puth Brings Out Busta Rhymes, Art Garfunkel, Jimmy Fallon for MSG Victory Lap",
-      "traffic": "",
-      "detected_at": "2026-05-30T15:16:21.419495+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-features/charlie-puth-busta-rhymes-art-garfunkel-jimmy-fallon-msg-1235570380/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "d75a8e80ce1cbdf5"
-    },
-    {
-      "id": "2f9b935eb858",
-      "topic": "Colman Domingo On ‘The Four Seasons,’ ‘Euphoria’ & Where His White Hot Career Is Taking Him Next: “Maybe It Hasn’t Even Been Written Yet”",
-      "traffic": "",
-      "detected_at": "2026-05-30T15:16:21.419495+00:00",
-      "search_url": "https://deadline.com/2026/05/colman-domingo-the-four-seasons-euphoria-interview-1236928418/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "f814239f203f02c8"
     }
   ],
-  "last_checked": "2026-05-30T18:43:50.378578+00:00"
+  "last_checked": "2026-05-30T19:57:01.864429+00:00"
 }

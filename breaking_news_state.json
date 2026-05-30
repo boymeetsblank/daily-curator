@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "b77136c1cd7a",
-    "483d5246bbf8",
-    "2ff19923af60",
-    "3e63531d7033",
-    "a6fdcf69bf3f",
-    "28f6ddc14641",
-    "55c777bd9e75",
-    "4625f0e31e6d",
-    "0df22ee84f17",
-    "e79c222e3130",
-    "f7aa621c1bf3",
-    "f99fe7978f92",
-    "2041ace59d3d",
     "56fc11a9d589",
     "57b668162e51",
     "e53a1c5b2e2a",
@@ -499,12 +486,22 @@
     "faaf2b120056",
     "12ea60192a24",
     "5b8f9c81dacf",
-    "a4262cdf97cf"
+    "a4262cdf97cf",
+    "3743634db917",
+    "d5e629e51422",
+    "721f640eb4b6",
+    "a0535754d0c4",
+    "c001ff198ec9",
+    "b4ee2f6da183",
+    "7e9ef5c26571",
+    "a016d968befb",
+    "8a0f944e1a68",
+    "0a3380f0ef31",
+    "f1beeb059204",
+    "cd5178b26548",
+    "ca9feb94a11a"
   ],
   "failed_ids": {
-    "18c4dcc1029a": "2026-05-30T15:16:21.419495+00:00",
-    "7f571921bcb0": "2026-05-30T15:16:21.419495+00:00",
-    "31ca8503e38c": "2026-05-30T15:16:21.419495+00:00",
     "02d3ce2ddebe": "2026-05-30T16:17:55.449505+00:00",
     "9521d82d66fc": "2026-05-30T16:17:55.449505+00:00",
     "8226fd244e8c": "2026-05-30T16:17:55.449505+00:00",
@@ -520,210 +517,13 @@
     "6ad9a5f91e91": "2026-05-30T17:33:25.999591+00:00",
     "b8a50a2e5d80": "2026-05-30T18:43:50.378578+00:00",
     "9bf5a01e4708": "2026-05-30T18:43:50.378578+00:00",
-    "377c62254711": "2026-05-30T18:43:50.378578+00:00"
+    "377c62254711": "2026-05-30T18:43:50.378578+00:00",
+    "8c52b7507723": "2026-05-30T19:57:01.864429+00:00",
+    "52fe2d8a7c11": "2026-05-30T19:57:01.864429+00:00",
+    "a60df2a1871f": "2026-05-30T19:57:01.864429+00:00",
+    "aa2fc34bf9b2": "2026-05-30T19:57:01.864429+00:00"
   },
   "live_clusters": {
-    "053306d5887a0fb2": {
-      "topic": "Vans Old Skool 36 'Souvenir' Black Release",
-      "item_ids": [
-        "3d35c11cd9ec"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eb8e56286e741a96": {
-      "topic": "Ronnie Fieg New Balance Early 2000s Model Collaboration",
-      "item_ids": [
-        "069a58c8c700"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "61e234d7c9c30ad4": {
-      "topic": "GQ Athletic Fit Jeans 2026 Guide",
-      "item_ids": [
-        "8e8b7efcc1c3"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a3c9e128b7b82cc9": {
-      "topic": "'Baywatch' Reboot Michael Bergin Kelly Packard Fox",
-      "item_ids": [
-        "14bbae96f622",
-        "2c4a21967c3f"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a62c0ab811564ebe": {
-      "topic": "Damien Leone 'Tortures of the Damned' Sam Raimi Lionsgate Partnership",
-      "item_ids": [
-        "9e4a7c7059bf"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b45175fd2a37c565": {
-      "topic": "Custom Instruments 'Simpsons Treehouse of Horror' 'Prehistoric Planet' Scores",
-      "item_ids": [
-        "1ef02e38be14"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eebb97582d3956cd": {
-      "topic": "Jombriel Latin Up-And-Comer Ecuador Viral Breakout",
-      "item_ids": [
-        "79fdb0409038"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "449521dfbed402b9": {
-      "topic": "ENHYPEN Old Interviews Reaction New Era Coachella Tour",
-      "item_ids": [
-        "db95a9a84bf5"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bcfaf4f3d00466c0": {
-      "topic": "ENHYPEN HEESEUNG Exit Statement Moving Forward",
-      "item_ids": [
-        "30f7f034b5f3"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "581af8aa99bd137c": {
-      "topic": "Julieta Venegas '2026 World Cup Song 'La Ni\u00f1a Futbolista'",
-      "item_ids": [
-        "42254376e454"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c0067ecc71f85425": {
-      "topic": "FCC Complaints Bad Bunny Super Bowl Show Scream 7",
-      "item_ids": [
-        "ba8c14184f43"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6c5489dd9fd37270": {
-      "topic": "Marcus King Recreates Gregg Allman 1981 'Come and Go Blues'",
-      "item_ids": [
-        "80f5656fff34"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e0e1b77ba8252f7c": {
-      "topic": "Young Miko Rauw Alejandro 'Aquel Diciembre' Boricua Excellence",
-      "item_ids": [
-        "d63f51448933"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b1ee379b1efd56e6": {
-      "topic": "'PUBG Mobile' Cross-Generational Global Empire Documentary",
-      "item_ids": [
-        "d80956c30f72"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4c263622cf6ebe49": {
-      "topic": "Hannah Einbinder 'Hacks' Finale Stand-Up Return Interview",
-      "item_ids": [
-        "f5498618dd74"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c33fe244bb57acbb": {
-      "topic": "ATX TV Festival 2026 Pitch Competition Mentorship Winners",
-      "item_ids": [
-        "a0ebf31f1fa6"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "88d9acd443edfc1e": {
-      "topic": "Google Gemini Spark AI Relationship Analysis Hands-On",
-      "item_ids": [
-        "c6470a4d683b",
-        "efe0c0c4c881"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a5acae198d9f0a20": {
-      "topic": "AI Terminology Explainer TechCrunch Guide",
-      "item_ids": [
-        "75f84cfeffeb"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cb7a416143011adb": {
-      "topic": "Corporate Over-Reliance AI Adoption Analysis",
-      "item_ids": [
-        "4fd5861e26d9"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8a0ab988152f034e": {
-      "topic": "AI vs Human Workers Corporate Trade-Off Analysis",
-      "item_ids": [
-        "f1b599ca633a"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "623550c804e923e9": {
-      "topic": "Robot Vacuum Technology Maturation Advancement",
-      "item_ids": [
-        "57413f5a5f3b"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "722de3277bef48c3": {
-      "topic": "Pope AI Criticism Technology Limitations Discussion",
-      "item_ids": [
-        "ed9ecf47f42c",
-        "640d69474e3a"
-      ],
-      "created_at": "2026-05-29T19:13:12.933208+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "439d23d4c79347a2": {
       "topic": "Nike Air Max Plus Scorpion Colorway Release",
       "item_ids": [
@@ -763,7 +563,8 @@
     "5c0864f1af241d46": {
       "topic": "Toy Story Sequel Taylor Swift Involvement Easter Eggs Speculation",
       "item_ids": [
-        "2c42c517045a"
+        "2c42c517045a",
+        "721f640eb4b6"
       ],
       "created_at": "2026-05-29T21:17:57.930243+00:00",
       "last_escalated_size": 0,
@@ -1548,7 +1349,70 @@
       "created_at": "2026-05-30T18:44:18.178131+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "94d0fdfb706194cd": {
+      "topic": "Samsung BTS Arirang World Tour Fan Activations",
+      "item_ids": [
+        "3743634db917"
+      ],
+      "created_at": "2026-05-30T19:57:28.115889+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9a328618dae41b75": {
+      "topic": "Tom Holland Spider-Man Mentorship Next Chapter",
+      "item_ids": [
+        "d5e629e51422"
+      ],
+      "created_at": "2026-05-30T19:57:28.115889+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a32c0122663879db": {
+      "topic": "Cracker Barrel 400 NASCAR Livestream",
+      "item_ids": [
+        "a0535754d0c4"
+      ],
+      "created_at": "2026-05-30T19:57:28.115889+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "54b4a77df819ffa4": {
+      "topic": "Neon Boss Tom Quinn Industry Consolidation Stance",
+      "item_ids": [
+        "c001ff198ec9"
+      ],
+      "created_at": "2026-05-30T19:57:28.115889+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "10d099f1aaff014d": {
+      "topic": "'You See L.A.' UCLA Women's Basketball Documentary Contenders TV",
+      "item_ids": [
+        "b4ee2f6da183"
+      ],
+      "created_at": "2026-05-30T19:57:28.115889+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1c7eb4a79a51cbbd": {
+      "topic": "'Mr. Scorsese' Martin Scorsese Documentary Contenders TV",
+      "item_ids": [
+        "7e9ef5c26571"
+      ],
+      "created_at": "2026-05-30T19:57:28.115889+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "135b545b97a18c1c": {
+      "topic": "MSI Multi-Resolution Multi-Refresh Rate Monitor",
+      "item_ids": [
+        "a016d968befb"
+      ],
+      "created_at": "2026-05-30T19:57:28.115889+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T18:44:29.160393+00:00"
+  "last_checked": "2026-05-30T19:57:28.117049+00:00"
 }
