@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "84e4ab23a6dd",
-    "a9d410877c35",
-    "e06db8d6b5ae",
-    "ae01b73b5dff",
-    "c7e900f4e1f0",
-    "8344e3b4e669",
-    "b57674c07097",
-    "c8a10f8e0fd9",
-    "e572c6ab1e58",
-    "936b88ee7738",
-    "93377b741a2f",
-    "1ec329b9488c",
-    "ae837fabd4ba",
-    "bfd2ded3d647",
-    "d3ff6c0ad7d2",
     "b77136c1cd7a",
     "483d5246bbf8",
     "2ff19923af60",
@@ -499,19 +484,24 @@
     "946d93f48392",
     "dc26fc9334c8",
     "92b44afd39e3",
-    "fa49c2070059"
+    "fa49c2070059",
+    "0bab009a28c4",
+    "f329ab302ca3",
+    "486c13867ff0",
+    "532b39678441",
+    "311782922d4b",
+    "da09405b6413",
+    "c2cf85f084df",
+    "4aec9ea08f85",
+    "aee64ccd3a4a",
+    "50bc1690e99a",
+    "8a42a12c882a",
+    "faaf2b120056",
+    "12ea60192a24",
+    "5b8f9c81dacf",
+    "a4262cdf97cf"
   ],
   "failed_ids": {
-    "c522621d3e62": "2026-05-30T13:58:57.046403+00:00",
-    "43397507c382": "2026-05-30T13:58:57.046403+00:00",
-    "bc5a5e4a806d": "2026-05-30T13:58:57.046403+00:00",
-    "0a3ab2dda11e": "2026-05-30T13:58:57.046403+00:00",
-    "1472bac14cb5": "2026-05-30T13:58:57.046403+00:00",
-    "f59a59fe31cf": "2026-05-30T13:58:57.046403+00:00",
-    "1b2b13aa3bd4": "2026-05-30T13:58:57.046403+00:00",
-    "d41a918b6445": "2026-05-30T13:58:57.046403+00:00",
-    "949bf4160bf7": "2026-05-30T13:58:57.046403+00:00",
-    "18f61868e724": "2026-05-30T13:58:57.046403+00:00",
     "18c4dcc1029a": "2026-05-30T15:16:21.419495+00:00",
     "7f571921bcb0": "2026-05-30T15:16:21.419495+00:00",
     "31ca8503e38c": "2026-05-30T15:16:21.419495+00:00",
@@ -527,7 +517,10 @@
     "01867783945c": "2026-05-30T17:33:25.999591+00:00",
     "c60cd7b634ec": "2026-05-30T17:33:25.999591+00:00",
     "aca2aed1bc2e": "2026-05-30T17:33:25.999591+00:00",
-    "6ad9a5f91e91": "2026-05-30T17:33:25.999591+00:00"
+    "6ad9a5f91e91": "2026-05-30T17:33:25.999591+00:00",
+    "b8a50a2e5d80": "2026-05-30T18:43:50.378578+00:00",
+    "9bf5a01e4708": "2026-05-30T18:43:50.378578+00:00",
+    "377c62254711": "2026-05-30T18:43:50.378578+00:00"
   },
   "live_clusters": {
     "053306d5887a0fb2": {
@@ -1226,11 +1219,19 @@
       "topic": "'Backrooms' Internet Horror Myth Film Adaptation",
       "item_ids": [
         "28fc08128a6b",
-        "9ac8b7e2ccd9"
+        "9ac8b7e2ccd9",
+        "486c13867ff0"
       ],
       "created_at": "2026-05-30T12:00:13.655098+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-30T18:43:50.378578+00:00",
+      "picks_file": "picks/picks-2026-05-30-1844.md",
+      "why_text": "The surprise box office performance of a film based on a creepypasta internet myth is sending a loud signal to Hollywood: niche online lore has a ravenous, built-in audience that studios keep underestimating. The Backrooms \u2014 a liminal horror concept born from a single 2019 4chan post and turbocharged by YouTube \u2014 has now outperformed films with far bigger budgets and IP recognition. This is less about one film and more about a generation that grew up with internet mythology treating it with the same reverence older audiences gave Stephen King.",
+      "last_escalated_item_ids": [
+        "28fc08128a6b",
+        "9ac8b7e2ccd9",
+        "486c13867ff0"
+      ]
     },
     "1b4628879cae2b0c": {
       "topic": "Indie Games Releases Mina the Hollower Sims Alternative",
@@ -1344,11 +1345,19 @@
       "topic": "Kelly Curtis Actress Death Obituary",
       "item_ids": [
         "1ceb718e3361",
-        "aa0d3dc26e9d"
+        "aa0d3dc26e9d",
+        "c2cf85f084df"
       ],
       "created_at": "2026-05-30T16:18:29.612231+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-30T18:43:50.378578+00:00",
+      "picks_file": "picks/picks-2026-05-30-1844.md",
+      "why_text": "Kelly Curtis, who appeared in films like *The Sentinel* and carried the weight of Hollywood royalty as the daughter of Tony Curtis and Janet Leigh, has died at 69. Though she lived largely outside her famous family's spotlight, her death closes a chapter on a generation of Old Hollywood legacy. Jamie Lee Curtis publicly mourning her sister makes this a rare, raw moment of grief playing out in real time for one of entertainment's most storied families.",
+      "last_escalated_item_ids": [
+        "1ceb718e3361",
+        "aa0d3dc26e9d",
+        "c2cf85f084df"
+      ]
     },
     "4a6c79c06ac8e03d": {
       "topic": "Luke Bryan AI Song Controversy Songwriters",
@@ -1389,7 +1398,8 @@
     "d7e4297dc5333546": {
       "topic": "Jason Blum Produced By Conference Low-Budget Horror Industry Panel",
       "item_ids": [
-        "8c536f114b79"
+        "8c536f114b79",
+        "4aec9ea08f85"
       ],
       "created_at": "2026-05-30T17:34:02.016366+00:00",
       "last_escalated_size": 0,
@@ -1475,7 +1485,70 @@
       "created_at": "2026-05-30T17:34:02.016366+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "149b721f37e11c88": {
+      "topic": "New Balance P400 'Bulls' Colorway Release",
+      "item_ids": [
+        "0bab009a28c4"
+      ],
+      "created_at": "2026-05-30T18:44:18.178131+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f04fcbd90a38ac78": {
+      "topic": "Spurs vs Thunder NBA Western Conference Finals Game 7",
+      "item_ids": [
+        "f329ab302ca3"
+      ],
+      "created_at": "2026-05-30T18:44:18.178131+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6f7008c1eea5a070": {
+      "topic": "John Candy Documentary Colin Hanks Contenders TV",
+      "item_ids": [
+        "532b39678441"
+      ],
+      "created_at": "2026-05-30T18:44:18.178131+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b9aa08629a157d54": {
+      "topic": "Lilith Fair Documentary Director Contenders TV",
+      "item_ids": [
+        "311782922d4b"
+      ],
+      "created_at": "2026-05-30T18:44:18.178131+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "57afc302e0399e9c": {
+      "topic": "Lost Women of Alaska Octavia Spencer Docuseries Contenders TV",
+      "item_ids": [
+        "da09405b6413"
+      ],
+      "created_at": "2026-05-30T18:44:18.178131+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3a1b69d8125a7ba0": {
+      "topic": "The Dorians Red Roots Weekend Reading",
+      "item_ids": [
+        "aee64ccd3a4a"
+      ],
+      "created_at": "2026-05-30T18:44:18.178131+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "14d5b997a73c95b3": {
+      "topic": "Playstack Publisher Balatro Private Equity Acquisition",
+      "item_ids": [
+        "50bc1690e99a"
+      ],
+      "created_at": "2026-05-30T18:44:18.178131+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T17:34:07.823060+00:00"
+  "last_checked": "2026-05-30T18:44:29.160393+00:00"
 }
