@@ -1,11 +1,5 @@
 {
   "known_ids": [
-    "e0e6766a437e",
-    "aac466fad8e6",
-    "274491eca225",
-    "925bb3e5b48a",
-    "e1ebcfd1b9e6",
-    "a8f619f5b10b",
     "da3dc6ff381b",
     "5e917aee93b8",
     "89ab6dc2ed72",
@@ -499,28 +493,15 @@
     "418df84ee0c1",
     "e43022626753",
     "d21c58103da3",
-    "1b58a5529b55"
+    "1b58a5529b55",
+    "dc39630c842c",
+    "c66e32c9e428",
+    "6226701659db",
+    "54eebafbddd0",
+    "4f9bdf60cc75",
+    "becf76921a9b"
   ],
   "failed_ids": {
-    "e79b5549c409": "2026-05-29T21:17:23.001035+00:00",
-    "034bbc5861d4": "2026-05-29T21:17:23.001035+00:00",
-    "d11e64ed6123": "2026-05-29T21:17:23.001035+00:00",
-    "f11bb1f25f80": "2026-05-29T21:17:23.001035+00:00",
-    "2d29f955c162": "2026-05-29T21:17:23.001035+00:00",
-    "dba35fe38d1b": "2026-05-29T21:17:23.001035+00:00",
-    "2d28678b4dd5": "2026-05-29T21:17:23.001035+00:00",
-    "66fea3f5bf35": "2026-05-29T21:17:23.001035+00:00",
-    "9b5bd271f796": "2026-05-29T21:17:23.001035+00:00",
-    "326fb314ef65": "2026-05-29T22:44:50.607336+00:00",
-    "1e171d61e2a3": "2026-05-29T22:44:50.607336+00:00",
-    "8d1edcad286a": "2026-05-29T22:44:50.607336+00:00",
-    "3e37731b9183": "2026-05-29T22:44:50.607336+00:00",
-    "15a489190cb5": "2026-05-29T22:44:50.607336+00:00",
-    "4f181a54ae99": "2026-05-29T22:44:50.607336+00:00",
-    "c08b40fd4893": "2026-05-29T22:44:50.607336+00:00",
-    "62ceb19d4336": "2026-05-29T22:44:50.607336+00:00",
-    "f54785d470f0": "2026-05-29T22:44:50.607336+00:00",
-    "0cfae9de3ffa": "2026-05-29T22:44:50.607336+00:00",
     "3511f4b2c840": "2026-05-29T23:56:36.653236+00:00",
     "0e081e4a5016": "2026-05-29T23:56:36.653236+00:00",
     "76dd3ba0be52": "2026-05-29T23:56:36.653236+00:00",
@@ -531,81 +512,16 @@
     "72750fd2d2f2": "2026-05-29T23:56:36.653236+00:00",
     "3e503b499df1": "2026-05-29T23:56:36.653236+00:00",
     "dc7fc3c44de4": "2026-05-29T23:56:36.653236+00:00",
-    "737868eb28fe": "2026-05-29T23:56:36.653236+00:00"
+    "737868eb28fe": "2026-05-29T23:56:36.653236+00:00",
+    "3b9bca0db78f": "2026-05-30T03:34:49.625845+00:00",
+    "5f19275149d5": "2026-05-30T03:34:49.625845+00:00",
+    "3f8da55855eb": "2026-05-30T03:34:49.625845+00:00",
+    "4cf948d56e31": "2026-05-30T03:34:49.625845+00:00",
+    "1412c1dfd02f": "2026-05-30T03:34:49.625845+00:00",
+    "9fc86404c079": "2026-05-30T03:34:49.625845+00:00",
+    "b8700e8cf71a": "2026-05-30T03:34:49.625845+00:00"
   },
   "live_clusters": {
-    "8e393a699c2c9495": {
-      "topic": "Martina McBride Withdraws From Trump Freedom 250 Concert Event",
-      "item_ids": [
-        "d2c2b9974bd1",
-        "9be381995b10"
-      ],
-      "created_at": "2026-05-29T01:35:27.158167+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cca1b08cb7cc757d": {
-      "topic": "Nothing Phone (4a) Pro Music Creator Device Review",
-      "item_ids": [
-        "3964023fa19f"
-      ],
-      "created_at": "2026-05-29T01:35:27.158167+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "89f936756fe4bfd5": {
-      "topic": "Scooter Braun Comments Taylor Swift Dispute Public Perception",
-      "item_ids": [
-        "aa28d704cb40"
-      ],
-      "created_at": "2026-05-29T01:35:27.158167+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c75476092f1b3583": {
-      "topic": "CBS Late Show Financials Byron Allen Time Buy Disclosure",
-      "item_ids": [
-        "dfbe4073799e"
-      ],
-      "created_at": "2026-05-29T01:35:27.158167+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "92a7292f430d2eb0": {
-      "topic": "Blue Origin New Glenn Rocket Test Failure Florida",
-      "item_ids": [
-        "0f942237e7a3",
-        "8eb647dce1f6",
-        "f87f5f176e99"
-      ],
-      "created_at": "2026-05-29T01:35:27.158167+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-29T19:12:40.122985+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "0f942237e7a3",
-        "8eb647dce1f6",
-        "f87f5f176e99"
-      ]
-    },
-    "5b14cedeb06b0a06": {
-      "topic": "Glean AI Enterprise Revenue $300M Cost-Cutting Demand",
-      "item_ids": [
-        "c87f159dd82a"
-      ],
-      "created_at": "2026-05-29T01:35:27.158167+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "50ad1ebd118fe175": {
-      "topic": "Waymo Autonomous Vehicle Registration Leadership Tesla Competition",
-      "item_ids": [
-        "8086a6b31b94"
-      ],
-      "created_at": "2026-05-29T01:35:27.158167+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "f97e24e85b3ca189": {
       "topic": "Syd First Album in Four Years Announcement",
       "item_ids": [
@@ -1590,7 +1506,26 @@
       "created_at": "2026-05-29T23:57:03.617619+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "555d2ccb46936f13": {
+      "topic": "Clive Davis Hospitalized Respiratory Issue",
+      "item_ids": [
+        "dc39630c842c"
+      ],
+      "created_at": "2026-05-30T03:35:16.533419+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9db0504697c20971": {
+      "topic": "SEONGHYEON LOEWE Fashion Campaign",
+      "item_ids": [
+        "c66e32c9e428",
+        "6226701659db"
+      ],
+      "created_at": "2026-05-30T03:35:16.533419+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-29T23:57:03.618870+00:00"
+  "last_checked": "2026-05-30T03:35:16.534605+00:00"
 }

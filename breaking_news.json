@@ -1,6 +1,69 @@
 {
   "items": [
     {
+      "id": "dc39630c842c",
+      "topic": "Music Mogul Clive Davis Hospitalized Following Respiratory Issue",
+      "traffic": "",
+      "detected_at": "2026-05-30T03:34:49.625845+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/clive-davis-hospitalized-respiratory-issue-1235570323/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "555d2ccb46936f13"
+    },
+    {
+      "id": "c66e32c9e428",
+      "topic": "#SEONGHYEONxLOEWE",
+      "traffic": "##16 on X",
+      "detected_at": "2026-05-30T03:34:49.625845+00:00",
+      "search_url": "https://x.com/search?q=%23SEONGHYEONxLOEWE&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6,
+      "cluster_id": "9db0504697c20971"
+    },
+    {
+      "id": "6226701659db",
+      "topic": "SEONGHYEON EMBODIES LOEWE",
+      "traffic": "##17 on X",
+      "detected_at": "2026-05-30T03:34:49.625845+00:00",
+      "search_url": "https://x.com/search?q=SEONGHYEON+EMBODIES+LOEWE&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6,
+      "cluster_id": "9db0504697c20971"
+    },
+    {
+      "id": "54eebafbddd0",
+      "topic": "Unicity",
+      "traffic": "##18 on X",
+      "detected_at": "2026-05-30T03:34:49.625845+00:00",
+      "search_url": "https://x.com/search?q=Unicity&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "4f9bdf60cc75",
+      "topic": "Loud",
+      "traffic": "##19 on X",
+      "detected_at": "2026-05-30T03:34:49.625845+00:00",
+      "search_url": "https://x.com/search?q=Loud&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "becf76921a9b",
+      "topic": "Casual",
+      "traffic": "##20 on X",
+      "detected_at": "2026-05-30T03:34:49.625845+00:00",
+      "search_url": "https://x.com/search?q=Casual&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "f00451e5cd8d",
       "topic": "How to Watch the Original ‘Backrooms’ YouTube Series That Inspired Kane Parsons’ Eerie A24 Film",
       "traffic": "",
@@ -362,73 +425,7 @@
       "source_type": "feed",
       "haiku_score": 5,
       "cluster_id": "9e8021750b3f818e"
-    },
-    {
-      "id": "5001f294daa3",
-      "topic": "Jay Wheeler’s ‘La Voz Favorita’ Album & More: Vote for the Best New Latin Music Release This Week",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://www.billboard.com/music/latin/best-new-latin-music-release-poll-jay-wheeler-tito-double-p-1236260499/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "f42a8fbad35674bc"
-    },
-    {
-      "id": "ac6f391ad160",
-      "topic": "Clint Black’s New Book Tells His Story of Stardom in Country Music: Here’s Where to Get Your Copy Online",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://www.billboard.com/culture/product-recommendations/clint-black-memoir-book-shop-how-to-buy-online-1236259877/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "e05b93d3e0a4d541"
-    },
-    {
-      "id": "69184feaa0bc",
-      "topic": "Maluma Says He Was ‘Super Obsessed’ With Collaborating With American Artists, But ‘Not Anymore’",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://www.billboard.com/music/latin/maluma-not-interested-working-with-us-artists-explains-why-1236260342/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "bf1ba72da8140f17"
-    },
-    {
-      "id": "ddac40d323c4",
-      "topic": "Latto Appears to Reveal the Sex of Her Baby With 21 Savage on New Album ‘Big Mama’",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://www.billboard.com/music/rb-hip-hop/latto-21-savage-reveal-baby-girl-boy-big-mama-1236260297/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "b303cf2c8333be88"
-    },
-    {
-      "id": "26991297a6bc",
-      "topic": "Becky G and Santana Paint the Harsh Realities of ICE Raids on ‘Mi Gran Amor’",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-latin/becky-g-santana-mi-gran-amor-1235569916/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "019ef9ee2bd12751"
-    },
-    {
-      "id": "07b1b8128446",
-      "topic": "Emily Blunt Was “A Bit Terrified” To Use AI In Making ‘Disclosure Day’ Alien Voice, Details Creating “Really Strange Sounds” Herself",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://deadline.com/2026/05/emily-blunt-terrified-ai-disclosure-day-alien-voice-1236930601/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "85bb4c65d280776a"
     }
   ],
-  "last_checked": "2026-05-29T23:56:36.653236+00:00"
+  "last_checked": "2026-05-30T03:34:49.625845+00:00"
 }
