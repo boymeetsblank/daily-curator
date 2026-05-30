@@ -1,25 +1,5 @@
 {
   "known_ids": [
-    "36fee744e624",
-    "c344200809d7",
-    "6ebf061851c5",
-    "c04dfc73553a",
-    "9000e3c3c768",
-    "4bc0d1eaf4d6",
-    "4df0ddf9b0dc",
-    "27e7ffe05af0",
-    "9f4cd0ed7eaf",
-    "856d93d44b06",
-    "c1d1dc9f8d82",
-    "7e5b80dae8da",
-    "8030b0ce7d2f",
-    "e564ed9019af",
-    "1d26da552948",
-    "978f17dd1371",
-    "a5296edd4fff",
-    "29235b0781e7",
-    "aa6826c8a5e2",
-    "604c478aebb4",
     "84e4ab23a6dd",
     "a9d410877c35",
     "e06db8d6b5ae",
@@ -499,7 +479,27 @@
     "e0c502dfc0eb",
     "ec7e96b20fa8",
     "17a0bc553312",
-    "be083d6afa17"
+    "be083d6afa17",
+    "aa0d3dc26e9d",
+    "73e3ef56c400",
+    "63aae6be9210",
+    "8c536f114b79",
+    "0cb679f7ed2b",
+    "a05eeec5a30a",
+    "48436baf7cc3",
+    "4b7d4120cb3c",
+    "95382cdf3492",
+    "915e56cc7328",
+    "5aa408c7d9d8",
+    "3ffabc5abc63",
+    "54225d41602f",
+    "cd380d86169c",
+    "77ca72074488",
+    "a66758ace8e5",
+    "946d93f48392",
+    "dc26fc9334c8",
+    "92b44afd39e3",
+    "fa49c2070059"
   ],
   "failed_ids": {
     "c522621d3e62": "2026-05-30T13:58:57.046403+00:00",
@@ -519,198 +519,17 @@
     "9521d82d66fc": "2026-05-30T16:17:55.449505+00:00",
     "8226fd244e8c": "2026-05-30T16:17:55.449505+00:00",
     "59dfe851bf01": "2026-05-30T16:17:55.449505+00:00",
-    "4b7009bd8677": "2026-05-30T16:17:55.449505+00:00"
+    "4b7009bd8677": "2026-05-30T16:17:55.449505+00:00",
+    "cad75cc21b4e": "2026-05-30T17:33:25.999591+00:00",
+    "6a590811c9ca": "2026-05-30T17:33:25.999591+00:00",
+    "5c6bcb3791a0": "2026-05-30T17:33:25.999591+00:00",
+    "dc0ab7c8cab6": "2026-05-30T17:33:25.999591+00:00",
+    "01867783945c": "2026-05-30T17:33:25.999591+00:00",
+    "c60cd7b634ec": "2026-05-30T17:33:25.999591+00:00",
+    "aca2aed1bc2e": "2026-05-30T17:33:25.999591+00:00",
+    "6ad9a5f91e91": "2026-05-30T17:33:25.999591+00:00"
   },
   "live_clusters": {
-    "53591f531f46176c": {
-      "topic": "LEGO Nike Dunk Low Bright Concord Collaboration",
-      "item_ids": [
-        "95fc3acd36d2"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1c807023eb5ebb03": {
-      "topic": "KidSuper World Cup BAPE Collection",
-      "item_ids": [
-        "1b7725815d1f"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b7e83cd7e7a247b7": {
-      "topic": "'Half Man' Emmy Submissions Richard Gadd Jamie Bell HBO",
-      "item_ids": [
-        "e6cfcac1608b"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9308831a8da8a567": {
-      "topic": "Broadway Galileo Neil deGrasse Tyson Narrator Video",
-      "item_ids": [
-        "7d5e428bea14"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6ff06f1bcf29b4f7": {
-      "topic": "Jorge Gutierrez AI Series Cancellation Amazon MGM Backlash",
-      "item_ids": [
-        "9a2110146a5f"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0c227c7b1db2ff92": {
-      "topic": "Adewale Akinnuoye-Agbaje Alamo Method Acting Southern Accent",
-      "item_ids": [
-        "98e078d0e458"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "97cfde5deffb1568": {
-      "topic": "Big Thief Irish Field Song Performance",
-      "item_ids": [
-        "37dac706e49c"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a48ccfb2e275fc8c": {
-      "topic": "Ren\u00e9e Fleming B\u00e9la Fleck Opera Bluegrass Album",
-      "item_ids": [
-        "8791907a4ce2"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0275df5985095119": {
-      "topic": "Billboard 2026 Country Power Players",
-      "item_ids": [
-        "8b7c095ae3d7"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3d0b66c33f25d172": {
-      "topic": "Austin Neal Agency Morgan Wallen Riley Green Ella Langley",
-      "item_ids": [
-        "83cc0dc15509"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7a4c7764429ca6b5": {
-      "topic": "Sting Deindustrialization Toxic Masculinity Comments",
-      "item_ids": [
-        "6dd1a7d29077"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "90ccad24a024a124": {
-      "topic": "Tranquilo Quieto Series Buscabulla Return",
-      "item_ids": [
-        "55485ad004ad"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "237a64f0326c1c39": {
-      "topic": "MXZI Phonk Mainstream Success",
-      "item_ids": [
-        "165e6147afdf"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1811c4925dcd018f": {
-      "topic": "Jim Mickle E.L. Katz FX That Texas Blood Series",
-      "item_ids": [
-        "d7ea7cb2187d"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3587f41e87ab0eb6": {
-      "topic": "Florence Pugh Midnight Library Paramount Deal",
-      "item_ids": [
-        "2c71bde7f2da"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a547381e48cd8bf8": {
-      "topic": "Rosalind Eleazar WME Signing Chris Rock Misty Green",
-      "item_ids": [
-        "1c41a8078010"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "974feea43bc097ca": {
-      "topic": "Jorge Gutierrez AI Project Cancellation Amazon MGM",
-      "item_ids": [
-        "89d0a84a00ea"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ff98ad07cb2cdb6": {
-      "topic": "'The Pitt' Emmy Submissions Noah Wyle HBO Max",
-      "item_ids": [
-        "194d89b35f3b"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b91241fb33918e52": {
-      "topic": "Samsung Movingstyle Essential Screen Review",
-      "item_ids": [
-        "82d19b7b3f6a"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9a2ac868cbc28c72": {
-      "topic": "Cognition Scott Wu AI Coding Agents",
-      "item_ids": [
-        "4b1d7fc08047"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7c55f15c831a1870": {
-      "topic": "Paramount+ Star Trek AI Thumbnail Criticism",
-      "item_ids": [
-        "b1388b76fe57"
-      ],
-      "created_at": "2026-05-29T16:31:09.142279+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "053306d5887a0fb2": {
       "topic": "Vans Old Skool 36 'Souvenir' Black Release",
       "item_ids": [
@@ -1214,7 +1033,8 @@
       "item_ids": [
         "3f80831f496f",
         "3ec6022a9d97",
-        "75d6f0e4ec70"
+        "75d6f0e4ec70",
+        "cd380d86169c"
       ],
       "created_at": "2026-05-29T23:57:03.617619+00:00",
       "last_escalated_size": 3,
@@ -1301,7 +1121,8 @@
     "555d2ccb46936f13": {
       "topic": "Clive Davis Hospitalized Respiratory Issue",
       "item_ids": [
-        "dc39630c842c"
+        "dc39630c842c",
+        "48436baf7cc3"
       ],
       "created_at": "2026-05-30T03:35:16.533419+00:00",
       "last_escalated_size": 0,
@@ -1522,7 +1343,8 @@
     "57beaa8c57c538d3": {
       "topic": "Kelly Curtis Actress Death Obituary",
       "item_ids": [
-        "1ceb718e3361"
+        "1ceb718e3361",
+        "aa0d3dc26e9d"
       ],
       "created_at": "2026-05-30T16:18:29.612231+00:00",
       "last_escalated_size": 0,
@@ -1545,7 +1367,115 @@
       "created_at": "2026-05-30T16:18:29.612231+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "39adfc55de049cd7": {
+      "topic": "Josh Safdie 'Neighbors' Reality Series Emmy Submissions Robert Redford's Grandson",
+      "item_ids": [
+        "73e3ef56c400"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "795b0ea1786d977d": {
+      "topic": "'A Minecraft Movie Squared' Sequel Title Announcement",
+      "item_ids": [
+        "63aae6be9210"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d7e4297dc5333546": {
+      "topic": "Jason Blum Produced By Conference Low-Budget Horror Industry Panel",
+      "item_ids": [
+        "8c536f114b79"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e859561dfe7f11a6": {
+      "topic": "Stephanie Han vs Holly Holm 2 Livestream Title Bout Rematch",
+      "item_ids": [
+        "0cb679f7ed2b"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8fd1a17cc7ab0077": {
+      "topic": "Ye Touring Comeback John Burton Access Opera Kickstart",
+      "item_ids": [
+        "a05eeec5a30a"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e06eeea192d580de": {
+      "topic": "YouTube Creators Panel Sean Evans Brittany Broski Michelle Khare Contenders TV",
+      "item_ids": [
+        "4b7d4120cb3c"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4890af1689dac069": {
+      "topic": "'Spider-Noir' Li Jun Li Nicolas Cage Banter Femme Fatale Role",
+      "item_ids": [
+        "95382cdf3492"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "96a291c9744f5336": {
+      "topic": "'Ocean With David Attenborough' Centennial Milestone Documentary",
+      "item_ids": [
+        "915e56cc7328"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eca6209555d63d05": {
+      "topic": "Letterboxd For Sale Public Benefit Company Indie Film Platform",
+      "item_ids": [
+        "5aa408c7d9d8"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ae7f5a59de07c4ba": {
+      "topic": "Snap Alums Ghost Angels Fund Venture",
+      "item_ids": [
+        "3ffabc5abc63"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2ae5b5c4396ec839": {
+      "topic": "GitHub Copilot Token-Based Billing Developer Backlash",
+      "item_ids": [
+        "54225d41602f"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8dd263e828456629": {
+      "topic": "NASA X-59 Supersonic Flight SpaceX Starship Grounded Science Update",
+      "item_ids": [
+        "77ca72074488"
+      ],
+      "created_at": "2026-05-30T17:34:02.016366+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T16:18:29.633942+00:00"
+  "last_checked": "2026-05-30T17:34:07.823060+00:00"
 }
