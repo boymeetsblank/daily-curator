@@ -1,6 +1,38 @@
 {
   "items": [
     {
+      "id": "3db48881348f",
+      "topic": "Cybercrime Crew Claims It Hacked Mike Lindell’s MyPillow",
+      "traffic": "",
+      "detected_at": "2026-05-30T10:51:31.838893+00:00",
+      "search_url": "https://www.wired.com/story/security-news-this-week-cybercrime-crew-claims-it-hacked-mike-lindells-mypillow/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "0fe2f38df7e6d333"
+    },
+    {
+      "id": "90bd2d3351f0",
+      "topic": "Meta is reportedly working on an AI pendant and more smart glasses",
+      "traffic": "",
+      "detected_at": "2026-05-30T10:51:31.838893+00:00",
+      "search_url": "https://www.engadget.com/2184224/meta-developing-ai-pendant-more-smart-glass-models/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "27820c9f4723892f"
+    },
+    {
+      "id": "839dd976649d",
+      "topic": "Justin Wrobleski",
+      "traffic": "##11 on X",
+      "detected_at": "2026-05-30T10:51:31.838893+00:00",
+      "search_url": "https://x.com/search?q=Justin+Wrobleski&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "7e12500d44c2",
       "topic": "Nike World Cup Uniforms Made of Recycled Textiles Won’t Solve Fashion Waste",
       "traffic": "",
@@ -389,37 +421,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 5
-    },
-    {
-      "id": "e43022626753",
-      "topic": "Major",
-      "traffic": "##13 on X",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://x.com/search?q=Major&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "d21c58103da3",
-      "topic": "Neen",
-      "traffic": "##14 on X",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://x.com/search?q=Neen&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "1b58a5529b55",
-      "topic": "Skimming",
-      "traffic": "##15 on X",
-      "detected_at": "2026-05-29T23:56:36.653236+00:00",
-      "search_url": "https://x.com/search?q=Skimming&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
     }
   ],
-  "last_checked": "2026-05-30T09:03:01.303871+00:00"
+  "last_checked": "2026-05-30T10:51:31.838893+00:00"
 }

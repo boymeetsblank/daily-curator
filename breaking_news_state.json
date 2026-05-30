@@ -1,12 +1,5 @@
 {
   "known_ids": [
-    "a4c9931a83b5",
-    "adf41dd776bf",
-    "8f21befcc147",
-    "0988db4fc1d2",
-    "a52697aff3be",
-    "33984d643cf2",
-    "ac1f2a3571c1",
     "f9671d522ce7",
     "76262f3f8c0f",
     "9762bf0065d4",
@@ -499,82 +492,34 @@
     "f93ad2ae723c",
     "932eb54bd15b",
     "a867f7fddc08",
-    "886069fa0c70"
+    "886069fa0c70",
+    "3db48881348f",
+    "90bd2d3351f0",
+    "839dd976649d",
+    "99783452cb2b",
+    "6134d565534a",
+    "a7c562d9d524",
+    "94b53d61b151"
   ],
   "failed_ids": {
-    "64aad299fdf0": "2026-05-30T06:37:08.624069+00:00",
-    "b4a79a438394": "2026-05-30T06:37:08.624069+00:00",
-    "d9ff7a1c56d2": "2026-05-30T06:37:08.624069+00:00",
-    "88ffd1831a3a": "2026-05-30T06:37:08.624069+00:00",
-    "5685362d9570": "2026-05-30T06:37:08.624069+00:00",
-    "add634f31a50": "2026-05-30T06:37:08.624069+00:00",
     "4acdefb74517": "2026-05-30T09:03:01.303871+00:00",
-    "18f61868e724": "2026-05-30T09:03:01.303871+00:00"
+    "18f61868e724": "2026-05-30T09:03:01.303871+00:00",
+    "de4d8257d34b": "2026-05-30T10:51:31.838893+00:00",
+    "f0806f2c66de": "2026-05-30T10:51:31.838893+00:00",
+    "e923c93a4568": "2026-05-30T10:51:31.838893+00:00",
+    "c6a53d0bd7e1": "2026-05-30T10:51:31.838893+00:00",
+    "a5c2e712fc1b": "2026-05-30T10:51:31.838893+00:00",
+    "23aa7e622f07": "2026-05-30T10:51:31.838893+00:00",
+    "b4a79a438394": "2026-05-30T10:51:31.838893+00:00",
+    "d11e64ed6123": "2026-05-30T10:51:31.838893+00:00",
+    "477a21fcfe31": "2026-05-30T10:51:31.838893+00:00",
+    "3b54e4b8447f": "2026-05-30T10:51:31.838893+00:00",
+    "11ea926163b7": "2026-05-30T10:51:31.838893+00:00",
+    "a9c543d6829a": "2026-05-30T10:51:31.838893+00:00",
+    "14f39684b94b": "2026-05-30T10:51:31.838893+00:00",
+    "a311dd889e1a": "2026-05-30T10:51:31.838893+00:00"
   },
   "live_clusters": {
-    "aafaafd816ddd9c9": {
-      "topic": "Maisie Peters ARIA Chart Success 'Florescence'",
-      "item_ids": [
-        "31c83a5359ba"
-      ],
-      "created_at": "2026-05-29T09:53:39.434634+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6503535e2c7bf18b": {
-      "topic": "Billboard 2026 U.K. Power Players List",
-      "item_ids": [
-        "f8a510237df1"
-      ],
-      "created_at": "2026-05-29T09:53:39.434634+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "db334f8aabd9c3ff": {
-      "topic": "Zane Lowe New Zealand Music Executive Profile",
-      "item_ids": [
-        "bca892fd7936"
-      ],
-      "created_at": "2026-05-29T09:53:39.434634+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7cfc325657feb02e": {
-      "topic": "'Amores Perros' TV Series Adaptation Sofia Vergara LatinWe",
-      "item_ids": [
-        "7a7043f922e5"
-      ],
-      "created_at": "2026-05-29T09:53:39.434634+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c9b80a7f6b7e8840": {
-      "topic": "BYD Autonomous Driving Chip Development",
-      "item_ids": [
-        "4863d5b4ea26"
-      ],
-      "created_at": "2026-05-29T09:53:39.434634+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d40bd59e17acaf47": {
-      "topic": "Technology Sector Rotation Risk Analysis UBP",
-      "item_ids": [
-        "3450b3ed316a"
-      ],
-      "created_at": "2026-05-29T09:53:39.434634+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "57cf168ab9bb2de3": {
-      "topic": "Fama Technologies AI Social Media Screening Patent",
-      "item_ids": [
-        "1947093ecfa5"
-      ],
-      "created_at": "2026-05-29T09:53:39.434634+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "0f2d308620be5bf1": {
       "topic": "Riot Fest 2026 Lineup Announcement",
       "item_ids": [
@@ -1496,7 +1441,25 @@
       "created_at": "2026-05-30T09:03:32.974664+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "0fe2f38df7e6d333": {
+      "topic": "Cybercrime Crew Hacks MyPillow Mike Lindell",
+      "item_ids": [
+        "3db48881348f"
+      ],
+      "created_at": "2026-05-30T10:52:02.068666+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "27820c9f4723892f": {
+      "topic": "Meta AI Pendant Smart Glasses Development",
+      "item_ids": [
+        "90bd2d3351f0"
+      ],
+      "created_at": "2026-05-30T10:52:02.068666+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T09:03:32.975686+00:00"
+  "last_checked": "2026-05-30T10:52:02.069745+00:00"
 }
