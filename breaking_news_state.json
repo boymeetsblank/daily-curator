@@ -1,17 +1,5 @@
 {
   "known_ids": [
-    "17c671330ca6",
-    "37b71a7ba36b",
-    "7c9fdcc2d35d",
-    "5b33554de544",
-    "be8d0929ad6c",
-    "478d5c2b2964",
-    "53f54e397639",
-    "ea744a427a5a",
-    "b16689dc6815",
-    "01cd27218a43",
-    "1e04f2f4afe1",
-    "2f7aa318ab65",
     "5817a44657dc",
     "1f0642b0a3ca",
     "0dba402b91db",
@@ -499,12 +487,21 @@
     "96776b495df8",
     "87d3e13805b5",
     "1d95abef6661",
-    "d7df5ff52949"
+    "d7df5ff52949",
+    "30a3f9315b4e",
+    "dde7d33bd4a2",
+    "1bb8475dbafe",
+    "d4e6bc81bf61",
+    "36bf76fd0238",
+    "0ad6b2b4e0ef",
+    "1cc8ad058121",
+    "f816130be961",
+    "a865f5b35451",
+    "b3ca39e18f96",
+    "53cfaa037e3c",
+    "9a35d628801e"
   ],
   "failed_ids": {
-    "b8a50a2e5d80": "2026-05-30T18:43:50.378578+00:00",
-    "9bf5a01e4708": "2026-05-30T18:43:50.378578+00:00",
-    "377c62254711": "2026-05-30T18:43:50.378578+00:00",
     "8c52b7507723": "2026-05-30T19:57:01.864429+00:00",
     "52fe2d8a7c11": "2026-05-30T19:57:01.864429+00:00",
     "a60df2a1871f": "2026-05-30T19:57:01.864429+00:00",
@@ -517,108 +514,13 @@
     "4f54dd187fdc": "2026-05-30T22:09:30.945042+00:00",
     "dc0ab7c8cab6": "2026-05-30T22:09:30.945042+00:00",
     "45a919a0e7e0": "2026-05-30T22:09:30.945042+00:00",
-    "390ad7abda09": "2026-05-30T22:09:30.945042+00:00"
+    "390ad7abda09": "2026-05-30T22:09:30.945042+00:00",
+    "f2a37dc1f13b": "2026-05-30T23:13:48.846118+00:00",
+    "bce891591a32": "2026-05-30T23:13:48.846118+00:00",
+    "589704aa8f2c": "2026-05-30T23:13:48.846118+00:00",
+    "8aa50225ed10": "2026-05-30T23:13:48.846118+00:00"
   },
   "live_clusters": {
-    "e7884fc5c747d523": {
-      "topic": "Nike Air Rift 2 Summit White Retro Release",
-      "item_ids": [
-        "7274c7747e59"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fa47a20ec51622e3": {
-      "topic": "Emmy Artisans Tools Feature Wednesday Beef Stranger Things",
-      "item_ids": [
-        "4b4b2273e6fd"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9affd8a4ffd912eb": {
-      "topic": "DIRECTV MySports Genre Pack Launch",
-      "item_ids": [
-        "3ad9e549e217"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "80d7d1064bac5b5f": {
-      "topic": "Megan Thee Stallion Tory Lanez Defamation Trial Blogger Payment",
-      "item_ids": [
-        "e0437eaab3c6"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d4fc3224b1c8dfdd": {
-      "topic": "Michael Jackson Songs Top Movie Songs Chart After Michael Premiere",
-      "item_ids": [
-        "456a1df399a7"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "845e6e69beb29b62": {
-      "topic": "Billy Joel 100th Madison Square Garden Residency Show Blu-ray DVD Release",
-      "item_ids": [
-        "a90d5d7897b1"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0415d09e83e3ab62": {
-      "topic": "Megan Thee Stallion Defamation Judgment Reinstated Milagro Gramz",
-      "item_ids": [
-        "cfce19e2f5bb"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9178ed85969d45b9": {
-      "topic": "The Birds Limited Series Sarah Snook Hitchcock Adaptation",
-      "item_ids": [
-        "4039b03b27cf"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "daa95c344a8ceeac": {
-      "topic": "Love Island USA Clarke Carraway Kensington Grey Signing",
-      "item_ids": [
-        "0978c66c292a"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "48d60d9f5ec246ad": {
-      "topic": "Paramount K-Pop Film Retitled Release Date Shift",
-      "item_ids": [
-        "c9d2cd3dcdd5"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "54a5c5859efc745f": {
-      "topic": "Coders Refusing Work Without AI Workplace Trend",
-      "item_ids": [
-        "62b1c2746533"
-      ],
-      "created_at": "2026-05-29T22:45:19.054333+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "abf5856a77cec9ba": {
       "topic": "Marcia Lucas Star Wars Editor Death Obituary",
       "item_ids": [
@@ -761,7 +663,8 @@
     "739484f2f3880589": {
       "topic": "Sorsby IU Hoosiers Betting History",
       "item_ids": [
-        "76dd3ba0be52"
+        "76dd3ba0be52",
+        "1cc8ad058121"
       ],
       "created_at": "2026-05-30T06:37:41.069447+00:00",
       "last_escalated_size": 0,
@@ -818,7 +721,8 @@
       "item_ids": [
         "28fc08128a6b",
         "9ac8b7e2ccd9",
-        "486c13867ff0"
+        "486c13867ff0",
+        "dde7d33bd4a2"
       ],
       "created_at": "2026-05-30T12:00:13.655098+00:00",
       "last_escalated_size": 3,
@@ -1097,7 +1001,8 @@
     "f04fcbd90a38ac78": {
       "topic": "Spurs vs Thunder NBA Western Conference Finals Game 7",
       "item_ids": [
-        "f329ab302ca3"
+        "f329ab302ca3",
+        "1bb8475dbafe"
       ],
       "created_at": "2026-05-30T18:44:18.178131+00:00",
       "last_escalated_size": 0,
@@ -1232,7 +1137,8 @@
     "e763841322df9c18": {
       "topic": "PSG Champions League Victory Official Merchandise",
       "item_ids": [
-        "3d70ababc219"
+        "3d70ababc219",
+        "d4e6bc81bf61"
       ],
       "created_at": "2026-05-30T21:02:08.653135+00:00",
       "last_escalated_size": 0,
@@ -1264,7 +1170,16 @@
       "created_at": "2026-05-30T22:10:00.945963+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "371359e1fb78359b": {
+      "topic": "Niall Horan Reflects on Liam Payne Death",
+      "item_ids": [
+        "30a3f9315b4e"
+      ],
+      "created_at": "2026-05-30T23:14:20.602768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T22:10:00.946987+00:00"
+  "last_checked": "2026-05-30T23:14:20.603912+00:00"
 }
