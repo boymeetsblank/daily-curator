@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "id": "b5743dd477d3",
+      "topic": "The New Balance 9060 Issues Autumnal Tones For Summer",
+      "traffic": "",
+      "detected_at": "2026-05-30T21:01:34.663349+00:00",
+      "search_url": "https://sneakernews.com/2026/05/30/new-balance-9060-breakfast-tea-angora-u90603eg/",
+      "source_name": "Sneaker News",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "9dbf98f2516e9eef"
+    },
+    {
+      "id": "9fd9b6f5cd9f",
+      "topic": "Morgan Wallen Flips Piano After Technical Glitch During ‘Sand In My Boots’ at Denver Concert",
+      "traffic": "",
+      "detected_at": "2026-05-30T21:01:34.663349+00:00",
+      "search_url": "https://www.billboard.com/music/music-news/morgan-wallen-flips-piano-sand-in-my-boots-glitch-denver-1236260822/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "a2f8b3461ef45435"
+    },
+    {
+      "id": "3d70ababc219",
+      "topic": "Score Official PSG Merch Online to Celebrate Paris Saint-Germain Champions League Win",
+      "traffic": "",
+      "detected_at": "2026-05-30T21:01:34.663349+00:00",
+      "search_url": "https://www.rollingstone.com/product-recommendations/style/buy-psg-paris-saint-germain-champions-league-winners-merch-1235570429/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "e763841322df9c18"
+    },
+    {
+      "id": "5ed5802a0237",
+      "topic": "‘Toy Story 5’ Has Swifties Speculating About Soundtrack News With Cryptic ‘TS’ Billboard",
+      "traffic": "",
+      "detected_at": "2026-05-30T21:01:34.663349+00:00",
+      "search_url": "https://deadline.com/2026/05/toy-story-5-swifties-speculating-ts-billboard-1236931161/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "5c0864f1af241d46"
+    },
+    {
+      "id": "fd7599370952",
+      "topic": "Saka",
+      "traffic": "##7 on X",
+      "detected_at": "2026-05-30T21:01:34.663349+00:00",
+      "search_url": "https://x.com/search?q=Saka&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "3743634db917",
       "topic": "Samsung Sets Immersive BTS Fan Activations for ‘Arirang’ World Tour",
       "traffic": "",
@@ -375,62 +429,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 5
-    },
-    {
-      "id": "0a312cac428b",
-      "topic": "The Nike Tiempo Streetgato Adds A Highlighter Pink Swoosh",
-      "traffic": "",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://sneakernews.com/2026/05/30/nike-tiempo-streetgato-grey-pink-iq2389-901/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "b7665581303d9030"
-    },
-    {
-      "id": "8d0885e41f9c",
-      "topic": "Hannah Waddingham on ‘Wicked’s’ Madame Morrible Rumors, Her New Action Series ‘Ride or Die’ and Stepping Back Into Rebecca’s Stilettos in ‘Ted Lasso’: ‘I Am Blessed’",
-      "traffic": "",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://variety.com/2026/tv/features/hannah-waddingham-wicked-rumors-ted-lasso-return-1236757634/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "965c496769bac08e"
-    },
-    {
-      "id": "1ceb718e3361",
-      "topic": "Kelly Curtis, Actress and Sister of Jamie Lee Curtis, Dead at 69",
-      "traffic": "",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://www.rollingstone.com/tv-movies/tv-movie-news/kelly-curtis-actress-jamie-lee-curtis-sister-obituary-1235570409/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "57beaa8c57c538d3"
-    },
-    {
-      "id": "1902f015f2bc",
-      "topic": "Is Luke Bryan’s New Song AI? We Ask the Songwriters",
-      "traffic": "",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-features/luke-bryan-fish-hunt-golf-drink-song-ai-accusations-1235570146/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "4a6c79c06ac8e03d"
-    },
-    {
-      "id": "860e0adeaf1d",
-      "topic": "Vanilla Ice, Milli Vanilli Defend Freedom 250 Performances: “Gonna Be An Epic Party”",
-      "traffic": "",
-      "detected_at": "2026-05-30T16:17:55.449505+00:00",
-      "search_url": "https://deadline.com/2026/05/vanilla-ice-milli-vanilli-defend-freedom-250-performances-1236931021/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "feef049be3d0ea7c"
     }
   ],
-  "last_checked": "2026-05-30T19:57:01.864429+00:00"
+  "last_checked": "2026-05-30T21:01:34.663349+00:00"
 }

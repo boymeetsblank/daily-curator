@@ -1,14 +1,5 @@
 {
   "known_ids": [
-    "56fc11a9d589",
-    "57b668162e51",
-    "e53a1c5b2e2a",
-    "ca006370d304",
-    "3914f58e3f6a",
-    "47b975907833",
-    "68f2dc41c2c8",
-    "b37943d9112d",
-    "7e1c1ac0e06e",
     "31de215199dc",
     "6a80db5133db",
     "03e6f73a62e6",
@@ -499,14 +490,18 @@
     "0a3380f0ef31",
     "f1beeb059204",
     "cd5178b26548",
-    "ca9feb94a11a"
+    "ca9feb94a11a",
+    "b5743dd477d3",
+    "9fd9b6f5cd9f",
+    "3d70ababc219",
+    "5ed5802a0237",
+    "fd7599370952",
+    "8b85de1f1049",
+    "e338a301262b",
+    "9bea864b085f",
+    "0f1d6ff4ae4d"
   ],
   "failed_ids": {
-    "02d3ce2ddebe": "2026-05-30T16:17:55.449505+00:00",
-    "9521d82d66fc": "2026-05-30T16:17:55.449505+00:00",
-    "8226fd244e8c": "2026-05-30T16:17:55.449505+00:00",
-    "59dfe851bf01": "2026-05-30T16:17:55.449505+00:00",
-    "4b7009bd8677": "2026-05-30T16:17:55.449505+00:00",
     "cad75cc21b4e": "2026-05-30T17:33:25.999591+00:00",
     "6a590811c9ca": "2026-05-30T17:33:25.999591+00:00",
     "5c6bcb3791a0": "2026-05-30T17:33:25.999591+00:00",
@@ -521,7 +516,10 @@
     "8c52b7507723": "2026-05-30T19:57:01.864429+00:00",
     "52fe2d8a7c11": "2026-05-30T19:57:01.864429+00:00",
     "a60df2a1871f": "2026-05-30T19:57:01.864429+00:00",
-    "aa2fc34bf9b2": "2026-05-30T19:57:01.864429+00:00"
+    "aa2fc34bf9b2": "2026-05-30T19:57:01.864429+00:00",
+    "9c20a65749b1": "2026-05-30T21:01:34.663349+00:00",
+    "29a49df512f8": "2026-05-30T21:01:34.663349+00:00",
+    "5c35af5dcec6": "2026-05-30T21:01:34.663349+00:00"
   },
   "live_clusters": {
     "439d23d4c79347a2": {
@@ -564,11 +562,19 @@
       "topic": "Toy Story Sequel Taylor Swift Involvement Easter Eggs Speculation",
       "item_ids": [
         "2c42c517045a",
-        "721f640eb4b6"
+        "721f640eb4b6",
+        "5ed5802a0237"
       ],
       "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-30T21:01:34.663349+00:00",
+      "picks_file": "picks/picks-2026-05-30-2102.md",
+      "why_text": "A cryptic 'TS' billboard campaign tied to Toy Story 5 has sent Swifties into full detective mode, with fans convinced Taylor Swift is involved in the upcoming Pixar sequel's soundtrack. It's a collision of two of the biggest cultural juggernauts right now \u2014 Swift's era of dominance and Disney/Pixar's nostalgia machine \u2014 and the ambiguity feels less accidental and more like a coordinated tease. If confirmed, it would be one of the most culturally loaded soundtrack announcements in years.",
+      "last_escalated_item_ids": [
+        "2c42c517045a",
+        "721f640eb4b6",
+        "5ed5802a0237"
+      ]
     },
     "b9da259cf8099012": {
       "topic": "Gold Panda Ton Up Album Announcement",
@@ -1412,7 +1418,34 @@
       "created_at": "2026-05-30T19:57:28.115889+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "9dbf98f2516e9eef": {
+      "topic": "New Balance 9060 Autumnal Colorway Release",
+      "item_ids": [
+        "b5743dd477d3"
+      ],
+      "created_at": "2026-05-30T21:02:08.653135+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a2f8b3461ef45435": {
+      "topic": "Morgan Wallen Piano Technical Glitch Denver Concert",
+      "item_ids": [
+        "9fd9b6f5cd9f"
+      ],
+      "created_at": "2026-05-30T21:02:08.653135+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e763841322df9c18": {
+      "topic": "PSG Champions League Victory Official Merchandise",
+      "item_ids": [
+        "3d70ababc219"
+      ],
+      "created_at": "2026-05-30T21:02:08.653135+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T19:57:28.117049+00:00"
+  "last_checked": "2026-05-30T21:02:14.294315+00:00"
 }
