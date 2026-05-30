@@ -1,6 +1,122 @@
 {
   "items": [
     {
+      "id": "7ba039742b83",
+      "topic": "Paul McCartney Looks Back at How His Family Grounded Him During Beatlemania",
+      "traffic": "",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/paul-mccartney-the-beatles-fame-beatlemania-1235570322/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "3a0d6edb788965a0"
+    },
+    {
+      "id": "02d3125840ee",
+      "topic": "Canes barrel into Cup Final with Game 5 blowout",
+      "traffic": "",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://www.espn.com/nhl/story/_/id/48916252/hurricanes-finish-canadiens-return-stanley-cup-final",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "e22161a59b52ef55"
+    },
+    {
+      "id": "fa20f22851cf",
+      "topic": "Grieving Andersen steps up in goal for Hurricanes",
+      "traffic": "",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://www.espn.com/nhl/story/_/id/48916977/canes-andersen-plays-heavy-heart-lemieux-death",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "e22161a59b52ef55"
+    },
+    {
+      "id": "5ce71801d3e0",
+      "topic": "Grant makes homer history in UCLA's WCWS rout",
+      "traffic": "",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://www.espn.com/college-sports/story/_/id/48917037/megan-grant-sets-ucla-record-91st-career-hr-wcws-rout-ark",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "d847498da65e9876"
+    },
+    {
+      "id": "76dd3ba0be52",
+      "topic": "Sorsby bet on IU at least 40 times as Hoosiers QB",
+      "traffic": "",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://www.espn.com/college-football/story/_/id/48909854/sorsby-placed-least-40-bets-indiana-football-hoosiers-qb",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "739484f2f3880589"
+    },
+    {
+      "id": "bc663e219b16",
+      "topic": "Parrots Are Video Calling Their Friends Now - WIRED Middle East",
+      "traffic": "",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFByOS1xdVpyNVNHYlRQY3BObTAyLVlEYW15UzdibXJ5SDRfeHcwamVTQ3phQXRmUkxLVzN5U1VXNGdlblByOWRUY2hZWGJSNmlxdlgwc1UxN0c4YVZHWWVnTUpXcnA2X0RQOEFBazFWalhKMjR1bzhYQ0tn?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "66af2bae8f06fdca"
+    },
+    {
+      "id": "2c6d426c37c8",
+      "topic": "Canes",
+      "traffic": "##1 on X",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://x.com/search?q=Canes&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "e492f2bd174e",
+      "topic": "#DreaminaOctoAIonthelot",
+      "traffic": "##2 on X",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://x.com/search?q=%23DreaminaOctoAIonthelot&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "390c547c391e",
+      "topic": "#OPLive",
+      "traffic": "##3 on X",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://x.com/search?q=%23OPLive&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "42adec4eda48",
+      "topic": "#SmackDown",
+      "traffic": "##4 on X",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://x.com/search?q=%23SmackDown&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "53bdb48528cf",
+      "topic": "Kennedy Center",
+      "traffic": "##5 on X",
+      "detected_at": "2026-05-30T06:37:08.624069+00:00",
+      "search_url": "https://x.com/search?q=Kennedy+Center&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "dc39630c842c",
       "topic": "Music Mogul Clive Davis Hospitalized Following Respiratory Issue",
       "traffic": "",
@@ -307,125 +423,7 @@
       "source_type": "feed",
       "haiku_score": 7,
       "cluster_id": "9178ed85969d45b9"
-    },
-    {
-      "id": "62b1c2746533",
-      "topic": "Coders are refusing to work without AI — and that could come back to bite them",
-      "traffic": "",
-      "detected_at": "2026-05-29T22:44:50.607336+00:00",
-      "search_url": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "54a5c5859efc745f"
-    },
-    {
-      "id": "d4c0d67cd465",
-      "topic": "Victoria public library introduces 3D printing machine for technology access and creativity - crossroadstoday.com",
-      "traffic": "",
-      "detected_at": "2026-05-29T22:44:50.607336+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPYy1TTnhkWlgwanJPR0JEUlpMa21vTEtJYi1sem9xTEZyMlJuZXpzcXdmdmlZVkEyaEdJZFpBWVNSdy11MFB5TUN3Y2VINTkzWFNCb1hQS09EMmtKdVFqZUdkaDVNMzF2eTEzYVhZSXY3dlExNjFkazkwMGRzNU03Sld0amFRd3U4azBEQjg5djNYQWdKWU01ZkZJSmVYcDNQZ2c5d1h6SllUSzNnRFNKMHR0TFppYm5YT3dwTWNjb0UwOVcxVnNxcVZGdzFDTXVKdzFxX09NV3Rncm9NX25zSWp6eXFrM21UZ2xfbjdVTnd6M2ZwOElfbWEzbG5XeWY4MkFieG9yaVAtUUdZcDhvOTdGU2RaNE1T?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "65b69c336298",
-      "topic": "Why POET Technologies Stock Keeps Falling - The Motley Fool",
-      "traffic": "",
-      "detected_at": "2026-05-29T22:44:50.607336+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcGd2WkJad3IzVUFWS0hyUWpOeEN6UGVpejRqaFdQZTNiNlZlSlcyMEhTRVFLbTNLbVhvTXdoaTBjUGRrc0VOc185N2pNSE9icnhrWE9PRE5NMjR2dzVjWTBRNFhlaF9YMnp6ZGUtOHd4OFdBZzR4YTBQUG92dm9EczBpWUJKSEVFMFd6Ug?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "20854f51b79c",
-      "topic": "The Nike Air Max Plus Uncages Another “Scorpion” Colorway",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://sneakernews.com/2026/05/29/nike-air-max-plus-scorpion-im9624-001/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "439d23d4c79347a2"
-    },
-    {
-      "id": "4f277ea3bf79",
-      "topic": "The Nike Total 90 III Gets Another Fold-Over Tongue Look In “Sail”",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://sneakernews.com/2026/05/29/nike-total-90-sail-gum-light-brown-black-light-khaki-io2389-100/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "6da70ae079411163"
-    },
-    {
-      "id": "2a8e3f1b857e",
-      "topic": "The New Balance 993 Returns In Essential “Triple Black”",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://sneakernews.com/2026/05/29/new-balance-993-triple-black-u993bl/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "8f1124462c7dc212"
-    },
-    {
-      "id": "799349c85dc0",
-      "topic": "Everybody Loves Grogu: How ‘Star Wars’ Artisans Brought the ‘Rascally’ Baby Yoda To Life",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://variety.com/2026/film/features/grogu-design-star-wars-baby-yoda-the-mandalorian-1236762425/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "3c91805111512bab"
-    },
-    {
-      "id": "2c42c517045a",
-      "topic": "‘Toy Story’ or Tay Story? Easter Eggs in New ‘TS’ Billboard Campaign Heighten Fans’ Belief That Taylor Swift Is Involved in Pixar Sequel",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://variety.com/2026/music/news/toy-story-5-taylor-swift-billboards-rumors-easter-eggs-1236762589/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "5c0864f1af241d46"
-    },
-    {
-      "id": "bdc5f7f4b4bf",
-      "topic": "‘Backrooms’ Director Kane Parsons Explains It All: Breaking Down Liminal Spaces, Why He Was Nervous His Work Might Get ‘Butchered by Suits’ and What Sequels Might Look Like",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://variety.com/2026/film/features/backrooms-explained-director-kane-parsons-sequels-1236760780/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8
-    },
-    {
-      "id": "daf709688e47",
-      "topic": "Gold Panda Readies New Album Ton Up",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://pitchfork.com/news/gold-panda-readies-new-album-ton-up/",
-      "source_name": "Pitchfork",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "b9da259cf8099012"
-    },
-    {
-      "id": "d865e75521ec",
-      "topic": "How Phoenix’s Rebel Lounge Took a Beloved, ‘Dingy’ Rock Club & Gave It New Life",
-      "traffic": "",
-      "detected_at": "2026-05-29T21:17:23.001035+00:00",
-      "search_url": "https://www.billboard.com/pro/indie-venue-of-the-month-rebel-lounge-phoenix/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "9e8021750b3f818e"
     }
   ],
-  "last_checked": "2026-05-30T03:34:49.625845+00:00"
+  "last_checked": "2026-05-30T06:37:08.624069+00:00"
 }

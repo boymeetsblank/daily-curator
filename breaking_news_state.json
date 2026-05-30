@@ -1,16 +1,5 @@
 {
   "known_ids": [
-    "da3dc6ff381b",
-    "5e917aee93b8",
-    "89ab6dc2ed72",
-    "05063096037a",
-    "18a77a7c1608",
-    "1cc872c669a3",
-    "9121f00bea36",
-    "ac227cf1928a",
-    "289f9ec44601",
-    "51db6fb36c24",
-    "cc9aa9ec1516",
     "b97fded2946c",
     "9614f39d4c4d",
     "d4ce7f402d92",
@@ -499,103 +488,35 @@
     "6226701659db",
     "54eebafbddd0",
     "4f9bdf60cc75",
-    "becf76921a9b"
+    "becf76921a9b",
+    "7ba039742b83",
+    "02d3125840ee",
+    "fa20f22851cf",
+    "5ce71801d3e0",
+    "76dd3ba0be52",
+    "bc663e219b16",
+    "2c6d426c37c8",
+    "e492f2bd174e",
+    "390c547c391e",
+    "42adec4eda48",
+    "53bdb48528cf"
   ],
   "failed_ids": {
-    "3511f4b2c840": "2026-05-29T23:56:36.653236+00:00",
-    "0e081e4a5016": "2026-05-29T23:56:36.653236+00:00",
-    "76dd3ba0be52": "2026-05-29T23:56:36.653236+00:00",
-    "64aad299fdf0": "2026-05-29T23:56:36.653236+00:00",
-    "a7b8696d72ee": "2026-05-29T23:56:36.653236+00:00",
-    "4e4f27ec31c8": "2026-05-29T23:56:36.653236+00:00",
-    "d5af5600a371": "2026-05-29T23:56:36.653236+00:00",
-    "72750fd2d2f2": "2026-05-29T23:56:36.653236+00:00",
-    "3e503b499df1": "2026-05-29T23:56:36.653236+00:00",
-    "dc7fc3c44de4": "2026-05-29T23:56:36.653236+00:00",
-    "737868eb28fe": "2026-05-29T23:56:36.653236+00:00",
     "3b9bca0db78f": "2026-05-30T03:34:49.625845+00:00",
     "5f19275149d5": "2026-05-30T03:34:49.625845+00:00",
     "3f8da55855eb": "2026-05-30T03:34:49.625845+00:00",
     "4cf948d56e31": "2026-05-30T03:34:49.625845+00:00",
     "1412c1dfd02f": "2026-05-30T03:34:49.625845+00:00",
     "9fc86404c079": "2026-05-30T03:34:49.625845+00:00",
-    "b8700e8cf71a": "2026-05-30T03:34:49.625845+00:00"
+    "b8700e8cf71a": "2026-05-30T03:34:49.625845+00:00",
+    "64aad299fdf0": "2026-05-30T06:37:08.624069+00:00",
+    "b4a79a438394": "2026-05-30T06:37:08.624069+00:00",
+    "d9ff7a1c56d2": "2026-05-30T06:37:08.624069+00:00",
+    "88ffd1831a3a": "2026-05-30T06:37:08.624069+00:00",
+    "5685362d9570": "2026-05-30T06:37:08.624069+00:00",
+    "add634f31a50": "2026-05-30T06:37:08.624069+00:00"
   },
   "live_clusters": {
-    "f97e24e85b3ca189": {
-      "topic": "Syd First Album in Four Years Announcement",
-      "item_ids": [
-        "409df3fcb4e6"
-      ],
-      "created_at": "2026-05-29T05:56:31.988714+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2b6d2fb7407f2a30": {
-      "topic": "New Music Friday Ariana Grande Labrinth aespa",
-      "item_ids": [
-        "62f7c109ed4b",
-        "6255ae3fe39f"
-      ],
-      "created_at": "2026-05-29T05:56:31.988714+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7f51a006801956ec": {
-      "topic": "Boards of Canada Inferno Track Release",
-      "item_ids": [
-        "b7051958011b"
-      ],
-      "created_at": "2026-05-29T05:56:31.988714+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "81652e4ca6121e9e": {
-      "topic": "Backrooms Kane Parsons Movie $9M Box Office",
-      "item_ids": [
-        "901866dcadba"
-      ],
-      "created_at": "2026-05-29T05:56:31.988714+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2cca5780f88c61a5": {
-      "topic": "Spurs vs Thunder Western Conference Finals Game 7",
-      "item_ids": [
-        "fad6a9dabc1b",
-        "2656dcec043c"
-      ],
-      "created_at": "2026-05-29T05:56:31.988714+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6b9aecc45137598b": {
-      "topic": "Claude Lemieux Hockey Legend Death Obituary",
-      "item_ids": [
-        "f07f30eea35c"
-      ],
-      "created_at": "2026-05-29T05:56:31.988714+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b52d4b85460559ce": {
-      "topic": "Knicks Robinson Broken Finger Injury",
-      "item_ids": [
-        "e44b134aa819"
-      ],
-      "created_at": "2026-05-29T05:56:31.988714+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f54ad1b3cf321e07": {
-      "topic": "Nvidia Billions Investment Emerging AI Technology",
-      "item_ids": [
-        "cf8f3329ec6b"
-      ],
-      "created_at": "2026-05-29T05:56:31.988714+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "aafaafd816ddd9c9": {
       "topic": "Maisie Peters ARIA Chart Success 'Florescence'",
       "item_ids": [
@@ -1525,7 +1446,53 @@
       "created_at": "2026-05-30T03:35:16.533419+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "3a0d6edb788965a0": {
+      "topic": "Paul McCartney Beatles Family Grounding Interview",
+      "item_ids": [
+        "7ba039742b83"
+      ],
+      "created_at": "2026-05-30T06:37:41.069447+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e22161a59b52ef55": {
+      "topic": "Hurricanes Stanley Cup Final Game 5",
+      "item_ids": [
+        "02d3125840ee",
+        "fa20f22851cf"
+      ],
+      "created_at": "2026-05-30T06:37:41.069447+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d847498da65e9876": {
+      "topic": "UCLA WCWS Grant Homer Performance",
+      "item_ids": [
+        "5ce71801d3e0"
+      ],
+      "created_at": "2026-05-30T06:37:41.069447+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "739484f2f3880589": {
+      "topic": "Sorsby IU Hoosiers Betting History",
+      "item_ids": [
+        "76dd3ba0be52"
+      ],
+      "created_at": "2026-05-30T06:37:41.069447+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "66af2bae8f06fdca": {
+      "topic": "Parrots Video Calling Technology Feature",
+      "item_ids": [
+        "bc663e219b16"
+      ],
+      "created_at": "2026-05-30T06:37:41.069447+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T03:35:16.534605+00:00"
+  "last_checked": "2026-05-30T06:37:41.070682+00:00"
 }
