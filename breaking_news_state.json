@@ -1,14 +1,5 @@
 {
   "known_ids": [
-    "31de215199dc",
-    "6a80db5133db",
-    "03e6f73a62e6",
-    "4b7b1122161a",
-    "c6f7fd12974e",
-    "cac892fc4984",
-    "e455519d3f34",
-    "ac573bcd1459",
-    "0fe0f9c0e74d",
     "17c671330ca6",
     "37b71a7ba36b",
     "7c9fdcc2d35d",
@@ -499,17 +490,18 @@
     "8b85de1f1049",
     "e338a301262b",
     "9bea864b085f",
-    "0f1d6ff4ae4d"
+    "0f1d6ff4ae4d",
+    "0783b2abb6ed",
+    "34b69998327e",
+    "b6fd04d690e3",
+    "37c73d600602",
+    "9e9e6e66e886",
+    "96776b495df8",
+    "87d3e13805b5",
+    "1d95abef6661",
+    "d7df5ff52949"
   ],
   "failed_ids": {
-    "cad75cc21b4e": "2026-05-30T17:33:25.999591+00:00",
-    "6a590811c9ca": "2026-05-30T17:33:25.999591+00:00",
-    "5c6bcb3791a0": "2026-05-30T17:33:25.999591+00:00",
-    "dc0ab7c8cab6": "2026-05-30T17:33:25.999591+00:00",
-    "01867783945c": "2026-05-30T17:33:25.999591+00:00",
-    "c60cd7b634ec": "2026-05-30T17:33:25.999591+00:00",
-    "aca2aed1bc2e": "2026-05-30T17:33:25.999591+00:00",
-    "6ad9a5f91e91": "2026-05-30T17:33:25.999591+00:00",
     "b8a50a2e5d80": "2026-05-30T18:43:50.378578+00:00",
     "9bf5a01e4708": "2026-05-30T18:43:50.378578+00:00",
     "377c62254711": "2026-05-30T18:43:50.378578+00:00",
@@ -519,216 +511,15 @@
     "aa2fc34bf9b2": "2026-05-30T19:57:01.864429+00:00",
     "9c20a65749b1": "2026-05-30T21:01:34.663349+00:00",
     "29a49df512f8": "2026-05-30T21:01:34.663349+00:00",
-    "5c35af5dcec6": "2026-05-30T21:01:34.663349+00:00"
+    "5c35af5dcec6": "2026-05-30T21:01:34.663349+00:00",
+    "ccd21af5af5e": "2026-05-30T22:09:30.945042+00:00",
+    "389bbf7e8089": "2026-05-30T22:09:30.945042+00:00",
+    "4f54dd187fdc": "2026-05-30T22:09:30.945042+00:00",
+    "dc0ab7c8cab6": "2026-05-30T22:09:30.945042+00:00",
+    "45a919a0e7e0": "2026-05-30T22:09:30.945042+00:00",
+    "390ad7abda09": "2026-05-30T22:09:30.945042+00:00"
   },
   "live_clusters": {
-    "439d23d4c79347a2": {
-      "topic": "Nike Air Max Plus Scorpion Colorway Release",
-      "item_ids": [
-        "20854f51b79c"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6da70ae079411163": {
-      "topic": "Nike Total 90 III Sail Fold-Over Tongue Release",
-      "item_ids": [
-        "4f277ea3bf79"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8f1124462c7dc212": {
-      "topic": "New Balance 993 Triple Black Release",
-      "item_ids": [
-        "2a8e3f1b857e"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3c91805111512bab": {
-      "topic": "Star Wars Grogu Baby Yoda Puppet Craftsmanship Feature",
-      "item_ids": [
-        "799349c85dc0"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c0864f1af241d46": {
-      "topic": "Toy Story Sequel Taylor Swift Involvement Easter Eggs Speculation",
-      "item_ids": [
-        "2c42c517045a",
-        "721f640eb4b6",
-        "5ed5802a0237"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-30T21:01:34.663349+00:00",
-      "picks_file": "picks/picks-2026-05-30-2102.md",
-      "why_text": "A cryptic 'TS' billboard campaign tied to Toy Story 5 has sent Swifties into full detective mode, with fans convinced Taylor Swift is involved in the upcoming Pixar sequel's soundtrack. It's a collision of two of the biggest cultural juggernauts right now \u2014 Swift's era of dominance and Disney/Pixar's nostalgia machine \u2014 and the ambiguity feels less accidental and more like a coordinated tease. If confirmed, it would be one of the most culturally loaded soundtrack announcements in years.",
-      "last_escalated_item_ids": [
-        "2c42c517045a",
-        "721f640eb4b6",
-        "5ed5802a0237"
-      ]
-    },
-    "b9da259cf8099012": {
-      "topic": "Gold Panda Ton Up Album Announcement",
-      "item_ids": [
-        "daf709688e47"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9e8021750b3f818e": {
-      "topic": "Rebel Lounge Phoenix Rock Club Renovation",
-      "item_ids": [
-        "d865e75521ec"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f42a8fbad35674bc": {
-      "topic": "Jay Wheeler La Voz Favorita Album Latin Music Release",
-      "item_ids": [
-        "5001f294daa3"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e05b93d3e0a4d541": {
-      "topic": "Clint Black Country Music Memoir Book Release",
-      "item_ids": [
-        "ac6f391ad160"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bf1ba72da8140f17": {
-      "topic": "Maluma Shifts Away From American Collaborations Focus",
-      "item_ids": [
-        "69184feaa0bc"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b303cf2c8333be88": {
-      "topic": "Latto Baby Gender Reveal Big Mama Album 21 Savage",
-      "item_ids": [
-        "ddac40d323c4"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "019ef9ee2bd12751": {
-      "topic": "Becky G Santana Mi Gran Amor ICE Raids Anthem",
-      "item_ids": [
-        "26991297a6bc"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "85bb4c65d280776a": {
-      "topic": "Emily Blunt AI Alien Voice Disclosure Day",
-      "item_ids": [
-        "07b1b8128446"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f5410d59c4274972": {
-      "topic": "Jon Tenney FX Cry Wolf Limited Series Cast",
-      "item_ids": [
-        "f75fb0966d48"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "30d96c5e61276f49": {
-      "topic": "Evoke Entertainment $35M Production Financing Facility",
-      "item_ids": [
-        "5019ee7131cf"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "820fd6ff02b66e5b": {
-      "topic": "A Good Girl's Guide to Murder Season Soundtrack",
-      "item_ids": [
-        "a3222359d2e4"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4987df6d394ca576": {
-      "topic": "Good Advice Cupcake AI Animation Amazon Creator Dispute",
-      "item_ids": [
-        "0f34f5cd0b9e"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8af8ea526c01928e": {
-      "topic": "Meta European Contractor Layoffs Protest",
-      "item_ids": [
-        "347e0b10be3b"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fbadc19d2d09f9f0": {
-      "topic": "Fable Game Release Delay GTA VI",
-      "item_ids": [
-        "5640b885e3f7"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "054bda9add62bc44": {
-      "topic": "Software Stocks SaaS Rally Best Month Since 2001",
-      "item_ids": [
-        "0b3c3a09bf3c"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5be59584c421ea56": {
-      "topic": "SentinelOne Layoffs AI Investment Cybersecurity",
-      "item_ids": [
-        "2afb715771e8"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7657344c76500983": {
-      "topic": "AI Adoption Operational Challenges Corporate Implementation",
-      "item_ids": [
-        "c161469b7248"
-      ],
-      "created_at": "2026-05-29T21:17:57.930243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "e7884fc5c747d523": {
       "topic": "Nike Air Rift 2 Summit White Retro Release",
       "item_ids": [
@@ -1079,7 +870,8 @@
     "e701ca6439fe7f2b": {
       "topic": "Heated Rivalry Season 2 Announcement",
       "item_ids": [
-        "8b3c90013bad"
+        "8b3c90013bad",
+        "34b69998327e"
       ],
       "created_at": "2026-05-30T13:59:25.113836+00:00",
       "last_escalated_size": 0,
@@ -1445,7 +1237,34 @@
       "created_at": "2026-05-30T21:02:08.653135+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "c2ce370d124f4008": {
+      "topic": "Nike Shox R4 Green Camo Release",
+      "item_ids": [
+        "0783b2abb6ed"
+      ],
+      "created_at": "2026-05-30T22:10:00.945963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5dc2f2e471916abd": {
+      "topic": "YouTuber-Directed Films Box Office Weekend",
+      "item_ids": [
+        "b6fd04d690e3"
+      ],
+      "created_at": "2026-05-30T22:10:00.945963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5386a503b9e5e337": {
+      "topic": "Lamine Yamal Beats Headphones Announcement",
+      "item_ids": [
+        "37c73d600602"
+      ],
+      "created_at": "2026-05-30T22:10:00.945963+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T21:02:14.294315+00:00"
+  "last_checked": "2026-05-30T22:10:00.946987+00:00"
 }

@@ -1,6 +1,90 @@
 {
   "items": [
     {
+      "id": "0783b2abb6ed",
+      "topic": "Green Camo Appears On This Swooshless Nike Shox R4",
+      "traffic": "",
+      "detected_at": "2026-05-30T22:09:30.945042+00:00",
+      "search_url": "https://sneakernews.com/2026/05/30/nike-shox-r4-noble-green-team-kelly-green-rough-green-iq0636-300/",
+      "source_name": "Sneaker News",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "c2ce370d124f4008"
+    },
+    {
+      "id": "34b69998327e",
+      "topic": "Dan Levy Compares ‘Heated Rivalry’ & ‘Schitt’s Creek’ Successes & Advocates For Investing In Queer Voices: “Canada Saw Value In Them First”",
+      "traffic": "",
+      "detected_at": "2026-05-30T22:09:30.945042+00:00",
+      "search_url": "https://deadline.com/2026/05/dan-levy-heated-rivalry-schitts-creek-canada-success-1236931196/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "e701ca6439fe7f2b"
+    },
+    {
+      "id": "b6fd04d690e3",
+      "topic": "This weekend’s two biggest movies were both directed by YouTubers",
+      "traffic": "",
+      "detected_at": "2026-05-30T22:09:30.945042+00:00",
+      "search_url": "https://techcrunch.com/2026/05/30/this-weekends-two-biggest-movies-were-both-directed-by-youtubers/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "5dc2f2e471916abd"
+    },
+    {
+      "id": "37c73d600602",
+      "topic": "Lamine Yamal shares pictures teasing the new Beats headphones on the way",
+      "traffic": "",
+      "detected_at": "2026-05-30T22:09:30.945042+00:00",
+      "search_url": "https://www.engadget.com/2184302/lamine-yamal-shares-pictures-teasing-the-new-beats-headphones-on-the-way/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "5386a503b9e5e337"
+    },
+    {
+      "id": "9e9e6e66e886",
+      "topic": "Rich Paul",
+      "traffic": "##12 on X",
+      "detected_at": "2026-05-30T22:09:30.945042+00:00",
+      "search_url": "https://x.com/search?q=Rich+Paul&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "96776b495df8",
+      "topic": "Madden",
+      "traffic": "##13 on X",
+      "detected_at": "2026-05-30T22:09:30.945042+00:00",
+      "search_url": "https://x.com/search?q=Madden&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "87d3e13805b5",
+      "topic": "Coco",
+      "traffic": "##14 on X",
+      "detected_at": "2026-05-30T22:09:30.945042+00:00",
+      "search_url": "https://x.com/search?q=Coco&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "1d95abef6661",
+      "topic": "Martinelli",
+      "traffic": "##15 on X",
+      "detected_at": "2026-05-30T22:09:30.945042+00:00",
+      "search_url": "https://x.com/search?q=Martinelli&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "b5743dd477d3",
       "topic": "The New Balance 9060 Issues Autumnal Tones For Summer",
       "traffic": "",
@@ -345,91 +429,7 @@
       "source_type": "feed",
       "haiku_score": 6,
       "cluster_id": "4890af1689dac069"
-    },
-    {
-      "id": "3ffabc5abc63",
-      "topic": "Snap alums unveil Ghost Angels fund",
-      "traffic": "",
-      "detected_at": "2026-05-30T17:33:25.999591+00:00",
-      "search_url": "https://techcrunch.com/2026/05/30/snap-alums-unveil-ghost-angels-fund/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "ae7f5a59de07c4ba"
-    },
-    {
-      "id": "54225d41602f",
-      "topic": "‘What a joke’: Github Copilot’s new token-based billing spurs consternation among devs",
-      "traffic": "",
-      "detected_at": "2026-05-30T17:33:25.999591+00:00",
-      "search_url": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "2ae5b5c4396ec839"
-    },
-    {
-      "id": "cd380d86169c",
-      "topic": "Oscar-winning 'Star Wars' editor Marcia Lucas has died",
-      "traffic": "",
-      "detected_at": "2026-05-30T17:33:25.999591+00:00",
-      "search_url": "https://www.engadget.com/2184274/oscar-winning-star-wars-editor-marcia-lucas-has-died/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 9,
-      "cluster_id": "abf5856a77cec9ba"
-    },
-    {
-      "id": "77ca72074488",
-      "topic": "NASA readies the X-59 for its first supersonic flight, SpaceX's Starship grounded and more science stories",
-      "traffic": "",
-      "detected_at": "2026-05-30T17:33:25.999591+00:00",
-      "search_url": "https://www.engadget.com/2184257/nasa-x-59-first-supersonic-flight-spacex-starship-grounded-and-more-science-stories/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "8dd263e828456629"
-    },
-    {
-      "id": "a66758ace8e5",
-      "topic": "#FayeAtomLiveKperfume",
-      "traffic": "##11 on X",
-      "detected_at": "2026-05-30T17:33:25.999591+00:00",
-      "search_url": "https://x.com/search?q=%23FayeAtomLiveKperfume&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "946d93f48392",
-      "topic": "MADAME FIN X FAYEATOM LIVE",
-      "traffic": "##12 on X",
-      "detected_at": "2026-05-30T17:33:25.999591+00:00",
-      "search_url": "https://x.com/search?q=MADAME+FIN+X+FAYEATOM+LIVE&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "dc26fc9334c8",
-      "topic": "Marc Davis",
-      "traffic": "##13 on X",
-      "detected_at": "2026-05-30T17:33:25.999591+00:00",
-      "search_url": "https://x.com/search?q=Marc+Davis&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "92b44afd39e3",
-      "topic": "Mace",
-      "traffic": "##15 on X",
-      "detected_at": "2026-05-30T17:33:25.999591+00:00",
-      "search_url": "https://x.com/search?q=Mace&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
     }
   ],
-  "last_checked": "2026-05-30T21:01:34.663349+00:00"
+  "last_checked": "2026-05-30T22:09:30.945042+00:00"
 }
