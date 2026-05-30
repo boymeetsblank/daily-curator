@@ -1,21 +1,5 @@
 {
   "known_ids": [
-    "d10a63040a13",
-    "d44369b040e5",
-    "c8480f91000e",
-    "59d0fb9e3c02",
-    "836a0f5d8660",
-    "3b8d73e00f0d",
-    "3eee17bfd7e5",
-    "c100ff370efe",
-    "d73c2adfc401",
-    "2bc93e6d4c7f",
-    "02233afb32a8",
-    "0f63644e7bee",
-    "baf3281cc32c",
-    "566a27e6d7ae",
-    "d8d868171451",
-    "d94b8c8a8d88",
     "4352a3da49d1",
     "7292128a7f43",
     "1b78ddae1232",
@@ -499,11 +483,25 @@
     "29da2327d62a",
     "44a3e9fed2a1",
     "c018826815e5",
-    "e0765acda7ee"
+    "e0765acda7ee",
+    "0c033667619f",
+    "aa1c845cf68b",
+    "8b3c90013bad",
+    "4fd271260b06",
+    "ab2b3abb1532",
+    "9ac8b7e2ccd9",
+    "d4779b1f7677",
+    "1946e4e8bc26",
+    "5582587cdc0c",
+    "e603559b953c",
+    "6a374bfb8f9a",
+    "640d69474e3a",
+    "3ec6022a9d97",
+    "51d1970279cd",
+    "0e6161e32569",
+    "f9484cff4111"
   ],
   "failed_ids": {
-    "4acdefb74517": "2026-05-30T09:03:01.303871+00:00",
-    "18f61868e724": "2026-05-30T09:03:01.303871+00:00",
     "de4d8257d34b": "2026-05-30T10:51:31.838893+00:00",
     "f0806f2c66de": "2026-05-30T10:51:31.838893+00:00",
     "e923c93a4568": "2026-05-30T10:51:31.838893+00:00",
@@ -522,91 +520,19 @@
     "3a6ead3d380d": "2026-05-30T11:59:43.301555+00:00",
     "8ffe5d7decbf": "2026-05-30T11:59:43.301555+00:00",
     "4b697819b90e": "2026-05-30T11:59:43.301555+00:00",
-    "b2b66e5adbf1": "2026-05-30T11:59:43.301555+00:00"
+    "b2b66e5adbf1": "2026-05-30T11:59:43.301555+00:00",
+    "c522621d3e62": "2026-05-30T13:58:57.046403+00:00",
+    "43397507c382": "2026-05-30T13:58:57.046403+00:00",
+    "bc5a5e4a806d": "2026-05-30T13:58:57.046403+00:00",
+    "0a3ab2dda11e": "2026-05-30T13:58:57.046403+00:00",
+    "1472bac14cb5": "2026-05-30T13:58:57.046403+00:00",
+    "f59a59fe31cf": "2026-05-30T13:58:57.046403+00:00",
+    "1b2b13aa3bd4": "2026-05-30T13:58:57.046403+00:00",
+    "d41a918b6445": "2026-05-30T13:58:57.046403+00:00",
+    "949bf4160bf7": "2026-05-30T13:58:57.046403+00:00",
+    "18f61868e724": "2026-05-30T13:58:57.046403+00:00"
   },
   "live_clusters": {
-    "0f2d308620be5bf1": {
-      "topic": "Riot Fest 2026 Lineup Announcement",
-      "item_ids": [
-        "e60658576fa3",
-        "794abfb09851"
-      ],
-      "created_at": "2026-05-29T12:42:47.235946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c7425eb5a77ca501": {
-      "topic": "CMAT Body-Shaming Comments BBC Radio 1 Big Weekend",
-      "item_ids": [
-        "d96decc3a27a"
-      ],
-      "created_at": "2026-05-29T12:42:47.235946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8fd1cbedf8c4f084": {
-      "topic": "Noah Kahan Out of the Blue Festival 2027 Lineup",
-      "item_ids": [
-        "a902f2a2f4d9"
-      ],
-      "created_at": "2026-05-29T12:42:47.235946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a3480fcd897e9840": {
-      "topic": "AI Memory Chip Startup $135M Funding",
-      "item_ids": [
-        "95bb06f5125a"
-      ],
-      "created_at": "2026-05-29T12:42:47.235946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "076007f53f23abd5": {
-      "topic": "Fitbit Air Pope AI Criticism Podcast Discussion",
-      "item_ids": [
-        "4b75f78271b1"
-      ],
-      "created_at": "2026-05-29T12:42:47.235946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f8777922564dcc24": {
-      "topic": "Rivian R2 Electric SUV June 9 Launch",
-      "item_ids": [
-        "69eb659b4563"
-      ],
-      "created_at": "2026-05-29T12:42:47.235946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8b1b961dfe10fae9": {
-      "topic": "Massive Lord of the Rings Crowd Simulation Software Free Release",
-      "item_ids": [
-        "811c46fb3d64"
-      ],
-      "created_at": "2026-05-29T12:42:47.235946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5a7dae0e780f9372": {
-      "topic": "Dan Ives Anthropic Growth AI Rally Analysis",
-      "item_ids": [
-        "fb538ed06f35"
-      ],
-      "created_at": "2026-05-29T12:42:47.235946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "92edbacf65e470e0": {
-      "topic": "AI Chip Memory Technology Company High Margin Analysis",
-      "item_ids": [
-        "b56a900435aa"
-      ],
-      "created_at": "2026-05-29T12:42:47.235946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "53591f531f46176c": {
       "topic": "LEGO Nike Dunk Low Bright Concord Collaboration",
       "item_ids": [
@@ -989,7 +915,8 @@
     "722de3277bef48c3": {
       "topic": "Pope AI Criticism Technology Limitations Discussion",
       "item_ids": [
-        "ed9ecf47f42c"
+        "ed9ecf47f42c",
+        "640d69474e3a"
       ],
       "created_at": "2026-05-29T19:13:12.933208+00:00",
       "last_escalated_size": 0,
@@ -1295,7 +1222,8 @@
     "abf5856a77cec9ba": {
       "topic": "Marcia Lucas Star Wars Editor Death Obituary",
       "item_ids": [
-        "3f80831f496f"
+        "3f80831f496f",
+        "3ec6022a9d97"
       ],
       "created_at": "2026-05-29T23:57:03.617619+00:00",
       "last_escalated_size": 0,
@@ -1395,7 +1323,8 @@
     "3a0d6edb788965a0": {
       "topic": "Paul McCartney Beatles Family Grounding Interview",
       "item_ids": [
-        "7ba039742b83"
+        "7ba039742b83",
+        "aa1c845cf68b"
       ],
       "created_at": "2026-05-30T06:37:41.069447+00:00",
       "last_escalated_size": 0,
@@ -1477,7 +1406,8 @@
     "5173d0c964809c26": {
       "topic": "'Backrooms' Internet Horror Myth Film Adaptation",
       "item_ids": [
-        "28fc08128a6b"
+        "28fc08128a6b",
+        "9ac8b7e2ccd9"
       ],
       "created_at": "2026-05-30T12:00:13.655098+00:00",
       "last_escalated_size": 0,
@@ -1509,7 +1439,25 @@
       "created_at": "2026-05-30T12:00:13.655098+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "28491ecd70ddf866": {
+      "topic": "Frankie Valli Concert Cancellation Health Focus",
+      "item_ids": [
+        "0c033667619f"
+      ],
+      "created_at": "2026-05-30T13:59:25.113836+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e701ca6439fe7f2b": {
+      "topic": "Heated Rivalry Season 2 Announcement",
+      "item_ids": [
+        "8b3c90013bad"
+      ],
+      "created_at": "2026-05-30T13:59:25.113836+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T12:00:13.655958+00:00"
+  "last_checked": "2026-05-30T13:59:25.114995+00:00"
 }
