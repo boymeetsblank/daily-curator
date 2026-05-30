@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "2d59e65512f7",
-    "a12ee121d46b",
-    "9c57220caf7e",
-    "2e73f3c512f2",
-    "aef95ed50564",
-    "3bb425fa4e68",
-    "7ac32817d0c1",
-    "ee3f0fa99c6e",
-    "16a0238ae6d4",
-    "657abec023ff",
-    "68fce15c6e47",
-    "00f755e90417",
-    "721e3a147dba",
-    "badc4f964b2a",
-    "6aa038b51455",
     "36fee744e624",
     "c344200809d7",
     "6ebf061851c5",
@@ -499,14 +484,24 @@
     "7b0a44e37a35",
     "350d28837002",
     "25f2c841ef00",
-    "2e5e04d008d7"
+    "2e5e04d008d7",
+    "0a312cac428b",
+    "8d0885e41f9c",
+    "1ceb718e3361",
+    "1902f015f2bc",
+    "860e0adeaf1d",
+    "eb494e884284",
+    "75d6f0e4ec70",
+    "361533e64698",
+    "efe0c0c4c881",
+    "15550bd28489",
+    "4378ade99089",
+    "e0c502dfc0eb",
+    "ec7e96b20fa8",
+    "17a0bc553312",
+    "be083d6afa17"
   ],
   "failed_ids": {
-    "31ea9ae09eaa": "2026-05-30T11:59:43.301555+00:00",
-    "3a6ead3d380d": "2026-05-30T11:59:43.301555+00:00",
-    "8ffe5d7decbf": "2026-05-30T11:59:43.301555+00:00",
-    "4b697819b90e": "2026-05-30T11:59:43.301555+00:00",
-    "b2b66e5adbf1": "2026-05-30T11:59:43.301555+00:00",
     "c522621d3e62": "2026-05-30T13:58:57.046403+00:00",
     "43397507c382": "2026-05-30T13:58:57.046403+00:00",
     "bc5a5e4a806d": "2026-05-30T13:58:57.046403+00:00",
@@ -519,7 +514,12 @@
     "18f61868e724": "2026-05-30T13:58:57.046403+00:00",
     "18c4dcc1029a": "2026-05-30T15:16:21.419495+00:00",
     "7f571921bcb0": "2026-05-30T15:16:21.419495+00:00",
-    "31ca8503e38c": "2026-05-30T15:16:21.419495+00:00"
+    "31ca8503e38c": "2026-05-30T15:16:21.419495+00:00",
+    "02d3ce2ddebe": "2026-05-30T16:17:55.449505+00:00",
+    "9521d82d66fc": "2026-05-30T16:17:55.449505+00:00",
+    "8226fd244e8c": "2026-05-30T16:17:55.449505+00:00",
+    "59dfe851bf01": "2026-05-30T16:17:55.449505+00:00",
+    "4b7009bd8677": "2026-05-30T16:17:55.449505+00:00"
   },
   "live_clusters": {
     "53591f531f46176c": {
@@ -859,7 +859,8 @@
     "88d9acd443edfc1e": {
       "topic": "Google Gemini Spark AI Relationship Analysis Hands-On",
       "item_ids": [
-        "c6470a4d683b"
+        "c6470a4d683b",
+        "efe0c0c4c881"
       ],
       "created_at": "2026-05-29T19:13:12.933208+00:00",
       "last_escalated_size": 0,
@@ -1212,11 +1213,18 @@
       "topic": "Marcia Lucas Star Wars Editor Death Obituary",
       "item_ids": [
         "3f80831f496f",
-        "3ec6022a9d97"
+        "3ec6022a9d97",
+        "75d6f0e4ec70"
       ],
       "created_at": "2026-05-29T23:57:03.617619+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-30T16:17:55.449505+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "3f80831f496f",
+        "3ec6022a9d97",
+        "75d6f0e4ec70"
+      ]
     },
     "f9c3231690967446": {
       "topic": "Deli Boys Season 2 Character Romance",
@@ -1377,7 +1385,8 @@
     "27820c9f4723892f": {
       "topic": "Meta AI Pendant Smart Glasses Development",
       "item_ids": [
-        "90bd2d3351f0"
+        "90bd2d3351f0",
+        "361533e64698"
       ],
       "created_at": "2026-05-30T10:52:02.068666+00:00",
       "last_escalated_size": 0,
@@ -1491,7 +1500,52 @@
       "created_at": "2026-05-30T15:16:50.720447+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b7665581303d9030": {
+      "topic": "Nike Tiempo Streetgato Highlighter Pink Release",
+      "item_ids": [
+        "0a312cac428b"
+      ],
+      "created_at": "2026-05-30T16:18:29.612231+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "965c496769bac08e": {
+      "topic": "Hannah Waddingham Ted Lasso Ride or Die New Series",
+      "item_ids": [
+        "8d0885e41f9c"
+      ],
+      "created_at": "2026-05-30T16:18:29.612231+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "57beaa8c57c538d3": {
+      "topic": "Kelly Curtis Actress Death Obituary",
+      "item_ids": [
+        "1ceb718e3361"
+      ],
+      "created_at": "2026-05-30T16:18:29.612231+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4a6c79c06ac8e03d": {
+      "topic": "Luke Bryan AI Song Controversy Songwriters",
+      "item_ids": [
+        "1902f015f2bc"
+      ],
+      "created_at": "2026-05-30T16:18:29.612231+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "feef049be3d0ea7c": {
+      "topic": "Vanilla Ice Milli Vanilli Freedom 250 Concert",
+      "item_ids": [
+        "860e0adeaf1d"
+      ],
+      "created_at": "2026-05-30T16:18:29.612231+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T15:16:50.721596+00:00"
+  "last_checked": "2026-05-30T16:18:29.633942+00:00"
 }
