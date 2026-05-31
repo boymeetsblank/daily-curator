@@ -1,14 +1,5 @@
 {
   "known_ids": [
-    "0ee334a557d2",
-    "f3f6a69187ad",
-    "6019361e44c6",
-    "9b7294073b29",
-    "cdef3ba61195",
-    "92d955927505",
-    "78f7a05edcb4",
-    "1af10f9526f6",
-    "2278e403c73f",
     "215f2c4289ca",
     "b1edf888124c",
     "dd8851c816e7",
@@ -499,7 +490,16 @@
     "1e9bf278d3de",
     "636c24d36119",
     "9f15bfe819b1",
-    "f9154b3fd9bb"
+    "f9154b3fd9bb",
+    "eb237243bbcd",
+    "5633ac982f17",
+    "3e476249ebcc",
+    "8b053820b162",
+    "f2c9d25ea0a3",
+    "13bc915818a9",
+    "6a09065bfdae",
+    "56ea29c6cf34",
+    "2cda1670779a"
   ],
   "failed_ids": {
     "2022057dc42a": "2026-05-31T10:25:47.022545+00:00",
@@ -513,65 +513,14 @@
     "77f0f5c31ec1": "2026-05-31T10:25:47.022545+00:00",
     "ace71dc82772": "2026-05-31T11:56:59.620908+00:00",
     "575f993c77db": "2026-05-31T11:56:59.620908+00:00",
-    "d596877ac3c4": "2026-05-31T11:56:59.620908+00:00"
+    "d596877ac3c4": "2026-05-31T11:56:59.620908+00:00",
+    "6b05dbe7eb27": "2026-05-31T13:49:38.031359+00:00",
+    "ffafe6a022ad": "2026-05-31T13:49:38.031359+00:00",
+    "ae10069f0e29": "2026-05-31T13:49:38.031359+00:00",
+    "64ea5337a3d6": "2026-05-31T13:49:38.031359+00:00",
+    "ea03008e1bbc": "2026-05-31T13:49:38.031359+00:00"
   },
   "live_clusters": {
-    "d5fade47d687ac0b": {
-      "topic": "Keychron K2 HE Concrete Edition Keyboard Review",
-      "item_ids": [
-        "fd059a847111"
-      ],
-      "created_at": "2026-05-30T12:00:13.655098+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5173d0c964809c26": {
-      "topic": "'Backrooms' Internet Horror Myth Film Adaptation",
-      "item_ids": [
-        "28fc08128a6b",
-        "9ac8b7e2ccd9",
-        "486c13867ff0",
-        "dde7d33bd4a2"
-      ],
-      "created_at": "2026-05-30T12:00:13.655098+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-30T18:43:50.378578+00:00",
-      "picks_file": "picks/picks-2026-05-30-1844.md",
-      "why_text": "The surprise box office performance of a film based on a creepypasta internet myth is sending a loud signal to Hollywood: niche online lore has a ravenous, built-in audience that studios keep underestimating. The Backrooms \u2014 a liminal horror concept born from a single 2019 4chan post and turbocharged by YouTube \u2014 has now outperformed films with far bigger budgets and IP recognition. This is less about one film and more about a generation that grew up with internet mythology treating it with the same reverence older audiences gave Stephen King.",
-      "last_escalated_item_ids": [
-        "28fc08128a6b",
-        "9ac8b7e2ccd9",
-        "486c13867ff0"
-      ]
-    },
-    "1b4628879cae2b0c": {
-      "topic": "Indie Games Releases Mina the Hollower Sims Alternative",
-      "item_ids": [
-        "b5d6140c247c"
-      ],
-      "created_at": "2026-05-30T12:00:13.655098+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e89e10c2bdf0ba6e": {
-      "topic": "Schools Shifting to Analog Learning in AI Era",
-      "item_ids": [
-        "655bf7058498",
-        "b8c61e3e8f33"
-      ],
-      "created_at": "2026-05-30T12:00:13.655098+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5fb0068e19146b64": {
-      "topic": "Pangram Problem Typography Language Technology",
-      "item_ids": [
-        "dd3a0ecdc593"
-      ],
-      "created_at": "2026-05-30T12:00:13.655098+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "28491ecd70ddf866": {
       "topic": "Frankie Valli Concert Cancellation Health Focus",
       "item_ids": [
@@ -1240,7 +1189,43 @@
       "created_at": "2026-05-31T11:57:29.547957+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "a93504496b78287e": {
+      "topic": "Meet the Press Live-Event Franchise Launch",
+      "item_ids": [
+        "eb237243bbcd"
+      ],
+      "created_at": "2026-05-31T13:50:06.888242+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b8fd3e1904676271": {
+      "topic": "Leonardo DiCaprio AI Advocacy Environmental Position",
+      "item_ids": [
+        "5633ac982f17"
+      ],
+      "created_at": "2026-05-31T13:50:06.888242+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5e30b7f553c85901": {
+      "topic": "Vega$ Documentary Steroids Swimmers Business Investigation",
+      "item_ids": [
+        "3e476249ebcc"
+      ],
+      "created_at": "2026-05-31T13:50:06.888242+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f1bcaaa80348ca2e": {
+      "topic": "Tokenmaxxing AI Use Regulatory Scrutiny",
+      "item_ids": [
+        "8b053820b162"
+      ],
+      "created_at": "2026-05-31T13:50:06.888242+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T11:57:29.550755+00:00"
+  "last_checked": "2026-05-31T13:50:06.889406+00:00"
 }

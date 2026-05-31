@@ -1,6 +1,100 @@
 {
   "items": [
     {
+      "id": "eb237243bbcd",
+      "topic": "‘Meet the Press’ Launches Live-Event Franchise With ‘Moment’ Conversations",
+      "traffic": "",
+      "detected_at": "2026-05-31T13:49:38.031359+00:00",
+      "search_url": "https://variety.com/2026/tv/news/meet-the-press-live-events-moment-kristen-welker-nbc-news-1236763334/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "a93504496b78287e"
+    },
+    {
+      "id": "5633ac982f17",
+      "topic": "Leo Shows He’s the Planet’s Pope by Taking on AI",
+      "traffic": "",
+      "detected_at": "2026-05-31T13:49:38.031359+00:00",
+      "search_url": "https://www.rollingstone.com/politics/political-commentary/pope-leo-xiv-encyclical-ai-planet-1235569872/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "b8fd3e1904676271"
+    },
+    {
+      "id": "3e476249ebcc",
+      "topic": "What happens in Vega$: steroids, swimmers, and a billion-dollar hustle",
+      "traffic": "",
+      "detected_at": "2026-05-31T13:49:38.031359+00:00",
+      "search_url": "https://techcrunch.com/2026/05/31/i-went-to-the-so-called-steroid-olympics-to-understand-why-silicon-valley-is-obsessed-with-peptides/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "5e30b7f553c85901"
+    },
+    {
+      "id": "8b053820b162",
+      "topic": "‘Tokenmaxxing’ AI Use Is Now Under Scrutiny | Technology for May 31 - WSJ",
+      "traffic": "",
+      "detected_at": "2026-05-31T13:49:38.031359+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1aT05sWjFtWjhsNVZFYmVoYkVvNWNSV1Q5WUNUVWkyNnBHZXh3SzV0X1JySjlMQWxSMUViNGVDd2tJUUFBdlRiM1hKbWxNenk5SkhLNzRMSFpBdWJ4enFiLWZNT0lPcUU?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "f1bcaaa80348ca2e"
+    },
+    {
+      "id": "f2c9d25ea0a3",
+      "topic": "Foster",
+      "traffic": "##16 on X",
+      "detected_at": "2026-05-31T13:49:38.031359+00:00",
+      "search_url": "https://x.com/search?q=Foster&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "13bc915818a9",
+      "topic": "Ajay",
+      "traffic": "##17 on X",
+      "detected_at": "2026-05-31T13:49:38.031359+00:00",
+      "search_url": "https://x.com/search?q=Ajay&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "6a09065bfdae",
+      "topic": "Cason Wallace",
+      "traffic": "##18 on X",
+      "detected_at": "2026-05-31T13:49:38.031359+00:00",
+      "search_url": "https://x.com/search?q=Cason+Wallace&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "56ea29c6cf34",
+      "topic": "Shock",
+      "traffic": "##19 on X",
+      "detected_at": "2026-05-31T13:49:38.031359+00:00",
+      "search_url": "https://x.com/search?q=Shock&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "2cda1670779a",
+      "topic": "Cancun",
+      "traffic": "##20 on X",
+      "detected_at": "2026-05-31T13:49:38.031359+00:00",
+      "search_url": "https://x.com/search?q=Cancun&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "9d8caf91100b",
       "topic": "WCF win gets Wemby closer to 'childhood dream'",
       "traffic": "",
@@ -336,103 +430,7 @@
       "source_type": "feed",
       "haiku_score": 6,
       "cluster_id": "c05853cf87e60d2e"
-    },
-    {
-      "id": "b7e0533d94e6",
-      "topic": "Alibaba signs 6-year AI deal with Uefa, will bring 360 replay tech to major events - South China Morning Post",
-      "traffic": "",
-      "detected_at": "2026-05-31T04:55:14.582204+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQckhrOUF6YUpZcE9hMzBKUG5FeEFnRl9EaEltMUs3cDJsd2lwRjViaTQ3X21KMXZBVFVWVEZJRS15UmxueHA5S0pDbzJseVFCRFg5T2diY0plV19nVnMtZ2ZDaHlWVUxTREJWM1ZNbHdGQzg0aEs3cGlkYjNWUFJaZmczVXR6dnVnU3lLRGcwM1NKZExucExSLWtyam5ScGpsRWpUbHlTa0N1Q2d2QWl6aE5vazl0eXpvUVh2VU1CM0trTkRhRFVqZl83VdIBywFBVV95cUxPdmpVMkQ4Q0NVZ21Xc3J5Tl96RHFsN1h1VDVCSDJoYVV2aWE4NXpnVy02RldHLVVHZjFFMXNNbW4tal93cVFocnVHX2o1bmNpZnh3c2dqclI5MzNsTnBSVFNzSS1DTURYVDNnYm9XWkkySkt0dWtNNzlxQ2pjcWhTZXNISWVObngyckd2QW9SeWl0V09xRDMwb2NIYkszM0E3MXBRajRzekludElpRWJJR2pFaGhMSkZYdDZnSzFGMmxRd3g3SzJUYUNUQQ?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "f5a9ceb6021ca50b"
-    },
-    {
-      "id": "0e842a92b454",
-      "topic": "Declan Rice",
-      "traffic": "##27 on X",
-      "detected_at": "2026-05-31T04:55:14.582204+00:00",
-      "search_url": "https://x.com/search?q=Declan+Rice&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "c5f35af93b8c",
-      "topic": "THANK YOU PSG",
-      "traffic": "##28 on X",
-      "detected_at": "2026-05-31T04:55:14.582204+00:00",
-      "search_url": "https://x.com/search?q=THANK+YOU+PSG&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6,
-      "cluster_id": "e763841322df9c18"
-    },
-    {
-      "id": "b0be3b84d552",
-      "topic": "Potapova",
-      "traffic": "##29 on X",
-      "detected_at": "2026-05-31T04:55:14.582204+00:00",
-      "search_url": "https://x.com/search?q=Potapova&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "f7f24b3894e1",
-      "topic": "Kvara",
-      "traffic": "##30 on X",
-      "detected_at": "2026-05-31T04:55:14.582204+00:00",
-      "search_url": "https://x.com/search?q=Kvara&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "bab62f04bfd0",
-      "topic": "The Nike Air Max TL 2.5 Adds Flares Of “Bright Violet”",
-      "traffic": "",
-      "detected_at": "2026-05-31T00:15:39.696212+00:00",
-      "search_url": "https://sneakernews.com/2026/05/30/nike-air-max-tl-2-5-dark-smoke-grey-bright-violet-fz4110-015/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "2f2ad145bd503bf0"
-    },
-    {
-      "id": "36d61a874393",
-      "topic": "‘Love Island USA’ Dismisses a Cast Member for Using the N-Word — for the Second Year in a Row",
-      "traffic": "",
-      "detected_at": "2026-05-31T00:15:39.696212+00:00",
-      "search_url": "https://variety.com/2026/tv/news/love-island-usa-vasana-montgomery-n-word-1236763251/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "94783bae45a9f2ea"
-    },
-    {
-      "id": "8c0227523083",
-      "topic": "Michael De Luca Warns About the Danger of Hollywood Cutting Development Funds for Original Material: ‘If You Cut Too Deep Your Pipeline Dries Up’",
-      "traffic": "",
-      "detected_at": "2026-05-31T00:15:39.696212+00:00",
-      "search_url": "https://variety.com/2026/film/news/michael-de-luca-obsession-backrooms-warner-bros-new-line-1236763195/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "da385db2bf713d2c"
-    },
-    {
-      "id": "a7fa4c161202",
-      "topic": "Art Garfunkel, Jimmy Fallon & Busta Rhymes Among Charlie Puth’s Surprise Guests at Madison Square Garden",
-      "traffic": "",
-      "detected_at": "2026-05-31T00:15:39.696212+00:00",
-      "search_url": "https://www.billboard.com/music/music-news/charlie-puth-jimmy-fallon-art-garfunkel-nyc-concert-video-1236260848/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "d75a8e80ce1cbdf5"
     }
   ],
-  "last_checked": "2026-05-31T11:56:59.620908+00:00"
+  "last_checked": "2026-05-31T13:49:38.031359+00:00"
 }
