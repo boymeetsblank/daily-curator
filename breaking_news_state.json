@@ -1,13 +1,5 @@
 {
   "known_ids": [
-    "013f6abc3607",
-    "92463bc6a97c",
-    "a4afc5d444ce",
-    "3a6abf423b26",
-    "71625a5b2a60",
-    "9fcee08d7f34",
-    "5bc3aa9d0bef",
-    "1b48de97a68c",
     "e068403d1420",
     "51831dd26fdc",
     "873652407ff7",
@@ -499,7 +491,15 @@
     "938fab660e36",
     "d71ab846750f",
     "56d613cfd531",
-    "2f097c6f7765"
+    "2f097c6f7765",
+    "c1ffb262fe51",
+    "63559a06dd53",
+    "5ebe7b67b011",
+    "2167b291d16b",
+    "4126c4f9285a",
+    "8cca6962aafe",
+    "7a25460b5d68",
+    "4f39781333c9"
   ],
   "failed_ids": {
     "6b05dbe7eb27": "2026-05-31T13:49:38.031359+00:00",
@@ -518,118 +518,20 @@
     "50f20582becf": "2026-05-31T16:22:07.781779+00:00",
     "0e76567d72f8": "2026-05-31T16:22:07.781779+00:00",
     "e8f4c0e68b7a": "2026-05-31T16:22:07.781779+00:00",
-    "878d4b1c4505": "2026-05-31T16:22:07.781779+00:00"
+    "878d4b1c4505": "2026-05-31T16:22:07.781779+00:00",
+    "4fd76c6e032f": "2026-05-31T17:34:51.593535+00:00",
+    "65d0d1bd05ec": "2026-05-31T17:34:51.593535+00:00",
+    "976fd353f7fe": "2026-05-31T17:34:51.593535+00:00",
+    "3a04a64def6c": "2026-05-31T17:34:51.593535+00:00",
+    "d8257e3b8d58": "2026-05-31T17:34:51.593535+00:00",
+    "8f918efa714d": "2026-05-31T17:34:51.593535+00:00",
+    "0729ef3ee884": "2026-05-31T17:34:51.593535+00:00",
+    "6110b10da3e8": "2026-05-31T17:34:51.593535+00:00",
+    "6749a508600b": "2026-05-31T17:34:51.593535+00:00",
+    "7b97b6286ded": "2026-05-31T17:34:51.593535+00:00",
+    "dea46831a7f0": "2026-05-31T17:34:51.593535+00:00"
   },
   "live_clusters": {
-    "39adfc55de049cd7": {
-      "topic": "Josh Safdie 'Neighbors' Reality Series Emmy Submissions Robert Redford's Grandson",
-      "item_ids": [
-        "73e3ef56c400"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "795b0ea1786d977d": {
-      "topic": "'A Minecraft Movie Squared' Sequel Title Announcement",
-      "item_ids": [
-        "63aae6be9210"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d7e4297dc5333546": {
-      "topic": "Jason Blum Produced By Conference Low-Budget Horror Industry Panel",
-      "item_ids": [
-        "8c536f114b79",
-        "4aec9ea08f85"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e859561dfe7f11a6": {
-      "topic": "Stephanie Han vs Holly Holm 2 Livestream Title Bout Rematch",
-      "item_ids": [
-        "0cb679f7ed2b"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8fd1a17cc7ab0077": {
-      "topic": "Ye Touring Comeback John Burton Access Opera Kickstart",
-      "item_ids": [
-        "a05eeec5a30a"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e06eeea192d580de": {
-      "topic": "YouTube Creators Panel Sean Evans Brittany Broski Michelle Khare Contenders TV",
-      "item_ids": [
-        "4b7d4120cb3c"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4890af1689dac069": {
-      "topic": "'Spider-Noir' Li Jun Li Nicolas Cage Banter Femme Fatale Role",
-      "item_ids": [
-        "95382cdf3492"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "96a291c9744f5336": {
-      "topic": "'Ocean With David Attenborough' Centennial Milestone Documentary",
-      "item_ids": [
-        "915e56cc7328"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eca6209555d63d05": {
-      "topic": "Letterboxd For Sale Public Benefit Company Indie Film Platform",
-      "item_ids": [
-        "5aa408c7d9d8"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ae7f5a59de07c4ba": {
-      "topic": "Snap Alums Ghost Angels Fund Venture",
-      "item_ids": [
-        "3ffabc5abc63"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ae5b5c4396ec839": {
-      "topic": "GitHub Copilot Token-Based Billing Developer Backlash",
-      "item_ids": [
-        "54225d41602f"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8dd263e828456629": {
-      "topic": "NASA X-59 Supersonic Flight SpaceX Starship Grounded Science Update",
-      "item_ids": [
-        "77ca72074488"
-      ],
-      "created_at": "2026-05-30T17:34:02.016366+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "149b721f37e11c88": {
       "topic": "New Balance P400 'Bulls' Colorway Release",
       "item_ids": [
@@ -793,7 +695,8 @@
     "a2f8b3461ef45435": {
       "topic": "Morgan Wallen Piano Technical Glitch Denver Concert",
       "item_ids": [
-        "9fd9b6f5cd9f"
+        "9fd9b6f5cd9f",
+        "8cca6962aafe"
       ],
       "created_at": "2026-05-30T21:02:08.653135+00:00",
       "last_escalated_size": 0,
@@ -1174,11 +1077,18 @@
       "topic": "Jay-Z 2026 Roots Picnic Setlist",
       "item_ids": [
         "84a81922072b",
-        "4b199314797c"
+        "4b199314797c",
+        "c1ffb262fe51"
       ],
       "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-31T17:34:51.593535+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "84a81922072b",
+        "4b199314797c",
+        "c1ffb262fe51"
+      ]
     },
     "59a0efb358c17ecb": {
       "topic": "Peter Gabriel Blue Moon New Song 'A Hard Lesson'",
@@ -1192,7 +1102,8 @@
     "d6923fb28650b4d3": {
       "topic": "Global Box Office Update Backrooms Obsession Michael",
       "item_ids": [
-        "0ec083907735"
+        "0ec083907735",
+        "2167b291d16b"
       ],
       "created_at": "2026-05-31T16:22:36.749403+00:00",
       "last_escalated_size": 0,
@@ -1215,7 +1126,43 @@
       "created_at": "2026-05-31T16:22:36.749403+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "e11a814f8592c7db": {
+      "topic": "Dua Lipa Marries Callum Turner London Ceremony",
+      "item_ids": [
+        "63559a06dd53"
+      ],
+      "created_at": "2026-05-31T17:35:24.785664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8815f3167a66bd4d": {
+      "topic": "Ronald LaPread Commodores Bassist Death",
+      "item_ids": [
+        "5ebe7b67b011"
+      ],
+      "created_at": "2026-05-31T17:35:24.785664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f7747e12f25a8840": {
+      "topic": "Love Island UK Season 13 Premiere",
+      "item_ids": [
+        "4126c4f9285a"
+      ],
+      "created_at": "2026-05-31T17:35:24.785664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "300d579b9784e351": {
+      "topic": "Apple TV HomePod mini Fall 2024 Release",
+      "item_ids": [
+        "7a25460b5d68"
+      ],
+      "created_at": "2026-05-31T17:35:24.785664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T16:22:36.750387+00:00"
+  "last_checked": "2026-05-31T17:35:24.807781+00:00"
 }

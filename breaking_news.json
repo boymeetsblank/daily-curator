@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "c1ffb262fe51",
+      "topic": "Here’s What Went Down at Jay-Z’s Headlining Roots Picnic Show",
+      "traffic": "",
+      "detected_at": "2026-05-31T17:34:51.593535+00:00",
+      "search_url": "https://pitchfork.com/news/heres-what-went-down-at-jay-zs-headlining-roots-picnic-show/",
+      "source_name": "Pitchfork",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "cbe5267599a2fdfd"
+    },
+    {
+      "id": "63559a06dd53",
+      "topic": "Dua Lipa and Callum Turner Marry in Intimate London Ceremony",
+      "traffic": "",
+      "detected_at": "2026-05-31T17:34:51.593535+00:00",
+      "search_url": "https://www.billboard.com/music/music-news/dua-lipa-callum-turner-marry-london-ceremony-1236261023/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "e11a814f8592c7db"
+    },
+    {
+      "id": "5ebe7b67b011",
+      "topic": "Ronald LaPread, Co-Founding Member and Former Bassist of the Commodores, Dead at 75",
+      "traffic": "",
+      "detected_at": "2026-05-31T17:34:51.593535+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/ronald-lapread-the-commodores-former-bassist-dead-obituary-1235570484/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "8815f3167a66bd4d"
+    },
+    {
+      "id": "2167b291d16b",
+      "topic": "‘Backrooms’ Star Lukita Maxwell Avoided Web Series “Rabbit Hole” To Give Her Character “Fresh Perspective”",
+      "traffic": "",
+      "detected_at": "2026-05-31T17:34:51.593535+00:00",
+      "search_url": "https://deadline.com/2026/05/backrooms-lukita-maxwell-avoided-web-series-rabbit-hole-1236931511/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "d6923fb28650b4d3"
+    },
+    {
+      "id": "4126c4f9285a",
+      "topic": "‘Love Island UK’ Urges Viewers To “Keep The Vibes High” & “The Energy Positive” Ahead Of Season 13 Premiere",
+      "traffic": "",
+      "detected_at": "2026-05-31T17:34:51.593535+00:00",
+      "search_url": "https://deadline.com/2026/05/love-island-uk-viewers-season-13-premiere-1236931378/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "f7747e12f25a8840"
+    },
+    {
+      "id": "8cca6962aafe",
+      "topic": "Morgan Wallen Flips Piano After Onstage Technical Difficulties At Denver Show",
+      "traffic": "",
+      "detected_at": "2026-05-31T17:34:51.593535+00:00",
+      "search_url": "https://deadline.com/2026/05/morgan-wallen-flips-piano-denver-1236931361/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "a2f8b3461ef45435"
+    },
+    {
+      "id": "7a25460b5d68",
+      "topic": "A new Apple TV and HomePod mini could arrive in the fall",
+      "traffic": "",
+      "detected_at": "2026-05-31T17:34:51.593535+00:00",
+      "search_url": "https://www.engadget.com/2184409/a-new-apple-tv-and-homepod-mini-could-arrive-in-the-fall/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "300d579b9784e351"
+    },
+    {
       "id": "ee1c1b9df4d9",
       "topic": "Caitlin Clark Kobe 5, Foamposite “Tianjin 2.0,” And This Week’s Best Releases",
       "traffic": "",
@@ -351,84 +428,7 @@
       "source_type": "feed",
       "haiku_score": 5,
       "cluster_id": "04dacf43b7bde742"
-    },
-    {
-      "id": "dac81d05900e",
-      "topic": "M-Audio M Track Duo HD Producer Pack Review: Hot Takes, Cold Opens",
-      "traffic": "",
-      "detected_at": "2026-05-31T11:56:59.620908+00:00",
-      "search_url": "https://www.wired.com/review/m-audio-m-track-duo-hd-audio-interface-bundle/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "f472e5725f6c65ff"
-    },
-    {
-      "id": "1267f681859e",
-      "topic": "On its 40th anniversary, we reassess 1986's SpaceCamp",
-      "traffic": "",
-      "detected_at": "2026-05-31T11:56:59.620908+00:00",
-      "search_url": "https://arstechnica.com/culture/2026/05/on-its-40th-anniversary-we-reassess-1986s-spacecamp/",
-      "source_name": "Ars Technica",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "1ff95df216d14533"
-    },
-    {
-      "id": "b8c61e3e8f33",
-      "topic": "The book fueling a movement against screens in schools - NBC News",
-      "traffic": "",
-      "detected_at": "2026-05-31T11:56:59.620908+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWU8xdXdXUXFmZGdkSWxiZ0Y0bFg4dGxwdDFpeklLTHdLOWJENVBqb1J4X3djckJLTUJOWG1pbFMxUjFoZFBVLW8tTXpCRWxzeEloWmx5ejNTYmNkNmxNbFR3ejVJUXE2bUVjWnlXd2ZPRTgxd0pCbG56U1c1SWZhRTNZNjQ0QzUyb29vZVpMYXJvcnRpaGV0UTJ5NEdxejdqamNWLWR3OXdPZUtJ?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "e89e10c2bdf0ba6e"
-    },
-    {
-      "id": "8730216a3241",
-      "topic": "Billion-dollar AI ship company has big plans for Texas coast - MySA",
-      "traffic": "",
-      "detected_at": "2026-05-31T11:56:59.620908+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOd0V4TWc5cVhQUmlvY3Q1QkY3UF9qT1RKQ012Q0JpTVozSHNIWEZVdVBFZlJKQ1RwcUVfN2h3ZWM2Y1ZESVk3M3hfeGk0UV9PellCR1B1eG5zVTVkcl95LTZFS0RWM2J2OWZKQ1pOeG1HRFhCWDFvbG9URWtLdGlVZnNXcWs3bWtLRXdVOXluLXNfbWtpM1Rleg?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "2be90a0de530acd3"
-    },
-    {
-      "id": "d0ad0a0a8270",
-      "topic": "‘Terrified’ of the technology: Emily Blunt reveals why she rejected AI for Disclosure Day alien voice sequence - Storyboard18",
-      "traffic": "",
-      "detected_at": "2026-05-31T11:56:59.620908+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQSDZYSnA3MldXZ0lyT1NMS28xOUZ3NGFtQjNQaTZtSlkxaUZxVlNmWlFBSHQwdDB4RWIyc3htY1NydW9jb293amJ5bFFzT0xoZVZyTUVqdUdUc0pzMG5GcUtrX3ZjVzRjcmN5dXozUWs1X2xrVno2dzIyb2VncWd1UXVKdWZWRTFyOTNlN0tMSkZTRzZWUi13MWl3dzZCYS03ODJuU2NmX3ZIRTg2eVkwbWlOc0V3dkJaNktnNkZ0anJtcHNoc0N2dGF6cHlWei1CM0VfNDUxdzI1R1VHanBVSUs1WFMyQ3J5X2l6Zl9yRVjSAfYBQVVfeXFMUDRZdjVXVVJUU2tvMEtuQVRmSTd0R1VORjMxcUcwMVl5VmszMW9hemw2Q2JpMmM0X196NnVDSDZOTjM3MXloU0I4MnJFdGIySFlxX01XU29MbU9SNTNXaXI2ZkFyeS1fQU1ZWmprTXZvSl9QY0dXT2ZXNXFHQ3ZpX3lubEZJdm8zS1BQVVM1M093bmNkVW5XaXdfaXRlQVdxVlJjVkVRVXh3N21LbVlkWG8tSzlsWmlLZjdYTFRWYXYwNmx3bm16aDNMWWJLSXI3eW1YUGlSWW9fZVJtLTNYel9qLTFuempDLUdjQjg4VS02eUYxN1VR?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "91110d0ddfe06942"
-    },
-    {
-      "id": "4f7804827fdb",
-      "topic": "Blockchain technology hits enterprise adoption milestone in May 2026, JPMorgan tokenizes assets - eciks.org",
-      "traffic": "",
-      "detected_at": "2026-05-31T11:56:59.620908+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQXljUlNsOWFKZlB6Qkp6VmpwUHEzaTZXdVA1UEcwR0dUT0Y3VTJ2RjBFanpIbGx6SnkzYU9xNEJFZEx0RXFLTHRHcWdMTTBJZFBWQ2FId1lsMFc0NTVfSGNRTFlJeDByWXJxekpQNWM2MkEwaFhvZ2d3X3BiVjU3M0wtM0toVTBNc0tyQUpya2cxYjFmZHBMc0NtSXI5YmtGV3FMSU9SVmYzU0Rmc2c?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "a4dc180f27faba8c"
-    },
-    {
-      "id": "a7e70ffca486",
-      "topic": "How Turkey Hacked the Hair Transplant Industry",
-      "traffic": "",
-      "detected_at": "2026-05-31T10:25:47.022545+00:00",
-      "search_url": "https://www.wired.com/story/how-turkey-hacked-the-hair-transplant-industry/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "feea03929d79052a"
     }
   ],
-  "last_checked": "2026-05-31T16:22:07.781779+00:00"
+  "last_checked": "2026-05-31T17:34:51.593535+00:00"
 }
