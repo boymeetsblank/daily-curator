@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "bad4033d5faa",
-    "224aa29caf46",
-    "eb89d4896fdb",
-    "29b93889d919",
-    "6311e7ca73bb",
-    "40873d8b401d",
-    "7b1aab1a5e8d",
-    "4ee49a2bdbda",
-    "8782dda3d458",
-    "a3b8577337c8",
-    "9c831165bae5",
-    "68b780ecc880",
-    "9d9adea5cda1",
     "3045e19e0462",
     "d07c2781e933",
     "e4524f4f9788",
@@ -499,16 +486,22 @@
     "b54f08133dde",
     "6c885ed92eea",
     "aa3b8b196cf4",
-    "3efb72fe9409"
+    "3efb72fe9409",
+    "ad9e04baf4bf",
+    "bd2acafd1b79",
+    "e073dcf48062",
+    "72846e04369f",
+    "6e2aa85b95d5",
+    "2a3c0b225572",
+    "f05d361ba424",
+    "0869697c9238",
+    "e126ff1a26bb",
+    "907a1a207433",
+    "db2afb74cc5e",
+    "a62f0c172218",
+    "d24ecf233de5"
   ],
   "failed_ids": {
-    "c997b1ec0a5b": "2026-05-31T16:22:07.781779+00:00",
-    "9f7dddfbcf34": "2026-05-31T16:22:07.781779+00:00",
-    "8b71960a44cb": "2026-05-31T16:22:07.781779+00:00",
-    "50f20582becf": "2026-05-31T16:22:07.781779+00:00",
-    "0e76567d72f8": "2026-05-31T16:22:07.781779+00:00",
-    "e8f4c0e68b7a": "2026-05-31T16:22:07.781779+00:00",
-    "878d4b1c4505": "2026-05-31T16:22:07.781779+00:00",
     "4fd76c6e032f": "2026-05-31T17:34:51.593535+00:00",
     "65d0d1bd05ec": "2026-05-31T17:34:51.593535+00:00",
     "976fd353f7fe": "2026-05-31T17:34:51.593535+00:00",
@@ -536,48 +529,11 @@
     "22cabc225b56": "2026-05-31T19:58:12.459659+00:00",
     "33dfc413ebf0": "2026-05-31T19:58:12.459659+00:00",
     "a8d48fac0a51": "2026-05-31T19:58:12.459659+00:00",
-    "14fd4be4fb33": "2026-05-31T19:58:12.459659+00:00"
+    "14fd4be4fb33": "2026-05-31T19:58:12.459659+00:00",
+    "33c00ea70304": "2026-05-31T21:07:35.780213+00:00",
+    "71b07a04291f": "2026-05-31T21:07:35.780213+00:00"
   },
   "live_clusters": {
-    "9dbf98f2516e9eef": {
-      "topic": "New Balance 9060 Autumnal Colorway Release",
-      "item_ids": [
-        "b5743dd477d3",
-        "0efebb1284f2"
-      ],
-      "created_at": "2026-05-30T21:02:08.653135+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a2f8b3461ef45435": {
-      "topic": "Morgan Wallen Piano Technical Glitch Denver Concert",
-      "item_ids": [
-        "9fd9b6f5cd9f",
-        "8cca6962aafe"
-      ],
-      "created_at": "2026-05-30T21:02:08.653135+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e763841322df9c18": {
-      "topic": "PSG Champions League Victory Official Merchandise",
-      "item_ids": [
-        "3d70ababc219",
-        "d4e6bc81bf61",
-        "7c2b62906394",
-        "c5f35af93b8c"
-      ],
-      "created_at": "2026-05-30T21:02:08.653135+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-31T00:15:39.696212+00:00",
-      "picks_file": "picks/picks-2026-05-31-0016.md",
-      "why_text": "Paris Saint-Germain have claimed the UEFA Champions League title, defeating Arsenal in a penalty shootout \u2014 a moment that rewrites the narrative around a club that spent years as Europe's most expensive underachievers. It's a vindication of the post-Mbapp\u00e9 rebuild and proof that PSG's project finally has silverware to match its ambition. The merch rush is already on, which tells you everything about how big this landing is.",
-      "last_escalated_item_ids": [
-        "3d70ababc219",
-        "d4e6bc81bf61",
-        "7c2b62906394"
-      ]
-    },
     "c2ce370d124f4008": {
       "topic": "Nike Shox R4 Green Camo Release",
       "item_ids": [
@@ -946,7 +902,8 @@
       "item_ids": [
         "84a81922072b",
         "4b199314797c",
-        "c1ffb262fe51"
+        "c1ffb262fe51",
+        "e073dcf48062"
       ],
       "created_at": "2026-05-31T16:22:36.749403+00:00",
       "last_escalated_size": 3,
@@ -972,7 +929,8 @@
       "item_ids": [
         "0ec083907735",
         "2167b291d16b",
-        "6e307c994e58"
+        "6e307c994e58",
+        "bd2acafd1b79"
       ],
       "created_at": "2026-05-31T16:22:36.749403+00:00",
       "last_escalated_size": 3,
@@ -1121,7 +1079,70 @@
       "created_at": "2026-05-31T19:58:39.930578+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "942dbe3f6dced72c": {
+      "topic": "Nike Air Force 1 Low Game Royal Carbon Fiber Release",
+      "item_ids": [
+        "ad9e04baf4bf"
+      ],
+      "created_at": "2026-05-31T21:08:10.582007+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "98ce9444b8274c7c": {
+      "topic": "Karolina Wydra Pluribus Original Series Discussion",
+      "item_ids": [
+        "72846e04369f"
+      ],
+      "created_at": "2026-05-31T21:08:10.582007+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e227a822a79e2844": {
+      "topic": "Erin Brockovich Data Center Secrecy Criticism",
+      "item_ids": [
+        "6e2aa85b95d5"
+      ],
+      "created_at": "2026-05-31T21:08:10.582007+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "691c04a9f8c3dea1": {
+      "topic": "MSI Claw 8 EX AI+ Handheld Gaming Device Launch",
+      "item_ids": [
+        "2a3c0b225572"
+      ],
+      "created_at": "2026-05-31T21:08:10.582007+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "353c830031bb0049": {
+      "topic": "Molecular Movie Technology Environmental Pollutant Detection",
+      "item_ids": [
+        "f05d361ba424"
+      ],
+      "created_at": "2026-05-31T21:08:10.582007+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3dbf8575ed1cbc55": {
+      "topic": "Counter-Drone Technology FIFA World Cup Security",
+      "item_ids": [
+        "0869697c9238"
+      ],
+      "created_at": "2026-05-31T21:08:10.582007+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e6f8d20b10bdf2a1": {
+      "topic": "Lithuania Technology Startup Hub Expansion",
+      "item_ids": [
+        "e126ff1a26bb"
+      ],
+      "created_at": "2026-05-31T21:08:10.582007+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T19:58:58.273862+00:00"
+  "last_checked": "2026-05-31T21:08:10.583055+00:00"
 }
