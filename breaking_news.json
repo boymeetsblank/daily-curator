@@ -1,6 +1,121 @@
 {
   "items": [
     {
+      "id": "4b602aa99ebc",
+      "topic": "DMX Gets His Own Street in Yonkers",
+      "traffic": "",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://pitchfork.com/news/dmx-gets-his-own-street-in-yonkers/",
+      "source_name": "Pitchfork",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "1564190eb24bdf73"
+    },
+    {
+      "id": "05e340b28efb",
+      "topic": "Ronald LaPread, Founding Member and Former Bassist of The Commodores, Dies at 75",
+      "traffic": "",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://www.billboard.com/music/music-news/ronald-lapread-death-commodores-bassist-dead-1236261058/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "8815f3167a66bd4d"
+    },
+    {
+      "id": "665d57e61d6e",
+      "topic": "Taylor Swift, The Beatles, Elvis & More Artists With the Most Weeks at No. 1 on the Billboard 200: Full List",
+      "traffic": "",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://www.billboard.com/lists/most-weeks-at-no-1-billboard-200-taylor-swift-the-beatles/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 5
+    },
+    {
+      "id": "52ded57bc33f",
+      "topic": "Drake’s ‘ICEMAN’ Spends Second Week at No. 1 on Billboard 200",
+      "traffic": "",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://www.billboard.com/music/chart-beat/drake-iceman-second-week-number-one-billboard-200-chart-1236261032/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "783f158aca2c",
+      "topic": "Dua Lipa Marries Callum Turner During Intimate Ceremony in London",
+      "traffic": "",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/dua-lipa-callum-turner-married-wedding-london-1235570493/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "e11a814f8592c7db"
+    },
+    {
+      "id": "6e307c994e58",
+      "topic": "How ‘Backrooms’ Blew The Doors Off The Box Office With $118M WW Opening, Best Ever For A24",
+      "traffic": "",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://deadline.com/2026/05/backrooms-kane-parsons-box-office-record-behind-the-scenes-1236931315/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 9,
+      "cluster_id": "d6923fb28650b4d3"
+    },
+    {
+      "id": "80061f770fe1",
+      "topic": "Twitch creators will soon be able to stream in horizontal and vertical formats simultaneously",
+      "traffic": "",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://www.engadget.com/2184452/twitch-creators-will-soon-be-able-to-stream-in-horizontal-and-vertical-formats-simultaneously/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 6
+    },
+    {
+      "id": "85ec583c1a13",
+      "topic": "Apple's smart glasses reportedly won't make their debut until end of 2027",
+      "traffic": "",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://www.engadget.com/2184438/apple-smart-glasses-reportedly-wont-make-their-debut-until-end-of-2027/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 5
+    },
+    {
+      "id": "b7d8554c8d3f",
+      "topic": "#WWEClash",
+      "traffic": "##1 on X",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://x.com/search?q=%23WWEClash&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6,
+      "cluster_id": "34fe412f621da955"
+    },
+    {
+      "id": "b54f08133dde",
+      "topic": "Asentum Blockchain",
+      "traffic": "##2 on X",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://x.com/search?q=Asentum+Blockchain&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "6c885ed92eea",
+      "topic": "Yuji",
+      "traffic": "##3 on X",
+      "detected_at": "2026-05-31T19:58:12.459659+00:00",
+      "search_url": "https://x.com/search?q=Yuji&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "0efebb1284f2",
       "topic": "The New Balance 9060 Gets A High-Contrast “Timberwolf” Colorway",
       "traffic": "",
@@ -316,122 +431,7 @@
       "source_type": "feed",
       "haiku_score": 6,
       "cluster_id": "2239e68a9982163b"
-    },
-    {
-      "id": "25426526b484",
-      "topic": "TechCrunch Mobility: It doesn’t matter that people hate the Ferrari Luce",
-      "traffic": "",
-      "detected_at": "2026-05-31T16:22:07.781779+00:00",
-      "search_url": "https://techcrunch.com/2026/05/31/techcrunch-mobility-it-doesnt-matter-that-people-hate-the-ferrari-luce/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "219fb65d984a",
-      "topic": "Making sense of the debate over AI psychosis",
-      "traffic": "",
-      "detected_at": "2026-05-31T16:22:07.781779+00:00",
-      "search_url": "https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "1f46a0376acaf92b"
-    },
-    {
-      "id": "b9623441ff0a",
-      "topic": "Diddy",
-      "traffic": "##7 on X",
-      "detected_at": "2026-05-31T16:22:07.781779+00:00",
-      "search_url": "https://x.com/search?q=Diddy&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "938fab660e36",
-      "topic": "Sunday Funday",
-      "traffic": "##8 on X",
-      "detected_at": "2026-05-31T16:22:07.781779+00:00",
-      "search_url": "https://x.com/search?q=Sunday+Funday&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "d71ab846750f",
-      "topic": "Platner",
-      "traffic": "##9 on X",
-      "detected_at": "2026-05-31T16:22:07.781779+00:00",
-      "search_url": "https://x.com/search?q=Platner&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "56d613cfd531",
-      "topic": "Telephone",
-      "traffic": "##10 on X",
-      "detected_at": "2026-05-31T16:22:07.781779+00:00",
-      "search_url": "https://x.com/search?q=Telephone&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "2f097c6f7765",
-      "topic": "#SeductiveSunday",
-      "traffic": "##11 on X",
-      "detected_at": "2026-05-31T16:22:07.781779+00:00",
-      "search_url": "https://x.com/search?q=%23SeductiveSunday&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "e5c45e881781",
-      "topic": "AI Boosters See Blue Skies, But Clouds Linger In Hollywood: Key Takeaways From The AI On The Lot Conference",
-      "traffic": "",
-      "detected_at": "2026-05-31T15:06:32.643003+00:00",
-      "search_url": "https://deadline.com/2026/05/hollywood-ai-on-the-lot-conference-amazon-1236930197/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "af9087d362fc9dc7"
-    },
-    {
-      "id": "d11ddbb842b3",
-      "topic": "Black founders raise highest amount of quarterly funding since 2022, but there’s a catch",
-      "traffic": "",
-      "detected_at": "2026-05-31T15:06:32.643003+00:00",
-      "search_url": "https://techcrunch.com/2026/05/31/black-founders-raise-highest-amount-of-quarterly-funding-since-2022-but-theres-a-catch/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "83682c0771e65e33"
-    },
-    {
-      "id": "c0d7d242da2b",
-      "topic": "Elon Musk’s plans for SpaceX depend on Starship and AI - The Hill",
-      "traffic": "",
-      "detected_at": "2026-05-31T15:06:32.643003+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPN05TckxjNDhnS2szMTlyYjRtYy1kT0xCZ0U2aE9BWm9iZHdLUXRha0pDRVdScFNOcHhxOHJvZjdUQ2JiWUM3U1hOc3pvZEl1ZzBPUFZxMXpqYl9xTDhqZmFxOU5paXdRX2c1V2UwZTB1b3ctV0dxVG03TjdPZVVLeWJpU3nSAYoBQVVfeXFMTlllQU96VFh3S1l2cVBGai1Hd3psQVlCR19Ka1dBTndUZXNlMFVCOW41bzhEWkRlbGI5bUJ5UV9DS1MzRHVFc2FYSUtTYVVpRmhYdzJWaGhmQW1OLWNJOHJTZkp4b3JuRzQwZllWQ0gxRGNaMV8wcWd2Wm1vd1d2SmoycFliNzVvTk9n?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "3d12bcd579e8a308"
-    },
-    {
-      "id": "1c2d188e9ac4",
-      "topic": "US, UK and Australia to develop underwater drone technology - The Annapurna Express",
-      "traffic": "",
-      "detected_at": "2026-05-31T15:06:32.643003+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5GRUFzaXEtZkhTVnlXd3ZOdm50a3RpNDE1MUpIVXNIbjBrV0ZGQkR6dV8zUndZRVVsN1doZW5RZGRSSFdURHo2NzRxdm1mVURDb245VEdWQQ?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "397fde1eeb634a87"
     }
   ],
-  "last_checked": "2026-05-31T18:48:44.739315+00:00"
+  "last_checked": "2026-05-31T19:58:12.459659+00:00"
 }

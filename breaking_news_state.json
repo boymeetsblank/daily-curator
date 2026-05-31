@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "0d0e5a68c9d5",
-    "118c0f625cc6",
-    "e7b79d73ff1e",
-    "9cd954845689",
-    "693bba2c067f",
-    "73c51ebbb6dc",
-    "2cce6eddedc6",
-    "28f53d8b02d2",
-    "fa7f07a9e3d7",
-    "5e99276d1268",
-    "766ac3b4ff97",
-    "9ed599c7ed72",
-    "03df2285a398",
     "bad4033d5faa",
     "224aa29caf46",
     "eb89d4896fdb",
@@ -499,14 +486,22 @@
     "c1384759d49d",
     "0a7bee89c089",
     "de677ab45d2b",
-    "eb6cc5980e3c"
+    "eb6cc5980e3c",
+    "4b602aa99ebc",
+    "05e340b28efb",
+    "665d57e61d6e",
+    "52ded57bc33f",
+    "783f158aca2c",
+    "6e307c994e58",
+    "80061f770fe1",
+    "85ec583c1a13",
+    "b7d8554c8d3f",
+    "b54f08133dde",
+    "6c885ed92eea",
+    "aa3b8b196cf4",
+    "3efb72fe9409"
   ],
   "failed_ids": {
-    "118870f9f623": "2026-05-31T15:06:32.643003+00:00",
-    "e19076da56eb": "2026-05-31T15:06:32.643003+00:00",
-    "c37a279be9a2": "2026-05-31T15:06:32.643003+00:00",
-    "d533e35a1816": "2026-05-31T15:06:32.643003+00:00",
-    "dcc701bc41aa": "2026-05-31T15:06:32.643003+00:00",
     "c997b1ec0a5b": "2026-05-31T16:22:07.781779+00:00",
     "9f7dddfbcf34": "2026-05-31T16:22:07.781779+00:00",
     "8b71960a44cb": "2026-05-31T16:22:07.781779+00:00",
@@ -533,72 +528,17 @@
     "f47b5f0ce275": "2026-05-31T18:48:44.739315+00:00",
     "3a8315739213": "2026-05-31T18:48:44.739315+00:00",
     "f31139bdc40f": "2026-05-31T18:48:44.739315+00:00",
-    "80917cfb671a": "2026-05-31T18:48:44.739315+00:00"
+    "80917cfb671a": "2026-05-31T18:48:44.739315+00:00",
+    "e663d663858d": "2026-05-31T19:58:12.459659+00:00",
+    "25ff6a5964f4": "2026-05-31T19:58:12.459659+00:00",
+    "cc5580671df6": "2026-05-31T19:58:12.459659+00:00",
+    "c2d25e8bb3a6": "2026-05-31T19:58:12.459659+00:00",
+    "22cabc225b56": "2026-05-31T19:58:12.459659+00:00",
+    "33dfc413ebf0": "2026-05-31T19:58:12.459659+00:00",
+    "a8d48fac0a51": "2026-05-31T19:58:12.459659+00:00",
+    "14fd4be4fb33": "2026-05-31T19:58:12.459659+00:00"
   },
   "live_clusters": {
-    "94d0fdfb706194cd": {
-      "topic": "Samsung BTS Arirang World Tour Fan Activations",
-      "item_ids": [
-        "3743634db917"
-      ],
-      "created_at": "2026-05-30T19:57:28.115889+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9a328618dae41b75": {
-      "topic": "Tom Holland Spider-Man Mentorship Next Chapter",
-      "item_ids": [
-        "d5e629e51422"
-      ],
-      "created_at": "2026-05-30T19:57:28.115889+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a32c0122663879db": {
-      "topic": "Cracker Barrel 400 NASCAR Livestream",
-      "item_ids": [
-        "a0535754d0c4"
-      ],
-      "created_at": "2026-05-30T19:57:28.115889+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "54b4a77df819ffa4": {
-      "topic": "Neon Boss Tom Quinn Industry Consolidation Stance",
-      "item_ids": [
-        "c001ff198ec9"
-      ],
-      "created_at": "2026-05-30T19:57:28.115889+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "10d099f1aaff014d": {
-      "topic": "'You See L.A.' UCLA Women's Basketball Documentary Contenders TV",
-      "item_ids": [
-        "b4ee2f6da183"
-      ],
-      "created_at": "2026-05-30T19:57:28.115889+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1c7eb4a79a51cbbd": {
-      "topic": "'Mr. Scorsese' Martin Scorsese Documentary Contenders TV",
-      "item_ids": [
-        "7e9ef5c26571"
-      ],
-      "created_at": "2026-05-30T19:57:28.115889+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "135b545b97a18c1c": {
-      "topic": "MSI Multi-Resolution Multi-Refresh Rate Monitor",
-      "item_ids": [
-        "a016d968befb"
-      ],
-      "created_at": "2026-05-30T19:57:28.115889+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "9dbf98f2516e9eef": {
       "topic": "New Balance 9060 Autumnal Colorway Release",
       "item_ids": [
@@ -987,11 +927,19 @@
       "topic": "WWE Clash in Italy 2026 Livestream",
       "item_ids": [
         "4855f75f1615",
-        "e07f3a82d489"
+        "e07f3a82d489",
+        "b7d8554c8d3f"
       ],
       "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-31T19:58:12.459659+00:00",
+      "picks_file": "picks/picks-2026-05-31-1958.md",
+      "why_text": "WWE is planting its flag in Europe with a major premium live event in Italy, part of the company's aggressive global expansion under TKO Group. The simultaneous surge of search, live results, and social trending confirms the event is mid-broadcast and drawing real attention \u2014 this isn't just a touring show, it's WWE treating Europe as a primary market. With streaming access questions trending alongside match results, the rights and accessibility conversation is as loud as the in-ring action.",
+      "last_escalated_item_ids": [
+        "4855f75f1615",
+        "e07f3a82d489",
+        "b7d8554c8d3f"
+      ]
     },
     "cbe5267599a2fdfd": {
       "topic": "Jay-Z 2026 Roots Picnic Setlist",
@@ -1023,11 +971,19 @@
       "topic": "Global Box Office Update Backrooms Obsession Michael",
       "item_ids": [
         "0ec083907735",
-        "2167b291d16b"
+        "2167b291d16b",
+        "6e307c994e58"
       ],
       "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-31T19:58:12.459659+00:00",
+      "picks_file": "picks/picks-2026-05-31-1958.md",
+      "why_text": "A24 just rewrote its own record books: Backrooms, the horror film born from internet mythology and starring Lukita Maxwell, debuted to $118M worldwide \u2014 the studio's biggest opening ever. Meanwhile, the broader box office is quietly thriving, with Michael closing in on $900M WW and Obsession crossing $148M, signaling a genuinely healthy theatrical moment. The Backrooms win is the real cultural story though \u2014 it confirms that internet-native horror (creepypasta, liminal spaces, Gen Z dread) has fully crossed over into mainstream box office muscle.",
+      "last_escalated_item_ids": [
+        "0ec083907735",
+        "2167b291d16b",
+        "6e307c994e58"
+      ]
     },
     "2239e68a9982163b": {
       "topic": "Matt Brown Alaskan Bush People Star Death",
@@ -1050,7 +1006,8 @@
     "e11a814f8592c7db": {
       "topic": "Dua Lipa Marries Callum Turner London Ceremony",
       "item_ids": [
-        "63559a06dd53"
+        "63559a06dd53",
+        "783f158aca2c"
       ],
       "created_at": "2026-05-31T17:35:24.785664+00:00",
       "last_escalated_size": 0,
@@ -1059,7 +1016,8 @@
     "8815f3167a66bd4d": {
       "topic": "Ronald LaPread Commodores Bassist Death",
       "item_ids": [
-        "5ebe7b67b011"
+        "5ebe7b67b011",
+        "05e340b28efb"
       ],
       "created_at": "2026-05-31T17:35:24.785664+00:00",
       "last_escalated_size": 0,
@@ -1154,7 +1112,16 @@
       "created_at": "2026-05-31T18:49:21.603668+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1564190eb24bdf73": {
+      "topic": "DMX Street Named Yonkers Tribute",
+      "item_ids": [
+        "4b602aa99ebc"
+      ],
+      "created_at": "2026-05-31T19:58:39.930578+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T18:49:21.604892+00:00"
+  "last_checked": "2026-05-31T19:58:58.273862+00:00"
 }
