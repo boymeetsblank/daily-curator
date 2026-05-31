@@ -1,6 +1,82 @@
 {
   "items": [
     {
+      "id": "a7e70ffca486",
+      "topic": "How Turkey Hacked the Hair Transplant Industry",
+      "traffic": "",
+      "detected_at": "2026-05-31T10:25:47.022545+00:00",
+      "search_url": "https://www.wired.com/story/how-turkey-hacked-the-hair-transplant-industry/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "feea03929d79052a"
+    },
+    {
+      "id": "a4988515cdc0",
+      "topic": "Disney is poised to ramp its already booming advertising business. Rita Ferro is behind the push",
+      "traffic": "",
+      "detected_at": "2026-05-31T10:25:47.022545+00:00",
+      "search_url": "https://www.cnbc.com/2026/05/31/disney-advertising-rita-ferro.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "cff75ea082c071a0"
+    },
+    {
+      "id": "b7517003f1c8",
+      "topic": "Thunder",
+      "traffic": "##6 on X",
+      "detected_at": "2026-05-31T10:25:47.022545+00:00",
+      "search_url": "https://x.com/search?q=Thunder&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7,
+      "cluster_id": "f04fcbd90a38ac78"
+    },
+    {
+      "id": "5f9c54b8f6b2",
+      "topic": "Caruso",
+      "traffic": "##7 on X",
+      "detected_at": "2026-05-31T10:25:47.022545+00:00",
+      "search_url": "https://x.com/search?q=Caruso&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7,
+      "cluster_id": "f04fcbd90a38ac78"
+    },
+    {
+      "id": "bd589696c089",
+      "topic": "Jay Z",
+      "traffic": "##8 on X",
+      "detected_at": "2026-05-31T10:25:47.022545+00:00",
+      "search_url": "https://x.com/search?q=Jay+Z&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7
+    },
+    {
+      "id": "e1a7aec9129d",
+      "topic": "Finals",
+      "traffic": "##9 on X",
+      "detected_at": "2026-05-31T10:25:47.022545+00:00",
+      "search_url": "https://x.com/search?q=Finals&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7,
+      "cluster_id": "f04fcbd90a38ac78"
+    },
+    {
+      "id": "1b6e8bb3eaf1",
+      "topic": "Knicks in 6",
+      "traffic": "##10 on X",
+      "detected_at": "2026-05-31T10:25:47.022545+00:00",
+      "search_url": "https://x.com/search?q=Knicks+in+6&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7,
+      "cluster_id": "f04fcbd90a38ac78"
+    },
+    {
       "id": "eb944ee255b1",
       "topic": "‘We Just Broke the Record’: Kanye West Tells Istanbul Fans He’s Made History",
       "traffic": "",
@@ -350,82 +426,7 @@
       "source_name": "ESPN",
       "source_type": "feed",
       "haiku_score": 6
-    },
-    {
-      "id": "1cc8ad058121",
-      "topic": "NCAA: Sorsby's college career should be over",
-      "traffic": "",
-      "detected_at": "2026-05-30T23:13:48.846118+00:00",
-      "search_url": "https://www.espn.com/college-football/story/_/id/48919525/ncaa-sorsby-college-career-gambling-own-team",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "739484f2f3880589"
-    },
-    {
-      "id": "f816130be961",
-      "topic": "Noni",
-      "traffic": "##17 on X",
-      "detected_at": "2026-05-30T23:13:48.846118+00:00",
-      "search_url": "https://x.com/search?q=Noni&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "0783b2abb6ed",
-      "topic": "Green Camo Appears On This Swooshless Nike Shox R4",
-      "traffic": "",
-      "detected_at": "2026-05-30T22:09:30.945042+00:00",
-      "search_url": "https://sneakernews.com/2026/05/30/nike-shox-r4-noble-green-team-kelly-green-rough-green-iq0636-300/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "c2ce370d124f4008"
-    },
-    {
-      "id": "34b69998327e",
-      "topic": "Dan Levy Compares ‘Heated Rivalry’ & ‘Schitt’s Creek’ Successes & Advocates For Investing In Queer Voices: “Canada Saw Value In Them First”",
-      "traffic": "",
-      "detected_at": "2026-05-30T22:09:30.945042+00:00",
-      "search_url": "https://deadline.com/2026/05/dan-levy-heated-rivalry-schitts-creek-canada-success-1236931196/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "e701ca6439fe7f2b"
-    },
-    {
-      "id": "b6fd04d690e3",
-      "topic": "This weekend’s two biggest movies were both directed by YouTubers",
-      "traffic": "",
-      "detected_at": "2026-05-30T22:09:30.945042+00:00",
-      "search_url": "https://techcrunch.com/2026/05/30/this-weekends-two-biggest-movies-were-both-directed-by-youtubers/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "5dc2f2e471916abd"
-    },
-    {
-      "id": "37c73d600602",
-      "topic": "Lamine Yamal shares pictures teasing the new Beats headphones on the way",
-      "traffic": "",
-      "detected_at": "2026-05-30T22:09:30.945042+00:00",
-      "search_url": "https://www.engadget.com/2184302/lamine-yamal-shares-pictures-teasing-the-new-beats-headphones-on-the-way/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "5386a503b9e5e337"
-    },
-    {
-      "id": "9e9e6e66e886",
-      "topic": "Rich Paul",
-      "traffic": "##12 on X",
-      "detected_at": "2026-05-30T22:09:30.945042+00:00",
-      "search_url": "https://x.com/search?q=Rich+Paul&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
     }
   ],
-  "last_checked": "2026-05-31T08:13:26.289182+00:00"
+  "last_checked": "2026-05-31T10:25:47.022545+00:00"
 }
