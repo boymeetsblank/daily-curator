@@ -1,11 +1,5 @@
 {
   "known_ids": [
-    "50df41cc6acf",
-    "3faea2c5d6f1",
-    "0fa78a4b6f37",
-    "df434a3f7f51",
-    "5ae8ee806afa",
-    "b87d30caf438",
     "0ec483fbd67f",
     "7dac4f0cab35",
     "0c15b54208f1",
@@ -499,60 +493,18 @@
     "0e842a92b454",
     "c5f35af93b8c",
     "b0be3b84d552",
-    "f7f24b3894e1"
+    "f7f24b3894e1",
+    "eb944ee255b1",
+    "b6d0ae4530d8",
+    "36cbc78fd8f1",
+    "eeb614585d65",
+    "bd7ccf36b56f",
+    "3ab468916075"
   ],
   "failed_ids": {
     "0f25fc833adf": "2026-05-31T04:55:14.582204+00:00"
   },
   "live_clusters": {
-    "3a0d6edb788965a0": {
-      "topic": "Paul McCartney Beatles Family Grounding Interview",
-      "item_ids": [
-        "7ba039742b83",
-        "aa1c845cf68b"
-      ],
-      "created_at": "2026-05-30T06:37:41.069447+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e22161a59b52ef55": {
-      "topic": "Hurricanes Stanley Cup Final Game 5",
-      "item_ids": [
-        "02d3125840ee",
-        "fa20f22851cf"
-      ],
-      "created_at": "2026-05-30T06:37:41.069447+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d847498da65e9876": {
-      "topic": "UCLA WCWS Grant Homer Performance",
-      "item_ids": [
-        "5ce71801d3e0"
-      ],
-      "created_at": "2026-05-30T06:37:41.069447+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "739484f2f3880589": {
-      "topic": "Sorsby IU Hoosiers Betting History",
-      "item_ids": [
-        "76dd3ba0be52",
-        "1cc8ad058121"
-      ],
-      "created_at": "2026-05-30T06:37:41.069447+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "66af2bae8f06fdca": {
-      "topic": "Parrots Video Calling Technology Feature",
-      "item_ids": [
-        "bc663e219b16"
-      ],
-      "created_at": "2026-05-30T06:37:41.069447+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "5a0237c20d4a2d66": {
       "topic": "Nike World Cup Uniforms Recycled Textiles Fashion Waste",
       "item_ids": [
@@ -879,7 +831,9 @@
         "f329ab302ca3",
         "1bb8475dbafe",
         "b3191a1b87c9",
-        "9f92ba1fa219"
+        "9f92ba1fa219",
+        "b6d0ae4530d8",
+        "3ab468916075"
       ],
       "created_at": "2026-05-30T18:44:18.178131+00:00",
       "last_escalated_size": 4,
@@ -1191,7 +1145,16 @@
       "created_at": "2026-05-31T04:55:42.368383+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "78b22a288723041b": {
+      "topic": "Kanye West Istanbul Concert Record Breaking",
+      "item_ids": [
+        "eb944ee255b1"
+      ],
+      "created_at": "2026-05-31T08:13:59.975495+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T04:55:46.741907+00:00"
+  "last_checked": "2026-05-31T08:13:59.976640+00:00"
 }

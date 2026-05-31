@@ -1,6 +1,69 @@
 {
   "items": [
     {
+      "id": "eb944ee255b1",
+      "topic": "‘We Just Broke the Record’: Kanye West Tells Istanbul Fans He’s Made History",
+      "traffic": "",
+      "detected_at": "2026-05-31T08:13:26.289182+00:00",
+      "search_url": "https://www.billboard.com/music/rb-hip-hop/kanye-west-istanbul-stadium-record-1236260907/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "78b22a288723041b"
+    },
+    {
+      "id": "b6d0ae4530d8",
+      "topic": "Spurs",
+      "traffic": "##1 on X",
+      "detected_at": "2026-05-31T08:13:26.289182+00:00",
+      "search_url": "https://x.com/search?q=Spurs&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6,
+      "cluster_id": "f04fcbd90a38ac78"
+    },
+    {
+      "id": "36cbc78fd8f1",
+      "topic": "Chet",
+      "traffic": "##2 on X",
+      "detected_at": "2026-05-31T08:13:26.289182+00:00",
+      "search_url": "https://x.com/search?q=Chet&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "eeb614585d65",
+      "topic": "#AAANocheDeLosGrandes",
+      "traffic": "##3 on X",
+      "detected_at": "2026-05-31T08:13:26.289182+00:00",
+      "search_url": "https://x.com/search?q=%23AAANocheDeLosGrandes&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "bd7ccf36b56f",
+      "topic": "Chad Gable",
+      "traffic": "##4 on X",
+      "detected_at": "2026-05-31T08:13:26.289182+00:00",
+      "search_url": "https://x.com/search?q=Chad+Gable&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "3ab468916075",
+      "topic": "Shai",
+      "traffic": "##5 on X",
+      "detected_at": "2026-05-31T08:13:26.289182+00:00",
+      "search_url": "https://x.com/search?q=Shai&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6,
+      "cluster_id": "f04fcbd90a38ac78"
+    },
+    {
       "id": "447dceacb1eb",
       "topic": "Macy Gray Returns to Australia for Most Expansive Tour of Region to Date",
       "traffic": "",
@@ -362,70 +425,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 6
-    },
-    {
-      "id": "96776b495df8",
-      "topic": "Madden",
-      "traffic": "##13 on X",
-      "detected_at": "2026-05-30T22:09:30.945042+00:00",
-      "search_url": "https://x.com/search?q=Madden&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "87d3e13805b5",
-      "topic": "Coco",
-      "traffic": "##14 on X",
-      "detected_at": "2026-05-30T22:09:30.945042+00:00",
-      "search_url": "https://x.com/search?q=Coco&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "1d95abef6661",
-      "topic": "Martinelli",
-      "traffic": "##15 on X",
-      "detected_at": "2026-05-30T22:09:30.945042+00:00",
-      "search_url": "https://x.com/search?q=Martinelli&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "b5743dd477d3",
-      "topic": "The New Balance 9060 Issues Autumnal Tones For Summer",
-      "traffic": "",
-      "detected_at": "2026-05-30T21:01:34.663349+00:00",
-      "search_url": "https://sneakernews.com/2026/05/30/new-balance-9060-breakfast-tea-angora-u90603eg/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "9dbf98f2516e9eef"
-    },
-    {
-      "id": "9fd9b6f5cd9f",
-      "topic": "Morgan Wallen Flips Piano After Technical Glitch During ‘Sand In My Boots’ at Denver Concert",
-      "traffic": "",
-      "detected_at": "2026-05-30T21:01:34.663349+00:00",
-      "search_url": "https://www.billboard.com/music/music-news/morgan-wallen-flips-piano-sand-in-my-boots-glitch-denver-1236260822/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "a2f8b3461ef45435"
-    },
-    {
-      "id": "3d70ababc219",
-      "topic": "Score Official PSG Merch Online to Celebrate Paris Saint-Germain Champions League Win",
-      "traffic": "",
-      "detected_at": "2026-05-30T21:01:34.663349+00:00",
-      "search_url": "https://www.rollingstone.com/product-recommendations/style/buy-psg-paris-saint-germain-champions-league-winners-merch-1235570429/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "e763841322df9c18"
     }
   ],
-  "last_checked": "2026-05-31T04:55:14.582204+00:00"
+  "last_checked": "2026-05-31T08:13:26.289182+00:00"
 }
