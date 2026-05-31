@@ -1,21 +1,5 @@
 {
   "known_ids": [
-    "659973b2e893",
-    "0779ec25ce71",
-    "9f2d3d1a0d1a",
-    "ddac3dc33028",
-    "ad0ef667a6d5",
-    "6181ef3a1199",
-    "b14050d94744",
-    "acb972ef488a",
-    "392f17936f63",
-    "440f055b4849",
-    "8cfff31e50c8",
-    "0f0466533ca3",
-    "236bf63a02d5",
-    "cd75b2254aef",
-    "ecfb4593117c",
-    "5235af3dd6cf",
     "0ee334a557d2",
     "f3f6a69187ad",
     "6019361e44c6",
@@ -499,7 +483,23 @@
     "5f9c54b8f6b2",
     "bd589696c089",
     "e1a7aec9129d",
-    "1b6e8bb3eaf1"
+    "1b6e8bb3eaf1",
+    "9d8caf91100b",
+    "b036531bdf23",
+    "6493ab9811da",
+    "fe9028aca4f7",
+    "7519f869b768",
+    "dac81d05900e",
+    "1267f681859e",
+    "b8c61e3e8f33",
+    "8730216a3241",
+    "d0ad0a0a8270",
+    "4f7804827fdb",
+    "1b08a88cecda",
+    "1e9bf278d3de",
+    "636c24d36119",
+    "9f15bfe819b1",
+    "f9154b3fd9bb"
   ],
   "failed_ids": {
     "2022057dc42a": "2026-05-31T10:25:47.022545+00:00",
@@ -510,28 +510,12 @@
     "dd83ec3874b9": "2026-05-31T10:25:47.022545+00:00",
     "7cc794d729b2": "2026-05-31T10:25:47.022545+00:00",
     "7546d590ca5e": "2026-05-31T10:25:47.022545+00:00",
-    "77f0f5c31ec1": "2026-05-31T10:25:47.022545+00:00"
+    "77f0f5c31ec1": "2026-05-31T10:25:47.022545+00:00",
+    "ace71dc82772": "2026-05-31T11:56:59.620908+00:00",
+    "575f993c77db": "2026-05-31T11:56:59.620908+00:00",
+    "d596877ac3c4": "2026-05-31T11:56:59.620908+00:00"
   },
   "live_clusters": {
-    "0fe2f38df7e6d333": {
-      "topic": "Cybercrime Crew Hacks MyPillow Mike Lindell",
-      "item_ids": [
-        "3db48881348f"
-      ],
-      "created_at": "2026-05-30T10:52:02.068666+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "27820c9f4723892f": {
-      "topic": "Meta AI Pendant Smart Glasses Development",
-      "item_ids": [
-        "90bd2d3351f0",
-        "361533e64698"
-      ],
-      "created_at": "2026-05-30T10:52:02.068666+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "d5fade47d687ac0b": {
       "topic": "Keychron K2 HE Concrete Edition Keyboard Review",
       "item_ids": [
@@ -572,7 +556,8 @@
     "e89e10c2bdf0ba6e": {
       "topic": "Schools Shifting to Analog Learning in AI Era",
       "item_ids": [
-        "655bf7058498"
+        "655bf7058498",
+        "b8c61e3e8f33"
       ],
       "created_at": "2026-05-30T12:00:13.655098+00:00",
       "last_escalated_size": 0,
@@ -836,7 +821,9 @@
         "b7517003f1c8",
         "5f9c54b8f6b2",
         "e1a7aec9129d",
-        "1b6e8bb3eaf1"
+        "1b6e8bb3eaf1",
+        "9d8caf91100b",
+        "b036531bdf23"
       ],
       "created_at": "2026-05-30T18:44:18.178131+00:00",
       "last_escalated_size": 10,
@@ -1181,7 +1168,79 @@
       "created_at": "2026-05-31T10:26:16.057479+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "3de35b2cc19ff647": {
+      "topic": "Yankees ABS Error Against Athletics",
+      "item_ids": [
+        "6493ab9811da"
+      ],
+      "created_at": "2026-05-31T11:57:29.547957+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "de08bb3d85a68bd3": {
+      "topic": "Swiatek Upset French Open Singles",
+      "item_ids": [
+        "fe9028aca4f7"
+      ],
+      "created_at": "2026-05-31T11:57:29.547957+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "04dacf43b7bde742": {
+      "topic": "Tennessee Vols Handshake Line Accusation",
+      "item_ids": [
+        "7519f869b768"
+      ],
+      "created_at": "2026-05-31T11:57:29.547957+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f472e5725f6c65ff": {
+      "topic": "M-Audio M Track Duo HD Producer Pack Review",
+      "item_ids": [
+        "dac81d05900e"
+      ],
+      "created_at": "2026-05-31T11:57:29.547957+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1ff95df216d14533": {
+      "topic": "SpaceCamp 40th Anniversary Retrospective",
+      "item_ids": [
+        "1267f681859e"
+      ],
+      "created_at": "2026-05-31T11:57:29.547957+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2be90a0de530acd3": {
+      "topic": "AI Ship Company Texas Coast Expansion",
+      "item_ids": [
+        "8730216a3241"
+      ],
+      "created_at": "2026-05-31T11:57:29.547957+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "91110d0ddfe06942": {
+      "topic": "Emily Blunt AI Voice Rejection Disclosure Day",
+      "item_ids": [
+        "d0ad0a0a8270"
+      ],
+      "created_at": "2026-05-31T11:57:29.547957+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a4dc180f27faba8c": {
+      "topic": "JPMorgan Blockchain Asset Tokenization May 2026",
+      "item_ids": [
+        "4f7804827fdb"
+      ],
+      "created_at": "2026-05-31T11:57:29.547957+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T10:26:20.242563+00:00"
+  "last_checked": "2026-05-31T11:57:29.550755+00:00"
 }
