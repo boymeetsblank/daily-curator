@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "2fb9701b6a79",
-    "30407b9765ed",
-    "9f1ac71754c5",
-    "9b37805ff541",
-    "e94ed64b1f78",
-    "1f09067a925b",
-    "197622158e64",
-    "e72c06b6d908",
-    "b97a12930239",
-    "e25ea5051417",
-    "416fb6db5101",
-    "fa4b9fb12463",
-    "5def3e8554e8",
-    "f3da5b324702",
-    "af0145f360c4",
     "013f6abc3607",
     "92463bc6a97c",
     "a4afc5d444ce",
@@ -499,12 +484,24 @@
     "b93468cd8431",
     "0372d847cdfc",
     "69ad246611d1",
-    "8bd7db9a8202"
+    "8bd7db9a8202",
+    "ee1c1b9df4d9",
+    "7c626be1ba46",
+    "4855f75f1615",
+    "84a81922072b",
+    "4b199314797c",
+    "601a0cc3b0bd",
+    "0ec083907735",
+    "0b7dd9dec5eb",
+    "25426526b484",
+    "219fb65d984a",
+    "b9623441ff0a",
+    "938fab660e36",
+    "d71ab846750f",
+    "56d613cfd531",
+    "2f097c6f7765"
   ],
   "failed_ids": {
-    "ace71dc82772": "2026-05-31T11:56:59.620908+00:00",
-    "575f993c77db": "2026-05-31T11:56:59.620908+00:00",
-    "d596877ac3c4": "2026-05-31T11:56:59.620908+00:00",
     "6b05dbe7eb27": "2026-05-31T13:49:38.031359+00:00",
     "ffafe6a022ad": "2026-05-31T13:49:38.031359+00:00",
     "ae10069f0e29": "2026-05-31T13:49:38.031359+00:00",
@@ -514,109 +511,16 @@
     "e19076da56eb": "2026-05-31T15:06:32.643003+00:00",
     "c37a279be9a2": "2026-05-31T15:06:32.643003+00:00",
     "d533e35a1816": "2026-05-31T15:06:32.643003+00:00",
-    "dcc701bc41aa": "2026-05-31T15:06:32.643003+00:00"
+    "dcc701bc41aa": "2026-05-31T15:06:32.643003+00:00",
+    "c997b1ec0a5b": "2026-05-31T16:22:07.781779+00:00",
+    "9f7dddfbcf34": "2026-05-31T16:22:07.781779+00:00",
+    "8b71960a44cb": "2026-05-31T16:22:07.781779+00:00",
+    "50f20582becf": "2026-05-31T16:22:07.781779+00:00",
+    "0e76567d72f8": "2026-05-31T16:22:07.781779+00:00",
+    "e8f4c0e68b7a": "2026-05-31T16:22:07.781779+00:00",
+    "878d4b1c4505": "2026-05-31T16:22:07.781779+00:00"
   },
   "live_clusters": {
-    "d129bdb33fb19b64": {
-      "topic": "WWE Clash in Italy 2026 Cody Rhodes vs Gunther",
-      "item_ids": [
-        "ee7ef5dff9f0"
-      ],
-      "created_at": "2026-05-30T15:16:50.720447+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "67ddbe659e407ea1": {
-      "topic": "Bad Bunny Adidas Collaboration Puerto Rico",
-      "item_ids": [
-        "fdeac3ff9ea1"
-      ],
-      "created_at": "2026-05-30T15:16:50.720447+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "86129a6e79659656": {
-      "topic": "Milo J Premios Gardel 13 Wins Record",
-      "item_ids": [
-        "a82d1f5ed447"
-      ],
-      "created_at": "2026-05-30T15:16:50.720447+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d75a8e80ce1cbdf5": {
-      "topic": "Charlie Puth MSG Concert Busta Rhymes Art Garfunkel Jimmy Fallon",
-      "item_ids": [
-        "79871d1f9087",
-        "a7fa4c161202"
-      ],
-      "created_at": "2026-05-30T15:16:50.720447+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f814239f203f02c8": {
-      "topic": "Colman Domingo Four Seasons Euphoria Career Interview",
-      "item_ids": [
-        "2f9b935eb858"
-      ],
-      "created_at": "2026-05-30T15:16:50.720447+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b7665581303d9030": {
-      "topic": "Nike Tiempo Streetgato Highlighter Pink Release",
-      "item_ids": [
-        "0a312cac428b"
-      ],
-      "created_at": "2026-05-30T16:18:29.612231+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "965c496769bac08e": {
-      "topic": "Hannah Waddingham Ted Lasso Ride or Die New Series",
-      "item_ids": [
-        "8d0885e41f9c"
-      ],
-      "created_at": "2026-05-30T16:18:29.612231+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "57beaa8c57c538d3": {
-      "topic": "Kelly Curtis Actress Death Obituary",
-      "item_ids": [
-        "1ceb718e3361",
-        "aa0d3dc26e9d",
-        "c2cf85f084df"
-      ],
-      "created_at": "2026-05-30T16:18:29.612231+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-30T18:43:50.378578+00:00",
-      "picks_file": "picks/picks-2026-05-30-1844.md",
-      "why_text": "Kelly Curtis, who appeared in films like *The Sentinel* and carried the weight of Hollywood royalty as the daughter of Tony Curtis and Janet Leigh, has died at 69. Though she lived largely outside her famous family's spotlight, her death closes a chapter on a generation of Old Hollywood legacy. Jamie Lee Curtis publicly mourning her sister makes this a rare, raw moment of grief playing out in real time for one of entertainment's most storied families.",
-      "last_escalated_item_ids": [
-        "1ceb718e3361",
-        "aa0d3dc26e9d",
-        "c2cf85f084df"
-      ]
-    },
-    "4a6c79c06ac8e03d": {
-      "topic": "Luke Bryan AI Song Controversy Songwriters",
-      "item_ids": [
-        "1902f015f2bc"
-      ],
-      "created_at": "2026-05-30T16:18:29.612231+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "feef049be3d0ea7c": {
-      "topic": "Vanilla Ice Milli Vanilli Freedom 250 Concert",
-      "item_ids": [
-        "860e0adeaf1d"
-      ],
-      "created_at": "2026-05-30T16:18:29.612231+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "39adfc55de049cd7": {
       "topic": "Josh Safdie 'Neighbors' Reality Series Emmy Submissions Robert Redford's Grandson",
       "item_ids": [
@@ -1238,7 +1142,80 @@
       "created_at": "2026-05-31T15:06:59.729944+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "2af89b959ace0da4": {
+      "topic": "Caitlin Clark Sneaker Releases Week",
+      "item_ids": [
+        "ee1c1b9df4d9"
+      ],
+      "created_at": "2026-05-31T16:22:36.749403+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a07d52b86455fc52": {
+      "topic": "Emma Corrin Marvel Villain Role Netflix Pride and Prejudice",
+      "item_ids": [
+        "7c626be1ba46"
+      ],
+      "created_at": "2026-05-31T16:22:36.749403+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "34fe412f621da955": {
+      "topic": "WWE Clash in Italy 2026 Livestream",
+      "item_ids": [
+        "4855f75f1615"
+      ],
+      "created_at": "2026-05-31T16:22:36.749403+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cbe5267599a2fdfd": {
+      "topic": "Jay-Z 2026 Roots Picnic Setlist",
+      "item_ids": [
+        "84a81922072b",
+        "4b199314797c"
+      ],
+      "created_at": "2026-05-31T16:22:36.749403+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "59a0efb358c17ecb": {
+      "topic": "Peter Gabriel Blue Moon New Song 'A Hard Lesson'",
+      "item_ids": [
+        "601a0cc3b0bd"
+      ],
+      "created_at": "2026-05-31T16:22:36.749403+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d6923fb28650b4d3": {
+      "topic": "Global Box Office Update Backrooms Obsession Michael",
+      "item_ids": [
+        "0ec083907735"
+      ],
+      "created_at": "2026-05-31T16:22:36.749403+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2239e68a9982163b": {
+      "topic": "Matt Brown Alaskan Bush People Star Death",
+      "item_ids": [
+        "0b7dd9dec5eb"
+      ],
+      "created_at": "2026-05-31T16:22:36.749403+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1f46a0376acaf92b": {
+      "topic": "AI Psychosis Debate",
+      "item_ids": [
+        "219fb65d984a"
+      ],
+      "created_at": "2026-05-31T16:22:36.749403+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T15:06:59.737896+00:00"
+  "last_checked": "2026-05-31T16:22:36.750387+00:00"
 }
