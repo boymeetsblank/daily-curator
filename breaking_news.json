@@ -1,6 +1,114 @@
 {
   "items": [
     {
+      "id": "8e2bc0d2bd1b",
+      "topic": "M.I.A. Sues Kid Cudi for $2.8 Million After Being Kicked Off ‘Rebel Rangers’ Tour",
+      "traffic": "",
+      "detected_at": "2026-05-31T23:18:42.661303+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/m-i-a-sues-kid-cudi-rebel-rangers-tour-1235570516/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "5cc40804e2304398"
+    },
+    {
+      "id": "6d0eb929ece4",
+      "topic": "Yanks overwhelm A's with historic 13-run inning",
+      "traffic": "",
+      "detected_at": "2026-05-31T23:18:42.661303+00:00",
+      "search_url": "https://www.espn.com/mlb/story/_/id/48933463/yankees-score-13-runs-inning-1st-21-years",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "3de35b2cc19ff647"
+    },
+    {
+      "id": "170796176d3f",
+      "topic": "Jays' Sanchez hurts wrist on ball thrown by fan",
+      "traffic": "",
+      "detected_at": "2026-05-31T23:18:42.661303+00:00",
+      "search_url": "https://www.espn.com/mlb/story/_/id/48932183/blue-jays-jesus-sanchez-bruises-wrist-ball-thrown-fan",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "6dfab5e3a726e73e"
+    },
+    {
+      "id": "fdb03ab1666d",
+      "topic": "Texas breaks up no-no, ousts Huskers from WCWS",
+      "traffic": "",
+      "detected_at": "2026-05-31T23:18:42.661303+00:00",
+      "search_url": "https://www.espn.com/college-softball/story/_/id/48933481/texas-breaks-jordy-frahm-no-hitter-eliminates-nebraska-women-college-world-series",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "736daa415adb684c"
+    },
+    {
+      "id": "4b83e46e5e1d",
+      "topic": "Everyone Has Their Targets Set on the MacBook Neo",
+      "traffic": "",
+      "detected_at": "2026-05-31T23:18:42.661303+00:00",
+      "search_url": "https://www.wired.com/story/everyone-has-their-targets-set-on-the-macbook-neo/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "ef2f02635d799f02"
+    },
+    {
+      "id": "3d529f4555fb",
+      "topic": "The new XPS 13 is Dell's answer to the MacBook Neo",
+      "traffic": "",
+      "detected_at": "2026-05-31T23:18:42.661303+00:00",
+      "search_url": "https://www.engadget.com/2184021/the-new-xps-13-is-dell-s-answer-to-the-macbook-neo/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "4fd72d576c296ad6"
+    },
+    {
+      "id": "a5b9a288f3cf",
+      "topic": "The Alienware AW3926QW is the world's first 39-inch 5K OLED monitor with an RGB stripe panel",
+      "traffic": "",
+      "detected_at": "2026-05-31T23:18:42.661303+00:00",
+      "search_url": "https://www.engadget.com/2184082/the-alienware-aw3926qw-is-the-world-s-first-39-inch-5k-oled-monitor-with-an-rgb-stripe-panel/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "335c57647e833ee8"
+    },
+    {
+      "id": "34cf38e90c1a",
+      "topic": "Vt ALS patient gets his voice back through AI technology - WCAX",
+      "traffic": "",
+      "detected_at": "2026-05-31T23:18:42.661303+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVHlwZnZMc2N2NDJDeE5DNU51YktaQ3g4UUxDMVFYYW5rUGxkdVRiV2x3eVZzQnNOS2JtUVFpd204TDF0UnZlTVBXVGo5ZmwtbndxanBGTHpMbEtFRkwzVHdfZUx0R3lkTkZkLVpDbFEwamNjcmZzb3JWNFNPeUw4dkZKc0pPakkzN04ycV9salFockJxYzc3RWc3OA?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "357b3ea2abc14e40"
+    },
+    {
+      "id": "2a0d1b95cfb6",
+      "topic": "Acuna",
+      "traffic": "##19 on X",
+      "detected_at": "2026-05-31T23:18:42.661303+00:00",
+      "search_url": "https://x.com/search?q=Acuna&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "282297e4579d",
+      "topic": "Clint Eastwood",
+      "traffic": "##20 on X",
+      "detected_at": "2026-05-31T23:18:42.661303+00:00",
+      "search_url": "https://x.com/search?q=Clint+Eastwood&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "343f7bc4e3ca",
       "topic": "The Super-Stacked Nike Vomero Premium Cleans Up In “Off White”",
       "traffic": "",
@@ -319,116 +427,7 @@
       "source_name": "X (Twitter) Trending",
       "source_type": "x",
       "haiku_score": 5
-    },
-    {
-      "id": "6c885ed92eea",
-      "topic": "Yuji",
-      "traffic": "##3 on X",
-      "detected_at": "2026-05-31T19:58:12.459659+00:00",
-      "search_url": "https://x.com/search?q=Yuji&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "0efebb1284f2",
-      "topic": "The New Balance 9060 Gets A High-Contrast “Timberwolf” Colorway",
-      "traffic": "",
-      "detected_at": "2026-05-31T18:48:44.739315+00:00",
-      "search_url": "https://sneakernews.com/2026/05/31/new-balance-9060-timberwolf-black-cement-u90606h1/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "9dbf98f2516e9eef"
-    },
-    {
-      "id": "1504b162d525",
-      "topic": "Highlife and Gang Gang Dance’s Doug Shaw Dies at 43",
-      "traffic": "",
-      "detected_at": "2026-05-31T18:48:44.739315+00:00",
-      "search_url": "https://pitchfork.com/news/highlife-and-gang-gang-dances-doug-shaw-dies-at-43/",
-      "source_name": "Pitchfork",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "b240cb97b1a880b1"
-    },
-    {
-      "id": "8d438bf9f7bb",
-      "topic": "Grammy-Winning Singer Peabo Bryson Under Medical Care After Suffering a Stroke",
-      "traffic": "",
-      "detected_at": "2026-05-31T18:48:44.739315+00:00",
-      "search_url": "https://www.billboard.com/music/rb-hip-hop/peabo-bryson-under-medical-care-after-suffering-stroke-1236261044/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "6892ee8f249f9f47"
-    },
-    {
-      "id": "24bf0667f47d",
-      "topic": "Panteón Rococó Draws Over 120,000 People to Massive Free Show in Mexico",
-      "traffic": "",
-      "detected_at": "2026-05-31T18:48:44.739315+00:00",
-      "search_url": "https://www.billboard.com/music/latin/panteon-rococo-draws-120000-people-free-mexico-show-1236261037/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "86e5bbb805b57469"
-    },
-    {
-      "id": "5305231bdfc9",
-      "topic": "WWII Drama ‘Pressure’ Sees Solid Opening, ‘Tuner’ Nice Expansion Amid Remarkable Indie Weekend — Specialty Box Office",
-      "traffic": "",
-      "detected_at": "2026-05-31T18:48:44.739315+00:00",
-      "search_url": "https://deadline.com/2026/05/indie-film-box-office-pressure-tuner-unusual-weekend-1236931352/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "e40d34a77cdc50ee"
-    },
-    {
-      "id": "e07f3a82d489",
-      "topic": "WWE Clash in Italy LIVE: Results and analysis for ...",
-      "traffic": "",
-      "detected_at": "2026-05-31T18:48:44.739315+00:00",
-      "search_url": "https://www.espn.com/wwe/story/_/id/48893227/wwe-clash-italy-live-results-analysis-roman-reigns-vs-jacob-fatu",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "34fe412f621da955"
-    },
-    {
-      "id": "16648e4a08c6",
-      "topic": "Ball State's Yates-Lyons, 18, dies after being sho...",
-      "traffic": "",
-      "detected_at": "2026-05-31T18:48:44.739315+00:00",
-      "search_url": "https://www.espn.com/college-football/story/_/id/48930784/ball-state-gavin-yates-lyons-18-dies-being-shot",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "c261fd2bbdc338df"
-    },
-    {
-      "id": "f8770a2a6f8d",
-      "topic": "Norway stuns Canada in OT of bronze medal game",
-      "traffic": "",
-      "detected_at": "2026-05-31T18:48:44.739315+00:00",
-      "search_url": "https://www.espn.com/olympics/story/_/id/48930277/canada-misses-hockey-worlds-medal-falls-norway-ot",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "791677ba660011c1"
-    },
-    {
-      "id": "647b396f87ea",
-      "topic": "Bettors heavily invested in Knicks to win Finals",
-      "traffic": "",
-      "detected_at": "2026-05-31T18:48:44.739315+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/48929879/bettors-heavily-invested-knicks-win-nba-finals",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "c6aa13ed5209fd4a"
     }
   ],
-  "last_checked": "2026-05-31T22:12:11.716331+00:00"
+  "last_checked": "2026-05-31T23:18:42.661303+00:00"
 }

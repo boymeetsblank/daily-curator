@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "0c7e53740d07",
-    "e320a86719bb",
-    "40dc28a7cad5",
-    "d2c2b9974bd1",
-    "3964023fa19f",
-    "aa28d704cb40",
-    "7a48ac4292ec",
-    "dfbe4073799e",
-    "0f942237e7a3",
-    "c87f159dd82a",
-    "8086a6b31b94",
-    "1298a16c75a0",
-    "29c7b9188235",
     "7c879b0eea14",
     "446a03507dd2",
     "0a110c6d38e5",
@@ -499,18 +486,22 @@
     "a6182b0750d7",
     "7148d338608d",
     "bdfdc24ac59a",
-    "5bcdae11e9cd"
+    "5bcdae11e9cd",
+    "8e2bc0d2bd1b",
+    "6d0eb929ece4",
+    "170796176d3f",
+    "fdb03ab1666d",
+    "4b83e46e5e1d",
+    "3d529f4555fb",
+    "a5b9a288f3cf",
+    "34cf38e90c1a",
+    "2a0d1b95cfb6",
+    "282297e4579d",
+    "6fecc9e92dac",
+    "9159dd0af171",
+    "5d12b7f89be5"
   ],
   "failed_ids": {
-    "b7485f749fd3": "2026-05-31T18:48:44.739315+00:00",
-    "cfe297cbb49d": "2026-05-31T18:48:44.739315+00:00",
-    "683bc168877f": "2026-05-31T18:48:44.739315+00:00",
-    "7cb79ee087a2": "2026-05-31T18:48:44.739315+00:00",
-    "b7793d9caac5": "2026-05-31T18:48:44.739315+00:00",
-    "f47b5f0ce275": "2026-05-31T18:48:44.739315+00:00",
-    "3a8315739213": "2026-05-31T18:48:44.739315+00:00",
-    "f31139bdc40f": "2026-05-31T18:48:44.739315+00:00",
-    "80917cfb671a": "2026-05-31T18:48:44.739315+00:00",
     "e663d663858d": "2026-05-31T19:58:12.459659+00:00",
     "25ff6a5964f4": "2026-05-31T19:58:12.459659+00:00",
     "cc5580671df6": "2026-05-31T19:58:12.459659+00:00",
@@ -525,19 +516,15 @@
     "1f72c960901d": "2026-05-31T22:12:11.716331+00:00",
     "6e20b0c3df6e": "2026-05-31T22:12:11.716331+00:00",
     "67865b3aed65": "2026-05-31T22:12:11.716331+00:00",
-    "51b21fad6017": "2026-05-31T22:12:11.716331+00:00"
+    "51b21fad6017": "2026-05-31T22:12:11.716331+00:00",
+    "1be3e450c37b": "2026-05-31T23:18:42.661303+00:00",
+    "317162800675": "2026-05-31T23:18:42.661303+00:00",
+    "3443ae937357": "2026-05-31T23:18:42.661303+00:00",
+    "d50b37d516b4": "2026-05-31T23:18:42.661303+00:00",
+    "1e3afbb8c225": "2026-05-31T23:18:42.661303+00:00",
+    "d424d9f57501": "2026-05-31T23:18:42.661303+00:00"
   },
   "live_clusters": {
-    "371359e1fb78359b": {
-      "topic": "Niall Horan Reflects on Liam Payne Death",
-      "item_ids": [
-        "30a3f9315b4e",
-        "6e9068116cb9"
-      ],
-      "created_at": "2026-05-30T23:14:20.602768+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "2f2ad145bd503bf0": {
       "topic": "Nike Air Max TL 2.5 Bright Violet Release",
       "item_ids": [
@@ -685,7 +672,8 @@
     "3de35b2cc19ff647": {
       "topic": "Yankees ABS Error Against Athletics",
       "item_ids": [
-        "6493ab9811da"
+        "6493ab9811da",
+        "6d0eb929ece4"
       ],
       "created_at": "2026-05-31T11:57:29.547957+00:00",
       "last_escalated_size": 0,
@@ -884,7 +872,8 @@
     "59a0efb358c17ecb": {
       "topic": "Peter Gabriel Blue Moon New Song 'A Hard Lesson'",
       "item_ids": [
-        "601a0cc3b0bd"
+        "601a0cc3b0bd",
+        "9159dd0af171"
       ],
       "created_at": "2026-05-31T16:22:36.749403+00:00",
       "last_escalated_size": 0,
@@ -1122,7 +1111,8 @@
     "4fd72d576c296ad6": {
       "topic": "Heated Rivalry Cast Actors on Actors Snub",
       "item_ids": [
-        "62abdbf3d0f3"
+        "62abdbf3d0f3",
+        "3d529f4555fb"
       ],
       "created_at": "2026-05-31T22:12:39.015662+00:00",
       "last_escalated_size": 0,
@@ -1154,7 +1144,61 @@
       "created_at": "2026-05-31T22:12:39.015662+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "5cc40804e2304398": {
+      "topic": "M.I.A. Sues Kid Cudi Rebel Rangers Tour Removal",
+      "item_ids": [
+        "8e2bc0d2bd1b"
+      ],
+      "created_at": "2026-05-31T23:19:14.034048+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6dfab5e3a726e73e": {
+      "topic": "Jays Sanchez Wrist Injury Fan-Thrown Ball",
+      "item_ids": [
+        "170796176d3f"
+      ],
+      "created_at": "2026-05-31T23:19:14.034048+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "736daa415adb684c": {
+      "topic": "Texas Baseball No-Hitter Breaks WCWS Huskers",
+      "item_ids": [
+        "fdb03ab1666d"
+      ],
+      "created_at": "2026-05-31T23:19:14.034048+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ef2f02635d799f02": {
+      "topic": "MacBook Neo Competitor Landscape",
+      "item_ids": [
+        "4b83e46e5e1d"
+      ],
+      "created_at": "2026-05-31T23:19:14.034048+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "335c57647e833ee8": {
+      "topic": "Alienware AW3926QW 39-inch 5K OLED Monitor Launch",
+      "item_ids": [
+        "a5b9a288f3cf"
+      ],
+      "created_at": "2026-05-31T23:19:14.034048+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "357b3ea2abc14e40": {
+      "topic": "ALS Patient Voice Restoration AI Technology",
+      "item_ids": [
+        "34cf38e90c1a"
+      ],
+      "created_at": "2026-05-31T23:19:14.034048+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T22:12:39.017059+00:00"
+  "last_checked": "2026-05-31T23:19:14.035181+00:00"
 }
