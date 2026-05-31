@@ -1,16 +1,5 @@
 {
   "known_ids": [
-    "3045e19e0462",
-    "d07c2781e933",
-    "e4524f4f9788",
-    "dff683541076",
-    "a1269e014cab",
-    "400fffeced0f",
-    "369cb6e9a62e",
-    "0b9a450cb505",
-    "3c3eaaaa0fac",
-    "e5dd7b2d6706",
-    "5328b359df14",
     "0c7e53740d07",
     "e320a86719bb",
     "40dc28a7cad5",
@@ -499,20 +488,20 @@
     "907a1a207433",
     "db2afb74cc5e",
     "a62f0c172218",
-    "d24ecf233de5"
+    "d24ecf233de5",
+    "343f7bc4e3ca",
+    "62abdbf3d0f3",
+    "0d6d49980ed2",
+    "92c124cbf702",
+    "a6a6a5412cab",
+    "90b3aa30e07b",
+    "98e922dc8e4a",
+    "a6182b0750d7",
+    "7148d338608d",
+    "bdfdc24ac59a",
+    "5bcdae11e9cd"
   ],
   "failed_ids": {
-    "4fd76c6e032f": "2026-05-31T17:34:51.593535+00:00",
-    "65d0d1bd05ec": "2026-05-31T17:34:51.593535+00:00",
-    "976fd353f7fe": "2026-05-31T17:34:51.593535+00:00",
-    "3a04a64def6c": "2026-05-31T17:34:51.593535+00:00",
-    "d8257e3b8d58": "2026-05-31T17:34:51.593535+00:00",
-    "8f918efa714d": "2026-05-31T17:34:51.593535+00:00",
-    "0729ef3ee884": "2026-05-31T17:34:51.593535+00:00",
-    "6110b10da3e8": "2026-05-31T17:34:51.593535+00:00",
-    "6749a508600b": "2026-05-31T17:34:51.593535+00:00",
-    "7b97b6286ded": "2026-05-31T17:34:51.593535+00:00",
-    "dea46831a7f0": "2026-05-31T17:34:51.593535+00:00",
     "b7485f749fd3": "2026-05-31T18:48:44.739315+00:00",
     "cfe297cbb49d": "2026-05-31T18:48:44.739315+00:00",
     "683bc168877f": "2026-05-31T18:48:44.739315+00:00",
@@ -531,37 +520,14 @@
     "a8d48fac0a51": "2026-05-31T19:58:12.459659+00:00",
     "14fd4be4fb33": "2026-05-31T19:58:12.459659+00:00",
     "33c00ea70304": "2026-05-31T21:07:35.780213+00:00",
-    "71b07a04291f": "2026-05-31T21:07:35.780213+00:00"
+    "71b07a04291f": "2026-05-31T21:07:35.780213+00:00",
+    "cfd016097b99": "2026-05-31T22:12:11.716331+00:00",
+    "1f72c960901d": "2026-05-31T22:12:11.716331+00:00",
+    "6e20b0c3df6e": "2026-05-31T22:12:11.716331+00:00",
+    "67865b3aed65": "2026-05-31T22:12:11.716331+00:00",
+    "51b21fad6017": "2026-05-31T22:12:11.716331+00:00"
   },
   "live_clusters": {
-    "c2ce370d124f4008": {
-      "topic": "Nike Shox R4 Green Camo Release",
-      "item_ids": [
-        "0783b2abb6ed"
-      ],
-      "created_at": "2026-05-30T22:10:00.945963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5dc2f2e471916abd": {
-      "topic": "YouTuber-Directed Films Box Office Weekend",
-      "item_ids": [
-        "b6fd04d690e3",
-        "43b874f58198"
-      ],
-      "created_at": "2026-05-30T22:10:00.945963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5386a503b9e5e337": {
-      "topic": "Lamine Yamal Beats Headphones Announcement",
-      "item_ids": [
-        "37c73d600602"
-      ],
-      "created_at": "2026-05-30T22:10:00.945963+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "371359e1fb78359b": {
       "topic": "Niall Horan Reflects on Liam Payne Death",
       "item_ids": [
@@ -930,7 +896,8 @@
         "0ec083907735",
         "2167b291d16b",
         "6e307c994e58",
-        "bd2acafd1b79"
+        "bd2acafd1b79",
+        "a6a6a5412cab"
       ],
       "created_at": "2026-05-31T16:22:36.749403+00:00",
       "last_escalated_size": 3,
@@ -1142,7 +1109,52 @@
       "created_at": "2026-05-31T21:08:10.582007+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "92f6d3b2ab16c386": {
+      "topic": "Nike Vomero Premium Off White Release",
+      "item_ids": [
+        "343f7bc4e3ca"
+      ],
+      "created_at": "2026-05-31T22:12:39.015662+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4fd72d576c296ad6": {
+      "topic": "Heated Rivalry Cast Actors on Actors Snub",
+      "item_ids": [
+        "62abdbf3d0f3"
+      ],
+      "created_at": "2026-05-31T22:12:39.015662+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8222fb04d6c2e69d": {
+      "topic": "Ariana Grande Hate That I Made You Love Me Chart Performance",
+      "item_ids": [
+        "0d6d49980ed2"
+      ],
+      "created_at": "2026-05-31T22:12:39.015662+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "863e0d5dc8205fa2": {
+      "topic": "David Tennant The Four Seasons Casting",
+      "item_ids": [
+        "92c124cbf702"
+      ],
+      "created_at": "2026-05-31T22:12:39.015662+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d609badbd1185fa2": {
+      "topic": "House of the Dragon Season 3 Production Details ATX TV Festival",
+      "item_ids": [
+        "90b3aa30e07b"
+      ],
+      "created_at": "2026-05-31T22:12:39.015662+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T21:08:10.583055+00:00"
+  "last_checked": "2026-05-31T22:12:39.017059+00:00"
 }
