@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "5817a44657dc",
-    "1f0642b0a3ca",
-    "0dba402b91db",
-    "15f7c1e0ba96",
-    "6cf5b03a7a7f",
-    "d8e632b0f15a",
-    "4be1b59a1447",
-    "3f74da50a863",
-    "63394a4a7597",
-    "73e2d2e2f2e6",
-    "fb33d2bf9b18",
-    "3f30a7fdc184",
-    "7e15f7e75ab9",
-    "2f03750fa4cc",
-    "f49c6db96c8f",
     "b14c00526c43",
     "d81feb8e41f8",
     "a290266f21c8",
@@ -499,13 +484,24 @@
     "a865f5b35451",
     "b3ca39e18f96",
     "53cfaa037e3c",
-    "9a35d628801e"
+    "9a35d628801e",
+    "bab62f04bfd0",
+    "36d61a874393",
+    "8c0227523083",
+    "a7fa4c161202",
+    "6e9068116cb9",
+    "7cd8fcbc9d23",
+    "9a48aba43b24",
+    "ddeabd4238b4",
+    "4c4937f3a56b",
+    "7c2b62906394",
+    "0ce3530f1162",
+    "b4350f0a330d",
+    "8695d8aa611a",
+    "f3036589a081",
+    "d9bfe7bfa393"
   ],
   "failed_ids": {
-    "8c52b7507723": "2026-05-30T19:57:01.864429+00:00",
-    "52fe2d8a7c11": "2026-05-30T19:57:01.864429+00:00",
-    "a60df2a1871f": "2026-05-30T19:57:01.864429+00:00",
-    "aa2fc34bf9b2": "2026-05-30T19:57:01.864429+00:00",
     "9c20a65749b1": "2026-05-30T21:01:34.663349+00:00",
     "29a49df512f8": "2026-05-30T21:01:34.663349+00:00",
     "5c35af5dcec6": "2026-05-30T21:01:34.663349+00:00",
@@ -518,99 +514,13 @@
     "f2a37dc1f13b": "2026-05-30T23:13:48.846118+00:00",
     "bce891591a32": "2026-05-30T23:13:48.846118+00:00",
     "589704aa8f2c": "2026-05-30T23:13:48.846118+00:00",
-    "8aa50225ed10": "2026-05-30T23:13:48.846118+00:00"
+    "8aa50225ed10": "2026-05-30T23:13:48.846118+00:00",
+    "b2c9bfde27e6": "2026-05-31T00:15:39.696212+00:00",
+    "6fb2c36618ca": "2026-05-31T00:15:39.696212+00:00",
+    "92a950824275": "2026-05-31T00:15:39.696212+00:00",
+    "f30769de888a": "2026-05-31T00:15:39.696212+00:00"
   },
   "live_clusters": {
-    "abf5856a77cec9ba": {
-      "topic": "Marcia Lucas Star Wars Editor Death Obituary",
-      "item_ids": [
-        "3f80831f496f",
-        "3ec6022a9d97",
-        "75d6f0e4ec70",
-        "cd380d86169c"
-      ],
-      "created_at": "2026-05-29T23:57:03.617619+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-30T16:17:55.449505+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "3f80831f496f",
-        "3ec6022a9d97",
-        "75d6f0e4ec70"
-      ]
-    },
-    "f9c3231690967446": {
-      "topic": "Deli Boys Season 2 Character Romance",
-      "item_ids": [
-        "48ae559f0654"
-      ],
-      "created_at": "2026-05-29T23:57:03.617619+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d8c8fed4f0a5d02c": {
-      "topic": "Dutton Ranch Episode 4 Plot Summary",
-      "item_ids": [
-        "5001150c96ed"
-      ],
-      "created_at": "2026-05-29T23:57:03.617619+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6e1de7f983861a9a": {
-      "topic": "DJ Screw Catalog Streaming Release",
-      "item_ids": [
-        "674203e0afff"
-      ],
-      "created_at": "2026-05-29T23:57:03.617619+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dec1d08f49c32d81": {
-      "topic": "Drake Canadian Hot 100 Chart Records",
-      "item_ids": [
-        "ed308a66f0f3"
-      ],
-      "created_at": "2026-05-29T23:57:03.617619+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e28de1a67320679e": {
-      "topic": "UK Chart Songs 8+ Weeks Not Top 10 Hot 100",
-      "item_ids": [
-        "ba79212ce153"
-      ],
-      "created_at": "2026-05-29T23:57:03.617619+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e91ce1e6e98da9af": {
-      "topic": "Real Housewives New York Season 16 Cast Addition",
-      "item_ids": [
-        "9d6e2616d0ee"
-      ],
-      "created_at": "2026-05-29T23:57:03.617619+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5a278849b6b8f485": {
-      "topic": "Danny Boyle 28 Years Later III Filming Plans",
-      "item_ids": [
-        "9ba7b67b8f93"
-      ],
-      "created_at": "2026-05-29T23:57:03.617619+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7a98cac1536d3d2f": {
-      "topic": "Giants Olszewski Torn Achilles Injury",
-      "item_ids": [
-        "bad7ebda5ec9"
-      ],
-      "created_at": "2026-05-29T23:57:03.617619+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "555d2ccb46936f13": {
       "topic": "Clive Davis Hospitalized Respiratory Issue",
       "item_ids": [
@@ -811,7 +721,8 @@
     "d75a8e80ce1cbdf5": {
       "topic": "Charlie Puth MSG Concert Busta Rhymes Art Garfunkel Jimmy Fallon",
       "item_ids": [
-        "79871d1f9087"
+        "79871d1f9087",
+        "a7fa4c161202"
       ],
       "created_at": "2026-05-30T15:16:50.720447+00:00",
       "last_escalated_size": 0,
@@ -1138,11 +1049,19 @@
       "topic": "PSG Champions League Victory Official Merchandise",
       "item_ids": [
         "3d70ababc219",
-        "d4e6bc81bf61"
+        "d4e6bc81bf61",
+        "7c2b62906394"
       ],
       "created_at": "2026-05-30T21:02:08.653135+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-05-31T00:15:39.696212+00:00",
+      "picks_file": "picks/picks-2026-05-31-0016.md",
+      "why_text": "Paris Saint-Germain have claimed the UEFA Champions League title, defeating Arsenal in a penalty shootout \u2014 a moment that rewrites the narrative around a club that spent years as Europe's most expensive underachievers. It's a vindication of the post-Mbapp\u00e9 rebuild and proof that PSG's project finally has silverware to match its ambition. The merch rush is already on, which tells you everything about how big this landing is.",
+      "last_escalated_item_ids": [
+        "3d70ababc219",
+        "d4e6bc81bf61",
+        "7c2b62906394"
+      ]
     },
     "c2ce370d124f4008": {
       "topic": "Nike Shox R4 Green Camo Release",
@@ -1174,12 +1093,76 @@
     "371359e1fb78359b": {
       "topic": "Niall Horan Reflects on Liam Payne Death",
       "item_ids": [
-        "30a3f9315b4e"
+        "30a3f9315b4e",
+        "6e9068116cb9"
       ],
       "created_at": "2026-05-30T23:14:20.602768+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "2f2ad145bd503bf0": {
+      "topic": "Nike Air Max TL 2.5 Bright Violet Release",
+      "item_ids": [
+        "bab62f04bfd0"
+      ],
+      "created_at": "2026-05-31T00:16:09.033779+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "94783bae45a9f2ea": {
+      "topic": "Love Island USA Cast Member N-Word Controversy Dismissal",
+      "item_ids": [
+        "36d61a874393"
+      ],
+      "created_at": "2026-05-31T00:16:09.033779+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "da385db2bf713d2c": {
+      "topic": "Michael De Luca Development Funding Pipeline Warning",
+      "item_ids": [
+        "8c0227523083"
+      ],
+      "created_at": "2026-05-31T00:16:09.033779+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2347e33ee5beed9d": {
+      "topic": "Tiafoe Faria Tennis Five-Set Match",
+      "item_ids": [
+        "7cd8fcbc9d23"
+      ],
+      "created_at": "2026-05-31T00:16:09.033779+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7d12fea6d7be5e28": {
+      "topic": "Barkov Finland Ice Hockey Victory Canada",
+      "item_ids": [
+        "9a48aba43b24"
+      ],
+      "created_at": "2026-05-31T00:16:09.033779+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c4c8ee8925f0f49b": {
+      "topic": "Vikings Hire Teasley GM Seahawks",
+      "item_ids": [
+        "ddeabd4238b4"
+      ],
+      "created_at": "2026-05-31T00:16:09.033779+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e4757ebbd47e30b0": {
+      "topic": "Baseball CBA Negotiation Battle Breakdown",
+      "item_ids": [
+        "4c4937f3a56b"
+      ],
+      "created_at": "2026-05-31T00:16:09.033779+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-30T23:14:20.603912+00:00"
+  "last_checked": "2026-05-31T00:16:13.778932+00:00"
 }
