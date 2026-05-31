@@ -1,17 +1,5 @@
 {
   "known_ids": [
-    "b14c00526c43",
-    "d81feb8e41f8",
-    "a290266f21c8",
-    "6e04d8d8a28d",
-    "4ac05351b7da",
-    "2806888dde8e",
-    "164ede48f839",
-    "6552927e6813",
-    "ef488b34aa9f",
-    "328be4f7e0fd",
-    "6c07c4c3f2e6",
-    "d73c226ef275",
     "50df41cc6acf",
     "3faea2c5d6f1",
     "0fa78a4b6f37",
@@ -499,48 +487,24 @@
     "b4350f0a330d",
     "8695d8aa611a",
     "f3036589a081",
-    "d9bfe7bfa393"
+    "d9bfe7bfa393",
+    "447dceacb1eb",
+    "036aa3042dc5",
+    "b3191a1b87c9",
+    "9f92ba1fa219",
+    "530cc0ab517f",
+    "f9e414ad82ac",
+    "696b876dc442",
+    "b7e0533d94e6",
+    "0e842a92b454",
+    "c5f35af93b8c",
+    "b0be3b84d552",
+    "f7f24b3894e1"
   ],
   "failed_ids": {
-    "9c20a65749b1": "2026-05-30T21:01:34.663349+00:00",
-    "29a49df512f8": "2026-05-30T21:01:34.663349+00:00",
-    "5c35af5dcec6": "2026-05-30T21:01:34.663349+00:00",
-    "ccd21af5af5e": "2026-05-30T22:09:30.945042+00:00",
-    "389bbf7e8089": "2026-05-30T22:09:30.945042+00:00",
-    "4f54dd187fdc": "2026-05-30T22:09:30.945042+00:00",
-    "dc0ab7c8cab6": "2026-05-30T22:09:30.945042+00:00",
-    "45a919a0e7e0": "2026-05-30T22:09:30.945042+00:00",
-    "390ad7abda09": "2026-05-30T22:09:30.945042+00:00",
-    "f2a37dc1f13b": "2026-05-30T23:13:48.846118+00:00",
-    "bce891591a32": "2026-05-30T23:13:48.846118+00:00",
-    "589704aa8f2c": "2026-05-30T23:13:48.846118+00:00",
-    "8aa50225ed10": "2026-05-30T23:13:48.846118+00:00",
-    "b2c9bfde27e6": "2026-05-31T00:15:39.696212+00:00",
-    "6fb2c36618ca": "2026-05-31T00:15:39.696212+00:00",
-    "92a950824275": "2026-05-31T00:15:39.696212+00:00",
-    "f30769de888a": "2026-05-31T00:15:39.696212+00:00"
+    "0f25fc833adf": "2026-05-31T04:55:14.582204+00:00"
   },
   "live_clusters": {
-    "555d2ccb46936f13": {
-      "topic": "Clive Davis Hospitalized Respiratory Issue",
-      "item_ids": [
-        "dc39630c842c",
-        "48436baf7cc3"
-      ],
-      "created_at": "2026-05-30T03:35:16.533419+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9db0504697c20971": {
-      "topic": "SEONGHYEON LOEWE Fashion Campaign",
-      "item_ids": [
-        "c66e32c9e428",
-        "6226701659db"
-      ],
-      "created_at": "2026-05-30T03:35:16.533419+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "3a0d6edb788965a0": {
       "topic": "Paul McCartney Beatles Family Grounding Interview",
       "item_ids": [
@@ -913,11 +877,21 @@
       "topic": "Spurs vs Thunder NBA Western Conference Finals Game 7",
       "item_ids": [
         "f329ab302ca3",
-        "1bb8475dbafe"
+        "1bb8475dbafe",
+        "b3191a1b87c9",
+        "9f92ba1fa219"
       ],
       "created_at": "2026-05-30T18:44:18.178131+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-05-31T04:55:14.582204+00:00",
+      "picks_file": "picks/picks-2026-05-31-0455.md",
+      "why_text": "Victor Wembanyama just announced himself on the biggest stage possible \u2014 leading San Antonio past OKC in a Game 7 thriller to put the Spurs back in the NBA Finals. This isn't just a basketball story; it's the accelerated coronation of the most hyped prospect in a generation, and it's happening faster than anyone predicted. The league's entire narrative just shifted.",
+      "last_escalated_item_ids": [
+        "f329ab302ca3",
+        "1bb8475dbafe",
+        "b3191a1b87c9",
+        "9f92ba1fa219"
+      ]
     },
     "6f7008c1eea5a070": {
       "topic": "John Candy Documentary Colin Hanks Contenders TV",
@@ -1050,7 +1024,8 @@
       "item_ids": [
         "3d70ababc219",
         "d4e6bc81bf61",
-        "7c2b62906394"
+        "7c2b62906394",
+        "c5f35af93b8c"
       ],
       "created_at": "2026-05-30T21:02:08.653135+00:00",
       "last_escalated_size": 3,
@@ -1162,7 +1137,61 @@
       "created_at": "2026-05-31T00:16:09.033779+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "da35a42fb45a91db": {
+      "topic": "Macy Gray Australia Tour Expansion",
+      "item_ids": [
+        "447dceacb1eb"
+      ],
+      "created_at": "2026-05-31T04:55:42.368383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "408ecd1d5944db50": {
+      "topic": "Billy Eichler Billy On The Street Revival Discussion",
+      "item_ids": [
+        "036aa3042dc5"
+      ],
+      "created_at": "2026-05-31T04:55:42.368383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d3e2bf61a126d8b6": {
+      "topic": "Lemieux Brain Donation CTE Research",
+      "item_ids": [
+        "530cc0ab517f"
+      ],
+      "created_at": "2026-05-31T04:55:42.368383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b00a8d646bd77de3": {
+      "topic": "Fever Clark Scoring Slump Loss",
+      "item_ids": [
+        "f9e414ad82ac"
+      ],
+      "created_at": "2026-05-31T04:55:42.368383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c05853cf87e60d2e": {
+      "topic": "Tatis 451-Foot Home Run MLB Drought",
+      "item_ids": [
+        "696b876dc442"
+      ],
+      "created_at": "2026-05-31T04:55:42.368383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f5a9ceb6021ca50b": {
+      "topic": "Alibaba UEFA AI 6-Year Deal 360 Replay Technology",
+      "item_ids": [
+        "b7e0533d94e6"
+      ],
+      "created_at": "2026-05-31T04:55:42.368383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T00:16:13.778932+00:00"
+  "last_checked": "2026-05-31T04:55:46.741907+00:00"
 }
