@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "e068403d1420",
-    "51831dd26fdc",
-    "873652407ff7",
-    "d69a040d92dd",
-    "0d22b3289c3b",
-    "3ac158f51482",
-    "523af10c8b76",
-    "fa304b3484d5",
-    "519f8823f240",
-    "1954f60ba7bc",
-    "1ca564770fb7",
-    "a38385bc197d",
-    "2675064433e1",
-    "be3e7ff885d6",
     "0d0e5a68c9d5",
     "118c0f625cc6",
     "e7b79d73ff1e",
@@ -499,14 +485,23 @@
     "4126c4f9285a",
     "8cca6962aafe",
     "7a25460b5d68",
-    "4f39781333c9"
+    "4f39781333c9",
+    "0efebb1284f2",
+    "1504b162d525",
+    "8d438bf9f7bb",
+    "24bf0667f47d",
+    "5305231bdfc9",
+    "e07f3a82d489",
+    "16648e4a08c6",
+    "f8770a2a6f8d",
+    "647b396f87ea",
+    "43b874f58198",
+    "c1384759d49d",
+    "0a7bee89c089",
+    "de677ab45d2b",
+    "eb6cc5980e3c"
   ],
   "failed_ids": {
-    "6b05dbe7eb27": "2026-05-31T13:49:38.031359+00:00",
-    "ffafe6a022ad": "2026-05-31T13:49:38.031359+00:00",
-    "ae10069f0e29": "2026-05-31T13:49:38.031359+00:00",
-    "64ea5337a3d6": "2026-05-31T13:49:38.031359+00:00",
-    "ea03008e1bbc": "2026-05-31T13:49:38.031359+00:00",
     "118870f9f623": "2026-05-31T15:06:32.643003+00:00",
     "e19076da56eb": "2026-05-31T15:06:32.643003+00:00",
     "c37a279be9a2": "2026-05-31T15:06:32.643003+00:00",
@@ -529,97 +524,18 @@
     "6110b10da3e8": "2026-05-31T17:34:51.593535+00:00",
     "6749a508600b": "2026-05-31T17:34:51.593535+00:00",
     "7b97b6286ded": "2026-05-31T17:34:51.593535+00:00",
-    "dea46831a7f0": "2026-05-31T17:34:51.593535+00:00"
+    "dea46831a7f0": "2026-05-31T17:34:51.593535+00:00",
+    "b7485f749fd3": "2026-05-31T18:48:44.739315+00:00",
+    "cfe297cbb49d": "2026-05-31T18:48:44.739315+00:00",
+    "683bc168877f": "2026-05-31T18:48:44.739315+00:00",
+    "7cb79ee087a2": "2026-05-31T18:48:44.739315+00:00",
+    "b7793d9caac5": "2026-05-31T18:48:44.739315+00:00",
+    "f47b5f0ce275": "2026-05-31T18:48:44.739315+00:00",
+    "3a8315739213": "2026-05-31T18:48:44.739315+00:00",
+    "f31139bdc40f": "2026-05-31T18:48:44.739315+00:00",
+    "80917cfb671a": "2026-05-31T18:48:44.739315+00:00"
   },
   "live_clusters": {
-    "149b721f37e11c88": {
-      "topic": "New Balance P400 'Bulls' Colorway Release",
-      "item_ids": [
-        "0bab009a28c4"
-      ],
-      "created_at": "2026-05-30T18:44:18.178131+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f04fcbd90a38ac78": {
-      "topic": "Spurs vs Thunder NBA Western Conference Finals Game 7",
-      "item_ids": [
-        "f329ab302ca3",
-        "1bb8475dbafe",
-        "b3191a1b87c9",
-        "9f92ba1fa219",
-        "b6d0ae4530d8",
-        "3ab468916075",
-        "b7517003f1c8",
-        "5f9c54b8f6b2",
-        "e1a7aec9129d",
-        "1b6e8bb3eaf1",
-        "9d8caf91100b",
-        "b036531bdf23"
-      ],
-      "created_at": "2026-05-30T18:44:18.178131+00:00",
-      "last_escalated_size": 10,
-      "last_escalated_at": "2026-05-31T10:25:47.022545+00:00",
-      "picks_file": "picks/picks-2026-05-31-0455.md",
-      "why_text": "Victor Wembanyama just announced himself on the biggest stage possible \u2014 leading San Antonio past OKC in a Game 7 thriller to put the Spurs back in the NBA Finals. This isn't just a basketball story; it's the accelerated coronation of the most hyped prospect in a generation, and it's happening faster than anyone predicted. The league's entire narrative just shifted.\n**Update 5:26 AM CT:** Shai Gilgeous-Alexander and Alex Caruso couldn't rescue the Thunder, with SGA's elimination performance already dominating post-game discourse \u2014 but the basketball internet has pivoted fast, with 'Knicks in 6' flooding timelines as New York awaits Wembanyama and the Spurs in the NBA Finals.",
-      "last_escalated_item_ids": [
-        "f329ab302ca3",
-        "1bb8475dbafe",
-        "b3191a1b87c9",
-        "9f92ba1fa219",
-        "b6d0ae4530d8",
-        "3ab468916075",
-        "b7517003f1c8",
-        "5f9c54b8f6b2",
-        "e1a7aec9129d",
-        "1b6e8bb3eaf1"
-      ]
-    },
-    "6f7008c1eea5a070": {
-      "topic": "John Candy Documentary Colin Hanks Contenders TV",
-      "item_ids": [
-        "532b39678441"
-      ],
-      "created_at": "2026-05-30T18:44:18.178131+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b9aa08629a157d54": {
-      "topic": "Lilith Fair Documentary Director Contenders TV",
-      "item_ids": [
-        "311782922d4b"
-      ],
-      "created_at": "2026-05-30T18:44:18.178131+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "57afc302e0399e9c": {
-      "topic": "Lost Women of Alaska Octavia Spencer Docuseries Contenders TV",
-      "item_ids": [
-        "da09405b6413"
-      ],
-      "created_at": "2026-05-30T18:44:18.178131+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3a1b69d8125a7ba0": {
-      "topic": "The Dorians Red Roots Weekend Reading",
-      "item_ids": [
-        "aee64ccd3a4a"
-      ],
-      "created_at": "2026-05-30T18:44:18.178131+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "14d5b997a73c95b3": {
-      "topic": "Playstack Publisher Balatro Private Equity Acquisition",
-      "item_ids": [
-        "50bc1690e99a"
-      ],
-      "created_at": "2026-05-30T18:44:18.178131+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "94d0fdfb706194cd": {
       "topic": "Samsung BTS Arirang World Tour Fan Activations",
       "item_ids": [
@@ -686,7 +602,8 @@
     "9dbf98f2516e9eef": {
       "topic": "New Balance 9060 Autumnal Colorway Release",
       "item_ids": [
-        "b5743dd477d3"
+        "b5743dd477d3",
+        "0efebb1284f2"
       ],
       "created_at": "2026-05-30T21:02:08.653135+00:00",
       "last_escalated_size": 0,
@@ -733,7 +650,8 @@
     "5dc2f2e471916abd": {
       "topic": "YouTuber-Directed Films Box Office Weekend",
       "item_ids": [
-        "b6fd04d690e3"
+        "b6fd04d690e3",
+        "43b874f58198"
       ],
       "created_at": "2026-05-30T22:10:00.945963+00:00",
       "last_escalated_size": 0,
@@ -1013,7 +931,8 @@
     "af9087d362fc9dc7": {
       "topic": "AI On The Lot Conference Hollywood Perspectives",
       "item_ids": [
-        "e5c45e881781"
+        "e5c45e881781",
+        "0a7bee89c089"
       ],
       "created_at": "2026-05-31T15:06:59.729944+00:00",
       "last_escalated_size": 0,
@@ -1067,7 +986,8 @@
     "34fe412f621da955": {
       "topic": "WWE Clash in Italy 2026 Livestream",
       "item_ids": [
-        "4855f75f1615"
+        "4855f75f1615",
+        "e07f3a82d489"
       ],
       "created_at": "2026-05-31T16:22:36.749403+00:00",
       "last_escalated_size": 0,
@@ -1162,7 +1082,79 @@
       "created_at": "2026-05-31T17:35:24.785664+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b240cb97b1a880b1": {
+      "topic": "Gang Gang Dance Doug Shaw Death",
+      "item_ids": [
+        "1504b162d525"
+      ],
+      "created_at": "2026-05-31T18:49:21.603668+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6892ee8f249f9f47": {
+      "topic": "Peabo Bryson Stroke Medical Emergency",
+      "item_ids": [
+        "8d438bf9f7bb"
+      ],
+      "created_at": "2026-05-31T18:49:21.603668+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "86e5bbb805b57469": {
+      "topic": "Pante\u00f3n Rococ\u00f3 Mexico Free Concert 120K Attendance",
+      "item_ids": [
+        "24bf0667f47d"
+      ],
+      "created_at": "2026-05-31T18:49:21.603668+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e40d34a77cdc50ee": {
+      "topic": "Pressure WWII Drama Box Office Opening Weekend",
+      "item_ids": [
+        "5305231bdfc9"
+      ],
+      "created_at": "2026-05-31T18:49:21.603668+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c261fd2bbdc338df": {
+      "topic": "Ball State Yates-Lyons Student Death",
+      "item_ids": [
+        "16648e4a08c6"
+      ],
+      "created_at": "2026-05-31T18:49:21.603668+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "791677ba660011c1": {
+      "topic": "Norway Canada Bronze Medal OT Ice Hockey",
+      "item_ids": [
+        "f8770a2a6f8d"
+      ],
+      "created_at": "2026-05-31T18:49:21.603668+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c6aa13ed5209fd4a": {
+      "topic": "Knicks NBA Finals Betting Momentum",
+      "item_ids": [
+        "647b396f87ea"
+      ],
+      "created_at": "2026-05-31T18:49:21.603668+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f7fe5b0bce3b2be8": {
+      "topic": "KC Green This Is Fine Artist AI Artisan Agreement",
+      "item_ids": [
+        "c1384759d49d"
+      ],
+      "created_at": "2026-05-31T18:49:21.603668+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T17:35:24.807781+00:00"
+  "last_checked": "2026-05-31T18:49:21.604892+00:00"
 }
