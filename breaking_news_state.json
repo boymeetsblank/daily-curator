@@ -1,13 +1,5 @@
 {
   "known_ids": [
-    "215f2c4289ca",
-    "b1edf888124c",
-    "dd8851c816e7",
-    "783f3c91971a",
-    "265d7864c18b",
-    "e6051ae5b064",
-    "0bada6e97360",
-    "c7127ebb5741",
     "2fb9701b6a79",
     "30407b9765ed",
     "9f1ac71754c5",
@@ -499,18 +491,17 @@
     "13bc915818a9",
     "6a09065bfdae",
     "56ea29c6cf34",
-    "2cda1670779a"
+    "2cda1670779a",
+    "e5c45e881781",
+    "d11ddbb842b3",
+    "c0d7d242da2b",
+    "1c2d188e9ac4",
+    "b93468cd8431",
+    "0372d847cdfc",
+    "69ad246611d1",
+    "8bd7db9a8202"
   ],
   "failed_ids": {
-    "2022057dc42a": "2026-05-31T10:25:47.022545+00:00",
-    "f28bcb0b4494": "2026-05-31T10:25:47.022545+00:00",
-    "cc8474ba6f1b": "2026-05-31T10:25:47.022545+00:00",
-    "b3e9f5ae047b": "2026-05-31T10:25:47.022545+00:00",
-    "5cac87b31dc9": "2026-05-31T10:25:47.022545+00:00",
-    "dd83ec3874b9": "2026-05-31T10:25:47.022545+00:00",
-    "7cc794d729b2": "2026-05-31T10:25:47.022545+00:00",
-    "7546d590ca5e": "2026-05-31T10:25:47.022545+00:00",
-    "77f0f5c31ec1": "2026-05-31T10:25:47.022545+00:00",
     "ace71dc82772": "2026-05-31T11:56:59.620908+00:00",
     "575f993c77db": "2026-05-31T11:56:59.620908+00:00",
     "d596877ac3c4": "2026-05-31T11:56:59.620908+00:00",
@@ -518,28 +509,14 @@
     "ffafe6a022ad": "2026-05-31T13:49:38.031359+00:00",
     "ae10069f0e29": "2026-05-31T13:49:38.031359+00:00",
     "64ea5337a3d6": "2026-05-31T13:49:38.031359+00:00",
-    "ea03008e1bbc": "2026-05-31T13:49:38.031359+00:00"
+    "ea03008e1bbc": "2026-05-31T13:49:38.031359+00:00",
+    "118870f9f623": "2026-05-31T15:06:32.643003+00:00",
+    "e19076da56eb": "2026-05-31T15:06:32.643003+00:00",
+    "c37a279be9a2": "2026-05-31T15:06:32.643003+00:00",
+    "d533e35a1816": "2026-05-31T15:06:32.643003+00:00",
+    "dcc701bc41aa": "2026-05-31T15:06:32.643003+00:00"
   },
   "live_clusters": {
-    "28491ecd70ddf866": {
-      "topic": "Frankie Valli Concert Cancellation Health Focus",
-      "item_ids": [
-        "0c033667619f"
-      ],
-      "created_at": "2026-05-30T13:59:25.113836+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e701ca6439fe7f2b": {
-      "topic": "Heated Rivalry Season 2 Announcement",
-      "item_ids": [
-        "8b3c90013bad",
-        "34b69998327e"
-      ],
-      "created_at": "2026-05-30T13:59:25.113836+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "d129bdb33fb19b64": {
       "topic": "WWE Clash in Italy 2026 Cody Rhodes vs Gunther",
       "item_ids": [
@@ -1225,7 +1202,43 @@
       "created_at": "2026-05-31T13:50:06.888242+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "af9087d362fc9dc7": {
+      "topic": "AI On The Lot Conference Hollywood Perspectives",
+      "item_ids": [
+        "e5c45e881781"
+      ],
+      "created_at": "2026-05-31T15:06:59.729944+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "83682c0771e65e33": {
+      "topic": "Black Founders Quarterly Funding Record",
+      "item_ids": [
+        "d11ddbb842b3"
+      ],
+      "created_at": "2026-05-31T15:06:59.729944+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3d12bcd579e8a308": {
+      "topic": "Elon Musk SpaceX Starship AI Plans",
+      "item_ids": [
+        "c0d7d242da2b"
+      ],
+      "created_at": "2026-05-31T15:06:59.729944+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "397fde1eeb634a87": {
+      "topic": "US UK Australia Underwater Drone Technology Development",
+      "item_ids": [
+        "1c2d188e9ac4"
+      ],
+      "created_at": "2026-05-31T15:06:59.729944+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T13:50:06.889406+00:00"
+  "last_checked": "2026-05-31T15:06:59.737896+00:00"
 }
