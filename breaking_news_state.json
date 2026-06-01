@@ -1,41 +1,5 @@
 {
   "known_ids": [
-    "8791907a4ce2",
-    "8b7c095ae3d7",
-    "83cc0dc15509",
-    "6dd1a7d29077",
-    "55485ad004ad",
-    "165e6147afdf",
-    "794abfb09851",
-    "d7ea7cb2187d",
-    "2c71bde7f2da",
-    "1c41a8078010",
-    "89d0a84a00ea",
-    "194d89b35f3b",
-    "82d19b7b3f6a",
-    "4b1d7fc08047",
-    "b1388b76fe57",
-    "c7db6bf27bc6",
-    "4283bc89dc1f",
-    "db4b1f3e342c",
-    "fc9968aab84a",
-    "03630e2d433b",
-    "661d85a0d40e",
-    "265ac6721331",
-    "3d35c11cd9ec",
-    "069a58c8c700",
-    "8e8b7efcc1c3",
-    "14bbae96f622",
-    "9e4a7c7059bf",
-    "1ef02e38be14",
-    "79fdb0409038",
-    "db95a9a84bf5",
-    "30f7f034b5f3",
-    "42254376e454",
-    "ba8c14184f43",
-    "80f5656fff34",
-    "d63f51448933",
-    "d80956c30f72",
     "f5498618dd74",
     "a0ebf31f1fa6",
     "2c4a21967c3f",
@@ -499,228 +463,54 @@
     "574b3b980cd7",
     "5c7a43b013c5",
     "5648bd6f9e1a",
-    "15336f9ed5e6"
+    "15336f9ed5e6",
+    "af8030125bac",
+    "31bea7f6aafc",
+    "05a65a18272f",
+    "efa04bfb5798",
+    "6796cdced023",
+    "e52568610978",
+    "545c902da432",
+    "ac98cfa63a19",
+    "08dd7e5b13eb",
+    "4746c0313ccf",
+    "bc9c590ed824",
+    "cb300153e58e",
+    "14ad37ffbc9f",
+    "f86ff770b7af",
+    "a28a7eb0d419",
+    "8046ad6ed85a",
+    "3f5c4f3e52c2",
+    "ac8313622d10",
+    "717fd3878cc4",
+    "29b93889d919",
+    "6311e7ca73bb",
+    "8c00a86ab65a",
+    "8eb42f0828d3",
+    "5667731748eb",
+    "07e2ff01dd03",
+    "77b9b57b6e26",
+    "c7afa1f33f30",
+    "ce09534919d9",
+    "49d8bdb7c768",
+    "7c87d1458a3e",
+    "485fdb4dfc3c",
+    "37b54ea5e71d",
+    "d6bcfdc6cd17",
+    "73fce0514984",
+    "40c72c9d5b2e",
+    "4654f1419961"
   ],
   "failed_ids": {
-    "3ff0b32ef3d3": "2026-06-01T12:19:33.490427+00:00",
-    "e10537a4871a": "2026-06-01T12:19:33.490427+00:00",
-    "67dd455b0035": "2026-06-01T12:19:33.490427+00:00",
-    "71b07a04291f": "2026-06-01T12:19:33.490427+00:00"
+    "c393f3270ba2": "2026-06-01T18:19:35.391258+00:00",
+    "44c876178380": "2026-06-01T18:19:35.391258+00:00",
+    "14da9c7766e4": "2026-06-01T18:19:35.391258+00:00",
+    "829126d86f29": "2026-06-01T18:19:35.391258+00:00",
+    "6b17eb545f14": "2026-06-01T18:19:35.391258+00:00",
+    "58bdf936cc64": "2026-06-01T18:19:35.391258+00:00",
+    "85e6445b5da2": "2026-06-01T18:19:35.391258+00:00"
   },
   "live_clusters": {
-    "a93504496b78287e": {
-      "topic": "Meet the Press Live-Event Franchise Launch",
-      "item_ids": [
-        "eb237243bbcd"
-      ],
-      "created_at": "2026-05-31T13:50:06.888242+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b8fd3e1904676271": {
-      "topic": "Leonardo DiCaprio AI Advocacy Environmental Position",
-      "item_ids": [
-        "5633ac982f17"
-      ],
-      "created_at": "2026-05-31T13:50:06.888242+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5e30b7f553c85901": {
-      "topic": "Vega$ Documentary Steroids Swimmers Business Investigation",
-      "item_ids": [
-        "3e476249ebcc"
-      ],
-      "created_at": "2026-05-31T13:50:06.888242+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f1bcaaa80348ca2e": {
-      "topic": "Tokenmaxxing AI Use Regulatory Scrutiny",
-      "item_ids": [
-        "8b053820b162"
-      ],
-      "created_at": "2026-05-31T13:50:06.888242+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "af9087d362fc9dc7": {
-      "topic": "AI On The Lot Conference Hollywood Perspectives",
-      "item_ids": [
-        "e5c45e881781",
-        "0a7bee89c089"
-      ],
-      "created_at": "2026-05-31T15:06:59.729944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "83682c0771e65e33": {
-      "topic": "Black Founders Quarterly Funding Record",
-      "item_ids": [
-        "d11ddbb842b3"
-      ],
-      "created_at": "2026-05-31T15:06:59.729944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3d12bcd579e8a308": {
-      "topic": "Elon Musk SpaceX Starship AI Plans",
-      "item_ids": [
-        "c0d7d242da2b"
-      ],
-      "created_at": "2026-05-31T15:06:59.729944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "397fde1eeb634a87": {
-      "topic": "US UK Australia Underwater Drone Technology Development",
-      "item_ids": [
-        "1c2d188e9ac4"
-      ],
-      "created_at": "2026-05-31T15:06:59.729944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2af89b959ace0da4": {
-      "topic": "Caitlin Clark Sneaker Releases Week",
-      "item_ids": [
-        "ee1c1b9df4d9"
-      ],
-      "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a07d52b86455fc52": {
-      "topic": "Emma Corrin Marvel Villain Role Netflix Pride and Prejudice",
-      "item_ids": [
-        "7c626be1ba46"
-      ],
-      "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "34fe412f621da955": {
-      "topic": "WWE Clash in Italy 2026 Livestream",
-      "item_ids": [
-        "4855f75f1615",
-        "e07f3a82d489",
-        "b7d8554c8d3f"
-      ],
-      "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-31T19:58:12.459659+00:00",
-      "picks_file": "picks/picks-2026-05-31-1958.md",
-      "why_text": "WWE is planting its flag in Europe with a major premium live event in Italy, part of the company's aggressive global expansion under TKO Group. The simultaneous surge of search, live results, and social trending confirms the event is mid-broadcast and drawing real attention \u2014 this isn't just a touring show, it's WWE treating Europe as a primary market. With streaming access questions trending alongside match results, the rights and accessibility conversation is as loud as the in-ring action.",
-      "last_escalated_item_ids": [
-        "4855f75f1615",
-        "e07f3a82d489",
-        "b7d8554c8d3f"
-      ]
-    },
-    "cbe5267599a2fdfd": {
-      "topic": "Jay-Z 2026 Roots Picnic Setlist",
-      "item_ids": [
-        "84a81922072b",
-        "4b199314797c",
-        "c1ffb262fe51",
-        "e073dcf48062"
-      ],
-      "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-31T17:34:51.593535+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "84a81922072b",
-        "4b199314797c",
-        "c1ffb262fe51"
-      ]
-    },
-    "59a0efb358c17ecb": {
-      "topic": "Peter Gabriel Blue Moon New Song 'A Hard Lesson'",
-      "item_ids": [
-        "601a0cc3b0bd",
-        "9159dd0af171"
-      ],
-      "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d6923fb28650b4d3": {
-      "topic": "Global Box Office Update Backrooms Obsession Michael",
-      "item_ids": [
-        "0ec083907735",
-        "2167b291d16b",
-        "6e307c994e58",
-        "bd2acafd1b79",
-        "a6a6a5412cab"
-      ],
-      "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-05-31T19:58:12.459659+00:00",
-      "picks_file": "picks/picks-2026-05-31-1958.md",
-      "why_text": "A24 just rewrote its own record books: Backrooms, the horror film born from internet mythology and starring Lukita Maxwell, debuted to $118M worldwide \u2014 the studio's biggest opening ever. Meanwhile, the broader box office is quietly thriving, with Michael closing in on $900M WW and Obsession crossing $148M, signaling a genuinely healthy theatrical moment. The Backrooms win is the real cultural story though \u2014 it confirms that internet-native horror (creepypasta, liminal spaces, Gen Z dread) has fully crossed over into mainstream box office muscle.",
-      "last_escalated_item_ids": [
-        "0ec083907735",
-        "2167b291d16b",
-        "6e307c994e58"
-      ]
-    },
-    "2239e68a9982163b": {
-      "topic": "Matt Brown Alaskan Bush People Star Death",
-      "item_ids": [
-        "0b7dd9dec5eb"
-      ],
-      "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1f46a0376acaf92b": {
-      "topic": "AI Psychosis Debate",
-      "item_ids": [
-        "219fb65d984a"
-      ],
-      "created_at": "2026-05-31T16:22:36.749403+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e11a814f8592c7db": {
-      "topic": "Dua Lipa Marries Callum Turner London Ceremony",
-      "item_ids": [
-        "63559a06dd53",
-        "783f158aca2c"
-      ],
-      "created_at": "2026-05-31T17:35:24.785664+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8815f3167a66bd4d": {
-      "topic": "Ronald LaPread Commodores Bassist Death",
-      "item_ids": [
-        "5ebe7b67b011",
-        "05e340b28efb"
-      ],
-      "created_at": "2026-05-31T17:35:24.785664+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f7747e12f25a8840": {
-      "topic": "Love Island UK Season 13 Premiere",
-      "item_ids": [
-        "4126c4f9285a"
-      ],
-      "created_at": "2026-05-31T17:35:24.785664+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "300d579b9784e351": {
-      "topic": "Apple TV HomePod mini Fall 2024 Release",
-      "item_ids": [
-        "7a25460b5d68"
-      ],
-      "created_at": "2026-05-31T17:35:24.785664+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "b240cb97b1a880b1": {
       "topic": "Gang Gang Dance Doug Shaw Death",
       "item_ids": [
@@ -888,7 +678,8 @@
     "8222fb04d6c2e69d": {
       "topic": "Ariana Grande Hate That I Made You Love Me Chart Performance",
       "item_ids": [
-        "0d6d49980ed2"
+        "0d6d49980ed2",
+        "bc9c590ed824"
       ],
       "created_at": "2026-05-31T22:12:39.015662+00:00",
       "last_escalated_size": 0,
@@ -1097,7 +888,8 @@
     "31a7085e549ae6f1": {
       "topic": "Euphoria HBO Series Ending Season 3",
       "item_ids": [
-        "176ef2fcf286"
+        "176ef2fcf286",
+        "efa04bfb5798"
       ],
       "created_at": "2026-06-01T06:32:30.593078+00:00",
       "last_escalated_size": 0,
@@ -1188,7 +980,8 @@
     "329f4248fb7c818d": {
       "topic": "Nvidia AI Chip Personal Computers Announcement",
       "item_ids": [
-        "e3f38a946465"
+        "e3f38a946465",
+        "485fdb4dfc3c"
       ],
       "created_at": "2026-06-01T06:32:30.593078+00:00",
       "last_escalated_size": 0,
@@ -1365,7 +1158,243 @@
       "created_at": "2026-06-01T12:20:09.851143+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "7326726f019ad1c8": {
+      "topic": "Air Jordan 1 Low Quai 54 Release",
+      "item_ids": [
+        "af8030125bac"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c57aef52d94484b": {
+      "topic": "Nike Shox R4 Puerto Rico Tribute Release",
+      "item_ids": [
+        "31bea7f6aafc"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fd5485d3340790a9": {
+      "topic": "APB Store Air Jordan Nike Fall Winter 2026 Collaborations",
+      "item_ids": [
+        "05a65a18272f"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "011121f91736683f": {
+      "topic": "Committee for the First Amendment NYC Concert Lineup",
+      "item_ids": [
+        "6796cdced023"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "587b7751a50b0318": {
+      "topic": "Marilyn Monroe Cultural Obsession Analysis",
+      "item_ids": [
+        "e52568610978"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c049d6ce3fe931b": {
+      "topic": "Marilyn Monroe Greatest Roles Retrospective",
+      "item_ids": [
+        "545c902da432"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0776df97906b136b": {
+      "topic": "Streets of Rage Movie Sega Lionsgate Casey Miller Samuel",
+      "item_ids": [
+        "ac98cfa63a19"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f8a30fc2a243d053": {
+      "topic": "Julia Jacklin Signs 4AD Records 2026 2027 Tour",
+      "item_ids": [
+        "08dd7e5b13eb"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "03b3a25221c0f3f1": {
+      "topic": "The Avalanches Jamie xx Every Single Weekend Reunion",
+      "item_ids": [
+        "4746c0313ccf"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63b04f847cc8a49c": {
+      "topic": "Taylor Swift Toy Story 5 Original Song Country",
+      "item_ids": [
+        "cb300153e58e",
+        "a28a7eb0d419",
+        "3f5c4f3e52c2"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-01T18:19:35.391258+00:00",
+      "picks_file": "picks/picks-2026-06-01-1820.md",
+      "why_text": "Taylor Swift is contributing an original song called 'I Knew It, I Knew You' to the Toy Story 5 soundtrack, and the country sound signals a deliberate return to her roots \u2014 a full-circle moment for an artist who built her name on that genre before conquering everything else. This is a cultural double-event: Pixar landing its biggest music collaborator in years, and Swift choosing a children's franchise as the arena for her country homecoming. The pairing is shrewd on both sides \u2014 Toy Story 5 gets instant cultural currency, and Swift gets a soft, nostalgic reentry point ahead of whatever comes next.",
+      "last_escalated_item_ids": [
+        "cb300153e58e",
+        "a28a7eb0d419",
+        "3f5c4f3e52c2"
+      ]
+    },
+    "dce89111990d80fe": {
+      "topic": "David Bisbal Eternos US Tour 2026",
+      "item_ids": [
+        "14ad37ffbc9f"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b2bdec9a2b24121d": {
+      "topic": "100 Greatest LGBTQ+ Anthems Ranking",
+      "item_ids": [
+        "f86ff770b7af"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "21fe7e14cf20af41": {
+      "topic": "Beatles Final Concert Candlestick Park Rare Photos",
+      "item_ids": [
+        "8046ad6ed85a"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dfb0d08eb2f0646c": {
+      "topic": "Motion Picture Academy New Moviegoing Experience Award",
+      "item_ids": [
+        "ac8313622d10"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "948873e7508c7b96": {
+      "topic": "Anna Kendrick Directs Seven Husbands of Evelyn Hugo Netflix",
+      "item_ids": [
+        "717fd3878cc4"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5f6f9f76661b1d0e": {
+      "topic": "Emily Henry Books Film Adaptations Happy Place Book Lovers Beach Read",
+      "item_ids": [
+        "29b93889d919",
+        "6311e7ca73bb"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a44d581d443c274f": {
+      "topic": "Anthropic IPO SEC Filing AI Company Valuation",
+      "item_ids": [
+        "8c00a86ab65a",
+        "ce09534919d9"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a99bff913103f940": {
+      "topic": "The Mall App Universal Online Shopping Feed",
+      "item_ids": [
+        "8eb42f0828d3"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75d28ec0256180ce": {
+      "topic": "Grand Theft Auto V Cheat Service Hack Gamer Exposure",
+      "item_ids": [
+        "5667731748eb"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "42c7f4016f56c840": {
+      "topic": "Sony State of Play June 2 Showcase",
+      "item_ids": [
+        "07e2ff01dd03"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dc7eda68dc4f4127": {
+      "topic": "BYD Self-Driving Technology Financial Liability Crash Coverage",
+      "item_ids": [
+        "77b9b57b6e26"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "15522474f20b7ef0": {
+      "topic": "AMD Socket AM5 Support Extension 2029",
+      "item_ids": [
+        "c7afa1f33f30"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9bd6121d03568827": {
+      "topic": "McDonald's Global Growth Strategy Competition",
+      "item_ids": [
+        "49d8bdb7c768"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "078b7595b2bf9a76": {
+      "topic": "SpaceX IPO Employee Share Allocation",
+      "item_ids": [
+        "7c87d1458a3e"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fb8ac4d16d0c7906": {
+      "topic": "Texas Firms AI Adoption Worker Demand Impact",
+      "item_ids": [
+        "37b54ea5e71d"
+      ],
+      "created_at": "2026-06-01T18:20:10.601496+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-01T12:20:09.852409+00:00"
+  "last_checked": "2026-06-01T18:20:18.221815+00:00"
 }
