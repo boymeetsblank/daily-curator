@@ -1,34 +1,5 @@
 {
   "known_ids": [
-    "f5498618dd74",
-    "a0ebf31f1fa6",
-    "2c4a21967c3f",
-    "c6470a4d683b",
-    "75f84cfeffeb",
-    "4fd5861e26d9",
-    "f1b599ca633a",
-    "f87f5f176e99",
-    "57413f5a5f3b",
-    "ed9ecf47f42c",
-    "8169ee767229",
-    "1da02c47ed9f",
-    "20854f51b79c",
-    "4f277ea3bf79",
-    "2a8e3f1b857e",
-    "799349c85dc0",
-    "2c42c517045a",
-    "bdc5f7f4b4bf",
-    "daf709688e47",
-    "d865e75521ec",
-    "5001f294daa3",
-    "ac6f391ad160",
-    "69184feaa0bc",
-    "ddac40d323c4",
-    "26991297a6bc",
-    "07b1b8128446",
-    "f75fb0966d48",
-    "5019ee7131cf",
-    "a3222359d2e4",
     "0f34f5cd0b9e",
     "347e0b10be3b",
     "5640b885e3f7",
@@ -499,7 +470,36 @@
     "d6bcfdc6cd17",
     "73fce0514984",
     "40c72c9d5b2e",
-    "4654f1419961"
+    "4654f1419961",
+    "0a6783ca6aee",
+    "6196a6a5758f",
+    "93a12508c199",
+    "db2cdfbf776a",
+    "914890503a93",
+    "c440fbbc414d",
+    "071a85860828",
+    "01073f06960e",
+    "4794cfb38cf8",
+    "432f44dfdd1a",
+    "01025c26465c",
+    "2a9b89a0584d",
+    "1d2e32ada96e",
+    "5c7d25170b52",
+    "38e0dcff8805",
+    "a05703d43c9e",
+    "e3c9aad93a6b",
+    "7a8f5bd4e587",
+    "bb212983c015",
+    "ef53f9897e74",
+    "7eb7f254310b",
+    "289037fd09f0",
+    "4a3546088a39",
+    "f2d1f4ad1738",
+    "8594b53824a3",
+    "6461338fabcf",
+    "76c32fe6dcdc",
+    "6dca9b2ec267",
+    "8973e69ac4c5"
   ],
   "failed_ids": {
     "c393f3270ba2": "2026-06-01T18:19:35.391258+00:00",
@@ -508,154 +508,17 @@
     "829126d86f29": "2026-06-01T18:19:35.391258+00:00",
     "6b17eb545f14": "2026-06-01T18:19:35.391258+00:00",
     "58bdf936cc64": "2026-06-01T18:19:35.391258+00:00",
-    "85e6445b5da2": "2026-06-01T18:19:35.391258+00:00"
+    "85e6445b5da2": "2026-06-01T18:19:35.391258+00:00",
+    "3c6688dfa31f": "2026-06-01T21:45:45.947274+00:00",
+    "d6dc534d3f7a": "2026-06-01T21:45:45.947274+00:00",
+    "83ec6af8d714": "2026-06-01T21:45:45.947274+00:00",
+    "372b6a2603b8": "2026-06-01T21:45:45.947274+00:00",
+    "a95b7a89c2d7": "2026-06-01T21:45:45.947274+00:00",
+    "4a1369f73e34": "2026-06-01T21:45:45.947274+00:00",
+    "44aabb9c5706": "2026-06-01T21:45:45.947274+00:00",
+    "1ef6720c9353": "2026-06-01T21:45:45.947274+00:00"
   },
   "live_clusters": {
-    "b240cb97b1a880b1": {
-      "topic": "Gang Gang Dance Doug Shaw Death",
-      "item_ids": [
-        "1504b162d525"
-      ],
-      "created_at": "2026-05-31T18:49:21.603668+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6892ee8f249f9f47": {
-      "topic": "Peabo Bryson Stroke Medical Emergency",
-      "item_ids": [
-        "8d438bf9f7bb"
-      ],
-      "created_at": "2026-05-31T18:49:21.603668+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "86e5bbb805b57469": {
-      "topic": "Pante\u00f3n Rococ\u00f3 Mexico Free Concert 120K Attendance",
-      "item_ids": [
-        "24bf0667f47d"
-      ],
-      "created_at": "2026-05-31T18:49:21.603668+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e40d34a77cdc50ee": {
-      "topic": "Pressure WWII Drama Box Office Opening Weekend",
-      "item_ids": [
-        "5305231bdfc9"
-      ],
-      "created_at": "2026-05-31T18:49:21.603668+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c261fd2bbdc338df": {
-      "topic": "Ball State Yates-Lyons Student Death",
-      "item_ids": [
-        "16648e4a08c6"
-      ],
-      "created_at": "2026-05-31T18:49:21.603668+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "791677ba660011c1": {
-      "topic": "Norway Canada Bronze Medal OT Ice Hockey",
-      "item_ids": [
-        "f8770a2a6f8d"
-      ],
-      "created_at": "2026-05-31T18:49:21.603668+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c6aa13ed5209fd4a": {
-      "topic": "Knicks NBA Finals Betting Momentum",
-      "item_ids": [
-        "647b396f87ea"
-      ],
-      "created_at": "2026-05-31T18:49:21.603668+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f7fe5b0bce3b2be8": {
-      "topic": "KC Green This Is Fine Artist AI Artisan Agreement",
-      "item_ids": [
-        "c1384759d49d"
-      ],
-      "created_at": "2026-05-31T18:49:21.603668+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1564190eb24bdf73": {
-      "topic": "DMX Street Named Yonkers Tribute",
-      "item_ids": [
-        "4b602aa99ebc"
-      ],
-      "created_at": "2026-05-31T19:58:39.930578+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "942dbe3f6dced72c": {
-      "topic": "Nike Air Force 1 Low Game Royal Carbon Fiber Release",
-      "item_ids": [
-        "ad9e04baf4bf"
-      ],
-      "created_at": "2026-05-31T21:08:10.582007+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "98ce9444b8274c7c": {
-      "topic": "Karolina Wydra Pluribus Original Series Discussion",
-      "item_ids": [
-        "72846e04369f"
-      ],
-      "created_at": "2026-05-31T21:08:10.582007+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e227a822a79e2844": {
-      "topic": "Erin Brockovich Data Center Secrecy Criticism",
-      "item_ids": [
-        "6e2aa85b95d5"
-      ],
-      "created_at": "2026-05-31T21:08:10.582007+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "691c04a9f8c3dea1": {
-      "topic": "MSI Claw 8 EX AI+ Handheld Gaming Device Launch",
-      "item_ids": [
-        "2a3c0b225572"
-      ],
-      "created_at": "2026-05-31T21:08:10.582007+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "353c830031bb0049": {
-      "topic": "Molecular Movie Technology Environmental Pollutant Detection",
-      "item_ids": [
-        "f05d361ba424"
-      ],
-      "created_at": "2026-05-31T21:08:10.582007+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3dbf8575ed1cbc55": {
-      "topic": "Counter-Drone Technology FIFA World Cup Security",
-      "item_ids": [
-        "0869697c9238",
-        "79d329ce78c7"
-      ],
-      "created_at": "2026-05-31T21:08:10.582007+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e6f8d20b10bdf2a1": {
-      "topic": "Lithuania Technology Startup Hub Expansion",
-      "item_ids": [
-        "e126ff1a26bb"
-      ],
-      "created_at": "2026-05-31T21:08:10.582007+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "92f6d3b2ab16c386": {
       "topic": "Nike Vomero Premium Off White Release",
       "item_ids": [
@@ -889,11 +752,21 @@
       "topic": "Euphoria HBO Series Ending Season 3",
       "item_ids": [
         "176ef2fcf286",
-        "efa04bfb5798"
+        "efa04bfb5798",
+        "db2cdfbf776a",
+        "5c7d25170b52"
       ],
       "created_at": "2026-06-01T06:32:30.593078+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-01T21:45:45.947274+00:00",
+      "picks_file": "picks/picks-2026-06-01-2146.md",
+      "why_text": "Euphoria is wrapping up with its third season, and the cast and creator Sam Levinson are framing it as a deliberate, honest conclusion \u2014 not a cancellation. Darrell Britt-Gibson's Bishop emerged as a central figure in the finale, with his betrayal and a climactic shootout driving the endgame, signaling the show went out swinging rather than fading. For a series that defined a generation's aesthetic and sparked years of cultural debate about teen representation, how it chooses to end is itself a cultural statement.",
+      "last_escalated_item_ids": [
+        "176ef2fcf286",
+        "efa04bfb5798",
+        "db2cdfbf776a",
+        "5c7d25170b52"
+      ]
     },
     "688285440d2e2e13": {
       "topic": "Saint Mary's Upsets No. 1 UCLA Walk-Off WCWS",
@@ -934,7 +807,8 @@
     "7f9bb6e70c76cfb3": {
       "topic": "Nvidia Arm-Based PC Chip Microsoft Dell HP Launch",
       "item_ids": [
-        "222ca8cb529a"
+        "222ca8cb529a",
+        "7a8f5bd4e587"
       ],
       "created_at": "2026-06-01T06:32:30.593078+00:00",
       "last_escalated_size": 0,
@@ -1394,7 +1268,169 @@
       "created_at": "2026-06-01T18:20:10.601496+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "a2f4e723cf404c37": {
+      "topic": "Crocs Teenage Mutant Ninja Turtles Collaboration",
+      "item_ids": [
+        "0a6783ca6aee"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "91bd241f7bddac5a": {
+      "topic": "New Balance 990v4 Bart Simpson Colorway",
+      "item_ids": [
+        "6196a6a5758f"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "14f758361ff8a940": {
+      "topic": "Crocs Spider-Verse Collaboration",
+      "item_ids": [
+        "93a12508c199"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1ef8cf7f8b57b3ce": {
+      "topic": "New Music Releases 2026",
+      "item_ids": [
+        "914890503a93"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "88474245fa8577ab": {
+      "topic": "Pitchfork Paris 2026 Festival",
+      "item_ids": [
+        "c440fbbc414d"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bfbb9c546b4d42b3": {
+      "topic": "Coca-Cola Flow Fest 2026",
+      "item_ids": [
+        "071a85860828"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "26fa704bfaeb92a0": {
+      "topic": "John Summit Lollapalooza Headliner",
+      "item_ids": [
+        "01073f06960e"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "697e73804ace86c6": {
+      "topic": "Rog\u00e9t Chahayed Drake ICEMAN Producer",
+      "item_ids": [
+        "4794cfb38cf8"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c6cf010316a9afdb": {
+      "topic": "Michael Jackson Chicago Billboard Hot 100 Debut",
+      "item_ids": [
+        "432f44dfdd1a"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f00102e773c2a630": {
+      "topic": "Gracie Abrams Daughter From Hell Album",
+      "item_ids": [
+        "2a9b89a0584d"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a989c64f3e2c8607": {
+      "topic": "Bad Bunny Global Tour Moments",
+      "item_ids": [
+        "1d2e32ada96e"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9f2a5766cb4fed75": {
+      "topic": "Jury Duty Presents Company Retreat",
+      "item_ids": [
+        "38e0dcff8805"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0f696ce7920900f3": {
+      "topic": "The Fine Art of Lying TV Adaptation Scarlett Johansson",
+      "item_ids": [
+        "a05703d43c9e"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0c0c98a147ab7167": {
+      "topic": "Mach Industries Defense Tech Valuation",
+      "item_ids": [
+        "e3c9aad93a6b"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a6aa2b9291fc6d4c": {
+      "topic": "Microsoft Google AI Coding Competition",
+      "item_ids": [
+        "bb212983c015"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63b027d277a40091": {
+      "topic": "HPE Earnings Beat Stock Surge",
+      "item_ids": [
+        "ef53f9897e74"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "136d4fa5c3b6c50d": {
+      "topic": "Credo Technology Stock Decline",
+      "item_ids": [
+        "7eb7f254310b"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3ad857145fd0d959": {
+      "topic": "SoundHound AI vs NICE Technology Stock",
+      "item_ids": [
+        "289037fd09f0"
+      ],
+      "created_at": "2026-06-01T21:46:19.787866+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-01T18:20:18.221815+00:00"
+  "last_checked": "2026-06-01T21:46:25.456577+00:00"
 }
