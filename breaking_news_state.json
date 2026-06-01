@@ -1,25 +1,5 @@
 {
   "known_ids": [
-    "a902f2a2f4d9",
-    "95bb06f5125a",
-    "4b75f78271b1",
-    "a7ae01530f1e",
-    "69eb659b4563",
-    "811c46fb3d64",
-    "fb538ed06f35",
-    "b56a900435aa",
-    "8b975d5a9467",
-    "1bdbc5559cad",
-    "7e8e1c0f6f06",
-    "eda66b6b2abd",
-    "27f9a16872ce",
-    "95fc3acd36d2",
-    "1b7725815d1f",
-    "e6cfcac1608b",
-    "7d5e428bea14",
-    "9a2110146a5f",
-    "98e078d0e458",
-    "37dac706e49c",
     "8791907a4ce2",
     "8b7c095ae3d7",
     "83cc0dc15509",
@@ -499,114 +479,35 @@
     "7f6829edb579",
     "475e68028f25",
     "0f193b54ac6c",
-    "15cb1699181a"
+    "15cb1699181a",
+    "65243110e7e1",
+    "938c0f79c46d",
+    "05a3ac382ba6",
+    "f8f0a4aa0975",
+    "5a6f2ba777da",
+    "e7908f23a0d0",
+    "8fd4a5a229a9",
+    "b378cd12b2d0",
+    "87041ed48d76",
+    "e4ecef373454",
+    "eae72b237467",
+    "70b72be96415",
+    "17a34d5fc7da",
+    "f118abb10b10",
+    "8803757b8a8f",
+    "79d329ce78c7",
+    "574b3b980cd7",
+    "5c7a43b013c5",
+    "5648bd6f9e1a",
+    "15336f9ed5e6"
   ],
   "failed_ids": {
-    "1be3e450c37b": "2026-06-01T06:32:01.966810+00:00",
-    "a0e51b9347fa": "2026-06-01T06:32:01.966810+00:00",
-    "71b07a04291f": "2026-06-01T06:32:01.966810+00:00"
+    "3ff0b32ef3d3": "2026-06-01T12:19:33.490427+00:00",
+    "e10537a4871a": "2026-06-01T12:19:33.490427+00:00",
+    "67dd455b0035": "2026-06-01T12:19:33.490427+00:00",
+    "71b07a04291f": "2026-06-01T12:19:33.490427+00:00"
   },
   "live_clusters": {
-    "78b22a288723041b": {
-      "topic": "Kanye West Istanbul Concert Record Breaking",
-      "item_ids": [
-        "eb944ee255b1"
-      ],
-      "created_at": "2026-05-31T08:13:59.975495+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "feea03929d79052a": {
-      "topic": "Turkey Hair Transplant Industry Cybercrime Hack",
-      "item_ids": [
-        "a7e70ffca486"
-      ],
-      "created_at": "2026-05-31T10:26:16.057479+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cff75ea082c071a0": {
-      "topic": "Disney Advertising Business Expansion Rita Ferro",
-      "item_ids": [
-        "a4988515cdc0"
-      ],
-      "created_at": "2026-05-31T10:26:16.057479+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3de35b2cc19ff647": {
-      "topic": "Yankees ABS Error Against Athletics",
-      "item_ids": [
-        "6493ab9811da",
-        "6d0eb929ece4"
-      ],
-      "created_at": "2026-05-31T11:57:29.547957+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "de08bb3d85a68bd3": {
-      "topic": "Swiatek Upset French Open Singles",
-      "item_ids": [
-        "fe9028aca4f7"
-      ],
-      "created_at": "2026-05-31T11:57:29.547957+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "04dacf43b7bde742": {
-      "topic": "Tennessee Vols Handshake Line Accusation",
-      "item_ids": [
-        "7519f869b768"
-      ],
-      "created_at": "2026-05-31T11:57:29.547957+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f472e5725f6c65ff": {
-      "topic": "M-Audio M Track Duo HD Producer Pack Review",
-      "item_ids": [
-        "dac81d05900e"
-      ],
-      "created_at": "2026-05-31T11:57:29.547957+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1ff95df216d14533": {
-      "topic": "SpaceCamp 40th Anniversary Retrospective",
-      "item_ids": [
-        "1267f681859e"
-      ],
-      "created_at": "2026-05-31T11:57:29.547957+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2be90a0de530acd3": {
-      "topic": "AI Ship Company Texas Coast Expansion",
-      "item_ids": [
-        "8730216a3241"
-      ],
-      "created_at": "2026-05-31T11:57:29.547957+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "91110d0ddfe06942": {
-      "topic": "Emily Blunt AI Voice Rejection Disclosure Day",
-      "item_ids": [
-        "d0ad0a0a8270"
-      ],
-      "created_at": "2026-05-31T11:57:29.547957+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a4dc180f27faba8c": {
-      "topic": "JPMorgan Blockchain Asset Tokenization May 2026",
-      "item_ids": [
-        "4f7804827fdb"
-      ],
-      "created_at": "2026-05-31T11:57:29.547957+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "a93504496b78287e": {
       "topic": "Meet the Press Live-Event Franchise Launch",
       "item_ids": [
@@ -949,7 +850,8 @@
     "3dbf8575ed1cbc55": {
       "topic": "Counter-Drone Technology FIFA World Cup Security",
       "item_ids": [
-        "0869697c9238"
+        "0869697c9238",
+        "79d329ce78c7"
       ],
       "created_at": "2026-05-31T21:08:10.582007+00:00",
       "last_escalated_size": 0,
@@ -1004,7 +906,8 @@
     "d609badbd1185fa2": {
       "topic": "House of the Dragon Season 3 Production Details ATX TV Festival",
       "item_ids": [
-        "90b3aa30e07b"
+        "90b3aa30e07b",
+        "65243110e7e1"
       ],
       "created_at": "2026-05-31T22:12:39.015662+00:00",
       "last_escalated_size": 0,
@@ -1308,7 +1211,161 @@
       "created_at": "2026-06-01T06:32:30.593078+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "28e4843bc1378b2d": {
+      "topic": "Jon Petrie BBC Comedy Director Exits Hat Trick Productions",
+      "item_ids": [
+        "938c0f79c46d",
+        "8fd4a5a229a9"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "672f232f98d53b7e": {
+      "topic": "Basque Talent Day Film Drama Spotlight",
+      "item_ids": [
+        "05a3ac382ba6"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "36ce86c62ff9c776": {
+      "topic": "Live Nation Acquires Dale Play Live Argentine Promoter",
+      "item_ids": [
+        "f8f0a4aa0975"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c6a8d7594cbeeeac": {
+      "topic": "Chappell Roan Elton John LGBTQ Rights Interview",
+      "item_ids": [
+        "5a6f2ba777da"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "10657157818a6109": {
+      "topic": "Hugh Bonneville Celebrity Traitors AI Clones SXSW",
+      "item_ids": [
+        "e7908f23a0d0"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "edb543e18a32881e": {
+      "topic": "Universal Audio Volt 876 USB Audio Interface Review",
+      "item_ids": [
+        "b378cd12b2d0"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "62525b26c4ed01b2": {
+      "topic": "Norse Atlantic Airways Budget Airline Ticket Pricing",
+      "item_ids": [
+        "87041ed48d76"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "edebe14c5aaf2ffc": {
+      "topic": "Strava Anti-Scraper Enforcement IPO Preparation",
+      "item_ids": [
+        "e4ecef373454"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2b61f958ef1eb838": {
+      "topic": "ASUS ROG Xbox Ally X20 Limited Edition Bundle AR Glasses",
+      "item_ids": [
+        "eae72b237467"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c240de7d6336e8ac": {
+      "topic": "Google Flagship Store International Expansion Outside US",
+      "item_ids": [
+        "70b72be96415"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "de30275cde2e4b69": {
+      "topic": "OpenAI Model Solves 80-Year-Old Math Problem",
+      "item_ids": [
+        "17a34d5fc7da"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5fbe908aa5a193fe": {
+      "topic": "SoftBank Masayoshi Son AI Revolution Scale Comparison",
+      "item_ids": [
+        "f118abb10b10"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fb0cd4cc5ad79c91": {
+      "topic": "AI Disrupting Pre-ChatGPT Startup Generation",
+      "item_ids": [
+        "8803757b8a8f"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eb0b9d7b13aed029": {
+      "topic": "The Next Era of Computing Technology Shift",
+      "item_ids": [
+        "574b3b980cd7"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "444ceeeb3362442c": {
+      "topic": "China Approves First Invasive Brain-Computer Chip",
+      "item_ids": [
+        "5c7a43b013c5"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "107b10ed149491b0": {
+      "topic": "New Phase of Matter Quantum Technology Impact",
+      "item_ids": [
+        "5648bd6f9e1a"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a1f347096be38f9a": {
+      "topic": "Eason Unit Grid Control Low-Carbon Dispatch Development",
+      "item_ids": [
+        "15336f9ed5e6"
+      ],
+      "created_at": "2026-06-01T12:20:09.851143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-01T06:32:30.594417+00:00"
+  "last_checked": "2026-06-01T12:20:09.852409+00:00"
 }
