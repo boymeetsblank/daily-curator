@@ -1899,8 +1899,11 @@ def deduplicate_after_scoring(articles: list[dict], published_today: list[str] |
 
     articles_text = ""
     for i, article in enumerate(candidates, start=1):
-        snippet = (article.get('summary') or '')[:120] or '(no summary)'
-        articles_text += f"{i}. [{article['score']}/10] \"{article['title']}\" ({article['source']})\n   {snippet}\n"
+        why = (article.get('why') or '').strip()
+        hook = (article.get('hook') or '').strip()
+        snippet = (article.get('summary') or '').strip()[:120]
+        context = why or hook or snippet or '(no context)'
+        articles_text += f"{i}. [{article['score']}/10] \"{article['title']}\" ({article['source']})\n   {context[:250]}\n"
 
     already_block = ""
     if published_today:

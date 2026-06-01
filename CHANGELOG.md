@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-31] Fix: use Claude's `why` context in post-scoring dedup input
+
+Post-scoring dedup was failing to cluster related picks (e.g. 10+ NBA Finals items, two Jay-Z Roots Picnic items) because trending keyword items like "Spurs" or "Thunder" had no summary text, leaving Haiku with no signal to group them with related articles. Now uses the `why` field (Claude's scoring rationale) as the primary context for each item, falling back to `hook` then `summary`. The `why` field always contains a plain-English editorial explanation of what the item is about, giving dedup the connective tissue to cluster even bare-keyword trend items.
+
+---
+
 ## [2026-05-25] Fix: stronger dedup prompt + switch to Haiku for post-scoring dedup
 
 `deduplicate_after_scoring()` had two issues: (1) the "one single thing that happened" test let reaction pieces and analysis articles through as "different stories," and (2) it was using Sonnet for a simple pattern-matching task. Fixed: expanded the grouping rules to explicitly include reaction pieces, multi-outlet coverage, and any articles sharing the same person + topic in the same news cycle. Switched the dedup model from `claude-sonnet-4-6` to `claude-haiku-4-5-20251001` — same accuracy for this task, ~20× cheaper, max_tokens reduced 2048→1024.
