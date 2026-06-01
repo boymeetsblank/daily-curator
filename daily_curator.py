@@ -2509,7 +2509,7 @@ def main():
     twitter_trends  = fetch_twitter_trends()
     twitter_posts   = fetch_twitter_posts([t["title"] for t in twitter_trends[:3]])
     reddit_hot      = fetch_reddit_hot()
-    reddit_subs     = fetch_subreddit_hot_posts()
+    reddit_subs, _  = filter_seen_urls(seen_urls, fetch_subreddit_hot_posts())
     google_trends   = fetch_google_trends()
     youtube_trends  = fetch_youtube_trends()
     tiktok_trends   = fetch_tiktok_trends()
