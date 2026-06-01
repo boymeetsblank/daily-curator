@@ -1,26 +1,5 @@
 {
   "known_ids": [
-    "0f34f5cd0b9e",
-    "347e0b10be3b",
-    "5640b885e3f7",
-    "0b3c3a09bf3c",
-    "2afb715771e8",
-    "c161469b7248",
-    "d7c4c18cf03d",
-    "1ee097751935",
-    "29298ba4a638",
-    "8ec574cb93a6",
-    "b0d3f46aa00a",
-    "7274c7747e59",
-    "4b4b2273e6fd",
-    "3ad9e549e217",
-    "d6d4658e2f26",
-    "e0437eaab3c6",
-    "6255ae3fe39f",
-    "456a1df399a7",
-    "a90d5d7897b1",
-    "72721a73dfbd",
-    "cfce19e2f5bb",
     "4039b03b27cf",
     "0978c66c292a",
     "c9d2cd3dcdd5",
@@ -499,16 +478,30 @@
     "6461338fabcf",
     "76c32fe6dcdc",
     "6dca9b2ec267",
-    "8973e69ac4c5"
+    "8973e69ac4c5",
+    "7505d1585f06",
+    "8b9431aab26a",
+    "408e1adbc62a",
+    "9872e9425aa3",
+    "170eab6be2c2",
+    "ad4396465c32",
+    "21934be46955",
+    "f8befad3e55e",
+    "f36581fb0a21",
+    "e79825331520",
+    "1f22ff823289",
+    "97fd2150ce72",
+    "b4c21b3683d8",
+    "946b18772115",
+    "e0b21f5467d2",
+    "a44b977de9dd",
+    "3cd590362aa9",
+    "ed1ec9675868",
+    "eada49c93bac",
+    "df515f0ae58d",
+    "a8d570d7ec64"
   ],
   "failed_ids": {
-    "c393f3270ba2": "2026-06-01T18:19:35.391258+00:00",
-    "44c876178380": "2026-06-01T18:19:35.391258+00:00",
-    "14da9c7766e4": "2026-06-01T18:19:35.391258+00:00",
-    "829126d86f29": "2026-06-01T18:19:35.391258+00:00",
-    "6b17eb545f14": "2026-06-01T18:19:35.391258+00:00",
-    "58bdf936cc64": "2026-06-01T18:19:35.391258+00:00",
-    "85e6445b5da2": "2026-06-01T18:19:35.391258+00:00",
     "3c6688dfa31f": "2026-06-01T21:45:45.947274+00:00",
     "d6dc534d3f7a": "2026-06-01T21:45:45.947274+00:00",
     "83ec6af8d714": "2026-06-01T21:45:45.947274+00:00",
@@ -516,57 +509,15 @@
     "a95b7a89c2d7": "2026-06-01T21:45:45.947274+00:00",
     "4a1369f73e34": "2026-06-01T21:45:45.947274+00:00",
     "44aabb9c5706": "2026-06-01T21:45:45.947274+00:00",
-    "1ef6720c9353": "2026-06-01T21:45:45.947274+00:00"
+    "1ef6720c9353": "2026-06-01T21:45:45.947274+00:00",
+    "077b067c1423": "2026-06-01T23:18:10.512126+00:00",
+    "4b29c56e364b": "2026-06-01T23:18:10.512126+00:00",
+    "970b5033015b": "2026-06-01T23:18:10.512126+00:00",
+    "8e9ad5d18d25": "2026-06-01T23:18:10.512126+00:00",
+    "65256a47d1e4": "2026-06-01T23:18:10.512126+00:00",
+    "5cb4da789c48": "2026-06-01T23:18:10.512126+00:00"
   },
   "live_clusters": {
-    "92f6d3b2ab16c386": {
-      "topic": "Nike Vomero Premium Off White Release",
-      "item_ids": [
-        "343f7bc4e3ca"
-      ],
-      "created_at": "2026-05-31T22:12:39.015662+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4fd72d576c296ad6": {
-      "topic": "Heated Rivalry Cast Actors on Actors Snub",
-      "item_ids": [
-        "62abdbf3d0f3",
-        "3d529f4555fb"
-      ],
-      "created_at": "2026-05-31T22:12:39.015662+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8222fb04d6c2e69d": {
-      "topic": "Ariana Grande Hate That I Made You Love Me Chart Performance",
-      "item_ids": [
-        "0d6d49980ed2",
-        "bc9c590ed824"
-      ],
-      "created_at": "2026-05-31T22:12:39.015662+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "863e0d5dc8205fa2": {
-      "topic": "David Tennant The Four Seasons Casting",
-      "item_ids": [
-        "92c124cbf702"
-      ],
-      "created_at": "2026-05-31T22:12:39.015662+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d609badbd1185fa2": {
-      "topic": "House of the Dragon Season 3 Production Details ATX TV Festival",
-      "item_ids": [
-        "90b3aa30e07b",
-        "65243110e7e1"
-      ],
-      "created_at": "2026-05-31T22:12:39.015662+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "5cc40804e2304398": {
       "topic": "M.I.A. Sues Kid Cudi Rebel Rangers Tour Removal",
       "item_ids": [
@@ -754,7 +705,8 @@
         "176ef2fcf286",
         "efa04bfb5798",
         "db2cdfbf776a",
-        "5c7d25170b52"
+        "5c7d25170b52",
+        "e79825331520"
       ],
       "created_at": "2026-06-01T06:32:30.593078+00:00",
       "last_escalated_size": 4,
@@ -798,7 +750,8 @@
     "78cdb43cc3ac2602": {
       "topic": "Reigns-Fatu WWE Saga Wrestling Story",
       "item_ids": [
-        "77735da26c71"
+        "77735da26c71",
+        "ed1ec9675868"
       ],
       "created_at": "2026-06-01T06:32:30.593078+00:00",
       "last_escalated_size": 0,
@@ -1119,7 +1072,8 @@
       "item_ids": [
         "cb300153e58e",
         "a28a7eb0d419",
-        "3f5c4f3e52c2"
+        "3f5c4f3e52c2",
+        "f8befad3e55e"
       ],
       "created_at": "2026-06-01T18:20:10.601496+00:00",
       "last_escalated_size": 3,
@@ -1416,7 +1370,8 @@
     "136d4fa5c3b6c50d": {
       "topic": "Credo Technology Stock Decline",
       "item_ids": [
-        "7eb7f254310b"
+        "7eb7f254310b",
+        "a44b977de9dd"
       ],
       "created_at": "2026-06-01T21:46:19.787866+00:00",
       "last_escalated_size": 0,
@@ -1430,7 +1385,133 @@
       "created_at": "2026-06-01T21:46:19.787866+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "77377e65896e1567": {
+      "topic": "Stephen Curry Li-Ning 10-Year Endorsement Deal",
+      "item_ids": [
+        "7505d1585f06"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75e994313d900417": {
+      "topic": "Bad Bunny adidas Badbo 1.0 Puerto Rico Cleat Release",
+      "item_ids": [
+        "8b9431aab26a"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ccd44fa6262f0310": {
+      "topic": "Nike KD 19 Orange Crush June 13 Release",
+      "item_ids": [
+        "408e1adbc62a"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "18e5d348c9017750": {
+      "topic": "Roland-Garros 2026 Men's Tennis Tournament Analysis",
+      "item_ids": [
+        "9872e9425aa3"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "36057e7cc33add38": {
+      "topic": "Power of Women London Inaugural Presentation Event",
+      "item_ids": [
+        "170eab6be2c2"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "99427390e3a6d68c": {
+      "topic": "Produce 101 Japan Shinsekai Finale Episodes",
+      "item_ids": [
+        "ad4396465c32"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3a2ff8090bd24e9c": {
+      "topic": "Dua Lipa Callum Turner Relationship Timeline",
+      "item_ids": [
+        "21934be46955"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6d7f09043963bd5c": {
+      "topic": "Lionel Messi Stanley Cup Collaboration Release",
+      "item_ids": [
+        "f36581fb0a21"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f94671790443aa74": {
+      "topic": "Alec Baldwin Jim Gaffigan Crosshairs Action Thriller Film",
+      "item_ids": [
+        "1f22ff823289"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6ed8ed93d3dbdf2b": {
+      "topic": "Alphabet AI Infrastructure Investment 80 Billion Funding",
+      "item_ids": [
+        "97fd2150ce72"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ebaba43db3218d61": {
+      "topic": "China Semiconductor Manufacturing Without Nvidia",
+      "item_ids": [
+        "b4c21b3683d8"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "854e06cb39fa5118": {
+      "topic": "FedEx Freight Spinoff Competitive Strategy",
+      "item_ids": [
+        "946b18772115"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a19ffe80beed4e03": {
+      "topic": "US Retail Q1 2026 Performance Tax Refund Impact",
+      "item_ids": [
+        "e0b21f5467d2"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "895b54be7a39ff64": {
+      "topic": "Micron AI-Optimized Memory Storage COMPUTEX 2026",
+      "item_ids": [
+        "3cd590362aa9"
+      ],
+      "created_at": "2026-06-01T23:18:41.482934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-01T21:46:25.456577+00:00"
+  "last_checked": "2026-06-01T23:18:41.484137+00:00"
 }
