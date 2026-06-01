@@ -303,7 +303,11 @@ def fetch_articles_from_direct_rss() -> list[dict]:
         print(f"   ⚠️  {SOURCES_JSON_PATH} is empty — no direct RSS sources to fetch.")
         return []
 
-    active_sources = [s for s in sources if s.get("enabled", True)]
+    # Reddit subreddits are fetched via API in fetch_subreddit_hot_posts() — skip them here
+    active_sources = [
+        s for s in sources
+        if s.get("enabled", True) and "reddit.com" not in s.get("rss", "")
+    ]
     print(f"\n📡 Fetching {len(active_sources)} direct RSS sources (parallel, {DIRECT_RSS_TIMEOUT}s timeout each)...")
     cutoff_ts = int(time.time() - (HOURS_BACK * 3600))
     articles = []
@@ -1152,6 +1156,83 @@ def fetch_reddit_hot() -> list[dict]:
     except Exception as e:
         print(f"   ⚠️  Reddit r/all unavailable (continuing without): {e}")
         return []
+
+
+def fetch_subreddit_hot_posts() -> list[dict]:
+    """
+    Fetch hot posts from all enabled Reddit subreddits in sources.json via
+    the public Reddit JSON API (/hot.json). Returns posts with upvote +
+    comment engagement data, filtered to the last HOURS_BACK hours.
+    Runs in parallel (10 workers). Replaces the RSS-based subreddit fetch.
+    """
+    if not os.path.exists(SOURCES_JSON_PATH):
+        return []
+    try:
+        with open(SOURCES_JSON_PATH, encoding="utf-8") as f:
+            sources = json.load(f)
+    except Exception:
+        return []
+
+    reddit_sources = [
+        s for s in sources
+        if s.get("enabled", True) and "reddit.com" in s.get("rss", "")
+    ]
+    if not reddit_sources:
+        return []
+
+    cutoff_ts = int(time.time() - (HOURS_BACK * 3600))
+
+    def _fetch_one(source: dict) -> list[dict]:
+        name = source.get("name", "r/unknown")
+        subreddit = name.lstrip("r/").strip()
+        url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=25"
+        try:
+            resp = requests.get(
+                url,
+                headers={"User-Agent": "daily-curator/1.0"},
+                timeout=10,
+            )
+            resp.raise_for_status()
+            children = resp.json().get("data", {}).get("children", [])
+        except Exception:
+            return []
+
+        posts = []
+        for child in children:
+            d = child.get("data", {})
+            created_utc = d.get("created_utc", 0)
+            if created_utc and created_utc < cutoff_ts:
+                continue
+            title = (d.get("title") or "").strip()
+            if not title:
+                continue
+            link = f"https://www.reddit.com{d['permalink']}" if d.get("permalink") else None
+            summary = (d.get("selftext") or "")[:300].strip()
+            upvotes = d.get("score", 0)
+            comments = d.get("num_comments", 0)
+            image = d.get("thumbnail") if (d.get("thumbnail") or "").startswith("http") else None
+            published_str = (
+                datetime.fromtimestamp(created_utc, tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+                if created_utc else datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+            )
+            posts.append({
+                "title":      title,
+                "link":       link,
+                "summary":    summary,
+                "source":     name,
+                "published":  published_str,
+                "image":      image,
+                "engagement": {"upvotes": upvotes, "comments": comments},
+            })
+        return posts
+
+    print(f"\n🟠 Fetching hot posts from {len(reddit_sources)} subreddits via API...")
+    all_posts = []
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        for result in ex.map(_fetch_one, reddit_sources):
+            all_posts.extend(result)
+    print(f"   ✅ Got {len(all_posts)} hot posts from {len(reddit_sources)} subreddits.")
+    return all_posts
 
 
 def fetch_twitter_posts(trending_topics: list[str]) -> list[dict]:
@@ -2428,10 +2509,11 @@ def main():
     twitter_trends  = fetch_twitter_trends()
     twitter_posts   = fetch_twitter_posts([t["title"] for t in twitter_trends[:3]])
     reddit_hot      = fetch_reddit_hot()
+    reddit_subs     = fetch_subreddit_hot_posts()
     google_trends   = fetch_google_trends()
     youtube_trends  = fetch_youtube_trends()
     tiktok_trends   = fetch_tiktok_trends()
-    all_items = articles + twitter_trends + twitter_posts + reddit_hot + google_trends + youtube_trends + tiktok_trends
+    all_items = articles + twitter_trends + twitter_posts + reddit_hot + reddit_subs + google_trends + youtube_trends + tiktok_trends
 
     # Extract plain topic names from trend items for the velocity signal prompt
     trending_topics = [t["title"] for t in twitter_trends + google_trends + youtube_trends + tiktok_trends if t.get("title")]
@@ -2449,7 +2531,7 @@ def main():
             "fetched_at":        datetime.now(tz=timezone.utc).isoformat(),
             "x":                 [t["title"] for t in twitter_trends if t.get("title")],
             "x_posts":           [t["title"] for t in twitter_posts  if t.get("title")],
-            "reddit_hot":        [t["title"] for t in reddit_hot     if t.get("title")],
+            "reddit_hot":        [t["title"] for t in reddit_hot + reddit_subs if t.get("title")],
             "google":            [t["title"] for t in google_trends  if t.get("title")],
             "youtube":           [t["title"] for t in youtube_trends if t.get("title")],
             "tiktok":            [t["title"] for t in tiktok_trends  if t.get("title")],

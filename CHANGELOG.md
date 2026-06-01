@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-31] Feature: fetch subreddit hot posts via Reddit API (not RSS)
+
+Reddit RSS feeds return "hot" posts regardless of age, most of which were filtered by the 48h cutoff — leaving only ~15 Reddit posts per run with no upvote data. Replaced with direct Reddit JSON API calls (`/hot.json`) for all 20 configured subreddits, run in parallel (10 workers). Posts are filtered to `HOURS_BACK` and include upvote/comment counts, enabling engagement scoring floors (10K+ upvotes → min 7, 30K+ → min 8). Expected Reddit pool: 50–100 posts per run.
+
+---
+
 ## [2026-05-31] Fix: let Reddit posts recirculate across runs
 
 Reddit hot posts persist in RSS feeds for hours/days, but unpicked posts were being added to seen_urls after every run — permanently blocking them from later runs even as they gained upvotes. Now Reddit-sourced articles (sources starting with "r/" or containing "reddit") are only added to seen_urls if they were actually picked (score ≥ 6). This allows a post that scored 5 at 8 AM to resurface at 1 PM with 50K upvotes and hit the engagement floor. News articles unchanged.
