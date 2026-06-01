@@ -2497,8 +2497,18 @@ def main():
         print(f"   📋 Loaded {len(published_today)} title(s) published earlier today for cross-run dedup.")
     evaluated_articles = deduplicate_after_scoring(evaluated_articles, published_today=published_today)
 
-    # ── Update seen-URL registry with everything scored this run ─────────────
-    seen_urls, new_count = update_seen_urls(seen_urls, evaluated_articles)
+    # ── Update seen-URL registry ──────────────────────────────────────────────
+    # Reddit hot posts recirculate across runs — only mark them seen if picked.
+    # News articles are marked seen regardless (they don't gain relevance over time).
+    def _is_reddit(a: dict) -> bool:
+        src = (a.get('source') or '').lower()
+        return src.startswith('r/') or 'reddit' in src
+
+    urls_to_record = [
+        a for a in evaluated_articles
+        if not _is_reddit(a) or a.get('score', 0) >= MIN_SCORE
+    ]
+    seen_urls, new_count = update_seen_urls(seen_urls, urls_to_record)
     save_seen_urls(seen_urls)
     print(f"   📋 Seen registry updated: +{new_count} new URL(s), {len(seen_urls)} total.")
 

@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-05-31] Fix: let Reddit posts recirculate across runs
+
+Reddit hot posts persist in RSS feeds for hours/days, but unpicked posts were being added to seen_urls after every run — permanently blocking them from later runs even as they gained upvotes. Now Reddit-sourced articles (sources starting with "r/" or containing "reddit") are only added to seen_urls if they were actually picked (score ≥ 6). This allows a post that scored 5 at 8 AM to resurface at 1 PM with 50K upvotes and hit the engagement floor. News articles unchanged.
+
+---
+
 ## [2026-05-31] Fix: use Claude's `why` context in post-scoring dedup input
 
 Post-scoring dedup was failing to cluster related picks (e.g. 10+ NBA Finals items, two Jay-Z Roots Picnic items) because trending keyword items like "Spurs" or "Thunder" had no summary text, leaving Haiku with no signal to group them with related articles. Now uses the `why` field (Claude's scoring rationale) as the primary context for each item, falling back to `hook` then `summary`. The `why` field always contains a plain-English editorial explanation of what the item is about, giving dedup the connective tissue to cluster even bare-keyword trend items.
