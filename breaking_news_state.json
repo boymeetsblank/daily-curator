@@ -1,21 +1,5 @@
 {
   "known_ids": [
-    "7c879b0eea14",
-    "446a03507dd2",
-    "0a110c6d38e5",
-    "60eccf833923",
-    "1af4c466851d",
-    "409df3fcb4e6",
-    "62f7c109ed4b",
-    "b7051958011b",
-    "901866dcadba",
-    "8fc1bf2f35ac",
-    "fad6a9dabc1b",
-    "f07f30eea35c",
-    "e44b134aa819",
-    "cf8f3329ec6b",
-    "3bfa7db2e7e7",
-    "b3b545f404b3",
     "12fdc647858f",
     "85652c1ab4e0",
     "8eb647dce1f6",
@@ -499,19 +483,25 @@
     "282297e4579d",
     "6fecc9e92dac",
     "9159dd0af171",
-    "5d12b7f89be5"
+    "5d12b7f89be5",
+    "1fa16c38ff7e",
+    "2a8d294e1150",
+    "25ff6a5964f4",
+    "0032c59f9ead",
+    "290664c6af48",
+    "f3a0424f446d",
+    "bda71210cc88",
+    "729fdc6c047f",
+    "60e430abb402",
+    "ec5af1bb2192",
+    "841337a06f36",
+    "6df30c51bbd1",
+    "d44a243d4dfe",
+    "b77bc216f233",
+    "0039798ce7ae",
+    "6b147b9daf07"
   ],
   "failed_ids": {
-    "e663d663858d": "2026-05-31T19:58:12.459659+00:00",
-    "25ff6a5964f4": "2026-05-31T19:58:12.459659+00:00",
-    "cc5580671df6": "2026-05-31T19:58:12.459659+00:00",
-    "c2d25e8bb3a6": "2026-05-31T19:58:12.459659+00:00",
-    "22cabc225b56": "2026-05-31T19:58:12.459659+00:00",
-    "33dfc413ebf0": "2026-05-31T19:58:12.459659+00:00",
-    "a8d48fac0a51": "2026-05-31T19:58:12.459659+00:00",
-    "14fd4be4fb33": "2026-05-31T19:58:12.459659+00:00",
-    "33c00ea70304": "2026-05-31T21:07:35.780213+00:00",
-    "71b07a04291f": "2026-05-31T21:07:35.780213+00:00",
     "cfd016097b99": "2026-05-31T22:12:11.716331+00:00",
     "1f72c960901d": "2026-05-31T22:12:11.716331+00:00",
     "6e20b0c3df6e": "2026-05-31T22:12:11.716331+00:00",
@@ -522,72 +512,14 @@
     "3443ae937357": "2026-05-31T23:18:42.661303+00:00",
     "d50b37d516b4": "2026-05-31T23:18:42.661303+00:00",
     "1e3afbb8c225": "2026-05-31T23:18:42.661303+00:00",
-    "d424d9f57501": "2026-05-31T23:18:42.661303+00:00"
+    "d424d9f57501": "2026-05-31T23:18:42.661303+00:00",
+    "8d3d279cbbc5": "2026-06-01T01:36:15.191790+00:00",
+    "8165e39991f9": "2026-06-01T01:36:15.191790+00:00",
+    "b1accf7299b5": "2026-06-01T01:36:15.191790+00:00",
+    "4b8b78d657f3": "2026-06-01T01:36:15.191790+00:00",
+    "71b07a04291f": "2026-06-01T01:36:15.191790+00:00"
   },
   "live_clusters": {
-    "2f2ad145bd503bf0": {
-      "topic": "Nike Air Max TL 2.5 Bright Violet Release",
-      "item_ids": [
-        "bab62f04bfd0"
-      ],
-      "created_at": "2026-05-31T00:16:09.033779+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "94783bae45a9f2ea": {
-      "topic": "Love Island USA Cast Member N-Word Controversy Dismissal",
-      "item_ids": [
-        "36d61a874393"
-      ],
-      "created_at": "2026-05-31T00:16:09.033779+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "da385db2bf713d2c": {
-      "topic": "Michael De Luca Development Funding Pipeline Warning",
-      "item_ids": [
-        "8c0227523083"
-      ],
-      "created_at": "2026-05-31T00:16:09.033779+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2347e33ee5beed9d": {
-      "topic": "Tiafoe Faria Tennis Five-Set Match",
-      "item_ids": [
-        "7cd8fcbc9d23"
-      ],
-      "created_at": "2026-05-31T00:16:09.033779+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7d12fea6d7be5e28": {
-      "topic": "Barkov Finland Ice Hockey Victory Canada",
-      "item_ids": [
-        "9a48aba43b24"
-      ],
-      "created_at": "2026-05-31T00:16:09.033779+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c4c8ee8925f0f49b": {
-      "topic": "Vikings Hire Teasley GM Seahawks",
-      "item_ids": [
-        "ddeabd4238b4"
-      ],
-      "created_at": "2026-05-31T00:16:09.033779+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e4757ebbd47e30b0": {
-      "topic": "Baseball CBA Negotiation Battle Breakdown",
-      "item_ids": [
-        "4c4937f3a56b"
-      ],
-      "created_at": "2026-05-31T00:16:09.033779+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "da35a42fb45a91db": {
       "topic": "Macy Gray Australia Tour Expansion",
       "item_ids": [
@@ -627,7 +559,8 @@
     "c05853cf87e60d2e": {
       "topic": "Tatis 451-Foot Home Run MLB Drought",
       "item_ids": [
-        "696b876dc442"
+        "696b876dc442",
+        "0032c59f9ead"
       ],
       "created_at": "2026-05-31T04:55:42.368383+00:00",
       "last_escalated_size": 0,
@@ -1198,7 +1131,98 @@
       "created_at": "2026-05-31T23:19:14.034048+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "92b1a1e1921c2e20": {
+      "topic": "Don Toliver Hypebeast Pop-Up New York",
+      "item_ids": [
+        "1fa16c38ff7e"
+      ],
+      "created_at": "2026-06-01T01:36:47.034307+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bd2634038fbdab41": {
+      "topic": "Scripps DirecTV Retransmission Dispute Local Stations Blackout",
+      "item_ids": [
+        "2a8d294e1150"
+      ],
+      "created_at": "2026-06-01T01:36:47.034307+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8e8c8c81fac2a772": {
+      "topic": "SGA MVP Year Disappointment OKC Playoff Exit",
+      "item_ids": [
+        "25ff6a5964f4"
+      ],
+      "created_at": "2026-06-01T01:36:47.034307+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "085c4e4b4d5bf719": {
+      "topic": "Becky Hammon 150th Win Aces Valkyries",
+      "item_ids": [
+        "290664c6af48"
+      ],
+      "created_at": "2026-06-01T01:36:47.034307+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "627208a7ac8b9a92": {
+      "topic": "Jodar Fonseca French Open Quarterfinals 19-Year-Olds",
+      "item_ids": [
+        "f3a0424f446d"
+      ],
+      "created_at": "2026-06-01T01:36:47.034307+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5e111b07bffcbe79": {
+      "topic": "Pirates Sweep Twins Post-Game Troll",
+      "item_ids": [
+        "bda71210cc88"
+      ],
+      "created_at": "2026-06-01T01:36:47.034307+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7353466636ee29a0": {
+      "topic": "Berkshire Hathaway Taylor Morrison Housing Investment",
+      "item_ids": [
+        "729fdc6c047f"
+      ],
+      "created_at": "2026-06-01T01:36:47.034307+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "599d77bf3e90d4ba": {
+      "topic": "UOB FPT AI Technology Financial Innovation Partnership",
+      "item_ids": [
+        "60e430abb402",
+        "6df30c51bbd1"
+      ],
+      "created_at": "2026-06-01T01:36:47.034307+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c2ac2bda11d5c8f9": {
+      "topic": "IonQ Quantum Computing Growth Financial Performance",
+      "item_ids": [
+        "ec5af1bb2192"
+      ],
+      "created_at": "2026-06-01T01:36:47.034307+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "41503d3d8a02ed3b": {
+      "topic": "Laser Photonics Manufacturing Breakthrough",
+      "item_ids": [
+        "841337a06f36"
+      ],
+      "created_at": "2026-06-01T01:36:47.034307+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-05-31T23:19:14.035181+00:00"
+  "last_checked": "2026-06-01T01:36:47.035560+00:00"
 }
