@@ -1,25 +1,5 @@
 {
   "known_ids": [
-    "12fdc647858f",
-    "85652c1ab4e0",
-    "8eb647dce1f6",
-    "17e420bdffb8",
-    "ed69d68467f3",
-    "31c83a5359ba",
-    "f8a510237df1",
-    "bca892fd7936",
-    "7a7043f922e5",
-    "1a0486e6e88e",
-    "4863d5b4ea26",
-    "3450b3ed316a",
-    "1947093ecfa5",
-    "b4830e7d94cc",
-    "f9c84354f256",
-    "bb6b346af47d",
-    "9be381995b10",
-    "c9e1aa102ea2",
-    "e60658576fa3",
-    "d96decc3a27a",
     "a902f2a2f4d9",
     "95bb06f5125a",
     "4b75f78271b1",
@@ -499,82 +479,34 @@
     "d44a243d4dfe",
     "b77bc216f233",
     "0039798ce7ae",
-    "6b147b9daf07"
+    "6b147b9daf07",
+    "5b592bb4121a",
+    "3df8e530d4f9",
+    "6d3fb50a87dc",
+    "bcb19225aa76",
+    "176ef2fcf286",
+    "872b3d5c1181",
+    "b52e6b80e11c",
+    "725598b50802",
+    "77735da26c71",
+    "222ca8cb529a",
+    "338264fa6ce2",
+    "a261622324ed",
+    "4a3d413b29cb",
+    "c0ee54aaba15",
+    "e3f38a946465",
+    "185ca41f6c4a",
+    "7f6829edb579",
+    "475e68028f25",
+    "0f193b54ac6c",
+    "15cb1699181a"
   ],
   "failed_ids": {
-    "cfd016097b99": "2026-05-31T22:12:11.716331+00:00",
-    "1f72c960901d": "2026-05-31T22:12:11.716331+00:00",
-    "6e20b0c3df6e": "2026-05-31T22:12:11.716331+00:00",
-    "67865b3aed65": "2026-05-31T22:12:11.716331+00:00",
-    "51b21fad6017": "2026-05-31T22:12:11.716331+00:00",
-    "1be3e450c37b": "2026-05-31T23:18:42.661303+00:00",
-    "317162800675": "2026-05-31T23:18:42.661303+00:00",
-    "3443ae937357": "2026-05-31T23:18:42.661303+00:00",
-    "d50b37d516b4": "2026-05-31T23:18:42.661303+00:00",
-    "1e3afbb8c225": "2026-05-31T23:18:42.661303+00:00",
-    "d424d9f57501": "2026-05-31T23:18:42.661303+00:00",
-    "8d3d279cbbc5": "2026-06-01T01:36:15.191790+00:00",
-    "8165e39991f9": "2026-06-01T01:36:15.191790+00:00",
-    "b1accf7299b5": "2026-06-01T01:36:15.191790+00:00",
-    "4b8b78d657f3": "2026-06-01T01:36:15.191790+00:00",
-    "71b07a04291f": "2026-06-01T01:36:15.191790+00:00"
+    "1be3e450c37b": "2026-06-01T06:32:01.966810+00:00",
+    "a0e51b9347fa": "2026-06-01T06:32:01.966810+00:00",
+    "71b07a04291f": "2026-06-01T06:32:01.966810+00:00"
   },
   "live_clusters": {
-    "da35a42fb45a91db": {
-      "topic": "Macy Gray Australia Tour Expansion",
-      "item_ids": [
-        "447dceacb1eb"
-      ],
-      "created_at": "2026-05-31T04:55:42.368383+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "408ecd1d5944db50": {
-      "topic": "Billy Eichler Billy On The Street Revival Discussion",
-      "item_ids": [
-        "036aa3042dc5"
-      ],
-      "created_at": "2026-05-31T04:55:42.368383+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d3e2bf61a126d8b6": {
-      "topic": "Lemieux Brain Donation CTE Research",
-      "item_ids": [
-        "530cc0ab517f"
-      ],
-      "created_at": "2026-05-31T04:55:42.368383+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b00a8d646bd77de3": {
-      "topic": "Fever Clark Scoring Slump Loss",
-      "item_ids": [
-        "f9e414ad82ac"
-      ],
-      "created_at": "2026-05-31T04:55:42.368383+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c05853cf87e60d2e": {
-      "topic": "Tatis 451-Foot Home Run MLB Drought",
-      "item_ids": [
-        "696b876dc442",
-        "0032c59f9ead"
-      ],
-      "created_at": "2026-05-31T04:55:42.368383+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f5a9ceb6021ca50b": {
-      "topic": "Alibaba UEFA AI 6-Year Deal 360 Replay Technology",
-      "item_ids": [
-        "b7e0533d94e6"
-      ],
-      "created_at": "2026-05-31T04:55:42.368383+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "78b22a288723041b": {
       "topic": "Kanye West Istanbul Concert Record Breaking",
       "item_ids": [
@@ -1222,7 +1154,161 @@
       "created_at": "2026-06-01T01:36:47.034307+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "863d35b3494d8324": {
+      "topic": "adidas J-Pop Star Ado Japan National Football Jersey 2026",
+      "item_ids": [
+        "5b592bb4121a"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63e3a0f3d51815ab": {
+      "topic": "Bugatti Programme Solitaire Chiron One-Off 2026",
+      "item_ids": [
+        "3df8e530d4f9"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6da79604f7d026bb": {
+      "topic": "UMPG Australia Pacific President Andrew Jenkins Departure",
+      "item_ids": [
+        "6d3fb50a87dc"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6603894b69ef5bbc": {
+      "topic": "Mick Jagger Rolling Stones Tour Announcement 2026",
+      "item_ids": [
+        "bcb19225aa76"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "31a7085e549ae6f1": {
+      "topic": "Euphoria HBO Series Ending Season 3",
+      "item_ids": [
+        "176ef2fcf286"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "688285440d2e2e13": {
+      "topic": "Saint Mary's Upsets No. 1 UCLA Walk-Off WCWS",
+      "item_ids": [
+        "872b3d5c1181"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f28613cf10e06f7b": {
+      "topic": "Texas Tech Defeats UCLA WCWS Terry RBI",
+      "item_ids": [
+        "b52e6b80e11c"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "19909d14d760fbe0": {
+      "topic": "NBA Finals Courts Trophy Logo Design Return",
+      "item_ids": [
+        "725598b50802"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "78cdb43cc3ac2602": {
+      "topic": "Reigns-Fatu WWE Saga Wrestling Story",
+      "item_ids": [
+        "77735da26c71"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7f9bb6e70c76cfb3": {
+      "topic": "Nvidia Arm-Based PC Chip Microsoft Dell HP Launch",
+      "item_ids": [
+        "222ca8cb529a"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5f057ea83634f636": {
+      "topic": "Nvidia Unitree Humanoid Robot Platform IPO",
+      "item_ids": [
+        "338264fa6ce2"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "da13ed047867be6c": {
+      "topic": "SoftBank 75 Billion Euros AI Investment France",
+      "item_ids": [
+        "a261622324ed"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "43f968055e8563e3": {
+      "topic": "Nvidia-Backed AI Company London Expansion 5 Billion",
+      "item_ids": [
+        "4a3d413b29cb"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "43d0d2bc90df4e83": {
+      "topic": "Magellan Technology MeTS Acquisition UK Expansion",
+      "item_ids": [
+        "c0ee54aaba15",
+        "475e68028f25"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "329f4248fb7c818d": {
+      "topic": "Nvidia AI Chip Personal Computers Announcement",
+      "item_ids": [
+        "e3f38a946465"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e838738a0aef0c88": {
+      "topic": "Aerial Firefighting Climate Change Technology",
+      "item_ids": [
+        "185ca41f6c4a"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b50a8e3b4cc41ca0": {
+      "topic": "Calian CRPA GPS Technology Defence Platforms",
+      "item_ids": [
+        "7f6829edb579"
+      ],
+      "created_at": "2026-06-01T06:32:30.593078+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-01T01:36:47.035560+00:00"
+  "last_checked": "2026-06-01T06:32:30.594417+00:00"
 }
