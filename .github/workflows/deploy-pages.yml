@@ -5,7 +5,7 @@ on:
     branches: [main]
   workflow_dispatch:
   workflow_run:
-    workflows: ["Daily Curator"]
+    workflows: ["Daily Curator", "Light Curator"]
     types: [completed]
     branches: [main]
 
