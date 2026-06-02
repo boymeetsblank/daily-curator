@@ -1,0 +1,56 @@
+name: Light Curator
+
+on:
+  schedule:
+    - cron: '0 15 * * *'   # 10:00 AM CT
+    - cron: '0 21 * * *'   # 4:00 PM CT
+  workflow_dispatch:        # Allows manual trigger from GitHub
+
+jobs:
+  run-light-curator:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Light Curator (no Apify)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INOREADER_APP_ID: ${{ secrets.INOREADER_APP_ID }}
+          INOREADER_APP_KEY: ${{ secrets.INOREADER_APP_KEY }}
+          INOREADER_TOKEN: ${{ secrets.INOREADER_TOKEN }}
+          INOREADER_REFRESH_TOKEN: ${{ secrets.INOREADER_REFRESH_TOKEN }}
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: python3 daily_curator.py --light
+
+      - name: Save picks file to repo
+        run: |
+          git config user.name "Daily Curator Bot"
+          git config user.email "bot@daily-curator"
+          git add picks/ all_articles/
+          git diff --staged --quiet || git commit -m "Light picks $(date +'%Y-%m-%d %H:%M')"
+          git pull --rebase origin main
+          git push
+
+      - name: Send push notifications to subscribers
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_PUBLIC_KEY:  ${{ secrets.VAPID_PUBLIC_KEY }}
+        run: python3 send_push.py
+
+      - name: Commit pruned subscriptions if any expired
+        run: |
+          git add subscriptions.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Prune expired push subscriptions $(date +'%Y-%m-%d %H:%M')"
+          git pull --rebase origin main
+          git push

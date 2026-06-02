@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-01] Feature: light runs (Inoreader + RSS + Reddit only, no Apify)
+
+Added `--light` flag to `daily_curator.py` that skips all 4 Apify calls (Twitter Trends, Google Trends, TikTok Trends, Twitter Posts). Light runs still fetch Inoreader, Direct RSS, Reddit, and YouTube RSS, then score with Claude Sonnet. Also added `.github/workflows/light_curator.yml` — runs at 10:00 AM CT and 4:00 PM CT to fill the gaps between full runs, adding ~$7/month in Claude costs. Light runs skip the `social_trends.json` write to preserve the last full run's X/Google/TikTok data.
+
+---
+
 ## [2026-05-31] Feature: fetch subreddit hot posts via Reddit API (not RSS)
 
 Reddit RSS feeds return "hot" posts regardless of age, most of which were filtered by the 48h cutoff — leaving only ~15 Reddit posts per run with no upvote data. Replaced with direct Reddit JSON API calls (`/hot.json`) for all 20 configured subreddits, run in parallel (10 workers). Posts are filtered to `HOURS_BACK` and include upvote/comment counts, enabling engagement scoring floors (10K+ upvotes → min 7, 30K+ → min 8). Expected Reddit pool: 50–100 posts per run.

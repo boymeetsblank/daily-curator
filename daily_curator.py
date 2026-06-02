@@ -2423,8 +2423,13 @@ def _get_today_pick_urls() -> set[str]:
 
 
 def main():
+    light_run = "--light" in sys.argv
+
     print("\n" + "=" * 55)
-    print("  📰 Daily Curator — Content Scouting with Claude AI")
+    if light_run:
+        print("  ⚡ Daily Curator — Light Run (no Apify)")
+    else:
+        print("  📰 Daily Curator — Content Scouting with Claude AI")
     print("=" * 55)
 
     check_setup()
@@ -2506,13 +2511,16 @@ def main():
     print(f"\n🔗 Clustering articles by title similarity (threshold {CLUSTER_SIMILARITY_THRESHOLD:.0%})...")
     articles = tag_story_clusters(articles)
     articles = detect_cross_source_trends(articles)
-    twitter_trends  = fetch_twitter_trends()
-    twitter_posts   = fetch_twitter_posts([t["title"] for t in twitter_trends[:3]])
+    if light_run:
+        twitter_trends, twitter_posts, google_trends, tiktok_trends = [], [], [], []
+    else:
+        twitter_trends  = fetch_twitter_trends()
+        twitter_posts   = fetch_twitter_posts([t["title"] for t in twitter_trends[:3]])
+        google_trends   = fetch_google_trends()
+        tiktok_trends   = fetch_tiktok_trends()
     reddit_hot      = fetch_reddit_hot()
     reddit_subs, _  = filter_seen_urls(fetch_subreddit_hot_posts(), seen_urls)
-    google_trends   = fetch_google_trends()
     youtube_trends  = fetch_youtube_trends()
-    tiktok_trends   = fetch_tiktok_trends()
     all_items = articles + twitter_trends + twitter_posts + reddit_hot + reddit_subs + google_trends + youtube_trends + tiktok_trends
 
     # Extract plain topic names from trend items for the velocity signal prompt
@@ -2521,35 +2529,48 @@ def main():
     # Write social trends cache for breaking_news_check.py to consume (free — no extra Apify calls)
     # Preserve live-feed-written fields (x_ranks, google_engagement, x_fetched_at, google_fetched_at)
     # so they survive this overwrite.
+    # Light runs skip this write to preserve the last full run's X/Google/TikTok data.
     social_engagement: dict = {}
-    try:
-        existing_social: dict = {}
-        if os.path.exists("social_trends.json"):
-            with open("social_trends.json", encoding="utf-8") as _ef:
-                existing_social = json.load(_ef)
-        social_cache = {
-            "fetched_at":        datetime.now(tz=timezone.utc).isoformat(),
-            "x":                 [t["title"] for t in twitter_trends if t.get("title")],
-            "x_posts":           [t["title"] for t in twitter_posts  if t.get("title")],
-            "reddit_hot":        [t["title"] for t in reddit_hot + reddit_subs if t.get("title")],
-            "google":            [t["title"] for t in google_trends  if t.get("title")],
-            "youtube":           [t["title"] for t in youtube_trends if t.get("title")],
-            "tiktok":            [t["title"] for t in tiktok_trends  if t.get("title")],
-            # Preserve live-feed engagement metadata if present
-            "x_ranks":           {t["title"]: f"#{t['engagement']['rank']}" for t in twitter_trends if t.get("engagement", {}).get("rank")},
-            "google_engagement": existing_social.get("google_engagement", {}),
-            "x_fetched_at":      existing_social.get("x_fetched_at", ""),
-            "google_fetched_at": existing_social.get("google_fetched_at", ""),
-        }
-        social_engagement = {
-            "x_ranks":           social_cache["x_ranks"],
-            "google_engagement": social_cache["google_engagement"],
-        }
-        with open("social_trends.json", "w", encoding="utf-8") as _sf:
-            json.dump(social_cache, _sf, indent=2, ensure_ascii=False)
-        print(f"   📲 Wrote social_trends.json ({sum(len(v) for v in social_cache.values() if isinstance(v, list))} topics across 6 platforms)")
-    except Exception as _e:
-        print(f"   ⚠️  Could not write social_trends.json: {_e}")
+    if light_run:
+        try:
+            if os.path.exists("social_trends.json"):
+                with open("social_trends.json", encoding="utf-8") as _ef:
+                    _existing = json.load(_ef)
+                social_engagement = {
+                    "x_ranks":           _existing.get("x_ranks", {}),
+                    "google_engagement": _existing.get("google_engagement", {}),
+                }
+        except Exception:
+            pass
+    if not light_run:
+        try:
+            existing_social: dict = {}
+            if os.path.exists("social_trends.json"):
+                with open("social_trends.json", encoding="utf-8") as _ef:
+                    existing_social = json.load(_ef)
+            social_cache = {
+                "fetched_at":        datetime.now(tz=timezone.utc).isoformat(),
+                "x":                 [t["title"] for t in twitter_trends if t.get("title")],
+                "x_posts":           [t["title"] for t in twitter_posts  if t.get("title")],
+                "reddit_hot":        [t["title"] for t in reddit_hot + reddit_subs if t.get("title")],
+                "google":            [t["title"] for t in google_trends  if t.get("title")],
+                "youtube":           [t["title"] for t in youtube_trends if t.get("title")],
+                "tiktok":            [t["title"] for t in tiktok_trends  if t.get("title")],
+                # Preserve live-feed engagement metadata if present
+                "x_ranks":           {t["title"]: f"#{t['engagement']['rank']}" for t in twitter_trends if t.get("engagement", {}).get("rank")},
+                "google_engagement": existing_social.get("google_engagement", {}),
+                "x_fetched_at":      existing_social.get("x_fetched_at", ""),
+                "google_fetched_at": existing_social.get("google_fetched_at", ""),
+            }
+            social_engagement = {
+                "x_ranks":           social_cache["x_ranks"],
+                "google_engagement": social_cache["google_engagement"],
+            }
+            with open("social_trends.json", "w", encoding="utf-8") as _sf:
+                json.dump(social_cache, _sf, indent=2, ensure_ascii=False)
+            print(f"   📲 Wrote social_trends.json ({sum(len(v) for v in social_cache.values() if isinstance(v, list))} topics across 6 platforms)")
+        except Exception as _e:
+            print(f"   ⚠️  Could not write social_trends.json: {_e}")
 
     # ── Topic-level cross-run dedup: load recent pick titles for Claude to suppress ──
     recently_covered = load_recently_covered_topics(days=3)
