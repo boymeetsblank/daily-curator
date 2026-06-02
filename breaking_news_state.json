@@ -1,81 +1,5 @@
 {
   "known_ids": [
-    "839dd976649d",
-    "99783452cb2b",
-    "6134d565534a",
-    "a7c562d9d524",
-    "94b53d61b151",
-    "fd059a847111",
-    "28fc08128a6b",
-    "b5d6140c247c",
-    "655bf7058498",
-    "dd3a0ecdc593",
-    "2de4238fa385",
-    "29da2327d62a",
-    "44a3e9fed2a1",
-    "c018826815e5",
-    "e0765acda7ee",
-    "0c033667619f",
-    "aa1c845cf68b",
-    "8b3c90013bad",
-    "4fd271260b06",
-    "ab2b3abb1532",
-    "9ac8b7e2ccd9",
-    "d4779b1f7677",
-    "1946e4e8bc26",
-    "5582587cdc0c",
-    "e603559b953c",
-    "6a374bfb8f9a",
-    "640d69474e3a",
-    "3ec6022a9d97",
-    "51d1970279cd",
-    "0e6161e32569",
-    "f9484cff4111",
-    "ee7ef5dff9f0",
-    "fdeac3ff9ea1",
-    "a82d1f5ed447",
-    "79871d1f9087",
-    "2f9b935eb858",
-    "ba586b1a4ed0",
-    "f74c9224fe16",
-    "94a92ca955ae",
-    "d756803db539",
-    "0ad96d7eaa1b",
-    "1091c10f9199",
-    "91a4a820d1d5",
-    "3b54e4b8447f",
-    "bbc09ae3b3c8",
-    "c34b7cd067cc",
-    "b3f97580f691",
-    "c176c00204fa",
-    "7b0a44e37a35",
-    "350d28837002",
-    "25f2c841ef00",
-    "2e5e04d008d7",
-    "0a312cac428b",
-    "8d0885e41f9c",
-    "1ceb718e3361",
-    "1902f015f2bc",
-    "860e0adeaf1d",
-    "eb494e884284",
-    "75d6f0e4ec70",
-    "361533e64698",
-    "efe0c0c4c881",
-    "15550bd28489",
-    "4378ade99089",
-    "e0c502dfc0eb",
-    "ec7e96b20fa8",
-    "17a0bc553312",
-    "be083d6afa17",
-    "aa0d3dc26e9d",
-    "73e3ef56c400",
-    "63aae6be9210",
-    "8c536f114b79",
-    "0cb679f7ed2b",
-    "a05eeec5a30a",
-    "48436baf7cc3",
-    "4b7d4120cb3c",
-    "95382cdf3492",
     "915e56cc7328",
     "5aa408c7d9d8",
     "3ffabc5abc63",
@@ -499,181 +423,86 @@
     "8ced0e7d948f",
     "ef0fac4a2d76",
     "c9824df90169",
-    "53ef12932bbe"
+    "53ef12932bbe",
+    "5d3e9de4e4a7",
+    "d1a180b77a74",
+    "32392dce4e9f",
+    "ebbb52e1b2a5",
+    "5f5105d6286a",
+    "78c3b0a0936c",
+    "7fe2536dbadf",
+    "65e65eb20df8",
+    "9d864ec98a0b",
+    "52a5df20de23",
+    "51947d7ad293",
+    "bdb7faef73e0",
+    "8737a3062353",
+    "d1ab67a35881",
+    "32d671d099ec",
+    "698639b127d3",
+    "c9b7d53001f7",
+    "937060746223",
+    "2919dc63be71",
+    "5c12621480f7",
+    "22ddf2f81c2b",
+    "3f14a13c12d7",
+    "73cb24cc911a",
+    "1f43aef11a87",
+    "14e2d74cc148",
+    "ce08229b3f11",
+    "4f02829ac310",
+    "540cd3209bfc",
+    "8ac27810e599",
+    "0a0143368cfc",
+    "17bdd4c1fa4d",
+    "bcc7d6d68cee",
+    "69edf393fd87",
+    "19c58307bbd4",
+    "aaffa074b087",
+    "6a159387f1f2",
+    "e23d53738d9e",
+    "5ebd48cb5d7c",
+    "99038a655423",
+    "4fb16cc2d0ba",
+    "6455641d510d",
+    "58b962e0c44b",
+    "aa3aa245c773",
+    "da01bfec5122",
+    "af71e035d685",
+    "11038f1c049b",
+    "87d09a4bf82c",
+    "ed21b2c09d3a",
+    "902c3780637e",
+    "834666ce9507",
+    "92301302fcca",
+    "f2968bccf078",
+    "f0d7d6c57005",
+    "2a94d44889ea",
+    "77a26b04f4db",
+    "0be8a9047af8",
+    "a7da13699ed4",
+    "b26067f1255b",
+    "0cafe7df4628",
+    "96d122cf45ea",
+    "7aab38811d98",
+    "cc2a481ad528",
+    "c0bcfbb35c62",
+    "9b6cbdcdfe32",
+    "77a26b04f4db",
+    "b90d956e587c",
+    "7b13ec92ff0d",
+    "df5a5e690167",
+    "1529f5d99b80",
+    "29f35b7ee9d5",
+    "ef519338526a",
+    "07a149afb736",
+    "5021f187f96d",
+    "e25ea5051417",
+    "a00c61788cbf",
+    "82d2ed4c00c7"
   ],
-  "failed_ids": {
-    "913df9ab0c22": "2026-06-02T11:00:03.975419+00:00",
-    "5f3aba63af78": "2026-06-02T11:00:03.975419+00:00",
-    "26dbd5fef7be": "2026-06-02T11:00:03.975419+00:00",
-    "07a149afb736": "2026-06-02T11:00:03.975419+00:00",
-    "5021f187f96d": "2026-06-02T11:00:03.975419+00:00",
-    "e25ea5051417": "2026-06-02T11:00:03.975419+00:00",
-    "a00c61788cbf": "2026-06-02T11:00:03.975419+00:00",
-    "82d2ed4c00c7": "2026-06-02T11:00:03.975419+00:00"
-  },
+  "failed_ids": {},
   "live_clusters": {
-    "28e4843bc1378b2d": {
-      "topic": "Jon Petrie BBC Comedy Director Exits Hat Trick Productions",
-      "item_ids": [
-        "938c0f79c46d",
-        "8fd4a5a229a9"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "672f232f98d53b7e": {
-      "topic": "Basque Talent Day Film Drama Spotlight",
-      "item_ids": [
-        "05a3ac382ba6"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "36ce86c62ff9c776": {
-      "topic": "Live Nation Acquires Dale Play Live Argentine Promoter",
-      "item_ids": [
-        "f8f0a4aa0975"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c6a8d7594cbeeeac": {
-      "topic": "Chappell Roan Elton John LGBTQ Rights Interview",
-      "item_ids": [
-        "5a6f2ba777da"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "10657157818a6109": {
-      "topic": "Hugh Bonneville Celebrity Traitors AI Clones SXSW",
-      "item_ids": [
-        "e7908f23a0d0",
-        "fbd15211defa",
-        "de5a2e275885"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-02T11:00:03.975419+00:00",
-      "last_escalated_item_ids": [
-        "e7908f23a0d0",
-        "fbd15211defa",
-        "de5a2e275885"
-      ]
-    },
-    "edb543e18a32881e": {
-      "topic": "Universal Audio Volt 876 USB Audio Interface Review",
-      "item_ids": [
-        "b378cd12b2d0"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "62525b26c4ed01b2": {
-      "topic": "Norse Atlantic Airways Budget Airline Ticket Pricing",
-      "item_ids": [
-        "87041ed48d76"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "edebe14c5aaf2ffc": {
-      "topic": "Strava Anti-Scraper Enforcement IPO Preparation",
-      "item_ids": [
-        "e4ecef373454"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2b61f958ef1eb838": {
-      "topic": "ASUS ROG Xbox Ally X20 Limited Edition Bundle AR Glasses",
-      "item_ids": [
-        "eae72b237467",
-        "4db853b7b2d9"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c240de7d6336e8ac": {
-      "topic": "Google Flagship Store International Expansion Outside US",
-      "item_ids": [
-        "70b72be96415"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "de30275cde2e4b69": {
-      "topic": "OpenAI Model Solves 80-Year-Old Math Problem",
-      "item_ids": [
-        "17a34d5fc7da"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5fbe908aa5a193fe": {
-      "topic": "SoftBank Masayoshi Son AI Revolution Scale Comparison",
-      "item_ids": [
-        "f118abb10b10"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fb0cd4cc5ad79c91": {
-      "topic": "AI Disrupting Pre-ChatGPT Startup Generation",
-      "item_ids": [
-        "8803757b8a8f"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eb0b9d7b13aed029": {
-      "topic": "The Next Era of Computing Technology Shift",
-      "item_ids": [
-        "574b3b980cd7"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "444ceeeb3362442c": {
-      "topic": "China Approves First Invasive Brain-Computer Chip",
-      "item_ids": [
-        "5c7a43b013c5"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "107b10ed149491b0": {
-      "topic": "New Phase of Matter Quantum Technology Impact",
-      "item_ids": [
-        "5648bd6f9e1a"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a1f347096be38f9a": {
-      "topic": "Eason Unit Grid Control Low-Carbon Dispatch Development",
-      "item_ids": [
-        "15336f9ed5e6"
-      ],
-      "created_at": "2026-06-01T12:20:09.851143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "7326726f019ad1c8": {
       "topic": "Air Jordan 1 Low Quai 54 Release",
       "item_ids": [
@@ -1050,7 +879,8 @@
     "63b027d277a40091": {
       "topic": "HPE Earnings Beat Stock Surge",
       "item_ids": [
-        "ef53f9897e74"
+        "ef53f9897e74",
+        "6455641d510d"
       ],
       "created_at": "2026-06-01T21:46:19.787866+00:00",
       "last_escalated_size": 0,
@@ -1159,11 +989,20 @@
     "6ed8ed93d3dbdf2b": {
       "topic": "Alphabet AI Infrastructure Investment 80 Billion Funding",
       "item_ids": [
-        "97fd2150ce72"
+        "97fd2150ce72",
+        "6a159387f1f2",
+        "e23d53738d9e"
       ],
       "created_at": "2026-06-01T23:18:41.482934+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-02T15:00:55.238201+00:00",
+      "picks_file": "picks/picks-2026-06-02-1501.md",
+      "why_text": "Google's parent company is putting $80 billion behind its AI ambitions, a number that signals the compute wars are entering a new, almost incomprehensible scale. This comes as rivals like Anthropic are aggressively expanding their enterprise reach \u2014 Mythos now spans 150+ organizations across 15 countries \u2014 meaning the battle isn't just for model supremacy but for institutional lock-in. Whoever owns the infrastructure and the enterprise contracts wins the decade.",
+      "last_escalated_item_ids": [
+        "97fd2150ce72",
+        "6a159387f1f2",
+        "e23d53738d9e"
+      ]
     },
     "ebaba43db3218d61": {
       "topic": "China Semiconductor Manufacturing Without Nvidia",
@@ -1259,7 +1098,8 @@
     "efb18189fd2a9d99": {
       "topic": "Amazon Prime Day June 23 2026 Event",
       "item_ids": [
-        "5470e38dda6d"
+        "5470e38dda6d",
+        "19c58307bbd4"
       ],
       "created_at": "2026-06-02T06:22:06.156309+00:00",
       "last_escalated_size": 0,
@@ -1322,11 +1162,22 @@
     "c771835867e7c431": {
       "topic": "Nvidia Jensen Huang Marvell Trillion-Dollar Valuation",
       "item_ids": [
-        "3eb402b57a77"
+        "3eb402b57a77",
+        "aa3aa245c773",
+        "0be8a9047af8",
+        "b90d956e587c"
       ],
       "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-02T15:00:55.238201+00:00",
+      "picks_file": "picks/picks-2026-06-02-1501.md",
+      "why_text": "When Nvidia's Jensen Huang publicly crowns a company, markets listen \u2014 his endorsement sent Marvell's stock soaring 25% in a single session, a staggering move for a chipmaker already deep in the AI infrastructure race. Huang's blessing signals that the trillion-dollar club is expanding beyond the obvious names, and that the real AI money is flowing into the picks-and-shovels layer of the stack. This is a cultural moment in tech: the godfather of the GPU era is actively reshaping which companies get to matter.",
+      "last_escalated_item_ids": [
+        "3eb402b57a77",
+        "aa3aa245c773",
+        "0be8a9047af8",
+        "b90d956e587c"
+      ]
     },
     "7e30fe4c824893df": {
       "topic": "Abivax Biotech Cancer Trial Data Setback",
@@ -1367,7 +1218,8 @@
     "727e89ee9c7eaf8e": {
       "topic": "Rick Adelman NBA Hall of Fame Legacy",
       "item_ids": [
-        "23dfa7cdf10a"
+        "23dfa7cdf10a",
+        "8ac27810e599"
       ],
       "created_at": "2026-06-02T11:01:21.041071+00:00",
       "last_escalated_size": 0,
@@ -1376,7 +1228,8 @@
     "27da30070b4b0420": {
       "topic": "OKC Thunder Roster Retention Strategy 2026",
       "item_ids": [
-        "8079ad22dae9"
+        "8079ad22dae9",
+        "f0d7d6c57005"
       ],
       "created_at": "2026-06-02T11:01:21.041071+00:00",
       "last_escalated_size": 0,
@@ -1394,7 +1247,8 @@
     "5ae46e375543a761": {
       "topic": "NBA Finals 2026 Knicks-Spurs Predictions",
       "item_ids": [
-        "890adc0d45bb"
+        "890adc0d45bb",
+        "2a94d44889ea"
       ],
       "created_at": "2026-06-02T11:01:21.041071+00:00",
       "last_escalated_size": 0,
@@ -1412,7 +1266,8 @@
     "01535978442fe5e5": {
       "topic": "Stock Market AI Rally Middle East Tensions",
       "item_ids": [
-        "e6b951ae995d"
+        "e6b951ae995d",
+        "cc2a481ad528"
       ],
       "created_at": "2026-06-02T11:01:21.041071+00:00",
       "last_escalated_size": 0,
@@ -1462,7 +1317,278 @@
       "created_at": "2026-06-02T11:01:21.041071+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "8cb7bdcaf0a3a884": {
+      "topic": "Air Jordan 14 Low Valentine's Day February 2027 Release",
+      "item_ids": [
+        "d1a180b77a74"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "374bed6b446a3e61": {
+      "topic": "Nike Air Bakin' Retro Release",
+      "item_ids": [
+        "32392dce4e9f"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "df59c2041899ce59": {
+      "topic": "AI in Reality TV Production Concerns",
+      "item_ids": [
+        "ebbb52e1b2a5"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "659570e17efb093b": {
+      "topic": "Tribeca AI-Made Film Iran Protests Premiere Defense",
+      "item_ids": [
+        "5f5105d6286a"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "616d9604ce223651": {
+      "topic": "Tom Holland Spider-Man Delay The Odyssey Casting",
+      "item_ids": [
+        "78c3b0a0936c"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a30850ee06fb4c20": {
+      "topic": "Sakanishi Miiku Tribeca Film Debut",
+      "item_ids": [
+        "7fe2536dbadf"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "287be5fc81d68041": {
+      "topic": "Belle and Sebastian Scottish World Cup Anthem",
+      "item_ids": [
+        "9d864ec98a0b"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b9476306b1faee42": {
+      "topic": "Jack Whitehall Becky Hill Diss Track Response",
+      "item_ids": [
+        "51947d7ad293"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "20346c0ecf259614": {
+      "topic": "Governors Ball 2026 Last-Minute Tickets",
+      "item_ids": [
+        "d1ab67a35881"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8b5214f5b724d9de": {
+      "topic": "Death Cab for Cutie New Album Recovery",
+      "item_ids": [
+        "698639b127d3"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5af28a007948ff9a": {
+      "topic": "Cro-Mags First New Song Six Years Wired for Chaos",
+      "item_ids": [
+        "c9b7d53001f7"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c4ca941ed42193a": {
+      "topic": "BTS iHeartRadio Festival Las Vegas Headliners",
+      "item_ids": [
+        "937060746223"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "48329758a6044610": {
+      "topic": "Will Arnett Kristen Stewart The Challenger NASA Series Prime Video",
+      "item_ids": [
+        "2919dc63be71"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c259e59212a7121d": {
+      "topic": "Mineshaft The Cruising Murders Tribeca Documentary",
+      "item_ids": [
+        "5c12621480f7"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "66b07de786dfc08e": {
+      "topic": "Natasha Lyonne Red Sea Survival Thriller Lina Malaika",
+      "item_ids": [
+        "22ddf2f81c2b"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "535f67ede62662e7": {
+      "topic": "Onslaught Adria Arjona Sniper Thriller A24 Adam Wingard",
+      "item_ids": [
+        "73cb24cc911a"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a8a3ab072419f094": {
+      "topic": "Stanley Cup Final 2026 NHL Playoffs",
+      "item_ids": [
+        "14e2d74cc148",
+        "ce08229b3f11"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "64fe084c19affd0c": {
+      "topic": "Eagles Trade WR Brown to Patriots",
+      "item_ids": [
+        "4f02829ac310"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c279dfb6f47954aa": {
+      "topic": "Myles Garrett Traded to Rams Blockbuster",
+      "item_ids": [
+        "540cd3209bfc"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a5d9fb0ff33501f4": {
+      "topic": "Meta Series Feature Instagram Facebook Episodic Reels",
+      "item_ids": [
+        "0a0143368cfc"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "11fa457417fd26de": {
+      "topic": "X React with Video Creator Feature",
+      "item_ids": [
+        "17bdd4c1fa4d"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e9e61054d28aa019": {
+      "topic": "Anthropic Claude Mythos Critical Infrastructure 15+ Countries",
+      "item_ids": [
+        "bcc7d6d68cee"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7c39bf0b195542f6": {
+      "topic": "Apple MacBook Neo Generation Buyers",
+      "item_ids": [
+        "69edf393fd87"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "98dc65cf6ae9d536": {
+      "topic": "ASUS Nvidia RTX Spark Laptops MacBook Pro Competition",
+      "item_ids": [
+        "aaffa074b087"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5e552c281993cdfb": {
+      "topic": "Anthropic Claude Mythos 150 Organizations Expansion 15+ Countries",
+      "item_ids": [
+        "5ebd48cb5d7c"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8b0d1dd2d91f1a9b": {
+      "topic": "Anthropic Glasswing Claude Mythos Public Model Releases",
+      "item_ids": [
+        "ed21b2c09d3a"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dd659720e7c9dbcb": {
+      "topic": "Jeremy Lin ESPN Knicks NBA Finals 2026",
+      "item_ids": [
+        "92301302fcca"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75dd8629839c697e": {
+      "topic": "NBA Draft 2026 Mock Draft Top Picks",
+      "item_ids": [
+        "f2968bccf078"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "496a215770b5baba": {
+      "topic": "Nvidia CEO PC Reinvention 40 Years AI",
+      "item_ids": [
+        "77a26b04f4db"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d89cfc9841e825e0": {
+      "topic": "Volvo P1900 Sports Car Sweden Unveil",
+      "item_ids": [
+        "7b13ec92ff0d"
+      ],
+      "created_at": "2026-06-02T15:01:49.686934+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-02T11:01:27.759035+00:00"
+  "last_checked": "2026-06-02T15:02:03.205816+00:00"
 }
