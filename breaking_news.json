@@ -1,6 +1,90 @@
 {
   "items": [
     {
+      "id": "eaf2e1c5b12e",
+      "topic": "Bryson Tiller Announces 61-Date ‘Neo Trapsoul Tour’ With Majid Jordan and Ty Dolla $ign",
+      "traffic": "",
+      "detected_at": "2026-06-02T06:21:37.800247+00:00",
+      "search_url": "https://www.billboard.com/music/rb-hip-hop/bryson-tiller-neo-trapsoul-tour-1236262017/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "bba2c1030123729e"
+    },
+    {
+      "id": "60deb0e31979",
+      "topic": "‘Euphoria’ Star Alexa Demie Opens Up About Her ‘Deep-Rooted Connection’ to the Unapologetic Maddy",
+      "traffic": "",
+      "detected_at": "2026-06-02T06:21:37.800247+00:00",
+      "search_url": "https://www.rollingstone.com/tv-movies/tv-movie-news/euphoria-alexa-demie-maddy-connection-1235571039/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "31a7085e549ae6f1"
+    },
+    {
+      "id": "760e3e299293",
+      "topic": "Blue Origin CEO says New Glenn will fly again before the year ends",
+      "traffic": "",
+      "detected_at": "2026-06-02T06:21:37.800247+00:00",
+      "search_url": "https://www.engadget.com/2185458/blue-origin-new-glenn-launchpad-explosion-repair-update/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "3d35cc84f966b660"
+    },
+    {
+      "id": "5470e38dda6d",
+      "topic": "Amazon's four-day Prime Day event starts June 23, as shoppers battle inflation",
+      "traffic": "",
+      "detected_at": "2026-06-02T06:21:37.800247+00:00",
+      "search_url": "https://www.cnbc.com/2026/06/02/amazon-prime-day-shopping-inflation.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "efb18189fd2a9d99"
+    },
+    {
+      "id": "abd5ad54e448",
+      "topic": "Visualizing Nolan Arenado's swing using bat tracking technology - MLB.com",
+      "traffic": "",
+      "detected_at": "2026-06-02T06:21:37.800247+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPc3lfc3M2WlFKbDFuN1VNSG42TDFRZW8xd0dFaGQ5SV9MWFZ0UC13aGFsSXVQcHVGeG9WRktKZmE3SVlSVkhZdVB3TklxbE05dDdrcmpZQks3Si1pQ0tBcnI4TzZ3Zk1yYnBMZ1ZPaG1EeUxnTVVpUUpsVGJJR3lETXBaYi1lWGlsclR4Q0xwU1p4WU1Wd3R6OTBXOA?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 5
+    },
+    {
+      "id": "f92059db9d00",
+      "topic": "Visualizing Josh Naylor's swing using bat tracking technology - MLB.com",
+      "traffic": "",
+      "detected_at": "2026-06-02T06:21:37.800247+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdnlhSEprWTVaUjF4LVN5bXo2SkpSeFhIQ21XVTZZNHJVdXhLV1lnOWhwcjZ4R3BlVWVBc2NSYXd6cUhYamRjTDBtZENmRHJjYzBnZ3VGWC1wa3AwcVVLeFJCRzV5NHhUdVh0X3lXYnE1V1FhMk1PeEEyUWxjX0tGWHlTWldBTGxGY1Y4MjRPUWx4M1FBUkl0ZA?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 5
+    },
+    {
+      "id": "b14c00526c43",
+      "topic": "Olivia Miles",
+      "traffic": "##2 on X",
+      "detected_at": "2026-06-02T06:21:37.800247+00:00",
+      "search_url": "https://x.com/search?q=Olivia+Miles&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "4d8b48d6b248",
+      "topic": "Cole Young",
+      "traffic": "##4 on X",
+      "detected_at": "2026-06-02T06:21:37.800247+00:00",
+      "search_url": "https://x.com/search?q=Cole+Young&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "693ae13b2467",
       "topic": "Gotham TV Awards: ‘DTF: St. Louis,’ ‘Pluribus’ & ‘I Love LA’ Win Top Series Prizes; Lead Acting Honors To Chase Infiniti, Michael Shannon & Tim Robinson – Full List",
       "traffic": "",
@@ -346,94 +430,7 @@
       "source_type": "feed",
       "haiku_score": 5,
       "cluster_id": "26fa704bfaeb92a0"
-    },
-    {
-      "id": "4794cfb38cf8",
-      "topic": "Rogét Chahayed Talks Producing Drake’s ‘ICEMAN’ Hit ‘Janice STFU’: ‘It’s Full-Circle for Me’",
-      "traffic": "",
-      "detected_at": "2026-06-01T21:45:45.947274+00:00",
-      "search_url": "https://www.billboard.com/music/rb-hip-hop/roget-chahayed-drake-iceman-janice-stfu-interview-1236260847/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "697e73804ace86c6"
-    },
-    {
-      "id": "432f44dfdd1a",
-      "topic": "Michael Jackson’s Deep Cut ‘Chicago’ Debuts on Billboard Hot 100",
-      "traffic": "",
-      "detected_at": "2026-06-01T21:45:45.947274+00:00",
-      "search_url": "https://www.billboard.com/music/chart-beat/michael-jackson-chicago-hot-100-debut-1236261711/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "c6cf010316a9afdb"
-    },
-    {
-      "id": "01025c26465c",
-      "topic": "Music’s Most Dangerous Immortal",
-      "traffic": "",
-      "detected_at": "2026-06-01T21:45:45.947274+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-news/musics-most-dangerous-immortial-lestat-de-lioncourt-1235563506/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "2a9b89a0584d",
-      "topic": "‘My Favorite Music I’ve Ever Made’: Everything We Know About Gracie Abrams’ ‘Daughter From Hell’",
-      "traffic": "",
-      "detected_at": "2026-06-01T21:45:45.947274+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-features/gracie-abrams-daughter-from-hell-everything-we-know-1235570687/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "f00102e773c2a630"
-    },
-    {
-      "id": "1d2e32ada96e",
-      "topic": "The Best Moments From Bad Bunny’s Global Tour",
-      "traffic": "",
-      "detected_at": "2026-06-01T21:45:45.947274+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-lists/bad-bunny-tour-dates-best-moments-highlights-1235489060/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "a989c64f3e2c8607"
-    },
-    {
-      "id": "5c7d25170b52",
-      "topic": "‘Euphoria’ Creator Sam Levinson & Cast On Telling The “Honest Ending” After 3 Seasons: “There’s No Reason To Sugarcoat”",
-      "traffic": "",
-      "detected_at": "2026-06-01T21:45:45.947274+00:00",
-      "search_url": "https://deadline.com/2026/06/euphoria-season-3-finale-explained-sam-levinson-cast-reactions-1236937949/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "31a7085e549ae6f1"
-    },
-    {
-      "id": "38e0dcff8805",
-      "topic": "‘Jury Duty Presents: Company Retreat’ Team On Show’s Secret Sauce: “It’s A Celebration Of Common Decency”",
-      "traffic": "",
-      "detected_at": "2026-06-01T21:45:45.947274+00:00",
-      "search_url": "https://deadline.com/2026/06/jury-duty-presents-company-retreat-team-interview-1236930336/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "9f2a5766cb4fed75"
-    },
-    {
-      "id": "a05703d43c9e",
-      "topic": "Reese’s Book Club Pick ‘The Fine Art of Lying’ To Be Adapted As TV Series By UCP With Scarlett Johansson’s These Pictures Producing",
-      "traffic": "",
-      "detected_at": "2026-06-01T21:45:45.947274+00:00",
-      "search_url": "https://deadline.com/2026/06/the-fine-art-of-lying-book-series-ucp-scarlett-johansson-1236935843/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "0f696ce7920900f3"
     }
   ],
-  "last_checked": "2026-06-02T01:40:24.607633+00:00"
+  "last_checked": "2026-06-02T06:21:37.800247+00:00"
 }
