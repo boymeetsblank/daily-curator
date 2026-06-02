@@ -262,5 +262,11 @@
     "rss": "https://www.reddit.com/r/MMA/.rss",
     "category": "sports",
     "enabled": true
+  },
+  {
+    "name": "Google News - Business",
+    "rss": "https://rss.app/feeds/7eEaccLy2ioNvbeK.xml",
+    "category": "other",
+    "enabled": true
   }
 ]
