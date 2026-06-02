@@ -156,6 +156,12 @@
     "enabled": true
   },
   {
+    "name": "Google News - Technology",
+    "rss": "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=Technology",
+    "category": "other",
+    "enabled": true
+  },
+  {
     "name": "r/popular",
     "rss": "https://www.reddit.com/r/popular/.rss",
     "category": "wide net",
@@ -258,27 +264,51 @@
     "enabled": true
   },
   {
-    "name": "Google News - Business",
-    "rss": "https://rss.app/feeds/7eEaccLy2ioNvbeK.xml",
-    "category": "other",
+    "name": "Highsnobiety",
+    "rss": "https://news.google.com/rss/search?q=site:highsnobiety.com&hl=en-US&gl=US&ceid=US:en",
+    "category": "fashion",
     "enabled": true
   },
   {
-    "name": "Google News - Technology",
-    "rss": "https://rss.app/feeds/XQ9YjuNGf2w70bc4.xml",
-    "category": "other",
+    "name": "Nice Kicks",
+    "rss": "https://news.google.com/rss/search?q=site:nicekicks.com&hl=en-US&gl=US&ceid=US:en",
+    "category": "sneakers",
     "enabled": true
   },
   {
-    "name": "Google News - Entertainment",
-    "rss": "https://rss.app/feeds/8V8GMTRDtnt4U6g0.xml",
-    "category": "other",
+    "name": "Hodinkee",
+    "rss": "https://news.google.com/rss/search?q=site:hodinkee.com&hl=en-US&gl=US&ceid=US:en",
+    "category": "culture",
     "enabled": true
   },
   {
-    "name": "Google News - Sports",
-    "rss": "https://rss.app/feeds/U3sDZiydQ4AVYnn8.xml",
-    "category": "other",
+    "name": "Time+Tide Watches",
+    "rss": "https://news.google.com/rss/search?q=site:timeandtidewatches.com&hl=en-US&gl=US&ceid=US:en",
+    "category": "culture",
+    "enabled": true
+  },
+  {
+    "name": "Gear Patrol",
+    "rss": "https://news.google.com/rss/search?q=site:gearpatrol.com&hl=en-US&gl=US&ceid=US:en",
+    "category": "culture",
+    "enabled": true
+  },
+  {
+    "name": "9to5Mac",
+    "rss": "https://news.google.com/rss/search?q=site:9to5mac.com&hl=en-US&gl=US&ceid=US:en",
+    "category": "technology",
+    "enabled": true
+  },
+  {
+    "name": "Google News - NBA",
+    "rss": "https://news.google.com/rss/search?q=NBA&hl=en-US&gl=US&ceid=US:en",
+    "category": "sports",
+    "enabled": true
+  },
+  {
+    "name": "Google News - Gaming",
+    "rss": "https://news.google.com/rss/search?q=gaming+video+games&hl=en-US&gl=US&ceid=US:en",
+    "category": "culture",
     "enabled": true
   }
 ]
