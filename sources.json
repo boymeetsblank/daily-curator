@@ -310,5 +310,41 @@
     "rss": "https://news.google.com/rss/search?q=gaming+video+games&hl=en-US&gl=US&ceid=US:en",
     "category": "culture",
     "enabled": true
+  },
+  {
+    "name": "Entrepreneur",
+    "rss": "https://news.google.com/rss/search?q=site:entrepreneur.com&hl=en-US&gl=US&ceid=US:en",
+    "category": "business",
+    "enabled": true
+  },
+  {
+    "name": "Yahoo Finance",
+    "rss": "https://news.google.com/rss/search?q=site:finance.yahoo.com&hl=en-US&gl=US&ceid=US:en",
+    "category": "business",
+    "enabled": true
+  },
+  {
+    "name": "Google News - Business",
+    "rss": "https://news.google.com/rss/search?q=business&hl=en-US&gl=US&ceid=US:en",
+    "category": "business",
+    "enabled": true
+  },
+  {
+    "name": "Google News - Finance",
+    "rss": "https://news.google.com/rss/search?q=finance&hl=en-US&gl=US&ceid=US:en",
+    "category": "business",
+    "enabled": true
+  },
+  {
+    "name": "Google News - Vehicles",
+    "rss": "https://news.google.com/rss/search?q=vehicles+cars+automotive&hl=en-US&gl=US&ceid=US:en",
+    "category": "culture",
+    "enabled": true
+  },
+  {
+    "name": "Google News - BMW",
+    "rss": "https://news.google.com/rss/search?q=BMW&hl=en-US&gl=US&ceid=US:en",
+    "category": "culture",
+    "enabled": true
   }
 ]
