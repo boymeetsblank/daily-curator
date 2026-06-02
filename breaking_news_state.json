@@ -1,15 +1,5 @@
 {
   "known_ids": [
-    "4039b03b27cf",
-    "0978c66c292a",
-    "c9d2cd3dcdd5",
-    "62b1c2746533",
-    "d4c0d67cd465",
-    "65b69c336298",
-    "e958b58fdfc9",
-    "48026dd09a75",
-    "2d09ec9a487e",
-    "9efeed87e5f3",
     "c133e41f423a",
     "f00451e5cd8d",
     "3f80831f496f",
@@ -499,7 +489,17 @@
     "ed1ec9675868",
     "eada49c93bac",
     "df515f0ae58d",
-    "a8d570d7ec64"
+    "a8d570d7ec64",
+    "693ae13b2467",
+    "f387e17a632e",
+    "43a2cbd63e17",
+    "506578e6a5f8",
+    "c2134ab6aacb",
+    "6de9299cadc5",
+    "bdc07ffaee00",
+    "5c189fa500f8",
+    "246fa21a91f1",
+    "d04413899b82"
   ],
   "failed_ids": {
     "3c6688dfa31f": "2026-06-01T21:45:45.947274+00:00",
@@ -515,154 +515,15 @@
     "970b5033015b": "2026-06-01T23:18:10.512126+00:00",
     "8e9ad5d18d25": "2026-06-01T23:18:10.512126+00:00",
     "65256a47d1e4": "2026-06-01T23:18:10.512126+00:00",
-    "5cb4da789c48": "2026-06-01T23:18:10.512126+00:00"
+    "5cb4da789c48": "2026-06-01T23:18:10.512126+00:00",
+    "31faaf5aec90": "2026-06-02T01:40:24.607633+00:00",
+    "57e6bbacb380": "2026-06-02T01:40:24.607633+00:00",
+    "80a21abdc18a": "2026-06-02T01:40:24.607633+00:00",
+    "9a8bb974e158": "2026-06-02T01:40:24.607633+00:00",
+    "cb6df5923148": "2026-06-02T01:40:24.607633+00:00",
+    "33120d5abbbf": "2026-06-02T01:40:24.607633+00:00"
   },
   "live_clusters": {
-    "5cc40804e2304398": {
-      "topic": "M.I.A. Sues Kid Cudi Rebel Rangers Tour Removal",
-      "item_ids": [
-        "8e2bc0d2bd1b"
-      ],
-      "created_at": "2026-05-31T23:19:14.034048+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6dfab5e3a726e73e": {
-      "topic": "Jays Sanchez Wrist Injury Fan-Thrown Ball",
-      "item_ids": [
-        "170796176d3f"
-      ],
-      "created_at": "2026-05-31T23:19:14.034048+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "736daa415adb684c": {
-      "topic": "Texas Baseball No-Hitter Breaks WCWS Huskers",
-      "item_ids": [
-        "fdb03ab1666d"
-      ],
-      "created_at": "2026-05-31T23:19:14.034048+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ef2f02635d799f02": {
-      "topic": "MacBook Neo Competitor Landscape",
-      "item_ids": [
-        "4b83e46e5e1d"
-      ],
-      "created_at": "2026-05-31T23:19:14.034048+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "335c57647e833ee8": {
-      "topic": "Alienware AW3926QW 39-inch 5K OLED Monitor Launch",
-      "item_ids": [
-        "a5b9a288f3cf"
-      ],
-      "created_at": "2026-05-31T23:19:14.034048+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "357b3ea2abc14e40": {
-      "topic": "ALS Patient Voice Restoration AI Technology",
-      "item_ids": [
-        "34cf38e90c1a"
-      ],
-      "created_at": "2026-05-31T23:19:14.034048+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "92b1a1e1921c2e20": {
-      "topic": "Don Toliver Hypebeast Pop-Up New York",
-      "item_ids": [
-        "1fa16c38ff7e"
-      ],
-      "created_at": "2026-06-01T01:36:47.034307+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bd2634038fbdab41": {
-      "topic": "Scripps DirecTV Retransmission Dispute Local Stations Blackout",
-      "item_ids": [
-        "2a8d294e1150"
-      ],
-      "created_at": "2026-06-01T01:36:47.034307+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8e8c8c81fac2a772": {
-      "topic": "SGA MVP Year Disappointment OKC Playoff Exit",
-      "item_ids": [
-        "25ff6a5964f4"
-      ],
-      "created_at": "2026-06-01T01:36:47.034307+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "085c4e4b4d5bf719": {
-      "topic": "Becky Hammon 150th Win Aces Valkyries",
-      "item_ids": [
-        "290664c6af48"
-      ],
-      "created_at": "2026-06-01T01:36:47.034307+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "627208a7ac8b9a92": {
-      "topic": "Jodar Fonseca French Open Quarterfinals 19-Year-Olds",
-      "item_ids": [
-        "f3a0424f446d"
-      ],
-      "created_at": "2026-06-01T01:36:47.034307+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5e111b07bffcbe79": {
-      "topic": "Pirates Sweep Twins Post-Game Troll",
-      "item_ids": [
-        "bda71210cc88"
-      ],
-      "created_at": "2026-06-01T01:36:47.034307+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7353466636ee29a0": {
-      "topic": "Berkshire Hathaway Taylor Morrison Housing Investment",
-      "item_ids": [
-        "729fdc6c047f"
-      ],
-      "created_at": "2026-06-01T01:36:47.034307+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "599d77bf3e90d4ba": {
-      "topic": "UOB FPT AI Technology Financial Innovation Partnership",
-      "item_ids": [
-        "60e430abb402",
-        "6df30c51bbd1"
-      ],
-      "created_at": "2026-06-01T01:36:47.034307+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c2ac2bda11d5c8f9": {
-      "topic": "IonQ Quantum Computing Growth Financial Performance",
-      "item_ids": [
-        "ec5af1bb2192"
-      ],
-      "created_at": "2026-06-01T01:36:47.034307+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "41503d3d8a02ed3b": {
-      "topic": "Laser Photonics Manufacturing Breakthrough",
-      "item_ids": [
-        "841337a06f36"
-      ],
-      "created_at": "2026-06-01T01:36:47.034307+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "863d35b3494d8324": {
       "topic": "adidas J-Pop Star Ado Japan National Football Jersey 2026",
       "item_ids": [
@@ -1511,7 +1372,52 @@
       "created_at": "2026-06-01T23:18:41.482934+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "246f39b18e9e873f": {
+      "topic": "Gotham TV Awards 2026 Winners DTF St. Louis Pluribus I Love LA",
+      "item_ids": [
+        "693ae13b2467"
+      ],
+      "created_at": "2026-06-02T01:40:58.483557+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "32f65690aea032bd": {
+      "topic": "Zach Cregger Parts Ways Artists First Management",
+      "item_ids": [
+        "f387e17a632e"
+      ],
+      "created_at": "2026-06-02T01:40:58.483557+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "08ad8605556a9532": {
+      "topic": "Square Peg Social Austin Filmmaker Mentorship Program Second Edition",
+      "item_ids": [
+        "43a2cbd63e17"
+      ],
+      "created_at": "2026-06-02T01:40:58.483557+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e9ed376168292323": {
+      "topic": "ASUS ExpertBook B5 Flip G2 360 Touchscreen Laptop",
+      "item_ids": [
+        "506578e6a5f8"
+      ],
+      "created_at": "2026-06-02T01:40:58.483557+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3d35cc84f966b660": {
+      "topic": "Blue Origin Launchpad Rocket Explosion 2028 Restoration Timeline",
+      "item_ids": [
+        "c2134ab6aacb"
+      ],
+      "created_at": "2026-06-02T01:40:58.483557+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-01T23:18:41.484137+00:00"
+  "last_checked": "2026-06-02T01:40:58.484530+00:00"
 }
