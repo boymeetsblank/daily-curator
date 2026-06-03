@@ -1160,10 +1160,10 @@ def fetch_reddit_hot() -> list[dict]:
 
 def fetch_subreddit_hot_posts() -> list[dict]:
     """
-    Fetch hot posts from all enabled Reddit subreddits in sources.json via
-    the public Reddit JSON API (/hot.json). Returns posts with upvote +
-    comment engagement data, filtered to the last HOURS_BACK hours.
-    Runs in parallel (10 workers). Replaces the RSS-based subreddit fetch.
+    Fetch today's top posts from all enabled Reddit subreddits in sources.json
+    via the public Reddit JSON API (/top.json?t=day). Filters by minimum upvotes
+    rather than age — top-of-day ranking already ensures recency.
+    Runs in parallel (10 workers).
     """
     if not os.path.exists(SOURCES_JSON_PATH):
         return []
@@ -1180,12 +1180,12 @@ def fetch_subreddit_hot_posts() -> list[dict]:
     if not reddit_sources:
         return []
 
-    cutoff_ts = int(time.time() - (HOURS_BACK * 3600))
+    MIN_UPVOTES = 200
 
     def _fetch_one(source: dict) -> list[dict]:
         name = source.get("name", "r/unknown")
         subreddit = name.lstrip("r/").strip()
-        url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=25"
+        url = f"https://www.reddit.com/r/{subreddit}/top.json?t=day&limit=25"
         try:
             resp = requests.get(
                 url,
@@ -1200,17 +1200,17 @@ def fetch_subreddit_hot_posts() -> list[dict]:
         posts = []
         for child in children:
             d = child.get("data", {})
-            created_utc = d.get("created_utc", 0)
-            if created_utc and created_utc < cutoff_ts:
+            upvotes = d.get("score", 0)
+            if upvotes < MIN_UPVOTES:
                 continue
             title = (d.get("title") or "").strip()
             if not title:
                 continue
             link = f"https://www.reddit.com{d['permalink']}" if d.get("permalink") else None
             summary = (d.get("selftext") or "")[:300].strip()
-            upvotes = d.get("score", 0)
             comments = d.get("num_comments", 0)
             image = d.get("thumbnail") if (d.get("thumbnail") or "").startswith("http") else None
+            created_utc = d.get("created_utc", 0)
             published_str = (
                 datetime.fromtimestamp(created_utc, tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
                 if created_utc else datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -1226,12 +1226,12 @@ def fetch_subreddit_hot_posts() -> list[dict]:
             })
         return posts
 
-    print(f"\n🟠 Fetching hot posts from {len(reddit_sources)} subreddits via API...")
+    print(f"\n🟠 Fetching today's top posts from {len(reddit_sources)} subreddits via API...")
     all_posts = []
     with ThreadPoolExecutor(max_workers=10) as ex:
         for result in ex.map(_fetch_one, reddit_sources):
             all_posts.extend(result)
-    print(f"   ✅ Got {len(all_posts)} hot posts from {len(reddit_sources)} subreddits.")
+    print(f"   ✅ Got {len(all_posts)} top posts from {len(reddit_sources)} subreddits.")
     return all_posts
 
 

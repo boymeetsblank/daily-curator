@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-03] Fix: Reddit subreddits switch from /hot to /top?t=day + upvote floor
+
+`fetch_subreddit_hot_posts()` now hits `/top.json?t=day` instead of `/hot.json`. Top-of-day ranking guarantees posts are from today, so the 48h age filter is removed entirely — upvotes is the only quality gate (200+ minimum). Hot was Reddit's decay algorithm that mixed old viral posts with new ones, causing many fresh posts to be filtered by the age cutoff before Claude ever saw them.
+
 ## [2026-06-01] Feature: light runs (Inoreader + RSS + Reddit only, no Apify)
 
 Added `--light` flag to `daily_curator.py` that skips all 4 Apify calls (Twitter Trends, Google Trends, TikTok Trends, Twitter Posts). Light runs still fetch Inoreader, Direct RSS, Reddit, and YouTube RSS, then score with Claude Sonnet. Also added `.github/workflows/light_curator.yml` — runs at 10:00 AM CT and 4:00 PM CT to fill the gaps between full runs, adding ~$7/month in Claude costs. Light runs skip the `social_trends.json` write to preserve the last full run's X/Google/TikTok data.
@@ -92,21 +96,9 @@ The post-scoring Sonnet dedup was good at catching "same story, different outlet
 
 Haiku was scoring each live feed item in isolation — it had no awareness that 2 other items about the same topic had already passed the quality gate. A third corroborating signal might score 6 because Haiku didn't know it was the third, not the first. Fixed by passing the current cluster state into `filter_and_enrich_items()` and injecting a "BUILDING STORIES" block into the Haiku prompt listing all active clusters with their signal count. If an incoming item matches a building story, Haiku is instructed to score it at least 1 point higher than it would in isolation — because convergence across independent sources is itself strong evidence something real is happening.
 
-## [2026-05-20] Engagement signals in both feeds + recalibrated thresholds
 
-Engagement signals now apply to both the live feed (Haiku) and the main feed (Sonnet). Main feed changes: (1) ENGAGEMENT SIGNALS section added to Sonnet scoring prompt with calibrated Reddit/Google thresholds; (2) trending context block now shows X rank positions (`#1 Josh Hart`) and Google search volumes (`Apple — 500K+ searches`) so Sonnet can see the scale of real-time interest, not just a flat topic list; (3) `social_trends.json` write now preserves `x_ranks`, `google_engagement`, `x_fetched_at`, and `google_fetched_at` written by the live feed instead of overwriting them. Threshold recalibration across both feeds: Reddit 10K+ upvotes → minimum 7; Reddit 30K+ → minimum 8 (was a single 50K threshold); Google 100K+ searches → strong signal, 250K+ → dominating the day (was a single 500K threshold that was too high for most genuinely trending topics).
 
-## [2026-05-20] Live feed: engagement signals now flow into Haiku scoring
 
-Engagement data is now surfaced to the Haiku quality gate so high-engagement content gets scored appropriately. Five changes: (1) Reddit upvotes + comment count and Bluesky likes + reposts + replies were fetched but never shown to Haiku — now included as brackets after each item in the scoring prompt (e.g. `[50,000 upvotes · 1,200 comments]`); (2) YouTube view counts extracted from `<yt:statistics>` in the RSS feed; (3) Google Trends `formattedTraffic` (e.g. "200K+ searches") extracted from the daily endpoint and stored in `social_trends.json`; (4) X trending rank position tracked and stored (`#1` through `#30`) so Haiku knows position-1 topics carry more weight; (5) Haiku prompt updated with explicit engagement scoring guidance — 50K+ Reddit upvotes, 10K+ Bluesky likes, and #1–5 X positions are treated as strong upward score signals.
-
-## [2026-05-20] Main feed: live cluster awareness — confirmed stories get a score floor
-
-`daily_curator.py` now reads `breaking_news_state.json` before scoring. Any live feed cluster already escalated to the main feed (i.e. confirmed by 3+ independent real-time signals) is injected into the Sonnet scoring prompt as a "LIVE FEED CONFIRMED STORIES" block. Articles that match a live cluster topic receive a score floor: 3–5 live signals → minimum 7; 6+ signals → minimum 8. This closes the gap between the live and main feed pipelines — if a story has been building for hours across Reddit, YouTube, X, and Bluesky, the 3×/day curator runs now know about it and prioritize it accordingly. Also fixed misleading log message in `detect_cross_source_trends()` (said "3+ sources" but threshold is 2+).
-
-## [2026-05-20] Fix: Google Trends — dedicated TTL field + remove news-only filter
-
-Two bugs fixed. (1) `refresh_google_trends()` was reading the global `fetched_at` timestamp (written by `daily_curator.py`'s Apify run) as its TTL, causing Google trends to appear "fresh" for up to 10 minutes after an Apify run even though the live refresh hadn't fired. Fixed with a dedicated `google_fetched_at` field, independent of Apify's timestamp. (2) Removed `ns=15` parameter from the Google Trends URL — this flag was silently filtering to news-only topics, excluding entertainment, sports, and celebrity trends. Full trending list now flows through.
 
 
 
