@@ -1,43 +1,5 @@
 {
   "known_ids": [
-    "25ff6a5964f4",
-    "0032c59f9ead",
-    "290664c6af48",
-    "f3a0424f446d",
-    "bda71210cc88",
-    "729fdc6c047f",
-    "60e430abb402",
-    "ec5af1bb2192",
-    "841337a06f36",
-    "6df30c51bbd1",
-    "d44a243d4dfe",
-    "b77bc216f233",
-    "0039798ce7ae",
-    "6b147b9daf07",
-    "5b592bb4121a",
-    "3df8e530d4f9",
-    "6d3fb50a87dc",
-    "bcb19225aa76",
-    "176ef2fcf286",
-    "872b3d5c1181",
-    "b52e6b80e11c",
-    "725598b50802",
-    "77735da26c71",
-    "222ca8cb529a",
-    "338264fa6ce2",
-    "a261622324ed",
-    "4a3d413b29cb",
-    "c0ee54aaba15",
-    "e3f38a946465",
-    "185ca41f6c4a",
-    "7f6829edb579",
-    "475e68028f25",
-    "0f193b54ac6c",
-    "15cb1699181a",
-    "65243110e7e1",
-    "938c0f79c46d",
-    "05a3ac382ba6",
-    "f8f0a4aa0975",
     "5a6f2ba777da",
     "e7908f23a0d0",
     "8fd4a5a229a9",
@@ -499,277 +461,68 @@
     "0f61fe2215cf",
     "a1e269e386a6",
     "a4d46562f932",
-    "81893fcb2dfd"
+    "81893fcb2dfd",
+    "7a7daedebe53",
+    "cfdedef41fe7",
+    "43f682c879c0",
+    "1f7c55f41a62",
+    "c16417f5a4b4",
+    "45ee1921ebae",
+    "75a6994d808d",
+    "72f19c42994e",
+    "453d4a1cd6e5",
+    "9d94dd13a2b7",
+    "7d173a0d62bb",
+    "703a6f14f8c7",
+    "67c1cbeb743c",
+    "c3c7b1568005",
+    "489a1e4af24b",
+    "5fc5eaf61001",
+    "06785796b7c0",
+    "3dbb06bdd654",
+    "8ecc6d85e119",
+    "636f45efeb69",
+    "a402d85a1c93",
+    "a9dd05a60b1e",
+    "e42effcc9d30",
+    "e4113027a6c6",
+    "049699ac0128",
+    "1d773e8ada90",
+    "8cc949efc978",
+    "f9394cf61c86",
+    "5240e2aa3212",
+    "a957ba874669",
+    "26e2da7e69be",
+    "b849a2ba67e7",
+    "e8de4dc4b578",
+    "436f6b669b8a",
+    "2c6d426c37c8",
+    "238a5d42093d",
+    "d80c89c5331c",
+    "8663be6c84ae"
   ],
   "failed_ids": {
-    "7f3450fd031d": "2026-06-03T07:03:13.238373+00:00",
-    "3e803020ab4a": "2026-06-03T07:03:13.238373+00:00",
-    "af3257648452": "2026-06-03T07:03:13.238373+00:00",
-    "6c7b445b7a34": "2026-06-03T07:03:13.238373+00:00",
-    "9c26d913a6d2": "2026-06-03T07:03:13.238373+00:00",
-    "9750f34632be": "2026-06-03T07:03:13.238373+00:00",
-    "0f4e920d20b1": "2026-06-03T07:03:13.238373+00:00",
-    "659f0701e0e6": "2026-06-03T07:03:13.238373+00:00",
-    "7fa6d68e41c0": "2026-06-03T07:03:13.238373+00:00",
-    "238083d3a4ff": "2026-06-03T07:03:13.238373+00:00",
-    "f5b5971ba8b8": "2026-06-03T07:03:13.238373+00:00",
-    "027561a35009": "2026-06-03T07:03:13.238373+00:00"
+    "3b3b367fdee4": "2026-06-03T12:04:08.299424+00:00",
+    "46a9496b5812": "2026-06-03T12:04:08.299424+00:00",
+    "d4e85bef74f9": "2026-06-03T12:04:08.299424+00:00",
+    "afce77e1ac6e": "2026-06-03T12:04:08.299424+00:00",
+    "fb341af606d7": "2026-06-03T12:04:08.299424+00:00",
+    "2e80349d2a09": "2026-06-03T12:04:08.299424+00:00",
+    "192b6fb59774": "2026-06-03T12:04:08.299424+00:00",
+    "6f56c1aff04d": "2026-06-03T12:04:08.299424+00:00",
+    "278d148aab93": "2026-06-03T12:04:08.299424+00:00",
+    "ac8de63a0841": "2026-06-03T12:04:08.299424+00:00",
+    "755a9a8ec04a": "2026-06-03T12:04:08.299424+00:00",
+    "249e211a90d4": "2026-06-03T12:04:08.299424+00:00",
+    "7905f346c0da": "2026-06-03T12:04:08.299424+00:00",
+    "d6b87260431b": "2026-06-03T12:04:08.299424+00:00",
+    "2a3c41e157fd": "2026-06-03T12:04:08.299424+00:00",
+    "783b1161c224": "2026-06-03T12:04:08.299424+00:00",
+    "b09d827b6fcb": "2026-06-03T12:04:08.299424+00:00",
+    "ec67213287f0": "2026-06-03T12:04:08.299424+00:00",
+    "cc4fea35a723": "2026-06-03T12:04:08.299424+00:00"
   },
   "live_clusters": {
-    "f97aa5ec81e35eca": {
-      "topic": "Sony PlayStation Gaming Peripherals 2026 Launch",
-      "item_ids": [
-        "288052a783e2"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8a8bbde74ff98abf": {
-      "topic": "H.Lorenzo West Hollywood Flagship Store Opening",
-      "item_ids": [
-        "2a0777563e74"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2701e6e708c0f4c2": {
-      "topic": "Martin Margiela Archives Paris Auction",
-      "item_ids": [
-        "596c083d3a9f"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6b04930ee8acd3a6": {
-      "topic": "Onitsuka Tiger MEXICO 66 SABOT Mule Release",
-      "item_ids": [
-        "82f749fe7fdf"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0d7f34018e1f0de2": {
-      "topic": "SNL UK Comedy Series Production Strategy",
-      "item_ids": [
-        "bc83e2e4c833"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d7bdbeadc1aa2b89": {
-      "topic": "Clutch Open-World Driving Game Release",
-      "item_ids": [
-        "8d3587173206"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c771835867e7c431": {
-      "topic": "Nvidia Jensen Huang Marvell Trillion-Dollar Valuation",
-      "item_ids": [
-        "3eb402b57a77",
-        "aa3aa245c773",
-        "0be8a9047af8",
-        "b90d956e587c"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-02T15:00:55.238201+00:00",
-      "picks_file": "picks/picks-2026-06-02-1501.md",
-      "why_text": "When Nvidia's Jensen Huang publicly crowns a company, markets listen \u2014 his endorsement sent Marvell's stock soaring 25% in a single session, a staggering move for a chipmaker already deep in the AI infrastructure race. Huang's blessing signals that the trillion-dollar club is expanding beyond the obvious names, and that the real AI money is flowing into the picks-and-shovels layer of the stack. This is a cultural moment in tech: the godfather of the GPU era is actively reshaping which companies get to matter.",
-      "last_escalated_item_ids": [
-        "3eb402b57a77",
-        "aa3aa245c773",
-        "0be8a9047af8",
-        "b90d956e587c"
-      ]
-    },
-    "7e30fe4c824893df": {
-      "topic": "Abivax Biotech Cancer Trial Data Setback",
-      "item_ids": [
-        "af45bd72e9dc"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "72c6b04c2f867b70": {
-      "topic": "Deep-Ocean Desalination California Water Future",
-      "item_ids": [
-        "87fa869e7fd2"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c5c7c2a23a263058": {
-      "topic": "ESAB Acquisition Eddyfi Technologies",
-      "item_ids": [
-        "551ff65f8be8"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "326ac0be4debe6f0": {
-      "topic": "Microfluidics Cell Encapsulation Research",
-      "item_ids": [
-        "e9e0ef6a687a"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "727e89ee9c7eaf8e": {
-      "topic": "Rick Adelman NBA Hall of Fame Legacy",
-      "item_ids": [
-        "23dfa7cdf10a",
-        "8ac27810e599"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "27da30070b4b0420": {
-      "topic": "OKC Thunder Roster Retention Strategy 2026",
-      "item_ids": [
-        "8079ad22dae9",
-        "f0d7d6c57005"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "057a35df9964cdbf": {
-      "topic": "NBA Gambling Match-Fixing Enforcement International",
-      "item_ids": [
-        "465eec37f4bd"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5ae46e375543a761": {
-      "topic": "NBA Finals 2026 Knicks-Spurs Predictions",
-      "item_ids": [
-        "890adc0d45bb",
-        "2a94d44889ea",
-        "080ea69f5aac",
-        "d9fcd58d6308",
-        "c108906d30f1",
-        "e253ba272c64",
-        "3192f69c36cc",
-        "199c8d28ba35",
-        "ada39e69a5c3",
-        "a61e6a50be62",
-        "91d557b3db29",
-        "a56bda3a3a5d",
-        "103b33df0d05"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 13,
-      "last_escalated_at": "2026-06-03T02:03:02.045285+00:00",
-      "picks_file": "picks/picks-2026-06-03-0203.md",
-      "last_escalated_item_ids": [
-        "890adc0d45bb",
-        "2a94d44889ea",
-        "080ea69f5aac",
-        "d9fcd58d6308",
-        "c108906d30f1",
-        "e253ba272c64",
-        "3192f69c36cc",
-        "199c8d28ba35",
-        "ada39e69a5c3",
-        "a61e6a50be62",
-        "91d557b3db29",
-        "a56bda3a3a5d",
-        "103b33df0d05"
-      ],
-      "why_text": "The NBA Finals matchup between the New York Knicks and San Antonio Spurs is generating massive cultural heat \u2014 Mitchell Robinson's injury status could be the deciding factor for New York's frontcourt against Wembanyama, who's already showing Finals nerves. Meanwhile, the Draymond-Barkley beef spilling into the broadcast booth means the drama off the court is almost matching what's on it. This is the rare Finals where the storylines \u2014 generational talent, a legendary franchise's resurrection, and media chaos \u2014 are all firing at once."
-    },
-    "b290d356e92c43b0": {
-      "topic": "Memphis Grizzlies Top-Five Draft History Analysis",
-      "item_ids": [
-        "b1f6f1aa8767"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "01535978442fe5e5": {
-      "topic": "Stock Market AI Rally Middle East Tensions",
-      "item_ids": [
-        "e6b951ae995d",
-        "cc2a481ad528"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "69c42dc1688eabfe": {
-      "topic": "Restaurant Industry Food Supplier Cost Pressures",
-      "item_ids": [
-        "aa9224d58b3e"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b8d6e5550b1a5672": {
-      "topic": "Hawthorne Race Course Industrial Redevelopment",
-      "item_ids": [
-        "6b97411a0dc7"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ea0c248b1908ba02": {
-      "topic": "Paula's Donuts Burger Donut Innovation",
-      "item_ids": [
-        "cfcf178a5a7a"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5bfc19362ea4dd22": {
-      "topic": "BMW Brilliance China 7 Million Sales Milestone",
-      "item_ids": [
-        "c9824df90169"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "58f64f33769151c2": {
-      "topic": "BMW 7 Series Cabin Luxury Redesign",
-      "item_ids": [
-        "53ef12932bbe",
-        "8dc7a4159d1f",
-        "2fed7ac43a55",
-        "185e64d37143",
-        "2d400a312842",
-        "881ac3ad3d6e"
-      ],
-      "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-02T23:20:11.496424+00:00",
-      "picks_file": "picks/picks-2026-06-02-2321.md",
-      "why_text": "The M2 has always been BMW's purist rear-wheel-drive sports car \u2014 the one enthusiasts pointed to as proof the brand still had a soul. Adding xDrive AWD is a genuine philosophical pivot, trading analog driving purity for broader performance appeal and all-weather usability. It's a signal that even BMW's most driver-focused models aren't immune to the market pressures pushing performance cars toward accessibility over cult status.",
-      "last_escalated_item_ids": [
-        "53ef12932bbe",
-        "8dc7a4159d1f",
-        "2fed7ac43a55",
-        "185e64d37143"
-      ]
-    },
     "8cb7bdcaf0a3a884": {
       "topic": "Air Jordan 14 Low Valentine's Day February 2027 Release",
       "item_ids": [
@@ -999,7 +752,8 @@
     "98dc65cf6ae9d536": {
       "topic": "ASUS Nvidia RTX Spark Laptops MacBook Pro Competition",
       "item_ids": [
-        "aaffa074b087"
+        "aaffa074b087",
+        "7d173a0d62bb"
       ],
       "created_at": "2026-06-02T15:01:49.686934+00:00",
       "last_escalated_size": 0,
@@ -1036,11 +790,19 @@
       "topic": "NBA Draft 2026 Mock Draft Top Picks",
       "item_ids": [
         "f2968bccf078",
-        "8ee10e317564"
+        "8ee10e317564",
+        "e42effcc9d30"
       ],
       "created_at": "2026-06-02T15:01:49.686934+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-03T12:04:08.299424+00:00",
+      "picks_file": "picks/picks-2026-06-03-1204.md",
+      "why_text": "With the 2025 NBA Finals barely in the rearview, the mock draft industrial complex has already spun up around 2026 \u2014 a sign of how year-round the NBA content cycle has become. Teams like the Lakers and Warriors, caught in roster limbo between contention and rebuild, are the focal point because their draft positioning feels existential right now. This is less about any single prospect and more about which franchises are quietly accepting a transition year.",
+      "last_escalated_item_ids": [
+        "f2968bccf078",
+        "8ee10e317564",
+        "e42effcc9d30"
+      ]
     },
     "496a215770b5baba": {
       "topic": "Nvidia CEO PC Reinvention 40 Years AI",
@@ -1678,7 +1440,8 @@
     "00d34da61730e02d": {
       "topic": "Nike Mind 001 White/Metallic Silver Colorway",
       "item_ids": [
-        "442c293acc87"
+        "442c293acc87",
+        "cfdedef41fe7"
       ],
       "created_at": "2026-06-02T21:38:42.141480+00:00",
       "last_escalated_size": 0,
@@ -2139,7 +1902,8 @@
     "47f4147ffeb966c1": {
       "topic": "Stargate Series Martin Gero Amazon Cancelled",
       "item_ids": [
-        "7ebf3095f185"
+        "7ebf3095f185",
+        "703a6f14f8c7"
       ],
       "created_at": "2026-06-02T23:21:10.525055+00:00",
       "last_escalated_size": 0,
@@ -2322,11 +2086,19 @@
       "topic": "BMW M2 xDrive AWD 2027 Model",
       "item_ids": [
         "887e8468c252",
-        "e5a03f7e7eeb"
+        "e5a03f7e7eeb",
+        "b849a2ba67e7"
       ],
       "created_at": "2026-06-02T23:21:10.525055+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-03T12:04:08.299424+00:00",
+      "picks_file": "picks/picks-2026-06-03-1205.md",
+      "why_text": "The 2027 BMW M2 xDrive marks a genuine turning point: one of the last affordable, driver-focused sports cars is now officially embracing all-wheel drive, a move that will split the enthusiast community right down the middle. It's faster on paper, but the M2's entire identity was built on rear-wheel-drive purity \u2014 the kind of analog experience that's increasingly rare as performance cars chase numbers over feel. In a market where driving engagement is quietly disappearing, this signals that even BMW's last bastion of old-school fun is playing by new rules.",
+      "last_escalated_item_ids": [
+        "887e8468c252",
+        "e5a03f7e7eeb",
+        "b849a2ba67e7"
+      ]
     },
     "d49a34add60c99e2": {
       "topic": "Scott Pelley CBS News Contract Termination",
@@ -2348,7 +2120,8 @@
     "8944e069ea653949": {
       "topic": "Summer House Reunion Part 2 Drama",
       "item_ids": [
-        "e96fb0a24ac3"
+        "e96fb0a24ac3",
+        "d80c89c5331c"
       ],
       "created_at": "2026-06-03T02:03:54.264245+00:00",
       "last_escalated_size": 0,
@@ -2560,7 +2333,287 @@
       "created_at": "2026-06-03T07:04:00.124840+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b09b0e14c458ff90": {
+      "topic": "Birkenstock Melbourne Flagship Repair Workshop",
+      "item_ids": [
+        "7a7daedebe53"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e3df1062bdf01582": {
+      "topic": "Nike Vision Campaign Virgil van Dijk Sam Kerr Hwang Hee-chan",
+      "item_ids": [
+        "43f682c879c0"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0bad32618a386872": {
+      "topic": "Backrooms Film Ending Review",
+      "item_ids": [
+        "1f7c55f41a62"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ed3de5530726c431": {
+      "topic": "P!nk Tony Awards Host Announcement",
+      "item_ids": [
+        "c16417f5a4b4"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4218dc8c8ae689d1": {
+      "topic": "Private Eyes West Coast Canadian Series Return",
+      "item_ids": [
+        "45ee1921ebae"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "42511ff04def4908": {
+      "topic": "Vegas Knights Game 1 NHL Playoffs Rally Win",
+      "item_ids": [
+        "75a6994d808d"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8160820fa9dbff3f": {
+      "topic": "MLB Baseball Highlight Ball off Helmet Home Run",
+      "item_ids": [
+        "72f19c42994e"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e7f871e51730958c": {
+      "topic": "WNBA Fever Team Meeting Discussion",
+      "item_ids": [
+        "453d4a1cd6e5"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bb09e4ecc91c1513": {
+      "topic": "Curry Li-Ning 400 Million Dollar Endorsement Deal",
+      "item_ids": [
+        "9d94dd13a2b7"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c6c4eeb643612ec0": {
+      "topic": "Meta Microsoft SpaceX DOJ Scam Account Takedown",
+      "item_ids": [
+        "67c1cbeb743c"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d1f3542fd610a40f": {
+      "topic": "Macy's Q1 Earnings Growth Strong Guidance Raise",
+      "item_ids": [
+        "c3c7b1568005"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4bc71cdc9bf3e44b": {
+      "topic": "Mortgage Rates Decline Homebuyer Retreat 2026",
+      "item_ids": [
+        "489a1e4af24b"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fce33fa3fac51914": {
+      "topic": "Eli Lilly M&A Dealmaker Expansion Strategy",
+      "item_ids": [
+        "5fc5eaf61001",
+        "8cc949efc978"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4a605e7be5cfd7a5": {
+      "topic": "Macron G7 Invites Sam Altman OpenAI",
+      "item_ids": [
+        "06785796b7c0"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d5c2ecc2fd18b9aa": {
+      "topic": "Vans Ibiza Inspired Slim Sneaker Release",
+      "item_ids": [
+        "3dbb06bdd654"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "324c63e2d436a2d9": {
+      "topic": "Best Sneakers Summer 2026 ASICS adidas Roundup",
+      "item_ids": [
+        "8ecc6d85e119"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b034d7b5ee765ec0": {
+      "topic": "Older Mac iPhone Microsoft Office Compatibility End",
+      "item_ids": [
+        "636f45efeb69"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cdf3e189157bb95c": {
+      "topic": "Duke Cameron Boozer NBA Scout Concerns",
+      "item_ids": [
+        "a402d85a1c93"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "870dce00fc8d0921": {
+      "topic": "NBA Teams One Move Away Contenders Analysis",
+      "item_ids": [
+        "a9dd05a60b1e"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b075969e0f7855cd": {
+      "topic": "Victor Wembanyama Spurs Historic Achievement",
+      "item_ids": [
+        "e4113027a6c6"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c55f66245e1b179": {
+      "topic": "2026 NBA Finals Player Rankings Analysis",
+      "item_ids": [
+        "049699ac0128"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9377c9fecc981f5b": {
+      "topic": "Video Gaming Demographics 212 Million Americans Survey",
+      "item_ids": [
+        "1d773e8ada90"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ac0987d1dd097981": {
+      "topic": "AI Industry Impact News Publishers Debate",
+      "item_ids": [
+        "f9394cf61c86"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "06cfeacfd1cc5bbd": {
+      "topic": "Dual-Class Shares Defense SpaceX Root Beer History",
+      "item_ids": [
+        "5240e2aa3212"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "197ae54c04ab7a83": {
+      "topic": "Apple Stock May Surge 15 Percent Analysis",
+      "item_ids": [
+        "a957ba874669"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e2f797e2fe4f152b": {
+      "topic": "2027 BMW iX3 Review Specs Pricing Warranty",
+      "item_ids": [
+        "26e2da7e69be"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "37bdd26b9ee07996": {
+      "topic": "BMW Mistral AI Crash Testing Technology Partnership",
+      "item_ids": [
+        "e8de4dc4b578"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bafda145a347de2f": {
+      "topic": "Luxury EV Consumer Reports Recommendations Tesla Audi",
+      "item_ids": [
+        "436f6b669b8a"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5115e02b2bf6b217": {
+      "topic": "Canes Trending Topic X",
+      "item_ids": [
+        "2c6d426c37c8"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5839cb9f94081d0f": {
+      "topic": "Aniya Trending Topic X",
+      "item_ids": [
+        "238a5d42093d"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "edace01deb20d4b6": {
+      "topic": "Bass Trending Topic X",
+      "item_ids": [
+        "8663be6c84ae"
+      ],
+      "created_at": "2026-06-03T12:04:58.721533+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-03T07:04:00.145202+00:00"
+  "last_checked": "2026-06-03T12:05:10.838079+00:00"
 }
