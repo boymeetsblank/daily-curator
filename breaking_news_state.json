@@ -1,67 +1,5 @@
 {
   "known_ids": [
-    "76c32fe6dcdc",
-    "6dca9b2ec267",
-    "8973e69ac4c5",
-    "7505d1585f06",
-    "8b9431aab26a",
-    "408e1adbc62a",
-    "9872e9425aa3",
-    "170eab6be2c2",
-    "ad4396465c32",
-    "21934be46955",
-    "f8befad3e55e",
-    "f36581fb0a21",
-    "e79825331520",
-    "1f22ff823289",
-    "97fd2150ce72",
-    "b4c21b3683d8",
-    "946b18772115",
-    "e0b21f5467d2",
-    "a44b977de9dd",
-    "3cd590362aa9",
-    "ed1ec9675868",
-    "eada49c93bac",
-    "df515f0ae58d",
-    "a8d570d7ec64",
-    "693ae13b2467",
-    "f387e17a632e",
-    "43a2cbd63e17",
-    "506578e6a5f8",
-    "c2134ab6aacb",
-    "6de9299cadc5",
-    "bdc07ffaee00",
-    "5c189fa500f8",
-    "246fa21a91f1",
-    "d04413899b82",
-    "eaf2e1c5b12e",
-    "60deb0e31979",
-    "760e3e299293",
-    "5470e38dda6d",
-    "abd5ad54e448",
-    "f92059db9d00",
-    "b14c00526c43",
-    "4d8b48d6b248",
-    "4db853b7b2d9",
-    "288052a783e2",
-    "2a0777563e74",
-    "596c083d3a9f",
-    "82f749fe7fdf",
-    "bc83e2e4c833",
-    "3a2834714281",
-    "a3e08f644ac6",
-    "bd423ea872ff",
-    "8d3587173206",
-    "3eb402b57a77",
-    "af45bd72e9dc",
-    "fbd15211defa",
-    "87fa869e7fd2",
-    "551ff65f8be8",
-    "de5a2e275885",
-    "e9e0ef6a687a",
-    "faa5a47e930b",
-    "23dfa7cdf10a",
-    "8079ad22dae9",
     "465eec37f4bd",
     "890adc0d45bb",
     "b1f6f1aa8767",
@@ -499,634 +437,72 @@
     "fabf1e9e1571",
     "b4bb73cdac8d",
     "5c6543ae3ff8",
-    "d434804e66de"
+    "d434804e66de",
+    "65177fca40d4",
+    "c3b82bcbd89e",
+    "821e6ada11c2",
+    "111b5d6d1084",
+    "82f983d61fe2",
+    "a53586a2fb05",
+    "747bb30768a3",
+    "ddb89dd15e71",
+    "c8fbaed79148",
+    "1ee19823786f",
+    "0e770dcc3103",
+    "3dc7b1eae4b3",
+    "f6c024f18d79",
+    "9097efbf5730",
+    "bb0624022648",
+    "4c6c3f126970",
+    "5b19c4c641b2",
+    "75d9e0bd82b6",
+    "7759390e07e4",
+    "3768456d120f",
+    "a3435e0e32fd",
+    "eee42c55e0e0",
+    "ea4455262cfd",
+    "82c9447f36f2",
+    "a23f0327aa66",
+    "51fe822e196e",
+    "701a07191bdc",
+    "fc993810b7cc",
+    "40f7149bc807",
+    "47650a37646f",
+    "abb9a9bb7d4c",
+    "98a496ab1c57",
+    "f49db7664f84",
+    "a60077887de0",
+    "9d7a13b3abc2",
+    "cad3f9c79a6e",
+    "68f241fb9fbc",
+    "8d8e596fb22a",
+    "a61c38856b5a",
+    "657563a0e5c4",
+    "11b4c04ba92f",
+    "9d07cee427bf",
+    "5c106c7aec18",
+    "7e92fe812af7",
+    "6e765db4f2b2",
+    "54491b397c60",
+    "263c4625b233",
+    "8789c63ef742",
+    "16f6c69e9def",
+    "b2d759171ee3",
+    "8b40d92b5b01",
+    "38849b944e86",
+    "02661c5e7cfc",
+    "e7b4c47fcf7f",
+    "782d90520084",
+    "dd28ce9ae1e8",
+    "87cf1adc229b",
+    "96776b495df8",
+    "b0c7b76b020e",
+    "68f6d5bd5ce7",
+    "496355100a2d",
+    "3a069ae299ef"
   ],
   "failed_ids": {},
   "live_clusters": {
-    "61ac939244ad5a7d": {
-      "topic": "Michelob ULTRA Pitchside Club Santa Monica Pier Soccer Event",
-      "item_ids": [
-        "1061b50d8090"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "24d1c218b0f21247": {
-      "topic": "Jordan Tatum 4 China Rose Colorway Release",
-      "item_ids": [
-        "b80a253b05e5"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e6b661f68b9248bd": {
-      "topic": "Nike Air Max 95 Old Royal Women's Option",
-      "item_ids": [
-        "3179cc40f651"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f17c29ddd94c6613": {
-      "topic": "Nike Total 90 Soccer Ball Design Release",
-      "item_ids": [
-        "385204746420",
-        "8761fc38c19b",
-        "a0acb8af2f28"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-03T17:10:11.209692+00:00",
-      "picks_file": "picks/picks-2026-06-03-1711.md",
-      "why_text": "Nike is leaning hard into Y2K soccer nostalgia, resurrecting the Total 90 aesthetic at a moment when football culture and streetwear are more intertwined than ever. The Total 90 line defined a generation of pitch style in the early 2000s \u2014 from Ronaldo to Rooney \u2014 and bringing it back taps into the same millennial muscle memory that's driven retro football shirts to luxury price points. This isn't just a product drop; it's Nike planting a flag in the culture war between football heritage and hype.",
-      "last_escalated_item_ids": [
-        "385204746420",
-        "8761fc38c19b",
-        "a0acb8af2f28"
-      ]
-    },
-    "4f6d5a1416a8e8c2": {
-      "topic": "Gabriela Hearst Team Uruguay Suits Fashion",
-      "item_ids": [
-        "69d6f298b913"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7a2a9bbf771794ed": {
-      "topic": "Love Island USA Season 8 Streaming Guide",
-      "item_ids": [
-        "5712aa723f7c",
-        "3577f3bcf501"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4e928f8db628b2f8": {
-      "topic": "Billboard Music Industry Events Calendar",
-      "item_ids": [
-        "d6d4658e2f26"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ed4823f33e3c250b": {
-      "topic": "Budget Digital Cameras for Festivals and Concerts",
-      "item_ids": [
-        "3351233041b8"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5882f155e06439ee": {
-      "topic": "Top All-Time Country Songwriters Book",
-      "item_ids": [
-        "f80bfaf313dc"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e0a15a2f6a0fe532": {
-      "topic": "SZA Surprise Appearance Don Toliver NYC Used Collab",
-      "item_ids": [
-        "739104642c44"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a4e385e57bcb7d74": {
-      "topic": "Ear Rumspringa Album Bedroom Rave Sound",
-      "item_ids": [
-        "21704b27d0be"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ddeae951f0c3c6d0": {
-      "topic": "Quando Rondo Released from Prison Halfway House",
-      "item_ids": [
-        "ab8133871568"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f4c7ac6bfcc2ca4f": {
-      "topic": "Chrissie Hynde Criticizes Cellphones at Concerts",
-      "item_ids": [
-        "577eb0068e40"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cefbd8da57dbaf16": {
-      "topic": "Morgan Wallen Piano Flip Denver Gig Incident",
-      "item_ids": [
-        "b0fc10873f92"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e54567145b1fdd28": {
-      "topic": "And Justice for All TV Series Netflix Adaptation Al Pacino",
-      "item_ids": [
-        "cfd94d54c7e0"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d6ffe98d96f0898f": {
-      "topic": "Patrick Ball The Pitt Season 3 Addiction Recovery",
-      "item_ids": [
-        "6e3dcd497caa"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e425d2112f1b4494": {
-      "topic": "Netflix VP Emily Feingold Departing",
-      "item_ids": [
-        "304ac4a78854"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "67c2c398d497691b": {
-      "topic": "Michelle Obama Swerve Third Act SXSW London",
-      "item_ids": [
-        "63f5ea843135"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "23c2c6c9c6d8b12d": {
-      "topic": "The Night Manager Team Challenges Reviving Series",
-      "item_ids": [
-        "1812faf3f79c"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "081c4e193f84a713": {
-      "topic": "2026 World Cup Final Squads Ranking",
-      "item_ids": [
-        "498a0eae284d"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0646cfecf82570df": {
-      "topic": "2026 World Cup U21 Players Ranking",
-      "item_ids": [
-        "86bc6246d976"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "be67721031c77505": {
-      "topic": "Josh Jacobs Legal Charges Prosecutors",
-      "item_ids": [
-        "259c321e3c4b"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c983d7e074b5f570": {
-      "topic": "Hall Seahawks 42 Million Extension 2029",
-      "item_ids": [
-        "d67e19e82866"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8917fcb7b1a86939": {
-      "topic": "Microsoft Scout AI Coworker Assistant",
-      "item_ids": [
-        "d1999cb9b6b5"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7a64d2369afc56f7": {
-      "topic": "Android Phone Scam Detection Feature",
-      "item_ids": [
-        "144c749da6aa"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6fddc9aa4a4e77a4": {
-      "topic": "Everand Ebook Audiobook Bundle Amazon Challenge",
-      "item_ids": [
-        "a0e4595470a8"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e4efe5a2a9c36678": {
-      "topic": "Martin Scorsese AI Advocate Hollywood",
-      "item_ids": [
-        "1a9290e008eb",
-        "ff41dcea0de4",
-        "255f48d40797"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-03T02:03:02.045285+00:00",
-      "picks_file": "picks/picks-2026-06-03-0204.md",
-      "why_text": "One of cinema's most revered auteurs \u2014 a man who has spent decades championing the sanctity of filmmaking as human art \u2014 is apparently signaling openness to AI, and that landing is seismic. Scorsese's credibility with the old guard makes this a potential turning point in Hollywood's bitter AI debate, giving the pro-AI camp its most prestigious convert yet. If Marty's at the table, the culture war inside the industry just shifted.",
-      "last_escalated_item_ids": [
-        "1a9290e008eb",
-        "ff41dcea0de4",
-        "255f48d40797"
-      ]
-    },
-    "b1caa10241aa259f": {
-      "topic": "Microsoft Scout OpenClaw Personal Assistant",
-      "item_ids": [
-        "d011fdfd6855"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "99fda7c267b88e2d": {
-      "topic": "Anduril Engineer Raises 42M Composite Parts Amazon",
-      "item_ids": [
-        "a2148cb7bebe"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "87566dc4868f3296": {
-      "topic": "Google Fake Call Detection AI Deepfake Android",
-      "item_ids": [
-        "774f63fcc1fb"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3577bf50546431de": {
-      "topic": "Android Caller Impersonation Warning Feature",
-      "item_ids": [
-        "ca0fe7194745"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "532f6f6cfa4be93f": {
-      "topic": "European Parliament Ditches Google Default Search",
-      "item_ids": [
-        "447dd9071c3a"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0f643bf860daaffc": {
-      "topic": "Camp Snap 2 Screenless Camera Thinner Design",
-      "item_ids": [
-        "66d4cbf0a25c"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f2b6c409627cb2b0": {
-      "topic": "Microsoft Project Solara AI Agent Platform",
-      "item_ids": [
-        "abafee41179a"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a0b1e7b12c98f09e": {
-      "topic": "Google Deepfake Call Detection Android AirDrop",
-      "item_ids": [
-        "e471778f8995"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ac7bd6be449714b7": {
-      "topic": "Silo Season 3 Trailer",
-      "item_ids": [
-        "e32b944a63d6"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d75fc367fec1d288": {
-      "topic": "CFTC Wall Street Exchange Stocks Dropping",
-      "item_ids": [
-        "92d306d30afa"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8cde73758f1ad292": {
-      "topic": "Goldman Sachs CEO Greed Mode AI Companies Billions",
-      "item_ids": [
-        "cf70ce9f07ed"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0491fd3368aac925": {
-      "topic": "Microsoft AI Models OpenAI Alternative Lower Costs",
-      "item_ids": [
-        "2a1129af1f97"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b5baf74b93f0997b": {
-      "topic": "Trump Rubio Tehran Negotiations Iranian Media",
-      "item_ids": [
-        "1835b966058f",
-        "1e530fc7fcdc"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "224c8fbb420335be": {
-      "topic": "Jeffries Democrats Trump Impeachment Focus",
-      "item_ids": [
-        "cd68ff92dac7"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fe352a3aae83959a": {
-      "topic": "Antarctic Research Extreme Weather Technology",
-      "item_ids": [
-        "e6c25115d4b2"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4377a839f439ca68": {
-      "topic": "Motorola Solutions Drone Technology 1.5B Investment",
-      "item_ids": [
-        "699ac5910888"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "044f866a80f0ec38": {
-      "topic": "AI Existential Risk Humanity Collective Action",
-      "item_ids": [
-        "f918594697d5"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9ab94dffbf2c9154": {
-      "topic": "Laptopera Interactive Storytelling Technology",
-      "item_ids": [
-        "b713de34622f"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c0b2c4e815b0977c": {
-      "topic": "Nic Petersen Doc Counsilman Science Technology Award",
-      "item_ids": [
-        "1956974c83b0"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5444460e511a07a7": {
-      "topic": "NBA Draft 2026 Top Prospect Dallas Mavericks Interest",
-      "item_ids": [
-        "7b09e07e184a"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b79f5a774ff0f757": {
-      "topic": "Guitar Hero With Jack YouTube Gaming",
-      "item_ids": [
-        "bb852cdcf16e"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3534e4948262fe3b": {
-      "topic": "Sound System Five-Fret Gaming Podcast",
-      "item_ids": [
-        "ee34c3a31f7a"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "764114db3b27753f": {
-      "topic": "Master Negotiators Three Magic Phrases Attention",
-      "item_ids": [
-        "0729f5923b2d"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3817a2586175d2fe": {
-      "topic": "Breakaway 9-Figure Live Events Business",
-      "item_ids": [
-        "cfe431dbb96a"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f9ef5dca385335a3": {
-      "topic": "SpaceX Morningstar Valuation 780 Billion IPO Target",
-      "item_ids": [
-        "c04de343c5a8",
-        "6119f7ab907a"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cb922a81ce5807e5": {
-      "topic": "Starting Business in Your 50s",
-      "item_ids": [
-        "633784efb20a"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a91120a5807db9ef": {
-      "topic": "Southwest Airlines Leadership Shakeup Business Transformation",
-      "item_ids": [
-        "8f731378c09e"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7a6582dd9a2f7129": {
-      "topic": "Nistler College Business Public Administration Dean Search",
-      "item_ids": [
-        "fc54b04cd24d"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ebf528ba7e9b29bb": {
-      "topic": "Charlotte Business Leaders Growth Discussion",
-      "item_ids": [
-        "81351add0fec"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "da29e32bdc372e2a": {
-      "topic": "Semi Vehicle Crash W Jefferson Boulevard Injuries",
-      "item_ids": [
-        "69dd222d149d"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e97a129b448f1ac5": {
-      "topic": "SpaceX Valuation 780 Billion IPO Target",
-      "item_ids": [
-        "c04de343c5a8"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6e0cbb59c2dc18a8": {
-      "topic": "Nonconforming Mortgages Risks Finance",
-      "item_ids": [
-        "f2decf8d4374"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6de32c2801b5e795": {
-      "topic": "Roth IRAs vs Traditional 401k Financial Advisors",
-      "item_ids": [
-        "edd99485f272"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bfbafaec574d3261": {
-      "topic": "Trump Housing Official National Intelligence Director",
-      "item_ids": [
-        "b625df418cad"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eb5290eb23816fed": {
-      "topic": "Climate Finance Access Small Island Developing States",
-      "item_ids": [
-        "9353ec89bff2"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b8bf81a5d3d41dd9": {
-      "topic": "Wild Burros Route 66 BMW i8 Roadster",
-      "item_ids": [
-        "c49d8adb30c9"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "07e427a44620233c": {
-      "topic": "BMW Charity Pro-AM Celebrity Golfers",
-      "item_ids": [
-        "438c50485850"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "79e176250f858c66": {
-      "topic": "HelloNation BMW Mercedes Repair Josh Anderson",
-      "item_ids": [
-        "abcf0a7a4e32"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7b60ab261502bbac": {
-      "topic": "BMW Valuation Share Price Weakness Analysis",
-      "item_ids": [
-        "78e604dca320"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2f888a0f6320e856": {
-      "topic": "Royal Enfield Shotgun 650 vs BMW M2 Comparison",
-      "item_ids": [
-        "2051d54f8ce4"
-      ],
-      "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "00d34da61730e02d": {
       "topic": "Nike Mind 001 White/Metallic Silver Colorway",
       "item_ids": [
@@ -1288,7 +664,8 @@
     "cb81bf1a4c106eee": {
       "topic": "Trump Tax Enforcement Protection Anti-Weaponization Fund Status",
       "item_ids": [
-        "27a1ccfdda43"
+        "27a1ccfdda43",
+        "782d90520084"
       ],
       "created_at": "2026-06-02T21:38:42.141480+00:00",
       "last_escalated_size": 0,
@@ -1407,11 +784,20 @@
     "3ad7fc1d82f98187": {
       "topic": "Bitcoin Price Drop April 2026 Low",
       "item_ids": [
-        "0e2a6d6cd047"
+        "0e2a6d6cd047",
+        "47650a37646f",
+        "98a496ab1c57"
       ],
       "created_at": "2026-06-02T21:38:42.141480+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-03T20:27:07.060594+00:00",
+      "picks_file": "picks/picks-2026-06-03-2027.md",
+      "why_text": "The most telling signal here isn't the price drop itself \u2014 it's that Bitcoin's so-called high-conviction holders, the diamond-hands crowd who weathered every previous crash with ideological resolve, are now capitulating. That shift marks a psychological inflection point: when the faithful start selling, it signals the market has moved past panic into something closer to exhaustion. In a cycle that was supposed to be defined by institutional legitimacy and ETF-driven stability, this kind of breakdown cuts deeper than a number on a chart.",
+      "last_escalated_item_ids": [
+        "0e2a6d6cd047",
+        "47650a37646f",
+        "98a496ab1c57"
+      ]
     },
     "d2cdab51f91348b9": {
       "topic": "Ascension Chamber Business Leadership",
@@ -1520,7 +906,8 @@
         "9268a4e366e1",
         "cf60aade6a60",
         "561ffbdaa556",
-        "5c6543ae3ff8"
+        "5c6543ae3ff8",
+        "a53586a2fb05"
       ],
       "created_at": "2026-06-02T23:21:10.525055+00:00",
       "last_escalated_size": 6,
@@ -1732,7 +1119,8 @@
         "cba1bea970c0",
         "b7b297973ca9",
         "6f82d4c774e8",
-        "0532bbe26043"
+        "0532bbe26043",
+        "3768456d120f"
       ],
       "created_at": "2026-06-02T23:21:10.525055+00:00",
       "last_escalated_size": 4,
@@ -1807,17 +1195,23 @@
         "e5a03f7e7eeb",
         "b849a2ba67e7",
         "d05dadce5f0e",
-        "a680efff2c1f"
+        "a680efff2c1f",
+        "dd28ce9ae1e8",
+        "87cf1adc229b"
       ],
       "created_at": "2026-06-02T23:21:10.525055+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-03T12:04:08.299424+00:00",
+      "last_escalated_size": 7,
+      "last_escalated_at": "2026-06-03T20:27:07.060594+00:00",
       "picks_file": "picks/picks-2026-06-03-1205.md",
-      "why_text": "The 2027 BMW M2 xDrive marks a genuine turning point: one of the last affordable, driver-focused sports cars is now officially embracing all-wheel drive, a move that will split the enthusiast community right down the middle. It's faster on paper, but the M2's entire identity was built on rear-wheel-drive purity \u2014 the kind of analog experience that's increasingly rare as performance cars chase numbers over feel. In a market where driving engagement is quietly disappearing, this signals that even BMW's last bastion of old-school fun is playing by new rules.",
+      "why_text": "The 2027 BMW M2 xDrive marks a genuine turning point: one of the last affordable, driver-focused sports cars is now officially embracing all-wheel drive, a move that will split the enthusiast community right down the middle. It's faster on paper, but the M2's entire identity was built on rear-wheel-drive purity \u2014 the kind of analog experience that's increasingly rare as performance cars chase numbers over feel. In a market where driving engagement is quietly disappearing, this signals that even BMW's last bastion of old-school fun is playing by new rules.\n**Update 3:28 PM CT:** MotorWeek has now confirmed the xDrive AWD option as official for the 2027 M2, lending mainstream automotive media weight to what enthusiasts are already debating \u2014 while separately, BMW's aggressive $5,000 pricing advantage for the electric iX3 over its gas-powered X3 equivalent signals the brand is pushing hard on value across its lineup, suggesting the M2's AWD pivot is part of a broader strategic repositioning rather than an isolated engineering decision.",
       "last_escalated_item_ids": [
         "887e8468c252",
         "e5a03f7e7eeb",
-        "b849a2ba67e7"
+        "b849a2ba67e7",
+        "d05dadce5f0e",
+        "a680efff2c1f",
+        "dd28ce9ae1e8",
+        "87cf1adc229b"
       ]
     },
     "d49a34add60c99e2": {
@@ -1825,7 +1219,9 @@
       "item_ids": [
         "4f3bcb3192b9",
         "5e89c33162b2",
-        "a1e269e386a6"
+        "a1e269e386a6",
+        "0e770dcc3103",
+        "b0c7b76b020e"
       ],
       "created_at": "2026-06-03T02:03:54.264245+00:00",
       "last_escalated_size": 3,
@@ -2075,7 +1471,8 @@
     "0bad32618a386872": {
       "topic": "Backrooms Film Ending Review",
       "item_ids": [
-        "1f7c55f41a62"
+        "1f7c55f41a62",
+        "ddb89dd15e71"
       ],
       "created_at": "2026-06-03T12:04:58.721533+00:00",
       "last_escalated_size": 0,
@@ -2242,19 +1639,29 @@
         "50998baa25f0",
         "7e574e06136b",
         "6bc9f89b8644",
-        "7f9ba5b488f3"
+        "7f9ba5b488f3",
+        "657563a0e5c4",
+        "11b4c04ba92f",
+        "9d07cee427bf",
+        "5c106c7aec18",
+        "7e92fe812af7"
       ],
       "created_at": "2026-06-03T12:04:58.721533+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-03T17:10:11.209692+00:00",
+      "last_escalated_size": 10,
+      "last_escalated_at": "2026-06-03T20:27:07.060594+00:00",
       "picks_file": "picks/picks-2026-06-03-1711.md",
-      "why_text": "The New York Knicks and San Antonio Spurs are in the NBA Finals, and the cultural stakes couldn't be higher \u2014 New York's run alone has already generated $202 million in economic activity, turning Madison Square Garden's long-suffering faithful into an economic force. ESPN is ranking every Finals player, Polymarket is running promos, and the city of New York is fully in its bag. This isn't just a basketball series; it's a referendum on whether the Knicks are finally, actually back.",
+      "why_text": "The New York Knicks and San Antonio Spurs are in the NBA Finals, and the cultural stakes couldn't be higher \u2014 New York's run alone has already generated $202 million in economic activity, turning Madison Square Garden's long-suffering faithful into an economic force. ESPN is ranking every Finals player, Polymarket is running promos, and the city of New York is fully in its bag. This isn't just a basketball series; it's a referendum on whether the Knicks are finally, actually back.\n**Update 3:28 PM CT:** Game 1 is now underway with the NYT running live updates and Jalen Brunson emerging as the consensus difference-maker for New York, while off the court the energy is spilling into the streets \u2014 NYPD has granted a permit for an official watch party outside MSG, and President Trump is expected to attend Game 3, adding a political lightning rod to an already supercharged series.",
       "last_escalated_item_ids": [
         "049699ac0128",
         "50998baa25f0",
         "7e574e06136b",
         "6bc9f89b8644",
-        "7f9ba5b488f3"
+        "7f9ba5b488f3",
+        "657563a0e5c4",
+        "11b4c04ba92f",
+        "9d07cee427bf",
+        "5c106c7aec18",
+        "7e92fe812af7"
       ]
     },
     "9377c9fecc981f5b": {
@@ -2728,7 +2135,8 @@
     "1b83b441edc5dd0b": {
       "topic": "Broadcom Stock All-Time Highs Earnings",
       "item_ids": [
-        "7682d3922839"
+        "7682d3922839",
+        "40f7149bc807"
       ],
       "created_at": "2026-06-03T17:11:09.442087+00:00",
       "last_escalated_size": 0,
@@ -2760,7 +2168,342 @@
       "created_at": "2026-06-03T17:11:09.442087+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b4560647fdd16f5a": {
+      "topic": "June 2026 Air Jordan Retro Preview",
+      "item_ids": [
+        "821e6ada11c2"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b981caf66a4026f0": {
+      "topic": "Anthony Edwards Atlanta Vikings adidas Cleats",
+      "item_ids": [
+        "111b5d6d1084"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ff91b81939e652e2": {
+      "topic": "Nike Women's Basketball Growth Strategy",
+      "item_ids": [
+        "82f983d61fe2"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8e929c5c4b4f3efb": {
+      "topic": "AXS Indie Venue Support Partnerships",
+      "item_ids": [
+        "747bb30768a3"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3e0aba475ce9fdee": {
+      "topic": "FIFA World Cup 2026 Countdown Concert Lineups",
+      "item_ids": [
+        "c8fbaed79148"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4c725c888d9718f1": {
+      "topic": "Billboard Hot Latin Songs June 6 2026",
+      "item_ids": [
+        "1ee19823786f"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7e0a288550f906a2": {
+      "topic": "Shia LaBeouf Mardi Gras Battery Guilty Plea",
+      "item_ids": [
+        "3dc7b1eae4b3",
+        "9097efbf5730"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7def99d12b19d98c": {
+      "topic": "Jay-Z Rap Beef Distance Analysis",
+      "item_ids": [
+        "f6c024f18d79"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ef4d8bcd5359a2c3": {
+      "topic": "Hulu Suspect Drama Scott Turow Adaptation",
+      "item_ids": [
+        "bb0624022648"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ed3ee75ddfc569a2": {
+      "topic": "Critics Choice Real TV Awards 2026 Winners",
+      "item_ids": [
+        "4c6c3f126970"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cea11e7e8c5b83df": {
+      "topic": "NFL Aiyuk Warrant Speeding Incident",
+      "item_ids": [
+        "5b19c4c641b2"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "83832f29f946b2f7": {
+      "topic": "NFL Packers Parsons Injury Timeline",
+      "item_ids": [
+        "75d9e0bd82b6"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f7d1f91bbe8d2b73": {
+      "topic": "NFL Browns Verse Garrett Succession",
+      "item_ids": [
+        "7759390e07e4"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "037f845b9157f0cf": {
+      "topic": "NBA Rozier Release Conditions Negotiation",
+      "item_ids": [
+        "a3435e0e32fd"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "38db743c6fb32f45": {
+      "topic": "Uber Data Collection Vehicle Expansion",
+      "item_ids": [
+        "eee42c55e0e0"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c140c87c4d659d4": {
+      "topic": "Alphabet Google AI Business $85B Fundraise",
+      "item_ids": [
+        "ea4455262cfd",
+        "16f6c69e9def"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4df25c3dbbdbe59f": {
+      "topic": "Meta Spins Out Supernatural VR Fitness Game",
+      "item_ids": [
+        "82c9447f36f2"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0b97b66f762bbe94": {
+      "topic": "Substack Reply Rules Creator Control Feature",
+      "item_ids": [
+        "a23f0327aa66"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "757f9f1c1f5df861": {
+      "topic": "Google Dreambeans AI Life Cartoon Tool",
+      "item_ids": [
+        "51fe822e196e"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ad4725abe1e4d580": {
+      "topic": "Lego Batman Legacy Dark Knight Switch 2 Release",
+      "item_ids": [
+        "701a07191bdc"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c0e31b430d9cdac6": {
+      "topic": "British MP xAI Grok Image Legal Liability Lawsuit",
+      "item_ids": [
+        "fc993810b7cc"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d20d2bbd3b1038bd": {
+      "topic": "OpenAI Sam Altman Meets Trump Officials DC",
+      "item_ids": [
+        "abb9a9bb7d4c"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "43b4445e8912c55a": {
+      "topic": "Colorado Governor Vetoes Surveillance Pricing Ban",
+      "item_ids": [
+        "f49db7664f84"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "62945c9186199aff": {
+      "topic": "Lititz Retirement Community AI Fall Prevention",
+      "item_ids": [
+        "a60077887de0"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4928cec0ff02a512": {
+      "topic": "Jamshid Ghomi Iran Computer Technology Export Charges",
+      "item_ids": [
+        "9d7a13b3abc2"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c9518d4a2edc0cf1": {
+      "topic": "Pentagon AI Contested Logistics Technology",
+      "item_ids": [
+        "cad3f9c79a6e"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9795a561a927b4e4": {
+      "topic": "Marshall Health Network Spatial Arthroscopy Visualization",
+      "item_ids": [
+        "68f241fb9fbc"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4113f6c64123fb65": {
+      "topic": "Japan Edgy Workwear Artisan Grunge Aesthetic",
+      "item_ids": [
+        "8d8e596fb22a"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "406e8d7398ec3304": {
+      "topic": "Hodinkee Watch Spotting May 2026",
+      "item_ids": [
+        "a61c38856b5a"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "43f40c1aefd85a7a": {
+      "topic": "Microsoft In-House AI Models OpenAI Alternative",
+      "item_ids": [
+        "6e765db4f2b2"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "477663c02896a694": {
+      "topic": "Maine Mall Hotels Local Business Concerns",
+      "item_ids": [
+        "54491b397c60"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "508826ee8cc6c99c": {
+      "topic": "Grand Rapids Zoning Code Housing Overhaul",
+      "item_ids": [
+        "263c4625b233"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9531b0bf75c6c483": {
+      "topic": "Spurs Merchandise Break-In NBA Finals Excitement",
+      "item_ids": [
+        "b2d759171ee3"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1518c2a8cb9aadc5": {
+      "topic": "Retirement Savings Planning Relevance Debate",
+      "item_ids": [
+        "8b40d92b5b01"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e40ad8f9ab8992fe": {
+      "topic": "Silverthorne Finance Director Appointment",
+      "item_ids": [
+        "38849b944e86"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2bfc70ba673e1c16": {
+      "topic": "Yahoo AI Finance Sports Experiences Launch",
+      "item_ids": [
+        "02661c5e7cfc"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "076df6440109c3aa": {
+      "topic": "SAWS San Antonio Chief Financial Officer Appointment",
+      "item_ids": [
+        "e7b4c47fcf7f"
+      ],
+      "created_at": "2026-06-03T20:27:57.076200+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-03T17:11:43.431067+00:00"
+  "last_checked": "2026-06-03T20:28:14.009467+00:00"
 }
