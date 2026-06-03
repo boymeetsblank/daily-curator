@@ -246,7 +246,7 @@ def escalate_to_sonnet(items: list[dict]) -> None:
 
 For each breaking news item below, write:
 1. Why it matters — 2-3 sentences, editorial and specific. Explain the cultural significance of this exact story right now.
-2. Hook — a carousel post hook in this format: [TRIGGER: word] First line. / Second line. / Third line.
+2. Hook — one sentence. Write it the way you'd text a friend something wild you just read — direct, specific, no fluff. No rhetorical questions, no "Here's why", no "This changes everything."
 
 Respond with a JSON array only — one object per item, same order as input:
 [{{"why": "<string>", "hook": "<string>"}}]
@@ -549,7 +549,7 @@ Some signals may be bare trending topic names (e.g. a player's name, a team name
 
 WHY IT MATTERS: 2–3 sentences. Be specific: who, what, why it matters culturally right now. Editorial voice — a take, not a summary.
 
-HOOK: A punchy 2–3 line carousel headline, separated by /. Write like a text to a friend: fragments OK, each line a distinct beat. 7 words or fewer per line. Punctuate naturally.
+HOOK: One sentence. Write it the way you'd text a friend something wild you just read — direct, specific, no fluff. No rhetorical questions, no "Here's why", no "This changes everything."
 
 Respond with JSON only:
 {{"title": "<concise headline>", "why": "<2-3 sentence editorial context>", "hook": "<2-3 lines separated by />"}}"""
