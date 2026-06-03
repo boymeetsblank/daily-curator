@@ -1,33 +1,5 @@
 {
   "known_ids": [
-    "80061f770fe1",
-    "85ec583c1a13",
-    "b7d8554c8d3f",
-    "b54f08133dde",
-    "6c885ed92eea",
-    "aa3b8b196cf4",
-    "3efb72fe9409",
-    "ad9e04baf4bf",
-    "bd2acafd1b79",
-    "e073dcf48062",
-    "72846e04369f",
-    "6e2aa85b95d5",
-    "2a3c0b225572",
-    "f05d361ba424",
-    "0869697c9238",
-    "e126ff1a26bb",
-    "907a1a207433",
-    "db2afb74cc5e",
-    "a62f0c172218",
-    "d24ecf233de5",
-    "343f7bc4e3ca",
-    "62abdbf3d0f3",
-    "0d6d49980ed2",
-    "92c124cbf702",
-    "a6a6a5412cab",
-    "90b3aa30e07b",
-    "98e922dc8e4a",
-    "a6182b0750d7",
     "7148d338608d",
     "bdfdc24ac59a",
     "5bcdae11e9cd",
@@ -499,56 +471,51 @@
     "5c571aeec150",
     "033769c04caa",
     "57049c76e709",
-    "188206ff5ce8"
+    "188206ff5ce8",
+    "4f3bcb3192b9",
+    "e96fb0a24ac3",
+    "cc76b133c6d6",
+    "62f553b7178a",
+    "cf60aade6a60",
+    "52a884ff3d86",
+    "b036b5b1a8a8",
+    "5e89c33162b2",
+    "9da30a98fed5",
+    "16ffba1e1706",
+    "4a713fbeea9e",
+    "3d7cd906969f",
+    "74933f47231d",
+    "bf08f327a462",
+    "84cb734bdf99",
+    "4d7e08701fdd",
+    "db1613dbf196",
+    "a56bda3a3a5d",
+    "103b33df0d05",
+    "5127676f7670",
+    "15a560e1ad5a",
+    "ac1193157124",
+    "9d1e48bfda7f",
+    "ed74946a5366",
+    "9faaad4548fd",
+    "3e0162936d96",
+    "91ba9480bc9b",
+    "255f48d40797"
   ],
-  "failed_ids": {},
+  "failed_ids": {
+    "3b67efffcdc2": "2026-06-03T02:03:02.045285+00:00",
+    "cb0d88174063": "2026-06-03T02:03:02.045285+00:00",
+    "7cb5a07933f3": "2026-06-03T02:03:02.045285+00:00",
+    "3d64372eddde": "2026-06-03T02:03:02.045285+00:00",
+    "886c70d13c78": "2026-06-03T02:03:02.045285+00:00",
+    "5692080f1293": "2026-06-03T02:03:02.045285+00:00",
+    "d97140eccf67": "2026-06-03T02:03:02.045285+00:00",
+    "9ccaa8cb0a21": "2026-06-03T02:03:02.045285+00:00",
+    "0b80646d0388": "2026-06-03T02:03:02.045285+00:00",
+    "4af342c61902": "2026-06-03T02:03:02.045285+00:00",
+    "9abd4632b8ad": "2026-06-03T02:03:02.045285+00:00",
+    "69d21b5fa400": "2026-06-03T02:03:02.045285+00:00"
+  },
   "live_clusters": {
-    "246f39b18e9e873f": {
-      "topic": "Gotham TV Awards 2026 Winners DTF St. Louis Pluribus I Love LA",
-      "item_ids": [
-        "693ae13b2467"
-      ],
-      "created_at": "2026-06-02T01:40:58.483557+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "32f65690aea032bd": {
-      "topic": "Zach Cregger Parts Ways Artists First Management",
-      "item_ids": [
-        "f387e17a632e"
-      ],
-      "created_at": "2026-06-02T01:40:58.483557+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "08ad8605556a9532": {
-      "topic": "Square Peg Social Austin Filmmaker Mentorship Program Second Edition",
-      "item_ids": [
-        "43a2cbd63e17"
-      ],
-      "created_at": "2026-06-02T01:40:58.483557+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e9ed376168292323": {
-      "topic": "ASUS ExpertBook B5 Flip G2 360 Touchscreen Laptop",
-      "item_ids": [
-        "506578e6a5f8"
-      ],
-      "created_at": "2026-06-02T01:40:58.483557+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3d35cc84f966b660": {
-      "topic": "Blue Origin Launchpad Rocket Explosion 2028 Restoration Timeline",
-      "item_ids": [
-        "c2134ab6aacb",
-        "760e3e299293"
-      ],
-      "created_at": "2026-06-02T01:40:58.483557+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "bba2c1030123729e": {
       "topic": "Bryson Tiller Neo Trapsoul Tour Announcement",
       "item_ids": [
@@ -728,12 +695,14 @@
         "199c8d28ba35",
         "ada39e69a5c3",
         "a61e6a50be62",
-        "91d557b3db29"
+        "91d557b3db29",
+        "a56bda3a3a5d",
+        "103b33df0d05"
       ],
       "created_at": "2026-06-02T11:01:21.041071+00:00",
-      "last_escalated_size": 10,
-      "last_escalated_at": "2026-06-02T21:37:51.640757+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 13,
+      "last_escalated_at": "2026-06-03T02:03:02.045285+00:00",
+      "picks_file": "picks/picks-2026-06-03-0203.md",
       "last_escalated_item_ids": [
         "890adc0d45bb",
         "2a94d44889ea",
@@ -744,8 +713,12 @@
         "3192f69c36cc",
         "199c8d28ba35",
         "ada39e69a5c3",
-        "a61e6a50be62"
-      ]
+        "a61e6a50be62",
+        "91d557b3db29",
+        "a56bda3a3a5d",
+        "103b33df0d05"
+      ],
+      "why_text": "The NBA Finals matchup between the New York Knicks and San Antonio Spurs is generating massive cultural heat \u2014 Mitchell Robinson's injury status could be the deciding factor for New York's frontcourt against Wembanyama, who's already showing Finals nerves. Meanwhile, the Draymond-Barkley beef spilling into the broadcast booth means the drama off the court is almost matching what's on it. This is the rare Finals where the storylines \u2014 generational talent, a legendary franchise's resurrection, and media chaos \u2014 are all firing at once."
     },
     "b290d356e92c43b0": {
       "topic": "Memphis Grizzlies Top-Five Draft History Analysis",
@@ -986,7 +959,8 @@
     "64fe084c19affd0c": {
       "topic": "Eagles Trade WR Brown to Patriots",
       "item_ids": [
-        "4f02829ac310"
+        "4f02829ac310",
+        "4a713fbeea9e"
       ],
       "created_at": "2026-06-02T15:01:49.686934+00:00",
       "last_escalated_size": 0,
@@ -996,11 +970,19 @@
       "topic": "Myles Garrett Traded to Rams Blockbuster",
       "item_ids": [
         "540cd3209bfc",
-        "a359762524cc"
+        "a359762524cc",
+        "74933f47231d"
       ],
       "created_at": "2026-06-02T15:01:49.686934+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-03T02:03:02.045285+00:00",
+      "picks_file": "picks/picks-2026-06-03-0204.md",
+      "why_text": "The Browns just dealt Myles Garrett \u2014 arguably the best defensive player in the NFL \u2014 to the Los Angeles Rams, a move that instantly reshapes the NFC power structure. Pairing Garrett with a Rams defense already built to win now makes LA a legitimate Super Bowl threat, while Cleveland signals a full rebuild is underway. This is the kind of trade that defines an era: a franchise cornerstone moved in his prime, the kind of deal fans will talk about for years.",
+      "last_escalated_item_ids": [
+        "540cd3209bfc",
+        "a359762524cc",
+        "74933f47231d"
+      ]
     },
     "a5d9fb0ff33501f4": {
       "topic": "Meta Series Feature Instagram Facebook Episodic Reels",
@@ -1341,11 +1323,19 @@
       "topic": "Martin Scorsese AI Advocate Hollywood",
       "item_ids": [
         "1a9290e008eb",
-        "ff41dcea0de4"
+        "ff41dcea0de4",
+        "255f48d40797"
       ],
       "created_at": "2026-06-02T18:50:28.243147+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-03T02:03:02.045285+00:00",
+      "picks_file": "picks/picks-2026-06-03-0204.md",
+      "why_text": "One of cinema's most revered auteurs \u2014 a man who has spent decades championing the sanctity of filmmaking as human art \u2014 is apparently signaling openness to AI, and that landing is seismic. Scorsese's credibility with the old guard makes this a potential turning point in Hollywood's bitter AI debate, giving the pro-AI camp its most prestigious convert yet. If Marty's at the table, the culture war inside the industry just shifted.",
+      "last_escalated_item_ids": [
+        "1a9290e008eb",
+        "ff41dcea0de4",
+        "255f48d40797"
+      ]
     },
     "b1caa10241aa259f": {
       "topic": "Microsoft Scout OpenClaw Personal Assistant",
@@ -2092,7 +2082,8 @@
       "item_ids": [
         "5c8a010e35c2",
         "30ccc3091621",
-        "9268a4e366e1"
+        "9268a4e366e1",
+        "cf60aade6a60"
       ],
       "created_at": "2026-06-02T23:21:10.525055+00:00",
       "last_escalated_size": 3,
@@ -2355,7 +2346,161 @@
       "created_at": "2026-06-02T23:21:10.525055+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "d49a34add60c99e2": {
+      "topic": "Scott Pelley CBS News Contract Termination",
+      "item_ids": [
+        "4f3bcb3192b9",
+        "5e89c33162b2"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8944e069ea653949": {
+      "topic": "Summer House Reunion Part 2 Drama",
+      "item_ids": [
+        "e96fb0a24ac3"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "64402418009da935": {
+      "topic": "Virginia Woolf's Night & Day Film Review",
+      "item_ids": [
+        "cc76b133c6d6"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "54ff51b513494fd1": {
+      "topic": "Taylor Swift Praises Paul McCartney Album",
+      "item_ids": [
+        "62f553b7178a"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "58ce2f755b1d7c15": {
+      "topic": "Family-Friendly Movies TV Shows 2026",
+      "item_ids": [
+        "52a884ff3d86"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "785fdf265ee720cb": {
+      "topic": "Periko Jessi Le\u00f3n Rebrand PJ Kids",
+      "item_ids": [
+        "b036b5b1a8a8"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "643ca52599509fc0": {
+      "topic": "Lindsey Anderson Beer Hollow Sydney Sweeney Adaptation",
+      "item_ids": [
+        "9da30a98fed5"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "29e3d29fab3b82ea": {
+      "topic": "Falcons London WR Extension Deal",
+      "item_ids": [
+        "16ffba1e1706"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aca806bce951ef6c": {
+      "topic": "Steelers Herbig Contract Extension",
+      "item_ids": [
+        "3d7cd906969f"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c2b89be6a7ac1e21": {
+      "topic": "NHL All-Star Game International Teams Redesign",
+      "item_ids": [
+        "bf08f327a462"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "570676759f661beb": {
+      "topic": "AI-Powered Computer Worms Security Risk",
+      "item_ids": [
+        "84cb734bdf99"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "45f0100ec55b1e58": {
+      "topic": "PepsiCo Digital Twin Technology Throughput",
+      "item_ids": [
+        "4d7e08701fdd"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e0f171a5d26aec77": {
+      "topic": "Denver Nuggets 2025 Offseason Moves Re-Evaluation",
+      "item_ids": [
+        "db1613dbf196"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "57541c286e9cd590": {
+      "topic": "Charlotte Hornets Draft Prospect Koa Peat",
+      "item_ids": [
+        "5127676f7670"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a96fcc76e80885ef": {
+      "topic": "Chicago Bulls 2026 NBA Offseason Preview",
+      "item_ids": [
+        "15a560e1ad5a"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9b7cc61688617bf2": {
+      "topic": "Autism Therapy Business Billing Fraud Abuse",
+      "item_ids": [
+        "ac1193157124"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e2596e9dad93a05b": {
+      "topic": "Greg Abel Berkshire Hathaway Megadeals",
+      "item_ids": [
+        "9d1e48bfda7f"
+      ],
+      "created_at": "2026-06-03T02:03:54.264245+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-02T23:21:16.300168+00:00"
+  "last_checked": "2026-06-03T02:04:13.777121+00:00"
 }
