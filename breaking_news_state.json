@@ -1,23 +1,5 @@
 {
   "known_ids": [
-    "7148d338608d",
-    "bdfdc24ac59a",
-    "5bcdae11e9cd",
-    "8e2bc0d2bd1b",
-    "6d0eb929ece4",
-    "170796176d3f",
-    "fdb03ab1666d",
-    "4b83e46e5e1d",
-    "3d529f4555fb",
-    "a5b9a288f3cf",
-    "34cf38e90c1a",
-    "2a0d1b95cfb6",
-    "282297e4579d",
-    "6fecc9e92dac",
-    "9159dd0af171",
-    "5d12b7f89be5",
-    "1fa16c38ff7e",
-    "2a8d294e1150",
     "25ff6a5964f4",
     "0032c59f9ead",
     "290664c6af48",
@@ -499,50 +481,41 @@
     "9faaad4548fd",
     "3e0162936d96",
     "91ba9480bc9b",
-    "255f48d40797"
+    "255f48d40797",
+    "26b899f62e7a",
+    "d8fdbc59fcf8",
+    "aa098ce2df47",
+    "5b08ad55a839",
+    "b709a5f5a266",
+    "b7b297973ca9",
+    "ee7c8c2df4db",
+    "e96ceb62eca4",
+    "effa732c2c7a",
+    "9d21dac16777",
+    "2d400a312842",
+    "881ac3ad3d6e",
+    "e5a03f7e7eeb",
+    "3577f3bcf501",
+    "0f61fe2215cf",
+    "a1e269e386a6",
+    "a4d46562f932",
+    "81893fcb2dfd"
   ],
   "failed_ids": {
-    "3b67efffcdc2": "2026-06-03T02:03:02.045285+00:00",
-    "cb0d88174063": "2026-06-03T02:03:02.045285+00:00",
-    "7cb5a07933f3": "2026-06-03T02:03:02.045285+00:00",
-    "3d64372eddde": "2026-06-03T02:03:02.045285+00:00",
-    "886c70d13c78": "2026-06-03T02:03:02.045285+00:00",
-    "5692080f1293": "2026-06-03T02:03:02.045285+00:00",
-    "d97140eccf67": "2026-06-03T02:03:02.045285+00:00",
-    "9ccaa8cb0a21": "2026-06-03T02:03:02.045285+00:00",
-    "0b80646d0388": "2026-06-03T02:03:02.045285+00:00",
-    "4af342c61902": "2026-06-03T02:03:02.045285+00:00",
-    "9abd4632b8ad": "2026-06-03T02:03:02.045285+00:00",
-    "69d21b5fa400": "2026-06-03T02:03:02.045285+00:00"
+    "7f3450fd031d": "2026-06-03T07:03:13.238373+00:00",
+    "3e803020ab4a": "2026-06-03T07:03:13.238373+00:00",
+    "af3257648452": "2026-06-03T07:03:13.238373+00:00",
+    "6c7b445b7a34": "2026-06-03T07:03:13.238373+00:00",
+    "9c26d913a6d2": "2026-06-03T07:03:13.238373+00:00",
+    "9750f34632be": "2026-06-03T07:03:13.238373+00:00",
+    "0f4e920d20b1": "2026-06-03T07:03:13.238373+00:00",
+    "659f0701e0e6": "2026-06-03T07:03:13.238373+00:00",
+    "7fa6d68e41c0": "2026-06-03T07:03:13.238373+00:00",
+    "238083d3a4ff": "2026-06-03T07:03:13.238373+00:00",
+    "f5b5971ba8b8": "2026-06-03T07:03:13.238373+00:00",
+    "027561a35009": "2026-06-03T07:03:13.238373+00:00"
   },
   "live_clusters": {
-    "bba2c1030123729e": {
-      "topic": "Bryson Tiller Neo Trapsoul Tour Announcement",
-      "item_ids": [
-        "eaf2e1c5b12e"
-      ],
-      "created_at": "2026-06-02T06:22:06.156309+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "efb18189fd2a9d99": {
-      "topic": "Amazon Prime Day June 23 2026 Event",
-      "item_ids": [
-        "5470e38dda6d",
-        "19c58307bbd4",
-        "17c9df86fdf8"
-      ],
-      "created_at": "2026-06-02T06:22:06.156309+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-02T18:49:26.444941+00:00",
-      "picks_file": "picks/picks-2026-06-02-1850.md",
-      "why_text": "Prime Day is no longer just a shopping event \u2014 it's a full-spectrum cultural moment that now swallows gaming, streaming, and entertainment into its orbit. The free games lineup (Tomb Raider 4-6 Remastered, Mafia 3) signals Amazon's play to lock in Prime subscribers through nostalgia-baited content drops, not just discounts. This is Amazon asserting itself as an entertainment ecosystem, using a retail holiday as the delivery mechanism.",
-      "last_escalated_item_ids": [
-        "5470e38dda6d",
-        "19c58307bbd4",
-        "17c9df86fdf8"
-      ]
-    },
     "f97aa5ec81e35eca": {
       "topic": "Sony PlayStation Gaming Peripherals 2026 Launch",
       "item_ids": [
@@ -781,7 +754,9 @@
         "53ef12932bbe",
         "8dc7a4159d1f",
         "2fed7ac43a55",
-        "185e64d37143"
+        "185e64d37143",
+        "2d400a312842",
+        "881ac3ad3d6e"
       ],
       "created_at": "2026-06-02T11:01:21.041071+00:00",
       "last_escalated_size": 4,
@@ -944,7 +919,8 @@
       "item_ids": [
         "14e2d74cc148",
         "ce08229b3f11",
-        "f09216b55eaf"
+        "f09216b55eaf",
+        "81893fcb2dfd"
       ],
       "created_at": "2026-06-02T15:01:49.686934+00:00",
       "last_escalated_size": 3,
@@ -1133,7 +1109,8 @@
     "7a2a9bbf771794ed": {
       "topic": "Love Island USA Season 8 Streaming Guide",
       "item_ids": [
-        "5712aa723f7c"
+        "5712aa723f7c",
+        "3577f3bcf501"
       ],
       "created_at": "2026-06-02T18:50:28.243147+00:00",
       "last_escalated_size": 0,
@@ -1755,7 +1732,8 @@
     "de3cb78f4dfbbc35": {
       "topic": "America's Got Talent Season 21 Streaming Guide",
       "item_ids": [
-        "56d72a28e93b"
+        "56d72a28e93b",
+        "26b899f62e7a"
       ],
       "created_at": "2026-06-02T21:38:42.141480+00:00",
       "last_escalated_size": 0,
@@ -2206,7 +2184,8 @@
     "4f3053b01715710b": {
       "topic": "God of War Laufey Game Announcement",
       "item_ids": [
-        "e86d46de55dc"
+        "e86d46de55dc",
+        "a4d46562f932"
       ],
       "created_at": "2026-06-02T23:21:10.525055+00:00",
       "last_escalated_size": 0,
@@ -2278,7 +2257,8 @@
     "07ed46260152eeec": {
       "topic": "Giannis Antetokounmpo Thunder NBA Mock Trade",
       "item_ids": [
-        "cba1bea970c0"
+        "cba1bea970c0",
+        "b7b297973ca9"
       ],
       "created_at": "2026-06-02T23:21:10.525055+00:00",
       "last_escalated_size": 0,
@@ -2341,7 +2321,8 @@
     "de0f8a907fc2a412": {
       "topic": "BMW M2 xDrive AWD 2027 Model",
       "item_ids": [
-        "887e8468c252"
+        "887e8468c252",
+        "e5a03f7e7eeb"
       ],
       "created_at": "2026-06-02T23:21:10.525055+00:00",
       "last_escalated_size": 0,
@@ -2351,11 +2332,18 @@
       "topic": "Scott Pelley CBS News Contract Termination",
       "item_ids": [
         "4f3bcb3192b9",
-        "5e89c33162b2"
+        "5e89c33162b2",
+        "a1e269e386a6"
       ],
       "created_at": "2026-06-03T02:03:54.264245+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-03T07:03:13.238373+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "4f3bcb3192b9",
+        "5e89c33162b2",
+        "a1e269e386a6"
+      ]
     },
     "8944e069ea653949": {
       "topic": "Summer House Reunion Part 2 Drama",
@@ -2500,7 +2488,79 @@
       "created_at": "2026-06-03T02:03:54.264245+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "33bcd9a293d7df4d": {
+      "topic": "Michael Stipe Andrew Watt I Played the Fool Kimmel Performance",
+      "item_ids": [
+        "d8fdbc59fcf8"
+      ],
+      "created_at": "2026-06-03T07:04:00.124840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6f11bd73530339ef": {
+      "topic": "Poland Schools Phone Smartwatch Ban Policy",
+      "item_ids": [
+        "aa098ce2df47"
+      ],
+      "created_at": "2026-06-03T07:04:00.124840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c5549e96785db5a1": {
+      "topic": "Perplexity CEO AI Race Competition Metric Analysis",
+      "item_ids": [
+        "5b08ad55a839"
+      ],
+      "created_at": "2026-06-03T07:04:00.124840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a72a0216a8b968aa": {
+      "topic": "Quobly Silicon Spin Qubit Technology Funding 150M",
+      "item_ids": [
+        "b709a5f5a266"
+      ],
+      "created_at": "2026-06-03T07:04:00.124840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "16cd42bf22c7ec88": {
+      "topic": "Vince Carter Toronto Raptors Tribute Post Reaction",
+      "item_ids": [
+        "ee7c8c2df4db"
+      ],
+      "created_at": "2026-06-03T07:04:00.124840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a094d30aac17ef01": {
+      "topic": "AI Agent Guardrails Business Implementation Requirements",
+      "item_ids": [
+        "e96ceb62eca4"
+      ],
+      "created_at": "2026-06-03T07:04:00.124840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "60c5dde2aa8bc819": {
+      "topic": "Dubai Apparel Group India Business IPO Exploration",
+      "item_ids": [
+        "effa732c2c7a"
+      ],
+      "created_at": "2026-06-03T07:04:00.124840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "378dbf30e38b526d": {
+      "topic": "BYD Self-Developed Autonomous Driving Chip Reveal",
+      "item_ids": [
+        "9d21dac16777"
+      ],
+      "created_at": "2026-06-03T07:04:00.124840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-03T02:04:13.777121+00:00"
+  "last_checked": "2026-06-03T07:04:00.145202+00:00"
 }

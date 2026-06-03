@@ -1,6 +1,203 @@
 {
   "items": [
     {
+      "id": "26b899f62e7a",
+      "topic": "Luke Taleno, Cancer Survivor, Scores Golden Buzzer With Original Rap on ‘AGT’: Watch",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://www.billboard.com/culture/tv-film/luke-taleno-cancer-survivor-golden-buzzer-agt-1236262956/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "de3cb78f4dfbbc35"
+    },
+    {
+      "id": "d8fdbc59fcf8",
+      "topic": "Watch Michael Stipe and Andrew Watt Showcase ‘I Played the Fool’ on ‘Kimmel’",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/michael-stipe-andrew-watt-i-played-the-fool-kimmel-1235571519/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "33bcd9a293d7df4d"
+    },
+    {
+      "id": "aa098ce2df47",
+      "topic": "Poland wants to ban phones and smartwatches in schools",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://www.engadget.com/2186323/poland-classroom-phone-ban-online-porn-age-check-bills/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "6f11bd73530339ef"
+    },
+    {
+      "id": "5b08ad55a839",
+      "topic": "Perplexity CEO tells CNBC one metric will determine who wins the AI race",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://www.cnbc.com/2026/06/03/perplexity-ceo-ai-valuations-computer-agentic.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "c5549e96785db5a1"
+    },
+    {
+      "id": "b709a5f5a266",
+      "topic": "Quobly raises $150M for its silicon spin qubit technology - SiliconANGLE",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM0dzNy1WVFJkaVVtMEdldEJsYUlKODRZbUlGaE53bVFoaS1sM21PNlZSOF8zaUN1cXBWXzdHRDJUWVVaOEVGcGF0NVlSYUx0anQ5QXNFcnBPcjdWZkxORzZDZTg1cE1abWQ3aWY1ejY2U21zWWZ3d2NjT21odFZORkxjYWNFWW5jV3JWYktn?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "a72a0216a8b968aa"
+    },
+    {
+      "id": "b7b297973ca9",
+      "topic": "Thunder not expected to pursue Bucks’ Giannis Antetokounmpo, but they’re looking at another All-NBA player - Yahoo Sports",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTVo3WHZpV0ptX0IwYWdCR3ZQTzNjeXhGQjQyWTNoVlZfbkdzUmVOMlI0SXpQSHlvX040RVd0ZkltREhvZVNwZC1qcWE3aHZXN1c4Vy15ZDl4X2xfM0pJam5mNkxpV291VzlnOExEVnBuOF9iUkVmWXVIbW1fdXNxLUlGTHFYZ0wwMnc?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "07ed46260152eeec"
+    },
+    {
+      "id": "ee7c8c2df4db",
+      "topic": "NBA Fans React To Toronto Raptors Legend Vince Carter’s Heartfelt Post - heavy.com",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOaWJqSnFCVTY5bEpreUhQbHpXM3NEdzNpZ1Zjam5UUjhjNlVhTGpzVEZaVEZ5V05JTzZLYmxiVXZXVEpPUkJlTGNwSU9YZEI2MEhKYVJjUXJXOGc3dEpEY21VTUNESkE0MlVEZlduUE5JUmROd3JkbUd3NEo4Y0lQTXI0NllSS3c?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "16cd42bf22c7ec88"
+    },
+    {
+      "id": "e96ceb62eca4",
+      "topic": "The 7 AI Agent Guardrails Every Business Needs Before Things Go Wrong - Forbes",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYlJ5YTY0cnVJUUJ3Rm1MVldtSFRuQ3FpLUhkV09FXzFOQjY2eTB3VTI1Y1Fmazg2MUN4UU5Dc1l4d1g0SldKay1fYmlzdFlvR0ZNQ01lVVY2NTFfMkQ0OHNfNUVXeUJ0WDhBaV9lMWpybVB1ZXJHUXRvczdfb0hFZ1ZxSzhkNzh0LWlidTJzWkNaVHZ6S2RiUVdKcDNmbXVvdGxvd0lVNm1heDZoVExxUWIyWU5Ha0lQTXd2RGsyMA?oc=5",
+      "source_name": "Google News - Business",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "a094d30aac17ef01"
+    },
+    {
+      "id": "effa732c2c7a",
+      "topic": "Dubai-Based Apparel Group Said to Explore IPO for India Business - Bloomberg.com",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRU5VUVhqcU9aMDJuSFdhNlhlYmZLeUVHSUF1SUxFY2JVaHNHVTNqeXpsQ2lKMGFnUXJrbWxqdjNiaGF6VUJjWENRUi1QcG96NEZjZGx6bXhUOV9qd3JEZngyTnhKYVZDREk0N1VRUS0wMWtldnR6bm5JazlTTW5VT2swTXBSaTVlbml6M0lzMWhVbXNUVGROM3lfanY1b0g3cThZWGpiU2NuUlM5MGw5Tld5aEdQUQ?oc=5",
+      "source_name": "Google News - Business",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "60c5dde2aa8bc819"
+    },
+    {
+      "id": "9d21dac16777",
+      "topic": "BYD Reveals Self-Developed Chip to Power Future Self-Driving Cars - Electric Cars Report",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUFZ3Q2cwR3Y5ZlRUbWpOMzVpeFNGMV9zMzVhWGVQR3BUTkxDZ2U1emY1QXY4dUZXUHRaRzhxVnhzUXg0MUNhQlp1NFNrSFpqdnZUSG9VdXVORTlfeWVxcUtjTnJSYWhNWFQ0c2lFM0dBOXpQZUlPZDVWU2pza0k3TmNIM1NWbE0tb3haOHZkNlBsU3NnaE1qcWpvbkNzOF90V2JzZ3FlU3RDc0U4VU5RcEZfT3AzUQ?oc=5",
+      "source_name": "Google News - Vehicles",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "378dbf30e38b526d"
+    },
+    {
+      "id": "2d400a312842",
+      "topic": "BMW Shares Link Policy Driven EV Growth With Apparent Valuation Discount - Yahoo Finance",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSEswajVLc2lTZWtLcmdkZ2ROWk5GcF9tX2Z2SXJWUVFrV2JFM3NKRVRsV3dJVW5DeFdBVGlNMzlndHAxNDhidjhKTXk5UkhjMVBRM1VJc0U3UDM5a3E5RWQwakNzOGhlQW84OEZsZ3I2T21MQWZ3T2d4SnlsMHZHN3JLRlNsLXZDQWdzc3RRdFMzd3F4MTlZ?oc=5",
+      "source_name": "Google News - BMW",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "58f64f33769151c2"
+    },
+    {
+      "id": "881ac3ad3d6e",
+      "topic": "Refreshed BMW 7 Series With Six Cylinders or EV Power Arrives Soon, These Are the New Prices - autoevolution",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMEdCMmlRRkstem5JRnV0ckZVWURmWlBnTG9JMTlxdjRaOWJJaWFmOXRER2VGNXpzOHVNWTk3VWNRV0xEWVBITC0tamdIdWhrZU80N0JfVTRLcVIwUzduQkRWYXd4ZFNLMFE0amtnLUtaaWxCM3UyY1FobXZUMG4wTk5SMXFKbWpzSmxBQzRkVFlDM3c2YjhFLVk5NmpUdm53QU44NjhlNjFWZjVDLWF5Tl9SN2NLaFJlTm1sQ3hSd1VSdW5rTlZscEJHdXRIeW5hcXpBSg?oc=5",
+      "source_name": "Google News - BMW",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "58f64f33769151c2"
+    },
+    {
+      "id": "e5a03f7e7eeb",
+      "topic": "2027 BMW M2 Coupe Welcomes M xDrive All-Wheel-Drive Into the Family, It's Naturally Quicker Than RWD - autoevolution",
+      "traffic": "",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMFgtb0RpNC1RRlM4WkROeHNjTk80S1RGdUlfak5zek1YUmtFakFYTW1PbEpiek4zYmd0QWxIa0wwQTBCWnNmdGtsdE9Ld1BzOVNlb2hScmJBa1UyamlMMXpkY3RhcHQ0YVZfcHloeDZDMjFYbzJFbmw4X1lhMEdJVUZNMWtCZVAyLTNENG45RG5FUFZRYXNoSDFIM2lTdnRXWjdQVE9Na2hUMHB6LVBCbGxWWHRnZGpjVDA5Qkh6M19DZnI4UGsyM3dXMmVFaVo0c0REbWdJU0JPNGVvOGM4?oc=5",
+      "source_name": "Google News - BMW",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "de0f8a907fc2a412"
+    },
+    {
+      "id": "3577f3bcf501",
+      "topic": "#loveislandusa",
+      "traffic": "##1 on X",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://x.com/search?q=%23loveislandusa&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7,
+      "cluster_id": "7a2a9bbf771794ed"
+    },
+    {
+      "id": "0f61fe2215cf",
+      "topic": "Melanie",
+      "traffic": "##2 on X",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://x.com/search?q=Melanie&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "a1e269e386a6",
+      "topic": "Scott Pelley",
+      "traffic": "##3 on X",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://x.com/search?q=Scott+Pelley&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 8,
+      "cluster_id": "d49a34add60c99e2"
+    },
+    {
+      "id": "a4d46562f932",
+      "topic": "Kratos",
+      "traffic": "##4 on X",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://x.com/search?q=Kratos&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7,
+      "cluster_id": "4f3053b01715710b"
+    },
+    {
+      "id": "81893fcb2dfd",
+      "topic": "#StanleyCup",
+      "traffic": "##5 on X",
+      "detected_at": "2026-06-03T07:03:13.238373+00:00",
+      "search_url": "https://x.com/search?q=%23StanleyCup&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7,
+      "cluster_id": "a8a3ab072419f094"
+    },
+    {
       "id": "4f3bcb3192b9",
       "topic": "Scott Pelley Out at CBS News After Dramatic Clash With New ’60 Minutes’ Executive Producer",
       "traffic": "",
@@ -241,201 +438,7 @@
       "source_type": "feed",
       "haiku_score": 6,
       "cluster_id": "9b7cc61688617bf2"
-    },
-    {
-      "id": "9d1e48bfda7f",
-      "topic": "Exclusive | Greg Abel Puts His Stamp on Berkshire Hathaway With Pair of Megadeals - WSJ",
-      "traffic": "",
-      "detected_at": "2026-06-03T02:03:02.045285+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVFgtaHk4b3U4NE56RlljY185dXl2UTJOOGxBbjgyUEpieFlOTnF0QUpkZnExMDdvaU9jRElrRGJTS2l5LVc1YUIxdFVqRnRWRmdVZFUzYVpKUGpaS1V4MFlUMnBiT1RJakRwSHZSX1RQeFdibHNlTDl2WVZIb3p0d3pFOFNYQ2Ruc010eXM4QmVFNVNPN3RhVjZyT2xzLTNlNjdDS1FwRWFrZw?oc=5",
-      "source_name": "Google News - Finance",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "e2596e9dad93a05b"
-    },
-    {
-      "id": "ed74946a5366",
-      "topic": "Sikh",
-      "traffic": "##13 on X",
-      "detected_at": "2026-06-03T02:03:02.045285+00:00",
-      "search_url": "https://x.com/search?q=Sikh&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "9faaad4548fd",
-      "topic": "Pete Dunne",
-      "traffic": "##14 on X",
-      "detected_at": "2026-06-03T02:03:02.045285+00:00",
-      "search_url": "https://x.com/search?q=Pete+Dunne&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "3e0162936d96",
-      "topic": "#BetrPicks",
-      "traffic": "##15 on X",
-      "detected_at": "2026-06-03T02:03:02.045285+00:00",
-      "search_url": "https://x.com/search?q=%23BetrPicks&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "91ba9480bc9b",
-      "topic": "Booker",
-      "traffic": "##16 on X",
-      "detected_at": "2026-06-03T02:03:02.045285+00:00",
-      "search_url": "https://x.com/search?q=Booker&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "255f48d40797",
-      "topic": "Scorsese",
-      "traffic": "##17 on X",
-      "detected_at": "2026-06-03T02:03:02.045285+00:00",
-      "search_url": "https://x.com/search?q=Scorsese&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6,
-      "cluster_id": "e4efe5a2a9c36678"
-    },
-    {
-      "id": "3250abc66c58",
-      "topic": "Panda Dunks Are Back In Patent Leather",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://sneakernews.com/2026/06/02/nike-dunk-low-panda-patent-leather/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "ce2536e41b7726c9"
-    },
-    {
-      "id": "5c8a010e35c2",
-      "topic": "Peabo Bryson, Veteran R&B Singer of ‘Beauty and the Beast’ and ‘Whole New World,’ Dies at 75",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://variety.com/2026/music/news/peabo-bryson-dead-beauty-and-the-beast-1236765354/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "2552305fe17eaec7"
-    },
-    {
-      "id": "48ce6ab0f6bf",
-      "topic": "‘Wolverine’ Game Developers Break Down New Footage, X-Men Cameos, ‘Low-Gore’ Option, Claw Combat and How Logan Can Die",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://variety.com/2026/digital/news/wolverine-video-game-trailer-x-men-cameos-gameplay-1236764406/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "a1a98c2f2fbf4c3a"
-    },
-    {
-      "id": "0f6b76d90f01",
-      "topic": "Mindy Kaling and ‘Not Suitable For Work’ Boss on Depicting the Gen-Z Workforce Onscreen and Setting Up Numerous Love Triangles: ‘You Want to Keep People Guessing’",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://variety.com/2026/tv/news/mindy-kaling-not-suitable-for-work-gen-z-love-triangles-1236764384/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "001395f4ce22db82"
-    },
-    {
-      "id": "d68e36e5c6c8",
-      "topic": "Jennifer Lopez & Brett Goldstein Address Offscreen Romance Rumors: ‘You Know What Everyone Is Saying…’",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://www.billboard.com/music/pop/jennifer-lopez-brett-goldstein-dating-rumors-interview-1236262711/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "522ef882cd875d83"
-    },
-    {
-      "id": "30ccc3091621",
-      "topic": "Peabo Bryson, Velvety Voice Behind Disney Duets & More, Dies at 75",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://www.billboard.com/music/music-news/peabo-bryson-death-singer-1236262804/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "2552305fe17eaec7"
-    },
-    {
-      "id": "54f7202644d4",
-      "topic": "‘Heated Rivalry’ Arrives on Blu-ray and DVD, Including Special ‘Collector’s Edition’ Release",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://www.rollingstone.com/product-recommendations/streaming/heated-rivalry-4k-blu-ray-dvd-release-date-buy-online-1235571203/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "d332bcb868cf79dc"
-    },
-    {
-      "id": "adf647010963",
-      "topic": "Palantir Contracts Have Become ‘An Unacceptable Point of Weakness,’ UK Politicians Warn",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://www.wired.com/story/uk-government-palantir-warning-report/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "7c373d0fa211dc9c"
-    },
-    {
-      "id": "18b803ee54aa",
-      "topic": "Cyera eyes $12B valuation at 80x ARR multiple despite operating losses",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://techcrunch.com/2026/06/02/cyera-eyes-12b-valuation-at-80x-arr-multiple-despite-operating-losses/",
-      "source_name": "TechCrunch",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "56fec9bdc81a4934"
-    },
-    {
-      "id": "3ec08c8081b7",
-      "topic": "Until Dawn 2 looks like Cabin in the Woods, but in a jungle",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://www.engadget.com/2186245/until-dawn-2-looks-like-cabin-in-the-woods-but-in-a-jungle/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "79f6ad256ab67d8d"
-    },
-    {
-      "id": "3f4bb67a13d5",
-      "topic": "Onimusha: Way of the Sword arrives September 25 but there's a demo today",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://www.engadget.com/2186239/onimusha-way-of-the-sword-arrives-september-25-but-there-s-a-demo-today/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "68523b52d1a7e63f"
-    },
-    {
-      "id": "e86d46de55dc",
-      "topic": "God of War Laufey stars the wife of Kratos and a jelly cube",
-      "traffic": "",
-      "detected_at": "2026-06-02T23:20:11.496424+00:00",
-      "search_url": "https://www.engadget.com/2186230/god-of-war-laufey-stars-the-wife-of-kratos/",
-      "source_name": "Engadget",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "4f3053b01715710b"
     }
   ],
-  "last_checked": "2026-06-03T02:03:02.045285+00:00"
+  "last_checked": "2026-06-03T07:03:13.238373+00:00"
 }
