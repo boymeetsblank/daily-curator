@@ -1180,7 +1180,7 @@ def fetch_subreddit_hot_posts() -> list[dict]:
     if not reddit_sources:
         return []
 
-    MIN_UPVOTES = 200
+    MIN_UPVOTES = 75
 
     def _fetch_one(source: dict) -> list[dict]:
         name = source.get("name", "r/unknown")
