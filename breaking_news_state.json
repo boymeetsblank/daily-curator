@@ -1,68 +1,5 @@
 {
   "known_ids": [
-    "3d7cd906969f",
-    "74933f47231d",
-    "bf08f327a462",
-    "84cb734bdf99",
-    "4d7e08701fdd",
-    "db1613dbf196",
-    "a56bda3a3a5d",
-    "103b33df0d05",
-    "5127676f7670",
-    "15a560e1ad5a",
-    "ac1193157124",
-    "9d1e48bfda7f",
-    "ed74946a5366",
-    "9faaad4548fd",
-    "3e0162936d96",
-    "91ba9480bc9b",
-    "255f48d40797",
-    "26b899f62e7a",
-    "d8fdbc59fcf8",
-    "aa098ce2df47",
-    "5b08ad55a839",
-    "b709a5f5a266",
-    "b7b297973ca9",
-    "ee7c8c2df4db",
-    "e96ceb62eca4",
-    "effa732c2c7a",
-    "9d21dac16777",
-    "2d400a312842",
-    "881ac3ad3d6e",
-    "e5a03f7e7eeb",
-    "3577f3bcf501",
-    "0f61fe2215cf",
-    "a1e269e386a6",
-    "a4d46562f932",
-    "81893fcb2dfd",
-    "7a7daedebe53",
-    "cfdedef41fe7",
-    "43f682c879c0",
-    "1f7c55f41a62",
-    "c16417f5a4b4",
-    "45ee1921ebae",
-    "75a6994d808d",
-    "72f19c42994e",
-    "453d4a1cd6e5",
-    "9d94dd13a2b7",
-    "7d173a0d62bb",
-    "703a6f14f8c7",
-    "67c1cbeb743c",
-    "c3c7b1568005",
-    "489a1e4af24b",
-    "5fc5eaf61001",
-    "06785796b7c0",
-    "3dbb06bdd654",
-    "8ecc6d85e119",
-    "636f45efeb69",
-    "a402d85a1c93",
-    "a9dd05a60b1e",
-    "e42effcc9d30",
-    "e4113027a6c6",
-    "049699ac0128",
-    "1d773e8ada90",
-    "8cc949efc978",
-    "f9394cf61c86",
     "5240e2aa3212",
     "a957ba874669",
     "26e2da7e69be",
@@ -499,7 +436,70 @@
     "71c17f1def9d",
     "a0a7be63470f",
     "1b1afd6ff424",
-    "e74861283967"
+    "e74861283967",
+    "54274daa31d0",
+    "681601e188f9",
+    "b1439e0ba163",
+    "99e6c1b5d90a",
+    "11569f1ef014",
+    "ba83edd22e68",
+    "82ac2a7e983b",
+    "9ee71dcd9548",
+    "a1416079706f",
+    "cae4d429e861",
+    "e586f9da5bd7",
+    "6bad3493042d",
+    "16138becc964",
+    "6d8989024636",
+    "2eb24e4fc3dd",
+    "96a38717f1e2",
+    "292be7eaabe4",
+    "8b644a7e5ea0",
+    "c0c0af892bbf",
+    "a0534c5fff7b",
+    "5894d7f1206a",
+    "d7de2f133086",
+    "6db195abccc9",
+    "3a30fc9b0ca7",
+    "d2e2329bcb6b",
+    "64e89439a439",
+    "4b0c6d757c5a",
+    "1f06794cf9c6",
+    "2f3cc9a667c4",
+    "ea2affbe1cf0",
+    "a60414755ae2",
+    "bbca2c64f07c",
+    "4e0be51bc271",
+    "5fbacc9259ea",
+    "4a0fa141043a",
+    "71a918608af3",
+    "b292de973766",
+    "1cd664d9d7b7",
+    "6e1964b710ef",
+    "61052985ac88",
+    "03705a3fa06f",
+    "cc97bf3ed19a",
+    "aa1647e7de74",
+    "7d55f5b15bad",
+    "8843949e1a95",
+    "1f321d4c7e81",
+    "d4a875dd76ef",
+    "dc45d69b563d",
+    "1ec949bbc753",
+    "cd9405547856",
+    "11963c8cf691",
+    "b611f084c559",
+    "aa1647e7de74",
+    "89449858a6ae",
+    "b5c8978a33e7",
+    "f3c31b92b9b3",
+    "6e0ff8b41160",
+    "c82e57c64c8a",
+    "423f7ec07dff",
+    "58f2b3b4f546",
+    "4595ec715e5c",
+    "0072d3061355",
+    "4bbf800c3d3b"
   ],
   "failed_ids": {
     "d07d5052cee3": "2026-06-04T18:01:50.427778+00:00",
@@ -1918,11 +1918,14 @@
         "37d9508c9ac6",
         "d88e6887d6c4",
         "fc317eb2e196",
-        "7df03c1c276a"
+        "7df03c1c276a",
+        "b292de973766",
+        "1cd664d9d7b7",
+        "6e1964b710ef"
       ],
       "created_at": "2026-06-04T12:12:51.917244+00:00",
-      "last_escalated_size": 8,
-      "last_escalated_at": "2026-06-04T15:45:23.547175+00:00",
+      "last_escalated_size": 12,
+      "last_escalated_at": "2026-06-04T20:18:23.938399+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "3cadd49cb05f",
@@ -1932,7 +1935,11 @@
         "80a82954e319",
         "37d9508c9ac6",
         "d88e6887d6c4",
-        "fc317eb2e196"
+        "fc317eb2e196",
+        "7df03c1c276a",
+        "b292de973766",
+        "1cd664d9d7b7",
+        "6e1964b710ef"
       ]
     },
     "981f13640ea88c9e": {
@@ -1967,7 +1974,9 @@
       "item_ids": [
         "68d948496d9f",
         "b5d9ad38717b",
-        "c0c992fea364"
+        "c0c992fea364",
+        "7d55f5b15bad",
+        "89449858a6ae"
       ],
       "created_at": "2026-06-04T12:12:51.917244+00:00",
       "last_escalated_size": 3,
@@ -2264,7 +2273,8 @@
     "73a0cf319e1e76f2": {
       "topic": "Longest-Running Broadway Musicals Tony Awards",
       "item_ids": [
-        "ddd8dad259d4"
+        "ddd8dad259d4",
+        "99e6c1b5d90a"
       ],
       "created_at": "2026-06-04T18:02:49.633161+00:00",
       "last_escalated_size": 0,
@@ -2476,7 +2486,277 @@
       "created_at": "2026-06-04T18:02:49.633161+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "bca8563e63f3679d": {
+      "topic": "Travis Barker Vans Old Skool Collaboration",
+      "item_ids": [
+        "54274daa31d0"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "91b528c3564ba3c3": {
+      "topic": "Jordan Brand Soccer Tournament Lower East Side",
+      "item_ids": [
+        "681601e188f9"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "adbf62788cfad2e1": {
+      "topic": "New Balance 990v4 Pumpernickel Suede Release",
+      "item_ids": [
+        "b1439e0ba163"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d46ed37eef2e8016": {
+      "topic": "XG 2026 World Tour Ticket Sales",
+      "item_ids": [
+        "11569f1ef014"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4ef34fc98ae675ea": {
+      "topic": "David Bisbal Operaci\u00f3n Triunfo US Debut Judge",
+      "item_ids": [
+        "ba83edd22e68"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4b2ebc89daf57512": {
+      "topic": "Jason Lee Hollywood Unlocked BET Impact Awards",
+      "item_ids": [
+        "82ac2a7e983b"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1c3e7eb3c8ac54ca": {
+      "topic": "Drake OVO Noel Original Tracklist Reveals",
+      "item_ids": [
+        "9ee71dcd9548"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "478b2a144bb6560d": {
+      "topic": "Billboard Japan 2026 Mid-Year Charts Rankings",
+      "item_ids": [
+        "a1416079706f"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1a9992275f9e7156": {
+      "topic": "Dateline Luigi Mangione Mystery Investigation",
+      "item_ids": [
+        "cae4d429e861"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "672ec65afc7879cb": {
+      "topic": "The Beatles Global Beatles Day All You Need Is Love",
+      "item_ids": [
+        "e586f9da5bd7"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "af0ecf9f700f9f33": {
+      "topic": "Mariel Hemingway Holy Whore Indie Feature",
+      "item_ids": [
+        "6bad3493042d"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9ff4f90c3714d5ae": {
+      "topic": "Claire Foy Savage House Richard E Grant SXSW London",
+      "item_ids": [
+        "6d8989024636"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "43371d25ba42088a": {
+      "topic": "Landman Cast Taylor Sheridan Interview",
+      "item_ids": [
+        "2eb24e4fc3dd"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "85a67c4da46e2de9": {
+      "topic": "Power Legacy Starz 50 Cent Joseph Sikora Series",
+      "item_ids": [
+        "96a38717f1e2"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e5d6afe3d2f36045": {
+      "topic": "Meta Data Centers Tent Construction Tesla Tactic",
+      "item_ids": [
+        "292be7eaabe4"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3d8165ff9107f2ef": {
+      "topic": "Apple Poke AI Agent Messages Business Platform",
+      "item_ids": [
+        "8b644a7e5ea0"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "29c1734553e4f52e": {
+      "topic": "Helion Sam Altman Microsoft Fusion Power Plant $465M",
+      "item_ids": [
+        "c0c0af892bbf"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7a7a0893bef230cf": {
+      "topic": "Mark Carney Canada AI Strategy Announcement",
+      "item_ids": [
+        "a0534c5fff7b"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dcc0d678e05a2b4b": {
+      "topic": "Waymo Theft Yoga Clothes San Francisco",
+      "item_ids": [
+        "5894d7f1206a"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1bbe80fc313ebb4f": {
+      "topic": "Elon Musk X FTC Data Handling Audits Appeal",
+      "item_ids": [
+        "d7de2f133086"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "84d38ca8f3a2a9f4": {
+      "topic": "Trump Pulte National Intelligence Director Departure",
+      "item_ids": [
+        "6db195abccc9"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e2692dbadb60eac1": {
+      "topic": "US Navy Ships Persian Gulf Hormuz Coordination",
+      "item_ids": [
+        "3a30fc9b0ca7"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e3225d53db592d37": {
+      "topic": "Lululemon Annual Outlook Cut Q2 Guidance Weak",
+      "item_ids": [
+        "d2e2329bcb6b"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0cde893400984ec7": {
+      "topic": "Oil Prices Fall Trump Iran War Reluctance",
+      "item_ids": [
+        "64e89439a439"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "490e684dbe63ef8b": {
+      "topic": "Bitcoin Worst Week Narrative Fade Liquidity Rotation",
+      "item_ids": [
+        "4b0c6d757c5a"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "06f7cb1c6b275853": {
+      "topic": "Instagram Plus iPhone New Features",
+      "item_ids": [
+        "5fbacc9259ea"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "414788c0bc9484af": {
+      "topic": "AJ Dybantsa Gilbert Arenas Utah City Comment",
+      "item_ids": [
+        "4a0fa141043a"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4deb7ee232e185aa": {
+      "topic": "Sacramento Kings NBA Mock Drafts Guard",
+      "item_ids": [
+        "71a918608af3"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ba85c22085b93e77": {
+      "topic": "US Small Business Hiring Plans Historic Low",
+      "item_ids": [
+        "8843949e1a95"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2024ce2cadbf6047": {
+      "topic": "BMW M2 xDrive 2026 MotoGP Winner Car",
+      "item_ids": [
+        "b5c8978a33e7"
+      ],
+      "created_at": "2026-06-04T20:19:18.194071+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-04T18:02:49.671336+00:00"
+  "last_checked": "2026-06-04T20:19:18.214612+00:00"
 }
