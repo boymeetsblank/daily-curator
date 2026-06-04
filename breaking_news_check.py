@@ -230,6 +230,25 @@ def escalate_to_sonnet(items: list[dict]) -> None:
     if not items:
         return
 
+    # Guard: skip items whose topics are already in today's feed
+    already_published = _todays_pick_titles()
+    if already_published:
+        filtered = []
+        for item in items:
+            topic_kw = {
+                w.lower() for w in re.findall(r"[a-zA-Z']+", item["topic"])
+                if len(w) > 3 and w.lower() not in _ESCALATION_STOP_WORDS
+            }
+            thr = 1 if len(topic_kw) <= 1 else 2
+            match = _topic_already_covered(item["topic"], already_published, threshold=thr)
+            if match:
+                print(f"   ⏭️  Skipping '{item['topic'][:60]}' — already in feed as: '{match[:60]}'")
+            else:
+                filtered.append(item)
+        items = filtered
+    if not items:
+        return
+
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         return
@@ -410,7 +429,10 @@ def _todays_pick_titles() -> list[str]:
     for path in _glob.glob(f"picks/picks-{today_str}-*.md"):
         with open(path, encoding="utf-8") as f:
             content = f.read()
-        titles += re.findall(r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n\[Read the full article", content)
+        titles += re.findall(
+            r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n(?:\[Read the full article|\*Trending)",
+            content
+        )
     return titles
 
 
@@ -525,7 +547,10 @@ Return JSON only: {{"update": "<1-2 sentence update>"}}"""
     if not is_update:
         # ── Guard: skip if main feed already has this story today ─────────────
         already_published = _todays_pick_titles()
-        match = _topic_already_covered(cluster["topic"], already_published)
+        topic_kw = {w.lower() for w in re.findall(r"[a-zA-Z']+", cluster["topic"])
+                    if len(w) > 3 and w.lower() not in _ESCALATION_STOP_WORDS}
+        thr = 1 if len(topic_kw) <= 1 else 2
+        match = _topic_already_covered(cluster["topic"], already_published, threshold=thr)
         if match:
             print(f"   ⏭️  Cluster '{cluster['topic'][:60]}' skipped — already in feed as: '{match[:60]}'")
             cluster["picks_file"] = "SUPPRESSED"  # prevent future re-escalation attempts

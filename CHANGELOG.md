@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-04] Fix: systemic cross-run dedup — X trending picks now visible to all dedup paths
+
+Three regex patterns in the dedup pipeline used `[Read the full article` to find published picks, which excluded X trending and Google Trends picks from daily curator runs (those use `*Trending on X right now*` with no link). As a result, "Knicks" published at 5:28 AM was invisible to every dedup guard, causing the 9:03 AM live run to re-escalate it as a new story. Fixed by broadening the regex in `_todays_pick_titles()` (breaking_news_check.py), `load_todays_published_titles()` (daily_curator.py), and `load_recently_covered_topics()` (daily_curator.py) to also match `*Trending` format picks. Added a guard in `escalate_to_sonnet()` (previously only cluster escalation had this check) with a lower threshold of 1 keyword for single-word trending topics like "Knicks". Strengthened `deduplicate_after_scoring()` prompt to explicitly cluster X trend topics with same-event articles within a run.
+
 ## [2026-06-03] Fix: Reddit subreddits switch from /hot to /top?t=day + upvote floor
 
 `fetch_subreddit_hot_posts()` now hits `/top.json?t=day` instead of `/hot.json`. Top-of-day ranking guarantees posts are from today, so the 48h age filter is removed entirely — upvotes is the only quality gate (200+ minimum). Hot was Reddit's decay algorithm that mixed old viral posts with new ones, causing many fresh posts to be filtered by the age cutoff before Claude ever saw them.

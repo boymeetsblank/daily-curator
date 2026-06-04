@@ -1993,7 +1993,8 @@ Your job:
    - Coverage from multiple outlets of the same announcement, release, or action
    - Follow-up details, cause-of-death reveals, or context pieces about the same event
    - Any article whose headline includes the same person's name AND the same general topic (e.g. "Pope Leo AI" articles are one story)
-2. Also flag any CURRENT article that covers the same underlying event as something ALREADY IN THE FEED TODAY. Group it with topic "ALREADY COVERED: <matching title>".
+   - An X trending topic (e.g. just "Knicks" or "Brunson") and any article about the same underlying event — they both exist because the same thing happened. Use the trend item's "why" field to identify what event triggered it, then match it to any article about that same event.
+2. Also flag any CURRENT article that covers the same underlying event as something ALREADY IN THE FEED TODAY. Group it with topic "ALREADY COVERED: <matching title>". A bare trending topic name like "Knicks" is the same story as any already-published title about the same event ("Knicks (X)", "[Post Game Thread] The New York Knicks...", etc.).
 3. Do NOT group articles that are merely in the same category (e.g. two unrelated sports stories). They must trace back to the same specific occurrence or news cycle.
 
 Return ONLY valid JSON in this exact format, with no other text:
@@ -2193,7 +2194,7 @@ def load_recently_covered_topics(days: int = 3) -> list[str]:
         with open(filepath, encoding="utf-8") as f:
             content = f.read()
         for title, why in re.findall(
-            r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n\[Read the full article"
+            r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n(?:\[Read the full article|\*Trending)"
             r".*?\n\n\*\*Why it (?:matters|scored high):\*\*\n(.*?)(?=\n\n\*\*Hook|\n\n\*\*Suggested|\n\n---|\Z)",
             content, re.DOTALL
         ):
@@ -2218,7 +2219,10 @@ def load_todays_published_titles() -> list[str]:
     for filepath in glob_module.glob(f"picks/picks-{today_str}-*.md"):
         with open(filepath, encoding="utf-8") as f:
             content = f.read()
-        for title in re.findall(r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n\[Read the full article", content):
+        for title in re.findall(
+            r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n(?:\[Read the full article|\*Trending)",
+            content
+        ):
             titles.append(title.strip())
     return titles
 
