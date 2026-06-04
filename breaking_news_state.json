@@ -1,29 +1,5 @@
 {
   "known_ids": [
-    "5240e2aa3212",
-    "a957ba874669",
-    "26e2da7e69be",
-    "b849a2ba67e7",
-    "e8de4dc4b578",
-    "436f6b669b8a",
-    "2c6d426c37c8",
-    "238a5d42093d",
-    "d80c89c5331c",
-    "8663be6c84ae",
-    "c5efcbe830a8",
-    "a0acb8af2f28",
-    "3f6a8460aa93",
-    "815911a3d88f",
-    "85b06d84fe2e",
-    "99d2c154cca3",
-    "1cdd91f198cc",
-    "27a35e96b4b9",
-    "59797cf79c92",
-    "21c103910f34",
-    "845fde5b481e",
-    "561ffbdaa556",
-    "a3976139c4ce",
-    "b89f8d315b61",
     "a60960759412",
     "cb08b9136bc7",
     "281fd8daedd1",
@@ -499,7 +475,31 @@
     "58f2b3b4f546",
     "4595ec715e5c",
     "0072d3061355",
-    "4bbf800c3d3b"
+    "4bbf800c3d3b",
+    "cb67cf48e4aa",
+    "85baa9c58ae1",
+    "cd6591d7005e",
+    "a1db4e7e46a5",
+    "9f6d6d0a3f8d",
+    "9dc66a1868d3",
+    "e2be14c4560e",
+    "03840b746ef7",
+    "4d8de7d9e556",
+    "4a49b76d96af",
+    "a40a03774576",
+    "b1374d4f6b44",
+    "a3972f56dc5c",
+    "bbd71bbe2abd",
+    "65ff5f98f992",
+    "87b1e96158a9",
+    "9c078e3f4a1f",
+    "719146a476ef",
+    "e1bbb3e883f4",
+    "24c43096cc5b",
+    "b33eaf091f40",
+    "89b948e89303",
+    "f1812a737a15",
+    "e39779be7e9e"
   ],
   "failed_ids": {
     "d07d5052cee3": "2026-06-04T18:01:50.427778+00:00",
@@ -530,345 +530,35 @@
     "01d734121316": "2026-06-04T18:01:50.427778+00:00",
     "b4a8da56f64f": "2026-06-04T18:01:50.427778+00:00",
     "0be6c3e60ed7": "2026-06-04T18:01:50.427778+00:00",
-    "55922209275f": "2026-06-04T18:01:50.427778+00:00"
+    "55922209275f": "2026-06-04T18:01:50.427778+00:00",
+    "3511a04734ec": "2026-06-04T21:56:12.414323+00:00",
+    "ae9673a78434": "2026-06-04T21:56:12.414323+00:00",
+    "95e840eab827": "2026-06-04T21:56:12.414323+00:00",
+    "9641f738e572": "2026-06-04T21:56:12.414323+00:00",
+    "26a875409bcb": "2026-06-04T21:56:12.414323+00:00",
+    "8be9adef49b5": "2026-06-04T21:56:12.414323+00:00",
+    "99dcf0b483e9": "2026-06-04T21:56:12.414323+00:00",
+    "5c644b32499c": "2026-06-04T21:56:12.414323+00:00",
+    "87f245147ca4": "2026-06-04T21:56:12.414323+00:00",
+    "f1501202b85c": "2026-06-04T21:56:12.414323+00:00",
+    "f2904ef27594": "2026-06-04T21:56:12.414323+00:00",
+    "a48e6eabae18": "2026-06-04T21:56:12.414323+00:00",
+    "1237e8fa3abf": "2026-06-04T21:56:12.414323+00:00",
+    "766e83ca02dc": "2026-06-04T21:56:12.414323+00:00",
+    "069f17c43915": "2026-06-04T21:56:12.414323+00:00",
+    "efee4d7db5d9": "2026-06-04T21:56:12.414323+00:00",
+    "63985e3bdc11": "2026-06-04T21:56:12.414323+00:00",
+    "0853bd1a5a62": "2026-06-04T21:56:12.414323+00:00",
+    "e4b06a35bea1": "2026-06-04T21:56:12.414323+00:00",
+    "e6eed0f3a67a": "2026-06-04T21:56:12.414323+00:00",
+    "694875b107db": "2026-06-04T21:56:12.414323+00:00",
+    "fd61101c501b": "2026-06-04T21:56:12.414323+00:00",
+    "00cad32cea0e": "2026-06-04T21:56:12.414323+00:00",
+    "5b0dd0bd207b": "2026-06-04T21:56:12.414323+00:00",
+    "2a2fdb6a0d8f": "2026-06-04T21:56:12.414323+00:00",
+    "eeb13fe55cc3": "2026-06-04T21:56:12.414323+00:00"
   },
   "live_clusters": {
-    "b4560647fdd16f5a": {
-      "topic": "June 2026 Air Jordan Retro Preview",
-      "item_ids": [
-        "821e6ada11c2"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b981caf66a4026f0": {
-      "topic": "Anthony Edwards Atlanta Vikings adidas Cleats",
-      "item_ids": [
-        "111b5d6d1084"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ff91b81939e652e2": {
-      "topic": "Nike Women's Basketball Growth Strategy",
-      "item_ids": [
-        "82f983d61fe2"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8e929c5c4b4f3efb": {
-      "topic": "AXS Indie Venue Support Partnerships",
-      "item_ids": [
-        "747bb30768a3"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3e0aba475ce9fdee": {
-      "topic": "FIFA World Cup 2026 Countdown Concert Lineups",
-      "item_ids": [
-        "c8fbaed79148"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4c725c888d9718f1": {
-      "topic": "Billboard Hot Latin Songs June 6 2026",
-      "item_ids": [
-        "1ee19823786f"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7e0a288550f906a2": {
-      "topic": "Shia LaBeouf Mardi Gras Battery Guilty Plea",
-      "item_ids": [
-        "3dc7b1eae4b3",
-        "9097efbf5730"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7def99d12b19d98c": {
-      "topic": "Jay-Z Rap Beef Distance Analysis",
-      "item_ids": [
-        "f6c024f18d79"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ef4d8bcd5359a2c3": {
-      "topic": "Hulu Suspect Drama Scott Turow Adaptation",
-      "item_ids": [
-        "bb0624022648"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ed3ee75ddfc569a2": {
-      "topic": "Critics Choice Real TV Awards 2026 Winners",
-      "item_ids": [
-        "4c6c3f126970"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cea11e7e8c5b83df": {
-      "topic": "NFL Aiyuk Warrant Speeding Incident",
-      "item_ids": [
-        "5b19c4c641b2"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "83832f29f946b2f7": {
-      "topic": "NFL Packers Parsons Injury Timeline",
-      "item_ids": [
-        "75d9e0bd82b6"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f7d1f91bbe8d2b73": {
-      "topic": "NFL Browns Verse Garrett Succession",
-      "item_ids": [
-        "7759390e07e4"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "037f845b9157f0cf": {
-      "topic": "NBA Rozier Release Conditions Negotiation",
-      "item_ids": [
-        "a3435e0e32fd"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "38db743c6fb32f45": {
-      "topic": "Uber Data Collection Vehicle Expansion",
-      "item_ids": [
-        "eee42c55e0e0"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c140c87c4d659d4": {
-      "topic": "Alphabet Google AI Business $85B Fundraise",
-      "item_ids": [
-        "ea4455262cfd",
-        "16f6c69e9def"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4df25c3dbbdbe59f": {
-      "topic": "Meta Spins Out Supernatural VR Fitness Game",
-      "item_ids": [
-        "82c9447f36f2"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0b97b66f762bbe94": {
-      "topic": "Substack Reply Rules Creator Control Feature",
-      "item_ids": [
-        "a23f0327aa66"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "757f9f1c1f5df861": {
-      "topic": "Google Dreambeans AI Life Cartoon Tool",
-      "item_ids": [
-        "51fe822e196e"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ad4725abe1e4d580": {
-      "topic": "Lego Batman Legacy Dark Knight Switch 2 Release",
-      "item_ids": [
-        "701a07191bdc"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c0e31b430d9cdac6": {
-      "topic": "British MP xAI Grok Image Legal Liability Lawsuit",
-      "item_ids": [
-        "fc993810b7cc"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d20d2bbd3b1038bd": {
-      "topic": "OpenAI Sam Altman Meets Trump Officials DC",
-      "item_ids": [
-        "abb9a9bb7d4c"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "43b4445e8912c55a": {
-      "topic": "Colorado Governor Vetoes Surveillance Pricing Ban",
-      "item_ids": [
-        "f49db7664f84"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "62945c9186199aff": {
-      "topic": "Lititz Retirement Community AI Fall Prevention",
-      "item_ids": [
-        "a60077887de0"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4928cec0ff02a512": {
-      "topic": "Jamshid Ghomi Iran Computer Technology Export Charges",
-      "item_ids": [
-        "9d7a13b3abc2"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c9518d4a2edc0cf1": {
-      "topic": "Pentagon AI Contested Logistics Technology",
-      "item_ids": [
-        "cad3f9c79a6e"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9795a561a927b4e4": {
-      "topic": "Marshall Health Network Spatial Arthroscopy Visualization",
-      "item_ids": [
-        "68f241fb9fbc"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4113f6c64123fb65": {
-      "topic": "Japan Edgy Workwear Artisan Grunge Aesthetic",
-      "item_ids": [
-        "8d8e596fb22a"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "406e8d7398ec3304": {
-      "topic": "Hodinkee Watch Spotting May 2026",
-      "item_ids": [
-        "a61c38856b5a"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "43f40c1aefd85a7a": {
-      "topic": "Microsoft In-House AI Models OpenAI Alternative",
-      "item_ids": [
-        "6e765db4f2b2"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "477663c02896a694": {
-      "topic": "Maine Mall Hotels Local Business Concerns",
-      "item_ids": [
-        "54491b397c60"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "508826ee8cc6c99c": {
-      "topic": "Grand Rapids Zoning Code Housing Overhaul",
-      "item_ids": [
-        "263c4625b233"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9531b0bf75c6c483": {
-      "topic": "Spurs Merchandise Break-In NBA Finals Excitement",
-      "item_ids": [
-        "b2d759171ee3"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1518c2a8cb9aadc5": {
-      "topic": "Retirement Savings Planning Relevance Debate",
-      "item_ids": [
-        "8b40d92b5b01"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e40ad8f9ab8992fe": {
-      "topic": "Silverthorne Finance Director Appointment",
-      "item_ids": [
-        "38849b944e86"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2bfc70ba673e1c16": {
-      "topic": "Yahoo AI Finance Sports Experiences Launch",
-      "item_ids": [
-        "02661c5e7cfc",
-        "c91a111f9015"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "076df6440109c3aa": {
-      "topic": "SAWS San Antonio Chief Financial Officer Appointment",
-      "item_ids": [
-        "e7b4c47fcf7f"
-      ],
-      "created_at": "2026-06-03T20:27:57.076200+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "c8360de9dcf0b785": {
       "topic": "Shake James adidas Forum Low What The Milwaukee Release",
       "item_ids": [
@@ -1028,7 +718,8 @@
       "item_ids": [
         "68d6bd6ae93d",
         "dd1671a03307",
-        "61af557f28f0"
+        "61af557f28f0",
+        "03840b746ef7"
       ],
       "created_at": "2026-06-03T22:38:17.600092+00:00",
       "last_escalated_size": 3,
@@ -1921,7 +1612,9 @@
         "7df03c1c276a",
         "b292de973766",
         "1cd664d9d7b7",
-        "6e1964b710ef"
+        "6e1964b710ef",
+        "a3972f56dc5c",
+        "bbd71bbe2abd"
       ],
       "created_at": "2026-06-04T12:12:51.917244+00:00",
       "last_escalated_size": 12,
@@ -2382,7 +2075,8 @@
     "97b1336f05dfd31e": {
       "topic": "Meta Smart Glasses Face-Recognition Code Detection",
       "item_ids": [
-        "425fc226e514"
+        "425fc226e514",
+        "a40a03774576"
       ],
       "created_at": "2026-06-04T18:02:49.633161+00:00",
       "last_escalated_size": 0,
@@ -2688,7 +2382,8 @@
     "e3225d53db592d37": {
       "topic": "Lululemon Annual Outlook Cut Q2 Guidance Weak",
       "item_ids": [
-        "d2e2329bcb6b"
+        "d2e2329bcb6b",
+        "e1bbb3e883f4"
       ],
       "created_at": "2026-06-04T20:19:18.194071+00:00",
       "last_escalated_size": 0,
@@ -2715,7 +2410,8 @@
     "06f7cb1c6b275853": {
       "topic": "Instagram Plus iPhone New Features",
       "item_ids": [
-        "5fbacc9259ea"
+        "5fbacc9259ea",
+        "4a49b76d96af"
       ],
       "created_at": "2026-06-04T20:19:18.194071+00:00",
       "last_escalated_size": 0,
@@ -2756,7 +2452,124 @@
       "created_at": "2026-06-04T20:19:18.194071+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "e31d94bdfe91cfb2": {
+      "topic": "Bape adidas Adizero EVO SL Mismatched Sneaker Release",
+      "item_ids": [
+        "cb67cf48e4aa"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fed932eb7aca2867": {
+      "topic": "Nike Kobe 5 Protro NY vs. NY NYC Courts Release",
+      "item_ids": [
+        "85baa9c58ae1"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b0bc4fa86c756132": {
+      "topic": "atmos adidas Handball Spezial Distressed Denim Release",
+      "item_ids": [
+        "cd6591d7005e"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e963868156e531a6": {
+      "topic": "Jalen Brunson Music Legend Concert Price Comment",
+      "item_ids": [
+        "a1db4e7e46a5"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "24a9693c3c049dbc": {
+      "topic": "Jim Jones Jay-Z Roots Picnic Yankee Stadium Freestyle",
+      "item_ids": [
+        "9f6d6d0a3f8d"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6fa969cf1b154583": {
+      "topic": "Stop! That! Train! Director AI Usage Claims Denial",
+      "item_ids": [
+        "9dc66a1868d3"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "487b72bc3dfae83a": {
+      "topic": "Branden Jacobs-Jenkins Purpose Broadway Recoupment $5.25M",
+      "item_ids": [
+        "e2be14c4560e"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a5c76048c988c215": {
+      "topic": "Filtr Privacy Tool Ad Blocking iPhone Mac",
+      "item_ids": [
+        "4d8de7d9e556"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cebdd96ff8256d13": {
+      "topic": "Honeywell Quantum Company IPO Launch",
+      "item_ids": [
+        "b1374d4f6b44"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ccfe67c019c9fbf9": {
+      "topic": "2026 NBA Mock Draft Jaylen Brown Trade Scenario",
+      "item_ids": [
+        "65ff5f98f992"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bd05d73d3967841d": {
+      "topic": "2026 NBA Mock Draft AI First-Round Predictions",
+      "item_ids": [
+        "87b1e96158a9"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f604251b2f6ab96f": {
+      "topic": "NBA Winning Strategy Three-Point Shooting Analysis",
+      "item_ids": [
+        "9c078e3f4a1f"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1e83f6968fb61696": {
+      "topic": "Stock Market Record Dow Healthcare Financial Gains",
+      "item_ids": [
+        "719146a476ef"
+      ],
+      "created_at": "2026-06-04T21:56:56.429228+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-04T20:19:18.214612+00:00"
+  "last_checked": "2026-06-04T21:56:56.430472+00:00"
 }
