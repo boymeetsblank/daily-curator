@@ -1,28 +1,5 @@
 {
   "known_ids": [
-    "774f63fcc1fb",
-    "ca0fe7194745",
-    "447dd9071c3a",
-    "66d4cbf0a25c",
-    "abafee41179a",
-    "e471778f8995",
-    "e32b944a63d6",
-    "92d306d30afa",
-    "cf70ce9f07ed",
-    "2a1129af1f97",
-    "1835b966058f",
-    "cd68ff92dac7",
-    "e6c25115d4b2",
-    "699ac5910888",
-    "f918594697d5",
-    "b713de34622f",
-    "1956974c83b0",
-    "080ea69f5aac",
-    "7b09e07e184a",
-    "d9fcd58d6308",
-    "c108906d30f1",
-    "e253ba272c64",
-    "bb852cdcf16e",
     "17c9df86fdf8",
     "ee34c3a31f7a",
     "0729f5923b2d",
@@ -499,7 +476,30 @@
     "8ebc781a23d4",
     "28076f4e8785",
     "74bcc10772fa",
-    "b4446b0ddc19"
+    "b4446b0ddc19",
+    "4e64a0ba7f5c",
+    "f740636e2cfd",
+    "909e01c3bff6",
+    "dc64458f163a",
+    "bdc5a13c13fa",
+    "344a0fadf686",
+    "94f09f6ee0a9",
+    "2c6a4d5e3b21",
+    "4037f976c367",
+    "66bcc44e2650",
+    "f67771335c50",
+    "16a6dd824d5d",
+    "2570c56e48c0",
+    "5abfd90353cb",
+    "7845eb8010d7",
+    "05b4dd4579c7",
+    "dd51e15cdcd4",
+    "54950a6426ec",
+    "ba89f6108e68",
+    "77f5f11d62a3",
+    "2d956e8b3fcc",
+    "c3d01886fb4f",
+    "1f0642b0a3ca"
   ],
   "failed_ids": {
     "f3ef5af5b91c": "2026-06-04T05:13:25.814941+00:00",
@@ -522,81 +522,17 @@
     "72b74379368f": "2026-06-04T05:13:25.814941+00:00",
     "52ea584d6ccb": "2026-06-04T05:13:25.814941+00:00",
     "a874f23e44e9": "2026-06-04T05:13:25.814941+00:00",
-    "c5f5d8458a3d": "2026-06-04T05:13:25.814941+00:00"
+    "c5f5d8458a3d": "2026-06-04T05:13:25.814941+00:00",
+    "c3ccff35e5a0": "2026-06-04T09:02:48.727763+00:00",
+    "779fc76c6d6f": "2026-06-04T09:02:48.727763+00:00",
+    "47b93d183e8d": "2026-06-04T09:02:48.727763+00:00",
+    "e27ef4e849ea": "2026-06-04T09:02:48.727763+00:00",
+    "70e698008658": "2026-06-04T09:02:48.727763+00:00",
+    "ac19331df8b8": "2026-06-04T09:02:48.727763+00:00",
+    "9e347b66ea14": "2026-06-04T09:02:48.727763+00:00",
+    "303a7dd598b4": "2026-06-04T09:02:48.727763+00:00"
   },
   "live_clusters": {
-    "33bcd9a293d7df4d": {
-      "topic": "Michael Stipe Andrew Watt I Played the Fool Kimmel Performance",
-      "item_ids": [
-        "d8fdbc59fcf8"
-      ],
-      "created_at": "2026-06-03T07:04:00.124840+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6f11bd73530339ef": {
-      "topic": "Poland Schools Phone Smartwatch Ban Policy",
-      "item_ids": [
-        "aa098ce2df47"
-      ],
-      "created_at": "2026-06-03T07:04:00.124840+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c5549e96785db5a1": {
-      "topic": "Perplexity CEO AI Race Competition Metric Analysis",
-      "item_ids": [
-        "5b08ad55a839"
-      ],
-      "created_at": "2026-06-03T07:04:00.124840+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a72a0216a8b968aa": {
-      "topic": "Quobly Silicon Spin Qubit Technology Funding 150M",
-      "item_ids": [
-        "b709a5f5a266"
-      ],
-      "created_at": "2026-06-03T07:04:00.124840+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "16cd42bf22c7ec88": {
-      "topic": "Vince Carter Toronto Raptors Tribute Post Reaction",
-      "item_ids": [
-        "ee7c8c2df4db"
-      ],
-      "created_at": "2026-06-03T07:04:00.124840+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a094d30aac17ef01": {
-      "topic": "AI Agent Guardrails Business Implementation Requirements",
-      "item_ids": [
-        "e96ceb62eca4"
-      ],
-      "created_at": "2026-06-03T07:04:00.124840+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "60c5dde2aa8bc819": {
-      "topic": "Dubai Apparel Group India Business IPO Exploration",
-      "item_ids": [
-        "effa732c2c7a"
-      ],
-      "created_at": "2026-06-03T07:04:00.124840+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "378dbf30e38b526d": {
-      "topic": "BYD Self-Developed Autonomous Driving Chip Reveal",
-      "item_ids": [
-        "9d21dac16777"
-      ],
-      "created_at": "2026-06-03T07:04:00.124840+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "b09b0e14c458ff90": {
       "topic": "Birkenstock Melbourne Flagship Repair Workshop",
       "item_ids": [
@@ -805,7 +741,9 @@
         "68f65532a8c5",
         "da9cba9ca8c7",
         "c5f1d3b9ad47",
-        "8ebc781a23d4"
+        "8ebc781a23d4",
+        "16a6dd824d5d",
+        "2570c56e48c0"
       ],
       "created_at": "2026-06-03T12:04:58.721533+00:00",
       "last_escalated_size": 24,
@@ -1747,7 +1685,8 @@
     "39966be13a1681b7": {
       "topic": "Wim Wenders Withdraws Wrong Move Nastassja Kinski",
       "item_ids": [
-        "8ec7f8d567f4"
+        "8ec7f8d567f4",
+        "f740636e2cfd"
       ],
       "created_at": "2026-06-03T22:38:17.600092+00:00",
       "last_escalated_size": 0,
@@ -2044,11 +1983,20 @@
     "90833a6e96b100dd": {
       "topic": "BMW iX5 M Blue Calipers M Intakes Spy Photos",
       "item_ids": [
-        "d688cc2328bb"
+        "d688cc2328bb",
+        "dd51e15cdcd4",
+        "54950a6426ec"
       ],
       "created_at": "2026-06-03T22:38:17.600092+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-04T09:02:48.727763+00:00",
+      "picks_file": "picks/picks-2026-06-04-0903.md",
+      "why_text": "The iX5 M represents BMW's most aggressive bet yet that performance EV buyers don't have to choose between zero emissions and M Division brutality \u2014 blue brake calipers and M-spec intakes on a full-size electric SUV is a statement of intent. This matters because it arrives as Mercedes-AMG and Audi RS performance are both pushing hard into electrified territory, and BMW needs to prove the M badge still means something when there's no combustion note to hide behind. Spy photos this detailed, this early, signal BMW is comfortable letting the hype build.",
+      "last_escalated_item_ids": [
+        "d688cc2328bb",
+        "dd51e15cdcd4",
+        "54950a6426ec"
+      ]
     },
     "645d0612a02aedb2": {
       "topic": "BMW iX5 M Performance Gas X5 M Comparison",
@@ -2391,7 +2339,133 @@
       "created_at": "2026-06-04T05:14:04.242265+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f610010f740286a2": {
+      "topic": "Marjane Satrapi Director Death Obituary",
+      "item_ids": [
+        "4e64a0ba7f5c"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "92e7bfab3276585d": {
+      "topic": "Saturday Night Live UK Sky Digital Format",
+      "item_ids": [
+        "909e01c3bff6"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "785162ddb47604b9": {
+      "topic": "Google Wallet ID EU Rollout Summer",
+      "item_ids": [
+        "dc64458f163a"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "335f95bb87a640db": {
+      "topic": "Google Gemini Ask Feature Gmail Integration",
+      "item_ids": [
+        "bdc5a13c13fa"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2acf219dfd1f7519": {
+      "topic": "Noble Audio FoKus Artemis Headphones Release",
+      "item_ids": [
+        "344a0fadf686"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ea826cb21c4b2eb3": {
+      "topic": "Partners Group Private Equity Fund Withdrawal Restrictions",
+      "item_ids": [
+        "94f09f6ee0a9"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b7ea3a1efdac7c76": {
+      "topic": "Philips WellSpan Health AI Innovation Partnership",
+      "item_ids": [
+        "2c6a4d5e3b21"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7fe9aab93ef04d29": {
+      "topic": "New York Schools Technology Limitation Push",
+      "item_ids": [
+        "4037f976c367"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f9fcd4c58e3065d9": {
+      "topic": "CISA Cyber Threat Hunting Services Contract",
+      "item_ids": [
+        "66bcc44e2650"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eea6e78ad41dc2e2": {
+      "topic": "Bob Costas 76ers Legend Respect Discussion",
+      "item_ids": [
+        "f67771335c50"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0704c0d9db4ad572": {
+      "topic": "Heritage Imaging Private Equity Acquisition",
+      "item_ids": [
+        "5abfd90353cb"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f6bd3bde77ceabf1": {
+      "topic": "OneStream Snowflake Connector Finance AI Analytics",
+      "item_ids": [
+        "7845eb8010d7"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2b49ecfb8be0f082": {
+      "topic": "BMW X5 M Rendering Design Preview",
+      "item_ids": [
+        "05b4dd4579c7"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5e4b571d255a7e18": {
+      "topic": "BMW M2 All-Wheel Drive Audi RS3 Competition",
+      "item_ids": [
+        "ba89f6108e68"
+      ],
+      "created_at": "2026-06-04T09:03:30.181445+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-04T05:14:08.787549+00:00"
+  "last_checked": "2026-06-04T09:03:53.440658+00:00"
 }
