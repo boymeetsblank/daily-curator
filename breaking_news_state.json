@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "a23f0327aa66",
-    "51fe822e196e",
-    "701a07191bdc",
-    "fc993810b7cc",
-    "40f7149bc807",
-    "47650a37646f",
-    "abb9a9bb7d4c",
-    "98a496ab1c57",
-    "f49db7664f84",
-    "a60077887de0",
-    "9d7a13b3abc2",
-    "cad3f9c79a6e",
-    "68f241fb9fbc",
     "8d8e596fb22a",
     "a61c38856b5a",
     "657563a0e5c4",
@@ -499,7 +486,20 @@
     "64ab90dfca42",
     "a8a09008c930",
     "1f24915bd011",
-    "6553ae2a829a"
+    "6553ae2a829a",
+    "e0345cae401d",
+    "aaaeb56d3518",
+    "b97d88fac120",
+    "d82fd193105b",
+    "72fdac0d5e45",
+    "4ac9c37e639d",
+    "016eb77f1ed4",
+    "31a9c9f16aa3",
+    "a593e3c53acb",
+    "0f61fe2215cf",
+    "3c2305ff62ff",
+    "2c6d426c37c8",
+    "77a22ba538eb"
   ],
   "failed_ids": {
     "e152de049763": "2026-06-05T04:52:34.321748+00:00",
@@ -517,72 +517,25 @@
     "f3f13bb700aa": "2026-06-05T04:52:34.321748+00:00",
     "61e08b5da30b": "2026-06-05T04:52:34.321748+00:00",
     "99ad9882a707": "2026-06-05T04:52:34.321748+00:00",
-    "1eaa3b38b4e3": "2026-06-05T04:52:34.321748+00:00"
+    "1eaa3b38b4e3": "2026-06-05T04:52:34.321748+00:00",
+    "ef1b3065096a": "2026-06-05T08:38:40.023363+00:00",
+    "75ee09ca55eb": "2026-06-05T08:38:40.023363+00:00",
+    "503794ec84a4": "2026-06-05T08:38:40.023363+00:00",
+    "007e308db8b0": "2026-06-05T08:38:40.023363+00:00",
+    "ff70db9ec57d": "2026-06-05T08:38:40.023363+00:00",
+    "041f0142c185": "2026-06-05T08:38:40.023363+00:00",
+    "15936b9a7c26": "2026-06-05T08:38:40.023363+00:00",
+    "281c24ca27a0": "2026-06-05T08:38:40.023363+00:00",
+    "dd86dd4cb3fa": "2026-06-05T08:38:40.023363+00:00",
+    "a423eeda0da4": "2026-06-05T08:38:40.023363+00:00",
+    "7d86bb940e35": "2026-06-05T08:38:40.023363+00:00",
+    "ab343a4f5909": "2026-06-05T08:38:40.023363+00:00",
+    "acc552397795": "2026-06-05T08:38:40.023363+00:00",
+    "eced6efc3891": "2026-06-05T08:38:40.023363+00:00",
+    "eec9884b9501": "2026-06-05T08:38:40.023363+00:00",
+    "93183e465203": "2026-06-05T08:38:40.023363+00:00"
   },
   "live_clusters": {
-    "79f123852d5d17ee": {
-      "topic": "Ronnie Fieg Kith x Nike Air Max 95 Knicks Release",
-      "item_ids": [
-        "d7190e60e6da"
-      ],
-      "created_at": "2026-06-04T05:14:04.242265+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e9b8af4720fd214b": {
-      "topic": "Billboard Expands Asia Operations India Launch",
-      "item_ids": [
-        "d7f4a041f188"
-      ],
-      "created_at": "2026-06-04T05:14:04.242265+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1a1b9135fd6cf1be": {
-      "topic": "Questlove Earth Wind Fire Tribeca Festival 25th Anniversary",
-      "item_ids": [
-        "caef80a987ba"
-      ],
-      "created_at": "2026-06-04T05:14:04.242265+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ea0bf58d083111d7": {
-      "topic": "Channel 4 Dunblane Tapes International Distribution",
-      "item_ids": [
-        "76e822c63eb8"
-      ],
-      "created_at": "2026-06-04T05:14:04.242265+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "948797c1d1f57d86": {
-      "topic": "Benchmark First Growth Fund $2B Capital Raise",
-      "item_ids": [
-        "788f5071a2fb"
-      ],
-      "created_at": "2026-06-04T05:14:04.242265+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cbae409844cba03f": {
-      "topic": "SoftBank OpenAI Investment Liquidity Debt Concerns",
-      "item_ids": [
-        "7fa28bac1fd7"
-      ],
-      "created_at": "2026-06-04T05:14:04.242265+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "20d1862feb31ab04": {
-      "topic": "SoftBank Stock Decline Tech Sell-Off",
-      "item_ids": [
-        "2378e42d2646"
-      ],
-      "created_at": "2026-06-04T05:14:04.242265+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "f610010f740286a2": {
       "topic": "Marjane Satrapi Director Death Obituary",
       "item_ids": [
@@ -2292,7 +2245,8 @@
     "8105b3d3ca1bff1c": {
       "topic": "Tinashe New Album Release",
       "item_ids": [
-        "9c70eb6f00de"
+        "9c70eb6f00de",
+        "d82fd193105b"
       ],
       "created_at": "2026-06-05T04:53:12.474259+00:00",
       "last_escalated_size": 0,
@@ -2301,7 +2255,8 @@
     "d9fb68b75afe0724": {
       "topic": "Steve Lacy The Feeling Music Video",
       "item_ids": [
-        "5dcf95e15afe"
+        "5dcf95e15afe",
+        "b97d88fac120"
       ],
       "created_at": "2026-06-05T04:53:12.474259+00:00",
       "last_escalated_size": 0,
@@ -2369,7 +2324,61 @@
       "created_at": "2026-06-05T04:53:12.474259+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "2bdd1995c571ff57": {
+      "topic": "Mizuno Morelia LS OG '90s Football Sneaker Release",
+      "item_ids": [
+        "e0345cae401d"
+      ],
+      "created_at": "2026-06-05T08:39:22.863479+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "85649a35cfe1d380": {
+      "topic": "Boards of Canada Inferno ARIA Chart Single",
+      "item_ids": [
+        "aaaeb56d3518"
+      ],
+      "created_at": "2026-06-05T08:39:22.863479+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "656140ac749b58c9": {
+      "topic": "Shaboozey Cowgirl Music Video Summer House Ciara Miller",
+      "item_ids": [
+        "72fdac0d5e45"
+      ],
+      "created_at": "2026-06-05T08:39:22.863479+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dde90a66376f7403": {
+      "topic": "BBC Studios Karl Warner Global Formats L.A. Role",
+      "item_ids": [
+        "4ac9c37e639d"
+      ],
+      "created_at": "2026-06-05T08:39:22.863479+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5d9ceee88ccb78a8": {
+      "topic": "Damai Entertainment Dear You International Release $223M Film",
+      "item_ids": [
+        "016eb77f1ed4"
+      ],
+      "created_at": "2026-06-05T08:39:22.863479+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "62c65c70d132a3d9": {
+      "topic": "Audi Nuvolari 1001-Horsepower Formula 1 Supercar",
+      "item_ids": [
+        "31a9c9f16aa3"
+      ],
+      "created_at": "2026-06-05T08:39:22.863479+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-05T04:53:16.781663+00:00"
+  "last_checked": "2026-06-05T08:39:22.864670+00:00"
 }
