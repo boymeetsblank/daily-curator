@@ -1,50 +1,5 @@
 {
   "known_ids": [
-    "8d8e596fb22a",
-    "a61c38856b5a",
-    "657563a0e5c4",
-    "11b4c04ba92f",
-    "9d07cee427bf",
-    "5c106c7aec18",
-    "7e92fe812af7",
-    "6e765db4f2b2",
-    "54491b397c60",
-    "263c4625b233",
-    "8789c63ef742",
-    "16f6c69e9def",
-    "b2d759171ee3",
-    "8b40d92b5b01",
-    "38849b944e86",
-    "02661c5e7cfc",
-    "e7b4c47fcf7f",
-    "782d90520084",
-    "dd28ce9ae1e8",
-    "87cf1adc229b",
-    "96776b495df8",
-    "b0c7b76b020e",
-    "68f6d5bd5ce7",
-    "496355100a2d",
-    "3a069ae299ef",
-    "147fedb023ba",
-    "48ed1c8bf984",
-    "bedf9ef829ea",
-    "90de093d3da1",
-    "769f52341a46",
-    "b20011db79dd",
-    "8ec7f8d567f4",
-    "8ddcc2caaa5f",
-    "5eaf1c285642",
-    "75e6af853236",
-    "040e6f1d206c",
-    "87c93c7c790f",
-    "00e708ee337c",
-    "16706f2cdec4",
-    "0f49b388797e",
-    "27627174a59c",
-    "94ce4c0b0593",
-    "e3a6094cfc08",
-    "84b24bfc8376",
-    "a9845474066a",
     "68d6bd6ae93d",
     "6f84693c8c32",
     "7c2cdc754dea",
@@ -499,25 +454,54 @@
     "0f61fe2215cf",
     "3c2305ff62ff",
     "2c6d426c37c8",
-    "77a22ba538eb"
+    "77a22ba538eb",
+    "d48770c66c80",
+    "1901c72b6395",
+    "512c7693c811",
+    "a6824ef5029d",
+    "abb5de51639d",
+    "6155a85c919f",
+    "3814fde35490",
+    "c849161b8ad3",
+    "8c9ba4c83146",
+    "d05e91ddccea",
+    "dc24c72f8649",
+    "36f87a813076",
+    "37acbc9f0e3f",
+    "d411d01284c1",
+    "93495ef7931b",
+    "d20a700b0979",
+    "897583a80ab1",
+    "e5f8deaf4f9a",
+    "2b6316e234c5",
+    "3b3c56c5ae5c",
+    "f2c6ec8d74df",
+    "22e2bf5273be",
+    "c891cd6e2669",
+    "8dc742207d34",
+    "021b5c4c3a8c",
+    "cc27a2d13f81",
+    "b561d8c2b905",
+    "5bf5d172e501",
+    "46695af603ec",
+    "130b21cacd48",
+    "e103345e12f9",
+    "05993f0a7e4a",
+    "716164474ee9",
+    "74b91af08d39",
+    "1282d488e87c",
+    "68923c331211",
+    "b26a4cd1bbb5",
+    "ce30bec92ec8",
+    "7cf4d1f68e7e",
+    "d33094adcefa",
+    "9035c43b74bf",
+    "b14c00526c43",
+    "09c21e235a32",
+    "77c227ae3187",
+    "d71ab846750f"
   ],
   "failed_ids": {
-    "e152de049763": "2026-06-05T04:52:34.321748+00:00",
-    "c7615dfce97e": "2026-06-05T04:52:34.321748+00:00",
-    "57695ecd3a42": "2026-06-05T04:52:34.321748+00:00",
-    "86379708f7f8": "2026-06-05T04:52:34.321748+00:00",
-    "15ef19083347": "2026-06-05T04:52:34.321748+00:00",
-    "ee4c3e2b19e7": "2026-06-05T04:52:34.321748+00:00",
-    "fdc462120a70": "2026-06-05T04:52:34.321748+00:00",
-    "e9339a4b66e8": "2026-06-05T04:52:34.321748+00:00",
-    "d30148ba08fe": "2026-06-05T04:52:34.321748+00:00",
-    "eafa5f11cb83": "2026-06-05T04:52:34.321748+00:00",
-    "db7bba2fe0e7": "2026-06-05T04:52:34.321748+00:00",
-    "31b071b236a8": "2026-06-05T04:52:34.321748+00:00",
-    "f3f13bb700aa": "2026-06-05T04:52:34.321748+00:00",
-    "61e08b5da30b": "2026-06-05T04:52:34.321748+00:00",
-    "99ad9882a707": "2026-06-05T04:52:34.321748+00:00",
-    "1eaa3b38b4e3": "2026-06-05T04:52:34.321748+00:00",
     "ef1b3065096a": "2026-06-05T08:38:40.023363+00:00",
     "75ee09ca55eb": "2026-06-05T08:38:40.023363+00:00",
     "503794ec84a4": "2026-06-05T08:38:40.023363+00:00",
@@ -536,133 +520,6 @@
     "93183e465203": "2026-06-05T08:38:40.023363+00:00"
   },
   "live_clusters": {
-    "f610010f740286a2": {
-      "topic": "Marjane Satrapi Director Death Obituary",
-      "item_ids": [
-        "4e64a0ba7f5c",
-        "4d564a6241cc"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "92e7bfab3276585d": {
-      "topic": "Saturday Night Live UK Sky Digital Format",
-      "item_ids": [
-        "909e01c3bff6"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "785162ddb47604b9": {
-      "topic": "Google Wallet ID EU Rollout Summer",
-      "item_ids": [
-        "dc64458f163a"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "335f95bb87a640db": {
-      "topic": "Google Gemini Ask Feature Gmail Integration",
-      "item_ids": [
-        "bdc5a13c13fa"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2acf219dfd1f7519": {
-      "topic": "Noble Audio FoKus Artemis Headphones Release",
-      "item_ids": [
-        "344a0fadf686"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ea826cb21c4b2eb3": {
-      "topic": "Partners Group Private Equity Fund Withdrawal Restrictions",
-      "item_ids": [
-        "94f09f6ee0a9"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b7ea3a1efdac7c76": {
-      "topic": "Philips WellSpan Health AI Innovation Partnership",
-      "item_ids": [
-        "2c6a4d5e3b21"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7fe9aab93ef04d29": {
-      "topic": "New York Schools Technology Limitation Push",
-      "item_ids": [
-        "4037f976c367"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f9fcd4c58e3065d9": {
-      "topic": "CISA Cyber Threat Hunting Services Contract",
-      "item_ids": [
-        "66bcc44e2650"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eea6e78ad41dc2e2": {
-      "topic": "Bob Costas 76ers Legend Respect Discussion",
-      "item_ids": [
-        "f67771335c50"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0704c0d9db4ad572": {
-      "topic": "Heritage Imaging Private Equity Acquisition",
-      "item_ids": [
-        "5abfd90353cb"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f6bd3bde77ceabf1": {
-      "topic": "OneStream Snowflake Connector Finance AI Analytics",
-      "item_ids": [
-        "7845eb8010d7"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2b49ecfb8be0f082": {
-      "topic": "BMW X5 M Rendering Design Preview",
-      "item_ids": [
-        "05b4dd4579c7"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5e4b571d255a7e18": {
-      "topic": "BMW M2 All-Wheel Drive Audi RS3 Competition",
-      "item_ids": [
-        "ba89f6108e68"
-      ],
-      "created_at": "2026-06-04T09:03:30.181445+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "ae9a97e17fde8ff7": {
       "topic": "The Vampire Lestat AMC Series Review Coverage",
       "item_ids": [
@@ -784,11 +641,19 @@
       "topic": "SpaceX IPO Market Trading Interest",
       "item_ids": [
         "91d0432d140f",
-        "3c4b7fe11d16"
+        "3c4b7fe11d16",
+        "1282d488e87c"
       ],
       "created_at": "2026-06-04T12:12:51.917244+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-05T11:48:10.253250+00:00",
+      "picks_file": "picks/picks-2026-06-05-1148.md",
+      "why_text": "A potential SpaceX IPO is being treated as a generational wealth event \u2014 the kind that reshapes client portfolios, advisor relationships, and the broader private-to-public market narrative in one move. Elon Musk has kept SpaceX private longer than almost any major tech company in history, which means the pent-up demand is enormous and the advisor class is already positioning to capture the fees. This is less a stock story than a cultural moment: the commercialization of space finally hitting Main Street finance.",
+      "last_escalated_item_ids": [
+        "91d0432d140f",
+        "3c4b7fe11d16",
+        "1282d488e87c"
+      ]
     },
     "b666e33c81c99339": {
       "topic": "Bluesky Social Platform Reddit Feature Strategy",
@@ -898,11 +763,14 @@
         "c298c7a5d8fb",
         "3de85f747b23",
         "64ab90dfca42",
-        "a8a09008c930"
+        "a8a09008c930",
+        "8dc742207d34",
+        "021b5c4c3a8c",
+        "cc27a2d13f81"
       ],
       "created_at": "2026-06-04T12:12:51.917244+00:00",
-      "last_escalated_size": 34,
-      "last_escalated_at": "2026-06-05T04:52:34.321748+00:00",
+      "last_escalated_size": 37,
+      "last_escalated_at": "2026-06-05T11:48:10.253250+00:00",
       "picks_file": "picks/picks-2026-06-05-0020.md",
       "last_escalated_item_ids": [
         "3cadd49cb05f",
@@ -938,9 +806,12 @@
         "c298c7a5d8fb",
         "3de85f747b23",
         "64ab90dfca42",
-        "a8a09008c930"
+        "a8a09008c930",
+        "8dc742207d34",
+        "021b5c4c3a8c",
+        "cc27a2d13f81"
       ],
-      "why_text": "The NBA Finals are back in New York for the first time in 27 years, and the city is losing its mind \u2014 but the circus has already started off the court: fans are getting lifetime bans over a vulgar interaction with Jalen Brunson, Trump is showing up to Game 3 at MSG, and ESPN is under fire for using AI imagery during broadcasts. This isn't just a basketball series, it's a full cultural collision between New York's long-starved sports hunger, MAGA spectacle, and the media's identity crisis in the AI era.\n**Update 11:53 PM CT:** The fan drama is escalating: the viral Spurs supporters who went face-to-face with Knicks faithful are now refusing to attend Game 2 after claiming they were harassed and mistreated at the Garden, while Coleman Crow \u2014 the Spurs' beloved bat mascot who became an unlikely series icon after appearing during Game 1 \u2014 is trending again as San Antonio fans lean into the omen ahead of tonight's tip-off."
+      "why_text": "The NBA Finals are back in New York for the first time in 27 years, and the city is losing its mind \u2014 but the circus has already started off the court: fans are getting lifetime bans over a vulgar interaction with Jalen Brunson, Trump is showing up to Game 3 at MSG, and ESPN is under fire for using AI imagery during broadcasts. This isn't just a basketball series, it's a full cultural collision between New York's long-starved sports hunger, MAGA spectacle, and the media's identity crisis in the AI era.\n**Update 11:53 PM CT:** The fan drama is escalating: the viral Spurs supporters who went face-to-face with Knicks faithful are now refusing to attend Game 2 after claiming they were harassed and mistreated at the Garden, while Coleman Crow \u2014 the Spurs' beloved bat mascot who became an unlikely series icon after appearing during Game 1 \u2014 is trending again as San Antonio fans lean into the omen ahead of tonight's tip-off.\n**Update 6:49 AM CT:** The fan fallout from Game 1 has now turned official: the NBA has handed down lifetime bans to two fans involved in the Jalen Brunson incident, with one also facing arrest \u2014 raising the stakes on what started as viral drama and hardening it into a league-level disciplinary moment heading into tonight's Game 2."
     },
     "981f13640ea88c9e": {
       "topic": "Larry Bird NBA Dominance Kevin McHale Analysis",
@@ -1000,7 +871,8 @@
     "88ee4f5597522dc6": {
       "topic": "Financial Services Market Roundup",
       "item_ids": [
-        "4d19600a5488"
+        "4d19600a5488",
+        "68923c331211"
       ],
       "created_at": "2026-06-04T12:12:51.917244+00:00",
       "last_escalated_size": 0,
@@ -1574,7 +1446,8 @@
     "672ec65afc7879cb": {
       "topic": "The Beatles Global Beatles Day All You Need Is Love",
       "item_ids": [
-        "e586f9da5bd7"
+        "e586f9da5bd7",
+        "512c7693c811"
       ],
       "created_at": "2026-06-04T20:19:18.194071+00:00",
       "last_escalated_size": 0,
@@ -1701,7 +1574,8 @@
     "0cde893400984ec7": {
       "topic": "Oil Prices Fall Trump Iran War Reluctance",
       "item_ids": [
-        "64e89439a439"
+        "64e89439a439",
+        "d411d01284c1"
       ],
       "created_at": "2026-06-04T20:19:18.194071+00:00",
       "last_escalated_size": 0,
@@ -1710,7 +1584,8 @@
     "490e684dbe63ef8b": {
       "topic": "Bitcoin Worst Week Narrative Fade Liquidity Rotation",
       "item_ids": [
-        "4b0c6d757c5a"
+        "4b0c6d757c5a",
+        "37acbc9f0e3f"
       ],
       "created_at": "2026-06-04T20:19:18.194071+00:00",
       "last_escalated_size": 0,
@@ -1875,11 +1750,19 @@
       "topic": "Stock Market Record Dow Healthcare Financial Gains",
       "item_ids": [
         "719146a476ef",
-        "801f660c1d7f"
+        "801f660c1d7f",
+        "36f87a813076"
       ],
       "created_at": "2026-06-04T21:56:56.429228+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-05T11:48:10.253250+00:00",
+      "picks_file": "picks/picks-2026-06-05-1149.md",
+      "why_text": "The Dow Jones Industrial Average just notched a record high powered by healthcare and financial stocks \u2014 a meaningful signal that the market's next leg up may not require the Magnificent Seven to carry the load. This is a real shift in market psychology: investors are rotating into 'boring' sectors, suggesting confidence in the broader economy rather than just AI hype. If healthcare and financials can sustain this, it reframes the entire narrative around what a healthy bull market actually looks like in 2025.",
+      "last_escalated_item_ids": [
+        "719146a476ef",
+        "801f660c1d7f",
+        "36f87a813076"
+      ]
     },
     "cff5c56fba88c6db": {
       "topic": "Amazon Vice Studios Defamation Suit Hollywood Hustler Documentary",
@@ -1984,7 +1867,8 @@
     "d043daf07b4c7fd3": {
       "topic": "Anthropic IPO Daniela Amodei AI Returns Doubts",
       "item_ids": [
-        "9c7d6c037dae"
+        "9c7d6c037dae",
+        "93495ef7931b"
       ],
       "created_at": "2026-06-04T23:10:33.094965+00:00",
       "last_escalated_size": 0,
@@ -2378,7 +2262,142 @@
       "created_at": "2026-06-05T08:39:22.863479+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "ca2635269a35639c": {
+      "topic": "European Showrunners Next Generation TV Production",
+      "item_ids": [
+        "a6824ef5029d"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "097ba43b1e083ce5": {
+      "topic": "Kanya King MOBO Awards Founder Death",
+      "item_ids": [
+        "abb5de51639d"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "37dd83c15cf664f3": {
+      "topic": "Pernel Media Rise and Fall Rome Series",
+      "item_ids": [
+        "6155a85c919f"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9e03ed06307f765e": {
+      "topic": "HBO Harry Potter Series Season 2 Colin Creevey Casting",
+      "item_ids": [
+        "3814fde35490"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d79c87eb0250542a": {
+      "topic": "OpenAI Anthropic IPO Investor Competition",
+      "item_ids": [
+        "8c9ba4c83146"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "512ca0c067b6f8bf": {
+      "topic": "NVIDIA New PC Chip Revolutionary Technology",
+      "item_ids": [
+        "d05e91ddccea"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "98975afa329bb857": {
+      "topic": "Google Chrome AI Search Integration",
+      "item_ids": [
+        "dc24c72f8649"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e20484c684f6344c": {
+      "topic": "Meta AI Agents Technology Redefinition",
+      "item_ids": [
+        "897583a80ab1"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9b82a9986b9e7371": {
+      "topic": "Microchip Technology Data Center AI Infrastructure",
+      "item_ids": [
+        "2b6316e234c5"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "32907b4c6f6e16eb": {
+      "topic": "SEALSQ Quantum Technology Portfolio Expansion",
+      "item_ids": [
+        "3b3c56c5ae5c"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "73013322fa5b3ed2": {
+      "topic": "2026 NBA Offseason Team Fears Analysis",
+      "item_ids": [
+        "22e2bf5273be"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f2efcf01406ab05c": {
+      "topic": "Victor Wembanyama Global Sports Athlete Marketing",
+      "item_ids": [
+        "c891cd6e2669"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cece3708f57545f9": {
+      "topic": "Xbox Gaming Entertainment Company 2030 Leadership Goals",
+      "item_ids": [
+        "b561d8c2b905"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e7d23ae64d2bcc86": {
+      "topic": "Microsoft OpenAI Partnership Deterioration",
+      "item_ids": [
+        "5bf5d172e501"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "409d1d589c8f7ef3": {
+      "topic": "Joby Aviation Drone Safety Workplace Incidents",
+      "item_ids": [
+        "716164474ee9"
+      ],
+      "created_at": "2026-06-05T11:48:53.187898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-05T08:39:22.864670+00:00"
+  "last_checked": "2026-06-05T11:49:10.677266+00:00"
 }
