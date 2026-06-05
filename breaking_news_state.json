@@ -1,29 +1,5 @@
 {
   "known_ids": [
-    "65177fca40d4",
-    "c3b82bcbd89e",
-    "821e6ada11c2",
-    "111b5d6d1084",
-    "82f983d61fe2",
-    "a53586a2fb05",
-    "747bb30768a3",
-    "ddb89dd15e71",
-    "c8fbaed79148",
-    "1ee19823786f",
-    "0e770dcc3103",
-    "3dc7b1eae4b3",
-    "f6c024f18d79",
-    "9097efbf5730",
-    "bb0624022648",
-    "4c6c3f126970",
-    "5b19c4c641b2",
-    "75d9e0bd82b6",
-    "7759390e07e4",
-    "3768456d120f",
-    "a3435e0e32fd",
-    "eee42c55e0e0",
-    "ea4455262cfd",
-    "82c9447f36f2",
     "a23f0327aa66",
     "51fe822e196e",
     "701a07191bdc",
@@ -499,50 +475,49 @@
     "f8e34d36c71e",
     "1fbd74d78844",
     "c5a5af4af485",
-    "43438a9489bb"
+    "43438a9489bb",
+    "a812b1292c06",
+    "9c70eb6f00de",
+    "5dcf95e15afe",
+    "8a07faed5cf6",
+    "7096f9e909e0",
+    "b83dc278249b",
+    "8ca40ea49751",
+    "53efdf4a9181",
+    "a9ed2096b559",
+    "3f5c4f3e52c2",
+    "6e8d0d0ebcd2",
+    "12599075e223",
+    "29dce28c82e7",
+    "7dd512c3b11c",
+    "476612d8f0fa",
+    "1d6aea4ce66f",
+    "22d8dcb0e290",
+    "9120d2b8c863",
+    "c298c7a5d8fb",
+    "3de85f747b23",
+    "64ab90dfca42",
+    "a8a09008c930",
+    "1f24915bd011",
+    "6553ae2a829a"
   ],
   "failed_ids": {
-    "3511a04734ec": "2026-06-04T21:56:12.414323+00:00",
-    "ae9673a78434": "2026-06-04T21:56:12.414323+00:00",
-    "95e840eab827": "2026-06-04T21:56:12.414323+00:00",
-    "9641f738e572": "2026-06-04T21:56:12.414323+00:00",
-    "26a875409bcb": "2026-06-04T21:56:12.414323+00:00",
-    "8be9adef49b5": "2026-06-04T21:56:12.414323+00:00",
-    "99dcf0b483e9": "2026-06-04T21:56:12.414323+00:00",
-    "5c644b32499c": "2026-06-04T21:56:12.414323+00:00",
-    "87f245147ca4": "2026-06-04T21:56:12.414323+00:00",
-    "f1501202b85c": "2026-06-04T21:56:12.414323+00:00",
-    "f2904ef27594": "2026-06-04T21:56:12.414323+00:00",
-    "a48e6eabae18": "2026-06-04T21:56:12.414323+00:00",
-    "1237e8fa3abf": "2026-06-04T21:56:12.414323+00:00",
-    "766e83ca02dc": "2026-06-04T21:56:12.414323+00:00",
-    "069f17c43915": "2026-06-04T21:56:12.414323+00:00",
-    "efee4d7db5d9": "2026-06-04T21:56:12.414323+00:00",
-    "63985e3bdc11": "2026-06-04T21:56:12.414323+00:00",
-    "0853bd1a5a62": "2026-06-04T21:56:12.414323+00:00",
-    "e4b06a35bea1": "2026-06-04T21:56:12.414323+00:00",
-    "e6eed0f3a67a": "2026-06-04T21:56:12.414323+00:00",
-    "694875b107db": "2026-06-04T21:56:12.414323+00:00",
-    "fd61101c501b": "2026-06-04T21:56:12.414323+00:00",
-    "00cad32cea0e": "2026-06-04T21:56:12.414323+00:00",
-    "5b0dd0bd207b": "2026-06-04T21:56:12.414323+00:00",
-    "2a2fdb6a0d8f": "2026-06-04T21:56:12.414323+00:00",
-    "eeb13fe55cc3": "2026-06-04T21:56:12.414323+00:00",
-    "3ac10ca7ada5": "2026-06-05T00:20:04.282334+00:00",
-    "ac068ed2b24b": "2026-06-05T00:20:04.282334+00:00",
-    "4389a3dbfdb6": "2026-06-05T00:20:04.282334+00:00",
-    "0c6bf0d795af": "2026-06-05T00:20:04.282334+00:00",
-    "6b7a63948f38": "2026-06-05T00:20:04.282334+00:00",
-    "5f711065049f": "2026-06-05T00:20:04.282334+00:00",
-    "f28804fe9759": "2026-06-05T00:20:04.282334+00:00",
-    "5fb53255f711": "2026-06-05T00:20:04.282334+00:00",
-    "7efd49906cc3": "2026-06-05T00:20:04.282334+00:00",
-    "59a14e173005": "2026-06-05T00:20:04.282334+00:00",
-    "fd5c6c53b1d2": "2026-06-05T00:20:04.282334+00:00",
-    "759d99e6f9ae": "2026-06-05T00:20:04.282334+00:00",
-    "6139564b51d3": "2026-06-05T00:20:04.282334+00:00",
-    "c70740101b13": "2026-06-05T00:20:04.282334+00:00",
-    "acd91fdbb647": "2026-06-05T00:20:04.282334+00:00"
+    "e152de049763": "2026-06-05T04:52:34.321748+00:00",
+    "c7615dfce97e": "2026-06-05T04:52:34.321748+00:00",
+    "57695ecd3a42": "2026-06-05T04:52:34.321748+00:00",
+    "86379708f7f8": "2026-06-05T04:52:34.321748+00:00",
+    "15ef19083347": "2026-06-05T04:52:34.321748+00:00",
+    "ee4c3e2b19e7": "2026-06-05T04:52:34.321748+00:00",
+    "fdc462120a70": "2026-06-05T04:52:34.321748+00:00",
+    "e9339a4b66e8": "2026-06-05T04:52:34.321748+00:00",
+    "d30148ba08fe": "2026-06-05T04:52:34.321748+00:00",
+    "eafa5f11cb83": "2026-06-05T04:52:34.321748+00:00",
+    "db7bba2fe0e7": "2026-06-05T04:52:34.321748+00:00",
+    "31b071b236a8": "2026-06-05T04:52:34.321748+00:00",
+    "f3f13bb700aa": "2026-06-05T04:52:34.321748+00:00",
+    "61e08b5da30b": "2026-06-05T04:52:34.321748+00:00",
+    "99ad9882a707": "2026-06-05T04:52:34.321748+00:00",
+    "1eaa3b38b4e3": "2026-06-05T04:52:34.321748+00:00"
   },
   "live_clusters": {
     "79f123852d5d17ee": {
@@ -963,11 +938,18 @@
         "77c8be51fed1",
         "3cf38fd82c2d",
         "90184bfed682",
-        "4ddea07363ae"
+        "4ddea07363ae",
+        "6e8d0d0ebcd2",
+        "12599075e223",
+        "9120d2b8c863",
+        "c298c7a5d8fb",
+        "3de85f747b23",
+        "64ab90dfca42",
+        "a8a09008c930"
       ],
       "created_at": "2026-06-04T12:12:51.917244+00:00",
-      "last_escalated_size": 27,
-      "last_escalated_at": "2026-06-05T00:20:04.282334+00:00",
+      "last_escalated_size": 34,
+      "last_escalated_at": "2026-06-05T04:52:34.321748+00:00",
       "picks_file": "picks/picks-2026-06-05-0020.md",
       "last_escalated_item_ids": [
         "3cadd49cb05f",
@@ -996,9 +978,16 @@
         "77c8be51fed1",
         "3cf38fd82c2d",
         "90184bfed682",
-        "4ddea07363ae"
+        "4ddea07363ae",
+        "6e8d0d0ebcd2",
+        "12599075e223",
+        "9120d2b8c863",
+        "c298c7a5d8fb",
+        "3de85f747b23",
+        "64ab90dfca42",
+        "a8a09008c930"
       ],
-      "why_text": "The NBA Finals are back in New York for the first time in 27 years, and the city is losing its mind \u2014 but the circus has already started off the court: fans are getting lifetime bans over a vulgar interaction with Jalen Brunson, Trump is showing up to Game 3 at MSG, and ESPN is under fire for using AI imagery during broadcasts. This isn't just a basketball series, it's a full cultural collision between New York's long-starved sports hunger, MAGA spectacle, and the media's identity crisis in the AI era."
+      "why_text": "The NBA Finals are back in New York for the first time in 27 years, and the city is losing its mind \u2014 but the circus has already started off the court: fans are getting lifetime bans over a vulgar interaction with Jalen Brunson, Trump is showing up to Game 3 at MSG, and ESPN is under fire for using AI imagery during broadcasts. This isn't just a basketball series, it's a full cultural collision between New York's long-starved sports hunger, MAGA spectacle, and the media's identity crisis in the AI era.\n**Update 11:53 PM CT:** The fan drama is escalating: the viral Spurs supporters who went face-to-face with Knicks faithful are now refusing to attend Game 2 after claiming they were harassed and mistreated at the Garden, while Coleman Crow \u2014 the Spurs' beloved bat mascot who became an unlikely series icon after appearing during Game 1 \u2014 is trending again as San Antonio fans lean into the omen ahead of tonight's tip-off."
     },
     "981f13640ea88c9e": {
       "topic": "Larry Bird NBA Dominance Kevin McHale Analysis",
@@ -2299,7 +2288,88 @@
       "created_at": "2026-06-05T00:20:42.916532+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "8105b3d3ca1bff1c": {
+      "topic": "Tinashe New Album Release",
+      "item_ids": [
+        "9c70eb6f00de"
+      ],
+      "created_at": "2026-06-05T04:53:12.474259+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d9fb68b75afe0724": {
+      "topic": "Steve Lacy The Feeling Music Video",
+      "item_ids": [
+        "5dcf95e15afe"
+      ],
+      "created_at": "2026-06-05T04:53:12.474259+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e61a4bdd04a51e3a": {
+      "topic": "Taylor Swift Toy Story 5 Song",
+      "item_ids": [
+        "8a07faed5cf6"
+      ],
+      "created_at": "2026-06-05T04:53:12.474259+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "507029bee8820e84": {
+      "topic": "Lizzo New Album Release",
+      "item_ids": [
+        "7096f9e909e0"
+      ],
+      "created_at": "2026-06-05T04:53:12.474259+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7968d0ee8dae01b3": {
+      "topic": "Madonna Times Square Pride Grindr Pop-Up",
+      "item_ids": [
+        "8ca40ea49751"
+      ],
+      "created_at": "2026-06-05T04:53:12.474259+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a91a83e680071e02": {
+      "topic": "Florida Georgia Line CMA Fest Reunion",
+      "item_ids": [
+        "53efdf4a9181"
+      ],
+      "created_at": "2026-06-05T04:53:12.474259+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a59534cec82adb4d": {
+      "topic": "Yankees Judge Stress Fracture Rib",
+      "item_ids": [
+        "29dce28c82e7"
+      ],
+      "created_at": "2026-06-05T04:53:12.474259+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c29111a4a8dfb256": {
+      "topic": "Vegas McNabb Puck Injury Hospital",
+      "item_ids": [
+        "7dd512c3b11c"
+      ],
+      "created_at": "2026-06-05T04:53:12.474259+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "30e427c6773c855b": {
+      "topic": "Texas WCWS Title Over TTU",
+      "item_ids": [
+        "476612d8f0fa"
+      ],
+      "created_at": "2026-06-05T04:53:12.474259+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-05T00:20:49.619029+00:00"
+  "last_checked": "2026-06-05T04:53:16.781663+00:00"
 }
