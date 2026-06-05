@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "7f51a68083ac",
-    "cc9a201ef7f0",
-    "888f30926cff",
-    "7e4366d7f6d3",
-    "081087f7c542",
-    "7682d3922839",
-    "280fc02c2b14",
-    "d315516b5b68",
-    "d05dadce5f0e",
-    "727c57d17b67",
-    "1fa351a1f542",
-    "a680efff2c1f",
-    "cc4fea35a723",
-    "fabf1e9e1571",
-    "b4bb73cdac8d",
-    "5c6543ae3ff8",
-    "d434804e66de",
     "65177fca40d4",
     "c3b82bcbd89e",
     "821e6ada11c2",
@@ -499,7 +482,24 @@
     "0ad48976901d",
     "77b4f01a1a42",
     "ff338bcaffcc",
-    "40ae030148ea"
+    "40ae030148ea",
+    "84d2ed83462f",
+    "ae2fbce119ed",
+    "48436baf7cc3",
+    "1a9bf894ec9b",
+    "6db06110db22",
+    "cc3b0718731a",
+    "9e569b291447",
+    "89da0229aefc",
+    "77c8be51fed1",
+    "3cf38fd82c2d",
+    "90184bfed682",
+    "4ddea07363ae",
+    "de4e934adbc4",
+    "f8e34d36c71e",
+    "1fbd74d78844",
+    "c5a5af4af485",
+    "43438a9489bb"
   ],
   "failed_ids": {
     "3511a04734ec": "2026-06-04T21:56:12.414323+00:00",
@@ -527,279 +527,24 @@
     "00cad32cea0e": "2026-06-04T21:56:12.414323+00:00",
     "5b0dd0bd207b": "2026-06-04T21:56:12.414323+00:00",
     "2a2fdb6a0d8f": "2026-06-04T21:56:12.414323+00:00",
-    "eeb13fe55cc3": "2026-06-04T21:56:12.414323+00:00"
+    "eeb13fe55cc3": "2026-06-04T21:56:12.414323+00:00",
+    "3ac10ca7ada5": "2026-06-05T00:20:04.282334+00:00",
+    "ac068ed2b24b": "2026-06-05T00:20:04.282334+00:00",
+    "4389a3dbfdb6": "2026-06-05T00:20:04.282334+00:00",
+    "0c6bf0d795af": "2026-06-05T00:20:04.282334+00:00",
+    "6b7a63948f38": "2026-06-05T00:20:04.282334+00:00",
+    "5f711065049f": "2026-06-05T00:20:04.282334+00:00",
+    "f28804fe9759": "2026-06-05T00:20:04.282334+00:00",
+    "5fb53255f711": "2026-06-05T00:20:04.282334+00:00",
+    "7efd49906cc3": "2026-06-05T00:20:04.282334+00:00",
+    "59a14e173005": "2026-06-05T00:20:04.282334+00:00",
+    "fd5c6c53b1d2": "2026-06-05T00:20:04.282334+00:00",
+    "759d99e6f9ae": "2026-06-05T00:20:04.282334+00:00",
+    "6139564b51d3": "2026-06-05T00:20:04.282334+00:00",
+    "c70740101b13": "2026-06-05T00:20:04.282334+00:00",
+    "acd91fdbb647": "2026-06-05T00:20:04.282334+00:00"
   },
   "live_clusters": {
-    "00fc5ca9a8827464": {
-      "topic": "Mapogo: The Lion Throne Vertical Documentary Series",
-      "item_ids": [
-        "b0077b764952"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "523714e2d81f229a": {
-      "topic": "Dave Vs. Hollywood Comedy Mockumentary TCL Chinese Theatre Premiere",
-      "item_ids": [
-        "0fba74338d77"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0c0262d3923fff23": {
-      "topic": "Cardi B Tasha K Legal Dispute Offset Stefon Diggs",
-      "item_ids": [
-        "dc82a32431b5"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6c211abe0c22af61": {
-      "topic": "Canada $600M Music Media Investment Online Streaming Act",
-      "item_ids": [
-        "e5c6fdfd19bc"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0d8b8ecb99107895": {
-      "topic": "Jessica Simpson Alcohol Abuse Recovery Reflection",
-      "item_ids": [
-        "58b9d5011caf"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "27e755fef7a6a6ec": {
-      "topic": "House Bipartisan Vote End Iran War Against Trump",
-      "item_ids": [
-        "9b4f311dbdc1"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "659e05a187f6dcd3": {
-      "topic": "New Jersey Lawmakers Fight Shut Down Delaney Hall",
-      "item_ids": [
-        "6358d48d2093"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4ac38d8bb54b969d": {
-      "topic": "Matt Brown Alaskan Bush People Death Cause Confirmed",
-      "item_ids": [
-        "681e9ac7a852"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0402fc4ba4b91ef3": {
-      "topic": "Lovable Google Cloud Multiyear Deal AI Usage Expansion",
-      "item_ids": [
-        "1fe21f8da08e"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f1faa98fd714603b": {
-      "topic": "Amazon Seattle Engineers Criticize AI Data Centers Layoffs",
-      "item_ids": [
-        "c029f49083d1"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "47a272cffd09441e": {
-      "topic": "Asia-Pacific Markets Decline Middle East Tensions",
-      "item_ids": [
-        "e59c6e481d18"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ba5bc4207d083bcc": {
-      "topic": "Ottawa Residents Oppose 300-Acre Technology Campus Plan",
-      "item_ids": [
-        "dd9d4a0f28d5"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a2060a141904a8eb": {
-      "topic": "Marvell Technology Stock Price Increase",
-      "item_ids": [
-        "f636332de16f"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fd981602c0693eed": {
-      "topic": "Snowflake vs. MongoDB Technology Stock Comparison 2026",
-      "item_ids": [
-        "8728e9317747"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "847a860f69a6cdac": {
-      "topic": "Modern Technology Solutions Aircraft Ownership Transfer UND Aerospace",
-      "item_ids": [
-        "1d9b102f7ab3"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7802746d3c5f5058": {
-      "topic": "New York Knicks 2026 NBA Draft Needs Assessment",
-      "item_ids": [
-        "564a4a57ad98"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a96d5df8a2b77aa5": {
-      "topic": "Detroit Pistons NBA Draft Pick 21 Overall Analysis",
-      "item_ids": [
-        "d9e9208b9613"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9b3e7f94a2d47456": {
-      "topic": "NBA Conference Finals Viewership Claim Misleading Analysis",
-      "item_ids": [
-        "f0237ad55cd6"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1d72ca875bc65344": {
-      "topic": "Best Gaming Videos May 2026 Minecraft Forza Skyrim",
-      "item_ids": [
-        "ef018b8eed89"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9a1c1fa2b012e1b4": {
-      "topic": "Prologis CEO Economy Business Model Strategy",
-      "item_ids": [
-        "70647e022245"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d245ab2af6dc6a19": {
-      "topic": "Boise Couple Transforming Trolley House Landmark Business",
-      "item_ids": [
-        "d8f358950e26"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "27bfa04533669cfe": {
-      "topic": "Hendersonville Business Revitalization Survey Plan",
-      "item_ids": [
-        "6d703ca449c5"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2869089788f5fd1c": {
-      "topic": "Marquette Business Owner Retirement 30+ Years",
-      "item_ids": [
-        "ccbb4d576934"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6025c450ae7f131e": {
-      "topic": "Topeka Vehicle Repair Business Grand Opening",
-      "item_ids": [
-        "3038552cc1a1"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7ca6521864a485ad": {
-      "topic": "Houston Budget Amendment Trash Fee Financial Assistance",
-      "item_ids": [
-        "3eff95608795"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "14cda295d550d4ce": {
-      "topic": "Westminster University Challenges Forbes Financial Grade Assessment",
-      "item_ids": [
-        "de03df9ac6d8"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "061817c0ba3c4e90": {
-      "topic": "CNO Financial Group Q1 Earnings Life Insurance Segment",
-      "item_ids": [
-        "de64154304d7"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7d8df30ecaf50470": {
-      "topic": "BMW All-Wheel-Drive M2 Manufacturing Mexico Launch",
-      "item_ids": [
-        "8df079822bd7"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2b7d9f67906c79b7": {
-      "topic": "BMW Dealers Manual M3 CS $25K Over Sticker Demand",
-      "item_ids": [
-        "328f01d01257"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d99a4c980d97200": {
-      "topic": "E Ink BMW Automotive Color-Changing Technology Development",
-      "item_ids": [
-        "610502d61d95"
-      ],
-      "created_at": "2026-06-04T00:18:55.107303+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "79f123852d5d17ee": {
       "topic": "Ronnie Fieg Kith x Nike Air Max 95 Knicks Release",
       "item_ids": [
@@ -1213,12 +958,17 @@
         "df8625c378ae",
         "afb69b7e3de3",
         "eb9c4ad3cff5",
-        "7178f04cb4f8"
+        "7178f04cb4f8",
+        "89da0229aefc",
+        "77c8be51fed1",
+        "3cf38fd82c2d",
+        "90184bfed682",
+        "4ddea07363ae"
       ],
       "created_at": "2026-06-04T12:12:51.917244+00:00",
-      "last_escalated_size": 22,
-      "last_escalated_at": "2026-06-04T23:09:25.905697+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 27,
+      "last_escalated_at": "2026-06-05T00:20:04.282334+00:00",
+      "picks_file": "picks/picks-2026-06-05-0020.md",
       "last_escalated_item_ids": [
         "3cadd49cb05f",
         "7189f1c3533a",
@@ -1241,8 +991,14 @@
         "df8625c378ae",
         "afb69b7e3de3",
         "eb9c4ad3cff5",
-        "7178f04cb4f8"
-      ]
+        "7178f04cb4f8",
+        "89da0229aefc",
+        "77c8be51fed1",
+        "3cf38fd82c2d",
+        "90184bfed682",
+        "4ddea07363ae"
+      ],
+      "why_text": "The NBA Finals are back in New York for the first time in 27 years, and the city is losing its mind \u2014 but the circus has already started off the court: fans are getting lifetime bans over a vulgar interaction with Jalen Brunson, Trump is showing up to Game 3 at MSG, and ESPN is under fire for using AI imagery during broadcasts. This isn't just a basketball series, it's a full cultural collision between New York's long-starved sports hunger, MAGA spectacle, and the media's identity crisis in the AI era."
     },
     "981f13640ea88c9e": {
       "topic": "Larry Bird NBA Dominance Kevin McHale Analysis",
@@ -1431,7 +1187,8 @@
     "74e68321469b3eea": {
       "topic": "Ramp $750M Funding AI Fintech Series",
       "item_ids": [
-        "36b0e84d9836"
+        "36b0e84d9836",
+        "9e569b291447"
       ],
       "created_at": "2026-06-04T15:46:19.688640+00:00",
       "last_escalated_size": 0,
@@ -2221,7 +1978,8 @@
     "9a8cb2a124c97362": {
       "topic": "Clive Davis Hospital Discharge Respiratory Issue",
       "item_ids": [
-        "dc39630c842c"
+        "dc39630c842c",
+        "48436baf7cc3"
       ],
       "created_at": "2026-06-04T23:10:33.094965+00:00",
       "last_escalated_size": 0,
@@ -2496,7 +2254,52 @@
       "created_at": "2026-06-04T23:10:33.094965+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "6c05b2a4741a467f": {
+      "topic": "Yung Miami Drake Interaction Social Media",
+      "item_ids": [
+        "84d2ed83462f"
+      ],
+      "created_at": "2026-06-05T00:20:42.916532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c207ac87a9e09a15": {
+      "topic": "The Beach Boys Pet Sounds 60th Anniversary Merchandise",
+      "item_ids": [
+        "ae2fbce119ed"
+      ],
+      "created_at": "2026-06-05T00:20:42.916532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d68d1b9ba017c4a7": {
+      "topic": "Olivia Rodrigo ICE Video Song Usage Outrage",
+      "item_ids": [
+        "1a9bf894ec9b"
+      ],
+      "created_at": "2026-06-05T00:20:42.916532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "12a8e251540f49b1": {
+      "topic": "Founders Fund Game Show Tech Founders",
+      "item_ids": [
+        "6db06110db22"
+      ],
+      "created_at": "2026-06-05T00:20:42.916532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9e1ab7b1d220c599": {
+      "topic": "South Korea Stock Market Tech Decline AI Selloff",
+      "item_ids": [
+        "cc3b0718731a"
+      ],
+      "created_at": "2026-06-05T00:20:42.916532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-04T23:10:33.117397+00:00"
+  "last_checked": "2026-06-05T00:20:49.619029+00:00"
 }

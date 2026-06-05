@@ -1,6 +1,111 @@
 {
   "items": [
     {
+      "id": "84d2ed83462f",
+      "topic": "Yung Miami Jokes About Getting Left on Read by Drake: ‘Like, Come On Now!’",
+      "traffic": "",
+      "detected_at": "2026-06-05T00:20:04.282334+00:00",
+      "search_url": "https://www.billboard.com/music/rb-hip-hop/yung-miami-drake-left-on-read-take-me-to-chanel-1236264730/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "6c05b2a4741a467f"
+    },
+    {
+      "id": "ae2fbce119ed",
+      "topic": "The Beach Boys’ Official Online Store Drops ‘Pet Sounds’ 60th-Anniversary Merch & Apparel: Shop Now",
+      "traffic": "",
+      "detected_at": "2026-06-05T00:20:04.282334+00:00",
+      "search_url": "https://www.billboard.com/culture/product-recommendations/beach-boys-pet-sounds-60th-anniversary-merch-buy-online-1236262257/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "c207ac87a9e09a15"
+    },
+    {
+      "id": "1a9bf894ec9b",
+      "topic": "Olivia Rodrigo Was “Enraged” By ICE Video Using Her Song: “So Deeply Disturbing”",
+      "traffic": "",
+      "detected_at": "2026-06-05T00:20:04.282334+00:00",
+      "search_url": "https://deadline.com/2026/06/olivia-rodrigo-enraged-ice-using-her-song-1236941565/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "d68d1b9ba017c4a7"
+    },
+    {
+      "id": "6db06110db22",
+      "topic": "Founders Fund launches game show starring Sam Altman, Palmer Luckey, and other tech elites",
+      "traffic": "",
+      "detected_at": "2026-06-05T00:20:04.282334+00:00",
+      "search_url": "https://techcrunch.com/2026/06/04/founders-fund-launches-game-show-starring-sam-altman-palmer-luckey-and-other-tech-elites/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "12a8e251540f49b1"
+    },
+    {
+      "id": "cc3b0718731a",
+      "topic": "South Korea stocks fall 4% as tech heavyweights follow plunge in Wall Street's AI-linked names",
+      "traffic": "",
+      "detected_at": "2026-06-05T00:20:04.282334+00:00",
+      "search_url": "https://www.cnbc.com/2026/06/05/asia-markets-today-nikkei-225-kospi-hang-seng-index-csi-300-nifty50.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "9e1ab7b1d220c599"
+    },
+    {
+      "id": "de4e934adbc4",
+      "topic": "Yzerplan",
+      "traffic": "##13 on X",
+      "detected_at": "2026-06-05T00:20:04.282334+00:00",
+      "search_url": "https://x.com/search?q=Yzerplan&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "f8e34d36c71e",
+      "topic": "TADC",
+      "traffic": "##14 on X",
+      "detected_at": "2026-06-05T00:20:04.282334+00:00",
+      "search_url": "https://x.com/search?q=TADC&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "1fbd74d78844",
+      "topic": "Scary Movie",
+      "traffic": "##17 on X",
+      "detected_at": "2026-06-05T00:20:04.282334+00:00",
+      "search_url": "https://x.com/search?q=Scary+Movie&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "c5a5af4af485",
+      "topic": "#StuttgartWordAblaze",
+      "traffic": "##18 on X",
+      "detected_at": "2026-06-05T00:20:04.282334+00:00",
+      "search_url": "https://x.com/search?q=%23StuttgartWordAblaze&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "43438a9489bb",
+      "topic": "#BLUE_MOON_SHINES_FOR_SEVEN",
+      "traffic": "##19 on X",
+      "detected_at": "2026-06-05T00:20:04.282334+00:00",
+      "search_url": "https://x.com/search?q=%23BLUE_MOON_SHINES_FOR_SEVEN&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "3d9b805c1cdc",
       "topic": "Amazon, Vice Studios Hit With Defamation Suit Over ‘Hollywood Hustler’ Documentary",
       "traffic": "",
@@ -329,117 +434,7 @@
       "source_type": "feed",
       "haiku_score": 8,
       "cluster_id": "abe6b2b9038ea37a"
-    },
-    {
-      "id": "9d2e6857f0ff",
-      "topic": "ESA report finds 212 million Americans now play video games weekly - TechSpot",
-      "traffic": "",
-      "detected_at": "2026-06-04T23:09:25.905697+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVE1oZmNDWlJLbTFqdjhEdGE0cndrY19qUG41cEZNOGt6MkgzUzdDSWFPZ2RlS0x2Z1hxbXpmZklJbXFaZW9WajFILVRObUM2V2NkUHFBQmRmNmN6UklVRldLN2x3S21oWmhhc0FxZjl4ZGZkenN6R1J1TzB6STVUT095NVlOa1AyOEdSNXJjWklERE0?oc=5",
-      "source_name": "Google News - Gaming",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "1eee5a1c59529008"
-    },
-    {
-      "id": "b2c015df3c70",
-      "topic": "Business in America: GM CEO Mary Barra - NBC News",
-      "traffic": "",
-      "detected_at": "2026-06-04T23:09:25.905697+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcjItSVVxVjdQYzRoZ2FhemFGY2pWVkJFRnBWZUR4RUUzalM0UGo2dU0xdWZndGJpWTZYMmJfMUphVXY3TmJTa1VCaXFBSGxmZEtwcHVsLTQ3dEVFRlZiUHFWZFR3eGZRRmRVWWV1WElQbFJWWXZWR2N4cGdMQlc2NmwzNEZCdWFENEc4NVpOd0lDMERBSjhHRA?oc=5",
-      "source_name": "Google News - Business",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "2c990d1ce20f4f8a"
-    },
-    {
-      "id": "81b0c78f7cc6",
-      "topic": "Jake Paul's business partner gives timeline on return to ring after career-threatening injury - Fox News",
-      "traffic": "",
-      "detected_at": "2026-06-04T23:09:25.905697+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaVFtcFBrUjR1OVFVT3NWUDlhNWtDXzNuN0o0SnRraVhMNlU4RU10N3RuTzVqRFBJMEh5Um1DcUtrcTl2cGVlZXo0dzlCRVhDdjlkc3U5UXRudy05RXFmLUl3SDZVSEkwNTFmR1ZlMVNGVmRVbkNmMFFHYjRXdnpWbzZpSDdfVlpHTUVWc0RVR2VKZUZWbWVINUpwaDdHTDRkQWxGT0FyWlFDLVNFVTRFddIBtgFBVV95cUxQZEhScVByUFFpNDFiNkp1cFJkVDRrLW5iNlZjeGdCNWZmd1JhSjVId0xZQUVhdjRvbmNFVDhCT2kzUV8yZnRvVmdTYUVsX01tMXVrRDNVazlZUlcwbHpzejVEeTRZOG15MTZuRGFma0N4a3MzUXZYb2JZSGpidEoyZzJheE1kaGdBMGZCNTV0RC14TUtFYzZKZ1ZsUlYyb1RPMElaZlJDTWpQUFZydnFiRnZDUFkxUQ?oc=5",
-      "source_name": "Google News - Business",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "b4d3c1266d62e614"
-    },
-    {
-      "id": "6391e20e9c68",
-      "topic": "Small businesses waits more than six months for National Grid bill - WRGB",
-      "traffic": "",
-      "detected_at": "2026-06-04T23:09:25.905697+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORXN1RXRHVGR4OHlfeTgyNFdRbFdLNG1tQ3hzM3BiZ0cxLWtzY2ExUTFXdG5wMG0zdzVYdVIyR0p2N0hxNUVUcW1ONjlFU0c0U0daNnJVMUwxOU9iT2NOLVVjc245YTNrdUJVVTNTY0hJOTJod0ZQVFU0ZEdqWEJYUHRUR1RmWHNRNTNVQlQ0WFVMczFwYmVtZmViYWRaSTdPcnc?oc=5",
-      "source_name": "Google News - Business",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "818ed7cb4aab5ac7"
-    },
-    {
-      "id": "924d347f52b2",
-      "topic": "Tyrell Moore | Man sentenced in 2023 death of Glenwood South business owner David Millette - ABC11 News",
-      "traffic": "",
-      "detected_at": "2026-06-04T23:09:25.905697+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWUM3VkluUi1EYlItQ1BqMzlQRmNMaDBKX21jSjJ1ZDNxMVNIc0oxdzU1SGVFQTJXVXhwVWo3ZWZ3SUc4OXdzLW9Ma1NLV0FFWFkxWmRtVmZlMEFRUGIxUjBDWE4xRGF3VnBiSi1iMVlYMmZ1ZlhUa3RpVkZFNnNrcWxLWHR6THZuSU9sX1B5a2J2Szlya3ZQc3l6dHFWaGdVYmpqaHhmbmtMU0ZweWZuT2RjVk9LZ9IBuwFBVV95cUxQeGNSYV9Kc19nR1lNYXh4T2tWSnRNUUVKOTdEQ1ZpMDByMUMxdVJEQTBNQWRPekI2VXFCX0VnTnFHbU9HZkZtRDQyUnlHQlRiTVZnMVlvc01sYnRrNUFvZEVLS2x4T09jOHJleWRsTmtUSDJKVk12OUlETTlpc3h0ak12MlhSZHRsTHpMSXlxcVY0QmpOUXhaaUQxTGc0VXNFSTRaYjduR0ttVmtTa2pvZkJJTTlKX3AzMUpF?oc=5",
-      "source_name": "Google News - Business",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "780c1d0acd44e231"
-    },
-    {
-      "id": "604dc945ff8b",
-      "topic": "Lansing, Illinois news: Suspect at large employee shot, killed at Nippon Paint Automotive Americas on East 170th Street - ABC7 Chicago",
-      "traffic": "",
-      "detected_at": "2026-06-04T23:09:25.905697+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOUJTalpnRXhMbl9Eb25KRUJCR1V4V21MRHNmeE1yZVFBZzdVcGwyUnhqYnBMcTJiM3hZTnZOOXBNcmljOHJiR0RBR2x4cW1yUW5EbUNzZGQzX3dlR3N4bkZ5ckNEVGR4V3RCTWFEa3Z4YXI5OVk0d1JYdUN1U2Zzc1cxUWlHYTc0QzZfVmFkbmNySjkzOUphaDRTdzA0TUk3NlBiSXo2dVLSAa4BQVVfeXFMT25ENXFWazN1dnhQNFJTaF92M2lVZkd3UTRvenRiUGZuVDQ5cEdiQlVMQWctaDV5bEtyOUdQLUswXzRUanBQcXZ1UzdZN3cyeUdwWkoyN0RGRmdqMFA2Qm9ucWJFRkFCSTMtaGRQWEEwXzlIZURYVDhsczNMVFhDV0NNMkxWNEtHVzZ3ZXk4VjdVTDhQamJwaHQ2cU83ejRfLTVmUGZvMmdEY3FiSWVR?oc=5",
-      "source_name": "Google News - Business",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "807b4e581b33757b"
-    },
-    {
-      "id": "693a653141a9",
-      "topic": "What is fintech? What you need to know about financial technology companies. - Yahoo Finance",
-      "traffic": "",
-      "detected_at": "2026-06-04T23:09:25.905697+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPcThka0h6SGxtYjZmNVF6R3BzMk1rTWFESDFNRlA0aENWeGhXLUJwbE1fV0NHTG80UFgtSGdhM3dQS1BlbUNyUlZnWXFoalZaT3BXdjYxTXZYeDg4Z2dLWkoxbkZUZnpPZUVuUmM3SENsLWZEblRaQkZoTF9sRGFHTFg2aDhac0N0OHJkWjFwcW1oNTNGUzNCdlRIZUw5QThYbndQaEFHekg0VFZFbTJKSE9WUjl2aXlkSjRQVGtCdjlnSlRkVzFGQWFXUldiSEhwQkp5TlJvUElVaW0tOHZsUnZn?oc=5",
-      "source_name": "Google News - Finance",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "9eaa0798a7808a34"
-    },
-    {
-      "id": "e34cad494fcd",
-      "topic": "Scooter slams into a BMW on 15th Street - FOX 5 Atlanta",
-      "traffic": "",
-      "detected_at": "2026-06-04T23:09:25.905697+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vYnRzZTMtd3RTZzlBV1pidTBYZERMblYwYnVXeDhlbWRSd0lCMjhzbER1NnM4SndQMjU3ZzZtQnBTWkFsZWpOVTBJS25uY0QtdDVjMGVSeUVzN0JFVUNpMkx3UWPSAWpBVV95cUxOLVFTWV92M1B3RjhsalE3SFZvSHZGeTdZQzFkYWlEZl9vLVdOQXU2bmJSSm41SG1zSWJ0SDVsb2w0QU9zN2VGWm01T0MyajNQQU9NbmhQcEtiTTNYTllUNTBUTnRxQ29lS0NB?oc=5",
-      "source_name": "Google News - BMW",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "2024ce2cadbf6047"
-    },
-    {
-      "id": "1ed7d6aa6a07",
-      "topic": "Celebrities share why they enjoy the BMW Charity Pro-Am and Greenville - Greenville Online",
-      "traffic": "",
-      "detected_at": "2026-06-04T23:09:25.905697+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMjFQcFNrSVhDTFhkMUdvUW5mSGNXR0doUFBETkR1cmEtRWhMN2x5M0IwdVQyd3NIZThNSWo0YnlzQ0JmTzJfMkJOQk5ESFRVZHNDck9kOEcyamtEUm51V19vcTl5cmh6SzhIYzJsRWpjbXZHaUhZSW9OQ29CQW1xNDNURHZZYjlEOG14bDBrVlEtY3pnS0hoTWtCMlU3OEdaeU8wOFFvY0ZNcmZ0bEhhNFBnWnQwVGM3MWh0Q2ptd0J6M0lBYUI5LXRYRUVNSnBBQm54NllB?oc=5",
-      "source_name": "Google News - BMW",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "469307e5359b0078"
-    },
-    {
-      "id": "1c4997731961",
-      "topic": "Study Shows US Ranks Second In Aggressive Driving Behind Italy - NewsRadio 560 KPQ",
-      "traffic": "",
-      "detected_at": "2026-06-04T23:09:25.905697+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5tdWtZYy1Fc29HN0tDYlhPRk9PUVNwYm9kQWI1aDFmclp5SWZkeGd1SkwyekRPYXRCLUV5aE16am5KVkh6LUtwZzhaWVZpaDQ?oc=5",
-      "source_name": "Google News - BMW",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "485975fa04a94c99"
     }
   ],
-  "last_checked": "2026-06-04T23:09:25.905697+00:00"
+  "last_checked": "2026-06-05T00:20:04.282334+00:00"
 }
