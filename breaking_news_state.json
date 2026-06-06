@@ -1,35 +1,5 @@
 {
   "known_ids": [
-    "6e8d0d0ebcd2",
-    "12599075e223",
-    "29dce28c82e7",
-    "7dd512c3b11c",
-    "476612d8f0fa",
-    "1d6aea4ce66f",
-    "22d8dcb0e290",
-    "9120d2b8c863",
-    "c298c7a5d8fb",
-    "3de85f747b23",
-    "64ab90dfca42",
-    "a8a09008c930",
-    "1f24915bd011",
-    "6553ae2a829a",
-    "e0345cae401d",
-    "aaaeb56d3518",
-    "b97d88fac120",
-    "d82fd193105b",
-    "72fdac0d5e45",
-    "4ac9c37e639d",
-    "016eb77f1ed4",
-    "31a9c9f16aa3",
-    "a593e3c53acb",
-    "0f61fe2215cf",
-    "3c2305ff62ff",
-    "2c6d426c37c8",
-    "77a22ba538eb",
-    "d48770c66c80",
-    "1901c72b6395",
-    "512c7693c811",
     "a6824ef5029d",
     "abb5de51639d",
     "6155a85c919f",
@@ -499,20 +469,39 @@
     "7eb7a209a441",
     "c3d01886fb4f",
     "fb29b7df7833",
-    "75cb8f2d6377"
+    "75cb8f2d6377",
+    "b3153a3952fa",
+    "f3024a3bd5fe",
+    "851136c11ab5",
+    "1bd6080707f4",
+    "62b01b4b866d",
+    "64e3560c59d5",
+    "b7601dc0aa7f",
+    "5b8905a253db",
+    "ddbf11b25e5d",
+    "986de600a443",
+    "1205ad288b69",
+    "aca83aafc2c3",
+    "f76aceda43dc",
+    "ad20b3441971",
+    "f2981a519293",
+    "d31d1f139de5",
+    "82fbafa24f45",
+    "273663443bd1",
+    "ee86309679dc",
+    "941d48eeaf2f",
+    "0fba1e5b4671",
+    "85231f327dfc",
+    "bd55ace9fcf6",
+    "b56774e5386c",
+    "b451fb6cd357",
+    "6e0d496a6d55",
+    "655e12209456",
+    "3045e19e0462",
+    "b5084be8083f",
+    "9c9e453a1525"
   ],
   "failed_ids": {
-    "2a63ed2d2489": "2026-06-06T08:03:03.079539+00:00",
-    "b1626b34ed4f": "2026-06-06T08:03:03.079539+00:00",
-    "a48c2df33a75": "2026-06-06T08:03:03.079539+00:00",
-    "7b0e61dd13ec": "2026-06-06T08:03:03.079539+00:00",
-    "acdeab396bd9": "2026-06-06T08:03:03.079539+00:00",
-    "33bb80bf2cda": "2026-06-06T08:03:03.079539+00:00",
-    "2aebb2727629": "2026-06-06T08:03:03.079539+00:00",
-    "23d8ace79895": "2026-06-06T08:03:03.079539+00:00",
-    "8862278f428b": "2026-06-06T08:03:03.079539+00:00",
-    "379df7cd5610": "2026-06-06T08:03:03.079539+00:00",
-    "d00cf6169b94": "2026-06-06T08:03:03.079539+00:00",
     "057d53010a81": "2026-06-06T10:16:58.756453+00:00",
     "394a759db8d4": "2026-06-06T10:16:58.756453+00:00",
     "12c3341df8b8": "2026-06-06T10:16:58.756453+00:00",
@@ -533,164 +522,11 @@
     "e840eb161853": "2026-06-06T11:48:44.627727+00:00",
     "c4dc67a2cd30": "2026-06-06T11:48:44.627727+00:00",
     "d70c28a5eb11": "2026-06-06T11:48:44.627727+00:00",
-    "2ffcc1de2593": "2026-06-06T11:48:44.627727+00:00"
+    "2ffcc1de2593": "2026-06-06T11:48:44.627727+00:00",
+    "9af9a41d6be7": "2026-06-06T12:58:26.797173+00:00",
+    "76edbacee8aa": "2026-06-06T12:58:26.797173+00:00"
   },
   "live_clusters": {
-    "ca2635269a35639c": {
-      "topic": "European Showrunners Next Generation TV Production",
-      "item_ids": [
-        "a6824ef5029d"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "097ba43b1e083ce5": {
-      "topic": "Kanya King MOBO Awards Founder Death",
-      "item_ids": [
-        "abb5de51639d"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "37dd83c15cf664f3": {
-      "topic": "Pernel Media Rise and Fall Rome Series",
-      "item_ids": [
-        "6155a85c919f"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9e03ed06307f765e": {
-      "topic": "HBO Harry Potter Series Season 2 Colin Creevey Casting",
-      "item_ids": [
-        "3814fde35490"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d79c87eb0250542a": {
-      "topic": "OpenAI Anthropic IPO Investor Competition",
-      "item_ids": [
-        "8c9ba4c83146"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "512ca0c067b6f8bf": {
-      "topic": "NVIDIA New PC Chip Revolutionary Technology",
-      "item_ids": [
-        "d05e91ddccea"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "98975afa329bb857": {
-      "topic": "Google Chrome AI Search Integration",
-      "item_ids": [
-        "dc24c72f8649"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e20484c684f6344c": {
-      "topic": "Meta AI Agents Technology Redefinition",
-      "item_ids": [
-        "897583a80ab1",
-        "845ba3be624e",
-        "0841506a4bda"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-06T10:16:58.756453+00:00",
-      "picks_file": "picks/picks-2026-06-06-1017.md",
-      "why_text": "Meta and the broader AI industry are pushing agents \u2014 autonomous systems that don't just respond but act, plan, and execute \u2014 as the defining shift of this technological moment, bigger than the smartphone era. Time Magazine covering it signals this has crossed from tech-insider obsession into mainstream cultural reckoning, while grassroots panels at events like Colorado SunFest show the conversation is landing in living rooms, not just boardrooms. The question is no longer whether AI changes daily life, but whether anyone actually chose that.",
-      "last_escalated_item_ids": [
-        "897583a80ab1",
-        "845ba3be624e",
-        "0841506a4bda"
-      ]
-    },
-    "9b82a9986b9e7371": {
-      "topic": "Microchip Technology Data Center AI Infrastructure",
-      "item_ids": [
-        "2b6316e234c5",
-        "86bac8a0b096"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "32907b4c6f6e16eb": {
-      "topic": "SEALSQ Quantum Technology Portfolio Expansion",
-      "item_ids": [
-        "3b3c56c5ae5c"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "73013322fa5b3ed2": {
-      "topic": "2026 NBA Offseason Team Fears Analysis",
-      "item_ids": [
-        "22e2bf5273be"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f2efcf01406ab05c": {
-      "topic": "Victor Wembanyama Global Sports Athlete Marketing",
-      "item_ids": [
-        "c891cd6e2669",
-        "8df0ea898248",
-        "15ff4271e40d",
-        "a263b026674f"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-05T22:00:07.070141+00:00",
-      "picks_file": "picks/picks-2026-06-05-2200.md",
-      "why_text": "At 20, Wembanyama isn't just being marketed as the next great NBA center \u2014 he's being framed as a once-in-a-generation redefinition of what the position even means, a player whose skill set makes comparisons to anyone who came before him feel reductive. That 'perfect center' framing is doing real cultural work: it's not just sports hyperbole, it's a global brand-building moment that places him alongside LeBron and Giannis in the conversation about who the face of basketball's next era will be. For sponsors, leagues, and media alike, Wembanyama represents a rare window \u2014 a transcendent talent whose ceiling is still unknown, playing in the world's biggest market for the sport.",
-      "last_escalated_item_ids": [
-        "c891cd6e2669",
-        "8df0ea898248",
-        "15ff4271e40d"
-      ]
-    },
-    "cece3708f57545f9": {
-      "topic": "Xbox Gaming Entertainment Company 2030 Leadership Goals",
-      "item_ids": [
-        "b561d8c2b905"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e7d23ae64d2bcc86": {
-      "topic": "Microsoft OpenAI Partnership Deterioration",
-      "item_ids": [
-        "5bf5d172e501"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "409d1d589c8f7ef3": {
-      "topic": "Joby Aviation Drone Safety Workplace Incidents",
-      "item_ids": [
-        "716164474ee9"
-      ],
-      "created_at": "2026-06-05T11:48:53.187898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "78e24ddca59c296d": {
       "topic": "Phoebe Bridgers Tour Announcement",
       "item_ids": [
@@ -846,7 +682,8 @@
         "af96b6090faa",
         "207ef385df97",
         "1320fa23c3c4",
-        "fb29b7df7833"
+        "fb29b7df7833",
+        "ad20b3441971"
       ],
       "created_at": "2026-06-05T14:13:17.579190+00:00",
       "last_escalated_size": 43,
@@ -1021,7 +858,8 @@
     "c85874b46c5ec276": {
       "topic": "FIFA World Cup Free Ticket Cancellation",
       "item_ids": [
-        "9c511e3637c3"
+        "9c511e3637c3",
+        "851136c11ab5"
       ],
       "created_at": "2026-06-05T16:42:50.764866+00:00",
       "last_escalated_size": 0,
@@ -1452,7 +1290,8 @@
     "43b3b3fba60afb2c": {
       "topic": "NBA Finals 2026 Knicks vs Spurs Game 2 Coverage",
       "item_ids": [
-        "c1b9943ea888"
+        "c1b9943ea888",
+        "f2981a519293"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
       "last_escalated_size": 0,
@@ -1461,7 +1300,8 @@
     "f0f2f1e5ef75d15b": {
       "topic": "Cleveland Cavaliers NBA Draft 2026 Targets",
       "item_ids": [
-        "40611e7dd9ca"
+        "40611e7dd9ca",
+        "d31d1f139de5"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
       "last_escalated_size": 0,
@@ -1839,11 +1679,18 @@
       "topic": "Google SpaceX $920M Monthly Compute Deal xAI",
       "item_ids": [
         "b357afa17917",
-        "09c49e71d76b"
+        "09c49e71d76b",
+        "0fba1e5b4671"
       ],
       "created_at": "2026-06-05T20:30:12.056736+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T12:58:26.797173+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "b357afa17917",
+        "09c49e71d76b",
+        "0fba1e5b4671"
+      ]
     },
     "db3a1eb7fb92c3b8": {
       "topic": "Mythos Cybersecurity Rally Earnings Test",
@@ -2240,7 +2087,8 @@
         "4323e481a606",
         "6ea72d5c5713",
         "a03438edd319",
-        "c52a0a753a53"
+        "c52a0a753a53",
+        "ddbf11b25e5d"
       ],
       "created_at": "2026-06-05T22:00:55.245689+00:00",
       "last_escalated_size": 3,
@@ -2621,7 +2469,8 @@
     "3c4f7b992ad49877": {
       "topic": "Stellar Blade Blood Rain Sequel Announcement",
       "item_ids": [
-        "4860e4594e43"
+        "4860e4594e43",
+        "655e12209456"
       ],
       "created_at": "2026-06-06T01:26:39.800206+00:00",
       "last_escalated_size": 0,
@@ -2694,7 +2543,8 @@
     "7fd5afde4e4b51d5": {
       "topic": "California Fortune 500 Ranking Drop Behind Texas",
       "item_ids": [
-        "5e2abe150c7e"
+        "5e2abe150c7e",
+        "ee86309679dc"
       ],
       "created_at": "2026-06-06T10:17:37.238808+00:00",
       "last_escalated_size": 0,
@@ -2703,7 +2553,8 @@
     "7a887f808b069c55": {
       "topic": "BMW Belgium EV Order 1000 Vehicles",
       "item_ids": [
-        "c10c62dd4c56"
+        "c10c62dd4c56",
+        "b451fb6cd357"
       ],
       "created_at": "2026-06-06T10:17:37.238808+00:00",
       "last_escalated_size": 0,
@@ -2771,7 +2622,80 @@
       "created_at": "2026-06-06T11:49:20.086189+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b37af2b1adec5c01": {
+      "topic": "Jodie Foster Taxi Driver Set Anecdote Scorsese De Niro",
+      "item_ids": [
+        "b3153a3952fa"
+      ],
+      "created_at": "2026-06-06T12:59:14.070152+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3fa927fe10233afe": {
+      "topic": "Madonna Concert Experience Technology Phone Criticism",
+      "item_ids": [
+        "f3024a3bd5fe",
+        "986de600a443"
+      ],
+      "created_at": "2026-06-06T12:59:14.070152+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c8f14634b20f9f6a": {
+      "topic": "Control Resonant Game Backrooms Aesthetic",
+      "item_ids": [
+        "1bd6080707f4"
+      ],
+      "created_at": "2026-06-06T12:59:14.070152+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "16ec5c7cd44cd0ea": {
+      "topic": "Indie Games Roundup Consume Me iOS",
+      "item_ids": [
+        "62b01b4b866d"
+      ],
+      "created_at": "2026-06-06T12:59:14.070152+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9278eb4933a876b3": {
+      "topic": "Warren Buffett Berkshire AI Investments Billions",
+      "item_ids": [
+        "64e3560c59d5"
+      ],
+      "created_at": "2026-06-06T12:59:14.070152+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ed46fc0dffe81e25": {
+      "topic": "Long Island Knicks Fan NBA Finals Prediction Viral",
+      "item_ids": [
+        "f76aceda43dc"
+      ],
+      "created_at": "2026-06-06T12:59:14.070152+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ed78f13a8cf3c2e9": {
+      "topic": "FIFA Video Game Netflix Partnership World Cup Launch",
+      "item_ids": [
+        "82fbafa24f45"
+      ],
+      "created_at": "2026-06-06T12:59:14.070152+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "85f8d78ef67db726": {
+      "topic": "NYC Bar Owner Kalshi Prediction Market Knicks Finals Hedge",
+      "item_ids": [
+        "b56774e5386c"
+      ],
+      "created_at": "2026-06-06T12:59:14.070152+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-06T11:49:25.368647+00:00"
+  "last_checked": "2026-06-06T12:59:14.086052+00:00"
 }
