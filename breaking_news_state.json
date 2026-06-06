@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "92cf661f9e5f",
-    "729fbc4e1eb5",
-    "7171d772576c",
-    "fa8afdb547bf",
-    "ce08229b3f11",
-    "19451b3d6a0d",
-    "754947d63e34",
-    "f9d8cfdaf38b",
-    "dc24829f2e63",
-    "9c7d6c037dae",
-    "64d9b1101438",
-    "c33fac54ad86",
-    "8a8592df2ede",
-    "801f660c1d7f",
-    "65c66a290c4f",
     "2527b38c2f85",
     "cbb760356ced",
     "015e7e771703",
@@ -499,21 +484,24 @@
     "eac3b5b9794e",
     "742764925925",
     "43a32a23452d",
-    "3a47cb16a711"
+    "3a47cb16a711",
+    "e8facb175bc5",
+    "a85c4f7a7718",
+    "232a7bc8d6e2",
+    "d400f7adf4d7",
+    "b7b89ba5c65c",
+    "5dfc5500f01b",
+    "b82379998c59",
+    "76ccec8f5d1c",
+    "b36475e17d50",
+    "2bd3881f6d8c",
+    "ba89f6108e68",
+    "2d956e8b3fcc",
+    "77f5f11d62a3",
+    "b3dcfc57c9c0",
+    "0d641b951cc1"
   ],
   "failed_ids": {
-    "05da648bd9fc": "2026-06-05T22:00:07.070141+00:00",
-    "cd91b855f9ee": "2026-06-05T22:00:07.070141+00:00",
-    "d20ca9db23d8": "2026-06-05T23:19:26.205289+00:00",
-    "0fc3b5f90326": "2026-06-05T23:19:26.205289+00:00",
-    "ee40f9722f38": "2026-06-05T23:19:26.205289+00:00",
-    "b9c9f2e65a2f": "2026-06-05T23:19:26.205289+00:00",
-    "c11f2d21190a": "2026-06-05T23:19:26.205289+00:00",
-    "a62a5dcb6ca2": "2026-06-05T23:19:26.205289+00:00",
-    "911bdd6eb685": "2026-06-05T23:19:26.205289+00:00",
-    "8b2a1688f4cd": "2026-06-05T23:19:26.205289+00:00",
-    "e8926c0b987c": "2026-06-05T23:19:26.205289+00:00",
-    "810c7101b60f": "2026-06-05T23:19:26.205289+00:00",
     "ca177337cf9d": "2026-06-06T01:25:55.827217+00:00",
     "a479a2333b95": "2026-06-06T01:25:55.827217+00:00",
     "842d6b9d9a82": "2026-06-06T01:25:55.827217+00:00",
@@ -523,108 +511,21 @@
     "a0954c08faa9": "2026-06-06T01:25:55.827217+00:00",
     "4d9793dbd5b5": "2026-06-06T01:25:55.827217+00:00",
     "3be64e38befc": "2026-06-06T01:25:55.827217+00:00",
-    "a1a8151103c8": "2026-06-06T01:25:55.827217+00:00"
+    "a1a8151103c8": "2026-06-06T01:25:55.827217+00:00",
+    "84f5acc74914": "2026-06-06T05:13:04.335487+00:00",
+    "f653445c2b61": "2026-06-06T05:13:04.335487+00:00",
+    "0f940deef856": "2026-06-06T05:13:04.335487+00:00",
+    "ddc1c99755da": "2026-06-06T05:13:04.335487+00:00",
+    "e4ad55d01b47": "2026-06-06T05:13:04.335487+00:00",
+    "9687cfba0857": "2026-06-06T05:13:04.335487+00:00",
+    "6196a5fa2b10": "2026-06-06T05:13:04.335487+00:00",
+    "db6f60d44fc7": "2026-06-06T05:13:04.335487+00:00",
+    "e16784ea3474": "2026-06-06T05:13:04.335487+00:00",
+    "9c6a5d441bf3": "2026-06-06T05:13:04.335487+00:00",
+    "38e17c7b38ff": "2026-06-06T05:13:04.335487+00:00",
+    "5ba50cdefbfb": "2026-06-06T05:13:04.335487+00:00"
   },
   "live_clusters": {
-    "8105b3d3ca1bff1c": {
-      "topic": "Tinashe New Album Release",
-      "item_ids": [
-        "9c70eb6f00de",
-        "d82fd193105b"
-      ],
-      "created_at": "2026-06-05T04:53:12.474259+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d9fb68b75afe0724": {
-      "topic": "Steve Lacy The Feeling Music Video",
-      "item_ids": [
-        "5dcf95e15afe",
-        "b97d88fac120"
-      ],
-      "created_at": "2026-06-05T04:53:12.474259+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e61a4bdd04a51e3a": {
-      "topic": "Taylor Swift Toy Story 5 Song",
-      "item_ids": [
-        "8a07faed5cf6",
-        "680b35b01e74",
-        "d50274d44a03"
-      ],
-      "created_at": "2026-06-05T04:53:12.474259+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-05T20:29:19.604305+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "8a07faed5cf6",
-        "680b35b01e74",
-        "d50274d44a03"
-      ]
-    },
-    "507029bee8820e84": {
-      "topic": "Lizzo New Album Release",
-      "item_ids": [
-        "7096f9e909e0"
-      ],
-      "created_at": "2026-06-05T04:53:12.474259+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7968d0ee8dae01b3": {
-      "topic": "Madonna Times Square Pride Grindr Pop-Up",
-      "item_ids": [
-        "8ca40ea49751"
-      ],
-      "created_at": "2026-06-05T04:53:12.474259+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a91a83e680071e02": {
-      "topic": "Florida Georgia Line CMA Fest Reunion",
-      "item_ids": [
-        "53efdf4a9181",
-        "3d09a0bb0d54",
-        "8726123f43a6"
-      ],
-      "created_at": "2026-06-05T04:53:12.474259+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-05T23:19:26.205289+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "53efdf4a9181",
-        "3d09a0bb0d54",
-        "8726123f43a6"
-      ]
-    },
-    "a59534cec82adb4d": {
-      "topic": "Yankees Judge Stress Fracture Rib",
-      "item_ids": [
-        "29dce28c82e7"
-      ],
-      "created_at": "2026-06-05T04:53:12.474259+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c29111a4a8dfb256": {
-      "topic": "Vegas McNabb Puck Injury Hospital",
-      "item_ids": [
-        "7dd512c3b11c"
-      ],
-      "created_at": "2026-06-05T04:53:12.474259+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "30e427c6773c855b": {
-      "topic": "Texas WCWS Title Over TTU",
-      "item_ids": [
-        "476612d8f0fa"
-      ],
-      "created_at": "2026-06-05T04:53:12.474259+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "2bdd1995c571ff57": {
       "topic": "Mizuno Morelia LS OG '90s Football Sneaker Release",
       "item_ids": [
@@ -948,11 +849,23 @@
         "441bbf4fa873",
         "367293da8d15",
         "7aa3c041c2be",
-        "eac3b5b9794e"
+        "eac3b5b9794e",
+        "232a7bc8d6e2",
+        "d400f7adf4d7",
+        "5dfc5500f01b",
+        "b82379998c59",
+        "76ccec8f5d1c",
+        "b36475e17d50",
+        "2bd3881f6d8c",
+        "ba89f6108e68",
+        "2d956e8b3fcc",
+        "77f5f11d62a3",
+        "b3dcfc57c9c0",
+        "0d641b951cc1"
       ],
       "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 12,
-      "last_escalated_at": "2026-06-06T01:25:55.827217+00:00",
+      "last_escalated_size": 24,
+      "last_escalated_at": "2026-06-06T05:13:04.335487+00:00",
       "picks_file": "picks/picks-2026-06-06-0126.md",
       "last_escalated_item_ids": [
         "d8a403c91b2f",
@@ -966,9 +879,21 @@
         "441bbf4fa873",
         "367293da8d15",
         "7aa3c041c2be",
-        "eac3b5b9794e"
+        "eac3b5b9794e",
+        "232a7bc8d6e2",
+        "d400f7adf4d7",
+        "5dfc5500f01b",
+        "b82379998c59",
+        "76ccec8f5d1c",
+        "b36475e17d50",
+        "2bd3881f6d8c",
+        "ba89f6108e68",
+        "2d956e8b3fcc",
+        "77f5f11d62a3",
+        "b3dcfc57c9c0",
+        "0d641b951cc1"
       ],
-      "why_text": "The NBA Finals are here, and it's a matchup nobody saw coming a decade ago \u2014 the New York Knicks, finally back on the biggest stage, hosting a scrappy San Antonio Spurs team that's reloaded around Devin Vassell. Game 1 was the most-watched Finals opener since 2018, which tells you everything about how starved fans are for a Knicks moment and how compelling this underdog Spurs squad has become. This series is doing what the NBA desperately needed: making the Finals feel like must-watch television again."
+      "why_text": "The NBA Finals are here, and it's a matchup nobody saw coming a decade ago \u2014 the New York Knicks, finally back on the biggest stage, hosting a scrappy San Antonio Spurs team that's reloaded around Devin Vassell. Game 1 was the most-watched Finals opener since 2018, which tells you everything about how starved fans are for a Knicks moment and how compelling this underdog Spurs squad has become. This series is doing what the NBA desperately needed: making the Finals feel like must-watch television again.\n**Update 12:13 AM CT:** Game 2 is in the books: the Knicks survived a late Spurs rally to win 105-104 and take a commanding 2-0 Finals lead, with Victor Wembanyama's crucial late-game blunder sealing New York's narrow escape \u2014 while Jalen Brunson continues to carry the offense and Josh Hart's surprising no-show, combined with controversial officiating from referee Tony Brothers, has social media roaring heading into Game 3 in San Antonio."
     },
     "f97c37ce8d1cc00f": {
       "topic": "NBA Finals Game 1 Jalen Brunson Defense Analysis",
@@ -1988,7 +1913,8 @@
     "2d5b6814c10d818b": {
       "topic": "NBA Leonard Aspiration Case Interview",
       "item_ids": [
-        "dfa9b65623dd"
+        "dfa9b65623dd",
+        "b7b89ba5c65c"
       ],
       "created_at": "2026-06-05T20:30:12.056736+00:00",
       "last_escalated_size": 0,
@@ -2332,7 +2258,8 @@
     "b71b6652c2b982d4": {
       "topic": "Sean Penn Selfie Refusal Holocaust Survivor Incident",
       "item_ids": [
-        "dbb449008550"
+        "dbb449008550",
+        "a85c4f7a7718"
       ],
       "created_at": "2026-06-05T23:20:21.774033+00:00",
       "last_escalated_size": 0,
@@ -2691,7 +2618,16 @@
       "created_at": "2026-06-06T01:26:39.800206+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f43e1358e8541962": {
+      "topic": "Zegna Fashion Show Celebrity Attendance",
+      "item_ids": [
+        "e8facb175bc5"
+      ],
+      "created_at": "2026-06-06T05:13:46.168954+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-06T01:26:47.032303+00:00"
+  "last_checked": "2026-06-06T05:13:59.587378+00:00"
 }
