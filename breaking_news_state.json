@@ -1,17 +1,5 @@
 {
   "known_ids": [
-    "2527b38c2f85",
-    "cbb760356ced",
-    "015e7e771703",
-    "9c3f7198700d",
-    "0f80498f6c77",
-    "df8625c378ae",
-    "afb69b7e3de3",
-    "eb9c4ad3cff5",
-    "7178f04cb4f8",
-    "9d2e6857f0ff",
-    "b2c015df3c70",
-    "81b0c78f7cc6",
     "6391e20e9c68",
     "924d347f52b2",
     "604dc945ff8b",
@@ -499,19 +487,21 @@
     "2d956e8b3fcc",
     "77f5f11d62a3",
     "b3dcfc57c9c0",
-    "0d641b951cc1"
+    "0d641b951cc1",
+    "9de65ef0e116",
+    "16aac1a50de1",
+    "7c8a99b6a517",
+    "04216fb7c02c",
+    "3727bc3af2fc",
+    "673034ed9e84",
+    "5212289cb63c",
+    "bad5881f3297",
+    "fb5447729d50",
+    "390c547c391e",
+    "6057125a9923",
+    "5a5b3e435f69"
   ],
   "failed_ids": {
-    "ca177337cf9d": "2026-06-06T01:25:55.827217+00:00",
-    "a479a2333b95": "2026-06-06T01:25:55.827217+00:00",
-    "842d6b9d9a82": "2026-06-06T01:25:55.827217+00:00",
-    "1bfb2fe3cb80": "2026-06-06T01:25:55.827217+00:00",
-    "941934c12bf7": "2026-06-06T01:25:55.827217+00:00",
-    "7acfcdd1600d": "2026-06-06T01:25:55.827217+00:00",
-    "a0954c08faa9": "2026-06-06T01:25:55.827217+00:00",
-    "4d9793dbd5b5": "2026-06-06T01:25:55.827217+00:00",
-    "3be64e38befc": "2026-06-06T01:25:55.827217+00:00",
-    "a1a8151103c8": "2026-06-06T01:25:55.827217+00:00",
     "84f5acc74914": "2026-06-06T05:13:04.335487+00:00",
     "f653445c2b61": "2026-06-06T05:13:04.335487+00:00",
     "0f940deef856": "2026-06-06T05:13:04.335487+00:00",
@@ -523,7 +513,18 @@
     "e16784ea3474": "2026-06-06T05:13:04.335487+00:00",
     "9c6a5d441bf3": "2026-06-06T05:13:04.335487+00:00",
     "38e17c7b38ff": "2026-06-06T05:13:04.335487+00:00",
-    "5ba50cdefbfb": "2026-06-06T05:13:04.335487+00:00"
+    "5ba50cdefbfb": "2026-06-06T05:13:04.335487+00:00",
+    "2a63ed2d2489": "2026-06-06T08:03:03.079539+00:00",
+    "b1626b34ed4f": "2026-06-06T08:03:03.079539+00:00",
+    "a48c2df33a75": "2026-06-06T08:03:03.079539+00:00",
+    "7b0e61dd13ec": "2026-06-06T08:03:03.079539+00:00",
+    "acdeab396bd9": "2026-06-06T08:03:03.079539+00:00",
+    "33bb80bf2cda": "2026-06-06T08:03:03.079539+00:00",
+    "2aebb2727629": "2026-06-06T08:03:03.079539+00:00",
+    "23d8ace79895": "2026-06-06T08:03:03.079539+00:00",
+    "8862278f428b": "2026-06-06T08:03:03.079539+00:00",
+    "379df7cd5610": "2026-06-06T08:03:03.079539+00:00",
+    "d00cf6169b94": "2026-06-06T08:03:03.079539+00:00"
   },
   "live_clusters": {
     "2bdd1995c571ff57": {
@@ -861,11 +862,19 @@
         "2d956e8b3fcc",
         "77f5f11d62a3",
         "b3dcfc57c9c0",
-        "0d641b951cc1"
+        "0d641b951cc1",
+        "7c8a99b6a517",
+        "04216fb7c02c",
+        "3727bc3af2fc",
+        "673034ed9e84",
+        "5212289cb63c",
+        "bad5881f3297",
+        "fb5447729d50",
+        "390c547c391e"
       ],
       "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 24,
-      "last_escalated_at": "2026-06-06T05:13:04.335487+00:00",
+      "last_escalated_size": 32,
+      "last_escalated_at": "2026-06-06T08:03:03.079539+00:00",
       "picks_file": "picks/picks-2026-06-06-0126.md",
       "last_escalated_item_ids": [
         "d8a403c91b2f",
@@ -891,9 +900,17 @@
         "2d956e8b3fcc",
         "77f5f11d62a3",
         "b3dcfc57c9c0",
-        "0d641b951cc1"
+        "0d641b951cc1",
+        "7c8a99b6a517",
+        "04216fb7c02c",
+        "3727bc3af2fc",
+        "673034ed9e84",
+        "5212289cb63c",
+        "bad5881f3297",
+        "fb5447729d50",
+        "390c547c391e"
       ],
-      "why_text": "The NBA Finals are here, and it's a matchup nobody saw coming a decade ago \u2014 the New York Knicks, finally back on the biggest stage, hosting a scrappy San Antonio Spurs team that's reloaded around Devin Vassell. Game 1 was the most-watched Finals opener since 2018, which tells you everything about how starved fans are for a Knicks moment and how compelling this underdog Spurs squad has become. This series is doing what the NBA desperately needed: making the Finals feel like must-watch television again.\n**Update 12:13 AM CT:** Game 2 is in the books: the Knicks survived a late Spurs rally to win 105-104 and take a commanding 2-0 Finals lead, with Victor Wembanyama's crucial late-game blunder sealing New York's narrow escape \u2014 while Jalen Brunson continues to carry the offense and Josh Hart's surprising no-show, combined with controversial officiating from referee Tony Brothers, has social media roaring heading into Game 3 in San Antonio."
+      "why_text": "The NBA Finals are here, and it's a matchup nobody saw coming a decade ago \u2014 the New York Knicks, finally back on the biggest stage, hosting a scrappy San Antonio Spurs team that's reloaded around Devin Vassell. Game 1 was the most-watched Finals opener since 2018, which tells you everything about how starved fans are for a Knicks moment and how compelling this underdog Spurs squad has become. This series is doing what the NBA desperately needed: making the Finals feel like must-watch television again.\n**Update 12:13 AM CT:** Game 2 is in the books: the Knicks survived a late Spurs rally to win 105-104 and take a commanding 2-0 Finals lead, with Victor Wembanyama's crucial late-game blunder sealing New York's narrow escape \u2014 while Jalen Brunson continues to carry the offense and Josh Hart's surprising no-show, combined with controversial officiating from referee Tony Brothers, has social media roaring heading into Game 3 in San Antonio.\n**Update 3:03 AM CT:** Post-game analysis is heating up, with Richard Jefferson and Landry Shamet trending on social media \u2014 Jefferson drawing attention for his ESPN commentary on Wembanyama's pivotal late-game turnover, while Shamet's name is circulating amid discussion of the Spurs' bench rotation and whether San Antonio's depth can keep pace with New York heading into a crucial Game 3 at home."
     },
     "f97c37ce8d1cc00f": {
       "topic": "NBA Finals Game 1 Jalen Brunson Defense Analysis",
@@ -2627,7 +2644,25 @@
       "created_at": "2026-06-06T05:13:46.168954+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "add1fb18920db600": {
+      "topic": "Shivani Pandya Malhotra Red Sea Film Festival Managing Director Departure",
+      "item_ids": [
+        "9de65ef0e116"
+      ],
+      "created_at": "2026-06-06T08:03:45.152652+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "13540ad6b4940511": {
+      "topic": "The Offspring Dexter Holland Electric Callboy Collaboration Single",
+      "item_ids": [
+        "16aac1a50de1"
+      ],
+      "created_at": "2026-06-06T08:03:45.152652+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-06T05:13:59.587378+00:00"
+  "last_checked": "2026-06-06T08:03:54.399767+00:00"
 }
