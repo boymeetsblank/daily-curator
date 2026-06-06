@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "719146a476ef",
-    "e1bbb3e883f4",
-    "24c43096cc5b",
-    "b33eaf091f40",
-    "89b948e89303",
-    "f1812a737a15",
-    "e39779be7e9e",
-    "3d9b805c1cdc",
-    "ca9ce1e4ce86",
-    "5e2fdb04d502",
-    "aa85a32884d1",
-    "dc39630c842c",
-    "74439d6eaab6",
     "92cf661f9e5f",
     "729fbc4e1eb5",
     "7171d772576c",
@@ -499,18 +486,22 @@
     "df1fb69669c3",
     "d97a1946832e",
     "b92a5728bc1c",
-    "b7c02dad7488"
+    "b7c02dad7488",
+    "4f0893239df2",
+    "4860e4594e43",
+    "272009b4f8a4",
+    "c52a0a753a53",
+    "a59dabc678e8",
+    "441bbf4fa873",
+    "0e5fb45a1b89",
+    "367293da8d15",
+    "7aa3c041c2be",
+    "eac3b5b9794e",
+    "742764925925",
+    "43a32a23452d",
+    "3a47cb16a711"
   ],
   "failed_ids": {
-    "de6c4f6b96b8": "2026-06-05T20:29:19.604305+00:00",
-    "6a9726da87fd": "2026-06-05T20:29:19.604305+00:00",
-    "50c978aa3040": "2026-06-05T20:29:19.604305+00:00",
-    "07962afb65cc": "2026-06-05T20:29:19.604305+00:00",
-    "e509b2687706": "2026-06-05T20:29:19.604305+00:00",
-    "6743670b8275": "2026-06-05T20:29:19.604305+00:00",
-    "b9d9c0c7e6c1": "2026-06-05T20:29:19.604305+00:00",
-    "9bfb52a45122": "2026-06-05T20:29:19.604305+00:00",
-    "3be64e38befc": "2026-06-05T20:29:19.604305+00:00",
     "05da648bd9fc": "2026-06-05T22:00:07.070141+00:00",
     "cd91b855f9ee": "2026-06-05T22:00:07.070141+00:00",
     "d20ca9db23d8": "2026-06-05T23:19:26.205289+00:00",
@@ -522,54 +513,19 @@
     "911bdd6eb685": "2026-06-05T23:19:26.205289+00:00",
     "8b2a1688f4cd": "2026-06-05T23:19:26.205289+00:00",
     "e8926c0b987c": "2026-06-05T23:19:26.205289+00:00",
-    "810c7101b60f": "2026-06-05T23:19:26.205289+00:00"
+    "810c7101b60f": "2026-06-05T23:19:26.205289+00:00",
+    "ca177337cf9d": "2026-06-06T01:25:55.827217+00:00",
+    "a479a2333b95": "2026-06-06T01:25:55.827217+00:00",
+    "842d6b9d9a82": "2026-06-06T01:25:55.827217+00:00",
+    "1bfb2fe3cb80": "2026-06-06T01:25:55.827217+00:00",
+    "941934c12bf7": "2026-06-06T01:25:55.827217+00:00",
+    "7acfcdd1600d": "2026-06-06T01:25:55.827217+00:00",
+    "a0954c08faa9": "2026-06-06T01:25:55.827217+00:00",
+    "4d9793dbd5b5": "2026-06-06T01:25:55.827217+00:00",
+    "3be64e38befc": "2026-06-06T01:25:55.827217+00:00",
+    "a1a8151103c8": "2026-06-06T01:25:55.827217+00:00"
   },
   "live_clusters": {
-    "6c05b2a4741a467f": {
-      "topic": "Yung Miami Drake Interaction Social Media",
-      "item_ids": [
-        "84d2ed83462f"
-      ],
-      "created_at": "2026-06-05T00:20:42.916532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c207ac87a9e09a15": {
-      "topic": "The Beach Boys Pet Sounds 60th Anniversary Merchandise",
-      "item_ids": [
-        "ae2fbce119ed"
-      ],
-      "created_at": "2026-06-05T00:20:42.916532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d68d1b9ba017c4a7": {
-      "topic": "Olivia Rodrigo ICE Video Song Usage Outrage",
-      "item_ids": [
-        "1a9bf894ec9b"
-      ],
-      "created_at": "2026-06-05T00:20:42.916532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "12a8e251540f49b1": {
-      "topic": "Founders Fund Game Show Tech Founders",
-      "item_ids": [
-        "6db06110db22"
-      ],
-      "created_at": "2026-06-05T00:20:42.916532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9e1ab7b1d220c599": {
-      "topic": "South Korea Stock Market Tech Decline AI Selloff",
-      "item_ids": [
-        "cc3b0718731a"
-      ],
-      "created_at": "2026-06-05T00:20:42.916532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "8105b3d3ca1bff1c": {
       "topic": "Tinashe New Album Release",
       "item_ids": [
@@ -988,20 +944,31 @@
         "f40635ac0ec4",
         "2537008167a3",
         "7c7832d51a7a",
-        "92deca0b05e5"
+        "92deca0b05e5",
+        "441bbf4fa873",
+        "367293da8d15",
+        "7aa3c041c2be",
+        "eac3b5b9794e"
       ],
       "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-05T22:00:07.070141+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 12,
+      "last_escalated_at": "2026-06-06T01:25:55.827217+00:00",
+      "picks_file": "picks/picks-2026-06-06-0126.md",
       "last_escalated_item_ids": [
         "d8a403c91b2f",
         "fd76a721349a",
         "7db95b92b946",
         "042f7b4e158c",
         "f40635ac0ec4",
-        "2537008167a3"
-      ]
+        "2537008167a3",
+        "7c7832d51a7a",
+        "92deca0b05e5",
+        "441bbf4fa873",
+        "367293da8d15",
+        "7aa3c041c2be",
+        "eac3b5b9794e"
+      ],
+      "why_text": "The NBA Finals are here, and it's a matchup nobody saw coming a decade ago \u2014 the New York Knicks, finally back on the biggest stage, hosting a scrappy San Antonio Spurs team that's reloaded around Devin Vassell. Game 1 was the most-watched Finals opener since 2018, which tells you everything about how starved fans are for a Knicks moment and how compelling this underdog Spurs squad has become. This series is doing what the NBA desperately needed: making the Finals feel like must-watch television again."
     },
     "f97c37ce8d1cc00f": {
       "topic": "NBA Finals Game 1 Jalen Brunson Defense Analysis",
@@ -1759,7 +1726,8 @@
     "1ad66b45f989a495": {
       "topic": "Spa 8 Hours BMW Motorsports Provisional Pole",
       "item_ids": [
-        "af92133206a2"
+        "af92133206a2",
+        "742764925925"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
       "last_escalated_size": 0,
@@ -2338,7 +2306,8 @@
       "item_ids": [
         "4323e481a606",
         "6ea72d5c5713",
-        "a03438edd319"
+        "a03438edd319",
+        "c52a0a753a53"
       ],
       "created_at": "2026-06-05T22:00:55.245689+00:00",
       "last_escalated_size": 3,
@@ -2588,7 +2557,8 @@
     "a5f136daac123a33": {
       "topic": "NBA Finals Celebrity Attendance Game 2 Timoth\u00e9e Chalamet",
       "item_ids": [
-        "13fd73380d75"
+        "13fd73380d75",
+        "0e5fb45a1b89"
       ],
       "created_at": "2026-06-05T23:20:21.774033+00:00",
       "last_escalated_size": 0,
@@ -2624,7 +2594,8 @@
     "895a22a67117f83f": {
       "topic": "Backrooms Movie Box Office Weekend 2 Projected Decline",
       "item_ids": [
-        "f782a2652b5d"
+        "f782a2652b5d",
+        "4f0893239df2"
       ],
       "created_at": "2026-06-05T23:20:21.774033+00:00",
       "last_escalated_size": 0,
@@ -2711,7 +2682,16 @@
       "created_at": "2026-06-05T23:20:21.774033+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "3c4f7b992ad49877": {
+      "topic": "Stellar Blade Blood Rain Sequel Announcement",
+      "item_ids": [
+        "4860e4594e43"
+      ],
+      "created_at": "2026-06-06T01:26:39.800206+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-05T23:20:28.387741+00:00"
+  "last_checked": "2026-06-06T01:26:47.032303+00:00"
 }
