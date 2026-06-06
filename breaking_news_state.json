@@ -1,24 +1,5 @@
 {
   "known_ids": [
-    "77c8be51fed1",
-    "3cf38fd82c2d",
-    "90184bfed682",
-    "4ddea07363ae",
-    "de4e934adbc4",
-    "f8e34d36c71e",
-    "1fbd74d78844",
-    "c5a5af4af485",
-    "43438a9489bb",
-    "a812b1292c06",
-    "9c70eb6f00de",
-    "5dcf95e15afe",
-    "8a07faed5cf6",
-    "7096f9e909e0",
-    "b83dc278249b",
-    "8ca40ea49751",
-    "53efdf4a9181",
-    "a9ed2096b559",
-    "3f5c4f3e52c2",
     "6e8d0d0ebcd2",
     "12599075e223",
     "29dce28c82e7",
@@ -499,7 +480,26 @@
     "1bdbc5559cad",
     "1a1873d1c645",
     "0ab6c0fbd0ba",
-    "878479a0ac6a"
+    "878479a0ac6a",
+    "44a19c89d5b4",
+    "a263b026674f",
+    "ce08229b3f11",
+    "23afc36db598",
+    "c82902725fb5",
+    "454af80e5be4",
+    "a475bbe67d91",
+    "725f92b88a01",
+    "487eb3626176",
+    "de5c3361be7d",
+    "af96b6090faa",
+    "207ef385df97",
+    "b412aba9523b",
+    "fdaab39166aa",
+    "1320fa23c3c4",
+    "7eb7a209a441",
+    "c3d01886fb4f",
+    "fb29b7df7833",
+    "75cb8f2d6377"
   ],
   "failed_ids": {
     "2a63ed2d2489": "2026-06-06T08:03:03.079539+00:00",
@@ -524,7 +524,16 @@
     "0acbc9e3414c": "2026-06-06T10:16:58.756453+00:00",
     "8bdb0e96efc8": "2026-06-06T10:16:58.756453+00:00",
     "ade4515f99da": "2026-06-06T10:16:58.756453+00:00",
-    "139f6865d787": "2026-06-06T10:16:58.756453+00:00"
+    "139f6865d787": "2026-06-06T10:16:58.756453+00:00",
+    "59732ef86f4c": "2026-06-06T11:48:44.627727+00:00",
+    "d06cb944033c": "2026-06-06T11:48:44.627727+00:00",
+    "448b8fa6ec96": "2026-06-06T11:48:44.627727+00:00",
+    "860d42257d2e": "2026-06-06T11:48:44.627727+00:00",
+    "83694fb32583": "2026-06-06T11:48:44.627727+00:00",
+    "e840eb161853": "2026-06-06T11:48:44.627727+00:00",
+    "c4dc67a2cd30": "2026-06-06T11:48:44.627727+00:00",
+    "d70c28a5eb11": "2026-06-06T11:48:44.627727+00:00",
+    "2ffcc1de2593": "2026-06-06T11:48:44.627727+00:00"
   },
   "live_clusters": {
     "ca2635269a35639c": {
@@ -641,7 +650,8 @@
       "item_ids": [
         "c891cd6e2669",
         "8df0ea898248",
-        "15ff4271e40d"
+        "15ff4271e40d",
+        "a263b026674f"
       ],
       "created_at": "2026-06-05T11:48:53.187898+00:00",
       "last_escalated_size": 3,
@@ -831,11 +841,16 @@
         "c789530e8f67",
         "122ef97f0e4d",
         "1bdbc5559cad",
-        "878479a0ac6a"
+        "878479a0ac6a",
+        "de5c3361be7d",
+        "af96b6090faa",
+        "207ef385df97",
+        "1320fa23c3c4",
+        "fb29b7df7833"
       ],
       "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 38,
-      "last_escalated_at": "2026-06-06T10:16:58.756453+00:00",
+      "last_escalated_size": 43,
+      "last_escalated_at": "2026-06-06T11:48:44.627727+00:00",
       "picks_file": "picks/picks-2026-06-06-0126.md",
       "last_escalated_item_ids": [
         "d8a403c91b2f",
@@ -875,9 +890,14 @@
         "c789530e8f67",
         "122ef97f0e4d",
         "1bdbc5559cad",
-        "878479a0ac6a"
+        "878479a0ac6a",
+        "de5c3361be7d",
+        "af96b6090faa",
+        "207ef385df97",
+        "1320fa23c3c4",
+        "fb29b7df7833"
       ],
-      "why_text": "The NBA Finals are here, and it's a matchup nobody saw coming a decade ago \u2014 the New York Knicks, finally back on the biggest stage, hosting a scrappy San Antonio Spurs team that's reloaded around Devin Vassell. Game 1 was the most-watched Finals opener since 2018, which tells you everything about how starved fans are for a Knicks moment and how compelling this underdog Spurs squad has become. This series is doing what the NBA desperately needed: making the Finals feel like must-watch television again.\n**Update 12:13 AM CT:** Game 2 is in the books: the Knicks survived a late Spurs rally to win 105-104 and take a commanding 2-0 Finals lead, with Victor Wembanyama's crucial late-game blunder sealing New York's narrow escape \u2014 while Jalen Brunson continues to carry the offense and Josh Hart's surprising no-show, combined with controversial officiating from referee Tony Brothers, has social media roaring heading into Game 3 in San Antonio.\n**Update 3:03 AM CT:** Post-game analysis is heating up, with Richard Jefferson and Landry Shamet trending on social media \u2014 Jefferson drawing attention for his ESPN commentary on Wembanyama's pivotal late-game turnover, while Shamet's name is circulating amid discussion of the Spurs' bench rotation and whether San Antonio's depth can keep pace with New York heading into a crucial Game 3 at home.\n**Update 5:17 AM CT:** Off the court, the celebrity and billionaire spectacle around this series is reaching peak New York excess \u2014 with courtside seats reportedly fetching over $10,000 an hour \u2014 while Karl-Anthony Towns is drawing serious Finals MVP buzz from NBA legends, and Dylan Harper and Keldon Johnson are both trending as fans debate Spurs roster moves and whether San Antonio can shake up their rotation before a must-win Game 3 at home."
+      "why_text": "The NBA Finals are here, and it's a matchup nobody saw coming a decade ago \u2014 the New York Knicks, finally back on the biggest stage, hosting a scrappy San Antonio Spurs team that's reloaded around Devin Vassell. Game 1 was the most-watched Finals opener since 2018, which tells you everything about how starved fans are for a Knicks moment and how compelling this underdog Spurs squad has become. This series is doing what the NBA desperately needed: making the Finals feel like must-watch television again.\n**Update 12:13 AM CT:** Game 2 is in the books: the Knicks survived a late Spurs rally to win 105-104 and take a commanding 2-0 Finals lead, with Victor Wembanyama's crucial late-game blunder sealing New York's narrow escape \u2014 while Jalen Brunson continues to carry the offense and Josh Hart's surprising no-show, combined with controversial officiating from referee Tony Brothers, has social media roaring heading into Game 3 in San Antonio.\n**Update 3:03 AM CT:** Post-game analysis is heating up, with Richard Jefferson and Landry Shamet trending on social media \u2014 Jefferson drawing attention for his ESPN commentary on Wembanyama's pivotal late-game turnover, while Shamet's name is circulating amid discussion of the Spurs' bench rotation and whether San Antonio's depth can keep pace with New York heading into a crucial Game 3 at home.\n**Update 5:17 AM CT:** Off the court, the celebrity and billionaire spectacle around this series is reaching peak New York excess \u2014 with courtside seats reportedly fetching over $10,000 an hour \u2014 while Karl-Anthony Towns is drawing serious Finals MVP buzz from NBA legends, and Dylan Harper and Keldon Johnson are both trending as fans debate Spurs roster moves and whether San Antonio can shake up their rotation before a must-win Game 3 at home.\n**Update 6:49 AM CT:** The cultural moment around this Knicks run is now fully spilling beyond basketball \u2014 Charles Barkley is publicly praising New York's electric fanbase, the Giants' NFL roster is reacting on social media, and USA Today is framing Madison Square Garden's revival as a city-wide phenomenon, while #NYKvsSAS continues to dominate X as the series heads to San Antonio for Game 3."
     },
     "f97c37ce8d1cc00f": {
       "topic": "NBA Finals Game 1 Jalen Brunson Defense Analysis",
@@ -2619,7 +2639,8 @@
     "add1fb18920db600": {
       "topic": "Shivani Pandya Malhotra Red Sea Film Festival Managing Director Departure",
       "item_ids": [
-        "9de65ef0e116"
+        "9de65ef0e116",
+        "44a19c89d5b4"
       ],
       "created_at": "2026-06-06T08:03:45.152652+00:00",
       "last_escalated_size": 0,
@@ -2687,7 +2708,70 @@
       "created_at": "2026-06-06T10:17:37.238808+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "63fbf3fa4c32c0e6": {
+      "topic": "Stanley Cup Playoffs Daily Coverage",
+      "item_ids": [
+        "ce08229b3f11"
+      ],
+      "created_at": "2026-06-06T11:49:20.086189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9633682cc3b23369": {
+      "topic": "John Tortorella Vegas Knights Turnaround",
+      "item_ids": [
+        "23afc36db598"
+      ],
+      "created_at": "2026-06-06T11:49:20.086189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "14ea3b210a03d6a4": {
+      "topic": "Anti-Vax Dating Apps IRL Launch",
+      "item_ids": [
+        "c82902725fb5"
+      ],
+      "created_at": "2026-06-06T11:49:20.086189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0f096c8e292de594": {
+      "topic": "Crypto-Funded Chinese Peptide Labs Growth",
+      "item_ids": [
+        "725f92b88a01"
+      ],
+      "created_at": "2026-06-06T11:49:20.086189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4b41d69b54adfea4": {
+      "topic": "AI Price Inflation Consumer Impact",
+      "item_ids": [
+        "487eb3626176"
+      ],
+      "created_at": "2026-06-06T11:49:20.086189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9ccc5c94b46fedb9": {
+      "topic": "SF Coffee Shop Innovative Business Model",
+      "item_ids": [
+        "b412aba9523b"
+      ],
+      "created_at": "2026-06-06T11:49:20.086189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "32c7e9de89edb762": {
+      "topic": "Billionaires Mortgage Luxury Mansions Strategy",
+      "item_ids": [
+        "fdaab39166aa"
+      ],
+      "created_at": "2026-06-06T11:49:20.086189+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-06T10:17:48.518108+00:00"
+  "last_checked": "2026-06-06T11:49:25.368647+00:00"
 }
