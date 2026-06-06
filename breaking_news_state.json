@@ -1,31 +1,5 @@
 {
   "known_ids": [
-    "d360df4d0601",
-    "461941f2d6de",
-    "df474478ba46",
-    "6caf12363781",
-    "57430d9280d6",
-    "4c25430fdca6",
-    "cdd4a3af2ff1",
-    "bd044600b945",
-    "89f4c96c0348",
-    "a7efe5e3e696",
-    "8df0ea898248",
-    "5ead15b65f01",
-    "d8a403c91b2f",
-    "724f76b8aded",
-    "0b57a74142ad",
-    "e80883571dbd",
-    "d85d5c1eb595",
-    "524769906735",
-    "455b5fd0ce62",
-    "acb972ef488a",
-    "741cbabbfd4d",
-    "4a16b475f1f9",
-    "3d8d857c7812",
-    "14097fa7d132",
-    "de89def146ed",
-    "e0bfe9c00a96",
     "10f7bfb278fc",
     "4db9de65a1a5",
     "28d14098cc06",
@@ -499,11 +473,35 @@
     "1cfa64f95d07",
     "87824a6fbdd0",
     "fd6061789351",
-    "91a83cd9a48c"
+    "91a83cd9a48c",
+    "e6540d77d7b2",
+    "874ac1111f6f",
+    "4441fe528aab",
+    "3adb38a8d021",
+    "a0f40bbd9321",
+    "31236670a76f",
+    "00495eb2f7d0",
+    "a9c070236b89",
+    "165cbfa19060",
+    "9e5a8c9a4097",
+    "a91943c64f2e",
+    "06cf7c99ffe2",
+    "73c1dc44dbba",
+    "5e9f06e419a8",
+    "8e10e320cb62",
+    "4dbf686b08c3",
+    "b5d8fb7ef175",
+    "b616c0ab33db",
+    "e8d80f21e9fa",
+    "7f5c9453de4d",
+    "cce553880d5f",
+    "7cb0cb419756",
+    "c827be7b7b2b",
+    "3ab304295ac6",
+    "c4218b0059a3",
+    "69e3f5c2c861"
   ],
   "failed_ids": {
-    "9af9a41d6be7": "2026-06-06T12:58:26.797173+00:00",
-    "76edbacee8aa": "2026-06-06T12:58:26.797173+00:00",
     "47467690e9f2": "2026-06-06T14:47:45.245433+00:00",
     "056b5a8ea105": "2026-06-06T14:47:45.245433+00:00",
     "38f69389937e": "2026-06-06T14:47:45.245433+00:00",
@@ -529,121 +527,26 @@
     "ab4d3e15c18d": "2026-06-06T15:58:33.229347+00:00",
     "92d751c371dd": "2026-06-06T15:58:33.229347+00:00",
     "7b0a44e37a35": "2026-06-06T15:58:33.229347+00:00",
-    "a19890534b51": "2026-06-06T15:58:33.229347+00:00"
+    "a19890534b51": "2026-06-06T15:58:33.229347+00:00",
+    "ccfe51be44a8": "2026-06-06T17:21:11.749258+00:00",
+    "544e358405e7": "2026-06-06T17:21:11.749258+00:00",
+    "54b645f0e8ee": "2026-06-06T17:21:11.749258+00:00",
+    "d76f9f2a730a": "2026-06-06T17:21:11.749258+00:00",
+    "e43f07a247d7": "2026-06-06T17:21:11.749258+00:00",
+    "31072da7fb4b": "2026-06-06T17:21:11.749258+00:00",
+    "eede0ea97734": "2026-06-06T17:21:11.749258+00:00",
+    "70806e77a7c5": "2026-06-06T17:21:11.749258+00:00",
+    "ab195c9f965f": "2026-06-06T17:21:11.749258+00:00",
+    "a2f87193c924": "2026-06-06T17:21:11.749258+00:00",
+    "0fe72d575860": "2026-06-06T17:21:11.749258+00:00",
+    "5c614b94623f": "2026-06-06T17:21:11.749258+00:00",
+    "17ec49aaaf9c": "2026-06-06T17:21:11.749258+00:00",
+    "fff35d02e8d5": "2026-06-06T17:21:11.749258+00:00",
+    "496773475d8b": "2026-06-06T17:21:11.749258+00:00",
+    "c08334a25d9e": "2026-06-06T17:21:11.749258+00:00",
+    "1d1d94508c6e": "2026-06-06T17:21:11.749258+00:00"
   },
   "live_clusters": {
-    "371460a947e5479c": {
-      "topic": "Air Jordan 6 Low GS China Rose Sneaker Release",
-      "item_ids": [
-        "e0bfe9c00a96"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d43142590e3763d1": {
-      "topic": "Air Jordan 1 Love The Game Sneaker Release",
-      "item_ids": [
-        "10f7bfb278fc"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "badbdb7d3ae79274": {
-      "topic": "Nike Total 90 III Croatia World Cup Sneaker",
-      "item_ids": [
-        "4db9de65a1a5",
-        "cdf4a1987967"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "80cb2c220780b3af": {
-      "topic": "Jelly Roll Miley Cyrus Flowers Cover Spotify House Nashville",
-      "item_ids": [
-        "92f74d535ea3"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "04b78c625f2d4810": {
-      "topic": "Red Clay Strays New Music Release",
-      "item_ids": [
-        "81d6aa8de5af"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a5fb485777369621": {
-      "topic": "Bruce Springsteen Kenny Chesney Music America Concert",
-      "item_ids": [
-        "30a3d61116ca"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0f3be250fb3a052a": {
-      "topic": "Lauren Graham Patti LuPone August Indie Comedy Feature",
-      "item_ids": [
-        "0e71ca36d261"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1325545669e1f3f6": {
-      "topic": "Drake Doremus Filmmaker Interview Next Life",
-      "item_ids": [
-        "ec87fb3fdd18"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8e73d4a27f3fa7af": {
-      "topic": "Michigan Doomsday Cult Documentary Feature",
-      "item_ids": [
-        "7c56bc459323"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c85874b46c5ec276": {
-      "topic": "FIFA World Cup Free Ticket Cancellation",
-      "item_ids": [
-        "9c511e3637c3",
-        "851136c11ab5"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "451d9d4df5afa78a": {
-      "topic": "Google FBI Ransomware Fake IT Workers In-Person Hacking",
-      "item_ids": [
-        "e82ae84d0e95",
-        "63f5ea5ec574"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c67dde65aa7b4a79": {
-      "topic": "Reid Hoffman Microsoft Board Departure",
-      "item_ids": [
-        "ef9bc4e781a3",
-        "a40a1f1bc5d5"
-      ],
-      "created_at": "2026-06-05T16:42:50.764866+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "afe16cfd51c48658": {
       "topic": "Crystal Bridges Museum Expansion Architecture",
       "item_ids": [
@@ -684,11 +587,19 @@
       "topic": "Nike Mind 001 Old Royal Release",
       "item_ids": [
         "10840926267a",
-        "1f3659324de1"
+        "1f3659324de1",
+        "e6540d77d7b2"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
+      "picks_file": "picks/picks-2026-06-06-1721.md",
+      "why_text": "Nike's Mind 001 slide is quietly becoming a sleeper hit in the post-sneaker era, where recovery footwear and low-key silhouettes are eating into the cultural space that chunky trainers once owned. The all-black 'murdered out' treatment signals Nike is taking the silhouette seriously \u2014 this isn't a one-and-done colorway, it's brand-building. At a moment when Adidas' slides and New Balance's lifestyle dominance are pressuring Nike on every front, locking in a versatile, clean slide roster matters more than it looks.",
+      "last_escalated_item_ids": [
+        "10840926267a",
+        "1f3659324de1",
+        "e6540d77d7b2"
+      ]
     },
     "5c323a36db943b1b": {
       "topic": "Colorful Sneakers 2026 Guide",
@@ -794,11 +705,19 @@
       "topic": "Fathers Day Gifts Mens Wearhouse Guide",
       "item_ids": [
         "242207a6192a",
-        "4e4f27ec31c8"
+        "4e4f27ec31c8",
+        "4441fe528aab"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
+      "picks_file": "picks/picks-2026-06-06-1722.md",
+      "why_text": "The annual Father's Day gift guide cycle has kicked off, and this year the bar is noticeably higher \u2014 we're talking limited-edition vinyl, luxury headphones, and George Clooney's non-alcoholic beer brand Casamigos-adjacent venture making the cut alongside Men's Wearhouse staples. It signals a broader cultural shift in how we're framing fatherhood: less novelty socks, more curated taste. Brands are betting that the 'cool dad' identity is now a serious consumer category worth chasing.",
+      "last_escalated_item_ids": [
+        "242207a6192a",
+        "4e4f27ec31c8",
+        "4441fe528aab"
+      ]
     },
     "e7407a72744b0327": {
       "topic": "AI Honors D.C. Innovation Anxiety Concerns",
@@ -1064,7 +983,9 @@
         "18f2c6f6dc25",
         "4411702433bd",
         "9b6ed4749cbf",
-        "91a83cd9a48c"
+        "91a83cd9a48c",
+        "8e10e320cb62",
+        "4dbf686b08c3"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
       "last_escalated_size": 7,
@@ -1084,11 +1005,19 @@
       "topic": "Cleveland Cavaliers NBA Draft 2026 Targets",
       "item_ids": [
         "40611e7dd9ca",
-        "d31d1f139de5"
+        "d31d1f139de5",
+        "73c1dc44dbba"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
+      "picks_file": "picks/picks-2026-06-06-1722.md",
+      "why_text": "Fresh off one of their best regular seasons in years, the Cavaliers are already war-gaming the 2026 Draft \u2014 a sign this front office is thinking beyond just the present window. With Detroit doing the same, both Eastern Conference franchises are signaling they believe the path to a championship runs through the draft room as much as the trade market. In a league where contenders are built over cycles, Cleveland locking in on specific targets this early suggests they see a real gap to close \u2014 and a timeline to close it.",
+      "last_escalated_item_ids": [
+        "40611e7dd9ca",
+        "d31d1f139de5",
+        "73c1dc44dbba"
+      ]
     },
     "60f6ad69c34b33ba": {
       "topic": "NBA Offseason 2026 Trade Free Agent Rumors",
@@ -1913,11 +1842,19 @@
       "topic": "Sean Penn Selfie Refusal Holocaust Survivor Incident",
       "item_ids": [
         "dbb449008550",
-        "a85c4f7a7718"
+        "a85c4f7a7718",
+        "00495eb2f7d0"
       ],
       "created_at": "2026-06-05T23:20:21.774033+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
+      "picks_file": "picks/picks-2026-06-06-1722.md",
+      "why_text": "Sean Penn is facing backlash after reportedly refusing to take a selfie with a Holocaust survivor at the Oscars \u2014 the kind of moment that cuts through Hollywood's performative activism and lands hard. Penn, who has long cultivated a serious political and humanitarian image, skipped the ceremony entirely this year, framing it as a mental health decision, which now reads as tone-deaf context. The incident is a lightning rod because it collapses the gap between celebrity moral branding and actual human decency.",
+      "last_escalated_item_ids": [
+        "dbb449008550",
+        "a85c4f7a7718",
+        "00495eb2f7d0"
+      ]
     },
     "5b62f731ee41df4e": {
       "topic": "Love Island USA Season 8 Peacock Viewership Record",
@@ -2140,11 +2077,18 @@
       "topic": "NBA Finals Celebrity Attendance Game 2 Timoth\u00e9e Chalamet",
       "item_ids": [
         "13fd73380d75",
-        "0e5fb45a1b89"
+        "0e5fb45a1b89",
+        "b5d8fb7ef175"
       ],
       "created_at": "2026-06-05T23:20:21.774033+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "13fd73380d75",
+        "0e5fb45a1b89",
+        "b5d8fb7ef175"
+      ]
     },
     "a8f834824f898665": {
       "topic": "NBA Finals Free Live Stream Guide Spurs vs Knicks",
@@ -2177,11 +2121,18 @@
       "topic": "Backrooms Movie Box Office Weekend 2 Projected Decline",
       "item_ids": [
         "f782a2652b5d",
-        "4f0893239df2"
+        "4f0893239df2",
+        "a9c070236b89"
       ],
       "created_at": "2026-06-05T23:20:21.774033+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "f782a2652b5d",
+        "4f0893239df2",
+        "a9c070236b89"
+      ]
     },
     "8f7496279560d64f": {
       "topic": "Seven-Second X-Ray Heart Defect Regurgitation Severity Assessment",
@@ -2344,21 +2295,37 @@
       "topic": "California Fortune 500 Ranking Drop Behind Texas",
       "item_ids": [
         "5e2abe150c7e",
-        "ee86309679dc"
+        "ee86309679dc",
+        "7cb0cb419756"
       ],
       "created_at": "2026-06-06T10:17:37.238808+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
+      "picks_file": "picks/picks-2026-06-06-1722.md",
+      "why_text": "For the first time, Texas has surpassed California in the number of Fortune 500 headquarters \u2014 a symbolic gut-punch to a state that once defined American corporate ambition. The shift reflects years of high taxes, regulatory burden, and cost-of-living pressure driving companies like Tesla, Oracle, and Hewlett Packard Enterprise to relocate to friendlier business climates in the Lone Star State. This isn't just an economic footnote; it's a reordering of which state gets to claim the identity of American capitalism.",
+      "last_escalated_item_ids": [
+        "5e2abe150c7e",
+        "ee86309679dc",
+        "7cb0cb419756"
+      ]
     },
     "7a887f808b069c55": {
       "topic": "BMW Belgium EV Order 1000 Vehicles",
       "item_ids": [
         "c10c62dd4c56",
-        "b451fb6cd357"
+        "b451fb6cd357",
+        "cce553880d5f"
       ],
       "created_at": "2026-06-06T10:17:37.238808+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
+      "picks_file": "picks/picks-2026-06-06-1722.md",
+      "why_text": "A single 1,000-unit EV order in Belgium signals that corporate and government fleet procurement is quietly becoming the backbone of European EV adoption \u2014 not the individual luxury buyer everyone keeps marketing to. For BMW, this validates its EV lineup as a fleet-grade product, not just a showroom statement, which carries serious long-term volume implications. It also puts pressure on Mercedes and Audi to match fleet credibility, not just spec sheets.",
+      "last_escalated_item_ids": [
+        "c10c62dd4c56",
+        "b451fb6cd357",
+        "cce553880d5f"
+      ]
     },
     "63fbf3fa4c32c0e6": {
       "topic": "Stanley Cup Playoffs Daily Coverage",
@@ -2464,11 +2431,18 @@
       "topic": "Warren Buffett Berkshire AI Investments Billions",
       "item_ids": [
         "64e3560c59d5",
-        "da3945058221"
+        "da3945058221",
+        "e8d80f21e9fa"
       ],
       "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "64e3560c59d5",
+        "da3945058221",
+        "e8d80f21e9fa"
+      ]
     },
     "ed46fc0dffe81e25": {
       "topic": "Long Island Knicks Fan NBA Finals Prediction Viral",
@@ -2545,7 +2519,8 @@
     "760d7ce3d55b23ba": {
       "topic": "Summer Game Fest 2026 Showcases",
       "item_ids": [
-        "588b23b22e77"
+        "588b23b22e77",
+        "b616c0ab33db"
       ],
       "created_at": "2026-06-06T14:48:25.430797+00:00",
       "last_escalated_size": 0,
@@ -2609,7 +2584,8 @@
     "7803084a84f0b983": {
       "topic": "Mercedes G 580 G-Wagon EV",
       "item_ids": [
-        "527a3b66ab1e"
+        "527a3b66ab1e",
+        "7f5c9453de4d"
       ],
       "created_at": "2026-06-06T14:48:25.430797+00:00",
       "last_escalated_size": 0,
@@ -2776,7 +2752,88 @@
       "created_at": "2026-06-06T15:59:13.683219+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "40b3414c665e09a5": {
+      "topic": "Masters of the Universe Composer Daniel Pemberton Theme Creation",
+      "item_ids": [
+        "874ac1111f6f"
+      ],
+      "created_at": "2026-06-06T17:21:55.526633+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "21c2dd4ee50a2488": {
+      "topic": "AMC Interview With the Vampire Relaunch as The Vampire Lestat",
+      "item_ids": [
+        "3adb38a8d021"
+      ],
+      "created_at": "2026-06-06T17:21:55.526633+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b9aa8221f4a140cc": {
+      "topic": "Box Office Weekend Scary Movie Masters of the Universe June 2026",
+      "item_ids": [
+        "a0f40bbd9321"
+      ],
+      "created_at": "2026-06-06T17:21:55.526633+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "076557128fb8d805": {
+      "topic": "Bruce Springsteen Jon Bon Jovi Public Enemy Music America Concert",
+      "item_ids": [
+        "31236670a76f"
+      ],
+      "created_at": "2026-06-06T17:21:55.526633+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9927f489bec2c5ca": {
+      "topic": "Bruce Campbell Evil Dead Ash Character Departure",
+      "item_ids": [
+        "165cbfa19060"
+      ],
+      "created_at": "2026-06-06T17:21:55.526633+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ae896aa7ef292c71": {
+      "topic": "Cozy Grove Camp Spirit Console PC July 15 Release",
+      "item_ids": [
+        "9e5a8c9a4097"
+      ],
+      "created_at": "2026-06-06T17:21:55.526633+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b7504d265ae27ebe": {
+      "topic": "Avatar The Last Airbender RPG Production Cancelled",
+      "item_ids": [
+        "a91943c64f2e"
+      ],
+      "created_at": "2026-06-06T17:21:55.526633+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "46a69c8d55244e3f": {
+      "topic": "Tesla FSD Trainers Trust Concerns Self-Driving Technology",
+      "item_ids": [
+        "06cf7c99ffe2"
+      ],
+      "created_at": "2026-06-06T17:21:55.526633+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9d7e2e58366f6a6d": {
+      "topic": "Boston Celtics Andy Mannix Equipment Managers Association Award",
+      "item_ids": [
+        "5e9f06e419a8"
+      ],
+      "created_at": "2026-06-06T17:21:55.526633+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-06T15:59:24.589072+00:00"
+  "last_checked": "2026-06-06T17:22:30.433976+00:00"
 }
