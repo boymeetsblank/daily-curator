@@ -1,31 +1,5 @@
 {
   "known_ids": [
-    "a6824ef5029d",
-    "abb5de51639d",
-    "6155a85c919f",
-    "3814fde35490",
-    "c849161b8ad3",
-    "8c9ba4c83146",
-    "d05e91ddccea",
-    "dc24c72f8649",
-    "36f87a813076",
-    "37acbc9f0e3f",
-    "d411d01284c1",
-    "93495ef7931b",
-    "d20a700b0979",
-    "897583a80ab1",
-    "e5f8deaf4f9a",
-    "2b6316e234c5",
-    "3b3c56c5ae5c",
-    "f2c6ec8d74df",
-    "22e2bf5273be",
-    "c891cd6e2669",
-    "8dc742207d34",
-    "021b5c4c3a8c",
-    "cc27a2d13f81",
-    "b561d8c2b905",
-    "5bf5d172e501",
-    "46695af603ec",
     "130b21cacd48",
     "e103345e12f9",
     "05993f0a7e4a",
@@ -499,21 +473,35 @@
     "655e12209456",
     "3045e19e0462",
     "b5084be8083f",
-    "9c9e453a1525"
+    "9c9e453a1525",
+    "46155bb155f9",
+    "1fdf901a8af0",
+    "12043e1f324c",
+    "1708ff15df36",
+    "bfb47029798f",
+    "41e5d3de242a",
+    "9a6e348f513b",
+    "588b23b22e77",
+    "cbfbba7fdb9a",
+    "be06ed66af97",
+    "0cafd24b040b",
+    "01d12017aff3",
+    "9bb2085bca13",
+    "c9642abbef47",
+    "baf140027d48",
+    "18f2c6f6dc25",
+    "527a3b66ab1e",
+    "e0197f8b138e",
+    "527a3b66ab1e",
+    "b6bb83f14b8b",
+    "3e068900817c",
+    "0f61fe2215cf",
+    "3edbdc9321aa",
+    "7fcb9b2b7a8a",
+    "91595f21c754",
+    "d9ff2c15846c"
   ],
   "failed_ids": {
-    "057d53010a81": "2026-06-06T10:16:58.756453+00:00",
-    "394a759db8d4": "2026-06-06T10:16:58.756453+00:00",
-    "12c3341df8b8": "2026-06-06T10:16:58.756453+00:00",
-    "5a8deba8e087": "2026-06-06T10:16:58.756453+00:00",
-    "450399270769": "2026-06-06T10:16:58.756453+00:00",
-    "889967125f48": "2026-06-06T10:16:58.756453+00:00",
-    "5075916d7130": "2026-06-06T10:16:58.756453+00:00",
-    "a219136954d8": "2026-06-06T10:16:58.756453+00:00",
-    "0acbc9e3414c": "2026-06-06T10:16:58.756453+00:00",
-    "8bdb0e96efc8": "2026-06-06T10:16:58.756453+00:00",
-    "ade4515f99da": "2026-06-06T10:16:58.756453+00:00",
-    "139f6865d787": "2026-06-06T10:16:58.756453+00:00",
     "59732ef86f4c": "2026-06-06T11:48:44.627727+00:00",
     "d06cb944033c": "2026-06-06T11:48:44.627727+00:00",
     "448b8fa6ec96": "2026-06-06T11:48:44.627727+00:00",
@@ -524,255 +512,25 @@
     "d70c28a5eb11": "2026-06-06T11:48:44.627727+00:00",
     "2ffcc1de2593": "2026-06-06T11:48:44.627727+00:00",
     "9af9a41d6be7": "2026-06-06T12:58:26.797173+00:00",
-    "76edbacee8aa": "2026-06-06T12:58:26.797173+00:00"
+    "76edbacee8aa": "2026-06-06T12:58:26.797173+00:00",
+    "47467690e9f2": "2026-06-06T14:47:45.245433+00:00",
+    "056b5a8ea105": "2026-06-06T14:47:45.245433+00:00",
+    "38f69389937e": "2026-06-06T14:47:45.245433+00:00",
+    "c82cbcf632f6": "2026-06-06T14:47:45.245433+00:00",
+    "83fab2947599": "2026-06-06T14:47:45.245433+00:00",
+    "5f68643b50f1": "2026-06-06T14:47:45.245433+00:00",
+    "4e6fb3fb0a5a": "2026-06-06T14:47:45.245433+00:00",
+    "8230e0c81fdc": "2026-06-06T14:47:45.245433+00:00",
+    "38860ffc2962": "2026-06-06T14:47:45.245433+00:00",
+    "c5cfc5860ee7": "2026-06-06T14:47:45.245433+00:00",
+    "a44a7e62bad6": "2026-06-06T14:47:45.245433+00:00",
+    "15df35508a0f": "2026-06-06T14:47:45.245433+00:00",
+    "62fd2e2206fc": "2026-06-06T14:47:45.245433+00:00",
+    "f2bcc18f2757": "2026-06-06T14:47:45.245433+00:00",
+    "77fb5363a027": "2026-06-06T14:47:45.245433+00:00",
+    "6bc1af0b1734": "2026-06-06T14:47:45.245433+00:00"
   },
   "live_clusters": {
-    "78e24ddca59c296d": {
-      "topic": "Phoebe Bridgers Tour Announcement",
-      "item_ids": [
-        "905a1783d3ac"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b29680d66d2f20a6": {
-      "topic": "Lil Durk Murder-For-Hire Racketeering Charges",
-      "item_ids": [
-        "c42b7fce3308"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fd7a8542f0246a2d": {
-      "topic": "Primavera Sound Doja Cat Weather Cancellation",
-      "item_ids": [
-        "0b1a5166ad7b",
-        "8200f2e2733f"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "10d4acf8d33be078": {
-      "topic": "Dr. Martens Metallica 1461 Shoe Release",
-      "item_ids": [
-        "4d5a9bbc3703"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "20b0bc7794f4c707": {
-      "topic": "Scary Movie 2025 Film Release",
-      "item_ids": [
-        "3ce01b486ac6",
-        "f6ce25c54b1f"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6e3df1db953c5115": {
-      "topic": "Scary Movie 2025 Box Office Performance",
-      "item_ids": [
-        "6b0819555cb7"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1258fe500798b57b": {
-      "topic": "SDSA TV Awards Nominations 2026",
-      "item_ids": [
-        "42ed88eebe37"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e8d82cd5daeeb1cb": {
-      "topic": "US Jobs Report May Employment Decline",
-      "item_ids": [
-        "461941f2d6de"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7b98fe1acd2e9f84": {
-      "topic": "AirTrunk AI Data Center India Investment",
-      "item_ids": [
-        "df474478ba46"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dd275ca02e74af13": {
-      "topic": "OpenAI AI Self-Design Super Intelligence",
-      "item_ids": [
-        "bd044600b945"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "51036a104d5e1383": {
-      "topic": "iOS 27 Siri Features Waitlist",
-      "item_ids": [
-        "a7efe5e3e696"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "99ed46888789acd9": {
-      "topic": "2026 NBA Draft Atlanta Hawks Profile",
-      "item_ids": [
-        "5ead15b65f01"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "30f8d3b7a307238d": {
-      "topic": "NBA Playoffs Knicks vs Spurs Game 2 Predictions",
-      "item_ids": [
-        "d8a403c91b2f",
-        "fd76a721349a",
-        "7db95b92b946",
-        "042f7b4e158c",
-        "f40635ac0ec4",
-        "2537008167a3",
-        "7c7832d51a7a",
-        "92deca0b05e5",
-        "441bbf4fa873",
-        "367293da8d15",
-        "7aa3c041c2be",
-        "eac3b5b9794e",
-        "232a7bc8d6e2",
-        "d400f7adf4d7",
-        "5dfc5500f01b",
-        "b82379998c59",
-        "76ccec8f5d1c",
-        "b36475e17d50",
-        "2bd3881f6d8c",
-        "ba89f6108e68",
-        "2d956e8b3fcc",
-        "77f5f11d62a3",
-        "b3dcfc57c9c0",
-        "0d641b951cc1",
-        "7c8a99b6a517",
-        "04216fb7c02c",
-        "3727bc3af2fc",
-        "673034ed9e84",
-        "5212289cb63c",
-        "bad5881f3297",
-        "fb5447729d50",
-        "390c547c391e",
-        "6b3a91fbcc93",
-        "e81d8317cc5b",
-        "c789530e8f67",
-        "122ef97f0e4d",
-        "1bdbc5559cad",
-        "878479a0ac6a",
-        "de5c3361be7d",
-        "af96b6090faa",
-        "207ef385df97",
-        "1320fa23c3c4",
-        "fb29b7df7833",
-        "ad20b3441971"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 43,
-      "last_escalated_at": "2026-06-06T11:48:44.627727+00:00",
-      "picks_file": "picks/picks-2026-06-06-0126.md",
-      "last_escalated_item_ids": [
-        "d8a403c91b2f",
-        "fd76a721349a",
-        "7db95b92b946",
-        "042f7b4e158c",
-        "f40635ac0ec4",
-        "2537008167a3",
-        "7c7832d51a7a",
-        "92deca0b05e5",
-        "441bbf4fa873",
-        "367293da8d15",
-        "7aa3c041c2be",
-        "eac3b5b9794e",
-        "232a7bc8d6e2",
-        "d400f7adf4d7",
-        "5dfc5500f01b",
-        "b82379998c59",
-        "76ccec8f5d1c",
-        "b36475e17d50",
-        "2bd3881f6d8c",
-        "ba89f6108e68",
-        "2d956e8b3fcc",
-        "77f5f11d62a3",
-        "b3dcfc57c9c0",
-        "0d641b951cc1",
-        "7c8a99b6a517",
-        "04216fb7c02c",
-        "3727bc3af2fc",
-        "673034ed9e84",
-        "5212289cb63c",
-        "bad5881f3297",
-        "fb5447729d50",
-        "390c547c391e",
-        "6b3a91fbcc93",
-        "e81d8317cc5b",
-        "c789530e8f67",
-        "122ef97f0e4d",
-        "1bdbc5559cad",
-        "878479a0ac6a",
-        "de5c3361be7d",
-        "af96b6090faa",
-        "207ef385df97",
-        "1320fa23c3c4",
-        "fb29b7df7833"
-      ],
-      "why_text": "The NBA Finals are here, and it's a matchup nobody saw coming a decade ago \u2014 the New York Knicks, finally back on the biggest stage, hosting a scrappy San Antonio Spurs team that's reloaded around Devin Vassell. Game 1 was the most-watched Finals opener since 2018, which tells you everything about how starved fans are for a Knicks moment and how compelling this underdog Spurs squad has become. This series is doing what the NBA desperately needed: making the Finals feel like must-watch television again.\n**Update 12:13 AM CT:** Game 2 is in the books: the Knicks survived a late Spurs rally to win 105-104 and take a commanding 2-0 Finals lead, with Victor Wembanyama's crucial late-game blunder sealing New York's narrow escape \u2014 while Jalen Brunson continues to carry the offense and Josh Hart's surprising no-show, combined with controversial officiating from referee Tony Brothers, has social media roaring heading into Game 3 in San Antonio.\n**Update 3:03 AM CT:** Post-game analysis is heating up, with Richard Jefferson and Landry Shamet trending on social media \u2014 Jefferson drawing attention for his ESPN commentary on Wembanyama's pivotal late-game turnover, while Shamet's name is circulating amid discussion of the Spurs' bench rotation and whether San Antonio's depth can keep pace with New York heading into a crucial Game 3 at home.\n**Update 5:17 AM CT:** Off the court, the celebrity and billionaire spectacle around this series is reaching peak New York excess \u2014 with courtside seats reportedly fetching over $10,000 an hour \u2014 while Karl-Anthony Towns is drawing serious Finals MVP buzz from NBA legends, and Dylan Harper and Keldon Johnson are both trending as fans debate Spurs roster moves and whether San Antonio can shake up their rotation before a must-win Game 3 at home.\n**Update 6:49 AM CT:** The cultural moment around this Knicks run is now fully spilling beyond basketball \u2014 Charles Barkley is publicly praising New York's electric fanbase, the Giants' NFL roster is reacting on social media, and USA Today is framing Madison Square Garden's revival as a city-wide phenomenon, while #NYKvsSAS continues to dominate X as the series heads to San Antonio for Game 3."
-    },
-    "f97c37ce8d1cc00f": {
-      "topic": "NBA Finals Game 1 Jalen Brunson Defense Analysis",
-      "item_ids": [
-        "724f76b8aded",
-        "8ea50cd572e2"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "76819ef74ceea424": {
-      "topic": "NovaKnicks NCAA NBA Title-Winning Teammates",
-      "item_ids": [
-        "0b57a74142ad"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ae5e6936f4671f0c": {
-      "topic": "US Tech Layoffs May Two-Year High",
-      "item_ids": [
-        "e80883571dbd"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6d2182ee732b61e1": {
-      "topic": "BMW i Ventures $300M AI Startup Fund",
-      "item_ids": [
-        "acb972ef488a"
-      ],
-      "created_at": "2026-06-05T14:13:17.579190+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "371460a947e5479c": {
       "topic": "Air Jordan 6 Low GS China Rose Sneaker Release",
       "item_ids": [
@@ -1109,11 +867,19 @@
       "topic": "Bears Northwest Indiana Relocation Discussions",
       "item_ids": [
         "224bcce56fb3",
-        "5f6350f8ff4b"
+        "5f6350f8ff4b",
+        "7fcb9b2b7a8a"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-06T14:47:45.245433+00:00",
+      "picks_file": "picks/picks-2026-06-06-1448.md",
+      "why_text": "The Chicago Bears are in active discussions about relocating to Northwest Indiana, a move that would be one of the most seismic franchise shifts in NFL history \u2014 ripping a team from its city's identity while technically keeping it in the metro region. This isn't just a stadium story; it's a political and cultural fault line between Chicago, suburban Arlington Heights, and now Indiana all competing for an NFL franchise that hasn't won a Super Bowl since 1985 but still commands one of the league's most loyal fanbases. If Indiana lands the Bears, it reshapes the entire conversation about how cities lose teams \u2014 not to distant markets, but to their own backyard.",
+      "last_escalated_item_ids": [
+        "224bcce56fb3",
+        "5f6350f8ff4b",
+        "7fcb9b2b7a8a"
+      ]
     },
     "7c044032d4b150e9": {
       "topic": "Buccaneers Mayfield Contract Negotiations Stalled",
@@ -1200,7 +966,8 @@
     "86df55220a2c02eb": {
       "topic": "Crypto Short Attacks MSTR Bitcoin Bloodbath",
       "item_ids": [
-        "939876fb4f1a"
+        "939876fb4f1a",
+        "cbfbba7fdb9a"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
       "last_escalated_size": 0,
@@ -1291,11 +1058,20 @@
       "topic": "NBA Finals 2026 Knicks vs Spurs Game 2 Coverage",
       "item_ids": [
         "c1b9943ea888",
-        "f2981a519293"
+        "f2981a519293",
+        "baf140027d48",
+        "18f2c6f6dc25"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-06T14:47:45.245433+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "c1b9943ea888",
+        "f2981a519293",
+        "baf140027d48",
+        "18f2c6f6dc25"
+      ]
     },
     "f0f2f1e5ef75d15b": {
       "topic": "Cleveland Cavaliers NBA Draft 2026 Targets",
@@ -1543,7 +1319,8 @@
     "54056319ace04484": {
       "topic": "Questlove Earth Wind Fire Documentary Interview",
       "item_ids": [
-        "4f50e6764461"
+        "4f50e6764461",
+        "12043e1f324c"
       ],
       "created_at": "2026-06-05T20:30:12.056736+00:00",
       "last_escalated_size": 0,
@@ -1570,7 +1347,8 @@
     "6ccc6ec2081f1f1a": {
       "topic": "Madonna Confessions II Film YouTube Release",
       "item_ids": [
-        "7248c8a36aaa"
+        "7248c8a36aaa",
+        "1708ff15df36"
       ],
       "created_at": "2026-06-05T20:30:12.056736+00:00",
       "last_escalated_size": 0,
@@ -2460,7 +2238,8 @@
     "68dadc3a785a5052": {
       "topic": "BMW M2 All-Wheel Drive Purist Debate Performance",
       "item_ids": [
-        "b92a5728bc1c"
+        "b92a5728bc1c",
+        "b6bb83f14b8b"
       ],
       "created_at": "2026-06-05T23:20:21.774033+00:00",
       "last_escalated_size": 0,
@@ -2695,7 +2474,125 @@
       "created_at": "2026-06-06T12:59:14.070152+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "5613eb671697e200": {
+      "topic": "Clove Healthcare Sneaker Toy Story Collaboration",
+      "item_ids": [
+        "46155bb155f9"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "594c80f8f3930782": {
+      "topic": "Boza Panama World Cup 2026 Musical Ambassador",
+      "item_ids": [
+        "1fdf901a8af0"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dcd4eb5aea4885e6": {
+      "topic": "The Murder of Rachel Nickell Netflix Documentary",
+      "item_ids": [
+        "bfb47029798f"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "25969dfd814b3edd": {
+      "topic": "Toy Story 5 Taylor Swift VFX Decoy Version",
+      "item_ids": [
+        "41e5d3de242a"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5260ac9c88a808a0": {
+      "topic": "NASA Nancy Grace Roman Space Telescope August 30 Launch",
+      "item_ids": [
+        "9a6e348f513b"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "760d7ce3d55b23ba": {
+      "topic": "Summer Game Fest 2026 Showcases",
+      "item_ids": [
+        "588b23b22e77"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dfb78b6ffaf09fad": {
+      "topic": "Chinese EVs US Market Entry Timeline",
+      "item_ids": [
+        "be06ed66af97"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0c9048baa561fd13": {
+      "topic": "Remote Work Gen Z Career Development Risks",
+      "item_ids": [
+        "0cafd24b040b",
+        "e0197f8b138e"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "105ffb82923d5ffa": {
+      "topic": "Sam Alexis Indiana NBA Rookie Big Ten Physicality",
+      "item_ids": [
+        "01d12017aff3"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c0abeaf837907c2d": {
+      "topic": "82-0 Basketball Game NBA 2K Comparison",
+      "item_ids": [
+        "9bb2085bca13"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bab74dd78ce9e85d": {
+      "topic": "Sling $60 Streaming Package NBA Stanley Cup World Cup",
+      "item_ids": [
+        "c9642abbef47"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3633b030fa7594fe": {
+      "topic": "Stock Market 155-Year Historical Precedent Implications",
+      "item_ids": [
+        "527a3b66ab1e"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7803084a84f0b983": {
+      "topic": "Mercedes G 580 G-Wagon EV",
+      "item_ids": [
+        "527a3b66ab1e"
+      ],
+      "created_at": "2026-06-06T14:48:25.430797+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-06T12:59:14.086052+00:00"
+  "last_checked": "2026-06-06T14:48:31.892367+00:00"
 }
