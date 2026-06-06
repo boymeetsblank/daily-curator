@@ -1,32 +1,5 @@
 {
   "known_ids": [
-    "130b21cacd48",
-    "e103345e12f9",
-    "05993f0a7e4a",
-    "716164474ee9",
-    "74b91af08d39",
-    "1282d488e87c",
-    "68923c331211",
-    "b26a4cd1bbb5",
-    "ce30bec92ec8",
-    "7cf4d1f68e7e",
-    "d33094adcefa",
-    "9035c43b74bf",
-    "b14c00526c43",
-    "09c21e235a32",
-    "77c227ae3187",
-    "d71ab846750f",
-    "905a1783d3ac",
-    "3add27b1f46c",
-    "c42b7fce3308",
-    "0b1a5166ad7b",
-    "4d5a9bbc3703",
-    "3ce01b486ac6",
-    "45f583a79c08",
-    "2f2100b7047c",
-    "6b0819555cb7",
-    "1b23adcf0276",
-    "42ed88eebe37",
     "d360df4d0601",
     "461941f2d6de",
     "df474478ba46",
@@ -499,18 +472,36 @@
     "3edbdc9321aa",
     "7fcb9b2b7a8a",
     "91595f21c754",
-    "d9ff2c15846c"
+    "d9ff2c15846c",
+    "6f5da87ab0c7",
+    "c437cdcaa552",
+    "c7b338f868da",
+    "4411702433bd",
+    "dd53e75b3d51",
+    "b2f2487b48dd",
+    "d228b2d7510c",
+    "78660a4ac777",
+    "5a875338103b",
+    "b209a6265943",
+    "2125f8a05b3a",
+    "835eb0fcf7ac",
+    "15a9c355ca79",
+    "9b6ed4749cbf",
+    "f907e7685fa6",
+    "ca58ee769dcb",
+    "6f212bf0f367",
+    "da3945058221",
+    "c75cc6b62c62",
+    "044cd73530cc",
+    "9d725250d7d8",
+    "5a546a97b150",
+    "13f9f4fa326d",
+    "1cfa64f95d07",
+    "87824a6fbdd0",
+    "fd6061789351",
+    "91a83cd9a48c"
   ],
   "failed_ids": {
-    "59732ef86f4c": "2026-06-06T11:48:44.627727+00:00",
-    "d06cb944033c": "2026-06-06T11:48:44.627727+00:00",
-    "448b8fa6ec96": "2026-06-06T11:48:44.627727+00:00",
-    "860d42257d2e": "2026-06-06T11:48:44.627727+00:00",
-    "83694fb32583": "2026-06-06T11:48:44.627727+00:00",
-    "e840eb161853": "2026-06-06T11:48:44.627727+00:00",
-    "c4dc67a2cd30": "2026-06-06T11:48:44.627727+00:00",
-    "d70c28a5eb11": "2026-06-06T11:48:44.627727+00:00",
-    "2ffcc1de2593": "2026-06-06T11:48:44.627727+00:00",
     "9af9a41d6be7": "2026-06-06T12:58:26.797173+00:00",
     "76edbacee8aa": "2026-06-06T12:58:26.797173+00:00",
     "47467690e9f2": "2026-06-06T14:47:45.245433+00:00",
@@ -528,7 +519,17 @@
     "62fd2e2206fc": "2026-06-06T14:47:45.245433+00:00",
     "f2bcc18f2757": "2026-06-06T14:47:45.245433+00:00",
     "77fb5363a027": "2026-06-06T14:47:45.245433+00:00",
-    "6bc1af0b1734": "2026-06-06T14:47:45.245433+00:00"
+    "6bc1af0b1734": "2026-06-06T14:47:45.245433+00:00",
+    "5c5aa0ef0dd5": "2026-06-06T15:58:33.229347+00:00",
+    "c35bf17a4f60": "2026-06-06T15:58:33.229347+00:00",
+    "a1874c27204e": "2026-06-06T15:58:33.229347+00:00",
+    "74e18e4fff9d": "2026-06-06T15:58:33.229347+00:00",
+    "889967125f48": "2026-06-06T15:58:33.229347+00:00",
+    "9a2f875cb8be": "2026-06-06T15:58:33.229347+00:00",
+    "ab4d3e15c18d": "2026-06-06T15:58:33.229347+00:00",
+    "92d751c371dd": "2026-06-06T15:58:33.229347+00:00",
+    "7b0a44e37a35": "2026-06-06T15:58:33.229347+00:00",
+    "a19890534b51": "2026-06-06T15:58:33.229347+00:00"
   },
   "live_clusters": {
     "371460a947e5479c": {
@@ -1060,17 +1061,23 @@
         "c1b9943ea888",
         "f2981a519293",
         "baf140027d48",
-        "18f2c6f6dc25"
+        "18f2c6f6dc25",
+        "4411702433bd",
+        "9b6ed4749cbf",
+        "91a83cd9a48c"
       ],
       "created_at": "2026-06-05T18:30:18.684968+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-06T14:47:45.245433+00:00",
+      "last_escalated_size": 7,
+      "last_escalated_at": "2026-06-06T15:58:33.229347+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "c1b9943ea888",
         "f2981a519293",
         "baf140027d48",
-        "18f2c6f6dc25"
+        "18f2c6f6dc25",
+        "4411702433bd",
+        "9b6ed4749cbf",
+        "91a83cd9a48c"
       ]
     },
     "f0f2f1e5ef75d15b": {
@@ -1348,11 +1355,21 @@
       "topic": "Madonna Confessions II Film YouTube Release",
       "item_ids": [
         "7248c8a36aaa",
-        "1708ff15df36"
+        "1708ff15df36",
+        "b2f2487b48dd",
+        "d228b2d7510c"
       ],
       "created_at": "2026-06-05T20:30:12.056736+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-06T15:58:33.229347+00:00",
+      "picks_file": "picks/picks-2026-06-06-1559.md",
+      "why_text": "Madonna used Tribeca to drop a NSFW, surrealist short film tied to her Confessions era legacy \u2014 a deliberate art-world move that reframes her not just as a pop icon but as a filmmaker demanding genuine presence. The 'put your phones down' message is pointed: she's actively challenging the passive, scroll-and-clip way audiences consume live culture right now. Coming off her Celebration Tour and her own near-death moment, this feels less like a promo stunt and more like a genuine reckoning with connection and mortality.",
+      "last_escalated_item_ids": [
+        "7248c8a36aaa",
+        "1708ff15df36",
+        "b2f2487b48dd",
+        "d228b2d7510c"
+      ]
     },
     "969e3c58a6b27e58": {
       "topic": "Latin Music New Releases Weekly Voting",
@@ -1866,17 +1883,21 @@
         "6ea72d5c5713",
         "a03438edd319",
         "c52a0a753a53",
-        "ddbf11b25e5d"
+        "ddbf11b25e5d",
+        "b209a6265943"
       ],
       "created_at": "2026-06-05T22:00:55.245689+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-05T23:19:26.205289+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-06T15:58:33.229347+00:00",
       "picks_file": "picks/picks-2026-06-05-2320.md",
-      "why_text": "The S&P 500 is quietly becoming an AI index \u2014 Marvell, a semiconductor company riding the data center and AI infrastructure wave, displacing Campbell's (literally a soup company) is as clean a metaphor for this economic shift as you'll find. Flex, a smart manufacturing and supply chain play, rounds out a swap that trades consumer staples nostalgia for companies wired into the next decade of tech spending. Index inclusion means billions in passive fund flows will now automatically chase these names, accelerating the momentum already built on AI enthusiasm.",
+      "why_text": "The S&P 500 is quietly becoming an AI index \u2014 Marvell, a semiconductor company riding the data center and AI infrastructure wave, displacing Campbell's (literally a soup company) is as clean a metaphor for this economic shift as you'll find. Flex, a smart manufacturing and supply chain play, rounds out a swap that trades consumer staples nostalgia for companies wired into the next decade of tech spending. Index inclusion means billions in passive fund flows will now automatically chase these names, accelerating the momentum already built on AI enthusiasm.\n**Update 10:59 AM CT:** Fortune confirms the official timeline, with both Marvell and Flex set to join the S&P 500 later this month \u2014 and the buzz is already spreading, with Marvell landing on Benzinga's most-talked-about stocks list this week alongside Broadcom, signaling that retail and institutional attention is converging on the name ahead of the rebalancing date.",
       "last_escalated_item_ids": [
         "4323e481a606",
         "6ea72d5c5713",
-        "a03438edd319"
+        "a03438edd319",
+        "c52a0a753a53",
+        "ddbf11b25e5d",
+        "b209a6265943"
       ]
     },
     "9aac2ce4f897aa9e": {
@@ -2442,7 +2463,8 @@
     "9278eb4933a876b3": {
       "topic": "Warren Buffett Berkshire AI Investments Billions",
       "item_ids": [
-        "64e3560c59d5"
+        "64e3560c59d5",
+        "da3945058221"
       ],
       "created_at": "2026-06-06T12:59:14.070152+00:00",
       "last_escalated_size": 0,
@@ -2592,7 +2614,169 @@
       "created_at": "2026-06-06T14:48:25.430797+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "652f0bdec944295e": {
+      "topic": "House of the Dragon Season 3 Battle of the Gullet Production",
+      "item_ids": [
+        "6f5da87ab0c7"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "93ccb421b1d34b5f": {
+      "topic": "Office Romance Film Betty Gilpin Birthing Scene Prosthetic",
+      "item_ids": [
+        "c437cdcaa552"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b687a5816a4773ce": {
+      "topic": "Shame SXSW London 2026 Performance",
+      "item_ids": [
+        "c7b338f868da"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "078b5f71d94d19c3": {
+      "topic": "Governors Ball 2026 Music Festival Moments",
+      "item_ids": [
+        "dd53e75b3d51"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ab4210858e087ce5": {
+      "topic": "The Yogurt Shop Murders Documentary Cold Case Resolution",
+      "item_ids": [
+        "78660a4ac777"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8da3c3be830e7dd7": {
+      "topic": "Next Generation Social Media Apps Beyond Instagram",
+      "item_ids": [
+        "5a875338103b"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f85c0e3a409da120": {
+      "topic": "Prostate Condition New Treatment Technology",
+      "item_ids": [
+        "2125f8a05b3a"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "51c16c00b6e8b5c4": {
+      "topic": "RLX Technology Stock Valuation Analysis",
+      "item_ids": [
+        "835eb0fcf7ac"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f2e8fdc2ebac3eac": {
+      "topic": "Wembanyama Karl-Anthony Towns NBA Interaction",
+      "item_ids": [
+        "15a9c355ca79"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c78aebdb10138fd5": {
+      "topic": "Elmo Sesame Street NBA Finals Social Media Backlash",
+      "item_ids": [
+        "f907e7685fa6"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "85265533ee3206fe": {
+      "topic": "Richest States America Ranking Economic Analysis",
+      "item_ids": [
+        "ca58ee769dcb"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e95f2feb1e7a738f": {
+      "topic": "Airline Industry Fuel Cost Pricing Pressures Rio Summit",
+      "item_ids": [
+        "6f212bf0f367"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0367872f8d309b43": {
+      "topic": "Thirtysomethings Retirement Planning Survey Analysis",
+      "item_ids": [
+        "c75cc6b62c62"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5ef71ee13d2c2693": {
+      "topic": "Tom Lee Market Performance Commentary Investment Analysis",
+      "item_ids": [
+        "044cd73530cc"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "99d4e41a709294d6": {
+      "topic": "Jim Cramer Take-Two Interactive Stock Analysis",
+      "item_ids": [
+        "9d725250d7d8"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9f07a7d244cbd084": {
+      "topic": "Jim Cramer Eli Lilly CEO Commentary",
+      "item_ids": [
+        "5a546a97b150"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cbac8aeac432d570": {
+      "topic": "Auto Industry News Roundup 2026 Vehicles",
+      "item_ids": [
+        "13f9f4fa326d"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1856d5a2b6ce4c82": {
+      "topic": "BMW E36 320i Collector Car Valuation",
+      "item_ids": [
+        "1cfa64f95d07"
+      ],
+      "created_at": "2026-06-06T15:59:13.683219+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-06T14:48:31.892367+00:00"
+  "last_checked": "2026-06-06T15:59:24.589072+00:00"
 }
