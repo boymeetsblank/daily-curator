@@ -1,25 +1,5 @@
 {
   "known_ids": [
-    "f586eba38271",
-    "f81f440a9b67",
-    "61f278197e5d",
-    "a537e7227a07",
-    "49a89fad6f8c",
-    "6da2dfce6d76",
-    "4a1ecb5768cd",
-    "720c50482592",
-    "f6151a79f76f",
-    "a1fbfc7121de",
-    "b33af851447c",
-    "af92133206a2",
-    "7a097527303d",
-    "1da02c47ed9f",
-    "71be3a8f91a8",
-    "6943dfa8e09c",
-    "ec29c52367c4",
-    "cdf4a1987967",
-    "1f3659324de1",
-    "a11ec353148b",
     "1f63ee0bee68",
     "d714fc427c98",
     "fa28c3ac3c17",
@@ -499,7 +479,27 @@
     "df6df9ff2364",
     "52bac5a19204",
     "2ac9b1e8e6b1",
-    "b39a0dfdcbee"
+    "b39a0dfdcbee",
+    "2f63c8210b67",
+    "cb6401270840",
+    "b27b1a22066d",
+    "52ede5c451b7",
+    "371a1d70149d",
+    "a754aae5244f",
+    "a8604ccded30",
+    "2d90bd719f87",
+    "bd67975dfd5c",
+    "7490003f41f5",
+    "d14ec321bbf8",
+    "e10b988602e1",
+    "a8604ccded30",
+    "3294a9494ebd",
+    "0648cc9c9398",
+    "e3bb3f96c5f9",
+    "65f61562e615",
+    "c0de8556a24d",
+    "66c191bfa341",
+    "a0acacf8269e"
   ],
   "failed_ids": {
     "e6aa705c6e71": "2026-06-07T09:33:49.893879+00:00",
@@ -520,72 +520,22 @@
     "f1f827bed795": "2026-06-07T11:23:28.225566+00:00",
     "bab9295d96b0": "2026-06-07T11:23:28.225566+00:00",
     "d76c14cddb57": "2026-06-07T11:23:28.225566+00:00",
-    "d2b563eee5db": "2026-06-07T11:23:28.225566+00:00"
+    "d2b563eee5db": "2026-06-07T11:23:28.225566+00:00",
+    "978b3981a4c6": "2026-06-07T12:57:17.512169+00:00",
+    "6f55a2ed68fd": "2026-06-07T12:57:17.512169+00:00",
+    "64fffb24b11a": "2026-06-07T12:57:17.512169+00:00",
+    "10f0c4db3cc5": "2026-06-07T12:57:17.512169+00:00",
+    "a43a5f586816": "2026-06-07T12:57:17.512169+00:00",
+    "7cc07eb69226": "2026-06-07T12:57:17.512169+00:00",
+    "ee539f213fb5": "2026-06-07T12:57:17.512169+00:00",
+    "6018c87a7c86": "2026-06-07T12:57:17.512169+00:00",
+    "9360a8bad46b": "2026-06-07T12:57:17.512169+00:00",
+    "ba861d7645fc": "2026-06-07T12:57:17.512169+00:00",
+    "8285aaf71f22": "2026-06-07T12:57:17.512169+00:00",
+    "49bc1c799edb": "2026-06-07T12:57:17.512169+00:00",
+    "3139ad08c460": "2026-06-07T12:57:17.512169+00:00"
   },
   "live_clusters": {
-    "63fbf3fa4c32c0e6": {
-      "topic": "Stanley Cup Playoffs Daily Coverage",
-      "item_ids": [
-        "ce08229b3f11"
-      ],
-      "created_at": "2026-06-06T11:49:20.086189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9633682cc3b23369": {
-      "topic": "John Tortorella Vegas Knights Turnaround",
-      "item_ids": [
-        "23afc36db598"
-      ],
-      "created_at": "2026-06-06T11:49:20.086189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "14ea3b210a03d6a4": {
-      "topic": "Anti-Vax Dating Apps IRL Launch",
-      "item_ids": [
-        "c82902725fb5"
-      ],
-      "created_at": "2026-06-06T11:49:20.086189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0f096c8e292de594": {
-      "topic": "Crypto-Funded Chinese Peptide Labs Growth",
-      "item_ids": [
-        "725f92b88a01"
-      ],
-      "created_at": "2026-06-06T11:49:20.086189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4b41d69b54adfea4": {
-      "topic": "AI Price Inflation Consumer Impact",
-      "item_ids": [
-        "487eb3626176"
-      ],
-      "created_at": "2026-06-06T11:49:20.086189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9ccc5c94b46fedb9": {
-      "topic": "SF Coffee Shop Innovative Business Model",
-      "item_ids": [
-        "b412aba9523b"
-      ],
-      "created_at": "2026-06-06T11:49:20.086189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "32c7e9de89edb762": {
-      "topic": "Billionaires Mortgage Luxury Mansions Strategy",
-      "item_ids": [
-        "fdaab39166aa"
-      ],
-      "created_at": "2026-06-06T11:49:20.086189+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "b37af2b1adec5c01": {
       "topic": "Jodie Foster Taxi Driver Set Anecdote Scorsese De Niro",
       "item_ids": [
@@ -1180,7 +1130,8 @@
     "9d4afebafa413dc1": {
       "topic": "NBA Finals Game 2 Mitch Johnson Spurs Controversial Call",
       "item_ids": [
-        "7bf6b8de98b3"
+        "7bf6b8de98b3",
+        "2f63c8210b67"
       ],
       "created_at": "2026-06-06T18:45:11.724146+00:00",
       "last_escalated_size": 0,
@@ -1217,7 +1168,8 @@
     "5d301957b29bf103": {
       "topic": "Knicks Fans Arrested NBA Finals Game 2 MSG Celebration",
       "item_ids": [
-        "7098ebd4cd36"
+        "7098ebd4cd36",
+        "e10b988602e1"
       ],
       "created_at": "2026-06-06T18:45:11.724146+00:00",
       "last_escalated_size": 0,
@@ -1226,7 +1178,8 @@
     "6637fde5040f0dc9": {
       "topic": "Hawks Center Market Activity 2026 Offseason",
       "item_ids": [
-        "a55d8b4622b4"
+        "a55d8b4622b4",
+        "bd67975dfd5c"
       ],
       "created_at": "2026-06-06T18:45:11.724146+00:00",
       "last_escalated_size": 0,
@@ -1675,7 +1628,106 @@
       "created_at": "2026-06-07T11:24:06.791545+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "fe7de8e678b31dd3": {
+      "topic": "Reche Caldwell Murder Cold Case Investigation",
+      "item_ids": [
+        "cb6401270840"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6b6b7333fb8bb53e": {
+      "topic": "2026 World Cup Stories Media Coverage",
+      "item_ids": [
+        "b27b1a22066d"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0c31534985f3aaef": {
+      "topic": "2026 World Cup Missing Players Analysis",
+      "item_ids": [
+        "52ede5c451b7"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7c0095b8deacac0e": {
+      "topic": "Andrew Governing 2026 World Cup Trump Profile",
+      "item_ids": [
+        "371a1d70149d"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6b7e3d301d80922e": {
+      "topic": "Mammoth Brands CPG Expansion Strategy",
+      "item_ids": [
+        "a754aae5244f"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b51c975007d07e16": {
+      "topic": "AI Business Model Challenges Market Realities",
+      "item_ids": [
+        "a8604ccded30"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "62b579f8471a6221": {
+      "topic": "Jalen Brunson Pressure Anxiety Interview",
+      "item_ids": [
+        "2d90bd719f87"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0e7c8b5120ea4e64": {
+      "topic": "Angel Reese NBA Shooting Coach Criticism",
+      "item_ids": [
+        "7490003f41f5"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9a8a5ee762942e96": {
+      "topic": "Charles Barkley San Antonio Mayor Live Exchange",
+      "item_ids": [
+        "d14ec321bbf8"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d4509f72ab288a4e": {
+      "topic": "AI Trade Pause Wall Street Market Reassessment",
+      "item_ids": [
+        "3294a9494ebd"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d34db917072424fa": {
+      "topic": "AI Stock Market Mania 2026",
+      "item_ids": [
+        "0648cc9c9398"
+      ],
+      "created_at": "2026-06-07T12:57:53.901467+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-07T11:24:24.650754+00:00"
+  "last_checked": "2026-06-07T12:57:53.902659+00:00"
 }
