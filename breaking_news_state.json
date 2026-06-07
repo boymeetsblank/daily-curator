@@ -1,12 +1,5 @@
 {
   "known_ids": [
-    "275652cafe9c",
-    "661d85a0d40e",
-    "17695ae3def5",
-    "5fafe21265d1",
-    "a704d1b39964",
-    "c2beab755080",
-    "f2a22fe3ba04",
     "10840926267a",
     "e02d6ad9a6e1",
     "94d179b1f471",
@@ -499,42 +492,16 @@
     "e9cfb304ce56",
     "a9911bb90f51",
     "dd6af6f5abf2",
-    "ccd19c2b6603"
+    "ccd19c2b6603",
+    "17372de7e9bb",
+    "d313cab8261f",
+    "c35dfb18c401",
+    "431c0d67afda",
+    "8cf73d4c94f7",
+    "17056cede125",
+    "dae73ecbf776"
   ],
   "failed_ids": {
-    "5df6a93e257f": "2026-06-06T20:00:24.764769+00:00",
-    "d838954959d8": "2026-06-06T20:00:24.764769+00:00",
-    "546f72f3e921": "2026-06-06T20:00:24.764769+00:00",
-    "89b8a5a3b73c": "2026-06-06T20:00:24.764769+00:00",
-    "b7aa9d6ef487": "2026-06-06T20:00:24.764769+00:00",
-    "e9cf0237b9e8": "2026-06-06T20:00:24.764769+00:00",
-    "eaaef0ec8d84": "2026-06-06T20:00:24.764769+00:00",
-    "03ca6ea303cd": "2026-06-06T20:00:24.764769+00:00",
-    "d15bb3ee554a": "2026-06-06T20:00:24.764769+00:00",
-    "e29192a7cfae": "2026-06-06T20:00:24.764769+00:00",
-    "30a854fa40bf": "2026-06-06T20:00:24.764769+00:00",
-    "b57cdf264909": "2026-06-06T20:00:24.764769+00:00",
-    "5adac2bb2544": "2026-06-06T20:00:24.764769+00:00",
-    "2e53c9570e5d": "2026-06-06T20:00:24.764769+00:00",
-    "f8073df39dd0": "2026-06-06T20:00:24.764769+00:00",
-    "d16c7ce40595": "2026-06-06T20:00:24.764769+00:00",
-    "861cbe403b5e": "2026-06-06T20:00:24.764769+00:00",
-    "2ac9b1e8e6b1": "2026-06-06T20:00:24.764769+00:00",
-    "da7d25ad2256": "2026-06-06T20:00:24.764769+00:00",
-    "93bee4bab2b7": "2026-06-06T20:00:24.764769+00:00",
-    "9d4235bf8ec1": "2026-06-06T21:12:26.298381+00:00",
-    "462e42e57347": "2026-06-06T21:12:26.298381+00:00",
-    "67c2ab58473b": "2026-06-06T21:12:26.298381+00:00",
-    "49360c8ae1c4": "2026-06-06T21:12:26.298381+00:00",
-    "e2c07bfa0362": "2026-06-06T21:12:26.298381+00:00",
-    "d62d09419b8c": "2026-06-06T21:12:26.298381+00:00",
-    "405de4e17311": "2026-06-06T21:12:26.298381+00:00",
-    "98c35692dedf": "2026-06-06T21:12:26.298381+00:00",
-    "e5262e017d0a": "2026-06-06T21:12:26.298381+00:00",
-    "e5c8f067f1ee": "2026-06-06T21:12:26.298381+00:00",
-    "e18ac09bfd72": "2026-06-06T21:12:26.298381+00:00",
-    "5f0015043241": "2026-06-06T21:12:26.298381+00:00",
-    "0a5da1026cbe": "2026-06-06T21:12:26.298381+00:00",
     "5685c56f0727": "2026-06-06T22:17:29.593597+00:00",
     "f179d4f42de9": "2026-06-06T22:17:29.593597+00:00",
     "e09cd9fcf752": "2026-06-06T22:17:29.593597+00:00",
@@ -554,19 +521,30 @@
     "9ed5abc40894": "2026-06-06T23:31:34.650698+00:00",
     "8718faeafdc6": "2026-06-06T23:31:34.650698+00:00",
     "5294a22e5abe": "2026-06-06T23:31:34.650698+00:00",
-    "f6fe2cf87a57": "2026-06-06T23:31:34.650698+00:00"
+    "f6fe2cf87a57": "2026-06-06T23:31:34.650698+00:00",
+    "527d4747bec1": "2026-06-07T01:39:32.841932+00:00",
+    "3f6ef68e44da": "2026-06-07T01:39:32.841932+00:00",
+    "1069d757d8d5": "2026-06-07T01:39:32.841932+00:00",
+    "43d070805edf": "2026-06-07T01:39:32.841932+00:00",
+    "5df6a93e257f": "2026-06-07T01:39:32.841932+00:00",
+    "0d81e0d68859": "2026-06-07T01:39:32.841932+00:00",
+    "84f2969108a3": "2026-06-07T01:39:32.841932+00:00",
+    "ccf31daffd5f": "2026-06-07T01:39:32.841932+00:00",
+    "12a545513b8a": "2026-06-07T01:39:32.841932+00:00",
+    "133c4bdb938f": "2026-06-07T01:39:32.841932+00:00",
+    "b70b7204562f": "2026-06-07T01:39:32.841932+00:00",
+    "9a9866194c86": "2026-06-07T01:39:32.841932+00:00",
+    "90bb3c0dde36": "2026-06-07T01:39:32.841932+00:00",
+    "9afd347e7fa9": "2026-06-07T01:39:32.841932+00:00",
+    "836248a8f9df": "2026-06-07T01:39:32.841932+00:00",
+    "84ff83ab2992": "2026-06-07T01:39:32.841932+00:00",
+    "861cbe403b5e": "2026-06-07T01:39:32.841932+00:00",
+    "2ac9b1e8e6b1": "2026-06-07T01:39:32.841932+00:00",
+    "da7d25ad2256": "2026-06-07T01:39:32.841932+00:00",
+    "93bee4bab2b7": "2026-06-07T01:39:32.841932+00:00",
+    "e2e2a539ac31": "2026-06-07T01:39:32.841932+00:00"
   },
   "live_clusters": {
-    "3c4f7b992ad49877": {
-      "topic": "Stellar Blade Blood Rain Sequel Announcement",
-      "item_ids": [
-        "4860e4594e43",
-        "655e12209456"
-      ],
-      "created_at": "2026-06-06T01:26:39.800206+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "f43e1358e8541962": {
       "topic": "Zegna Fashion Show Celebrity Attendance",
       "item_ids": [
@@ -787,11 +765,20 @@
     "ed46fc0dffe81e25": {
       "topic": "Long Island Knicks Fan NBA Finals Prediction Viral",
       "item_ids": [
-        "f76aceda43dc"
+        "f76aceda43dc",
+        "c35dfb18c401",
+        "431c0d67afda"
       ],
       "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T01:39:32.841932+00:00",
+      "picks_file": "picks/picks-2026-06-07-0140.md",
+      "why_text": "The Knicks taking a 2-0 series lead over the Spurs in the NBA Finals has set off a full-blown cultural moment \u2014 Timoth\u00e9e Chalamet and Fat Joe were caught celebrating together at an airport, and Caitlin Clark is publicly rooting for a 2026 Finals appearance in the same building. This is bigger than basketball: the Knicks returning to Finals relevance is activating a generation of celebrity fans who grew up waiting for exactly this. MSG energy has gone national, and the internet is treating every win like a coronation.",
+      "last_escalated_item_ids": [
+        "f76aceda43dc",
+        "c35dfb18c401",
+        "431c0d67afda"
+      ]
     },
     "ed78f13a8cf3c2e9": {
       "topic": "FIFA Video Game Netflix Partnership World Cup Launch",
@@ -1463,7 +1450,8 @@
       "item_ids": [
         "813539306509",
         "25ecc97ffae1",
-        "95b6723e56bd"
+        "95b6723e56bd",
+        "dae73ecbf776"
       ],
       "created_at": "2026-06-06T21:12:59.981802+00:00",
       "last_escalated_size": 3,
@@ -1489,11 +1477,19 @@
       "topic": "Charlie Puth Show Cancellation Illness",
       "item_ids": [
         "615e762d3c0d",
-        "b46494563b31"
+        "b46494563b31",
+        "17372de7e9bb"
       ],
       "created_at": "2026-06-06T22:18:17.188167+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T01:39:32.841932+00:00",
+      "picks_file": "picks/picks-2026-06-07-0140.md",
+      "why_text": "Puth's emotional public reaction \u2014 'heartbroken,' 'devastated' \u2014 signals just how much this tour means to him at a career moment when he's been working hard to reassert himself as a serious live act. Concert cancellations always sting fans who've traveled and planned, but the Orlando market is a high-stakes stop and the language he's using suggests this isn't a minor setback. It's a reminder of how physically brutal touring is, and how quickly an artist's momentum can be interrupted by something completely out of their control.",
+      "last_escalated_item_ids": [
+        "615e762d3c0d",
+        "b46494563b31",
+        "17372de7e9bb"
+      ]
     },
     "726264cc948b1d54": {
       "topic": "Netflix Film Chief Dan Lin Theatrical Release Stance",
@@ -1549,7 +1545,34 @@
       "created_at": "2026-06-06T23:32:16.606615+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "01951da81145b3c2": {
+      "topic": "Benito Skinner Overcompensating Season 2 LGBTQ+ Narrative",
+      "item_ids": [
+        "d313cab8261f"
+      ],
+      "created_at": "2026-06-07T01:40:06.230077+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eb81e477a045eeb8": {
+      "topic": "AI Avatar Digital Representation Business Impact",
+      "item_ids": [
+        "8cf73d4c94f7"
+      ],
+      "created_at": "2026-06-07T01:40:06.230077+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bdbf2c761cf6f1eb": {
+      "topic": "Okta AI Agent Identity Platform Growth Valuation",
+      "item_ids": [
+        "17056cede125"
+      ],
+      "created_at": "2026-06-07T01:40:06.230077+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-06T23:32:16.607883+00:00"
+  "last_checked": "2026-06-07T01:40:18.546438+00:00"
 }
