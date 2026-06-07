@@ -1,44 +1,5 @@
 {
   "known_ids": [
-    "27b3c04bd155",
-    "e74b157b3281",
-    "55da7e7ab662",
-    "73ec2e258ef8",
-    "a4a3a98494d3",
-    "15be1223b4c7",
-    "7d6606843851",
-    "75c61adb1ae6",
-    "872761de43d5",
-    "dbb449008550",
-    "eada63444e56",
-    "0086fa5a9696",
-    "d24136e7b90e",
-    "c513b8874fbc",
-    "8726123f43a6",
-    "067e1b71a13d",
-    "4b29c56e364b",
-    "03d85c2c1171",
-    "17802168b4c2",
-    "dbec00546893",
-    "a3d850b156f7",
-    "afa9452cd70a",
-    "20c9fcd34eaf",
-    "a40a1f1bc5d5",
-    "87af0575d358",
-    "97880498abd8",
-    "b04fbe923a2e",
-    "4a97857a034e",
-    "afc6507c006b",
-    "ebe6f86647b3",
-    "14559725fbb0",
-    "7ed22f5f96fb",
-    "a03438edd319",
-    "bcad8e0e92be",
-    "2f7b276e0b9c",
-    "0182d7bbf586",
-    "6dba711d20b5",
-    "1384b80cfb1f",
-    "7c7832d51a7a",
     "3d8ec7e82777",
     "13fd73380d75",
     "92deca0b05e5",
@@ -499,19 +460,48 @@
     "2f097c6f7765",
     "fac8daa19163",
     "9b45eabc7311",
-    "33451634c8b1"
+    "33451634c8b1",
+    "91868c0b882f",
+    "dcb4c95dbbf1",
+    "327133939058",
+    "616f0cdb4769",
+    "983bdc3548d0",
+    "57a107f3a310",
+    "b99084fa91fa",
+    "6b0819555cb7",
+    "c733bac7a8d4",
+    "b8c44b8a729a",
+    "003c465d4fd3",
+    "e21f6bb4c054",
+    "0ea8d056cded",
+    "90f0446a0dca",
+    "2273cd0d70ad",
+    "d84f3c2bb197",
+    "4069e53ab17c",
+    "cbc3c816d09b",
+    "a84433b7aad2",
+    "ff3d0c75eae1",
+    "790768e874f3",
+    "bf0b5fe4bfb5",
+    "d21a48b7e37b",
+    "65a8521a0c71",
+    "6c4518e6b4cc",
+    "e565d7c60d5e",
+    "fea132afd6e5",
+    "ae76a4ef10ad",
+    "6c4518e6b4cc",
+    "6d06c1a52537",
+    "b98112d47ee3",
+    "cd4c5a253b48",
+    "c22d493e51ac",
+    "04b9a4f79af5",
+    "ee3921d190f3",
+    "60d2b32cc0e7",
+    "66f018e462e9",
+    "4ff8d1e9c217",
+    "e7058d4c6fdc"
   ],
   "failed_ids": {
-    "1d71f18df937": "2026-06-07T14:54:03.878322+00:00",
-    "69627b43b26b": "2026-06-07T14:54:03.878322+00:00",
-    "e8a46668af08": "2026-06-07T14:54:03.878322+00:00",
-    "e18ce48bd70d": "2026-06-07T14:54:03.878322+00:00",
-    "1c9b92ff372a": "2026-06-07T14:54:03.878322+00:00",
-    "9e0cd2dc10ad": "2026-06-07T14:54:03.878322+00:00",
-    "6ff864e813d9": "2026-06-07T14:54:03.878322+00:00",
-    "dcc701bc41aa": "2026-06-07T14:54:03.878322+00:00",
-    "8bd7db9a8202": "2026-06-07T14:54:03.878322+00:00",
-    "938fab660e36": "2026-06-07T14:54:03.878322+00:00",
     "a077e1782901": "2026-06-07T16:10:46.058265+00:00",
     "5757dd74387a": "2026-06-07T16:10:46.058265+00:00",
     "b1689bc91d41": "2026-06-07T16:10:46.058265+00:00",
@@ -532,204 +522,31 @@
     "ce5b8da1d189": "2026-06-07T16:10:46.058265+00:00",
     "c68e36a05369": "2026-06-07T16:10:46.058265+00:00",
     "f5c85a8985e0": "2026-06-07T16:10:46.058265+00:00",
-    "3409f56966a6": "2026-06-07T16:10:46.058265+00:00"
+    "3409f56966a6": "2026-06-07T16:10:46.058265+00:00",
+    "17bb08c61dd2": "2026-06-07T18:56:40.014191+00:00",
+    "fa94b5ef0358": "2026-06-07T18:56:40.014191+00:00",
+    "dcc701bc41aa": "2026-06-07T18:56:40.014191+00:00",
+    "8bd7db9a8202": "2026-06-07T18:56:40.014191+00:00",
+    "938fab660e36": "2026-06-07T18:56:40.014191+00:00"
   },
   "live_clusters": {
-    "64c571ae3c8412d2": {
-      "topic": "ASICS GEL-Kayano 14 Cream Summer Release",
-      "item_ids": [
-        "ae4a6b1cb6f4"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "748310daf2dd6896": {
-      "topic": "Laurie Metcalf Career Profile Complicated Mothers",
-      "item_ids": [
-        "330d5b9c9917"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "05a86867fb5d40f5": {
-      "topic": "Patrick Godfrey Ever After Star Obituary",
-      "item_ids": [
-        "e0e803e45529",
-        "a947a39de655"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f47d18a25d76a3c3": {
-      "topic": "Carlos Indio Solari Argentine Rock Legend Obituary",
-      "item_ids": [
-        "a9d8554f30d0"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a690d0def72ac04e": {
-      "topic": "Olivia Rodrigo Primavera Sound 2026 Surprise Set",
-      "item_ids": [
-        "6dc94f26a63a",
-        "ff4396385929"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "22292f64e7976f14": {
-      "topic": "The Cure Primavera Sound 2026 Headlining Set",
-      "item_ids": [
-        "5e9c1ef19a1e",
-        "984cce028e59"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3dcf552d113a5912": {
-      "topic": "Ghostbusters Animated Netflix Series Announcement",
-      "item_ids": [
-        "3713186ea9a7"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d0a092215672d55f": {
-      "topic": "WWDC 2026 Siri Apple Intelligence Updates",
-      "item_ids": [
-        "fa9b3f426447",
-        "59cf36be06d3",
-        "ad78602057e3"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T14:54:03.878322+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "fa9b3f426447",
-        "59cf36be06d3",
-        "ad78602057e3"
-      ]
-    },
-    "d288a68885d04362": {
-      "topic": "Burn-9 Metal Gear Codec Game",
-      "item_ids": [
-        "04beab294afb"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6ab309f10eaf35f8": {
-      "topic": "Astronomy Science Stories Black Hole Protoplanet",
-      "item_ids": [
-        "037b6ba39f11"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9d4afebafa413dc1": {
-      "topic": "NBA Finals Game 2 Mitch Johnson Spurs Controversial Call",
-      "item_ids": [
-        "7bf6b8de98b3",
-        "2f63c8210b67"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5b7698c90a80f747": {
-      "topic": "2026 NBA Mock Draft Anthony Davis Trade Speculation",
-      "item_ids": [
-        "e840eb161853",
-        "6dedfedd34cc",
-        "e42cbee65c56",
-        "d6513869451e"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-06T21:12:26.298381+00:00",
-      "picks_file": "picks/picks-2026-06-06-2113.md",
-      "why_text": "Mock draft season is in full swing, and the Anthony Davis trade rumors have injected real intrigue into how the 2026 draft board could shift \u2014 blockbuster trades reshape picks, and teams like the Sixers are already being slotted into specific selections like Morez Johnson Jr. at No. 22. Davis's future in LA has been a slow-burn storyline all season, and attaching it to draft capital turns this from rumor into structural franchise planning. The convergence of team-specific projections and superstar trade speculation signals the league is entering its annual 'what if' rebuild mode ahead of the offseason.",
-      "last_escalated_item_ids": [
-        "e840eb161853",
-        "6dedfedd34cc",
-        "e42cbee65c56"
-      ]
-    },
-    "1985728c07704878": {
-      "topic": "Nets 2026 NBA Draft Workouts Nate Ament",
-      "item_ids": [
-        "549a5730a25a"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d301957b29bf103": {
-      "topic": "Knicks Fans Arrested NBA Finals Game 2 MSG Celebration",
-      "item_ids": [
-        "7098ebd4cd36",
-        "e10b988602e1"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6637fde5040f0dc9": {
-      "topic": "Hawks Center Market Activity 2026 Offseason",
-      "item_ids": [
-        "a55d8b4622b4",
-        "bd67975dfd5c"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "778244ea9ff34fd0": {
-      "topic": "BMW M5 Depreciation Tracker F10 F90 G90",
-      "item_ids": [
-        "a64b062e4d76"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "27367b90b32c84f3": {
-      "topic": "Volkswagen ID.Buzz vs BMW M760E Comparison",
-      "item_ids": [
-        "71405984c21e"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4345a166162c909a": {
-      "topic": "Mercedes E 300e vs BMW M760E Luxury Hybrid",
-      "item_ids": [
-        "a31559e75376"
-      ],
-      "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "cc79bc5056682910": {
       "topic": "Morgan Wallen Pittsburgh Concert Cancellation Weather",
       "item_ids": [
         "5fc120e07297",
-        "87d239439c0b"
+        "87d239439c0b",
+        "57a107f3a310"
       ],
       "created_at": "2026-06-06T20:01:23.352136+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T18:56:40.014191+00:00",
+      "picks_file": "picks/picks-2026-06-07-1857.md",
+      "why_text": "Morgan Wallen scrapped his Pittsburgh concert citing 'adverse weather' \u2014 but fans on the ground reported clear skies, and now the internet is doing what it does best: demanding answers. Wallen has been a lightning rod for controversy in recent years, so any move that looks even slightly evasive gets amplified fast. The fact that he felt compelled to publicly push back on 'nonsense' rumors already tells you the story got away from his team.",
+      "last_escalated_item_ids": [
+        "5fc120e07297",
+        "87d239439c0b",
+        "57a107f3a310"
+      ]
     },
     "be7a896a598565df": {
       "topic": "Margaret Cho Lilly Wachowski Nina Nguyen Comedy Special EPs",
@@ -1372,7 +1189,8 @@
     "06b16188d414fd2a": {
       "topic": "NBA Finals Game 3 Knicks Odds Analysis",
       "item_ids": [
-        "e65cad6372a0"
+        "e65cad6372a0",
+        "d21a48b7e37b"
       ],
       "created_at": "2026-06-07T14:54:44.913090+00:00",
       "last_escalated_size": 0,
@@ -1463,7 +1281,8 @@
     "9351ff09cb346fb8": {
       "topic": "Tony Awards 2026 79th Ceremony",
       "item_ids": [
-        "0db0eddb281a"
+        "0db0eddb281a",
+        "983bdc3548d0"
       ],
       "created_at": "2026-06-07T16:11:49.288053+00:00",
       "last_escalated_size": 0,
@@ -1634,11 +1453,20 @@
     "c9018b92743ee125": {
       "topic": "Stacey King Bulls Champion Death Obituary",
       "item_ids": [
-        "1ac3430a69a7"
+        "1ac3430a69a7",
+        "790768e874f3",
+        "bf0b5fe4bfb5"
       ],
       "created_at": "2026-06-07T17:41:20.307438+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T18:56:40.014191+00:00",
+      "picks_file": "picks/picks-2026-06-07-1857.md",
+      "why_text": "Stacey King won three championships alongside Michael Jordan in the Bulls' dynasty years, but his second act as Chicago's beloved color commentator \u2014 famous for his unfiltered enthusiasm and one-liners \u2014 made him a cult figure for an entirely new generation of fans. His death at 59 hits the Bulls community especially hard because he was so much more than a broadcaster; he was the emotional connective tissue between the Jordan era and today's team. Losing him while the NBA Finals are actively being played gives this moment a particular weight \u2014 the sport is at its biggest stage and one of its most joyful voices is suddenly gone.",
+      "last_escalated_item_ids": [
+        "1ac3430a69a7",
+        "790768e874f3",
+        "bf0b5fe4bfb5"
+      ]
     },
     "afb0d7cd4441a883": {
       "topic": "76ers Nelson Executive Promotion",
@@ -1724,7 +1552,8 @@
     "e6209b7522020bd7": {
       "topic": "Bommarito 500 World Wide Technology Raceway",
       "item_ids": [
-        "f79015338cad"
+        "f79015338cad",
+        "d84f3c2bb197"
       ],
       "created_at": "2026-06-07T17:41:20.307438+00:00",
       "last_escalated_size": 0,
@@ -1909,7 +1738,268 @@
       "created_at": "2026-06-07T17:41:20.307438+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "cc5d019307527f2f": {
+      "topic": "Nike Vomero Premium Gradient Midsole Release",
+      "item_ids": [
+        "91868c0b882f"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1290859ae32e89e4": {
+      "topic": "Spyro Game Spring 2027 Dragon-Flight Feature",
+      "item_ids": [
+        "dcb4c95dbbf1"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "68c6a92b08ae24b3": {
+      "topic": "Valor Mortis Video Game Vincent Cassel Napoleon",
+      "item_ids": [
+        "327133939058"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f31b63e0d39fb04c": {
+      "topic": "Taylor Swift Toy Story 5 Acoustic Piano Versions",
+      "item_ids": [
+        "616f0cdb4769"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "41afe3729b31ea41": {
+      "topic": "Scary Movie 6 Melania Trump Joke Cut Anna Faris",
+      "item_ids": [
+        "b99084fa91fa"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b640f532ec0963ee": {
+      "topic": "Scary Movie 6 Box Office Record $55M Paramount",
+      "item_ids": [
+        "6b0819555cb7"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "08f6cd4e91985e20": {
+      "topic": "Notion Anthropic Service Restoration",
+      "item_ids": [
+        "c733bac7a8d4"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "20ccc44f11886acd": {
+      "topic": "Persona 4 Revival February 2027 Release Date",
+      "item_ids": [
+        "b8c44b8a729a"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ffc25aab7fde9488": {
+      "topic": "Persona 6 Graveyard Toxic Green Color Scheme",
+      "item_ids": [
+        "003c465d4fd3"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3c37f1308ae9723b": {
+      "topic": "Hellblade Senua 2027 Action Sequel",
+      "item_ids": [
+        "e21f6bb4c054"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "903b8fce69ee7ab7": {
+      "topic": "Limited Edition Translucent Green Xbox Series X Fall",
+      "item_ids": [
+        "0ea8d056cded"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "db93c15654a63cc7": {
+      "topic": "Crazy Taxi World Tour 2027 Series Reboot",
+      "item_ids": [
+        "90f0446a0dca"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "57a02150be9406c8": {
+      "topic": "Delta Airlines United Pacific Crown Competition",
+      "item_ids": [
+        "2273cd0d70ad"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bf7f0c670d8f179b": {
+      "topic": "Cognizant Technology Enterprise AI Talent Strategy",
+      "item_ids": [
+        "4069e53ab17c"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "107257a6da07c24b": {
+      "topic": "Global Lithium Rare Earth EV Technology Demand",
+      "item_ids": [
+        "cbc3c816d09b"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "18eab29319ae516d": {
+      "topic": "Marvell Technology S&P 500 Index Inclusion",
+      "item_ids": [
+        "a84433b7aad2"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4e0e71c499e2628f": {
+      "topic": "Elektros Lithium Rare Earths EV Technology",
+      "item_ids": [
+        "ff3d0c75eae1"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "17493454d4e75f35": {
+      "topic": "Stock Market Correction ETF Investment Strategy",
+      "item_ids": [
+        "65a8521a0c71"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1628489cb4701396": {
+      "topic": "Wise Group PLC Business Operations Outlook",
+      "item_ids": [
+        "6c4518e6b4cc"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f501d24c9fbbf6e0": {
+      "topic": "Purdue Farmers Market Cultural Goods Expansion",
+      "item_ids": [
+        "e565d7c60d5e"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1760726eb4c232b6": {
+      "topic": "BioPark Giraffe Habitat Land Expansion",
+      "item_ids": [
+        "fea132afd6e5"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "153357df763706f5": {
+      "topic": "Berkshire Hathaway Taylor Morrison Housing Bet",
+      "item_ids": [
+        "6c4518e6b4cc"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b2ae114233acb820": {
+      "topic": "Parsons Corporation Air Force Contract $99M",
+      "item_ids": [
+        "6d06c1a52537"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a03057820da3bef3": {
+      "topic": "Pony AI Debt-Free Revenue Growth Stock",
+      "item_ids": [
+        "b98112d47ee3"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cdd4c7bb6c175162": {
+      "topic": "Meta Platforms 10-Year Stock Investment Returns",
+      "item_ids": [
+        "cd4c5a253b48"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "267c1fe04f6acae2": {
+      "topic": "BMW M240i vs Maybach Exelero Performance Luxury",
+      "item_ids": [
+        "c22d493e51ac"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "92d31e080e1eabe1": {
+      "topic": "BMW iX3 Real-World EV Range Test Leader",
+      "item_ids": [
+        "04b9a4f79af5"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8a16906945613d7b": {
+      "topic": "BMW M240i vs Maserati MC20 Performance",
+      "item_ids": [
+        "ee3921d190f3"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "26038b403a044f86": {
+      "topic": "BMW M240i vs DeLorean Speed Nostalgia",
+      "item_ids": [
+        "60d2b32cc0e7"
+      ],
+      "created_at": "2026-06-07T18:57:21.761734+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-07T17:41:31.693587+00:00"
+  "last_checked": "2026-06-07T18:57:34.393762+00:00"
 }
