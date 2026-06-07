@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "a59dabc678e8",
-    "441bbf4fa873",
-    "0e5fb45a1b89",
-    "367293da8d15",
-    "7aa3c041c2be",
-    "eac3b5b9794e",
-    "742764925925",
-    "43a32a23452d",
-    "3a47cb16a711",
-    "e8facb175bc5",
-    "a85c4f7a7718",
-    "232a7bc8d6e2",
-    "d400f7adf4d7",
     "b7b89ba5c65c",
     "5dfc5500f01b",
     "b82379998c59",
@@ -499,7 +486,20 @@
     "b9edbe803a77",
     "d35974b17826",
     "99a37c1c87f0",
-    "3b92273ebdb3"
+    "3b92273ebdb3",
+    "fafd484f97b3",
+    "ac3b4af34f85",
+    "c08467ca3653",
+    "823021378754",
+    "706ad3aa9b3e",
+    "dad505194336",
+    "23eaa8d29e25",
+    "f41dc3d465dd",
+    "9c33e50044a5",
+    "fe806137c460",
+    "b3b4702f2f12",
+    "e704452d9d65",
+    "2576f9286fda"
   ],
   "failed_ids": {
     "17bb08c61dd2": "2026-06-07T18:56:40.014191+00:00",
@@ -523,72 +523,30 @@
     "7cf79b841c05": "2026-06-07T20:13:41.491297+00:00",
     "4de5db9ca181": "2026-06-07T20:13:41.491297+00:00",
     "9993b561722c": "2026-06-07T20:13:41.491297+00:00",
-    "4c137dd4f4f7": "2026-06-07T20:13:41.491297+00:00"
+    "4c137dd4f4f7": "2026-06-07T20:13:41.491297+00:00",
+    "f3f33e0a8af9": "2026-06-07T21:37:19.231152+00:00",
+    "74145155f28d": "2026-06-07T21:37:19.231152+00:00",
+    "8fc4a54b1dac": "2026-06-07T21:37:19.231152+00:00",
+    "27ef737191fb": "2026-06-07T21:37:19.231152+00:00",
+    "1faa819e58c2": "2026-06-07T21:37:19.231152+00:00",
+    "dd663e6ac296": "2026-06-07T21:37:19.231152+00:00",
+    "f5993b54b900": "2026-06-07T21:37:19.231152+00:00",
+    "d8c122ee0bc1": "2026-06-07T21:37:19.231152+00:00",
+    "1b88cf87b58b": "2026-06-07T21:37:19.231152+00:00",
+    "15d8f1c7c9e1": "2026-06-07T21:37:19.231152+00:00",
+    "3ca39d5b6995": "2026-06-07T21:37:19.231152+00:00",
+    "0d3f7f12f281": "2026-06-07T21:37:19.231152+00:00",
+    "5d51a29e0b4b": "2026-06-07T21:37:19.231152+00:00",
+    "99cc3602688e": "2026-06-07T21:37:19.231152+00:00",
+    "b2fed03e175a": "2026-06-07T21:37:19.231152+00:00",
+    "77cee3f48626": "2026-06-07T21:37:19.231152+00:00",
+    "1931e6f70fe3": "2026-06-07T21:37:19.231152+00:00",
+    "2a9b75461cb6": "2026-06-07T21:37:19.231152+00:00",
+    "4ef94850f39e": "2026-06-07T21:37:19.231152+00:00",
+    "54acf1270572": "2026-06-07T21:37:19.231152+00:00",
+    "74942db477a2": "2026-06-07T21:37:19.231152+00:00"
   },
   "live_clusters": {
-    "0486861161d4d8cd": {
-      "topic": "Jordan Tatum 4 Pure Platinum Sneaker Release",
-      "item_ids": [
-        "711c1504d8ff"
-      ],
-      "created_at": "2026-06-06T21:12:59.981802+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "357fac706760423e": {
-      "topic": "Scott Pelley 60 Minutes Firing Statement",
-      "item_ids": [
-        "c431743e9342",
-        "379dfe9384ca",
-        "16cf51cae525"
-      ],
-      "created_at": "2026-06-06T21:12:59.981802+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T14:54:03.878322+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "c431743e9342",
-        "379dfe9384ca",
-        "16cf51cae525"
-      ]
-    },
-    "e6fca46c0da24f63": {
-      "topic": "OpenAI Lockdown Mode Security Feature",
-      "item_ids": [
-        "c3048522c6f1"
-      ],
-      "created_at": "2026-06-06T21:12:59.981802+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "131b144ad5938277": {
-      "topic": "US States Sue Block Paramount Warner Bros Takeover",
-      "item_ids": [
-        "5147579c2589"
-      ],
-      "created_at": "2026-06-06T21:12:59.981802+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a50c305fcb0dd940": {
-      "topic": "BMW Motorrad World Endurance Team 8 Hours Spa Victory",
-      "item_ids": [
-        "813539306509",
-        "25ecc97ffae1",
-        "95b6723e56bd",
-        "dae73ecbf776"
-      ],
-      "created_at": "2026-06-06T21:12:59.981802+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-06T22:17:29.593597+00:00",
-      "picks_file": "picks/picks-2026-06-06-2218.md",
-      "why_text": "BMW's factory endurance squad took a commanding win at Spa, surviving a mid-race rain disruption that reshuffled the field \u2014 a test of strategy and machine reliability that their rivals couldn't match. It's a significant result for BMW Motorrad's motorsport credibility at a moment when the brand is aggressively pushing its performance identity across both two and four wheels. World Endurance racing doesn't get mainstream attention often, but a wet-weather Spa victory is exactly the kind of story that cuts through to serious enthusiasts.",
-      "last_escalated_item_ids": [
-        "813539306509",
-        "25ecc97ffae1",
-        "95b6723e56bd"
-      ]
-    },
     "6cb78e50f8d633a1": {
       "topic": "New Balance 2010 Pink Chalk Colorway Release",
       "item_ids": [
@@ -630,11 +588,19 @@
       "topic": "Mitchell Robinson Technical Foul Rescinded NBA Finals",
       "item_ids": [
         "67084914a393",
-        "50b9624f432c"
+        "50b9624f432c",
+        "f41dc3d465dd"
       ],
       "created_at": "2026-06-06T22:18:17.188167+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T21:37:19.231152+00:00",
+      "picks_file": "picks/picks-2026-06-07-2137.md",
+      "why_text": "The NBA walking back a technical foul in the middle of the Finals is a rare admission that officiating got it wrong on the biggest stage \u2014 and it matters because Robinson, already a polarizing physical presence, was caught in a shoving match that the league now says didn't warrant the call. It won't change the Game 2 result, but it does shift the narrative around how refs are policing the Knicks' center during a championship run. For New York fans who've spent years feeling victimized by officiating, this rescission is both vindication and fuel.",
+      "last_escalated_item_ids": [
+        "67084914a393",
+        "50b9624f432c",
+        "f41dc3d465dd"
+      ]
     },
     "d5d5e8f4f7564743": {
       "topic": "Boston Celtics 2024 Title Aftermath Financial Impact",
@@ -749,7 +715,8 @@
     "57bb95c9c0038993": {
       "topic": "Duffy Surprise Return First Live Concert 15 Years",
       "item_ids": [
-        "16bebd56e94f"
+        "16bebd56e94f",
+        "fafd484f97b3"
       ],
       "created_at": "2026-06-07T06:08:26.524385+00:00",
       "last_escalated_size": 0,
@@ -1126,11 +1093,18 @@
       "topic": "NBA Finals Game 3 Knicks Odds Analysis",
       "item_ids": [
         "e65cad6372a0",
-        "d21a48b7e37b"
+        "d21a48b7e37b",
+        "23eaa8d29e25"
       ],
       "created_at": "2026-06-07T14:54:44.913090+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T21:37:19.231152+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "e65cad6372a0",
+        "d21a48b7e37b",
+        "23eaa8d29e25"
+      ]
     },
     "790a9176118a84c8": {
       "topic": "Video Games Impact Boys Development Parenting",
@@ -2065,7 +2039,43 @@
       "created_at": "2026-06-07T20:14:26.939708+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "ca3c81ccb978c013": {
+      "topic": "Earth Wind & Fire Questlove Documentary Feature",
+      "item_ids": [
+        "ac3b4af34f85"
+      ],
+      "created_at": "2026-06-07T21:37:55.130607+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8b84f99478cc0919": {
+      "topic": "Morgan Wallen Pittsburgh Show Cancellation Statement",
+      "item_ids": [
+        "c08467ca3653"
+      ],
+      "created_at": "2026-06-07T21:37:55.130607+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "855fe95c89dd921c": {
+      "topic": "Signet City Fungalpunk RPG Release",
+      "item_ids": [
+        "706ad3aa9b3e"
+      ],
+      "created_at": "2026-06-07T21:37:55.130607+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "85ccabd7e1e98bd8": {
+      "topic": "Victor Wembanyama NBA Finals Performance Analysis",
+      "item_ids": [
+        "dad505194336"
+      ],
+      "created_at": "2026-06-07T21:37:55.130607+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-07T20:14:26.941042+00:00"
+  "last_checked": "2026-06-07T21:38:01.347495+00:00"
 }
