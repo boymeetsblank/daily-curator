@@ -1,24 +1,5 @@
 {
   "known_ids": [
-    "fb5447729d50",
-    "390c547c391e",
-    "6057125a9923",
-    "5a5b3e435f69",
-    "2489af0a01d2",
-    "4e4f27ec31c8",
-    "c85e41e0cd14",
-    "09c49e71d76b",
-    "845ba3be624e",
-    "0841506a4bda",
-    "57922c1f88ba",
-    "86bac8a0b096",
-    "89a17cf32bb1",
-    "6b3a91fbcc93",
-    "e81d8317cc5b",
-    "c789530e8f67",
-    "122ef97f0e4d",
-    "15efa1038819",
-    "4f3f972b128d",
     "5e2abe150c7e",
     "8dc63a1ec59f",
     "c10c62dd4c56",
@@ -499,14 +480,28 @@
     "5edf92540cf0",
     "2271371f9270",
     "fcd764cf9dea",
-    "dae94df2fe9c"
+    "dae94df2fe9c",
+    "f4ecdabd78ea",
+    "11f1f9c93e35",
+    "94be9f2e8b80",
+    "5113f181c51a",
+    "dfd3908e036e",
+    "ee74a2b3e0b2",
+    "096989c0ac96",
+    "c43b8d7c382a",
+    "4d486a49edf7",
+    "f01280f17c35",
+    "b59668e037e9",
+    "3a519e67a6ec",
+    "9e14183bb7b5",
+    "265aeaedfbc4",
+    "d800792d0ba2",
+    "96ff01b8255e",
+    "85da72de85dc",
+    "cf19f25ef48b",
+    "3108d73c12f6"
   ],
   "failed_ids": {
-    "17bb08c61dd2": "2026-06-07T18:56:40.014191+00:00",
-    "fa94b5ef0358": "2026-06-07T18:56:40.014191+00:00",
-    "dcc701bc41aa": "2026-06-07T18:56:40.014191+00:00",
-    "8bd7db9a8202": "2026-06-07T18:56:40.014191+00:00",
-    "938fab660e36": "2026-06-07T18:56:40.014191+00:00",
     "dce5592dd916": "2026-06-07T20:13:41.491297+00:00",
     "4a059189fced": "2026-06-07T20:13:41.491297+00:00",
     "580117669bb4": "2026-06-07T20:13:41.491297+00:00",
@@ -558,36 +553,22 @@
     "ecf39636f19b": "2026-06-07T22:43:28.974233+00:00",
     "6175fbfc0f77": "2026-06-07T22:43:28.974233+00:00",
     "384dd5115a99": "2026-06-07T22:43:28.974233+00:00",
-    "45a135a35341": "2026-06-07T22:43:28.974233+00:00"
+    "45a135a35341": "2026-06-07T22:43:28.974233+00:00",
+    "69d63648c968": "2026-06-07T23:47:02.225809+00:00",
+    "c9256644810c": "2026-06-07T23:47:02.225809+00:00",
+    "00d5b30f1fe0": "2026-06-07T23:47:02.225809+00:00",
+    "133c4bdb938f": "2026-06-07T23:47:02.225809+00:00",
+    "f183e717d560": "2026-06-07T23:47:02.225809+00:00",
+    "8605b5d67679": "2026-06-07T23:47:02.225809+00:00",
+    "a497602522ed": "2026-06-07T23:47:02.225809+00:00",
+    "551ab9101e61": "2026-06-07T23:47:02.225809+00:00",
+    "817ebfc8734a": "2026-06-07T23:47:02.225809+00:00",
+    "7b9600bc59a8": "2026-06-07T23:47:02.225809+00:00",
+    "3e2cfe589b83": "2026-06-07T23:47:02.225809+00:00",
+    "ec6c07e04de8": "2026-06-07T23:47:02.225809+00:00",
+    "802eb4946c38": "2026-06-07T23:47:02.225809+00:00"
   },
   "live_clusters": {
-    "a6889a6ab0f3088d": {
-      "topic": "Peso Pluma Kenia Os Breakup",
-      "item_ids": [
-        "e1fadfb94e8d"
-      ],
-      "created_at": "2026-06-06T23:32:16.606615+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a3c3a4e3d1691a8b": {
-      "topic": "LeBron James Lakers Contract Extension",
-      "item_ids": [
-        "769f82b4d06b"
-      ],
-      "created_at": "2026-06-06T23:32:16.606615+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0e224a43b3085eb8": {
-      "topic": "Anthropic Valuation Milestone AI Stock Impact",
-      "item_ids": [
-        "73f29fc2e9bf"
-      ],
-      "created_at": "2026-06-06T23:32:16.606615+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "01951da81145b3c2": {
       "topic": "Benito Skinner Overcompensating Season 2 LGBTQ+ Narrative",
       "item_ids": [
@@ -767,11 +748,19 @@
       "topic": "Micron Technology Stock Analysis Prediction",
       "item_ids": [
         "19a590bca8f9",
-        "5967b24a5577"
+        "5967b24a5577",
+        "4d486a49edf7"
       ],
       "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T23:47:02.225809+00:00",
+      "picks_file": "picks/picks-2026-06-07-2347.md",
+      "why_text": "Micron just got a brutal reminder that being in the AI memory game doesn't guarantee you win it \u2014 Nvidia's signal toward HBM4 sourcing outside Micron's lane sent the stock into freefall, rattling investor confidence in one of the sector's supposed AI darlings. This hits at a precarious moment when the entire AI chip spending thesis is under scrutiny, and any crack in the demand story gets punished hard. Micron had positioned itself as a critical infrastructure play for the AI boom; today's drop suggests the market isn't buying that story unconditionally anymore.",
+      "last_escalated_item_ids": [
+        "19a590bca8f9",
+        "5967b24a5577",
+        "4d486a49edf7"
+      ]
     },
     "8ce8faec8abc759d": {
       "topic": "FORT Robotics Mapless AI Acquisition",
@@ -1052,16 +1041,23 @@
         "e65cad6372a0",
         "d21a48b7e37b",
         "23eaa8d29e25",
-        "53cfb4833b8a"
+        "53cfb4833b8a",
+        "f01280f17c35",
+        "b59668e037e9",
+        "3a519e67a6ec"
       ],
       "created_at": "2026-06-07T14:54:44.913090+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T21:37:19.231152+00:00",
+      "last_escalated_size": 7,
+      "last_escalated_at": "2026-06-07T23:47:02.225809+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "e65cad6372a0",
         "d21a48b7e37b",
-        "23eaa8d29e25"
+        "23eaa8d29e25",
+        "53cfb4833b8a",
+        "f01280f17c35",
+        "b59668e037e9",
+        "3a519e67a6ec"
       ]
     },
     "790a9176118a84c8": {
@@ -1161,16 +1157,22 @@
       "item_ids": [
         "0db0eddb281a",
         "983bdc3548d0",
-        "69f62b94c8d6"
+        "69f62b94c8d6",
+        "f4ecdabd78ea",
+        "11f1f9c93e35",
+        "94be9f2e8b80"
       ],
       "created_at": "2026-06-07T16:11:49.288053+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T22:43:28.974233+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-07T23:47:02.225809+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "0db0eddb281a",
         "983bdc3548d0",
-        "69f62b94c8d6"
+        "69f62b94c8d6",
+        "f4ecdabd78ea",
+        "11f1f9c93e35",
+        "94be9f2e8b80"
       ]
     },
     "ba8f8b2d9d305b13": {
@@ -2126,7 +2128,61 @@
       "created_at": "2026-06-07T22:44:07.787055+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "d4e888a936ab4520": {
+      "topic": "India's Peddi Film Female Lead Depiction Backlash",
+      "item_ids": [
+        "5113f181c51a"
+      ],
+      "created_at": "2026-06-07T23:47:38.478492+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "60194609455dfa38": {
+      "topic": "Naver SK hynix Nvidia Gigawatt-Scale AI Factory Partnership",
+      "item_ids": [
+        "dfd3908e036e",
+        "ee74a2b3e0b2",
+        "096989c0ac96"
+      ],
+      "created_at": "2026-06-07T23:47:38.478492+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T23:47:02.225809+00:00",
+      "picks_file": "picks/picks-2026-06-07-2347.md",
+      "why_text": "South Korea is making a serious play for AI infrastructure dominance \u2014 Naver's gigawatt-scale factory plans, backed by Nvidia's chips and SK Hynix's cutting-edge memory, signal that Asia's AI buildout is shifting from aspiration to industrial reality. This isn't just a corporate deal; it's a geopolitical statement, positioning Korea as a sovereign AI power at a moment when nations are racing to secure their own compute infrastructure. The Nvidia-SK Hynix multiyear memory partnership is especially significant \u2014 it locks in the supply chain for next-gen AI hardware at a scale that will reshape who controls the physical backbone of AI.",
+      "last_escalated_item_ids": [
+        "dfd3908e036e",
+        "ee74a2b3e0b2",
+        "096989c0ac96"
+      ]
+    },
+    "496c62880d84a199": {
+      "topic": "Carpenter Technology CRS Investor Momentum",
+      "item_ids": [
+        "c43b8d7c382a"
+      ],
+      "created_at": "2026-06-07T23:47:38.478492+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c9be3668258fe88": {
+      "topic": "Stratasys SSYS New Headquarters Expansion",
+      "item_ids": [
+        "9e14183bb7b5"
+      ],
+      "created_at": "2026-06-07T23:47:38.478492+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75d9e6fa9b70c0d0": {
+      "topic": "Maserati vs BMW Luxury Brand Depreciation",
+      "item_ids": [
+        "265aeaedfbc4"
+      ],
+      "created_at": "2026-06-07T23:47:38.478492+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-07T22:44:14.561434+00:00"
+  "last_checked": "2026-06-07T23:47:52.921027+00:00"
 }
