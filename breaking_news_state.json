@@ -1,29 +1,5 @@
 {
   "known_ids": [
-    "3d8ec7e82777",
-    "13fd73380d75",
-    "92deca0b05e5",
-    "56e98dd803dc",
-    "7fdf33dbd919",
-    "7eec9d601c59",
-    "5f6350f8ff4b",
-    "f782a2652b5d",
-    "bc75694f7e62",
-    "1e9275655ec1",
-    "63f5ea5ec574",
-    "c5ebd2b3313b",
-    "bcdc10cf3a8f",
-    "d1086ac92841",
-    "df1c0666f3ed",
-    "9bb4b12c1a63",
-    "df1fb69669c3",
-    "d97a1946832e",
-    "b92a5728bc1c",
-    "b7c02dad7488",
-    "4f0893239df2",
-    "4860e4594e43",
-    "272009b4f8a4",
-    "c52a0a753a53",
     "a59dabc678e8",
     "441bbf4fa873",
     "0e5fb45a1b89",
@@ -499,100 +475,57 @@
     "60d2b32cc0e7",
     "66f018e462e9",
     "4ff8d1e9c217",
-    "e7058d4c6fdc"
+    "e7058d4c6fdc",
+    "c9883046f963",
+    "86fb8e2cdb81",
+    "bd2acafd1b79",
+    "665d57e61d6e",
+    "d0df9241a85a",
+    "247f91ffdefa",
+    "8e36d13a7cf3",
+    "f9e9983e8480",
+    "97c8519faaa5",
+    "5aa6c75ebcdb",
+    "02bcbc995fdf",
+    "a63a653dee72",
+    "eaa1ccd6d49b",
+    "a87adbd61739",
+    "08352f000cef",
+    "fc3eae6c037d",
+    "0bceb3229eed",
+    "aa756a172917",
+    "ebeeda603b53",
+    "08e371236d26",
+    "b9edbe803a77",
+    "d35974b17826",
+    "99a37c1c87f0",
+    "3b92273ebdb3"
   ],
   "failed_ids": {
-    "a077e1782901": "2026-06-07T16:10:46.058265+00:00",
-    "5757dd74387a": "2026-06-07T16:10:46.058265+00:00",
-    "b1689bc91d41": "2026-06-07T16:10:46.058265+00:00",
-    "45184e8e6199": "2026-06-07T16:10:46.058265+00:00",
-    "8eb90dcabdd3": "2026-06-07T16:10:46.058265+00:00",
-    "13b9dfb8711d": "2026-06-07T16:10:46.058265+00:00",
-    "f99b52f9760b": "2026-06-07T16:10:46.058265+00:00",
-    "028fd833ba53": "2026-06-07T16:10:46.058265+00:00",
-    "fd442d1b95de": "2026-06-07T16:10:46.058265+00:00",
-    "eba64bd2ec06": "2026-06-07T16:10:46.058265+00:00",
-    "1dfa8e746e39": "2026-06-07T16:10:46.058265+00:00",
-    "111897469536": "2026-06-07T16:10:46.058265+00:00",
-    "dff45b255814": "2026-06-07T16:10:46.058265+00:00",
-    "a45663bb3e23": "2026-06-07T16:10:46.058265+00:00",
-    "81c293256608": "2026-06-07T16:10:46.058265+00:00",
-    "8ed62c62d5a8": "2026-06-07T16:10:46.058265+00:00",
-    "1d09693b9947": "2026-06-07T16:10:46.058265+00:00",
-    "ce5b8da1d189": "2026-06-07T16:10:46.058265+00:00",
-    "c68e36a05369": "2026-06-07T16:10:46.058265+00:00",
-    "f5c85a8985e0": "2026-06-07T16:10:46.058265+00:00",
-    "3409f56966a6": "2026-06-07T16:10:46.058265+00:00",
     "17bb08c61dd2": "2026-06-07T18:56:40.014191+00:00",
     "fa94b5ef0358": "2026-06-07T18:56:40.014191+00:00",
     "dcc701bc41aa": "2026-06-07T18:56:40.014191+00:00",
     "8bd7db9a8202": "2026-06-07T18:56:40.014191+00:00",
-    "938fab660e36": "2026-06-07T18:56:40.014191+00:00"
+    "938fab660e36": "2026-06-07T18:56:40.014191+00:00",
+    "dce5592dd916": "2026-06-07T20:13:41.491297+00:00",
+    "4a059189fced": "2026-06-07T20:13:41.491297+00:00",
+    "580117669bb4": "2026-06-07T20:13:41.491297+00:00",
+    "4caacd70282e": "2026-06-07T20:13:41.491297+00:00",
+    "76aac3097f4c": "2026-06-07T20:13:41.491297+00:00",
+    "4b50bdefb268": "2026-06-07T20:13:41.491297+00:00",
+    "d73dc977f8a8": "2026-06-07T20:13:41.491297+00:00",
+    "3bb0585df09c": "2026-06-07T20:13:41.491297+00:00",
+    "b616d895b388": "2026-06-07T20:13:41.491297+00:00",
+    "592d9c8596dc": "2026-06-07T20:13:41.491297+00:00",
+    "8948ee3b6bc1": "2026-06-07T20:13:41.491297+00:00",
+    "c69aa750361b": "2026-06-07T20:13:41.491297+00:00",
+    "3cb23e7398b0": "2026-06-07T20:13:41.491297+00:00",
+    "7cf79b841c05": "2026-06-07T20:13:41.491297+00:00",
+    "4de5db9ca181": "2026-06-07T20:13:41.491297+00:00",
+    "9993b561722c": "2026-06-07T20:13:41.491297+00:00",
+    "4c137dd4f4f7": "2026-06-07T20:13:41.491297+00:00"
   },
   "live_clusters": {
-    "cc79bc5056682910": {
-      "topic": "Morgan Wallen Pittsburgh Concert Cancellation Weather",
-      "item_ids": [
-        "5fc120e07297",
-        "87d239439c0b",
-        "57a107f3a310"
-      ],
-      "created_at": "2026-06-06T20:01:23.352136+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T18:56:40.014191+00:00",
-      "picks_file": "picks/picks-2026-06-07-1857.md",
-      "why_text": "Morgan Wallen scrapped his Pittsburgh concert citing 'adverse weather' \u2014 but fans on the ground reported clear skies, and now the internet is doing what it does best: demanding answers. Wallen has been a lightning rod for controversy in recent years, so any move that looks even slightly evasive gets amplified fast. The fact that he felt compelled to publicly push back on 'nonsense' rumors already tells you the story got away from his team.",
-      "last_escalated_item_ids": [
-        "5fc120e07297",
-        "87d239439c0b",
-        "57a107f3a310"
-      ]
-    },
-    "be7a896a598565df": {
-      "topic": "Margaret Cho Lilly Wachowski Nina Nguyen Comedy Special EPs",
-      "item_ids": [
-        "ab0a40cca0ba"
-      ],
-      "created_at": "2026-06-06T20:01:23.352136+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e0b7b3e6694f7b6d": {
-      "topic": "Hidden Folks 2 Interactive Game Announcement",
-      "item_ids": [
-        "df33844c09a3"
-      ],
-      "created_at": "2026-06-06T20:01:23.352136+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f0b8c3b75576c055": {
-      "topic": "adidas Premium Classic Sneaker Release",
-      "item_ids": [
-        "a6a2f5aa1667"
-      ],
-      "created_at": "2026-06-06T20:01:23.352136+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ac99a3934b9a8fe6": {
-      "topic": "USMNT Trending Topic",
-      "item_ids": [
-        "f49e1ac9b079",
-        "16682ac99747",
-        "bfefc59d771b"
-      ],
-      "created_at": "2026-06-06T20:01:23.352136+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T14:54:03.878322+00:00",
-      "picks_file": "picks/picks-2026-06-07-1454.md",
-      "why_text": "With the 2026 World Cup on home soil approaching fast, every USMNT result is now a referendum on whether this generation can actually deliver. A loss sharp enough to trigger player ratings coverage \u2014 with Antonee Robinson's 7/10 standing out as a relative bright spot \u2014 suggests the team is still searching for consistency where it matters most. The pressure is no longer abstract: hosting a World Cup means there's nowhere to hide, and the scrutiny is only going to intensify.",
-      "last_escalated_item_ids": [
-        "f49e1ac9b079",
-        "16682ac99747",
-        "bfefc59d771b"
-      ]
-    },
     "0486861161d4d8cd": {
       "topic": "Jordan Tatum 4 Pure Platinum Sneaker Release",
       "item_ids": [
@@ -659,7 +592,8 @@
     "6cb78e50f8d633a1": {
       "topic": "New Balance 2010 Pink Chalk Colorway Release",
       "item_ids": [
-        "b2b092edf72b"
+        "b2b092edf72b",
+        "c9883046f963"
       ],
       "created_at": "2026-06-06T22:18:17.188167+00:00",
       "last_escalated_size": 0,
@@ -789,7 +723,8 @@
         "7615beef6e27",
         "1699ac302ecb",
         "59fdc2082089",
-        "b85f95dc4fd7"
+        "b85f95dc4fd7",
+        "86fb8e2cdb81"
       ],
       "created_at": "2026-06-07T06:08:26.524385+00:00",
       "last_escalated_size": 3,
@@ -1099,7 +1034,8 @@
     "7e0666d5f10e88b3": {
       "topic": "Zverev Cobolli Tennis Final",
       "item_ids": [
-        "3cc924724eb1"
+        "3cc924724eb1",
+        "3b92273ebdb3"
       ],
       "created_at": "2026-06-07T14:54:44.913090+00:00",
       "last_escalated_size": 0,
@@ -1426,7 +1362,8 @@
     "4573f65ca2f43967": {
       "topic": "Michael Film Lionsgate Box Office Record",
       "item_ids": [
-        "a2bcb2909cd5"
+        "a2bcb2909cd5",
+        "bd2acafd1b79"
       ],
       "created_at": "2026-06-07T17:41:20.307438+00:00",
       "last_escalated_size": 0,
@@ -1455,7 +1392,9 @@
       "item_ids": [
         "1ac3430a69a7",
         "790768e874f3",
-        "bf0b5fe4bfb5"
+        "bf0b5fe4bfb5",
+        "eaa1ccd6d49b",
+        "d35974b17826"
       ],
       "created_at": "2026-06-07T17:41:20.307438+00:00",
       "last_escalated_size": 3,
@@ -1841,7 +1780,8 @@
     "db93c15654a63cc7": {
       "topic": "Crazy Taxi World Tour 2027 Series Reboot",
       "item_ids": [
-        "90f0446a0dca"
+        "90f0446a0dca",
+        "0bceb3229eed"
       ],
       "created_at": "2026-06-07T18:57:21.761734+00:00",
       "last_escalated_size": 0,
@@ -1999,7 +1939,133 @@
       "created_at": "2026-06-07T18:57:21.761734+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f352cf82466dbdcd": {
+      "topic": "Billboard 200 Chart Achievement Rankings",
+      "item_ids": [
+        "665d57e61d6e"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ede1856bda0ccdd6": {
+      "topic": "Drake ICEMAN Album Chart Performance",
+      "item_ids": [
+        "d0df9241a85a"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b1ea29c450457254": {
+      "topic": "Bob Dylan Basement Tapes Rare Performance",
+      "item_ids": [
+        "247f91ffdefa"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1669e9f3d7930f7b": {
+      "topic": "Therabody Recovery Tool Product Release",
+      "item_ids": [
+        "8e36d13a7cf3"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0c7c80990768e3ae": {
+      "topic": "State of Decay 3 Gameplay Reveal",
+      "item_ids": [
+        "f9e9983e8480"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "259cdd41b77af576": {
+      "topic": "Anthony Head Buffy Actor Retrospective Tribute",
+      "item_ids": [
+        "97c8519faaa5"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e40595b0685fba38": {
+      "topic": "adidas Superstar Square Geometric Sneaker",
+      "item_ids": [
+        "5aa6c75ebcdb"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "977d1bea60ee35d9": {
+      "topic": "adidas Ballet Flat Luxury Shoe Release",
+      "item_ids": [
+        "02bcbc995fdf"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8cc6566f4716c969": {
+      "topic": "adidas Wingtip Sneaker Fashion Release",
+      "item_ids": [
+        "a63a653dee72"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eccf2f941fa91d1f": {
+      "topic": "Karl-Anthony Towns NBA Title Push Minnesota Pride",
+      "item_ids": [
+        "a87adbd61739"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "66138fd5cca57cb5": {
+      "topic": "NBA Finals Ticket Pricing Controversy Knicks Spurs",
+      "item_ids": [
+        "08352f000cef"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "65afae1e4c3aab01": {
+      "topic": "NBA NHL Sunday Night Finals Scheduling Conflict",
+      "item_ids": [
+        "fc3eae6c037d"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "af5de5f13d0fabbe": {
+      "topic": "IGN Live 2026 Gaming Entertainment Expo",
+      "item_ids": [
+        "aa756a172917"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ca38cc2da0bf57e2": {
+      "topic": "WWE Gaming Trademarks Filing Announcement",
+      "item_ids": [
+        "ebeeda603b53"
+      ],
+      "created_at": "2026-06-07T20:14:26.939708+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-07T18:57:34.393762+00:00"
+  "last_checked": "2026-06-07T20:14:26.941042+00:00"
 }
