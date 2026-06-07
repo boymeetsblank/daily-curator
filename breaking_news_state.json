@@ -1,30 +1,5 @@
 {
   "known_ids": [
-    "79cc28ab279b",
-    "d774758ea015",
-    "37e8a965b22e",
-    "3ca958f3fbb1",
-    "939876fb4f1a",
-    "56e279b35f2e",
-    "e0304c0c82d6",
-    "20477dbd47b5",
-    "28636a2212d5",
-    "b871baec4d06",
-    "e51befa851c9",
-    "1837e7676fdf",
-    "5703768e27ab",
-    "2508a3eddc1a",
-    "ef4cc48d3f5a",
-    "c1b9943ea888",
-    "40611e7dd9ca",
-    "2aa6c7954cf6",
-    "6ea57ce697cb",
-    "b5d3ae0e60da",
-    "9a764a966cb5",
-    "4aff8a3b1b81",
-    "3ccaf7dc2d0b",
-    "df838ade43b2",
-    "4afbe348ef40",
     "f586eba38271",
     "f81f440a9b67",
     "61f278197e5d",
@@ -499,22 +474,34 @@
     "de3304102977",
     "523f0faaf35e",
     "8252529d29d3",
-    "60005804e8a4"
+    "60005804e8a4",
+    "59fdc2082089",
+    "ca43d2c33b2a",
+    "ddc6fbaa6c8c",
+    "51a4a34afe25",
+    "4f0d8488c111",
+    "19a590bca8f9",
+    "5a09b7e40f50",
+    "f20bfc071a79",
+    "a4d879154e2e",
+    "75271a891166",
+    "4f019e5914dd",
+    "486377706baa",
+    "16b4424a5490",
+    "d6513869451e",
+    "6227f4e91ae1",
+    "bd2c3c4ae97b",
+    "b4180b532550",
+    "bb1e61acbd0b",
+    "1ada8ea1d49d",
+    "23d8ced123d1",
+    "20750d30860e",
+    "df6df9ff2364",
+    "52bac5a19204",
+    "2ac9b1e8e6b1",
+    "b39a0dfdcbee"
   ],
   "failed_ids": {
-    "1466ee50c190": "2026-06-07T06:07:50.572478+00:00",
-    "69bc9643f8c1": "2026-06-07T06:07:50.572478+00:00",
-    "172342abe45b": "2026-06-07T06:07:50.572478+00:00",
-    "a3ec8c787683": "2026-06-07T06:07:50.572478+00:00",
-    "4e39e2ff5147": "2026-06-07T06:07:50.572478+00:00",
-    "a42b8b2a71d9": "2026-06-07T06:07:50.572478+00:00",
-    "cbac0fa97c2e": "2026-06-07T06:07:50.572478+00:00",
-    "978df40b4f66": "2026-06-07T06:07:50.572478+00:00",
-    "b1ec30f71584": "2026-06-07T06:07:50.572478+00:00",
-    "2c202cae6f9e": "2026-06-07T06:07:50.572478+00:00",
-    "5c9404b48e08": "2026-06-07T06:07:50.572478+00:00",
-    "ac1b6a83a6a7": "2026-06-07T06:07:50.572478+00:00",
-    "daf75910903d": "2026-06-07T06:07:50.572478+00:00",
     "e6aa705c6e71": "2026-06-07T09:33:49.893879+00:00",
     "81ce006306ea": "2026-06-07T09:33:49.893879+00:00",
     "1630481c8d66": "2026-06-07T09:33:49.893879+00:00",
@@ -526,81 +513,16 @@
     "fbdc3449d442": "2026-06-07T09:33:49.893879+00:00",
     "5734bd9ed5a8": "2026-06-07T09:33:49.893879+00:00",
     "61cf9109c622": "2026-06-07T09:33:49.893879+00:00",
-    "72b9a251912f": "2026-06-07T09:33:49.893879+00:00"
+    "72b9a251912f": "2026-06-07T09:33:49.893879+00:00",
+    "52ea41715b4b": "2026-06-07T11:23:28.225566+00:00",
+    "81c293256608": "2026-06-07T11:23:28.225566+00:00",
+    "447bd92c887c": "2026-06-07T11:23:28.225566+00:00",
+    "f1f827bed795": "2026-06-07T11:23:28.225566+00:00",
+    "bab9295d96b0": "2026-06-07T11:23:28.225566+00:00",
+    "d76c14cddb57": "2026-06-07T11:23:28.225566+00:00",
+    "d2b563eee5db": "2026-06-07T11:23:28.225566+00:00"
   },
   "live_clusters": {
-    "b07d1696b222e6c8": {
-      "topic": "Velotric Nomad 2 Fat Tire E-Bike Review",
-      "item_ids": [
-        "2489af0a01d2"
-      ],
-      "created_at": "2026-06-06T10:17:37.238808+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "65f76e343fe23d75": {
-      "topic": "AI Hospitality Alliance Advisory Board Launch",
-      "item_ids": [
-        "57922c1f88ba"
-      ],
-      "created_at": "2026-06-06T10:17:37.238808+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8863a84d1dd3c87c": {
-      "topic": "Arkansas Basketball 2026 NBA Mock Draft",
-      "item_ids": [
-        "89a17cf32bb1"
-      ],
-      "created_at": "2026-06-06T10:17:37.238808+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "313a41fc745f8cdd": {
-      "topic": "Sega Genesis Vinyl Record Player Game Loading Experiment",
-      "item_ids": [
-        "15efa1038819"
-      ],
-      "created_at": "2026-06-06T10:17:37.238808+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7fd5afde4e4b51d5": {
-      "topic": "California Fortune 500 Ranking Drop Behind Texas",
-      "item_ids": [
-        "5e2abe150c7e",
-        "ee86309679dc",
-        "7cb0cb419756"
-      ],
-      "created_at": "2026-06-06T10:17:37.238808+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
-      "picks_file": "picks/picks-2026-06-06-1722.md",
-      "why_text": "For the first time, Texas has surpassed California in the number of Fortune 500 headquarters \u2014 a symbolic gut-punch to a state that once defined American corporate ambition. The shift reflects years of high taxes, regulatory burden, and cost-of-living pressure driving companies like Tesla, Oracle, and Hewlett Packard Enterprise to relocate to friendlier business climates in the Lone Star State. This isn't just an economic footnote; it's a reordering of which state gets to claim the identity of American capitalism.",
-      "last_escalated_item_ids": [
-        "5e2abe150c7e",
-        "ee86309679dc",
-        "7cb0cb419756"
-      ]
-    },
-    "7a887f808b069c55": {
-      "topic": "BMW Belgium EV Order 1000 Vehicles",
-      "item_ids": [
-        "c10c62dd4c56",
-        "b451fb6cd357",
-        "cce553880d5f"
-      ],
-      "created_at": "2026-06-06T10:17:37.238808+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
-      "picks_file": "picks/picks-2026-06-06-1722.md",
-      "why_text": "A single 1,000-unit EV order in Belgium signals that corporate and government fleet procurement is quietly becoming the backbone of European EV adoption \u2014 not the individual luxury buyer everyone keeps marketing to. For BMW, this validates its EV lineup as a fleet-grade product, not just a showroom statement, which carries serious long-term volume implications. It also puts pressure on Mercedes and Audi to match fleet credibility, not just spec sheets.",
-      "last_escalated_item_ids": [
-        "c10c62dd4c56",
-        "b451fb6cd357",
-        "cce553880d5f"
-      ]
-    },
     "63fbf3fa4c32c0e6": {
       "topic": "Stanley Cup Playoffs Daily Coverage",
       "item_ids": [
@@ -724,17 +646,22 @@
         "f76aceda43dc",
         "c35dfb18c401",
         "431c0d67afda",
-        "9364e84bc3cc"
+        "9364e84bc3cc",
+        "75271a891166",
+        "4f019e5914dd"
       ],
       "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T01:39:32.841932+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-07T11:23:28.225566+00:00",
       "picks_file": "picks/picks-2026-06-07-0140.md",
-      "why_text": "The Knicks taking a 2-0 series lead over the Spurs in the NBA Finals has set off a full-blown cultural moment \u2014 Timoth\u00e9e Chalamet and Fat Joe were caught celebrating together at an airport, and Caitlin Clark is publicly rooting for a 2026 Finals appearance in the same building. This is bigger than basketball: the Knicks returning to Finals relevance is activating a generation of celebrity fans who grew up waiting for exactly this. MSG energy has gone national, and the internet is treating every win like a coronation.",
+      "why_text": "The Knicks taking a 2-0 series lead over the Spurs in the NBA Finals has set off a full-blown cultural moment \u2014 Timoth\u00e9e Chalamet and Fat Joe were caught celebrating together at an airport, and Caitlin Clark is publicly rooting for a 2026 Finals appearance in the same building. This is bigger than basketball: the Knicks returning to Finals relevance is activating a generation of celebrity fans who grew up waiting for exactly this. MSG energy has gone national, and the internet is treating every win like a coronation.\n**Update 6:24 AM CT:** The basketball story is deepening beyond celebrity cameos: journalistic focus is now sharpening on the mechanics of the Knicks' Finals run, with Landry Shamet emerging as an unlikely X-factor and Jalen Brunson widely acknowledged to not yet have hit his peak \u2014 a terrifying prospect for the Spurs \u2014 while WNBA star Sophie Cunningham name-dropping Shamet as her favorite Knick adds another layer of cross-league cultural crossover to an already sprawling moment.",
       "last_escalated_item_ids": [
         "f76aceda43dc",
         "c35dfb18c401",
-        "431c0d67afda"
+        "431c0d67afda",
+        "9364e84bc3cc",
+        "75271a891166",
+        "4f019e5914dd"
       ]
     },
     "ed78f13a8cf3c2e9": {
@@ -831,11 +758,19 @@
       "topic": "Remote Work Gen Z Career Development Risks",
       "item_ids": [
         "0cafd24b040b",
-        "e0197f8b138e"
+        "e0197f8b138e",
+        "b4180b532550"
       ],
       "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T11:23:28.225566+00:00",
+      "picks_file": "picks/picks-2026-06-07-1124.md",
+      "why_text": "The 'I make good money but feel broke' phenomenon is exposing a generational fracture that goes deeper than budgeting \u2014 it's about the collision of student debt, inflated living costs, and a remote-work career path that skipped the mentorship and visibility that historically accelerated income growth. Gen Z entered the workforce during a remote revolution that traded commutes for isolation, and now the career development deficit is showing up in their bank accounts and their sense of professional identity. This isn't a spending problem; it's a structural one, and the fact that high earners feel it too signals that the ladder itself is broken, not just the rungs.",
+      "last_escalated_item_ids": [
+        "0cafd24b040b",
+        "e0197f8b138e",
+        "b4180b532550"
+      ]
     },
     "105ffb82923d5ffa": {
       "topic": "Sam Alexis Indiana NBA Rookie Big Ten Physicality",
@@ -1256,7 +1191,8 @@
       "item_ids": [
         "e840eb161853",
         "6dedfedd34cc",
-        "e42cbee65c56"
+        "e42cbee65c56",
+        "d6513869451e"
       ],
       "created_at": "2026-06-06T18:45:11.724146+00:00",
       "last_escalated_size": 3,
@@ -1555,11 +1491,19 @@
       "topic": "Ariana Grande Eternal Sunshine Tour Oakland Opening Night",
       "item_ids": [
         "7615beef6e27",
-        "1699ac302ecb"
+        "1699ac302ecb",
+        "59fdc2082089"
       ],
       "created_at": "2026-06-07T06:08:26.524385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T11:23:28.225566+00:00",
+      "picks_file": "picks/picks-2026-06-07-1124.md",
+      "why_text": "After years away from touring and a very public personal reinvention \u2014 divorce, a new relationship with Wicked co-star Ethan Slater, and one of the most critically discussed pop albums of 2024 \u2014 Ariana Grande is finally bringing Eternal Sunshine to arenas, and the cultural stakes are unusually high. This isn't just a comeback tour; it's the first time fans get to see Grande perform the full arc of her transformation live, from the grief of Thank U, Next-era pop stardom to the softer, more interior world of Eternal Sunshine. How she frames that story onstage will say a lot about who she's choosing to be now.",
+      "last_escalated_item_ids": [
+        "7615beef6e27",
+        "1699ac302ecb",
+        "59fdc2082089"
+      ]
     },
     "12b5b65943fec9f9": {
       "topic": "Primavera Sound Festival 2026 Best Moments",
@@ -1641,7 +1585,97 @@
       "created_at": "2026-06-07T09:34:22.726477+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "fbc3fd9231a34e59": {
+      "topic": "Sigma BF Product Review",
+      "item_ids": [
+        "ca43d2c33b2a"
+      ],
+      "created_at": "2026-06-07T11:24:06.791545+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3a26592bdeeae55b": {
+      "topic": "Lauf eElja Electric Mountain Bike Review",
+      "item_ids": [
+        "51a4a34afe25"
+      ],
+      "created_at": "2026-06-07T11:24:06.791545+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "84e9200fb945783c": {
+      "topic": "Red-Light Therapy Hair Restoration 2026",
+      "item_ids": [
+        "4f0d8488c111"
+      ],
+      "created_at": "2026-06-07T11:24:06.791545+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "46c3799be9ddfb17": {
+      "topic": "Micron Technology Stock Analysis Prediction",
+      "item_ids": [
+        "19a590bca8f9"
+      ],
+      "created_at": "2026-06-07T11:24:06.791545+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8ce8faec8abc759d": {
+      "topic": "FORT Robotics Mapless AI Acquisition",
+      "item_ids": [
+        "f20bfc071a79"
+      ],
+      "created_at": "2026-06-07T11:24:06.791545+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "231759b67d5e7e24": {
+      "topic": "ASE Technology LEAP Ramp OSAT Strategy",
+      "item_ids": [
+        "a4d879154e2e"
+      ],
+      "created_at": "2026-06-07T11:24:06.791545+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1b390790326aaed5": {
+      "topic": "Thunder Big Three Historical Chase 2026-27",
+      "item_ids": [
+        "16b4424a5490"
+      ],
+      "created_at": "2026-06-07T11:24:06.791545+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5feee5c37a22a1a0": {
+      "topic": "David Grutman Vibes Business Profile",
+      "item_ids": [
+        "6227f4e91ae1"
+      ],
+      "created_at": "2026-06-07T11:24:06.791545+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "562d965cce05fda5": {
+      "topic": "Private Equity Roasting Business Success Story",
+      "item_ids": [
+        "bd2c3c4ae97b"
+      ],
+      "created_at": "2026-06-07T11:24:06.791545+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0601b5450d64fab4": {
+      "topic": "1970s BMW CSL M5 Swap Build",
+      "item_ids": [
+        "23d8ced123d1"
+      ],
+      "created_at": "2026-06-07T11:24:06.791545+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-07T09:34:22.727723+00:00"
+  "last_checked": "2026-06-07T11:24:24.650754+00:00"
 }
