@@ -1,54 +1,5 @@
 {
   "known_ids": [
-    "32454b333ffb",
-    "da173aa104ab",
-    "65f94bdb5747",
-    "2dbd6f7a4450",
-    "648693ae6298",
-    "f06ca2b1c46f",
-    "094982e76030",
-    "969d76d1d678",
-    "3763da8163e2",
-    "740bf109c5f9",
-    "279a1aac3453",
-    "647045ac8ee9",
-    "0ac7dc5b6612",
-    "094163711888",
-    "745416ba7ab4",
-    "48de880fe14c",
-    "502cb50b2a21",
-    "f6ce25c54b1f",
-    "dfa0bdb184d7",
-    "b9dd291d14ef",
-    "7d1e92292a58",
-    "08d3a72c1bd6",
-    "49a574678fea",
-    "a826bce51f36",
-    "32efaf48159a",
-    "60e531be75f1",
-    "06dd206e0d4b",
-    "4323e481a606",
-    "6ea72d5c5713",
-    "046347208315",
-    "37510b5baf33",
-    "af67a14bc558",
-    "54ff01f8ca56",
-    "042f7b4e158c",
-    "f40635ac0ec4",
-    "2537008167a3",
-    "15ff4271e40d",
-    "477ae05ce74a",
-    "41f1c24bf35f",
-    "f8cc1a6a00cb",
-    "bf13427cc14d",
-    "c2cfe1c44a6c",
-    "5afd9c9ed793",
-    "b8e319f8fe6a",
-    "3b058e8df2c3",
-    "b070ff3c1ee3",
-    "2307109d6768",
-    "13efcfff58c6",
-    "d06b8f507ff6",
     "27b3c04bd155",
     "e74b157b3281",
     "55da7e7ab662",
@@ -499,22 +450,58 @@
     "40f155fa15a6",
     "6110b10da3e8",
     "c746f5c7fbc7",
-    "31d67d1b0251"
+    "31d67d1b0251",
+    "28083d054b24",
+    "0de1f73771a8",
+    "b85f95dc4fd7",
+    "4f48bb86b8fb",
+    "bd5e5eb2c716",
+    "87d239439c0b",
+    "a2bcb2909cd5",
+    "4d51578b8186",
+    "e6a283b57b19",
+    "1ac3430a69a7",
+    "8d1de259ab07",
+    "695096973047",
+    "cd42f81a794b",
+    "7e59ebc7dddf",
+    "893947abd016",
+    "f1fffeeb675b",
+    "11de6c50739b",
+    "d6866a7aee51",
+    "b801b72b6490",
+    "9002bf2c7e1f",
+    "f79015338cad",
+    "22b3f49cf8a5",
+    "9c767825b05d",
+    "18d90e760ec4",
+    "aa3bc603149c",
+    "11b039ec01bf",
+    "288111e031e8",
+    "8ccd5499712d",
+    "4656ed46b30a",
+    "d0e4eb4f59a1",
+    "b5d0cbe77a0e",
+    "56840458e671",
+    "9002bf2c7e1f",
+    "c446e7d83944",
+    "56840458e671",
+    "5103dc558032",
+    "b08350ff0de3",
+    "9bd7873417a5",
+    "f1e9b2efe04c",
+    "22b3f49cf8a5",
+    "11a4d2f92b03",
+    "cd38c6e8bc9b",
+    "ed7ebde0df9c",
+    "1d07539b3e3f",
+    "9522f7f738f2",
+    "2f097c6f7765",
+    "fac8daa19163",
+    "9b45eabc7311",
+    "33451634c8b1"
   ],
   "failed_ids": {
-    "978b3981a4c6": "2026-06-07T12:57:17.512169+00:00",
-    "6f55a2ed68fd": "2026-06-07T12:57:17.512169+00:00",
-    "64fffb24b11a": "2026-06-07T12:57:17.512169+00:00",
-    "10f0c4db3cc5": "2026-06-07T12:57:17.512169+00:00",
-    "a43a5f586816": "2026-06-07T12:57:17.512169+00:00",
-    "7cc07eb69226": "2026-06-07T12:57:17.512169+00:00",
-    "ee539f213fb5": "2026-06-07T12:57:17.512169+00:00",
-    "6018c87a7c86": "2026-06-07T12:57:17.512169+00:00",
-    "9360a8bad46b": "2026-06-07T12:57:17.512169+00:00",
-    "ba861d7645fc": "2026-06-07T12:57:17.512169+00:00",
-    "8285aaf71f22": "2026-06-07T12:57:17.512169+00:00",
-    "49bc1c799edb": "2026-06-07T12:57:17.512169+00:00",
-    "3139ad08c460": "2026-06-07T12:57:17.512169+00:00",
     "1d71f18df937": "2026-06-07T14:54:03.878322+00:00",
     "69627b43b26b": "2026-06-07T14:54:03.878322+00:00",
     "e8a46668af08": "2026-06-07T14:54:03.878322+00:00",
@@ -548,100 +535,6 @@
     "3409f56966a6": "2026-06-07T16:10:46.058265+00:00"
   },
   "live_clusters": {
-    "40b3414c665e09a5": {
-      "topic": "Masters of the Universe Composer Daniel Pemberton Theme Creation",
-      "item_ids": [
-        "874ac1111f6f"
-      ],
-      "created_at": "2026-06-06T17:21:55.526633+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "21c2dd4ee50a2488": {
-      "topic": "AMC Interview With the Vampire Relaunch as The Vampire Lestat",
-      "item_ids": [
-        "3adb38a8d021",
-        "efef3508bde7"
-      ],
-      "created_at": "2026-06-06T17:21:55.526633+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b9aa8221f4a140cc": {
-      "topic": "Box Office Weekend Scary Movie Masters of the Universe June 2026",
-      "item_ids": [
-        "a0f40bbd9321",
-        "6377a40d2fcd",
-        "15d6f48194ad",
-        "88bde52fabb0"
-      ],
-      "created_at": "2026-06-06T17:21:55.526633+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T14:54:03.878322+00:00",
-      "picks_file": "picks/picks-2026-06-07-1454.md",
-      "why_text": "The 'Scary Movie' reboot just proved that parody comedy \u2014 long declared dead by Hollywood \u2014 still has massive global appetite when the timing is right, landing the franchise's biggest opening ever in a summer already crowded with tentpoles. Opening alongside the 'Masters of the Universe' reboot in June 2026, it's a signal that audiences are actively choosing laughs over spectacle when given the choice. This is a wake-up call for studios that have been sleeping on R-rated comedy as a theatrical draw.",
-      "last_escalated_item_ids": [
-        "a0f40bbd9321",
-        "6377a40d2fcd",
-        "15d6f48194ad"
-      ]
-    },
-    "076557128fb8d805": {
-      "topic": "Bruce Springsteen Jon Bon Jovi Public Enemy Music America Concert",
-      "item_ids": [
-        "31236670a76f",
-        "063dc6516df9"
-      ],
-      "created_at": "2026-06-06T17:21:55.526633+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9927f489bec2c5ca": {
-      "topic": "Bruce Campbell Evil Dead Ash Character Departure",
-      "item_ids": [
-        "165cbfa19060"
-      ],
-      "created_at": "2026-06-06T17:21:55.526633+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ae896aa7ef292c71": {
-      "topic": "Cozy Grove Camp Spirit Console PC July 15 Release",
-      "item_ids": [
-        "9e5a8c9a4097"
-      ],
-      "created_at": "2026-06-06T17:21:55.526633+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b7504d265ae27ebe": {
-      "topic": "Avatar The Last Airbender RPG Production Cancelled",
-      "item_ids": [
-        "a91943c64f2e",
-        "fb245eecc38c"
-      ],
-      "created_at": "2026-06-06T17:21:55.526633+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "46a69c8d55244e3f": {
-      "topic": "Tesla FSD Trainers Trust Concerns Self-Driving Technology",
-      "item_ids": [
-        "06cf7c99ffe2"
-      ],
-      "created_at": "2026-06-06T17:21:55.526633+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9d7e2e58366f6a6d": {
-      "topic": "Boston Celtics Andy Mannix Equipment Managers Association Award",
-      "item_ids": [
-        "5e9f06e419a8"
-      ],
-      "created_at": "2026-06-06T17:21:55.526633+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "64c571ae3c8412d2": {
       "topic": "ASICS GEL-Kayano 14 Cream Summer Release",
       "item_ids": [
@@ -831,7 +724,8 @@
     "cc79bc5056682910": {
       "topic": "Morgan Wallen Pittsburgh Concert Cancellation Weather",
       "item_ids": [
-        "5fc120e07297"
+        "5fc120e07297",
+        "87d239439c0b"
       ],
       "created_at": "2026-06-06T20:01:23.352136+00:00",
       "last_escalated_size": 0,
@@ -1077,7 +971,8 @@
       "item_ids": [
         "7615beef6e27",
         "1699ac302ecb",
-        "59fdc2082089"
+        "59fdc2082089",
+        "b85f95dc4fd7"
       ],
       "created_at": "2026-06-07T06:08:26.524385+00:00",
       "last_escalated_size": 3,
@@ -1156,7 +1051,8 @@
     "90569377b526a03c": {
       "topic": "BMW US Secret Car Inventory Stockpile",
       "item_ids": [
-        "85bd5d40812e"
+        "85bd5d40812e",
+        "1d07539b3e3f"
       ],
       "created_at": "2026-06-07T09:34:22.726477+00:00",
       "last_escalated_size": 0,
@@ -1229,7 +1125,8 @@
     "1b390790326aaed5": {
       "topic": "Thunder Big Three Historical Chase 2026-27",
       "item_ids": [
-        "16b4424a5490"
+        "16b4424a5490",
+        "8ccd5499712d"
       ],
       "created_at": "2026-06-07T11:24:06.791545+00:00",
       "last_escalated_size": 0,
@@ -1346,7 +1243,8 @@
     "d4509f72ab288a4e": {
       "topic": "AI Trade Pause Wall Street Market Reassessment",
       "item_ids": [
-        "3294a9494ebd"
+        "3294a9494ebd",
+        "22b3f49cf8a5"
       ],
       "created_at": "2026-06-07T12:57:53.901467+00:00",
       "last_escalated_size": 0,
@@ -1364,7 +1262,8 @@
     "1bdfce36cc1abec3": {
       "topic": "Tribeca 2026 Festival After Parties Guide",
       "item_ids": [
-        "afb1da65c5b9"
+        "afb1da65c5b9",
+        "bd5e5eb2c716"
       ],
       "created_at": "2026-06-07T14:54:44.913090+00:00",
       "last_escalated_size": 0,
@@ -1538,11 +1437,19 @@
       "topic": "Monaco Grand Prix Formula 1",
       "item_ids": [
         "c7ffe656828a",
-        "7403a9f757d5"
+        "7403a9f757d5",
+        "7e59ebc7dddf"
       ],
       "created_at": "2026-06-07T14:54:44.913090+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T17:40:34.251563+00:00",
+      "picks_file": "picks/picks-2026-06-07-1741.md",
+      "why_text": "Kimi Antonelli just took Monaco \u2014 one of the most prestigious and unforgiving circuits on the calendar \u2014 and made it five consecutive F1 wins, the kind of streak that doesn't just win championships, it rewrites narratives. For Lewis Hamilton, finishing second at Monaco in a Ferrari is its own complicated story: close enough to hurt, far enough to remind everyone the torch is moving. A teenage prodigy locking up Monaco while Hamilton watches from the podium below is a symbolic moment the sport will be processing for weeks.",
+      "last_escalated_item_ids": [
+        "c7ffe656828a",
+        "7403a9f757d5",
+        "7e59ebc7dddf"
+      ]
     },
     "f8d8090db03c988b": {
       "topic": "Jordan 3 Bin23 Nike Cryoshot Sneaker Releases",
@@ -1669,7 +1576,340 @@
       "created_at": "2026-06-07T16:11:49.288053+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "bee79b8b1a8c0335": {
+      "topic": "Carolina Caroline Film Review Samara Weaving Kyle Gallner",
+      "item_ids": [
+        "28083d054b24"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3e9a5c65df0dfa67": {
+      "topic": "Trump Meet the Press Interview Walkout",
+      "item_ids": [
+        "0de1f73771a8"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0b7d833ec2148184": {
+      "topic": "Dua Lipa Callum Turner Second Wedding Sicily",
+      "item_ids": [
+        "4f48bb86b8fb"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4573f65ca2f43967": {
+      "topic": "Michael Film Lionsgate Box Office Record",
+      "item_ids": [
+        "a2bcb2909cd5"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3a00a0f0a8afe01d": {
+      "topic": "Jafar Panahi Prison Sentence Iran",
+      "item_ids": [
+        "4d51578b8186"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cf3158458668ce86": {
+      "topic": "Obsession Film Focus Features Box Office Record",
+      "item_ids": [
+        "e6a283b57b19"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c9018b92743ee125": {
+      "topic": "Stacey King Bulls Champion Death Obituary",
+      "item_ids": [
+        "1ac3430a69a7"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "afb0d7cd4441a883": {
+      "topic": "76ers Nelson Executive Promotion",
+      "item_ids": [
+        "8d1de259ab07"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e61ed85894c82c25": {
+      "topic": "Serena Williams Queen's Return Tennis",
+      "item_ids": [
+        "695096973047"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dfd00f14a98c7692": {
+      "topic": "Connor McDavid Ted Lindsay Award Record",
+      "item_ids": [
+        "cd42f81a794b"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6d2afd595499a20e": {
+      "topic": "OpenAI Super App Development",
+      "item_ids": [
+        "893947abd016"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a77f7a1bf020144b": {
+      "topic": "Gears of War E-Day October 6 Release",
+      "item_ids": [
+        "f1fffeeb675b"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1265d4beea608b3f": {
+      "topic": "Silent Hill 2 Developer Star Trek Horror Game",
+      "item_ids": [
+        "11de6c50739b"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9e7c7276259ba6b8": {
+      "topic": "OpenAI ChatGPT Major Overhaul",
+      "item_ids": [
+        "d6866a7aee51"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "32a86ad7ac1842f2": {
+      "topic": "Trump Interview Walkout Election Fraud",
+      "item_ids": [
+        "b801b72b6490"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1b8e8c99cca4991b": {
+      "topic": "Kevin Moran Chicago CTO Promotion",
+      "item_ids": [
+        "9002bf2c7e1f"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e6209b7522020bd7": {
+      "topic": "Bommarito 500 World Wide Technology Raceway",
+      "item_ids": [
+        "f79015338cad"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cb6c7ecb6c5a9ba7": {
+      "topic": "Huupe Arena AI Basketball Data Experience",
+      "item_ids": [
+        "9c767825b05d"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "451445a8931bfcd8": {
+      "topic": "HUBZone Technology Initiative Digital Inclusion Fundraiser",
+      "item_ids": [
+        "18d90e760ec4"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "31722cdc658948a7": {
+      "topic": "Jordan Tasty Tonal Dad Shoe Release",
+      "item_ids": [
+        "aa3bc603149c"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fe1533f26ca928e0": {
+      "topic": "New Balance Iridescent Eggplant Dad Shoe",
+      "item_ids": [
+        "11b039ec01bf"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4b23c090215ed64e": {
+      "topic": "Stacey King Death Obituary",
+      "item_ids": [
+        "288111e031e8"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "565547fbcdce2a0e": {
+      "topic": "Stephen Curry Mark Jackson Broadcast Partner Criticism",
+      "item_ids": [
+        "4656ed46b30a"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e99f60f61e2821ff": {
+      "topic": "Knicks NBA Finals Bench Role Analysis",
+      "item_ids": [
+        "d0e4eb4f59a1"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4c3be168ec0bbf92": {
+      "topic": "Trump NBA Finals Game 3 Controversy",
+      "item_ids": [
+        "b5d0cbe77a0e"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e835a2139c931f51": {
+      "topic": "AI-Powered PDF Editor Business Tool",
+      "item_ids": [
+        "56840458e671"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f71684e42a48b877": {
+      "topic": "Big Tech Business Week",
+      "item_ids": [
+        "c446e7d83944"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6f0a0fc2317552c0": {
+      "topic": "Lane County Wildfire Danger Business Preparedness",
+      "item_ids": [
+        "5103dc558032"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "97d6591cfa5af0c4": {
+      "topic": "Drake Field Pilot Training School Expansion",
+      "item_ids": [
+        "b08350ff0de3"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cb880d17157ba18f": {
+      "topic": "Lemonade Inc Stock Analysis",
+      "item_ids": [
+        "9bd7873417a5"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9ee52f7a373efc85": {
+      "topic": "Harley-Davidson Stock Analysis",
+      "item_ids": [
+        "f1e9b2efe04c"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "340925d97261ed9d": {
+      "topic": "District 65 Finance Education Plan Evanston",
+      "item_ids": [
+        "11a4d2f92b03"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "700eb5030859707f": {
+      "topic": "Figma Inc Stock Analysis",
+      "item_ids": [
+        "cd38c6e8bc9b"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "737a697f0289665f": {
+      "topic": "BMW Cincinnati EV Charging Resources",
+      "item_ids": [
+        "ed7ebde0df9c"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0c3403cfd9a4ed6b": {
+      "topic": "Lando Norris F1 Trending",
+      "item_ids": [
+        "9522f7f738f2"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "611d099851b7f28b": {
+      "topic": "Lewis Hamilton F1 Trending",
+      "item_ids": [
+        "fac8daa19163"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0acb16dd323c719a": {
+      "topic": "David Lammy UK Politician Trending",
+      "item_ids": [
+        "33451634c8b1"
+      ],
+      "created_at": "2026-06-07T17:41:20.307438+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-07T16:11:49.289357+00:00"
+  "last_checked": "2026-06-07T17:41:31.693587+00:00"
 }
