@@ -1,33 +1,5 @@
 {
   "known_ids": [
-    "1f63ee0bee68",
-    "d714fc427c98",
-    "fa28c3ac3c17",
-    "4f50e6764461",
-    "04a0de2d9698",
-    "0aad0a114e9b",
-    "7248c8a36aaa",
-    "d733a7cdb601",
-    "01710cb80aaf",
-    "86d716b21b61",
-    "55f5894c9903",
-    "680b35b01e74",
-    "d91a4772aa85",
-    "d50274d44a03",
-    "c8b2510fa2b7",
-    "c1fe2bf9f9bd",
-    "ca57935bb17f",
-    "a2bcb2909cd5",
-    "5f705da3009f",
-    "4e983825205b",
-    "196ed89671a7",
-    "faaef97f125d",
-    "b357afa17917",
-    "b575ed55075f",
-    "071cf373b839",
-    "5dcda5ea8918",
-    "7f649da3c905",
-    "7c1cd11a39f7",
     "99ac4488a06f",
     "8f122aa84807",
     "5ef38db0ffcd",
@@ -499,21 +471,37 @@
     "65f61562e615",
     "c0de8556a24d",
     "66c191bfa341",
-    "a0acacf8269e"
+    "a0acacf8269e",
+    "afb1da65c5b9",
+    "e79db5778025",
+    "f6d0b80b1bcf",
+    "15d6f48194ad",
+    "16cf51cae525",
+    "3cc924724eb1",
+    "a3dcaffe063a",
+    "ae416783d238",
+    "16682ac99747",
+    "bfefc59d771b",
+    "e777cc8ad02a",
+    "523446cf59b1",
+    "8d25dfc74909",
+    "ef5902a17451",
+    "cb22f097f6cf",
+    "cf7de4614a51",
+    "18aacf59c0e6",
+    "9448bd6a008e",
+    "e65cad6372a0",
+    "4b6bb271e7a1",
+    "f01c4cc6d841",
+    "3e3032369a61",
+    "611010649dee",
+    "ad78602057e3",
+    "064fba3ffbe2",
+    "95da6009cf20",
+    "c7ffe656828a",
+    "69ad246611d1"
   ],
   "failed_ids": {
-    "e6aa705c6e71": "2026-06-07T09:33:49.893879+00:00",
-    "81ce006306ea": "2026-06-07T09:33:49.893879+00:00",
-    "1630481c8d66": "2026-06-07T09:33:49.893879+00:00",
-    "43464cc9559e": "2026-06-07T09:33:49.893879+00:00",
-    "9cd9c07052d3": "2026-06-07T09:33:49.893879+00:00",
-    "3bd674c48c2b": "2026-06-07T09:33:49.893879+00:00",
-    "133f2a790165": "2026-06-07T09:33:49.893879+00:00",
-    "c0ea48ed8d7b": "2026-06-07T09:33:49.893879+00:00",
-    "fbdc3449d442": "2026-06-07T09:33:49.893879+00:00",
-    "5734bd9ed5a8": "2026-06-07T09:33:49.893879+00:00",
-    "61cf9109c622": "2026-06-07T09:33:49.893879+00:00",
-    "72b9a251912f": "2026-06-07T09:33:49.893879+00:00",
     "52ea41715b4b": "2026-06-07T11:23:28.225566+00:00",
     "81c293256608": "2026-06-07T11:23:28.225566+00:00",
     "447bd92c887c": "2026-06-07T11:23:28.225566+00:00",
@@ -533,249 +521,19 @@
     "ba861d7645fc": "2026-06-07T12:57:17.512169+00:00",
     "8285aaf71f22": "2026-06-07T12:57:17.512169+00:00",
     "49bc1c799edb": "2026-06-07T12:57:17.512169+00:00",
-    "3139ad08c460": "2026-06-07T12:57:17.512169+00:00"
+    "3139ad08c460": "2026-06-07T12:57:17.512169+00:00",
+    "1d71f18df937": "2026-06-07T14:54:03.878322+00:00",
+    "69627b43b26b": "2026-06-07T14:54:03.878322+00:00",
+    "e8a46668af08": "2026-06-07T14:54:03.878322+00:00",
+    "e18ce48bd70d": "2026-06-07T14:54:03.878322+00:00",
+    "1c9b92ff372a": "2026-06-07T14:54:03.878322+00:00",
+    "9e0cd2dc10ad": "2026-06-07T14:54:03.878322+00:00",
+    "6ff864e813d9": "2026-06-07T14:54:03.878322+00:00",
+    "dcc701bc41aa": "2026-06-07T14:54:03.878322+00:00",
+    "8bd7db9a8202": "2026-06-07T14:54:03.878322+00:00",
+    "938fab660e36": "2026-06-07T14:54:03.878322+00:00"
   },
   "live_clusters": {
-    "b37af2b1adec5c01": {
-      "topic": "Jodie Foster Taxi Driver Set Anecdote Scorsese De Niro",
-      "item_ids": [
-        "b3153a3952fa"
-      ],
-      "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3fa927fe10233afe": {
-      "topic": "Madonna Concert Experience Technology Phone Criticism",
-      "item_ids": [
-        "f3024a3bd5fe",
-        "986de600a443"
-      ],
-      "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c8f14634b20f9f6a": {
-      "topic": "Control Resonant Game Backrooms Aesthetic",
-      "item_ids": [
-        "1bd6080707f4"
-      ],
-      "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "16ec5c7cd44cd0ea": {
-      "topic": "Indie Games Roundup Consume Me iOS",
-      "item_ids": [
-        "62b01b4b866d"
-      ],
-      "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9278eb4933a876b3": {
-      "topic": "Warren Buffett Berkshire AI Investments Billions",
-      "item_ids": [
-        "64e3560c59d5",
-        "da3945058221",
-        "e8d80f21e9fa"
-      ],
-      "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-06T17:21:11.749258+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "64e3560c59d5",
-        "da3945058221",
-        "e8d80f21e9fa"
-      ]
-    },
-    "ed46fc0dffe81e25": {
-      "topic": "Long Island Knicks Fan NBA Finals Prediction Viral",
-      "item_ids": [
-        "f76aceda43dc",
-        "c35dfb18c401",
-        "431c0d67afda",
-        "9364e84bc3cc",
-        "75271a891166",
-        "4f019e5914dd"
-      ],
-      "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-07T11:23:28.225566+00:00",
-      "picks_file": "picks/picks-2026-06-07-0140.md",
-      "why_text": "The Knicks taking a 2-0 series lead over the Spurs in the NBA Finals has set off a full-blown cultural moment \u2014 Timoth\u00e9e Chalamet and Fat Joe were caught celebrating together at an airport, and Caitlin Clark is publicly rooting for a 2026 Finals appearance in the same building. This is bigger than basketball: the Knicks returning to Finals relevance is activating a generation of celebrity fans who grew up waiting for exactly this. MSG energy has gone national, and the internet is treating every win like a coronation.\n**Update 6:24 AM CT:** The basketball story is deepening beyond celebrity cameos: journalistic focus is now sharpening on the mechanics of the Knicks' Finals run, with Landry Shamet emerging as an unlikely X-factor and Jalen Brunson widely acknowledged to not yet have hit his peak \u2014 a terrifying prospect for the Spurs \u2014 while WNBA star Sophie Cunningham name-dropping Shamet as her favorite Knick adds another layer of cross-league cultural crossover to an already sprawling moment.",
-      "last_escalated_item_ids": [
-        "f76aceda43dc",
-        "c35dfb18c401",
-        "431c0d67afda",
-        "9364e84bc3cc",
-        "75271a891166",
-        "4f019e5914dd"
-      ]
-    },
-    "ed78f13a8cf3c2e9": {
-      "topic": "FIFA Video Game Netflix Partnership World Cup Launch",
-      "item_ids": [
-        "82fbafa24f45"
-      ],
-      "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "85f8d78ef67db726": {
-      "topic": "NYC Bar Owner Kalshi Prediction Market Knicks Finals Hedge",
-      "item_ids": [
-        "b56774e5386c"
-      ],
-      "created_at": "2026-06-06T12:59:14.070152+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5613eb671697e200": {
-      "topic": "Clove Healthcare Sneaker Toy Story Collaboration",
-      "item_ids": [
-        "46155bb155f9"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "594c80f8f3930782": {
-      "topic": "Boza Panama World Cup 2026 Musical Ambassador",
-      "item_ids": [
-        "1fdf901a8af0"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dcd4eb5aea4885e6": {
-      "topic": "The Murder of Rachel Nickell Netflix Documentary",
-      "item_ids": [
-        "bfb47029798f"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "25969dfd814b3edd": {
-      "topic": "Toy Story 5 Taylor Swift VFX Decoy Version",
-      "item_ids": [
-        "41e5d3de242a"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5260ac9c88a808a0": {
-      "topic": "NASA Nancy Grace Roman Space Telescope August 30 Launch",
-      "item_ids": [
-        "9a6e348f513b"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "760d7ce3d55b23ba": {
-      "topic": "Summer Game Fest 2026 Showcases",
-      "item_ids": [
-        "588b23b22e77",
-        "b616c0ab33db",
-        "2597c2c9ee5b",
-        "3cf1c852a983"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-06T22:17:29.593597+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "588b23b22e77",
-        "b616c0ab33db",
-        "2597c2c9ee5b"
-      ]
-    },
-    "dfb78b6ffaf09fad": {
-      "topic": "Chinese EVs US Market Entry Timeline",
-      "item_ids": [
-        "be06ed66af97"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0c9048baa561fd13": {
-      "topic": "Remote Work Gen Z Career Development Risks",
-      "item_ids": [
-        "0cafd24b040b",
-        "e0197f8b138e",
-        "b4180b532550"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T11:23:28.225566+00:00",
-      "picks_file": "picks/picks-2026-06-07-1124.md",
-      "why_text": "The 'I make good money but feel broke' phenomenon is exposing a generational fracture that goes deeper than budgeting \u2014 it's about the collision of student debt, inflated living costs, and a remote-work career path that skipped the mentorship and visibility that historically accelerated income growth. Gen Z entered the workforce during a remote revolution that traded commutes for isolation, and now the career development deficit is showing up in their bank accounts and their sense of professional identity. This isn't a spending problem; it's a structural one, and the fact that high earners feel it too signals that the ladder itself is broken, not just the rungs.",
-      "last_escalated_item_ids": [
-        "0cafd24b040b",
-        "e0197f8b138e",
-        "b4180b532550"
-      ]
-    },
-    "105ffb82923d5ffa": {
-      "topic": "Sam Alexis Indiana NBA Rookie Big Ten Physicality",
-      "item_ids": [
-        "01d12017aff3"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c0abeaf837907c2d": {
-      "topic": "82-0 Basketball Game NBA 2K Comparison",
-      "item_ids": [
-        "9bb2085bca13"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bab74dd78ce9e85d": {
-      "topic": "Sling $60 Streaming Package NBA Stanley Cup World Cup",
-      "item_ids": [
-        "c9642abbef47"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3633b030fa7594fe": {
-      "topic": "Stock Market 155-Year Historical Precedent Implications",
-      "item_ids": [
-        "527a3b66ab1e"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7803084a84f0b983": {
-      "topic": "Mercedes G 580 G-Wagon EV",
-      "item_ids": [
-        "527a3b66ab1e",
-        "7f5c9453de4d",
-        "e0767831ff18"
-      ],
-      "created_at": "2026-06-06T14:48:25.430797+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-06T21:12:26.298381+00:00",
-      "picks_file": "picks/picks-2026-06-06-2112.md",
-      "why_text": "The G-Wagon \u2014 one of the most status-loaded vehicles on the planet \u2014 has just gone electric with the G 580, and it arrives at a moment when BMW is proving legacy automakers can actually win the EV range game. Mercedes is betting that G-Wagon buyers, who've never cared about fuel economy, will now flex a different kind of excess: a six-figure electric off-roader that can spin on its own axis using torque vectoring. It's less about saving the planet and more about redefining what obscene luxury looks like in the EV era.",
-      "last_escalated_item_ids": [
-        "527a3b66ab1e",
-        "7f5c9453de4d",
-        "e0767831ff18"
-      ]
-    },
     "652f0bdec944295e": {
       "topic": "House of the Dragon Season 3 Battle of the Gullet Production",
       "item_ids": [
@@ -855,17 +613,21 @@
         "fc267761579c",
         "158258d081d1",
         "384ccd32800b",
-        "f2fd1c10fc3f"
+        "f2fd1c10fc3f",
+        "9448bd6a008e"
       ],
       "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-06T21:12:26.298381+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-07T14:54:03.878322+00:00",
       "picks_file": "picks/picks-2026-06-06-2113.md",
-      "why_text": "Victor Wembanyama's late-game turnover \u2014 with Karl-Anthony Towns reportedly central to the play \u2014 cost San Antonio a win they had in hand, and Wemby's own postgame admission that 'this game was ours' makes it sting harder. It's a brutal lesson for the 20-year-old phenom: individual brilliance means nothing when the moment slips through your hands. The Spurs are still rebuilding, but losses like this one \u2014 winnable, self-inflicted \u2014 are the exact growing pains that define whether a generational talent becomes a generational winner.",
+      "why_text": "Victor Wembanyama's late-game turnover \u2014 with Karl-Anthony Towns reportedly central to the play \u2014 cost San Antonio a win they had in hand, and Wemby's own postgame admission that 'this game was ours' makes it sting harder. It's a brutal lesson for the 20-year-old phenom: individual brilliance means nothing when the moment slips through your hands. The Spurs are still rebuilding, but losses like this one \u2014 winnable, self-inflicted \u2014 are the exact growing pains that define whether a generational talent becomes a generational winner.\n**Update 9:54 AM CT:** The subplot thickens: despite Towns playing a pivotal role in the Knicks' NBA Finals run \u2014 including that defining moment against Wembanyama \u2014 his long-term future in New York remains unresolved, with contract uncertainty casting a shadow over what should be his defining postseason moment.",
       "last_escalated_item_ids": [
         "15a9c355ca79",
         "fc267761579c",
-        "158258d081d1"
+        "158258d081d1",
+        "384ccd32800b",
+        "f2fd1c10fc3f",
+        "9448bd6a008e"
       ]
     },
     "c78aebdb10138fd5": {
@@ -971,11 +733,19 @@
       "topic": "Box Office Weekend Scary Movie Masters of the Universe June 2026",
       "item_ids": [
         "a0f40bbd9321",
-        "6377a40d2fcd"
+        "6377a40d2fcd",
+        "15d6f48194ad"
       ],
       "created_at": "2026-06-06T17:21:55.526633+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T14:54:03.878322+00:00",
+      "picks_file": "picks/picks-2026-06-07-1454.md",
+      "why_text": "The 'Scary Movie' reboot just proved that parody comedy \u2014 long declared dead by Hollywood \u2014 still has massive global appetite when the timing is right, landing the franchise's biggest opening ever in a summer already crowded with tentpoles. Opening alongside the 'Masters of the Universe' reboot in June 2026, it's a signal that audiences are actively choosing laughs over spectacle when given the choice. This is a wake-up call for studios that have been sleeping on R-rated comedy as a theatrical draw.",
+      "last_escalated_item_ids": [
+        "a0f40bbd9321",
+        "6377a40d2fcd",
+        "15d6f48194ad"
+      ]
     },
     "076557128fb8d805": {
       "topic": "Bruce Springsteen Jon Bon Jovi Public Enemy Music America Concert",
@@ -1103,11 +873,18 @@
       "topic": "WWDC 2026 Siri Apple Intelligence Updates",
       "item_ids": [
         "fa9b3f426447",
-        "59cf36be06d3"
+        "59cf36be06d3",
+        "ad78602057e3"
       ],
       "created_at": "2026-06-06T18:45:11.724146+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T14:54:03.878322+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "fa9b3f426447",
+        "59cf36be06d3",
+        "ad78602057e3"
+      ]
     },
     "d288a68885d04362": {
       "topic": "Burn-9 Metal Gear Codec Game",
@@ -1251,11 +1028,20 @@
     "ac99a3934b9a8fe6": {
       "topic": "USMNT Trending Topic",
       "item_ids": [
-        "f49e1ac9b079"
+        "f49e1ac9b079",
+        "16682ac99747",
+        "bfefc59d771b"
       ],
       "created_at": "2026-06-06T20:01:23.352136+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T14:54:03.878322+00:00",
+      "picks_file": "picks/picks-2026-06-07-1454.md",
+      "why_text": "With the 2026 World Cup on home soil approaching fast, every USMNT result is now a referendum on whether this generation can actually deliver. A loss sharp enough to trigger player ratings coverage \u2014 with Antonee Robinson's 7/10 standing out as a relative bright spot \u2014 suggests the team is still searching for consistency where it matters most. The pressure is no longer abstract: hosting a World Cup means there's nowhere to hide, and the scrutiny is only going to intensify.",
+      "last_escalated_item_ids": [
+        "f49e1ac9b079",
+        "16682ac99747",
+        "bfefc59d771b"
+      ]
     },
     "0486861161d4d8cd": {
       "topic": "Jordan Tatum 4 Pure Platinum Sneaker Release",
@@ -1270,11 +1056,18 @@
       "topic": "Scott Pelley 60 Minutes Firing Statement",
       "item_ids": [
         "c431743e9342",
-        "379dfe9384ca"
+        "379dfe9384ca",
+        "16cf51cae525"
       ],
       "created_at": "2026-06-06T21:12:59.981802+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-07T14:54:03.878322+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "c431743e9342",
+        "379dfe9384ca",
+        "16cf51cae525"
+      ]
     },
     "e6fca46c0da24f63": {
       "topic": "OpenAI Lockdown Mode Security Feature",
@@ -1727,7 +1520,188 @@
       "created_at": "2026-06-07T12:57:53.901467+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1bdfce36cc1abec3": {
+      "topic": "Tribeca 2026 Festival After Parties Guide",
+      "item_ids": [
+        "afb1da65c5b9"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f575e39fc18eddbb": {
+      "topic": "Olivia Rodrigo Cure Robert Smith Collaboration Song",
+      "item_ids": [
+        "e79db5778025",
+        "f6d0b80b1bcf"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7e0666d5f10e88b3": {
+      "topic": "Zverev Cobolli Tennis Final",
+      "item_ids": [
+        "3cc924724eb1"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0a600aad49455223": {
+      "topic": "Knicks Roster Minutes Management Analysis",
+      "item_ids": [
+        "a3dcaffe063a"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2fd4c654288185a0": {
+      "topic": "Rookie Star Player Roster Impact",
+      "item_ids": [
+        "ae416783d238"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bc345a13b4df2d5f": {
+      "topic": "Data Breaches Security Incidents 2026",
+      "item_ids": [
+        "e777cc8ad02a"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "559f8f966d396067": {
+      "topic": "YouTube Premium Value Optimization Guide",
+      "item_ids": [
+        "523446cf59b1"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "32726cf8f2527e81": {
+      "topic": "Electronics Inflation Cost Pressures",
+      "item_ids": [
+        "8d25dfc74909"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "78c3b745b01b8e24": {
+      "topic": "Women Long-Term Care Planning Strategy",
+      "item_ids": [
+        "ef5902a17451"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2ad3e4d0eedda5ec": {
+      "topic": "AI Self-Improvement Development Capabilities",
+      "item_ids": [
+        "cb22f097f6cf"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "537839d1aa0ca1c4": {
+      "topic": "AI Technology Maternal Care Healthcare",
+      "item_ids": [
+        "cf7de4614a51"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "768ec334f70288f2": {
+      "topic": "Henry Patten French Open Runner-Up Tennis",
+      "item_ids": [
+        "18aacf59c0e6"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "06b16188d414fd2a": {
+      "topic": "NBA Finals Game 3 Knicks Odds Analysis",
+      "item_ids": [
+        "e65cad6372a0"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "790a9176118a84c8": {
+      "topic": "Video Games Impact Boys Development Parenting",
+      "item_ids": [
+        "4b6bb271e7a1"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c372de50633802c": {
+      "topic": "ITA Airways Pratt Whitney Engine Lawsuit",
+      "item_ids": [
+        "f01c4cc6d841"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d7427ba30d76fcd0": {
+      "topic": "IPO Market Recovery Financial Stocks Rally",
+      "item_ids": [
+        "3e3032369a61"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0eb65c658d49049a": {
+      "topic": "Walker Dunlop Bridge Financing Deal Activity",
+      "item_ids": [
+        "611010649dee"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6bdf880b6cce5be4": {
+      "topic": "Tech Stock Rally Fund Performance 2026",
+      "item_ids": [
+        "064fba3ffbe2"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0548246b1fa9534a": {
+      "topic": "Bill Murray BMW Charity Pro-Am Golf",
+      "item_ids": [
+        "95da6009cf20"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6116942d26732a82": {
+      "topic": "Monaco Grand Prix Formula 1",
+      "item_ids": [
+        "c7ffe656828a"
+      ],
+      "created_at": "2026-06-07T14:54:44.913090+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-07T12:57:53.902659+00:00"
+  "last_checked": "2026-06-07T14:55:02.569000+00:00"
 }
