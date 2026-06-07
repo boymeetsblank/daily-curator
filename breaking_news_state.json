@@ -1,29 +1,5 @@
 {
   "known_ids": [
-    "99ac4488a06f",
-    "8f122aa84807",
-    "5ef38db0ffcd",
-    "8ea50cd572e2",
-    "dfa9b65623dd",
-    "fd76a721349a",
-    "7db95b92b946",
-    "a2a083c3bf68",
-    "c715f0a29d06",
-    "3f2c2097ec54",
-    "2de8d4acffcd",
-    "1d78724f1383",
-    "f23d0f553a71",
-    "2d33ee1acaad",
-    "e8a4eecf7b25",
-    "b078eb790663",
-    "88767155a55e",
-    "3294cb864ccd",
-    "e403784c7916",
-    "5a0121e57160",
-    "7a901a12b86b",
-    "a2a083c3bf68",
-    "4f46e62524ed",
-    "17f521063b60",
     "32454b333ffb",
     "da173aa104ab",
     "65f94bdb5747",
@@ -499,16 +475,33 @@
     "064fba3ffbe2",
     "95da6009cf20",
     "c7ffe656828a",
-    "69ad246611d1"
+    "69ad246611d1",
+    "287377e64766",
+    "efef3508bde7",
+    "88bde52fabb0",
+    "0db0eddb281a",
+    "5eb5ebfc7f28",
+    "75c8b492bc51",
+    "389f2e3b6886",
+    "70ad3b053b99",
+    "f363c7fc212c",
+    "17261839cd55",
+    "364091ab2f55",
+    "3e84262966bd",
+    "5556d9191e75",
+    "7403a9f757d5",
+    "cd80ea8a946d",
+    "5967b24a5577",
+    "719b13f75e3f",
+    "3c803958bb07",
+    "73c7e9630500",
+    "a36af45f6764",
+    "40f155fa15a6",
+    "6110b10da3e8",
+    "c746f5c7fbc7",
+    "31d67d1b0251"
   ],
   "failed_ids": {
-    "52ea41715b4b": "2026-06-07T11:23:28.225566+00:00",
-    "81c293256608": "2026-06-07T11:23:28.225566+00:00",
-    "447bd92c887c": "2026-06-07T11:23:28.225566+00:00",
-    "f1f827bed795": "2026-06-07T11:23:28.225566+00:00",
-    "bab9295d96b0": "2026-06-07T11:23:28.225566+00:00",
-    "d76c14cddb57": "2026-06-07T11:23:28.225566+00:00",
-    "d2b563eee5db": "2026-06-07T11:23:28.225566+00:00",
     "978b3981a4c6": "2026-06-07T12:57:17.512169+00:00",
     "6f55a2ed68fd": "2026-06-07T12:57:17.512169+00:00",
     "64fffb24b11a": "2026-06-07T12:57:17.512169+00:00",
@@ -531,186 +524,30 @@
     "6ff864e813d9": "2026-06-07T14:54:03.878322+00:00",
     "dcc701bc41aa": "2026-06-07T14:54:03.878322+00:00",
     "8bd7db9a8202": "2026-06-07T14:54:03.878322+00:00",
-    "938fab660e36": "2026-06-07T14:54:03.878322+00:00"
+    "938fab660e36": "2026-06-07T14:54:03.878322+00:00",
+    "a077e1782901": "2026-06-07T16:10:46.058265+00:00",
+    "5757dd74387a": "2026-06-07T16:10:46.058265+00:00",
+    "b1689bc91d41": "2026-06-07T16:10:46.058265+00:00",
+    "45184e8e6199": "2026-06-07T16:10:46.058265+00:00",
+    "8eb90dcabdd3": "2026-06-07T16:10:46.058265+00:00",
+    "13b9dfb8711d": "2026-06-07T16:10:46.058265+00:00",
+    "f99b52f9760b": "2026-06-07T16:10:46.058265+00:00",
+    "028fd833ba53": "2026-06-07T16:10:46.058265+00:00",
+    "fd442d1b95de": "2026-06-07T16:10:46.058265+00:00",
+    "eba64bd2ec06": "2026-06-07T16:10:46.058265+00:00",
+    "1dfa8e746e39": "2026-06-07T16:10:46.058265+00:00",
+    "111897469536": "2026-06-07T16:10:46.058265+00:00",
+    "dff45b255814": "2026-06-07T16:10:46.058265+00:00",
+    "a45663bb3e23": "2026-06-07T16:10:46.058265+00:00",
+    "81c293256608": "2026-06-07T16:10:46.058265+00:00",
+    "8ed62c62d5a8": "2026-06-07T16:10:46.058265+00:00",
+    "1d09693b9947": "2026-06-07T16:10:46.058265+00:00",
+    "ce5b8da1d189": "2026-06-07T16:10:46.058265+00:00",
+    "c68e36a05369": "2026-06-07T16:10:46.058265+00:00",
+    "f5c85a8985e0": "2026-06-07T16:10:46.058265+00:00",
+    "3409f56966a6": "2026-06-07T16:10:46.058265+00:00"
   },
   "live_clusters": {
-    "652f0bdec944295e": {
-      "topic": "House of the Dragon Season 3 Battle of the Gullet Production",
-      "item_ids": [
-        "6f5da87ab0c7"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "93ccb421b1d34b5f": {
-      "topic": "Office Romance Film Betty Gilpin Birthing Scene Prosthetic",
-      "item_ids": [
-        "c437cdcaa552"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b687a5816a4773ce": {
-      "topic": "Shame SXSW London 2026 Performance",
-      "item_ids": [
-        "c7b338f868da"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "078b5f71d94d19c3": {
-      "topic": "Governors Ball 2026 Music Festival Moments",
-      "item_ids": [
-        "dd53e75b3d51"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ab4210858e087ce5": {
-      "topic": "The Yogurt Shop Murders Documentary Cold Case Resolution",
-      "item_ids": [
-        "78660a4ac777"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8da3c3be830e7dd7": {
-      "topic": "Next Generation Social Media Apps Beyond Instagram",
-      "item_ids": [
-        "5a875338103b"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f85c0e3a409da120": {
-      "topic": "Prostate Condition New Treatment Technology",
-      "item_ids": [
-        "2125f8a05b3a"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "51c16c00b6e8b5c4": {
-      "topic": "RLX Technology Stock Valuation Analysis",
-      "item_ids": [
-        "835eb0fcf7ac"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f2e8fdc2ebac3eac": {
-      "topic": "Wembanyama Karl-Anthony Towns NBA Interaction",
-      "item_ids": [
-        "15a9c355ca79",
-        "fc267761579c",
-        "158258d081d1",
-        "384ccd32800b",
-        "f2fd1c10fc3f",
-        "9448bd6a008e"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-07T14:54:03.878322+00:00",
-      "picks_file": "picks/picks-2026-06-06-2113.md",
-      "why_text": "Victor Wembanyama's late-game turnover \u2014 with Karl-Anthony Towns reportedly central to the play \u2014 cost San Antonio a win they had in hand, and Wemby's own postgame admission that 'this game was ours' makes it sting harder. It's a brutal lesson for the 20-year-old phenom: individual brilliance means nothing when the moment slips through your hands. The Spurs are still rebuilding, but losses like this one \u2014 winnable, self-inflicted \u2014 are the exact growing pains that define whether a generational talent becomes a generational winner.\n**Update 9:54 AM CT:** The subplot thickens: despite Towns playing a pivotal role in the Knicks' NBA Finals run \u2014 including that defining moment against Wembanyama \u2014 his long-term future in New York remains unresolved, with contract uncertainty casting a shadow over what should be his defining postseason moment.",
-      "last_escalated_item_ids": [
-        "15a9c355ca79",
-        "fc267761579c",
-        "158258d081d1",
-        "384ccd32800b",
-        "f2fd1c10fc3f",
-        "9448bd6a008e"
-      ]
-    },
-    "c78aebdb10138fd5": {
-      "topic": "Elmo Sesame Street NBA Finals Social Media Backlash",
-      "item_ids": [
-        "f907e7685fa6"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "85265533ee3206fe": {
-      "topic": "Richest States America Ranking Economic Analysis",
-      "item_ids": [
-        "ca58ee769dcb"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e95f2feb1e7a738f": {
-      "topic": "Airline Industry Fuel Cost Pricing Pressures Rio Summit",
-      "item_ids": [
-        "6f212bf0f367"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0367872f8d309b43": {
-      "topic": "Thirtysomethings Retirement Planning Survey Analysis",
-      "item_ids": [
-        "c75cc6b62c62"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5ef71ee13d2c2693": {
-      "topic": "Tom Lee Market Performance Commentary Investment Analysis",
-      "item_ids": [
-        "044cd73530cc"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "99d4e41a709294d6": {
-      "topic": "Jim Cramer Take-Two Interactive Stock Analysis",
-      "item_ids": [
-        "9d725250d7d8"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9f07a7d244cbd084": {
-      "topic": "Jim Cramer Eli Lilly CEO Commentary",
-      "item_ids": [
-        "5a546a97b150"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cbac8aeac432d570": {
-      "topic": "Auto Industry News Roundup 2026 Vehicles",
-      "item_ids": [
-        "13f9f4fa326d"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1856d5a2b6ce4c82": {
-      "topic": "BMW E36 320i Collector Car Valuation",
-      "item_ids": [
-        "1cfa64f95d07"
-      ],
-      "created_at": "2026-06-06T15:59:13.683219+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "40b3414c665e09a5": {
       "topic": "Masters of the Universe Composer Daniel Pemberton Theme Creation",
       "item_ids": [
@@ -723,7 +560,8 @@
     "21c2dd4ee50a2488": {
       "topic": "AMC Interview With the Vampire Relaunch as The Vampire Lestat",
       "item_ids": [
-        "3adb38a8d021"
+        "3adb38a8d021",
+        "efef3508bde7"
       ],
       "created_at": "2026-06-06T17:21:55.526633+00:00",
       "last_escalated_size": 0,
@@ -734,7 +572,8 @@
       "item_ids": [
         "a0f40bbd9321",
         "6377a40d2fcd",
-        "15d6f48194ad"
+        "15d6f48194ad",
+        "88bde52fabb0"
       ],
       "created_at": "2026-06-06T17:21:55.526633+00:00",
       "last_escalated_size": 3,
@@ -1362,7 +1201,8 @@
     "46c3799be9ddfb17": {
       "topic": "Micron Technology Stock Analysis Prediction",
       "item_ids": [
-        "19a590bca8f9"
+        "19a590bca8f9",
+        "5967b24a5577"
       ],
       "created_at": "2026-06-07T11:24:06.791545+00:00",
       "last_escalated_size": 0,
@@ -1687,7 +1527,8 @@
     "0548246b1fa9534a": {
       "topic": "Bill Murray BMW Charity Pro-Am Golf",
       "item_ids": [
-        "95da6009cf20"
+        "95da6009cf20",
+        "719b13f75e3f"
       ],
       "created_at": "2026-06-07T14:54:44.913090+00:00",
       "last_escalated_size": 0,
@@ -1696,12 +1537,139 @@
     "6116942d26732a82": {
       "topic": "Monaco Grand Prix Formula 1",
       "item_ids": [
-        "c7ffe656828a"
+        "c7ffe656828a",
+        "7403a9f757d5"
       ],
       "created_at": "2026-06-07T14:54:44.913090+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f8d8090db03c988b": {
+      "topic": "Jordan 3 Bin23 Nike Cryoshot Sneaker Releases",
+      "item_ids": [
+        "287377e64766"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9351ff09cb346fb8": {
+      "topic": "Tony Awards 2026 79th Ceremony",
+      "item_ids": [
+        "0db0eddb281a"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ba8f8b2d9d305b13": {
+      "topic": "Filipino Forces 4th Annual Music Event Los Angeles",
+      "item_ids": [
+        "5eb5ebfc7f28"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8fc6e3004f5a7954": {
+      "topic": "Tribeca 2026 Wedding Entertainer Controversial Joke Backlash",
+      "item_ids": [
+        "75c8b492bc51"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1c7cac1a089c9cbe": {
+      "topic": "Super Mario Galaxy Movie $1B Worldwide Box Office Milestone",
+      "item_ids": [
+        "389f2e3b6886"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9dfd7a4085fcd0ac": {
+      "topic": "Knights Canes Game 3 Overtime NHL Finals",
+      "item_ids": [
+        "70ad3b053b99"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "edc89c7ecf9db32f": {
+      "topic": "Marner Fastest Hat Trick Stanley Cup History",
+      "item_ids": [
+        "f363c7fc212c"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "da2b2c0731191764": {
+      "topic": "Mystics Johnson Ejected Police Incident WNBA",
+      "item_ids": [
+        "17261839cd55"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e1569781ff9ca75b": {
+      "topic": "Misiorowski 103.7 mph Pitch Speed Record",
+      "item_ids": [
+        "364091ab2f55"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dd168fb652c9d0cc": {
+      "topic": "WVU Baseball Game Storm Injuries",
+      "item_ids": [
+        "3e84262966bd"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a7024a3f373c6e20": {
+      "topic": "GM $900M EV Battery Investment Strategy",
+      "item_ids": [
+        "5556d9191e75"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e9cbd76878cb2b5a": {
+      "topic": "Vans Chanel-Inspired Dark Skate Shoe",
+      "item_ids": [
+        "cd80ea8a946d"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2397e5ff3301e240": {
+      "topic": "BMW Carbon-Fiber 2002 Hand-Build Custom Shop",
+      "item_ids": [
+        "3c803958bb07"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aae076239af9b502": {
+      "topic": "E46 vs E36 BMW Classic Comparison Analysis",
+      "item_ids": [
+        "73c7e9630500"
+      ],
+      "created_at": "2026-06-07T16:11:49.288053+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-07T14:55:02.569000+00:00"
+  "last_checked": "2026-06-07T16:11:49.289357+00:00"
 }
