@@ -1,62 +1,5 @@
 {
   "known_ids": [
-    "064fba3ffbe2",
-    "95da6009cf20",
-    "c7ffe656828a",
-    "69ad246611d1",
-    "287377e64766",
-    "efef3508bde7",
-    "88bde52fabb0",
-    "0db0eddb281a",
-    "5eb5ebfc7f28",
-    "75c8b492bc51",
-    "389f2e3b6886",
-    "70ad3b053b99",
-    "f363c7fc212c",
-    "17261839cd55",
-    "364091ab2f55",
-    "3e84262966bd",
-    "5556d9191e75",
-    "7403a9f757d5",
-    "cd80ea8a946d",
-    "5967b24a5577",
-    "719b13f75e3f",
-    "3c803958bb07",
-    "73c7e9630500",
-    "a36af45f6764",
-    "40f155fa15a6",
-    "6110b10da3e8",
-    "c746f5c7fbc7",
-    "31d67d1b0251",
-    "28083d054b24",
-    "0de1f73771a8",
-    "b85f95dc4fd7",
-    "4f48bb86b8fb",
-    "bd5e5eb2c716",
-    "87d239439c0b",
-    "a2bcb2909cd5",
-    "4d51578b8186",
-    "e6a283b57b19",
-    "1ac3430a69a7",
-    "8d1de259ab07",
-    "695096973047",
-    "cd42f81a794b",
-    "7e59ebc7dddf",
-    "893947abd016",
-    "f1fffeeb675b",
-    "11de6c50739b",
-    "d6866a7aee51",
-    "b801b72b6490",
-    "9002bf2c7e1f",
-    "f79015338cad",
-    "22b3f49cf8a5",
-    "9c767825b05d",
-    "18d90e760ec4",
-    "aa3bc603149c",
-    "11b039ec01bf",
-    "288111e031e8",
-    "8ccd5499712d",
-    "4656ed46b30a",
     "d0e4eb4f59a1",
     "b5d0cbe77a0e",
     "56840458e671",
@@ -499,110 +442,75 @@
     "735d44934baf",
     "dea21a69c0d9",
     "b87330c375b9",
-    "37922078e1ce"
+    "37922078e1ce",
+    "84d5d59a9728",
+    "ee2f0d8153ce",
+    "61472893ac7c",
+    "39d992b6df08",
+    "136668072077",
+    "025d16af854d",
+    "5d7a9ad6109c",
+    "60cb3e37612f",
+    "09e47744fc6a",
+    "dc2d9a0f4b90",
+    "060ac671fabd",
+    "b91ce8e71d69",
+    "edd7f2c83de4",
+    "3a000e49043f",
+    "044a47b52260",
+    "c44f69b38883",
+    "6e2f9d1625f2",
+    "a3dcaffe063a",
+    "61650991172f",
+    "f7aa51cf4de9",
+    "d61c63cfc0a7",
+    "b57ac823f2e3",
+    "6025772369b3",
+    "66efa84f4702",
+    "060a84be34f2",
+    "d5767efbb2bb",
+    "765afde83827",
+    "8e80f7c0d542",
+    "84b6f737cf5d",
+    "0398e051b25d",
+    "63d797e17d86",
+    "973a62be272d",
+    "5350c3eeae89",
+    "e5b9e6812e01",
+    "88c4221d3598",
+    "66a3e6d4bcac",
+    "6526b882c0db",
+    "de04eb725abf",
+    "b6f43a940ab5",
+    "526d966a8c90",
+    "cf5ab4e7c922",
+    "b5fa4cada795",
+    "3ac27b3bd8f4",
+    "d2affbd346a6",
+    "98b2ce42809c",
+    "a3cbfb0ebc3a",
+    "73b9694977bf",
+    "e6b6908a8ac7",
+    "0de9285f80b1",
+    "438f3dd5bc97",
+    "ce5be3c120bf",
+    "8507a0e3c178",
+    "b87ef6068a5d",
+    "961f951493e5",
+    "ada05cdaad74",
+    "9f1ba8e5c040",
+    "3480d8ea0e8f"
   ],
-  "failed_ids": {},
+  "failed_ids": {
+    "3533c0856fd4": "2026-06-08T22:45:29.548881+00:00",
+    "058c72d86582": "2026-06-08T22:45:29.548881+00:00",
+    "00f522370cdb": "2026-06-08T22:45:29.548881+00:00",
+    "290aa5eccec6": "2026-06-08T22:45:29.548881+00:00",
+    "99ad9882a707": "2026-06-08T22:45:29.548881+00:00",
+    "2ee6e6631e59": "2026-06-08T22:45:29.548881+00:00",
+    "67a0412597fb": "2026-06-08T22:45:29.548881+00:00"
+  },
   "live_clusters": {
-    "ca3c81ccb978c013": {
-      "topic": "Earth Wind & Fire Questlove Documentary Feature",
-      "item_ids": [
-        "ac3b4af34f85"
-      ],
-      "created_at": "2026-06-07T21:37:55.130607+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8b84f99478cc0919": {
-      "topic": "Morgan Wallen Pittsburgh Show Cancellation Statement",
-      "item_ids": [
-        "c08467ca3653"
-      ],
-      "created_at": "2026-06-07T21:37:55.130607+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "855fe95c89dd921c": {
-      "topic": "Signet City Fungalpunk RPG Release",
-      "item_ids": [
-        "706ad3aa9b3e"
-      ],
-      "created_at": "2026-06-07T21:37:55.130607+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "85ccabd7e1e98bd8": {
-      "topic": "Victor Wembanyama NBA Finals Performance Analysis",
-      "item_ids": [
-        "dad505194336",
-        "f536e9b96e58"
-      ],
-      "created_at": "2026-06-07T21:37:55.130607+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ec3872d9e997165e": {
-      "topic": "Nike Air Force 1 Low Contrast Swoosh Mesh Release",
-      "item_ids": [
-        "54eedabaa745"
-      ],
-      "created_at": "2026-06-07T22:44:07.787055+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "96f6f74142965773": {
-      "topic": "Milo J Mexico City Tour Finale Indio Solari Tribute",
-      "item_ids": [
-        "e957fe51fe02"
-      ],
-      "created_at": "2026-06-07T22:44:07.787055+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e916763f592aec0e": {
-      "topic": "John C. Reilly Titanic DiCaprio Boogie Nights Anecdote",
-      "item_ids": [
-        "41cb34149633"
-      ],
-      "created_at": "2026-06-07T22:44:07.787055+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "612840876d1fec62": {
-      "topic": "Marisa Abela Industry Real Housewives Inspiration Interview",
-      "item_ids": [
-        "da861b490646"
-      ],
-      "created_at": "2026-06-07T22:44:07.787055+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "18f6ecf8b28e4454": {
-      "topic": "Nike Stimulating Sneaker Release",
-      "item_ids": [
-        "f20c2c544768"
-      ],
-      "created_at": "2026-06-07T22:44:07.787055+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d9a0485731e573d7": {
-      "topic": "Farer GMT Bezel Guilloch\u00e9 Dial Watch Update",
-      "item_ids": [
-        "b59abdfceff7"
-      ],
-      "created_at": "2026-06-07T22:44:07.787055+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "58c01105b9364711": {
-      "topic": "2026 PC Gaming Show Favorite Games Coverage",
-      "item_ids": [
-        "3f3e2193ca2c"
-      ],
-      "created_at": "2026-06-07T22:44:07.787055+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "d4e888a936ab4520": {
       "topic": "India's Peddi Film Female Lead Depiction Backlash",
       "item_ids": [
@@ -697,11 +605,18 @@
       "topic": "A$AP Rocky Gov Ball 2026 Festival Performance",
       "item_ids": [
         "efcb096c2baf",
-        "cb71730e53dd"
+        "cb71730e53dd",
+        "60cb3e37612f"
       ],
       "created_at": "2026-06-08T06:59:54.698143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-08T22:45:29.548881+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "efcb096c2baf",
+        "cb71730e53dd",
+        "60cb3e37612f"
+      ]
     },
     "d12775e05a4a5530": {
       "topic": "Niall Horan 'Dinner Party' Album Australian Return",
@@ -829,11 +744,17 @@
         "1ebcfcc4ea63",
         "71ac5544f994",
         "dea21a69c0d9",
-        "37922078e1ce"
+        "37922078e1ce",
+        "66efa84f4702",
+        "d5767efbb2bb",
+        "66a3e6d4bcac",
+        "6526b882c0db",
+        "de04eb725abf",
+        "8507a0e3c178"
       ],
       "created_at": "2026-06-08T12:05:48.344404+00:00",
-      "last_escalated_size": 34,
-      "last_escalated_at": "2026-06-08T21:04:51.725463+00:00",
+      "last_escalated_size": 40,
+      "last_escalated_at": "2026-06-08T22:45:29.548881+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "8942b30a7d2c",
@@ -869,7 +790,13 @@
         "1ebcfcc4ea63",
         "71ac5544f994",
         "dea21a69c0d9",
-        "37922078e1ce"
+        "37922078e1ce",
+        "66efa84f4702",
+        "d5767efbb2bb",
+        "66a3e6d4bcac",
+        "6526b882c0db",
+        "de04eb725abf",
+        "8507a0e3c178"
       ]
     },
     "a8fbd44a7308c1fd": {
@@ -1067,7 +994,9 @@
       "item_ids": [
         "23da1752d211",
         "10f17dc885fa",
-        "f9743e5152b3"
+        "f9743e5152b3",
+        "b87ef6068a5d",
+        "9f1ba8e5c040"
       ],
       "created_at": "2026-06-08T12:05:48.344404+00:00",
       "last_escalated_size": 3,
@@ -1676,19 +1605,27 @@
         "438b72a26564",
         "a2bcea933533",
         "140adf2db2ae",
-        "28263b481b4e"
+        "28263b481b4e",
+        "b6f43a940ab5",
+        "526d966a8c90",
+        "cf5ab4e7c922",
+        "b5fa4cada795"
       ],
       "created_at": "2026-06-08T18:38:23.502262+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-08T21:04:51.725463+00:00",
+      "last_escalated_size": 9,
+      "last_escalated_at": "2026-06-08T22:45:29.548881+00:00",
       "picks_file": "picks/picks-2026-06-08-2105.md",
-      "why_text": "A sitting president showing up to the NBA Finals at Madison Square Garden is a culture collision of the highest order \u2014 the league that spent years navigating its fraught relationship with Trump's base is now hosting him at its biggest stage. The Knicks are finally back in the Finals, MSG is at full fever pitch, and the security footprint alone reshapes the entire event experience for fans. Even Whoopi Goldberg is defending his right to be there, which tells you how much the vibe around Trump and sports has shifted since 2020.",
+      "why_text": "A sitting president showing up to the NBA Finals at Madison Square Garden is a culture collision of the highest order \u2014 the league that spent years navigating its fraught relationship with Trump's base is now hosting him at its biggest stage. The Knicks are finally back in the Finals, MSG is at full fever pitch, and the security footprint alone reshapes the entire event experience for fans. Even Whoopi Goldberg is defending his right to be there, which tells you how much the vibe around Trump and sports has shifted since 2020.\n**Update 5:46 PM CT:** Game 3 is now underway at a sold-out MSG, where fans began lining up early for what's shaping up to be the hottest ticket in New York in decades \u2014 the Knicks hosting an NBA Finals game for the first time in 25 years, with the Spurs favored by most models but the home crowd ready to make that number irrelevant.",
       "last_escalated_item_ids": [
         "d69f396971a8",
         "438b72a26564",
         "a2bcea933533",
         "140adf2db2ae",
-        "28263b481b4e"
+        "28263b481b4e",
+        "b6f43a940ab5",
+        "526d966a8c90",
+        "cf5ab4e7c922",
+        "b5fa4cada795"
       ]
     },
     "55b0d2f8cd3a1858": {
@@ -1703,7 +1640,8 @@
     "bad996f72073060d": {
       "topic": "Meta Face-Recognition Smart Glasses Privacy",
       "item_ids": [
-        "58daf599b0c7"
+        "58daf599b0c7",
+        "765afde83827"
       ],
       "created_at": "2026-06-08T18:38:23.502262+00:00",
       "last_escalated_size": 0,
@@ -2293,7 +2231,192 @@
       "created_at": "2026-06-08T21:05:48.151163+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "c74f6e6bd50bbb2c": {
+      "topic": "Nike Kobe 13 Unreleased Draft Pack Designer Reveal",
+      "item_ids": [
+        "84d5d59a9728"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ed2ea2b3159c19a7": {
+      "topic": "Mineshaft The Cruising Murders William Friedkin Documentary",
+      "item_ids": [
+        "ee2f0d8153ce",
+        "3a000e49043f"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6df3a0a1707adfa2": {
+      "topic": "Tyne Daly Brigadoon Pasadena Playhouse Theater Return",
+      "item_ids": [
+        "61472893ac7c"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fd0b8eff7c168f20": {
+      "topic": "Scary Movie Box Office Masters of the Universe",
+      "item_ids": [
+        "39d992b6df08"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "67bf57ebe498829d": {
+      "topic": "Notting Hill 4K UHD Blu-ray Release",
+      "item_ids": [
+        "136668072077"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b4b8385e513d529d": {
+      "topic": "Billie Eilish Angelina Jolie Support+Feed Pickleball Benefit",
+      "item_ids": [
+        "025d16af854d"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "271ccacb07f5d7f8": {
+      "topic": "Jadakiss Studio Session 38 Spesh Callout",
+      "item_ids": [
+        "5d7a9ad6109c"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "934bc12defb58848": {
+      "topic": "Enzo Fern\u00e1ndez La T y La M Soccer Music Interview",
+      "item_ids": [
+        "09e47744fc6a"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "343547e7158f31e2": {
+      "topic": "Lou Reed Madonna Confessions II Album Credit",
+      "item_ids": [
+        "dc2d9a0f4b90"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cb7cd280a2b77aff": {
+      "topic": "Fetty Wap Russell Dickerson CMA Fest Surprise",
+      "item_ids": [
+        "060ac671fabd"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "16bc5167e989e628": {
+      "topic": "T.I. Tiny Trial Judge Award Reduction",
+      "item_ids": [
+        "b91ce8e71d69"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6d586fed2cb4768b": {
+      "topic": "Broadway Discounted Tickets Online Guide",
+      "item_ids": [
+        "edd7f2c83de4"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0b2a589e9afeecaa": {
+      "topic": "Robert Irvine Restaurant Impossible Reboot Food Network",
+      "item_ids": [
+        "044a47b52260"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3233a17d18344688": {
+      "topic": "Emmy Eligibility Heated Rivalry Lord of the Flies Rivals",
+      "item_ids": [
+        "c44f69b38883"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dac48ea20e170fd2": {
+      "topic": "OpenAI Confidential IPO Filing",
+      "item_ids": [
+        "b57ac823f2e3",
+        "6025772369b3",
+        "060a84be34f2",
+        "8e80f7c0d542",
+        "84b6f737cf5d"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 5,
+      "last_escalated_at": "2026-06-08T22:45:29.548881+00:00",
+      "picks_file": "picks/picks-2026-06-08-2246.md",
+      "why_text": "The most consequential AI company on the planet is heading to public markets, a move that will force Wall Street to formally price the AI revolution and put OpenAI's finances, governance, and Sam Altman's unusual equity structure under serious scrutiny for the first time. This filing lands at a peak moment of AI hype and investment \u2014 coming right after Anthropic's own IPO prep \u2014 signaling that the window for cashing out on the AI boom is now open and the race to go public is on. The confidential filing buys time, but when that S-1 drops, it will be the most-read prospectus in years.",
+      "last_escalated_item_ids": [
+        "b57ac823f2e3",
+        "6025772369b3",
+        "060a84be34f2",
+        "8e80f7c0d542",
+        "84b6f737cf5d"
+      ]
+    },
+    "9f15f9dd199393f6": {
+      "topic": "McDonald's AI Drive-Thru Ordering Technology",
+      "item_ids": [
+        "0398e051b25d"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0b37d4d414d3c820": {
+      "topic": "Arrow McLaren 2026 World Wide Technology Raceway",
+      "item_ids": [
+        "e5b9e6812e01"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0325f0bd0e7f3d07": {
+      "topic": "Streetwear Pioneer Streetchair Invention",
+      "item_ids": [
+        "88c4221d3598"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "78923c6f5dbb16be": {
+      "topic": "BMW Electric M3 V8 Alternative",
+      "item_ids": [
+        "961f951493e5"
+      ],
+      "created_at": "2026-06-08T22:46:16.027948+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-08T21:05:59.949807+00:00"
+  "last_checked": "2026-06-08T22:46:26.622224+00:00"
 }
