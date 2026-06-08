@@ -1,55 +1,5 @@
 {
   "known_ids": [
-    "b3153a3952fa",
-    "f3024a3bd5fe",
-    "851136c11ab5",
-    "1bd6080707f4",
-    "62b01b4b866d",
-    "64e3560c59d5",
-    "b7601dc0aa7f",
-    "5b8905a253db",
-    "ddbf11b25e5d",
-    "986de600a443",
-    "1205ad288b69",
-    "aca83aafc2c3",
-    "f76aceda43dc",
-    "ad20b3441971",
-    "f2981a519293",
-    "d31d1f139de5",
-    "82fbafa24f45",
-    "273663443bd1",
-    "ee86309679dc",
-    "941d48eeaf2f",
-    "0fba1e5b4671",
-    "85231f327dfc",
-    "bd55ace9fcf6",
-    "b56774e5386c",
-    "b451fb6cd357",
-    "6e0d496a6d55",
-    "655e12209456",
-    "3045e19e0462",
-    "b5084be8083f",
-    "9c9e453a1525",
-    "46155bb155f9",
-    "1fdf901a8af0",
-    "12043e1f324c",
-    "1708ff15df36",
-    "bfb47029798f",
-    "41e5d3de242a",
-    "9a6e348f513b",
-    "588b23b22e77",
-    "cbfbba7fdb9a",
-    "be06ed66af97",
-    "0cafd24b040b",
-    "01d12017aff3",
-    "9bb2085bca13",
-    "c9642abbef47",
-    "baf140027d48",
-    "18f2c6f6dc25",
-    "527a3b66ab1e",
-    "e0197f8b138e",
-    "527a3b66ab1e",
-    "b6bb83f14b8b",
     "3e068900817c",
     "0f61fe2215cf",
     "3edbdc9321aa",
@@ -499,187 +449,60 @@
     "b698dd4a4599",
     "a661eefb0977",
     "2f7ff2c7f53c",
-    "6b6be7de15f4"
+    "6b6be7de15f4",
+    "708d330c2635",
+    "817828305394",
+    "b45b716afabb",
+    "796e1f615036",
+    "73be1b17291b",
+    "6e66bf13dc97",
+    "37c1ba5082a2",
+    "83cf902253f4",
+    "5bdd67ac72ca",
+    "19699c2dc765",
+    "8942b30a7d2c",
+    "1bea73ecac1b",
+    "9d88c40bd3dd",
+    "f14d182d04a2",
+    "313c1de4f82b",
+    "287e7181993a",
+    "562d625199a2",
+    "3033b133ddb4",
+    "97a5ab6c38dc",
+    "2b91896d933f",
+    "6116443ce174",
+    "f48c1465139d",
+    "e69b2871b86b",
+    "bb2ddf8c13fe",
+    "ff3270638a71",
+    "b34773d561db",
+    "ea985e1d649b",
+    "e6e4ebc43111",
+    "7f79f12c7d3a",
+    "001b45df33ca",
+    "af00f2473b9a",
+    "e2f882ad952d",
+    "45b7a7aaaedc",
+    "e9bdeb394104",
+    "b9cf7a7b8b88",
+    "242e0659b94d",
+    "cb2aaba7d965",
+    "34cad18a0881",
+    "6182281440dc",
+    "3e148df7de78",
+    "61647acb4272",
+    "1a48ebb968a8",
+    "23da1752d211",
+    "25d38b1297a8",
+    "c2fbd6ad9c80",
+    "71abe7f4097c",
+    "07a149afb736",
+    "238a5d42093d",
+    "43085fbc9fe3",
+    "db2afb74cc5e"
   ],
-  "failed_ids": {
-    "8b8caaddc662": "2026-06-08T06:59:10.005709+00:00",
-    "f320fd4ec899": "2026-06-08T06:59:10.005709+00:00",
-    "c7d52158fb68": "2026-06-08T06:59:10.005709+00:00",
-    "1466ee50c190": "2026-06-08T06:59:10.005709+00:00",
-    "f59cbeff8f53": "2026-06-08T06:59:10.005709+00:00",
-    "e5b9e6812e01": "2026-06-08T06:59:10.005709+00:00",
-    "c74f4893310d": "2026-06-08T06:59:10.005709+00:00",
-    "e064ede9ed54": "2026-06-08T06:59:10.005709+00:00",
-    "2b91896d933f": "2026-06-08T06:59:10.005709+00:00",
-    "e41c58999a69": "2026-06-08T06:59:10.005709+00:00",
-    "e7ca7df68240": "2026-06-08T06:59:10.005709+00:00",
-    "af00f2473b9a": "2026-06-08T06:59:10.005709+00:00",
-    "3e3fbc2a061a": "2026-06-08T06:59:10.005709+00:00",
-    "a59beb1b0bad": "2026-06-08T06:59:10.005709+00:00",
-    "0cf92d5b186e": "2026-06-08T06:59:10.005709+00:00",
-    "02e562754d25": "2026-06-08T06:59:10.005709+00:00",
-    "760a1c6695c9": "2026-06-08T06:59:10.005709+00:00",
-    "1f7aa6257811": "2026-06-08T06:59:10.005709+00:00",
-    "a754c5e99bb6": "2026-06-08T06:59:10.005709+00:00",
-    "9c7acfea2e84": "2026-06-08T06:59:10.005709+00:00",
-    "c91b7220ec5a": "2026-06-08T06:59:10.005709+00:00"
-  },
+  "failed_ids": {},
   "live_clusters": {
-    "db501aed3aa9fc17": {
-      "topic": "Crocs Preppy Boat Clog Fashion Release",
-      "item_ids": [
-        "e53fbaf01a70"
-      ],
-      "created_at": "2026-06-07T09:34:22.726477+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "472cb8e09a724cb7": {
-      "topic": "Gulf Air Apex Suite Business Class Review",
-      "item_ids": [
-        "4e007bb8885b"
-      ],
-      "created_at": "2026-06-07T09:34:22.726477+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6ca1407a5dd2edff": {
-      "topic": "Retirement Planning Savings Threshold Analysis",
-      "item_ids": [
-        "cd3a7947f0f7"
-      ],
-      "created_at": "2026-06-07T09:34:22.726477+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4a845b5af0e98945": {
-      "topic": "EU EV Tariffs Brexit Trade Negotiations",
-      "item_ids": [
-        "dbf0a94f3d26"
-      ],
-      "created_at": "2026-06-07T09:34:22.726477+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "90569377b526a03c": {
-      "topic": "BMW US Secret Car Inventory Stockpile",
-      "item_ids": [
-        "85bd5d40812e",
-        "1d07539b3e3f"
-      ],
-      "created_at": "2026-06-07T09:34:22.726477+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "176471e6f2ba3e03": {
-      "topic": "BMW Electric M3 Development Strategy",
-      "item_ids": [
-        "399673accca1"
-      ],
-      "created_at": "2026-06-07T09:34:22.726477+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fbc3fd9231a34e59": {
-      "topic": "Sigma BF Product Review",
-      "item_ids": [
-        "ca43d2c33b2a"
-      ],
-      "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3a26592bdeeae55b": {
-      "topic": "Lauf eElja Electric Mountain Bike Review",
-      "item_ids": [
-        "51a4a34afe25"
-      ],
-      "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "84e9200fb945783c": {
-      "topic": "Red-Light Therapy Hair Restoration 2026",
-      "item_ids": [
-        "4f0d8488c111"
-      ],
-      "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "46c3799be9ddfb17": {
-      "topic": "Micron Technology Stock Analysis Prediction",
-      "item_ids": [
-        "19a590bca8f9",
-        "5967b24a5577",
-        "4d486a49edf7"
-      ],
-      "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T23:47:02.225809+00:00",
-      "picks_file": "picks/picks-2026-06-07-2347.md",
-      "why_text": "Micron just got a brutal reminder that being in the AI memory game doesn't guarantee you win it \u2014 Nvidia's signal toward HBM4 sourcing outside Micron's lane sent the stock into freefall, rattling investor confidence in one of the sector's supposed AI darlings. This hits at a precarious moment when the entire AI chip spending thesis is under scrutiny, and any crack in the demand story gets punished hard. Micron had positioned itself as a critical infrastructure play for the AI boom; today's drop suggests the market isn't buying that story unconditionally anymore.",
-      "last_escalated_item_ids": [
-        "19a590bca8f9",
-        "5967b24a5577",
-        "4d486a49edf7"
-      ]
-    },
-    "8ce8faec8abc759d": {
-      "topic": "FORT Robotics Mapless AI Acquisition",
-      "item_ids": [
-        "f20bfc071a79"
-      ],
-      "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "231759b67d5e7e24": {
-      "topic": "ASE Technology LEAP Ramp OSAT Strategy",
-      "item_ids": [
-        "a4d879154e2e"
-      ],
-      "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1b390790326aaed5": {
-      "topic": "Thunder Big Three Historical Chase 2026-27",
-      "item_ids": [
-        "16b4424a5490",
-        "8ccd5499712d"
-      ],
-      "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5feee5c37a22a1a0": {
-      "topic": "David Grutman Vibes Business Profile",
-      "item_ids": [
-        "6227f4e91ae1"
-      ],
-      "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "562d965cce05fda5": {
-      "topic": "Private Equity Roasting Business Success Story",
-      "item_ids": [
-        "bd2c3c4ae97b"
-      ],
-      "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0601b5450d64fab4": {
-      "topic": "1970s BMW CSL M5 Swap Build",
-      "item_ids": [
-        "23d8ced123d1"
-      ],
-      "created_at": "2026-06-07T11:24:06.791545+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "fe7de8e678b31dd3": {
       "topic": "Reche Caldwell Murder Cold Case Investigation",
       "item_ids": [
@@ -701,7 +524,8 @@
     "0c31534985f3aaef": {
       "topic": "2026 World Cup Missing Players Analysis",
       "item_ids": [
-        "52ede5c451b7"
+        "52ede5c451b7",
+        "b45b716afabb"
       ],
       "created_at": "2026-06-07T12:57:53.901467+00:00",
       "last_escalated_size": 0,
@@ -912,11 +736,15 @@
         "6a332bb6d78a",
         "ef570dbfa323",
         "5f442728fa5e",
-        "fd0cc6ca4036"
+        "fd0cc6ca4036",
+        "bb2ddf8c13fe",
+        "b34773d561db",
+        "ea985e1d649b",
+        "e6e4ebc43111"
       ],
       "created_at": "2026-06-07T14:54:44.913090+00:00",
-      "last_escalated_size": 12,
-      "last_escalated_at": "2026-06-08T02:04:35.240969+00:00",
+      "last_escalated_size": 16,
+      "last_escalated_at": "2026-06-08T12:04:59.945280+00:00",
       "picks_file": "picks/picks-2026-06-08-0205.md",
       "last_escalated_item_ids": [
         "e65cad6372a0",
@@ -930,9 +758,13 @@
         "6a332bb6d78a",
         "ef570dbfa323",
         "5f442728fa5e",
-        "fd0cc6ca4036"
+        "fd0cc6ca4036",
+        "bb2ddf8c13fe",
+        "b34773d561db",
+        "ea985e1d649b",
+        "e6e4ebc43111"
       ],
-      "why_text": "The 2026 NBA Finals are shifting to Madison Square Garden with the San Antonio Spurs chasing a historic comeback \u2014 and New York is ready to lose its mind. Jalen Brunson and the Knicks are in position to close things out on home court, but the emotion of a Finals game at MSG, with Spike Lee courtside and Walt Frazier in the building, means the cultural stakes match the basketball stakes. This is the kind of moment the city has been starving for since the 90s dynasty, and the whole sports world is watching to see if New York can finally finish it."
+      "why_text": "The 2026 NBA Finals are shifting to Madison Square Garden with the San Antonio Spurs chasing a historic comeback \u2014 and New York is ready to lose its mind. Jalen Brunson and the Knicks are in position to close things out on home court, but the emotion of a Finals game at MSG, with Spike Lee courtside and Walt Frazier in the building, means the cultural stakes match the basketball stakes. This is the kind of moment the city has been starving for since the 90s dynasty, and the whole sports world is watching to see if New York can finally finish it.\n**Update 7:05 AM CT:** The cultural circus just got bigger: Donald Trump is set to attend Game 3, marking the first time a sitting president has shown up to an NBA Finals \u2014 and he's expected to receive a thunderous reception of boos inside MSG, adding an unmistakable political charge to an already electric night. Meanwhile, the KAT-for-MVP conversation is heating up mid-series, suggesting the Knicks big man is making a strong enough case that the national media is starting to take notice even with New York on the verge of closing it out."
     },
     "790a9176118a84c8": {
       "topic": "Video Games Impact Boys Development Parenting",
@@ -1404,7 +1236,8 @@
         "b5d0cbe77a0e",
         "1dfa8e746e39",
         "6e94827d75cf",
-        "0f85a28c3c04"
+        "0f85a28c3c04",
+        "ff3270638a71"
       ],
       "created_at": "2026-06-07T17:41:20.307438+00:00",
       "last_escalated_size": 4,
@@ -1665,11 +1498,24 @@
     "18eab29319ae516d": {
       "topic": "Marvell Technology S&P 500 Index Inclusion",
       "item_ids": [
-        "a84433b7aad2"
+        "a84433b7aad2",
+        "313c1de4f82b",
+        "3033b133ddb4",
+        "97a5ab6c38dc",
+        "6116443ce174"
       ],
       "created_at": "2026-06-07T18:57:21.761734+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 5,
+      "last_escalated_at": "2026-06-08T12:04:59.945280+00:00",
+      "picks_file": "picks/picks-2026-06-08-1205.md",
+      "why_text": "Getting added to the S&P 500 is one of the most mechanical, high-stakes moments a stock can have \u2014 index funds are forced to buy, and the price jump reflects that guaranteed demand flooding in. For Marvell, a chipmaker riding the AI infrastructure wave, this is validation that it's no longer a niche semiconductor play but a cornerstone of the modern tech economy. The timing matters: it lands as AI chip stocks are at the center of one of the biggest capital allocation stories in a generation.",
+      "last_escalated_item_ids": [
+        "a84433b7aad2",
+        "313c1de4f82b",
+        "3033b133ddb4",
+        "97a5ab6c38dc",
+        "6116443ce174"
+      ]
     },
     "4e0e71c499e2628f": {
       "topic": "Elektros Lithium Rare Earths EV Technology",
@@ -1764,7 +1610,8 @@
     "92d31e080e1eabe1": {
       "topic": "BMW iX3 Real-World EV Range Test Leader",
       "item_ids": [
-        "04b9a4f79af5"
+        "04b9a4f79af5",
+        "c2fbd6ad9c80"
       ],
       "created_at": "2026-06-07T18:57:21.761734+00:00",
       "last_escalated_size": 0,
@@ -1873,7 +1720,8 @@
     "eccf2f941fa91d1f": {
       "topic": "Karl-Anthony Towns NBA Title Push Minnesota Pride",
       "item_ids": [
-        "a87adbd61739"
+        "a87adbd61739",
+        "e69b2871b86b"
       ],
       "created_at": "2026-06-07T20:14:26.939708+00:00",
       "last_escalated_size": 0,
@@ -2122,7 +1970,313 @@
       "created_at": "2026-06-08T06:59:54.698143+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b7b6b9369dba2b10": {
+      "topic": "Sofia Coppola Marc Jacobs Friendship Book Chronicle",
+      "item_ids": [
+        "708d330c2635"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ef58d8b15f853e9b": {
+      "topic": "Berlin Galerie Om Multi-Sensory Collectible Design",
+      "item_ids": [
+        "817828305394"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "03c031c4e7050371": {
+      "topic": "Watch Tastemaker Bad-Taste Watch Trend",
+      "item_ids": [
+        "796e1f615036"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "46468a6492a9826a": {
+      "topic": "Sonia Mart\u00ednez Money Heist Producer El Estudio Spain Director",
+      "item_ids": [
+        "73be1b17291b"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d178880746262b83": {
+      "topic": "Hugh Laurie House Medical Drama Narrative Defense",
+      "item_ids": [
+        "6e66bf13dc97"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "36444e2cfa85e968": {
+      "topic": "SXSW London 2026 Conference Takeaways",
+      "item_ids": [
+        "37c1ba5082a2"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5f4825beba1ad7ee": {
+      "topic": "Italian Global Series Second Edition Sally Wainwright",
+      "item_ids": [
+        "83cf902253f4"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "223670830508da3f": {
+      "topic": "Lenovo IdeaPad Slim 5x Laptop Review",
+      "item_ids": [
+        "5bdd67ac72ca"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f2704066d77364ef": {
+      "topic": "Robotaxi Showdown London Uber Wayve Waymo",
+      "item_ids": [
+        "19699c2dc765"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "100a4e4d28b6e326": {
+      "topic": "WWDC 2026 Apple Siri iOS 27 Intelligence",
+      "item_ids": [
+        "8942b30a7d2c"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a8fbd44a7308c1fd": {
+      "topic": "Iran Military Operations Israel Lebanon Escalation Warning",
+      "item_ids": [
+        "1bea73ecac1b"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c39845718c62e38": {
+      "topic": "USAA Insurance Refund Florida Legal Reform",
+      "item_ids": [
+        "9d88c40bd3dd"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "43213cd7c61b8930": {
+      "topic": "Weight Loss Drug Safety Data Market Reaction",
+      "item_ids": [
+        "f14d182d04a2"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "328fbe84df59b3b4": {
+      "topic": "China Oil Price Cushion Global Markets",
+      "item_ids": [
+        "287e7181993a"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ba7eace38df54018": {
+      "topic": "ADA26 Obesity Drug Readouts Conference",
+      "item_ids": [
+        "562d625199a2"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f073198be4e2347e": {
+      "topic": "Ambient Technology Worker Benefits",
+      "item_ids": [
+        "2b91896d933f"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "08d1824ae6fd55e5": {
+      "topic": "Welly Boot Fashion Trend",
+      "item_ids": [
+        "f48c1465139d"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ce8cc4d918f290c5": {
+      "topic": "Tupac Snoop Dogg Video Game Collaboration",
+      "item_ids": [
+        "7f79f12c7d3a"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "62315057a81a9787": {
+      "topic": "Oil Tech Stock Market Reaction Middle East Escalation",
+      "item_ids": [
+        "001b45df33ca"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "31e050dd96671f05": {
+      "topic": "S&P 500 Nasdaq Chip Stocks Market Recovery",
+      "item_ids": [
+        "af00f2473b9a"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4f05c9eaee129c14": {
+      "topic": "Stock Market Oil Middle East Conflict AI Boom Decline",
+      "item_ids": [
+        "e2f882ad952d"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "24ec99a6accdff5d": {
+      "topic": "Corporate Pride Support Quiet Comeback",
+      "item_ids": [
+        "45b7a7aaaedc"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e6006bec6179c1d6": {
+      "topic": "Women Leadership Death Care Industry",
+      "item_ids": [
+        "e9bdeb394104"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cfc8a76afe7e3ff0": {
+      "topic": "California R&D Tax Credit Tech Biotech Policy",
+      "item_ids": [
+        "b9cf7a7b8b88"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d037d8483d5a6bba": {
+      "topic": "Charlottesville Black Business Expo 2026",
+      "item_ids": [
+        "242e0659b94d"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b6d35fe9381a7582": {
+      "topic": "Financial Planning Parent Death Preparation",
+      "item_ids": [
+        "cb2aaba7d965"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "429427c5efc36792": {
+      "topic": "Social Security June Payment Schedule",
+      "item_ids": [
+        "34cad18a0881"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "381de63d89c6e3fe": {
+      "topic": "AIR Nasdaq Listing Financial Details",
+      "item_ids": [
+        "6182281440dc"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dde8ba17e0f84b5f": {
+      "topic": "Elder Financial Exploitation Bank Family Challenge",
+      "item_ids": [
+        "3e148df7de78"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c06998a09e2b78e1": {
+      "topic": "Global Trade Financial Fragmentation Analysis",
+      "item_ids": [
+        "61647acb4272"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "97d720198420c09f": {
+      "topic": "Herbert Schnitzer BMW Legend Obituary",
+      "item_ids": [
+        "1a48ebb968a8"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "13ed120718dae876": {
+      "topic": "BMW iX3 Body Panel Charging Safety Issue",
+      "item_ids": [
+        "23da1752d211"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "50fb0d0d0199431d": {
+      "topic": "Infiniti FX35 vs BMW X6 Luxury Comparison",
+      "item_ids": [
+        "25d38b1297a8"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "89b60390f011e05a": {
+      "topic": "Lamborghini BMW Audi Drag Race Comparison",
+      "item_ids": [
+        "71abe7f4097c"
+      ],
+      "created_at": "2026-06-08T12:05:48.344404+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-08T06:59:54.718760+00:00"
+  "last_checked": "2026-06-08T12:06:00.791555+00:00"
 }
