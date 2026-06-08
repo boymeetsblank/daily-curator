@@ -1,17 +1,5 @@
 {
   "known_ids": [
-    "725f92b88a01",
-    "487eb3626176",
-    "de5c3361be7d",
-    "af96b6090faa",
-    "207ef385df97",
-    "b412aba9523b",
-    "fdaab39166aa",
-    "1320fa23c3c4",
-    "7eb7a209a441",
-    "c3d01886fb4f",
-    "fb29b7df7833",
-    "75cb8f2d6377",
     "b3153a3952fa",
     "f3024a3bd5fe",
     "851136c11ab5",
@@ -499,119 +487,44 @@
     "3e0162936d96",
     "47a3d1035816",
     "0dc5ce9d24f6",
-    "764aa1520e41"
+    "764aa1520e41",
+    "51a67d18ba4d",
+    "b84a274436cc",
+    "4d4dc748a2b5",
+    "183e4824f8a4",
+    "a1d08f2b5dbe",
+    "efcb096c2baf",
+    "193927301846",
+    "3577f3bcf501",
+    "b698dd4a4599",
+    "a661eefb0977",
+    "2f7ff2c7f53c",
+    "6b6be7de15f4"
   ],
   "failed_ids": {
-    "b061c58bcfba": "2026-06-07T22:43:28.974233+00:00",
-    "15b861a67e1a": "2026-06-07T22:43:28.974233+00:00",
-    "cadeced70243": "2026-06-07T22:43:28.974233+00:00",
-    "a7ddc6ccf18d": "2026-06-07T22:43:28.974233+00:00",
-    "65d24b786f76": "2026-06-07T22:43:28.974233+00:00",
-    "256a5d515ca6": "2026-06-07T22:43:28.974233+00:00",
-    "e8b6a2a4e39e": "2026-06-07T22:43:28.974233+00:00",
-    "18b657fa69ea": "2026-06-07T22:43:28.974233+00:00",
-    "dcbb21b65202": "2026-06-07T22:43:28.974233+00:00",
-    "70c169eac5f6": "2026-06-07T22:43:28.974233+00:00",
-    "ecf39636f19b": "2026-06-07T22:43:28.974233+00:00",
-    "6175fbfc0f77": "2026-06-07T22:43:28.974233+00:00",
-    "384dd5115a99": "2026-06-07T22:43:28.974233+00:00",
-    "45a135a35341": "2026-06-07T22:43:28.974233+00:00",
-    "69d63648c968": "2026-06-07T23:47:02.225809+00:00",
-    "c9256644810c": "2026-06-07T23:47:02.225809+00:00",
-    "00d5b30f1fe0": "2026-06-07T23:47:02.225809+00:00",
-    "133c4bdb938f": "2026-06-07T23:47:02.225809+00:00",
-    "f183e717d560": "2026-06-07T23:47:02.225809+00:00",
-    "8605b5d67679": "2026-06-07T23:47:02.225809+00:00",
-    "a497602522ed": "2026-06-07T23:47:02.225809+00:00",
-    "551ab9101e61": "2026-06-07T23:47:02.225809+00:00",
-    "817ebfc8734a": "2026-06-07T23:47:02.225809+00:00",
-    "7b9600bc59a8": "2026-06-07T23:47:02.225809+00:00",
-    "3e2cfe589b83": "2026-06-07T23:47:02.225809+00:00",
-    "ec6c07e04de8": "2026-06-07T23:47:02.225809+00:00",
-    "802eb4946c38": "2026-06-07T23:47:02.225809+00:00",
-    "9cdfc22e7f5e": "2026-06-08T02:04:35.240969+00:00",
-    "42fa8eafd518": "2026-06-08T02:04:35.240969+00:00",
-    "c89a944b7d33": "2026-06-08T02:04:35.240969+00:00",
-    "4d2e44587abc": "2026-06-08T02:04:35.240969+00:00",
-    "9ae497bf54b4": "2026-06-08T02:04:35.240969+00:00",
-    "605137aab279": "2026-06-08T02:04:35.240969+00:00",
-    "d39b19f8cfb4": "2026-06-08T02:04:35.240969+00:00",
-    "b580f254ab2d": "2026-06-08T02:04:35.240969+00:00",
-    "ba4d11a6c8d1": "2026-06-08T02:04:35.240969+00:00",
-    "b3a4dc21e71c": "2026-06-08T02:04:35.240969+00:00",
-    "7576a9cb5f23": "2026-06-08T02:04:35.240969+00:00",
-    "d29df4078dad": "2026-06-08T02:04:35.240969+00:00",
-    "4bc846d21d37": "2026-06-08T02:04:35.240969+00:00",
-    "0c92da940a29": "2026-06-08T02:04:35.240969+00:00",
-    "21da17d80d6d": "2026-06-08T02:04:35.240969+00:00"
+    "8b8caaddc662": "2026-06-08T06:59:10.005709+00:00",
+    "f320fd4ec899": "2026-06-08T06:59:10.005709+00:00",
+    "c7d52158fb68": "2026-06-08T06:59:10.005709+00:00",
+    "1466ee50c190": "2026-06-08T06:59:10.005709+00:00",
+    "f59cbeff8f53": "2026-06-08T06:59:10.005709+00:00",
+    "e5b9e6812e01": "2026-06-08T06:59:10.005709+00:00",
+    "c74f4893310d": "2026-06-08T06:59:10.005709+00:00",
+    "e064ede9ed54": "2026-06-08T06:59:10.005709+00:00",
+    "2b91896d933f": "2026-06-08T06:59:10.005709+00:00",
+    "e41c58999a69": "2026-06-08T06:59:10.005709+00:00",
+    "e7ca7df68240": "2026-06-08T06:59:10.005709+00:00",
+    "af00f2473b9a": "2026-06-08T06:59:10.005709+00:00",
+    "3e3fbc2a061a": "2026-06-08T06:59:10.005709+00:00",
+    "a59beb1b0bad": "2026-06-08T06:59:10.005709+00:00",
+    "0cf92d5b186e": "2026-06-08T06:59:10.005709+00:00",
+    "02e562754d25": "2026-06-08T06:59:10.005709+00:00",
+    "760a1c6695c9": "2026-06-08T06:59:10.005709+00:00",
+    "1f7aa6257811": "2026-06-08T06:59:10.005709+00:00",
+    "a754c5e99bb6": "2026-06-08T06:59:10.005709+00:00",
+    "9c7acfea2e84": "2026-06-08T06:59:10.005709+00:00",
+    "c91b7220ec5a": "2026-06-08T06:59:10.005709+00:00"
   },
   "live_clusters": {
-    "8dfad075a80cf279": {
-      "topic": "WIND AND SEA De La Soul Capsule Collection",
-      "item_ids": [
-        "247ab5bbecfa"
-      ],
-      "created_at": "2026-06-07T06:08:26.524385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "90c2e81f0f9d9bbd": {
-      "topic": "Capcom Resident Evil Code Veronica Remake 2027",
-      "item_ids": [
-        "09c298f736bb"
-      ],
-      "created_at": "2026-06-07T06:08:26.524385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "21cf6184fec8a1f8": {
-      "topic": "Ariana Grande Eternal Sunshine Tour Oakland Opening Night",
-      "item_ids": [
-        "7615beef6e27",
-        "1699ac302ecb",
-        "59fdc2082089",
-        "b85f95dc4fd7",
-        "86fb8e2cdb81"
-      ],
-      "created_at": "2026-06-07T06:08:26.524385+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T11:23:28.225566+00:00",
-      "picks_file": "picks/picks-2026-06-07-1124.md",
-      "why_text": "After years away from touring and a very public personal reinvention \u2014 divorce, a new relationship with Wicked co-star Ethan Slater, and one of the most critically discussed pop albums of 2024 \u2014 Ariana Grande is finally bringing Eternal Sunshine to arenas, and the cultural stakes are unusually high. This isn't just a comeback tour; it's the first time fans get to see Grande perform the full arc of her transformation live, from the grief of Thank U, Next-era pop stardom to the softer, more interior world of Eternal Sunshine. How she frames that story onstage will say a lot about who she's choosing to be now.",
-      "last_escalated_item_ids": [
-        "7615beef6e27",
-        "1699ac302ecb",
-        "59fdc2082089"
-      ]
-    },
-    "12b5b65943fec9f9": {
-      "topic": "Primavera Sound Festival 2026 Best Moments",
-      "item_ids": [
-        "87d76a1d1cb1"
-      ],
-      "created_at": "2026-06-07T06:08:26.524385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "57bb95c9c0038993": {
-      "topic": "Duffy Surprise Return First Live Concert 15 Years",
-      "item_ids": [
-        "16bebd56e94f",
-        "fafd484f97b3"
-      ],
-      "created_at": "2026-06-07T06:08:26.524385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f2e1627728cfbf85": {
-      "topic": "Shai Gilgeous-Alexander NBA Card Auction Record $1M",
-      "item_ids": [
-        "0727e013a890"
-      ],
-      "created_at": "2026-06-07T06:08:26.524385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "db501aed3aa9fc17": {
       "topic": "Crocs Preppy Boat Clog Fashion Release",
       "item_ids": [
@@ -1128,11 +1041,13 @@
         "f4ecdabd78ea",
         "11f1f9c93e35",
         "94be9f2e8b80",
-        "cee61477d9e9"
+        "cee61477d9e9",
+        "a1d08f2b5dbe",
+        "b698dd4a4599"
       ],
       "created_at": "2026-06-07T16:11:49.288053+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-07T23:47:02.225809+00:00",
+      "last_escalated_size": 9,
+      "last_escalated_at": "2026-06-08T06:59:10.005709+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "0db0eddb281a",
@@ -1140,7 +1055,10 @@
         "69f62b94c8d6",
         "f4ecdabd78ea",
         "11f1f9c93e35",
-        "94be9f2e8b80"
+        "94be9f2e8b80",
+        "cee61477d9e9",
+        "a1d08f2b5dbe",
+        "b698dd4a4599"
       ]
     },
     "ba8f8b2d9d305b13": {
@@ -2150,7 +2068,61 @@
       "created_at": "2026-06-07T23:47:38.478492+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "3e2b3143010cea96": {
+      "topic": "Panache Digital Games '1666: Amsterdam' Dark Fantasy Release",
+      "item_ids": [
+        "51a67d18ba4d"
+      ],
+      "created_at": "2026-06-08T06:59:54.698143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "56219997e33c5e60": {
+      "topic": "Seiko PADI 60th Anniversary Limited-Edition Prospex Diver Watch",
+      "item_ids": [
+        "b84a274436cc"
+      ],
+      "created_at": "2026-06-08T06:59:54.698143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a1f4f06210ca0c06": {
+      "topic": "Square Enix Final Fantasy VII Revelation Open-World Trilogy Spring 2027",
+      "item_ids": [
+        "4d4dc748a2b5"
+      ],
+      "created_at": "2026-06-08T06:59:54.698143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "06495726babda834": {
+      "topic": "U/MUSIC Maison MIHARA YASUHIRO Billie Eilish Tour Merchandise Collab",
+      "item_ids": [
+        "183e4824f8a4"
+      ],
+      "created_at": "2026-06-08T06:59:54.698143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "54d8cab8dd4c6c82": {
+      "topic": "A$AP Rocky Gov Ball 2026 Festival Performance",
+      "item_ids": [
+        "efcb096c2baf"
+      ],
+      "created_at": "2026-06-08T06:59:54.698143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d12775e05a4a5530": {
+      "topic": "Niall Horan 'Dinner Party' Album Australian Return",
+      "item_ids": [
+        "193927301846"
+      ],
+      "created_at": "2026-06-08T06:59:54.698143+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-08T02:05:31.206306+00:00"
+  "last_checked": "2026-06-08T06:59:54.718760+00:00"
 }
