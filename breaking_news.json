@@ -1,6 +1,91 @@
 {
   "items": [
     {
+      "id": "7b90d504bb6a",
+      "topic": "Billboard Hot 100 Top 10 Countdown for June 13th, 2026 | Billboard News",
+      "traffic": "",
+      "detected_at": "2026-06-08T23:52:51.212770+00:00",
+      "search_url": "https://www.billboard.com/video/billboard-hot-100-top-10-countdown-for-june-13th-2026/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "529f9c40c08a63b0"
+    },
+    {
+      "id": "fde4916d5ccd",
+      "topic": "Cardi B to Perform Halftime Show for Game 3 of NBA Finals Between New York Knicks & San Antonio Spurs",
+      "traffic": "",
+      "detected_at": "2026-06-08T23:52:51.212770+00:00",
+      "search_url": "https://www.billboard.com/music/rb-hip-hop/cardi-b-halftime-show-knicks-spurs-msg-nba-finals-1236267729/",
+      "source_name": "Billboard",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "8835564bf0e19687"
+    },
+    {
+      "id": "27b74ef36a88",
+      "topic": "Director & EP Max Winkler On Finding JFK Jr. In ‘Love Story’ & Giving Space To Charlie Hunnam’s Dark Side In ‘Monster: Ed Gein’ – Crew Call Podcast",
+      "traffic": "",
+      "detected_at": "2026-06-08T23:52:51.212770+00:00",
+      "search_url": "https://deadline.com/2026/06/love-story-monster-ed-gein-max-winkler-1236950853/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "1ae08065f0ab1ede"
+    },
+    {
+      "id": "9dd32d1e23e0",
+      "topic": "The iOS 27 beta pretty much confirms that an Apple foldable is happening",
+      "traffic": "",
+      "detected_at": "2026-06-08T23:52:51.212770+00:00",
+      "search_url": "https://www.engadget.com/2190131/the-ios-27-beta-pretty-much-confirms-that-an-apple-foldable-is-happening/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "100a4e4d28b6e326"
+    },
+    {
+      "id": "f4842eab5a09",
+      "topic": "Spurs vs. Knicks live updates: Will New York take a 3-0 lead in the NBA Finals? - NBC News",
+      "traffic": "",
+      "detected_at": "2026-06-08T23:52:51.212770+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdW9NTU1Wa3JFazZEZVd5anNSUU9kMDZuWmpkZ2ZEdGZWalRJY1dkX0g2Q3lpcXJNZTBNTDZmX1pFYnY4WDdNbGhKS29jaU5FeHc4bzlNSEgzRjhJV3dFa1E4ci1ELWsyUkYzc3hxOWxuYUlSSVVSNDc3NDdKWWozUFRtTFZBY24yMzk0RXM0UVNlQUU3MWdGQVlvVHN4SVBRZFFIajE4MmlUd1llYTVEOQ?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "8835564bf0e19687"
+    },
+    {
+      "id": "707c187e341a",
+      "topic": "McDavid",
+      "traffic": "##14 on X",
+      "detected_at": "2026-06-08T23:52:51.212770+00:00",
+      "search_url": "https://x.com/search?q=McDavid&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "016fa49042df",
+      "topic": "Stephen A",
+      "traffic": "##15 on X",
+      "detected_at": "2026-06-08T23:52:51.212770+00:00",
+      "search_url": "https://x.com/search?q=Stephen+A&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
+      "id": "91afe96e7958",
+      "topic": "Jake Signals",
+      "traffic": "##16 on X",
+      "detected_at": "2026-06-08T23:52:51.212770+00:00",
+      "search_url": "https://x.com/search?q=Jake+Signals&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "84d5d59a9728",
       "topic": "Nike Designer Reveals Unreleased Kobe “13 Regrets” Pack Inspired By The 1996 NBA Draft",
       "traffic": "",
@@ -339,91 +424,7 @@
       "source_name": "Google News - Finance",
       "source_type": "feed",
       "haiku_score": 5
-    },
-    {
-      "id": "438f3dd5bc97",
-      "topic": "Pascal Desroches to Update Shareholders at Mizuho Technology Conference on June 9 - AT&T",
-      "traffic": "",
-      "detected_at": "2026-06-08T22:45:29.548881+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTXVKcnZ6TXJVbnQ4bTBLeTNIUmhJZzZtc21jQ1NyaE1xZG95cU9HTk1sTUJteVpIYXpfTHBhdjFfZnZVRlNMRzFtMGFwU2Q5MlhXZDlmQVd3TGdaUDhBbjZtWHVQeTJ6Wi1vek1mOTNvOS05Y3c2YW5pSk9scjV6VE9jcw?oc=5",
-      "source_name": "Google News - Finance",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "ce5be3c120bf",
-      "topic": "Events | FAO in North America - Food and Agriculture Organization",
-      "traffic": "",
-      "detected_at": "2026-06-08T22:45:29.548881+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxPcjBnWHlaXzhXQ0hndVRrczJhWjVQc244b0VSazhzNkR2R3RxX05HUzlPMDNKRnRVN0I4S3N4eW9DM3BDN2oyenBDdkM5eE9fa2ZfdEJxRFBJNE52N3JHU2xVZ1FTTFlyODJYVXpHdWVDVm1kYXpELU1oNVR3UmhOWExhNlUtY3c3bGtFcFhkUzBsSjhLcklsYzI4VjNlR0lIRk9TRU1JRl8yRjFpQWVEMjc1bFc3SzhGZ0Z2dDNWbnFJQ3ItWm80RVBfM0dVSXFhUHlYVmZWdVBUbGxQSlFKWGNvUFJXY0hwTVM2SjdBdUpfMDNpNFVPLTFrU0ZsWk94bmp6ZlJQX2w2XzVVSTJqd2dJU0xPSElxcWpKNHFDd3duS3dDMThaUVlQTGdNay1r?oc=5",
-      "source_name": "Google News - Finance",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "8507a0e3c178",
-      "topic": "Apple unveils a more personal kind of Siri AI: WWDC takeaways - Yahoo Finance",
-      "traffic": "",
-      "detected_at": "2026-06-08T22:45:29.548881+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZXlESUdlRk5uMUZaX3BONTg1Z2cxVWFYd0N6ZW12TVRLVjIzSmw4SXJwYnZTaHlPMjBZemVmSTdCUl82dTkwMDctbTQ2ZFBsV1VlTnpLbWM0SS1uVGJzRkhvV2syYmJpWkNELWN4d3FsTnFSdFk3c2Vnb3hGamhZdXVUaGxVbWdyeGpVYlAzVmtfWXBIaVdYcTBPZUFObXg0WjRYVmEzZEQ0NTg?oc=5",
-      "source_name": "Google News - Finance",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "100a4e4d28b6e326"
-    },
-    {
-      "id": "b87ef6068a5d",
-      "topic": "BMW’s Electric M3 Doesn’t Imitate A V8. It Does Something Cooler - InsideEVs",
-      "traffic": "",
-      "detected_at": "2026-06-08T22:45:29.548881+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5NY3NlbjllMFVKLVh5M3F4YlNQd2ZQQnZKekVXVVRBSFFFM1BHazVjSEdPekNZbEV4QXE2UUg2WnI3Z083STBhUWRtVUhGNlN4NlZQbXZjaGItb2ZsR3BfaDJqY2tpOGRr?oc=5",
-      "source_name": "Google News - BMW",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "13ed120718dae876"
-    },
-    {
-      "id": "961f951493e5",
-      "topic": "The 'Neue' BMW X1 Spied With Its Quad Exhaust Pipes Showing - CarBuzz",
-      "traffic": "",
-      "detected_at": "2026-06-08T22:45:29.548881+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE83SVRacHdjNndLa0JJcXhLYjdHa3RBNnJMenlnSVhTRXFhcmhNT0Y4Z3ZlaE9qTm15Y3Q3X0ZQT0NMYWhFRE1Zb3FqakR3Z2Y2Vm0wSS1Hcw?oc=5",
-      "source_name": "Google News - BMW",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "78923c6f5dbb16be"
-    },
-    {
-      "id": "ada05cdaad74",
-      "topic": "BMW iX3 Recalled Due To A Risk Of Shock While Charging - AUTOJOSH",
-      "traffic": "",
-      "detected_at": "2026-06-08T22:45:29.548881+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQlA4V1ZKc2pvYk1qOS1Ld1F4REJSUkk2d2hRbDJSem5BYUdNTmRqVkNGM1hqcW5EbEJ5T2tfRTIwTHlqdHhNeERzYnpKdEpIanV3X0t5ZTBYRnlrUm1rdHNtcm51UTNkMjE4emZhUG1LRzBtdElBT0lnOEFkcEZobmpR?oc=5",
-      "source_name": "Google News - BMW",
-      "source_type": "feed",
-      "haiku_score": 6
-    },
-    {
-      "id": "9f1ba8e5c040",
-      "topic": "Good Nut",
-      "traffic": "##7 on X",
-      "detected_at": "2026-06-08T22:45:29.548881+00:00",
-      "search_url": "https://x.com/search?q=Good+Nut&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5,
-      "cluster_id": "13ed120718dae876"
-    },
-    {
-      "id": "3480d8ea0e8f",
-      "topic": "Jevon",
-      "traffic": "##8 on X",
-      "detected_at": "2026-06-08T22:45:29.548881+00:00",
-      "search_url": "https://x.com/search?q=Jevon&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
     }
   ],
-  "last_checked": "2026-06-08T22:45:29.548881+00:00"
+  "last_checked": "2026-06-08T23:52:51.212770+00:00"
 }

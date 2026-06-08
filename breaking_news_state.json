@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "d0e4eb4f59a1",
-    "b5d0cbe77a0e",
-    "56840458e671",
-    "9002bf2c7e1f",
-    "c446e7d83944",
-    "56840458e671",
-    "5103dc558032",
-    "b08350ff0de3",
-    "9bd7873417a5",
-    "f1e9b2efe04c",
-    "22b3f49cf8a5",
-    "11a4d2f92b03",
-    "cd38c6e8bc9b",
-    "ed7ebde0df9c",
-    "1d07539b3e3f",
     "9522f7f738f2",
     "2f097c6f7765",
     "fac8daa19163",
@@ -499,7 +484,22 @@
     "961f951493e5",
     "ada05cdaad74",
     "9f1ba8e5c040",
-    "3480d8ea0e8f"
+    "3480d8ea0e8f",
+    "7b90d504bb6a",
+    "fde4916d5ccd",
+    "27b74ef36a88",
+    "9dd32d1e23e0",
+    "f4842eab5a09",
+    "c5b435d95cf5",
+    "2e831f5cd7f7",
+    "eb8b921941a9",
+    "1c194cfe842c",
+    "4959448e7f25",
+    "707c187e341a",
+    "016fa49042df",
+    "91afe96e7958",
+    "906d99abea34",
+    "9eb0b8289247"
   ],
   "failed_ids": {
     "3533c0856fd4": "2026-06-08T22:45:29.548881+00:00",
@@ -508,63 +508,27 @@
     "290aa5eccec6": "2026-06-08T22:45:29.548881+00:00",
     "99ad9882a707": "2026-06-08T22:45:29.548881+00:00",
     "2ee6e6631e59": "2026-06-08T22:45:29.548881+00:00",
-    "67a0412597fb": "2026-06-08T22:45:29.548881+00:00"
+    "67a0412597fb": "2026-06-08T22:45:29.548881+00:00",
+    "a806e8bab646": "2026-06-08T23:52:51.212770+00:00",
+    "9e39fb58d83c": "2026-06-08T23:52:51.212770+00:00",
+    "793a27a088c2": "2026-06-08T23:52:51.212770+00:00",
+    "e3cc730c4c93": "2026-06-08T23:52:51.212770+00:00",
+    "712b3a49db46": "2026-06-08T23:52:51.212770+00:00",
+    "00c09235c290": "2026-06-08T23:52:51.212770+00:00",
+    "85374a21c5e3": "2026-06-08T23:52:51.212770+00:00",
+    "825ef353f815": "2026-06-08T23:52:51.212770+00:00",
+    "45a406228c25": "2026-06-08T23:52:51.212770+00:00",
+    "4b38f51e68e6": "2026-06-08T23:52:51.212770+00:00",
+    "a946bd7f2b58": "2026-06-08T23:52:51.212770+00:00",
+    "5fa8cdd5d1aa": "2026-06-08T23:52:51.212770+00:00",
+    "9a2b31e88581": "2026-06-08T23:52:51.212770+00:00",
+    "63ce7ea00ed6": "2026-06-08T23:52:51.212770+00:00",
+    "8b2f1cb73146": "2026-06-08T23:52:51.212770+00:00",
+    "281d62aaa9d5": "2026-06-08T23:52:51.212770+00:00",
+    "6548eb3e5b9f": "2026-06-08T23:52:51.212770+00:00",
+    "97453cdd4f55": "2026-06-08T23:52:51.212770+00:00"
   },
   "live_clusters": {
-    "d4e888a936ab4520": {
-      "topic": "India's Peddi Film Female Lead Depiction Backlash",
-      "item_ids": [
-        "5113f181c51a"
-      ],
-      "created_at": "2026-06-07T23:47:38.478492+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "60194609455dfa38": {
-      "topic": "Naver SK hynix Nvidia Gigawatt-Scale AI Factory Partnership",
-      "item_ids": [
-        "dfd3908e036e",
-        "ee74a2b3e0b2",
-        "096989c0ac96"
-      ],
-      "created_at": "2026-06-07T23:47:38.478492+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-07T23:47:02.225809+00:00",
-      "picks_file": "picks/picks-2026-06-07-2347.md",
-      "why_text": "South Korea is making a serious play for AI infrastructure dominance \u2014 Naver's gigawatt-scale factory plans, backed by Nvidia's chips and SK Hynix's cutting-edge memory, signal that Asia's AI buildout is shifting from aspiration to industrial reality. This isn't just a corporate deal; it's a geopolitical statement, positioning Korea as a sovereign AI power at a moment when nations are racing to secure their own compute infrastructure. The Nvidia-SK Hynix multiyear memory partnership is especially significant \u2014 it locks in the supply chain for next-gen AI hardware at a scale that will reshape who controls the physical backbone of AI.",
-      "last_escalated_item_ids": [
-        "dfd3908e036e",
-        "ee74a2b3e0b2",
-        "096989c0ac96"
-      ]
-    },
-    "496c62880d84a199": {
-      "topic": "Carpenter Technology CRS Investor Momentum",
-      "item_ids": [
-        "c43b8d7c382a"
-      ],
-      "created_at": "2026-06-07T23:47:38.478492+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c9be3668258fe88": {
-      "topic": "Stratasys SSYS New Headquarters Expansion",
-      "item_ids": [
-        "9e14183bb7b5"
-      ],
-      "created_at": "2026-06-07T23:47:38.478492+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "75d9e6fa9b70c0d0": {
-      "topic": "Maserati vs BMW Luxury Brand Depreciation",
-      "item_ids": [
-        "265aeaedfbc4"
-      ],
-      "created_at": "2026-06-07T23:47:38.478492+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "3e2b3143010cea96": {
       "topic": "Panache Digital Games '1666: Amsterdam' Dark Fantasy Release",
       "item_ids": [
@@ -750,7 +714,9 @@
         "66a3e6d4bcac",
         "6526b882c0db",
         "de04eb725abf",
-        "8507a0e3c178"
+        "8507a0e3c178",
+        "9dd32d1e23e0",
+        "1c194cfe842c"
       ],
       "created_at": "2026-06-08T12:05:48.344404+00:00",
       "last_escalated_size": 40,
@@ -1609,13 +1575,17 @@
         "b6f43a940ab5",
         "526d966a8c90",
         "cf5ab4e7c922",
-        "b5fa4cada795"
+        "b5fa4cada795",
+        "fde4916d5ccd",
+        "f4842eab5a09",
+        "2e831f5cd7f7",
+        "eb8b921941a9"
       ],
       "created_at": "2026-06-08T18:38:23.502262+00:00",
-      "last_escalated_size": 9,
-      "last_escalated_at": "2026-06-08T22:45:29.548881+00:00",
+      "last_escalated_size": 13,
+      "last_escalated_at": "2026-06-08T23:52:51.212770+00:00",
       "picks_file": "picks/picks-2026-06-08-2105.md",
-      "why_text": "A sitting president showing up to the NBA Finals at Madison Square Garden is a culture collision of the highest order \u2014 the league that spent years navigating its fraught relationship with Trump's base is now hosting him at its biggest stage. The Knicks are finally back in the Finals, MSG is at full fever pitch, and the security footprint alone reshapes the entire event experience for fans. Even Whoopi Goldberg is defending his right to be there, which tells you how much the vibe around Trump and sports has shifted since 2020.\n**Update 5:46 PM CT:** Game 3 is now underway at a sold-out MSG, where fans began lining up early for what's shaping up to be the hottest ticket in New York in decades \u2014 the Knicks hosting an NBA Finals game for the first time in 25 years, with the Spurs favored by most models but the home crowd ready to make that number irrelevant.",
+      "why_text": "A sitting president showing up to the NBA Finals at Madison Square Garden is a culture collision of the highest order \u2014 the league that spent years navigating its fraught relationship with Trump's base is now hosting him at its biggest stage. The Knicks are finally back in the Finals, MSG is at full fever pitch, and the security footprint alone reshapes the entire event experience for fans. Even Whoopi Goldberg is defending his right to be there, which tells you how much the vibe around Trump and sports has shifted since 2020.\n**Update 5:46 PM CT:** Game 3 is now underway at a sold-out MSG, where fans began lining up early for what's shaping up to be the hottest ticket in New York in decades \u2014 the Knicks hosting an NBA Finals game for the first time in 25 years, with the Spurs favored by most models but the home crowd ready to make that number irrelevant.\n**Update 6:53 PM CT:** Cardi B is performing the halftime show tonight at MSG, adding a full-blown pop culture moment to an already electric Finals game \u2014 a Bronx native headlining the biggest Knicks game in a generation is the kind of detail that writes itself. Meanwhile, New York enters Game 3 with a chance to go up 3-0 and effectively close the door on the Spurs, making tonight one of the highest-stakes home games the Garden has hosted in years.",
       "last_escalated_item_ids": [
         "d69f396971a8",
         "438b72a26564",
@@ -1625,7 +1595,11 @@
         "b6f43a940ab5",
         "526d966a8c90",
         "cf5ab4e7c922",
-        "b5fa4cada795"
+        "b5fa4cada795",
+        "fde4916d5ccd",
+        "f4842eab5a09",
+        "2e831f5cd7f7",
+        "eb8b921941a9"
       ]
     },
     "55b0d2f8cd3a1858": {
@@ -2416,7 +2390,43 @@
       "created_at": "2026-06-08T22:46:16.027948+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "529f9c40c08a63b0": {
+      "topic": "Billboard Hot 100 Top 10 June 13 2026",
+      "item_ids": [
+        "7b90d504bb6a"
+      ],
+      "created_at": "2026-06-08T23:53:28.490755+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1ae08065f0ab1ede": {
+      "topic": "Max Winkler Director Projects Love Story Monster Ed Gein",
+      "item_ids": [
+        "27b74ef36a88"
+      ],
+      "created_at": "2026-06-08T23:53:28.490755+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6085ec4b4deb2756": {
+      "topic": "2026 NBA Player Comparisons Kobe Bryant",
+      "item_ids": [
+        "c5b435d95cf5"
+      ],
+      "created_at": "2026-06-08T23:53:28.490755+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "81377197d1d68c1f": {
+      "topic": "Alibaba CEO AI Business Unit Restructuring",
+      "item_ids": [
+        "4959448e7f25"
+      ],
+      "created_at": "2026-06-08T23:53:28.490755+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-08T22:46:26.622224+00:00"
+  "last_checked": "2026-06-08T23:53:33.712187+00:00"
 }
