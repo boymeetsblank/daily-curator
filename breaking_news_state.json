@@ -1,30 +1,5 @@
 {
   "known_ids": [
-    "4ff8d1e9c217",
-    "e7058d4c6fdc",
-    "c9883046f963",
-    "86fb8e2cdb81",
-    "bd2acafd1b79",
-    "665d57e61d6e",
-    "d0df9241a85a",
-    "247f91ffdefa",
-    "8e36d13a7cf3",
-    "f9e9983e8480",
-    "97c8519faaa5",
-    "5aa6c75ebcdb",
-    "02bcbc995fdf",
-    "a63a653dee72",
-    "eaa1ccd6d49b",
-    "a87adbd61739",
-    "08352f000cef",
-    "fc3eae6c037d",
-    "0bceb3229eed",
-    "aa756a172917",
-    "ebeeda603b53",
-    "08e371236d26",
-    "b9edbe803a77",
-    "d35974b17826",
-    "99a37c1c87f0",
     "3b92273ebdb3",
     "fafd484f97b3",
     "ac3b4af34f85",
@@ -499,7 +474,32 @@
     "ba89f6108e68",
     "77f5f11d62a3",
     "fd6061789351",
-    "878479a0ac6a"
+    "878479a0ac6a",
+    "319cae3f668f",
+    "8476b29c1509",
+    "52ee0935e405",
+    "24118ccb556b",
+    "4dc79fbeefad",
+    "247cfa9cb4fc",
+    "ae71f613627e",
+    "25f78553530c",
+    "4b027e0b2528",
+    "b6f8e9701708",
+    "d1abc7eeea73",
+    "a95297f49477",
+    "422e2c8404ca",
+    "d24460e34c81",
+    "67360e2c781c",
+    "23b6d7d3b685",
+    "eb42615b4115",
+    "c573060d1d14",
+    "d132d42a2abe",
+    "ef67363fdc64",
+    "d5cf232c1529",
+    "83d83b1f36a5",
+    "0f61fe2215cf",
+    "fde826b86fcd",
+    "597a7b5b6f64"
   ],
   "failed_ids": {
     "28efce335848": "2026-06-09T06:19:27.199994+00:00",
@@ -523,72 +523,30 @@
     "514b81eef4b3": "2026-06-09T06:19:27.199994+00:00",
     "6bd03f27c167": "2026-06-09T06:19:27.199994+00:00",
     "f30f26b41cdd": "2026-06-09T06:19:27.199994+00:00",
-    "1ac52a27315b": "2026-06-09T06:19:27.199994+00:00"
+    "1ac52a27315b": "2026-06-09T06:19:27.199994+00:00",
+    "68bcbc6ccee3": "2026-06-09T10:05:58.086451+00:00",
+    "cb74c7c302bc": "2026-06-09T10:05:58.086451+00:00",
+    "977bcaefcf85": "2026-06-09T10:05:58.086451+00:00",
+    "c4f9d0bfdf92": "2026-06-09T10:05:58.086451+00:00",
+    "80daf56fcf1d": "2026-06-09T10:05:58.086451+00:00",
+    "bb65d6908331": "2026-06-09T10:05:58.086451+00:00",
+    "ff6c20b56cf3": "2026-06-09T10:05:58.086451+00:00",
+    "65fdeb42dd59": "2026-06-09T10:05:58.086451+00:00",
+    "4d8fe6e252f5": "2026-06-09T10:05:58.086451+00:00",
+    "6fd03f838b18": "2026-06-09T10:05:58.086451+00:00",
+    "624f3c9a878a": "2026-06-09T10:05:58.086451+00:00",
+    "f0705ced99b7": "2026-06-09T10:05:58.086451+00:00",
+    "3b05b67f76c1": "2026-06-09T10:05:58.086451+00:00",
+    "502b0e833203": "2026-06-09T10:05:58.086451+00:00",
+    "4a078a95842a": "2026-06-09T10:05:58.086451+00:00",
+    "3f1203abdb9b": "2026-06-09T10:05:58.086451+00:00",
+    "7aa82c97b2ae": "2026-06-09T10:05:58.086451+00:00",
+    "cee5ce2f664c": "2026-06-09T10:05:58.086451+00:00",
+    "8f2c95d3d759": "2026-06-09T10:05:58.086451+00:00",
+    "fa4fb9bd30d9": "2026-06-09T10:05:58.086451+00:00",
+    "908afda43a96": "2026-06-09T10:05:58.086451+00:00"
   },
   "live_clusters": {
-    "3e2b3143010cea96": {
-      "topic": "Panache Digital Games '1666: Amsterdam' Dark Fantasy Release",
-      "item_ids": [
-        "51a67d18ba4d"
-      ],
-      "created_at": "2026-06-08T06:59:54.698143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "56219997e33c5e60": {
-      "topic": "Seiko PADI 60th Anniversary Limited-Edition Prospex Diver Watch",
-      "item_ids": [
-        "b84a274436cc"
-      ],
-      "created_at": "2026-06-08T06:59:54.698143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a1f4f06210ca0c06": {
-      "topic": "Square Enix Final Fantasy VII Revelation Open-World Trilogy Spring 2027",
-      "item_ids": [
-        "4d4dc748a2b5"
-      ],
-      "created_at": "2026-06-08T06:59:54.698143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "06495726babda834": {
-      "topic": "U/MUSIC Maison MIHARA YASUHIRO Billie Eilish Tour Merchandise Collab",
-      "item_ids": [
-        "183e4824f8a4"
-      ],
-      "created_at": "2026-06-08T06:59:54.698143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "54d8cab8dd4c6c82": {
-      "topic": "A$AP Rocky Gov Ball 2026 Festival Performance",
-      "item_ids": [
-        "efcb096c2baf",
-        "cb71730e53dd",
-        "60cb3e37612f"
-      ],
-      "created_at": "2026-06-08T06:59:54.698143+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-08T22:45:29.548881+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "efcb096c2baf",
-        "cb71730e53dd",
-        "60cb3e37612f"
-      ]
-    },
-    "d12775e05a4a5530": {
-      "topic": "Niall Horan 'Dinner Party' Album Australian Return",
-      "item_ids": [
-        "193927301846",
-        "982475849202"
-      ],
-      "created_at": "2026-06-08T06:59:54.698143+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "b7b6b9369dba2b10": {
       "topic": "Sofia Coppola Marc Jacobs Friendship Book Chronicle",
       "item_ids": [
@@ -715,7 +673,8 @@
         "8507a0e3c178",
         "9dd32d1e23e0",
         "1c194cfe842c",
-        "bf51653a4ab1"
+        "bf51653a4ab1",
+        "247cfa9cb4fc"
       ],
       "created_at": "2026-06-08T12:05:48.344404+00:00",
       "last_escalated_size": 43,
@@ -1615,13 +1574,18 @@
         "ba89f6108e68",
         "77f5f11d62a3",
         "fd6061789351",
-        "878479a0ac6a"
+        "878479a0ac6a",
+        "a95297f49477",
+        "422e2c8404ca",
+        "d24460e34c81",
+        "67360e2c781c",
+        "23b6d7d3b685"
       ],
       "created_at": "2026-06-08T18:38:23.502262+00:00",
-      "last_escalated_size": 26,
-      "last_escalated_at": "2026-06-09T06:19:27.199994+00:00",
+      "last_escalated_size": 31,
+      "last_escalated_at": "2026-06-09T10:05:58.086451+00:00",
       "picks_file": "picks/picks-2026-06-08-2105.md",
-      "why_text": "A sitting president showing up to the NBA Finals at Madison Square Garden is a culture collision of the highest order \u2014 the league that spent years navigating its fraught relationship with Trump's base is now hosting him at its biggest stage. The Knicks are finally back in the Finals, MSG is at full fever pitch, and the security footprint alone reshapes the entire event experience for fans. Even Whoopi Goldberg is defending his right to be there, which tells you how much the vibe around Trump and sports has shifted since 2020.\n**Update 5:46 PM CT:** Game 3 is now underway at a sold-out MSG, where fans began lining up early for what's shaping up to be the hottest ticket in New York in decades \u2014 the Knicks hosting an NBA Finals game for the first time in 25 years, with the Spurs favored by most models but the home crowd ready to make that number irrelevant.\n**Update 6:53 PM CT:** Cardi B is performing the halftime show tonight at MSG, adding a full-blown pop culture moment to an already electric Finals game \u2014 a Bronx native headlining the biggest Knicks game in a generation is the kind of detail that writes itself. Meanwhile, New York enters Game 3 with a chance to go up 3-0 and effectively close the door on the Spurs, making tonight one of the highest-stakes home games the Garden has hosted in years.\n**Update 9:12 PM CT:** Spike Lee showed up to MSG in a Knicks jersey signed by Pope Leo XIV, turning his courtside seat into its own cultural moment \u2014 the lifelong fan and Garden fixture adding a layer of surreal New York energy to an already loaded night. Meanwhile, Spurs rookie AJ Dybantsa, the most hyped first-year player since LeBron, is drawing comparisons to San Antonio's own Tim Duncan in his Finals debut, giving the road team its own compelling narrative heading into the fourth quarter.\n**Update 1:20 AM CT:** The Spurs snapped the Knicks' winning streak with a Game 3 victory at MSG, evening the series narrative as San Antonio avoids the 3-0 hole \u2014 De'Aaron Fox appearing to find his Finals rhythm at the critical moment, while the Knicks are already crying foul over officiating and a crowd that booed Trump loudly upon his arrival now has a loss to process alongside the political theater.",
+      "why_text": "A sitting president showing up to the NBA Finals at Madison Square Garden is a culture collision of the highest order \u2014 the league that spent years navigating its fraught relationship with Trump's base is now hosting him at its biggest stage. The Knicks are finally back in the Finals, MSG is at full fever pitch, and the security footprint alone reshapes the entire event experience for fans. Even Whoopi Goldberg is defending his right to be there, which tells you how much the vibe around Trump and sports has shifted since 2020.\n**Update 5:46 PM CT:** Game 3 is now underway at a sold-out MSG, where fans began lining up early for what's shaping up to be the hottest ticket in New York in decades \u2014 the Knicks hosting an NBA Finals game for the first time in 25 years, with the Spurs favored by most models but the home crowd ready to make that number irrelevant.\n**Update 6:53 PM CT:** Cardi B is performing the halftime show tonight at MSG, adding a full-blown pop culture moment to an already electric Finals game \u2014 a Bronx native headlining the biggest Knicks game in a generation is the kind of detail that writes itself. Meanwhile, New York enters Game 3 with a chance to go up 3-0 and effectively close the door on the Spurs, making tonight one of the highest-stakes home games the Garden has hosted in years.\n**Update 9:12 PM CT:** Spike Lee showed up to MSG in a Knicks jersey signed by Pope Leo XIV, turning his courtside seat into its own cultural moment \u2014 the lifelong fan and Garden fixture adding a layer of surreal New York energy to an already loaded night. Meanwhile, Spurs rookie AJ Dybantsa, the most hyped first-year player since LeBron, is drawing comparisons to San Antonio's own Tim Duncan in his Finals debut, giving the road team its own compelling narrative heading into the fourth quarter.\n**Update 1:20 AM CT:** The Spurs snapped the Knicks' winning streak with a Game 3 victory at MSG, evening the series narrative as San Antonio avoids the 3-0 hole \u2014 De'Aaron Fox appearing to find his Finals rhythm at the critical moment, while the Knicks are already crying foul over officiating and a crowd that booed Trump loudly upon his arrival now has a loss to process alongside the political theater.\n**Update 5:06 AM CT:** Correction to the previous update: Victor Wembanyama \u2014 not De'Aaron Fox \u2014 was the driving force behind San Antonio's 115-111 Game 3 victory, with Wemby delivering the marquee Finals performance that kept the Spurs alive and will likely reshuffle the Finals MVP conversation away from Karl-Anthony Towns, who had topped those rankings heading into tonight.",
       "last_escalated_item_ids": [
         "d69f396971a8",
         "438b72a26564",
@@ -1648,7 +1612,12 @@
         "ba89f6108e68",
         "77f5f11d62a3",
         "fd6061789351",
-        "878479a0ac6a"
+        "878479a0ac6a",
+        "a95297f49477",
+        "422e2c8404ca",
+        "d24460e34c81",
+        "67360e2c781c",
+        "23b6d7d3b685"
       ]
     },
     "55b0d2f8cd3a1858": {
@@ -2534,7 +2503,8 @@
     "726f36efd18dfc03": {
       "topic": "FCC Amazon Leo Satellite Broadband Deadline Lifted",
       "item_ids": [
-        "427d7d45d454"
+        "427d7d45d454",
+        "ae71f613627e"
       ],
       "created_at": "2026-06-09T02:12:01.579426+00:00",
       "last_escalated_size": 0,
@@ -2638,7 +2608,97 @@
       "created_at": "2026-06-09T06:20:06.885570+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "314ccbb6289d836c": {
+      "topic": "Reebok Eren Southpaw Instapump Fury 94 Manga Collab",
+      "item_ids": [
+        "319cae3f668f"
+      ],
+      "created_at": "2026-06-09T10:06:45.769977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5054dc742ce2b1ec": {
+      "topic": "Salehe Bembury PUMA Travel Wear World Cup Collection",
+      "item_ids": [
+        "8476b29c1509"
+      ],
+      "created_at": "2026-06-09T10:06:45.769977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "48f8aa5557d822dd": {
+      "topic": "YouTube Creators Influence Over Traditional Entertainment Industry",
+      "item_ids": [
+        "52ee0935e405"
+      ],
+      "created_at": "2026-06-09T10:06:45.769977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f355747c67ab0e1a": {
+      "topic": "Netflix Masha and the Bear New Seasons",
+      "item_ids": [
+        "24118ccb556b"
+      ],
+      "created_at": "2026-06-09T10:06:45.769977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bacce742b1487892": {
+      "topic": "Evotrex RV Charging-Free Vehicle $30M Funding",
+      "item_ids": [
+        "4dc79fbeefad"
+      ],
+      "created_at": "2026-06-09T10:06:45.769977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d3ea8a49a894ed19": {
+      "topic": "GSK Acquires Nuvalent $10.6B Pharma Pipeline Expansion",
+      "item_ids": [
+        "25f78553530c"
+      ],
+      "created_at": "2026-06-09T10:06:45.769977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "179a2a691aa2a79d": {
+      "topic": "19-Year-Old Sells AI Calorie-Tracking Startup $30M",
+      "item_ids": [
+        "eb42615b4115"
+      ],
+      "created_at": "2026-06-09T10:06:45.769977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "945dda723a81fc8d": {
+      "topic": "Paramount Seeks Business Counterpart for Bari Weiss CBS News",
+      "item_ids": [
+        "c573060d1d14"
+      ],
+      "created_at": "2026-06-09T10:06:45.769977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0c4496591d88bd8a": {
+      "topic": "Stellantis Quality Crisis Long-Term Recovery Analysis",
+      "item_ids": [
+        "d132d42a2abe"
+      ],
+      "created_at": "2026-06-09T10:06:45.769977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "30be837228d4d31b": {
+      "topic": "BMW iM3 Nurburgring Testing Le Mans Unveiling",
+      "item_ids": [
+        "ef67363fdc64"
+      ],
+      "created_at": "2026-06-09T10:06:45.769977+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-09T06:20:20.980457+00:00"
+  "last_checked": "2026-06-09T10:06:49.659983+00:00"
 }
