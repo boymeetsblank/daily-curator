@@ -1,55 +1,5 @@
 {
   "known_ids": [
-    "f3f872147c89",
-    "715bb5eb928f",
-    "111987b1f962",
-    "1fa64b3b7759",
-    "49a0b2840109",
-    "ae4c76bf6153",
-    "a547a3ff69bb",
-    "bae85cd85745",
-    "970b9fe6819b",
-    "db4ca5b90721",
-    "671e14593266",
-    "7bcb13d6540e",
-    "685dd0f58990",
-    "ce67ba0165f5",
-    "b23c7f676006",
-    "d25fa78ef469",
-    "30f11f523319",
-    "ed315cdaafdf",
-    "5165a276692f",
-    "8bb3a507dbe2",
-    "74168caf2291",
-    "40cec5e19d8c",
-    "0546f4b2c0ef",
-    "180a01a2e3c0",
-    "a0954be75906",
-    "0df559b6a353",
-    "fd0e59c4e2a5",
-    "d1caf45519a0",
-    "5b3998ed7fbd",
-    "dd616b9eb365",
-    "1ebcfcc4ea63",
-    "71ac5544f994",
-    "d23b932987a9",
-    "438b72a26564",
-    "a2bcea933533",
-    "140adf2db2ae",
-    "28263b481b4e",
-    "f7d27c9973cf",
-    "27d11c811830",
-    "9cfa4b60d12d",
-    "791f2ad453b4",
-    "bca681cf7b54",
-    "d05064445839",
-    "a9f82957d5bf",
-    "673b081f9eea",
-    "040d46e36955",
-    "77bde56f6549",
-    "5129f440d897",
-    "4abe72069a0f",
-    "4ef4f76d785b",
     "6ab3edb0fbe6",
     "c1d6e8515ba3",
     "891974e112ab",
@@ -499,7 +449,57 @@
     "4b628daa2910",
     "67ca0da6eeb9",
     "9e1d0da58955",
-    "da9b46f5022b"
+    "da9b46f5022b",
+    "65e19beb1f6a",
+    "45e26f0067fd",
+    "c7d3a0c75fb1",
+    "7688d3171ffd",
+    "a21f988c919d",
+    "1e486a5403c2",
+    "bb61fbf6ea60",
+    "a5172f04f04c",
+    "6f749370a654",
+    "0f721d0d5d72",
+    "1d9fcf204118",
+    "2865d7a396fb",
+    "d4bb24b0fde3",
+    "e2e0841323c4",
+    "6bfc0a4169f1",
+    "2bc052b2fef6",
+    "bc13cef20328",
+    "7928ed2eacf6",
+    "787b9ae77db1",
+    "24cc6803c21a",
+    "945b1f39b91b",
+    "7f22e4621cbc",
+    "62f958fe4cce",
+    "0f4a1bb38050",
+    "5fd6d254f016",
+    "26d8f09a4623",
+    "99ce58d10719",
+    "1c0be3700c6e",
+    "00e14d85ff6f",
+    "a72e3f6a6c46",
+    "390bfe21414d",
+    "b2052a988739",
+    "c5045ce53ac4",
+    "cac6bf253185",
+    "249a7b8b10b2",
+    "b7f68e4da835",
+    "a11d800c94cd",
+    "f86c30870914",
+    "b34cd60d0266",
+    "0684827b64e9",
+    "9fffbd6326d7",
+    "4f165a4117f1",
+    "f4b084afd870",
+    "0f91563cfd92",
+    "af8221cd213b",
+    "3c2adea52915",
+    "8b2a1688f4cd",
+    "29fdaff96154",
+    "a9a38efae323",
+    "2c78fee101a2"
   ],
   "failed_ids": {
     "45a6e2256542": "2026-06-09T19:49:42.560671+00:00",
@@ -531,202 +531,12 @@
     "311b6c81dcc8": "2026-06-09T19:49:42.560671+00:00",
     "5966a0a0a15f": "2026-06-09T19:49:42.560671+00:00",
     "e6ccf13d5ccf": "2026-06-09T19:49:42.560671+00:00",
-    "4c4d6c4536c0": "2026-06-09T19:49:42.560671+00:00"
+    "4c4d6c4536c0": "2026-06-09T19:49:42.560671+00:00",
+    "cee7749ef914": "2026-06-09T22:57:22.042070+00:00",
+    "98e740afcb62": "2026-06-09T22:57:22.042070+00:00",
+    "ee4979beed97": "2026-06-09T22:57:22.042070+00:00"
   },
   "live_clusters": {
-    "c74f6e6bd50bbb2c": {
-      "topic": "Nike Kobe 13 Unreleased Draft Pack Designer Reveal",
-      "item_ids": [
-        "84d5d59a9728"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ed2ea2b3159c19a7": {
-      "topic": "Mineshaft The Cruising Murders William Friedkin Documentary",
-      "item_ids": [
-        "ee2f0d8153ce",
-        "3a000e49043f"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6df3a0a1707adfa2": {
-      "topic": "Tyne Daly Brigadoon Pasadena Playhouse Theater Return",
-      "item_ids": [
-        "61472893ac7c"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fd0b8eff7c168f20": {
-      "topic": "Scary Movie Box Office Masters of the Universe",
-      "item_ids": [
-        "39d992b6df08",
-        "5bad8f9b26b8",
-        "17e3fd26a018"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-09T17:48:05.344229+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "39d992b6df08",
-        "5bad8f9b26b8",
-        "17e3fd26a018"
-      ]
-    },
-    "67bf57ebe498829d": {
-      "topic": "Notting Hill 4K UHD Blu-ray Release",
-      "item_ids": [
-        "136668072077"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b4b8385e513d529d": {
-      "topic": "Billie Eilish Angelina Jolie Support+Feed Pickleball Benefit",
-      "item_ids": [
-        "025d16af854d"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "271ccacb07f5d7f8": {
-      "topic": "Jadakiss Studio Session 38 Spesh Callout",
-      "item_ids": [
-        "5d7a9ad6109c"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "934bc12defb58848": {
-      "topic": "Enzo Fern\u00e1ndez La T y La M Soccer Music Interview",
-      "item_ids": [
-        "09e47744fc6a"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "343547e7158f31e2": {
-      "topic": "Lou Reed Madonna Confessions II Album Credit",
-      "item_ids": [
-        "dc2d9a0f4b90"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cb7cd280a2b77aff": {
-      "topic": "Fetty Wap Russell Dickerson CMA Fest Surprise",
-      "item_ids": [
-        "060ac671fabd"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "16bc5167e989e628": {
-      "topic": "T.I. Tiny Trial Judge Award Reduction",
-      "item_ids": [
-        "b91ce8e71d69"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6d586fed2cb4768b": {
-      "topic": "Broadway Discounted Tickets Online Guide",
-      "item_ids": [
-        "edd7f2c83de4"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0b2a589e9afeecaa": {
-      "topic": "Robert Irvine Restaurant Impossible Reboot Food Network",
-      "item_ids": [
-        "044a47b52260"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3233a17d18344688": {
-      "topic": "Emmy Eligibility Heated Rivalry Lord of the Flies Rivals",
-      "item_ids": [
-        "c44f69b38883"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dac48ea20e170fd2": {
-      "topic": "OpenAI Confidential IPO Filing",
-      "item_ids": [
-        "b57ac823f2e3",
-        "6025772369b3",
-        "060a84be34f2",
-        "8e80f7c0d542",
-        "84b6f737cf5d"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-08T22:45:29.548881+00:00",
-      "picks_file": "picks/picks-2026-06-08-2246.md",
-      "why_text": "The most consequential AI company on the planet is heading to public markets, a move that will force Wall Street to formally price the AI revolution and put OpenAI's finances, governance, and Sam Altman's unusual equity structure under serious scrutiny for the first time. This filing lands at a peak moment of AI hype and investment \u2014 coming right after Anthropic's own IPO prep \u2014 signaling that the window for cashing out on the AI boom is now open and the race to go public is on. The confidential filing buys time, but when that S-1 drops, it will be the most-read prospectus in years.",
-      "last_escalated_item_ids": [
-        "b57ac823f2e3",
-        "6025772369b3",
-        "060a84be34f2",
-        "8e80f7c0d542",
-        "84b6f737cf5d"
-      ]
-    },
-    "9f15f9dd199393f6": {
-      "topic": "McDonald's AI Drive-Thru Ordering Technology",
-      "item_ids": [
-        "0398e051b25d"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0b37d4d414d3c820": {
-      "topic": "Arrow McLaren 2026 World Wide Technology Raceway",
-      "item_ids": [
-        "e5b9e6812e01"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0325f0bd0e7f3d07": {
-      "topic": "Streetwear Pioneer Streetchair Invention",
-      "item_ids": [
-        "88c4221d3598"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "78923c6f5dbb16be": {
-      "topic": "BMW Electric M3 V8 Alternative",
-      "item_ids": [
-        "961f951493e5"
-      ],
-      "created_at": "2026-06-08T22:46:16.027948+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "529f9c40c08a63b0": {
       "topic": "Billboard Hot 100 Top 10 June 13 2026",
       "item_ids": [
@@ -768,11 +578,18 @@
       "topic": "2026 FIFA World Cup Mexico City Music Performances",
       "item_ids": [
         "6e69ddc9b187",
-        "c8fbaed79148"
+        "c8fbaed79148",
+        "bb61fbf6ea60"
       ],
       "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-09T22:57:22.042070+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "6e69ddc9b187",
+        "c8fbaed79148",
+        "bb61fbf6ea60"
+      ]
     },
     "5297250c49f6d953": {
       "topic": "Soccer Players Music Careers Interview",
@@ -1291,7 +1108,8 @@
     "90f08366003d7c7c": {
       "topic": "Audi Q7 BMW X5 Luxury SUV Competition",
       "item_ids": [
-        "bdd666fceb3e"
+        "bdd666fceb3e",
+        "af8221cd213b"
       ],
       "created_at": "2026-06-09T12:50:38.496173+00:00",
       "last_escalated_size": 0,
@@ -2123,11 +1941,18 @@
       "topic": "MacOS 27 Golden Gate Features Apple",
       "item_ids": [
         "fca9edef436b",
-        "d9ac8b15a0bc"
+        "d9ac8b15a0bc",
+        "99ce58d10719"
       ],
       "created_at": "2026-06-09T17:49:04.895234+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-09T22:57:22.042070+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "fca9edef436b",
+        "d9ac8b15a0bc",
+        "99ce58d10719"
+      ]
     },
     "4669c8dbad9bef1b": {
       "topic": "iOS 27 iPadOS 27 Top Features Apple",
@@ -2598,11 +2423,18 @@
       "topic": "Kalshi Perpetual Contracts Trading Launch",
       "item_ids": [
         "1b9974220dea",
-        "3788f08a3d51"
+        "3788f08a3d51",
+        "787b9ae77db1"
       ],
       "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-09T22:57:22.042070+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "1b9974220dea",
+        "3788f08a3d51",
+        "787b9ae77db1"
+      ]
     },
     "b498c9e15d19852f": {
       "topic": "Boeing Deliveries Stock Performance Analysis",
@@ -2664,7 +2496,8 @@
         "cbd50194cef1",
         "7e1b726b78a3",
         "48f40eb8ce86",
-        "04233259ffdc"
+        "04233259ffdc",
+        "00e14d85ff6f"
       ],
       "created_at": "2026-06-09T19:50:30.799291+00:00",
       "last_escalated_size": 4,
@@ -2753,7 +2586,8 @@
     "52e70bd49251bb03": {
       "topic": "Adults Season 2 Release Date Guest Stars",
       "item_ids": [
-        "3cf87a83398c"
+        "3cf87a83398c",
+        "6bfc0a4169f1"
       ],
       "created_at": "2026-06-09T21:26:26.687722+00:00",
       "last_escalated_size": 0,
@@ -3136,7 +2970,387 @@
       "created_at": "2026-06-09T21:26:26.687722+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "7be69ef8eb6684fd": {
+      "topic": "Napheesa Collier Jordan Heir Series 2 Minnesota Lynx Sneaker",
+      "item_ids": [
+        "65e19beb1f6a"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ef435295b32b8d2b": {
+      "topic": "Jordan Spiz'ike Low White Cement Sneaker Release",
+      "item_ids": [
+        "45e26f0067fd"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "59b6b6d5a7a79eb9": {
+      "topic": "Persimmon Acquires Death on the Brandywine Kate Burton Film",
+      "item_ids": [
+        "c7d3a0c75fb1"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "01ebbc24f53f66db": {
+      "topic": "Craig Ferguson Late Late Show Trump Presidency Comments",
+      "item_ids": [
+        "7688d3171ffd"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1fa97312b33b04f9": {
+      "topic": "Hacks Jean Smart Queen of Hearts Playing Card Dress",
+      "item_ids": [
+        "a21f988c919d"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1590ce199d816eb3": {
+      "topic": "Summer House Season 10 Reunion Ratings Record Bravo",
+      "item_ids": [
+        "1e486a5403c2"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a4ae2850fa7742fa": {
+      "topic": "YouTube AI Music Training Terms of Service Copyright Lawsuit",
+      "item_ids": [
+        "a5172f04f04c"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fc1dcc58c6245fc8": {
+      "topic": "Destin Conrad ESPN Spotify House of Legends NBA Finals Party",
+      "item_ids": [
+        "6f749370a654",
+        "1c0be3700c6e"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c7a68e0f2ad62310": {
+      "topic": "Wynonna The Hard Truth Album Track List Release Date",
+      "item_ids": [
+        "0f721d0d5d72"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e3d74bbb7933e776": {
+      "topic": "Cardi B Knicks Championship NYC Optimism Statement",
+      "item_ids": [
+        "1d9fcf204118"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "88424664e0481ace": {
+      "topic": "Jay-Z Eminem Rakim Album First Track 25 Years",
+      "item_ids": [
+        "2865d7a396fb"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fe1e400d27c41dc6": {
+      "topic": "Michael Jackson Biopic Global Box Office $900M Milestone",
+      "item_ids": [
+        "d4bb24b0fde3"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4538184bd661bf0e": {
+      "topic": "Patrick Renna Sandlot Cast Dugout Dads Comedy Reunion",
+      "item_ids": [
+        "e2e0841323c4"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d7ed35b4fb63c32c": {
+      "topic": "Summer House Season 10 Reunion Bravo Ratings Record",
+      "item_ids": [
+        "2bc052b2fef6"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f2ddacebb6adcb1e": {
+      "topic": "Great White Sharks Mediterranean Sea Sightings Scientific Study",
+      "item_ids": [
+        "bc13cef20328"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c6cadc08df3300e4": {
+      "topic": "Conan O'Brien AI Cybersecurity Educational Videos",
+      "item_ids": [
+        "7928ed2eacf6"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "641f504a15f19502": {
+      "topic": "Schenectady Police Illegal Guns Gun Violence Technology",
+      "item_ids": [
+        "24cc6803c21a",
+        "62f958fe4cce"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "410e59b592af5690": {
+      "topic": "Wealth Managers AI Leadership Industry Reshaping",
+      "item_ids": [
+        "945b1f39b91b"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d653170e022b0a1c": {
+      "topic": "Drone Technology Water Rescue Drowning Prevention",
+      "item_ids": [
+        "7f22e4621cbc"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a11dc5d68f136e83": {
+      "topic": "Fidelity Crypto Bank OCC Money Transmitter License",
+      "item_ids": [
+        "0f4a1bb38050"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5432ac27a93956e5": {
+      "topic": "New Balance Trail Sandal Grey Colorway",
+      "item_ids": [
+        "5fd6d254f016"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c2103682b5351906": {
+      "topic": "Running Brand Trail Innovation Performance",
+      "item_ids": [
+        "26d8f09a4623"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "84b1772ac9d0ce15": {
+      "topic": "2026 NBA Play-in Playoffs Finals Schedule",
+      "item_ids": [
+        "a72e3f6a6c46"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "54201e233eb9c4b4": {
+      "topic": "NBA Finals Media Day Game 4 Harper Statement",
+      "item_ids": [
+        "390bfe21414d"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6c0f6cd30766be66": {
+      "topic": "Charles Barkley NBA Finals Obscene Remark Criticism",
+      "item_ids": [
+        "b2052a988739"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8cdaa755c79290b9": {
+      "topic": "Atlanta World Cup 2026 Mercedes-Benz Stadium Business Opportunities",
+      "item_ids": [
+        "c5045ce53ac4"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fa23a3571d2b5c0b": {
+      "topic": "Floyd County Business Development Sites Planning",
+      "item_ids": [
+        "cac6bf253185"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b3a38c9adc6d73a0": {
+      "topic": "Salem Super Cruise DORA Business Event Sales Impact",
+      "item_ids": [
+        "249a7b8b10b2"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "103f2d9aba98fcb8": {
+      "topic": "Raleigh Business Sector Growth Canes Success Spillover",
+      "item_ids": [
+        "b7f68e4da835"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8b51ad983e39e3e3": {
+      "topic": "OSU Business Graduate Harvard Summer Investment Program",
+      "item_ids": [
+        "a11d800c94cd"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f3c837583db39ab7": {
+      "topic": "Super Micro Stock Tumble $7B Financing AI Servers",
+      "item_ids": [
+        "f86c30870914"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d3ec0386c4e17a88": {
+      "topic": "Superannuation Financial Planning Australian Retirement",
+      "item_ids": [
+        "b34cd60d0266"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8de1691fb5759f58": {
+      "topic": "Farm Finance War Impact Loss $600000",
+      "item_ids": [
+        "0684827b64e9"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4b2cae2a2173515a": {
+      "topic": "Junior Achievement Birmingham Economic Education Center",
+      "item_ids": [
+        "9fffbd6326d7"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b0162a6f4b52fe50": {
+      "topic": "Desert Financial Credit Union CFO Appointment",
+      "item_ids": [
+        "4f165a4117f1"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "31ff26abb99719c5": {
+      "topic": "BMW Electric M Sound Performance",
+      "item_ids": [
+        "f4b084afd870"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e9b0aaa5782bc7c9": {
+      "topic": "2021 BMW X5 M Depreciation Analysis Five Years",
+      "item_ids": [
+        "0f91563cfd92"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e083de56d64bad85": {
+      "topic": "Twitter Trending Manslaughter Legal News",
+      "item_ids": [
+        "3c2adea52915"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c66cc6c7fc5c9199": {
+      "topic": "Twitter Trending SPLC Organization News",
+      "item_ids": [
+        "8b2a1688f4cd"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "30e583882d88dc0f": {
+      "topic": "Twitter Trending Alvarez Figure News",
+      "item_ids": [
+        "29fdaff96154"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5b68fd31d92df9f4": {
+      "topic": "Twitter Trending Serena Figure News",
+      "item_ids": [
+        "a9a38efae323"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9a32537890c8c93e": {
+      "topic": "Twitter Trending Artemis III Space Program",
+      "item_ids": [
+        "2c78fee101a2"
+      ],
+      "created_at": "2026-06-09T22:58:07.423549+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-09T21:26:43.828276+00:00"
+  "last_checked": "2026-06-09T22:58:07.484179+00:00"
 }
