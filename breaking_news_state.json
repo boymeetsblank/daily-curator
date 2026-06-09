@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "d21a48b7e37b",
-    "65a8521a0c71",
-    "6c4518e6b4cc",
-    "e565d7c60d5e",
-    "fea132afd6e5",
-    "ae76a4ef10ad",
-    "6c4518e6b4cc",
-    "6d06c1a52537",
-    "b98112d47ee3",
-    "cd4c5a253b48",
-    "c22d493e51ac",
-    "04b9a4f79af5",
-    "ee3921d190f3",
-    "60d2b32cc0e7",
-    "66f018e462e9",
     "4ff8d1e9c217",
     "e7058d4c6fdc",
     "c9883046f963",
@@ -499,48 +484,46 @@
     "671a9b5e9b08",
     "04ea5be18cee",
     "24c43096cc5b",
-    "d466cddbb1d2"
+    "d466cddbb1d2",
+    "25bc2d5cb170",
+    "53d0214da245",
+    "982475849202",
+    "d498476bbd4a",
+    "c975aacfd24b",
+    "289e549ddfdb",
+    "20c1cb2c9f20",
+    "c39b1834425f",
+    "1b25b26d7f2d",
+    "d40b0e6c1ba3",
+    "b6d0ae4530d8",
+    "ba89f6108e68",
+    "77f5f11d62a3",
+    "fd6061789351",
+    "878479a0ac6a"
   ],
   "failed_ids": {
-    "3533c0856fd4": "2026-06-08T22:45:29.548881+00:00",
-    "058c72d86582": "2026-06-08T22:45:29.548881+00:00",
-    "00f522370cdb": "2026-06-08T22:45:29.548881+00:00",
-    "290aa5eccec6": "2026-06-08T22:45:29.548881+00:00",
-    "99ad9882a707": "2026-06-08T22:45:29.548881+00:00",
-    "2ee6e6631e59": "2026-06-08T22:45:29.548881+00:00",
-    "67a0412597fb": "2026-06-08T22:45:29.548881+00:00",
-    "a806e8bab646": "2026-06-08T23:52:51.212770+00:00",
-    "9e39fb58d83c": "2026-06-08T23:52:51.212770+00:00",
-    "793a27a088c2": "2026-06-08T23:52:51.212770+00:00",
-    "e3cc730c4c93": "2026-06-08T23:52:51.212770+00:00",
-    "712b3a49db46": "2026-06-08T23:52:51.212770+00:00",
-    "00c09235c290": "2026-06-08T23:52:51.212770+00:00",
-    "85374a21c5e3": "2026-06-08T23:52:51.212770+00:00",
-    "825ef353f815": "2026-06-08T23:52:51.212770+00:00",
-    "45a406228c25": "2026-06-08T23:52:51.212770+00:00",
-    "4b38f51e68e6": "2026-06-08T23:52:51.212770+00:00",
-    "a946bd7f2b58": "2026-06-08T23:52:51.212770+00:00",
-    "5fa8cdd5d1aa": "2026-06-08T23:52:51.212770+00:00",
-    "9a2b31e88581": "2026-06-08T23:52:51.212770+00:00",
-    "63ce7ea00ed6": "2026-06-08T23:52:51.212770+00:00",
-    "8b2f1cb73146": "2026-06-08T23:52:51.212770+00:00",
-    "281d62aaa9d5": "2026-06-08T23:52:51.212770+00:00",
-    "6548eb3e5b9f": "2026-06-08T23:52:51.212770+00:00",
-    "97453cdd4f55": "2026-06-08T23:52:51.212770+00:00",
-    "04ef35b0af19": "2026-06-09T02:11:21.051566+00:00",
-    "55aa74d4e97d": "2026-06-09T02:11:21.051566+00:00",
-    "116e2b480b9b": "2026-06-09T02:11:21.051566+00:00",
-    "5a8a6b9fadfa": "2026-06-09T02:11:21.051566+00:00",
-    "5ef194c5e968": "2026-06-09T02:11:21.051566+00:00",
-    "8b7e577839ad": "2026-06-09T02:11:21.051566+00:00",
-    "d88e3dc35b71": "2026-06-09T02:11:21.051566+00:00",
-    "ea8aabd5c3ce": "2026-06-09T02:11:21.051566+00:00",
-    "6a2f2156d579": "2026-06-09T02:11:21.051566+00:00",
-    "05182c0670de": "2026-06-09T02:11:21.051566+00:00",
-    "04562dc88887": "2026-06-09T02:11:21.051566+00:00",
-    "783c92d12913": "2026-06-09T02:11:21.051566+00:00",
-    "797faaf73782": "2026-06-09T02:11:21.051566+00:00",
-    "f3ee606197a9": "2026-06-09T02:11:21.051566+00:00"
+    "28efce335848": "2026-06-09T06:19:27.199994+00:00",
+    "08a7bc6a6b2f": "2026-06-09T06:19:27.199994+00:00",
+    "63c7da3f8b3e": "2026-06-09T06:19:27.199994+00:00",
+    "124628cd2586": "2026-06-09T06:19:27.199994+00:00",
+    "bc6a593668dd": "2026-06-09T06:19:27.199994+00:00",
+    "b8a99cbb756a": "2026-06-09T06:19:27.199994+00:00",
+    "f12f2ee81fb6": "2026-06-09T06:19:27.199994+00:00",
+    "0aae91c50eb0": "2026-06-09T06:19:27.199994+00:00",
+    "8a8f363d27cc": "2026-06-09T06:19:27.199994+00:00",
+    "b45ca03bd7d5": "2026-06-09T06:19:27.199994+00:00",
+    "186414318082": "2026-06-09T06:19:27.199994+00:00",
+    "9ec8bb2ae3d5": "2026-06-09T06:19:27.199994+00:00",
+    "6b7336fd16d3": "2026-06-09T06:19:27.199994+00:00",
+    "ad15a88b591f": "2026-06-09T06:19:27.199994+00:00",
+    "d78e1f35dd80": "2026-06-09T06:19:27.199994+00:00",
+    "0bed448ffeac": "2026-06-09T06:19:27.199994+00:00",
+    "3b83dd607a32": "2026-06-09T06:19:27.199994+00:00",
+    "4a9304c1f72c": "2026-06-09T06:19:27.199994+00:00",
+    "514b81eef4b3": "2026-06-09T06:19:27.199994+00:00",
+    "6bd03f27c167": "2026-06-09T06:19:27.199994+00:00",
+    "f30f26b41cdd": "2026-06-09T06:19:27.199994+00:00",
+    "1ac52a27315b": "2026-06-09T06:19:27.199994+00:00"
   },
   "live_clusters": {
     "3e2b3143010cea96": {
@@ -599,7 +582,8 @@
     "d12775e05a4a5530": {
       "topic": "Niall Horan 'Dinner Party' Album Australian Return",
       "item_ids": [
-        "193927301846"
+        "193927301846",
+        "982475849202"
       ],
       "created_at": "2026-06-08T06:59:54.698143+00:00",
       "last_escalated_size": 0,
@@ -1621,13 +1605,23 @@
         "eb8b921941a9",
         "1f55926c04fd",
         "ed83ec483b4f",
-        "dd27d5949f82"
+        "dd27d5949f82",
+        "289e549ddfdb",
+        "20c1cb2c9f20",
+        "c39b1834425f",
+        "1b25b26d7f2d",
+        "d40b0e6c1ba3",
+        "b6d0ae4530d8",
+        "ba89f6108e68",
+        "77f5f11d62a3",
+        "fd6061789351",
+        "878479a0ac6a"
       ],
       "created_at": "2026-06-08T18:38:23.502262+00:00",
-      "last_escalated_size": 16,
-      "last_escalated_at": "2026-06-09T02:11:21.051566+00:00",
+      "last_escalated_size": 26,
+      "last_escalated_at": "2026-06-09T06:19:27.199994+00:00",
       "picks_file": "picks/picks-2026-06-08-2105.md",
-      "why_text": "A sitting president showing up to the NBA Finals at Madison Square Garden is a culture collision of the highest order \u2014 the league that spent years navigating its fraught relationship with Trump's base is now hosting him at its biggest stage. The Knicks are finally back in the Finals, MSG is at full fever pitch, and the security footprint alone reshapes the entire event experience for fans. Even Whoopi Goldberg is defending his right to be there, which tells you how much the vibe around Trump and sports has shifted since 2020.\n**Update 5:46 PM CT:** Game 3 is now underway at a sold-out MSG, where fans began lining up early for what's shaping up to be the hottest ticket in New York in decades \u2014 the Knicks hosting an NBA Finals game for the first time in 25 years, with the Spurs favored by most models but the home crowd ready to make that number irrelevant.\n**Update 6:53 PM CT:** Cardi B is performing the halftime show tonight at MSG, adding a full-blown pop culture moment to an already electric Finals game \u2014 a Bronx native headlining the biggest Knicks game in a generation is the kind of detail that writes itself. Meanwhile, New York enters Game 3 with a chance to go up 3-0 and effectively close the door on the Spurs, making tonight one of the highest-stakes home games the Garden has hosted in years.\n**Update 9:12 PM CT:** Spike Lee showed up to MSG in a Knicks jersey signed by Pope Leo XIV, turning his courtside seat into its own cultural moment \u2014 the lifelong fan and Garden fixture adding a layer of surreal New York energy to an already loaded night. Meanwhile, Spurs rookie AJ Dybantsa, the most hyped first-year player since LeBron, is drawing comparisons to San Antonio's own Tim Duncan in his Finals debut, giving the road team its own compelling narrative heading into the fourth quarter.",
+      "why_text": "A sitting president showing up to the NBA Finals at Madison Square Garden is a culture collision of the highest order \u2014 the league that spent years navigating its fraught relationship with Trump's base is now hosting him at its biggest stage. The Knicks are finally back in the Finals, MSG is at full fever pitch, and the security footprint alone reshapes the entire event experience for fans. Even Whoopi Goldberg is defending his right to be there, which tells you how much the vibe around Trump and sports has shifted since 2020.\n**Update 5:46 PM CT:** Game 3 is now underway at a sold-out MSG, where fans began lining up early for what's shaping up to be the hottest ticket in New York in decades \u2014 the Knicks hosting an NBA Finals game for the first time in 25 years, with the Spurs favored by most models but the home crowd ready to make that number irrelevant.\n**Update 6:53 PM CT:** Cardi B is performing the halftime show tonight at MSG, adding a full-blown pop culture moment to an already electric Finals game \u2014 a Bronx native headlining the biggest Knicks game in a generation is the kind of detail that writes itself. Meanwhile, New York enters Game 3 with a chance to go up 3-0 and effectively close the door on the Spurs, making tonight one of the highest-stakes home games the Garden has hosted in years.\n**Update 9:12 PM CT:** Spike Lee showed up to MSG in a Knicks jersey signed by Pope Leo XIV, turning his courtside seat into its own cultural moment \u2014 the lifelong fan and Garden fixture adding a layer of surreal New York energy to an already loaded night. Meanwhile, Spurs rookie AJ Dybantsa, the most hyped first-year player since LeBron, is drawing comparisons to San Antonio's own Tim Duncan in his Finals debut, giving the road team its own compelling narrative heading into the fourth quarter.\n**Update 1:20 AM CT:** The Spurs snapped the Knicks' winning streak with a Game 3 victory at MSG, evening the series narrative as San Antonio avoids the 3-0 hole \u2014 De'Aaron Fox appearing to find his Finals rhythm at the critical moment, while the Knicks are already crying foul over officiating and a crowd that booed Trump loudly upon his arrival now has a loss to process alongside the political theater.",
       "last_escalated_item_ids": [
         "d69f396971a8",
         "438b72a26564",
@@ -1644,7 +1638,17 @@
         "eb8b921941a9",
         "1f55926c04fd",
         "ed83ec483b4f",
-        "dd27d5949f82"
+        "dd27d5949f82",
+        "289e549ddfdb",
+        "20c1cb2c9f20",
+        "c39b1834425f",
+        "1b25b26d7f2d",
+        "d40b0e6c1ba3",
+        "b6d0ae4530d8",
+        "ba89f6108e68",
+        "77f5f11d62a3",
+        "fd6061789351",
+        "878479a0ac6a"
       ]
     },
     "55b0d2f8cd3a1858": {
@@ -2598,7 +2602,43 @@
       "created_at": "2026-06-09T02:12:01.579426+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "eca4f082733f8a77": {
+      "topic": "APOS Boss Vivek Couto Asia Media Business AI Strategy",
+      "item_ids": [
+        "25bc2d5cb170"
+      ],
+      "created_at": "2026-06-09T06:20:06.885570+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "142b0e2760d781c5": {
+      "topic": "Blink-182 Take Off Your Pants and Jacket 25th Anniversary Plans",
+      "item_ids": [
+        "53d0214da245"
+      ],
+      "created_at": "2026-06-09T06:20:06.885570+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b2e7e55eb8afb3ec": {
+      "topic": "Zepto IPO Filing Fast Growth Losses Valuation",
+      "item_ids": [
+        "d498476bbd4a"
+      ],
+      "created_at": "2026-06-09T06:20:06.885570+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "496c09685119134f": {
+      "topic": "Ninja Theory Project Mara Psychological Horror Game Cancellation",
+      "item_ids": [
+        "c975aacfd24b"
+      ],
+      "created_at": "2026-06-09T06:20:06.885570+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-09T02:12:33.325090+00:00"
+  "last_checked": "2026-06-09T06:20:20.980457+00:00"
 }
