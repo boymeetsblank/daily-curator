@@ -1,32 +1,5 @@
 {
   "known_ids": [
-    "9522f7f738f2",
-    "2f097c6f7765",
-    "fac8daa19163",
-    "9b45eabc7311",
-    "33451634c8b1",
-    "91868c0b882f",
-    "dcb4c95dbbf1",
-    "327133939058",
-    "616f0cdb4769",
-    "983bdc3548d0",
-    "57a107f3a310",
-    "b99084fa91fa",
-    "6b0819555cb7",
-    "c733bac7a8d4",
-    "b8c44b8a729a",
-    "003c465d4fd3",
-    "e21f6bb4c054",
-    "0ea8d056cded",
-    "90f0446a0dca",
-    "2273cd0d70ad",
-    "d84f3c2bb197",
-    "4069e53ab17c",
-    "cbc3c816d09b",
-    "a84433b7aad2",
-    "ff3d0c75eae1",
-    "790768e874f3",
-    "bf0b5fe4bfb5",
     "d21a48b7e37b",
     "65a8521a0c71",
     "6c4518e6b4cc",
@@ -499,7 +472,34 @@
     "016fa49042df",
     "91afe96e7958",
     "906d99abea34",
-    "9eb0b8289247"
+    "9eb0b8289247",
+    "1f55926c04fd",
+    "6e69ddc9b187",
+    "c8fbaed79148",
+    "02e9fb2dfc5f",
+    "61cb86345ee3",
+    "2beff9c84f66",
+    "bf51653a4ab1",
+    "d2fe95fff064",
+    "9bcfa1ed1ffc",
+    "427d7d45d454",
+    "c5bbfc62544e",
+    "05d1c066992d",
+    "af3d70e2ee6d",
+    "2113383df2ba",
+    "42a68c21d428",
+    "2b7e99fa9334",
+    "412013b75f78",
+    "ed83ec483b4f",
+    "2c609e0a4dd2",
+    "dd27d5949f82",
+    "addae8a56887",
+    "fdce63abb248",
+    "2a20abdb5306",
+    "671a9b5e9b08",
+    "04ea5be18cee",
+    "24c43096cc5b",
+    "d466cddbb1d2"
   ],
   "failed_ids": {
     "3533c0856fd4": "2026-06-08T22:45:29.548881+00:00",
@@ -526,7 +526,21 @@
     "8b2f1cb73146": "2026-06-08T23:52:51.212770+00:00",
     "281d62aaa9d5": "2026-06-08T23:52:51.212770+00:00",
     "6548eb3e5b9f": "2026-06-08T23:52:51.212770+00:00",
-    "97453cdd4f55": "2026-06-08T23:52:51.212770+00:00"
+    "97453cdd4f55": "2026-06-08T23:52:51.212770+00:00",
+    "04ef35b0af19": "2026-06-09T02:11:21.051566+00:00",
+    "55aa74d4e97d": "2026-06-09T02:11:21.051566+00:00",
+    "116e2b480b9b": "2026-06-09T02:11:21.051566+00:00",
+    "5a8a6b9fadfa": "2026-06-09T02:11:21.051566+00:00",
+    "5ef194c5e968": "2026-06-09T02:11:21.051566+00:00",
+    "8b7e577839ad": "2026-06-09T02:11:21.051566+00:00",
+    "d88e3dc35b71": "2026-06-09T02:11:21.051566+00:00",
+    "ea8aabd5c3ce": "2026-06-09T02:11:21.051566+00:00",
+    "6a2f2156d579": "2026-06-09T02:11:21.051566+00:00",
+    "05182c0670de": "2026-06-09T02:11:21.051566+00:00",
+    "04562dc88887": "2026-06-09T02:11:21.051566+00:00",
+    "783c92d12913": "2026-06-09T02:11:21.051566+00:00",
+    "797faaf73782": "2026-06-09T02:11:21.051566+00:00",
+    "f3ee606197a9": "2026-06-09T02:11:21.051566+00:00"
   },
   "live_clusters": {
     "3e2b3143010cea96": {
@@ -716,12 +730,13 @@
         "de04eb725abf",
         "8507a0e3c178",
         "9dd32d1e23e0",
-        "1c194cfe842c"
+        "1c194cfe842c",
+        "bf51653a4ab1"
       ],
       "created_at": "2026-06-08T12:05:48.344404+00:00",
-      "last_escalated_size": 40,
-      "last_escalated_at": "2026-06-08T22:45:29.548881+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 43,
+      "last_escalated_at": "2026-06-09T02:11:21.051566+00:00",
+      "picks_file": "picks/picks-2026-06-09-0212.md",
       "last_escalated_item_ids": [
         "8942b30a7d2c",
         "935bcf17d951",
@@ -762,8 +777,12 @@
         "66a3e6d4bcac",
         "6526b882c0db",
         "de04eb725abf",
-        "8507a0e3c178"
-      ]
+        "8507a0e3c178",
+        "9dd32d1e23e0",
+        "1c194cfe842c",
+        "bf51653a4ab1"
+      ],
+      "why_text": "WWDC 2026 is doing a lot of heavy lifting at once: iOS 27 betas have essentially outed a foldable iPhone before Apple could announce it, while a sweeping AirPods settings overhaul signals the company is rethinking its entire hardware-software stack in tandem. Meanwhile, Apple's patience on AI \u2014 resisting the urge to ship half-baked features \u2014 is suddenly looking like the smartest play in the room as competitors stumble through their own messy rollouts."
     },
     "a8fbd44a7308c1fd": {
       "topic": "Iran Military Operations Israel Lebanon Escalation Warning",
@@ -850,11 +869,19 @@
       "topic": "S&P 500 Nasdaq Chip Stocks Market Recovery",
       "item_ids": [
         "af00f2473b9a",
-        "eda2f1d7aa61"
+        "eda2f1d7aa61",
+        "05d1c066992d"
       ],
       "created_at": "2026-06-08T12:05:48.344404+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-09T02:11:21.051566+00:00",
+      "picks_file": "picks/picks-2026-06-09-0212.md",
+      "why_text": "After a bruising stretch driven by AI spending anxiety and macro uncertainty, semiconductor stocks are bouncing hard \u2014 and the recovery is crossing time zones, with Asian chip-linked names following Wall Street's lead in real time. This matters because chips have become the single most watched proxy for the AI trade: when they bleed, the whole growth narrative bleeds with them. A coordinated rebound signals that institutional money is still willing to bet on the AI buildout, not abandon it.",
+      "last_escalated_item_ids": [
+        "af00f2473b9a",
+        "eda2f1d7aa61",
+        "05d1c066992d"
+      ]
     },
     "4f05c9eaee129c14": {
       "topic": "Stock Market Oil Middle East Conflict AI Boom Decline",
@@ -1231,11 +1258,23 @@
       "topic": "SpaceX IPO $1.8 Trillion Valuation",
       "item_ids": [
         "14f9230a6404",
-        "9246baf59a0d"
+        "9246baf59a0d",
+        "af3d70e2ee6d",
+        "2113383df2ba",
+        "412013b75f78"
       ],
       "created_at": "2026-06-08T16:16:26.250757+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 5,
+      "last_escalated_at": "2026-06-09T02:11:21.051566+00:00",
+      "picks_file": "picks/picks-2026-06-09-0212.md",
+      "why_text": "A SpaceX IPO at $1.8 trillion would make it one of the most valuable public offerings in history, cementing Elon Musk's grip on both the AI-satellite economy and the broader narrative of private space commercialization. Musk's signal that the AI satellite infrastructure will lean on existing tech isn't just a cost story \u2014 it's a power move that tells Wall Street the margins are already there. This is the moment private space stops being a moonshot bet and starts trading like a utility.",
+      "last_escalated_item_ids": [
+        "14f9230a6404",
+        "9246baf59a0d",
+        "af3d70e2ee6d",
+        "2113383df2ba",
+        "412013b75f78"
+      ]
     },
     "3fbc6f926ebeb286": {
       "topic": "Campbell's Snacks Yellow Fish Business Strategy",
@@ -1579,13 +1618,16 @@
         "fde4916d5ccd",
         "f4842eab5a09",
         "2e831f5cd7f7",
-        "eb8b921941a9"
+        "eb8b921941a9",
+        "1f55926c04fd",
+        "ed83ec483b4f",
+        "dd27d5949f82"
       ],
       "created_at": "2026-06-08T18:38:23.502262+00:00",
-      "last_escalated_size": 13,
-      "last_escalated_at": "2026-06-08T23:52:51.212770+00:00",
+      "last_escalated_size": 16,
+      "last_escalated_at": "2026-06-09T02:11:21.051566+00:00",
       "picks_file": "picks/picks-2026-06-08-2105.md",
-      "why_text": "A sitting president showing up to the NBA Finals at Madison Square Garden is a culture collision of the highest order \u2014 the league that spent years navigating its fraught relationship with Trump's base is now hosting him at its biggest stage. The Knicks are finally back in the Finals, MSG is at full fever pitch, and the security footprint alone reshapes the entire event experience for fans. Even Whoopi Goldberg is defending his right to be there, which tells you how much the vibe around Trump and sports has shifted since 2020.\n**Update 5:46 PM CT:** Game 3 is now underway at a sold-out MSG, where fans began lining up early for what's shaping up to be the hottest ticket in New York in decades \u2014 the Knicks hosting an NBA Finals game for the first time in 25 years, with the Spurs favored by most models but the home crowd ready to make that number irrelevant.\n**Update 6:53 PM CT:** Cardi B is performing the halftime show tonight at MSG, adding a full-blown pop culture moment to an already electric Finals game \u2014 a Bronx native headlining the biggest Knicks game in a generation is the kind of detail that writes itself. Meanwhile, New York enters Game 3 with a chance to go up 3-0 and effectively close the door on the Spurs, making tonight one of the highest-stakes home games the Garden has hosted in years.",
+      "why_text": "A sitting president showing up to the NBA Finals at Madison Square Garden is a culture collision of the highest order \u2014 the league that spent years navigating its fraught relationship with Trump's base is now hosting him at its biggest stage. The Knicks are finally back in the Finals, MSG is at full fever pitch, and the security footprint alone reshapes the entire event experience for fans. Even Whoopi Goldberg is defending his right to be there, which tells you how much the vibe around Trump and sports has shifted since 2020.\n**Update 5:46 PM CT:** Game 3 is now underway at a sold-out MSG, where fans began lining up early for what's shaping up to be the hottest ticket in New York in decades \u2014 the Knicks hosting an NBA Finals game for the first time in 25 years, with the Spurs favored by most models but the home crowd ready to make that number irrelevant.\n**Update 6:53 PM CT:** Cardi B is performing the halftime show tonight at MSG, adding a full-blown pop culture moment to an already electric Finals game \u2014 a Bronx native headlining the biggest Knicks game in a generation is the kind of detail that writes itself. Meanwhile, New York enters Game 3 with a chance to go up 3-0 and effectively close the door on the Spurs, making tonight one of the highest-stakes home games the Garden has hosted in years.\n**Update 9:12 PM CT:** Spike Lee showed up to MSG in a Knicks jersey signed by Pope Leo XIV, turning his courtside seat into its own cultural moment \u2014 the lifelong fan and Garden fixture adding a layer of surreal New York energy to an already loaded night. Meanwhile, Spurs rookie AJ Dybantsa, the most hyped first-year player since LeBron, is drawing comparisons to San Antonio's own Tim Duncan in his Finals debut, giving the road team its own compelling narrative heading into the fourth quarter.",
       "last_escalated_item_ids": [
         "d69f396971a8",
         "438b72a26564",
@@ -1599,7 +1641,10 @@
         "fde4916d5ccd",
         "f4842eab5a09",
         "2e831f5cd7f7",
-        "eb8b921941a9"
+        "eb8b921941a9",
+        "1f55926c04fd",
+        "ed83ec483b4f",
+        "dd27d5949f82"
       ]
     },
     "55b0d2f8cd3a1858": {
@@ -2426,7 +2471,134 @@
       "created_at": "2026-06-08T23:53:28.490755+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1aed356b774a48c4": {
+      "topic": "2026 FIFA World Cup Mexico City Music Performances",
+      "item_ids": [
+        "6e69ddc9b187",
+        "c8fbaed79148"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5297250c49f6d953": {
+      "topic": "Soccer Players Music Careers Interview",
+      "item_ids": [
+        "02e9fb2dfc5f"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "308f7afab627b48b": {
+      "topic": "Lesley Stahl 60 Minutes Firings Statement",
+      "item_ids": [
+        "61cb86345ee3"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "70150988c6fb61bf": {
+      "topic": "Netflix Heather Tilert VP Kids Family Promotion",
+      "item_ids": [
+        "2beff9c84f66"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5d64ab5bcd31da33": {
+      "topic": "Mercor Brendan Foody Sequoia Valuation Criticism",
+      "item_ids": [
+        "d2fe95fff064"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "67ced07edba533fe": {
+      "topic": "Instagram Grid Reordering Feature",
+      "item_ids": [
+        "9bcfa1ed1ffc"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "726f36efd18dfc03": {
+      "topic": "FCC Amazon Leo Satellite Broadband Deadline Lifted",
+      "item_ids": [
+        "427d7d45d454"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a242fb45c91f438b": {
+      "topic": "Perplexity AI IPO Plans 2028",
+      "item_ids": [
+        "c5bbfc62544e"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "025ba97e8aece7c3": {
+      "topic": "China Technology Innovation Global Leadership Analysis",
+      "item_ids": [
+        "42a68c21d428"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "160891b9f43b60b6": {
+      "topic": "EV Maker Self-Driving Technology Claims",
+      "item_ids": [
+        "2b7e99fa9334"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "95f583b26784c6c1": {
+      "topic": "NBA Finals AJ Dybantsa Draft Analysis",
+      "item_ids": [
+        "2c609e0a4dd2"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "718bf231850a91d6": {
+      "topic": "Oatly China Business Buyout Consideration",
+      "item_ids": [
+        "addae8a56887"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e9fcddb24a21fb0f": {
+      "topic": "Sun Life Asia Financial Resilience Index",
+      "item_ids": [
+        "fdce63abb248"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9890444da29ce120": {
+      "topic": "Australia Consumer Confidence June Decline",
+      "item_ids": [
+        "2a20abdb5306"
+      ],
+      "created_at": "2026-06-09T02:12:01.579426+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-08T23:53:33.712187+00:00"
+  "last_checked": "2026-06-09T02:12:33.325090+00:00"
 }
