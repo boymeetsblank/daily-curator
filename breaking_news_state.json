@@ -1,78 +1,5 @@
 {
   "known_ids": [
-    "09f3b97a2f66",
-    "586a989e8ce8",
-    "e62b759b8c2a",
-    "61eddf0a14c9",
-    "0adc14ccf2c0",
-    "c7fe711d0d55",
-    "22f474058ae2",
-    "b277e0636eb2",
-    "747fa598fcb1",
-    "e00d4d6d4b98",
-    "e55769fa57f0",
-    "4a0d2276733e",
-    "c7c57a6cb908",
-    "7b37652091b8",
-    "e0f2cbc1b6be",
-    "a6f67e978ccb",
-    "ba7bed20cd23",
-    "43c19db6001d",
-    "8cd004d302b1",
-    "303ece816ccb",
-    "7ee66a44c805",
-    "46af6a4207ac",
-    "ae1e37f7eb44",
-    "54c762fa30cd",
-    "e95909f6d46f",
-    "0274d2c44925",
-    "a60fd1e7248f",
-    "c136ff51b93e",
-    "b40cfb5d2a27",
-    "b84304815415",
-    "bf0099875323",
-    "d6d4658e2f26",
-    "9b500418a8af",
-    "45d156212442",
-    "cd9b8f5d8b2f",
-    "b6cfd067d06e",
-    "107778c0630d",
-    "aa52fa61bfb1",
-    "3a62697e6b3b",
-    "b97cf3896bc1",
-    "61cd35421366",
-    "abaa705373a3",
-    "17e3fd26a018",
-    "52d4ac26f76b",
-    "fca9edef436b",
-    "32a2e9b211fb",
-    "fcd0e573f76e",
-    "c963d3f09fc8",
-    "0d6f15e04d91",
-    "e9b5720da18e",
-    "13f5001827d5",
-    "1457b5e9d3b8",
-    "0ad2be85ad8a",
-    "0d2bad7dabd1",
-    "8e22e13a3064",
-    "034c1b638b49",
-    "896ac5271b7f",
-    "83eda59f0fb7",
-    "2e350f887de6",
-    "ed88adca31d5",
-    "e56e00543894",
-    "8c28fa584649",
-    "44b9d147627f",
-    "5bcfd2333caa",
-    "273973f091f8",
-    "d4f1c3a77f95",
-    "7c6829eefcee",
-    "0fc92cc4394e",
-    "439c0390672c",
-    "e4b89ccee6b8",
-    "dc613a4ddc29",
-    "9fe3c60182e2",
-    "a3ef47dc56bc",
     "d4df43fdb783",
     "4c4c38682748",
     "e57fc5235519",
@@ -499,284 +426,83 @@
     "16134132651d",
     "bda78ca38f5e",
     "24a249edee4e",
-    "243b23d91b70"
+    "243b23d91b70",
+    "91bfedc6f428",
+    "a860d6cfdc26",
+    "b1d7802bd372",
+    "6e88d0d670f8",
+    "c40d6e69f992",
+    "e3ba1c5cccf3",
+    "fef45eb01036",
+    "976bf0d1847c",
+    "1f7af0807da1",
+    "c918a1d4c6cb",
+    "f8cc935dac6e",
+    "d4a43e82a504",
+    "3a90706e041f",
+    "b83c2ffd13a0",
+    "c9e42da92ec7",
+    "80197cf4f64f",
+    "eadb7ab4a45e",
+    "b11f8f4c8fbb",
+    "d8a439fccb09",
+    "bbd27cebc1f4",
+    "2750fa5e1cb5",
+    "f00009868f4f",
+    "ed605bb2ef54",
+    "e7112686ac01",
+    "c53def9d61f7",
+    "34a21788ebfb",
+    "833a5ead2ff5",
+    "8ef726919b61",
+    "12394780179a",
+    "6bbed14085f2",
+    "635a8b0b3a88",
+    "600fe5717d25",
+    "c781927bd197",
+    "9ae21cb3cde5",
+    "01cc3e929efc",
+    "61c40da36735",
+    "98cd94c59288",
+    "8dfaddc79310",
+    "5054b1db2286",
+    "aab2467d819d",
+    "6c6f5bf60029",
+    "73cfcf3f9870",
+    "982bbc5a69f1",
+    "22baefb4daa2",
+    "96db449bdba2",
+    "8a492a604d01",
+    "48ac76fddab0",
+    "57b6d3e70d95",
+    "91c6bc0da9f0",
+    "e610afe1cd75",
+    "364f509272fc",
+    "b15b08977574",
+    "776810c56431",
+    "91c52ec8c9ac",
+    "910acfa6a57a",
+    "457ab9997be8",
+    "77fde7a0400d",
+    "cca27516f6ea",
+    "aea78544e3ad",
+    "2bab2e325118",
+    "35f1acb680d3",
+    "d6a1691d345f",
+    "55eb6bac38d2",
+    "77fde7a0400d",
+    "063c28e859bf",
+    "f575ef264578",
+    "a1832ba7b25e",
+    "9afa9cfb0efa",
+    "446a03507dd2",
+    "5b89145224ff",
+    "84735f4078d2",
+    "7992795f4558",
+    "3274e6b76147"
   ],
   "failed_ids": {},
   "live_clusters": {
-    "ce974afe63dbd176": {
-      "topic": "PUMA MB.05 Lo Team Bank Release",
-      "item_ids": [
-        "ede68e8d74f6"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d0fd391d03c6a05f": {
-      "topic": "Nike Kobe 8 Protro Shanghai Fireworks",
-      "item_ids": [
-        "ad4d18fcb7fc"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3c5af18c5844d9e6": {
-      "topic": "adidas Predator Sala Press Play Gaming Collab",
-      "item_ids": [
-        "a4870af3ef12"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5876033ce13bcce3": {
-      "topic": "Lanterns HBO Comic-Book Series",
-      "item_ids": [
-        "35b79179c3cb"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cb355c5ba8d92717": {
-      "topic": "Bowen Yang Hosts 2026 Jimmy Awards",
-      "item_ids": [
-        "42539ef4e29e"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bf91725f899d63ec": {
-      "topic": "Shinedown EI8HT Album Chart Success",
-      "item_ids": [
-        "32fb640a4088"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c97fc49b6a72e115": {
-      "topic": "Chris Brown Sensational Monalisa Songwriting Lawsuit Settlement",
-      "item_ids": [
-        "fa03bcc36a34",
-        "394210164cd1"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bf0f8776da01483d": {
-      "topic": "Shaboozey Cowboy Carter Album Interview",
-      "item_ids": [
-        "360787f8f1fb"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d8486074250bd957": {
-      "topic": "D\u00f3nal Finn Signs WME Representation",
-      "item_ids": [
-        "bc777bd5f239"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "921d96eb5bfc515a": {
-      "topic": "A Talent For Murder Helen Mirren Alden Ehrenreich Thriller",
-      "item_ids": [
-        "bc1ad805b34a"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "af697ce9e75bd6c3": {
-      "topic": "Netflix TV Charts Michael Jackson The Verdict Office Romance",
-      "item_ids": [
-        "a2a0e2b971da"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "71294bc04e08e246": {
-      "topic": "Naomi Ackie Joins They Follow David Robert Mitchell",
-      "item_ids": [
-        "74e0faff80b5"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1e91813a52747018": {
-      "topic": "Tech Companies Cheaper AI Models Adoption",
-      "item_ids": [
-        "c47fbc8c5e7f"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "00ee9436d118a6c0": {
-      "topic": "Semiconductor Shorts Trade Reversal",
-      "item_ids": [
-        "873d01e93582"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d9a4e652632a357b": {
-      "topic": "Kalshi Perpetual Contracts Trading Launch",
-      "item_ids": [
-        "1b9974220dea",
-        "3788f08a3d51",
-        "787b9ae77db1"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-09T22:57:22.042070+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "1b9974220dea",
-        "3788f08a3d51",
-        "787b9ae77db1"
-      ]
-    },
-    "b498c9e15d19852f": {
-      "topic": "Boeing Deliveries Stock Performance Analysis",
-      "item_ids": [
-        "bab1d9682bcd"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "844a7c990d8286e1": {
-      "topic": "AI Courtroom Technology Texas Case Study",
-      "item_ids": [
-        "a21451b75ae2"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6b62550d0d4dbef9": {
-      "topic": "A24 Backrooms Wallpaper Gen-Z Culture",
-      "item_ids": [
-        "878170a14162"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c49cfcb6405d03a1": {
-      "topic": "Nike Running Shoe Stability Design",
-      "item_ids": [
-        "29975fd18bbd"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2e0e2963ff227808": {
-      "topic": "NBA The Run Basketball Arcade Game Launch",
-      "item_ids": [
-        "3d8ff48d8fe4"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a36874ec4bebdfe3": {
-      "topic": "NBA 2026 HBCU Fellowship Program",
-      "item_ids": [
-        "85d3db5cf313"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3496fd419283f029": {
-      "topic": "NBA Finals Game 3 Spurs Knicks Analysis",
-      "item_ids": [
-        "cbd50194cef1",
-        "7e1b726b78a3",
-        "48f40eb8ce86",
-        "04233259ffdc",
-        "00e14d85ff6f",
-        "838b88805c42",
-        "8b6186493213",
-        "55aa96f5f560",
-        "b15976ddce63",
-        "51ab98a0fa96",
-        "74c391e789dc",
-        "67709e680f8f",
-        "b25766ea4838",
-        "b069afbedea1",
-        "efb13b1bcd0d",
-        "faaa096eec36",
-        "b04e4caf4cb6",
-        "d9f6702ab161",
-        "ad2292785c65",
-        "3b3c9ecd8c2a",
-        "fe1818030a78",
-        "67373c4a397f"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 22,
-      "last_escalated_at": "2026-06-10T18:37:15.188124+00:00",
-      "picks_file": "picks/picks-2026-06-10-0019.md",
-      "last_escalated_item_ids": [
-        "cbd50194cef1",
-        "7e1b726b78a3",
-        "48f40eb8ce86",
-        "04233259ffdc",
-        "00e14d85ff6f",
-        "838b88805c42",
-        "8b6186493213",
-        "55aa96f5f560",
-        "b15976ddce63",
-        "51ab98a0fa96",
-        "74c391e789dc",
-        "67709e680f8f",
-        "b25766ea4838",
-        "b069afbedea1",
-        "efb13b1bcd0d",
-        "faaa096eec36",
-        "b04e4caf4cb6",
-        "d9f6702ab161",
-        "ad2292785c65",
-        "3b3c9ecd8c2a",
-        "fe1818030a78",
-        "67373c4a397f"
-      ],
-      "why_text": "The Knicks are in the NBA Finals for the first time in decades, and the city is acting accordingly \u2014 the mayor is announcing outdoor watch parties, the NYPD is releasing security plans, and MSG is generating the kind of electric atmosphere that only New York can manufacture at this scale. On the court, the Spurs are making it interesting: their defensive rotations are forcing the Knicks into late-clock situations, putting pressure on Jalen Brunson to carry an offense that can't always afford to wait on him. This is the rare sports story where the tactical details and the cultural circus are equally compelling.\n**Update 11:53 PM CT:** The Knicks dropped Game 3 to snap their playoff winning streak, and the fallout is already messy off the court \u2014 the organization publicly called the mayor and NYPD 'party poopers' over restrictive security measures being put in place for Game 4 watch parties, a rare moment of the franchise punching at City Hall mid-series. Meanwhile, a viral KSAT piece featuring a New York native rooting for the Spurs is doing exactly what you'd expect on social media in a city that treats sports loyalty as a moral issue.\n**Update 7:02 AM CT:** With Game 4 now on the horizon, the on-court narrative is sharpening: the Knicks need to solve their slow-start problem that has repeatedly handed the Spurs early momentum, while the Times is making the case \u2014 backed by the defensive chess being played on both ends \u2014 that this series has the bones of a classic.\n**Update 1:38 PM CT:** The security standoff between MSG Sports and City Hall is now drawing international attention, with the BBC picking up the story as New York finalizes its Game 4 footprint \u2014 street closures, tightened Garden protocols, and watch party logistics that reflect both the scale of the moment and the friction between the franchise and local officials over how to manage it."
-    },
-    "cd8af533aad8497c": {
-      "topic": "Victor Wembanyama Spurs NBA Finals Game 3",
-      "item_ids": [
-        "d5681f10e37c",
-        "99c5081feec0",
-        "0c248488e971",
-        "f6a239b5053c",
-        "3dfab3bd4113"
-      ],
-      "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-09T21:25:27.301524+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "d5681f10e37c",
-        "99c5081feec0",
-        "0c248488e971",
-        "f6a239b5053c"
-      ]
-    },
     "72c9af06fb1f611a": {
       "topic": "St\u00fcssy Mountain Hardwear Gorp Gear Collaboration",
       "item_ids": [
@@ -974,7 +700,8 @@
     "b564061583355374": {
       "topic": "NCAA Sorbsy Texas Trial February 2027",
       "item_ids": [
-        "5bfacf1a90a7"
+        "5bfacf1a90a7",
+        "e7112686ac01"
       ],
       "created_at": "2026-06-09T21:26:26.687722+00:00",
       "last_escalated_size": 0,
@@ -1417,7 +1144,8 @@
     "d653170e022b0a1c": {
       "topic": "Drone Technology Water Rescue Drowning Prevention",
       "item_ids": [
-        "7f22e4621cbc"
+        "7f22e4621cbc",
+        "600fe5717d25"
       ],
       "created_at": "2026-06-09T22:58:07.423549+00:00",
       "last_escalated_size": 0,
@@ -1471,7 +1199,8 @@
     "6c0f6cd30766be66": {
       "topic": "Charles Barkley NBA Finals Obscene Remark Criticism",
       "item_ids": [
-        "b2052a988739"
+        "b2052a988739",
+        "364f509272fc"
       ],
       "created_at": "2026-06-09T22:58:07.423549+00:00",
       "last_escalated_size": 0,
@@ -2025,7 +1754,8 @@
     "48f24d848d452d06": {
       "topic": "NBA Finals Game 4 Spurs Knicks Ticket Prices",
       "item_ids": [
-        "a5a4750d9eeb"
+        "a5a4750d9eeb",
+        "57b6d3e70d95"
       ],
       "created_at": "2026-06-10T12:02:51.642282+00:00",
       "last_escalated_size": 0,
@@ -2385,11 +2115,21 @@
     "ab296e523d67a215": {
       "topic": "2026 FIFA World Cup Viewing Guide",
       "item_ids": [
-        "2d848235bdf5"
+        "2d848235bdf5",
+        "91bfedc6f428",
+        "b11f8f4c8fbb",
+        "c53def9d61f7"
       ],
       "created_at": "2026-06-10T16:01:34.424946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-10T21:13:19.000249+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "2d848235bdf5",
+        "91bfedc6f428",
+        "b11f8f4c8fbb",
+        "c53def9d61f7"
+      ]
     },
     "437559dd04e5139a": {
       "topic": "Billy Ray Cyrus Vocal Paralysis Sepsis",
@@ -3137,7 +2877,8 @@
     "395bff81e3766b33": {
       "topic": "World Cup Travel Business Impact US Economy",
       "item_ids": [
-        "383a0055c4ff"
+        "383a0055c4ff",
+        "aab2467d819d"
       ],
       "created_at": "2026-06-10T18:38:07.420529+00:00",
       "last_escalated_size": 0,
@@ -3241,7 +2982,565 @@
       "created_at": "2026-06-10T18:38:07.420529+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "ef82fa9797d5ae85": {
+      "topic": "LE SSERAFIM x ILLIT x KATSEYE Collaboration Music Video",
+      "item_ids": [
+        "a860d6cfdc26"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4790763538fd7034": {
+      "topic": "Travis Scott Nike Total 90 Collection Release",
+      "item_ids": [
+        "b1d7802bd372"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7400f628a6d78a88": {
+      "topic": "Broken Arm Salomon Collaboration Silhouette",
+      "item_ids": [
+        "6e88d0d670f8"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cb81a5ace4ec599f": {
+      "topic": "Best Dress Shorts for Men 2026 Guide",
+      "item_ids": [
+        "c40d6e69f992"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "81137e9c6c7b7635": {
+      "topic": "Nick Offerman Toxic Masculinity Interview",
+      "item_ids": [
+        "e3ba1c5cccf3"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8ed018f7ed57e74d": {
+      "topic": "Slow Pulp New Album Tour Announcement",
+      "item_ids": [
+        "fef45eb01036"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "21732ef753b9c15d": {
+      "topic": "Ariana Grande Eternal Sunshine Tour Streaming Impact",
+      "item_ids": [
+        "976bf0d1847c"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e478e4a7a2f8531b": {
+      "topic": "Julieta Venegas Soccer Song Criticism Response",
+      "item_ids": [
+        "1f7af0807da1"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "636cf1e8273a6d86": {
+      "topic": "Megan Thee Stallion David Guetta FIFA World Cup 2026 Anthem",
+      "item_ids": [
+        "c918a1d4c6cb"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b401d07f726f1c90": {
+      "topic": "Mouse On Mars Lee Scratch Perry Final Project Completion",
+      "item_ids": [
+        "f8cc935dac6e"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6d5b383d6e216d3a": {
+      "topic": "Billboard Country Live 2026 Under Armour Performance",
+      "item_ids": [
+        "d4a43e82a504"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0ff0377b243a8664": {
+      "topic": "Freak Nasty 30th Anniversary Da Dip Ranking",
+      "item_ids": [
+        "3a90706e041f"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "96fea5a51af0678b": {
+      "topic": "Model Lawsuit Against Kanye West Music Video Set Behavior",
+      "item_ids": [
+        "b83c2ffd13a0"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7615bc5948cf81de": {
+      "topic": "Rush Night Two Fifty-Something Tour Concert Review",
+      "item_ids": [
+        "c9e42da92ec7"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4f6a69e257b041a1": {
+      "topic": "Sarah Sherman HBO Special Comedy Interview",
+      "item_ids": [
+        "80197cf4f64f"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4388e41f7f808975": {
+      "topic": "Euphoria Sam Levinson Cast Refresh Strategy Interview",
+      "item_ids": [
+        "eadb7ab4a45e"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1858a30247c629fe": {
+      "topic": "Art Directors Guild Martin Scorsese AI Endorsement Criticism",
+      "item_ids": [
+        "d8a439fccb09"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "08ae9f0bb81b05ae": {
+      "topic": "Baywatch John Beckwith Casting Announcement",
+      "item_ids": [
+        "bbd27cebc1f4"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f76e06ade48e2aea": {
+      "topic": "Patrick Mahomes Contract Rework Over $500M Deal",
+      "item_ids": [
+        "2750fa5e1cb5"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8da6e30203bcb17a": {
+      "topic": "LeBron James GOAT Debate Statement",
+      "item_ids": [
+        "f00009868f4f"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0e09bf5a316d749d": {
+      "topic": "NC State Legal Claims Against LSU Wade Recruitment",
+      "item_ids": [
+        "ed605bb2ef54"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2aecbf783aa92f49": {
+      "topic": "CISA AI Security Bug Fix Timeline Mandate",
+      "item_ids": [
+        "34a21788ebfb"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0eba25f1b524f0b8": {
+      "topic": "Trump Surveillance Authority Unqualified Spy Chief Nomination",
+      "item_ids": [
+        "833a5ead2ff5"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3ac4c5632f32e3b3": {
+      "topic": "Meta Employee Immigration Detention During Job Loss",
+      "item_ids": [
+        "8ef726919b61"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4d497a5432401da2": {
+      "topic": "Tesla Battery Business Acquisition Interest",
+      "item_ids": [
+        "12394780179a"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3e589fc66c824e1b": {
+      "topic": "Amazon $17.5B Bank Loan AI Spending Continuation",
+      "item_ids": [
+        "6bbed14085f2"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3201ffba3384671d": {
+      "topic": "North Korean Hackers US Tech Industry Breaches CrowdStrike Report",
+      "item_ids": [
+        "635a8b0b3a88"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1deb004500623faa": {
+      "topic": "Valve Steam Gift Cards Physical Production Discontinuation Scammers",
+      "item_ids": [
+        "c781927bd197"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "61448ace048c8ef9": {
+      "topic": "Fable RPG Life Sim System Deep Dive",
+      "item_ids": [
+        "9ae21cb3cde5"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c590ac65f2d8c9d0": {
+      "topic": "Alien Isolation 2 Horror Game Tension Design",
+      "item_ids": [
+        "01cc3e929efc"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3fc82a137da0a85b": {
+      "topic": "Logitech Foldable Mouse Portable Design",
+      "item_ids": [
+        "61c40da36735"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c94dad0f5b105c1": {
+      "topic": "Oracle Q4 Earnings Beat Stock Drop $20B Raise",
+      "item_ids": [
+        "98cd94c59288"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63c93dcca8ad2653": {
+      "topic": "USDA Rollins Screwworm Pest Assessment Contradiction",
+      "item_ids": [
+        "8dfaddc79310"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8946df3c7b2530d3": {
+      "topic": "College Sticker Prices Top $100k 16 Schools Analysis",
+      "item_ids": [
+        "5054b1db2286"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f166875227691d62": {
+      "topic": "Social Security Administration Phone Helpline Wait Times Record Low",
+      "item_ids": [
+        "6c6f5bf60029"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d033169f60095b3c": {
+      "topic": "Mind Technology Fiscal 2027 Q1 Results",
+      "item_ids": [
+        "73cfcf3f9870"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3a69d97ced9964a3": {
+      "topic": "Technology Impact Offshore Racing Analysis",
+      "item_ids": [
+        "982bbc5a69f1"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c383b6829d6a8c96": {
+      "topic": "NWPX Infrastructure Radial Bending Joint Technology Installation",
+      "item_ids": [
+        "22baefb4daa2"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "97e813dce7376e99": {
+      "topic": "Seagate Entegris Microchip Technology Stock Performance",
+      "item_ids": [
+        "96db449bdba2"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5b783da56a624e45": {
+      "topic": "Advanced Braking Technology ASX Opportunity Analysis",
+      "item_ids": [
+        "8a492a604d01"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f01f6dd381880d37": {
+      "topic": "WhatsApp iOS iPadOS Support Discontinuation 2026",
+      "item_ids": [
+        "48ac76fddab0"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d28eb825951413f7": {
+      "topic": "Warriors NBA Draft Prospect Hosting Offseason Moves",
+      "item_ids": [
+        "91c6bc0da9f0"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2d884cc6c92ba08b": {
+      "topic": "Suns NBA Draft Trade Up Prospect Targets",
+      "item_ids": [
+        "e610afe1cd75"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d89788e38e1b9be3": {
+      "topic": "Knicks Owner James Dolan Victor Wembanyama Foul Fiasco",
+      "item_ids": [
+        "b15b08977574"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f4733a3399e24e53": {
+      "topic": "Build a Business Entrepreneur Archives",
+      "item_ids": [
+        "776810c56431"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ce28a4b3dbb4ae6a": {
+      "topic": "ChatGPT Entrepreneur Archives",
+      "item_ids": [
+        "91c52ec8c9ac"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aa4e6de8c6a4f53f": {
+      "topic": "Arkansas Entrepreneur Archives",
+      "item_ids": [
+        "910acfa6a57a"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8243a82f5a652c5a": {
+      "topic": "$280 Million Business Sale Early-Stage Investing Advice",
+      "item_ids": [
+        "457ab9997be8"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e48eac11023dbb32": {
+      "topic": "Oracle Q4 Earnings Cloud Sales Miss",
+      "item_ids": [
+        "77fde7a0400d"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "05ff4d1802dc8c4f": {
+      "topic": "Small Business Focus Arlington Organizing Service",
+      "item_ids": [
+        "cca27516f6ea"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "004077a51026e219": {
+      "topic": "Formula One Business Leadership Lessons Axios Live",
+      "item_ids": [
+        "aea78544e3ad"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6d803ca50c0ad1cc": {
+      "topic": "NFIB Maryland Small Business Optimism Index May",
+      "item_ids": [
+        "35f1acb680d3"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "641cfbd999bb95f8": {
+      "topic": "NC District Export Council UNCW Cameron Business Partnership",
+      "item_ids": [
+        "d6a1691d345f"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "48231bbe95130247": {
+      "topic": "Alberta Fortune 500 Oil Pipeline Financing Discussion",
+      "item_ids": [
+        "55eb6bac38d2"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5deb3b9b5e4c5d56": {
+      "topic": "One Nation Financial Reports Missing Assets Accountability",
+      "item_ids": [
+        "77fde7a0400d"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ef1833ba6592c2eb": {
+      "topic": "UK Public-Private Nature Fund $86M Landscape Restoration",
+      "item_ids": [
+        "063c28e859bf"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "628037212cfaff2b": {
+      "topic": "Gran Turismo 7 June Update BMW Ferrari Free Racers",
+      "item_ids": [
+        "f575ef264578"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "629b6742c9843d85": {
+      "topic": "Kimmel Twitter Trending",
+      "item_ids": [
+        "a1832ba7b25e"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f4f808fa6de879e0": {
+      "topic": "Inflation Twitter Trending",
+      "item_ids": [
+        "9afa9cfb0efa"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b3d1e159199fb78a": {
+      "topic": "ActBlue Twitter Trending",
+      "item_ids": [
+        "446a03507dd2"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c0b4faebd424f768": {
+      "topic": "#CantAffordTrump Twitter Trending",
+      "item_ids": [
+        "5b89145224ff"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "70e6ee343d1e83eb": {
+      "topic": "$ORCL Stock Twitter Trending",
+      "item_ids": [
+        "84735f4078d2"
+      ],
+      "created_at": "2026-06-10T21:14:16.958664+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-10T18:38:18.762058+00:00"
+  "last_checked": "2026-06-10T21:14:16.979868+00:00"
 }
