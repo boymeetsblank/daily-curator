@@ -1,25 +1,5 @@
 {
   "known_ids": [
-    "6ab3edb0fbe6",
-    "c1d6e8515ba3",
-    "891974e112ab",
-    "9b9e7d4f693f",
-    "f9743e5152b3",
-    "6f6f6362b23c",
-    "ed1ec9675868",
-    "735d44934baf",
-    "dea21a69c0d9",
-    "b87330c375b9",
-    "37922078e1ce",
-    "84d5d59a9728",
-    "ee2f0d8153ce",
-    "61472893ac7c",
-    "39d992b6df08",
-    "136668072077",
-    "025d16af854d",
-    "5d7a9ad6109c",
-    "60cb3e37612f",
-    "09e47744fc6a",
     "dc2d9a0f4b90",
     "060ac671fabd",
     "b91ce8e71d69",
@@ -499,81 +479,44 @@
     "8b2a1688f4cd",
     "29fdaff96154",
     "a9a38efae323",
-    "2c78fee101a2"
+    "2c78fee101a2",
+    "838b88805c42",
+    "0e5d934ada8e",
+    "663794cab675",
+    "242c99c32b1d",
+    "80c15e2312cc",
+    "ced931c1e286",
+    "1baa8b97dcd9",
+    "67edb136df48",
+    "143971d1ccc6",
+    "8b6186493213",
+    "55aa96f5f560",
+    "7885e0c4db77",
+    "b15976ddce63",
+    "51ab98a0fa96",
+    "9808af2e810d",
+    "d9bb37d0da3f",
+    "8314472a5940",
+    "63728819d1c6",
+    "b5effef21668",
+    "4d41dc02eef4"
   ],
   "failed_ids": {
-    "45a6e2256542": "2026-06-09T19:49:42.560671+00:00",
-    "c4a6c25de30d": "2026-06-09T19:49:42.560671+00:00",
-    "5065fc072f2c": "2026-06-09T19:49:42.560671+00:00",
-    "a6a4f8ed40e0": "2026-06-09T19:49:42.560671+00:00",
-    "336cce8f56eb": "2026-06-09T19:49:42.560671+00:00",
-    "4dc549b89a3b": "2026-06-09T19:49:42.560671+00:00",
-    "0d18eead2a63": "2026-06-09T19:49:42.560671+00:00",
-    "3e98dc885da2": "2026-06-09T19:49:42.560671+00:00",
-    "9406ab1047d0": "2026-06-09T19:49:42.560671+00:00",
-    "81701897fc68": "2026-06-09T19:49:42.560671+00:00",
-    "d11fcf34605a": "2026-06-09T19:49:42.560671+00:00",
-    "9107b7d16be6": "2026-06-09T19:49:42.560671+00:00",
-    "d75ff50ae867": "2026-06-09T19:49:42.560671+00:00",
-    "d02d5eea3f60": "2026-06-09T19:49:42.560671+00:00",
-    "45eb180255da": "2026-06-09T19:49:42.560671+00:00",
-    "3255b0d82741": "2026-06-09T19:49:42.560671+00:00",
-    "58971546026e": "2026-06-09T19:49:42.560671+00:00",
-    "d31975f21a4a": "2026-06-09T19:49:42.560671+00:00",
-    "9fd8089d904b": "2026-06-09T19:49:42.560671+00:00",
-    "a72b387f11f5": "2026-06-09T19:49:42.560671+00:00",
-    "f18a8e24f04a": "2026-06-09T19:49:42.560671+00:00",
-    "1775b01f724c": "2026-06-09T19:49:42.560671+00:00",
-    "438bed2c1374": "2026-06-09T19:49:42.560671+00:00",
-    "10ca98da87a4": "2026-06-09T19:49:42.560671+00:00",
-    "ee535adabb9c": "2026-06-09T19:49:42.560671+00:00",
-    "fda20dc1b80a": "2026-06-09T19:49:42.560671+00:00",
-    "311b6c81dcc8": "2026-06-09T19:49:42.560671+00:00",
-    "5966a0a0a15f": "2026-06-09T19:49:42.560671+00:00",
-    "e6ccf13d5ccf": "2026-06-09T19:49:42.560671+00:00",
-    "4c4d6c4536c0": "2026-06-09T19:49:42.560671+00:00",
     "cee7749ef914": "2026-06-09T22:57:22.042070+00:00",
     "98e740afcb62": "2026-06-09T22:57:22.042070+00:00",
-    "ee4979beed97": "2026-06-09T22:57:22.042070+00:00"
+    "ee4979beed97": "2026-06-09T22:57:22.042070+00:00",
+    "a2ab7861a834": "2026-06-10T00:18:25.821382+00:00",
+    "a263f8e0a11f": "2026-06-10T00:18:25.821382+00:00",
+    "dc953a93844e": "2026-06-10T00:18:25.821382+00:00",
+    "f273612921e8": "2026-06-10T00:18:25.821382+00:00",
+    "b20379baa2f6": "2026-06-10T00:18:25.821382+00:00",
+    "1e4edea9aa86": "2026-06-10T00:18:25.821382+00:00",
+    "48cc31da48a9": "2026-06-10T00:18:25.821382+00:00",
+    "d343a7608b41": "2026-06-10T00:18:25.821382+00:00",
+    "66fc222b4f94": "2026-06-10T00:18:25.821382+00:00",
+    "92b43b14bef6": "2026-06-10T00:18:25.821382+00:00"
   },
   "live_clusters": {
-    "529f9c40c08a63b0": {
-      "topic": "Billboard Hot 100 Top 10 June 13 2026",
-      "item_ids": [
-        "7b90d504bb6a",
-        "f66806712b60"
-      ],
-      "created_at": "2026-06-08T23:53:28.490755+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1ae08065f0ab1ede": {
-      "topic": "Max Winkler Director Projects Love Story Monster Ed Gein",
-      "item_ids": [
-        "27b74ef36a88"
-      ],
-      "created_at": "2026-06-08T23:53:28.490755+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6085ec4b4deb2756": {
-      "topic": "2026 NBA Player Comparisons Kobe Bryant",
-      "item_ids": [
-        "c5b435d95cf5"
-      ],
-      "created_at": "2026-06-08T23:53:28.490755+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "81377197d1d68c1f": {
-      "topic": "Alibaba CEO AI Business Unit Restructuring",
-      "item_ids": [
-        "4959448e7f25"
-      ],
-      "created_at": "2026-06-08T23:53:28.490755+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "1aed356b774a48c4": {
       "topic": "2026 FIFA World Cup Mexico City Music Performances",
       "item_ids": [
@@ -1109,11 +1052,19 @@
       "topic": "Audi Q7 BMW X5 Luxury SUV Competition",
       "item_ids": [
         "bdd666fceb3e",
-        "af8221cd213b"
+        "af8221cd213b",
+        "9808af2e810d"
       ],
       "created_at": "2026-06-09T12:50:38.496173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-10T00:18:25.821382+00:00",
+      "picks_file": "picks/picks-2026-06-10-0019.md",
+      "why_text": "The Audi Q7 and BMW X5 have long defined the benchmark for premium family SUVs, but reliability rankings and fresh competition are reshaping the conversation. A new Mazda inline-six challenger entering the segment at $25,000 less is forcing buyers to ask whether the German badge premium is still worth it. At a moment when luxury buyers are increasingly value-conscious, the old assumptions about who owns this segment are cracking.",
+      "last_escalated_item_ids": [
+        "bdd666fceb3e",
+        "af8221cd213b",
+        "9808af2e810d"
+      ]
     },
     "3ec42651b08241d1": {
       "topic": "BMW Highway Assistant Hands-Free Driving Milestone",
@@ -2124,7 +2075,8 @@
     "ab28b5a37b7898b3": {
       "topic": "2026 NBA Mock Draft Adam Finkelstein Two-Round Forecast",
       "item_ids": [
-        "9fe3c60182e2"
+        "9fe3c60182e2",
+        "7885e0c4db77"
       ],
       "created_at": "2026-06-09T17:49:04.895234+00:00",
       "last_escalated_size": 0,
@@ -2497,18 +2449,30 @@
         "7e1b726b78a3",
         "48f40eb8ce86",
         "04233259ffdc",
-        "00e14d85ff6f"
+        "00e14d85ff6f",
+        "838b88805c42",
+        "8b6186493213",
+        "55aa96f5f560",
+        "b15976ddce63",
+        "51ab98a0fa96"
       ],
       "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-09T21:25:27.301524+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 10,
+      "last_escalated_at": "2026-06-10T00:18:25.821382+00:00",
+      "picks_file": "picks/picks-2026-06-10-0019.md",
       "last_escalated_item_ids": [
         "cbd50194cef1",
         "7e1b726b78a3",
         "48f40eb8ce86",
-        "04233259ffdc"
-      ]
+        "04233259ffdc",
+        "00e14d85ff6f",
+        "838b88805c42",
+        "8b6186493213",
+        "55aa96f5f560",
+        "b15976ddce63",
+        "51ab98a0fa96"
+      ],
+      "why_text": "The Knicks are in the NBA Finals for the first time in decades, and the city is acting accordingly \u2014 the mayor is announcing outdoor watch parties, the NYPD is releasing security plans, and MSG is generating the kind of electric atmosphere that only New York can manufacture at this scale. On the court, the Spurs are making it interesting: their defensive rotations are forcing the Knicks into late-clock situations, putting pressure on Jalen Brunson to carry an offense that can't always afford to wait on him. This is the rare sports story where the tactical details and the cultural circus are equally compelling."
     },
     "cd8af533aad8497c": {
       "topic": "Victor Wembanyama Spurs NBA Finals Game 3",
@@ -3345,12 +3309,76 @@
     "9a32537890c8c93e": {
       "topic": "Twitter Trending Artemis III Space Program",
       "item_ids": [
-        "2c78fee101a2"
+        "2c78fee101a2",
+        "143971d1ccc6"
       ],
       "created_at": "2026-06-09T22:58:07.423549+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "7b8b06716120a9d2": {
+      "topic": "Jack Schlossberg Responds to Madonna JFK Jr. Claims",
+      "item_ids": [
+        "0e5d934ada8e"
+      ],
+      "created_at": "2026-06-10T00:19:13.083532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1d6a6acde8cc4d91": {
+      "topic": "BRIT Awards 2027 Location Date Announcement",
+      "item_ids": [
+        "663794cab675"
+      ],
+      "created_at": "2026-06-10T00:19:13.083532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e9a22cb8d5ac1fd8": {
+      "topic": "In Memoriam Marc Maron Tribeca Festival Comedy",
+      "item_ids": [
+        "242c99c32b1d"
+      ],
+      "created_at": "2026-06-10T00:19:13.083532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9bdb282c99ce8b91": {
+      "topic": "America 250 Events Hollywood Birthday Celebrations",
+      "item_ids": [
+        "80c15e2312cc"
+      ],
+      "created_at": "2026-06-10T00:19:13.083532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b4ad1e4f020c30d0": {
+      "topic": "Rafael Nadal Rafa Netflix Series Emmy Revelations",
+      "item_ids": [
+        "ced931c1e286"
+      ],
+      "created_at": "2026-06-10T00:19:13.083532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9d073f4a2e7575f2": {
+      "topic": "Justin Ernest VC Startup Investment Strategy",
+      "item_ids": [
+        "1baa8b97dcd9"
+      ],
+      "created_at": "2026-06-10T00:19:13.083532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f720f0036d0aec8c": {
+      "topic": "Dr. Avi Loeb Space Technology Whistleblower Disclosure",
+      "item_ids": [
+        "67edb136df48"
+      ],
+      "created_at": "2026-06-10T00:19:13.083532+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-09T22:58:07.484179+00:00"
+  "last_checked": "2026-06-10T00:19:25.112110+00:00"
 }
