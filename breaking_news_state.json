@@ -1,23 +1,5 @@
 {
   "known_ids": [
-    "060a84be34f2",
-    "d5767efbb2bb",
-    "765afde83827",
-    "8e80f7c0d542",
-    "84b6f737cf5d",
-    "0398e051b25d",
-    "63d797e17d86",
-    "973a62be272d",
-    "5350c3eeae89",
-    "e5b9e6812e01",
-    "88c4221d3598",
-    "66a3e6d4bcac",
-    "6526b882c0db",
-    "de04eb725abf",
-    "b6f43a940ab5",
-    "526d966a8c90",
-    "cf5ab4e7c922",
-    "b5fa4cada795",
     "3ac27b3bd8f4",
     "d2affbd346a6",
     "98b2ce42809c",
@@ -499,7 +481,25 @@
     "f9afc6df11c5",
     "654e4e4bbc63",
     "f53eba918747",
-    "7153209a2bb5"
+    "7153209a2bb5",
+    "1b3d26a3344a",
+    "6757327d4061",
+    "2aa03ca8fded",
+    "3914692ac246",
+    "e97bd0dee9e1",
+    "75758b6f602e",
+    "2603bb62972b",
+    "39e2b496ea61",
+    "6b21325790c2",
+    "9617c50ac186",
+    "b069afbedea1",
+    "efb13b1bcd0d",
+    "6f788c846a8b",
+    "3577f3bcf501",
+    "91595f21c754",
+    "ad9616c8bee6",
+    "7592de336255",
+    "d80c89c5331c"
   ],
   "failed_ids": {
     "86a91fa3d41e": "2026-06-10T04:52:41.290817+00:00",
@@ -517,45 +517,25 @@
     "20cb4a7345eb": "2026-06-10T04:52:41.290817+00:00",
     "63ef2f040563": "2026-06-10T04:52:41.290817+00:00",
     "9283dbc10bc0": "2026-06-10T04:52:41.290817+00:00",
-    "135dfa3bb6cf": "2026-06-10T04:52:41.290817+00:00"
+    "135dfa3bb6cf": "2026-06-10T04:52:41.290817+00:00",
+    "767686a6b7a7": "2026-06-10T08:42:55.832836+00:00",
+    "dc765b5bacb6": "2026-06-10T08:42:55.832836+00:00",
+    "ef70a0f3d6c0": "2026-06-10T08:42:55.832836+00:00",
+    "bb95499d14ce": "2026-06-10T08:42:55.832836+00:00",
+    "621af146dfcd": "2026-06-10T08:42:55.832836+00:00",
+    "0e842c37d3aa": "2026-06-10T08:42:55.832836+00:00",
+    "373e81d55967": "2026-06-10T08:42:55.832836+00:00",
+    "3a8d4959fe65": "2026-06-10T08:42:55.832836+00:00",
+    "b98e06da1ea5": "2026-06-10T08:42:55.832836+00:00",
+    "5dd76d44797b": "2026-06-10T08:42:55.832836+00:00",
+    "21c54233aad6": "2026-06-10T08:42:55.832836+00:00",
+    "427deb845b29": "2026-06-10T08:42:55.832836+00:00",
+    "51782209ae9f": "2026-06-10T08:42:55.832836+00:00",
+    "5c11607cb9aa": "2026-06-10T08:42:55.832836+00:00",
+    "df5d4b41ecc3": "2026-06-10T08:42:55.832836+00:00",
+    "f151ca61637a": "2026-06-10T08:42:55.832836+00:00"
   },
   "live_clusters": {
-    "eca4f082733f8a77": {
-      "topic": "APOS Boss Vivek Couto Asia Media Business AI Strategy",
-      "item_ids": [
-        "25bc2d5cb170"
-      ],
-      "created_at": "2026-06-09T06:20:06.885570+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "142b0e2760d781c5": {
-      "topic": "Blink-182 Take Off Your Pants and Jacket 25th Anniversary Plans",
-      "item_ids": [
-        "53d0214da245"
-      ],
-      "created_at": "2026-06-09T06:20:06.885570+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b2e7e55eb8afb3ec": {
-      "topic": "Zepto IPO Filing Fast Growth Losses Valuation",
-      "item_ids": [
-        "d498476bbd4a"
-      ],
-      "created_at": "2026-06-09T06:20:06.885570+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "496c09685119134f": {
-      "topic": "Ninja Theory Project Mara Psychological Horror Game Cancellation",
-      "item_ids": [
-        "c975aacfd24b"
-      ],
-      "created_at": "2026-06-09T06:20:06.885570+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "314ccbb6289d836c": {
       "topic": "Reebok Eren Southpaw Instapump Fury 94 Manga Collab",
       "item_ids": [
@@ -1236,7 +1216,8 @@
     "26785ef371ffd658": {
       "topic": "Razer Seiren V3 Pro XLR Microphone",
       "item_ids": [
-        "d6c5ae3f8ab9"
+        "d6c5ae3f8ab9",
+        "2aa03ca8fded"
       ],
       "created_at": "2026-06-09T15:48:16.456171+00:00",
       "last_escalated_size": 0,
@@ -2335,7 +2316,9 @@
         "51ab98a0fa96",
         "74c391e789dc",
         "67709e680f8f",
-        "b25766ea4838"
+        "b25766ea4838",
+        "b069afbedea1",
+        "efb13b1bcd0d"
       ],
       "created_at": "2026-06-09T19:50:30.799291+00:00",
       "last_escalated_size": 13,
@@ -2428,7 +2411,8 @@
       "item_ids": [
         "93747f4fc228",
         "de5449c27786",
-        "fd06700f3c73"
+        "fd06700f3c73",
+        "2603bb62972b"
       ],
       "created_at": "2026-06-09T21:26:26.687722+00:00",
       "last_escalated_size": 3,
@@ -2823,7 +2807,8 @@
     "a469d1f82351d607": {
       "topic": "BMW iX3 Long Wheelbase 2027 Model",
       "item_ids": [
-        "ed181b3069c9"
+        "ed181b3069c9",
+        "6f788c846a8b"
       ],
       "created_at": "2026-06-09T21:26:26.687722+00:00",
       "last_escalated_size": 0,
@@ -2877,7 +2862,8 @@
     "1590ce199d816eb3": {
       "topic": "Summer House Season 10 Reunion Ratings Record Bravo",
       "item_ids": [
-        "1e486a5403c2"
+        "1e486a5403c2",
+        "d80c89c5331c"
       ],
       "created_at": "2026-06-09T22:58:07.423549+00:00",
       "last_escalated_size": 0,
@@ -3291,7 +3277,79 @@
       "created_at": "2026-06-10T04:53:19.825989+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "05a7b7f61bbbc98b": {
+      "topic": "Converse All Star Legacy Ox Retro Color Refresh",
+      "item_ids": [
+        "1b3d26a3344a"
+      ],
+      "created_at": "2026-06-10T08:43:31.323985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ea56cb951520b6a9": {
+      "topic": "Umbro HUF Summer 2026 Collaborative Collection",
+      "item_ids": [
+        "6757327d4061"
+      ],
+      "created_at": "2026-06-10T08:43:31.323985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ced53d869642d21a": {
+      "topic": "nonnative Leather Trooper Lace-Up Boots Release",
+      "item_ids": [
+        "3914692ac246"
+      ],
+      "created_at": "2026-06-10T08:43:31.323985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f2be6709fca33c29": {
+      "topic": "Blancpain Fifty Fathoms Tech World Oceans Day",
+      "item_ids": [
+        "e97bd0dee9e1"
+      ],
+      "created_at": "2026-06-10T08:43:31.323985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "78b8aee9bddd63ec": {
+      "topic": "Jos\u00e9 Carreras All-Star Stadium Concert Australia",
+      "item_ids": [
+        "75758b6f602e"
+      ],
+      "created_at": "2026-06-10T08:43:31.323985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "30a2b0ded2cad67d": {
+      "topic": "Sunny Side Of The Doc Festival Return 2026",
+      "item_ids": [
+        "39e2b496ea61"
+      ],
+      "created_at": "2026-06-10T08:43:31.323985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f3edbb672c73e120": {
+      "topic": "Rupert Everett Joins Fortitude Valley Australian Crime Drama",
+      "item_ids": [
+        "6b21325790c2"
+      ],
+      "created_at": "2026-06-10T08:43:31.323985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dca873ec5a039d48": {
+      "topic": "Best Sneakers to Cop Nike Salomon Summer 2026",
+      "item_ids": [
+        "9617c50ac186"
+      ],
+      "created_at": "2026-06-10T08:43:31.323985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-10T04:53:45.395273+00:00"
+  "last_checked": "2026-06-10T08:43:31.325197+00:00"
 }
