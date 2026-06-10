@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "dc2d9a0f4b90",
-    "060ac671fabd",
-    "b91ce8e71d69",
-    "edd7f2c83de4",
-    "3a000e49043f",
-    "044a47b52260",
-    "c44f69b38883",
-    "6e2f9d1625f2",
-    "a3dcaffe063a",
-    "61650991172f",
-    "f7aa51cf4de9",
-    "d61c63cfc0a7",
-    "b57ac823f2e3",
-    "6025772369b3",
-    "66efa84f4702",
     "060a84be34f2",
     "d5767efbb2bb",
     "765afde83827",
@@ -499,159 +484,42 @@
     "8314472a5940",
     "63728819d1c6",
     "b5effef21668",
-    "4d41dc02eef4"
+    "4d41dc02eef4",
+    "ece7807d9f35",
+    "de5449c27786",
+    "9eacbd42bcb5",
+    "6bd2a0e386cb",
+    "fd06700f3c73",
+    "2568b3c3c0a9",
+    "484ae3759a55",
+    "74c391e789dc",
+    "67709e680f8f",
+    "b25766ea4838",
+    "3dfab3bd4113",
+    "f9afc6df11c5",
+    "654e4e4bbc63",
+    "f53eba918747",
+    "7153209a2bb5"
   ],
   "failed_ids": {
-    "cee7749ef914": "2026-06-09T22:57:22.042070+00:00",
-    "98e740afcb62": "2026-06-09T22:57:22.042070+00:00",
-    "ee4979beed97": "2026-06-09T22:57:22.042070+00:00",
-    "a2ab7861a834": "2026-06-10T00:18:25.821382+00:00",
-    "a263f8e0a11f": "2026-06-10T00:18:25.821382+00:00",
-    "dc953a93844e": "2026-06-10T00:18:25.821382+00:00",
-    "f273612921e8": "2026-06-10T00:18:25.821382+00:00",
-    "b20379baa2f6": "2026-06-10T00:18:25.821382+00:00",
-    "1e4edea9aa86": "2026-06-10T00:18:25.821382+00:00",
-    "48cc31da48a9": "2026-06-10T00:18:25.821382+00:00",
-    "d343a7608b41": "2026-06-10T00:18:25.821382+00:00",
-    "66fc222b4f94": "2026-06-10T00:18:25.821382+00:00",
-    "92b43b14bef6": "2026-06-10T00:18:25.821382+00:00"
+    "86a91fa3d41e": "2026-06-10T04:52:41.290817+00:00",
+    "c7177cce458c": "2026-06-10T04:52:41.290817+00:00",
+    "af384d526ecd": "2026-06-10T04:52:41.290817+00:00",
+    "369cdab93df0": "2026-06-10T04:52:41.290817+00:00",
+    "9b7d088de712": "2026-06-10T04:52:41.290817+00:00",
+    "095c931f6ac4": "2026-06-10T04:52:41.290817+00:00",
+    "7a352a1fae4b": "2026-06-10T04:52:41.290817+00:00",
+    "155b674a03b2": "2026-06-10T04:52:41.290817+00:00",
+    "0ed303da1e8b": "2026-06-10T04:52:41.290817+00:00",
+    "6387fe403ca5": "2026-06-10T04:52:41.290817+00:00",
+    "f1f83554d0d1": "2026-06-10T04:52:41.290817+00:00",
+    "b66265fc4d99": "2026-06-10T04:52:41.290817+00:00",
+    "20cb4a7345eb": "2026-06-10T04:52:41.290817+00:00",
+    "63ef2f040563": "2026-06-10T04:52:41.290817+00:00",
+    "9283dbc10bc0": "2026-06-10T04:52:41.290817+00:00",
+    "135dfa3bb6cf": "2026-06-10T04:52:41.290817+00:00"
   },
   "live_clusters": {
-    "1aed356b774a48c4": {
-      "topic": "2026 FIFA World Cup Mexico City Music Performances",
-      "item_ids": [
-        "6e69ddc9b187",
-        "c8fbaed79148",
-        "bb61fbf6ea60"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-09T22:57:22.042070+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "6e69ddc9b187",
-        "c8fbaed79148",
-        "bb61fbf6ea60"
-      ]
-    },
-    "5297250c49f6d953": {
-      "topic": "Soccer Players Music Careers Interview",
-      "item_ids": [
-        "02e9fb2dfc5f"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "308f7afab627b48b": {
-      "topic": "Lesley Stahl 60 Minutes Firings Statement",
-      "item_ids": [
-        "61cb86345ee3"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "70150988c6fb61bf": {
-      "topic": "Netflix Heather Tilert VP Kids Family Promotion",
-      "item_ids": [
-        "2beff9c84f66"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d64ab5bcd31da33": {
-      "topic": "Mercor Brendan Foody Sequoia Valuation Criticism",
-      "item_ids": [
-        "d2fe95fff064"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "67ced07edba533fe": {
-      "topic": "Instagram Grid Reordering Feature",
-      "item_ids": [
-        "9bcfa1ed1ffc"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "726f36efd18dfc03": {
-      "topic": "FCC Amazon Leo Satellite Broadband Deadline Lifted",
-      "item_ids": [
-        "427d7d45d454",
-        "ae71f613627e"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a242fb45c91f438b": {
-      "topic": "Perplexity AI IPO Plans 2028",
-      "item_ids": [
-        "c5bbfc62544e"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "025ba97e8aece7c3": {
-      "topic": "China Technology Innovation Global Leadership Analysis",
-      "item_ids": [
-        "42a68c21d428"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "160891b9f43b60b6": {
-      "topic": "EV Maker Self-Driving Technology Claims",
-      "item_ids": [
-        "2b7e99fa9334"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "95f583b26784c6c1": {
-      "topic": "NBA Finals AJ Dybantsa Draft Analysis",
-      "item_ids": [
-        "2c609e0a4dd2"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "718bf231850a91d6": {
-      "topic": "Oatly China Business Buyout Consideration",
-      "item_ids": [
-        "addae8a56887"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e9fcddb24a21fb0f": {
-      "topic": "Sun Life Asia Financial Resilience Index",
-      "item_ids": [
-        "fdce63abb248"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9890444da29ce120": {
-      "topic": "Australia Consumer Confidence June Decline",
-      "item_ids": [
-        "2a20abdb5306"
-      ],
-      "created_at": "2026-06-09T02:12:01.579426+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "eca4f082733f8a77": {
       "topic": "APOS Boss Vivek Couto Asia Media Business AI Strategy",
       "item_ids": [
@@ -1053,7 +921,8 @@
       "item_ids": [
         "bdd666fceb3e",
         "af8221cd213b",
-        "9808af2e810d"
+        "9808af2e810d",
+        "f9afc6df11c5"
       ],
       "created_at": "2026-06-09T12:50:38.496173+00:00",
       "last_escalated_size": 3,
@@ -1184,7 +1053,8 @@
     "b2763db1cb96b778": {
       "topic": "Jay-Z 30th Anniversary Concerts Paris Los Angeles",
       "item_ids": [
-        "e77685512363"
+        "e77685512363",
+        "ece7807d9f35"
       ],
       "created_at": "2026-06-09T15:48:16.456171+00:00",
       "last_escalated_size": 0,
@@ -2076,11 +1946,19 @@
       "topic": "2026 NBA Mock Draft Adam Finkelstein Two-Round Forecast",
       "item_ids": [
         "9fe3c60182e2",
-        "7885e0c4db77"
+        "7885e0c4db77",
+        "484ae3759a55"
       ],
       "created_at": "2026-06-09T17:49:04.895234+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-10T04:52:41.290817+00:00",
+      "picks_file": "picks/picks-2026-06-10-0453.md",
+      "why_text": "With the Nets in full tank mode and likely holding top draft real estate again in 2026, mock draft season is already centering Brooklyn as a destination franchise \u2014 the kind of team scouts and analysts use as a proxy for 'who gets the best players.' This matters because it signals how the league's rebuild cycle is being narrativized: Brooklyn isn't just losing, it's being cast as the next great draft lottery winner, which shapes fan patience, front office leverage, and trade value right now. The prospects being linked to them tell us a lot about which players are rising in evaluator circles a full year before the draft.",
+      "last_escalated_item_ids": [
+        "9fe3c60182e2",
+        "7885e0c4db77",
+        "484ae3759a55"
+      ]
     },
     "5ef7dc4ae71553ec": {
       "topic": "NBA Finals Betting Analysis MedPage Today",
@@ -2454,11 +2332,14 @@
         "8b6186493213",
         "55aa96f5f560",
         "b15976ddce63",
-        "51ab98a0fa96"
+        "51ab98a0fa96",
+        "74c391e789dc",
+        "67709e680f8f",
+        "b25766ea4838"
       ],
       "created_at": "2026-06-09T19:50:30.799291+00:00",
-      "last_escalated_size": 10,
-      "last_escalated_at": "2026-06-10T00:18:25.821382+00:00",
+      "last_escalated_size": 13,
+      "last_escalated_at": "2026-06-10T04:52:41.290817+00:00",
       "picks_file": "picks/picks-2026-06-10-0019.md",
       "last_escalated_item_ids": [
         "cbd50194cef1",
@@ -2470,9 +2351,12 @@
         "8b6186493213",
         "55aa96f5f560",
         "b15976ddce63",
-        "51ab98a0fa96"
+        "51ab98a0fa96",
+        "74c391e789dc",
+        "67709e680f8f",
+        "b25766ea4838"
       ],
-      "why_text": "The Knicks are in the NBA Finals for the first time in decades, and the city is acting accordingly \u2014 the mayor is announcing outdoor watch parties, the NYPD is releasing security plans, and MSG is generating the kind of electric atmosphere that only New York can manufacture at this scale. On the court, the Spurs are making it interesting: their defensive rotations are forcing the Knicks into late-clock situations, putting pressure on Jalen Brunson to carry an offense that can't always afford to wait on him. This is the rare sports story where the tactical details and the cultural circus are equally compelling."
+      "why_text": "The Knicks are in the NBA Finals for the first time in decades, and the city is acting accordingly \u2014 the mayor is announcing outdoor watch parties, the NYPD is releasing security plans, and MSG is generating the kind of electric atmosphere that only New York can manufacture at this scale. On the court, the Spurs are making it interesting: their defensive rotations are forcing the Knicks into late-clock situations, putting pressure on Jalen Brunson to carry an offense that can't always afford to wait on him. This is the rare sports story where the tactical details and the cultural circus are equally compelling.\n**Update 11:53 PM CT:** The Knicks dropped Game 3 to snap their playoff winning streak, and the fallout is already messy off the court \u2014 the organization publicly called the mayor and NYPD 'party poopers' over restrictive security measures being put in place for Game 4 watch parties, a rare moment of the franchise punching at City Hall mid-series. Meanwhile, a viral KSAT piece featuring a New York native rooting for the Spurs is doing exactly what you'd expect on social media in a city that treats sports loyalty as a moral issue."
     },
     "cd8af533aad8497c": {
       "topic": "Victor Wembanyama Spurs NBA Finals Game 3",
@@ -2480,7 +2364,8 @@
         "d5681f10e37c",
         "99c5081feec0",
         "0c248488e971",
-        "f6a239b5053c"
+        "f6a239b5053c",
+        "3dfab3bd4113"
       ],
       "created_at": "2026-06-09T19:50:30.799291+00:00",
       "last_escalated_size": 4,
@@ -2541,11 +2426,20 @@
     "7c46246c58db6c00": {
       "topic": "Toy Story 5 Merchandise Campaign Brands",
       "item_ids": [
-        "93747f4fc228"
+        "93747f4fc228",
+        "de5449c27786",
+        "fd06700f3c73"
       ],
       "created_at": "2026-06-09T21:26:26.687722+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-10T04:52:41.290817+00:00",
+      "picks_file": "picks/picks-2026-06-10-0453.md",
+      "why_text": "Pixar's long-awaited fifth installment is landing as something rare: a legacy sequel that critics are placing alongside the original, not beneath it. The 'deeply profound' first reactions suggest Pixar has avoided the diminishing-returns trap that plagued Toy Story 4's reception, giving Disney a genuine cultural event rather than just a franchise cash-in. Taylor Swift crashing the premiere \u2014 and duetting with Randy Newman, the series' sonic soul \u2014 is the kind of unscripted pop-culture collision that turns a movie launch into a moment.",
+      "last_escalated_item_ids": [
+        "93747f4fc228",
+        "de5449c27786",
+        "fd06700f3c73"
+      ]
     },
     "52e70bd49251bb03": {
       "topic": "Adults Season 2 Release Date Guest Stars",
@@ -3378,7 +3272,26 @@
       "created_at": "2026-06-10T00:19:13.083532+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "9d47165bc41ecc8e": {
+      "topic": "Bill Cody Grand Ole Opry Announcer Death Obituary",
+      "item_ids": [
+        "9eacbd42bcb5",
+        "6bd2a0e386cb"
+      ],
+      "created_at": "2026-06-10T04:53:19.825989+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a1a7445a724b30d4": {
+      "topic": "Lucid Motors Executive Departure CEO Leadership Shakeup",
+      "item_ids": [
+        "2568b3c3c0a9"
+      ],
+      "created_at": "2026-06-10T04:53:19.825989+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-10T00:19:25.112110+00:00"
+  "last_checked": "2026-06-10T04:53:45.395273+00:00"
 }
