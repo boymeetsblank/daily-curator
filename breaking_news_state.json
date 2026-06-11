@@ -1,24 +1,5 @@
 {
   "known_ids": [
-    "bab1d9682bcd",
-    "21f2224ae08e",
-    "a21451b75ae2",
-    "878170a14162",
-    "29975fd18bbd",
-    "cdfd6169ee7b",
-    "3d8ff48d8fe4",
-    "85d3db5cf313",
-    "cbd50194cef1",
-    "d5681f10e37c",
-    "3507f9e7b1b6",
-    "863bb961c56e",
-    "d6a906e60bfe",
-    "b97210fc9ef3",
-    "6e6189ad4df5",
-    "c85e69c5eee0",
-    "e359e5c6f721",
-    "d81dec033680",
-    "2e97293036b6",
     "93747f4fc228",
     "3cf87a83398c",
     "16b16ee79022",
@@ -499,7 +480,26 @@
     "c63403189206",
     "3505eea7e86f",
     "6b055a86c04f",
-    "0cf63468418b"
+    "0cf63468418b",
+    "51701400d3a2",
+    "2b004de2f17d",
+    "b46798de79a2",
+    "e180aaf0b0b5",
+    "a7166dc42bd2",
+    "8c394e371390",
+    "751da0a7082f",
+    "dcec64680033",
+    "177e562fdc25",
+    "6699206ffcff",
+    "e621c19681d3",
+    "033408888428",
+    "1921828811a6",
+    "80e03fd33476",
+    "84081161e76e",
+    "5c6be20e7b9d",
+    "7bf34155aaa5",
+    "a4c45a0cda75",
+    "c617cf1af767"
   ],
   "failed_ids": {
     "e12720de23eb": "2026-06-10T23:00:48.511500+00:00",
@@ -513,72 +513,27 @@
     "843cde73ba36": "2026-06-10T23:00:48.511500+00:00",
     "a0e9b0f19021": "2026-06-10T23:00:48.511500+00:00",
     "1029e97303b2": "2026-06-10T23:00:48.511500+00:00",
-    "bbdff570d3d1": "2026-06-10T23:00:48.511500+00:00"
+    "bbdff570d3d1": "2026-06-10T23:00:48.511500+00:00",
+    "ce5d6189c1a5": "2026-06-11T00:25:09.047450+00:00",
+    "1c78074123b2": "2026-06-11T00:25:09.047450+00:00",
+    "b202d532c64e": "2026-06-11T00:25:09.047450+00:00",
+    "8b93bfcbb910": "2026-06-11T00:25:09.047450+00:00",
+    "3463d671a09e": "2026-06-11T00:25:09.047450+00:00",
+    "2a67f6485158": "2026-06-11T00:25:09.047450+00:00",
+    "b56560b311a5": "2026-06-11T00:25:09.047450+00:00",
+    "03a36962215e": "2026-06-11T00:25:09.047450+00:00",
+    "0ea559555433": "2026-06-11T00:25:09.047450+00:00",
+    "13d765e2dfb3": "2026-06-11T00:25:09.047450+00:00",
+    "996c72874963": "2026-06-11T00:25:09.047450+00:00",
+    "462e8509c95b": "2026-06-11T00:25:09.047450+00:00",
+    "0f37fadabe73": "2026-06-11T00:25:09.047450+00:00",
+    "9c78a012cbd0": "2026-06-11T00:25:09.047450+00:00",
+    "2a7578759362": "2026-06-11T00:25:09.047450+00:00",
+    "2243a83bb20d": "2026-06-11T00:25:09.047450+00:00",
+    "dd0111bc7f24": "2026-06-11T00:25:09.047450+00:00",
+    "7b6f89b288cd": "2026-06-11T00:25:09.047450+00:00"
   },
   "live_clusters": {
-    "7b8b06716120a9d2": {
-      "topic": "Jack Schlossberg Responds to Madonna JFK Jr. Claims",
-      "item_ids": [
-        "0e5d934ada8e"
-      ],
-      "created_at": "2026-06-10T00:19:13.083532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1d6a6acde8cc4d91": {
-      "topic": "BRIT Awards 2027 Location Date Announcement",
-      "item_ids": [
-        "663794cab675"
-      ],
-      "created_at": "2026-06-10T00:19:13.083532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e9a22cb8d5ac1fd8": {
-      "topic": "In Memoriam Marc Maron Tribeca Festival Comedy",
-      "item_ids": [
-        "242c99c32b1d"
-      ],
-      "created_at": "2026-06-10T00:19:13.083532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9bdb282c99ce8b91": {
-      "topic": "America 250 Events Hollywood Birthday Celebrations",
-      "item_ids": [
-        "80c15e2312cc"
-      ],
-      "created_at": "2026-06-10T00:19:13.083532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b4ad1e4f020c30d0": {
-      "topic": "Rafael Nadal Rafa Netflix Series Emmy Revelations",
-      "item_ids": [
-        "ced931c1e286"
-      ],
-      "created_at": "2026-06-10T00:19:13.083532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9d073f4a2e7575f2": {
-      "topic": "Justin Ernest VC Startup Investment Strategy",
-      "item_ids": [
-        "1baa8b97dcd9"
-      ],
-      "created_at": "2026-06-10T00:19:13.083532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f720f0036d0aec8c": {
-      "topic": "Dr. Avi Loeb Space Technology Whistleblower Disclosure",
-      "item_ids": [
-        "67edb136df48"
-      ],
-      "created_at": "2026-06-10T00:19:13.083532+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "9d47165bc41ecc8e": {
       "topic": "Bill Cody Grand Ole Opry Announcer Death Obituary",
       "item_ids": [
@@ -905,19 +860,26 @@
         "57b6d3e70d95",
         "d3a75545a5da",
         "cf84abe68a83",
-        "3a897c770489"
+        "3a897c770489",
+        "033408888428",
+        "1921828811a6",
+        "80e03fd33476"
       ],
       "created_at": "2026-06-10T12:02:51.642282+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-10T23:00:48.511500+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 8,
+      "last_escalated_at": "2026-06-11T00:25:09.047450+00:00",
+      "picks_file": "picks/picks-2026-06-11-0025.md",
       "last_escalated_item_ids": [
         "a5a4750d9eeb",
         "57b6d3e70d95",
         "d3a75545a5da",
         "cf84abe68a83",
-        "3a897c770489"
-      ]
+        "3a897c770489",
+        "033408888428",
+        "1921828811a6",
+        "80e03fd33476"
+      ],
+      "why_text": "The 2026 NBA Finals has become a full-blown cultural moment \u2014 Game 3's ratings were the highest since the Jordan era in '98, and now New York City is locked in ahead of a potential series-defining Game 4 at MSG. The Knicks, long the symbol of big-market heartbreak, are one win away from commanding control of the Finals against Wembanyama's Spurs, and the city is feeling it \u2014 no outdoor watch party outside the Garden speaks to the intensity being kept inside the building. Taylor Swift courtside watch, celebrity sightings, and a coaching decision on the generational Wembanyama are all feeding a news cycle that has NBA Finals relevance spilling far beyond sports."
     },
     "38247b5906c5dc89": {
       "topic": "Former NBA Player Sues Town Official Property Deed",
@@ -2979,7 +2941,98 @@
       "created_at": "2026-06-10T23:01:41.136327+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "bae97f4472f25ff4": {
+      "topic": "RuPaul Stop That Train Movie Review",
+      "item_ids": [
+        "51701400d3a2"
+      ],
+      "created_at": "2026-06-11T00:25:47.608810+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "81484b2ce88080af": {
+      "topic": "Steven Spielberg James Bond Director Comments",
+      "item_ids": [
+        "2b004de2f17d"
+      ],
+      "created_at": "2026-06-11T00:25:47.608810+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75134fd9cdb5dc25": {
+      "topic": "Happy Hours Katie Holmes Joshua Jackson Romcom",
+      "item_ids": [
+        "b46798de79a2"
+      ],
+      "created_at": "2026-06-11T00:25:47.608810+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dd951205090db9bb": {
+      "topic": "Radiohead Hamlet Hail to the Thief London Barbican",
+      "item_ids": [
+        "e180aaf0b0b5",
+        "a7166dc42bd2"
+      ],
+      "created_at": "2026-06-11T00:25:47.608810+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8f8612d7a85cd087": {
+      "topic": "Arena One AMC Theatres Live Shows Partnership",
+      "item_ids": [
+        "8c394e371390"
+      ],
+      "created_at": "2026-06-11T00:25:47.608810+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "557a3cf893e9f84f": {
+      "topic": "Taylor Swift Toy Story 5 Premiere Performance",
+      "item_ids": [
+        "751da0a7082f"
+      ],
+      "created_at": "2026-06-11T00:25:47.608810+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "930362988e938e79": {
+      "topic": "Taylor Stitch Grateful Dead Collection Release",
+      "item_ids": [
+        "dcec64680033"
+      ],
+      "created_at": "2026-06-11T00:25:47.608810+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9fdc4a1ea31cb7ac": {
+      "topic": "Kathy Bates Matlock Season 2 Finale Interview",
+      "item_ids": [
+        "177e562fdc25"
+      ],
+      "created_at": "2026-06-11T00:25:47.608810+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "679bd59f45768090": {
+      "topic": "Windows 11 June Update Improvements",
+      "item_ids": [
+        "6699206ffcff"
+      ],
+      "created_at": "2026-06-11T00:25:47.608810+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5eac0a16fdabc7a4": {
+      "topic": "Xbox CEO Margins Statement Staff Letter",
+      "item_ids": [
+        "e621c19681d3"
+      ],
+      "created_at": "2026-06-11T00:25:47.608810+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-10T23:01:41.158006+00:00"
+  "last_checked": "2026-06-11T00:25:56.228495+00:00"
 }
