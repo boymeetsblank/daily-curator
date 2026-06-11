@@ -1,26 +1,5 @@
 {
   "known_ids": [
-    "93747f4fc228",
-    "3cf87a83398c",
-    "16b16ee79022",
-    "b3e8d7326952",
-    "6a6286c1e4e2",
-    "a4f7e840bcdb",
-    "f66806712b60",
-    "5d536c49f5bf",
-    "68971c3a0481",
-    "027c346e5ddc",
-    "394210164cd1",
-    "16c4bc2553e2",
-    "6ca605e5f772",
-    "86a919eaf786",
-    "876607a2dd0b",
-    "18ffa46092a9",
-    "1fc40d84dc35",
-    "61bdf10c0437",
-    "99c5081feec0",
-    "ddedab66c39d",
-    "5bfacf1a90a7",
     "7d76d558f24f",
     "335f6ed2a4fb",
     "319ac296b989",
@@ -499,60 +478,51 @@
     "5c6be20e7b9d",
     "7bf34155aaa5",
     "a4c45a0cda75",
-    "c617cf1af767"
+    "c617cf1af767",
+    "7c8bc86ec06c",
+    "1131df10c79a",
+    "81fa79cd1d4b",
+    "796eb7e8bf83",
+    "232a7bc8d6e2",
+    "63edbbe966e8",
+    "85d17385aec0",
+    "27183ab83bc5",
+    "2e83c0b79620",
+    "4f46f6d5c2e1",
+    "d461f5dc0d2f",
+    "dbec5bfeab53",
+    "6be48b90d3c4",
+    "48eae618cdbb",
+    "8f82969ac5b6",
+    "fa65b28c28e6",
+    "9c33e50044a5",
+    "73804186adcc",
+    "87ea87fd4e9c",
+    "82da2e8eee0b",
+    "e704452d9d65"
   ],
   "failed_ids": {
-    "e12720de23eb": "2026-06-10T23:00:48.511500+00:00",
-    "b9c2125b80ab": "2026-06-10T23:00:48.511500+00:00",
-    "e7808b98cc36": "2026-06-10T23:00:48.511500+00:00",
-    "7b71c3db50fc": "2026-06-10T23:00:48.511500+00:00",
-    "86561c768444": "2026-06-10T23:00:48.511500+00:00",
-    "d8a3f73c5d54": "2026-06-10T23:00:48.511500+00:00",
-    "376e0cee72bf": "2026-06-10T23:00:48.511500+00:00",
-    "4c565c08002b": "2026-06-10T23:00:48.511500+00:00",
-    "843cde73ba36": "2026-06-10T23:00:48.511500+00:00",
-    "a0e9b0f19021": "2026-06-10T23:00:48.511500+00:00",
-    "1029e97303b2": "2026-06-10T23:00:48.511500+00:00",
-    "bbdff570d3d1": "2026-06-10T23:00:48.511500+00:00",
-    "ce5d6189c1a5": "2026-06-11T00:25:09.047450+00:00",
-    "1c78074123b2": "2026-06-11T00:25:09.047450+00:00",
-    "b202d532c64e": "2026-06-11T00:25:09.047450+00:00",
-    "8b93bfcbb910": "2026-06-11T00:25:09.047450+00:00",
-    "3463d671a09e": "2026-06-11T00:25:09.047450+00:00",
-    "2a67f6485158": "2026-06-11T00:25:09.047450+00:00",
-    "b56560b311a5": "2026-06-11T00:25:09.047450+00:00",
-    "03a36962215e": "2026-06-11T00:25:09.047450+00:00",
-    "0ea559555433": "2026-06-11T00:25:09.047450+00:00",
-    "13d765e2dfb3": "2026-06-11T00:25:09.047450+00:00",
-    "996c72874963": "2026-06-11T00:25:09.047450+00:00",
-    "462e8509c95b": "2026-06-11T00:25:09.047450+00:00",
-    "0f37fadabe73": "2026-06-11T00:25:09.047450+00:00",
-    "9c78a012cbd0": "2026-06-11T00:25:09.047450+00:00",
-    "2a7578759362": "2026-06-11T00:25:09.047450+00:00",
-    "2243a83bb20d": "2026-06-11T00:25:09.047450+00:00",
-    "dd0111bc7f24": "2026-06-11T00:25:09.047450+00:00",
-    "7b6f89b288cd": "2026-06-11T00:25:09.047450+00:00"
+    "58bf00bbacf8": "2026-06-11T05:08:27.252189+00:00",
+    "cd1a2f13f003": "2026-06-11T05:08:27.252189+00:00",
+    "759e38e9768d": "2026-06-11T05:08:27.252189+00:00",
+    "fe4e625528ab": "2026-06-11T05:08:27.252189+00:00",
+    "615fcb9ad5d9": "2026-06-11T05:08:27.252189+00:00",
+    "7024b8ac0a63": "2026-06-11T05:08:27.252189+00:00",
+    "36fd07c470be": "2026-06-11T05:08:27.252189+00:00",
+    "d9af196c898b": "2026-06-11T05:08:27.252189+00:00",
+    "0b4cc8567e62": "2026-06-11T05:08:27.252189+00:00",
+    "1d1c9a0c06d2": "2026-06-11T05:08:27.252189+00:00",
+    "06fcf56de95d": "2026-06-11T05:08:27.252189+00:00",
+    "6951d4506920": "2026-06-11T05:08:27.252189+00:00",
+    "c2edcfa449e4": "2026-06-11T05:08:27.252189+00:00",
+    "89b42ed018bd": "2026-06-11T05:08:27.252189+00:00",
+    "1b9b62d31e0f": "2026-06-11T05:08:27.252189+00:00",
+    "b928086c52ee": "2026-06-11T05:08:27.252189+00:00",
+    "03475a2d3c9a": "2026-06-11T05:08:27.252189+00:00",
+    "300f93a53f05": "2026-06-11T05:08:27.252189+00:00",
+    "7a33727d93b1": "2026-06-11T05:08:27.252189+00:00"
   },
   "live_clusters": {
-    "9d47165bc41ecc8e": {
-      "topic": "Bill Cody Grand Ole Opry Announcer Death Obituary",
-      "item_ids": [
-        "9eacbd42bcb5",
-        "6bd2a0e386cb"
-      ],
-      "created_at": "2026-06-10T04:53:19.825989+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a1a7445a724b30d4": {
-      "topic": "Lucid Motors Executive Departure CEO Leadership Shakeup",
-      "item_ids": [
-        "2568b3c3c0a9"
-      ],
-      "created_at": "2026-06-10T04:53:19.825989+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "05a7b7f61bbbc98b": {
       "topic": "Converse All Star Legacy Ox Retro Color Refresh",
       "item_ids": [
@@ -863,11 +833,21 @@
         "3a897c770489",
         "033408888428",
         "1921828811a6",
-        "80e03fd33476"
+        "80e03fd33476",
+        "7c8bc86ec06c",
+        "81fa79cd1d4b",
+        "796eb7e8bf83",
+        "232a7bc8d6e2",
+        "63edbbe966e8",
+        "dbec5bfeab53",
+        "6be48b90d3c4",
+        "48eae618cdbb",
+        "8f82969ac5b6",
+        "fa65b28c28e6"
       ],
       "created_at": "2026-06-10T12:02:51.642282+00:00",
-      "last_escalated_size": 8,
-      "last_escalated_at": "2026-06-11T00:25:09.047450+00:00",
+      "last_escalated_size": 18,
+      "last_escalated_at": "2026-06-11T05:08:27.252189+00:00",
       "picks_file": "picks/picks-2026-06-11-0025.md",
       "last_escalated_item_ids": [
         "a5a4750d9eeb",
@@ -877,9 +857,19 @@
         "3a897c770489",
         "033408888428",
         "1921828811a6",
-        "80e03fd33476"
+        "80e03fd33476",
+        "7c8bc86ec06c",
+        "81fa79cd1d4b",
+        "796eb7e8bf83",
+        "232a7bc8d6e2",
+        "63edbbe966e8",
+        "dbec5bfeab53",
+        "6be48b90d3c4",
+        "48eae618cdbb",
+        "8f82969ac5b6",
+        "fa65b28c28e6"
       ],
-      "why_text": "The 2026 NBA Finals has become a full-blown cultural moment \u2014 Game 3's ratings were the highest since the Jordan era in '98, and now New York City is locked in ahead of a potential series-defining Game 4 at MSG. The Knicks, long the symbol of big-market heartbreak, are one win away from commanding control of the Finals against Wembanyama's Spurs, and the city is feeling it \u2014 no outdoor watch party outside the Garden speaks to the intensity being kept inside the building. Taylor Swift courtside watch, celebrity sightings, and a coaching decision on the generational Wembanyama are all feeding a news cycle that has NBA Finals relevance spilling far beyond sports."
+      "why_text": "The 2026 NBA Finals has become a full-blown cultural moment \u2014 Game 3's ratings were the highest since the Jordan era in '98, and now New York City is locked in ahead of a potential series-defining Game 4 at MSG. The Knicks, long the symbol of big-market heartbreak, are one win away from commanding control of the Finals against Wembanyama's Spurs, and the city is feeling it \u2014 no outdoor watch party outside the Garden speaks to the intensity being kept inside the building. Taylor Swift courtside watch, celebrity sightings, and a coaching decision on the generational Wembanyama are all feeding a news cycle that has NBA Finals relevance spilling far beyond sports.\n**Update 12:09 AM CT:** Game 4 is no longer a preview \u2014 the Knicks just delivered it, staging the biggest comeback in NBA Finals history by erasing a 29-point deficit to beat the Spurs and take a commanding 3-1 series lead, with a flagrant foul on Wembanyama and a late De'Aaron Fox turnover sealing San Antonio's collapse as the celebrity-packed MSG crowd \u2014 Spike Lee, Adam Sandler, Timoth\u00e9e Chalamet and more \u2014 witnessed what may become the defining night of New York's championship run."
     },
     "38247b5906c5dc89": {
       "topic": "Former NBA Player Sues Town Official Property Deed",
@@ -1238,7 +1228,8 @@
         "2d848235bdf5",
         "91bfedc6f428",
         "b11f8f4c8fbb",
-        "c53def9d61f7"
+        "c53def9d61f7",
+        "27183ab83bc5"
       ],
       "created_at": "2026-06-10T16:01:34.424946+00:00",
       "last_escalated_size": 4,
@@ -1528,11 +1519,19 @@
       "topic": "NBA Trade Rumors Hornets All-Star Jaylen Brown",
       "item_ids": [
         "699404fb3e85",
-        "e14f2553b684"
+        "e14f2553b684",
+        "2e83c0b79620"
       ],
       "created_at": "2026-06-10T16:01:34.424946+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-11T05:08:27.252189+00:00",
+      "picks_file": "picks/picks-2026-06-11-0509.md",
+      "why_text": "Jaylen Brown's name surfacing in Hornets trade rumors is a genuine culture moment \u2014 he's not just an All-Star, he's the face of the Celtics' championship run and one of the most outspoken players in the league. Charlotte moving for a player of his caliber would signal a franchise-level reset, and the fact that even Jalen Hurts is being asked about it tells you how far outside basketball this conversation has traveled. This is the kind of rumor that reshapes conference power dynamics before a single phone call is confirmed.",
+      "last_escalated_item_ids": [
+        "699404fb3e85",
+        "e14f2553b684",
+        "2e83c0b79620"
+      ]
     },
     "079c0be04dbee8fb": {
       "topic": "RIL Business Archives",
@@ -2360,7 +2359,8 @@
     "61448ace048c8ef9": {
       "topic": "Fable RPG Life Sim System Deep Dive",
       "item_ids": [
-        "9ae21cb3cde5"
+        "9ae21cb3cde5",
+        "73804186adcc"
       ],
       "created_at": "2026-06-10T21:14:16.958664+00:00",
       "last_escalated_size": 0,
@@ -3032,7 +3032,43 @@
       "created_at": "2026-06-11T00:25:47.608810+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1d647f5f1dc62bb4": {
+      "topic": "BIGBANG World Stadium Tour Reunion",
+      "item_ids": [
+        "1131df10c79a"
+      ],
+      "created_at": "2026-06-11T05:09:19.974978+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2cacfc0ca211b190": {
+      "topic": "Ohtani LA Dodgers Non-Challenge Loss",
+      "item_ids": [
+        "85d17385aec0"
+      ],
+      "created_at": "2026-06-11T05:09:19.974978+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "47e2084340e9e204": {
+      "topic": "Opendoor India Exit AI Outsourcing Discussion",
+      "item_ids": [
+        "4f46f6d5c2e1"
+      ],
+      "created_at": "2026-06-11T05:09:19.974978+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ed0c2cff4f6bb244": {
+      "topic": "Anthropic Dario Amodei Direct Report Structure",
+      "item_ids": [
+        "d461f5dc0d2f"
+      ],
+      "created_at": "2026-06-11T05:09:19.974978+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-11T00:25:56.228495+00:00"
+  "last_checked": "2026-06-11T05:09:30.545449+00:00"
 }
