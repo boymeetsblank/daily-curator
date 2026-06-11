@@ -1,64 +1,5 @@
 {
   "known_ids": [
-    "45e289fd65b8",
-    "be2bc8cd5b93",
-    "dfbcedb6f3fd",
-    "dd754b2c90eb",
-    "cf331f10e092",
-    "3059a0f3cf6a",
-    "af20ce29b5e4",
-    "602492141f20",
-    "492627a71166",
-    "3d18918e9e56",
-    "9f9b64b0d574",
-    "e997b9901af5",
-    "0f74a7714493",
-    "18fcee2402b0",
-    "29e791948d65",
-    "3f1691cbd272",
-    "0175174d2303",
-    "e480b19c05c4",
-    "d9f6702ab161",
-    "699404fb3e85",
-    "ad2292785c65",
-    "28913f0f3a83",
-    "f2ef23d927e6",
-    "0143b81e0d1c",
-    "9427e4ecddb2",
-    "14e9ad570d34",
-    "543b122f7f53",
-    "984b70e47f50",
-    "da6a94b2467f",
-    "0fcb81df6beb",
-    "25f85fb36a28",
-    "acf69f6fa3da",
-    "ab62acc8ee8d",
-    "6aa3a1efe2f5",
-    "a7c0ff62d401",
-    "b2e3a8c9d297",
-    "e0ac6ea0feb8",
-    "2d99552dd20b",
-    "79363bae2766",
-    "79430e98223d",
-    "713d67e3359f",
-    "311ea8b791c2",
-    "0ab043fb490e",
-    "7ace03d20b57",
-    "d22bb7bf03b7",
-    "abf975cb6851",
-    "6b1ae7dccf2a",
-    "01773c4210d8",
-    "d4741a82927e",
-    "03f5dea54bb9",
-    "cf5f39c3d51f",
-    "f24eda6317fe",
-    "5999de89d8ca",
-    "4f3d0466a6a0",
-    "b40569ffaffe",
-    "0b44aa08b434",
-    "9e8b54fa0e37",
-    "7c3693df05a2",
-    "b8cdecd1754e",
     "3c8352191a1d",
     "179ab3e7052f",
     "d5ef664ca9cd",
@@ -499,7 +440,66 @@
     "e1f1f5a022dd",
     "28266a27b908",
     "b3b36579815f",
-    "ddfe31898a0f"
+    "ddfe31898a0f",
+    "768df7877c47",
+    "4913f6d46566",
+    "b3eec54adcaa",
+    "cffa05fb35be",
+    "ae14879ee27f",
+    "5ce20fa417dd",
+    "9c14426caa80",
+    "9510dac94e99",
+    "ede3f8730a6d",
+    "7c082c457fd3",
+    "1ac693d78156",
+    "66f680529aac",
+    "0fa83153c8f2",
+    "a73d7f94c0bb",
+    "c1625d289ead",
+    "22410194cffb",
+    "768ba4a4752a",
+    "92fb321704e4",
+    "bad16bb55be0",
+    "687842b69035",
+    "eaafdfd32681",
+    "c6d3605f366d",
+    "8fa660c0b22b",
+    "9385048e245f",
+    "5d442803eef3",
+    "81129d06f39d",
+    "7d80e290351e",
+    "f4bf9d712381",
+    "2e75f51f3334",
+    "44f512e897da",
+    "6d361ef09d5b",
+    "4bd98673ab63",
+    "9be8601456ef",
+    "c0ddf1fbbbbf",
+    "485af9292c0e",
+    "1fc4ab908195",
+    "5506244459c5",
+    "b8f06b7ef9a8",
+    "fabe4591d138",
+    "316712bf69aa",
+    "d5b78bd11daf",
+    "88f5f22bb988",
+    "994271fcbb7c",
+    "108b17ecb3d5",
+    "9588617202e9",
+    "78ea91965e26",
+    "3e6905d40358",
+    "e34bb04fda35",
+    "fabe4591d138",
+    "b53b9bcf1b05",
+    "7dda1864018e",
+    "a94df52e3692",
+    "c03a594fd7db",
+    "acc76192c563",
+    "7b533b4574a9",
+    "b3e5746ed24d",
+    "627c2b77585d",
+    "b836ac2eadaf",
+    "35aea2fa810d"
   ],
   "failed_ids": {
     "96412b3b9a45": "2026-06-11T19:35:48.109996+00:00",
@@ -537,322 +537,11 @@
     "23e12542dd99": "2026-06-11T19:35:48.109996+00:00"
   },
   "live_clusters": {
-    "5062ee066e7e2a16": {
-      "topic": "adidas Climacool Cooling System Technology",
-      "item_ids": [
-        "f8d9b15e398b",
-        "04a9b2fa4c2e"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d7e841812b5367a8": {
-      "topic": "Tyler Kolek Knicks Style Fashion Feature",
-      "item_ids": [
-        "c017992843fc"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d96d864300c8dd7d": {
-      "topic": "Jimi Hendrix NYC Street Honor 56-Year Petition",
-      "item_ids": [
-        "08520cc8ed1c"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "864bd3b26b19bc6e": {
-      "topic": "CeeLo Green Verzuz Battle Lauryn Hill Challenge",
-      "item_ids": [
-        "81fbd3f2c43a"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0c4e0ca6c3804c5d": {
-      "topic": "Shakira Burna Boy Dai Dai Best World Cup Song",
-      "item_ids": [
-        "da0cb5360a62",
-        "15d3e9d0c1e1",
-        "aed3fd161129",
-        "d435bade63a5"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-11T19:35:48.109996+00:00",
-      "picks_file": "picks/picks-2026-06-11-1936.md",
-      "why_text": "Shakira returning to the World Cup stage is a full-circle moment \u2014 she's been synonymous with the tournament since 'Waka Waka' defined 2010 \u2014 but pairing her with Burna Boy signals something deliberate: a handoff between eras, and a bet on Afrobeats as the sound of global football in 2026. 'Dai Dai' is already being stacked against the canon of iconic tournament anthems, and the early verdict seems to be that it belongs there. This is the rare opening ceremony performance that actually gets talked about the next day.",
-      "last_escalated_item_ids": [
-        "da0cb5360a62",
-        "15d3e9d0c1e1",
-        "aed3fd161129"
-      ]
-    },
-    "025a34c2c502305f": {
-      "topic": "III Points 2026 Festival Lineup Expansion",
-      "item_ids": [
-        "38ee1fa8ca33"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c34bf6ad6b07609": {
-      "topic": "Jamie Hector Jay-Z Roots Picnic Freestyle Reaction",
-      "item_ids": [
-        "f909a6b93f61"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "570368a68a2e9f2f": {
-      "topic": "Utopai Studios Hyo-Joo Yang Half Moon Film Co-Production",
-      "item_ids": [
-        "9915ef635593"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "df8f104dd16732fa": {
-      "topic": "Matt Shakman Discretion Paramount+ Nicole Kidman Elle Fanning",
-      "item_ids": [
-        "dd19829bf857"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cd8f58fd7d9b16ee": {
-      "topic": "Jeff Bergman Carla Delaney Voiceover Crew Call Podcast",
-      "item_ids": [
-        "d4d749a625e2"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d320ae57fedf0e6c": {
-      "topic": "Joel Flatow New Firm RIAA Departure",
-      "item_ids": [
-        "adc80ba64c60"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a508e5fa56a96719": {
-      "topic": "24 Jump Street Return Channing Tatum Jonah Hill Ice Cube",
-      "item_ids": [
-        "7bceccbb7f9a"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b3748a8bdf1a3887": {
-      "topic": "Eagles Sign A.J. Epenesa NFL Draft",
-      "item_ids": [
-        "def5beb4e280"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d53da18083ccbf3": {
-      "topic": "Deshaun Watson Browns Return Statement",
-      "item_ids": [
-        "5b5bc6a82ced"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f6b64d97459db18c": {
-      "topic": "Dolphins Sign Connor Brewer Contract Extension",
-      "item_ids": [
-        "661ebb065980"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "414e4cae0152a270": {
-      "topic": "College Football Future Power Rankings",
-      "item_ids": [
-        "4c08f44e8ba2"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "194188f903755e1d": {
-      "topic": "xAI Grok Safety Engineer Lawsuit Firing",
-      "item_ids": [
-        "6de145b73128"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "37d6e8adfac2c494": {
-      "topic": "Andrew Yang Startup Building Strategy",
-      "item_ids": [
-        "e2d4711a8f0d"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b61c4d56d4da80a7": {
-      "topic": "Cybercriminals Oracle PeopleSoft Breach 100+ Organizations",
-      "item_ids": [
-        "c4ef9d3035ea",
-        "4eebcae87f1c"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d08153a36383fc8c": {
-      "topic": "SpaceX IPO Wall Street Hedging Challenge",
-      "item_ids": [
-        "4388efdbb86d",
-        "0386890ac855",
-        "796710b7a06c",
-        "4497e5ca3d3b",
-        "32f44ef46f2c",
-        "6e3b1fba73e2",
-        "380e609a2e9c",
-        "997978cfe394",
-        "22e0a2e660fa"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 9,
-      "last_escalated_at": "2026-06-11T21:37:18.362538+00:00",
-      "picks_file": "picks/picks-2026-06-11-1936.md",
-      "why_text": "SpaceX isn't just a rocket company \u2014 it's a bet on planetary civilization, which makes traditional valuation models look almost comically inadequate. At $1.8 trillion, it's already larger than most public companies without ever having opened its books to public markets, and an IPO would force analysts to assign a number to national defense contracts, Starlink's internet dominance, and Elon Musk's geopolitical leverage simultaneously. The real question isn't whether SpaceX is worth it \u2014 it's whether Wall Street has the vocabulary to even describe what it's pricing.\n**Update 4:38 PM CT:** SpaceX has now priced its shares at $135 in what is officially the largest IPO ever, with its Nasdaq debut set for Friday \u2014 a moment that forces Wall Street's hand on exactly the valuation question the story raised, even as Senator Warren has already fired off a letter to exchanges demanding greater oversight of the offering.",
-      "last_escalated_item_ids": [
-        "4388efdbb86d",
-        "0386890ac855",
-        "796710b7a06c",
-        "4497e5ca3d3b",
-        "32f44ef46f2c",
-        "6e3b1fba73e2",
-        "380e609a2e9c",
-        "997978cfe394",
-        "22e0a2e660fa"
-      ]
-    },
-    "ba0908fd28b1bea7": {
-      "topic": "World Wide Technology Raceway Hot Rod Power Tour",
-      "item_ids": [
-        "a5f7edf7cf88"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c153863613b2f824": {
-      "topic": "DLR Certification Analysis Technology Maturation",
-      "item_ids": [
-        "c949d304ebf0"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "09d31fc7ff960110": {
-      "topic": "Spore Trapping DNA Sequencing Fungicide Resistance",
-      "item_ids": [
-        "2fdd6b4382f9"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fbd6160a75973c9a": {
-      "topic": "Manufacturing Firefighting Mode Business Technology",
-      "item_ids": [
-        "8b7377d8c9c2"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "014675a60bf1f0db": {
-      "topic": "Advanced Mary Jane Shoe Technology",
-      "item_ids": [
-        "2e77f1712c9d"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "557f4fef108ed161": {
-      "topic": "Jon Prosser Apple Liquid Glass Leak Lawsuit Response",
-      "item_ids": [
-        "9961aa105746"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b3335adb90eceaa7": {
-      "topic": "Eagles A.J. Epenesa NFL Personnel Move",
-      "item_ids": [
-        "197562b43ecf"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "042ddea916e983c5": {
-      "topic": "Second-Generation NBA Player Fathers Career Analysis",
-      "item_ids": [
-        "8cb14943cb0e"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4259049b1e6efada": {
-      "topic": "Big Boy Visit North East Business Impact",
-      "item_ids": [
-        "12e9c9bd9f08"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "99c687b8204dc110": {
-      "topic": "EMP Metals Second Tranche Financing Closing",
-      "item_ids": [
-        "d64ece11c2bd"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "daa7d8cb35a94536": {
-      "topic": "Glen Rock BMW Theft Auto Ringleader Charged",
-      "item_ids": [
-        "dd6d9d220951"
-      ],
-      "created_at": "2026-06-10T23:01:41.136327+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "bae97f4472f25ff4": {
       "topic": "RuPaul Stop That Train Movie Review",
       "item_ids": [
-        "51701400d3a2"
+        "51701400d3a2",
+        "66f680529aac"
       ],
       "created_at": "2026-06-11T00:25:47.608810+00:00",
       "last_escalated_size": 0,
@@ -861,7 +550,8 @@
     "81484b2ce88080af": {
       "topic": "Steven Spielberg James Bond Director Comments",
       "item_ids": [
-        "2b004de2f17d"
+        "2b004de2f17d",
+        "a73d7f94c0bb"
       ],
       "created_at": "2026-06-11T00:25:47.608810+00:00",
       "last_escalated_size": 0,
@@ -1758,7 +1448,8 @@
     "8b5062e9501a81dd": {
       "topic": "Robert Horry Caitlin Clark Court Protection Advice",
       "item_ids": [
-        "215a165dfac1"
+        "215a165dfac1",
+        "6d361ef09d5b"
       ],
       "created_at": "2026-06-11T16:57:03.786195+00:00",
       "last_escalated_size": 0,
@@ -1794,11 +1485,20 @@
     "de832bf36ac5afd6": {
       "topic": "SpaceX IPO Betting on Idea Not Business",
       "item_ids": [
-        "5b5f17abd55d"
+        "5b5f17abd55d",
+        "9385048e245f",
+        "316712bf69aa",
+        "b53b9bcf1b05"
       ],
       "created_at": "2026-06-11T16:57:03.786195+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-11T23:09:26.432624+00:00",
+      "last_escalated_item_ids": [
+        "5b5f17abd55d",
+        "9385048e245f",
+        "316712bf69aa",
+        "b53b9bcf1b05"
+      ]
     },
     "a0d402cb7394dad9": {
       "topic": "Rice Business Service to School Veterans Expansion",
@@ -1893,7 +1593,8 @@
     "9c96d6b95d83f6d0": {
       "topic": "BMW Appeals Court $3.7 Million Fee Award Dismissal",
       "item_ids": [
-        "80453ad29705"
+        "80453ad29705",
+        "c03a594fd7db"
       ],
       "created_at": "2026-06-11T16:57:03.786195+00:00",
       "last_escalated_size": 0,
@@ -1983,7 +1684,8 @@
     "28efa87cbc55ee5a": {
       "topic": "Paramount Sells US Movie Theaters to Kinepolis $30M Deal",
       "item_ids": [
-        "5ec5b0287ed4"
+        "5ec5b0287ed4",
+        "9c14426caa80"
       ],
       "created_at": "2026-06-11T19:36:27.885797+00:00",
       "last_escalated_size": 0,
@@ -2464,19 +2166,27 @@
         "9fea9d51a307",
         "52db0d68826d",
         "76a8e3fd10c5",
-        "8e9026ae9b8a"
+        "8e9026ae9b8a",
+        "7dda1864018e",
+        "a94df52e3692",
+        "acc76192c563",
+        "7b533b4574a9"
       ],
       "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-11T21:37:18.362538+00:00",
+      "last_escalated_size": 9,
+      "last_escalated_at": "2026-06-11T23:09:26.432624+00:00",
       "picks_file": "picks/picks-2026-06-11-2138.md",
-      "why_text": "Valentino Rossi's teammate Robin Frijns / Dries Vanthoor's BMW M Hybrid V8 picks up pole position at Le Mans after the JOTA Cadillac of Jack Aitken had its fastest lap stripped \u2014 a qualifying penalty drama that reshuffles the front row before the biggest endurance race of the year even starts. This matters because Le Mans pole carries real symbolic weight in the hypercar era, where BMW is still chasing its first major GTE/Hypercar class win, and the manner of getting there \u2014 through a rival's penalty rather than outright pace \u2014 will fuel the narrative heading into Sunday's race. The Cadillac vs. BMW fight at the front is exactly the kind of manufacturer battle that defines modern Le Mans, and it just got spicy before a wheel has turned in anger.",
+      "why_text": "Valentino Rossi's teammate Robin Frijns / Dries Vanthoor's BMW M Hybrid V8 picks up pole position at Le Mans after the JOTA Cadillac of Jack Aitken had its fastest lap stripped \u2014 a qualifying penalty drama that reshuffles the front row before the biggest endurance race of the year even starts. This matters because Le Mans pole carries real symbolic weight in the hypercar era, where BMW is still chasing its first major GTE/Hypercar class win, and the manner of getting there \u2014 through a rival's penalty rather than outright pace \u2014 will fuel the narrative heading into Sunday's race. The Cadillac vs. BMW fight at the front is exactly the kind of manufacturer battle that defines modern Le Mans, and it just got spicy before a wheel has turned in anger.\n**Update 6:10 PM CT:** Confirming the pole story, IMSA has officially recognised Vanthoor and BMW M Team WRT as leading the field from pole at Le Mans \u2014 while Motorsport.com's FP4 report serves as a reminder that Cadillac still holds a pace advantage in race trim, making the penalty-gifted grid position look more precarious once the 24 hours actually begins.",
       "last_escalated_item_ids": [
         "277377468585",
         "9fea9d51a307",
         "52db0d68826d",
         "76a8e3fd10c5",
-        "8e9026ae9b8a"
+        "8e9026ae9b8a",
+        "7dda1864018e",
+        "a94df52e3692",
+        "acc76192c563",
+        "7b533b4574a9"
       ]
     },
     "f0073c2d993ebd90": {
@@ -2514,7 +2224,160 @@
       "created_at": "2026-06-11T21:38:13.286709+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f28ca465854fa94d": {
+      "topic": "Nike Air Force 1 Black Croc Luxury Release",
+      "item_ids": [
+        "768df7877c47"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f5f755701ee5b93a": {
+      "topic": "Timoth\u00e9e Chalamet Knicks Game Fashion",
+      "item_ids": [
+        "4913f6d46566"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "41d2de5aa0fe8800": {
+      "topic": "Andy Cohen Bravo Reality TV Interview",
+      "item_ids": [
+        "b3eec54adcaa"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b25f1214ab20b362": {
+      "topic": "Baywatch Film Coastal Commission Parking Approval",
+      "item_ids": [
+        "cffa05fb35be"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7057a3850ca8e019": {
+      "topic": "Tom Hanks Voice Acting Oscar Category Opinion",
+      "item_ids": [
+        "ae14879ee27f"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "359ac97f1e47f056": {
+      "topic": "2026 Tribeca Festival Winners Announcement",
+      "item_ids": [
+        "5ce20fa417dd"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2544d63650641085": {
+      "topic": "Man\u00e1 Vivir Sin Aire Latin American Tour Dates",
+      "item_ids": [
+        "9510dac94e99"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f3a59d6fc58c5827": {
+      "topic": "Michigan Songwriters Video Game Sync Counterclaim",
+      "item_ids": [
+        "ede3f8730a6d"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4cd7f885eedef82d": {
+      "topic": "Fenix Flexin Denies AI Music Generation Allegations",
+      "item_ids": [
+        "7c082c457fd3"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a2eb6cd77628fb5a": {
+      "topic": "Dwayne Johnson Smashing Machine Oscars Snub Response",
+      "item_ids": [
+        "1ac693d78156"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "91afc0368dd7b1a3": {
+      "topic": "Prime Video Legally Blonde Elle Prequel Series",
+      "item_ids": [
+        "0fa83153c8f2"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4659600c5821d5d7": {
+      "topic": "Peter Sarsgaard Last of Us Season 3 Casting",
+      "item_ids": [
+        "c1625d289ead"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1f6afb1ee428c221": {
+      "topic": "Knicks Fans Victor Wembanyama Hotel Egg Incident",
+      "item_ids": [
+        "687842b69035"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8cfa5f81ccf8b3f8": {
+      "topic": "Water-Producing Textiles Research Development",
+      "item_ids": [
+        "c6d3605f366d"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d4d0e48cddb3766a": {
+      "topic": "NBA L2M Report De'Aaron Fox Anunoby Foul Knicks-Spurs Finals",
+      "item_ids": [
+        "4bd98673ab63"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "448a2737b87f11c3": {
+      "topic": "NBA Blown Call Stephon Castle Spurs Finals Game 4",
+      "item_ids": [
+        "9be8601456ef"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "68af953da9fa7259": {
+      "topic": "Jerry Seinfeld Palestine Comment Knicks Finals Backlash",
+      "item_ids": [
+        "c0ddf1fbbbbf"
+      ],
+      "created_at": "2026-06-11T23:10:11.345962+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-11T21:38:25.251585+00:00"
+  "last_checked": "2026-06-11T23:10:20.429447+00:00"
 }
