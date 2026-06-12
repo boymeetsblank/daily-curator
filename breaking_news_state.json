@@ -1,16 +1,5 @@
 {
   "known_ids": [
-    "6f7d1e01de1b",
-    "e519a932e522",
-    "3d6d90eb333a",
-    "52d94b0c94d1",
-    "a363f37394ae",
-    "3b57ed11d709",
-    "c36623495d05",
-    "16134132651d",
-    "bda78ca38f5e",
-    "24a249edee4e",
-    "243b23d91b70",
     "91bfedc6f428",
     "a860d6cfdc26",
     "b1d7802bd372",
@@ -499,58 +488,37 @@
     "97ee5ab8320b",
     "c60ab21f7aae",
     "321caf74bec3",
-    "cdb93079aac8"
+    "cdb93079aac8",
+    "768c822cbb4e",
+    "7d08537bcad6",
+    "d62347c335d6",
+    "14bdbaaf7576",
+    "50815865e8d0",
+    "e4416c4f2f4d",
+    "2dd279158675",
+    "c0747fb13acd",
+    "884641791f6b",
+    "404eca6338ab",
+    "0f61fe2215cf"
   ],
   "failed_ids": {
-    "7f238d1778b0": "2026-06-12T01:39:26.177333+00:00",
-    "5775015b6769": "2026-06-12T01:39:26.177333+00:00",
-    "2706e44386e5": "2026-06-12T01:39:26.177333+00:00",
-    "f9ebe1c01126": "2026-06-12T01:39:26.177333+00:00",
-    "6c23446d38dd": "2026-06-12T01:39:26.177333+00:00",
-    "9cfc8773eceb": "2026-06-12T01:39:26.177333+00:00",
-    "8fa7c9e719ad": "2026-06-12T01:39:26.177333+00:00",
-    "dbc1261122e4": "2026-06-12T01:39:26.177333+00:00",
-    "bf391f1d2e6d": "2026-06-12T01:39:26.177333+00:00",
-    "7852c3a74fef": "2026-06-12T01:39:26.177333+00:00"
+    "2fe8276ae251": "2026-06-12T06:18:52.667251+00:00",
+    "9d3aa6c77eb8": "2026-06-12T06:18:52.667251+00:00",
+    "2debe551ba08": "2026-06-12T06:18:52.667251+00:00",
+    "f8c9c30a14b1": "2026-06-12T06:18:52.667251+00:00",
+    "1543f8005f0a": "2026-06-12T06:18:52.667251+00:00",
+    "381df9f5aa54": "2026-06-12T06:18:52.667251+00:00",
+    "73431adee82a": "2026-06-12T06:18:52.667251+00:00",
+    "4b0ff020dab8": "2026-06-12T06:18:52.667251+00:00",
+    "4265c34df8d3": "2026-06-12T06:18:52.667251+00:00",
+    "14ef1b665a1b": "2026-06-12T06:18:52.667251+00:00",
+    "1d920e711c39": "2026-06-12T06:18:52.667251+00:00",
+    "c65a91747658": "2026-06-12T06:18:52.667251+00:00",
+    "e037a5ae7df5": "2026-06-12T06:18:52.667251+00:00",
+    "a1043a6758bd": "2026-06-12T06:18:52.667251+00:00",
+    "d4e055a5ab38": "2026-06-12T06:18:52.667251+00:00"
   },
   "live_clusters": {
-    "1d647f5f1dc62bb4": {
-      "topic": "BIGBANG World Stadium Tour Reunion",
-      "item_ids": [
-        "1131df10c79a"
-      ],
-      "created_at": "2026-06-11T05:09:19.974978+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2cacfc0ca211b190": {
-      "topic": "Ohtani LA Dodgers Non-Challenge Loss",
-      "item_ids": [
-        "85d17385aec0"
-      ],
-      "created_at": "2026-06-11T05:09:19.974978+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "47e2084340e9e204": {
-      "topic": "Opendoor India Exit AI Outsourcing Discussion",
-      "item_ids": [
-        "4f46f6d5c2e1"
-      ],
-      "created_at": "2026-06-11T05:09:19.974978+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ed0c2cff4f6bb244": {
-      "topic": "Anthropic Dario Amodei Direct Report Structure",
-      "item_ids": [
-        "d461f5dc0d2f",
-        "7f42e535994b"
-      ],
-      "created_at": "2026-06-11T05:09:19.974978+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "5bc1564ac0ff3ef7": {
       "topic": "Maison Margiela Tabi Mules Summer Collection",
       "item_ids": [
@@ -1505,7 +1473,8 @@
     "a0485d640fabd4c8": {
       "topic": "J. Balvin Air Jordan 4 Lemonade FIFA World Cup Release",
       "item_ids": [
-        "8ae03922f548"
+        "8ae03922f548",
+        "768c822cbb4e"
       ],
       "created_at": "2026-06-11T19:36:27.885797+00:00",
       "last_escalated_size": 0,
@@ -2508,7 +2477,44 @@
       "created_at": "2026-06-12T01:39:56.545881+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "c789ea6af3192dea": {
+      "topic": "2026 ARIA Hall of Fame Inductions Gurrumul Jenny Morris",
+      "item_ids": [
+        "7d08537bcad6"
+      ],
+      "created_at": "2026-06-12T06:19:27.716992+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1f00130c31988c13": {
+      "topic": "ChatGPT Billion Monthly Users Milestone AI Sentiment",
+      "item_ids": [
+        "d62347c335d6"
+      ],
+      "created_at": "2026-06-12T06:19:27.716992+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0126676ff27b6cde": {
+      "topic": "US Video Game Market Growth Cloud Gaming Esports Digital Innovation",
+      "item_ids": [
+        "14bdbaaf7576"
+      ],
+      "created_at": "2026-06-12T06:19:27.716992+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "28619265e3cf3eb6": {
+      "topic": "Blind Ukrainian Veteran Pottery Business Mentorship",
+      "item_ids": [
+        "50815865e8d0",
+        "e4416c4f2f4d"
+      ],
+      "created_at": "2026-06-12T06:19:27.716992+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-12T01:40:08.910213+00:00"
+  "last_checked": "2026-06-12T06:19:27.718249+00:00"
 }
