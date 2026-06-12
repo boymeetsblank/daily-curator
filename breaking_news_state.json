@@ -1,32 +1,5 @@
 {
   "known_ids": [
-    "1697ae2f311f",
-    "38cbf97ce2c0",
-    "fb39d32c36f5",
-    "7b7f091de89a",
-    "997978cfe394",
-    "22e0a2e660fa",
-    "977ee1be63c1",
-    "1f78785243d4",
-    "ff37197c2b67",
-    "217d451fde42",
-    "e7297995f835",
-    "277377468585",
-    "14a2b67a4247",
-    "f7de0f845eeb",
-    "bc6024221bce",
-    "277377468585",
-    "9fea9d51a307",
-    "52db0d68826d",
-    "76a8e3fd10c5",
-    "8e9026ae9b8a",
-    "338ffe7269ec",
-    "da67b1793758",
-    "e1872b07bbb0",
-    "e1f1f5a022dd",
-    "28266a27b908",
-    "b3b36579815f",
-    "ddfe31898a0f",
     "768df7877c47",
     "4913f6d46566",
     "b3eec54adcaa",
@@ -499,7 +472,34 @@
     "fca62c6058f6",
     "25fe6da1076c",
     "05fb33e22a96",
-    "5ce648fd916c"
+    "5ce648fd916c",
+    "c5643cdc28e0",
+    "60495a53661e",
+    "244ea2757110",
+    "c19d84f988cf",
+    "527b438b6137",
+    "93508f1643e7",
+    "88d244410dd8",
+    "a1b1a68dd1b4",
+    "12852a9fd037",
+    "fa53208c161d",
+    "b0111e2d0b60",
+    "b48b29dc3ba8",
+    "ae5c88d9d200",
+    "56b7b98f42fb",
+    "f6bcab9c9e7e",
+    "fe9f648c59e7",
+    "240746cfbd04",
+    "8f36d10d89d8",
+    "c974f46fd8fc",
+    "176ea34eeab0",
+    "0d55f96fbe79",
+    "e2a9cd6df62c",
+    "720bc167b31d",
+    "460445be3c55",
+    "048b51f267f9",
+    "6c9cdaeff91c",
+    "431c662c593d"
   ],
   "failed_ids": {
     "817813df7a49": "2026-06-12T22:13:36.019011+00:00",
@@ -523,165 +523,23 @@
     "4b0eded3ec7c": "2026-06-12T22:13:36.019011+00:00",
     "0b1c5d64ef76": "2026-06-12T22:13:36.019011+00:00",
     "c2291c181ecc": "2026-06-12T22:13:36.019011+00:00",
-    "53bdb48528cf": "2026-06-12T22:13:36.019011+00:00"
+    "53bdb48528cf": "2026-06-12T22:13:36.019011+00:00",
+    "ca2e7b666ea4": "2026-06-12T23:53:55.992966+00:00",
+    "f38b34b1fb66": "2026-06-12T23:53:55.992966+00:00",
+    "0dddeabbbc6a": "2026-06-12T23:53:55.992966+00:00",
+    "ad9e9052a968": "2026-06-12T23:53:55.992966+00:00",
+    "e853d0811f1c": "2026-06-12T23:53:55.992966+00:00",
+    "061e5befacf3": "2026-06-12T23:53:55.992966+00:00",
+    "acdc9d6943cb": "2026-06-12T23:53:55.992966+00:00",
+    "6f74b728a575": "2026-06-12T23:53:55.992966+00:00",
+    "63cd818374b4": "2026-06-12T23:53:55.992966+00:00",
+    "92e0b9f7c171": "2026-06-12T23:53:55.992966+00:00",
+    "f015e39133f2": "2026-06-12T23:53:55.992966+00:00",
+    "3528112db339": "2026-06-12T23:53:55.992966+00:00",
+    "521eb90a2ca5": "2026-06-12T23:53:55.992966+00:00",
+    "d8288b4f86bc": "2026-06-12T23:53:55.992966+00:00"
   },
   "live_clusters": {
-    "f28ca465854fa94d": {
-      "topic": "Nike Air Force 1 Black Croc Luxury Release",
-      "item_ids": [
-        "768df7877c47"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f5f755701ee5b93a": {
-      "topic": "Timoth\u00e9e Chalamet Knicks Game Fashion",
-      "item_ids": [
-        "4913f6d46566"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "41d2de5aa0fe8800": {
-      "topic": "Andy Cohen Bravo Reality TV Interview",
-      "item_ids": [
-        "b3eec54adcaa"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b25f1214ab20b362": {
-      "topic": "Baywatch Film Coastal Commission Parking Approval",
-      "item_ids": [
-        "cffa05fb35be"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7057a3850ca8e019": {
-      "topic": "Tom Hanks Voice Acting Oscar Category Opinion",
-      "item_ids": [
-        "ae14879ee27f"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "359ac97f1e47f056": {
-      "topic": "2026 Tribeca Festival Winners Announcement",
-      "item_ids": [
-        "5ce20fa417dd",
-        "dfb779f28bb3"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2544d63650641085": {
-      "topic": "Man\u00e1 Vivir Sin Aire Latin American Tour Dates",
-      "item_ids": [
-        "9510dac94e99"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f3a59d6fc58c5827": {
-      "topic": "Michigan Songwriters Video Game Sync Counterclaim",
-      "item_ids": [
-        "ede3f8730a6d"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4cd7f885eedef82d": {
-      "topic": "Fenix Flexin Denies AI Music Generation Allegations",
-      "item_ids": [
-        "7c082c457fd3"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a2eb6cd77628fb5a": {
-      "topic": "Dwayne Johnson Smashing Machine Oscars Snub Response",
-      "item_ids": [
-        "1ac693d78156"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "91afc0368dd7b1a3": {
-      "topic": "Prime Video Legally Blonde Elle Prequel Series",
-      "item_ids": [
-        "0fa83153c8f2"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4659600c5821d5d7": {
-      "topic": "Peter Sarsgaard Last of Us Season 3 Casting",
-      "item_ids": [
-        "c1625d289ead"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1f6afb1ee428c221": {
-      "topic": "Knicks Fans Victor Wembanyama Hotel Egg Incident",
-      "item_ids": [
-        "687842b69035",
-        "2e9957b22094"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8cfa5f81ccf8b3f8": {
-      "topic": "Water-Producing Textiles Research Development",
-      "item_ids": [
-        "c6d3605f366d"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d4d0e48cddb3766a": {
-      "topic": "NBA L2M Report De'Aaron Fox Anunoby Foul Knicks-Spurs Finals",
-      "item_ids": [
-        "4bd98673ab63",
-        "9c700d5542ed"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "448a2737b87f11c3": {
-      "topic": "NBA Blown Call Stephon Castle Spurs Finals Game 4",
-      "item_ids": [
-        "9be8601456ef"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "68af953da9fa7259": {
-      "topic": "Jerry Seinfeld Palestine Comment Knicks Finals Backlash",
-      "item_ids": [
-        "c0ddf1fbbbbf"
-      ],
-      "created_at": "2026-06-11T23:10:11.345962+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "0a65eec34f38acf6": {
       "topic": "Spotify iPhone App Icon Revert Disco-Ball Logo",
       "item_ids": [
@@ -863,7 +721,8 @@
     "a7821da168d94b5c": {
       "topic": "Dallas Mavericks 2026 NBA Draft Trade Ideas",
       "item_ids": [
-        "177c9faac7d1"
+        "177c9faac7d1",
+        "460445be3c55"
       ],
       "created_at": "2026-06-12T01:39:56.545881+00:00",
       "last_escalated_size": 0,
@@ -881,7 +740,8 @@
     "59689f3a0851b51d": {
       "topic": "Plaza Mexico Businesses World Cup Watch Party Boom",
       "item_ids": [
-        "5176f9278e0c"
+        "5176f9278e0c",
+        "93508f1643e7"
       ],
       "created_at": "2026-06-12T01:39:56.545881+00:00",
       "last_escalated_size": 0,
@@ -1092,13 +952,17 @@
         "e33a24f8837c",
         "a9159bece573",
         "041f315923dc",
-        "99b004d1cb34"
+        "99b004d1cb34",
+        "176ea34eeab0",
+        "0d55f96fbe79",
+        "e2a9cd6df62c",
+        "720bc167b31d"
       ],
       "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 13,
-      "last_escalated_at": "2026-06-12T22:13:36.019011+00:00",
+      "last_escalated_size": 17,
+      "last_escalated_at": "2026-06-12T23:53:55.992966+00:00",
       "picks_file": "picks/picks-2026-06-12-1639.md",
-      "why_text": "The NBA Finals has arrived at its most critical juncture \u2014 a Knicks team carrying the weight of a half-century championship drought is one win away from ending it, while the Spurs are fighting to force the series back to San Antonio. The cultural stakes are enormous: New York hasn't won a title since 1973, and the betting markets, ticket price swings, and free agency caution all signal that the league itself is holding its breath around what happens next. This isn't just a game \u2014 it's a potential civic moment for the most media-saturated sports market in the country.\n**Update 3:39 PM CT:** Jay-Z's 'Empire State of Mind' surged on streaming charts following the Knicks' latest comeback win, underscoring the cultural electricity building around a potential New York title, while on the San Antonio side, Spurs head coach Mitch Johnson made a point of publicly reaffirming his trust in De'Aaron Fox \u2014 a signal that the Spurs are leaning on their star to even the series before it returns to Madison Square Garden.\n**Update 5:14 PM CT:** With Game 5 shifting to San Antonio, Wembanyama is publicly shaking off the Knicks' comeback and projecting confidence ahead of what would be an elimination game for the Spurs, while Keldon Johnson echoes that defiant tone in the locker room \u2014 but the cultural lens is sharpening on New York's side too, with CNN spotlighting the Latino duo powering the Knicks' historic run as the city's fanbase braces for a potential title-clinching moment.",
+      "why_text": "The NBA Finals has arrived at its most critical juncture \u2014 a Knicks team carrying the weight of a half-century championship drought is one win away from ending it, while the Spurs are fighting to force the series back to San Antonio. The cultural stakes are enormous: New York hasn't won a title since 1973, and the betting markets, ticket price swings, and free agency caution all signal that the league itself is holding its breath around what happens next. This isn't just a game \u2014 it's a potential civic moment for the most media-saturated sports market in the country.\n**Update 3:39 PM CT:** Jay-Z's 'Empire State of Mind' surged on streaming charts following the Knicks' latest comeback win, underscoring the cultural electricity building around a potential New York title, while on the San Antonio side, Spurs head coach Mitch Johnson made a point of publicly reaffirming his trust in De'Aaron Fox \u2014 a signal that the Spurs are leaning on their star to even the series before it returns to Madison Square Garden.\n**Update 5:14 PM CT:** With Game 5 shifting to San Antonio, Wembanyama is publicly shaking off the Knicks' comeback and projecting confidence ahead of what would be an elimination game for the Spurs, while Keldon Johnson echoes that defiant tone in the locker room \u2014 but the cultural lens is sharpening on New York's side too, with CNN spotlighting the Latino duo powering the Knicks' historic run as the city's fanbase braces for a potential title-clinching moment.\n**Update 6:54 PM CT:** The celebrity orbit around this series is expanding beyond sports: Selena Gomez fired back at Taylor Swift over NBA Finals drama with a blunt 'it's a basketball game,' injecting a pop culture subplot into the lead-up to Game 5 that underscores just how wide the cultural footprint of a potential Knicks title has become.",
       "last_escalated_item_ids": [
         "28d3093d54f7",
         "a1d166c2294e",
@@ -1112,7 +976,11 @@
         "e33a24f8837c",
         "a9159bece573",
         "041f315923dc",
-        "99b004d1cb34"
+        "99b004d1cb34",
+        "176ea34eeab0",
+        "0d55f96fbe79",
+        "e2a9cd6df62c",
+        "720bc167b31d"
       ]
     },
     "0972ec3c3783b3f7": {
@@ -1129,7 +997,8 @@
       "item_ids": [
         "ac38ec403a53",
         "31b5b269c940",
-        "6ed99ab25561"
+        "6ed99ab25561",
+        "c974f46fd8fc"
       ],
       "created_at": "2026-06-12T10:44:14.889032+00:00",
       "last_escalated_size": 3,
@@ -1990,11 +1859,18 @@
       "topic": "Elon Musk World First Trillionaire",
       "item_ids": [
         "a93123a38fa5",
-        "b4d4f73af5f6"
+        "b4d4f73af5f6",
+        "a1b1a68dd1b4"
       ],
       "created_at": "2026-06-12T18:30:35.118243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-12T23:53:55.992966+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "a93123a38fa5",
+        "b4d4f73af5f6",
+        "a1b1a68dd1b4"
+      ]
     },
     "ce28be91bd17295f": {
       "topic": "China Data Center Hatred Narrative",
@@ -2216,7 +2092,8 @@
     "417e56eab5aa5b53": {
       "topic": "SpaceX IPO Stock Opens $150 Largest Offering",
       "item_ids": [
-        "b38af3cd8d44"
+        "b38af3cd8d44",
+        "fe9f648c59e7"
       ],
       "created_at": "2026-06-12T18:30:35.118243+00:00",
       "last_escalated_size": 0,
@@ -2240,7 +2117,8 @@
         "5f968e4ebd65",
         "09a5285fdb71",
         "15dd23e342fc",
-        "fca62c6058f6"
+        "fca62c6058f6",
+        "6c9cdaeff91c"
       ],
       "created_at": "2026-06-12T18:30:35.118243+00:00",
       "last_escalated_size": 6,
@@ -2488,7 +2366,8 @@
         "d0a0a1033c48",
         "0e05834a46e6",
         "58501c0c6955",
-        "90740b08af6e"
+        "90740b08af6e",
+        "f6bcab9c9e7e"
       ],
       "created_at": "2026-06-12T20:39:03.285592+00:00",
       "last_escalated_size": 4,
@@ -2991,11 +2870,19 @@
     "d005c74fc4897406": {
       "topic": "Meta AI Unit Dysfunction Internal Conflict",
       "item_ids": [
-        "009a50a283dd"
+        "009a50a283dd",
+        "ae5c88d9d200",
+        "56b7b98f42fb"
       ],
       "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-12T23:53:55.992966+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "009a50a283dd",
+        "ae5c88d9d200",
+        "56b7b98f42fb"
+      ]
     },
     "bf33c88c3520a678": {
       "topic": "SpaceX IPO Proxy Trading Stock Dip",
@@ -3068,7 +2955,116 @@
       "created_at": "2026-06-12T22:14:19.683173+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "5b448365dc512205": {
+      "topic": "Bill Ritter Departs WABC Eyewitness News After Alzheimer's Diagnosis",
+      "item_ids": [
+        "c5643cdc28e0"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "359d95536b25499f": {
+      "topic": "Chris Sanders to Direct Live-Action Lilo & Stitch 2 Sequel",
+      "item_ids": [
+        "60495a53661e"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9d7cde134da639e9": {
+      "topic": "Gene Shalit Today Show Film Critic Dies at 100",
+      "item_ids": [
+        "244ea2757110",
+        "12852a9fd037"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d4cf6c8fc2870a96": {
+      "topic": "Dutton Ranch Episode 6 Character Deaths and Drama",
+      "item_ids": [
+        "c19d84f988cf"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5aeb7f52bd88d612": {
+      "topic": "The Vampire Lestat Soundtrack Inspiration Songs",
+      "item_ids": [
+        "527b438b6137"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5e30e58620a3fe26": {
+      "topic": "Billboard Canada Power Players 2026 Moments",
+      "item_ids": [
+        "88d244410dd8"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "180084c7401abea7": {
+      "topic": "What The Dead Know Taylor Schilling NBC Pilot Redevelopment",
+      "item_ids": [
+        "fa53208c161d"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "483393ccc62ff996": {
+      "topic": "Specialty Preview RuPaul Stop That Train BTS Maria Bakalova",
+      "item_ids": [
+        "b0111e2d0b60"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "141f1279ec88860c": {
+      "topic": "Ohtani Dodgers Lineup Absence",
+      "item_ids": [
+        "b48b29dc3ba8"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dd4d78d293352b05": {
+      "topic": "Facial Recognition Wrongful Arrest Jacksonville Beach Police",
+      "item_ids": [
+        "240746cfbd04"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "023319b9061bc2dd": {
+      "topic": "SpaceX IPO Impact on OpenAI Anthropic",
+      "item_ids": [
+        "8f36d10d89d8"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cf78ea458b14c685": {
+      "topic": "BMW Electric Vehicle History Tesla Timeline",
+      "item_ids": [
+        "048b51f267f9"
+      ],
+      "created_at": "2026-06-12T23:54:32.209811+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-12T22:14:41.477840+00:00"
+  "last_checked": "2026-06-12T23:54:35.854021+00:00"
 }
