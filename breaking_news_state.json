@@ -1,80 +1,5 @@
 {
   "known_ids": [
-    "5b5bc6a82ced",
-    "661ebb065980",
-    "4c08f44e8ba2",
-    "6de145b73128",
-    "e2d4711a8f0d",
-    "c4ef9d3035ea",
-    "4388efdbb86d",
-    "a5f7edf7cf88",
-    "c949d304ebf0",
-    "2fdd6b4382f9",
-    "8b7377d8c9c2",
-    "2e77f1712c9d",
-    "9961aa105746",
-    "d3a75545a5da",
-    "cf84abe68a83",
-    "197562b43ecf",
-    "8cb14943cb0e",
-    "3a897c770489",
-    "12e9c9bd9f08",
-    "d64ece11c2bd",
-    "dd6d9d220951",
-    "7a82718cd5da",
-    "c63403189206",
-    "3505eea7e86f",
-    "6b055a86c04f",
-    "0cf63468418b",
-    "51701400d3a2",
-    "2b004de2f17d",
-    "b46798de79a2",
-    "e180aaf0b0b5",
-    "a7166dc42bd2",
-    "8c394e371390",
-    "751da0a7082f",
-    "dcec64680033",
-    "177e562fdc25",
-    "6699206ffcff",
-    "e621c19681d3",
-    "033408888428",
-    "1921828811a6",
-    "80e03fd33476",
-    "84081161e76e",
-    "5c6be20e7b9d",
-    "7bf34155aaa5",
-    "a4c45a0cda75",
-    "c617cf1af767",
-    "7c8bc86ec06c",
-    "1131df10c79a",
-    "81fa79cd1d4b",
-    "796eb7e8bf83",
-    "232a7bc8d6e2",
-    "63edbbe966e8",
-    "85d17385aec0",
-    "27183ab83bc5",
-    "2e83c0b79620",
-    "4f46f6d5c2e1",
-    "d461f5dc0d2f",
-    "dbec5bfeab53",
-    "6be48b90d3c4",
-    "48eae618cdbb",
-    "8f82969ac5b6",
-    "fa65b28c28e6",
-    "9c33e50044a5",
-    "73804186adcc",
-    "87ea87fd4e9c",
-    "82da2e8eee0b",
-    "e704452d9d65",
-    "0551e5417516",
-    "04a9b2fa4c2e",
-    "642c7bd8470f",
-    "c6946560ce85",
-    "8f9fc1f4fcf9",
-    "faee6849b274",
-    "722acba606ac",
-    "bfb7013fecfb",
-    "6cd271bfaeac",
     "b6cc7c542538",
     "77fabb9b09bf",
     "cccf20eb7cfb",
@@ -499,30 +424,84 @@
     "bc15696364e8",
     "ca172cb3c3e0",
     "d532f2c6107f",
-    "110e188c5be6"
+    "110e188c5be6",
+    "ca45153d5dee",
+    "dd243b7992fc",
+    "89bbadceaf8c",
+    "8dfe9a679662",
+    "57437373df24",
+    "bfc3b8f24730",
+    "2b6ff74610b4",
+    "d6d4658e2f26",
+    "6221903df88b",
+    "bc08e2343a7c",
+    "477dbb3c940c",
+    "6ec5ca0c7c60",
+    "4cf57187a17f",
+    "ae33f9e01254",
+    "388ae7d21ba6",
+    "0f243be54742",
+    "8ed7c04bf6e3",
+    "05818779548d",
+    "10b185df567a",
+    "d4ae771d3d60",
+    "bc404d9598e1",
+    "aff183af0f1e",
+    "9dabab647fd8",
+    "ef7f4a0c84f8",
+    "8e4df486aa41",
+    "b708a028305d",
+    "11478968ca8a",
+    "7a7fab491283",
+    "09c3410c1339",
+    "61193eaf9fc6",
+    "78060c6876f4",
+    "7b9d050c118c",
+    "5d2e9969bdd5",
+    "d3e190ae12cf",
+    "82c61ce46072",
+    "44c4a3094781",
+    "d28054aaf685",
+    "60fc70fb5b21",
+    "a7c14b0594c5",
+    "6cbf5d456411",
+    "5cc8af50c314",
+    "15ce50ba20ab",
+    "b33b8037b320",
+    "fa0faabf9440",
+    "346ac43d4459",
+    "9e0cfd9ef3f5",
+    "1f41e537222c",
+    "de482157c33e",
+    "847fa055c924",
+    "6a645e2ede12",
+    "51001fe3b6d4",
+    "c89a079e56ec",
+    "5f221499ef23",
+    "cf0810c16c03",
+    "9f1dfc644e42",
+    "2d75eb0b7bfc",
+    "379d7e3b88aa",
+    "63744117c676",
+    "cdc3758cb1a6",
+    "f5cab1618be0",
+    "fc2587e9c7c8",
+    "51001fe3b6d4",
+    "fdbea54de13e",
+    "bfb9d0356e06",
+    "c89a079e56ec",
+    "93e89140aeb0",
+    "1d14070d7951",
+    "4075e3d75e49",
+    "28c4821191a7",
+    "6a81b8f7ac40",
+    "8d0f380b7a3a",
+    "1f26085739cd",
+    "1eaa3b38b4e3",
+    "d1a32a489c04",
+    "a4edf6719027"
   ],
-  "failed_ids": {
-    "7a7fab491283": "2026-06-12T10:43:46.036664+00:00",
-    "696eb7b2ee9f": "2026-06-12T10:43:46.036664+00:00",
-    "85bbbe3d2b8b": "2026-06-12T10:43:46.036664+00:00",
-    "0d944799ed9b": "2026-06-12T10:43:46.036664+00:00",
-    "ff7ca67bbb65": "2026-06-12T10:43:46.036664+00:00",
-    "6091b0299a96": "2026-06-12T10:43:46.036664+00:00",
-    "bc350b81a486": "2026-06-12T10:43:46.036664+00:00",
-    "a020624db2ce": "2026-06-12T10:43:46.036664+00:00",
-    "bb90f91032a1": "2026-06-12T10:43:46.036664+00:00",
-    "34ab1d54aada": "2026-06-12T10:43:46.036664+00:00",
-    "fe96aa6e562a": "2026-06-12T10:43:46.036664+00:00",
-    "6b5516c92b80": "2026-06-12T10:43:46.036664+00:00",
-    "440b32958447": "2026-06-12T10:43:46.036664+00:00",
-    "895144ef647f": "2026-06-12T10:43:46.036664+00:00",
-    "ee75ac1677f0": "2026-06-12T10:43:46.036664+00:00",
-    "e8bda7922212": "2026-06-12T10:43:46.036664+00:00",
-    "7a7d7c05bfb3": "2026-06-12T10:43:46.036664+00:00",
-    "b0872454ea96": "2026-06-12T10:43:46.036664+00:00",
-    "95b49cce9938": "2026-06-12T10:43:46.036664+00:00",
-    "434075b35804": "2026-06-12T10:43:46.036664+00:00"
-  },
+  "failed_ids": {},
   "live_clusters": {
     "b8d97ce74e06c863": {
       "topic": "Victor Wembanyama Nike Air Force 1 Low Collaboration Release",
@@ -906,11 +885,26 @@
         "b58755fb9d0c",
         "3e0ce2f547dc",
         "2000fad62856",
-        "35f49b4993e8"
+        "35f49b4993e8",
+        "aff183af0f1e",
+        "9dabab647fd8",
+        "ef7f4a0c84f8",
+        "8e4df486aa41",
+        "11478968ca8a",
+        "7a7fab491283",
+        "78060c6876f4",
+        "de482157c33e",
+        "c89a079e56ec",
+        "cf0810c16c03",
+        "9f1dfc644e42",
+        "2d75eb0b7bfc",
+        "51001fe3b6d4",
+        "fdbea54de13e",
+        "1f26085739cd"
       ],
       "created_at": "2026-06-11T16:57:03.786195+00:00",
-      "last_escalated_size": 17,
-      "last_escalated_at": "2026-06-12T13:52:34.093574+00:00",
+      "last_escalated_size": 32,
+      "last_escalated_at": "2026-06-12T16:38:18.428926+00:00",
       "last_escalated_item_ids": [
         "5b5f17abd55d",
         "9385048e245f",
@@ -928,7 +922,22 @@
         "b58755fb9d0c",
         "3e0ce2f547dc",
         "2000fad62856",
-        "35f49b4993e8"
+        "35f49b4993e8",
+        "aff183af0f1e",
+        "9dabab647fd8",
+        "ef7f4a0c84f8",
+        "8e4df486aa41",
+        "11478968ca8a",
+        "7a7fab491283",
+        "78060c6876f4",
+        "de482157c33e",
+        "c89a079e56ec",
+        "cf0810c16c03",
+        "9f1dfc644e42",
+        "2d75eb0b7bfc",
+        "51001fe3b6d4",
+        "fdbea54de13e",
+        "1f26085739cd"
       ],
       "picks_file": "SUPPRESSED"
     },
@@ -1381,11 +1390,19 @@
       "topic": "Iran Oil Deal Energy Policy Washington Discussion",
       "item_ids": [
         "3bc389ac624e",
-        "f9ebe1c01126"
+        "f9ebe1c01126",
+        "09c3410c1339"
       ],
       "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-12T16:38:18.428926+00:00",
+      "picks_file": "picks/picks-2026-06-12-1638.md",
+      "why_text": "A proposed peace deal between Washington and Tehran that would reopen the Strait of Hormuz \u2014 one of the world's most critical oil chokepoints \u2014 is already moving energy markets, with oil prices dropping on the news. This is a massive geopolitical pivot: the Strait carries roughly 20% of global oil supply, and any normalization between the U.S. and Iran would reshape Middle East energy dynamics overnight. It lands at a moment when the White House is simultaneously facing domestic legal battles over its DOJ restructuring, making this a two-front pressure week for the administration.",
+      "last_escalated_item_ids": [
+        "3bc389ac624e",
+        "f9ebe1c01126",
+        "09c3410c1339"
+      ]
     },
     "e5e16156ba056ae9": {
       "topic": "Andreessen Horowitz VC AI Political Infiltration Criticism",
@@ -1606,7 +1623,8 @@
         "a94df52e3692",
         "acc76192c563",
         "7b533b4574a9",
-        "7025f56adf4a"
+        "7025f56adf4a",
+        "8d0f380b7a3a"
       ],
       "created_at": "2026-06-11T21:38:13.286709+00:00",
       "last_escalated_size": 9,
@@ -2183,11 +2201,21 @@
       "topic": "Knicks vs Spurs NBA Finals Game 5 Betting Props",
       "item_ids": [
         "28d3093d54f7",
-        "a1d166c2294e"
+        "a1d166c2294e",
+        "fa0faabf9440",
+        "346ac43d4459"
       ],
       "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-12T16:38:18.428926+00:00",
+      "picks_file": "picks/picks-2026-06-12-1639.md",
+      "why_text": "The NBA Finals has arrived at its most critical juncture \u2014 a Knicks team carrying the weight of a half-century championship drought is one win away from ending it, while the Spurs are fighting to force the series back to San Antonio. The cultural stakes are enormous: New York hasn't won a title since 1973, and the betting markets, ticket price swings, and free agency caution all signal that the league itself is holding its breath around what happens next. This isn't just a game \u2014 it's a potential civic moment for the most media-saturated sports market in the country.",
+      "last_escalated_item_ids": [
+        "28d3093d54f7",
+        "a1d166c2294e",
+        "fa0faabf9440",
+        "346ac43d4459"
+      ]
     },
     "0972ec3c3783b3f7": {
       "topic": "Knicks vs Spurs NBA Finals Game 5 Early Prediction",
@@ -2336,7 +2364,8 @@
     "963cfbcf09316741": {
       "topic": "Broncos Linebacker Cooper Felony Assault Charge",
       "item_ids": [
-        "d9721e2e6bde"
+        "d9721e2e6bde",
+        "10b185df567a"
       ],
       "created_at": "2026-06-12T13:53:11.080561+00:00",
       "last_escalated_size": 0,
@@ -2574,19 +2603,25 @@
         "1e514ff61d2f",
         "434786d6406a",
         "4f6ed1b9ccf6",
-        "59989ca7abcf"
+        "59989ca7abcf",
+        "4075e3d75e49",
+        "28c4821191a7",
+        "6a81b8f7ac40"
       ],
       "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-12T13:52:34.093574+00:00",
+      "last_escalated_size": 8,
+      "last_escalated_at": "2026-06-12T16:38:18.428926+00:00",
       "picks_file": "picks/picks-2026-06-12-1353.md",
-      "why_text": "BMW chose the 24 Hours of Le Mans \u2014 motorsport's most storied stage \u2014 to debut the M Concept Neue Klasse, a near-production preview of the first electric M3. The move signals that BMW M is done hedging: this is the direction, whether purists like it or not, with the company reportedly keeping a petrol M3 alive as a safety net for the holdouts. Culturally, it lands at the exact moment the performance car world is being forced to decide what 'driving excitement' means when there's no engine sound to romanticize.",
+      "why_text": "BMW chose the 24 Hours of Le Mans \u2014 motorsport's most storied stage \u2014 to debut the M Concept Neue Klasse, a near-production preview of the first electric M3. The move signals that BMW M is done hedging: this is the direction, whether purists like it or not, with the company reportedly keeping a petrol M3 alive as a safety net for the holdouts. Culturally, it lands at the exact moment the performance car world is being forced to decide what 'driving excitement' means when there's no engine sound to romanticize.\n**Update 11:39 AM CT:** The concept's design is already drawing direct comparisons to the AMG GT XX, signaling that the electric performance war is shaping up as a genuine two-horse race between Munich and Stuttgart. Meanwhile, on the track where BMW made the announcement, Dries Vanthoor underlined the brand's current motorsport credibility by putting the #15 BMW M Hybrid V8 on pole at Le Mans \u2014 a timely reminder that BMW is playing both the present and the future simultaneously.",
       "last_escalated_item_ids": [
         "8ba18496cbad",
         "1e514ff61d2f",
         "434786d6406a",
         "4f6ed1b9ccf6",
-        "59989ca7abcf"
+        "59989ca7abcf",
+        "4075e3d75e49",
+        "28c4821191a7",
+        "6a81b8f7ac40"
       ]
     },
     "55b2856e91c2afcc": {
@@ -2633,7 +2668,142 @@
       "created_at": "2026-06-12T13:53:11.080561+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "3661673c4e89b8de": {
+      "topic": "Bad Bunny adidas BadBo 1.0 Night Navy Sneaker Release",
+      "item_ids": [
+        "ca45153d5dee"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "15933a2e16b9c4ee": {
+      "topic": "Nike Air Force 1 2001 Shape Triple White Reissue",
+      "item_ids": [
+        "dd243b7992fc"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "25c9ae5cfa58721b": {
+      "topic": "Texas Rangers Nike Air Max 1 Mexican Heritage Collaboration",
+      "item_ids": [
+        "89bbadceaf8c"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "61463590357d99e1": {
+      "topic": "Solomon Free Concert Pacha New York Rain Makeup Show",
+      "item_ids": [
+        "2b6ff74610b4"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b43bca957a26d4b9": {
+      "topic": "True Panther Indie Music Success Profile",
+      "item_ids": [
+        "bc08e2343a7c"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c8bd08ae732031b2": {
+      "topic": "Nipsey Hussle Bino Rideaux Sacrifices PROLIFIC Album",
+      "item_ids": [
+        "477dbb3c940c"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "35b51cb898f700b6": {
+      "topic": "Kathryn Newton Hulu Drama Pilot Durango Casting",
+      "item_ids": [
+        "6ec5ca0c7c60"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d85aaea4a8777c7b": {
+      "topic": "Inanna Sarkis Beach Read 20th Century Studios Film",
+      "item_ids": [
+        "4cf57187a17f"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4ea151a8475ebbe1": {
+      "topic": "Little One Dark Comedy Film Cast Announcement",
+      "item_ids": [
+        "ae33f9e01254"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "958159d2d76c6c0d": {
+      "topic": "Joanna Levesque Mike Colter Very Thought of You Jazz Film",
+      "item_ids": [
+        "0f243be54742"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bd8fb5f883484e3f": {
+      "topic": "Baba\u00e0 Sumptuous Knits Fashion Profile",
+      "item_ids": [
+        "60fc70fb5b21"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dbe53d6609ec1694": {
+      "topic": "New Balance Mary Jane Sneaker Y2K Sandal",
+      "item_ids": [
+        "a7c14b0594c5"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8e3b5757446adbdc": {
+      "topic": "Skechers Y2K Classic Sneaker Revival",
+      "item_ids": [
+        "5cc8af50c314"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "effa4860825920f1": {
+      "topic": "NBA Finals Spotify Podcast Listening Surge",
+      "item_ids": [
+        "1f41e537222c"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e18a285cbc1a6fb6": {
+      "topic": "BMW Dealer AI Chatbot Trade-In Overpayment Error",
+      "item_ids": [
+        "1d14070d7951"
+      ],
+      "created_at": "2026-06-12T16:38:56.139641+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-12T13:53:17.540787+00:00"
+  "last_checked": "2026-06-12T16:39:12.924728+00:00"
 }
