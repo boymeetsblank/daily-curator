@@ -1,34 +1,5 @@
 {
   "known_ids": [
-    "91bfedc6f428",
-    "a860d6cfdc26",
-    "b1d7802bd372",
-    "6e88d0d670f8",
-    "c40d6e69f992",
-    "e3ba1c5cccf3",
-    "fef45eb01036",
-    "976bf0d1847c",
-    "1f7af0807da1",
-    "c918a1d4c6cb",
-    "f8cc935dac6e",
-    "d4a43e82a504",
-    "3a90706e041f",
-    "b83c2ffd13a0",
-    "c9e42da92ec7",
-    "80197cf4f64f",
-    "eadb7ab4a45e",
-    "b11f8f4c8fbb",
-    "d8a439fccb09",
-    "bbd27cebc1f4",
-    "2750fa5e1cb5",
-    "f00009868f4f",
-    "ed605bb2ef54",
-    "e7112686ac01",
-    "c53def9d61f7",
-    "34a21788ebfb",
-    "833a5ead2ff5",
-    "8ef726919b61",
-    "12394780179a",
     "6bbed14085f2",
     "635a8b0b3a88",
     "600fe5717d25",
@@ -499,332 +470,60 @@
     "c0747fb13acd",
     "884641791f6b",
     "404eca6338ab",
-    "0f61fe2215cf"
+    "0f61fe2215cf",
+    "1a11974f519c",
+    "bc07d02bf1bf",
+    "7e49b5464a4f",
+    "23149eb75b7e",
+    "0d09e8cf652b",
+    "f6c68869c6aa",
+    "2bcc7fbb903a",
+    "61e12d251dad",
+    "ddbafd12ab93",
+    "77218098ec17",
+    "1fbc521e5050",
+    "81d01224878c",
+    "60495c40add3",
+    "28d3093d54f7",
+    "88df46a520a4",
+    "ac38ec403a53",
+    "010fa9998027",
+    "37350fe16634",
+    "5a47c99ac4e6",
+    "8957e305f955",
+    "a107790de160",
+    "37350fe16634",
+    "807411b42871",
+    "7025f56adf4a",
+    "fd3d2f0f8498",
+    "473d6eda9432",
+    "41169b4140d8",
+    "4f850139fb13",
+    "77c227ae3187"
   ],
   "failed_ids": {
-    "2fe8276ae251": "2026-06-12T06:18:52.667251+00:00",
-    "9d3aa6c77eb8": "2026-06-12T06:18:52.667251+00:00",
-    "2debe551ba08": "2026-06-12T06:18:52.667251+00:00",
-    "f8c9c30a14b1": "2026-06-12T06:18:52.667251+00:00",
-    "1543f8005f0a": "2026-06-12T06:18:52.667251+00:00",
-    "381df9f5aa54": "2026-06-12T06:18:52.667251+00:00",
-    "73431adee82a": "2026-06-12T06:18:52.667251+00:00",
-    "4b0ff020dab8": "2026-06-12T06:18:52.667251+00:00",
-    "4265c34df8d3": "2026-06-12T06:18:52.667251+00:00",
-    "14ef1b665a1b": "2026-06-12T06:18:52.667251+00:00",
-    "1d920e711c39": "2026-06-12T06:18:52.667251+00:00",
-    "c65a91747658": "2026-06-12T06:18:52.667251+00:00",
-    "e037a5ae7df5": "2026-06-12T06:18:52.667251+00:00",
-    "a1043a6758bd": "2026-06-12T06:18:52.667251+00:00",
-    "d4e055a5ab38": "2026-06-12T06:18:52.667251+00:00"
+    "7a7fab491283": "2026-06-12T10:43:46.036664+00:00",
+    "696eb7b2ee9f": "2026-06-12T10:43:46.036664+00:00",
+    "85bbbe3d2b8b": "2026-06-12T10:43:46.036664+00:00",
+    "0d944799ed9b": "2026-06-12T10:43:46.036664+00:00",
+    "ff7ca67bbb65": "2026-06-12T10:43:46.036664+00:00",
+    "6091b0299a96": "2026-06-12T10:43:46.036664+00:00",
+    "bc350b81a486": "2026-06-12T10:43:46.036664+00:00",
+    "a020624db2ce": "2026-06-12T10:43:46.036664+00:00",
+    "bb90f91032a1": "2026-06-12T10:43:46.036664+00:00",
+    "34ab1d54aada": "2026-06-12T10:43:46.036664+00:00",
+    "fe96aa6e562a": "2026-06-12T10:43:46.036664+00:00",
+    "6b5516c92b80": "2026-06-12T10:43:46.036664+00:00",
+    "440b32958447": "2026-06-12T10:43:46.036664+00:00",
+    "895144ef647f": "2026-06-12T10:43:46.036664+00:00",
+    "ee75ac1677f0": "2026-06-12T10:43:46.036664+00:00",
+    "e8bda7922212": "2026-06-12T10:43:46.036664+00:00",
+    "7a7d7c05bfb3": "2026-06-12T10:43:46.036664+00:00",
+    "b0872454ea96": "2026-06-12T10:43:46.036664+00:00",
+    "95b49cce9938": "2026-06-12T10:43:46.036664+00:00",
+    "434075b35804": "2026-06-12T10:43:46.036664+00:00"
   },
   "live_clusters": {
-    "5bc1564ac0ff3ef7": {
-      "topic": "Maison Margiela Tabi Mules Summer Collection",
-      "item_ids": [
-        "642c7bd8470f"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a645c92295ab6efb": {
-      "topic": "Splatoon Raiders Nintendo Game Treasure Hunting",
-      "item_ids": [
-        "c6946560ce85"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7515802be76834c5": {
-      "topic": "Home Internet Streaming Quality Impact",
-      "item_ids": [
-        "faee6849b274"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fa96485dfb94c5cd": {
-      "topic": "The Guest Trine Dyrholm Family Drama Karlovy Vary",
-      "item_ids": [
-        "722acba606ac"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c5faff70587b098d": {
-      "topic": "Who's The Daddy Documentary Shirley Crabtree Wrestling",
-      "item_ids": [
-        "bfb7013fecfb"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "654dc713013ac1ef": {
-      "topic": "Game of Keys Prime Video Germany Intimacy Coordinators",
-      "item_ids": [
-        "6cd271bfaeac"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "48004d09564a383b": {
-      "topic": "The Boyfriend Amazon MGM Studios Series Development",
-      "item_ids": [
-        "b6cc7c542538"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dd2dd6d5295ebbd9": {
-      "topic": "J\u00f6rg Winger Conspiracy ZDF Deutschland 83 Creator",
-      "item_ids": [
-        "77fabb9b09bf"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5721954059647451": {
-      "topic": "Auburn Tharp World Record 110m Hurdles",
-      "item_ids": [
-        "3edb6c70b7a4"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d6a59b80293d86ae": {
-      "topic": "GLP-1 Online Purchase Scams Health Crisis",
-      "item_ids": [
-        "fcf05c267aa1"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "672e40f548439604": {
-      "topic": "YouTube Direct Messaging US Expansion",
-      "item_ids": [
-        "f0a537e98c42"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "45ca53461cafc8f5": {
-      "topic": "Hugo Boss Frasers Takeover Offer $2 Billion",
-      "item_ids": [
-        "40c2edd5e528"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d36df49b508272ee": {
-      "topic": "Corporate Migration Southeast Asia Business Trend",
-      "item_ids": [
-        "1c78074123b2"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "df1621fe5b5960bc": {
-      "topic": "Marvell Technology S&P 500 Inclusion AI Infrastructure",
-      "item_ids": [
-        "1700864c69c4"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9d424994d9ab1800": {
-      "topic": "Police Chief RaShall Brackney JPD Crime Technology",
-      "item_ids": [
-        "5ebeefd9fade"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "061de83c2ab7d226": {
-      "topic": "AI Brain Tumor Diagnosis Medical Technology",
-      "item_ids": [
-        "91d0b726f2c1"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1505c06e5a45afb6": {
-      "topic": "Amkor Technology AMKR Stock Semiconductor Performance",
-      "item_ids": [
-        "586c1ea6b878"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7ab5e8cb209126c9": {
-      "topic": "Wearable Sensors Stretchy Sticky Technology",
-      "item_ids": [
-        "4c82de9faf18"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9442a1d55ecf7c43": {
-      "topic": "Nike AF1 Dark Dashing Sneaker Release",
-      "item_ids": [
-        "33578e4628ed"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0c6d632f786aecca": {
-      "topic": "Sea-Gull 1963 Premium Watch Introduction",
-      "item_ids": [
-        "9409591e8247"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9ec16a074527ee78": {
-      "topic": "Yaxel Lendeborg NBA Draft Trade Up Discussion",
-      "item_ids": [
-        "5bb64ef5b039"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d06df2578a73e72": {
-      "topic": "He-Man Protein Supplements Marketing Culture",
-      "item_ids": [
-        "deac28c9b274"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c812e26494eb7b69": {
-      "topic": "Leon County Minority Women-Owned Business Program Ends",
-      "item_ids": [
-        "699f2203b40d"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b6ab7e3c8399d3cb": {
-      "topic": "Sports Ticket Prices Streaming Maze Fan Frustration",
-      "item_ids": [
-        "558547ed740d"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2cc7e2401a0de000": {
-      "topic": "Alexander Chambers Navajo Presidential Business Growth",
-      "item_ids": [
-        "e0c87a1fd70d"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5f8c8c76ad28e709": {
-      "topic": "New Jersey Business Climate Regional Analysis NJBIA",
-      "item_ids": [
-        "d297834ed96c"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ffe7c49b1327db5": {
-      "topic": "AI Boom Financial Crisis Risk Warren Warning",
-      "item_ids": [
-        "6bcfafad34cb"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "80e4a720d56272fd": {
-      "topic": "Financial System Nature Stability Assumption False",
-      "item_ids": [
-        "a8e26ceb80e6"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9e821fc4d2c17cfd": {
-      "topic": "Finance Magnates Africa Summit 2026 Precious Metals",
-      "item_ids": [
-        "9c9137e2098a"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0fa303dcc08e8d67": {
-      "topic": "ASEAN Secretary General International Finance Corporation Meeting",
-      "item_ids": [
-        "1efb6be83228"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6f813492615b9ac1": {
-      "topic": "EBRD Bank of Africa-Benin Trade Finance Support",
-      "item_ids": [
-        "c5287a029095"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2af6615a8a45d645": {
-      "topic": "BMW Dealership AI Chatbot Buyback Offer Revocation",
-      "item_ids": [
-        "5bf7dee1c343"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "357f3a5e6f0d87f0": {
-      "topic": "BMW Motorrad India F 450 GS Booking Pause",
-      "item_ids": [
-        "84d479bf4372"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4fb920df97d9da79": {
-      "topic": "Norton Atlas BMW F 450 GS Rivalry Specs",
-      "item_ids": [
-        "64651df6c05e"
-      ],
-      "created_at": "2026-06-11T09:20:20.820499+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "b5288c0178418619": {
       "topic": "Billionaire Security Market Growth",
       "item_ids": [
@@ -1349,17 +1048,29 @@
         "9385048e245f",
         "316712bf69aa",
         "b53b9bcf1b05",
-        "4639b62bec97"
+        "4639b62bec97",
+        "1fbc521e5050",
+        "81d01224878c",
+        "37350fe16634",
+        "5a47c99ac4e6",
+        "a107790de160"
       ],
       "created_at": "2026-06-11T16:57:03.786195+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-11T23:09:26.432624+00:00",
+      "last_escalated_size": 10,
+      "last_escalated_at": "2026-06-12T10:43:46.036664+00:00",
       "last_escalated_item_ids": [
         "5b5f17abd55d",
         "9385048e245f",
         "316712bf69aa",
-        "b53b9bcf1b05"
-      ]
+        "b53b9bcf1b05",
+        "4639b62bec97",
+        "1fbc521e5050",
+        "81d01224878c",
+        "37350fe16634",
+        "5a47c99ac4e6",
+        "a107790de160"
+      ],
+      "picks_file": "SUPPRESSED"
     },
     "a0d402cb7394dad9": {
       "topic": "Rice Business Service to School Veterans Expansion",
@@ -2033,7 +1744,8 @@
         "7dda1864018e",
         "a94df52e3692",
         "acc76192c563",
-        "7b533b4574a9"
+        "7b533b4574a9",
+        "7025f56adf4a"
       ],
       "created_at": "2026-06-11T21:38:13.286709+00:00",
       "last_escalated_size": 9,
@@ -2514,7 +2226,151 @@
       "created_at": "2026-06-12T06:19:27.716992+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "ab9f7450b6869608": {
+      "topic": "David Hockney Death Iconic British Artist Obituary",
+      "item_ids": [
+        "1a11974f519c"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "74fcb4d73ce63714": {
+      "topic": "Tony Leung Shanghai Golden Goblet Film Festival Jury",
+      "item_ids": [
+        "bc07d02bf1bf"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "008b4ae6b9634012": {
+      "topic": "The Weeknd 2026 World Tour Record-Breaking Revenue Tickets",
+      "item_ids": [
+        "7e49b5464a4f"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5a3dbb71e0825b76": {
+      "topic": "Tori Kelly God Must Really Love Me Album Parenthood",
+      "item_ids": [
+        "23149eb75b7e"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b93369e883df1f81": {
+      "topic": "Ludwig Season 2 David Mitchell BBC BritBox Detective",
+      "item_ids": [
+        "f6c68869c6aa"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9f5de8322e10fed5": {
+      "topic": "Sagrada Familia Tower Jesus Construction Japanese Broadcaster Documentary",
+      "item_ids": [
+        "2bcc7fbb903a"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "833eb7fcabdc78fe": {
+      "topic": "Sheeran Looper X One-Person Tour Music Equipment",
+      "item_ids": [
+        "61e12d251dad"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "22788988856acbeb": {
+      "topic": "Trad Wives Matchmakers $25K Wealthy Men Dating",
+      "item_ids": [
+        "ddbafd12ab93"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d58569e642c7fe9a": {
+      "topic": "US Foreign Influencers Work Visas 2026 World Cup Requirement",
+      "item_ids": [
+        "77218098ec17"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ad5d2b3831f77d91": {
+      "topic": "LeBron James NBA Team Owner Prediction Market 2030",
+      "item_ids": [
+        "60495c40add3"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f7fe214f9329fd1a": {
+      "topic": "Knicks vs Spurs NBA Finals Game 5 Betting Props",
+      "item_ids": [
+        "28d3093d54f7"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0972ec3c3783b3f7": {
+      "topic": "Knicks vs Spurs NBA Finals Game 5 Early Prediction",
+      "item_ids": [
+        "88df46a520a4"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e4c4e80189555999": {
+      "topic": "Spurs Game 4 Collapse NBA Finals Learning Opportunity",
+      "item_ids": [
+        "ac38ec403a53"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e2671d90ac22e19e": {
+      "topic": "Willis Reed Knicks NBA Finals Legacy Celebration",
+      "item_ids": [
+        "010fa9998027"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9cb88549b733e97b": {
+      "topic": "Jacqueline Morby Finance Software Queen Obituary",
+      "item_ids": [
+        "8957e305f955"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5b37ad612a080ac0": {
+      "topic": "BMW M5 Touring Wagon America Market Strategy",
+      "item_ids": [
+        "807411b42871"
+      ],
+      "created_at": "2026-06-12T10:44:14.889032+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-12T06:19:27.718249+00:00"
+  "last_checked": "2026-06-12T10:44:19.989513+00:00"
 }
