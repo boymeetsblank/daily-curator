@@ -1,44 +1,5 @@
 {
   "known_ids": [
-    "992e2ec7d87b",
-    "b0a651237e25",
-    "c4050b764de6",
-    "f69fa5be5eff",
-    "e576665643a0",
-    "0a56783422ef",
-    "d631cc51251d",
-    "84daf05dc322",
-    "1f865a8a9692",
-    "efc4dc994c4c",
-    "77d224d8abf4",
-    "e2ca823a5ca4",
-    "76d5e7fcaa8d",
-    "d435bade63a5",
-    "0ae588f311df",
-    "764e6374efc7",
-    "01228daab888",
-    "dce7ab8231ba",
-    "494afd597b88",
-    "be73fb6bd6ad",
-    "83d1c5612bde",
-    "11b5b4307a33",
-    "58eaa18d1892",
-    "32f44ef46f2c",
-    "4eebcae87f1c",
-    "6bf6f64059ed",
-    "6e3b1fba73e2",
-    "380e609a2e9c",
-    "3bc389ac624e",
-    "80058c8cd931",
-    "ccd33f316438",
-    "14a2b67a4247",
-    "1b5824267631",
-    "471eac43acc7",
-    "cab0a05a5da1",
-    "f1e4bf8575fe",
-    "3a9ea4e443ec",
-    "5bc219f6425e",
-    "7113d28eb79e",
     "1697ae2f311f",
     "38cbf97ce2c0",
     "fb39d32c36f5",
@@ -499,506 +460,72 @@
     "5e12e2275c65",
     "661d85a0d40e",
     "0b69b12fae10",
-    "1da02c47ed9f"
+    "1da02c47ed9f",
+    "bb98e4dd49c0",
+    "b5cc91dcaded",
+    "c60e8bcff0f5",
+    "ca452123f9c4",
+    "ecdb3585105b",
+    "411569993280",
+    "0e05834a46e6",
+    "c92c82d76047",
+    "fec3267d5607",
+    "e01359f4c21b",
+    "55f5894c9903",
+    "be9dd45ba084",
+    "1e4d3cd96f87",
+    "a053b7248e94",
+    "32d8bc12f052",
+    "42ae27c55a4b",
+    "58501c0c6955",
+    "fa849ee9ecbf",
+    "5537b996b379",
+    "009a50a283dd",
+    "90740b08af6e",
+    "de3351c2d4b6",
+    "d0c6b3bdc9f5",
+    "1f31e54fb5a4",
+    "7ec8657bdcaa",
+    "6e7bc894799f",
+    "1cb47792d290",
+    "77fcd6ec7c03",
+    "e33a24f8837c",
+    "a9159bece573",
+    "041f315923dc",
+    "c47794ac84fd",
+    "19ed8392d011",
+    "99b004d1cb34",
+    "c334de53ad7b",
+    "fca62c6058f6",
+    "25fe6da1076c",
+    "05fb33e22a96",
+    "5ce648fd916c"
   ],
-  "failed_ids": {},
+  "failed_ids": {
+    "817813df7a49": "2026-06-12T22:13:36.019011+00:00",
+    "c58696de2ac9": "2026-06-12T22:13:36.019011+00:00",
+    "bc824ff70bac": "2026-06-12T22:13:36.019011+00:00",
+    "e0759a7c3a0a": "2026-06-12T22:13:36.019011+00:00",
+    "2cec5204c305": "2026-06-12T22:13:36.019011+00:00",
+    "c6b1bd298d8d": "2026-06-12T22:13:36.019011+00:00",
+    "7b1ad84144a4": "2026-06-12T22:13:36.019011+00:00",
+    "96b75c97f1bd": "2026-06-12T22:13:36.019011+00:00",
+    "a7d310975007": "2026-06-12T22:13:36.019011+00:00",
+    "ccf2d282ce60": "2026-06-12T22:13:36.019011+00:00",
+    "84bbea37cbda": "2026-06-12T22:13:36.019011+00:00",
+    "01ddd2c79c87": "2026-06-12T22:13:36.019011+00:00",
+    "12202050a23f": "2026-06-12T22:13:36.019011+00:00",
+    "b1320faa2fea": "2026-06-12T22:13:36.019011+00:00",
+    "af1113669eda": "2026-06-12T22:13:36.019011+00:00",
+    "426e73bb64b8": "2026-06-12T22:13:36.019011+00:00",
+    "3e649ef592b4": "2026-06-12T22:13:36.019011+00:00",
+    "54e048defc2b": "2026-06-12T22:13:36.019011+00:00",
+    "4b0eded3ec7c": "2026-06-12T22:13:36.019011+00:00",
+    "0b1c5d64ef76": "2026-06-12T22:13:36.019011+00:00",
+    "c2291c181ecc": "2026-06-12T22:13:36.019011+00:00",
+    "53bdb48528cf": "2026-06-12T22:13:36.019011+00:00"
+  },
   "live_clusters": {
-    "e51c2248ae33f4ea": {
-      "topic": "Mifland Sperry American Classics Footwear Redesign",
-      "item_ids": [
-        "992e2ec7d87b"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8ba5b0f02198290c": {
-      "topic": "Steph Curry Tiger Woods Golf Equipment Comparison",
-      "item_ids": [
-        "b0a651237e25"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "950b404cea7d8d9b": {
-      "topic": "Heron Preston USMNT World Cup Apparel Collaboration",
-      "item_ids": [
-        "c4050b764de6"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0d17141ec2a5ebdc": {
-      "topic": "New Balance ABZORB 2000 Smoked Violet Release",
-      "item_ids": [
-        "f69fa5be5eff"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "516e68d510f18909": {
-      "topic": "Nike Air Force 1 Low Playing Cards Inspired",
-      "item_ids": [
-        "e576665643a0"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fa5449125aac2ede": {
-      "topic": "New Balance 1954R Triple Black Release",
-      "item_ids": [
-        "0a56783422ef"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "758318a7c97822a2": {
-      "topic": "Maggie Gyllenhaal Creation Lake Warner Bros Adaptation",
-      "item_ids": [
-        "d631cc51251d"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c04d10b99ef540a4": {
-      "topic": "Jennifer Lopez Nomadland Film Criticism",
-      "item_ids": [
-        "84daf05dc322"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "019c1c6508985c37": {
-      "topic": "Orlando Senna Iracema Co-Director Death",
-      "item_ids": [
-        "1f865a8a9692"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2a7a59af7ef07ded": {
-      "topic": "Elisabeth Hasselbeck CBS Mornings Guest Host",
-      "item_ids": [
-        "efc4dc994c4c"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6409550d1d344ac2": {
-      "topic": "Rosal\u00eda Lux Tour Florida Dates Rescheduled",
-      "item_ids": [
-        "e2ca823a5ca4"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0ff87d950d0b7fb3": {
-      "topic": "A$AP Rocky Knicks NBA Finals Victory Reaction",
-      "item_ids": [
-        "76d5e7fcaa8d"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "78de3ec84c16d248": {
-      "topic": "Virgin Music Group Seeker Global Distribution Partnership",
-      "item_ids": [
-        "0ae588f311df"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e8c6b79894b0fd14": {
-      "topic": "Ella Langley Shania Twain Cover",
-      "item_ids": [
-        "764e6374efc7"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "506c494361ddb3cb": {
-      "topic": "Widow's Bay Season 2 Renewal Katie Dippold Apple TV Deal",
-      "item_ids": [
-        "01228daab888"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1aa55924e885ed40": {
-      "topic": "Ted Season 2 VFX Animated Series Development",
-      "item_ids": [
-        "dce7ab8231ba"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e3ff4f0530f6dddf": {
-      "topic": "Hit Man Netflix Series Stephen Falk Glen Powell Linklater",
-      "item_ids": [
-        "494afd597b88"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9b8700e509cfaae4": {
-      "topic": "Lachlan Murdoch Fox CEO Bonus Extension 2030",
-      "item_ids": [
-        "be73fb6bd6ad"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1e35536802689e94": {
-      "topic": "Richard Gadd Half Man Physical Transformation Drama",
-      "item_ids": [
-        "83d1c5612bde"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bf34e0580f00d636": {
-      "topic": "OpenAI Engineer ChatGPT Major Transformation Leadership",
-      "item_ids": [
-        "11b5b4307a33"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3464c3430b4f285a": {
-      "topic": "Elon Musk Effigy Times Square Grok Protest",
-      "item_ids": [
-        "58eaa18d1892"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a54004198a77decf": {
-      "topic": "Overwatch New Hero Bike Mechanic Ability",
-      "item_ids": [
-        "6bf6f64059ed"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8e3901bf401c4530": {
-      "topic": "Iran Oil Deal Energy Policy Washington Discussion",
-      "item_ids": [
-        "3bc389ac624e",
-        "f9ebe1c01126",
-        "09c3410c1339",
-        "f20a1ddefee4"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-12T16:38:18.428926+00:00",
-      "picks_file": "picks/picks-2026-06-12-1638.md",
-      "why_text": "A proposed peace deal between Washington and Tehran that would reopen the Strait of Hormuz \u2014 one of the world's most critical oil chokepoints \u2014 is already moving energy markets, with oil prices dropping on the news. This is a massive geopolitical pivot: the Strait carries roughly 20% of global oil supply, and any normalization between the U.S. and Iran would reshape Middle East energy dynamics overnight. It lands at a moment when the White House is simultaneously facing domestic legal battles over its DOJ restructuring, making this a two-front pressure week for the administration.",
-      "last_escalated_item_ids": [
-        "3bc389ac624e",
-        "f9ebe1c01126",
-        "09c3410c1339"
-      ]
-    },
-    "e5e16156ba056ae9": {
-      "topic": "Andreessen Horowitz VC AI Political Infiltration Criticism",
-      "item_ids": [
-        "80058c8cd931"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fd4b3f84dc6f77a1": {
-      "topic": "Biden Student Loan Payment Plan Trump Administration Changes",
-      "item_ids": [
-        "ccd33f316438"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dd908fa9e31b592b": {
-      "topic": "Marvell Technology CFO Transition Announcement",
-      "item_ids": [
-        "14a2b67a4247"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "708a2f6201597744": {
-      "topic": "NASA Space Technology Research Award",
-      "item_ids": [
-        "1b5824267631"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4a8f46184ef69242": {
-      "topic": "Government Contracting Technology Industry Webinar",
-      "item_ids": [
-        "471eac43acc7"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cb9852d82967f904": {
-      "topic": "MPI Technology Therapeutic Cell Mapping Medical",
-      "item_ids": [
-        "cab0a05a5da1"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b789ce9babc05e15": {
-      "topic": "GlobalFoundries Vermont Space Mission Technology",
-      "item_ids": [
-        "f1e4bf8575fe"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a5031ceae1ae4281": {
-      "topic": "Nike Faded Dark Denim Classic Sneaker",
-      "item_ids": [
-        "3a9ea4e443ec"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "49b1afe2541201a9": {
-      "topic": "2026 NBA Mock Draft Jalen Williams Trade",
-      "item_ids": [
-        "5bc219f6425e"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ee9499052dc4f6f7": {
-      "topic": "Nets De'Aaron Fox Spurs Trade Opportunity",
-      "item_ids": [
-        "7113d28eb79e"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6ceba810203820c4": {
-      "topic": "Knicks Game 4 NBA Finals Comeback Analysis",
-      "item_ids": [
-        "1697ae2f311f"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "91796828147fed68": {
-      "topic": "Charles Barkley Anti-3-Pointer Stance NBA Finals Vindication",
-      "item_ids": [
-        "38cbf97ce2c0"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e51d9796350951df": {
-      "topic": "Iman Shumpert Knicks NBA Finals Victory Celebration",
-      "item_ids": [
-        "fb39d32c36f5"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "027d5f4f313ddec9": {
-      "topic": "Electricians Business Archive Content",
-      "item_ids": [
-        "7b7f091de89a"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f90b51bb4b7d5a2f": {
-      "topic": "Adobe Revenue Forecast CFO Exit Announcement",
-      "item_ids": [
-        "977ee1be63c1"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "80a8604c85cd3698": {
-      "topic": "Philadelphia City Council Carriage Horse Business Ban",
-      "item_ids": [
-        "1f78785243d4"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7ed2c2ebb5a27ce5": {
-      "topic": "Anthropic Business Partner Surprise Announcement",
-      "item_ids": [
-        "ff37197c2b67"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1fb606aa92c843f3": {
-      "topic": "Virginia Business Screening Services Program Compliance",
-      "item_ids": [
-        "217d451fde42"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "64f7904754a44f32": {
-      "topic": "White House Small Business Contractor Policy Impact",
-      "item_ids": [
-        "e7297995f835"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dc7704abfa4a4518": {
-      "topic": "Carbon Accounting Ledger U.S. Business Policy Multitool",
-      "item_ids": [
-        "277377468585"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "40c5106e9555ee76": {
-      "topic": "Ondo Finance John Hoffman ETF Tokenized Portfolios",
-      "item_ids": [
-        "14a2b67a4247"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e3dbcb233d34b2ea": {
-      "topic": "Dallas Industrial Property C-PACE Data Center Financing",
-      "item_ids": [
-        "f7de0f845eeb"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7c8c4cc1b50a0b04": {
-      "topic": "Melanoma Research Alliance Leveraged Finance Fundraising",
-      "item_ids": [
-        "bc6024221bce"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "566c178b9039ec2c": {
-      "topic": "Le Mans 24 Hours BMW Le Mans Hypercar Pole Penalty",
-      "item_ids": [
-        "277377468585",
-        "9fea9d51a307",
-        "52db0d68826d",
-        "76a8e3fd10c5",
-        "8e9026ae9b8a",
-        "7dda1864018e",
-        "a94df52e3692",
-        "acc76192c563",
-        "7b533b4574a9",
-        "7025f56adf4a",
-        "8d0f380b7a3a",
-        "7ecbf75f2924"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 12,
-      "last_escalated_at": "2026-06-12T20:38:10.786858+00:00",
-      "picks_file": "picks/picks-2026-06-11-2138.md",
-      "why_text": "Valentino Rossi's teammate Robin Frijns / Dries Vanthoor's BMW M Hybrid V8 picks up pole position at Le Mans after the JOTA Cadillac of Jack Aitken had its fastest lap stripped \u2014 a qualifying penalty drama that reshuffles the front row before the biggest endurance race of the year even starts. This matters because Le Mans pole carries real symbolic weight in the hypercar era, where BMW is still chasing its first major GTE/Hypercar class win, and the manner of getting there \u2014 through a rival's penalty rather than outright pace \u2014 will fuel the narrative heading into Sunday's race. The Cadillac vs. BMW fight at the front is exactly the kind of manufacturer battle that defines modern Le Mans, and it just got spicy before a wheel has turned in anger.\n**Update 6:10 PM CT:** Confirming the pole story, IMSA has officially recognised Vanthoor and BMW M Team WRT as leading the field from pole at Le Mans \u2014 while Motorsport.com's FP4 report serves as a reminder that Cadillac still holds a pace advantage in race trim, making the penalty-gifted grid position look more precarious once the 24 hours actually begins.\n**Update 3:39 PM CT:** **Update:** With the Le Mans 24 Hours now live and the grid drama drawing wider attention, Rolling Stone has published a streaming and broadcast guide for the 2026 race \u2014 a signal that the Frijns/Vanthoor pole story and the Cadillac rivalry are pulling mainstream audiences beyond the core motorsport fanbase into the event.",
-      "last_escalated_item_ids": [
-        "277377468585",
-        "9fea9d51a307",
-        "52db0d68826d",
-        "76a8e3fd10c5",
-        "8e9026ae9b8a",
-        "7dda1864018e",
-        "a94df52e3692",
-        "acc76192c563",
-        "7b533b4574a9",
-        "7025f56adf4a",
-        "8d0f380b7a3a",
-        "7ecbf75f2924"
-      ]
-    },
-    "f0073c2d993ebd90": {
-      "topic": "South Africa Trending Topic",
-      "item_ids": [
-        "338ffe7269ec"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4fa90b677395029b": {
-      "topic": "Bankr Trending Topic",
-      "item_ids": [
-        "da67b1793758"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9d130497c1ab887e": {
-      "topic": "ImmoralArmy Trending Topic",
-      "item_ids": [
-        "e1f1f5a022dd"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "35d21caa032aebec": {
-      "topic": "Jay Clayton Trending Topic",
-      "item_ids": [
-        "28266a27b908"
-      ],
-      "created_at": "2026-06-11T21:38:13.286709+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "f28ca465854fa94d": {
       "topic": "Nike Air Force 1 Black Croc Luxury Release",
       "item_ids": [
@@ -1190,18 +717,22 @@
         "272399181d5f",
         "3d15c51c5147",
         "fa187bbc1acc",
-        "5d7be7e98d43"
+        "5d7be7e98d43",
+        "55f5894c9903"
       ],
       "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-12T18:29:43.321472+00:00",
+      "last_escalated_size": 7,
+      "last_escalated_at": "2026-06-12T22:13:36.019011+00:00",
       "picks_file": "picks/picks-2026-06-12-1830.md",
-      "why_text": "With the 2026 FIFA World Cup coming to North America, Nike is planting its flag early \u2014 a Chinatown pop-up and a Jordan Brand cleat nodding to Ronaldo's 2002 legend signal that the sneaker industry is treating this tournament like the biggest cultural moment of the decade. The Jordan-Mercurial crossover is especially pointed: it collapses football, basketball, and nostalgia into a single object at a time when the U.S. is desperate to prove it can host \u2014 and understand \u2014 the world's game. This is brand storytelling as geopolitical soft power, and Nike moved first.",
+      "why_text": "With the 2026 FIFA World Cup coming to North America, Nike is planting its flag early \u2014 a Chinatown pop-up and a Jordan Brand cleat nodding to Ronaldo's 2002 legend signal that the sneaker industry is treating this tournament like the biggest cultural moment of the decade. The Jordan-Mercurial crossover is especially pointed: it collapses football, basketball, and nostalgia into a single object at a time when the U.S. is desperate to prove it can host \u2014 and understand \u2014 the world's game. This is brand storytelling as geopolitical soft power, and Nike moved first.\n**Update 5:14 PM CT:** The tournament is now officially underway: Mexico's opening match victory over South Africa drew record audiences on Fox, confirming that stateside appetite for the World Cup has hit a new ceiling, while Canada's co-host momentum faces an early test after trailing in their group stage opener \u2014 the kind of live drama that turns a ticket guide into must-act-now urgency. Billboard's rollout of the official soundtrack, anchored by tracks like 'Dai Dai,' 'Champions,' and 'El \u00daltimo Baile,' signals that the cultural infrastructure around the tournament is fully activated, giving brands and buyers alike a sense that the moment they've been building toward has arrived.",
       "last_escalated_item_ids": [
         "9b2fa749eda2",
         "b81df49a01fe",
         "272399181d5f",
-        "3d15c51c5147"
+        "3d15c51c5147",
+        "fa187bbc1acc",
+        "5d7be7e98d43",
+        "55f5894c9903"
       ]
     },
     "0edc98297e9f0659": {
@@ -1451,11 +982,18 @@
       "topic": "David Hockney Death Iconic British Artist Obituary",
       "item_ids": [
         "1a11974f519c",
-        "5e12e2275c65"
+        "5e12e2275c65",
+        "d0c6b3bdc9f5"
       ],
       "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-12T22:13:36.019011+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "1a11974f519c",
+        "5e12e2275c65",
+        "d0c6b3bdc9f5"
+      ]
     },
     "74fcb4d73ce63714": {
       "topic": "Tony Leung Shanghai Golden Goblet Film Festival Jury",
@@ -1549,13 +1087,18 @@
         "34221deeb743",
         "5fa26af862c1",
         "b45742276fcb",
-        "05a69a9b9e30"
+        "05a69a9b9e30",
+        "77fcd6ec7c03",
+        "e33a24f8837c",
+        "a9159bece573",
+        "041f315923dc",
+        "99b004d1cb34"
       ],
       "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 8,
-      "last_escalated_at": "2026-06-12T20:38:10.786858+00:00",
+      "last_escalated_size": 13,
+      "last_escalated_at": "2026-06-12T22:13:36.019011+00:00",
       "picks_file": "picks/picks-2026-06-12-1639.md",
-      "why_text": "The NBA Finals has arrived at its most critical juncture \u2014 a Knicks team carrying the weight of a half-century championship drought is one win away from ending it, while the Spurs are fighting to force the series back to San Antonio. The cultural stakes are enormous: New York hasn't won a title since 1973, and the betting markets, ticket price swings, and free agency caution all signal that the league itself is holding its breath around what happens next. This isn't just a game \u2014 it's a potential civic moment for the most media-saturated sports market in the country.\n**Update 3:39 PM CT:** Jay-Z's 'Empire State of Mind' surged on streaming charts following the Knicks' latest comeback win, underscoring the cultural electricity building around a potential New York title, while on the San Antonio side, Spurs head coach Mitch Johnson made a point of publicly reaffirming his trust in De'Aaron Fox \u2014 a signal that the Spurs are leaning on their star to even the series before it returns to Madison Square Garden.",
+      "why_text": "The NBA Finals has arrived at its most critical juncture \u2014 a Knicks team carrying the weight of a half-century championship drought is one win away from ending it, while the Spurs are fighting to force the series back to San Antonio. The cultural stakes are enormous: New York hasn't won a title since 1973, and the betting markets, ticket price swings, and free agency caution all signal that the league itself is holding its breath around what happens next. This isn't just a game \u2014 it's a potential civic moment for the most media-saturated sports market in the country.\n**Update 3:39 PM CT:** Jay-Z's 'Empire State of Mind' surged on streaming charts following the Knicks' latest comeback win, underscoring the cultural electricity building around a potential New York title, while on the San Antonio side, Spurs head coach Mitch Johnson made a point of publicly reaffirming his trust in De'Aaron Fox \u2014 a signal that the Spurs are leaning on their star to even the series before it returns to Madison Square Garden.\n**Update 5:14 PM CT:** With Game 5 shifting to San Antonio, Wembanyama is publicly shaking off the Knicks' comeback and projecting confidence ahead of what would be an elimination game for the Spurs, while Keldon Johnson echoes that defiant tone in the locker room \u2014 but the cultural lens is sharpening on New York's side too, with CNN spotlighting the Latino duo powering the Knicks' historic run as the city's fanbase braces for a potential title-clinching moment.",
       "last_escalated_item_ids": [
         "28d3093d54f7",
         "a1d166c2294e",
@@ -1564,7 +1107,12 @@
         "34221deeb743",
         "5fa26af862c1",
         "b45742276fcb",
-        "05a69a9b9e30"
+        "05a69a9b9e30",
+        "77fcd6ec7c03",
+        "e33a24f8837c",
+        "a9159bece573",
+        "041f315923dc",
+        "99b004d1cb34"
       ]
     },
     "0972ec3c3783b3f7": {
@@ -1614,11 +1162,20 @@
     "5b37ad612a080ac0": {
       "topic": "BMW M5 Touring Wagon America Market Strategy",
       "item_ids": [
-        "807411b42871"
+        "807411b42871",
+        "25fe6da1076c",
+        "05fb33e22a96"
       ],
       "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-12T22:13:36.019011+00:00",
+      "picks_file": "picks/picks-2026-06-12-2214.md",
+      "why_text": "For decades, American buyers have been told they don't want wagons \u2014 BMW just proved otherwise. The M5 Touring's strong US reception is forcing the brand to reconsider its long-standing assumption that only SUVs sell stateside, and that's a genuinely big deal for enthusiasts who've watched Europe hoard the good stuff for years. This isn't just a BMW story; it's a crack in the wall that's kept performance wagons out of American showrooms across every brand.",
+      "last_escalated_item_ids": [
+        "807411b42871",
+        "25fe6da1076c",
+        "05fb33e22a96"
+      ]
     },
     "a7655eafc6bc775e": {
       "topic": "New Music Releases Weekly Roundup",
@@ -1971,7 +1528,8 @@
         "4f734dc6b324",
         "2ff7bd34b47a",
         "75a0962f9e18",
-        "5f968e4ebd65"
+        "5f968e4ebd65",
+        "5ce648fd916c"
       ],
       "created_at": "2026-06-12T13:53:11.080561+00:00",
       "last_escalated_size": 12,
@@ -2681,7 +2239,8 @@
         "f427f2a16215",
         "5f968e4ebd65",
         "09a5285fdb71",
-        "15dd23e342fc"
+        "15dd23e342fc",
+        "fca62c6058f6"
       ],
       "created_at": "2026-06-12T18:30:35.118243+00:00",
       "last_escalated_size": 6,
@@ -2862,7 +2421,8 @@
     "48e5389960310a16": {
       "topic": "Aaron Sorkin Social Reckoning Jesse Eisenberg Zuckerberg",
       "item_ids": [
-        "82896f917487"
+        "82896f917487",
+        "fa849ee9ecbf"
       ],
       "created_at": "2026-06-12T20:39:03.285592+00:00",
       "last_escalated_size": 0,
@@ -2925,11 +2485,22 @@
     "7e73926be1ea7da7": {
       "topic": "DOJ Approves Paramount WBD $111B Acquisition",
       "item_ids": [
-        "d0a0a1033c48"
+        "d0a0a1033c48",
+        "0e05834a46e6",
+        "58501c0c6955",
+        "90740b08af6e"
       ],
       "created_at": "2026-06-12T20:39:03.285592+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-12T22:13:36.019011+00:00",
+      "picks_file": "picks/picks-2026-06-12-2214.md",
+      "why_text": "The Justice Department just waved through the biggest media consolidation in years without a single condition attached \u2014 merging Paramount and Warner Bros. Discovery into a $111 billion behemoth that would control HBO, CNN, MTV, Paramount Pictures, CBS, and more under one roof. This is a seismic reshaping of legacy Hollywood at exactly the moment streaming has already gutted the old studio model, and regulators essentially said the old giants are too wounded to pose a competitive threat. The deal signals that Washington now sees Netflix, YouTube, and tech platforms as the real power in entertainment \u2014 not the studios scrambling to survive them.",
+      "last_escalated_item_ids": [
+        "d0a0a1033c48",
+        "0e05834a46e6",
+        "58501c0c6955",
+        "90740b08af6e"
+      ]
     },
     "2104abbbada3211d": {
       "topic": "Adam Keen Agenda Collective PR Firm Launch",
@@ -3281,7 +2852,223 @@
       "created_at": "2026-06-12T20:39:03.285592+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "6f2fa0f8781f5248": {
+      "topic": "Gregory Crewdson Dream House Prints Suburbia Photography",
+      "item_ids": [
+        "bb98e4dd49c0"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ff47e2dc63319fcf": {
+      "topic": "Nike Kobe 4 Draft Day Lakers Release",
+      "item_ids": [
+        "b5cc91dcaded"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3b496c1ad1c5c842": {
+      "topic": "Nike KD 19 Candy Apple June Release",
+      "item_ids": [
+        "c60e8bcff0f5"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9531c73e16a5e6e6": {
+      "topic": "Kobe Charlotte to LA Nike Dunk Low Protro",
+      "item_ids": [
+        "ca452123f9c4"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f659a37bc634fc7d": {
+      "topic": "Jinsei Anime Philosophy Fame Review",
+      "item_ids": [
+        "ecdb3585105b"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "01082e23c1e102f2": {
+      "topic": "Taylor Swift Toy Story 5 Spielberg Knicks Next Era",
+      "item_ids": [
+        "411569993280"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "289249eb390572f6": {
+      "topic": "Backstreet Boys Paw Patrol Dino Movie Ed Sheeran",
+      "item_ids": [
+        "c92c82d76047"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1991e89c9f84d564": {
+      "topic": "Ariana Grande Eternal Sunshine Tour Urban Outfitters",
+      "item_ids": [
+        "fec3267d5607"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "042f317214579df7": {
+      "topic": "Lil Baby Hemp Company THC E Coli Lawsuit",
+      "item_ids": [
+        "e01359f4c21b"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "00d64bec5af67d11": {
+      "topic": "Riley Green Toby Keith Think As You Drunk Tribute",
+      "item_ids": [
+        "be9dd45ba084"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cbfe95d063161e07": {
+      "topic": "Dr Martens 1461 65th Anniversary Rock Era",
+      "item_ids": [
+        "1e4d3cd96f87"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aac7a7428abbc04e": {
+      "topic": "Alanis Morissette Michael Bubl\u00e9 2026 World Cup Canada Ceremony",
+      "item_ids": [
+        "a053b7248e94"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0178bfd903d3dfee": {
+      "topic": "Rosal\u00eda Tour Postponement Family First",
+      "item_ids": [
+        "32d8bc12f052"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4a70c04d257e16b3": {
+      "topic": "Roku Stock 4-Year High Sale Talks",
+      "item_ids": [
+        "42ae27c55a4b"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63a6ac2e309a2bd0": {
+      "topic": "Blair Witch Project Heather Donahue Reboot Clarification",
+      "item_ids": [
+        "5537b996b379"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d005c74fc4897406": {
+      "topic": "Meta AI Unit Dysfunction Internal Conflict",
+      "item_ids": [
+        "009a50a283dd"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bf33c88c3520a678": {
+      "topic": "SpaceX IPO Proxy Trading Stock Dip",
+      "item_ids": [
+        "de3351c2d4b6"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b7d2a0ef4c8d8520": {
+      "topic": "Nike Court Staple Cherry Red Tonal",
+      "item_ids": [
+        "1f31e54fb5a4"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0eb39011a689087f": {
+      "topic": "Nike 30-Year Techy Classic Sophisticated",
+      "item_ids": [
+        "7ec8657bdcaa"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "adbce41081bdfc42": {
+      "topic": "New Balance Soft Pink Dad Shoe",
+      "item_ids": [
+        "6e7bc894799f"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "65c8c34127ec3813": {
+      "topic": "NBA Trade Chatter Latest Updates",
+      "item_ids": [
+        "1cb47792d290"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3de0fe4e65417273": {
+      "topic": "Video Game Hardware Prices Luxury Hobby",
+      "item_ids": [
+        "c47794ac84fd"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5d727e1a209cbe81": {
+      "topic": "Cinema Inspired Modern Slot Games",
+      "item_ids": [
+        "19ed8392d011"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9652201dacb85ed9": {
+      "topic": "Creative Business AI-Proof $2.5M Success",
+      "item_ids": [
+        "c334de53ad7b"
+      ],
+      "created_at": "2026-06-12T22:14:19.683173+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-12T20:39:18.216976+00:00"
+  "last_checked": "2026-06-12T22:14:41.477840+00:00"
 }
