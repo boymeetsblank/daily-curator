@@ -1,35 +1,5 @@
 {
   "known_ids": [
-    "1203233bb60e",
-    "8ccb56cb2a61",
-    "aa438435a450",
-    "a2c767a351a3",
-    "3355a47c4da0",
-    "cc7914537445",
-    "a543d3b6321d",
-    "5dae74e3a2e6",
-    "b213d551811a",
-    "177c9faac7d1",
-    "af69f4bcaf50",
-    "9c700d5542ed",
-    "319422f79f50",
-    "2e9957b22094",
-    "5176f9278e0c",
-    "04367a04043c",
-    "99dfe759277f",
-    "4639b62bec97",
-    "6fb5256e537d",
-    "16d1c1a55627",
-    "51bd9d3a8139",
-    "639e0866be12",
-    "97ee5ab8320b",
-    "c60ab21f7aae",
-    "321caf74bec3",
-    "cdb93079aac8",
-    "768c822cbb4e",
-    "7d08537bcad6",
-    "d62347c335d6",
-    "14bdbaaf7576",
     "50815865e8d0",
     "e4416c4f2f4d",
     "2dd279158675",
@@ -499,7 +469,37 @@
     "cc9511caac92",
     "3b7f48b12bae",
     "390c547c391e",
-    "63e3f3e67a37"
+    "63e3f3e67a37",
+    "ba1eb374cec2",
+    "0c3ac17f63eb",
+    "5e808f6636a3",
+    "fad86ead0d49",
+    "5d1d94b99763",
+    "5ddfefbc5b6b",
+    "4db05d86dc02",
+    "a875d22def01",
+    "416805cbfcd9",
+    "c453ac27443a",
+    "1916599b311f",
+    "7720c4094a85",
+    "874d538d729d",
+    "eec2578340b7",
+    "84b7c49feace",
+    "b69d2d15e090",
+    "b06d5c52c2c2",
+    "33a93d532d6c",
+    "704ea2331d22",
+    "ac1162b2e107",
+    "7d8ded313876",
+    "9fd023941a91",
+    "427d9f7d4334",
+    "62e99f9cf08a",
+    "029131c63b29",
+    "9c33e50044a5",
+    "5fbdb95080b3",
+    "655610f2ea88",
+    "03e3076a23bc",
+    "6f8a365ed641"
   ],
   "failed_ids": {
     "0e075cf3b568": "2026-06-13T09:46:39.222937+00:00",
@@ -523,7 +523,12 @@
     "cf33f0b0ce9b": "2026-06-13T11:43:07.478634+00:00",
     "4ef239d73f1e": "2026-06-13T11:43:07.478634+00:00",
     "c7b0e3b74e87": "2026-06-13T11:43:07.478634+00:00",
-    "5a5b3e435f69": "2026-06-13T11:43:07.478634+00:00"
+    "5a5b3e435f69": "2026-06-13T11:43:07.478634+00:00",
+    "2ca9c188c83c": "2026-06-13T13:13:26.041562+00:00",
+    "9a0b4a89094e": "2026-06-13T13:13:26.041562+00:00",
+    "f997c7890b19": "2026-06-13T13:13:26.041562+00:00",
+    "6aaa0465ee6b": "2026-06-13T13:13:26.041562+00:00",
+    "9cfe53aba453": "2026-06-13T13:13:26.041562+00:00"
   },
   "live_clusters": {
     "a7655eafc6bc775e": {
@@ -759,18 +764,28 @@
         "1ddf01dce587",
         "40954dc18913",
         "b0bb6c5f5f90",
-        "2b2d6aece3e8"
+        "2b2d6aece3e8",
+        "874d538d729d",
+        "eec2578340b7",
+        "84b7c49feace",
+        "b69d2d15e090",
+        "b06d5c52c2c2"
       ],
       "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-13T11:43:07.478634+00:00",
+      "last_escalated_size": 9,
+      "last_escalated_at": "2026-06-13T13:13:26.041562+00:00",
       "picks_file": "picks/picks-2026-06-13-1143.md",
-      "why_text": "For the first time since 1999, the New York Knicks are on the NBA Finals stage \u2014 and the cultural weight of that drought makes this moment bigger than basketball. A city that has spent 26 years watching the Lakers, Warriors, and Celtics cycle through championships is now the center of the sports universe, and the nostalgia angle (Ben Stiller, Y2K-era New York) is already flooding the discourse. This isn't just a Knicks story \u2014 it's a New York story, and those tend to consume everything.",
+      "why_text": "For the first time since 1999, the New York Knicks are on the NBA Finals stage \u2014 and the cultural weight of that drought makes this moment bigger than basketball. A city that has spent 26 years watching the Lakers, Warriors, and Celtics cycle through championships is now the center of the sports universe, and the nostalgia angle (Ben Stiller, Y2K-era New York) is already flooding the discourse. This isn't just a Knicks story \u2014 it's a New York story, and those tend to consume everything.\n**Update 8:13 AM CT:** With the Knicks one win away from a championship, Game 5 logistics are now their own cultural flashpoint: San Antonio has locked out non-locals from buying Finals tickets while New York is spinning up multiple watch parties \u2014 including a return of the MSG event \u2014 as the city braces to collectively witness what could be its first NBA title celebration in over two decades.",
       "last_escalated_item_ids": [
         "1ddf01dce587",
         "40954dc18913",
         "b0bb6c5f5f90",
-        "2b2d6aece3e8"
+        "2b2d6aece3e8",
+        "874d538d729d",
+        "eec2578340b7",
+        "84b7c49feace",
+        "b69d2d15e090",
+        "b06d5c52c2c2"
       ]
     },
     "14932883ee4d61b2": {
@@ -1633,7 +1648,9 @@
         "15dd23e342fc",
         "fca62c6058f6",
         "6c9cdaeff91c",
-        "8287ec3d7d42"
+        "8287ec3d7d42",
+        "fad86ead0d49",
+        "9fd023941a91"
       ],
       "created_at": "2026-06-12T18:30:35.118243+00:00",
       "last_escalated_size": 9,
@@ -2608,7 +2625,8 @@
         "debd8a7ac5d0",
         "b322e813452a",
         "149b925647d1",
-        "82878a0de40b"
+        "82878a0de40b",
+        "9c33e50044a5"
       ],
       "created_at": "2026-06-13T02:49:49.068527+00:00",
       "last_escalated_size": 5,
@@ -2896,7 +2914,8 @@
     "4ac91358c5272a51": {
       "topic": "3D Printed Guns Regulation Law Policy",
       "item_ids": [
-        "e644daf7375c"
+        "e644daf7375c",
+        "416805cbfcd9"
       ],
       "created_at": "2026-06-13T11:43:36.665351+00:00",
       "last_escalated_size": 0,
@@ -2919,7 +2938,196 @@
       "created_at": "2026-06-13T11:43:36.665351+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "31cc548bce568e8c": {
+      "topic": "Jeffrey Dean Morgan The Walking Dead Dead City Season 3 Monte-Carlo TV Festival",
+      "item_ids": [
+        "ba1eb374cec2"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d396b502040a511d": {
+      "topic": "AI Report Hallucinations Accuracy Problem",
+      "item_ids": [
+        "0c3ac17f63eb"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bd17bdf4a6d24e34": {
+      "topic": "Engadget Tech Product Reviews Roundup",
+      "item_ids": [
+        "5e808f6636a3"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7f25b840d4b0b16b": {
+      "topic": "Warren Buffett Elon Musk Investment Philosophy Debate",
+      "item_ids": [
+        "5d1d94b99763"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f487de11cd1686c1": {
+      "topic": "Obesity Drugs Market Race Pharmaceutical Competition",
+      "item_ids": [
+        "5ddfefbc5b6b"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "44458eafbf742808": {
+      "topic": "Rivian CEO Humanoid Robotics Strategy Alternative Approach",
+      "item_ids": [
+        "4db05d86dc02"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eceba3bd6effbd5d": {
+      "topic": "ON Semiconductor Stock Performance Analysis",
+      "item_ids": [
+        "a875d22def01"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ecbb3ff621f254c0": {
+      "topic": "Micron Technology Stock Investment Strategy",
+      "item_ids": [
+        "c453ac27443a"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "46637360dd511047": {
+      "topic": "Levata POSDATA Payment Technology Acquisition",
+      "item_ids": [
+        "1916599b311f"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "95117d0fb03efdec": {
+      "topic": "Technology Sector Stock Analyst Coverage",
+      "item_ids": [
+        "7720c4094a85"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f40611e8502f14fe": {
+      "topic": "Overnight Train Travel Amtrak Nightjet Comparison",
+      "item_ids": [
+        "33a93d532d6c"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "515596fcf0af3fce": {
+      "topic": "Venture Capital Funding Atlanta Billion-Dollar Startups",
+      "item_ids": [
+        "704ea2331d22"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "32aa93b684ebb86e": {
+      "topic": "Sarasota County Business Parks Development Initiative",
+      "item_ids": [
+        "ac1162b2e107"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "719dc50af591046d": {
+      "topic": "Photographer Quits Instagram Social Media Impact Family",
+      "item_ids": [
+        "7d8ded313876"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "353f1d74f5e8ef4f": {
+      "topic": "SpaceX IPO Investment Strategy 401k Portfolios",
+      "item_ids": [
+        "427d9f7d4334"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d3e002dee77af2c3": {
+      "topic": "Old Dominion Freight Line LTL Pricing Amazon Threats",
+      "item_ids": [
+        "62e99f9cf08a"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2af554314988bf00": {
+      "topic": "Icon Creations VFX Award BMW Egypt Campaign",
+      "item_ids": [
+        "029131c63b29"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "16ca3a69e70f0996": {
+      "topic": "Lays World Cup 2026 Campaign Trending",
+      "item_ids": [
+        "5fbdb95080b3"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f16fa913b96e28fd": {
+      "topic": "Estados Unidos Trending Topic",
+      "item_ids": [
+        "655610f2ea88"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fcee745aa909a12b": {
+      "topic": "Dest Trending Topic",
+      "item_ids": [
+        "03e3076a23bc"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f55d76aef6a446a4": {
+      "topic": "USA USA USA Trending Topic",
+      "item_ids": [
+        "6f8a365ed641"
+      ],
+      "created_at": "2026-06-13T13:13:55.972250+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-13T11:43:46.672422+00:00"
+  "last_checked": "2026-06-13T13:14:05.376831+00:00"
 }
