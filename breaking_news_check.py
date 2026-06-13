@@ -137,7 +137,8 @@ def filter_and_enrich_items(candidates: list[dict], trends: dict | None = None, 
         if lines:
             social_block = "\n\nLIVE SOCIAL SIGNALS — these topics are trending right now. If an item directly relates to one of these, it's evidence something is actively happening:\n" + "\n".join(lines)
 
-    prompt = f"""You are the editorial filter for Blank — a culture intelligence platform for trend-forward people who want to know what's happening right now.
+    # Static scoring rubric — cached so repeated runs within a session don't re-send it
+    static_prompt = """You are the editorial filter for Blank — a culture intelligence platform for trend-forward people who want to know what's happening right now.
 
 Your job: decide what's worth surfacing in a live culture feed. Score each item 1–10. Be strict — most items should score 5–7. Reserve 8–9 for genuinely important moments. When in doubt between two scores, choose the lower one.
 
@@ -174,7 +175,10 @@ ENGAGEMENT SIGNALS: Numbers in brackets after an item show real engagement — u
 IMPORTANT:
 - For Reddit posts: upvote count is strong signal — 10K+ means real traction, 30K+ means broadly significant. Score on the combination of topic substance AND engagement.
 - For YouTube trending videos: score on whether the video captures a genuine cultural moment — a performance, a reveal, a reaction with broad significance.
-- Anything genuinely significant has a fair shot regardless of topic area — a major sports result, a surprise album drop, a landmark business moment, a cultural event. Topic area is never a reason to score down.{social_block}{clusters_block}
+- Anything genuinely significant has a fair shot regardless of topic area — a major sports result, a surprise album drop, a landmark business moment, a cultural event. Topic area is never a reason to score down."""
+
+    # Dynamic part: live signals + items (changes every run, not cached)
+    dynamic_prompt = f"""{social_block}{clusters_block}
 
 Respond with a JSON array only — one object per item, same order as input:
 [{{"score": <int>}}]
@@ -188,7 +192,13 @@ Items:
         resp = client.messages.create(
             model="claude-haiku-4-5-20251001",
             max_tokens=15 * len(candidates),
-            messages=[{"role": "user", "content": prompt}],
+            messages=[{
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": static_prompt, "cache_control": {"type": "ephemeral"}},
+                    {"type": "text", "text": dynamic_prompt},
+                ],
+            }],
         )
         raw = resp.content[0].text.strip()
         if raw.startswith("```"):

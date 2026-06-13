@@ -2,7 +2,7 @@ name: Breaking News Monitor
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # Every 5 minutes
+    - cron: '*/10 * * * *'  # Every 10 minutes
   workflow_dispatch:          # Manual trigger for testing
 
 concurrency:

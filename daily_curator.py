@@ -1662,7 +1662,7 @@ def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[st
         x_ranks = (social_engagement or {}).get("x_ranks", {})
         g_eng   = (social_engagement or {}).get("google_engagement", {})
         context_lines = []
-        for t in trending_topics[:30]:
+        for t in trending_topics[:10]:
             rank = x_ranks.get(t)
             vol  = g_eng.get(t)
             if rank:
@@ -1672,7 +1672,7 @@ def evaluate_articles_with_claude(articles: list[dict], trending_topics: list[st
             else:
                 context_lines.append(f"  • {t}")
         trending_context_block = "Live trending topics right now:\n" + "\n".join(context_lines)
-        print(f"   📊 Injecting {len(trending_topics[:30])} live trending topics into scoring prompt.")
+        print(f"   📊 Injecting {len(trending_topics[:10])} live trending topics into scoring prompt.")
     else:
         trending_context_block = "(No live trending data available for this run.)"
 
@@ -2258,7 +2258,7 @@ def filter_already_picked_today(picks: list[dict]) -> list[dict]:
     return filtered
 
 
-def load_recently_covered_topics(days: int = 3) -> list[str]:
+def load_recently_covered_topics(days: int = 1) -> list[str]:
     """
     Return "Title — Why summary" strings from the last N days of picks files.
     Used to inject into the scoring prompt so Claude can suppress re-picks
