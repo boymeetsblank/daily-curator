@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "6a645e2ede12",
-    "51001fe3b6d4",
-    "c89a079e56ec",
-    "5f221499ef23",
-    "cf0810c16c03",
-    "9f1dfc644e42",
-    "2d75eb0b7bfc",
-    "379d7e3b88aa",
-    "63744117c676",
-    "cdc3758cb1a6",
-    "f5cab1618be0",
-    "fc2587e9c7c8",
-    "51001fe3b6d4",
-    "fdbea54de13e",
-    "bfb9d0356e06",
-    "c89a079e56ec",
-    "93e89140aeb0",
     "1d14070d7951",
     "4075e3d75e49",
     "28c4821191a7",
@@ -499,7 +482,24 @@
     "0c3d5becd0e8",
     "59c0985204c2",
     "d6e6eef561db",
-    "8a506ad17a6f"
+    "8a506ad17a6f",
+    "443188a1c418",
+    "e057e8298161",
+    "3a86c14f2e00",
+    "965f2f7ff307",
+    "59091a77ea4b",
+    "40ccad581987",
+    "9a3a40973827",
+    "37f5c7bcf38d",
+    "4b0aea9adf00",
+    "3aa72cbf412a",
+    "5aebf6307188",
+    "0498004c8c78",
+    "8c4265619134",
+    "3df82795ab0f",
+    "6ac33daf1994",
+    "95d4f2e07241",
+    "1d4f02e269d2"
   ],
   "failed_ids": {
     "f0760fc5feb4": "2026-06-13T20:51:26.968585+00:00",
@@ -530,234 +530,18 @@
     "bf6ca8df2164": "2026-06-13T21:59:59.084305+00:00",
     "67d316b71a15": "2026-06-13T21:59:59.084305+00:00",
     "80fc050d737d": "2026-06-13T21:59:59.084305+00:00",
-    "e0c502dfc0eb": "2026-06-13T21:59:59.084305+00:00"
+    "e0c502dfc0eb": "2026-06-13T21:59:59.084305+00:00",
+    "7fe352c72500": "2026-06-13T23:15:03.225061+00:00",
+    "f36590e63948": "2026-06-13T23:15:03.225061+00:00",
+    "487b4f9485b2": "2026-06-13T23:15:03.225061+00:00",
+    "41b4d0bd0f57": "2026-06-13T23:15:03.225061+00:00",
+    "c028b4a2c906": "2026-06-13T23:15:03.225061+00:00",
+    "6bab989736c2": "2026-06-13T23:15:03.225061+00:00",
+    "342a6727899f": "2026-06-13T23:15:03.225061+00:00",
+    "cf0b511eef8b": "2026-06-13T23:15:03.225061+00:00",
+    "5b183506bb98": "2026-06-13T23:15:03.225061+00:00"
   },
   "live_clusters": {
-    "6f2fa0f8781f5248": {
-      "topic": "Gregory Crewdson Dream House Prints Suburbia Photography",
-      "item_ids": [
-        "bb98e4dd49c0"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ff47e2dc63319fcf": {
-      "topic": "Nike Kobe 4 Draft Day Lakers Release",
-      "item_ids": [
-        "b5cc91dcaded"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3b496c1ad1c5c842": {
-      "topic": "Nike KD 19 Candy Apple June Release",
-      "item_ids": [
-        "c60e8bcff0f5"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9531c73e16a5e6e6": {
-      "topic": "Kobe Charlotte to LA Nike Dunk Low Protro",
-      "item_ids": [
-        "ca452123f9c4"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f659a37bc634fc7d": {
-      "topic": "Jinsei Anime Philosophy Fame Review",
-      "item_ids": [
-        "ecdb3585105b"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "01082e23c1e102f2": {
-      "topic": "Taylor Swift Toy Story 5 Spielberg Knicks Next Era",
-      "item_ids": [
-        "411569993280"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "289249eb390572f6": {
-      "topic": "Backstreet Boys Paw Patrol Dino Movie Ed Sheeran",
-      "item_ids": [
-        "c92c82d76047"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1991e89c9f84d564": {
-      "topic": "Ariana Grande Eternal Sunshine Tour Urban Outfitters",
-      "item_ids": [
-        "fec3267d5607"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "042f317214579df7": {
-      "topic": "Lil Baby Hemp Company THC E Coli Lawsuit",
-      "item_ids": [
-        "e01359f4c21b"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "00d64bec5af67d11": {
-      "topic": "Riley Green Toby Keith Think As You Drunk Tribute",
-      "item_ids": [
-        "be9dd45ba084"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cbfe95d063161e07": {
-      "topic": "Dr Martens 1461 65th Anniversary Rock Era",
-      "item_ids": [
-        "1e4d3cd96f87"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "aac7a7428abbc04e": {
-      "topic": "Alanis Morissette Michael Bubl\u00e9 2026 World Cup Canada Ceremony",
-      "item_ids": [
-        "a053b7248e94"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0178bfd903d3dfee": {
-      "topic": "Rosal\u00eda Tour Postponement Family First",
-      "item_ids": [
-        "32d8bc12f052",
-        "10737d68ac5a"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4a70c04d257e16b3": {
-      "topic": "Roku Stock 4-Year High Sale Talks",
-      "item_ids": [
-        "42ae27c55a4b"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "63a6ac2e309a2bd0": {
-      "topic": "Blair Witch Project Heather Donahue Reboot Clarification",
-      "item_ids": [
-        "5537b996b379"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d005c74fc4897406": {
-      "topic": "Meta AI Unit Dysfunction Internal Conflict",
-      "item_ids": [
-        "009a50a283dd",
-        "ae5c88d9d200",
-        "56b7b98f42fb"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-12T23:53:55.992966+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "009a50a283dd",
-        "ae5c88d9d200",
-        "56b7b98f42fb"
-      ]
-    },
-    "bf33c88c3520a678": {
-      "topic": "SpaceX IPO Proxy Trading Stock Dip",
-      "item_ids": [
-        "de3351c2d4b6"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b7d2a0ef4c8d8520": {
-      "topic": "Nike Court Staple Cherry Red Tonal",
-      "item_ids": [
-        "1f31e54fb5a4"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0eb39011a689087f": {
-      "topic": "Nike 30-Year Techy Classic Sophisticated",
-      "item_ids": [
-        "7ec8657bdcaa"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "adbce41081bdfc42": {
-      "topic": "New Balance Soft Pink Dad Shoe",
-      "item_ids": [
-        "6e7bc894799f"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "65c8c34127ec3813": {
-      "topic": "NBA Trade Chatter Latest Updates",
-      "item_ids": [
-        "1cb47792d290"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3de0fe4e65417273": {
-      "topic": "Video Game Hardware Prices Luxury Hobby",
-      "item_ids": [
-        "c47794ac84fd"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d727e1a209cbe81": {
-      "topic": "Cinema Inspired Modern Slot Games",
-      "item_ids": [
-        "19ed8392d011"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9652201dacb85ed9": {
-      "topic": "Creative Business AI-Proof $2.5M Success",
-      "item_ids": [
-        "c334de53ad7b"
-      ],
-      "created_at": "2026-06-12T22:14:19.683173+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "5b448365dc512205": {
       "topic": "Bill Ritter Departs WABC Eyewitness News After Alzheimer's Diagnosis",
       "item_ids": [
@@ -1005,11 +789,20 @@
       "topic": "2026 World Cup USA Opening Ceremony Performance Highlights",
       "item_ids": [
         "62e6e7f0f8fc",
-        "03490dc77afb"
+        "03490dc77afb",
+        "965f2f7ff307",
+        "59091a77ea4b"
       ],
       "created_at": "2026-06-13T09:47:11.098923+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-13T23:15:03.225061+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "62e6e7f0f8fc",
+        "03490dc77afb",
+        "965f2f7ff307",
+        "59091a77ea4b"
+      ]
     },
     "dd0d448a11736394": {
       "topic": "Google AI Overviews Liability Ruling German Court",
@@ -1532,11 +1325,15 @@
         "af08e2e8911f",
         "77e40c1fe33a",
         "605ec48c7a1d",
-        "d6e6eef561db"
+        "d6e6eef561db",
+        "40ccad581987",
+        "37f5c7bcf38d",
+        "4b0aea9adf00",
+        "3aa72cbf412a"
       ],
       "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 9,
-      "last_escalated_at": "2026-06-13T21:59:59.084305+00:00",
+      "last_escalated_size": 13,
+      "last_escalated_at": "2026-06-13T23:15:03.225061+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "018131d31b32",
@@ -1547,18 +1344,30 @@
         "af08e2e8911f",
         "77e40c1fe33a",
         "605ec48c7a1d",
-        "d6e6eef561db"
+        "d6e6eef561db",
+        "40ccad581987",
+        "37f5c7bcf38d",
+        "4b0aea9adf00",
+        "3aa72cbf412a"
       ]
     },
     "f95b244e5f26a768": {
       "topic": "BMW Electric M3 Naming Strategy Announcement",
       "item_ids": [
         "5b57604bd20f",
-        "7da98b5cb012"
+        "7da98b5cb012",
+        "0498004c8c78"
       ],
       "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-13T23:15:03.225061+00:00",
+      "picks_file": "picks/picks-2026-06-13-2315.md",
+      "why_text": "BMW is facing the same identity crisis every legacy performance brand is wrestling with: how do you sell an electric car to people who bought into the myth of combustion? Ferrari's approach \u2014 preserving iconic model names and emotional heritage rather than rebranding everything with an 'e' prefix \u2014 is becoming the playbook, and BMW adopting it signals the industry is quietly admitting that EV rebrandsstripped too much soul. This is as much a marketing psychology story as it is a car story: performance culture runs on narrative, and the M3 name carries decades of it.",
+      "last_escalated_item_ids": [
+        "5b57604bd20f",
+        "7da98b5cb012",
+        "0498004c8c78"
+      ]
     },
     "ce366645163c43a0": {
       "topic": "Nike Zoom Skylon 11 Black White Release",
@@ -1695,7 +1504,8 @@
         "fb0b4b4eb148",
         "c9da499c2120",
         "9df6d30437b3",
-        "0c3d5becd0e8"
+        "0c3d5becd0e8",
+        "5aebf6307188"
       ],
       "created_at": "2026-06-13T20:51:57.404108+00:00",
       "last_escalated_size": 7,
@@ -1756,7 +1566,43 @@
       "created_at": "2026-06-13T22:00:25.276371+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "5ee6d9b4dafdc53a": {
+      "topic": "Air Jordan 1 Mid Metal Ankle Eyelets Release",
+      "item_ids": [
+        "443188a1c418"
+      ],
+      "created_at": "2026-06-13T23:15:28.668781+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1b3171aa7a316e56": {
+      "topic": "Trump Name Removed Kennedy Center Facade",
+      "item_ids": [
+        "e057e8298161"
+      ],
+      "created_at": "2026-06-13T23:15:28.668781+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "632b72e7126cffed": {
+      "topic": "Cape Fear Series Juliette Lewis Reboot",
+      "item_ids": [
+        "3a86c14f2e00"
+      ],
+      "created_at": "2026-06-13T23:15:28.668781+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1a295b673ee51a17": {
+      "topic": "2009 NBA Draft Philadelphia 76ers Re-evaluation",
+      "item_ids": [
+        "9a3a40973827"
+      ],
+      "created_at": "2026-06-13T23:15:28.668781+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-13T22:00:36.063496+00:00"
+  "last_checked": "2026-06-13T23:15:37.593159+00:00"
 }
