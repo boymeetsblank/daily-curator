@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "82c61ce46072",
-    "44c4a3094781",
-    "d28054aaf685",
-    "60fc70fb5b21",
-    "a7c14b0594c5",
-    "6cbf5d456411",
-    "5cc8af50c314",
-    "15ce50ba20ab",
-    "b33b8037b320",
-    "fa0faabf9440",
-    "346ac43d4459",
-    "9e0cfd9ef3f5",
-    "1f41e537222c",
-    "de482157c33e",
-    "847fa055c924",
     "6a645e2ede12",
     "51001fe3b6d4",
     "c89a079e56ec",
@@ -499,7 +484,22 @@
     "8352110aa618",
     "0a110c6d38e5",
     "1c9447fc6814",
-    "0e1279da65dd"
+    "0e1279da65dd",
+    "b748034045fa",
+    "81fb3cec4438",
+    "7d9c00b23da2",
+    "0e8d88a0f553",
+    "af08e2e8911f",
+    "77e40c1fe33a",
+    "605ec48c7a1d",
+    "dae79a790555",
+    "c9da499c2120",
+    "7da98b5cb012",
+    "9df6d30437b3",
+    "0c3d5becd0e8",
+    "59c0985204c2",
+    "d6e6eef561db",
+    "8a506ad17a6f"
   ],
   "failed_ids": {
     "f0760fc5feb4": "2026-06-13T20:51:26.968585+00:00",
@@ -514,7 +514,23 @@
     "2022a44a3fde": "2026-06-13T20:51:26.968585+00:00",
     "63e964a4df32": "2026-06-13T20:51:26.968585+00:00",
     "80d4917e3ebc": "2026-06-13T20:51:26.968585+00:00",
-    "adf16e9ff444": "2026-06-13T20:51:26.968585+00:00"
+    "adf16e9ff444": "2026-06-13T20:51:26.968585+00:00",
+    "915ea25d9376": "2026-06-13T21:59:59.084305+00:00",
+    "70148a067faf": "2026-06-13T21:59:59.084305+00:00",
+    "a9b6f14b4b0a": "2026-06-13T21:59:59.084305+00:00",
+    "e104e0cab9af": "2026-06-13T21:59:59.084305+00:00",
+    "170380d7bf0a": "2026-06-13T21:59:59.084305+00:00",
+    "39add80c76e9": "2026-06-13T21:59:59.084305+00:00",
+    "80c8e37b2431": "2026-06-13T21:59:59.084305+00:00",
+    "0b6b70ddfacb": "2026-06-13T21:59:59.084305+00:00",
+    "6024ac016f31": "2026-06-13T21:59:59.084305+00:00",
+    "441ecd1b3b0e": "2026-06-13T21:59:59.084305+00:00",
+    "cf566df585f2": "2026-06-13T21:59:59.084305+00:00",
+    "7457dec5c35f": "2026-06-13T21:59:59.084305+00:00",
+    "bf6ca8df2164": "2026-06-13T21:59:59.084305+00:00",
+    "67d316b71a15": "2026-06-13T21:59:59.084305+00:00",
+    "80fc050d737d": "2026-06-13T21:59:59.084305+00:00",
+    "e0c502dfc0eb": "2026-06-13T21:59:59.084305+00:00"
   },
   "live_clusters": {
     "6f2fa0f8781f5248": {
@@ -878,7 +894,8 @@
         "b322e813452a",
         "149b925647d1",
         "82878a0de40b",
-        "9c33e50044a5"
+        "9c33e50044a5",
+        "dae79a790555"
       ],
       "created_at": "2026-06-13T02:49:49.068527+00:00",
       "last_escalated_size": 5,
@@ -1181,11 +1198,21 @@
       "topic": "2026 NBA Mock Draft Michael Porter Jr Trade",
       "item_ids": [
         "2da89690e243",
-        "27b8c7a221f1"
+        "27b8c7a221f1",
+        "7d9c00b23da2",
+        "0e8d88a0f553"
       ],
       "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-13T21:59:59.084305+00:00",
+      "picks_file": "picks/picks-2026-06-13-2200.md",
+      "why_text": "The 2026 NBA offseason is shaping up as one of the most chaotic in recent memory \u2014 Michael Porter Jr. trade speculation is circulating alongside Brooklyn and Sacramento potentially dealing before draft night, while international prospects are opting in and stars like Jaylen Brown and LeBron James are drawing multi-team interest. This is the rare moment when a draft, a trade market, and free agency all collide at once, compressing the league's entire power structure into a few weeks. Whoever moves fastest sets the hierarchy for the next half-decade.",
+      "last_escalated_item_ids": [
+        "2da89690e243",
+        "27b8c7a221f1",
+        "7d9c00b23da2",
+        "0e8d88a0f553"
+      ]
     },
     "58636240cb3b5a85": {
       "topic": "Mitch Johnson Spurs NBA Finals Collapse Role",
@@ -1500,23 +1527,34 @@
         "018131d31b32",
         "37fecc42816e",
         "dd48b8508387",
-        "3fbdcc20616b"
+        "3fbdcc20616b",
+        "81fb3cec4438",
+        "af08e2e8911f",
+        "77e40c1fe33a",
+        "605ec48c7a1d",
+        "d6e6eef561db"
       ],
       "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-13T20:51:26.968585+00:00",
+      "last_escalated_size": 9,
+      "last_escalated_at": "2026-06-13T21:59:59.084305+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "018131d31b32",
         "37fecc42816e",
         "dd48b8508387",
-        "3fbdcc20616b"
+        "3fbdcc20616b",
+        "81fb3cec4438",
+        "af08e2e8911f",
+        "77e40c1fe33a",
+        "605ec48c7a1d",
+        "d6e6eef561db"
       ]
     },
     "f95b244e5f26a768": {
       "topic": "BMW Electric M3 Naming Strategy Announcement",
       "item_ids": [
-        "5b57604bd20f"
+        "5b57604bd20f",
+        "7da98b5cb012"
       ],
       "created_at": "2026-06-13T15:12:56.067040+00:00",
       "last_escalated_size": 0,
@@ -1654,18 +1692,24 @@
         "9bf24a184077",
         "96d06eac8a2d",
         "521762d3c4da",
-        "fb0b4b4eb148"
+        "fb0b4b4eb148",
+        "c9da499c2120",
+        "9df6d30437b3",
+        "0c3d5becd0e8"
       ],
       "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-13T20:51:26.968585+00:00",
+      "last_escalated_size": 7,
+      "last_escalated_at": "2026-06-13T21:59:59.084305+00:00",
       "picks_file": "picks/picks-2026-06-13-2051.md",
-      "why_text": "At the six-hour mark of Le Mans, the No. 38 JOTA Cadillac has seized control after the pole-sitting BMW \u2014 widely seen as a genuine title contender this year \u2014 hit serious trouble, reshuffling the Hypercar order dramatically. This is a big moment for Cadillac's endurance racing credibility and a gut-punch for BMW's Le Mans ambitions, which had been building real momentum. With Toyota still lurking, the race is wide open and the next 18 hours are going to be brutal.",
+      "why_text": "At the six-hour mark of Le Mans, the No. 38 JOTA Cadillac has seized control after the pole-sitting BMW \u2014 widely seen as a genuine title contender this year \u2014 hit serious trouble, reshuffling the Hypercar order dramatically. This is a big moment for Cadillac's endurance racing credibility and a gut-punch for BMW's Le Mans ambitions, which had been building real momentum. With Toyota still lurking, the race is wide open and the next 18 hours are going to be brutal.\n**Update 5:00 PM CT:** BMW has hit back hard: the No. 20 machine has cycled to the front as Hour 7 gets underway and night running begins, suggesting the earlier trouble may have been resolved \u2014 or that strategy and pit sequencing have reshuffled the order once again in BMW's favor.",
       "last_escalated_item_ids": [
         "9bf24a184077",
         "96d06eac8a2d",
         "521762d3c4da",
-        "fb0b4b4eb148"
+        "fb0b4b4eb148",
+        "c9da499c2120",
+        "9df6d30437b3",
+        "0c3d5becd0e8"
       ]
     },
     "1883b2f9c710bd5a": {
@@ -1703,7 +1747,16 @@
       "created_at": "2026-06-13T20:51:57.404108+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f125cc9b5a89ae50": {
+      "topic": "The Muppet Show 50th Anniversary Guest Stars Retrospective",
+      "item_ids": [
+        "b748034045fa"
+      ],
+      "created_at": "2026-06-13T22:00:25.276371+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-13T20:52:04.503401+00:00"
+  "last_checked": "2026-06-13T22:00:36.063496+00:00"
 }
