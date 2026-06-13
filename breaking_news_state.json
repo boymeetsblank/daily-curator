@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "81129d06f39d",
-    "7d80e290351e",
-    "f4bf9d712381",
-    "2e75f51f3334",
-    "44f512e897da",
-    "6d361ef09d5b",
-    "4bd98673ab63",
-    "9be8601456ef",
-    "c0ddf1fbbbbf",
-    "485af9292c0e",
-    "1fc4ab908195",
-    "5506244459c5",
-    "b8f06b7ef9a8",
-    "fabe4591d138",
-    "316712bf69aa",
-    "d5b78bd11daf",
-    "88f5f22bb988",
     "994271fcbb7c",
     "108b17ecb3d5",
     "9588617202e9",
@@ -499,28 +482,44 @@
     "5a41c7fff6da",
     "28bcbbbb8918",
     "42adec4eda48",
-    "45436d7e1b4c"
+    "45436d7e1b4c",
+    "426d1c804647",
+    "62e6e7f0f8fc",
+    "ab3929d7804d",
+    "0b80e88f76e9",
+    "9d44208160ec",
+    "1034e9d7b6a7",
+    "3f076b11d2c2",
+    "889edb2c276b",
+    "0fbdf699023d",
+    "3837f5d57b8f",
+    "efd4f77b2783",
+    "6df8dec8a986",
+    "54e048defc2b",
+    "670af8c26a21",
+    "894fa2032349",
+    "e0ac6ea0feb8",
+    "b3abc815ef05"
   ],
   "failed_ids": {
-    "253c9a2a6281": "2026-06-13T02:49:19.523124+00:00",
-    "2621224e73c9": "2026-06-13T02:49:19.523124+00:00",
-    "f2a0d4b364e8": "2026-06-13T02:49:19.523124+00:00",
-    "1fd6e7d2aa8b": "2026-06-13T02:49:19.523124+00:00",
-    "78ce4c141ad0": "2026-06-13T02:49:19.523124+00:00",
-    "04464e5a30e6": "2026-06-13T02:49:19.523124+00:00",
-    "b1320faa2fea": "2026-06-13T02:49:19.523124+00:00",
-    "54e048defc2b": "2026-06-13T02:49:19.523124+00:00",
-    "4b0eded3ec7c": "2026-06-13T02:49:19.523124+00:00",
-    "0b1c5d64ef76": "2026-06-13T02:49:19.523124+00:00",
-    "c2291c181ecc": "2026-06-13T02:49:19.523124+00:00",
-    "53bdb48528cf": "2026-06-13T02:49:19.523124+00:00",
     "a6de8fdc0eee": "2026-06-13T06:43:00.618996+00:00",
     "719c1abae889": "2026-06-13T06:43:00.618996+00:00",
     "bf073fa492f4": "2026-06-13T06:43:00.618996+00:00",
     "08f15d4ab020": "2026-06-13T06:43:00.618996+00:00",
     "3b7f48b12bae": "2026-06-13T06:43:00.618996+00:00",
     "c7b0e3b74e87": "2026-06-13T06:43:00.618996+00:00",
-    "5a5b3e435f69": "2026-06-13T06:43:00.618996+00:00"
+    "5a5b3e435f69": "2026-06-13T06:43:00.618996+00:00",
+    "0e075cf3b568": "2026-06-13T09:46:39.222937+00:00",
+    "225cf651e24f": "2026-06-13T09:46:39.222937+00:00",
+    "6353d72914c8": "2026-06-13T09:46:39.222937+00:00",
+    "61fee478c4ab": "2026-06-13T09:46:39.222937+00:00",
+    "b52fbdff42d7": "2026-06-13T09:46:39.222937+00:00",
+    "f9d9c24cab75": "2026-06-13T09:46:39.222937+00:00",
+    "5bf39403ba3d": "2026-06-13T09:46:39.222937+00:00",
+    "4055ee5e6da7": "2026-06-13T09:46:39.222937+00:00",
+    "5a0bba535d99": "2026-06-13T09:46:39.222937+00:00",
+    "8e75f8cfdb11": "2026-06-13T09:46:39.222937+00:00",
+    "7a81061039f9": "2026-06-13T09:46:39.222937+00:00"
   },
   "live_clusters": {
     "ab9f7450b6869608": {
@@ -646,13 +645,16 @@
         "9a491695a596",
         "4dd90777369a",
         "7fa2eeeb6fa0",
-        "671dd3e1852a"
+        "671dd3e1852a",
+        "9d44208160ec",
+        "1034e9d7b6a7",
+        "3f076b11d2c2"
       ],
       "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 21,
-      "last_escalated_at": "2026-06-13T02:49:19.523124+00:00",
+      "last_escalated_size": 25,
+      "last_escalated_at": "2026-06-13T09:46:39.222937+00:00",
       "picks_file": "picks/picks-2026-06-12-1639.md",
-      "why_text": "The NBA Finals has arrived at its most critical juncture \u2014 a Knicks team carrying the weight of a half-century championship drought is one win away from ending it, while the Spurs are fighting to force the series back to San Antonio. The cultural stakes are enormous: New York hasn't won a title since 1973, and the betting markets, ticket price swings, and free agency caution all signal that the league itself is holding its breath around what happens next. This isn't just a game \u2014 it's a potential civic moment for the most media-saturated sports market in the country.\n**Update 3:39 PM CT:** Jay-Z's 'Empire State of Mind' surged on streaming charts following the Knicks' latest comeback win, underscoring the cultural electricity building around a potential New York title, while on the San Antonio side, Spurs head coach Mitch Johnson made a point of publicly reaffirming his trust in De'Aaron Fox \u2014 a signal that the Spurs are leaning on their star to even the series before it returns to Madison Square Garden.\n**Update 5:14 PM CT:** With Game 5 shifting to San Antonio, Wembanyama is publicly shaking off the Knicks' comeback and projecting confidence ahead of what would be an elimination game for the Spurs, while Keldon Johnson echoes that defiant tone in the locker room \u2014 but the cultural lens is sharpening on New York's side too, with CNN spotlighting the Latino duo powering the Knicks' historic run as the city's fanbase braces for a potential title-clinching moment.\n**Update 6:54 PM CT:** The celebrity orbit around this series is expanding beyond sports: Selena Gomez fired back at Taylor Swift over NBA Finals drama with a blunt 'it's a basketball game,' injecting a pop culture subplot into the lead-up to Game 5 that underscores just how wide the cultural footprint of a potential Knicks title has become.\n**Update 9:49 PM CT:** Jalen Brunson is calling out his own fanbase ahead of Game 5, urging Knicks supporters to 'be better' \u2014 a pointed message likely directed at crowd behavior targeting opposing players \u2014 while the numbers behind New York's run are coming into sharper focus: the Knicks have now joined an exclusive club of teams to overcome a 29-point playoff deficit, a comeback stat that underscores just how much this group has leaned on resilience as their defining trait with a title one win away.",
+      "why_text": "The NBA Finals has arrived at its most critical juncture \u2014 a Knicks team carrying the weight of a half-century championship drought is one win away from ending it, while the Spurs are fighting to force the series back to San Antonio. The cultural stakes are enormous: New York hasn't won a title since 1973, and the betting markets, ticket price swings, and free agency caution all signal that the league itself is holding its breath around what happens next. This isn't just a game \u2014 it's a potential civic moment for the most media-saturated sports market in the country.\n**Update 3:39 PM CT:** Jay-Z's 'Empire State of Mind' surged on streaming charts following the Knicks' latest comeback win, underscoring the cultural electricity building around a potential New York title, while on the San Antonio side, Spurs head coach Mitch Johnson made a point of publicly reaffirming his trust in De'Aaron Fox \u2014 a signal that the Spurs are leaning on their star to even the series before it returns to Madison Square Garden.\n**Update 5:14 PM CT:** With Game 5 shifting to San Antonio, Wembanyama is publicly shaking off the Knicks' comeback and projecting confidence ahead of what would be an elimination game for the Spurs, while Keldon Johnson echoes that defiant tone in the locker room \u2014 but the cultural lens is sharpening on New York's side too, with CNN spotlighting the Latino duo powering the Knicks' historic run as the city's fanbase braces for a potential title-clinching moment.\n**Update 6:54 PM CT:** The celebrity orbit around this series is expanding beyond sports: Selena Gomez fired back at Taylor Swift over NBA Finals drama with a blunt 'it's a basketball game,' injecting a pop culture subplot into the lead-up to Game 5 that underscores just how wide the cultural footprint of a potential Knicks title has become.\n**Update 9:49 PM CT:** Jalen Brunson is calling out his own fanbase ahead of Game 5, urging Knicks supporters to 'be better' \u2014 a pointed message likely directed at crowd behavior targeting opposing players \u2014 while the numbers behind New York's run are coming into sharper focus: the Knicks have now joined an exclusive club of teams to overcome a 29-point playoff deficit, a comeback stat that underscores just how much this group has leaned on resilience as their defining trait with a title one win away.\n**Update 4:47 AM CT:** A key Spurs star is listed as questionable for Game 5 \u2014 a development that could reshape San Antonio's ability to force a Game 6 \u2014 while the Knicks' narrative continues to crystallize around two figures: Jalen Brunson, whose outperformance of every expectation has drawn 'gold dust' praise from The New York Times, and Karl-Anthony Towns, the New Jersey kid now one win from becoming a New York legend, even as oddsmakers still favor the home-standing Spurs to extend the series tonight.",
       "last_escalated_item_ids": [
         "28d3093d54f7",
         "a1d166c2294e",
@@ -674,7 +676,11 @@
         "77db7c76f172",
         "9a491695a596",
         "4dd90777369a",
-        "7fa2eeeb6fa0"
+        "7fa2eeeb6fa0",
+        "671dd3e1852a",
+        "9d44208160ec",
+        "1034e9d7b6a7",
+        "3f076b11d2c2"
       ]
     },
     "0972ec3c3783b3f7": {
@@ -1093,7 +1099,9 @@
         "75a0962f9e18",
         "5f968e4ebd65",
         "5ce648fd916c",
-        "2ad09b8f8c0c"
+        "2ad09b8f8c0c",
+        "efd4f77b2783",
+        "6df8dec8a986"
       ],
       "created_at": "2026-06-12T13:53:11.080561+00:00",
       "last_escalated_size": 15,
@@ -1791,11 +1799,19 @@
       "topic": "SpaceX IPO Stock Opens $150 Largest Offering",
       "item_ids": [
         "b38af3cd8d44",
-        "fe9f648c59e7"
+        "fe9f648c59e7",
+        "0fbdf699023d"
       ],
       "created_at": "2026-06-12T18:30:35.118243+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-13T09:46:39.222937+00:00",
+      "picks_file": "picks/picks-2026-06-13-0947.md",
+      "why_text": "SpaceX's IPO debut marks a seismic moment for both the space economy and Silicon Valley culture \u2014 Elon Musk's most technically ambitious company is now a publicly traded asset, and the question of who gets rich and who gets left out is already front and center. SpaceX employees are sitting on life-changing equity, but navigating a post-IPO lockup, tax events, and sudden wealth is its own brutal gauntlet. Jim Cramer blessing it as a buy signals this has crossed into mainstream investor territory \u2014 which is either validation or a warning sign, depending on your priors.",
+      "last_escalated_item_ids": [
+        "b38af3cd8d44",
+        "fe9f648c59e7",
+        "0fbdf699023d"
+      ]
     },
     "437df61253b36bd9": {
       "topic": "Planet Labs Stock Crash Analysis",
@@ -2887,7 +2903,61 @@
       "created_at": "2026-06-13T06:43:25.397787+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "001693b59efeb4c1": {
+      "topic": "Shanghai Film Festival Tech Unit AI Industry Initiative",
+      "item_ids": [
+        "426d1c804647"
+      ],
+      "created_at": "2026-06-13T09:47:11.098923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dd5af9f9a831fe6f": {
+      "topic": "2026 World Cup USA Opening Ceremony Performance Highlights",
+      "item_ids": [
+        "62e6e7f0f8fc"
+      ],
+      "created_at": "2026-06-13T09:47:11.098923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dd0d448a11736394": {
+      "topic": "Google AI Overviews Liability Ruling German Court",
+      "item_ids": [
+        "ab3929d7804d"
+      ],
+      "created_at": "2026-06-13T09:47:11.098923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "281f94130e76d132": {
+      "topic": "Nike Runner Candy Floss Design Release",
+      "item_ids": [
+        "0b80e88f76e9"
+      ],
+      "created_at": "2026-06-13T09:47:11.098923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "09523797c8f12cb1": {
+      "topic": "Wolfgang Puck Restaurant Empire Building Strategy",
+      "item_ids": [
+        "889edb2c276b"
+      ],
+      "created_at": "2026-06-13T09:47:11.098923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c214068c39429056": {
+      "topic": "US Credit Card Debt Problem Analysis",
+      "item_ids": [
+        "3837f5d57b8f"
+      ],
+      "created_at": "2026-06-13T09:47:11.098923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-13T06:43:25.398978+00:00"
+  "last_checked": "2026-06-13T09:47:22.763673+00:00"
 }
