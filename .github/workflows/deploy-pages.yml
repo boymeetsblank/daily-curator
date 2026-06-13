@@ -111,11 +111,15 @@ jobs:
                   elif '*Trending on Google right now*' in block:
                       trend_label = 'Trending on Google right now'
 
+                  # Skip picks explicitly folded into another pick's Other angles
+                  if re.search(r'\*\*Folded:\*\*\s*true', block):
+                      continue
+
                   lvm = re.search(r'\*\*Live Pick:\*\*\s*(true|false)', block)
                   from_live = (lvm.group(1) == 'true') if lvm else False
 
                   wm = re.search(
-                      r'\*\*Why it (?:scored high|matters):\*\*\n(.*?)(?=\n\n\*\*Hook|\n\n\*\*Suggested|\n\n---|\Z)',
+                      r'\*\*Why it (?:scored high|matters):\*\*\n(.*?)(?=\n\n\*\*Hook|\n\n\*\*Suggested|\n\n\*\*Other|\n\n---|\Z)',
                       block, re.DOTALL
                   )
                   why = wm.group(1).strip() if wm else ''
@@ -126,6 +130,22 @@ jobs:
                       block, re.DOTALL
                   )
                   angle = am.group(1).strip() if am else ''
+
+                  # Parse Other angles into related_articles list
+                  related_articles = []
+                  ram = re.search(r'\*\*Other angles:\*\*\n(.*?)(?=\n\n---|\n---|\Z)', block, re.DOTALL)
+                  if ram:
+                      for rl in ram.group(1).strip().split('\n'):
+                          rl = rl.strip()
+                          # - [Title](URL) — *Source*
+                          ma = re.match(r'- \[([^\]]+)\]\(([^)]+)\) — \*([^*]+)\*', rl)
+                          if ma:
+                              related_articles.append({'title': ma.group(1), 'url': ma.group(2), 'source': ma.group(3)})
+                          else:
+                              # - Title — *Source*  (trending items, no URL)
+                              mb = re.match(r'- (.+?) — \*([^*]+)\*', rl)
+                              if mb:
+                                  related_articles.append({'title': mb.group(1).strip(), 'url': None, 'source': mb.group(2)})
 
                   if title:
                       picks.append({
@@ -143,6 +163,7 @@ jobs:
                           'cluster_sources': cluster_sources,
                           'from_live': from_live,
                           'cluster_updated': cluster_updated,
+                          'related_articles': related_articles if related_articles else None,
                       })
 
               return {

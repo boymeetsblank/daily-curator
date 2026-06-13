@@ -1389,6 +1389,34 @@
       padding: 12px 0 12px 20px;
     }
 
+    /* Other angles — related stories from separate runs */
+    .exp-related-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-top: 2px;
+    }
+    .exp-related-item {
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+      line-height: 1.4;
+    }
+    .exp-related-link {
+      font-size: 12px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .exp-related-link:hover { text-decoration: underline; }
+    .exp-related-source {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
     /* Rarity left border color on expand panel */
     .art-row[data-score="8"]  .exp-inner { border-left-color: #3b82f6; }
     .art-row[data-score="9"]  .exp-inner { border-left-color: #a855f7; }
@@ -2235,6 +2263,17 @@
     let whyHtml = '';
     if (pick.why) whyHtml = `<p class="exp-why">${esc(pick.why)}</p>`;
 
+    let relatedHtml = '';
+    if (pick.related_articles && pick.related_articles.length) {
+      const items = pick.related_articles.map(r => {
+        if (r.url) {
+          return `<div class="exp-related-item"><a class="exp-related-link" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a><span class="exp-related-source">${esc(r.source)}</span></div>`;
+        }
+        return `<div class="exp-related-item"><span class="exp-related-link">${esc(r.title)}</span><span class="exp-related-source">${esc(r.source)}</span></div>`;
+      }).join('');
+      relatedHtml = `<div class="exp-main-row"><div class="exp-field" style="grid-column:1/-1"><span class="exp-label">Other angles</span><div class="exp-related-list">${items}</div></div></div>`;
+    }
+
     let angleHtml = '';
     if (pick.angle) {
       const pa = parseAngle(pick.angle);
@@ -2264,6 +2303,7 @@
               <span class="exp-source-val">${esc(pick.source)}</span>
             </div>
           </div>
+          ${relatedHtml}
           ${angleHtml ? `<div class="exp-main-row">
             <div class="exp-field">
               <span class="exp-label">Hook</span>
@@ -2347,6 +2387,7 @@
         </div>
         <a class="card-headline" href="${href}" target="_blank" rel="noopener noreferrer" onclick="markRead(this.closest('.pick-card'))">${esc(pick.title)}</a>
         ${pick.why ? `<div class="card-why">${esc(pick.why)}</div>` : ''}
+        ${pick.related_articles && pick.related_articles.length ? `<div class="exp-related-list" style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border)">${pick.related_articles.map(r => r.url ? `<div class="exp-related-item"><a class="exp-related-link" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a><span class="exp-related-source">${esc(r.source)}</span></div>` : `<div class="exp-related-item"><span class="exp-related-link">${esc(r.title)}</span><span class="exp-related-source">${esc(r.source)}</span></div>`).join('')}</div>` : ''}
         <div class="card-footer">
           ${readBtn}
           <div class="vote-btns"

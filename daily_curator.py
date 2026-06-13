@@ -1951,7 +1951,7 @@ def cap_cluster_sizes(articles: list[dict]) -> list[dict]:
     return kept
 
 
-def deduplicate_after_scoring(articles: list[dict], published_today: list[str] | None = None) -> list[dict]:
+def deduplicate_after_scoring(articles: list[dict], published_today: list[dict] | list[str] | None = None) -> list[dict]:
     """
     After scoring, identify any same-topic duplicates that survived pre-scoring
     dedup and cluster capping. Uses a broader 'same underlying event or topic'
@@ -1959,9 +1959,10 @@ def deduplicate_after_scoring(articles: list[dict], published_today: list[str] |
     subject differently). Only inspects articles scoring >= MIN_SCORE.
     Keeps the highest-scored duplicate; ties broken by metadata richness.
 
-    published_today: titles already committed in earlier runs today.
-    Any current pick about the same underlying event as a published_today entry
-    is removed so the same story never appears twice in one day.
+    published_today: {title, why} dicts (or plain title strings for compat) from
+    earlier runs today. Any current pick about the same underlying event as a
+    published_today entry is removed and added to that published pick's
+    **Other angles:** section so it stays accessible on the feed.
     """
     candidates = [a for a in articles if a.get("score", 0) >= MIN_SCORE]
     if len(candidates) <= 1:
@@ -1978,9 +1979,22 @@ def deduplicate_after_scoring(articles: list[dict], published_today: list[str] |
         articles_text += f"{i}. [{article['score']}/10] \"{article['title']}\" ({article['source']})\n   {context[:250]}\n"
 
     already_block = ""
+    # Normalise published_today to list of {title, why} regardless of input type
+    _published_enriched: list[dict] = []
     if published_today:
+        for entry in published_today:
+            if isinstance(entry, dict):
+                _published_enriched.append(entry)
+            else:
+                _published_enriched.append({"title": str(entry), "why": ""})
+
+    if _published_enriched:
         already_block = "\nALREADY IN THE FEED TODAY (from earlier runs — any current article about the same underlying event as these must be flagged as a duplicate):\n"
-        already_block += "\n".join(f"- {t}" for t in published_today[:40])
+        for e in _published_enriched[:40]:
+            line = f"- \"{e['title']}\""
+            if e.get("why"):
+                line += f" [Context: {e['why'][:120]}]"
+            already_block += line + "\n"
         already_block += "\n"
 
     prompt = f"""Here are {len(candidates)} articles that scored highly in an editorial evaluation. Some may cover the same underlying event — even if their headlines use different phrasing, name the same person differently, or focus on different angles.
@@ -1993,6 +2007,7 @@ Your job:
    - Coverage from multiple outlets of the same announcement, release, or action
    - Follow-up details, cause-of-death reveals, or context pieces about the same event
    - Any article whose headline includes the same person's name AND the same general topic (e.g. "Pope Leo AI" articles are one story)
+   - Two articles about DIFFERENT CONSEQUENCES of the same event on the same day — e.g. "SpaceX stock up 19%" and "Musk becomes world's first trillionaire" are both consequences of the SpaceX IPO closing; they are one story. "Company raises $X" and "CEO's net worth jumps" are one story. If two articles share the same company, person, or announcement as their primary subject and describe outcomes of the same 24-hour event, they are the same story.
    - An X trending topic (e.g. just "Knicks" or "Brunson") and any article about the same underlying event — they both exist because the same thing happened. Use the trend item's "why" field to identify what event triggered it, then match it to any article about that same event.
 2. Also flag any CURRENT article that covers the same underlying event as something ALREADY IN THE FEED TODAY. Group it with topic "ALREADY COVERED: <matching title>". A bare trending topic name like "Knicks" is the same story as any already-published title about the same event ("Knicks (X)", "[Post Game Thread] The New York Knicks...", etc.).
 3. Do NOT group articles that are merely in the same category (e.g. two unrelated sports stories). They must trace back to the same specific occurrence or news cycle.
@@ -2071,6 +2086,20 @@ If no duplicates exist, return:
         if len(valid) < 2:
             continue
         cluster_arts = [(n, candidates[n - 1]) for n in valid]
+
+        # Cross-run duplicate: ALL articles in this group are already covered by a
+        # previously published pick. Drop every member (even the "winner") and
+        # merge them into the published pick's Other angles section.
+        if topic.startswith("ALREADY COVERED:"):
+            matching_title = topic[len("ALREADY COVERED:"):].strip()
+            for num, art in cluster_arts:
+                art["cluster_primary"] = False
+                merged += 1
+                _add_to_published_pick_related(matching_title, art)
+                print(f"   ⏭️  Cross-run dedup: dropping \"{art['title'][:60]}\" (already covered as: \"{matching_title[:60]}\")")
+            continue
+
+        # Within-run duplicate: keep the best article as the cluster primary
         winner_num, winner_art = max(cluster_arts, key=lambda x: (x[1]["score"], _richness(x[1])))
 
         # Assign or adopt a cluster_id for the winner
@@ -2098,6 +2127,63 @@ If no duplicates exist, return:
 
     print(f"   Post-scoring dedup: merged {merged} article(s) into perspective panels.")
     return articles
+
+
+def _add_to_published_pick_related(matching_title: str, article: dict) -> bool:
+    """
+    Find the pick with matching_title in today's picks files and append article
+    as a bullet in its **Other angles:** section. Creates the section if absent.
+    Returns True on success.
+    """
+    import glob as glob_module
+    today_str = datetime.now().strftime("%Y-%m-%d")
+
+    url = article.get("link") or article.get("url") or ""
+    title = article.get("title", "")
+    source = article.get("source", "")
+    if url:
+        new_line = f"- [{title}]({url}) — *{source}*"
+    else:
+        new_line = f"- {title} — *{source}*"
+
+    for filepath in sorted(glob_module.glob(f"picks/picks-{today_str}-*.md")):
+        try:
+            with open(filepath, encoding="utf-8") as f:
+                content = f.read()
+        except OSError:
+            continue
+
+        title_marker = f"**{matching_title}**"
+        idx = content.find(title_marker)
+        if idx == -1:
+            continue
+
+        # Find the --- separator that closes this pick block
+        sep = content.find("\n---\n", idx)
+        if sep == -1:
+            continue
+
+        pick_block = content[idx:sep]
+
+        if "**Other angles:**\n" in pick_block:
+            # Append after the last bullet already in the section
+            last_bullet = content.rfind("\n- ", idx, sep)
+            if last_bullet != -1:
+                eol = content.find("\n", last_bullet + 1)
+                insert_pos = eol if (eol != -1 and eol < sep) else sep
+            else:
+                insert_pos = sep
+            content = content[:insert_pos] + "\n" + new_line + content[insert_pos:]
+        else:
+            # Add a fresh Other angles section before ---
+            content = content[:sep] + f"\n\n**Other angles:**\n{new_line}\n" + content[sep:]
+
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"   📎 Merged '{title[:50]}' into Other angles of '{matching_title[:50]}'")
+        return True
+
+    return False
 
 
 def select_top_picks(articles: list[dict], today_clusters: dict | None = None) -> list[dict]:
@@ -2203,11 +2289,12 @@ def load_recently_covered_topics(days: int = 3) -> list[str]:
     return entries
 
 
-def load_todays_published_titles() -> list[str]:
+def load_todays_published_titles() -> list[dict]:
     """
-    Return just the titles of picks published in earlier runs today (CST).
-    Used to pass to deduplicate_after_scoring() so the same story can't appear
-    twice in one day across separate curator runs.
+    Return {title, why} dicts for picks published in earlier runs today (CST).
+    The why snippet lets deduplicate_after_scoring() give Haiku enough context to
+    match abstract editorial titles ("A trillion dollars is a stupid amount of money")
+    to current articles about the same event ("SpaceX IPO closes up 19%").
     """
     import glob as glob_module
     try:
@@ -2215,16 +2302,18 @@ def load_todays_published_titles() -> list[str]:
         today_str = datetime.now(tz=ZoneInfo("America/Chicago")).strftime("%Y-%m-%d")
     except ImportError:
         today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    titles = []
+    entries = []
     for filepath in glob_module.glob(f"picks/picks-{today_str}-*.md"):
         with open(filepath, encoding="utf-8") as f:
             content = f.read()
-        for title in re.findall(
-            r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n(?:\[Read the full article|\*Trending)",
-            content
+        for title, why in re.findall(
+            r"\*\*([^*\n]+)\*\*\n\*[^*\n]+\*\n(?:\[Read the full article|\*Trending)"
+            r".*?\n\n\*\*Why it (?:matters|scored high):\*\*\n(.*?)(?=\n\n\*\*Hook|\n\n\*\*Suggested|\n\n\*\*Other|\n\n---|\Z)",
+            content, re.DOTALL
         ):
-            titles.append(title.strip())
-    return titles
+            why_short = re.sub(r'\s+', ' ', why.strip())[:150]
+            entries.append({"title": title.strip(), "why": why_short})
+    return entries
 
 
 def load_live_feed_clusters() -> list[dict]:
@@ -2593,7 +2682,7 @@ def main():
     published_today = load_todays_published_titles()
     if published_today:
         print(f"   📋 Loaded {len(published_today)} title(s) published earlier today for cross-run dedup.")
-    evaluated_articles = deduplicate_after_scoring(evaluated_articles, published_today=published_today)
+    evaluated_articles = deduplicate_after_scoring(evaluated_articles, published_today=published_today)  # type: ignore[arg-type]
 
     # ── Update seen-URL registry ──────────────────────────────────────────────
     # Reddit hot posts recirculate across runs — only mark them seen if picked.
