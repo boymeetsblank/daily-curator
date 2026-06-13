@@ -1,24 +1,5 @@
 {
   "known_ids": [
-    "50815865e8d0",
-    "e4416c4f2f4d",
-    "2dd279158675",
-    "c0747fb13acd",
-    "884641791f6b",
-    "404eca6338ab",
-    "0f61fe2215cf",
-    "1a11974f519c",
-    "bc07d02bf1bf",
-    "7e49b5464a4f",
-    "23149eb75b7e",
-    "0d09e8cf652b",
-    "f6c68869c6aa",
-    "2bcc7fbb903a",
-    "61e12d251dad",
-    "ddbafd12ab93",
-    "77218098ec17",
-    "1fbc521e5050",
-    "81d01224878c",
     "60495c40add3",
     "28d3093d54f7",
     "88df46a520a4",
@@ -499,20 +480,28 @@
     "5fbdb95080b3",
     "655610f2ea88",
     "03e3076a23bc",
-    "6f8a365ed641"
+    "6f8a365ed641",
+    "e4551e43eb57",
+    "8f9c8435eea4",
+    "db29f653f0c1",
+    "6b891ea31011",
+    "e869b8be012e",
+    "322801e5c60b",
+    "fb393751b764",
+    "0129ce3239b1",
+    "572206b10aed",
+    "f9d9c24cab75",
+    "3ecc50124624",
+    "09b52e02a0ab",
+    "20c628975d6a",
+    "018131d31b32",
+    "37fecc42816e",
+    "5b57604bd20f",
+    "bc255bbfbcbd",
+    "4a0b34672543",
+    "10fa92076acf"
   ],
   "failed_ids": {
-    "0e075cf3b568": "2026-06-13T09:46:39.222937+00:00",
-    "225cf651e24f": "2026-06-13T09:46:39.222937+00:00",
-    "6353d72914c8": "2026-06-13T09:46:39.222937+00:00",
-    "61fee478c4ab": "2026-06-13T09:46:39.222937+00:00",
-    "b52fbdff42d7": "2026-06-13T09:46:39.222937+00:00",
-    "f9d9c24cab75": "2026-06-13T09:46:39.222937+00:00",
-    "5bf39403ba3d": "2026-06-13T09:46:39.222937+00:00",
-    "4055ee5e6da7": "2026-06-13T09:46:39.222937+00:00",
-    "5a0bba535d99": "2026-06-13T09:46:39.222937+00:00",
-    "8e75f8cfdb11": "2026-06-13T09:46:39.222937+00:00",
-    "7a81061039f9": "2026-06-13T09:46:39.222937+00:00",
     "8d25cd469dab": "2026-06-13T11:43:07.478634+00:00",
     "4ba7289b8f3b": "2026-06-13T11:43:07.478634+00:00",
     "0f13a28aaa7a": "2026-06-13T11:43:07.478634+00:00",
@@ -528,464 +517,37 @@
     "9a0b4a89094e": "2026-06-13T13:13:26.041562+00:00",
     "f997c7890b19": "2026-06-13T13:13:26.041562+00:00",
     "6aaa0465ee6b": "2026-06-13T13:13:26.041562+00:00",
-    "9cfe53aba453": "2026-06-13T13:13:26.041562+00:00"
+    "9cfe53aba453": "2026-06-13T13:13:26.041562+00:00",
+    "a963ef2317fd": "2026-06-13T15:12:14.731641+00:00",
+    "25efaeed8df8": "2026-06-13T15:12:14.731641+00:00",
+    "ae1d33b84067": "2026-06-13T15:12:14.731641+00:00",
+    "876f16e92903": "2026-06-13T15:12:14.731641+00:00",
+    "b66cb635ce0d": "2026-06-13T15:12:14.731641+00:00",
+    "1096ae7f9a18": "2026-06-13T15:12:14.731641+00:00",
+    "4e2d2776a5ef": "2026-06-13T15:12:14.731641+00:00",
+    "921c98fcc34c": "2026-06-13T15:12:14.731641+00:00",
+    "170d77bfa64c": "2026-06-13T15:12:14.731641+00:00",
+    "fd87bc5172c4": "2026-06-13T15:12:14.731641+00:00",
+    "e4e2e2226474": "2026-06-13T15:12:14.731641+00:00",
+    "6955bc2614cc": "2026-06-13T15:12:14.731641+00:00",
+    "161bbcafd78c": "2026-06-13T15:12:14.731641+00:00",
+    "2075456646eb": "2026-06-13T15:12:14.731641+00:00",
+    "0b98399d8b71": "2026-06-13T15:12:14.731641+00:00",
+    "d74c2feb6309": "2026-06-13T15:12:14.731641+00:00",
+    "cb5a2634a025": "2026-06-13T15:12:14.731641+00:00",
+    "8848f1cb9b7c": "2026-06-13T15:12:14.731641+00:00",
+    "e1a0893235b0": "2026-06-13T15:12:14.731641+00:00",
+    "cb62da8262e4": "2026-06-13T15:12:14.731641+00:00",
+    "280d2cc91284": "2026-06-13T15:12:14.731641+00:00",
+    "0453e17932d4": "2026-06-13T15:12:14.731641+00:00",
+    "3e2741716360": "2026-06-13T15:12:14.731641+00:00",
+    "bbd6c2601d88": "2026-06-13T15:12:14.731641+00:00",
+    "64f6f5e7502d": "2026-06-13T15:12:14.731641+00:00",
+    "4479a2b52e8b": "2026-06-13T15:12:14.731641+00:00",
+    "7b0a44e37a35": "2026-06-13T15:12:14.731641+00:00",
+    "e0c502dfc0eb": "2026-06-13T15:12:14.731641+00:00"
   },
   "live_clusters": {
-    "a7655eafc6bc775e": {
-      "topic": "New Music Releases Weekly Roundup",
-      "item_ids": [
-        "8aa3da630cd4"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "58616f907a8349f2": {
-      "topic": "Olivia Rodrigo Hearing Loss Health Disclosure",
-      "item_ids": [
-        "2028c0dc3f74"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "79a44ce7ee7b6698": {
-      "topic": "BTS ARIRANG Album Bonus Track Release",
-      "item_ids": [
-        "b0be88ab6b8e",
-        "0b69b12fae10"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3624f8353901789d": {
-      "topic": "Fruit Bats The Landfill Album Release",
-      "item_ids": [
-        "45b7266d2a27"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2aa9344d9f306e89": {
-      "topic": "2026 College World Series Viewing Guide",
-      "item_ids": [
-        "5d8a95bd4bf4"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "161e15651ad0a92e": {
-      "topic": "Jaimoe Last Original Allman Brothers Member Profile",
-      "item_ids": [
-        "78c3344f6bc5"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9b8b2d3366b68033": {
-      "topic": "Seriencamp Awards Happiness Recognition",
-      "item_ids": [
-        "6cb76baa0567"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9a393d22ec9a0540": {
-      "topic": "Power Book III Raising Kanan Season Finale Death",
-      "item_ids": [
-        "1502ddfeb9ed"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d56bd2a0a079e2a": {
-      "topic": "Camille Cottin Villaflor Netflix Political Thriller Casting",
-      "item_ids": [
-        "3d54019689f9"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "426550b5d331e541": {
-      "topic": "NBA Finals Game 5 Predictions Analysis",
-      "item_ids": [
-        "36f150982612"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9a6035c3306b3205": {
-      "topic": "NFL Chiefs Coach Discipline Investigation",
-      "item_ids": [
-        "398f146a8015"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "963cfbcf09316741": {
-      "topic": "Broncos Linebacker Cooper Felony Assault Charge",
-      "item_ids": [
-        "d9721e2e6bde",
-        "10b185df567a"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "234957788e9f38d3": {
-      "topic": "Texas Tech Sorsby Backlash Integrity Defense",
-      "item_ids": [
-        "824d94ae6995"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3c1ee053a2f09043": {
-      "topic": "White Supremacist Youth Group Belfast Riots",
-      "item_ids": [
-        "2fffd27dd6bc"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "89ce7c27e714194e": {
-      "topic": "Netflix Picture Quality Downgrade Detection Guide",
-      "item_ids": [
-        "7d2541741db6"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "74abe9c492d77c0f": {
-      "topic": "Google TV Gemini Picture Settings Adjustment Feature",
-      "item_ids": [
-        "605af205a761"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8d1818b104dd29df": {
-      "topic": "Stock Market Weekly Watch List Cramer",
-      "item_ids": [
-        "22aaf3e7f8c0"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "733cf1348fca83d2": {
-      "topic": "Brazil Smart Vests Technology 2026 World Cup",
-      "item_ids": [
-        "c03f42784297"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1cb093be6b2538a1": {
-      "topic": "Technology Stock Value Performance Analysis",
-      "item_ids": [
-        "4d5d392ee17f"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1e72d8b200f3ad52": {
-      "topic": "Technology Solutions Construction Labor Shortage",
-      "item_ids": [
-        "919562c59af9"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0a41883c1888dd92": {
-      "topic": "UCF Drone Wing Shape Technology Research",
-      "item_ids": [
-        "696cb6db01c8"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "67f277767c68bf65": {
-      "topic": "Gender Technology Intersection Fiction Film Analysis",
-      "item_ids": [
-        "10adb4770bc4"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c8666defe60e8a73": {
-      "topic": "Highsnobiety Umbro Collaboration",
-      "item_ids": [
-        "f7a5c4fdf1af"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1783323f4e03c465": {
-      "topic": "OG Anunoby Knicks NBA Finals Mindset Profile",
-      "item_ids": [
-        "cb082b04f984"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4a27a7cf5c1dd2fb": {
-      "topic": "Mike Brown Coaching Success Story NBA Trends",
-      "item_ids": [
-        "dd25fb07f1bf"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b223fe58d749b0d5": {
-      "topic": "Knicks NBA Finals 2026 Run Ben Stiller Lens",
-      "item_ids": [
-        "1ddf01dce587",
-        "40954dc18913",
-        "b0bb6c5f5f90",
-        "2b2d6aece3e8",
-        "874d538d729d",
-        "eec2578340b7",
-        "84b7c49feace",
-        "b69d2d15e090",
-        "b06d5c52c2c2"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 9,
-      "last_escalated_at": "2026-06-13T13:13:26.041562+00:00",
-      "picks_file": "picks/picks-2026-06-13-1143.md",
-      "why_text": "For the first time since 1999, the New York Knicks are on the NBA Finals stage \u2014 and the cultural weight of that drought makes this moment bigger than basketball. A city that has spent 26 years watching the Lakers, Warriors, and Celtics cycle through championships is now the center of the sports universe, and the nostalgia angle (Ben Stiller, Y2K-era New York) is already flooding the discourse. This isn't just a Knicks story \u2014 it's a New York story, and those tend to consume everything.\n**Update 8:13 AM CT:** With the Knicks one win away from a championship, Game 5 logistics are now their own cultural flashpoint: San Antonio has locked out non-locals from buying Finals tickets while New York is spinning up multiple watch parties \u2014 including a return of the MSG event \u2014 as the city braces to collectively witness what could be its first NBA title celebration in over two decades.",
-      "last_escalated_item_ids": [
-        "1ddf01dce587",
-        "40954dc18913",
-        "b0bb6c5f5f90",
-        "2b2d6aece3e8",
-        "874d538d729d",
-        "eec2578340b7",
-        "84b7c49feace",
-        "b69d2d15e090",
-        "b06d5c52c2c2"
-      ]
-    },
-    "14932883ee4d61b2": {
-      "topic": "NBA Coaching Hiring Search Bulls Mavericks Blazers",
-      "item_ids": [
-        "4037a2784d06"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "959d7f93afa5fb38": {
-      "topic": "North County Gamers Community Video Games",
-      "item_ids": [
-        "a4d95ea55698"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b252aee1894efcb5": {
-      "topic": "Indian Organizations AI Investment SAP Study",
-      "item_ids": [
-        "d87c98ce2fd1"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3227714880aac5c0": {
-      "topic": "OpenAI Anthropic Price War AI Affordability",
-      "item_ids": [
-        "2a6594f88216"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b421d86323642a7c": {
-      "topic": "Cincinnati Chamber Workforce Innovation Center Strategy Shift",
-      "item_ids": [
-        "580d056db3b5"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "451753a9ee146db4": {
-      "topic": "Jaylon Smith Business Success The Blueprint",
-      "item_ids": [
-        "5b9a7cd16d92"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f29ece0e4d215986": {
-      "topic": "SBA 8(a) Rule Business Operators Compliance",
-      "item_ids": [
-        "1c067cc2be12"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c98c5a2da04ef82": {
-      "topic": "Iran War UK Economy Contraction Business Impact",
-      "item_ids": [
-        "9795c0b81644"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3988a864a88a1e34": {
-      "topic": "American Financial Literacy Decline Analysis",
-      "item_ids": [
-        "1268c520f4df"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "78f320593c3124a6": {
-      "topic": "Anne Arundel County Finance E-Procurement System Launch",
-      "item_ids": [
-        "3e0ce2f547dc"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "76b435b954eefb86": {
-      "topic": "Iowa Housing Tax Credits Award",
-      "item_ids": [
-        "339750954689"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "423ae1bb088d9f0c": {
-      "topic": "BMW M Concept Neue Klasse Electric M3 Premiere Le Mans",
-      "item_ids": [
-        "8ba18496cbad",
-        "1e514ff61d2f",
-        "434786d6406a",
-        "4f6ed1b9ccf6",
-        "59989ca7abcf",
-        "4075e3d75e49",
-        "28c4821191a7",
-        "6a81b8f7ac40",
-        "f5759f5f327b",
-        "4f734dc6b324",
-        "2ff7bd34b47a",
-        "75a0962f9e18",
-        "5f968e4ebd65",
-        "5ce648fd916c",
-        "2ad09b8f8c0c",
-        "efd4f77b2783",
-        "6df8dec8a986",
-        "55f06c66f320",
-        "1e8d52dee6d0",
-        "3796a54c2131",
-        "cc9511caac92"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 21,
-      "last_escalated_at": "2026-06-13T11:43:07.478634+00:00",
-      "picks_file": "picks/picks-2026-06-12-1353.md",
-      "why_text": "BMW chose the 24 Hours of Le Mans \u2014 motorsport's most storied stage \u2014 to debut the M Concept Neue Klasse, a near-production preview of the first electric M3. The move signals that BMW M is done hedging: this is the direction, whether purists like it or not, with the company reportedly keeping a petrol M3 alive as a safety net for the holdouts. Culturally, it lands at the exact moment the performance car world is being forced to decide what 'driving excitement' means when there's no engine sound to romanticize.\n**Update 11:39 AM CT:** The concept's design is already drawing direct comparisons to the AMG GT XX, signaling that the electric performance war is shaping up as a genuine two-horse race between Munich and Stuttgart. Meanwhile, on the track where BMW made the announcement, Dries Vanthoor underlined the brand's current motorsport credibility by putting the #15 BMW M Hybrid V8 on pole at Le Mans \u2014 a timely reminder that BMW is playing both the present and the future simultaneously.\n**Update 1:30 PM CT:** Adding further context to BMW's electric ambitions, the iX3 has just posted a verified 500-mile single-charge range result in real-world testing per Electrek \u2014 a quietly significant data point that gives the M Concept Neue Klasse's performance promises more engineering credibility, suggesting BMW's EV range anxiety problem may already be solved before the electric M3 even hits production.\n**Update 9:49 PM CT:** Trade and enthusiast press coverage of the M Concept Neue Klasse is now broadening beyond the core auto outlets, with platforms like ACKO Drive amplifying BMW's Le Mans messaging to wider audiences \u2014 a sign that the electric M3's cultural footprint is expanding well beyond the motorsport crowd BMW originally pitched it to.\n**Update 6:43 AM CT:** BMW has now confirmed the production M3 will closely mirror the Neue Klasse concept's design \u2014 removing the usual caveat that separates showcar fantasy from reality \u2014 while a separate report reveals the electric M3 skips carbon fiber in favor of cost-engineered alternatives, a pragmatic call that tells you BMW is building this for volume, not just headlines.",
-      "last_escalated_item_ids": [
-        "8ba18496cbad",
-        "1e514ff61d2f",
-        "434786d6406a",
-        "4f6ed1b9ccf6",
-        "59989ca7abcf",
-        "4075e3d75e49",
-        "28c4821191a7",
-        "6a81b8f7ac40",
-        "f5759f5f327b",
-        "4f734dc6b324",
-        "2ff7bd34b47a",
-        "75a0962f9e18",
-        "5f968e4ebd65",
-        "5ce648fd916c",
-        "2ad09b8f8c0c",
-        "efd4f77b2783",
-        "6df8dec8a986",
-        "55f06c66f320",
-        "1e8d52dee6d0",
-        "3796a54c2131",
-        "cc9511caac92"
-      ]
-    },
-    "55b2856e91c2afcc": {
-      "topic": "Paige Trending Topic",
-      "item_ids": [
-        "8ceca69eeb15"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fe7017d46e0c58d3": {
-      "topic": "Chelsea Gray Trending Topic",
-      "item_ids": [
-        "bc15696364e8"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "26d74b98a0e83324": {
-      "topic": "John Cornyn Trending Topic",
-      "item_ids": [
-        "ca172cb3c3e0"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "436b5375dd88cad2": {
-      "topic": "Bussi Trending Topic",
-      "item_ids": [
-        "d532f2c6107f"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0e895d2bd56e8411": {
-      "topic": "MY WAY Trending Topic",
-      "item_ids": [
-        "110e188c5be6"
-      ],
-      "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "3661673c4e89b8de": {
       "topic": "Bad Bunny adidas BadBo 1.0 Night Navy Sneaker Release",
       "item_ids": [
@@ -2243,7 +1805,8 @@
     "d6025d7243940be1": {
       "topic": "BTS 13th Anniversary Celebration Trending",
       "item_ids": [
-        "a011b12cc48d"
+        "a011b12cc48d",
+        "322801e5c60b"
       ],
       "created_at": "2026-06-12T20:39:03.285592+00:00",
       "last_escalated_size": 0,
@@ -2833,7 +2396,8 @@
     "b451a956f5cdb371": {
       "topic": "World Cup 2026 Brazil Fans NYC Takeover",
       "item_ids": [
-        "bc5b4ef0b6d3"
+        "bc5b4ef0b6d3",
+        "10fa92076acf"
       ],
       "created_at": "2026-06-13T11:43:36.665351+00:00",
       "last_escalated_size": 0,
@@ -3127,7 +2691,134 @@
       "created_at": "2026-06-13T13:13:55.972250+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1acc246f622156d0": {
+      "topic": "'Obsession' Film Box Office Success and Industry Analysis",
+      "item_ids": [
+        "e4551e43eb57"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "33dc8604afc4668e": {
+      "topic": "Tommy Fury vs Eddie Hall Boxing Pay-Per-View Event",
+      "item_ids": [
+        "8f9c8435eea4"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bd8d473c15cae103": {
+      "topic": "Anna Faris Scary Movie Anxiety Career Interview",
+      "item_ids": [
+        "db29f653f0c1"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5cd7c68a2b3b2d63": {
+      "topic": "Snow Tha Product City Honor ICE Raids Advocacy",
+      "item_ids": [
+        "6b891ea31011"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5bef5917356a57a2": {
+      "topic": "Fat Joe Summer Hit Knicks Victory Soundtrack",
+      "item_ids": [
+        "e869b8be012e"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d8c882b1407750ab": {
+      "topic": "Steven Spielberg Disclosure Day Box Office Opening",
+      "item_ids": [
+        "fb393751b764"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f26b45dc2d1d010f": {
+      "topic": "New York Knicks NBA Finals Title Run WFAN Radio Signal",
+      "item_ids": [
+        "0129ce3239b1"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9443c4b5b8127df8": {
+      "topic": "Amazomania Documentary Uncontacted Indigenous Tribes DC/DOX",
+      "item_ids": [
+        "572206b10aed"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b7e30cce80d73a88": {
+      "topic": "Michael Olise Highsnobiety Profile",
+      "item_ids": [
+        "f9d9c24cab75"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5726b4cba24dab1e": {
+      "topic": "Vans Portrait Slip-on Sneaker Release",
+      "item_ids": [
+        "3ecc50124624"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d663eb7bf8df2ab6": {
+      "topic": "NBA Finals 3-Pointer Strategy Spurs Championship Analysis",
+      "item_ids": [
+        "09b52e02a0ab"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9f2868323b9d8f4a": {
+      "topic": "Josh Hart Wife Shannon NBA Finals Free Throw Anxiety",
+      "item_ids": [
+        "20c628975d6a"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "01d190c7ee30f5c1": {
+      "topic": "NBA Finals Game 5 Knicks vs Spurs Betting Picks",
+      "item_ids": [
+        "018131d31b32",
+        "37fecc42816e"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f95b244e5f26a768": {
+      "topic": "BMW Electric M3 Naming Strategy Announcement",
+      "item_ids": [
+        "5b57604bd20f"
+      ],
+      "created_at": "2026-06-13T15:12:56.067040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-13T13:14:05.376831+00:00"
+  "last_checked": "2026-06-13T15:12:56.068301+00:00"
 }
