@@ -1,32 +1,5 @@
 {
   "known_ids": [
-    "994271fcbb7c",
-    "108b17ecb3d5",
-    "9588617202e9",
-    "78ea91965e26",
-    "3e6905d40358",
-    "e34bb04fda35",
-    "fabe4591d138",
-    "b53b9bcf1b05",
-    "7dda1864018e",
-    "a94df52e3692",
-    "c03a594fd7db",
-    "acc76192c563",
-    "7b533b4574a9",
-    "b3e5746ed24d",
-    "627c2b77585d",
-    "b836ac2eadaf",
-    "35aea2fa810d",
-    "dfb779f28bb3",
-    "30bd1ade643b",
-    "1129360ea6de",
-    "84bb38f35d0d",
-    "5f6715c7b349",
-    "9b2fa749eda2",
-    "fb393751b764",
-    "7f1c073a58b9",
-    "eb116ada2efe",
-    "715d88b78ef8",
     "1203233bb60e",
     "8ccb56cb2a61",
     "aa438435a450",
@@ -499,16 +472,36 @@
     "670af8c26a21",
     "894fa2032349",
     "e0ac6ea0feb8",
-    "b3abc815ef05"
+    "b3abc815ef05",
+    "4e80490dee0e",
+    "c819102ba023",
+    "5f1372429ea5",
+    "ed20a300da9f",
+    "136fe61aed12",
+    "fa83a1deb848",
+    "bc5b4ef0b6d3",
+    "1232733cb0cb",
+    "e9fb59add261",
+    "016081c23e68",
+    "152aebc6304c",
+    "6b8772b5ec86",
+    "465659d12e64",
+    "a6de8fdc0eee",
+    "db740963b677",
+    "e644daf7375c",
+    "2da89690e243",
+    "7c59f16db28c",
+    "b0bb6c5f5f90",
+    "2b2d6aece3e8",
+    "55f06c66f320",
+    "1e8d52dee6d0",
+    "3796a54c2131",
+    "cc9511caac92",
+    "3b7f48b12bae",
+    "390c547c391e",
+    "63e3f3e67a37"
   ],
   "failed_ids": {
-    "a6de8fdc0eee": "2026-06-13T06:43:00.618996+00:00",
-    "719c1abae889": "2026-06-13T06:43:00.618996+00:00",
-    "bf073fa492f4": "2026-06-13T06:43:00.618996+00:00",
-    "08f15d4ab020": "2026-06-13T06:43:00.618996+00:00",
-    "3b7f48b12bae": "2026-06-13T06:43:00.618996+00:00",
-    "c7b0e3b74e87": "2026-06-13T06:43:00.618996+00:00",
-    "5a5b3e435f69": "2026-06-13T06:43:00.618996+00:00",
     "0e075cf3b568": "2026-06-13T09:46:39.222937+00:00",
     "225cf651e24f": "2026-06-13T09:46:39.222937+00:00",
     "6353d72914c8": "2026-06-13T09:46:39.222937+00:00",
@@ -519,233 +512,20 @@
     "4055ee5e6da7": "2026-06-13T09:46:39.222937+00:00",
     "5a0bba535d99": "2026-06-13T09:46:39.222937+00:00",
     "8e75f8cfdb11": "2026-06-13T09:46:39.222937+00:00",
-    "7a81061039f9": "2026-06-13T09:46:39.222937+00:00"
+    "7a81061039f9": "2026-06-13T09:46:39.222937+00:00",
+    "8d25cd469dab": "2026-06-13T11:43:07.478634+00:00",
+    "4ba7289b8f3b": "2026-06-13T11:43:07.478634+00:00",
+    "0f13a28aaa7a": "2026-06-13T11:43:07.478634+00:00",
+    "ba025afb5adb": "2026-06-13T11:43:07.478634+00:00",
+    "237ec8f65267": "2026-06-13T11:43:07.478634+00:00",
+    "62f79e9274b8": "2026-06-13T11:43:07.478634+00:00",
+    "e0e86611092a": "2026-06-13T11:43:07.478634+00:00",
+    "cf33f0b0ce9b": "2026-06-13T11:43:07.478634+00:00",
+    "4ef239d73f1e": "2026-06-13T11:43:07.478634+00:00",
+    "c7b0e3b74e87": "2026-06-13T11:43:07.478634+00:00",
+    "5a5b3e435f69": "2026-06-13T11:43:07.478634+00:00"
   },
   "live_clusters": {
-    "ab9f7450b6869608": {
-      "topic": "David Hockney Death Iconic British Artist Obituary",
-      "item_ids": [
-        "1a11974f519c",
-        "5e12e2275c65",
-        "d0c6b3bdc9f5"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-12T22:13:36.019011+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "1a11974f519c",
-        "5e12e2275c65",
-        "d0c6b3bdc9f5"
-      ]
-    },
-    "74fcb4d73ce63714": {
-      "topic": "Tony Leung Shanghai Golden Goblet Film Festival Jury",
-      "item_ids": [
-        "bc07d02bf1bf"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "008b4ae6b9634012": {
-      "topic": "The Weeknd 2026 World Tour Record-Breaking Revenue Tickets",
-      "item_ids": [
-        "7e49b5464a4f"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5a3dbb71e0825b76": {
-      "topic": "Tori Kelly God Must Really Love Me Album Parenthood",
-      "item_ids": [
-        "23149eb75b7e"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b93369e883df1f81": {
-      "topic": "Ludwig Season 2 David Mitchell BBC BritBox Detective",
-      "item_ids": [
-        "f6c68869c6aa"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9f5de8322e10fed5": {
-      "topic": "Sagrada Familia Tower Jesus Construction Japanese Broadcaster Documentary",
-      "item_ids": [
-        "2bcc7fbb903a"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "833eb7fcabdc78fe": {
-      "topic": "Sheeran Looper X One-Person Tour Music Equipment",
-      "item_ids": [
-        "61e12d251dad"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "22788988856acbeb": {
-      "topic": "Trad Wives Matchmakers $25K Wealthy Men Dating",
-      "item_ids": [
-        "ddbafd12ab93"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d58569e642c7fe9a": {
-      "topic": "US Foreign Influencers Work Visas 2026 World Cup Requirement",
-      "item_ids": [
-        "77218098ec17"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ad5d2b3831f77d91": {
-      "topic": "LeBron James NBA Team Owner Prediction Market 2030",
-      "item_ids": [
-        "60495c40add3",
-        "2da7084a7099"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f7fe214f9329fd1a": {
-      "topic": "Knicks vs Spurs NBA Finals Game 5 Betting Props",
-      "item_ids": [
-        "28d3093d54f7",
-        "a1d166c2294e",
-        "fa0faabf9440",
-        "346ac43d4459",
-        "34221deeb743",
-        "5fa26af862c1",
-        "b45742276fcb",
-        "05a69a9b9e30",
-        "77fcd6ec7c03",
-        "e33a24f8837c",
-        "a9159bece573",
-        "041f315923dc",
-        "99b004d1cb34",
-        "176ea34eeab0",
-        "0d55f96fbe79",
-        "e2a9cd6df62c",
-        "720bc167b31d",
-        "77db7c76f172",
-        "9a491695a596",
-        "4dd90777369a",
-        "7fa2eeeb6fa0",
-        "671dd3e1852a",
-        "9d44208160ec",
-        "1034e9d7b6a7",
-        "3f076b11d2c2"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 25,
-      "last_escalated_at": "2026-06-13T09:46:39.222937+00:00",
-      "picks_file": "picks/picks-2026-06-12-1639.md",
-      "why_text": "The NBA Finals has arrived at its most critical juncture \u2014 a Knicks team carrying the weight of a half-century championship drought is one win away from ending it, while the Spurs are fighting to force the series back to San Antonio. The cultural stakes are enormous: New York hasn't won a title since 1973, and the betting markets, ticket price swings, and free agency caution all signal that the league itself is holding its breath around what happens next. This isn't just a game \u2014 it's a potential civic moment for the most media-saturated sports market in the country.\n**Update 3:39 PM CT:** Jay-Z's 'Empire State of Mind' surged on streaming charts following the Knicks' latest comeback win, underscoring the cultural electricity building around a potential New York title, while on the San Antonio side, Spurs head coach Mitch Johnson made a point of publicly reaffirming his trust in De'Aaron Fox \u2014 a signal that the Spurs are leaning on their star to even the series before it returns to Madison Square Garden.\n**Update 5:14 PM CT:** With Game 5 shifting to San Antonio, Wembanyama is publicly shaking off the Knicks' comeback and projecting confidence ahead of what would be an elimination game for the Spurs, while Keldon Johnson echoes that defiant tone in the locker room \u2014 but the cultural lens is sharpening on New York's side too, with CNN spotlighting the Latino duo powering the Knicks' historic run as the city's fanbase braces for a potential title-clinching moment.\n**Update 6:54 PM CT:** The celebrity orbit around this series is expanding beyond sports: Selena Gomez fired back at Taylor Swift over NBA Finals drama with a blunt 'it's a basketball game,' injecting a pop culture subplot into the lead-up to Game 5 that underscores just how wide the cultural footprint of a potential Knicks title has become.\n**Update 9:49 PM CT:** Jalen Brunson is calling out his own fanbase ahead of Game 5, urging Knicks supporters to 'be better' \u2014 a pointed message likely directed at crowd behavior targeting opposing players \u2014 while the numbers behind New York's run are coming into sharper focus: the Knicks have now joined an exclusive club of teams to overcome a 29-point playoff deficit, a comeback stat that underscores just how much this group has leaned on resilience as their defining trait with a title one win away.\n**Update 4:47 AM CT:** A key Spurs star is listed as questionable for Game 5 \u2014 a development that could reshape San Antonio's ability to force a Game 6 \u2014 while the Knicks' narrative continues to crystallize around two figures: Jalen Brunson, whose outperformance of every expectation has drawn 'gold dust' praise from The New York Times, and Karl-Anthony Towns, the New Jersey kid now one win from becoming a New York legend, even as oddsmakers still favor the home-standing Spurs to extend the series tonight.",
-      "last_escalated_item_ids": [
-        "28d3093d54f7",
-        "a1d166c2294e",
-        "fa0faabf9440",
-        "346ac43d4459",
-        "34221deeb743",
-        "5fa26af862c1",
-        "b45742276fcb",
-        "05a69a9b9e30",
-        "77fcd6ec7c03",
-        "e33a24f8837c",
-        "a9159bece573",
-        "041f315923dc",
-        "99b004d1cb34",
-        "176ea34eeab0",
-        "0d55f96fbe79",
-        "e2a9cd6df62c",
-        "720bc167b31d",
-        "77db7c76f172",
-        "9a491695a596",
-        "4dd90777369a",
-        "7fa2eeeb6fa0",
-        "671dd3e1852a",
-        "9d44208160ec",
-        "1034e9d7b6a7",
-        "3f076b11d2c2"
-      ]
-    },
-    "0972ec3c3783b3f7": {
-      "topic": "Knicks vs Spurs NBA Finals Game 5 Early Prediction",
-      "item_ids": [
-        "88df46a520a4"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e4c4e80189555999": {
-      "topic": "Spurs Game 4 Collapse NBA Finals Learning Opportunity",
-      "item_ids": [
-        "ac38ec403a53",
-        "31b5b269c940",
-        "6ed99ab25561",
-        "c974f46fd8fc"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-12T20:38:10.786858+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "ac38ec403a53",
-        "31b5b269c940",
-        "6ed99ab25561"
-      ]
-    },
-    "e2671d90ac22e19e": {
-      "topic": "Willis Reed Knicks NBA Finals Legacy Celebration",
-      "item_ids": [
-        "010fa9998027"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9cb88549b733e97b": {
-      "topic": "Jacqueline Morby Finance Software Queen Obituary",
-      "item_ids": [
-        "8957e305f955"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5b37ad612a080ac0": {
-      "topic": "BMW M5 Touring Wagon America Market Strategy",
-      "item_ids": [
-        "807411b42871",
-        "25fe6da1076c",
-        "05fb33e22a96"
-      ],
-      "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-12T22:13:36.019011+00:00",
-      "picks_file": "picks/picks-2026-06-12-2214.md",
-      "why_text": "For decades, American buyers have been told they don't want wagons \u2014 BMW just proved otherwise. The M5 Touring's strong US reception is forcing the brand to reconsider its long-standing assumption that only SUVs sell stateside, and that's a genuinely big deal for enthusiasts who've watched Europe hoard the good stuff for years. This isn't just a BMW story; it's a crack in the wall that's kept performance wagons out of American showrooms across every brand.",
-      "last_escalated_item_ids": [
-        "807411b42871",
-        "25fe6da1076c",
-        "05fb33e22a96"
-      ]
-    },
     "a7655eafc6bc775e": {
       "topic": "New Music Releases Weekly Roundup",
       "item_ids": [
@@ -977,11 +757,21 @@
       "topic": "Knicks NBA Finals 2026 Run Ben Stiller Lens",
       "item_ids": [
         "1ddf01dce587",
-        "40954dc18913"
+        "40954dc18913",
+        "b0bb6c5f5f90",
+        "2b2d6aece3e8"
       ],
       "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-13T11:43:07.478634+00:00",
+      "picks_file": "picks/picks-2026-06-13-1143.md",
+      "why_text": "For the first time since 1999, the New York Knicks are on the NBA Finals stage \u2014 and the cultural weight of that drought makes this moment bigger than basketball. A city that has spent 26 years watching the Lakers, Warriors, and Celtics cycle through championships is now the center of the sports universe, and the nostalgia angle (Ben Stiller, Y2K-era New York) is already flooding the discourse. This isn't just a Knicks story \u2014 it's a New York story, and those tend to consume everything.",
+      "last_escalated_item_ids": [
+        "1ddf01dce587",
+        "40954dc18913",
+        "b0bb6c5f5f90",
+        "2b2d6aece3e8"
+      ]
     },
     "14932883ee4d61b2": {
       "topic": "NBA Coaching Hiring Search Bulls Mavericks Blazers",
@@ -1101,13 +891,17 @@
         "5ce648fd916c",
         "2ad09b8f8c0c",
         "efd4f77b2783",
-        "6df8dec8a986"
+        "6df8dec8a986",
+        "55f06c66f320",
+        "1e8d52dee6d0",
+        "3796a54c2131",
+        "cc9511caac92"
       ],
       "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 15,
-      "last_escalated_at": "2026-06-13T02:49:19.523124+00:00",
+      "last_escalated_size": 21,
+      "last_escalated_at": "2026-06-13T11:43:07.478634+00:00",
       "picks_file": "picks/picks-2026-06-12-1353.md",
-      "why_text": "BMW chose the 24 Hours of Le Mans \u2014 motorsport's most storied stage \u2014 to debut the M Concept Neue Klasse, a near-production preview of the first electric M3. The move signals that BMW M is done hedging: this is the direction, whether purists like it or not, with the company reportedly keeping a petrol M3 alive as a safety net for the holdouts. Culturally, it lands at the exact moment the performance car world is being forced to decide what 'driving excitement' means when there's no engine sound to romanticize.\n**Update 11:39 AM CT:** The concept's design is already drawing direct comparisons to the AMG GT XX, signaling that the electric performance war is shaping up as a genuine two-horse race between Munich and Stuttgart. Meanwhile, on the track where BMW made the announcement, Dries Vanthoor underlined the brand's current motorsport credibility by putting the #15 BMW M Hybrid V8 on pole at Le Mans \u2014 a timely reminder that BMW is playing both the present and the future simultaneously.\n**Update 1:30 PM CT:** Adding further context to BMW's electric ambitions, the iX3 has just posted a verified 500-mile single-charge range result in real-world testing per Electrek \u2014 a quietly significant data point that gives the M Concept Neue Klasse's performance promises more engineering credibility, suggesting BMW's EV range anxiety problem may already be solved before the electric M3 even hits production.\n**Update 9:49 PM CT:** Trade and enthusiast press coverage of the M Concept Neue Klasse is now broadening beyond the core auto outlets, with platforms like ACKO Drive amplifying BMW's Le Mans messaging to wider audiences \u2014 a sign that the electric M3's cultural footprint is expanding well beyond the motorsport crowd BMW originally pitched it to.",
+      "why_text": "BMW chose the 24 Hours of Le Mans \u2014 motorsport's most storied stage \u2014 to debut the M Concept Neue Klasse, a near-production preview of the first electric M3. The move signals that BMW M is done hedging: this is the direction, whether purists like it or not, with the company reportedly keeping a petrol M3 alive as a safety net for the holdouts. Culturally, it lands at the exact moment the performance car world is being forced to decide what 'driving excitement' means when there's no engine sound to romanticize.\n**Update 11:39 AM CT:** The concept's design is already drawing direct comparisons to the AMG GT XX, signaling that the electric performance war is shaping up as a genuine two-horse race between Munich and Stuttgart. Meanwhile, on the track where BMW made the announcement, Dries Vanthoor underlined the brand's current motorsport credibility by putting the #15 BMW M Hybrid V8 on pole at Le Mans \u2014 a timely reminder that BMW is playing both the present and the future simultaneously.\n**Update 1:30 PM CT:** Adding further context to BMW's electric ambitions, the iX3 has just posted a verified 500-mile single-charge range result in real-world testing per Electrek \u2014 a quietly significant data point that gives the M Concept Neue Klasse's performance promises more engineering credibility, suggesting BMW's EV range anxiety problem may already be solved before the electric M3 even hits production.\n**Update 9:49 PM CT:** Trade and enthusiast press coverage of the M Concept Neue Klasse is now broadening beyond the core auto outlets, with platforms like ACKO Drive amplifying BMW's Le Mans messaging to wider audiences \u2014 a sign that the electric M3's cultural footprint is expanding well beyond the motorsport crowd BMW originally pitched it to.\n**Update 6:43 AM CT:** BMW has now confirmed the production M3 will closely mirror the Neue Klasse concept's design \u2014 removing the usual caveat that separates showcar fantasy from reality \u2014 while a separate report reveals the electric M3 skips carbon fiber in favor of cost-engineered alternatives, a pragmatic call that tells you BMW is building this for volume, not just headlines.",
       "last_escalated_item_ids": [
         "8ba18496cbad",
         "1e514ff61d2f",
@@ -1123,7 +917,13 @@
         "75a0962f9e18",
         "5f968e4ebd65",
         "5ce648fd916c",
-        "2ad09b8f8c0c"
+        "2ad09b8f8c0c",
+        "efd4f77b2783",
+        "6df8dec8a986",
+        "55f06c66f320",
+        "1e8d52dee6d0",
+        "3796a54c2131",
+        "cc9511caac92"
       ]
     },
     "55b2856e91c2afcc": {
@@ -2957,7 +2757,169 @@
       "created_at": "2026-06-13T09:47:11.098923+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "80b6bf99eca530cc": {
+      "topic": "Kristin Scott Thomas Slow Horses Diana Taverner Character Profile",
+      "item_ids": [
+        "4e80490dee0e"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f437aafc5ad87a34": {
+      "topic": "Kristin Scott Thomas Slow Horses Writing Directing Career",
+      "item_ids": [
+        "c819102ba023"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "44f2e9ae0c2360c6": {
+      "topic": "USMNT Balogun Player Performance Analysis",
+      "item_ids": [
+        "5f1372429ea5"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "84c0961a97c66c6e": {
+      "topic": "USMNT Player Ratings Balogun Pulisic",
+      "item_ids": [
+        "ed20a300da9f"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "573ef8e76c461efa": {
+      "topic": "Ancient Warrior Training Athletic Performance",
+      "item_ids": [
+        "136fe61aed12"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c21d3d48464e2445": {
+      "topic": "Chicago Cubs 2026 Season Analysis Problems",
+      "item_ids": [
+        "fa83a1deb848"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b451a956f5cdb371": {
+      "topic": "World Cup 2026 Brazil Fans NYC Takeover",
+      "item_ids": [
+        "bc5b4ef0b6d3"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "54d15acf979a1e95": {
+      "topic": "Dyson V16 V10 V8 Vacuum 2026 New Models",
+      "item_ids": [
+        "1232733cb0cb"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "514206d685534475": {
+      "topic": "Soccer Physics Ball Bending Mechanics Science",
+      "item_ids": [
+        "e9fb59add261"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0f3fd67adb41719d": {
+      "topic": "FCC Burner Phone Regulation Policy",
+      "item_ids": [
+        "016081c23e68"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7ce59ac6751a37b8": {
+      "topic": "EcoFlow PowerOcean Battery Home Energy Review",
+      "item_ids": [
+        "152aebc6304c"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f9757d3b17a97c52": {
+      "topic": "FBI Cyber Range Replica Town Training",
+      "item_ids": [
+        "6b8772b5ec86"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6670e6e1c3a58cb7": {
+      "topic": "Indie Games NBA Streetball Renewable Energy Crafting",
+      "item_ids": [
+        "465659d12e64"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ab421d94b2047de9": {
+      "topic": "Switzerland Population Cap Vote 10 Million",
+      "item_ids": [
+        "a6de8fdc0eee"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fa55df0e8190c8af": {
+      "topic": "Deep-Sea Species Discovery Photography Technology",
+      "item_ids": [
+        "db740963b677"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4ac91358c5272a51": {
+      "topic": "3D Printed Guns Regulation Law Policy",
+      "item_ids": [
+        "e644daf7375c"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ec4fa56a20e4b6b3": {
+      "topic": "2026 NBA Mock Draft Michael Porter Jr Trade",
+      "item_ids": [
+        "2da89690e243"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "58636240cb3b5a85": {
+      "topic": "Mitch Johnson Spurs NBA Finals Collapse Role",
+      "item_ids": [
+        "7c59f16db28c"
+      ],
+      "created_at": "2026-06-13T11:43:36.665351+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-13T09:47:22.763673+00:00"
+  "last_checked": "2026-06-13T11:43:46.672422+00:00"
 }
