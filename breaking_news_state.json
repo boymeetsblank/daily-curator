@@ -1,51 +1,5 @@
 {
   "known_ids": [
-    "60495c40add3",
-    "28d3093d54f7",
-    "88df46a520a4",
-    "ac38ec403a53",
-    "010fa9998027",
-    "37350fe16634",
-    "5a47c99ac4e6",
-    "8957e305f955",
-    "a107790de160",
-    "37350fe16634",
-    "807411b42871",
-    "7025f56adf4a",
-    "fd3d2f0f8498",
-    "473d6eda9432",
-    "41169b4140d8",
-    "4f850139fb13",
-    "77c227ae3187",
-    "ccc7a2382749",
-    "8aa3da630cd4",
-    "2028c0dc3f74",
-    "b0be88ab6b8e",
-    "45b7266d2a27",
-    "5d8a95bd4bf4",
-    "78c3344f6bc5",
-    "6cb76baa0567",
-    "1502ddfeb9ed",
-    "3d54019689f9",
-    "36f150982612",
-    "a1d166c2294e",
-    "398f146a8015",
-    "d9721e2e6bde",
-    "824d94ae6995",
-    "2fffd27dd6bc",
-    "7d2541741db6",
-    "8c96d8929032",
-    "605af205a761",
-    "59f91532f4c1",
-    "ef8967f407b5",
-    "f9ebe1c01126",
-    "22aaf3e7f8c0",
-    "b58755fb9d0c",
-    "c03f42784297",
-    "4d5d392ee17f",
-    "919562c59af9",
-    "696cb6db01c8",
-    "10adb4770bc4",
     "f7a5c4fdf1af",
     "3dab83d73740",
     "cb082b04f984",
@@ -499,20 +453,55 @@
     "5b57604bd20f",
     "bc255bbfbcbd",
     "4a0b34672543",
-    "10fa92076acf"
+    "10fa92076acf",
+    "7214048e048c",
+    "1f3a05b15d30",
+    "d0871237b0b6",
+    "e19c31c408d8",
+    "6f137c58dd3a",
+    "45a4136e2ac0",
+    "96974304b31c",
+    "254192b0544f",
+    "c991a668bb9a",
+    "f194e08736be",
+    "ad9e9052a968",
+    "ba3ab83c33e2",
+    "e8946ef42335",
+    "9b1d592513d0",
+    "86a2714e5790",
+    "70968308d51d",
+    "46db1df8a18f",
+    "66511f173645",
+    "290af1660afb",
+    "cb7d3fb75d3e",
+    "bea6b6610dd0",
+    "7023b0a2b555",
+    "46214776b342",
+    "049576a5cccc",
+    "50bbcfaab21c",
+    "d3c6be260236",
+    "4b8bdc6326f4",
+    "8d25cd469dab",
+    "a6173102788f",
+    "71d66b5f8dd5",
+    "52590e59f5ae",
+    "a58ae804f79c",
+    "9c0779ba1e4a",
+    "1057787900a4",
+    "399d8b8b1e08",
+    "63d6e723e093",
+    "89961ecf4c70",
+    "7e5ef0ae068b",
+    "4470bc50683c",
+    "7e5bf1164868",
+    "e0376af46d8d",
+    "6db4a01e7147",
+    "73dc8447d6fd",
+    "53bdb48528cf",
+    "1171da894157",
+    "7e195cf384d5"
   ],
   "failed_ids": {
-    "8d25cd469dab": "2026-06-13T11:43:07.478634+00:00",
-    "4ba7289b8f3b": "2026-06-13T11:43:07.478634+00:00",
-    "0f13a28aaa7a": "2026-06-13T11:43:07.478634+00:00",
-    "ba025afb5adb": "2026-06-13T11:43:07.478634+00:00",
-    "237ec8f65267": "2026-06-13T11:43:07.478634+00:00",
-    "62f79e9274b8": "2026-06-13T11:43:07.478634+00:00",
-    "e0e86611092a": "2026-06-13T11:43:07.478634+00:00",
-    "cf33f0b0ce9b": "2026-06-13T11:43:07.478634+00:00",
-    "4ef239d73f1e": "2026-06-13T11:43:07.478634+00:00",
-    "c7b0e3b74e87": "2026-06-13T11:43:07.478634+00:00",
-    "5a5b3e435f69": "2026-06-13T11:43:07.478634+00:00",
     "2ca9c188c83c": "2026-06-13T13:13:26.041562+00:00",
     "9a0b4a89094e": "2026-06-13T13:13:26.041562+00:00",
     "f997c7890b19": "2026-06-13T13:13:26.041562+00:00",
@@ -548,144 +537,6 @@
     "e0c502dfc0eb": "2026-06-13T15:12:14.731641+00:00"
   },
   "live_clusters": {
-    "3661673c4e89b8de": {
-      "topic": "Bad Bunny adidas BadBo 1.0 Night Navy Sneaker Release",
-      "item_ids": [
-        "ca45153d5dee"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "15933a2e16b9c4ee": {
-      "topic": "Nike Air Force 1 2001 Shape Triple White Reissue",
-      "item_ids": [
-        "dd243b7992fc"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "25c9ae5cfa58721b": {
-      "topic": "Texas Rangers Nike Air Max 1 Mexican Heritage Collaboration",
-      "item_ids": [
-        "89bbadceaf8c"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "61463590357d99e1": {
-      "topic": "Solomon Free Concert Pacha New York Rain Makeup Show",
-      "item_ids": [
-        "2b6ff74610b4"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b43bca957a26d4b9": {
-      "topic": "True Panther Indie Music Success Profile",
-      "item_ids": [
-        "bc08e2343a7c"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c8bd08ae732031b2": {
-      "topic": "Nipsey Hussle Bino Rideaux Sacrifices PROLIFIC Album",
-      "item_ids": [
-        "477dbb3c940c",
-        "2cf93488a2a1"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "35b51cb898f700b6": {
-      "topic": "Kathryn Newton Hulu Drama Pilot Durango Casting",
-      "item_ids": [
-        "6ec5ca0c7c60",
-        "9a802cf8bf3c"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d85aaea4a8777c7b": {
-      "topic": "Inanna Sarkis Beach Read 20th Century Studios Film",
-      "item_ids": [
-        "4cf57187a17f"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4ea151a8475ebbe1": {
-      "topic": "Little One Dark Comedy Film Cast Announcement",
-      "item_ids": [
-        "ae33f9e01254"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "958159d2d76c6c0d": {
-      "topic": "Joanna Levesque Mike Colter Very Thought of You Jazz Film",
-      "item_ids": [
-        "0f243be54742"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bd8fb5f883484e3f": {
-      "topic": "Baba\u00e0 Sumptuous Knits Fashion Profile",
-      "item_ids": [
-        "60fc70fb5b21"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dbe53d6609ec1694": {
-      "topic": "New Balance Mary Jane Sneaker Y2K Sandal",
-      "item_ids": [
-        "a7c14b0594c5"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8e3b5757446adbdc": {
-      "topic": "Skechers Y2K Classic Sneaker Revival",
-      "item_ids": [
-        "5cc8af50c314"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "effa4860825920f1": {
-      "topic": "NBA Finals Spotify Podcast Listening Surge",
-      "item_ids": [
-        "1f41e537222c"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e18a285cbc1a6fb6": {
-      "topic": "BMW Dealer AI Chatbot Trade-In Overpayment Error",
-      "item_ids": [
-        "1d14070d7951",
-        "3635e21615ac"
-      ],
-      "created_at": "2026-06-12T16:38:56.139641+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "52ed8d6a34f3cdf1": {
       "topic": "SpaceX IPO Nike Custom Sneakers",
       "item_ids": [
@@ -2820,5 +2671,5 @@
       "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-13T15:12:56.068301+00:00"
+  "last_checked": "2026-06-13T16:47:39.556996+00:00"
 }
