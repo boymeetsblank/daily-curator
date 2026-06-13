@@ -1,15 +1,5 @@
 {
   "known_ids": [
-    "22410194cffb",
-    "768ba4a4752a",
-    "92fb321704e4",
-    "bad16bb55be0",
-    "687842b69035",
-    "eaafdfd32681",
-    "c6d3605f366d",
-    "8fa660c0b22b",
-    "9385048e245f",
-    "5d442803eef3",
     "81129d06f39d",
     "7d80e290351e",
     "f4bf9d712381",
@@ -499,23 +489,19 @@
     "7fa2eeeb6fa0",
     "8287ec3d7d42",
     "525642b8e331",
-    "2ad09b8f8c0c"
+    "2ad09b8f8c0c",
+    "4d23271b648f",
+    "58b7eafc0bf9",
+    "53c37b3731b6",
+    "9976498cb481",
+    "0c13f5ecf871",
+    "671dd3e1852a",
+    "5a41c7fff6da",
+    "28bcbbbb8918",
+    "42adec4eda48",
+    "45436d7e1b4c"
   ],
   "failed_ids": {
-    "ca2e7b666ea4": "2026-06-12T23:53:55.992966+00:00",
-    "f38b34b1fb66": "2026-06-12T23:53:55.992966+00:00",
-    "0dddeabbbc6a": "2026-06-12T23:53:55.992966+00:00",
-    "ad9e9052a968": "2026-06-12T23:53:55.992966+00:00",
-    "e853d0811f1c": "2026-06-12T23:53:55.992966+00:00",
-    "061e5befacf3": "2026-06-12T23:53:55.992966+00:00",
-    "acdc9d6943cb": "2026-06-12T23:53:55.992966+00:00",
-    "6f74b728a575": "2026-06-12T23:53:55.992966+00:00",
-    "63cd818374b4": "2026-06-12T23:53:55.992966+00:00",
-    "92e0b9f7c171": "2026-06-12T23:53:55.992966+00:00",
-    "f015e39133f2": "2026-06-12T23:53:55.992966+00:00",
-    "3528112db339": "2026-06-12T23:53:55.992966+00:00",
-    "521eb90a2ca5": "2026-06-12T23:53:55.992966+00:00",
-    "d8288b4f86bc": "2026-06-12T23:53:55.992966+00:00",
     "253c9a2a6281": "2026-06-13T02:49:19.523124+00:00",
     "2621224e73c9": "2026-06-13T02:49:19.523124+00:00",
     "f2a0d4b364e8": "2026-06-13T02:49:19.523124+00:00",
@@ -527,46 +513,16 @@
     "4b0eded3ec7c": "2026-06-13T02:49:19.523124+00:00",
     "0b1c5d64ef76": "2026-06-13T02:49:19.523124+00:00",
     "c2291c181ecc": "2026-06-13T02:49:19.523124+00:00",
-    "53bdb48528cf": "2026-06-13T02:49:19.523124+00:00"
+    "53bdb48528cf": "2026-06-13T02:49:19.523124+00:00",
+    "a6de8fdc0eee": "2026-06-13T06:43:00.618996+00:00",
+    "719c1abae889": "2026-06-13T06:43:00.618996+00:00",
+    "bf073fa492f4": "2026-06-13T06:43:00.618996+00:00",
+    "08f15d4ab020": "2026-06-13T06:43:00.618996+00:00",
+    "3b7f48b12bae": "2026-06-13T06:43:00.618996+00:00",
+    "c7b0e3b74e87": "2026-06-13T06:43:00.618996+00:00",
+    "5a5b3e435f69": "2026-06-13T06:43:00.618996+00:00"
   },
   "live_clusters": {
-    "c789ea6af3192dea": {
-      "topic": "2026 ARIA Hall of Fame Inductions Gurrumul Jenny Morris",
-      "item_ids": [
-        "7d08537bcad6"
-      ],
-      "created_at": "2026-06-12T06:19:27.716992+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1f00130c31988c13": {
-      "topic": "ChatGPT Billion Monthly Users Milestone AI Sentiment",
-      "item_ids": [
-        "d62347c335d6"
-      ],
-      "created_at": "2026-06-12T06:19:27.716992+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0126676ff27b6cde": {
-      "topic": "US Video Game Market Growth Cloud Gaming Esports Digital Innovation",
-      "item_ids": [
-        "14bdbaaf7576"
-      ],
-      "created_at": "2026-06-12T06:19:27.716992+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "28619265e3cf3eb6": {
-      "topic": "Blind Ukrainian Veteran Pottery Business Mentorship",
-      "item_ids": [
-        "50815865e8d0",
-        "e4416c4f2f4d"
-      ],
-      "created_at": "2026-06-12T06:19:27.716992+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "ab9f7450b6869608": {
       "topic": "David Hockney Death Iconic British Artist Obituary",
       "item_ids": [
@@ -689,7 +645,8 @@
         "77db7c76f172",
         "9a491695a596",
         "4dd90777369a",
-        "7fa2eeeb6fa0"
+        "7fa2eeeb6fa0",
+        "671dd3e1852a"
       ],
       "created_at": "2026-06-12T10:44:14.889032+00:00",
       "last_escalated_size": 21,
@@ -2867,7 +2824,70 @@
       "created_at": "2026-06-13T02:49:49.068527+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "0921b8228a5752f0": {
+      "topic": "Blink-182 25th Anniversary Take Off Your Pants and Jacket Reissue",
+      "item_ids": [
+        "4d23271b648f"
+      ],
+      "created_at": "2026-06-13T06:43:25.397787+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e45bed6a9660dd42": {
+      "topic": "AI Agents EV Charger Protection Technology",
+      "item_ids": [
+        "58b7eafc0bf9"
+      ],
+      "created_at": "2026-06-13T06:43:25.397787+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "89c63fec337afd5f": {
+      "topic": "DXC Technology Anthropic Claude Alliance Investment Impact",
+      "item_ids": [
+        "53c37b3731b6"
+      ],
+      "created_at": "2026-06-13T06:43:25.397787+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d793bf71d66734f7": {
+      "topic": "Cognizant Sovereign Physical AI Platform Security Alliances Investment",
+      "item_ids": [
+        "9976498cb481"
+      ],
+      "created_at": "2026-06-13T06:43:25.397787+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "70cf3f9c132ac009": {
+      "topic": "Spotify Technology Downgraded Hold Rating Wall Street",
+      "item_ids": [
+        "0c13f5ecf871"
+      ],
+      "created_at": "2026-06-13T06:43:25.397787+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5854efe2366236ac": {
+      "topic": "Tech IPO Employee Paydays Financial Advisor Guidance",
+      "item_ids": [
+        "5a41c7fff6da"
+      ],
+      "created_at": "2026-06-13T06:43:25.397787+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "68a6cb1c8d6ac8ec": {
+      "topic": "StubHub STUB Guggenheim Backing Stock Surge",
+      "item_ids": [
+        "28bcbbbb8918"
+      ],
+      "created_at": "2026-06-13T06:43:25.397787+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-13T02:50:05.840219+00:00"
+  "last_checked": "2026-06-13T06:43:25.398978+00:00"
 }
