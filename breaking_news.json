@@ -1,6 +1,171 @@
 {
   "items": [
     {
+      "id": "afba49b904fa",
+      "topic": "Katy Perry and 10-Year-Old Singer Tius Bring Heartfelt ‘Wonder’ Performance to the World Cup",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://www.rollingstone.com/music/music-news/katy-perry-tius-perform-world-cup-2026-1235577061/",
+      "source_name": "Rolling Stone",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "05c25db92e06ba57"
+    },
+    {
+      "id": "8dd3a2f5e2e4",
+      "topic": "‘Summer House’s Ciara Miller & Tefi Pessoa Make First ‘Love Island USA’ Appearance Ahead Of ‘Aftersun’ Premiere",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://deadline.com/2026/06/summer-house-ciara-miller-tefi-pessoa-love-island-usa-aftersun-1236955548/",
+      "source_name": "Deadline",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "9a7219b572c3d0ea"
+    },
+    {
+      "id": "e7f26c0044c3",
+      "topic": "Anthropic Says It’s Taking Claude Fable 5 Offline to Comply With US Government Order",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://www.wired.com/story/anthropic-says-us-government-ordered-it-to-shut-down-mythos-models/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "935f2f8cf76c4be4"
+    },
+    {
+      "id": "debd8a7ac5d0",
+      "topic": "Anthropic’s safety warnings may have just backfired — the government has pulled the plug on its most powerful AI",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
+      "source_name": "TechCrunch",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "935f2f8cf76c4be4"
+    },
+    {
+      "id": "b322e813452a",
+      "topic": "Anthropic disables access to Fable 5 and Mythos 5 to comply with government directive",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "935f2f8cf76c4be4"
+    },
+    {
+      "id": "149b925647d1",
+      "topic": "Anthropic Blocks Foreign Nationals From Using Its Mythos and Fable 5 A.I. Systems - The New York Times",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTHRjTk4ySzZxRVVlTnA4LXdBSzZ3RzFEX0puLW1ZTVhxNXRSTmN3ZEVhV0phNWF5YzhfMVhZWGhnR0RlMzhDeUx6RkhuWXRYR0YyTWVTdU1EX3ZZV3l5S3MtRW5LbHczR2VlWDRVSjlVcnRKVTY4Y0ZmZ1V5bWdpb1dVQXBTLTdTMUE?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "935f2f8cf76c4be4"
+    },
+    {
+      "id": "82878a0de40b",
+      "topic": "Anthropic pulls Claude Mythos 5 and Claude Fable 5 following US government directive - 9to5Mac",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSnJuOTZWN25LdVlUQkVqeTZ5eTB6UkN4dFg3M0VxeUtkd1MyMS1DRVRVd3E3eW9WTTB5SHBxdlE0QngyZ1pmTW4wZ2hjTk8wZWx4Y2NLWURCemtCQlNTcloyN3FFM1FpUjJwOEJoZ3cyaVMwYm5jbkt5VkFnWjlvOFNWVWRkcHNEdUw0d3BnQzVna2NpMFVjUjY3TVFaNGF5VVE0VktQTEZNSDFXaS1qTjNiUk5HRWc?oc=5",
+      "source_name": "9to5Mac",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "935f2f8cf76c4be4"
+    },
+    {
+      "id": "8ac979851099",
+      "topic": "AEW Dynamite ratings take hit against NBA Finals - F4W/WON",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQM2Zkcm9adFFWMEUzN0xUQnVEanZOUnRpRngzd0hXSnhVd3lkUDNOXzJTYW9PTVRoZzZkVC1YTm5KY2xyOExzdXdNMEJjRWsxYms2TkRHZjY0aUpuLUZDM2Q3WHZCQTVaWnBzZnphdVFTRUVibFVmZFZmN0FHQ21WbVhEeTVZTk5QZktvaWVFNA?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "7706d541e33df188"
+    },
+    {
+      "id": "77db7c76f172",
+      "topic": "Knicks relying on their greatest strength with glory just one win away - New York Post",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPY2VZYnIweHNJbDlfQWZ5OXllY2JmYWZtVXVtZE9LeHMxUXJfejh1a3VZWmJjTVBhOE5BUGVjanVvYkNCZXlRTUQtX25NcXZ5dTlnNzVxX3lkN3lkQk1IUVVTNnNVdDlkQkF4NzVvRVk4Q3I5bkZnTV91dXFURk9fdnNRV3hDczV4MWxnM193bFdHMGYxNm80bWRVU3A2clY5ZTN6T2pVQXRLNTIt?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "f7fe214f9329fd1a"
+    },
+    {
+      "id": "9a491695a596",
+      "topic": "Knicks join Thunder in special club of 29-point comeback in NBA playoff win - Yahoo Sports",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeEVxSmRfUXdsMnVLUFRlM0x1SXA1YU5QZVNjUWdPYS1oY3dCX2JGWlNBVTRNUUloMjVDQTFqVDBudE95SUZBSFUwa1JLdEdKNHUxQVVQR09tRzgwOTVaMmM1dnJBSXpfb1pPLXBUWkVJTnF6UzBCOTJFYVJTSUN0dE93TEk5Z09M?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "f7fe214f9329fd1a"
+    },
+    {
+      "id": "4dd90777369a",
+      "topic": "Jalen Brunson says fans have to 'be better' during NBA finals - Yahoo",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQN3NROUNCX0N0aThHdnQ0eXdfQWhxU3h6cC0xZ19jcWF4Vm8xN29XR1FmYWNkM09ISkU1cDU2UlZ3UU1HZld5Yi14Rk9tWlpCa3hqYjliNjF3V1FOeV9RT3piVG5aV3lRUDd2ZnhCbkpPcEZ4eWZFcWR1VUtyVWxxbjhJQkpOUQ?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "f7fe214f9329fd1a"
+    },
+    {
+      "id": "7fa2eeeb6fa0",
+      "topic": "Jalen Brunson says fans have to 'be better' during NBA finals - NBC News",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYjQyS0RrdDdpdmUtM3NTa3BpQTJ3cE1zdmZ4MGV4OG51NDl5VHNqdktUeG9SNmF1VlpTMnY3cV9ncmFlbnJ3LXVoamh6U0pySV9RQVBUNzJGSUlIQ21kV1AtOEtubzMtVWdmYlFPcEhidUtKWkhHUG9mODRuaC1DUURpNzVadTJqWk9qNGR1NjNIUlplSEdheU12bVFVaDZJUjdycw?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "f7fe214f9329fd1a"
+    },
+    {
+      "id": "8287ec3d7d42",
+      "topic": "SpaceX broke the record for the largest IPO ever. Here are 10 public offerings it dwarfed. - Business Insider",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPS21wSjZsUEwtRUFZaXBnVy1UV2dtYmpsY2dWeEJLak5TNTcwQlpOc1ZMV2ttTE5XaW5iOHhSMENIczhjWHVKN096azc4bGlQX21Fa2NlaDhtNHFORzUwNmZaWGFiYjQ1T2Y1b0ZFTGwxcVI3dnFwdkxrRm1pZXp1MVVXdWtFWkItZGlBTTJXVktzWEFfV2NOV3FiaGw?oc=5",
+      "source_name": "Google News - Business",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "8eefc2c5f54f44c6"
+    },
+    {
+      "id": "525642b8e331",
+      "topic": "Tesla shocks EV skeptics with 250,000-mile odds that beat BMW, Mercedes-Benz, and Subaru - Yahoo Autos",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbDlqQXpBbEl5YzIxWXJWYmpsMGdhd1htNEdaLWE2cF82em5XNWNRMTdEak5Zc1BZZ05HWk9BZFdhdi03RzZhYVdDSVM0WnFlaHZaaFJBUUZBMDlFRVN6aFRtN0lrT3Z6a1VMTW1RNmFCSUJlR0NISy1oMEdSS0VZcmNCVHluTG5ST19nYU5MWQ?oc=5",
+      "source_name": "Google News - BMW",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "7e83893a636ce137"
+    },
+    {
+      "id": "2ad09b8f8c0c",
+      "topic": "BMW M Concept Neue Klasse Previews Electric Performance Future At Le Mans - ACKO Drive",
+      "traffic": "",
+      "detected_at": "2026-06-13T02:49:19.523124+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcjY0ZE55T0J1M0FmQm9XSC1ycWhBSzZWS3BpNTJTN0w5dUZiLXVHR3Vqa0E1ZGc3el83Q1lnSUsxTi1BM3JSV3JWZ25UZFo3RjhwdXR2YXB6bDliaVBEdkRRRmNSWXZNOF9SMk9OZnVFQmJWN0dnNXEyNWZVZDZOTXJBcThEQU5GTEpyQmdWdU1tbmdzQzBudE9fX3lubXBPRUhr?oc=5",
+      "source_name": "Google News - BMW",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "423ae1bb088d9f0c"
+    },
+    {
       "id": "c5643cdc28e0",
       "topic": "WABC-TV’s Bill Ritter Departs ‘Eyewitness News’ Anchor Job After Being Diagnosed With Early Stage Alzheimer’s",
       "traffic": "",
@@ -273,172 +438,7 @@
       "source_type": "feed",
       "haiku_score": 5,
       "cluster_id": "f659a37bc634fc7d"
-    },
-    {
-      "id": "411569993280",
-      "topic": "What Taylor Swift’s Big Week With ‘Toy Story 5,’ Steven Spielberg and the New York Knicks Says About Her Next Era",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://variety.com/2026/music/news/taylor-swifts-next-era-toy-story-5-steven-spielberg-knicks-1236780160/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "01082e23c1e102f2"
-    },
-    {
-      "id": "1e4d3cd96f87",
-      "topic": "A Rock-Era Classic: The Dr. Martens 1461 Silhouette Turns 65 This Year",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://www.rollingstone.com/product-recommendations/style/shop-dr-martens-1461-shoes-best-oxfords-to-buy-online-2026-1235576710/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "cbfe95d063161e07"
-    },
-    {
-      "id": "a053b7248e94",
-      "topic": "Alanis Morissette and Michael Bublé Kick Off World Cup in Canada With Star-Studded Open Ceremony",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-news/world-cup-canada-alanis-morissette-michael-buble-1235574174/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "aac7a7428abbc04e"
-    },
-    {
-      "id": "32d8bc12f052",
-      "topic": "Rosalía Thanks Fans for ‘Understanding’ Postponed Tour Dates: ‘Loved Ones Need to Come First’",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://www.rollingstone.com/music/music-latin/rosalia-us-lux-tour-cancellation-comments-1235576865/",
-      "source_name": "Rolling Stone",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "0178bfd903d3dfee"
-    },
-    {
-      "id": "009a50a283dd",
-      "topic": "‘Tell Him He’s a Piece of Shit’: Meta’s New AI Unit Is a Total Mess",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://www.wired.com/story/mark-zuckerberg-meta-employee-meeting-interrupt-ai/",
-      "source_name": "WIRED",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "d005c74fc4897406"
-    },
-    {
-      "id": "90740b08af6e",
-      "topic": "Paramount-WBD merger wins approval from DOJ",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://www.cnbc.com/2026/06/12/paramount-wbd-merger-approval-doj.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "7e73926be1ea7da7"
-    },
-    {
-      "id": "de3351c2d4b6",
-      "topic": "SpaceX 'proxies' plunge as real deal arrives: Here's where traders are buying the dip",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://www.cnbc.com/2026/06/12/spacex-proxies-crash-as-real-deal-arrives-heres-where-traders-are-buying-the-dip.html",
-      "source_name": "CNBC",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "bf33c88c3520a678"
-    },
-    {
-      "id": "1f31e54fb5a4",
-      "topic": "Dressed in Cherry Red, Nike's Court Staple Is Deliciously Tonal - Highsnobiety",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91clhpNDB5allLWFZWMVE2RzB5RXBZUGxUVk0tdWpzS2tKdTg2VFR2eEZPRnMwZzIwSDFMdEhpNUpfYUJtMm5iYlllX0l4S3hBZ2FTQXlnRFcxZnJqNU9QeDRrV3hYMy1tMnk4d1Y1V0RWTDJDdFc0YkVFQUVoQQ?oc=5",
-      "source_name": "Highsnobiety",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "b7d2a0ef4c8d8520"
-    },
-    {
-      "id": "7ec8657bdcaa",
-      "topic": "At 30 Years Old, Nike’s Techy Classic Is Now Sophisticated - Highsnobiety",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBXNVZ4eXJWY0tCWkVvWFhtZjRka2dnYnJtcFI1RkY2ZWgyYlFfdExVN2U4WDlkcWpsMUFGNDkzTUNlTUduVHNlUkRibF96Snl1Uk5UeW5PRjhPbkNmU1VTVk1fWEJtUWhCR2NOYThKLWhteVpjZjlIX2p1ZV8?oc=5",
-      "source_name": "Highsnobiety",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "0eb39011a689087f"
-    },
-    {
-      "id": "6e7bc894799f",
-      "topic": "New Balance’s Soft Pink Dad Shoe Is a Surprising Thirst-Quencher - Highsnobiety",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ZOTExbFMxRHlDR0JQMXAwZk52dVlTQmJ2X1BCeDJDTXVQRjZIdGRreU5UZGtUc2VNdzJOak9NcEE3VGNqQzJaY0NpdUVZTktfN3A3SmE2Wk5WRi15Y2pSZGJjSjdyWEgyMVE?oc=5",
-      "source_name": "Highsnobiety",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "adbce41081bdfc42"
-    },
-    {
-      "id": "1cb47792d290",
-      "topic": "The NBA's up-to-the-minute latest trade chatter - The Stein Line",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9va2w5YzVQTGhna3JWc0RDdnJyNF9rVDFUNkhGdXR0NUl2bjIxTmZMUmVxN3pMTkpCYXZpbTBYMWNTSEZVam1NeUNOY0hlLU15LWRaM3FFSHUxQ2lyWnBjSXJFME5XUWtfWFZkdWNsbDg1TW8?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "65c8c34127ec3813"
-    },
-    {
-      "id": "77fcd6ec7c03",
-      "topic": "Spurs and Knicks return to San Antonio for NBA Finals elimination Game 5: How to get tickets - PennLive.com",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVzBIWV8xVVU4c1RMTDBlZzJyM3I2MzhUS2ZWcG5KWnk4V1B5VUFDZ3h1NnJZSDZibll0c1RNRV9jVVhrUzFnMERLMnJGTWVSRkJfbGkxZkliLVBDeFF6d2d5WXlfWkk0OGU1d0hYbU9JaE5WVVdRajJJLXZJWF9lcTVRZ2kwZ1FJcnhnR0xpWGlGMThoUjNuMGxQd1RfOFBodHVGLU1tRzB2b21nb25reHc4SjJvU25Sc2VpZTZtY1RWMTFQQnp3eWFuOC1teHNvU29oNXJjVFlDaVZWY2pPOVJkYXA?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "f7fe214f9329fd1a"
-    },
-    {
-      "id": "e33a24f8837c",
-      "topic": "The Latino duo helping fuel the Knicks’ historic NBA Finals run - CNN",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUDdYeDBqeVdBTXh3akpLSE5TcV9URjI0Z1dkRnJraFI3SzN3S0NGVl9TZEJhV0JvbTFwOWd1UklMdzdOT2pld3pRcDdZVm5oYzd0bk56SDNDZGRfcElkTGRmQlpwT0piajZrVTRiS1dqam5QS3JOQTZ2eGR0T1E1Tg?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "f7fe214f9329fd1a"
-    },
-    {
-      "id": "a9159bece573",
-      "topic": "Wembanyama brushes off historic collapse and eyes NBA finals comeback: ‘We’re over it. It’s the playoffs’ - The Guardian",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOakdpYlJRSm8yU3FsRDdmNnQ4eEdTOUhMblU5SzI0ZDhkRVNCMG11YjBpa1F3MnloZ1dIWldYZU5uUFJCRFhkWXlVV1NqRi1EX1BxM2I0WlljdngzRTJVT2Y5dXdwLUxUcE1qVmRwNWNGNDhudWIwdGpkdzJaV25XXzRoZEdkejJPaV9RUm80cVhLbGVsaDdjSTJB?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "f7fe214f9329fd1a"
-    },
-    {
-      "id": "041f315923dc",
-      "topic": "Keldon Johnson says Spurs are ready for NBA Finals Game 5 - NBC News",
-      "traffic": "",
-      "detected_at": "2026-06-12T22:13:36.019011+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUndoOEdSakY2S3ZHOFZNTmIzU3Jid1RjMFJEeXZIVmVCMWZwWGdETmxKb25qenp0YkpoS281ZmhEdlgxaDNiQkNydHNHS2FFZmJ6NzhxRUpKUnQyTUpxWDVodmpmVHVveVRZTlc0UFVteG5MWGhkQmVYdEJHUUNTTW91SEkxdjFqb2xTdEpJVy1PVExRMkxFYURzbExiWVVTVVRBbDc3UmU5TDA?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "f7fe214f9329fd1a"
     }
   ],
-  "last_checked": "2026-06-12T23:53:55.992966+00:00"
+  "last_checked": "2026-06-13T02:49:19.523124+00:00"
 }

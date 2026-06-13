@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "768df7877c47",
-    "4913f6d46566",
-    "b3eec54adcaa",
-    "cffa05fb35be",
-    "ae14879ee27f",
-    "5ce20fa417dd",
-    "9c14426caa80",
-    "9510dac94e99",
-    "ede3f8730a6d",
-    "7c082c457fd3",
-    "1ac693d78156",
-    "66f680529aac",
-    "0fa83153c8f2",
-    "a73d7f94c0bb",
-    "c1625d289ead",
     "22410194cffb",
     "768ba4a4752a",
     "92fb321704e4",
@@ -499,31 +484,24 @@
     "460445be3c55",
     "048b51f267f9",
     "6c9cdaeff91c",
-    "431c662c593d"
+    "431c662c593d",
+    "afba49b904fa",
+    "8dd3a2f5e2e4",
+    "e7f26c0044c3",
+    "debd8a7ac5d0",
+    "b322e813452a",
+    "149b925647d1",
+    "82878a0de40b",
+    "8ac979851099",
+    "77db7c76f172",
+    "9a491695a596",
+    "4dd90777369a",
+    "7fa2eeeb6fa0",
+    "8287ec3d7d42",
+    "525642b8e331",
+    "2ad09b8f8c0c"
   ],
   "failed_ids": {
-    "817813df7a49": "2026-06-12T22:13:36.019011+00:00",
-    "c58696de2ac9": "2026-06-12T22:13:36.019011+00:00",
-    "bc824ff70bac": "2026-06-12T22:13:36.019011+00:00",
-    "e0759a7c3a0a": "2026-06-12T22:13:36.019011+00:00",
-    "2cec5204c305": "2026-06-12T22:13:36.019011+00:00",
-    "c6b1bd298d8d": "2026-06-12T22:13:36.019011+00:00",
-    "7b1ad84144a4": "2026-06-12T22:13:36.019011+00:00",
-    "96b75c97f1bd": "2026-06-12T22:13:36.019011+00:00",
-    "a7d310975007": "2026-06-12T22:13:36.019011+00:00",
-    "ccf2d282ce60": "2026-06-12T22:13:36.019011+00:00",
-    "84bbea37cbda": "2026-06-12T22:13:36.019011+00:00",
-    "01ddd2c79c87": "2026-06-12T22:13:36.019011+00:00",
-    "12202050a23f": "2026-06-12T22:13:36.019011+00:00",
-    "b1320faa2fea": "2026-06-12T22:13:36.019011+00:00",
-    "af1113669eda": "2026-06-12T22:13:36.019011+00:00",
-    "426e73bb64b8": "2026-06-12T22:13:36.019011+00:00",
-    "3e649ef592b4": "2026-06-12T22:13:36.019011+00:00",
-    "54e048defc2b": "2026-06-12T22:13:36.019011+00:00",
-    "4b0eded3ec7c": "2026-06-12T22:13:36.019011+00:00",
-    "0b1c5d64ef76": "2026-06-12T22:13:36.019011+00:00",
-    "c2291c181ecc": "2026-06-12T22:13:36.019011+00:00",
-    "53bdb48528cf": "2026-06-12T22:13:36.019011+00:00",
     "ca2e7b666ea4": "2026-06-12T23:53:55.992966+00:00",
     "f38b34b1fb66": "2026-06-12T23:53:55.992966+00:00",
     "0dddeabbbc6a": "2026-06-12T23:53:55.992966+00:00",
@@ -537,270 +515,21 @@
     "f015e39133f2": "2026-06-12T23:53:55.992966+00:00",
     "3528112db339": "2026-06-12T23:53:55.992966+00:00",
     "521eb90a2ca5": "2026-06-12T23:53:55.992966+00:00",
-    "d8288b4f86bc": "2026-06-12T23:53:55.992966+00:00"
+    "d8288b4f86bc": "2026-06-12T23:53:55.992966+00:00",
+    "253c9a2a6281": "2026-06-13T02:49:19.523124+00:00",
+    "2621224e73c9": "2026-06-13T02:49:19.523124+00:00",
+    "f2a0d4b364e8": "2026-06-13T02:49:19.523124+00:00",
+    "1fd6e7d2aa8b": "2026-06-13T02:49:19.523124+00:00",
+    "78ce4c141ad0": "2026-06-13T02:49:19.523124+00:00",
+    "04464e5a30e6": "2026-06-13T02:49:19.523124+00:00",
+    "b1320faa2fea": "2026-06-13T02:49:19.523124+00:00",
+    "54e048defc2b": "2026-06-13T02:49:19.523124+00:00",
+    "4b0eded3ec7c": "2026-06-13T02:49:19.523124+00:00",
+    "0b1c5d64ef76": "2026-06-13T02:49:19.523124+00:00",
+    "c2291c181ecc": "2026-06-13T02:49:19.523124+00:00",
+    "53bdb48528cf": "2026-06-13T02:49:19.523124+00:00"
   },
   "live_clusters": {
-    "0a65eec34f38acf6": {
-      "topic": "Spotify iPhone App Icon Revert Disco-Ball Logo",
-      "item_ids": [
-        "1129360ea6de"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9193ce4a61b43933": {
-      "topic": "Cam'ron Critiques Jay-Z Roots Picnic Freestyle",
-      "item_ids": [
-        "84bb38f35d0d"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6f009aff409b895c": {
-      "topic": "Napster $3B Investor Fraud Charges DOJ SEC",
-      "item_ids": [
-        "5f6715c7b349"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "26ab6c01c5d4baf0": {
-      "topic": "2026 FIFA World Cup Ticket Purchase Guide",
-      "item_ids": [
-        "9b2fa749eda2",
-        "b81df49a01fe",
-        "272399181d5f",
-        "3d15c51c5147",
-        "fa187bbc1acc",
-        "5d7be7e98d43",
-        "55f5894c9903"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 7,
-      "last_escalated_at": "2026-06-12T22:13:36.019011+00:00",
-      "picks_file": "picks/picks-2026-06-12-1830.md",
-      "why_text": "With the 2026 FIFA World Cup coming to North America, Nike is planting its flag early \u2014 a Chinatown pop-up and a Jordan Brand cleat nodding to Ronaldo's 2002 legend signal that the sneaker industry is treating this tournament like the biggest cultural moment of the decade. The Jordan-Mercurial crossover is especially pointed: it collapses football, basketball, and nostalgia into a single object at a time when the U.S. is desperate to prove it can host \u2014 and understand \u2014 the world's game. This is brand storytelling as geopolitical soft power, and Nike moved first.\n**Update 5:14 PM CT:** The tournament is now officially underway: Mexico's opening match victory over South Africa drew record audiences on Fox, confirming that stateside appetite for the World Cup has hit a new ceiling, while Canada's co-host momentum faces an early test after trailing in their group stage opener \u2014 the kind of live drama that turns a ticket guide into must-act-now urgency. Billboard's rollout of the official soundtrack, anchored by tracks like 'Dai Dai,' 'Champions,' and 'El \u00daltimo Baile,' signals that the cultural infrastructure around the tournament is fully activated, giving brands and buyers alike a sense that the moment they've been building toward has arrived.",
-      "last_escalated_item_ids": [
-        "9b2fa749eda2",
-        "b81df49a01fe",
-        "272399181d5f",
-        "3d15c51c5147",
-        "fa187bbc1acc",
-        "5d7be7e98d43",
-        "55f5894c9903"
-      ]
-    },
-    "0edc98297e9f0659": {
-      "topic": "Steven Spielberg Disclosure Day Box Office $12M",
-      "item_ids": [
-        "fb393751b764",
-        "ccc7a2382749",
-        "f9b7500f930f"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-12T18:29:43.321472+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "fb393751b764",
-        "ccc7a2382749",
-        "f9b7500f930f"
-      ]
-    },
-    "4b1df13dfd740121": {
-      "topic": "Shrinking Cast Newport Beach TV Festival Award Season 4",
-      "item_ids": [
-        "7f1c073a58b9"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "242902aa6b46a3c2": {
-      "topic": "Jason Momoa Demands R-Rated Lobo Movie",
-      "item_ids": [
-        "eb116ada2efe"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "42dac49503d17d18": {
-      "topic": "Kucherov Wins Second MVP Lightning",
-      "item_ids": [
-        "715d88b78ef8"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eaad6b3981b19100": {
-      "topic": "Coker Panthers 3-Year $35M Extension",
-      "item_ids": [
-        "1203233bb60e"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "22715fda0aaed8c9": {
-      "topic": "Chapman Yankees GM Apology Request",
-      "item_ids": [
-        "8ccb56cb2a61"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d55fc6197e72b6c5": {
-      "topic": "Golf Club Expels Mickelson Allegations",
-      "item_ids": [
-        "aa438435a450"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "70d679c2e9bb3204": {
-      "topic": "Apple Camera Chief AI Superpowers Vision",
-      "item_ids": [
-        "a2c767a351a3"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "daf60a62796672f3": {
-      "topic": "Jeff Bezos Prometheus $12B AGI Engineer Physical World",
-      "item_ids": [
-        "3355a47c4da0"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a04daf3409782db1": {
-      "topic": "Semiconductor Chick Culling Prevention Technology",
-      "item_ids": [
-        "cc7914537445"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "71928418999f99dc": {
-      "topic": "South Korea Semiconductor Gas Technology Development",
-      "item_ids": [
-        "a543d3b6321d"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c27c4499ce95c36": {
-      "topic": "Veritone AI Technology High-Profile Showcase",
-      "item_ids": [
-        "5dae74e3a2e6"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fb3c3e70368b2a89": {
-      "topic": "Hoppn Shop by Color Shopify Search Technology",
-      "item_ids": [
-        "b213d551811a"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a7821da168d94b5c": {
-      "topic": "Dallas Mavericks 2026 NBA Draft Trade Ideas",
-      "item_ids": [
-        "177c9faac7d1",
-        "460445be3c55"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "727f36b35d5e6761": {
-      "topic": "Giannis Antetokounmpo 2021 Championship Highlights",
-      "item_ids": [
-        "af69f4bcaf50"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "59689f3a0851b51d": {
-      "topic": "Plaza Mexico Businesses World Cup Watch Party Boom",
-      "item_ids": [
-        "5176f9278e0c",
-        "93508f1643e7"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "51d5fd054902e57a": {
-      "topic": "Colorado Town $3500 Buildings Economic Development",
-      "item_ids": [
-        "04367a04043c"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "18bf50a34ece3821": {
-      "topic": "South Bay Local Businesses World Cup Economic Impact",
-      "item_ids": [
-        "99dfe759277f"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "767eafadf616abb8": {
-      "topic": "2026 World Cup Hosts Human Rights Accountability",
-      "item_ids": [
-        "6fb5256e537d"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "935409761803f95a": {
-      "topic": "Snowflake AI Data Hub Financial Services",
-      "item_ids": [
-        "16d1c1a55627"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "32c1f16d2cb94521": {
-      "topic": "Genworth Financial Outlook Confidence Vote",
-      "item_ids": [
-        "51bd9d3a8139"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "12f6a2a54a7e54de": {
-      "topic": "BMW Crashes Through Riverside Bank Wall",
-      "item_ids": [
-        "639e0866be12"
-      ],
-      "created_at": "2026-06-12T01:39:56.545881+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "c789ea6af3192dea": {
       "topic": "2026 ARIA Hall of Fame Inductions Gurrumul Jenny Morris",
       "item_ids": [
@@ -956,13 +685,17 @@
         "176ea34eeab0",
         "0d55f96fbe79",
         "e2a9cd6df62c",
-        "720bc167b31d"
+        "720bc167b31d",
+        "77db7c76f172",
+        "9a491695a596",
+        "4dd90777369a",
+        "7fa2eeeb6fa0"
       ],
       "created_at": "2026-06-12T10:44:14.889032+00:00",
-      "last_escalated_size": 17,
-      "last_escalated_at": "2026-06-12T23:53:55.992966+00:00",
+      "last_escalated_size": 21,
+      "last_escalated_at": "2026-06-13T02:49:19.523124+00:00",
       "picks_file": "picks/picks-2026-06-12-1639.md",
-      "why_text": "The NBA Finals has arrived at its most critical juncture \u2014 a Knicks team carrying the weight of a half-century championship drought is one win away from ending it, while the Spurs are fighting to force the series back to San Antonio. The cultural stakes are enormous: New York hasn't won a title since 1973, and the betting markets, ticket price swings, and free agency caution all signal that the league itself is holding its breath around what happens next. This isn't just a game \u2014 it's a potential civic moment for the most media-saturated sports market in the country.\n**Update 3:39 PM CT:** Jay-Z's 'Empire State of Mind' surged on streaming charts following the Knicks' latest comeback win, underscoring the cultural electricity building around a potential New York title, while on the San Antonio side, Spurs head coach Mitch Johnson made a point of publicly reaffirming his trust in De'Aaron Fox \u2014 a signal that the Spurs are leaning on their star to even the series before it returns to Madison Square Garden.\n**Update 5:14 PM CT:** With Game 5 shifting to San Antonio, Wembanyama is publicly shaking off the Knicks' comeback and projecting confidence ahead of what would be an elimination game for the Spurs, while Keldon Johnson echoes that defiant tone in the locker room \u2014 but the cultural lens is sharpening on New York's side too, with CNN spotlighting the Latino duo powering the Knicks' historic run as the city's fanbase braces for a potential title-clinching moment.\n**Update 6:54 PM CT:** The celebrity orbit around this series is expanding beyond sports: Selena Gomez fired back at Taylor Swift over NBA Finals drama with a blunt 'it's a basketball game,' injecting a pop culture subplot into the lead-up to Game 5 that underscores just how wide the cultural footprint of a potential Knicks title has become.",
+      "why_text": "The NBA Finals has arrived at its most critical juncture \u2014 a Knicks team carrying the weight of a half-century championship drought is one win away from ending it, while the Spurs are fighting to force the series back to San Antonio. The cultural stakes are enormous: New York hasn't won a title since 1973, and the betting markets, ticket price swings, and free agency caution all signal that the league itself is holding its breath around what happens next. This isn't just a game \u2014 it's a potential civic moment for the most media-saturated sports market in the country.\n**Update 3:39 PM CT:** Jay-Z's 'Empire State of Mind' surged on streaming charts following the Knicks' latest comeback win, underscoring the cultural electricity building around a potential New York title, while on the San Antonio side, Spurs head coach Mitch Johnson made a point of publicly reaffirming his trust in De'Aaron Fox \u2014 a signal that the Spurs are leaning on their star to even the series before it returns to Madison Square Garden.\n**Update 5:14 PM CT:** With Game 5 shifting to San Antonio, Wembanyama is publicly shaking off the Knicks' comeback and projecting confidence ahead of what would be an elimination game for the Spurs, while Keldon Johnson echoes that defiant tone in the locker room \u2014 but the cultural lens is sharpening on New York's side too, with CNN spotlighting the Latino duo powering the Knicks' historic run as the city's fanbase braces for a potential title-clinching moment.\n**Update 6:54 PM CT:** The celebrity orbit around this series is expanding beyond sports: Selena Gomez fired back at Taylor Swift over NBA Finals drama with a blunt 'it's a basketball game,' injecting a pop culture subplot into the lead-up to Game 5 that underscores just how wide the cultural footprint of a potential Knicks title has become.\n**Update 9:49 PM CT:** Jalen Brunson is calling out his own fanbase ahead of Game 5, urging Knicks supporters to 'be better' \u2014 a pointed message likely directed at crowd behavior targeting opposing players \u2014 while the numbers behind New York's run are coming into sharper focus: the Knicks have now joined an exclusive club of teams to overcome a 29-point playoff deficit, a comeback stat that underscores just how much this group has leaned on resilience as their defining trait with a title one win away.",
       "last_escalated_item_ids": [
         "28d3093d54f7",
         "a1d166c2294e",
@@ -980,7 +713,11 @@
         "176ea34eeab0",
         "0d55f96fbe79",
         "e2a9cd6df62c",
-        "720bc167b31d"
+        "720bc167b31d",
+        "77db7c76f172",
+        "9a491695a596",
+        "4dd90777369a",
+        "7fa2eeeb6fa0"
       ]
     },
     "0972ec3c3783b3f7": {
@@ -1398,13 +1135,14 @@
         "2ff7bd34b47a",
         "75a0962f9e18",
         "5f968e4ebd65",
-        "5ce648fd916c"
+        "5ce648fd916c",
+        "2ad09b8f8c0c"
       ],
       "created_at": "2026-06-12T13:53:11.080561+00:00",
-      "last_escalated_size": 12,
-      "last_escalated_at": "2026-06-12T18:29:43.321472+00:00",
+      "last_escalated_size": 15,
+      "last_escalated_at": "2026-06-13T02:49:19.523124+00:00",
       "picks_file": "picks/picks-2026-06-12-1353.md",
-      "why_text": "BMW chose the 24 Hours of Le Mans \u2014 motorsport's most storied stage \u2014 to debut the M Concept Neue Klasse, a near-production preview of the first electric M3. The move signals that BMW M is done hedging: this is the direction, whether purists like it or not, with the company reportedly keeping a petrol M3 alive as a safety net for the holdouts. Culturally, it lands at the exact moment the performance car world is being forced to decide what 'driving excitement' means when there's no engine sound to romanticize.\n**Update 11:39 AM CT:** The concept's design is already drawing direct comparisons to the AMG GT XX, signaling that the electric performance war is shaping up as a genuine two-horse race between Munich and Stuttgart. Meanwhile, on the track where BMW made the announcement, Dries Vanthoor underlined the brand's current motorsport credibility by putting the #15 BMW M Hybrid V8 on pole at Le Mans \u2014 a timely reminder that BMW is playing both the present and the future simultaneously.\n**Update 1:30 PM CT:** Adding further context to BMW's electric ambitions, the iX3 has just posted a verified 500-mile single-charge range result in real-world testing per Electrek \u2014 a quietly significant data point that gives the M Concept Neue Klasse's performance promises more engineering credibility, suggesting BMW's EV range anxiety problem may already be solved before the electric M3 even hits production.",
+      "why_text": "BMW chose the 24 Hours of Le Mans \u2014 motorsport's most storied stage \u2014 to debut the M Concept Neue Klasse, a near-production preview of the first electric M3. The move signals that BMW M is done hedging: this is the direction, whether purists like it or not, with the company reportedly keeping a petrol M3 alive as a safety net for the holdouts. Culturally, it lands at the exact moment the performance car world is being forced to decide what 'driving excitement' means when there's no engine sound to romanticize.\n**Update 11:39 AM CT:** The concept's design is already drawing direct comparisons to the AMG GT XX, signaling that the electric performance war is shaping up as a genuine two-horse race between Munich and Stuttgart. Meanwhile, on the track where BMW made the announcement, Dries Vanthoor underlined the brand's current motorsport credibility by putting the #15 BMW M Hybrid V8 on pole at Le Mans \u2014 a timely reminder that BMW is playing both the present and the future simultaneously.\n**Update 1:30 PM CT:** Adding further context to BMW's electric ambitions, the iX3 has just posted a verified 500-mile single-charge range result in real-world testing per Electrek \u2014 a quietly significant data point that gives the M Concept Neue Klasse's performance promises more engineering credibility, suggesting BMW's EV range anxiety problem may already be solved before the electric M3 even hits production.\n**Update 9:49 PM CT:** Trade and enthusiast press coverage of the M Concept Neue Klasse is now broadening beyond the core auto outlets, with platforms like ACKO Drive amplifying BMW's Le Mans messaging to wider audiences \u2014 a sign that the electric M3's cultural footprint is expanding well beyond the motorsport crowd BMW originally pitched it to.",
       "last_escalated_item_ids": [
         "8ba18496cbad",
         "1e514ff61d2f",
@@ -1417,7 +1155,10 @@
         "f5759f5f327b",
         "4f734dc6b324",
         "2ff7bd34b47a",
-        "75a0962f9e18"
+        "75a0962f9e18",
+        "5f968e4ebd65",
+        "5ce648fd916c",
+        "2ad09b8f8c0c"
       ]
     },
     "55b2856e91c2afcc": {
@@ -2118,20 +1859,24 @@
         "09a5285fdb71",
         "15dd23e342fc",
         "fca62c6058f6",
-        "6c9cdaeff91c"
+        "6c9cdaeff91c",
+        "8287ec3d7d42"
       ],
       "created_at": "2026-06-12T18:30:35.118243+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-12T20:38:10.786858+00:00",
+      "last_escalated_size": 9,
+      "last_escalated_at": "2026-06-13T02:49:19.523124+00:00",
       "picks_file": "picks/picks-2026-06-12-2039.md",
-      "why_text": "SpaceX's Nasdaq debut isn't just a financial milestone \u2014 it's the moment Elon Musk's rocket company crosses from private cult status into mainstream Wall Street legitimacy, with a 20%+ first-day pop that signals retail investors are treating space infrastructure like the next tech wave. The ripple effects are immediate: competitor stocks like Planet Labs are already crashing under the weight of the comparison, and Robinhood's platform buckled under demand, a tell-tale sign of retail frenzy. This is the IPO that reframes the entire space economy as a public market story, not just a billionaire's vanity project.",
+      "why_text": "SpaceX's Nasdaq debut isn't just a financial milestone \u2014 it's the moment Elon Musk's rocket company crosses from private cult status into mainstream Wall Street legitimacy, with a 20%+ first-day pop that signals retail investors are treating space infrastructure like the next tech wave. The ripple effects are immediate: competitor stocks like Planet Labs are already crashing under the weight of the comparison, and Robinhood's platform buckled under demand, a tell-tale sign of retail frenzy. This is the IPO that reframes the entire space economy as a public market story, not just a billionaire's vanity project.\n**Update 9:49 PM CT:** SpaceX's IPO has now officially shattered the all-time record for the largest public offering in history, eclipsing giants like Saudi Aramco and Alibaba \u2014 a fact that's fueling a wave of raw envy across Silicon Valley and the broader startup ecosystem, with founders and early-stage space companies suddenly recalibrating their own valuation ambitions against a benchmark that few believed possible even a year ago.",
       "last_escalated_item_ids": [
         "f5759f5f327b",
         "177ad6665ba6",
         "f427f2a16215",
         "5f968e4ebd65",
         "09a5285fdb71",
-        "15dd23e342fc"
+        "15dd23e342fc",
+        "fca62c6058f6",
+        "6c9cdaeff91c",
+        "8287ec3d7d42"
       ]
     },
     "6e3bd51961155fb4": {
@@ -3064,7 +2809,65 @@
       "created_at": "2026-06-12T23:54:32.209811+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "05c25db92e06ba57": {
+      "topic": "Katy Perry World Cup 2026 Wonder Performance",
+      "item_ids": [
+        "afba49b904fa"
+      ],
+      "created_at": "2026-06-13T02:49:49.068527+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9a7219b572c3d0ea": {
+      "topic": "Love Island USA Aftersun Premiere Ciara Miller Tefi Pessoa",
+      "item_ids": [
+        "8dd3a2f5e2e4"
+      ],
+      "created_at": "2026-06-13T02:49:49.068527+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "935f2f8cf76c4be4": {
+      "topic": "Anthropic Claude Fable 5 Mythos 5 US Government Directive Offline",
+      "item_ids": [
+        "e7f26c0044c3",
+        "debd8a7ac5d0",
+        "b322e813452a",
+        "149b925647d1",
+        "82878a0de40b"
+      ],
+      "created_at": "2026-06-13T02:49:49.068527+00:00",
+      "last_escalated_size": 5,
+      "last_escalated_at": "2026-06-13T02:49:19.523124+00:00",
+      "picks_file": "picks/picks-2026-06-13-0249.md",
+      "why_text": "Anthropic just had its two flagship frontier models \u2014 Claude Fable 5 and Mythos 5 \u2014 taken offline by US government directive, with access blocked specifically for foreign nationals. This is a significant escalation in Washington's grip over advanced AI, and the bitter irony is that Anthropic built its entire brand around being the 'safety-first' lab \u2014 only to have that same transparency about its models' capabilities apparently flag them as a national security concern. This sets a precedent that no AI lab, however cooperative with regulators, is insulated from hard government intervention.",
+      "last_escalated_item_ids": [
+        "e7f26c0044c3",
+        "debd8a7ac5d0",
+        "b322e813452a",
+        "149b925647d1",
+        "82878a0de40b"
+      ]
+    },
+    "7706d541e33df188": {
+      "topic": "AEW Dynamite Ratings NBA Finals Competition",
+      "item_ids": [
+        "8ac979851099"
+      ],
+      "created_at": "2026-06-13T02:49:49.068527+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7e83893a636ce137": {
+      "topic": "Tesla EV Reliability 250000 Mile Durability vs BMW Mercedes Subaru",
+      "item_ids": [
+        "525642b8e331"
+      ],
+      "created_at": "2026-06-13T02:49:49.068527+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-12T23:54:35.854021+00:00"
+  "last_checked": "2026-06-13T02:50:05.840219+00:00"
 }
