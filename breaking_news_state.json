@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "6e866e87943d",
-    "2782ea47bc45",
-    "9a802cf8bf3c",
-    "2cb78dda836c",
-    "87aa0eb95a47",
-    "9a79d1a526b5",
-    "96737856f8f3",
-    "e606d798279f",
-    "183607136d71",
-    "b2cb117c9779",
-    "a73546cd24d0",
-    "773f165861ee",
-    "7e982e12bce9",
-    "2b5af860f467",
     "d40fa2fdaa01",
     "a1eff5f37276",
     "c128ab000dde",
@@ -499,100 +485,33 @@
     "24fb1735f39d",
     "e48e73b4feeb",
     "92a988e60122",
-    "b65676ecb683"
+    "b65676ecb683",
+    "833e848be704",
+    "83b11cf2f807",
+    "048daae5b97c",
+    "81b8ce8bafea",
+    "f967068641dc",
+    "d4640beed4fb",
+    "2589f95e2ff0",
+    "747ec6b1543a",
+    "1293f65b1532",
+    "c805990724f3",
+    "ba89f6108e68",
+    "2d956e8b3fcc",
+    "7e3a362e97d1",
+    "ff30eccc7192"
   ],
   "failed_ids": {
-    "915ea25d9376": "2026-06-13T21:59:59.084305+00:00",
-    "70148a067faf": "2026-06-13T21:59:59.084305+00:00",
-    "a9b6f14b4b0a": "2026-06-13T21:59:59.084305+00:00",
-    "e104e0cab9af": "2026-06-13T21:59:59.084305+00:00",
-    "170380d7bf0a": "2026-06-13T21:59:59.084305+00:00",
-    "39add80c76e9": "2026-06-13T21:59:59.084305+00:00",
-    "80c8e37b2431": "2026-06-13T21:59:59.084305+00:00",
-    "0b6b70ddfacb": "2026-06-13T21:59:59.084305+00:00",
-    "6024ac016f31": "2026-06-13T21:59:59.084305+00:00",
-    "441ecd1b3b0e": "2026-06-13T21:59:59.084305+00:00",
-    "cf566df585f2": "2026-06-13T21:59:59.084305+00:00",
-    "7457dec5c35f": "2026-06-13T21:59:59.084305+00:00",
-    "bf6ca8df2164": "2026-06-13T21:59:59.084305+00:00",
-    "67d316b71a15": "2026-06-13T21:59:59.084305+00:00",
-    "80fc050d737d": "2026-06-13T21:59:59.084305+00:00",
-    "e0c502dfc0eb": "2026-06-13T21:59:59.084305+00:00",
-    "7fe352c72500": "2026-06-13T23:15:03.225061+00:00",
-    "f36590e63948": "2026-06-13T23:15:03.225061+00:00",
-    "487b4f9485b2": "2026-06-13T23:15:03.225061+00:00",
-    "41b4d0bd0f57": "2026-06-13T23:15:03.225061+00:00",
-    "c028b4a2c906": "2026-06-13T23:15:03.225061+00:00",
-    "6bab989736c2": "2026-06-13T23:15:03.225061+00:00",
-    "342a6727899f": "2026-06-13T23:15:03.225061+00:00",
-    "cf0b511eef8b": "2026-06-13T23:15:03.225061+00:00",
-    "5b183506bb98": "2026-06-13T23:15:03.225061+00:00",
-    "14dbbf5c7f67": "2026-06-14T01:38:01.021621+00:00",
-    "b1b888a4e767": "2026-06-14T01:38:01.021621+00:00",
-    "102fb11c9e09": "2026-06-14T01:38:01.021621+00:00",
-    "d99da5bb1a2d": "2026-06-14T01:38:01.021621+00:00"
+    "80e4fe29dc45": "2026-06-14T06:19:44.390890+00:00",
+    "2f76d5e23d55": "2026-06-14T06:19:44.390890+00:00",
+    "ec3fb37951e4": "2026-06-14T06:19:44.390890+00:00",
+    "1c656c53cf77": "2026-06-14T06:19:44.390890+00:00",
+    "87905425f252": "2026-06-14T06:19:44.390890+00:00",
+    "e3d76fffc865": "2026-06-14T06:19:44.390890+00:00",
+    "08c7487c4ea8": "2026-06-14T06:19:44.390890+00:00",
+    "c2e6c79efcfb": "2026-06-14T06:19:44.390890+00:00"
   },
   "live_clusters": {
-    "05c25db92e06ba57": {
-      "topic": "Katy Perry World Cup 2026 Wonder Performance",
-      "item_ids": [
-        "afba49b904fa"
-      ],
-      "created_at": "2026-06-13T02:49:49.068527+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9a7219b572c3d0ea": {
-      "topic": "Love Island USA Aftersun Premiere Ciara Miller Tefi Pessoa",
-      "item_ids": [
-        "8dd3a2f5e2e4"
-      ],
-      "created_at": "2026-06-13T02:49:49.068527+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "935f2f8cf76c4be4": {
-      "topic": "Anthropic Claude Fable 5 Mythos 5 US Government Directive Offline",
-      "item_ids": [
-        "e7f26c0044c3",
-        "debd8a7ac5d0",
-        "b322e813452a",
-        "149b925647d1",
-        "82878a0de40b",
-        "9c33e50044a5",
-        "dae79a790555"
-      ],
-      "created_at": "2026-06-13T02:49:49.068527+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-13T02:49:19.523124+00:00",
-      "picks_file": "picks/picks-2026-06-13-0249.md",
-      "why_text": "Anthropic just had its two flagship frontier models \u2014 Claude Fable 5 and Mythos 5 \u2014 taken offline by US government directive, with access blocked specifically for foreign nationals. This is a significant escalation in Washington's grip over advanced AI, and the bitter irony is that Anthropic built its entire brand around being the 'safety-first' lab \u2014 only to have that same transparency about its models' capabilities apparently flag them as a national security concern. This sets a precedent that no AI lab, however cooperative with regulators, is insulated from hard government intervention.",
-      "last_escalated_item_ids": [
-        "e7f26c0044c3",
-        "debd8a7ac5d0",
-        "b322e813452a",
-        "149b925647d1",
-        "82878a0de40b"
-      ]
-    },
-    "7706d541e33df188": {
-      "topic": "AEW Dynamite Ratings NBA Finals Competition",
-      "item_ids": [
-        "8ac979851099"
-      ],
-      "created_at": "2026-06-13T02:49:49.068527+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7e83893a636ce137": {
-      "topic": "Tesla EV Reliability 250000 Mile Durability vs BMW Mercedes Subaru",
-      "item_ids": [
-        "525642b8e331"
-      ],
-      "created_at": "2026-06-13T02:49:49.068527+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "0921b8228a5752f0": {
       "topic": "Blink-182 25th Anniversary Take Off Your Pants and Jacket Reissue",
       "item_ids": [
@@ -1216,11 +1135,20 @@
         "44c49ca09192",
         "406002b85599",
         "bd31d6045f4d",
-        "dec806cccc58"
+        "dec806cccc58",
+        "833e848be704",
+        "f967068641dc",
+        "d4640beed4fb",
+        "2589f95e2ff0",
+        "747ec6b1543a",
+        "1293f65b1532",
+        "ba89f6108e68",
+        "2d956e8b3fcc",
+        "7e3a362e97d1"
       ],
       "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 19,
-      "last_escalated_at": "2026-06-14T01:38:01.021621+00:00",
+      "last_escalated_size": 28,
+      "last_escalated_at": "2026-06-14T06:19:44.390890+00:00",
       "picks_file": "picks/picks-2026-06-14-0138.md",
       "last_escalated_item_ids": [
         "018131d31b32",
@@ -1241,9 +1169,18 @@
         "44c49ca09192",
         "406002b85599",
         "bd31d6045f4d",
-        "dec806cccc58"
+        "dec806cccc58",
+        "833e848be704",
+        "f967068641dc",
+        "d4640beed4fb",
+        "2589f95e2ff0",
+        "747ec6b1543a",
+        "1293f65b1532",
+        "ba89f6108e68",
+        "2d956e8b3fcc",
+        "7e3a362e97d1"
       ],
-      "why_text": "The New York Knicks are one win away from their first NBA championship since 1973 \u2014 a 52-year drought that has defined a generation of suffering for the league's most media-saturated fanbase. With the series shifting back to San Antonio for Game 5, the Spurs are fighting for survival while New York teeters on the edge of a cultural earthquake. A Knicks title wouldn't just be a sports moment \u2014 it would rewire the entire gravity of the NBA's cultural conversation, New York's civic identity, and the league's commercial landscape in one night."
+      "why_text": "The New York Knicks are one win away from their first NBA championship since 1973 \u2014 a 52-year drought that has defined a generation of suffering for the league's most media-saturated fanbase. With the series shifting back to San Antonio for Game 5, the Spurs are fighting for survival while New York teeters on the edge of a cultural earthquake. A Knicks title wouldn't just be a sports moment \u2014 it would rewire the entire gravity of the NBA's cultural conversation, New York's civic identity, and the league's commercial landscape in one night.\n**Update 1:20 AM CT:** The cultural earthquake has arrived: the New York Knicks defeated the San Antonio Spurs in Game 5 to claim the 2026 NBA Championship, ending their 52-year title drought, with Spike Lee, Timoth\u00e9e Chalamet, and Ben Stiller celebrating courtside in San Antonio \u2014 Chalamet declaring he'd \"way rather this than the Oscars\" \u2014 while Victor Wembanyama addressed the loss in a postgame press conference that's already dominating discourse alongside the Knicks' euphoria."
     },
     "f95b244e5f26a768": {
       "topic": "BMW Electric M3 Naming Strategy Announcement",
@@ -1400,7 +1337,8 @@
         "c9da499c2120",
         "9df6d30437b3",
         "0c3d5becd0e8",
-        "5aebf6307188"
+        "5aebf6307188",
+        "c805990724f3"
       ],
       "created_at": "2026-06-13T20:51:57.404108+00:00",
       "last_escalated_size": 7,
@@ -1551,7 +1489,34 @@
       "created_at": "2026-06-14T01:38:26.892836+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f51e6e8e90ca8723": {
+      "topic": "'Michael' Biopic Box Office Record Bohemian Rhapsody",
+      "item_ids": [
+        "83b11cf2f807"
+      ],
+      "created_at": "2026-06-14T06:20:06.486185+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cf4b39cd3d138a70": {
+      "topic": "Tullamarines Fleetwood Mac Cover Like A Version",
+      "item_ids": [
+        "048daae5b97c"
+      ],
+      "created_at": "2026-06-14T06:20:06.486185+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6df0705e21ce1b1c": {
+      "topic": "Vans Artistic Sneaker Basketball Release",
+      "item_ids": [
+        "81b8ce8bafea"
+      ],
+      "created_at": "2026-06-14T06:20:06.486185+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-14T01:38:33.949254+00:00"
+  "last_checked": "2026-06-14T06:20:22.781723+00:00"
 }
