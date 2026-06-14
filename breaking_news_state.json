@@ -1,25 +1,5 @@
 {
   "known_ids": [
-    "d40fa2fdaa01",
-    "a1eff5f37276",
-    "c128ab000dde",
-    "81ba5ffc56f7",
-    "e32d9f1a97ab",
-    "f6ba33535ed2",
-    "6952f68943ce",
-    "84f93a0363d8",
-    "af7ddec533bc",
-    "40954dc18913",
-    "21435bdc6f12",
-    "e574585f7546",
-    "a93123a38fa5",
-    "e6082f9b8e0c",
-    "725e74d173c8",
-    "8324395ed62e",
-    "ac49e7db99e3",
-    "241cb5277b74",
-    "cf137a83dd68",
-    "6cbd86e9edee",
     "54ee8e383b11",
     "f20a1ddefee4",
     "23b150c45261",
@@ -499,7 +479,27 @@
     "ba89f6108e68",
     "2d956e8b3fcc",
     "7e3a362e97d1",
-    "ff30eccc7192"
+    "ff30eccc7192",
+    "2fe059e3ddf0",
+    "39f502ec248e",
+    "2904709a02e5",
+    "337b5fcc9f12",
+    "c08a29fc7214",
+    "bc77099f365e",
+    "966c8055502d",
+    "1aaa49160b4a",
+    "e4450f174127",
+    "ee7cffd54b4c",
+    "69ede857e433",
+    "b6e68f056a3e",
+    "29ff6b5daa37",
+    "321ccbab5314",
+    "8cfb76939ef1",
+    "8f0dc4715079",
+    "f4017e5c4ace",
+    "b56decb14d5d",
+    "4129ce7e7ab5",
+    "1aa5c380246c"
   ],
   "failed_ids": {
     "80e4fe29dc45": "2026-06-14T06:19:44.390890+00:00",
@@ -509,137 +509,20 @@
     "87905425f252": "2026-06-14T06:19:44.390890+00:00",
     "e3d76fffc865": "2026-06-14T06:19:44.390890+00:00",
     "08c7487c4ea8": "2026-06-14T06:19:44.390890+00:00",
-    "c2e6c79efcfb": "2026-06-14T06:19:44.390890+00:00"
+    "c2e6c79efcfb": "2026-06-14T06:19:44.390890+00:00",
+    "f0d9d04ffcb7": "2026-06-14T09:59:50.020483+00:00",
+    "bb3e898fd35c": "2026-06-14T09:59:50.020483+00:00",
+    "889f6eac3572": "2026-06-14T09:59:50.020483+00:00",
+    "e334a085aa9f": "2026-06-14T09:59:50.020483+00:00",
+    "47445ac86c72": "2026-06-14T09:59:50.020483+00:00",
+    "0b1a422dc6ae": "2026-06-14T09:59:50.020483+00:00",
+    "815fd8dcd34e": "2026-06-14T09:59:50.020483+00:00",
+    "18d23320b1cf": "2026-06-14T09:59:50.020483+00:00",
+    "1e268e0424d1": "2026-06-14T09:59:50.020483+00:00",
+    "7d4ee2b2c24f": "2026-06-14T09:59:50.020483+00:00",
+    "ca585d950790": "2026-06-14T09:59:50.020483+00:00"
   },
   "live_clusters": {
-    "0921b8228a5752f0": {
-      "topic": "Blink-182 25th Anniversary Take Off Your Pants and Jacket Reissue",
-      "item_ids": [
-        "4d23271b648f"
-      ],
-      "created_at": "2026-06-13T06:43:25.397787+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e45bed6a9660dd42": {
-      "topic": "AI Agents EV Charger Protection Technology",
-      "item_ids": [
-        "58b7eafc0bf9"
-      ],
-      "created_at": "2026-06-13T06:43:25.397787+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "89c63fec337afd5f": {
-      "topic": "DXC Technology Anthropic Claude Alliance Investment Impact",
-      "item_ids": [
-        "53c37b3731b6"
-      ],
-      "created_at": "2026-06-13T06:43:25.397787+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d793bf71d66734f7": {
-      "topic": "Cognizant Sovereign Physical AI Platform Security Alliances Investment",
-      "item_ids": [
-        "9976498cb481"
-      ],
-      "created_at": "2026-06-13T06:43:25.397787+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "70cf3f9c132ac009": {
-      "topic": "Spotify Technology Downgraded Hold Rating Wall Street",
-      "item_ids": [
-        "0c13f5ecf871",
-        "a3c89ff8b591"
-      ],
-      "created_at": "2026-06-13T06:43:25.397787+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5854efe2366236ac": {
-      "topic": "Tech IPO Employee Paydays Financial Advisor Guidance",
-      "item_ids": [
-        "5a41c7fff6da"
-      ],
-      "created_at": "2026-06-13T06:43:25.397787+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "68a6cb1c8d6ac8ec": {
-      "topic": "StubHub STUB Guggenheim Backing Stock Surge",
-      "item_ids": [
-        "28bcbbbb8918"
-      ],
-      "created_at": "2026-06-13T06:43:25.397787+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "001693b59efeb4c1": {
-      "topic": "Shanghai Film Festival Tech Unit AI Industry Initiative",
-      "item_ids": [
-        "426d1c804647"
-      ],
-      "created_at": "2026-06-13T09:47:11.098923+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dd5af9f9a831fe6f": {
-      "topic": "2026 World Cup USA Opening Ceremony Performance Highlights",
-      "item_ids": [
-        "62e6e7f0f8fc",
-        "03490dc77afb",
-        "965f2f7ff307",
-        "59091a77ea4b"
-      ],
-      "created_at": "2026-06-13T09:47:11.098923+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-13T23:15:03.225061+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "62e6e7f0f8fc",
-        "03490dc77afb",
-        "965f2f7ff307",
-        "59091a77ea4b"
-      ]
-    },
-    "dd0d448a11736394": {
-      "topic": "Google AI Overviews Liability Ruling German Court",
-      "item_ids": [
-        "ab3929d7804d"
-      ],
-      "created_at": "2026-06-13T09:47:11.098923+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "281f94130e76d132": {
-      "topic": "Nike Runner Candy Floss Design Release",
-      "item_ids": [
-        "0b80e88f76e9"
-      ],
-      "created_at": "2026-06-13T09:47:11.098923+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "09523797c8f12cb1": {
-      "topic": "Wolfgang Puck Restaurant Empire Building Strategy",
-      "item_ids": [
-        "889edb2c276b"
-      ],
-      "created_at": "2026-06-13T09:47:11.098923+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c214068c39429056": {
-      "topic": "US Credit Card Debt Problem Analysis",
-      "item_ids": [
-        "3837f5d57b8f"
-      ],
-      "created_at": "2026-06-13T09:47:11.098923+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "80b6bf99eca530cc": {
       "topic": "Kristin Scott Thomas Slow Horses Diana Taverner Character Profile",
       "item_ids": [
@@ -1144,11 +1027,16 @@
         "1293f65b1532",
         "ba89f6108e68",
         "2d956e8b3fcc",
-        "7e3a362e97d1"
+        "7e3a362e97d1",
+        "337b5fcc9f12",
+        "c08a29fc7214",
+        "bc77099f365e",
+        "966c8055502d",
+        "1aaa49160b4a"
       ],
       "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 28,
-      "last_escalated_at": "2026-06-14T06:19:44.390890+00:00",
+      "last_escalated_size": 33,
+      "last_escalated_at": "2026-06-14T09:59:50.020483+00:00",
       "picks_file": "picks/picks-2026-06-14-0138.md",
       "last_escalated_item_ids": [
         "018131d31b32",
@@ -1178,9 +1066,14 @@
         "1293f65b1532",
         "ba89f6108e68",
         "2d956e8b3fcc",
-        "7e3a362e97d1"
+        "7e3a362e97d1",
+        "337b5fcc9f12",
+        "c08a29fc7214",
+        "bc77099f365e",
+        "966c8055502d",
+        "1aaa49160b4a"
       ],
-      "why_text": "The New York Knicks are one win away from their first NBA championship since 1973 \u2014 a 52-year drought that has defined a generation of suffering for the league's most media-saturated fanbase. With the series shifting back to San Antonio for Game 5, the Spurs are fighting for survival while New York teeters on the edge of a cultural earthquake. A Knicks title wouldn't just be a sports moment \u2014 it would rewire the entire gravity of the NBA's cultural conversation, New York's civic identity, and the league's commercial landscape in one night.\n**Update 1:20 AM CT:** The cultural earthquake has arrived: the New York Knicks defeated the San Antonio Spurs in Game 5 to claim the 2026 NBA Championship, ending their 52-year title drought, with Spike Lee, Timoth\u00e9e Chalamet, and Ben Stiller celebrating courtside in San Antonio \u2014 Chalamet declaring he'd \"way rather this than the Oscars\" \u2014 while Victor Wembanyama addressed the loss in a postgame press conference that's already dominating discourse alongside the Knicks' euphoria."
+      "why_text": "The New York Knicks are one win away from their first NBA championship since 1973 \u2014 a 52-year drought that has defined a generation of suffering for the league's most media-saturated fanbase. With the series shifting back to San Antonio for Game 5, the Spurs are fighting for survival while New York teeters on the edge of a cultural earthquake. A Knicks title wouldn't just be a sports moment \u2014 it would rewire the entire gravity of the NBA's cultural conversation, New York's civic identity, and the league's commercial landscape in one night.\n**Update 1:20 AM CT:** The cultural earthquake has arrived: the New York Knicks defeated the San Antonio Spurs in Game 5 to claim the 2026 NBA Championship, ending their 52-year title drought, with Spike Lee, Timoth\u00e9e Chalamet, and Ben Stiller celebrating courtside in San Antonio \u2014 Chalamet declaring he'd \"way rather this than the Oscars\" \u2014 while Victor Wembanyama addressed the loss in a postgame press conference that's already dominating discourse alongside the Knicks' euphoria.\n**Update 5:00 AM CT:** Manhattan has erupted into chaotic street celebrations \u2014 with at least one World Cup bus set alight \u2014 as fans pour into the streets following the Knicks' first championship in 53 years, while the story of how it happened is crystallizing around Jalen Brunson, who both started and finished New York's championship run as the undisputed cornerstone of the title."
     },
     "f95b244e5f26a768": {
       "topic": "BMW Electric M3 Naming Strategy Announcement",
@@ -1338,13 +1231,16 @@
         "9df6d30437b3",
         "0c3d5becd0e8",
         "5aebf6307188",
-        "c805990724f3"
+        "c805990724f3",
+        "b6e68f056a3e",
+        "29ff6b5daa37",
+        "321ccbab5314"
       ],
       "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 7,
-      "last_escalated_at": "2026-06-13T21:59:59.084305+00:00",
+      "last_escalated_size": 12,
+      "last_escalated_at": "2026-06-14T09:59:50.020483+00:00",
       "picks_file": "picks/picks-2026-06-13-2051.md",
-      "why_text": "At the six-hour mark of Le Mans, the No. 38 JOTA Cadillac has seized control after the pole-sitting BMW \u2014 widely seen as a genuine title contender this year \u2014 hit serious trouble, reshuffling the Hypercar order dramatically. This is a big moment for Cadillac's endurance racing credibility and a gut-punch for BMW's Le Mans ambitions, which had been building real momentum. With Toyota still lurking, the race is wide open and the next 18 hours are going to be brutal.\n**Update 5:00 PM CT:** BMW has hit back hard: the No. 20 machine has cycled to the front as Hour 7 gets underway and night running begins, suggesting the earlier trouble may have been resolved \u2014 or that strategy and pit sequencing have reshuffled the order once again in BMW's favor.",
+      "why_text": "At the six-hour mark of Le Mans, the No. 38 JOTA Cadillac has seized control after the pole-sitting BMW \u2014 widely seen as a genuine title contender this year \u2014 hit serious trouble, reshuffling the Hypercar order dramatically. This is a big moment for Cadillac's endurance racing credibility and a gut-punch for BMW's Le Mans ambitions, which had been building real momentum. With Toyota still lurking, the race is wide open and the next 18 hours are going to be brutal.\n**Update 5:00 PM CT:** BMW has hit back hard: the No. 20 machine has cycled to the front as Hour 7 gets underway and night running begins, suggesting the earlier trouble may have been resolved \u2014 or that strategy and pit sequencing have reshuffled the order once again in BMW's favor.\n**Update 5:00 AM CT:** **Update [Hour 18]:** BMW has reclaimed the lead as a Porsche crash brings out the safety car, compressing the field and setting up a knife-edge final six hours \u2014 with Cadillac right on their heels, the closing stint is shaping up to be a straight fight between the two manufacturers.",
       "last_escalated_item_ids": [
         "9bf24a184077",
         "96d06eac8a2d",
@@ -1352,7 +1248,12 @@
         "fb0b4b4eb148",
         "c9da499c2120",
         "9df6d30437b3",
-        "0c3d5becd0e8"
+        "0c3d5becd0e8",
+        "5aebf6307188",
+        "c805990724f3",
+        "b6e68f056a3e",
+        "29ff6b5daa37",
+        "321ccbab5314"
       ]
     },
     "1883b2f9c710bd5a": {
@@ -1516,7 +1417,70 @@
       "created_at": "2026-06-14T06:20:06.486185+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "d75b8318df6699e4": {
+      "topic": "Honor Arri Robot Phone Shanghai Film Festival Debut",
+      "item_ids": [
+        "2fe059e3ddf0"
+      ],
+      "created_at": "2026-06-14T10:00:25.400907+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "18bd8d2c765f84fe": {
+      "topic": "Yan Siyu Virginia Woolf Shanghai Art Project",
+      "item_ids": [
+        "39f502ec248e"
+      ],
+      "created_at": "2026-06-14T10:00:25.400907+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4a2010558dd16316": {
+      "topic": "\u0160koda New Expensive EV Model",
+      "item_ids": [
+        "2904709a02e5"
+      ],
+      "created_at": "2026-06-14T10:00:25.400907+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f35061b4e275674e": {
+      "topic": "Tech Worker Career Transition Trades AI Concerns",
+      "item_ids": [
+        "e4450f174127"
+      ],
+      "created_at": "2026-06-14T10:00:25.400907+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b793311261871d70": {
+      "topic": "Outdoor Retailer Bankruptcy After 60 Years",
+      "item_ids": [
+        "ee7cffd54b4c"
+      ],
+      "created_at": "2026-06-14T10:00:25.400907+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f764bc4cb82cb225": {
+      "topic": "Young Investors FIRE Movement Alternative Strategy",
+      "item_ids": [
+        "69ede857e433"
+      ],
+      "created_at": "2026-06-14T10:00:25.400907+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "245dc67e678e4b4c": {
+      "topic": "BMW Armored X5 7-Series Client Demonstration",
+      "item_ids": [
+        "8cfb76939ef1"
+      ],
+      "created_at": "2026-06-14T10:00:25.400907+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-14T06:20:22.781723+00:00"
+  "last_checked": "2026-06-14T10:00:40.504374+00:00"
 }
