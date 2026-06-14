@@ -1,23 +1,5 @@
 {
   "known_ids": [
-    "be9dd45ba084",
-    "1e4d3cd96f87",
-    "a053b7248e94",
-    "32d8bc12f052",
-    "42ae27c55a4b",
-    "58501c0c6955",
-    "fa849ee9ecbf",
-    "5537b996b379",
-    "009a50a283dd",
-    "90740b08af6e",
-    "de3351c2d4b6",
-    "d0c6b3bdc9f5",
-    "1f31e54fb5a4",
-    "7ec8657bdcaa",
-    "6e7bc894799f",
-    "1cb47792d290",
-    "77fcd6ec7c03",
-    "e33a24f8837c",
     "a9159bece573",
     "041f315923dc",
     "c47794ac84fd",
@@ -499,23 +481,27 @@
     "9556a70113dd",
     "1339284b4158",
     "5b699173b1b3",
-    "739c1f8ae99a"
+    "739c1f8ae99a",
+    "c15f6a9e0b8c",
+    "b47184617579",
+    "93c6b6006d22",
+    "1ad09e743e0f",
+    "ba4d2f22d660",
+    "fbb41734f170",
+    "bd2acafd1b79",
+    "2df334a455f6",
+    "84494d381885",
+    "a77be798edab",
+    "ca817f50f06b",
+    "ccb0a9dadf9a",
+    "9e3aa73cec26",
+    "0e4fdd14a3d8",
+    "89ba79fa8a9e",
+    "87b35f581a13",
+    "50c0e6a50f3b",
+    "c577d1a67416"
   ],
   "failed_ids": {
-    "24b714a4e8bb": "2026-06-14T17:41:39.086107+00:00",
-    "a9aea4830a2b": "2026-06-14T17:41:39.086107+00:00",
-    "25101e064ed8": "2026-06-14T17:41:39.086107+00:00",
-    "42105d83db53": "2026-06-14T17:41:39.086107+00:00",
-    "014739ce7d6e": "2026-06-14T17:41:39.086107+00:00",
-    "f70e5f7905cb": "2026-06-14T17:41:39.086107+00:00",
-    "3944e2b68712": "2026-06-14T17:41:39.086107+00:00",
-    "927b9ba7d55c": "2026-06-14T17:41:39.086107+00:00",
-    "c822e1bcb4d3": "2026-06-14T17:41:39.086107+00:00",
-    "40e4e35fb607": "2026-06-14T17:41:39.086107+00:00",
-    "8ba027496bd3": "2026-06-14T17:41:39.086107+00:00",
-    "1fb6a23acb1c": "2026-06-14T17:41:39.086107+00:00",
-    "dcc701bc41aa": "2026-06-14T17:41:39.086107+00:00",
-    "6775ef4c8000": "2026-06-14T17:41:39.086107+00:00",
     "7e50c0f7b5e6": "2026-06-14T19:00:41.755152+00:00",
     "d51f86482637": "2026-06-14T19:00:41.755152+00:00",
     "8c40a81e0c0c": "2026-06-14T19:00:41.755152+00:00",
@@ -546,237 +532,25 @@
     "b917357d167e": "2026-06-14T20:39:21.212680+00:00",
     "de340d1221bf": "2026-06-14T20:39:21.212680+00:00",
     "14231f032e4c": "2026-06-14T20:39:21.212680+00:00",
-    "5cb4da789c48": "2026-06-14T20:39:21.212680+00:00"
+    "5cb4da789c48": "2026-06-14T20:39:21.212680+00:00",
+    "32d42f0a69b5": "2026-06-14T21:56:33.697109+00:00",
+    "8e2ee6abb79f": "2026-06-14T21:56:33.697109+00:00",
+    "753a8fc241f2": "2026-06-14T21:56:33.697109+00:00",
+    "f2a8053f7a60": "2026-06-14T21:56:33.697109+00:00",
+    "bfb360ebac64": "2026-06-14T21:56:33.697109+00:00",
+    "11478968ca8a": "2026-06-14T21:56:33.697109+00:00",
+    "019c6c346a15": "2026-06-14T21:56:33.697109+00:00",
+    "9b9eb7b5de6a": "2026-06-14T21:56:33.697109+00:00",
+    "295a322309f5": "2026-06-14T21:56:33.697109+00:00",
+    "5733e501c36a": "2026-06-14T21:56:33.697109+00:00",
+    "48efea78a34d": "2026-06-14T21:56:33.697109+00:00",
+    "b27a6494190f": "2026-06-14T21:56:33.697109+00:00",
+    "924f143978b3": "2026-06-14T21:56:33.697109+00:00",
+    "89ec1df148b8": "2026-06-14T21:56:33.697109+00:00",
+    "6775ef4c8000": "2026-06-14T21:56:33.697109+00:00",
+    "ac4ae14ed3d0": "2026-06-14T21:56:33.697109+00:00"
   },
   "live_clusters": {
-    "ce366645163c43a0": {
-      "topic": "Nike Zoom Skylon 11 Black White Release",
-      "item_ids": [
-        "3eeacc4351ea"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "080dc3515afb665d": {
-      "topic": "Amy Adams SNL Host Sketch Content Decision",
-      "item_ids": [
-        "412e3406c59f"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fcc85e71408dd7f7": {
-      "topic": "Jesse Rodriguez vs Antonio Vargas Boxing Match",
-      "item_ids": [
-        "cb7276711cc4"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9806b721f97f87da": {
-      "topic": "2026 Black Women in Music Dinner Honors",
-      "item_ids": [
-        "630f69579901"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "acb8b570bc161344": {
-      "topic": "Olivia Rodrigo 'You Seem Pretty Sad' Streaming Records",
-      "item_ids": [
-        "44167105b0b0"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bd6798c40084df19": {
-      "topic": "James Handy Actor Remembrance",
-      "item_ids": [
-        "f275a68b43bf"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "885038a1a28bf6a8": {
-      "topic": "Matt Damon Bourne Franchise Revival Interest",
-      "item_ids": [
-        "e2b58decd6fc"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8d6b4a3ec3f821bc": {
-      "topic": "Tyra Banks Netflix 'Reality Check' Lawsuit",
-      "item_ids": [
-        "f42e5c051473"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "54254dc6d3f8bbd1": {
-      "topic": "Iv\u00e1n Herrera Swing Bat Tracking Technology MLB",
-      "item_ids": [
-        "c7cd1eab8b2f"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8c93ce6611f85aa6": {
-      "topic": "Google AI Leader UW Commencement Address",
-      "item_ids": [
-        "6af25793c64a"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cfb9e613f02b8d7e": {
-      "topic": "Cold Calling Software 2026 Comparison",
-      "item_ids": [
-        "8d61b3a6b9a4"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3d4060cb899aaf29": {
-      "topic": "adidas Ballerina Silkiest Sneaker Silver Release",
-      "item_ids": [
-        "098e57e3891c"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8cfe1ab808b83e00": {
-      "topic": "World Cup 2026 Business Economic Impact Struggles",
-      "item_ids": [
-        "9a1521ad581f",
-        "2cc31b59bef4",
-        "6c305bb10257",
-        "d9a6fc9d1cd6"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-14T14:24:41.743883+00:00",
-      "picks_file": "picks/picks-2026-06-14-1425.md",
-      "why_text": "The 2026 World Cup is being dubbed the first 'AI World Cup,' and the numbers are staggering \u2014 $11 billion in projected economic activity driven in part by how AI is reshaping everything from ticketing and logistics to broadcast and fan engagement. This isn't just a sports story; it's a stress test for whether mega-events can actually deliver on their economic promises in an era of inflation, host-city skepticism, and algorithmic everything. The tension between the headline number and real local economic struggles on the ground is the story underneath the story.",
-      "last_escalated_item_ids": [
-        "9a1521ad581f",
-        "2cc31b59bef4",
-        "6c305bb10257"
-      ]
-    },
-    "afbdf6a44bab690f": {
-      "topic": "Amazon $200B AI Data Center Canadian Bond Financing",
-      "item_ids": [
-        "be518a2325b5"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9410740cc8a54a30": {
-      "topic": "Le Mans 24 Hours Cadillac BMW Toyota Racing",
-      "item_ids": [
-        "9bf24a184077",
-        "96d06eac8a2d",
-        "521762d3c4da",
-        "fb0b4b4eb148",
-        "c9da499c2120",
-        "9df6d30437b3",
-        "0c3d5becd0e8",
-        "5aebf6307188",
-        "c805990724f3",
-        "b6e68f056a3e",
-        "29ff6b5daa37",
-        "321ccbab5314",
-        "019fe21b4f37",
-        "42759ad3a797",
-        "77dfa7fd0e12",
-        "510a313d8780",
-        "966c85131b2d",
-        "a152b5eb8b11",
-        "5f8cb833e508",
-        "5d3a32f34169",
-        "2b666d82bfbf",
-        "613e43df6c1c"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 21,
-      "last_escalated_at": "2026-06-14T17:41:39.086107+00:00",
-      "picks_file": "picks/picks-2026-06-13-2051.md",
-      "why_text": "At the six-hour mark of Le Mans, the No. 38 JOTA Cadillac has seized control after the pole-sitting BMW \u2014 widely seen as a genuine title contender this year \u2014 hit serious trouble, reshuffling the Hypercar order dramatically. This is a big moment for Cadillac's endurance racing credibility and a gut-punch for BMW's Le Mans ambitions, which had been building real momentum. With Toyota still lurking, the race is wide open and the next 18 hours are going to be brutal.\n**Update 5:00 PM CT:** BMW has hit back hard: the No. 20 machine has cycled to the front as Hour 7 gets underway and night running begins, suggesting the earlier trouble may have been resolved \u2014 or that strategy and pit sequencing have reshuffled the order once again in BMW's favor.\n**Update 5:00 AM CT:** **Update [Hour 18]:** BMW has reclaimed the lead as a Porsche crash brings out the safety car, compressing the field and setting up a knife-edge final six hours \u2014 with Cadillac right on their heels, the closing stint is shaping up to be a straight fight between the two manufacturers.\n**Update 9:25 AM CT:** **Update [Hour 24 \u2014 FINAL]:** Toyota has won the 2026 24 Hours of Le Mans, outlasting BMW and Cadillac to claim the manufacturer's sixth overall victory at La Sarthe and first in four years \u2014 a stunning late-race result that denies BMW what would have been a landmark win after leading deep into the final stint.\n**Update 12:42 PM CT:** BMW Team WRT has broken their silence on the defeat, describing the final safety car period as 'painful' \u2014 the implication being that the late-race neutralization robbed them of the pace advantage they needed to hold off Toyota in the closing laps, making this a loss that will sting long after Le Mans.",
-      "last_escalated_item_ids": [
-        "9bf24a184077",
-        "96d06eac8a2d",
-        "521762d3c4da",
-        "fb0b4b4eb148",
-        "c9da499c2120",
-        "9df6d30437b3",
-        "0c3d5becd0e8",
-        "5aebf6307188",
-        "c805990724f3",
-        "b6e68f056a3e",
-        "29ff6b5daa37",
-        "321ccbab5314",
-        "019fe21b4f37",
-        "42759ad3a797",
-        "77dfa7fd0e12",
-        "510a313d8780",
-        "966c85131b2d",
-        "a152b5eb8b11",
-        "5f8cb833e508",
-        "5d3a32f34169",
-        "2b666d82bfbf"
-      ]
-    },
-    "1883b2f9c710bd5a": {
-      "topic": "James Harden Trending Topic",
-      "item_ids": [
-        "8352110aa618"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "28d9eec3bd5649df": {
-      "topic": "Ryan Clark Trending Topic",
-      "item_ids": [
-        "0a110c6d38e5"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c702f16b6f7c8dbb": {
-      "topic": "Elon Musk Trending Topic",
-      "item_ids": [
-        "1c9447fc6814",
-        "a5094a0d7512"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d8caa777ac302f11": {
-      "topic": "QATSUI Trending Topic",
-      "item_ids": [
-        "0e1279da65dd"
-      ],
-      "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "f125cc9b5a89ae50": {
       "topic": "The Muppet Show 50th Anniversary Guest Stars Retrospective",
       "item_ids": [
@@ -816,7 +590,8 @@
     "1a295b673ee51a17": {
       "topic": "2009 NBA Draft Philadelphia 76ers Re-evaluation",
       "item_ids": [
-        "9a3a40973827"
+        "9a3a40973827",
+        "ccb0a9dadf9a"
       ],
       "created_at": "2026-06-13T23:15:28.668781+00:00",
       "last_escalated_size": 0,
@@ -870,7 +645,8 @@
     "3c7c03b175547666": {
       "topic": "New Balance Blacked-Out Tech Dad Runner Sneaker Release",
       "item_ids": [
-        "a22199e4e0a1"
+        "a22199e4e0a1",
+        "a77be798edab"
       ],
       "created_at": "2026-06-14T01:38:26.892836+00:00",
       "last_escalated_size": 0,
@@ -880,11 +656,19 @@
       "topic": "'Michael' Biopic Box Office Record Bohemian Rhapsody",
       "item_ids": [
         "83b11cf2f807",
-        "e86f8c5dfe2b"
+        "e86f8c5dfe2b",
+        "bd2acafd1b79"
       ],
       "created_at": "2026-06-14T06:20:06.486185+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-14T21:56:33.697109+00:00",
+      "picks_file": "picks/picks-2026-06-14-2157.md",
+      "why_text": "The Michael Jackson biopic has just cleared the bar set by 'Bohemian Rhapsody' \u2014 a film that itself redefined what a music biopic could do commercially \u2014 proving that Jackson's cultural gravitational pull remains almost impossible to match at the box office. This lands at a complicated cultural moment: the film was made with the estate's full cooperation and stars Jackson's own nephew, meaning it was engineered partly as a legacy rehabilitation project, and audiences are showing up anyway. It's a referendum on whether fandom ultimately outlasts controversy, and right now, fandom is winning.",
+      "last_escalated_item_ids": [
+        "83b11cf2f807",
+        "e86f8c5dfe2b",
+        "bd2acafd1b79"
+      ]
     },
     "cf4b39cd3d138a70": {
       "topic": "Tullamarines Fleetwood Mac Cover Like A Version",
@@ -1150,7 +934,8 @@
     "a453ace57027b937": {
       "topic": "UFC Freedom 250 Topuria vs Gaethje Live Coverage",
       "item_ids": [
-        "6ae80578c346"
+        "6ae80578c346",
+        "93c6b6006d22"
       ],
       "created_at": "2026-06-14T16:04:24.719163+00:00",
       "last_escalated_size": 0,
@@ -1238,11 +1023,16 @@
         "b8f5c28021ea",
         "935e7a83c575",
         "ad770d9d0e4f",
-        "5f19e0e776c7"
+        "5f19e0e776c7",
+        "c15f6a9e0b8c",
+        "1ad09e743e0f",
+        "fbb41734f170",
+        "ca817f50f06b",
+        "9e3aa73cec26"
       ],
       "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 14,
-      "last_escalated_at": "2026-06-14T20:39:21.212680+00:00",
+      "last_escalated_size": 19,
+      "last_escalated_at": "2026-06-14T21:56:33.697109+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "29e1162c0a40",
@@ -1258,7 +1048,12 @@
         "b8f5c28021ea",
         "935e7a83c575",
         "ad770d9d0e4f",
-        "5f19e0e776c7"
+        "5f19e0e776c7",
+        "c15f6a9e0b8c",
+        "1ad09e743e0f",
+        "fbb41734f170",
+        "ca817f50f06b",
+        "9e3aa73cec26"
       ]
     },
     "36c2b02995a839c5": {
@@ -1275,11 +1070,20 @@
       "topic": "Knicks Championship 2027 NBA Title Odds",
       "item_ids": [
         "71b870b0faa8",
-        "3d8bc8129cab"
+        "3d8bc8129cab",
+        "0e4fdd14a3d8",
+        "89ba79fa8a9e"
       ],
       "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-14T21:56:33.697109+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "71b870b0faa8",
+        "3d8bc8129cab",
+        "0e4fdd14a3d8",
+        "89ba79fa8a9e"
+      ]
     },
     "7a826dac39df5d01": {
       "topic": "Jalen Brunson Texas Taxes New York Cost Living",
@@ -1442,7 +1246,43 @@
       "created_at": "2026-06-14T20:39:45.777773+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "516e28ce28f0810c": {
+      "topic": "Alessandro Nivola Calvin Klein 'Love Story' Todd Haynes Film",
+      "item_ids": [
+        "b47184617579"
+      ],
+      "created_at": "2026-06-14T21:57:03.089215+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6b8b1ff521154184": {
+      "topic": "The Fall Final Album Autumn Release",
+      "item_ids": [
+        "ba4d2f22d660"
+      ],
+      "created_at": "2026-06-14T21:57:03.089215+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9b14c892b8b74dcc": {
+      "topic": "Milly Alcock Supergirl Superman Cape Christopher Reeve Fabric",
+      "item_ids": [
+        "2df334a455f6"
+      ],
+      "created_at": "2026-06-14T21:57:03.089215+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7c2cd9b5111ad346": {
+      "topic": "Crocs Toy Story Collaboration Sneaker Release",
+      "item_ids": [
+        "84494d381885"
+      ],
+      "created_at": "2026-06-14T21:57:03.089215+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-14T20:39:46.613037+00:00"
+  "last_checked": "2026-06-14T21:57:11.526733+00:00"
 }
