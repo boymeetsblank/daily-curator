@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "1d14070d7951",
-    "4075e3d75e49",
-    "28c4821191a7",
-    "6a81b8f7ac40",
-    "8d0f380b7a3a",
-    "1f26085739cd",
-    "1eaa3b38b4e3",
-    "d1a32a489c04",
-    "a4edf6719027",
-    "b81df49a01fe",
-    "a0ec90de3344",
-    "272399181d5f",
-    "ab554590067d",
-    "4ed5dc90c8c9",
-    "56b1eb1231b9",
-    "f9b7500f930f",
-    "60717e5a2760",
     "6e866e87943d",
     "2782ea47bc45",
     "9a802cf8bf3c",
@@ -499,22 +482,26 @@
     "3df82795ab0f",
     "6ac33daf1994",
     "95d4f2e07241",
-    "1d4f02e269d2"
+    "1d4f02e269d2",
+    "779d045427b3",
+    "14b4db72a426",
+    "e3be210c6b2a",
+    "43c936098e4f",
+    "f02e37cffd82",
+    "0d5112471529",
+    "a22199e4e0a1",
+    "8c5713ffdb8f",
+    "44c49ca09192",
+    "406002b85599",
+    "bd31d6045f4d",
+    "dec806cccc58",
+    "2cc31b59bef4",
+    "24fb1735f39d",
+    "e48e73b4feeb",
+    "92a988e60122",
+    "b65676ecb683"
   ],
   "failed_ids": {
-    "f0760fc5feb4": "2026-06-13T20:51:26.968585+00:00",
-    "f76719be72b5": "2026-06-13T20:51:26.968585+00:00",
-    "dbda10802429": "2026-06-13T20:51:26.968585+00:00",
-    "c39f1b2a0cd4": "2026-06-13T20:51:26.968585+00:00",
-    "8c9d1210ef51": "2026-06-13T20:51:26.968585+00:00",
-    "0b5997052d87": "2026-06-13T20:51:26.968585+00:00",
-    "64b6f4a783c5": "2026-06-13T20:51:26.968585+00:00",
-    "8f679c8e8a1c": "2026-06-13T20:51:26.968585+00:00",
-    "fdb8f5c48cb4": "2026-06-13T20:51:26.968585+00:00",
-    "2022a44a3fde": "2026-06-13T20:51:26.968585+00:00",
-    "63e964a4df32": "2026-06-13T20:51:26.968585+00:00",
-    "80d4917e3ebc": "2026-06-13T20:51:26.968585+00:00",
-    "adf16e9ff444": "2026-06-13T20:51:26.968585+00:00",
     "915ea25d9376": "2026-06-13T21:59:59.084305+00:00",
     "70148a067faf": "2026-06-13T21:59:59.084305+00:00",
     "a9b6f14b4b0a": "2026-06-13T21:59:59.084305+00:00",
@@ -539,119 +526,13 @@
     "6bab989736c2": "2026-06-13T23:15:03.225061+00:00",
     "342a6727899f": "2026-06-13T23:15:03.225061+00:00",
     "cf0b511eef8b": "2026-06-13T23:15:03.225061+00:00",
-    "5b183506bb98": "2026-06-13T23:15:03.225061+00:00"
+    "5b183506bb98": "2026-06-13T23:15:03.225061+00:00",
+    "14dbbf5c7f67": "2026-06-14T01:38:01.021621+00:00",
+    "b1b888a4e767": "2026-06-14T01:38:01.021621+00:00",
+    "102fb11c9e09": "2026-06-14T01:38:01.021621+00:00",
+    "d99da5bb1a2d": "2026-06-14T01:38:01.021621+00:00"
   },
   "live_clusters": {
-    "5b448365dc512205": {
-      "topic": "Bill Ritter Departs WABC Eyewitness News After Alzheimer's Diagnosis",
-      "item_ids": [
-        "c5643cdc28e0"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "359d95536b25499f": {
-      "topic": "Chris Sanders to Direct Live-Action Lilo & Stitch 2 Sequel",
-      "item_ids": [
-        "60495a53661e"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9d7cde134da639e9": {
-      "topic": "Gene Shalit Today Show Film Critic Dies at 100",
-      "item_ids": [
-        "244ea2757110",
-        "12852a9fd037"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d4cf6c8fc2870a96": {
-      "topic": "Dutton Ranch Episode 6 Character Deaths and Drama",
-      "item_ids": [
-        "c19d84f988cf"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5aeb7f52bd88d612": {
-      "topic": "The Vampire Lestat Soundtrack Inspiration Songs",
-      "item_ids": [
-        "527b438b6137"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5e30e58620a3fe26": {
-      "topic": "Billboard Canada Power Players 2026 Moments",
-      "item_ids": [
-        "88d244410dd8"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "180084c7401abea7": {
-      "topic": "What The Dead Know Taylor Schilling NBC Pilot Redevelopment",
-      "item_ids": [
-        "fa53208c161d"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "483393ccc62ff996": {
-      "topic": "Specialty Preview RuPaul Stop That Train BTS Maria Bakalova",
-      "item_ids": [
-        "b0111e2d0b60"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "141f1279ec88860c": {
-      "topic": "Ohtani Dodgers Lineup Absence",
-      "item_ids": [
-        "b48b29dc3ba8",
-        "20e7409a85fe"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dd4d78d293352b05": {
-      "topic": "Facial Recognition Wrongful Arrest Jacksonville Beach Police",
-      "item_ids": [
-        "240746cfbd04"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "023319b9061bc2dd": {
-      "topic": "SpaceX IPO Impact on OpenAI Anthropic",
-      "item_ids": [
-        "8f36d10d89d8"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cf78ea458b14c685": {
-      "topic": "BMW Electric Vehicle History Tesla Timeline",
-      "item_ids": [
-        "048b51f267f9"
-      ],
-      "created_at": "2026-06-12T23:54:32.209811+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "05c25db92e06ba57": {
       "topic": "Katy Perry World Cup 2026 Wonder Performance",
       "item_ids": [
@@ -1329,12 +1210,18 @@
         "40ccad581987",
         "37f5c7bcf38d",
         "4b0aea9adf00",
-        "3aa72cbf412a"
+        "3aa72cbf412a",
+        "f02e37cffd82",
+        "8c5713ffdb8f",
+        "44c49ca09192",
+        "406002b85599",
+        "bd31d6045f4d",
+        "dec806cccc58"
       ],
       "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 13,
-      "last_escalated_at": "2026-06-13T23:15:03.225061+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 19,
+      "last_escalated_at": "2026-06-14T01:38:01.021621+00:00",
+      "picks_file": "picks/picks-2026-06-14-0138.md",
       "last_escalated_item_ids": [
         "018131d31b32",
         "37fecc42816e",
@@ -1348,8 +1235,15 @@
         "40ccad581987",
         "37f5c7bcf38d",
         "4b0aea9adf00",
-        "3aa72cbf412a"
-      ]
+        "3aa72cbf412a",
+        "f02e37cffd82",
+        "8c5713ffdb8f",
+        "44c49ca09192",
+        "406002b85599",
+        "bd31d6045f4d",
+        "dec806cccc58"
+      ],
+      "why_text": "The New York Knicks are one win away from their first NBA championship since 1973 \u2014 a 52-year drought that has defined a generation of suffering for the league's most media-saturated fanbase. With the series shifting back to San Antonio for Game 5, the Spurs are fighting for survival while New York teeters on the edge of a cultural earthquake. A Knicks title wouldn't just be a sports moment \u2014 it would rewire the entire gravity of the NBA's cultural conversation, New York's civic identity, and the league's commercial landscape in one night."
     },
     "f95b244e5f26a768": {
       "topic": "BMW Electric M3 Naming Strategy Announcement",
@@ -1480,7 +1374,8 @@
     "8cfe1ab808b83e00": {
       "topic": "World Cup 2026 Business Economic Impact Struggles",
       "item_ids": [
-        "9a1521ad581f"
+        "9a1521ad581f",
+        "2cc31b59bef4"
       ],
       "created_at": "2026-06-13T20:51:57.404108+00:00",
       "last_escalated_size": 0,
@@ -1602,7 +1497,61 @@
       "created_at": "2026-06-13T23:15:28.668781+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1044e9415a1e2a71": {
+      "topic": "Widow's Bay Creator Recalls Parks and Rec Episode Origin",
+      "item_ids": [
+        "779d045427b3"
+      ],
+      "created_at": "2026-06-14T01:38:26.892836+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e51f85261d3ef7cc": {
+      "topic": "Aldon Smith Former NFL Defensive Lineman Dies at 36",
+      "item_ids": [
+        "14b4db72a426"
+      ],
+      "created_at": "2026-06-14T01:38:26.892836+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a93bcb8aab72ab28": {
+      "topic": "Vinicius Jr Brazil Draw Morocco International Match",
+      "item_ids": [
+        "e3be210c6b2a"
+      ],
+      "created_at": "2026-06-14T01:38:26.892836+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "04e1af59d9706ad0": {
+      "topic": "Ramirez Bone Injury Guardians Victory",
+      "item_ids": [
+        "43c936098e4f"
+      ],
+      "created_at": "2026-06-14T01:38:26.892836+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2eaa432409eba5f8": {
+      "topic": "State Attorneys General Investigating OpenAI",
+      "item_ids": [
+        "0d5112471529"
+      ],
+      "created_at": "2026-06-14T01:38:26.892836+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3c7c03b175547666": {
+      "topic": "New Balance Blacked-Out Tech Dad Runner Sneaker Release",
+      "item_ids": [
+        "a22199e4e0a1"
+      ],
+      "created_at": "2026-06-14T01:38:26.892836+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-13T23:15:37.593159+00:00"
+  "last_checked": "2026-06-14T01:38:33.949254+00:00"
 }
