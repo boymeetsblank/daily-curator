@@ -1,33 +1,5 @@
 {
   "known_ids": [
-    "7d18aa8518e6",
-    "891d76bf1ba9",
-    "09eecbbb71b0",
-    "3d15c51c5147",
-    "23ed2caa5c45",
-    "0e320053e768",
-    "5ab12589f5a2",
-    "577e7f0fd4fc",
-    "b38af3cd8d44",
-    "726b254baa3d",
-    "f5759f5f327b",
-    "8ba23d7cfdc0",
-    "8df900de1bd7",
-    "d98ad5aa32ca",
-    "a9103997e201",
-    "03d6a07480a0",
-    "57122fc67556",
-    "aba68111cc0c",
-    "2e3096f004a9",
-    "8df900de1bd7",
-    "53aa2ee53393",
-    "63e9513ba400",
-    "4a2230e06321",
-    "f5759f5f327b",
-    "4f734dc6b324",
-    "2ff7bd34b47a",
-    "75a0962f9e18",
-    "37a7a483be54",
     "0629a886df46",
     "01da799d7a12",
     "4ab8fa37ddee",
@@ -499,20 +471,37 @@
     "56f0b617a56f",
     "1320fa23c3c4",
     "0ab6c0fbd0ba",
-    "7e1d18399335"
+    "7e1d18399335",
+    "65c604a99fb6",
+    "dad73f39d785",
+    "427cb9655c6f",
+    "9485c71e8b53",
+    "6977f513d6a6",
+    "a5ea7530cdf5",
+    "491c83c08bb2",
+    "32deb6e8ac3b",
+    "5ccce065dacc",
+    "127483645cb9",
+    "99900b7d12a2",
+    "f613f871c2a3",
+    "cbc50238cdab",
+    "442e8630e1c6",
+    "0382f15a4154",
+    "5481b4cf4bc8",
+    "e633c1c2bca0",
+    "66d439a6cfa0",
+    "6c305bb10257",
+    "42759ad3a797",
+    "77dfa7fd0e12",
+    "510a313d8780",
+    "8da6839eb4f6",
+    "ead66831fcde",
+    "538a8c4ee044",
+    "f9efc893ec4c",
+    "fbf307ff26b8",
+    "449bdf5592f2"
   ],
   "failed_ids": {
-    "f0d9d04ffcb7": "2026-06-14T09:59:50.020483+00:00",
-    "bb3e898fd35c": "2026-06-14T09:59:50.020483+00:00",
-    "889f6eac3572": "2026-06-14T09:59:50.020483+00:00",
-    "e334a085aa9f": "2026-06-14T09:59:50.020483+00:00",
-    "47445ac86c72": "2026-06-14T09:59:50.020483+00:00",
-    "0b1a422dc6ae": "2026-06-14T09:59:50.020483+00:00",
-    "815fd8dcd34e": "2026-06-14T09:59:50.020483+00:00",
-    "18d23320b1cf": "2026-06-14T09:59:50.020483+00:00",
-    "1e268e0424d1": "2026-06-14T09:59:50.020483+00:00",
-    "7d4ee2b2c24f": "2026-06-14T09:59:50.020483+00:00",
-    "ca585d950790": "2026-06-14T09:59:50.020483+00:00",
     "e869df129f64": "2026-06-14T12:05:16.646669+00:00",
     "cccc74ced69d": "2026-06-14T12:05:16.646669+00:00",
     "46d84346ccf5": "2026-06-14T12:05:16.646669+00:00",
@@ -531,204 +520,25 @@
     "a5ce5e259ef4": "2026-06-14T12:05:16.646669+00:00",
     "d9dcd337934a": "2026-06-14T12:05:16.646669+00:00",
     "ea00039086c3": "2026-06-14T12:05:16.646669+00:00",
-    "e32723e39f9e": "2026-06-14T12:05:16.646669+00:00"
+    "e32723e39f9e": "2026-06-14T12:05:16.646669+00:00",
+    "9d54f6571b7d": "2026-06-14T14:24:41.743883+00:00",
+    "90106a4ede80": "2026-06-14T14:24:41.743883+00:00",
+    "4ad9bce19716": "2026-06-14T14:24:41.743883+00:00",
+    "379a5b1f26f2": "2026-06-14T14:24:41.743883+00:00",
+    "941d7db10cbc": "2026-06-14T14:24:41.743883+00:00",
+    "a5a784bb9e0e": "2026-06-14T14:24:41.743883+00:00",
+    "aca511a92f9b": "2026-06-14T14:24:41.743883+00:00",
+    "bf7f7e4378b2": "2026-06-14T14:24:41.743883+00:00",
+    "3f036565e2d0": "2026-06-14T14:24:41.743883+00:00",
+    "e292972c73ce": "2026-06-14T14:24:41.743883+00:00",
+    "fcca42357bf1": "2026-06-14T14:24:41.743883+00:00"
   },
   "live_clusters": {
-    "31cc548bce568e8c": {
-      "topic": "Jeffrey Dean Morgan The Walking Dead Dead City Season 3 Monte-Carlo TV Festival",
-      "item_ids": [
-        "ba1eb374cec2"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d396b502040a511d": {
-      "topic": "AI Report Hallucinations Accuracy Problem",
-      "item_ids": [
-        "0c3ac17f63eb",
-        "2149290c64f5"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bd17bdf4a6d24e34": {
-      "topic": "Engadget Tech Product Reviews Roundup",
-      "item_ids": [
-        "5e808f6636a3"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7f25b840d4b0b16b": {
-      "topic": "Warren Buffett Elon Musk Investment Philosophy Debate",
-      "item_ids": [
-        "5d1d94b99763",
-        "308839a3f4c2"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f487de11cd1686c1": {
-      "topic": "Obesity Drugs Market Race Pharmaceutical Competition",
-      "item_ids": [
-        "5ddfefbc5b6b"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "44458eafbf742808": {
-      "topic": "Rivian CEO Humanoid Robotics Strategy Alternative Approach",
-      "item_ids": [
-        "4db05d86dc02"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eceba3bd6effbd5d": {
-      "topic": "ON Semiconductor Stock Performance Analysis",
-      "item_ids": [
-        "a875d22def01"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ecbb3ff621f254c0": {
-      "topic": "Micron Technology Stock Investment Strategy",
-      "item_ids": [
-        "c453ac27443a"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "46637360dd511047": {
-      "topic": "Levata POSDATA Payment Technology Acquisition",
-      "item_ids": [
-        "1916599b311f"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "95117d0fb03efdec": {
-      "topic": "Technology Sector Stock Analyst Coverage",
-      "item_ids": [
-        "7720c4094a85"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f40611e8502f14fe": {
-      "topic": "Overnight Train Travel Amtrak Nightjet Comparison",
-      "item_ids": [
-        "33a93d532d6c"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "515596fcf0af3fce": {
-      "topic": "Venture Capital Funding Atlanta Billion-Dollar Startups",
-      "item_ids": [
-        "704ea2331d22"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "32aa93b684ebb86e": {
-      "topic": "Sarasota County Business Parks Development Initiative",
-      "item_ids": [
-        "ac1162b2e107"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "719dc50af591046d": {
-      "topic": "Photographer Quits Instagram Social Media Impact Family",
-      "item_ids": [
-        "7d8ded313876"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "353f1d74f5e8ef4f": {
-      "topic": "SpaceX IPO Investment Strategy 401k Portfolios",
-      "item_ids": [
-        "427d9f7d4334"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d3e002dee77af2c3": {
-      "topic": "Old Dominion Freight Line LTL Pricing Amazon Threats",
-      "item_ids": [
-        "62e99f9cf08a"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2af554314988bf00": {
-      "topic": "Icon Creations VFX Award BMW Egypt Campaign",
-      "item_ids": [
-        "029131c63b29"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "16ca3a69e70f0996": {
-      "topic": "Lays World Cup 2026 Campaign Trending",
-      "item_ids": [
-        "5fbdb95080b3"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f16fa913b96e28fd": {
-      "topic": "Estados Unidos Trending Topic",
-      "item_ids": [
-        "655610f2ea88"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fcee745aa909a12b": {
-      "topic": "Dest Trending Topic",
-      "item_ids": [
-        "03e3076a23bc"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f55d76aef6a446a4": {
-      "topic": "USA USA USA Trending Topic",
-      "item_ids": [
-        "6f8a365ed641"
-      ],
-      "created_at": "2026-06-13T13:13:55.972250+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "1acc246f622156d0": {
       "topic": "'Obsession' Film Box Office Success and Industry Analysis",
       "item_ids": [
-        "e4551e43eb57"
+        "e4551e43eb57",
+        "6977f513d6a6"
       ],
       "created_at": "2026-06-13T15:12:56.067040+00:00",
       "last_escalated_size": 0,
@@ -875,11 +685,20 @@
         "237e8b29df2c",
         "56f0b617a56f",
         "1320fa23c3c4",
-        "0ab6c0fbd0ba"
+        "0ab6c0fbd0ba",
+        "99900b7d12a2",
+        "f613f871c2a3",
+        "cbc50238cdab",
+        "442e8630e1c6",
+        "0382f15a4154",
+        "ead66831fcde",
+        "538a8c4ee044",
+        "f9efc893ec4c",
+        "fbf307ff26b8"
       ],
       "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 40,
-      "last_escalated_at": "2026-06-14T12:05:16.646669+00:00",
+      "last_escalated_size": 49,
+      "last_escalated_at": "2026-06-14T14:24:41.743883+00:00",
       "picks_file": "picks/picks-2026-06-14-0138.md",
       "last_escalated_item_ids": [
         "018131d31b32",
@@ -921,9 +740,18 @@
         "237e8b29df2c",
         "56f0b617a56f",
         "1320fa23c3c4",
-        "0ab6c0fbd0ba"
+        "0ab6c0fbd0ba",
+        "99900b7d12a2",
+        "f613f871c2a3",
+        "cbc50238cdab",
+        "442e8630e1c6",
+        "0382f15a4154",
+        "ead66831fcde",
+        "538a8c4ee044",
+        "f9efc893ec4c",
+        "fbf307ff26b8"
       ],
-      "why_text": "The New York Knicks are one win away from their first NBA championship since 1973 \u2014 a 52-year drought that has defined a generation of suffering for the league's most media-saturated fanbase. With the series shifting back to San Antonio for Game 5, the Spurs are fighting for survival while New York teeters on the edge of a cultural earthquake. A Knicks title wouldn't just be a sports moment \u2014 it would rewire the entire gravity of the NBA's cultural conversation, New York's civic identity, and the league's commercial landscape in one night.\n**Update 1:20 AM CT:** The cultural earthquake has arrived: the New York Knicks defeated the San Antonio Spurs in Game 5 to claim the 2026 NBA Championship, ending their 52-year title drought, with Spike Lee, Timoth\u00e9e Chalamet, and Ben Stiller celebrating courtside in San Antonio \u2014 Chalamet declaring he'd \"way rather this than the Oscars\" \u2014 while Victor Wembanyama addressed the loss in a postgame press conference that's already dominating discourse alongside the Knicks' euphoria.\n**Update 5:00 AM CT:** Manhattan has erupted into chaotic street celebrations \u2014 with at least one World Cup bus set alight \u2014 as fans pour into the streets following the Knicks' first championship in 53 years, while the story of how it happened is crystallizing around Jalen Brunson, who both started and finished New York's championship run as the undisputed cornerstone of the title.\n**Update 7:05 AM CT:** The post-game analysis wave is now fully breaking: ESPN, the Times, and SI are dissecting how the Knicks actually built and executed a championship run, while Mike Breen \u2014 the voice of the Knicks and NBC's lead play-by-play caller \u2014 is trending as fans circulate his call of the final moments, and FMVP discourse has ignited on X with Jalen Brunson the near-unanimous choice for Finals MVP honors."
+      "why_text": "The New York Knicks are one win away from their first NBA championship since 1973 \u2014 a 52-year drought that has defined a generation of suffering for the league's most media-saturated fanbase. With the series shifting back to San Antonio for Game 5, the Spurs are fighting for survival while New York teeters on the edge of a cultural earthquake. A Knicks title wouldn't just be a sports moment \u2014 it would rewire the entire gravity of the NBA's cultural conversation, New York's civic identity, and the league's commercial landscape in one night.\n**Update 1:20 AM CT:** The cultural earthquake has arrived: the New York Knicks defeated the San Antonio Spurs in Game 5 to claim the 2026 NBA Championship, ending their 52-year title drought, with Spike Lee, Timoth\u00e9e Chalamet, and Ben Stiller celebrating courtside in San Antonio \u2014 Chalamet declaring he'd \"way rather this than the Oscars\" \u2014 while Victor Wembanyama addressed the loss in a postgame press conference that's already dominating discourse alongside the Knicks' euphoria.\n**Update 5:00 AM CT:** Manhattan has erupted into chaotic street celebrations \u2014 with at least one World Cup bus set alight \u2014 as fans pour into the streets following the Knicks' first championship in 53 years, while the story of how it happened is crystallizing around Jalen Brunson, who both started and finished New York's championship run as the undisputed cornerstone of the title.\n**Update 7:05 AM CT:** The post-game analysis wave is now fully breaking: ESPN, the Times, and SI are dissecting how the Knicks actually built and executed a championship run, while Mike Breen \u2014 the voice of the Knicks and NBC's lead play-by-play caller \u2014 is trending as fans circulate his call of the final moments, and FMVP discourse has ignited on X with Jalen Brunson the near-unanimous choice for Finals MVP honors.\n**Update 9:25 AM CT:** The celebration's dark edge is now in focus: NYPD arrested at least 63 people and reported 4 stabbings and 1 shooting amid the Manhattan street chaos, while Victor Wembanyama is drawing attention for defiantly claiming the Spurs 'dominated' the Knicks despite losing the series \u2014 a postgame take that's fueling its own discourse thread alongside the city's euphoria."
     },
     "f95b244e5f26a768": {
       "topic": "BMW Electric M3 Naming Strategy Announcement",
@@ -1055,11 +883,19 @@
       "topic": "World Cup 2026 Business Economic Impact Struggles",
       "item_ids": [
         "9a1521ad581f",
-        "2cc31b59bef4"
+        "2cc31b59bef4",
+        "6c305bb10257"
       ],
       "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-14T14:24:41.743883+00:00",
+      "picks_file": "picks/picks-2026-06-14-1425.md",
+      "why_text": "The 2026 World Cup is being dubbed the first 'AI World Cup,' and the numbers are staggering \u2014 $11 billion in projected economic activity driven in part by how AI is reshaping everything from ticketing and logistics to broadcast and fan engagement. This isn't just a sports story; it's a stress test for whether mega-events can actually deliver on their economic promises in an era of inflation, host-city skepticism, and algorithmic everything. The tension between the headline number and real local economic struggles on the ground is the story underneath the story.",
+      "last_escalated_item_ids": [
+        "9a1521ad581f",
+        "2cc31b59bef4",
+        "6c305bb10257"
+      ]
     },
     "afbdf6a44bab690f": {
       "topic": "Amazon $200B AI Data Center Canadian Bond Financing",
@@ -1085,13 +921,16 @@
         "b6e68f056a3e",
         "29ff6b5daa37",
         "321ccbab5314",
-        "019fe21b4f37"
+        "019fe21b4f37",
+        "42759ad3a797",
+        "77dfa7fd0e12",
+        "510a313d8780"
       ],
       "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 12,
-      "last_escalated_at": "2026-06-14T09:59:50.020483+00:00",
+      "last_escalated_size": 16,
+      "last_escalated_at": "2026-06-14T14:24:41.743883+00:00",
       "picks_file": "picks/picks-2026-06-13-2051.md",
-      "why_text": "At the six-hour mark of Le Mans, the No. 38 JOTA Cadillac has seized control after the pole-sitting BMW \u2014 widely seen as a genuine title contender this year \u2014 hit serious trouble, reshuffling the Hypercar order dramatically. This is a big moment for Cadillac's endurance racing credibility and a gut-punch for BMW's Le Mans ambitions, which had been building real momentum. With Toyota still lurking, the race is wide open and the next 18 hours are going to be brutal.\n**Update 5:00 PM CT:** BMW has hit back hard: the No. 20 machine has cycled to the front as Hour 7 gets underway and night running begins, suggesting the earlier trouble may have been resolved \u2014 or that strategy and pit sequencing have reshuffled the order once again in BMW's favor.\n**Update 5:00 AM CT:** **Update [Hour 18]:** BMW has reclaimed the lead as a Porsche crash brings out the safety car, compressing the field and setting up a knife-edge final six hours \u2014 with Cadillac right on their heels, the closing stint is shaping up to be a straight fight between the two manufacturers.",
+      "why_text": "At the six-hour mark of Le Mans, the No. 38 JOTA Cadillac has seized control after the pole-sitting BMW \u2014 widely seen as a genuine title contender this year \u2014 hit serious trouble, reshuffling the Hypercar order dramatically. This is a big moment for Cadillac's endurance racing credibility and a gut-punch for BMW's Le Mans ambitions, which had been building real momentum. With Toyota still lurking, the race is wide open and the next 18 hours are going to be brutal.\n**Update 5:00 PM CT:** BMW has hit back hard: the No. 20 machine has cycled to the front as Hour 7 gets underway and night running begins, suggesting the earlier trouble may have been resolved \u2014 or that strategy and pit sequencing have reshuffled the order once again in BMW's favor.\n**Update 5:00 AM CT:** **Update [Hour 18]:** BMW has reclaimed the lead as a Porsche crash brings out the safety car, compressing the field and setting up a knife-edge final six hours \u2014 with Cadillac right on their heels, the closing stint is shaping up to be a straight fight between the two manufacturers.\n**Update 9:25 AM CT:** **Update [Hour 24 \u2014 FINAL]:** Toyota has won the 2026 24 Hours of Le Mans, outlasting BMW and Cadillac to claim the manufacturer's sixth overall victory at La Sarthe and first in four years \u2014 a stunning late-race result that denies BMW what would have been a landmark win after leading deep into the final stint.",
       "last_escalated_item_ids": [
         "9bf24a184077",
         "96d06eac8a2d",
@@ -1104,7 +943,11 @@
         "c805990724f3",
         "b6e68f056a3e",
         "29ff6b5daa37",
-        "321ccbab5314"
+        "321ccbab5314",
+        "019fe21b4f37",
+        "42759ad3a797",
+        "77dfa7fd0e12",
+        "510a313d8780"
       ]
     },
     "1883b2f9c710bd5a": {
@@ -1358,7 +1201,115 @@
       "created_at": "2026-06-14T12:05:47.009851+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1857b24ae50ebc85": {
+      "topic": "Minotaur Film Sydney Film Festival Top Prize",
+      "item_ids": [
+        "65c604a99fb6"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1b49e85dca1d3c0f": {
+      "topic": "Colman Domingo Sarah Pidgeon Euphoria Season 3 Discussion",
+      "item_ids": [
+        "dad73f39d785"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "adee72645ca77862": {
+      "topic": "Boy George Culture Club Homophobic Hecklers Documentary",
+      "item_ids": [
+        "427cb9655c6f"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "117cfad8200c0bf3": {
+      "topic": "Olivia Rodrigo Surprise No Doubt Sphere Final Show",
+      "item_ids": [
+        "9485c71e8b53"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "759a113444adfed6": {
+      "topic": "Muhammad Ali Drama 'The Greatest' Showrunner Preview",
+      "item_ids": [
+        "a5ea7530cdf5"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "764c8e69424b0244": {
+      "topic": "Apple TV 4K Multiview Sports Feature",
+      "item_ids": [
+        "491c83c08bb2"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6de5655647ee647a": {
+      "topic": "Fidget Toy Business Entrepreneur Career Success",
+      "item_ids": [
+        "32deb6e8ac3b",
+        "5481b4cf4bc8",
+        "66d439a6cfa0"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-14T14:24:41.743883+00:00",
+      "picks_file": "picks/picks-2026-06-14-1425.md",
+      "why_text": "At 32, this former teacher ditched the classroom to co-found a fidget toy business with her father \u2014 and last year it pulled in $428,000, making it a sharp case study in the post-pandemic pivot economy. The story lands at the intersection of two big cultural currents: the ongoing exodus from underpaid teaching jobs and the sustained, quietly massive market for sensory and focus toys that never really faded after the spinner craze. It's a reminder that 'small product' businesses built on real consumer need \u2014 not hype \u2014 can quietly generate serious money.",
+      "last_escalated_item_ids": [
+        "32deb6e8ac3b",
+        "5481b4cf4bc8",
+        "66d439a6cfa0"
+      ]
+    },
+    "252bdd9588409428": {
+      "topic": "AI Glasses Testing Paris BBC Review",
+      "item_ids": [
+        "5ccce065dacc"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bd8f708045cd13fb": {
+      "topic": "Siri AI Upgrade WSJ Report",
+      "item_ids": [
+        "127483645cb9"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ac4bebf870577027": {
+      "topic": "Baker Mayfield Emeka Egbuka 2026 OTA Highlight",
+      "item_ids": [
+        "e633c1c2bca0"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c9dc23435476e8a4": {
+      "topic": "Performance Sedan BMW M-Car Energy Review",
+      "item_ids": [
+        "8da6839eb4f6"
+      ],
+      "created_at": "2026-06-14T14:25:10.692511+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-14T12:05:51.786233+00:00"
+  "last_checked": "2026-06-14T14:25:30.034875+00:00"
 }
