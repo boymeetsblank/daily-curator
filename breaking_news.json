@@ -1,6 +1,158 @@
 {
   "items": [
     {
+      "id": "b26fe88b5f59",
+      "topic": "The New York Knicks Just Did the Impossible",
+      "traffic": "",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://variety.com/2026/sports/news/new-york-knicks-nba-championship-jalen-brunson-new-york-city-victor-wembanyama-1236780815/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 9,
+      "cluster_id": "01d190c7ee30f5c1"
+    },
+    {
+      "id": "b60af198452e",
+      "topic": "Berlin, Toronto and Hong Kong Film Festival Chiefs Gather at Shanghai to Champion New Talent",
+      "traffic": "",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://variety.com/2026/film/festivals/berlin-toronto-hong-kong-film-festival-chief-shanghai-new-talent-1236780842/",
+      "source_name": "Variety",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "c3c70b8d1892c175"
+    },
+    {
+      "id": "308839a3f4c2",
+      "topic": "Elon Musk drifted from Larry Page over a decade ago, but their companies are closer than ever",
+      "traffic": "",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://www.cnbc.com/2026/06/14/elon-musk-drifted-from-larry-page-but-spacex-google-closer-than-ever.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "7f25b840d4b0b16b"
+    },
+    {
+      "id": "e453a9f12034",
+      "topic": "A year after Meta tapped Alexandr Wang to build a new AI model, Zuckerberg has to sell it",
+      "traffic": "",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://www.cnbc.com/2026/06/14/meta-hired-alexandr-wang-to-build-ai-its-zuckerbergs-job-to-sell-it.html",
+      "source_name": "CNBC",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "d1a28cb94e6172e9"
+    },
+    {
+      "id": "02faf572a425",
+      "topic": "'There's a Lot of Restraint': How 'Toy Story 5' Balances New Technology With Nostalgia - CNET",
+      "traffic": "",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbFU1MGRZUEdBQ0E5VENXd0FNWVZHZ1NIQVJDSGNiWkxrWGVHUWlNSVQ0NHBzWHN1MUNJRGpRLV9nWndPUlYyV3h0TnRjLUQ3NTVkNDhLaXVJSC1LdXhIWTdOd28yMjdZWXhEcF80WWYteWhsOGxZbkg4bDNRRlItVW1jcw?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "f4648f81d0815ec8"
+    },
+    {
+      "id": "e59f90b973e7",
+      "topic": "How the Knicks’ Finals Win can Inform the NBA Draft - Sports Illustrated",
+      "traffic": "",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRlZGVEpxWnpvWklldnQ0a3FUc0pXMzFfRi1XY2VSNWlvZy1LTGNTOVRVOHBna3dNNUEtUVJVcFhma1NwVC0yTzNGQ2xWMUpQUW9LWmV2S0pDYXRmT1ZEUTV5LVcwd1BrT3NETWVGdXZ0UjBJM0xLdUloRndhV2VUalhJbVd0dzBIZGhXck9NZVhmZw?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "01d190c7ee30f5c1"
+    },
+    {
+      "id": "96aa3f947e44",
+      "topic": "How do Victor Wembanyama, Spurs learn from NBA Finals loss and take the next step? - The New York Times",
+      "traffic": "",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRWRUYWVDOVJJaE9QX25tZFZFVkR0NC12dlhFYWpoLVJwYXBUMEpOSjNraXBTcElfY0U1ZVJrZTUyQUt4YU9zd2tvcEZ1eC15SWloWlFKdC1NM3ZqZlVEdHg5MmY4SExiZmRUVnZ4akRiNmFuVndQZG5XZ1VhcjNEeFVtYVhGV1NMQ0NoV0lXMFRUZFZLcVVN?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "01d190c7ee30f5c1"
+    },
+    {
+      "id": "237e8b29df2c",
+      "topic": "How the Knicks won the NBA Finals over the Spurs: What we learned - ESPN",
+      "traffic": "",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQN0ZIOTlPbldYY01zbUVySGVRY25IQWpacG9jUXNfYmxEaXpqWnN0bktoSmhsUENvR2FBd0dBQ1RrYzlKcnBOaktWVWhwMUlUZmlWZTZkM0VRdzZ0RWc4U21aSk5MQVJQQTNndF8tam12aDBtSXhLbFJleVlkY1VDRFRMcGw4d2JVV0RncmJCY09sMmVodEdsNkdKNEZMb0owSWhGLVFFTXNKWlBRem5UTExpMmI2blZmakRtaHM2MDJHQ1pDZXNsUldR?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 9,
+      "cluster_id": "01d190c7ee30f5c1"
+    },
+    {
+      "id": "019fe21b4f37",
+      "topic": "24 Hours of Le Mans 2026 – H+17 The #20 BMW in the lead, the #8 Toyota keeping pace - autohebdof1.com",
+      "traffic": "",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxORFRDN0FocldqYnlBR0ZOcFpyZ2dwNFJQMkExX19vNWVHelRRbDFvaUtheVJzYk5SVlpCM0hMMUJKdWNYTUV6Z1hjaUtrejM3WmNHekZJYTJfVTh5bTlxVFYwM05sclFpbWRHMnNDWHh0MGFheU5EUzBRTmZjWlJUNmstTi1sd05OLTVCRmtMVWNEWF9hbzZ1S1JXUEltbXFrNXNPVUozaEJ3cXNuTWU2SFl4cWhoNjZuakdwZHE4VF9IYjZIcTgxeHE3dFFvMjlXeklndWlzMElvbTFSREEzRG1nUlB2TGJuWUw4?oc=5",
+      "source_name": "Google News - BMW",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "9410740cc8a54a30"
+    },
+    {
+      "id": "c2e6c79efcfb",
+      "topic": "Haiti",
+      "traffic": "##5 on X",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://x.com/search?q=Haiti&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "56f0b617a56f",
+      "topic": "Mike Breen",
+      "traffic": "##11 on X",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://x.com/search?q=Mike+Breen&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7,
+      "cluster_id": "01d190c7ee30f5c1"
+    },
+    {
+      "id": "1320fa23c3c4",
+      "topic": "#NYKvsSAS",
+      "traffic": "##12 on X",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://x.com/search?q=%23NYKvsSAS&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7,
+      "cluster_id": "01d190c7ee30f5c1"
+    },
+    {
+      "id": "0ab6c0fbd0ba",
+      "topic": "FMVP",
+      "traffic": "##13 on X",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://x.com/search?q=FMVP&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 7,
+      "cluster_id": "01d190c7ee30f5c1"
+    },
+    {
+      "id": "7e1d18399335",
+      "topic": "Gotham",
+      "traffic": "##14 on X",
+      "detected_at": "2026-06-14T12:05:16.646669+00:00",
+      "search_url": "https://x.com/search?q=Gotham&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "2fe059e3ddf0",
       "topic": "Honor and Arri’s Robot Phone Debuts on Shanghai Film Festival Red Carpet",
       "traffic": "",
@@ -280,160 +432,7 @@
       "source_type": "feed",
       "haiku_score": 8,
       "cluster_id": "01d190c7ee30f5c1"
-    },
-    {
-      "id": "2589f95e2ff0",
-      "topic": "Spike Lee, Timothée Chalamet, Ben Stiller Celebrate Knicks’ NBA Finals Win: “Way Rather This Than the Oscars” - The Hollywood Reporter",
-      "traffic": "",
-      "detected_at": "2026-06-14T06:19:44.390890+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYTVwZG1CM2JKeHB1X3REOGFrTS1WclkybkNWei1uenFNb0xfYmoySDR4ZTZnQlp3a0lkbHdCMlV1VGRxUFBwVmlhS2wyU1JFU0NJWUx5ei1xOFVsei1NM3c4alZyMXJsUnFPUklKX0lpRW5BNGR5MFZkbjEzd1pER09iQXBYUURObDRwbnNCZU5HVmhvc3lSR2theXNrbEVBWHBiamtlT0w0OUxVS3lSYUszUjNSZWIxell5WVZ3?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 9,
-      "cluster_id": "01d190c7ee30f5c1"
-    },
-    {
-      "id": "747ec6b1543a",
-      "topic": "New York Knicks Win 2026 NBA Championship - Blazer's Edge",
-      "traffic": "",
-      "detected_at": "2026-06-14T06:19:44.390890+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYVRObWk3WlkwbUgtRHl2dE1xYm1jREM1RDdpbFV6enRKbVdVSjk0UUM5VlNZWTJjRjA3bVFLQXQzMkpyQlFnaEE2dVRQUnhTSXVCUTFXU0JmRGZjYXdHUDByVi1Ra0FYNGI3NDlmcDRZRWl4clF4ekpmczB0R1lsQ1ZXYVoyOTF5VzhfdmR6R3hSRDE4alZkQmFMeUdrTUxNclVNWnVKbzJtQzZ0aV9JcXpDR1NyREhtaVlIeWJ0REdpMVBQR1ZJZ01IZ1RpNmp2MktoMjUwbmo?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 9,
-      "cluster_id": "01d190c7ee30f5c1"
-    },
-    {
-      "id": "1293f65b1532",
-      "topic": "Knicks celebrity fans back in San Antonio for Game 5 of the NBA Finals - USA Today",
-      "traffic": "",
-      "detected_at": "2026-06-14T06:19:44.390890+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVG5wZkluR3d6NURtOVpfNVl3NFczWlVOVXNIZTc4bExXOVRPR1NFSlhYdWs0Q2s4WEI2SWJBNXlGaEpfLW00Q3dwT2t6aTI5MUszVjZodzlXSGFmVWlRLTQxblliRWZhS0NhQldqdEVlMkg5S3JZQnFhTnNINndlaWFsMWM2bzVISF9id1FJVTNJRk52V0YyM2V1RlVzZDdybVluLW5sLWk2Qzg5ODdXQ1B5QlQ0UVJVMDFQaENZWjVSQQ?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "01d190c7ee30f5c1"
-    },
-    {
-      "id": "c805990724f3",
-      "topic": "Le Mans Hour 15: #12 Cadillac leads from #20 BMW - AutoRacing1.com",
-      "traffic": "",
-      "detected_at": "2026-06-14T06:19:44.390890+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObVZ3VjlmcnRMRXphWGRIeWJJTkRDcVpGMHcwTlNsU1RvUDF0OEhRVEZpVmRHTzlMT20xYkdmeS1LM2dGXzBUT3ZrZkg4c3daMExYck9PNXcwN05KWnlUNnJ3WE54Z2IwZzh2YzVydzI5TnF0ZzVRTnRBcm1rR2hidHFRdmthbmdycW02WA?oc=5",
-      "source_name": "Google News - BMW",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "9410740cc8a54a30"
-    },
-    {
-      "id": "ba89f6108e68",
-      "topic": "Knicks",
-      "traffic": "##1 on X",
-      "detected_at": "2026-06-14T06:19:44.390890+00:00",
-      "search_url": "https://x.com/search?q=Knicks&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6,
-      "cluster_id": "01d190c7ee30f5c1"
-    },
-    {
-      "id": "2d956e8b3fcc",
-      "topic": "Wemby",
-      "traffic": "##2 on X",
-      "detected_at": "2026-06-14T06:19:44.390890+00:00",
-      "search_url": "https://x.com/search?q=Wemby&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6,
-      "cluster_id": "01d190c7ee30f5c1"
-    },
-    {
-      "id": "7e3a362e97d1",
-      "topic": "Mike Brown",
-      "traffic": "##3 on X",
-      "detected_at": "2026-06-14T06:19:44.390890+00:00",
-      "search_url": "https://x.com/search?q=Mike+Brown&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6,
-      "cluster_id": "01d190c7ee30f5c1"
-    },
-    {
-      "id": "ff30eccc7192",
-      "topic": "Luka",
-      "traffic": "##4 on X",
-      "detected_at": "2026-06-14T06:19:44.390890+00:00",
-      "search_url": "https://x.com/search?q=Luka&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "779d045427b3",
-      "topic": "‘Widow’s Bay’ Creator Recalls How Series Began As ‘Parks & Rec’ Episode: “Felt More Like A Spoof”",
-      "traffic": "",
-      "detected_at": "2026-06-14T01:38:01.021621+00:00",
-      "search_url": "https://deadline.com/2026/06/widows-bay-creator-parks-rec-episode-origins-1236955818/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "1044e9415a1e2a71"
-    },
-    {
-      "id": "14b4db72a426",
-      "topic": "Former defensive lineman Aldon Smith dies at 36",
-      "traffic": "",
-      "detected_at": "2026-06-14T01:38:01.021621+00:00",
-      "search_url": "https://www.espn.com/nfl/story/_/id/49054479/former-nfl-defensive-lineman-aldon-smith-dies-age-36",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "e51f85261d3ef7cc"
-    },
-    {
-      "id": "e3be210c6b2a",
-      "topic": "Vinícius Jr. rescues draw for Brazil against Moroc...",
-      "traffic": "",
-      "detected_at": "2026-06-14T01:38:01.021621+00:00",
-      "search_url": "https://www.espn.com/soccer/story/_/id/49054529/brazil-vs-morocco-2026-world-cup-vinicius-junior",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "a93bcb8aab72ab28"
-    },
-    {
-      "id": "43c936098e4f",
-      "topic": "Ramirez breaks bone in left hand as Guardians win",
-      "traffic": "",
-      "detected_at": "2026-06-14T01:38:01.021621+00:00",
-      "search_url": "https://www.espn.com/mlb/story/_/id/49054524/jose-ramirez-breaks-bone-left-hand-guardians-win",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "04e1af59d9706ad0"
-    },
-    {
-      "id": "f02e37cffd82",
-      "topic": "Ticketmaster: No Game 5 tickets will be revoked",
-      "traffic": "",
-      "detected_at": "2026-06-14T01:38:01.021621+00:00",
-      "search_url": "https://www.espn.com/nba/story/_/id/49052718/ticketmaster-says-no-valid-game-5-tickets-revoked",
-      "source_name": "ESPN",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "01d190c7ee30f5c1"
-    },
-    {
-      "id": "0d5112471529",
-      "topic": "State Attorneys General Are Investigating OpenAI - The New York Times",
-      "traffic": "",
-      "detected_at": "2026-06-14T01:38:01.021621+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeDdPdDNQRGVKMXIxVGNLWURkQjZLZExOZ1JabldULVQyV3lOZ1lYWlhpYzA1eWpCZ2dVNTEzSk8xd2Z1ZzVob2hwVHBJMV9uZlFYcVZWMEVfRFdRWTdhek5ENGMyUjN2NWs1U1FlSXN2Q0RJSnlXZ0NGaS1wcnJqekFsaDA?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "2eaa432409eba5f8"
     }
   ],
-  "last_checked": "2026-06-14T09:59:50.020483+00:00"
+  "last_checked": "2026-06-14T12:05:16.646669+00:00"
 }

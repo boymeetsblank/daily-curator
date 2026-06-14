@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "54ee8e383b11",
-    "f20a1ddefee4",
-    "23b150c45261",
-    "d8f232a7863e",
-    "ecf8ce1d7e31",
-    "34cf903907f3",
-    "25ddcb9a5991",
-    "195b99ddd46a",
-    "23e337e1a764",
-    "16576ebf7ba7",
-    "bcf8c61f572c",
-    "137fd976c0c3",
-    "7900a3c31229",
-    "2da7084a7099",
     "7d18aa8518e6",
     "891d76bf1ba9",
     "09eecbbb71b0",
@@ -499,17 +485,23 @@
     "f4017e5c4ace",
     "b56decb14d5d",
     "4129ce7e7ab5",
-    "1aa5c380246c"
+    "1aa5c380246c",
+    "b26fe88b5f59",
+    "b60af198452e",
+    "308839a3f4c2",
+    "e453a9f12034",
+    "02faf572a425",
+    "e59f90b973e7",
+    "96aa3f947e44",
+    "237e8b29df2c",
+    "019fe21b4f37",
+    "c2e6c79efcfb",
+    "56f0b617a56f",
+    "1320fa23c3c4",
+    "0ab6c0fbd0ba",
+    "7e1d18399335"
   ],
   "failed_ids": {
-    "80e4fe29dc45": "2026-06-14T06:19:44.390890+00:00",
-    "2f76d5e23d55": "2026-06-14T06:19:44.390890+00:00",
-    "ec3fb37951e4": "2026-06-14T06:19:44.390890+00:00",
-    "1c656c53cf77": "2026-06-14T06:19:44.390890+00:00",
-    "87905425f252": "2026-06-14T06:19:44.390890+00:00",
-    "e3d76fffc865": "2026-06-14T06:19:44.390890+00:00",
-    "08c7487c4ea8": "2026-06-14T06:19:44.390890+00:00",
-    "c2e6c79efcfb": "2026-06-14T06:19:44.390890+00:00",
     "f0d9d04ffcb7": "2026-06-14T09:59:50.020483+00:00",
     "bb3e898fd35c": "2026-06-14T09:59:50.020483+00:00",
     "889f6eac3572": "2026-06-14T09:59:50.020483+00:00",
@@ -520,185 +512,28 @@
     "18d23320b1cf": "2026-06-14T09:59:50.020483+00:00",
     "1e268e0424d1": "2026-06-14T09:59:50.020483+00:00",
     "7d4ee2b2c24f": "2026-06-14T09:59:50.020483+00:00",
-    "ca585d950790": "2026-06-14T09:59:50.020483+00:00"
+    "ca585d950790": "2026-06-14T09:59:50.020483+00:00",
+    "e869df129f64": "2026-06-14T12:05:16.646669+00:00",
+    "cccc74ced69d": "2026-06-14T12:05:16.646669+00:00",
+    "46d84346ccf5": "2026-06-14T12:05:16.646669+00:00",
+    "155d0f466fac": "2026-06-14T12:05:16.646669+00:00",
+    "53ec2501517a": "2026-06-14T12:05:16.646669+00:00",
+    "93bb2ba5d042": "2026-06-14T12:05:16.646669+00:00",
+    "d1351ccf7517": "2026-06-14T12:05:16.646669+00:00",
+    "8812e5d93b06": "2026-06-14T12:05:16.646669+00:00",
+    "33b93651de36": "2026-06-14T12:05:16.646669+00:00",
+    "3baf0cca4522": "2026-06-14T12:05:16.646669+00:00",
+    "95093fd82447": "2026-06-14T12:05:16.646669+00:00",
+    "953238d64493": "2026-06-14T12:05:16.646669+00:00",
+    "ea790a3add9a": "2026-06-14T12:05:16.646669+00:00",
+    "3fbccc2853f7": "2026-06-14T12:05:16.646669+00:00",
+    "f711c2fa6162": "2026-06-14T12:05:16.646669+00:00",
+    "a5ce5e259ef4": "2026-06-14T12:05:16.646669+00:00",
+    "d9dcd337934a": "2026-06-14T12:05:16.646669+00:00",
+    "ea00039086c3": "2026-06-14T12:05:16.646669+00:00",
+    "e32723e39f9e": "2026-06-14T12:05:16.646669+00:00"
   },
   "live_clusters": {
-    "80b6bf99eca530cc": {
-      "topic": "Kristin Scott Thomas Slow Horses Diana Taverner Character Profile",
-      "item_ids": [
-        "4e80490dee0e"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f437aafc5ad87a34": {
-      "topic": "Kristin Scott Thomas Slow Horses Writing Directing Career",
-      "item_ids": [
-        "c819102ba023"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "44f2e9ae0c2360c6": {
-      "topic": "USMNT Balogun Player Performance Analysis",
-      "item_ids": [
-        "5f1372429ea5"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "84c0961a97c66c6e": {
-      "topic": "USMNT Player Ratings Balogun Pulisic",
-      "item_ids": [
-        "ed20a300da9f"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "573ef8e76c461efa": {
-      "topic": "Ancient Warrior Training Athletic Performance",
-      "item_ids": [
-        "136fe61aed12"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c21d3d48464e2445": {
-      "topic": "Chicago Cubs 2026 Season Analysis Problems",
-      "item_ids": [
-        "fa83a1deb848"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b451a956f5cdb371": {
-      "topic": "World Cup 2026 Brazil Fans NYC Takeover",
-      "item_ids": [
-        "bc5b4ef0b6d3",
-        "10fa92076acf"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "54d15acf979a1e95": {
-      "topic": "Dyson V16 V10 V8 Vacuum 2026 New Models",
-      "item_ids": [
-        "1232733cb0cb"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "514206d685534475": {
-      "topic": "Soccer Physics Ball Bending Mechanics Science",
-      "item_ids": [
-        "e9fb59add261"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0f3fd67adb41719d": {
-      "topic": "FCC Burner Phone Regulation Policy",
-      "item_ids": [
-        "016081c23e68"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7ce59ac6751a37b8": {
-      "topic": "EcoFlow PowerOcean Battery Home Energy Review",
-      "item_ids": [
-        "152aebc6304c"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f9757d3b17a97c52": {
-      "topic": "FBI Cyber Range Replica Town Training",
-      "item_ids": [
-        "6b8772b5ec86"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6670e6e1c3a58cb7": {
-      "topic": "Indie Games NBA Streetball Renewable Energy Crafting",
-      "item_ids": [
-        "465659d12e64"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ab421d94b2047de9": {
-      "topic": "Switzerland Population Cap Vote 10 Million",
-      "item_ids": [
-        "a6de8fdc0eee",
-        "2514b43a431a"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fa55df0e8190c8af": {
-      "topic": "Deep-Sea Species Discovery Photography Technology",
-      "item_ids": [
-        "db740963b677"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4ac91358c5272a51": {
-      "topic": "3D Printed Guns Regulation Law Policy",
-      "item_ids": [
-        "e644daf7375c",
-        "416805cbfcd9"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ec4fa56a20e4b6b3": {
-      "topic": "2026 NBA Mock Draft Michael Porter Jr Trade",
-      "item_ids": [
-        "2da89690e243",
-        "27b8c7a221f1",
-        "7d9c00b23da2",
-        "0e8d88a0f553"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-13T21:59:59.084305+00:00",
-      "picks_file": "picks/picks-2026-06-13-2200.md",
-      "why_text": "The 2026 NBA offseason is shaping up as one of the most chaotic in recent memory \u2014 Michael Porter Jr. trade speculation is circulating alongside Brooklyn and Sacramento potentially dealing before draft night, while international prospects are opting in and stars like Jaylen Brown and LeBron James are drawing multi-team interest. This is the rare moment when a draft, a trade market, and free agency all collide at once, compressing the league's entire power structure into a few weeks. Whoever moves fastest sets the hierarchy for the next half-decade.",
-      "last_escalated_item_ids": [
-        "2da89690e243",
-        "27b8c7a221f1",
-        "7d9c00b23da2",
-        "0e8d88a0f553"
-      ]
-    },
-    "58636240cb3b5a85": {
-      "topic": "Mitch Johnson Spurs NBA Finals Collapse Role",
-      "item_ids": [
-        "7c59f16db28c"
-      ],
-      "created_at": "2026-06-13T11:43:36.665351+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "31cc548bce568e8c": {
       "topic": "Jeffrey Dean Morgan The Walking Dead Dead City Season 3 Monte-Carlo TV Festival",
       "item_ids": [
@@ -730,7 +565,8 @@
     "7f25b840d4b0b16b": {
       "topic": "Warren Buffett Elon Musk Investment Philosophy Debate",
       "item_ids": [
-        "5d1d94b99763"
+        "5d1d94b99763",
+        "308839a3f4c2"
       ],
       "created_at": "2026-06-13T13:13:55.972250+00:00",
       "last_escalated_size": 0,
@@ -1032,11 +868,18 @@
         "c08a29fc7214",
         "bc77099f365e",
         "966c8055502d",
-        "1aaa49160b4a"
+        "1aaa49160b4a",
+        "b26fe88b5f59",
+        "e59f90b973e7",
+        "96aa3f947e44",
+        "237e8b29df2c",
+        "56f0b617a56f",
+        "1320fa23c3c4",
+        "0ab6c0fbd0ba"
       ],
       "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 33,
-      "last_escalated_at": "2026-06-14T09:59:50.020483+00:00",
+      "last_escalated_size": 40,
+      "last_escalated_at": "2026-06-14T12:05:16.646669+00:00",
       "picks_file": "picks/picks-2026-06-14-0138.md",
       "last_escalated_item_ids": [
         "018131d31b32",
@@ -1071,9 +914,16 @@
         "c08a29fc7214",
         "bc77099f365e",
         "966c8055502d",
-        "1aaa49160b4a"
+        "1aaa49160b4a",
+        "b26fe88b5f59",
+        "e59f90b973e7",
+        "96aa3f947e44",
+        "237e8b29df2c",
+        "56f0b617a56f",
+        "1320fa23c3c4",
+        "0ab6c0fbd0ba"
       ],
-      "why_text": "The New York Knicks are one win away from their first NBA championship since 1973 \u2014 a 52-year drought that has defined a generation of suffering for the league's most media-saturated fanbase. With the series shifting back to San Antonio for Game 5, the Spurs are fighting for survival while New York teeters on the edge of a cultural earthquake. A Knicks title wouldn't just be a sports moment \u2014 it would rewire the entire gravity of the NBA's cultural conversation, New York's civic identity, and the league's commercial landscape in one night.\n**Update 1:20 AM CT:** The cultural earthquake has arrived: the New York Knicks defeated the San Antonio Spurs in Game 5 to claim the 2026 NBA Championship, ending their 52-year title drought, with Spike Lee, Timoth\u00e9e Chalamet, and Ben Stiller celebrating courtside in San Antonio \u2014 Chalamet declaring he'd \"way rather this than the Oscars\" \u2014 while Victor Wembanyama addressed the loss in a postgame press conference that's already dominating discourse alongside the Knicks' euphoria.\n**Update 5:00 AM CT:** Manhattan has erupted into chaotic street celebrations \u2014 with at least one World Cup bus set alight \u2014 as fans pour into the streets following the Knicks' first championship in 53 years, while the story of how it happened is crystallizing around Jalen Brunson, who both started and finished New York's championship run as the undisputed cornerstone of the title."
+      "why_text": "The New York Knicks are one win away from their first NBA championship since 1973 \u2014 a 52-year drought that has defined a generation of suffering for the league's most media-saturated fanbase. With the series shifting back to San Antonio for Game 5, the Spurs are fighting for survival while New York teeters on the edge of a cultural earthquake. A Knicks title wouldn't just be a sports moment \u2014 it would rewire the entire gravity of the NBA's cultural conversation, New York's civic identity, and the league's commercial landscape in one night.\n**Update 1:20 AM CT:** The cultural earthquake has arrived: the New York Knicks defeated the San Antonio Spurs in Game 5 to claim the 2026 NBA Championship, ending their 52-year title drought, with Spike Lee, Timoth\u00e9e Chalamet, and Ben Stiller celebrating courtside in San Antonio \u2014 Chalamet declaring he'd \"way rather this than the Oscars\" \u2014 while Victor Wembanyama addressed the loss in a postgame press conference that's already dominating discourse alongside the Knicks' euphoria.\n**Update 5:00 AM CT:** Manhattan has erupted into chaotic street celebrations \u2014 with at least one World Cup bus set alight \u2014 as fans pour into the streets following the Knicks' first championship in 53 years, while the story of how it happened is crystallizing around Jalen Brunson, who both started and finished New York's championship run as the undisputed cornerstone of the title.\n**Update 7:05 AM CT:** The post-game analysis wave is now fully breaking: ESPN, the Times, and SI are dissecting how the Knicks actually built and executed a championship run, while Mike Breen \u2014 the voice of the Knicks and NBC's lead play-by-play caller \u2014 is trending as fans circulate his call of the final moments, and FMVP discourse has ignited on X with Jalen Brunson the near-unanimous choice for Finals MVP honors."
     },
     "f95b244e5f26a768": {
       "topic": "BMW Electric M3 Naming Strategy Announcement",
@@ -1234,7 +1084,8 @@
         "c805990724f3",
         "b6e68f056a3e",
         "29ff6b5daa37",
-        "321ccbab5314"
+        "321ccbab5314",
+        "019fe21b4f37"
       ],
       "created_at": "2026-06-13T20:51:57.404108+00:00",
       "last_escalated_size": 12,
@@ -1480,7 +1331,34 @@
       "created_at": "2026-06-14T10:00:25.400907+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "c3c70b8d1892c175": {
+      "topic": "Shanghai Film Festival International Festival Leadership Summit",
+      "item_ids": [
+        "b60af198452e"
+      ],
+      "created_at": "2026-06-14T12:05:47.009851+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d1a28cb94e6172e9": {
+      "topic": "Meta AI Model Acquisition Alexandr Wang Zuckerberg",
+      "item_ids": [
+        "e453a9f12034"
+      ],
+      "created_at": "2026-06-14T12:05:47.009851+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f4648f81d0815ec8": {
+      "topic": "Toy Story 5 Technology Innovation Nostalgia Balance",
+      "item_ids": [
+        "02faf572a425"
+      ],
+      "created_at": "2026-06-14T12:05:47.009851+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-14T10:00:40.504374+00:00"
+  "last_checked": "2026-06-14T12:05:51.786233+00:00"
 }
