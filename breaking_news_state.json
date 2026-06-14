@@ -1,30 +1,5 @@
 {
   "known_ids": [
-    "5abf96ff0ae9",
-    "fa187bbc1acc",
-    "b4d4f73af5f6",
-    "d1bba854ce63",
-    "5fa26af862c1",
-    "fc82a99a7de0",
-    "5d7be7e98d43",
-    "054a902146d0",
-    "8e16264f67e5",
-    "215c6b751be4",
-    "ead81c101920",
-    "f7ff8ab27f2b",
-    "177ad6665ba6",
-    "b52a2e159bfc",
-    "6e9cc34dd8c5",
-    "6ecf3c1bf9e9",
-    "ca97e9bcc7a2",
-    "7c10a2dc58dc",
-    "2651f3da0dbd",
-    "17e36596dd8e",
-    "f417df037c89",
-    "787739906e0b",
-    "bb23768f946b",
-    "2552dfd30541",
-    "7a808f0e51b3",
     "31b5b269c940",
     "b45742276fcb",
     "05a69a9b9e30",
@@ -499,28 +474,34 @@
     "f88ba4d13dc9",
     "657dbff5d43b",
     "1be7601f6233",
-    "20e44f33c535"
+    "20e44f33c535",
+    "065589c1877a",
+    "e938c52a14bc",
+    "9f23fa1e62c0",
+    "e86f8c5dfe2b",
+    "d00e715c4660",
+    "d325b7c76154",
+    "fcc85d34a225",
+    "ba7f12545c7f",
+    "21bb316591f0",
+    "15cb60e2ffc7",
+    "245d93f71414",
+    "f77714e1054b",
+    "1f740333e21a",
+    "66a6bb85ed00",
+    "4a44375ec18c",
+    "5f6953a0af51",
+    "a5094a0d7512",
+    "966c85131b2d",
+    "a152b5eb8b11",
+    "5f8cb833e508",
+    "5d3a32f34169",
+    "2b666d82bfbf",
+    "2c3ba871ddb7",
+    "9522f7f738f2",
+    "69ad246611d1"
   ],
   "failed_ids": {
-    "e869df129f64": "2026-06-14T12:05:16.646669+00:00",
-    "cccc74ced69d": "2026-06-14T12:05:16.646669+00:00",
-    "46d84346ccf5": "2026-06-14T12:05:16.646669+00:00",
-    "155d0f466fac": "2026-06-14T12:05:16.646669+00:00",
-    "53ec2501517a": "2026-06-14T12:05:16.646669+00:00",
-    "93bb2ba5d042": "2026-06-14T12:05:16.646669+00:00",
-    "d1351ccf7517": "2026-06-14T12:05:16.646669+00:00",
-    "8812e5d93b06": "2026-06-14T12:05:16.646669+00:00",
-    "33b93651de36": "2026-06-14T12:05:16.646669+00:00",
-    "3baf0cca4522": "2026-06-14T12:05:16.646669+00:00",
-    "95093fd82447": "2026-06-14T12:05:16.646669+00:00",
-    "953238d64493": "2026-06-14T12:05:16.646669+00:00",
-    "ea790a3add9a": "2026-06-14T12:05:16.646669+00:00",
-    "3fbccc2853f7": "2026-06-14T12:05:16.646669+00:00",
-    "f711c2fa6162": "2026-06-14T12:05:16.646669+00:00",
-    "a5ce5e259ef4": "2026-06-14T12:05:16.646669+00:00",
-    "d9dcd337934a": "2026-06-14T12:05:16.646669+00:00",
-    "ea00039086c3": "2026-06-14T12:05:16.646669+00:00",
-    "e32723e39f9e": "2026-06-14T12:05:16.646669+00:00",
     "9d54f6571b7d": "2026-06-14T14:24:41.743883+00:00",
     "90106a4ede80": "2026-06-14T14:24:41.743883+00:00",
     "4ad9bce19716": "2026-06-14T14:24:41.743883+00:00",
@@ -546,7 +527,21 @@
     "9ba96b33d37b": "2026-06-14T16:03:49.725179+00:00",
     "e5733c3d8443": "2026-06-14T16:03:49.725179+00:00",
     "61e2deede51c": "2026-06-14T16:03:49.725179+00:00",
-    "d8984031f442": "2026-06-14T16:03:49.725179+00:00"
+    "d8984031f442": "2026-06-14T16:03:49.725179+00:00",
+    "24b714a4e8bb": "2026-06-14T17:41:39.086107+00:00",
+    "a9aea4830a2b": "2026-06-14T17:41:39.086107+00:00",
+    "25101e064ed8": "2026-06-14T17:41:39.086107+00:00",
+    "42105d83db53": "2026-06-14T17:41:39.086107+00:00",
+    "014739ce7d6e": "2026-06-14T17:41:39.086107+00:00",
+    "f70e5f7905cb": "2026-06-14T17:41:39.086107+00:00",
+    "3944e2b68712": "2026-06-14T17:41:39.086107+00:00",
+    "927b9ba7d55c": "2026-06-14T17:41:39.086107+00:00",
+    "c822e1bcb4d3": "2026-06-14T17:41:39.086107+00:00",
+    "40e4e35fb607": "2026-06-14T17:41:39.086107+00:00",
+    "8ba027496bd3": "2026-06-14T17:41:39.086107+00:00",
+    "1fb6a23acb1c": "2026-06-14T17:41:39.086107+00:00",
+    "dcc701bc41aa": "2026-06-14T17:41:39.086107+00:00",
+    "6775ef4c8000": "2026-06-14T17:41:39.086107+00:00"
   },
   "live_clusters": {
     "ce366645163c43a0": {
@@ -702,13 +697,18 @@
         "019fe21b4f37",
         "42759ad3a797",
         "77dfa7fd0e12",
-        "510a313d8780"
+        "510a313d8780",
+        "966c85131b2d",
+        "a152b5eb8b11",
+        "5f8cb833e508",
+        "5d3a32f34169",
+        "2b666d82bfbf"
       ],
       "created_at": "2026-06-13T20:51:57.404108+00:00",
-      "last_escalated_size": 16,
-      "last_escalated_at": "2026-06-14T14:24:41.743883+00:00",
+      "last_escalated_size": 21,
+      "last_escalated_at": "2026-06-14T17:41:39.086107+00:00",
       "picks_file": "picks/picks-2026-06-13-2051.md",
-      "why_text": "At the six-hour mark of Le Mans, the No. 38 JOTA Cadillac has seized control after the pole-sitting BMW \u2014 widely seen as a genuine title contender this year \u2014 hit serious trouble, reshuffling the Hypercar order dramatically. This is a big moment for Cadillac's endurance racing credibility and a gut-punch for BMW's Le Mans ambitions, which had been building real momentum. With Toyota still lurking, the race is wide open and the next 18 hours are going to be brutal.\n**Update 5:00 PM CT:** BMW has hit back hard: the No. 20 machine has cycled to the front as Hour 7 gets underway and night running begins, suggesting the earlier trouble may have been resolved \u2014 or that strategy and pit sequencing have reshuffled the order once again in BMW's favor.\n**Update 5:00 AM CT:** **Update [Hour 18]:** BMW has reclaimed the lead as a Porsche crash brings out the safety car, compressing the field and setting up a knife-edge final six hours \u2014 with Cadillac right on their heels, the closing stint is shaping up to be a straight fight between the two manufacturers.\n**Update 9:25 AM CT:** **Update [Hour 24 \u2014 FINAL]:** Toyota has won the 2026 24 Hours of Le Mans, outlasting BMW and Cadillac to claim the manufacturer's sixth overall victory at La Sarthe and first in four years \u2014 a stunning late-race result that denies BMW what would have been a landmark win after leading deep into the final stint.",
+      "why_text": "At the six-hour mark of Le Mans, the No. 38 JOTA Cadillac has seized control after the pole-sitting BMW \u2014 widely seen as a genuine title contender this year \u2014 hit serious trouble, reshuffling the Hypercar order dramatically. This is a big moment for Cadillac's endurance racing credibility and a gut-punch for BMW's Le Mans ambitions, which had been building real momentum. With Toyota still lurking, the race is wide open and the next 18 hours are going to be brutal.\n**Update 5:00 PM CT:** BMW has hit back hard: the No. 20 machine has cycled to the front as Hour 7 gets underway and night running begins, suggesting the earlier trouble may have been resolved \u2014 or that strategy and pit sequencing have reshuffled the order once again in BMW's favor.\n**Update 5:00 AM CT:** **Update [Hour 18]:** BMW has reclaimed the lead as a Porsche crash brings out the safety car, compressing the field and setting up a knife-edge final six hours \u2014 with Cadillac right on their heels, the closing stint is shaping up to be a straight fight between the two manufacturers.\n**Update 9:25 AM CT:** **Update [Hour 24 \u2014 FINAL]:** Toyota has won the 2026 24 Hours of Le Mans, outlasting BMW and Cadillac to claim the manufacturer's sixth overall victory at La Sarthe and first in four years \u2014 a stunning late-race result that denies BMW what would have been a landmark win after leading deep into the final stint.\n**Update 12:42 PM CT:** BMW Team WRT has broken their silence on the defeat, describing the final safety car period as 'painful' \u2014 the implication being that the late-race neutralization robbed them of the pace advantage they needed to hold off Toyota in the closing laps, making this a loss that will sting long after Le Mans.",
       "last_escalated_item_ids": [
         "9bf24a184077",
         "96d06eac8a2d",
@@ -725,7 +725,12 @@
         "019fe21b4f37",
         "42759ad3a797",
         "77dfa7fd0e12",
-        "510a313d8780"
+        "510a313d8780",
+        "966c85131b2d",
+        "a152b5eb8b11",
+        "5f8cb833e508",
+        "5d3a32f34169",
+        "2b666d82bfbf"
       ]
     },
     "1883b2f9c710bd5a": {
@@ -749,7 +754,8 @@
     "c702f16b6f7c8dbb": {
       "topic": "Elon Musk Trending Topic",
       "item_ids": [
-        "1c9447fc6814"
+        "1c9447fc6814",
+        "a5094a0d7512"
       ],
       "created_at": "2026-06-13T20:51:57.404108+00:00",
       "last_escalated_size": 0,
@@ -866,7 +872,8 @@
     "f51e6e8e90ca8723": {
       "topic": "'Michael' Biopic Box Office Record Bohemian Rhapsody",
       "item_ids": [
-        "83b11cf2f807"
+        "83b11cf2f807",
+        "e86f8c5dfe2b"
       ],
       "created_at": "2026-06-14T06:20:06.486185+00:00",
       "last_escalated_size": 0,
@@ -956,7 +963,8 @@
     "c3c70b8d1892c175": {
       "topic": "Shanghai Film Festival International Festival Leadership Summit",
       "item_ids": [
-        "b60af198452e"
+        "b60af198452e",
+        "9f23fa1e62c0"
       ],
       "created_at": "2026-06-14T12:05:47.009851+00:00",
       "last_escalated_size": 0,
@@ -1109,7 +1117,8 @@
     "3d98b95ab600fb4d": {
       "topic": "Spielberg's 'Disclosure Day' Box Office Opening Weekend",
       "item_ids": [
-        "7b56da6321e7"
+        "7b56da6321e7",
+        "e938c52a14bc"
       ],
       "created_at": "2026-06-14T16:04:24.719163+00:00",
       "last_escalated_size": 0,
@@ -1199,11 +1208,23 @@
     "ff7ecd385b4922a0": {
       "topic": "New York Knicks NBA Championship Celebration",
       "item_ids": [
-        "29e1162c0a40"
+        "29e1162c0a40",
+        "f77714e1054b",
+        "1f740333e21a",
+        "66a6bb85ed00",
+        "4a44375ec18c"
       ],
       "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 5,
+      "last_escalated_at": "2026-06-14T17:41:39.086107+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "29e1162c0a40",
+        "f77714e1054b",
+        "1f740333e21a",
+        "66a6bb85ed00",
+        "4a44375ec18c"
+      ]
     },
     "36c2b02995a839c5": {
       "topic": "Apple iOS 27 Unreleased Features Pipeline",
@@ -1253,12 +1274,84 @@
     "8d03660ff48aa5be": {
       "topic": "Jalen Brunson Defends Monica McNutt Taylor Swift",
       "item_ids": [
-        "2d6d6129e329"
+        "2d6d6129e329",
+        "d00e715c4660",
+        "245d93f71414"
       ],
       "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-14T17:41:39.086107+00:00",
+      "picks_file": "picks/picks-2026-06-14-1742.md",
+      "why_text": "ESPN analyst Monica McNutt drew online heat for comments touching on Taylor Swift's cultural footprint around the NBA Finals, and freshly-minted Finals MVP Jalen Brunson used his platform moment to publicly back her \u2014 telling critics to cut her some slack. It's a notable move because athletes almost never wade into media-critic pile-ons, especially during the glow of a championship run. Brunson choosing this fight signals both his comfort with his own cultural standing and a broader tension in sports media between traditional analysis and the Taylor Swift-ification of the NBA's fanbase.",
+      "last_escalated_item_ids": [
+        "2d6d6129e329",
+        "d00e715c4660",
+        "245d93f71414"
+      ]
+    },
+    "a10007e2b55f8214": {
+      "topic": "Gay Dating Show Darren Kennedy Sue Kinkead Launch",
+      "item_ids": [
+        "065589c1877a"
+      ],
+      "created_at": "2026-06-14T17:42:13.025751+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "26b7260cf1115c78": {
+      "topic": "Obsession Curry Barker Film Box Office Milestone",
+      "item_ids": [
+        "d325b7c76154"
+      ],
+      "created_at": "2026-06-14T17:42:13.025751+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b7a16ee7589c9849": {
+      "topic": "Spielberg Scrapped Porgy and Bess Colman Domingo Film",
+      "item_ids": [
+        "fcc85d34a225"
+      ],
+      "created_at": "2026-06-14T17:42:13.025751+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "be8107594ba16d5b": {
+      "topic": "AI Companies IPO Race Tech Investment",
+      "item_ids": [
+        "ba7f12545c7f"
+      ],
+      "created_at": "2026-06-14T17:42:13.025751+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5e57e889f77bf279": {
+      "topic": "Europe Siri AI Assistant Regulatory Constraints",
+      "item_ids": [
+        "21bb316591f0"
+      ],
+      "created_at": "2026-06-14T17:42:13.025751+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6503ae87430dc43c": {
+      "topic": "Nike Plush Sneaker Release",
+      "item_ids": [
+        "15cb60e2ffc7"
+      ],
+      "created_at": "2026-06-14T17:42:13.025751+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63b9876b1997b233": {
+      "topic": "Creator Economy Stay-at-Home Mom Business Success",
+      "item_ids": [
+        "5f6953a0af51"
+      ],
+      "created_at": "2026-06-14T17:42:13.025751+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-14T16:04:24.720501+00:00"
+  "last_checked": "2026-06-14T17:42:23.830028+00:00"
 }
