@@ -1,29 +1,5 @@
 {
   "known_ids": [
-    "0629a886df46",
-    "01da799d7a12",
-    "4ab8fa37ddee",
-    "c8c82c7622f1",
-    "76dc158a8a19",
-    "cd3421039c96",
-    "2cf93488a2a1",
-    "2c4d95dff3e1",
-    "58d512a69028",
-    "8be30becc8ab",
-    "f75b6507ad00",
-    "ee4a6bfff501",
-    "34256ef7edb5",
-    "82896f917487",
-    "43063307c76e",
-    "275880cf08b6",
-    "3b0353fc9d38",
-    "e077edc2e582",
-    "1822fb8186fc",
-    "95a37e4086bc",
-    "7ecbf75f2924",
-    "34221deeb743",
-    "d0a0a1033c48",
-    "36a08b21f0f8",
     "5abf96ff0ae9",
     "fa187bbc1acc",
     "b4d4f73af5f6",
@@ -499,7 +475,31 @@
     "538a8c4ee044",
     "f9efc893ec4c",
     "fbf307ff26b8",
-    "449bdf5592f2"
+    "449bdf5592f2",
+    "b1e12b7ce31d",
+    "dee8c47929f8",
+    "7b56da6321e7",
+    "a6db8ae39730",
+    "6ae80578c346",
+    "ccc96f3dd8ee",
+    "0305bc031b25",
+    "82540a23add5",
+    "ca6d5b9d6cf4",
+    "ccb3f1cb2090",
+    "d2073287cc91",
+    "15cb68062e4b",
+    "29e1162c0a40",
+    "8b05340a9995",
+    "71b870b0faa8",
+    "5153ac8c1efb",
+    "e90b93333e46",
+    "116bd86fadce",
+    "2d6d6129e329",
+    "fac8daa19163",
+    "f88ba4d13dc9",
+    "657dbff5d43b",
+    "1be7601f6233",
+    "20e44f33c535"
   ],
   "failed_ids": {
     "e869df129f64": "2026-06-14T12:05:16.646669+00:00",
@@ -531,246 +531,24 @@
     "bf7f7e4378b2": "2026-06-14T14:24:41.743883+00:00",
     "3f036565e2d0": "2026-06-14T14:24:41.743883+00:00",
     "e292972c73ce": "2026-06-14T14:24:41.743883+00:00",
-    "fcca42357bf1": "2026-06-14T14:24:41.743883+00:00"
+    "fcca42357bf1": "2026-06-14T14:24:41.743883+00:00",
+    "de2164b5ff75": "2026-06-14T16:03:49.725179+00:00",
+    "a4b8df5b8cbf": "2026-06-14T16:03:49.725179+00:00",
+    "feee9090baab": "2026-06-14T16:03:49.725179+00:00",
+    "a796ede374ec": "2026-06-14T16:03:49.725179+00:00",
+    "15ce0cec4467": "2026-06-14T16:03:49.725179+00:00",
+    "5ab12589f5a2": "2026-06-14T16:03:49.725179+00:00",
+    "e7f53e562fdf": "2026-06-14T16:03:49.725179+00:00",
+    "c83269aeacf5": "2026-06-14T16:03:49.725179+00:00",
+    "1af633814ac6": "2026-06-14T16:03:49.725179+00:00",
+    "7cde070499ca": "2026-06-14T16:03:49.725179+00:00",
+    "43c3140369f1": "2026-06-14T16:03:49.725179+00:00",
+    "9ba96b33d37b": "2026-06-14T16:03:49.725179+00:00",
+    "e5733c3d8443": "2026-06-14T16:03:49.725179+00:00",
+    "61e2deede51c": "2026-06-14T16:03:49.725179+00:00",
+    "d8984031f442": "2026-06-14T16:03:49.725179+00:00"
   },
   "live_clusters": {
-    "1acc246f622156d0": {
-      "topic": "'Obsession' Film Box Office Success and Industry Analysis",
-      "item_ids": [
-        "e4551e43eb57",
-        "6977f513d6a6"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "33dc8604afc4668e": {
-      "topic": "Tommy Fury vs Eddie Hall Boxing Pay-Per-View Event",
-      "item_ids": [
-        "8f9c8435eea4"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bd8d473c15cae103": {
-      "topic": "Anna Faris Scary Movie Anxiety Career Interview",
-      "item_ids": [
-        "db29f653f0c1"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5cd7c68a2b3b2d63": {
-      "topic": "Snow Tha Product City Honor ICE Raids Advocacy",
-      "item_ids": [
-        "6b891ea31011"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5bef5917356a57a2": {
-      "topic": "Fat Joe Summer Hit Knicks Victory Soundtrack",
-      "item_ids": [
-        "e869b8be012e"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d8c882b1407750ab": {
-      "topic": "Steven Spielberg Disclosure Day Box Office Opening",
-      "item_ids": [
-        "fb393751b764"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f26b45dc2d1d010f": {
-      "topic": "New York Knicks NBA Finals Title Run WFAN Radio Signal",
-      "item_ids": [
-        "0129ce3239b1"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9443c4b5b8127df8": {
-      "topic": "Amazomania Documentary Uncontacted Indigenous Tribes DC/DOX",
-      "item_ids": [
-        "572206b10aed"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b7e30cce80d73a88": {
-      "topic": "Michael Olise Highsnobiety Profile",
-      "item_ids": [
-        "f9d9c24cab75"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5726b4cba24dab1e": {
-      "topic": "Vans Portrait Slip-on Sneaker Release",
-      "item_ids": [
-        "3ecc50124624"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d663eb7bf8df2ab6": {
-      "topic": "NBA Finals 3-Pointer Strategy Spurs Championship Analysis",
-      "item_ids": [
-        "09b52e02a0ab"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9f2868323b9d8f4a": {
-      "topic": "Josh Hart Wife Shannon NBA Finals Free Throw Anxiety",
-      "item_ids": [
-        "20c628975d6a"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "01d190c7ee30f5c1": {
-      "topic": "NBA Finals Game 5 Knicks vs Spurs Betting Picks",
-      "item_ids": [
-        "018131d31b32",
-        "37fecc42816e",
-        "dd48b8508387",
-        "3fbdcc20616b",
-        "81fb3cec4438",
-        "af08e2e8911f",
-        "77e40c1fe33a",
-        "605ec48c7a1d",
-        "d6e6eef561db",
-        "40ccad581987",
-        "37f5c7bcf38d",
-        "4b0aea9adf00",
-        "3aa72cbf412a",
-        "f02e37cffd82",
-        "8c5713ffdb8f",
-        "44c49ca09192",
-        "406002b85599",
-        "bd31d6045f4d",
-        "dec806cccc58",
-        "833e848be704",
-        "f967068641dc",
-        "d4640beed4fb",
-        "2589f95e2ff0",
-        "747ec6b1543a",
-        "1293f65b1532",
-        "ba89f6108e68",
-        "2d956e8b3fcc",
-        "7e3a362e97d1",
-        "337b5fcc9f12",
-        "c08a29fc7214",
-        "bc77099f365e",
-        "966c8055502d",
-        "1aaa49160b4a",
-        "b26fe88b5f59",
-        "e59f90b973e7",
-        "96aa3f947e44",
-        "237e8b29df2c",
-        "56f0b617a56f",
-        "1320fa23c3c4",
-        "0ab6c0fbd0ba",
-        "99900b7d12a2",
-        "f613f871c2a3",
-        "cbc50238cdab",
-        "442e8630e1c6",
-        "0382f15a4154",
-        "ead66831fcde",
-        "538a8c4ee044",
-        "f9efc893ec4c",
-        "fbf307ff26b8"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 49,
-      "last_escalated_at": "2026-06-14T14:24:41.743883+00:00",
-      "picks_file": "picks/picks-2026-06-14-0138.md",
-      "last_escalated_item_ids": [
-        "018131d31b32",
-        "37fecc42816e",
-        "dd48b8508387",
-        "3fbdcc20616b",
-        "81fb3cec4438",
-        "af08e2e8911f",
-        "77e40c1fe33a",
-        "605ec48c7a1d",
-        "d6e6eef561db",
-        "40ccad581987",
-        "37f5c7bcf38d",
-        "4b0aea9adf00",
-        "3aa72cbf412a",
-        "f02e37cffd82",
-        "8c5713ffdb8f",
-        "44c49ca09192",
-        "406002b85599",
-        "bd31d6045f4d",
-        "dec806cccc58",
-        "833e848be704",
-        "f967068641dc",
-        "d4640beed4fb",
-        "2589f95e2ff0",
-        "747ec6b1543a",
-        "1293f65b1532",
-        "ba89f6108e68",
-        "2d956e8b3fcc",
-        "7e3a362e97d1",
-        "337b5fcc9f12",
-        "c08a29fc7214",
-        "bc77099f365e",
-        "966c8055502d",
-        "1aaa49160b4a",
-        "b26fe88b5f59",
-        "e59f90b973e7",
-        "96aa3f947e44",
-        "237e8b29df2c",
-        "56f0b617a56f",
-        "1320fa23c3c4",
-        "0ab6c0fbd0ba",
-        "99900b7d12a2",
-        "f613f871c2a3",
-        "cbc50238cdab",
-        "442e8630e1c6",
-        "0382f15a4154",
-        "ead66831fcde",
-        "538a8c4ee044",
-        "f9efc893ec4c",
-        "fbf307ff26b8"
-      ],
-      "why_text": "The New York Knicks are one win away from their first NBA championship since 1973 \u2014 a 52-year drought that has defined a generation of suffering for the league's most media-saturated fanbase. With the series shifting back to San Antonio for Game 5, the Spurs are fighting for survival while New York teeters on the edge of a cultural earthquake. A Knicks title wouldn't just be a sports moment \u2014 it would rewire the entire gravity of the NBA's cultural conversation, New York's civic identity, and the league's commercial landscape in one night.\n**Update 1:20 AM CT:** The cultural earthquake has arrived: the New York Knicks defeated the San Antonio Spurs in Game 5 to claim the 2026 NBA Championship, ending their 52-year title drought, with Spike Lee, Timoth\u00e9e Chalamet, and Ben Stiller celebrating courtside in San Antonio \u2014 Chalamet declaring he'd \"way rather this than the Oscars\" \u2014 while Victor Wembanyama addressed the loss in a postgame press conference that's already dominating discourse alongside the Knicks' euphoria.\n**Update 5:00 AM CT:** Manhattan has erupted into chaotic street celebrations \u2014 with at least one World Cup bus set alight \u2014 as fans pour into the streets following the Knicks' first championship in 53 years, while the story of how it happened is crystallizing around Jalen Brunson, who both started and finished New York's championship run as the undisputed cornerstone of the title.\n**Update 7:05 AM CT:** The post-game analysis wave is now fully breaking: ESPN, the Times, and SI are dissecting how the Knicks actually built and executed a championship run, while Mike Breen \u2014 the voice of the Knicks and NBC's lead play-by-play caller \u2014 is trending as fans circulate his call of the final moments, and FMVP discourse has ignited on X with Jalen Brunson the near-unanimous choice for Finals MVP honors.\n**Update 9:25 AM CT:** The celebration's dark edge is now in focus: NYPD arrested at least 63 people and reported 4 stabbings and 1 shooting amid the Manhattan street chaos, while Victor Wembanyama is drawing attention for defiantly claiming the Spurs 'dominated' the Knicks despite losing the series \u2014 a postgame take that's fueling its own discourse thread alongside the city's euphoria."
-    },
-    "f95b244e5f26a768": {
-      "topic": "BMW Electric M3 Naming Strategy Announcement",
-      "item_ids": [
-        "5b57604bd20f",
-        "7da98b5cb012",
-        "0498004c8c78"
-      ],
-      "created_at": "2026-06-13T15:12:56.067040+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-13T23:15:03.225061+00:00",
-      "picks_file": "picks/picks-2026-06-13-2315.md",
-      "why_text": "BMW is facing the same identity crisis every legacy performance brand is wrestling with: how do you sell an electric car to people who bought into the myth of combustion? Ferrari's approach \u2014 preserving iconic model names and emotional heritage rather than rebranding everything with an 'e' prefix \u2014 is becoming the playbook, and BMW adopting it signals the industry is quietly admitting that EV rebrandsstripped too much soul. This is as much a marketing psychology story as it is a car story: performance culture runs on narrative, and the M3 name carries decades of it.",
-      "last_escalated_item_ids": [
-        "5b57604bd20f",
-        "7da98b5cb012",
-        "0498004c8c78"
-      ]
-    },
     "ce366645163c43a0": {
       "topic": "Nike Zoom Skylon 11 Black White Release",
       "item_ids": [
@@ -1309,7 +1087,178 @@
       "created_at": "2026-06-14T14:25:10.692511+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "6854cdd6fe3b13a2": {
+      "topic": "Jordan 5 'Black Carolina' Nike Weekly Sneaker Releases",
+      "item_ids": [
+        "b1e12b7ce31d"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4e709a1374e526f9": {
+      "topic": "Grantchester Final Season Preview",
+      "item_ids": [
+        "dee8c47929f8"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3d98b95ab600fb4d": {
+      "topic": "Spielberg's 'Disclosure Day' Box Office Opening Weekend",
+      "item_ids": [
+        "7b56da6321e7"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5ac6c66fb7f67217": {
+      "topic": "Pacha New York Club Opening Travis Scott",
+      "item_ids": [
+        "a6db8ae39730"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a453ace57027b937": {
+      "topic": "UFC Freedom 250 Topuria vs Gaethje Live Coverage",
+      "item_ids": [
+        "6ae80578c346"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c6fa4cc7a90e5fc8": {
+      "topic": "Documentary Magic Trick Theft Thriller",
+      "item_ids": [
+        "ccc96f3dd8ee"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6782cfeaf8bf8be0": {
+      "topic": "Yahya Abdul-Mateen II Wonder Man Character Interview",
+      "item_ids": [
+        "0305bc031b25"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5176518297555bc5": {
+      "topic": "Taormina 2026 Film Festival Turkish Drama 'Hear The Yellow' Winner",
+      "item_ids": [
+        "82540a23add5"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0ba4e975f9f59753": {
+      "topic": "NBA Way-Too-Early Power Rankings",
+      "item_ids": [
+        "ca6d5b9d6cf4"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9d3af9dc9c32f080": {
+      "topic": "NBA Offseason Draft Free Agency Guides",
+      "item_ids": [
+        "ccb3f1cb2090"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5897eb7164e804c4": {
+      "topic": "Victor Wembanyama Finals Loss Life Lesson",
+      "item_ids": [
+        "d2073287cc91"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c792bf321e9532b1": {
+      "topic": "Hamilton Ferrari First Victory Podium",
+      "item_ids": [
+        "15cb68062e4b"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ff7ecd385b4922a0": {
+      "topic": "New York Knicks NBA Championship Celebration",
+      "item_ids": [
+        "29e1162c0a40"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "36c2b02995a839c5": {
+      "topic": "Apple iOS 27 Unreleased Features Pipeline",
+      "item_ids": [
+        "8b05340a9995"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d1362895e7db2794": {
+      "topic": "Knicks Championship 2027 NBA Title Odds",
+      "item_ids": [
+        "71b870b0faa8"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7a826dac39df5d01": {
+      "topic": "Jalen Brunson Texas Taxes New York Cost Living",
+      "item_ids": [
+        "5153ac8c1efb"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "73ea127b9b6b5c6d": {
+      "topic": "Dillon Jones Thunder Knicks Championship Rings",
+      "item_ids": [
+        "e90b93333e46"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1d19bc5794bb76a8": {
+      "topic": "Kevin McCullar Kansas Jayhawks NBA Championship",
+      "item_ids": [
+        "116bd86fadce"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8d03660ff48aa5be": {
+      "topic": "Jalen Brunson Defends Monica McNutt Taylor Swift",
+      "item_ids": [
+        "2d6d6129e329"
+      ],
+      "created_at": "2026-06-14T16:04:24.719163+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-14T14:25:30.034875+00:00"
+  "last_checked": "2026-06-14T16:04:24.720501+00:00"
 }
