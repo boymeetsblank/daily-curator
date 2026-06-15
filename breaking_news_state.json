@@ -1,24 +1,5 @@
 {
   "known_ids": [
-    "8f36d10d89d8",
-    "c974f46fd8fc",
-    "176ea34eeab0",
-    "0d55f96fbe79",
-    "e2a9cd6df62c",
-    "720bc167b31d",
-    "460445be3c55",
-    "048b51f267f9",
-    "6c9cdaeff91c",
-    "431c662c593d",
-    "afba49b904fa",
-    "8dd3a2f5e2e4",
-    "e7f26c0044c3",
-    "debd8a7ac5d0",
-    "b322e813452a",
-    "149b925647d1",
-    "82878a0de40b",
-    "8ac979851099",
-    "77db7c76f172",
     "9a491695a596",
     "4dd90777369a",
     "7fa2eeeb6fa0",
@@ -499,96 +480,50 @@
     "28e3e64f4394",
     "ee206c5b1474",
     "c8002726c872",
-    "d4a97916a12e"
+    "d4a97916a12e",
+    "08de82274e0a",
+    "e24b07a51501",
+    "0014f8b16653",
+    "8e787b263eda",
+    "b1875a7d7915",
+    "1a45762b6976",
+    "e849846b8367",
+    "f5939aa6e6f2",
+    "ce68703137c8",
+    "700dd1862b5e",
+    "12bf91db29c7",
+    "e766ca445cc1",
+    "770c219c4246",
+    "a18cc61d5f83",
+    "42b05cee01e8",
+    "4e5cb82ccfc3",
+    "d198eded52c5",
+    "07d6953a192d",
+    "2c6d426c37c8"
   ],
   "failed_ids": {
-    "32d42f0a69b5": "2026-06-14T21:56:33.697109+00:00",
-    "8e2ee6abb79f": "2026-06-14T21:56:33.697109+00:00",
-    "753a8fc241f2": "2026-06-14T21:56:33.697109+00:00",
-    "f2a8053f7a60": "2026-06-14T21:56:33.697109+00:00",
-    "bfb360ebac64": "2026-06-14T21:56:33.697109+00:00",
-    "11478968ca8a": "2026-06-14T21:56:33.697109+00:00",
-    "019c6c346a15": "2026-06-14T21:56:33.697109+00:00",
-    "9b9eb7b5de6a": "2026-06-14T21:56:33.697109+00:00",
-    "295a322309f5": "2026-06-14T21:56:33.697109+00:00",
-    "5733e501c36a": "2026-06-14T21:56:33.697109+00:00",
-    "48efea78a34d": "2026-06-14T21:56:33.697109+00:00",
-    "b27a6494190f": "2026-06-14T21:56:33.697109+00:00",
-    "924f143978b3": "2026-06-14T21:56:33.697109+00:00",
-    "89ec1df148b8": "2026-06-14T21:56:33.697109+00:00",
-    "6775ef4c8000": "2026-06-14T21:56:33.697109+00:00",
-    "ac4ae14ed3d0": "2026-06-14T21:56:33.697109+00:00",
-    "78118df1a541": "2026-06-14T23:09:07.017992+00:00",
-    "46d84346ccf5": "2026-06-14T23:09:07.017992+00:00",
-    "6d8e77f255ac": "2026-06-14T23:09:07.017992+00:00",
-    "9f2c85ee0938": "2026-06-14T23:09:07.017992+00:00",
-    "317cf8f77241": "2026-06-14T23:09:07.017992+00:00",
-    "d9557cbe94d5": "2026-06-14T23:09:07.017992+00:00",
-    "ef5295139271": "2026-06-14T23:09:07.017992+00:00",
-    "673bcac52243": "2026-06-14T23:09:07.017992+00:00",
-    "581c9e29c2cc": "2026-06-14T23:09:07.017992+00:00",
-    "c3321e0847fe": "2026-06-14T23:09:07.017992+00:00",
-    "b4e9eab04724": "2026-06-14T23:09:07.017992+00:00",
-    "b43950e20419": "2026-06-14T23:09:07.017992+00:00",
-    "540ab4877b78": "2026-06-15T01:40:14.815414+00:00",
-    "614e6a0e476c": "2026-06-15T01:40:14.815414+00:00",
-    "431db32c132f": "2026-06-15T01:40:14.815414+00:00",
-    "a0b376d5e320": "2026-06-15T01:40:14.815414+00:00",
-    "62eaa9de6842": "2026-06-15T01:40:14.815414+00:00",
-    "1a7d4d5e97ad": "2026-06-15T01:40:14.815414+00:00",
-    "69a96ff921a6": "2026-06-15T01:40:14.815414+00:00",
-    "84e9b0380cd7": "2026-06-15T01:40:14.815414+00:00",
-    "81f56ab94ce6": "2026-06-15T01:40:14.815414+00:00",
-    "ad22f68c0093": "2026-06-15T01:40:14.815414+00:00",
-    "1af633814ac6": "2026-06-15T01:40:14.815414+00:00",
-    "e0c0c4f09520": "2026-06-15T01:40:14.815414+00:00",
-    "7ffe670be21a": "2026-06-15T01:40:14.815414+00:00",
-    "a0f0aa8ba0cd": "2026-06-15T01:40:14.815414+00:00",
-    "cf2813cd4639": "2026-06-15T01:40:14.815414+00:00",
-    "55e5508093f0": "2026-06-15T01:40:14.815414+00:00",
-    "fb21f806ae61": "2026-06-15T01:40:14.815414+00:00",
-    "b917357d167e": "2026-06-15T01:40:14.815414+00:00",
-    "de340d1221bf": "2026-06-15T01:40:14.815414+00:00",
-    "14231f032e4c": "2026-06-15T01:40:14.815414+00:00",
-    "5cb4da789c48": "2026-06-15T01:40:14.815414+00:00"
+    "bfb360ebac64": "2026-06-15T07:00:51.271705+00:00",
+    "3dc750c165a6": "2026-06-15T07:00:51.271705+00:00",
+    "540ab4877b78": "2026-06-15T07:00:51.271705+00:00",
+    "8aa944a5dba8": "2026-06-15T07:00:51.271705+00:00",
+    "f6501028baba": "2026-06-15T07:00:51.271705+00:00",
+    "87e371812cd9": "2026-06-15T07:00:51.271705+00:00",
+    "00f41cbf8ba0": "2026-06-15T07:00:51.271705+00:00",
+    "366f61bb2bbe": "2026-06-15T07:00:51.271705+00:00",
+    "a03356304396": "2026-06-15T07:00:51.271705+00:00",
+    "1a200923b2c3": "2026-06-15T07:00:51.271705+00:00",
+    "1dd8d07f0767": "2026-06-15T07:00:51.271705+00:00",
+    "d4e4fca15e0b": "2026-06-15T07:00:51.271705+00:00",
+    "c4003faff4eb": "2026-06-15T07:00:51.271705+00:00",
+    "a90b39b786a2": "2026-06-15T07:00:51.271705+00:00",
+    "ef5295139271": "2026-06-15T07:00:51.271705+00:00",
+    "e930082801e1": "2026-06-15T07:00:51.271705+00:00",
+    "2aa697879d55": "2026-06-15T07:00:51.271705+00:00",
+    "4c744db111cd": "2026-06-15T07:00:51.271705+00:00",
+    "dc591b0e3b4c": "2026-06-15T07:00:51.271705+00:00",
+    "e2f4b7c60bd5": "2026-06-15T07:00:51.271705+00:00"
   },
   "live_clusters": {
-    "f51e6e8e90ca8723": {
-      "topic": "'Michael' Biopic Box Office Record Bohemian Rhapsody",
-      "item_ids": [
-        "83b11cf2f807",
-        "e86f8c5dfe2b",
-        "bd2acafd1b79"
-      ],
-      "created_at": "2026-06-14T06:20:06.486185+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-14T21:56:33.697109+00:00",
-      "picks_file": "picks/picks-2026-06-14-2157.md",
-      "why_text": "The Michael Jackson biopic has just cleared the bar set by 'Bohemian Rhapsody' \u2014 a film that itself redefined what a music biopic could do commercially \u2014 proving that Jackson's cultural gravitational pull remains almost impossible to match at the box office. This lands at a complicated cultural moment: the film was made with the estate's full cooperation and stars Jackson's own nephew, meaning it was engineered partly as a legacy rehabilitation project, and audiences are showing up anyway. It's a referendum on whether fandom ultimately outlasts controversy, and right now, fandom is winning.",
-      "last_escalated_item_ids": [
-        "83b11cf2f807",
-        "e86f8c5dfe2b",
-        "bd2acafd1b79"
-      ]
-    },
-    "cf4b39cd3d138a70": {
-      "topic": "Tullamarines Fleetwood Mac Cover Like A Version",
-      "item_ids": [
-        "048daae5b97c"
-      ],
-      "created_at": "2026-06-14T06:20:06.486185+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6df0705e21ce1b1c": {
-      "topic": "Vans Artistic Sneaker Basketball Release",
-      "item_ids": [
-        "81b8ce8bafea"
-      ],
-      "created_at": "2026-06-14T06:20:06.486185+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "d75b8318df6699e4": {
       "topic": "Honor Arri Robot Phone Shanghai Film Festival Debut",
       "item_ids": [
@@ -836,11 +771,23 @@
       "topic": "UFC Freedom 250 Topuria vs Gaethje Live Coverage",
       "item_ids": [
         "6ae80578c346",
-        "93c6b6006d22"
+        "93c6b6006d22",
+        "e849846b8367",
+        "f5939aa6e6f2",
+        "d198eded52c5"
       ],
       "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 5,
+      "last_escalated_at": "2026-06-15T07:00:51.271705+00:00",
+      "picks_file": "picks/picks-2026-06-15-0701.md",
+      "why_text": "UFC Freedom 250 was already a marquee event with Ilia Topuria defending his lightweight title against Justin Gaethje, but the surrounding chaos \u2014 Sean Strickland getting pulled from the card and a White House connection trending on X \u2014 has turned it into something bigger than a fight night. The #UFCWhiteHouse trend signals the kind of political-sports crossover that's become a signature of the Trump era, where combat sports have become a soft-power flex. Even Jimmy Fallon riffing on the Knicks mid-UFC weekend shows how completely this event has saturated the cultural conversation across sports and entertainment.",
+      "last_escalated_item_ids": [
+        "6ae80578c346",
+        "93c6b6006d22",
+        "e849846b8367",
+        "f5939aa6e6f2",
+        "d198eded52c5"
+      ]
     },
     "c6fa4cc7a90e5fc8": {
       "topic": "Documentary Magic Trick Theft Thriller",
@@ -935,11 +882,17 @@
         "95ecfaf6df74",
         "ba070a4e34b4",
         "31cf092dc035",
-        "28e3e64f4394"
+        "28e3e64f4394",
+        "8e787b263eda",
+        "b1875a7d7915",
+        "1a45762b6976",
+        "ce68703137c8",
+        "700dd1862b5e",
+        "12bf91db29c7"
       ],
       "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 25,
-      "last_escalated_at": "2026-06-15T01:40:14.815414+00:00",
+      "last_escalated_size": 31,
+      "last_escalated_at": "2026-06-15T07:00:51.271705+00:00",
       "picks_file": "picks/picks-2026-06-15-0140.md",
       "last_escalated_item_ids": [
         "29e1162c0a40",
@@ -966,9 +919,15 @@
         "95ecfaf6df74",
         "ba070a4e34b4",
         "31cf092dc035",
-        "28e3e64f4394"
+        "28e3e64f4394",
+        "8e787b263eda",
+        "b1875a7d7915",
+        "1a45762b6976",
+        "ce68703137c8",
+        "700dd1862b5e",
+        "12bf91db29c7"
       ],
-      "why_text": "For the first time since 1973, the New York Knicks have won an NBA Championship, and the cultural shockwave is immediate and total \u2014 celebrities, musicians, late-night TV, and the White House news cycle are all bending toward Madison Square Garden at once. This isn't just a sports story: New York's most tortured major franchise finally delivering is the kind of cathartic, city-defining moment that reshapes pop culture for a full season, from Wu-Tang Clan performing on the Tonight Show to Timoth\u00e9e Chalamet ranking it above his Oscar. The Knicks winning is a permission slip for New York's entire cultural apparatus to go unhinged together."
+      "why_text": "For the first time since 1973, the New York Knicks have won an NBA Championship, and the cultural shockwave is immediate and total \u2014 celebrities, musicians, late-night TV, and the White House news cycle are all bending toward Madison Square Garden at once. This isn't just a sports story: New York's most tortured major franchise finally delivering is the kind of cathartic, city-defining moment that reshapes pop culture for a full season, from Wu-Tang Clan performing on the Tonight Show to Timoth\u00e9e Chalamet ranking it above his Oscar. The Knicks winning is a permission slip for New York's entire cultural apparatus to go unhinged together.\n**Update 2:01 AM CT:** The celebrity convergence is already materializing in real time: Sydney Sweeney showed up to Game 5 in a custom Jalen Brunson-inspired top, and Timoth\u00e9e Chalamet publicly ranked the Knicks title above his Oscar win, turning what could have been a throwaway quote into the kind of cultural sound bite that will define this moment for years."
     },
     "36c2b02995a839c5": {
       "topic": "Apple iOS 27 Unreleased Features Pipeline",
@@ -1260,7 +1219,52 @@
       "created_at": "2026-06-15T01:40:39.079040+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "adb15027739b3f4d": {
+      "topic": "Nike X2 World Cup Capsule Collection",
+      "item_ids": [
+        "08de82274e0a"
+      ],
+      "created_at": "2026-06-15T07:01:23.195371+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7c4e3f283ca9f62b": {
+      "topic": "Merrell 1TRL Cham Pack SS25-SS26 Release",
+      "item_ids": [
+        "e24b07a51501"
+      ],
+      "created_at": "2026-06-15T07:01:23.195371+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "181a336a17f6da5a": {
+      "topic": "BMW M5 Touring Design Redesign",
+      "item_ids": [
+        "e766ca445cc1"
+      ],
+      "created_at": "2026-06-15T07:01:23.195371+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "436e5b56a7677792": {
+      "topic": "BMW M Concept Neue Klasse Le Mans Debut",
+      "item_ids": [
+        "770c219c4246"
+      ],
+      "created_at": "2026-06-15T07:01:23.195371+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f9bd1c07f9682f2d": {
+      "topic": "BMW 2026 24 Hours of Le Mans Race Results",
+      "item_ids": [
+        "4e5cb82ccfc3"
+      ],
+      "created_at": "2026-06-15T07:01:23.195371+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-15T01:40:46.205482+00:00"
+  "last_checked": "2026-06-15T07:01:33.048696+00:00"
 }
