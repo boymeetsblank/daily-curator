@@ -1,16 +1,5 @@
 {
   "known_ids": [
-    "88d244410dd8",
-    "a1b1a68dd1b4",
-    "12852a9fd037",
-    "fa53208c161d",
-    "b0111e2d0b60",
-    "b48b29dc3ba8",
-    "ae5c88d9d200",
-    "56b7b98f42fb",
-    "f6bcab9c9e7e",
-    "fe9f648c59e7",
-    "240746cfbd04",
     "8f36d10d89d8",
     "c974f46fd8fc",
     "176ea34eeab0",
@@ -499,26 +488,20 @@
     "f4c58ce9f814",
     "e814d33731e6",
     "8820a112f170",
-    "399986b06af9"
+    "399986b06af9",
+    "4647f8437ba0",
+    "db8432b7dff6",
+    "ba070a4e34b4",
+    "00af55a625cf",
+    "726fb782144c",
+    "ad77fbaaec06",
+    "31cf092dc035",
+    "28e3e64f4394",
+    "ee206c5b1474",
+    "c8002726c872",
+    "d4a97916a12e"
   ],
   "failed_ids": {
-    "0f0b44cbb340": "2026-06-14T20:39:21.212680+00:00",
-    "c510c912cd8d": "2026-06-14T20:39:21.212680+00:00",
-    "1115ad85a97e": "2026-06-14T20:39:21.212680+00:00",
-    "1fcce1da9f30": "2026-06-14T20:39:21.212680+00:00",
-    "553bffc3f99a": "2026-06-14T20:39:21.212680+00:00",
-    "c37755268ac6": "2026-06-14T20:39:21.212680+00:00",
-    "6e2f3e3240ff": "2026-06-14T20:39:21.212680+00:00",
-    "6517db2be78d": "2026-06-14T20:39:21.212680+00:00",
-    "7801f29d4cba": "2026-06-14T20:39:21.212680+00:00",
-    "1af633814ac6": "2026-06-14T20:39:21.212680+00:00",
-    "a8da0708e102": "2026-06-14T20:39:21.212680+00:00",
-    "7ffe670be21a": "2026-06-14T20:39:21.212680+00:00",
-    "eaa142ce9f45": "2026-06-14T20:39:21.212680+00:00",
-    "b917357d167e": "2026-06-14T20:39:21.212680+00:00",
-    "de340d1221bf": "2026-06-14T20:39:21.212680+00:00",
-    "14231f032e4c": "2026-06-14T20:39:21.212680+00:00",
-    "5cb4da789c48": "2026-06-14T20:39:21.212680+00:00",
     "32d42f0a69b5": "2026-06-14T21:56:33.697109+00:00",
     "8e2ee6abb79f": "2026-06-14T21:56:33.697109+00:00",
     "753a8fc241f2": "2026-06-14T21:56:33.697109+00:00",
@@ -546,102 +529,30 @@
     "581c9e29c2cc": "2026-06-14T23:09:07.017992+00:00",
     "c3321e0847fe": "2026-06-14T23:09:07.017992+00:00",
     "b4e9eab04724": "2026-06-14T23:09:07.017992+00:00",
-    "b43950e20419": "2026-06-14T23:09:07.017992+00:00"
+    "b43950e20419": "2026-06-14T23:09:07.017992+00:00",
+    "540ab4877b78": "2026-06-15T01:40:14.815414+00:00",
+    "614e6a0e476c": "2026-06-15T01:40:14.815414+00:00",
+    "431db32c132f": "2026-06-15T01:40:14.815414+00:00",
+    "a0b376d5e320": "2026-06-15T01:40:14.815414+00:00",
+    "62eaa9de6842": "2026-06-15T01:40:14.815414+00:00",
+    "1a7d4d5e97ad": "2026-06-15T01:40:14.815414+00:00",
+    "69a96ff921a6": "2026-06-15T01:40:14.815414+00:00",
+    "84e9b0380cd7": "2026-06-15T01:40:14.815414+00:00",
+    "81f56ab94ce6": "2026-06-15T01:40:14.815414+00:00",
+    "ad22f68c0093": "2026-06-15T01:40:14.815414+00:00",
+    "1af633814ac6": "2026-06-15T01:40:14.815414+00:00",
+    "e0c0c4f09520": "2026-06-15T01:40:14.815414+00:00",
+    "7ffe670be21a": "2026-06-15T01:40:14.815414+00:00",
+    "a0f0aa8ba0cd": "2026-06-15T01:40:14.815414+00:00",
+    "cf2813cd4639": "2026-06-15T01:40:14.815414+00:00",
+    "55e5508093f0": "2026-06-15T01:40:14.815414+00:00",
+    "fb21f806ae61": "2026-06-15T01:40:14.815414+00:00",
+    "b917357d167e": "2026-06-15T01:40:14.815414+00:00",
+    "de340d1221bf": "2026-06-15T01:40:14.815414+00:00",
+    "14231f032e4c": "2026-06-15T01:40:14.815414+00:00",
+    "5cb4da789c48": "2026-06-15T01:40:14.815414+00:00"
   },
   "live_clusters": {
-    "5ee6d9b4dafdc53a": {
-      "topic": "Air Jordan 1 Mid Metal Ankle Eyelets Release",
-      "item_ids": [
-        "443188a1c418",
-        "0806d401a510"
-      ],
-      "created_at": "2026-06-13T23:15:28.668781+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1b3171aa7a316e56": {
-      "topic": "Trump Name Removed Kennedy Center Facade",
-      "item_ids": [
-        "e057e8298161"
-      ],
-      "created_at": "2026-06-13T23:15:28.668781+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "632b72e7126cffed": {
-      "topic": "Cape Fear Series Juliette Lewis Reboot",
-      "item_ids": [
-        "3a86c14f2e00"
-      ],
-      "created_at": "2026-06-13T23:15:28.668781+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1a295b673ee51a17": {
-      "topic": "2009 NBA Draft Philadelphia 76ers Re-evaluation",
-      "item_ids": [
-        "9a3a40973827",
-        "ccb0a9dadf9a"
-      ],
-      "created_at": "2026-06-13T23:15:28.668781+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1044e9415a1e2a71": {
-      "topic": "Widow's Bay Creator Recalls Parks and Rec Episode Origin",
-      "item_ids": [
-        "779d045427b3"
-      ],
-      "created_at": "2026-06-14T01:38:26.892836+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e51f85261d3ef7cc": {
-      "topic": "Aldon Smith Former NFL Defensive Lineman Dies at 36",
-      "item_ids": [
-        "14b4db72a426"
-      ],
-      "created_at": "2026-06-14T01:38:26.892836+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a93bcb8aab72ab28": {
-      "topic": "Vinicius Jr Brazil Draw Morocco International Match",
-      "item_ids": [
-        "e3be210c6b2a"
-      ],
-      "created_at": "2026-06-14T01:38:26.892836+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "04e1af59d9706ad0": {
-      "topic": "Ramirez Bone Injury Guardians Victory",
-      "item_ids": [
-        "43c936098e4f"
-      ],
-      "created_at": "2026-06-14T01:38:26.892836+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2eaa432409eba5f8": {
-      "topic": "State Attorneys General Investigating OpenAI",
-      "item_ids": [
-        "0d5112471529"
-      ],
-      "created_at": "2026-06-14T01:38:26.892836+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3c7c03b175547666": {
-      "topic": "New Balance Blacked-Out Tech Dad Runner Sneaker Release",
-      "item_ids": [
-        "a22199e4e0a1",
-        "a77be798edab"
-      ],
-      "created_at": "2026-06-14T01:38:26.892836+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "f51e6e8e90ca8723": {
       "topic": "'Michael' Biopic Box Office Record Bohemian Rhapsody",
       "item_ids": [
@@ -1021,12 +932,15 @@
         "9e3aa73cec26",
         "5aac1632c93e",
         "2132f5596f5f",
-        "95ecfaf6df74"
+        "95ecfaf6df74",
+        "ba070a4e34b4",
+        "31cf092dc035",
+        "28e3e64f4394"
       ],
       "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 22,
-      "last_escalated_at": "2026-06-14T23:09:07.017992+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 25,
+      "last_escalated_at": "2026-06-15T01:40:14.815414+00:00",
+      "picks_file": "picks/picks-2026-06-15-0140.md",
       "last_escalated_item_ids": [
         "29e1162c0a40",
         "f77714e1054b",
@@ -1049,8 +963,12 @@
         "9e3aa73cec26",
         "5aac1632c93e",
         "2132f5596f5f",
-        "95ecfaf6df74"
-      ]
+        "95ecfaf6df74",
+        "ba070a4e34b4",
+        "31cf092dc035",
+        "28e3e64f4394"
+      ],
+      "why_text": "For the first time since 1973, the New York Knicks have won an NBA Championship, and the cultural shockwave is immediate and total \u2014 celebrities, musicians, late-night TV, and the White House news cycle are all bending toward Madison Square Garden at once. This isn't just a sports story: New York's most tortured major franchise finally delivering is the kind of cathartic, city-defining moment that reshapes pop culture for a full season, from Wu-Tang Clan performing on the Tonight Show to Timoth\u00e9e Chalamet ranking it above his Oscar. The Knicks winning is a permission slip for New York's entire cultural apparatus to go unhinged together."
     },
     "36c2b02995a839c5": {
       "topic": "Apple iOS 27 Unreleased Features Pipeline",
@@ -1279,7 +1197,70 @@
       "created_at": "2026-06-14T21:57:03.089215+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "52ad42d014905d51": {
+      "topic": "Bonnaroo Festival Schedule Updates Weather Delays",
+      "item_ids": [
+        "4647f8437ba0"
+      ],
+      "created_at": "2026-06-15T01:40:39.079040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "39928ec6834acb5a": {
+      "topic": "Dead by Daylight Horror Game Film Adaptation Blumhouse",
+      "item_ids": [
+        "db8432b7dff6"
+      ],
+      "created_at": "2026-06-15T01:40:39.079040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6a4f0c61b7fc47d3": {
+      "topic": "Jaylen Brown Trade Rumors Hawks Celtics",
+      "item_ids": [
+        "00af55a625cf"
+      ],
+      "created_at": "2026-06-15T01:40:39.079040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "157aa73d41f1e387": {
+      "topic": "Giannis Trade Rumors Heat Celtics 2026 Draft",
+      "item_ids": [
+        "726fb782144c"
+      ],
+      "created_at": "2026-06-15T01:40:39.079040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bb06a777d4be27ee": {
+      "topic": "Nets 2026 NBA Draft Strategy Best Player Available",
+      "item_ids": [
+        "ad77fbaaec06"
+      ],
+      "created_at": "2026-06-15T01:40:39.079040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2af43a737cd85251": {
+      "topic": "BMW M3 Electric Future Development",
+      "item_ids": [
+        "ee206c5b1474"
+      ],
+      "created_at": "2026-06-15T01:40:39.079040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c72f650c6d0937a2": {
+      "topic": "BMW M3 Combustion Engine Strategy",
+      "item_ids": [
+        "c8002726c872"
+      ],
+      "created_at": "2026-06-15T01:40:39.079040+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-14T23:09:38.780601+00:00"
+  "last_checked": "2026-06-15T01:40:46.205482+00:00"
 }
