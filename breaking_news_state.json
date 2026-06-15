@@ -1,29 +1,5 @@
 {
   "known_ids": [
-    "c335c7a5aa4e",
-    "765c258b0248",
-    "121470e5b838",
-    "445eb4dac257",
-    "2e01be78e712",
-    "ca07037981a9",
-    "35825c1e8153",
-    "24357dbb9827",
-    "889b574886d3",
-    "00ed8dc51640",
-    "f32ebd514eb1",
-    "68c56e7b63b1",
-    "44a440179e66",
-    "c4c5c2650f9b",
-    "e2702bf59a12",
-    "fbffdb55e004",
-    "80b6ba17a1d1",
-    "39d57b3cb12e",
-    "2cfedad99d7b",
-    "cc4fea35a723",
-    "48f5d50d7f90",
-    "44ccac9f1904",
-    "f0dab0dcf4e1",
-    "87e9fba46c13",
     "3eeacc4351ea",
     "412e3406c59f",
     "cb7276711cc4",
@@ -499,86 +475,63 @@
     "77164fb3bbcc",
     "82fc78946e17",
     "d295439293d8",
-    "74c2bff50a65"
+    "74c2bff50a65",
+    "7978d5e442ee",
+    "fe25a7f6b6eb",
+    "eafb260dcbdb",
+    "b972f59f4a10",
+    "c99b19495060",
+    "e3a952657911",
+    "f257a960e28b",
+    "6b2d38ecf158",
+    "cd67658f95a1",
+    "70fa437e9b51",
+    "97ab96986edd",
+    "2b24aa21322e",
+    "5957c9dca969",
+    "86af31e22cfa",
+    "98e3f421883c",
+    "38db01ee77ad",
+    "3682c0e01f36",
+    "706e9ff8c5c0",
+    "009e85b33e62",
+    "b9f874c5fc9f",
+    "54aa264e2b03",
+    "3e4f533d5397",
+    "56283d5cbeed",
+    "f31139bdc40f"
   ],
   "failed_ids": {
-    "b435db65ac90": "2026-06-15T18:07:30.209252+00:00",
-    "5beed7a07d16": "2026-06-15T18:07:30.209252+00:00",
-    "751025506c40": "2026-06-15T18:07:30.209252+00:00",
-    "820dc5625113": "2026-06-15T18:07:30.209252+00:00",
-    "0ba3dc522926": "2026-06-15T18:07:30.209252+00:00",
-    "d028438e022b": "2026-06-15T18:07:30.209252+00:00",
-    "e6a2ab2ce06b": "2026-06-15T18:07:30.209252+00:00",
-    "5d3ff58ff2a2": "2026-06-15T18:07:30.209252+00:00",
-    "6fb14688a4cf": "2026-06-15T18:07:30.209252+00:00",
-    "b2172791b6d5": "2026-06-15T18:07:30.209252+00:00",
-    "11a7709b4037": "2026-06-15T18:07:30.209252+00:00",
-    "692bfc9fe9ff": "2026-06-15T18:07:30.209252+00:00",
-    "8b99c29ed0a6": "2026-06-15T18:07:30.209252+00:00",
-    "2cf6e735bf2f": "2026-06-15T18:07:30.209252+00:00",
-    "2b338a2340cc": "2026-06-15T18:07:30.209252+00:00",
-    "daaf829953e5": "2026-06-15T18:07:30.209252+00:00",
-    "90898848a982": "2026-06-15T18:07:30.209252+00:00",
-    "a17a42f47513": "2026-06-15T18:07:30.209252+00:00",
-    "9990ab3daabd": "2026-06-15T18:07:30.209252+00:00",
-    "a139c84169e6": "2026-06-15T18:07:30.209252+00:00",
-    "e628920d8fd2": "2026-06-15T18:07:30.209252+00:00",
-    "049acfab5a75": "2026-06-15T18:07:30.209252+00:00",
-    "d566d5ae30a2": "2026-06-15T18:07:30.209252+00:00",
-    "64658eada96e": "2026-06-15T18:07:30.209252+00:00",
-    "4871d6de64dc": "2026-06-15T18:07:30.209252+00:00",
-    "8afa875d6b1e": "2026-06-15T18:07:30.209252+00:00",
-    "b05db686ff55": "2026-06-15T18:07:30.209252+00:00",
-    "b2759b428cef": "2026-06-15T18:07:30.209252+00:00",
-    "a0381c40d646": "2026-06-15T18:07:30.209252+00:00",
-    "c4fc6a769263": "2026-06-15T18:07:30.209252+00:00",
-    "8afc19113b42": "2026-06-15T18:07:30.209252+00:00",
-    "1fd6dc140557": "2026-06-15T18:07:30.209252+00:00",
-    "68ec4827edb9": "2026-06-15T18:07:30.209252+00:00",
-    "fa52c247ea01": "2026-06-15T18:07:30.209252+00:00",
-    "d9b0ade35ac4": "2026-06-15T18:07:30.209252+00:00",
-    "ca653b184874": "2026-06-15T18:07:30.209252+00:00",
-    "ef5295139271": "2026-06-15T18:07:30.209252+00:00",
-    "05ba9cb8b95d": "2026-06-15T18:07:30.209252+00:00",
-    "edd872efe3e8": "2026-06-15T18:07:30.209252+00:00"
+    "4ffac55cf0cd": "2026-06-15T23:12:47.918003+00:00",
+    "9fc9a34bdab9": "2026-06-15T23:12:47.918003+00:00",
+    "f49edb6ad941": "2026-06-15T23:12:47.918003+00:00",
+    "87d50fc49980": "2026-06-15T23:12:47.918003+00:00",
+    "717c54c6fb01": "2026-06-15T23:12:47.918003+00:00",
+    "3c48340b09be": "2026-06-15T23:12:47.918003+00:00",
+    "3d1696524c17": "2026-06-15T23:12:47.918003+00:00",
+    "f931835d699e": "2026-06-15T23:12:47.918003+00:00",
+    "71ed2eea4532": "2026-06-15T23:12:47.918003+00:00",
+    "8c3a8dee085b": "2026-06-15T23:12:47.918003+00:00",
+    "c3cfd2b27b27": "2026-06-15T23:12:47.918003+00:00",
+    "b54f1b91d32e": "2026-06-15T23:12:47.918003+00:00",
+    "a44b076452e8": "2026-06-15T23:12:47.918003+00:00",
+    "59e520d3b2bf": "2026-06-15T23:12:47.918003+00:00",
+    "ad17c15b1e12": "2026-06-15T23:12:47.918003+00:00",
+    "04a74ecc8703": "2026-06-15T23:12:47.918003+00:00",
+    "72a4452ef231": "2026-06-15T23:12:47.918003+00:00",
+    "815d2f5fa09e": "2026-06-15T23:12:47.918003+00:00",
+    "bd49c65b26b2": "2026-06-15T23:12:47.918003+00:00",
+    "1a5b1b30e9a0": "2026-06-15T23:12:47.918003+00:00",
+    "113c23c73fef": "2026-06-15T23:12:47.918003+00:00",
+    "78a03fa6ec3f": "2026-06-15T23:12:47.918003+00:00",
+    "de39c8a63b57": "2026-06-15T23:12:47.918003+00:00",
+    "ef5295139271": "2026-06-15T23:12:47.918003+00:00",
+    "cf3bb740d645": "2026-06-15T23:12:47.918003+00:00",
+    "9daeb1e86b76": "2026-06-15T23:12:47.918003+00:00",
+    "7157371332f7": "2026-06-15T23:12:47.918003+00:00",
+    "17dcfbe0aac8": "2026-06-15T23:12:47.918003+00:00"
   },
   "live_clusters": {
-    "516e28ce28f0810c": {
-      "topic": "Alessandro Nivola Calvin Klein 'Love Story' Todd Haynes Film",
-      "item_ids": [
-        "b47184617579"
-      ],
-      "created_at": "2026-06-14T21:57:03.089215+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6b8b1ff521154184": {
-      "topic": "The Fall Final Album Autumn Release",
-      "item_ids": [
-        "ba4d2f22d660"
-      ],
-      "created_at": "2026-06-14T21:57:03.089215+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9b14c892b8b74dcc": {
-      "topic": "Milly Alcock Supergirl Superman Cape Christopher Reeve Fabric",
-      "item_ids": [
-        "2df334a455f6"
-      ],
-      "created_at": "2026-06-14T21:57:03.089215+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7c2cd9b5111ad346": {
-      "topic": "Crocs Toy Story Collaboration Sneaker Release",
-      "item_ids": [
-        "84494d381885"
-      ],
-      "created_at": "2026-06-14T21:57:03.089215+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "52ad42d014905d51": {
       "topic": "Bonnaroo Festival Schedule Updates Weather Delays",
       "item_ids": [
@@ -800,7 +753,8 @@
         "f7816b101f5a",
         "5a1fd9f71736",
         "e2f4b7c60bd5",
-        "b1712cdbb0b1"
+        "b1712cdbb0b1",
+        "009e85b33e62"
       ],
       "created_at": "2026-06-15T13:26:04.737954+00:00",
       "last_escalated_size": 3,
@@ -1091,7 +1045,178 @@
       "created_at": "2026-06-15T21:19:41.483356+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "30ed5d14bb553f3a": {
+      "topic": "Soulgoods x Nike Homescape Woven Sneaker",
+      "item_ids": [
+        "7978d5e442ee"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "785d5f4ac9648aa6": {
+      "topic": "StockX NYC Store Reopening",
+      "item_ids": [
+        "fe25a7f6b6eb"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a379135dff0753fb": {
+      "topic": "Tyrese Haliburton Fianc\u00e9e Friend Death Bachelorette Party",
+      "item_ids": [
+        "eafb260dcbdb"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "320ff65201de6bd9": {
+      "topic": "2025 Emmy Predictions Directing Category",
+      "item_ids": [
+        "b972f59f4a10"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0fa70efc3b8cd685": {
+      "topic": "Music Industry Moves Linda Lindas Motown Republic Ziza",
+      "item_ids": [
+        "c99b19495060"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "22e1559148d809fb": {
+      "topic": "amfAR Honors Marina Abramovi\u0107",
+      "item_ids": [
+        "e3a952657911"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e10319a8c7b06a8a": {
+      "topic": "Quavo Ferrari Sculpture Lawsuit Dismissed Trappa Rappa",
+      "item_ids": [
+        "f257a960e28b"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "775360c14a0ea2d1": {
+      "topic": "Mark Hamill Twisted Metal Season 3 Peacock",
+      "item_ids": [
+        "6b2d38ecf158"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2cb667bf9abc7512": {
+      "topic": "Frederik Oldenburg Love Island USA World Cup Challenge Host",
+      "item_ids": [
+        "cd67658f95a1"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a645a8cb25e709bd": {
+      "topic": "Destin Daniel Cretton Wonder Man Season 2 Spider-Man Future",
+      "item_ids": [
+        "70fa437e9b51"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "419ac3bf1cddff08": {
+      "topic": "Dan Levy Big Mistakes Sibling Dynamics",
+      "item_ids": [
+        "97ab96986edd"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3113b92b0b1c2bb9": {
+      "topic": "Karl-Anthony Towns OG Anunoby Late Night Seth Meyers",
+      "item_ids": [
+        "2b24aa21322e"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8d71911394aa00e2": {
+      "topic": "Google Earth Flight Simulator Browser Launch",
+      "item_ids": [
+        "5957c9dca969"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "13b5f6c9ee76ab75": {
+      "topic": "Walker Kessler Jazz Contract Restricted Free Agency Dispute",
+      "item_ids": [
+        "86af31e22cfa"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "64b971034812c574": {
+      "topic": "Richie Saunders NBA Draft Preparation",
+      "item_ids": [
+        "98e3f421883c"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0e227d248c7c5dec": {
+      "topic": "Mavericks Head Coaching Search Next Phase",
+      "item_ids": [
+        "38db01ee77ad"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "751927c45ef09ca4": {
+      "topic": "Lakers NBA Free Agency Truth",
+      "item_ids": [
+        "3682c0e01f36"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ccab7f331a7059cb": {
+      "topic": "BMW Design Problem Analysis",
+      "item_ids": [
+        "706e9ff8c5c0"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e237fe94747324e5": {
+      "topic": "Lukaku Transfer Rumors",
+      "item_ids": [
+        "b9f874c5fc9f"
+      ],
+      "created_at": "2026-06-15T23:13:20.791086+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-15T21:19:50.224675+00:00"
+  "last_checked": "2026-06-15T23:13:20.792312+00:00"
 }
