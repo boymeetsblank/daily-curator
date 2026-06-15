@@ -1,52 +1,5 @@
 {
   "known_ids": [
-    "9a491695a596",
-    "4dd90777369a",
-    "7fa2eeeb6fa0",
-    "8287ec3d7d42",
-    "525642b8e331",
-    "2ad09b8f8c0c",
-    "4d23271b648f",
-    "58b7eafc0bf9",
-    "53c37b3731b6",
-    "9976498cb481",
-    "0c13f5ecf871",
-    "671dd3e1852a",
-    "5a41c7fff6da",
-    "28bcbbbb8918",
-    "42adec4eda48",
-    "45436d7e1b4c",
-    "426d1c804647",
-    "62e6e7f0f8fc",
-    "ab3929d7804d",
-    "0b80e88f76e9",
-    "9d44208160ec",
-    "1034e9d7b6a7",
-    "3f076b11d2c2",
-    "889edb2c276b",
-    "0fbdf699023d",
-    "3837f5d57b8f",
-    "efd4f77b2783",
-    "6df8dec8a986",
-    "54e048defc2b",
-    "670af8c26a21",
-    "894fa2032349",
-    "e0ac6ea0feb8",
-    "b3abc815ef05",
-    "4e80490dee0e",
-    "c819102ba023",
-    "5f1372429ea5",
-    "ed20a300da9f",
-    "136fe61aed12",
-    "fa83a1deb848",
-    "bc5b4ef0b6d3",
-    "1232733cb0cb",
-    "e9fb59add261",
-    "016081c23e68",
-    "152aebc6304c",
-    "6b8772b5ec86",
-    "465659d12e64",
-    "a6de8fdc0eee",
     "db740963b677",
     "e644daf7375c",
     "2da89690e243",
@@ -499,129 +452,57 @@
     "4e5cb82ccfc3",
     "d198eded52c5",
     "07d6953a192d",
-    "2c6d426c37c8"
+    "2c6d426c37c8",
+    "8e5230308a36",
+    "2e92c1fcd69e",
+    "03605214caf5",
+    "da4b5edf73d1",
+    "e3d090f143fc",
+    "73c9e32da4cd",
+    "317fb88492ca",
+    "4a2c74d0676d",
+    "195a284a2ee9",
+    "bfbeeb0cb39e",
+    "2eca8ae4c180",
+    "8763877bbece",
+    "1b0f87a1fc39",
+    "387cb5f545f1",
+    "da443dced1de",
+    "633450a9d0fe",
+    "45b9d72befa9",
+    "8c82dd3a1c49",
+    "d7dc1a6378b1",
+    "4ca45d04dafe",
+    "e18c3b217d6d",
+    "2234e47d3839",
+    "de237a81f637",
+    "cd0c2cf91bc3",
+    "69172e710604",
+    "1f8bdf06fcd1",
+    "c5983d820d30",
+    "1bac36490672",
+    "b49652302f77",
+    "b7ee615010ea",
+    "cd03a3471886",
+    "e6936f6d18f2",
+    "f76acc02727e",
+    "ed76ad0d3592",
+    "44c21a80a8b5",
+    "f88255635ab5",
+    "f89cdff047dc",
+    "487a18f48268",
+    "f7816b101f5a",
+    "5a1fd9f71736",
+    "eed46b45b6c4",
+    "5ba10c08266b",
+    "e2f4b7c60bd5",
+    "4789e569bd31",
+    "da2daf541683",
+    "5ae83def57ae",
+    "c45cdc0044d7"
   ],
-  "failed_ids": {
-    "bfb360ebac64": "2026-06-15T07:00:51.271705+00:00",
-    "3dc750c165a6": "2026-06-15T07:00:51.271705+00:00",
-    "540ab4877b78": "2026-06-15T07:00:51.271705+00:00",
-    "8aa944a5dba8": "2026-06-15T07:00:51.271705+00:00",
-    "f6501028baba": "2026-06-15T07:00:51.271705+00:00",
-    "87e371812cd9": "2026-06-15T07:00:51.271705+00:00",
-    "00f41cbf8ba0": "2026-06-15T07:00:51.271705+00:00",
-    "366f61bb2bbe": "2026-06-15T07:00:51.271705+00:00",
-    "a03356304396": "2026-06-15T07:00:51.271705+00:00",
-    "1a200923b2c3": "2026-06-15T07:00:51.271705+00:00",
-    "1dd8d07f0767": "2026-06-15T07:00:51.271705+00:00",
-    "d4e4fca15e0b": "2026-06-15T07:00:51.271705+00:00",
-    "c4003faff4eb": "2026-06-15T07:00:51.271705+00:00",
-    "a90b39b786a2": "2026-06-15T07:00:51.271705+00:00",
-    "ef5295139271": "2026-06-15T07:00:51.271705+00:00",
-    "e930082801e1": "2026-06-15T07:00:51.271705+00:00",
-    "2aa697879d55": "2026-06-15T07:00:51.271705+00:00",
-    "4c744db111cd": "2026-06-15T07:00:51.271705+00:00",
-    "dc591b0e3b4c": "2026-06-15T07:00:51.271705+00:00",
-    "e2f4b7c60bd5": "2026-06-15T07:00:51.271705+00:00"
-  },
+  "failed_ids": {},
   "live_clusters": {
-    "d75b8318df6699e4": {
-      "topic": "Honor Arri Robot Phone Shanghai Film Festival Debut",
-      "item_ids": [
-        "2fe059e3ddf0"
-      ],
-      "created_at": "2026-06-14T10:00:25.400907+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "18bd8d2c765f84fe": {
-      "topic": "Yan Siyu Virginia Woolf Shanghai Art Project",
-      "item_ids": [
-        "39f502ec248e"
-      ],
-      "created_at": "2026-06-14T10:00:25.400907+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4a2010558dd16316": {
-      "topic": "\u0160koda New Expensive EV Model",
-      "item_ids": [
-        "2904709a02e5"
-      ],
-      "created_at": "2026-06-14T10:00:25.400907+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f35061b4e275674e": {
-      "topic": "Tech Worker Career Transition Trades AI Concerns",
-      "item_ids": [
-        "e4450f174127"
-      ],
-      "created_at": "2026-06-14T10:00:25.400907+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b793311261871d70": {
-      "topic": "Outdoor Retailer Bankruptcy After 60 Years",
-      "item_ids": [
-        "ee7cffd54b4c"
-      ],
-      "created_at": "2026-06-14T10:00:25.400907+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f764bc4cb82cb225": {
-      "topic": "Young Investors FIRE Movement Alternative Strategy",
-      "item_ids": [
-        "69ede857e433"
-      ],
-      "created_at": "2026-06-14T10:00:25.400907+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "245dc67e678e4b4c": {
-      "topic": "BMW Armored X5 7-Series Client Demonstration",
-      "item_ids": [
-        "8cfb76939ef1"
-      ],
-      "created_at": "2026-06-14T10:00:25.400907+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c3c70b8d1892c175": {
-      "topic": "Shanghai Film Festival International Festival Leadership Summit",
-      "item_ids": [
-        "b60af198452e",
-        "9f23fa1e62c0",
-        "ad20b34e25dc"
-      ],
-      "created_at": "2026-06-14T12:05:47.009851+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-14T20:39:21.212680+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "b60af198452e",
-        "9f23fa1e62c0",
-        "ad20b34e25dc"
-      ]
-    },
-    "d1a28cb94e6172e9": {
-      "topic": "Meta AI Model Acquisition Alexandr Wang Zuckerberg",
-      "item_ids": [
-        "e453a9f12034"
-      ],
-      "created_at": "2026-06-14T12:05:47.009851+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f4648f81d0815ec8": {
-      "topic": "Toy Story 5 Technology Innovation Nostalgia Balance",
-      "item_ids": [
-        "02faf572a425"
-      ],
-      "created_at": "2026-06-14T12:05:47.009851+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "1857b24ae50ebc85": {
       "topic": "Minotaur Film Sydney Film Festival Top Prize",
       "item_ids": [
@@ -652,7 +533,8 @@
     "117cfad8200c0bf3": {
       "topic": "Olivia Rodrigo Surprise No Doubt Sphere Final Show",
       "item_ids": [
-        "9485c71e8b53"
+        "9485c71e8b53",
+        "8e5230308a36"
       ],
       "created_at": "2026-06-14T14:25:10.692511+00:00",
       "last_escalated_size": 0,
@@ -774,7 +656,9 @@
         "93c6b6006d22",
         "e849846b8367",
         "f5939aa6e6f2",
-        "d198eded52c5"
+        "d198eded52c5",
+        "da2daf541683",
+        "5ae83def57ae"
       ],
       "created_at": "2026-06-14T16:04:24.719163+00:00",
       "last_escalated_size": 5,
@@ -1259,12 +1143,110 @@
     "f9bd1c07f9682f2d": {
       "topic": "BMW 2026 24 Hours of Le Mans Race Results",
       "item_ids": [
-        "4e5cb82ccfc3"
+        "4e5cb82ccfc3",
+        "5ba10c08266b"
       ],
       "created_at": "2026-06-15T07:01:23.195371+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "7759dbf99f45ce42": {
+      "topic": "Billy Crystal Broadway Solo Show '860' Opening",
+      "item_ids": [
+        "2e92c1fcd69e"
+      ],
+      "created_at": "2026-06-15T13:26:04.737954+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9e588d765ec8537e": {
+      "topic": "NewCore AI Agent Identity Platform Funding",
+      "item_ids": [
+        "da4b5edf73d1"
+      ],
+      "created_at": "2026-06-15T13:26:04.737954+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2d496abf348959ed": {
+      "topic": "Satellite Autonomous Learning Technology",
+      "item_ids": [
+        "e3d090f143fc"
+      ],
+      "created_at": "2026-06-15T13:26:04.737954+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9dafa5e68b10236f": {
+      "topic": "Fox Acquisition Roku $22 Billion",
+      "item_ids": [
+        "73c9e32da4cd",
+        "317fb88492ca",
+        "4a2c74d0676d"
+      ],
+      "created_at": "2026-06-15T13:26:04.737954+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-15T13:25:28.988774+00:00",
+      "picks_file": "picks/picks-2026-06-15-1326.md",
+      "why_text": "Fox Corp acquiring Roku isn't just a hardware deal \u2014 it's a direct power grab at the living room, giving Rupert Murdoch's media empire a distribution chokehold over tens of millions of streaming households. Roku's 80+ million active accounts become a captive audience for Fox News, Fox Sports, and Tubi overnight, reshaping who controls what gets surfaced on the home screen. This is old media buying the remote control itself.",
+      "last_escalated_item_ids": [
+        "73c9e32da4cd",
+        "317fb88492ca",
+        "4a2c74d0676d"
+      ]
+    },
+    "549ed4694a9e093c": {
+      "topic": "OBJ Vintage T-Shirt Collection Resale",
+      "item_ids": [
+        "8c82dd3a1c49"
+      ],
+      "created_at": "2026-06-15T13:26:04.737954+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7f668152324f29db": {
+      "topic": "UK Bans Social Media Apps for Children",
+      "item_ids": [
+        "4ca45d04dafe"
+      ],
+      "created_at": "2026-06-15T13:26:04.737954+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "931b399d609be7e2": {
+      "topic": "2026 NBA Mock Draft Projections",
+      "item_ids": [
+        "e18c3b217d6d"
+      ],
+      "created_at": "2026-06-15T13:26:04.737954+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e5424b6faba48b82": {
+      "topic": "NBA Contract Rumors Wembanyama Vassell Champagnie",
+      "item_ids": [
+        "2234e47d3839"
+      ],
+      "created_at": "2026-06-15T13:26:04.737954+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f9d838c659d36c46": {
+      "topic": "2027 BMW X5 Prototype Testing Development",
+      "item_ids": [
+        "f7816b101f5a",
+        "5a1fd9f71736",
+        "e2f4b7c60bd5"
+      ],
+      "created_at": "2026-06-15T13:26:04.737954+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-15T13:25:28.988774+00:00",
+      "last_escalated_item_ids": [
+        "f7816b101f5a",
+        "5a1fd9f71736",
+        "e2f4b7c60bd5"
+      ]
     }
   },
-  "last_checked": "2026-06-15T07:01:33.048696+00:00"
+  "last_checked": "2026-06-15T13:26:20.071841+00:00"
 }
