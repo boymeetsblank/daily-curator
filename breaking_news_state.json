@@ -1,35 +1,5 @@
 {
   "known_ids": [
-    "db740963b677",
-    "e644daf7375c",
-    "2da89690e243",
-    "7c59f16db28c",
-    "b0bb6c5f5f90",
-    "2b2d6aece3e8",
-    "55f06c66f320",
-    "1e8d52dee6d0",
-    "3796a54c2131",
-    "cc9511caac92",
-    "3b7f48b12bae",
-    "390c547c391e",
-    "63e3f3e67a37",
-    "ba1eb374cec2",
-    "0c3ac17f63eb",
-    "5e808f6636a3",
-    "fad86ead0d49",
-    "5d1d94b99763",
-    "5ddfefbc5b6b",
-    "4db05d86dc02",
-    "a875d22def01",
-    "416805cbfcd9",
-    "c453ac27443a",
-    "1916599b311f",
-    "7720c4094a85",
-    "874d538d729d",
-    "eec2578340b7",
-    "84b7c49feace",
-    "b69d2d15e090",
-    "b06d5c52c2c2",
     "33a93d532d6c",
     "704ea2331d22",
     "ac1162b2e107",
@@ -499,458 +469,80 @@
     "4789e569bd31",
     "da2daf541683",
     "5ae83def57ae",
-    "c45cdc0044d7"
+    "c45cdc0044d7",
+    "045d51bc1064",
+    "341e23cb19d2",
+    "dabd6a8fd9fd",
+    "4913f6d46566",
+    "0014cb2d5067",
+    "ad3ca4a9cdc7",
+    "7fbad6bfb8cd",
+    "1d3a5f79dfa6",
+    "e7717a671fd5",
+    "dbf3d2c8e47f",
+    "9eacc1d050a3",
+    "feda02c529d6",
+    "e5501996bb57",
+    "688a5d35cab3",
+    "d37aed3c0e36",
+    "0e278cda9006",
+    "2f4378588f60",
+    "f1fc997ffd22",
+    "9d114809f881",
+    "b4859426d56b",
+    "d860424cbbab",
+    "3a4027f901c0",
+    "5de63e559c71",
+    "151ea50eb5d0",
+    "c0ac23e22ce6",
+    "92f69944b05f",
+    "63c33a49cba5",
+    "75de0acd6df3",
+    "ac764f1ef826",
+    "303901334426"
   ],
-  "failed_ids": {},
+  "failed_ids": {
+    "b435db65ac90": "2026-06-15T18:07:30.209252+00:00",
+    "5beed7a07d16": "2026-06-15T18:07:30.209252+00:00",
+    "751025506c40": "2026-06-15T18:07:30.209252+00:00",
+    "820dc5625113": "2026-06-15T18:07:30.209252+00:00",
+    "0ba3dc522926": "2026-06-15T18:07:30.209252+00:00",
+    "d028438e022b": "2026-06-15T18:07:30.209252+00:00",
+    "e6a2ab2ce06b": "2026-06-15T18:07:30.209252+00:00",
+    "5d3ff58ff2a2": "2026-06-15T18:07:30.209252+00:00",
+    "6fb14688a4cf": "2026-06-15T18:07:30.209252+00:00",
+    "b2172791b6d5": "2026-06-15T18:07:30.209252+00:00",
+    "11a7709b4037": "2026-06-15T18:07:30.209252+00:00",
+    "692bfc9fe9ff": "2026-06-15T18:07:30.209252+00:00",
+    "8b99c29ed0a6": "2026-06-15T18:07:30.209252+00:00",
+    "2cf6e735bf2f": "2026-06-15T18:07:30.209252+00:00",
+    "2b338a2340cc": "2026-06-15T18:07:30.209252+00:00",
+    "daaf829953e5": "2026-06-15T18:07:30.209252+00:00",
+    "90898848a982": "2026-06-15T18:07:30.209252+00:00",
+    "a17a42f47513": "2026-06-15T18:07:30.209252+00:00",
+    "9990ab3daabd": "2026-06-15T18:07:30.209252+00:00",
+    "a139c84169e6": "2026-06-15T18:07:30.209252+00:00",
+    "e628920d8fd2": "2026-06-15T18:07:30.209252+00:00",
+    "049acfab5a75": "2026-06-15T18:07:30.209252+00:00",
+    "d566d5ae30a2": "2026-06-15T18:07:30.209252+00:00",
+    "64658eada96e": "2026-06-15T18:07:30.209252+00:00",
+    "4871d6de64dc": "2026-06-15T18:07:30.209252+00:00",
+    "8afa875d6b1e": "2026-06-15T18:07:30.209252+00:00",
+    "b05db686ff55": "2026-06-15T18:07:30.209252+00:00",
+    "b2759b428cef": "2026-06-15T18:07:30.209252+00:00",
+    "a0381c40d646": "2026-06-15T18:07:30.209252+00:00",
+    "c4fc6a769263": "2026-06-15T18:07:30.209252+00:00",
+    "8afc19113b42": "2026-06-15T18:07:30.209252+00:00",
+    "1fd6dc140557": "2026-06-15T18:07:30.209252+00:00",
+    "68ec4827edb9": "2026-06-15T18:07:30.209252+00:00",
+    "fa52c247ea01": "2026-06-15T18:07:30.209252+00:00",
+    "d9b0ade35ac4": "2026-06-15T18:07:30.209252+00:00",
+    "ca653b184874": "2026-06-15T18:07:30.209252+00:00",
+    "ef5295139271": "2026-06-15T18:07:30.209252+00:00",
+    "05ba9cb8b95d": "2026-06-15T18:07:30.209252+00:00",
+    "edd872efe3e8": "2026-06-15T18:07:30.209252+00:00"
+  },
   "live_clusters": {
-    "1857b24ae50ebc85": {
-      "topic": "Minotaur Film Sydney Film Festival Top Prize",
-      "item_ids": [
-        "65c604a99fb6"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1b49e85dca1d3c0f": {
-      "topic": "Colman Domingo Sarah Pidgeon Euphoria Season 3 Discussion",
-      "item_ids": [
-        "dad73f39d785"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "adee72645ca77862": {
-      "topic": "Boy George Culture Club Homophobic Hecklers Documentary",
-      "item_ids": [
-        "427cb9655c6f"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "117cfad8200c0bf3": {
-      "topic": "Olivia Rodrigo Surprise No Doubt Sphere Final Show",
-      "item_ids": [
-        "9485c71e8b53",
-        "8e5230308a36"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "759a113444adfed6": {
-      "topic": "Muhammad Ali Drama 'The Greatest' Showrunner Preview",
-      "item_ids": [
-        "a5ea7530cdf5"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "764c8e69424b0244": {
-      "topic": "Apple TV 4K Multiview Sports Feature",
-      "item_ids": [
-        "491c83c08bb2"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6de5655647ee647a": {
-      "topic": "Fidget Toy Business Entrepreneur Career Success",
-      "item_ids": [
-        "32deb6e8ac3b",
-        "5481b4cf4bc8",
-        "66d439a6cfa0"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-14T14:24:41.743883+00:00",
-      "picks_file": "picks/picks-2026-06-14-1425.md",
-      "why_text": "At 32, this former teacher ditched the classroom to co-found a fidget toy business with her father \u2014 and last year it pulled in $428,000, making it a sharp case study in the post-pandemic pivot economy. The story lands at the intersection of two big cultural currents: the ongoing exodus from underpaid teaching jobs and the sustained, quietly massive market for sensory and focus toys that never really faded after the spinner craze. It's a reminder that 'small product' businesses built on real consumer need \u2014 not hype \u2014 can quietly generate serious money.",
-      "last_escalated_item_ids": [
-        "32deb6e8ac3b",
-        "5481b4cf4bc8",
-        "66d439a6cfa0"
-      ]
-    },
-    "252bdd9588409428": {
-      "topic": "AI Glasses Testing Paris BBC Review",
-      "item_ids": [
-        "5ccce065dacc"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bd8f708045cd13fb": {
-      "topic": "Siri AI Upgrade WSJ Report",
-      "item_ids": [
-        "127483645cb9"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ac4bebf870577027": {
-      "topic": "Baker Mayfield Emeka Egbuka 2026 OTA Highlight",
-      "item_ids": [
-        "e633c1c2bca0"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c9dc23435476e8a4": {
-      "topic": "Performance Sedan BMW M-Car Energy Review",
-      "item_ids": [
-        "8da6839eb4f6"
-      ],
-      "created_at": "2026-06-14T14:25:10.692511+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6854cdd6fe3b13a2": {
-      "topic": "Jordan 5 'Black Carolina' Nike Weekly Sneaker Releases",
-      "item_ids": [
-        "b1e12b7ce31d"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4e709a1374e526f9": {
-      "topic": "Grantchester Final Season Preview",
-      "item_ids": [
-        "dee8c47929f8"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3d98b95ab600fb4d": {
-      "topic": "Spielberg's 'Disclosure Day' Box Office Opening Weekend",
-      "item_ids": [
-        "7b56da6321e7",
-        "e938c52a14bc"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5ac6c66fb7f67217": {
-      "topic": "Pacha New York Club Opening Travis Scott",
-      "item_ids": [
-        "a6db8ae39730"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a453ace57027b937": {
-      "topic": "UFC Freedom 250 Topuria vs Gaethje Live Coverage",
-      "item_ids": [
-        "6ae80578c346",
-        "93c6b6006d22",
-        "e849846b8367",
-        "f5939aa6e6f2",
-        "d198eded52c5",
-        "da2daf541683",
-        "5ae83def57ae"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-15T07:00:51.271705+00:00",
-      "picks_file": "picks/picks-2026-06-15-0701.md",
-      "why_text": "UFC Freedom 250 was already a marquee event with Ilia Topuria defending his lightweight title against Justin Gaethje, but the surrounding chaos \u2014 Sean Strickland getting pulled from the card and a White House connection trending on X \u2014 has turned it into something bigger than a fight night. The #UFCWhiteHouse trend signals the kind of political-sports crossover that's become a signature of the Trump era, where combat sports have become a soft-power flex. Even Jimmy Fallon riffing on the Knicks mid-UFC weekend shows how completely this event has saturated the cultural conversation across sports and entertainment.",
-      "last_escalated_item_ids": [
-        "6ae80578c346",
-        "93c6b6006d22",
-        "e849846b8367",
-        "f5939aa6e6f2",
-        "d198eded52c5"
-      ]
-    },
-    "c6fa4cc7a90e5fc8": {
-      "topic": "Documentary Magic Trick Theft Thriller",
-      "item_ids": [
-        "ccc96f3dd8ee"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6782cfeaf8bf8be0": {
-      "topic": "Yahya Abdul-Mateen II Wonder Man Character Interview",
-      "item_ids": [
-        "0305bc031b25"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5176518297555bc5": {
-      "topic": "Taormina 2026 Film Festival Turkish Drama 'Hear The Yellow' Winner",
-      "item_ids": [
-        "82540a23add5",
-        "d711e0ccc135"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0ba4e975f9f59753": {
-      "topic": "NBA Way-Too-Early Power Rankings",
-      "item_ids": [
-        "ca6d5b9d6cf4"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9d3af9dc9c32f080": {
-      "topic": "NBA Offseason Draft Free Agency Guides",
-      "item_ids": [
-        "ccb3f1cb2090",
-        "144d33b5d094"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5897eb7164e804c4": {
-      "topic": "Victor Wembanyama Finals Loss Life Lesson",
-      "item_ids": [
-        "d2073287cc91"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c792bf321e9532b1": {
-      "topic": "Hamilton Ferrari First Victory Podium",
-      "item_ids": [
-        "15cb68062e4b",
-        "cd9f0a04e31d"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ff7ecd385b4922a0": {
-      "topic": "New York Knicks NBA Championship Celebration",
-      "item_ids": [
-        "29e1162c0a40",
-        "f77714e1054b",
-        "1f740333e21a",
-        "66a6bb85ed00",
-        "4a44375ec18c",
-        "8d7e5581d333",
-        "2711508c0781",
-        "3017743b5193",
-        "3141afd8e381",
-        "897ffe48fecd",
-        "b8f5c28021ea",
-        "935e7a83c575",
-        "ad770d9d0e4f",
-        "5f19e0e776c7",
-        "c15f6a9e0b8c",
-        "1ad09e743e0f",
-        "fbb41734f170",
-        "ca817f50f06b",
-        "9e3aa73cec26",
-        "5aac1632c93e",
-        "2132f5596f5f",
-        "95ecfaf6df74",
-        "ba070a4e34b4",
-        "31cf092dc035",
-        "28e3e64f4394",
-        "8e787b263eda",
-        "b1875a7d7915",
-        "1a45762b6976",
-        "ce68703137c8",
-        "700dd1862b5e",
-        "12bf91db29c7"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 31,
-      "last_escalated_at": "2026-06-15T07:00:51.271705+00:00",
-      "picks_file": "picks/picks-2026-06-15-0140.md",
-      "last_escalated_item_ids": [
-        "29e1162c0a40",
-        "f77714e1054b",
-        "1f740333e21a",
-        "66a6bb85ed00",
-        "4a44375ec18c",
-        "8d7e5581d333",
-        "2711508c0781",
-        "3017743b5193",
-        "3141afd8e381",
-        "897ffe48fecd",
-        "b8f5c28021ea",
-        "935e7a83c575",
-        "ad770d9d0e4f",
-        "5f19e0e776c7",
-        "c15f6a9e0b8c",
-        "1ad09e743e0f",
-        "fbb41734f170",
-        "ca817f50f06b",
-        "9e3aa73cec26",
-        "5aac1632c93e",
-        "2132f5596f5f",
-        "95ecfaf6df74",
-        "ba070a4e34b4",
-        "31cf092dc035",
-        "28e3e64f4394",
-        "8e787b263eda",
-        "b1875a7d7915",
-        "1a45762b6976",
-        "ce68703137c8",
-        "700dd1862b5e",
-        "12bf91db29c7"
-      ],
-      "why_text": "For the first time since 1973, the New York Knicks have won an NBA Championship, and the cultural shockwave is immediate and total \u2014 celebrities, musicians, late-night TV, and the White House news cycle are all bending toward Madison Square Garden at once. This isn't just a sports story: New York's most tortured major franchise finally delivering is the kind of cathartic, city-defining moment that reshapes pop culture for a full season, from Wu-Tang Clan performing on the Tonight Show to Timoth\u00e9e Chalamet ranking it above his Oscar. The Knicks winning is a permission slip for New York's entire cultural apparatus to go unhinged together.\n**Update 2:01 AM CT:** The celebrity convergence is already materializing in real time: Sydney Sweeney showed up to Game 5 in a custom Jalen Brunson-inspired top, and Timoth\u00e9e Chalamet publicly ranked the Knicks title above his Oscar win, turning what could have been a throwaway quote into the kind of cultural sound bite that will define this moment for years."
-    },
-    "36c2b02995a839c5": {
-      "topic": "Apple iOS 27 Unreleased Features Pipeline",
-      "item_ids": [
-        "8b05340a9995",
-        "3bd959313c89"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d1362895e7db2794": {
-      "topic": "Knicks Championship 2027 NBA Title Odds",
-      "item_ids": [
-        "71b870b0faa8",
-        "3d8bc8129cab",
-        "0e4fdd14a3d8",
-        "89ba79fa8a9e",
-        "25d62a926e74"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-14T21:56:33.697109+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "71b870b0faa8",
-        "3d8bc8129cab",
-        "0e4fdd14a3d8",
-        "89ba79fa8a9e"
-      ]
-    },
-    "7a826dac39df5d01": {
-      "topic": "Jalen Brunson Texas Taxes New York Cost Living",
-      "item_ids": [
-        "5153ac8c1efb"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "73ea127b9b6b5c6d": {
-      "topic": "Dillon Jones Thunder Knicks Championship Rings",
-      "item_ids": [
-        "e90b93333e46"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1d19bc5794bb76a8": {
-      "topic": "Kevin McCullar Kansas Jayhawks NBA Championship",
-      "item_ids": [
-        "116bd86fadce"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8d03660ff48aa5be": {
-      "topic": "Jalen Brunson Defends Monica McNutt Taylor Swift",
-      "item_ids": [
-        "2d6d6129e329",
-        "d00e715c4660",
-        "245d93f71414"
-      ],
-      "created_at": "2026-06-14T16:04:24.719163+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-14T17:41:39.086107+00:00",
-      "picks_file": "picks/picks-2026-06-14-1742.md",
-      "why_text": "ESPN analyst Monica McNutt drew online heat for comments touching on Taylor Swift's cultural footprint around the NBA Finals, and freshly-minted Finals MVP Jalen Brunson used his platform moment to publicly back her \u2014 telling critics to cut her some slack. It's a notable move because athletes almost never wade into media-critic pile-ons, especially during the glow of a championship run. Brunson choosing this fight signals both his comfort with his own cultural standing and a broader tension in sports media between traditional analysis and the Taylor Swift-ification of the NBA's fanbase.",
-      "last_escalated_item_ids": [
-        "2d6d6129e329",
-        "d00e715c4660",
-        "245d93f71414"
-      ]
-    },
-    "a10007e2b55f8214": {
-      "topic": "Gay Dating Show Darren Kennedy Sue Kinkead Launch",
-      "item_ids": [
-        "065589c1877a"
-      ],
-      "created_at": "2026-06-14T17:42:13.025751+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "26b7260cf1115c78": {
-      "topic": "Obsession Curry Barker Film Box Office Milestone",
-      "item_ids": [
-        "d325b7c76154"
-      ],
-      "created_at": "2026-06-14T17:42:13.025751+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b7a16ee7589c9849": {
-      "topic": "Spielberg Scrapped Porgy and Bess Colman Domingo Film",
-      "item_ids": [
-        "fcc85d34a225"
-      ],
-      "created_at": "2026-06-14T17:42:13.025751+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "be8107594ba16d5b": {
-      "topic": "AI Companies IPO Race Tech Investment",
-      "item_ids": [
-        "ba7f12545c7f"
-      ],
-      "created_at": "2026-06-14T17:42:13.025751+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5e57e889f77bf279": {
-      "topic": "Europe Siri AI Assistant Regulatory Constraints",
-      "item_ids": [
-        "21bb316591f0"
-      ],
-      "created_at": "2026-06-14T17:42:13.025751+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6503ae87430dc43c": {
-      "topic": "Nike Plush Sneaker Release",
-      "item_ids": [
-        "15cb60e2ffc7"
-      ],
-      "created_at": "2026-06-14T17:42:13.025751+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "63b9876b1997b233": {
-      "topic": "Creator Economy Stay-at-Home Mom Business Success",
-      "item_ids": [
-        "5f6953a0af51"
-      ],
-      "created_at": "2026-06-14T17:42:13.025751+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "54002376b00ce844": {
       "topic": "Nike Air Max 95 'Illusion Green' Release",
       "item_ids": [
@@ -999,7 +591,8 @@
     "cd2a737741c7dee0": {
       "topic": "Oliver Tree Singer Helicopter Crash Death",
       "item_ids": [
-        "2302808ff9a8"
+        "2302808ff9a8",
+        "dbf3d2c8e47f"
       ],
       "created_at": "2026-06-14T20:39:45.777773+00:00",
       "last_escalated_size": 0,
@@ -1071,7 +664,8 @@
     "157aa73d41f1e387": {
       "topic": "Giannis Trade Rumors Heat Celtics 2026 Draft",
       "item_ids": [
-        "726fb782144c"
+        "726fb782144c",
+        "b4859426d56b"
       ],
       "created_at": "2026-06-15T01:40:39.079040+00:00",
       "last_escalated_size": 0,
@@ -1207,7 +801,8 @@
     "7f668152324f29db": {
       "topic": "UK Bans Social Media Apps for Children",
       "item_ids": [
-        "4ca45d04dafe"
+        "4ca45d04dafe",
+        "d37aed3c0e36"
       ],
       "created_at": "2026-06-15T13:26:04.737954+00:00",
       "last_escalated_size": 0,
@@ -1246,7 +841,205 @@
         "5a1fd9f71736",
         "e2f4b7c60bd5"
       ]
+    },
+    "954c18a22169376e": {
+      "topic": "Vans Fall 2026 Campaign Feng To",
+      "item_ids": [
+        "045d51bc1064"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6dfea278b2fc637a": {
+      "topic": "Nike Knicks Championship Ad DJ Clark Kent Tribute",
+      "item_ids": [
+        "341e23cb19d2"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b972fbe4ae017eee": {
+      "topic": "Bape Timoth\u00e9e Chalamet Knicks Sta 1-of-1",
+      "item_ids": [
+        "dabd6a8fd9fd"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0a5775e0033133d1": {
+      "topic": "Timoth\u00e9e Chalamet Knicks Game Fashion History",
+      "item_ids": [
+        "4913f6d46566"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cafc3469e167b81d": {
+      "topic": "Creepy Horror Podcast Acquired Be Afraid Media",
+      "item_ids": [
+        "0014cb2d5067"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "12f65509f3638760": {
+      "topic": "AI Content Coalition Netflix Victoria Furniss Disney NYT Adobe",
+      "item_ids": [
+        "ad3ca4a9cdc7"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9da8f6b78b033a25": {
+      "topic": "Lin-Manuel Miranda Live-Action Moana New Song",
+      "item_ids": [
+        "7fbad6bfb8cd"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "048f6320c8a4782e": {
+      "topic": "Kris Bowers Motion Picture Academy Board Music Branch",
+      "item_ids": [
+        "1d3a5f79dfa6"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d63083f94650c3fa": {
+      "topic": "Taylor Swift 'I Knew It, I Knew You' No. 1 Billboard Hot 100",
+      "item_ids": [
+        "e7717a671fd5"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8e97fa48a757373d": {
+      "topic": "Madonna Sabrina Carpenter 'Bring Your Love' Video",
+      "item_ids": [
+        "9eacc1d050a3"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63b39774dc21ef58": {
+      "topic": "Disney Branded Television Rebrands to Disney Kids & Family",
+      "item_ids": [
+        "feda02c529d6"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8c17b701ba4cee4e": {
+      "topic": "Alex Borstein Covid-Era Family Dramedy 'Turn The Lights Back On'",
+      "item_ids": [
+        "e5501996bb57"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0ce3a2349c35cddc": {
+      "topic": "Guillermo del Toro David Leitch Motion Picture Academy Governors",
+      "item_ids": [
+        "688a5d35cab3"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c7bf7e8b5050f537": {
+      "topic": "Facebook AI Tools Photo-Editing Question-Answering",
+      "item_ids": [
+        "0e278cda9006"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "feeca4715ace0d04": {
+      "topic": "SpaceX IPO Raises $85.7 Billion Underwriter Overallotment",
+      "item_ids": [
+        "2f4378588f60"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4998f152f8d6dfc8": {
+      "topic": "Nike Air Max Curry Release",
+      "item_ids": [
+        "f1fc997ffd22"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "61d26f5bc3134661": {
+      "topic": "Spike Lee Knicks NBA Championship Ring Debate",
+      "item_ids": [
+        "9d114809f881"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "db22b90cdf8dd89f": {
+      "topic": "First Car Purchase Summer Automotive Advice",
+      "item_ids": [
+        "d860424cbbab"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2ef2fd84fd539c71": {
+      "topic": "DUI Arrest Florida Man BMW 100 MPH",
+      "item_ids": [
+        "3a4027f901c0"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "da79c99baedbeb22": {
+      "topic": "BMW iX3 iX5 Range Monster EV Performance",
+      "item_ids": [
+        "5de63e559c71"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ddbde198ed85f347": {
+      "topic": "2028 BMW iX5 Development",
+      "item_ids": [
+        "151ea50eb5d0"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "688d14ff0d74da15": {
+      "topic": "BMW Neue Klasse EV Home Battery Energy System",
+      "item_ids": [
+        "c0ac23e22ce6"
+      ],
+      "created_at": "2026-06-15T18:08:06.016252+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-15T13:26:20.071841+00:00"
+  "last_checked": "2026-06-15T18:08:06.017588+00:00"
 }
