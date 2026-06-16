@@ -1,63 +1,5 @@
 {
   "known_ids": [
-    "dae79a790555",
-    "c9da499c2120",
-    "7da98b5cb012",
-    "9df6d30437b3",
-    "0c3d5becd0e8",
-    "59c0985204c2",
-    "d6e6eef561db",
-    "8a506ad17a6f",
-    "443188a1c418",
-    "e057e8298161",
-    "3a86c14f2e00",
-    "965f2f7ff307",
-    "59091a77ea4b",
-    "40ccad581987",
-    "9a3a40973827",
-    "37f5c7bcf38d",
-    "4b0aea9adf00",
-    "3aa72cbf412a",
-    "5aebf6307188",
-    "0498004c8c78",
-    "8c4265619134",
-    "3df82795ab0f",
-    "6ac33daf1994",
-    "95d4f2e07241",
-    "1d4f02e269d2",
-    "779d045427b3",
-    "14b4db72a426",
-    "e3be210c6b2a",
-    "43c936098e4f",
-    "f02e37cffd82",
-    "0d5112471529",
-    "a22199e4e0a1",
-    "8c5713ffdb8f",
-    "44c49ca09192",
-    "406002b85599",
-    "bd31d6045f4d",
-    "dec806cccc58",
-    "2cc31b59bef4",
-    "24fb1735f39d",
-    "e48e73b4feeb",
-    "92a988e60122",
-    "b65676ecb683",
-    "833e848be704",
-    "83b11cf2f807",
-    "048daae5b97c",
-    "81b8ce8bafea",
-    "f967068641dc",
-    "d4640beed4fb",
-    "2589f95e2ff0",
-    "747ec6b1543a",
-    "1293f65b1532",
-    "c805990724f3",
-    "ba89f6108e68",
-    "2d956e8b3fcc",
-    "7e3a362e97d1",
-    "ff30eccc7192",
-    "2fe059e3ddf0",
-    "39f502ec248e",
     "2904709a02e5",
     "337b5fcc9f12",
     "c08a29fc7214",
@@ -499,24 +441,67 @@
     "ed1ec9675868",
     "04590a772f00",
     "ac9d1502a63d",
-    "238a5d42093d"
+    "238a5d42093d",
+    "6705402e4d58",
+    "66fd304da1d7",
+    "3e8278f80648",
+    "86ec67ecfb53",
+    "79bab75fb484",
+    "85e32743607e",
+    "40e85537637f",
+    "1f06e215e72f",
+    "908d78539bf0",
+    "38a24fd27da4",
+    "104cd7bd0046",
+    "75a85a164592",
+    "8b98e408d7d2",
+    "7d6e5d1a8982",
+    "d27c9320474a",
+    "b49961d82c0d",
+    "f02f9db97757",
+    "6f60b1912e1f",
+    "6d25f4f4d66f",
+    "1673335cfcd2",
+    "fd2992f052cb",
+    "ab6bd4a8d270",
+    "dcbba6f31cc4",
+    "26bc60a40ffb",
+    "83750c912dd4",
+    "64752b21593d",
+    "9963033e91b2",
+    "d761d5bb93b2",
+    "9eabac8a7ec8",
+    "a0919b75c09c",
+    "7400be04a484",
+    "bb9e1d969585",
+    "1531d236158c",
+    "8db029bec29a",
+    "5ee24c2c46bf",
+    "07e1c5d8f143",
+    "91c596b9074e",
+    "d1da494afd44",
+    "0819d326cb26",
+    "9f914a91ca67",
+    "00a43f6f1ee7",
+    "d8695768d3f3",
+    "fbd7633951b2",
+    "42c1f98005de",
+    "53f22c3d8b97",
+    "791b6b286983",
+    "af80ff1d4470",
+    "e29051f856d8",
+    "205ee5a2ac2d",
+    "f48f9ec3ce8f",
+    "0c68b50dd99e",
+    "8c10f8d1cfc5",
+    "44f4283a0f8a",
+    "a04bc4d12759",
+    "f621ddb5b2ad",
+    "28c549d311c0",
+    "6ebf061851c5",
+    "6b58791deac6"
   ],
-  "failed_ids": {
-    "2da78655446c": "2026-06-16T07:10:24.226077+00:00",
-    "ae262d8e733e": "2026-06-16T07:10:24.226077+00:00",
-    "a6401b6e409a": "2026-06-16T07:10:24.226077+00:00",
-    "a44efb65caaa": "2026-06-16T07:10:24.226077+00:00",
-    "9afc51556d50": "2026-06-16T07:10:24.226077+00:00",
-    "f8b3c5edf131": "2026-06-16T07:10:24.226077+00:00",
-    "0a58486f83dd": "2026-06-16T07:10:24.226077+00:00",
-    "aa849c32f6b8": "2026-06-16T07:10:24.226077+00:00",
-    "bee6b03eebe6": "2026-06-16T07:10:24.226077+00:00",
-    "54a9b90fc2ae": "2026-06-16T07:10:24.226077+00:00",
-    "68336479a5d8": "2026-06-16T07:10:24.226077+00:00",
-    "49f0e91ad2e3": "2026-06-16T07:10:24.226077+00:00",
-    "3eb089267a36": "2026-06-16T07:10:24.226077+00:00",
-    "bfbfc8650f59": "2026-06-16T07:10:24.226077+00:00"
-  },
+  "failed_ids": {},
   "live_clusters": {
     "7759dbf99f45ce42": {
       "topic": "Billy Crystal Broadway Solo Show '860' Opening",
@@ -596,7 +581,9 @@
       "item_ids": [
         "e18c3b217d6d",
         "a73e09e89802",
-        "773e914e3385"
+        "773e914e3385",
+        "8db029bec29a",
+        "d1da494afd44"
       ],
       "created_at": "2026-06-15T13:26:04.737954+00:00",
       "last_escalated_size": 3,
@@ -625,16 +612,22 @@
         "5a1fd9f71736",
         "e2f4b7c60bd5",
         "b1712cdbb0b1",
-        "009e85b33e62"
+        "009e85b33e62",
+        "8c10f8d1cfc5"
       ],
       "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-15T13:25:28.988774+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-16T12:24:08.320216+00:00",
       "last_escalated_item_ids": [
         "f7816b101f5a",
         "5a1fd9f71736",
-        "e2f4b7c60bd5"
-      ]
+        "e2f4b7c60bd5",
+        "b1712cdbb0b1",
+        "009e85b33e62",
+        "8c10f8d1cfc5"
+      ],
+      "picks_file": "picks/picks-2026-06-16-1224.md",
+      "why_text": "BMW is deep in development on the next-generation X5 just as Audi boldly launches the A6 Allroad into a segment where BMW currently has no direct answer \u2014 a rare moment of competitive vulnerability for Munich. The timing is pointed: Audi is planting a flag in the premium wagon-SUV crossover space while BMW's response is still under camouflage. How BMW shapes the next X5's positioning in response to moves like this will define the luxury utility segment for the next decade."
     },
     "954c18a22169376e": {
       "topic": "Vans Fall 2026 Campaign Feng To",
@@ -765,11 +758,18 @@
     "feeca4715ace0d04": {
       "topic": "SpaceX IPO Raises $85.7 Billion Underwriter Overallotment",
       "item_ids": [
-        "2f4378588f60"
+        "2f4378588f60",
+        "6f60b1912e1f",
+        "fd2992f052cb"
       ],
       "created_at": "2026-06-15T18:08:06.016252+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-16T12:24:08.320216+00:00",
+      "last_escalated_item_ids": [
+        "2f4378588f60",
+        "6f60b1912e1f",
+        "fd2992f052cb"
+      ]
     },
     "4998f152f8d6dfc8": {
       "topic": "Nike Air Max Curry Release",
@@ -1162,7 +1162,8 @@
     "b449a43a486e65e7": {
       "topic": "BMW M3 Manual Transmission Non-Hybrid Future",
       "item_ids": [
-        "81b415b10a38"
+        "81b415b10a38",
+        "a04bc4d12759"
       ],
       "created_at": "2026-06-16T01:49:40.936221+00:00",
       "last_escalated_size": 0,
@@ -1275,7 +1276,188 @@
       "created_at": "2026-06-16T07:10:52.247300+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "c23d0b6afb7d4ea5": {
+      "topic": "Nepo Baby Chef Michelin Stars",
+      "item_ids": [
+        "6705402e4d58"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ee7a10225c7de843": {
+      "topic": "Serena Venus Williams Wimbledon Doubles Reunion",
+      "item_ids": [
+        "3e8278f80648"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9701ed11a3199a55": {
+      "topic": "Tyler The Creator New Era Denial",
+      "item_ids": [
+        "86ec67ecfb53"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5a1ec2dd1d057e45": {
+      "topic": "Brian Cox Raindance Icon Award",
+      "item_ids": [
+        "79bab75fb484"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2ca3924308ae2ae4": {
+      "topic": "Matthew Broome My Fault London Bond Audition",
+      "item_ids": [
+        "40e85537637f"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e8a616e10c38b500": {
+      "topic": "Cordell Barker Anta Claus South Pole Christmas Special",
+      "item_ids": [
+        "1f06e215e72f"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e7a614077b8ab8aa": {
+      "topic": "Verizon Austin Powers Ugly Betty Cast Reunion Ad",
+      "item_ids": [
+        "908d78539bf0"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4f50b39842e6080f": {
+      "topic": "Sheryl Crow Trump UFC White House Birthday Event Criticism",
+      "item_ids": [
+        "38a24fd27da4"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b88a76f9471c6776": {
+      "topic": "Steven Knight Peaky Blinders Netflix UK Talent Fund Payment",
+      "item_ids": [
+        "104cd7bd0046"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3573d7d2a4589766": {
+      "topic": "Matthew Broome My Fault London Culpa Mia Pressure",
+      "item_ids": [
+        "75a85a164592"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4a3709463eef9662": {
+      "topic": "CAA Sports Anthony Joshua Commercial Deal",
+      "item_ids": [
+        "8b98e408d7d2"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "58c21eaaa61ad52c": {
+      "topic": "TikTok Shop iPhone Bid Teddy Bear Scam",
+      "item_ids": [
+        "d27c9320474a"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ed5e7330651f7c38": {
+      "topic": "India Telegram Ban Exam Fraud",
+      "item_ids": [
+        "b49961d82c0d",
+        "1673335cfcd2"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "860d7a9ff4874e07": {
+      "topic": "Threads 500M Monthly Users Feature Expansion",
+      "item_ids": [
+        "6d25f4f4d66f"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3bedd9f81c2897a5": {
+      "topic": "Yum Brands Pizza Hut Sale LongRange LongRange Yum China",
+      "item_ids": [
+        "83750c912dd4"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c07bc27c8b0e460": {
+      "topic": "AMD Rackspace 30 MW AI Compute Deployment",
+      "item_ids": [
+        "a0919b75c09c"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5a0505e24bc921eb": {
+      "topic": "Vacheron Constantin Traditionelle Twin Beat Perpetual Calendar",
+      "item_ids": [
+        "1531d236158c"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bdeca30c78f627e9": {
+      "topic": "NBA Offseason Storylines Windhorst",
+      "item_ids": [
+        "5ee24c2c46bf"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "47b5914c400a681a": {
+      "topic": "NBA Draft All-Time Biggest Mistakes Ranking",
+      "item_ids": [
+        "07e1c5d8f143"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0a46634bf0fad612": {
+      "topic": "Mobileye Vertically Integrated Robotaxi Business",
+      "item_ids": [
+        "d8695768d3f3"
+      ],
+      "created_at": "2026-06-16T12:24:43.255105+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-16T07:10:52.248533+00:00"
+  "last_checked": "2026-06-16T12:24:56.505581+00:00"
 }
