@@ -3603,6 +3603,7 @@
   function dismissBanner() {
     bannerDismissed = true;
     document.getElementById('new-picks-banner').style.display='none';
+    loadFeed();
   }
 
   function showLivePicksBanner(count) {

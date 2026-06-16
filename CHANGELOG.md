@@ -4,6 +4,12 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-15] Fix: clicking "new picks" banner now actually refreshes the feed
+
+`dismissBanner()` was only hiding the banner without reloading data. Added a `loadFeed()` call so clicking the banner fetches and renders the new picks as expected.
+
+---
+
 ## [2026-06-13] Optimization: token efficiency — halve breaking-news poll rate, cache Haiku prompt, trim scoring context
 
 Four changes to reduce daily API token spend (~650K–1.3M tokens/day → ~400–800K estimated). (1) **Breaking news cron 5min→10min** (`.github/workflows/breaking_news.yml`): halves the number of Haiku calls from 288/day to 144/day, saving ~144K–288K tokens/day with at most 5 min added latency to a breaking story. (2) **Prompt cache on Haiku quality gate** (`breaking_news_check.py`, `filter_and_enrich_items()`): the static scoring rubric (~1.5K tokens) is now split out with `cache_control: ephemeral` so calls 2–N within the 5-min cache TTL reuse a warm cache — saves ~60–70% of per-call input tokens. (3) **Trending topics cap 30→10** (`daily_curator.py`, `evaluate_articles_with_claude()`): scoring context block now injects only the top 10 trending topics instead of 30; the signal from ranks 11–30 is negligible. (4) **Recently-covered window 3 days→1 day** (`daily_curator.py`, `load_recently_covered_topics()`): the 3-day lookback was loading 40–100+ stale entries into every scoring prompt; 1 day captures all the meaningful same-day dedup signal while actual URL dedup is handled separately.
