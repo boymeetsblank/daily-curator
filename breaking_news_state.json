@@ -1,61 +1,5 @@
 {
   "known_ids": [
-    "2904709a02e5",
-    "337b5fcc9f12",
-    "c08a29fc7214",
-    "bc77099f365e",
-    "966c8055502d",
-    "1aaa49160b4a",
-    "e4450f174127",
-    "ee7cffd54b4c",
-    "69ede857e433",
-    "b6e68f056a3e",
-    "29ff6b5daa37",
-    "321ccbab5314",
-    "8cfb76939ef1",
-    "8f0dc4715079",
-    "f4017e5c4ace",
-    "b56decb14d5d",
-    "4129ce7e7ab5",
-    "1aa5c380246c",
-    "b26fe88b5f59",
-    "b60af198452e",
-    "308839a3f4c2",
-    "e453a9f12034",
-    "02faf572a425",
-    "e59f90b973e7",
-    "96aa3f947e44",
-    "237e8b29df2c",
-    "019fe21b4f37",
-    "c2e6c79efcfb",
-    "56f0b617a56f",
-    "1320fa23c3c4",
-    "0ab6c0fbd0ba",
-    "7e1d18399335",
-    "65c604a99fb6",
-    "dad73f39d785",
-    "427cb9655c6f",
-    "9485c71e8b53",
-    "6977f513d6a6",
-    "a5ea7530cdf5",
-    "491c83c08bb2",
-    "32deb6e8ac3b",
-    "5ccce065dacc",
-    "127483645cb9",
-    "99900b7d12a2",
-    "f613f871c2a3",
-    "cbc50238cdab",
-    "442e8630e1c6",
-    "0382f15a4154",
-    "5481b4cf4bc8",
-    "e633c1c2bca0",
-    "66d439a6cfa0",
-    "6c305bb10257",
-    "42759ad3a797",
-    "77dfa7fd0e12",
-    "510a313d8780",
-    "8da6839eb4f6",
-    "ead66831fcde",
     "538a8c4ee044",
     "f9efc893ec4c",
     "fbf307ff26b8",
@@ -499,136 +443,92 @@
     "f621ddb5b2ad",
     "28c549d311c0",
     "6ebf061851c5",
-    "6b58791deac6"
+    "6b58791deac6",
+    "7722d063f613",
+    "42b19033120c",
+    "0426febcc14f",
+    "ed16e3a7e42a",
+    "d109750c5efa",
+    "60d0f2fb35f3",
+    "83e01941d255",
+    "4b62c5f33849",
+    "e710b42e437e",
+    "51853213a42c",
+    "3d305454e432",
+    "3956c424cefe",
+    "dc273221a392",
+    "444bad7943bd",
+    "3e1a0221707e",
+    "4309968eac03",
+    "ae77b4812833",
+    "7c03a5714952",
+    "0da1cba38335",
+    "7484de5b3c93",
+    "6a35e42f1ae5",
+    "abb69ea1b602",
+    "e77af0424c0d",
+    "0b32d01a4e18",
+    "6101a70f6e74",
+    "63819be4dd56",
+    "95bccd6105cb",
+    "f65ff9ca0c5b",
+    "daf7e98cd72f",
+    "147a41ba12b8",
+    "78fc4b6ad1a2",
+    "8ad7ba77a757",
+    "897cc4dbaf73",
+    "432418d955a3",
+    "26f50f579eea",
+    "a158037b4a0b",
+    "803ff91779ca",
+    "1c12ed277d31",
+    "ece11b9bd750",
+    "c516458802f5",
+    "d1b76d51c337",
+    "cda044d25ed5",
+    "c00bc8f88fa3",
+    "ee47be5178a1",
+    "b63f8062b818",
+    "2f38768084ab",
+    "f7d32ab8fc8b",
+    "9ced2ce8b2c4",
+    "01829ae3d929",
+    "31498e3facd4",
+    "31498e3facd4",
+    "2db3e11929d0",
+    "54b0b7d1accc",
+    "bed0e6b84948",
+    "785208af2aa4",
+    "1d3769fd3b56"
   ],
-  "failed_ids": {},
+  "failed_ids": {
+    "d34857d5b6f4": "2026-06-16T17:30:55.064456+00:00",
+    "07cf50d60d9b": "2026-06-16T17:30:55.064456+00:00",
+    "cb73d99a5807": "2026-06-16T17:30:55.064456+00:00",
+    "174fd2aaff72": "2026-06-16T17:30:55.064456+00:00",
+    "bf40546ecbc7": "2026-06-16T17:30:55.064456+00:00",
+    "b465d348bc30": "2026-06-16T17:30:55.064456+00:00",
+    "f0d0b7cf0d24": "2026-06-16T17:30:55.064456+00:00",
+    "41ff631f3483": "2026-06-16T17:30:55.064456+00:00",
+    "a983c8ab7886": "2026-06-16T17:30:55.064456+00:00",
+    "ff9ea93d571a": "2026-06-16T17:30:55.064456+00:00",
+    "f9d9c24cab75": "2026-06-16T17:30:55.064456+00:00",
+    "cb5d1321c23f": "2026-06-16T17:30:55.064456+00:00",
+    "96f91acf9854": "2026-06-16T17:30:55.064456+00:00",
+    "bdf40ef21909": "2026-06-16T17:30:55.064456+00:00",
+    "275a54a1cf13": "2026-06-16T17:30:55.064456+00:00",
+    "6c20b353d390": "2026-06-16T17:30:55.064456+00:00",
+    "a02e45de85f6": "2026-06-16T17:30:55.064456+00:00",
+    "96edeb3ade86": "2026-06-16T17:30:55.064456+00:00",
+    "34601a7c885d": "2026-06-16T17:30:55.064456+00:00",
+    "7967f85f35e4": "2026-06-16T17:30:55.064456+00:00",
+    "e126807c3c84": "2026-06-16T17:30:55.064456+00:00",
+    "1d7021798187": "2026-06-16T17:30:55.064456+00:00",
+    "e350834e7228": "2026-06-16T17:30:55.064456+00:00",
+    "6a30b3836693": "2026-06-16T17:30:55.064456+00:00",
+    "f251162f1e16": "2026-06-16T17:30:55.064456+00:00"
+  },
   "live_clusters": {
-    "7759dbf99f45ce42": {
-      "topic": "Billy Crystal Broadway Solo Show '860' Opening",
-      "item_ids": [
-        "2e92c1fcd69e"
-      ],
-      "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9e588d765ec8537e": {
-      "topic": "NewCore AI Agent Identity Platform Funding",
-      "item_ids": [
-        "da4b5edf73d1"
-      ],
-      "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2d496abf348959ed": {
-      "topic": "Satellite Autonomous Learning Technology",
-      "item_ids": [
-        "e3d090f143fc"
-      ],
-      "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9dafa5e68b10236f": {
-      "topic": "Fox Acquisition Roku $22 Billion",
-      "item_ids": [
-        "73c9e32da4cd",
-        "317fb88492ca",
-        "4a2c74d0676d",
-        "3960355c55ee",
-        "834aee881755"
-      ],
-      "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-15T13:25:28.988774+00:00",
-      "picks_file": "picks/picks-2026-06-15-1326.md",
-      "why_text": "Fox Corp acquiring Roku isn't just a hardware deal \u2014 it's a direct power grab at the living room, giving Rupert Murdoch's media empire a distribution chokehold over tens of millions of streaming households. Roku's 80+ million active accounts become a captive audience for Fox News, Fox Sports, and Tubi overnight, reshaping who controls what gets surfaced on the home screen. This is old media buying the remote control itself.",
-      "last_escalated_item_ids": [
-        "73c9e32da4cd",
-        "317fb88492ca",
-        "4a2c74d0676d"
-      ]
-    },
-    "549ed4694a9e093c": {
-      "topic": "OBJ Vintage T-Shirt Collection Resale",
-      "item_ids": [
-        "8c82dd3a1c49"
-      ],
-      "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7f668152324f29db": {
-      "topic": "UK Bans Social Media Apps for Children",
-      "item_ids": [
-        "4ca45d04dafe",
-        "d37aed3c0e36",
-        "2956ed80152c"
-      ],
-      "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-15T21:19:00.645015+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "4ca45d04dafe",
-        "d37aed3c0e36",
-        "2956ed80152c"
-      ]
-    },
-    "931b399d609be7e2": {
-      "topic": "2026 NBA Mock Draft Projections",
-      "item_ids": [
-        "e18c3b217d6d",
-        "a73e09e89802",
-        "773e914e3385",
-        "8db029bec29a",
-        "d1da494afd44"
-      ],
-      "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-16T01:49:13.595076+00:00",
-      "picks_file": "picks/picks-2026-06-16-0149.md",
-      "why_text": "With the 2026 NBA Draft just a week away, Bleacher Report's comprehensive big board is the last major pre-draft consensus document scouts, fans, and front offices will scrutinize before picks are locked in. The ranking of 74 prospects signals how deep this class runs \u2014 and how much leverage teams holding mid-to-late lottery picks actually have. Draft season is one of the few moments where hope is distributed equally across the league, and right now every fanbase is doing the math on their team's future.",
-      "last_escalated_item_ids": [
-        "e18c3b217d6d",
-        "a73e09e89802",
-        "773e914e3385"
-      ]
-    },
-    "e5424b6faba48b82": {
-      "topic": "NBA Contract Rumors Wembanyama Vassell Champagnie",
-      "item_ids": [
-        "2234e47d3839"
-      ],
-      "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f9d838c659d36c46": {
-      "topic": "2027 BMW X5 Prototype Testing Development",
-      "item_ids": [
-        "f7816b101f5a",
-        "5a1fd9f71736",
-        "e2f4b7c60bd5",
-        "b1712cdbb0b1",
-        "009e85b33e62",
-        "8c10f8d1cfc5"
-      ],
-      "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-16T12:24:08.320216+00:00",
-      "last_escalated_item_ids": [
-        "f7816b101f5a",
-        "5a1fd9f71736",
-        "e2f4b7c60bd5",
-        "b1712cdbb0b1",
-        "009e85b33e62",
-        "8c10f8d1cfc5"
-      ],
-      "picks_file": "picks/picks-2026-06-16-1224.md",
-      "why_text": "BMW is deep in development on the next-generation X5 just as Audi boldly launches the A6 Allroad into a segment where BMW currently has no direct answer \u2014 a rare moment of competitive vulnerability for Munich. The timing is pointed: Audi is planting a flag in the premium wagon-SUV crossover space while BMW's response is still under camouflage. How BMW shapes the next X5's positioning in response to moves like this will define the luxury utility segment for the next decade."
-    },
     "954c18a22169376e": {
       "topic": "Vans Fall 2026 Campaign Feng To",
       "item_ids": [
@@ -659,7 +559,8 @@
     "0a5775e0033133d1": {
       "topic": "Timoth\u00e9e Chalamet Knicks Game Fashion History",
       "item_ids": [
-        "4913f6d46566"
+        "4913f6d46566",
+        "60d0f2fb35f3"
       ],
       "created_at": "2026-06-15T18:08:06.016252+00:00",
       "last_escalated_size": 0,
@@ -760,7 +661,8 @@
       "item_ids": [
         "2f4378588f60",
         "6f60b1912e1f",
-        "fd2992f052cb"
+        "fd2992f052cb",
+        "803ff91779ca"
       ],
       "created_at": "2026-06-15T18:08:06.016252+00:00",
       "last_escalated_size": 3,
@@ -1126,7 +1028,8 @@
         "3713babcb4e6",
         "71ef44fa6384",
         "f0afc732349e",
-        "1e1166070170"
+        "1e1166070170",
+        "b63f8062b818"
       ],
       "created_at": "2026-06-16T01:49:40.936221+00:00",
       "last_escalated_size": 5,
@@ -1144,7 +1047,8 @@
     "eb9b7367e30bc1f2": {
       "topic": "OG Anunoby Skechers Basketball Sneaker Discount",
       "item_ids": [
-        "4c33727ec56e"
+        "4c33727ec56e",
+        "d109750c5efa"
       ],
       "created_at": "2026-06-16T01:49:40.936221+00:00",
       "last_escalated_size": 0,
@@ -1298,7 +1202,8 @@
     "9701ed11a3199a55": {
       "topic": "Tyler The Creator New Era Denial",
       "item_ids": [
-        "86ec67ecfb53"
+        "86ec67ecfb53",
+        "dc273221a392"
       ],
       "created_at": "2026-06-16T12:24:43.255105+00:00",
       "last_escalated_size": 0,
@@ -1443,7 +1348,8 @@
     "47b5914c400a681a": {
       "topic": "NBA Draft All-Time Biggest Mistakes Ranking",
       "item_ids": [
-        "07e1c5d8f143"
+        "07e1c5d8f143",
+        "c00bc8f88fa3"
       ],
       "created_at": "2026-06-16T12:24:43.255105+00:00",
       "last_escalated_size": 0,
@@ -1452,12 +1358,419 @@
     "0a46634bf0fad612": {
       "topic": "Mobileye Vertically Integrated Robotaxi Business",
       "item_ids": [
-        "d8695768d3f3"
+        "d8695768d3f3",
+        "daf7e98cd72f"
       ],
       "created_at": "2026-06-16T12:24:43.255105+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "e056798d3e9ee15d": {
+      "topic": "JiyongKim PUMA Sneaker Collaboration",
+      "item_ids": [
+        "7722d063f613"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8d86bd79070b9165": {
+      "topic": "Caitlin Clark Nike Signature Shoe",
+      "item_ids": [
+        "42b19033120c"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "989f686cdfeb9800": {
+      "topic": "Luka Don\u010di\u0107 Jordan Brand European Tour",
+      "item_ids": [
+        "0426febcc14f"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a10636670797a527": {
+      "topic": "Air Jordan 1 Mid Bulls Colors Release",
+      "item_ids": [
+        "ed16e3a7e42a"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5736980acee44c6e": {
+      "topic": "Nike Weekly Sneaker Releases",
+      "item_ids": [
+        "83e01941d255"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "be8ddca2d33df1c3": {
+      "topic": "Toy Story 5 Review",
+      "item_ids": [
+        "4b62c5f33849"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "13c28f76609133b8": {
+      "topic": "Heartstopper Forever Netflix Movie Trailer",
+      "item_ids": [
+        "e710b42e437e"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2e2d988be4776e94": {
+      "topic": "Kynetic Media Graviteur Studios Launch",
+      "item_ids": [
+        "51853213a42c"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eeaeb0635f3ee4c9": {
+      "topic": "Vince Staples North American Tour",
+      "item_ids": [
+        "3d305454e432"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f7a5a542839bea55": {
+      "topic": "Isaiah Rashad U.S. Tour Announcement",
+      "item_ids": [
+        "3956c424cefe"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aabe8e32320156cd": {
+      "topic": "Rob49 Vulture Island Experience",
+      "item_ids": [
+        "444bad7943bd"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "465944b6675bf568": {
+      "topic": "50 Best R&B Groups Ranking",
+      "item_ids": [
+        "3e1a0221707e"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6996dfff487b2069": {
+      "topic": "Drake Kevin Durant Sneaker Ad",
+      "item_ids": [
+        "4309968eac03"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fc3748e2b57597be": {
+      "topic": "Billboard Hot 100 Hot Country Songs Crossover Hits",
+      "item_ids": [
+        "ae77b4812833"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "887ad85a9082f93b": {
+      "topic": "Bonnie Blue Story Documentary",
+      "item_ids": [
+        "7c03a5714952"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3ad35495f95d329c": {
+      "topic": "Gregg Allman Documentary",
+      "item_ids": [
+        "0da1cba38335"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "74780c0bd162fd03": {
+      "topic": "Amazon MGM Ariana Greenblatt Egg Baby",
+      "item_ids": [
+        "7484de5b3c93"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4fc8b9e4ac413ffb": {
+      "topic": "Mickey's Home Alone Christmas Special",
+      "item_ids": [
+        "6a35e42f1ae5"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ec946f210bd1ae2b": {
+      "topic": "Funny AF With Kevin Hart Season 2 Renewal",
+      "item_ids": [
+        "abb69ea1b602"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9231fef777a3f5cb": {
+      "topic": "Untitled Acquires Brookside Artist Management",
+      "item_ids": [
+        "e77af0424c0d"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bb01d7cd47e32a09": {
+      "topic": "Sarah Michelle Gellar Rudy Pankow Mali Elfman Thud",
+      "item_ids": [
+        "0b32d01a4e18"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "98dbfeab1578b0a6": {
+      "topic": "Future of Home",
+      "item_ids": [
+        "6101a70f6e74"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2de1ac846ee15b33": {
+      "topic": "Climate Change Innovation",
+      "item_ids": [
+        "63819be4dd56"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "10820a74406a1934": {
+      "topic": "Snap Specs AR Glasses Launch",
+      "item_ids": [
+        "95bccd6105cb",
+        "147a41ba12b8",
+        "ece11b9bd750"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-16T17:30:55.064456+00:00",
+      "picks_file": "picks/picks-2026-06-16-1731.md",
+      "why_text": "Snap just made its most serious hardware bet yet, launching Specs \u2014 actual AR glasses, not a camera novelty \u2014 at a price point that signals this is a developer and early-adopter play, not a consumer mass-market push. At $2,195, Evan Spiegel is essentially arguing that the post-smartphone era is worth paying for before it arrives, positioning Snap as infrastructure for whatever comes after the iPhone. The timing matters: Apple Vision Pro disappointed at scale, Meta's Ray-Bans went mainstream but stayed camera-first, and Snap is now staking a claim in the gap between fashion accessory and true spatial computing.",
+      "last_escalated_item_ids": [
+        "95bccd6105cb",
+        "147a41ba12b8",
+        "ece11b9bd750"
+      ]
+    },
+    "9b25ee51d986024f": {
+      "topic": "Best Robot Vacuum 2026",
+      "item_ids": [
+        "f65ff9ca0c5b"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cb9b9464545e46ff": {
+      "topic": "AI in Brand Messaging Consumer Sentiment",
+      "item_ids": [
+        "78fc4b6ad1a2"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a07da11d304a3d31": {
+      "topic": "Nintendo Switch eShop Update",
+      "item_ids": [
+        "8ad7ba77a757"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "867d5f1167797f97": {
+      "topic": "Qualcomm Snapdragon Reality Elite AR Chip",
+      "item_ids": [
+        "897cc4dbaf73"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b10f939d576d5cf4": {
+      "topic": "Xreal Android XR Aura Glasses",
+      "item_ids": [
+        "432418d955a3"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "976e09c5afaf99cf": {
+      "topic": "NFC Charging Smartglasses",
+      "item_ids": [
+        "26f50f579eea"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "511c5b68173684b0": {
+      "topic": "Kodak Charmera Y2K Camera Designs",
+      "item_ids": [
+        "a158037b4a0b"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0a5db47177fd9eff": {
+      "topic": "Rivian R2 Launch Worker Layoffs",
+      "item_ids": [
+        "1c12ed277d31"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aa81148085d33793": {
+      "topic": "Rei Kawakubo Chairs Design Philosophy",
+      "item_ids": [
+        "c516458802f5"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8947de2eae2fe628": {
+      "topic": "Apple 20th Anniversary iPhone AirPods Cameras",
+      "item_ids": [
+        "d1b76d51c337"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ee4cace5c7b29ed1": {
+      "topic": "Victor Wembanyama NBA Criticism",
+      "item_ids": [
+        "cda044d25ed5"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eeef19525a26168c": {
+      "topic": "Chicago Bulls Splitter Coaching Hire",
+      "item_ids": [
+        "ee47be5178a1"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0c012d55c39f20c7": {
+      "topic": "2026 NBA Draft Nets No. 6 Pick Projections",
+      "item_ids": [
+        "2f38768084ab"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6868b4d59c7b25fd": {
+      "topic": "20-Year-Old Ice Cream Brand Entrepreneur",
+      "item_ids": [
+        "f7d32ab8fc8b"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "75f077b1d1a31361": {
+      "topic": "SpaceX Cursor AI Coding Deal",
+      "item_ids": [
+        "9ced2ce8b2c4"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "13e9d54d341b9754": {
+      "topic": "SpaceX Market Cap Valuation Analysis",
+      "item_ids": [
+        "01829ae3d929",
+        "31498e3facd4"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "89ae2a5cc1662bf5": {
+      "topic": "BMW 2026 Outlook Downgrade",
+      "item_ids": [
+        "2db3e11929d0",
+        "bed0e6b84948",
+        "785208af2aa4"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-16T17:30:55.064456+00:00",
+      "picks_file": "picks/picks-2026-06-16-1732.md",
+      "why_text": "BMW's decision to downgrade its 2026 outlook is a stark signal that the luxury auto sector is caught in a geopolitical vice \u2014 China's prolonged economic downturn is gutting demand in what was supposed to be the industry's growth engine, while the widening Middle East conflict is spiking supply chain costs and rattling consumer confidence. This isn't just a BMW problem: it's a canary-in-the-coalmine moment for every European automaker that over-indexed on China's recovery and assumed geopolitical instability would stay contained. When a brand as resilient as BMW starts walking back targets this publicly, the broader industrial outlook gets a lot harder to spin.",
+      "last_escalated_item_ids": [
+        "2db3e11929d0",
+        "bed0e6b84948",
+        "785208af2aa4"
+      ]
+    },
+    "c712943355ca9431": {
+      "topic": "2027 BMW M3 Final G80 Generation",
+      "item_ids": [
+        "54b0b7d1accc"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "98cdb73a800f9361": {
+      "topic": "Next BMW M3 Manual Transmission",
+      "item_ids": [
+        "1d3769fd3b56"
+      ],
+      "created_at": "2026-06-16T17:31:55.246923+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-16T12:24:56.505581+00:00"
+  "last_checked": "2026-06-16T17:32:09.808857+00:00"
 }
