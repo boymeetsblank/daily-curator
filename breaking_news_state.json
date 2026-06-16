@@ -1,25 +1,5 @@
 {
   "known_ids": [
-    "dd48b8508387",
-    "3fbdcc20616b",
-    "9a1521ad581f",
-    "be518a2325b5",
-    "9bf24a184077",
-    "96d06eac8a2d",
-    "521762d3c4da",
-    "fb0b4b4eb148",
-    "2514b43a431a",
-    "8352110aa618",
-    "0a110c6d38e5",
-    "1c9447fc6814",
-    "0e1279da65dd",
-    "b748034045fa",
-    "81fb3cec4438",
-    "7d9c00b23da2",
-    "0e8d88a0f553",
-    "af08e2e8911f",
-    "77e40c1fe33a",
-    "605ec48c7a1d",
     "dae79a790555",
     "c9da499c2120",
     "7da98b5cb012",
@@ -499,104 +479,45 @@
     "4b25f88bb68b",
     "16eb739f79b6",
     "8bb33341278c",
-    "712c9eb28eb1"
+    "712c9eb28eb1",
+    "0243b9cb41e6",
+    "1ca823371fd3",
+    "be1240026846",
+    "f100696831b8",
+    "521f2d5464dc",
+    "d9cf6efc1458",
+    "7816faafb26a",
+    "3c3e68073f42",
+    "be4249d99f1d",
+    "9035b25632ef",
+    "4fd9325c2b6f",
+    "aa4b6107d0bb",
+    "cd81ec515824",
+    "a399e347cca7",
+    "1e1166070170",
+    "3ab304295ac6",
+    "ed1ec9675868",
+    "04590a772f00",
+    "ac9d1502a63d",
+    "238a5d42093d"
   ],
   "failed_ids": {
-    "4ffac55cf0cd": "2026-06-15T23:12:47.918003+00:00",
-    "9fc9a34bdab9": "2026-06-15T23:12:47.918003+00:00",
-    "f49edb6ad941": "2026-06-15T23:12:47.918003+00:00",
-    "87d50fc49980": "2026-06-15T23:12:47.918003+00:00",
-    "717c54c6fb01": "2026-06-15T23:12:47.918003+00:00",
-    "3c48340b09be": "2026-06-15T23:12:47.918003+00:00",
-    "3d1696524c17": "2026-06-15T23:12:47.918003+00:00",
-    "f931835d699e": "2026-06-15T23:12:47.918003+00:00",
-    "71ed2eea4532": "2026-06-15T23:12:47.918003+00:00",
-    "8c3a8dee085b": "2026-06-15T23:12:47.918003+00:00",
-    "c3cfd2b27b27": "2026-06-15T23:12:47.918003+00:00",
-    "b54f1b91d32e": "2026-06-15T23:12:47.918003+00:00",
-    "a44b076452e8": "2026-06-15T23:12:47.918003+00:00",
-    "59e520d3b2bf": "2026-06-15T23:12:47.918003+00:00",
-    "ad17c15b1e12": "2026-06-15T23:12:47.918003+00:00",
-    "04a74ecc8703": "2026-06-15T23:12:47.918003+00:00",
-    "72a4452ef231": "2026-06-15T23:12:47.918003+00:00",
-    "815d2f5fa09e": "2026-06-15T23:12:47.918003+00:00",
-    "bd49c65b26b2": "2026-06-15T23:12:47.918003+00:00",
-    "1a5b1b30e9a0": "2026-06-15T23:12:47.918003+00:00",
-    "113c23c73fef": "2026-06-15T23:12:47.918003+00:00",
-    "78a03fa6ec3f": "2026-06-15T23:12:47.918003+00:00",
-    "de39c8a63b57": "2026-06-15T23:12:47.918003+00:00",
-    "ef5295139271": "2026-06-15T23:12:47.918003+00:00",
-    "cf3bb740d645": "2026-06-15T23:12:47.918003+00:00",
-    "9daeb1e86b76": "2026-06-15T23:12:47.918003+00:00",
-    "7157371332f7": "2026-06-15T23:12:47.918003+00:00",
-    "17dcfbe0aac8": "2026-06-15T23:12:47.918003+00:00",
-    "fc465495fa37": "2026-06-16T01:49:13.595076+00:00",
-    "662aaf7acf30": "2026-06-16T01:49:13.595076+00:00",
-    "fdcd63a8f281": "2026-06-16T01:49:13.595076+00:00",
-    "15b71cf72789": "2026-06-16T01:49:13.595076+00:00",
-    "e7f082998926": "2026-06-16T01:49:13.595076+00:00",
-    "1efe81e559e7": "2026-06-16T01:49:13.595076+00:00",
-    "b56490160747": "2026-06-16T01:49:13.595076+00:00",
-    "af6b0b1b9c14": "2026-06-16T01:49:13.595076+00:00",
-    "a36d597e1d27": "2026-06-16T01:49:13.595076+00:00",
-    "d3ce6874dcb5": "2026-06-16T01:49:13.595076+00:00",
-    "b12767fb138a": "2026-06-16T01:49:13.595076+00:00",
-    "4a81e9b744f3": "2026-06-16T01:49:13.595076+00:00",
-    "e5a5250ef50b": "2026-06-16T01:49:13.595076+00:00",
-    "2c2a758f5972": "2026-06-16T01:49:13.595076+00:00",
-    "49f50497b313": "2026-06-16T01:49:13.595076+00:00",
-    "ecc76687fbd8": "2026-06-16T01:49:13.595076+00:00",
-    "272514e9dfcd": "2026-06-16T01:49:13.595076+00:00",
-    "c73e56fd7c8c": "2026-06-16T01:49:13.595076+00:00"
+    "2da78655446c": "2026-06-16T07:10:24.226077+00:00",
+    "ae262d8e733e": "2026-06-16T07:10:24.226077+00:00",
+    "a6401b6e409a": "2026-06-16T07:10:24.226077+00:00",
+    "a44efb65caaa": "2026-06-16T07:10:24.226077+00:00",
+    "9afc51556d50": "2026-06-16T07:10:24.226077+00:00",
+    "f8b3c5edf131": "2026-06-16T07:10:24.226077+00:00",
+    "0a58486f83dd": "2026-06-16T07:10:24.226077+00:00",
+    "aa849c32f6b8": "2026-06-16T07:10:24.226077+00:00",
+    "bee6b03eebe6": "2026-06-16T07:10:24.226077+00:00",
+    "54a9b90fc2ae": "2026-06-16T07:10:24.226077+00:00",
+    "68336479a5d8": "2026-06-16T07:10:24.226077+00:00",
+    "49f0e91ad2e3": "2026-06-16T07:10:24.226077+00:00",
+    "3eb089267a36": "2026-06-16T07:10:24.226077+00:00",
+    "bfbfc8650f59": "2026-06-16T07:10:24.226077+00:00"
   },
   "live_clusters": {
-    "adb15027739b3f4d": {
-      "topic": "Nike X2 World Cup Capsule Collection",
-      "item_ids": [
-        "08de82274e0a"
-      ],
-      "created_at": "2026-06-15T07:01:23.195371+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7c4e3f283ca9f62b": {
-      "topic": "Merrell 1TRL Cham Pack SS25-SS26 Release",
-      "item_ids": [
-        "e24b07a51501"
-      ],
-      "created_at": "2026-06-15T07:01:23.195371+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "181a336a17f6da5a": {
-      "topic": "BMW M5 Touring Design Redesign",
-      "item_ids": [
-        "e766ca445cc1"
-      ],
-      "created_at": "2026-06-15T07:01:23.195371+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "436e5b56a7677792": {
-      "topic": "BMW M Concept Neue Klasse Le Mans Debut",
-      "item_ids": [
-        "770c219c4246",
-        "43a78e539b36"
-      ],
-      "created_at": "2026-06-15T07:01:23.195371+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f9bd1c07f9682f2d": {
-      "topic": "BMW 2026 24 Hours of Le Mans Race Results",
-      "item_ids": [
-        "4e5cb82ccfc3",
-        "5ba10c08266b"
-      ],
-      "created_at": "2026-06-15T07:01:23.195371+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "7759dbf99f45ce42": {
       "topic": "Billy Crystal Broadway Solo Show '860' Opening",
       "item_ids": [
@@ -990,7 +911,8 @@
     "e1519ed141253e18": {
       "topic": "Bonnie Tyler Health Condition Coma Tour Cancellation",
       "item_ids": [
-        "b1335dded045"
+        "b1335dded045",
+        "be4249d99f1d"
       ],
       "created_at": "2026-06-15T21:19:41.483356+00:00",
       "last_escalated_size": 0,
@@ -1107,7 +1029,8 @@
     "8d71911394aa00e2": {
       "topic": "Google Earth Flight Simulator Browser Launch",
       "item_ids": [
-        "5957c9dca969"
+        "5957c9dca969",
+        "1ca823371fd3"
       ],
       "created_at": "2026-06-15T23:13:20.791086+00:00",
       "last_escalated_size": 0,
@@ -1202,7 +1125,8 @@
         "65d84f20a16e",
         "3713babcb4e6",
         "71ef44fa6384",
-        "f0afc732349e"
+        "f0afc732349e",
+        "1e1166070170"
       ],
       "created_at": "2026-06-16T01:49:40.936221+00:00",
       "last_escalated_size": 5,
@@ -1243,7 +1167,115 @@
       "created_at": "2026-06-16T01:49:40.936221+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "45314493c64e078d": {
+      "topic": "EA Establishes Advertising Division for Game Brand Integrations",
+      "item_ids": [
+        "0243b9cb41e6"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e517322e2c6cc564": {
+      "topic": "Hatsune Miku Persona 4 Design Returns in Persona 5: The Phantom X",
+      "item_ids": [
+        "be1240026846"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "76874bacf5a8b724": {
+      "topic": "BTS Songwriting and Korean Food Culture Books",
+      "item_ids": [
+        "f100696831b8"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0e88f08d089e30ab": {
+      "topic": "Gramicci x nonnative Loro Piana Merino Wool SS26 Collection",
+      "item_ids": [
+        "521f2d5464dc"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "65928263ba7c83d7": {
+      "topic": "Sicko Director Interview Kazakh Parasite Film Violence",
+      "item_ids": [
+        "d9cf6efc1458"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c5ce5d3612dfeac": {
+      "topic": "Building Paris Documentary France TV Distribution",
+      "item_ids": [
+        "7816faafb26a"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "97e6f30421ce9fe5": {
+      "topic": "David Morrissey Interview Acting Instinct Analysis Paralysis",
+      "item_ids": [
+        "3c3e68073f42"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "446ac81bbac74713": {
+      "topic": "Wu-Tang Clan Tonight Show Performance Fallon",
+      "item_ids": [
+        "9035b25632ef"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "016b31d69d167fd6": {
+      "topic": "Insanity Hires Brand Partnerships Chief From Channel 4",
+      "item_ids": [
+        "4fd9325c2b6f"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1cc79867b94a5ccd": {
+      "topic": "Prime Video India Alliance Reality Format Launch Date",
+      "item_ids": [
+        "aa4b6107d0bb"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7c5b963066389001": {
+      "topic": "Qobuz Anti-Spotify Music Streamer Alternative",
+      "item_ids": [
+        "cd81ec515824"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9a8f1875cf6e4069": {
+      "topic": "Respond.io Malaysia AI Messaging App $62.5M Funding",
+      "item_ids": [
+        "a399e347cca7"
+      ],
+      "created_at": "2026-06-16T07:10:52.247300+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-16T01:49:55.190244+00:00"
+  "last_checked": "2026-06-16T07:10:52.248533+00:00"
 }
