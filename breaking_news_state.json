@@ -1,23 +1,5 @@
 {
   "known_ids": [
-    "3eeacc4351ea",
-    "412e3406c59f",
-    "cb7276711cc4",
-    "630f69579901",
-    "44167105b0b0",
-    "10737d68ac5a",
-    "f275a68b43bf",
-    "e2b58decd6fc",
-    "f42e5c051473",
-    "20e7409a85fe",
-    "2149290c64f5",
-    "03490dc77afb",
-    "c7cd1eab8b2f",
-    "6af25793c64a",
-    "8d61b3a6b9a4",
-    "a3c89ff8b591",
-    "098e57e3891c",
-    "27b8c7a221f1",
     "dd48b8508387",
     "3fbdcc20616b",
     "9a1521ad581f",
@@ -499,7 +481,25 @@
     "54aa264e2b03",
     "3e4f533d5397",
     "56283d5cbeed",
-    "f31139bdc40f"
+    "f31139bdc40f",
+    "2774e582c84b",
+    "abb2fcb27f86",
+    "31b9a21d22f5",
+    "a84cb45a5cab",
+    "4c33727ec56e",
+    "f1cd11fac317",
+    "0d4c4fbe1417",
+    "773e914e3385",
+    "65d84f20a16e",
+    "3713babcb4e6",
+    "71ef44fa6384",
+    "f0afc732349e",
+    "81b415b10a38",
+    "4c01fa2b967a",
+    "4b25f88bb68b",
+    "16eb739f79b6",
+    "8bb33341278c",
+    "712c9eb28eb1"
   ],
   "failed_ids": {
     "4ffac55cf0cd": "2026-06-15T23:12:47.918003+00:00",
@@ -529,85 +529,27 @@
     "cf3bb740d645": "2026-06-15T23:12:47.918003+00:00",
     "9daeb1e86b76": "2026-06-15T23:12:47.918003+00:00",
     "7157371332f7": "2026-06-15T23:12:47.918003+00:00",
-    "17dcfbe0aac8": "2026-06-15T23:12:47.918003+00:00"
+    "17dcfbe0aac8": "2026-06-15T23:12:47.918003+00:00",
+    "fc465495fa37": "2026-06-16T01:49:13.595076+00:00",
+    "662aaf7acf30": "2026-06-16T01:49:13.595076+00:00",
+    "fdcd63a8f281": "2026-06-16T01:49:13.595076+00:00",
+    "15b71cf72789": "2026-06-16T01:49:13.595076+00:00",
+    "e7f082998926": "2026-06-16T01:49:13.595076+00:00",
+    "1efe81e559e7": "2026-06-16T01:49:13.595076+00:00",
+    "b56490160747": "2026-06-16T01:49:13.595076+00:00",
+    "af6b0b1b9c14": "2026-06-16T01:49:13.595076+00:00",
+    "a36d597e1d27": "2026-06-16T01:49:13.595076+00:00",
+    "d3ce6874dcb5": "2026-06-16T01:49:13.595076+00:00",
+    "b12767fb138a": "2026-06-16T01:49:13.595076+00:00",
+    "4a81e9b744f3": "2026-06-16T01:49:13.595076+00:00",
+    "e5a5250ef50b": "2026-06-16T01:49:13.595076+00:00",
+    "2c2a758f5972": "2026-06-16T01:49:13.595076+00:00",
+    "49f50497b313": "2026-06-16T01:49:13.595076+00:00",
+    "ecc76687fbd8": "2026-06-16T01:49:13.595076+00:00",
+    "272514e9dfcd": "2026-06-16T01:49:13.595076+00:00",
+    "c73e56fd7c8c": "2026-06-16T01:49:13.595076+00:00"
   },
   "live_clusters": {
-    "52ad42d014905d51": {
-      "topic": "Bonnaroo Festival Schedule Updates Weather Delays",
-      "item_ids": [
-        "4647f8437ba0"
-      ],
-      "created_at": "2026-06-15T01:40:39.079040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "39928ec6834acb5a": {
-      "topic": "Dead by Daylight Horror Game Film Adaptation Blumhouse",
-      "item_ids": [
-        "db8432b7dff6"
-      ],
-      "created_at": "2026-06-15T01:40:39.079040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6a4f0c61b7fc47d3": {
-      "topic": "Jaylen Brown Trade Rumors Hawks Celtics",
-      "item_ids": [
-        "00af55a625cf"
-      ],
-      "created_at": "2026-06-15T01:40:39.079040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "157aa73d41f1e387": {
-      "topic": "Giannis Trade Rumors Heat Celtics 2026 Draft",
-      "item_ids": [
-        "726fb782144c",
-        "b4859426d56b",
-        "22f1fef4760a",
-        "bbda6bbfc678",
-        "33a34e1dcf0c"
-      ],
-      "created_at": "2026-06-15T01:40:39.079040+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-15T21:19:00.645015+00:00",
-      "picks_file": "picks/picks-2026-06-15-2119.md",
-      "why_text": "Boston making a run at Giannis Antetokounmpo would be the most seismic roster move in the NBA this side of the LeBron era \u2014 a defending-contender franchise betting its future draft capital on landing a two-time MVP who has never quite fit the mold of a player who forces his way out. The 'stumbling blocks' insiders are flagging likely center on Milwaukee's ask and Giannis's own agency, which makes this less a done deal and more a slow-motion negotiation playing out in public \u2014 exactly the kind of leverage game that reshapes the league's power map before a single trade is official. Culturally, the timing matters: Nike dropping the Freak 8 colorway mid-rumor cycle is no accident, and it signals Giannis's camp is comfortable letting the moment breathe.",
-      "last_escalated_item_ids": [
-        "726fb782144c",
-        "b4859426d56b",
-        "22f1fef4760a",
-        "bbda6bbfc678",
-        "33a34e1dcf0c"
-      ]
-    },
-    "bb06a777d4be27ee": {
-      "topic": "Nets 2026 NBA Draft Strategy Best Player Available",
-      "item_ids": [
-        "ad77fbaaec06"
-      ],
-      "created_at": "2026-06-15T01:40:39.079040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2af43a737cd85251": {
-      "topic": "BMW M3 Electric Future Development",
-      "item_ids": [
-        "ee206c5b1474"
-      ],
-      "created_at": "2026-06-15T01:40:39.079040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c72f650c6d0937a2": {
-      "topic": "BMW M3 Combustion Engine Strategy",
-      "item_ids": [
-        "c8002726c872"
-      ],
-      "created_at": "2026-06-15T01:40:39.079040+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "adb15027739b3f4d": {
       "topic": "Nike X2 World Cup Capsule Collection",
       "item_ids": [
@@ -732,11 +674,19 @@
       "topic": "2026 NBA Mock Draft Projections",
       "item_ids": [
         "e18c3b217d6d",
-        "a73e09e89802"
+        "a73e09e89802",
+        "773e914e3385"
       ],
       "created_at": "2026-06-15T13:26:04.737954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-16T01:49:13.595076+00:00",
+      "picks_file": "picks/picks-2026-06-16-0149.md",
+      "why_text": "With the 2026 NBA Draft just a week away, Bleacher Report's comprehensive big board is the last major pre-draft consensus document scouts, fans, and front offices will scrutinize before picks are locked in. The ranking of 74 prospects signals how deep this class runs \u2014 and how much leverage teams holding mid-to-late lottery picks actually have. Draft season is one of the few moments where hope is distributed equally across the league, and right now every fanbase is doing the math on their team's future.",
+      "last_escalated_item_ids": [
+        "e18c3b217d6d",
+        "a73e09e89802",
+        "773e914e3385"
+      ]
     },
     "e5424b6faba48b82": {
       "topic": "NBA Contract Rumors Wembanyama Vassell Champagnie",
@@ -1216,7 +1166,84 @@
       "created_at": "2026-06-15T23:13:20.791086+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "7a1dd7839e97322f": {
+      "topic": "Vozinha Cape Verde Goalkeeper Spain Match Family Visa",
+      "item_ids": [
+        "2774e582c84b"
+      ],
+      "created_at": "2026-06-16T01:49:40.936221+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6bdc4b984cfe8296": {
+      "topic": "Nicki Minaj Illuminati Spiritual Warfare Beliefs",
+      "item_ids": [
+        "abb2fcb27f86"
+      ],
+      "created_at": "2026-06-16T01:49:40.936221+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a17b16c2b6c122dd": {
+      "topic": "Neymar Jr FlareFlow AI Microdrama Franchise",
+      "item_ids": [
+        "31b9a21d22f5",
+        "0d4c4fbe1417"
+      ],
+      "created_at": "2026-06-16T01:49:40.936221+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a019a001394e2321": {
+      "topic": "New York Knicks NBA Championship Celebration Tonight Show",
+      "item_ids": [
+        "a84cb45a5cab",
+        "65d84f20a16e",
+        "3713babcb4e6",
+        "71ef44fa6384",
+        "f0afc732349e"
+      ],
+      "created_at": "2026-06-16T01:49:40.936221+00:00",
+      "last_escalated_size": 5,
+      "last_escalated_at": "2026-06-16T01:49:13.595076+00:00",
+      "picks_file": "picks/picks-2026-06-16-0149.md",
+      "why_text": "For the first time in over half a century, the New York Knicks are NBA Champions \u2014 and the city is in full delirium. Jalen Brunson, the guy everyone doubted when he left Dallas for a max deal, just validated every Knick fan who held on through the drought, and Jay Wright's fingerprints are all over this roster. This isn't just a sports story; it's a New York cultural moment on the level of the 2000 Yankees, and the Tonight Show appearance, the Funko Pops, and James Dolan's April locker room speech are all part of the canonization happening in real time.",
+      "last_escalated_item_ids": [
+        "a84cb45a5cab",
+        "65d84f20a16e",
+        "3713babcb4e6",
+        "71ef44fa6384",
+        "f0afc732349e"
+      ]
+    },
+    "eb9b7367e30bc1f2": {
+      "topic": "OG Anunoby Skechers Basketball Sneaker Discount",
+      "item_ids": [
+        "4c33727ec56e"
+      ],
+      "created_at": "2026-06-16T01:49:40.936221+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2f8fa18240635c1a": {
+      "topic": "Celebrity Autobiography Broadway Early Closing",
+      "item_ids": [
+        "f1cd11fac317"
+      ],
+      "created_at": "2026-06-16T01:49:40.936221+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b449a43a486e65e7": {
+      "topic": "BMW M3 Manual Transmission Non-Hybrid Future",
+      "item_ids": [
+        "81b415b10a38"
+      ],
+      "created_at": "2026-06-16T01:49:40.936221+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-15T23:13:20.792312+00:00"
+  "last_checked": "2026-06-16T01:49:55.190244+00:00"
 }
