@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-16] Fix: scoring pipeline no longer aborts on transient Anthropic 5xx errors
+
+A run failed mid-scoring (batch 2/5) when Anthropic returned a transient `500 Internal Server Error`. The retry logic in `_score_batch()` (`daily_curator.py`) only retried on status `529` (overloaded); any other `APIStatusError`, including `500`, fell through to `sys.exit(1)` and killed the entire run. Extended the retry condition to cover the standard transient set — `500`, `502`, `503`, `529` — with the same exponential backoff (up to 4 attempts). `breaking_news_check.py`'s Claude call sites were checked and already degrade gracefully (skip/continue) on any exception, so no change was needed there.
+
 ## [2026-06-15] Fix: clicking "new picks" banner now actually refreshes the feed
 
 `dismissBanner()` was only hiding the banner without reloading data. Added a `loadFeed()` call so clicking the banner fetches and renders the new picks as expected.

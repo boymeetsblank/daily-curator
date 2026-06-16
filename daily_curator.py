@@ -1599,9 +1599,9 @@ def _score_batch(batch: list[dict], trending_context_block: str, label: str, rec
                 print("❌ Claude rate limit hit. Please wait a minute and try again.")
                 sys.exit(1)
             except anthropic.APIStatusError as e:
-                if e.status_code == 529 and attempt < 3:
+                if e.status_code in (500, 502, 503, 529) and attempt < 3:
                     wait = 2 ** (attempt + 1)
-                    print(f"   ⚠️  Claude overloaded (529) — retrying in {wait}s (attempt {attempt + 1}/4)...")
+                    print(f"   ⚠️  Claude API error ({e.status_code}) — retrying in {wait}s (attempt {attempt + 1}/4)...")
                     time.sleep(wait)
                 else:
                     print(f"❌ Claude error: {e}")
