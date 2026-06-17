@@ -1,51 +1,5 @@
 {
   "known_ids": [
-    "c0ac23e22ce6",
-    "92f69944b05f",
-    "63c33a49cba5",
-    "75de0acd6df3",
-    "ac764f1ef826",
-    "303901334426",
-    "f8a358803995",
-    "162ef37a0c9f",
-    "22f1fef4760a",
-    "0befe1575902",
-    "ad90919d2c74",
-    "80b1e16a1a76",
-    "a074dae66f63",
-    "10288e117e87",
-    "40bb2a003a74",
-    "3960355c55ee",
-    "a08f689f302e",
-    "7593f60bd353",
-    "37d5036d0d61",
-    "481021757c55",
-    "6056449760cd",
-    "e51a58d28cee",
-    "ee9e8112a205",
-    "91a80ad427af",
-    "e12ef2f8b134",
-    "e0c61cb36c5b",
-    "d7968e492b5c",
-    "ec1bec5f4053",
-    "dada42ea3df0",
-    "18d458766fe9",
-    "af476188e550",
-    "07c09c555b6c",
-    "b1335dded045",
-    "3587308eb997",
-    "946f05a6312f",
-    "52d54df10d02",
-    "18090f6f8e7b",
-    "29c7ddcc1b8d",
-    "1729510f8986",
-    "834aee881755",
-    "283f0db7b77b",
-    "6d4a630e55a2",
-    "135ac09a3b02",
-    "1a576bad6f35",
-    "ce50abdb9adf",
-    "4daadf899688",
     "6776a9549d29",
     "da64964f35f0",
     "edc8adeb354c",
@@ -499,7 +453,53 @@
     "3577f3bcf501",
     "fa9fe1c071d5",
     "c6cbba014c41",
-    "d98ffa0dd80c"
+    "d98ffa0dd80c",
+    "710f8b7831eb",
+    "b7f3f6c508cc",
+    "0c5e363e49ee",
+    "546192c1e15c",
+    "a6a0c3bc2c02",
+    "3ab08db78deb",
+    "4211dab0555a",
+    "6cf4eb1cd4b7",
+    "3d61890d2a4c",
+    "7c8cd3e9533a",
+    "e06a3c0289fb",
+    "23dab7c5dbcf",
+    "5630880bf954",
+    "19ff0d2ea5b7",
+    "641809ff0dad",
+    "ca17d53d5a8c",
+    "29dcc2d7abad",
+    "e0500402bf3a",
+    "27732a9a7951",
+    "2dbb93219584",
+    "10a17aa8d4a4",
+    "328281e5b6c5",
+    "2a408377ebb1",
+    "4ae80ca19a7d",
+    "522ec093880d",
+    "5f00fb663d42",
+    "b291dabccfb0",
+    "a23465dac6cf",
+    "d213d79fd7ea",
+    "72368dc41d24",
+    "485ffe06f723",
+    "f5c1ce347ed8",
+    "4be6ebeba230",
+    "d77c22c4d2b8",
+    "ef665eb1650d",
+    "ddbbdf77185e",
+    "10154e8fbb4b",
+    "6dcd07d7a0e9",
+    "c41c11f88acd",
+    "27f34fa6cbd8",
+    "ac9efaf151b1",
+    "f9ffda4042fd",
+    "0531a81fe7f1",
+    "aa97521ec1d6",
+    "727e63018daf",
+    "f2b8513e0693"
   ],
   "failed_ids": {
     "6a1f3cf70460": "2026-06-17T10:01:48.364020+00:00",
@@ -521,203 +521,15 @@
     "ce7fd1b78e67": "2026-06-17T10:01:48.364020+00:00",
     "783b37a5cda3": "2026-06-17T10:01:48.364020+00:00",
     "8fb0ea9ca9b3": "2026-06-17T10:01:48.364020+00:00",
-    "7bcf31a7732d": "2026-06-17T10:01:48.364020+00:00"
+    "7bcf31a7732d": "2026-06-17T10:01:48.364020+00:00",
+    "de7eaca9ec7e": "2026-06-17T13:56:08.992224+00:00",
+    "ac2b81325fa6": "2026-06-17T13:56:08.992224+00:00",
+    "2bb88d9cf399": "2026-06-17T13:56:08.992224+00:00",
+    "19d5ae429cb1": "2026-06-17T13:56:08.992224+00:00",
+    "036f684fd477": "2026-06-17T13:56:08.992224+00:00",
+    "65860f09d264": "2026-06-17T13:56:08.992224+00:00"
   },
   "live_clusters": {
-    "c23d0b6afb7d4ea5": {
-      "topic": "Nepo Baby Chef Michelin Stars",
-      "item_ids": [
-        "6705402e4d58"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ee7a10225c7de843": {
-      "topic": "Serena Venus Williams Wimbledon Doubles Reunion",
-      "item_ids": [
-        "3e8278f80648"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9701ed11a3199a55": {
-      "topic": "Tyler The Creator New Era Denial",
-      "item_ids": [
-        "86ec67ecfb53",
-        "dc273221a392"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5a1ec2dd1d057e45": {
-      "topic": "Brian Cox Raindance Icon Award",
-      "item_ids": [
-        "79bab75fb484"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ca3924308ae2ae4": {
-      "topic": "Matthew Broome My Fault London Bond Audition",
-      "item_ids": [
-        "40e85537637f"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e8a616e10c38b500": {
-      "topic": "Cordell Barker Anta Claus South Pole Christmas Special",
-      "item_ids": [
-        "1f06e215e72f"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e7a614077b8ab8aa": {
-      "topic": "Verizon Austin Powers Ugly Betty Cast Reunion Ad",
-      "item_ids": [
-        "908d78539bf0",
-        "dd54444994c5"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4f50b39842e6080f": {
-      "topic": "Sheryl Crow Trump UFC White House Birthday Event Criticism",
-      "item_ids": [
-        "38a24fd27da4",
-        "dd4e100a89b5"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b88a76f9471c6776": {
-      "topic": "Steven Knight Peaky Blinders Netflix UK Talent Fund Payment",
-      "item_ids": [
-        "104cd7bd0046"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3573d7d2a4589766": {
-      "topic": "Matthew Broome My Fault London Culpa Mia Pressure",
-      "item_ids": [
-        "75a85a164592"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4a3709463eef9662": {
-      "topic": "CAA Sports Anthony Joshua Commercial Deal",
-      "item_ids": [
-        "8b98e408d7d2"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "58c21eaaa61ad52c": {
-      "topic": "TikTok Shop iPhone Bid Teddy Bear Scam",
-      "item_ids": [
-        "d27c9320474a"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ed5e7330651f7c38": {
-      "topic": "India Telegram Ban Exam Fraud",
-      "item_ids": [
-        "b49961d82c0d",
-        "1673335cfcd2"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "860d7a9ff4874e07": {
-      "topic": "Threads 500M Monthly Users Feature Expansion",
-      "item_ids": [
-        "6d25f4f4d66f"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3bedd9f81c2897a5": {
-      "topic": "Yum Brands Pizza Hut Sale LongRange LongRange Yum China",
-      "item_ids": [
-        "83750c912dd4",
-        "eaf44571ab00",
-        "0d703260d057",
-        "5a6a58580670"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-16T22:30:50.612498+00:00",
-      "last_escalated_item_ids": [
-        "83750c912dd4",
-        "eaf44571ab00",
-        "0d703260d057"
-      ]
-    },
-    "5c07bc27c8b0e460": {
-      "topic": "AMD Rackspace 30 MW AI Compute Deployment",
-      "item_ids": [
-        "a0919b75c09c"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5a0505e24bc921eb": {
-      "topic": "Vacheron Constantin Traditionelle Twin Beat Perpetual Calendar",
-      "item_ids": [
-        "1531d236158c"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bdeca30c78f627e9": {
-      "topic": "NBA Offseason Storylines Windhorst",
-      "item_ids": [
-        "5ee24c2c46bf"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "47b5914c400a681a": {
-      "topic": "NBA Draft All-Time Biggest Mistakes Ranking",
-      "item_ids": [
-        "07e1c5d8f143",
-        "c00bc8f88fa3"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0a46634bf0fad612": {
-      "topic": "Mobileye Vertically Integrated Robotaxi Business",
-      "item_ids": [
-        "d8695768d3f3",
-        "daf7e98cd72f"
-      ],
-      "created_at": "2026-06-16T12:24:43.255105+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "e056798d3e9ee15d": {
       "topic": "JiyongKim PUMA Sneaker Collaboration",
       "item_ids": [
@@ -932,17 +744,22 @@
         "95bccd6105cb",
         "147a41ba12b8",
         "ece11b9bd750",
-        "0b1dbcdce175"
+        "0b1dbcdce175",
+        "7c8cd3e9533a",
+        "19ff0d2ea5b7"
       ],
       "created_at": "2026-06-16T17:31:55.246923+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-16T17:30:55.064456+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-17T13:56:08.992224+00:00",
       "picks_file": "picks/picks-2026-06-16-1731.md",
-      "why_text": "Snap just made its most serious hardware bet yet, launching Specs \u2014 actual AR glasses, not a camera novelty \u2014 at a price point that signals this is a developer and early-adopter play, not a consumer mass-market push. At $2,195, Evan Spiegel is essentially arguing that the post-smartphone era is worth paying for before it arrives, positioning Snap as infrastructure for whatever comes after the iPhone. The timing matters: Apple Vision Pro disappointed at scale, Meta's Ray-Bans went mainstream but stayed camera-first, and Snap is now staking a claim in the gap between fashion accessory and true spatial computing.",
+      "why_text": "Snap just made its most serious hardware bet yet, launching Specs \u2014 actual AR glasses, not a camera novelty \u2014 at a price point that signals this is a developer and early-adopter play, not a consumer mass-market push. At $2,195, Evan Spiegel is essentially arguing that the post-smartphone era is worth paying for before it arrives, positioning Snap as infrastructure for whatever comes after the iPhone. The timing matters: Apple Vision Pro disappointed at scale, Meta's Ray-Bans went mainstream but stayed camera-first, and Snap is now staking a claim in the gap between fashion accessory and true spatial computing.\n**Update 8:56 AM CT:** Meanwhile, Google just quietly underscored the broader smart hardware moment with the launch of a redesigned Google Home speaker at $100 \u2014 now powered by Gemini \u2014 signaling that ambient AI voice interfaces are getting a serious upgrade across the home ecosystem, even as the AR glasses race plays out at the premium end.",
       "last_escalated_item_ids": [
         "95bccd6105cb",
         "147a41ba12b8",
-        "ece11b9bd750"
+        "ece11b9bd750",
+        "0b1dbcdce175",
+        "7c8cd3e9533a",
+        "19ff0d2ea5b7"
       ]
     },
     "9b25ee51d986024f": {
@@ -1089,19 +906,23 @@
         "79b15d91b8dc",
         "20cd6df75b31",
         "b43d0b1d95f9",
-        "f23a29666e5c"
+        "f23a29666e5c",
+        "e0500402bf3a"
       ],
       "created_at": "2026-06-16T17:31:55.246923+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-16T20:28:41.173092+00:00",
+      "last_escalated_size": 8,
+      "last_escalated_at": "2026-06-17T13:56:08.992224+00:00",
       "picks_file": "picks/picks-2026-06-16-2029.md",
-      "why_text": "SpaceX has crossed into rarefied air, hitting a $2.6 trillion valuation that briefly eclipsed Amazon \u2014 a company with actual public market accountability. The meme stock energy fueling the surge is real enough that Michael Burry, the man who shorted the 2008 housing crisis, considered betting against it but balked at the cost of options, which tells you everything about how frothy and technically distorted this rally has become. This is the collision of Elon Musk's cultural gravity, retail speculation, and venture-era secrecy producing a number that feels less like a valuation and more like a dare.",
+      "why_text": "SpaceX has crossed into rarefied air, hitting a $2.6 trillion valuation that briefly eclipsed Amazon \u2014 a company with actual public market accountability. The meme stock energy fueling the surge is real enough that Michael Burry, the man who shorted the 2008 housing crisis, considered betting against it but balked at the cost of options, which tells you everything about how frothy and technically distorted this rally has become. This is the collision of Elon Musk's cultural gravity, retail speculation, and venture-era secrecy producing a number that feels less like a valuation and more like a dare.\n**Update 8:56 AM CT:** The speculative frenzy is now bleeding into passive portfolios, with index-adjacent investors who sat out crypto finding themselves involuntarily exposed to a stock three times more volatile than bitcoin \u2014 while Business Insider's framing of SpaceX as a 'casino' signals that the mainstream financial press has officially shifted from analysis to alarm.",
       "last_escalated_item_ids": [
         "01829ae3d929",
         "31498e3facd4",
         "ff6d444e10ee",
         "79b15d91b8dc",
-        "20cd6df75b31"
+        "20cd6df75b31",
+        "b43d0b1d95f9",
+        "f23a29666e5c",
+        "e0500402bf3a"
       ]
     },
     "89ae2a5cc1662bf5": {
@@ -1122,7 +943,8 @@
         "702dea4c0302",
         "306d16fd1bac",
         "fbbcce2a0a84",
-        "2fb2adfac959"
+        "2fb2adfac959",
+        "10154e8fbb4b"
       ],
       "created_at": "2026-06-16T17:31:55.246923+00:00",
       "last_escalated_size": 16,
@@ -2301,7 +2123,8 @@
     "856748f58fd98bc8": {
       "topic": "BBC Cancels Shows Content Spending Cut",
       "item_ids": [
-        "c908d62201a4"
+        "c908d62201a4",
+        "6cf4eb1cd4b7"
       ],
       "created_at": "2026-06-17T10:02:26.631043+00:00",
       "last_escalated_size": 0,
@@ -2369,7 +2192,223 @@
       "created_at": "2026-06-17T10:02:26.631043+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "cfd81abd6ab6335f": {
+      "topic": "Noah Kahan Kidz Bop Lyric Edit Reaction",
+      "item_ids": [
+        "0c5e363e49ee"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "efcfab62bf2f0105": {
+      "topic": "Finneas Interview on Billie Eilish and Record Production",
+      "item_ids": [
+        "546192c1e15c"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f2833fff54d0799e": {
+      "topic": "Perrie Edwards Wedding to Alex Oxlade-Chamberlain",
+      "item_ids": [
+        "a6a0c3bc2c02"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6f0f6d9ebbe3031f": {
+      "topic": "Rolling Stones Foreign Tongues Album",
+      "item_ids": [
+        "3ab08db78deb"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "277572074fafb59f": {
+      "topic": "Thomas Bangalter Post-Daft Punk Career",
+      "item_ids": [
+        "4211dab0555a"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b39eb66f3b0e54f4": {
+      "topic": "Prime Video Spain 2027 Content Slate",
+      "item_ids": [
+        "3d61890d2a4c"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "05c203183a1307cf": {
+      "topic": "SpaceX Alum Geothermal Energy Startup Funding",
+      "item_ids": [
+        "e06a3c0289fb"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ce7ec5e5990ce6ba": {
+      "topic": "Canadian Pension Fund India AI Data Center Investment",
+      "item_ids": [
+        "23dab7c5dbcf"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "70c06de43e61935a": {
+      "topic": "Carvana Vehicle Sales Strategy Shift",
+      "item_ids": [
+        "641809ff0dad"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "afb136e72621bbb9": {
+      "topic": "CME Group Leadership Transition Duffy Fitzpatrick",
+      "item_ids": [
+        "ca17d53d5a8c"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "daf56c373284ffed": {
+      "topic": "Anthropic AI Regulation Policy Response",
+      "item_ids": [
+        "29dcc2d7abad"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6d7dc7bc669f11f0": {
+      "topic": "ASICS Dad Shoe Summer Collection",
+      "item_ids": [
+        "522ec093880d"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "928a80fd461e3c14": {
+      "topic": "Patek Philippe Nautilus 50th Anniversary Museum Exhibition",
+      "item_ids": [
+        "5f00fb663d42"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "42214c1cf6c373f4": {
+      "topic": "Knicks 2026 Championship Draft Trade Rumors",
+      "item_ids": [
+        "b291dabccfb0"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d8ac3472dd9ed495": {
+      "topic": "Zaccharie Risacher NBA Draft Confidence Interview",
+      "item_ids": [
+        "a23465dac6cf"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "52cabb90a17cd4e1": {
+      "topic": "Hawks NBA Draft Mock Selections",
+      "item_ids": [
+        "d213d79fd7ea"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "efca2867852e9fcc": {
+      "topic": "Warriors Kawhi Leonard Trey Murphy Trade Possibilities",
+      "item_ids": [
+        "72368dc41d24"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "59f7be5214e8dd04": {
+      "topic": "Kings 2nd Round NBA Draft Workout Targets",
+      "item_ids": [
+        "485ffe06f723"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "87a9d484cd3f1cbb": {
+      "topic": "Embark Commit Finance HR Technology Partnership",
+      "item_ids": [
+        "d77c22c4d2b8"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "48f1c064ff43cf9a": {
+      "topic": "Siemens Financial Services SBA Lender Approval",
+      "item_ids": [
+        "ef665eb1650d"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e63d88874269fbfc": {
+      "topic": "Range Rover China Price Collapse",
+      "item_ids": [
+        "ddbbdf77185e"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63b77c571e3b2821": {
+      "topic": "Genesis Luxury Brand Positioning Strategy",
+      "item_ids": [
+        "6dcd07d7a0e9"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "66ba3b9a1a90727d": {
+      "topic": "BMW 3 Series Electric Early Order Opening",
+      "item_ids": [
+        "27f34fa6cbd8"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "22044077c05d739a": {
+      "topic": "BMW M3 Final G80 Generation Announcement",
+      "item_ids": [
+        "ac9efaf151b1"
+      ],
+      "created_at": "2026-06-17T13:56:41.511898+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-17T10:02:30.538432+00:00"
+  "last_checked": "2026-06-17T13:56:49.522228+00:00"
 }
