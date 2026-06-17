@@ -1,28 +1,5 @@
 {
   "known_ids": [
-    "341e23cb19d2",
-    "dabd6a8fd9fd",
-    "4913f6d46566",
-    "0014cb2d5067",
-    "ad3ca4a9cdc7",
-    "7fbad6bfb8cd",
-    "1d3a5f79dfa6",
-    "e7717a671fd5",
-    "dbf3d2c8e47f",
-    "9eacc1d050a3",
-    "feda02c529d6",
-    "e5501996bb57",
-    "688a5d35cab3",
-    "d37aed3c0e36",
-    "0e278cda9006",
-    "2f4378588f60",
-    "f1fc997ffd22",
-    "9d114809f881",
-    "b4859426d56b",
-    "d860424cbbab",
-    "3a4027f901c0",
-    "5de63e559c71",
-    "151ea50eb5d0",
     "c0ac23e22ce6",
     "92f69944b05f",
     "63c33a49cba5",
@@ -499,139 +476,54 @@
     "61dfa3248de3",
     "84081161e76e",
     "1f932e47d5d4",
-    "5a6a58580670"
+    "5a6a58580670",
+    "bb7fcd69bd83",
+    "cba3c3dd3e8d",
+    "07d0a49a7ac8",
+    "391037930671",
+    "c908d62201a4",
+    "8c6e9e20330d",
+    "bcba0cca2f44",
+    "15a0f3c22f5f",
+    "6a449d8eb45f",
+    "f8a278dce1ba",
+    "373238abd2ed",
+    "f23a29666e5c",
+    "0c47d9bda940",
+    "702dea4c0302",
+    "306d16fd1bac",
+    "fbbcce2a0a84",
+    "2fb2adfac959",
+    "e7ac8c88b160",
+    "159ea1c2602f",
+    "3577f3bcf501",
+    "fa9fe1c071d5",
+    "c6cbba014c41",
+    "d98ffa0dd80c"
   ],
   "failed_ids": {
-    "27302ff03286": "2026-06-17T05:08:41.200987+00:00",
-    "d8e46061cd0c": "2026-06-17T05:08:41.200987+00:00",
-    "aa315854d410": "2026-06-17T05:08:41.200987+00:00",
-    "887343faf454": "2026-06-17T05:08:41.200987+00:00",
-    "340f4380b0ee": "2026-06-17T05:08:41.200987+00:00",
-    "b69a3f2e64ad": "2026-06-17T05:08:41.200987+00:00",
-    "cb42033e05b5": "2026-06-17T05:08:41.200987+00:00",
-    "9eb232ee91ea": "2026-06-17T05:08:41.200987+00:00",
-    "856edaa6786a": "2026-06-17T05:08:41.200987+00:00",
-    "a71850d02dd3": "2026-06-17T05:08:41.200987+00:00",
-    "bb8d1e9f0f74": "2026-06-17T05:08:41.200987+00:00",
-    "97c7393e46ae": "2026-06-17T05:08:41.200987+00:00",
-    "5139ba8fed29": "2026-06-17T05:08:41.200987+00:00",
-    "cf1d3a393df9": "2026-06-17T05:08:41.200987+00:00",
-    "6dea1a98e63f": "2026-06-17T05:08:41.200987+00:00",
-    "9465bfd8915f": "2026-06-17T05:08:41.200987+00:00",
-    "fb1c51be53e8": "2026-06-17T05:08:41.200987+00:00",
-    "a17f84dde201": "2026-06-17T05:08:41.200987+00:00",
-    "6948483fff06": "2026-06-17T05:08:41.200987+00:00"
+    "6a1f3cf70460": "2026-06-17T10:01:48.364020+00:00",
+    "d2f779a0b950": "2026-06-17T10:01:48.364020+00:00",
+    "f3081b3fcfca": "2026-06-17T10:01:48.364020+00:00",
+    "0015d315e999": "2026-06-17T10:01:48.364020+00:00",
+    "547b6ce71533": "2026-06-17T10:01:48.364020+00:00",
+    "ff4f9f043a0d": "2026-06-17T10:01:48.364020+00:00",
+    "7717711ed42a": "2026-06-17T10:01:48.364020+00:00",
+    "1a52cde4e0dc": "2026-06-17T10:01:48.364020+00:00",
+    "cc9ef9f6a84d": "2026-06-17T10:01:48.364020+00:00",
+    "a2acbeeac940": "2026-06-17T10:01:48.364020+00:00",
+    "85190b03362e": "2026-06-17T10:01:48.364020+00:00",
+    "7ea61b04b07e": "2026-06-17T10:01:48.364020+00:00",
+    "1fed31cbc6ac": "2026-06-17T10:01:48.364020+00:00",
+    "c332a55c378e": "2026-06-17T10:01:48.364020+00:00",
+    "d360a6471326": "2026-06-17T10:01:48.364020+00:00",
+    "9d730de72987": "2026-06-17T10:01:48.364020+00:00",
+    "ce7fd1b78e67": "2026-06-17T10:01:48.364020+00:00",
+    "783b37a5cda3": "2026-06-17T10:01:48.364020+00:00",
+    "8fb0ea9ca9b3": "2026-06-17T10:01:48.364020+00:00",
+    "7bcf31a7732d": "2026-06-17T10:01:48.364020+00:00"
   },
   "live_clusters": {
-    "45314493c64e078d": {
-      "topic": "EA Establishes Advertising Division for Game Brand Integrations",
-      "item_ids": [
-        "0243b9cb41e6"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e517322e2c6cc564": {
-      "topic": "Hatsune Miku Persona 4 Design Returns in Persona 5: The Phantom X",
-      "item_ids": [
-        "be1240026846"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "76874bacf5a8b724": {
-      "topic": "BTS Songwriting and Korean Food Culture Books",
-      "item_ids": [
-        "f100696831b8"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0e88f08d089e30ab": {
-      "topic": "Gramicci x nonnative Loro Piana Merino Wool SS26 Collection",
-      "item_ids": [
-        "521f2d5464dc"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "65928263ba7c83d7": {
-      "topic": "Sicko Director Interview Kazakh Parasite Film Violence",
-      "item_ids": [
-        "d9cf6efc1458"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c5ce5d3612dfeac": {
-      "topic": "Building Paris Documentary France TV Distribution",
-      "item_ids": [
-        "7816faafb26a"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "97e6f30421ce9fe5": {
-      "topic": "David Morrissey Interview Acting Instinct Analysis Paralysis",
-      "item_ids": [
-        "3c3e68073f42"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "446ac81bbac74713": {
-      "topic": "Wu-Tang Clan Tonight Show Performance Fallon",
-      "item_ids": [
-        "9035b25632ef"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "016b31d69d167fd6": {
-      "topic": "Insanity Hires Brand Partnerships Chief From Channel 4",
-      "item_ids": [
-        "4fd9325c2b6f"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1cc79867b94a5ccd": {
-      "topic": "Prime Video India Alliance Reality Format Launch Date",
-      "item_ids": [
-        "aa4b6107d0bb",
-        "a8f7b7db91a2"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7c5b963066389001": {
-      "topic": "Qobuz Anti-Spotify Music Streamer Alternative",
-      "item_ids": [
-        "cd81ec515824"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9a8f1875cf6e4069": {
-      "topic": "Respond.io Malaysia AI Messaging App $62.5M Funding",
-      "item_ids": [
-        "a399e347cca7"
-      ],
-      "created_at": "2026-06-16T07:10:52.247300+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "c23d0b6afb7d4ea5": {
       "topic": "Nepo Baby Chef Michelin Stars",
       "item_ids": [
@@ -1196,7 +1088,8 @@
         "ff6d444e10ee",
         "79b15d91b8dc",
         "20cd6df75b31",
-        "b43d0b1d95f9"
+        "b43d0b1d95f9",
+        "f23a29666e5c"
       ],
       "created_at": "2026-06-16T17:31:55.246923+00:00",
       "last_escalated_size": 5,
@@ -1225,13 +1118,17 @@
         "95dc19464135",
         "f6f37277fe0e",
         "9876c0af3889",
-        "86f9af630872"
+        "86f9af630872",
+        "702dea4c0302",
+        "306d16fd1bac",
+        "fbbcce2a0a84",
+        "2fb2adfac959"
       ],
       "created_at": "2026-06-16T17:31:55.246923+00:00",
-      "last_escalated_size": 12,
-      "last_escalated_at": "2026-06-16T22:30:50.612498+00:00",
+      "last_escalated_size": 16,
+      "last_escalated_at": "2026-06-17T10:01:48.364020+00:00",
       "picks_file": "picks/picks-2026-06-16-1732.md",
-      "why_text": "BMW's decision to downgrade its 2026 outlook is a stark signal that the luxury auto sector is caught in a geopolitical vice \u2014 China's prolonged economic downturn is gutting demand in what was supposed to be the industry's growth engine, while the widening Middle East conflict is spiking supply chain costs and rattling consumer confidence. This isn't just a BMW problem: it's a canary-in-the-coalmine moment for every European automaker that over-indexed on China's recovery and assumed geopolitical instability would stay contained. When a brand as resilient as BMW starts walking back targets this publicly, the broader industrial outlook gets a lot harder to spin.\n**Update 3:29 PM CT:** The picture sharpened Friday as the Financial Times reported BMW has formally cut its profit guidance, with the Iran conflict now explicitly cited alongside China headwinds as a compounding factor \u2014 confirming that what looked like a demand-side story is increasingly a dual-front crisis of shrinking revenues and rising geopolitical risk premiums baked into costs.\n**Update 5:31 PM CT:** **Update [Latest]:** The geopolitical dimension of BMW's guidance cut gained fresh financial architecture Friday as Reuters reported an Iran nuclear deal now includes a $300 billion fund \u2014 more than half already committed \u2014 a development that could ease the conflict-driven risk premiums currently squeezing European automakers' supply chains, though whether sanctions relief translates to meaningful cost relief for manufacturers remains the critical open question.",
+      "why_text": "BMW's decision to downgrade its 2026 outlook is a stark signal that the luxury auto sector is caught in a geopolitical vice \u2014 China's prolonged economic downturn is gutting demand in what was supposed to be the industry's growth engine, while the widening Middle East conflict is spiking supply chain costs and rattling consumer confidence. This isn't just a BMW problem: it's a canary-in-the-coalmine moment for every European automaker that over-indexed on China's recovery and assumed geopolitical instability would stay contained. When a brand as resilient as BMW starts walking back targets this publicly, the broader industrial outlook gets a lot harder to spin.\n**Update 3:29 PM CT:** The picture sharpened Friday as the Financial Times reported BMW has formally cut its profit guidance, with the Iran conflict now explicitly cited alongside China headwinds as a compounding factor \u2014 confirming that what looked like a demand-side story is increasingly a dual-front crisis of shrinking revenues and rising geopolitical risk premiums baked into costs.\n**Update 5:31 PM CT:** **Update [Latest]:** The geopolitical dimension of BMW's guidance cut gained fresh financial architecture Friday as Reuters reported an Iran nuclear deal now includes a $300 billion fund \u2014 more than half already committed \u2014 a development that could ease the conflict-driven risk premiums currently squeezing European automakers' supply chains, though whether sanctions relief translates to meaningful cost relief for manufacturers remains the critical open question.\n**Update 5:02 AM CT:** The scale of BMW's margin collapse is now in full view: Bloomberg reports the company sees its profit margin potentially falling as low as 1% \u2014 a near-wipeout for a brand that has historically commanded double-digit margins \u2014 with shares sliding sharply as markets digest a warning that frames China demand weakness and the Iran conflict not as temporary headwinds but as structural threats to near-term profitability.",
       "last_escalated_item_ids": [
         "2db3e11929d0",
         "bed0e6b84948",
@@ -1244,7 +1141,11 @@
         "95dc19464135",
         "f6f37277fe0e",
         "9876c0af3889",
-        "86f9af630872"
+        "86f9af630872",
+        "702dea4c0302",
+        "306d16fd1bac",
+        "fbbcce2a0a84",
+        "2fb2adfac959"
       ]
     },
     "c712943355ca9431": {
@@ -1286,7 +1187,8 @@
     "bf849c0c6e8e364d": {
       "topic": "Bad Bunny x adidas Gazelle Indoor Solar Gold October Drop",
       "item_ids": [
-        "94e53cf22089"
+        "94e53cf22089",
+        "391037930671"
       ],
       "created_at": "2026-06-16T20:29:35.444521+00:00",
       "last_escalated_size": 0,
@@ -2173,7 +2075,8 @@
     "be342c2302e6e446": {
       "topic": "Anthropic Fable Shutdown Open-Source AI",
       "item_ids": [
-        "586e77687b4d"
+        "586e77687b4d",
+        "0c47d9bda940"
       ],
       "created_at": "2026-06-17T00:03:00.106972+00:00",
       "last_escalated_size": 0,
@@ -2367,7 +2270,106 @@
       "created_at": "2026-06-17T05:09:06.047350+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "45ef80f4c5b4578c": {
+      "topic": "ASICS GEL-STRATUS MC Hybrid Performance Sneaker",
+      "item_ids": [
+        "bb7fcd69bd83"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2ba3181468301db5": {
+      "topic": "Commodore 8020 Flip Phone Launch",
+      "item_ids": [
+        "cba3c3dd3e8d"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "afe7a5081fcdabf6": {
+      "topic": "Neon Genesis Evangelion x CASETiFY Collection",
+      "item_ids": [
+        "07d0a49a7ac8"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "856748f58fd98bc8": {
+      "topic": "BBC Cancels Shows Content Spending Cut",
+      "item_ids": [
+        "c908d62201a4"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "07b81a98be16a5c3": {
+      "topic": "K-pop Demon Hunters Lego Set Release",
+      "item_ids": [
+        "8c6e9e20330d"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "10ea63f93c85fe0f": {
+      "topic": "$1000 Canvas Bag Fashion Value Analysis",
+      "item_ids": [
+        "bcba0cca2f44"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0e3d0f5a118224f1": {
+      "topic": "Memphis Grizzlies NBA Draft Mock Prediction No. 16",
+      "item_ids": [
+        "15a0f3c22f5f"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4bec6b9f77204a2f": {
+      "topic": "Atlanta Hawks NBA Draft Mock Prediction No. 23",
+      "item_ids": [
+        "6a449d8eb45f"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "36a234cd8d9d0b39": {
+      "topic": "Dallas Mavericks NBA Draft Mock Prediction No. 30",
+      "item_ids": [
+        "f8a278dce1ba"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "841896245cc4b0d9": {
+      "topic": "Miami Heat NBA Draft Mock Prediction No. 13",
+      "item_ids": [
+        "373238abd2ed"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "779932e722d854ca": {
+      "topic": "BMW iM3 Touring Electric Performance Renderings",
+      "item_ids": [
+        "e7ac8c88b160"
+      ],
+      "created_at": "2026-06-17T10:02:26.631043+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-17T05:09:06.048377+00:00"
+  "last_checked": "2026-06-17T10:02:30.538432+00:00"
 }
