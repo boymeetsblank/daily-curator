@@ -1,30 +1,5 @@
 {
   "known_ids": [
-    "8f7742092612",
-    "05d288269176",
-    "fd5d8900e732",
-    "bf217c7df3b1",
-    "fe2e07a30789",
-    "ccf7d1bff1f4",
-    "9f5293c3dc6f",
-    "106f28586e68",
-    "1ffe16a20a6e",
-    "0069bc344bf3",
-    "2fb65e9fdb54",
-    "fb344cf86b8b",
-    "35d6596191ef",
-    "4489883c710b",
-    "b6eac1a8dd93",
-    "51a26a46914d",
-    "2e61938c5e1c",
-    "c6007185ac16",
-    "7a5e0bf713bd",
-    "ff6d444e10ee",
-    "c0b04130fe79",
-    "79b15d91b8dc",
-    "20cd6df75b31",
-    "866ec7807663",
-    "da4535ebc831",
     "8fe52132f0f1",
     "665f2ab38e87",
     "8ffbf6172077",
@@ -499,7 +474,32 @@
     "5de7cbb514d6",
     "e73e1a4864d5",
     "0651d4270c0f",
-    "8dbf4673871a"
+    "8dbf4673871a",
+    "8cf5f8f95f9f",
+    "fb9940e66d8a",
+    "ecb43d384d2b",
+    "73569484ab75",
+    "8c157968f3ed",
+    "6c71b9d26517",
+    "9388a5e2ffe7",
+    "a6b61607dc6b",
+    "bbd5a744bd27",
+    "75dd6afdf96a",
+    "e80a426a8f3e",
+    "01e344975660",
+    "016d7ae2d93b",
+    "e02ea64c0446",
+    "cac89a878339",
+    "5a5ce2d394ba",
+    "ec84313e03d2",
+    "e92c7ce1f7a3",
+    "352bae880065",
+    "ed21b2c09d3a",
+    "caf7b2609f92",
+    "9ddb05178a5a",
+    "35894174c142",
+    "30e52c575068",
+    "f57cb5730814"
   ],
   "failed_ids": {
     "570e1f205a58": "2026-06-17T19:23:05.369957+00:00",
@@ -507,553 +507,32 @@
     "1a6a4ecc7645": "2026-06-17T19:23:05.369957+00:00",
     "d1f5f02489b3": "2026-06-17T19:23:05.369957+00:00",
     "4be9069cdf84": "2026-06-17T19:23:05.369957+00:00",
-    "3782dda72550": "2026-06-17T19:23:05.369957+00:00"
+    "3782dda72550": "2026-06-17T19:23:05.369957+00:00",
+    "5feef2be4141": "2026-06-17T23:00:56.426179+00:00",
+    "41af3b3118e4": "2026-06-17T23:00:56.426179+00:00",
+    "40cd0a95b391": "2026-06-17T23:00:56.426179+00:00",
+    "0d6c9ba146fb": "2026-06-17T23:00:56.426179+00:00",
+    "2feb40f0ebb0": "2026-06-17T23:00:56.426179+00:00",
+    "675029650c24": "2026-06-17T23:00:56.426179+00:00",
+    "649d6741f030": "2026-06-17T23:00:56.426179+00:00",
+    "1edd6034bc4e": "2026-06-17T23:00:56.426179+00:00",
+    "cc6359630d5c": "2026-06-17T23:00:56.426179+00:00",
+    "216ae61ad542": "2026-06-17T23:00:56.426179+00:00",
+    "22a9325d0dd0": "2026-06-17T23:00:56.426179+00:00",
+    "90af170ae3be": "2026-06-17T23:00:56.426179+00:00",
+    "d4403c79656e": "2026-06-17T23:00:56.426179+00:00",
+    "0b08ed6fb23d": "2026-06-17T23:00:56.426179+00:00",
+    "07373934126d": "2026-06-17T23:00:56.426179+00:00",
+    "e0b61b0ae90c": "2026-06-17T23:00:56.426179+00:00",
+    "f9e5157c5e10": "2026-06-17T23:00:56.426179+00:00",
+    "b74088a75ee0": "2026-06-17T23:00:56.426179+00:00",
+    "27cb0a7932ca": "2026-06-17T23:00:56.426179+00:00",
+    "f0c7ec31c2bb": "2026-06-17T23:00:56.426179+00:00",
+    "241530de25d9": "2026-06-17T23:00:56.426179+00:00",
+    "86db68e5b07b": "2026-06-17T23:00:56.426179+00:00",
+    "06897adf7ad3": "2026-06-17T23:00:56.426179+00:00"
   },
   "live_clusters": {
-    "850a7989a7574a8a": {
-      "topic": "adidas Climacool Laced Solar Turbo Hardware Upgrade",
-      "item_ids": [
-        "7ac659310b6f"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ff48c52aa54a1768": {
-      "topic": "Jose Alvarado AND1 Knicks PEs",
-      "item_ids": [
-        "06a6cb0e6047"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "88d6a649f0c9c17b": {
-      "topic": "Nike Dunk Low Studded Pink Flowers Release",
-      "item_ids": [
-        "77aa96d65948",
-        "8a2821666a51"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3fdae92e3015bd33": {
-      "topic": "Josh O'Connor Disclosure Day Press Tour",
-      "item_ids": [
-        "4aa63f7deb17"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6a74b67e4b64dedf": {
-      "topic": "Mystikal Sentenced 20 Years Rape Conviction",
-      "item_ids": [
-        "f9b2c0e63f65",
-        "ec8775abc06c",
-        "ec20f5b4f0f4",
-        "d426441d3582"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-17T00:02:17.925983+00:00",
-      "picks_file": "picks/picks-2026-06-17-0003.md",
-      "why_text": "Mystikal, the New Orleans rapper behind early 2000s hits like 'Danger' and 'Shake Ya Ass,' has been sentenced to 20 years after pleading guilty to rape \u2014 closing a legal saga that stretched across two decades and multiple charges. This is a sobering reminder that the music industry's tendency to rehabilitate and re-platform artists amid serious allegations has real consequences, and Mystikal's case was never quietly resolved. The sentence lands at a moment when accountability for legacy artists is under sharper scrutiny than ever.",
-      "last_escalated_item_ids": [
-        "f9b2c0e63f65",
-        "ec8775abc06c",
-        "ec20f5b4f0f4"
-      ]
-    },
-    "080f1d018e71adf0": {
-      "topic": "Absolutely Pop Alien Princess Barcelona Profile",
-      "item_ids": [
-        "dc639b7506ea"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6f6f1a6c1802e054": {
-      "topic": "Netflix Maternal Instinct Taylor Parker Pregnancy Hoax",
-      "item_ids": [
-        "750968dc1e49"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5369413a5df98db5": {
-      "topic": "Labubu Makers Sue LaBullBu Sneakers",
-      "item_ids": [
-        "1d029bd263c1"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5027bbab740aa31a": {
-      "topic": "Hollywood California Politics Federal Production Tax Incentive Rally",
-      "item_ids": [
-        "e942f6338554"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c5c5d4a242a1a5dc": {
-      "topic": "The Pitt Season 3 Isa Briones Gerran Howell",
-      "item_ids": [
-        "75d7ef949d7c"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "00fb7392ace1b403": {
-      "topic": "The Reluctant Traveler Eugene Levy Season 4 Renewal",
-      "item_ids": [
-        "c4408c804dfa"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "62dadc247cd6bfff": {
-      "topic": "Squirrel Flower New Album Say Prayer Gods Getting Going",
-      "item_ids": [
-        "28156eddee82"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "04498a175b0e84ba": {
-      "topic": "Rocky Horror Picture Show Las Vegas Sphere Residency",
-      "item_ids": [
-        "2e0870e6f8b8",
-        "2ad62774263d"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9a72b336805610bd": {
-      "topic": "Billboard Hot Latin Songs June 20 2026 Countdown",
-      "item_ids": [
-        "3fe75fe2c9b8"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "49c8155a40d9336d": {
-      "topic": "Latin Music Father's Day Poll Maluma Jay Wheeler",
-      "item_ids": [
-        "737e6727959b"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "262ec1a4d8605c76": {
-      "topic": "Taylor Swift I Knew It No. 1 Hot 100 Debut",
-      "item_ids": [
-        "d580e7e65804"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "69aebdc9833c08d6": {
-      "topic": "Ninja Slushi Deal Summer Frozen Coffee Advertisement",
-      "item_ids": [
-        "3065d4157b3a"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "465e9ad16ac43a8d": {
-      "topic": "Stephen Colbert Vince Guaraldi Peanuts Music Donation",
-      "item_ids": [
-        "076df4f08513"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "db667679728f988c": {
-      "topic": "Shania Twain Opens Harry Styles Tour",
-      "item_ids": [
-        "5b4e3857d1df"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a3e4ad1630bad4a0": {
-      "topic": "Alabama Nitrogen Gas Execution Halted Reverend",
-      "item_ids": [
-        "7e864ce13b66"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "503af9a2b5e2fc24": {
-      "topic": "JD Vance New Book Bestsellers List Media Blitz",
-      "item_ids": [
-        "5a0d44afcba2"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "73c9075edfe6495e": {
-      "topic": "Diddy Prison Time Reduction Bad Boys Records",
-      "item_ids": [
-        "fcbc725b711b"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e0e88077de4d9d93": {
-      "topic": "Shrek 5 Teaser Trailer Plot Reveals",
-      "item_ids": [
-        "2ae82ba3006b"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b2e720e42e19a25f": {
-      "topic": "Mighty Mary Documentary Hugh Jackman Elizabeth Banks Republic Pictures",
-      "item_ids": [
-        "4b123d3ae25a"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ebad463515262201": {
-      "topic": "Brec Bassinger 2026 UCLA Screenwriting Program Winner",
-      "item_ids": [
-        "294d32f50044"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f24e902bca69f06e": {
-      "topic": "Martha Graham Dance Company Documentary Directors",
-      "item_ids": [
-        "08231fa0f6e0"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9231a9f3bc690896": {
-      "topic": "MLB Executives Under Pressure Rankings",
-      "item_ids": [
-        "97ded7ff7fac"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b0585e13bdaad66c": {
-      "topic": "Mbappe France Record Stunning Goal",
-      "item_ids": [
-        "c40a773f9d44"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "539dea6a644aad6f": {
-      "topic": "Pickens Cowboys Camp Franchise Tag",
-      "item_ids": [
-        "d3698fda239a"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6ec4e6965c3b1d85": {
-      "topic": "Smith Brain CTE Testing Family",
-      "item_ids": [
-        "c0df33644595"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "df2b5419f0e2fb99": {
-      "topic": "Tortorella Golden Knights Coach Exit",
-      "item_ids": [
-        "61f7b3977d73"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2467969adbf05b6d": {
-      "topic": "Apple Hide My Email Privacy Feature Change",
-      "item_ids": [
-        "7ec29f4cdedc"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c24273b256b88cb0": {
-      "topic": "Webb Telescope Bulge Fossil Fragment Discovery",
-      "item_ids": [
-        "dc4ae5786280"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0616d30341efa76b": {
-      "topic": "Cockroaches Bacterial Genomes Research",
-      "item_ids": [
-        "56464012bbbc"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3146126f258e1fcb": {
-      "topic": "Amazon Rockets European Delivery",
-      "item_ids": [
-        "9821879b30a5"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a52f6b99a9b3eb12": {
-      "topic": "Databricks Sales Growth AI Agents Margins",
-      "item_ids": [
-        "dc596badeda6"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "54a3199c784626ec": {
-      "topic": "Roku Fox Deal Acquisition Strategy",
-      "item_ids": [
-        "1d5242fea521"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "790148f89da2a697": {
-      "topic": "DOJ Musk xAI NAACP Air Pollution Lawsuit",
-      "item_ids": [
-        "5d763a29f430"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "16ea589e39c0e737": {
-      "topic": "Great Britain Trump Social Media Ban Battle",
-      "item_ids": [
-        "85b046be9bfa"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2eb649a63a73a95d": {
-      "topic": "Nvidia Jensen Huang Technology Future Concerns",
-      "item_ids": [
-        "8b81cc7e54b2"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3852cc31d5474edd": {
-      "topic": "Suffolk Technology Park Wyandanch Babylon Approval",
-      "item_ids": [
-        "c2ca0ee12454"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "33243396bb7d640b": {
-      "topic": "Tennessee Lawmakers Textbooks vs Technology Schools",
-      "item_ids": [
-        "b32260d5d2f7",
-        "bec25fd0427a"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a48feb88bd30f3c1": {
-      "topic": "Hearing Technology Sensors Efficiency Processing",
-      "item_ids": [
-        "69fe4ccfd412"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4f6c0b6a55f4e13a": {
-      "topic": "Arc'teryx Shirt Jacket Design",
-      "item_ids": [
-        "f59635beb1bc"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2b2203540dd52cb1": {
-      "topic": "Mike Brown Cavs NBA Championship Experience",
-      "item_ids": [
-        "32925b10c915"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ab6d663a235d94ad": {
-      "topic": "2026 NBA Free Agency Schedule Team Needs",
-      "item_ids": [
-        "4f7bdc80f05d"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cb52514f319e82ac": {
-      "topic": "Jazz Draft Dybantsa Boozer Peterson Debate",
-      "item_ids": [
-        "1076b23a856d"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "aea2515ba874fb07": {
-      "topic": "Fed Interest Rate Decision Iran Deal Economic",
-      "item_ids": [
-        "cd200cf7808e"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "06317d0bca3a01b0": {
-      "topic": "Intel Manufacturing Technology Initial Production",
-      "item_ids": [
-        "144f058206c3"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dff95a0b2048834a": {
-      "topic": "Dousman Pet Boarding Fire 21 Animals Illegal",
-      "item_ids": [
-        "c3fa93405fca"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7858b9c7922f6a47": {
-      "topic": "Seattle JumpStart Tax Business Jobs Bellevue",
-      "item_ids": [
-        "b47184a2d7d2"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e1c90ae50d367a0b": {
-      "topic": "Skill Game Regulation Business Impact",
-      "item_ids": [
-        "d24877caa0fe"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6d46f7ade5c8ad21": {
-      "topic": "Idaho Veteran Business Outreach Center Risch",
-      "item_ids": [
-        "790e7751307f"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "55d153e1fd2b336a": {
-      "topic": "World Bank Argentina Financing Guarantee Package",
-      "item_ids": [
-        "8e114650528b"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b79067fba7d3fe1e": {
-      "topic": "Healthcare AI Lag Finance Investment Race",
-      "item_ids": [
-        "187e3e17825e"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9a44b225603f0386": {
-      "topic": "Iran Deal $300 Billion Fund Exclusive",
-      "item_ids": [
-        "9d890f6be895"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "00a0f7bd1041de9c": {
-      "topic": "Biogen Q2 2026 Financial Results July",
-      "item_ids": [
-        "7654ae13567d"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b55eeee6b862aa46": {
-      "topic": "Banks Petrochemical Industry Financing Deep Pockets",
-      "item_ids": [
-        "af7ffb4652ce"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4e43ce2e0e969820": {
-      "topic": "France Senegal Mbappe Dembele Rabiot Soccer",
-      "item_ids": [
-        "e20f42f86292"
-      ],
-      "created_at": "2026-06-16T22:31:35.903385+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "5f2020422468b3d9": {
       "topic": "Awake NY DoorDash Soccer Capsule Collaboration",
       "item_ids": [
@@ -2204,13 +1683,19 @@
         "59fba1b6ecf9",
         "833e46cd678a",
         "b53b4a6be6f5",
-        "d2f4ae61d81b"
+        "d2f4ae61d81b",
+        "75dd6afdf96a",
+        "e80a426a8f3e",
+        "9ddb05178a5a",
+        "35894174c142",
+        "30e52c575068",
+        "f57cb5730814"
       ],
       "created_at": "2026-06-17T16:55:10.547128+00:00",
-      "last_escalated_size": 8,
-      "last_escalated_at": "2026-06-17T21:28:22.085729+00:00",
+      "last_escalated_size": 14,
+      "last_escalated_at": "2026-06-17T23:00:56.426179+00:00",
       "picks_file": "picks/picks-2026-06-17-1923.md",
-      "why_text": "The Knicks' first championship parade in decades is landing at Yankee Stadium, and New York is treating it like a full cultural coronation \u2014 not just a sports celebration. Alicia Keys performing 'Empire State of Mind' isn't a booking, it's a thesis statement: this city has been waiting for a winner long enough that the victory lap needed its own soundtrack. The fact that OG Anunoby is publicly calling Keys out and Stephon Marbury is sending messages to Wembanyama shows this moment is pulling every layer of New York basketball mythology into one event.\n**Update 4:29 PM CT:** The parade's cultural footprint is already measurable: New York anthem catalog \u2014 think Jay-Z, Nas, LCD Soundsystem \u2014 is seeing streaming surges tracked by Billboard, confirming the city is soundtracking its own celebration beyond the stadium. Meanwhile, Jose Alvarado's openness to a White House visit signals the Knicks are now operating in full civic-moment territory, where the championship stops being a sports story and starts being a New York institution.",
+      "why_text": "The Knicks' first championship parade in decades is landing at Yankee Stadium, and New York is treating it like a full cultural coronation \u2014 not just a sports celebration. Alicia Keys performing 'Empire State of Mind' isn't a booking, it's a thesis statement: this city has been waiting for a winner long enough that the victory lap needed its own soundtrack. The fact that OG Anunoby is publicly calling Keys out and Stephon Marbury is sending messages to Wembanyama shows this moment is pulling every layer of New York basketball mythology into one event.\n**Update 4:29 PM CT:** The parade's cultural footprint is already measurable: New York anthem catalog \u2014 think Jay-Z, Nas, LCD Soundsystem \u2014 is seeing streaming surges tracked by Billboard, confirming the city is soundtracking its own celebration beyond the stadium. Meanwhile, Jose Alvarado's openness to a White House visit signals the Knicks are now operating in full civic-moment territory, where the championship stops being a sports story and starts being a New York institution.\n**Update 6:01 PM CT:** The parade's hip-hop infrastructure just got significantly bigger: Fat Joe is organizing a dedicated float featuring Wu-Tang Clan, Mary J. Blige, and The LOX, transforming what could have been a cameo moment into a full New York rap summit rolling through the streets \u2014 while Jalen Brunson and Josh Hart throwing out the first pitch at Yankee Stadium tonight confirms the Knicks have fully colonized the city's entire sports calendar, not just their own lane.",
       "last_escalated_item_ids": [
         "490d1e0a2b3f",
         "7290dab5a1f1",
@@ -2219,7 +1704,13 @@
         "59fba1b6ecf9",
         "833e46cd678a",
         "b53b4a6be6f5",
-        "d2f4ae61d81b"
+        "d2f4ae61d81b",
+        "75dd6afdf96a",
+        "e80a426a8f3e",
+        "9ddb05178a5a",
+        "35894174c142",
+        "30e52c575068",
+        "f57cb5730814"
       ]
     },
     "e174e7a75e50d12e": {
@@ -2922,7 +2413,8 @@
     "33cd1442b3c1b7d9": {
       "topic": "adidas D.O.N. Issue #8 Lucid Tangerine Release",
       "item_ids": [
-        "cea0caaf1581"
+        "cea0caaf1581",
+        "fb9940e66d8a"
       ],
       "created_at": "2026-06-17T21:29:19.875815+00:00",
       "last_escalated_size": 0,
@@ -3413,7 +2905,16 @@
       "created_at": "2026-06-17T21:29:19.875815+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "9f9ce9c2c7c8d6d3": {
+      "topic": "Nike Air Max 1000.2 Pink Spell Release",
+      "item_ids": [
+        "8cf5f8f95f9f"
+      ],
+      "created_at": "2026-06-17T23:01:21.856062+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-17T21:29:24.460283+00:00"
+  "last_checked": "2026-06-17T23:01:26.194918+00:00"
 }
