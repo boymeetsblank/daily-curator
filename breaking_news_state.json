@@ -1,58 +1,5 @@
 {
   "known_ids": [
-    "9821879b30a5",
-    "dc596badeda6",
-    "1d5242fea521",
-    "5d763a29f430",
-    "85b046be9bfa",
-    "8b81cc7e54b2",
-    "c2ca0ee12454",
-    "b32260d5d2f7",
-    "69fe4ccfd412",
-    "f59635beb1bc",
-    "32925b10c915",
-    "4f7bdc80f05d",
-    "f67d133e11a9",
-    "1076b23a856d",
-    "4b7f46982cd8",
-    "cd200cf7808e",
-    "144f058206c3",
-    "c3fa93405fca",
-    "b47184a2d7d2",
-    "d24877caa0fe",
-    "790e7751307f",
-    "0d703260d057",
-    "8e114650528b",
-    "187e3e17825e",
-    "9d890f6be895",
-    "7654ae13567d",
-    "af7ffb4652ce",
-    "6ac3f9d47996",
-    "95dc19464135",
-    "f6f37277fe0e",
-    "9876c0af3889",
-    "86f9af630872",
-    "e20f42f86292",
-    "b7f8db2ede25",
-    "aaf041abeb6d",
-    "dd5309ad1f93",
-    "a378747b8dad",
-    "e338a301262b",
-    "0a3380f0ef31",
-    "f814417fc8b0",
-    "77250b402b6c",
-    "fdd3f3a2d51f",
-    "aa826d93b736",
-    "0cfc2fcf037a",
-    "397f819c3cd7",
-    "559786254722",
-    "c50578303c4e",
-    "07d29b01841f",
-    "d2fa0de2b9a0",
-    "fd4528b7fdc8",
-    "e977c6c269c5",
-    "5069b6c90500",
-    "d8584d32aace",
     "303d51c03127",
     "ec8775abc06c",
     "ec20f5b4f0f4",
@@ -499,7 +446,60 @@
     "993572d6bd58",
     "13ea82c951d4",
     "2d99552dd20b",
-    "aac424c5ab2d"
+    "aac424c5ab2d",
+    "ec3e8f9d9091",
+    "a1b6b6f8ed35",
+    "afcdbbaa891e",
+    "e8eafce913fc",
+    "13d3625a594c",
+    "52a13939bb8a",
+    "7bb7b9a4464d",
+    "45dd4b02d0eb",
+    "b839a36af245",
+    "dddcb32dfe81",
+    "7bb2a9523758",
+    "b802ddc4feb7",
+    "aa7fbe43ac08",
+    "53fb393c6629",
+    "09a180145547",
+    "16e238fef958",
+    "7a5d5f978f51",
+    "f81e2748c327",
+    "58cfa0e6e4f9",
+    "698cca66f1f7",
+    "74d3ec5eae79",
+    "39a0b453e335",
+    "bc25fa1dba1a",
+    "4996431144bc",
+    "afb541b56d41",
+    "5b32bfa572e5",
+    "d13e1ed363b3",
+    "85073fb28fd5",
+    "437cf2bef191",
+    "e0754ad000a9",
+    "1c746517406a",
+    "ab33863c6bbe",
+    "937c7e5d0fd8",
+    "dad7b4f8c096",
+    "de6d92798cc0",
+    "0f3febfa2704",
+    "962bf6fd3511",
+    "a5ba348f4c4f",
+    "472abae3fddb",
+    "bb26b2627392",
+    "4b7de29c57fd",
+    "8b65e36c515e",
+    "4404904eb019",
+    "04862a033dd2",
+    "962bf6fd3511",
+    "c0ab506835fc",
+    "a5ba348f4c4f",
+    "de6a45544646",
+    "aba00dfeabe9",
+    "189f5005f088",
+    "a1c7d666c0a9",
+    "d2ff31db42d9",
+    "05044f7dcb12"
   ],
   "failed_ids": {
     "ad78641b8a71": "2026-06-18T10:53:28.119176+00:00",
@@ -519,228 +519,28 @@
     "2f5eea484b5f": "2026-06-18T10:53:28.119176+00:00",
     "196f75ec2020": "2026-06-18T10:53:28.119176+00:00",
     "df2defcad097": "2026-06-18T10:53:28.119176+00:00",
-    "61a14cf2fa32": "2026-06-18T10:53:28.119176+00:00"
+    "61a14cf2fa32": "2026-06-18T10:53:28.119176+00:00",
+    "6010a05d19e4": "2026-06-18T14:08:27.388699+00:00",
+    "9d79aa3b744b": "2026-06-18T14:08:27.388699+00:00",
+    "03488c5b640e": "2026-06-18T14:08:27.388699+00:00",
+    "d043b7809446": "2026-06-18T14:08:27.388699+00:00",
+    "df136571865e": "2026-06-18T14:08:27.388699+00:00",
+    "0e1546fd4707": "2026-06-18T14:08:27.388699+00:00",
+    "f0439c74198c": "2026-06-18T14:08:27.388699+00:00",
+    "5eae99738cbd": "2026-06-18T14:08:27.388699+00:00",
+    "99fbc9738ee0": "2026-06-18T14:08:27.388699+00:00",
+    "4dbdb5d17f5e": "2026-06-18T14:08:27.388699+00:00",
+    "582b1d895388": "2026-06-18T14:08:27.388699+00:00",
+    "4d096f479798": "2026-06-18T14:08:27.388699+00:00",
+    "ef101a66f6cd": "2026-06-18T14:08:27.388699+00:00",
+    "ad034ff4010e": "2026-06-18T14:08:27.388699+00:00",
+    "adedac9d3c8f": "2026-06-18T14:08:27.388699+00:00",
+    "5fd571cf75e5": "2026-06-18T14:08:27.388699+00:00",
+    "043b6c4e4b4e": "2026-06-18T14:08:27.388699+00:00",
+    "b97776116705": "2026-06-18T14:08:27.388699+00:00",
+    "de2696158039": "2026-06-18T14:08:27.388699+00:00"
   },
   "live_clusters": {
-    "cfd81abd6ab6335f": {
-      "topic": "Noah Kahan Kidz Bop Lyric Edit Reaction",
-      "item_ids": [
-        "0c5e363e49ee"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "efcfab62bf2f0105": {
-      "topic": "Finneas Interview on Billie Eilish and Record Production",
-      "item_ids": [
-        "546192c1e15c",
-        "3bd99adabb09"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f2833fff54d0799e": {
-      "topic": "Perrie Edwards Wedding to Alex Oxlade-Chamberlain",
-      "item_ids": [
-        "a6a0c3bc2c02"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6f0f6d9ebbe3031f": {
-      "topic": "Rolling Stones Foreign Tongues Album",
-      "item_ids": [
-        "3ab08db78deb"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "277572074fafb59f": {
-      "topic": "Thomas Bangalter Post-Daft Punk Career",
-      "item_ids": [
-        "4211dab0555a"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b39eb66f3b0e54f4": {
-      "topic": "Prime Video Spain 2027 Content Slate",
-      "item_ids": [
-        "3d61890d2a4c"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "05c203183a1307cf": {
-      "topic": "SpaceX Alum Geothermal Energy Startup Funding",
-      "item_ids": [
-        "e06a3c0289fb"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ce7ec5e5990ce6ba": {
-      "topic": "Canadian Pension Fund India AI Data Center Investment",
-      "item_ids": [
-        "23dab7c5dbcf"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "70c06de43e61935a": {
-      "topic": "Carvana Vehicle Sales Strategy Shift",
-      "item_ids": [
-        "641809ff0dad",
-        "e438d4d23330"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "afb136e72621bbb9": {
-      "topic": "CME Group Leadership Transition Duffy Fitzpatrick",
-      "item_ids": [
-        "ca17d53d5a8c",
-        "c72c1604e05d"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "daf56c373284ffed": {
-      "topic": "Anthropic AI Regulation Policy Response",
-      "item_ids": [
-        "29dcc2d7abad"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6d7dc7bc669f11f0": {
-      "topic": "ASICS Dad Shoe Summer Collection",
-      "item_ids": [
-        "522ec093880d"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "928a80fd461e3c14": {
-      "topic": "Patek Philippe Nautilus 50th Anniversary Museum Exhibition",
-      "item_ids": [
-        "5f00fb663d42"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "42214c1cf6c373f4": {
-      "topic": "Knicks 2026 Championship Draft Trade Rumors",
-      "item_ids": [
-        "b291dabccfb0"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d8ac3472dd9ed495": {
-      "topic": "Zaccharie Risacher NBA Draft Confidence Interview",
-      "item_ids": [
-        "a23465dac6cf"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "52cabb90a17cd4e1": {
-      "topic": "Hawks NBA Draft Mock Selections",
-      "item_ids": [
-        "d213d79fd7ea"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "efca2867852e9fcc": {
-      "topic": "Warriors Kawhi Leonard Trey Murphy Trade Possibilities",
-      "item_ids": [
-        "72368dc41d24"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "59f7be5214e8dd04": {
-      "topic": "Kings 2nd Round NBA Draft Workout Targets",
-      "item_ids": [
-        "485ffe06f723"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "87a9d484cd3f1cbb": {
-      "topic": "Embark Commit Finance HR Technology Partnership",
-      "item_ids": [
-        "d77c22c4d2b8"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "48f1c064ff43cf9a": {
-      "topic": "Siemens Financial Services SBA Lender Approval",
-      "item_ids": [
-        "ef665eb1650d"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e63d88874269fbfc": {
-      "topic": "Range Rover China Price Collapse",
-      "item_ids": [
-        "ddbbdf77185e"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "63b77c571e3b2821": {
-      "topic": "Genesis Luxury Brand Positioning Strategy",
-      "item_ids": [
-        "6dcd07d7a0e9"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "66ba3b9a1a90727d": {
-      "topic": "BMW 3 Series Electric Early Order Opening",
-      "item_ids": [
-        "27f34fa6cbd8"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "22044077c05d739a": {
-      "topic": "BMW M3 Final G80 Generation Announcement",
-      "item_ids": [
-        "ac9efaf151b1"
-      ],
-      "created_at": "2026-06-17T13:56:41.511898+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "3bc2f3e26b467edc": {
       "topic": "Nike Air DT Max '96 Low White Leather Release",
       "item_ids": [
@@ -1132,7 +932,8 @@
     "691b4f5dfdb3ad13": {
       "topic": "Allbirds AI Pivot Name Change CEO Hire Stock Rally",
       "item_ids": [
-        "9a56f995ac83"
+        "9a56f995ac83",
+        "dad7b4f8c096"
       ],
       "created_at": "2026-06-17T16:55:10.547128+00:00",
       "last_escalated_size": 0,
@@ -1262,13 +1063,17 @@
         "56b28395f594",
         "3b43cf28eef2",
         "9d5b29331faf",
-        "21cb60284161"
+        "21cb60284161",
+        "437cf2bef191",
+        "e0754ad000a9",
+        "1c746517406a",
+        "ab33863c6bbe"
       ],
       "created_at": "2026-06-17T16:55:10.547128+00:00",
-      "last_escalated_size": 23,
-      "last_escalated_at": "2026-06-18T10:53:28.119176+00:00",
+      "last_escalated_size": 27,
+      "last_escalated_at": "2026-06-18T14:08:27.388699+00:00",
       "picks_file": "picks/picks-2026-06-17-1923.md",
-      "why_text": "The Knicks' first championship parade in decades is landing at Yankee Stadium, and New York is treating it like a full cultural coronation \u2014 not just a sports celebration. Alicia Keys performing 'Empire State of Mind' isn't a booking, it's a thesis statement: this city has been waiting for a winner long enough that the victory lap needed its own soundtrack. The fact that OG Anunoby is publicly calling Keys out and Stephon Marbury is sending messages to Wembanyama shows this moment is pulling every layer of New York basketball mythology into one event.\n**Update 4:29 PM CT:** The parade's cultural footprint is already measurable: New York anthem catalog \u2014 think Jay-Z, Nas, LCD Soundsystem \u2014 is seeing streaming surges tracked by Billboard, confirming the city is soundtracking its own celebration beyond the stadium. Meanwhile, Jose Alvarado's openness to a White House visit signals the Knicks are now operating in full civic-moment territory, where the championship stops being a sports story and starts being a New York institution.\n**Update 6:01 PM CT:** The parade's hip-hop infrastructure just got significantly bigger: Fat Joe is organizing a dedicated float featuring Wu-Tang Clan, Mary J. Blige, and The LOX, transforming what could have been a cameo moment into a full New York rap summit rolling through the streets \u2014 while Jalen Brunson and Josh Hart throwing out the first pitch at Yankee Stadium tonight confirms the Knicks have fully colonized the city's entire sports calendar, not just their own lane.\n**Update 8:37 PM CT:** The Knicks' cultural coronation just gained two new long-tail anchors: Ben Stiller is making an official documentary series with A24 and HBO, meaning this championship already has its prestige-screen legacy locked in before the confetti settles, while the White House formally invited the team \u2014 and James Dolan confirmed they'll attend \u2014 cementing the civic-institution framing that's defined this entire parade cycle. Meanwhile, Allan Houston surfacing rare Nike PE grails for the parade is the sneaker world's own form of canon acknowledgment, pulling the '90s Knicks mythology directly into today's procession.\n**Update 5:53 AM CT:** The Knicks' parade is now a full live-broadcast event with Rolling Stone tracking free streaming options for fans who couldn't secure a spot along the route \u2014 a distribution footprint that extends the cultural moment well beyond New York City \u2014 while the New York Times reporting fans lining up before dawn confirms this isn't just civic pride performing itself for cameras, but a genuine mass mobilization the city hasn't seen in a generation.",
+      "why_text": "The Knicks' first championship parade in decades is landing at Yankee Stadium, and New York is treating it like a full cultural coronation \u2014 not just a sports celebration. Alicia Keys performing 'Empire State of Mind' isn't a booking, it's a thesis statement: this city has been waiting for a winner long enough that the victory lap needed its own soundtrack. The fact that OG Anunoby is publicly calling Keys out and Stephon Marbury is sending messages to Wembanyama shows this moment is pulling every layer of New York basketball mythology into one event.\n**Update 4:29 PM CT:** The parade's cultural footprint is already measurable: New York anthem catalog \u2014 think Jay-Z, Nas, LCD Soundsystem \u2014 is seeing streaming surges tracked by Billboard, confirming the city is soundtracking its own celebration beyond the stadium. Meanwhile, Jose Alvarado's openness to a White House visit signals the Knicks are now operating in full civic-moment territory, where the championship stops being a sports story and starts being a New York institution.\n**Update 6:01 PM CT:** The parade's hip-hop infrastructure just got significantly bigger: Fat Joe is organizing a dedicated float featuring Wu-Tang Clan, Mary J. Blige, and The LOX, transforming what could have been a cameo moment into a full New York rap summit rolling through the streets \u2014 while Jalen Brunson and Josh Hart throwing out the first pitch at Yankee Stadium tonight confirms the Knicks have fully colonized the city's entire sports calendar, not just their own lane.\n**Update 8:37 PM CT:** The Knicks' cultural coronation just gained two new long-tail anchors: Ben Stiller is making an official documentary series with A24 and HBO, meaning this championship already has its prestige-screen legacy locked in before the confetti settles, while the White House formally invited the team \u2014 and James Dolan confirmed they'll attend \u2014 cementing the civic-institution framing that's defined this entire parade cycle. Meanwhile, Allan Houston surfacing rare Nike PE grails for the parade is the sneaker world's own form of canon acknowledgment, pulling the '90s Knicks mythology directly into today's procession.\n**Update 5:53 AM CT:** The Knicks' parade is now a full live-broadcast event with Rolling Stone tracking free streaming options for fans who couldn't secure a spot along the route \u2014 a distribution footprint that extends the cultural moment well beyond New York City \u2014 while the New York Times reporting fans lining up before dawn confirms this isn't just civic pride performing itself for cameras, but a genuine mass mobilization the city hasn't seen in a generation.\n**Update 9:09 AM CT:** With live parade coverage now anchored across major outlets including the Daily News and USA Today, the mainstream broadcast infrastructure has fully locked in \u2014 and the narrative framing is sharpening around individual legacies: Jalen Brunson is being cemented as an all-time Knicks icon in the mold of championship-defining guards, while Mikal Bridges' arc from Nets trade piece to champion is emerging as the parade's most pointed redemption story, the kind of 'stayed in New York and won' mythology the city builds monuments around.",
       "last_escalated_item_ids": [
         "490d1e0a2b3f",
         "7290dab5a1f1",
@@ -1292,7 +1097,11 @@
         "56b28395f594",
         "3b43cf28eef2",
         "9d5b29331faf",
-        "21cb60284161"
+        "21cb60284161",
+        "437cf2bef191",
+        "e0754ad000a9",
+        "1c746517406a",
+        "ab33863c6bbe"
       ]
     },
     "e174e7a75e50d12e": {
@@ -2027,7 +1836,8 @@
     "58823cb9ec4b5ba4": {
       "topic": "Jelly Roll Bunnie Xo Divorce Instagram Bio Removal",
       "item_ids": [
-        "0ae9d4afd86b"
+        "0ae9d4afd86b",
+        "45dd4b02d0eb"
       ],
       "created_at": "2026-06-17T21:29:19.875815+00:00",
       "last_escalated_size": 0,
@@ -2092,11 +1902,21 @@
       "topic": "2026 U.S. Open Golf Tournament Viewing Guide",
       "item_ids": [
         "e4086041f2fc",
-        "4cb829c181a5"
+        "4cb829c181a5",
+        "09a180145547",
+        "16e238fef958"
       ],
       "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-18T14:08:27.388699+00:00",
+      "picks_file": "picks/picks-2026-06-18-1409.md",
+      "why_text": "The 2026 U.S. Open is underway, and Scottie Scheffler \u2014 still the undisputed No. 1 player in the world \u2014 is the gravitational center of the entire tournament. Golf's major season is at a cultural inflection point, with LIV vs. PGA tensions still reshaping who shows up and who matters, making every leaderboard move a proxy battle for the sport's soul. The convergence of betting coverage, storyline breakdowns, and live round updates signals this is already appointment viewing, not just a niche sports moment.",
+      "last_escalated_item_ids": [
+        "e4086041f2fc",
+        "4cb829c181a5",
+        "09a180145547",
+        "16e238fef958"
+      ]
     },
     "fda71f8dead6b421": {
       "topic": "Sabrina Carpenter Restraining Order Stalker Case",
@@ -2157,11 +1977,19 @@
       "topic": "Ronaldo Portugal Congo DR Football Draw",
       "item_ids": [
         "25cb9de8ebae",
-        "036aaff966ca"
+        "036aaff966ca",
+        "f81e2748c327"
       ],
       "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-18T14:08:27.388699+00:00",
+      "picks_file": "picks/picks-2026-06-18-1409.md",
+      "why_text": "Portugal were held to a draw by DR Congo in World Cup qualifying, and once again the conversation is less about the team and more about Cristiano Ronaldo \u2014 his form, his role, and whether he's a help or a hindrance at 39. Ronaldo insisting the campaign is 'far from over' is classic deflection, but it only sharpens the question Portugal keeps refusing to answer directly: is he still the solution, or is he the problem? This is a cultural flashpoint as much as a football one \u2014 Ronaldo's identity is so fused with Portuguese national pride that any honest reckoning with his decline feels almost taboo.",
+      "last_escalated_item_ids": [
+        "25cb9de8ebae",
+        "036aaff966ca",
+        "f81e2748c327"
+      ]
     },
     "88c17f200abe159e": {
       "topic": "Joe Burrow Bengals LSU Title Team Comparison",
@@ -2410,7 +2238,8 @@
     "978f84746dacdf61": {
       "topic": "SpaceX Stock First Decline Surge End",
       "item_ids": [
-        "ab10aa04c32a"
+        "ab10aa04c32a",
+        "962bf6fd3511"
       ],
       "created_at": "2026-06-17T21:29:19.875815+00:00",
       "last_escalated_size": 0,
@@ -2920,7 +2749,322 @@
       "created_at": "2026-06-18T10:53:56.695571+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b73f60c42d8466a5": {
+      "topic": "Rukus Nike Dunk Low Promotional Drop Swoosh Donuts",
+      "item_ids": [
+        "ec3e8f9d9091"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f1eb03691b718554": {
+      "topic": "Air Jordan 3 Knicks Colorway Restock",
+      "item_ids": [
+        "a1b6b6f8ed35"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "37b0865fbddd39d0": {
+      "topic": "Tanika Frisco Finally Found Love Single",
+      "item_ids": [
+        "afcdbbaa891e"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cdda4190e84fbc4c": {
+      "topic": "Cam'ron Stephen A Smith Interview Moment",
+      "item_ids": [
+        "e8eafce913fc"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "264ffea4eab34d4d": {
+      "topic": "To\u00f1ita Fest Brooklyn 2026 Third Edition",
+      "item_ids": [
+        "13d3625a594c"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b0d66d2450bf3390": {
+      "topic": "PJ Morton Saturday Night Sunday Morning Double LP Juneteenth",
+      "item_ids": [
+        "52a13939bb8a"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "06604c5ee34fc09c": {
+      "topic": "MUNA Billboard Cover Shoot",
+      "item_ids": [
+        "7bb7b9a4464d"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7cb813ffae58a6e6": {
+      "topic": "Musicians Helicopter Safety Oliver Tree Crash",
+      "item_ids": [
+        "b839a36af245"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ddd3552c860bbf01": {
+      "topic": "Ozzy Osbourne Black Sabbath Paranoid Performance History",
+      "item_ids": [
+        "dddcb32dfe81"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "38111f0ea90a96b8": {
+      "topic": "Charli XCX Rolling Stone Interview Life Work",
+      "item_ids": [
+        "7bb2a9523758"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fabb64d1ab359bcd": {
+      "topic": "Niecy Nash Dia True-Crime Video Podcast Pave Studios",
+      "item_ids": [
+        "b802ddc4feb7"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ec185eb488a04ff7": {
+      "topic": "Matthew McConaughey Woody Harrelson Brothers Apple TV Comedy",
+      "item_ids": [
+        "aa7fbe43ac08"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0f84a152865be056": {
+      "topic": "Richard Linklater Zurich Film Festival Honorary Award",
+      "item_ids": [
+        "53fb393c6629"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3b769b8bfae36bef": {
+      "topic": "Trey Young Wizards Decline Option Free Agency",
+      "item_ids": [
+        "7a5d5f978f51"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "56d73bdf684d11d4": {
+      "topic": "Waymo Robotaxi Recall Freeway Construction Zone Risk",
+      "item_ids": [
+        "58cfa0e6e4f9"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4fcbee5840a738af": {
+      "topic": "Spotify Reserved Ticket Sales Music Superfans Launch",
+      "item_ids": [
+        "698cca66f1f7"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "30813d54296eb2f7": {
+      "topic": "Adobe AI Assistant Premiere Illustrator InDesign Integration",
+      "item_ids": [
+        "74d3ec5eae79"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a7c166078f4a659c": {
+      "topic": "Akai MPC One Key 37 Workstations Refresh",
+      "item_ids": [
+        "39a0b453e335"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "14c1a96fdd0104c4": {
+      "topic": "GTA 6 Pre-Orders Open June 25",
+      "item_ids": [
+        "bc25fa1dba1a"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e013118df31ba5b8": {
+      "topic": "Old iPods Gen Z Revival Trend",
+      "item_ids": [
+        "4996431144bc"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d355e2aac3287664": {
+      "topic": "XGIMI MemoMind One Smart Glasses AI Review",
+      "item_ids": [
+        "afb541b56d41"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5f6c41ffac197873": {
+      "topic": "Ultrahuman M2 Live Glucose Tracker Update",
+      "item_ids": [
+        "5b32bfa572e5"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b2317fa57698e3f5": {
+      "topic": "Intel Surge Trump Apple Chip Design Partnership",
+      "item_ids": [
+        "d13e1ed363b3"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f6f175b0f4fb3932": {
+      "topic": "Retirement Savers SpaceX Stock Ownership",
+      "item_ids": [
+        "85073fb28fd5"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "43aceb23a397612f": {
+      "topic": "Southeast Asia Gaming Industry Global Stage",
+      "item_ids": [
+        "937c7e5d0fd8"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9a05368b43f7a963": {
+      "topic": "Snap Specs AR Glasses 2195 Dollar Launch",
+      "item_ids": [
+        "de6d92798cc0"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0e294543da2dee83": {
+      "topic": "iPhone Pro 2027 1299 Dollar Price Tim Cook",
+      "item_ids": [
+        "0f3febfa2704"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2a95086a4e9b62c2": {
+      "topic": "Stock Market Juneteenth Holiday Trading Schedule 2026",
+      "item_ids": [
+        "a5ba348f4c4f"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bfc2f1aa627bb99a": {
+      "topic": "Coinbase Bitcoin AI Agents JPMorgan CEO",
+      "item_ids": [
+        "472abae3fddb"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "31384e9ae76a93e6": {
+      "topic": "Meta Morale Crisis Mark Zuckerberg CTO Admission",
+      "item_ids": [
+        "bb26b2627392"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c349056ff1f377fb": {
+      "topic": "SpaceX Mexican Immigrant Welder Million Dollar Stake",
+      "item_ids": [
+        "4b7de29c57fd"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b5d8712652e094c3": {
+      "topic": "National Grid Upstate NY Infrastructure Investment",
+      "item_ids": [
+        "8b65e36c515e"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "11920349ccbf23a3": {
+      "topic": "Salesforce Agentic Financial Automation Tool",
+      "item_ids": [
+        "4404904eb019"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "35eb63637174fee2": {
+      "topic": "Orrick Law Firm Finance Practice Expansion",
+      "item_ids": [
+        "04862a033dd2"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5667955a662671f4": {
+      "topic": "South Africa Vehicle Export Manufacturing Disconnect",
+      "item_ids": [
+        "c0ab506835fc"
+      ],
+      "created_at": "2026-06-18T14:09:24.940268+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-18T10:54:06.434192+00:00"
+  "last_checked": "2026-06-18T14:09:46.173296+00:00"
 }
