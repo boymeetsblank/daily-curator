@@ -1,24 +1,5 @@
 {
   "known_ids": [
-    "8fe52132f0f1",
-    "665f2ab38e87",
-    "8ffbf6172077",
-    "4f78f6d65a82",
-    "0077b41c12c7",
-    "1480e9b64d90",
-    "f0781724a048",
-    "39293c60bab8",
-    "c2d68aad6fa5",
-    "df11decb67d8",
-    "d069a5403189",
-    "79094526698a",
-    "876b50ddbe68",
-    "768a41ad5e49",
-    "abe41d53092f",
-    "eaf44571ab00",
-    "eb4f6de5123d",
-    "27a6c0ab3365",
-    "fef24138cd6a",
     "e19190d7b172",
     "b47c4312eb50",
     "136a75140267",
@@ -499,15 +480,28 @@
     "9ddb05178a5a",
     "35894174c142",
     "30e52c575068",
-    "f57cb5730814"
+    "f57cb5730814",
+    "16577df9878a",
+    "c050e0f2d63d",
+    "2d6ba8a426bf",
+    "ac7e37e3c0d4",
+    "4a5353fd20d7",
+    "687ecceb542a",
+    "051c0146576f",
+    "6f81ee2e8655",
+    "740285bfc33e",
+    "488d5a84e16b",
+    "97e78b834bef",
+    "76e8980ced82",
+    "56b28395f594",
+    "234f120a7095",
+    "8cef80dc4be7",
+    "f3215773dfb0",
+    "1f7cf7fbe960",
+    "26a6e02a07dd",
+    "9d922da8c1df"
   ],
   "failed_ids": {
-    "570e1f205a58": "2026-06-17T19:23:05.369957+00:00",
-    "f9db6aa7d1a0": "2026-06-17T19:23:05.369957+00:00",
-    "1a6a4ecc7645": "2026-06-17T19:23:05.369957+00:00",
-    "d1f5f02489b3": "2026-06-17T19:23:05.369957+00:00",
-    "4be9069cdf84": "2026-06-17T19:23:05.369957+00:00",
-    "3782dda72550": "2026-06-17T19:23:05.369957+00:00",
     "5feef2be4141": "2026-06-17T23:00:56.426179+00:00",
     "41af3b3118e4": "2026-06-17T23:00:56.426179+00:00",
     "40cd0a95b391": "2026-06-17T23:00:56.426179+00:00",
@@ -530,255 +524,27 @@
     "f0c7ec31c2bb": "2026-06-17T23:00:56.426179+00:00",
     "241530de25d9": "2026-06-17T23:00:56.426179+00:00",
     "86db68e5b07b": "2026-06-17T23:00:56.426179+00:00",
-    "06897adf7ad3": "2026-06-17T23:00:56.426179+00:00"
+    "06897adf7ad3": "2026-06-17T23:00:56.426179+00:00",
+    "9361eabed1ee": "2026-06-18T01:36:57.400105+00:00",
+    "e304a2af2a1b": "2026-06-18T01:36:57.400105+00:00",
+    "b0fb0c264159": "2026-06-18T01:36:57.400105+00:00",
+    "ffba6c04438a": "2026-06-18T01:36:57.400105+00:00",
+    "0f2a2bc1ac41": "2026-06-18T01:36:57.400105+00:00",
+    "0b417287c1e4": "2026-06-18T01:36:57.400105+00:00",
+    "708ccb8a5325": "2026-06-18T01:36:57.400105+00:00",
+    "e0a039ae2698": "2026-06-18T01:36:57.400105+00:00",
+    "ac8de260f4d1": "2026-06-18T01:36:57.400105+00:00",
+    "36ee72477caf": "2026-06-18T01:36:57.400105+00:00",
+    "c7b187f531f6": "2026-06-18T01:36:57.400105+00:00",
+    "2803ac588a20": "2026-06-18T01:36:57.400105+00:00",
+    "fe91b341e863": "2026-06-18T01:36:57.400105+00:00",
+    "d32b8583b93d": "2026-06-18T01:36:57.400105+00:00",
+    "583cb733ac3a": "2026-06-18T01:36:57.400105+00:00",
+    "41203947fbb0": "2026-06-18T01:36:57.400105+00:00",
+    "26eb6240a60b": "2026-06-18T01:36:57.400105+00:00",
+    "42b2d745ea78": "2026-06-18T01:36:57.400105+00:00"
   },
   "live_clusters": {
-    "5f2020422468b3d9": {
-      "topic": "Awake NY DoorDash Soccer Capsule Collaboration",
-      "item_ids": [
-        "fdd3f3a2d51f"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ca8b3046748403b": {
-      "topic": "Nike Kobe Draft Day Blind-Bag T-Shirt Collection",
-      "item_ids": [
-        "aa826d93b736"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5862a172e52cbe14": {
-      "topic": "Shai Gilgeous-Alexander Nike Basketball Signing",
-      "item_ids": [
-        "0cfc2fcf037a",
-        "559786254722"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "531f7e400155766a": {
-      "topic": "Karl-Anthony Towns James Dolan Knicks Playoff Rules",
-      "item_ids": [
-        "c50578303c4e"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "38f41e59c4fcddfa": {
-      "topic": "Times Square Red Lobster Closure",
-      "item_ids": [
-        "07d29b01841f"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d58a82dc4fde0b34": {
-      "topic": "Reclaim the Flag LGBTQ Documentary Director Interview",
-      "item_ids": [
-        "fd4528b7fdc8"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1481efafc2d75176": {
-      "topic": "Patton Oswalt Ratatouille 2 Sequel Comments",
-      "item_ids": [
-        "e977c6c269c5"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6d061376199e6e4b": {
-      "topic": "Mikal Bridges Kendrick Lamar Album Playoff Journey",
-      "item_ids": [
-        "5069b6c90500"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "54c7764a4cabb1bb": {
-      "topic": "Morat Los Bukis Tu Carcel Billboard Latin Airplay No. 1",
-      "item_ids": [
-        "d8584d32aace",
-        "9718c5fb07aa"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2e3ced10b63ea6fa": {
-      "topic": "Billy Jones Forever Foundation Launch",
-      "item_ids": [
-        "303d51c03127"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a00abc45d952affb": {
-      "topic": "Dell XPS 13 Laptop Launch",
-      "item_ids": [
-        "6544eb4e4112"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f459a03d4023f2ea": {
-      "topic": "Japan Exports May 2026 Growth",
-      "item_ids": [
-        "e9ed648d3b34"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ac92a737eea7e3b": {
-      "topic": "Bill Limiting Investors Home Purchases Congress",
-      "item_ids": [
-        "823e3a665c52"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "be342c2302e6e446": {
-      "topic": "Anthropic Fable Shutdown Open-Source AI",
-      "item_ids": [
-        "586e77687b4d",
-        "0c47d9bda940"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c889ac762e3c5187": {
-      "topic": "Cramer Lightning Round Cava Stock Pick",
-      "item_ids": [
-        "67aacc2ee8d2"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ba42440f72bd9d5a": {
-      "topic": "Hydrogen Peroxide Nanobubble Technology Algae Cleanup",
-      "item_ids": [
-        "907893485c67"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "40134cda081af553": {
-      "topic": "Westmoreland County Law Enforcement Technology Upgrades",
-      "item_ids": [
-        "0fb10dbf1da8"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "85cff94159ebed7b": {
-      "topic": "KAIST Humanoid Robot Vision Technology",
-      "item_ids": [
-        "fb16b94dbb3b"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d57485cc1e68bab1": {
-      "topic": "Marvell Technology Nova KLA Stock Trading",
-      "item_ids": [
-        "25737c7f4cc3"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "89734fabe1caf865": {
-      "topic": "Michael Olise Profile Interview",
-      "item_ids": [
-        "94296b041a91"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4fcf19ee868aeea3": {
-      "topic": "2026 NBA Draft Cameron Boozer Profile",
-      "item_ids": [
-        "366c86a33ad0"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b4aefa230a5ab84c": {
-      "topic": "World Cup Economic Impact Boston Businesses",
-      "item_ids": [
-        "3ca72460463d"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dbe2c2d384df2c8b": {
-      "topic": "Small Business Administration State Report",
-      "item_ids": [
-        "1d8c6a448ca6"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "19fd7b5b498c553e": {
-      "topic": "Suggs Creek Bridge Closure Business Impact",
-      "item_ids": [
-        "afa4de4c6604"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "707c2843ad794fc5": {
-      "topic": "Metro Atlanta Chamber International Business Summit",
-      "item_ids": [
-        "c52f9d31e51d"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1a9e86a2baed12f7": {
-      "topic": "BBB Employment Scams Surge Connecticut",
-      "item_ids": [
-        "5ccebd802539"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e568a16cf97f4112": {
-      "topic": "Petersburg Financial Reality Fair High School",
-      "item_ids": [
-        "93d17d0fcd78"
-      ],
-      "created_at": "2026-06-17T00:03:00.106972+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "64b4d0acf36ace94": {
       "topic": "Obama Presidential Center Opening Ceremony Musical Performances",
       "item_ids": [
@@ -1689,13 +1455,19 @@
         "9ddb05178a5a",
         "35894174c142",
         "30e52c575068",
-        "f57cb5730814"
+        "f57cb5730814",
+        "16577df9878a",
+        "c050e0f2d63d",
+        "740285bfc33e",
+        "97e78b834bef",
+        "76e8980ced82",
+        "56b28395f594"
       ],
       "created_at": "2026-06-17T16:55:10.547128+00:00",
-      "last_escalated_size": 14,
-      "last_escalated_at": "2026-06-17T23:00:56.426179+00:00",
+      "last_escalated_size": 20,
+      "last_escalated_at": "2026-06-18T01:36:57.400105+00:00",
       "picks_file": "picks/picks-2026-06-17-1923.md",
-      "why_text": "The Knicks' first championship parade in decades is landing at Yankee Stadium, and New York is treating it like a full cultural coronation \u2014 not just a sports celebration. Alicia Keys performing 'Empire State of Mind' isn't a booking, it's a thesis statement: this city has been waiting for a winner long enough that the victory lap needed its own soundtrack. The fact that OG Anunoby is publicly calling Keys out and Stephon Marbury is sending messages to Wembanyama shows this moment is pulling every layer of New York basketball mythology into one event.\n**Update 4:29 PM CT:** The parade's cultural footprint is already measurable: New York anthem catalog \u2014 think Jay-Z, Nas, LCD Soundsystem \u2014 is seeing streaming surges tracked by Billboard, confirming the city is soundtracking its own celebration beyond the stadium. Meanwhile, Jose Alvarado's openness to a White House visit signals the Knicks are now operating in full civic-moment territory, where the championship stops being a sports story and starts being a New York institution.\n**Update 6:01 PM CT:** The parade's hip-hop infrastructure just got significantly bigger: Fat Joe is organizing a dedicated float featuring Wu-Tang Clan, Mary J. Blige, and The LOX, transforming what could have been a cameo moment into a full New York rap summit rolling through the streets \u2014 while Jalen Brunson and Josh Hart throwing out the first pitch at Yankee Stadium tonight confirms the Knicks have fully colonized the city's entire sports calendar, not just their own lane.",
+      "why_text": "The Knicks' first championship parade in decades is landing at Yankee Stadium, and New York is treating it like a full cultural coronation \u2014 not just a sports celebration. Alicia Keys performing 'Empire State of Mind' isn't a booking, it's a thesis statement: this city has been waiting for a winner long enough that the victory lap needed its own soundtrack. The fact that OG Anunoby is publicly calling Keys out and Stephon Marbury is sending messages to Wembanyama shows this moment is pulling every layer of New York basketball mythology into one event.\n**Update 4:29 PM CT:** The parade's cultural footprint is already measurable: New York anthem catalog \u2014 think Jay-Z, Nas, LCD Soundsystem \u2014 is seeing streaming surges tracked by Billboard, confirming the city is soundtracking its own celebration beyond the stadium. Meanwhile, Jose Alvarado's openness to a White House visit signals the Knicks are now operating in full civic-moment territory, where the championship stops being a sports story and starts being a New York institution.\n**Update 6:01 PM CT:** The parade's hip-hop infrastructure just got significantly bigger: Fat Joe is organizing a dedicated float featuring Wu-Tang Clan, Mary J. Blige, and The LOX, transforming what could have been a cameo moment into a full New York rap summit rolling through the streets \u2014 while Jalen Brunson and Josh Hart throwing out the first pitch at Yankee Stadium tonight confirms the Knicks have fully colonized the city's entire sports calendar, not just their own lane.\n**Update 8:37 PM CT:** The Knicks' cultural coronation just gained two new long-tail anchors: Ben Stiller is making an official documentary series with A24 and HBO, meaning this championship already has its prestige-screen legacy locked in before the confetti settles, while the White House formally invited the team \u2014 and James Dolan confirmed they'll attend \u2014 cementing the civic-institution framing that's defined this entire parade cycle. Meanwhile, Allan Houston surfacing rare Nike PE grails for the parade is the sneaker world's own form of canon acknowledgment, pulling the '90s Knicks mythology directly into today's procession.",
       "last_escalated_item_ids": [
         "490d1e0a2b3f",
         "7290dab5a1f1",
@@ -1710,7 +1482,13 @@
         "9ddb05178a5a",
         "35894174c142",
         "30e52c575068",
-        "f57cb5730814"
+        "f57cb5730814",
+        "16577df9878a",
+        "c050e0f2d63d",
+        "740285bfc33e",
+        "97e78b834bef",
+        "76e8980ced82",
+        "56b28395f594"
       ]
     },
     "e174e7a75e50d12e": {
@@ -2032,7 +1810,8 @@
     "25120708959143e9": {
       "topic": "Las Culturistas Culture Awards 2026 Watch Guide",
       "item_ids": [
-        "246e8b926a9c"
+        "246e8b926a9c",
+        "687ecceb542a"
       ],
       "created_at": "2026-06-17T19:23:53.932086+00:00",
       "last_escalated_size": 0,
@@ -2096,7 +1875,8 @@
     "931a60b81995de75": {
       "topic": "Widow's Bay Kingston Rumi Southwick Finale Season 2",
       "item_ids": [
-        "a6ccc9541800"
+        "a6ccc9541800",
+        "488d5a84e16b"
       ],
       "created_at": "2026-06-17T19:23:53.932086+00:00",
       "last_escalated_size": 0,
@@ -2914,7 +2694,61 @@
       "created_at": "2026-06-17T23:01:21.856062+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "743237e8bedfdb0d": {
+      "topic": "Kai Cenat Streamer University Atlanta Event Shutdown",
+      "item_ids": [
+        "2d6ba8a426bf"
+      ],
+      "created_at": "2026-06-18T01:37:27.075437+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3906a304100adc4d": {
+      "topic": "Dreams of Violets AI Film Review Ash Koosha",
+      "item_ids": [
+        "ac7e37e3c0d4"
+      ],
+      "created_at": "2026-06-18T01:37:27.075437+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "48256b772802b41d": {
+      "topic": "Bowen Yang Matt Rogers All the Things She Said Cover",
+      "item_ids": [
+        "4a5353fd20d7"
+      ],
+      "created_at": "2026-06-18T01:37:27.075437+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ae71b9206fdda361": {
+      "topic": "Daveigh Chase Death Ring Lilo and Stitch Star",
+      "item_ids": [
+        "051c0146576f"
+      ],
+      "created_at": "2026-06-18T01:37:27.075437+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "78824657d5cb7de8": {
+      "topic": "Norman Reedus Walking Dead Daryl Dixon Final Season Wrap",
+      "item_ids": [
+        "6f81ee2e8655"
+      ],
+      "created_at": "2026-06-18T01:37:27.075437+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7c2ea6ba53851791": {
+      "topic": "A.A. Murakami SYMBIOSIS Installation BMW Art Basel",
+      "item_ids": [
+        "234f120a7095"
+      ],
+      "created_at": "2026-06-18T01:37:27.075437+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-17T23:01:26.194918+00:00"
+  "last_checked": "2026-06-18T01:37:32.351655+00:00"
 }
