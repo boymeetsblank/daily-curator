@@ -1,47 +1,5 @@
 {
   "known_ids": [
-    "6e9f77ce4fa8",
-    "18eaec3512c1",
-    "d9843e598aa8",
-    "250172129175",
-    "014d2e39f9c2",
-    "e438d4d23330",
-    "f066290247d7",
-    "9ff132aa5995",
-    "e517d277b36d",
-    "a948a0bafeaa",
-    "32b2bc5183c6",
-    "79482ffa4ced",
-    "4abc532d5bd9",
-    "9a56f995ac83",
-    "71693a025732",
-    "32c3f1319d10",
-    "01720b79c609",
-    "0e0dbef7d323",
-    "0d7c49f7c54d",
-    "e96c9bcfbb18",
-    "10b2a52995da",
-    "8d4007b5e0b0",
-    "efae97ff043d",
-    "27990d2ddcbe",
-    "d144d6de23bd",
-    "105db70b4a3c",
-    "490d1e0a2b3f",
-    "5aa95aad43d2",
-    "562ec37339cd",
-    "2ecff3cec2c2",
-    "604b93f2f614",
-    "caa32ad5f9be",
-    "00fce0332a9d",
-    "0b6f9f63fe4e",
-    "a6dc2da91cef",
-    "e36a9e24670e",
-    "ab73e40d01bd",
-    "8c268d073202",
-    "c2bedd770bd5",
-    "341c82e09a11",
-    "519fb3cfd613",
-    "6f346fc01892",
     "12e23f371a88",
     "b1493c8fb7ef",
     "e0982266257a",
@@ -499,556 +457,74 @@
     "19851d9595e1",
     "a5d2b119e0e5",
     "0274097ae334",
-    "c5bdb1e9e5ce"
+    "c5bdb1e9e5ce",
+    "bfeab2fe9b4f",
+    "07bffc8e5d27",
+    "3afd7c04d480",
+    "13ef9e51b1c0",
+    "dee049d9c9cf",
+    "7661000a5b9c",
+    "583d00c2158b",
+    "3494b9405624",
+    "c6a70afc5f88",
+    "2a5fcecb4fac",
+    "b60f9b083933",
+    "627900086dfc",
+    "50b707459c56",
+    "794c3a0e41a5",
+    "1dd38b74cdf2",
+    "d427ac47ddad",
+    "e6f30a2a0694",
+    "a8880840d02f",
+    "258ad48b2949",
+    "b8627dc97d4f",
+    "0c2595163eea",
+    "b52667baf789",
+    "d14daa5ba408",
+    "b987be8b9afa",
+    "c7f03eb380cc",
+    "8fd795d8c6da",
+    "30457b6c9ee1",
+    "8a37392e54bf",
+    "9ebf16f05190",
+    "a73a9de0eaf8",
+    "954fb4516bb5",
+    "7a373107290d",
+    "7967e73d4a08",
+    "e5572386c775",
+    "3ef01dda8540",
+    "d1fbab047602",
+    "fd1ae2d12f82",
+    "ab09aa03ed48",
+    "54b781e719df",
+    "28c549d311c0",
+    "68d090300119",
+    "dc8be5e317f1"
   ],
-  "failed_ids": {},
+  "failed_ids": {
+    "7352a932b522": "2026-06-18T21:37:08.692862+00:00",
+    "12ef8b603ce2": "2026-06-18T21:37:08.692862+00:00",
+    "683dcb58db1d": "2026-06-18T21:37:08.692862+00:00",
+    "8a927b2abb94": "2026-06-18T21:37:08.692862+00:00",
+    "d7d37f9f5127": "2026-06-18T21:37:08.692862+00:00",
+    "b4392c84b456": "2026-06-18T21:37:08.692862+00:00",
+    "82492ee6b9b8": "2026-06-18T21:37:08.692862+00:00",
+    "684ca1b911b1": "2026-06-18T21:37:08.692862+00:00",
+    "ca31547a53cd": "2026-06-18T21:37:08.692862+00:00",
+    "b36a8a2a21f5": "2026-06-18T21:37:08.692862+00:00",
+    "1766f3c18b5b": "2026-06-18T21:37:08.692862+00:00",
+    "6022364bdb7a": "2026-06-18T21:37:08.692862+00:00",
+    "dcdd6028eee4": "2026-06-18T21:37:08.692862+00:00",
+    "9f6201b4914f": "2026-06-18T21:37:08.692862+00:00",
+    "99dace4cf0a8": "2026-06-18T21:37:08.692862+00:00",
+    "c0c60b772480": "2026-06-18T21:37:08.692862+00:00",
+    "2f423f8793db": "2026-06-18T21:37:08.692862+00:00",
+    "375eb6bb75de": "2026-06-18T21:37:08.692862+00:00",
+    "89a775624622": "2026-06-18T21:37:08.692862+00:00",
+    "ad1f34801031": "2026-06-18T21:37:08.692862+00:00",
+    "c25a5a1eef68": "2026-06-18T21:37:08.692862+00:00"
+  },
   "live_clusters": {
-    "cd951300cee97f7f": {
-      "topic": "Arthur Jafa Survey Exhibition New Museum",
-      "item_ids": [
-        "a0127692a198"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "33cd1442b3c1b7d9": {
-      "topic": "adidas D.O.N. Issue #8 Lucid Tangerine Release",
-      "item_ids": [
-        "cea0caaf1581",
-        "fb9940e66d8a"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4e8fb74a941a4e14": {
-      "topic": "Friends x Crocs Classic Clog Collaboration",
-      "item_ids": [
-        "2f85281032d2"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "76a2b42b06c87519": {
-      "topic": "World Cup Pink Cleats Fashion Trend",
-      "item_ids": [
-        "4a99b7f2413a"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "58823cb9ec4b5ba4": {
-      "topic": "Jelly Roll Bunnie Xo Divorce Instagram Bio Removal",
-      "item_ids": [
-        "0ae9d4afd86b",
-        "45dd4b02d0eb"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "018dc0e9efd5c247": {
-      "topic": "NBA Trade Rumors Jaylen Brown Destination Teams",
-      "item_ids": [
-        "9e67925f608f"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6eab759d4964ce0c": {
-      "topic": "MLK Selma Safe House Reopens Henry Ford Museum",
-      "item_ids": [
-        "44fffec2e225"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e56e290d3b285220": {
-      "topic": "Jennifer Lopez Body Health Work Overload Comments",
-      "item_ids": [
-        "d1bd83c6ad0d"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8e563337e2f8d6db": {
-      "topic": "Two Shell Announces Infinite Now Album",
-      "item_ids": [
-        "70addff3e8d0"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9c6862e06a74b0fe": {
-      "topic": "Olivia Rodrigo Palace of Versailles Drop Dead Video Spirits",
-      "item_ids": [
-        "1d6601fb6353",
-        "cd36a32c94ef"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "81546c2309767332": {
-      "topic": "Melissa Etheridge CMA Fest Country Music Crossover",
-      "item_ids": [
-        "f977766ff317"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "59f16511eb49b3f6": {
-      "topic": "2026 U.S. Open Golf Tournament Viewing Guide",
-      "item_ids": [
-        "e4086041f2fc",
-        "4cb829c181a5",
-        "09a180145547",
-        "16e238fef958"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-18T14:08:27.388699+00:00",
-      "picks_file": "picks/picks-2026-06-18-1409.md",
-      "why_text": "The 2026 U.S. Open is underway, and Scottie Scheffler \u2014 still the undisputed No. 1 player in the world \u2014 is the gravitational center of the entire tournament. Golf's major season is at a cultural inflection point, with LIV vs. PGA tensions still reshaping who shows up and who matters, making every leaderboard move a proxy battle for the sport's soul. The convergence of betting coverage, storyline breakdowns, and live round updates signals this is already appointment viewing, not just a niche sports moment.",
-      "last_escalated_item_ids": [
-        "e4086041f2fc",
-        "4cb829c181a5",
-        "09a180145547",
-        "16e238fef958"
-      ]
-    },
-    "fda71f8dead6b421": {
-      "topic": "Sabrina Carpenter Restraining Order Stalker Case",
-      "item_ids": [
-        "245492c34d83"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8c8e1ed6ece0e74f": {
-      "topic": "Duffer Brothers The Boroughs Netflix Cancellation",
-      "item_ids": [
-        "649e071cb7d1"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9145cd809852e98d": {
-      "topic": "Tom Holland AI Creativity Soul Comments",
-      "item_ids": [
-        "81e66eef316d"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "49ea27e55b9e79ae": {
-      "topic": "Lewis Pullman Ragamuffin Motocross Drama Series",
-      "item_ids": [
-        "b88f94070422"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f50418a0b45978f8": {
-      "topic": "Megan Stalter Hacks Spinoff Comments Series Finale",
-      "item_ids": [
-        "5c4ab3a9fa72"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7fcf9089e3dd5dff": {
-      "topic": "Bellingham England Football Match Live Updates",
-      "item_ids": [
-        "8c509fcebf19",
-        "b2bc494bcea3"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "15c64ed3085515cd": {
-      "topic": "Ronaldo Portugal Congo DR Football Draw",
-      "item_ids": [
-        "25cb9de8ebae",
-        "036aaff966ca",
-        "f81e2748c327",
-        "036b4690cc8f"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-18T14:08:27.388699+00:00",
-      "picks_file": "picks/picks-2026-06-18-1409.md",
-      "why_text": "Portugal were held to a draw by DR Congo in World Cup qualifying, and once again the conversation is less about the team and more about Cristiano Ronaldo \u2014 his form, his role, and whether he's a help or a hindrance at 39. Ronaldo insisting the campaign is 'far from over' is classic deflection, but it only sharpens the question Portugal keeps refusing to answer directly: is he still the solution, or is he the problem? This is a cultural flashpoint as much as a football one \u2014 Ronaldo's identity is so fused with Portuguese national pride that any honest reckoning with his decline feels almost taboo.",
-      "last_escalated_item_ids": [
-        "25cb9de8ebae",
-        "036aaff966ca",
-        "f81e2748c327"
-      ]
-    },
-    "88c17f200abe159e": {
-      "topic": "Joe Burrow Bengals LSU Title Team Comparison",
-      "item_ids": [
-        "f60db94c68a4"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "75a5372651723731": {
-      "topic": "College Football Playoff 24-Team Format Questions",
-      "item_ids": [
-        "ad357717e797"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f6e6680e19846d50": {
-      "topic": "Boston Fans Scottish Visitor Drinks Tourism",
-      "item_ids": [
-        "def8e49bc5e3"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bc97ba508dda3e53": {
-      "topic": "Roelof Botha SpaceX Board Appointment",
-      "item_ids": [
-        "3daf2dc5e48c"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f8d0320e11c25708": {
-      "topic": "Snap AR Glasses Stock Decline",
-      "item_ids": [
-        "358e207ac3c7"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ff1a7a17f20a330b": {
-      "topic": "NEA Tiffany Luck AI ROI Enterprise Insights",
-      "item_ids": [
-        "3d1666c95475"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c83940da8e591538": {
-      "topic": "iPhone Air 2 Spring 2027 Dual Camera Launch",
-      "item_ids": [
-        "259ef633012c"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f9bf8587aa9f0121": {
-      "topic": "ChatGPT Scheduled Tasks Hub Feature",
-      "item_ids": [
-        "abc059628ada"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e28f218441a694a7": {
-      "topic": "Epic Games Unreal Engine Generative AI Integration",
-      "item_ids": [
-        "bf90804fbedd"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e5ffdd7752b280b5": {
-      "topic": "Quantum Error Correction 2028 Promise",
-      "item_ids": [
-        "137c26674826"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3ac7d3d524d2299d": {
-      "topic": "AT&T FCC Phone Network Shutdown Allegations",
-      "item_ids": [
-        "366e7c0ebf44"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f0080c57f0da87db": {
-      "topic": "Kevin Warsh Fed Chairman First Meeting Takeaways",
-      "item_ids": [
-        "e651feef6e27",
-        "3b00d7efb79e"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "896c00790149c0b1": {
-      "topic": "Kevin Warsh Task Forces Fed Strategy",
-      "item_ids": [
-        "ca67635cb145"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6d26890b80e6b47a": {
-      "topic": "Jeffrey Gundlach Kevin Warsh Fed Chair Analysis",
-      "item_ids": [
-        "c0d107e06a98"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d925c979973019ef": {
-      "topic": "Fed Rate Decision Warsh Statement Changes",
-      "item_ids": [
-        "515cff01635a"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dda87d59b14e4ec3": {
-      "topic": "Anthropic Google DeepMind G7 AI Coalition Call",
-      "item_ids": [
-        "30816bb8b65c"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e2d189f912d7bda2": {
-      "topic": "IGM Financial Technology Capabilities Investment",
-      "item_ids": [
-        "9aba7502a0df"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "603609b99d67afdb": {
-      "topic": "FirstEnergy Senior Leadership Operational Performance",
-      "item_ids": [
-        "da6134016049"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dfa5feb601579876": {
-      "topic": "Massachusetts Wrong-Way Driver Detection Technology MSP",
-      "item_ids": [
-        "122b51f3552e"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "61f016c08a95c278": {
-      "topic": "ACLU Deterrence Policy Analysis",
-      "item_ids": [
-        "51617cc3817c"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c2a37a44020af0fd": {
-      "topic": "Chair Design Color Debate Highsnobiety",
-      "item_ids": [
-        "ac3c9df2c6f1"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6a2ff675e838b3e0": {
-      "topic": "Citizen Attesa Recrystalized Titanium Eco-Drive Watch",
-      "item_ids": [
-        "b3eadf112e1d"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3840752aa2ae1b65": {
-      "topic": "AirPods iOS 27 New Features",
-      "item_ids": [
-        "e60846ab8e3c"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e6fe36040519bc8c": {
-      "topic": "NBA Offseason Free Agency Predictions Giannis LeBron Kawhi",
-      "item_ids": [
-        "5df6c9ec0892"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c220238fed454843": {
-      "topic": "Kings NBA Mock Draft Sacramento Targets",
-      "item_ids": [
-        "fad3330418a6"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0ad7fe59f9dfecde": {
-      "topic": "Lakers Offseason LeBron James Kevin Love Rumors",
-      "item_ids": [
-        "0717fd292384"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4eb2c95cad400cc5": {
-      "topic": "Franchise 500 Top Maintenance Franchises 2026",
-      "item_ids": [
-        "9c9a1eace6e0"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "978f84746dacdf61": {
-      "topic": "SpaceX Stock First Decline Surge End",
-      "item_ids": [
-        "ab10aa04c32a",
-        "962bf6fd3511",
-        "4e0835f8a2bc",
-        "66e6d98dad90",
-        "1fcd2b9a3de0",
-        "21b19d6e1d97"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-18T17:25:59.256313+00:00",
-      "picks_file": "picks/picks-2026-06-18-1726.md",
-      "why_text": "SpaceX's brief winning streak is over, and the pullback is a reminder that even Musk's most celebrated venture isn't immune to gravity \u2014 especially as defense and aerospace stocks broadly face pressure amid shifting government priorities. With Lockheed Martin also dropping on the same day, the sector is showing signs of turbulence tied to uncertainty around Pentagon spending and NATO alignment. For a private company still trading on secondary markets, SpaceX's price swings reflect how tightly its valuation is now linked to the political moment.",
-      "last_escalated_item_ids": [
-        "ab10aa04c32a",
-        "962bf6fd3511",
-        "4e0835f8a2bc",
-        "66e6d98dad90",
-        "1fcd2b9a3de0",
-        "21b19d6e1d97"
-      ]
-    },
-    "79dd405ec814d9e0": {
-      "topic": "Fed Interest Rates Steady Future Hike Signals",
-      "item_ids": [
-        "d1cd1c407ea4"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "35430fd97732f29e": {
-      "topic": "California Pro-Business Governor Opinion",
-      "item_ids": [
-        "3b7171b4b11a"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8a325a8225fc8109": {
-      "topic": "Business Exodus Economic Pressures Staffing Challenges",
-      "item_ids": [
-        "fbd95f26e786"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f2d12b57418b92d5": {
-      "topic": "Blood Pressure Drug Recall 11K Bottles",
-      "item_ids": [
-        "69581759d9ab"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0869ea516123bd41": {
-      "topic": "Cedarville University Sports Business Management Program",
-      "item_ids": [
-        "cbfb56019db3"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "84641a553b7ae3fa": {
-      "topic": "Federal Acquisition Small Business Savannah",
-      "item_ids": [
-        "e947e850b785"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "61b396761c4afa6b": {
-      "topic": "BMW i3 Early Order Opening Demand Surge",
-      "item_ids": [
-        "f31a92808eb3",
-        "a4ffebb6fe07"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0e12c43b8c0dfd5a": {
-      "topic": "BMW Neue Klasse M3 Non-Hybrid Design",
-      "item_ids": [
-        "d1cd1c407ea4"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7704b5cc81d4a740": {
-      "topic": "BMW M Concept Rendering Design Updates",
-      "item_ids": [
-        "a4727a9fc7b0"
-      ],
-      "created_at": "2026-06-17T21:29:19.875815+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "9f9ce9c2c7c8d6d3": {
       "topic": "Nike Air Max 1000.2 Pink Spell Release",
       "item_ids": [
@@ -1602,7 +1078,8 @@
     "56d73bdf684d11d4": {
       "topic": "Waymo Robotaxi Recall Freeway Construction Zone Risk",
       "item_ids": [
-        "58cfa0e6e4f9"
+        "58cfa0e6e4f9",
+        "954fb4516bb5"
       ],
       "created_at": "2026-06-18T14:09:24.940268+00:00",
       "last_escalated_size": 0,
@@ -1862,11 +1339,17 @@
         "27f1fb04b385",
         "d5e33a8975eb",
         "de01d61ed16b",
-        "d27a508198a7"
+        "d27a508198a7",
+        "7661000a5b9c",
+        "a8880840d02f",
+        "3ef01dda8540",
+        "d1fbab047602",
+        "fd1ae2d12f82",
+        "54b781e719df"
       ],
       "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 8,
-      "last_escalated_at": "2026-06-18T19:39:05.480060+00:00",
+      "last_escalated_size": 14,
+      "last_escalated_at": "2026-06-18T21:37:08.692862+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "e3423341d5f0",
@@ -1876,7 +1359,13 @@
         "27f1fb04b385",
         "d5e33a8975eb",
         "de01d61ed16b",
-        "d27a508198a7"
+        "d27a508198a7",
+        "7661000a5b9c",
+        "a8880840d02f",
+        "3ef01dda8540",
+        "d1fbab047602",
+        "fd1ae2d12f82",
+        "54b781e719df"
       ]
     },
     "32f01e248b1a0b49": {
@@ -1974,11 +1463,20 @@
       "topic": "Obama Presidential Center Opening Ceremony Music Performances",
       "item_ids": [
         "550c5077e666",
-        "ee3edbaef1ac"
+        "ee3edbaef1ac",
+        "7a373107290d",
+        "dc8be5e317f1"
       ],
       "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-18T21:37:08.692862+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "550c5077e666",
+        "ee3edbaef1ac",
+        "7a373107290d",
+        "dc8be5e317f1"
+      ]
     },
     "ff5d4e2a11ecb7a0": {
       "topic": "Drone Plot UFC White House Event Security Incident",
@@ -2379,7 +1877,8 @@
     "1f4c7ca3f39651e1": {
       "topic": "Chris Brown Housekeeper Dog Bite Trial Testimony",
       "item_ids": [
-        "7fd223a9953a"
+        "7fd223a9953a",
+        "0c2595163eea"
       ],
       "created_at": "2026-06-18T19:39:48.642436+00:00",
       "last_escalated_size": 0,
@@ -2650,7 +2149,8 @@
     "e32d3dbe6484d06c": {
       "topic": "NBA Europe Expansion Teams Winning Bids",
       "item_ids": [
-        "47ac15574033"
+        "47ac15574033",
+        "7967e73d4a08"
       ],
       "created_at": "2026-06-18T19:39:48.642436+00:00",
       "last_escalated_size": 0,
@@ -2817,7 +2317,79 @@
       "created_at": "2026-06-18T19:39:48.642436+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "7d462258b64790ad": {
+      "topic": "Nike Pegasus Premium Cow Print Release",
+      "item_ids": [
+        "bfeab2fe9b4f"
+      ],
+      "created_at": "2026-06-18T21:37:44.990888+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e450c4f9047d0bf0": {
+      "topic": "Nike S.T. Charge Grit Colorway Release",
+      "item_ids": [
+        "07bffc8e5d27"
+      ],
+      "created_at": "2026-06-18T21:37:44.990888+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5b7f4e15ec433372": {
+      "topic": "Nike Air Force 1 Yellow Plaid Release",
+      "item_ids": [
+        "3afd7c04d480"
+      ],
+      "created_at": "2026-06-18T21:37:44.990888+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9e00d7db35b9e0a4": {
+      "topic": "Jimmy Fallon Conor McGregor Interview Image Rehab Backlash",
+      "item_ids": [
+        "13ef9e51b1c0"
+      ],
+      "created_at": "2026-06-18T21:37:44.990888+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b04aa87eaa258634": {
+      "topic": "Ryan Coogler Proximity Media Netflix Multi-Year Deal",
+      "item_ids": [
+        "dee049d9c9cf"
+      ],
+      "created_at": "2026-06-18T21:37:44.990888+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0c66e0141e636cd3": {
+      "topic": "Jimmy Jam AI Music Guardrails Billboard Chart",
+      "item_ids": [
+        "583d00c2158b"
+      ],
+      "created_at": "2026-06-18T21:37:44.990888+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9545c7ac3aaf0e3a": {
+      "topic": "Chris Pratt America 250 Comedy Shorts Doris Kearns Goodwin",
+      "item_ids": [
+        "627900086dfc"
+      ],
+      "created_at": "2026-06-18T21:37:44.990888+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3dc78dfe6bd47450": {
+      "topic": "Snap Spins Off Dotmo AI Video Company",
+      "item_ids": [
+        "30457b6c9ee1"
+      ],
+      "created_at": "2026-06-18T21:37:44.990888+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-18T19:39:48.663842+00:00"
+  "last_checked": "2026-06-18T21:37:45.032181+00:00"
 }
