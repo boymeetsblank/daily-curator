@@ -1,31 +1,5 @@
 {
   "known_ids": [
-    "e19190d7b172",
-    "b47c4312eb50",
-    "136a75140267",
-    "7597c5617c79",
-    "56b18b41af53",
-    "abe41d53092f",
-    "e74010c2c91d",
-    "dbef257501aa",
-    "006b4143079e",
-    "f6e065cb3d37",
-    "60d3e72526e8",
-    "915a386177ca",
-    "252804796f4b",
-    "f5ed5b42434a",
-    "504cb5fb86e6",
-    "7ac659310b6f",
-    "06a6cb0e6047",
-    "77aa96d65948",
-    "4aa63f7deb17",
-    "f9b2c0e63f65",
-    "dc639b7506ea",
-    "750968dc1e49",
-    "1d029bd263c1",
-    "007debf4dde3",
-    "2a63afb5a5c3",
-    "e942f6338554",
     "75d7ef949d7c",
     "ef181b2e7ad0",
     "c4408c804dfa",
@@ -499,124 +473,46 @@
     "f3215773dfb0",
     "1f7cf7fbe960",
     "26a6e02a07dd",
-    "9d922da8c1df"
+    "9d922da8c1df",
+    "d0588b9439f6",
+    "cf3ce900622e",
+    "036aaff966ca",
+    "b2bc494bcea3",
+    "a4a49dc415cc",
+    "4cb829c181a5",
+    "2ad031960844",
+    "e10f10a21b2f",
+    "9db0528d1a80",
+    "5af9f348aa5a",
+    "c115a6bf32f9",
+    "2e2fa1e0602d",
+    "b0a7d9c20def",
+    "594b0c48fff2",
+    "3b43cf28eef2",
+    "c8f3b67ddc98",
+    "325179437f2a",
+    "9417052fd047",
+    "5e3bf357f569",
+    "029c288d94db",
+    "3b00d7efb79e",
+    "8cc212701bfa",
+    "e32d60bbd1ba",
+    "80af431865bb",
+    "cd36a32c94ef",
+    "b14c00526c43"
   ],
   "failed_ids": {
-    "5feef2be4141": "2026-06-17T23:00:56.426179+00:00",
-    "41af3b3118e4": "2026-06-17T23:00:56.426179+00:00",
-    "40cd0a95b391": "2026-06-17T23:00:56.426179+00:00",
-    "0d6c9ba146fb": "2026-06-17T23:00:56.426179+00:00",
-    "2feb40f0ebb0": "2026-06-17T23:00:56.426179+00:00",
-    "675029650c24": "2026-06-17T23:00:56.426179+00:00",
-    "649d6741f030": "2026-06-17T23:00:56.426179+00:00",
-    "1edd6034bc4e": "2026-06-17T23:00:56.426179+00:00",
-    "cc6359630d5c": "2026-06-17T23:00:56.426179+00:00",
-    "216ae61ad542": "2026-06-17T23:00:56.426179+00:00",
-    "22a9325d0dd0": "2026-06-17T23:00:56.426179+00:00",
-    "90af170ae3be": "2026-06-17T23:00:56.426179+00:00",
-    "d4403c79656e": "2026-06-17T23:00:56.426179+00:00",
-    "0b08ed6fb23d": "2026-06-17T23:00:56.426179+00:00",
-    "07373934126d": "2026-06-17T23:00:56.426179+00:00",
-    "e0b61b0ae90c": "2026-06-17T23:00:56.426179+00:00",
-    "f9e5157c5e10": "2026-06-17T23:00:56.426179+00:00",
-    "b74088a75ee0": "2026-06-17T23:00:56.426179+00:00",
-    "27cb0a7932ca": "2026-06-17T23:00:56.426179+00:00",
-    "f0c7ec31c2bb": "2026-06-17T23:00:56.426179+00:00",
-    "241530de25d9": "2026-06-17T23:00:56.426179+00:00",
-    "86db68e5b07b": "2026-06-17T23:00:56.426179+00:00",
-    "06897adf7ad3": "2026-06-17T23:00:56.426179+00:00",
-    "9361eabed1ee": "2026-06-18T01:36:57.400105+00:00",
-    "e304a2af2a1b": "2026-06-18T01:36:57.400105+00:00",
-    "b0fb0c264159": "2026-06-18T01:36:57.400105+00:00",
-    "ffba6c04438a": "2026-06-18T01:36:57.400105+00:00",
-    "0f2a2bc1ac41": "2026-06-18T01:36:57.400105+00:00",
-    "0b417287c1e4": "2026-06-18T01:36:57.400105+00:00",
-    "708ccb8a5325": "2026-06-18T01:36:57.400105+00:00",
-    "e0a039ae2698": "2026-06-18T01:36:57.400105+00:00",
-    "ac8de260f4d1": "2026-06-18T01:36:57.400105+00:00",
-    "36ee72477caf": "2026-06-18T01:36:57.400105+00:00",
-    "c7b187f531f6": "2026-06-18T01:36:57.400105+00:00",
-    "2803ac588a20": "2026-06-18T01:36:57.400105+00:00",
-    "fe91b341e863": "2026-06-18T01:36:57.400105+00:00",
-    "d32b8583b93d": "2026-06-18T01:36:57.400105+00:00",
-    "583cb733ac3a": "2026-06-18T01:36:57.400105+00:00",
-    "41203947fbb0": "2026-06-18T01:36:57.400105+00:00",
-    "26eb6240a60b": "2026-06-18T01:36:57.400105+00:00",
-    "42b2d745ea78": "2026-06-18T01:36:57.400105+00:00"
+    "cd1a2f13f003": "2026-06-18T06:25:38.335297+00:00",
+    "f7e164c871e2": "2026-06-18T06:25:38.335297+00:00",
+    "615fcb9ad5d9": "2026-06-18T06:25:38.335297+00:00",
+    "8a749b34846f": "2026-06-18T06:25:38.335297+00:00",
+    "d3dd8eaf6061": "2026-06-18T06:25:38.335297+00:00",
+    "24670bfda9ef": "2026-06-18T06:25:38.335297+00:00",
+    "153910237eac": "2026-06-18T06:25:38.335297+00:00",
+    "856118f6642d": "2026-06-18T06:25:38.335297+00:00",
+    "3c6a4eb1e803": "2026-06-18T06:25:38.335297+00:00"
   },
   "live_clusters": {
-    "64b4d0acf36ace94": {
-      "topic": "Obama Presidential Center Opening Ceremony Musical Performances",
-      "item_ids": [
-        "aac37cc2214f"
-      ],
-      "created_at": "2026-06-17T05:09:06.047350+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5b35db4910b1c3db": {
-      "topic": "Jeremy Clarkson Cancer Diagnosis",
-      "item_ids": [
-        "6b851bdc02cf"
-      ],
-      "created_at": "2026-06-17T05:09:06.047350+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2005415d51b8b085": {
-      "topic": "World Cup Messi Performance vs Haaland Mbappe",
-      "item_ids": [
-        "8af5ad2dbd55"
-      ],
-      "created_at": "2026-06-17T05:09:06.047350+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6215f45445b3717f": {
-      "topic": "Messi World Cup Goal Record Klose",
-      "item_ids": [
-        "a348369177fb"
-      ],
-      "created_at": "2026-06-17T05:09:06.047350+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1422c968a13240d7": {
-      "topic": "NBA Finals Game 5 Viewership Record",
-      "item_ids": [
-        "fa762225b49d"
-      ],
-      "created_at": "2026-06-17T05:09:06.047350+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fa035bb954688597": {
-      "topic": "Jalen Brunson Knicks NBA Championship Victory",
-      "item_ids": [
-        "80944842b4fd"
-      ],
-      "created_at": "2026-06-17T05:09:06.047350+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f21507035cc5b224": {
-      "topic": "Mark Cuban Jalen Brunson Mavericks Departure Analysis",
-      "item_ids": [
-        "67f68da0e732"
-      ],
-      "created_at": "2026-06-17T05:09:06.047350+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c2a278fc7865e77c": {
-      "topic": "Boston Celtics NBA Draft Trade Plans",
-      "item_ids": [
-        "61dfa3248de3"
-      ],
-      "created_at": "2026-06-17T05:09:06.047350+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "45ef80f4c5b4578c": {
       "topic": "ASICS GEL-STRATUS MC Hybrid Performance Sneaker",
       "item_ids": [
@@ -1461,7 +1357,8 @@
         "740285bfc33e",
         "97e78b834bef",
         "76e8980ced82",
-        "56b28395f594"
+        "56b28395f594",
+        "3b43cf28eef2"
       ],
       "created_at": "2026-06-17T16:55:10.547128+00:00",
       "last_escalated_size": 20,
@@ -1885,7 +1782,8 @@
     "4b36818f3d4691c5": {
       "topic": "Cincinnati Football Coach Sorsby Recruitment Calls",
       "item_ids": [
-        "4e7e76606cc6"
+        "4e7e76606cc6",
+        "2ad031960844"
       ],
       "created_at": "2026-06-17T19:23:53.932086+00:00",
       "last_escalated_size": 0,
@@ -2266,7 +2164,8 @@
     "9c6862e06a74b0fe": {
       "topic": "Olivia Rodrigo Palace of Versailles Drop Dead Video Spirits",
       "item_ids": [
-        "1d6601fb6353"
+        "1d6601fb6353",
+        "cd36a32c94ef"
       ],
       "created_at": "2026-06-17T21:29:19.875815+00:00",
       "last_escalated_size": 0,
@@ -2284,7 +2183,8 @@
     "59f16511eb49b3f6": {
       "topic": "2026 U.S. Open Golf Tournament Viewing Guide",
       "item_ids": [
-        "e4086041f2fc"
+        "e4086041f2fc",
+        "4cb829c181a5"
       ],
       "created_at": "2026-06-17T21:29:19.875815+00:00",
       "last_escalated_size": 0,
@@ -2338,7 +2238,8 @@
     "7fcf9089e3dd5dff": {
       "topic": "Bellingham England Football Match Live Updates",
       "item_ids": [
-        "8c509fcebf19"
+        "8c509fcebf19",
+        "b2bc494bcea3"
       ],
       "created_at": "2026-06-17T21:29:19.875815+00:00",
       "last_escalated_size": 0,
@@ -2347,7 +2248,8 @@
     "15c64ed3085515cd": {
       "topic": "Ronaldo Portugal Congo DR Football Draw",
       "item_ids": [
-        "25cb9de8ebae"
+        "25cb9de8ebae",
+        "036aaff966ca"
       ],
       "created_at": "2026-06-17T21:29:19.875815+00:00",
       "last_escalated_size": 0,
@@ -2455,7 +2357,8 @@
     "f0080c57f0da87db": {
       "topic": "Kevin Warsh Fed Chairman First Meeting Takeaways",
       "item_ids": [
-        "e651feef6e27"
+        "e651feef6e27",
+        "3b00d7efb79e"
       ],
       "created_at": "2026-06-17T21:29:19.875815+00:00",
       "last_escalated_size": 0,
@@ -2748,7 +2651,178 @@
       "created_at": "2026-06-18T01:37:27.075437+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "30afc1310704c76c": {
+      "topic": "Marcello Hernandez Rosal\u00eda Madison Square Garden Confession",
+      "item_ids": [
+        "d0588b9439f6"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cc65e7e11c631709": {
+      "topic": "G Flip Bed On Fire North America Tour",
+      "item_ids": [
+        "cf3ce900622e"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "df3725c3ce9d7428": {
+      "topic": "College Football Playoff Expansion Format Analysis",
+      "item_ids": [
+        "a4a49dc415cc"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ad22a443932682ff": {
+      "topic": "UK Asylum-Seeker Facial Age Recognition Scanning Technology",
+      "item_ids": [
+        "e10f10a21b2f"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cc5edfbb68339286": {
+      "topic": "Midjourney Full-Body Ultrasonic Scanner Development",
+      "item_ids": [
+        "9db0528d1a80"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "989ce0512ed1b0cf": {
+      "topic": "Oil Market US-Iran Deal Supply Glut Forecast",
+      "item_ids": [
+        "5af9f348aa5a"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2d464eff6624d98d": {
+      "topic": "Anti-Drone Technology Market Expansion Military Applications",
+      "item_ids": [
+        "c115a6bf32f9"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b6469d43515d7c63": {
+      "topic": "Rackspace Technology AI Expansion AMD-Powered Cost-Cutting",
+      "item_ids": [
+        "2e2fa1e0602d"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4276443d3e14e386": {
+      "topic": "Cole Young Swing Analysis Bat Tracking Technology",
+      "item_ids": [
+        "b0a7d9c20def"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c4b631bf06c68e14": {
+      "topic": "Bang & Olufsen 40-Year-Old Turntables Durability Design",
+      "item_ids": [
+        "594b0c48fff2"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "554fcafa41fdf510": {
+      "topic": "Milwaukee Bucks 2026 NBA Draft Offseason Needs",
+      "item_ids": [
+        "c8f3b67ddc98"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d568f76dc55f0311": {
+      "topic": "NBA Offseason 2026 Trade Rumors Antetokounmpo Kevin Love",
+      "item_ids": [
+        "325179437f2a"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "acc6a840f48ad22b": {
+      "topic": "Michelle Beadle 2026 NBA Finals Commentary Analysis",
+      "item_ids": [
+        "9417052fd047"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a385142dca8a3fde": {
+      "topic": "Jalen Duren Pistons Contract Negotiations Playoff Performance",
+      "item_ids": [
+        "5e3bf357f569"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "90250ebd211d4d58": {
+      "topic": "Character.AI Founder Moves to OpenAI Executive Shift",
+      "item_ids": [
+        "029c288d94db"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e6ecefb94ba64835": {
+      "topic": "Colombia Trending Topic",
+      "item_ids": [
+        "8cc212701bfa"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "66eca57cd6c58ffa": {
+      "topic": "Uzbekistan Trending Topic",
+      "item_ids": [
+        "e32d60bbd1ba"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9e2413600d881abb": {
+      "topic": "Ghana Trending Topic",
+      "item_ids": [
+        "80af431865bb"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e0148c329dd52ed1": {
+      "topic": "Olivia Miles Trending Topic",
+      "item_ids": [
+        "b14c00526c43"
+      ],
+      "created_at": "2026-06-18T06:26:07.141115+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-18T01:37:32.351655+00:00"
+  "last_checked": "2026-06-18T06:26:07.142261+00:00"
 }
