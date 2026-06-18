@@ -1,62 +1,5 @@
 {
   "known_ids": [
-    "12e23f371a88",
-    "b1493c8fb7ef",
-    "e0982266257a",
-    "2f2f431c23a3",
-    "b640ffd82fec",
-    "d52a20ad4869",
-    "a22e4d507b2a",
-    "29baba60b149",
-    "7852c3a74fef",
-    "b883408f7387",
-    "78108e92c0ac",
-    "6d91a7b1e5b7",
-    "4ef1f4354555",
-    "96c3b4c8582a",
-    "7290dab5a1f1",
-    "076b6de9f99c",
-    "090859ae8552",
-    "da317dca08d6",
-    "e91da2ee7c3e",
-    "2e1d00478546",
-    "3bef61b51cbe",
-    "9f6ddae0e962",
-    "a7b5d5453b57",
-    "631bd25f6e4a",
-    "9718c5fb07aa",
-    "1a752d4ea683",
-    "13093a265853",
-    "4670db2cb363",
-    "59fba1b6ecf9",
-    "246e8b926a9c",
-    "c24e8e0cc034",
-    "0a7894062826",
-    "1685ee8db8fc",
-    "eb4c9994ba64",
-    "c84ca1a42548",
-    "d79b21133269",
-    "a6ccc9541800",
-    "4e7e76606cc6",
-    "25c589aef8ff",
-    "da4a28dff4b6",
-    "f4097ba5bc99",
-    "2e5c0b9b7cf0",
-    "c8ead1490bde",
-    "453572fb8987",
-    "9ef08ab1d787",
-    "1d907aaa2f0e",
-    "cb83259c6a7f",
-    "a459b814ba8d",
-    "c54ff8424b43",
-    "089e2dd22f76",
-    "106b408a8a51",
-    "602e5e9dae51",
-    "90add58df6a9",
-    "bfd35a1f632e",
-    "c8a454eb5a37",
-    "9b7bc521c35c",
-    "4d6d6d58aea3",
     "37dd67b53e4d",
     "0d749432b4ed",
     "60055594201f",
@@ -499,7 +442,64 @@
     "54b781e719df",
     "28c549d311c0",
     "68d090300119",
-    "dc8be5e317f1"
+    "dc8be5e317f1",
+    "64c707eafee2",
+    "8f1e17d503a6",
+    "24c94c4339cb",
+    "c2966f7c1ab4",
+    "5215c0edb8f4",
+    "0377eea2ca21",
+    "8ee92a526fe1",
+    "130bb5d1f470",
+    "5dd64fcd61d5",
+    "e07740bd7beb",
+    "b52161750bb9",
+    "46b102acd612",
+    "69e81f50ceb9",
+    "da2e7b06fc25",
+    "e7eca4d83c42",
+    "d6d4658e2f26",
+    "aeffb076e715",
+    "24a625691132",
+    "2d6206fa2bd9",
+    "35b5f33b0fe6",
+    "5b2bf81825cd",
+    "07a4630dab3b",
+    "37cba14051fd",
+    "187034765b48",
+    "0c12276efebe",
+    "b1ea41ec251d",
+    "dbffeb30692c",
+    "ffd482a186da",
+    "4f4837456e89",
+    "6a3dcc0aff7b",
+    "00f8d9ff0dd8",
+    "e9fda1ab454f",
+    "8d8c99939205",
+    "bd5384ec0331",
+    "b7bbbacded7e",
+    "099910c99071",
+    "5ad0b21a31b6",
+    "e5e233b0aa9a",
+    "b5a0b6196f50",
+    "c39f1da8ce1c",
+    "df8a9f74c343",
+    "5c8add4e6445",
+    "26dfe4b98de8",
+    "b5c4e9acdd4e",
+    "5740e44dcdd6",
+    "5ede97c9ceb8",
+    "5d6a19891102",
+    "e9804328d615",
+    "32dd31a5002d",
+    "1e53e5238ff2",
+    "cbe3fda1ba26",
+    "57bc96b1c60b",
+    "07e5feeaaefc",
+    "be9ca4c89575",
+    "f8a546a5d834",
+    "379cd9d0ade0",
+    "19ed489a30c9"
   ],
   "failed_ids": {
     "7352a932b522": "2026-06-18T21:37:08.692862+00:00",
@@ -525,15 +525,6 @@
     "c25a5a1eef68": "2026-06-18T21:37:08.692862+00:00"
   },
   "live_clusters": {
-    "9f9ce9c2c7c8d6d3": {
-      "topic": "Nike Air Max 1000.2 Pink Spell Release",
-      "item_ids": [
-        "8cf5f8f95f9f"
-      ],
-      "created_at": "2026-06-17T23:01:21.856062+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "743237e8bedfdb0d": {
       "topic": "Kai Cenat Streamer University Atlanta Event Shutdown",
       "item_ids": [
@@ -817,7 +808,8 @@
     "0c3318edc010fa8b": {
       "topic": "World Cup Access Barriers Report",
       "item_ids": [
-        "c40b8b1a9675"
+        "c40b8b1a9675",
+        "35b5f33b0fe6"
       ],
       "created_at": "2026-06-18T10:53:56.695571+00:00",
       "last_escalated_size": 0,
@@ -1345,7 +1337,9 @@
         "3ef01dda8540",
         "d1fbab047602",
         "fd1ae2d12f82",
-        "54b781e719df"
+        "54b781e719df",
+        "130bb5d1f470",
+        "b5a0b6196f50"
       ],
       "created_at": "2026-06-18T17:26:49.791087+00:00",
       "last_escalated_size": 14,
@@ -1465,7 +1459,8 @@
         "550c5077e666",
         "ee3edbaef1ac",
         "7a373107290d",
-        "dc8be5e317f1"
+        "dc8be5e317f1",
+        "5c8add4e6445"
       ],
       "created_at": "2026-06-18T17:26:49.791087+00:00",
       "last_escalated_size": 4,
@@ -1878,11 +1873,19 @@
       "topic": "Chris Brown Housekeeper Dog Bite Trial Testimony",
       "item_ids": [
         "7fd223a9953a",
-        "0c2595163eea"
+        "0c2595163eea",
+        "5215c0edb8f4"
       ],
       "created_at": "2026-06-18T19:39:48.642436+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-18T23:23:25.786480+00:00",
+      "picks_file": "picks/picks-2026-06-18-2326.md",
+      "why_text": "Chris Brown took the stand in a civil trial brought by a former housekeeper who claims his dog mauled her, testifying he fled the scene to avoid a media circus \u2014 a defense that says a lot about how he navigates accountability. The case ending in a mistrial due to juror misconduct means this isn't over, and Brown remains in legal limbo on yet another controversy. For an artist perpetually one headline away from cancellation, this trial is a reminder that his off-stage conduct keeps undercutting whatever cultural rehabilitation he attempts.",
+      "last_escalated_item_ids": [
+        "7fd223a9953a",
+        "0c2595163eea",
+        "5215c0edb8f4"
+      ]
     },
     "04b5910d8fd203cb": {
       "topic": "That Time I Got Reincarnated as a Slime Billboard Japan #1",
@@ -2285,11 +2288,20 @@
     "72af4bb105d37aef": {
       "topic": "BMW Guidance Cut China Headwinds Recovery Delay",
       "item_ids": [
-        "d974af1f8302"
+        "d974af1f8302",
+        "1e53e5238ff2",
+        "07e5feeaaefc"
       ],
       "created_at": "2026-06-18T19:39:48.642436+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-18T23:23:25.786480+00:00",
+      "picks_file": "picks/picks-2026-06-18-2326.md",
+      "why_text": "BMW just slashed its financial guidance and is yanking three China-built EVs from its lineup, blaming a brutal combination of Chinese market headwinds and a recovery that keeps getting pushed further out. The moves signal that the Neue Klasse platform \u2014 BMW's next-gen EV architecture \u2014 is now less of an upgrade and more of a lifeline, with the brand essentially admitting its current EV lineup can't compete in the world's biggest car market. For the broader auto industry, this is another data point that Western legacy brands are losing the China EV war faster than their earnings calls let on.",
+      "last_escalated_item_ids": [
+        "d974af1f8302",
+        "1e53e5238ff2",
+        "07e5feeaaefc"
+      ]
     },
     "3577631c1020b1ff": {
       "topic": "BMW Shares Decline Profit Warning",
@@ -2389,7 +2401,293 @@
       "created_at": "2026-06-18T21:37:44.990888+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "732869c502319fca": {
+      "topic": "Awake NY DoorDash Summer Campaign Design",
+      "item_ids": [
+        "64c707eafee2"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5ba8b22c330fd03e": {
+      "topic": "Jalen Brunson Nike Air Force 1 Protro Fall 2026",
+      "item_ids": [
+        "8f1e17d503a6"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6546ce22f23f25ab": {
+      "topic": "adidas DON Issue #8 Cavs Colorway Release",
+      "item_ids": [
+        "24c94c4339cb"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ce4b5590cc53b50f": {
+      "topic": "Nike Air Force 1 '01 vs '07 Comparison",
+      "item_ids": [
+        "c2966f7c1ab4"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "894f7a3224a036cd": {
+      "topic": "Will Smith Friend Homelessness Claim Legal Fees",
+      "item_ids": [
+        "0377eea2ca21"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6b06513ae1c9084f": {
+      "topic": "Tay Keith Producer Death",
+      "item_ids": [
+        "8ee92a526fe1",
+        "69e81f50ceb9",
+        "e7eca4d83c42",
+        "aeffb076e715",
+        "5b2bf81825cd",
+        "37cba14051fd"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-18T23:23:25.786480+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "8ee92a526fe1",
+        "69e81f50ceb9",
+        "e7eca4d83c42",
+        "aeffb076e715",
+        "5b2bf81825cd",
+        "37cba14051fd"
+      ]
+    },
+    "ca3c0c018d6c347f": {
+      "topic": "Jim Carrey Grinch Sequel Talks",
+      "item_ids": [
+        "5dd64fcd61d5"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "afc58e3ef00e36d8": {
+      "topic": "Voicemails for Isabelle Film Review",
+      "item_ids": [
+        "e07740bd7beb",
+        "b1ea41ec251d"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a0cf6a071a092d36": {
+      "topic": "David Sheiner Character Actor Death",
+      "item_ids": [
+        "b52161750bb9"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "423b2ed7da6bb7de": {
+      "topic": "Star Wars Darth Vader Voice Actor Pay Controversy",
+      "item_ids": [
+        "46b102acd612"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "204debac885ac20f": {
+      "topic": "DGA TV Directors Job Protection Against Actors",
+      "item_ids": [
+        "da2e7b06fc25"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4f92da1564ede081": {
+      "topic": "Jimmie Allen Sexual Assault Damages Award",
+      "item_ids": [
+        "24a625691132"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "17bc90183d021d3e": {
+      "topic": "T-Mobile iPhone 17 Pro Back-to-School Promotion",
+      "item_ids": [
+        "2d6206fa2bd9"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9feebba2006a9656": {
+      "topic": "Tomorrow and Tomorrow and Tomorrow Film Adaptation",
+      "item_ids": [
+        "07a4630dab3b"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "45e82c0101ab3c1c": {
+      "topic": "Kyle Cooke Summer House Status Clarification",
+      "item_ids": [
+        "187034765b48"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "677ca3bfff7038b6": {
+      "topic": "Joseph Gordon-Levitt Sophia Bush Peter Thiel Dialog Club Response",
+      "item_ids": [
+        "0c12276efebe"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "991515920de41501": {
+      "topic": "Peter Thiel Dialog Club Member Ranking System",
+      "item_ids": [
+        "ffd482a186da"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c17e518e287f089a": {
+      "topic": "FDA Moderna mRNA Flu Vaccine Approval",
+      "item_ids": [
+        "4f4837456e89",
+        "6a3dcc0aff7b"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2d00a48ad5bb2767": {
+      "topic": "Kansas City Bus AI Facial Recognition Deployment",
+      "item_ids": [
+        "e9fda1ab454f"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7abc2a18547f0d12": {
+      "topic": "Coach Brain Dead Collaboration",
+      "item_ids": [
+        "b7bbbacded7e"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c0edbf0f6dc1a9df": {
+      "topic": "Lakers LeBron James Austin Reaves Contract Negotiations",
+      "item_ids": [
+        "099910c99071"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4eb865dbfb4b0247": {
+      "topic": "Patrick Ewing Career Reflection Knicks 2026 Title",
+      "item_ids": [
+        "5ad0b21a31b6"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bd232224f6f26af0": {
+      "topic": "Stephen A Smith Knicks Championship Repeat Analysis",
+      "item_ids": [
+        "e5e233b0aa9a"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7ba03c4fb85e5c92": {
+      "topic": "Dallas Mavericks 2026 NBA Draft Activity",
+      "item_ids": [
+        "c39f1da8ce1c"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c2121d671eaebfac": {
+      "topic": "L.A. Business Tax Fraud Unit TV Comedian Arrest",
+      "item_ids": [
+        "df8a9f74c343"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b9a64950b95ea974": {
+      "topic": "Online Car Sales Scam Business Address Fraud",
+      "item_ids": [
+        "26dfe4b98de8"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0ee13376b972eec4": {
+      "topic": "IRS Financial Fraud Warning Older Adults",
+      "item_ids": [
+        "5ede97c9ceb8"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dd48fd766f045a0e": {
+      "topic": "State Farm AI Sales Agent Plan Employee Backlash",
+      "item_ids": [
+        "32dd31a5002d"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6b96b4c739c18de5": {
+      "topic": "BMW China EV Production Shift Neue Klasse",
+      "item_ids": [
+        "cbe3fda1ba26"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6707838c06690d1f": {
+      "topic": "BMW Twin-Turbo M3 Pricing Strategy",
+      "item_ids": [
+        "57bc96b1c60b"
+      ],
+      "created_at": "2026-06-18T23:26:34.169240+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-18T21:37:45.032181+00:00"
+  "last_checked": "2026-06-18T23:26:46.466238+00:00"
 }
