@@ -1,36 +1,5 @@
 {
   "known_ids": [
-    "d9f4acadd033",
-    "93c40cdd6d8d",
-    "f5a4e00250f9",
-    "24a249edee4e",
-    "b3e1d7d5d8f1",
-    "fc3ec52b07f2",
-    "a0127692a198",
-    "cea0caaf1581",
-    "8a2821666a51",
-    "2f85281032d2",
-    "4a99b7f2413a",
-    "0ae9d4afd86b",
-    "612fdd8a62c1",
-    "9e67925f608f",
-    "44fffec2e225",
-    "d1bd83c6ad0d",
-    "70addff3e8d0",
-    "1d6601fb6353",
-    "f977766ff317",
-    "833e46cd678a",
-    "b53b4a6be6f5",
-    "47a51cfe8683",
-    "e4086041f2fc",
-    "245492c34d83",
-    "649e071cb7d1",
-    "81e66eef316d",
-    "4ba2d835a9f8",
-    "b88f94070422",
-    "5c4ab3a9fa72",
-    "8c509fcebf19",
-    "25cb9de8ebae",
     "f60db94c68a4",
     "ad357717e797",
     "def8e49bc5e3",
@@ -499,201 +468,55 @@
     "c25a5a1eef68",
     "8a7244dcb11b",
     "6b055a86c04f",
-    "1610ae5ac6a3"
+    "1610ae5ac6a3",
+    "de0e3a0e0038",
+    "79507096aa47",
+    "35e6bd379096",
+    "7077dc6f18ff",
+    "7c2d25cc7a51",
+    "9c2571a77379",
+    "adcf80d53822",
+    "404565b7b0d1",
+    "7c196cb316db",
+    "8ab831b6ad44",
+    "e433453dc892",
+    "a3a7ed602fe2",
+    "deebde359db7",
+    "78120a68202a",
+    "05feed7d0529",
+    "0d9d71d5dca2",
+    "fc7c2632364b",
+    "ca42bce97283",
+    "ecc401c03473",
+    "8b375c400afe",
+    "e3c25517efdc",
+    "1855b73d182b",
+    "042690cb5641",
+    "89b61be32ab7",
+    "61d12da16f54",
+    "12e3d94d096f",
+    "593e37882076",
+    "e0ac6ea0feb8",
+    "a2f8df2ab159",
+    "7578532b23a2",
+    "4f850139fb13"
   ],
   "failed_ids": {
-    "2f2253ba4017": "2026-06-19T02:15:35.041117+00:00",
-    "c644de2629b3": "2026-06-19T02:15:35.041117+00:00",
-    "43dd03f73350": "2026-06-19T02:15:35.041117+00:00",
-    "b9bf15b4dca2": "2026-06-19T02:15:35.041117+00:00",
-    "376d8010197c": "2026-06-19T02:15:35.041117+00:00",
-    "7bd6dbbed9e5": "2026-06-19T02:15:35.041117+00:00",
-    "1ac5fda6deca": "2026-06-19T02:15:35.041117+00:00",
-    "edb09d4f05cd": "2026-06-19T02:15:35.041117+00:00",
-    "fce95860505e": "2026-06-19T02:15:35.041117+00:00",
-    "010842fe7f54": "2026-06-19T02:15:35.041117+00:00",
-    "f0ffbc002041": "2026-06-19T02:15:35.041117+00:00",
-    "ee13a8dafc5b": "2026-06-19T02:15:35.041117+00:00",
-    "c00f34d7962b": "2026-06-19T02:15:35.041117+00:00",
-    "ff4f5435bba8": "2026-06-19T02:15:35.041117+00:00",
-    "12bc0f52e691": "2026-06-19T02:15:35.041117+00:00",
-    "bd0cf5be8f2a": "2026-06-19T02:15:35.041117+00:00",
-    "042690cb5641": "2026-06-19T02:15:35.041117+00:00",
-    "5e355bd4c3d3": "2026-06-19T02:15:35.041117+00:00"
+    "5622d65f038d": "2026-06-19T07:31:42.230069+00:00",
+    "15609673884f": "2026-06-19T07:31:42.230069+00:00",
+    "638a598c510e": "2026-06-19T07:31:42.230069+00:00",
+    "c8fe8368af6a": "2026-06-19T07:31:42.230069+00:00",
+    "8035dfb945bf": "2026-06-19T07:31:42.230069+00:00",
+    "b8571019f5b9": "2026-06-19T07:31:42.230069+00:00",
+    "211a6501d467": "2026-06-19T07:31:42.230069+00:00",
+    "ac50a266b07b": "2026-06-19T07:31:42.230069+00:00",
+    "e95cad6ddcc9": "2026-06-19T07:31:42.230069+00:00",
+    "4418c7136b93": "2026-06-19T07:31:42.230069+00:00",
+    "b6b2254b70a3": "2026-06-19T07:31:42.230069+00:00",
+    "c35b25575655": "2026-06-19T07:31:42.230069+00:00",
+    "1baaa8c7bce9": "2026-06-19T07:31:42.230069+00:00"
   },
   "live_clusters": {
-    "30afc1310704c76c": {
-      "topic": "Marcello Hernandez Rosal\u00eda Madison Square Garden Confession",
-      "item_ids": [
-        "d0588b9439f6"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cc65e7e11c631709": {
-      "topic": "G Flip Bed On Fire North America Tour",
-      "item_ids": [
-        "cf3ce900622e"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "df3725c3ce9d7428": {
-      "topic": "College Football Playoff Expansion Format Analysis",
-      "item_ids": [
-        "a4a49dc415cc"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ad22a443932682ff": {
-      "topic": "UK Asylum-Seeker Facial Age Recognition Scanning Technology",
-      "item_ids": [
-        "e10f10a21b2f"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cc5edfbb68339286": {
-      "topic": "Midjourney Full-Body Ultrasonic Scanner Development",
-      "item_ids": [
-        "9db0528d1a80"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "989ce0512ed1b0cf": {
-      "topic": "Oil Market US-Iran Deal Supply Glut Forecast",
-      "item_ids": [
-        "5af9f348aa5a"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2d464eff6624d98d": {
-      "topic": "Anti-Drone Technology Market Expansion Military Applications",
-      "item_ids": [
-        "c115a6bf32f9"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b6469d43515d7c63": {
-      "topic": "Rackspace Technology AI Expansion AMD-Powered Cost-Cutting",
-      "item_ids": [
-        "2e2fa1e0602d"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4276443d3e14e386": {
-      "topic": "Cole Young Swing Analysis Bat Tracking Technology",
-      "item_ids": [
-        "b0a7d9c20def"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c4b631bf06c68e14": {
-      "topic": "Bang & Olufsen 40-Year-Old Turntables Durability Design",
-      "item_ids": [
-        "594b0c48fff2"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "554fcafa41fdf510": {
-      "topic": "Milwaukee Bucks 2026 NBA Draft Offseason Needs",
-      "item_ids": [
-        "c8f3b67ddc98",
-        "f5eb6d7ace9d"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d568f76dc55f0311": {
-      "topic": "NBA Offseason 2026 Trade Rumors Antetokounmpo Kevin Love",
-      "item_ids": [
-        "325179437f2a"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "acc6a840f48ad22b": {
-      "topic": "Michelle Beadle 2026 NBA Finals Commentary Analysis",
-      "item_ids": [
-        "9417052fd047"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a385142dca8a3fde": {
-      "topic": "Jalen Duren Pistons Contract Negotiations Playoff Performance",
-      "item_ids": [
-        "5e3bf357f569"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "90250ebd211d4d58": {
-      "topic": "Character.AI Founder Moves to OpenAI Executive Shift",
-      "item_ids": [
-        "029c288d94db"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e6ecefb94ba64835": {
-      "topic": "Colombia Trending Topic",
-      "item_ids": [
-        "8cc212701bfa"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "66eca57cd6c58ffa": {
-      "topic": "Uzbekistan Trending Topic",
-      "item_ids": [
-        "e32d60bbd1ba"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9e2413600d881abb": {
-      "topic": "Ghana Trending Topic",
-      "item_ids": [
-        "80af431865bb"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e0148c329dd52ed1": {
-      "topic": "Olivia Miles Trending Topic",
-      "item_ids": [
-        "b14c00526c43"
-      ],
-      "created_at": "2026-06-18T06:26:07.141115+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "cf8731a02c70d28c": {
       "topic": "Split Watches GMT US Market Entry",
       "item_ids": [
@@ -950,7 +773,8 @@
     "7cb813ffae58a6e6": {
       "topic": "Musicians Helicopter Safety Oliver Tree Crash",
       "item_ids": [
-        "b839a36af245"
+        "b839a36af245",
+        "7077dc6f18ff"
       ],
       "created_at": "2026-06-18T14:09:24.940268+00:00",
       "last_escalated_size": 0,
@@ -1282,12 +1106,16 @@
         "fd1ae2d12f82",
         "54b781e719df",
         "130bb5d1f470",
-        "b5a0b6196f50"
+        "b5a0b6196f50",
+        "deebde359db7",
+        "78120a68202a",
+        "0d9d71d5dca2",
+        "fc7c2632364b"
       ],
       "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 14,
-      "last_escalated_at": "2026-06-18T21:37:08.692862+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 20,
+      "last_escalated_at": "2026-06-19T07:31:42.230069+00:00",
+      "picks_file": "picks/picks-2026-06-19-0732.md",
       "last_escalated_item_ids": [
         "e3423341d5f0",
         "ae64c68eaf23",
@@ -1302,8 +1130,15 @@
         "3ef01dda8540",
         "d1fbab047602",
         "fd1ae2d12f82",
-        "54b781e719df"
-      ]
+        "54b781e719df",
+        "130bb5d1f470",
+        "b5a0b6196f50",
+        "deebde359db7",
+        "78120a68202a",
+        "0d9d71d5dca2",
+        "fc7c2632364b"
+      ],
+      "why_text": "The New York Knicks have won the NBA Finals \u2014 ending one of the longest droughts in American sports and sending the most media-saturated city in the world into full delirium. The reverberations are already reshaping the league: the Spurs are scrambling to retool after losing the Finals, the Lakers are circling Knicks champions in free agency, and on the streets of Manhattan, fans are getting pantsed and twerking back. This isn't just a sports story \u2014 it's a cultural reset for a city that has been waiting 50+ years for this moment."
     },
     "32f01e248b1a0b49": {
       "topic": "Criterion Collection June 2026 New Releases",
@@ -2401,20 +2236,26 @@
         "aeffb076e715",
         "5b2bf81825cd",
         "37cba14051fd",
-        "16ac3cc5eca0"
+        "16ac3cc5eca0",
+        "de0e3a0e0038",
+        "7578532b23a2"
       ],
       "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-18T23:23:25.786480+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 9,
+      "last_escalated_at": "2026-06-19T07:31:42.230069+00:00",
+      "picks_file": "picks/picks-2026-06-19-0732.md",
       "last_escalated_item_ids": [
         "8ee92a526fe1",
         "69e81f50ceb9",
         "e7eca4d83c42",
         "aeffb076e715",
         "5b2bf81825cd",
-        "37cba14051fd"
-      ]
+        "37cba14051fd",
+        "16ac3cc5eca0",
+        "de0e3a0e0038",
+        "7578532b23a2"
+      ],
+      "why_text": "Tay Keith was one of the most distinctive sonic architects of late 2010s hip-hop \u2014 his thunderous, sample-flipped Memphis sound powered 'Sicko Mode,' 'Nonstop,' and a run of hits that defined an era of mainstream rap. Losing him at 29 is a gut punch to a generation of artists he helped build, from Travis Scott to Drake to Beyonc\u00e9, and a reminder of how much of that sound was anchored by one person. Memphis just lost one of its most important cultural exports since Three 6 Mafia."
     },
     "ca3c0c018d6c347f": {
       "topic": "Jim Carrey Grinch Sequel Talks",
@@ -2670,7 +2511,187 @@
       "created_at": "2026-06-19T02:16:01.426449+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "f751260e48508388": {
+      "topic": "Anne Curtis Manila Paranoia Thriller Remote Film",
+      "item_ids": [
+        "79507096aa47"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8daebb230b1a83af": {
+      "topic": "Fuerza Regida This Is Our Dream Stadium Tour 2026",
+      "item_ids": [
+        "35e6bd379096"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8bdb8cbea77b03ee": {
+      "topic": "FKA Twigs Lil Yachty On Your Mind Single",
+      "item_ids": [
+        "7c2d25cc7a51"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a1369031f62867be": {
+      "topic": "Matt Damon Kimmel Trojan Horse Appearance",
+      "item_ids": [
+        "9c2571a77379"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7ee18a4ad33ad6b8": {
+      "topic": "ReelShort Joey Jia Microdrama International Expansion",
+      "item_ids": [
+        "adcf80d53822"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f4ce5af9a2164424": {
+      "topic": "Nightsleeper Season 2 Renewal BBC Element Pictures",
+      "item_ids": [
+        "404565b7b0d1"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fe0cf9e07283a045": {
+      "topic": "BBC Cancels Ashley Cain Series Offensive Comments",
+      "item_ids": [
+        "7c196cb316db"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5d29a2d0de8f56d5": {
+      "topic": "Pseudoscientific Bleach Cancer Treatment Scam",
+      "item_ids": [
+        "8ab831b6ad44"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "920326ede66230a2": {
+      "topic": "Mercedes-Benz VLE 2028 8K Display Vehicle",
+      "item_ids": [
+        "e433453dc892"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "76c499626dd2070a": {
+      "topic": "Biotech Weight Loss Market Stock Volatility",
+      "item_ids": [
+        "a3a7ed602fe2"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e7d4efb173a0b881": {
+      "topic": "Caleb Wilson NBA Draft Profile",
+      "item_ids": [
+        "05feed7d0529"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "46bf4794b3c25afa": {
+      "topic": "Big Food Regenerative Agriculture Fertility Farming",
+      "item_ids": [
+        "ca42bce97283"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6bc331813c07f9de": {
+      "topic": "KPMG Leaked Optus Confidential Data Whistleblower",
+      "item_ids": [
+        "ecc401c03473"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c7ea759bc731447b": {
+      "topic": "Prosus Revenue Growth Tencent Business Performance",
+      "item_ids": [
+        "8b375c400afe"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ec939d71a3d71530": {
+      "topic": "Missing Oil Barrels Global Energy Crisis",
+      "item_ids": [
+        "e3c25517efdc"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3628177fc843e1d2": {
+      "topic": "Marvell Technology Dan Durn Adobe Finance Chief",
+      "item_ids": [
+        "1855b73d182b"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8d49d8fea217282b": {
+      "topic": "Harvard Square Clover Location Permanent Closure",
+      "item_ids": [
+        "042690cb5641"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "436665706883bd7e": {
+      "topic": "BMW i3 Orders Launch Early Demand Surge",
+      "item_ids": [
+        "89b61be32ab7",
+        "61d12da16f54",
+        "12e3d94d096f"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-19T07:31:42.230069+00:00",
+      "picks_file": "picks/picks-2026-06-19-0732.md",
+      "why_text": "BMW has been forced to open i3 orders significantly ahead of schedule after pre-launch demand overwhelmed expectations \u2014 a signal that appetite for affordable, brand-name EVs in markets like the UK is outpacing even optimistic manufacturer forecasts. This matters because it punctures the ongoing narrative that EV demand is cooling, and it puts pressure on competitors who are still hedging their electric commitments. BMW moving early isn't a marketing flex \u2014 it's a company scrambling to keep up.",
+      "last_escalated_item_ids": [
+        "89b61be32ab7",
+        "61d12da16f54",
+        "12e3d94d096f"
+      ]
+    },
+    "7e68bd2dc574fbd2": {
+      "topic": "Li Auto i6 EV Europe Market Entry",
+      "item_ids": [
+        "593e37882076"
+      ],
+      "created_at": "2026-06-19T07:32:14.129494+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-19T02:16:01.427708+00:00"
+  "last_checked": "2026-06-19T07:32:37.016376+00:00"
 }
