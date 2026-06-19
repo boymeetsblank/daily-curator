@@ -1,31 +1,5 @@
 {
   "known_ids": [
-    "d4d146a8059b",
-    "5ae0fd09c9e9",
-    "573df814f83f",
-    "c1d782f545f4",
-    "c12954f12145",
-    "df09a50bbd74",
-    "6b6d9acb3734",
-    "c6b5470bf236",
-    "aeed7c57ab97",
-    "edbd36eaccad",
-    "ae64c68eaf23",
-    "3ea34835e47e",
-    "0cd2265cd7bf",
-    "0f7e2ef4a936",
-    "6fde5c4a8b9b",
-    "5eb3266c7413",
-    "fd9768653d09",
-    "66e6d98dad90",
-    "1fcd2b9a3de0",
-    "a9a3fe105397",
-    "57ecaad0bd42",
-    "d857709579e1",
-    "c25bb7f9b162",
-    "6b9e4a66c43f",
-    "ba7079690c81",
-    "18e92477ce01",
     "23a3507f8168",
     "49054dad5b33",
     "66e6d98dad90",
@@ -499,7 +473,33 @@
     "0b11a8111ba1",
     "1193f87f1259",
     "03e3076a23bc",
-    "c32bd6616a1b"
+    "c32bd6616a1b",
+    "c08684d17d40",
+    "2808a657a00d",
+    "e417deda1186",
+    "b555b46a7452",
+    "94887e5b378a",
+    "b72a38ed98e5",
+    "b3ad1ef634e6",
+    "7510130258d6",
+    "a93cb6472fd1",
+    "2c2b2e8f147a",
+    "363e3f9d8a74",
+    "6b7c26a5f7ba",
+    "397e8710e378",
+    "e49c37533e87",
+    "c83ec24439af",
+    "c71214fb9868",
+    "1255d3d51e43",
+    "65e44ba95049",
+    "1df02a5a5cad",
+    "5431249c3dee",
+    "5ee504ac14cd",
+    "63e3f3e67a37",
+    "d88e6887d6c4",
+    "0a735b90186b",
+    "a8580db8dc0a",
+    "3c2fdde7f7c7"
   ],
   "failed_ids": {
     "3f37f4cb4892": "2026-06-19T20:48:43.580482+00:00",
@@ -515,81 +515,20 @@
     "7a579ddce132": "2026-06-19T20:48:43.580482+00:00",
     "e310f689481c": "2026-06-19T20:48:43.580482+00:00",
     "a71187cb6109": "2026-06-19T20:48:43.580482+00:00",
-    "fde8a29766f2": "2026-06-19T20:48:43.580482+00:00"
+    "fde8a29766f2": "2026-06-19T20:48:43.580482+00:00",
+    "2c63e6b4e821": "2026-06-19T21:54:51.550164+00:00",
+    "460d840ae29b": "2026-06-19T21:54:51.550164+00:00",
+    "86c57c55498e": "2026-06-19T21:54:51.550164+00:00",
+    "0418fb210733": "2026-06-19T21:54:51.550164+00:00",
+    "5e06b709fdae": "2026-06-19T21:54:51.550164+00:00",
+    "5b53c2981a23": "2026-06-19T21:54:51.550164+00:00",
+    "e3e70df18d52": "2026-06-19T21:54:51.550164+00:00",
+    "f8d7d9fc3fd7": "2026-06-19T21:54:51.550164+00:00",
+    "edc107d3818b": "2026-06-19T21:54:51.550164+00:00",
+    "d0668bc0ed82": "2026-06-19T21:54:51.550164+00:00",
+    "09cffb71ce94": "2026-06-19T21:54:51.550164+00:00"
   },
   "live_clusters": {
-    "7d462258b64790ad": {
-      "topic": "Nike Pegasus Premium Cow Print Release",
-      "item_ids": [
-        "bfeab2fe9b4f"
-      ],
-      "created_at": "2026-06-18T21:37:44.990888+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e450c4f9047d0bf0": {
-      "topic": "Nike S.T. Charge Grit Colorway Release",
-      "item_ids": [
-        "07bffc8e5d27"
-      ],
-      "created_at": "2026-06-18T21:37:44.990888+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5b7f4e15ec433372": {
-      "topic": "Nike Air Force 1 Yellow Plaid Release",
-      "item_ids": [
-        "3afd7c04d480"
-      ],
-      "created_at": "2026-06-18T21:37:44.990888+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9e00d7db35b9e0a4": {
-      "topic": "Jimmy Fallon Conor McGregor Interview Image Rehab Backlash",
-      "item_ids": [
-        "13ef9e51b1c0"
-      ],
-      "created_at": "2026-06-18T21:37:44.990888+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b04aa87eaa258634": {
-      "topic": "Ryan Coogler Proximity Media Netflix Multi-Year Deal",
-      "item_ids": [
-        "dee049d9c9cf"
-      ],
-      "created_at": "2026-06-18T21:37:44.990888+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0c66e0141e636cd3": {
-      "topic": "Jimmy Jam AI Music Guardrails Billboard Chart",
-      "item_ids": [
-        "583d00c2158b"
-      ],
-      "created_at": "2026-06-18T21:37:44.990888+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9545c7ac3aaf0e3a": {
-      "topic": "Chris Pratt America 250 Comedy Shorts Doris Kearns Goodwin",
-      "item_ids": [
-        "627900086dfc"
-      ],
-      "created_at": "2026-06-18T21:37:44.990888+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3dc78dfe6bd47450": {
-      "topic": "Snap Spins Off Dotmo AI Video Company",
-      "item_ids": [
-        "30457b6c9ee1"
-      ],
-      "created_at": "2026-06-18T21:37:44.990888+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "732869c502319fca": {
       "topic": "Awake NY DoorDash Summer Campaign Design",
       "item_ids": [
@@ -647,7 +586,8 @@
         "16ac3cc5eca0",
         "de0e3a0e0038",
         "7578532b23a2",
-        "46b316cdd48f"
+        "46b316cdd48f",
+        "b555b46a7452"
       ],
       "created_at": "2026-06-18T23:26:34.169240+00:00",
       "last_escalated_size": 9,
@@ -1780,7 +1720,8 @@
     "0224edf6646424b0": {
       "topic": "Angel Reese Trending Topic",
       "item_ids": [
-        "88dabef24a84"
+        "88dabef24a84",
+        "c08684d17d40"
       ],
       "created_at": "2026-06-19T14:56:22.134915+00:00",
       "last_escalated_size": 0,
@@ -2122,7 +2063,8 @@
     "2722c1719a3e7f5f": {
       "topic": "NBA Trade Rumors Derrick White Walker Kessler Celtics T-Wolves Jazz",
       "item_ids": [
-        "bfcd129e3b63"
+        "bfcd129e3b63",
+        "397e8710e378"
       ],
       "created_at": "2026-06-19T17:17:29.947602+00:00",
       "last_escalated_size": 0,
@@ -2411,11 +2353,19 @@
       "topic": "Kendrick Perkins Jackson State General Manager Appointment",
       "item_ids": [
         "1cf4d9e015e3",
-        "0ccd5ffcc2a6"
+        "0ccd5ffcc2a6",
+        "b72a38ed98e5"
       ],
       "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-19T21:54:51.550164+00:00",
+      "picks_file": "picks/picks-2026-06-19-2155.md",
+      "why_text": "Kendrick Perkins stepping into the GM role at Jackson State is a signal that HBCUs are getting serious about building professional front office infrastructure \u2014 not just recruiting stars, but building organizations. It follows the Deion Sanders era blueprint of using celebrity credibility to elevate HBCU programs into legitimate national conversation. Perkins brings NBA pedigree and loud personality to a school still riding the cultural momentum that Sanders sparked, and that combination could actually move the needle on recruiting and visibility.",
+      "last_escalated_item_ids": [
+        "1cf4d9e015e3",
+        "0ccd5ffcc2a6",
+        "b72a38ed98e5"
+      ]
     },
     "be0e174caf4d4c15": {
       "topic": "Spurs Knicks NBA Finals Fight Incident",
@@ -2425,7 +2375,160 @@
       "created_at": "2026-06-19T20:49:14.376944+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "065757e667a43c5f": {
+      "topic": "Vans Charmed Life Cardigan Slip-Ons Release",
+      "item_ids": [
+        "2808a657a00d"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e167977f81e032cf": {
+      "topic": "YG Drakeo the Ruler Murder Involvement Denial",
+      "item_ids": [
+        "e417deda1186"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0f01af80380c72bc": {
+      "topic": "Cam Newton Men Provide Protect Commentary",
+      "item_ids": [
+        "94887e5b378a"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c2871ba8ca0b9ee5": {
+      "topic": "British Man Arrested Toddler Crocodile Enclosure Zoo",
+      "item_ids": [
+        "b3ad1ef634e6"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f6bc8b725244fa28": {
+      "topic": "Leviticus Film Conversion Therapy Horror Preparation",
+      "item_ids": [
+        "7510130258d6"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e0b7f1de9d3b727a": {
+      "topic": "Go Robotaxis IPO Japan Acquisitions Strategy",
+      "item_ids": [
+        "a93cb6472fd1"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fa6acabd78288342": {
+      "topic": "Aura E-ink Photo Frame Digital Design",
+      "item_ids": [
+        "2c2b2e8f147a"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "77ea413e7d568ea1": {
+      "topic": "Loro Piana Wool Climbing Pants Fashion",
+      "item_ids": [
+        "363e3f9d8a74"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c0489d644e306ad5": {
+      "topic": "D'Angelo Russell Wizards Contract Option Exercise",
+      "item_ids": [
+        "6b7c26a5f7ba"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "482e693ec1ac37f7": {
+      "topic": "Michael Cooper Lakers Offseason LeBron Future Analysis",
+      "item_ids": [
+        "e49c37533e87"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9edac85bd6440c7e": {
+      "topic": "Spurs Committed De'Aaron Fox NBA Finals Struggles",
+      "item_ids": [
+        "c83ec24439af"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b9df1e7f78ec6930": {
+      "topic": "Heat Trade Package Giannis Antetokounmpo Bucks",
+      "item_ids": [
+        "c71214fb9868"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c3ea83a41d54b9d": {
+      "topic": "AI Replacing Sustainability Business Trend",
+      "item_ids": [
+        "1255d3d51e43"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2c0ce5a6f0f06e71": {
+      "topic": "BMW 2027 X1 Facelift Neue Klasse Design",
+      "item_ids": [
+        "65e44ba95049"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "40b13f2501880c7b": {
+      "topic": "BMW X5 vs SUV Comparison Space Value",
+      "item_ids": [
+        "1df02a5a5cad"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0ddd308f695663bc": {
+      "topic": "BMW China Green-Electricity Charging 2027 Target",
+      "item_ids": [
+        "5431249c3dee"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3031a2eb42c2024a": {
+      "topic": "2026 BMW M440i Gran Coupe Modern Motoring",
+      "item_ids": [
+        "5ee504ac14cd"
+      ],
+      "created_at": "2026-06-19T21:55:21.409457+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-19T20:49:21.819597+00:00"
+  "last_checked": "2026-06-19T21:55:36.563832+00:00"
 }
