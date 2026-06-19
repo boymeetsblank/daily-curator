@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "37dd67b53e4d",
-    "0d749432b4ed",
-    "60055594201f",
-    "e98253817470",
-    "5db375302d42",
-    "57c658398063",
-    "4d4eb24dd178",
-    "279f47e31e95",
-    "e14c828fe2d8",
-    "575827d2ee47",
-    "927927fce9a3",
-    "82949ee293d2",
-    "9ca21210238c",
-    "646f42ed4e94",
-    "66df53154e53",
     "d9f4acadd033",
     "93c40cdd6d8d",
     "f5a4e00250f9",
@@ -499,86 +484,44 @@
     "be9ca4c89575",
     "f8a546a5d834",
     "379cd9d0ade0",
-    "19ed489a30c9"
+    "19ed489a30c9",
+    "f865bda133df",
+    "46b5e682418c",
+    "16ac3cc5eca0",
+    "443141626262",
+    "37ed5c7ad244",
+    "a9b983627b55",
+    "7fc72114ac88",
+    "5ecce4458423",
+    "f7db370cf36f",
+    "d7b6b82f2b8b",
+    "ad1f34801031",
+    "c25a5a1eef68",
+    "8a7244dcb11b",
+    "6b055a86c04f",
+    "1610ae5ac6a3"
   ],
   "failed_ids": {
-    "7352a932b522": "2026-06-18T21:37:08.692862+00:00",
-    "12ef8b603ce2": "2026-06-18T21:37:08.692862+00:00",
-    "683dcb58db1d": "2026-06-18T21:37:08.692862+00:00",
-    "8a927b2abb94": "2026-06-18T21:37:08.692862+00:00",
-    "d7d37f9f5127": "2026-06-18T21:37:08.692862+00:00",
-    "b4392c84b456": "2026-06-18T21:37:08.692862+00:00",
-    "82492ee6b9b8": "2026-06-18T21:37:08.692862+00:00",
-    "684ca1b911b1": "2026-06-18T21:37:08.692862+00:00",
-    "ca31547a53cd": "2026-06-18T21:37:08.692862+00:00",
-    "b36a8a2a21f5": "2026-06-18T21:37:08.692862+00:00",
-    "1766f3c18b5b": "2026-06-18T21:37:08.692862+00:00",
-    "6022364bdb7a": "2026-06-18T21:37:08.692862+00:00",
-    "dcdd6028eee4": "2026-06-18T21:37:08.692862+00:00",
-    "9f6201b4914f": "2026-06-18T21:37:08.692862+00:00",
-    "99dace4cf0a8": "2026-06-18T21:37:08.692862+00:00",
-    "c0c60b772480": "2026-06-18T21:37:08.692862+00:00",
-    "2f423f8793db": "2026-06-18T21:37:08.692862+00:00",
-    "375eb6bb75de": "2026-06-18T21:37:08.692862+00:00",
-    "89a775624622": "2026-06-18T21:37:08.692862+00:00",
-    "ad1f34801031": "2026-06-18T21:37:08.692862+00:00",
-    "c25a5a1eef68": "2026-06-18T21:37:08.692862+00:00"
+    "2f2253ba4017": "2026-06-19T02:15:35.041117+00:00",
+    "c644de2629b3": "2026-06-19T02:15:35.041117+00:00",
+    "43dd03f73350": "2026-06-19T02:15:35.041117+00:00",
+    "b9bf15b4dca2": "2026-06-19T02:15:35.041117+00:00",
+    "376d8010197c": "2026-06-19T02:15:35.041117+00:00",
+    "7bd6dbbed9e5": "2026-06-19T02:15:35.041117+00:00",
+    "1ac5fda6deca": "2026-06-19T02:15:35.041117+00:00",
+    "edb09d4f05cd": "2026-06-19T02:15:35.041117+00:00",
+    "fce95860505e": "2026-06-19T02:15:35.041117+00:00",
+    "010842fe7f54": "2026-06-19T02:15:35.041117+00:00",
+    "f0ffbc002041": "2026-06-19T02:15:35.041117+00:00",
+    "ee13a8dafc5b": "2026-06-19T02:15:35.041117+00:00",
+    "c00f34d7962b": "2026-06-19T02:15:35.041117+00:00",
+    "ff4f5435bba8": "2026-06-19T02:15:35.041117+00:00",
+    "12bc0f52e691": "2026-06-19T02:15:35.041117+00:00",
+    "bd0cf5be8f2a": "2026-06-19T02:15:35.041117+00:00",
+    "042690cb5641": "2026-06-19T02:15:35.041117+00:00",
+    "5e355bd4c3d3": "2026-06-19T02:15:35.041117+00:00"
   },
   "live_clusters": {
-    "743237e8bedfdb0d": {
-      "topic": "Kai Cenat Streamer University Atlanta Event Shutdown",
-      "item_ids": [
-        "2d6ba8a426bf"
-      ],
-      "created_at": "2026-06-18T01:37:27.075437+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3906a304100adc4d": {
-      "topic": "Dreams of Violets AI Film Review Ash Koosha",
-      "item_ids": [
-        "ac7e37e3c0d4"
-      ],
-      "created_at": "2026-06-18T01:37:27.075437+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "48256b772802b41d": {
-      "topic": "Bowen Yang Matt Rogers All the Things She Said Cover",
-      "item_ids": [
-        "4a5353fd20d7"
-      ],
-      "created_at": "2026-06-18T01:37:27.075437+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ae71b9206fdda361": {
-      "topic": "Daveigh Chase Death Ring Lilo and Stitch Star",
-      "item_ids": [
-        "051c0146576f"
-      ],
-      "created_at": "2026-06-18T01:37:27.075437+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "78824657d5cb7de8": {
-      "topic": "Norman Reedus Walking Dead Daryl Dixon Final Season Wrap",
-      "item_ids": [
-        "6f81ee2e8655"
-      ],
-      "created_at": "2026-06-18T01:37:27.075437+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7c2ea6ba53851791": {
-      "topic": "A.A. Murakami SYMBIOSIS Installation BMW Art Basel",
-      "item_ids": [
-        "234f120a7095"
-      ],
-      "created_at": "2026-06-18T01:37:27.075437+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "30afc1310704c76c": {
       "topic": "Marcello Hernandez Rosal\u00eda Madison Square Garden Confession",
       "item_ids": [
@@ -1447,7 +1390,8 @@
     "4e880095e71ffd92": {
       "topic": "Bad Bunny International Touring Records 2026",
       "item_ids": [
-        "58aa7af90ed1"
+        "58aa7af90ed1",
+        "f865bda133df"
       ],
       "created_at": "2026-06-18T17:26:49.791087+00:00",
       "last_escalated_size": 0,
@@ -2016,7 +1960,8 @@
     "a0f11f398e9e6a1f": {
       "topic": "Amazon AI Chips Challenge Nvidia",
       "item_ids": [
-        "1180881e66fa"
+        "1180881e66fa",
+        "d7b6b82f2b8b"
       ],
       "created_at": "2026-06-18T19:39:48.642436+00:00",
       "last_escalated_size": 0,
@@ -2455,7 +2400,8 @@
         "e7eca4d83c42",
         "aeffb076e715",
         "5b2bf81825cd",
-        "37cba14051fd"
+        "37cba14051fd",
+        "16ac3cc5eca0"
       ],
       "created_at": "2026-06-18T23:26:34.169240+00:00",
       "last_escalated_size": 6,
@@ -2687,7 +2633,44 @@
       "created_at": "2026-06-18T23:26:34.169240+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "e14270781b2c0557": {
+      "topic": "Bunnie Xo Jelly Roll Divorce Baby Announcement",
+      "item_ids": [
+        "46b5e682418c",
+        "a9b983627b55"
+      ],
+      "created_at": "2026-06-19T02:16:01.426449+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7b63009f995a4fca": {
+      "topic": "Corridos del Rey M\u00fasica Mexicana Faith-Based Artist",
+      "item_ids": [
+        "37ed5c7ad244"
+      ],
+      "created_at": "2026-06-19T02:16:01.426449+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f9a7bb813ee813d7": {
+      "topic": "Dungeon Crawler Carl Peacock Series Seth MacFarlane",
+      "item_ids": [
+        "7fc72114ac88"
+      ],
+      "created_at": "2026-06-19T02:16:01.426449+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4a64ba0fb036b94a": {
+      "topic": "Elastic Acquires DeductiveAI $85M",
+      "item_ids": [
+        "f7db370cf36f"
+      ],
+      "created_at": "2026-06-19T02:16:01.426449+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-18T23:26:46.466238+00:00"
+  "last_checked": "2026-06-19T02:16:01.427708+00:00"
 }
