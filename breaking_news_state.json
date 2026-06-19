@@ -1,58 +1,5 @@
 {
   "known_ids": [
-    "dddcb32dfe81",
-    "7bb2a9523758",
-    "b802ddc4feb7",
-    "aa7fbe43ac08",
-    "53fb393c6629",
-    "09a180145547",
-    "16e238fef958",
-    "7a5d5f978f51",
-    "f81e2748c327",
-    "58cfa0e6e4f9",
-    "698cca66f1f7",
-    "74d3ec5eae79",
-    "39a0b453e335",
-    "bc25fa1dba1a",
-    "4996431144bc",
-    "afb541b56d41",
-    "5b32bfa572e5",
-    "d13e1ed363b3",
-    "85073fb28fd5",
-    "437cf2bef191",
-    "e0754ad000a9",
-    "1c746517406a",
-    "ab33863c6bbe",
-    "937c7e5d0fd8",
-    "dad7b4f8c096",
-    "de6d92798cc0",
-    "0f3febfa2704",
-    "962bf6fd3511",
-    "a5ba348f4c4f",
-    "472abae3fddb",
-    "bb26b2627392",
-    "4b7de29c57fd",
-    "8b65e36c515e",
-    "4404904eb019",
-    "04862a033dd2",
-    "962bf6fd3511",
-    "c0ab506835fc",
-    "a5ba348f4c4f",
-    "de6a45544646",
-    "aba00dfeabe9",
-    "189f5005f088",
-    "a1c7d666c0a9",
-    "d2ff31db42d9",
-    "05044f7dcb12",
-    "a3349f032db5",
-    "4eb95dec31c1",
-    "cbaf182c8138",
-    "024f5097ec2b",
-    "504292fa2d42",
-    "079696563a24",
-    "cfa19669097e",
-    "036b4690cc8f",
-    "e3423341d5f0",
     "106d7115de9c",
     "d4660a752425",
     "69fcf4d42087",
@@ -499,501 +446,63 @@
     "5dc32d3ef657",
     "521eb90a2ca5",
     "828344cf6bc5",
-    "fbf0b7e8c3dd"
+    "fbf0b7e8c3dd",
+    "d74f41f93b37",
+    "eec8b1ebb17a",
+    "6086fe5d12bd",
+    "eeffde24edbc",
+    "df2f54ff8aec",
+    "e049a76a95c8",
+    "a72eb77ea4b9",
+    "72b9630e983a",
+    "22f100804343",
+    "0919209f6a11",
+    "34b2841e5488",
+    "da1eec85662f",
+    "b3c31a21dbf2",
+    "2a6560177a27",
+    "2b593cd78a72",
+    "60391bcd10ad",
+    "0127e5b5b129",
+    "41450efeb327",
+    "f7e3720e38f1",
+    "9d1d068ccbb6",
+    "43db9d1fcba4",
+    "84cb81555bea",
+    "cab7b66e421b",
+    "cc43cdf18df2",
+    "1ad67f3e093a",
+    "c2c84a5d8375",
+    "ad1f22b45740",
+    "f9d9c24cab75",
+    "c2ca5999ff25",
+    "256391f09756",
+    "364ccffa0ef2",
+    "793004d7117e",
+    "4f3229becadc",
+    "ef442f39ee7b",
+    "305af1d6cdbd",
+    "02238e5704d8",
+    "ce39803b0fdf",
+    "47fed6e801f0",
+    "62e6797a5c1b",
+    "001f4a51bd1d",
+    "2849dff2d042",
+    "9c2fd23ec71a",
+    "adb7262441d1",
+    "01cc5dbd67f1",
+    "427aa380b578",
+    "65cd3456e697",
+    "59dea581ab7c",
+    "15e62800df4e",
+    "507be895e0b1",
+    "59ca620be65a",
+    "bd6e4d2069b6",
+    "796686d32d5c",
+    "c8c82c7622f1"
   ],
   "failed_ids": {},
   "live_clusters": {
-    "de7ad8d1146dc18e": {
-      "topic": "Nike Vomero Premium Cucumber Calm Colorway Release",
-      "item_ids": [
-        "a3349f032db5"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3b707df461cb0a42": {
-      "topic": "New Balance 1890A Moccasin Hybrid July Release",
-      "item_ids": [
-        "4eb95dec31c1"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c81d036cccb84880": {
-      "topic": "GQ Best Sweatpants for Men 2026 Guide",
-      "item_ids": [
-        "cbaf182c8138"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "edbd9dfa9edfa267": {
-      "topic": "Jessie Reyez Album Release Birthday Celebration Drake CN Tower",
-      "item_ids": [
-        "024f5097ec2b"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1bb528042a8d5f2e": {
-      "topic": "Best Air Jordans Under Retail Buying Guide",
-      "item_ids": [
-        "504292fa2d42"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fd297345d92166ff": {
-      "topic": "Friends Keep Secrets Cover Story",
-      "item_ids": [
-        "079696563a24"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6dfbfd028e6909d3": {
-      "topic": "French Montana Knicks Parade Taxi Driver Incident",
-      "item_ids": [
-        "cfa19669097e"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e822cb5533ba30cf": {
-      "topic": "NYC Knicks Championship Parade Celebrations",
-      "item_ids": [
-        "e3423341d5f0",
-        "ae64c68eaf23",
-        "2150d7ce7a35",
-        "e6621dacb133",
-        "27f1fb04b385",
-        "d5e33a8975eb",
-        "de01d61ed16b",
-        "d27a508198a7",
-        "7661000a5b9c",
-        "a8880840d02f",
-        "3ef01dda8540",
-        "d1fbab047602",
-        "fd1ae2d12f82",
-        "54b781e719df",
-        "130bb5d1f470",
-        "b5a0b6196f50",
-        "deebde359db7",
-        "78120a68202a",
-        "0d9d71d5dca2",
-        "fc7c2632364b",
-        "589ef9d31819",
-        "ad5592e07a57"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 20,
-      "last_escalated_at": "2026-06-19T07:31:42.230069+00:00",
-      "picks_file": "picks/picks-2026-06-19-0732.md",
-      "last_escalated_item_ids": [
-        "e3423341d5f0",
-        "ae64c68eaf23",
-        "2150d7ce7a35",
-        "e6621dacb133",
-        "27f1fb04b385",
-        "d5e33a8975eb",
-        "de01d61ed16b",
-        "d27a508198a7",
-        "7661000a5b9c",
-        "a8880840d02f",
-        "3ef01dda8540",
-        "d1fbab047602",
-        "fd1ae2d12f82",
-        "54b781e719df",
-        "130bb5d1f470",
-        "b5a0b6196f50",
-        "deebde359db7",
-        "78120a68202a",
-        "0d9d71d5dca2",
-        "fc7c2632364b"
-      ],
-      "why_text": "The New York Knicks have won the NBA Finals \u2014 ending one of the longest droughts in American sports and sending the most media-saturated city in the world into full delirium. The reverberations are already reshaping the league: the Spurs are scrambling to retool after losing the Finals, the Lakers are circling Knicks champions in free agency, and on the streets of Manhattan, fans are getting pantsed and twerking back. This isn't just a sports story \u2014 it's a cultural reset for a city that has been waiting 50+ years for this moment."
-    },
-    "32f01e248b1a0b49": {
-      "topic": "Criterion Collection June 2026 New Releases",
-      "item_ids": [
-        "106d7115de9c"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "61e699587032dfbb": {
-      "topic": "Fox Upfront Ad Sales Sports Programming Strategy",
-      "item_ids": [
-        "d4660a752425",
-        "b1ccd2db0c87"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9b86bb8f59d31106": {
-      "topic": "Sleep Band Reunion Tour Comic Book New Song",
-      "item_ids": [
-        "69fcf4d42087"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0f6bafb4a1793734": {
-      "topic": "Craig Finn The Man I've Always Been Tour",
-      "item_ids": [
-        "abfe29c55271"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c93af47188dd1957": {
-      "topic": "NYC Music Entertainment Industry Job Training Academy",
-      "item_ids": [
-        "b583b6c6de71"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b2e20af58d217cd8": {
-      "topic": "Best Latin Summer Number 1 Songs Ranked",
-      "item_ids": [
-        "2266e2f213db"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8f8936916d604a3d": {
-      "topic": "MSG Entertainment Data Breach 26 Million Records",
-      "item_ids": [
-        "3e1a0221707e"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5a5b687253a34554": {
-      "topic": "50 Best R&B Groups All Time Ranking",
-      "item_ids": [
-        "b3a783c683ef"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e9f178cffe813106": {
-      "topic": "Mariah Carey Proud Family Reboot Guest Appearance",
-      "item_ids": [
-        "1b32f5737a22"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4e880095e71ffd92": {
-      "topic": "Bad Bunny International Touring Records 2026",
-      "item_ids": [
-        "58aa7af90ed1",
-        "f865bda133df"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "add5a4674338573d": {
-      "topic": "Obama Presidential Center Opening Ceremony Music Performances",
-      "item_ids": [
-        "550c5077e666",
-        "ee3edbaef1ac",
-        "7a373107290d",
-        "dc8be5e317f1",
-        "5c8add4e6445"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-18T21:37:08.692862+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "550c5077e666",
-        "ee3edbaef1ac",
-        "7a373107290d",
-        "dc8be5e317f1"
-      ]
-    },
-    "ff5d4e2a11ecb7a0": {
-      "topic": "Drone Plot UFC White House Event Security Incident",
-      "item_ids": [
-        "974bcd30f706"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "369d3fe62b821464": {
-      "topic": "Penske Media Acquires Vox Media Eater The Verge",
-      "item_ids": [
-        "f8f9cde9b0ca"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2a5294c4ff02c824": {
-      "topic": "The Traitors New Blood NBC September Premiere",
-      "item_ids": [
-        "93bd74d91c1e"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "69f6ba3f83b03b92": {
-      "topic": "KPop Demon Hunters Netflix 52 Week Top 10",
-      "item_ids": [
-        "d61c8ea823b0"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2593e87f618737d2": {
-      "topic": "Black Bear Wicker Fall Release Olivia Colman Alexander Skarsg\u00e5rd",
-      "item_ids": [
-        "71433e7a5621"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0d4cac7b696af375": {
-      "topic": "Moana Disney Live-Action $85M Box Office Opening",
-      "item_ids": [
-        "455dd1742bcf"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "57abfecb67dd68e6": {
-      "topic": "Simons Says Netflix Competition Series",
-      "item_ids": [
-        "e323a1edc540"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "079ede76b344c142": {
-      "topic": "Amazon Workers Data Center Investigation Retaliation Allegations",
-      "item_ids": [
-        "66eed0f78485"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "09f01bf243d5c0b9": {
-      "topic": "Slowtech Movement Smartphone Attention Crisis",
-      "item_ids": [
-        "f30a4712c067"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cc741c9e1eb0ad0b": {
-      "topic": "Texas Data Breach 3 Million Driver Licenses Passports",
-      "item_ids": [
-        "4dc1580b6ce7"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "769124c5e1eea54b": {
-      "topic": "Karamo Brown K\u0113 Wellness App AI Digital Clone",
-      "item_ids": [
-        "da34f2e814aa"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6bc764f79384b965": {
-      "topic": "Google Calendar Custom Event Colors Feature",
-      "item_ids": [
-        "4e369f35891d"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c7fac400c6b20c7c": {
-      "topic": "Vance Iran Peace Deal U.S. Negotiations Defense",
-      "item_ids": [
-        "24ca9de67bc8"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "23b2a840d235658e": {
-      "topic": "Hegseth NATO Defense Review Warning",
-      "item_ids": [
-        "95f82b92a719"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cd8130dfcfe89510": {
-      "topic": "Infinite Workweek Work Culture Labor Trends",
-      "item_ids": [
-        "d4d146a8059b"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "32ba3ea6f30481ad": {
-      "topic": "GeoComm Public Safety Location Intelligence Partnership",
-      "item_ids": [
-        "5ae0fd09c9e9"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "be9eb77f2f6b8922": {
-      "topic": "TOPDON ONE Plus Auto Repair Diagnostic Technology",
-      "item_ids": [
-        "573df814f83f"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e13ae273e9dcdf75": {
-      "topic": "Jalen Brunson NBA Finals MVP Fantasy Basketball Value",
-      "item_ids": [
-        "6b6d9acb3734"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "09b31f9265929189": {
-      "topic": "Trump Knicks White House Visit NBA Championship",
-      "item_ids": [
-        "c6b5470bf236"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "776b88c519b9ac5e": {
-      "topic": "NYC Knicks Championship Parade Updates",
-      "item_ids": [
-        "aeed7c57ab97",
-        "da13414bc887",
-        "ace857bd2906"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-19T14:55:37.022334+00:00",
-      "picks_file": "picks/picks-2026-06-19-1456.md",
-      "why_text": "The Knicks' first championship in decades isn't just a sports story \u2014 it's a full-blown New York cultural reset, pulling in everyone from Mitchell Robinson signaling his stance on a White House visit to Giants QB Jaxson Dart's girlfriend claiming the city through the team's title run. The parade is becoming a Rorschach test for what New York means right now: political, generational, and deeply personal. When a city this starved for a winner finally gets one, the celebration reveals exactly who belongs to it and who's trying to.",
-      "last_escalated_item_ids": [
-        "aeed7c57ab97",
-        "da13414bc887",
-        "ace857bd2906"
-      ]
-    },
-    "308c67abe4daa070": {
-      "topic": "Ben Stiller Knicks Championship Documentary",
-      "item_ids": [
-        "edbd36eaccad"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "68897b942c3ea820": {
-      "topic": "McDonald's 30-Year Menu Item Comeback 35-Foot Promotion",
-      "item_ids": [
-        "6fde5c4a8b9b"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "accaa0f432ff8940": {
-      "topic": "Mortgage Rate Decline Iran Peace Deal Impact",
-      "item_ids": [
-        "fd9768653d09",
-        "3b02dde94514"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e81d8a4f8ab6d981": {
-      "topic": "Lockheed Martin Stock Decline",
-      "item_ids": [
-        "a9a3fe105397"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "54fa0980a6528ddb": {
-      "topic": "Earth Wind & Fire Business Deal Dispute",
-      "item_ids": [
-        "6b9e4a66c43f"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "45b880c2406efbd6": {
-      "topic": "BMW 2027 X5 Multi-Fuel Options Gas Diesel Hybrid Electric Hydrogen",
-      "item_ids": [
-        "9411db1cbb49"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "787fc41c28c30ec8": {
-      "topic": "BMW Electric M3 Racing Concept Car Preview",
-      "item_ids": [
-        "2e1d3685df85"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7a0af1acfd5bcf8f": {
-      "topic": "Sporty SUVs Similar to BMW X5 Alternatives Guide",
-      "item_ids": [
-        "913189cb3736"
-      ],
-      "created_at": "2026-06-18T17:26:49.791087+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "0bf7a4459b9015bc": {
       "topic": "Hiroshi Fujiwara Fragment Mini Nike Air Force 1 Kids Release",
       "item_ids": [
@@ -3355,5 +2864,5 @@
       "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-19T17:17:45.866061+00:00"
+  "last_checked": "2026-06-19T19:12:55.939940+00:00"
 }
