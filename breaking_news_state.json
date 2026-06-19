@@ -1,24 +1,5 @@
 {
   "known_ids": [
-    "23a3507f8168",
-    "49054dad5b33",
-    "66e6d98dad90",
-    "21b19d6e1d97",
-    "572c8220b4bd",
-    "9411db1cbb49",
-    "2e1d3685df85",
-    "913189cb3736",
-    "382f6fb589b2",
-    "2150d7ce7a35",
-    "c8ec65385b60",
-    "a485a955cc76",
-    "266f4618bddb",
-    "2fe8567272dd",
-    "2ab3da087906",
-    "517fc6547dd7",
-    "fdb3f2197944",
-    "94ef5a7a1142",
-    "eaf9200413d5",
     "2c28c4cb4def",
     "9ff874726ed3",
     "8be160af69f3",
@@ -499,7 +480,26 @@
     "d88e6887d6c4",
     "0a735b90186b",
     "a8580db8dc0a",
-    "3c2fdde7f7c7"
+    "3c2fdde7f7c7",
+    "e866c4b700cc",
+    "60482de423ad",
+    "81f76d2beb4d",
+    "43c257bd287b",
+    "5aa59abb7ab2",
+    "dc56fed26d54",
+    "d92d65b4bb78",
+    "810ee2c1dbec",
+    "61767406f6af",
+    "bd74baf315a6",
+    "0f4e1938ff78",
+    "284b5c33bda9",
+    "5c07b1119560",
+    "5f2085a7069e",
+    "66f1e9ea80f0",
+    "23387ace86a9",
+    "b15c4e04bc95",
+    "63758885f38e",
+    "0dced24ded15"
   ],
   "failed_ids": {
     "3f37f4cb4892": "2026-06-19T20:48:43.580482+00:00",
@@ -526,7 +526,20 @@
     "f8d7d9fc3fd7": "2026-06-19T21:54:51.550164+00:00",
     "edc107d3818b": "2026-06-19T21:54:51.550164+00:00",
     "d0668bc0ed82": "2026-06-19T21:54:51.550164+00:00",
-    "09cffb71ce94": "2026-06-19T21:54:51.550164+00:00"
+    "09cffb71ce94": "2026-06-19T21:54:51.550164+00:00",
+    "d0d9430b3e14": "2026-06-19T22:52:29.993907+00:00",
+    "e53585c86682": "2026-06-19T22:52:29.993907+00:00",
+    "db7186af09ac": "2026-06-19T22:52:29.993907+00:00",
+    "4188d81a5a3f": "2026-06-19T22:52:29.993907+00:00",
+    "614ac193510f": "2026-06-19T22:52:29.993907+00:00",
+    "43382fa320ab": "2026-06-19T22:52:29.993907+00:00",
+    "9ad039fa2835": "2026-06-19T22:52:29.993907+00:00",
+    "8cd5a8d7f6e9": "2026-06-19T22:52:29.993907+00:00",
+    "2de8efccbcea": "2026-06-19T22:52:29.993907+00:00",
+    "f5bc1e4606a7": "2026-06-19T22:52:29.993907+00:00",
+    "35fcbd9dbe6d": "2026-06-19T22:52:29.993907+00:00",
+    "0cd73644ddc3": "2026-06-19T22:52:29.993907+00:00",
+    "5cb4da789c48": "2026-06-19T22:52:29.993907+00:00"
   },
   "live_clusters": {
     "732869c502319fca": {
@@ -587,11 +600,12 @@
         "de0e3a0e0038",
         "7578532b23a2",
         "46b316cdd48f",
-        "b555b46a7452"
+        "b555b46a7452",
+        "60482de423ad"
       ],
       "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 9,
-      "last_escalated_at": "2026-06-19T07:31:42.230069+00:00",
+      "last_escalated_size": 12,
+      "last_escalated_at": "2026-06-19T22:52:29.993907+00:00",
       "picks_file": "picks/picks-2026-06-19-0732.md",
       "last_escalated_item_ids": [
         "8ee92a526fe1",
@@ -602,9 +616,12 @@
         "37cba14051fd",
         "16ac3cc5eca0",
         "de0e3a0e0038",
-        "7578532b23a2"
+        "7578532b23a2",
+        "46b316cdd48f",
+        "b555b46a7452",
+        "60482de423ad"
       ],
-      "why_text": "Tay Keith was one of the most distinctive sonic architects of late 2010s hip-hop \u2014 his thunderous, sample-flipped Memphis sound powered 'Sicko Mode,' 'Nonstop,' and a run of hits that defined an era of mainstream rap. Losing him at 29 is a gut punch to a generation of artists he helped build, from Travis Scott to Drake to Beyonc\u00e9, and a reminder of how much of that sound was anchored by one person. Memphis just lost one of its most important cultural exports since Three 6 Mafia."
+      "why_text": "Tay Keith was one of the most distinctive sonic architects of late 2010s hip-hop \u2014 his thunderous, sample-flipped Memphis sound powered 'Sicko Mode,' 'Nonstop,' and a run of hits that defined an era of mainstream rap. Losing him at 29 is a gut punch to a generation of artists he helped build, from Travis Scott to Drake to Beyonc\u00e9, and a reminder of how much of that sound was anchored by one person. Memphis just lost one of its most important cultural exports since Three 6 Mafia.\n**Update 5:52 PM CT:** Tay Keith's family has released an official statement affirming that 'his legacy will live on,' while the music world continues to pour out tributes \u2014 including Sexyy Red, who declared the two 'da best duo,' though fans were quick to note the pair had an unresolved lawsuit hanging over their relationship at the time of his death."
     },
     "ca3c0c018d6c347f": {
       "topic": "Jim Carrey Grinch Sequel Talks",
@@ -1125,7 +1142,8 @@
     "7cdc5110741b2c09": {
       "topic": "Alex Karaban NBA Longevity Path",
       "item_ids": [
-        "0089482a7d34"
+        "0089482a7d34",
+        "0f4e1938ff78"
       ],
       "created_at": "2026-06-19T11:52:41.973377+00:00",
       "last_escalated_size": 0,
@@ -1468,7 +1486,8 @@
     "2475ac86fe23423e": {
       "topic": "Toy Story 5 AI Workplace Obsolescence Fears",
       "item_ids": [
-        "07718938fac6"
+        "07718938fac6",
+        "5aa59abb7ab2"
       ],
       "created_at": "2026-06-19T14:56:22.134915+00:00",
       "last_escalated_size": 0,
@@ -2528,7 +2547,106 @@
       "created_at": "2026-06-19T21:55:21.409457+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "0649ffced587367e": {
+      "topic": "Jordan Luka 5 Laser Fuchsia Release",
+      "item_ids": [
+        "e866c4b700cc"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fe03545713511641": {
+      "topic": "J.R. Smith Retirement Financial Reflection",
+      "item_ids": [
+        "81f76d2beb4d"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "440888ba7f4e50a2": {
+      "topic": "Zlatan Ibrahimovic FOX Sports Commentary Alexi Lalas",
+      "item_ids": [
+        "43c257bd287b"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3b3f719ecc8e9cc9": {
+      "topic": "Honey Lauren Intersex Film Pride Month Screening",
+      "item_ids": [
+        "dc56fed26d54"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c631de3f7f9b951e": {
+      "topic": "The Wedding Dress Netflix The Life Ahead Edoardo Ponti",
+      "item_ids": [
+        "d92d65b4bb78"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ae705c4881e43b37": {
+      "topic": "Rosie O'Donnell The View Guest Host Possibility",
+      "item_ids": [
+        "810ee2c1dbec"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "63db1b4e1c8f1bf2": {
+      "topic": "Ariana Grande Eternal Sunshine Tour LA Concert Review",
+      "item_ids": [
+        "61767406f6af"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d3aa3e4341a22f4d": {
+      "topic": "Yaxel Lendeborg NBA Draft Chipotle Bowl",
+      "item_ids": [
+        "284b5c33bda9"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7952fa1fa997a01c": {
+      "topic": "2026 NBA Draft Hawks Mock Draft",
+      "item_ids": [
+        "5c07b1119560"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0f55c86cbbff87d6": {
+      "topic": "Dylan Harper Spurs NBA Finals Response",
+      "item_ids": [
+        "5f2085a7069e"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "29b9ed7d52169317": {
+      "topic": "2026 NBA Draft Jaden Bradley Scouting Report",
+      "item_ids": [
+        "66f1e9ea80f0"
+      ],
+      "created_at": "2026-06-19T22:52:55.694365+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-19T21:55:36.563832+00:00"
+  "last_checked": "2026-06-19T22:52:58.857167+00:00"
 }
