@@ -1,20 +1,5 @@
 {
   "known_ids": [
-    "2c28c4cb4def",
-    "9ff874726ed3",
-    "8be160af69f3",
-    "062f0ea312f8",
-    "28d70a67e238",
-    "913752f14d72",
-    "9d50e3894794",
-    "0c87264454af",
-    "0600a5395cda",
-    "7fd223a9953a",
-    "c44a9b761174",
-    "759d60899fca",
-    "fdc6b696c3d1",
-    "ee3edbaef1ac",
-    "e6621dacb133",
     "1fd155d1d10f",
     "9d5f1e604cb3",
     "545a412f8712",
@@ -499,7 +484,22 @@
     "23387ace86a9",
     "b15c4e04bc95",
     "63758885f38e",
-    "0dced24ded15"
+    "0dced24ded15",
+    "8d313b834cfa",
+    "c5987068d619",
+    "bb0e27bf2c99",
+    "a2f92605834d",
+    "c7fff13fe7cf",
+    "6b7230f00dd4",
+    "28dd26bfd74b",
+    "4a054b5f670f",
+    "4d6c931600b3",
+    "5e9149e5648a",
+    "38f44a3ab608",
+    "35c04a151f83",
+    "97e5223841f8",
+    "d2dd25db0e8c",
+    "fec25d71cbd1"
   ],
   "failed_ids": {
     "3f37f4cb4892": "2026-06-19T20:48:43.580482+00:00",
@@ -539,316 +539,17 @@
     "f5bc1e4606a7": "2026-06-19T22:52:29.993907+00:00",
     "35fcbd9dbe6d": "2026-06-19T22:52:29.993907+00:00",
     "0cd73644ddc3": "2026-06-19T22:52:29.993907+00:00",
-    "5cb4da789c48": "2026-06-19T22:52:29.993907+00:00"
+    "5cb4da789c48": "2026-06-19T22:52:29.993907+00:00",
+    "e13abda44ac3": "2026-06-20T00:05:45.257528+00:00",
+    "5bee6e12bbe3": "2026-06-20T00:05:45.257528+00:00",
+    "ae74f33234c4": "2026-06-20T00:05:45.257528+00:00",
+    "1b01363c057c": "2026-06-20T00:05:45.257528+00:00",
+    "8b54befa253d": "2026-06-20T00:05:45.257528+00:00",
+    "4abd5d2ef704": "2026-06-20T00:05:45.257528+00:00",
+    "d9b1e3eb4bc7": "2026-06-20T00:05:45.257528+00:00",
+    "c540c912c542": "2026-06-20T00:05:45.257528+00:00"
   },
   "live_clusters": {
-    "732869c502319fca": {
-      "topic": "Awake NY DoorDash Summer Campaign Design",
-      "item_ids": [
-        "64c707eafee2"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5ba8b22c330fd03e": {
-      "topic": "Jalen Brunson Nike Air Force 1 Protro Fall 2026",
-      "item_ids": [
-        "8f1e17d503a6"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6546ce22f23f25ab": {
-      "topic": "adidas DON Issue #8 Cavs Colorway Release",
-      "item_ids": [
-        "24c94c4339cb"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ce4b5590cc53b50f": {
-      "topic": "Nike Air Force 1 '01 vs '07 Comparison",
-      "item_ids": [
-        "c2966f7c1ab4"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "894f7a3224a036cd": {
-      "topic": "Will Smith Friend Homelessness Claim Legal Fees",
-      "item_ids": [
-        "0377eea2ca21"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6b06513ae1c9084f": {
-      "topic": "Tay Keith Producer Death",
-      "item_ids": [
-        "8ee92a526fe1",
-        "69e81f50ceb9",
-        "e7eca4d83c42",
-        "aeffb076e715",
-        "5b2bf81825cd",
-        "37cba14051fd",
-        "16ac3cc5eca0",
-        "de0e3a0e0038",
-        "7578532b23a2",
-        "46b316cdd48f",
-        "b555b46a7452",
-        "60482de423ad"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 12,
-      "last_escalated_at": "2026-06-19T22:52:29.993907+00:00",
-      "picks_file": "picks/picks-2026-06-19-0732.md",
-      "last_escalated_item_ids": [
-        "8ee92a526fe1",
-        "69e81f50ceb9",
-        "e7eca4d83c42",
-        "aeffb076e715",
-        "5b2bf81825cd",
-        "37cba14051fd",
-        "16ac3cc5eca0",
-        "de0e3a0e0038",
-        "7578532b23a2",
-        "46b316cdd48f",
-        "b555b46a7452",
-        "60482de423ad"
-      ],
-      "why_text": "Tay Keith was one of the most distinctive sonic architects of late 2010s hip-hop \u2014 his thunderous, sample-flipped Memphis sound powered 'Sicko Mode,' 'Nonstop,' and a run of hits that defined an era of mainstream rap. Losing him at 29 is a gut punch to a generation of artists he helped build, from Travis Scott to Drake to Beyonc\u00e9, and a reminder of how much of that sound was anchored by one person. Memphis just lost one of its most important cultural exports since Three 6 Mafia.\n**Update 5:52 PM CT:** Tay Keith's family has released an official statement affirming that 'his legacy will live on,' while the music world continues to pour out tributes \u2014 including Sexyy Red, who declared the two 'da best duo,' though fans were quick to note the pair had an unresolved lawsuit hanging over their relationship at the time of his death."
-    },
-    "ca3c0c018d6c347f": {
-      "topic": "Jim Carrey Grinch Sequel Talks",
-      "item_ids": [
-        "5dd64fcd61d5"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "afc58e3ef00e36d8": {
-      "topic": "Voicemails for Isabelle Film Review",
-      "item_ids": [
-        "e07740bd7beb",
-        "b1ea41ec251d",
-        "f3c88f7e9665"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-19T17:16:48.474426+00:00",
-      "picks_file": "picks/picks-2026-06-19-1717.md",
-      "why_text": "Jonathan Toews closes one of the most decorated careers in modern hockey \u2014 two Stanley Cups, Olympic gold, and a captaincy that defined the Chicago Blackhawks dynasty era. His retirement marks the symbolic end of that golden generation of Blackhawks alongside Kane, Sharp, and Keith who dominated the 2010s. For a sport still searching for its next transcendent ambassador, losing a player of Toews' character and clutch pedigree stings beyond just the box score.",
-      "last_escalated_item_ids": [
-        "e07740bd7beb",
-        "b1ea41ec251d",
-        "f3c88f7e9665"
-      ]
-    },
-    "a0cf6a071a092d36": {
-      "topic": "David Sheiner Character Actor Death",
-      "item_ids": [
-        "b52161750bb9"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "423b2ed7da6bb7de": {
-      "topic": "Star Wars Darth Vader Voice Actor Pay Controversy",
-      "item_ids": [
-        "46b102acd612"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "204debac885ac20f": {
-      "topic": "DGA TV Directors Job Protection Against Actors",
-      "item_ids": [
-        "da2e7b06fc25"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4f92da1564ede081": {
-      "topic": "Jimmie Allen Sexual Assault Damages Award",
-      "item_ids": [
-        "24a625691132"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "17bc90183d021d3e": {
-      "topic": "T-Mobile iPhone 17 Pro Back-to-School Promotion",
-      "item_ids": [
-        "2d6206fa2bd9"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9feebba2006a9656": {
-      "topic": "Tomorrow and Tomorrow and Tomorrow Film Adaptation",
-      "item_ids": [
-        "07a4630dab3b"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "45e82c0101ab3c1c": {
-      "topic": "Kyle Cooke Summer House Status Clarification",
-      "item_ids": [
-        "187034765b48"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "677ca3bfff7038b6": {
-      "topic": "Joseph Gordon-Levitt Sophia Bush Peter Thiel Dialog Club Response",
-      "item_ids": [
-        "0c12276efebe"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "991515920de41501": {
-      "topic": "Peter Thiel Dialog Club Member Ranking System",
-      "item_ids": [
-        "ffd482a186da"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c17e518e287f089a": {
-      "topic": "FDA Moderna mRNA Flu Vaccine Approval",
-      "item_ids": [
-        "4f4837456e89",
-        "6a3dcc0aff7b"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2d00a48ad5bb2767": {
-      "topic": "Kansas City Bus AI Facial Recognition Deployment",
-      "item_ids": [
-        "e9fda1ab454f"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7abc2a18547f0d12": {
-      "topic": "Coach Brain Dead Collaboration",
-      "item_ids": [
-        "b7bbbacded7e"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c0edbf0f6dc1a9df": {
-      "topic": "Lakers LeBron James Austin Reaves Contract Negotiations",
-      "item_ids": [
-        "099910c99071"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4eb865dbfb4b0247": {
-      "topic": "Patrick Ewing Career Reflection Knicks 2026 Title",
-      "item_ids": [
-        "5ad0b21a31b6"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bd232224f6f26af0": {
-      "topic": "Stephen A Smith Knicks Championship Repeat Analysis",
-      "item_ids": [
-        "e5e233b0aa9a"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7ba03c4fb85e5c92": {
-      "topic": "Dallas Mavericks 2026 NBA Draft Activity",
-      "item_ids": [
-        "c39f1da8ce1c"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c2121d671eaebfac": {
-      "topic": "L.A. Business Tax Fraud Unit TV Comedian Arrest",
-      "item_ids": [
-        "df8a9f74c343"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b9a64950b95ea974": {
-      "topic": "Online Car Sales Scam Business Address Fraud",
-      "item_ids": [
-        "26dfe4b98de8"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0ee13376b972eec4": {
-      "topic": "IRS Financial Fraud Warning Older Adults",
-      "item_ids": [
-        "5ede97c9ceb8"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dd48fd766f045a0e": {
-      "topic": "State Farm AI Sales Agent Plan Employee Backlash",
-      "item_ids": [
-        "32dd31a5002d"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6b96b4c739c18de5": {
-      "topic": "BMW China EV Production Shift Neue Klasse",
-      "item_ids": [
-        "cbe3fda1ba26"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6707838c06690d1f": {
-      "topic": "BMW Twin-Turbo M3 Pricing Strategy",
-      "item_ids": [
-        "57bc96b1c60b"
-      ],
-      "created_at": "2026-06-18T23:26:34.169240+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "e14270781b2c0557": {
       "topic": "Bunnie Xo Jelly Roll Divorce Baby Announcement",
       "item_ids": [
@@ -1234,7 +935,8 @@
     "5103c457fe388010": {
       "topic": "Canada FIFA World Cup Victory 2026",
       "item_ids": [
-        "bde3153ab5be"
+        "bde3153ab5be",
+        "fec25d71cbd1"
       ],
       "created_at": "2026-06-19T14:56:22.134915+00:00",
       "last_escalated_size": 0,
@@ -1487,11 +1189,19 @@
       "topic": "Toy Story 5 AI Workplace Obsolescence Fears",
       "item_ids": [
         "07718938fac6",
-        "5aa59abb7ab2"
+        "5aa59abb7ab2",
+        "28dd26bfd74b"
       ],
       "created_at": "2026-06-19T14:56:22.134915+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-20T00:05:45.257528+00:00",
+      "picks_file": "picks/picks-2026-06-20-0006.md",
+      "why_text": "Pixar's fifth installment is tracking for a $160M+ opening \u2014 the best in franchise history \u2014 while centering its plot on AI-driven workplace obsolescence, making it the rare blockbuster that weaponizes its audience's actual anxieties for emotional leverage. The casting alone (Conan O'Brien, Bad Bunny) signals Pixar is swinging for cultural saturation across demographics. That a movie about toys being replaced by technology is poised to be one of 2025's biggest hits says something pointed about the moment we're in.",
+      "last_escalated_item_ids": [
+        "07718938fac6",
+        "5aa59abb7ab2",
+        "28dd26bfd74b"
+      ]
     },
     "b58009b9fa4bcb1a": {
       "topic": "Q Station New Mexico Oil Patch Startup Competition",
@@ -2308,7 +2018,8 @@
     "b963b7abf2ff9a2d": {
       "topic": "James Burrows Cheers Co-Creator Death",
       "item_ids": [
-        "f857b2118f3e"
+        "f857b2118f3e",
+        "c7fff13fe7cf"
       ],
       "created_at": "2026-06-19T20:49:14.376944+00:00",
       "last_escalated_size": 0,
@@ -2646,7 +2357,79 @@
       "created_at": "2026-06-19T22:52:55.694365+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "a11fe60c84f02a85": {
+      "topic": "adidas D.O.N. Issue #8 Yin And Yang Sneaker Release",
+      "item_ids": [
+        "8d313b834cfa"
+      ],
+      "created_at": "2026-06-20T00:06:09.951955+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "42b16736b6c25924": {
+      "topic": "Jalen Brunson Elmo Feud Ends Knicks Championship Parade",
+      "item_ids": [
+        "c5987068d619"
+      ],
+      "created_at": "2026-06-20T00:06:09.951955+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a353dc83bcad77d3": {
+      "topic": "Dutton Ranch Episode 7 Character Deaths Bar Brawl",
+      "item_ids": [
+        "bb0e27bf2c99"
+      ],
+      "created_at": "2026-06-20T00:06:09.951955+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "90f89866783c5e64": {
+      "topic": "Tay Keith Producer Death Family Tribute",
+      "item_ids": [
+        "a2f92605834d"
+      ],
+      "created_at": "2026-06-20T00:06:09.951955+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "51f5cb6f20171c22": {
+      "topic": "Supergirl Film First Reactions Reviews Milly Alcock Jason Momoa",
+      "item_ids": [
+        "6b7230f00dd4"
+      ],
+      "created_at": "2026-06-20T00:06:09.951955+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f711c78a6214c5bf": {
+      "topic": "UW AI Minor Program Universities Workforce Demand",
+      "item_ids": [
+        "4a054b5f670f"
+      ],
+      "created_at": "2026-06-20T00:06:09.951955+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e4e12dd4af41d03f": {
+      "topic": "Rui Hachimura Lakers NBA Free Agency Unknown",
+      "item_ids": [
+        "4d6c931600b3"
+      ],
+      "created_at": "2026-06-20T00:06:09.951955+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "caa427552b2f232b": {
+      "topic": "NBA New Coaches Spurs Influence Impact",
+      "item_ids": [
+        "5e9149e5648a"
+      ],
+      "created_at": "2026-06-20T00:06:09.951955+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-19T22:52:58.857167+00:00"
+  "last_checked": "2026-06-20T00:06:17.188960+00:00"
 }
