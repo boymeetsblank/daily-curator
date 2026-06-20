@@ -1,25 +1,5 @@
 {
   "known_ids": [
-    "bfc9e181f93f",
-    "5a65e87fe1c4",
-    "d78c26a4fcdf",
-    "30cebe2f4c78",
-    "d24d01d7d56e",
-    "13d7a2d27bcd",
-    "f2b8bcd91d5f",
-    "bde3153ab5be",
-    "9582fbbb0b01",
-    "c9fd3c217a2d",
-    "32780bce810e",
-    "0bf8500b7ab1",
-    "95d5a1bc2b80",
-    "1cb6a764d8d8",
-    "77fbaf40b31e",
-    "1b9aaf1b92ce",
-    "bced01c05269",
-    "999b876390ae",
-    "f805bfc34ac0",
-    "aebac80fc718",
     "828a09c0e43c",
     "2728679efa85",
     "1aa3145fe7e0",
@@ -499,7 +479,27 @@
     "aba8f73c90d1",
     "8b16c604f882",
     "fb5c33a8a64e",
-    "627c2b77585d"
+    "627c2b77585d",
+    "a50c810bfbd5",
+    "1ad976f0b3b1",
+    "43cf8789a627",
+    "c08295689b91",
+    "54470cc0fe3e",
+    "eab5e0bf8a3c",
+    "7c51067322cb",
+    "0be45e7a58d2",
+    "f4766c53c7cd",
+    "696af55ea1ee",
+    "6a87a9cdf4cb",
+    "6f1ab975c60c",
+    "eee1cd222f21",
+    "83c809dd1b8c",
+    "cacee678202f",
+    "deabc344ed2b",
+    "17bcbcc3d6b4",
+    "ce60bd3308c8",
+    "13acf232f839",
+    "0bfc9e83eca7"
   ],
   "failed_ids": {
     "ad3c891acce1": "2026-06-20T19:00:41.548574+00:00",
@@ -548,182 +548,20 @@
     "cdac2b3b03bc": "2026-06-20T21:46:10.890081+00:00",
     "9e274fcc2fca": "2026-06-20T21:46:10.890081+00:00",
     "30ef073d4806": "2026-06-20T21:46:10.890081+00:00",
-    "3f2a2cb3125f": "2026-06-20T21:46:10.890081+00:00"
+    "3f2a2cb3125f": "2026-06-20T21:46:10.890081+00:00",
+    "41062eb95ebe": "2026-06-20T22:52:25.661793+00:00",
+    "4e6ba7dbd31d": "2026-06-20T22:52:25.661793+00:00",
+    "bfedf9a7f648": "2026-06-20T22:52:25.661793+00:00",
+    "b7c7e2ccfc11": "2026-06-20T22:52:25.661793+00:00",
+    "a84c14b71012": "2026-06-20T22:52:25.661793+00:00",
+    "694f31f557be": "2026-06-20T22:52:25.661793+00:00",
+    "6a22c16d4f62": "2026-06-20T22:52:25.661793+00:00",
+    "4545888e6d8f": "2026-06-20T22:52:25.661793+00:00",
+    "56e15e5b7703": "2026-06-20T22:52:25.661793+00:00",
+    "10ba62099348": "2026-06-20T22:52:25.661793+00:00",
+    "57411c9a6e86": "2026-06-20T22:52:25.661793+00:00"
   },
   "live_clusters": {
-    "065757e667a43c5f": {
-      "topic": "Vans Charmed Life Cardigan Slip-Ons Release",
-      "item_ids": [
-        "2808a657a00d"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e167977f81e032cf": {
-      "topic": "YG Drakeo the Ruler Murder Involvement Denial",
-      "item_ids": [
-        "e417deda1186"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0f01af80380c72bc": {
-      "topic": "Cam Newton Men Provide Protect Commentary",
-      "item_ids": [
-        "94887e5b378a",
-        "473273147124"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c2871ba8ca0b9ee5": {
-      "topic": "British Man Arrested Toddler Crocodile Enclosure Zoo",
-      "item_ids": [
-        "b3ad1ef634e6"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f6bc8b725244fa28": {
-      "topic": "Leviticus Film Conversion Therapy Horror Preparation",
-      "item_ids": [
-        "7510130258d6"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e0b7f1de9d3b727a": {
-      "topic": "Go Robotaxis IPO Japan Acquisitions Strategy",
-      "item_ids": [
-        "a93cb6472fd1"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fa6acabd78288342": {
-      "topic": "Aura E-ink Photo Frame Digital Design",
-      "item_ids": [
-        "2c2b2e8f147a"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "77ea413e7d568ea1": {
-      "topic": "Loro Piana Wool Climbing Pants Fashion",
-      "item_ids": [
-        "363e3f9d8a74"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c0489d644e306ad5": {
-      "topic": "D'Angelo Russell Wizards Contract Option Exercise",
-      "item_ids": [
-        "6b7c26a5f7ba"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "482e693ec1ac37f7": {
-      "topic": "Michael Cooper Lakers Offseason LeBron Future Analysis",
-      "item_ids": [
-        "e49c37533e87"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9edac85bd6440c7e": {
-      "topic": "Spurs Committed De'Aaron Fox NBA Finals Struggles",
-      "item_ids": [
-        "c83ec24439af",
-        "87a89d94d0d0",
-        "b6f2d3a7ad06",
-        "735ccbe8aa61"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-20T16:04:22.247618+00:00",
-      "picks_file": "picks/picks-2026-06-20-1605.md",
-      "why_text": "De'Aaron Fox's NBA Finals performance against the Knicks was bad enough that New York's own players were apparently talking about exploiting it before the series even started \u2014 Josh Hart reportedly flagged the Spurs' overdependence on Fox as a structural weakness the Knicks could target. That's a damning indictment of San Antonio's roster construction: they traded for Fox at enormous cost this season, bet their Finals run on him, and watched him go quiet on the biggest stage. The uncomfortable reality CBS Sports is already raising is whether the Spurs are now too committed \u2014 financially and culturally \u2014 to course correct around a player who just proved he can disappear when it matters most.",
-      "last_escalated_item_ids": [
-        "c83ec24439af",
-        "87a89d94d0d0",
-        "b6f2d3a7ad06"
-      ]
-    },
-    "b9df1e7f78ec6930": {
-      "topic": "Heat Trade Package Giannis Antetokounmpo Bucks",
-      "item_ids": [
-        "c71214fb9868",
-        "8052773c3c16",
-        "4f629a749291"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-20T21:46:10.890081+00:00",
-      "picks_file": "picks/picks-2026-06-20-2146.md",
-      "why_text": "The Giannis Antetokounmpo trade saga is reaching a critical inflection point: Miami is actively trying to construct a winning offer, but Milwaukee's demands are reportedly so steep that rival executives are calling them unrealistic. This matters because Giannis is arguably the best player on the trade market in years, and the gap between what the Bucks want and what any team can realistically deliver is shaping the entire NBA offseason. If Milwaukee won't budge, they risk holding a disgruntled franchise cornerstone into a season where the window may already be closed.",
-      "last_escalated_item_ids": [
-        "c71214fb9868",
-        "8052773c3c16",
-        "4f629a749291"
-      ]
-    },
-    "5c3ea83a41d54b9d": {
-      "topic": "AI Replacing Sustainability Business Trend",
-      "item_ids": [
-        "1255d3d51e43"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2c0ce5a6f0f06e71": {
-      "topic": "BMW 2027 X1 Facelift Neue Klasse Design",
-      "item_ids": [
-        "65e44ba95049"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "40b13f2501880c7b": {
-      "topic": "BMW X5 vs SUV Comparison Space Value",
-      "item_ids": [
-        "1df02a5a5cad"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0ddd308f695663bc": {
-      "topic": "BMW China Green-Electricity Charging 2027 Target",
-      "item_ids": [
-        "5431249c3dee"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3031a2eb42c2024a": {
-      "topic": "2026 BMW M440i Gran Coupe Modern Motoring",
-      "item_ids": [
-        "5ee504ac14cd"
-      ],
-      "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "0649ffced587367e": {
       "topic": "Jordan Luka 5 Laser Fuchsia Release",
       "item_ids": [
@@ -781,7 +619,8 @@
     "63db1b4e1c8f1bf2": {
       "topic": "Ariana Grande Eternal Sunshine Tour LA Concert Review",
       "item_ids": [
-        "61767406f6af"
+        "61767406f6af",
+        "43cf8789a627"
       ],
       "created_at": "2026-06-19T22:52:55.694365+00:00",
       "last_escalated_size": 0,
@@ -840,16 +679,21 @@
         "c5987068d619",
         "9fccfaec9cf5",
         "11eae2dc65be",
-        "71048af5a28b"
+        "71048af5a28b",
+        "0be45e7a58d2",
+        "f4766c53c7cd"
       ],
       "created_at": "2026-06-20T00:06:09.951955+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-20T16:04:22.247618+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-20T22:52:25.661793+00:00",
       "picks_file": "SUPPRESSED",
       "last_escalated_item_ids": [
         "c5987068d619",
         "9fccfaec9cf5",
-        "11eae2dc65be"
+        "11eae2dc65be",
+        "71048af5a28b",
+        "0be45e7a58d2",
+        "f4766c53c7cd"
       ]
     },
     "a353dc83bcad77d3": {
@@ -1985,7 +1829,115 @@
       "created_at": "2026-06-20T21:46:47.384203+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "0394960b3dfe2caa": {
+      "topic": "Nike Air Max Plus Smoke Grey Release",
+      "item_ids": [
+        "a50c810bfbd5"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f00a05f6466786e0": {
+      "topic": "Anne Hathaway Pregnancy Announcement",
+      "item_ids": [
+        "1ad976f0b3b1"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3aa7d9a599611976": {
+      "topic": "Rochelle Widdowson Paramount-WBD Merger Impact Concerns",
+      "item_ids": [
+        "c08295689b91"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e841348672dc1aaa": {
+      "topic": "Sam Levinson Euphoria OnlyFans Culture Depiction Defense",
+      "item_ids": [
+        "54470cc0fe3e"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "59354a04e9abdfd6": {
+      "topic": "Reese WNBA 1000 Rebounds Milestone",
+      "item_ids": [
+        "eab5e0bf8a3c"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1507ac71120e8fcd": {
+      "topic": "Collin Gillespie Suns Contract NBA Free Agency",
+      "item_ids": [
+        "7c51067322cb"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "41929f701f449420": {
+      "topic": "Knicks Fan Steals Trash Can NBA Finals Memorabilia",
+      "item_ids": [
+        "696af55ea1ee"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "58fc7648ece2df78": {
+      "topic": "Bennett Stirtz NBA Draft Prospect Profile",
+      "item_ids": [
+        "6a87a9cdf4cb"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5437a66dddb0eb3a": {
+      "topic": "Nayax President Share Sale Investor Impact",
+      "item_ids": [
+        "6f1ab975c60c"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c743309bc47efe83": {
+      "topic": "Ford AI Business $500 Million Opportunity",
+      "item_ids": [
+        "eee1cd222f21"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "68df0ec5738d950b": {
+      "topic": "Pfizer vs Eli Lilly Dividend Yield Comparison",
+      "item_ids": [
+        "83c809dd1b8c"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "60a446a2fd98ba89": {
+      "topic": "BMW M Concept Neue Klasse Hot Hatchback Fantasy Design",
+      "item_ids": [
+        "cacee678202f"
+      ],
+      "created_at": "2026-06-20T22:52:59.004160+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-20T21:47:01.260624+00:00"
+  "last_checked": "2026-06-20T22:52:59.025826+00:00"
 }
