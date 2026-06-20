@@ -1,6 +1,254 @@
 {
   "items": [
     {
+      "id": "64c299d58623",
+      "topic": "Transfer rumors, news: Man City ahead of Man Unite...",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://www.espn.com/soccer/story/_/id/49124293/transfer-rumors-news-manchester-city-ahead-manchester-united-elliot-anderson-race",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "2d94f035bccb1f93"
+    },
+    {
+      "id": "c7b7b64483a8",
+      "topic": "Transfer Big Board: Best players in each position ...",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://www.espn.com/soccer/story/_/id/48991120/transfer-big-board-best-players-position-move-summer",
+      "source_name": "ESPN",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "b248d38d49148ced"
+    },
+    {
+      "id": "977190f7106d",
+      "topic": "Siri AI Hands On: A Smart, Helpful Assistant",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://www.wired.com/story/siri-ai-hands-on-iphone/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "3bd22b1b67b93571"
+    },
+    {
+      "id": "1183498db3a9",
+      "topic": "Hackers Claim to Leak Stolen Madison Square Garden Data",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://www.wired.com/story/security-news-this-week-hackers-claim-to-leak-stolen-madison-square-garden-data/",
+      "source_name": "WIRED",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "fc308da2c9d21776"
+    },
+    {
+      "id": "e9ccfd4b4611",
+      "topic": "As the US and China surge ahead, is Europe sleepwalking into AI disaster? - The Guardian",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNR01YUUNDaXhKRlNQUXE2eHA4bGFsMlZWT1BVT0dGUXN0dG5ON0Jmb0I1X3BmdUNPLTE5X3U3dFgxNzI0SjJsZmxlYm4zOEw0R3lOUks2N29FUzlBZmUtVGdEQS1idkZCRTJSVUowX2FadDRpcjFad3J5bkVrUV9FY1BVVS14QWJ2bUtzQWhfX0dnSXJVNGc?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "139c120b756d8f7b"
+    },
+    {
+      "id": "c13a88fe1b94",
+      "topic": "Is Marvell Technology Going to $1 Trillion? - The Motley Fool",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUmlWMFA4Y1VGWHhNTEVSamprNjg2MHVpMzBjalVZWllNSndCNnVkc2hsMzNMYlhWVERzQ2ZuYm0wYnptUlhVQThwSGppRWtMNlhJWEc2ZzJRaXNCcDA1Y0ZsZ2l1aXpKX1dXcjVKR2tfSWRGbU9jbFhJSm9jcFdyZ1dEVWZtRlVyMnYzdw?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "ca367fbbbf9ad0ec"
+    },
+    {
+      "id": "fbc21cc0e986",
+      "topic": "Is Marvell Technology Going to $1 Trillion? - Yahoo Finance",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVEJ3S1ZpX0YzTnBGRnZmblR3YmREbHV1b0NzNFJkaGJmbXZPZVhlSWFlZmRHeUNTLWNxTFJGUHFOM3AwTktuOWpfU3ZSOUEyeUJTYlZ3aXpMdWVxVVhySk5nQ3lTemNoN0RRb3BiMVFsMGV0cWxqN0xSSDRSZFBTdUswbk5jRUM2YjZaSWs5dlh3U21KUHhIYjhUZ3FjZjdxaXc?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "6ad07aaa399918f7"
+    },
+    {
+      "id": "28bd4d6a7244",
+      "topic": "Uber, Wayve and Stellantis join forces to progress robotaxi technology - New Atlas",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VUC1TZTNiLVNSUmNTbE0wRDFHMXdUcnM0SWNTWDZtdHFzaWF5WWs3RmhIQmo5Nlh0RFl1Sy1aSU5OUVV1dXdxekxRWk1jWTVRRGstRUdUVmxjSm4waWdkcEtmdmJkQVR3d3NXaDQ1RldnanI1TXhSd1pRNkctOGc?oc=5",
+      "source_name": "Google News - Technology",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "8dbd08893f42868a"
+    },
+    {
+      "id": "e23552031d4b",
+      "topic": "My Top 75 2026 NBA Draft prospects, from Cameron Boozer to Tobe Awaka - The New York Times",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU2VMRVBnNkhYNFoxRU1nczlxOC1FZHc4M29CaTVZbDc2N054Y1owN1B3a2RfX0d0d3V3YkxBMlpld1VNdGtKbTNKdVlJNmE0R1lQbldNRTZZZkt2c2NQQVRsbHlRVGNWNWdidFE3WUNZbnlPelZ6c2lvVU9qVW1mSWF4c1F1eWhSczU5LVdtYUcyTWUwSWd2aG5qNWpGbTZld0pTNVp3QQ?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "97b8dcb165ce576c"
+    },
+    {
+      "id": "873bd484cbb3",
+      "topic": "Dwyane Wade’s legendary NBA title run, as remembered by the Heat 20 years later - The New York Times",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLXV2dkNmeldYT1haUXJWM29oNUIyTC1lZURPSlNucl8wZFUzQURvUUd5SDJpZHMwNGRNRkpkb2FvQmpOV1Jqbmx3eTlhSzR6X21idkZSVHBZeVlBOUplbExnTkRrWkxYbEdKTmRpVHZ4RnJ5TUtRanp6TVVzZ083ZlAzLTNxNDF6bmdTV25EbkMxQzVjZ3FLQ2hnV29EYVV1cVFDcExFOXJqZw?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "7290dfa9e2d20fcf"
+    },
+    {
+      "id": "53b3285894ad",
+      "topic": "Insider Announces Update On Wizards No. 1 Pick Decision - heavy.com",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSHM4VkVGUkQ4ejRiTFV5RmRteXFRdXIxX1NncjkxRW1wT2h1UFhGck5ycV9HUFdKVmgtOEh3T3F4aGFvQTZoOV9kbnZid1V1TjN5NE5fWHFpVmR3M1V0RGpuc200ZjV1VmVkUG1XRXh0QlVROWRiZHltaWNmWUZFS0YtbjE5b0h0QW9v?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "e44b2a24fa4fba8a"
+    },
+    {
+      "id": "6d3266883c75",
+      "topic": "5 recently announced video games I’m most excited about, including a sequel I’ve been waiting 13 long years for - Tom's Guide",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOYkFYNHB1cUQ5MkNSei1LU284SVMwb3dRT2cweDNxZXRnVDZSWjZzMzR6Z0NSZllGcXRsdnBmcUlJSE0wVUJzMXRrNjRLUHQxSjJvbS1tRjBJOEdpbFg3d1U3ZGF3OGlIbjlsa1hmdVAxX3ZxUVV1aUd0ZmtsWThIakFTNlZtZm5CQjUxeVJ0NHpKN1AxRWNrcUV4NURSQ3hVN2lQSjZXUXFEYzVqREVXaDJUdXp4NkI4RDhrRVNSTkhTc2dWNmRGQWc0Sm5FRGdnbWJYR3I4MmQ?oc=5",
+      "source_name": "Google News - Gaming",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "e3be95129f9b3903"
+    },
+    {
+      "id": "9266196a7fc4",
+      "topic": "Replika founder predicts 'crazy protests' over AI: 'People are really struggling to find jobs' - Business Insider",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNLUt2Qktqbk5JMEYyeXFidEVOaW9TeDU5RmMzRUZTMEV2X3oyZGJTZnJfTkJTNGpXOEVIOUFJcWFiRVNYYTZUdWRiM0VkZnk4QkRDNnhuVnJaTkI2YXU4TEhiSVBMWk9xTmtfQTZLamw3eUhHVk5oYTlYWXNHUUdHYXctd0pnTFA0QnZmck5aRDNRMEE?oc=5",
+      "source_name": "Google News - Business",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "18248ddd730dbc3d"
+    },
+    {
+      "id": "177355a74cff",
+      "topic": "A millennial reached financial independence by 25 using the 'fast version' of FIRE and focusing on cash flow - Business Insider",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObUxhX21rck83clhKODItYWhfR0loZWVTcFpYYTFnanhIWENyT1hQSzU3TkpqRFZ3S3lWTlNNNlVhbno0M05OdDRITnQ5VXdhNVJkWm5ZQ1pramVBd2JFa0hWUXA3RFZ3MEROSENOWVQzdGtfRXFPWF9HU0p6VjhNelZTajZIaEhvNFNXS1FwcHpoRDJQUWE2cjlVNU1icmwwdFVRcVNCXzRfZnhLMG4yYWphWjVZQ2s?oc=5",
+      "source_name": "Google News - Finance",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "26fb30ed2c1cc479"
+    },
+    {
+      "id": "860ef178dd5b",
+      "topic": "Andre Cronje Exits Sonic Board as S Token Slides 40% - Yahoo Finance",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMG1HRENwSjFsNG40MzVnajZyTDFJbHlzd3l6WHhUTHY5ai1zeG13WlpERlk3LVZCZ290SzYyRExaMGFNQnJST1N6NVdyeEttZ2tWS0c3NGpTeVhhVU1wZ2FDQUpTMmdOS2VER2NxckwzY1F2cHgtdHQ5Y29oNUs0S1RpTFUteTRVMmZxV2hjM1hma2dRY3NxdUdRVQ?oc=5",
+      "source_name": "Google News - Finance",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "2f844367de053cbf"
+    },
+    {
+      "id": "a178b11b922f",
+      "topic": "Where Millionaires Are Moving in 2026 and Why - Kiplinger",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1OSkljUi1OYy1wUllfbkhOQ0hrVkx1MU55cDBRZ3czTWdLRlVlYzZmWHhOVExPS2hYbUtrazBHb3BmUDE4VnVNODFEd3RCc1lJSzdudGs2VGJsZzlaLWw3dGtYTk9UUXpNdmM5SzBuWDBKRFNzdE9iRnhBcVQ?oc=5",
+      "source_name": "Google News - Finance",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "88adcc716ac2d971"
+    },
+    {
+      "id": "ff191a04b33b",
+      "topic": "One Investor’s Race to Get $80 Million Out of Private Credit - WSJ",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUVpuRGZBakhFMWRuakVTRUZLOC1kc3F5c2YwejdOdkJFeURMUXRBNFNKeXNxenNmREZNbXRqRHBuT0NRT3JnTE1EWDl2bXViMVlIcGxWNzhzbmdoN0lSY1lDbTV5U0N0WUc4aEhjSFdYMkpJTzFKWDQwdlNOTEMyNVNSMms1OW43YnRSOXo3WUhyb3ZMN1RqYWdWUkYxV3V1Y0E1dWMtZDc?oc=5",
+      "source_name": "Google News - Finance",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "9334164681a2cb14"
+    },
+    {
+      "id": "9ddf8b652f95",
+      "topic": "Alternatively Styled BMW Sedan Could Easily Become the All-New i3 Sedan From a Parallel Universe - autoevolution",
+      "traffic": "",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQkZGdWFSOTBZV25fSWs3azViRTROSXpvUnlPS0ZXdDV4ZFNQQ1I0VDhUMjZ2MlpsVDd5Wl9VVW9NZkNIM1VFZ1RMcDltSVlkQjlRLTFlbWhmWGlRSVN0bWYtT29GZ2hUQmg4R2gxREFTLThQRUZEVlI3a1M0UUROZjJNUkNybERrY1JXcVZib1hTLXp0UXV2UTU3eVFCb2xpZHlmcDEydzJMUE1HWGJRRExRRG1KbXVfZTB6SlN5TzFpQ241T1NEZG54Q1J6R1llMmNaek91ZC1KWHc?oc=5",
+      "source_name": "Google News - BMW",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "1f7bd39cf9608e9b"
+    },
+    {
+      "id": "390c547c391e",
+      "topic": "#OPLive",
+      "traffic": "##6 on X",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://x.com/search?q=%23OPLive&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "f8e34d36c71e",
+      "topic": "TADC",
+      "traffic": "##7 on X",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://x.com/search?q=TADC&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "2b0f4b42a164",
+      "topic": "Rick James",
+      "traffic": "##8 on X",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://x.com/search?q=Rick+James&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "970ca2f5aad2",
+      "topic": "Caine",
+      "traffic": "##9 on X",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://x.com/search?q=Caine&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
+      "id": "772427bd6bda",
+      "topic": "SummerSlam",
+      "traffic": "##10 on X",
+      "detected_at": "2026-06-20T10:39:50.735159+00:00",
+      "search_url": "https://x.com/search?q=SummerSlam&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 6
+    },
+    {
       "id": "2097a6965f84",
       "topic": "The Whitlams Announce Return to Rock Island Australian Tour",
       "traffic": "",
@@ -178,253 +426,7 @@
       "source_type": "feed",
       "haiku_score": 6,
       "cluster_id": "2722c1719a3e7f5f"
-    },
-    {
-      "id": "8a7ff639d64d",
-      "topic": "Timberwolves’ Derrick White Dream Gets New Trade Framework - heavy.com",
-      "traffic": "",
-      "detected_at": "2026-06-20T04:38:13.270488+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPS3JCRklRRUk2MEczSTdVUDVqeDFEdkZyT05jaTNlbHNVUTl4WWd4SnFjX3Z6N18zMktITVNwWE1SdFdubmF0a0Z4akUyeTZsVnZ5RjBVdnViX3VnRzNfMnhEbkZhc2otY3FNNUVEWFJYZUlLWUhhdm83OXotSWVBSl82eXJHdm1pUUR5dEY3d0JGdXI1bTRPNVFmbw?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "2722c1719a3e7f5f"
-    },
-    {
-      "id": "12dfca8c190b",
-      "topic": "New York Knicks Guard Jordan Clarkson Gets Congratulated by Manny Pacquiao - heavy.com",
-      "traffic": "",
-      "detected_at": "2026-06-20T04:38:13.270488+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVEwxZ3BpNnVoZUNPUEFxaVBWcU5fN2xNNm9WaTc1anJtQklCR0lBOHdhRFI1c2VtcGEyZnVEMHl4RXlTMVBFY3AzVGpaQWRScXZZVjdBX3pZY1BvUTZKTXZfRjBsREFZbTdpbGhnUm96V3hEX21EZUtvYmhoVE1xRnB0ZFpWam5lR2JSSWxvUVB4Q2hZ?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "8664b69acbcbd8e7"
-    },
-    {
-      "id": "88ceac60dd42",
-      "topic": "ChatGPT's New Internet Browser Can Run 90% of a One-Person Business (No Hiring Required) - entrepreneur.com",
-      "traffic": "",
-      "detected_at": "2026-06-20T04:38:13.270488+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOTQxZzhlMFI2bkhuVnByRlV6UlpVLURiY2l6YmJzQkh2RGlKVklaSTBaTE5Qay1KT1VibGttS0FXNEhaSVRsSGJzZFRfSmxsejU2SzUxbnUtMXFNb281Z1RuS2R3a3hEYkVDaldqS2pNenBJVGhpRmpUUU44NGNQR25KV05xd0ktU3ZUQVpOUUxVSmxyM1plN0RFVjR4czhHa0FlalFGU1dzMVZ6?oc=5",
-      "source_name": "Entrepreneur",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "6fd09c3cfe659455"
-    },
-    {
-      "id": "4a4e36dca4a3",
-      "topic": "Frive meals founder: ‘My business saved my life’ - Financial Times",
-      "traffic": "",
-      "detected_at": "2026-06-20T04:38:13.270488+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBwS0J5SEg0OEhLXzJSbm00anUwdnZ1MjRWUDRZR3lSNEltS040MTdXR1NDbmVpSXFzaE5aWmRldjFLU3U4aFJpWUM4NEpUTWF4cWhnTExkWUM1M21vRUZFM0RVX0hxQ3FwYmEtY21MTFo?oc=5",
-      "source_name": "Google News - Business",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "28eef6422bdaa4a3"
-    },
-    {
-      "id": "3225fd4eeb33",
-      "topic": "Using AI for financial advice? Proceed with caution - Financial Times",
-      "traffic": "",
-      "detected_at": "2026-06-20T04:38:13.270488+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5yVFFuNjlUaDBmbGdZbjJUN1d3SkdkS1VxWE5xajkteVFZWHlzb2xCQVdmdjhZblFBM1VWbHdmeUZOOWdMb1V3Y3hLbjhpVm5mODZMNXlzaDBqOFhoTlVqNml6ZTJuZGVIX085WWVpMXg?oc=5",
-      "source_name": "Google News - Finance",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "8268df4cf3a44374"
-    },
-    {
-      "id": "b4812398eab8",
-      "topic": "Weston McKennie",
-      "traffic": "##27 on X",
-      "detected_at": "2026-06-20T04:38:13.270488+00:00",
-      "search_url": "https://x.com/search?q=Weston+McKennie&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "d6c620e9ba7e",
-      "topic": "HE DID WHAT",
-      "traffic": "##28 on X",
-      "detected_at": "2026-06-20T04:38:13.270488+00:00",
-      "search_url": "https://x.com/search?q=HE+DID+WHAT&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "a99ef5ce2c70",
-      "topic": "Kelly Dodd",
-      "traffic": "##29 on X",
-      "detected_at": "2026-06-20T04:38:13.270488+00:00",
-      "search_url": "https://x.com/search?q=Kelly+Dodd&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "8d313b834cfa",
-      "topic": "The adidas D.O.N. Issue #8 Gets A Mismatched “Yin And Yang”",
-      "traffic": "",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://sneakernews.com/2026/06/19/adidas-don-issue-8-yin-yang-ki9284/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "a11fe60c84f02a85"
-    },
-    {
-      "id": "c5987068d619",
-      "topic": "Jalen Brunson Ends Elmo Feud With Kiss at New York Knicks Championship Parade",
-      "traffic": "",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://www.complex.com/sports/a/treyalston/jalen-brunson-elmo-feud-new-york-knicks-parade",
-      "source_name": "Complex",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "42b16736b6c25924"
-    },
-    {
-      "id": "bb0e27bf2c99",
-      "topic": "‘Dutton Ranch’ Episode 7: [SPOILER] Gets Murdered, [SPOILER] Might Die and Everyone Else Is Either Drunk or in a Bar Brawl",
-      "traffic": "",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://variety.com/2026/tv/recaps/dutton-ranch-episode-7-recap-beulah-kills-luke-rob-will-1236782420/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "a353dc83bcad77d3"
-    },
-    {
-      "id": "a2f92605834d",
-      "topic": "Tay Keith’s Family Pays Tribute to Late Producer: A ‘Cultural Force’ & ‘Source of Love, Strength, Laughter, Guidance’",
-      "traffic": "",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://www.billboard.com/music/rb-hip-hop/tay-keith-death-producer-family-statement-1236277062/",
-      "source_name": "Billboard",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "90f89866783c5e64"
-    },
-    {
-      "id": "c7fff13fe7cf",
-      "topic": "James Burrows Tributes: Lisa Kudrow, Tony Danza, Sean Hayes & More Remember “Greatest Of All Time”",
-      "traffic": "",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://deadline.com/2026/06/james-burrows-tributes-1236963019/",
-      "source_name": "Deadline",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "b963b7abf2ff9a2d"
-    },
-    {
-      "id": "4a054b5f670f",
-      "topic": "UW to launch new AI minor as universities scramble to meet workforce demand - MyNorthwest.com",
-      "traffic": "",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAxbDVLX3dRSmJHZkhaSEtGRUl0Q1pSVE1jR215aWdsU010bVVLamMwTWdBTjRVZ0dIaUFWQ2lUXzRmSkhqdmpxN1l3TTQ2al9oMzBOck53dUg4MHMzb2pfbVpOcnQ?oc=5",
-      "source_name": "Google News - Technology",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "f711c78a6214c5bf"
-    },
-    {
-      "id": "4d6c931600b3",
-      "topic": "Rui Hachimura 'Biggest Unknown' for Lakers Heading into NBA Free Agency - Sports Illustrated",
-      "traffic": "",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWnh4ZThXeHRtOTlteTRWME1tWjRuNEppN1lfeUVwUWNiaEpwd2Zxa1pQanFkRjB2X1dLd1hwa3lTRVRIV0Q0MV9KVVlvVVdhVk8za0RUTDBrampIWHFQamswQzVCU1lxc1RYOVRHNG9oNzA3TnltVlgyTUROV1drb1VMSGpkZlkxZ2NWUl83VnhiMGdYYlE?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "e4e12dd4af41d03f"
-    },
-    {
-      "id": "5e9149e5648a",
-      "topic": "NBA's Newest Coaches Reveal Impact Spurs Had On Them - Yahoo Sports",
-      "traffic": "",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMmlGYlJCWmkwMFBkclo1NEJwTm02Y21kdG5IOXBpdkxZbWVPZy1WU1FDd1Y4VmxJTm5teGdLQm9mYVVhcldxQm1GeGg4dUk2YnRPZGhGempaQ1pZWERIQ0tHVFhRQnIwSjZCS2dGbktMdG5rOWdnU0RaWktXdVFGWkJMQVk5eGlMb1E?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "caa427552b2f232b"
-    },
-    {
-      "id": "38f44a3ab608",
-      "topic": "Carson Kelly",
-      "traffic": "##22 on X",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://x.com/search?q=Carson+Kelly&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "35c04a151f83",
-      "topic": "Harry Higgs",
-      "traffic": "##23 on X",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://x.com/search?q=Harry+Higgs&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "97e5223841f8",
-      "topic": "GOAL USA",
-      "traffic": "##24 on X",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://x.com/search?q=GOAL+USA&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "d2dd25db0e8c",
-      "topic": "ITS CALLED SOCCER",
-      "traffic": "##25 on X",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://x.com/search?q=ITS+CALLED+SOCCER&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6
-    },
-    {
-      "id": "fec25d71cbd1",
-      "topic": "USA 2-0",
-      "traffic": "##26 on X",
-      "detected_at": "2026-06-20T00:05:45.257528+00:00",
-      "search_url": "https://x.com/search?q=USA+2-0&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 6,
-      "cluster_id": "5103c457fe388010"
-    },
-    {
-      "id": "e866c4b700cc",
-      "topic": "The Jordan Luka 5 Ignites “Laser Fuchsia”",
-      "traffic": "",
-      "detected_at": "2026-06-19T22:52:29.993907+00:00",
-      "search_url": "https://sneakernews.com/2026/06/19/jordan-luka-5-laser-fuchsia-bleached-turquoise-fiberglass-hv8082-600/",
-      "source_name": "Sneaker News",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "0649ffced587367e"
-    },
-    {
-      "id": "60482de423ad",
-      "topic": "Tay Keith’s Family Releases Statement Following Producer’s Death: ‘His Legacy Will Live On’",
-      "traffic": "",
-      "detected_at": "2026-06-19T22:52:29.993907+00:00",
-      "search_url": "https://www.complex.com/music/a/treyalston/tay-keith-family-statement",
-      "source_name": "Complex",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "6b06513ae1c9084f"
     }
   ],
-  "last_checked": "2026-06-20T08:05:21.312231+00:00"
+  "last_checked": "2026-06-20T10:39:50.735159+00:00"
 }

@@ -1,28 +1,5 @@
 {
   "known_ids": [
-    "4deefd6dc4d9",
-    "f321f3398365",
-    "db48bf0a7f65",
-    "bf2312f9c9c3",
-    "47ac15574033",
-    "941ecef09098",
-    "de01d61ed16b",
-    "d27a508198a7",
-    "f8fac67c5ff9",
-    "55a86d8d2bff",
-    "c6893a76f336",
-    "3bda508d34a7",
-    "a4a47da5fbbf",
-    "4d7182d8394f",
-    "f5e6969d6488",
-    "26950b03727f",
-    "de36210943bd",
-    "09db1d339ca4",
-    "fcd87506bd79",
-    "2033f95497b6",
-    "928192e1fad7",
-    "28656b3ab193",
-    "d974af1f8302",
     "9c190c55d3a0",
     "a4ffebb6fe07",
     "7d3932917d50",
@@ -499,18 +476,32 @@
     "93abd864124e",
     "3b7f48b12bae",
     "cbb87f3b4224",
-    "42adec4eda48"
+    "42adec4eda48",
+    "64c299d58623",
+    "c7b7b64483a8",
+    "977190f7106d",
+    "1183498db3a9",
+    "e9ccfd4b4611",
+    "c13a88fe1b94",
+    "fbc21cc0e986",
+    "28bd4d6a7244",
+    "e23552031d4b",
+    "873bd484cbb3",
+    "53b3285894ad",
+    "6d3266883c75",
+    "9266196a7fc4",
+    "177355a74cff",
+    "860ef178dd5b",
+    "a178b11b922f",
+    "ff191a04b33b",
+    "9ddf8b652f95",
+    "390c547c391e",
+    "f8e34d36c71e",
+    "2b0f4b42a164",
+    "970ca2f5aad2",
+    "772427bd6bda"
   ],
   "failed_ids": {
-    "16bb4cd63f3f": "2026-06-20T04:38:13.270488+00:00",
-    "13a8a22e0a74": "2026-06-20T04:38:13.270488+00:00",
-    "0fb54be8b7e5": "2026-06-20T04:38:13.270488+00:00",
-    "6652e1245e3f": "2026-06-20T04:38:13.270488+00:00",
-    "fb78299168c4": "2026-06-20T04:38:13.270488+00:00",
-    "1f3c52273ab1": "2026-06-20T04:38:13.270488+00:00",
-    "24df2095dbb5": "2026-06-20T04:38:13.270488+00:00",
-    "0cd73644ddc3": "2026-06-20T04:38:13.270488+00:00",
-    "5cb4da789c48": "2026-06-20T04:38:13.270488+00:00",
     "f58715f2a6cf": "2026-06-20T08:05:21.312231+00:00",
     "bcb5dbb45897": "2026-06-20T08:05:21.312231+00:00",
     "8f426cc0f3e4": "2026-06-20T08:05:21.312231+00:00",
@@ -519,7 +510,15 @@
     "cf24fb4fa5cb": "2026-06-20T08:05:21.312231+00:00",
     "009673b553c8": "2026-06-20T08:05:21.312231+00:00",
     "c2e6c79efcfb": "2026-06-20T08:05:21.312231+00:00",
-    "ed65ce14eeff": "2026-06-20T08:05:21.312231+00:00"
+    "ed65ce14eeff": "2026-06-20T08:05:21.312231+00:00",
+    "0a3c116fa927": "2026-06-20T10:39:50.735159+00:00",
+    "5152bb876f5b": "2026-06-20T10:39:50.735159+00:00",
+    "5b8f86f1ef0a": "2026-06-20T10:39:50.735159+00:00",
+    "a5e2fba1dd52": "2026-06-20T10:39:50.735159+00:00",
+    "54caae29802e": "2026-06-20T10:39:50.735159+00:00",
+    "1b66b082ea29": "2026-06-20T10:39:50.735159+00:00",
+    "4ef90b66b193": "2026-06-20T10:39:50.735159+00:00",
+    "cdac2b3b03bc": "2026-06-20T10:39:50.735159+00:00"
   },
   "live_clusters": {
     "5841278c1f6c1c02": {
@@ -996,7 +995,8 @@
     "3bd22b1b67b93571": {
       "topic": "Siri AI Joanna Stern Week-Long Review",
       "item_ids": [
-        "3648bf41f0b0"
+        "3648bf41f0b0",
+        "977190f7106d"
       ],
       "created_at": "2026-06-19T14:56:22.134915+00:00",
       "last_escalated_size": 0,
@@ -1438,7 +1438,8 @@
     "6ad07aaa399918f7": {
       "topic": "Norway AI Restrictions Elementary School Children",
       "item_ids": [
-        "b20ea8a1fb36"
+        "b20ea8a1fb36",
+        "fbc21cc0e986"
       ],
       "created_at": "2026-06-19T17:17:29.947602+00:00",
       "last_escalated_size": 0,
@@ -1738,7 +1739,8 @@
     "fc308da2c9d21776": {
       "topic": "Josh Hart James Dolan Sex Ban Madison Square Garden",
       "item_ids": [
-        "fc5a75fc3eb0"
+        "fc5a75fc3eb0",
+        "1183498db3a9"
       ],
       "created_at": "2026-06-19T20:49:14.376944+00:00",
       "last_escalated_size": 0,
@@ -2275,7 +2277,142 @@
       "created_at": "2026-06-20T08:05:48.988110+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "2d94f035bccb1f93": {
+      "topic": "Manchester City vs Manchester United Transfer Rivalry",
+      "item_ids": [
+        "64c299d58623"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b248d38d49148ced": {
+      "topic": "2026 Transfer Market Player Rankings by Position",
+      "item_ids": [
+        "c7b7b64483a8"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "139c120b756d8f7b": {
+      "topic": "Europe AI Development Gap vs US China",
+      "item_ids": [
+        "e9ccfd4b4611"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ca367fbbbf9ad0ec": {
+      "topic": "Marvell Technology Stock Price Target $1 Trillion",
+      "item_ids": [
+        "c13a88fe1b94"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8dbd08893f42868a": {
+      "topic": "Uber Wayve Stellantis Robotaxi Technology Partnership",
+      "item_ids": [
+        "28bd4d6a7244"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "97b8dcb165ce576c": {
+      "topic": "2026 NBA Draft Top 75 Prospects Rankings",
+      "item_ids": [
+        "e23552031d4b"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7290dfa9e2d20fcf": {
+      "topic": "Dwyane Wade Heat 2006 Championship 20 Year Retrospective",
+      "item_ids": [
+        "873bd484cbb3"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e44b2a24fa4fba8a": {
+      "topic": "Wizards 2026 NBA Draft No. 1 Pick Decision",
+      "item_ids": [
+        "53b3285894ad"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e3be95129f9b3903": {
+      "topic": "Upcoming Video Game Releases 2026 Announcements",
+      "item_ids": [
+        "6d3266883c75"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "18248ddd730dbc3d": {
+      "topic": "Replika Founder AI Job Displacement Protest Prediction",
+      "item_ids": [
+        "9266196a7fc4"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "26fb30ed2c1cc479": {
+      "topic": "Millennial FIRE Strategy Financial Independence at 25",
+      "item_ids": [
+        "177355a74cff"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2f844367de053cbf": {
+      "topic": "Andre Cronje Sonic Board Exit Token Price Decline",
+      "item_ids": [
+        "860ef178dd5b"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "88adcc716ac2d971": {
+      "topic": "Millionaire Relocation Trends 2026",
+      "item_ids": [
+        "a178b11b922f"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9334164681a2cb14": {
+      "topic": "Private Credit Fund Manager $80 Million Exit Strategy",
+      "item_ids": [
+        "ff191a04b33b"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1f7bd39cf9608e9b": {
+      "topic": "BMW Sedan i3 Design Alternative Concept",
+      "item_ids": [
+        "9ddf8b652f95"
+      ],
+      "created_at": "2026-06-20T10:40:18.978867+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-20T08:05:48.989277+00:00"
+  "last_checked": "2026-06-20T10:40:18.980185+00:00"
 }
