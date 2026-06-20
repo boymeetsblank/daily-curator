@@ -1,30 +1,5 @@
 {
   "known_ids": [
-    "794c3a0e41a5",
-    "1dd38b74cdf2",
-    "d427ac47ddad",
-    "e6f30a2a0694",
-    "a8880840d02f",
-    "258ad48b2949",
-    "b8627dc97d4f",
-    "0c2595163eea",
-    "b52667baf789",
-    "d14daa5ba408",
-    "b987be8b9afa",
-    "c7f03eb380cc",
-    "8fd795d8c6da",
-    "30457b6c9ee1",
-    "8a37392e54bf",
-    "9ebf16f05190",
-    "a73a9de0eaf8",
-    "954fb4516bb5",
-    "7a373107290d",
-    "7967e73d4a08",
-    "e5572386c775",
-    "3ef01dda8540",
-    "d1fbab047602",
-    "fd1ae2d12f82",
-    "ab09aa03ed48",
     "54b781e719df",
     "28c549d311c0",
     "68d090300119",
@@ -499,7 +474,32 @@
     "e707e85962b2",
     "f79deae1d8fd",
     "73187fe1fdc0",
-    "5e0a49cb8bbf"
+    "5e0a49cb8bbf",
+    "33492a4ea8a7",
+    "6801d2164953",
+    "7e020d1b7b30",
+    "dd5756ef718d",
+    "d73705257417",
+    "1796cd3360a9",
+    "9fccfaec9cf5",
+    "142aa79d9c13",
+    "87a89d94d0d0",
+    "ed546fab31d5",
+    "afe264cc7383",
+    "a3fa22686051",
+    "3cbbdd40506b",
+    "f09c086e6f5d",
+    "2cbab4f0cbca",
+    "7b0768a9cbf7",
+    "b1493c8fb7ef",
+    "31fcca2e810d",
+    "e28f70d5fa2b",
+    "7caea152fa00",
+    "27f9a16872ce",
+    "d8edc9e73c62",
+    "2313c7f7be86",
+    "18fdc7440314",
+    "919ae8c907a5"
   ],
   "failed_ids": {
     "0a3c116fa927": "2026-06-20T10:39:50.735159+00:00",
@@ -520,7 +520,15 @@
     "0eb285d3214b": "2026-06-20T12:18:08.598747+00:00",
     "dc48fbb64144": "2026-06-20T12:18:08.598747+00:00",
     "c2e6c79efcfb": "2026-06-20T12:18:08.598747+00:00",
-    "ed65ce14eeff": "2026-06-20T12:18:08.598747+00:00"
+    "ed65ce14eeff": "2026-06-20T12:18:08.598747+00:00",
+    "50ccfb3edac0": "2026-06-20T14:35:22.131227+00:00",
+    "608c6fe92f98": "2026-06-20T14:35:22.131227+00:00",
+    "c35248c78d53": "2026-06-20T14:35:22.131227+00:00",
+    "0464f852f674": "2026-06-20T14:35:22.131227+00:00",
+    "ef787915bd30": "2026-06-20T14:35:22.131227+00:00",
+    "7d813029ae8d": "2026-06-20T14:35:22.131227+00:00",
+    "1449243310f1": "2026-06-20T14:35:22.131227+00:00",
+    "156e234d4b53": "2026-06-20T14:35:22.131227+00:00"
   },
   "live_clusters": {
     "6c2c3953f286265f": {
@@ -1177,7 +1185,8 @@
     "42fd40e63760c358": {
       "topic": "Shanghai Documentary Golden Goblet Memory Freedom Music",
       "item_ids": [
-        "2ead10c44f92"
+        "2ead10c44f92",
+        "33492a4ea8a7"
       ],
       "created_at": "2026-06-19T17:17:29.947602+00:00",
       "last_escalated_size": 0,
@@ -1840,7 +1849,8 @@
     "9edac85bd6440c7e": {
       "topic": "Spurs Committed De'Aaron Fox NBA Finals Struggles",
       "item_ids": [
-        "c83ec24439af"
+        "c83ec24439af",
+        "87a89d94d0d0"
       ],
       "created_at": "2026-06-19T21:55:21.409457+00:00",
       "last_escalated_size": 0,
@@ -1984,7 +1994,8 @@
     "0f55c86cbbff87d6": {
       "topic": "Dylan Harper Spurs NBA Finals Response",
       "item_ids": [
-        "5f2085a7069e"
+        "5f2085a7069e",
+        "142aa79d9c13"
       ],
       "created_at": "2026-06-19T22:52:55.694365+00:00",
       "last_escalated_size": 0,
@@ -2011,7 +2022,8 @@
     "42b16736b6c25924": {
       "topic": "Jalen Brunson Elmo Feud Ends Knicks Championship Parade",
       "item_ids": [
-        "c5987068d619"
+        "c5987068d619",
+        "9fccfaec9cf5"
       ],
       "created_at": "2026-06-20T00:06:09.951955+00:00",
       "last_escalated_size": 0,
@@ -2389,7 +2401,8 @@
     "929c66347ccae17f": {
       "topic": "2026 NBA Mock Draft Rumors All 60 Picks",
       "item_ids": [
-        "00ca1e55b2f0"
+        "00ca1e55b2f0",
+        "afe264cc7383"
       ],
       "created_at": "2026-06-20T12:18:40.736954+00:00",
       "last_escalated_size": 0,
@@ -2475,7 +2488,72 @@
       "created_at": "2026-06-20T12:18:40.736954+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b40e1d0bc2850cb3": {
+      "topic": "The Beatles Long-Lost Top of the Pops Performance Discovery",
+      "item_ids": [
+        "6801d2164953"
+      ],
+      "created_at": "2026-06-20T14:36:06.029627+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b56b2310b762e74c": {
+      "topic": "James Bradley Death Flags of Our Fathers Co-Author",
+      "item_ids": [
+        "dd5756ef718d"
+      ],
+      "created_at": "2026-06-20T14:36:06.029627+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a49524691bd52178": {
+      "topic": "Car Manufacturers Ditching Android Auto 2026",
+      "item_ids": [
+        "d73705257417",
+        "7b0768a9cbf7"
+      ],
+      "created_at": "2026-06-20T14:36:06.029627+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4e8769e69a7670c3": {
+      "topic": "Kevin Garrett LeBron James Cleveland Cavaliers Career End",
+      "item_ids": [
+        "ed546fab31d5"
+      ],
+      "created_at": "2026-06-20T14:36:06.029627+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4e8306c0b7ace764": {
+      "topic": "Jim Cramer Ford Battery Business Expansion",
+      "item_ids": [
+        "f09c086e6f5d"
+      ],
+      "created_at": "2026-06-20T14:36:06.029627+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c00c7c32dec8655": {
+      "topic": "BMW Alpina Flagship Sedan New Model Development",
+      "item_ids": [
+        "b1493c8fb7ef",
+        "7caea152fa00"
+      ],
+      "created_at": "2026-06-20T14:36:06.029627+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "32597fe4db4dadcc": {
+      "topic": "Ferrari Family Car Pricing vs BMW M5",
+      "item_ids": [
+        "e28f70d5fa2b"
+      ],
+      "created_at": "2026-06-20T14:36:06.029627+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-20T12:18:40.737658+00:00"
+  "last_checked": "2026-06-20T14:36:06.030942+00:00"
 }
