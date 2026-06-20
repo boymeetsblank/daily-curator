@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "1fd155d1d10f",
-    "9d5f1e604cb3",
-    "545a412f8712",
-    "b1ccd2db0c87",
-    "bacfbbbcedba",
-    "27f1fb04b385",
-    "d5e33a8975eb",
-    "9895e991af77",
-    "f67645d2ebf5",
-    "a02ccdf1a840",
-    "1cce7fb422fb",
-    "c0477998ca43",
-    "0a368702d056",
-    "5748f9c6e6a8",
     "1180881e66fa",
     "385c33b53894",
     "8a84b47e770d",
@@ -499,101 +485,34 @@
     "35c04a151f83",
     "97e5223841f8",
     "d2dd25db0e8c",
-    "fec25d71cbd1"
+    "fec25d71cbd1",
+    "381b8ee4aa7b",
+    "3c35b15a5d50",
+    "820a28b7bf27",
+    "c94b0e379e07",
+    "985023fee0ab",
+    "3ce4e5999d15",
+    "8a7ff639d64d",
+    "12dfca8c190b",
+    "88ceac60dd42",
+    "4a4e36dca4a3",
+    "3225fd4eeb33",
+    "b4812398eab8",
+    "d6c620e9ba7e",
+    "a99ef5ce2c70"
   ],
   "failed_ids": {
-    "3f37f4cb4892": "2026-06-19T20:48:43.580482+00:00",
-    "df2b80160072": "2026-06-19T20:48:43.580482+00:00",
-    "79b3bf3b148a": "2026-06-19T20:48:43.580482+00:00",
-    "16860600a524": "2026-06-19T20:48:43.580482+00:00",
-    "f80ba0663b32": "2026-06-19T20:48:43.580482+00:00",
-    "307cc388b86c": "2026-06-19T20:48:43.580482+00:00",
-    "72add51cb51d": "2026-06-19T20:48:43.580482+00:00",
-    "74abd510fb1c": "2026-06-19T20:48:43.580482+00:00",
-    "99640cc89cb5": "2026-06-19T20:48:43.580482+00:00",
-    "f4b0b007d950": "2026-06-19T20:48:43.580482+00:00",
-    "7a579ddce132": "2026-06-19T20:48:43.580482+00:00",
-    "e310f689481c": "2026-06-19T20:48:43.580482+00:00",
-    "a71187cb6109": "2026-06-19T20:48:43.580482+00:00",
-    "fde8a29766f2": "2026-06-19T20:48:43.580482+00:00",
-    "2c63e6b4e821": "2026-06-19T21:54:51.550164+00:00",
-    "460d840ae29b": "2026-06-19T21:54:51.550164+00:00",
-    "86c57c55498e": "2026-06-19T21:54:51.550164+00:00",
-    "0418fb210733": "2026-06-19T21:54:51.550164+00:00",
-    "5e06b709fdae": "2026-06-19T21:54:51.550164+00:00",
-    "5b53c2981a23": "2026-06-19T21:54:51.550164+00:00",
-    "e3e70df18d52": "2026-06-19T21:54:51.550164+00:00",
-    "f8d7d9fc3fd7": "2026-06-19T21:54:51.550164+00:00",
-    "edc107d3818b": "2026-06-19T21:54:51.550164+00:00",
-    "d0668bc0ed82": "2026-06-19T21:54:51.550164+00:00",
-    "09cffb71ce94": "2026-06-19T21:54:51.550164+00:00",
-    "d0d9430b3e14": "2026-06-19T22:52:29.993907+00:00",
-    "e53585c86682": "2026-06-19T22:52:29.993907+00:00",
-    "db7186af09ac": "2026-06-19T22:52:29.993907+00:00",
-    "4188d81a5a3f": "2026-06-19T22:52:29.993907+00:00",
-    "614ac193510f": "2026-06-19T22:52:29.993907+00:00",
-    "43382fa320ab": "2026-06-19T22:52:29.993907+00:00",
-    "9ad039fa2835": "2026-06-19T22:52:29.993907+00:00",
-    "8cd5a8d7f6e9": "2026-06-19T22:52:29.993907+00:00",
-    "2de8efccbcea": "2026-06-19T22:52:29.993907+00:00",
-    "f5bc1e4606a7": "2026-06-19T22:52:29.993907+00:00",
-    "35fcbd9dbe6d": "2026-06-19T22:52:29.993907+00:00",
-    "0cd73644ddc3": "2026-06-19T22:52:29.993907+00:00",
-    "5cb4da789c48": "2026-06-19T22:52:29.993907+00:00",
-    "e13abda44ac3": "2026-06-20T00:05:45.257528+00:00",
-    "5bee6e12bbe3": "2026-06-20T00:05:45.257528+00:00",
-    "ae74f33234c4": "2026-06-20T00:05:45.257528+00:00",
-    "1b01363c057c": "2026-06-20T00:05:45.257528+00:00",
-    "8b54befa253d": "2026-06-20T00:05:45.257528+00:00",
-    "4abd5d2ef704": "2026-06-20T00:05:45.257528+00:00",
-    "d9b1e3eb4bc7": "2026-06-20T00:05:45.257528+00:00",
-    "c540c912c542": "2026-06-20T00:05:45.257528+00:00"
+    "16bb4cd63f3f": "2026-06-20T04:38:13.270488+00:00",
+    "13a8a22e0a74": "2026-06-20T04:38:13.270488+00:00",
+    "0fb54be8b7e5": "2026-06-20T04:38:13.270488+00:00",
+    "6652e1245e3f": "2026-06-20T04:38:13.270488+00:00",
+    "fb78299168c4": "2026-06-20T04:38:13.270488+00:00",
+    "1f3c52273ab1": "2026-06-20T04:38:13.270488+00:00",
+    "24df2095dbb5": "2026-06-20T04:38:13.270488+00:00",
+    "0cd73644ddc3": "2026-06-20T04:38:13.270488+00:00",
+    "5cb4da789c48": "2026-06-20T04:38:13.270488+00:00"
   },
   "live_clusters": {
-    "e14270781b2c0557": {
-      "topic": "Bunnie Xo Jelly Roll Divorce Baby Announcement",
-      "item_ids": [
-        "46b5e682418c",
-        "a9b983627b55",
-        "9582fbbb0b01"
-      ],
-      "created_at": "2026-06-19T02:16:01.426449+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-19T14:55:37.022334+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "46b5e682418c",
-        "a9b983627b55",
-        "9582fbbb0b01"
-      ]
-    },
-    "7b63009f995a4fca": {
-      "topic": "Corridos del Rey M\u00fasica Mexicana Faith-Based Artist",
-      "item_ids": [
-        "37ed5c7ad244"
-      ],
-      "created_at": "2026-06-19T02:16:01.426449+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f9a7bb813ee813d7": {
-      "topic": "Dungeon Crawler Carl Peacock Series Seth MacFarlane",
-      "item_ids": [
-        "7fc72114ac88"
-      ],
-      "created_at": "2026-06-19T02:16:01.426449+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4a64ba0fb036b94a": {
-      "topic": "Elastic Acquires DeductiveAI $85M",
-      "item_ids": [
-        "f7db370cf36f"
-      ],
-      "created_at": "2026-06-19T02:16:01.426449+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "f751260e48508388": {
       "topic": "Anne Curtis Manila Paranoia Thriller Remote Film",
       "item_ids": [
@@ -1793,11 +1712,21 @@
       "topic": "NBA Trade Rumors Derrick White Walker Kessler Celtics T-Wolves Jazz",
       "item_ids": [
         "bfcd129e3b63",
-        "397e8710e378"
+        "397e8710e378",
+        "3ce4e5999d15",
+        "8a7ff639d64d"
       ],
       "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-20T04:38:13.270488+00:00",
+      "picks_file": "picks/picks-2026-06-20-0438.md",
+      "why_text": "Minnesota is emerging as a serious player for Celtics guard Derrick White, with a potential framework involving Walker Kessler giving the Jazz a path into this deal and the T-Wolves a proven championship-level piece alongside Anthony Edwards. This matters because it signals Boston may be quietly dismantling its title roster faster than anyone expected \u2014 if White is available, the Celtics are almost certainly in a deeper rebuild conversation than they've publicly acknowledged. The Giannis undercurrent running through Jaylen Brown trade chatter only adds fuel: Boston's front office appears to be gaming out multiple futures at once.",
+      "last_escalated_item_ids": [
+        "bfcd129e3b63",
+        "397e8710e378",
+        "3ce4e5999d15",
+        "8a7ff639d64d"
+      ]
     },
     "f7d153b2c834e2d5": {
       "topic": "NBA Player X-ray Medical Evaluation",
@@ -1820,7 +1749,8 @@
     "bf675dd0ccf01871": {
       "topic": "NBA Trade Rumors High-Scoring Breakout Forward Multiple Teams Interest",
       "item_ids": [
-        "a455b6ac7170"
+        "a455b6ac7170",
+        "c94b0e379e07"
       ],
       "created_at": "2026-06-19T17:17:29.947602+00:00",
       "last_escalated_size": 0,
@@ -2429,7 +2359,79 @@
       "created_at": "2026-06-20T00:06:09.951955+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "c50691a8a87b8340": {
+      "topic": "Kanye West Bully Deluxe Edition Release",
+      "item_ids": [
+        "381b8ee4aa7b"
+      ],
+      "created_at": "2026-06-20T04:38:37.504937+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "833bb1bdbbaaa954": {
+      "topic": "Jazz Chisholm Jr Groin Injury Foul Ball Yankees",
+      "item_ids": [
+        "3c35b15a5d50"
+      ],
+      "created_at": "2026-06-20T04:38:37.504937+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5eadfadbb60f6e42": {
+      "topic": "Artists Voice Protection AI Registration Taylor Swift",
+      "item_ids": [
+        "820a28b7bf27"
+      ],
+      "created_at": "2026-06-20T04:38:37.504937+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ee4ff8a3051a063f": {
+      "topic": "Michael Jordan Modern NBA Stars Hypothetical Comparison",
+      "item_ids": [
+        "985023fee0ab"
+      ],
+      "created_at": "2026-06-20T04:38:37.504937+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8664b69acbcbd8e7": {
+      "topic": "Jordan Clarkson Knicks Manny Pacquiao Congratulations",
+      "item_ids": [
+        "12dfca8c190b"
+      ],
+      "created_at": "2026-06-20T04:38:37.504937+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6fd09c3cfe659455": {
+      "topic": "ChatGPT Internet Browser Automation One-Person Business",
+      "item_ids": [
+        "88ceac60dd42"
+      ],
+      "created_at": "2026-06-20T04:38:37.504937+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "28eef6422bdaa4a3": {
+      "topic": "Frive Meals Founder Business Success Story",
+      "item_ids": [
+        "4a4e36dca4a3"
+      ],
+      "created_at": "2026-06-20T04:38:37.504937+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8268df4cf3a44374": {
+      "topic": "AI Financial Advice Risk Warning",
+      "item_ids": [
+        "3225fd4eeb33"
+      ],
+      "created_at": "2026-06-20T04:38:37.504937+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-20T00:06:17.188960+00:00"
+  "last_checked": "2026-06-20T04:38:44.354571+00:00"
 }
