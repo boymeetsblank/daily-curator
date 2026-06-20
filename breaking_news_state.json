@@ -1,21 +1,5 @@
 {
   "known_ids": [
-    "f5ec910b9c60",
-    "48da8ab6ece5",
-    "3cc0ec2234e8",
-    "0089482a7d34",
-    "eebbd67cf1b3",
-    "a1adf0f3fb0c",
-    "e70effdef2ad",
-    "b365e687474c",
-    "b8cb3d81225b",
-    "4f82e3877377",
-    "b61c6414d5fe",
-    "360d503f86dd",
-    "1dfd93510fdc",
-    "1baaa8c7bce9",
-    "eb238b8b63e3",
-    "524dad3c055c",
     "bfc9e181f93f",
     "5a65e87fe1c4",
     "d78c26a4fcdf",
@@ -499,14 +483,25 @@
     "ac429a67cb5e",
     "839672947670",
     "d07c2781e933",
-    "7d7589c659e8"
+    "7d7589c659e8",
+    "f337d8c243e2",
+    "12186af5c16f",
+    "2832522117ea",
+    "eb0722b2d82b",
+    "2ff4c9e1d3d9",
+    "7ddc78b7ede2",
+    "735ccbe8aa61",
+    "4f629a749291",
+    "36600ede961f",
+    "57b011c84587",
+    "482d084c55c5",
+    "f8cdeaa04627",
+    "aba8f73c90d1",
+    "8b16c604f882",
+    "fb5c33a8a64e",
+    "627c2b77585d"
   ],
   "failed_ids": {
-    "7e4b56fa0506": "2026-06-20T17:43:19.695580+00:00",
-    "fc2bce5f150f": "2026-06-20T17:43:19.695580+00:00",
-    "6347f8027eea": "2026-06-20T17:43:19.695580+00:00",
-    "593ee6f85fc3": "2026-06-20T17:43:19.695580+00:00",
-    "cdac2b3b03bc": "2026-06-20T17:43:19.695580+00:00",
     "ad3c891acce1": "2026-06-20T19:00:41.548574+00:00",
     "0d4df47f2e21": "2026-06-20T19:00:41.548574+00:00",
     "b6cacee68f2a": "2026-06-20T19:00:41.548574+00:00",
@@ -539,182 +534,23 @@
     "1b42b99f6668": "2026-06-20T20:24:35.875760+00:00",
     "869248625265": "2026-06-20T20:24:35.875760+00:00",
     "96ac6243c044": "2026-06-20T20:24:35.875760+00:00",
-    "ca193e875b45": "2026-06-20T20:24:35.875760+00:00"
+    "ca193e875b45": "2026-06-20T20:24:35.875760+00:00",
+    "f6ccacbce922": "2026-06-20T21:46:10.890081+00:00",
+    "b963925e6169": "2026-06-20T21:46:10.890081+00:00",
+    "7e4b56fa0506": "2026-06-20T21:46:10.890081+00:00",
+    "41a269e075e1": "2026-06-20T21:46:10.890081+00:00",
+    "26ac91a9ff5c": "2026-06-20T21:46:10.890081+00:00",
+    "74aa59040545": "2026-06-20T21:46:10.890081+00:00",
+    "9985c65604a6": "2026-06-20T21:46:10.890081+00:00",
+    "caa5bd124123": "2026-06-20T21:46:10.890081+00:00",
+    "e63a94496028": "2026-06-20T21:46:10.890081+00:00",
+    "4881d9302dae": "2026-06-20T21:46:10.890081+00:00",
+    "cdac2b3b03bc": "2026-06-20T21:46:10.890081+00:00",
+    "9e274fcc2fca": "2026-06-20T21:46:10.890081+00:00",
+    "30ef073d4806": "2026-06-20T21:46:10.890081+00:00",
+    "3f2a2cb3125f": "2026-06-20T21:46:10.890081+00:00"
   },
   "live_clusters": {
-    "d06d6a14c4d27fc0": {
-      "topic": "Nike Mind 002 Vast Grey Release",
-      "item_ids": [
-        "bfb1826cb8fe"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "831b8ae1f81c53d1": {
-      "topic": "Nike Air Max 95 Patent Leather Release",
-      "item_ids": [
-        "2d9ea8b1759a"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "df2ce7bbf2069f75": {
-      "topic": "adidas Harden Vol. 10 Candy Paint Colorway Release",
-      "item_ids": [
-        "80ec19d0f92f"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4342700022edfb24": {
-      "topic": "Widow's Bay Season 2 Questions Analysis",
-      "item_ids": [
-        "95f3c0a9ef10"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1fa2829c7fc25bba": {
-      "topic": "Million-Dollar Luxury Watches Market Boom",
-      "item_ids": [
-        "466d271a4af7",
-        "223295db2ab7",
-        "9455b659d6bd"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-20T17:43:19.695580+00:00",
-      "picks_file": "picks/picks-2026-06-20-1744.md",
-      "why_text": "The million-dollar watch market is having a cultural moment, with pastel Hublots going viral as summer's must-flex accessory \u2014 but the same hype that's driving demand is making collectors targets. Atlanta's latest case, where two women allegedly drugged a man to steal his entire watch collection, is a direct symptom of how visible and valuable wrist game has become on the street level. When luxury watches cross from connoisseur culture into broad social currency, they also cross into a whole new risk category.",
-      "last_escalated_item_ids": [
-        "466d271a4af7",
-        "223295db2ab7",
-        "9455b659d6bd"
-      ]
-    },
-    "fc308da2c9d21776": {
-      "topic": "Josh Hart James Dolan Sex Ban Madison Square Garden",
-      "item_ids": [
-        "fc5a75fc3eb0",
-        "1183498db3a9"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c88eadbe4f5d1c20": {
-      "topic": "Red Lobster CEO AI Turnaround Strategy",
-      "item_ids": [
-        "b69eacd4b2e9"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ddbd42e063ad18d": {
-      "topic": "Bootsy Collins Bootzilla Records Label Launch",
-      "item_ids": [
-        "1d16433a4592"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b963b7abf2ff9a2d": {
-      "topic": "James Burrows Cheers Co-Creator Death",
-      "item_ids": [
-        "f857b2118f3e",
-        "c7fff13fe7cf"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c9290380f13a5590": {
-      "topic": "Clark U.S. Open Shinnecock 36-Hole Record",
-      "item_ids": [
-        "a95295e4450b"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3223e88ba8d73e8f": {
-      "topic": "Spain Yamal Euro 2026 Full 90 Minutes Readiness",
-      "item_ids": [
-        "529e4d7a984b"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2b0d50b3c01e6077": {
-      "topic": "John Meredith III Texas Football Commitment",
-      "item_ids": [
-        "1ffb928bf8ad"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b462dc7b7c520470": {
-      "topic": "Wings Rookie Fudd Project B International Basketball",
-      "item_ids": [
-        "46dcd9f6a9c7"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "88a590b3d4ed1bef": {
-      "topic": "All-Black Birkenstock Fashion Styling Guide",
-      "item_ids": [
-        "49364d5793c1"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a4505d37157875aa": {
-      "topic": "Cavaliers 2026 NBA Draft Big Man Projection",
-      "item_ids": [
-        "c87f77a2b460"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d56cd22b813ce30": {
-      "topic": "Kendrick Perkins Jackson State General Manager Appointment",
-      "item_ids": [
-        "1cf4d9e015e3",
-        "0ccd5ffcc2a6",
-        "b72a38ed98e5"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-19T21:54:51.550164+00:00",
-      "picks_file": "picks/picks-2026-06-19-2155.md",
-      "why_text": "Kendrick Perkins stepping into the GM role at Jackson State is a signal that HBCUs are getting serious about building professional front office infrastructure \u2014 not just recruiting stars, but building organizations. It follows the Deion Sanders era blueprint of using celebrity credibility to elevate HBCU programs into legitimate national conversation. Perkins brings NBA pedigree and loud personality to a school still riding the cultural momentum that Sanders sparked, and that combination could actually move the needle on recruiting and visibility.",
-      "last_escalated_item_ids": [
-        "1cf4d9e015e3",
-        "0ccd5ffcc2a6",
-        "b72a38ed98e5"
-      ]
-    },
-    "be0e174caf4d4c15": {
-      "topic": "Spurs Knicks NBA Finals Fight Incident",
-      "item_ids": [
-        "1cb8310b41b0"
-      ],
-      "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "065757e667a43c5f": {
       "topic": "Vans Charmed Life Cardigan Slip-Ons Release",
       "item_ids": [
@@ -811,7 +647,8 @@
       "item_ids": [
         "c83ec24439af",
         "87a89d94d0d0",
-        "b6f2d3a7ad06"
+        "b6f2d3a7ad06",
+        "735ccbe8aa61"
       ],
       "created_at": "2026-06-19T21:55:21.409457+00:00",
       "last_escalated_size": 3,
@@ -828,11 +665,19 @@
       "topic": "Heat Trade Package Giannis Antetokounmpo Bucks",
       "item_ids": [
         "c71214fb9868",
-        "8052773c3c16"
+        "8052773c3c16",
+        "4f629a749291"
       ],
       "created_at": "2026-06-19T21:55:21.409457+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-20T21:46:10.890081+00:00",
+      "picks_file": "picks/picks-2026-06-20-2146.md",
+      "why_text": "The Giannis Antetokounmpo trade saga is reaching a critical inflection point: Miami is actively trying to construct a winning offer, but Milwaukee's demands are reportedly so steep that rival executives are calling them unrealistic. This matters because Giannis is arguably the best player on the trade market in years, and the gap between what the Bucks want and what any team can realistically deliver is shaping the entire NBA offseason. If Milwaukee won't budge, they risk holding a disgruntled franchise cornerstone into a season where the window may already be closed.",
+      "last_escalated_item_ids": [
+        "c71214fb9868",
+        "8052773c3c16",
+        "4f629a749291"
+      ]
     },
     "5c3ea83a41d54b9d": {
       "topic": "AI Replacing Sustainability Business Trend",
@@ -1392,11 +1237,19 @@
       "topic": "2026 NBA Mock Draft Rumors All 60 Picks",
       "item_ids": [
         "00ca1e55b2f0",
-        "afe264cc7383"
+        "afe264cc7383",
+        "57b011c84587"
       ],
       "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-20T21:46:10.890081+00:00",
+      "picks_file": "picks/picks-2026-06-20-2146.md",
+      "why_text": "AJ Dybantsa and Darryn Peterson are already being treated as generational prospects, with mock drafts cementing their top-two status more than a year before the actual draft \u2014 a sign of how hungry the league is for the next transcendent young talent. Dybantsa, the BYU freshman phenom, is the consensus No. 1 pick in waiting, while Peterson represents the kind of elite two-way guard prospect that contenders covet. The fact that a 2026 mock is generating this much traffic right now reflects how deeply draft culture has embedded itself into the NBA's year-round conversation.",
+      "last_escalated_item_ids": [
+        "00ca1e55b2f0",
+        "afe264cc7383",
+        "57b011c84587"
+      ]
     },
     "aa45f25bec188418": {
       "topic": "Bitcoin Price Floor Crypto Billionaires Analysis",
@@ -1720,7 +1573,8 @@
     "4eec46c0762ffc7d": {
       "topic": "George Lucas Minions & Monsters Voice Role",
       "item_ids": [
-        "1437255c1c70"
+        "1437255c1c70",
+        "2832522117ea"
       ],
       "created_at": "2026-06-20T17:44:05.153288+00:00",
       "last_escalated_size": 0,
@@ -2068,7 +1922,70 @@
       "created_at": "2026-06-20T20:25:08.567865+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "44251b5063cf1c52": {
+      "topic": "LeBron James Drake 'Shabang' Reel Repost",
+      "item_ids": [
+        "f337d8c243e2"
+      ],
+      "created_at": "2026-06-20T21:46:47.384203+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cffac5da89dad9d7": {
+      "topic": "Diddy Company Star Island $55M Sale Lawsuit",
+      "item_ids": [
+        "12186af5c16f"
+      ],
+      "created_at": "2026-06-20T21:46:47.384203+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b0e2bf5dd2ff3619": {
+      "topic": "Lilly Wachowski 'The Hunted' Film Development",
+      "item_ids": [
+        "eb0722b2d82b"
+      ],
+      "created_at": "2026-06-20T21:46:47.384203+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7d6853b428033604": {
+      "topic": "Jennifer Aniston James Burrows Tribute",
+      "item_ids": [
+        "2ff4c9e1d3d9"
+      ],
+      "created_at": "2026-06-20T21:46:47.384203+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "98989bd4631c185d": {
+      "topic": "Meredith Whittaker Signal AI Chatbots Warning",
+      "item_ids": [
+        "7ddc78b7ede2"
+      ],
+      "created_at": "2026-06-20T21:46:47.384203+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "502dd6669d20be6c": {
+      "topic": "Kyrie Irving Cavaliers Reunion Absence Response",
+      "item_ids": [
+        "36600ede961f"
+      ],
+      "created_at": "2026-06-20T21:46:47.384203+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ace88e6881e5c392": {
+      "topic": "Dallas Mavericks Coaching Search Candidates",
+      "item_ids": [
+        "482d084c55c5"
+      ],
+      "created_at": "2026-06-20T21:46:47.384203+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-20T20:25:08.568981+00:00"
+  "last_checked": "2026-06-20T21:47:01.260624+00:00"
 }
