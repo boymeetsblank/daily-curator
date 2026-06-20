@@ -1,16 +1,5 @@
 {
   "known_ids": [
-    "1180881e66fa",
-    "385c33b53894",
-    "8a84b47e770d",
-    "3e453cfaf0f5",
-    "4cfc11edbbb5",
-    "508635c9d565",
-    "ad4280d83441",
-    "7f5ca8eee3e4",
-    "795293bdc813",
-    "517d5bc4bf37",
-    "689f5f0d43a5",
     "4deefd6dc4d9",
     "f321f3398365",
     "db48bf0a7f65",
@@ -499,7 +488,18 @@
     "3225fd4eeb33",
     "b4812398eab8",
     "d6c620e9ba7e",
-    "a99ef5ce2c70"
+    "a99ef5ce2c70",
+    "2097a6965f84",
+    "f8a24a6d5e42",
+    "c6840814ec09",
+    "0a5277d61f0f",
+    "ce8827733f29",
+    "d476f9f201fd",
+    "6a967bbb8562",
+    "93abd864124e",
+    "3b7f48b12bae",
+    "cbb87f3b4224",
+    "42adec4eda48"
   ],
   "failed_ids": {
     "16bb4cd63f3f": "2026-06-20T04:38:13.270488+00:00",
@@ -510,201 +510,18 @@
     "1f3c52273ab1": "2026-06-20T04:38:13.270488+00:00",
     "24df2095dbb5": "2026-06-20T04:38:13.270488+00:00",
     "0cd73644ddc3": "2026-06-20T04:38:13.270488+00:00",
-    "5cb4da789c48": "2026-06-20T04:38:13.270488+00:00"
+    "5cb4da789c48": "2026-06-20T04:38:13.270488+00:00",
+    "f58715f2a6cf": "2026-06-20T08:05:21.312231+00:00",
+    "bcb5dbb45897": "2026-06-20T08:05:21.312231+00:00",
+    "8f426cc0f3e4": "2026-06-20T08:05:21.312231+00:00",
+    "38456335958d": "2026-06-20T08:05:21.312231+00:00",
+    "93a688fcaae5": "2026-06-20T08:05:21.312231+00:00",
+    "cf24fb4fa5cb": "2026-06-20T08:05:21.312231+00:00",
+    "009673b553c8": "2026-06-20T08:05:21.312231+00:00",
+    "c2e6c79efcfb": "2026-06-20T08:05:21.312231+00:00",
+    "ed65ce14eeff": "2026-06-20T08:05:21.312231+00:00"
   },
   "live_clusters": {
-    "f751260e48508388": {
-      "topic": "Anne Curtis Manila Paranoia Thriller Remote Film",
-      "item_ids": [
-        "79507096aa47"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8daebb230b1a83af": {
-      "topic": "Fuerza Regida This Is Our Dream Stadium Tour 2026",
-      "item_ids": [
-        "35e6bd379096"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8bdb8cbea77b03ee": {
-      "topic": "FKA Twigs Lil Yachty On Your Mind Single",
-      "item_ids": [
-        "7c2d25cc7a51"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a1369031f62867be": {
-      "topic": "Matt Damon Kimmel Trojan Horse Appearance",
-      "item_ids": [
-        "9c2571a77379"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7ee18a4ad33ad6b8": {
-      "topic": "ReelShort Joey Jia Microdrama International Expansion",
-      "item_ids": [
-        "adcf80d53822"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f4ce5af9a2164424": {
-      "topic": "Nightsleeper Season 2 Renewal BBC Element Pictures",
-      "item_ids": [
-        "404565b7b0d1"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fe0cf9e07283a045": {
-      "topic": "BBC Cancels Ashley Cain Series Offensive Comments",
-      "item_ids": [
-        "7c196cb316db"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d29a2d0de8f56d5": {
-      "topic": "Pseudoscientific Bleach Cancer Treatment Scam",
-      "item_ids": [
-        "8ab831b6ad44"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "920326ede66230a2": {
-      "topic": "Mercedes-Benz VLE 2028 8K Display Vehicle",
-      "item_ids": [
-        "e433453dc892"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "76c499626dd2070a": {
-      "topic": "Biotech Weight Loss Market Stock Volatility",
-      "item_ids": [
-        "a3a7ed602fe2"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e7d4efb173a0b881": {
-      "topic": "Caleb Wilson NBA Draft Profile",
-      "item_ids": [
-        "05feed7d0529"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "46bf4794b3c25afa": {
-      "topic": "Big Food Regenerative Agriculture Fertility Farming",
-      "item_ids": [
-        "ca42bce97283"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6bc331813c07f9de": {
-      "topic": "KPMG Leaked Optus Confidential Data Whistleblower",
-      "item_ids": [
-        "ecc401c03473"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c7ea759bc731447b": {
-      "topic": "Prosus Revenue Growth Tencent Business Performance",
-      "item_ids": [
-        "8b375c400afe"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ec939d71a3d71530": {
-      "topic": "Missing Oil Barrels Global Energy Crisis",
-      "item_ids": [
-        "e3c25517efdc"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3628177fc843e1d2": {
-      "topic": "Marvell Technology Dan Durn Adobe Finance Chief",
-      "item_ids": [
-        "1855b73d182b"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8d49d8fea217282b": {
-      "topic": "Harvard Square Clover Location Permanent Closure",
-      "item_ids": [
-        "042690cb5641"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "436665706883bd7e": {
-      "topic": "BMW i3 Orders Launch Early Demand Surge",
-      "item_ids": [
-        "89b61be32ab7",
-        "61d12da16f54",
-        "12e3d94d096f",
-        "360d503f86dd",
-        "9873fef4a89c",
-        "7fbfcced535f",
-        "680c92d17bf8",
-        "a574471692df",
-        "53f88a509c85"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 9,
-      "last_escalated_at": "2026-06-19T17:16:48.474426+00:00",
-      "picks_file": "picks/picks-2026-06-19-0732.md",
-      "why_text": "BMW has been forced to open i3 orders significantly ahead of schedule after pre-launch demand overwhelmed expectations \u2014 a signal that appetite for affordable, brand-name EVs in markets like the UK is outpacing even optimistic manufacturer forecasts. This matters because it punctures the ongoing narrative that EV demand is cooling, and it puts pressure on competitors who are still hedging their electric commitments. BMW moving early isn't a marketing flex \u2014 it's a company scrambling to keep up.\n**Update 12:17 PM CT:** Confirmation is now coming in from multiple outlets: BMW's i3 order books have officially opened early, with Electrifying.com flagging that First Edition models are already available and likely to move fast \u2014 adding urgency for buyers sitting on the fence.",
-      "last_escalated_item_ids": [
-        "89b61be32ab7",
-        "61d12da16f54",
-        "12e3d94d096f",
-        "360d503f86dd",
-        "9873fef4a89c",
-        "7fbfcced535f",
-        "680c92d17bf8",
-        "a574471692df",
-        "53f88a509c85"
-      ]
-    },
-    "7e68bd2dc574fbd2": {
-      "topic": "Li Auto i6 EV Europe Market Entry",
-      "item_ids": [
-        "593e37882076"
-      ],
-      "created_at": "2026-06-19T07:32:14.129494+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "5841278c1f6c1c02": {
       "topic": "Anthony Chen Yeo Yann Yann Growing Up Trilogy Korean Project",
       "item_ids": [
@@ -2431,7 +2248,34 @@
       "created_at": "2026-06-20T04:38:37.504937+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "7692c1cd985691b4": {
+      "topic": "The Whitlams Australian Rock Island Tour Return",
+      "item_ids": [
+        "2097a6965f84"
+      ],
+      "created_at": "2026-06-20T08:05:48.988110+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0daa0762c782aa65": {
+      "topic": "USMNT World Cup 2026 Ambitions Analysis",
+      "item_ids": [
+        "f8a24a6d5e42"
+      ],
+      "created_at": "2026-06-20T08:05:48.988110+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c037126e4077e6bf": {
+      "topic": "Big 12 Sorsby Fallout Monitoring Options",
+      "item_ids": [
+        "d476f9f201fd"
+      ],
+      "created_at": "2026-06-20T08:05:48.988110+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-20T04:38:44.354571+00:00"
+  "last_checked": "2026-06-20T08:05:48.989277+00:00"
 }
