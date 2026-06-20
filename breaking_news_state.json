@@ -1,24 +1,5 @@
 {
   "known_ids": [
-    "fc7c2632364b",
-    "ca42bce97283",
-    "ecc401c03473",
-    "8b375c400afe",
-    "e3c25517efdc",
-    "1855b73d182b",
-    "042690cb5641",
-    "89b61be32ab7",
-    "61d12da16f54",
-    "12e3d94d096f",
-    "593e37882076",
-    "e0ac6ea0feb8",
-    "a2f8df2ab159",
-    "7578532b23a2",
-    "4f850139fb13",
-    "bac3122207f2",
-    "93596c78478e",
-    "e4d9387c6965",
-    "559e3b7a75e3",
     "f5ec910b9c60",
     "48da8ab6ece5",
     "3cc0ec2234e8",
@@ -499,15 +480,28 @@
     "142f539c9621",
     "b2bc1d9d12d1",
     "83967b7533fd",
-    "6c638460886c"
+    "6c638460886c",
+    "8e6832d32c82",
+    "2a0a134f00e9",
+    "823a83c22a9d",
+    "71048af5a28b",
+    "c1d47d92510e",
+    "3bb950ea6cac",
+    "6986aaa215b7",
+    "8052773c3c16",
+    "096c08e69e4f",
+    "24c7ab431b3e",
+    "1fa003557ae9",
+    "7326ffa0f906",
+    "edcdf7709cae",
+    "19932d67bb24",
+    "14231f032e4c",
+    "ac429a67cb5e",
+    "839672947670",
+    "d07c2781e933",
+    "7d7589c659e8"
   ],
   "failed_ids": {
-    "21de652c3ba3": "2026-06-20T16:04:22.247618+00:00",
-    "7b0a44e37a35": "2026-06-20T16:04:22.247618+00:00",
-    "627c2b77585d": "2026-06-20T16:04:22.247618+00:00",
-    "e0c502dfc0eb": "2026-06-20T16:04:22.247618+00:00",
-    "cff025defb26": "2026-06-20T16:04:22.247618+00:00",
-    "0c36baff7b9b": "2026-06-20T16:04:22.247618+00:00",
     "7e4b56fa0506": "2026-06-20T17:43:19.695580+00:00",
     "fc2bce5f150f": "2026-06-20T17:43:19.695580+00:00",
     "6347f8027eea": "2026-06-20T17:43:19.695580+00:00",
@@ -525,7 +519,27 @@
     "b3c8bf24856f": "2026-06-20T19:00:41.548574+00:00",
     "8923784823f3": "2026-06-20T19:00:41.548574+00:00",
     "ed65ce14eeff": "2026-06-20T19:00:41.548574+00:00",
-    "1dd94ac22fe5": "2026-06-20T19:00:41.548574+00:00"
+    "1dd94ac22fe5": "2026-06-20T19:00:41.548574+00:00",
+    "5ef38a210a28": "2026-06-20T20:24:35.875760+00:00",
+    "684e55787a48": "2026-06-20T20:24:35.875760+00:00",
+    "5cab6cb8b0ba": "2026-06-20T20:24:35.875760+00:00",
+    "7d42e8818134": "2026-06-20T20:24:35.875760+00:00",
+    "0afa17e10237": "2026-06-20T20:24:35.875760+00:00",
+    "7e59b887851b": "2026-06-20T20:24:35.875760+00:00",
+    "21de652c3ba3": "2026-06-20T20:24:35.875760+00:00",
+    "22dce766c369": "2026-06-20T20:24:35.875760+00:00",
+    "8b5612915d21": "2026-06-20T20:24:35.875760+00:00",
+    "7209441c9f00": "2026-06-20T20:24:35.875760+00:00",
+    "e6302713a707": "2026-06-20T20:24:35.875760+00:00",
+    "976e6815c4e3": "2026-06-20T20:24:35.875760+00:00",
+    "4e5da1a44056": "2026-06-20T20:24:35.875760+00:00",
+    "c19d9aa9d69e": "2026-06-20T20:24:35.875760+00:00",
+    "b2f3d1890b34": "2026-06-20T20:24:35.875760+00:00",
+    "69b023e03cdc": "2026-06-20T20:24:35.875760+00:00",
+    "1b42b99f6668": "2026-06-20T20:24:35.875760+00:00",
+    "869248625265": "2026-06-20T20:24:35.875760+00:00",
+    "96ac6243c044": "2026-06-20T20:24:35.875760+00:00",
+    "ca193e875b45": "2026-06-20T20:24:35.875760+00:00"
   },
   "live_clusters": {
     "d06d6a14c4d27fc0": {
@@ -813,7 +827,8 @@
     "b9df1e7f78ec6930": {
       "topic": "Heat Trade Package Giannis Antetokounmpo Bucks",
       "item_ids": [
-        "c71214fb9868"
+        "c71214fb9868",
+        "8052773c3c16"
       ],
       "created_at": "2026-06-19T21:55:21.409457+00:00",
       "last_escalated_size": 0,
@@ -979,7 +994,8 @@
       "item_ids": [
         "c5987068d619",
         "9fccfaec9cf5",
-        "11eae2dc65be"
+        "11eae2dc65be",
+        "71048af5a28b"
       ],
       "created_at": "2026-06-20T00:06:09.951955+00:00",
       "last_escalated_size": 3,
@@ -1120,7 +1136,8 @@
     "8268df4cf3a44374": {
       "topic": "AI Financial Advice Risk Warning",
       "item_ids": [
-        "3225fd4eeb33"
+        "3225fd4eeb33",
+        "24c7ab431b3e"
       ],
       "created_at": "2026-06-20T04:38:37.504937+00:00",
       "last_escalated_size": 0,
@@ -1283,7 +1300,8 @@
     "1f7bd39cf9608e9b": {
       "topic": "BMW Sedan i3 Design Alternative Concept",
       "item_ids": [
-        "9ddf8b652f95"
+        "9ddf8b652f95",
+        "edcdf7709cae"
       ],
       "created_at": "2026-06-20T10:40:18.978867+00:00",
       "last_escalated_size": 0,
@@ -1960,7 +1978,97 @@
       "created_at": "2026-06-20T19:01:15.572984+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "6de2dc64233acf52": {
+      "topic": "New Balance 1890 Linen Green Trail Sneaker Release",
+      "item_ids": [
+        "8e6832d32c82"
+      ],
+      "created_at": "2026-06-20T20:25:08.567865+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8536fe677f5bc094": {
+      "topic": "Dolce & Gabbana Party Jeans Fashion Revival",
+      "item_ids": [
+        "2a0a134f00e9"
+      ],
+      "created_at": "2026-06-20T20:25:08.567865+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "62c5072304becb65": {
+      "topic": "Charli XCX Mental Health Struggle Statement",
+      "item_ids": [
+        "823a83c22a9d"
+      ],
+      "created_at": "2026-06-20T20:25:08.567865+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1c7ef3390a954150": {
+      "topic": "Ne-Yo Fabolous Joint Album Release Challenges",
+      "item_ids": [
+        "c1d47d92510e"
+      ],
+      "created_at": "2026-06-20T20:25:08.567865+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "04599454d35f1e9a": {
+      "topic": "Dua Lipa Callum Turner Wedding Sicily Photos",
+      "item_ids": [
+        "3bb950ea6cac"
+      ],
+      "created_at": "2026-06-20T20:25:08.567865+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dfd25c10e936d899": {
+      "topic": "Lou Williams Jay-Z 2005 NBA Draft Decision Denial",
+      "item_ids": [
+        "6986aaa215b7"
+      ],
+      "created_at": "2026-06-20T20:25:08.567865+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "94d57451186ef4ca": {
+      "topic": "Isaiah Stewart NBA Trade Interest 2026 Offseason",
+      "item_ids": [
+        "096c08e69e4f"
+      ],
+      "created_at": "2026-06-20T20:25:08.567865+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b621bbcc73194f7d": {
+      "topic": "Boston Celtics 2026 NBA Draft Big Board",
+      "item_ids": [
+        "1fa003557ae9"
+      ],
+      "created_at": "2026-06-20T20:25:08.567865+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2c199dc5fba29b1f": {
+      "topic": "Cottage Cheese Shortage TikTok Protein Trend",
+      "item_ids": [
+        "7326ffa0f906"
+      ],
+      "created_at": "2026-06-20T20:25:08.567865+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fcf7f29a34cc9cf0": {
+      "topic": "2026 BMW X3 vs Mercedes-Benz GLC Luxury SUV Comparison",
+      "item_ids": [
+        "19932d67bb24"
+      ],
+      "created_at": "2026-06-20T20:25:08.567865+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-20T19:01:15.574145+00:00"
+  "last_checked": "2026-06-20T20:25:08.568981+00:00"
 }
