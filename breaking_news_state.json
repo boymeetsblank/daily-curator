@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "7077dc6f18ff",
-    "7c2d25cc7a51",
-    "9c2571a77379",
-    "adcf80d53822",
-    "404565b7b0d1",
-    "7c196cb316db",
-    "8ab831b6ad44",
-    "e433453dc892",
-    "a3a7ed602fe2",
-    "deebde359db7",
-    "78120a68202a",
-    "05feed7d0529",
-    "0d9d71d5dca2",
     "fc7c2632364b",
     "ca42bce97283",
     "ecc401c03473",
@@ -499,17 +486,22 @@
     "1171da894157",
     "8932947ec301",
     "18c8655354c3",
-    "d3ad01dd9820"
+    "d3ad01dd9820",
+    "4c2cb24299fe",
+    "6173f1b0e697",
+    "07f9356ccbe0",
+    "0f2fb2eaa2a8",
+    "e4eb1d06a421",
+    "5f4f9e707423",
+    "1f6584e6103d",
+    "a83b79600f18",
+    "8bceff7d1d23",
+    "142f539c9621",
+    "b2bc1d9d12d1",
+    "83967b7533fd",
+    "6c638460886c"
   ],
   "failed_ids": {
-    "50ccfb3edac0": "2026-06-20T14:35:22.131227+00:00",
-    "608c6fe92f98": "2026-06-20T14:35:22.131227+00:00",
-    "c35248c78d53": "2026-06-20T14:35:22.131227+00:00",
-    "0464f852f674": "2026-06-20T14:35:22.131227+00:00",
-    "ef787915bd30": "2026-06-20T14:35:22.131227+00:00",
-    "7d813029ae8d": "2026-06-20T14:35:22.131227+00:00",
-    "1449243310f1": "2026-06-20T14:35:22.131227+00:00",
-    "156e234d4b53": "2026-06-20T14:35:22.131227+00:00",
     "21de652c3ba3": "2026-06-20T16:04:22.247618+00:00",
     "7b0a44e37a35": "2026-06-20T16:04:22.247618+00:00",
     "627c2b77585d": "2026-06-20T16:04:22.247618+00:00",
@@ -520,7 +512,20 @@
     "fc2bce5f150f": "2026-06-20T17:43:19.695580+00:00",
     "6347f8027eea": "2026-06-20T17:43:19.695580+00:00",
     "593ee6f85fc3": "2026-06-20T17:43:19.695580+00:00",
-    "cdac2b3b03bc": "2026-06-20T17:43:19.695580+00:00"
+    "cdac2b3b03bc": "2026-06-20T17:43:19.695580+00:00",
+    "ad3c891acce1": "2026-06-20T19:00:41.548574+00:00",
+    "0d4df47f2e21": "2026-06-20T19:00:41.548574+00:00",
+    "b6cacee68f2a": "2026-06-20T19:00:41.548574+00:00",
+    "efb2b225fac5": "2026-06-20T19:00:41.548574+00:00",
+    "f65242bba44f": "2026-06-20T19:00:41.548574+00:00",
+    "5c793634d170": "2026-06-20T19:00:41.548574+00:00",
+    "120b695cf353": "2026-06-20T19:00:41.548574+00:00",
+    "d597ac624340": "2026-06-20T19:00:41.548574+00:00",
+    "3d0af3520d2e": "2026-06-20T19:00:41.548574+00:00",
+    "b3c8bf24856f": "2026-06-20T19:00:41.548574+00:00",
+    "8923784823f3": "2026-06-20T19:00:41.548574+00:00",
+    "ed65ce14eeff": "2026-06-20T19:00:41.548574+00:00",
+    "1dd94ac22fe5": "2026-06-20T19:00:41.548574+00:00"
   },
   "live_clusters": {
     "d06d6a14c4d27fc0": {
@@ -1051,7 +1056,8 @@
     "c50691a8a87b8340": {
       "topic": "Kanye West Bully Deluxe Edition Release",
       "item_ids": [
-        "381b8ee4aa7b"
+        "381b8ee4aa7b",
+        "07f9356ccbe0"
       ],
       "created_at": "2026-06-20T04:38:37.504937+00:00",
       "last_escalated_size": 0,
@@ -1872,7 +1878,89 @@
       "created_at": "2026-06-20T17:44:05.153288+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "ba3484c16d4694c2": {
+      "topic": "PUMA Hali 1 Green Colorway Summer Release",
+      "item_ids": [
+        "4c2cb24299fe"
+      ],
+      "created_at": "2026-06-20T19:01:15.572984+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9d16ff8fe298d356": {
+      "topic": "Olivia Wilde Pamela Anderson Don't Worry Darling Support",
+      "item_ids": [
+        "6173f1b0e697"
+      ],
+      "created_at": "2026-06-20T19:01:15.572984+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5e9911e67c26d03e": {
+      "topic": "Bobby Prince Doom Composer Death",
+      "item_ids": [
+        "0f2fb2eaa2a8"
+      ],
+      "created_at": "2026-06-20T19:01:15.572984+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9f3e678e527329fb": {
+      "topic": "Founders Fund Humane Fish Killing Investment",
+      "item_ids": [
+        "e4eb1d06a421"
+      ],
+      "created_at": "2026-06-20T19:01:15.572984+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4b8752d46be7ff72": {
+      "topic": "NASA Rover High-Speed Climbing Obstacle Navigation Testing",
+      "item_ids": [
+        "5f4f9e707423"
+      ],
+      "created_at": "2026-06-20T19:01:15.572984+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bcc4618d6dd791c1": {
+      "topic": "Giannis Antetokounmpo Trade Partner Analysis Bucks",
+      "item_ids": [
+        "1f6584e6103d"
+      ],
+      "created_at": "2026-06-20T19:01:15.572984+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2e99ea798dc5fb69": {
+      "topic": "Kings Darius Acuff Trade Interest Snag",
+      "item_ids": [
+        "a83b79600f18"
+      ],
+      "created_at": "2026-06-20T19:01:15.572984+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "14ba7f1dff3ce9a6": {
+      "topic": "Nets 2026 NBA Mock Draft Ball Handler Need",
+      "item_ids": [
+        "8bceff7d1d23"
+      ],
+      "created_at": "2026-06-20T19:01:15.572984+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "368ccc662f5684e9": {
+      "topic": "Knicks 2026 NBA Mock Draft Size Evaluation",
+      "item_ids": [
+        "142f539c9621",
+        "b2bc1d9d12d1"
+      ],
+      "created_at": "2026-06-20T19:01:15.572984+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-20T17:44:11.322254+00:00"
+  "last_checked": "2026-06-20T19:01:15.574145+00:00"
 }
