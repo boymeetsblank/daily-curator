@@ -1,38 +1,5 @@
 {
   "known_ids": [
-    "26dfe4b98de8",
-    "b5c4e9acdd4e",
-    "5740e44dcdd6",
-    "5ede97c9ceb8",
-    "5d6a19891102",
-    "e9804328d615",
-    "32dd31a5002d",
-    "1e53e5238ff2",
-    "cbe3fda1ba26",
-    "57bc96b1c60b",
-    "07e5feeaaefc",
-    "be9ca4c89575",
-    "f8a546a5d834",
-    "379cd9d0ade0",
-    "19ed489a30c9",
-    "f865bda133df",
-    "46b5e682418c",
-    "16ac3cc5eca0",
-    "443141626262",
-    "37ed5c7ad244",
-    "a9b983627b55",
-    "7fc72114ac88",
-    "5ecce4458423",
-    "f7db370cf36f",
-    "d7b6b82f2b8b",
-    "ad1f34801031",
-    "c25a5a1eef68",
-    "8a7244dcb11b",
-    "6b055a86c04f",
-    "1610ae5ac6a3",
-    "de0e3a0e0038",
-    "79507096aa47",
-    "35e6bd379096",
     "7077dc6f18ff",
     "7c2d25cc7a51",
     "9c2571a77379",
@@ -499,20 +466,42 @@
     "7743c3976204",
     "f675623fb8a8",
     "85460f72bca9",
-    "0974b0420d85"
+    "0974b0420d85",
+    "2f7b40c0b885",
+    "5135ab84e2ac",
+    "9455b659d6bd",
+    "3560ee2f30c2",
+    "66434dd25474",
+    "1c959f084f6c",
+    "f636e7fa642b",
+    "1437255c1c70",
+    "1d589600816a",
+    "232b0ce5ea49",
+    "4fdc87487de3",
+    "6c43dd68be1a",
+    "82b566598172",
+    "84f55c44397e",
+    "07ae8dbd77a0",
+    "f688da757627",
+    "4348459df301",
+    "3cc4e0902b08",
+    "4624199cbb8d",
+    "d43ae8b88103",
+    "4f50294375b5",
+    "57235185b881",
+    "b3955d929eae",
+    "0d7c893e5a99",
+    "3e970782a478",
+    "f3ea5ed3031c",
+    "866d4c330067",
+    "3b7246959941",
+    "a0653c186706",
+    "1171da894157",
+    "8932947ec301",
+    "18c8655354c3",
+    "d3ad01dd9820"
   ],
   "failed_ids": {
-    "d0deb6ddeff9": "2026-06-20T12:18:08.598747+00:00",
-    "f1e284869d29": "2026-06-20T12:18:08.598747+00:00",
-    "4ec5644e4c3a": "2026-06-20T12:18:08.598747+00:00",
-    "22ecb8659d4d": "2026-06-20T12:18:08.598747+00:00",
-    "c6893a76f336": "2026-06-20T12:18:08.598747+00:00",
-    "5759229ac38a": "2026-06-20T12:18:08.598747+00:00",
-    "d91b2ef66444": "2026-06-20T12:18:08.598747+00:00",
-    "0eb285d3214b": "2026-06-20T12:18:08.598747+00:00",
-    "dc48fbb64144": "2026-06-20T12:18:08.598747+00:00",
-    "c2e6c79efcfb": "2026-06-20T12:18:08.598747+00:00",
-    "ed65ce14eeff": "2026-06-20T12:18:08.598747+00:00",
     "50ccfb3edac0": "2026-06-20T14:35:22.131227+00:00",
     "608c6fe92f98": "2026-06-20T14:35:22.131227+00:00",
     "c35248c78d53": "2026-06-20T14:35:22.131227+00:00",
@@ -526,509 +515,14 @@
     "627c2b77585d": "2026-06-20T16:04:22.247618+00:00",
     "e0c502dfc0eb": "2026-06-20T16:04:22.247618+00:00",
     "cff025defb26": "2026-06-20T16:04:22.247618+00:00",
-    "0c36baff7b9b": "2026-06-20T16:04:22.247618+00:00"
+    "0c36baff7b9b": "2026-06-20T16:04:22.247618+00:00",
+    "7e4b56fa0506": "2026-06-20T17:43:19.695580+00:00",
+    "fc2bce5f150f": "2026-06-20T17:43:19.695580+00:00",
+    "6347f8027eea": "2026-06-20T17:43:19.695580+00:00",
+    "593ee6f85fc3": "2026-06-20T17:43:19.695580+00:00",
+    "cdac2b3b03bc": "2026-06-20T17:43:19.695580+00:00"
   },
   "live_clusters": {
-    "d2163382ecd57d79": {
-      "topic": "New Balance Sneaker Archive World Cup Boot Testing",
-      "item_ids": [
-        "3f0b50b105e5"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8caaca00eb8a264b": {
-      "topic": "Jordan Brand Quai 54 2026 Collection Air Jordan 11 IE Low",
-      "item_ids": [
-        "cebc2faec240"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b7987a269bccf2bb": {
-      "topic": "Nike Air Max Joga Bonito R9 Release",
-      "item_ids": [
-        "5045c3a79770"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4eec5f339ed93751": {
-      "topic": "Nike Air Griffey Max 1 HBCU Swingman Classic",
-      "item_ids": [
-        "e226215f501d"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8f1adbece1bb9fab": {
-      "topic": "Achraf Hakimi Rape Trial",
-      "item_ids": [
-        "aba66452d946"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "584bb0e58317cb39": {
-      "topic": "Teacher Accused Sexual Misconduct OnlyFans Blackmail",
-      "item_ids": [
-        "f4bd33c21948"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0935282655eb5890": {
-      "topic": "Soulgoods Nike Homescape Woven Collaboration July Release",
-      "item_ids": [
-        "15c15bcf63d9"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "15269c68be546de0": {
-      "topic": "Uwe Boll Citizen Vigilante Armie Hammer Thriller",
-      "item_ids": [
-        "fbef230f8261",
-        "5b164d6df7da",
-        "75da7d508ab3"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-20T16:04:22.247618+00:00",
-      "picks_file": "picks/picks-2026-06-20-1605.md",
-      "why_text": "Uwe Boll \u2014 the infamous director behind some of cinema's most notorious flops \u2014 appears to be mounting a comeback by casting Armie Hammer, Hollywood's most notorious cancelled star, in a new vigilante thriller. It's a pairing that makes a perverse kind of sense: two figures the industry wrote off finding each other at the margins. Whether this is genuine artistic rehabilitation or spectacle-for-spectacle's-sake, it's already a cultural lightning rod.",
-      "last_escalated_item_ids": [
-        "fbef230f8261",
-        "5b164d6df7da",
-        "75da7d508ab3"
-      ]
-    },
-    "c98aa8d8019aecb6": {
-      "topic": "Japan Record 25 Annecy 2026 Animation Selections",
-      "item_ids": [
-        "457ba578ff65"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "42fd40e63760c358": {
-      "topic": "Shanghai Documentary Golden Goblet Memory Freedom Music",
-      "item_ids": [
-        "2ead10c44f92",
-        "33492a4ea8a7"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1380e8233ad4229b": {
-      "topic": "Christopher Chung Slow Horses Roddy Ho Character Analysis",
-      "item_ids": [
-        "f357df72a1b8"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ab1002f68083e93c": {
-      "topic": "Zara Larsson Midnight Sun Billboard Pop Airplay Number 1",
-      "item_ids": [
-        "78a60c8e37f0"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ddb305a03a172690": {
-      "topic": "Reggaeton Beach Festival 2026 Cancellation",
-      "item_ids": [
-        "0f0143102b3b"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "486736a016d52ed2": {
-      "topic": "Olivia Rodrigo You Seem Pretty Sad UK Number 1",
-      "item_ids": [
-        "0a206b3db29e"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eb96717e3c56489e": {
-      "topic": "Taylor Swift I Knew It 2026 Biggest Sales Week UK",
-      "item_ids": [
-        "6fb1e2cc30b0"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ab68ae96a97307e": {
-      "topic": "Alex Warren Ordinary Most Weeks Billboard Airplay Charts",
-      "item_ids": [
-        "cbf92c9d9dd9"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8524d726375f8de3": {
-      "topic": "Justin Cary Sixpence None the Richer Bassist Death",
-      "item_ids": [
-        "8254b0bbce02"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d38854cbab311bfd": {
-      "topic": "Switchboard Acquires Shorts Galt Niederhoffer",
-      "item_ids": [
-        "48ddfa1b5f90"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d56c2e34a9b6281": {
-      "topic": "John Legend LA Times I Got My Brother Juneteenth Documentary",
-      "item_ids": [
-        "91bc0d5dae02"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dd71a4646f869a3d": {
-      "topic": "Jonathan Toews Retirement Stanley Cup Olympic Champion",
-      "item_ids": [
-        "a61df52e38d6"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e176f808be887433": {
-      "topic": "Green Bay Gottlieb Contract Extension 2030-31",
-      "item_ids": [
-        "f211f9cf322d"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e23395aa78b5137f": {
-      "topic": "World Cup 2026 Korea Mexico Group A Goalkeeper Error",
-      "item_ids": [
-        "d1c77111d216"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0de7991a7cf3e527": {
-      "topic": "Canada World Cup Kon\u00e9 Gruesome Injury Marsch Reaction",
-      "item_ids": [
-        "ae5ec6e421fd"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f0ea7f8355347644": {
-      "topic": "Phil Mickelson Country Club Resignation",
-      "item_ids": [
-        "29e6f4e816a3"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "16fb5bb5b69eed90": {
-      "topic": "Fusion Startups Raised Over 100 Million Dollars",
-      "item_ids": [
-        "d131d924d4b8"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7f3149e08ca26b56": {
-      "topic": "US Government Anthropic Ban Brand Impact",
-      "item_ids": [
-        "6d5e541bc2fd"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6ad07aaa399918f7": {
-      "topic": "Norway AI Restrictions Elementary School Children",
-      "item_ids": [
-        "b20ea8a1fb36",
-        "fbc21cc0e986"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5e9911e67c26d03e": {
-      "topic": "Bobby Prince Doom Composer Death",
-      "item_ids": [
-        "66973e81a56d"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "09c34d2cdeebfcda": {
-      "topic": "SpaceX Stock Private Trading First Week Performance",
-      "item_ids": [
-        "290f36cd9bda"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c88d34dc26462cd5": {
-      "topic": "NetJets Fatal Crash Texas VC Founder Death",
-      "item_ids": [
-        "202b88d947d7"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "855cc0326a76cbae": {
-      "topic": "Fisherman Found Alive After Week Lost at Sea",
-      "item_ids": [
-        "d246f36d4305"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "26cdfc3a2dbcdde7": {
-      "topic": "Teaching with Technology South Jersey",
-      "item_ids": [
-        "b4a9756d2153"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2e411d9891d15264": {
-      "topic": "Jack Technology Siemens AI Humanoid Robots Clothing Manufacturing",
-      "item_ids": [
-        "ae26795add9c"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "823093b83a761b0b": {
-      "topic": "Eurosatory 2026 Tanks IFVs Military Display",
-      "item_ids": [
-        "1a5cd237519f"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ee977264d66001a9": {
-      "topic": "RedDot MarketScale",
-      "item_ids": [
-        "84a62a094bab"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "31863f4e73df8ef1": {
-      "topic": "Oura Ring 5 Ultra Smart Wearable",
-      "item_ids": [
-        "fa698f485c13"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2722c1719a3e7f5f": {
-      "topic": "NBA Trade Rumors Derrick White Walker Kessler Celtics T-Wolves Jazz",
-      "item_ids": [
-        "bfcd129e3b63",
-        "397e8710e378",
-        "3ce4e5999d15",
-        "8a7ff639d64d"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-20T04:38:13.270488+00:00",
-      "picks_file": "picks/picks-2026-06-20-0438.md",
-      "why_text": "Minnesota is emerging as a serious player for Celtics guard Derrick White, with a potential framework involving Walker Kessler giving the Jazz a path into this deal and the T-Wolves a proven championship-level piece alongside Anthony Edwards. This matters because it signals Boston may be quietly dismantling its title roster faster than anyone expected \u2014 if White is available, the Celtics are almost certainly in a deeper rebuild conversation than they've publicly acknowledged. The Giannis undercurrent running through Jaylen Brown trade chatter only adds fuel: Boston's front office appears to be gaming out multiple futures at once.",
-      "last_escalated_item_ids": [
-        "bfcd129e3b63",
-        "397e8710e378",
-        "3ce4e5999d15",
-        "8a7ff639d64d"
-      ]
-    },
-    "f7d153b2c834e2d5": {
-      "topic": "NBA Player X-ray Medical Evaluation",
-      "item_ids": [
-        "017e22dc7983"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5570452af09c656a": {
-      "topic": "Chris Cenac Jr Boston Celtics 2026 NBA Draft",
-      "item_ids": [
-        "31ea22fade2b"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bf675dd0ccf01871": {
-      "topic": "NBA Trade Rumors High-Scoring Breakout Forward Multiple Teams Interest",
-      "item_ids": [
-        "a455b6ac7170",
-        "c94b0e379e07"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a9a65819b408110e": {
-      "topic": "Knicks 2026 NBA Draft Top 10 Prospects",
-      "item_ids": [
-        "ab8b8b3b16f3"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cc3d44e022ac8581": {
-      "topic": "Business Brief Axios",
-      "item_ids": [
-        "4c2979e6c13b"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2720a1bef2124290": {
-      "topic": "Amazon Prime Day Small Business Profitability",
-      "item_ids": [
-        "d8f5e0e775df"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5b9465ac7e14ef4d": {
-      "topic": "Business Courier 2026 Fast 55 Awards Regional Growth",
-      "item_ids": [
-        "8b4df931abdf"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8edcf0c939742442": {
-      "topic": "Potawatomi Ventures Native American Entrepreneur Business Program",
-      "item_ids": [
-        "fffe92dc2b45"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4f0dbd60bf6db857": {
-      "topic": "Drag Queen Business Owner Instagram Ban Policy",
-      "item_ids": [
-        "5855abbea61f"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f721e9d0bc1c5e0f": {
-      "topic": "IYF vs KRE Financial Sector ETF Comparison",
-      "item_ids": [
-        "c8723f45661a"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ab73772f0cdb18dd": {
-      "topic": "Financial Advisers Fired for Cause Employment Trend",
-      "item_ids": [
-        "b8d5fe28d885"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5d4b5da91dad6631": {
-      "topic": "Morningstar DBRS Credit Rating Finance Ireland RMBS",
-      "item_ids": [
-        "115d25737e0e"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4dbcdbf3587834a0": {
-      "topic": "West Virginia University Fiscal Year Financial Performance",
-      "item_ids": [
-        "c05d333cab69"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6cadc44d124e4c2a": {
-      "topic": "Senate Finance Committee ITC Nominees",
-      "item_ids": [
-        "f57f01019f65"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5ff3f05a40b29de8": {
-      "topic": "Dorman Products Used Car Parts Dealer Profitability",
-      "item_ids": [
-        "9c1f7f91b2fd"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7e433737b3a3380c": {
-      "topic": "BMW Police Deputies Stolen Goods Investigation",
-      "item_ids": [
-        "1fbcf256c83c"
-      ],
-      "created_at": "2026-06-19T17:17:29.947602+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "d06d6a14c4d27fc0": {
       "topic": "Nike Mind 002 Vast Grey Release",
       "item_ids": [
@@ -1069,11 +563,19 @@
       "topic": "Million-Dollar Luxury Watches Market Boom",
       "item_ids": [
         "466d271a4af7",
-        "223295db2ab7"
+        "223295db2ab7",
+        "9455b659d6bd"
       ],
       "created_at": "2026-06-19T20:49:14.376944+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-20T17:43:19.695580+00:00",
+      "picks_file": "picks/picks-2026-06-20-1744.md",
+      "why_text": "The million-dollar watch market is having a cultural moment, with pastel Hublots going viral as summer's must-flex accessory \u2014 but the same hype that's driving demand is making collectors targets. Atlanta's latest case, where two women allegedly drugged a man to steal his entire watch collection, is a direct symptom of how visible and valuable wrist game has become on the street level. When luxury watches cross from connoisseur culture into broad social currency, they also cross into a whole new risk category.",
+      "last_escalated_item_ids": [
+        "466d271a4af7",
+        "223295db2ab7",
+        "9455b659d6bd"
+      ]
     },
     "fc308da2c9d21776": {
       "topic": "Josh Hart James Dolan Sex Ban Madison Square Garden",
@@ -1675,7 +1177,8 @@
     "ca367fbbbf9ad0ec": {
       "topic": "Marvell Technology Stock Price Target $1 Trillion",
       "item_ids": [
-        "c13a88fe1b94"
+        "c13a88fe1b94",
+        "f688da757627"
       ],
       "created_at": "2026-06-20T10:40:18.978867+00:00",
       "last_escalated_size": 0,
@@ -2065,7 +1568,8 @@
     "a6147554063b5e8a": {
       "topic": "Toy Story 5 Box Office $71 Million Opening Day",
       "item_ids": [
-        "c2f972911157"
+        "c2f972911157",
+        "f636e7fa642b"
       ],
       "created_at": "2026-06-20T16:05:10.369016+00:00",
       "last_escalated_size": 0,
@@ -2128,7 +1632,8 @@
     "1259ecf9ad2ab1f9": {
       "topic": "Knicks NBA Championship Victory Luxury Party Celebration",
       "item_ids": [
-        "c2cc87fa74c9"
+        "c2cc87fa74c9",
+        "66434dd25474"
       ],
       "created_at": "2026-06-20T16:05:10.369016+00:00",
       "last_escalated_size": 0,
@@ -2151,7 +1656,223 @@
       "created_at": "2026-06-20T16:05:10.369016+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "bbd0f99fcd433e19": {
+      "topic": "New Balance 990v4 Teal Suede Release",
+      "item_ids": [
+        "2f7b40c0b885"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fc598e5ed97df303": {
+      "topic": "Kevin Hart $50K Ex-Assistant Tell-All Interview Dispute",
+      "item_ids": [
+        "5135ab84e2ac"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "666e8431401a740f": {
+      "topic": "Stephen A. Smith Booed MSG Knicks Players Apology",
+      "item_ids": [
+        "3560ee2f30c2"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "039d0b4d967e3d61": {
+      "topic": "Forrest Frank Jesus Generation Nashville Concert",
+      "item_ids": [
+        "1c959f084f6c"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4eec46c0762ffc7d": {
+      "topic": "George Lucas Minions & Monsters Voice Role",
+      "item_ids": [
+        "1437255c1c70"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "442be8de10bfcb0f": {
+      "topic": "Janie Sell Tony-Winning Over Here! Broadway Actor Death",
+      "item_ids": [
+        "1d589600816a"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3e4758a0e474cbb5": {
+      "topic": "John Jumper DeepMind Anthropic Move",
+      "item_ids": [
+        "232b0ce5ea49"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "17316ce4406ae54b": {
+      "topic": "Epic Launcher Ground-Up Rebuild 5x Speed",
+      "item_ids": [
+        "4fdc87487de3"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f2c2170822caea76": {
+      "topic": "NASA Swift Boost Telescope Rescue Mission",
+      "item_ids": [
+        "6c43dd68be1a"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "df59131e22272fd9": {
+      "topic": "Cuprum Metals $19.4M Copper Extraction Funding",
+      "item_ids": [
+        "82b566598172"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "006fc2faf474bf6a": {
+      "topic": "Enterprise AI Adoption Pilot to Core Strategy Shift",
+      "item_ids": [
+        "84f55c44397e"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c71a4557facf004e": {
+      "topic": "Furality Ultra Furry Tech Convention",
+      "item_ids": [
+        "07ae8dbd77a0"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "245e267c767a7b58": {
+      "topic": "Warriors NBA Draft Sleeper Picks 2026",
+      "item_ids": [
+        "4348459df301"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "786f524ffffe04fe": {
+      "topic": "Baba Miller Spain to 2026 NBA Draft Profile",
+      "item_ids": [
+        "3cc4e0902b08"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7831dce5283caf71": {
+      "topic": "2026 NBA Mock Draft Sixers Labaron Philon",
+      "item_ids": [
+        "4624199cbb8d"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b4c38874d9a4ca8b": {
+      "topic": "Darryn Peterson Kansas NBA Draft No. 1 Pick Prospect",
+      "item_ids": [
+        "d43ae8b88103"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9c315ca15b013947": {
+      "topic": "Spurs Draft Hidden Gem Julian Champagnie Replacement",
+      "item_ids": [
+        "4f50294375b5"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "043c3c575fbab816": {
+      "topic": "AI Subscription Consolidation Tool ChatGPT Claude",
+      "item_ids": [
+        "57235185b881"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3a3abc1213040a40": {
+      "topic": "Acton Norman Children's Business Fair",
+      "item_ids": [
+        "b3955d929eae"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "357fde182a856c7d": {
+      "topic": "Sterling Infrastructure Data Centers Chip Plants Pivot",
+      "item_ids": [
+        "0d7c893e5a99"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "602ddee391678a2e": {
+      "topic": "State Street vs Fidelity Financial ETF 2026",
+      "item_ids": [
+        "3e970782a478"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "81b070203c7f74c7": {
+      "topic": "BMW New Electric Coupe-SUV Ring Testing",
+      "item_ids": [
+        "f3ea5ed3031c"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "05fdccf5941a948a": {
+      "topic": "Used BMW Alpina B7 Bargain Alternative",
+      "item_ids": [
+        "866d4c330067"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8c41b7042c454beb": {
+      "topic": "Car Dealership AI Chatbot Malfunction $7K Loss",
+      "item_ids": [
+        "3b7246959941"
+      ],
+      "created_at": "2026-06-20T17:44:05.153288+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-20T16:05:27.219140+00:00"
+  "last_checked": "2026-06-20T17:44:11.322254+00:00"
 }
