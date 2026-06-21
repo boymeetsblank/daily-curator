@@ -1,41 +1,5 @@
 {
   "known_ids": [
-    "680c92d17bf8",
-    "a574471692df",
-    "53f88a509c85",
-    "5dc32d3ef657",
-    "521eb90a2ca5",
-    "828344cf6bc5",
-    "fbf0b7e8c3dd",
-    "d74f41f93b37",
-    "eec8b1ebb17a",
-    "6086fe5d12bd",
-    "eeffde24edbc",
-    "df2f54ff8aec",
-    "e049a76a95c8",
-    "a72eb77ea4b9",
-    "72b9630e983a",
-    "22f100804343",
-    "0919209f6a11",
-    "34b2841e5488",
-    "da1eec85662f",
-    "b3c31a21dbf2",
-    "2a6560177a27",
-    "2b593cd78a72",
-    "60391bcd10ad",
-    "0127e5b5b129",
-    "41450efeb327",
-    "f7e3720e38f1",
-    "9d1d068ccbb6",
-    "43db9d1fcba4",
-    "84cb81555bea",
-    "cab7b66e421b",
-    "cc43cdf18df2",
-    "1ad67f3e093a",
-    "c2c84a5d8375",
-    "ad1f22b45740",
-    "f9d9c24cab75",
-    "c2ca5999ff25",
     "256391f09756",
     "364ccffa0ef2",
     "793004d7117e",
@@ -499,7 +463,43 @@
     "0c50bfb7e03e",
     "fa228ec1d170",
     "9e52c8ea5782",
-    "30abb65f5fd2"
+    "30abb65f5fd2",
+    "04e2487505ef",
+    "66db61eea158",
+    "576cbeac3b93",
+    "b1e7402aa289",
+    "dc3cf36b58f0",
+    "5511b5310e22",
+    "04d8197a6b7b",
+    "a2aba3b25757",
+    "65c77913dd62",
+    "a3c579b1388c",
+    "f0ead3f09469",
+    "6995bad01439",
+    "c0dbea2ca295",
+    "27bde80b0837",
+    "c70214337385",
+    "d9d4e71c9d11",
+    "6b49b75c2446",
+    "d272007f9f21",
+    "c826482e3c9d",
+    "41fc380d265e",
+    "a9c72049f703",
+    "46813ea88598",
+    "8cf3b93fe2a9",
+    "de0312028464",
+    "c90b38c27d24",
+    "9d985c5aa147",
+    "9be978198808",
+    "eff49831e1a5",
+    "b26631cd29ba",
+    "1fa0e51c6128",
+    "f3f76e696128",
+    "6c27f19e6fee",
+    "3211342b21d6",
+    "098a804e1f65",
+    "14f46ad613c2",
+    "8bd7db9a8202"
   ],
   "failed_ids": {
     "e87a8e60009a": "2026-06-21T14:00:27.140548+00:00",
@@ -539,227 +539,16 @@
     "dcc701bc41aa": "2026-06-21T16:06:27.118977+00:00",
     "69ad246611d1": "2026-06-21T16:06:27.118977+00:00",
     "276672c38725": "2026-06-21T16:06:27.118977+00:00",
-    "226662e8fad5": "2026-06-21T16:06:27.118977+00:00"
+    "226662e8fad5": "2026-06-21T16:06:27.118977+00:00",
+    "fb0fd4de3989": "2026-06-21T17:49:43.569930+00:00",
+    "2925af5a3748": "2026-06-21T17:49:43.569930+00:00",
+    "44a6a185cf30": "2026-06-21T17:49:43.569930+00:00",
+    "bd30d95fdaad": "2026-06-21T17:49:43.569930+00:00",
+    "2dbf61a2e006": "2026-06-21T17:49:43.569930+00:00",
+    "130c988a675b": "2026-06-21T17:49:43.569930+00:00",
+    "98eaaa37eae6": "2026-06-21T17:49:43.569930+00:00"
   },
   "live_clusters": {
-    "bbd0f99fcd433e19": {
-      "topic": "New Balance 990v4 Teal Suede Release",
-      "item_ids": [
-        "2f7b40c0b885"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fc598e5ed97df303": {
-      "topic": "Kevin Hart $50K Ex-Assistant Tell-All Interview Dispute",
-      "item_ids": [
-        "5135ab84e2ac"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "666e8431401a740f": {
-      "topic": "Stephen A. Smith Booed MSG Knicks Players Apology",
-      "item_ids": [
-        "3560ee2f30c2"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "039d0b4d967e3d61": {
-      "topic": "Forrest Frank Jesus Generation Nashville Concert",
-      "item_ids": [
-        "1c959f084f6c"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4eec46c0762ffc7d": {
-      "topic": "George Lucas Minions & Monsters Voice Role",
-      "item_ids": [
-        "1437255c1c70",
-        "2832522117ea"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "442be8de10bfcb0f": {
-      "topic": "Janie Sell Tony-Winning Over Here! Broadway Actor Death",
-      "item_ids": [
-        "1d589600816a"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3e4758a0e474cbb5": {
-      "topic": "John Jumper DeepMind Anthropic Move",
-      "item_ids": [
-        "232b0ce5ea49"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "17316ce4406ae54b": {
-      "topic": "Epic Launcher Ground-Up Rebuild 5x Speed",
-      "item_ids": [
-        "4fdc87487de3"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f2c2170822caea76": {
-      "topic": "NASA Swift Boost Telescope Rescue Mission",
-      "item_ids": [
-        "6c43dd68be1a"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "df59131e22272fd9": {
-      "topic": "Cuprum Metals $19.4M Copper Extraction Funding",
-      "item_ids": [
-        "82b566598172"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "006fc2faf474bf6a": {
-      "topic": "Enterprise AI Adoption Pilot to Core Strategy Shift",
-      "item_ids": [
-        "84f55c44397e",
-        "f4b1ad9b5dcb"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c71a4557facf004e": {
-      "topic": "Furality Ultra Furry Tech Convention",
-      "item_ids": [
-        "07ae8dbd77a0"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "245e267c767a7b58": {
-      "topic": "Warriors NBA Draft Sleeper Picks 2026",
-      "item_ids": [
-        "4348459df301"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "786f524ffffe04fe": {
-      "topic": "Baba Miller Spain to 2026 NBA Draft Profile",
-      "item_ids": [
-        "3cc4e0902b08"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7831dce5283caf71": {
-      "topic": "2026 NBA Mock Draft Sixers Labaron Philon",
-      "item_ids": [
-        "4624199cbb8d"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b4c38874d9a4ca8b": {
-      "topic": "Darryn Peterson Kansas NBA Draft No. 1 Pick Prospect",
-      "item_ids": [
-        "d43ae8b88103"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9c315ca15b013947": {
-      "topic": "Spurs Draft Hidden Gem Julian Champagnie Replacement",
-      "item_ids": [
-        "4f50294375b5"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "043c3c575fbab816": {
-      "topic": "AI Subscription Consolidation Tool ChatGPT Claude",
-      "item_ids": [
-        "57235185b881"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3a3abc1213040a40": {
-      "topic": "Acton Norman Children's Business Fair",
-      "item_ids": [
-        "b3955d929eae"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "357fde182a856c7d": {
-      "topic": "Sterling Infrastructure Data Centers Chip Plants Pivot",
-      "item_ids": [
-        "0d7c893e5a99"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "602ddee391678a2e": {
-      "topic": "State Street vs Fidelity Financial ETF 2026",
-      "item_ids": [
-        "3e970782a478"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "81b070203c7f74c7": {
-      "topic": "BMW New Electric Coupe-SUV Ring Testing",
-      "item_ids": [
-        "f3ea5ed3031c"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "05fdccf5941a948a": {
-      "topic": "Used BMW Alpina B7 Bargain Alternative",
-      "item_ids": [
-        "866d4c330067"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8c41b7042c454beb": {
-      "topic": "Car Dealership AI Chatbot Malfunction $7K Loss",
-      "item_ids": [
-        "3b7246959941"
-      ],
-      "created_at": "2026-06-20T17:44:05.153288+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "ba3484c16d4694c2": {
       "topic": "PUMA Hali 1 Green Colorway Summer Release",
       "item_ids": [
@@ -958,7 +747,8 @@
     "cffac5da89dad9d7": {
       "topic": "Diddy Company Star Island $55M Sale Lawsuit",
       "item_ids": [
-        "12186af5c16f"
+        "12186af5c16f",
+        "b1e7402aa289"
       ],
       "created_at": "2026-06-20T21:46:47.384203+00:00",
       "last_escalated_size": 0,
@@ -1131,11 +921,20 @@
     "8e800311a418922c": {
       "topic": "SZA Criticizes Musicians Supporting AI Music Generation",
       "item_ids": [
-        "0c158e213aa8"
+        "0c158e213aa8",
+        "dc3cf36b58f0",
+        "a3c579b1388c"
       ],
       "created_at": "2026-06-21T00:03:34.510038+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-21T17:49:43.569930+00:00",
+      "picks_file": "picks/picks-2026-06-21-1750.md",
+      "why_text": "SZA's intervention lands with particular force because she isn't just defending her own catalog \u2014 she's naming a structural injustice: that platforms like Suno are effectively strip-mining Black musical genius to build products that will compete with and replace the very artists who created that sound. It's a rare moment of a mega-star using their platform to connect IP theft to a racial equity argument, pulling the AI music debate out of the courtroom and into a cultural reckoning. The fact that fellow artists like Kenneth Blume are echoing her publicly signals this could crystallize into a broader industry solidarity movement rather than another isolated complaint.",
+      "last_escalated_item_ids": [
+        "0c158e213aa8",
+        "dc3cf36b58f0",
+        "a3c579b1388c"
+      ]
     },
     "e699cf5c17dd2cef": {
       "topic": "Thunder 2026 NBA Draft Strategy Three Picks",
@@ -1375,11 +1174,21 @@
     "0e5712e767c27a2a": {
       "topic": "Fan Death Fall Goose Madison Square Garden Concert",
       "item_ids": [
-        "1a35cc5c1044"
+        "1a35cc5c1044",
+        "04d8197a6b7b",
+        "f0ead3f09469",
+        "6b49b75c2446"
       ],
       "created_at": "2026-06-21T14:00:58.719721+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-21T17:49:43.569930+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "1a35cc5c1044",
+        "04d8197a6b7b",
+        "f0ead3f09469",
+        "6b49b75c2446"
+      ]
     },
     "2a9348cc7952bb63": {
       "topic": "World Cup 2026 Team Tactics Gamesmanship",
@@ -1483,7 +1292,8 @@
     "79690153363bfb86": {
       "topic": "Toy Story 5 Box Office $160M Opening Record",
       "item_ids": [
-        "79862f475179"
+        "79862f475179",
+        "eff49831e1a5"
       ],
       "created_at": "2026-06-21T16:07:16.659583+00:00",
       "last_escalated_size": 0,
@@ -1677,7 +1487,189 @@
       "created_at": "2026-06-21T16:07:16.659583+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "10393ad97cdb5cf9": {
+      "topic": "Vozinha Cape Verde Goalkeeper Documentary",
+      "item_ids": [
+        "04e2487505ef"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ec9ab678f53dd6ef": {
+      "topic": "Kimberly Van Der Beek James Van Der Beek First Father's Day Tribute",
+      "item_ids": [
+        "576cbeac3b93"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "158d1fcb70f45bbc": {
+      "topic": "Karlovy Vary Film Festival 60th Edition Programming",
+      "item_ids": [
+        "5511b5310e22"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "578e0ffe42fc7ca7": {
+      "topic": "Aardman Animation Annecy 50 Years Pokemon Timmy",
+      "item_ids": [
+        "a2aba3b25757",
+        "d9d4e71c9d11"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8bf97162e1cd02ca": {
+      "topic": "Luca Guadagnino Artificial Film Distribution Mubi",
+      "item_ids": [
+        "65c77913dd62"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b3f7535bf624468c": {
+      "topic": "Ed Sheeran Nashville Nissan Stadium Concert",
+      "item_ids": [
+        "6995bad01439",
+        "27bde80b0837"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "efd305ad34b14f03": {
+      "topic": "Fabolous Father's Day NYC Criminal Justice Luncheon",
+      "item_ids": [
+        "c0dbea2ca295"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cb5613eff9e831de": {
+      "topic": "Gloria Trevi Jacqie Rivera Jenni Rivera Tribute Auditorio Nacional",
+      "item_ids": [
+        "c70214337385"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "60bcf7e744c70afc": {
+      "topic": "IFC Center Indie Box Office Maddie's Secret Gregg Allman",
+      "item_ids": [
+        "d272007f9f21"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9425d13cd2a3176f": {
+      "topic": "Polymarket Creators Deceptive Fake Bets Videos",
+      "item_ids": [
+        "c826482e3c9d"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b1e559e4818cec44": {
+      "topic": "CJ McCollum Hawks Contract Extension",
+      "item_ids": [
+        "41fc380d265e",
+        "a9c72049f703",
+        "46813ea88598"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-21T17:49:43.569930+00:00",
+      "picks_file": "picks/picks-2026-06-21-1750.md",
+      "why_text": "After being traded to Atlanta mid-season, McCollum is betting on himself with a one-year prove-it deal rather than chasing a longer, potentially lower-value contract \u2014 a calculated gamble at 33 that keeps his options open heading into what could be his final big payday. For the Hawks, it's a low-risk move to retain a veteran scorer and leader as the franchise continues its post-Trae Young reset. The short-term structure tells you everything: both sides see this as a audition year, not a commitment.",
+      "last_escalated_item_ids": [
+        "41fc380d265e",
+        "a9c72049f703",
+        "46813ea88598"
+      ]
+    },
+    "228e55e1af0755c1": {
+      "topic": "Spurs Warriors Trade Target Four-Time Champion",
+      "item_ids": [
+        "8cf3b93fe2a9"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9e35acdb6b8cb0ea": {
+      "topic": "Danny Green Orlando Bubble NBA Experience Reflection",
+      "item_ids": [
+        "de0312028464"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "12a8d81314612835": {
+      "topic": "World Cup 2026 Bay Area Watch Parties Business Surge",
+      "item_ids": [
+        "c90b38c27d24"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ff0292afb1cfcee5": {
+      "topic": "EAE Business School 2025 Job Placement Salary Growth",
+      "item_ids": [
+        "9d985c5aa147"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "caa72df2652f66a6": {
+      "topic": "Target Leadership Executive Changes",
+      "item_ids": [
+        "9be978198808"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "78e8cccadd840a2d": {
+      "topic": "Jefferson County Luxury Home Sales May 2026",
+      "item_ids": [
+        "b26631cd29ba"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "784301d64e0717f2": {
+      "topic": "Financial Stocks Market Crash Investment Strategy",
+      "item_ids": [
+        "1fa0e51c6128"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b390900a1e269e0a": {
+      "topic": "BMW 1M Rarest Example Ownership History",
+      "item_ids": [
+        "f3f76e696128"
+      ],
+      "created_at": "2026-06-21T17:50:12.378273+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-21T16:07:23.788421+00:00"
+  "last_checked": "2026-06-21T17:50:24.516522+00:00"
 }
