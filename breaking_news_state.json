@@ -1,17 +1,5 @@
 {
   "known_ids": [
-    "4191c665f428",
-    "92439840d1c5",
-    "3b02dde94514",
-    "f03607f2f56d",
-    "9f8c32e81c96",
-    "ec34c7648366",
-    "104d0b35a468",
-    "cec836ef35fb",
-    "d0d7b289c5ef",
-    "fc23a9a03735",
-    "852bbf67b675",
-    "9873fef4a89c",
     "d7f6f1d52c84",
     "3677a4b3ca91",
     "13aefca4467d",
@@ -499,7 +487,19 @@
     "87122d1aef72",
     "35e89e01b936",
     "bf631a00be1f",
-    "3612ef3243af"
+    "3612ef3243af",
+    "ec4aa1f6b920",
+    "cab29035c83c",
+    "753b429d29aa",
+    "37fbe321ee14",
+    "b6bf7d8f0c37",
+    "beedf5077dae",
+    "0782f523285f",
+    "6fdfe7c18db0",
+    "775defddb1ea",
+    "504cb5fb86e6",
+    "73fce82f5fb6",
+    "fddbf410ce6c"
   ],
   "failed_ids": {
     "6eb119a14d4e": "2026-06-21T05:15:20.547846+00:00",
@@ -508,36 +508,19 @@
     "1125d7c76531": "2026-06-21T05:15:20.547846+00:00",
     "d8870aa05c48": "2026-06-21T05:15:20.547846+00:00",
     "bb1f9d653a95": "2026-06-21T05:15:20.547846+00:00",
-    "8a2c5f3fedae": "2026-06-21T05:15:20.547846+00:00"
+    "8a2c5f3fedae": "2026-06-21T05:15:20.547846+00:00",
+    "5eaf720074d5": "2026-06-21T09:03:51.751981+00:00",
+    "67fce52537aa": "2026-06-21T09:03:51.751981+00:00",
+    "932551c5f28f": "2026-06-21T09:03:51.751981+00:00",
+    "015b5cef87e6": "2026-06-21T09:03:51.751981+00:00",
+    "a0e774f16188": "2026-06-21T09:03:51.751981+00:00",
+    "38c99ee34b2f": "2026-06-21T09:03:51.751981+00:00",
+    "b3f49fe0a5ca": "2026-06-21T09:03:51.751981+00:00",
+    "9a2161788f52": "2026-06-21T09:03:51.751981+00:00",
+    "b7eee6d25932": "2026-06-21T09:03:51.751981+00:00",
+    "c05cc8a55bca": "2026-06-21T09:03:51.751981+00:00"
   },
   "live_clusters": {
-    "7692c1cd985691b4": {
-      "topic": "The Whitlams Australian Rock Island Tour Return",
-      "item_ids": [
-        "2097a6965f84"
-      ],
-      "created_at": "2026-06-20T08:05:48.988110+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0daa0762c782aa65": {
-      "topic": "USMNT World Cup 2026 Ambitions Analysis",
-      "item_ids": [
-        "f8a24a6d5e42"
-      ],
-      "created_at": "2026-06-20T08:05:48.988110+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c037126e4077e6bf": {
-      "topic": "Big 12 Sorsby Fallout Monitoring Options",
-      "item_ids": [
-        "d476f9f201fd"
-      ],
-      "created_at": "2026-06-20T08:05:48.988110+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "2d94f035bccb1f93": {
       "topic": "Manchester City vs Manchester United Transfer Rivalry",
       "item_ids": [
@@ -1703,7 +1686,88 @@
       "created_at": "2026-06-21T05:15:49.079558+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "a26124b8dfc0cd96": {
+      "topic": "Carlos Saiz 'Lionel' Transilvania Film Festival Grand Prize",
+      "item_ids": [
+        "ec4aa1f6b920"
+      ],
+      "created_at": "2026-06-21T09:04:24.384063+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "04883242b3e3a58f": {
+      "topic": "Transilvania Film Festival Industry Awards Winners",
+      "item_ids": [
+        "cab29035c83c"
+      ],
+      "created_at": "2026-06-21T09:04:24.384063+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9e851f78fef44455": {
+      "topic": "Yash 'Toxic' August Release Film",
+      "item_ids": [
+        "753b429d29aa"
+      ],
+      "created_at": "2026-06-21T09:04:24.384063+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d83f619a6a92d24b": {
+      "topic": "Zhang Songwen 'Secret in the Box' Shanghai Film Competition",
+      "item_ids": [
+        "37fbe321ee14"
+      ],
+      "created_at": "2026-06-21T09:04:24.384063+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "177b98e89fa8095c": {
+      "topic": "SIS Pitches Advanced Technology 2026 World Cup Stadiums",
+      "item_ids": [
+        "b6bf7d8f0c37"
+      ],
+      "created_at": "2026-06-21T09:04:24.384063+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "65228eb14a973f0f": {
+      "topic": "Phoenix Suns Dillon Brooks Decision",
+      "item_ids": [
+        "beedf5077dae"
+      ],
+      "created_at": "2026-06-21T09:04:24.384063+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aba87eb181b5b349": {
+      "topic": "LA Lakers NBA Finals Centers Trade Interest",
+      "item_ids": [
+        "0782f523285f"
+      ],
+      "created_at": "2026-06-21T09:04:24.384063+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "93c69bbaecae4acd": {
+      "topic": "Vancouver Retro Gaming Expo",
+      "item_ids": [
+        "6fdfe7c18db0"
+      ],
+      "created_at": "2026-06-21T09:04:24.384063+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9b6a706499b50384": {
+      "topic": "Miami Couple Car Rental Side Gig Six-Figure Business",
+      "item_ids": [
+        "775defddb1ea"
+      ],
+      "created_at": "2026-06-21T09:04:24.384063+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-21T05:16:00.254498+00:00"
+  "last_checked": "2026-06-21T09:04:24.385293+00:00"
 }
