@@ -1,26 +1,5 @@
 {
   "known_ids": [
-    "638a598c510e",
-    "aa383d85f81d",
-    "c49f6d9ffaaf",
-    "07718938fac6",
-    "80830e936fb5",
-    "1761ad2af15b",
-    "524e6f242487",
-    "090f25629202",
-    "84115512439b",
-    "032a4c3b4244",
-    "3648bf41f0b0",
-    "f92ca086f3c9",
-    "6aa0a8ea7dfb",
-    "fe78d613f363",
-    "da13414bc887",
-    "ace857bd2906",
-    "356bba0fea9a",
-    "3da38c6fbed9",
-    "48c37f56abb1",
-    "8b4aa618acbd",
-    "f00833a77a53",
     "4191c665f428",
     "92439840d1c5",
     "3b02dde94514",
@@ -499,230 +478,39 @@
     "d7076d929090",
     "24a742d91dcf",
     "f251162f1e16",
-    "48051edd9720"
+    "48051edd9720",
+    "380d9ebac752",
+    "6e42ecfce561",
+    "ba7c7dbb25c8",
+    "eaff5095eb93",
+    "790cbecf08a1",
+    "8e3ae2df8048",
+    "0b7736a75820",
+    "be2a5c6b9c60",
+    "c4c79e46ac21",
+    "6404cee055e8",
+    "05c5189c673f",
+    "0c2cb84e6034",
+    "924db5531ea5",
+    "c5cf0d1109cb",
+    "25b03971e066",
+    "03eb0aa976f1",
+    "9bc39ab80982",
+    "87122d1aef72",
+    "35e89e01b936",
+    "bf631a00be1f",
+    "3612ef3243af"
   ],
   "failed_ids": {
-    "5ef38a210a28": "2026-06-20T20:24:35.875760+00:00",
-    "684e55787a48": "2026-06-20T20:24:35.875760+00:00",
-    "5cab6cb8b0ba": "2026-06-20T20:24:35.875760+00:00",
-    "7d42e8818134": "2026-06-20T20:24:35.875760+00:00",
-    "0afa17e10237": "2026-06-20T20:24:35.875760+00:00",
-    "7e59b887851b": "2026-06-20T20:24:35.875760+00:00",
-    "21de652c3ba3": "2026-06-20T20:24:35.875760+00:00",
-    "22dce766c369": "2026-06-20T20:24:35.875760+00:00",
-    "8b5612915d21": "2026-06-20T20:24:35.875760+00:00",
-    "7209441c9f00": "2026-06-20T20:24:35.875760+00:00",
-    "e6302713a707": "2026-06-20T20:24:35.875760+00:00",
-    "976e6815c4e3": "2026-06-20T20:24:35.875760+00:00",
-    "4e5da1a44056": "2026-06-20T20:24:35.875760+00:00",
-    "c19d9aa9d69e": "2026-06-20T20:24:35.875760+00:00",
-    "b2f3d1890b34": "2026-06-20T20:24:35.875760+00:00",
-    "69b023e03cdc": "2026-06-20T20:24:35.875760+00:00",
-    "1b42b99f6668": "2026-06-20T20:24:35.875760+00:00",
-    "869248625265": "2026-06-20T20:24:35.875760+00:00",
-    "96ac6243c044": "2026-06-20T20:24:35.875760+00:00",
-    "ca193e875b45": "2026-06-20T20:24:35.875760+00:00",
-    "f6ccacbce922": "2026-06-20T21:46:10.890081+00:00",
-    "b963925e6169": "2026-06-20T21:46:10.890081+00:00",
-    "7e4b56fa0506": "2026-06-20T21:46:10.890081+00:00",
-    "41a269e075e1": "2026-06-20T21:46:10.890081+00:00",
-    "26ac91a9ff5c": "2026-06-20T21:46:10.890081+00:00",
-    "74aa59040545": "2026-06-20T21:46:10.890081+00:00",
-    "9985c65604a6": "2026-06-20T21:46:10.890081+00:00",
-    "caa5bd124123": "2026-06-20T21:46:10.890081+00:00",
-    "e63a94496028": "2026-06-20T21:46:10.890081+00:00",
-    "4881d9302dae": "2026-06-20T21:46:10.890081+00:00",
-    "cdac2b3b03bc": "2026-06-20T21:46:10.890081+00:00",
-    "9e274fcc2fca": "2026-06-20T21:46:10.890081+00:00",
-    "30ef073d4806": "2026-06-20T21:46:10.890081+00:00",
-    "3f2a2cb3125f": "2026-06-20T21:46:10.890081+00:00",
-    "41062eb95ebe": "2026-06-20T22:52:25.661793+00:00",
-    "4e6ba7dbd31d": "2026-06-20T22:52:25.661793+00:00",
-    "bfedf9a7f648": "2026-06-20T22:52:25.661793+00:00",
-    "b7c7e2ccfc11": "2026-06-20T22:52:25.661793+00:00",
-    "a84c14b71012": "2026-06-20T22:52:25.661793+00:00",
-    "694f31f557be": "2026-06-20T22:52:25.661793+00:00",
-    "6a22c16d4f62": "2026-06-20T22:52:25.661793+00:00",
-    "4545888e6d8f": "2026-06-20T22:52:25.661793+00:00",
-    "56e15e5b7703": "2026-06-20T22:52:25.661793+00:00",
-    "10ba62099348": "2026-06-20T22:52:25.661793+00:00",
-    "57411c9a6e86": "2026-06-20T22:52:25.661793+00:00",
-    "8e0db62c5a35": "2026-06-21T00:02:58.041359+00:00",
-    "bf8acdbdb31f": "2026-06-21T00:02:58.041359+00:00",
-    "aa7aa13e3811": "2026-06-21T00:02:58.041359+00:00",
-    "5b11c2337085": "2026-06-21T00:02:58.041359+00:00",
-    "c895b105511f": "2026-06-21T00:02:58.041359+00:00",
-    "742e5bfc4aab": "2026-06-21T00:02:58.041359+00:00"
+    "6eb119a14d4e": "2026-06-21T05:15:20.547846+00:00",
+    "3efae8b82fc6": "2026-06-21T05:15:20.547846+00:00",
+    "4b11e84d9f0f": "2026-06-21T05:15:20.547846+00:00",
+    "1125d7c76531": "2026-06-21T05:15:20.547846+00:00",
+    "d8870aa05c48": "2026-06-21T05:15:20.547846+00:00",
+    "bb1f9d653a95": "2026-06-21T05:15:20.547846+00:00",
+    "8a2c5f3fedae": "2026-06-21T05:15:20.547846+00:00"
   },
   "live_clusters": {
-    "a11fe60c84f02a85": {
-      "topic": "adidas D.O.N. Issue #8 Yin And Yang Sneaker Release",
-      "item_ids": [
-        "8d313b834cfa"
-      ],
-      "created_at": "2026-06-20T00:06:09.951955+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "42b16736b6c25924": {
-      "topic": "Jalen Brunson Elmo Feud Ends Knicks Championship Parade",
-      "item_ids": [
-        "c5987068d619",
-        "9fccfaec9cf5",
-        "11eae2dc65be",
-        "71048af5a28b",
-        "0be45e7a58d2",
-        "f4766c53c7cd"
-      ],
-      "created_at": "2026-06-20T00:06:09.951955+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-20T22:52:25.661793+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "c5987068d619",
-        "9fccfaec9cf5",
-        "11eae2dc65be",
-        "71048af5a28b",
-        "0be45e7a58d2",
-        "f4766c53c7cd"
-      ]
-    },
-    "a353dc83bcad77d3": {
-      "topic": "Dutton Ranch Episode 7 Character Deaths Bar Brawl",
-      "item_ids": [
-        "bb0e27bf2c99"
-      ],
-      "created_at": "2026-06-20T00:06:09.951955+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "90f89866783c5e64": {
-      "topic": "Tay Keith Producer Death Family Tribute",
-      "item_ids": [
-        "a2f92605834d",
-        "4ab9c5e7e83a",
-        "c6ee0ec04f34"
-      ],
-      "created_at": "2026-06-20T00:06:09.951955+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-20T16:04:22.247618+00:00",
-      "picks_file": "SUPPRESSED",
-      "last_escalated_item_ids": [
-        "a2f92605834d",
-        "4ab9c5e7e83a",
-        "c6ee0ec04f34"
-      ]
-    },
-    "51f5cb6f20171c22": {
-      "topic": "Supergirl Film First Reactions Reviews Milly Alcock Jason Momoa",
-      "item_ids": [
-        "6b7230f00dd4"
-      ],
-      "created_at": "2026-06-20T00:06:09.951955+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f711c78a6214c5bf": {
-      "topic": "UW AI Minor Program Universities Workforce Demand",
-      "item_ids": [
-        "4a054b5f670f"
-      ],
-      "created_at": "2026-06-20T00:06:09.951955+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e4e12dd4af41d03f": {
-      "topic": "Rui Hachimura Lakers NBA Free Agency Unknown",
-      "item_ids": [
-        "4d6c931600b3"
-      ],
-      "created_at": "2026-06-20T00:06:09.951955+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "caa427552b2f232b": {
-      "topic": "NBA New Coaches Spurs Influence Impact",
-      "item_ids": [
-        "5e9149e5648a"
-      ],
-      "created_at": "2026-06-20T00:06:09.951955+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c50691a8a87b8340": {
-      "topic": "Kanye West Bully Deluxe Edition Release",
-      "item_ids": [
-        "381b8ee4aa7b",
-        "07f9356ccbe0"
-      ],
-      "created_at": "2026-06-20T04:38:37.504937+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "833bb1bdbbaaa954": {
-      "topic": "Jazz Chisholm Jr Groin Injury Foul Ball Yankees",
-      "item_ids": [
-        "3c35b15a5d50"
-      ],
-      "created_at": "2026-06-20T04:38:37.504937+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5eadfadbb60f6e42": {
-      "topic": "Artists Voice Protection AI Registration Taylor Swift",
-      "item_ids": [
-        "820a28b7bf27"
-      ],
-      "created_at": "2026-06-20T04:38:37.504937+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ee4ff8a3051a063f": {
-      "topic": "Michael Jordan Modern NBA Stars Hypothetical Comparison",
-      "item_ids": [
-        "985023fee0ab"
-      ],
-      "created_at": "2026-06-20T04:38:37.504937+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8664b69acbcbd8e7": {
-      "topic": "Jordan Clarkson Knicks Manny Pacquiao Congratulations",
-      "item_ids": [
-        "12dfca8c190b"
-      ],
-      "created_at": "2026-06-20T04:38:37.504937+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6fd09c3cfe659455": {
-      "topic": "ChatGPT Internet Browser Automation One-Person Business",
-      "item_ids": [
-        "88ceac60dd42"
-      ],
-      "created_at": "2026-06-20T04:38:37.504937+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "28eef6422bdaa4a3": {
-      "topic": "Frive Meals Founder Business Success Story",
-      "item_ids": [
-        "4a4e36dca4a3"
-      ],
-      "created_at": "2026-06-20T04:38:37.504937+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8268df4cf3a44374": {
-      "topic": "AI Financial Advice Risk Warning",
-      "item_ids": [
-        "3225fd4eeb33",
-        "24c7ab431b3e"
-      ],
-      "created_at": "2026-06-20T04:38:37.504937+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "7692c1cd985691b4": {
       "topic": "The Whitlams Australian Rock Island Tour Return",
       "item_ids": [
@@ -973,17 +761,23 @@
       "item_ids": [
         "00ca1e55b2f0",
         "afe264cc7383",
-        "57b011c84587"
+        "57b011c84587",
+        "05c5189c673f",
+        "924db5531ea5",
+        "c5cf0d1109cb"
       ],
       "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-20T21:46:10.890081+00:00",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-21T05:15:20.547846+00:00",
       "picks_file": "picks/picks-2026-06-20-2146.md",
-      "why_text": "AJ Dybantsa and Darryn Peterson are already being treated as generational prospects, with mock drafts cementing their top-two status more than a year before the actual draft \u2014 a sign of how hungry the league is for the next transcendent young talent. Dybantsa, the BYU freshman phenom, is the consensus No. 1 pick in waiting, while Peterson represents the kind of elite two-way guard prospect that contenders covet. The fact that a 2026 mock is generating this much traffic right now reflects how deeply draft culture has embedded itself into the NBA's year-round conversation.",
+      "why_text": "AJ Dybantsa and Darryn Peterson are already being treated as generational prospects, with mock drafts cementing their top-two status more than a year before the actual draft \u2014 a sign of how hungry the league is for the next transcendent young talent. Dybantsa, the BYU freshman phenom, is the consensus No. 1 pick in waiting, while Peterson represents the kind of elite two-way guard prospect that contenders covet. The fact that a 2026 mock is generating this much traffic right now reflects how deeply draft culture has embedded itself into the NBA's year-round conversation.\n**Update 12:15 AM CT:** The pre-draft process is already breaking conventional norms: Dybantsa confirmed he skipped individual team workouts entirely, a rare flex that signals his No. 1 status is so locked in that franchises are coming to him \u2014 not the other way around. Meanwhile, the Lakers are surfacing as an early mover, with reported interest in UConn big man Liam McNeeley adding a marquee team narrative to the draft's developing storylines.",
       "last_escalated_item_ids": [
         "00ca1e55b2f0",
         "afe264cc7383",
-        "57b011c84587"
+        "57b011c84587",
+        "05c5189c673f",
+        "924db5531ea5",
+        "c5cf0d1109cb"
       ]
     },
     "aa45f25bec188418": {
@@ -1162,7 +956,8 @@
     "ac518437c983ec31": {
       "topic": "Shohei Ohtani Second Child Birth Announcement",
       "item_ids": [
-        "4bd71e1eb75b"
+        "4bd71e1eb75b",
+        "790cbecf08a1"
       ],
       "created_at": "2026-06-20T16:05:10.369016+00:00",
       "last_escalated_size": 0,
@@ -1181,11 +976,19 @@
       "topic": "Toy Story 5 Box Office $71 Million Opening Day",
       "item_ids": [
         "c2f972911157",
-        "f636e7fa642b"
+        "f636e7fa642b",
+        "0b7736a75820"
       ],
       "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-21T05:15:20.547846+00:00",
+      "picks_file": "picks/picks-2026-06-21-0515.md",
+      "why_text": "Pixar's long-awaited fifth installment is already a box office event, proving the franchise still carries enormous cultural and commercial weight decades after the original rewrote what animation could be. The Guardian's angle \u2014 questioning whether the film goes hard enough on technology as a theme \u2014 hints at a broader tension: audiences want nostalgia, but Pixar's DNA demands it say something urgent about the world kids are actually growing up in. A $71M opening day means this isn't just a sequel, it's a cultural reset for a studio that's had a rocky few years.",
+      "last_escalated_item_ids": [
+        "c2f972911157",
+        "f636e7fa642b",
+        "0b7736a75820"
+      ]
     },
     "f8f3359384f92efd": {
       "topic": "Luigi The Musical Political Satire Celebrity Critique",
@@ -1882,7 +1685,25 @@
       "created_at": "2026-06-21T00:03:34.510038+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "4dc181cd76792dd3": {
+      "topic": "Nicki Minaj Memorializes Producer Tay Keith",
+      "item_ids": [
+        "380d9ebac752"
+      ],
+      "created_at": "2026-06-21T05:15:49.079558+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "762d183c415467f0": {
+      "topic": "AJ Dybantsa 2026 NBA Draft Workout Decision",
+      "item_ids": [
+        "6404cee055e8"
+      ],
+      "created_at": "2026-06-21T05:15:49.079558+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-21T00:03:41.910204+00:00"
+  "last_checked": "2026-06-21T05:16:00.254498+00:00"
 }
