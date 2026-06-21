@@ -1,30 +1,5 @@
 {
   "known_ids": [
-    "256391f09756",
-    "364ccffa0ef2",
-    "793004d7117e",
-    "4f3229becadc",
-    "ef442f39ee7b",
-    "305af1d6cdbd",
-    "02238e5704d8",
-    "ce39803b0fdf",
-    "47fed6e801f0",
-    "62e6797a5c1b",
-    "001f4a51bd1d",
-    "2849dff2d042",
-    "9c2fd23ec71a",
-    "adb7262441d1",
-    "01cc5dbd67f1",
-    "427aa380b578",
-    "65cd3456e697",
-    "59dea581ab7c",
-    "15e62800df4e",
-    "507be895e0b1",
-    "59ca620be65a",
-    "bd6e4d2069b6",
-    "796686d32d5c",
-    "c8c82c7622f1",
-    "bfb1826cb8fe",
     "2d9ea8b1759a",
     "80ec19d0f92f",
     "95f3c0a9ef10",
@@ -499,37 +474,34 @@
     "3211342b21d6",
     "098a804e1f65",
     "14f46ad613c2",
-    "8bd7db9a8202"
+    "8bd7db9a8202",
+    "aa67688e55b9",
+    "4dee3af94e52",
+    "5b5c880facd4",
+    "6d67f5e7b3c1",
+    "620ed3e016f3",
+    "70a9a3374615",
+    "8962c4c9d0af",
+    "f322a131eac8",
+    "5522d44a8046",
+    "e3f63722816d",
+    "df134fc9cb0a",
+    "9926d49548a9",
+    "9f8a02c1ffab",
+    "0deb9c739241",
+    "eac15d3b400d",
+    "248aa341bff1",
+    "ecf069a3b584",
+    "bb230c34e2bd",
+    "9581d8c00d92",
+    "df134fc9cb0a",
+    "2f097c6f7765",
+    "13849d51430e",
+    "cb979817a5b3",
+    "cbe28509b61b",
+    "e3b83e20bb09"
   ],
   "failed_ids": {
-    "e87a8e60009a": "2026-06-21T14:00:27.140548+00:00",
-    "81a44adb7753": "2026-06-21T14:00:27.140548+00:00",
-    "6a4a2a781c9c": "2026-06-21T14:00:27.140548+00:00",
-    "2f9f835acb68": "2026-06-21T14:00:27.140548+00:00",
-    "662f13c55538": "2026-06-21T14:00:27.140548+00:00",
-    "9328e1faff79": "2026-06-21T14:00:27.140548+00:00",
-    "c85616f27997": "2026-06-21T14:00:27.140548+00:00",
-    "7ffb27041f8c": "2026-06-21T14:00:27.140548+00:00",
-    "7b65ded7a865": "2026-06-21T14:00:27.140548+00:00",
-    "ebbe094a7614": "2026-06-21T14:00:27.140548+00:00",
-    "9667171c0368": "2026-06-21T14:00:27.140548+00:00",
-    "2e877ee474bf": "2026-06-21T14:00:27.140548+00:00",
-    "6a87b0acdbc9": "2026-06-21T14:00:27.140548+00:00",
-    "9da891df9a86": "2026-06-21T14:00:27.140548+00:00",
-    "13e79f530356": "2026-06-21T14:00:27.140548+00:00",
-    "c5a635d6cd27": "2026-06-21T14:00:27.140548+00:00",
-    "737a47d3499d": "2026-06-21T14:00:27.140548+00:00",
-    "2a80a81c8cc3": "2026-06-21T14:00:27.140548+00:00",
-    "d03425f76404": "2026-06-21T14:00:27.140548+00:00",
-    "ae83c7332045": "2026-06-21T14:00:27.140548+00:00",
-    "9127c9c67124": "2026-06-21T14:00:27.140548+00:00",
-    "8e6ae205c90c": "2026-06-21T14:00:27.140548+00:00",
-    "84e6caa9126f": "2026-06-21T14:00:27.140548+00:00",
-    "70cd3958bd23": "2026-06-21T14:00:27.140548+00:00",
-    "31ce5704b559": "2026-06-21T14:00:27.140548+00:00",
-    "a15cf3b4d9a8": "2026-06-21T14:00:27.140548+00:00",
-    "b7eee6d25932": "2026-06-21T14:00:27.140548+00:00",
-    "c05cc8a55bca": "2026-06-21T14:00:27.140548+00:00",
     "34bf2d11e1af": "2026-06-21T16:06:27.118977+00:00",
     "a96480a97656": "2026-06-21T16:06:27.118977+00:00",
     "d8d5e95b641a": "2026-06-21T16:06:27.118977+00:00",
@@ -546,104 +518,26 @@
     "bd30d95fdaad": "2026-06-21T17:49:43.569930+00:00",
     "2dbf61a2e006": "2026-06-21T17:49:43.569930+00:00",
     "130c988a675b": "2026-06-21T17:49:43.569930+00:00",
-    "98eaaa37eae6": "2026-06-21T17:49:43.569930+00:00"
+    "98eaaa37eae6": "2026-06-21T17:49:43.569930+00:00",
+    "3e9c3a3d3818": "2026-06-21T19:07:15.192001+00:00",
+    "0e307e259bc8": "2026-06-21T19:07:15.192001+00:00",
+    "b9d97e0c118c": "2026-06-21T19:07:15.192001+00:00",
+    "0215c73e9916": "2026-06-21T19:07:15.192001+00:00",
+    "2e28508f90d3": "2026-06-21T19:07:15.192001+00:00",
+    "e8db59308449": "2026-06-21T19:07:15.192001+00:00",
+    "6b8dd20991e7": "2026-06-21T19:07:15.192001+00:00",
+    "48ca3cacf57c": "2026-06-21T19:07:15.192001+00:00",
+    "5e027473f073": "2026-06-21T19:07:15.192001+00:00",
+    "390fa08e4669": "2026-06-21T19:07:15.192001+00:00",
+    "94c1657a27a7": "2026-06-21T19:07:15.192001+00:00",
+    "7c0568ac7cd0": "2026-06-21T19:07:15.192001+00:00",
+    "1fba62a499e5": "2026-06-21T19:07:15.192001+00:00",
+    "b7d7aff5e1d2": "2026-06-21T19:07:15.192001+00:00",
+    "2449e0a3f2fe": "2026-06-21T19:07:15.192001+00:00",
+    "493ac85bf464": "2026-06-21T19:07:15.192001+00:00",
+    "f5a3e26adecc": "2026-06-21T19:07:15.192001+00:00"
   },
   "live_clusters": {
-    "ba3484c16d4694c2": {
-      "topic": "PUMA Hali 1 Green Colorway Summer Release",
-      "item_ids": [
-        "4c2cb24299fe"
-      ],
-      "created_at": "2026-06-20T19:01:15.572984+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9d16ff8fe298d356": {
-      "topic": "Olivia Wilde Pamela Anderson Don't Worry Darling Support",
-      "item_ids": [
-        "6173f1b0e697"
-      ],
-      "created_at": "2026-06-20T19:01:15.572984+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5e9911e67c26d03e": {
-      "topic": "Bobby Prince Doom Composer Death",
-      "item_ids": [
-        "0f2fb2eaa2a8"
-      ],
-      "created_at": "2026-06-20T19:01:15.572984+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9f3e678e527329fb": {
-      "topic": "Founders Fund Humane Fish Killing Investment",
-      "item_ids": [
-        "e4eb1d06a421"
-      ],
-      "created_at": "2026-06-20T19:01:15.572984+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4b8752d46be7ff72": {
-      "topic": "NASA Rover High-Speed Climbing Obstacle Navigation Testing",
-      "item_ids": [
-        "5f4f9e707423",
-        "8e9a0bddf473"
-      ],
-      "created_at": "2026-06-20T19:01:15.572984+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bcc4618d6dd791c1": {
-      "topic": "Giannis Antetokounmpo Trade Partner Analysis Bucks",
-      "item_ids": [
-        "1f6584e6103d",
-        "68d89496be21"
-      ],
-      "created_at": "2026-06-20T19:01:15.572984+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2e99ea798dc5fb69": {
-      "topic": "Kings Darius Acuff Trade Interest Snag",
-      "item_ids": [
-        "a83b79600f18"
-      ],
-      "created_at": "2026-06-20T19:01:15.572984+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "14ba7f1dff3ce9a6": {
-      "topic": "Nets 2026 NBA Mock Draft Ball Handler Need",
-      "item_ids": [
-        "8bceff7d1d23",
-        "ad67859febe3"
-      ],
-      "created_at": "2026-06-20T19:01:15.572984+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "368ccc662f5684e9": {
-      "topic": "Knicks 2026 NBA Mock Draft Size Evaluation",
-      "item_ids": [
-        "142f539c9621",
-        "b2bc1d9d12d1",
-        "353e91030cb3",
-        "0126772f6238"
-      ],
-      "created_at": "2026-06-20T19:01:15.572984+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-21T11:51:25.666322+00:00",
-      "picks_file": "picks/picks-2026-06-21-1151.md",
-      "why_text": "With three picks in the 2026 NBA Draft, the Knicks are in a rare position of genuine roster-building leverage \u2014 and mock drafts are zeroing in on their need for size, a recurring organizational vulnerability that's defined (and haunted) the franchise for years. This isn't just draft speculation; it's a signal that New York is being taken seriously as a team with a real future, not just a market. The fact that the Lakers are chasing the same big-man pool makes this a genuine competition for high-upside frontcourt talent.",
-      "last_escalated_item_ids": [
-        "142f539c9621",
-        "b2bc1d9d12d1",
-        "353e91030cb3",
-        "0126772f6238"
-      ]
-    },
     "6de2dc64233acf52": {
       "topic": "New Balance 1890 Linen Green Trail Sneaker Release",
       "item_ids": [
@@ -1293,11 +1187,20 @@
       "topic": "Toy Story 5 Box Office $160M Opening Record",
       "item_ids": [
         "79862f475179",
-        "eff49831e1a5"
+        "eff49831e1a5",
+        "8962c4c9d0af",
+        "bb230c34e2bd"
       ],
       "created_at": "2026-06-21T16:07:16.659583+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-21T19:07:15.192001+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "79862f475179",
+        "eff49831e1a5",
+        "8962c4c9d0af",
+        "bb230c34e2bd"
+      ]
     },
     "5ac12ec85881fe70": {
       "topic": "Ken Carson Xperiment Album Release",
@@ -1585,7 +1488,9 @@
       "item_ids": [
         "41fc380d265e",
         "a9c72049f703",
-        "46813ea88598"
+        "46813ea88598",
+        "9f8a02c1ffab",
+        "248aa341bff1"
       ],
       "created_at": "2026-06-21T17:50:12.378273+00:00",
       "last_escalated_size": 3,
@@ -1669,7 +1574,142 @@
       "created_at": "2026-06-21T17:50:12.378273+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "e982e211a1305420": {
+      "topic": "Air Jordan 1 Low Legend Medium Brown Release",
+      "item_ids": [
+        "aa67688e55b9"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d714a55d0ca560c5": {
+      "topic": "Nine Vicious Young Thug YSL Records Contract Denial",
+      "item_ids": [
+        "4dee3af94e52"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "18c0d4ea5fc74706": {
+      "topic": "Ariana Grande 'Petal' Album Tracklist July 31 Release",
+      "item_ids": [
+        "5b5c880facd4"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "23ed7af1a7a526b1": {
+      "topic": "Young Thug Kodak Black YSL Records Signing Interest",
+      "item_ids": [
+        "6d67f5e7b3c1"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bdbcaea903abd38d": {
+      "topic": "Peter Asher Documentary Beatles-Era Producer",
+      "item_ids": [
+        "620ed3e016f3"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "696c72e9ac4bd310": {
+      "topic": "Olivia Rodrigo 'You Seem Pretty Sad' Third No. 1 Album",
+      "item_ids": [
+        "70a9a3374615"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a573baabc971a62e": {
+      "topic": "Bentonville Film Festival Awards Winners",
+      "item_ids": [
+        "f322a131eac8"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6b20a1aff80e3d65": {
+      "topic": "Claude Guillemot Ubisoft Co-founder Plane Crash Death",
+      "item_ids": [
+        "5522d44a8046"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a2961f25a3113a1a": {
+      "topic": "AI Trade Hyperscalers Stock Performance Gap",
+      "item_ids": [
+        "e3f63722816d"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "18c5dcdf81ceac6f": {
+      "topic": "European Automakers Software-Defined Vehicles China Competition",
+      "item_ids": [
+        "df134fc9cb0a"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d29c4c8d70fa2b74": {
+      "topic": "Minnesota Timberwolves Lottery Pick Guard Interest",
+      "item_ids": [
+        "9926d49548a9"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fd233678968cc423": {
+      "topic": "2026 NBA Mock Draft Giannis Trade Scenario",
+      "item_ids": [
+        "0deb9c739241"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c5ddca1acdab2502": {
+      "topic": "No. 1 NBA Draft Picks Rankings Century",
+      "item_ids": [
+        "eac15d3b400d"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "154c0099c90a73b9": {
+      "topic": "Video Games Accidental World Impact",
+      "item_ids": [
+        "ecf069a3b584"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4a09bfd1407852cc": {
+      "topic": "BMW M5 Facelifted Model Testing Spy Shots",
+      "item_ids": [
+        "9581d8c00d92"
+      ],
+      "created_at": "2026-06-21T19:07:57.055768+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-21T17:50:24.516522+00:00"
+  "last_checked": "2026-06-21T19:07:57.836809+00:00"
 }
