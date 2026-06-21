@@ -1,22 +1,5 @@
 {
   "known_ids": [
-    "2d9ea8b1759a",
-    "80ec19d0f92f",
-    "95f3c0a9ef10",
-    "466d271a4af7",
-    "baf185b898cc",
-    "fc5a75fc3eb0",
-    "46b316cdd48f",
-    "b69eacd4b2e9",
-    "1d16433a4592",
-    "f857b2118f3e",
-    "a95295e4450b",
-    "529e4d7a984b",
-    "1ffb928bf8ad",
-    "46dcd9f6a9c7",
-    "49364d5793c1",
-    "09ad91aa7c49",
-    "c87f77a2b460",
     "1cf4d9e015e3",
     "0ccd5ffcc2a6",
     "1cb8310b41b0",
@@ -499,19 +482,26 @@
     "13849d51430e",
     "cb979817a5b3",
     "cbe28509b61b",
-    "e3b83e20bb09"
+    "e3b83e20bb09",
+    "225b121784d0",
+    "cd49b1b4b1d6",
+    "d891d9c3ad40",
+    "1a983676859d",
+    "037bea36ad05",
+    "bd2acafd1b79",
+    "8dff912e10ad",
+    "94b2eb1462c9",
+    "11885c7bc9ed",
+    "0f52f6e2d4f5",
+    "8425fefb81e0",
+    "b0e6183c0bf9",
+    "92f69944b05f",
+    "196653d2e9b7",
+    "da32b0df520b",
+    "399986b06af9",
+    "5ae0c396ba8f"
   ],
   "failed_ids": {
-    "34bf2d11e1af": "2026-06-21T16:06:27.118977+00:00",
-    "a96480a97656": "2026-06-21T16:06:27.118977+00:00",
-    "d8d5e95b641a": "2026-06-21T16:06:27.118977+00:00",
-    "c70c30b877cb": "2026-06-21T16:06:27.118977+00:00",
-    "c1a6026c4119": "2026-06-21T16:06:27.118977+00:00",
-    "6a4a2526b198": "2026-06-21T16:06:27.118977+00:00",
-    "dcc701bc41aa": "2026-06-21T16:06:27.118977+00:00",
-    "69ad246611d1": "2026-06-21T16:06:27.118977+00:00",
-    "276672c38725": "2026-06-21T16:06:27.118977+00:00",
-    "226662e8fad5": "2026-06-21T16:06:27.118977+00:00",
     "fb0fd4de3989": "2026-06-21T17:49:43.569930+00:00",
     "2925af5a3748": "2026-06-21T17:49:43.569930+00:00",
     "44a6a185cf30": "2026-06-21T17:49:43.569930+00:00",
@@ -535,100 +525,13 @@
     "b7d7aff5e1d2": "2026-06-21T19:07:15.192001+00:00",
     "2449e0a3f2fe": "2026-06-21T19:07:15.192001+00:00",
     "493ac85bf464": "2026-06-21T19:07:15.192001+00:00",
-    "f5a3e26adecc": "2026-06-21T19:07:15.192001+00:00"
+    "f5a3e26adecc": "2026-06-21T19:07:15.192001+00:00",
+    "fcfe1f79387d": "2026-06-21T20:45:25.739116+00:00",
+    "af86fd2cd2d9": "2026-06-21T20:45:25.739116+00:00",
+    "54e99b62d23e": "2026-06-21T20:45:25.739116+00:00",
+    "10b10731bb7f": "2026-06-21T20:45:25.739116+00:00"
   },
   "live_clusters": {
-    "6de2dc64233acf52": {
-      "topic": "New Balance 1890 Linen Green Trail Sneaker Release",
-      "item_ids": [
-        "8e6832d32c82"
-      ],
-      "created_at": "2026-06-20T20:25:08.567865+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8536fe677f5bc094": {
-      "topic": "Dolce & Gabbana Party Jeans Fashion Revival",
-      "item_ids": [
-        "2a0a134f00e9"
-      ],
-      "created_at": "2026-06-20T20:25:08.567865+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "62c5072304becb65": {
-      "topic": "Charli XCX Mental Health Struggle Statement",
-      "item_ids": [
-        "823a83c22a9d"
-      ],
-      "created_at": "2026-06-20T20:25:08.567865+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1c7ef3390a954150": {
-      "topic": "Ne-Yo Fabolous Joint Album Release Challenges",
-      "item_ids": [
-        "c1d47d92510e"
-      ],
-      "created_at": "2026-06-20T20:25:08.567865+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "04599454d35f1e9a": {
-      "topic": "Dua Lipa Callum Turner Wedding Sicily Photos",
-      "item_ids": [
-        "3bb950ea6cac"
-      ],
-      "created_at": "2026-06-20T20:25:08.567865+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dfd25c10e936d899": {
-      "topic": "Lou Williams Jay-Z 2005 NBA Draft Decision Denial",
-      "item_ids": [
-        "6986aaa215b7"
-      ],
-      "created_at": "2026-06-20T20:25:08.567865+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "94d57451186ef4ca": {
-      "topic": "Isaiah Stewart NBA Trade Interest 2026 Offseason",
-      "item_ids": [
-        "096c08e69e4f"
-      ],
-      "created_at": "2026-06-20T20:25:08.567865+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b621bbcc73194f7d": {
-      "topic": "Boston Celtics 2026 NBA Draft Big Board",
-      "item_ids": [
-        "1fa003557ae9",
-        "f7ca2e2c461c"
-      ],
-      "created_at": "2026-06-20T20:25:08.567865+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2c199dc5fba29b1f": {
-      "topic": "Cottage Cheese Shortage TikTok Protein Trend",
-      "item_ids": [
-        "7326ffa0f906"
-      ],
-      "created_at": "2026-06-20T20:25:08.567865+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fcf7f29a34cc9cf0": {
-      "topic": "2026 BMW X3 vs Mercedes-Benz GLC Luxury SUV Comparison",
-      "item_ids": [
-        "19932d67bb24"
-      ],
-      "created_at": "2026-06-20T20:25:08.567865+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "44251b5063cf1c52": {
       "topic": "LeBron James Drake 'Shabang' Reel Repost",
       "item_ids": [
@@ -723,7 +626,8 @@
     "e841348672dc1aaa": {
       "topic": "Sam Levinson Euphoria OnlyFans Culture Depiction Defense",
       "item_ids": [
-        "54470cc0fe3e"
+        "54470cc0fe3e",
+        "1a983676859d"
       ],
       "created_at": "2026-06-20T22:52:59.004160+00:00",
       "last_escalated_size": 0,
@@ -1490,17 +1394,23 @@
         "a9c72049f703",
         "46813ea88598",
         "9f8a02c1ffab",
-        "248aa341bff1"
+        "248aa341bff1",
+        "11885c7bc9ed",
+        "0f52f6e2d4f5"
       ],
       "created_at": "2026-06-21T17:50:12.378273+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-21T17:49:43.569930+00:00",
+      "last_escalated_size": 7,
+      "last_escalated_at": "2026-06-21T20:45:25.739116+00:00",
       "picks_file": "picks/picks-2026-06-21-1750.md",
-      "why_text": "After being traded to Atlanta mid-season, McCollum is betting on himself with a one-year prove-it deal rather than chasing a longer, potentially lower-value contract \u2014 a calculated gamble at 33 that keeps his options open heading into what could be his final big payday. For the Hawks, it's a low-risk move to retain a veteran scorer and leader as the franchise continues its post-Trae Young reset. The short-term structure tells you everything: both sides see this as a audition year, not a commitment.",
+      "why_text": "After being traded to Atlanta mid-season, McCollum is betting on himself with a one-year prove-it deal rather than chasing a longer, potentially lower-value contract \u2014 a calculated gamble at 33 that keeps his options open heading into what could be his final big payday. For the Hawks, it's a low-risk move to retain a veteran scorer and leader as the franchise continues its post-Trae Young reset. The short-term structure tells you everything: both sides see this as a audition year, not a commitment.\n**Update 3:47 PM CT:** The deal is now official and has a number attached: McCollum is returning to Atlanta on a one-year, $21 million extension, per NBC Sports and Yahoo Sports \u2014 a figure that confirms this is a legitimate payday, not a discount prove-it deal, and raises the stakes on what both sides are expecting from the audition year.",
       "last_escalated_item_ids": [
         "41fc380d265e",
         "a9c72049f703",
-        "46813ea88598"
+        "46813ea88598",
+        "9f8a02c1ffab",
+        "248aa341bff1",
+        "11885c7bc9ed",
+        "0f52f6e2d4f5"
       ]
     },
     "228e55e1af0755c1": {
@@ -1623,7 +1533,8 @@
     "696c72e9ac4bd310": {
       "topic": "Olivia Rodrigo 'You Seem Pretty Sad' Third No. 1 Album",
       "item_ids": [
-        "70a9a3374615"
+        "70a9a3374615",
+        "037bea36ad05"
       ],
       "created_at": "2026-06-21T19:07:57.055768+00:00",
       "last_escalated_size": 0,
@@ -1709,7 +1620,79 @@
       "created_at": "2026-06-21T19:07:57.055768+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "686469ce0a201423": {
+      "topic": "Jordan Brand Luka 5 Graffiti Wheat-Paste Sneaker Release",
+      "item_ids": [
+        "225b121784d0"
+      ],
+      "created_at": "2026-06-21T20:47:36.944247+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ee1edb5d19e5b452": {
+      "topic": "Serena Williams Wimbledon Singles Wild Card Comeback",
+      "item_ids": [
+        "cd49b1b4b1d6"
+      ],
+      "created_at": "2026-06-21T20:47:36.944247+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1f64273f2b64ce24": {
+      "topic": "Dua Lipa Custom Chanel Haute Couture Wedding Gown",
+      "item_ids": [
+        "d891d9c3ad40"
+      ],
+      "created_at": "2026-06-21T20:47:36.944247+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4d1061224f178aca": {
+      "topic": "Michael Music Biopic Box Office Bohemian Rhapsody Comparison",
+      "item_ids": [
+        "bd2acafd1b79"
+      ],
+      "created_at": "2026-06-21T20:47:36.944247+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e2906be0a1e5614b": {
+      "topic": "Rod Stewart Oxygen Tank Concert Health Incident",
+      "item_ids": [
+        "8dff912e10ad"
+      ],
+      "created_at": "2026-06-21T20:47:36.944247+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1826c45fb7069de4": {
+      "topic": "Paget Brewster Apologizes TV Journalist Comment",
+      "item_ids": [
+        "94b2eb1462c9"
+      ],
+      "created_at": "2026-06-21T20:47:36.944247+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "de9fc315896f0104": {
+      "topic": "Russell Golf Caddie Swap Father's Day",
+      "item_ids": [
+        "8425fefb81e0"
+      ],
+      "created_at": "2026-06-21T20:47:36.944247+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "67dd9652ea837502": {
+      "topic": "Yamal Spain World Cup Goal Victory",
+      "item_ids": [
+        "b0e6183c0bf9"
+      ],
+      "created_at": "2026-06-21T20:47:36.944247+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-21T19:07:57.836809+00:00"
+  "last_checked": "2026-06-21T20:47:40.191989+00:00"
 }
