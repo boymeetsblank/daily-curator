@@ -1,21 +1,5 @@
 {
   "known_ids": [
-    "1cf4d9e015e3",
-    "0ccd5ffcc2a6",
-    "1cb8310b41b0",
-    "7fea3ba5e735",
-    "f49e1ac9b079",
-    "0b11a8111ba1",
-    "1193f87f1259",
-    "03e3076a23bc",
-    "c32bd6616a1b",
-    "c08684d17d40",
-    "2808a657a00d",
-    "e417deda1186",
-    "b555b46a7452",
-    "94887e5b378a",
-    "b72a38ed98e5",
-    "b3ad1ef634e6",
     "7510130258d6",
     "a93cb6472fd1",
     "2c2b2e8f147a",
@@ -499,16 +483,25 @@
     "196653d2e9b7",
     "da32b0df520b",
     "399986b06af9",
-    "5ae0c396ba8f"
+    "5ae0c396ba8f",
+    "225bde1a09a1",
+    "db8d6b0148c9",
+    "be66ad38ce58",
+    "ffdfabc807e7",
+    "bc9c65f56189",
+    "8a198266138d",
+    "592793e4c938",
+    "b55e4210e34a",
+    "d6f51e89b1e1",
+    "32ddc8a50157",
+    "0aa1f13eea35",
+    "2a2d13c0adc0",
+    "7e40fb4a77d7",
+    "aedc1efc3e9e",
+    "1c8ec8b5f601",
+    "94737db6b1fa"
   ],
   "failed_ids": {
-    "fb0fd4de3989": "2026-06-21T17:49:43.569930+00:00",
-    "2925af5a3748": "2026-06-21T17:49:43.569930+00:00",
-    "44a6a185cf30": "2026-06-21T17:49:43.569930+00:00",
-    "bd30d95fdaad": "2026-06-21T17:49:43.569930+00:00",
-    "2dbf61a2e006": "2026-06-21T17:49:43.569930+00:00",
-    "130c988a675b": "2026-06-21T17:49:43.569930+00:00",
-    "98eaaa37eae6": "2026-06-21T17:49:43.569930+00:00",
     "3e9c3a3d3818": "2026-06-21T19:07:15.192001+00:00",
     "0e307e259bc8": "2026-06-21T19:07:15.192001+00:00",
     "b9d97e0c118c": "2026-06-21T19:07:15.192001+00:00",
@@ -529,73 +522,22 @@
     "fcfe1f79387d": "2026-06-21T20:45:25.739116+00:00",
     "af86fd2cd2d9": "2026-06-21T20:45:25.739116+00:00",
     "54e99b62d23e": "2026-06-21T20:45:25.739116+00:00",
-    "10b10731bb7f": "2026-06-21T20:45:25.739116+00:00"
+    "10b10731bb7f": "2026-06-21T20:45:25.739116+00:00",
+    "fe2f320e5291": "2026-06-21T22:03:46.209295+00:00",
+    "2d48afebc2dd": "2026-06-21T22:03:46.209295+00:00",
+    "6658021c70d8": "2026-06-21T22:03:46.209295+00:00",
+    "d842decd70ad": "2026-06-21T22:03:46.209295+00:00",
+    "eee1cde98325": "2026-06-21T22:03:46.209295+00:00",
+    "fd32c72f31be": "2026-06-21T22:03:46.209295+00:00",
+    "41c53da653b9": "2026-06-21T22:03:46.209295+00:00",
+    "ef6d6aaa14c3": "2026-06-21T22:03:46.209295+00:00",
+    "14034726e005": "2026-06-21T22:03:46.209295+00:00",
+    "a481b0b1c060": "2026-06-21T22:03:46.209295+00:00",
+    "3d1e8f34818e": "2026-06-21T22:03:46.209295+00:00",
+    "feadf673e0c3": "2026-06-21T22:03:46.209295+00:00",
+    "c65d91e667af": "2026-06-21T22:03:46.209295+00:00"
   },
   "live_clusters": {
-    "44251b5063cf1c52": {
-      "topic": "LeBron James Drake 'Shabang' Reel Repost",
-      "item_ids": [
-        "f337d8c243e2"
-      ],
-      "created_at": "2026-06-20T21:46:47.384203+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "cffac5da89dad9d7": {
-      "topic": "Diddy Company Star Island $55M Sale Lawsuit",
-      "item_ids": [
-        "12186af5c16f",
-        "b1e7402aa289"
-      ],
-      "created_at": "2026-06-20T21:46:47.384203+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b0e2bf5dd2ff3619": {
-      "topic": "Lilly Wachowski 'The Hunted' Film Development",
-      "item_ids": [
-        "eb0722b2d82b"
-      ],
-      "created_at": "2026-06-20T21:46:47.384203+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7d6853b428033604": {
-      "topic": "Jennifer Aniston James Burrows Tribute",
-      "item_ids": [
-        "2ff4c9e1d3d9"
-      ],
-      "created_at": "2026-06-20T21:46:47.384203+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "98989bd4631c185d": {
-      "topic": "Meredith Whittaker Signal AI Chatbots Warning",
-      "item_ids": [
-        "7ddc78b7ede2"
-      ],
-      "created_at": "2026-06-20T21:46:47.384203+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "502dd6669d20be6c": {
-      "topic": "Kyrie Irving Cavaliers Reunion Absence Response",
-      "item_ids": [
-        "36600ede961f"
-      ],
-      "created_at": "2026-06-20T21:46:47.384203+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ace88e6881e5c392": {
-      "topic": "Dallas Mavericks Coaching Search Candidates",
-      "item_ids": [
-        "482d084c55c5"
-      ],
-      "created_at": "2026-06-20T21:46:47.384203+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "0394960b3dfe2caa": {
       "topic": "Nike Air Max Plus Smoke Grey Release",
       "item_ids": [
@@ -1381,7 +1323,8 @@
     "9425d13cd2a3176f": {
       "topic": "Polymarket Creators Deceptive Fake Bets Videos",
       "item_ids": [
-        "c826482e3c9d"
+        "c826482e3c9d",
+        "8a198266138d"
       ],
       "created_at": "2026-06-21T17:50:12.378273+00:00",
       "last_escalated_size": 0,
@@ -1534,11 +1477,19 @@
       "topic": "Olivia Rodrigo 'You Seem Pretty Sad' Third No. 1 Album",
       "item_ids": [
         "70a9a3374615",
-        "037bea36ad05"
+        "037bea36ad05",
+        "ffdfabc807e7"
       ],
       "created_at": "2026-06-21T19:07:57.055768+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-21T22:03:46.209295+00:00",
+      "picks_file": "picks/picks-2026-06-21-2204.md",
+      "why_text": "Rodrigo just cemented herself as one of the most consistent commercial forces in pop \u2014 three albums in, three consecutive Billboard 200 debuts at No. 1, which almost no artist in her generation can claim. The new album's arrival also ended Drake's four-week run at the top, which is its own cultural moment given how dominant he's been on that chart. At 21, she's not just a phenomenon anymore; she's a proven institution.",
+      "last_escalated_item_ids": [
+        "70a9a3374615",
+        "037bea36ad05",
+        "ffdfabc807e7"
+      ]
     },
     "a573baabc971a62e": {
       "topic": "Bentonville Film Festival Awards Winners",
@@ -1588,7 +1539,8 @@
     "fd233678968cc423": {
       "topic": "2026 NBA Mock Draft Giannis Trade Scenario",
       "item_ids": [
-        "0deb9c739241"
+        "0deb9c739241",
+        "b55e4210e34a"
       ],
       "created_at": "2026-06-21T19:07:57.055768+00:00",
       "last_escalated_size": 0,
@@ -1692,7 +1644,70 @@
       "created_at": "2026-06-21T20:47:36.944247+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "602b77f5e2de6b6f": {
+      "topic": "New Balance 993 Burgundy Release",
+      "item_ids": [
+        "db8d6b0148c9"
+      ],
+      "created_at": "2026-06-21T22:04:12.732840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c452ff1526e63691": {
+      "topic": "Gisele B\u00fcndchen Father's Day Joaquim Valente Tribute",
+      "item_ids": [
+        "be66ad38ce58"
+      ],
+      "created_at": "2026-06-21T22:04:12.732840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ac2e04cfb69d8e20": {
+      "topic": "David Victoria Beckham Father's Day Brooklyn Family Rift",
+      "item_ids": [
+        "bc9c65f56189"
+      ],
+      "created_at": "2026-06-21T22:04:12.732840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3c4b1f7bf654eefe": {
+      "topic": "Nuggets NBA Draft Trade-Up Strategy",
+      "item_ids": [
+        "592793e4c938"
+      ],
+      "created_at": "2026-06-21T22:04:12.732840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "527e4e5950eff317": {
+      "topic": "Luka Doncic Euroleague vs NBA Scoring Difficulty",
+      "item_ids": [
+        "d6f51e89b1e1"
+      ],
+      "created_at": "2026-06-21T22:04:12.732840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e5c346e247d62900": {
+      "topic": "Luka Doncic LA Lakers Future LeBron Free Agency",
+      "item_ids": [
+        "32ddc8a50157"
+      ],
+      "created_at": "2026-06-21T22:04:12.732840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d5bcc669915578f7": {
+      "topic": "Knicks Victor Wembanyama Handshake Sportsmanship Controversy",
+      "item_ids": [
+        "0aa1f13eea35"
+      ],
+      "created_at": "2026-06-21T22:04:12.732840+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-21T20:47:40.191989+00:00"
+  "last_checked": "2026-06-21T22:04:20.359866+00:00"
 }

@@ -1,6 +1,136 @@
 {
   "items": [
     {
+      "id": "225bde1a09a1",
+      "topic": "The Many Golf Cultures of the Hamptons",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://hypebeast.com/2026/6/golf-culture-hamptons-us-open",
+      "source_name": "Hypebeast",
+      "source_type": "feed",
+      "haiku_score": 5
+    },
+    {
+      "id": "db8d6b0148c9",
+      "topic": "“Burgundy” Coats This New Balance 993 Core Colorway",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://sneakernews.com/2026/06/21/new-balance-993-burgundy-u993bu/",
+      "source_name": "Sneaker News",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "602b77f5e2de6b6f"
+    },
+    {
+      "id": "be66ad38ce58",
+      "topic": "Gisele Bündchen Calls Husband Joaquim Valente an 'Incredible Role Model' in Father's Day Post",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://www.complex.com/pop-culture/a/alex-ocho/gisele-bundchen-joaquim-valente-fathers-day",
+      "source_name": "Complex",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "c452ff1526e63691"
+    },
+    {
+      "id": "ffdfabc807e7",
+      "topic": "Olivia Rodrigo's Third Album Tops Billboard 200 and Ends Drake's 4-Week Run",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://www.complex.com/music/a/treyalston/olivia-rodrigo-billboard-200-number-one-2026",
+      "source_name": "Complex",
+      "source_type": "feed",
+      "haiku_score": 8,
+      "cluster_id": "696c72e9ac4bd310"
+    },
+    {
+      "id": "bc9c65f56189",
+      "topic": "David and Victoria Beckham Shout Out Son Brooklyn on Father’s Day Amid Public Family Rift",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://www.complex.com/pop-culture/a/alex-ocho/beckham-fathers-day-brooklyn-estrangement",
+      "source_name": "Complex",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "ac2e04cfb69d8e20"
+    },
+    {
+      "id": "8a198266138d",
+      "topic": "Polymarket has reportedly been paying creators to post fake betting videos",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://www.engadget.com/2198495/wall-street-journal-polymarket-reportedly-paying-creators-to-post-fake-betting-videos/",
+      "source_name": "Engadget",
+      "source_type": "feed",
+      "haiku_score": 7,
+      "cluster_id": "9425d13cd2a3176f"
+    },
+    {
+      "id": "592793e4c938",
+      "topic": "Why Nuggets Trading Up in the NBA Draft Is Too Good to Be True - Sports Illustrated",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNYjVaV1FVZUpKLU00ZFVKTW5ZdlcyVERidnMycFlBTHJqVFJhSzZ0ZEszWkJhXzRPaFdTUTI2dGZVVWJuOWN3TG8waHlFRmFPbGE1dm40MjU5US02YkxKZWU3UkJTTFc1V0hPLWRoU08yS2M1emZ4cmJCVVJITTRqSHJmUXpweFRsNmI2aVdGcTFFUjFrVkN2cjdvaEloVEk?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "3c4b1f7bf654eefe"
+    },
+    {
+      "id": "b55e4210e34a",
+      "topic": "NBA Rumors: Giannis Antetokounmpo Sweepstakes Nearing End as Talks Enter “Red Zone” - Yahoo Sports",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNd0RPdi01Zl9xMlBPcVlfUWprWGxJYlR1bnJaeTdMZldBVENUeVRhTmNaeGdfNG5qS281aWV6c0pKc1VsalA3OHF2NUtoTDNWak5Tal9zZmVuMHFLbE9WM1FOZ0U4ZE9YSS1nSWNZRWFBNEdvbl94RXhWSTFWWk9LREJkZW1xZDU2T2lTdVEtazhZaXVuUktZcA?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "fd233678968cc423"
+    },
+    {
+      "id": "d6f51e89b1e1",
+      "topic": "Despite Winning NBA Scoring Title, Luka Doncic Says Scoring Is Harder in Euroleague - Yahoo Sports",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPaUlDTDhQMGpSdnVNXzdiUUk3bk1qLXJFbHY3UXNaLS1kNGV4OFBjZlhCNjh1RUt1c1k2eXVGYWtQdW5oaEFFM2FxaktpWVQwN20xbWtqNmxqcG9oYUNvQmlCVW00MzBVeVA1dnR3VjhLY19xU0M1d1llbkdFTGtKV0MxaGNNeVhONHc?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 5,
+      "cluster_id": "527e4e5950eff317"
+    },
+    {
+      "id": "32ddc8a50157",
+      "topic": "New NBA Rumors on Luka Doncic's Stance on Future in LA Amid LeBron James' Free Agency - Bleacher Report",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQS1dGZnhRTmFmeUxpN3REaUlDMGt2Vmticl9XdkU1aVBrUExTZEdWaW9wTUNmUkN5NFdhRnZqWkVaZE4zU1ZvYUE3WG1HNzhnNjR2eWlvSDR4R2tDTUFTVlNISUxFNU52QUZvSGhVV3hlc21LeHpZSExrNWdUODludllXOHMzT2otZkV1QnNlczQ0LVMtWkg4MzdWajNpSzU1Q0NLazJaSGJNWGJZeE1lOGxjdlFzVUV3Ti1J?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "e5c346e247d62900"
+    },
+    {
+      "id": "0aa1f13eea35",
+      "topic": "Knicks guard calls out Victor Wembanyama for not shaking hands after NBA Finals - New York Post",
+      "traffic": "",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSEZtVUdmdzRxYUpWVjFzUW94SjVhdlpkN05iT2duc2Q3X3lia0YtQ25qYWtiS3JhRTZfN1RkMW9PWjBsQk9aWkVXNnVac3VpVzJPY0k3VHhPSjJvbGNYd0RUQkh3M2xyUllfZVJTQTE0S09BN3BuWWJUYVhzelBuS0pOSFFvLUZJMUkyS0VzV010Ym9YcklrajcxTGptczA3UlFuejR0M2lxNEpZNnVPSmVJRFB6SmVPUURxSk9fb2puX28?oc=5",
+      "source_name": "Google News - NBA",
+      "source_type": "feed",
+      "haiku_score": 6,
+      "cluster_id": "d5bcc669915578f7"
+    },
+    {
+      "id": "2a2d13c0adc0",
+      "topic": "Saudi Arabia",
+      "traffic": "##7 on X",
+      "detected_at": "2026-06-21T22:03:46.209295+00:00",
+      "search_url": "https://x.com/search?q=Saudi+Arabia&src=trend_click",
+      "source_name": "X (Twitter) Trending",
+      "source_type": "x",
+      "haiku_score": 5
+    },
+    {
       "id": "225b121784d0",
       "topic": "Jordan Brand Covers The Luka 5 In Graffiti And Wheat-Pasting",
       "traffic": "",
@@ -303,137 +433,7 @@
       "source_type": "feed",
       "haiku_score": 5,
       "cluster_id": "c5ddca1acdab2502"
-    },
-    {
-      "id": "248aa341bff1",
-      "topic": "CJ McCollum agrees to return to Hawks on 1-year, $21 million contract extension - Yahoo Sports",
-      "traffic": "",
-      "detected_at": "2026-06-21T19:07:15.192001+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVVNPdk5sekJqMlFCemFOTWV3RlplLXI5Mk45Nl9EX2dmVjE5dFQyekZVdFlWU1FiZ1l1TzZUUW11b3BpaktTa285RWZKSTlQM2VhQkdmclgwRnFwal9HRHQ2SzNLR1F1UXluOFhKZEhWTm9td0tFQUx0U2lJZmNTT05HNjk5QzVtdU1nOTJHN2YzWk9MMVJlUXFOaDJKejB4czdsSEVxeDlRSUUyQ202RkU0c2lPMkNBanE2Ry1KMUh0Mlduc1hxYw?oc=5",
-      "source_name": "Google News - NBA",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "b1e559e4818cec44"
-    },
-    {
-      "id": "ecf069a3b584",
-      "topic": "9 Ways Video Games Accidentally Changed The World - bgr.com",
-      "traffic": "",
-      "detected_at": "2026-06-21T19:07:15.192001+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5IWGdDXzVaeGN2Z2ZRdk1CaUhGMzdhVlJLM2pkYjRTM21uZ0phRGhTR2xGVlhQendUOFd0Zy1sVTY4NGtwdE90czh5bHBPNWxXeDlRYUNVOXJuYXhmWUVoNFRRbjZUVm5JVHFIQm9XQQ?oc=5",
-      "source_name": "Google News - Gaming",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "154c0099c90a73b9"
-    },
-    {
-      "id": "bb230c34e2bd",
-      "topic": "'Toy Story 5' All Business in Proving Some Franchises Still Soar with $160 Million Debut - Held Over by Popular Demand",
-      "traffic": "",
-      "detected_at": "2026-06-21T19:07:15.192001+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBYR1poY2JUTXlvM2ZITmdKRE9kRXo5RlZjeG1rU2hXSllHRVNJeVhxdlF5WTFIUUVvTXFGbDlONEdtT0dEYXd1YUdvQXpIQ0VCNUJJZTJ2LW5zYVY4RlZONG9OVnYzNnNwLTRDaFJnblRMWFlGRm1GdFgxTmthdw?oc=5",
-      "source_name": "Google News - Business",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "79690153363bfb86"
-    },
-    {
-      "id": "9581d8c00d92",
-      "topic": "We Caught the Facelifted BMW M5 Testing, Here’s What It Reveals - bmwblog",
-      "traffic": "",
-      "detected_at": "2026-06-21T19:07:15.192001+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOM1A4Y21XVXloTTNyd1VJSnlOYjlCS1ljbVEzczRyYWxJcW9jRkp0cHBhMjN5UUltNnpfZ29qZWtKR09ZZ3BNR0JrWjZLdFZKd1N6SW42bEZXQ214cHdJallSWjc4VDZrbG1paFVvX2cxcHhwTGdrTk9BUmhMbmQwNUQwcDcxNXdDRGc?oc=5",
-      "source_name": "Google News - BMW",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "4a09bfd1407852cc"
-    },
-    {
-      "id": "df134fc9cb0a",
-      "topic": "European automakers pool code to build software-defined vehicles — but can they catch China? - Automotive News",
-      "traffic": "",
-      "detected_at": "2026-06-21T19:07:15.192001+00:00",
-      "search_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUzQ2TWV5UUpnbjVKVnNxWi1CcDZZZWVwenZrT2N0Z09NTUMxOFdjMHl1dW9RZTNwUTR6a3Jham1qaUJPa2l1UWt4eW4wcF9MWlRlVUhSWWoxbmFTNkJyLUhWOGdCN1JfRjJxTWxsdDQ1WFhZTXVSOWVLUnpEdEY2Rg?oc=5",
-      "source_name": "Google News - BMW",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "18c5dcdf81ceac6f"
-    },
-    {
-      "id": "2f097c6f7765",
-      "topic": "#SeductiveSunday",
-      "traffic": "##13 on X",
-      "detected_at": "2026-06-21T19:07:15.192001+00:00",
-      "search_url": "https://x.com/search?q=%23SeductiveSunday&src=trend_click",
-      "source_name": "X (Twitter) Trending",
-      "source_type": "x",
-      "haiku_score": 5
-    },
-    {
-      "id": "04e2487505ef",
-      "topic": "The Legend of Vozinha, Cape Verde’s (Now Very Famous) Goalkeeper",
-      "traffic": "",
-      "detected_at": "2026-06-21T17:49:43.569930+00:00",
-      "search_url": "https://www.gq.com/story/vozinha-cape-verde-world-cup-2026",
-      "source_name": "GQ",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "10393ad97cdb5cf9"
-    },
-    {
-      "id": "66db61eea158",
-      "topic": "Young Thug on PlaqueBoyMax's Vasectomy: ‘God Gonna Slap the F*ck Out Yo Ass'",
-      "traffic": "",
-      "detected_at": "2026-06-21T17:49:43.569930+00:00",
-      "search_url": "https://www.complex.com/music/a/alex-ocho/young-thug-plaqueboymax-vasectomy-twitch-stream",
-      "source_name": "Complex",
-      "source_type": "feed",
-      "haiku_score": 5
-    },
-    {
-      "id": "dc3cf36b58f0",
-      "topic": "SZA Slams ‘Disgusting‘ Musicians Using AI, Says Platforms Like Suno Train on the ‘Best and Brightest Black Minds of Writers and Producers’",
-      "traffic": "",
-      "detected_at": "2026-06-21T17:49:43.569930+00:00",
-      "search_url": "https://variety.com/2026/music/news/sza-slams-musicians-using-ai-1236786466/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 8,
-      "cluster_id": "8e800311a418922c"
-    },
-    {
-      "id": "5511b5310e22",
-      "topic": "Karlovy Vary Film Festival Topper Karel Och Talks About the 60th Edition Lineup and Its Cinematic Ambitions for Regional Filmmakers and Beyond",
-      "traffic": "",
-      "detected_at": "2026-06-21T17:49:43.569930+00:00",
-      "search_url": "https://variety.com/2026/film/focus/karlovy-vary-film-festival-karel-och-2-1236768436/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 5,
-      "cluster_id": "158d1fcb70f45bbc"
-    },
-    {
-      "id": "04d8197a6b7b",
-      "topic": "Concertgoer Falls to His Death During Goose Show at Madison Square Garden",
-      "traffic": "",
-      "detected_at": "2026-06-21T17:49:43.569930+00:00",
-      "search_url": "https://variety.com/2026/music/news/concertgoer-falls-to-death-goose-madison-square-garden-1236786659/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 7,
-      "cluster_id": "0e5712e767c27a2a"
-    },
-    {
-      "id": "a2aba3b25757",
-      "topic": "Aardman Teases New Pokemon, ‘Timmy’ Series, ‘The (Almost) Untold Story of Danger Delilah,’ Aardman Academy and Looks Back at 50 Years of Clay Animation at Annecy",
-      "traffic": "",
-      "detected_at": "2026-06-21T17:49:43.569930+00:00",
-      "search_url": "https://variety.com/2026/tv/global/new-pokemon-timmy-series-upcoming-shorts-aardman-annecy-1236786337/",
-      "source_name": "Variety",
-      "source_type": "feed",
-      "haiku_score": 6,
-      "cluster_id": "578e0ffe42fc7ca7"
     }
   ],
-  "last_checked": "2026-06-21T20:45:25.739116+00:00"
+  "last_checked": "2026-06-21T22:03:46.209295+00:00"
 }
