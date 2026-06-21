@@ -1,39 +1,5 @@
 {
   "known_ids": [
-    "29e6f4e816a3",
-    "d131d924d4b8",
-    "6d5e541bc2fd",
-    "b20ea8a1fb36",
-    "66973e81a56d",
-    "25eaadd85ae8",
-    "290f36cd9bda",
-    "202b88d947d7",
-    "d246f36d4305",
-    "b4a9756d2153",
-    "ae26795add9c",
-    "1a5cd237519f",
-    "84a62a094bab",
-    "fa698f485c13",
-    "bfcd129e3b63",
-    "017e22dc7983",
-    "31ea22fade2b",
-    "a455b6ac7170",
-    "ab8b8b3b16f3",
-    "0c615019577c",
-    "4778831bcc05",
-    "4c2979e6c13b",
-    "d8f5e0e775df",
-    "8b4df931abdf",
-    "fffe92dc2b45",
-    "5855abbea61f",
-    "c8723f45661a",
-    "b8d5fe28d885",
-    "115d25737e0e",
-    "c05d333cab69",
-    "f57f01019f65",
-    "9c1f7f91b2fd",
-    "7fbfcced535f",
-    "1fbcf256c83c",
     "680c92d17bf8",
     "a574471692df",
     "53f88a509c85",
@@ -499,23 +465,43 @@
     "f4b1ad9b5dcb",
     "722e42779a47",
     "df8834d9d9eb",
-    "e9e463d55ff3"
+    "e9e463d55ff3",
+    "20d0bcc81650",
+    "68d1c1225044",
+    "866c45bb479b",
+    "bf8368a762a7",
+    "85debbfea973",
+    "43038d581bc4",
+    "79862f475179",
+    "0a71b6765fd8",
+    "38d5dccd5268",
+    "f4ed96aa29a5",
+    "972926185d2e",
+    "bb1f08e9fc45",
+    "a6050a9f4921",
+    "b893e7b70421",
+    "8e9a0bddf473",
+    "53a6f669f208",
+    "8fdeeb07add7",
+    "d327a9caf7cf",
+    "f1bdf50714fe",
+    "b0ffade724df",
+    "209bad0e2304",
+    "7b8285fa8dbd",
+    "64b251af8890",
+    "dc734e81eb9b",
+    "47cc883bcac0",
+    "f7ca2e2c461c",
+    "a1210fbf6f3c",
+    "6a4a945b0469",
+    "aef0405a88ea",
+    "050ca4cbdf07",
+    "0c50bfb7e03e",
+    "fa228ec1d170",
+    "9e52c8ea5782",
+    "30abb65f5fd2"
   ],
   "failed_ids": {
-    "7e4b56fa0506": "2026-06-21T11:51:25.666322+00:00",
-    "6a7e7fd5cd56": "2026-06-21T11:51:25.666322+00:00",
-    "92a7f09a9755": "2026-06-21T11:51:25.666322+00:00",
-    "0664fce87c81": "2026-06-21T11:51:25.666322+00:00",
-    "fa5830a21145": "2026-06-21T11:51:25.666322+00:00",
-    "fe43c41de53c": "2026-06-21T11:51:25.666322+00:00",
-    "4b11e84d9f0f": "2026-06-21T11:51:25.666322+00:00",
-    "8da2fd5924fb": "2026-06-21T11:51:25.666322+00:00",
-    "1a20f3e4636c": "2026-06-21T11:51:25.666322+00:00",
-    "b5ad51d99cf2": "2026-06-21T11:51:25.666322+00:00",
-    "e7789ee8585c": "2026-06-21T11:51:25.666322+00:00",
-    "de7d82ad8f4a": "2026-06-21T11:51:25.666322+00:00",
-    "f319dd3b97f4": "2026-06-21T11:51:25.666322+00:00",
-    "5765014a24cd": "2026-06-21T11:51:25.666322+00:00",
     "e87a8e60009a": "2026-06-21T14:00:27.140548+00:00",
     "81a44adb7753": "2026-06-21T14:00:27.140548+00:00",
     "6a4a2a781c9c": "2026-06-21T14:00:27.140548+00:00",
@@ -543,230 +529,19 @@
     "31ce5704b559": "2026-06-21T14:00:27.140548+00:00",
     "a15cf3b4d9a8": "2026-06-21T14:00:27.140548+00:00",
     "b7eee6d25932": "2026-06-21T14:00:27.140548+00:00",
-    "c05cc8a55bca": "2026-06-21T14:00:27.140548+00:00"
+    "c05cc8a55bca": "2026-06-21T14:00:27.140548+00:00",
+    "34bf2d11e1af": "2026-06-21T16:06:27.118977+00:00",
+    "a96480a97656": "2026-06-21T16:06:27.118977+00:00",
+    "d8d5e95b641a": "2026-06-21T16:06:27.118977+00:00",
+    "c70c30b877cb": "2026-06-21T16:06:27.118977+00:00",
+    "c1a6026c4119": "2026-06-21T16:06:27.118977+00:00",
+    "6a4a2526b198": "2026-06-21T16:06:27.118977+00:00",
+    "dcc701bc41aa": "2026-06-21T16:06:27.118977+00:00",
+    "69ad246611d1": "2026-06-21T16:06:27.118977+00:00",
+    "276672c38725": "2026-06-21T16:06:27.118977+00:00",
+    "226662e8fad5": "2026-06-21T16:06:27.118977+00:00"
   },
   "live_clusters": {
-    "b40e1d0bc2850cb3": {
-      "topic": "The Beatles Long-Lost Top of the Pops Performance Discovery",
-      "item_ids": [
-        "6801d2164953"
-      ],
-      "created_at": "2026-06-20T14:36:06.029627+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b56b2310b762e74c": {
-      "topic": "James Bradley Death Flags of Our Fathers Co-Author",
-      "item_ids": [
-        "dd5756ef718d"
-      ],
-      "created_at": "2026-06-20T14:36:06.029627+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a49524691bd52178": {
-      "topic": "Car Manufacturers Ditching Android Auto 2026",
-      "item_ids": [
-        "d73705257417",
-        "7b0768a9cbf7"
-      ],
-      "created_at": "2026-06-20T14:36:06.029627+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4e8769e69a7670c3": {
-      "topic": "Kevin Garrett LeBron James Cleveland Cavaliers Career End",
-      "item_ids": [
-        "ed546fab31d5"
-      ],
-      "created_at": "2026-06-20T14:36:06.029627+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4e8306c0b7ace764": {
-      "topic": "Jim Cramer Ford Battery Business Expansion",
-      "item_ids": [
-        "f09c086e6f5d"
-      ],
-      "created_at": "2026-06-20T14:36:06.029627+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5c00c7c32dec8655": {
-      "topic": "BMW Alpina Flagship Sedan New Model Development",
-      "item_ids": [
-        "b1493c8fb7ef",
-        "7caea152fa00"
-      ],
-      "created_at": "2026-06-20T14:36:06.029627+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "32597fe4db4dadcc": {
-      "topic": "Ferrari Family Car Pricing vs BMW M5",
-      "item_ids": [
-        "e28f70d5fa2b"
-      ],
-      "created_at": "2026-06-20T14:36:06.029627+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2ba678b8597ba24b": {
-      "topic": "adidas Climacool Closed Sole Laced Sneaker Release",
-      "item_ids": [
-        "2d9c2a7b539c"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6fbdf1d54af72055": {
-      "topic": "Nike Air Force 1 Low Floral Pack Cecilie Bahnsen Collaboration",
-      "item_ids": [
-        "5d9d67fb35df"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2c469ebf358394e2": {
-      "topic": "World Cup 2026 Fan Conversation Starters Guide",
-      "item_ids": [
-        "cd214bce8ac1",
-        "977a90d8ca59"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ac518437c983ec31": {
-      "topic": "Shohei Ohtani Second Child Birth Announcement",
-      "item_ids": [
-        "4bd71e1eb75b",
-        "790cbecf08a1"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7e475de8e929c226": {
-      "topic": "Andr\u00e9 3000 7 Piano Sketches MUBI Film",
-      "item_ids": [
-        "b61f41d6c660"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a6147554063b5e8a": {
-      "topic": "Toy Story 5 Box Office $71 Million Opening Day",
-      "item_ids": [
-        "c2f972911157",
-        "f636e7fa642b",
-        "0b7736a75820"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-21T05:15:20.547846+00:00",
-      "picks_file": "picks/picks-2026-06-21-0515.md",
-      "why_text": "Pixar's long-awaited fifth installment is already a box office event, proving the franchise still carries enormous cultural and commercial weight decades after the original rewrote what animation could be. The Guardian's angle \u2014 questioning whether the film goes hard enough on technology as a theme \u2014 hints at a broader tension: audiences want nostalgia, but Pixar's DNA demands it say something urgent about the world kids are actually growing up in. A $71M opening day means this isn't just a sequel, it's a cultural reset for a studio that's had a rocky few years.",
-      "last_escalated_item_ids": [
-        "c2f972911157",
-        "f636e7fa642b",
-        "0b7736a75820"
-      ]
-    },
-    "f8f3359384f92efd": {
-      "topic": "Luigi The Musical Political Satire Celebrity Critique",
-      "item_ids": [
-        "5f104458e7f2"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f5498c3c4c7fb5ed": {
-      "topic": "Claude Guillemot Ubisoft Co-Founder Plane Crash Death",
-      "item_ids": [
-        "4ba8090e5763"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0315132ae0254648": {
-      "topic": "Broadway Summer 2026 Closings Schedule",
-      "item_ids": [
-        "15851fe2d2a6"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fab0334ac0732172": {
-      "topic": "commercetools Mirion AI Agent B2B Order Intake",
-      "item_ids": [
-        "b728c937c71b"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fa6861a39d8a7f3b": {
-      "topic": "Apple Store Closures Three Locations",
-      "item_ids": [
-        "bb610a227e76"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "232f6dffcb4866e0": {
-      "topic": "Rockets Spurs Offseason Learning Analysis",
-      "item_ids": [
-        "b5ab8f9bd071"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1259ecf9ad2ab1f9": {
-      "topic": "Knicks NBA Championship Victory Luxury Party Celebration",
-      "item_ids": [
-        "c2cc87fa74c9",
-        "66434dd25474",
-        "6998dcdf2144",
-        "088aada1aeb2"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-21T00:02:58.041359+00:00",
-      "picks_file": "picks/picks-2026-06-21-0003.md",
-      "why_text": "The New York Knicks have won the NBA Championship, ending one of the longest championship droughts in American professional sports and sending the city into full delirium. The fact that role player Landry Shamet is riding the subway unrecognized while his team is throwing luxury victory parties captures the perfect absurdity of championship culture \u2014 the stars get the penthouses, the journeymen get the A train. For New York, this isn't just a basketball moment; it's a civic identity reset for a city that has spent decades defining itself partly by its teams' failures.",
-      "last_escalated_item_ids": [
-        "c2cc87fa74c9",
-        "66434dd25474",
-        "6998dcdf2144"
-      ]
-    },
-    "c50259d65f593aab": {
-      "topic": "Ubisoft Co-Founder Claude Guillemot Plane Crash Death",
-      "item_ids": [
-        "a80d05ae98c1"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0a3300ef19ba632c": {
-      "topic": "BMW Zagato M4 \u20ac370000 First Drive",
-      "item_ids": [
-        "0974b0420d85"
-      ],
-      "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "bbd0f99fcd433e19": {
       "topic": "New Balance 990v4 Teal Suede Release",
       "item_ids": [
@@ -1024,7 +799,8 @@
     "4b8752d46be7ff72": {
       "topic": "NASA Rover High-Speed Climbing Obstacle Navigation Testing",
       "item_ids": [
-        "5f4f9e707423"
+        "5f4f9e707423",
+        "8e9a0bddf473"
       ],
       "created_at": "2026-06-20T19:01:15.572984+00:00",
       "last_escalated_size": 0,
@@ -1145,7 +921,8 @@
     "b621bbcc73194f7d": {
       "topic": "Boston Celtics 2026 NBA Draft Big Board",
       "item_ids": [
-        "1fa003557ae9"
+        "1fa003557ae9",
+        "f7ca2e2c461c"
       ],
       "created_at": "2026-06-20T20:25:08.567865+00:00",
       "last_escalated_size": 0,
@@ -1326,7 +1103,8 @@
     "68df0ec5738d950b": {
       "topic": "Pfizer vs Eli Lilly Dividend Yield Comparison",
       "item_ids": [
-        "83c809dd1b8c"
+        "83c809dd1b8c",
+        "0c50bfb7e03e"
       ],
       "created_at": "2026-06-20T22:52:59.004160+00:00",
       "last_escalated_size": 0,
@@ -1443,11 +1221,20 @@
     "177b98e89fa8095c": {
       "topic": "SIS Pitches Advanced Technology 2026 World Cup Stadiums",
       "item_ids": [
-        "b6bf7d8f0c37"
+        "b6bf7d8f0c37",
+        "d327a9caf7cf",
+        "f1bdf50714fe"
       ],
       "created_at": "2026-06-21T09:04:24.384063+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-21T16:06:27.118977+00:00",
+      "picks_file": "picks/picks-2026-06-21-1607.md",
+      "why_text": "SIS Pitches is supplying its hybrid pitch systems to nine stadiums across the US, Mexico, and Canada for the 2026 World Cup \u2014 a tournament that will be the largest in the sport's history. The choice of surface technology matters more than fans realize: hybrid pitches directly affect player safety, ball behavior, and game quality at the elite level. With FIFA under pressure to deliver a flawless mega-event across three nations, the infrastructure beneath players' feet is quietly one of the most consequential decisions being made right now.",
+      "last_escalated_item_ids": [
+        "b6bf7d8f0c37",
+        "d327a9caf7cf",
+        "f1bdf50714fe"
+      ]
     },
     "65228eb14a973f0f": {
       "topic": "Phoenix Suns Dillon Brooks Decision",
@@ -1638,7 +1425,259 @@
       "created_at": "2026-06-21T14:00:58.719721+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "5d5e8f46a179c9a8": {
+      "topic": "Butter Baby Jakarta Airport Experiential Marketing Campaign",
+      "item_ids": [
+        "20d0bcc81650"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dc9b4b41a9b658a1": {
+      "topic": "Sneaker Releases Weekly Roundup Kobe 4 Bape",
+      "item_ids": [
+        "68d1c1225044"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c51f0c4c5742904c": {
+      "topic": "Boy George Reclaims Karma Chameleon With Ethical AI",
+      "item_ids": [
+        "866c45bb479b"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "195f835005ffe2f4": {
+      "topic": "Morgan Freeman Symphonic Blues Experience Album",
+      "item_ids": [
+        "bf8368a762a7"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bf6521b39f3b1ef2": {
+      "topic": "Chanel Iman Davon Godchaux Cowboy Dream Home Texas",
+      "item_ids": [
+        "85debbfea973"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b8bbe91c750a2f59": {
+      "topic": "Michelle Randolph Glen Powell Dating PDA NYC",
+      "item_ids": [
+        "43038d581bc4"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "79690153363bfb86": {
+      "topic": "Toy Story 5 Box Office $160M Opening Record",
+      "item_ids": [
+        "79862f475179"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5ac12ec85881fe70": {
+      "topic": "Ken Carson Xperiment Album Release",
+      "item_ids": [
+        "0a71b6765fd8"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "03995db35b3b1231": {
+      "topic": "Metallica Kirk Hammett Falls Off Stage Taylor Swift Swifties",
+      "item_ids": [
+        "38d5dccd5268"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "22f4bc5681d9439e": {
+      "topic": "Shooter Jennings Waylon Songs Glen Campbell Release",
+      "item_ids": [
+        "f4ed96aa29a5"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "961e67db54406ae2": {
+      "topic": "Jennifer Coolidge Legally Blonde Audition Mistake Admission",
+      "item_ids": [
+        "972926185d2e"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3d94fa0c4d66ef51": {
+      "topic": "Legally Blonde Reunion Reese Witherspoon Lexi Minetree Torch Passing",
+      "item_ids": [
+        "bb1f08e9fc45"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2ed59f7916c9dc29": {
+      "topic": "China Robotaxi Dominance TechCrunch Scorecard",
+      "item_ids": [
+        "a6050a9f4921"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7d68dbfc1c80188a": {
+      "topic": "Apple iOS 27 AI Features iPhone",
+      "item_ids": [
+        "b893e7b70421"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b9801b705fe6837f": {
+      "topic": "Apple Price Hike WSJ",
+      "item_ids": [
+        "53a6f669f208"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7b56296ee93c83b5": {
+      "topic": "Australia Data Centre Boom Infrastructure Concerns",
+      "item_ids": [
+        "8fdeeb07add7"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3295a715d8eecd52": {
+      "topic": "Cannes Lions 2026 Digital Craft Lions Shortlist AI Design",
+      "item_ids": [
+        "b0ffade724df"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2c0858b9e2442842": {
+      "topic": "Paper Fan Bulletproof Vest Durability Material Science",
+      "item_ids": [
+        "209bad0e2304"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "11dc28574beef8d6": {
+      "topic": "John Ternus Apple CEO Design Team Importance Shift",
+      "item_ids": [
+        "7b8285fa8dbd"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ccddd60c4f033dee": {
+      "topic": "Knicks NBA Champions Ranking Past 26 Years",
+      "item_ids": [
+        "64b251af8890"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c2551c149c51e961": {
+      "topic": "Cavaliers Trade Options Small Deals Impact Analysis",
+      "item_ids": [
+        "dc734e81eb9b"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "aa14d35caa2a64c7": {
+      "topic": "Raptors NBA Draft Trade-Up Scenarios 2026",
+      "item_ids": [
+        "47cc883bcac0"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7ef4f592413d57b0": {
+      "topic": "Knicks NBA Finals Parade Celebration Father Moment",
+      "item_ids": [
+        "a1210fbf6f3c"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "722a2cb77b8b79ce": {
+      "topic": "Newsletter Business Model News Industry Shift",
+      "item_ids": [
+        "6a4a945b0469"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "102b9945f9e93fba": {
+      "topic": "Teen Down Syndrome Beach Sand Messages Business Kauai",
+      "item_ids": [
+        "aef0405a88ea"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "533a87e86de368b9": {
+      "topic": "UNDP Silver Economy Financing China Report",
+      "item_ids": [
+        "050ca4cbdf07"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e178db763c780d8d": {
+      "topic": "DTM Team Schubert BMW M2 Cup Lausitzring",
+      "item_ids": [
+        "fa228ec1d170"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ddd70f0d8f830bbd": {
+      "topic": "Audi A6 Allroad vs Ferrari BMW Mercedes Comparison",
+      "item_ids": [
+        "9e52c8ea5782"
+      ],
+      "created_at": "2026-06-21T16:07:16.659583+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-21T14:00:58.721000+00:00"
+  "last_checked": "2026-06-21T16:07:23.788421+00:00"
 }
