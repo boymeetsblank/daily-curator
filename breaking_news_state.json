@@ -1,17 +1,5 @@
 {
   "known_ids": [
-    "828a09c0e43c",
-    "2728679efa85",
-    "1aa3145fe7e0",
-    "0917cbb8420c",
-    "34614ca60369",
-    "5820fb49caab",
-    "89ec10914eab",
-    "b0e6ca30ffea",
-    "6b689e7a979f",
-    "0a158f55ef1f",
-    "100901561df4",
-    "a07fcd349948",
     "638a598c510e",
     "aa383d85f81d",
     "c49f6d9ffaaf",
@@ -499,22 +487,21 @@
     "17bcbcc3d6b4",
     "ce60bd3308c8",
     "13acf232f839",
-    "0bfc9e83eca7"
+    "0bfc9e83eca7",
+    "aee88b6ac1e8",
+    "0c158e213aa8",
+    "61fe7219e0c2",
+    "6998dcdf2144",
+    "6c2c3b0610c7",
+    "9c50c4703f8e",
+    "83c9d4352c2b",
+    "0a823698ec9c",
+    "d7076d929090",
+    "24a742d91dcf",
+    "f251162f1e16",
+    "48051edd9720"
   ],
   "failed_ids": {
-    "ad3c891acce1": "2026-06-20T19:00:41.548574+00:00",
-    "0d4df47f2e21": "2026-06-20T19:00:41.548574+00:00",
-    "b6cacee68f2a": "2026-06-20T19:00:41.548574+00:00",
-    "efb2b225fac5": "2026-06-20T19:00:41.548574+00:00",
-    "f65242bba44f": "2026-06-20T19:00:41.548574+00:00",
-    "5c793634d170": "2026-06-20T19:00:41.548574+00:00",
-    "120b695cf353": "2026-06-20T19:00:41.548574+00:00",
-    "d597ac624340": "2026-06-20T19:00:41.548574+00:00",
-    "3d0af3520d2e": "2026-06-20T19:00:41.548574+00:00",
-    "b3c8bf24856f": "2026-06-20T19:00:41.548574+00:00",
-    "8923784823f3": "2026-06-20T19:00:41.548574+00:00",
-    "ed65ce14eeff": "2026-06-20T19:00:41.548574+00:00",
-    "1dd94ac22fe5": "2026-06-20T19:00:41.548574+00:00",
     "5ef38a210a28": "2026-06-20T20:24:35.875760+00:00",
     "684e55787a48": "2026-06-20T20:24:35.875760+00:00",
     "5cab6cb8b0ba": "2026-06-20T20:24:35.875760+00:00",
@@ -559,111 +546,15 @@
     "4545888e6d8f": "2026-06-20T22:52:25.661793+00:00",
     "56e15e5b7703": "2026-06-20T22:52:25.661793+00:00",
     "10ba62099348": "2026-06-20T22:52:25.661793+00:00",
-    "57411c9a6e86": "2026-06-20T22:52:25.661793+00:00"
+    "57411c9a6e86": "2026-06-20T22:52:25.661793+00:00",
+    "8e0db62c5a35": "2026-06-21T00:02:58.041359+00:00",
+    "bf8acdbdb31f": "2026-06-21T00:02:58.041359+00:00",
+    "aa7aa13e3811": "2026-06-21T00:02:58.041359+00:00",
+    "5b11c2337085": "2026-06-21T00:02:58.041359+00:00",
+    "c895b105511f": "2026-06-21T00:02:58.041359+00:00",
+    "742e5bfc4aab": "2026-06-21T00:02:58.041359+00:00"
   },
   "live_clusters": {
-    "0649ffced587367e": {
-      "topic": "Jordan Luka 5 Laser Fuchsia Release",
-      "item_ids": [
-        "e866c4b700cc"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fe03545713511641": {
-      "topic": "J.R. Smith Retirement Financial Reflection",
-      "item_ids": [
-        "81f76d2beb4d"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "440888ba7f4e50a2": {
-      "topic": "Zlatan Ibrahimovic FOX Sports Commentary Alexi Lalas",
-      "item_ids": [
-        "43c257bd287b"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3b3f719ecc8e9cc9": {
-      "topic": "Honey Lauren Intersex Film Pride Month Screening",
-      "item_ids": [
-        "dc56fed26d54"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c631de3f7f9b951e": {
-      "topic": "The Wedding Dress Netflix The Life Ahead Edoardo Ponti",
-      "item_ids": [
-        "d92d65b4bb78"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ae705c4881e43b37": {
-      "topic": "Rosie O'Donnell The View Guest Host Possibility",
-      "item_ids": [
-        "810ee2c1dbec"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "63db1b4e1c8f1bf2": {
-      "topic": "Ariana Grande Eternal Sunshine Tour LA Concert Review",
-      "item_ids": [
-        "61767406f6af",
-        "43cf8789a627"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d3aa3e4341a22f4d": {
-      "topic": "Yaxel Lendeborg NBA Draft Chipotle Bowl",
-      "item_ids": [
-        "284b5c33bda9"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7952fa1fa997a01c": {
-      "topic": "2026 NBA Draft Hawks Mock Draft",
-      "item_ids": [
-        "5c07b1119560"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0f55c86cbbff87d6": {
-      "topic": "Dylan Harper Spurs NBA Finals Response",
-      "item_ids": [
-        "5f2085a7069e",
-        "142aa79d9c13"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "29b9ed7d52169317": {
-      "topic": "2026 NBA Draft Jaden Bradley Scouting Report",
-      "item_ids": [
-        "66f1e9ea80f0",
-        "b56f7f290407"
-      ],
-      "created_at": "2026-06-19T22:52:55.694365+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "a11fe60c84f02a85": {
       "topic": "adidas D.O.N. Issue #8 Yin And Yang Sneaker Release",
       "item_ids": [
@@ -1354,11 +1245,19 @@
       "topic": "Knicks NBA Championship Victory Luxury Party Celebration",
       "item_ids": [
         "c2cc87fa74c9",
-        "66434dd25474"
+        "66434dd25474",
+        "6998dcdf2144"
       ],
       "created_at": "2026-06-20T16:05:10.369016+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-21T00:02:58.041359+00:00",
+      "picks_file": "picks/picks-2026-06-21-0003.md",
+      "why_text": "The New York Knicks have won the NBA Championship, ending one of the longest championship droughts in American professional sports and sending the city into full delirium. The fact that role player Landry Shamet is riding the subway unrecognized while his team is throwing luxury victory parties captures the perfect absurdity of championship culture \u2014 the stars get the penthouses, the journeymen get the A train. For New York, this isn't just a basketball moment; it's a civic identity reset for a city that has spent decades defining itself partly by its teams' failures.",
+      "last_escalated_item_ids": [
+        "c2cc87fa74c9",
+        "66434dd25474",
+        "6998dcdf2144"
+      ]
     },
     "c50259d65f593aab": {
       "topic": "Ubisoft Co-Founder Claude Guillemot Plane Crash Death",
@@ -1878,7 +1777,8 @@
     "1507ac71120e8fcd": {
       "topic": "Collin Gillespie Suns Contract NBA Free Agency",
       "item_ids": [
-        "7c51067322cb"
+        "7c51067322cb",
+        "61fe7219e0c2"
       ],
       "created_at": "2026-06-20T22:52:59.004160+00:00",
       "last_escalated_size": 0,
@@ -1937,7 +1837,52 @@
       "created_at": "2026-06-20T22:52:59.004160+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "189ed9c7ada05820": {
+      "topic": "Nike T90 Shox Magia Total 90 Sneaker Release",
+      "item_ids": [
+        "aee88b6ac1e8"
+      ],
+      "created_at": "2026-06-21T00:03:34.510038+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8e800311a418922c": {
+      "topic": "SZA Criticizes Musicians Supporting AI Music Generation",
+      "item_ids": [
+        "0c158e213aa8"
+      ],
+      "created_at": "2026-06-21T00:03:34.510038+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e699cf5c17dd2cef": {
+      "topic": "Thunder 2026 NBA Draft Strategy Three Picks",
+      "item_ids": [
+        "6c2c3b0610c7"
+      ],
+      "created_at": "2026-06-21T00:03:34.510038+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4baba2c554a1550f": {
+      "topic": "Lakers Trade Target Former Luka Doncic Teammate",
+      "item_ids": [
+        "9c50c4703f8e"
+      ],
+      "created_at": "2026-06-21T00:03:34.510038+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "80c888f393b4d955": {
+      "topic": "Knicks 2026 NBA Draft Critical Mistakes to Avoid",
+      "item_ids": [
+        "83c9d4352c2b"
+      ],
+      "created_at": "2026-06-21T00:03:34.510038+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-20T22:52:59.025826+00:00"
+  "last_checked": "2026-06-21T00:03:41.910204+00:00"
 }
