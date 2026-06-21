@@ -1,18 +1,5 @@
 {
   "known_ids": [
-    "78a60c8e37f0",
-    "0f0143102b3b",
-    "0a206b3db29e",
-    "6fb1e2cc30b0",
-    "cbf92c9d9dd9",
-    "8254b0bbce02",
-    "48ddfa1b5f90",
-    "91bc0d5dae02",
-    "f3c88f7e9665",
-    "a61df52e38d6",
-    "f211f9cf322d",
-    "d1c77111d216",
-    "ae5ec6e421fd",
     "29e6f4e816a3",
     "d131d924d4b8",
     "6d5e541bc2fd",
@@ -499,19 +486,22 @@
     "24391b1cd47b",
     "5466180c5b5e",
     "e3bb3f96c5f9",
-    "0371c43aa657"
+    "0371c43aa657",
+    "1a35cc5c1044",
+    "01a52113bf86",
+    "977a90d8ca59",
+    "25c1bfa5b4d4",
+    "088aada1aeb2",
+    "68d89496be21",
+    "e37c50f4cce5",
+    "b8742216763a",
+    "7e59011ee941",
+    "f4b1ad9b5dcb",
+    "722e42779a47",
+    "df8834d9d9eb",
+    "e9e463d55ff3"
   ],
   "failed_ids": {
-    "5eaf720074d5": "2026-06-21T09:03:51.751981+00:00",
-    "67fce52537aa": "2026-06-21T09:03:51.751981+00:00",
-    "932551c5f28f": "2026-06-21T09:03:51.751981+00:00",
-    "015b5cef87e6": "2026-06-21T09:03:51.751981+00:00",
-    "a0e774f16188": "2026-06-21T09:03:51.751981+00:00",
-    "38c99ee34b2f": "2026-06-21T09:03:51.751981+00:00",
-    "b3f49fe0a5ca": "2026-06-21T09:03:51.751981+00:00",
-    "9a2161788f52": "2026-06-21T09:03:51.751981+00:00",
-    "b7eee6d25932": "2026-06-21T09:03:51.751981+00:00",
-    "c05cc8a55bca": "2026-06-21T09:03:51.751981+00:00",
     "7e4b56fa0506": "2026-06-21T11:51:25.666322+00:00",
     "6a7e7fd5cd56": "2026-06-21T11:51:25.666322+00:00",
     "92a7f09a9755": "2026-06-21T11:51:25.666322+00:00",
@@ -525,196 +515,37 @@
     "e7789ee8585c": "2026-06-21T11:51:25.666322+00:00",
     "de7d82ad8f4a": "2026-06-21T11:51:25.666322+00:00",
     "f319dd3b97f4": "2026-06-21T11:51:25.666322+00:00",
-    "5765014a24cd": "2026-06-21T11:51:25.666322+00:00"
+    "5765014a24cd": "2026-06-21T11:51:25.666322+00:00",
+    "e87a8e60009a": "2026-06-21T14:00:27.140548+00:00",
+    "81a44adb7753": "2026-06-21T14:00:27.140548+00:00",
+    "6a4a2a781c9c": "2026-06-21T14:00:27.140548+00:00",
+    "2f9f835acb68": "2026-06-21T14:00:27.140548+00:00",
+    "662f13c55538": "2026-06-21T14:00:27.140548+00:00",
+    "9328e1faff79": "2026-06-21T14:00:27.140548+00:00",
+    "c85616f27997": "2026-06-21T14:00:27.140548+00:00",
+    "7ffb27041f8c": "2026-06-21T14:00:27.140548+00:00",
+    "7b65ded7a865": "2026-06-21T14:00:27.140548+00:00",
+    "ebbe094a7614": "2026-06-21T14:00:27.140548+00:00",
+    "9667171c0368": "2026-06-21T14:00:27.140548+00:00",
+    "2e877ee474bf": "2026-06-21T14:00:27.140548+00:00",
+    "6a87b0acdbc9": "2026-06-21T14:00:27.140548+00:00",
+    "9da891df9a86": "2026-06-21T14:00:27.140548+00:00",
+    "13e79f530356": "2026-06-21T14:00:27.140548+00:00",
+    "c5a635d6cd27": "2026-06-21T14:00:27.140548+00:00",
+    "737a47d3499d": "2026-06-21T14:00:27.140548+00:00",
+    "2a80a81c8cc3": "2026-06-21T14:00:27.140548+00:00",
+    "d03425f76404": "2026-06-21T14:00:27.140548+00:00",
+    "ae83c7332045": "2026-06-21T14:00:27.140548+00:00",
+    "9127c9c67124": "2026-06-21T14:00:27.140548+00:00",
+    "8e6ae205c90c": "2026-06-21T14:00:27.140548+00:00",
+    "84e6caa9126f": "2026-06-21T14:00:27.140548+00:00",
+    "70cd3958bd23": "2026-06-21T14:00:27.140548+00:00",
+    "31ce5704b559": "2026-06-21T14:00:27.140548+00:00",
+    "a15cf3b4d9a8": "2026-06-21T14:00:27.140548+00:00",
+    "b7eee6d25932": "2026-06-21T14:00:27.140548+00:00",
+    "c05cc8a55bca": "2026-06-21T14:00:27.140548+00:00"
   },
   "live_clusters": {
-    "d89f9e2b224b13cc": {
-      "topic": "Home Battery Installation and Cost Guide",
-      "item_ids": [
-        "32141d2e2fd8"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e960785b5207259d": {
-      "topic": "CMF Budget Phone Line 2026 Release Plans",
-      "item_ids": [
-        "b76c65a61557"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "64cf61e383ec08f0": {
-      "topic": "Steam Next Fest Indie Games Showcase",
-      "item_ids": [
-        "11e30a0e1db1"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9182720dcd7cdd13": {
-      "topic": "UK Facial Recognition Age Verification Asylum Policy",
-      "item_ids": [
-        "a6f6ad4a9838"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c724c7c8b28f88be": {
-      "topic": "Spotify Ad Tools Ticketing Platform Strategy",
-      "item_ids": [
-        "2e4043347944"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3632f91b1adf3a73": {
-      "topic": "NBA Trade Block Former Washington Basketball Star",
-      "item_ids": [
-        "a5820082c6a2"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c3a5b50d7888b4dc": {
-      "topic": "NBA All-Star Mentorship Victor Wembanyama Development",
-      "item_ids": [
-        "d871387aed2e"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9d8875cceb3ffd00": {
-      "topic": "2026 NBA Draft Top Big Men Aday Mara",
-      "item_ids": [
-        "4c347c20efcc"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7b1fcd5be55ba357": {
-      "topic": "Alabama Basketball NBA Draft History",
-      "item_ids": [
-        "d8f2e32c3727",
-        "8630d5f2d403"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "929c66347ccae17f": {
-      "topic": "2026 NBA Mock Draft Rumors All 60 Picks",
-      "item_ids": [
-        "00ca1e55b2f0",
-        "afe264cc7383",
-        "57b011c84587",
-        "05c5189c673f",
-        "924db5531ea5",
-        "c5cf0d1109cb"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-21T05:15:20.547846+00:00",
-      "picks_file": "picks/picks-2026-06-20-2146.md",
-      "why_text": "AJ Dybantsa and Darryn Peterson are already being treated as generational prospects, with mock drafts cementing their top-two status more than a year before the actual draft \u2014 a sign of how hungry the league is for the next transcendent young talent. Dybantsa, the BYU freshman phenom, is the consensus No. 1 pick in waiting, while Peterson represents the kind of elite two-way guard prospect that contenders covet. The fact that a 2026 mock is generating this much traffic right now reflects how deeply draft culture has embedded itself into the NBA's year-round conversation.\n**Update 12:15 AM CT:** The pre-draft process is already breaking conventional norms: Dybantsa confirmed he skipped individual team workouts entirely, a rare flex that signals his No. 1 status is so locked in that franchises are coming to him \u2014 not the other way around. Meanwhile, the Lakers are surfacing as an early mover, with reported interest in UConn big man Liam McNeeley adding a marquee team narrative to the draft's developing storylines.",
-      "last_escalated_item_ids": [
-        "00ca1e55b2f0",
-        "afe264cc7383",
-        "57b011c84587",
-        "05c5189c673f",
-        "924db5531ea5",
-        "c5cf0d1109cb"
-      ]
-    },
-    "aa45f25bec188418": {
-      "topic": "Bitcoin Price Floor Crypto Billionaires Analysis",
-      "item_ids": [
-        "e707e85962b2"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e225178e7ff1a279": {
-      "topic": "Wall Street MANGOS Stock Portfolio Strategy",
-      "item_ids": [
-        "fac334f1f7e7"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "168e13a0fd41ee97": {
-      "topic": "Clix Esports Entrepreneur Business Empire at 21",
-      "item_ids": [
-        "2a5d7ed34b3c"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "64a2f1b29d0076f9": {
-      "topic": "World Cup 2026 Cannabis Business Seattle Boost",
-      "item_ids": [
-        "b6b5e7a542ae"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "88c392607d65a2a4": {
-      "topic": "Financial System Structural Risk Analysis",
-      "item_ids": [
-        "01c0122d275c"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "48507767552c2a0d": {
-      "topic": "Federal Reserve Leadership Policy Direction Shift",
-      "item_ids": [
-        "32fcfdcd2507"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bde7e1be76b2ae4b": {
-      "topic": "Jey Uso Trending Topic",
-      "item_ids": [
-        "f79deae1d8fd"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a73aeb9c758c54e9": {
-      "topic": "Prestianni Trending Topic",
-      "item_ids": [
-        "73187fe1fdc0"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9aeb46d938fa40a3": {
-      "topic": "Enciso Trending Topic",
-      "item_ids": [
-        "5e0a49cb8bbf"
-      ],
-      "created_at": "2026-06-20T12:18:40.736954+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "b40e1d0bc2850cb3": {
       "topic": "The Beatles Long-Lost Top of the Pops Performance Discovery",
       "item_ids": [
@@ -801,7 +632,8 @@
     "2c469ebf358394e2": {
       "topic": "World Cup 2026 Fan Conversation Starters Guide",
       "item_ids": [
-        "cd214bce8ac1"
+        "cd214bce8ac1",
+        "977a90d8ca59"
       ],
       "created_at": "2026-06-20T16:05:10.369016+00:00",
       "last_escalated_size": 0,
@@ -903,7 +735,8 @@
       "item_ids": [
         "c2cc87fa74c9",
         "66434dd25474",
-        "6998dcdf2144"
+        "6998dcdf2144",
+        "088aada1aeb2"
       ],
       "created_at": "2026-06-20T16:05:10.369016+00:00",
       "last_escalated_size": 3,
@@ -1028,7 +861,8 @@
     "006fc2faf474bf6a": {
       "topic": "Enterprise AI Adoption Pilot to Core Strategy Shift",
       "item_ids": [
-        "84f55c44397e"
+        "84f55c44397e",
+        "f4b1ad9b5dcb"
       ],
       "created_at": "2026-06-20T17:44:05.153288+00:00",
       "last_escalated_size": 0,
@@ -1199,7 +1033,8 @@
     "bcc4618d6dd791c1": {
       "topic": "Giannis Antetokounmpo Trade Partner Analysis Bucks",
       "item_ids": [
-        "1f6584e6103d"
+        "1f6584e6103d",
+        "68d89496be21"
       ],
       "created_at": "2026-06-20T19:01:15.572984+00:00",
       "last_escalated_size": 0,
@@ -1749,7 +1584,61 @@
       "created_at": "2026-06-21T11:51:55.262916+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "0e5712e767c27a2a": {
+      "topic": "Fan Death Fall Goose Madison Square Garden Concert",
+      "item_ids": [
+        "1a35cc5c1044"
+      ],
+      "created_at": "2026-06-21T14:00:58.719721+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2a9348cc7952bb63": {
+      "topic": "World Cup 2026 Team Tactics Gamesmanship",
+      "item_ids": [
+        "01a52113bf86"
+      ],
+      "created_at": "2026-06-21T14:00:58.719721+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "56de5aa07a79245a": {
+      "topic": "AI Data Centers Space Deployment Feasibility",
+      "item_ids": [
+        "25c1bfa5b4d4"
+      ],
+      "created_at": "2026-06-21T14:00:58.719721+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cfb053c705da85f8": {
+      "topic": "2026 NBA Offseason Trade Speculation Analysis",
+      "item_ids": [
+        "e37c50f4cce5"
+      ],
+      "created_at": "2026-06-21T14:00:58.719721+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f8af351c1abd2aa7": {
+      "topic": "Clippers Jaylen Brown Trade Rumor 2026 Draft",
+      "item_ids": [
+        "b8742216763a"
+      ],
+      "created_at": "2026-06-21T14:00:58.719721+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5c9f39f56438b51b": {
+      "topic": "NBA Free Agency Bargain Acquisitions Strategy",
+      "item_ids": [
+        "7e59011ee941"
+      ],
+      "created_at": "2026-06-21T14:00:58.719721+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-21T11:52:01.395577+00:00"
+  "last_checked": "2026-06-21T14:00:58.721000+00:00"
 }
