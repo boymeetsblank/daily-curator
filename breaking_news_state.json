@@ -1,34 +1,5 @@
 {
   "known_ids": [
-    "5c07b1119560",
-    "5f2085a7069e",
-    "66f1e9ea80f0",
-    "23387ace86a9",
-    "b15c4e04bc95",
-    "63758885f38e",
-    "0dced24ded15",
-    "8d313b834cfa",
-    "c5987068d619",
-    "bb0e27bf2c99",
-    "a2f92605834d",
-    "c7fff13fe7cf",
-    "6b7230f00dd4",
-    "28dd26bfd74b",
-    "4a054b5f670f",
-    "4d6c931600b3",
-    "5e9149e5648a",
-    "38f44a3ab608",
-    "35c04a151f83",
-    "97e5223841f8",
-    "d2dd25db0e8c",
-    "fec25d71cbd1",
-    "381b8ee4aa7b",
-    "3c35b15a5d50",
-    "820a28b7bf27",
-    "c94b0e379e07",
-    "985023fee0ab",
-    "3ce4e5999d15",
-    "8a7ff639d64d",
     "12dfca8c190b",
     "88ceac60dd42",
     "4a4e36dca4a3",
@@ -499,82 +470,39 @@
     "276672c38725",
     "510fb1d208a6",
     "fb9e283b9742",
-    "827cffd00b33"
+    "827cffd00b33",
+    "edff3d22c154",
+    "f2be5309902b",
+    "b9920552619f",
+    "d3c9bf4aaf46",
+    "7d76f5ba116a",
+    "8f06c630f3b9",
+    "5da7f42163c9",
+    "405976274c62",
+    "8108852b544d",
+    "280621ff2287",
+    "dae38464a275",
+    "133a993d16e7",
+    "f22a6e4886bc",
+    "1fcb8c958129",
+    "08c1231439d9",
+    "789ceda918a5",
+    "ac48d1e4d2ce",
+    "ccb295b46cdf",
+    "41e331370648",
+    "171333c8718a",
+    "51aefd98d885",
+    "5d243d49975c",
+    "91166dbab06b",
+    "366aa46018df",
+    "96757f91c0aa",
+    "d31329a71351",
+    "4752b14ac280",
+    "a4a489125666",
+    "8ed8edacbd11"
   ],
-  "failed_ids": {
-    "fcfe1f79387d": "2026-06-21T20:45:25.739116+00:00",
-    "af86fd2cd2d9": "2026-06-21T20:45:25.739116+00:00",
-    "54e99b62d23e": "2026-06-21T20:45:25.739116+00:00",
-    "10b10731bb7f": "2026-06-21T20:45:25.739116+00:00",
-    "fe2f320e5291": "2026-06-21T22:03:46.209295+00:00",
-    "2d48afebc2dd": "2026-06-21T22:03:46.209295+00:00",
-    "6658021c70d8": "2026-06-21T22:03:46.209295+00:00",
-    "d842decd70ad": "2026-06-21T22:03:46.209295+00:00",
-    "eee1cde98325": "2026-06-21T22:03:46.209295+00:00",
-    "fd32c72f31be": "2026-06-21T22:03:46.209295+00:00",
-    "41c53da653b9": "2026-06-21T22:03:46.209295+00:00",
-    "ef6d6aaa14c3": "2026-06-21T22:03:46.209295+00:00",
-    "14034726e005": "2026-06-21T22:03:46.209295+00:00",
-    "a481b0b1c060": "2026-06-21T22:03:46.209295+00:00",
-    "3d1e8f34818e": "2026-06-21T22:03:46.209295+00:00",
-    "feadf673e0c3": "2026-06-21T22:03:46.209295+00:00",
-    "c65d91e667af": "2026-06-21T22:03:46.209295+00:00"
-  },
+  "failed_ids": {},
   "live_clusters": {
-    "189ed9c7ada05820": {
-      "topic": "Nike T90 Shox Magia Total 90 Sneaker Release",
-      "item_ids": [
-        "aee88b6ac1e8"
-      ],
-      "created_at": "2026-06-21T00:03:34.510038+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8e800311a418922c": {
-      "topic": "SZA Criticizes Musicians Supporting AI Music Generation",
-      "item_ids": [
-        "0c158e213aa8",
-        "dc3cf36b58f0",
-        "a3c579b1388c"
-      ],
-      "created_at": "2026-06-21T00:03:34.510038+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-21T17:49:43.569930+00:00",
-      "picks_file": "picks/picks-2026-06-21-1750.md",
-      "why_text": "SZA's intervention lands with particular force because she isn't just defending her own catalog \u2014 she's naming a structural injustice: that platforms like Suno are effectively strip-mining Black musical genius to build products that will compete with and replace the very artists who created that sound. It's a rare moment of a mega-star using their platform to connect IP theft to a racial equity argument, pulling the AI music debate out of the courtroom and into a cultural reckoning. The fact that fellow artists like Kenneth Blume are echoing her publicly signals this could crystallize into a broader industry solidarity movement rather than another isolated complaint.",
-      "last_escalated_item_ids": [
-        "0c158e213aa8",
-        "dc3cf36b58f0",
-        "a3c579b1388c"
-      ]
-    },
-    "e699cf5c17dd2cef": {
-      "topic": "Thunder 2026 NBA Draft Strategy Three Picks",
-      "item_ids": [
-        "6c2c3b0610c7"
-      ],
-      "created_at": "2026-06-21T00:03:34.510038+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "4baba2c554a1550f": {
-      "topic": "Lakers Trade Target Former Luka Doncic Teammate",
-      "item_ids": [
-        "9c50c4703f8e"
-      ],
-      "created_at": "2026-06-21T00:03:34.510038+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "80c888f393b4d955": {
-      "topic": "Knicks 2026 NBA Draft Critical Mistakes to Avoid",
-      "item_ids": [
-        "83c9d4352c2b"
-      ],
-      "created_at": "2026-06-21T00:03:34.510038+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "4dc181cd76792dd3": {
       "topic": "Nicki Minaj Memorializes Producer Tay Keith",
       "item_ids": [
@@ -1581,5 +1509,5 @@
       "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-21T23:40:48.656625+00:00"
+  "last_checked": "2026-06-22T02:10:48.719859+00:00"
 }
