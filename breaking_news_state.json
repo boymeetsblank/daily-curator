@@ -1,43 +1,5 @@
 {
   "known_ids": [
-    "12dfca8c190b",
-    "88ceac60dd42",
-    "4a4e36dca4a3",
-    "3225fd4eeb33",
-    "b4812398eab8",
-    "d6c620e9ba7e",
-    "a99ef5ce2c70",
-    "2097a6965f84",
-    "f8a24a6d5e42",
-    "c6840814ec09",
-    "0a5277d61f0f",
-    "ce8827733f29",
-    "d476f9f201fd",
-    "6a967bbb8562",
-    "93abd864124e",
-    "3b7f48b12bae",
-    "cbb87f3b4224",
-    "42adec4eda48",
-    "64c299d58623",
-    "c7b7b64483a8",
-    "977190f7106d",
-    "1183498db3a9",
-    "e9ccfd4b4611",
-    "c13a88fe1b94",
-    "fbc21cc0e986",
-    "28bd4d6a7244",
-    "e23552031d4b",
-    "873bd484cbb3",
-    "53b3285894ad",
-    "6d3266883c75",
-    "9266196a7fc4",
-    "177355a74cff",
-    "860ef178dd5b",
-    "a178b11b922f",
-    "ff191a04b33b",
-    "9ddf8b652f95",
-    "390c547c391e",
-    "f8e34d36c71e",
     "2b0f4b42a164",
     "970ca2f5aad2",
     "772427bd6bda",
@@ -499,28 +461,48 @@
     "d31329a71351",
     "4752b14ac280",
     "a4a489125666",
-    "8ed8edacbd11"
+    "8ed8edacbd11",
+    "b2561e9277b9",
+    "e200f8850599",
+    "069bc771acf4",
+    "c35c412665e6",
+    "81235a8b9b1d",
+    "63e378f8d70e",
+    "0e63eee40cc3",
+    "22347f01a6d2",
+    "861584da7020",
+    "d4e4cc0b4a2d",
+    "84b7a05cb43b",
+    "a45aa61bc129",
+    "9dac8d7d8b24",
+    "b9377ffbc494",
+    "21409cd2f3d8",
+    "53bcd842eb9b",
+    "1888088f5a46",
+    "9239fc4574a3",
+    "79b7f34765ee",
+    "c028ae5e2d93",
+    "1b416d98c34d",
+    "075f44ca2bd1",
+    "f6ce99fdcb8f",
+    "d85c8c402552",
+    "cb3c87f5791b",
+    "fae5552249f7",
+    "d74b932c18f6",
+    "8d615a2a053f",
+    "463b6135d66b",
+    "dc3e3ad54f77",
+    "f85ec685c2ff",
+    "379d46e1bf62",
+    "aa023280754a",
+    "54ad6137fd70",
+    "138221fb7fb7",
+    "1f12598b11d6",
+    "b11741670f4f",
+    "ac140b4f7bd5"
   ],
   "failed_ids": {},
   "live_clusters": {
-    "4dc181cd76792dd3": {
-      "topic": "Nicki Minaj Memorializes Producer Tay Keith",
-      "item_ids": [
-        "380d9ebac752"
-      ],
-      "created_at": "2026-06-21T05:15:49.079558+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "762d183c415467f0": {
-      "topic": "AJ Dybantsa 2026 NBA Draft Workout Decision",
-      "item_ids": [
-        "6404cee055e8"
-      ],
-      "created_at": "2026-06-21T05:15:49.079558+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "a26124b8dfc0cd96": {
       "topic": "Carlos Saiz 'Lionel' Transilvania Film Festival Grand Prize",
       "item_ids": [
@@ -1509,5 +1491,5 @@
       "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-22T02:10:48.719859+00:00"
+  "last_checked": "2026-06-22T07:43:58.060483+00:00"
 }
