@@ -1,19 +1,5 @@
 {
   "known_ids": [
-    "722e42779a47",
-    "df8834d9d9eb",
-    "e9e463d55ff3",
-    "20d0bcc81650",
-    "68d1c1225044",
-    "866c45bb479b",
-    "bf8368a762a7",
-    "85debbfea973",
-    "43038d581bc4",
-    "79862f475179",
-    "0a71b6765fd8",
-    "38d5dccd5268",
-    "f4ed96aa29a5",
-    "972926185d2e",
     "bb1f08e9fc45",
     "a6050a9f4921",
     "b893e7b70421",
@@ -499,9 +485,50 @@
     "ed1ec9675868",
     "9f4448706935",
     "aac424c5ab2d",
-    "cbb1115e3bf9"
+    "cbb1115e3bf9",
+    "aa2aaf84b30b",
+    "0aff718b3be7",
+    "a5eb8b3d8859",
+    "e864d649fa09",
+    "9953f2f7d55a",
+    "c71266daf8f8",
+    "6dbd25058303",
+    "c779decb25e5",
+    "5348f2bce389",
+    "4a00e0c236c4",
+    "0861e4802471",
+    "94b53d61b151",
+    "1d8b313008c5",
+    "9d7d12377485"
   ],
-  "failed_ids": {},
+  "failed_ids": {
+    "544699e3157a": "2026-06-22T23:56:29.442663+00:00",
+    "828dbf45a9c5": "2026-06-22T23:56:29.442663+00:00",
+    "d4f494dbd7d1": "2026-06-22T23:56:29.442663+00:00",
+    "6d4c97dddea4": "2026-06-22T23:56:29.442663+00:00",
+    "03568d51d77d": "2026-06-22T23:56:29.442663+00:00",
+    "b7315f2bd476": "2026-06-22T23:56:29.442663+00:00",
+    "8ededec80ccf": "2026-06-22T23:56:29.442663+00:00",
+    "d2a2871cdab1": "2026-06-22T23:56:29.442663+00:00",
+    "dbe9168f10d9": "2026-06-22T23:56:29.442663+00:00",
+    "798e7c487e55": "2026-06-22T23:56:29.442663+00:00",
+    "db2de01c9e37": "2026-06-22T23:56:29.442663+00:00",
+    "2b5b23b539f5": "2026-06-22T23:56:29.442663+00:00",
+    "837cc0a1f1d1": "2026-06-22T23:56:29.442663+00:00",
+    "b626b59d43c3": "2026-06-22T23:56:29.442663+00:00",
+    "0044c5e83b5d": "2026-06-22T23:56:29.442663+00:00",
+    "6f69c01042f3": "2026-06-22T23:56:29.442663+00:00",
+    "c867b3bb0e8b": "2026-06-22T23:56:29.442663+00:00",
+    "f1d8a9ff7ad7": "2026-06-22T23:56:29.442663+00:00",
+    "a24423c144af": "2026-06-22T23:56:29.442663+00:00",
+    "789d1c764a57": "2026-06-22T23:56:29.442663+00:00",
+    "27e7a5f9b15e": "2026-06-22T23:56:29.442663+00:00",
+    "cc1a6ab6b1e4": "2026-06-22T23:56:29.442663+00:00",
+    "f452d12ab27f": "2026-06-22T23:56:29.442663+00:00",
+    "50f39a8f513d": "2026-06-22T23:56:29.442663+00:00",
+    "135d50af544e": "2026-06-22T23:56:29.442663+00:00",
+    "cc4fea35a723": "2026-06-22T23:56:29.442663+00:00"
+  },
   "live_clusters": {
     "bd21cdcac67f7aee": {
       "topic": "Hypebeast x Citizen 20th Anniversary Watch Collaboration",
@@ -579,7 +606,8 @@
     "335cc9f6cb28cedb": {
       "topic": "Madonna Nude Photography Statement",
       "item_ids": [
-        "9f5b22a4b675"
+        "9f5b22a4b675",
+        "6dbd25058303"
       ],
       "created_at": "2026-06-22T20:52:36.248851+00:00",
       "last_escalated_size": 0,
@@ -628,7 +656,8 @@
         "292bd397594e",
         "f14f0c00b4f9",
         "82ef1d8e5e7b",
-        "10233ba170b7"
+        "10233ba170b7",
+        "e864d649fa09"
       ],
       "created_at": "2026-06-22T20:52:36.248851+00:00",
       "last_escalated_size": 4,
@@ -671,11 +700,18 @@
       "topic": "Giannis Antetokounmpo Trade Rumors",
       "item_ids": [
         "640087ea1a03",
-        "381e0600bd7b"
+        "381e0600bd7b",
+        "c779decb25e5"
       ],
       "created_at": "2026-06-22T20:52:36.248851+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-22T23:56:29.442663+00:00",
+      "picks_file": "SUPPRESSED",
+      "last_escalated_item_ids": [
+        "640087ea1a03",
+        "381e0600bd7b",
+        "c779decb25e5"
+      ]
     },
     "bfb7be08c6e286ef": {
       "topic": "Pharrell Louis Vuitton Vans Collaboration",
@@ -731,7 +767,70 @@
       "created_at": "2026-06-22T22:44:37.580064+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "9ef666a38fac1eb0": {
+      "topic": "Cardi B Addresses Tooth Knockout Rumors",
+      "item_ids": [
+        "aa2aaf84b30b"
+      ],
+      "created_at": "2026-06-22T23:56:56.197894+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "88adc8dbf3a96f4c": {
+      "topic": "Moncler Pre-Fall 2026 Collection Launch",
+      "item_ids": [
+        "0aff718b3be7"
+      ],
+      "created_at": "2026-06-22T23:56:56.197894+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6d79662935b237a3": {
+      "topic": "Ryan Beatty Sweet Fortune Album Release",
+      "item_ids": [
+        "a5eb8b3d8859"
+      ],
+      "created_at": "2026-06-22T23:56:56.197894+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "50e34f48098670d9": {
+      "topic": "Haiti World Cup Run Gang Violence Hope",
+      "item_ids": [
+        "9953f2f7d55a"
+      ],
+      "created_at": "2026-06-22T23:56:56.197894+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "837be12248668b68": {
+      "topic": "Mindy Kaling Not Suitable For Work Series",
+      "item_ids": [
+        "c71266daf8f8"
+      ],
+      "created_at": "2026-06-22T23:56:56.197894+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "23df04fc5bafdb58": {
+      "topic": "Dusty May Dallas Mavericks 2026 Draft",
+      "item_ids": [
+        "5348f2bce389"
+      ],
+      "created_at": "2026-06-22T23:56:56.197894+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "17fc09db8e422c35": {
+      "topic": "Mohamed Diawara Knicks Multiyear Deal",
+      "item_ids": [
+        "4a00e0c236c4"
+      ],
+      "created_at": "2026-06-22T23:56:56.197894+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-22T22:44:37.601607+00:00"
+  "last_checked": "2026-06-22T23:56:56.868428+00:00"
 }
