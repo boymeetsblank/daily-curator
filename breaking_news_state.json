@@ -1,54 +1,5 @@
 {
   "known_ids": [
-    "2b0f4b42a164",
-    "970ca2f5aad2",
-    "772427bd6bda",
-    "32141d2e2fd8",
-    "b76c65a61557",
-    "11e30a0e1db1",
-    "a6f6ad4a9838",
-    "2e4043347944",
-    "a5820082c6a2",
-    "d871387aed2e",
-    "4c347c20efcc",
-    "d8f2e32c3727",
-    "00ca1e55b2f0",
-    "e707e85962b2",
-    "fac334f1f7e7",
-    "2a5d7ed34b3c",
-    "b6b5e7a542ae",
-    "01c0122d275c",
-    "32fcfdcd2507",
-    "fac334f1f7e7",
-    "e707e85962b2",
-    "f79deae1d8fd",
-    "73187fe1fdc0",
-    "5e0a49cb8bbf",
-    "33492a4ea8a7",
-    "6801d2164953",
-    "7e020d1b7b30",
-    "dd5756ef718d",
-    "d73705257417",
-    "1796cd3360a9",
-    "9fccfaec9cf5",
-    "142aa79d9c13",
-    "87a89d94d0d0",
-    "ed546fab31d5",
-    "afe264cc7383",
-    "a3fa22686051",
-    "3cbbdd40506b",
-    "f09c086e6f5d",
-    "2cbab4f0cbca",
-    "7b0768a9cbf7",
-    "b1493c8fb7ef",
-    "31fcca2e810d",
-    "e28f70d5fa2b",
-    "7caea152fa00",
-    "27f9a16872ce",
-    "d8edc9e73c62",
-    "2313c7f7be86",
-    "18fdc7440314",
-    "919ae8c907a5",
     "2d9c2a7b539c",
     "5d9d67fb35df",
     "cd214bce8ac1",
@@ -499,200 +450,59 @@
     "138221fb7fb7",
     "1f12598b11d6",
     "b11741670f4f",
-    "ac140b4f7bd5"
+    "ac140b4f7bd5",
+    "daaa42541b19",
+    "1ccafef2e539",
+    "c126d15147ab",
+    "0679c93cfd45",
+    "2a7c57325833",
+    "a979c7250d97",
+    "533aa7924b98",
+    "a1041b783ec9",
+    "92ad659606fa",
+    "d84b4a1cd06f",
+    "caa1da6328a1",
+    "51af153085b2",
+    "26e87752f203",
+    "c005ace66eff",
+    "70dab0aa5aef",
+    "e54622147bc4",
+    "5070903082cd",
+    "2b2d81d27eec",
+    "b1cf503a4379",
+    "838089a766bf",
+    "84ea5081865f",
+    "8fdf3152758b",
+    "3fa36d8ae118",
+    "99010444f2e0",
+    "ad85a5f5d958",
+    "09c9df07c53e",
+    "06d4ea647473",
+    "447cfd3eafee",
+    "c2a43f8e74d5",
+    "4536ef7867ac",
+    "2eebb69f7b23",
+    "4ab24243dea7",
+    "5c6a6e76a4f1",
+    "85b5c0652e6a",
+    "42a791f4034e",
+    "63ccd2bf9db8",
+    "8d3bb4075182",
+    "30d29445bd37",
+    "495f4721d134",
+    "e3f9cc89c869",
+    "15a8fbe543b6",
+    "b8f8302eab68",
+    "905c18ce3c32",
+    "4536ef7867ac",
+    "8f0d139e4798",
+    "27bba382da3c",
+    "8f46c35b85c3",
+    "ce0cff4db6e7",
+    "2bf1df04e071"
   ],
   "failed_ids": {},
   "live_clusters": {
-    "a26124b8dfc0cd96": {
-      "topic": "Carlos Saiz 'Lionel' Transilvania Film Festival Grand Prize",
-      "item_ids": [
-        "ec4aa1f6b920"
-      ],
-      "created_at": "2026-06-21T09:04:24.384063+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "04883242b3e3a58f": {
-      "topic": "Transilvania Film Festival Industry Awards Winners",
-      "item_ids": [
-        "cab29035c83c"
-      ],
-      "created_at": "2026-06-21T09:04:24.384063+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9e851f78fef44455": {
-      "topic": "Yash 'Toxic' August Release Film",
-      "item_ids": [
-        "753b429d29aa"
-      ],
-      "created_at": "2026-06-21T09:04:24.384063+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d83f619a6a92d24b": {
-      "topic": "Zhang Songwen 'Secret in the Box' Shanghai Film Competition",
-      "item_ids": [
-        "37fbe321ee14"
-      ],
-      "created_at": "2026-06-21T09:04:24.384063+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "177b98e89fa8095c": {
-      "topic": "SIS Pitches Advanced Technology 2026 World Cup Stadiums",
-      "item_ids": [
-        "b6bf7d8f0c37",
-        "d327a9caf7cf",
-        "f1bdf50714fe"
-      ],
-      "created_at": "2026-06-21T09:04:24.384063+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-21T16:06:27.118977+00:00",
-      "picks_file": "picks/picks-2026-06-21-1607.md",
-      "why_text": "SIS Pitches is supplying its hybrid pitch systems to nine stadiums across the US, Mexico, and Canada for the 2026 World Cup \u2014 a tournament that will be the largest in the sport's history. The choice of surface technology matters more than fans realize: hybrid pitches directly affect player safety, ball behavior, and game quality at the elite level. With FIFA under pressure to deliver a flawless mega-event across three nations, the infrastructure beneath players' feet is quietly one of the most consequential decisions being made right now.",
-      "last_escalated_item_ids": [
-        "b6bf7d8f0c37",
-        "d327a9caf7cf",
-        "f1bdf50714fe"
-      ]
-    },
-    "65228eb14a973f0f": {
-      "topic": "Phoenix Suns Dillon Brooks Decision",
-      "item_ids": [
-        "beedf5077dae"
-      ],
-      "created_at": "2026-06-21T09:04:24.384063+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "aba87eb181b5b349": {
-      "topic": "LA Lakers NBA Finals Centers Trade Interest",
-      "item_ids": [
-        "0782f523285f"
-      ],
-      "created_at": "2026-06-21T09:04:24.384063+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "93c69bbaecae4acd": {
-      "topic": "Vancouver Retro Gaming Expo",
-      "item_ids": [
-        "6fdfe7c18db0"
-      ],
-      "created_at": "2026-06-21T09:04:24.384063+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9b6a706499b50384": {
-      "topic": "Miami Couple Car Rental Side Gig Six-Figure Business",
-      "item_ids": [
-        "775defddb1ea"
-      ],
-      "created_at": "2026-06-21T09:04:24.384063+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1e174b9e0b20e74d": {
-      "topic": "Wooting 60HE v2 Mechanical Keyboard Review",
-      "item_ids": [
-        "770accdb7f77"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5279a633e799c578": {
-      "topic": "Best NAS Devices Home Storage Testing",
-      "item_ids": [
-        "94b1bbc0ac3b"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0bc4b850d99a34c8": {
-      "topic": "ChatGPT Prompt Optimization Tips Guide",
-      "item_ids": [
-        "f7a0139ea9bc"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0d75e8cdcd70277d": {
-      "topic": "Stainless Steel Skillet Kitchen Guide",
-      "item_ids": [
-        "9bf54716dac3"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "59f2ef5edc3e06d7": {
-      "topic": "AeroVironment Ubiqconn Technology MOU Partnership",
-      "item_ids": [
-        "803553909895",
-        "aa1f34977b8d"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "86c130b3a044d8b0": {
-      "topic": "Robotic Penguin Endoscopy Medical Technology",
-      "item_ids": [
-        "ba426d9e8e88"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "54fe33904156bad0": {
-      "topic": "Terraxy Soil Technology Startup Funding",
-      "item_ids": [
-        "ffe8a7bb0e11"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3a66e684b8901a65": {
-      "topic": "RJ Barrett Trade Rumors Raptors Multi-Team",
-      "item_ids": [
-        "eeec093dd490"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "efd054c465598649": {
-      "topic": "Lakers 2026 NBA Draft Big Man Wing Selection",
-      "item_ids": [
-        "c78b53a7d2cc"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e188a56f3ddd6125": {
-      "topic": "Video Games Mental Health Loneliness Reduction Study",
-      "item_ids": [
-        "af0c37fc2d2d"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0ca0cead40209705": {
-      "topic": "BMW M4 CS Track Performance Review",
-      "item_ids": [
-        "5b43636ab589"
-      ],
-      "created_at": "2026-06-21T11:51:55.262916+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "0e5712e767c27a2a": {
       "topic": "Fan Death Fall Goose Madison Square Garden Concert",
       "item_ids": [
@@ -1491,5 +1301,5 @@
       "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-22T07:43:58.060483+00:00"
+  "last_checked": "2026-06-22T13:20:30.442890+00:00"
 }
