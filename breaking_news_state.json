@@ -1,29 +1,5 @@
 {
   "known_ids": [
-    "9c58ed22afc9",
-    "c31700f966ba",
-    "0aa824ba5232",
-    "c69d136054f8",
-    "6831bb3bec77",
-    "34b6bba1f235",
-    "737343e0d39b",
-    "4ca6ca7580f3",
-    "8a20c1dc94f6",
-    "b0c9f06189d8",
-    "6648f70f8319",
-    "ea5887901c82",
-    "0a9c152f3c7b",
-    "47e982ca3052",
-    "4a97e950cdaa",
-    "607b18fde46b",
-    "159ea1c2602f",
-    "ed1ec9675868",
-    "9f4448706935",
-    "aac424c5ab2d",
-    "cbb1115e3bf9",
-    "aa2aaf84b30b",
-    "0aff718b3be7",
-    "a5eb8b3d8859",
     "e864d649fa09",
     "9953f2f7d55a",
     "c71266daf8f8",
@@ -499,55 +475,52 @@
     "9427331fbf8e",
     "2b6919fc7486",
     "4d545352bfb8",
-    "e01467b2333a"
+    "e01467b2333a",
+    "5d23971a1d6a",
+    "a43d2eda9aaa",
+    "f222bbe7b521",
+    "22543052240d",
+    "6e92e6502c81",
+    "a381b5bb8039",
+    "fa44b88b08f3",
+    "497a3c4a9a57",
+    "be368766487c",
+    "0976cf1298b8",
+    "b3be44125c50",
+    "57790f162057",
+    "5c5e8e800f98",
+    "664460db21e3",
+    "7b609c1bdaf5",
+    "b71bf855ae2c",
+    "8f5471d79457",
+    "a93976f7f6ba",
+    "5bf7cef5b508",
+    "a9b3995cae21",
+    "a590f64cef36",
+    "9066b799f852",
+    "a5553c5e01e3",
+    "1af69e88541e"
   ],
-  "failed_ids": {},
+  "failed_ids": {
+    "3a6d24576eb2": "2026-06-23T23:07:16.493283+00:00",
+    "9a3716556d96": "2026-06-23T23:07:16.493283+00:00",
+    "773187d07ef7": "2026-06-23T23:07:16.493283+00:00",
+    "c57507db630b": "2026-06-23T23:07:16.493283+00:00",
+    "98153148062c": "2026-06-23T23:07:16.493283+00:00",
+    "be8dd31a7f3f": "2026-06-23T23:07:16.493283+00:00",
+    "dd6f6458706a": "2026-06-23T23:07:16.493283+00:00",
+    "48fa1d39cd9c": "2026-06-23T23:07:16.493283+00:00",
+    "ea91b4ebdffe": "2026-06-23T23:07:16.493283+00:00",
+    "b836abab9c0d": "2026-06-23T23:07:16.493283+00:00",
+    "dcdaeee6d01a": "2026-06-23T23:07:16.493283+00:00",
+    "d8f835c4f906": "2026-06-23T23:07:16.493283+00:00",
+    "1f9076972f0d": "2026-06-23T23:07:16.493283+00:00",
+    "e243d81d7dc8": "2026-06-23T23:07:16.493283+00:00",
+    "dfae71a1121d": "2026-06-23T23:07:16.493283+00:00",
+    "a7035e90c740": "2026-06-23T23:07:16.493283+00:00",
+    "4945b527eb6b": "2026-06-23T23:07:16.493283+00:00"
+  },
   "live_clusters": {
-    "7ea48afeaca7d569": {
-      "topic": "Nike Sabrina 4 Red Colorway Release",
-      "item_ids": [
-        "6bef3ba2efbe"
-      ],
-      "created_at": "2026-06-22T22:44:37.580064+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d11bfa37bb6fde09": {
-      "topic": "Nike A'Two MVP Sneaker Release",
-      "item_ids": [
-        "b6313f7b71f9"
-      ],
-      "created_at": "2026-06-22T22:44:37.580064+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dddf8d3db9300aa6": {
-      "topic": "Nike Ja 4 Dark Mode Colorway Release",
-      "item_ids": [
-        "e08ecd3c3df7"
-      ],
-      "created_at": "2026-06-22T22:44:37.580064+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0212ca0b0cbc5a55": {
-      "topic": "Vans Paris Fashion Week Collaborations",
-      "item_ids": [
-        "7de15ed22b75"
-      ],
-      "created_at": "2026-06-22T22:44:37.580064+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "acbd9f23e9784839": {
-      "topic": "Lil Nas X Rehab Statement",
-      "item_ids": [
-        "dc5686a733be"
-      ],
-      "created_at": "2026-06-22T22:44:37.580064+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "9ef666a38fac1eb0": {
       "topic": "Cardi B Addresses Tooth Knockout Rumors",
       "item_ids": [
@@ -598,7 +571,8 @@
     "23df04fc5bafdb58": {
       "topic": "Dusty May Dallas Mavericks 2026 Draft",
       "item_ids": [
-        "5348f2bce389"
+        "5348f2bce389",
+        "a590f64cef36"
       ],
       "created_at": "2026-06-22T23:56:56.197894+00:00",
       "last_escalated_size": 0,
@@ -1596,11 +1570,19 @@
       "topic": "Small Business 20% Tax Deduction",
       "item_ids": [
         "f8940bc8b0a2",
-        "2e4fbcaddb15"
+        "2e4fbcaddb15",
+        "a93976f7f6ba"
       ],
       "created_at": "2026-06-23T13:33:26.494383+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-23T23:07:16.493283+00:00",
+      "picks_file": "picks/picks-2026-06-23-2307.md",
+      "why_text": "LastPass is back in the breach headlines, compounding the reputational damage from its catastrophic 2022 incident that exposed encrypted password vaults for millions of users. For a company whose entire value proposition is being the safe place for your most sensitive credentials, repeat breaches aren't just embarrassing \u2014 they're existential. This is the kind of story that accelerates the already-growing migration to rivals like 1Password and Bitwarden.",
+      "last_escalated_item_ids": [
+        "f8940bc8b0a2",
+        "2e4fbcaddb15",
+        "a93976f7f6ba"
+      ]
     },
     "7655a7710ea079f0": {
       "topic": "Local Business Amazon Growth Strategy",
@@ -1850,7 +1832,8 @@
     "f08e0bc5349cdf9e": {
       "topic": "Muni Long Double Lung Transplant Health Journey",
       "item_ids": [
-        "821f88e4d753"
+        "821f88e4d753",
+        "6e92e6502c81"
       ],
       "created_at": "2026-06-23T16:13:48.593874+00:00",
       "last_escalated_size": 0,
@@ -2068,11 +2051,26 @@
     "549b486e579c8c4c": {
       "topic": "2026 NBA Draft Live Updates",
       "item_ids": [
-        "2b7adc824313"
+        "2b7adc824313",
+        "5c5e8e800f98",
+        "664460db21e3",
+        "5bf7cef5b508",
+        "a9b3995cae21",
+        "a5553c5e01e3"
       ],
       "created_at": "2026-06-23T16:13:48.593874+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-23T23:07:16.493283+00:00",
+      "picks_file": "picks/picks-2026-06-23-2307.md",
+      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.",
+      "last_escalated_item_ids": [
+        "2b7adc824313",
+        "5c5e8e800f98",
+        "664460db21e3",
+        "5bf7cef5b508",
+        "a9b3995cae21",
+        "a5553c5e01e3"
+      ]
     },
     "ba67ca8271f51920": {
       "topic": "LeBron James 2003 NBA Draft White Suit",
@@ -2999,7 +2997,151 @@
       "created_at": "2026-06-23T21:56:32.535708+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b347826c11d512a2": {
+      "topic": "Nike Giants-Themed Mind 001 Sneaker Release",
+      "item_ids": [
+        "5d23971a1d6a"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b67ed262842514c9": {
+      "topic": "Love Island USA Villa Detail Confidentiality Dispute",
+      "item_ids": [
+        "a43d2eda9aaa"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6904ce6a435f8438": {
+      "topic": "World Cup 2026 Star Player Goal Scoring Comparison",
+      "item_ids": [
+        "f222bbe7b521"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ef0a8d143f3e9e13": {
+      "topic": "Bode Miller Drug Possession Charges Idaho",
+      "item_ids": [
+        "22543052240d"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "27059b99a41d842b": {
+      "topic": "BIGBANG Daesung KARA Hur Youngji Dating Denial",
+      "item_ids": [
+        "a381b5bb8039"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "29b64eb5d55ac523": {
+      "topic": "Keke Palmer BET Board of Advisors Appointment",
+      "item_ids": [
+        "fa44b88b08f3"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4e4652d13a59de4c": {
+      "topic": "HERE at Outernet Rebrand Ticketmaster Partnership",
+      "item_ids": [
+        "497a3c4a9a57"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6682545db4084beb": {
+      "topic": "Andy Reid Travis Kelce Wedding Gift Commentary",
+      "item_ids": [
+        "be368766487c"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1f4865e6ea002e3f": {
+      "topic": "Frozen Drink Maker Discount Sale Viral Product",
+      "item_ids": [
+        "0976cf1298b8"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2172b0144e0ac942": {
+      "topic": "YouTube Sidesteps Social Media Trial Settlement",
+      "item_ids": [
+        "b3be44125c50"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2b7b5940a0d6ac1b": {
+      "topic": "Will & Grace Creators James Burrows Funeral Eulogy",
+      "item_ids": [
+        "57790f162057"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bae3a20850868ae3": {
+      "topic": "Falcons Kyle Pitts $54M Contract Agreement",
+      "item_ids": [
+        "7b609c1bdaf5"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7b36b1ff2e8c7655": {
+      "topic": "Cheryl Reeve Jalen Brunson NBA Outlier Opinion",
+      "item_ids": [
+        "b71bf855ae2c"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c478e30e1c3a4746": {
+      "topic": "England Ghana World Cup Match Kane Miss Frustration",
+      "item_ids": [
+        "8f5471d79457"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bb8ab1e5702a301e": {
+      "topic": "Suns NBA Draft Trade-Up Koa Peat Arizona Prospect",
+      "item_ids": [
+        "9066b799f852"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "475fb34bd394c2b6": {
+      "topic": "Used BMW 760Li V12 Pricing vs Toyota RAV4 Analysis",
+      "item_ids": [
+        "1af69e88541e"
+      ],
+      "created_at": "2026-06-23T23:07:45.089985+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-23T21:56:40.189297+00:00"
+  "last_checked": "2026-06-23T23:07:57.359604+00:00"
 }
