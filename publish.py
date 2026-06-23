@@ -119,6 +119,29 @@ def _esc(text: str) -> str:
     )
 
 
+def _rel_time(iso: str | None, now: datetime) -> str:
+    """Return a short relative timestamp string (e.g. '3h ago', 'just now')."""
+    if not iso:
+        return ""
+    try:
+        dt = datetime.fromisoformat(iso)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        diff = now - dt
+        s = int(diff.total_seconds())
+        if s < 0:
+            return ""
+        if s < 60:
+            return "just now"
+        if s < 3600:
+            return f"{s // 60}m ago"
+        if s < 86400:
+            return f"{s // 3600}h ago"
+        return f"{s // 86400}d ago"
+    except Exception:
+        return ""
+
+
 def _score_label(score: int) -> str:
     if score >= 9:
         return "essential"
@@ -155,17 +178,16 @@ def generate_html(items: list[dict]) -> str:
         why = _esc(item.get("why") or "")
         title = _esc(item.get("title") or "")
         url = item.get("url") or "#"
-        # source name: join sources table via source_id — get_feed returns source_id not name
-        # fall back to domain extraction from url
         source_display = _esc(_source_from_url(url))
         label = _score_label(score)
+        age = _rel_time(item.get("published_at") or item.get("fetched_at"), now)
 
         card = f"""
     <article class="card">
       <div class="card-meta">
         <span class="score score-{score}">{score}</span>
         <span class="label">{label}</span>
-        <span class="source">{source_display}</span>
+        <span class="source">{source_display}{" · " + age if age else ""}</span>
       </div>
       <a class="hook" href="{url}" target="_blank" rel="noopener noreferrer">{hook}</a>
       {f'<p class="why">{why}</p>' if why else ''}
