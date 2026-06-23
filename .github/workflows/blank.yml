@@ -1,0 +1,54 @@
+name: Blank Engine
+
+# Runs every 10 minutes and on manual trigger.
+# Do NOT edit or delete the old daily_curator.yml workflow.
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write  # needed to commit blank.db + index.html back to main
+
+# Only one run at a time. If a run is already active when the next trigger
+# fires, the new run queues and waits (cancel-in-progress: false) so the DB
+# is never written by two jobs simultaneously.
+concurrency:
+  group: blank-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          # Use default GITHUB_TOKEN; push credentials are set up automatically
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser anthropic python-dotenv
+
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python run_pipeline.py
+
+      - name: Commit DB and feed to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add blank.db index.html
+          # Exit cleanly if nothing changed (happens when no new items arrived)
+          git diff --staged --quiet && echo "Nothing to commit — skipping." && exit 0
+          git commit -m "Engine run $(date -u +'%Y-%m-%d %H:%M UTC')"
+          # Pull any commits made by other workflows since our checkout
+          git pull --rebase origin main
+          git push

@@ -4,9 +4,51 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-22] New: GitHub Actions cron + pipeline orchestrator
+
+Created `run_pipeline.py` — orchestrates the full cascade (ingest → triage → score → publish) with per-stage error isolation. Each stage is wrapped so failures log cleanly and later stages still run where possible. Publish runs with `no_push=True`; git is handled by the workflow. Created `.github/workflows/blank.yml` — new separate workflow (does NOT touch old daily_curator.yml) that runs every 10 minutes + workflow_dispatch, installs feedparser + anthropic, runs the pipeline, then commits `blank.db` + `index.html` back to main with a timestamped message. Concurrency group with `cancel-in-progress: false` prevents simultaneous DB writes. Committed `blank.db` (97 items, 84 scored) as starting state so the first cron run builds on existing data.
+
+## [2026-06-22] New: Static site publisher (publish.py)
+
+Created `publish.py` — reads the scored feed from blank.db via `get_feed(min_score=6, limit=50)` and generates a self-contained static index.html with all CSS inline (system font stack, 1px borders, no gradients, mobile-first). Detects Pages deployment method at runtime (Actions/docs/root) and prints findings before writing anything. Requires explicit confirmation before overwriting existing index.html. Flags: `--no-push` (generate locally, print browser path, skip git); `--confirm` (skip interactive prompt); `--out PATH` (override output file). Commits with timestamped message and pushes to origin/main. Never force-pushes.
+
+## [2026-06-22] New: Sonnet scoring layer (score.py)
+
+Created `score.py` — scores escalated items 1–10 via Claude Sonnet against the full editorial rubric (interest OR importance, either qualifies; topic-neutral; soft floor flags never force score; 6/7 ties go to 7). Batches 12 items per call. Per item writes: score, four criteria sub-scores (trending/timely/cultural/significance), editor why (1–2 sentences), punchy hook (one line), and soft_floor_flags via `record_score()`. Defensive JSON parsing with fence-stripping; batch parse failures skip gracefully (items stay in queue for re-run). Verified on 92 live items: 84 scored, 4×9, 18×8, 33×7, 22×6, 7 below threshold. One batch (8 items) skipped due to Sonnet breaking JSON format to fact-check potentially fabricated news — known behavior, noted as future prompt hardening TODO.
+
+## [2026-06-22] Feature: audit.py — opt-in recovery of wrongly-killed items
+
+Extended `audit.py` with recovery mode. Default (`python audit.py`) remains measure-only — reports false-negative rate, changes nothing. `python audit.py --recover` flips each WRONGLY_KILLED item's triage row from KILL to ESCALATE so it reaches Sonnet scoring on the next run. Every recovery is logged with the item title, Haiku's original kill_reason, and Sonnet's overrule reasoning. Safety cap: if wrongly-killed rate exceeds 30% of the audited sample, recovery is withheld and a warning is printed (a spike that large signals a structural triage break, not occasional misses). `_recover_item()` annotates the triage signals JSON with `recovered_by_audit`, `original_kill_reason`, and `audit_reasoning` for traceability.
+
+## [2026-06-22] Fix: Haiku triage over-killing Reddit/title-only items
+
+Patched the Haiku triage prompt in `triage.py` to add explicit handling for title-only items (Reddit, link-aggregators). The "no substance" rule was incorrectly firing when description was empty, even when the title itself described real content. Fix: added a `TITLE-ONLY ITEMS` rule block clarifying that empty description is never alone sufficient to KILL, and that a title describing a video/event/question/subject IS content. Also added `--empty description` to the NEVER kill list. Added `reset_killed_items()` helper + `--retriage-kills` CLI flag to clear KILL rows for re-evaluation after a prompt fix. Result: false-negative rate dropped from 50% → 0% (14 items re-triaged; 9 recovered to ESCALATE, 5 confirmed correct kills).
+
+## [2026-06-22] New: Sonnet kill-pile audit (audit.py)
+
+Created `audit.py` — read-only second-opinion audit that pulls Haiku's recent KILL decisions and asks Sonnet whether each was correct. Per-item output: title, Haiku's kill_reason, and Sonnet's one-sentence verdict side-by-side, so false negatives are immediately visible and actionable. Supports a `sample_size` param for cheap audits at scale. Prints calibration guidance based on false-negative rate (OK ≤10%, WARN ≤25%, FLAG >25%). Also added `description` to `get_kill_pile()` in db.py. Read-only — never mutates item/triage/score state.
+
+## [2026-06-22] New: Haiku triage layer (triage.py)
+
+Created `triage.py` — the recall gate that reads un-triaged items and asks Claude Haiku to decide KILL or ESCALATE for each. Core design: Haiku identifies what's safe to discard, not what's important. Fails toward escalation everywhere (parse failure, API error, omitted items all → ESCALATE). KILL criteria are structural only (no substance, non-content, routine triviality, stale rehash) — never for topic, niche, or uncertainty. Batches 20 items per call; defensively parses JSON (strips accidental markdown fences, escalates entire batch if unparseable). Prints calibration flag if escalation rate drops below 40%. Added `get_untriaged_items()` to db.py. Verified on 97 live items: 85.6% escalation rate, 0 parse failures, 13s total.
+
+## [2026-06-22] New: RSS ingestion layer (ingest.py)
+
+Created `ingest.py` — polls active RSS sources and writes normalized items into the DB via `db.py`. Key behaviors: HTML-stripped descriptions, ISO UTC timestamps, 48h backlog cutoff on first poll of a new source, per-source try/except so one bad feed never kills the run. `poll_all_active()` returns a new/skipped/error summary. `seed_sources()` pre-loads 4 default feeds (BBC World, TechCrunch, Reddit r/popular, Pitchfork). Standalone; not wired into the existing pipeline.
+
+## [2026-06-22] New: SQLite data layer for continuous engine (db.py)
+
+Created `db.py` — a standalone SQLite-backed data layer for the planned Haiku→Sonnet continuous pipeline. Not wired into the existing batch pipeline; exists alongside current files for later migration. Five tables: `sources`, `items` (content-hash dedup), `triage` (KILL/ESCALATE audit log), `scores` (1–10 with criteria/hook/soft_floor_flags), and `engagement` (behavioral signals from day one). Helper functions: `init_db`, `upsert_source`, `insert_item`, `record_triage`, `record_score`, `log_engagement`, `get_unscored_escalated_items`, `get_kill_pile`, `get_feed`. Standard library only (sqlite3, json, hashlib, datetime). Includes a self-test block verified passing.
+
+## [2026-06-15] Feature: curator self-improvement loop
+
+Added a self-improving editorial memory system. After each run, `load_curator_memory()` checks if `curator_memory.json` is older than 24 hours. If so, `generate_curator_memory()` parses the past 14 days of picks, builds a one-line-per-pick log, and calls Claude Haiku to synthesize a 3–5 paragraph prose memo covering calibration anchors (what distinguishes 9s from 10s), framing signals (narrative angles that correlate with high scores), and blind spots (underrepresented topic areas). The memo is injected into every Sonnet scoring run via the cached static preamble — between the cross-source trend block and cultural velocity signals. Anti-bias design: the Haiku prompt explicitly forbids topic category or source preferences; the injection header also instructs Sonnet not to let the memo reduce discoverability. Cost: ~$1.50–2/month (Haiku analysis once/day; memo rides the existing prompt cache on runs 2 and 3).
+
 ## [2026-06-16] Fix: scoring pipeline no longer aborts on transient Anthropic 5xx errors
 
-A run failed mid-scoring (batch 2/5) when Anthropic returned a transient `500 Internal Server Error`. The retry logic in `_score_batch()` (`daily_curator.py`) only retried on status `529` (overloaded); any other `APIStatusError`, including `500`, fell through to `sys.exit(1)` and killed the entire run. Extended the retry condition to cover the standard transient set — `500`, `502`, `503`, `529` — with the same exponential backoff (up to 4 attempts). `breaking_news_check.py`'s Claude call sites were checked and already degrade gracefully (skip/continue) on any exception, so no change was needed there.
+A run failed mid-scoring (batch 2/5) when Anthropic returned a transient `500 Internal Server Error`. The retry logic in `_score_batch()` (`daily_curator.py`) only retried on status `529` (overloaded); any other `APIStatusError`, including `500`, fell through to `sys.exit(1)` and killed the entire run. Extended the retry condition to cover the standard transient set — `500`, `502`, `503`, `529` — with the same exponential backoff (up to 4 attempts).
+
+---
 
 ## [2026-06-15] Fix: clicking "new picks" banner now actually refreshes the feed
 
