@@ -1,25 +1,5 @@
 {
   "known_ids": [
-    "dc734e81eb9b",
-    "47cc883bcac0",
-    "f7ca2e2c461c",
-    "a1210fbf6f3c",
-    "6a4a945b0469",
-    "aef0405a88ea",
-    "050ca4cbdf07",
-    "0c50bfb7e03e",
-    "fa228ec1d170",
-    "9e52c8ea5782",
-    "30abb65f5fd2",
-    "04e2487505ef",
-    "66db61eea158",
-    "576cbeac3b93",
-    "b1e7402aa289",
-    "dc3cf36b58f0",
-    "5511b5310e22",
-    "04d8197a6b7b",
-    "a2aba3b25757",
-    "65c77913dd62",
     "a3c579b1388c",
     "f0ead3f09469",
     "6995bad01439",
@@ -499,35 +479,29 @@
     "839f84c84b49",
     "548a9f529db9",
     "01f53e6a5ee1",
-    "d69732b03c2d"
+    "d69732b03c2d",
+    "bd20b55c80ee",
+    "92157f9829c6",
+    "2c22116589bf",
+    "83f2cae4f81d",
+    "c5e778fed1ba",
+    "70688327fb6a",
+    "990d93b8ff10",
+    "8bda16fc49b4",
+    "76602a8e9f2d",
+    "41ea23b98c41",
+    "b76ae72db112",
+    "a5977bb1ab46",
+    "898555f87e23",
+    "1f021beb98ad",
+    "6381403065a6",
+    "a2e3bfc3aa4a",
+    "59b520ea2eda",
+    "ce4960123999",
+    "8ceca69eeb15",
+    "fe2e2ad0a3a0"
   ],
   "failed_ids": {
-    "544699e3157a": "2026-06-22T23:56:29.442663+00:00",
-    "828dbf45a9c5": "2026-06-22T23:56:29.442663+00:00",
-    "d4f494dbd7d1": "2026-06-22T23:56:29.442663+00:00",
-    "6d4c97dddea4": "2026-06-22T23:56:29.442663+00:00",
-    "03568d51d77d": "2026-06-22T23:56:29.442663+00:00",
-    "b7315f2bd476": "2026-06-22T23:56:29.442663+00:00",
-    "8ededec80ccf": "2026-06-22T23:56:29.442663+00:00",
-    "d2a2871cdab1": "2026-06-22T23:56:29.442663+00:00",
-    "dbe9168f10d9": "2026-06-22T23:56:29.442663+00:00",
-    "798e7c487e55": "2026-06-22T23:56:29.442663+00:00",
-    "db2de01c9e37": "2026-06-22T23:56:29.442663+00:00",
-    "2b5b23b539f5": "2026-06-22T23:56:29.442663+00:00",
-    "837cc0a1f1d1": "2026-06-22T23:56:29.442663+00:00",
-    "b626b59d43c3": "2026-06-22T23:56:29.442663+00:00",
-    "0044c5e83b5d": "2026-06-22T23:56:29.442663+00:00",
-    "6f69c01042f3": "2026-06-22T23:56:29.442663+00:00",
-    "c867b3bb0e8b": "2026-06-22T23:56:29.442663+00:00",
-    "f1d8a9ff7ad7": "2026-06-22T23:56:29.442663+00:00",
-    "a24423c144af": "2026-06-22T23:56:29.442663+00:00",
-    "789d1c764a57": "2026-06-22T23:56:29.442663+00:00",
-    "27e7a5f9b15e": "2026-06-22T23:56:29.442663+00:00",
-    "cc1a6ab6b1e4": "2026-06-22T23:56:29.442663+00:00",
-    "f452d12ab27f": "2026-06-22T23:56:29.442663+00:00",
-    "50f39a8f513d": "2026-06-22T23:56:29.442663+00:00",
-    "135d50af544e": "2026-06-22T23:56:29.442663+00:00",
-    "cc4fea35a723": "2026-06-22T23:56:29.442663+00:00",
     "a03027eaf309": "2026-06-23T03:28:22.116860+00:00",
     "1d8191e98d3f": "2026-06-23T03:28:22.116860+00:00",
     "c665571d108b": "2026-06-23T03:28:22.116860+00:00",
@@ -546,7 +520,24 @@
     "2a2bcc313ebc": "2026-06-23T03:28:22.116860+00:00",
     "6e055da17e0f": "2026-06-23T03:28:22.116860+00:00",
     "a5e7e31dfa0e": "2026-06-23T03:28:22.116860+00:00",
-    "5ad704b30854": "2026-06-23T03:28:22.116860+00:00"
+    "5ad704b30854": "2026-06-23T03:28:22.116860+00:00",
+    "51a6b9e16604": "2026-06-23T07:04:11.876283+00:00",
+    "d895679ad781": "2026-06-23T07:04:11.876283+00:00",
+    "c92b86e13aaa": "2026-06-23T07:04:11.876283+00:00",
+    "c8078f6c5e17": "2026-06-23T07:04:11.876283+00:00",
+    "77bc9198ae7e": "2026-06-23T07:04:11.876283+00:00",
+    "522bc5f90b5b": "2026-06-23T07:04:11.876283+00:00",
+    "b80e3010735d": "2026-06-23T07:04:11.876283+00:00",
+    "70d1b66e0997": "2026-06-23T07:04:11.876283+00:00",
+    "21032abf5aa1": "2026-06-23T07:04:11.876283+00:00",
+    "a1cec8b23327": "2026-06-23T07:04:11.876283+00:00",
+    "76e258901f08": "2026-06-23T07:04:11.876283+00:00",
+    "9a34d3342b9a": "2026-06-23T07:04:11.876283+00:00",
+    "2c5b9aead451": "2026-06-23T07:04:11.876283+00:00",
+    "6039159a993e": "2026-06-23T07:04:11.876283+00:00",
+    "7f9de9620dc7": "2026-06-23T07:04:11.876283+00:00",
+    "f2be3b4b08b2": "2026-06-23T07:04:11.876283+00:00",
+    "4be3e54fec41": "2026-06-23T07:04:11.876283+00:00"
   },
   "live_clusters": {
     "bd21cdcac67f7aee": {
@@ -720,17 +711,24 @@
       "item_ids": [
         "640087ea1a03",
         "381e0600bd7b",
-        "c779decb25e5"
+        "c779decb25e5",
+        "990d93b8ff10",
+        "76602a8e9f2d",
+        "b76ae72db112"
       ],
       "created_at": "2026-06-22T20:52:36.248851+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-22T23:56:29.442663+00:00",
-      "picks_file": "SUPPRESSED",
+      "last_escalated_size": 6,
+      "last_escalated_at": "2026-06-23T07:04:11.876283+00:00",
+      "picks_file": "picks/picks-2026-06-23-0704.md",
       "last_escalated_item_ids": [
         "640087ea1a03",
         "381e0600bd7b",
-        "c779decb25e5"
-      ]
+        "c779decb25e5",
+        "990d93b8ff10",
+        "76602a8e9f2d",
+        "b76ae72db112"
+      ],
+      "why_text": "One of the most dominant players of his generation just landed in Miami, ending a Bucks era that produced one championship but ultimately couldn't build a sustainable contender around him. The Heat \u2014 a franchise defined by engineering superstar acquisitions \u2014 now have their next franchise cornerstone, while Milwaukee enters a full rebuild. The Celtics' failed pursuit adds a sting to Boston's offseason, leaving the Eastern Conference reshuffled in a single blockbuster move."
     },
     "bfb7be08c6e286ef": {
       "topic": "Pharrell Louis Vuitton Vans Collaboration",
@@ -874,7 +872,8 @@
         "90d69d0eedeb",
         "3a5840ecaae0",
         "0aff2fad5c51",
-        "8cb78febcc6a"
+        "8cb78febcc6a",
+        "a2e3bfc3aa4a"
       ],
       "created_at": "2026-06-23T03:28:48.770223+00:00",
       "last_escalated_size": 4,
@@ -896,7 +895,115 @@
       "created_at": "2026-06-23T03:28:48.770223+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "4171918967024091": {
+      "topic": "Sunday Golf Ryder 250 Stars-and-Stripes Bag Release",
+      "item_ids": [
+        "bd20b55c80ee"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "835962c3dde86581": {
+      "topic": "Eric Clapton 1966 Ferrari Auction",
+      "item_ids": [
+        "92157f9829c6"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ea0838692bb5a361": {
+      "topic": "Valve Steam Machine Next-Gen Pricing Announcement",
+      "item_ids": [
+        "2c22116589bf"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c395cd4f47cfe977": {
+      "topic": "Walmart TV Shows Vizio Partnership",
+      "item_ids": [
+        "83f2cae4f81d"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2f5fe0181a1aae29": {
+      "topic": "Rolling Stones Keith Richards Touring Statement",
+      "item_ids": [
+        "c5e778fed1ba"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6c39bcefc9306b89": {
+      "topic": "Webtoon Productions Anime American Market Adoption",
+      "item_ids": [
+        "70688327fb6a"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eb586cae57f74e03": {
+      "topic": "Morez Johnson Jr. NBA Draft Profile",
+      "item_ids": [
+        "8bda16fc49b4"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c89b5cb88cb06679": {
+      "topic": "Yaxel Lendeborg NBA Draft Profile",
+      "item_ids": [
+        "41ea23b98c41"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "42311e77ab6498d9": {
+      "topic": "SpaceX Valuation Investment Analysis",
+      "item_ids": [
+        "a5977bb1ab46"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d2175740a071e1e6": {
+      "topic": "Electric BMW M3 Four-Motor Performance",
+      "item_ids": [
+        "898555f87e23"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "486e65ab67e991fa": {
+      "topic": "BMW i3 Early Order Opening Germany EV Demand",
+      "item_ids": [
+        "1f021beb98ad"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fc7f4b103d3f8b03": {
+      "topic": "BMW Cannes Film Festival 2026 Reception",
+      "item_ids": [
+        "6381403065a6"
+      ],
+      "created_at": "2026-06-23T07:04:40.677582+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-23T03:28:55.403959+00:00"
+  "last_checked": "2026-06-23T07:04:49.566087+00:00"
 }
