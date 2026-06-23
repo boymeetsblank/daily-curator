@@ -1,17 +1,5 @@
 {
   "known_ids": [
-    "bb1f08e9fc45",
-    "a6050a9f4921",
-    "b893e7b70421",
-    "8e9a0bddf473",
-    "53a6f669f208",
-    "8fdeeb07add7",
-    "d327a9caf7cf",
-    "f1bdf50714fe",
-    "b0ffade724df",
-    "209bad0e2304",
-    "7b8285fa8dbd",
-    "64b251af8890",
     "dc734e81eb9b",
     "47cc883bcac0",
     "f7ca2e2c461c",
@@ -499,7 +487,19 @@
     "0861e4802471",
     "94b53d61b151",
     "1d8b313008c5",
-    "9d7d12377485"
+    "9d7d12377485",
+    "ddf5fcd4af1c",
+    "97e647fdbef6",
+    "90d69d0eedeb",
+    "3a5840ecaae0",
+    "0aff2fad5c51",
+    "f509ef0dc2fb",
+    "8cb78febcc6a",
+    "4770d5638f02",
+    "839f84c84b49",
+    "548a9f529db9",
+    "01f53e6a5ee1",
+    "d69732b03c2d"
   ],
   "failed_ids": {
     "544699e3157a": "2026-06-22T23:56:29.442663+00:00",
@@ -527,7 +527,26 @@
     "f452d12ab27f": "2026-06-22T23:56:29.442663+00:00",
     "50f39a8f513d": "2026-06-22T23:56:29.442663+00:00",
     "135d50af544e": "2026-06-22T23:56:29.442663+00:00",
-    "cc4fea35a723": "2026-06-22T23:56:29.442663+00:00"
+    "cc4fea35a723": "2026-06-22T23:56:29.442663+00:00",
+    "a03027eaf309": "2026-06-23T03:28:22.116860+00:00",
+    "1d8191e98d3f": "2026-06-23T03:28:22.116860+00:00",
+    "c665571d108b": "2026-06-23T03:28:22.116860+00:00",
+    "e8110c34cba4": "2026-06-23T03:28:22.116860+00:00",
+    "92c7e6feea00": "2026-06-23T03:28:22.116860+00:00",
+    "2150eb5cca34": "2026-06-23T03:28:22.116860+00:00",
+    "c5a870db4ee0": "2026-06-23T03:28:22.116860+00:00",
+    "050f42a8d112": "2026-06-23T03:28:22.116860+00:00",
+    "035bdf9453f5": "2026-06-23T03:28:22.116860+00:00",
+    "1919e18ed020": "2026-06-23T03:28:22.116860+00:00",
+    "1b2ad48b3c5f": "2026-06-23T03:28:22.116860+00:00",
+    "c738d80d719e": "2026-06-23T03:28:22.116860+00:00",
+    "66b23d74f74d": "2026-06-23T03:28:22.116860+00:00",
+    "a127247b9fe0": "2026-06-23T03:28:22.116860+00:00",
+    "a8bbc54bf271": "2026-06-23T03:28:22.116860+00:00",
+    "2a2bcc313ebc": "2026-06-23T03:28:22.116860+00:00",
+    "6e055da17e0f": "2026-06-23T03:28:22.116860+00:00",
+    "a5e7e31dfa0e": "2026-06-23T03:28:22.116860+00:00",
+    "5ad704b30854": "2026-06-23T03:28:22.116860+00:00"
   },
   "live_clusters": {
     "bd21cdcac67f7aee": {
@@ -830,7 +849,54 @@
       "created_at": "2026-06-22T23:56:56.197894+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "380e1fbe518d4146": {
+      "topic": "Bad Bunny Meets Spanish-Learning Fan",
+      "item_ids": [
+        "ddf5fcd4af1c"
+      ],
+      "created_at": "2026-06-23T03:28:48.770223+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d7aa4d0522081d4b": {
+      "topic": "Michelle Buteau Exits The Circle Reboot Host Role",
+      "item_ids": [
+        "97e647fdbef6"
+      ],
+      "created_at": "2026-06-23T03:28:48.770223+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e46439a3e89e0c06": {
+      "topic": "Julius Randle Three-Team NBA Trade to Nets",
+      "item_ids": [
+        "90d69d0eedeb",
+        "3a5840ecaae0",
+        "0aff2fad5c51",
+        "8cb78febcc6a"
+      ],
+      "created_at": "2026-06-23T03:28:48.770223+00:00",
+      "last_escalated_size": 4,
+      "last_escalated_at": "2026-06-23T03:28:22.116860+00:00",
+      "picks_file": "picks/picks-2026-06-23-0328.md",
+      "why_text": "This is a salary dump hiding in plain sight \u2014 the Wolves are unloading Randle's max contract to a Nets team in full teardown mode, while the Bulls absorb Nic Claxton as they quietly reshape their roster ahead of the draft. For Minnesota, it's a clean break from a partnership that never quite fit, freeing cap space to push deeper into contention alongside Anthony Edwards. Brooklyn, meanwhile, keeps collecting contracts and picks in what is becoming one of the most patient rebuilds in the league.",
+      "last_escalated_item_ids": [
+        "90d69d0eedeb",
+        "3a5840ecaae0",
+        "0aff2fad5c51",
+        "8cb78febcc6a"
+      ]
+    },
+    "4800af185e5ca6d2": {
+      "topic": "Bill Foley NBA Las Vegas Expansion Bid",
+      "item_ids": [
+        "f509ef0dc2fb"
+      ],
+      "created_at": "2026-06-23T03:28:48.770223+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-22T23:56:56.868428+00:00"
+  "last_checked": "2026-06-23T03:28:55.403959+00:00"
 }
