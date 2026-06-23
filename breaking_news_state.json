@@ -1,70 +1,5 @@
 {
   "known_ids": [
-    "cbe28509b61b",
-    "e3b83e20bb09",
-    "225b121784d0",
-    "cd49b1b4b1d6",
-    "d891d9c3ad40",
-    "1a983676859d",
-    "037bea36ad05",
-    "bd2acafd1b79",
-    "8dff912e10ad",
-    "94b2eb1462c9",
-    "11885c7bc9ed",
-    "0f52f6e2d4f5",
-    "8425fefb81e0",
-    "b0e6183c0bf9",
-    "92f69944b05f",
-    "196653d2e9b7",
-    "da32b0df520b",
-    "399986b06af9",
-    "5ae0c396ba8f",
-    "225bde1a09a1",
-    "db8d6b0148c9",
-    "be66ad38ce58",
-    "ffdfabc807e7",
-    "bc9c65f56189",
-    "8a198266138d",
-    "592793e4c938",
-    "b55e4210e34a",
-    "d6f51e89b1e1",
-    "32ddc8a50157",
-    "0aa1f13eea35",
-    "2a2d13c0adc0",
-    "7e40fb4a77d7",
-    "aedc1efc3e9e",
-    "1c8ec8b5f601",
-    "94737db6b1fa",
-    "79fa100d9de7",
-    "800f1b99bdc5",
-    "8ac5feb38d25",
-    "61bedff3d979",
-    "48afac2c078c",
-    "510415645079",
-    "f708ba7f2a30",
-    "17eb4b806c9e",
-    "ca2a0a5c856a",
-    "0782d8242b4e",
-    "c6d8d74fc93e",
-    "fc94c3c61a02",
-    "0ad2fd73eda9",
-    "d9b21337ed07",
-    "bf069712fd14",
-    "3aecc0c324a1",
-    "3ac0f71b093a",
-    "9a846550d8a1",
-    "ff13d21ad100",
-    "ff3f37d70d3f",
-    "1e2c638b83c6",
-    "0991e76ba393",
-    "c7656887afff",
-    "ddc8a224f7c5",
-    "d8406d85a244",
-    "b3ef55733f07",
-    "855067e8f432",
-    "276672c38725",
-    "510fb1d208a6",
-    "fb9e283b9742",
     "827cffd00b33",
     "edff3d22c154",
     "f2be5309902b",
@@ -499,27 +434,74 @@
     "680af06cd315",
     "4129ce7e7ab5",
     "a8dc023a9d00",
-    "633e7494161b"
+    "633e7494161b",
+    "39c1fed72ae4",
+    "57fb4386c6dc",
+    "f2849e0a46af",
+    "0f3ef53f7d19",
+    "bffaffa9082d",
+    "9ab0965a0aa3",
+    "9198d8224ceb",
+    "845434cb5917",
+    "a4c8d8331dc8",
+    "11befb934cb0",
+    "33fa6e1f8c23",
+    "a0c6c597f347",
+    "bd95554822a3",
+    "a0ae70858269",
+    "afe6be128e4e",
+    "af34008a96ff",
+    "ba1b19f98fbd",
+    "c8a79871dd45",
+    "6d816a7be689",
+    "64f98f1f36fc",
+    "9c111fdc9e59",
+    "1c1bf41a5c36",
+    "4bcf3231d563",
+    "6ad2703ed5c3",
+    "1288f893ae7e",
+    "3bbab94b6a48",
+    "6d1f3cf1c559",
+    "1d8191e98d3f",
+    "bbcf8b2f51ee",
+    "fc39670b0534",
+    "e737451330fc",
+    "1ec9d21add58",
+    "ae3fa263f347",
+    "afe3bd65c221",
+    "3da0f0fbb964",
+    "90521f72b8db",
+    "c5c423c1ede5",
+    "3eeda77342c4",
+    "fa75f128cca8",
+    "59cc4dcc9323",
+    "3138ed3c659b",
+    "80afd7a50cb7",
+    "d01b4c558006",
+    "0bc1cefb93c7",
+    "8840084638d3",
+    "74a7fd345ec0",
+    "aa02e16f6baf",
+    "4d78374cbd9c",
+    "d671c6add925",
+    "64fe6b2cb7d7",
+    "f8940bc8b0a2",
+    "52b9cff8b1c0",
+    "0ccb08a87cfb",
+    "425ce412f84e",
+    "467681ed1923",
+    "7f8aa15c46e4",
+    "3605735fdead",
+    "cae0bcaaa33f",
+    "2a12ffa65aaa",
+    "27b1bbfb42eb",
+    "03ccf76786ce",
+    "486163003680",
+    "163bb8e4c4b3",
+    "85defaf9124b",
+    "20f80304bd8c"
   ],
-  "failed_ids": {
-    "51a6b9e16604": "2026-06-23T07:04:11.876283+00:00",
-    "d895679ad781": "2026-06-23T07:04:11.876283+00:00",
-    "c92b86e13aaa": "2026-06-23T07:04:11.876283+00:00",
-    "c8078f6c5e17": "2026-06-23T07:04:11.876283+00:00",
-    "77bc9198ae7e": "2026-06-23T07:04:11.876283+00:00",
-    "522bc5f90b5b": "2026-06-23T07:04:11.876283+00:00",
-    "b80e3010735d": "2026-06-23T07:04:11.876283+00:00",
-    "70d1b66e0997": "2026-06-23T07:04:11.876283+00:00",
-    "21032abf5aa1": "2026-06-23T07:04:11.876283+00:00",
-    "a1cec8b23327": "2026-06-23T07:04:11.876283+00:00",
-    "76e258901f08": "2026-06-23T07:04:11.876283+00:00",
-    "9a34d3342b9a": "2026-06-23T07:04:11.876283+00:00",
-    "2c5b9aead451": "2026-06-23T07:04:11.876283+00:00",
-    "6039159a993e": "2026-06-23T07:04:11.876283+00:00",
-    "7f9de9620dc7": "2026-06-23T07:04:11.876283+00:00",
-    "f2be3b4b08b2": "2026-06-23T07:04:11.876283+00:00",
-    "4be3e54fec41": "2026-06-23T07:04:11.876283+00:00"
-  },
+  "failed_ids": {},
   "live_clusters": {
     "bd21cdcac67f7aee": {
       "topic": "Hypebeast x Citizen 20th Anniversary Watch Collaboration",
@@ -695,7 +677,9 @@
         "c779decb25e5",
         "990d93b8ff10",
         "76602a8e9f2d",
-        "b76ae72db112"
+        "b76ae72db112",
+        "f2849e0a46af",
+        "afe6be128e4e"
       ],
       "created_at": "2026-06-22T20:52:36.248851+00:00",
       "last_escalated_size": 6,
@@ -854,7 +838,8 @@
         "3a5840ecaae0",
         "0aff2fad5c51",
         "8cb78febcc6a",
-        "a2e3bfc3aa4a"
+        "a2e3bfc3aa4a",
+        "af34008a96ff"
       ],
       "created_at": "2026-06-23T03:28:48.770223+00:00",
       "last_escalated_size": 4,
@@ -952,7 +937,8 @@
     "42311e77ab6498d9": {
       "topic": "SpaceX Valuation Investment Analysis",
       "item_ids": [
-        "a5977bb1ab46"
+        "a5977bb1ab46",
+        "bbcf8b2f51ee"
       ],
       "created_at": "2026-06-23T07:04:40.677582+00:00",
       "last_escalated_size": 0,
@@ -1330,7 +1316,8 @@
     "fd290748492ae049": {
       "topic": "Nasdaq S&P 500 Chip Sector AI Selloff",
       "item_ids": [
-        "c727fe07357d"
+        "c727fe07357d",
+        "74a7fd345ec0"
       ],
       "created_at": "2026-06-23T10:41:01.129066+00:00",
       "last_escalated_size": 0,
@@ -1380,7 +1367,495 @@
       "created_at": "2026-06-23T10:41:01.129066+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "3c21c5edadfdc492": {
+      "topic": "Apple Prime Day 2026 Deals",
+      "item_ids": [
+        "39c1fed72ae4",
+        "c5c423c1ede5"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "efbe384bf45d8514": {
+      "topic": "Meek Mill Philadelphia America Anniversary Concert",
+      "item_ids": [
+        "57fb4386c6dc"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "379292760548ac83": {
+      "topic": "My Morning Jacket Jim James Solo Album Release",
+      "item_ids": [
+        "0f3ef53f7d19"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a9fa863676ba2bfd": {
+      "topic": "Levity Dubstep Trio Coachella Debut",
+      "item_ids": [
+        "bffaffa9082d"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "675fe2be262e72e9": {
+      "topic": "BOYNEXTDOOR HOME Album Chart Performance",
+      "item_ids": [
+        "9ab0965a0aa3"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "61cfe63db7514441": {
+      "topic": "Duran Duran Free to Love Remix Record",
+      "item_ids": [
+        "9198d8224ceb"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "30ef2567cb5bc718": {
+      "topic": "Carly Pearce Honest Woman Fifth Album Release",
+      "item_ids": [
+        "845434cb5917"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "00daaf1d70ad6050": {
+      "topic": "Peter Paul Mary Noel Stookey Sixties Retrospective",
+      "item_ids": [
+        "a4c8d8331dc8"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4995e7a4966860e4": {
+      "topic": "Never Stop Chasing Reed Timmer Documentary",
+      "item_ids": [
+        "11befb934cb0"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6937b6530dc366c9": {
+      "topic": "DDA Talent Worldwide Production Agency Merger",
+      "item_ids": [
+        "33fa6e1f8c23"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "05f60176ee474ef2": {
+      "topic": "Savannah Guthrie Missing Mother Update",
+      "item_ids": [
+        "a0c6c597f347"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "35b9869d6b7b344d": {
+      "topic": "Submarine Jim French Animation Annecy",
+      "item_ids": [
+        "bd95554822a3"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "28414a44d7396698": {
+      "topic": "The Debut Jesse Eisenberg A24 Film",
+      "item_ids": [
+        "a0ae70858269"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "313aab399db7f564": {
+      "topic": "PGA Tour 2-Track Plan Separate Fields Schedules",
+      "item_ids": [
+        "ba1b19f98fbd"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "08fd821ea5728975": {
+      "topic": "Wolves Dosunmu Five-Year $112M Deal",
+      "item_ids": [
+        "c8a79871dd45"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4020b8171eb94afd": {
+      "topic": "Oklahoma Sooners First Title Since 1994",
+      "item_ids": [
+        "6d816a7be689"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9b12df04f547a1a4": {
+      "topic": "Meta Smart Glasses $299 Launch",
+      "item_ids": [
+        "64f98f1f36fc",
+        "6d1f3cf1c559"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7268a52aa96e0234": {
+      "topic": "Prime Day 2026 Tech Sales Tracking",
+      "item_ids": [
+        "9c111fdc9e59"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "91c371725aef7b55": {
+      "topic": "Prime Day 2026 Tech Deals Up to $280 Off",
+      "item_ids": [
+        "1c1bf41a5c36"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3fc0289522b9f4e5": {
+      "topic": "Netgear Wi-Fi 7 Mesh Prime Day Sale",
+      "item_ids": [
+        "4bcf3231d563"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3e053eea8c06d00e": {
+      "topic": "Fika Jobs AI Video Hiring Platform $4M Funding",
+      "item_ids": [
+        "6ad2703ed5c3"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3f8d7152a884b88e": {
+      "topic": "Meta Smart Glasses Ray-Ban Kylie Jenner",
+      "item_ids": [
+        "1288f893ae7e"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d967e783d5a82da6": {
+      "topic": "MSI Claw 8 EX AI+ Gaming Device Review",
+      "item_ids": [
+        "3bbab94b6a48"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "84ce5f3df85acb74": {
+      "topic": "Trump ABC Reflecting Pool Lawsuit Threat",
+      "item_ids": [
+        "1d8191e98d3f"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0f7906fafad0281c": {
+      "topic": "Google AI Search Market Dominance Erosion",
+      "item_ids": [
+        "fc39670b0534"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "41a2e3987239c5c2": {
+      "topic": "AI Memory Startup Token Cost Reduction $98M Funding",
+      "item_ids": [
+        "e737451330fc"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b960b29102ffad34": {
+      "topic": "Ondas Sentrycs Lockheed Martin C-UAS Integration",
+      "item_ids": [
+        "1ec9d21add58"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "71efffa737b97f62": {
+      "topic": "Microsoft Satya Nadella Technology Leadership",
+      "item_ids": [
+        "ae3fa263f347"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a0829b0dba3bf90e": {
+      "topic": "Anthropic Chipmaking Government Relations",
+      "item_ids": [
+        "afe3bd65c221"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "10697daf49a844de": {
+      "topic": "Employee AI Adoption Skepticism vs Employer Optimism",
+      "item_ids": [
+        "3da0f0fbb964"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "252239eaf62ba416": {
+      "topic": "Button Battery Technology Safety Innovation",
+      "item_ids": [
+        "90521f72b8db"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e89ea9cb9d04580c": {
+      "topic": "iPhone Ultra Resale Value Concerns",
+      "item_ids": [
+        "3eeda77342c4"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "319ddaf0cd55ce74": {
+      "topic": "Sydney Sweeney Knicks NBA Finals Reactions",
+      "item_ids": [
+        "fa75f128cca8"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c56c87ae0e102864": {
+      "topic": "Knicks NBA Title Defense Strategy Giannis Trade",
+      "item_ids": [
+        "59cc4dcc9323"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8dfca10aca5f311b": {
+      "topic": "Nate Bittle Oregon Ducks NBA Draft Prospects",
+      "item_ids": [
+        "3138ed3c659b"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e3be6ba1a9ff17cd": {
+      "topic": "2026 NBA Mock Draft Post-Giannis Trade Analysis",
+      "item_ids": [
+        "80afd7a50cb7"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6b7f89d65672d537": {
+      "topic": "Atlanta Hawks 2026 NBA Draft Targets",
+      "item_ids": [
+        "d01b4c558006"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "774d2a1a4d133740": {
+      "topic": "Video Game Fictional Tech Analysis",
+      "item_ids": [
+        "0bc1cefb93c7"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a570c30615822556": {
+      "topic": "Former NFL Player Napkin Idea $1.5B Venture",
+      "item_ids": [
+        "8840084638d3"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3d80eca54effd921": {
+      "topic": "Salesforce Stock Tech Sector Selloff",
+      "item_ids": [
+        "aa02e16f6baf"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3bbca909c3ef5013": {
+      "topic": "Bitcoin Weakness Tech Market Rout",
+      "item_ids": [
+        "4d78374cbd9c"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "54d61ab8298de805": {
+      "topic": "Regions Bank Leadership Announcements",
+      "item_ids": [
+        "d671c6add925"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7c8f2ae22d707650": {
+      "topic": "LEGO Resale Business $50K Success",
+      "item_ids": [
+        "64fe6b2cb7d7"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fb94295d423e4f92": {
+      "topic": "Small Business 20% Tax Deduction",
+      "item_ids": [
+        "f8940bc8b0a2"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7655a7710ea079f0": {
+      "topic": "Local Business Amazon Growth Strategy",
+      "item_ids": [
+        "52b9cff8b1c0"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "530b3b50434a4a7f": {
+      "topic": "AI-Driven Small Business Advice Platform Expansion",
+      "item_ids": [
+        "0ccb08a87cfb"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ac4f849238cf244b": {
+      "topic": "Kos Same-Day Pay Application AI $12M Funding",
+      "item_ids": [
+        "425ce412f84e"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "69f5004c9bb674f0": {
+      "topic": "Trump Account Signups 6M Children Eligible",
+      "item_ids": [
+        "467681ed1923"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7a8e536f145b0634": {
+      "topic": "US Nuclear Power Low-Cost Loan Initiative",
+      "item_ids": [
+        "7f8aa15c46e4"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ca0533b8939090ed": {
+      "topic": "Financial Empowerment Trust Automation Innovation",
+      "item_ids": [
+        "3605735fdead"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "92f5322890d2cae7": {
+      "topic": "Cougar Investment Fund 25-Year Milestone",
+      "item_ids": [
+        "cae0bcaaa33f"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fe0ea87cc8439f5f": {
+      "topic": "Software-Defined Vehicles AI Connected Cars",
+      "item_ids": [
+        "2a12ffa65aaa"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "daaaaa5871f76d91": {
+      "topic": "BMW International Open 2026",
+      "item_ids": [
+        "27b1bbfb42eb"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d6df8bdb30d1fb68": {
+      "topic": "BMW BEV Launch China Generation",
+      "item_ids": [
+        "03ccf76786ce"
+      ],
+      "created_at": "2026-06-23T13:33:26.494383+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-23T10:41:01.130358+00:00"
+  "last_checked": "2026-06-23T13:33:26.495616+00:00"
 }
