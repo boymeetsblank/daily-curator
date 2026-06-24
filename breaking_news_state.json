@@ -1,52 +1,5 @@
 {
   "known_ids": [
-    "8bda16fc49b4",
-    "76602a8e9f2d",
-    "41ea23b98c41",
-    "b76ae72db112",
-    "a5977bb1ab46",
-    "898555f87e23",
-    "1f021beb98ad",
-    "6381403065a6",
-    "a2e3bfc3aa4a",
-    "59b520ea2eda",
-    "ce4960123999",
-    "8ceca69eeb15",
-    "fe2e2ad0a3a0",
-    "21282b7b07b8",
-    "12832f581683",
-    "7709713476ba",
-    "76b4977fb655",
-    "86e06c724de7",
-    "a0163e272efb",
-    "f7674f84fca5",
-    "c15efa2014ee",
-    "8ec661d35ec2",
-    "2d08fa110ec5",
-    "8114d1ba8781",
-    "388deec32b4a",
-    "99d565b5c8e8",
-    "55b75d4dc51f",
-    "f579a375800b",
-    "a281975c2234",
-    "7374936504ab",
-    "b3e9fb711e36",
-    "cfb18d83db7a",
-    "3a7558d52743",
-    "6d9358a4fcab",
-    "655943368f4e",
-    "aaab16316908",
-    "eda0589b67e8",
-    "4141ce9d02d4",
-    "b04698bae942",
-    "7dc24faa73a4",
-    "df4f6d2bf405",
-    "371e1d72264d",
-    "ffee1cea7f9b",
-    "da2cdd68d30f",
-    "fd27006e2e49",
-    "ba199abf57a2",
-    "37881ca7e90a",
     "061354c3c738",
     "731fb294d26a",
     "502e41329a38",
@@ -499,7 +452,54 @@
     "507d9997ee2e",
     "ef737ca9d8a2",
     "0861e4802471",
-    "4770d5638f02"
+    "4770d5638f02",
+    "74e7f5ae9540",
+    "f2a6b9976bd1",
+    "1627e145e509",
+    "deab929178ba",
+    "aa0fdb5885a7",
+    "7b8156e7e244",
+    "b7aa8420e3fe",
+    "6bae836d6103",
+    "68d30d45fd15",
+    "f2ac1c85fc1e",
+    "d20816cfa1db",
+    "bb92ee18e677",
+    "0d8ab267e369",
+    "484ed4b5a95c",
+    "294d952633d9",
+    "2e8f394ad011",
+    "90171025de4e",
+    "5cc06336c8c0",
+    "4ad666827f37",
+    "688ed4b9e2f8",
+    "a4e6580f3f99",
+    "2c685f1704e9",
+    "286147476b07",
+    "c61add6850ea",
+    "32eea1ac6f9b",
+    "1b92143ca212",
+    "501d200b4e07",
+    "900a90b0edcd",
+    "ab7a50a5a7b4",
+    "7ce6a4cbb98b",
+    "7be7ee9d35ef",
+    "d2b3fba5f651",
+    "3f86c6f88d36",
+    "8d77e6238bc0",
+    "665432e0a370",
+    "a2c99ac9a937",
+    "a5db7ea89fa7",
+    "ca38bb9beb46",
+    "f7d41eebaeb2",
+    "7477dfd8499a",
+    "1624d280557a",
+    "ff122acffb0d",
+    "44fc9ce71cad",
+    "37fd57d3336e",
+    "6d75211fac1e",
+    "754825010a23",
+    "f6ca0266fe7f"
   ],
   "failed_ids": {
     "6e6b00548d45": "2026-06-24T04:33:14.206684+00:00",
@@ -519,127 +519,6 @@
     "1ca6fd22f2af": "2026-06-24T04:33:14.206684+00:00"
   },
   "live_clusters": {
-    "4171918967024091": {
-      "topic": "Sunday Golf Ryder 250 Stars-and-Stripes Bag Release",
-      "item_ids": [
-        "bd20b55c80ee"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "835962c3dde86581": {
-      "topic": "Eric Clapton 1966 Ferrari Auction",
-      "item_ids": [
-        "92157f9829c6"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ea0838692bb5a361": {
-      "topic": "Valve Steam Machine Next-Gen Pricing Announcement",
-      "item_ids": [
-        "2c22116589bf"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c395cd4f47cfe977": {
-      "topic": "Walmart TV Shows Vizio Partnership",
-      "item_ids": [
-        "83f2cae4f81d"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "2f5fe0181a1aae29": {
-      "topic": "Rolling Stones Keith Richards Touring Statement",
-      "item_ids": [
-        "c5e778fed1ba"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6c39bcefc9306b89": {
-      "topic": "Webtoon Productions Anime American Market Adoption",
-      "item_ids": [
-        "70688327fb6a"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "eb586cae57f74e03": {
-      "topic": "Morez Johnson Jr. NBA Draft Profile",
-      "item_ids": [
-        "8bda16fc49b4"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c89b5cb88cb06679": {
-      "topic": "Yaxel Lendeborg NBA Draft Profile",
-      "item_ids": [
-        "41ea23b98c41"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "42311e77ab6498d9": {
-      "topic": "SpaceX Valuation Investment Analysis",
-      "item_ids": [
-        "a5977bb1ab46",
-        "bbcf8b2f51ee",
-        "ebdff0bb68bc",
-        "72771458e5c6",
-        "eece66566cda"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 5,
-      "last_escalated_at": "2026-06-23T20:25:32.137333+00:00",
-      "picks_file": "picks/picks-2026-06-23-2026.md",
-      "why_text": "SpaceX's debut is already stress-testing the market: shares dipped below the $150 IPO price before rebounding, the company turned around and raised another $25 billion in debt within two weeks of listing, and short sellers are circling \u2014 cautiously. It's the most culturally loaded IPO in years, sitting at the intersection of Musk's mythological status and the very real question of whether retail investors are buying a rocket company or a religion. The debt raise in particular signals that going public wasn't about needing cash \u2014 it was about something else entirely.",
-      "last_escalated_item_ids": [
-        "a5977bb1ab46",
-        "bbcf8b2f51ee",
-        "ebdff0bb68bc",
-        "72771458e5c6",
-        "eece66566cda"
-      ]
-    },
-    "d2175740a071e1e6": {
-      "topic": "Electric BMW M3 Four-Motor Performance",
-      "item_ids": [
-        "898555f87e23"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "486e65ab67e991fa": {
-      "topic": "BMW i3 Early Order Opening Germany EV Demand",
-      "item_ids": [
-        "1f021beb98ad"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fc7f4b103d3f8b03": {
-      "topic": "BMW Cannes Film Festival 2026 Reception",
-      "item_ids": [
-        "6381403065a6"
-      ],
-      "created_at": "2026-06-23T07:04:40.677582+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "8914de1aeb1166b5": {
       "topic": "HORI Metamon Nintendo Switch 2 Carrying Cases",
       "item_ids": [
@@ -1059,7 +938,8 @@
     "16d22147792e780f": {
       "topic": "BMW Next X5 M Division Strategy",
       "item_ids": [
-        "21b402853d4b"
+        "21b402853d4b",
+        "754825010a23"
       ],
       "created_at": "2026-06-23T10:41:01.129066+00:00",
       "last_escalated_size": 0,
@@ -1964,13 +1844,21 @@
         "2a0cc73d10c6",
         "8054f1aa3f8f",
         "507d9997ee2e",
-        "ef737ca9d8a2"
+        "ef737ca9d8a2",
+        "484ed4b5a95c",
+        "294d952633d9",
+        "2e8f394ad011",
+        "ab7a50a5a7b4",
+        "7ce6a4cbb98b",
+        "7be7ee9d35ef",
+        "d2b3fba5f651",
+        "3f86c6f88d36"
       ],
       "created_at": "2026-06-23T16:13:48.593874+00:00",
-      "last_escalated_size": 14,
-      "last_escalated_at": "2026-06-24T04:33:14.206684+00:00",
+      "last_escalated_size": 22,
+      "last_escalated_at": "2026-06-24T08:01:12.742043+00:00",
       "picks_file": "picks/picks-2026-06-23-2307.md",
-      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.\n**Update 7:09 PM CT:** The night's most anticipated moment has arrived: AJ Dybantsa, the Brockton, Massachusetts native who dominated the prep circuit and reclassified to make this class, is the consensus favorite to go No. 1 overall, with teams and fans alike watching to see which franchise lands the draft's most electrifying prospect.\n**Update 11:33 PM CT:** The first round is now complete: AJ Dybantsa went No. 1 overall as expected, Darryn Peterson and Cameron Boozer followed among the top picks, Aday Mara landed with the OKC Thunder, Arizona's Koa Peat was selected 30th by the Phoenix Suns, and the Cleveland Cavaliers dealt the No. 29 pick to the Sacramento Kings \u2014 capping a first round that doubled as a referendum on positional versatility and international development.",
+      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.\n**Update 7:09 PM CT:** The night's most anticipated moment has arrived: AJ Dybantsa, the Brockton, Massachusetts native who dominated the prep circuit and reclassified to make this class, is the consensus favorite to go No. 1 overall, with teams and fans alike watching to see which franchise lands the draft's most electrifying prospect.\n**Update 11:33 PM CT:** The first round is now complete: AJ Dybantsa went No. 1 overall as expected, Darryn Peterson and Cameron Boozer followed among the top picks, Aday Mara landed with the OKC Thunder, Arizona's Koa Peat was selected 30th by the Phoenix Suns, and the Cleveland Cavaliers dealt the No. 29 pick to the Sacramento Kings \u2014 capping a first round that doubled as a referendum on positional versatility and international development.\n**Update 3:01 AM CT:** **Update:** Round 2 is underway, with the Los Angeles Lakers selecting Cameron Carr and the Golden State Warriors taking Yaxel Lendeborg at No. 11 \u2014 while ESPN's post-draft analysis is already sorting winners from question marks, and Darryn Peterson's reported promise to the Utah Jazz before draft night adds a layer of intrigue to one of the first round's most closely watched selections.",
       "last_escalated_item_ids": [
         "2b7adc824313",
         "5c5e8e800f98",
@@ -1985,7 +1873,15 @@
         "2a0cc73d10c6",
         "8054f1aa3f8f",
         "507d9997ee2e",
-        "ef737ca9d8a2"
+        "ef737ca9d8a2",
+        "484ed4b5a95c",
+        "294d952633d9",
+        "2e8f394ad011",
+        "ab7a50a5a7b4",
+        "7ce6a4cbb98b",
+        "7be7ee9d35ef",
+        "d2b3fba5f651",
+        "3f86c6f88d36"
       ]
     },
     "ba67ca8271f51920": {
@@ -2846,7 +2742,8 @@
     "ef17430b302cdeae": {
       "topic": "Olivia Rodrigo You Seem Pretty Sad No. 1 Debut",
       "item_ids": [
-        "67814f3274a8"
+        "67814f3274a8",
+        "6bae836d6103"
       ],
       "created_at": "2026-06-23T21:56:32.535708+00:00",
       "last_escalated_size": 0,
@@ -2901,7 +2798,8 @@
     "cfffc27b52b82768": {
       "topic": "Pharrell Williams Louis Vuitton Spring Summer 2027",
       "item_ids": [
-        "c8a51a8a878f"
+        "c8a51a8a878f",
+        "68d30d45fd15"
       ],
       "created_at": "2026-06-23T21:56:32.535708+00:00",
       "last_escalated_size": 0,
@@ -2911,11 +2809,19 @@
       "topic": "Giannis Antetokounmpo Traded to Heat NBA Draft Eve",
       "item_ids": [
         "aac2650fe68a",
-        "0861e4802471"
+        "0861e4802471",
+        "5cc06336c8c0"
       ],
       "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-24T08:01:12.742043+00:00",
+      "picks_file": "picks/picks-2026-06-24-0801.md",
+      "why_text": "One of the most dominant players of his generation is leaving Milwaukee in a blockbuster move timed to drop on the eve of the NBA Draft \u2014 the kind of seismic roster shake-up that instantly reshapes the Eastern Conference power structure. The Bucks GM's evasive 'building' language signals the franchise is bracing for a full rebuild, while Miami lands a generational talent that makes them an immediate title contender. Culturally, this is the end of the Giannis-in-Milwaukee era \u2014 a Greek immigrant who became the face of a mid-market franchise winning a championship \u2014 and the beginning of something entirely new.",
+      "last_escalated_item_ids": [
+        "aac2650fe68a",
+        "0861e4802471",
+        "5cc06336c8c0"
+      ]
     },
     "ba431cf0f75c81e6": {
       "topic": "Alo Yoga IPO Preparation T-Shirt Business Sale",
@@ -2929,7 +2835,8 @@
     "b347826c11d512a2": {
       "topic": "Nike Giants-Themed Mind 001 Sneaker Release",
       "item_ids": [
-        "5d23971a1d6a"
+        "5d23971a1d6a",
+        "deab929178ba"
       ],
       "created_at": "2026-06-23T23:07:45.089985+00:00",
       "last_escalated_size": 0,
@@ -3172,12 +3079,247 @@
     "33807e93a7dcfece": {
       "topic": "Jaylen Brown Celtics Future Brad Stevens Trade Rumors",
       "item_ids": [
-        "09f54fd95d46"
+        "09f54fd95d46",
+        "90171025de4e"
       ],
       "created_at": "2026-06-24T04:33:48.394952+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1edeb9b8d802f26d": {
+      "topic": "SP5DER x adidas F50 Formotion Football Cleat Collaboration",
+      "item_ids": [
+        "74e7f5ae9540"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f8fbccbf332c87cc": {
+      "topic": "Story mfg. SS27 Collection Natural Dyes Hand-Drawn Design",
+      "item_ids": [
+        "f2a6b9976bd1"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "724dc2eba3325b64": {
+      "topic": "POST ARCHIVE FACTION x On Cloudboom Volt Collaboration",
+      "item_ids": [
+        "1627e145e509"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8447c17e0e026b30": {
+      "topic": "Hoshiba x Fruit of the Loom Luxury Pack T-Shirt Rebuild",
+      "item_ids": [
+        "aa0fdb5885a7"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b27f9a65cca9677c": {
+      "topic": "Prime Day 2026 Clothing Deals GQ Guide",
+      "item_ids": [
+        "7b8156e7e244"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e4c7f6cc0a3ef41c": {
+      "topic": "Prime Day 2026 Best Deals GQ Staff Picks",
+      "item_ids": [
+        "b7aa8420e3fe"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3780054b75d2041a": {
+      "topic": "Larry David Trump UFC Fight Commentary",
+      "item_ids": [
+        "f2ac1c85fc1e"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8722d8ae675bf16c": {
+      "topic": "OuiDo Adult Animation Company Horror Prudence Annecy",
+      "item_ids": [
+        "d20816cfa1db"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "80e221596ae07ff8": {
+      "topic": "Jia Zhangke Unknown Pleasures Pictures Minotaur La Gradiva Acquisition",
+      "item_ids": [
+        "bb92ee18e677"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cb0cffefc8a41d08": {
+      "topic": "The Independents Acquires Emilia P\u00e9rez Paper Tiger",
+      "item_ids": [
+        "0d8ab267e369"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4ebd5e798973e1c3": {
+      "topic": "Alibaba Sues US Government Chinese Military Sanctions List",
+      "item_ids": [
+        "4ad666827f37"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a42d7d7c171d3acd": {
+      "topic": "Rheinmetall Defense Stock Decline Germany Warship Plans Scrapped",
+      "item_ids": [
+        "688ed4b9e2f8"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "940bf520ef8b4019": {
+      "topic": "KNDS Defense Giant IPO Paris Frankfurt",
+      "item_ids": [
+        "a4e6580f3f99"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "050b0e1cd124ff7c": {
+      "topic": "Morgan Stanley China Humanoid Robot Shipment Forecast Increase",
+      "item_ids": [
+        "2c685f1704e9"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f6cfcc552e54fd82": {
+      "topic": "Grand Seiko Core Evolution 9 Collection Update",
+      "item_ids": [
+        "900a90b0edcd"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "851c79068f13f79b": {
+      "topic": "Elon Musk Trillionaire Status Risk Tesla SpaceX Share Decline",
+      "item_ids": [
+        "a2c99ac9a937"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4b14fcc6451ec8b0": {
+      "topic": "Salt Lake City Short-Term Rental Business License Requirements",
+      "item_ids": [
+        "a5db7ea89fa7"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "be5d3c6ce5b9c9da": {
+      "topic": "Saipem Saudi Shallow-Water Drilling Business Sale ADES",
+      "item_ids": [
+        "ca38bb9beb46"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cd99aab6f35a811e": {
+      "topic": "Middle East Oil Market Dynamics Analysis",
+      "item_ids": [
+        "f7d41eebaeb2"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8b6c6dd70930ceed": {
+      "topic": "BCG CMOs AI Strategy Leadership",
+      "item_ids": [
+        "7477dfd8499a"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9d98f77d64ba5094": {
+      "topic": "Meta Executive Stock Options 921M Job Cuts 8000",
+      "item_ids": [
+        "1624d280557a"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fd8b20ca2d623901": {
+      "topic": "Stegra Green Steel 1.6 Billion Financing Round",
+      "item_ids": [
+        "ff122acffb0d"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "063584d2c6c44ade": {
+      "topic": "Porsche Financial Services Management Board Realignment",
+      "item_ids": [
+        "44fc9ce71cad"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3755e92062390d1b": {
+      "topic": "Allium 40M Raise Onchain Finance",
+      "item_ids": [
+        "37fd57d3336e"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "78577a5e563d20ff": {
+      "topic": "B&M Retailer Finance Chief Appointment Atheeq Akbar",
+      "item_ids": [
+        "6d75211fac1e"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0e472908715e6183": {
+      "topic": "BMW R 1200 GS Solo Ride Tamil Nadu Feature",
+      "item_ids": [
+        "f6ca0266fe7f"
+      ],
+      "created_at": "2026-06-24T08:01:47.716275+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-24T04:33:58.402653+00:00"
+  "last_checked": "2026-06-24T08:02:00.204024+00:00"
 }
