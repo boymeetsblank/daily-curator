@@ -1,26 +1,5 @@
 {
   "known_ids": [
-    "e864d649fa09",
-    "9953f2f7d55a",
-    "c71266daf8f8",
-    "6dbd25058303",
-    "c779decb25e5",
-    "5348f2bce389",
-    "4a00e0c236c4",
-    "0861e4802471",
-    "94b53d61b151",
-    "1d8b313008c5",
-    "9d7d12377485",
-    "ddf5fcd4af1c",
-    "97e647fdbef6",
-    "90d69d0eedeb",
-    "3a5840ecaae0",
-    "0aff2fad5c51",
-    "f509ef0dc2fb",
-    "8cb78febcc6a",
-    "4770d5638f02",
-    "839f84c84b49",
-    "548a9f529db9",
     "01f53e6a5ee1",
     "d69732b03c2d",
     "bd20b55c80ee",
@@ -499,7 +478,28 @@
     "a590f64cef36",
     "9066b799f852",
     "a5553c5e01e3",
-    "1af69e88541e"
+    "1af69e88541e",
+    "52207453e93f",
+    "4ac8bc499a60",
+    "c2b87810723d",
+    "eae25232bcd9",
+    "ea03ee1fb641",
+    "55ecd1e213ef",
+    "8db2d37be807",
+    "5094a33b8f2d",
+    "9859d71a4ebb",
+    "5248eebdea35",
+    "41e29831de85",
+    "8d3bdf7b5851",
+    "576970cf2218",
+    "36f9e390b369",
+    "1a666ab09060",
+    "81443890d9ff",
+    "eb1ae17ed359",
+    "ad7baf6948ef",
+    "01705d821dc5",
+    "01705d821dc5",
+    "2ff8a53a4c1a"
   ],
   "failed_ids": {
     "3a6d24576eb2": "2026-06-23T23:07:16.493283+00:00",
@@ -518,75 +518,28 @@
     "e243d81d7dc8": "2026-06-23T23:07:16.493283+00:00",
     "dfae71a1121d": "2026-06-23T23:07:16.493283+00:00",
     "a7035e90c740": "2026-06-23T23:07:16.493283+00:00",
-    "4945b527eb6b": "2026-06-23T23:07:16.493283+00:00"
+    "4945b527eb6b": "2026-06-23T23:07:16.493283+00:00",
+    "ce3a059044db": "2026-06-24T00:08:50.028633+00:00",
+    "4ae339998ae3": "2026-06-24T00:08:50.028633+00:00",
+    "7aaab89ed539": "2026-06-24T00:08:50.028633+00:00",
+    "084218e8c507": "2026-06-24T00:08:50.028633+00:00",
+    "91810d66d3fd": "2026-06-24T00:08:50.028633+00:00",
+    "ea7e19b25a4a": "2026-06-24T00:08:50.028633+00:00",
+    "5aa6116f5c4e": "2026-06-24T00:08:50.028633+00:00",
+    "a9cb3d6f7669": "2026-06-24T00:08:50.028633+00:00",
+    "28d5f4ab891f": "2026-06-24T00:08:50.028633+00:00",
+    "c6698d6123dd": "2026-06-24T00:08:50.028633+00:00",
+    "f50301350928": "2026-06-24T00:08:50.028633+00:00",
+    "481741e6b6cc": "2026-06-24T00:08:50.028633+00:00",
+    "75e45a798e6c": "2026-06-24T00:08:50.028633+00:00",
+    "418c1fa3e2a1": "2026-06-24T00:08:50.028633+00:00",
+    "06c57dc0333c": "2026-06-24T00:08:50.028633+00:00",
+    "ca6a52137b5d": "2026-06-24T00:08:50.028633+00:00",
+    "076115ebe426": "2026-06-24T00:08:50.028633+00:00",
+    "2bb702eafb3d": "2026-06-24T00:08:50.028633+00:00",
+    "38ae32b5ed49": "2026-06-24T00:08:50.028633+00:00"
   },
   "live_clusters": {
-    "9ef666a38fac1eb0": {
-      "topic": "Cardi B Addresses Tooth Knockout Rumors",
-      "item_ids": [
-        "aa2aaf84b30b"
-      ],
-      "created_at": "2026-06-22T23:56:56.197894+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "88adc8dbf3a96f4c": {
-      "topic": "Moncler Pre-Fall 2026 Collection Launch",
-      "item_ids": [
-        "0aff718b3be7"
-      ],
-      "created_at": "2026-06-22T23:56:56.197894+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6d79662935b237a3": {
-      "topic": "Ryan Beatty Sweet Fortune Album Release",
-      "item_ids": [
-        "a5eb8b3d8859"
-      ],
-      "created_at": "2026-06-22T23:56:56.197894+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "50e34f48098670d9": {
-      "topic": "Haiti World Cup Run Gang Violence Hope",
-      "item_ids": [
-        "9953f2f7d55a",
-        "0116771be837"
-      ],
-      "created_at": "2026-06-22T23:56:56.197894+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "837be12248668b68": {
-      "topic": "Mindy Kaling Not Suitable For Work Series",
-      "item_ids": [
-        "c71266daf8f8",
-        "6f5be96d0492"
-      ],
-      "created_at": "2026-06-22T23:56:56.197894+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "23df04fc5bafdb58": {
-      "topic": "Dusty May Dallas Mavericks 2026 Draft",
-      "item_ids": [
-        "5348f2bce389",
-        "a590f64cef36"
-      ],
-      "created_at": "2026-06-22T23:56:56.197894+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "17fc09db8e422c35": {
-      "topic": "Mohamed Diawara Knicks Multiyear Deal",
-      "item_ids": [
-        "4a00e0c236c4"
-      ],
-      "created_at": "2026-06-22T23:56:56.197894+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "380e1fbe518d4146": {
       "topic": "Bad Bunny Meets Spanish-Learning Fan",
       "item_ids": [
@@ -868,11 +821,20 @@
     "1c13ab50fe254847": {
       "topic": "Prime Day 2026 Fitness Tech Deals",
       "item_ids": [
-        "99d565b5c8e8"
+        "99d565b5c8e8",
+        "9859d71a4ebb",
+        "5248eebdea35"
       ],
       "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-24T00:08:50.028633+00:00",
+      "picks_file": "picks/picks-2026-06-24-0009.md",
+      "why_text": "Prime Day has long stopped being just about electronics and household staples \u2014 this year's signal mix, from bidet upgrades to art-display TVs, reveals a consumer appetite for lifestyle elevation on a budget. The deals cutting through the noise aren't laptops or earbuds; they're objects that say something about how you live, what you value, and how you present your home. That's a meaningful shift in what 'deal culture' actually signals.",
+      "last_escalated_item_ids": [
+        "99d565b5c8e8",
+        "9859d71a4ebb",
+        "5248eebdea35"
+      ]
     },
     "9bc8311d281a2bbb": {
       "topic": "Prime Day 2026 Pool Cleaning Robot Discounts",
@@ -2056,20 +2018,28 @@
         "664460db21e3",
         "5bf7cef5b508",
         "a9b3995cae21",
-        "a5553c5e01e3"
+        "a5553c5e01e3",
+        "81443890d9ff",
+        "eb1ae17ed359",
+        "ad7baf6948ef",
+        "01705d821dc5"
       ],
       "created_at": "2026-06-23T16:13:48.593874+00:00",
-      "last_escalated_size": 6,
-      "last_escalated_at": "2026-06-23T23:07:16.493283+00:00",
+      "last_escalated_size": 10,
+      "last_escalated_at": "2026-06-24T00:08:50.028633+00:00",
       "picks_file": "picks/picks-2026-06-23-2307.md",
-      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.",
+      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.\n**Update 7:09 PM CT:** The night's most anticipated moment has arrived: AJ Dybantsa, the Brockton, Massachusetts native who dominated the prep circuit and reclassified to make this class, is the consensus favorite to go No. 1 overall, with teams and fans alike watching to see which franchise lands the draft's most electrifying prospect.",
       "last_escalated_item_ids": [
         "2b7adc824313",
         "5c5e8e800f98",
         "664460db21e3",
         "5bf7cef5b508",
         "a9b3995cae21",
-        "a5553c5e01e3"
+        "a5553c5e01e3",
+        "81443890d9ff",
+        "eb1ae17ed359",
+        "ad7baf6948ef",
+        "01705d821dc5"
       ]
     },
     "ba67ca8271f51920": {
@@ -2541,11 +2511,19 @@
       "topic": "Cristiano Ronaldo Sixth World Cup Goal Scorer",
       "item_ids": [
         "717f3c0ad440",
-        "614e57e9b9de"
+        "614e57e9b9de",
+        "c2b87810723d"
       ],
       "created_at": "2026-06-23T20:26:14.905573+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-24T00:08:50.028633+00:00",
+      "picks_file": "picks/picks-2026-06-24-0009.md",
+      "why_text": "Cristiano Ronaldo just etched his name into World Cup history by scoring at a sixth consecutive tournament, a feat only five other players have ever achieved. The 'next question' response when asked about Messi is peak Ronaldo \u2014 unbothered, tunnel-visioned, and acutely aware that records are his only real currency in this rivalry now. At 39, still doing it on the biggest stage, this is the kind of moment that keeps the GOAT debate alive whether you want it to or not.",
+      "last_escalated_item_ids": [
+        "717f3c0ad440",
+        "614e57e9b9de",
+        "c2b87810723d"
+      ]
     },
     "928098a93f35f49a": {
       "topic": "Tiger Woods Public Appearance Since Arrest",
@@ -2632,7 +2610,8 @@
     "682f3f1123d07d47": {
       "topic": "San Diego Unified Student Technology Limits Proposal",
       "item_ids": [
-        "ef540ebca5f5"
+        "ef540ebca5f5",
+        "36f9e390b369"
       ],
       "created_at": "2026-06-23T20:26:14.905573+00:00",
       "last_escalated_size": 0,
@@ -2884,7 +2863,8 @@
     "184e446226a4fa74": {
       "topic": "Jack White Divorce Filing",
       "item_ids": [
-        "bf2b09de664c"
+        "bf2b09de664c",
+        "ea03ee1fb641"
       ],
       "created_at": "2026-06-23T21:56:32.535708+00:00",
       "last_escalated_size": 0,
@@ -2956,7 +2936,8 @@
     "1328fba46ff2faaa": {
       "topic": "Superhuman Acquires GPTZero AI Detection Startup",
       "item_ids": [
-        "629ef74b9d99"
+        "629ef74b9d99",
+        "8d3bdf7b5851"
       ],
       "created_at": "2026-06-23T21:56:32.535708+00:00",
       "last_escalated_size": 0,
@@ -3141,7 +3122,97 @@
       "created_at": "2026-06-23T23:07:45.089985+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "b2eb78a32ed2998b": {
+      "topic": "Nike Air Force 1 Easter Spring 2027 Release",
+      "item_ids": [
+        "52207453e93f"
+      ],
+      "created_at": "2026-06-24T00:09:19.803414+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2dd73282aa35ad36": {
+      "topic": "BIA Responds to White House UFC Video Song Usage Controversy",
+      "item_ids": [
+        "4ac8bc499a60"
+      ],
+      "created_at": "2026-06-24T00:09:19.803414+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ec33e3452edea16e": {
+      "topic": "American Dollhouse Horror Film Analysis",
+      "item_ids": [
+        "eae25232bcd9"
+      ],
+      "created_at": "2026-06-24T00:09:19.803414+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f17367cca2f988be": {
+      "topic": "Walmart Deals Week Competes with Prime Day 2026",
+      "item_ids": [
+        "55ecd1e213ef"
+      ],
+      "created_at": "2026-06-24T00:09:19.803414+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d22d596d0f11a386": {
+      "topic": "Mindy Kaling NSFW Comedy Trilogy Completion",
+      "item_ids": [
+        "8db2d37be807"
+      ],
+      "created_at": "2026-06-24T00:09:19.803414+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "86e8726103629b46": {
+      "topic": "Bob Iger Comments on Bob Chapek Succession Controversy",
+      "item_ids": [
+        "5094a33b8f2d"
+      ],
+      "created_at": "2026-06-24T00:09:19.803414+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a98c57239ccfe582": {
+      "topic": "MoEngage AI Marketing Agents Strategy",
+      "item_ids": [
+        "41e29831de85"
+      ],
+      "created_at": "2026-06-24T00:09:19.803414+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8959a16c4186dcea": {
+      "topic": "Intergenerational Wealth Transfer Financial Planning",
+      "item_ids": [
+        "576970cf2218"
+      ],
+      "created_at": "2026-06-24T00:09:19.803414+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "43731374de23a568": {
+      "topic": "Iowa State Basketball Star 2026 NBA Draft Absence",
+      "item_ids": [
+        "1a666ab09060"
+      ],
+      "created_at": "2026-06-24T00:09:19.803414+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d4647c5b9c94dfd1": {
+      "topic": "Stock Market AI Trade Uncertainty Dow S&P Nasdaq Decline",
+      "item_ids": [
+        "2ff8a53a4c1a"
+      ],
+      "created_at": "2026-06-24T00:09:19.803414+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-23T23:07:57.359604+00:00"
+  "last_checked": "2026-06-24T00:09:37.929112+00:00"
 }
