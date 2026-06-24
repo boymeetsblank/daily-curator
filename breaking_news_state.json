@@ -1,41 +1,5 @@
 {
   "known_ids": [
-    "81443890d9ff",
-    "eb1ae17ed359",
-    "ad7baf6948ef",
-    "01705d821dc5",
-    "01705d821dc5",
-    "2ff8a53a4c1a",
-    "962fac48e963",
-    "546bf2ed48af",
-    "09f54fd95d46",
-    "2a0cc73d10c6",
-    "8054f1aa3f8f",
-    "507d9997ee2e",
-    "ef737ca9d8a2",
-    "0861e4802471",
-    "4770d5638f02",
-    "74e7f5ae9540",
-    "f2a6b9976bd1",
-    "1627e145e509",
-    "deab929178ba",
-    "aa0fdb5885a7",
-    "7b8156e7e244",
-    "b7aa8420e3fe",
-    "6bae836d6103",
-    "68d30d45fd15",
-    "f2ac1c85fc1e",
-    "d20816cfa1db",
-    "bb92ee18e677",
-    "0d8ab267e369",
-    "484ed4b5a95c",
-    "294d952633d9",
-    "2e8f394ad011",
-    "90171025de4e",
-    "5cc06336c8c0",
-    "4ad666827f37",
-    "688ed4b9e2f8",
-    "a4e6580f3f99",
     "2c685f1704e9",
     "286147476b07",
     "c61add6850ea",
@@ -499,213 +463,65 @@
     "5ca91f3fb23f",
     "35cf18483660",
     "5e01f9699d41",
-    "21fc908884a6"
+    "21fc908884a6",
+    "1b172be6bd0c",
+    "b8694694df20",
+    "785bae1ef010",
+    "a878f4eda4d9",
+    "e9396235a0c5",
+    "55b94aa78073",
+    "93fd389c3daa",
+    "cd8bede0f786",
+    "1d7578f1a975",
+    "ed4a42fc3fb7",
+    "99064ca5fe91",
+    "c04251888f2b",
+    "970a3d95d697",
+    "c22d260f378b",
+    "dceecbec936f",
+    "572f780d0964",
+    "276ad3b2e70c",
+    "266f847badbe",
+    "73ecb6bfd59c",
+    "fad9e23ecf16",
+    "d53d905c50de",
+    "9aabe622a9bc",
+    "bc59fbdd2e3f",
+    "8722cfa522b4",
+    "80e694b7718b",
+    "9d4556a489a3",
+    "0a62db7ef4ab",
+    "13e26d7ea5d1",
+    "ec23bcfce843",
+    "e2933053a1dd",
+    "bf1dce69d599",
+    "af2f3a0b650b",
+    "7c4b51096295",
+    "c2ea2a1ff58c",
+    "9429da98bad6",
+    "9c64f3ae0ecc"
   ],
-  "failed_ids": {},
+  "failed_ids": {
+    "d9ff2b149c08": "2026-06-24T22:41:09.609326+00:00",
+    "606bec76d04b": "2026-06-24T22:41:09.609326+00:00",
+    "7d4ce024a847": "2026-06-24T22:41:09.609326+00:00",
+    "d3746d4bfe10": "2026-06-24T22:41:09.609326+00:00",
+    "2d6219f0f56e": "2026-06-24T22:41:09.609326+00:00",
+    "543732378a73": "2026-06-24T22:41:09.609326+00:00",
+    "4cb72d186290": "2026-06-24T22:41:09.609326+00:00",
+    "bc2a5b281ac6": "2026-06-24T22:41:09.609326+00:00",
+    "f481c5154b59": "2026-06-24T22:41:09.609326+00:00",
+    "32049e8decd6": "2026-06-24T22:41:09.609326+00:00",
+    "7aed16e24b15": "2026-06-24T22:41:09.609326+00:00",
+    "9f21bb676998": "2026-06-24T22:41:09.609326+00:00",
+    "f6bbf1e7c03e": "2026-06-24T22:41:09.609326+00:00",
+    "d08b4adf8698": "2026-06-24T22:41:09.609326+00:00",
+    "f560ad0007f9": "2026-06-24T22:41:09.609326+00:00",
+    "e40bc9800171": "2026-06-24T22:41:09.609326+00:00",
+    "085eef868f08": "2026-06-24T22:41:09.609326+00:00",
+    "9c74d2251c3a": "2026-06-24T22:41:09.609326+00:00"
+  },
   "live_clusters": {
-    "4d87d57c3daa2b2f": {
-      "topic": "Louis Vuitton Spring/Summer 2027 Show",
-      "item_ids": [
-        "3b1cb4c2ce10"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "80b4ecf0116c3beb": {
-      "topic": "Don Toliver OCTANE Tour Extension",
-      "item_ids": [
-        "396a3ed72740"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "22f028dda60e5b6e": {
-      "topic": "Nike Air Bakin Low Release",
-      "item_ids": [
-        "97363f0832d1"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0e17711cee33b39f": {
-      "topic": "A'ja Wilson Nike A'Two Hot Wheels Sneaker",
-      "item_ids": [
-        "592ca357583d"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "665ebf563a736838": {
-      "topic": "Nike Air Liquid Max Black Metallic Release",
-      "item_ids": [
-        "f779ac923945"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6ffe370e4167da30": {
-      "topic": "The Blair Witch Project Reboot September 2027",
-      "item_ids": [
-        "84fe61d4ce64"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "184e446226a4fa74": {
-      "topic": "Jack White Divorce Filing",
-      "item_ids": [
-        "bf2b09de664c",
-        "ea03ee1fb641"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d3a7465c5330336f": {
-      "topic": "Fox One World Cup Streaming Free Trial Prime Day",
-      "item_ids": [
-        "c29d6d5d523a"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5a9c39fd7ae03124": {
-      "topic": "Bailey Zimmerman New Mexico Incident Apology",
-      "item_ids": [
-        "385a75698af0"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8e964af925171c84": {
-      "topic": "Mark Lee Confederate Flag Shirt Apology",
-      "item_ids": [
-        "d6c8f92fed5e"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ef17430b302cdeae": {
-      "topic": "Olivia Rodrigo You Seem Pretty Sad No. 1 Debut",
-      "item_ids": [
-        "67814f3274a8",
-        "6bae836d6103"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d71d38f2906e5109": {
-      "topic": "Toy Story 5 Soundtrack Billboard 200 Debut Taylor Swift",
-      "item_ids": [
-        "8fb6d6a37139"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f42a67902cc6669b": {
-      "topic": "Alec Baldwin Jeremy Piven Action Thriller Panic Button",
-      "item_ids": [
-        "354fbaea8338"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f4adbe8374880490": {
-      "topic": "Monsterverse Series Casting Millie Brady Pilou Asbaek",
-      "item_ids": [
-        "f52c53e40e17"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1328fba46ff2faaa": {
-      "topic": "Superhuman Acquires GPTZero AI Detection Startup",
-      "item_ids": [
-        "629ef74b9d99",
-        "8d3bdf7b5851"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "0a4f20e6fe0bb109": {
-      "topic": "Alphabet Joins Dow Jones Industrial Average",
-      "item_ids": [
-        "e192c2168879",
-        "2782352b3779",
-        "844bb07bc047"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-24T15:54:34.620643+00:00",
-      "picks_file": "picks/picks-2026-06-24-1555.md",
-      "why_text": "Alphabet's entry into the Dow Jones Industrial Average is a symbolic crowning of Big Tech's total dominance over the old economy \u2014 the index that once defined American industry now officially belongs to the algorithmic age. Verizon's exit is equally telling: legacy telecom, once the backbone of connectivity, gets bumped by the company that basically owns the internet. The Dow is supposed to reflect the health of the American economy, and right now that economy is Google.",
-      "last_escalated_item_ids": [
-        "e192c2168879",
-        "2782352b3779",
-        "844bb07bc047"
-      ]
-    },
-    "cfffc27b52b82768": {
-      "topic": "Pharrell Williams Louis Vuitton Spring Summer 2027",
-      "item_ids": [
-        "c8a51a8a878f",
-        "68d30d45fd15",
-        "cbaeb22f3805",
-        "3ec77a8434f1"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-24T13:30:06.127057+00:00",
-      "picks_file": "picks/picks-2026-06-24-1330.md",
-      "why_text": "Pharrell Williams continues to redefine what luxury menswear can look like, this time fusing surf culture's laid-back physicality with the ornate, maximalist energy of the dandy \u2014 a pairing that shouldn't work but absolutely does under his vision. It's a signal that high fashion is still leaning into subcultural hybridity rather than retreating to classic codes, and Pharrell's LV is increasingly the most culturally ambitious runway on the calendar. After three collections, he's not just holding the post-Abloh torch \u2014 he's burning in a completely different direction with it.",
-      "last_escalated_item_ids": [
-        "c8a51a8a878f",
-        "68d30d45fd15",
-        "cbaeb22f3805"
-      ]
-    },
-    "ae189a2df0abaa64": {
-      "topic": "Giannis Antetokounmpo Traded to Heat NBA Draft Eve",
-      "item_ids": [
-        "aac2650fe68a",
-        "0861e4802471",
-        "5cc06336c8c0",
-        "eb0b7a3982bb"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-24T08:01:12.742043+00:00",
-      "picks_file": "picks/picks-2026-06-24-0801.md",
-      "why_text": "One of the most dominant players of his generation is leaving Milwaukee in a blockbuster move timed to drop on the eve of the NBA Draft \u2014 the kind of seismic roster shake-up that instantly reshapes the Eastern Conference power structure. The Bucks GM's evasive 'building' language signals the franchise is bracing for a full rebuild, while Miami lands a generational talent that makes them an immediate title contender. Culturally, this is the end of the Giannis-in-Milwaukee era \u2014 a Greek immigrant who became the face of a mid-market franchise winning a championship \u2014 and the beginning of something entirely new.",
-      "last_escalated_item_ids": [
-        "aac2650fe68a",
-        "0861e4802471",
-        "5cc06336c8c0"
-      ]
-    },
-    "ba431cf0f75c81e6": {
-      "topic": "Alo Yoga IPO Preparation T-Shirt Business Sale",
-      "item_ids": [
-        "8cc671191a9b"
-      ],
-      "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "b347826c11d512a2": {
       "topic": "Nike Giants-Themed Mind 001 Sneaker Release",
       "item_ids": [
@@ -1058,7 +874,8 @@
     "4ebd5e798973e1c3": {
       "topic": "Alibaba Sues US Government Chinese Military Sanctions List",
       "item_ids": [
-        "4ad666827f37"
+        "4ad666827f37",
+        "bc59fbdd2e3f"
       ],
       "created_at": "2026-06-24T08:01:47.716275+00:00",
       "last_escalated_size": 0,
@@ -1346,7 +1163,8 @@
     "5b6d1d478e0548d1": {
       "topic": "Heart Cell Regeneration Technology Discovery",
       "item_ids": [
-        "eac88fb7a773"
+        "eac88fb7a773",
+        "8722cfa522b4"
       ],
       "created_at": "2026-06-24T11:15:07.662257+00:00",
       "last_escalated_size": 0,
@@ -1367,7 +1185,8 @@
         "308c6d14f789",
         "33b725125d7f",
         "e7ee5f586c96",
-        "a117f6e11db9"
+        "a117f6e11db9",
+        "276ad3b2e70c"
       ],
       "created_at": "2026-06-24T11:15:07.662257+00:00",
       "last_escalated_size": 4,
@@ -1439,11 +1258,19 @@
       "topic": "Grand Theft Auto VI Pre-Orders Announced",
       "item_ids": [
         "0f87b5c11979",
-        "28dac6ebe8dc"
+        "28dac6ebe8dc",
+        "d53d905c50de"
       ],
       "created_at": "2026-06-24T11:15:07.662257+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-24T22:41:09.609326+00:00",
+      "picks_file": "picks/picks-2026-06-24-2241.md",
+      "why_text": "Rockstar has opened pre-orders for Grand Theft Auto VI, and the discourse is already zeroing in on the physical edition, which critics are calling little more than overpriced DRM \u2014 a disc that requires a massive download anyway, making the box essentially decorative. This lands at a cultural flashpoint around game preservation and the hollowing out of physical media, a conversation that's been simmering for years but explodes every time a franchise this big does something egregious. GTA VI is one of the most anticipated releases in gaming history, which means every monetization choice Rockstar makes right now will set an industry precedent.",
+      "last_escalated_item_ids": [
+        "0f87b5c11979",
+        "28dac6ebe8dc",
+        "d53d905c50de"
+      ]
     },
     "8b91850d6384b761": {
       "topic": "Santa Cruz County Business Capitola Wharf Uncertainty",
@@ -3659,7 +3486,8 @@
     "98c48ed404403ea3": {
       "topic": "Warriors Yaxel Lendeborg Stephen Curry NBA Draft Comment",
       "item_ids": [
-        "667badc1061d"
+        "667badc1061d",
+        "af2f3a0b650b"
       ],
       "created_at": "2026-06-24T19:41:48.471296+00:00",
       "last_escalated_size": 0,
@@ -4226,11 +4054,20 @@
     "f9d9edff733c263b": {
       "topic": "Airbnb Pittsburgh Anti-Party Technology July 4",
       "item_ids": [
-        "f0fdc0a8b419"
+        "f0fdc0a8b419",
+        "0a62db7ef4ab",
+        "13e26d7ea5d1"
       ],
       "created_at": "2026-06-24T21:14:15.948121+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-24T22:41:09.609326+00:00",
+      "picks_file": "picks/picks-2026-06-24-2241.md",
+      "why_text": "Airbnb is leaning hard into its anti-party technology this July 4th weekend, using AI-driven screening to flag and block reservations that show signs of a rager \u2014 short stays, last-minute bookings, no reviews. Pittsburgh is a named focus, but the rollout is national, signaling that the platform is treating holiday weekends as a systemic risk rather than a case-by-case enforcement problem. This is Airbnb doubling down on its pivot from 'disruptive hospitality' to 'responsible hosting' \u2014 a brand identity shift that has real consequences for how Americans rent and party.",
+      "last_escalated_item_ids": [
+        "f0fdc0a8b419",
+        "0a62db7ef4ab",
+        "13e26d7ea5d1"
+      ]
     },
     "9737716bda269937": {
       "topic": "Micron $41.5B Revenue AI Memory Demand",
@@ -4447,7 +4284,268 @@
       "created_at": "2026-06-24T21:14:15.948121+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "7fa4acb78f3c810f": {
+      "topic": "Alexis Guerrero FIFA Fan Festival NYC Appearance",
+      "item_ids": [
+        "1b172be6bd0c"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8c0d9cfc7a65a259": {
+      "topic": "Nike Air Zoom Flight '98 'The Glove' Sneaker Release",
+      "item_ids": [
+        "b8694694df20"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4fa623ab579d7d4c": {
+      "topic": "Converse Vintage Sneaker Retro Rerelease",
+      "item_ids": [
+        "785bae1ef010"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "747618895ea40d6c": {
+      "topic": "Jason Derulo Shark Tank Backlash Response",
+      "item_ids": [
+        "a878f4eda4d9"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ab92cdd31d4f1e82": {
+      "topic": "B2K Best Songs Ranked Retrospective",
+      "item_ids": [
+        "e9396235a0c5"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "13986dadee592b14": {
+      "topic": "Whitney Houston Estate Refutes Oprah Talk Show Stage Fall Claim",
+      "item_ids": [
+        "55b94aa78073"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ba8d103fa0fc3e91": {
+      "topic": "Leonard Cohen Estate Objects Trump 'Hallelujah' Freedom 250 Rally Use",
+      "item_ids": [
+        "93fd389c3daa"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7fbd6f061116a8d1": {
+      "topic": "Benny Blanco Mother Selena Gomez Marriage Story 2019",
+      "item_ids": [
+        "cd8bede0f786"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b8240fd87c216e82": {
+      "topic": "Ryman Hospitality Grand Ole Opry Sale Review",
+      "item_ids": [
+        "1d7578f1a975"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cab720fb28a5547c": {
+      "topic": "Ella Langley 'Be Her' Country Airplay Number One",
+      "item_ids": [
+        "ed4a42fc3fb7"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "954cf3782a9ebbf3": {
+      "topic": "Billy Idol Steve Stevens Hollywood Rockwalk Induction",
+      "item_ids": [
+        "99064ca5fe91"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "474d36dc66b0d716": {
+      "topic": "Olivia Rodrigo Daisy Chain Fields Music Festival Sells Out",
+      "item_ids": [
+        "c04251888f2b"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "64e0c56d14237ce9": {
+      "topic": "Chris Brown Dog Mauling Trial Housekeeper Testimony",
+      "item_ids": [
+        "970a3d95d697"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1f09ed862c92799e": {
+      "topic": "Tedeschi Trucks Band Bonnaroo Evacuation Return Performance",
+      "item_ids": [
+        "c22d260f378b"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "65c0ae16a5eb7718": {
+      "topic": "SS Rajamouli Annecy 'Baahubali: The Eternal War' WIP Event",
+      "item_ids": [
+        "dceecbec936f"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e8701081fdff568c": {
+      "topic": "Smart Fridge Algorithm Prime Day Deal",
+      "item_ids": [
+        "572f780d0964"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "51f5bca3aa8eb1bc": {
+      "topic": "AI Engineering Jobs Resilience Data Analysis",
+      "item_ids": [
+        "266f847badbe"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "da403eea1de87b53": {
+      "topic": "AI Researchers Leaving Google For Competing Companies",
+      "item_ids": [
+        "73ecb6bfd59c"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3b584d573b7b235f": {
+      "topic": "Memory Chip Shortage US Company Profitability",
+      "item_ids": [
+        "fad9e23ecf16"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "06e37cbd93209a28": {
+      "topic": "European Space Agency Euclid Milky Way Center Images",
+      "item_ids": [
+        "9aabe622a9bc"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "405dc02b3a1e5f32": {
+      "topic": "Cedar Rapids 911 Drone Response Technology Upgrade",
+      "item_ids": [
+        "80e694b7718b"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d0af2adf793f7535": {
+      "topic": "Laibe Electric Technology Toledo 100-Year Anniversary Expansion",
+      "item_ids": [
+        "9d4556a489a3"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c0896d87f5ec4cb6": {
+      "topic": "The North Face Summer Shoe Release",
+      "item_ids": [
+        "ec23bcfce843"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ddbd2a2db498831a": {
+      "topic": "iOS 27 Beta 2 Siri URL Summarization Restrictions",
+      "item_ids": [
+        "e2933053a1dd"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f32a6c34fb23d2c8": {
+      "topic": "Miami Heat 2026 NBA Draft Trade-Up Strategy Giannis Antetokounmpo",
+      "item_ids": [
+        "bf1dce69d599"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d3cbbaba8193f27d": {
+      "topic": "2026 NBA Draft Nate Ament Selection Round 2",
+      "item_ids": [
+        "7c4b51096295"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ac339faea5d40b98": {
+      "topic": "2026 NBA Draft Round 2 Mock Draft Predictions",
+      "item_ids": [
+        "c2ea2a1ff58c"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "85ef88a6a963c404": {
+      "topic": "2026 NBA Draft Round 2 Live Updates Coverage",
+      "item_ids": [
+        "9429da98bad6"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2fb8c7fbbfef4a45": {
+      "topic": "Cloudflare CEO AI Job Market Disruption Warning",
+      "item_ids": [
+        "9c64f3ae0ecc"
+      ],
+      "created_at": "2026-06-24T22:41:51.281182+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-24T21:14:22.820379+00:00"
+  "last_checked": "2026-06-24T22:42:05.295719+00:00"
 }
