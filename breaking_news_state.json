@@ -1,56 +1,5 @@
 {
   "known_ids": [
-    "061354c3c738",
-    "731fb294d26a",
-    "502e41329a38",
-    "d17167c2e45b",
-    "c727fe07357d",
-    "502e41329a38",
-    "c9b24791b24d",
-    "ab319c530571",
-    "4e9ce067bb92",
-    "76856a215111",
-    "21b402853d4b",
-    "a378747b8dad",
-    "680af06cd315",
-    "4129ce7e7ab5",
-    "a8dc023a9d00",
-    "633e7494161b",
-    "39c1fed72ae4",
-    "57fb4386c6dc",
-    "f2849e0a46af",
-    "0f3ef53f7d19",
-    "bffaffa9082d",
-    "9ab0965a0aa3",
-    "9198d8224ceb",
-    "845434cb5917",
-    "a4c8d8331dc8",
-    "11befb934cb0",
-    "33fa6e1f8c23",
-    "a0c6c597f347",
-    "bd95554822a3",
-    "a0ae70858269",
-    "afe6be128e4e",
-    "af34008a96ff",
-    "ba1b19f98fbd",
-    "c8a79871dd45",
-    "6d816a7be689",
-    "64f98f1f36fc",
-    "9c111fdc9e59",
-    "1c1bf41a5c36",
-    "4bcf3231d563",
-    "6ad2703ed5c3",
-    "1288f893ae7e",
-    "3bbab94b6a48",
-    "6d1f3cf1c559",
-    "1d8191e98d3f",
-    "bbcf8b2f51ee",
-    "fc39670b0534",
-    "e737451330fc",
-    "1ec9d21add58",
-    "ae3fa263f347",
-    "afe3bd65c221",
-    "3da0f0fbb964",
     "90521f72b8db",
     "c5c423c1ede5",
     "3eeda77342c4",
@@ -499,470 +448,87 @@
     "37fd57d3336e",
     "6d75211fac1e",
     "754825010a23",
-    "f6ca0266fe7f"
+    "f6ca0266fe7f",
+    "440d55388654",
+    "cf5c5ca28c8d",
+    "c09ea02542a1",
+    "a0d3167681ff",
+    "70b8f39d9f49",
+    "f5b2ffba16bd",
+    "0feec97a7687",
+    "8e295b0446d5",
+    "2d8ecabf9db3",
+    "7c194aae60f9",
+    "0ffe22f09151",
+    "e72ef939d93f",
+    "daf51017d313",
+    "6be39429397b",
+    "b7513f9f14bb",
+    "ba51df48e545",
+    "028d9d94d67d",
+    "67237f3b4a4b",
+    "36e3d6c37697",
+    "a9dc13b985d3",
+    "f642a3db4558",
+    "eac88fb7a773",
+    "cc000457c32c",
+    "849006f82d7c",
+    "50dd4c2e269d",
+    "42afcc10421b",
+    "293ecf850137",
+    "86279d530913",
+    "308c6d14f789",
+    "f30bb6d6561b",
+    "5c965b389cc7",
+    "b6745def6567",
+    "2782352b3779",
+    "3bce5a98590d",
+    "a1da00707c86",
+    "4ce175f11202",
+    "0f87b5c11979",
+    "e0c4123cbcdf",
+    "b6745def6567",
+    "7f50400b921c",
+    "9b85ab9d76ca",
+    "5c965b389cc7",
+    "97789a364e33",
+    "81b1546bb7c7",
+    "dbc1ae4a3aa6",
+    "89efade1fc12",
+    "a2e3bfc3aa4a",
+    "59b520ea2eda",
+    "ce4960123999",
+    "8ceca69eeb15",
+    "fe2e2ad0a3a0"
   ],
-  "failed_ids": {
-    "6e6b00548d45": "2026-06-24T04:33:14.206684+00:00",
-    "6198dc56fe04": "2026-06-24T04:33:14.206684+00:00",
-    "de11758f12a9": "2026-06-24T04:33:14.206684+00:00",
-    "6cc3a6680d23": "2026-06-24T04:33:14.206684+00:00",
-    "c7d198978a82": "2026-06-24T04:33:14.206684+00:00",
-    "13a0e1e927b1": "2026-06-24T04:33:14.206684+00:00",
-    "14e9a9661f35": "2026-06-24T04:33:14.206684+00:00",
-    "9fecd5ffa99f": "2026-06-24T04:33:14.206684+00:00",
-    "48ad3923bdfb": "2026-06-24T04:33:14.206684+00:00",
-    "b3c4202c6c59": "2026-06-24T04:33:14.206684+00:00",
-    "977352c161ed": "2026-06-24T04:33:14.206684+00:00",
-    "e5f56c8d0f08": "2026-06-24T04:33:14.206684+00:00",
-    "9bc8485db098": "2026-06-24T04:33:14.206684+00:00",
-    "8dde181cddfc": "2026-06-24T04:33:14.206684+00:00",
-    "1ca6fd22f2af": "2026-06-24T04:33:14.206684+00:00"
-  },
+  "failed_ids": {},
   "live_clusters": {
-    "8914de1aeb1166b5": {
-      "topic": "HORI Metamon Nintendo Switch 2 Carrying Cases",
-      "item_ids": [
-        "21282b7b07b8"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "442dd6cc333966ea": {
-      "topic": "Liar Game Part 2 Anime Summer Release",
-      "item_ids": [
-        "12832f581683"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "669e5b2aa0b2b1de": {
-      "topic": "Graphpaper REPRISE Sustainable Fashion Project",
-      "item_ids": [
-        "7709713476ba"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "8a36ee511c94dbcb": {
-      "topic": "Olivia Cooke Star Wars Rey Audition Story",
-      "item_ids": [
-        "76b4977fb655"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "50412701d2001eb2": {
-      "topic": "An Hour On Earth Nature Documentary France TV Deal",
-      "item_ids": [
-        "86e06c724de7"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "393fc77bf4ca3996": {
-      "topic": "Cinderella Reimagining Streaming Release Strategy",
-      "item_ids": [
-        "a0163e272efb"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "16a7ca5621f29997": {
-      "topic": "Monster Mia 2700-Screen European Halloween Release",
-      "item_ids": [
-        "f7674f84fca5"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5f41e2bbe93116a7": {
-      "topic": "Karlovy Vary Film Festival 2026 Honorees",
-      "item_ids": [
-        "c15efa2014ee"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a1d0c8d0f134999f": {
-      "topic": "Agnieszka Holland Marlene Dietrich Biopic Berlinweh",
-      "item_ids": [
-        "8ec661d35ec2"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "326e35b356b95c71": {
-      "topic": "HP OmniBook Ultra 14 Laptop Review",
-      "item_ids": [
-        "2d08fa110ec5"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "23721bfdc53c558f": {
-      "topic": "Anna Gomez FCC Press Freedom Policy",
-      "item_ids": [
-        "8114d1ba8781"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5e08334cfd999d44": {
-      "topic": "White House App Federal Workers Removal",
-      "item_ids": [
-        "388deec32b4a"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1c13ab50fe254847": {
-      "topic": "Prime Day 2026 Fitness Tech Deals",
-      "item_ids": [
-        "99d565b5c8e8",
-        "9859d71a4ebb",
-        "5248eebdea35"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-24T00:08:50.028633+00:00",
-      "picks_file": "picks/picks-2026-06-24-0009.md",
-      "why_text": "Prime Day has long stopped being just about electronics and household staples \u2014 this year's signal mix, from bidet upgrades to art-display TVs, reveals a consumer appetite for lifestyle elevation on a budget. The deals cutting through the noise aren't laptops or earbuds; they're objects that say something about how you live, what you value, and how you present your home. That's a meaningful shift in what 'deal culture' actually signals.",
-      "last_escalated_item_ids": [
-        "99d565b5c8e8",
-        "9859d71a4ebb",
-        "5248eebdea35"
-      ]
-    },
-    "9bc8311d281a2bbb": {
-      "topic": "Prime Day 2026 Pool Cleaning Robot Discounts",
-      "item_ids": [
-        "55b75d4dc51f"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c7407f77ed278976": {
-      "topic": "Meta Oversight Board Sexualized Deepfake Protection",
-      "item_ids": [
-        "f579a375800b"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c25d66ed0e3514a5": {
-      "topic": "Amazon Teamsters Union Bargaining Order",
-      "item_ids": [
-        "a281975c2234"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "bf1235aa9fc96d4b": {
-      "topic": "OpenAI Daybreak Open-Source Bug Prevention",
-      "item_ids": [
-        "7374936504ab"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "10856eaf9ba47120": {
-      "topic": "Tech Sector Global Stock Market Selloff",
-      "item_ids": [
-        "b3e9fb711e36"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "3bb59a41574d516a": {
-      "topic": "Oracle 21000 Job Cuts AI Layoffs",
-      "item_ids": [
-        "cfb18d83db7a"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "17052f278e087b10": {
-      "topic": "US Brazil China Soybean Market Competition",
-      "item_ids": [
-        "3a7558d52743"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "43db6bfe2dbf39a5": {
-      "topic": "New York Tuesday Primary Election Coverage",
-      "item_ids": [
-        "6d9358a4fcab"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c3d246b1242b2573": {
-      "topic": "AI Groups $20M New York Race Campaign Spending",
-      "item_ids": [
-        "655943368f4e",
-        "1358b37731fa"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "f3fd2e439970391a": {
-      "topic": "AI Agents Verification Requirements Analysis",
-      "item_ids": [
-        "aaab16316908"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "7ff86dc00637ce3e": {
-      "topic": "HIV Chronic Pain Research Technology",
-      "item_ids": [
-        "eda0589b67e8"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "b71110177a73663a": {
-      "topic": "Shield AI Aechelon Technology Acquisition",
-      "item_ids": [
-        "4141ce9d02d4"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "90cea00a590634d1": {
-      "topic": "Wearable Ultrasound Cardiovascular Monitoring Tech",
-      "item_ids": [
-        "b04698bae942"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "678e7f7ae52770c8": {
-      "topic": "BIO 2026 Drug Manufacturers Employment Challenges",
-      "item_ids": [
-        "7dc24faa73a4"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c8dc3940977d2741": {
-      "topic": "Jil Sander Fashion Collection Profile",
-      "item_ids": [
-        "df4f6d2bf405"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "c8e58fa8bf241e7f": {
-      "topic": "Giannis Antetokounmpo Bucks Fallout Timeline",
-      "item_ids": [
-        "371e1d72264d",
-        "ad9cde847e34"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "1c68f588877f5a41": {
-      "topic": "Dusty May NBA College Sports Red Flags",
-      "item_ids": [
-        "ffee1cea7f9b",
-        "f27f0d59c770",
-        "d2461be60657"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-23T20:25:32.137333+00:00",
-      "picks_file": "picks/picks-2026-06-23-2026.md",
-      "why_text": "Less than one full season into his tenure at Michigan, Dusty May is bolting for the NBA \u2014 a jarring exit that forces AD Warde Manuel into damage-control mode and raises real questions about the stability of a blue-blood program still trying to find its footing post-Juwan Howard. It's a reminder that the college coaching carousel now spins in every direction, and no program, no matter the brand, is immune to the pull of pro money and prestige. For Michigan fans, this stings twice: they thought they'd hired a builder, and instead they got a pit stop.",
-      "last_escalated_item_ids": [
-        "ffee1cea7f9b",
-        "f27f0d59c770",
-        "d2461be60657"
-      ]
-    },
-    "831d6e6ae135c4cc": {
-      "topic": "Grizzlies Ja Morant NBA Draft Trade Rumors",
-      "item_ids": [
-        "da2cdd68d30f"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9edf2168e1099dd5": {
-      "topic": "2026 NBA Draft Louisville Preview",
-      "item_ids": [
-        "fd27006e2e49"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "6a49a1ed3ffeb4bb": {
-      "topic": "Pelicans NBA Draft Preview Analysis",
-      "item_ids": [
-        "ba199abf57a2"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "5366d13e841a812f": {
-      "topic": "JPMorgan IBM Software Business Investment",
-      "item_ids": [
-        "37881ca7e90a"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a06cf8a6593b2350": {
-      "topic": "Boise State University Business Leadership Opinion",
-      "item_ids": [
-        "061354c3c738"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "ba2940ab52dec528": {
-      "topic": "Kansas City World Cup Streetcar Business Impact",
-      "item_ids": [
-        "731fb294d26a"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "430794234f1ed191": {
-      "topic": "UN Business Economic Resilience Opinion",
-      "item_ids": [
-        "502e41329a38"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "dbfc2bc5ad0e57bd": {
-      "topic": "AI Business Theft Protection Strategy",
-      "item_ids": [
-        "d17167c2e45b"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "fd290748492ae049": {
-      "topic": "Nasdaq S&P 500 Chip Sector AI Selloff",
-      "item_ids": [
-        "c727fe07357d",
-        "74a7fd345ec0",
-        "546bf2ed48af"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 3,
-      "last_escalated_at": "2026-06-24T04:33:14.206684+00:00",
-      "picks_file": "picks/picks-2026-06-24-0433.md",
-      "why_text": "The global selloff hammering chip stocks \u2014 with even a Samsung rebound failing to lift the broader sector \u2014 signals that markets are stress-testing the AI spending thesis that has driven valuations to historic highs. This isn't just a bad day for Nvidia or TSMC; it's a reckoning with whether the AI infrastructure buildout can justify its price tag. When Asia opens mixed and chip shares still can't find footing, it suggests the anxiety is structural, not just a reaction to one piece of news.",
-      "last_escalated_item_ids": [
-        "c727fe07357d",
-        "74a7fd345ec0",
-        "546bf2ed48af"
-      ]
-    },
-    "d43dafcb2749d423": {
-      "topic": "Inner Wealth High-Net-Worth Financial Planning",
-      "item_ids": [
-        "c9b24791b24d"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "800d437ae48dca43": {
-      "topic": "Solana Decentralized Finance 2030 Prediction",
-      "item_ids": [
-        "ab319c530571"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "a09b2fb3421382ab": {
-      "topic": "Climate Finance Emerging Markets Acceleration",
-      "item_ids": [
-        "4e9ce067bb92"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "9f2144f8d28edf07": {
-      "topic": "Porsche Mercedes American Highway Market Pull",
-      "item_ids": [
-        "76856a215111"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "16d22147792e780f": {
-      "topic": "BMW Next X5 M Division Strategy",
-      "item_ids": [
-        "21b402853d4b",
-        "754825010a23"
-      ],
-      "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "3c21c5edadfdc492": {
       "topic": "Apple Prime Day 2026 Deals",
       "item_ids": [
         "39c1fed72ae4",
         "c5c423c1ede5",
         "501e1ce3a458",
-        "e9d93f94dc31"
+        "e9d93f94dc31",
+        "a0d3167681ff",
+        "f5b2ffba16bd",
+        "7c194aae60f9",
+        "e72ef939d93f"
       ],
       "created_at": "2026-06-23T13:33:26.494383+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-23T20:25:32.137333+00:00",
+      "last_escalated_size": 8,
+      "last_escalated_at": "2026-06-24T11:14:28.642851+00:00",
       "picks_file": "picks/picks-2026-06-23-2026.md",
-      "why_text": "Prime Day has quietly become one of the most reliable moments in the Apple calendar \u2014 not because Apple participates, but because Amazon uses its own margins to move Apple hardware at prices Apple never offers directly. Deals on Apple Watch and MacBooks signal that premium consumer tech has fully normalized the discount cycle, stripping away the last of Apple's luxury mystique. For consumers, it's a genuine opportunity; for Apple's brand, it's a slow, steady erosion of the idea that their products don't go on sale.",
+      "why_text": "Prime Day has quietly become one of the most reliable moments in the Apple calendar \u2014 not because Apple participates, but because Amazon uses its own margins to move Apple hardware at prices Apple never offers directly. Deals on Apple Watch and MacBooks signal that premium consumer tech has fully normalized the discount cycle, stripping away the last of Apple's luxury mystique. For consumers, it's a genuine opportunity; for Apple's brand, it's a slow, steady erosion of the idea that their products don't go on sale.\n**Update 6:15 AM CT:** The cultural footprint of Prime Day 2026 is now undeniable: GQ editors are publishing personal buying guides and luggage roundups, while WIRED is running live deal trackers \u2014 signaling that the sale has fully crossed over from retail event to media spectacle, commanding the same editorial energy as fashion weeks or product launches. Notably, WIRED is also surfacing competing Walmart deals as worthy alternatives, suggesting Prime Day's dominance is being actively contested this cycle, with retailers fragmenting consumer attention across the same 48-hour window.",
       "last_escalated_item_ids": [
         "39c1fed72ae4",
         "c5c423c1ede5",
         "501e1ce3a458",
-        "e9d93f94dc31"
+        "e9d93f94dc31",
+        "a0d3167681ff",
+        "f5b2ffba16bd",
+        "7c194aae60f9",
+        "e72ef939d93f"
       ]
     },
     "efbe384bf45d8514": {
@@ -1133,7 +699,8 @@
     "3fc0289522b9f4e5": {
       "topic": "Netgear Wi-Fi 7 Mesh Prime Day Sale",
       "item_ids": [
-        "4bcf3231d563"
+        "4bcf3231d563",
+        "6be39429397b"
       ],
       "created_at": "2026-06-23T13:33:26.494383+00:00",
       "last_escalated_size": 0,
@@ -1852,13 +1419,18 @@
         "7ce6a4cbb98b",
         "7be7ee9d35ef",
         "d2b3fba5f651",
-        "3f86c6f88d36"
+        "3f86c6f88d36",
+        "849006f82d7c",
+        "50dd4c2e269d",
+        "42afcc10421b",
+        "293ecf850137",
+        "86279d530913"
       ],
       "created_at": "2026-06-23T16:13:48.593874+00:00",
-      "last_escalated_size": 22,
-      "last_escalated_at": "2026-06-24T08:01:12.742043+00:00",
+      "last_escalated_size": 27,
+      "last_escalated_at": "2026-06-24T11:14:28.642851+00:00",
       "picks_file": "picks/picks-2026-06-23-2307.md",
-      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.\n**Update 7:09 PM CT:** The night's most anticipated moment has arrived: AJ Dybantsa, the Brockton, Massachusetts native who dominated the prep circuit and reclassified to make this class, is the consensus favorite to go No. 1 overall, with teams and fans alike watching to see which franchise lands the draft's most electrifying prospect.\n**Update 11:33 PM CT:** The first round is now complete: AJ Dybantsa went No. 1 overall as expected, Darryn Peterson and Cameron Boozer followed among the top picks, Aday Mara landed with the OKC Thunder, Arizona's Koa Peat was selected 30th by the Phoenix Suns, and the Cleveland Cavaliers dealt the No. 29 pick to the Sacramento Kings \u2014 capping a first round that doubled as a referendum on positional versatility and international development.\n**Update 3:01 AM CT:** **Update:** Round 2 is underway, with the Los Angeles Lakers selecting Cameron Carr and the Golden State Warriors taking Yaxel Lendeborg at No. 11 \u2014 while ESPN's post-draft analysis is already sorting winners from question marks, and Darryn Peterson's reported promise to the Utah Jazz before draft night adds a layer of intrigue to one of the first round's most closely watched selections.",
+      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.\n**Update 7:09 PM CT:** The night's most anticipated moment has arrived: AJ Dybantsa, the Brockton, Massachusetts native who dominated the prep circuit and reclassified to make this class, is the consensus favorite to go No. 1 overall, with teams and fans alike watching to see which franchise lands the draft's most electrifying prospect.\n**Update 11:33 PM CT:** The first round is now complete: AJ Dybantsa went No. 1 overall as expected, Darryn Peterson and Cameron Boozer followed among the top picks, Aday Mara landed with the OKC Thunder, Arizona's Koa Peat was selected 30th by the Phoenix Suns, and the Cleveland Cavaliers dealt the No. 29 pick to the Sacramento Kings \u2014 capping a first round that doubled as a referendum on positional versatility and international development.\n**Update 3:01 AM CT:** **Update:** Round 2 is underway, with the Los Angeles Lakers selecting Cameron Carr and the Golden State Warriors taking Yaxel Lendeborg at No. 11 \u2014 while ESPN's post-draft analysis is already sorting winners from question marks, and Darryn Peterson's reported promise to the Utah Jazz before draft night adds a layer of intrigue to one of the first round's most closely watched selections.\n**Update 6:15 AM CT:** **Update 3:47 AM CT:** The draft's human moments are now taking center stage: Alabama's Labaron Philon was selected by the Philadelphia 76ers, ESPN's Jay Williams provided unwitting comic relief as colleagues ribbed him on-air, and Denver Nuggets owner Josh Kroenke went visibly viral after appearing stunned by his own team's draft-night trade \u2014 a candid reaction that crystallized the chaos and surprise that defined the night's closing hours.",
       "last_escalated_item_ids": [
         "2b7adc824313",
         "5c5e8e800f98",
@@ -1881,7 +1453,12 @@
         "7ce6a4cbb98b",
         "7be7ee9d35ef",
         "d2b3fba5f651",
-        "3f86c6f88d36"
+        "3f86c6f88d36",
+        "849006f82d7c",
+        "50dd4c2e269d",
+        "42afcc10421b",
+        "293ecf850137",
+        "86279d530913"
       ]
     },
     "ba67ca8271f51920": {
@@ -2789,7 +2366,8 @@
     "0a4f20e6fe0bb109": {
       "topic": "Alphabet Joins Dow Jones Industrial Average",
       "item_ids": [
-        "e192c2168879"
+        "e192c2168879",
+        "2782352b3779"
       ],
       "created_at": "2026-06-23T21:56:32.535708+00:00",
       "last_escalated_size": 0,
@@ -3319,7 +2897,304 @@
       "created_at": "2026-06-24T08:01:47.716275+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "1090a68878d0f804": {
+      "topic": "BLACKPINK Tamagotchi Collaboration Release",
+      "item_ids": [
+        "440d55388654"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f14660cacab5b929": {
+      "topic": "Saint Laurent Summer 2027 Menswear Collection",
+      "item_ids": [
+        "cf5c5ca28c8d"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "65dc66935b96d7e5": {
+      "topic": "Vans x FTMD Premium LX Old Skool Migratory Patterns",
+      "item_ids": [
+        "c09ea02542a1"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4a1d71fd6c0899e2": {
+      "topic": "Aerobic vs Anaerobic Exercise Health Guide",
+      "item_ids": [
+        "70b8f39d9f49"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "486393210e01fb3f": {
+      "topic": "Ghost in the Shell Anime Prime Video Science Saru Studio",
+      "item_ids": [
+        "0feec97a7687"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1a7fbbd7b8775936": {
+      "topic": "Anthony Pappa Australian DJ World Tour Collaborations",
+      "item_ids": [
+        "8e295b0446d5"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a34e05102543ec93": {
+      "topic": "Seriesly Berlin 2026 Stories At Risk Creator Initiative",
+      "item_ids": [
+        "2d8ecabf9db3"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "85d106be4ba35161": {
+      "topic": "Form Smart Swim 2 LT Goggles Swimming Technology",
+      "item_ids": [
+        "0ffe22f09151"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c9846101dc4d6e83": {
+      "topic": "BenQ 4100i Cinema Projector Review",
+      "item_ids": [
+        "daf51017d313"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6c4062daa741ffd5": {
+      "topic": "Brent Crude Oil Price Drop Below $76",
+      "item_ids": [
+        "b7513f9f14bb"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ee0e24bcce3bb109": {
+      "topic": "AI Data Center Energy Cost Congressional Bill",
+      "item_ids": [
+        "ba51df48e545"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e30edbebabfbd7ee": {
+      "topic": "France Major Power Outage European Heat Wave",
+      "item_ids": [
+        "028d9d94d67d"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b9e7ecc3c5821036": {
+      "topic": "Brightstar Lottery Retail Technology Oregon Contract",
+      "item_ids": [
+        "67237f3b4a4b"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "84faf4cf15d1ae5f": {
+      "topic": "South Coast Business Technology Awards Opportunities",
+      "item_ids": [
+        "36e3d6c37697"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0925b797dfa6d544": {
+      "topic": "KPMG Information Technology Operational Resilience",
+      "item_ids": [
+        "a9dc13b985d3"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "572a84c07d22e0b4": {
+      "topic": "Independent Hotels AI Technology Budget Gap Solutions",
+      "item_ids": [
+        "f642a3db4558"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5b6d1d478e0548d1": {
+      "topic": "Heart Cell Regeneration Technology Discovery",
+      "item_ids": [
+        "eac88fb7a773"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "91fb51fe7ab3177f": {
+      "topic": "ASICS Challenges Vans Skate Shoe Market Position",
+      "item_ids": [
+        "cc000457c32c"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f833573f099a0ef2": {
+      "topic": "Amazon Prime Day Gaming Deals 57% Off",
+      "item_ids": [
+        "308c6d14f789"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5ff23904452d9437": {
+      "topic": "Mountain Dew 5 Cents Pricing Marketing Strategy",
+      "item_ids": [
+        "f30bb6d6561b"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "eed7abe9b7cfa0c3": {
+      "topic": "Vanguard ETF Retirement Investment Strategy",
+      "item_ids": [
+        "5c965b389cc7"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "95e3d70f9764552e": {
+      "topic": "Big Tech AI Infrastructure $2.7 Trillion Cost Impact",
+      "item_ids": [
+        "b6745def6567"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3aca10222f36535b": {
+      "topic": "Record US Consumer Profit Service Quality Gap",
+      "item_ids": [
+        "3bce5a98590d"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bf7c5d7a2f38c83b": {
+      "topic": "Hemp Building Materials European Heat Wave Solution",
+      "item_ids": [
+        "a1da00707c86"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d59f73d9f85eee6e": {
+      "topic": "OpenAI Ad Business 19-Week Progress Update",
+      "item_ids": [
+        "4ce175f11202"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "b06cd5309869060b": {
+      "topic": "Grand Theft Auto VI Pre-Orders Announced",
+      "item_ids": [
+        "0f87b5c11979"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8b91850d6384b761": {
+      "topic": "Santa Cruz County Business Capitola Wharf Uncertainty",
+      "item_ids": [
+        "e0c4123cbcdf"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "dcfa0c8bb42884c5": {
+      "topic": "Retirement Financial Planning Edelman Chief Strategist",
+      "item_ids": [
+        "b6745def6567"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "1e899447ff81e61c": {
+      "topic": "World's Largest Banks Financial Firms 2026 JPMorgan",
+      "item_ids": [
+        "7f50400b921c"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0417646918441026": {
+      "topic": "Climate Risk Finance Ministers UN Priority Statement",
+      "item_ids": [
+        "9b85ab9d76ca"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fa45cc24554e183d": {
+      "topic": "BMW iX3 i7 Innovation Campaign Humorous Videos",
+      "item_ids": [
+        "5c965b389cc7"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f26374b1014d742c": {
+      "topic": "Danilo Petrucci WorldSBK Comeback ROKiT BMW Motorrad",
+      "item_ids": [
+        "97789a364e33"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cf2c6119bb2aaa4b": {
+      "topic": "Morgan Pininfarina BMW-Powered Coupe",
+      "item_ids": [
+        "81b1546bb7c7"
+      ],
+      "created_at": "2026-06-24T11:15:07.662257+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-24T08:02:00.204024+00:00"
+  "last_checked": "2026-06-24T11:15:41.084035+00:00"
 }
