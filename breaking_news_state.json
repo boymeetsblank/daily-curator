@@ -1,14 +1,5 @@
 {
   "known_ids": [
-    "01f53e6a5ee1",
-    "d69732b03c2d",
-    "bd20b55c80ee",
-    "92157f9829c6",
-    "2c22116589bf",
-    "83f2cae4f81d",
-    "c5e778fed1ba",
-    "70688327fb6a",
-    "990d93b8ff10",
     "8bda16fc49b4",
     "76602a8e9f2d",
     "41ea23b98c41",
@@ -499,96 +490,35 @@
     "ad7baf6948ef",
     "01705d821dc5",
     "01705d821dc5",
-    "2ff8a53a4c1a"
+    "2ff8a53a4c1a",
+    "962fac48e963",
+    "546bf2ed48af",
+    "09f54fd95d46",
+    "2a0cc73d10c6",
+    "8054f1aa3f8f",
+    "507d9997ee2e",
+    "ef737ca9d8a2",
+    "0861e4802471",
+    "4770d5638f02"
   ],
   "failed_ids": {
-    "3a6d24576eb2": "2026-06-23T23:07:16.493283+00:00",
-    "9a3716556d96": "2026-06-23T23:07:16.493283+00:00",
-    "773187d07ef7": "2026-06-23T23:07:16.493283+00:00",
-    "c57507db630b": "2026-06-23T23:07:16.493283+00:00",
-    "98153148062c": "2026-06-23T23:07:16.493283+00:00",
-    "be8dd31a7f3f": "2026-06-23T23:07:16.493283+00:00",
-    "dd6f6458706a": "2026-06-23T23:07:16.493283+00:00",
-    "48fa1d39cd9c": "2026-06-23T23:07:16.493283+00:00",
-    "ea91b4ebdffe": "2026-06-23T23:07:16.493283+00:00",
-    "b836abab9c0d": "2026-06-23T23:07:16.493283+00:00",
-    "dcdaeee6d01a": "2026-06-23T23:07:16.493283+00:00",
-    "d8f835c4f906": "2026-06-23T23:07:16.493283+00:00",
-    "1f9076972f0d": "2026-06-23T23:07:16.493283+00:00",
-    "e243d81d7dc8": "2026-06-23T23:07:16.493283+00:00",
-    "dfae71a1121d": "2026-06-23T23:07:16.493283+00:00",
-    "a7035e90c740": "2026-06-23T23:07:16.493283+00:00",
-    "4945b527eb6b": "2026-06-23T23:07:16.493283+00:00",
-    "ce3a059044db": "2026-06-24T00:08:50.028633+00:00",
-    "4ae339998ae3": "2026-06-24T00:08:50.028633+00:00",
-    "7aaab89ed539": "2026-06-24T00:08:50.028633+00:00",
-    "084218e8c507": "2026-06-24T00:08:50.028633+00:00",
-    "91810d66d3fd": "2026-06-24T00:08:50.028633+00:00",
-    "ea7e19b25a4a": "2026-06-24T00:08:50.028633+00:00",
-    "5aa6116f5c4e": "2026-06-24T00:08:50.028633+00:00",
-    "a9cb3d6f7669": "2026-06-24T00:08:50.028633+00:00",
-    "28d5f4ab891f": "2026-06-24T00:08:50.028633+00:00",
-    "c6698d6123dd": "2026-06-24T00:08:50.028633+00:00",
-    "f50301350928": "2026-06-24T00:08:50.028633+00:00",
-    "481741e6b6cc": "2026-06-24T00:08:50.028633+00:00",
-    "75e45a798e6c": "2026-06-24T00:08:50.028633+00:00",
-    "418c1fa3e2a1": "2026-06-24T00:08:50.028633+00:00",
-    "06c57dc0333c": "2026-06-24T00:08:50.028633+00:00",
-    "ca6a52137b5d": "2026-06-24T00:08:50.028633+00:00",
-    "076115ebe426": "2026-06-24T00:08:50.028633+00:00",
-    "2bb702eafb3d": "2026-06-24T00:08:50.028633+00:00",
-    "38ae32b5ed49": "2026-06-24T00:08:50.028633+00:00"
+    "6e6b00548d45": "2026-06-24T04:33:14.206684+00:00",
+    "6198dc56fe04": "2026-06-24T04:33:14.206684+00:00",
+    "de11758f12a9": "2026-06-24T04:33:14.206684+00:00",
+    "6cc3a6680d23": "2026-06-24T04:33:14.206684+00:00",
+    "c7d198978a82": "2026-06-24T04:33:14.206684+00:00",
+    "13a0e1e927b1": "2026-06-24T04:33:14.206684+00:00",
+    "14e9a9661f35": "2026-06-24T04:33:14.206684+00:00",
+    "9fecd5ffa99f": "2026-06-24T04:33:14.206684+00:00",
+    "48ad3923bdfb": "2026-06-24T04:33:14.206684+00:00",
+    "b3c4202c6c59": "2026-06-24T04:33:14.206684+00:00",
+    "977352c161ed": "2026-06-24T04:33:14.206684+00:00",
+    "e5f56c8d0f08": "2026-06-24T04:33:14.206684+00:00",
+    "9bc8485db098": "2026-06-24T04:33:14.206684+00:00",
+    "8dde181cddfc": "2026-06-24T04:33:14.206684+00:00",
+    "1ca6fd22f2af": "2026-06-24T04:33:14.206684+00:00"
   },
   "live_clusters": {
-    "380e1fbe518d4146": {
-      "topic": "Bad Bunny Meets Spanish-Learning Fan",
-      "item_ids": [
-        "ddf5fcd4af1c"
-      ],
-      "created_at": "2026-06-23T03:28:48.770223+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "d7aa4d0522081d4b": {
-      "topic": "Michelle Buteau Exits The Circle Reboot Host Role",
-      "item_ids": [
-        "97e647fdbef6"
-      ],
-      "created_at": "2026-06-23T03:28:48.770223+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
-    "e46439a3e89e0c06": {
-      "topic": "Julius Randle Three-Team NBA Trade to Nets",
-      "item_ids": [
-        "90d69d0eedeb",
-        "3a5840ecaae0",
-        "0aff2fad5c51",
-        "8cb78febcc6a",
-        "a2e3bfc3aa4a",
-        "af34008a96ff"
-      ],
-      "created_at": "2026-06-23T03:28:48.770223+00:00",
-      "last_escalated_size": 4,
-      "last_escalated_at": "2026-06-23T03:28:22.116860+00:00",
-      "picks_file": "picks/picks-2026-06-23-0328.md",
-      "why_text": "This is a salary dump hiding in plain sight \u2014 the Wolves are unloading Randle's max contract to a Nets team in full teardown mode, while the Bulls absorb Nic Claxton as they quietly reshape their roster ahead of the draft. For Minnesota, it's a clean break from a partnership that never quite fit, freeing cap space to push deeper into contention alongside Anthony Edwards. Brooklyn, meanwhile, keeps collecting contracts and picks in what is becoming one of the most patient rebuilds in the league.",
-      "last_escalated_item_ids": [
-        "90d69d0eedeb",
-        "3a5840ecaae0",
-        "0aff2fad5c51",
-        "8cb78febcc6a"
-      ]
-    },
-    "4800af185e5ca6d2": {
-      "topic": "Bill Foley NBA Las Vegas Expansion Bid",
-      "item_ids": [
-        "f509ef0dc2fb"
-      ],
-      "created_at": "2026-06-23T03:28:48.770223+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
-    },
     "4171918967024091": {
       "topic": "Sunday Golf Ryder 250 Stars-and-Stripes Bag Release",
       "item_ids": [
@@ -1076,11 +1006,19 @@
       "topic": "Nasdaq S&P 500 Chip Sector AI Selloff",
       "item_ids": [
         "c727fe07357d",
-        "74a7fd345ec0"
+        "74a7fd345ec0",
+        "546bf2ed48af"
       ],
       "created_at": "2026-06-23T10:41:01.129066+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-24T04:33:14.206684+00:00",
+      "picks_file": "picks/picks-2026-06-24-0433.md",
+      "why_text": "The global selloff hammering chip stocks \u2014 with even a Samsung rebound failing to lift the broader sector \u2014 signals that markets are stress-testing the AI spending thesis that has driven valuations to historic highs. This isn't just a bad day for Nvidia or TSMC; it's a reckoning with whether the AI infrastructure buildout can justify its price tag. When Asia opens mixed and chip shares still can't find footing, it suggests the anxiety is structural, not just a reaction to one piece of news.",
+      "last_escalated_item_ids": [
+        "c727fe07357d",
+        "74a7fd345ec0",
+        "546bf2ed48af"
+      ]
     },
     "d43dafcb2749d423": {
       "topic": "Inner Wealth High-Net-Worth Financial Planning",
@@ -2022,13 +1960,17 @@
         "81443890d9ff",
         "eb1ae17ed359",
         "ad7baf6948ef",
-        "01705d821dc5"
+        "01705d821dc5",
+        "2a0cc73d10c6",
+        "8054f1aa3f8f",
+        "507d9997ee2e",
+        "ef737ca9d8a2"
       ],
       "created_at": "2026-06-23T16:13:48.593874+00:00",
-      "last_escalated_size": 10,
-      "last_escalated_at": "2026-06-24T00:08:50.028633+00:00",
+      "last_escalated_size": 14,
+      "last_escalated_at": "2026-06-24T04:33:14.206684+00:00",
       "picks_file": "picks/picks-2026-06-23-2307.md",
-      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.\n**Update 7:09 PM CT:** The night's most anticipated moment has arrived: AJ Dybantsa, the Brockton, Massachusetts native who dominated the prep circuit and reclassified to make this class, is the consensus favorite to go No. 1 overall, with teams and fans alike watching to see which franchise lands the draft's most electrifying prospect.",
+      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.\n**Update 7:09 PM CT:** The night's most anticipated moment has arrived: AJ Dybantsa, the Brockton, Massachusetts native who dominated the prep circuit and reclassified to make this class, is the consensus favorite to go No. 1 overall, with teams and fans alike watching to see which franchise lands the draft's most electrifying prospect.\n**Update 11:33 PM CT:** The first round is now complete: AJ Dybantsa went No. 1 overall as expected, Darryn Peterson and Cameron Boozer followed among the top picks, Aday Mara landed with the OKC Thunder, Arizona's Koa Peat was selected 30th by the Phoenix Suns, and the Cleveland Cavaliers dealt the No. 29 pick to the Sacramento Kings \u2014 capping a first round that doubled as a referendum on positional versatility and international development.",
       "last_escalated_item_ids": [
         "2b7adc824313",
         "5c5e8e800f98",
@@ -2039,7 +1981,11 @@
         "81443890d9ff",
         "eb1ae17ed359",
         "ad7baf6948ef",
-        "01705d821dc5"
+        "01705d821dc5",
+        "2a0cc73d10c6",
+        "8054f1aa3f8f",
+        "507d9997ee2e",
+        "ef737ca9d8a2"
       ]
     },
     "ba67ca8271f51920": {
@@ -2964,7 +2910,8 @@
     "ae189a2df0abaa64": {
       "topic": "Giannis Antetokounmpo Traded to Heat NBA Draft Eve",
       "item_ids": [
-        "aac2650fe68a"
+        "aac2650fe68a",
+        "0861e4802471"
       ],
       "created_at": "2026-06-23T21:56:32.535708+00:00",
       "last_escalated_size": 0,
@@ -3212,7 +3159,25 @@
       "created_at": "2026-06-24T00:09:19.803414+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "0fd923f20f0d89f3": {
+      "topic": "Eros Innovation AI-Powered Music Label Launch",
+      "item_ids": [
+        "962fac48e963"
+      ],
+      "created_at": "2026-06-24T04:33:48.394952+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "33807e93a7dcfece": {
+      "topic": "Jaylen Brown Celtics Future Brad Stevens Trade Rumors",
+      "item_ids": [
+        "09f54fd95d46"
+      ],
+      "created_at": "2026-06-24T04:33:48.394952+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-24T00:09:37.929112+00:00"
+  "last_checked": "2026-06-24T04:33:58.402653+00:00"
 }
