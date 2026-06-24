@@ -1,74 +1,5 @@
 {
   "known_ids": [
-    "90521f72b8db",
-    "c5c423c1ede5",
-    "3eeda77342c4",
-    "fa75f128cca8",
-    "59cc4dcc9323",
-    "3138ed3c659b",
-    "80afd7a50cb7",
-    "d01b4c558006",
-    "0bc1cefb93c7",
-    "8840084638d3",
-    "74a7fd345ec0",
-    "aa02e16f6baf",
-    "4d78374cbd9c",
-    "d671c6add925",
-    "64fe6b2cb7d7",
-    "f8940bc8b0a2",
-    "52b9cff8b1c0",
-    "0ccb08a87cfb",
-    "425ce412f84e",
-    "467681ed1923",
-    "7f8aa15c46e4",
-    "3605735fdead",
-    "cae0bcaaa33f",
-    "2a12ffa65aaa",
-    "27b1bbfb42eb",
-    "03ccf76786ce",
-    "486163003680",
-    "163bb8e4c4b3",
-    "85defaf9124b",
-    "20f80304bd8c",
-    "a7ccf46ca597",
-    "779ae3c02705",
-    "75bf3d495406",
-    "a09fe54e142b",
-    "a22237841fec",
-    "cec6b1f76f59",
-    "e7c97c3e673e",
-    "666ea4e12d56",
-    "f91524e4eaea",
-    "2daa75f5ec65",
-    "498ab51ad51f",
-    "da378eab05af",
-    "3b786c42ae29",
-    "f5375bb93e3a",
-    "235252ce9159",
-    "4dfe04124d7b",
-    "fb54b127f39e",
-    "d6f599986bbe",
-    "23ee76c53540",
-    "1a64231cdc1c",
-    "fdec912d7424",
-    "3d2650167196",
-    "3dce0bb3337c",
-    "5dfbb9499f31",
-    "821f88e4d753",
-    "f2b5360b7b86",
-    "909a66a4543a",
-    "cf28535005fe",
-    "33b725125d7f",
-    "4ae2f16ac96e",
-    "ff4ce02b0403",
-    "a0adfe63478e",
-    "a52923d8cd68",
-    "6f5be96d0492",
-    "c984a3ab3679",
-    "756099224482",
-    "95a19df6790c",
-    "e87cf72f3d9f",
-    "4f5fbc201329",
     "fc02b496b730",
     "70eef289c8aa",
     "9e37838062b1",
@@ -499,7 +430,76 @@
     "59b520ea2eda",
     "ce4960123999",
     "8ceca69eeb15",
-    "fe2e2ad0a3a0"
+    "fe2e2ad0a3a0",
+    "3fd7b455ee59",
+    "cbaeb22f3805",
+    "9ca3b9156b51",
+    "ef4266f280c6",
+    "18fa50631d8e",
+    "c219de860d73",
+    "de23a8068251",
+    "a2db50d684e0",
+    "bcc813c157f1",
+    "f0678795b6fa",
+    "fed026d1ff6e",
+    "997f73c8d286",
+    "929bd823d795",
+    "ea91cad68de1",
+    "aaeb8759524c",
+    "4311e7754a58",
+    "9ee1c89e1b23",
+    "20a8f32e9fa9",
+    "b7a17b4ce818",
+    "55456adb82bd",
+    "4c925b03e05a",
+    "d8b030b7d3da",
+    "9bb8aa59d56c",
+    "d1b3de7bbc4e",
+    "70d9fd5276fc",
+    "c667d94dc95c",
+    "265a2cc2bd52",
+    "1bda14d41ebf",
+    "84963f032a21",
+    "ce403666bde6",
+    "2ecfc5b34536",
+    "e2ccaa5c2f74",
+    "9ad53e15d2d7",
+    "c980c4367d0a",
+    "cff633e0fb2d",
+    "63d942fb2fac",
+    "f0633b3babce",
+    "f4f7bf78cfe8",
+    "f832d3a38cab",
+    "b2386b56abf1",
+    "0c56d96e8755",
+    "3bc810168df8",
+    "ce84e0d39ada",
+    "4f09e0ba32d4",
+    "b97ca2a66fbc",
+    "eb0b7a3982bb",
+    "a0fdc9902fa1",
+    "10424d998e8d",
+    "27eb871a27a0",
+    "dc04d33694f8",
+    "261271e5c089",
+    "332b06d280e6",
+    "d2833845d0d5",
+    "390e4eab62a0",
+    "662eea7d47ba",
+    "8239ba84ff26",
+    "4393d9246c27",
+    "65b3d8c505f2",
+    "e0aad2c0258f",
+    "f846370c0b98",
+    "e74abd26614e",
+    "d7534a207274",
+    "a5e597af9d89",
+    "d3ecd7334f3c",
+    "a378747b8dad",
+    "680af06cd315",
+    "4129ce7e7ab5",
+    "a8dc023a9d00",
+    "633e7494161b"
   ],
   "failed_ids": {},
   "live_clusters": {
@@ -513,7 +513,8 @@
         "a0d3167681ff",
         "f5b2ffba16bd",
         "7c194aae60f9",
-        "e72ef939d93f"
+        "e72ef939d93f",
+        "bcc813c157f1"
       ],
       "created_at": "2026-06-23T13:33:26.494383+00:00",
       "last_escalated_size": 8,
@@ -1424,13 +1425,16 @@
         "50dd4c2e269d",
         "42afcc10421b",
         "293ecf850137",
-        "86279d530913"
+        "86279d530913",
+        "ce84e0d39ada",
+        "4f09e0ba32d4",
+        "b97ca2a66fbc"
       ],
       "created_at": "2026-06-23T16:13:48.593874+00:00",
-      "last_escalated_size": 27,
-      "last_escalated_at": "2026-06-24T11:14:28.642851+00:00",
+      "last_escalated_size": 30,
+      "last_escalated_at": "2026-06-24T13:30:06.127057+00:00",
       "picks_file": "picks/picks-2026-06-23-2307.md",
-      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.\n**Update 7:09 PM CT:** The night's most anticipated moment has arrived: AJ Dybantsa, the Brockton, Massachusetts native who dominated the prep circuit and reclassified to make this class, is the consensus favorite to go No. 1 overall, with teams and fans alike watching to see which franchise lands the draft's most electrifying prospect.\n**Update 11:33 PM CT:** The first round is now complete: AJ Dybantsa went No. 1 overall as expected, Darryn Peterson and Cameron Boozer followed among the top picks, Aday Mara landed with the OKC Thunder, Arizona's Koa Peat was selected 30th by the Phoenix Suns, and the Cleveland Cavaliers dealt the No. 29 pick to the Sacramento Kings \u2014 capping a first round that doubled as a referendum on positional versatility and international development.\n**Update 3:01 AM CT:** **Update:** Round 2 is underway, with the Los Angeles Lakers selecting Cameron Carr and the Golden State Warriors taking Yaxel Lendeborg at No. 11 \u2014 while ESPN's post-draft analysis is already sorting winners from question marks, and Darryn Peterson's reported promise to the Utah Jazz before draft night adds a layer of intrigue to one of the first round's most closely watched selections.\n**Update 6:15 AM CT:** **Update 3:47 AM CT:** The draft's human moments are now taking center stage: Alabama's Labaron Philon was selected by the Philadelphia 76ers, ESPN's Jay Williams provided unwitting comic relief as colleagues ribbed him on-air, and Denver Nuggets owner Josh Kroenke went visibly viral after appearing stunned by his own team's draft-night trade \u2014 a candid reaction that crystallized the chaos and surprise that defined the night's closing hours.",
+      "why_text": "The 2026 NBA Draft is happening now, and the league is once again betting on a new class of talent to reshape its competitive landscape heading into a pivotal era. With Becky Hammon already stirring controversy by calling Jalen Brunson an 'outlier' \u2014 implying he's the exception, not the rule, for undersized guards \u2014 the draft is arriving inside a broader conversation about what kind of player actually wins in today's NBA. Every pick tonight carries that subtext: franchises aren't just drafting athletes, they're casting votes on what the future of the game looks like.\n**Update 7:09 PM CT:** The night's most anticipated moment has arrived: AJ Dybantsa, the Brockton, Massachusetts native who dominated the prep circuit and reclassified to make this class, is the consensus favorite to go No. 1 overall, with teams and fans alike watching to see which franchise lands the draft's most electrifying prospect.\n**Update 11:33 PM CT:** The first round is now complete: AJ Dybantsa went No. 1 overall as expected, Darryn Peterson and Cameron Boozer followed among the top picks, Aday Mara landed with the OKC Thunder, Arizona's Koa Peat was selected 30th by the Phoenix Suns, and the Cleveland Cavaliers dealt the No. 29 pick to the Sacramento Kings \u2014 capping a first round that doubled as a referendum on positional versatility and international development.\n**Update 3:01 AM CT:** **Update:** Round 2 is underway, with the Los Angeles Lakers selecting Cameron Carr and the Golden State Warriors taking Yaxel Lendeborg at No. 11 \u2014 while ESPN's post-draft analysis is already sorting winners from question marks, and Darryn Peterson's reported promise to the Utah Jazz before draft night adds a layer of intrigue to one of the first round's most closely watched selections.\n**Update 6:15 AM CT:** **Update 3:47 AM CT:** The draft's human moments are now taking center stage: Alabama's Labaron Philon was selected by the Philadelphia 76ers, ESPN's Jay Williams provided unwitting comic relief as colleagues ribbed him on-air, and Denver Nuggets owner Josh Kroenke went visibly viral after appearing stunned by his own team's draft-night trade \u2014 a candid reaction that crystallized the chaos and surprise that defined the night's closing hours.\n**Update 8:30 AM CT:** With the dust settled on both rounds, the post-draft verdict is arriving fast: The Ringer, The Guardian, and Pounding the Rock are all publishing first-round winners-and-losers breakdowns, with a shared throughline emerging \u2014 the so-called 'Jalen Brunson Effect' is being credited for rehabilitating the draft stock of undersized, high-IQ guards across the board, while the teams that tanked hardest heading into this cycle are drawing early praise for capitalizing on their positioning.",
       "last_escalated_item_ids": [
         "2b7adc824313",
         "5c5e8e800f98",
@@ -1458,7 +1462,10 @@
         "50dd4c2e269d",
         "42afcc10421b",
         "293ecf850137",
-        "86279d530913"
+        "86279d530913",
+        "ce84e0d39ada",
+        "4f09e0ba32d4",
+        "b97ca2a66fbc"
       ]
     },
     "ba67ca8271f51920": {
@@ -2377,18 +2384,27 @@
       "topic": "Pharrell Williams Louis Vuitton Spring Summer 2027",
       "item_ids": [
         "c8a51a8a878f",
-        "68d30d45fd15"
+        "68d30d45fd15",
+        "cbaeb22f3805"
       ],
       "created_at": "2026-06-23T21:56:32.535708+00:00",
-      "last_escalated_size": 0,
-      "last_escalated_at": null
+      "last_escalated_size": 3,
+      "last_escalated_at": "2026-06-24T13:30:06.127057+00:00",
+      "picks_file": "picks/picks-2026-06-24-1330.md",
+      "why_text": "Pharrell Williams continues to redefine what luxury menswear can look like, this time fusing surf culture's laid-back physicality with the ornate, maximalist energy of the dandy \u2014 a pairing that shouldn't work but absolutely does under his vision. It's a signal that high fashion is still leaning into subcultural hybridity rather than retreating to classic codes, and Pharrell's LV is increasingly the most culturally ambitious runway on the calendar. After three collections, he's not just holding the post-Abloh torch \u2014 he's burning in a completely different direction with it.",
+      "last_escalated_item_ids": [
+        "c8a51a8a878f",
+        "68d30d45fd15",
+        "cbaeb22f3805"
+      ]
     },
     "ae189a2df0abaa64": {
       "topic": "Giannis Antetokounmpo Traded to Heat NBA Draft Eve",
       "item_ids": [
         "aac2650fe68a",
         "0861e4802471",
-        "5cc06336c8c0"
+        "5cc06336c8c0",
+        "eb0b7a3982bb"
       ],
       "created_at": "2026-06-23T21:56:32.535708+00:00",
       "last_escalated_size": 3,
@@ -3194,7 +3210,529 @@
       "created_at": "2026-06-24T11:15:07.662257+00:00",
       "last_escalated_size": 0,
       "last_escalated_at": null
+    },
+    "9711d4e2da47c727": {
+      "topic": "Hypebeast x Citizen 20th Anniversary Chromed Watch",
+      "item_ids": [
+        "3fd7b455ee59"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d7d0796bdb773736": {
+      "topic": "N\u00d2MARHYTHM TEXTILE SS27 Collection",
+      "item_ids": [
+        "9ca3b9156b51"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e78230df3cb279dc": {
+      "topic": "adidas Adistar Franchise Tech-Runner Evolution",
+      "item_ids": [
+        "ef4266f280c6"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "537ef3ed96d78790": {
+      "topic": "Vintage Sportswear Expert Greatest Finds",
+      "item_ids": [
+        "18fa50631d8e"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "152f8f2d55ee8511": {
+      "topic": "Prime Day Swim Trunk Deals 2026",
+      "item_ids": [
+        "c219de860d73"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "baa233e61243f9d2": {
+      "topic": "Prime Day Outdoor Gear Shopping Guide",
+      "item_ids": [
+        "de23a8068251"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4ba8b78d783d587c": {
+      "topic": "Doja Cat AI Song Leak Denial Response",
+      "item_ids": [
+        "a2db50d684e0"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e3c6cebe3dc18683": {
+      "topic": "Shari Redstone Sipur Appoints Ludovic Attal President",
+      "item_ids": [
+        "f0678795b6fa"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "595f7dd8a5af0dd1": {
+      "topic": "Location Managers Guild International Awards 2026 Nominees",
+      "item_ids": [
+        "fed026d1ff6e"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "315bbac3bb5fd300": {
+      "topic": "Priyanka Chopra Jonas Obsession Hollywood Barriers Commentary",
+      "item_ids": [
+        "997f73c8d286"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5954c060eb1157aa": {
+      "topic": "King of the Hill Season 15 Annecy Screening",
+      "item_ids": [
+        "929bd823d795"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ec88f6f99befdaea": {
+      "topic": "Phoebe Bridgers New Album Long Weekend",
+      "item_ids": [
+        "ea91cad68de1"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "876d6868117ddc74": {
+      "topic": "PJ Harvey New Song Voyager",
+      "item_ids": [
+        "aaeb8759524c"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ae7bf7d2e4d2e72f": {
+      "topic": "Clive Davis Grammy Multi-Genre Winners Analysis",
+      "item_ids": [
+        "4311e7754a58"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a2400e6c727be313": {
+      "topic": "Hollywood Vocal Coach Ariana Grande Timoth\u00e9e Chalamet Training",
+      "item_ids": [
+        "9ee1c89e1b23"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8fe80c1a936aa68a": {
+      "topic": "WHAM 10 Days In China Documentary Film",
+      "item_ids": [
+        "20a8f32e9fa9"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "cfea7ec8087fad42": {
+      "topic": "PJ Harvey Voyager Spacecraft Single",
+      "item_ids": [
+        "b7a17b4ce818"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "ee5e86c9dc5bcaaa": {
+      "topic": "Phoebe Bridgers Long Weekend Album",
+      "item_ids": [
+        "55456adb82bd"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "236c731b69cdb8e5": {
+      "topic": "Netflix Brad Bird Ray Gunn Annecy Announcement",
+      "item_ids": [
+        "4c925b03e05a"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "76d1a3a816893a75": {
+      "topic": "Netflix Mary Beth Barone Galaxy Brain Stand-Up Special",
+      "item_ids": [
+        "d8b030b7d3da"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "656981e5ed22a465": {
+      "topic": "Location Managers Guild International Awards Nominees 2026",
+      "item_ids": [
+        "9bb8aa59d56c"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "69183ebf61a9e40a": {
+      "topic": "Amazon MGM Studios Ludovic Attal Sipur President",
+      "item_ids": [
+        "d1b3de7bbc4e"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "71c8a4a75d61c176": {
+      "topic": "Netflix Ghostbusters Night Shift Annecy Announcement",
+      "item_ids": [
+        "70d9fd5276fc"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4300b1e3ef3ed1d5": {
+      "topic": "Google Home Speaker Review 2026",
+      "item_ids": [
+        "c667d94dc95c"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f73d4e7194c1cce6": {
+      "topic": "Qualcomm Acquires Modular Chip Startup $4 Billion",
+      "item_ids": [
+        "265a2cc2bd52"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5f5201ef51357dbb": {
+      "topic": "Prime Day Board Games Deal Guide",
+      "item_ids": [
+        "1bda14d41ebf"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "bccd0248f60d2ce6": {
+      "topic": "Prime Day 2026 Gear Deals Comprehensive Guide",
+      "item_ids": [
+        "84963f032a21"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "00244c799997e309": {
+      "topic": "Slate Auto Electric Truck $24,950 Starting Price",
+      "item_ids": [
+        "ce403666bde6"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "2c8897512c27e341": {
+      "topic": "Google Home Speaker Gemini Update Review",
+      "item_ids": [
+        "2ecfc5b34536"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "04bf347671937899": {
+      "topic": "Trump Iran Strait of Hormuz Tolls Claim",
+      "item_ids": [
+        "e2ccaa5c2f74"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "be0e9405148f8828": {
+      "topic": "Treasury Secretary Bessent 3% GDP Growth Forecast",
+      "item_ids": [
+        "9ad53e15d2d7"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "98d505f0f3f683e9": {
+      "topic": "OpenAI First Chip Broadcom Partnership Full Stack",
+      "item_ids": [
+        "c980c4367d0a"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fea71530c1fdd46d": {
+      "topic": "Wendy's Stock Meme Trader Rally",
+      "item_ids": [
+        "cff633e0fb2d"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "287403c0f4b6e047": {
+      "topic": "Qualcomm Modular AI Startup Acquisition Deal",
+      "item_ids": [
+        "63d942fb2fac"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3daaf5eb04ab9f49": {
+      "topic": "Fort Technology Logia USA Data-Center Power Backup Deal",
+      "item_ids": [
+        "f0633b3babce"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "37ea75f292fd5a3b": {
+      "topic": "MIT Technology Review Engineering Issue",
+      "item_ids": [
+        "f4f7bf78cfe8"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "e0e129f89b82fa63": {
+      "topic": "IBM AI Human Impact Workplace Redesign",
+      "item_ids": [
+        "f832d3a38cab"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "afad7d21910d9d41": {
+      "topic": "St. Bonaventure University Computer Science Programs Expansion",
+      "item_ids": [
+        "b2386b56abf1"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "a36ebb1e0186917f": {
+      "topic": "Micron Technology Computing Power Demand Growth",
+      "item_ids": [
+        "0c56d96e8755"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "4ca4257d76dca9c9": {
+      "topic": "Jaeger-LeCoultre Polaris Date 40mm Watch",
+      "item_ids": [
+        "3bc810168df8"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "03574c470eddab9c": {
+      "topic": "ESPN NBA Draft Jay Williams Motorcycle Crash Broadcast Awkwardness",
+      "item_ids": [
+        "a0fdc9902fa1"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "6eb0c545f2a133a6": {
+      "topic": "Slate EV Pickup Truck $24,950 Price Point",
+      "item_ids": [
+        "10424d998e8d"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c27e775f5dfe624c": {
+      "topic": "Gold Price Drop US Dollar Strength Fed Hawkish Pricing",
+      "item_ids": [
+        "27eb871a27a0"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "0d024f66bc062c97": {
+      "topic": "Market Jitters Investment Pause Trend",
+      "item_ids": [
+        "dc04d33694f8"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "3e90f2e9e2de6457": {
+      "topic": "Sinkhole Closure Business Support Relief",
+      "item_ids": [
+        "261271e5c089"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d07cf4def4e640d6": {
+      "topic": "Premium Bus Service Dallas Oklahoma City Business Travel",
+      "item_ids": [
+        "332b06d280e6"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "fe1d9b41c2e63baa": {
+      "topic": "AI Measurement Business ROI Impact Study",
+      "item_ids": [
+        "d2833845d0d5"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "d777c2b32c6465f0": {
+      "topic": "Upstate Business Early-Morning Robbery Investigation",
+      "item_ids": [
+        "390e4eab62a0"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "328978c3fe5a78b4": {
+      "topic": "German Business Confidence Iran Tensions Easing",
+      "item_ids": [
+        "662eea7d47ba"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "9bed7043c41056bc": {
+      "topic": "Nike Names David Denton Pfizer CFO as New CFO",
+      "item_ids": [
+        "8239ba84ff26"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "21607cfbfa7fa635": {
+      "topic": "Taktile Raises $110 Million Goldman Sachs Tiger Global",
+      "item_ids": [
+        "4393d9246c27"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "7a2d33aa69f1f6d9": {
+      "topic": "Bitcoin Ethereum Price Decline June 2026",
+      "item_ids": [
+        "65b3d8c505f2"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "8e8eab2bd4ed439d": {
+      "topic": "Climate Finance Allocation Fragility Conflict Analysis",
+      "item_ids": [
+        "e0aad2c0258f"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "c54f9b079dee198d": {
+      "topic": "Bolivia Forest Watershed Sustainable Finance Protection",
+      "item_ids": [
+        "f846370c0b98"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "f0f6bc58d5325106": {
+      "topic": "Prime Day Car Deals Shopping Guide 2026",
+      "item_ids": [
+        "e74abd26614e"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "78b77065e01987aa": {
+      "topic": "Ferrari New Marketing Boss BMW Italy CEO",
+      "item_ids": [
+        "d7534a207274"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "851cf66926ffd3e8": {
+      "topic": "MENA Broadcast Media Technology Satellite News",
+      "item_ids": [
+        "a5e597af9d89"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
+    },
+    "5d4fa1fd8b05f5a3": {
+      "topic": "LONGi BMW Berlin Marathon 2026 Official Partner",
+      "item_ids": [
+        "d3ecd7334f3c"
+      ],
+      "created_at": "2026-06-24T13:30:43.667069+00:00",
+      "last_escalated_size": 0,
+      "last_escalated_at": null
     }
   },
-  "last_checked": "2026-06-24T11:15:41.084035+00:00"
+  "last_checked": "2026-06-24T13:30:55.377742+00:00"
 }
