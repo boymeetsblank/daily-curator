@@ -516,6 +516,47 @@
       color: var(--ink-4);
     }
 
+    /* ── Card enter animation ───────────────────────────────── */
+    @keyframes card-enter {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .card-entering {
+      animation: card-enter 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    /* ── Infinite scroll sentinel ────────────────────────────── */
+    .feed-sentinel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 44px 0;
+    }
+    .sentinel-dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--ink-4);
+      animation: dot-bounce 1.1s ease-in-out infinite;
+    }
+    .sentinel-dot:nth-child(2) { animation-delay: 0.18s; }
+    .sentinel-dot:nth-child(3) { animation-delay: 0.36s; }
+    @keyframes dot-bounce {
+      0%, 60%, 100% { transform: translateY(0);    opacity: 0.3; }
+      30%            { transform: translateY(-4px); opacity: 1;   }
+    }
+
+    /* ── End of feed ─────────────────────────────────────────── */
+    .feed-end {
+      text-align: center;
+      padding: 36px 0 72px;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      color: var(--ink-4);
+    }
+
     /* ── Mobile ──────────────────────────────────────────────── */
     @media (max-width: 400px) {
       .hero-card    { height: 248px; }
@@ -564,8 +605,11 @@
     const VOTE_TOKEN = '__VOTE_TOKEN__';
 
     /* ── State ─────────────────────────────────────────────── */
-    let allPicks     = [];
-    let activeFilter = 'all';
+    let allPicks      = [];
+    let activeFilter  = 'all';
+    let renderedCount = 0;
+    const PAGE_SIZE   = 50;
+    let iObserver     = null;
 
     /* ── Helpers ───────────────────────────────────────────── */
 
@@ -678,11 +722,13 @@
 </a>`;
     }
 
-    function listCard(p) {
+    function listCard(p, entering, delay) {
       const hook   = firstHook(p.angle) || p.title;
       const color  = warm(p.title);
       const scoreC = p.score >= 7 ? 'score-hi' : 'score-lo';
       const t      = ago(p.runDate, p.runTime);
+      const aClass = entering ? ' card-entering' : '';
+      const aStyle = (entering && delay) ? ` style="animation-delay:${delay}ms"` : '';
 
       const thumbEl = `
 <div class="list-thumb" style="background:${color}">
@@ -694,7 +740,7 @@
         : '';
 
       return `
-<a class="list-card" href="${esc(p.link||'#')}" target="_blank" rel="noopener noreferrer" aria-label="${esc(hook)}">
+<a class="list-card${aClass}"${aStyle} href="${esc(p.link||'#')}" target="_blank" rel="noopener noreferrer" aria-label="${esc(hook)}">
   <div class="list-main">
     <div class="list-body">
       <div class="list-meta-row">
@@ -734,8 +780,50 @@
       }
     }
 
+    /* ── Infinite scroll ────────────────────────────────────── */
+    function attachSentinel() {
+      const feed = document.getElementById('js-feed');
+      const el   = document.createElement('div');
+      el.id        = 'js-sentinel';
+      el.className = 'feed-sentinel';
+      el.innerHTML = '<div class="sentinel-dot"></div><div class="sentinel-dot"></div><div class="sentinel-dot"></div>';
+      feed.appendChild(el);
+
+      iObserver = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) appendNextPage();
+      }, { rootMargin: '0px 0px 240px 0px' });
+      iObserver.observe(el);
+    }
+
+    function appendNextPage() {
+      if (iObserver) { iObserver.disconnect(); iObserver = null; }
+
+      const sentinel = document.getElementById('js-sentinel');
+      if (sentinel) sentinel.remove();
+
+      const list  = picks();
+      const batch = list.slice(renderedCount, renderedCount + PAGE_SIZE);
+      if (!batch.length) return;
+
+      const STAGGER = 7;
+      const feed    = document.getElementById('js-feed');
+      batch.forEach((p, i) => {
+        feed.insertAdjacentHTML('beforeend', listCard(p, i < STAGGER, i < STAGGER ? i * 42 : 0));
+      });
+      renderedCount += batch.length;
+
+      if (renderedCount < list.length) {
+        attachSentinel();
+      } else {
+        feed.insertAdjacentHTML('beforeend', '<div class="feed-end">· · ·</div>');
+      }
+    }
+
     /* ── Render ─────────────────────────────────────────────── */
     function render() {
+      if (iObserver) { iObserver.disconnect(); iObserver = null; }
+      renderedCount = 0;
+
       const feed = document.getElementById('js-feed');
       const list = picks();
 
@@ -746,21 +834,29 @@
 
       document.getElementById('js-meta').textContent = `${list.length} picks`;
 
-      let html = heroCard(list[0]);
+      const batch = list.slice(0, PAGE_SIZE);
+      let html = heroCard(batch[0]);
 
-      if (list.length > 1) {
+      if (batch.length > 1) {
         html += `<div class="section-header"><span class="section-title">More Stories</span></div>`;
 
         // 2-up mini grid (picks 1 & 2)
         html += `<div class="mini-grid">`;
-        list.slice(1, 3).forEach(p => { html += miniCard(p); });
+        batch.slice(1, 3).forEach(p => { html += miniCard(p); });
         html += `</div>`;
 
         // List cards (picks 3+)
-        list.slice(3).forEach(p => { html += listCard(p); });
+        batch.slice(3).forEach(p => { html += listCard(p); });
       }
 
+      renderedCount = batch.length;
       feed.innerHTML = html;
+
+      if (renderedCount < list.length) {
+        attachSentinel();
+      } else {
+        feed.insertAdjacentHTML('beforeend', '<div class="feed-end">· · ·</div>');
+      }
     }
 
     /* ── Data loading ───────────────────────────────────────── */
@@ -770,15 +866,13 @@
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
 
-        // Flatten all runs into a single picks list, newest-first, capped at 100 picks
+        // Flatten all runs into a single picks list, newest-first
         const runs = data.runs || [];
         allPicks = [];
         for (const run of runs) {
           for (const pick of (run.picks || [])) {
             allPicks.push({ ...pick, runDate: run.date, runTime: run.time });
-            if (allPicks.length >= 100) break;
           }
-          if (allPicks.length >= 100) break;
         }
 
         if (runs[0]) {

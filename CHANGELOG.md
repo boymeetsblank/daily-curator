@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-24] Feature: infinite scroll — 50 picks per page
+
+Feed now loads 50 picks at a time. An IntersectionObserver on a sentinel element at the bottom fires when the user nears the end, appending the next 50 picks without a page reload. Newly added cards animate in with a staggered `translateY` + fade (first 7 cards, 42ms apart). Three bouncing dots mark the sentinel while the next batch is pending. A `· · ·` end-of-feed marker appears when all picks are exhausted. The 100-pick cap on data loading is removed — all picks across all runs are now available for pagination.
+
 ## [2026-06-24] Fix: feed now shows 6s and 7s, not just 8s
 
 The JS was loading only the 10 most recent *runs*, but each live cluster pick is its own file — so 10 runs = 10 single-pick files, all scored 8. Changed to load all runs and cap at 100 total picks instead, so multi-pick regular-curator runs (with 6s and 7s) are always included.
