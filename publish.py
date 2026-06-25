@@ -20,7 +20,9 @@ from datetime import datetime, timezone
 import db
 
 FEED_THRESHOLD = 6
-FEED_LIMIT = 50
+FEED_LIMIT = 200
+FEED_PAGE_SIZE = 20   # cards rendered on first load; rest streamed in on scroll
+FEED_SOURCE_CAP = 0.30  # no single source > 30% of feed items; tune freely (0–1)
 
 # ---------------------------------------------------------------------------
 # Pages setup detection
@@ -152,11 +154,37 @@ def _score_label(score: int) -> str:
     return "notable"
 
 
+def _render_card(item: dict, now: datetime) -> str:
+    """Render a single feed card as an HTML string."""
+    score = item.get("score", 0)
+    hook = _esc(item.get("hook") or item.get("title") or "")
+    why = _esc(item.get("why") or "")
+    title = _esc(item.get("title") or "")
+    url = item.get("url") or "#"
+    source_display = _esc(_source_from_url(url))
+    label = _score_label(score)
+    age = _rel_time(item.get("published_at") or item.get("fetched_at"), now)
+    return f"""    <article class="card">
+      <div class="card-meta">
+        <span class="score score-{score}">{score}</span>
+        <span class="label">{label}</span>
+        <span class="source">{source_display}{" · " + age if age else ""}</span>
+      </div>
+      <a class="hook" href="{url}" target="_blank" rel="noopener noreferrer">{hook}</a>
+      {f'<p class="why">{why}</p>' if why else ''}
+      {f'<p class="title-sub">{title}</p>' if title and title != hook else ''}
+    </article>"""
+
+
 def generate_html(items: list[dict]) -> str:
     """
     Build a self-contained static HTML page from a list of scored feed items.
     All CSS is inline. No external dependencies, no JS framework.
     Matches Blank aesthetic: system font, 1px borders, no gradients.
+
+    The first FEED_PAGE_SIZE cards are rendered as static HTML for instant load.
+    Remaining items are embedded as JSON and revealed in batches via
+    IntersectionObserver as the user scrolls.
     """
     now = datetime.now(timezone.utc)
     updated = f"{now.strftime('%B')} {now.day}, {now.year} at {now.strftime('%I').lstrip('0') or '12'}:{now.strftime('%M %p')} UTC"
@@ -171,31 +199,27 @@ def generate_html(items: list[dict]) -> str:
         f"{s}×{dist[s]}" for s in sorted(dist.keys(), reverse=True)
     )
 
-    cards_html = []
-    for item in items:
-        score = item.get("score", 0)
-        hook = _esc(item.get("hook") or item.get("title") or "")
-        why = _esc(item.get("why") or "")
-        title = _esc(item.get("title") or "")
-        url = item.get("url") or "#"
-        source_display = _esc(_source_from_url(url))
-        label = _score_label(score)
-        age = _rel_time(item.get("published_at") or item.get("fetched_at"), now)
+    # First batch: server-rendered for instant display
+    first_batch = items[:FEED_PAGE_SIZE]
+    deferred = items[FEED_PAGE_SIZE:]
 
-        card = f"""
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-{score}">{score}</span>
-        <span class="label">{label}</span>
-        <span class="source">{source_display}{" · " + age if age else ""}</span>
-      </div>
-      <a class="hook" href="{url}" target="_blank" rel="noopener noreferrer">{hook}</a>
-      {f'<p class="why">{why}</p>' if why else ''}
-      {f'<p class="title-sub">{title}</p>' if title and title != hook else ''}
-    </article>"""
-        cards_html.append(card)
+    initial_cards = "\n".join(_render_card(item, now) for item in first_batch)
 
-    cards = "\n".join(cards_html)
+    # Embed deferred items as JSON; the page JS will render them on scroll
+    deferred_json = json.dumps(
+        [
+            {
+                "score": i.get("score", 0),
+                "hook": i.get("hook") or i.get("title") or "",
+                "why": i.get("why") or "",
+                "title": i.get("title") or "",
+                "url": i.get("url") or "#",
+                "published_at": i.get("published_at") or i.get("fetched_at") or "",
+            }
+            for i in deferred
+        ],
+        ensure_ascii=False,
+    )
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -356,6 +380,12 @@ def generate_html(items: list[dict]) -> str:
       margin-top: 6px;
     }}
 
+    /* ── Infinite scroll sentinel ── */
+    #sentinel {{
+      height: 1px;
+      margin-bottom: 40px;
+    }}
+
     /* ── Footer ── */
     footer {{
       border-top: 1px solid var(--border);
@@ -382,12 +412,114 @@ def generate_html(items: list[dict]) -> str:
   </header>
 
   <main>
-{cards}
+{initial_cards}
+    <div id="sentinel"></div>
   </main>
 
   <footer>
     Scored and curated by the Blank engine. Minimum score {FEED_THRESHOLD}/10 to surface.
   </footer>
+
+  <script id="feed-data" type="application/json">{deferred_json}</script>
+  <script>
+    (function () {{
+      var ITEMS = JSON.parse(document.getElementById('feed-data').textContent);
+      var offset = 0;
+      var PAGE = {FEED_PAGE_SIZE};
+      var main = document.querySelector('main');
+      var sentinel = document.getElementById('sentinel');
+
+      function esc(s) {{
+        return String(s || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }}
+
+      function scoreLabel(n) {{
+        if (n >= 9) return 'essential';
+        if (n >= 8) return 'strong';
+        if (n === 7) return 'solid';
+        return 'notable';
+      }}
+
+      function sourceFromUrl(url) {{
+        try {{
+          var host = new URL(url).hostname.replace(/^www\\./, '');
+          var parts = host.split('.');
+          if (parts.length >= 2) {{
+            return (['co', 'com'].indexOf(parts[parts.length - 2]) !== -1 && parts.length >= 3)
+              ? parts[parts.length - 3]
+              : parts[parts.length - 2];
+          }}
+          return host;
+        }} catch (e) {{ return ''; }}
+      }}
+
+      function relTime(iso) {{
+        if (!iso) return '';
+        var diff = Math.floor((Date.now() - new Date(iso).getTime()) / 1000);
+        if (diff < 0) return '';
+        if (diff < 60) return 'just now';
+        if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+        if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+        return Math.floor(diff / 86400) + 'd ago';
+      }}
+
+      function renderCard(item) {{
+        var score = item.score || 0;
+        var hook = esc(item.hook || item.title || '');
+        var why = esc(item.why || '');
+        var title = esc(item.title || '');
+        var url = item.url || '#';
+        var src = esc(sourceFromUrl(url));
+        var label = scoreLabel(score);
+        var age = relTime(item.published_at);
+        var agePart = age ? ' · ' + age : '';
+        var whyPart = why ? '<p class="why">' + why + '</p>' : '';
+        var titlePart = (title && title !== hook) ? '<p class="title-sub">' + title + '</p>' : '';
+        return '<article class="card">'
+          + '<div class="card-meta">'
+          + '<span class="score score-' + score + '">' + score + '</span>'
+          + '<span class="label">' + label + '</span>'
+          + '<span class="source">' + src + agePart + '</span>'
+          + '</div>'
+          + '<a class="hook" href="' + url + '" target="_blank" rel="noopener noreferrer">' + hook + '</a>'
+          + whyPart + titlePart
+          + '</article>';
+      }}
+
+      function loadMore() {{
+        var batch = ITEMS.slice(offset, offset + PAGE);
+        if (!batch.length) {{
+          observer.disconnect();
+          sentinel.style.display = 'none';
+          return;
+        }}
+        var frag = document.createDocumentFragment();
+        var tmp = document.createElement('div');
+        tmp.innerHTML = batch.map(renderCard).join('');
+        while (tmp.firstChild) frag.appendChild(tmp.firstChild);
+        main.insertBefore(frag, sentinel);
+        offset += batch.length;
+        if (offset >= ITEMS.length) {{
+          observer.disconnect();
+          sentinel.style.display = 'none';
+        }}
+      }}
+
+      var observer = new IntersectionObserver(function (entries) {{
+        if (entries[0].isIntersecting) loadMore();
+      }}, {{ rootMargin: '300px' }});
+
+      if (ITEMS.length > 0) {{
+        observer.observe(sentinel);
+      }} else {{
+        sentinel.style.display = 'none';
+      }}
+    }})();
+  </script>
 </body>
 </html>"""
 
@@ -459,7 +591,7 @@ def run_publish(
     out_path: str = None,
 ) -> None:
     # 1. Pull the feed
-    items = db.get_feed(min_score=FEED_THRESHOLD, limit=FEED_LIMIT)
+    items = db.get_feed(min_score=FEED_THRESHOLD, limit=FEED_LIMIT, max_source_share=FEED_SOURCE_CAP)
     if not items:
         print("No scored items in the feed (min_score=6). Run score.py first.")
         return

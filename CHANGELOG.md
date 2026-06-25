@@ -4,6 +4,26 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-24] Fix: Remove DEFAULT_SOURCES auto-seeding; purge BBC test data
+
+Removed `DEFAULT_SOURCES` list and `seed_sources()` helper from `ingest.py`. Removed the `ingest.seed_sources()` call from `run_pipeline.py` that was re-activating test seeds (BBC, TechCrunch, Reddit r/popular, Pitchfork News) on every pipeline run. Sources are now managed exclusively via `sources.json` import. Purged all 52 BBC News World items from blank.db (scores, triage rows, and items deleted). BBC source (id=1) confirmed inactive. TechCrunch (id=2) and Reddit r/popular (id=3) remain active per user request.
+
+## [2026-06-24] Feature: Source-balanced feed assembly
+
+Added `_balance_feed()` helper and `max_source_share` parameter to `get_feed()` in `db.py`. Feed candidates are now pulled in bulk (5× the target limit), sorted score DESC, then passed through a greedy capping pass: each source may claim at most `round(limit × max_source_share)` slots. Items that exceed the cap are deferred and appended in score order after the main pass — they still appear in the feed, just below less-dominant sources. High-scoring stories from any source are never suppressed. Added `FEED_SOURCE_CAP = 0.30` constant in `publish.py` to make the threshold easy to tune. `get_feed()` prints a before/after source-distribution report to stdout on every call so the effect is visible in logs. Also changed the base sort from `scored_at DESC` to `score DESC, scored_at DESC` so score is the true primary signal.
+
+## [2026-06-24] Fix: Prevent Google News articles with no pubDate from showing stale ages
+
+When a Google News RSS entry has no `pubDate` (common with `site:` search feeds), `ingest.py` now substitutes the current fetch time as `published_at` instead of leaving it `None`. This ensures the 48-hour backlog cutoff always fires and articles never display a misleading age like "1962d ago". Also changed `get_feed()` in `db.py` to filter by `fetched_at` instead of `COALESCE(published_at, fetched_at)`, so even articles with an old stored `published_at` age out of the feed 48 hours after they were ingested.
+
+## [2026-06-23] Feature: Infinite scroll feed (up to 200 items)
+
+Increased `FEED_LIMIT` from 50 → 200 in `publish.py`. The first 20 cards are now server-rendered as static HTML for instant load; remaining items are embedded as a JSON blob in the page. An `IntersectionObserver` on a sentinel element at the bottom of the list loads the next 20 cards each time the user scrolls to the end — no extra network requests, works on the static GitHub Pages site. Added `FEED_PAGE_SIZE = 20` constant and extracted `_render_card()` helper so the Python and JS card renderers stay structurally in sync.
+
+## [2026-06-23] Fix: Old articles (1000+ days) surfacing in feed
+
+Two bugs allowed ancient articles into the feed. **Bug 1 (`ingest.py`):** The 48-hour age cutoff was gated behind a `first_poll` check, so it only ran when a source was first added. Subsequent polls accepted any article regardless of age. Fixed by removing the `first_poll` guard — the cutoff now applies on every poll. **Bug 2 (`db.py`):** `get_feed()` had no age filter; it returned any scored item with score ≥ 6, no matter how old. Fixed by adding `AND COALESCE(i.published_at, i.fetched_at) >= ?` (48-hour cutoff) to the WHERE clause. These two fixes together mean old articles are rejected at ingest and also blocked at the feed query as a safety net.
+
 ## [2026-06-22] New: GitHub Actions cron + pipeline orchestrator
 
 Created `run_pipeline.py` — orchestrates the full cascade (ingest → triage → score → publish) with per-stage error isolation. Each stage is wrapped so failures log cleanly and later stages still run where possible. Publish runs with `no_push=True`; git is handled by the workflow. Created `.github/workflows/blank.yml` — new separate workflow (does NOT touch old daily_curator.yml) that runs every 10 minutes + workflow_dispatch, installs feedparser + anthropic, runs the pipeline, then commits `blank.db` + `index.html` back to main with a timestamped message. Concurrency group with `cancel-in-progress: false` prevents simultaneous DB writes. Committed `blank.db` (97 items, 84 scored) as starting state so the first cron run builds on existing data.

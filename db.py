@@ -8,7 +8,7 @@ Initialize with init_db(); all other functions assume the DB exists.
 import hashlib
 import json
 import sqlite3
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from typing import Optional
 
 DB_PATH = "blank.db"
@@ -354,26 +354,105 @@ def get_kill_pile(since: str, db_path: str = DB_PATH) -> list[dict]:
         return [dict(r) for r in rows]
 
 
-def get_feed(min_score: int = 6, limit: int = 20, db_path: str = DB_PATH) -> list[dict]:
+def _balance_feed(
+    items: list[dict],
+    limit: int,
+    max_source_share: float,
+) -> list[dict]:
     """
-    Return scored items at or above min_score, newest first.
-    This is the data source for the public feed.
+    Greedy source-capping pass over a score-sorted candidate list.
+
+    Each source may claim at most round(limit * max_source_share) slots.
+    Items that exceed a source's cap are deferred and appended in score
+    order after the main pass — so they still appear in the feed, just
+    below less-dominant sources.  High-scoring stories from any source
+    are never suppressed; only the long tail of mid-scoring items from a
+    single dominant source gets pushed down.
     """
+    cap = max(1, round(limit * max_source_share))
+    accepted: list[dict] = []
+    deferred: list[dict] = []
+    counts: dict[int, int] = {}
+
+    for item in items:
+        src = item["source_id"]
+        if counts.get(src, 0) < cap:
+            accepted.append(item)
+            counts[src] = counts.get(src, 0) + 1
+        else:
+            deferred.append(item)
+
+    return (accepted + deferred)[:limit]
+
+
+def get_feed(
+    min_score: int = 6,
+    limit: int = 20,
+    max_source_share: float = 0.30,
+    db_path: str = DB_PATH,
+) -> list[dict]:
+    """
+    Return scored items at or above min_score, balanced across sources.
+
+    Ranking: score DESC (primary), scored_at DESC (tiebreaker).
+    Balancing: no single source may occupy more than max_source_share of
+    the returned items (default 30%).  A 5x candidate pool is fetched
+    first so the balancer has room to reorder without running out of items.
+
+    Prints a before/after source-distribution report to stdout on each call
+    so the effect of the cap is visible in logs and easy to tune.
+    """
+    cutoff = (datetime.now(timezone.utc) - timedelta(hours=48)).isoformat()
+    # Pull a wide candidate pool so balancing has room to work.
+    candidate_limit = min(limit * 5, 500)
+
     with _conn(db_path) as con:
         rows = con.execute(
             """
             SELECT i.id, i.url, i.title, i.description, i.published_at,
                    i.fetched_at, i.raw_engagement,
-                   s.score, s.criteria, s.why, s.hook, s.scored_at
+                   s.score, s.criteria, s.why, s.hook, s.scored_at,
+                   src.id   AS source_id,
+                   src.name AS source_name
             FROM scores s
-            JOIN items i ON i.id = s.item_id
+            JOIN items i   ON i.id  = s.item_id
+            JOIN sources src ON src.id = i.source_id
             WHERE s.score >= ?
-            ORDER BY s.scored_at DESC
+              AND i.fetched_at >= ?
+            ORDER BY s.score DESC, s.scored_at DESC
             LIMIT ?
             """,
-            (min_score, limit),
+            (min_score, cutoff, candidate_limit),
         ).fetchall()
-        return [dict(r) for r in rows]
+
+    candidates = [dict(r) for r in rows]
+
+    # ── Before-balancing distribution (top 50 candidates by score) ────────────
+    before: dict[str, int] = {}
+    for item in candidates[:50]:
+        before[item["source_name"]] = before.get(item["source_name"], 0) + 1
+
+    print(f"\n-- Feed assembly: {len(candidates)} candidates, score >= {min_score}, last 48 h --")
+    print("  BEFORE balancing (top 50 by score):")
+    for name, n in sorted(before.items(), key=lambda x: -x[1]):
+        print(f"    {n:>3}  {name}")
+
+    # ── Balance ───────────────────────────────────────────────────────────────
+    balanced = _balance_feed(candidates, limit, max_source_share)
+
+    # ── After-balancing distribution ──────────────────────────────────────────
+    after: dict[str, int] = {}
+    for item in balanced:
+        after[item["source_name"]] = after.get(item["source_name"], 0) + 1
+
+    cap = max(1, round(limit * max_source_share))
+    print(f"  AFTER balancing (max_source_share={max_source_share:.0%}, cap={cap}/source,"
+          f" returning {len(balanced)}):")
+    for name, n in sorted(after.items(), key=lambda x: -x[1]):
+        print(f"    {n:>3}  {name}")
+    print()
+
+    return balanced
 
 
 # ---------------------------------------------------------------------------

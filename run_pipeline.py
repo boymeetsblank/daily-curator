@@ -68,10 +68,11 @@ def main() -> None:
     print(f"\nBlank Engine — {started_at.strftime('%Y-%m-%d %H:%M UTC')}")
     print("=" * 52)
 
-    # Ensure DB schema exists and default sources are seeded
+    # Ensure DB schema exists. Sources are managed via sources.json import,
+    # not auto-seeded here — removing seed_sources() prevents test defaults
+    # from being re-activated on every run.
     db.init_db()
     print("DB initialized.")
-    ingest.seed_sources()
     print()
 
     stage_log = {}

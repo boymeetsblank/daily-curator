@@ -17,33 +17,6 @@ import feedparser
 
 import db
 
-# ---------------------------------------------------------------------------
-# Default seed sources — a mix of fast (news wire) and slower (culture/tech)
-# ---------------------------------------------------------------------------
-
-DEFAULT_SOURCES = [
-    {
-        "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
-        "name": "BBC News World",
-        "type": "rss",
-    },
-    {
-        "url": "https://techcrunch.com/feed/",
-        "name": "TechCrunch",
-        "type": "rss",
-    },
-    {
-        "url": "https://www.reddit.com/r/popular.rss",
-        "name": "Reddit r/popular",
-        "type": "reddit",
-    },
-    {
-        "url": "https://pitchfork.com/rss/news/feed.xml",
-        "name": "Pitchfork News",
-        "type": "rss",
-    },
-]
-
 # Items older than this are skipped when a source is polled for the first time
 BACKLOG_CUTOFF_HOURS = 48
 
@@ -97,7 +70,6 @@ def poll_source(source: dict, db_path: str = db.DB_PATH) -> dict:
     """
     source_id = source["id"]
     source_url = source["url"]
-    first_poll = source["last_polled_at"] is None
     cutoff = datetime.now(timezone.utc) - timedelta(hours=BACKLOG_CUTOFF_HOURS)
 
     new_count = 0
@@ -135,17 +107,22 @@ def poll_source(source: dict, db_path: str = db.DB_PATH) -> dict:
 
             published_at = _parse_date(entry)
 
-            # On first poll, skip entries older than BACKLOG_CUTOFF_HOURS
-            if first_poll and published_at:
-                try:
-                    pub_dt = datetime.fromisoformat(published_at)
-                    if pub_dt.tzinfo is None:
-                        pub_dt = pub_dt.replace(tzinfo=timezone.utc)
-                    if pub_dt < cutoff:
-                        skipped_count += 1
-                        continue
-                except Exception:
-                    pass  # unparseable date — include it
+            # When the feed provides no pubDate (common with Google News), treat
+            # the item as published now so it passes the freshness check and
+            # displays a sensible age ("hours ago") rather than a stale date.
+            if published_at is None:
+                published_at = datetime.now(timezone.utc).isoformat()
+
+            # Skip entries older than BACKLOG_CUTOFF_HOURS on every poll
+            try:
+                pub_dt = datetime.fromisoformat(published_at)
+                if pub_dt.tzinfo is None:
+                    pub_dt = pub_dt.replace(tzinfo=timezone.utc)
+                if pub_dt < cutoff:
+                    skipped_count += 1
+                    continue
+            except Exception:
+                pass  # unparseable date — include it
 
             existing_items_before = _count_items(db_path)
             item_id = db.insert_item(
@@ -244,48 +221,16 @@ def poll_all_active(db_path: str = db.DB_PATH) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Seed helper
-# ---------------------------------------------------------------------------
-
-def seed_sources(sources: list[dict] = DEFAULT_SOURCES, db_path: str = db.DB_PATH) -> None:
-    """
-    Add default RSS sources to the DB if not already present.
-    Safe to call repeatedly — upsert_source is idempotent.
-    """
-    for s in sources:
-        sid = db.upsert_source(
-            url=s["url"],
-            name=s["name"],
-            source_type=s["type"],
-            db_path=db_path,
-        )
-        print(f"  seeded source id={sid}  [{s['name']}]")
-
-
-# ---------------------------------------------------------------------------
 # Entrypoint
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
     import sys
-    import sqlite3 as _sqlite3
 
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
     db.init_db()
     print("DB initialized.\n")
-
-    # Seed sources if the table is empty
-    con = _sqlite3.connect(db.DB_PATH)
-    source_count = con.execute("SELECT COUNT(*) FROM sources").fetchone()[0]
-    con.close()
-
-    if source_count == 0:
-        print("No sources found — seeding defaults...")
-        seed_sources()
-        print()
-    else:
-        print(f"Sources already seeded ({source_count} total). Skipping seed.\n")
 
     print("Starting poll...\n")
     t0 = time.time()
