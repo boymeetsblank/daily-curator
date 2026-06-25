@@ -440,13 +440,24 @@
       font-size: 9.5px;
       color: var(--ink-3);
     }
+    .cluster-pill-extra { display: none; }
+    .cluster-strip.expanded .cluster-pill-extra { display: inline-flex; }
+    .cluster-strip.expanded .cluster-more        { display: none; }
     .cluster-expand {
       margin-left: auto;
       font-family: var(--sans);
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 500;
       color: var(--accent);
+      background: none;
+      border: none;
+      padding: 0 2px;
+      cursor: pointer;
+      line-height: 1;
+      flex-shrink: 0;
+      transition: opacity .12s;
     }
+    .cluster-expand:hover { opacity: .7; }
 
     /* ── Trend badge ─────────────────────────────────────────── */
     .trend-badge {
@@ -760,14 +771,17 @@
 
     function clusterStrip(p) {
       const sources = p.cluster_sources || [];
-      const shown   = sources.slice(0, 3);
-      const extra   = sources.length - shown.length;
-      const pills   = shown.map(s => `<span class="cluster-pill">${esc(cleanSrc(s))}</span>`).join('');
-      const more    = extra > 0 ? `<span class="cluster-more">+${extra} more</span>` : '';
+      const extra   = Math.max(0, sources.length - 3);
+      const pills   = sources.map((s, i) =>
+        `<span class="cluster-pill${i >= 3 ? ' cluster-pill-extra' : ''}">${esc(cleanSrc(s))}</span>`
+      ).join('');
+      const more = extra > 0 ? `<span class="cluster-more">+${extra} more</span>` : '';
+      const btn  = extra > 0
+        ? `<button class="cluster-expand" aria-label="Show all sources" aria-expanded="false">↓</button>`
+        : '';
       return `
 <div class="cluster-strip">
-  ${pills}${more}
-  <span class="cluster-expand">↓</span>
+  ${pills}${more}${btn}
 </div>`;
     }
 
@@ -890,6 +904,19 @@
         console.error('Blank: feed load failed:', err);
       }
     }
+
+    /* ── Cluster expand/collapse ───────────────────────────── */
+    document.getElementById('js-feed').addEventListener('click', e => {
+      const btn = e.target.closest('.cluster-expand');
+      if (!btn) return;
+      e.preventDefault();
+      e.stopPropagation();
+      const strip    = btn.closest('.cluster-strip');
+      const expanded = strip.classList.toggle('expanded');
+      btn.textContent = expanded ? '↑' : '↓';
+      btn.setAttribute('aria-expanded', String(expanded));
+      btn.setAttribute('aria-label', expanded ? 'Show fewer sources' : 'Show all sources');
+    });
 
     /* ── Filter pill interaction ────────────────────────────── */
     document.querySelectorAll('.pill[data-f]').forEach(btn => {

@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-24] Fix: cluster expand button now works
+
+Changed the cluster expand trigger from a static `<span>` (no handler) to a `<button>` with event delegation on `#js-feed`. All source pills are now pre-rendered in the DOM (extras marked `.cluster-pill-extra`); CSS toggles their visibility when `.cluster-strip.expanded` is set. Clicking the button stops propagation so the card link doesn't fire, toggles the expanded class, and swaps the arrow between `↓` and `↑`.
+
 ## [2026-06-24] Fix: extract inline images from RSS feeds and Reddit API
 
 `fetch_feed_articles` now extracts `<media:content url>` (MRSS namespace, both Yahoo variants) and `<enclosure url>` from each RSS item and includes an `image` field in the returned article dict. All three Reddit fetch functions (`fetch_reddit_hot_posts`, `fetch_reddit_all_hot`, `fetch_reddit_culture_hot`) now call `_reddit_image(post)` to pull the high-res preview URL (or thumbnail fallback) from Reddit's JSON response. The inline image is preferred in both pick write paths; `_fetch_og_image()` is only called as a fallback when no inline image is available. Added `_reddit_image()` helper that decodes HTML-encoded `&amp;` in Reddit CDN URLs.
