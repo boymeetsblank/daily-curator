@@ -770,14 +770,16 @@
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
 
-        // Flatten the 10 most recent runs into a single picks list
-        const runs = (data.runs || []).slice(0, 10);
+        // Flatten all runs into a single picks list, newest-first, capped at 100 picks
+        const runs = data.runs || [];
         allPicks = [];
-        runs.forEach(run => {
-          (run.picks || []).forEach(pick => {
+        for (const run of runs) {
+          for (const pick of (run.picks || [])) {
             allPicks.push({ ...pick, runDate: run.date, runTime: run.time });
-          });
-        });
+            if (allPicks.length >= 100) break;
+          }
+          if (allPicks.length >= 100) break;
+        }
 
         if (runs[0]) {
           document.getElementById('js-date').textContent = runs[0].display_date;

@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-24] Fix: feed now shows 6s and 7s, not just 8s
+
+The JS was loading only the 10 most recent *runs*, but each live cluster pick is its own file — so 10 runs = 10 single-pick files, all scored 8. Changed to load all runs and cap at 100 total picks instead, so multi-pick regular-curator runs (with 6s and 7s) are always included.
+
 ## [2026-06-24] Fix: og:image enrichment for live cluster picks
 
 Added `_fetch_og_image()` to `breaking_news_check.py` (mirrors the same helper in `daily_curator.py`). Both live pick write paths (single-item escalation and cluster escalation) now fetch the og:image from the primary article URL before writing the picks file, and emit `**Image:** <url>` when one is found. Google News redirect URLs are followed automatically. Live cluster cards in the web feed will now show real article thumbnails instead of placeholder colors.
