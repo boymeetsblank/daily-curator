@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # needed to commit blank.db + index.html back to main
+  contents: write  # needed to commit blank.db back to main
 
 # Only one run at a time. If a run is already active when the next trigger
 # fires, the new run queues and waits (cancel-in-progress: false) so the DB
@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add blank.db index.html
+          git add blank.db
           # Exit cleanly if nothing changed (happens when no new items arrived)
           git diff --staged --quiet && echo "Nothing to commit — skipping." && exit 0
           git commit -m "Engine run $(date -u +'%Y-%m-%d %H:%M UTC')"

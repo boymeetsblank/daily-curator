@@ -4,6 +4,14 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-25] Fix: blank.yml merge conflicts + blank.db feed integration
+
+`blank.yml` no longer commits `index.html` — only `blank.db` is staged per run, eliminating the rebase conflict with the Canvas design. `deploy-pages.yml` now reads scored items directly from `blank.db` (scores ≥ 6, last 72 hours), groups them into synthetic hour-batch runs, and merges them into `picks_data.json` alongside picks/*.md data — so the Canvas feed displays new-engine articles.
+
+## [2026-06-25] Fix: cluster expand arrow always visible on cluster strips
+
+Expand `↓` button was only rendered when a cluster had 4+ listed sources (extra > 0). Most clusters have 2–3 listed sources so the button never appeared. Now the button always renders on any cluster strip. Added a `.cluster-total` span (shown on expand) that displays "{N} sources total" when `cluster_size` exceeds the number of listed pills.
+
 ## [2026-06-24] Fix: image support in continuous pipeline (db → ingest → publish)
 
 Added `image_url TEXT` column to `items` table in `db.py`. `init_db()` runs `ALTER TABLE items ADD COLUMN image_url TEXT` as a migration so existing `blank.db` files upgrade automatically. `insert_item()` now accepts `image_url`. `get_feed()` now includes `image_url` in its SELECT. In `ingest.py`, each feedparser entry is checked for `media_content` → `enclosures` → `media_thumbnail` (in that order) to extract an inline image URL, which is passed to `insert_item()`. In `publish.py`, `_render_card()` renders a `<img class="card-img">` when an image is present, the deferred JSON includes `image_url`, and the lazy-load `renderCard()` JS function does the same.
