@@ -90,6 +90,12 @@ def poll_source(source: dict, db_path: str = db.DB_PATH) -> dict:
         print(f"  [ERROR] Failed to fetch {source_url}: {exc}")
         return {"source_id": source_id, "new": 0, "skipped": 0, "errors": 1}
 
+    # Detect HTTP error responses (feedparser doesn't raise — it sets feed.status)
+    http_status = getattr(feed, "status", None)
+    if http_status and http_status >= 400:
+        print(f"  [ERROR] HTTP {http_status} from {source_url}")
+        return {"source_id": source_id, "new": 0, "skipped": 0, "errors": 1}
+
     if feed.bozo and not feed.entries:
         print(f"  [WARN] Malformed or empty feed: {source_url} ({feed.bozo_exception})")
 

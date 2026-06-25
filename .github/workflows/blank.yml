@@ -41,7 +41,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python run_pipeline.py
 
-      - name: Commit DB and feed to repo
+      - name: Commit DB to repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -49,6 +49,10 @@ jobs:
           # Exit cleanly if nothing changed (happens when no new items arrived)
           git diff --staged --quiet && echo "Nothing to commit — skipping." && exit 0
           git commit -m "Engine run $(date -u +'%Y-%m-%d %H:%M UTC')"
-          # Pull any commits made by other workflows since our checkout
-          git pull --rebase origin main
-          git push
+          # Retry push up to 4 times — other workflows (breaking_news, daily_curator)
+          # push to main frequently and can cause rebase conflicts.
+          for i in 1 2 3 4; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying in ${i}0s..."
+            sleep $((i * 10))
+          done

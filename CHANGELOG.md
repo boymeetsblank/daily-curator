@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-25] Fix: blank engine feed staleness — 72h window + push retry
+
+Two fixes for the blank engine's stale data problem. (1) **`db.py` `get_feed()` window 48h→72h**: the feed query filtered by `fetched_at >= 48h ago`, but all 55 items in `blank.db` were from June 23 (~49h old), leaving only 4 items visible. Widened to 72h to match the `deploy-pages.yml` query window (`scored_at >= 72h`). (2) **`blank.yml` git push retry loop**: `blank.yml` commits `blank.db` and does `git pull --rebase + push`, but `breaking_news.yml` and `daily_curator.yml` also push to main constantly — a rebase conflict silently aborts the commit step (the workflow shows "success" via the "nothing to commit" exit-0 path). Added a retry loop matching the pattern used in other workflows: up to 4 attempts with exponential backoff (10s, 20s, 30s, 40s). Also adds HTTP status code checking to `ingest.py`'s `poll_source()`: feedparser silently returns an empty entries list on 403/404 without raising, causing sources to appear as "new=0, errors=0" when they're actually blocked.
+
 ## [2026-06-25] Fix: cluster strip fully clickable; perspectives show source names
 
 Clicking anywhere on the cluster strip banner now expands it (not just the arrow). Added `cursor: pointer` and a hover tint to make the strip feel interactive. Fixed the empty-drawer problem: picks files don't have "Other angles" URLs, so `related_articles` is always null. Expanded drawer now falls back to showing each cluster source name as a "Also covering this story" entry. Static source rows are non-clickable but visually informative. Picks that do have `related_articles` URLs continue to show clickable article links.

@@ -409,7 +409,7 @@ def get_feed(
     Prints a before/after source-distribution report to stdout on each call
     so the effect of the cap is visible in logs and easy to tune.
     """
-    cutoff = (datetime.now(timezone.utc) - timedelta(hours=48)).isoformat()
+    cutoff = (datetime.now(timezone.utc) - timedelta(hours=72)).isoformat()
     # Pull a wide candidate pool so balancing has room to work.
     candidate_limit = min(limit * 5, 500)
 
@@ -439,7 +439,7 @@ def get_feed(
     for item in candidates[:50]:
         before[item["source_name"]] = before.get(item["source_name"], 0) + 1
 
-    print(f"\n-- Feed assembly: {len(candidates)} candidates, score >= {min_score}, last 48 h --")
+    print(f"\n-- Feed assembly: {len(candidates)} candidates, score >= {min_score}, last 72 h --")
     print("  BEFORE balancing (top 50 by score):")
     for name, n in sorted(before.items(), key=lambda x: -x[1]):
         print(f"    {n:>3}  {name}")
