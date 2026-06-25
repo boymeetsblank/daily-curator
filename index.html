@@ -2,741 +2,817 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blank — Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Blank — The Feed</title>
   <meta name="description" content="Culturally relevant. Editorially scored.">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta property="og:title" content="Blank — The Feed">
+  <meta property="og:description" content="Culturally relevant. Editorially scored.">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:      #E8E8E8;
-      --ink:     #1E1E1E;
-      --muted:   #7A7A7A;
-      --faint:   #ABABAB;
-      --border:  #C8C8C8;
-      --surface: #DCDCDC;
-      --accent:  #C4E817;
-      --sans:    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      --max-w:   680px;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg:      #111111;
-        --ink:     #EBEBEB;
-        --muted:   #777777;
-        --faint:   #333333;
-        --border:  #2A2A2A;
-        --surface: #1A1A1A;
-      }
+      --surface:       #FFFFFF;
+      --surface-2:     #F9F8F5;
+      --border:        #F2F0EC;
+      --border-strong: #E5E2DC;
+      --ink:           #1A1A18;
+      --ink-2:         #9E9A96;
+      --ink-3:         #B0ACA6;
+      --ink-4:         #C0BCB8;
+      --accent:        #C47B2D;
+      --accent-bg:     #FEF8EF;
+      --accent-border: #E8C98A;
+      --accent-text:   #A86820;
+      --max-w:         760px;
+      --mono:          'DM Mono', 'Courier New', monospace;
+      --sans:          'DM Sans', -apple-system, sans-serif;
+      --serif:         'Newsreader', Georgia, serif;
     }
 
     html, body {
       min-height: 100%;
-      background: var(--bg);
+      background: var(--surface);
       color: var(--ink);
       font-family: var(--sans);
-      line-height: 1.5;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    ::selection { background: var(--accent); color: #1E1E1E; }
+    img    { display: block; max-width: 100%; }
+    a      { color: inherit; text-decoration: none; }
+    button { font-family: inherit; }
 
-    /* ── Header ── */
-    header {
+    /* ── App bar ─────────────────────────────────────────────── */
+    .app-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border);
-      padding: 20px 24px 16px;
+      padding: 0 16px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+    }
+
+    .app-bar-inner {
+      width: 100%;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
     }
 
     .wordmark {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
+      font-family: var(--mono);
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
       color: var(--ink);
-      margin-bottom: 10px;
     }
 
-    .header-meta {
-      font-size: 11px;
-      color: var(--muted);
+    .app-meta {
+      margin-left: auto;
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--ink-4);
+      white-space: nowrap;
+    }
+
+    /* ── Filter pills ────────────────────────────────────────── */
+    .pill-row-wrap {
+      border-bottom: 1px solid var(--border);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .pill-row-wrap::-webkit-scrollbar { display: none; }
+
+    .pill-row {
       display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: baseline;
-    }
-
-    .header-meta .updated {
-      color: var(--faint);
-    }
-
-    /* ── Feed ── */
-    main {
+      align-items: center;
+      gap: 6px;
+      padding: 9px 16px;
       max-width: var(--max-w);
       margin: 0 auto;
-      padding: 0 24px 80px;
     }
 
-    /* ── Card ── */
-    .card {
-      border-bottom: 1px solid var(--border);
-      padding: 24px 0;
+    .pill {
+      flex-shrink: 0;
+      border: 1px solid var(--border-strong);
+      border-radius: 100px;
+      background: transparent;
+      cursor: pointer;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--ink-2);
+      padding: 5px 13px;
+      line-height: 1;
+      white-space: nowrap;
+      transition: background .12s, color .12s, border-color .12s;
+    }
+    .pill.active, .pill:hover {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: #FFF;
+      font-weight: 500;
+    }
+    .pill-live {
+      border-color: var(--accent-border);
+      color: var(--accent-text);
+    }
+    .pill-live.active, .pill-live:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #FFF;
     }
 
-    .card:first-child {
-      padding-top: 28px;
+    /* ── Feed container ──────────────────────────────────────── */
+    .feed {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 12px 10px 80px;
     }
 
-    .card-meta {
+    /* ── Hero card ───────────────────────────────────────────── */
+    .hero-card {
+      position: relative;
+      display: block;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 268px;
+      margin-bottom: 8px;
+      background: #2C2822;
+      transition: opacity .18s;
+    }
+    .hero-card:hover { opacity: .95; }
+
+    @media (min-width: 520px) { .hero-card { height: 334px; } }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-color-bg {
+      position: absolute;
+      inset: 0;
+    }
+    .hero-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(8,7,5,.9)  0%,
+        rgba(8,7,5,.28) 52%,
+        transparent     100%
+      );
+    }
+
+    .hero-badges {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .hero-score-pill {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      color: #FFF;
+      background: rgba(0,0,0,.52);
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+    .hero-top-badge {
+      font-family: var(--sans);
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: #FFF;
+      background: rgba(196,123,45,.92);
+      padding: 3px 9px;
+      border-radius: 100px;
+    }
+
+    .hero-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 16px 18px 18px;
+    }
+    .hero-meta-row {
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .source-badge {
+      font-family: var(--sans);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.95);
+      background: rgba(255,255,255,.18);
+      padding: 3px 7px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .hero-time {
+      font-family: var(--sans);
+      font-size: 10px;
+      color: rgba(255,255,255,.5);
+    }
+    .hero-headline {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.24;
+      color: #FFF;
+      margin-bottom: 7px;
+    }
+    @media (min-width: 520px) { .hero-headline { font-size: 22px; } }
+    .hero-why {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-style: italic;
+      line-height: 1.45;
+      color: rgba(255,255,255,.56);
     }
 
-    .score {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      width: 22px;
-      height: 22px;
+    /* ── Section header ──────────────────────────────────────── */
+    .section-header {
+      padding: 14px 2px 8px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      border: 1px solid var(--border);
-      border-radius: 3px;
-      background: var(--surface);
+      justify-content: space-between;
+    }
+    .section-title {
+      font-family: var(--sans);
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
       color: var(--ink);
+    }
+
+    /* ── Mini grid (2-up) ────────────────────────────────────── */
+    .mini-grid {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .mini-card {
+      flex: 1;
+      min-width: 0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+      display: block;
+      background: var(--surface);
+      transition: border-color .15s;
+    }
+    .mini-card:hover { border-color: var(--border-strong); }
+
+    .mini-img {
+      position: relative;
+      height: 80px;
+      overflow: hidden;
+    }
+    .mini-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .mini-score-pill {
+      position: absolute;
+      top: 6px;
+      right: 7px;
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 700;
+      color: #FFF;
+      background: rgba(0,0,0,.52);
+      padding: 2px 7px;
+      border-radius: 100px;
+    }
+    .mini-body {
+      padding: 8px 10px 11px;
+    }
+    .mini-source {
+      font-family: var(--sans);
+      font-size: 9px;
+      color: var(--ink-3);
+      margin-bottom: 5px;
+    }
+    .mini-headline {
+      font-family: var(--serif);
+      font-size: 12.5px;
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+
+    /* ── List cards ──────────────────────────────────────────── */
+    .list-card {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 8px;
+      display: block;
+      background: var(--surface);
+      transition: border-color .15s;
+    }
+    .list-card:hover { border-color: var(--border-strong); }
+
+    .list-main {
+      padding: 11px 12px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .list-body { flex: 1; min-width: 0; }
+
+    .list-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 5px;
+      flex-wrap: wrap;
+    }
+    .score-pill {
+      font-family: var(--sans);
+      font-size: 9px;
+      font-weight: 700;
+      color: #FFF;
+      padding: 2px 6px;
+      border-radius: 100px;
+      flex-shrink: 0;
+    }
+    .score-hi { background: var(--accent); }
+    .score-lo { background: var(--ink-3); }
+
+    .list-source {
+      font-family: var(--sans);
+      font-size: 9.5px;
+      color: var(--ink-3);
+    }
+    .list-time {
+      font-family: var(--sans);
+      font-size: 9px;
+      color: var(--ink-4);
+      margin-left: auto;
+      white-space: nowrap;
+    }
+    .list-headline {
+      font-family: var(--serif);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.35;
+      color: var(--ink);
+      margin-bottom: 5px;
+    }
+    .list-why {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-style: italic;
+      line-height: 1.45;
+      color: var(--ink-2);
+    }
+    .list-thumb {
+      width: 72px;
+      height: 72px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .list-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ── Cluster strip ───────────────────────────────────────── */
+    .cluster-strip {
+      background: var(--surface-2);
+      border-top: 1px solid var(--border);
+      padding: 6px 12px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .cluster-pill {
+      font-family: var(--sans);
+      font-size: 9px;
+      font-weight: 500;
+      color: #6B6760;
+      background: var(--surface);
+      border: 1px solid var(--border-strong);
+      border-radius: 100px;
+      padding: 3px 8px;
+      white-space: nowrap;
+    }
+    .cluster-more {
+      font-family: var(--sans);
+      font-size: 9.5px;
+      color: var(--ink-3);
+    }
+    .cluster-expand {
+      margin-left: auto;
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    /* ── Trend badge ─────────────────────────────────────────── */
+    .trend-badge {
+      font-family: var(--sans);
+      font-size: 8.5px;
+      font-weight: 500;
+      letter-spacing: .03em;
+      color: var(--accent-text);
+      background: var(--accent-bg);
+      border: .5px solid var(--accent-border);
+      padding: 2px 7px;
+      border-radius: 100px;
       flex-shrink: 0;
     }
 
-    .score-9, .score-10 {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #1E1E1E;
+    /* ── Loading / empty states ──────────────────────────────── */
+    .state-center {
+      text-align: center;
+      padding: 72px 24px;
     }
-
-    .label {
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--faint);
-    }
-
-    .source {
-      font-size: 11px;
-      color: var(--muted);
-      margin-left: auto;
-    }
-
-    .hook {
-      display: block;
-      font-size: 17px;
-      font-weight: 550;
-      line-height: 1.4;
+    .state-wordmark {
+      font-family: var(--mono);
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
       color: var(--ink);
-      text-decoration: none;
+      margin-bottom: 14px;
+      animation: pulse 1.2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: .22; }
+    }
+    .state-sub {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--ink-4);
+    }
+    .state-h2 {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
       margin-bottom: 8px;
     }
-
-    .hook:hover {
-      text-decoration: underline;
-      text-underline-offset: 3px;
+    .state-p {
+      font-family: var(--sans);
+      font-size: 13px;
+      color: var(--ink-2);
     }
 
-    .why {
-      font-size: 14px;
-      color: var(--muted);
-      line-height: 1.55;
-      margin-bottom: 4px;
-    }
-
-    .title-sub {
-      font-size: 12px;
-      color: var(--faint);
-      margin-top: 6px;
-    }
-
-    /* ── Footer ── */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 20px 24px;
+    /* ── Footer ──────────────────────────────────────────────── */
+    .site-footer {
       max-width: var(--max-w);
       margin: 0 auto;
-      font-size: 11px;
-      color: var(--faint);
+      padding: 20px 16px 40px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-credit, .footer-date {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--ink-4);
     }
 
-    @media (max-width: 480px) {
-      header, main, footer { padding-left: 16px; padding-right: 16px; }
-      .hook { font-size: 16px; }
+    /* ── Mobile ──────────────────────────────────────────────── */
+    @media (max-width: 400px) {
+      .hero-card    { height: 248px; }
+      .hero-headline { font-size: 17px; }
+      .list-headline { font-size: 13.5px; }
+      .list-thumb   { width: 60px; height: 60px; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="wordmark">B L A N K</div>
-    <div class="header-meta">
-      <span>50 items &nbsp;·&nbsp; 9×1  8×7  7×21  6×21</span>
-      <span class="updated">Updated June 24, 2026 at 11:57 PM UTC</span>
+
+  <!-- App bar -->
+  <header class="app-bar">
+    <div class="app-bar-inner">
+      <span class="wordmark">blank.</span>
+      <span class="app-meta" id="js-meta"></span>
     </div>
   </header>
 
-  <main>
+  <!-- Filter pills -->
+  <nav class="pill-row-wrap" aria-label="Feed filters">
+    <div class="pill-row">
+      <button class="pill active" data-f="all">All</button>
+      <button class="pill" data-f="top">Top Picks</button>
+      <button class="pill pill-live" data-f="live">⚡ Live</button>
+    </div>
+  </nav>
 
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiakFVX3lxTE01LTIxTmZ3NGFsQ05qN0s1a2trbi1NRXFNRmZ5UmxMRjgxcnFZOV9FQ0Z0WFZUV19tVDVnbmNZV2dGSXpfZWdubnQyMW1VMFlha3cxUG9mWjQzRnZNNzBxeGFJc3MyeDducXc?oc=5" target="_blank" rel="noopener noreferrer">Can an AI agent actually explain its financial reasoning — or just sound confident?</a>
-      <p class="why">The 'show your work' problem for AI agents in finance is a genuine and underexplored tension — auditability and explainability are the real blockers to enterprise AI adoption, and Perplexity testing this is a live example.</p>
-      <p class="title-sub">Perplexity Tests the Real Finance AI Question: Can the Agent Show Its Work? - ERP Today</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 3h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV1EyRWQyQXloRXgyVldBOFhZTkRzYmQ0bVdBN09kVHl5Q3Nyd0U3Q0Q1aE03SGhkY0NPRHNuRjRZMHpnNllaLUZTa3VXNm54eHBaQ2M2dDlVdHFGNWdHeWhock5OaWhvRW9zWXBxb0UwN1YyS3JIYWpKU3M4MDFDRjFpcW04bHZKdHRCdVJfYnA1R08xeVlMMTlYVTZ3aExqLUZSM2RjQnZUQ1U?oc=5" target="_blank" rel="noopener noreferrer">The SEC just killed climate disclosure rules — here's what that means for global finance.</a>
-      <p class="why">The SEC climate disclosure repeal is a significant regulatory rollback affecting publicly traded companies globally, and bundling it with transition finance and carbon market rules gives this real policy weight.</p>
-      <p class="title-sub">June 2026 Global Regulatory Brief: SEC climate disclosure repeal, transition finance and carbon market rules - Bloomberg.com</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNRk4td25kZWtmek9YSF9HZFNERzdNZFRRdTBROFJKLTFQS1Z5OU03TXhaQTV1TF8zNkNjNEM2eFZuZnY5aDV5UWtmMDhJeWNJTFQwN1RZcWlIWVpMN0p4VHFfQldrZ1NDR25mcTB0SjMwZjFGekdZSTc5OWV4dWdHVU1hOENabEZoRWVheV84U3lQWWFnTi1nRlMzNkpwdTUwSFI1VThEWDg4alZCUlFKbjVsNXUtaVhTb1AxR1QwdTNVdGY3MnRXY3N2Tnp1QQ?oc=5" target="_blank" rel="noopener noreferrer">USPS dodged a cash crisis — but its financial problems aren't going away.</a>
-      <p class="why">USPS's ongoing financial instability is a slow-moving but real institutional story — the postal service touching hundreds of millions of Americans and still teetering financially is worth tracking.</p>
-      <p class="title-sub">USPS staves off immediate cash crisis, but warns of continuing financial woes - Federal News Network</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 7h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQRXZ4Q010U3dua2JxbkFSWVNRRWg4dFcxbDhzeGoySUtBWUpLN3R0WkRCNnVEcllEd3RxbzBFQ0ZIR2U0Y2VPSXFTLXVfRjc2bVRyd01YWTlnZDJjQ2l0X3pwNHJnYU03S1QteFNtV3lNZE9xT2Jod3V6ZlRUOWhTSTdHbFZWOFp1Tm5IWnRuRk1oVllzUzVR?oc=5" target="_blank" rel="noopener noreferrer">Micron earnings drop soon — and Wall Street is reading them as a verdict on the whole AI trade.</a>
-      <p class="why">Micron's upcoming earnings are a live bellwether for whether the AI infrastructure trade still has legs — one of the cleaner real-world tests of AI chip demand beyond hype.</p>
-      <p class="title-sub">Micron Earnings Are the Next Big Test for the AI Trade - Business Insider</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQOVhITThwaDRXaXo2dDdZUlRmYlJvblhRNGJUYVJDampuSldWRWVGbjVINmFhdHFCb0FQbl9fcWhndjBBcWNMMjB6M2I5QmZqenhiOEQtOVNVUnRRV0VpRU9NRFZpajRVM3NZZ205cnNwZ0MtLWgtSTRYSno0bmRaSTg4QkMwOE1xUVdmajJoaXBKUQ?oc=5" target="_blank" rel="noopener noreferrer">World Cup fever hits Seattle — but not every business is winning.</a>
-      <p class="why">World Cup is a major live event and its economic impact on host cities is a real story with winners and losers — not just boosterism. Locally specific but illustrates a broader pattern.</p>
-      <p class="title-sub">World Cup crowds bring some boom, some bust for Seattle businesses - KUOW</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 4h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMioAFBVV95cUxNY19xWU1ZNXhEODM0emxIdGJhNXFRdFVJTENONTgxWkNteWRFTWI4eVZON1B2V0hOUWQzTTBPTjJGSTZkZXN1aWltODlmNWw3UFh5Z3JYamN5MndRLThqUzkxU3VKbnZqanZMWUhtM2JESWhDYkVlRUhBX09ybTZmb0xWWndWMkpBQkI0elhQYmY3RmFHQ3FpTWJqRW5abXFq?oc=5" target="_blank" rel="noopener noreferrer">Oil is cheap again, so why might inflation get worse?</a>
-      <p class="why">Counterintuitive economic warning — falling oil prices causing higher inflation — challenges most people's assumptions about how energy costs work. Relevant as oil approaches pre-war levels, a meaningful benchmark.</p>
-      <p class="title-sub">Oil nears pre-war levels, but a top economist warns lower prices could mean higher inflation - Business Insider</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 9h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPLUJxN0M1VW00NmZSbUxPZmRUTDNNekdUNC1LNDF0MkVMc29LcmNMMFdzWkk4UWNEdzhIZmprTGt6d3dGajB5Nkh3ZkhPUDNKLXJuYTVkMzJKa0VNdzBEa2ZwZVo2OWNoaDViNEtjd0U3d19VWGIxNzFoVk9UR09oblB3dlJOZndkaC1LZXlUTGdCemQ3ZWwzenZ1VQ?oc=5" target="_blank" rel="noopener noreferrer">She left California for Minneapolis and never looked back — here's why.</a>
-      <p class="why">California-to-Midwest relocation narratives tap into a real and ongoing cultural moment around cost of living, remote work, and what makes a city livable. Personal essays like this resonate widely and spark debate.</p>
-      <p class="title-sub">I moved from California to Minneapolis for work. I didn't know what to expect, but now, I don't think I'll ever leave. - Yahoo</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 2h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPRXRBX2VRSzc3bk15aS1ua0FJd0JXYy1hWkFaZDBDeTdidDMydTVyY1BSZVdwR3M4RzhKS25fOWJYVUV5bXlkQVBZWjBnUUFTNkIzZWZvbzVnSWhXWXJEMGpDcVlka3laZGtHa2E1ZjhJaDRya2xRZG4tdkItVVQ5SFp2SWdyR1A3azVoa1dhWjc4RzI2bC1JT2F0bw?oc=5" target="_blank" rel="noopener noreferrer">The Blues just traded a star and signaled they're ready to blow it all up — or build something new.</a>
-      <p class="why">The Jordan Kyrou trade is a significant NHL roster move covered by the NYT, signaling a real Blues franchise inflection point. Sports fans following the league rebuild cycle will find this consequential.</p>
-      <p class="title-sub">After Jordan Kyrou trade, Blues are open for business — and positioned for a franchise-changing run - The New York Times</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 17m ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOTDViSV9leTB4VXFldndKakljME03Y0NzUWw3YzFLRmpDT2xQU0JzNER5cDJzYWxyNE5xaTJONFJJSFdwUTVRSG9Ia05vOXlxWFFIM2pDSFM2aUVmbVhlakctTXB0TTJuUkN5NkxRWnFOYldJQVZjajQ1VW9Qcl9vWUJudDY3ckdGc2hqU3JoRUxpbklJZHpEOHF3?oc=5" target="_blank" rel="noopener noreferrer">A small hot sauce shop is preparing for the arrival of the Buc-ee's behemoth next door.</a>
-      <p class="why">Buc-ee's has become a genuine cultural phenomenon in American retail, and a small hot sauce business bracing for its arrival is a neat David-vs.-Goliath angle. The Buc-ee's expansion story resonates beyond Arizona.</p>
-      <p class="title-sub">A Goodyear hot sauce business prepares for the impact of Buc-ee’s - Cronkite News</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 55m ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMipgJBVV95cUxOaGZaN2dCcm03VG9rREk1UmRFTnV1UVoxNXdnU2VrTmx1NGpHQ09pU3htV2JfUmxyQUJZVThRYmszdjRxUmFKTlNtWV9wcnNjbWZEblljc3pQR0lLbG1GRFc4SzVxOE9wUjZKQzZmdmdfVVVzVDhLT2pqVE14ekNPTTV6VFdpNnZqallZS3lrX3dkZ19rZFViT0lHOC1zeVJJTHdhTTZuMDhXNUhWd2I4TW9VS2tkaU9RZzZlSVVJa0VocGZETkRHUVNxRlp5T1VRNmdVLXBZM09MbHZYbUtyMnhmeU9iS0lNLURIT21rQjJnLXFCZUFVY09PRjJfZVE3ODYta2J4YnFuWU9tYjhYa0tUZmhuVzJoSjlVTTloaWJuUG5md3c?oc=5" target="_blank" rel="noopener noreferrer">Portland's Lloyd Center mall is closing, and the ice rink is skating right up to the end.</a>
-      <p class="why">The Lloyd Center mall in Portland closing is a small cultural moment — malls dying is a well-worn story, but an ice rink staying open until the very last day carries genuine poignancy. Taps into the broader retail apocalypse narrative.</p>
-      <p class="title-sub">Lloyd Center tenants, including ice rink, plan to stay open until the mall’s final day - KATU</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxPY2FJaFdxaW1fSk9GRHlTb1VLTFdlUkFCSUhuNXpYMUdfdU9CWWRoaUZIcGsyd0pjbzg0N0RtWUoyb0Z1Y0EyUmdVTGNla0ZrM0hKcWZmNXlQcGo1TzdpVTJ4bWU5RlFFdy1rN3FNVjZKb2NsQ2RGUmlZUzJVUFlhcEJScS1kQlZaYkpCY2ZZTm1wcnpQcGJQR2c2VnR6SFIxb2p5NWZHUlF2bTJwT2RhZFJPYmVMOE1acGhFWlI5MWUwZ3owYUN0Mzhsbw?oc=5" target="_blank" rel="noopener noreferrer">Qualcomm is betting its future on AI — and investors are buying it.</a>
-      <p class="why">Qualcomm's pivot beyond smartphones into AI-driven markets is a meaningful signal in the semiconductor landscape, with broader implications for how chip companies are repositioning themselves. A stock jump tied to a strategic shift is worth tracking for anyone following tech or markets.</p>
-      <p class="title-sub">Qualcomm jumps as it looks beyond smartphones to cash in on the AI boom - Yahoo Finance</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 3h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQVkJCTm81aEdXSnJDbDR2ZVh2ZU4xQkVCY1RHRFJwOEVjSGtlNWZKVFNzdFBIdkU3Y3lOUkxsTWFJdElVWUJxbTZibGhSN0g2M3kzOE91VGdEblRfbWV2Y0FiNU5TTlMwWi1LclJaa2FDeGQzVHAxTDI0bXhsTWwzOG5tYmdZTUNhR1FBNzVWVlNrUGJUTldtdXpBcWNraGc1UW1RelpNMA?oc=5" target="_blank" rel="noopener noreferrer">Micron says memory chip demand is surging — and their forecast is as close to a real-time AI spending gauge as you'll get.</a>
-      <p class="why">Micron's strong forward guidance on memory chip demand is a concrete data point on AI infrastructure buildout — consequential for anyone tracking tech investment cycles.</p>
-      <p class="title-sub">Micron forecasts strong quarterly results on soaring memory chip demand - Yahoo Finance</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 9h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMimwFBVV95cUxONUg4Yk4xYm16TUhRUGFoLTItVjBfelJyUWMweXU2bEJjdXEyclJqMlpsLXZYNktyOW1KdXBJdmRyNE9MdFB4bnNEMjc3QzRGV2ZFQmFrdHNGSy1PTl82R3lXTTlXX09Cek9fTmM1TV8xT2FlekNkNEdRV3Q3MGswTVFxTVJFX2tyV3d0WjVua1NJTjlja2laZUw0cw?oc=5" target="_blank" rel="noopener noreferrer">Europe's biggest tank maker is going public, and it says everything about where the continent thinks the next decade is heading.</a>
-      <p class="why">A major European defense company moving toward an IPO reflects the continent's dramatic military spending shift post-Ukraine — significant both financially and geopolitically.</p>
-      <p class="title-sub">Europe’s Tank Giant Rolls Toward the Market - Yahoo Finance</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 3h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVTQyeF9qV1VmRHREd2llck5IcXlOU2czVXRDdGtiQXl2MkxfR1B0alZjVko5a2MwXzBZakZvMG9FWXRXcVdIUFpuZk84YmE3d1hXT0hQeVdBbWt6OHJMQmR6Wm5NdGRhT2xZMURIZzJDakszNVliVERMNGphbVBfbi1kMXNZeXA2aWRHRDFzUVVXZzdvWE9sbm5WSmVlUi04UEE2TDF3Z1pucVBLNzBYX0pCNWl5VkxGTG5VOEZ3STF6MmowUVctczRDeGN1SG9GX3pOVlV1dHBxX0xjaWxYa1hLYW8?oc=5" target="_blank" rel="noopener noreferrer">Micron just jumped 12% in a day after blowing past earnings — a big signal for the AI chip economy.</a>
-      <p class="why">A 12% single-day jump on earnings is a significant market event for a major chip bellwether — Micron's results often signal broader memory and AI infrastructure demand trends.</p>
-      <p class="title-sub">Tech stocks live: Micron stock jumps over 12% on earnings beat after tumbling earlier this week - Yahoo Finance</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 246d ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOXzQwdURpSHhVMWFLdGg3aWppaTExZXVBdkZqeU5UeFZOcG1BNHU4U3hXTGNsUFRaT2hIWlJtOUJZdl9rcUpodVdiMG9QbHF0LUFEMjhxUlJzQmE2eGVUcDNCU0lCUE5FUHRqaHZObFA3cXgtSDRjU0MwbjBoWDFWYk94Q0JQRWd4UXVtVW1STmRvUUxncFpwNUdDbEdWbjVDMlZnODB5Yw?oc=5" target="_blank" rel="noopener noreferrer">OpenAI is hiring ex-investment bankers at $150/hour — not to raise money, but to train its AI.</a>
-      <p class="why">OpenAI paying ex-Wall Street bankers $150/hour to teach AI how finance works reveals a specific and underreported side of how frontier models are actually built — and raises real questions about who shapes AI knowledge.</p>
-      <p class="title-sub">OpenAI Is Paying Ex-Investment Bankers $150 an Hour to Train Its AI - entrepreneur.com</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-8">8</span>
-        <span class="label">strong</span>
-        <span class="source">google · 429d ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWTNaWXJud3M4c2RrSXFZM1NyNUtwR1JhbWZLeVcwS3hka3N5S0pWX2k3d05kN3BiREk0MkNYc1ZCMmRuMDM3UGpwd1pfV0h1NG9EcDl0cW9zdGJNMjRhQUVaT2VEM1BmQTJLSjFxbFpOUVNWSjBRVTZvQjV1NGFXamlybm53SFdvNzk2c1kwWVpfbk9MeUMzZXNVdzdJdlpkc2ZXQVUzVEdETzQ?oc=5" target="_blank" rel="noopener noreferrer">Every time you say 'thank you' to ChatGPT, it costs real money and real electricity — and it adds up to millions.</a>
-      <p class="why">The revelation that polite filler phrases to ChatGPT carry a real, quantified energy cost is the kind of weird-but-true fact that makes people rethink their AI habits — and it lands in an ongoing conversation about AI's environmental footprint.</p>
-      <p class="title-sub">Saying 'Thank You' to ChatGPT Costs Millions in Electricity - entrepreneur.com</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 588d ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxObDdWXzFYNlIzZkc5dm5GUFNhdmQtQ1hhZ2xnZVlGTHJjeU9RNnFqZ3p6TjdLU2NZZ25oX2hVc2JHb2ZZVWxvLWJXMUdxOHAxT0JDcGJrWFR1MDZWdkUwX0FsYlhUVk81QTZNYm8zQ3paTVUwUS1XTjA4dzVOMjNkNk16T18yR2hwWFQ0R0pFSVprQ05JbnlTaGpEUkxHZmVWUGJ1aA?oc=5" target="_blank" rel="noopener noreferrer">High performers who poison the well are the hardest hires to undo — here's how to catch them first.</a>
-      <p class="why">The 'brilliant jerk' problem is a persistent and real business challenge — this framing around spotting them early before hiring gives it practical edge.</p>
-      <p class="title-sub">How to Spot High-Performing Jerks Before They Derail Your Business - entrepreneur.com</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-8">8</span>
-        <span class="label">strong</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5IRHRadmE0Rlc5d2d5eHZMOFdCR0VTS2N0WGhFSzI3Q0YzOGtzNGhKQkxTZkdJa1BZdlJhNWJ1UXhsZnc4bjNpSWtiS3Y3R0hBN1Z6dWpTR2Y2UQ?oc=5" target="_blank" rel="noopener noreferrer">The Philippines just banned a gaming app after a teenage shooter was found to have played it obsessively.</a>
-      <p class="why">A teenage shooter in the Philippines played a violent app called Gorebox before the attack, prompting a national ban — a real-world policy moment in the ongoing debate about violent video games and youth violence.</p>
-      <p class="title-sub">Tacloban shooting: Philippines bans gaming app Gorebox played by teenage suspect - BBC</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 6h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMihAFBVV95cUxORThtdnYxbzhoVGQ2WkxXVlFjRFZHZlljR0ZOVFhCQUplVmFsOUJrVkV1cV9OVC1pcVFZSjk5dVc3dW9lZ1o4NGxjejk4V09TS3pyMHlEdi1EWWRVVjlPR0piYWxrWl8xMkkycmczczBnTnhkOFBqeU5NOE5uQXZyQU1jNGI?oc=5" target="_blank" rel="noopener noreferrer">The Pistons were one trade away from stealing Austin Reaves from the Lakers.</a>
-      <p class="why">The Austin Reaves deal is one of the bigger offseason moves so far, and learning the Pistons nearly pulled it off adds meaningful context to both franchises' directions.</p>
-      <p class="title-sub">NBA rumors: Pistons were ready to make trade to make run at Austin Reaves before Lakers deal - Yahoo Sports</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPNzNyQlJfbjVoZGdwRURoTXBqRXBFTERlb0NYOWVwb0dobUZubFpFUXdWRmN2MGRlRDdhQUUtN0ZFSHMyc2VmZlZQd09IQ18zVEQ4UFhPWk1uaFAzYnVkQjNlMGkwenUzanhTQUc1MGtmRkkwdnkwM3FLVUNpVjh2S0xxWQ?oc=5" target="_blank" rel="noopener noreferrer">A new report says Giannis was having secret meltdowns in the locker room — and the fallout is just starting.</a>
-      <p class="why">Locker room drama around Giannis — one of the NBA's biggest stars — carries real weight, especially amid trade rumors and Milwaukee's uncertain future.</p>
-      <p class="title-sub">“All the Dirty Laundry Is Gonna Come Out Now”: NBA Fans Shocked as New Report Exposes Giannis Antetokounmpo’s Locker Room Secret Outbursts - Yahoo Sports</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQbUE1M3ZJTDhpOEdubUVWeFJnb0dEMjNyaURuRFBFV2ROQXkwbVdSdENZcU5YaWxzbmVycExMeWNsUkRleFhLNmVKS3VoY2diWHoxQlRaaUdpMGs1dUpQTzFwdHJBY0ZDZnZocnhpal9PRzBQX0pfWXU2UXFzOG51YXFQSEhzNjVBU1BjMEJ4UVU0WHlzczNGMGJGY1ltckl0RU5mOVJINjVTay1JMUYzbG5n?oc=5" target="_blank" rel="noopener noreferrer">An NBA insider says Charlotte may have just drafted the best shooter in this class.</a>
-      <p class="why">Fresh draft reaction piece with a strong insider claim — the Hornets may have landed a generational shooter, which matters for franchise trajectory.</p>
-      <p class="title-sub">NBA Insider Believes Hornets May Have Selected the 'Best Shooter' in NBA Draft - Sports Illustrated</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOb1lUeVBETmlNczV3N19ZZEdQU1J5cFlFeExSZFdKaHVmSDJvU2RjcGpsZWlnN1VjU2U5OUdic1h6ZG5WRzFHd0pIVl9GZWoxTnB2REpLamIwM0V1eThMS2lTaHFhVXU1WHlSTUVZSzUyTElDQXpvUnl0RUdQOXViejNLNVdXUUV2LVlSMTYzS192aDNNallDUlZBU3Y2RF83TEU3b0dXU1RweTFvX2fSAcIBQVVfeXFMT3lHTVhRS09NYk5aaW02bkR5Ujh5Mllwd19Ob290d2d2Mnlkd1Z3VnV0ekFxcWFfSzZpaGoxejI2TXhiUnVvX1Y2d3JTQ1hhb0RRUU5uUXI2cXgyaExvcVBQekZDbVhoV2ZXWVk4N212MUV2djdlZlZzci1BTWhBTWFINTkteTVXdUNmVDllQ1FQc0dxM25iTThsdEhKQjRGX3RVRzVQUDMxTUZaWnlLMGdGZ3Q4a0VzTUZnMy1sSENhMnc?oc=5" target="_blank" rel="noopener noreferrer">NBA Draft Round 2 is today — here's how to watch it free.</a>
-      <p class="why">Purely practical but highly timely — the NBA Draft Round 2 is happening today and people need to know where to watch.</p>
-      <p class="title-sub">Where to watch Round 2 of 2026 NBA Draft: FREE live stream, time, channel (6/24) - NJ.com</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 26m ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOanVoUFFXUktDU3pua2JQOEZDd2t5MDVIT3M4ZlludngxYXJILWFSYjR3dElHWVpwbkY1OTZyZzdEUmpjc2ctLXhQNElKdlZ4TlBxNFUzTWI2c1NCZXAwZWFobVhPT1JVdlRBMHZXNUdmN1NmSFJaeDFyVzZjQXRKQXVHNngzWUdPYThvbUxwLWp1aTB3RW5sR2RsVjV3LUxkRHZobFd3?oc=5" target="_blank" rel="noopener noreferrer">Did Nike sideline Wemby's Finals moment to push New York?</a>
-      <p class="why">Nike's marketing priorities during the NBA Finals — favoring New York market over Wemby — is an interesting behind-the-scenes business angle on the league's biggest stage.</p>
-      <p class="title-sub">Was NY priority for Nike over Wemby in NBA Finals? - NBC Sports</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNeHBCdjVnSXZScFN6dnBwWTNiZmQ2OEZ1aEMwZk56NFpVVUQwSHRqYS1jSUlNcFR3WlpENnNXVmdCd2VWWVpoWlNNZUpXLXliV2xtcUl6SDdySlZ2UVliUEpLSjlkak85Zk92dkFQYnJ4NmpzUG5lOWxLYkpITmdQUmdIVQ?oc=5" target="_blank" rel="noopener noreferrer">Isaiah Evans showed up to the NBA Draft in $4 million worth of accessories.</a>
-      <p class="why">A $4 million draft-night outfit — including accessories — is an instantly shareable 'wait, what?' moment that taps into the spectacle of draft fashion culture.</p>
-      <p class="title-sub">Duke alum Isaiah Evans wears most expensive outfit in NBA Draft history, including $4 million in accessories - Yahoo Sports</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 56m ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNa2xoVnpoaC1Jd21aZUM4VFFDRkMxeVI0MVBTSDVaZGdTZTJNc0xRRl9WdWY0X01NR1d2R1Ywd0s4MWowQ1RzekEzdjI0NEg2ejF1alVTaGlPNE5OMnpTSF9WeFZEbEtvNUkzWDNObnh0Nk9oVU1HUXprUS0xRWJPeXM1czFLQQ?oc=5" target="_blank" rel="noopener noreferrer">Jay Williams says Richard Jefferson's live on-air jab made him 'extremely uncomfortable.'</a>
-      <p class="why">On-air tension between two ESPN analysts during a live broadcast is the kind of behind-the-scenes drama that captures attention beyond the draft itself.</p>
-      <p class="title-sub">Jay Williams calls jab from Richard Jefferson on NBA Draft telecast ‘extremely uncomfortable’ - Yahoo Sports</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-8">8</span>
-        <span class="label">strong</span>
-        <span class="source">google · 2h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZWU0NVhaWGVtT1ZmX295eVpWaG5YSTlmQ05GVFVEc3AycDZCNG1sbUFndFAyZ2dlZXNCZkJoUVlRa1FQT3BxampSRm81anlQT0J3anF4bjVHUW5KcWVvcmRyUUJYX0FDakQ2cm5sbEhyRVE5RjlCcXJhU3JXWWZzMk9JQXFvTUM0NTdKcmJZU1dEZkRoUm1CN3JVZGJzNUEybG5FQzJLdE9ZdzEwOTFfbURHbkFCWjlz?oc=5" target="_blank" rel="noopener noreferrer">A Mexican-born player just made NBA draft history, and his reaction will get you.</a>
-      <p class="why">A Mexican-born player making NBA draft history is a genuine milestone moment with broad cultural resonance — his emotional reaction gives it a human story beyond the record itself.</p>
-      <p class="title-sub">Karim Lopez’s emotional response to making NBA draft history as Mexican-born player goes viral - New York Post</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOQU1DSXd3OVNPR0RtS0lpVkpSdmxUWjNVZnV4VmtGeWhfcnR6R1BycFZwbmxKR1FETlZKdGhUVUZFbFdlTFJkcDNUNkEzWU1NYmRfcVRXQXVLZVQ5WFgwMVdudXVGVkw2ZjkxS2lpUXd3VGZBckJvc0tCUkNTUlNUakVNdw?oc=5" target="_blank" rel="noopener noreferrer">Nick Nurse isn't hiding how he feels about the 76ers' new pick.</a>
-      <p class="why">A coach publicly praising or scrutinizing a draft pick right after selection offers a quick character read on both the player and franchise direction.</p>
-      <p class="title-sub">76ers Coach Nick Nurse Makes Feelings Clear on 2026 NBA Draft Pick Labaron Philon Jr. - Yahoo Sports</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 1h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOVEQxZkxYRHZHRGdGOWR1c05RX2o5MWxOVWtxMXBtalByOHp2OTdITy0yN3lPMnZvOTU3SHZvNk9GdVZXT0ljR19EWEQtbFdlRTBXRThFNEFyb0lFMmQwTWgtVFZJNU1SdDYxRXh0Y0VRbks4TDNQQkd1X3UtV3pwRmkwT3kwNTg?oc=5" target="_blank" rel="noopener noreferrer">The Lakers just pulled off a four-team draft-night deal with the Knicks, Mavs, and Suns.</a>
-      <p class="why">A four-team trade involving the Lakers, Knicks, Mavericks, and Suns is a notable draft-night move that reshapes multiple rosters. Lakers trades always carry outsized attention.</p>
-      <p class="title-sub">Lakers complete NBA Draft trade with Knicks, Mavericks and Suns - Yahoo Sports</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 12m ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRW9kbV92OVJYSER1emNwMmFxemtWUXJTSHJ4UFd3SHhDeDc3VXNqODcybWsxemJla0xGN050MkRheVFkZTRTVnVieF9FNW5JXzROSjYwcHJkVzRUM3lfVFhiVzM4U1JNbzVwSGVUSXFrcHVNQjQ0TlRVS1dwUFhSdWU5SmVaR205RFVRZ1FyWWhENFBoVGgwQ0JCVHNYYUNVSFBzcjRWRkxLUQ?oc=5" target="_blank" rel="noopener noreferrer">Every Round 2 pick, trade, and grade as it happens.</a>
-      <p class="why">Live draft tracker during an active event is highly useful for NBA fans following picks in real time. Redundant with similar live trackers in this batch.</p>
-      <p class="title-sub">2026 NBA Draft live updates: Round 2 tracker, picks, trades, rumors and grades - CBS Sports</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-8">8</span>
-        <span class="label">strong</span>
-        <span class="source">google · 4h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNa2VEekJqcGhRWV83RHU2cXI2cE9MN3JQd3VIZi1FWUVQNF9OVWIxZlUtRjZWRmhMYkZBOEtBN2JVbW5OTEl5RGV5OWFSMExtT0h2MmNWcThlVENSa19HbXZBQ1djaUtsQTkxblQyU0d1NGlSaVNIZFNSWk13bTVFY3VWaDVQaDRlcXRXMmdRRlNBSk1DYVhXWnVHck9BcVRaNkMzaUhMNHRfeHBhZ2M3MUVfSC1fcUh5V2ppaTg1a2Q?oc=5" target="_blank" rel="noopener noreferrer">Karim López just made history as the first Mexican-born player ever drafted in the NBA first round.</a>
-      <p class="why">Karim López becoming the first Mexican-born first-round NBA Draft pick is a genuine historic milestone with real cultural resonance across Latin America and the growing global basketball audience.</p>
-      <p class="title-sub">‘Super blessed’: Karim López makes NBA history as first Mexican-born first-round draft pick - Los Angeles Times</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 4h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPbGNrT3ktTEVQZnZFR1YweENKUkZZa2kyQXFaNDdqWHQtMEhZVzJfaDg3Uzl1WDl6RDRSaExpR0IxUURodmFTOGpUXzhmWFRlUGQ2V2dOaWFsWnI1NTRjVVB1YjNxQ015STdRakdOZDFpY1JLc3hMTVdYbVZUcmJkUnJFTFBOcUxYSzJoWE56YllQUkN6elBhZTZtbkkzdU82bnZBZlU4LURZOHl5bkE?oc=5" target="_blank" rel="noopener noreferrer">Teams are apparently willing to trade for Ja Morant — but only if one specific condition is met.</a>
-      <p class="why">Ja Morant is one of the NBA's most watched players and trade rumors around him carry real weight; the 'one condition' framing suggests a concrete development.</p>
-      <p class="title-sub">NBA teams have one condition to trade for Ja Morant - Yardbarker</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 52m ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQbEdwVXhZcXVPazJKUHVjbHdHTzBOWEJWMzBQY3NaUGpwV3F3UnY5MEhDM3FjT1dpaVFUSFJHZ3RWejh3dnU0MGYwM0VfcUlVUlp6X3ZTc0RvMm1EckJIMnYwbXI2T2NuUFNFSGVYb2lQOXJ3XzR4QUc1ZlI2SUFwdXhmRUxZd1BDSlBTS1BpTy1uRGdYRzRtOXZXZ2pMRVJuOW5SSA?oc=5" target="_blank" rel="noopener noreferrer">Richard Jefferson threw a jab at Jay Williams on live TV during the NBA Draft — and Williams says it felt awful.</a>
-      <p class="why">On-air tension between NBA analysts during a live draft broadcast is the kind of behind-the-scenes media drama that resonates beyond just sports fans.</p>
-      <p class="title-sub">Jay Williams calls jab from Richard Jefferson on NBA Draft telecast 'extremely uncomfortable' - Awful Announcing</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 5h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd2hqME9FVWRFU1BYbWg5ckNsYl9lQk5neFdabVVpb1oxdnAteTBNcGpTRW9aOF95RFo5NXE3S1JtMkhxcFQtVFBYTTJIMTEtVXpYU016UEw4UzFHdDV0MXNCSzAwcWZxd0xRRFpZWlEwTUkyN3lLVXVwTnFMa1d0V2ZsWC1oWFpvMHRZ?oc=5" target="_blank" rel="noopener noreferrer">After being made the NBA Finals scapegoat, De'Aaron Fox's future in San Antonio just got a clear answer.</a>
-      <p class="why">De'Aaron Fox's status after being labeled a Finals scapegoat is a hot topic in NBA circles right now, and a definitive answer from Spurs leadership is newsworthy.</p>
-      <p class="title-sub">Spurs boss gives definitive answer on future of NBA Finals scapegoat De’Aaron Fox - Yahoo Sports</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 31m ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZEVVTWZYTGQ3cjZkdUlSemJ5T2pQRjVsYlBYaVlJc2ZNUG50ZG1rOTRjamRVc1lNWkxZY3ZGWERNT0xUVi1HYkNCQzBRSjBmQW4wYVVEZFBTLTlBMUhpa3lONkN6eGRsQnUwZGdiNW5YUWxqek4xdjAyaDNxVmV5ZXFIeHpsSGVLMklYRlBndGtCSEh4ejBBcGJraXV4RzRSMk9nMXlMUXJxUnc?oc=5" target="_blank" rel="noopener noreferrer">The Lakers just made a move with the Bulls right before the NBA Draft second round.</a>
-      <p class="why">Lakers-Bulls draft day trade is breaking NBA news with immediate roster implications for a marquee franchise.</p>
-      <p class="title-sub">LA Lakers trade with Bulls ahead of NBA Draft second round: What we know - USA Today</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 4h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1kSDl3aVNGaE1hajBOT3hLMlYtaVQ1YURuSERUT2J5dmc5WTE5NEVld0lGR1lsOHdMWnJjdVRDN1JycWFvbFd6a1NVRDBXc2hKZ29JSG40Z1FqTy1NY2FWZEpHZk0?oc=5" target="_blank" rel="noopener noreferrer">iPhone 17 is about to do something no flagship phone has pulled off in 15 years.</a>
-      <p class="why">A record no flagship has broken in 15 years is a genuine hook — iPhone 17 apparently hitting a hardware milestone that hasn't been seen since the early smartphone era.</p>
-      <p class="title-sub">iPhone 17 set to break a record no flagship has touched in 15 years - 9to5Mac</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 2h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOaEhsU2pTRm9OM0VNNzMwcVRsQTZrS2lYZFIxaDl1c1JjVFNJUG50U3c5Uzh0VDd3UFFQWS05c2s1b1dIQld5LW9OUnpGNXQxQnNqS1ZFZUdSV1RTb0JWc1pPbGx6VGVQTnQ0cTJSZ1d4SklsOFF2SFpaTU5IYTN3d2JRQWtnQVlxRFJqeERaMTItZDZybjBJRVBXRGNXaGQ2cUt2azRsNkMzZVp0TDJv?oc=5" target="_blank" rel="noopener noreferrer">Apple is telling Siri to flat-out refuse to summarize URLs — here's why that's a bigger deal than it sounds.</a>
-      <p class="why">Apple actively restricting Siri from summarizing URLs is a notable AI safety/liability decision baked into iOS 27 beta, signaling how Apple is navigating AI content responsibility.</p>
-      <p class="title-sub">iOS 27 beta 2: Apple tells Siri AI to clearly refuse requests to summarize URLs - 9to5Mac</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">google · 37m ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNb1NDTVo5VHpsTDR1Zm9LdGczS2E2dnlwdEZ5dGNVeW1nTlZuV0pyTW54T0JDYUhNZDlkazF1QzVBNk5Ob0o0VHJxZnduY2xtbDRrSmgyOWJVcGJHT0Q2bWlnTS1zLVpZTVNVWWZTV3dqS1hDb1NpVkRwdy1COUYyb1JZY29zTEQ5a01PY2M4MWh4VmdIdGloMms5MzNJVkhTRWh5LXJOZU5WR2V2ZEU5TWpva2NmRzRLWFBaQ2E2a0p4X0RrWUl4RFFyamViTjFfRUM5U0dNTF84N2tTNEE?oc=5" target="_blank" rel="noopener noreferrer">San Diego's schools just voted to push back on classroom tech — and more cuts are coming.</a>
-      <p class="why">A major urban school district formalizing tech restrictions in classrooms reflects a broader national reckoning with phones and devices in schools — a live policy debate that affects millions of families.</p>
-      <p class="title-sub">San Diego Unified passes resolution to restrict classroom technology, with further reform to come - San Diego Union-Tribune</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 3h ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMizwFBVV95cUxPcTZVb3BGeU9DS0xTRGFFbDdiM1VIcHplN0RiVHBYNzlJYUNSbnlfQ0N1UlJtM2RLaEtjTm1ZamgxalZSS1h3RV9xYW1KbEt1M29mWkE5MGczYkxOWnpWUkJpVUxOc3ZjNDNEaXNnelctRDlYeHlPTDlCQjhmMXFkOEFUbmZrMDdOcEhTMEwxOGVaVDEwRUZQUWJJYXJBNHBkMFFZUEk0ajkwUXpUTjdWYTBGUWpoVlBaa21lTXVCNEdXN2RBMWIyaWNmaGpRLTQ?oc=5" target="_blank" rel="noopener noreferrer">Micron just broke its own revenue records — and it's all AI chips doing it.</a>
-      <p class="why">Micron posting record quarterly results signals that AI-driven memory demand is translating into real revenue, a meaningful data point for understanding where the semiconductor cycle is heading.</p>
-      <p class="title-sub">Micron Technology, Inc. Reports Record Results for the Third Quarter of Fiscal 2026 - marketscreener.com</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">google · 32m ago</span>
-      </div>
-      <a class="hook" href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5SSjV0el81Zl9SdFl5WjVZOEtGN3lBWjB4QWY1V2xRUWF3NEg5cTVaVWk2aE0wd1A3cERsMEd6UkNLWnJGc1dOLVFheVFfUVZ1bWZXUEZGc3JET2lU?oc=5" target="_blank" rel="noopener noreferrer">Korean scientists are building a robot you control with your mind — and that sends touch sensations back to your brain.</a>
-      <p class="why">KAIST launching the world's first bidirectional brain-to-robot interface — thought control plus sensory feedback — is a genuine milestone in neural-machine integration. The two-way sensation component is the part that makes this more than incremental.</p>
-      <p class="title-sub">KAIST begins developing the world’s first brain-to-robot technology, moving robots by thought and sending sensation back to the brain - EurekAlert!</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">reddit · 6h ago</span>
-      </div>
-      <a class="hook" href="https://www.reddit.com/r/artificial/comments/1uekkms/if_ai_data_centers_are_exploding_nationwide_why/" target="_blank" rel="noopener noreferrer">A California city just permanently banned data centers by popular vote — and 70% of state residents don't want them either.</a>
-      <p class="why">California's pushback against AI data centers — including the first-ever permanent city ban by popular vote — is a significant emerging counter-movement to the AI infrastructure boom.</p>
-      <p class="title-sub">If AI data centers are exploding nationwide, why are so few being built in California?</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">reddit · 1d ago</span>
-      </div>
-      <a class="hook" href="https://www.reddit.com/r/artificial/comments/1udvvef/the_ceo_of_a_company_with_700000_delivery_workers/" target="_blank" rel="noopener noreferrer">The boss of a 700,000-person delivery operation just said, flatly, robots will replace every single one of them.</a>
-      <p class="why">A top executive at one of China's largest logistics companies publicly stated robots will replace all 700,000 delivery workers — rare candor on automation displacement at massive scale.</p>
-      <p class="title-sub">The CEO of a company with 700,000 delivery workers just said robots will replace all of them</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-8">8</span>
-        <span class="label">strong</span>
-        <span class="source">reddit · 8h ago</span>
-      </div>
-      <a class="hook" href="https://www.reddit.com/r/artificial/comments/1uegmmx/openai_unveils_custom_chip_it_designed_with/" target="_blank" rel="noopener noreferrer">OpenAI just revealed its own custom AI chip, designed with Broadcom — the Nvidia dependency era may be ending.</a>
-      <p class="why">OpenAI moving into custom silicon with Broadcom is a major strategic shift — reducing dependence on Nvidia and vertically integrating AI infrastructure is a big deal for the industry's power dynamics.</p>
-      <p class="title-sub">OpenAI Unveils Custom Chip It Designed With Broadcom to Boost Its AI Infrastructure</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">reddit · 11h ago</span>
-      </div>
-      <a class="hook" href="https://www.reddit.com/r/artificial/comments/1uec7x3/two_lawyers_just_got_sanctioned_by_a_federal/" target="_blank" rel="noopener noreferrer">Courts are now sanctioning lawyers for citing AI-invented cases — and there's a database of over 1,000 incidents.</a>
-      <p class="why">Federal court sanctions against lawyers for AI-hallucinated case citations — with a database now tracking over a thousand such incidents — shows this is becoming a systemic legal integrity problem, not just isolated embarrassments.</p>
-      <p class="title-sub">Two lawyers just got sanctioned by a federal appeals court for filing AI made up cases</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-9">9</span>
-        <span class="label">essential</span>
-        <span class="source">reddit · 1d ago</span>
-      </div>
-      <a class="hook" href="https://www.reddit.com/r/artificial/comments/1udvuhe/leaked_files_detail_russias_social_design_agency/" target="_blank" rel="noopener noreferrer">Russia is building fake reference sites designed to corrupt AI training data — leaked documents reveal the playbook.</a>
-      <p class="why">Leaked documents detailing a Russian state operation specifically designed to poison AI training data and search indices — including a fake Wikipedia clone — represent a structurally new form of information warfare with long-term consequences for AI reliability.</p>
-      <p class="title-sub">Leaked files detail Russia's Social Design Agency building fake reference platforms to contaminate AI training data and search indices</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-8">8</span>
-        <span class="label">strong</span>
-        <span class="source">reddit · 1h ago</span>
-      </div>
-      <a class="hook" href="https://www.reddit.com/r/artificial/comments/1ues095/studies_suggest_that_reliance_on_ai_tools/" target="_blank" rel="noopener noreferrer">Studies show doctors and engineers who use AI tools actually get worse at their jobs over time.</a>
-      <p class="why">Multiple studies showing AI tools measurably degrade professional competence in physicians and engineers — not just as deskilling anxiety but as empirical finding — is a consequential and timely counterpoint to the AI-augmentation narrative.</p>
-      <p class="title-sub">Studies suggest that reliance on AI tools degrades the abilities of physicians and software engineers</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">reddit · 16h ago</span>
-      </div>
-      <a class="hook" href="https://www.reddit.com/r/artificial/comments/1ue6c2m/a_significant_portion_of_the_remaining_training/" target="_blank" rel="noopener noreferrer">The next wave of AI training data might be sitting in climate-controlled warehouses on magnetic tape from the '90s.</a>
-      <p class="why">The idea that vast troves of digitally untouched magnetic tape data from the 80s–2000s represent a frontier for AI training is an underreported and genuinely interesting angle on the data scarcity problem.</p>
-      <p class="title-sub">A significant portion of the remaining training data for AI is located on magnetic tapes stored in warehouses.</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-6">6</span>
-        <span class="label">notable</span>
-        <span class="source">reddit · 8h ago</span>
-      </div>
-      <a class="hook" href="https://www.reddit.com/r/artificial/comments/1uefv8p/42m_grant_for_open_source_ai_builders_by_sentient/" target="_blank" rel="noopener noreferrer">$42 million just landed to keep AI from being locked up by a handful of corporations.</a>
-      <p class="why">A $42M commitment to open-source AI development is a notable counter-move to closed-platform consolidation, and speaks to a live ideological battle in AI over who controls the infrastructure of intelligence.</p>
-      <p class="title-sub">$42M grant for Open Source AI Builders by Sentient Foundation</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">reddit · 12h ago</span>
-      </div>
-      <a class="hook" href="https://www.reddit.com/r/artificial/comments/1ueaya4/we_chased_a_hallucinated_quote_through_30k/" target="_blank" rel="noopener noreferrer">An AI kept 'hearing' the same fake quote in silent videos. The bug hunt that followed reveals something unsettling about how these models work.</a>
-      <p class="why">A detailed, reproducible account of tracking down a hallucinated verbatim quote through tens of thousands of records — only to find two separate bugs — is a genuinely illuminating look at how AI systems fail in strange, non-obvious ways.</p>
-      <p class="title-sub">We chased a hallucinated quote through 30k training records, 4,600 transcripts, and our own system prompt. Turned out to be two separate bugs</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-8">8</span>
-        <span class="label">strong</span>
-        <span class="source">arstechnica · 2h ago</span>
-      </div>
-      <a class="hook" href="https://arstechnica.com/health/2026/06/us-ends-hantavirus-outbreak-response-with-no-answers-on-draconian-quarantines/" target="_blank" rel="noopener noreferrer">The hantavirus outbreak is over — but nobody will explain why RFK Jr. overruled CDC scientists to lock people down.</a>
-      <p class="why">An outbreak response ending with no public explanation for why RFK Jr. overruled CDC experts to impose unusually strict quarantines is a serious accountability gap at the intersection of public health and political interference. The unanswered questions matter.</p>
-      <p class="title-sub">US ends hantavirus outbreak response with no answers on draconian quarantines</p>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="score score-7">7</span>
-        <span class="label">solid</span>
-        <span class="source">arstechnica · 2h ago</span>
-      </div>
-      <a class="hook" href="https://arstechnica.com/space/2026/06/analysis-finds-the-exploration-programs-nasa-recently-canceled-were-running-way-late/" target="_blank" rel="noopener noreferrer">$500M for a stage adapter that took 13 years and still isn't done — your tax dollars at work.</a>
-      <p class="why">A NASA contract that doubled in cost to $5.9 billion over 13 years and still didn't deliver is a stark example of government procurement failure, and provides concrete justification for recent cancellations that were politically contested.</p>
-      <p class="title-sub">13 years and $500 million for a stage adapter? Report justifies NASA cancellations.</p>
-    </article>
+  <!-- Feed -->
+  <main class="feed" id="js-feed">
+    <div class="state-center">
+      <div class="state-wordmark">blank.</div>
+      <div class="state-sub">Loading the feed…</div>
+    </div>
   </main>
 
-  <footer>
-    Scored and curated by the Blank engine. Minimum score 6/10 to surface.
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span class="footer-credit">Scored and curated by the Blank engine · min score 6/10</span>
+    <span class="footer-date" id="js-date"></span>
   </footer>
+
+  <script>
+    /* ── Secrets (injected by deploy workflow) ─────────────── */
+    const VAPID_KEY  = '__VAPID_PUBLIC_KEY__';
+    const VOTE_TOKEN = '__VOTE_TOKEN__';
+
+    /* ── State ─────────────────────────────────────────────── */
+    let allPicks     = [];
+    let activeFilter = 'all';
+
+    /* ── Helpers ───────────────────────────────────────────── */
+
+    // Safe HTML escape
+    function esc(s) {
+      return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    // Strip "Google News - " prefix and " + N more" suffix from source names
+    function cleanSrc(s) {
+      return (s || '')
+        .replace(/^Google\s+News\s*[-–]\s*/i, '')
+        .replace(/\s*\+\s*\d+\s+more\s*$/i, '')
+        .trim();
+    }
+
+    // Extract first hook line from the angle field.
+    // Handles both " / " and " /> " separators and "Hook: '" prefix.
+    function firstHook(angle) {
+      if (!angle) return '';
+      const s = angle.replace(/^Hook:\s*/i, '').replace(/^['"]/, '').trim();
+      return s.split(/\s+\/>\s+|\s+\/\s+/)[0].replace(/['"]$/, '').trim();
+    }
+
+    // Truncate to last full word within max length
+    function trunc(text, max) {
+      if (!text || text.length <= max) return text || '';
+      const cut = text.lastIndexOf(' ', max);
+      return text.slice(0, cut > 0 ? cut : max) + '…';
+    }
+
+    // Deterministic warm-neutral placeholder color from a string
+    const WARM = ['#C8BFB2','#D4CAB8','#BFCAB8','#B8C3C8','#CCC4B8','#C0CCBC','#C4BBC4','#D0C8B4'];
+    function warm(seed) {
+      let h = 0;
+      for (let i = 0; i < (seed||'').length; i++) h = ((h << 5) - h + seed.charCodeAt(i)) >>> 0;
+      return WARM[h % WARM.length];
+    }
+
+    // Relative time from a UTC date ("2026-06-24") + time ("2241") pair
+    function ago(date, time) {
+      try {
+        const dt  = new Date(`${date}T${time.slice(0,2)}:${time.slice(2)}:00Z`);
+        const min = Math.round((Date.now() - dt) / 60000);
+        if (min <  2)  return 'just now';
+        if (min < 60)  return `${min}m ago`;
+        const hr = Math.floor(min / 60);
+        if (hr  < 24)  return `${hr}h ago`;
+        return `${Math.floor(hr/24)}d ago`;
+      } catch { return ''; }
+    }
+
+    // Render the trend badge (X or Google), or empty string
+    function trendBadge(label) {
+      if (!label) return '';
+      const name = label.replace(/Trending on /i, '').replace(/ right now/i, '').trim();
+      return `<span class="trend-badge">⚡ ${esc(name)}</span>`;
+    }
+
+    /* ── Card builders ─────────────────────────────────────── */
+
+    function heroCard(p) {
+      const hook  = firstHook(p.angle) || p.title;
+      const color = warm(p.title);
+      const t     = ago(p.runDate, p.runTime);
+
+      const bgEl = p.image
+        ? `<img class="hero-bg" src="${esc(p.image)}" alt="" loading="eager" onerror="this.remove()">`
+        : '';
+
+      return `
+<a class="hero-card" href="${esc(p.link||'#')}" target="_blank" rel="noopener noreferrer" aria-label="${esc(hook)}">
+  <div class="hero-color-bg" style="background:${color}"></div>
+  ${bgEl}
+  <div class="hero-gradient"></div>
+  <div class="hero-badges">
+    <span class="hero-score-pill">${p.score}</span>
+    <span class="hero-top-badge">Top Story</span>
+  </div>
+  <div class="hero-content">
+    <div class="hero-meta-row">
+      <span class="source-badge">${esc(cleanSrc(p.source))}</span>
+      ${t ? `<span class="hero-time">${esc(t)}</span>` : ''}
+      ${trendBadge(p.trend_label)}
+    </div>
+    <h2 class="hero-headline">${esc(hook)}</h2>
+    ${p.why ? `<p class="hero-why">${esc(trunc(p.why, 130))}</p>` : ''}
+  </div>
+</a>`;
+    }
+
+    function miniCard(p) {
+      const hook  = firstHook(p.angle) || p.title;
+      const color = warm(p.title);
+
+      const imgEl = p.image
+        ? `<img src="${esc(p.image)}" alt="" loading="lazy" onerror="this.parentElement.style.background='${color}';this.remove()">`
+        : '';
+
+      return `
+<a class="mini-card" href="${esc(p.link||'#')}" target="_blank" rel="noopener noreferrer" aria-label="${esc(hook)}">
+  <div class="mini-img" style="background:${color}">
+    ${imgEl}
+    <span class="mini-score-pill">${p.score}</span>
+  </div>
+  <div class="mini-body">
+    <div class="mini-source">${esc(cleanSrc(p.source))}</div>
+    <h3 class="mini-headline">${esc(hook)}</h3>
+  </div>
+</a>`;
+    }
+
+    function listCard(p) {
+      const hook   = firstHook(p.angle) || p.title;
+      const color  = warm(p.title);
+      const scoreC = p.score >= 7 ? 'score-hi' : 'score-lo';
+      const t      = ago(p.runDate, p.runTime);
+
+      const thumbEl = `
+<div class="list-thumb" style="background:${color}">
+  ${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy" onerror="this.parentElement.style.background='${color}';this.remove()">` : ''}
+</div>`;
+
+      const clusterEl = (p.cluster_size > 1 && p.cluster_sources?.length)
+        ? clusterStrip(p)
+        : '';
+
+      return `
+<a class="list-card" href="${esc(p.link||'#')}" target="_blank" rel="noopener noreferrer" aria-label="${esc(hook)}">
+  <div class="list-main">
+    <div class="list-body">
+      <div class="list-meta-row">
+        <span class="score-pill ${scoreC}">${p.score}</span>
+        <span class="list-source">${esc(cleanSrc(p.source))}</span>
+        ${trendBadge(p.trend_label)}
+        ${t ? `<span class="list-time">${esc(t)}</span>` : ''}
+      </div>
+      <h3 class="list-headline">${esc(hook)}</h3>
+      ${p.why ? `<p class="list-why">${esc(trunc(p.why, 150))}</p>` : ''}
+    </div>
+    ${thumbEl}
+  </div>
+  ${clusterEl}
+</a>`;
+    }
+
+    function clusterStrip(p) {
+      const sources = p.cluster_sources || [];
+      const shown   = sources.slice(0, 3);
+      const extra   = sources.length - shown.length;
+      const pills   = shown.map(s => `<span class="cluster-pill">${esc(cleanSrc(s))}</span>`).join('');
+      const more    = extra > 0 ? `<span class="cluster-more">+${extra} more</span>` : '';
+      return `
+<div class="cluster-strip">
+  ${pills}${more}
+  <span class="cluster-expand">↓</span>
+</div>`;
+    }
+
+    /* ── Filter ─────────────────────────────────────────────── */
+    function picks() {
+      switch (activeFilter) {
+        case 'top':  return allPicks.filter(p => p.score >= 8);
+        case 'live': return allPicks.filter(p => p.from_live || !!p.trend_label);
+        default:     return allPicks;
+      }
+    }
+
+    /* ── Render ─────────────────────────────────────────────── */
+    function render() {
+      const feed = document.getElementById('js-feed');
+      const list = picks();
+
+      if (!list.length) {
+        feed.innerHTML = `<div class="state-center"><h2 class="state-h2">Nothing here</h2><p class="state-p">Try a different filter.</p></div>`;
+        return;
+      }
+
+      document.getElementById('js-meta').textContent = `${list.length} picks`;
+
+      let html = heroCard(list[0]);
+
+      if (list.length > 1) {
+        html += `<div class="section-header"><span class="section-title">More Stories</span></div>`;
+
+        // 2-up mini grid (picks 1 & 2)
+        html += `<div class="mini-grid">`;
+        list.slice(1, 3).forEach(p => { html += miniCard(p); });
+        html += `</div>`;
+
+        // List cards (picks 3+)
+        list.slice(3).forEach(p => { html += listCard(p); });
+      }
+
+      feed.innerHTML = html;
+    }
+
+    /* ── Data loading ───────────────────────────────────────── */
+    async function load() {
+      try {
+        const res = await fetch('./picks_data.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        // Flatten the 10 most recent runs into a single picks list
+        const runs = (data.runs || []).slice(0, 10);
+        allPicks = [];
+        runs.forEach(run => {
+          (run.picks || []).forEach(pick => {
+            allPicks.push({ ...pick, runDate: run.date, runTime: run.time });
+          });
+        });
+
+        if (runs[0]) {
+          document.getElementById('js-date').textContent = runs[0].display_date;
+          document.title = `Blank — ${runs[0].display_date}`;
+        }
+
+        render();
+      } catch (err) {
+        document.getElementById('js-feed').innerHTML = `
+<div class="state-center">
+  <h2 class="state-h2">Feed unavailable</h2>
+  <p class="state-p">Unable to load picks. Check back shortly.</p>
+</div>`;
+        console.error('Blank: feed load failed:', err);
+      }
+    }
+
+    /* ── Filter pill interaction ────────────────────────────── */
+    document.querySelectorAll('.pill[data-f]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.pill[data-f]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.dataset.f;
+        render();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    /* ── Service worker ─────────────────────────────────────── */
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    }
+
+    /* ── Boot ───────────────────────────────────────────────── */
+    load();
+  </script>
 </body>
 </html>

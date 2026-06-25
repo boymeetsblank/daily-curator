@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-24] UI: The Canvas redesign — web feed overhaul
+
+Replaced the static hardcoded `index.html` with a fully dynamic, design-system-faithful implementation of "The Canvas" direction from the Blank News Reader design handoff. The page now fetches `picks_data.json` at runtime and renders a live feed. Key changes: hero card (full-bleed image + gradient overlay, score pill, "Top Story" badge), 2-up mini grid for picks 2–3, list cards with score pills (amber ≥7, muted ≤6), cluster strips showing cross-source coverage, trend badges, and warm placeholder colors for articles without images. Typography uses DM Mono (wordmark/metadata), DM Sans (UI/body), and Newsreader (headlines). Filter pills added: All, Top Picks (score ≥8), Live (from_live or trending). Sticky app bar with backdrop blur. Service worker registration preserved. `__VOTE_TOKEN__` and `__VAPID_PUBLIC_KEY__` placeholders retained for deploy-workflow injection.
+
 ## [2026-06-24] Fix: Reddit 429 rate-limiting â€” user-agent + inter-request delay
 
 Added `USER_AGENT = "blank-engine/0.1 (personal feed reader)"` constant to `ingest.py` and passed it through `feedparser.parse(..., agent=USER_AGENT)` on every feed fetch. Reddit (and some other hosts) rejects requests with a generic or absent user-agent, causing all-or-most Reddit sources to get 429'd in bursts. Added `REDDIT_DELAY = 2.0` constant and a delay pass in `poll_all_active()`: before each Reddit source is polled, the loop checks how long it's been since the last Reddit request and sleeps the remainder of `REDDIT_DELAY` if needed â€” keeping requests at least 2 s apart. Non-Reddit sources are unaffected. All 20 active Reddit sources were already active in the DB; no reactivation was needed. Tested against all 20 Reddit sources: **20/20 succeeded with 0 errors** (vs 1/19 previously). Also fixed a pre-existing `_sqlite3` name error in the `__main__` block.
