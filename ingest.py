@@ -17,6 +17,14 @@ import feedparser
 
 import db
 
+# User-Agent sent with every feed request. Reddit and some other hosts reject
+# requests without a descriptive agent string.
+USER_AGENT = "blank-engine/0.1 (personal feed reader)"
+
+# Minimum seconds between consecutive Reddit RSS polls to avoid 429s.
+# Non-Reddit sources are not delayed.
+REDDIT_DELAY = 2.0
+
 # Items older than this are skipped when a source is polled for the first time
 BACKLOG_CUTOFF_HOURS = 48
 
@@ -77,7 +85,7 @@ def poll_source(source: dict, db_path: str = db.DB_PATH) -> dict:
     error_count = 0
 
     try:
-        feed = feedparser.parse(source_url)
+        feed = feedparser.parse(source_url, agent=USER_AGENT)
     except Exception as exc:
         print(f"  [ERROR] Failed to fetch {source_url}: {exc}")
         return {"source_id": source_id, "new": 0, "skipped": 0, "errors": 1}
@@ -196,8 +204,22 @@ def poll_all_active(db_path: str = db.DB_PATH) -> dict:
     total_new = total_skipped = total_errors = 0
     sources_polled = 0
     sources_failed = 0
+    last_reddit_at: float = 0.0  # timestamp of the last Reddit poll start
 
     for source in sources:
+        is_reddit = "reddit.com" in source["url"]
+
+        # Space out Reddit requests to avoid 429s. Non-Reddit sources are
+        # unaffected. The delay applies before each Reddit poll (except the
+        # very first one when last_reddit_at is 0).
+        if is_reddit and last_reddit_at:
+            since = time.time() - last_reddit_at
+            if since < REDDIT_DELAY:
+                time.sleep(REDDIT_DELAY - since)
+
+        if is_reddit:
+            last_reddit_at = time.time()
+
         print(f"Polling [{source['name']}] {source['url']}")
         try:
             result = poll_source(source, db_path=db_path)
@@ -247,7 +269,7 @@ if __name__ == "__main__":
     print()
 
     # Print 5 most recent items
-    con = _sqlite3.connect(db.DB_PATH)
+    con = sqlite3.connect(db.DB_PATH)
     con.row_factory = _sqlite3.Row
     rows = con.execute(
         """
