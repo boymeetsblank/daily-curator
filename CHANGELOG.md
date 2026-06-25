@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-25] Feat: cluster expand reveals clickable article perspectives
+
+Expanding a cluster strip now shows an "Other perspectives" drawer with each related article as a clickable row — source name in amber mono above an italic serif headline. Rows have an amber left-border rule on hover. Restructured list card HTML so the main `<a>` and the cluster section are siblings inside `.list-card-outer` (valid HTML — nested `<a>` tags are not). CSS transitions use max-height for smooth open/close. Condition for showing the cluster section now also triggers when `related_articles` has entries, even if cluster_size is 1.
+
 ## [2026-06-25] Fix: blank.yml merge conflicts + blank.db feed integration
 
 `blank.yml` no longer commits `index.html` — only `blank.db` is staged per run, eliminating the rebase conflict with the Canvas design. `deploy-pages.yml` now reads scored items directly from `blank.db` (scores ≥ 6, last 72 hours), groups them into synthetic hour-batch runs, and merges them into `picks_data.json` alongside picks/*.md data — so the Canvas feed displays new-engine articles.
