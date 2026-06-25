@@ -34,7 +34,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install feedparser anthropic python-dotenv
+        run: pip install feedparser anthropic python-dotenv requests
 
       - name: Run pipeline
         env:

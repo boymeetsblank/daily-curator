@@ -88,6 +88,12 @@ def main() -> None:
             f"  Skipped (dedup): {result['total_skipped']}"
         )
 
+    # ── 1.5. Enrich OG images ─────────────────────────────────────────────
+    result, elapsed, err = _run_stage("Enrich OG", ingest.enrich_og_images)
+    stage_log["enrich_og"] = (elapsed, err)
+    if result:
+        print(f"\n  OG images found  : {result['enriched']}/{result['attempted']}")
+
     # ── 2. Triage ──────────────────────────────────────────────────────────
     result, elapsed, err = _run_stage("Triage", triage.run_triage)
     stage_log["triage"] = (elapsed, err)

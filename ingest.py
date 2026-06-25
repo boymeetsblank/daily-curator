@@ -10,10 +10,12 @@ Does not touch daily_curator.py or any part of the existing pipeline.
 import re
 import sqlite3
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from typing import Optional
 
 import feedparser
+import requests
 
 import db
 
@@ -208,6 +210,83 @@ def _update_last_polled(source_id: int, db_path: str) -> None:
         con.commit()
     finally:
         con.close()
+
+
+def _fetch_og_image(url: str) -> Optional[str]:
+    """
+    Fetch a single article URL and extract its og:image meta tag.
+    Returns the image URL string, or None if not found or on any error.
+    Hard timeout of 5 seconds.
+    """
+    try:
+        response = requests.get(
+            url,
+            timeout=5,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; BlankEngine/1.0)"},
+            allow_redirects=True,
+        )
+        if not response.ok:
+            return None
+        if "html" not in response.headers.get("content-type", ""):
+            return None
+        html = response.text[:50000]
+        match = re.search(
+            r'<meta[^>]+(?:'
+            r'property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']'
+            r'|content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']'
+            r')',
+            html, re.IGNORECASE
+        )
+        if match:
+            return (match.group(1) or match.group(2)).strip() or None
+        return None
+    except Exception:
+        return None
+
+
+def enrich_og_images(db_path: str = db.DB_PATH) -> dict:
+    """
+    For items inserted in the last 15 minutes that have no image_url, fetch
+    the article page and extract og:image as a fallback. Runs 10 concurrent
+    workers with a 5-second per-request timeout.
+    """
+    con = sqlite3.connect(db_path)
+    try:
+        rows = con.execute(
+            "SELECT id, url FROM items "
+            "WHERE image_url IS NULL AND fetched_at >= datetime('now', '-15 minutes')"
+        ).fetchall()
+    finally:
+        con.close()
+
+    if not rows:
+        print("  No new items need OG enrichment.")
+        return {"enriched": 0, "attempted": 0}
+
+    print(f"  Fetching OG images for {len(rows)} items...")
+    enriched = 0
+    con = sqlite3.connect(db_path)
+    try:
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            future_to_id = {
+                executor.submit(_fetch_og_image, url): item_id
+                for item_id, url in rows
+            }
+            for future in as_completed(future_to_id):
+                item_id = future_to_id[future]
+                og_url = future.result()
+                if og_url:
+                    con.execute(
+                        "UPDATE items SET image_url = ? WHERE id = ?",
+                        (og_url, item_id),
+                    )
+                    enriched += 1
+        con.commit()
+    finally:
+        con.close()
+
+    print(f"  Found OG images for {enriched}/{len(rows)} items.")
+    return {"enriched": enriched, "attempted": len(rows)}
 
 
 def poll_all_active(db_path: str = db.DB_PATH) -> dict:

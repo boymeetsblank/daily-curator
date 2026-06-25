@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-25] Feat: OG image enrichment for blank engine items
+
+`ingest.py` only extracted inline RSS images, leaving 76% of items without thumbnails (TechCrunch: 0%, Google News: 0%, Hypebeast: 0%). Added `_fetch_og_image()` and `enrich_og_images()` to `ingest.py` — after ingestion, items with no `image_url` from the last 15 minutes are enriched by concurrently fetching `og:image` from their article pages (10 workers, 5s timeout each). Added as a new "Enrich OG" stage in `run_pipeline.py` between Ingest and Triage. Also adds `requests` to blank.yml's pip install line.
+
 ## [2026-06-25] Fix: blank.db articles show actual publish date, not scored_at time
 
 Articles from blank.db were displaying "1h ago" based on when the engine processed them (`scored_at`), not when they were actually published. For example, a Jun 23 article scored today was showing "1h ago" instead of "2d ago". Fix: `published_at` is now included in the pick object written to picks_data.json. `index.html` uses a new `agoFromISO()` helper and prefers `published_at` over `runDate`/`runTime` when it's available. picks/*.md items are unaffected (no `published_at` field).
