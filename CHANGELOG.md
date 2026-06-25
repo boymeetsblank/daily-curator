@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-24] Fix: og:image enrichment for live cluster picks
+
+Added `_fetch_og_image()` to `breaking_news_check.py` (mirrors the same helper in `daily_curator.py`). Both live pick write paths (single-item escalation and cluster escalation) now fetch the og:image from the primary article URL before writing the picks file, and emit `**Image:** <url>` when one is found. Google News redirect URLs are followed automatically. Live cluster cards in the web feed will now show real article thumbnails instead of placeholder colors.
+
 ## [2026-06-24] UI: The Canvas redesign — web feed overhaul
 
 Replaced the static hardcoded `index.html` with a fully dynamic, design-system-faithful implementation of "The Canvas" direction from the Blank News Reader design handoff. The page now fetches `picks_data.json` at runtime and renders a live feed. Key changes: hero card (full-bleed image + gradient overlay, score pill, "Top Story" badge), 2-up mini grid for picks 2–3, list cards with score pills (amber ≥7, muted ≤6), cluster strips showing cross-source coverage, trend badges, and warm placeholder colors for articles without images. Typography uses DM Mono (wordmark/metadata), DM Sans (UI/body), and Newsreader (headlines). Filter pills added: All, Top Picks (score ≥8), Live (from_live or trending). Sticky app bar with backdrop blur. Service worker registration preserved. `__VOTE_TOKEN__` and `__VAPID_PUBLIC_KEY__` placeholders retained for deploy-workflow injection.

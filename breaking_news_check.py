@@ -312,12 +312,15 @@ Items:
         score = item.get("haiku_score", 9)
         why   = result.get("why", "").strip()
         hook  = result.get("hook", "").strip()
+        img   = _fetch_og_image(item.get("search_url", ""))
 
         block  = f"## Pick #{i} — Score: {score}/10\n\n"
         block += f"**{item['topic']}**\n"
         block += f"*{item['source_name']}*\n"
         block += f"[Read the full article →]({item['search_url']})\n"
         block += "**Live Pick:** true\n"
+        if img:
+            block += f"**Image:** {img}\n"
         if why:
             block += f"\n**Why it matters:**\n{why}\n"
         if hook:
@@ -336,6 +339,30 @@ Items:
         f.write(header + "\n".join(blocks))
 
     print(f"   📝 Wrote {len(blocks)} live pick(s) to {filepath}")
+
+
+def _fetch_og_image(url: str) -> str | None:
+    """Fetch og:image from an article URL, following redirects. Returns None on any error."""
+    try:
+        response = requests.get(
+            url,
+            timeout=5,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; DailyCurator/1.0)"},
+            allow_redirects=True,
+        )
+        if not response.ok or "html" not in response.headers.get("content-type", ""):
+            return None
+        html = response.text[:50000]
+        match = re.search(
+            r'<meta[^>]+(?:'
+            r'property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']'
+            r'|content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']'
+            r')',
+            html, re.IGNORECASE
+        )
+        return (match.group(1) or match.group(2)).strip() or None if match else None
+    except Exception:
+        return None
 
 
 def cluster_new_items(new_items: list[dict], live_clusters: dict, api_key: str) -> dict:
@@ -618,11 +645,15 @@ Respond with JSON only:
         header   += f"> **Source:** Live feed — {n_src}-signal cluster\n"
         header   += f"> **Picks surfaced:** 1\n\n---\n\n"
 
+        img = _fetch_og_image(primary.get("search_url", ""))
+
         block  = f"## Pick #1 — Score: 8/10\n\n"
         block += f"**{title}**\n"
         block += f"*{src_label}*\n"
         block += f"[Read the full article →]({primary['search_url']})\n"
         block += "**Live Pick:** true\n"
+        if img:
+            block += f"**Image:** {img}\n"
         if why:
             block += f"\n**Why it matters:**\n{why}\n"
         if hook:
