@@ -161,10 +161,16 @@ def _render_card(item: dict, now: datetime) -> str:
     why = _esc(item.get("why") or "")
     title = _esc(item.get("title") or "")
     url = item.get("url") or "#"
+    image_url = item.get("image_url") or ""
     source_display = _esc(_source_from_url(url))
     label = _score_label(score)
     age = _rel_time(item.get("published_at") or item.get("fetched_at"), now)
+    img_html = (
+        f'<img class="card-img" src="{_esc(image_url)}" alt="" loading="lazy">'
+        if image_url else ""
+    )
     return f"""    <article class="card">
+      {img_html}
       <div class="card-meta">
         <span class="score score-{score}">{score}</span>
         <span class="label">{label}</span>
@@ -214,6 +220,7 @@ def generate_html(items: list[dict]) -> str:
                 "why": i.get("why") or "",
                 "title": i.get("title") or "",
                 "url": i.get("url") or "#",
+                "image_url": i.get("image_url") or "",
                 "published_at": i.get("published_at") or i.get("fetched_at") or "",
             }
             for i in deferred
@@ -304,6 +311,16 @@ def generate_html(items: list[dict]) -> str:
     .card {{
       border-bottom: 1px solid var(--border);
       padding: 24px 0;
+    }}
+
+    .card-img {{
+      display: block;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 14px;
+      background: var(--surface);
     }}
 
     .card:first-child {{
@@ -473,13 +490,16 @@ def generate_html(items: list[dict]) -> str:
         var why = esc(item.why || '');
         var title = esc(item.title || '');
         var url = item.url || '#';
+        var img = item.image_url || '';
         var src = esc(sourceFromUrl(url));
         var label = scoreLabel(score);
         var age = relTime(item.published_at);
         var agePart = age ? ' · ' + age : '';
+        var imgPart = img ? '<img class="card-img" src="' + esc(img) + '" alt="" loading="lazy">' : '';
         var whyPart = why ? '<p class="why">' + why + '</p>' : '';
         var titlePart = (title && title !== hook) ? '<p class="title-sub">' + title + '</p>' : '';
         return '<article class="card">'
+          + imgPart
           + '<div class="card-meta">'
           + '<span class="score score-' + score + '">' + score + '</span>'
           + '<span class="label">' + label + '</span>'

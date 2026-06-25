@@ -113,6 +113,27 @@ def poll_source(source: dict, db_path: str = db.DB_PATH) -> dict:
                 skipped_count += 1
                 continue
 
+            # Extract inline image: media:content → enclosure → media_thumbnail
+            image_url = None
+            for m in entry.get("media_content", []):
+                u = (m.get("url") or "").strip()
+                if u.startswith("http"):
+                    image_url = u
+                    break
+            if not image_url:
+                for enc in entry.get("enclosures", []):
+                    u = (enc.get("url") or "").strip()
+                    t = enc.get("type", "")
+                    if u.startswith("http") and (t.startswith("image/") or not t):
+                        image_url = u
+                        break
+            if not image_url:
+                for thumb in entry.get("media_thumbnail", []):
+                    u = (thumb.get("url") or "").strip()
+                    if u.startswith("http"):
+                        image_url = u
+                        break
+
             published_at = _parse_date(entry)
 
             # When the feed provides no pubDate (common with Google News), treat
@@ -138,6 +159,7 @@ def poll_source(source: dict, db_path: str = db.DB_PATH) -> dict:
                 url=url,
                 title=title,
                 description=description,
+                image_url=image_url,
                 published_at=published_at,
                 raw_engagement={},
                 db_path=db_path,

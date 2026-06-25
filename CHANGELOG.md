@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-24] Fix: image support in continuous pipeline (db → ingest → publish)
+
+Added `image_url TEXT` column to `items` table in `db.py`. `init_db()` runs `ALTER TABLE items ADD COLUMN image_url TEXT` as a migration so existing `blank.db` files upgrade automatically. `insert_item()` now accepts `image_url`. `get_feed()` now includes `image_url` in its SELECT. In `ingest.py`, each feedparser entry is checked for `media_content` → `enclosures` → `media_thumbnail` (in that order) to extract an inline image URL, which is passed to `insert_item()`. In `publish.py`, `_render_card()` renders a `<img class="card-img">` when an image is present, the deferred JSON includes `image_url`, and the lazy-load `renderCard()` JS function does the same.
+
 ## [2026-06-24] Fix: cluster expand button now works
 
 Changed the cluster expand trigger from a static `<span>` (no handler) to a `<button>` with event delegation on `#js-feed`. All source pills are now pre-rendered in the DOM (extras marked `.cluster-pill-extra`); CSS toggles their visibility when `.cluster-strip.expanded` is set. Clicking the button stops propagation so the card link doesn't fire, toggles the expanded class, and swaps the arrow between `↓` and `↑`.

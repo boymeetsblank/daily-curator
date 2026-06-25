@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS items (
     content_hash   TEXT    NOT NULL UNIQUE,  -- for score-once dedup
     title          TEXT    NOT NULL,
     description    TEXT,
+    image_url      TEXT,
     published_at   TEXT,
     fetched_at     TEXT    NOT NULL,
     raw_engagement TEXT    NOT NULL DEFAULT '{}'  -- JSON
@@ -113,6 +114,11 @@ def init_db(db_path: str = DB_PATH) -> None:
     """Create tables and indexes if they don't exist."""
     with _conn(db_path) as con:
         con.executescript(SCHEMA)
+        # Migrations: add columns that didn't exist in older DB files
+        try:
+            con.execute("ALTER TABLE items ADD COLUMN image_url TEXT")
+        except Exception:
+            pass  # column already exists
 
 
 # ---------------------------------------------------------------------------
@@ -151,6 +157,7 @@ def insert_item(
     url: str,
     title: str,
     description: Optional[str] = None,
+    image_url: Optional[str] = None,
     published_at: Optional[str] = None,
     raw_engagement: Optional[dict] = None,
     db_path: str = DB_PATH,
@@ -178,11 +185,11 @@ def insert_item(
                 """
                 INSERT INTO items
                     (source_id, url, content_hash, title, description,
-                     published_at, fetched_at, raw_engagement)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                     image_url, published_at, fetched_at, raw_engagement)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (source_id, url, content_hash, title, description,
-                 published_at, fetched_at, engagement_json),
+                 image_url, published_at, fetched_at, engagement_json),
             )
         except sqlite3.IntegrityError:
             # URL collision — return that row's id
@@ -409,8 +416,8 @@ def get_feed(
     with _conn(db_path) as con:
         rows = con.execute(
             """
-            SELECT i.id, i.url, i.title, i.description, i.published_at,
-                   i.fetched_at, i.raw_engagement,
+            SELECT i.id, i.url, i.title, i.description, i.image_url,
+                   i.published_at, i.fetched_at, i.raw_engagement,
                    s.score, s.criteria, s.why, s.hook, s.scored_at,
                    src.id   AS source_id,
                    src.name AS source_name
