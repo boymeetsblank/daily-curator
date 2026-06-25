@@ -312,7 +312,7 @@ Items:
         score = item.get("haiku_score", 9)
         why   = result.get("why", "").strip()
         hook  = result.get("hook", "").strip()
-        img   = _fetch_og_image(item.get("search_url", ""))
+        img   = item.get("image") or _fetch_og_image(item.get("search_url", ""))
 
         block  = f"## Pick #{i} — Score: {score}/10\n\n"
         block += f"**{item['topic']}**\n"
@@ -339,6 +339,20 @@ Items:
         f.write(header + "\n".join(blocks))
 
     print(f"   📝 Wrote {len(blocks)} live pick(s) to {filepath}")
+
+
+def _reddit_image(post: dict) -> str | None:
+    """Extract the best available image URL from a Reddit post JSON object."""
+    try:
+        url = post["preview"]["images"][0]["source"]["url"]
+        if url:
+            return url.replace("&amp;", "&")
+    except (KeyError, IndexError):
+        pass
+    thumb = post.get("thumbnail", "")
+    if thumb and thumb.startswith("http"):
+        return thumb
+    return None
 
 
 def _fetch_og_image(url: str) -> str | None:
@@ -645,7 +659,7 @@ Respond with JSON only:
         header   += f"> **Source:** Live feed — {n_src}-signal cluster\n"
         header   += f"> **Picks surfaced:** 1\n\n---\n\n"
 
-        img = _fetch_og_image(primary.get("search_url", ""))
+        img = primary.get("image") or _fetch_og_image(primary.get("search_url", ""))
 
         block  = f"## Pick #1 — Score: 8/10\n\n"
         block += f"**{title}**\n"
@@ -975,6 +989,7 @@ def fetch_reddit_culture_hot(known_set: set[str], now_iso: str) -> list[dict]:
                 "search_url":  f"https://www.reddit.com{permalink}",
                 "source_name": f"r/{sub}",
                 "source_type": "reddit",
+                "image":       _reddit_image(post),
             })
 
     print(f"   🟠 Got {len(new_items)} new culture subreddit post(s).")
@@ -1096,10 +1111,27 @@ def fetch_feed_articles(feed: dict, window_minutes: int) -> list[dict]:
         if pub_dt and pub_dt < cutoff:
             continue
 
+        # Extract inline image: try media:content (MRSS namespace) then enclosure
+        image_url = None
+        for mrss_ns in ('http://search.yahoo.com/mrss/', 'http://video.search.yahoo.com/mrss/'):
+            el = item.find(f'{{{mrss_ns}}}content')
+            if el is not None:
+                u = el.get('url', '')
+                if u.startswith('http'):
+                    image_url = u
+                    break
+        if not image_url:
+            enc = item.find('enclosure')
+            if enc is not None:
+                u = enc.get('url', '')
+                if u.startswith('http'):
+                    image_url = u
+
         articles.append({
             "title":       title,
             "link":        link,
             "source_name": feed["name"],
+            "image":       image_url,
         })
 
     return articles
@@ -1198,6 +1230,7 @@ def fetch_reddit_hot_posts(known_set: set[str], now_iso: str) -> list[dict]:
                 "search_url":  url_dest,
                 "source_name": f"r/{sub}",
                 "source_type": "reddit",
+                "image":       _reddit_image(post),
             })
 
     return new_items
@@ -1260,6 +1293,7 @@ def fetch_reddit_all_hot(known_set: set[str], now_iso: str) -> list[dict]:
             "search_url":  f"https://www.reddit.com{permalink}",
             "source_name": f"Reddit r/all ({subreddit})",
             "source_type": "reddit",
+            "image":       _reddit_image(post),
         })
 
     print(f"   🟠 Got {len(new_items)} new r/all post(s).")
@@ -1357,6 +1391,7 @@ def main():
                     "search_url":  art["link"],
                     "source_name": art["source_name"],
                     "source_type": "feed",
+                    "image":       art.get("image"),
                 })
 
     reddit_candidates = fetch_reddit_hot_posts(known_set, now_iso)

@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-24] Fix: extract inline images from RSS feeds and Reddit API
+
+`fetch_feed_articles` now extracts `<media:content url>` (MRSS namespace, both Yahoo variants) and `<enclosure url>` from each RSS item and includes an `image` field in the returned article dict. All three Reddit fetch functions (`fetch_reddit_hot_posts`, `fetch_reddit_all_hot`, `fetch_reddit_culture_hot`) now call `_reddit_image(post)` to pull the high-res preview URL (or thumbnail fallback) from Reddit's JSON response. The inline image is preferred in both pick write paths; `_fetch_og_image()` is only called as a fallback when no inline image is available. Added `_reddit_image()` helper that decodes HTML-encoded `&amp;` in Reddit CDN URLs.
+
 ## [2026-06-24] Feature: infinite scroll — 50 picks per page
 
 Feed now loads 50 picks at a time. An IntersectionObserver on a sentinel element at the bottom fires when the user nears the end, appending the next 50 picks without a page reload. Newly added cards animate in with a staggered `translateY` + fade (first 7 cards, 42ms apart). Three bouncing dots mark the sentinel while the next batch is pending. A `· · ·` end-of-feed marker appears when all picks are exhausted. The 100-pick cap on data loading is removed — all picks across all runs are now available for pagination.
