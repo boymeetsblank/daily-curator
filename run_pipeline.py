@@ -5,13 +5,12 @@ Runs the full cascade in order:
   1. Ingest   — poll active RSS sources, dedup into DB
   2. Triage   — Haiku KILL/ESCALATE for new items
   3. Score    — Sonnet 1–10 scoring for escalated items
-  4. Publish  — write static index.html (git handled by the workflow, not here)
 
 Each stage is wrapped so a failure in one logs cleanly and the pipeline
-continues where it can (e.g. score failure still publishes what's already
-scored; ingest failure still triages + scores items from previous runs).
+continues where it can (e.g. score failure still triages items from previous
+runs; ingest failure still scores already-escalated items).
 
-Git commit of blank.db + index.html is handled by blank.yml, not this script.
+Git commit of blank.db is handled by blank.yml, not this script.
 """
 
 import os
@@ -33,7 +32,6 @@ import db
 import ingest
 import triage
 import score
-import publish
 
 
 # ---------------------------------------------------------------------------
@@ -113,13 +111,6 @@ def main() -> None:
                 f"{s}x{dist[s]}" for s in sorted(dist.keys(), reverse=True) if dist[s]
             )
             print(f"  Distribution   : {dist_line}")
-
-    # ── 4. Publish ─────────────────────────────────────────────────────────
-    # no_push=True: writes index.html, skips git (workflow handles git)
-    result, elapsed, err = _run_stage(
-        "Publish", publish.run_publish, no_push=True
-    )
-    stage_log["publish"] = (elapsed, err)
 
     # ── Summary ────────────────────────────────────────────────────────────
     total_elapsed = (datetime.now(timezone.utc) - started_at).total_seconds()

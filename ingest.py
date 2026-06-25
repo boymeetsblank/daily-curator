@@ -298,7 +298,7 @@ if __name__ == "__main__":
 
     # Print 5 most recent items
     con = sqlite3.connect(db.DB_PATH)
-    con.row_factory = _sqlite3.Row
+    con.row_factory = sqlite3.Row
     rows = con.execute(
         """
         SELECT i.title, i.url, i.published_at, s.name AS source

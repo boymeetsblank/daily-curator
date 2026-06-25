@@ -49,10 +49,12 @@ jobs:
           # Exit cleanly if nothing changed (happens when no new items arrived)
           git diff --staged --quiet && echo "Nothing to commit — skipping." && exit 0
           git commit -m "Engine run $(date -u +'%Y-%m-%d %H:%M UTC')"
-          # Retry push up to 4 times — other workflows (breaking_news, daily_curator)
-          # push to main frequently and can cause rebase conflicts.
+          # Retry push up to 4 times. Track success explicitly — the loop
+          # itself exits 0 even on total failure, which would hide the error.
+          PUSH_OK=0
           for i in 1 2 3 4; do
-            git pull --rebase origin main && git push origin main && break
+            git pull --rebase origin main && git push origin main && PUSH_OK=1 && break
             echo "Push attempt $i failed, retrying in ${i}0s..."
             sleep $((i * 10))
           done
+          [ "$PUSH_OK" = "1" ] || { echo "ERROR: All 4 push attempts failed."; exit 1; }
