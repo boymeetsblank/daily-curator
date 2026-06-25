@@ -426,7 +426,10 @@
       align-items: center;
       gap: 5px;
       flex-wrap: wrap;
+      cursor: pointer;
+      user-select: none;
     }
+    .cluster-strip:hover { background: var(--border); }
     .cluster-pill {
       font-family: var(--sans);
       font-size: 9px;
@@ -527,6 +530,20 @@
       font-style: italic;
       color: var(--ink);
       line-height: 1.4;
+    }
+    .perspective-row--static { cursor: default; }
+    .perspective-row--static:hover { background: none; }
+    .perspective-row--static::before { display: none; }
+    .perspective-hint {
+      font-family: var(--sans);
+      font-size: 10px;
+      color: var(--ink-3);
+    }
+    .cluster-perspectives-more {
+      font-family: var(--mono);
+      font-size: 8px;
+      color: var(--ink-4);
+      padding-top: 8px;
     }
 
     /* ── Trend badge ─────────────────────────────────────────── */
@@ -853,14 +870,31 @@
         : '';
 
       const articles = (p.related_articles || []).filter(a => a.url);
-      const perspectivesEl = articles.length ? `
+      let perspectivesRows = '';
+      if (articles.length) {
+        // Full article links with titles
+        perspectivesRows = articles.map(a => `
+<a class="perspective-row" href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">
+  <span class="perspective-source">${esc(cleanSrc(a.source))}</span>
+  <span class="perspective-title">${esc(a.title)}</span>
+</a>`).join('');
+      } else if (sources.length) {
+        // Source names only — no article URL available
+        perspectivesRows = sources.map(s => `
+<div class="perspective-row perspective-row--static">
+  <span class="perspective-source">${esc(cleanSrc(s))}</span>
+  <span class="perspective-hint">Also covering this story</span>
+</div>`).join('');
+      }
+      const extraSources = clusterSz > sources.length
+        ? `<div class="cluster-perspectives-more">+${clusterSz - sources.length} additional sources</div>`
+        : '';
+      const perspectivesEl = (perspectivesRows || extraSources) ? `
 <div class="cluster-perspectives">
   <div class="cluster-perspectives-inner">
-    <div class="cluster-perspectives-label">Other perspectives</div>
-    ${articles.map(a => `<a class="perspective-row" href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">
-      <span class="perspective-source">${esc(cleanSrc(a.source))}</span>
-      <span class="perspective-title">${esc(a.title)}</span>
-    </a>`).join('')}
+    <div class="cluster-perspectives-label">Also covering this story</div>
+    ${perspectivesRows}
+    ${extraSources}
   </div>
 </div>` : '';
 
@@ -996,15 +1030,19 @@
 
     /* ── Cluster expand/collapse ───────────────────────────── */
     document.getElementById('js-feed').addEventListener('click', e => {
-      const btn = e.target.closest('.cluster-expand');
-      if (!btn) return;
+      const strip = e.target.closest('.cluster-strip');
+      if (!strip) return;
+      if (e.target.closest('a')) return; // let real links through
       e.preventDefault();
       e.stopPropagation();
-      const section  = btn.closest('.cluster-section');
+      const section  = strip.closest('.cluster-section');
       const expanded = section.classList.toggle('expanded');
-      btn.textContent = expanded ? '↑' : '↓';
-      btn.setAttribute('aria-expanded', String(expanded));
-      btn.setAttribute('aria-label', expanded ? 'Collapse perspectives' : 'Show perspectives');
+      const btn = strip.querySelector('.cluster-expand');
+      if (btn) {
+        btn.textContent = expanded ? '↑' : '↓';
+        btn.setAttribute('aria-expanded', String(expanded));
+        btn.setAttribute('aria-label', expanded ? 'Collapse' : 'Expand');
+      }
     });
 
     /* ── Filter pill interaction ────────────────────────────── */

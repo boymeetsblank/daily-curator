@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-25] Fix: cluster strip fully clickable; perspectives show source names
+
+Clicking anywhere on the cluster strip banner now expands it (not just the arrow). Added `cursor: pointer` and a hover tint to make the strip feel interactive. Fixed the empty-drawer problem: picks files don't have "Other angles" URLs, so `related_articles` is always null. Expanded drawer now falls back to showing each cluster source name as a "Also covering this story" entry. Static source rows are non-clickable but visually informative. Picks that do have `related_articles` URLs continue to show clickable article links.
+
 ## [2026-06-25] Feat: cluster expand reveals clickable article perspectives
 
 Expanding a cluster strip now shows an "Other perspectives" drawer with each related article as a clickable row — source name in amber mono above an italic serif headline. Rows have an amber left-border rule on hover. Restructured list card HTML so the main `<a>` and the cluster section are siblings inside `.list-card-outer` (valid HTML — nested `<a>` tags are not). CSS transitions use max-height for smooth open/close. Condition for showing the cluster section now also triggers when `related_articles` has entries, even if cluster_size is 1.
