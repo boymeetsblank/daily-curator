@@ -760,6 +760,19 @@
       } catch { return ''; }
     }
 
+    // Relative time from an ISO timestamp string (used for blank.db published_at)
+    function agoFromISO(iso) {
+      try {
+        const dt  = new Date(iso);
+        const min = Math.round((Date.now() - dt) / 60000);
+        if (min <  2)  return 'just now';
+        if (min < 60)  return `${min}m ago`;
+        const hr = Math.floor(min / 60);
+        if (hr  < 24)  return `${hr}h ago`;
+        return `${Math.floor(hr / 24)}d ago`;
+      } catch { return ''; }
+    }
+
     // Render the trend badge (X or Google), or empty string
     function trendBadge(label) {
       if (!label) return '';
@@ -772,7 +785,7 @@
     function heroCard(p) {
       const hook  = firstHook(p.angle) || p.title;
       const color = warm(p.title);
-      const t     = ago(p.runDate, p.runTime);
+      const t     = p.published_at ? agoFromISO(p.published_at) : ago(p.runDate, p.runTime);
 
       const bgEl = p.image
         ? `<img class="hero-bg" src="${esc(p.image)}" alt="" loading="eager" onerror="this.remove()">`
@@ -824,7 +837,7 @@
       const hook   = firstHook(p.angle) || p.title;
       const color  = warm(p.title);
       const scoreC = p.score >= 7 ? 'score-hi' : 'score-lo';
-      const t      = ago(p.runDate, p.runTime);
+      const t      = p.published_at ? agoFromISO(p.published_at) : ago(p.runDate, p.runTime);
       const aClass = entering ? ' card-entering' : '';
       const aStyle = (entering && delay) ? ` style="animation-delay:${delay}ms"` : '';
 

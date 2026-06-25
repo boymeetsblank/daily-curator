@@ -252,6 +252,7 @@ jobs:
                               'trend_label':     None,
                               'why':             d['why'] or '',
                               'angle':           d['hook'] or '',
+                              'published_at':    d['published_at'] or None,
                               'cluster_id':      None,
                               'cluster_size':    1,
                               'cluster_primary': True,

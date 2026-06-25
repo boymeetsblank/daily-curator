@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-25] Fix: blank.db articles show actual publish date, not scored_at time
+
+Articles from blank.db were displaying "1h ago" based on when the engine processed them (`scored_at`), not when they were actually published. For example, a Jun 23 article scored today was showing "1h ago" instead of "2d ago". Fix: `published_at` is now included in the pick object written to picks_data.json. `index.html` uses a new `agoFromISO()` helper and prefers `published_at` over `runDate`/`runTime` when it's available. picks/*.md items are unaffected (no `published_at` field).
+
 ## [2026-06-25] Fix: feed section labels (Morning/Afternoon/Evening) now use CT
 
 In `parse_file()` in `deploy-pages.yml`, the Morning/Afternoon/Evening label was being calculated from the raw UTC hour in the filename before the timezone conversion to CT. Moved the label block to after the `dt_ct` conversion so it uses the CT hour, matching the behavior already used in the blank.db merge section of the same file.
