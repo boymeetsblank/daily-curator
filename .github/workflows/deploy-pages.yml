@@ -47,16 +47,15 @@ jobs:
               if not m:
                   return None
               date_str, time_str = m.group(1), m.group(2)
-              hour = int(time_str[:2])
+              dt_utc = datetime.strptime(f'{date_str} {time_str}', '%Y-%m-%d %H%M').replace(tzinfo=timezone.utc)
+              dt_ct  = dt_utc.astimezone(CT)
+              hour   = dt_ct.hour
               if hour < 12:
                   label = 'Morning'
               elif hour < 18:
                   label = 'Afternoon'
               else:
                   label = 'Evening'
-              dt_utc = datetime.strptime(f'{date_str} {time_str}', '%Y-%m-%d %H%M').replace(tzinfo=timezone.utc)
-              dt_ct  = dt_utc.astimezone(CT)
-              hour   = dt_ct.hour
               # Format without leading-zero dependencies (all values from CT datetime)
               month  = dt_ct.strftime('%B')
               day    = str(dt_ct.day)

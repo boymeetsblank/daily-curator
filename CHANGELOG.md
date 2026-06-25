@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-25] Fix: feed section labels (Morning/Afternoon/Evening) now use CT
+
+In `parse_file()` in `deploy-pages.yml`, the Morning/Afternoon/Evening label was being calculated from the raw UTC hour in the filename before the timezone conversion to CT. Moved the label block to after the `dt_ct` conversion so it uses the CT hour, matching the behavior already used in the blank.db merge section of the same file.
+
 ## [2026-06-25] Fix: deploy-pages.yml now triggers after Blank Engine runs
 
 `deploy-pages.yml` triggers on `push` to main, but GitHub's security rule blocks bot pushes (via `GITHUB_TOKEN`) from triggering other workflows. So every time `blank.yml` committed and pushed `blank.db`, `deploy-pages.yml` never fired and the feed never rebuilt. Fix: added "Blank Engine" to the `workflow_run` list so `deploy-pages.yml` triggers on completion of `blank.yml` directly, regardless of who made the push.
