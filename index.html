@@ -449,14 +449,7 @@
         inset 0 1px 0 var(--glass-hi),
         inset 0 0 0 1px rgba(255,255,255,.05);
       overflow: hidden;
-      transform-origin: bottom center;
-      transition: transform .32s var(--ease), opacity .32s var(--ease);
     }
-    /* scrolling down: recede to be less prominent. scroll up / top: restore. */
-    .tabbar.shrink .tabbar-inner { transform: scale(.82); opacity: .9; }
-    .tabbar.shrink .tab span { opacity: 0; }
-    .tabbar.shrink .tab { gap: 0; }
-    .tab span { transition: opacity .24s var(--ease); }
     /* specular sheen — the iOS "liquid glass" lens highlight */
     .tabbar-inner::before {
       content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 1;
@@ -1000,18 +993,13 @@ ${top.map((p,i)=>rowCard(p,i)).join('')}`;
 
     /* ── Top-bar scrolled border + pull-to-refresh ─────────── */
     const topbar = document.getElementById('topbar');
-    const tabbar = document.querySelector('.tabbar');
     let lastY = 0;
     window.addEventListener('scroll', () => {
       const y = window.scrollY;
       topbar.classList.toggle('scrolled', y > 4);
-      if (y <= 4){                                                  // at the top → full size
-        topbar.classList.remove('hide'); tabbar.classList.remove('shrink');
-      } else if (y > lastY + 4){                                    // scrolling down → recede
-        topbar.classList.add('hide');    tabbar.classList.add('shrink');
-      } else if (y < lastY - 4){                                    // scrolling up → restore
-        topbar.classList.remove('hide'); tabbar.classList.remove('shrink');
-      }
+      if (y <= 4)               topbar.classList.remove('hide');   // always show at the top
+      else if (y > lastY + 4)   topbar.classList.add('hide');      // scrolling down → hide
+      else if (y < lastY - 4)   topbar.classList.remove('hide');   // scrolling up → reveal
       lastY = y;
     }, { passive: true });
 
