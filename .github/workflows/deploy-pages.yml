@@ -281,6 +281,50 @@ jobs:
               except Exception as e:
                   print(f'Warning: could not merge blank.db: {e}')
 
+          # ── Consolidate into ONE time-decay-ranked stream (single source of truth) ──
+          # Mirrors db.decayed_rank so the JSON arrives already in final order and
+          # every surface (this file, db.get_feed, the PWA) ranks identically. Flatten
+          # all runs, dedup by link/title, sort by decayed rank (recency as tiebreak),
+          # then emit a single ranked run — the PWA flattens runs in order, so one
+          # ordered run == final on-page order. published_at is the age basis, the
+          # pick's run wall-clock the fallback; no date -> age 0 (graceful).
+          try:
+              import db as _db
+              _now = datetime.now(timezone.utc)
+              flat, seen = [], set()
+              for run in runs:
+                  try:
+                      run_ts = datetime.strptime(f"{run['date']} {run['time']}", '%Y-%m-%d %H%M').replace(tzinfo=timezone.utc)
+                  except Exception:
+                      run_ts = None
+                  for p in run.get('picks', []):
+                      key = p.get('link') or p.get('title')
+                      if not key or key in seen:
+                          continue
+                      seen.add(key)
+                      ts = _db.rank_timestamp(p.get('published_at'), run_ts)
+                      p['_rank'] = _db.decayed_rank(p.get('score') or 0, p.get('published_at'), run_ts, _now)
+                      p['_ts'] = ts.timestamp() if ts else 0.0
+                      flat.append(p)
+              flat.sort(key=lambda p: (p['_rank'], p['_ts']), reverse=True)
+              for p in flat:
+                  p.pop('_rank', None)
+                  p.pop('_ts', None)
+              _ct = _now.astimezone(CT)
+              runs = [{
+                  'date':         _now.strftime('%Y-%m-%d'),
+                  'time':         _now.strftime('%H%M'),
+                  'ct_date':      _ct.strftime('%Y-%m-%d'),
+                  'label':        'Ranked',
+                  'display_date': f"{_ct.strftime('%B')} {_ct.day}, {_ct.year}",
+                  'display_time': '',
+                  'x_trends':     [],
+                  'picks':        flat,
+              }]
+              print(f'Ranked stream: {len(flat)} picks, DECAY_HOURS_PER_POINT={_db.DECAY_HOURS_PER_POINT}')
+          except Exception as e:
+              print(f'Warning: rank consolidation failed, leaving runs as-is: {e}')
+
           os.makedirs('site', exist_ok=True)
           out = {'runs': runs, 'generated_at': datetime.utcnow().isoformat() + 'Z'}
           with open('site/picks_data.json', 'w', encoding='utf-8') as f:

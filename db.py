@@ -20,6 +20,48 @@ DB_PATH = "blank.db"
 # items move through the pipeline across runs.
 PER_SOURCE_CAP = 15
 
+# ---------------------------------------------------------------------------
+# Feed ranking — SINGLE SOURCE OF TRUTH for time-decayed ordering
+# ---------------------------------------------------------------------------
+# Effective rank = score - ageHours / DECAY_HOURS_PER_POINT. A fresh high-scorer
+# tops the feed and gently sinks as it ages; recency lifts items but score
+# dominates. Shared by db.get_feed() AND the deploy-pages.yml feed builder so
+# every surface orders the feed identically. Tune the decay in this one place.
+DECAY_HOURS_PER_POINT = 12  # lose ~1 rank point every 12h of age
+
+
+def rank_timestamp(primary_ts, fallback_ts=None):
+    """
+    The timestamp used for ranking/recency: parsed `primary_ts` (published_at)
+    if present and valid, else `fallback_ts` (scored_at / run time). Accepts ISO
+    strings or datetimes; returns an aware UTC datetime, or None if neither
+    parses (caller treats that as age 0).
+    """
+    def _parse(v):
+        if v is None:
+            return None
+        if isinstance(v, datetime):
+            return v if v.tzinfo else v.replace(tzinfo=timezone.utc)
+        try:
+            dt = datetime.fromisoformat(str(v).replace("Z", "+00:00"))
+            return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+        except Exception:
+            return None
+    return _parse(primary_ts) or _parse(fallback_ts)
+
+
+def decayed_rank(score, primary_ts, fallback_ts=None, now=None):
+    """
+    Time-decayed rank: score - ageHours / DECAY_HOURS_PER_POINT, where age is
+    measured from primary_ts (published_at), falling back to fallback_ts
+    (scored_at / run time). An item with no usable timestamp gets age 0 (rank ==
+    score) so missing dates degrade gracefully instead of erroring.
+    """
+    now = now or datetime.now(timezone.utc)
+    dt = rank_timestamp(primary_ts, fallback_ts)
+    age_h = max(0.0, (now - dt).total_seconds() / 3600.0) if dt else 0.0
+    return (score or 0) - age_h / DECAY_HOURS_PER_POINT
+
 
 # ---------------------------------------------------------------------------
 # Schema
@@ -463,13 +505,26 @@ def get_feed(
 
     candidates = [dict(r) for r in rows]
 
-    # ── Before-balancing distribution (top 50 candidates by score) ────────────
+    # Order the candidate pool by the shared time-decayed rank (recency tiebreak)
+    # so this matches the live feed built in deploy-pages.yml — one ranking,
+    # every surface. published_at is the age basis, scored_at the fallback.
+    _now = datetime.now(timezone.utc)
+    _epoch = datetime.min.replace(tzinfo=timezone.utc)
+    candidates.sort(
+        key=lambda c: (
+            decayed_rank(c["score"], c.get("published_at"), c.get("scored_at"), _now),
+            (rank_timestamp(c.get("published_at"), c.get("scored_at")) or _epoch).timestamp(),
+        ),
+        reverse=True,
+    )
+
+    # ── Before-balancing distribution (top 50 candidates by rank) ─────────────
     before: dict[str, int] = {}
     for item in candidates[:50]:
         before[item["source_name"]] = before.get(item["source_name"], 0) + 1
 
-    print(f"\n-- Feed assembly: {len(candidates)} candidates, score >= {min_score}, last 72 h --")
-    print("  BEFORE balancing (top 50 by score):")
+    print(f"\n-- Feed assembly: {len(candidates)} candidates, score >= {min_score}, last 48 h --")
+    print("  BEFORE balancing (top 50 by rank):")
     for name, n in sorted(before.items(), key=lambda x: -x[1]):
         print(f"    {n:>3}  {name}")
 

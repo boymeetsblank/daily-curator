@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-27] Refactor: move time-decayed feed ranking into the engine (one source of truth)
+
+The "ranked living feed" ordering (rank = score − ageHours / `DECAY_HOURS_PER_POINT`, recency as tiebreak) was computed client-side in `index.html`, so surfaces could drift. Centralized it: `DECAY_HOURS_PER_POINT = 12` plus `decayed_rank()` / `rank_timestamp()` now live in `db.py` as the single tunable source of truth. `db.get_feed()` orders its candidate pool by decayed rank before source-balancing. `deploy-pages.yml` imports `db` and — after assembling all runs — flattens, dedups, and sorts every pick by decayed rank, emitting one ranked run so `picks_data.json` arrives already in final order. `index.html`'s client-side sort and its `DECAY_HOURS_PER_POINT` / `rankScore` / `ageHours` / `itemDate` helpers were removed; the page now renders the order it's given. Age basis is `published_at`, falling back to `scored_at` / run time, with no date → age 0 (graceful). The 48h retention window is unchanged.
+
 ## [2026-06-27] Tune: feed retention window tightened 72h → 48h
 
 The live feed (`deploy-pages.yml`, `s.scored_at >= -48 hours`) and the `db.py` `get_feed()` candidate window (`timedelta(hours=48)`) were narrowed from 72h to 48h, matching the ingest freshness cutoff (`BACKLOG_CUTOFF_HOURS = 48`). Stories now drop off the feed ~48h after scoring instead of 72h, for a punchier "last ~2 days" feel. Both are single constants if a different feel is wanted later.
@@ -79,7 +83,3 @@ Changed the cluster expand trigger from a static `<span>` (no handler) to a `<bu
 ## [2026-06-24] Feature: infinite scroll — 50 picks per page
 
 Feed now loads 50 picks at a time. An IntersectionObserver on a sentinel element at the bottom fires when the user nears the end, appending the next 50 picks without a page reload. Newly added cards animate in with a staggered `translateY` + fade (first 7 cards, 42ms apart). Three bouncing dots mark the sentinel while the next batch is pending. A `· · ·` end-of-feed marker appears when all picks are exhausted. The 100-pick cap on data loading is removed — all picks across all runs are now available for pagination.
-
-## [2026-06-24] Fix: feed now shows 6s and 7s, not just 8s
-
-The JS was loading only the 10 most recent *runs*, but each live cluster pick is its own file — so 10 runs = 10 single-pick files, all scored 8. Changed to load all runs and cap at 100 total picks instead, so multi-pick regular-curator runs (with 6s and 7s) are always included.
