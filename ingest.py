@@ -7,12 +7,14 @@ new items via db.py helpers. Dedup is automatic (content_hash + URL).
 Does not touch daily_curator.py or any part of the existing pipeline.
 """
 
+import os
 import re
 import sqlite3
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from typing import Optional
+from urllib.parse import quote_plus
 
 import feedparser
 import requests
@@ -22,6 +24,12 @@ import db
 # User-Agent sent with every feed request. Reddit and some other hosts reject
 # requests without a descriptive agent string.
 USER_AGENT = "blank-engine/0.1 (personal feed reader)"
+
+# Trends (Apify). Optional: if APIFY_API_TOKEN is unset, the trend stage is a
+# graceful no-op so the engine still runs. Trends are throttled per source so we
+# don't pay Apify on every 10-minute pipeline run (topics barely move that fast).
+APIFY_API_TOKEN = os.environ.get("APIFY_API_TOKEN")
+TREND_REFRESH_MINUTES = 60
 
 # Minimum seconds between consecutive Reddit RSS polls to avoid 429s.
 # Non-Reddit sources are not delayed.
@@ -287,6 +295,178 @@ def enrich_og_images(db_path: str = db.DB_PATH) -> dict:
 
     print(f"  Found OG images for {enriched}/{len(rows)} items.")
     return {"enriched": enriched, "attempted": len(rows)}
+
+
+# ---------------------------------------------------------------------------
+# Trends (X / Google via Apify)
+# ---------------------------------------------------------------------------
+
+def _run_apify_actor(actor_id: str, input_data: dict) -> list[dict]:
+    """
+    Start an Apify actor run, poll until it finishes (up to 60 seconds), then
+    return the dataset items. Raises on HTTP error, actor failure, or timeout.
+    """
+    run_resp = requests.post(
+        f"https://api.apify.com/v2/acts/{actor_id}/runs",
+        json=input_data,
+        params={"token": APIFY_API_TOKEN},
+        timeout=30,
+    )
+    run_resp.raise_for_status()
+    run_data = run_resp.json()["data"]
+    run_id = run_data["id"]
+    dataset_id = run_data["defaultDatasetId"]
+
+    deadline = time.time() + 60
+    while time.time() < deadline:
+        status_resp = requests.get(
+            f"https://api.apify.com/v2/acts/{actor_id}/runs/{run_id}",
+            params={"token": APIFY_API_TOKEN},
+            timeout=10,
+        )
+        status_resp.raise_for_status()
+        status = status_resp.json()["data"]["status"]
+        if status == "SUCCEEDED":
+            break
+        if status in ("FAILED", "ABORTED", "TIMED-OUT"):
+            raise RuntimeError(f"Apify actor run {status.lower()}")
+        time.sleep(3)
+    else:
+        raise TimeoutError("Apify actor run did not finish within 60 seconds")
+
+    items_resp = requests.get(
+        f"https://api.apify.com/v2/datasets/{dataset_id}/items",
+        params={"token": APIFY_API_TOKEN},
+        timeout=30,
+    )
+    items_resp.raise_for_status()
+    return items_resp.json()
+
+
+def _twitter_trend_topics() -> list[str]:
+    """Top US trending topics from X (Twitter) via Apify, newest-rank first."""
+    items = _run_apify_actor(
+        "karamelo~twitter-trends-scraper",
+        {"country": "2", "live": True},  # "2" = United States
+    )
+    topics = []
+    for item in items[:30]:
+        name = (item.get("name") or item.get("trend") or
+                item.get("title") or item.get("keyword") or "").strip()
+        if name:
+            topics.append(name)
+    return topics
+
+
+def _google_trend_topics() -> list[str]:
+    """Top US trending search terms from Google Trends via Apify."""
+    items = _run_apify_actor(
+        "apify~google-trends-scraper",
+        {"searchTerms": [""], "geo": "US"},
+    )
+    topics = []
+    for item in items[:30]:
+        name = (item.get("title") or item.get("keyword") or item.get("query") or
+                item.get("topic") or item.get("name") or "").strip()
+        if name:
+            topics.append(name)
+    return topics
+
+
+# (source name, source type, clickable-search-URL template, topic fetcher)
+_TREND_FETCHERS = [
+    ("X (Twitter) Trending", "trend", "https://x.com/search?q={q}", _twitter_trend_topics),
+    ("Google Trends",        "trend", "https://www.google.com/search?q={q}", _google_trend_topics),
+]
+
+
+def _source_last_polled(source_id: int, db_path: str) -> Optional[datetime]:
+    con = sqlite3.connect(db_path)
+    try:
+        row = con.execute(
+            "SELECT last_polled_at FROM sources WHERE id = ?", (source_id,)
+        ).fetchone()
+    finally:
+        con.close()
+    if not row or not row[0]:
+        return None
+    try:
+        dt = datetime.fromisoformat(row[0])
+        return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except Exception:
+        return None
+
+
+def fetch_trends(db_path: str = db.DB_PATH) -> dict:
+    """
+    Fetch trending topics from X and Google (via Apify) and insert them as
+    items, so they flow through the same triage -> score -> rank pipeline as
+    articles. Each trend source is throttled to TREND_REFRESH_MINUTES so we
+    don't pay Apify on every 10-minute run.
+
+    Each topic becomes an item with a clickable search URL and a date-stamped
+    description, so the same topic re-surfaces at most once per day (the date
+    makes the dedup hash and URL unique per day) and won't re-score within a day.
+
+    No-op (returns zeros) if APIFY_API_TOKEN is unset.
+
+    Returns {"fetched": int, "sources_fetched": int, "throttled": int}.
+    """
+    if not APIFY_API_TOKEN:
+        print("  APIFY_API_TOKEN not set — skipping trends.")
+        return {"fetched": 0, "sources_fetched": 0, "throttled": 0}
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    total_new = 0
+    sources_fetched = 0
+    throttled = 0
+
+    for name, stype, url_tmpl, fetcher in _TREND_FETCHERS:
+        source_id = db.upsert_source(
+            url=f"trend://{name}", name=name, source_type=stype, db_path=db_path
+        )
+
+        last = _source_last_polled(source_id, db_path)
+        if last and (datetime.now(timezone.utc) - last) < timedelta(minutes=TREND_REFRESH_MINUTES):
+            throttled += 1
+            print(f"  [{name}] throttled (polled <{TREND_REFRESH_MINUTES}m ago) — skipping Apify.")
+            continue
+
+        try:
+            topics = fetcher()
+        except Exception as exc:
+            print(f"  [WARN] {name} unavailable (continuing without): {exc}")
+            continue
+
+        sources_fetched += 1
+        now_iso = datetime.now(timezone.utc).isoformat()
+        new_here = 0
+        # Only insert the top-ranked topics: the per-source cap will process at
+        # most PER_SOURCE_CAP, and they share a fetch timestamp, so trim to the
+        # highest-ranked ones rather than letting the cap pick arbitrarily.
+        for rank, topic in enumerate(topics[:db.PER_SOURCE_CAP], start=1):
+            # date fragment keeps the URL/hash unique per day so a recurring
+            # topic can resurface tomorrow but dedups within today
+            item_url = url_tmpl.format(q=quote_plus(topic)) + f"#blank-{today}"
+            description = f"Trending on {name} · {today}"
+            before = _count_items(db_path)
+            db.insert_item(
+                source_id=source_id,
+                url=item_url,
+                title=topic,
+                description=description,
+                published_at=now_iso,
+                raw_engagement={"trend_rank": rank},
+                db_path=db_path,
+            )
+            if _count_items(db_path) > before:
+                new_here += 1
+
+        _update_last_polled(source_id, db_path)
+        total_new += new_here
+        print(f"  [{name}] {len(topics)} topics, {new_here} new.")
+
+    return {"fetched": total_new, "sources_fetched": sources_fetched, "throttled": throttled}
 
 
 def poll_all_active(db_path: str = db.DB_PATH) -> dict:

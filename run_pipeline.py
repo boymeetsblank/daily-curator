@@ -88,6 +88,15 @@ def main() -> None:
             f"  Skipped (dedup): {result['total_skipped']}"
         )
 
+    # ── 1.2. Fetch trends (throttled to hourly; no-op without APIFY token) ──
+    result, elapsed, err = _run_stage("Fetch Trends", ingest.fetch_trends)
+    stage_log["trends"] = (elapsed, err)
+    if result:
+        print(
+            f"\n  Trend items new : {result['fetched']}"
+            f"  (sources fetched: {result['sources_fetched']}, throttled: {result['throttled']})"
+        )
+
     # ── 1.5. Enrich OG images ─────────────────────────────────────────────
     result, elapsed, err = _run_stage("Enrich OG", ingest.enrich_og_images)
     stage_log["enrich_og"] = (elapsed, err)
