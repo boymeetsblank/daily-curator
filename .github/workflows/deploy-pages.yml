@@ -198,7 +198,7 @@ jobs:
                       JOIN items i ON i.id = s.item_id
                       JOIN sources src ON src.id = i.source_id
                       WHERE s.score >= 6
-                        AND s.scored_at >= datetime('now', '-72 hours')
+                        AND s.scored_at >= datetime('now', '-48 hours')
                       ORDER BY s.scored_at DESC, s.score DESC
                       LIMIT 500
                   """).fetchall()

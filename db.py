@@ -438,7 +438,7 @@ def get_feed(
     Prints a before/after source-distribution report to stdout on each call
     so the effect of the cap is visible in logs and easy to tune.
     """
-    cutoff = (datetime.now(timezone.utc) - timedelta(hours=72)).isoformat()
+    cutoff = (datetime.now(timezone.utc) - timedelta(hours=48)).isoformat()
     # Pull a wide candidate pool so balancing has room to work.
     candidate_limit = min(limit * 5, 500)
 
