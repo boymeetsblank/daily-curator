@@ -28,8 +28,10 @@ USER_AGENT = "blank-engine/0.1 (personal feed reader)"
 # Trends (Apify). Optional: if APIFY_API_TOKEN is unset, the trend stage is a
 # graceful no-op so the engine still runs. Trends are throttled per source so we
 # don't pay Apify on every 10-minute pipeline run (topics barely move that fast).
+# 180 min (~8 refreshes/day across 2 sources) keeps estimated spend under the
+# Apify free tier's $5/mo; hourly would overrun it (Google Trends is the driver).
 APIFY_API_TOKEN = os.environ.get("APIFY_API_TOKEN")
-TREND_REFRESH_MINUTES = 60
+TREND_REFRESH_MINUTES = 180
 
 # Minimum seconds between consecutive Reddit RSS polls to avoid 429s.
 # Non-Reddit sources are not delayed.
