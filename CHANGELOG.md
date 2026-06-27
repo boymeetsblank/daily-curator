@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-27] Feat: feed leads with real headlines (drop AI hook/why generation)
+
+Scoring no longer generates a rewritten "hook" or per-item "why". `score.py` now asks Sonnet for score + criteria + soft-floor flags only, and `max_tokens` drops 2048 → 1024 — cutting the most expensive line, Sonnet output tokens. `record_score()` in `db.py` makes `why`/`hook` optional (default `""`) so no schema migration is needed. `publish.py` is unchanged: it already falls back to the real article title when the hook is empty, so the feed now leads with authentic headlines and the editorialized hook is removed from the reading experience.
+
 ## [2026-06-25] Feat: OG image enrichment for blank engine items
 
 `ingest.py` only extracted inline RSS images, leaving 76% of items without thumbnails (TechCrunch: 0%, Google News: 0%, Hypebeast: 0%). Added `_fetch_og_image()` and `enrich_og_images()` to `ingest.py` — after ingestion, items with no `image_url` from the last 15 minutes are enriched by concurrently fetching `og:image` from their article pages (10 workers, 5s timeout each). Added as a new "Enrich OG" stage in `run_pipeline.py` between Ingest and Triage. Also adds `requests` to blank.yml's pip install line.

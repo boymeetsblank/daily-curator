@@ -73,21 +73,12 @@ force a minimum score. A wildly popular item that is not actually interesting \
 or important can still score low. Engagement is evidence, never an override. \
 The product's north star is interestingness or importance earned on the merits.
 
-OUTPUT per item:
-- why: 1–2 sentence editor's note. Plain, direct — no meta-commentary, no \
-  references to social media or engagement metrics. Write as if briefing a \
-  colleague.
-- hook: one punchy line, like texting a sharp friend. This is what the user \
-  sees first. Make it earn attention without being clickbait.
-
-Return ONLY a valid JSON array — no preamble, no markdown fences, no \
-explanation outside the array. Each element:
+OUTPUT per item — return ONLY a valid JSON array, no preamble, no markdown \
+fences, no explanation outside the array. Each element:
 {
   "item_id": <int>,
   "score": <int 1-10>,
   "criteria": {"trending": <1-10>, "timely": <1-10>, "cultural": <1-10>, "significance": <1-10>},
-  "why": "<1-2 sentence editor note>",
-  "hook": "<one punchy line>",
   "soft_floor_flags": [<string description of any popularity signal noted, or empty list>]
 }
 """
@@ -176,7 +167,7 @@ def _score_batch(
     try:
         message = client.messages.create(
             model=SONNET_MODEL,
-            max_tokens=2048,
+            max_tokens=1024,
             system=SYSTEM_PROMPT,
             messages=[
                 {"role": "user", "content": USER_PROMPT_TEMPLATE.format(items_block=items_block)}
@@ -213,16 +204,12 @@ def _score_batch(
             if not isinstance(criteria, dict):
                 criteria = {}
 
-            why = str(entry.get("why") or "").strip()
-            hook = str(entry.get("hook") or "").strip()
             soft_floor_flags = _normalize_soft_floor_flags(entry.get("soft_floor_flags") or [])
 
             db.record_score(
                 item_id=item_id,
                 score=score,
                 criteria=criteria,
-                why=why,
-                hook=hook,
                 soft_floor_flags=soft_floor_flags,
                 db_path=db_path,
             )
@@ -343,7 +330,7 @@ if __name__ == "__main__":
     con.row_factory = _sqlite3.Row
     top_rows = con.execute(
         """
-        SELECT i.title, s.score, s.hook, s.why
+        SELECT i.title, s.score
         FROM scores s
         JOIN items i ON i.id = s.item_id
         ORDER BY s.score DESC, s.scored_at DESC
@@ -355,5 +342,3 @@ if __name__ == "__main__":
     print(f"\n-- Top 10 Items -----------------------------")
     for i, r in enumerate(top_rows, 1):
         print(f"\n  [{i}] score={r['score']}  {r['title'][:75]}")
-        print(f"       Hook : {r['hook']}")
-        print(f"       Why  : {r['why']}")

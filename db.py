@@ -234,8 +234,8 @@ def record_score(
     item_id: int,
     score: int,
     criteria: dict,
-    why: str,
-    hook: str,
+    why: str = "",
+    hook: str = "",
     soft_floor_flags: Optional[dict] = None,
     db_path: str = DB_PATH,
 ) -> int:
