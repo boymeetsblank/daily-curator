@@ -74,6 +74,11 @@
       --glass-hi:     rgba(255,255,255,.65);
       --glass-sheen:  rgba(255,255,255,.30);
       --glass-shadow: 0 10px 34px -8px rgba(20,22,15,.30), 0 2px 8px rgba(20,22,15,.10);
+
+      /* rarity tiers — gem colour by score (8 Rare / 9 Epic / 10 Legendary) */
+      --rare:      #2E6FD6;
+      --epic:      #7B4FD2;
+      --legendary: #C0871E;
     }
 
     /* DARK */
@@ -109,6 +114,11 @@
       --glass-hi:     rgba(255,255,255,.16);
       --glass-sheen:  rgba(255,255,255,.07);
       --glass-shadow: 0 12px 38px -8px rgba(0,0,0,.66), 0 2px 10px rgba(0,0,0,.4);
+
+      /* rarity tiers */
+      --rare:      #5E9BFF;
+      --epic:      #A98BFF;
+      --legendary: #E2B85E;
     }
 
     /* honour OS when in auto */
@@ -127,6 +137,7 @@
         --glass-border:rgba(255,255,255,.10); --glass-hi:rgba(255,255,255,.16);
         --glass-sheen:rgba(255,255,255,.07);
         --glass-shadow:0 12px 38px -8px rgba(0,0,0,.66), 0 2px 10px rgba(0,0,0,.4);
+        --rare:#5E9BFF; --epic:#A98BFF; --legendary:#E2B85E;
       }
     }
 
@@ -155,9 +166,10 @@
       backdrop-filter: saturate(1.4) blur(18px);
       -webkit-backdrop-filter: saturate(1.4) blur(18px);
       border-bottom: 1px solid transparent;
-      transition: border-color .3s var(--ease), background .3s var(--ease);
+      transition: transform .32s var(--ease), border-color .3s var(--ease), background .3s var(--ease);
     }
     .topbar.scrolled { border-bottom-color: var(--line); }
+    .topbar.hide { transform: translateY(-100%); }
     .topbar-inner {
       max-width: var(--maxw); height: 52px; margin: 0 auto;
       padding: 0 18px; display: flex; align-items: center; gap: 12px;
@@ -180,12 +192,14 @@
 
     /* ── Pull-to-refresh ─────────────────────────────────────── */
     .ptr {
-      position: fixed; top: calc(52px + env(safe-area-inset-top)); left: 0; right: 0;
-      display: grid; place-items: center; height: 0; overflow: hidden; z-index: 40;
-      color: var(--ink-3); pointer-events: none;
+      position: fixed; top: calc(54px + env(safe-area-inset-top)); left: 0; right: 0;
+      display: grid; place-items: center; height: 40px; z-index: 40;
+      color: var(--ink-3); pointer-events: none; opacity: 0; transition: opacity .2s var(--ease);
     }
-    .ptr svg { width: 22px; height: 22px; transition: transform .2s var(--ease); }
+    .ptr svg { width: 22px; height: 22px; }
     .ptr.spin svg { animation: spin .8s linear infinite; }
+    /* the content rubber-bands down with the pull, then snaps back */
+    .views.snap { transition: transform .36s var(--ease); }
     @keyframes spin { to { transform: rotate(360deg); } }
 
     /* ── Scroll views ────────────────────────────────────────── */
@@ -205,17 +219,14 @@
     }
     .eyebrow .rule { flex: 1; height: 1px; background: var(--line); }
 
-    /* ── Rarity / editorial markers (quiet, no numbers) ──────── */
-    .mark {
-      display: inline-flex; align-items: center; gap: 5px;
-      font-family: var(--text); font-weight: 700; font-size: 9.5px;
-      letter-spacing: .1em; text-transform: uppercase;
+    /* ── Rarity gem (quiet, no numbers, no label) ────────────── */
+    .row-meta .gem {
+      width: 8px; height: 8px; border-radius: 2px; transform: rotate(45deg);
+      flex: none; margin-right: 1px;
     }
-    .mark .gem { width: 6px; height: 6px; border-radius: 1.5px; transform: rotate(45deg); flex: none; }
-    .mark-pick   { color: var(--green-ink); }
-    .mark-pick   .gem { background: var(--green-ink); }
-    .mark-notable .gem { background: var(--ink-4); }
-    .mark-notable { color: var(--ink-3); }
+    .gem-rare      { background: var(--rare); }
+    .gem-epic      { background: var(--epic); }
+    .gem-legendary { background: var(--legendary); box-shadow: 0 0 0 .5px color-mix(in srgb, var(--legendary) 50%, transparent); }
 
     /* ── LEAD card ───────────────────────────────────────────── */
     .lead {
@@ -243,7 +254,10 @@
       font-family: var(--text); font-weight: 700; font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase;
       display: inline-flex; align-items: center; gap: 6px;
     }
-    .lead-mark .gem { width: 6px; height: 6px; border-radius: 1.5px; transform: rotate(45deg); background: #fff; }
+    .lead-mark .gem { width: 7px; height: 7px; border-radius: 1.5px; transform: rotate(45deg); background: #fff; }
+    .lead-mark .gem.gem-rare      { background: #6BA8FF; }
+    .lead-mark .gem.gem-epic      { background: #B49BFF; }
+    .lead-mark .gem.gem-legendary { background: #F0C66A; }
     .lead-mark.is-pick { box-shadow: inset 0 0 0 1px rgba(255,255,255,.10); }
     .lead-mark.is-pick .gem { background: #8FE0AD; }
     .lead-body { position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 18px 20px; }
@@ -280,12 +294,6 @@
       transition: border-color .18s, transform .18s var(--ease), box-shadow .25s var(--ease);
     }
     .row:hover { border-color: var(--line-2); box-shadow: var(--shadow); }
-    .row.is-pick { border-color: var(--green-line); }
-    .row.is-legendary::before {
-      content: ''; position: absolute; inset: 0; border-radius: var(--r-row); pointer-events: none;
-      box-shadow: inset 0 0 0 1px var(--gold);
-      -webkit-mask: linear-gradient(120deg, #000 0 18%, transparent 42%); mask: linear-gradient(120deg, #000 0 18%, transparent 42%);
-    }
     .row-link { display: flex; gap: 13px; padding: 14px; align-items: flex-start; -webkit-tap-highlight-color: transparent; }
     .row.tap { transform: scale(.985); }
     .row-main { flex: 1; min-width: 0; }
@@ -441,7 +449,14 @@
         inset 0 1px 0 var(--glass-hi),
         inset 0 0 0 1px rgba(255,255,255,.05);
       overflow: hidden;
+      transform-origin: bottom center;
+      transition: transform .32s var(--ease), opacity .32s var(--ease);
     }
+    /* scrolling down: recede to be less prominent. scroll up / top: restore. */
+    .tabbar.shrink .tabbar-inner { transform: scale(.82); opacity: .9; }
+    .tabbar.shrink .tab span { opacity: 0; }
+    .tabbar.shrink .tab { gap: 0; }
+    .tab span { transition: opacity .24s var(--ease); }
     /* specular sheen — the iOS "liquid glass" lens highlight */
     .tabbar-inner::before {
       content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 1;
@@ -559,20 +574,33 @@
       const d = Math.floor(h/24); return d < 7 ? `${d}d` : `${Math.floor(d/7)}w`;
     }
 
-    // Score → quiet rarity tier. No numbers ever shown.
-    function tier(score){
-      if (score >= 9) return 'legendary';   // rarest — reserved gold hairline
-      if (score >= 8) return 'pick';         // Editor's Pick — green
-      if (score >= 7) return 'notable';      // subtle green-ish mark
-      return 'standard';
+    // ── Ranking lives server-side now ───────────────────────────────────────
+    // The feed's time-decayed order (score − ageHours / DECAY_HOURS_PER_POINT) is
+    // computed once when picks_data.json is built (see deploy-pages.yml and the
+    // shared db.DECAY_HOURS_PER_POINT). The page renders the order it's given —
+    // no client-side re-sort — so every surface shares one source of truth.
+
+    // Score → rarity gem. Blue=8 (Rare), Purple=9 (Epic), Gold=10 (Legendary).
+    // 6–7 get no gem (kept calm). No numbers ever shown.
+    function gemClass(score){
+      if (score >= 10) return 'gem-legendary';
+      if (score >= 9)  return 'gem-epic';
+      if (score >= 8)  return 'gem-rare';
+      return '';
+    }
+    function gemTitle(score){
+      if (score >= 10) return 'Legendary';
+      if (score >= 9)  return 'Epic';
+      if (score >= 8)  return 'Rare';
+      return '';
     }
     const isTrending = p => !!(p.from_live || p.trend_label);
     function trendName(label){ return (label||'Trending').replace(/Trending on /i,'').replace(/ right now/i,'').trim() || 'Trending'; }
 
     /* ── Card builders ─────────────────────────────────────── */
     function leadCard(p){
-      const t = tier(p.score), time = ago(p), src = cleanSrc(p.source);
-      const markLabel = t === 'legendary' ? "Editor's Pick" : t === 'pick' ? "Editor's Pick" : 'Top Story';
+      const time = ago(p), src = cleanSrc(p.source);
+      const gc = gemClass(p.score);
       // Texture is always the base layer; the photo overlays it. A photo that's
       // too small/low-res (logos, thumbnails) is rejected on load and the texture shows through.
       const bg = `<div class="lead-tex"></div>` + (p.image
@@ -582,7 +610,7 @@
 <a class="lead" href="${esc(p.link||'#')}" target="_blank" rel="noopener noreferrer">
   ${bg}<div class="lead-scrim"></div>
   <div class="lead-top">
-    <span class="lead-mark glass ${t==='pick'||t==='legendary'?'is-pick':''}"><span class="gem"></span>${markLabel}</span>
+    <span class="lead-mark glass"><span class="gem ${gc}"></span>Top Story</span>
     ${isTrending(p) ? `<span class="trend on-img" style="margin-left:auto"><span class="spark"></span>${esc(trendName(p.trend_label))}</span>` : ''}
   </div>
   <div class="lead-body">
@@ -596,13 +624,10 @@
     }
 
     function rowCard(p, idx){
-      const t = tier(p.score), time = ago(p), src = cleanSrc(p.source);
-      const cls = ['row', `t-${t}`];
-      if (t === 'pick') cls.push('is-pick');
-      if (t === 'legendary') cls.push('is-pick','is-legendary');
-      const mark = (t === 'pick' || t === 'legendary')
-        ? `<span class="mark mark-pick"><span class="gem"></span>Pick</span>`
-        : t === 'notable' ? `<span class="mark mark-notable"><span class="gem"></span>Notable</span>` : '';
+      const time = ago(p), src = cleanSrc(p.source);
+      const cls = ['row'];
+      const gc = gemClass(p.score);
+      const gem = gc ? `<span class="gem ${gc}" title="${gemTitle(p.score)}"></span>` : '';
       const dropThumb = "const t=this.closest('.row-thumb'); t&&t.remove(); this.closest('.row')?.classList.add('no-img')";
       const thumb = p.image
         ? `<div class="row-thumb"><img src="${esc(p.image)}" alt="" loading="lazy" onload="if(this.naturalWidth<150||this.naturalHeight<150){${dropThumb}}" onerror="${dropThumb}"></div>`
@@ -614,8 +639,7 @@
   <a class="row-link" href="${esc(p.link||'#')}" target="_blank" rel="noopener noreferrer">
     <div class="row-main">
       <div class="row-meta">
-        ${mark || `<span class="src">${esc(src)}</span>`}
-        ${mark ? `<span class="dot-sep"></span><span class="src">${esc(src)}</span>` : ''}
+        ${gem}<span class="src">${esc(src)}</span>
         ${isTrending(p) ? `<span class="trend"><span class="spark"></span>${esc(trendName(p.trend_label))}</span>` : ''}
         ${time?`<span class="dot-sep"></span><span class="time">${time}</span>`:''}
       </div>
@@ -976,26 +1000,63 @@ ${top.map((p,i)=>rowCard(p,i)).join('')}`;
 
     /* ── Top-bar scrolled border + pull-to-refresh ─────────── */
     const topbar = document.getElementById('topbar');
-    window.addEventListener('scroll', () => topbar.classList.toggle('scrolled', window.scrollY > 4), { passive: true });
+    const tabbar = document.querySelector('.tabbar');
+    let lastY = 0;
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      topbar.classList.toggle('scrolled', y > 4);
+      if (y <= 4){                                                  // at the top → full size
+        topbar.classList.remove('hide'); tabbar.classList.remove('shrink');
+      } else if (y > lastY + 4){                                    // scrolling down → recede
+        topbar.classList.add('hide');    tabbar.classList.add('shrink');
+      } else if (y < lastY - 4){                                    // scrolling up → restore
+        topbar.classList.remove('hide'); tabbar.classList.remove('shrink');
+      }
+      lastY = y;
+    }, { passive: true });
 
     (function pullToRefresh(){
-      const ptr = document.getElementById('ptr');
+      const ptr   = document.getElementById('ptr');
+      const views = document.querySelector('.views');
+      const icon  = ptr.querySelector('svg');
       let startY = 0, pulling = false, dist = 0;
-      const MAX = 88, TRIGGER = 64;
-      window.addEventListener('touchstart', e => { if (window.scrollY <= 0){ startY = e.touches[0].clientY; pulling = true; } }, { passive: true });
+      const MAX = 96, TRIGGER = 62, REST = 52;
+
+      function move(d){
+        views.style.transform = d ? `translateY(${d}px)` : '';
+        ptr.style.opacity = Math.min(1, d / TRIGGER);
+        if (!ptr.classList.contains('spin')) icon.style.transform = `rotate(${d * 3.4}deg)`;
+      }
+      window.addEventListener('touchstart', e => {
+        if (window.scrollY <= 0 && !ptr.classList.contains('spin')){
+          startY = e.touches[0].clientY; pulling = true; views.classList.remove('snap');
+        }
+      }, { passive: true });
       window.addEventListener('touchmove', e => {
         if (!pulling) return;
-        dist = Math.max(0, Math.min(MAX, (e.touches[0].clientY - startY) * .5));
-        ptr.style.height = dist + 'px';
-        ptr.querySelector('svg').style.transform = `rotate(${dist*4}deg)`;
+        const raw = e.touches[0].clientY - startY;
+        if (raw <= 0){ dist = 0; move(0); return; }
+        dist = Math.min(MAX, raw * 0.5);   // resistance
+        move(dist);
       }, { passive: true });
       window.addEventListener('touchend', () => {
         if (!pulling) return; pulling = false;
-        if (dist >= TRIGGER){ ptr.style.height = '44px'; ptr.classList.add('spin'); reload(); }
-        else { ptr.style.height = '0px'; }
+        views.classList.add('snap');
+        if (dist >= TRIGGER){
+          views.style.transform = `translateY(${REST}px)`;   // hold while refreshing
+          ptr.style.opacity = '1'; icon.style.transform = '';
+          ptr.classList.add('spin');
+          reload();
+        } else {
+          views.style.transform = ''; ptr.style.opacity = '0';
+        }
         dist = 0;
       });
-      window._ptrDone = () => { ptr.classList.remove('spin'); ptr.style.height = '0px'; };
+      window._ptrDone = () => {
+        ptr.classList.remove('spin');
+        views.classList.add('snap');
+        views.style.transform = ''; ptr.style.opacity = '0';
+      };
     })();
 
     /* ── Data ──────────────────────────────────────────────── */
@@ -1013,8 +1074,8 @@ ${top.map((p,i)=>rowCard(p,i)).join('')}`;
             allPicks.push({ ...p, runDate: run.date, runTime: run.time });
           }
         }
-        // editorial order: score desc, then recency
-        allPicks.sort((a,b) => (b.score||0) - (a.score||0) || (new Date(b.published_at||0) - new Date(a.published_at||0)));
+        // Order is computed server-side (time-decayed rank in deploy-pages.yml /
+        // db.DECAY_HOURS_PER_POINT); render picks_data.json in the order received.
         await renderFeed();
       } catch (err){
         document.getElementById('view-feed').innerHTML = `<div class="blank-state"><div class="em">Feed unavailable</div><p class="p">Couldn't load the latest. Pull down to try again.</p></div>`;
