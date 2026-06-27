@@ -13,6 +13,13 @@ from typing import Optional
 
 DB_PATH = "blank.db"
 
+# Per-source processing cap: only the N newest items per source are ever
+# triaged/scored. The feed balances each source to a small share at display
+# time, so scoring more than this per source is wasted spend. Ranking is over
+# ALL items per source (not just un-triaged ones) so the cap doesn't refill as
+# items move through the pipeline across runs.
+PER_SOURCE_CAP = 15
+
 
 # ---------------------------------------------------------------------------
 # Schema
@@ -305,38 +312,60 @@ def log_engagement(
 
 def get_untriaged_items(db_path: str = DB_PATH) -> list[dict]:
     """
-    Return items that have no row in the triage table yet.
-    Used to drive the Haiku triage queue.
+    Return un-triaged items, capped to the PER_SOURCE_CAP newest per source.
+    Used to drive the Haiku triage queue. Items outside their source's newest
+    PER_SOURCE_CAP are never triaged (and so never scored).
     """
     with _conn(db_path) as con:
         rows = con.execute(
             """
-            SELECT i.id, i.title, i.description
-            FROM items i
-            LEFT JOIN triage t ON t.item_id = i.id
-            WHERE t.id IS NULL
-            ORDER BY i.fetched_at ASC
-            """
+            WITH ranked AS (
+                SELECT i.id, i.title, i.description, i.fetched_at,
+                       ROW_NUMBER() OVER (
+                           PARTITION BY i.source_id ORDER BY i.fetched_at DESC
+                       ) AS rn
+                FROM items i
+            )
+            SELECT r.id, r.title, r.description
+            FROM ranked r
+            LEFT JOIN triage t ON t.item_id = r.id
+            WHERE r.rn <= ?
+              AND t.id IS NULL
+            ORDER BY r.fetched_at ASC
+            """,
+            (PER_SOURCE_CAP,),
         ).fetchall()
         return [dict(r) for r in rows]
 
 
 def get_unscored_escalated_items(db_path: str = DB_PATH) -> list[dict]:
     """
-    Return items that Haiku escalated but Sonnet hasn't scored yet.
-    Used to drive the scoring queue.
+    Return escalated-but-unscored items, capped to the PER_SOURCE_CAP newest
+    per source. Used to drive the scoring queue. The same cap is applied here
+    (not just at triage) so the pre-existing escalated backlog is bounded too.
     """
     with _conn(db_path) as con:
         rows = con.execute(
             """
-            SELECT i.*
-            FROM items i
-            JOIN triage t ON t.item_id = i.id
-            LEFT JOIN scores s ON s.item_id = i.id
-            WHERE t.decision = 'ESCALATE'
+            WITH ranked AS (
+                SELECT i.*,
+                       ROW_NUMBER() OVER (
+                           PARTITION BY i.source_id ORDER BY i.fetched_at DESC
+                       ) AS rn
+                FROM items i
+            )
+            SELECT r.id, r.source_id, r.url, r.content_hash, r.title,
+                   r.description, r.image_url, r.published_at, r.fetched_at,
+                   r.raw_engagement
+            FROM ranked r
+            JOIN triage t ON t.item_id = r.id
+            LEFT JOIN scores s ON s.item_id = r.id
+            WHERE r.rn <= ?
+              AND t.decision = 'ESCALATE'
               AND s.id IS NULL
-            ORDER BY i.fetched_at ASC
-            """
+            ORDER BY r.fetched_at ASC
+            """,
+            (PER_SOURCE_CAP,),
         ).fetchall()
         return [dict(r) for r in rows]
 

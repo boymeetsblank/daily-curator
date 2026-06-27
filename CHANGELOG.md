@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-27] Perf: cap triage/scoring to 15 newest items per source
+
+Added `PER_SOURCE_CAP = 15` in `db.py`. `get_untriaged_items()` and `get_unscored_escalated_items()` now rank items per source by recency (a window function over ALL items per source, so the cap doesn't refill as items move through the pipeline across runs) and only process the newest 15 per source. The feed already balances each source to a small display share, so triaging/scoring more than this per source was wasted spend — the Haiku gate kills ~0% of mainstream-news items, so almost everything was reaching Sonnet. On the current corpus this cuts processed volume from 5,259 to 661 items (~87% fewer triage/score calls) and bounds the existing escalated backlog from ~5,000 to ~600 unscored items, with no change to what the feed can display.
+
 ## [2026-06-27] Feat: feed leads with real headlines (drop AI hook/why generation)
 
 Scoring no longer generates a rewritten "hook" or per-item "why". `score.py` now asks Sonnet for score + criteria + soft-floor flags only, and `max_tokens` drops 2048 → 1024 — cutting the most expensive line, Sonnet output tokens. `record_score()` in `db.py` makes `why`/`hook` optional (default `""`) so no schema migration is needed. `publish.py` is unchanged: it already falls back to the real article title when the hook is empty, so the feed now leads with authentic headlines and the editorialized hook is removed from the reading experience.
@@ -79,7 +83,3 @@ Replaced the static hardcoded `index.html` with a fully dynamic, design-system-f
 ## [2026-06-24] Fix: Reddit 429 rate-limiting â€” user-agent + inter-request delay
 
 Added `USER_AGENT = "blank-engine/0.1 (personal feed reader)"` constant to `ingest.py` and passed it through `feedparser.parse(..., agent=USER_AGENT)` on every feed fetch. Reddit (and some other hosts) rejects requests with a generic or absent user-agent, causing all-or-most Reddit sources to get 429'd in bursts. Added `REDDIT_DELAY = 2.0` constant and a delay pass in `poll_all_active()`: before each Reddit source is polled, the loop checks how long it's been since the last Reddit request and sleeps the remainder of `REDDIT_DELAY` if needed â€” keeping requests at least 2 s apart. Non-Reddit sources are unaffected. All 20 active Reddit sources were already active in the DB; no reactivation was needed. Tested against all 20 Reddit sources: **20/20 succeeded with 0 errors** (vs 1/19 previously). Also fixed a pre-existing `_sqlite3` name error in the `__main__` block.
-
-## [2026-06-24] Fix: Remove DEFAULT_SOURCES auto-seeding; purge BBC test data
-
-Removed `DEFAULT_SOURCES` list and `seed_sources()` helper from `ingest.py`. Removed the `ingest.seed_sources()` call from `run_pipeline.py` that was re-activating test seeds (BBC, TechCrunch, Reddit r/popular, Pitchfork News) on every pipeline run. Sources are now managed exclusively via `sources.json` import. Purged all 52 BBC News World items from blank.db (scores, triage rows, and items deleted). BBC source (id=1) confirmed inactive. TechCrunch (id=2) and Reddit r/popular (id=3) remain active per user request.
