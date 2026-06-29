@@ -2,9 +2,11 @@
 
 This file briefs Claude Code on the Blank project. Read this before making any changes.
 
-> Deeper product context (the full vision, decisions, and rationale) lives in
+> **Resuming work?** Start with [`brainstorms/2026-06-28-handoff.md`](brainstorms/2026-06-28-handoff.md)
+> — current status + the immediate next task. Deeper product context (full vision,
+> decisions, rationale) lives in
 > [`brainstorms/2026-06-27-blank-platform-vision.md`](brainstorms/2026-06-27-blank-platform-vision.md).
-> Read it before any product/strategy work.
+> Read these before any product/strategy work.
 
 ---
 
