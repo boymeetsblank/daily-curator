@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-29] Fix: scoring stalled — raise Sonnet max_tokens (truncated JSON)
+
+New stories stopped reaching the feed because the **Score stage was writing ~0 items per run**. Root cause: `score.py` had `max_tokens=1024` while each item's JSON output now includes `primary_category` + up to 5 `tags` (added Jun 28) on top of score + 4 criteria. A 12-item batch emits ~1,100+ tokens, overflowing the 1,024 ceiling, so Sonnet's reply was truncated mid-array (`"tags": ["lebron ja`…) → `_parse_sonnet_response()` returned `None` → the entire batch was skipped. The latest run showed `Scored: 0, Skipped: 420` with all 35 batches failing to parse; scores/hour had collapsed from 50–80 (Jun 28) to 1–9 (Jun 29), and the feed (built only from scored items) went stale. Fix: raised `max_tokens` 1024 → 4096 (a ceiling, not a target — the model emits only what it needs, ~1.0–1.3k/batch, so steady-state cost is unchanged; it just stops truncating). Also added `message.stop_reason` to the parse-failure log line so a future `max_tokens` truncation is diagnosable at a glance instead of mistaken for malformed JSON. The ~1,500-item escalated backlog drains over the next several runs (bounded by `PER_SOURCE_CAP`). Ingest/triage/OG-enrich/backfill/moment were all healthy; only scoring was affected.
+
 ## [2026-06-29] UI: source favicons on cards (provenance)
 
 Each feed card now shows the publisher's favicon next to the source name — on the hero (with a subtle white chip so it reads on the dark image), on every row, and inside the cluster "perspectives" drawer. Reinforces real-outlet provenance/trust (a research takeaway from studying Apple News), which fits Blank's "real headlines, AI is the editor" positioning. A `favicon(link)` helper derives the domain from the article URL and loads the icon from Google's favicon service; it hides gracefully on error so cards never show a broken image. Pure `index.html` change; no data/engine impact.
@@ -79,8 +83,4 @@ Two fixes for the blank engine's stale data problem. (1) **`db.py` `get_feed()` 
 ## [2026-06-25] Fix: cluster strip fully clickable; perspectives show source names
 
 Clicking anywhere on the cluster strip banner now expands it (not just the arrow). Added `cursor: pointer` and a hover tint to make the strip feel interactive. Fixed the empty-drawer problem: picks files don't have "Other angles" URLs, so `related_articles` is always null. Expanded drawer now falls back to showing each cluster source name as a "Also covering this story" entry. Static source rows are non-clickable but visually informative. Picks that do have `related_articles` URLs continue to show clickable article links.
-
-## [2026-06-25] Feat: cluster expand reveals clickable article perspectives
-
-Expanding a cluster strip now shows an "Other perspectives" drawer with each related article as a clickable row — source name in amber mono above an italic serif headline. Rows have an amber left-border rule on hover. Restructured list card HTML so the main `<a>` and the cluster section are siblings inside `.list-card-outer` (valid HTML — nested `<a>` tags are not). CSS transitions use max-height for smooth open/close. Condition for showing the cluster section now also triggers when `related_articles` has entries, even if cluster_size is 1.
 

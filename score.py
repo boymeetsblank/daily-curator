@@ -232,13 +232,19 @@ def _score_batch(
     try:
         message = client.messages.create(
             model=SONNET_MODEL,
-            max_tokens=1024,
+            # Headroom for a 12-item batch: each item emits score + 4 criteria +
+            # primary_category + up to 5 tags (~1.0–1.3k tokens/batch). A tighter
+            # ceiling truncates the JSON array mid-item, which fails the parse and
+            # skips the whole batch. max_tokens is a ceiling, not a target — real
+            # output (and cost) is unchanged; this only prevents truncation.
+            max_tokens=4096,
             system=SYSTEM_PROMPT,
             messages=[
                 {"role": "user", "content": USER_PROMPT_TEMPLATE.format(items_block=items_block)}
             ],
         )
         raw = message.content[0].text
+        stop_reason = message.stop_reason
     except Exception as exc:
         print(f"  [ERROR] Sonnet API call failed: {exc}")
         return {"scored": 0, "skipped": len(batch), "parse_failed": True}
@@ -246,7 +252,11 @@ def _score_batch(
     decisions = _parse_sonnet_response(raw)
 
     if decisions is None:
-        print(f"  [WARN] Failed to parse Sonnet response — skipping batch of {len(batch)}")
+        # stop_reason == "max_tokens" fingerprints a truncated response (raise
+        # max_tokens) vs. genuinely malformed JSON — surface it so the next
+        # regression is obvious in the log instead of needing a dig.
+        print(f"  [WARN] Failed to parse Sonnet response — skipping batch of {len(batch)}"
+              f" (stop_reason={stop_reason})")
         print(f"  [WARN] Raw (first 300 chars): {raw[:300]}")
         return {"scored": 0, "skipped": len(batch), "parse_failed": True}
 
