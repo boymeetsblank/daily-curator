@@ -356,6 +356,25 @@ def record_score(
         return row["id"]
 
 
+def update_score_tags(
+    item_id: int,
+    primary_category: str,
+    tags: Optional[list],
+    db_path: str = DB_PATH,
+) -> int:
+    """
+    Update ONLY the topic fields (primary_category + tags) on an existing score
+    row, leaving the score itself untouched. Used by the tag backfill to classify
+    items that were scored before topic tagging existed. Returns rows affected.
+    """
+    with _conn(db_path) as con:
+        cur = con.execute(
+            "UPDATE scores SET primary_category = ?, tags = ? WHERE item_id = ?",
+            (primary_category or "", json.dumps(tags or []), item_id),
+        )
+        return cur.rowcount
+
+
 def log_engagement(
     item_id: int,
     action: str,
@@ -484,6 +503,37 @@ def get_unscored_escalated_items(db_path: str = DB_PATH) -> list[dict]:
             ORDER BY r.fetched_at ASC
             """,
             (PER_SOURCE_CAP,),
+        ).fetchall()
+        return [dict(r) for r in rows]
+
+
+def get_untagged_scored_items(
+    limit: int = 40,
+    min_score: int = 6,
+    window_hours: int = 48,
+    db_path: str = DB_PATH,
+) -> list[dict]:
+    """
+    Scored, feed-eligible items in the recent window that have NO primary_category
+    yet (the pre-tagging backlog). Newest-first so the most feed-relevant items are
+    tagged first. Drives the self-draining tag backfill: because new scores are
+    already tagged and old items age out of the window, this naturally empties.
+    Returns id/title/description.
+    """
+    cutoff = (datetime.now(timezone.utc) - timedelta(hours=window_hours)).isoformat()
+    with _conn(db_path) as con:
+        rows = con.execute(
+            """
+            SELECT i.id, i.title, i.description
+            FROM scores s
+            JOIN items i ON i.id = s.item_id
+            WHERE s.primary_category = ''
+              AND s.score >= ?
+              AND i.fetched_at >= ?
+            ORDER BY s.scored_at DESC
+            LIMIT ?
+            """,
+            (min_score, cutoff, limit),
         ).fetchall()
         return [dict(r) for r in rows]
 

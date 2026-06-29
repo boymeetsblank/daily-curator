@@ -32,6 +32,7 @@ import db
 import ingest
 import triage
 import score
+import backfill_tags
 import moment
 
 
@@ -127,6 +128,15 @@ def main() -> None:
                 f"{s}x{dist[s]}" for s in sorted(dist.keys(), reverse=True) if dist[s]
             )
             print(f"  Distribution   : {dist_line}")
+
+    # ── 3.5. Backfill tags (self-draining: tags the pre-tagging backlog) ────
+    result, elapsed, err = _run_stage("Backfill Tags", backfill_tags.run_backfill)
+    stage_log["backfill_tags"] = (elapsed, err)
+    if result:
+        if result.get("tagged"):
+            print(f"\n  Tags backfilled: {result['tagged']}  (remaining in window: {result.get('remaining', '?')})")
+        elif not result.get("skipped_run"):
+            print(f"\n  Tag backfill   : caught up")
 
     # ── 4. Moment detection (one Haiku call: the single dominant story) ─────
     result, elapsed, err = _run_stage("Moment", moment.run_moment_detection)
