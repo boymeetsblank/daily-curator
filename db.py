@@ -183,6 +183,14 @@ def init_db(db_path: str = DB_PATH) -> None:
             con.execute("ALTER TABLE items ADD COLUMN image_url TEXT")
         except Exception:
             pass  # column already exists
+        # OG-enrichment retry counter: how many times we've tried (and failed) to
+        # fetch an image for this item. Lets enrichment retry beyond the first
+        # poll but give up after a few attempts so permanent failures aren't
+        # re-fetched forever. Default-safe so older DB files migrate cleanly.
+        try:
+            con.execute("ALTER TABLE items ADD COLUMN og_attempts INTEGER NOT NULL DEFAULT 0")
+        except Exception:
+            pass  # column already exists
         # Topic tagging (Phase 2 seed): produced in the score pass, stored on the
         # score row. primary_category = one fixed bucket for niche matching; tags =
         # free-form granularity. Both default-safe so older DB files migrate cleanly.

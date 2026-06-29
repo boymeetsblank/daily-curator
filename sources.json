@@ -156,12 +156,6 @@
     "enabled": true
   },
   {
-    "name": "Google News - Technology",
-    "rss": "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=Technology",
-    "category": "other",
-    "enabled": true
-  },
-  {
     "name": "r/popular",
     "rss": "https://www.reddit.com/r/popular/.rss",
     "category": "wide net",
@@ -265,86 +259,104 @@
   },
   {
     "name": "Highsnobiety",
-    "rss": "https://news.google.com/rss/search?q=site:highsnobiety.com&hl=en-US&gl=US&ceid=US:en",
+    "rss": "https://www.highsnobiety.com/feed/",
     "category": "fashion",
     "enabled": true
   },
   {
     "name": "Nice Kicks",
-    "rss": "https://news.google.com/rss/search?q=site:nicekicks.com&hl=en-US&gl=US&ceid=US:en",
+    "rss": "https://www.nicekicks.com/feed/",
     "category": "sneakers",
     "enabled": true
   },
   {
     "name": "Hodinkee",
-    "rss": "https://news.google.com/rss/search?q=site:hodinkee.com&hl=en-US&gl=US&ceid=US:en",
+    "rss": "https://www.hodinkee.com/articles.rss",
     "category": "culture",
     "enabled": true
   },
   {
     "name": "Time+Tide Watches",
-    "rss": "https://news.google.com/rss/search?q=site:timeandtidewatches.com&hl=en-US&gl=US&ceid=US:en",
+    "rss": "https://timeandtidewatches.com/feed/",
     "category": "culture",
     "enabled": true
   },
   {
     "name": "Gear Patrol",
-    "rss": "https://news.google.com/rss/search?q=site:gearpatrol.com&hl=en-US&gl=US&ceid=US:en",
+    "rss": "https://www.gearpatrol.com/feed/",
     "category": "culture",
     "enabled": true
   },
   {
     "name": "9to5Mac",
-    "rss": "https://news.google.com/rss/search?q=site:9to5mac.com&hl=en-US&gl=US&ceid=US:en",
+    "rss": "https://9to5mac.com/feed/",
     "category": "technology",
     "enabled": true
   },
   {
-    "name": "Google News - NBA",
-    "rss": "https://news.google.com/rss/search?q=NBA&hl=en-US&gl=US&ceid=US:en",
-    "category": "sports",
-    "enabled": true
-  },
-  {
-    "name": "Google News - Gaming",
-    "rss": "https://news.google.com/rss/search?q=gaming+video+games&hl=en-US&gl=US&ceid=US:en",
-    "category": "culture",
-    "enabled": true
-  },
-  {
     "name": "Entrepreneur",
-    "rss": "https://news.google.com/rss/search?q=site:entrepreneur.com&hl=en-US&gl=US&ceid=US:en",
+    "rss": "https://www.entrepreneur.com/latest.rss",
     "category": "business",
     "enabled": true
   },
   {
     "name": "Yahoo Finance",
-    "rss": "https://news.google.com/rss/search?q=site:finance.yahoo.com&hl=en-US&gl=US&ceid=US:en",
+    "rss": "https://finance.yahoo.com/news/rssindex",
     "category": "business",
     "enabled": true
   },
   {
-    "name": "Google News - Business",
-    "rss": "https://news.google.com/rss/search?q=business&hl=en-US&gl=US&ceid=US:en",
+    "name": "CBS Sports NBA",
+    "rss": "https://www.cbssports.com/rss/headlines/nba/",
+    "category": "sports",
+    "enabled": true
+  },
+  {
+    "name": "Polygon",
+    "rss": "https://www.polygon.com/rss/index.xml",
+    "category": "gaming",
+    "enabled": true
+  },
+  {
+    "name": "IGN",
+    "rss": "https://feeds.ign.com/ign/all",
+    "category": "gaming",
+    "enabled": true
+  },
+  {
+    "name": "Business Insider",
+    "rss": "https://www.businessinsider.com/rss",
     "category": "business",
     "enabled": true
   },
   {
-    "name": "Google News - Finance",
-    "rss": "https://news.google.com/rss/search?q=finance&hl=en-US&gl=US&ceid=US:en",
+    "name": "Fortune",
+    "rss": "https://fortune.com/feed/",
     "category": "business",
     "enabled": true
   },
   {
-    "name": "Google News - Vehicles",
-    "rss": "https://news.google.com/rss/search?q=vehicles+cars+automotive&hl=en-US&gl=US&ceid=US:en",
-    "category": "culture",
+    "name": "MarketWatch",
+    "rss": "http://feeds.marketwatch.com/marketwatch/topstories/",
+    "category": "business",
     "enabled": true
   },
   {
-    "name": "Google News - BMW",
-    "rss": "https://news.google.com/rss/search?q=BMW&hl=en-US&gl=US&ceid=US:en",
-    "category": "culture",
+    "name": "Car and Driver",
+    "rss": "https://www.caranddriver.com/rss/all.xml/",
+    "category": "automotive",
+    "enabled": true
+  },
+  {
+    "name": "The Drive",
+    "rss": "https://www.thedrive.com/feed",
+    "category": "automotive",
+    "enabled": true
+  },
+  {
+    "name": "BMWBLOG",
+    "rss": "https://www.bmwblog.com/feed/",
+    "category": "automotive",
     "enabled": true
   }
 ]

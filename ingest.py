@@ -222,33 +222,60 @@ def _update_last_polled(source_id: int, db_path: str) -> None:
         con.close()
 
 
+# A real browser User-Agent — many publishers serve a bare/blocked page (or no
+# og tags) to obvious bot agents. 8s timeout: some article pages are slow.
+_OG_BROWSER_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+)
+
+# Image-tag patterns tried in order: og:image → twitter:image → link image_src.
+# Each appears twice to handle either attribute order.
+_IMG_PATTERNS = [
+    r'<meta[^>]+property=["\']og:image(?::url)?["\'][^>]+content=["\']([^"\']+)["\']',
+    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image(?::url)?["\']',
+    r'<meta[^>]+name=["\']twitter:image(?::src)?["\'][^>]+content=["\']([^"\']+)["\']',
+    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image(?::src)?["\']',
+    r'<link[^>]+rel=["\']image_src["\'][^>]+href=["\']([^"\']+)["\']',
+    r'<link[^>]+href=["\']([^"\']+)["\'][^>]+rel=["\']image_src["\']',
+]
+
+# OG-enrichment retry policy: retry imageless items across the feed window (not
+# just brand-new ones), but give up after a few failed attempts so permanent
+# failures aren't re-fetched forever. Bounded per run to cap pipeline runtime.
+OG_MAX_ATTEMPTS = 3
+OG_ENRICH_PER_RUN = 60
+
+
 def _fetch_og_image(url: str) -> Optional[str]:
     """
-    Fetch a single article URL and extract its og:image meta tag.
-    Returns the image URL string, or None if not found or on any error.
-    Hard timeout of 5 seconds.
+    Fetch an article page and extract a share image, trying og:image, then
+    twitter:image, then <link rel="image_src">. Returns the image URL or None
+    on any failure. Real browser UA, 8s timeout, follows redirects.
     """
     try:
         response = requests.get(
             url,
-            timeout=5,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; BlankEngine/1.0)"},
+            timeout=8,
+            headers={
+                "User-Agent": _OG_BROWSER_UA,
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            },
             allow_redirects=True,
         )
         if not response.ok:
             return None
         if "html" not in response.headers.get("content-type", ""):
             return None
-        html = response.text[:50000]
-        match = re.search(
-            r'<meta[^>]+(?:'
-            r'property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']'
-            r'|content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']'
-            r')',
-            html, re.IGNORECASE
-        )
-        if match:
-            return (match.group(1) or match.group(2)).strip() or None
+        html = response.text[:80000]
+        for pattern in _IMG_PATTERNS:
+            match = re.search(pattern, html, re.IGNORECASE)
+            if match:
+                img = (match.group(1) or "").strip()
+                if img.startswith("//"):
+                    img = "https:" + img
+                if img.startswith("http"):
+                    return img
         return None
     except Exception:
         return None
@@ -256,24 +283,33 @@ def _fetch_og_image(url: str) -> Optional[str]:
 
 def enrich_og_images(db_path: str = db.DB_PATH) -> dict:
     """
-    For items inserted in the last 15 minutes that have no image_url, fetch
-    the article page and extract og:image as a fallback. Runs 10 concurrent
-    workers with a 5-second per-request timeout.
+    Fetch share images for imageless items across the feed window (last 48h),
+    not just brand-new ones — so a failed first attempt is retried on later runs.
+    Each item is retried at most OG_MAX_ATTEMPTS times (tracked in og_attempts)
+    then left alone, and at most OG_ENRICH_PER_RUN items are processed per run to
+    bound runtime. 10 concurrent workers.
     """
     con = sqlite3.connect(db_path)
     try:
         rows = con.execute(
-            "SELECT id, url FROM items "
-            "WHERE image_url IS NULL AND fetched_at >= datetime('now', '-15 minutes')"
+            """
+            SELECT id, url FROM items
+            WHERE (image_url IS NULL OR image_url = '')
+              AND og_attempts < ?
+              AND fetched_at >= datetime('now', '-48 hours')
+            ORDER BY fetched_at DESC
+            LIMIT ?
+            """,
+            (OG_MAX_ATTEMPTS, OG_ENRICH_PER_RUN),
         ).fetchall()
     finally:
         con.close()
 
     if not rows:
-        print("  No new items need OG enrichment.")
+        print("  No items need OG enrichment.")
         return {"enriched": 0, "attempted": 0}
 
-    print(f"  Fetching OG images for {len(rows)} items...")
+    print(f"  Fetching OG images for {len(rows)} items (retry <= {OG_MAX_ATTEMPTS})...")
     enriched = 0
     con = sqlite3.connect(db_path)
     try:
@@ -287,10 +323,16 @@ def enrich_og_images(db_path: str = db.DB_PATH) -> dict:
                 og_url = future.result()
                 if og_url:
                     con.execute(
-                        "UPDATE items SET image_url = ? WHERE id = ?",
+                        "UPDATE items SET image_url = ?, og_attempts = og_attempts + 1 WHERE id = ?",
                         (og_url, item_id),
                     )
                     enriched += 1
+                else:
+                    # Count the failed attempt so we eventually stop retrying.
+                    con.execute(
+                        "UPDATE items SET og_attempts = og_attempts + 1 WHERE id = ?",
+                        (item_id,),
+                    )
         con.commit()
     finally:
         con.close()
@@ -469,6 +511,66 @@ def fetch_trends(db_path: str = db.DB_PATH) -> dict:
         print(f"  [{name}] {len(topics)} topics, {new_here} new.")
 
     return {"fetched": total_new, "sources_fetched": sources_fetched, "throttled": throttled}
+
+
+def sync_sources(sources_path: str = "sources.json", db_path: str = db.DB_PATH) -> dict:
+    """
+    Reconcile the `sources` table with sources.json (the source of truth).
+
+    For each enabled entry: upsert it (activating it). Any DB source whose URL is
+    NOT an enabled entry in the file is deactivated (active=0) so removed/disabled
+    feeds stop being polled — their existing items remain and simply age out.
+    Trend sources (trend:// URLs, created by fetch_trends) are left untouched.
+
+    Returns {"added_or_updated": int, "deactivated": int, "total_active": int}.
+    """
+    import json
+
+    try:
+        with open(sources_path, encoding="utf-8") as f:
+            entries = json.load(f)
+    except (OSError, json.JSONDecodeError) as exc:
+        print(f"  [WARN] Could not read {sources_path}: {exc} — leaving sources as-is.")
+        return {"added_or_updated": 0, "deactivated": 0, "total_active": 0}
+
+    wanted_urls = set()
+    upserted = 0
+    for e in entries:
+        if not e.get("enabled", True):
+            continue
+        url = (e.get("rss") or "").strip()
+        name = (e.get("name") or url).strip()
+        if not url:
+            continue
+        source_type = "reddit" if "reddit.com" in url else "rss"
+        db.upsert_source(url=url, name=name, source_type=source_type,
+                         active=True, db_path=db_path)
+        wanted_urls.add(url)
+        upserted += 1
+
+    # Deactivate RSS/reddit sources no longer in the file (keep trend:// sources).
+    deactivated = 0
+    con = sqlite3.connect(db_path)
+    try:
+        con.row_factory = sqlite3.Row
+        rows = con.execute(
+            "SELECT id, url FROM sources WHERE active = 1 AND url NOT LIKE 'trend://%'"
+        ).fetchall()
+        for r in rows:
+            if r["url"] not in wanted_urls:
+                con.execute("UPDATE sources SET active = 0 WHERE id = ?", (r["id"],))
+                deactivated += 1
+        con.commit()
+        total_active = con.execute(
+            "SELECT COUNT(*) FROM sources WHERE active = 1"
+        ).fetchone()[0]
+    finally:
+        con.close()
+
+    print(f"  Sources synced: {upserted} enabled, {deactivated} deactivated, "
+          f"{total_active} active total.")
+    return {"added_or_updated": upserted, "deactivated": deactivated,
+            "total_active": total_active}
 
 
 def poll_all_active(db_path: str = db.DB_PATH) -> dict:

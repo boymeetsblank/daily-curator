@@ -73,6 +73,13 @@ def main() -> None:
     # from being re-activated on every run.
     db.init_db()
     print("DB initialized.")
+
+    # Reconcile the sources table with sources.json (the source of truth) so feed
+    # edits take effect on the next run and removed feeds stop being polled.
+    try:
+        ingest.sync_sources()
+    except Exception as exc:
+        print(f"  [WARN] sync_sources failed (continuing with existing sources): {exc}")
     print()
 
     stage_log = {}
