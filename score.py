@@ -27,6 +27,34 @@ BATCH_SIZE = 12
 FEED_THRESHOLD = 6  # items scoring below this are filtered from the feed
 
 # ---------------------------------------------------------------------------
+# Topic taxonomy (Phase 2 seed) — the fixed primary categories.
+# Each scored item gets EXACTLY ONE primary_category from this list (clean for
+# per-user niche matching) plus free-form `tags` for granularity. "Other" is the
+# honest escape hatch so nothing is force-fit. Keep this list as the single
+# source of truth; niche onboarding will map to it. Tagging happens inside the
+# existing score pass — no extra LLM call, just a few more output tokens/item.
+# ---------------------------------------------------------------------------
+CATEGORIES = [
+    "Politics & Policy",
+    "World / International",
+    "Business & Economy",
+    "Technology & AI",
+    "Science",
+    "Health & Medicine",
+    "Climate & Environment",
+    "Sports",
+    "Entertainment",
+    "Gaming",
+    "Arts, Books & Ideas",
+    "Internet Culture",
+    "Lifestyle",
+    "Crime & Justice",
+    "Money & Personal Finance",
+    "Other",
+]
+_CATEGORY_SET = {c.casefold(): c for c in CATEGORIES}
+
+# ---------------------------------------------------------------------------
 # Prompt — the rubric is the product; follow exactly
 # ---------------------------------------------------------------------------
 
@@ -73,15 +101,25 @@ force a minimum score. A wildly popular item that is not actually interesting \
 or important can still score low. Engagement is evidence, never an override. \
 The product's north star is interestingness or importance earned on the merits.
 
+TOPIC TAGGING — also classify each item:
+- primary_category: choose EXACTLY ONE label from this fixed list (verbatim):
+{categories_block}
+  Pick the single best fit. Use "Other" only if none genuinely apply.
+- tags: 2–5 short free-form tags for granularity (entities, subtopics, themes), \
+  e.g. ["OpenAI", "EU AI Act", "regulation"]. Lowercase proper nouns naturally; \
+  keep tags specific, not generic restatements of the category.
+
 OUTPUT per item — return ONLY a valid JSON array, no preamble, no markdown \
 fences, no explanation outside the array. Each element:
-{
+{{
   "item_id": <int>,
   "score": <int 1-10>,
-  "criteria": {"trending": <1-10>, "timely": <1-10>, "cultural": <1-10>, "significance": <1-10>},
-  "soft_floor_flags": [<string description of any popularity signal noted, or empty list>]
-}
-"""
+  "criteria": {{"trending": <1-10>, "timely": <1-10>, "cultural": <1-10>, "significance": <1-10>}},
+  "soft_floor_flags": [<string description of any popularity signal noted, or empty list>],
+  "primary_category": "<one label from the list above>",
+  "tags": [<2-5 short strings>]
+}}
+""".format(categories_block="\n".join(f"  - {c}" for c in CATEGORIES))
 
 USER_PROMPT_TEMPLATE = """\
 Score the following items. Return only the JSON array.
@@ -130,6 +168,33 @@ def _parse_sonnet_response(text: str) -> Optional[list[dict]]:
         return parsed
     except json.JSONDecodeError:
         return None
+
+
+def _normalize_category(raw) -> str:
+    """
+    Map Sonnet's primary_category to a canonical label from CATEGORIES
+    (case-insensitive). Anything unrecognized falls back to "Other" so a
+    drifted/hallucinated label never corrupts the taxonomy.
+    """
+    if not isinstance(raw, str):
+        return "Other"
+    return _CATEGORY_SET.get(raw.strip().casefold(), "Other")
+
+
+def _normalize_tags(raw) -> list:
+    """
+    Coerce Sonnet's tags into a clean list of short strings. Drops non-strings
+    and empties, trims, and caps at 5 to bound storage/output.
+    """
+    if not isinstance(raw, list):
+        return []
+    out = []
+    for t in raw:
+        if isinstance(t, str):
+            t = t.strip()
+            if t:
+                out.append(t[:50])
+    return out[:5]
 
 
 def _normalize_soft_floor_flags(raw) -> dict:
@@ -205,12 +270,16 @@ def _score_batch(
                 criteria = {}
 
             soft_floor_flags = _normalize_soft_floor_flags(entry.get("soft_floor_flags") or [])
+            primary_category = _normalize_category(entry.get("primary_category"))
+            tags = _normalize_tags(entry.get("tags"))
 
             db.record_score(
                 item_id=item_id,
                 score=score,
                 criteria=criteria,
                 soft_floor_flags=soft_floor_flags,
+                primary_category=primary_category,
+                tags=tags,
                 db_path=db_path,
             )
             scored += 1

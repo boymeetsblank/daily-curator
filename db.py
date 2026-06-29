@@ -115,6 +115,8 @@ CREATE TABLE IF NOT EXISTS scores (
     why              TEXT    NOT NULL,
     hook             TEXT    NOT NULL,
     soft_floor_flags TEXT    NOT NULL DEFAULT '{}',  -- JSON: popularity signals, not score-forcing
+    primary_category TEXT    NOT NULL DEFAULT '',    -- one fixed bucket (see score.CATEGORIES); '' = unset
+    tags             TEXT    NOT NULL DEFAULT '[]',  -- JSON array of free-form granular tags
     scored_at        TEXT    NOT NULL
 );
 
@@ -166,6 +168,17 @@ def init_db(db_path: str = DB_PATH) -> None:
         # Migrations: add columns that didn't exist in older DB files
         try:
             con.execute("ALTER TABLE items ADD COLUMN image_url TEXT")
+        except Exception:
+            pass  # column already exists
+        # Topic tagging (Phase 2 seed): produced in the score pass, stored on the
+        # score row. primary_category = one fixed bucket for niche matching; tags =
+        # free-form granularity. Both default-safe so older DB files migrate cleanly.
+        try:
+            con.execute("ALTER TABLE scores ADD COLUMN primary_category TEXT NOT NULL DEFAULT ''")
+        except Exception:
+            pass  # column already exists
+        try:
+            con.execute("ALTER TABLE scores ADD COLUMN tags TEXT NOT NULL DEFAULT '[]'")
         except Exception:
             pass  # column already exists
 
@@ -286,11 +299,15 @@ def record_score(
     why: str = "",
     hook: str = "",
     soft_floor_flags: Optional[dict] = None,
+    primary_category: str = "",
+    tags: Optional[list] = None,
     db_path: str = DB_PATH,
 ) -> int:
     """
     Log a Sonnet score (1–10) for an escalated item.
     soft_floor_flags holds popularity signals that were noted but did NOT force the score.
+    primary_category is one fixed bucket (see score.CATEGORIES); tags is a list of
+    free-form granular tags. Both feed later per-user niche matching.
     Returns the score row id.
     """
     if not 1 <= score <= 10:
@@ -300,20 +317,25 @@ def record_score(
         con.execute(
             """
             INSERT INTO scores
-                (item_id, score, criteria, why, hook, soft_floor_flags, scored_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+                (item_id, score, criteria, why, hook, soft_floor_flags,
+                 primary_category, tags, scored_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(item_id) DO UPDATE SET
                 score            = excluded.score,
                 criteria         = excluded.criteria,
                 why              = excluded.why,
                 hook             = excluded.hook,
                 soft_floor_flags = excluded.soft_floor_flags,
+                primary_category = excluded.primary_category,
+                tags             = excluded.tags,
                 scored_at        = excluded.scored_at
             """,
             (
                 item_id, score,
                 json.dumps(criteria), why, hook,
                 json.dumps(soft_floor_flags or {}),
+                primary_category or "",
+                json.dumps(tags or []),
                 _now(),
             ),
         )
@@ -490,6 +512,7 @@ def get_feed(
             SELECT i.id, i.url, i.title, i.description, i.image_url,
                    i.published_at, i.fetched_at, i.raw_engagement,
                    s.score, s.criteria, s.why, s.hook, s.scored_at,
+                   s.primary_category, s.tags,
                    src.id   AS source_id,
                    src.name AS source_name
             FROM scores s
