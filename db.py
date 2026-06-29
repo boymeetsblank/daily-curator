@@ -133,6 +133,19 @@ CREATE TABLE IF NOT EXISTS engagement (
 );
 
 CREATE INDEX IF NOT EXISTS idx_engagement_user_created ON engagement(user_id, created_at);
+
+-- The "Moment" rail: the single dominant story right now, detected once per run
+-- by moment.py (Haiku). Only one row is active at a time; history is kept for
+-- debugging. item_ids is a JSON array of items.id that belong to the moment.
+CREATE TABLE IF NOT EXISTS moments (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    label       TEXT    NOT NULL,
+    item_ids    TEXT    NOT NULL DEFAULT '[]',  -- JSON array of items.id
+    detected_at TEXT    NOT NULL,
+    active      INTEGER NOT NULL DEFAULT 1      -- bool; only the newest is active
+);
+
+CREATE INDEX IF NOT EXISTS idx_moments_active ON moments(active);
 """
 
 
@@ -368,6 +381,47 @@ def log_engagement(
             (item_id, user_id, action, dwell_ms, _now()),
         )
         return con.execute("SELECT last_insert_rowid()").fetchone()[0]
+
+
+def record_moment(label: str, item_ids: list, db_path: str = DB_PATH) -> int:
+    """
+    Record the current dominant story (the "Moment" rail). Deactivates any prior
+    moment and inserts this one as the single active row. item_ids is a list of
+    items.id that belong to the story. Returns the new moment row id.
+    """
+    ids = [int(i) for i in (item_ids or [])]
+    with _conn(db_path) as con:
+        con.execute("UPDATE moments SET active = 0 WHERE active = 1")
+        con.execute(
+            "INSERT INTO moments (label, item_ids, detected_at, active) VALUES (?, ?, ?, 1)",
+            (label, json.dumps(ids), _now()),
+        )
+        return con.execute("SELECT last_insert_rowid()").fetchone()[0]
+
+
+def clear_moment(db_path: str = DB_PATH) -> None:
+    """Deactivate all moments — used when no single story dominates this run."""
+    with _conn(db_path) as con:
+        con.execute("UPDATE moments SET active = 0 WHERE active = 1")
+
+
+def get_active_moment(db_path: str = DB_PATH) -> Optional[dict]:
+    """
+    Return the currently active moment as {label, item_ids (list), detected_at},
+    or None if no moment is active.
+    """
+    with _conn(db_path) as con:
+        row = con.execute(
+            "SELECT label, item_ids, detected_at FROM moments "
+            "WHERE active = 1 ORDER BY id DESC LIMIT 1"
+        ).fetchone()
+    if not row:
+        return None
+    try:
+        ids = json.loads(row["item_ids"])
+    except (json.JSONDecodeError, TypeError):
+        ids = []
+    return {"label": row["label"], "item_ids": ids, "detected_at": row["detected_at"]}
 
 
 # ---------------------------------------------------------------------------
@@ -679,6 +733,19 @@ if __name__ == "__main__":
     kill_pile2 = get_kill_pile(since="2000-01-01T00:00:00+00:00", db_path=TEST_DB)
     assert len(kill_pile2) == 1
     print(f"  kill pile now has {len(kill_pile2)} item  OK")
+
+    print("Recording a moment...")
+    assert get_active_moment(TEST_DB) is None, "no moment expected yet"
+    record_moment(label="Big Test Story", item_ids=[item_id, item_id2], db_path=TEST_DB)
+    moment = get_active_moment(TEST_DB)
+    assert moment and moment["label"] == "Big Test Story"
+    assert moment["item_ids"] == [item_id, item_id2]
+    print(f"  active moment: {moment['label']} ({len(moment['item_ids'])} items)  OK")
+    record_moment(label="Newer Story", item_ids=[item_id], db_path=TEST_DB)
+    assert get_active_moment(TEST_DB)["label"] == "Newer Story", "newest moment should be active"
+    clear_moment(TEST_DB)
+    assert get_active_moment(TEST_DB) is None, "clear_moment should deactivate all"
+    print("  moment re-record + clear  OK")
 
     import gc
     gc.collect()  # release sqlite connections before delete (Windows file-lock)

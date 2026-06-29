@@ -153,6 +153,8 @@ jobs:
                           'source': source,
                           'link': link,
                           'image': image,
+                          'item_id': None,           # legacy picks have no blank.db id
+                          'primary_category': None,  # legacy picks were never tagged
                           'trend_label': trend_label,
                           'why': why,
                           'angle': angle,
@@ -191,8 +193,9 @@ jobs:
                   con = sqlite3.connect('blank.db')
                   con.row_factory = sqlite3.Row
                   db_rows = con.execute("""
-                      SELECT i.url, i.title, i.image_url, i.published_at, i.fetched_at,
-                             s.score, s.why, s.hook, s.scored_at,
+                      SELECT i.id AS item_id, i.url, i.title, i.image_url,
+                             i.published_at, i.fetched_at,
+                             s.score, s.why, s.hook, s.scored_at, s.primary_category,
                              src.name AS source_name
                       FROM scores s
                       JOIN items i ON i.id = s.item_id
@@ -249,6 +252,8 @@ jobs:
                               'source':          d['source_name'] or '',
                               'link':            d['url'] or '',
                               'image':           d.get('image_url') or None,
+                              'item_id':         d.get('item_id'),
+                              'primary_category': d.get('primary_category') or None,
                               'trend_label':     None,
                               'why':             d['why'] or '',
                               'angle':           d['hook'] or '',
@@ -325,8 +330,24 @@ jobs:
           except Exception as e:
               print(f'Warning: rank consolidation failed, leaving runs as-is: {e}')
 
+          # ── Sectioned rails (ADDITIVE — the flat `runs` stream is untouched) ──
+          # Build named rails (moment / top_stories / category) from the ranked
+          # flat picks + the active Moment in blank.db. An older PWA that ignores
+          # `sections` keeps rendering `runs`; any failure just omits `sections`.
+          feed_sections = []
+          try:
+              import sections as _sections
+              if len(runs) == 1:
+                  flat_picks = runs[0].get('picks', [])
+              else:
+                  flat_picks = [p for r in runs for p in r.get('picks', [])]
+              feed_sections = _sections.build_sections(flat_picks, 'blank.db')
+              print('Built sections: ' + (', '.join(s['kind'] for s in feed_sections) or '(none)'))
+          except Exception as e:
+              print(f'Warning: section assembly failed, omitting sections: {e}')
+
           os.makedirs('site', exist_ok=True)
-          out = {'runs': runs, 'generated_at': datetime.utcnow().isoformat() + 'Z'}
+          out = {'runs': runs, 'sections': feed_sections, 'generated_at': datetime.utcnow().isoformat() + 'Z'}
           with open('site/picks_data.json', 'w', encoding='utf-8') as f:
               json.dump(out, f, ensure_ascii=False, indent=2)
           print(f'Built picks_data.json — {len(runs)} runs, '

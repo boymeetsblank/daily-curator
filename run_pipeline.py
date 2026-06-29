@@ -32,6 +32,7 @@ import db
 import ingest
 import triage
 import score
+import moment
 
 
 # ---------------------------------------------------------------------------
@@ -126,6 +127,15 @@ def main() -> None:
                 f"{s}x{dist[s]}" for s in sorted(dist.keys(), reverse=True) if dist[s]
             )
             print(f"  Distribution   : {dist_line}")
+
+    # ── 4. Moment detection (one Haiku call: the single dominant story) ─────
+    result, elapsed, err = _run_stage("Moment", moment.run_moment_detection)
+    stage_log["moment"] = (elapsed, err)
+    if result:
+        if result.get("label"):
+            print(f"\n  Moment         : \"{result['label']}\" ({result['item_count']} stories)")
+        else:
+            print(f"\n  Moment         : no dominant story this run")
 
     # ── Summary ────────────────────────────────────────────────────────────
     total_elapsed = (datetime.now(timezone.utc) - started_at).total_seconds()
