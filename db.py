@@ -8,6 +8,7 @@ Initialize with init_db(); all other functions assume the DB exists.
 import hashlib
 import json
 import sqlite3
+from contextlib import contextmanager
 from datetime import datetime, timezone, timedelta
 from typing import Optional
 
@@ -149,11 +150,23 @@ CREATE INDEX IF NOT EXISTS idx_moments_active ON moments(active);
 """
 
 
-def _conn(db_path: str = DB_PATH) -> sqlite3.Connection:
+@contextmanager
+def _conn(db_path: str = DB_PATH):
+    """
+    Yield a SQLite connection and ALWAYS close it. The inner `with con:` preserves
+    the existing commit-on-success / rollback-on-error semantics; the `finally`
+    closes the handle so connections don't leak — notably on Windows, where a
+    lingering handle blocks deleting/replacing blank.db. All callers already use
+    `with _conn(...) as con:`, so this is a drop-in.
+    """
     con = sqlite3.connect(db_path)
     con.execute("PRAGMA foreign_keys = ON")
     con.row_factory = sqlite3.Row
-    return con
+    try:
+        with con:
+            yield con
+    finally:
+        con.close()
 
 
 def _now() -> str:

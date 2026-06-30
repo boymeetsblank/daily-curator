@@ -7,6 +7,7 @@ new items via db.py helpers. Dedup is automatic (content_hash + URL).
 Does not touch daily_curator.py or any part of the existing pipeline.
 """
 
+import html
 import os
 import re
 import sqlite3
@@ -14,7 +15,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from typing import Optional
-from urllib.parse import quote_plus
+from urllib.parse import quote_plus, urljoin
 
 import feedparser
 import requests
@@ -96,17 +97,30 @@ def poll_source(source: dict, db_path: str = db.DB_PATH) -> dict:
     skipped_count = 0
     error_count = 0
 
+    # Trend pseudo-sources (trend://…) are populated by fetch_trends, not polled here.
+    if not source_url.startswith("http"):
+        return {"source_id": source_id, "new": 0, "skipped": 0, "errors": 0}
+
+    # Fetch with an explicit timeout so a single hung/slow source can't stall the
+    # serial, single-concurrency pipeline. feedparser.parse(url) does a BLOCKING
+    # urllib fetch with NO timeout, so we fetch the bytes ourselves and hand them
+    # to feedparser (which still detects encoding from the raw bytes).
     try:
-        feed = feedparser.parse(source_url, agent=USER_AGENT)
-    except Exception as exc:
+        resp = requests.get(
+            source_url,
+            timeout=15,
+            headers={"User-Agent": USER_AGENT},
+            allow_redirects=True,
+        )
+    except requests.RequestException as exc:
         print(f"  [ERROR] Failed to fetch {source_url}: {exc}")
         return {"source_id": source_id, "new": 0, "skipped": 0, "errors": 1}
 
-    # Detect HTTP error responses (feedparser doesn't raise — it sets feed.status)
-    http_status = getattr(feed, "status", None)
-    if http_status and http_status >= 400:
-        print(f"  [ERROR] HTTP {http_status} from {source_url}")
+    if resp.status_code >= 400:
+        print(f"  [ERROR] HTTP {resp.status_code} from {source_url}")
         return {"source_id": source_id, "new": 0, "skipped": 0, "errors": 1}
+
+    feed = feedparser.parse(resp.content)
 
     if feed.bozo and not feed.entries:
         print(f"  [WARN] Malformed or empty feed: {source_url} ({feed.bozo_exception})")
@@ -267,13 +281,19 @@ def _fetch_og_image(url: str) -> Optional[str]:
             return None
         if "html" not in response.headers.get("content-type", ""):
             return None
-        html = response.text[:80000]
+        page = response.text[:80000]
         for pattern in _IMG_PATTERNS:
-            match = re.search(pattern, html, re.IGNORECASE)
+            match = re.search(pattern, page, re.IGNORECASE)
             if match:
-                img = (match.group(1) or "").strip()
+                img = html.unescape((match.group(1) or "").strip())  # &amp; -> &
+                if not img:
+                    continue
                 if img.startswith("//"):
                     img = "https:" + img
+                elif not img.startswith("http"):
+                    # root-relative (/share.jpg) or other relative -> absolutize
+                    # against the final (post-redirect) article URL.
+                    img = urljoin(response.url, img)
                 if img.startswith("http"):
                     return img
         return None

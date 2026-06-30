@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-30] Fix: engine robustness from code review (RSS timeout, OG URLs, DB handles)
+
+Three verified fixes from a multi-agent code review (the reviewer's "HIGH item-index mismatch" flags were false positives — the triage/score id-mapping is well-defended — and were correctly left alone). **(1) RSS fetch had no network timeout** (`ingest.py` `poll_source`): `feedparser.parse(url)` does a blocking urllib fetch with no timeout, so a single hung/slow source could stall the entire serial, single-concurrency pipeline (and queue the next cron behind it) — the likely cause of "Reddit timing out." Now fetches bytes via `requests.get(url, timeout=15)` and hands them to `feedparser.parse(resp.content)` (encoding still auto-detected from raw bytes), with the HTTP-status/error handling preserved; `trend://` pseudo-sources are skipped early (they're populated by `fetch_trends`, not polled). **(2) OG-image scraping dropped valid images** (`ingest.py` `_fetch_og_image`): root-relative URLs (`/share.jpg`) were discarded and `&amp;` in CDN URLs wasn't unescaped (→ 404s). Now `html.unescape()`s the URL and `urljoin()`s relative paths against the final (post-redirect) article URL — recovers images that were silently lost. **(3) DB connections were never closed** (`db.py` `_conn`): the helper returned a bare connection and callers' `with` only commits/rolls back, leaking handles (worst on Windows, where a lingering handle blocks replacing `blank.db`). `_conn` is now a `@contextmanager` that preserves commit-on-success/rollback-on-error via an inner `with con:` and closes in `finally` — a drop-in (all 17 callers already use `with _conn(...)`). Verified: all module self-tests pass; a live poll of The Verge ingested 10 items through the new path. Deliberately skipped: the dead `publish.py` XSS (nothing imports it — the live renderer is `index.html`), undated-item ranking (frozen at ingest, not "pinned forever"), and the score-omission/recency-window items (load-bearing — better as deliberate tasks).
+
 ## [2026-06-29] UI: niche selection drives the feed (onboarding in miniature)
 
 The cohesive feed's niche previews were auto-picked by **volume** (the busiest `primary_category` buckets — Politics/Arts/Crime have lots of articles regardless of whether the reader cares). Replaced that guess with **user choice**: the **Niches tab** is now wired to the engine's 15 real categories, and the feed's niche sections render the **picked niches, in the user's order** (re-rendering live as chips toggle). If nothing's picked yet it falls back to the busiest niches (depth-gated by `MIN_NICHE = 8`, capped at `MAX_NICHES = 8`) so the feed is never empty. Frontend-only (localStorage `blank.niches`, per-device) — a lightweight stand-in for real niche onboarding (accounts + server-side per-user filtering) which remains the planned next build; no engine work, still global-score-once. `index.html` only.
@@ -79,10 +83,6 @@ Articles from blank.db were displaying "1h ago" based on when the engine process
 ## [2026-06-25] Fix: feed section labels (Morning/Afternoon/Evening) now use CT
 
 In `parse_file()` in `deploy-pages.yml`, the Morning/Afternoon/Evening label was being calculated from the raw UTC hour in the filename before the timezone conversion to CT. Moved the label block to after the `dt_ct` conversion so it uses the CT hour, matching the behavior already used in the blank.db merge section of the same file.
-
-## [2026-06-25] Fix: deploy-pages.yml now triggers after Blank Engine runs
-
-`deploy-pages.yml` triggers on `push` to main, but GitHub's security rule blocks bot pushes (via `GITHUB_TOKEN`) from triggering other workflows. So every time `blank.yml` committed and pushed `blank.db`, `deploy-pages.yml` never fired and the feed never rebuilt. Fix: added "Blank Engine" to the `workflow_run` list so `deploy-pages.yml` triggers on completion of `blank.yml` directly, regardless of who made the push.
 
 
 
