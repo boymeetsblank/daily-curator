@@ -25,10 +25,13 @@ PER_SOURCE_CAP = 15
 # Feed ranking — SINGLE SOURCE OF TRUTH for time-decayed ordering
 # ---------------------------------------------------------------------------
 # Effective rank = score - ageHours / DECAY_HOURS_PER_POINT. A fresh high-scorer
-# tops the feed and gently sinks as it ages; recency lifts items but score
-# dominates. Shared by db.get_feed() AND the deploy-pages.yml feed builder so
-# every surface orders the feed identically. Tune the decay in this one place.
-DECAY_HOURS_PER_POINT = 12  # lose ~1 rank point every 12h of age
+# tops the feed and sinks as it ages; recency lifts items but score still matters.
+# Shared by db.get_feed() AND the deploy-pages.yml feed builder so every surface
+# orders the feed identically. Tune the decay in this one place.
+# At 6h/point: a score-9 leads ~18h before a fresh 6 passes it; a fresh score-8
+# beats a 7h-old score-9 — so big stories still lead while fresh, but recent news
+# breaks through instead of stale high-scores pinning the top for ~1.5 days (12h).
+DECAY_HOURS_PER_POINT = 6  # lose ~1 rank point every 6h of age
 
 
 def rank_timestamp(primary_ts, fallback_ts=None):

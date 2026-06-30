@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-30] Tune: feed time-decay 12h → 6h per point (fresher feed)
+
+`DECAY_HOURS_PER_POINT` in `db.py` (the single source of truth for feed ordering, shared by `db.get_feed()` and the `deploy-pages.yml` builder) lowered **12 → 6** so recency competes harder with score. At 12h/point a strong story (score 9) pinned the top for ~36h, so the feed always led with several-hours-old "dated" items and fresh news couldn't break in. At 6h/point: `rank = score − ageHours/6`, so a fresh score-8 (8.0) now beats a 7h-old score-9 (7.83), and a score-9 leads ~18h instead of ~36h before a fresh 6 passes it — big stories still lead while genuinely fresh, but the feed stops feeling stale. One constant, easily re-tuned. (Note: this only takes effect while the engine + deploy are actually running — see the separate engine-scheduling issue.)
+
 ## [2026-06-30] Fix: engine robustness from code review (RSS timeout, OG URLs, DB handles)
 
 Three verified fixes from a multi-agent code review (the reviewer's "HIGH item-index mismatch" flags were false positives — the triage/score id-mapping is well-defended — and were correctly left alone). **(1) RSS fetch had no network timeout** (`ingest.py` `poll_source`): `feedparser.parse(url)` does a blocking urllib fetch with no timeout, so a single hung/slow source could stall the entire serial, single-concurrency pipeline (and queue the next cron behind it) — the likely cause of "Reddit timing out." Now fetches bytes via `requests.get(url, timeout=15)` and hands them to `feedparser.parse(resp.content)` (encoding still auto-detected from raw bytes), with the HTTP-status/error handling preserved; `trend://` pseudo-sources are skipped early (they're populated by `fetch_trends`, not polled). **(2) OG-image scraping dropped valid images** (`ingest.py` `_fetch_og_image`): root-relative URLs (`/share.jpg`) were discarded and `&amp;` in CDN URLs wasn't unescaped (→ 404s). Now `html.unescape()`s the URL and `urljoin()`s relative paths against the final (post-redirect) article URL — recovers images that were silently lost. **(3) DB connections were never closed** (`db.py` `_conn`): the helper returned a bare connection and callers' `with` only commits/rolls back, leaking handles (worst on Windows, where a lingering handle blocks replacing `blank.db`). `_conn` is now a `@contextmanager` that preserves commit-on-success/rollback-on-error via an inner `with con:` and closes in `finally` — a drop-in (all 17 callers already use `with _conn(...)`). Verified: all module self-tests pass; a live poll of The Verge ingested 10 items through the new path. Deliberately skipped: the dead `publish.py` XSS (nothing imports it — the live renderer is `index.html`), undated-item ranking (frozen at ingest, not "pinned forever"), and the score-omission/recency-window items (load-bearing — better as deliberate tasks).
@@ -79,10 +83,6 @@ Scoring no longer generates a rewritten "hook" or per-item "why". `score.py` now
 ## [2026-06-25] Fix: blank.db articles show actual publish date, not scored_at time
 
 Articles from blank.db were displaying "1h ago" based on when the engine processed them (`scored_at`), not when they were actually published. For example, a Jun 23 article scored today was showing "1h ago" instead of "2d ago". Fix: `published_at` is now included in the pick object written to picks_data.json. `index.html` uses a new `agoFromISO()` helper and prefers `published_at` over `runDate`/`runTime` when it's available. picks/*.md items are unaffected (no `published_at` field).
-
-## [2026-06-25] Fix: feed section labels (Morning/Afternoon/Evening) now use CT
-
-In `parse_file()` in `deploy-pages.yml`, the Morning/Afternoon/Evening label was being calculated from the raw UTC hour in the filename before the timezone conversion to CT. Moved the label block to after the `dt_ct` conversion so it uses the CT hour, matching the behavior already used in the blank.db merge section of the same file.
 
 
 
