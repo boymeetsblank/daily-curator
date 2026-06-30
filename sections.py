@@ -23,6 +23,8 @@ import db
 TOP_STORIES_LIMIT = 6      # hero + 5
 CATEGORY_MIN_ITEMS = 2     # don't show a category rail with fewer than this
 MOMENT_MIN_IN_FEED = 3     # moment must have at least this many members in the feed
+NICHE_CAP = 40             # max items per category section (>=6 head + sub-6 tail) —
+                           # bounds the payload AND gives niche drill-downs depth
 
 
 def _pick_key(pick: dict):
@@ -32,10 +34,18 @@ def _pick_key(pick: dict):
     return ("url", pick.get("link") or pick.get("title"))
 
 
-def build_sections(flat_picks: list[dict], db_path: str = db.DB_PATH) -> list[dict]:
+def build_sections(flat_picks: list[dict], db_path: str = db.DB_PATH,
+                   deep_picks: list[dict] | None = None) -> list[dict]:
     """
     Build the rails from the ranked flat pick list. `flat_picks` is assumed to be
     already in final ranked order (as produced by the deploy-pages consolidation).
+
+    `deep_picks` (optional) is a ranked list of scored-but-sub-6 items used to give
+    the per-niche drill-downs depth (the "rank, don't hide" surface). They are
+    appended ONLY to the matching `category` sections (after the >=6 head, so feed
+    previews that take the top N stay clean) — never to `top_stories` or the flat
+    feed. Each category section is capped at NICHE_CAP to bound the payload.
+
     Returns a list of section dicts.
     """
     sections: list[dict] = []
@@ -84,6 +94,21 @@ def build_sections(flat_picks: list[dict], db_path: str = db.DB_PATH) -> list[di
             continue
         groups.setdefault(cat, []).append(p)
 
+    # Deep sub-6 tail per category (drill-down depth), de-duped against the feed
+    # and the moment. Appended AFTER the >=6 head, so it sinks to the bottom of the
+    # niche page and never reaches a top-N preview.
+    deep_by_cat: dict[str, list] = {}
+    if deep_picks:
+        feed_keys = {_pick_key(p) for p in flat_picks}
+        for p in deep_picks:
+            k = _pick_key(p)
+            if k in moment_keys or k in feed_keys:
+                continue
+            cat = (p.get("primary_category") or "").strip()
+            if not cat or cat == "Other":
+                continue
+            deep_by_cat.setdefault(cat, []).append(p)
+
     # Order rails by size (most-covered category first), then name for stability.
     ordered = sorted(
         groups.items(),
@@ -92,11 +117,12 @@ def build_sections(flat_picks: list[dict], db_path: str = db.DB_PATH) -> list[di
     for cat, items in ordered:
         if len(items) < CATEGORY_MIN_ITEMS:
             continue
+        full = (items + deep_by_cat.get(cat, []))[:NICHE_CAP]
         sections.append({
             "key": f"category:{cat}",
             "kind": "category",
             "title": cat,
-            "items": items,
+            "items": full,
         })
 
     return sections
@@ -138,6 +164,20 @@ if __name__ == "__main__":
     assert "Other" not in cat_titles, "Other is excluded from category rails"
     assert "Gaming" not in cat_titles, "single-item category dropped (min 2)"
     print(f"No-moment: {len(secs)} sections, categories={cat_titles}  OK")
+
+    # Deep sub-6 tail → appended to matching category AFTER the >=6 head (so a
+    # top-N preview stays clean), capped at NICHE_CAP.
+    deep = [
+        {"item_id": 101, "title": "AI deep 1", "link": "d1", "score": 5, "primary_category": "Technology & AI"},
+        {"item_id": 102, "title": "AI deep 2", "link": "d2", "score": 4, "primary_category": "Technology & AI"},
+    ]
+    secs_d = build_sections(flat, TEST_DB, deep_picks=deep)
+    tech = next(s for s in secs_d if s["title"] == "Technology & AI")
+    ids = [p["item_id"] for p in tech["items"]]
+    assert ids[:2] == [4, 5], "the >=6 head must stay first (preview stays clean)"
+    assert 101 in ids and 102 in ids, "deep sub-6 items should append to the niche"
+    assert ids.index(101) >= 2 and ids.index(102) >= 2, "deep items go after the >=6 head"
+    print(f"Deep tail: Technology & AI now {len(tech['items'])} items (head + sub-6)  OK")
 
     # Record a moment over the 3 Iran items.
     db.record_moment(label="US-Iran Escalation", item_ids=[1, 2, 3], db_path=TEST_DB)

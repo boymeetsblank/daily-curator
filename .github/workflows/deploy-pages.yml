@@ -337,11 +337,66 @@ jobs:
           feed_sections = []
           try:
               import sections as _sections
+              import db as _db2
               if len(runs) == 1:
                   flat_picks = runs[0].get('picks', [])
               else:
                   flat_picks = [p for r in runs for p in r.get('picks', [])]
-              feed_sections = _sections.build_sections(flat_picks, 'blank.db')
+
+              # Deep per-niche tail: scored-but-sub-6 items (the "rank, don't hide"
+              # discovery surface) for niche DRILL-DOWNS only — never the flat feed
+              # or Top Stories. Bounded query; sections.py caps per niche so the
+              # payload stays small (and big niches actually shrink vs uncapped).
+              deep_picks = []
+              try:
+                  _dcon = sqlite3.connect('blank.db'); _dcon.row_factory = sqlite3.Row
+                  _drows = _dcon.execute("""
+                      SELECT i.id AS item_id, i.url, i.title, i.image_url,
+                             i.published_at, i.fetched_at,
+                             s.score, s.why, s.hook, s.scored_at, s.primary_category,
+                             src.name AS source_name
+                      FROM scores s
+                      JOIN items i ON i.id = s.item_id
+                      JOIN sources src ON src.id = i.source_id
+                      WHERE s.score BETWEEN 3 AND 5
+                        AND s.scored_at >= datetime('now', '-48 hours')
+                        AND s.primary_category != ''
+                      ORDER BY s.scored_at DESC, s.score DESC
+                      LIMIT 800
+                  """).fetchall()
+                  _dcon.close()
+                  _dnow = datetime.now(timezone.utc)
+                  for d in _drows:
+                      d = dict(d)
+                      deep_picks.append({
+                          'score':           d['score'],
+                          'title':           d['title'] or '',
+                          'source':          d['source_name'] or '',
+                          'link':            d['url'] or '',
+                          'image':           d.get('image_url') or None,
+                          'item_id':         d.get('item_id'),
+                          'primary_category': d.get('primary_category') or None,
+                          'trend_label':     None,
+                          'why':             d['why'] or '',
+                          'angle':           d['hook'] or '',
+                          'published_at':    d['published_at'] or None,
+                          'cluster_id':      None,
+                          'cluster_size':    1,
+                          'cluster_primary': True,
+                          'cluster_sources': None,
+                          'from_live':       False,
+                          'cluster_updated': False,
+                          'related_articles': None,
+                          '_rank': _db2.decayed_rank(d['score'], d.get('published_at'), d.get('scored_at'), _dnow),
+                      })
+                  deep_picks.sort(key=lambda p: p['_rank'], reverse=True)
+                  for p in deep_picks:
+                      p.pop('_rank', None)
+                  print(f'Deep niche tail: {len(deep_picks)} sub-6 items pulled')
+              except Exception as e:
+                  print(f'Warning: deep-niche query failed: {e}')
+
+              feed_sections = _sections.build_sections(flat_picks, 'blank.db', deep_picks=deep_picks)
               print('Built sections: ' + (', '.join(s['kind'] for s in feed_sections) or '(none)'))
           except Exception as e:
               print(f'Warning: section assembly failed, omitting sections: {e}')
