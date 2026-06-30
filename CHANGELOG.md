@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-30] Sources: re-add 5 Google News topic feeds for breadth
+
+Re-added (founder request) the **Google News - Business / Finance / Vehicles / Technology** topic feeds to `sources.json` — they'd been deactivated yesterday in the direct-publisher migration (image-coverage fix). They sit **alongside** the direct replacements (CBS Sports, Business Insider, Fortune, MarketWatch, Car and Driver, etc.), restoring per-topic **breadth** (a Google News topic search aggregates many publishers; the direct feeds are 1–2 each). `sync_sources()` reactivates them on the next engine run. (Yahoo Finance was left as its single existing **direct** feed — `finance.yahoo.com/news/rssindex`, which has images + real URLs — rather than re-adding the Google News duplicate.) **Tradeoff (accepted):** these topic feeds use opaque `news.google.com` URLs, so their items carry **no images** and can't be OG-enriched — overall feed image coverage will dip somewhat from ~88% as they contribute imageless items. A breadth-*with*-images alternative for later = adding more *direct* publishers per topic (Bloomberg/WSJ/Forbes etc.).
+
 ## [2026-06-30] Tune: feed time-decay 12h → 6h per point (fresher feed)
 
 `DECAY_HOURS_PER_POINT` in `db.py` (the single source of truth for feed ordering, shared by `db.get_feed()` and the `deploy-pages.yml` builder) lowered **12 → 6** so recency competes harder with score. At 12h/point a strong story (score 9) pinned the top for ~36h, so the feed always led with several-hours-old "dated" items and fresh news couldn't break in. At 6h/point: `rank = score − ageHours/6`, so a fresh score-8 (8.0) now beats a 7h-old score-9 (7.83), and a score-9 leads ~18h instead of ~36h before a fresh 6 passes it — big stories still lead while genuinely fresh, but the feed stops feeling stale. One constant, easily re-tuned. (Note: this only takes effect while the engine + deploy are actually running — see the separate engine-scheduling issue.)
@@ -79,10 +83,6 @@ Scoring no longer generates a rewritten "hook" or per-item "why". `score.py` now
 ## [2026-06-25] Feat: OG image enrichment for blank engine items
 
 `ingest.py` only extracted inline RSS images, leaving 76% of items without thumbnails (TechCrunch: 0%, Google News: 0%, Hypebeast: 0%). Added `_fetch_og_image()` and `enrich_og_images()` to `ingest.py` — after ingestion, items with no `image_url` from the last 15 minutes are enriched by concurrently fetching `og:image` from their article pages (10 workers, 5s timeout each). Added as a new "Enrich OG" stage in `run_pipeline.py` between Ingest and Triage. Also adds `requests` to blank.yml's pip install line.
-
-## [2026-06-25] Fix: blank.db articles show actual publish date, not scored_at time
-
-Articles from blank.db were displaying "1h ago" based on when the engine processed them (`scored_at`), not when they were actually published. For example, a Jun 23 article scored today was showing "1h ago" instead of "2d ago". Fix: `published_at` is now included in the pick object written to picks_data.json. `index.html` uses a new `agoFromISO()` helper and prefers `published_at` over `runDate`/`runTime` when it's available. picks/*.md items are unaffected (no `published_at` field).
 
 
 

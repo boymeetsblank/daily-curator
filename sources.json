@@ -358,5 +358,29 @@
     "rss": "https://www.bmwblog.com/feed/",
     "category": "automotive",
     "enabled": true
+  },
+  {
+    "name": "Google News - Business",
+    "rss": "https://news.google.com/rss/search?q=business&hl=en-US&gl=US&ceid=US:en",
+    "category": "business",
+    "enabled": true
+  },
+  {
+    "name": "Google News - Finance",
+    "rss": "https://news.google.com/rss/search?q=finance&hl=en-US&gl=US&ceid=US:en",
+    "category": "business",
+    "enabled": true
+  },
+  {
+    "name": "Google News - Vehicles",
+    "rss": "https://news.google.com/rss/search?q=vehicles+cars+automotive&hl=en-US&gl=US&ceid=US:en",
+    "category": "automotive",
+    "enabled": true
+  },
+  {
+    "name": "Google News - Technology",
+    "rss": "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=Technology",
+    "category": "tech",
+    "enabled": true
   }
 ]
