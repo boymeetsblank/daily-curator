@@ -150,6 +150,7 @@
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
       overscroll-behavior-y: none;
+      overflow-x: hidden;   /* contain full-bleed tint bands */
     }
     body { transition: background .4s var(--ease), color .4s var(--ease); }
     img    { display: block; max-width: 100%; }
@@ -474,6 +475,70 @@
     .tab:active svg { transform: scale(.86); }
     .tab .badge { position: absolute; top: 9px; right: calc(50% - 17px); min-width: 7px; height: 7px; border-radius: 999px; background: var(--green-ink); }
 
+    /* ── Cohesive feed — all box-free ──────────────────────────────────────── */
+    /* Top Stories zone — distinct via a prominent header + a full-bleed tint
+       band (NOT a box: edge-to-edge, no border, soft fade-out at the bottom). */
+    .topstories-zone { position: relative; padding-bottom: 16px; margin-bottom: 4px; }
+    .topstories-zone::before {
+      content: ''; position: absolute; inset: -8px 0 0; left: 50%; width: 100vw;
+      transform: translateX(-50%); pointer-events: none;
+      background: linear-gradient(180deg,
+        color-mix(in srgb, var(--green-soft) 85%, transparent) 0%,
+        color-mix(in srgb, var(--green-soft) 38%, transparent) 55%,
+        transparent 100%);
+    }
+    .topstories-zone > * { position: relative; }   /* content paints above the tint */
+    .ts-head { padding: 6px 4px 12px; }
+    .ts-kicker { font-family: var(--text); font-weight: 700; font-size: 9.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--green-ink); }
+    .ts-title { font-family: var(--display); font-weight: 800; font-size: 23px; letter-spacing: -.025em; color: var(--ink); margin-top: 5px; line-height: 1.05; }
+
+    /* Top Stories secondary cards — borderless, bigger image + headline (Apple-News list) */
+    .ts-card { display: flex; gap: 14px; align-items: flex-start; padding: 15px 2px; border-top: 1px solid var(--line); -webkit-tap-highlight-color: transparent; }
+    .ts-card:first-of-type { border-top: none; margin-top: 4px; }
+    .ts-card:active { opacity: .65; }
+    .ts-main { flex: 1; min-width: 0; }
+    .ts-h { font-family: var(--display); font-weight: 700; font-size: 18px; line-height: 1.24; letter-spacing: -.015em; color: var(--ink); margin-top: 6px; text-wrap: pretty; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .ts-card.no-img .ts-h { font-size: 18.5px; }
+    .ts-thumb { width: 104px; height: 78px; flex: none; border-radius: 10px; overflow: hidden; background: var(--img-tint); }
+    .ts-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+    /* runners-up (#2 & #3) — a two-up of borderless image-top feature cards */
+    .ts-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; margin: 8px 0 6px; }
+    .pair-card { display: block; -webkit-tap-highlight-color: transparent; }
+    .pair-card:active { opacity: .7; }
+    .pair-img { aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; background: var(--img-tint); margin-bottom: 9px; position: relative; }
+    .pair-img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+    .pair-img.ph::after { content: ''; position: absolute; inset: 0; background: radial-gradient(90% 80% at 25% 15%, color-mix(in srgb, var(--green) 16%, transparent), transparent 65%), var(--img-tint); }
+    .pair-card .row-meta { margin-bottom: 5px; }
+    .pair-h { font-family: var(--display); font-weight: 700; font-size: 14.5px; line-height: 1.26; letter-spacing: -.01em; color: var(--ink); text-wrap: pretty; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    @media (max-width: 380px) { .pair-h { font-size: 13.5px; } }
+
+    /* quiet hairline topic label (niche preview) — a label + rule, never a box */
+    .eyebrow.topic { padding-top: 24px; }
+    .eyebrow.topic b { color: var(--ink-2); }
+
+    /* "More in {niche}" (variant C) — a text button, no box */
+    .read-more { display: inline-flex; align-items: center; gap: 7px; margin: 4px 2px 2px; padding: 9px 2px; font-family: var(--text); font-size: 12.5px; font-weight: 700; color: var(--green-ink); }
+    .read-more .rm-arrow { transition: transform .15s var(--ease); }
+    .read-more:hover .rm-arrow { transform: translateX(3px); }
+
+    /* Niche page (drill-down) — back button only; the title lives in the zone head */
+    .niche-page-head { padding: 6px 2px 0; }
+    .np-back { display: inline-flex; align-items: center; gap: 4px; margin-bottom: 6px; padding: 7px 12px 7px 8px; border-radius: var(--r-pill); font-family: var(--text); font-size: 12.5px; font-weight: 600; color: var(--ink-2); background: var(--raise); }
+    .np-back:active { opacity: .65; }
+    .np-back svg { width: 16px; height: 16px; }
+
+    /* "You're all caught up" beat — centered, calm, no box */
+    .caughtup { text-align: center; padding: 44px 24px 6px; }
+    .caughtup .cu-rule { width: 36px; height: 2px; border-radius: 2px; background: var(--green-line); margin: 0 auto 20px; }
+    .caughtup .cu-check { width: 36px; height: 36px; margin: 0 auto 13px; border-radius: 50%; display: grid; place-items: center; color: var(--green-ink); background: var(--green-soft); }
+    .caughtup .cu-check svg { width: 19px; height: 19px; }
+    .caughtup .cu-title { font-family: var(--display); font-weight: 700; font-size: 18px; letter-spacing: -.02em; color: var(--ink); }
+    .caughtup .cu-sub { font-family: var(--text); font-size: 12.5px; color: var(--ink-3); margin-top: 5px; }
+
+    /* "Keep reading" — quiet centered pill button (the opt-in endless tail) */
+    .keep-reading { display: block; margin: 16px auto 30px; padding: 10px 20px; font-family: var(--text); font-size: 12.5px; font-weight: 600; color: var(--ink-3); background: transparent; border: 1px solid var(--line-2); border-radius: var(--r-pill); transition: color .15s, border-color .15s; }
+    .keep-reading:hover { color: var(--ink); border-color: var(--ink-3); }
+
     @media (max-width: 380px) { .lead-h { font-size: 22px; } .row-h { font-size: 15px; } }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; } }
   </style>
@@ -499,6 +564,8 @@
   <div class="views">
     <!-- FEED -->
     <main class="view active" id="view-feed" data-tab="feed"></main>
+    <!-- NICHE PAGE (drill-down from a "More in {niche}" link) -->
+    <section class="view" id="view-niche" data-tab="niche"></section>
     <!-- NICHES -->
     <section class="view" id="view-niches" data-tab="niches"></section>
     <!-- CATCH-UP -->
@@ -814,6 +881,202 @@
       feed.innerHTML = h;
     }
 
+    /* ── COHESIVE FEED — Top Stories briefing + niche previews ───────────────
+       Single calm column, no boxes. A cross-niche "Top Stories" briefing
+       (hero + two-up runners-up + a clean list) leads; below it, a preview of
+       each well-stocked niche with a "More" link to that niche's own page; the
+       feed ends with a bounded "you're all caught up" beat + an opt-in tail. */
+    let SECTIONS  = [];          // category rails from the payload (size-ordered)
+    let NICHE_MAP = {};          // niche title -> full item list (for niche pages)
+    let RENDERED  = new Set();   // ids on screen (so the "Keep reading" tail never repeats)
+
+    const BIG_NICHES = ['Sports','Entertainment','Business & Economy','Technology & AI'];
+    const TOP_SPREAD = 6;        // hero + 6 = 7 in the Top Stories block
+    const C_PREVIEW  = 4;        // preview rows per niche before "More"
+
+    const normTitle = t => (t||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(Boolean).slice(0,7).join(' ');
+    function emit(p, i){ RENDERED.add(rowId(p)); return rowCard(p, i); }   // render + track
+
+    // Top Stories = hero (#1 overall) + a deduped cross-niche spread: the biggest
+    // story from each distinct niche, same event never twice (prototype dedup by
+    // normalised title; true cross-source clustering is parked engine work).
+    function buildTopStories(flat){
+      const block = [], usedId = new Set(), usedCat = new Set(), usedEvent = new Set();
+      if (!flat.length) return block;
+      const hero = flat[0];
+      block.push(hero); usedId.add(rowId(hero)); usedEvent.add(normTitle(hero.title));
+      if (hero.primary_category) usedCat.add(hero.primary_category);
+      // one biggest story per fresh, tagged niche (the "different corners" spread)
+      for (const p of flat){
+        if (block.length > TOP_SPREAD) break;
+        const cat = p.primary_category;
+        if (!cat || cat === 'Other') continue;
+        const id = rowId(p), ev = normTitle(p.title);
+        if (usedId.has(id) || usedCat.has(cat) || usedEvent.has(ev)) continue;
+        block.push(p); usedId.add(id); usedCat.add(cat); usedEvent.add(ev);
+      }
+      // top up purely by rank if the niches ran short (untagged-heavy feed)
+      for (const p of flat){
+        if (block.length > TOP_SPREAD) break;
+        const id = rowId(p), ev = normTitle(p.title);
+        if (usedId.has(id) || usedEvent.has(ev)) continue;
+        block.push(p); usedId.add(id); usedEvent.add(ev);
+      }
+      return block;
+    }
+
+    // Category groups for the region below Top Stories (size order from the
+    // payload, minus anything already in Top Stories or dismissed).
+    function catGroups(topIds){
+      return SECTIONS.map(s => ({
+        title: s.title,
+        items: (s.items || []).filter(p => !topIds.has(rowId(p)) && !isHidden(p)),
+      })).filter(g => g.items.length);
+    }
+
+    // Niche previews — top few per well-stocked niche + a "More" link to its page.
+    function belowPreviews(groups){
+      let html = '';
+      groups.filter(g => BIG_NICHES.includes(g.title)).forEach(g => {
+        html += `<div class="eyebrow topic"><b>${esc(g.title)}</b><span class="rule"></span></div>`;
+        let i = 0;
+        g.items.slice(0, C_PREVIEW).forEach(p => { html += emit(p, i++); });
+        if (g.items.length > C_PREVIEW){
+          html += `<button class="read-more" data-niche="${esc(g.title)}">More in ${esc(g.title)} <span class="rm-arrow">→</span></button>`;
+        }
+      });
+      return html;
+    }
+
+    function caughtUpHTML(){
+      return `
+<div class="caughtup">
+  <div class="cu-rule"></div>
+  <div class="cu-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+  <div class="cu-title">You're all caught up</div>
+  <div class="cu-sub">That's the news worth your time.</div>
+</div>
+<button class="keep-reading" id="keep-reading">Keep reading — more to explore</button>`;
+    }
+
+    // Top Stories secondary card (Apple-News "front page" feel): bigger image +
+    // headline, borderless with a hairline divider, no cluster/action chrome —
+    // distinct from the denser bordered rows below. Used only in the Top Stories zone.
+    function topCard(p, i){
+      const time = ago(p), src = cleanSrc(p.source);
+      const gc = gemClass(p.score);
+      const gem = gc ? `<span class="gem ${gc}" title="${gemTitle(p.score)}"></span>` : '';
+      const drop = "const t=this.closest('.ts-thumb'); t&&t.remove(); this.closest('.ts-card')?.classList.add('no-img')";
+      const thumb = p.image
+        ? `<div class="ts-thumb"><img src="${esc(p.image)}" alt="" loading="${i<3?'eager':'lazy'}" onload="if(this.naturalWidth<150||this.naturalHeight<150){${drop}}" onerror="${drop}"></div>`
+        : '';
+      return `
+<a class="ts-card${p.image?'':' no-img'} enter" href="${esc(p.link||'#')}" target="_blank" rel="noopener noreferrer" style="animation-delay:${Math.min(i,6)*45}ms">
+  <div class="ts-main">
+    <div class="row-meta">${gem}<span class="srcline">${favicon(p.link)}<span class="src">${esc(src)}</span></span>${time?`<span class="dot-sep"></span><span class="time">${time}</span>`:''}</div>
+    <h3 class="ts-h">${esc(p.title)}</h3>
+  </div>
+  ${thumb}
+</a>`;
+    }
+
+    // Runners-up (#2 & #3) — a two-up of borderless image-top feature cards: the
+    // "1-2-3" tier. Rendered in Blank's own style (no borders/box, rounded photo
+    // on top, our meta), so it evokes a front-page pair without copying Apple.
+    function pairCard(p, i){
+      const time = ago(p), src = cleanSrc(p.source);
+      const gc = gemClass(p.score);
+      const gem = gc ? `<span class="gem ${gc}" title="${gemTitle(p.score)}"></span>` : '';
+      const drop = "this.closest('.pair-img')?.classList.add('ph'); this.remove()";
+      const img = p.image
+        ? `<div class="pair-img"><img src="${esc(p.image)}" alt="" loading="eager" onload="if(this.naturalWidth<150||this.naturalHeight<150){${drop}}" onerror="${drop}"></div>`
+        : `<div class="pair-img ph"></div>`;
+      return `
+<a class="pair-card enter" href="${esc(p.link||'#')}" target="_blank" rel="noopener noreferrer" style="animation-delay:${i*60}ms">
+  ${img}
+  <div class="row-meta">${gem}<span class="srcline">${favicon(p.link)}<span class="src">${esc(src)}</span></span>${time?`<span class="dot-sep"></span><span class="time">${time}</span>`:''}</div>
+  <h3 class="pair-h">${esc(p.title)}</h3>
+</a>`;
+    }
+
+    function renderCohesive(){
+      const feed = document.getElementById('view-feed');
+      RENDERED = new Set();
+      const flat = visiblePicks();
+      if (!flat.length){
+        feed.innerHTML = `<div class="blank-state"><div class="em">You're all caught up</div><p class="p">Nothing to surface right now. Pull down to refresh.</p></div>`;
+        return;
+      }
+      const top = buildTopStories(flat);
+      const topIds = new Set(top.map(rowId));
+      top.forEach(p => RENDERED.add(rowId(p)));
+      const groups = catGroups(topIds);
+      NICHE_MAP = {}; groups.forEach(g => NICHE_MAP[g.title] = g.items);
+
+      // Top Stories gets a distinct zone: a prominent editorial header + a subtle
+      // full-bleed tint band behind it (no box), so it reads apart from the rest.
+      let html = `<section class="topstories-zone">`;
+      html += `<div class="ts-head"><span class="ts-kicker">Your briefing</span><h2 class="ts-title">Top Stories</h2></div>`;
+      html += leadCard(top[0]);                                            // #1 — hero
+      const others = top.slice(1);
+      const pair = others.slice(0, 2), rest = others.slice(2);
+      if (pair.length) html += `<div class="ts-pair">${pair.map((p,i) => pairCard(p,i)).join('')}</div>`;  // #2 & #3
+      rest.forEach((p,i) => html += topCard(p, i));                        // #4+ — the clean list
+      html += `</section>`;
+
+      html += belowPreviews(groups);                                       // niche previews + "More"
+      html += caughtUpHTML();
+      feed.innerHTML = html;
+    }
+
+    // "More in {niche}" opens a fresh full-screen niche page (cleaner than
+    // expanding inline). A back button returns to the feed at its prior scroll.
+    let nicheReturn = 0;
+    function openNiche(title){
+      const items = (NICHE_MAP[title] || []).filter(p => !isHidden(p));
+      if (!items.length) return;
+      const v = document.getElementById('view-niche');
+      // Mirror the home Top Stories zone exactly, scoped to this niche: a back
+      // button, then [zone: title + hero + pair + 4 topCards], then the rowCard feed.
+      let html = `<div class="niche-page-head"><button class="np-back" id="np-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>Back</button></div>`;
+      html += `<section class="topstories-zone">`;
+      html += `<div class="ts-head"><h2 class="ts-title">${esc(title)}</h2></div>`;
+      html += leadCard(items[0]);                                          // #1 — hero
+      const pair = items.slice(1, 3);                                      // #2 & #3
+      if (pair.length) html += `<div class="ts-pair">${pair.map((p,i) => pairCard(p,i)).join('')}</div>`;
+      const tsStart = 1 + pair.length;
+      const tsList = items.slice(tsStart, tsStart + 4);                    // #4–7 — clean topCards
+      tsList.forEach((p,i) => html += topCard(p,i));
+      html += `</section>`;
+      const afterStart = tsStart + tsList.length;
+      const batch = items.slice(afterStart, afterStart + PAGE);            // the rest — rowCard feed
+      batch.forEach((p,i) => html += rowCard(p,i));
+      v.innerHTML = html;
+      nicheReturn = window.scrollY;
+      document.querySelectorAll('.view').forEach(x => x.classList.toggle('active', x.id === 'view-niche'));
+      window.scrollTo({ top: 0 });
+      rendered = afterStart + batch.length;
+      attachSentinel(v, items);   // infinite scroll the rest of the niche
+    }
+    function closeNiche(){
+      if (io){ io.disconnect(); io = null; }
+      document.querySelectorAll('.view').forEach(x => x.classList.toggle('active', x.id === 'view-feed'));
+      window.scrollTo({ top: nicheReturn || 0 });
+    }
+
+    function revealTail(btn){
+      const feed = document.getElementById('view-feed');
+      const tail = visiblePicks().filter(p => !RENDERED.has(rowId(p)));
+      document.querySelector('.caughtup')?.remove();
+      btn.remove();
+      if (!tail.length) return;
+      feed.insertAdjacentHTML('beforeend', `<div class="eyebrow"><b>More to explore</b><span class="rule"></span></div>`);
+      const batch = tail.slice(0, PAGE);
+      let i = 0; batch.forEach(p => feed.insertAdjacentHTML('beforeend', emit(p, i++)));
+      rendered = batch.length;
+      attachSentinel(feed, tail);
+    }
+
     /* ── Other tabs ────────────────────────────────────────── */
     const NICHES = ['Technology','Business','Culture','Sports','Science','Politics','Film & TV','Music','Gaming','Fashion','Food','Markets','AI','Design','Health','World'];
 
@@ -947,6 +1210,13 @@ ${top.map((p,i)=>rowCard(p,i)).join('')}`;
       // cluster expand
       const cl = e.target.closest('.cluster-line');
       if (cl){ e.preventDefault(); const c = cl.closest('.cluster'); const open = c.classList.toggle('open'); cl.setAttribute('aria-expanded', open); return; }
+      // "More in {niche}" → fresh niche page
+      const rm = e.target.closest('.read-more');
+      if (rm){ e.preventDefault(); openNiche(rm.dataset.niche); return; }
+      // niche page → back to feed
+      if (e.target.closest('#np-back')){ closeNiche(); return; }
+      // experiment: "Keep reading" reveals the opt-in endless tail
+      if (e.target.closest('#keep-reading')){ revealTail(e.target.closest('#keep-reading')); return; }
       // card actions
       const act = e.target.closest('.act');
       if (act){ e.preventDefault(); handleAction(act); return; }
@@ -1069,6 +1339,7 @@ ${top.map((p,i)=>rowCard(p,i)).join('')}`;
         if (!res.ok) throw new Error(res.status);
         const data = await res.json();
         const runs = data.runs || [];
+        const sections = data.sections || [];
         const seen = new Set(); allPicks = [];
         for (const run of runs){
           for (const p of (run.picks || [])){
@@ -1079,7 +1350,11 @@ ${top.map((p,i)=>rowCard(p,i)).join('')}`;
         }
         // Order is computed server-side (time-decayed rank in deploy-pages.yml /
         // db.DECAY_HOURS_PER_POINT); render picks_data.json in the order received.
-        await renderFeed();
+        // EXPERIMENT: when the sectioned payload is present, render the cohesive
+        // A/B/C feed; otherwise fall back to the flat feed (unchanged).
+        SECTIONS = sections.filter(s => s.kind === 'category');
+        if (sections.length) renderCohesive();
+        else                 await renderFeed();
       } catch (err){
         document.getElementById('view-feed').innerHTML = `<div class="blank-state"><div class="em">Feed unavailable</div><p class="p">Couldn't load the latest. Pull down to try again.</p></div>`;
         console.error('Blank: load failed', err);
