@@ -890,9 +890,10 @@
     let NICHE_MAP = {};          // niche title -> full item list (for niche pages)
     let RENDERED  = new Set();   // ids on screen (so the "Keep reading" tail never repeats)
 
-    const BIG_NICHES = ['Sports','Entertainment','Business & Economy','Technology & AI'];
     const TOP_SPREAD = 6;        // hero + 6 = 7 in the Top Stories block
     const C_PREVIEW  = 4;        // preview rows per niche before "More"
+    const MIN_NICHE  = 8;        // a niche needs >= this many items to appear as a feed preview
+    const MAX_NICHES = 8;        // how many niche previews the feed shows (busiest first)
 
     const normTitle = t => (t||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(Boolean).slice(0,7).join(' ');
     function emit(p, i){ RENDERED.add(rowId(p)); return rowCard(p, i); }   // render + track
@@ -934,10 +935,15 @@
       })).filter(g => g.items.length);
     }
 
-    // Niche previews — top few per well-stocked niche + a "More" link to its page.
+    // Niche previews — top few per niche + a "More" link to its page. Driven by the
+    // user's chosen niches (Niches tab); falls back to the busiest niches if none picked.
     function belowPreviews(groups){
+      const picked = store.get(LS.niches, []);
+      const chosen = picked.length
+        ? picked.map(t => groups.find(g => g.title === t)).filter(Boolean)        // your niches, in your order
+        : groups.filter(g => g.items.length >= MIN_NICHE).slice(0, MAX_NICHES);    // default: busiest
       let html = '';
-      groups.filter(g => BIG_NICHES.includes(g.title)).forEach(g => {
+      chosen.forEach(g => {
         html += `<div class="eyebrow topic"><b>${esc(g.title)}</b><span class="rule"></span></div>`;
         let i = 0;
         g.items.slice(0, C_PREVIEW).forEach(p => { html += emit(p, i++); });
@@ -1078,14 +1084,16 @@
     }
 
     /* ── Other tabs ────────────────────────────────────────── */
-    const NICHES = ['Technology','Business','Culture','Sports','Science','Politics','Film & TV','Music','Gaming','Fashion','Food','Markets','AI','Design','Health','World'];
+    // The engine's category taxonomy (primary_category) — these strings must match
+    // the section/group titles exactly so a pick filters the feed.
+    const NICHES = ['Sports','Entertainment','Technology & AI','Business & Economy','Gaming','Money & Personal Finance','Science','Health & Medicine','Climate & Environment','World / International','Politics & Policy','Lifestyle','Arts, Books & Ideas','Internet Culture','Crime & Justice'];
 
     function renderNiches(){
       const v = document.getElementById('view-niches');
       const on = store.get(LS.niches, []);
       v.innerHTML = `
 <div class="eyebrow"><b>Your Niches</b><span class="rule"></span></div>
-<p class="lede">Pick the subjects you care about. Soon, your feed will tune itself to these — the editor learns what's worth your time.</p>
+<p class="lede">Pick the subjects you care about — the feed's niche sections follow your picks. (Until you choose, it shows the busiest topics.)</p>
 <div class="niche-grid">${NICHES.map(n=>`<button class="niche ${on.includes(n)?'on':''}" data-niche="${esc(n)}">${esc(n)}</button>`).join('')}</div>`;
     }
 
@@ -1200,6 +1208,7 @@ ${top.map((p,i)=>rowCard(p,i)).join('')}`;
         const n = niche.dataset.niche; const i = on.indexOf(n);
         if (i>=0) on.splice(i,1); else on.push(n);
         store.set(LS.niches, on); niche.classList.toggle('on');
+        if (SECTIONS.length) renderCohesive();   // re-tune the feed to the new picks
         return;
       }
       // theme segment
