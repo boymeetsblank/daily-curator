@@ -4,7 +4,11 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
-## [2026-06-30] Sources: re-add 5 Google News topic feeds for breadth
+## [2026-06-30] Fix: recover real images from bot-walled publishers (ESPN et al.) via crawler UA
+
+The Top Stories hero was rendering gray — its cards were **ESPN**, which (like Billboard, Rolling Stone) sits behind a **bot wall**: a normal browser User-Agent gets **HTTP 202 + empty body**, so OG enrichment found no image and ESPN's RSS carries none inline. Verified empirically that these publishers **whitelist crawlers** (they want link-preview + search indexing): the same ESPN URL returns **200 + the real `og:image`** to `facebookexternalhit` / Googlebot / Bingbot. Fix: `ingest._fetch_og_image()` now tries a **social-crawler UA (`facebookexternalhit`) first** — the exact purpose og:image exists for — then falls back to the browser UA (image parsing factored into `_extract_image()`). This pulls the **actual article photo** (`a4.espncdn.com/…`), no placeholders/stock. Verified end-to-end: ESPN hero + FAQ + a TechCrunch article all now return their real images. Also bumped `OG_MAX_ATTEMPTS` 3 → 5 so items that already failed under the old browser-only UA get retried with the crawler UA (recovers the currently-visible imageless backlog over the next few enrich passes). Complementary UI task (flagged to the UI agent): the hero/prominent cards should prefer the imaged version of a story when multiple sources cover it.
+
+## [2026-06-30] Sources: re-add 4 Google News topic feeds for breadth
 
 Re-added (founder request) the **Google News - Business / Finance / Vehicles / Technology** topic feeds to `sources.json` — they'd been deactivated yesterday in the direct-publisher migration (image-coverage fix). They sit **alongside** the direct replacements (CBS Sports, Business Insider, Fortune, MarketWatch, Car and Driver, etc.), restoring per-topic **breadth** (a Google News topic search aggregates many publishers; the direct feeds are 1–2 each). `sync_sources()` reactivates them on the next engine run. (Yahoo Finance was left as its single existing **direct** feed — `finance.yahoo.com/news/rssindex`, which has images + real URLs — rather than re-adding the Google News duplicate.) **Tradeoff (accepted):** these topic feeds use opaque `news.google.com` URLs, so their items carry **no images** and can't be OG-enriched — overall feed image coverage will dip somewhat from ~88% as they contribute imageless items. A breadth-*with*-images alternative for later = adding more *direct* publishers per topic (Bloomberg/WSJ/Forbes etc.).
 
@@ -79,10 +83,6 @@ Added `PER_SOURCE_CAP = 15` in `db.py`. `get_untriaged_items()` and `get_unscore
 ## [2026-06-27] Feat: feed leads with real headlines (drop AI hook/why generation)
 
 Scoring no longer generates a rewritten "hook" or per-item "why". `score.py` now asks Sonnet for score + criteria + soft-floor flags only, and `max_tokens` drops 2048 → 1024 — cutting the most expensive line, Sonnet output tokens. `record_score()` in `db.py` makes `why`/`hook` optional (default `""`) so no schema migration is needed. `publish.py` is unchanged: it already falls back to the real article title when the hook is empty, so the feed now leads with authentic headlines and the editorialized hook is removed from the reading experience.
-
-## [2026-06-25] Feat: OG image enrichment for blank engine items
-
-`ingest.py` only extracted inline RSS images, leaving 76% of items without thumbnails (TechCrunch: 0%, Google News: 0%, Hypebeast: 0%). Added `_fetch_og_image()` and `enrich_og_images()` to `ingest.py` — after ingestion, items with no `image_url` from the last 15 minutes are enriched by concurrently fetching `og:image` from their article pages (10 workers, 5s timeout each). Added as a new "Enrich OG" stage in `run_pipeline.py` between Ingest and Triage. Also adds `requests` to blank.yml's pip install line.
 
 
 

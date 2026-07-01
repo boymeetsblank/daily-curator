@@ -236,12 +236,19 @@ def _update_last_polled(source_id: int, db_path: str) -> None:
         con.close()
 
 
-# A real browser User-Agent — many publishers serve a bare/blocked page (or no
-# og tags) to obvious bot agents. 8s timeout: some article pages are slow.
-_OG_BROWSER_UA = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-)
+# User-Agents tried IN ORDER when scraping a share image. Many publishers (ESPN,
+# Billboard, Rolling Stone, …) sit behind bot walls that serve an empty/blocked
+# page to a normal browser UA but happily return the full page WITH og:image to a
+# social/search CRAWLER — because they *want* link previews + search indexing.
+# (Verified: ESPN returns 202/empty to a browser UA, 200 + real og:image to
+# facebookexternalhit/Googlebot.) So we try a social-crawler UA first — the exact
+# purpose og:image exists for — then fall back to a real browser UA for the few
+# sites that prefer that. 8s timeout each.
+_OG_FETCH_UAS = [
+    "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+    ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"),
+]
 
 # Image-tag patterns tried in order: og:image → twitter:image → link image_src.
 # Each appears twice to handle either attribute order.
@@ -257,48 +264,57 @@ _IMG_PATTERNS = [
 # OG-enrichment retry policy: retry imageless items across the feed window (not
 # just brand-new ones), but give up after a few failed attempts so permanent
 # failures aren't re-fetched forever. Bounded per run to cap pipeline runtime.
-OG_MAX_ATTEMPTS = 3
+OG_MAX_ATTEMPTS = 5   # bumped 3->5 so items that failed under the old browser-only
+                      # UA get retried with the new crawler UA (recovers ESPN etc.)
 OG_ENRICH_PER_RUN = 60
+
+
+def _extract_image(page: str, base_url: str) -> Optional[str]:
+    """Pull the first share-image URL from HTML: og:image → twitter:image →
+    link image_src. Unescapes entities and absolutizes relative paths."""
+    for pattern in _IMG_PATTERNS:
+        match = re.search(pattern, page, re.IGNORECASE)
+        if match:
+            img = html.unescape((match.group(1) or "").strip())  # &amp; -> &
+            if not img:
+                continue
+            if img.startswith("//"):
+                img = "https:" + img
+            elif not img.startswith("http"):
+                # root-relative (/share.jpg) or other relative -> absolutize
+                # against the final (post-redirect) article URL.
+                img = urljoin(base_url, img)
+            if img.startswith("http"):
+                return img
+    return None
 
 
 def _fetch_og_image(url: str) -> Optional[str]:
     """
-    Fetch an article page and extract a share image, trying og:image, then
-    twitter:image, then <link rel="image_src">. Returns the image URL or None
-    on any failure. Real browser UA, 8s timeout, follows redirects.
+    Fetch an article page and extract a share image (og:image → twitter:image →
+    link image_src). Tries a social-crawler UA first (gets past publisher bot
+    walls that block browser UAs but serve og tags to crawlers), then a real
+    browser UA. Returns the image URL or None. 8s timeout each, follows redirects.
     """
-    try:
-        response = requests.get(
-            url,
-            timeout=8,
-            headers={
-                "User-Agent": _OG_BROWSER_UA,
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            },
-            allow_redirects=True,
-        )
-        if not response.ok:
-            return None
-        if "html" not in response.headers.get("content-type", ""):
-            return None
-        page = response.text[:80000]
-        for pattern in _IMG_PATTERNS:
-            match = re.search(pattern, page, re.IGNORECASE)
-            if match:
-                img = html.unescape((match.group(1) or "").strip())  # &amp; -> &
-                if not img:
-                    continue
-                if img.startswith("//"):
-                    img = "https:" + img
-                elif not img.startswith("http"):
-                    # root-relative (/share.jpg) or other relative -> absolutize
-                    # against the final (post-redirect) article URL.
-                    img = urljoin(response.url, img)
-                if img.startswith("http"):
-                    return img
-        return None
-    except Exception:
-        return None
+    for ua in _OG_FETCH_UAS:
+        try:
+            response = requests.get(
+                url,
+                timeout=8,
+                headers={
+                    "User-Agent": ua,
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                },
+                allow_redirects=True,
+            )
+            if not response.ok or "html" not in response.headers.get("content-type", ""):
+                continue
+            img = _extract_image(response.text[:80000], response.url)
+            if img:
+                return img
+        except Exception:
+            continue
+    return None
 
 
 def enrich_og_images(db_path: str = db.DB_PATH) -> dict:
