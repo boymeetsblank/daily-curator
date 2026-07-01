@@ -360,27 +360,45 @@
     "enabled": true
   },
   {
-    "name": "Google News - Business",
-    "rss": "https://news.google.com/rss/search?q=business&hl=en-US&gl=US&ceid=US:en",
+    "name": "Forbes Business",
+    "rss": "https://www.forbes.com/business/feed/",
     "category": "business",
     "enabled": true
   },
   {
-    "name": "Google News - Finance",
-    "rss": "https://news.google.com/rss/search?q=finance&hl=en-US&gl=US&ceid=US:en",
+    "name": "Fast Company",
+    "rss": "https://www.fastcompany.com/latest/rss",
     "category": "business",
     "enabled": true
   },
   {
-    "name": "Google News - Vehicles",
-    "rss": "https://news.google.com/rss/search?q=vehicles+cars+automotive&hl=en-US&gl=US&ceid=US:en",
+    "name": "Quartz",
+    "rss": "https://qz.com/rss",
+    "category": "business",
+    "enabled": true
+  },
+  {
+    "name": "Investing.com",
+    "rss": "https://www.investing.com/rss/news.rss",
+    "category": "business",
+    "enabled": true
+  },
+  {
+    "name": "Jalopnik",
+    "rss": "https://jalopnik.com/rss",
     "category": "automotive",
     "enabled": true
   },
   {
-    "name": "Google News - Technology",
-    "rss": "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=Technology",
-    "category": "tech",
+    "name": "Motor1",
+    "rss": "https://www.motor1.com/rss/news/all/",
+    "category": "automotive",
+    "enabled": true
+  },
+  {
+    "name": "Road & Track",
+    "rss": "https://www.roadandtrack.com/rss/all.xml/",
+    "category": "automotive",
     "enabled": true
   }
 ]

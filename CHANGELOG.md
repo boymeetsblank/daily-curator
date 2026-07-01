@@ -4,6 +4,10 @@ All notable changes to the daily-curator project are documented here. Newest ent
 
 ---
 
+## [2026-06-30] Sources: swap Google News topic feeds → direct publishers (breadth + images)
+
+Founder wanted the re-added Google News topic feeds (Business/Finance/Vehicles/Technology) to carry **images** too — but Google News URLs are unresolvable cheaply (verified empirically: base64-decoding the `CBM…` blob finds no URL, and following redirects with any UA lands back on `news.google.com` with Google's own og:image, never the real article; only Google's brittle `batchexecute` decode works, which breaks every few months). So the breadth-*with*-images path is direct publishers. Replaced the 4 Google News topic feeds with **audited, image-rich direct feeds** (HTTP/validity/inline-image-% checked first): **Business** → Forbes Business (100%), Fast Company (100%), Quartz (96%); **Finance** → Investing.com (100%) (atop existing MarketWatch/CNBC/Yahoo); **Vehicles** → Jalopnik (100%), Motor1 (100%), Road & Track (100%); **Technology** → dropped (already covered by WIRED/Verge/TechCrunch/Engadget/Ars/9to5Mac). Net: real URLs + real images + multi-publisher breadth per topic, and no Google News feeds remain (`sync_sources()` reactivates the swap next engine run). Reverses the earlier same-day "re-add Google News" entry in favor of the image-carrying equivalent.
+
 ## [2026-06-30] Fix: recover real images from bot-walled publishers (ESPN et al.) via crawler UA
 
 The Top Stories hero was rendering gray — its cards were **ESPN**, which (like Billboard, Rolling Stone) sits behind a **bot wall**: a normal browser User-Agent gets **HTTP 202 + empty body**, so OG enrichment found no image and ESPN's RSS carries none inline. Verified empirically that these publishers **whitelist crawlers** (they want link-preview + search indexing): the same ESPN URL returns **200 + the real `og:image`** to `facebookexternalhit` / Googlebot / Bingbot. Fix: `ingest._fetch_og_image()` now tries a **social-crawler UA (`facebookexternalhit`) first** — the exact purpose og:image exists for — then falls back to the browser UA (image parsing factored into `_extract_image()`). This pulls the **actual article photo** (`a4.espncdn.com/…`), no placeholders/stock. Verified end-to-end: ESPN hero + FAQ + a TechCrunch article all now return their real images. Also bumped `OG_MAX_ATTEMPTS` 3 → 5 so items that already failed under the old browser-only UA get retried with the crawler UA (recovers the currently-visible imageless backlog over the next few enrich passes). Complementary UI task (flagged to the UI agent): the hero/prominent cards should prefer the imaged version of a story when multiple sources cover it.
@@ -79,10 +83,6 @@ Lifted the Apify trend-fetching from the legacy `daily_curator.py` into `ingest.
 ## [2026-06-27] Perf: cap triage/scoring to 15 newest items per source
 
 Added `PER_SOURCE_CAP = 15` in `db.py`. `get_untriaged_items()` and `get_unscored_escalated_items()` now rank items per source by recency (a window function over ALL items per source, so the cap doesn't refill as items move through the pipeline across runs) and only process the newest 15 per source. The feed already balances each source to a small display share, so triaging/scoring more than this per source was wasted spend — the Haiku gate kills ~0% of mainstream-news items, so almost everything was reaching Sonnet. On the current corpus this cuts processed volume from 5,259 to 661 items (~87% fewer triage/score calls) and bounds the existing escalated backlog from ~5,000 to ~600 unscored items, with no change to what the feed can display.
-
-## [2026-06-27] Feat: feed leads with real headlines (drop AI hook/why generation)
-
-Scoring no longer generates a rewritten "hook" or per-item "why". `score.py` now asks Sonnet for score + criteria + soft-floor flags only, and `max_tokens` drops 2048 → 1024 — cutting the most expensive line, Sonnet output tokens. `record_score()` in `db.py` makes `why`/`hook` optional (default `""`) so no schema migration is needed. `publish.py` is unchanged: it already falls back to the real article title when the hook is empty, so the feed now leads with authentic headlines and the editorialized hook is removed from the reading experience.
 
 
 
