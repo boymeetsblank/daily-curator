@@ -2,7 +2,8 @@
 
 This file briefs Claude Code on the Blank project. Read this before making any changes.
 
-> **Resuming work?** Start with [`brainstorms/2026-06-28-handoff.md`](brainstorms/2026-06-28-handoff.md)
+> **Resuming work?** Start with [`brainstorms/2026-06-30-handoff.md`](brainstorms/2026-06-30-handoff.md)
+> (plus the Notion Session Log + Roadmap — the live source of truth)
 > — current status + the immediate next task. Deeper product context (full vision,
 > decisions, rationale) lives in
 > [`brainstorms/2026-06-27-blank-platform-vision.md`](brainstorms/2026-06-27-blank-platform-vision.md).
