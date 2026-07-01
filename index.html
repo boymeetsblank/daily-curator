@@ -352,19 +352,28 @@
     .persp .psrc { display: inline-flex; align-items: center; font-family: var(--text); font-weight: 700; font-size: 9.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--green-ink); }
     .persp .ptitle { font-family: var(--text); font-size: 12.5px; line-height: 1.36; color: var(--ink-2); }
 
-    /* ── Card action bar ─────────────────────────────────────── */
-    .actions { display: flex; align-items: center; gap: 2px; padding: 4px 8px 8px; border-top: 1px solid var(--line); }
-    .act {
-      display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 9px;
-      font-family: var(--text); font-weight: 600; font-size: 11.5px; color: var(--ink-3);
+    /* ── Card "⋯" menu (replaces the per-card action bar) ─────── */
+    .card-actions { position: relative; padding: 0 6px 6px; }
+    .card-more {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 34px; height: 28px; border-radius: 8px; color: var(--ink-4);
       transition: background .15s, color .15s, transform .1s var(--ease);
     }
-    .act svg { width: 16px; height: 16px; }
-    .act:hover { background: var(--raise); color: var(--ink-2); }
-    .act:active { transform: scale(.9); }
-    .act.saved { color: var(--green-ink); }
-    .act.dismiss { margin-left: auto; }
-    .act.dismiss:hover { color: #b4513f; }
+    .card-more svg { width: 19px; height: 19px; }
+    .card-more:hover { background: var(--raise); color: var(--ink-2); }
+    .card-more:active { transform: scale(.9); }
+    .card-menu {
+      position: absolute; bottom: 36px; left: 4px; z-index: 20; min-width: 188px;
+      background: var(--surface); border: 1px solid var(--line-2); border-radius: 13px;
+      box-shadow: var(--shadow-lead); padding: 5px; display: none;
+    }
+    .card-menu.open { display: block; animation: menu-in .14s var(--ease) both; }
+    @keyframes menu-in { from { opacity: 0; transform: translateY(4px) scale(.98); } to { opacity: 1; transform: none; } }
+    .card-menu button { display: flex; align-items: center; gap: 11px; width: 100%; padding: 10px 12px; border-radius: 9px; font: 600 13px var(--text); color: var(--ink); text-align: left; }
+    .card-menu button:hover { background: var(--raise); }
+    .card-menu button svg { width: 17px; height: 17px; flex: none; color: var(--ink-3); }
+    .card-menu .danger { color: #b4513f; }
+    .card-menu .danger svg { color: #b4513f; }
 
     /* dismiss / undo state */
     .row.dismissing { opacity: 0; transform: translateY(-6px) scale(.97); max-height: 0; margin-top: 0; transition: all .42s var(--ease); pointer-events: none; }
@@ -723,7 +732,7 @@
     ${thumb}
   </a>
   ${clusterBlock(p)}
-  ${actionBar(p, saved)}
+  ${cardMenu(p, saved)}
 </article>`;
     }
 
@@ -753,21 +762,20 @@
 </div>`;
     }
 
-    function actionBar(p, saved){
+    // Card actions collapsed into a single "⋯" menu (bottom-left, off the scroll
+    // path) — so a stray tap opens a dismissable menu instead of hiding a story,
+    // and the feed stays quiet (one small icon per card, not a 3-button bar).
+    function cardMenu(p, saved){
       return `
-<div class="actions">
-  <button class="act act-save ${saved?'saved':''}" data-act="save">
-    <svg viewBox="0 0 24 24" fill="${saved?'currentColor':'none'}" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16l-6-4-6 4z"/></svg>
-    ${saved?'Saved':'Save'}
+<div class="card-actions">
+  <button type="button" class="card-more" data-act="menu" aria-label="More actions">
+    <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.9"/><circle cx="12" cy="12" r="1.9"/><circle cx="19" cy="12" r="1.9"/></svg>
   </button>
-  <button class="act act-share" data-act="share">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M8 8l4-4 4 4"/><path d="M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
-    Share
-  </button>
-  <button class="act act-dismiss dismiss" data-act="dismiss" title="Not for me — this wasn't worth surfacing">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
-    Not for me
-  </button>
+  <div class="card-menu" role="menu">
+    <button type="button" data-act="save" role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span class="cm-save">${saved?'Saved':'Save'}</span></button>
+    <button type="button" data-act="share" role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M8 8l4-4 4 4"/><path d="M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg><span>Share</span></button>
+    <button type="button" data-act="dismiss" role="menuitem" class="danger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Not interested</span></button>
+  </div>
 </div>`;
     }
 
@@ -1197,6 +1205,8 @@ ${top.map((p,i)=>rowCard(p,i)).join('')}`;
 
     /* ── Global click delegation ───────────────────────────── */
     document.addEventListener('click', e => {
+      // close any open card ⋯ menu on an outside click (then keep processing)
+      if (!e.target.closest('.card-menu') && !e.target.closest('.card-more')) closeMenus();
       // tab bar
       const tab = e.target.closest('.tab'); if (tab){ go(tab.dataset.go); return; }
       // top search
@@ -1226,32 +1236,41 @@ ${top.map((p,i)=>rowCard(p,i)).join('')}`;
       if (e.target.closest('#np-back')){ closeNiche(); return; }
       // experiment: "Keep reading" reveals the opt-in endless tail
       if (e.target.closest('#keep-reading')){ revealTail(e.target.closest('#keep-reading')); return; }
-      // card actions
-      const act = e.target.closest('.act');
-      if (act){ e.preventDefault(); handleAction(act); return; }
+      // card ⋯ menu — open/close
+      const more = e.target.closest('.card-more');
+      if (more){ e.preventDefault(); toggleMenu(more); return; }
+      // card menu item — perform the action
+      const mItem = e.target.closest('.card-menu [data-act]');
+      if (mItem){ e.preventDefault(); cardAction(mItem); return; }
     });
 
     function findPick(id){ return allPicks.find(p => rowId(p) === id); }
 
-    function handleAction(btn){
+    function closeMenus(){ document.querySelectorAll('.card-menu.open').forEach(m => m.classList.remove('open')); }
+    function toggleMenu(btn){
+      const menu = btn.parentElement.querySelector('.card-menu');
+      const willOpen = menu && !menu.classList.contains('open');
+      closeMenus();
+      if (willOpen){
+        const p = findPick(btn.closest('.row').dataset.id);
+        const sv = menu.querySelector('.cm-save'); if (sv && p) sv.textContent = isSaved(p) ? 'Saved' : 'Save';
+        menu.classList.add('open');
+      }
+    }
+
+    function cardAction(btn){
       const article = btn.closest('.row'); if (!article) return;
       const p = findPick(article.dataset.id); if (!p) return;
+      closeMenus();
       const kind = btn.dataset.act;
       if (kind === 'save'){
-        const nowSaved = toggleSave(p);
-        article.querySelectorAll('.act-save').forEach(b=>{
-          b.classList.toggle('saved', nowSaved);
-          b.querySelector('svg').setAttribute('fill', nowSaved ? 'currentColor' : 'none');
-          b.lastChild.textContent = nowSaved ? ' Saved' : ' Save';
-        });
-        haptic();
+        const nowSaved = toggleSave(p); haptic(); toast(nowSaved ? 'Saved' : 'Removed from saved');
       } else if (kind === 'share'){
         const data = { title: p.title, text: cleanSrc(p.source), url: p.link };
         if (navigator.share){ navigator.share(data).catch(()=>{}); }
         else if (navigator.clipboard){ navigator.clipboard.writeText(p.link||'').then(()=>toast('Link copied')); }
       } else if (kind === 'dismiss'){
-        dismiss(p); haptic();
-        animateDismiss(article, p);
+        dismiss(p); haptic(); animateDismiss(article, p);
       }
     }
 
