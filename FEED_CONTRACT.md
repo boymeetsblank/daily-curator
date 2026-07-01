@@ -22,8 +22,8 @@ An **ordered** array of rails. Render them top-to-bottom in the given order. Eac
 
 ```jsonc
 {
-  "key":   "moment",            // stable id; "category:<Name>" for category rails
-  "kind":  "moment",            // "moment" | "top_stories" | "category"
+  "key":   "moment",            // stable id; "category:<Name>" for category rails; "catchup"
+  "kind":  "moment",            // "moment" | "top_stories" | "category" | "catchup"
   "title": "US-Iran Escalation",// display title (the moment's name, "Top Stories", or category name)
   "items": [ /* pick objects, already in ranked order */ ]
 }
@@ -46,6 +46,18 @@ assembly failure) — in that case fall back to `runs`.
   "Sports"). Ordered by size (most-covered first). Non-personalized for now; niche
   onboarding will later filter these to the user's chosen niches. Coverage grows as
   the score pass tags more items, so expect these to be sparse at first.
+- **`catchup`** — the **"if you only have a minute" brief** for the Catch-up tab:
+  a **topic-balanced, bounded digest** (≤12 items), round-robined across niches so
+  it's one-per-niche, not a wall of one topic (leads with the biggest story from the
+  biggest-story niche, then the next niche, etc.). Already deduped (cluster leads
+  only) and high-signal (ranked). **The engine can't know the user's picked niches
+  or last-open time (no accounts), so this is a balanced SUPERSET — the UI should:**
+  (a) **filter to the user's picked niches** (`blank.niches` localStorage, same as
+  the feed), (b) **window to "since you last opened"** (a `lastOpen` localStorage
+  timestamp vs each item's `published_at`), then (c) render the handful that remain
+  with the **"you're all caught up" closure beat** when the window is empty/read.
+  May be absent if nothing is tagged. This replaces the old `renderCatchup()` (top-8
+  by score — which showed a wall of sports).
 
 ### Item shape (same object used everywhere — `runs` picks and `sections` items)
 | field              | type            | notes |
@@ -58,12 +70,22 @@ assembly failure) — in that case fall back to `runs`.
 | `primary_category` | string \| null  | one of `score.CATEGORIES`; null for legacy/untagged items |
 | `item_id`          | int \| null     | `blank.db` item id; null for legacy picks |
 | `trend_label`      | string \| null  | legacy trend annotation (usually null now) |
-| `cluster_sources`  | array \| null   | legacy multi-source list (usually null; full clustering is parked) |
+| `published_at`     | string \| null  | ISO timestamp — use for the Catch-up "since you last opened" window |
+| `cluster_size`     | int             | # of sources covering this story (1 = singleton). **>1 → a collapsed cluster** |
+| `cluster_sources`  | array \| null   | distinct source names covering the story (lead first) — render "Covered by X, Y +N" |
+| `related_articles` | array \| null   | the other sources' articles: `[{title, url, source}]` — the cluster drawer rows |
 | `why`              | string          | short rationale (may be empty) |
-| `related_articles` | array \| null   | legacy "other angles" |
 
 ### Rules of thumb for the UI
 1. If `sections` is non-empty, render rails; else render `runs` (flat).
 2. The moment rail is optional — design for its absence.
 3. Hero = `top_stories.items[0]`.
 4. Never rewrite `title`. Real headlines only.
+5. **Clustering is live:** duplicate stories are already collapsed engine-side — the
+   feed shows one lead card per event, with members folded onto it. When
+   `cluster_size > 1`, light up the "Covered by …" drawer from `cluster_sources` +
+   `related_articles` (the `clusterBlock()` renderer already does this). You will
+   **not** see the same event as separate cards anymore.
+6. **Catch-up tab** renders the `catchup` section (not `visiblePicks()`): filter to
+   picked niches → window to `lastOpen` → show the remainder, with a "you're all
+   caught up" beat when empty. See the `catchup` rail kind above.
