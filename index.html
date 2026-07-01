@@ -543,6 +543,11 @@
     .caughtup .cu-check svg { width: 19px; height: 19px; }
     .caughtup .cu-title { font-family: var(--display); font-weight: 700; font-size: 18px; letter-spacing: -.02em; color: var(--ink); }
     .caughtup .cu-sub { font-family: var(--text); font-size: 12.5px; color: var(--ink-3); margin-top: 5px; }
+    /* Catch-up empty state — the closure "ritual", centered & prominent */
+    .caughtup.catchup-hero { padding: 64px 24px 40px; }
+    .caughtup.catchup-hero .cu-check { width: 46px; height: 46px; margin-bottom: 16px; }
+    .caughtup.catchup-hero .cu-check svg { width: 24px; height: 24px; }
+    .caughtup.catchup-hero .cu-title { font-size: 21px; }
 
     /* "Keep reading" — quiet centered pill button (the opt-in endless tail) */
     .keep-reading { display: block; margin: 16px auto 30px; padding: 10px 20px; font-family: var(--text); font-size: 12.5px; font-weight: 600; color: var(--ink-3); background: transparent; border: 1px solid var(--line-2); border-radius: var(--r-pill); transition: color .15s, border-color .15s; }
@@ -622,10 +627,11 @@
     const PAGE = 25;
     let io = null;
     const LS = {
-      saved:   'blank.saved',
-      hidden:  'blank.hidden',
-      niches:  'blank.niches',
-      theme:   'blank.theme',
+      saved:    'blank.saved',
+      hidden:   'blank.hidden',
+      niches:   'blank.niches',
+      theme:    'blank.theme',
+      lastOpen: 'blank.lastOpen',   // Catch-up "since you last opened" timestamp
     };
     const store = {
       get(k, d){ try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
@@ -1105,18 +1111,52 @@
 <div class="niche-grid">${NICHES.map(n=>`<button class="niche ${on.includes(n)?'on':''}" data-niche="${esc(n)}">${esc(n)}</button>`).join('')}</div>`;
     }
 
+    // Catch-up brief = the most important stories overall (highest decayed rank),
+    // windowed to "since you last opened", with a soft per-topic cap so one hot
+    // subject can't dominate. Built from the ranked feed (already cluster-deduped).
+    const CU_MAX     = 10;   // stories in the brief
+    const CU_PER_CAT = 2;    // soft cap per niche so no single topic dominates
+    function buildBrief(lastOpen){
+      const fresh = visiblePicks().filter(p => !lastOpen || !p.published_at || new Date(p.published_at) > lastOpen);
+      const seen = {}, out = [];
+      for (const p of fresh){                         // ranked order
+        if (out.length >= CU_MAX) break;
+        const cat = p.primary_category || '_';
+        if ((seen[cat] || 0) >= CU_PER_CAT) continue; // soft per-topic cap
+        seen[cat] = (seen[cat] || 0) + 1;
+        out.push(p);
+      }
+      return out;
+    }
+
     function renderCatchup(){
       const v = document.getElementById('view-catchup');
-      const top = visiblePicks().filter(p => p.score >= 8).slice(0, 8);
-      const today = new Date().toLocaleDateString(undefined,{weekday:'long', month:'long', day:'numeric'});
-      if (!top.length){
-        v.innerHTML = `<div class="eyebrow"><b>Catch-up</b><span class="rule"></span></div><div class="blank-state"><div class="em">Nothing urgent</div><p class="p">No must-know stories right now. Enjoy the quiet.</p></div>`;
-        return;
+      const today = new Date().toLocaleDateString(undefined, { weekday:'long', month:'long', day:'numeric' });
+      const lastOpen = store.get(LS.lastOpen, 0);
+      const brief = buildBrief(lastOpen);
+
+      const head = `<div class="eyebrow"><b>Catch-up · ${esc(today)}</b><span class="rule"></span></div>`;
+      const check = `<div class="cu-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>`;
+
+      if (!brief.length){
+        v.innerHTML = head + `
+<div class="caughtup catchup-hero">
+  ${check}
+  <div class="cu-title">You're all caught up</div>
+  <div class="cu-sub">${lastOpen ? 'Nothing new since you last checked in. Enjoy the quiet.' : 'Your brief will appear here as stories come in.'}</div>
+</div>`;
+      } else {
+        v.innerHTML = head + `
+<p class="lede">If you only have a minute — the ${brief.length} ${brief.length === 1 ? 'story' : 'stories'} that matter most since you last checked in.</p>
+${brief.map((p,i) => rowCard(p,i)).join('')}
+<div class="caughtup">
+  <div class="cu-rule"></div>
+  ${check}
+  <div class="cu-title">You're all caught up</div>
+  <div class="cu-sub">That's the important stuff — see you next time.</div>
+</div>`;
       }
-      v.innerHTML = `
-<div class="eyebrow"><b>Catch-up · ${esc(today)}</b><span class="rule"></span></div>
-<p class="lede">If you only have a minute — the ${top.length} stories the editor thinks you shouldn't miss.</p>
-${top.map((p,i)=>rowCard(p,i)).join('')}`;
+      store.set(LS.lastOpen, Date.now());   // mark this brief as seen (advance the window)
     }
 
     function renderSearch(focus){
@@ -1378,9 +1418,16 @@ ${top.map((p,i)=>rowCard(p,i)).join('')}`;
         }
         // Order is computed server-side (time-decayed rank in deploy-pages.yml /
         // db.DECAY_HOURS_PER_POINT); render picks_data.json in the order received.
-        // EXPERIMENT: when the sectioned payload is present, render the cohesive
-        // A/B/C feed; otherwise fall back to the flat feed (unchanged).
         SECTIONS = sections.filter(s => s.kind === 'category');
+        // ensure every section item is also in allPicks so card actions resolve
+        for (const rail of sections){
+          for (const p of (rail.items || [])){
+            const id = p.link || p.title;
+            if (seen.has(id)) continue; seen.add(id);
+            allPicks.push({ ...p });
+          }
+        }
+        // When the sectioned payload is present, render the cohesive feed; else flat.
         if (sections.length) renderCohesive();
         else                 await renderFeed();
       } catch (err){
