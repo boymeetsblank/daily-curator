@@ -34,6 +34,7 @@ import triage
 import score
 import backfill_tags
 import moment
+import cluster
 
 
 # ---------------------------------------------------------------------------
@@ -153,6 +154,13 @@ def main() -> None:
             print(f"\n  Moment         : \"{result['label']}\" ({result['item_count']} stories)")
         else:
             print(f"\n  Moment         : no dominant story this run")
+
+    # ── 5. Cluster (deterministic, zero-cost: dedup same-event across sources) ─
+    result, elapsed, err = _run_stage("Cluster", cluster.run_clustering)
+    stage_log["cluster"] = (elapsed, err)
+    if result:
+        print(f"\n  Clusters       : {result['clusters']}  "
+              f"(duplicate cards collapsed: {result['collapsed']})")
 
     # ── Summary ────────────────────────────────────────────────────────────
     total_elapsed = (datetime.now(timezone.utc) - started_at).total_seconds()

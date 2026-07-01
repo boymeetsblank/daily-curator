@@ -150,6 +150,24 @@ CREATE TABLE IF NOT EXISTS moments (
 );
 
 CREATE INDEX IF NOT EXISTS idx_moments_active ON moments(active);
+
+-- Multi-source story clusters: same-event items grouped across sources by the
+-- deterministic clusterer (cluster.py — no LLM). One row per cluster; the whole
+-- active set is rewritten each run. canonical_item_id is the lead (the real
+-- headline shown in the feed); member_ids is a JSON array of ALL items.id in the
+-- cluster (lead included). content_key = the lead's content_hash, a stable id so
+-- the same cluster keeps the same identity across runs. Singletons are NOT
+-- stored — only clusters with >= 2 members.
+CREATE TABLE IF NOT EXISTS clusters (
+    id                INTEGER PRIMARY KEY AUTOINCREMENT,
+    canonical_item_id INTEGER NOT NULL REFERENCES items(id),
+    label             TEXT    NOT NULL DEFAULT '',
+    member_ids        TEXT    NOT NULL DEFAULT '[]',  -- JSON array of items.id (lead first)
+    content_key       TEXT    NOT NULL DEFAULT '',    -- lead content_hash; stable cluster id
+    updated_at        TEXT    NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_clusters_canonical ON clusters(canonical_item_id);
 """
 
 
@@ -465,6 +483,60 @@ def get_active_moment(db_path: str = DB_PATH) -> Optional[dict]:
     except (json.JSONDecodeError, TypeError):
         ids = []
     return {"label": row["label"], "item_ids": ids, "detected_at": row["detected_at"]}
+
+
+def replace_clusters(clusters: list, db_path: str = DB_PATH) -> int:
+    """
+    Atomically replace the entire active cluster set (cluster.py rewrites it each
+    run). `clusters` is a list of dicts:
+        {"canonical_item_id": int, "member_ids": [int, ...], "label": str,
+         "content_key": str}
+    member_ids must include the lead and have >= 2 entries; clusters with fewer
+    are skipped (singletons aren't stored). Returns the number of clusters written.
+    """
+    now = _now()
+    rows = []
+    for c in clusters or []:
+        ids = [int(i) for i in (c.get("member_ids") or [])]
+        if len(ids) < 2:
+            continue
+        lead = int(c["canonical_item_id"])
+        rows.append((lead, (c.get("label") or "")[:200],
+                     json.dumps(ids), (c.get("content_key") or "")[:64], now))
+    with _conn(db_path) as con:
+        con.execute("DELETE FROM clusters")
+        if rows:
+            con.executemany(
+                "INSERT INTO clusters (canonical_item_id, label, member_ids, "
+                "content_key, updated_at) VALUES (?, ?, ?, ?, ?)",
+                rows,
+            )
+    return len(rows)
+
+
+def get_active_clusters(db_path: str = DB_PATH) -> list[dict]:
+    """
+    Return all active clusters as
+    {canonical_item_id, member_ids (list[int]), label, content_key}.
+    Consumed by the feed builder to collapse members into the lead.
+    """
+    with _conn(db_path) as con:
+        rows = con.execute(
+            "SELECT canonical_item_id, member_ids, label, content_key FROM clusters"
+        ).fetchall()
+    out = []
+    for r in rows:
+        try:
+            ids = json.loads(r["member_ids"])
+        except (json.JSONDecodeError, TypeError):
+            ids = []
+        out.append({
+            "canonical_item_id": r["canonical_item_id"],
+            "member_ids": ids,
+            "label": r["label"],
+            "content_key": r["content_key"],
+        })
+    return out
 
 
 # ---------------------------------------------------------------------------

@@ -311,6 +311,46 @@ jobs:
                       p['_rank'] = _db.decayed_rank(p.get('score') or 0, p.get('published_at'), run_ts, _now)
                       p['_ts'] = ts.timestamp() if ts else 0.0
                       flat.append(p)
+
+              # ── Collapse multi-source clusters (the actual dedup) ───────────
+              # cluster.py grouped same-event items in blank.db; here we rank each
+              # cluster ONCE (by its lead) and DROP the members from the flat
+              # stream, folding them onto the lead so the UI's "Covered by …"
+              # drawer lights up. Pure data; graceful — any failure leaves the
+              # feed uncollapsed (exactly today's behavior).
+              try:
+                  clusters = _db.get_active_clusters('blank.db')
+                  by_item = {p['item_id']: p for p in flat if p.get('item_id') is not None}
+                  drop = set()
+                  for c in clusters:
+                      members = c.get('member_ids') or []
+                      lead = by_item.get(c.get('canonical_item_id'))
+                      if not lead or len(members) < 2:
+                          continue
+                      member_picks = [by_item[m] for m in members
+                                      if m in by_item and m != c['canonical_item_id']]
+                      if not member_picks:
+                          continue
+                      srcs, seen_s = [], set()
+                      for mp in [lead] + member_picks:
+                          s = (mp.get('source') or '').strip()
+                          if s and s not in seen_s:
+                              seen_s.add(s); srcs.append(s)
+                      lead['cluster_size'] = 1 + len(member_picks)
+                      lead['cluster_sources'] = srcs
+                      lead['related_articles'] = [
+                          {'title': mp.get('title') or '', 'url': mp.get('link') or '',
+                           'source': mp.get('source') or ''}
+                          for mp in member_picks
+                      ]
+                      for mp in member_picks:
+                          drop.add(id(mp))
+                  if drop:
+                      flat = [p for p in flat if id(p) not in drop]
+                  print(f'Cluster collapse: {len(clusters)} clusters, {len(drop)} member cards folded into leads')
+              except Exception as e:
+                  print(f'Warning: cluster collapse skipped: {e}')
+
               flat.sort(key=lambda p: (p['_rank'], p['_ts']), reverse=True)
               for p in flat:
                   p.pop('_rank', None)
