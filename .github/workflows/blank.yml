@@ -1,10 +1,16 @@
 name: Blank Engine
 
-# Runs every 10 minutes and on manual trigger.
+# Runs ~every 15 minutes (offset off the hour) and on manual trigger.
+# Cadence eased 10 -> 15 min because GitHub deprioritizes the highest-frequency
+# scheduled workflows first under load — an every-10-min cron was getting silently
+# dropped for hours, freezing the feed. A 15-min schedule is honored more reliably;
+# the offset (7,22,37,52 rather than */15) avoids GitHub's top-of-hour peak-load
+# window, which they explicitly recommend. This is a mitigation, not a cure — the
+# durable fix is an external workflow_dispatch trigger (bypasses GitHub's scheduler).
 # Do NOT edit or delete the old daily_curator.yml workflow.
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
 
 permissions:
