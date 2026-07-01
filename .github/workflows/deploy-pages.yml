@@ -343,6 +343,15 @@ jobs:
                            'source': mp.get('source') or ''}
                           for mp in member_picks
                       ]
+                      # Image-borrow: keep the rank-lead's real headline, but if it
+                      # has no photo and a sibling (same event) does, borrow that
+                      # photo so the hero/thumbnail isn't gray. Zero UI change — the
+                      # existing image rendering just works. (Flagged by UI agent.)
+                      if not (lead.get('image') or '').strip():
+                          for mp in member_picks:
+                              if (mp.get('image') or '').strip():
+                                  lead['image'] = mp['image']
+                                  break
                       for mp in member_picks:
                           drop.add(id(mp))
                   if drop:
